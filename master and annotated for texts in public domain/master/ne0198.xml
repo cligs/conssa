@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Historia vulgar</title>
+				<title type="sub"></title>
+				<title type="short">HistoriaVulgar</title>
+				<title type="idno">
+					<idno type="viaf">175523776</idno>
+				</title>
+				<author>
+					<idno type="bne">XX841898</idno>
+					<idno type="viaf">34456883</idno>
+					<name type="short">Lorca</name>
+					<name type="full">Federico García Lorca</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">197</measure>
+				<measure unit="divs">12</measure>
+				<measure unit="tokens">6389</measure>
+				<measure unit="chars">36239</measure>
+				<measure unit="size_kb">51</measure>
+				<measure unit="chapters">6</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">4</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">129</measure> 
+				<measure unit="lg.poems">4</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">14</measure> 
+				<measure unit="heads">12</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">99</measure> 
+				<measure unit="abs">4</measure> 
+				<measure unit="fts">4</measure>
+				<measure unit="paragraphs.ds">49</measure>
+				<measure unit="saids">58</measure>
+				<measure unit="narrative.ps">50</measure>
+				<measure unit="punctual_ss">544</measure> 
+				<measure unit="numerals">4</measure> 
+				<measure unit="puncts">1458</measure> 
+				<measure unit="len.abstract">97</measure>
+				<measure unit="chapters.len.mean">6099.50</measure>
+				<measure unit="chapters.len.std">1622.55</measure>
+				<measure unit="chapters.len.median">6218.50</measure>
+				<measure unit="chapters.len.iqr">2447.00</measure>
+
+				<measure unit="types">2026</measure>
+
+				<measure unit="ss">331</measure>
+				<measure unit="ss.num.mean">109.58</measure>
+				<measure unit="ss.num.std">182.49</measure>
+				<measure unit="ss.num.median">68.00</measure>
+				<measure unit="ss.num.iqr">63.00</measure>
+				<measure unit="ss.active.verbs.mean">2.30</measure>
+				<measure unit="ss.active.verbs.std">3.63</measure>
+				<measure unit="ss.active.verbs.median">1.00</measure>
+				<measure unit="ss.active.verbs.iqr">1.00</measure>
+
+				<measure unit="ws">7430</measure>
+				<measure unit="ws.num.mean">3.93</measure>
+				<measure unit="ws.num.std">2.66</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">378</measure>
+				<measure unit="determiners">1144</measure>
+				<measure unit="nouns">1494</measure>
+				<measure unit="verbs">1256</measure>
+				<measure unit="adverbs">276</measure>
+				<measure unit="adjectives">336</measure>
+				<measure unit="adpositions">843</measure>
+				<measure unit="punctuations">1059</measure>
+				<measure unit="pronouns">618</measure>
+				<measure unit="dates">3</measure>
+				<measure unit="numbers">12</measure>
+				<measure unit="interjections">11</measure>
+
+				<measure unit="ne.persons">88</measure>
+				<measure unit="ne.organizations">6</measure>
+				<measure unit="ne.locations">19</measure>
+				<measure unit="ne.others">4</measure>
+
+				<measure unit="wnlex.noun.plants">17</measure>
+				<measure unit="wnlex.verb.communications">83</measure>
+				<measure unit="wnlex.noun.foods">12</measure>
+				<measure unit="wnlex.verb.possessions">39</measure>
+				<measure unit="wnlex.verb.cognitions">57</measure>
+				<measure unit="wnlex.noun.communications">82</measure>
+				<measure unit="wnlex.noun.states">26</measure>
+				<measure unit="wnlex.verb.statives">230</measure>
+				<measure unit="wnlex.noun.cognitions">49</measure>
+				<measure unit="wnlex.noun.times">73</measure>
+				<measure unit="wnlex.verb.bodys">77</measure>
+				<measure unit="wnlex.noun.persons">197</measure>
+				<measure unit="wnlex.adj.alls">248</measure>
+				<measure unit="wnlex.noun.quantitys">5</measure>
+				<measure unit="wnlex.noun.phenomenons">32</measure>
+				<measure unit="wnlex.verb.creations">58</measure>
+				<measure unit="wnlex.adj.perts">6</measure>
+				<measure unit="wnlex.adv.alls">105</measure>
+				<measure unit="wnlex.noun.processs">12</measure>
+				<measure unit="wnlex.noun.artifacts">207</measure>
+				<measure unit="wnlex.verb.perceptions">59</measure>
+				<measure unit="wnlex.noun.feelings">25</measure>
+				<measure unit="wnlex.verb.weathers">9</measure>
+				<measure unit="wnlex.noun.substances">48</measure>
+				<measure unit="wnlex.noun.shapes">9</measure>
+				<measure unit="wnlex.verb.competitions">6</measure>
+				<measure unit="wnlex.verb.motions">170</measure>
+				<measure unit="wnlex.noun.animals">67</measure>
+				<measure unit="wnlex.noun.acts">39</measure>
+				<measure unit="wnlex.noun.bodys">72</measure>
+				<measure unit="wnlex.noun.objects">71</measure>
+				<measure unit="wnlex.noun.motives">0</measure>
+				<measure unit="wnlex.verb.socials">48</measure>
+				<measure unit="wnlex.noun.groups">52</measure>
+				<measure unit="wnlex.verb.consumptions">19</measure>
+				<measure unit="wnlex.noun.possessions">11</measure>
+				<measure unit="wnlex.noun.Topss">31</measure>
+				<measure unit="wnlex.noun.relations">1</measure>
+				<measure unit="wnlex.noun.attributes">47</measure>
+				<measure unit="wnlex.verb.emotions">46</measure>
+				<measure unit="wnlex.noun.locations">51</measure>
+				<measure unit="wnlex.noun.events">26</measure>
+				<measure unit="wnlex.verb.contacts">101</measure>
+				<measure unit="wnlex.xxxs">4715</measure>
+				<measure unit="wnlex.verb.changes">92</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
+						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
+				</availability>
+				<date when="2016">2016</date>
+				<idno type="cligs">ne0198</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Fine Reader, CLiGS, <date when="2016">2016</date>.</bibl>
+				<bibl type="print-source">Chistopher Maurer, Cátedra, Madrid, <date when="1994">1994</date></bibl>
+				<bibl type="edition-first">Not published, <date when="1917">1917</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE11">
+				<p>Narra en seis cantos las desventuras de un mozo que muere de dolor por la ausencia de la amada.</p>
+			</abstract>
+			<abstract>
+				<p>Capítulo 1: Se presenta al protagonista, Juan, y cómo piensa en chicas del pueblo. Capítulo 2: llega la fiesta de San Juan y Juan habla con Patrocinio para que sea su novia, a lo que ella accede. Capítulo 3: Juan lleva un cordero recién nacido a su novia Patrocinio. Hablan de su relación y la posibilidad de casarse. Juan vuelve al establo donde trabaja. Capítulo 4: en la familia de Patrocinio se discute sobre huir del pueblo al día siguiente y emigrar a América. Patrocinio piensa en Juan. Un grupo de lobo se acercan al establo de Juan, pero él los ahuyenta. Capítulo 5: Juan y Patrocinio se ven una última vez, ella no le dice nada. La familia de Patrocinio se va del pueblo. Al día siguiente el pueblo comenta la huída. Juan está destrozado, piensa en suicidarse. Capítulo 6: pasan los meses y Juan sigue deprimido. Llega la fiesta de San Juan y Juan decide suicirdarse tirándose al río.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="high">
+					<term type="author.TOC.range" resp="MdL11">7</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1898</term>
+					<term type="author.date.death">1936</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL11">95</term>
+					<term type="author.movement">avantgarde</term>
+					<term type="author.nonNovelGenre">poetry</term>
+					<term type="author.submovement">vanguardista</term>
+					<term type="author.year.change">0</term>
+					<term type="authorText.group"></term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">young</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">Juan</term>
+					<term type="text.characters.protagonist.profession">worker</term>
+					<term type="text.characters.protagonist.socLevel">low</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">symbolic</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subtitle">historia</term>
+					<term type="text.genre.subtitle.source" resp="bne">historia</term>
+					<term type="text.genre.subtitle.source.first.edition">historia</term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">1</term>
+					<term type="text.litHist.mentioned" resp="HdLE">False</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE11">0.2</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.quality.listhist" resp="#"></term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Spain</term>
+					<term type="text.setting.represented">unknown</term>
+					<term type="text.setting.settlement">unknown</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">rural</term>
+					<term type="text.setting.territory">unknown</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span" cert="low">365</term>
+					<term type="text.time.year">18??</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2016-09-09" who="#jct">Initial TEI version.</change>
+			<change when="2016-09-25" who="#jct">Correction after reading the text as eBook.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div>
+				<head>Historia vulgar</head>
+				<p>La historia que vais a leer es una historia eterna. Un corazón destrozado por la ausencia. No me tachéis de repetido, porque ¿qué cosa es la que no se repite con frecuencia en el transcurso de los años...? Los protagonistas de este cuento son gente vulgar, gente de campo. Sus amores son puros y salvajes. El escenario es la vega espléndida y la colina cargada de olivos. La ternura de sus corazones acaso os hará llorar... Leedla y ya veréis: es una narración vulgar, aterradoramente vulgar.»</p>
+			</div>
+		</front>
+		<body>
+			<div n="1" type="chapter" xml:id="ne0198_chap1">
+				<head>Canto primero</head>
+				<p>Esto era un joven que se llamaba Juan. Era alto, delgado y más moreno que las aceitunas en sazón. Su boca era roja como las majoletas. Sus cabellos, rizados y negrísimos. Se vestía con un traje de pana gris y en las fiestas del pueblo él tañía las cuerdas de una mugrienta guitarra y cantaba como los mismos ángeles los celosos cantares de fuego de la tierra. Todas las mañanas Juan iba a guardar un rebaño de melosas ovejas y mientras éstas pastaban dulcemente, él, tumbado boca arriba sobre la húmeda hierba, pensaba en las mozas del pueblo.</p>
+				<milestone unit="section"/>
+				<p>Catalina tiene unos ojos azules que parecen de mar. María tiene el pelo castaño y como la seda... Patrocinio... Esta sí que le gustaba a él: bajita, rechoncha con cara de niña y gesto de boba, con ojazos azules y nariz respingada, la boca chiquita... y pensando en la mozuela se removía gustoso entre los tréboles. En la fiesta pasada la había mirado mucho. Y cuando bailando el fandando <seg rend="italics">[sic]</seg> él la abrazó, sintió un algo como si la sangre se le agolpara toda en la cara y quisiera salírsele por los ojos y la boca. ¡Cómo quería él a Patrocinio! El domingo la diría algo. El ya era crecido y tenía que buscarse una novia, pues ¿quién mejor que Patrocinio, que le tenía ya voluntad...?</p>
+				<p>El río corría entre los cañaverales y los chopos cantando amores. El sol formaba un caprichoso tapiz en el suelo al filtrarse entre las ramas pomposas de hojas verdes. La campana que llevaba la directora del rebaño sonaba quejumbrosa y adormilada. El agua manaba por todas partes. Los álamos cabeceaban, molestos por el sol... En el silencio el extraño rumor de la vega llegaba dulcísimo invitando a dormir. Casi todas las blancas ovejas están acostadas sobre el tapiz de verde. Algunas beben agua, otras comen sándalo oloroso de la orilla... El mozo pensando en las mozas del pueblo se ha quedado dormido. Sobre su cara pasean ufanas las moscas. Inconscientemente las espanta con su mano de piedra. Sus ronquidos sonoros son acompañados por los ruiseñores. Un glu glu suave sale de las hierbas. Los carros se van durmiendo al son de sus campanillas por el camino sin fin. Se siente bañarse a gentes; los zampullones y sus voces llegan apianadas por el viento. Por algunas partes el río viene rojo... En las eras arden todas las cosas. Las bestias con las belfas temblorosas beben con avidez. Hartas ya, resoplan triunfales... La siesta. Todas las cosas están sumidas en hondo sopor. El sol en el cielo quisiera volver fuego al agua del río...</p>
+				<milestone unit="section"/>
+				<p>Ya caía la tarde cuando Juan se levantó, se desperezó sin cortesías, y reuniendo las ovejas descarriadas empezó a caminar hacia el pueblo. Por la carretera venía una nube de segadores cantando una canción a la virgen. Las ranas desde las acequias los acompañaban. Las campanas dijeron el ángelus. El aire era transparente. Los fondos, verde claro y morado. La gran sierra, color de rosa. Los olivos proyectaban en el suelo rojo sombras azules. El agua de las acequias era rosa suave. Las flores exhalaban más perfume... Juan y su rebaño caminaban despacio. Una nube de polvo los envolvía fantásticamente. Las casas blancas del pueblo estaban cerca ya.</p>
+				<p>-Mañana es la fiesta-, dijo él, -y hablaré a Patrocinio. Le diré si le gustan los niños rubios y si quiere ser mi novia... Se reirán de mí-, pensó Juan, desconsolado... Pero ya entraba en el pueblo y dejó de cavilar. El tío Pedro, que estaba sentado en la fuente, le dijo cariñosamente al pasar:</p>
+				<p>-¿Donde va el mocico?</p>
+				<p>-Vengo de guardar estas ovejas del amo. Y <seg rend="italics">osté,</seg> ¿qué <seg rend="italics">jace?</seg></p>
+				<p>-Aguardando la muerte, hijo mío.</p>
+				<p>-¡Bah! ¡Bah! No está <seg rend="italics">osté mu acartonao,</seg> que digamos...</p>
+				<p>El mozo y el rebaño se perdieron en un inmenso portón verde que se cerró con estrépito. Unas viejas negras entraron a la iglesia, más oscura que la boca de un lobo. La campana gorda hablaba lenta y monótona llamando a los vecinos al rosario... Una manada de cerdos entró en la plaza gruñendo y levantando polvo. Después, cada uno se fue a su casa. Los campos se van quedando desiertos. De todas las casas salen sonidos de cucharas y almireces haciendo gazpacho al ajo blanco. Los hombres sentados en las puertas limpian el sudor de sus frentes con sendos pañuelos de hierba. El caserío está envuelto en un sudario de polvo ahogadizo. Las luces se encienden. En todas partes hay fiebre por comer. En el centro de la plaza unas niñas rodeadas de niños harapientos que lanzan aullidos cantan la canción</p>
+				<lg type="poem">
+					<l>Hilito hilito de oro </l>
+					<l>de las niñas del marqués, </l>
+					<l>que me ha dicho una señora</l>
+					<l>¿cuántas hijas tiene usted...?</l>
+				</lg>
+			</div>
+			<div n="2" type="chapter" xml:id="ne0198_chap2">
+				<head>Canto segundo</head>
+				<p>La plaza estaba atestada de gente. Era día de fiesta. San Juan nada menos. Alrededor de una gran hoguera danzaban mozos y mozas. Algunas veces las llamas los convertían en gigantes sombras espectrales. La guitarra lloraba unos tangos:</p>
+				<lg type="poem">
+					<l>A esta niña bonita</l>
+					<l>la vamos a quemar...</l>
+					<l>por coger verbena </l>
+					<l>la noche de San Juan...</l>
+				</lg>
+				<p>La rueda giraba vertiginosamente. Las mozas menos fuertes, mareadas, se caían. La noche era de terciopelo negro. Había más estrellas que nunca. Las salidas del pueblo estaban oscuras y miedosas. En la torre de la iglesia había lechuzas que venían a chupar el aceite de las lámparas. Los danzantes al golpear el suelo producían un sonido seco y áspero...</p>
+				<lg type="poem">
+					<l>por coger verbena </l>
+					<l>la noche de San Juan...</l>
+				</lg>
+				<p>Olía a tomillos quemados. El humo se elevaba tranquilo. La guitarra cantaba furiosa... Juan se separó de sus amigos y con la vista ansiosa buscaba a Patrocinio. Tenía un miedo horrible. Él que no se había acercado nunca a una hembra no sabía qué decirle. Tenía un nudo en la garganta que no podía hablar... Por fin la encontró junto a la puerta de la maestra de miga blandamente apoyada en la pared y, aprovechando que todos bailaban como locos, se acercó a ella y le dijo:</p>
+				<p>-Dios te guarde Patrocinio. ¿No bailas?</p>
+				<p>-No-, contestó ella, -Estoy cansada.</p>
+				<p>-Patrocinio...</p>
+				<p>-¿Qué quieres?</p>
+				<p>-Ya sabes tú <seg rend="italics">mu</seg> bien que soy <seg rend="italics">honrao. -</seg></p>
+				<p>-A carta cabal-, dijo ella.</p>
+				<p>-Pues yo quisie...ra que tú, que... vamos...me quisieras una <seg rend="italics">miaja."</seg></p>
+				<p>-Sí que te quiero, Juan.</p>
+				<p>-No, no, ya sé que me quieres, pero no es eso. Lo que yo quiero es que si no tienes compromiso con <seg rend="italics">nai-den,</seg> que me dejes ser tu novio.</p>
+				<p>La muchacha, encendida como una cereza, le dijo:</p>
+				<p>-Pero Juan, por Dios...</p>
+				<p>-Si yo te quiero más que a mi cuerpo, tú lo eres <seg rend="italics">tó pa </seg>mí, déjate quererte, Patrocinio, ¡déjate quererte...!</p>
+				<p>La muchacha sofocada le dijo:</p>
+				<p>-Sí, Juan, yo también te tengo ley desde <seg rend="italics">jace muncho</seg> tiempo y serás mi novio y...</p>
+				<p>La moza, apretando una mano al hombre, se escabulló a su casa. Juan estaba embriagado de felicidad. El sudor le caía a chorros. Estaba tembloroso. Se acercó a la rueda, enganchóse en ella y cantando cantando dejaba volar dulcemente su fantasía. El anciano señor cura, sentado en su puerta, sonreía a la juventud. La luna en menguante salió sin luz y muerta...</p>
+				<p>La noche perfumada de tomillo se iba muriendo. Los pastores cantaban en los oteros. La noche de San Juan se iba. Al amanecer saldría el rosario de la aurora a contemplar la salida y los tres saltos del sol. La gente joven se lavarían las caras en el agua de la fuente... Juan se lavaría la cara para que el año que viene se casara con quien él se sabía... Patrocinio haría lo mismo... La noche de San Juan, noche de amor y de ilusión, se estaba muriendo porque en el horizonte había ya luz dorada...</p>
+				<floatingText>
+					<body>
+						<div type="section">
+							<head>Comentario al canto</head>
+							<p>Noches de San Juan en las aldeas y poblachos ruines, ¡quién os pudiera gozar intensamente! ¡Quién creyera en leyendas populares y saturadas de misticismo y poesía! Corazones campesinos de pueblos por donde no ha pasado aún el ferrocarril. ¡Quién os poseyera tan salvajes, tan puros y tan sanos! Almas que no sabéis de los artificios y embriagueces del amor, ¡quién os tuviera tan blancas, tan nobles y tan sencillas! Gentes de los pueblos no envenenados aún, benditas seáis. Vosotros sois la honradez misma.</p>
+						</div>
+					</body>
+				</floatingText>
+			</div>
+			<div n="3" type="chapter" xml:id="ne0198_chap3">
+				<head>Canto tercero</head>
+				<p>El otoño tocaba su responso de muerte amarilla. Las puestas del sol eran doradas y tristes. Los caminos se convertían en charcos inmensos. El agua del río era parda. La niebla era la vaguedad del paisaje... El pueblo estaba callado y sentimental. Las almas de la torre lloraban por los que se fueron. En la iglesia oscura se oían tintinear de rosarios y suspiros hondos de ancianos... El señor cura, apoltronado en el altar mayor, canturreaba el tercer misterio doloroso y las viejas decían devotas</p>
+				<p>-Amén...- En la plaza no había nadie... El aire juntaba el agua de los caños que se besaba temblorosa... Los bancos solos y llenos de humedad soñaban con la primavera... Una clueca regañaba a sus polluelos... Por el amplio portón salió Juan envuelto en su rudo capote. Entre los pliegues asomaban sus tiernas cabecitas dos ovejas recién paridas. El mozón andaba de prisa y gozoso, atravesó la despierta plaza y se internó en una calleja de paredes blancas. Las cañas secas extendidas por el suelo chillaban al pasar el mozo por encima de ellas. Se paró delante de una puerta destartalada y agujereada por las polillas y tocó con sus nudillos en la cerradura mohosa. La puerta se abrió gimiendo resignada y en el dintel apareció Patrocinio con la carita amoratada por el frío y con una toquilla amarillenta que en sus tiempos fue roja. Los cabellos los lleva liados en el cogote y los zapatos desabrochados dejan ver su pie blanco sin media. Juan escondió las ovejitas debajo del capotón.</p>
+				<p>-Patrocinio-, le dijo, -a que no sabes lo que te traigo...</p>
+				<p>-Serán nueces, que tanto me gustan, o bellotas o higos secos...</p>
+				<p>-No, otra cosa mejor que no te la figuras...</p>
+				<p>-Dime lo que es, que estoy en ascuas...</p>
+				<p>-Mira...</p>
+				<p>El mozo deslió la manta y presentó a su novia las dos ovejitas...</p>
+				<p>-¡Ah!-, gritó ella, -¡qué ricas, qué blancas, qué olorosas! Juan, ¿no te gusta a ti oler las ovejas recién paridas...?</p>
+				<p>Juan se encaró con ella y le dijo:</p>
+				<p>-Pues son tuyas... Cuando mi oveja, la mía, sintió en sus entrañas a sus hijos, parecía que me decía mirándome con su <seg rend="italics">mirá extravia:</seg> Juan, estas ovejitas que tengo son <seg rend="italics">pa</seg> tu novia <seg rend="italics">pa</seg> que te quiera más <seg rend="italics">entoavía...'</seg> No las estrujes mucho, mira que las vas a reventar. No los besuquees tanto, mira que son más tiernas que la miga del pan...</p>
+				<p>Patrocinio estaba extasiada con las dos masas de ternura en los brazos... Las ovejitas balaban con sonido conmovedor y sacaban las torpes lengüecitas mientras un vaho cálido salía de sus narices negras y palpitantes. Juan, quitando la dulce carga de los brazos de su novia, la dijo:</p>
+				<p>-Déjamelas, que las lleve con la su madre. Están llorando de hambre...La teta está <seg rend="italics">mu güeña</seg> y sin ella no pueden vivir... Mira, esta qui[si]era abrir los ojos, y la otra me da cabezazos en la mano como si fuera la teta. Ahora <seg rend="italics">sus jartaréis, jambronas. ''</seg></p>
+				<p>El mocico metió las ovejas debajo del capote saliendo sus balidos apagados y tenues como latir de corazones.</p>
+				<p>-Patrocinio, ¿tú me quieres mucho?</p>
+				<p>-Sí, Juanillo, te quiero más que a <seg rend="italics">naiden.</seg> Cuando te veo hablar con otra moza no sé lo que me dé en <seg rend="italics">to</seg> el cuerpo. Si tú lo vieras... es una cosa <seg rend="italics">mu</seg> rara; algo así me da en la cabeza como cuando se está en la torre y tocan la campana gorda.</p>
+				<p>-Patrocinio, si nosotros nos pudiéramos casar... pero <seg rend="italics">toavía</seg> no tengo <seg rend="italics">namás</seg> que cuatro duros <seg rend="italics">ajorraos...</seg> el amo es <seg rend="italics">mu</seg> malo y me da poco jornal... Cuando veo a su hijo gastar los dineros a manos llenas en dárselos a esas señoricas que trae tan <seg rend="italics">pintas</seg> y que fuman... me da cargo <seg rend="italics">e</seg> conciencia. Y ¡pensar que nosotros seríamos felices con <seg rend="italics">treintu</seg> duros, que él se los gasta en una botella que cruje!</p>
+				<p>Patrocinio con un gesto amarguísimo dijo:</p>
+				<p>-¿Qué le vamos a <seg rend="italics">jacer?</seg> Los ricos son los ricos y los <seg rend="italics">probes</seg> somos los <seg rend="italics">probes..."</seg></p>
+				<p>-Pero nosotros nos queremos, ¿no es verdad?</p>
+				<p>-De <seg rend="italics">toíco</seg> lo de este mundo me privaría menos de tu cariño, mozuca mía... Patrocinio, ¿me quieres dar un beso?</p>
+				<p>-Vete, Juan... ya es tarde...</p>
+				<p>-Dámelo en este carrillo, que se me caliente, pues lo tengo <seg rend="italics">helao..."</seg></p>
+				<p>La moza puso sus labios en la mejilla del fuerte... Juan se estremeció y apretó junto a sí a las ovejitas que gritaron angustiadas... La luna fría y casi borrada en el cielo miró la escena de amor... La mozuela se metió en su casa cerrando la puerta que protestó de tanto servir... El mozo, suspirando fuertemente, echó a andar calle abajo... El día en que él se pudiera casar sería feliz.. ¡Cómo se ganaría el dinero...! Trabajaría a destajo. Se dejaría la vida entre los terrones del amo para sacar de ellos su bienestar y su ambición suprema... Volvió a atravesar la plaza solitaria y empujando el portón entró en el corral.</p>
+				<p>El suelo era de blando y suave estiércol. El mastín, al oír la puerta, se puso en pie y sacudió sus carlancas. Así que vio quién entraba, se metió despacio en su garita. En el gallinero alguna gallina se movía inquieta. Juan entró en la cuadra. El ambiente era tibio. El vapor de los orines de los mulos hacía que se saltaran las lágrimas. Un farol con cristales de telarañas iluminaba el establo. Las bestias resoplaban adormiladas y hartas de cebada. Estaban tendidas en el suelo. Un ansioso potrillo mamaba de una yegua su madre mientras ésta entornaba sus ojos, satisfecha y cariñosa. Juan atravesó la cuadra y se acercó a un rincón donde se oía balar dolorosamente. Era la oveja recién parida. Estaba acurrucada en la dorada paja esperando sin duda a sus rizados crios... Juan se acercó y los puso al lado de su madre. La oveja, al ver sus hijos, se incorporó sobre sus patas sangrientas y con un balar entrecortado le lamía los ojos a uno mientras con sus patas tenía abrazado al otro. El animal abrió las ancas de atrás mostrando las tetas llenas de vida. Los hijuelos, ciegos y arrastrándose penosamente, llegaron a las tetas. La madre, empujándolos con la cabezota, les colocó el tembloroso pezón en las sedientas boquitas. Las crías empezaron a tragar ávidas la tibia leche y la oveja madre tendiéndose del todo se quedó adormilada. Sus ojos estaban bañados de una luz inefable y celestial.</p>
+				<milestone unit="section"/>
+				<p>Juan, de rodillas ante la oveja, miraba absorto el milagro de amor... Probó a quitar una ovejita de la teta, pero la madre, levantando la cabeza, le enseñó los dientes mirándolo con furia...</p>
+				<milestone unit="section"/>
+				<p>Juan pensaba en Patrocinio... Ella le daría hijos... Él los defendería como la oveja defiende a los suyos... El mozo, con andar lento, salió al corral a meter a una yegua que se había salido del establo... Después, quitándose la chaqueta y las botas, se tendió en su -cabecera- y al son del respirar [de] los mulos se quedó dormido... Los gallos cantaban, contestándose unos a otros... La tierra se iba poniendo blanca de escarcha. El perro ladró a alguien que pasó junto al portón... En el corral la luna hacía sombra de miedo. Entre los palos y las cañas se sentían moverse a los insectos... La helada estaba en su apogeo... Los gallos seguían cantando. ¿Qué preguntarán?</p>
+				<floatingText>
+					<body>
+						<div type="section">
+							<head>Comentario al canto</head>
+							<p>¡Con qué poco dinero hay felicidad en un pobre...! Vosotros, los que derrocháis el dinero en cosas inútiles, no sabéis que hay muchas gentes que serían felices quizá toda su vida con unas cuantas monedas con que empezar a vivir... Que muchos amores sin mancha de aldea de pecado se mueren y marchitan por falta de dinero... Vosotros, los que sólo os divertís en cosas fastuosas, no sabéis el encanto de una cuadra con bestias paridas. Vosotros, los que solamente acariciáis a putas, no sabéis nunca la emoción de abrazar y besar a un animal recién nacido. Vosotros, los que sólo vivís en teatros, no sabéis jamás el misterio de un corral con rumor de animales dormidos y olor a paja húmeda en una noche de luna del invierno...</p>
+						</div>
+					</body>
+				</floatingText>
+			</div>
+			<div n="4" type="chapter" xml:id="ne0198_chap4">
+				<head>Canto cuarto</head>
+				<p>La negra sombra de la miseria envolvía la casa de Patrocinio. El invierno apresó a la aldea con sus garras de dolores. La lluvia caía lenta y parsimoniosa. El aire estrellaba sus gotas contra las paredes. Los tejados del poblado eran jardines de plantas extrañas. La cal de las paredes se caía, las viejas casas no querían afeites. Las calles estaban muertas, las puertas cerradas. El suelo era de fango verdoso. Y llover y llover... Parecía que el cielo quería hundirse. La luz era trágica y cenicienta. El río de aguas rojas se había salido de su madre comiéndose los sembrados de la orilla. Los árboles eran estacas inmensas. Los campos estaban angustiados por el agua. Por las noches los hambrientos lobos bajaban de la montaña aullando tristemente y arañando con furia las destartaladas puertas de las viviendas. En la casa de Patrocinio hacía más frío que en pleno campo. El techo herido dejaba caer el agua. No había lumbre en el hogar. La luz de aceite hacía suspirar y temblar a la habitación. En las tinieblas brillaba el cobre de la chimenea. La madre lloraba. Patrocinio estaba acurrucada con los pies liados en trapujos. En el silencio de la noche y destacándose sobre los trinos de la llovizna se oían cantar los caños de la fuente. Los pasos de alguno que pasara por la solitaria calle sonaban huecos y lúgubres. En los corrales silenciosos las gallinas, apretadas unas junto a otras, dormitaban. El pueblo estaba desolado...</p>
+				<milestone unit="section"/>
+				<p>El padre de Patrocinio, entrando en su casa y sentándose junto a su mujer, la dijo: -Mira, Carmen, nosotros no podemos tirar ya [de] esta carga tan fuerte. En la tienda ya no <seg rend="italics">ñus</seg> fían. Mi amo no me da más fanegas de trigo. A mi compadre Tobalico le debo cuarenta duros que si no se los doy se <seg rend="italics">queará</seg> con él la casa. Así es que he <seg rend="italics">decidió</seg> que nos vayamos a la ventura, y sea lo que Dios quiera... Ve aneglando <seg rend="italics">to,</seg> sin que las vecinas se enteren, y nos iremos a <seg rend="italics">Güenos Aires</seg> a ver si allí tenemos más suerte que en nuestro pueblo.- La pobre mujer en oyendo esto comenzó a dar chillidos espantosos y dándose con las manos golpes en la cabeza.</p>
+				<p>-Calla, calla, so perra-, dijo el marido. -¿No ves que me vas a perder...?- La infeliz, ahogando los gemidos decía desolada: -Dios mío, Dios mío, ¿qué va a ser de nosotros solos por esos mundos de Dios, sin el consuelo de <seg rend="italics">naideri</seg>?...Y tener que dejar el pueblo que tanta querencia le tengo... Y más que <seg rend="italics">na. el</seg> tener que atravesar el 'charco'...¡Virgen de las Candelicas, acuérdate de nosotros! Tápanos con tu manto de <seg rend="italics">sea..."</seg></p>
+				<p>La lluvia y el viento en miedosa sinfonía hacían temblar la casa, que se quería morir. El hermano menor, de ver llorar a la madre, hacía pucheros, compungido... El padre volvió a decir:</p>
+				<p>-Ya lo sabes, Carmen, déjate de duelos, arregla las cosas, que mañana a la noche nos iremos, sin que se entere <seg rend="italics">naiden,</seg> a la capital para arreglar el pasaje. No te despidas de <seg rend="italics">naiden,</seg> temo que se enteren y me metan en la cárcel.</p>
+				<p>Patrocinio estaba aterrada. Ella que tanto quería a Juan marcharse sin decirle <seg rend="italics">na...</seg> ¡qué mala suerte...! En cambio su amiga María se casaba el mes que entraba.... Pero por otro lado la visión de lo desconocido la atraía poderosamente... Ella iba a ver el mar y capitales con casas muy altas y coches que andaban solos, en fin iba a ver con sus ojos las maravillas de que tanto le hablaba la hija del alcalde... ¡Pero Juan! Su corazón lo dejaba en el pueblo. <seg rend="italics">¡Probe</seg> Juanillo! ¿Qué diría cuando a otra mañana se encontrara la casa cerrada y sin vida...?</p>
+				<p>Las lágrimas le caían silenciosas formando en su carita surcos de calor. Él, tan bueno, tan cariñoso siempre con ella, y con tantos presentes como le hacía, tenerlo que dejar... y no poder decirle <seg rend="italics">na,</seg> por temor de que a su padre lo metieran en <seg rend="italics">presiyo...</seg> Ya no vería más a sus amigas ni a la virgen con su paloma, ni a Juan... ¡Los barcos... el mar... ella embarcada...¡Y así la pobre muchacha pasaba de un tema a otro tema sin saber qué hacer, si alegrarse o desesperarse... En el reloj de la torre dieron las dos de la madrugada... La noche estaba loca, furiosa...</p>
+				<p>-Ea-, dijo el padre, -a consolarse como yo me consuelo, y échate un poquillo en esos colchones...- Las mujeres [palabra ilegible] por el llanto se acostaron en unos míseros camastros mientras el padre, moviendo la triste cabeza, se sentó en el sillón de aneas...</p>
+				<milestone unit="section"/>
+				<p>Mientras esto pasaba en casa de Patrocinio, Juan dormía en la cuadra. En el techo las polillas masticaban ansiosas. Las bestias descansaban. La oveja parida abrazaba amorosa a sus blancos hijos. El muchacho tenía una pesadilla horrible. Soñaba en que Patrocinio se la comía la tierra harta de agua y que al tragársela se producía un ruido inmenso... Se despertó sobresaltado... Un mulo resoplaba triunfal... El mozo se levantó, echó comida a las bestias y con los ojos cerrados se volvió a acostar pesadamente. La lluvia chapoteaba en el estiércol. El mastín se movía nervioso en la perrera. De cuando en cuando daba un aullido entrecortado. Un rumor de pisadas débiles se sentía detrás del portón. El perro comenzó a ladrar escandalosamente. Las gallinas cloqueaban asustadas. El portón se movía débilmente. Alguien lo arañaba. Se oía un sordo rumor de gargantas profundas. El animal acentuó los ladridos... Una negra pata asomaba entre las rendijas formidables del portón. Las gallinas seguían llorando... Juan se levantó al sentir el estrépito y se dirigió de prisa al portón. El perro, al verle, se calló. Paróse junto a la puerta y oyó el ruido escalofriante...</p>
+				<p>-¡Una manada de lobos!-, dijo el mozo. El portón se movía fuertemente. El viento era otro aullido más... Juan corrió a la cuadra y, encendiendo con el farol un haz de ramales, se acercó al portón. Los lobos, al ver a través de las rendijas las llamas, huyeron despavoridos. Después se asomó por una rendija y vio a los lobos correr a esconderse en la sierra. El perro se sentó moviendo el rabo desesperadamente, las gallinas se callaron y el mozo tornó a dormir... El agua caía con menos fuerza. El viento traía los aullidos de los lobos... Un gato maulló... Estaba empezando a clarear...</p>
+				<ab>Fin del canto cuarto</ab>
+				<ab>Sin comentario</ab>
+			</div>
+			<div n="5" type="chapter" xml:id="ne0198_chap5">
+				<head>Canto quinto</head>
+				<p>La entrevista de Patrocinio con su novio fue corta y angustiada. Ella no quería decirle nada de su huida y ansiaba por decírselo. El amor que tenía a su padre le impidió hablar. El muchacho se retiró gozoso y retozón. Oscurecía ya cuando Patrocinio entró en su casa. Las nubes del poniente eran tan de fuego que parecían jirones de sol. El campo, gris claro. El aire que acababa de besar las nieves de la sierra ponía los rostros amoratados. El humo que salía de las chimeneas se restregaba con el suelo. La niebla hada fantasmas a las personas... En la casa de Patrocinio se preparaban para la partida. El padre en el corral arreglaba el carro poniéndole un toldo. El resto de la familia hacían líos con los colchones y demás enseres. La noche era ya entrada. Por la calle no había un alma. El pueblo descansaba. El padre sacó el carro a la puerta. Las mujeres lo llenaron de cosas y, despidiéndose de la casa, echaron a andar. El gato, que se había quedado encerrado, maullaba desesperado. Las flores de las macetas inclinaron sus cálices despidiéndose de los tristes. El burro viejo y sin pelo arrastraba penosamente la carreta. Entraron en la plaza muda y atravesándola salieron al campo. El padre guiaba el carro con los niños dentro. La madre y Patrocinio iban detrás, llorosas y ateridas de frío. Las ruedas de la carreta, apretándose contra la tierra, no querían andar. El caserío se iba alejando. La moza andaba despacio como si quisiera que sus pasos no la alejaran de allí. Pensando decía: -El pueblo está todavía cerca, aún podría volver a él-, pero el aire del más allá que le daba en el rostro le hacía caminar. ¿Cómo sería la ciudad?...</p>
+				<p>El camino se internaba en la montaña... Los emigrantes se volvieron hacia el pueblo que perdían de vista para siempre y lo retrataron en sus ojos de cristales a causa del llanto... Emprendieron la caminata descorazonados y la montaña se los tragó... El eco respondía burlonamente a los vaivenes de la carreta... y a los palos que el hombre daba al animal para que apretara el paso. Las figuras las fue borrando la niebla... Algunas ráfagas de aire traían envueltos suspiros y risa [?] de niños. El silencio volvió a reinar... La negra e inmensa puerta de lo desconocido se abrió para que entraran aquellos sin fortuna...</p>
+				<milestone unit="section"/>
+				<p>A la mañana siguiente en todo el pueblo no se hablaba de otra cosa. -La familia de Tío Vitor se había <seg rend="italics">marchao. -</seg> Los acreedores que perdían su dinero estaban como perros rabiosos. La mayoría de las gentes compadecían a los desgraciados. Por la plaza había corrillos numerosos comentando el acontecimiento... Las vecinas ya tenían conversación para todo un año.</p>
+				<p><seg rend="italics">-Probecitos', </seg>decía una, -con el escarchazo que ha <seg rend="italics">caío</seg> esta noche <seg rend="italics">pasá, quizan</seg> se hayan <seg rend="italics">queao agarrotaos</seg> por esos andurriales...</p>
+				<p>-Pues a mí-, intervenía otra, -de quien me da más lástima es de los chiquillos. ¡Angélicos tan chicos y ya pasando penas en este mundo! Pues y Carmen tan <seg rend="italics">güenísima</seg> tan <seg rend="italics">apañá</seg> pa sus costuras con tan <seg rend="italics">güen</seg> corazón... ¡Ay <seg rend="italics">comaé.</seg> A [palabra ilegible] lo que es en esta vida los <seg rend="italics">probes</seg> no podemos vivir...- Y así, unos diciendo una cosa y otros diciendo otras, se iba muriendo la mañana. Mientras tanto ellos... ¡Sabe Dios dónde estarán!</p>
+				<p>En las aceras de piedras la gente tomaba el sol comentando el acontecimiento. Hacía tanto frío que los vahos de las personas eran bocanadas de humo azulado. Juan, en seguida que se levantó y hubo arreglado las bestias, salió a la plaza, y, dirigiéndose a un corro de muchachos que había junto a la fuente, les preguntó:</p>
+				<p>-¿Qué <seg rend="italics">jacéis?</seg></p>
+				<p>-¿No te has <seg rend="italics">enterao</seg> de lo que pasa?-, le interrogaron.</p>
+				<p>-No.</p>
+				<p>-Pues que tu novia la Patrocinio se ha <seg rend="italics">escapao</seg> esta noche del pueblo con <seg rend="italics">toa</seg> su familia.</p>
+				<p>-Pero ¿a dónde?-, preguntó ansioso.</p>
+				<p>-No sabemos a <seg rend="italics">onde</seg> se habrán <seg rend="italics">ío.</seg> Lo cierto es que en el pueblo no están.</p>
+				<p>Juan, al escuchar estas palabras, se quedó aplomado y sin vida. Le zumbaban los oídos y no veía claro. Un mozuelo, dirigiéndose a él, le dijo cariñoso:</p>
+				<p>-¡Juanillo, hombre! Te has <seg rend="italics">queao</seg> lo mismo que las <seg rend="italics">paeles</seg> de la iglesia. Serénate y sé hombre, que si Patrocinio se ha <seg rend="italics">ío</seg> no faltan mozas en el pueblo que te quieran.</p>
+				<p>Los mozos consolaron al desdichado y éste, escurriéndose entre las personas que llenaban la plaza, entróse en el corral de su amo. Estaba embriagado de dolor y no se daba cuenta de su estado de ánimo. Al entrar tropezó con un arado, cayéndose al suelo. Su pecho se agitaba fuerte mientras sollozaba bárbaramente. Ya en la cuadra rompió a llorar como un niño mientras se revolcaba en el caliente estiércol. ¿Que su Patrocinio se había <seg rend="italics">marchao</seg> del pueblo? No, si no podía ser. ¿Si a él, que lo contaba todas las cosas de su casa, no iba a haberle dicho na? Las bestias, de oír los berridos de dolor, tenían las orejas puestas de punta. El mozo, al sentir que se acercaba gente, se puso rápidamente en pie, se limpió las lágrimas y empezó a acariciar una jaca blanca que era la reina del establo. En la puerta de la cuadra apareció un señor vestido muy ricamente y, dirigiéndose a Juan, le dijo:</p>
+				<p>-Mañana iréis tú y otros dos a la <seg rend="italics">jaza</seg> del álamo blanco a escardar, y hoy lo que <seg rend="italics">quea</seg> de día entretente en limpiar la cuadra de estiércol.- El hombre se fue y Juan se sentó abatido en su cama. ¿Que sería de él ahora? Sin Patrocinio no podía vivir... <seg rend="italics">¿Pa</seg> quién serían los nidos que encontrara entre las retamas del arroyo? ¿Quién bailaría con él los domingos...? No tenía fuerzas para nada, fue a coger la manecilla para sacar estiércol y se le cayó de las manos... No podía trabajar. ¿Para qué? Su corazón puro y primitivo no podía encontrar consuelo de otra moza. Estaba lleno del corazón de la que se fue.</p>
+				<milestone unit="section"/>
+				<p>Con el cuerpo desplomado y los ojos enrojecidos por las lágrimas, Juan comenzó a sacar al corral el estiércol de la cuadra. Más que un hombre era un muñeco que se movía sin saber por qué. Cuando se encontraba con algún criado del amo, le sonreía idiota y seguía trabajando... con el corazón hecho pedazos. Así estuvo toda la tarde y cuando llegó la hora del oscurecer soltó la faena y salió como loco a la calle. Como hacía tanto frío los labradores estaban en sus casas sentados ante el rescoldo. Juan se dirigió veloz a casa de su novia. Un silencio de muerte salía por las oscuras rendijas. De cuando en cuando el gato encerrado gemía doloroso. El infeliz se sentó estúpidamente en el tranco de la puerta. No pensaba en nada. Todo aquello le parecía un sueño...</p>
+				<p>-Esas estrellas que veo yo las estará viendo ella-, pensaba. Y le entraban unos locos deseos de salir corriendo por todos los caminos hasta encontrarla. Se levantó rápidamente y salió a la plaza y puso la cabezota debajo de un caño de la fuente. La sensación lo despertó de su letargo y entonces vio claramente lo que le pasaba... En su casa estaban muy tristes e impresionados. Juan no quiso comer y se marchó a la cuadra para acostarse. -Esta noche saldré para que me coman los lobos-, decía desesperado... Se echó en su camastro. Pero no podía dormir y se revolvía nervioso en el lecho. Daban la una y las dos y las tres y Juan sin dormirse. Algunas veces se levantaba, recorría la cuadra a grandes pasos y otra vez se acostaba. El farol falto de aceite se apagaba. El viento movía los pabellones de telarañas. Juan, desesperado y sin poder conciliar el sueño, rompió a llorar a gritos salvajes mientras se arrancaba los pelos del pecho con las manazas. Los gemidos hondos y temblorosos eran escalofriantes. Las bestias con sus resoplidos y el hombre con su llanto formaban un sonido fuerte y desgarrador... En el silencio augusto de la noche sonaba miedoso el llanto del abandonado...</p>
+<floatingText><body><div type="section">
+					<head>Comentario</head>
+				<p>Amor de alma rústica, eres gigante.</p>
+				<p>Tú eres el verdadero amor. ¡Quién pudiera tener un amor así! Los de las ciudades cada día amáis a una. ¿Cómo vais a comprender esta pasión? Amores de las almas sin vicio ni mancilla, en vosotras está el verdadero amor.</p>
+				<ab>F. García L.</ab>
+				<ab>10 enero 1917</ab>
+</div></body></floatingText>			</div>
+			<div n="6" type="chapter" xml:id="ne0198_chap6">
+				<head>Canto sexto</head>
+				<p>El invierno pasó y la primavera, y llegó el verano ardiente y abrumador. Las gentes del pueblo reían gozosas y por las tardes las mozuelas muy vestidas de blanco y adornadas con rosas paseaban por la plaza... Las eras se llenaban de olorosas mieses y cuando el sol se ponía bañaba de oro los campos que eran de oro también. Las noches de luna eran una vaga continuación del día. La vega había parido su cosecha... Juan no era ya el mozo alegre y simpático de antes. No. Era un hombre sin amor, era un joven sin vida y sin alma; era un muñeco que lo movieran con resortes. El hastío de todo lo invadía. Las faenas campestres, que tanto amor les tenía, ya no encontraba satisfacción en ellas. Las bestias y las ovejas, que eran sus hermanas, las maltrataba cruel. Cuando veía algunos novios con las cabezas muy juntas se moría de desesperación. En el pueblo ya sabían dónde estaba Patrocinio; desde las Américas habían escrito. El pobre en sus amargos coloquios se solía preguntar:</p>
+				<p>-¿Dónde estará América? Si yo me pudiera ir... pero ¿y mi madre?-, y este pensamiento detenía los suyos... El corazón de Juan tan sencillo, tan sano de impurezas, se acobardaba ante la idea de la partida... y su amor tan fuerte, tan de piedra, lo mataba de ausencia... -¡Virgen santa!-, decía él, -yo no puedo pasar sin ella, y esto no me lo puedo arrancar... Lo llevo clavado como si fuera un hacha de hierro... El verano pasado fue cuando le hablé. Me parece que fue ayer... La noche de San Juan en la plaza... ¡Y salió! ¡Y <seg rend="italics">pa</seg> siempre! Tú que estás en los cielos, quítame esta pesadumbre. <seg rend="italics">Jaz</seg> que no piense en <seg rend="italics">naida</seg>y cúrame de este mal de ojo que me han <seg rend="italics">jecho..."</seg></p>
+				<p>La estación acrecentaba las nostalgias de Juan. Las viñas estaban tan verdes y sensuales que eran una invitación a revolcarse en ellas. Los gusanos luminosos dormían en las hojas frescas y ásperas... La tierra estaba tibia... Calor y fuego por todas partes... Y el mozuelo se moría de amor y deseo. Su naturaleza fortísima y gigante y su virginidad le hacían sentir más la dolencia mortal. Las demás mozas del pueblo no le gustaban. Pretendió querer a alguna de ellas y no lo consiguió. Se acercaba para hablarlas y no las veía, sólo pensaba en Patrocinio, que tan lejos de él quizá estaría ahora hablando con un novio que tuviera allí... Y en pensando esto se deshacía en llantos supremos golpeándose la cabeza con las manos deformes... El verano está cargado de lujurias y de amores... Por todas partes hay sed de todas las cosas. Los olores de las eras son afrodisíacos... Alguna moza cayó desfallecida de amor entre los haces de trigo una noche de luna llena... Las abejas hacen su cópula volando por los aires... El calor y los olores se traducen en deseos. ¿Quién no amará en el verano? Todas estas causas, sin que el muchacho se diera cuenta, obraban sobre él, consumiéndolo. Los ojos los tenía hundidos entre sombras azuladas. La boca, seca. Los hombros, cuadrados. Trabajaba sin sentirlo. No hablaba con nadie...</p>
+				<milestone unit="section"/>
+				<p>Y el verano seguía creciendo y el mozo cada vez más lánguido y apenado... Cuando se acercaba al pozo le parecía que una mano gigante saliendo del misterio del agua quería sumergirlo en la verde frialdad... Por las noches, como en la cuadra hacía mucho calor, sacaba la cama al corral y allí descansaba al fresco mirando al cielo aletargado de amor. ¿Qué sería de él si no se curaba de aquella malísima enfermedad?... Y el verano seguía creciendo y llegó la noche de San Juan... En la plaza había las mismas hogueras que todos los años y las mismas canciones cantaban los mozos. Aquella noche hacía una temperatura muy agradable y los vecinos estaban sentados en sus puertas. Aquella noche la luna hacía de cera los rostros y tenía a la vega hipnotizada por su luz. En un ángulo de la plaza trabajaban unos titiriteros vestidos con harapos color rosa. Una niña hacía horribles contorsiones mientras jugaba con dos puñales. El tambor cansino hacía su sonido. Olía a carburo, cuya luz alumbraba los títeres. La algazara continuaría hasta el amanecer...</p>
+				<milestone unit="section"/>
+				<p>El herido mozuelo no estaba en la plaza. La vista de ella lo había desesperado. ¡Parece que fue ayer...!</p>
+				<lg type="poem">
+					<l>A esta niña bonita </l>
+					<l>la vamos a matar...</l>
+					<l>por coger verbena </l>
+					<l>la noche de San Juan...</l>
+				</lg>
+
+				<p>... y se acordó de todo. Vio que no tenía remedio su mal. Que vendría el invierno y que llegaría la primavera... y loco, sin saber qué hacer, salió al campo, corriendo desesperadamente. Al pasar por los bordes de las acequias las ranas saltaban al agua. Las voces de los que cantaban llegaban a él confusas y calladas. Atravesó el campo de trigos segados y llegó al río. Al pasar por las alamedas los pájaros que dormían en sus ramas revolotearon inquietos. Juan vagó largo rato a la orilla del río. La sangre de su corazón salía por su boca seca, condenándolo a morir... Oía cantar al pueblo... Un temblor convulsivo se apoderó de él. Extendió los brazos en cruz y dando un grito de angustia se dejó caer en el río profundo... El agua tembló y dijo un sonido suave y rumoroso... Durante un momento se le vio rebullirse en el agua... Después el río amoroso se lo tragó... El último suspiro del enamorado mozo produjo una gran burbuja que el aire no consiguió matar...</p>
+				<milestone unit="section"/>
+				<p>Río abajo y arrullado por el agua va el cuerpo muerto de Juan. La corriente lo dejó en una isla de verdura que había en medio del río. El cadáver quedó mirando al cielo. Las margaritas se deshojaron sobre él y los hinojos lo incensaron con su suave perfume. En los entornados ojos del muerto hay una luz verdosa y extrahu-mana. Su cuerpo virgen de contacto carnal lo acariciaba la hierba. El sonido del agua era el canto de su funeral. Las hogueras de los caseríos eran los cirios que lo alumbraban. La sombra de un árbol era su mortaja... En el silencio de la noche se oían llorar las novias con sus voces cascadas...</p>
+			<floatingText>
+				<body>
+					<div type="section">
+				<head>Comentario</head>
+							<p>Y así en una noche de luna y callada de un día de San Juan murió este mozo de tanto amar. Su alma virgen no pudo resistir su ardiente pasión y se arrojó al río que se lo llevó cantándole.</p>
+							<p>¡Tener misericordia de él!</p>
+			</div>
+				</body>
+			</floatingText>
+			</div>
+		</body>
+		<back>
+			<div>
+				<head>FIN</head>
+				<p>Federico García Lorca Granada, 13 de enero de 1917</p>
+			</div>
+		</back>
+	</text>
+</TEI>

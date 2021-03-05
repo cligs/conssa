@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Crimen</title>
+				<title type="sub"></title>
+				<title type="short">Crimen</title>
+				<title type="idno">
+					<idno type="bne">XX1961933</idno>
+					<idno type="viaf">309368888</idno>
+				</title>
+				<author>
+					<idno type="bne">XX830087</idno>
+					<idno type="viaf">61601797</idno>
+					<name type="short">Espinosa</name>
+					<name type="full">Agustín Espinosa</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">292</measure>
+				<measure unit="divs">31</measure>
+				<measure unit="tokens">7692</measure>
+				<measure unit="chars">44485</measure>
+				<measure unit="size_kb">58</measure>
+				<measure unit="chapters">6</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">24</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">217</measure> 
+				<measure unit="lg.poems">0</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">0</measure> 
+				<measure unit="heads">29</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">188</measure> 
+				<measure unit="abs">0</measure> 
+				<measure unit="fts">0</measure>
+				<measure unit="paragraphs.ds">13</measure>
+				<measure unit="saids">11</measure>
+				<measure unit="narrative.ps">175</measure>
+				<measure unit="punctual_ss">472</measure> 
+				<measure unit="numerals">16</measure> 
+				<measure unit="puncts">1227</measure> 
+				<measure unit="len.abstract">1442</measure>
+				<measure unit="chapters.len.mean">7507.50</measure>
+				<measure unit="chapters.len.std">3890.27</measure>
+				<measure unit="chapters.len.median">6470.50</measure>
+				<measure unit="chapters.len.iqr">6413.00</measure>
+
+				<measure unit="types">2537</measure>
+
+				<measure unit="ss">434</measure>
+				<measure unit="ss.num.mean">102.22</measure>
+				<measure unit="ss.num.std">83.97</measure>
+				<measure unit="ss.num.median">83.00</measure>
+				<measure unit="ss.num.iqr">92.25</measure>
+				<measure unit="ss.active.verbs.mean">1.24</measure>
+				<measure unit="ss.active.verbs.std">1.21</measure>
+				<measure unit="ss.active.verbs.median">1.00</measure>
+				<measure unit="ss.active.verbs.iqr">2.00</measure>
+
+				<measure unit="ws">8725</measure>
+				<measure unit="ws.num.mean">4.13</measure>
+				<measure unit="ws.num.std">2.88</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">442</measure>
+				<measure unit="determiners">1300</measure>
+				<measure unit="nouns">1804</measure>
+				<measure unit="verbs">1095</measure>
+				<measure unit="adverbs">411</measure>
+				<measure unit="adjectives">663</measure>
+				<measure unit="adpositions">1206</measure>
+				<measure unit="punctuations">1177</measure>
+				<measure unit="pronouns">551</measure>
+				<measure unit="dates">17</measure>
+				<measure unit="numbers">58</measure>
+				<measure unit="interjections">1</measure>
+
+				<measure unit="ne.persons">35</measure>
+				<measure unit="ne.organizations">10</measure>
+				<measure unit="ne.locations">13</measure>
+				<measure unit="ne.others">5</measure>
+
+				<measure unit="wnlex.noun.plants">19</measure>
+				<measure unit="wnlex.verb.communications">45</measure>
+				<measure unit="wnlex.noun.foods">16</measure>
+				<measure unit="wnlex.verb.possessions">21</measure>
+				<measure unit="wnlex.verb.cognitions">55</measure>
+				<measure unit="wnlex.noun.communications">77</measure>
+				<measure unit="wnlex.noun.states">55</measure>
+				<measure unit="wnlex.verb.statives">316</measure>
+				<measure unit="wnlex.noun.cognitions">41</measure>
+				<measure unit="wnlex.noun.times">103</measure>
+				<measure unit="wnlex.verb.bodys">43</measure>
+				<measure unit="wnlex.noun.persons">179</measure>
+				<measure unit="wnlex.adj.alls">458</measure>
+				<measure unit="wnlex.noun.quantitys">9</measure>
+				<measure unit="wnlex.noun.phenomenons">27</measure>
+				<measure unit="wnlex.verb.creations">56</measure>
+				<measure unit="wnlex.adj.perts">31</measure>
+				<measure unit="wnlex.adv.alls">143</measure>
+				<measure unit="wnlex.noun.processs">3</measure>
+				<measure unit="wnlex.noun.artifacts">283</measure>
+				<measure unit="wnlex.verb.perceptions">51</measure>
+				<measure unit="wnlex.noun.feelings">25</measure>
+				<measure unit="wnlex.verb.weathers">10</measure>
+				<measure unit="wnlex.noun.substances">38</measure>
+				<measure unit="wnlex.noun.shapes">5</measure>
+				<measure unit="wnlex.verb.competitions">7</measure>
+				<measure unit="wnlex.verb.motions">96</measure>
+				<measure unit="wnlex.noun.animals">71</measure>
+				<measure unit="wnlex.noun.acts">117</measure>
+				<measure unit="wnlex.noun.bodys">165</measure>
+				<measure unit="wnlex.noun.objects">70</measure>
+				<measure unit="wnlex.noun.motives">1</measure>
+				<measure unit="wnlex.verb.socials">71</measure>
+				<measure unit="wnlex.noun.groups">44</measure>
+				<measure unit="wnlex.verb.consumptions">12</measure>
+				<measure unit="wnlex.noun.possessions">2</measure>
+				<measure unit="wnlex.noun.Topss">22</measure>
+				<measure unit="wnlex.noun.relations">4</measure>
+				<measure unit="wnlex.noun.attributes">56</measure>
+				<measure unit="wnlex.verb.emotions">17</measure>
+				<measure unit="wnlex.noun.locations">56</measure>
+				<measure unit="wnlex.noun.events">45</measure>
+				<measure unit="wnlex.verb.contacts">61</measure>
+				<measure unit="wnlex.xxxs">5617</measure>
+				<measure unit="wnlex.verb.changes">80</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
+						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
+				</availability>
+				<date when="2018">2018</date>
+				<idno type="cligs">ne0380</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Finereader, <date when="2018">2018</date>.</bibl>
+				<bibl type="print-source">Libros del Innombrable, Zaragoza <date when="1999">1999</date></bibl>
+				<bibl type="edition-first"><date when="1934">1934</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE10">
+				<p>Espinosa es autor de la que viene considerándose como una de las muestras más representativas del surrealismo español: Crimen (1934). Aunque responde a esa indefinición de géneros que caracteriza al autor, se puede catalogar como novela [...].</p>
+				<p>Antes de que apareciera en formato de libro se publicaron varios fragmentos en periódicos y revistas. Resultó ser una obra polémica y sufrió duros ataques, ya que el erotismo exacerbado y la necrofilia se mezclan con lo repugnante y cruel. Campea el humor negro. Es un complejo entramado en el que se superponen los sueños y la realidad. Una suma de Freud y Sade.</p>
+				<p>Con un alarde imaginativo el autor pretende asustar al buen burgués. [...] La obra es de una belleza convulsiva que se enfrenta al canon clásico y a la sensibilidad, la moral y la lógica tradicional.</p>
+				<p>Le da cierta unidad el estar narrada en primera persona por el asesino, un viejo impotente que a causa de los celos mata a su mujer, María Ana, mucho más joven que él. Después de ser detenido, acaba huyendo a la "isla de las maldiciones". [...] es a la vez una novela policiaca, fantástica e irreal, y una elegía por la muerte de la amada. El protagonista se siente confuso y angustiado; su personalidad se desintegra. Asistimos a una extrañada vivivficación de los objetos: un sombrero con sexo, faroles que participan en un crimen, barcos que se miran con angustia...</p>
+				<p>Abundan las frases breves, a modo de pinceladas electrizantes.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="medium">
+					<term type="author.TOC.range" resp="MdLE10"></term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1897</term>
+					<term type="author.date.death">1939</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdLE">10</term>
+					<term type="author.movement">avantgarde</term>
+					<term type="author.nonNovelGenre">essay</term>
+					<term type="author.submovement">vanguardista</term>
+					<term type="author.year.change"></term>
+					<term type="authorText.group"></term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">mature</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">?</term>
+					<term type="text.characters.protagonist.profession">?</term>
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">True</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre" cert="medium">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="amazon">Ensayos, Historia, teoría literaria y crítica,  Poesía; </term>
+					<term type="text.genre.subgenre.edit" resp="epublibre"></term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">crime-fiction</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">vanguardist</term>
+					<term type="text.genre.subgenre.litHist" resp="HdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE">novela policíaca, novela fantástica, novela irreal</term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle.source" resp="bne"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.mentioned" resp="HdLE">True</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE10">1.0</term>
+					<term type="text.litHist.literaryQuality" resp="HdLE10">high</term>
+					<term type="text.movement">vanguardista</term>
+					<term type="text.narration.narrator">autodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">non-realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">other</term>
+					<term type="text.setting.country">other</term>
+					<term type="text.setting.represented">other</term>
+					<term type="text.setting.settlement">other</term>
+					<term type="text.setting.settlement.represented.exist">False</term>
+					<term type="text.setting.settlement.type">?</term>
+					<term type="text.setting.territory">other</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span" cert="low">365</term>
+					<term type="text.litHist.audience" resp="MdLE">elite</term>
+					<term type="text.litHist.brow">high</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+					
+			
+					
+			
+					
+			
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2018-05-22" who="#jct">Initial TEI version.</change>
+		</revisionDesc>
+	</teiHeader>
+    <text>
+    	<front>
+    	</front>
+    	<body>
+<div n="1" type="chapter" xml:id="ne0380_chap1">
+<p><seg rend="italics">Crimen</seg></p>
+<p>Estaba casado con una mujer lo arbitrariamente hermosa para que, a pesar de su juventud insultante, fuera superior a su juventud su hermosura. Ella se mas-turbaba cotidianamente sobre él, mientras besaba el retrato de un muchacho de suave bigote oscuro.</p>
+<p>Se orinaba y se descomía sobre él. Y escupía -y hasta se vomitaba- sobre aquel débil hombre enamorado, satisfaciendo así una necesidad inencauzable y conquistando, de paso, la disciplina de una sexualidad de la que era la sola dueña y oficiante.</p>
+<p>Ese hombre no era otro que yo mismo.</p>
+<p>Los que no habéis tenido nunca una mujer de la belleza y juventud de la mía, estáis desautorizados para ningún juicio feliz sobre un caso, ni tan insólito ni tan extraordinario como a primera vista parece.</p>
+<p>Ella creía que toda su vida iba a ser ya un ininterrumpido gargajo, un termitente vómito, un cotidiano mas-turbarse, orinarse y descomerse sobre mí, inacabables.</p>
+<p>Pero una noche la arrojé por el balcón de nuestra alcoba al paso de un tren, y me pasé hasta el alba llorando, entre el cortejo elemental de los vecinos, aquel suicidio inexplicable e inexplicado.</p>
+<p>No fue posible que la autopsia dijera nada útil ante el informe montón de carne roja. El suicidio pareció lo más cómodo a todo el mundo. Yo, que era el único que hubiera podido denunciar al asesino, no lo hice. Tuve miedo al proceso, largo, impresionante. Pesadillas de varias noches con togas, rejas y cadalsos me atemorizaron más de lo que yo pensara. Hoy me parece todo como un cuento escuchado en la niñez, y, a veces, hasta dudo de que fuese yo mismo quien arrojó una noche por el balcón de su alcoba, bajo las ruedas de un expreso, a una muchacha de dieciséis años, frágil y blanca como una fina hoja de azucena.</p>
+<p>Pero ni el recuerdo de ella ni el retrato del muchacho de suave bigote oscuro se han separado jamás de mí.</p>
+<p>En mis farsas peores, les hago intervenir a los dos, disfrazándoles a mi gusto, y decepcionándoles premeditadamente con finales demasiado imprevistos.</p>
+<p>En una hora de inconciencia y olvido pasajeros, he hecho la elegía a María Ana, que doy en este libro. Una elegía a una María Ana que viviera ahora, en 1930, pero anterior, en mis recuerdos, al crimen, aunque no al vómito y el salivazo. Una María Ana de mis ajenos años de estudiante de Filosofía y Letras. La María Ana, en fin, del joven de suave bigote oscuro. O mejor aún: la elegía que a María Ana hubiera podido hacer tal odioso y feliz mancebo.</p>
+<p>Para salvarla de mi crimen -de la presión del tren sobre ella y del pánico de la caída- he escrito el relato titulado «Revenant o el traje de novio».</p>
+<p>Aquí muere María Ana en su cama blanca de prometida, arropando el adiós con una sonrisa prestada. Si la he disfrazado de Miss Equis, ha sido para desnudarla de algún modo de su andalucismo moreno, que me hubiera obligado a volverla a tender bajo otros trenes de la madrugada.</p>
+<p>Luego sólo he tenido -y he realizado- el capricho explicable de reunir en mi casa, una noche, a mis buenos amigos en el anonimato. A mis desconocidos cama-radas en el crimen impune: un cable eléctrico, un jazminero, una hoja Gillette, una cuna, un pene de 63 años, etc.</p>
+<p>Frente a todos los crímenes anónimos de mis criminales huéspedes de una noche, ha permanecido mi crimen en su sitio propio de sensacional, único y gran asesinato pasional. De crimen tipo. De crimen de novela más que de crimen ocurrido.</p>
+<p>Sobre él y sobre mis lectores caigan desde hoy mis futuras maldiciones y persecuciones, la miseria actual y las pústulas pretéritas de mi cuerpo senectuoso de narrador emocionado del asesinato propio y de los crímenes ajenos.</p>
+<p>Yo ya sólo vivo para un estuche de terciopelo blanco, donde guardo dos ojos azules, encontrados por el guardagujas la menstrua alba de mi crimen, entre los últimos escombros sanguinolentos de la vía.</p>
+</div>
+    		<div n="2" type="chapter" xml:id="ne0380_chap2">
+	<head>primavera</head>
+    			<div type="section">
+<head>luna de miel</head>
+<p>Me había dormido entre veinte senos, veinte bocas, veinte sexos, veinte muslos, veinte lenguas y veinte ojos de una misma mujer. Por eso fue mi despertar más angustioso y horripilante: crucificado sobre mi propia cama de matrimonio puesta en posición vertical tras un gran balcón de cristales abierto a una calle desolada. Amanecía tras aquel balcón que me servía de vitrina. Estaba completamente desnudo. Sentía frío y vergüenza de que me pudieran ver desde la calle. Unas finas manos de mujer florecían sobre mis pies como dos clavos blancos, y, probablemente, eran ellas las que me sujetaban a la madera de la cama, aunque yo me consolara creyendo que intentaban desclavarme únicamente. La vergüenza de mi desnudez me angustiaba de nuevo. Inventé, para aquel momento, una oración llena de ternura en la que había mezclados confusos recuerdos de un libro sobre las obras de misericordia que se me hizo aprender de memoria de niño y versos de Paul Claudel y fragmentos de mi Segundo epistolario.</p>
+<p>Tras mi tierna oración, un ejército de moscas de alas verdes, de caracoles de campo, de cucarachas, de sapos y de pequeños ratones blancos, comenzaron a subirme por las piernas hasta cubrirme con sus inmundicias todo el cuerpo. He aquí el traje que se me tenía reservado. Bullía en torno a mi cabeza el hervidero hostil de las moscas. Un temblor espeluznante palpitaba sobre mi vientre y sobre mis brazos y sobre mi cara y sobre mis axilas y hasta sobre mis manos clavadas a la cama por dos anchos puñales que me producían una sangría abundante. Los ojos se me nublaban, y preveía que me iba a desmayar de un momento a otro. Mis mayores amarguras no provenían de esto sin embargo. Sino de una cabeza truncada de mujer morena, que desde un rincón del balcón me miraba con ojos suplicantes, como si dependieran sólo de mí sus destinos. De aquella cabeza terriblemente pálida, colocada sobre un pequeño velador, e iluminada por la luz tenue del alba, fluía un fino hilo de sangre que había formado un gran charco en el piso del balcón. Habló, al fin, la cabeza, y la voz de María Ana amaneció de pronto sobre la noche apremiante de la alcoba.</p>
+<p>-Ahora puedo decirte que te odio, mi pobre viejo burlado, mi gran cornudo macilento. No tocarás ya jamás mis senos, acariciados hoy por manos de ángeles. Anda mi sexo ahora por las casas de prostitución de los puertos del Mediterráneo, visitadas por jóvenes marineros audaces, y mis pies corren tras brazos desclavados y tras labios vírgenes. Para ti me queda esta cabeza truncada y estos ojos tímidos y esta perenne boca insultante.</p>
+<p>Y este gran charco de mi propia sangre, goteando sobre la acera de una calle del alba y sobre los trajecitos blancos de las primeras escolares. El reloj de tu crucifixión. Tu clepsidra sangrienta. Con la última gota de mi sangre se acabará también tu sueño...</p>
+<p>Empezaron a sonar sobre mi cabeza unas campanadas que yo sabía distantes; un dolondeo acelerado y monótono. Venía un aroma de incienso desde la calle y un murmullo de rezos y un taconeo de procesión y un rumor de enaguas. Alguién gritó, desgarradoramente, a mi espalda, apagando con su grito todos los ruidos.</p>
+<p>Vi cómo el velador cedía como bajo un gran peso, y la cabeza de María Ana rodaba al suelo, arrastrando en su caída cuatro blandones encendidos que yo no había visto hasta entonces. En el cielo, que empezaba a hacerse apenas rosado, flotaba una gran cruz oblonga a cuyo alrededor volaban varios cuervos silenciosos como siniestro rebaño de ataúdes alados.</p>
+    				</div>
+    			<div type="section">
+    				<head>hazaña de som brero</head>    				
+	<p>Un sombrero fue el protagonista de este divino sueño incontado.</p>
+<p>Desde un andamio demasiado alto de una casa en obras lo veía caído abajo, en medio de la calle, esperando a pie firme la hora próxima de una cita exacta. Estuvo a punto de perecer varias veces bajo varias ruedas de automóvil. La brisa de la tarde le libertó de una colilla de cigarro que hubiera terminado perforándole el ala. Un escupitajo cayó tan cerca de él, que le salpicó, aunque sólo de modo muy ligero. El fino zapato de ante de una muchacha rubia le rozó suavemente, y yo vi al sombrero que se estremecía hasta la copa, dolorido de un sexo formado como por asociación de úlceras recientes.</p>
+<p>Anochecía, cuando apareció en una esquina un hombre destocado. Atravesó con presura la calle, y, al pasar junto al sombrero, se agachó disimuladamente, lo recogió del suelo y se lo ladeó sobre la oreja izquierda. Luego se perdió más abajo, entre la muchedumbre constituida a aquella hora exclusivamente por oficinistas y obreros recién salidos del trabajo.</p>
+<p>Salté hasta el balcón, la tomé del brazo, y salimos juntos, sin que ni una sola palabra se cruzara entre nosotros.</p>
+<p>La llevaba de la mano como a una niña de seis años, cuando tenía ya más de cuarenta. La aupaba a los tranvías sin grandes esfuerzos; la arrastraba más que acompañarla, porque, a pesar de su obesidad indiscreta, era tan baja, que no pesaba -o a mí me lo parecía por lo menos- casi nada.</p>
+<p>Caminamos así durante varias horas a través de la ciudad.</p>
+<p>Al final de una calle, pequeña, pero tan ancha, que, a aquella hora sobre todo, tomaba aires provinciales de plaza, estaba la sombrerería que buscaba.</p>
+<p>Lo reconocí rápidamente, por su cara de suicida y por una imperceptible quemadura de cigarro junto al lazo. Ella se oponía a ponerse aquel sombrero de hombre, alegando que era un sombrero de hombre. Yo traté inútilmente de convencerla de lo arbitrario de una teoría que quería diferenciar sexos ya bien diferenciados. Abusando únicamente de mis fuerzas, logré ponerle el sombrero, que, como le estaba estrecho, le congetiona-ba cruelmente el rostro y le alargaba aún más las arrugas de la frente.</p>
+<p>Debí de hacerle mucho daño, porque cuando salimos de la sombrerería lloraba.</p>
+<p>Al amanecer del día siguiente era encontrado en una alameda de las afueras el cadáver de una niña de seis años. Llevaba puesto un sombrero de hombre, sujeto por un grueso alfiler, que, perforándole ambos parietales, le atravesaba la masa encefálica.</p>
+</div>
+<div type="section">
+<head>la noche buena de fígaro</head>
+<p>Sentía una ternura que me llevaba a acariciar todas las cosas: lomos de libros, filos de navajas, hocicos de gato, rizos de pubis, prismas de hielo, cucarachas mohosas, lenguas de perro y pieles de marta, gusaneras y bolas de cristal.</p>
+<p>Mis manos estaban tocando algo frío y repugnante. Primero las orejas, luego la nariz, después las cejas del cadáver de un hombre como de cincuenta años, escorzado horizontalmente en un gran primer plano de gran «film», que fuera a la vez un gran cuadro. Tenía aquel hombre un ojo medio cerrado, y el otro, vidrioso, desmesuradamente abierto, y una barba de enfermo de una semana. No llevaba puestos zapatos, sino unos calcetines negros, de muy mala clase, rotos por el talón y sobre los dedos. Tenía la cabeza recién afeitada, y cubría únicamente su ya macabra humanidad un abrigo de señora, impecable, sin una sola arruga, abrigo de maniquí de escaparate de sastrería, demasiado largo para el muerto, al que sólo dejaba en libertad los pies. El abrigo llevaba cosido aún en un costado un papel donde se leía: «M.ª A., soltera, de 16 años, desconocida».</p>
+<p>Todo esto entre dos hileras de cubiertos, sobre el mantel blanco de una mesa de comedor preparada para una gran cena de Nochebuena. Los mal vestidos pies, rozando la blancura de unos pasteles de coco y la ligera arquitectura de un castillo de hojaldre; una de las manos, de uñas curvas y oscuras, medio sumergida en una fuente de «chantilly».</p>
+<p>En una mesa próxima, había varias botellas de champaña y una flamante cabeza de cerdo, de colmillos muy largos, que se parecían demasiado a los del difunto.</p>
+<p>La posición horizontal alargaba un poco la estatura del cadáver; pero, de todos modos, no debía medir menos de dos metros.</p>
+<p>No sin grandes esfuerzos lo había podido traer hasta allí. Y colocarlo sobre la mesa, sin interrumpir demasiado la complicada retórica del banquete. Se trataba ya sólo de separar la cabeza del tronco, y ninguno de los calados cuchillos de plata cortaba bien. Esto empezaba a angustiarme, con el miedo de tener que invertir más tiempo que el fijado.</p>
+<p>Me invadía una ternura que me llevaba a acariciar todas las cosas: picaportes, barandas de escaleras, frutas podridas, relojes de oro, excrementos de enfermo, bombillas eléctricas, sostenes sudorosos, rabos de caballo, axilas peludas y camisitas sangrientas, pezones, copas de cristal, escarabajos y azucenas naturalmente húmedas.</p>
+<p>Aunque sólo acariciaba las orejas, los labios, las mejillas de un hombre a quien había asesinado unas horas antes en su misma habitación, para sustituir su cabeza por una cabeza más clásica: capricho último, de noche de Navidad, de una mujer de pelo rojo y caderas ampulosas. Por quien había llegado hasta el crimen. Y que esperaba, en tanto, voluptuosamente, mi retorno imperioso a su casa, portador de la cena mágica, en la cual habría de ser yo, a la vez, «maitre», matarife y comensal enamorado.</p>
+</div>
+<div type="section">
+<head>¿era yo un caballo?</head>
+<p>Primero -y no era primero acaso- dijiste:</p>
+<p>-¡Ya estamos solos!</p>
+<p>Estábamos solos, en medio de una plaza inclemente, tú, yo y el cochero de la esquina.</p>
+<p>Una golondrina plegó de pronto sus alas, a la mitad precisa de un vuelo, y rodó muerta, dentro de una alcantarilla destapada, seguida muy de cerca por una colilla de cigarro.</p>
+<p>Tus manos se doblaron bajo mis piernas descarnadas.</p>
+<p>Si el cochero de la esquina te besó varias veces en el cuello y te manoseó los pechos con sus manazas diestras en gobernar riendas más largas, fue por eso sólo. Porque te vio tímida, en medio de la plaza solitaria donde yo era todavía mi estatua; indefensa y con las miradas por los adoquines más anchos.</p>
+<p>Cuando, después de una lucha angustiosa con un mármol terriblemente rebelde, pude apearme al fin de la alta tarima a donde crueles heroicidades me llevaran, ya era tarde. Estabas tactando los órganos genitales de un caballo enfermo. Muy bella aún bajo tu bata de veterinaria recién salida de la Escuela.</p>
+<p>Inútilmente paseé una y otra vez ante tus ojos mis abstrusos y complicados disfraces de cabra, de asno, de carnero, de mula, de perro, de vaca... Ni balares de cabra tuberculosa, ni lamentos de perro con úlcera de estómago, ni aun quejumbrosos relinchos de mula con dolor de costado. Veterinaria de cabecera de aquel pobre caballejo indefenso, ya no te habrías de separar más de él.</p>
+<p>Una hora más tarde pasó el entierro del cochero de la esquina. Iba el ataúd sobre su mismo coche de punto, tirado por su mujer y su hijo pequeño. Seguían al macabro vehículo siete caballeros enlevitados, portadores de corona de azucenas en la cabeza. El enlevita-do impar precedía a los otros seis y llevaba una bandera española, cuyo grueso mástil terminaba en una zapatilla despilfarrada.</p>
+<p>El médico me leyó un pliego que decía:</p>
+<p>«Yo, médico titular de este pueblo, certifico que el paciente falleció a consecuencia de una peritonitis producida, al parecer, por coces recibidas de su caballo Agustín.»</p>
+<p>El notario guardaba en su cartera estas palabras, para mí en extremo voluptuosas:</p>
+<p>«Item, dejo a la señorita veterinaria mi caballo Agustín, con el compromiso de curarle, en el plazo de dos meses, la reciente blenorragia que padece el dicho animal.»</p>
+<p>En el sitio donde estaba antes mi estatua había ahora un buró apolillado, cojo de una pata, y un cubo de basura adornado con lirios blancos.</p>
+</div>
+<div type="section">
+<head>ángelus</head>
+<p>Únicamente desde una nube, desde una torre alta, desde un avión o desde una cornisa de rascacielos se ven las cosas como yo las veía aquella tarde desde una vulgar ventana de alcoba.</p>
+<p>Lo que veía no era realmente nada extraordinario, pero a mí me llenaba de un ardoroso júbilo: sobre una aguda roca solitaria, un gran pájaro blanco.</p>
+<p>Acaso no era completamente blanco, sino sólo gris, y la distancia y el tono oscuro de la roca desvirtuaban sobremanera el color. El recuerdo que me queda de éste es, de todos modos, más vago, y no es así del desmesurado tamaño, que me es aún hoy mismo muy fiel. Era -debía o quería ser por lo menos- un buitre. Su cabeza, como la de un niño de dos años. Su estatura, de casi dos metros. Su pico hocico. Su cola, como la de un pavo real.</p>
+<p>Había allí, junto a mí, una mujer, a quien había besado yo mucho en otro tiempo, que se dejaba ahora besar por un joven moreno, que fumaba mis propios cigarrillos y usaba mis cerillas como si fuesen suyas.</p>
+<p>Pero a mí me apasionaba, sobre todo, el gran pájaro blanco. Intentaba disparar sobre él mi pistola, cuando huyó de pronto, sigilosamente, en un vuelo luminoso y arbitrario, que, a medida que lo alejaba de mí, lo hacía mayor y más diáfano. Entonces vi que no era blanco sino de varios colores y que lo que yo había creído uno solo eran dos pájaros. Un sol de ocaso se filtraba a través de las cuatro alas abiertas como por las ojivas de una catedral y las policromaba hasta el infinito. En vano intentaba yo llenar mis ojos con todas estas vagas cosas, para ahuyentar de algún modo el idilio de la muchacha a quien había besado en otro tiempo y del joven moreno que se fumaba mis cigarrillos como si fuesen suyos y usaba como propias mis cerillas, mi balcón y mis mejores butacas.</p>
+<p>Me consolaba, inocentemente, con la vida de que eran, en tanto, ambos extraños al maravilloso espectáculo que se desarrollaba a sus espaldas. Ignorantes de las cuatro alas luminosas, de la gran policromía celeste y del sol ocásico. Ignorantes, también, de mi pistola, que había dejado engatillada el vuelo de un gran pájaro blanco.</p>
+</div>
+    		</div>
+    			<div n="3" type="chapter" xml:id="ne0380_chap3">
+	<head>verano</head>
+<div type="section">
+<head>diario entre dos cruces</head>
+	<div type="section">
+	<head>I</head>
+<p>Junto a cada árbol una aguda piedra para cada pie desgarrado. Navajas sobre carne viva, luz espejeada, fuente sórdida sobre desmedrados estanques. Van a mi espalda los peores adioses. Van ladridos de perros detrás de mi sombra, detrás del sudor caído en el polvo. Y todavía. Una cortina rota. Un sueño encadenado. Una tormenta ejemplar. Un toro enfermo. Un río de sangre.</p>
+<p>El concierto está más allá. Aquí, el desconcierto. Llueve la luz en complicidad con ecos deseados. Como un mar, satisface mis dos eternas hambres. Es todo -cielo, aire, alcohol- temblor de la sensualidad escondida. Trapos. Ya está. ¿Dónde más trapos que por los costados de Dios? Sombras mojadas de los suburbios, ávidas de cuentos celestes y de plurales jardines. Manchas de aceite de unos ordenados olivos cuyo verde tiembla aún en mis ojos turbios de odios amontonados por no sé qué miradas adversas, qué manos crueles, qué palabras esquivas.</p>
+	</div>
+	<div type="section">
+		<head>2</head>
+		<p>Flotan hollejos sobre el agua y se arremolinan junto a inesperados tientos. No hay mar tampoco aquí. Que el mar es trama de héroes, selva de perdidos y no jarama-go de invernadero.</p>
+<p>¿Quién empujó mi cuerpo y pronunció mi nombre? ¿Quién insultó, junto a mi oído, mi alma? Tiembla el cobre en mis manos. Tiembla lo opaco, lo despreciable. ¿Qué temo de esa esquina muda, de ese portal solitario, de ese hombre alto, que me ha mirado al pasar como a un tiñoso perro?</p>
+	</div>
+	<div type="section">
+		<head>3</head>
+		<p>Una tarde -ayer tarde- unos obrerillos se han apuñalado ante mis ojos, y he visto caer la sangre sobre sus camisas de domingo, y transformarse en flores rojas las piedras de una calle donde jugaban unos niños. Y he visto luego, esta noche, a la luz de un farol y entre blancas batas asépticas, los rostros de tres muertos recientes. De tres muertos de odio. De tres héroes de barrio proletario. Tenía el mayor diecisiete años y una ancha frente de soñador sin alas. Estaban sus destinos acaso en acabar el uno poeta, el otro, pintor, actor de cinema, el otro. Y ahora están ya mudos y fríos para siempre, con una moza mueca de amargura en la boca y extraviados los ojos y las manos rígidas.</p>
+<p>¿Qué sabe nadie, qué sabemos nosotros, del puñal que nos herirá, de las manos que nos estrangularán, de la bala que nos estallará la cabeza? ¿O en qué plaza, en qué calle, en qué ciudad, bajo qué cielo caeremos un lozano día para no levantarnos más? Para que nos extravíen los ojos y se nos amargue, con una conocida mueca, la boca. Para ser espectáculo de unas horas, entre trajes oficiales y ojos curiosos. Para que un periodista anónimo haga su crónica más cruenta, mientras muerde un bocadillo y sorbe un vaso de ginebra y chupa un cigarro que no sabe si es suyo o por qué caminos le ha llegado. Para que unas llorosas mujeres se lamenten, y coman luego con más apetito aquella noche.</p>
+	</div>
+	<div type="section">
+		<head>4</head>
+		<p>Vamos soñando pesadillas por la vida. Sueños de otros mezclados con nuestros propios sueños. Cada hora trae su sorpresa. A esta mujer que ahora amamos tanto, que daríamos por ella la vida, acaso la odiaremos mañana. Traicionaremos a este amigo, a cuya aventura está sujeta la nuestra. A quien nos ayudó en nuestra empresa peor, le dejaremos naufragar en su buena desgracia. Y salvaremos a quien no nos ha de salvar o a quien nos ha de empujar hacia un lado para salvar a su enemigo más próximo.</p>
+<p>¿Quién eres tú? ¿Dónde vas? Todos gritándomelo. Todos deseando que no les oiga. Todos expectantes de mi calvario de ciego, de las quebraduras de mi empresa, de la acechanza final en que todo se acabe.</p>
+	</div>
+	<div type="section">
+		<head>5</head>
+		<p>¿Qué sueña el mar estos amaneceres de agosto para que sea su canto tan tierno, tan sutil su espuma, tan sonriente su azul, tan melodioso su oleaje? Siguen las alcantarillas desembocando en sus aguas. Neptuno le ha olvidado ya. Las antiguas sirenas habitan ahora estrellas distantes. Pero el mar sueña aún no sé qué deliciosos sueños, pues es tierno su canto y sutil su espuma y sonriente su azul y melodioso su oleaje.</p>
+	</div>
+	<div type="section">
+		<head>6</head>
+		<p>-Muchacha, ¿dónde vas?</p>
+<p>-Vuelan dos ángeles sobre la tumba de mi amante.</p>
+<p>-¿Quieres sujetarles las alas, o es que ansias, con gritos y brazos, ahuyentarlos?</p>
+<p>-Quiero saber si son de amistad sus vuelos, si son blandas sus manos. Si todo aletear es como yo lo he soñado. Porque temo las esposas para un viaje tan largo. Por si acaso sólo mis manos puedan hacer lo que dos ángeles no hagan.</p>
+<p>Quedó la calle sola. En una esquina próxima se quebró un cuerpo herido. Se oyeron, cada vez más distantes, unos lánguidos pasos. Lejos temblaba, sobre un horizonte cárdeno, un laberinto de cruces entre cales mojadas.</p>
+	</div>
+	<div type="section">
+		<head>7</head>
+		<p>Treme la luz del mediodía sobre un paisaje de casas oscuras, de callejones crueles, de pobreza maloliente.</p>
+<p>A esta misma hora cantaba otros días una voz de mujer en una ventana entreabierta.</p>
+<p>Yo escuchaba su voz con apasionada ternura. Y el sol de las doce rizaba sus oros sobre el paisaje que ahora miro. Y eran claras las casas y rientes las calles y bieno-liente la pobreza.</p>
+<p>Si yo apagué esa voz y el paisaje de ella y la sonrisa de su hora ¿por qué vierto ahora lamentos sobre un mediodía que es obra de mis manos, sobre un paisaje que yo he construido y que mis ojos, como dos cielos de otoño, atormentadamente, ensombrecen?</p>
+	</div>
+</div>
+    		</div>
+	<div n="4" type="chapter" xml:id="ne0380_chap4">
+		<head>otoño</head>
+<div type="section">
+<head>la mano muerta</head>
+<p>Yo busco una mano desesperanzadamente. Imitada sin fortuna en mármoles, ceras y bronces. Una mano lívida, fría, yerta. Que descorra las cortinas de mi alcoba, que guíe mis deslucidos pasos, que quiebre en el aire, entre sus dedos dulces, saetas enemigas, que se apoye en mis peores horas sobre mis desvelados hombros.</p>
+<p>Una mano pálida, fina y trágica. Una mano recién mutilada. Aún anillados sus dedos y rojas aún y espejeantes sus uñas. Una mano de novia que se ha querido hace ya mucho tiempo. Una mano que ha olvidado ya la caricia del guante. La que me cierre un día los ojos que no podrá la muerte cerrarme; ni mis amigos más fieles, ni mis padres, ni mis hijos, ni mis hermanos. Sino sólo tú, mano de muerta, errante; mano de mis sueños del alba, mano que espera, como una estrella de mi alma, mi cuerpo.</p>
+<p>Yo conozco una mano, pero no es ésa.</p>
+<p>Yo conozco una tibia mano, una mano rosada y blanda. Para mis labios, para mis manos y para mi cuello. Para mis noches de amor, en torno a mi cabeza o sobre mi espalda.</p>
+<p>Pero no es ésa.</p>
+<p>Yo busco otra mano. Ala de mis pies. Apaciguadora de mis ansias. La que se apoye sobre mi hombro sólo y deshaga mis postreros quebrantos.</p>
+<p>La que cierre mis ojos y vista mi cuerpo muerto y preceda mi entierro.</p>
+<p>Una mano mutilada y única. Pálida, fría.</p>
+<p>Una mano olvidada ya de que fue mano de amante.</p>
+<p>Una mano angustiosamente blanca.</p>
+</div>
+		<div type="section">
+			<head>retorno</head>
+<p>Han habitado una calle y una plaza mis sueños de muchas horas y años. Han sido escenario de mis pesadillas fustigantes, refugio de mis tropezones injustos, cielo de mis valerosas regresiones. En mi episodiario cotidiano, esa plaza y esa calle no han faltado nunca. En ellas ha estado mi estatua de héroe y la sombrerería de un duelo. En ellas, la vitrina de un alba y la alcoba de un ocaso y el cuerpo sangrante de una mujer lejana. En ellas, un entierro grotesco, un muchacho carbonizado, una parada pavorosa. Junto a mis ojos de niño anormal; desde mi infancia desesperada y trágica. Ya sólo aquí y ahora. Ni después ya ni en otro sitio.</p>
+<p>¡Tal nebulosa entre alas de ayer y cárceles de siempre!</p>
+<div type="section">
+<head>1</head>
+<p>Se llamaba así: la calle del Muerto. Pero su categoría no llegaba ni aun a callejón. Eran veinte metros de mal empedrado camino entre dos muros, blancos casi por milagro.</p>
+<p>El nombre investía de todos modos a la calle del Muerto de una macabridad que no le venía. A ratos, debía de horrorizarse de su nombre la calle del Muerto, y en esos momentos se lo hubiera cambiado por cualquier otro.</p>
+<p>La calle del Muerto tenía en su fondo un paisaje de barcas de vela sobre un mar de calma, de gaviotas, soles de poniente y nubes rosadas.</p>
+<p>En la calle del Muerto escondía yo a mi batallón de los ocho años, para apedrear mejor al batallón enemigo, mal resguardado tras los escasos riscos de una marisma.</p>
+<p>La calle del Muerto protegió mis mejores conspiraciones de niño conspirador. De ella únicamente lo esperaba todo. Con sus puros afectos compuse mi primera letanía.</p>
+<p>¡Letrina de mi niñez sin ayos ingleses y de la de mis gentiles amigos del barrio de la Hoya!</p>
+<p>¡Parque de los novillos del sábado!</p>
+<p>Sobre todos mis objetos de la infancia he salvado esta calle del Muerto, y la salvaré sobre todos mis objetos de hoy. Mi recuerdo va hacia ella como mis pies de los ocho años.</p>
+<p>A ella debo, en primer lugar, una doble epididimitis crónica, que me hace sonrojar cruelmente al desnudarme junto a los lechos pandos de las amigas de una noche.</p>
+<p>A ella debo también una cicatriz retorcida, como de escrófula cerebral, que mi calva prematura acabará abandonando en el centro de la frente.</p>
+</div>
+			<div type="section">
+				<head>2</head>
+				<p>En mis tardes de entonces había una plaza solitaria hasta donde llegaba el ruido del mar cercano. La plaza era grande y oscura, con bancos vulgares de piedra y árboles altos e incoloros.</p>
+<p>Veía la plaza únicamente desde el fondo de un callejón empinado que moría en la misma plaza. No recuerdo haberla pisado nunca. Sé, sin embargo, que si pudiera sentarme hoy en cualquiera de sus bancos los recordaría con la sensación exacta de su dureza, más que advertirla por primera vez. Creo saber también qué profundidad darían las huellas de mis botas sobre su piso de tierra. Pasearía por ella como su huésped, más que como su vecino.</p>
+<p>El mar sonaba tan próximo a la plaza, que la convertía en playa; que la limitaba con el mar. Era -no tuvo nunca fue- una playa abandonada, vestida con abalorios de plaza de provincia. Tenía la desolada desnudez fatal de la playa. Arboles y bancos, mirándose miedosos, llenábanla de una angustia muda, que se comunicaba a todo cuanto rozaba con ella.</p>
+<p>Hasta mi escondite de la calle inmediata llegaba su caricia fría de plaza trágica. Su sombra desgraciada. La sutileza repugnante de un ala de pájaro adverso, construida con olores de pescadería, flores viejas, aguas podridas y excrementos humanos.</p>
+</div>
+		</div>
+<div type="section">
+<head>¡no!¡no!</head>
+<p>Una madrugada de noviembre desvaída y hosca, un hombre, extenuado de muchas noches de vigilia, se paseaba agitadamente entre las paredes de una habitación celular, monologando en voz alta.</p>
+<p>He aquí sus palabras:</p>
+<p>-¡No! ¡No! ¡No es eso! ¡Ni lo ha sido nunca! La ventana sigue en el sitio de siempre. Pasaban ayer bajo ella las horas. Era mayo, y había sombras largas en sus perfumados ocasos. Era febrero, y una luz senil tendía una cortina de encajes sobre una ociosa calleja. Y era agosto, con cálidas rosas sobre muros resolados. O noviembre, con cristales nublosos y siluetas imprecisas de unos espectrales amantes, como en escaparate de pascuas. La ventana empezó -¿qué febrero, qué mayo, qué agosto, qué noviembre?- a motivar preguntas misteriosas. Un perro huidizo fue muerto en un alba por una madrugadora carreta. Su cadáver permaneció varios días bajo la ventana ignorante. Fue otro día un sacerdote quien se abrió allí las venas. La gente empezó a mirar con superstición hacia la macabra ventana. Luego, ya, todo asesino vulgar, todo caprichoso suicida, era atraído hacia el tradicional escenario. Había de ser allí precisamente, aunque hubiera rincones más penumbrosos, plazas más solitarias, superiores encrucijadas. Esa muchacha que ha muerto hace apenas diez días, llevándose hasta el cielo el secreto de su destrozado cuerpo y de su cráneo fracturado, si se detuvo un instante, al morir, bajo una ventana iluminada, no fue para hacerse doble blanco de un puñal lanzado al aire y de un acelerado mazazo. No hacen falta relecciones de Poe ni sherlockhólmicas sutilezas. ¡Cuando Esquilo ya ha hablado, y ha hablado Shakespeare, y Lenormand ha hablado! Pero hay, en tanto, un enamorado infeliz entre bizquerías judiciales y lobregueces de una casa celular y sonar de llaves y horizontes enrejados. Ha perdido su ventana de tantos días. Ha perdido sus ocasos de mayo, sus encajes de febrero, sus rosas de agosto, sus encristaladas luces otoñales. ¿Qué ha tenido que ver con ese sacerdote, esa muchacha o ese perro? Habla ahora en voz baja, y suspira, y dice: «Señor», con el mismo aire vaticinal que cuando era marco de su vida una ventana abierta sobre un callejón desolado. Llegará -va a llegar- el día de los birretes oscuros y las oscuras togas. Llegará -va a llegar- la oración leguleya y el ceremonioso fallo. ¡Y la ventana espera! He visto, por primera vez, unas tablas,despintadas tras los envelados cristales. He visto unas flores reflejadas en su luna nueva. Está como muerta. Como recién apuñalada por la sanción de un perro hambriento, un cura paranoide y una misteriosa muchacha. ¡Si no por ese amante infeliz -soflamadas lenguas hermenéuticas, síes juratoriales, índices oficiantes- por la angustiosa soledad de la dolorosa ventana!</p>
+</div>
+		</div>
+    		<div n="5" type="chapter" xml:id="ne0380_chap5">
+    			<head>invierno</head>
+<div type="section">
+<head>«parade»</head>
+<p>Realizaba con esto altivos sueños de los cincuenta años. Mi espalda comba, mi paso tembloroso y mi desmesurada calva medían bien los días aguardados.</p>
+<p>¿Cuánto tiempo había permanecido cerrado el trágico balcón? Lo abrí vacilante, pensando que aún habría sobre las maderas huellas de sus manos. Todo seguía teniendo el mismo aire de entonces. Venía de la calle un conocido olor a humedad y a grasas. Los raíles de la vía brillaban bajo la luna con iguales reflejos. Iba y venía despaciosamente, la gorra en una mano, la sombra triste del guardagujas. Pasaron dos trenes aureolados de humo negro y de lamentos de sirena.</p>
+<p>¿Habéis oído alguna vez a una orquesta de clownes tocando la «Valsé poudrée», de Popy? La música y sus intérpretes van tan de acuerdo, está tan hecha la una para los otros, que se piensa que más de una expresión de letra ajena se trata de una instintiva improvisación.</p>
+<p>Un pedazo de barrio anónimo, solitario y tenebroso, sólo paseado por trenes inclementes y carromatos de la madrugada, tenía que haber terminado preciso escenario de un crimen como el mío. Se había estado preparando durante largos años para mi primera salida de criminal improvisado. El debut de su héroe. Mi escena de «amateur» del asesinato.</p>
+<p>Era, pues, mi vuelta, un poco la vuelta del hijo pródigo. Se adivinaba una ternura paternal latiendo en todas y cada una de las cosas que en aquellos momentos me rodeaban.</p>
+<p>Yo había citado allí, aquella noche, a varios criminales desconocidos, con objeto de confrontar sus crímenes con el mío y poder deducir del cotejo calidades beneficiosas para mi crimen, a expensas de la supuesta inferioridad de los suyos.</p>
+<p>Esto solamente me había llevado allí.</p>
+<p>Mi retorno tenía una causa asentimental y única. No había venido a templar recuerdos -si se despertaron fue a pesar mío; me poseyeron ellos a mí y no yo a ellos- ni a desenterrar horas pasadas. Acudía a una cita expresa. Era el criminal número 10 que esperaba a sus nueve hermanos menores.</p>
+<p>Fue como si lloviera esencia de jazmín en la calle. Luego como si la destilaran sobre mi propio rostro.</p>
+<p>Así anunció su inmediata presencia el primer criminal.</p>
+<p>Era éste un jazminero corpulento. Florido hasta más allá de su posibilidad de floración. En él se habían refugiado las flores de cien jazmineros floridos. Se habían dado cita en él, la noche histórica del crimen, y, halagados de la hazaña, habían olvidado el retorno.</p>
+<p>Imaginad ahora, por unos momentos, un jardín de palacio español del siglo diecinueve. Dan sobre este jar-din varias ventanas. Una de ellas cabalga sobre un huesudo y alto jazminero.</p>
+<p>He aquí el escenario elemental del crimen.</p>
+<p>Fue la víctima una joven de diecisiete años, que dormía confiadamente el último sueño de las vírgenes morenas.</p>
+<p>Su cadáver conservó durante muchos días la sonrisa inconfundible de los que mueren intoxicados con perfumes.</p>
+<p>En el crimen estuvieron complicados una doncella de la víctima, que rompió alevosamente el día de autos un cristal de la alcoba de su ama, y varios faroles vecinos, cooperadores conscientes en el asalto de la casa.</p>
+<p>Nadie como este singular jazminero ha lastimado más hondamente mi vanidad de criminal intacto.</p>
+<p>Me irritaba, más que el pavoneo, el olor a perfumería y la falsa floración, su evidente capacidad de perpetrador de un crimen de tan extraña belleza.</p>
+<p>(Unos días después, escribía la «Carta a Gustavo Adolfo Bécquer», inclusa en mi Segundo epistolario. A ella pertenecen estos significativos fragmentos:</p>
+<p>«Usted únicamente, Gustavo Adolfo Bécquer, novio de todas las muertas bonitas. Ningún otro que usted ha podido ser el inspirador de ese crimen...»</p>
+<p>«Su barba suave y sus ojos del Sur han andado mezclados en ese bello cuento...»</p>
+<p>«Usted amortajó el cuerpo de la víctima. La llamó ángel andaluz entre ayes de su musa de sangre. Usted siguió a distancia el coche del entierro y lloró enternecido sobre la tumba alunada...»)</p>
+<p>El segundo criminal era una cuna de caoba, pesada y fea, con un ingrato aire de transición entre pesebre de corral y coche de tiovivo.</p>
+<p>Una noche, cuando más feliz era el sueño de un niño recién nacido que dormía sobre ella, dio, haciendo con esto un desmesurado esfuerzo, una violenta vuelta de campana, y apretó fuertemente a la tierna criatura bajo su vientre acolchonado. En esta criminal posición, permaneció hasta las primeras horas del próximo día, en que, convencida de la muerte de su víctima, tornó a abrir de nuevo su gran boca bajo los cielos recientes, convirtiéndose entonces de infanticida en lecho del infanticidato.</p>
+<p>Su crimen la condecoraba de un halo de flores blancas, músicas celestes y angelitos retozadores.</p>
+<p>¿Quién iba a imaginarse que pudiera ser así el cuerpo normal de un rayo en descanso?</p>
+<p>He aquí que mis ojos se habían detenido esta vez ante el tercer asesino.</p>
+<p>Era una desproporción ingeniosamente conseguida lo que informaba la especial anatomía de aquel repugnante engendro asteróidico, que olía a humanidad, a fábrica de luz eléctrica, a carbón vegetal y a excremento de perro.</p>
+<p>Tenía de persona, animal y árbol, en partes desiguales. Estaba animado de una conciencia mecánica extraordinaria.</p>
+<p>Al pavor que producía su presencia, se sumaba una sutil repulsión espeluznante muy próxima a lo que pueda ser el horror metaflsico.</p>
+<p>En su crimen andaba un joven de veinticuatro años, hijo único de viejos campesinos, que había terminado hacía dos días su carrera de ingeniero electricista.</p>
+<p>Supuso varias cosas probables. Que el joven ingeniero iba a llenar de pararrayos los campos. Que venía a quitarle su libertad de rayo silvestre, a llevarle por cauces fijos, a señalarle rutas, a sujetarle con riendas de acero.</p>
+<p>Le acechó en una esquina del paisaje, y cayó sobre él y su caballería, carbonizándolos bárbaramente.</p>
+<p>No satisfecho acaso, hizo restallar aún al día siguiente su látigo rojo sobre los cielos del entierro.</p>
+<p>Encontraba en su crimen de defensa personal lenitivos para su pobre espíritu errante, que más le hacían desapacible e intransitable.</p>
+<p>Era, a pesar de todo, un vulgar asesino de ocasión, que otro día podría ser igualmente víctima.</p>
+<p>¿Os acordáis de la misteriosa desaparición de los senos de un busto de jardín público ocurrida hace algunos años en una apacible capital andaluza?</p>
+<p>El suceso entretuvo durante varios días los mejores ocios del comentario periodístico. Las soluciones oscilaron de la venganza política a la broma perversa. Nadie sospechó ni estableció relaciones entre la doble amputación y un doble fallecimiento cercano: el de dos niños gemelos, biznietos de la desenada heroína.</p>
+<p>El cuarto asesino que apareció ante mí no era otro que este busto de plaza del Sur, tal como lo había yo visto en las revistas gráficas ilustradoras del anónimo accidente.</p>
+<p>Parece que todos los anocheceres salían de su casa los niños gemelos, con el único y premeditado objeto de masturbarse a la sombra de los altos senos del busto de la bisabuela.</p>
+<p>Ella premió, al fin, la infantil hazaña diaria, dejándoselos caer sobre sus cabecitas rubias, que habrían de marchar la tarde siguiente camino de otros jardines más bellos. La meningitis se había presentado a media noche, entre sollozos de una mujer desnuda, correr de criadas y timbres de teléfono.</p>
+<p>El busto de la dama andaluza estaba demasiado orgulloso de su crimen, que había quedado impune por un fortuito olvido del jardinero, que había dejado destapada una alcantarilla próxima al asesinato.</p>
+<p>En ninguno de los varios descubrimientos de senos de mármol, durante obras de alcantarillado, he intervenido yo para nada. He guardado hasta hoy, candorosamente, el secreto, con la misma preocupación que si de cosa mía se tratara.</p>
+<p>Si en mi fichero íntimo aparece el crimen del busto bajo el signo de Olalla Pineda, ya sabéis por qué he traído este santo nombre y por qué he evitado, también, el verdadero.</p>
+</div>
+<div type="section">
+<head>diario a la sombra de una barca</head>
+<div type="section">
+<head>13 de enero</head>
+<p>Los barrios marineros de los puertos del mediterráneo están hoy demasiado vigilados para que pudiera terminar bien mi aventura. Eso es todo. Mi parada se quebró en sus mitades. Se agostó su fin, como sueño interrumpido. Quedaron allá, en la blanca alcoba del crimen, esperando revolver de mis ojos, y entre dorados cascos policíacos, un caballo de cartón, asesino de su infantil dueño; un cable eléctrico, electrocutador de un viejo cochero; un guerrero de cuadro histórico, que apenas dio, para asesinarle, tiempo a su pintor, a que terminase de pintarle su espada; una hoja Gillette, autora de milagrosas sangrías; un sexagenario pene, violador y asesino, a la vez, de una niña de siete años.</p>
+<p>Fue todo tan imprevisto, estaba yo tan lejos del mundo, tan cerca de Dios o tan vecino de los ángeles, que me es imposible poder reconstruir ahora cómo sucedió todo aquello.</p>
+<p>Me admira aún la fría habilidad con que pude burlar una persecución tan astuta. Me tiemblan todavía las</p>
+<p>piernas. Me zumban espantosamente los oídos. Vivo oculto, desde hace cuatro días, en el fondo de una barca encallada en una solitaria marisma, visitado sólo cada noche por un horrible marinero noruego, que me trae pan, esperanzas de fuga, fruta pasada y rosas rojas.</p>
+<p>De este marinero espero mi liberación, que se alarga ya demasiado. No duermo. Apenas como. El ruido igual y constante del mar sobre un viejo rompeolas cercano terminará volviéndome loco, si antes no me hago un ataúd con mi barca o me dejo tragar por los tiburones.</p>
+</div>
+<div type="section">
+<head>18 de enero</head>
+<p>Anoche he visto, sobre una luna en menguante, una rubia Virgen del Carmen. Tenía un gran escapulario marrón y unos azules ojos maternales. Ella misma me ha anunciado mi próxima liberación sobre una hermosa nave de plata.</p>
+</div>
+<div type="section">
+<head>19 de enero</head>
+<p>Desde el amanecer acecho inútilmente, a través de una ancha rendija abierta entre dos tablas de la barca, el paso imperioso de una nave.</p>
+<p>Espero que esta noche se resolverá tal vez todo. Confío, más que en el marinero noruego, en la próxima luna. El mar se confundirá de pronto con el cielo, y serán los vientos del Este mis huéspedes, y mi barca la luna naciente. Podré ir desnudo sobre ella, dueño de mis barbas floridas, timonel de sus cuernos, blanco como ella y como ella sin patria. Será un viaje feliz de no sé aún qué remota Citerea. Preveo que todo sucederá tal como lo pienso.</p>
+</div>
+<div type="section">
+<head>20 de enero</head>
+<p>Blanca como el barco que me salve era aquella blanca muchacha. ¿Quién desnudó su cuerpo? ¿Quién lo arrojó en el aire?</p>
+<p>Yo vi su entierro de joven desposada. ¿No toqué acaso sus enrojecidas carnes?</p>
+<p>No sé su nombre, ni el color de sus cabellos, ni el timbre de su alma. Habrá sin duda una pequeña lápida, perdida entre flores de un cementerio de barrio.</p>
+<p>Blanca como el barco que me aguarda. Sólo sé que era blanca; pero que después fue roja. ¿Quién ha dicho que yo era su marido, que yo la amé, que tuve un hijo con ella?</p>
+<p>¡Aaaaaaaaaaah! Aúlla el mar otra vez. Sí. Rompe ya el viejo rompeolas. Llévate luego la playa y mi barca.</p>
+<p>No espero nada de ti, horrible noruego.</p>
+<p>No espero nada de tus sangrientas manos ni de tus promesas odiosas. Guárdate tus brazos de remador. Guárdate tus marineras experiencias.</p>
+<p>Yo tengo ya mi barco de plata.</p>
+<p>Ya está ahí. Antes que tú, noruego. Cuando llegues, ni estará la barca vacía ni me encontrarás acaso en la barca. Yo he clavado sus marchitas tablas y he puesto escayola en las roturas y he compuesto sus remos y la he aparejado para el viaje. Mira la marisma solitaria, el oleaje del mar y la estela de mi marcha.</p>
+<p>Cómete tu pan, robado en no sé qué odiosa tahona. Cómete tu fruta -horrible noruego- y tus rosas.</p>
+</div></div>
+    			</div>
+    		<div n="6" type="chapter" xml:id="ne0380_chap6">
+    			<head>epílogo en la isla de las maldiciones</head>
+<p>Esta isla lejana, en la que ahora vivo, es la isla de las maldiciones.</p>
+<p>Bulle a mi alrededor un mar adverso, de un azul blanquecino, que se oscurece en un horizonte marchito, vacío de velas latinas y de chimeneas trasatlánticas. Hay bajo mis pasos una masa de tierra parda bajo puñales curvos de cactus, higueras mórbidas y aulagas doradas. Sobre unas rocas frontales se desmayan las sombras violeta de unas garzas.</p>
+<p>Yo, el hijastro de la isla. El aislado.</p>
+<p>Asisto a la apertura del naufragio más largo de los siglos. El anunciado tiernamente por el Apocalipsis. Aquél en que el sol se inmoviliza de pronto, o en que su paso es tan tímido, que la vista o no acierta a seguirlo o apenas sí lo advierte.</p>
+<p>Presiento que no se va a acabar nunca este ocaso, medido como por un gran reloj cuyo péndulo corriera lentamente en cada oscilación millares de kilómetros. Pendientes de él hay un nacimiento de aventura, un huevo en flor y una pistola engatillada.</p>
+<p>«Y yo no he traído hasta aquí -escribo- ni sus muslos de nieve, ni sus manos hábiles, ni siquiera sus ojos desmesuradamente abiertos dentro de un estuche sin leyenda...»</p>
+<p>Vaga en el aire un alto oro de ausencia, como vigilia de alma en pena, o sueño de niño agonizante, en lucha silenciosa con el paisaje y sus recuerdos.</p>
+<p>De quebrados rincones llegan ecos de alcobas secretas sobre jardines enlunados; de balcones entreabiertos a noches profundas; de voces impotentes de naúfragos; de bancos solitarios donde yacen cadáveres de niñas recién asesinadas; de hombres que corren por una calle larga en cuyo fondo hay un cuchillo ensangrentado, un joven muy pálido y muchos angustiosos gritos de hambre.</p>
+<p>¿De dónde ha caído esa luz en que se han quemado mis manos y las cartas donde mi único secreto vivía entre estremecidos temblores agobiantes?</p>
+<p>¿Quién es esa mujer que se ha arrojado al mar para no tener que desnudarse más ante marineros, comerciantes y soldados, tan frágil y blanca, que su cuerpo, un momento sobre el agua, se confundió con la espuma marina y con la estela de la luna y con las alas de las gaviotas?</p>
+<p>¿De dónde ha venido ese grito que ha interrumpido de pronto la tarde y ha hecho volver a un mismo tiempo todos los ojos y todas las manos hacia un mismo punto vago y distante?</p>
+<p>¿Y de quiénes son esos cadáveres que ha tendido la última marea sobre las playas del alba y de quiénes esas coronas de rosas y esos pasos silenciosos sobre la arena en sombra?</p>
+<p>Yo, el hijastro de la isla. El aislado.</p>
+<p>Asisto a la apertura del naufragio más largo de los siglos. Aquél que el golpear del pico de un cuervo lo mide sobre el corazón de una virgen, y del que hay pendientes amarguras, óleos y sueños.</p>
+<p>Cuando me asome, una noche, al espejo, con un candelabro encendido entre las manos, veré amanecer tras el cristal mi imprevista vejez precipitada por una lívida tarde sin proa.</p>
+<p>Me voy hundiendo, atropelladamente, en un ocaso, que se hace cada vez más hondo, precedido por la ávida cita de una estrella.</p>
+<p>Una mañana, me despertaré huésped de mis alas maltrechas y no volveré a dormirme, con ellas, acaso.</p>
+</div>
+    	</body>
+		<back>
+			<div>
+					<p></p>
+			</div>
+		</back>
+	</text>
+</TEI>
