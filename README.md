@@ -23,7 +23,7 @@ The next figure shows a diagram of the original population of novels, the differ
 
 <img src="images/corpus-circles-viz.svg"/>
 
-The corpus contains 26.7 million tokens. This makes this corpus one of the largest corpora available, and possibily the largest one encoded in XML-TEI in Spanish. Here a comparison of both versions of the corpora (CoNSSA and CoNSSA-canon) and other known corpora of fiction:
+The corpus contains 26.7 million tokens. This makes this corpus one of the largest corpora available, and possibly the largest one encoded in XML-TEI in Spanish. Here a comparison of both versions of the corpora (CoNSSA and CoNSSA-canon) and other known corpora of fiction:
 
 <img src="images/figure_018.png"/>
 
@@ -32,18 +32,19 @@ Each text has been encoded in XML-TEI and enriched with several types of metadat
 
 However, a number of the texts cannot be published  yet due to copyrights. For this reason, 61% of the novels are currently offered in the formats described in the previous paragraph.
 
-Following Schöch et al. (2020), I publish also extracted data for the texts that are already in public domin or that I have digitized by myself. This data is saved as parquet files, in which the rows are texts and each columns represent the frequency of the features in each text.
+Following Schöch et al. (2020), I also publish extracted data for the texts that are already in public domin or that I have digitized by myself. This data is saved as parquet files, in which the rows are texts and each columns represent the frequency of the features in each text.
 
 
 The purpose of the corpus is to analyze subgenres of the novels in this period: adventure, erotic, realistic novel, etc. However, as explained below and in the Chapter 3.1., the distribution of the texts in these subgenre played a little role in the corpus composition. That is why this corpus could be used to analyze other research questions, such as the stylistic development of specific authors in their novels, textual and literary comparison between authors or groups of authors, etc.
 
-In a simplistic overview, the compilation of this corpus was my main task during the first three years of my PhD. This comprehended tasks such as searching for texts in differnt catalogues, gathering texts, converting them into TEI, annotating metadata, cleaning collecting labels from several sources, etc. In the fourth year the analysis was the main goal, while in the fifth I wrote the PhD. The fact that the Digital Humanists have to spend so much time preparing data for their analysis needs to be recognized by the research community and properly financed by funding instituions.  Moreover, the data needs to be set so openly as possible, so other can use it for their projects.
+In a simplistic overview, the compilation of this corpus was my main task during the first three years of my PhD. This included tasks such as searching for texts in differnt catalogues, gathering texts, converting them into TEI, annotating metadata, cleaning collecting labels from several sources, etc. In the fourth year the analysis was the main goal, while in the fifth I wrote the PhD. The fact that the Digital Humanists have to spend so much time preparing data for their analysis needs to be recognized by the research community and properly financed by funding instituions.  Moreover, the data needs to be set so openly as possible, so others can use it for their projects.
 
 
 
 ## Further Documentation
 
-This documenation file in the repositoy explains briefly some aspects of the corpus. The comprehensive documentation can be found in several chapter of my PhD thesis, specially :
+This documentation file in the repository explains briefly some aspects of the corpus. The comprehensive documentation can be found in several chapter of my PhD thesis, specifically:
+
 - Chapter 3.1. Corpus of Novels of the Spanish Silver Age: CoNSSA and CoNSSA-canon
 - Chapter 3.2. Metadata
 - Chapter 4.1. Grammatical, Lexical, Semantic, and Textual Annotation
@@ -53,7 +54,7 @@ This documenation file in the repositoy explains briefly some aspects of the cor
 
 ### PhD Thesis 
 
-- Calvo Tello, José. to be published. The Novel in the Spanish Silver Age: A Digital Analysis of Genre through Machine Learning. Würzburg.
+- Calvo Tello, José. to be published. The Novel in the Spanish Silver Age: A Digital Analysis of Genre Using Machine Learning. Würzburg.
 
 
 ### Description of the Corpus in Spanish
@@ -67,14 +68,17 @@ This documenation file in the repositoy explains briefly some aspects of the cor
 - Calvo Tello, Jose. 2019. «Delta Inside Valle-Inclán: Stylometric Classification of Periods and Groups of His Novels». En Theorien von Autorschaft Und Stil in Bewegung: Stilistik Und Stilometrie in Der Romania, editado por Nanete Rißler-Pipka, 0:151-64. http://www.romanischestudien.de/index.php/rst/article/view/625.
 - Calvo Tello, José. 2019. «Diseño de corpus literario para análisis cuantitativos». Revista de Humanidades Digitales 4 (0): 115-35. https://doi.org/10.5944/rhd.vol.4.2019.25187.
 - Calvo Tello, José, Ulrike Henny-Krahmer, y Christof Schöch. 2018. «Textbox: análisis del léxico mediante corpus literarios». En Historia del léxico español y Humanidades digitales, 223-51. Peter Lang. https://dialnet.unirioja.es/servlet/articulo?codigo=7081640.
+- Schöch, Christof, Albin Zehe, José Calvo Tello, y Andreas Hotho. 2018. «Burrows Zeta: Varianten und Evaluation». En Kritik der digitalen Vernunft. Cologne: DHd. http://dhd2018.uni-koeln.de/programm/.
 - Calvo Tello, José. 2017. «Estado de la digitalización de la Edad de Plata: un análisis cuantitativo». Revista de Humanidades Digitales 1 (0): 76-95. https://doi.org/10.5944/rhd.vol.1.2017.17089.
 - Calvo Tello, José, Daniel Schlör, Ulrike Henny-Krahmer, y Christof Schöch. 2017. «Neutralising the Authorial Signal in Delta by Penalization: Stylometric Clustering of Genre in Spanish Novels». En , 181-83. Montréal: ADHO. https://dh2017.adho.org/abstracts/037/037.pdf.
 - Schöch, Christof, Daniel Schlör, Popp Stefanie, Annelen Brunner, Ulrike Henny, y José Calvo Tello. 2016. «Straight Talk! Automatic Recognition of Direct Speech in Nineteenth-Century French Novels». En , 346-53. Kraków: ADHO. http://dh2016.adho.org/abstracts/31.
+- Schöch, Christof, Ulrike Henny, José Calvo Tello, Daniel Schlör, y Stefanie Popp. 2016. «Topic, Genre, Text. Topics im Textverlauf von Untergattungen des spanischen und hispanoamerikanischen Romans (1880-1930)». En , 235-38. Leipzig: nisaba verlag. http://dhd2016.de/boa.pdf.
 
 
 ### Related Works
 
 - Schöch, Christof, José Calvo Tello, Ulrike Henny-Krahmer, y Stefanie Popp. 2019. «The CLiGS textbox: Building and Using Collections of Literary Texts in Romance Languages Encoded in XML-TEI». Journal of the Text Encoding Initiative. https://journals.openedition.org/jtei/2085.
+- Calvo Tello, Jose. 2019. «Delta Inside Valle-Inclán: Stylometric Classification of Periods and Groups of His Novels». En Theorien von Autorschaft Und Stil in Bewegung: Stilistik Und Stilometrie in Der Romania, editado por Nanete Rißler-Pipka, 0:151-64. http://www.romanischestudien.de/index.php/rst/article/view/625.
 - Calvo Tello, José, Ulrike Henny-Krahmer, y Christof Schöch. 2018. «Textbox: análisis del léxico mediante corpus literarios». En Historia del léxico español y Humanidades digitales, 223-51. Peter Lang. https://dialnet.unirioja.es/servlet/articulo?codigo=7081640.
 
 
