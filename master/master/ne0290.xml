@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Los gusanos</title>
+				<title type="sub"></title>
+				<title type="short">Gusanos</title>
+				<title type="idno">
+					<idno type="bne">XX2917284</idno>
+				</title>
+				<author>
+					<idno type="bne">XX952949</idno>
+					<idno type="viaf">24624818</idno>
+					<name type="short">Lanza</name>
+					<name type="full">Silverio Lanza</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">699</measure>
+				<measure unit="divs">6</measure>
+				<measure unit="tokens">11805</measure>
+				<measure unit="chars">66120</measure>
+				<measure unit="size_kb">82</measure>
+				<measure unit="chapters">4</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">1</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">656</measure> 
+				<measure unit="lg.poems">3</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">16</measure> 
+				<measure unit="heads">4</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">633</measure> 
+				<measure unit="abs">3</measure> 
+				<measure unit="fts">1</measure>
+				<measure unit="paragraphs.ds">488</measure>
+				<measure unit="saids">490</measure>
+				<measure unit="narrative.ps">145</measure>
+				<measure unit="punctual_ss">963</measure> 
+				<measure unit="numerals">4</measure> 
+				<measure unit="puncts">2904</measure> 
+				<measure unit="len.abstract">31</measure>
+				<measure unit="chapters.len.mean">17395.25</measure>
+				<measure unit="chapters.len.std">5842.73</measure>
+				<measure unit="chapters.len.median">19281.50</measure>
+				<measure unit="chapters.len.iqr">5497.75</measure>
+
+				<measure unit="types">3056</measure>
+
+				<measure unit="ss">463</measure>
+				<measure unit="ss.num.mean">146.89</measure>
+				<measure unit="ss.num.std">126.92</measure>
+				<measure unit="ss.num.median">113.00</measure>
+				<measure unit="ss.num.iqr">114.00</measure>
+				<measure unit="ss.active.verbs.mean">3.05</measure>
+				<measure unit="ss.active.verbs.std">2.93</measure>
+				<measure unit="ss.active.verbs.median">2.00</measure>
+				<measure unit="ss.active.verbs.iqr">3.00</measure>
+
+				<measure unit="ws">14721</measure>
+				<measure unit="ws.num.mean">3.65</measure>
+				<measure unit="ws.num.std">2.78</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">1246</measure>
+				<measure unit="determiners">1750</measure>
+				<measure unit="nouns">2371</measure>
+				<measure unit="verbs">2359</measure>
+				<measure unit="adverbs">637</measure>
+				<measure unit="adjectives">423</measure>
+				<measure unit="adpositions">1486</measure>
+				<measure unit="punctuations">2861</measure>
+				<measure unit="pronouns">1443</measure>
+				<measure unit="dates">11</measure>
+				<measure unit="numbers">75</measure>
+				<measure unit="interjections">59</measure>
+
+				<measure unit="ne.persons">281</measure>
+				<measure unit="ne.organizations">69</measure>
+				<measure unit="ne.locations">52</measure>
+				<measure unit="ne.others">12</measure>
+
+				<measure unit="wnlex.noun.plants">5</measure>
+				<measure unit="wnlex.verb.communications">244</measure>
+				<measure unit="wnlex.noun.foods">24</measure>
+				<measure unit="wnlex.verb.possessions">241</measure>
+				<measure unit="wnlex.verb.cognitions">157</measure>
+				<measure unit="wnlex.noun.communications">131</measure>
+				<measure unit="wnlex.noun.states">40</measure>
+				<measure unit="wnlex.verb.statives">603</measure>
+				<measure unit="wnlex.noun.cognitions">57</measure>
+				<measure unit="wnlex.noun.times">65</measure>
+				<measure unit="wnlex.verb.bodys">78</measure>
+				<measure unit="wnlex.noun.persons">428</measure>
+				<measure unit="wnlex.adj.alls">300</measure>
+				<measure unit="wnlex.noun.quantitys">25</measure>
+				<measure unit="wnlex.noun.phenomenons">14</measure>
+				<measure unit="wnlex.verb.creations">102</measure>
+				<measure unit="wnlex.adj.perts">20</measure>
+				<measure unit="wnlex.adv.alls">211</measure>
+				<measure unit="wnlex.noun.processs">4</measure>
+				<measure unit="wnlex.noun.artifacts">222</measure>
+				<measure unit="wnlex.verb.perceptions">66</measure>
+				<measure unit="wnlex.noun.feelings">22</measure>
+				<measure unit="wnlex.verb.weathers">4</measure>
+				<measure unit="wnlex.noun.substances">20</measure>
+				<measure unit="wnlex.noun.shapes">2</measure>
+				<measure unit="wnlex.verb.competitions">14</measure>
+				<measure unit="wnlex.verb.motions">264</measure>
+				<measure unit="wnlex.noun.animals">65</measure>
+				<measure unit="wnlex.noun.acts">189</measure>
+				<measure unit="wnlex.noun.bodys">32</measure>
+				<measure unit="wnlex.noun.objects">14</measure>
+				<measure unit="wnlex.noun.motives">2</measure>
+				<measure unit="wnlex.verb.socials">131</measure>
+				<measure unit="wnlex.noun.groups">133</measure>
+				<measure unit="wnlex.verb.consumptions">30</measure>
+				<measure unit="wnlex.noun.possessions">62</measure>
+				<measure unit="wnlex.noun.Topss">14</measure>
+				<measure unit="wnlex.noun.relations">3</measure>
+				<measure unit="wnlex.noun.attributes">90</measure>
+				<measure unit="wnlex.verb.emotions">55</measure>
+				<measure unit="wnlex.noun.locations">54</measure>
+				<measure unit="wnlex.noun.events">22</measure>
+				<measure unit="wnlex.verb.contacts">91</measure>
+				<measure unit="wnlex.xxxs">10259</measure>
+				<measure unit="wnlex.verb.changes">112</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
+						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
+				</availability>
+				<date when="2016">2016</date>
+				<idno type="cligs">ne0290</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
+				<bibl type="print-source">Edición digital basada en la de [Madrid], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
+				<bibl type="edition-first"><date when="1909">1909</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE9">
+				<p>Un nuevo relato anticaciquil.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="low">
+					<term type="author.TOC.range" resp="MdL9">7</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1856</term>
+					<term type="author.date.death">1912</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL9">13</term>
+					<term type="author.movement">modernism</term>
+					<term type="author.nonNovelGenre">short-stories</term>
+					<term type="author.submovement">1-modernista</term>
+					<term type="author.year.change">0</term>
+					<term type="authorText.group">otros escritos</term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">adult</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">Manolo</term>
+					<term type="text.characters.protagonist.profession">worker</term>
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica</term>
+					<term type="text.genre.subgenre.edit" resp="epublibre">Drama, Realista</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">1</term>
+					<term type="text.litHist.mentioned" resp="HdLE">False</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE9">0.2</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.quality.listhist" resp="#"></term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Spain</term>
+					<term type="text.setting.represented">Navalarga</term>
+					<term type="text.setting.settlement">Navalarga</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">rural</term>
+					<term type="text.setting.territory"></term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span" cert="low">365</term>
+					<term type="text.time.year">18??</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2016-07-20" who="#jct">Initial TEI version.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+		</front>
+		<body>
+			<div n="1" type="chapter" xml:id="ne0290_chap1">
+				<head>Primera parte : De la virtud y de los beneficios que proporciona </head>
+				<quote><lg type="poem">
+						<l>No he de callar por más que con el dedo,</l>
+						<l>ya tocando la boca o ya la frente,</l>
+						<l>silencio avisen o amenacen miedo.</l>
+					</lg>
+					<ab><seg rend="italic">(QUEVEDO)</seg></ab>
+				</quote>
+				<p>No me caso con Petra -dijo Manolo- hasta que yo no tenga una casa mía, para que a mi mujer no la puedan echar de ninguna parte: ni el casero.</p>
+				<p>Y Manolo, que era mozo de mulas, y ganaba nueve reales diarios, dejó de fumar, de beber vino, de jugar al mus, de ir al baile, y hasta de ir a paseo. Cuando estaba libre, tejía capachos de esparto para los molinos aceiteros, y se los pagaban bien. En un año ahorró setecientos quince reales. No quiso prestarlos a réditos; y cuatro años después, compraba a Crisanto una casita que poseía de ochocientas cincuenta pesetas.</p>
+				<p>Lo supo el tío Gusano y dijo a Manolo:</p>
+				<p>-Hombre: ya sé que has fincado. Que sea enhorabuena. Y, ¿a quién le has robado la casa?</p>
+				<p>-Yo no robo a nadie.</p>
+				<p>-Parece milagro.</p>
+				<p>-Abur.</p>
+				<p>-¿Convidas?</p>
+				<p>-Ya tiene usted de más con lo que tiene.</p>
+				<p>-Lo mismo digo.</p>
+				<p>No bastaba que Crisanto asegurase que vendía la casa, y que había recibido el importe: era preciso que de ello diese fe el Notario, el Liquidador, el Registrador, y el Secretario del Ayuntamiento. Manolo pagó a estos señores los derechos personales y los derechos del Fisco; y entonces, supo que la sociedad no le reconocía la propiedad indiscutible sobre la casita, sino el derecho a litigar si alguien se apoderaba de la casa, o creaba en ella servidumbres. Y supo entonces que, si llegaba ocasión del pleito, y lo perdía, y la sociedad le dejaba sin casa, no le devolvían el dinero que había pagado a esa sociedad; y que sería él quien abonase los derechos de sus imprescindibles abogado y procurador; más los derechos del abogado y del procurador de la parte contraria; más las costas designadas por los escribanos; más el papel consumido. Y también supo que, si la sociedad necesitaba dinero, se lo pediría a él, que era propietario, y ya no podía ocultar su riqueza como antes la ocultaba en una pata del catre.</p>
+				<p>Y, porque hay una relación íntima y desconocida entre las vísceras y el espíritu, llegó a las vísceras el malestar del espíritu, y Manolo cayó enfermo.</p>
+				<p>Entonces supo que, por ser propietario, no tenía derecho al socorro de la beneficencia municipal, y estaba obligado a pagar al médico y las medicinas.</p>
+				<p>Manolo pidió que le llevasen al hospital, pero el Estado había intervenido la fundación particular, quedándose con los fondos de ella, y creando un patronato caprichoso que, ateniéndose a la escasez de recursos, sólo socorría a los pobres; y el Ayuntamiento sólo pagaba las estancias de los toreros heridos en las fiestas de agosto; y así evitaba las reclamaciones de éstos.</p>
+				<p>El tío Gusano abrió la entornada puerta.</p>
+				<p>-¡Ave María!</p>
+				<p>-¡Sin pecado concebida! ¿Quién es? -dijo Manolo desde la cama.</p>
+				<p>-Soy yo.</p>
+				<p>-Adelante.</p>
+				<p>-Hombre: no creas que vas a morirte porque vengan los gusanos a verte.</p>
+				<p>-Nada de eso.</p>
+				<p>-Pero supe que estabas malo; y he venido para servirte.</p>
+				<p>-Muchas gracias.</p>
+				<p>-Y para decirte que, hace días, te incomodaste con este pobre viejo porque te dije que habías robado la casa; y ahora verás que, si no se la robaste a otro, te lo robaste a ti mismo; y, por eso, estás en la cama.</p>
+				<p>-Puede que sí.</p>
+				<p>-El Evangelio.</p>
+				<p>-Ya sabe usted que no tengo médico ni botica ni hospital.</p>
+				<p>-Los tenías, y te los has robado.</p>
+				<p>-¡Qué posma se pone usted!</p>
+				<p>-Hombre: las fuentes nunca echan más que agua.</p>
+
+				<p>-Pero sirven para algo.</p>
+				<p>-Y yo.</p>
+				<p>-Usted regaña y no aconseja.</p>
+				<p>-Si no eres hombre de bien, roba lo que necesites; y si eres hombre de bien, devuélvete lo que te has robado.</p>
+				<p>-Es decir: que venda la casa.</p>
+				<p>-Bueno.</p>
+				<p>-No hay quien la compre.</p>
+				<p>-El señor Romualdo, el Pastor.</p>
+				<p>-¿Ha venido usted por mandado de Romualdo?</p>
+				<p>-¿Lo preguntas para pedir más caro?</p>
+				<p>-No, porque no la vendo.</p>
+				<p>-Es el trato que menos produce.</p>
+				<p>Se marchó el tío Gusano; y sobre el ruin catre quedó el recio cuerpo de Manolo, que latía sin esfuerzo, con intervalos breves y fijos: como el reclamo mecánico que pregona las horas en un reloj de cuco. Durmió, y se despertó sediento. No había agua en la jarra. Se levantó, y también halló el cántaro vacío. Se dio cuenta de su soledad, y se sentó en el borde de la cama. Después se vistió, cogió el cántaro, salió, cerró la puerta, y se marchó a la tienda. Compró pan y dos chorizos y, al regresar por la fuente, halló a Petra y la madre de ésta.</p>
+				<p>-¡Gracias a Dios, hombre! ¿Y tú eras el malo?</p>
+				<p>-Ya estoy mejor.</p>
+				<p>-Porque el mal no ha sido cosa, según se ve, y no has dado tiempo a que mi marido fuese a verte, porque nosotras no está bien que vayamos a casa de un mocito.</p>
+				<p>-Claro.</p>
+				<p>-Y menos por interés ninguno; porque a ésta nunca le han faltado dos libretas, a Dios sean dadas; y ya ves si está gorda.</p>
+				<p>-Muchas gracias.</p>
+				<p>-Y ya ves que, si fuéramos al interés, pues te hubiéramos dicho que al comprar la casa, la hubieras puesto en la cabeza de ésta, que es lo regular.</p>
+				<p>-Yo creía...</p>
+
+				<p>-Y que te esperasen un poco; porque ya me ha dicho el sacristán que ahora no podéis casaros por pobres, y que por ricos hay que pagar todos los derechos; y que te costará los cuartos.</p>
+				<p>-¡Paciencia!</p>
+				<p>-Dios nos la dé a todos. Conque digo que nosotras vamos con los cántaros a cargar, y que celebro tu mejoría. Conque, adiós, y tú, chica, que no te tardes.</p>
+				<p>Echó a andar la vieja, y quedó Petra con Manolo.</p>
+				<p>-No has enviado una mala razón.</p>
+				<p>-Creí que lo sabías.</p>
+				<p>-¿Por quién?</p>
+				<p>-No ha venido nadie a verme: la Alfonsa, la tabernera, para ver si me ponía el avío como todos los días, y el tío Gusano, y Pocapena, el alguacil, para decirme que no me daban socorro ni cama.</p>
+				<p>-Ni te hace falta.</p>
+				<p>-Porque estoy mejor.</p>
+				<p>-Y porque eres rico.</p>
+				<p>-Parece que también te burlas.</p>
+				<p>-¿Yo?</p>
+				<p>-Pues ya sabes que para ti he comprado la casa.</p>
+				<p>-No es mala intención. Pero ahora buscarás otra propietaria.</p>
+				<p>-Yo no busco a nadie. ¿Qué quieres decir?</p>
+				<p>-No te acalores. Pero que no te creas tú, ni nadie, que voy a casarme contigo sólo por el interés.</p>
+				<p>-Pero, ¿qué riquezas pinta una nada de abrigo con cuatro paredes y cuatro tejas?</p>
+				<p>-Eso digo yo, pero que te atajo porque da que pensar que así que te fincas, haces que te da un mal, y no me dices nada.</p>
+				<p>-¿Es que crees que no he estado malo? Pues bien se me conoce.</p>
+				<p>-Yo no te noto sino que hueles a cerdo.</p>
+				<p>-Gracias, mujer.</p>
+				<p>-Bueno; a embutidos.</p>
+				<p>-Eso es otra cosa.</p>
+
+				<p>-¡¡¡Chica!!!</p>
+				<p>-Allá voy, madre.</p>
+				<p>-Hasta luego, Petra.</p>
+				<p>-Adiós, hombre, y que no te repita.</p>
+				<p>-¿El qué?</p>
+				<p>-El mal.</p>
+				<p>-Ni a ti el olor.</p>
+				<p>Reuniose Petra con su madre; y juntas, y riendo bajaron hacia la fuente. Volvió Manolo a su casa, y dejó sobre la mesa el pan y los chorizos.</p>
+				<p>Se sentó Manolo en la silla, y con los codos sobre las piernas, y la cabeza sobre las manos, estuvo en pertinaz meditación. Llegó la noche; volvió Manolo a la realidad y aterido de frío, se echó sobre la cama, y se durmió.</p>
+				<p>Despertó al amanecer, según tenía por costumbre, y se sintió fuerte. La madrugada era agradable, y Manolo sacó agua del pozo; se lavó, comió gran parte del embutido crudo; bebió un sorbo de vino, y se dispuso a reanudar su labor en casa del amo, a comer en la taberna, como siempre, y a desposarse pronto.</p>
+				<p>Llegó a la casa del amo, cruzó el patio para ir a las cuadras, y vio a Pajitas, que salía de ellas.</p>
+				<p>-¡Hola, hombre!</p>
+				<p>-¿Ya estás bueno?</p>
+				<p>-Me parece. ¿Es que vienes por ganado para una huebra?</p>
+				<p>-Ya no estoy con mi tío Cayetano.</p>
+				<p>-¿Por qué?</p>
+				<p>-Me llamaron para quedarme en tu puesto.</p>
+				<p>-¿En mi puesto?</p>
+				<p>-Chico; a mí no me acumules nada. El amo me llamó, me dijo que tu estabas rico, que te habías echado a no trabajar, que te hacías el enfermo, y que si me convenía, que antes era yo. Y yo le dije así: que yo no era de entra y sal si no es por hacer un favor. Y él me dijo que para siempre y que, si quería, a seco o como quisiera. Y yo le dije que a seco, porque tenía el calor de mi tío. Y él dijo que bueno. Y yo le dije otra vez que si sería para siempre, y más me dijo que para ti no sería nunca, porque antes era el jornal para un pobre que para un rico como tú.</p>
+				<p>-¿Dónde está el amo?</p>
+				<p>-Pa mí que se ha ido a la ribera, porque se ha ido en la mula, porque dice que vadea mejor.</p>
+				<p>-Ya le veré.</p>
+				<p>-Y tú haces tu convivencia, pero tan amigos, porque yo... ¿no es eso?</p>
+				<p>-Sí, hombre.</p>
+				<p>Salió Manolo en busca del amo, y cuando llegó al ruedo y a las empedradas eras, brillaba, iluminada por lo rayos del sol, la piranosa cúpula de la iglesia parroquial.</p>
+				<p>-Y, si le encuentro, me dirá lo mismo que me ha dicho Pajitas. ¿Voy a ir con amenazas? ¿Por qué? Pero le diré que no soy rico; que soy más pobre que antes, cuando él me daba trabajo y yo tenía más dinero que ahora; porque tenía lo que vale la casa, y lo que he tenido que pagar a los de justicia. Y antes, porque tenía guardado mi dinero y no lo veían, nadie me lo echaba en cara. Y, ahora, todo se vuelve desprecios y...</p>
+				<p>Sentose en el pretil de una era, y mucho después se levantó. Había decidido vender la casa; y fue en busca del señor Romualdo.</p>
+				<p>El señor Romualdo, hombre viejo y rico, estaba sentado a una mesa, y entretenido en liquidar, sin escribir, las cuentas de un montón de tarjas: con la suma de las mesadas que marcaban comestibles, jornales y préstamos en especie o en dinero, las marcaba con centenas, decenas y unidades en las tres aristas de otras tarjas dedicadas a este fin.</p>
+				<p>Recibió agradablemente a Manolo; y le hizo sentarse.</p>
+				<p>-Me han contado de ti un favor y un disfavor, como en los juegos de prendas. Me han dicho que habías fincado, y que estabas enfermo.</p>
+				<p>-Verdad: sí, señor.</p>
+				<p>-Pero ya estás bueno.</p>
+				<p>-Parece que sí.</p>
+				<p>-Me alegro. Y, ¿traías algo?</p>
+				<p>-Venía para ver de vender la casa.</p>
+
+				<p>-¿Es mala?, o, ¿la quieres comerciar con ganancia?, o, ¿te ha salido mejor colocación para el dinero?</p>
+				<p>-Eso: sí, señor.</p>
+				<p>-Entonces, se te puede comprar la casa.</p>
+				<p>-Bueno, y, ¿cuánto da usted?</p>
+				<p>-Digo que esto no será como los Oleos, que no tienen espera; y me dejarás que lo piense algo.</p>
+				<p>-Usted verá.</p>
+				<p>-Te lo digo porque tu casa ha cambiado mucho.</p>
+				<p>-¿En quince días?</p>
+				<p>-En media hora. Y lo vas a ver. Siempre se ha dicho que las escuelas se harían en aquel barrio: porque el municipio tiene las lágrimas para ello, que no las puede tocar; y el terreno para ello, que está al lado de tu casa, vamos que entre tu casa y el terreno de las escuelas, está una tira mía que se la doy regalada a Pocapena para que la labre con lo que va hasta la cañada, y eso es lo de las escuelas. Y ya habrás visto que la labor de mi tierra va cruzada con la labor de la otra; y si te dicen que Pocapena, cuando labra, mete todos los años en mi tierra un pie de la otra, di que no es verdad; porque, aunque el municipio y yo no tenemos fijada nuestra cabida, porque el fijarla cuesta los cuartos, todo el mundo sabe que yo soy incapaz de robar a nadie y menos el Ayuntamiento, que sería robaros a todos, ¿eh?</p>
+				<p>-Verdad.</p>
+				<p>-Pues ahora se trata de llevar las escuelas junto a la ermita de San Roque, comprándole al señor Segundo una fanega, y una cuartilla, en lo hondo, y que no cría nada; y que dice que es suya; y aguarde a que se acuerde el traslado para hacer la información posesoria. ¡Un apaño de los muchos que hay!</p>
+				<p>-¡Qué granujas!</p>
+				<p>-Ésa es mi palabra. De modo que, si las escuelas se hacen en la cañada, vale tu casa algo.</p>
+				<p>-¿Y si no se hacen?</p>
+				<p>-Pues, hijo, di que nada; o di una onza o veinte duros: que eso no va a ninguna parte.</p>
+
+				<p>-¿Y por una onza se quiere usted quedar con la casa?</p>
+				<p>-¡Pero si yo no quiero quedarme con ella! Tú ofreces; y ofrezco yo.</p>
+				<p>Salió Manolo aturdido. Ante su espíritu habían pasado miserias ciertas o presuntas; y sentía en el alma un asco súbito, un olor de podredumbre social, insoportable e inevitable, que no era posible enterrar como el cadáver descompuesto; que no era posible evitar como los miasmas de pantano; y, que no era posible curar con energía y con amor como la úlcera. Y que tampoco era posible denunciar públicamente para prevenir la salvación propia y la salvación de todos los hombres; porque aquella podredumbre se ajustaba, como parásito, el derecho constituido. Y para vivir con él y medrar en él, se había de ser como el señor Romualdo, como el gusano de lo infecto: el gusano parduzco y baboso cuya fealdad ofende, cuyo hedor asquea, cuyo contacto es tóxico, y que nunca ha merecido un verso de los poetas que cantan las grandezas de la libertad y las grandezas de la tiranía; ni ha brotado de la paleta brillante y policroma de esos pintores que encierran en el plano de un breve lienzo de maravillas de espacios y de sentimientos inmensurables.</p>
+				<p>El pobre Manolo halló que, al comprar la casa, había perdido sus ahorros, y el salario y la beneficencia municipal, y la caridad privada, y la estimación pública, y... y, ¿por qué?</p>
+				<p>Y, pensando en ello iba, cuando vio, a lo lejos, que, en la puerta de su casa, había un grupo de gentes. ¿Serían amigos que le visitaban? ¿Habría fuego? No se veía humo. De todos modos, sería necesario asegurar la casa, como lo hacían los ricos.</p>
+				<p>Aceleró la marcha; le vieron llegar, y llegó.</p>
+				<p>-¿Qué pasa?</p>
+				<p>-Entre usted, y todo el mundo ahí fuera.</p>
+				<p>-¿Qué ocurre, señor Mariano?</p>
+				<p>-Habla usted con el juez.</p>
+				<p>-Para servirle.</p>
+				<p>-En uso de mis facultades he mandado abrir la puerta, porque usted no la abría.</p>
+				<p>-No estaba aquí. Si hubiera estado...</p>
+
+				<p>-Y ayer tarde, ¿dónde estuvo usted?</p>
+				<p>-En casa.</p>
+				<p>-Al hecho de autos. Esta mañana, en el lavadero, la tía Fulgencia Redondo y su hija Petra, su novia de usted, han dicho a cuantos las han querido oír, que ayer tarde, al regresar usted a su casa-habitación, olía usted a cerdo. ¿Está usted conforme?</p>
+				<p>-Sí, señor.</p>
+				<p>-Juez.</p>
+				<p>-Sí, señor juez.</p>
+				<p>-Ahora bien... Otrosí: el Juzgado ha descubierto en esta misma casa, que es morada del procesado, un trozo de chorizo, del que el juzgado se ha incautado como cuerpo del delito. El Juzgado no necesita saber más. Puede usted retirarse: es decir, puede usted esperar. Extienda usted la declaración; y que la firme el reo. Y la diligencia para que el cabo envíe un guardia. Queda usted detenido desde este preciso instante. ¡Pocapena!</p>
+				<p>-Pero yo... ¿por qué?</p>
+				<p>-El Juzgado no puede dialogar.</p>
+				<p>-Me parece que yo tengo derecho.</p>
+				<p>-Usted ejercitará ese derecho ante la vindicta pública, por sí, o por el letrado que tenga su causa de usted, o séase su causahabiente; porque la ley no desampara al reo. ¡Pocapena! Pero, ¡jorobar!, ¿dónde está ese hombre?</p>
+				<p>Salió el juez municipal al patio; abrió la puerta de la calle y preguntó por el alguacil.</p>
+				<p>-Está aquí junto. ¡Como es suyo el sembrado!</p>
+				<p>-¡Pues, que venga!</p>
+				<p>Fue Pocapena a la casa cuartel de la Guardia Civil; y con él, volvieron el comandante del Puesto y un guardia.</p>
+				<p>-Señor secretario, ¿ha firmado el reo la requisitoria?</p>
+				<p>-Sí, señor.</p>
+				<p>-Pues extienda usted la diligencia de entrega a la Guardia Civil; y la firmará usted, cabo. Lleva usted este hombre a la cabeza de partido, y lo pone usted a disposición del señor juez del distrito. Y lo lleva usted atado, porque ya sabe usted que es suya la responsabilidad.</p>
+
+				<p>-Perdone usted, señor juez; yo tengo dispuesto el servicio de mi fuerza. No hay a mi disposición nada más que este guardia, que está de puertas; y, si fuese lo mismo hacer la conducción esta tarde, cumpliría la orden la pareja que vuelve de celebrar una entrevista.</p>
+				<p>-No es lo mismo.</p>
+				<p>-Está bien. Guardia, hará usted esa conducción.</p>
+				<p>El comandante del puesto se encaró con el preso.</p>
+				<p>-¿Tiene usted que recoger algo?</p>
+				<p>-La manta.</p>
+				<p>-Y que no se lleve más -dijo el juez-. Todo esto se ha de embargar para costas; y el juzgado sellará la puerta.</p>
+				<p>Salieron del patio a la calle que estaba llena de gente; y, cruzando el pueblo, fueron el guardia y Manolo hacia la carretera que conduce a la cabeza de partido. Cuando lo curiosos volvieron a sus cubiles dijeron, con la ligereza y con la solemnidad propias de los ignorantes, estas sentencias.</p>
+				<p>-¡Así ya podrá comprar Manolo casas! ¡Ahora resulta que había robado unos cerdos en el cortijo de don Esteban! ¡Ya lo decía yo!</p>
+				<p>Entre tanto caminaba Manolo, y no llevaría andando un cuarto de hora cuando se le adelantó la tartana en que iban el juez municipal y el secretario.</p>
+				<p>Manolo fue al Juzgado, y después a la cárcel. Allí le dijo el alcaide que no podía dar el socorro de los reales a los presos que tenían bienes; y Manolo vendió su manta, y se arranchó con los socorros.</p>
+				<p>Por fallecimiento de su suegro se hallaba ausente el juez de instrucción y de primera instancia; y le sustituía el juez municipal, caciquillo sin cultura, obediente a las órdenes del escribano; y que tenía, como asesor, a un letrado viejo que pasaba su vida tras el mostrador, o la caja de su gran tienda de drogas.</p>
+				<p>Y reunidos en aquel establecimiento los dos jueces municipales, el secretario del uno, y el asesor y el escribano del otro, se acordó lo accidental, que era procesar y encarcelar a Manolo, designado por la opinión pública como autor de un robo de cerdos; y lo esencial, que era lograr de los altos poderes, o sea del gran cacique don José, que los comandantes del Puesto, y los jefes de línea, tuvieran el respeto debido a los jueces municipales que, por ser legos en derecho, en cortesía, en sintaxis y en delicadeza, habrían de encarnar mejor el espíritu democrático que informa las constituciones de las modernas colectividades sociales.</p>
+				<p>Y los reunidos aplaudían esta frase del guasón escribano, mientras Manolo dormía al arrullo de su pura conciencia.</p>
+			</div>
+			<div n="2" type="chapter" xml:id="ne0290_chap2">
+				<head>Segunda parte : De la popularidad y de los beneficios que proporciona </head>
+				<quote>
+					<lg type="poem">
+						<l>Vas marchando entre lágrimas y cieno,</l>
+						<l>y aire de tempestad tu rostro azota:</l>
+						<l>tu iniquidad, como sutil veneno,</l>
+						<l>la fuerza de tus músculos agota.</l>
+						<l>¡Oh, sociedad rebelde y corrompida!,</l>
+						<l>perseguirás la libertad en vano;</l>
+						<l>que, cuando un pueblo la virtud olvida,</l>
+						<l>lleva en sus propios vicios su tirano.</l>
+
+
+					</lg>
+					<ab><seg rend="italic">NÚÑEZ DE ARCE</seg></ab>
+				</quote>
+				<floatingText>
+					<body>
+						<div type="section">
+							<p>«Querido compadre: Te envío esta carta por el guardia Martín, que tú conoces, porque estuvo a tus órdenes y es buen sujeto y va ahí por asuntos personales.</p>
+							<p>»Gracias a Dios, todos buenos, y tu ahijada te está bordando unos tirantes que es un primor. La mujer con sus males de siempre y yo pensando en el día que podré irme a mi casa a comerme las cien pesetas que es el máximo que puede corresponderme y que me cuestan muchas penas y toda una vida de pasar trabajos.</p>
+							<p>»Lo principal de ésta, es para decirte que aquí tenemos de juez municipal al que tú conoces, y el hombre ha metido en la cárcel del partido a un desdichado que nada tiene que ver con el robo de cerdos en el cortijo de don Esteban.</p>
+							<p>»Pues bien, hablando el otro día con Ramón, el barbero y ministrante, le pregunté por Ulpiano, que lleva dos semanas sin parecer por el pueblo, y Ramón, que siempre ha hablado mal de él porque le debía el Ulpiano unos duros, se hizo el desentendido y cambió la conversación. Pero me tragué la partida y me fui la otra tarde al correo a la hora de recoger saltamontes las cartas, y vi una para el Ulpiano. Me vine al cuartel, cogí una receta del Ramón, volví al correo y vi que era el Ramón quien escribía al Ulpiano que vive ahí, según el sobre, en la posada de Mira al Sol.</p>
+							<p>»Creo que ese es el principal autor del robo de los cerdos que ha pagado con largas a Ramón lo que le debía, y que Ramón le avisaba de que yo pregunto por el Ulpiano.</p>
+							<p>»Dame las noticias que puedas y si hay algo daré noticia al señor jefe de la línea, para que disponga este servicio como guste.</p>
+							<p>»Y me envías la respuesta con Martín que es de toda confianza.</p>
+							<p>»No te envío recuerdos de la familia, porque no les dije que te escribía, pero tú sabes cuánto te quieren todos, como a Soledad.</p>
+							<p>»Adiós, tu compadre y amigo, que te abraza. Tampoco firmo por si se pierde ésta».</p>
+
+							<p>«Querido compadre: Martín te lleva para mi ahijada una participación para la lotería de Nochebuena. Los tiempos no dan para más, pero también os enviará Soledad alguna cosilla en Año Nuevo.</p>
+							<p>»Las cartas para Ulpiano López vienen a la posada, pero manda a recogerlas, porque él está encerrado en la venta de Campo-Llano con su querida, que es una hermana de la ventera. El ventero sopla (porque le tengo alineado); y te diré que los cerdos robados fueron once, y los robaron el Ulpiano, su antiguo consorte en Ocaña, Gregorio Ruiz, y un muchacho que no conozco. Les ayudaron el manigero de don Esteban, su mujer y el porquerizo. Sacaron los cerdos de la pocilga a las nueve de la noche; los llevaron al monte, y los vendieron a todo riesgo (a siete duros cabeza), a los hermanos Santa Cruz, y estos gitanos los habrán vendido en Navalarga.</p>
+							<p>»El Ulpiano no se me va, y el Gregorio lo tienes seguro mientras no sospeche, y esté ahí la Colorada.</p>
+							<p>»Me acaban de decir que ha muerto el sargento Ramales. Habrá sido de un sofoco. También tenía allí un cacique tan malo como el tuyo.</p>
+							<p>»Da recuerdos de nuestra parte a Eugenia y a la chica, y recibe un abrazo de tu compadre,</p>
+							<p>Francisco».</p>
+						</div>
+					</body>
+				</floatingText>
+				<p>Manolo, después de quedarse sin manta, se quedó sin una peseta, pero sus compañeros le enseñaron que el dinero llega por tres caminos: el de ganar, el de robar y el de pedir. Y estando cerrados los primeros era necesario pedir a quien tuviese. Además le enseñaron que el rico da uno por amor; dos por honor, y todo, por temor. La consecuencia de estas enseñanzas fue que Manolo escribió al señor Romualdo suplicándole algún socorro; y terminaba la carta pidiendo a Dios le conservase el almiar y el plantío libres de los <seg rend="italic">fáciles</seg> incendios que producen las chispas de los cigarros y las cenizas del picón.</p>
+				<p>El señor Romualdo contestó enseguida. Dolíase de no tener dinero disponible, pero compadeciéndose del preso, le enviaba un billete de cincuenta pesetas.</p>
+				<p>Enterneciose Manolo, pero le advirtieron que no contestase, y que escribiese al señor Deogracias pidiéndole un socorro, y exponiéndole la tacañería de Romualdo.</p>
+
+				<p>Deogracias envió cien pesetas, Romualdo envió otras ciento, y Manolo se dispuso a disfrutar, en la cárcel, de una larga y agradable vida. Pero no fue así.</p>
+				<p>Don Miguel, Juez de Instrucción y de Primera Instancia, volvió a Vallindo; tomó posesión, y recibió las naturales visitas de pésame, y se enteró por el escribano, de que había un procesado por robo de cerdos. Enseguida supo, por el jefe de la línea, los detalles del robo, y aquella noche fueron capturados Ulpiano y Gregorio. El asesor tendero fue al Juzgado, pasó a saludar a su señoría, y le aseguró que Manolo era sujeto de mala conducta, protegido por el cabo de Montivega.</p>
+				<p>El Juez se hallaba en perfecto equilibrio mental. Era un caballero joven, guapo, ilustrado, que al conseguir un puesto en la carrera judicial, pidió la mano de una linda señorita, cuyo padre vivía sórdidamente, y había obligado a sentar plaza a su hijo varón que, luchando, logró ingresar en la Academia de Toledo, y ser oficial de Infantería. El viejo miserable negó su permiso, y don Miguel tuvo que depositar a su futura, y casarse con ella sin recibir de su suegro sino los más groseros insultos.</p>
+				<p>Acababa de morir el viejo dejando a sus hijos una respetable fortuna en valores del Estado, y escondida en el secreto de una arca, y don Miguel, recordando los millones que poseía y la independencia que le aseguraban, se sentía apto para ser justo, y deseaba que toda la Magistratura tuviese igual independencia, para que nunca el hambre, disimulada por un sueldo mezquino, pusiese a ningún juez en la disyuntiva de sacrificar su vida en aras de la virtud o sacrificar su honor en aras del cacique.</p>
+				<p>Las insidiosas advertencias del viejo asesor, despertaron las sospechas de don Miguel, y estudió el asunto. Obtuvo las confesiones de Gregorio y de Ulpiano, recogió las buenas referencias acerca de Manolo, se convenció de que éste se hallaba enfermo cuando se realizó el robo, y se rió de aquellos jueces municipales, impuestos por la maldad política, y para quienes un trozo de añejo embutido era cuerpo de delito en un inmediato robo de cerdos.</p>
+				<p>Don Miguel se lió la manta (o los millones) a la cabeza, sobreseyó respecto a Manolo, y le dejó en libertad.</p>
+
+				<p>Manolo recibió alegremente la noticia, soportó los abrazos y los encargos de sus compañeros de prisión, y salió a la calle. Después fue al juzgado, firmó, y le dijeron que el Juez municipal de Montivega ya tenía conocimiento de la providencia del señor juez de Instrucción. A Manolo le pareció natural que el acuerdo justo se llamase providencia.</p>
+				<p>Atardecía. Llegar de noche a Montivega, sin que nadie le viese, era muy agradable, pero temía que la puerta de su casa estuviese sellada, y durmió en Vallindo.</p>
+				<p>Se despertó, se desayunó y emprendió la marcha.</p>
+				<p>Aquella sonrisa que descubría una dentadura blanca, menuda y fuerte, había desaparecido de la cara de Manolo. Iba resuelto a ceder su casa a Deogracias y a Romualdo para que cobrasen sus créditos, y marcharse a trabajar muy lejos: a América si le era posible. Todo menos soportar el desvío agresivo de sus paisanos.</p>
+				<p>Al transponer el Cerro del Agua, vio a un acarreador de Deogracias. Salía de la vereda a la carretera, y llevaba aceituna al molino.</p>
+				<p>-¡Escucha! ¡Si es Manolo!</p>
+				<p>-¡Hola, hombre!</p>
+				<p>-Pues chico, que ayer se dijo que estabas libre y que vendrías hoy, y lo cual que, a la cuenta, yo soy el primero que te ha visto.</p>
+				<p>-Así parece.</p>
+				<p>-Pues mira, que me alegro. Y quisiera decir que nos alegramos todos.</p>
+				<p>-¿Sí?</p>
+				<p>-Y lo cual que el amo mismo dijo anteayer en la limpia que allí hacía falta un hombre como tú. Es decir, que si tú se lo mientas, no lo negará. Conque ya sabes que lo tienes por tuyo.</p>
+				<p>-Vaya, vaya.</p>
+				<p>-Y la Petra y su madre más caídas que una soferapéndola, porque se echan la culpa de que por ellas irse de pico, en el lavadero se supiese lo que tú hiciste.</p>
+				<p>-¿Lo que yo hice?</p>
+				<p>-Sí, hombre. Lo cual que a mí, ya ves, como si fuésemos hermanos; y lo que hablemos se sabrá por el macho que nos escucha.</p>
+
+				<p>-Entonces, ¿tú crees que yo robé los cerdos?</p>
+				<p>-Hombre, yo creo en Dios porque lo dice el cura de balde; y... Mira: allí viene el amo en el tordo. Lo cual que vamos a aligerar, porque luego dice que en cuatro viajes se me acaba el día.</p>
+				<p>-Aligera tú.</p>
+				<p>-Bueno. Pues lo dicho: tan contento, y como toda la vida. ¿No es eso?</p>
+				<p>-Me parece.</p>
+				<p>Abrasada la frente de Manolo, se espesaba la saliva, saludaban las manos y sentía calofríos en la espalda. Había comprendido que nadie creía en su inocencia y que, sin embargo, le querían como nunca; que por su maldad supuesta, era héroe en Montivega, donde por bondad efectiva, vivió Manolo desconocido o menospreciado.</p>
+				<p>Llegó el señor Deogracias, paró la jaca esperando que se le acercase Manolo, y gritó:</p>
+				<p>-¡Vamos allá!, buen amigo. Yo voy a ser el primero que te dé la enhorabuena.</p>
+				<p>-Muchas gracias.</p>
+				<p>-De modo que agua de cerrajas. Quien no pega y amaga, ni alpechín ni agua. Esto lo vi yo venir. Ulpiano cayó porque es un perdido, y cayó Gregorio porque es un bocón, pero yo sabía que tú no caías y me alegro. Y más porque le hayas dado en la cabeza a Mariano que es un tío bruto con malos centros, y nos tiene más cansados de juez municipal que si fuese tarta de almendra. Y ésa te va a hacer la rosca, lo vas a ver. Conque, ¿te llegó la miseria que te envié?</p>
+				<p>-Sí, señor: muchas gracias.</p>
+				<p>-¡Pero si no decías nada! Que te enviase un socorro. Y, ¿qué es eso? Pues ahí van cien pesetas para que fumes.</p>
+				<p>-Muchas gracias.</p>
+				<p>-Y las cosas no se hacen así, porque todos vamos de reata: quien primero, y quien va el último. Y se habla claro como yo te voy a hablar antes que te metas en el pueblo y te hagan coger la mosca de taberna en taberna.</p>
+				<p>-Usted me manda. Y crea usted que vengo dispuesto a que cobre usted enseguida lo...</p>
+
+				<p>-Pero, oye, ¡que van a creer que he salido al camino para darte el alto!</p>
+				<p>-No, señor.</p>
+				<p>-¡Pues entonces! Si yo le llevo dinero al Banco de España para que me lo guarde, ¿por qué no me lo has de guardar tú?</p>
+				<p>-Muchas gracias.</p>
+				<p>-Lo que yo quiero es comprometerme antes de que otro te comprometa, porque me haces falta. Y se habla así, claro; como te hablo yo.</p>
+				<p>-Sí, señor.</p>
+				<p>-Esto suponiendo que te pongas a trabajar.</p>
+				<p>-Me parece.</p>
+				<p>-Pues entonces, te digo que me haces falta en el plantío, porque el hombre que tengo entiende de aceitunas menos que un zorzal, porque ni las prueba. Y las aceitunas se han emperrado en que el esportón es grande, y que no se ha de colmar, y en que se mide sin echar a la limpia. Y me entierran las aceitunas, y no me repasan las claras, y hacen que se les pierden las chapas, para que les anoten las perdidas. Y los acarreadores se me paran porque no hay acopio. Y, ¡vamos!, que si no me vacuno me va a dar la más negra. ¿No es eso?</p>
+				<p>-Sí, señor.</p>
+				<p>-Conque tú te vienes al plantío y me sujetas la gente, y la pones al esportón por montera, y vas de mayoral o de manigero o de lo que sea tu gusto, y a ganar como el hombre de mi confianza. Ésta es la palabra.</p>
+				<p>-Pues yo...</p>
+				<p>-Que no o que sí. Y tan amigos en la cruz como en la casa. Pero escucha un poco; porque hasta las mujeres llevan cola, y esto la trae. Si vamos como yo quiero que vayamos, dentro de unos días, a primeros de año, saldrá en el Ayuntamiento la subasta de la media y de la romana, y te quedarás con ella porque quiero yo, y porque tengo yo para ti los dineros de la fianza, y porque el medidor que tenemos se ha empeñado en ganar la gloria de Dios, y eso se gana en la iglesia, pero no se gana midiendo granos de aceite. Y ahora, habla tú.</p>
+				<p>-Pues por mí, hecho, y gracias.</p>
+				<p>-De nada. Y, ¿cuándo te espero?</p>
+
+				<p>-Cuando usted mande.</p>
+				<p>-Hoy no puede ser, porque hazte cuenta que te van a feriar. Mañana, a la hora del trabajo.</p>
+				<p>-¿Dónde?</p>
+				<p>-Te vienes a casa y nos iremos juntos al plantío para que yo diga a lo que vas.</p>
+				<p>-Lo que usted mande.</p>
+				<p>-Y a otra cosa. Pero hombre, ¡si esto es más largo que una solitaria! El tío Pastor me dijo que te había enviado cincuenta pesetas, y además te ha enviado ciento; que me lo ha dicho el de Correos, que le certificó y le selló la carta. ¿Es así?</p>
+				<p>-Sí, señor.</p>
+				<p>-Pues, ea, el roñica de Romualdo te espera para que le firmes una obligación, y busques otra firma además. Pero no por las ciento cincuenta, sino por doscientas.</p>
+				<p>-Le pagaré.</p>
+				<p>-Ya lo creo, y antes de las doce.</p>
+				<p>-Ahora no es posible. Le llevaré la escritura de mi casa.</p>
+				<p>-Ése no entiende de prendas posesorias. A ese le llevas las ciento cincuenta pesetas que van dentro de este papel; y que le cobre los réditos a una coneja, que es lo que más renta.</p>
+				<p>-Pues, muchas gracias. Entonces yo le debo a usted...</p>
+				<p>-Es decir, que me tienes guardados sesenta duros. ¿Necesitas dinero?</p>
+				<p>-No, señor; tengo.</p>
+				<p>-¡Como no te veo fumar!</p>
+				<p>-Apenas lo gasto.</p>
+				<p>-Pues entra en el pueblo con este puro, no crean que vienes a varear a destajo.</p>
+				<p>-Es usted muy bueno conmigo.</p>
+				<p>-Y allá va el último favor que voy a pedirte. Que te lleves el tordo a mi casa, porque el plantío está ahí, iré a pie, y no quiero tener al animal con bocado y con silla; y no me he traído una mala jáquima.</p>
+				<p>-Lo llevaré.</p>
+
+				<p>-Pues vete con Dios.</p>
+				<p>-Y que Dios se lo pagará a usted todo.</p>
+				<p>-Me lo pagarás tú.</p>
+				<p>-¡Por la gloria de mi madre!</p>
+				<p>Romualdo estaba contrariado porque Deogracias le ganaba la partida. No hablo de pagarés ni de intereses. No le urgía cobrar. Y cuando Manolo le entregó los treinta duros, comprendió Romualdo que había sido buen negocio el robo de los cerdos, y que un hombre que robaba y se burlaba de la justicia, era muy malo, muy astuto, muy hipócrita y muy temible. Romualdo recogió los billetes y dio a Manolo uno de cincuenta pesetas.</p>
+				<p>-Hazme el favor de aceptar este obsequio.</p>
+				<p>-No, señor, muchas gracias. Ya tengo trabajo.</p>
+				<p>-Y si te faltase, lo hay en mi casa para ti, como tú lo quieras.</p>
+				<p>-Se agradece.</p>
+				<p>-Pero eso no estorba para que tomes esta insignificancia. Si fuese joven como tú, iríamos juntos a gastarla.</p>
+				<p>-Ea, pues como usted quiera.</p>
+				<p>-Y no olvides que aquí tienes una casa y un amigo.</p>
+				<p>Ya en la calle, tuvo Manolo que aceptar las invitaciones de los desocupados, y entrar en una taberna, que enseguida se llenó de gente.</p>
+				<p>Allí fue Pocapena para decir a Manolo que el señor Mariano esperaba en el Juzgado.</p>
+				<p>-¿Es que te van a enchiquerar?</p>
+				<p>-¡Que no!, ¡que no! -repetía Pocapena.</p>
+				<p>-Estate con nosotros.</p>
+				<p>-Dejadle que vaya.</p>
+				<p>-Y cuenta conmigo.</p>
+				<p>-Y conmigo.</p>
+				<p>-Y con todos.</p>
+				<p>El señor Mariano, ante el secretario y el alguacil, y empujando adentro los puños postizos que le salían de las cortas mangas dijo así:</p>
+				<p>-He llamado a usted para... Pocapena, acerque usted una silla para que se siente Manolo. Eso es. Pues bien, primero: que tiene usted que echar unas firmas donde le dirá éste. Yo siento mucho haber gravitado sobre usted el peso de la Ley, y acato el fallo de la superioridad. Soy un representante del orden jurídico, y mi conducta con usted garantiza a usted el sacrosanto ejercicio de su derecho ahora y en todo tiempo, porque una sentencia del Supremo dice que el tiempo no respeta lo que se hace sin su permiso. Si no está usted bien en esa silla, súbase usted aquí, a la del fiscal.</p>
+				<p>-No, señor; muchas gracias.</p>
+				<p>-Y nada más. Bueno, que como se descerrajó la puerta, pues el herrero arregló la llave por mi cuenta; de amigo a amigo. Esto no consta en autos. Alguacil, traiga usted la llave al compareciente.</p>
+				<p>-La tenía usted.</p>
+				<p>-¡Jorobar! Pues, ¿dónde la he metido? ¡Ah!, sí. Aquí tiene usted la llave de su inmueble y domicilio o residencia.</p>
+				<p>Manolo marchó deprisa hacia su casita. Tenía ansias de ver su catre y su mesa; sobre todo, tenía ansias de hallarse en dulce soledad.</p>
+				<p>Pero en la puerta de la casa le esperaba la tía Fulgencia.</p>
+				<p>-¿Por qué llora usted?</p>
+				<p>-Porque te habrán dicho mucho malo de nosotras.</p>
+				<p>-¿A mí?</p>
+				<p>-Y no es cierto; te lo juro por la salud de mi hija, que será tu mujer. Porque lo que pasó fue que la muy patosa te dijo lo de que olías a cerdo, y yo la reprendí, porque eso no son modos, y ella emperrada en que no lo había dicho con mal aquél, y así estuvimos porfiando en el lavadero. Y dicen que por eso se sacó lo que tú habías hecho con los cerdos, pero di que no, que ya estaría dado el soplo.</p>
+				<p>-Pero, ¿usted cree?...</p>
+				<p>-¡Hijo mío!... Conque abre, y haré algo.</p>
+				<p>-Ahora no; voy a descansar un momento.</p>
+				<p>-Te mulliré el colchón.</p>
+				<p>-Tampoco. Cuando yo me vaya, enviaré a usted la llave con el chico del esquilador.</p>
+				<p>-¿Es que no vendrás a vernos?</p>
+				<p>-A la noche, como siempre.</p>
+
+				<p>Manolo entró en el patio, y después en la habitación. Oyó huir a los ratones; una salamanquesa se detuvo en la pared, y alzó la cabeza chata, después huyó pesadamente.</p>
+				<p>Allí hacía frío, pero Manolo se sentó en la silla, y ya iba ordenando sus recuerdos, cuando notó que abrían la puerta de la calle.</p>
+				<p>-¿Quién es?</p>
+				<p>-Ni aun eso: el tío Gusano.</p>
+				<p>-Pase usted.</p>
+				<p>-¿Te estorbo?</p>
+				<p>-No, señor.</p>
+				<p>-Vengo a darte la enhorabuena.</p>
+				<p>-Gracias.</p>
+				<p>-Y a decirte que si bajas a la plaza te tires a matar al toro.</p>
+				<p>-¿Por qué dice usted eso?</p>
+				<p>-Para que el toro no te mate a ti.</p>
+				<p>-Siempre anda usted con refranes. ¿Qué ha sucedido en mi ausencia?</p>
+				<p>-Que han descubierto un ladrón.</p>
+				<p>-¿Quién?</p>
+				<p>-Tú.</p>
+				<p>-¡Tío Gusano!</p>
+				<p>-Y como aquí todos son ladrones, están muy contentos de ti. Tú honradez les apestaba.</p>
+				<p>-Pero, ¿usted cree que yo he robado?</p>
+				<p>-Yo creo siempre la verdad. Tú sabes la verdad de este asunto, pues esa verdad es la que yo creo.</p>
+				<p>-Entonces cree usted que no he robado.</p>
+				<p>-Creo la verdad.</p>
+				<p>-No nos entendemos.</p>
+				<p>-Eres tú quien no me entiende.</p>
+				<p>-Pues hable usted claro.</p>
+				<p>-Pero lo que más les admira en ti, no es que hayas robado, porque eso lo hacen todos, sino que nadie, ni la justicia, te lo pueda probar. Y eso no lo saben hacer ellos, y esperan que tú se lo enseñes.</p>
+
+				<p>-Pero, si yo no lo sé.</p>
+				<p>-Eso no hace falta para poner escuela; basta con que los chicos acudan y paguen. Deogracias ya te ha encargado de robar a sus jornaleros.</p>
+				<p>-Tanto como robar...</p>
+				<p>-Después serás medidor para que robes a los que compran y a los que venden.</p>
+				<p>-¡Tío Gusano!</p>
+				<p>-O no darás gusto a nadie, porque el que compra y el que vende van decididos a robar. Y después... Si yo, ahora, les probase que eres un hombre de bien, te quedarías sin pan, y te meterían en la cárcel, y harían perfectamente.</p>
+				<p>-¿Por qué?</p>
+				<p>-Porque les estafas la popularidad que te han dado. Si quieres conservarla, roba.</p>
+				<p>-No quiero.</p>
+				<p>-¿Qué es lo que no quieres?, ¿la popularidad?, ¿el aplauso de todos?</p>
+				<p>-Eso sí; lo que no quiero es robar.</p>
+				<p>-Pero el hombre popular no domina al pueblo; es un infeliz esclavo de la canalla que le aplaude y le alimenta. Aquí son ladrones, y te mandan que robes; si fuesen beatos te mandarían que rezases.</p>
+				<p>-¿Y si no robo?</p>
+				<p>-Te quedas de hombre honrado.</p>
+				<p>-Da poco beneficio.</p>
+				<p>-No lo creas.</p>
+				<p>-¿Cuál?</p>
+				<p>-Ya lo sabrás cuando lo pierdas.</p>
+				<p>-Se paga mal la buena conducta.</p>
+				<p>-Por eso no me pagas mis consejos.</p>
+				<p>-¿Quiere usted algo? Yo tengo siempre una peseta para usted.</p>
+				<p>-Pues dame una, y deja preparada otra.</p>
+				<p>-¡Qué tío Gusano!</p>
+				<p>-Muchas gracias, y adiós. Digo que si vas a estar aquí mucho rato, quemes la mesa o el catre, porque yo me he quedado frío.</p>
+			</div>
+			<div n="3" type="chapter" xml:id="ne0290_chap3">
+				<head>Tercera parte : De la riqueza y de los beneficios que proporciona </head>
+				<quote>
+					<lg type="poem">
+						<l>Que nadie, si es cuerdo y sabio,</l>
+						<l>debe herir ni con el labio;</l>
+						<l>pues, aunque curarse pueda</l>
+						<l>siempre al ultraje le queda</l>
+						<l>la cicatriz del agravio.</l>
+					</lg>
+				</quote>
+
+				<p>Manolo fue medidor. Tuvo la media fanega y la romana, y el pueblo de Montivega depositó su confianza en Manolo. Éste fue el definidor de la riqueza, porque empezó por determinar la cantidad de ella en capacidad o en peso; y después determinó el precio, porque él era quien conocía la importancia de la demanda y de la oferta.</p>
+				<p>Manolo supo aprovecharse de las lecciones que le dieron. Aquella media fanega limpia de zunchos dorados, y aquella romana limpia y de hierro bruñido, parecían vírgenes vestales; pero también las vestales solían perder su virginidad.</p>
+				<p>Un vendedor de granos le enseñó a meter la media en el montón, con tal habilidad, que parecía llena, y no lo estaba, y le enseñó a enrasar, con tal arte, que, hacia en el centro, rebajaba en un centímetro la debida altura del grano. Un comprador le enseñó a dar, disimuladamente, unos golpecitos a la media para dejarla bien repleta, y a enrasar bombeando la superficie, para que la medida fuese excesiva. Compradores y vendedores le enseñaron a colocar mal, en la romana, el gancho de carga, para marcar un peso que no era el exacto.</p>
+				<p>Después, los vendedores le enseñaron a que las ofertas fuesen pequeñas, y defender así el precio; y le enseñaron los compradores a que acumulase las demandas para conseguir así una baja del artículo.</p>
+				<p>Aprendió también a comprar fiado, y pagar cuando bajaba el precio; y a vender fiado, y cobrar cuando el precio aumentaba.</p>
+				<p>Manolo se vio dueño de la sublime sabiduría que tiene culto en algunos bolsillos y templo en muchos corazones. A sus derechos de medidor agregó las gratificaciones que le producían el fraude y el corretaje de las ventas, y empezó, con paso tranquilo y seguro, a ser en el pueblo el depositario comercial. Vivía con Petra y con la familia de ésta en una casa de alquiler. La de Manolo quedó para guardar envases. Detrás de ésta, y con entrada por otra calle, había una casita cuyo infeliz dueño murió dejando viuda a una pobre anciana. Ésta, para pagar el entierro de segunda, según orden del sacristán, por tratarse de un propietario, pidió a Manolo unas pesetas, entregándole la escritura de la casa. Pasó un mes, reclamó el medidor, la vieja propuso que le comprase la casa, hizo remilgos Manolo, aseguró que le costaría mucho el arreglo de los títulos y de la testamentaría, y por poco dinero se quedó con la casa de la viuda.</p>
+				<p>Enseguida abrió una puerta de comunicación entre las dos viviendas, y empezó a restaurarlas para habitar allí.</p>
+				<p>Pero Manolo, muy experto ya en los malos tratos, leyó la escritura, y vio con asombro, que le habían vendido más terreno que el comprado por la edificación. Lo mismo halló la escritura de su casita, y dedujo que la faja de terreno adosada a ambas casas, que labraba el alguacil, unida al solar de las escuelas, y que pasaba por ser propiedad del señor Romualdo, le había añadido un pie de salida. Manolo mandó al albañil que cercase el solar con arreglo a la linde indicada por la labor.</p>
+				<p>Pocapena no protestó, porque le debía unas pesetas a Manolo, y éste le dijo en la taberna del Pellejero, y delante de los consumidores:</p>
+				<p>-Oye, alguacil; ¿hacemos un trato?</p>
+				<p>-Vamos allá.</p>
+				<p>-Hoy, día de la fecha, ni yo te debo ni tú me debes.</p>
+				<p>-Por mí, hecho.</p>
+				<p>-Pues pago un frasco de vino.</p>
+				<p>-Y muchas gracias por todo.</p>
+				<p>Romualdo tampoco protestó, y cuando Manolo le decía:</p>
+				<p>-Está usted más sano que un zorzal.</p>
+				<p>Contestaba el viejo:</p>
+				<p>-Que Dios te atienda lo mismo que a mí.</p>
+				<p>Algunos meses después, tenía Manolo una de las mejores casas del pueblo, pero debía a Deogracias más de cuatro mil pesetas, y como ambos tenían interés en que la cuenta se saldase, una mañana, en la secretaría del Ayuntamiento , tomando café con cargo a resultas del ejercicio anterior por la limpieza y arbolado, decía Deogracias a sus amigos:</p>
+				<p>-Por el distrito del Prado presentaremos para concejales a los mismos que salen; y por el distrito del Monte, que no hay más que una vacante, presentaremos a Manolo, el medidor. Sí, hombre, en los Ayuntamientos hace falta gente así. Los señoritos no entienden de administrar ni lo suyo, están atontados, temen que les comprometan, y se enfadan si no les comprometen; los comerciantes no van más que a su negocio, y los labradores no debemos copar el cabildo. ¿Estamos?</p>
+				<p>-Lo que usted diga.</p>
+				<p>-Pero Romualdo se ha dejado decir que no quiere concejales sin elección en las urnas, y eso es una barbaridad, porque lo que hace falta es que el pueblo se acostumbre a no votar, y eso es ahora más fácil, porque el voto es obligatorio, y lo que más nos gusta a todos es no cumplir con la obligación.</p>
+				<p>-¡Y que es la fija!</p>
+				<p>-Pues bien. Romualdo quiere presentar a su yerno por el distrito del Monte.</p>
+				<p>-Se le excluye del Censo.</p>
+				<p>-Ya nos hicieron eso una vez, y sin embargo, sacamos triunfante a nuestro candidato.</p>
+				<p>-Se le empapela.</p>
+				<p>-Ya lo hicimos nosotros una vez, y no nos sirvió para nada.</p>
+				<p>-Pues, ¡a votar!</p>
+				<p>-¿Y vamos a gastarnos los cuartos, o hacérselos gastar a Manolo, con riesgo de perder?</p>
+				<p>-También es verdad.</p>
+				<p>-Si Romualdo presenta a su yerno, votaremos nosotros al hijo.</p>
+				<p>-¿Al Cuatezón?</p>
+				<p>-Ése. Ya sabéis que los cuñados nunca se han podido ver; que por sus disputas han estado expuestos a morir en presidio, y que gracias a la pachorra de Romualdo, viven en paz, al parecer. Así que en las elecciones les pongamos el uno enfrente del otro, se hacen cisco, y se acabó la tranquilidad en la casa.</p>
+				<p>-¡Eso!, ¡eso!</p>
+				<p>-¡Pero que muy bien pensado!</p>
+				<p>Deogracias sabía que sus discretos amigos contarían esta conversación, y cuando Romualdo la supo, desistió de intervenir en las elecciones. Manolo fue elegido concejal y teniente-alcalde del distrito que representaba; la media y la romana pasaron a manos del tío Román, el seudo-suegro; y Manolo fue quien tuvo la feliz idea de arrendar el impuesto de Consumos en pública subasta.</p>
+				<p>Venció en ella un mayoral de Deogracias, y fue benigno con los labradores en la cobranza del impuesto sobre el consumo del ganado; pero cercó el caserío con tanta vigilancia, que hizo imposible el matute.</p>
+				<p>Acababa de regresar Gregorio Ruiz, favorecido por dos gracias de indulto, después de cumplir su condena por encubridor, y sin que se le conociese ningún capital, puso una tienda de comestibles, en el ventorro próximo al pueblo, en la carretera de la ermita.</p>
+				<p>A quien compraba en el ventorro le daba Gregorio una factura de azúcar. Se enseñaba la factura al vigilante, y éste dejaba pasar libremente al supuesto comprador de un artículo exento del tributo. El arrendatario, Deogracias y Manolo, recibieron avisos de que Gregorio llenaba de matute el pueblo, y no hicieron caso. Pero se llegó al punto de que los dos tenderos de la población, acosados para el pago de letras, y sin vender absolutamente nada, pensaron en suspender sus pagos, y Manolo les salvó del compromiso quedándose con las tiendas. Enseguida cerró Gregorio el ventorro, y por bocón, empezó a revelar el chanchullo en que había tomado parte, y tuvo que desterrarse huyendo de la paliza que le preparaban Deogracias, Manolo, el rematante y Román.</p>
+				<p>Los vecinos hubieron de sucumbir a las exigencias del único tendero. Esta tiranía no afectó a los labradores, satisfechos del arrendatario, y que provistos de los principales artículos de alimentación, pagaban, respecto a ellos, el impuesto establecido.</p>
+				<p>La tiranía gravó sobre los pobres, pero el soberano pueblo elector depuso sus iras cuando vio que Manolo fiaba, y que, para cobrar lo fiado, facilitaba trabajo en las obras emprendidas por el Ayuntamiento.</p>
+				<p>Crecían, sin embargo, extraordinariamente, las deudas de los braceros; y Manolo, a quien todo el pueblo llamaba el señor Manuel, buscó la manera de que los pobres robasen para que él pudiese robar a los pobres.</p>
+				<p>Hallose inspirado una tarde, y subió al casino. Deogracias jugaba al mus; y Manuel le dijo:</p>
+
+				<p>-Por ahí andan unos forasteros buscándole a usted.</p>
+				<p>Deogracias dejó la partida; salió a la calle con Manolo; y al verles, murmuró Romualdo:</p>
+				<p>-Junta de rabadanes, oveja muerta.</p>
+				<p>Ya en la plaza, preguntó Deogracias:</p>
+				<p>-¿No los conoces?</p>
+				<p>-Ni usted.</p>
+				<p>-Pues, ¿qué?</p>
+				<p>-Pues, ¿qué ocurre?</p>
+				<p>-Sí, ya se concluyó el agosto.</p>
+				<p>-Estaremos más tranquilos. Cédame usted uno de sus molinos.</p>
+				<p>-¿Tienes aceituna?</p>
+				<p>-Más que usted, y más que nadie en el pueblo.</p>
+				<p>-Pues explícate.</p>
+				<p>-Allá voy.</p>
+				<p>Y como, al caer la tarde, se retirase Romualdo a su casa, y viese juntos y solo a los dos rabadanes, dijo:</p>
+				<p>-Para una oveja, es mucha conversación. ¡Dios nos coja confesados! El día siguiente, los encargados de las tiendas del señor Manuel dijeron que tenían orden de no fiar.</p>
+				<p>Hubo ruegos, insultos y amenazas. Un grupo de jornaleros rodeó a Manolo en la plaza de la iglesia.</p>
+				<p>-Haced un motín; entrad en mis almacenes; y llevaos lo que queráis. Como ha sido en una alteración de orden público, yo conseguiré después una indemnización que me pagará el Ayuntamiento.</p>
+				<p>-¿Y si vamos a presidio?</p>
+				<p>-Siendo muchos no os llevarán a todos.</p>
+				<p>-Pero irá alguno.</p>
+				<p>-Y, ¿qué queréis que haga yo? Si os fío me arruino, porque no tendré para pagar las letras. ¿Queréis que me arruine?; pues me arruinaré por vosotros; y luego trabajaré como he trabajado siempre. Pero, si me arruino, y cierro, ¿de dónde van a sacar vuestras mujeres el avío?</p>
+				<p>-Eso es verdad.</p>
+
+				<p>-Pues ea. Ya decía por ahí que ibais a matarme.</p>
+				<p>-Eso no lo ha pensado ninguno de nosotros.</p>
+				<p>-Lo mismo he dicho yo. ¿Es que no me conocéis?; ¿es que no nos queremos?</p>
+				<p>-¡Que sí!, ¡que sí!</p>
+				<p>-Voy a decir que os fíen; pero la mitad de lo que os fiaban antes. ¿Es eso?</p>
+				<p>-¡Viva el señor Manuel!</p>
+				<p>-Pero es una entretenida para vosotros y para mí. Dentro de ocho días volveremos a estar lo mismo. Esto lo tiene que arreglar el Ayuntamiento, y ahora voy allí, y hablaré claro. Pero allí hay cuatro memos que los habéis votado, porque no sabéis lo que votáis; y, si estuviéramos solos los amigos del señor Deogracias, ya estaba esto arreglado.</p>
+				<p>-¡Pues que se arregle!</p>
+				<p>-Ea, que me voy al Ayuntamiento. Venid conmigo para que los otros no crean que me habéis querido pegar, y salgo huyendo.</p>
+				<p>-¡Viva el señor Manuel!</p>
+				<p>Ante la Casa de la Villa se reunieron todos los electores, ignorantes, tozudos y gregarios. Los enemigos de Deogracias no se atrevieron a asistir a la sesión; y en ella se aseguró a Manolo el pago de las deudas de los obreros; y se acordó trampear, como fuese posible, hasta empezar la recolección de la aceituna; y hacer público que empezarían pronto las obras de drageo en el río. El soberano pueblo calló porque le fiaban; aceptó los géneros y los precios que le impusieron; y el señor Manuel apareció como la sublime víctima propiciatoria.</p>
+				<p>El sábado trajo Román, que había estado en el campo, la triste noticia de haberse presentado en Navalarga una partida de bandidos. El capitán se llamaba Frasquito La Unción, porque con él llegaba la muerte.</p>
+				<p>El domingo, en el atrio de la parroquia, al terminar la misa mayor, se habló de la partida. Asustaba la idea de volver a los tiempos pasados. Era preciso recoger la aceituna cuando fuese posible.</p>
+				<p>El martes, a mediodía, se notó inusitada agitación dentro de la casa de Deogracias. Un criado fue corriendo en busca del señor Manuel; éste fue corriendo a casa de Deogracias; y después volvió corriendo a la suya; montó con su seudo-cuñado en la tartana; y, corriendo, salieron al campo. Regresaron al anochecer, fueron a casa de Deogracias; se retiraron a la suya; no salieron a la calle, y se acostaron pronto. Todo ello fue la comidilla del vulgo durante el miércoles.</p>
+				<p>En la mañana del jueves, Deogracias, escribió al juez, al alcalde, y al comandante del Puesto, suplicándoles que le favoreciesen con su visita. Acudieron también a la reunión Manolo y su cuñado.</p>
+				<p>Servidos los dulces, el vino, los cigarros y el café, Deogracias dijo así:</p>
+				<p>-He molestado a ustedes haciéndoles venir a esta su casa, porque no quiero que el pueblo se aperciba de lo que ocurre, antes que ustedes autoricen la publicidad.</p>
+				<p>-No tengo cerillas -dijo el juez.</p>
+				<p>-Anteayer, y, sin duda por la reja de mi habitación, echaron esta carta que yo leí interpretando que, bajo pena de muerte, pusiese dos mil pesetas en la cruz del camino viejo de Navalarga con la carretera que va a la capital. Mi amigo, el señor Manuel, se encargó de esta comisión, y yo se lo agradezco con toda mi alma. Y, para el buen orden, cuente usted ahora lo que hizo.</p>
+				<p>-Yo fui con éste que está presente. Bajamos la loma para desembocar en la carretera, y llegamos; cogí los billetes; los puse en el suelo; coloqué encima una piedra; volví a subir a la tartana; y echamos cuesta arriba. Al llegar a lo alto de la loma, paré.</p>
+				<p>Entre los juncos de las charcas, que hay en linde de la carretera, se movía gente. Y cuando los mirábamos, aparecieron al lado nuestro tres hombres con la cara tiznada, y nos dijeron: ¡adelante!</p>
+				<p>-Adelante, adelante, adelante. Lo dijeron tres veces.</p>
+				<p>-¡Jorobar! -murmuró el juez.</p>
+				<p>El alcalde se rascaba en la pierna derecha de los picotazos de una pulga. El cabo chupaba tenazmente el puro; se atusaba el bigote; y subía, o bajaba, el limpísimo cinturón.</p>
+				<p>-Yo -continuó el señor Deogracias- no quise dar a ustedes noticia de ello, porque no debía, por una pérdida de dos mil pesetas, producir una alarma en el vecindario. Pero hoy, al regresar la criada Rufina de hacer la compra del fresco, y, al vaciar la cesta, halló esta otra carta donde se me dice que no leí bien la anterior; que no son 2.000 pesetas, sino 20.000 pesetas, las que debo entregar; y que esperan las dieciocho mil antes del lunes.</p>
+				<p>-¡Una friolera! -dijo el alcalde.</p>
+				<p>-Vengan esas misivas.</p>
+				<p>-Aquí las tiene usted, señor juez.</p>
+				<p>-Sí, lo de siempre: la letra está contracta, o séase contrahecha.</p>
+				<p>-¿Qué me aconsejan ustedes?</p>
+				<p>El comandante del Puesto se levantó.</p>
+				<p>-Siéntese usted.</p>
+				<p>-No, señor Deogracias. Yo nada puedo aconsejar. Mi deber es, al oír la confidencia de usted, contando con la aprobación de las autoridades que están presentes, salir enseguida a hacer un reconocimiento, y exponer el resultado a la superioridad.</p>
+				<p>-En eso tiene razón dijo el alcalde.</p>
+				<p>No pareció Deogracias muy satisfecho, pero despidió cortésmente al cabo.</p>
+				<p>Llegó éste al cuartel, y poco después, acompañado de un guardia, salía al ruedo. Pasando frente a la ermita, se acercó a las tapias para encender un pitillo, y oró en silencio.</p>
+				<p>-¡Bendito San Roque, abogado contra todas las pestes!, me falta un mes para retirarme sin una mala nota. Haz que no me revienten estas farsas infames de los rústicos bribones.</p>
+				<p>Aquella noche se marcharon reunidos, Deogracias, Manuel, el alcalde y el síndico. Llegaron a la más próxima estación de ferrocarril, montaron en el tren, y de madrugada, se apearon en la capital de la provincia.</p>
+				<p>Al día siguiente, acompañados del diputado provincial, celebraron una conferencia con el señor gobernador, y Deogracias resumió así las conclusiones:</p>
+				<p>Enviar al pueblo un sargento y cuatro parejas expertas en la vida del campo.</p>
+				<p>Confiar a esta fuerza la custodia de la propiedad rústica, quedando la fuerza del Puesto dedicada a sostener el orden en la población.</p>
+
+				<p>Comenzar enseguida, para dar jornales, la recolección de la aceituna.</p>
+				<p>Tener la tolerancia posible con los rebuscadores de aceituna, a pesar de hallarse prohibido el rebusco.</p>
+				<p>El Ayuntamiento se comprometió a alojar dignamente al sargento y a los guardias, fuera del poblado, y en el sitio más conveniente para ejercer la debida vigilancia.</p>
+				<p>El Ayuntamiento, en sesión extraordinaria, haría ostensible su gratitud al señor gobernador y al señor diputado provincial.</p>
+				<p>Satisfechos de sus gestiones, Deogracias, Manuel, el alcalde y el síndico regresaron al pueblo.</p>
+				<p>También regresó el comandante del Puesto; y hubo de confesar, como lo hizo presente a su jefe, que todas las gentes de todos los cortijos, de todos los molinos y de todas las casas de los plantíos, habían visto a Frasquito La Unción; pero unos le hallaron rubio; otros, alto, moreno; otros, viejo; otros, joven; otros, alto; otros, bajo; y todos le vieron admirable jinete sobre su jaca torda, o negra rodada, o alazana; que bebía en blanco, que no bebía en blanco; y que era calzada de uno, de dos, de tres, o de los cuatro remos.</p>
+				<p>El sargento y su fuerza fueron alojados en el hermoso casón de un plantío del señor Deogracias; y se les advirtió que todos sus gastos los abonaba el Ayuntamiento de la villa.</p>
+				<p>El sargento era necesariamente un hombre de bien. Se le había ordenado que fuese tolerante con el rebusco; que protegiese las principales haciendas y la persona del señor Deogracias; y que capturase a Frasquito La Unión. El sargento cumplió con las instrucciones recibidas; y Deogracias, y su hacienda, estuvieron bien guardadas. El comandante del Puesto empleó su fuerza en la cotidiana vigilancia de los caminos. El resto del campo fue presa de la rapiña. Nadie quería trabajar a jornal ni a destajo: era más productivo lanzarse al rebusco. Y el rebusco consistía en apalear brutalmente las posturas; cargar a hecho; y dejar entre los terrones mucha aceituna que se estropeaba; el verdadero rebusco no existía.</p>
+				<p>Manolo, en el molino del señor Deogracias, compraba a muy bajo precio lo rebuscado. Las prensas hidráulicas trabajaban de día y de noche; el hogar de las calderas no se apagaba nunca; se acondicionaban nuevas tinajas para guardar el aceite; y la ganancia era enorme. Allí fue casi toda la cosecha de aquel pueblo, y el rebusco y el robo hecho en los pueblos inmediatos. Llegó el jefe de la línea a sospechar la farsa infame de los rústicos bribones, y frunció el entrecejo. Comprendieron Deogracias y Manuel que habían traspasado los prudentes límites; que a los guardias y a sus jefes era posible engañarles abusando de su buena fe, pero no era posible sobornarlos ni esperar que encubriesen un delito tan escandaloso; y Deogracias y Manuel temieron la tormenta que se les venía encima, precisamente cuando la recolección terminaba, y cuando ya iban a solicitar que se retirase la fuerza.</p>
+				<p>Entonces se supo que Frasquito La Unción y su partida habían matado a un hombre en un cortijo de Navalarga.</p>
+				<p>¡Frasquito La Unión!</p>
+				<p>Deogracias y Manuel se miraron con asombro. Ellos habían ideado el supuesto bandido, y aparecía con carne y hueso.</p>
+				<p>Montó a caballo el Jefe de la Línea decidido a concluir con aquella comedia, y a meter en la cárcel a los comediantes. Pidió una pareja al Puesto, la unió al sargento y a la fuerza que ésta mandaba, y fue al cortijo. Efectivamente, al clarear el día habían llegado un hombre, caballero en un penco, y cuatro hombres a pie. El jinete dijo que era Frasquito La Unción, y pidió almuerzo para él y para su partida. Se les sirvió; bebieron, se emborracharon; les dio el casero todas las monedas que tenía; se las repartieron y se las estuvieron jugando. El pobre casero recibió orden de alejarse un cuarto de legua; y comprendiendo que su esposa iba a ser víctima de la lujuria de aquellos hombres, se negó a obedecer. Empezó la disputa: unos corrían tras la mujer, y otros sujetaban al casero; y oyendo éste los gritos de su esposa, dio un puntapié a Frasquito La Unción, que disparó sobre el marido. Cuando se disponían a rematarle vieron que un gañán, que se acercaba al cortijo echaba a correr; y comprendiendo que no les podrían alcanzar, se marcharon.</p>
+				<p>El casero vivía aún; y acompañado de su mujer, fue trasladado, por orden del Jefe de la Línea, a Vallindo, que era la población más próxima. Frasquito La Unción existía.</p>
+				<p>Los pundonorosos guardias y su digno jefe cercaron durante la noche el cerro inmediato. Los bandidos beodos y sin cabalgaduras no habrían podido alejarse mucho. A las dos de la madrugada se oyó en el monte el relincho de un caballo; y el Jefe mandó estrechar el cerco. Al amanecer, se entregó la partida con la humildad de un perrito faldero.</p>
+				<p>La pareja destacada volvió a Montivega; y el resto de la fuerza, custodiando a los presos, marchó a Vallindo.</p>
+				<p>Allí fueron también el alcalde, Deogracias, Manuel y el síndico. Felicitaron calurosamente al Jefe de la Línea, y como notasen su frialdad, se marcharon en el tren, a cumplimentar al gobernador, y a manifestarle su gratitud. Y cuando éste supo las trapazas de aquellos lugareños, se resignó, y no quiso promover la persecución de un delito que, al fin, no podía probarse. El señor Manuel ganó en aquel negocio algunos miles de duros.</p>
+				<p>El ideado Frasquito La Unión pasó a ser bandolero efectivo; era Gregorio Ruiz.</p>
+				<p>Deogracias, asustado de la responsabilidad que pudo corresponderle cedió el cacicazgo a Manuel, y se retiró a la vida privada.</p>
+				<p>El señor Manuel sirvió al señor Segundo e influyó para que en el terreno de éste se construyesen las escuelas. Y así, teniendo contentos a los amigos y a los adversarios, consiguió que en solar inmediato a su casa se formase un lindo paseo. Entonces sustituyó la cerca de tapia por una verja muy bonita, e hizo por el paseo la entrada principal de su hotel.</p>
+				<p>La obesa Petra pasaba el tiempo abanicándose. La señora Fulgencia trataba a los criados despóticamente. Román, dedicado al molino, servía de maquilero, de maestro y de administrador. Quintín, hermano de Petra, regentaba los dos comercios, y competía con su padre en habilidad para robar a los clientes. Era imposible consumir la renta; don Manuel fue rico, muy rico, y el médico y el cura le convencieron de que debía cuidar la salud de su cuerpo y la de su alma.</p>
+				<p>Llegó a llorar la muerte de Romualdo. Y llegó a ser beato y a ser histérico.</p>
+				<p>Una tarde fue con Petra, en su tartana, a Vallindo. A lo lejos vio un hombre sentado en la cuneta, le reconoció, y paró el coche.</p>
+				<p>-¡Eh!, tío Gusano.</p>
+				<p>-Bien, gracias, ¿y tú?</p>
+
+				<p>-¿No me conoces? -¿Y tú?</p>
+				<p>-Digo, que si no me conoces.</p>
+				<p>-Digo que si no te conoces.</p>
+				<p>-¿He cambiado mucho?</p>
+				<p>-Hace tiempo.</p>
+				<p>-Estoy enfermo.</p>
+				<p>-¿Qué tienes?</p>
+				<p>-No duermo.</p>
+				<p>-Ya te lo anuncié.</p>
+				<p>-¿Cuándo?</p>
+				<p>-Una tarde. Dijiste que la virtud no daba nada. Y da eso: el dormir bien.</p>
+				<p>-Estás como siempre. ¿Cobras la peseta?</p>
+				<p>-Todos los sábados. Gracias. No te mueras porque yo viva.</p>
+				<p>-Si me muero no te faltará la peseta. Lo tengo ya dispuesto.</p>
+				<p>-Pues Dios te lo pague. Iré al cementerio a pedírtela.</p>
+				<p>-Adiós, tío Gusano.</p>
+				<p>-Adiós, los dos.</p>
+				<p>Al llegar al paso a nivel en la vía férrea, la espantada mula arrastró la tartana, y ésta fue deshecha por el tren.</p>
+				<p>Manuel, Petra y su criado perecieron instantáneamente.</p>
+			</div>
+			<div n="4" type="chapter" xml:id="ne0290_chap4">
+				<head>Cuarta parte : De la vermicracia y de los beneficios que proporciona </head>
+				<quote>
+					<p>Huele a podrido</p>
+					<ab>SHAKESPEARE (<seg rend="italic">Hamlet</seg>)</ab>
+				</quote>    
+				<p>Por el camino que conduce al cementerio de Montivega va el tío Gusano con su barba blanca; encorvado el alto cuerpo, y apoyándose en una cayada.</p>
+				<p>Quince años antes llegó por primera vez al pueblo el tío Gusano que marchaba erguido. Entró en una tienda de comestibles, y preguntó:</p>
+				<p>-¿Me fía usted una libreta?</p>
+				<p>-¿Fiada? ¡Tiene gracia! Vaya usted con Dios.</p>
+				<p>Llegó a la tahona de Jesús, y en ella estaban, de tertulia, Deogracias, que era alcalde, y otros amigos.</p>
+				<p>-¿Me fía usted una libreta?</p>
+				<p>-¿Qué dice usted?</p>
+				<p>-¿Que si me fía usted una libreta?</p>
+				<p>-Dios le ampare.</p>
+				<p>-Dirá usted que Dios me fíe.</p>
+				<p>-Lo que sea.</p>
+				<p>-Si Dios tuviese tahona yo no pasaría hambre, y usted no pasaría trabajos.</p>
+				<p>-Es cierto. Hombre: por ese dicho le voy a dar a usted la libreta. Ahí va.</p>
+				<p>-¿Usted pide limosna? -preguntó Deogracias.</p>
+				<p>-No, señor. Nunca pido lo que, tal vez, no puedan darme.</p>
+				<p>-¿Cómo se llama usted?</p>
+				<p>-Aborigen.</p>
+				<p>-Y ésa, ¿es palabra cristiana?</p>
+				<p>-Sí, señor.</p>
+				<p>-¿Cuándo celebra usted sus días?</p>
+				<p>-Cuando son buenos.</p>
+				<p>-¡Vaya un tío! Y, ¿si yo le diese a usted diez céntimos?</p>
+				<p>-Haría usted bien.</p>
+				<p>-Y, ¿si le diese veinte?</p>
+
+				<p>-Haría usted mejor.</p>
+				<p>-Y, ¿si le diese a usted treinta?</p>
+				<p>-Haría usted lo debido.</p>
+				<p>-¿Lo debido? Y, ¿si le diera a usted cuarenta?</p>
+				<p>-Haría usted muy mal.</p>
+				<p>-¿Mal? ¿Por qué?</p>
+				<p>-Porque antes me llevaba usted ofreciendo sesenta.</p>
+				<p>-¡Caramba con el hombre! Pues tenga usted dos reales.</p>
+				<p>-Muchas gracias.</p>
+				<p>Cogió Aborigen las monedas y se las dio al tahonero.</p>
+				<p>-Cobre usted la libreta.</p>
+				<p>-No: ya la di por perdida.</p>
+				<p>-Pues me injuria usted creyendo que no la pagaría.</p>
+				<p>Durmió en un chozo de los tejares, habitado por una vieja sucia. El día siguiente halló una casa limpia donde, por diez céntimos diarios, le daban albergue.</p>
+				<p>Aquel raro sujeto llamó la atención, y los chicos le seguían. A la salida del pueblo empezaron a apedrearle. Aborigen saltó velozmente y cogió a un muchacho que empezó a llorar mientras sus compañeros se disponían a defenderle.</p>
+				<p>-No llores, que no te hago nada.</p>
+				<p>Puso la gorra del chiquillo sobre un guardacantón, y lanzó una piedra que despidió la gorra a algunos metros de distancia.</p>
+				<p>-¿Ves aquel gorrión?; pues va a morir.</p>
+				<p>Y una piedra, que hizo silbar el aire, mató al pájaro antes que éste pudiese volar.</p>
+				<p>-¿Queréis que os enseñe a tirar piedras?</p>
+				<p>-Sí, sí.</p>
+				<p>-Pues se tiran con el corazón. Id a vuestras casas, y que os la hagan más grande.</p>
+				<p>Los muchachos le dejaron en paz. Pero las autoridades quisieron saber quién era aquel sujeto.</p>
+				<p>-¿Dónde ha nacido usted?</p>
+
+				<p>-Quizá lo sepa mi madre. Yo estaba presente, pero no se habló de eso.</p>
+				<p>Para asustarle, pretextaron una detención gubernativa, y le llevaron al calabozo. Aborigen pidió a la mujer del alguacil escobas, bayetas, agua y lejía. La mujer vio el cielo abierto; y Aborigen limpió admirablemente el calabozo. Después preguntó:</p>
+				<p>-¿Qué señas doy para que me contesten?</p>
+				<p>-¿Va usted a escribir?</p>
+				<p>-Al Estrecho de Magallanes. Dentro de cuatro meses tendré aquí la respuesta.</p>
+				<p>No pedía: Aceptaba. No era gravoso ni glotón.</p>
+				<p>Sus sentencias y sus consejos le proporcionaban más alimentos, más vino y más ropa que los necesarios.</p>
+				<p>Murió de viruelas, y abandonada, la vieja del pajar; y Aborigen dijo:</p>
+				<p>-La debo el alquiler por una noche. Voy a pagarlo.</p>
+				<p>Y fue. La amortajó, y la colocó en el arca de los pobres, cuando la recogieron para enterrarla.</p>
+				<p>El dueño del tejar propuso a Aborigen se quedase de guarda por diez duros al mes.</p>
+				<p>-Gracias, señor. ¿Cuánto vale lo que hay cortado, lo apilado, y lo que se está cociendo?</p>
+				<p>-Más de quinientas pesetas.</p>
+				<p>-Pues deme usted otro tanto por guardarlo.</p>
+				<p>-¿Está usted loco?</p>
+				<p>-Más loco es usted que, por guardar cien duros durante un mes sólo da usted dos. Por cariño lo hago de balde.</p>
+				<p>El cura ecónomo comprobó que aquel hombre traducía rápida y exactamente el latín que se le hablaba. ¿Por qué vivía así una persona de ilustración?</p>
+				<p>La dueña de un ventorro se asomó a la puerta cuando pasaba Aborigen.</p>
+				<p>-¿Va usted hacia el pueblo?</p>
+				<p>-Sí, señora.</p>
+
+				<p>-¿Quiere usted acompañar a mi chico?</p>
+				<p>-Con mucho gusto.</p>
+				<p>-Pues arrea, condenado, que siempre llegas tarde a la escuela. Tenga usted una copa, tío Gusano.</p>
+				<p>-Muchas gracias: guárdela usted para otro día.</p>
+				<p>A las once supo la mujer, que su chico y Aborigen estaban juntos y echados de bruces en el erial próximo a la parroquia. La madre llegó allí, dio de azotes a su hijo, e insulto a Aborigen.</p>
+				<p>-Señora; usted me ha dicho que le acompañase, y no me separado de él.</p>
+				<p>-¡Vaya usted noramala!</p>
+				<p>La mañana siguiente dijo el muchacho a su madre:</p>
+				<p>-Me voy a la escuela. Ya son las ocho y diez minutos.</p>
+				<p>-¡Mentiroso! ¡Toma!, pues es verdad.</p>
+				<p>-Como que entiendo el reloj. Me lo enseñó ayer el tío Gusano.</p>
+				<p>Se le llamó así, porque continuamente decía que en todo hay siempre un gusano escondido.</p>
+				<p>Iba aquel sábado hacia el camposanto, cuando le detuvieron unos peones que limpiaban las cunetas.</p>
+				<p>-¿Se va por la rentita?</p>
+				<p>-Claro.</p>
+				<p>-A la cuenta, hasta ahora no hay más heredero que usted.</p>
+				<p>-Porque me paga la peseta la testamentaría, por el sepulturero.</p>
+				<p>-Entonces, ¿lo de la herencia no se arregla?</p>
+				<p>-Cuente usted eso, tío Gusano.</p>
+				<p>-Pues nada, que don Manuel había hecho testamento a favor de la Petra. Se murieron los dos destrozados, y hace falta saber quién murió más pronto. Si murió don Manuel, hereda el señor Román.</p>
+				<p>-¿Y si murió Petra?</p>
+				<p>-Los parientes del otro.</p>
+				<p>-¡Y si don Manuel no tenía parientes!</p>
+				<p>-Han salido ya cuatro tíos en la sangre del padre, y cuatro tías en la sangre de la madre.</p>
+
+				<p>-¡Qué tío Gusano!</p>
+				<p>Llegó éste a la puerta del cementerio, la abrió, volvió a cerrarla, se acercó al sepulcro donde yacían Manolo y Petra, y como viese al sepulturero, le dijo:</p>
+				<p>-Augusto sacerdote de este templo de la vermicracia. ¿Estás solo?</p>
+				<p>-Sí.</p>
+				<p>-Haces desprecio de mí y de los muertos, o no sabes lo que dices.</p>
+				<p>-¿La trae usted ya?</p>
+				<p>-La he dejado en el camino, para recogerla después, porque se ha dispuesto que nadie esté alegre en el único sitio donde no hay penas.</p>
+				<p>-Ya lo sabrá usted cuando le roan los gusanos.</p>
+				<p>-Hombre; ¿los echas tú en los ataúdes?</p>
+				<p>-¿Yo?, no.</p>
+				<p>-Ni el que amortaja. Estarán en el cuerpo.</p>
+				<p>-No los tiene cuando está sano, pero los cría cuando se corrompe.</p>
+				<p>-De modo que donde hay un gusano hay corrupción.</p>
+				<p>-Es natural.</p>
+				<p>-Te llevarán a la cárcel.</p>
+				<p>-¿Por qué?</p>
+				<p>-Por creer en la vermicracia.</p>
+				<p>-¿Y qué es eso?</p>
+				<p>-Cuando hay un hombre tuno es porque la sociedad está corrompida y los gusanos la gobiernan.</p>
+				<p>-Yo no he dicho eso.</p>
+				<p>-Ni yo tampoco. Bueno. Rezaré un Padrenuestro.</p>
+				<p>-Aquí tiene usted la peseta.</p>
+				<p>La sonó Aborigen en el mármol del sepulcro. Hubo una corta pausa.</p>
+				<p>-¿Quiere usted otra?</p>
+				<p>-Sí.</p>
+				<p>-Será como esa.</p>
+				<p>-Me alegraré.</p>
+
+				<p>-¡Que será a cambio de esa!</p>
+				<p>-Pues no me la des.</p>
+				<p>Hincose de rodillas el tío Gusano, y así estuvo hasta que el sepulturero le dijo desde la puerta:</p>
+				<p>-¿Se queda usted?</p>
+				<p>-Todavía, no.</p>
+				<p>-Pues voy a cerrar.</p>
+				<p>-Sí. Guarda cuidadosamente los gusanos que sólo sirven para que disfrutéis sus guardianes.</p>
+				<p>-¿Quién?, ¿yo?</p>
+				<p>-Y los explotadores de la pestilente vermicracia social.</p>
+			</div>
+		</body>
+		<back>
+			<div>
+
+			</div>
+		</back>
+	</text>
+</TEI>

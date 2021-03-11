@@ -13,7 +13,7 @@ This is part of my PhD thesis at the young research group *Computational Literar
 
 If you use texts or metadata from this collection for your research or teaching, reference this repository using the citation suggestions below and/or cite the reference publication indicated below:
 
-- **_Corpus of Novels of the Spanish Silver Age (CoNSSA)_, by Calvo Tello, José. University of Würzburg, 2020. <https://github.com/cligs/conssa>**
+- **_Corpus of Novels of the Spanish Silver Age (CoNSSA)_, by Calvo Tello, José. University of Würzburg, 2021. <https://github.com/cligs/conssa>**
 
 ## Description
 
@@ -27,26 +27,38 @@ The corpus contains 26.7 million tokens. This makes this corpus one of the large
 
 <img src="images/figure_018.png"/>
 
-
-Each text has been encoded in XML-TEI and enriched with several types of metadata (administrative, genre labels, literary information about the plot, etc.). Each file is also offered linguistically annotated with morphological, syntactic, semantic, and textual layers, including the difference between narrative direct speech passages. Moreover, the texts are offered in other formats such as plaintext (TXT).
-
-However, a number of the texts cannot be published  yet due to copyrights. For this reason, 61% of the novels are currently offered in the formats described in the previous paragraph.
-
-Following Schöch et al. (2020), I publish also extracted data for the texts that are already in public domin or that I have digitized by myself. This data is saved as parquet files, in which the rows are texts and each columns represent the frequency of the features in each text.
-
-
 The purpose of the corpus is to analyze subgenres of the novels in this period: adventure, erotic, realistic novel, etc. However, as explained below and in the Chapter 3.1., the distribution of the texts in these subgenre played a little role in the corpus composition. That is why this corpus could be used to analyze other research questions, such as the stylistic development of specific authors in their novels, textual and literary comparison between authors or groups of authors, etc.
 
 In a simplistic overview, the compilation of this corpus was my main task during the first three years of my PhD. This comprehended tasks such as searching for texts in differnt catalogues, gathering texts, converting them into TEI, annotating metadata, cleaning collecting labels from several sources, etc. In the fourth year the analysis was the main goal, while in the fifth I wrote the PhD. The fact that the Digital Humanists have to spend so much time preparing data for their analysis needs to be recognized by the research community and properly financed by funding instituions.  Moreover, the data needs to be set so openly as possible, so other can use it for their projects.
 
+## Published Data
 
+Each text has been encoded in XML-TEI and enriched with several types of metadata (administrative, genre labels, literary information about the plot, etc.). Each file is also offered linguistically annotated with morphological, syntactic, semantic, and textual layers, including the difference between narrative direct speech passages. Moreover, the texts are offered in other formats such as plaintext (TXT).
+
+However, a number of the texts cannot be published  yet due to copyrights. For this reason, 217 novels (61% of the total corpus) are currently offered in the formats described in the previous paragraph.
+
+
+## Extracted Features
+
+Following [Schöch et al. (2020)](https://zfdg.de/2020_006), I publish also extracted data for the texts that are already in public domin or that I have digitized by myself. This data is saved as CSV files (more specifically, TSV files with tabulator as separator), in which the rows are texts and each columns represent the frequency of the features in each text. The names of the files try to be as descriptive as possible. The values correspond to the total frequency in each text (raw frequency):
+
+- tokens_freq_table_raw_10000.tsv: it contains the frequency of the 10.000 most frequent tokens.
+- tags_ling_pos_diff_mw_ord_ent_raw_70000.tsv: it contains the 70.000 most frequent features from following list
+	- TEI tags (tags)
+	- Linguistic annotation from Freeling (ling)
+	- Multiwords identified by Freeling differentiated by their PoS information (pos_diff_mw)
+	- Information about the entities, encoded as ranked entities (ord_ent). The protagonist with each
+- pos_diff_multiwords_ord_ent_pragmatic_freq_table_raw_10000.tsv: it contains the information for the 10.000 most frequent units of the previous table, plus pragmatic and phraseographical units identified with dictionaries (DPDE and Refranario.com).
+- sem_anno_freq_table_raw_10000.tsv: it contains the 10.000 most frequent semantic features,  annotated using WordNet and the catalogues of the dictionary DUE by María Moliner.
 
 ## Further Documentation
 
-This documenation file in the repositoy explains briefly some aspects of the corpus. The comprehensive documentation can be found in several chapter of my PhD thesis, specially :
+The comprehensive documentation can be found in several chapter of my PhD thesis, specially :
 - Chapter 3.1. Corpus of Novels of the Spanish Silver Age: CoNSSA and CoNSSA-canon
 - Chapter 3.2. Metadata
 - Chapter 4.1. Grammatical, Lexical, Semantic, and Textual Annotation
+
+Besides, in the code repository it can be observed how each features was extracted.
 
 
 ## Related Publications

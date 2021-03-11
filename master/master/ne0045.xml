@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">La palma rota</title>
+				<title type="sub"></title>
+				<title type="short">PalmaRota</title>
+				<title type="idno">
+					<idno type="bne">XX2443381</idno>
+					<idno type="viaf">183438744</idno>
+				</title>
+				<author>
+					<idno type="bne">XX1720928</idno>
+					<idno type="viaf">29542991</idno>
+					<name type="short">Miro</name>
+					<name type="full">Gabriel Miró</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">637</measure>
+				<measure unit="divs">11</measure>
+				<measure unit="tokens">14738</measure>
+				<measure unit="chars">87980</measure>
+				<measure unit="size_kb">107</measure>
+				<measure unit="chapters">10</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">0</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">600</measure> 
+				<measure unit="lg.poems">0</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">0</measure> 
+				<measure unit="heads">10</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">590</measure> 
+				<measure unit="abs">0</measure> 
+				<measure unit="fts">0</measure>
+				<measure unit="paragraphs.ds">277</measure>
+				<measure unit="saids">294</measure>
+				<measure unit="narrative.ps">313</measure>
+				<measure unit="punctual_ss">1196</measure> 
+				<measure unit="numerals">1</measure> 
+				<measure unit="puncts">4061</measure> 
+				<measure unit="len.abstract">1012</measure>
+				<measure unit="chapters.len.mean">9167.80</measure>
+				<measure unit="chapters.len.std">3846.43</measure>
+				<measure unit="chapters.len.median">9608.50</measure>
+				<measure unit="chapters.len.iqr">5950.00</measure>
+
+				<measure unit="types">4231</measure>
+
+				<measure unit="ss">850</measure>
+				<measure unit="ss.num.mean">106.81</measure>
+				<measure unit="ss.num.std">86.86</measure>
+				<measure unit="ss.num.median">81.00</measure>
+				<measure unit="ss.num.iqr">88.75</measure>
+				<measure unit="ss.active.verbs.mean">1.91</measure>
+				<measure unit="ss.active.verbs.std">1.55</measure>
+				<measure unit="ss.active.verbs.median">1.00</measure>
+				<measure unit="ss.active.verbs.iqr">1.00</measure>
+
+				<measure unit="ws">18748</measure>
+				<measure unit="ws.num.mean">3.89</measure>
+				<measure unit="ws.num.std">2.89</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">5.00</measure>
+
+				<measure unit="conjunctions">1202</measure>
+				<measure unit="determiners">2156</measure>
+				<measure unit="nouns">3505</measure>
+				<measure unit="verbs">2858</measure>
+				<measure unit="adverbs">785</measure>
+				<measure unit="adjectives">1004</measure>
+				<measure unit="adpositions">2015</measure>
+				<measure unit="punctuations">3698</measure>
+				<measure unit="pronouns">1447</measure>
+				<measure unit="dates">1</measure>
+				<measure unit="numbers">21</measure>
+				<measure unit="interjections">56</measure>
+
+				<measure unit="ne.persons">457</measure>
+				<measure unit="ne.organizations">28</measure>
+				<measure unit="ne.locations">45</measure>
+				<measure unit="ne.others">13</measure>
+
+				<measure unit="wnlex.noun.plants">58</measure>
+				<measure unit="wnlex.verb.communications">292</measure>
+				<measure unit="wnlex.noun.foods">33</measure>
+				<measure unit="wnlex.verb.possessions">91</measure>
+				<measure unit="wnlex.verb.cognitions">138</measure>
+				<measure unit="wnlex.noun.communications">211</measure>
+				<measure unit="wnlex.noun.states">83</measure>
+				<measure unit="wnlex.verb.statives">488</measure>
+				<measure unit="wnlex.noun.cognitions">131</measure>
+				<measure unit="wnlex.noun.times">110</measure>
+				<measure unit="wnlex.verb.bodys">156</measure>
+				<measure unit="wnlex.noun.persons">551</measure>
+				<measure unit="wnlex.adj.alls">664</measure>
+				<measure unit="wnlex.noun.quantitys">12</measure>
+				<measure unit="wnlex.noun.phenomenons">29</measure>
+				<measure unit="wnlex.verb.creations">78</measure>
+				<measure unit="wnlex.adj.perts">25</measure>
+				<measure unit="wnlex.adv.alls">264</measure>
+				<measure unit="wnlex.noun.processs">12</measure>
+				<measure unit="wnlex.noun.artifacts">297</measure>
+				<measure unit="wnlex.verb.perceptions">215</measure>
+				<measure unit="wnlex.noun.feelings">97</measure>
+				<measure unit="wnlex.verb.weathers">27</measure>
+				<measure unit="wnlex.noun.substances">46</measure>
+				<measure unit="wnlex.noun.shapes">18</measure>
+				<measure unit="wnlex.verb.competitions">21</measure>
+				<measure unit="wnlex.verb.motions">265</measure>
+				<measure unit="wnlex.noun.animals">21</measure>
+				<measure unit="wnlex.noun.acts">158</measure>
+				<measure unit="wnlex.noun.bodys">198</measure>
+				<measure unit="wnlex.noun.objects">71</measure>
+				<measure unit="wnlex.noun.motives">6</measure>
+				<measure unit="wnlex.verb.socials">128</measure>
+				<measure unit="wnlex.noun.groups">53</measure>
+				<measure unit="wnlex.verb.consumptions">21</measure>
+				<measure unit="wnlex.noun.possessions">8</measure>
+				<measure unit="wnlex.noun.Topss">70</measure>
+				<measure unit="wnlex.noun.relations">1</measure>
+				<measure unit="wnlex.noun.attributes">168</measure>
+				<measure unit="wnlex.verb.emotions">159</measure>
+				<measure unit="wnlex.noun.locations">61</measure>
+				<measure unit="wnlex.noun.events">51</measure>
+				<measure unit="wnlex.verb.contacts">142</measure>
+				<measure unit="wnlex.xxxs">12850</measure>
+				<measure unit="wnlex.verb.changes">170</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
+						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
+				</availability>
+				<date when="2015">2015</date>
+				<idno type="cligs">ne0045</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/la-palma-rota-1/"/>.</bibl>
+				<bibl type="print-source">Tipografía Altés, Barcelona, <date when="1934">1934</date></bibl>
+				<bibl type="edition-first"><date when="1909">1909</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE10">
+				<p>Con el embrujo de la música como telón de fondo, asistimos a los fracasados amores del romántico escritor Aurelio Guzmán por la altiva Luisa, a la que ansía poseer en cuerpo y alma, pero que inexplicablemente le cierra sus puertas y se entrega al trato con una sociedad que él detesta. Aurelio no acaba de comprender las reacciones de su enamorada, pero el lector sabe que esa criatura frustrada y distante se secó después de su desengaño amoroso. El protagonista acaba renunciando a su bello ideal caudno comprende definitivamente que ella está incapacitada para el amor</p>
+				<p>El relato se halla presidido por la simbología de la palma. Cuando al principio de la novela parece verde, esbelta y llena de vitalidad, representa a la Luisa que quiere Aurelio, la que pudo ser o la que fue en otro tiempo, fresca auténtica, sensible, sin doblegarse a las exigencias sociales. La palma rota de la última escena simboliza a una Luisa cuya alma sublime se ha tronchado por su voluntaria aceptación de los convencionalismos.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="medium">
+					<term type="author.TOC.range" resp="MdL10">7</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1879</term>
+					<term type="author.date.death">1930</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL10">33</term>
+					<term type="author.movement">avantgarde</term>
+					<term type="author.nonNovelGenre">short-stories</term>
+					<term type="author.submovement">3-modernista</term>
+					<term type="author.year.change">1914</term>
+					<term type="authorText.group">Ciclo de Las cerezas del cementerio</term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">adult</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">Aurelio Guzmán</term>
+					<term type="text.characters.protagonist.profession">artist</term><!--writer-->
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica, Ficción clásica</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">symbolic</term>
+					<term type="text.genre.subgenre.litHist" resp="HdLE">etopeya</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">1</term>
+					<term type="text.litHist.mentioned" resp="HdLE">True</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE10">0.5</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Spain</term>
+					<term type="text.setting.represented">Aduero</term>
+					<term type="text.setting.settlement" cert="low">Aduero</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">small-city</term>
+					<term type="text.setting.territory" cert="low">Valencia</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span" cert="low">365</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2015-04-01" who="#jct">Initial TEI version.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div>
+			</div>
+		</front>
+		<body>
+			<div n="1" type="chapter" xml:id="ne0045_chap1">
+				<head>- I -</head>
+				<p>-¿Llora usted, maestro? -decía bromeando con dulzura don Luis, el viejo ingeniero, a Gráez, el viejo músico, pálido y descarnado por enfermedades y pesadumbres.</p>
+				<p>-¡Oh, no es para tanto! -repuso irónico un abogado muy pulido y miope, con lentes de oro de mucho resplandor.</p>
+				<p>-¡Yo no sé si lloraba... pero estas páginas resuenan en mi alma como una sinfonía de Beethoven!</p>
+				<p>Y  luego el músico, pasando de la suavidad a la aspereza, volviose y dijo al de los espejuelos:</p>
+				<p>-¡Que no es para tanto! ¡Qué saben ustedes los que viven y sienten con <seg rend="italic">falsilla</seg>!</p>
+				<p>Y   Gráez acomodose en su butaca para seguir leyendo. Tenía en sus manos un libro de blancas cubiertas: <seg rend="italic">Las sierras y las almas</seg>; y encima estaba con trazos de carmín el nombre de su autor: Aurelio Guzmán.</p>
+				<p>¡Nos <seg rend="italic">lo</seg> va  a proclamar <seg rend="italic">genio</seg>; y eso le  falta a Guzmán!</p>
+				<p>¿Tan orgullosa   es   esa   criatura? -preguntó Luisa, que atendía silenciosa enfrente de Gráez.</p>
+				<p>-Ustedes le conocen mucho. Ha sido compañero de su hermano.</p>
+				<p>-Apenas nos vemos. ¿Cuánto tiempo hace que no entra en esta casa,   Luisa? -preguntó   el  padre.</p>
+				<p>-¡Oh, no recuerdo!</p>
+				<p>-Ni a ninguna -añadió el de los lentes.</p>
+				<p>-¿No son las águilas amigas de la soledad?</p>
+				<p>El abogado sonrió levemente como significando: ¡nos resignaremos a que Guzmán sea águila y todo lo que le plazca a este señor!</p>
+				<p>-¡Bendito sea el que resucita lo bello a la ancianidad  y le mueve a amar el mismo dolor! -murmuró Gráez,  y dejó salir gozosamente su mirada a los campos.</p>
+				<p>Bajo de la ventana estaba el huerto grande  y frondoso, regalador cuidado de Luisa. Después de las cercas, dócilmente se tendía el valle de Aduero en llanura verde, espesa de mieses, vinales  y olivar; vera ancha, umbrosa, rasgada por un río orillado de álamos; tierras fuertes, encendidas, olorosas de fertileza. Alejado en un yermo herrenal, se levantaba un torreón decrépito  y rojizo al sol poniente. Una palma muy fina subía gentilmente,  y se doblaba en lo alto como un brazo, protegiendo con la gracia de sus ramas la rota corona del almenaje.</p>
+				<p>El licenciado de los anteojos despidiose y salió.</p>
+				<p>-¡Qué saben ellos de esa alma ceñida siempre por nieblas de santo misterio, esas mismas nieblas que pasan delante de sus páginas!...</p>
+				<p>Don Luis sonreía. La hija miraba la tarde; pero en sus labios, en sus ojos, en su frente, había preocupación y tristeza.</p>
+
+				<p>Cuidaba Luisa de todo en el hogar, desde que murió su madre y su hermana. Quedaron rotos los dulces coloquios de doncellez. La plebeya condición espiritual de un hombre, su amor primero, le selló alma y labios. No tuvo ya intimidades ni expansión aliviadora de ensueños y aflicciones. Tornose desconfiada, fría, y gustaba mostrar aumentada su impasibilidad. El apartamiento y la adoración a la música la acendraron exquisitamente. Era altiva; y llegaba a rendirse de ternura por lo que no atendían los demás. En arte padecía celosa intransigencia. La música era el más supremo y alado. Las demás artes necesitaban de medios de expresión más humanos o terrenos; de modo que los músicos-genios perdían para ella la carne y hechura de hombre quedando en un misterioso <seg rend="italic">androginismo</seg>, o mejor, angélicamente, sin sexo; música humanada, algo inefable, como el arte amado.</p>
+				<p>Don Luis, un ingeniero de serena inteligencia, se retrajo en su hogar desde que le hirió en los profundos del corazón la muerte de la esposa y de la hija, hija regocijada  y animadora en los quebrantos. Otro hijo.</p>
+				<p>Alfredo sustituía, en lo activo  y trabajoso, al padre. El cual, anualmente,  y con lo guardado por la eficacia de su vida sencilla viajaba estudiando las maravillas de la ingeniería y oyendo los conciertos de triunfales <seg rend="italic">virtuosos</seg>. Acompañábale Luisa. Y en los hoteles, en los paseos, en los viajes, decíanse su parecer y censura, llegando a deliciosa discusión de camaradas.</p>
+				<p>En París asistieron al glorioso concierto del maestro Gráez, el viejo violoncellista.</p>
+				<p>Salieron extenuados de sentir. Caminaban muy callados. Era una tarde de abril, y París aromaba de violetas, de primavera, de dicha. Apoyábase el padre en el brazo de la doncella.</p>
+				<p>-¡Estás temblando! -le dijo Luisa.</p>
+				<p>-Tiemblo de gozo... ¡Ha sido un español!...</p>
+				<p>-Ah, ¿era un español?</p>
+				<p>-¿No te entusiasma, no estás orgullosa?</p>
+				<p>-Para mí sólo era un músico, ni hombre siquiera.</p>
+				<p>Luego, humanando al artista, sintió fraternal ternura; y vencida su helada apariencia, aquella frialdad de distracción y altivez, oprimió las manos del padre diciéndole:</p>
+				<p>-¡Es muy hermoso que sea nuestro!</p>
+				<p>De París pasaban a Baireuth.</p>
+				<p>Próxima la partida del tren, cercaron el departamento ocupado por el ingeniero y su hija, gentes bulliciosas, graves, descuidadas, opulentas. Estallaban arpegios de risas y voces femeninas que prometían la delicia de cuerpos fragantes como jardines, de blancura de magnolias y luna. Mezclábase el habla rápida  y trinada parisién con patricias palabras castellanas;  y un hombre gallardo, suntuoso, de labios bermejos  y pupilas de carbones encendidos, parecía, cuando hablaba, reventar en su boca un bulbo azucarado  y jugoso, derramándose la miel del lenguaje de la Toscana, de cuyas doradas ánforas del idioma sacó la dulzura de su Cortesano el galanísimo conde Baltasar Castiglione.</p>
+				<p>Enmudeció el grupo;  y despidiose de damas, artistas, diplomáticos, un viejo alto, enjuto, de mirada noble  y entristecida, cejas muy rectas, nariz, bigote  y barba grandes de hidalgo, y melenuda cabeza tocada por amplia boina parda, puesta con abandono que mostraba la cima pálida de su frente. Vestía un negro traje, un ancho y largo gabán, casi blanco  y velludo.</p>
+				<p>El padre  y la hija se transmitieron su alegría mirándose, porque el nuevo viajero era Gráez.</p>
+				<p>...Salió el tren a la verdura terciopelada y húmeda del paisaje de Francia.</p>
+				<p>Gráez iba también romero al santísimo lugar de Wagner. Y lazos de patria  y de religión artística acercaron efusivamente aquellos corazones, que se estremecieron  y anhelaron unidos, cuando de los bosques de Baireuth parecía elevarse a los cielos ideálicos la sagrada forma del dios hecho música para los hombres de buena voluntad.</p>
+				<p>Allí, Luisa vio al viejo músico tierno de lágrimas por desfallecimientos de soñador  y amarguras de padre; allí le vio gozoso  y expansivo,  y áspero  y zahareño como ave de abrupta cumbre.</p>
+				<p>Gráez era viudo  y también tenía, como el ingeniero, una hija. ¿Por qué se admiraba Luisano iba en las peregrinaciones artísticas del músico? Se lo preguntó al amigo en la santidad de una tarde. El viejo había sollozado aspirando en el silencio la tristeza dejada, como un perfume de corazón abrasado, por el <seg rend="italic">Nocturno 13</seg> de Chopín. «¡Oh, mujer excelsa en cuya alma prende el arte alas de sublimidad,  y no te reduce ni marchita como a mi hija!».</p>
+				<p>Un noble gozo iluminó a Luisa escuchándole. De nuevo le preguntó por su hija.</p>
+				<p>Gráez lo confesó.</p>
+				<p>El violoncello, la suma de las voces del sentimiento de lo dulce  y magno, elegido  y amado entre todas las expresiones de su Arte, el violoncello le quitaba la hija, porque lo augusto  y religioso de su sonoridad la había llevado a vocación enfermiza de claustro. ¡La misma música de Gráez, una sublime creación de los  Salmos   a   un  Dios   que   infunde constantemente la vida, a un Dios que sólo puede presentirse en el Arte, en el Amor, en los profundos dolores, en raptos inefables; su música era incentivo para que la hija buscase a un Dios adorado entre cirios ardientes! «Aun es novicia... ¡Quizás broten hojas nuevas en el mustio rosal de su alma antes que se cumpla la profesión!».</p>
+				<p>...Juntos retornaron a España. Y en Madrid se despidieron con promesa de avisarse para siguientes viajes.</p>
+				<p>Mas, pasado un año, fue el mismo Gráez quien trajo sus noticias a la paz de Aduero.</p>
+				<p>-¡Oh, maestro, qué envidia me da usted! -exclamó Luisa al abrazarle filialmente-. ¡Usted que vendrá de paso, a recogernos; es decir, a tentarnos y hacerme sufrir, porque nosotros no salimos este año!</p>
+				<p>-¿De modo que tampoco salís vosotros?</p>
+				<p>-¿Cómo tampoco? ¿Es que usted no se marcha?</p>
+				<p>-Yo vengo a quedarme mucho tiempo al lado de ustedes.</p>
+				<p>-¡Y los conciertos, y los viajes... y la gloria!</p>
+				<p>-Me he jubilado yo mismo. ¡Todo acabó!...</p>
+				<p>Y bajo el sol de la vida del artista se interpusieron nubes de dolor que apagaron su frente y sus ojos.</p>
+				<p>Después, el amigo le ofreció un aposento en su hogar.</p>
+				<p>Le prometían soledad, independencia. La hija le pidió que aceptase. <seg rend="italic">Harían música</seg> por las tardes, por las noches;  saldrían al campo.  Ella,  aunque aliviada de aquel romántico deseo de retraerse, no frecuentaba lugares de reunión y divertimiento.</p>
+				<p>No consintió Gráez.</p>
+				<p>He venido a Aduero por ustedes. Pero también elijo con egoísmo de viejo este pueblo cálido y tranquilo. Estoy enfermo y el mal me vuelve indómito, insoportable...</p>
+				<p>-¡Enfermo, dice, y quiere que le dejemos solo! No y no. Vendrá con nosotros y le cuidaré yo como una Hermanita de la Caridad...</p>
+				<p>Y Luisa detuvo su comparación, que asociaba la idea de la rota paternidad de Gráez.</p>
+				<p>Pero Alfredo inutilizó la delicadeza por equivocada cortesía, y le preguntó de la hija.</p>
+				<p>-¡Oh!, muy bien. Se ha empeñado en ser santa. Hasta mañana.</p>
+				<p>-¡Maestro!...</p>
+				<p>-Vendré todos los días.</p>
+				<p>La dulce acogida de aquella casa presentaba al artista el desamparo de la suya.</p>
+				<p>Reuníanse todas las tardes. Luisa tocaba el piano o también conversaba. En los últimos años, había hecho parcial abdicación de su carácter. Aceptaba las visitas de los amigos del hermano, aunque algunos momentos la cansasen. Eran nada más nombres. Los espíritus raros, indomables, extraordinarios, sólo los comprendía siendo músicos. De aquí el sentirse lastimada cuando oyó Hablar del solitario escritor, y diputarle de altivo, de loco, de desdeñoso y dulce. Deseó que no lo fuese... ¡Y el maestro, el mismo Gráez le había ensalzado casi sacrílegamente!... ¡Su libro, grande  y conmovedor como una sinfonía de Beethoven...! ¡Bueno, pero qué sabía el pobre viejo de cosas literarias!...</p>
+
+				<p>-¿Llora, llora usted, maestro?, habré de preguntarle otra vez -pronunció dulce y risueño el ingeniero.</p>
+				<p>Y es que el músico escuchaba una página del libro de Guzmán, leída, ahora, por Alfredo.</p>
+				<p>Luisa pensaba, con torcedura de su voluntad, en el escritor, comparando el enternecimiento de Gráez, cuando ella hacía entrega de toda su alma en los Nocturnos del atormentado polaco, con el que descubría el anciano oyendo y leyendo páginas y hablando del novelista casi desconocido... ¡El maestro sentía más ahora! ¡Oh, el pobre maestro estaba realmente enfermo! ¡No era para tan...! Y se contuvo para no coincidir con el abogado de los lentes...</p>
+				<p>-¿Os acordáis cuando venía a esta casa siendo muchacho,  y aun siendo ya crecido? -dijo don Luis volviéndose a sus hijos.</p>
+				<p>Luisa quedó callada recordando, recordando.</p>
+				<p>Alfredo contó de épocas pasadas. Guzmán había sido compañero suyo de colegio y de facultad, en Madrid. Entonces perteneció el artista a la verdadera picardía de las aulas. Burlaba, contendía, se disipaba en vida ruidosa.</p>
+				<p>Oyéndolo, Luisa percibía un íntimo alivio. «¡Al fin, como todos los vulgares y anónimos! Los hombres grandes desde la niñez se manifiestan».</p>
+				<p>El hermano proseguía: «En sus disputas y locuras parecía desbordarse de sí mismo. Llegaba a un delirio de alegría, y de pronto buscaba lo apartado, entristeciéndose como si sufriera una desgracia horrenda... En el tercer año de carrera salió de nuestra confianza; se nos perdió...».</p>
+				<p>Alfredo siguió hablando del solitario, atendido fervientemente por el músico.</p>
+				<p>Ya agotadas las <seg rend="italic">memorias</seg> de Aurelio, entretuvo a Luisa un recuerdo suavísimo de infancia: amigos de su hermano y amigas de ella se juntaban haciendo un ruedo y jugaban a prendas. Algunas tardes participaba Guzmán, ya casi hombrecito... ¿Cuántos años tendría?... Doce o trece; y ella... ella, veinte. Y cuando le daban a él la penitencia de contentar a las doncellitas ofreciendo nombres de novios, al acercarse a ella, Aurelio se ponía muy encarnado, se limpiaba el sudor de la frente, tosía, temblaba y no le hablaba palabra. Alentábale Luisa: «¡Madre mía, tan difícil de contentar soy yo!». ¡Oh, entonces las mejillas de Aurelio parecían de fuego! Y tartamudeando, aventuraba: «¿Se... se contenta... usted... con... ¿con quién se contenta usted?...». Los demás se impacientaban; gritaban, reían.   «¡Siempre  que llega a Luisa, tropieza  y se hunde!...». «¡Si aun no me ha dicho ni un nombre siquiera!». Aurelio, muy azorado, balbucía: «Bueno, se contenta... se contenta... Bueno, ¿se contenta con... conmigo?». Y antes de que ella negase o asintiese, el cuitado pasaba a otra amiguita. Luisa, riéndose, gritaba: «Pero si no le he dicho ni que sí ni que no... ¡Pobre criatura...!».</p>
+				<p>Suspendió Luisa la pueril añoranza, porque Gráez se marchaba.</p>
+				<p>-Toma,  hija mía -le dijo al despedirse,  y le entregó el libro.</p>
+				<p>-¿Qué quiere, maestro?</p>
+				<p>-Te pido que leas recogidamente a este hombre.</p>
+				<p>Quedó la doncella contemplando el volumen; dobló sus páginas primeras. Y de súbito se fruncieron sus labios  y su frente; dejó el libro sobre una mesita de oloroso ciprés  y se sentó ante el piano, diciéndose: «¡No lo leo!».</p>
+			</div>
+			<div n="2" type="chapter" xml:id="ne0045_chap2">
+				<head>- II -</head>
+				<p>Huérfano Aurelio Guzmán, quedó en la dolorosa compañía de una hermana de su madre. Murmurábase en Aduero que amarguras por hijos siniestros, ya muertos, habían enflaquecido el juicio de la señora. Pero su demencia no era de gritos  y furias, sino sosegada, de lágrimas  y mutismo. La razón alumbraba intermitentemente su cansado ánimo,  y entonces se cuidaba con un ahínco febril de aquella casa grande y triste.</p>
+				<p>Aurelio la trataba filialmente, lleno de compasión. Y la enferma, siempre aterrada, llorosa, recogida en sí misma, dio en hablarle con sumisión de sierva. No le tuteaba y decíale <seg rend="italic">señorito Aurelio</seg>. Pedíale el joven, fingiendo risas y lacerada su alma, que viese en él al huérfano, al hijo de la hermana. «Figúrese que yo la llamase a usted doña María del Carmen, en vez de mamá Carmen -que usted lo es ahora, porque murió  mamá   Dolores.  ¿Se   acuerda   usted   de   mi madre? ¿Por qué no me contesta? Míreme. Piense que estoy solo. Dígame, ¿me oye? Pues figúrese que yo le dijese doña María... ¡qué feo, qué frío! ¿verdad? ¡Aun es más feo  y más frío lo que usted me llama!... ¿Lo dirá más? ¿Verdad que no? ¡Si usted me quiere mucho!...» Lloraba la anciana, exclamando:</p>
+				<p>-¡Oh, señorito Aurelio, señorito Aurelio!...</p>
+				<p>-¡No, por Dios, no! -gritaba el huérfano-. ¡No lo diga!... Llore, llorar sí,  y llorando dígame hijo; cuénteme todo lo que siente... ¿Se le aprieta el corazón, le duele? Pues llore; expansiónese, abráceme, béseme, llámeme hijo...</p>
+				<p>-¡Ya no hay hijos, no quedan hijos, señorito Aurelio, en toda la tierra!...</p>
+				<p>Y Aurelio se encerraba en su cuarto, angustiado de soledad interna. Se maceraba su espíritu  y su carne en prolongadas vigilias de intensos trabajos  y tristezas.</p>
+				<p>Por las mañanas entraba muy despacio doña María del Carmen a la alcoba del escritor; retrocedía y desde la puerta llamaba al dormido:</p>
+				<p>-Señorito Aurelio, señorito Aurelio...</p>
+				<p>...Murió la pobre loca sollozando. Y desde entonces quedó Guzmán al cuidado de una criada muy devota y muy seca, que asistiera a las bodas de los padres de Aurelio. La fámula le tuteaba, rezongaba de todo mandamiento, le aconsejaba, le reñía.</p>
+
+				<p>Don Aniceto Ibáñez, el más famoso abogado de la provincia, era el único allegado suyo. Casó con una mayorazga prima del padre de Guzmán, y la hacienda de la esposa sirvió de fundamento a empresas y bufete del señor Ibáñez, figurita inquieta, menuda, ratonil. Naciole una hija, delgada, rubia, bella; y en el pueblo, altos y humildes la distinguían con el título de la <seg rend="italic">Princesita</seg>.</p>
+				<p>Muy de tiempo en tiempo pisaba el escritor los umbrales de esta casa. Sus tíos no sosegaban de amonestarle y avisarle. ¿Qué cuentas hacía para lo porvenir? ¿Era vida sana ni decente encuevarse en su casón, huido de todos?</p>
+				<p>Escuchaba siempre calladamente Adelina, la gentil <seg rend="italic">Princesita</seg>.</p>
+				<p>-¡Y aun dices, prima mía -clamaba Aurelio agobiado de predicación-, aun dices que soy de alma nevada, sin cariño ni alegría para vosotros, porque os visito poco! ¡Si ya lo ves! ¡Venir aquí es hacer Ejercicios Espirituales!</p>
+				<p>Pero es precisamente por eso. ¡Claro, han de aprovecharse del milagro de tenerte cerca, y te lo dicen todo de una vez!</p>
+				<p>Muerta doña María del Carmen, entendió Ibáñez en la testamentaría sin recibir ayuda del sobrino, a quien había de enviar escribientes y procuradores; y a él mismo le costó buscar al artista y ponerle los folios a su firma.</p>
+				<p>Comentaba el doctor en las comidas el abandono y pereza de aquella criatura que no parecía sino que fuese hijo de emperador o dueño de minas de oro, según se comportaba, cuando verdaderamente había llegado a su perdición. La esposa propuso que se le llamase.</p>
+				<p>La respuesta que trajo el mensajero agrió al señor tío más que la contumacia de un litigante. Aurelio había dicho que si no era muy grave el asunto iría al día siguiente, porque estaba trabajando.</p>
+				<p>-¡Trabajando...  trabajando mi sobrino!...  ¡Que no venga! ¡Que no venga!</p>
+				<p>La esposa suspiraba:</p>
+				<p>-¡Esa criatura, esa criatura!</p>
+				<p>La <seg rend="italic">Princesita</seg> entró a su dormitorio diciéndose que no tenía razón su primo, pero que tampoco la tenía su padre para tanta mohína.</p>
+
+				<p>Mañana  cálida,  profunda,  de  transparencia y quietud   que  parecía  una  pausa, un  remanso del tiempo y de la vida; mañana de invierno levantino recibió amorosamente a Guzmán. Su calle, ancha, blanca, luminosa, acababa en el comienzo de los campos. Venían de los viciosos y dilatados alcaceres ráfagas de alegría y fortaleza. Sonaba lenta y pura una campana y el tañido salía al paisaje y era como perfume de cristianismo y de inocencia, y se alejaba esparciéndose hasta prender y deshacerse en la paz de la llanura, allí donde los sembrados se juntan  y funden con el cielo.</p>
+				<p>Creía sentir Aurelio en todo su cuerpo un beso caliente y paternal de sol, que le contentaba su vida, imaginándola como otro campo alumbrado, gozoso y tierno.</p>
+				<p>Picoteaban palomas en las verduras y granzas caídas de los machos llegados tempranamente de las huertas al mercado. Y al pasar Aurelio, volaron las nobles aves y estallo en el azul el aplauso gozoso de sus alas.</p>
+				<p>Cruzaba el escritor la plaza del Apóstol, arbolada de acacias, que en primavera se llenaba de blancura y fragancia. Los edificios eran viejos, obscurecidos por la umbría de los altos muros lisos y morenos de la abadía de San Pedro.</p>
+				<p>Soleábanse ancianos; había rebullicio de chicos al recaudo de padres y niñeras. Salió un sacerdote flaco, agilísimo, muy apresurado porque quizás acababa de celebrar y estaba en ayunas, y los niños le rodeaban para besarle la mano y pedirle medallas y estampitas.</p>
+				<p>Observaba el escritor la fingida sonrisa del pobre capellán, cuando de súbito, y a su espalda, oyó su nombre. Volviose y halló a Alfredo; más apartada, Luisa.</p>
+				<p>-Perdona, pero quiero felicitarte.  He  leído tu libro último.</p>
+				<p>-Gracias.</p>
+				<p>-No importa el tiempo que hemos dejado de tratarnos y tú de venir por nuestra casa, para que te queramos siempre... Pero ven, acércate; es Luisa, mi hermana... ¿No la recuerdas?</p>
+				<p>Aurelio se descubrió. Ella le presentó su mano enguantada, larga y leve.</p>
+				<p>-Te he llamado, también, para anunciarte una visita. El maestro Gráez...</p>
+				<p>-¡Oh, el maestro Gráez, sí, sí! Leí que estaba en Aduero; supe vuestra amistad. Hasta pensé en ir a vuestra casa por...</p>
+				<p>-¿De modo que, gracias al famoso músico, te hubiéramos visto?</p>
+				<p>-¡Es verdad! ¡Acabo de cometer una torpeza! Perdón...</p>
+				<p>-Y ¿por qué no viniste? ¡Te has separado enteramente de nosotros!</p>
+				<p>Mientras ellos hablaban, miraba Luisa al escritor.</p>
+				<p>Era Aurelio alto, esbelto; iba enlutado; tenía el cabello  abundoso,  crespo y de  un bello color de oro obscurecido. Pálido, afeitado; sus facciones, ya parecían  iluminarse  exaltadamente, ya mostraban abatimiento y cortedad infantil, presentando a Luisa sencillos recuerdos. Hallábale ahora veladas semejanzas con rostros de pinturas de arcángeles y místicos retratos de príncipes y artistas de la antigüedad, contemplados en templos y museos. Las líneas de la boca tenían pasión y amargura; los lados de su frente y las sienes, de más limpia palidez, y su mirada bella, lenta, como cansada, manifestaban infortunio y grandeza. Y así iba a confesárselo Luisa; pero ella misma se dijo que las alabanzas y las murmuraciones oídas de aquel hombre, le llevaban a singularizarle y ver imaginativamente prendas mentirosas.</p>
+				<p>-Tienes entusiasmado a Gráez. Espéralo.</p>
+				<p>-No; iré yo a verle.</p>
+				<p>Tornó a ofrecerle su intimidad y compañía, adolecido de su vida solitaria.</p>
+				<p>Sintió su hermana lástimas suavísimas, y las retrajo y las venció, mostrándose fría; artificio de indiferencia, de altivez, que convirtiose en atamiento de su carácter y casi engendró naturaleza.</p>
+				<p>Aurelio, conmovido ante la oferta de amor de aquel amigo, tanto tiempo alejado, y miedoso de toda expansión, por obra de desgracias, y por las ironías de las  gentes,  notándose próximo a declarar su enternecimiento, que aumentaba la mañana dulce, diáfana, religiosa, apresuró su despedida.</p>
+				<p>Rápidamente se miraron Aurelio y Luisa.</p>
+				<p>«¡Qué orgullo!».</p>
+				<p>«¡Qué sequedad!» -pensaron uno de otro al separarse.</p>
+				<p>Desde las vidrieras de su balcón vio la <seg rend="italic">Princesita</seg> a Aurelio, entregándole toda su mirada. ¡Qué delgado, qué blanco! ¿Estaría enfermo? Salió a recibirle.</p>
+				<p>-¡Ay, cómo está mi padre contigo! -le susurró donosamente compungida.</p>
+				<p>-¿Y yo qué he hecho, hija mía?</p>
+				<p>-¡Lo mismo digo yo! Ven, ven.</p>
+				<p>Y lo condujo a un gabinetito abrigado con alfombras y zaleas y espléndido de sol.</p>
+				<p>El doctor leía periódicos. La plática tuvo extremada severidad.</p>
+				<p>-Pero, ¿es que te crees rico?</p>
+				<p>-Yo no lo sé; pero vamos...</p>
+				<p>-¡Cómo vamos! Si eres pobre, y tanto, que no se tardará el día en que hayas de trabajar en mi estudio...</p>
+				<p>-¡Ah, no, señor...! ¡Ahora que me trazo viajes y la publicación de libros...!</p>
+				<p>El abogado dejó la estancia, y a poco vino, trayendo manojos de papeles. Leyó documentos y cifras. El caudal del artista era exiguo, algunos miles de pesetas: aceite para un año de lámpara, según frase del tío, que tornó a marcharse para no oír locuras. Solos quedaron la hija y Aurelio. Y ella le pidió que hiciese algo por contentar a su padre.</p>
+				<p>-¡Si es que no sé, pobrecita mía, no sé! -le decía su primo sonriendo.</p>
+				<p>-Pues él nos ha confesado que si cambiases te querría más,  y sería tuyo todo lo de esta casa.</p>
+				<p>Aurelio quedose meditando. Y de improviso exclamó:</p>
+				<p>-¿Recuerdas aquel libro azul que te leí en el campo?</p>
+				<p>-¿De poesías, donde hay una del sueño del poeta, ciego de llorar, con un balazo en la frente; y otra de los hijos y la mujer del difunto pastor que ven la mano del muerto...?</p>
+				<p>-Sí: de Enrique Heine. También te leí su vida. El poeta renunció a los millones de su tío el banquero Salomón, por no resignar su alma, y se apartó de su lado.</p>
+				<p>-¿Y tú harás lo mismo con mi padre...? -Y lo pronunció la doncellita con pena y candor.</p>
+				<p>-¡Oh, yo no soy Heine... ni tu padre es Salomón!</p>
+				<p>Aurelio tomaba periódicos; los abría y luego los dejaba para mirar la mañana. Su prima le contemplaba enternecida.</p>
+				<p>-He visto a Luisa Castro -murmuró él después con descuido, distraídamente; tú la tratas mucho, ¿verdad?</p>
+				<p>-Sí, somos amigas; ¡pero es tan rara!, tan... no sé cómo decirlo; nunca se la <seg rend="italic">ve por dentro</seg>. Y eso que ahora no puedo quejarme; es más cariñosa, habla, sale con nosotras, toca el piano delante de todos... ¡Qué atento me escuchas!</p>
+				<p>Pasó la  madre, ¡y estuvo mirando  con mucha lástima a Guzmán!</p>
+				<p>-Pero, ¿qué tienen ustedes? ¿Es de veras que sufren por mí? ¡Yo me enmendaré!</p>
+				<p>Al oírlo, la <seg rend="italic">Princesita</seg> aplaudió gozosamente como niña premiada.</p>
+				<p>-¡Ya veréis: ganar dineros es muy sencillo; he de viajar  y hacer libros sin perjuicio de mi <seg rend="italic">hacienda</seg>!</p>
+				<p>Luego, nervioso, alborozado, dijo:</p>
+				<p>-¿Por  qué  esto  tan  cerrado,  con alfombras  y pieles, teniendo el día tan dulce abrigo  y pureza? -Y, rápido, abrió las hojas del balcón  y salió a la mañana.</p>
+				<p>¿Qué le sucedía? -se dijeron ellas, mirándose. Fue la <seg rend="italic">Princesita</seg> a su lado. Y en el comienzo de la calle distinguió a Luisa  y Alfredo, que retornaban de su paseo campesino.</p>
+			</div>
+			<div n="3" type="chapter" xml:id="ne0045_chap3">
+				<head>- III -</head>
+				<p>Pasmábanse en Aduero de que Gráez hubiese recibido en otros tiempos el crisma de la gloria. ¿Era éste el solicitado de opulentos y de príncipes de los grandes pueblos, cuando allí se le veía remoto a toda magnificencia, prefiriendo la compañía de un hombre demasiado mozo y escritor sin fama, por añadidura? Porque el maestro buscó la amistad de Guzmán sin medianero que les acercase o hiciese la presentación. Guzmán fumaba y leía. La rancia fámula le avisó la llegada de un peregrino señor. Y apareció Gráez.</p>
+				<p>Aurelio le contemplaba amorosamente; la frente del anciano tenía majestad, su cabellera romanticismo,  y sus ojos sabiduría y ternura.</p>
+				<p>-Soy Gráez, el violoncellista.</p>
+				<p>-¡Maestro!</p>
+				<p>-Y he venido porque sé su soledad, porque le he leído y le quiero.</p>
+				<p>-¡Pero si esto es inmenso!</p>
+				<p>Los dos artistas se abrazaron.</p>
+				<p>-¡Qué alegría, qué fuerza, qué infantilidad en lo más hondo de mi vida! ¡Oh, maestro, ya ve usted cómo los hombres pudieran ser felices con sólo amarse!</p>
+				<p>Después tuvo Aurelio que leerle cuartillas de su libro futuro. La grande y penetradora ventura de saberse escuchado, de sentir el acercamiento de aquella alma, apagose en lo más efusivo de la santa lección.</p>
+				<p>-¡Me da vergüenza; hoy no debo leer! ¡Si usted supiera lo que me distrae...! Pasé el día imaginando un medio, un arbitrio para ganar dinero. Dicen que no soy rico. Y asómbrese: ¡voy a hacer un Almanaque de anuncios!</p>
+				<p>-¡Un Almanaque anunciador! -y el maestro miraba, dolido y admirado, a ese hombre-niño que él creía lejos de toda preocupación grosera. Piadoso le hizo delicadamente el ofrecimiento de su abundante medianía.</p>
+				<p>-¡Ni pensarlo!</p>
+				<p>Además, necesitaba y deseaba mostrar su talento práctico. Estaba decidido. Entonces, el viejo, recordando su pretérita vida de puericias e inquietudes bohemias, gritó con ardimiento:</p>
+				<p>¡Pues yo seré colaborador de ese glorioso Almanaque!</p>
+				<p>-¡Usted, maestro!</p>
+				<p>-¿Qué es preciso hacer?</p>
+				<p>-Lograr anuncios.</p>
+				<p>-¡Pues vamos de portal en portal de mercaderes!</p>
+				<p>Y sonó el estruendo de sus carcajadas. Fuera, la buena mujer, se persigna con susto.</p>
+				<p>Ya en las calles, aquella efusión y aquel continuo exclamar y reír de los ilusos, prendían el comento  y la burla.</p>
+				<p>-¿Por cuál tienda comenzamos? -preguntó Gráez.</p>
+				<p>Vieron cerca la muestra y la mampara, galanas  y vistosas, de una peluquería, frecuentada en otra época por Aurelio. Era el salón de suprema elegancia de Aduero.</p>
+				<p>-Voy a pasar; pero usted, no, maestro. Aquí conozco,  y teniéndole delante no sabría negociar. Espéreme en ese banco.</p>
+				<p>Consintió el músico. Y Guzmán avanzó solo. Vibró el timbre. Nada más estaban los oficiales y el dueño.</p>
+				<p>-¡Don Aurelio! ¡Usted por mi casa!</p>
+				<p>-¡Don Aurelio, Dios le guarde!</p>
+				<p>Don Aurelio había perdido todo su humorismo.</p>
+				<p>-Pues... yo venía, amigo mío...</p>
+				<p>El dueño lo sentó; dio una orden con los ojos a un menudo aprendiz, que miraba codicioso la espesa y rebelde cabellera de Guzmán. El rapaz marchose, y luego trajo los largos algodones para el cuello, el paño para los Hombros, la fazaleja gruesa y velluda; y todo recién planchado y plegado.</p>
+				<p>Sentíase Aurelio atado reciamente por timidez tosca, pesada, como de labrador. Y muy cohibido, dijo:</p>
+				<p>-¿Me permite? Le confieso que yo no...</p>
+				<p>-Comprendido. Ya sé; conozco todos los gustos. No tocamos el cabello. ¿No es eso? Bien. Venga agua tibia.</p>
+				<p>-Tampoco quisiera...</p>
+				<p>-Como usted guste. Entonces, agua fría. Muchos la prefieren.</p>
+				<p>Y   Aurelio, vencido, diciéndose <seg rend="italic">del</seg> sandio  y mentecato, entregose a todo el talante de su primer cliente,  y murmuró:</p>
+				<p>-¡Aféiteme,  y haga de mí lo que quiera!</p>
+				<p>Lo celebró  y tuvo el dueño por suma complacencia de Guzmán. Y le habló de política, de toros  y de escándalos... Después presentole billetes de rifas  y de lotería de Navidad.</p>
+				<p>Tentose los bolsillos el escritor. Aun llevaba el lápiz entre sus dedos, apercibido para las notas de su almanaque. Traía seis pesetas,  y las dio en pago de servicio  y de lotes, que regaló a los mismos rifadores.</p>
+				<p>Las cuidadas cabezas de los peluqueros se abatieron al salir el arbitrista.</p>
+				<p>Juntos  ya  Gráez  y Aurelio, pidiole aquél noticias con risueña mirada. Pero el escritor no decía palabra.</p>
+				<p>-Qué,  y el negocio, ¿principió triunfalmente?</p>
+				<p>-¡Oh, maestro! ¡Me han afeitado,  y gracias que no me raparon!</p>
+				<p>Y  quitados de todo pensamiento de anuncios  y ganancias, buscaron la serenidad del ancho valle.</p>
+
+				<p>Andaban por las blandas veredas y lindes de los huertos. En el pálido ambiente de crepúsculo se deshacían cantos de alondras. De las balsas y acequias surgía un fresco ruido y un aliento de agua y olor de abundancia. Cruzaron tierras añojales, secas y encendidas, que terminaban junto a los sembrados. Lejos vieron destacarse dos siluetas.</p>
+				<p>Fijose el músico, y afirmó:</p>
+				<p>-Vienen  hacia nuestra senda el ingeniero y su hija.</p>
+				<p>A la vez don Luis, que había reparado en ellos, decía:</p>
+				<p>-Uno es Gráez.</p>
+				<p>-¡Gráez acompañado; no es posible!</p>
+				<p>-Digo que es Gráez. ¡Los ojos cansados distinguen en lo lejano, en todo lo lejano!</p>
+				<p>Pronto se reunieron.</p>
+				<p>-¡Nos ha abandonado ya, maestro! -reprochaba Luisa al viejo Gráez.</p>
+				<p>-¡Señor violoncellista, señor violoncellista! -decía el ingeniero, moviendo su cabeza.</p>
+				<p>-¡Esta criatura tiene la culpa!</p>
+				<p>El escritor abrazó a don Luis.</p>
+				<p>-Yo de usted me acuerdo siempre con grandísimo cariño. Siendo muy chico, en su casa y desde la calle, no me cansaba de verle trabajar en sus planos, llenos de misterio para mí.</p>
+				<p>Hablaron del pasado.</p>
+				<p>-Usted... o tú,  tú, ¿verdad? Tú  debes  tener la misma edad que Alfredo.</p>
+				<p>-Yo tengo veinticinco años.</p>
+				<p>Y  Luisa,   que  iba  delante  con   Gráez,   pensó, melancólicamente:</p>
+				<p>«¡Le llevo siete años!».</p>
+				<p>-¿Qué   me   dices   de  mi   amigo,   de   mi   único amigo? -le preguntaba el músico.</p>
+				<p>-¿De quién?</p>
+				<p>-De Aurelio.</p>
+				<p>-Gracias por lo de <seg rend="italic">único</seg>.</p>
+				<p>-¿Y el libro suyo que te dejé?</p>
+				<p>-¿Le digo la verdad?</p>
+				<p>-¡Claro que la verdad!</p>
+				<p>-No lo he leído.</p>
+				<p>-Muchas gracias.</p>
+				<p>-Estamos en paz.</p>
+				<p>-¿Qué pasa, qué contienda es ésa? -les gritó don Luis.</p>
+				<p>Volviose Gráez.</p>
+				<p>-Esta hija es irreductible. ¡Aurelio, dígale a Luisa que no sea así!</p>
+				<p>-Pero maestro, si yo no sé cómo es. Además, que sea como ella quiera. ¡Da lástima que las almas se retuerzan!</p>
+				<p>Travieso y apresurado el sendero se deslizaba, como si le hubiesen empujado, a la orilla de un hondón praderoso, y luego corría por bancales llanos junto a un margen alto y largo encrespado de cactos y zarzamoras. El grupo se deshizo en lenta hila. Detúvose Luisa  y contempló, ladeando gentilmente la cabeza, el muro bravío de ramaje.</p>
+				<p>-Allá,  en lo  alto,  quedan  tres  moras;  ¿las veis?</p>
+				<p>-¡Las últimas! -exclamó Gráez-. ¡Ellas tendrán todos los jugos de la mata!</p>
+				<p>-¡Pues vamos a cogerlas! -propuso el escritor. No era posible, le advirtieron. Las defendían altitud y pinchas feroces. Pero Aurelio, agarrándose de un recio mugrón de vid, trepó infantil  y audaz, hendiendo una ola de zarzas que se estremecía recrujiendo.</p>
+				<p>Gritábanle que bajase,  y él locamente subía.</p>
+				<p>-¿Quiere usted venir, o subo por usted? -le dijo ya serio el músico.</p>
+				<p>-¡Suba, suba!</p>
+				<p>Y continuó entrándose por la espesura. Ramas enemigas, espinosas, le ceñían como sierpes todo su cuerpo, le llegaban al cuello, asían de la fronda de su cabeza, le ocultaban, le ahogaban. El sombrero del novelista, un sencillo fieltro obscuro, rodó por un cardizal. Las manos de Luisa lo ampararon; suaves tocaron donde ciñe la frente, y pareciole aspirar algo de la vida de aquel hombre. Guzmán seguía riéndose y quejándose del dolor y sujeción de los abrazos de espinas. Su traje sonaba como si lo aserrasen las erizadas  varas.   Pudo  doblar la rama deseada y conseguir los frutos. Cayó a la senda con las manos y mejillas arañadas y ensangrentadas.</p>
+				<p>-Es usted mucho más loco que yo lo fui a sus años -decíale Gráez, limpiándole el cabello y la frente.</p>
+				<p>Y Aurelio, rendido, preguntó:</p>
+				<p>-Aquí están las moras. ¿Es usted, Luisa, quien las pidió?</p>
+				<p>-Yo las he visto, pero no las pedí. ¡Pero Dios mío, qué manos se ha hecho usted! -Y la voz de la mujer ondulaba de ternura-. La corbata se le ha desceñido... ¡Venga, venga aquí!...</p>
+				<p>Dócilmente le presentó Guzmán su pecho. Y las manos de la mujer, pálidas y graciosas, anudaron la negra chalina del artista.</p>
+				<p>-¡En casa le reconoceré todos esos cortes y arañazos, porque le advierto que soy una curandera habilísima!... Pero, ¿por qué es usted de ese modo tan...?</p>
+				<p>-¿Le desagrada?</p>
+				<p>-No es eso, sino que prefiero los temperamentos más tranquilos, más iguales...</p>
+				<p>-Entonces no nos semejamos en nada. Lo siento por usted.</p>
+				<p>Llegados a la casa del ingeniero quiso despedirse el escritor, y los dos ancianos no le dejaron, forzándole a subir.</p>
+				<p>Dispuso el padre que preparasen agua calentada para lavar suavemente las huellas de sangre que tenía  en las  mejillas y  en  las   manos   el  artista.</p>
+				<p>Luisa prendió la luz de la lámpara de la retirada estancia, cuyas ventanas se abrían a la llanura verde y pomposa.</p>
+				<p>Seria y callada la doncella, parecía olvidada de la promesa de curarle. Y Gráez llevole al novelista, que presentó sus manos a la mirada de Luisa.</p>
+				<p>Ella las tomó con las suyas largas, blancas, como de un tibio alabastro. Tenía inclinada la cabeza, y el <seg rend="italic">herido</seg> aspiraba, con ansia de que le penetrase hasta el corazón, la fragancia de limpieza, de distinción y castidad que subía de los negros cabellos y de los hombros de la mujer.</p>
+				<p>-¿Le duele? ¿Le lastimo? -susurraba, mientras sus dedos levísimos de pianista oprimían la carne para extraer las pinchas.</p>
+				<p>Brotó un rubí de sangre, que Luisa enjugó con un copo de algodón.</p>
+				<p>-¿Le duele?</p>
+				<p>Su voz acariciaba; sus dedos y el aroma de su carne daban a Aurelio sensación de dicha, de adormecimiento de niño arrullado, de delicia de jardín, de ser muy bueno y sencillo, de aflicción de lágrimas, de belleza de paisajes lejanos... ¡Oh, qué sentía él, que sólo supo los ásperos cuidados de su vieja sirviente, que olía a limpieza y plancha de mucho almidón y tiesura! ¡Qué vago, invasor, secreto y alado deleite era aquel que le emblandecía los huesos, y se mezclaba con su sangre, y se adueñaba dulcemente de su alma!</p>
+				<p>-¡Completamente curado!</p>
+				<p>-¡Tan pronto!</p>
+				<p>Y ella, separándose, dijo con donaire:</p>
+				<p>-¡Vamos! El solitario, el altivo, sabe ser cortesano cuando quiere.</p>
+				<p>Fuera prorrumpieron voces y risas  femeninas.</p>
+				<p>Gráez y Guzmán se levantaron.</p>
+				<p>-No se marchen -instoles don Luis-. Es visita muy   llana.   Aquel   abogado   que   usted,   maestro, conoce y las hermanas...</p>
+				<p>No le escucharon.</p>
+				<p>Luisa había salido para recibir a los visitantes.</p>
+				<p>En la puerta se encontraron todos.</p>
+				<p>-¿Se marcha usted, maestro?</p>
+				<p>-Nos   marchamos   los   dos -dijo   secamente Guzmán.</p>
+				<p>Ella se distrajo, mezclándose risueña  y gentil con las amigas.</p>
+			</div>
+			<div n="4" type="chapter" xml:id="ne0045_chap4">
+				<head>- IV -</head>
+				<p>Otro día habían acudido a la noble casa de don Luis los que en Aduero amaban  y sabían de música, porque el apuesto letrado de los anteojos presentaba a un amigo suyo venido de la corte y apreciado como pianista insigne.</p>
+				<p>-Usted debe conocerlo -decíanle a Gráez.</p>
+				<p>Y Gráez no lo conocía.</p>
+				<p>Las hermanas del abogado fueron muy temprano, ataviadas y gozosas. Adelina la <seg rend="italic">Princesita</seg>, después, con su madre. Y aquéllas contaban entusiasmadas del forastero; y cuando llegó él con el hermano, con Alfredo y dos oficiales de la guarnición, rígidos de puro elegantes, le hablaban y reían diciéndole donaires y secretos, manifestando de ese modo su intimidad.</p>
+				<p>Gráez y Guzmán llegaron los postreros.</p>
+				<p>Miráronse los reunidos, diciéndose su asombro de ver al escritor allí en tarde de fiesta, de gente.</p>
+				<p>Acercábale la <seg rend="italic">Princesita</seg> con sus ojos toda el alma afanosa de él.</p>
+				<p>Recogió Luisa la impresión que la entrada de Aurelio dejaba en todos; y no supo por qué quiso que el pianista lo fuera maravilloso.</p>
+				<p>Ella  los  presentó: «El maestro Gráez». Dijo luego el nombre del músico cortesano adornándolo de alabanzas. Y casi displicente nombró al escritor de esta manera: «Aurelio Guzmán... aficionado a la música... digo... me parece».</p>
+				<p>Aurelio palideció, y retirose al saloncito de la ventana sobre el huerto.</p>
+				<p>¿Había fingimiento en la aversión que le manifestaba aquella mujer? Le desalentó el recuerdo de la tierna cura de sus manos, heridas por las malezas del margen. Si entonces aceptó que ella fuese amorosa y solícita <seg rend="italic">verdadera</seg>, había de admitir también en otras ocasiones la verdad de la esquivez... ¡Oh, no nacía ella farsa de afectos! ¡Bastaba verla sencilla hasta en sus ropas! Todas sus amigas, la misma <seg rend="italic">Princesita</seg>, recién brotada de la niñez, habían esmerado su atavío aquella tarde. Luisa no: Luisa nunca excedía de una moderada elegancia, señoril, íntima, esfumada suavemente de toda crudeza y tiranía de modas.</p>
+				<p>Desde la estancia ruidosa del piano, que estaba paredaña, le observaba Luisa.</p>
+				<p>-¿Y ese milagro de tener aquí a vuestro amigo de antes? ¿Te resulta? -le preguntaban <seg rend="italic">ellas</seg>.</p>
+				<p>Enrojeció oyéndolas Luisa. Y sabia y fuerte dominadora de sí misma, quedó serenamente distraída.</p>
+				<p>-¿De quién habláis?</p>
+				<p>-¡De Aurelio, mujer! ¿De quién quieres que sea?</p>
+				<p>-¡Ah, sí, Aurelio! Le conocíamos de antiguo. Después le perdimos; y ahora ha vuelto traído por Gráez.</p>
+				<p>-Debe ser muy original... Dicen que...</p>
+				<p>-Sí, tiene su carácter; pero... al fin, un hombre como todos...</p>
+				<p>-Desde luego, hija, que no será un Dios.</p>
+				<p>-¡Ni mucho menos; ni héroe, ni demonio griego! -comentó el abogado, que había acudido al ruedo femenino.</p>
+				<p>Sentose su íntimo al piano; y lo reconoció con acordes y rizos de escalas, aparentando distracción y descuido, ladeando su cabeza para sonreír y hablar a las hermanas del amigo. Era muy gallardo y sabía encender el interés de oírle con lentas actitudes y preludios y acordes.</p>
+				<p>El ingeniero buscó a Gráez y a Guzmán. Ya estaban sentados en venerables butacas puestas junto a la ventana preferida. No quisieron salir. Y el concierto empezó con música laberíntica, difícil, estruendosa.</p>
+				<p>Tocó el madrileño con mecánica limpieza, y al terminar pasó Luisa su mirada a la siguiente estancia, y vio que Guzmán y Gráez estaban distraídos fumando y hablando.</p>
+				<p>Zumbó una colmena de alabanzas.  Sonreía el pianista enjugándose el sudor de su frente morena. El mozo letrado le celebraba chillando: «¡Esto es un artista!». Y miraba desdeñoso a los apartadizos.</p>
+				<p>Tocó más el admirado; y resultó lo mismo.</p>
+				<p>Luisa sentíase mortificada, despechada.</p>
+				<p>¡Oh, tenía razón Aurelio en su indiferencia...! ¡Pero quién era él para saber de música! ¿Había de descollar siempre entre todos los hombres...? Y se arrepintió humillada de la espontánea confesión de la singularidad del novelista. Pero la distracción, la frialdad de Guzmán en lo que despertaba el entusiasmo de la otra gente, ¿no las habría imitado de Gráez? Fue hacia Gráez; ni miró a Guzmán.</p>
+				<p>-¿Qué tal, maestro?</p>
+				<p>Gráez la miró con asombro. ¡La mujer selecta, tan rigorosa de juicio para el arte, se manifestaba conmovida de una simple máquina de notas!</p>
+				<p>Y ella, extremando la ficción, le porfiaba:</p>
+				<p>-¿Qué me dice, qué le parece el pianista?</p>
+				<p>-Lo mismo que a Aurelio: que es un mozo muy guapo.</p>
+				<p>Luisa se asomó distraídamente al huerto. Luego volvió a la estancia del piano y entabló coloquio risueño con el músico.</p>
+				<p>Sufrió Aurelio un apagamiento de tristeza en su corazón, y por mitigarse quiso bajar al huerto. Invitó a Gráez y salieron.</p>
+				<p>Viéndolos, sin mirarlos ni desatender al forastero, se preguntó Luisa:</p>
+				<p>-¿Será capaz... serán capaces -se corrigió con presteza- de marcharse?</p>
+				<p>...Estaba el jardín en silencio y misterio de abandono romántico. Hiedras y madreselvas subían trenzándose por los muros. La tierra era blanda y musgosa; y bajo las magnolias, las acacias y los castaños de Indias, crujían las pisadas al romper la seroja caída. Trepaban por los troncos sarmientos de parras y rosales arbusteños. No había el artificio de cenadores ni fuentes de taza de generalife, ni cuadros de flores disciplinados a la inglesa; sino abrigo y bóvedas umbrosas de jazmineros y vides; plantas en macizos desbordantes y rebeldes, y rústica fontana de huerto, manando por un caño de piedra y en la umbría de la fronda; allí dentro, siempre temblaba la agreste lira de armonía del campo, de soledad, de aldea, que tañen las abejas...</p>
+				<p>-Qué descuido tiene esto de belleza -dijo Aurelio-. No sufren las plantas  y todo parece abandonado; es lugar de idilio, de un idilio que paso... ¿Le gusta, maestro?</p>
+				<p>-Pues todo es obra  y traza de Luisa.</p>
+				<p>-¿Lo quiere  y lo cuida así ella?</p>
+				<p>Y quedó contemplando aquel jardín, que participaba de la selecta espiritualidad de la mujer. Olía el huerto a ella, como ella dejaba fragancia de jardín de misterio.</p>
+				<p>No pudo decirse en qué momento prorrumpió esta mujer de entre todas las mujeres;  y la vio singularizada, sola, precisa, frente a su vida. No la adivinó ni sintió amiga, ni hermana ni amante. Aislada, sin atraerle ni rechazarle; velada, insinuante, inquietadora. No fue el incentivo de su belleza lo que le atara al pensamiento de ella. Dechados de hermosura no le habían rendido el alma v los sentidos como Luisa, que estaba lejos de serlo. Luisa era alta  y pálida, coronada de gracia por el sencillo prendido de sus cabellos negros, que hacían vislumbres azulosos; no tenía la boca diminuta, pero sí encendida, plegada serenamente en el silencio  y de línea infantil  y de amargura de evocación al sonreír; sus sienes eran de artista; sus dientes de pureza de flor; sus ojos obscuros, más que grandes bellos  y lentos en el mirar, se llenaban algunas veces de lumbre  y soberanía.</p>
+				<p>Gustaba de vestir las telas delgadas  y de amplia y peregrina hechura, que hiciera misteriosa su carne; por eso, cuando la rapidez o el descuido de una actitud, no buscada, confesaba alguna línea de su cuerpo, daba suprema tentación sin degenerar su castidad. Suma de gracia  y distinción eran sus manos  y sus pies. Sensación de caricia  y perfume de aquellas manos guardaba siempre el escritor en las suyas;  y mirándolas renacía tan poderosamente, que creía gozar su caricia  y la dulce quimera llegaba, derramándose por todos sus nervios, a lo más escondido de su alma.</p>
+				<p>¡Sus pies! ¡Pies para hollar céspedes, espumas de olas, tapices, mármoles arcaicos  y gloriosos! ¿Por qué, una tarde de paseo campesino, los espió afanoso de saber su huella? Y eran tan leves, que apenas se fijaban en la tierra. Descubrió, una vez, el estrecho sello de su planta,  y lo deshizo  y cogió de su polvo sembrándolo en el aire. No supo entonces si la aborrecía. ¡Cuerpo armónico con su espíritu! ¡No pensaba el artista en su alma sin desear augustamente su cuerpo, ni miraba su cuerpo sin ansia de penetrar en su alma! La intensa  y cabal posesión de aquella mujer la imaginaba como una celestialidad inefable. Y esta posesión no la impurificaba fingiéndose caricias; tenía para él recato, nieblas de cumbre  y de tristeza.</p>
+				<p>¡Y esa mujer que encendía su alma, estaba arriba hablando con dulzura a los tibios, a los externos, a los frívolos! A él no le admitiera nunca en espiritual comunión; no se sintió acogido. Al contrario, ella placía de mostrarse indiferente, descuidada y aun esquiva a las preferencias y emociones suyas... ¡Era plebeyo, era vulgar el linaje de su alma! ¡Baja, vulgar! ¿Y siéndolo le inquietaba hasta angustiarle?</p>
+				<p>...Descendió al silencio del huerto música de melancolía de leyenda, de contento aldeano, de sierras verdes; rústica música abrazada con música princesa, olorosa de hierbas de montanas, de granja y de jardín ducal; melancolía de crepúsculo de tarde y de mañana azul, divina lírica de Grieg. No parecía tañida por manos, sino que sólo sonase por la eficacia del alma artista, sin medio de <seg rend="italic">fuera</seg>.</p>
+				<p>-¡Ahora es ella quien toca!</p>
+				<p>Puso atención Gráez, y luego murmuró:</p>
+				<p>-Luisa es.</p>
+				<p>-En años ya lejanos la oí mucho; aun vivía su madre y su hermana; yo venía entonces a esta casa. Después también la oí muchas noches desde la calle, y con la caricia de la música en mi alma llegaba a mi cuarto y escribía.</p>
+				<p>Le contempló sonriendo paternal el viejo Gráez, y dijo:</p>
+				<p>-¿Habré servido yo para acercarles?</p>
+				<p>-¡Antes para apartarnos, que viéndola ahora tan cerca no encuentro en ella a la imaginada, a la retirada en su alma y en su arte como ha sido!</p>
+				<p>Al desleírse la última nota, Gráez subió.</p>
+				<p>Volvía  a  tocar Luisa.  Comenzaba la página nostálgica de <seg rend="italic">El viajero solitario</seg>. Y vio, presintió la entrada a la estancia del viejo amigo como una sombra, que buscó el refugio apartado de la ventana abierta a la soledad del huerto y del valle.</p>
+				<p>El maestro había llegado al refinamiento enfermo, doloroso de su sensibilidad. Evitaba oír música delante de gentes nuevas; y la de Grieg le exprimía el corazón y la médula; le daba congoja. ¡Oh, los santos recuerdos del gran lírico! Fue su amigo hermano desde su primer viaje glorioso a tierras de Berghem.</p>
+				<p>Lo  sabía  Luisa, y cuando terminó, evadió las forzadas felicitaciones de los amigos,  los  plácemes sucosos del pianista, y buscó al maestro.</p>
+				<p>Gráez lloraba y Luisa lloró.</p>
+				<p>-¡Qué  buena,   qué  grande  eres!  ¡Qué dúo de almas encontré aquí, en ti y Aurelio!</p>
+				<p>¡Surgía Aurelio mezclado con una alabanza  a ella!</p>
+				<p>-¿Es que se ha marchado Guzmán?</p>
+				<p>-¡Le llamas Guzmán como los otros!</p>
+				<p>Y ella, recuperada, vuelta a su apariencia fría, dijo riendo:</p>
+				<p>-¿Y cómo quiere que le nombre, entonces?</p>
+				<p>-Como   antes,   como   cuando   erais   pequeños: Aurelio... ¿Qué os pasa?</p>
+				<p>-A mí, nada... A mí nunca me ocurre nada.</p>
+				<p>Gráez la miró lentamente, y viola distinta de aquella que fuera a su lado y lloró con él estremecida por la doliente brisa, recogida en su piano, de las verdes montañas noruegas.</p>
+				<p>Muy despacio, entristecido, murmuró el músico:</p>
+				<p>-Aurelio sigue en el huerto. Apenas pusiste tus manos en el teclado, supo quién tocaba; él me lo dijo.</p>
+				<p>Esta vez no lastimó a Luisa el acierto del escritor. Y apartose probando en lo más sagrado de su alma un suave contentamiento.</p>
+				<p>Una amiga la llamaba.</p>
+				<p>-Ha subido Guzmán buscándote. Está solo en aquel balcón...</p>
+				<p>Hízose Luisa distraída y mezclose en la regocijada charla de los demás. Pasaba cerca del balcón indicado, y la misma amiga le repitió de modo que pudo oírlo Aurelio:</p>
+				<p>-Luisa: Guzmán te buscaba...</p>
+				<p>Entonces ella se acercó, sintiendo toda la mirada del novelista en sus ojos.</p>
+				<p>-¿Me buscaba, dicen?</p>
+				<p>-Sí. Ha tocado usted por todos sus amigos. Es posible que yo no sea ni amigo siquiera. Pero toque usted añora por mí, prescindiendo de todos, por mí y para mí solo.</p>
+				<p>-¡Por usted solo! ¡Si yo no toco por nadie!</p>
+				<p>Y sonreía, pero sus ojos mostraban la emulación de su alma con la del nombre.</p>
+				<p>-¿De modo que no quiere usted?</p>
+				<p>-No es que no quiera; es que no puedo, no siempre se puede.  ¡Cómo no es usted artista,  acaso crea esto un pobre capricho de mujer!</p>
+				<p>Se separaron sin mirarse.</p>
+				<p>Guzmán desapareció. Alguien llamábale después,  y cuando supieron que se marchara sin decirlo ni despedirse, comentaron lo áspero y singular de su carácter.</p>
+				<p>Y mortificada Luisa de la atención que siempre inspiraba Aurelio, trajese desabrimientos o elogios para él, atravesó en la plática mintiendo:</p>
+				<p>-No acertaron ustedes; ¡no hay tanta rareza! Le buscaron con prisa desde la calle, y me encargó que le disculpase.</p>
+				<p>La <seg rend="italic">Princesita</seg> recogiose junto a su madre. No se explicaba por qué en presencia de Luisa sentíase muy débil  y veía a su primo distinto  y alejado.</p>
+			</div>
+			<div n="5" type="chapter" xml:id="ne0045_chap5">
+				<head>- V -</head>
+				<p>Gráez pidió a Madrid sus muebles, sus ropas y  libros; adquirió casa  y se hizo enteramente provinciano.</p>
+				<p>Aurelio  y la familia de Castro ayudaron al orden y arreglo de las habitaciones; y en el gabinete de estudio del violoncellista había siempre, desde que se inició la primavera, el precioso adorno de un búcaro con flores y ramas olorosas del huerto de Luisa.   Algunas  tardes  era   ella, acompañada del padre, la portadora del obsequio, y hallaban al escritor trabajando o soñando ante una mesita de maderas prietas y hierros oxidados, mueble de celda de abad o de austero aposento de hidalgo, mientras el viejo artista improvisaba o leía. Allí se respiraban mezclados olores de café, de tabaco y de flores mustiadas.</p>
+				<p>Llegaba Luisa; renovaba el agua y el ramo, y en la estancia se producía frescura y como una brisa suave, nueva y dulce de jardín y amor.</p>
+				<p>Jamás se interesó ni preguntó Luisa al escritor por su trabajo. Y él imaginaba la bella y venturosa escena de leer su prosa aun caliente, palpitante y trascendiendo a madre-alma, como hijo recién nacido purísimo no visto ni tratado por ojos burladores y placeros... Leerle a aquella mujer, sentirla estremecerse y vivir y alentar sólo por la virtud y esencia de la vida que él creó...</p>
+				<p>Su indiferencia no era irónica ni desdeñosa; era... no podía decirlo; no conseguía adjetivarla, porque la calificación la hubiese explicado, y esto era su ansia: definirla... ¿Vendría la indiferencia de vulgaridad como la de los otros? Y antes que menospreciarla, admitiéndolo, siquiera lo afirmase en raptos de enfurecimiento, creía mentido su desdén. Pero ¿por qué fingía ella?</p>
+				<p>La deseada escena de la lectura, trazábase una tarde, cuando vio cerca de su frente las manos de la mujer que traían la gracia de las flores; eran rosas y varas de nardos, que difundieron fragancia de dicha, de caricia, de un espiritual sensualismo inefable... Alzose Aurelio,  y ella puso su índice de imagen sobre su boca, exigiéndole silencio para no interrumpir a Gráez que tañía abstraídamente su música de los Salmos.</p>
+				<p>Quiso él anegarse en amor de ella,  y sentíase trémulo de despecho, agresivo, infortunado. ¡Oh, sería sólo él culpable de todo por su altivez  y brusquedad! Entonces, apagando la voz, sumiso, entristecido, le murmuró:</p>
+				<p>-¡A mí nunca me da usted flores! ¿Qué le he hecho yo? ¿Por qué no coge usted flores para mí solo  y me las da para mí siempre?</p>
+				<p>El tono de la petición y sus palabras pusieron una sonrisa en los labios de ella.</p>
+				<p>-¡Vamos, hoy es usted muy bueno; habla y pide flores y todo!</p>
+				<p>Quebrose como un delgado vidrio la dulce fe de Aurelio. Más que ternura, veía en las palabras de Luisa condescendencia y aun familiaridad, pero de hermana grande. Debió transparentarse en su mirada la duda y pesadumbre de su espíritu, porque ella, contemplándole con ingenuidad, añadió:</p>
+				<p>-¡Anda, ya se me ha enfadado usted!</p>
+				<p>-¿Por qué se me aparta usted cuando yo me acerco?</p>
+				<p>-Pero, hijo mío, si yo no huyo de nadie.</p>
+				<p>-¡Hijo mío! ¡Señor!</p>
+				<p>-¡Ah, también le molesta a usted eso! -repuso Luisa haciéndose asombrada.</p>
+				<p>-¡Yo no sé; me molesta todo! Y me exalta, me crispa, me entristece que me mezcle con los demás. ¡Ese <seg rend="italic">no huyo de nadie</seg> me hace hasta desventurado!... Yo hablaba de la esquivez y rebeldía de su espíritu para el mío. Si viene usted a mí, es irónica y con sonrisa. ¡Y, sin embargo, yo algunas veces la <seg rend="italic">veo</seg> al lado mío, y otras, casi siempre, muy distante, muy apartada... muy apartada... hasta parecerme muy chiquitina, disminuida! ¿Cómo lo explicaré? La veo... así... como si la mirase con gemelos puestos al revés, los cristales anchos puestos en los ojos...</p>
+				<p>-Y ahora,  ¿me mira usted con esos anteojos como Dios manda?</p>
+				<p>-¡Ahora no puedo verla; me ha ceñido usted una venda hablándome en bromas!</p>
+				<p>-¿Pero  se pueden  decir en serio todas esas cosas?</p>
+				<p>Y se marchó, llevándose el búcaro para quitar el ramo marchito.</p>
+				<p>Después salieron todos.</p>
+				<p>Próxima la casa del ingeniero, Aurelio volvió a pedirle:</p>
+				<p>-Yo quiero flores de su huerto.</p>
+				<p>-¿Le gustan?</p>
+				<p>-¿Las suyas?</p>
+				<p>-No; si le gustan las flores... Allí las tiene usted todas; siegue, corte las matas.</p>
+				<p>La miró,  y pesaroso de sus humildades  y dulzuras, la dijo altivamente:</p>
+				<p>-¡Guarda   usted  sus  mieles  para   esos   amigos semejantes a...!</p>
+				<p>-Sí, sí; semejantes a mí;  ya  me lo dijo otras veces.</p>
+				<p>-Semejantes a usted... Acaso crea...</p>
+				<p>-¡Oh, yo no creo nada!</p>
+				<p>-No he terminado. Digo que acaso crea usted que yo envidio a esos señores tan pulcros, tan finos...</p>
+				<p>-Sí, señor; muy finos...</p>
+				<p>-¡Me tiene sin cuidado! Y no me refería a envidia de la cortesía y elegancia de esa gente, sino a la de que usted hable con ellos y no conmigo. No les envidio. Me alegra que me separe y excluya. Yo no soy para caminar en rebaño.</p>
+				<p>-Usted es demasiado orgulloso.</p>
+				<p>-¡Bendigo mil veces el orgullo mío! Mientras guste usted de los términos medios, no podrá conocer mi alma. ¡Son los tibios, los espíritus medios repudiados por el mismo Jesucristo!</p>
+				<p>-Pero, ¿os reñís otra vez? -les gritó el maestro Gráez.</p>
+				<p>-¡Ni siquiera nos reñimos! -repuso Luisa con desdén.</p>
+				<p>-¡Iba yo a contestar lo mismo! ¡Y confieso que casi me duele la coincidencia! -dijo Guzmán naciendo una leve risa.</p>
+				<p>-¡Pues a mí, me da igual que coincidamos o no!</p>
+				<p>Cuando se despidieron, ella saludó al escritor con fineza, indiferente, olvidada de todo. ¡Y Aurelio padecía inmensamente! «¡Si fuese hombre esa mujer, cómo me odiaría!».</p>
+				<p>Y, sin embargo, durante mucho tiempo, dejaba su trabajo al escuchar los pasos cautelosos de su enjuta criada, confiado el romántico de ver en las seniles manos las flores cogidas sólo para él.</p>
+				<p>Y Luisa nunca le envió esas flores.</p>
+			</div>
+			<div n="6" type="chapter" xml:id="ne0045_chap6">
+				<head>- VI -</head>
+				<p>Un camino ancho, nublado por las altas frondas de álamos blancos y añosos, cruzaba el valle. Por los espacios de los troncos arrancados o caídos, penetraba gozosamente el día de la llanura, la buena llanura de hierba espesa, obscurecida a la sombra de los árboles; y lejos, rizada y rubia de alegría bajo el sol esparcido.</p>
+				<p>El camino llegaba a los casales y aceñas ribereños. Tenía el río orillas de misterio tupidas de renuevos de chopos y olmos viejos ya cortados; y servían de puentes y vaderas leños allanados que alcanzaban la otra margen, descansando en frescos medallones de verdor y carrizos, emergidos de la corriente mansa y somera. Después seguía la llanada suave, generosa, atusada de pastura; parecían sus tierras recién creadas, vírgenes; y los humos azules y tranquilos de las caserías, los de los sacrificios de Abel, gratos al Señor.</p>
+				<p>A la derecha del camino,  ya  pasado el río, la dulce vera subía  y ondulaba haciendo un altozano humilde;  y encima se murmuraban quejas  y rumores, enlazando sus brazos, tres pinos olvidados, ramosos desde la raíz. Y en el cielo de crepúsculo  y en las noches inmensas  y nevadas de luna, eran como tres monjes recogidos en oración o tres peregrinos muy viejos, muy tristes, inclinados por cansancio  y pesadumbre de recuerdos.</p>
+				<p>Paseo de la privanza de Gráez  y de Aurelio era aquel camino arbolado  y las frondosas riberas;  y algunas tardes llegaban a lo alto del otero.</p>
+				<p>Amigos fueron de molineros  y labradores. Entrábase el camino largo trecho entre tapias  y bardas de huertas; era lugar de silencio y tristeza de claustro. Sólo una casa honda y baja rasgaba y apagaba el júbilo de las blancas paredes; tenía ventana con reja espesa de prisión, y dentro, en las tinieblas de cueva, a veces se encendía una llama azul como de relámpago. ¿Quién habitaba en esta lobreguez temerosa? El músico y el escritor no lo sabían, y cuando pasaban cerca de la reja, ellos saludaban amables.</p>
+				<p>-¿A quién saludamos? -solía preguntar Gráez al novelista-, porque yo saludo viéndole saludar; pero, ¿a quién es?</p>
+				<p>-Yo no lo sé, maestro.</p>
+				<p>Y es que en sus paseos solitarios, antes de la llegada del músico, Aurelio, atraído por aquella casa profunda, quedábase mirando la ventana; y una tarde había adivinado, detrás de los espesos hierros, un cráneo calvo; debía de ser de viejo mecánico, y la llama honda y azul, sería de fragua. Aurelio dijo adiós; algunas veces le respondía una voz cansada; otras, silencio. Nunca el viejo salía a su portal. No quiso saber de él, gustando del misterio de aquel hombre de la angostura. Deseó Gráez enterarse y no lo consintió Guzmán.</p>
+				<p>-Dejémoslo, maestro... Así podemos creerlo un armero terrible; un droguista hebreo; un sabio, un Fausto desventurado, ignorado de todas las gentes. ¡Y si al preguntar de él o al hablarle hallamos que es un  herrero vulgar, amigo de contiendas políticas, de fisgas y bellaquerías, o sencillamente buen hombre!, ¿no sería lástima deshacer nuestra quimera?</p>
+				<p>Sonriose el músico... Y siguieron saludando a <seg rend="italic">Fausto</seg>.</p>
+
+				<p>Contó el violoncellista en la tertulia de don Luis de Castro el remate del ingenioso Almanaque anunciador que se trazara Aurelio; y dijo también de su desconocido amigo del casal siempre cerrado.</p>
+				<p>La <seg rend="italic">Princesita</seg>, que estaba con Luisa, le pidió a Gráez que la llevase por aquel paraje. Don Luis se asoció;  le imitaron las hermanas del solemne abogado,  que   preguntó   a   Luisa   con   risa   torcida:</p>
+				<p>-Y a usted, ¿qué le parece todo esto?</p>
+				<p>-Yo también iré.</p>
+				<p>Vino Guzmán;  y salieron todos.</p>
+				<p>Solitario, callado estaba el camino de los álamos blancos; y en el fondo del magno silencio quejumbraba metálica una carreta que avanzaba entre los sembrados, pasando sobre el azul su alegre carga de verdor.</p>
+				<p>Penetraba en  el  alma  de   Guzmán  la  mansedumbre, la quietud de los anchos campos. Sentíase generoso, purificado de no sabía qué pecados; pero perfeccionado, bueno  y ganado de infinita serenidad. ¡Qué dulce  y fraternal coloquio podría gozar en esa tarde con la amada mujer!  Y la esperaba;  él iba postrero  y solo. Ella vendría a su lado, tierna, llena de la gracia que parecía descender del cielo, gracia para amar  y ser amado inmensamente. La paz de la llanura  y el místico recinto de los fuertes árboles  y la templanza del aire aromoso  y la gloria del azul que inspiraba el deseo de alzar los brazos  y presentar el pecho  y desnudar la frente  y ofrecerse a la luz  y a la tranquila alegría  y beatitud de la tarde del cielo, todo llamaría a la mujer, rindiéndola a su amor, que en todo palpitaba amor muy grande,  y por él la mirada devota del artista llegaba a percibir dentro de la armonía de la visión otro íntimo  y concertado ritmo de subida pureza,  que no parecía sino que sonasen  y lo oyesen los ojos como algunos exquisitos oídos <seg rend="italic">ven</seg> los colores de la audición. Y de la peregrina armonía v eterna hermosura henchía Aurelio el espíritu  y formaba la carne de <seg rend="italic">Ella</seg> para gozar  y amar en la mujer su compendio; pareciéndole que llenaba un vaso de aquella sensación del universo desbordadora, que no podía beber en su mar infinito...</p>
+				<p>...Luisa caminaba despacio, rodeada de risas  y palabras frívolas o maldicientes.</p>
+				<p>De tiempo en tiempo participaba del bullicio  y levedad; a veces la sorprendía Aurelio distraída en contemplación; entonces, el ascua de fe revivía en el corazón del hombre.</p>
+				<p>Ya terminaba la alameda sosegada  y romántica,  y Luisa no apeteció su compañía, sus confidencias. ¡Ella reía, decidía  y prometía excursiones, meriendas, pasatiempos  y placeres! ¡Igual que todos! ¿Dónde entonces la selección  y proceridad de aquella alma, creída así por las gentes  y confesada augusta por él mismo? Y quiso llamarla vulgar,  y retorciéndose en su deseo, no lo satisfizo. ¡No era vulgar, sino <seg rend="italic">vulgarizada</seg>! ¡Vulgarizada! Y dentro de esta palabra resonaba todo un pasado de grandezas  y cumbres de alma de la mujer. Y en aquella perdida altitud, cuando era <seg rend="italic">toda</seg> ella, ¿a quién amaría? ¡Nunca a él, al que no hablaba, del que no recordaría siquiera! ¿Amaba él a la mujer que fue, cuya posesión jamás había de cumplirse? Enemigo de su dicha era el tiempo, odioso enemigo inaprehensible. No había en este amor vilezas, infidelidades, celos, desdenes definidos, singularizados. Nada. Y sintió tristeza  y piedad infinitas de <seg rend="italic">ella</seg>, de la mujer que <seg rend="italic">veía</seg> él espiritualmente degenerada, apagada;  y sintió tristezas de egoísmo al repetirse en exclamación, en grito de su alma: «¡No la poseeré nunca! ¡Oh, gozar su carne animada, viva, redundada del alma de mi deseo, de la ya perdida! ¡Viva, mía!». Y Aurelio, delirante, llamó:</p>
+				<p>-¡Luisa... Luisa!...</p>
+				<p>Ella se volvió a mirarle.</p>
+				<p>Guzmán se había detenido. Los demás le imitaron.</p>
+				<p>-¡Luisa!</p>
+				<p>Entonces ella vino lentamente a Guzmán.</p>
+				<p>Comenzaba la calleja de los blancos muros.</p>
+				<p>-¿Qué quiere?</p>
+				<p>Y  él, inmóvil, no habló. ¡Cómo decirle su padecimiento!</p>
+				<p>-¿Pero qué quiere? -lo preguntaba Luisa, ya con pesar de su complacencia.</p>
+				<p>Y  dijo Aurelio palabras infantiles estremecidas como un aleteo.</p>
+				<p>-¿Por qué me trata usted así? ¡Usted a la que hablo!...</p>
+				<p>-¡Y para eso me llamaba! -Y rauda  y alegre le dejó.</p>
+				<p>Andando entre el cercado, oyeron resonar sus pasos;   las   voces,  las   risas   parecían   rechazadas. Deseaban salir a la amplitud agreste... Gritaron las mujeres. Todos se detuvieron, se espesaron buscándose por un sentimiento de miedo, de flaqueza... De la angosta casa del encerrado sacaban un ataúd largo, enorme, liso, miserable, como de ajusticiado o de mendigo. Salieron hombres humildes; cerraron la puerta. La casa quedó muda. Dentro no lloraba nadie.</p>
+				<p>-¡Oh, maestro! ¡Nuestro <seg rend="italic">Fausto</seg>! ¡Se lo llevan! ¡Y pudimos darle nuestra compañía, acaso la única de su vida!</p>
+				<p>Y Aurelio quiso separarse de todos y seguir al cadáver; pero su mirada sorprendió la de Luisa, puesta con fijeza y dolor en el ataúd que se iban llevando los hombres silenciosos por el camino de los álamos; y la piedad volviose hacia ella. Olvidó desdenes, frialdades, y quiso darle la confortación de su palabra. Dulce, sencilla le escuchó entonces la mujer. El muerto los había acercado.</p>
+				<p>Ellos se olvidaron de la gentil <seg rend="italic">Princesita</seg>, que les seguía sumisa, dolorida, mirándoles. Siempre les miraba, y si otros ojos la observaban, distraía los suyos parpadeando encendida.</p>
+				<p>Los del grupo descansaban en el portal de un molino y vocearon a Luisa y Aurelio. Y como se volviesen, repararon en Adelina.</p>
+				<p>Propuso él seguir hasta el collado de los pinos, que desde allí se recortaba redondamente. Al otro lado,  dijo el artista que se hacía una torrentera umbrosa de olivar; después, y ya casi en el llano, manaba una finísima fuente.</p>
+				<p>-¡Sí,   sí, beberemos como corderos! -dijo Luisa.</p>
+				<p>Lo   gritaron   a   los   demás. Y   todos   quisieron de aquella agua.</p>
+				<p>Distantes y hollando la verdura, caminaban siguiendo a Guzmán, Luisa y Adelina.</p>
+				<p>Subieron por la cuesta blanda de pasto jugoso; y en la altura rieron como muchachos al resbalar por el oro del alhumajo desprendido. Y de pronto la <seg rend="italic">Princesita</seg> dio un grito  y púsose muy pálida, mirando hacia el aire, donde temblaba una mariposa grande, negra como un crespón.</p>
+				<p>-¡La sentí mucho tiempo volar sobre mi frente! ¡No os riáis, que yo sentí grandísimo susto! ¿Tú no crees, Aurelio, en fatalidades?</p>
+				<p>Bajaron por la torrentera doblada en ese; dentro se espesaban oliveras centenarias, inmóviles, sin oreo de ramaje. Los troncos estaban heridos, cavernosos, desgarrados por las feroces zarpas de los siglos,  y parecían árboles distintos. Pero aquellas mitades inclinadas desesperadamente atrás, se pedían retorciéndose fundirse, completarse en un solo árbol.</p>
+				<p>-¡Luisa, Luisa! -dijo Aurelio-. ¡Qué tormento tan hondo  y humano parece conmover a estos olivos!</p>
+				<p>Y el artista puso sus manos en los pedazos de un tronco, exclamando:</p>
+				<p>-¡Oh, si yo fuera fuerte para juntarlos!</p>
+				<p>-¡Es ya tarde! -pronunció Luisa con íntima amargura.</p>
+				<p>-¡Tarde! -gimió Aurelio oyendo en la mujer la voz de un ángel nuncio de desgracia y verdad-. ¡Tarde! ¡Siquiera hubo un tiempo en que estuvieron esas mitades de árboles unidas y dichosas!... ¡Y las almas que llegaron para siempre tarde a las puertas de otras almas!</p>
+				<p>Besó Guzmán en los troncos heridos.</p>
+				<p>-¡Cómo lo quieres todo! ¡Tú no eres como los otros hombres! -le balbució su prima acercándosele desfalleciente de ternura.</p>
+				<p>Luisa les vio muy juntos; la mirada de la doncella casi niña había sido recibida, bebida por los ojos de Aurelio. ¡Los dos eran más jóvenes que ella! Pareciole aquel hombre más hermoso que nunca sabiéndolo querido. ¡Oh, su frente era de genio, su boca de apasionado! ¡Cuánto podía amar; cuánto habían de amarle!...</p>
+				<p>Y de los labios de la mujer brotó un quejido, y toda su carne se contrajo de frío de terror.</p>
+				<p>Guzmán fue hacia ella anhelosamente.</p>
+				<p>-¡Qué es! ¿Qué tiene, Luisa?</p>
+				<p>Ella, sonriendo, dominada, soberana ya de sí misma, repuso tendiendo y señalando con su sombrilla espumosa de encajes:</p>
+				<p>-Allí; ¿la ven? Quizás es la misma que asustó a Adelina... ¡La mariposa negra de los augurios!</p>
+				<p>-¡Y usted ha gritado como... otras mujeres!...</p>
+				<p>-¡No!   ¡Yo  he gritado   como   ninguna...    como nadie! -y quedó rígida, desventurada, suprema.</p>
+				<p>-¡Tiene   usted  la  palidez y  amargura   de   las adelfas blancas!</p>
+				<p>-¡Amargo yo!</p>
+				<p>Luego le tomó las manos, diciéndole:</p>
+				<p>-Cerca está nuestra fuente. Venga conmigo. Es un manantial terso; óvalo de agua; trémula mirada de agua. ¡Beberemos agua recién  nacida!  ¡Venga conmigo!</p>
+				<p>Y corrieron a la llanura.</p>
+				<p>-¡No me dejéis sola, Aurelio, Luisa!... -les pidió la <seg rend="italic">Princesita</seg>, y les siguió derribándose por la fragosa torrentera.</p>
+				<p>En el suelo de peña brotaba el manantial; lamina de agua virgen con fondos de pedrezuelas pulidas que chispeaban claror del día. Las orillas se afelpaban de corta hierba  y por debajo se deslizaban hebras de luz haciendo sonecillos de abalorios cristalinos.</p>
+				<p>Allí se arrodilló Luisa,  y el agua dio su imagen dentro del cielo espejado. Hundió sus manos,  y el agua se rizó bellamente,  y de ella fue cogiendo y llevándose a la boca. Sus dientes, sus labios, la redondez de su mentón  y su garganta gotearon sartas diamantinas,  y parecía habérsele deshecho entre su carne todo un tesoro de collares y joyas.</p>
+				<p>Fuente de alegría le borbotaba en el corazón; sentíase pequeña, codiciosa de acostarse encima del manantial y enjugarse después descansando sobre el verdor pradeño, inocente y libre, rústica y primorosa.</p>
+				<p>-¡Como cordera dije, y quiero beber!</p>
+				<p>Y tendiose y bañó su cara. La delicia estalló en risa y la risa hirvió en burbujas. Agua de su risa, con sabor de su aliento, ansió Guzmán que le miraba enloquecido. Ella irguiose y quedó sentada sobre la orla de verdura. Su boca, con la humedad, brillaba encendidamente.</p>
+				<p>-Deme usted de beber, Samaritana -y rogándolo, temió Aurelio una negación que rompiera la escena venturosa.</p>
+				<p>Luisa, sin mirarle, llenó el cáliz de sus manos sonrosadas de frialdad, y lo ofreció al sediento, diciéndole sencilla:</p>
+				<p>-Acérquese y beba.</p>
+				<p>Sorbió Aurelio besando el agua y el borde del vaso de carne. Pero su sed y su júbilo se apagaron pronto.</p>
+				<p>La mirada de Luisa no era de amante; mostraba resignación de enfermera. ¡Debió sentirse besada, y sus manos no temblaron de deleite ni enojo!</p>
+				<p>...Gritadores, alborozados bajaban del otero los amigos. Luisa les dijo riendo su placer campesino. Lo oía Aurelio como un cuento de felicidad esfumada, remota.</p>
+				<p>La <seg rend="italic">Princesita</seg> contemplaba a los dos desde su soledad...</p>
+				<p>Había comenzado el crepúsculo. Encima del río descansaba la niebla.</p>
+			</div>
+			<div n="7" type="chapter" xml:id="ne0045_chap7">
+				<head>- VII -</head>
+				<p>Ya pisaba el portal del ingeniero, y Aurelio se detuvo; volvió la espalda  y se fue apartando de aquella mansión. Amigas de Luisa que cruzaban por la opuesta acera viéronle otra vez detenerse, retroceder  y allegarse nuevamente a la misma casa. Ellas sonrieron hablándose  y mirando al escritor.</p>
+				<p>Vacilaba la voluntad de Aurelio; la sentía reducida por otra ancha, fuerte y dominadora. «El que ama criatura, tan bajo se queda como aquella criatura, y en alguna manera más bajo, porque el amor no sólo iguala, más aún, sujeta al amante a lo que ama». Y estas recordadas palabras de San Juan de la Cruz le hirieron, viéndose rendido. Protestó en su corazón embravecido y altivo. Él, sí; él amaba, pero sin pérdida ni menoscabo de sí mismo. Más que cautiverio rahez, sufría su alma amargura y piedad de la amada. ¡Siempre enemigos, desemejantes, distanciados; si se acercaban en dichosos momentos, era para luego separarse como aproximación de onda a la ribera! ¡La evitaría! Y recordó esta promesa al trasponer su umbral; y alejándose de él, arrepintiose de no haber entrado. ¿Por qué no había de hacerlo?</p>
+				<p>Y llamó. Una vieja criada como la suya, abrió la cancela.</p>
+				<p>-¡Ah, el señorito Aurelio!</p>
+				<p>Y él se dijo: «¡Parece pronunciado mi nombre con dulzura derivada de mayor dulzura, como oído muchas veces!...». ¡Pero no; <seg rend="italic">ella</seg> no podía trasparentarse con nadie! Cuando quiso preguntar por Gráez, hallose solo en el vestíbulo.</p>
+				<p>Estaban abiertas las siguientes estancias, y a lo hondo se ofrecía el jardín goteado de luz de la tarde, y de allí entraba alegría de follajes y olor de jazmines húmedos.</p>
+				<p>Arriba andaban pasos tardos, seniles; abrían sonoramente las maderas de un balcón que semejaba desgarrarse; tronaba un golpe hondo, macizo de butaca del estrado... Y las pisadas se alejaban y otros balcones crujían con pesadumbre de vejez y grandeza.</p>
+				<p>En otro tiempo, también escuchó Aurelio en su casa los mismos rumores al comenzar los crepúsculos estivales, la hora sosegada y melancólica del oreo. Pasan las señoras y fámulas ancianas a las salas de sillerías enfundadas con lienzo blanco y rizado por la plancha; la lámpara, el espejo, los óvalos de los retratos, se apagan bajo nubes de gasa; encima de la consola brilla el fanal de un reloj muerto; y alguna tarde, al crujir un mueble o trepidar los muros por la carrera estrepitosa de un coche enorme, despierta de su muerte el reloj y vibra su campanita helada, como si hubiese vertido una gota de oro..., y vuelve a  morir.  La  criada,  en tanto,  abre los nudosos maderos del balconaje;  y entra luz de tristeza  y se percibe como una invasión de silencio  y de ambiente fresco, pálido,  y todas las estancias se pueblan de vida antepasada...</p>
+				<p>...Entonces pensaba el escritor en los muertos de aquella casa. La hermana de Luisa, alta, morena, de carne dorada, parecía hecha, cuajada en lumbre  y risa; la madre, de perfil purísimo de dama de empolvado cabello, un poquito gruesa, siempre vestida de negro; tan dulce, que sin conocerla, viéndola, se adivinaba que era madre. Muchas tardes le daba ella la merienda,  y le sonreía  y besaba siempre que cruzaba por la plaza de las Acacias; él estaba sentadito en un banco mirando a Alfredo  y otros amigos, que jugaban o cambiaban sellos de sus colecciones. «Y tú ¿no tienes álbum de colección?» -le decía, mirándole como las madres miran a los huerfanitos. No, no tenía álbum; no recogía sellos. Las hermanas  y la madre cuidaban  y arreglaban el libro de Alfredo; ¡a él no; mamá Dolores  ya  había muerto,  y la pobre mamá Carmen no podía;  y el padre siempre viajaba..., y la criada era tan torpe!...</p>
+				<p>-¡Madre mía Santísima! ¡Si ya no recordaba del señorito Aurelio! -gritó a su espalda la sirviente de Luisa-. ¿Por qué no pasó al jardín? Allí está regando Luisa, la señorita Luisa, con la doncella... Venga...</p>
+				<p>-No, si no quiero pasar. Dígale al señor Gráez que le espero...</p>
+				<p>-¡Qué señor Gráez! ¡Si no hay nadie más que la señorita!</p>
+				<p>-Entonces me marcho.</p>
+				<p>-¡Qué ha  de  marcharse  así,  después de esa antesala que hizo!... Venga aquí...</p>
+				<p>Y, diciéndolo, entró en busca de Luisa. Guzmán tomó el sombrero y, al retirarse, vino del huerto la voz cálida y selecta de <seg rend="italic">ella</seg>. «¡Aurelio!», se oía en la tarde, tamizada la palabra por los frutales. Y después: «¡Aurelio!», recogido ya el nombre por cortinajes y paredes.</p>
+				<p>Llegaba blanca, leve, fresca de plantas y tierras rociadas, nimbado su cuerpo de fondo de crepúsculo delicioso de huerto.</p>
+				<p>Despacio, muy tímido, se acercó él. Verde claror derramose en la frente fina y pálida del hombre; frente dulce, triste y señoril, que recordó a Luisa la de algunas estatuas contempladas en Florencia. Los cabellos abundosos y revueltos de Aurelio resplandecían como un cobre dorado; sus ojos, sus cejas, sus sienes, su boca, todas sus facciones hallábalas Luisa dulcificadas, como de niño desgraciado y enfermo. Y enternecida y mirándole, le murmuró:</p>
+				<p>-¿Qué tiene?</p>
+				<p>-¡Yo!</p>
+				<p>-Sí, sí; ¿qué tiene, qué siente hoy?</p>
+				<p>Aurelio la contempló, acercándose más, aspirando ávidamente la fragancia de jazmines y de tarde.   ¡Vestida  de nieblas y jazmines  semejaba! También la vio él muy niña; sus ojos, entregados a los suyos; la palabra, candorosa, suavísima; su cabeza, puerilizada por el peinado de su cabello espléndido, negro, que le caía en trenza, descansando en la casta insinuación de sus caderas.</p>
+				<p>¡Y usted, usted qué tiene, que siente también hoy!, ¡me parece una hermanita mía, muy pequeña, muy débil, necesitada de mi alma!</p>
+				<p>¡Y a mí me pasa lo mismo! Le encuentro a usted muy dócil, muy bueno y muy triste...</p>
+				<p>¡Huele usted a jazmines, a carne de flores blancas, a hermana-esposa!</p>
+				<p>Ella le mostró, dentro de su finísimo delantal, una reciente nevada del jazminero. Aurelio rindió su cabeza, aspiró y, exaltado de dicha, hundió su boca en el blanco y florido regazo, y besó delirantemente flores, encajes y manos de mujer. Y, al levantarse, llevose en sus cabellos pétalos  y fragancia.</p>
+				<p>-¡Si son los jazmines los que huelen a usted! Dan aroma de pureza; ¡no podrían oler así si no fueran blancos; huelen a blancura; huelen a después de un beso santo, supremo de amor! ¡Dios mío, si fuésemos siempre niños!...</p>
+				<p>La vio palidecer y sonreír amargamente. Estaba transfigurada.</p>
+				<p>¡Se acuerda de cuando se hirió las manos con las zarzas!</p>
+				<p>El cálido vino de recuerdos de la acariciadora curación embriagó el alma y la sangre de Aurelio. Miró la cabeza de la mujer y, arrebatado, intensivo, pidió:</p>
+				<p>-¡Yo quiero besar su cabello; yo quiero besarlo!</p>
+				<p>Volvió la amada a sonreír, y, ladeándose, tomó su trenza y la puso en las manos de Aurelio. Palpitó toda la vida de Guzmán al recibir la dulce y negra opulencia, y en su suavidad descansó los labios y la frente. Y, desfallecido de besar, todavía pidió:</p>
+				<p>-¡Quiero besarlo en su cumbre, en su nacimiento; este es <seg rend="italic">menos</seg> suyo!</p>
+				<p>Y   ella, obedeciendo tierna, niña, inclinó su cabeza, ofreciéndosela. Aurelio la adoró, la aspiró y luego dejó un beso muy lento, muy hondo, dentro de una tibieza regalada...</p>
+				<p>-¡Si fuésemos niños siempre, dijo usted antes! Como niño le trato, ¿verdad?</p>
+				<p>-¡Como niños los dos, Luisa! -exclamó él, angustiándose al presentir el tránsito conocido de la efusión a la frialdad.</p>
+				<p>-¡Oh, no; a mí no me está bien! Acérquese a la luz, y mire aquí, en mis sienes. ¡Sin besar ya! No finja. ¡Tengo ya hebras blancas!</p>
+				<p>Sonaba ruidosa en el huerto la aspersión del riego sobre hojarascas. Y Luisa retrocedió, animada y alegre.</p>
+				<p>-¡Me van a deshojar los rosales! ¿Me ayuda usted a regar, o se marcha?</p>
+				<p>Y  desapareció en la fronda.</p>
+				<p>Aurelio no pudo hablar. Salió al vestíbulo. Se marchó. Pena y altivez se recruzaban en su alma. ¡Como a un niño le trataba ella! ¡Ni siquiera coqueta se mostraba con él!</p>
+				<p>Pensó en los besos. Y le pareció haber besado a otra mujer que no a Luisa...</p>
+			</div>
+			<div n="8" type="chapter" xml:id="ne0045_chap8">
+				<head>- VIII -</head>
+				<p>Gráez y el ingeniero conversaban en un ángulo  del comedor, sorbiendo tazas de una dorada y aromática infusión de hierbas. Luisa miraba los grabados de una revista musical.</p>
+				<p>Cortaban la plática de tiempo en tiempo los ancianos para escuchar la lluvia, que resonaba en las vidrieras, lluvia otoñal, lluvia de paisajes lejanos y humosos; de tierras y caminos dorados de hojas; de cielo espeso que baja a la serranía y se enreda en la arboleda, y todo está cruzado por la urdimbre del agua, que finge un antiguo tapiz.</p>
+				<p>Se hizo tormentosa la noche, hirviente de recia lluvia, aullada del viento. Canales, tejaroces y gárgolas vertían caños. Se oía la angustia de los árboles, el gemido de todas las cosas; tronaba el cielo duro, seco, metálico; los vidrios de los balcones se estremecían, y retemblaban los muros profundamente.</p>
+				<p>Salió Luisa a la estancia que daba al valle.</p>
+				<p>-¡Maestro, no se puede mirar al cielo; todo es una hoguera de relámpagos!...  ¡Los  pobres caminantes!...</p>
+				<p>De súbito gritaron los tres, rindiendo sus cabezas; Luisa se amparó en su padre. Había reventado un trueno macizo, que pareció despedazarse sobre la techumbre como si se hubiera desgajado una montaña. Después, al erguirse tranquilizados, vieron delante a Aurelio, vencido de lluvia, enfangado;  y sus ropas  y sus cabellos pegados a la carne, que parecía labrada por un cincel de rajo.</p>
+				<p>-¡Su entrada ha sido bíblica, como si descendiera del Sinaí! -exclamó Gráez riendo, y ganoso de distraer a todos de los rugidos  y amenazas de la noche.</p>
+				<p>-Da lástima mirarle. ¿De dónde sale este hombre? -decía el padre de Luisa. Ella trajo con qué enjugar  y abrigar a Aurelio,  y le contempló, olvidada de la tormenta.</p>
+				<p>Hacía largo tiempo que él no entraba en esta casa. Le hallaron una tarde en la romántica alameda con la <seg rend="italic">Princesita</seg> y su madre. Aurelio habló escasamente con Luisa,  y ella sintió que se doblaba su alma. La mudanza, el menosprecio que denotaba aquel hombre no parecía de fingimiento. Adelina tenía lumbre de alegría, belleza de dicha. Luisa hizo hábilmente su comedia, de dulzuras  y levedad,  y fueron para Adelina sus palabras más regaladoras.</p>
+				<p>Ya confortado Aurelio, tuvo que contar por qué viniera tan combatido de la tempestad, y dijo que ésta le forzó a salir para mirarla. Pensó que Gráez estaría contemplando desde sus ventanas el incendio del cielo. Le buscó; dijéronle dónde estaba. Pero él se fue a los campos; regresó huyendo, y aquí había buscado refugio y compañía. Gráez, don Luis y la hija le vieron más huérfano, más abandonado.</p>
+				<p>De la estancia próxima entró una llama inmensa y lívida.</p>
+				<p>Cayó un estruendo de ruina que se descompuso en estampidos vibrantes.</p>
+				<p>Aurelio se levantó y hundiose entre relámpagos. Le llamaron pidiéndole que lo cerrase todo.</p>
+				<p>Por los cristales de la ancha ventana penetraba la visión sublime de la noche de fuego. Clamaba el vendaval pavoroso, magno como un coro de profetas angustiados, diciendo castigos y maldición del Señor. La llanura se encendía de un livor trágico y la palma del yermo veíase entre resplandores siniestros doblarse como de infortunio humano, y su ramaje se agitaba, se crispaba, se rendía, braceando desesperadamente en la soledad. Aurelio gritó:</p>
+				<p>-¡No cierro! ¡Da terror y júbilo mirar! ¡Luisa, Luisa, Luisa! ¡Oh, venga! ¡Se aumenta nuestra vida; se es fuego, trueno, noche, o se pierde todo nuestro ser, no se es nada! ¡Luisa!</p>
+				<p>Retumbó un trueno. Se oía el vocerío de mujeres espantadas.</p>
+				<p>-¡Luisa!</p>
+				<p>Gráez y el ingeniero acudieron bajo para mirar la calle. Luisa, atraída por el grito supremo de delirio y entusiasmo de belleza que daba Aurelio, fue hacia él.</p>
+				<p>Un relámpago poderoso la alumbro toda azuladamente. Plegó las manos, hundiose en sí misma, aterrada. Y Aurelio avanzó y recogió en sus brazos el cuerpo adorable.</p>
+				<p>Las lumbres incesantes, siniestras, la teñían de unos morados, de un color de sufrimiento. Aurelio se sintió traspasado de piedad infinita y divina.</p>
+				<p>-¡Oh, mujer, que pareces hecha sólo de alma, de alma dolorosa y agónica! ¡Todos tus pasados dolores y tristezas florecen en ti esta noche! ¡Luisa, Luisa! ¡Toda la creación parece retroceder y condensarse dentro de esta noche! ¡Todos se aterrorizan y nosotros amamos en el espanto sublime!...</p>
+				<p>Y Aurelio ciñó su talle y alzó a la mujer como un holocausto. Ella gimió, quiso huir. Aurelio la atrajo,  y abrazada, la presentó a los relámpagos, diciéndole:</p>
+				<p>-¡No, no quiero que usted se marche; está conmigo! Me olvidado sus frivolidades, todos sus desdenes. ¡Somos fuertes y grandes! Y al levantarla, cuando no pisaba la tierra, cuando sentí la dulzura de su cuerpo y de su vida, mantenida en la vida sólo por mis manos, en ese instante yo me he dicho: ¿Y es <seg rend="italic">esto</seg>, sólo <seg rend="italic">esto</seg>, que ya no <seg rend="italic">está</seg> en la tierra, lo que me hace dichoso y desventurado y se apodera de mí, todo, todo? ¡Señor!</p>
+				<p>Un trueno horrendo ahogó la palabra del amante. Luchó  la  mujer por arrancarse   de  los   brazos   de Aurelio, y él la estrechó más.</p>
+				<p>-¡Oh, no se vaya! ¡Yo nunca te he dicho cómo te quiero! Conmigo, temblando, deshaciéndonos de emoción... Resuenan también nuestras almas grandiosamente... Hay una vida muy honda, que no se sabe si es trágica o dichosa, de demonio y de Dios, secreto de vida, olvidada, desconocida porque vivimos la externa y ruidosa; y en estos momentos padecemos la conmoción y presentimiento de aquella... ¡Sepárate de la vida que nosotros hemos hecho desabrida y pobre; atiende conmigo ese murmullo de la del misterio dentro de la noche fuerte y grande. Yo quiero besarte, besarte en tus ojos, en tus sienes de artista, de infortunada, que se parecen a las mías, en tu boca doblada de ansiedad, de angustia; en tus dientes...!</p>
+				<p>Y Aurelio la besaba con locura. Ella ladeó heroica su cabeza para impedir el temido beso en los labios; y la diestra del hombre oprimió dulce y tenaz las mejillas de la amada; atrajo el codiciado sitio y su boca se fundió con la boca trémula, seca, ahincadamente sellada de la virgen.</p>
+				<p>-¡Bésame tú, bésame!</p>
+				<p>Ella, rígida, yerta, balanceaba su cabeza negando. Y Aurelio gustó la humedad íntima y cálida de la boca ansiada, entreabierta ya por la fuerza de la suya. Entonces creyó que empezaba a deshojar y apoderarse de su virginidad.</p>
+				<p>Ardió un relámpago. Y Aurelio la vio azulada, contraídos de amargura los labios, cerrados los ojos, y lágrimas en sus pestañas, consternada, retorcida entre sus brazos... Imaginó que el dúo grandioso de sus almas ante lo sublime, podía caer y degenerar en violencia truhanesca   sólo   por  la   frialdad   trágica de la mujer. Y el amante sintió un extraño apagamiento de sus ansias; y dejó el pobre cuerpo.</p>
+				<p>Luego, dulce y tímido, balbució:</p>
+				<p>-¿Me   perdona?   Perdón,   Luisa...  Pero...   ¿me quiere, me quiere?</p>
+				<p>No pudo, no quiso mirarla; esperó su palabra contemplando la noche de maldición. El inmenso paisaje de llanura surgía hasta en sus confines del misterio, entre el fuego lívido de nubes cavernosas, abismales, agrietadas por espadas y sierpes convulsas y cegadoras... Se abrió la obscuridad con Lérida de centella, y Aurelio vio desgarrarse la solitaria palma de la lejanía.</p>
+				<p>-¡Luisa! -gritó afligidamente, y volviose a ella.</p>
+				<p>Estaba solo.</p>
+			</div>
+			<div n="9" type="chapter" xml:id="ne0045_chap9">
+				<head>- IX -</head>
+				<p>Amaneció un día gozoso, de magnificencia de sol y de azul. Los anegados campos eran trozos de espejo de los cielos; el verdor que aun tenían los árboles estaba enternecido  y vislumbraba de lluvia prendida; el aire poblábase del alborozo de alas de palomas  y gritos de golondrinas; los templos  y las casas, apagados, ennegrecidos de tan húmedos, aparecían más vetustos, recortándose en la alegría de la mañana;  y sobre el fondo del silencio del paisaje, resbalaba el trueno fresco, espumoso  y profundo de la avenida recial del río.</p>
+				<p>Aurelio  y Gráez paseaban por las afueras. Sentía el escritor contento de pureza, de inocencia,  y en todo hallaba un aroma  y sonrisa de juventud.</p>
+				<p>-¡Maestro! ¿Verdad que le parece ser nombre recién creado? ¡Yo, sí; o acabado de salir del Arca del elegido por Dios para repoblar la tierra! ¡Lástima que no pase sobre nosotros la banda gloriosa del arco iris!</p>
+				<p>Reía Gráez de las exclamaciones del mozo. Cuando retornaron a Aduero, aun las gentes comentaban, desde sus ventanas  y portales, lo espantoso de la noche. Llegaron a la casa de don Luis; percibieron un conversar alegre desde el vestíbulo. Arriba estaban los amigos de los hijos. Y el apartadizo Aurelio no evitó la reunión, antes pasó a ella apresuradamente, porque ansiaba recoger de los ojos de Luisa el sagrado rubor recordándose besada; y luego, mirándole, le confesaría el rendimiento de su alma; él la había resucitado; mostraríale ella una dulce tristeza que había de encenderse en gozo mirándose y amándose.</p>
+				<p>Entraron Gráez y el escritor.</p>
+				<p>Luisa hablaba donosamente del pasado terror. Acogioles risueña y efusiva, diciéndoles con humorismo:</p>
+				<p>-¿Fueron a sus casas en góndolas o a nado?; porque yo me encerré y no supe su regreso...</p>
+				<p>¡Era ella misma la que aludía con frivolidad y descuido, al último momento de la escena amarga y adorable! Guzmán pensó irónico en la imaginación de rubores, de pesar y amor. Lo aborreció todo; anheló rasgar las nieblas de aquella alma y verla entera y descubierta. Acercose, y muy despacio le murmuró:</p>
+				<p>-Venga conmigo junto a la ventana de anoche.</p>
+				<p>-¿Para qué? -dijo ella sin apagar la voz. Y la publicidad de estas palabras, que desfloraban lo íntimo del ruego, hirieron hondamente a Aurelio.</p>
+				<p>-¡No se acuerda de la pobre palmera herida!</p>
+				<p>-¡Ay, sí, es verdad! -Y volviéndose a los demás, murmuró:</p>
+				<p>-Tiene razón Aurelio... ¡Vamos dentro a contemplar una víctima de anoche!</p>
+				<p>Los  vio  alejarse  el artista,  como profanadores de un místico recinto;  y era Luisa la que los llevaba. ¡Oh, bastaba  ya  de ser  mendigo  de  amor!  Aguas vivas de amor había pedido a fuente exhausta para su boca... «¡Pero si la he besado! ¡Ella me dio sus manos, su cabello! Y besé su frente, sus sienes, sus ojos, sus labios, dentro de su boca...  y ella no me rechazó  con  asco  ni   odio.   Los   recibía   sumisa, entristecida, castísima... ¡Quizás  con demasiado entristecimiento  y obediencia! ¡Acaso por repugnar a su espíritu selecto  el  arranque  dramático-vulgar de las mujeres ofendidas por audacia de los hombres! Besos de enfermo o de niño fueron los míos para ella... ¡No me ha querido nunca!».</p>
+				<p>No sé si este soliloquio manifiesta a Aurelio muy flaco psicólogo; es posible, porque los escritores, los artistas, por geniales que sean, cuando no labran interiores ajenos y <seg rend="italic">viven</seg>, cuando actúan sólo humanamente, suelen ser tan pobres hombres como todos los pobres hombres.</p>
+				<p>La idea de alejarse para siempre alumbró de esperanza su alma. Iba a salir de aquella casa. Notó que el rebullicio del grupo subía del huerto; habían dejado las ruinas de su sagrario. Estuvo atendiendo; no oyó la voz ni la risa de <seg rend="italic">ella</seg>. Y quiso verla desde <seg rend="italic">su</seg> ventana. Y al pasar, un sol de antigua alegría calentó su vida. Luisa estaba allí, sola, inmóvil, suprema, contemplando la mañana del valle. Viendo la aparición de Aurelio no se inflamó en rubores por recuerdo y miedo de ofensa, por deseo de amor. Tranquila, dulce, le dijo:</p>
+				<p>-¡Qué pena da la pobrecita palma! ¿Se ha fijado? ¡Tiene ahora un encanto amargo, de desgracia!</p>
+				<p>Entonces Aurelio detúvose ante ella,  y sin exaltación ni quejumbres murmuró:</p>
+				<p>-¿No  siente  usted cansancio o remordimiento de lo que ha hecho usted con su misma alma?</p>
+				<p>-¡Oh, ya empezamos! -dijo irónicamente Luisa.</p>
+				<p>-No; ya terminamos. Es mi despedida. Vea que hablo serenamente. No soy el loco, el aturdido, el apasionado. Hace un momento ansiaba rasgar el misterio de su alma. No lo había, Luisa; es que yo me negaba a mirar. Usted no ha querido; usted no ha podido entrarme a una gloria de amor. ¡Nuestro amor, sí, ha sido <seg rend="italic">nuestro</seg>! Nuestro amor no acaba como el de Falk y Svanhild; ellos prefieren que el sol de su amor se apague en la mitad del día, cuando es más espléndido y poderoso. ¡Usted no me ha dejado ver nuestro sol siquiera...!</p>
+				<p>Luisa sentía en sus entrañas el frío de la palabra de Aurelio.</p>
+				<p>Lenta, y con apariencia de bromas, pronunció:</p>
+				<p>-Es verdad. Pero usted es muy niño. Mujer más joven que yo sabrá encender ese sol que usted dice, y curarle de lo que usted ha creído <seg rend="italic">nuestro</seg> amor.</p>
+				<p>-Me ha curado usted misma, Luisa.</p>
+				<p>Ella miró a la llanura, hacia el árbol herido.</p>
+				<p>-Luisa, ¿mira usted la pobre palmera? Contémplela y verá por qué es bella en su muerte. No nos daría   esa  impresión  de  doliente hermosura   si  la palma fuese naturalmente triste, caída y rota. Es el recuerdo, la imagen de su perdida gentileza lo que amamos en el árbol o nos mueve a verlo bello en su ruina. Yo -dijo retirándose el artista- he querido en usted a la muerta, la <seg rend="italic">otra</seg> alma sin abdicaciones; o quizá la de ahora, palma rota, tronchada por sus mismas manos, que me traía la dulce evocación de la palma valiente, entera, toda.</p>
+				<p>Sola quedó Luisa. Su mirada se esparció en la llanura; llegó a la palma rota, y contemplándola, la vio transformada en mujer; y era ella misma, alumbrada y henchida de amor; más joven; con fe y ansiedad en sus ojos; y ella besaba a Aurelio en su frente de gloria, en su cabello, en sus mejillas, en su boca de apasionado, de niño excelso, ¡príncipe y cruel! Y el alma de Luisa se torció de dolor de celos, celos incurables, malditos, feroces, celos de sí misma.</p>
+			</div>
+			<div n="10" type="chapter" xml:id="ne0045_chap10">
+				<head>- X -</head>
+				<p>Gráez se detuvo; y volvió otra vez sus ojos  hacia el confín de la llanura. Un vellón de humo se deshilaba en el azul... Y desapareció el correo.</p>
+				<p>Y el músico siguió caminando, penetrado de la soledad, del desamparo del paisaje.</p>
+				<p>Un bando de grajos alzose de la sementera gañendo aciagamente. Volaron esparcidos; y pronto fueron espesándose, obscureciendo un trozo de la tarde; y bajaron a un bancal paniego.</p>
+				<p>Las tierras pasadas por las aves negras parecían recibir un misterioso apagamiento de malaventuranza que únicamente percibía el viejo Gráez. ¡Qué aves de tristeza volaban sobre algunas vidas dejándoles las sombras de sus alas, que engendran el sufrir aun en lo que tiene humilde, leve o placentera apariencia para las otras gentes!</p>
+				<p>...Se internó en la ciudad. Atravesó por la plaza de las Acacias. Entonces tañía lenta una campana de la abadía de San Pedro.</p>
+				<p>Una voz femenina, suavísima, llamó a Gráez; y éste vio a la <seg rend="italic">Princesita</seg> y su madre.</p>
+				<p>-¿Se   marchó...  por  fin... Aurelio? -le dijo la doncella estremecidamente.</p>
+				<p>La madre añadió:</p>
+				<p>-¿No se querían Luisa y él?</p>
+				<p>-No sé -repuso con aflicción el anciano-. Al despedirse Aurelio, me confesó que había llegado tarde al alma de Luisa.</p>
+				<p>«¡Tarde! -pensó la <seg rend="italic">Princesita</seg> ahogándose de pena-. ¡Tarde llegó también mi alma a la de Aurelio!»...</p>
+			</div>
+
+		</body>
+		<back>
+		</back>
+	</text>
+</TEI>
