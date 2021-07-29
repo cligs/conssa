@@ -201,6 +201,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Asturias</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-5.8539465594133615</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">43.27156285</term>
 					<term type="text.setting.settlement">Aránzazu</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

@@ -205,6 +205,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Bilbao</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-2.9349458999999998</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">43.2629489</term>
 					<term type="text.setting.settlement">Bilbao</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

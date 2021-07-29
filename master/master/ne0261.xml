@@ -205,6 +205,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Gibraltar</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-5.3484848</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">36.1451465</term>
 					<term type="text.setting.settlement">Gibraltar</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

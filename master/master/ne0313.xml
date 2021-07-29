@@ -209,6 +209,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Peñascosa</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-2.4097367000000003</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">38.6723904</term>
 					<term type="text.setting.settlement">Peñascosa</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

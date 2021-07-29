@@ -201,6 +201,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Dacia</term>
 					<term type="text.setting.represented">Vlasta</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">14.5770000224241</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">48.71916755</term>
 					<term type="text.setting.settlement">Vlasta</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

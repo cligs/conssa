@@ -207,6 +207,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Barcelona</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">2.1774322</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">41.3828939</term>
 					<term type="text.setting.settlement">Barcelona</term><!--Santa Madrona, pueblo alredores de Barcelona-->
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

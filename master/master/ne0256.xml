@@ -205,6 +205,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Toledo</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-4.0239568</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">39.8560679</term>
 					<term type="text.setting.settlement">Toledo</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

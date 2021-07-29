@@ -201,6 +201,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Santander</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-3.8101067000000004</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">43.46231020000001</term>
 					<term type="text.setting.settlement">Santander</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

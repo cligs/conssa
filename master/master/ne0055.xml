@@ -204,6 +204,8 @@
 					<term type="text.setting.continent">Asia</term>
 					<term type="text.setting.country">Israel</term>
 					<term type="text.setting.represented">Jerusalén</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">35.13</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">31.47</term>
 					<term type="text.setting.settlement">Jerusalén</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type" cert="low" resp="#jct">big-city</term>

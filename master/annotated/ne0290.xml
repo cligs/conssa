@@ -1,212 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Los gusanos</title>
-<title type="sub"/>
-<title type="short">Gusanos</title>
-<title type="idno">
-<idno type="bne">XX2917284</idno>
-</title>
-<author>
-<idno type="bne">XX952949</idno>
-<idno type="viaf">24624818</idno>
-<name type="short">Lanza</name>
-<name type="full">Silverio Lanza</name>
-</author>
-<principal xml:id="jct">José Calvo Tello</principal>
-</titleStmt>
-<extent>
-<measure unit="lines">699</measure>
-<measure unit="divs">6</measure>
-<measure unit="tokens">11805</measure>
-<measure unit="chars">66120</measure>
-<measure unit="size_kb">82</measure>
-<measure unit="chapters">4</measure>
-<measure unit="shortStories">0</measure>
-<measure unit="parts">0</measure>
-<measure unit="sections">1</measure>
-<measure unit="divisions">0</measure> 
-<measure unit="blocks">656</measure> 
-<measure unit="lg.poems">3</measure> 
-<measure unit="lg.stanzas">0</measure> 
-<measure unit="line.verses">16</measure> 
-<measure unit="heads">4</measure> 
-<measure unit="stages">0</measure> 
-<measure unit="sps">0</measure> 
-<measure unit="paragraphs">633</measure> 
-<measure unit="abs">3</measure> 
-<measure unit="fts">1</measure>
-<measure unit="paragraphs.ds">488</measure>
-<measure unit="saids">490</measure>
-<measure unit="narrative.ps">145</measure>
-<measure unit="punctual_ss">963</measure> 
-<measure unit="numerals">4</measure> 
-<measure unit="puncts">2904</measure> 
-<measure unit="len.abstract">31</measure>
-<measure unit="chapters.len.mean">17395.25</measure>
-<measure unit="chapters.len.std">5842.73</measure>
-<measure unit="chapters.len.median">19281.50</measure>
-<measure unit="chapters.len.iqr">5497.75</measure>
-<measure unit="types">3056</measure>
-<measure unit="ss">463</measure>
-<measure unit="ss.num.mean">146.89</measure>
-<measure unit="ss.num.std">126.92</measure>
-<measure unit="ss.num.median">113.00</measure>
-<measure unit="ss.num.iqr">114.00</measure>
-<measure unit="ss.active.verbs.mean">3.05</measure>
-<measure unit="ss.active.verbs.std">2.93</measure>
-<measure unit="ss.active.verbs.median">2.00</measure>
-<measure unit="ss.active.verbs.iqr">3.00</measure>
-<measure unit="ws">14721</measure>
-<measure unit="ws.num.mean">3.65</measure>
-<measure unit="ws.num.std">2.78</measure>
-<measure unit="ws.num.median">3.00</measure>
-<measure unit="ws.num.iqr">4.00</measure>
-<measure unit="conjunctions">1246</measure>
-<measure unit="determiners">1750</measure>
-<measure unit="nouns">2371</measure>
-<measure unit="verbs">2359</measure>
-<measure unit="adverbs">637</measure>
-<measure unit="adjectives">423</measure>
-<measure unit="adpositions">1486</measure>
-<measure unit="punctuations">2861</measure>
-<measure unit="pronouns">1443</measure>
-<measure unit="dates">11</measure>
-<measure unit="numbers">75</measure>
-<measure unit="interjections">59</measure>
-<measure unit="ne.persons">281</measure>
-<measure unit="ne.organizations">69</measure>
-<measure unit="ne.locations">52</measure>
-<measure unit="ne.others">12</measure>
-<measure unit="wnlex.noun.plants">5</measure>
-<measure unit="wnlex.verb.communications">244</measure>
-<measure unit="wnlex.noun.foods">24</measure>
-<measure unit="wnlex.verb.possessions">241</measure>
-<measure unit="wnlex.verb.cognitions">157</measure>
-<measure unit="wnlex.noun.communications">131</measure>
-<measure unit="wnlex.noun.states">40</measure>
-<measure unit="wnlex.verb.statives">603</measure>
-<measure unit="wnlex.noun.cognitions">57</measure>
-<measure unit="wnlex.noun.times">65</measure>
-<measure unit="wnlex.verb.bodys">78</measure>
-<measure unit="wnlex.noun.persons">428</measure>
-<measure unit="wnlex.adj.alls">300</measure>
-<measure unit="wnlex.noun.quantitys">25</measure>
-<measure unit="wnlex.noun.phenomenons">14</measure>
-<measure unit="wnlex.verb.creations">102</measure>
-<measure unit="wnlex.adj.perts">20</measure>
-<measure unit="wnlex.adv.alls">211</measure>
-<measure unit="wnlex.noun.processs">4</measure>
-<measure unit="wnlex.noun.artifacts">222</measure>
-<measure unit="wnlex.verb.perceptions">66</measure>
-<measure unit="wnlex.noun.feelings">22</measure>
-<measure unit="wnlex.verb.weathers">4</measure>
-<measure unit="wnlex.noun.substances">20</measure>
-<measure unit="wnlex.noun.shapes">2</measure>
-<measure unit="wnlex.verb.competitions">14</measure>
-<measure unit="wnlex.verb.motions">264</measure>
-<measure unit="wnlex.noun.animals">65</measure>
-<measure unit="wnlex.noun.acts">189</measure>
-<measure unit="wnlex.noun.bodys">32</measure>
-<measure unit="wnlex.noun.objects">14</measure>
-<measure unit="wnlex.noun.motives">2</measure>
-<measure unit="wnlex.verb.socials">131</measure>
-<measure unit="wnlex.noun.groups">133</measure>
-<measure unit="wnlex.verb.consumptions">30</measure>
-<measure unit="wnlex.noun.possessions">62</measure>
-<measure unit="wnlex.noun.Topss">14</measure>
-<measure unit="wnlex.noun.relations">3</measure>
-<measure unit="wnlex.noun.attributes">90</measure>
-<measure unit="wnlex.verb.emotions">55</measure>
-<measure unit="wnlex.noun.locations">54</measure>
-<measure unit="wnlex.noun.events">22</measure>
-<measure unit="wnlex.verb.contacts">91</measure>
-<measure unit="wnlex.xxxs">10259</measure>
-<measure unit="wnlex.verb.changes">112</measure>
-</extent>
-<publicationStmt>
-<publisher>CLiGS</publisher>
-<availability status="free">
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Los gusanos</title>
+				<title type="sub"></title>
+				<title type="short">Gusanos</title>
+				<title type="idno">
+					<idno type="bne">XX2917284</idno>
+				</title>
+				<author>
+					<idno type="bne">XX952949</idno>
+					<idno type="viaf">24624818</idno>
+					<name type="short">Lanza</name>
+					<name type="full">Silverio Lanza</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">699</measure>
+				<measure unit="divs">6</measure>
+				<measure unit="tokens">11805</measure>
+				<measure unit="chars">66120</measure>
+				<measure unit="size_kb">82</measure>
+				<measure unit="chapters">4</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">1</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">656</measure> 
+				<measure unit="lg.poems">3</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">16</measure> 
+				<measure unit="heads">4</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">633</measure> 
+				<measure unit="abs">3</measure> 
+				<measure unit="fts">1</measure>
+				<measure unit="paragraphs.ds">488</measure>
+				<measure unit="saids">490</measure>
+				<measure unit="narrative.ps">145</measure>
+				<measure unit="punctual_ss">963</measure> 
+				<measure unit="numerals">4</measure> 
+				<measure unit="puncts">2904</measure> 
+				<measure unit="len.abstract">31</measure>
+				<measure unit="chapters.len.mean">17395.25</measure>
+				<measure unit="chapters.len.std">5842.73</measure>
+				<measure unit="chapters.len.median">19281.50</measure>
+				<measure unit="chapters.len.iqr">5497.75</measure>
+
+				<measure unit="types">3056</measure>
+
+				<measure unit="ss">463</measure>
+				<measure unit="ss.num.mean">146.89</measure>
+				<measure unit="ss.num.std">126.92</measure>
+				<measure unit="ss.num.median">113.00</measure>
+				<measure unit="ss.num.iqr">114.00</measure>
+				<measure unit="ss.active.verbs.mean">3.05</measure>
+				<measure unit="ss.active.verbs.std">2.93</measure>
+				<measure unit="ss.active.verbs.median">2.00</measure>
+				<measure unit="ss.active.verbs.iqr">3.00</measure>
+
+				<measure unit="ws">14721</measure>
+				<measure unit="ws.num.mean">3.65</measure>
+				<measure unit="ws.num.std">2.78</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">1246</measure>
+				<measure unit="determiners">1750</measure>
+				<measure unit="nouns">2371</measure>
+				<measure unit="verbs">2359</measure>
+				<measure unit="adverbs">637</measure>
+				<measure unit="adjectives">423</measure>
+				<measure unit="adpositions">1486</measure>
+				<measure unit="punctuations">2861</measure>
+				<measure unit="pronouns">1443</measure>
+				<measure unit="dates">11</measure>
+				<measure unit="numbers">75</measure>
+				<measure unit="interjections">59</measure>
+
+				<measure unit="ne.persons">281</measure>
+				<measure unit="ne.organizations">69</measure>
+				<measure unit="ne.locations">52</measure>
+				<measure unit="ne.others">12</measure>
+
+				<measure unit="wnlex.noun.plants">5</measure>
+				<measure unit="wnlex.verb.communications">244</measure>
+				<measure unit="wnlex.noun.foods">24</measure>
+				<measure unit="wnlex.verb.possessions">241</measure>
+				<measure unit="wnlex.verb.cognitions">157</measure>
+				<measure unit="wnlex.noun.communications">131</measure>
+				<measure unit="wnlex.noun.states">40</measure>
+				<measure unit="wnlex.verb.statives">603</measure>
+				<measure unit="wnlex.noun.cognitions">57</measure>
+				<measure unit="wnlex.noun.times">65</measure>
+				<measure unit="wnlex.verb.bodys">78</measure>
+				<measure unit="wnlex.noun.persons">428</measure>
+				<measure unit="wnlex.adj.alls">300</measure>
+				<measure unit="wnlex.noun.quantitys">25</measure>
+				<measure unit="wnlex.noun.phenomenons">14</measure>
+				<measure unit="wnlex.verb.creations">102</measure>
+				<measure unit="wnlex.adj.perts">20</measure>
+				<measure unit="wnlex.adv.alls">211</measure>
+				<measure unit="wnlex.noun.processs">4</measure>
+				<measure unit="wnlex.noun.artifacts">222</measure>
+				<measure unit="wnlex.verb.perceptions">66</measure>
+				<measure unit="wnlex.noun.feelings">22</measure>
+				<measure unit="wnlex.verb.weathers">4</measure>
+				<measure unit="wnlex.noun.substances">20</measure>
+				<measure unit="wnlex.noun.shapes">2</measure>
+				<measure unit="wnlex.verb.competitions">14</measure>
+				<measure unit="wnlex.verb.motions">264</measure>
+				<measure unit="wnlex.noun.animals">65</measure>
+				<measure unit="wnlex.noun.acts">189</measure>
+				<measure unit="wnlex.noun.bodys">32</measure>
+				<measure unit="wnlex.noun.objects">14</measure>
+				<measure unit="wnlex.noun.motives">2</measure>
+				<measure unit="wnlex.verb.socials">131</measure>
+				<measure unit="wnlex.noun.groups">133</measure>
+				<measure unit="wnlex.verb.consumptions">30</measure>
+				<measure unit="wnlex.noun.possessions">62</measure>
+				<measure unit="wnlex.noun.Topss">14</measure>
+				<measure unit="wnlex.noun.relations">3</measure>
+				<measure unit="wnlex.noun.attributes">90</measure>
+				<measure unit="wnlex.verb.emotions">55</measure>
+				<measure unit="wnlex.noun.locations">54</measure>
+				<measure unit="wnlex.noun.events">22</measure>
+				<measure unit="wnlex.verb.contacts">91</measure>
+				<measure unit="wnlex.xxxs">10259</measure>
+				<measure unit="wnlex.verb.changes">112</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
-<date when="2016">2016</date>
-<idno type="cligs">ne0290</idno>
-</publicationStmt>
-<sourceDesc>
-<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
-<bibl type="print-source">Edición digital basada en la de [Madrid], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
-<bibl type="edition-first"><date when="1909">1909</date></bibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p><seg type="narrative"><s>.</s></seg></p>
-</encodingDesc>
-<profileDesc>
-<abstract source="MdLE9">
-<p><seg type="narrative"><s>Un nuevo relato anticaciquil.</s></seg></p>
-</abstract>
-<textClass>
-<keywords scheme="keywords.xml" cert="low">
-<term type="author.TOC.range" resp="MdL9">7</term>
-<term type="author.continent">Europe</term>
-<term type="author.country">Spain</term>
-<term type="author.date.birth">1856</term>
-<term type="author.date.death">1912</term>
-<term type="author.gender">male</term>
-<term type="author.litHist.pages" resp="MdL9">13</term>
-<term type="author.movement">modernism</term>
-<term type="author.nonNovelGenre">short-stories</term>
-<term type="author.submovement">1-modernista</term>
-<term type="author.year.change">0</term>
-<term type="authorText.group">otros escritos</term>
-<term type="authorText.relation">none</term>
-<term type="text.characters.protagonist.age">adult</term>
-<term type="text.characters.protagonist.gender">male</term>
-<term type="text.characters.protagonist.name">Manolo</term>
-<term type="text.characters.protagonist.profession">worker</term>
-<term type="text.characters.protagonist.socLevel">medium</term>
-<term type="text.corpora.CoNSSA">True</term>
-<term type="text.corpora.CoNSSA.canon">False</term>
-<term type="text.form">prose</term>
-<term type="text.genre">novela</term>
-<term type="text.genre.subgenre.edit" resp="#"/>
-<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica</term>
-<term type="text.genre.subgenre.edit" resp="epublibre">Drama, Realista</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">social</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="2">realist</term>
-<term type="text.genre.subgenre.litHist" resp="MdLE"/>
-<term type="text.genre.subtitle"/>
-<term type="text.genre.supergenre">narrative</term>
-<term type="text.language">Spanish</term>
-<term type="text.litHist.ToC">1</term>
-<term type="text.litHist.mentioned" resp="HdLE">False</term>
-<term type="text.litHist.mentioned" resp="MdLE">True</term>
-<term type="text.litHist.pages" resp="MdLE9">0.2</term>
-<term type="text.movement">modernista</term>
-<term type="text.narration.narrator">heterodiegetic</term>
-<term type="text.plot.end">negative</term>
-<term type="text.plot.representation">realistic</term>
-<term type="text.publication">book</term>
-<term type="text.quality.listhist" resp="#"/>
-<term type="text.setting.continent">Europe</term>
-<term type="text.setting.country">Spain</term>
-<term type="text.setting.represented">Navalarga</term>
-<term type="text.setting.settlement">Navalarga</term>
-<term type="text.setting.settlement.represented.exist">True</term>
-<term type="text.setting.settlement.type">rural</term>
-<term type="text.setting.territory"/>
-<term type="text.time.period">contemporary</term>
-<term type="text.time.span" cert="low">365</term>
-<term type="text.time.year">18??</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change when="2016-07-20" who="#jct">Initial TEI version.</change>
-</revisionDesc>
-</teiHeader>
+				<date when="2016">2016</date>
+				<idno type="cligs">ne0290</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
+				<bibl type="print-source">Edición digital basada en la de [Madrid], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
+				<bibl type="edition-first"><date when="1909">1909</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE9">
+				<p>Un nuevo relato anticaciquil.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="low">
+					<term type="author.TOC.range" resp="MdL9">7</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1856</term>
+					<term type="author.date.death">1912</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL9">13</term>
+					<term type="author.movement">modernism</term>
+					<term type="author.nonNovelGenre">short-stories</term>
+					<term type="author.submovement">1-modernista</term>
+					<term type="author.year.change">0</term>
+					<term type="authorText.group">otros escritos</term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">adult</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">Manolo</term>
+					<term type="text.characters.protagonist.profession">worker</term>
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica</term>
+					<term type="text.genre.subgenre.edit" resp="epublibre">Drama, Realista</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">1</term>
+					<term type="text.litHist.mentioned" resp="HdLE">False</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE9">0.2</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.quality.listhist" resp="#"></term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Spain</term>
+					<term type="text.setting.represented">Navalarga</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-6.4279392</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">41.051069299999995</term>
+					<term type="text.setting.settlement">Navalarga</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">rural</term>
+					<term type="text.setting.territory"></term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span" cert="low">365</term>
+					<term type="text.time.year">18??</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2016-07-20" who="#jct">Initial TEI version.</change>
+		</revisionDesc>
+	</teiHeader>
 <text>
 <front>
 </front>

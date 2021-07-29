@@ -1018,7 +1018,7 @@
 					<l>trocaba el hondo espejo</l>
 					<l>por agria luz sobre un rincón de osario.)</l>
 					<l>— ¿Tú, conmigo, rapaz?</l>
-					<l part="YES">Contigo, viejo.</l>
+					<l part="Y">Contigo, viejo.</l>
 					<milestone unit="section"/>
 					<l>Soñé la galería</l>
 					<l>al huerto de ciprés y limonero;</l>
@@ -1033,7 +1033,7 @@
 					<l>del mañana, la vista aterradora</l>
 					<l>de la llama prendida en la espoleta</l>
 					<l>de su granada.</l>
-					<l part="YES">¡Oh Tiempo, oh Todavía</l>
+					<l part="Y">¡Oh Tiempo, oh Todavía</l>
 					<l>preñado de inminencias!,</l>
 					<l>tú me acompañas en la senda fría,</l>
 					<l>tejedor de esperanzas e impaciencias.</l>
@@ -1154,8 +1154,8 @@
 					<lg type="poem">
 						<l>Tiene una boca de fuego</l>
 						<l>y una cintura de azogue.</l>
-						<l part="YES">Nadie la bese.</l>
-						<l part="YES">Nadie la toque.</l>
+						<l part="Y">Nadie la bese.</l>
+						<l part="Y">Nadie la toque.</l>
 						<l>Cuando el látigo del viento</l>
 						<l>suena en el campo: ¡amapola!</l>
 						<l>(como llama que se apaga</l>
@@ -1187,7 +1187,7 @@
 						<l>siempre diciendo: ¡claro!</l>
 						<l>Dormido estás: despierta.</l>
 						<l>¡Masón, masón!</l>
-						<l part="YES">Las torres</l>
+						<l part="Y">Las torres</l>
 						<l>bailando están en rueda.</l>
 						<l>Los gorriones pían</l>
 						<l>bajo la lluvia fresca.</l>
@@ -1257,7 +1257,7 @@
 						<l>¡Tan-tan! ¿Quién llama, di?</l>
 						<l>—¿Se ahorca a un inocente</l>
 						<l>en esta casa?</l>
-						<l part="YES">—Aquí</l>
+						<l part="Y">—Aquí</l>
 						<l>se ahorca, simplemente.</l>
 					</lg>
 					<milestone unit="section"/>
@@ -1281,7 +1281,7 @@
 						<l>—¿Eso será por mí?</l>
 						<l>¿Soy yo el sambenitado,</l>
 						<l>señor verdugo?</l>
-						<l part="YES">—Sí.</l>
+						<l part="Y">—Sí.</l>
 					</lg>
 					<milestone unit="section"/>
 					<p>* * *</p>
@@ -1376,19 +1376,19 @@
 						<milestone unit="section"/>
 						<l>—¿Tu eres Caronte, el fúnebre barquero?</l>
 						<l>Esa barba limosa…</l>
-						<l part="YES">—¿Y tú bergante?</l>
+						<l part="Y">—¿Y tú bergante?</l>
 						<l>—Un fúnebre aspirante</l>
 						<l>de tu negra barcaza a pasajero,</l>
 						<l>que al lago irrebogable se aproxima.</l>
 						<l>—¿Razón?</l>
-						<l part="YES">—La ignoro. Ahorcóme un peluquero</l>
+						<l part="Y">—La ignoro. Ahorcóme un peluquero</l>
 						<l>—(Todos pierden memoria en este clima).</l>
 						<l>—¿Delito?</l>
-						<l part="YES">—No recuerdo.</l>
-						<l part="YES">—¿Ida, no más?</l>
+						<l part="Y">—No recuerdo.</l>
+						<l part="Y">—¿Ida, no más?</l>
 						<l>—¿Hay vuelta?</l>
-						<l part="YES">—Si.</l>
-						<l part="YES">—Pues ida y vuelta, ¡claro!</l>
+						<l part="Y">—Si.</l>
+						<l part="Y">—Pues ida y vuelta, ¡claro!</l>
 						<l>—Sí, claro… y no tan claro: eso es muy caro.</l>
 						<l>Aguarda un momentín, y embarcarás.</l>
 					</lg>
@@ -1443,9 +1443,9 @@
 						<milestone unit="section"/>
 						<l>—No alcanzo hasta el mirador.</l>
 						<l>—Háblale.</l>
-						<l part="YES">—Si tú quisieras…</l>
+						<l part="Y">—Si tú quisieras…</l>
 						<l>—Más alto.</l>
-						<l part="YES">Darme esa flor.</l>
+						<l part="Y">Darme esa flor.</l>
 						<l>¿No me respondes, bien mío?</l>
 						<l>¡Nada, nada!</l>
 						<l>Cuajadita con el frío</l>
@@ -1468,16 +1468,16 @@
 						<l>Yo traigo un do de pecho</l>
 						<l>guardado en la cartera.</l>
 						<l>¿Qué te parece?</l>
-						<l part="YES">—Guarda.</l>
+						<l part="Y">—Guarda.</l>
 						<l>Hoy cantan las estrellas,</l>
 						<l>y nada más.</l>
-						<l part="YES">—¿Nos vamos?</l>
+						<l part="Y">—¿Nos vamos?</l>
 						<l>—Tira por esa calleja.</l>
 						<l>—Pero ¿otra vez empezamos?</l>
 						<l>«Plaza Donde Hila la Vieja».</l>
 						<l>Tiene esta plaza un relente…</l>
 						<l>¿Seguimos?</l>
-						<l part="YES">—Aguarda un poco.</l>
+						<l part="Y">—Aguarda un poco.</l>
 						<l>Aquí vive un cura loco</l>
 						<l>por un lindo adolescente.</l>
 						<l>Y aquí pena arrepentido,</l>
@@ -1488,13 +1488,13 @@
 						<l>—Un barrio feo. Gentuza.</l>
 						<l>¡Alto!… «Pretil del Valiente».</l>
 						<l>—Pregunta en el tres.</l>
-						<l part="YES">—¿Manola?</l>
+						<l part="Y">—¿Manola?</l>
 						<l>—Aquí. Pero duerme sola:</l>
 						<l>está de cuerpo presente.</l>
 						<l>¡Claro, claro! Y siempre clara,</l>
 						<l>la de la luna en la cara.</l>
 						<l>—¿Rezamos?</l>
-						<l part="YES">—No. Vámonos…</l>
+						<l part="Y">—No. Vámonos…</l>
 						<l>Si la madeja enredamos</l>
 						<l>con esa fiebre, ¡por Dios!,</l>
 						<l>ya nunca la devanamos.</l>
@@ -1577,7 +1577,7 @@
 				<div n="32" type="chapter" xml:id="ne0217_chap32">
 					<head>III</head>
 					<lg type="poem">
-						<l part="YES">Tu poeta</l>
+						<l part="Y">Tu poeta</l>
 						<l>piensa en ti. La lejanía</l>
 						<l>es de limón y violeta,</l>
 						<l>verde el campo todavía.</l>
@@ -1671,7 +1671,7 @@
 						<l>y bajo el arco del ceño</l>
 						<l>de mi vigilia, a traición,</l>
 						<l>¡siempre tú!</l>
-						<l part="YES">Guiomar, Guiomar,</l>
+						<l part="Y">Guiomar, Guiomar,</l>
 						<l>mírame en ti castigado:</l>
 						<l>reo de haberte creado,</l>
 						<l>ya no te puedo olvidar.</l>
@@ -1848,7 +1848,7 @@
 						<l>mas te quiero mirar y agradecerte</l>
 						<l>lo mucho que me hiciste compañía</l>
 						<l>con tu frío desdén.</l>
-						<l part="YES">Quiso la muerte</l>
+						<l part="Y">Quiso la muerte</l>
 						<l>sonreír a Martín, y no sabía.</l>
 					</lg>
 				</div>
@@ -1876,12 +1876,12 @@
 						<l>la sed que el agua clara no mitiga,</l>
 						<l>la amargura del tiempo envenenado.</l>
 						<l>¡Esta lira de muerte!</l>
-						<l part="YES">Abel palpaba</l>
+						<l part="Y">Abel palpaba</l>
 						<l>su cuerpo enflaquecido.</l>
 						<l>¿El que todo lo ve no le miraba?</l>
 						<l>¡Y esta pereza, sangre del olvido!</l>
 						<l>¡Oh, sálvame Señor!</l>
-						<l part="YES">Su vida entera,</l>
+						<l part="Y">Su vida entera,</l>
 						<l>su historia irremediable aparecía</l>
 						<l>escrita en blanda cera.</l>
 						<l>¿Y ha de borrarte el sol del nuevo día?</l>

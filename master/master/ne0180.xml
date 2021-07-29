@@ -207,6 +207,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">El Escorial</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-4.1478695</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">40.589075799999996</term>
 					<term type="text.setting.settlement">El Escorial</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term><!--jct: Debería ser considerado EL Escorial pequeña ciudad o pueblo? small-city o rural?-->

@@ -204,6 +204,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">France</term><!--Also Germany-->
 					<term type="text.setting.represented">Europe</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">6.1296751</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">49.8158683</term>
 					<term type="text.setting.settlement">mixed</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

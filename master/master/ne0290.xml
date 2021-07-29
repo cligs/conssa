@@ -202,6 +202,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Navalarga</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-6.4279392</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">41.051069299999995</term>
 					<term type="text.setting.settlement">Navalarga</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

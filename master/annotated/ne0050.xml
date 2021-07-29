@@ -1,209 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Los pies y los zapatos de Enriqueta</title>
-<title type="sub"/>
-<title type="short">Zapatos</title>
-<title type="idno"><idno type="viaf">185858025</idno></title>
-<author>
-<idno type="bne">XX1720928</idno>
-<idno type="viaf">29542991</idno>
-<name type="short">Miro</name>
-<name type="full">Gabriel Miró</name>
-</author>
-<principal xml:id="jct">José Calvo Tello</principal>
-</titleStmt>
-<extent>
-<measure unit="lines">419</measure>
-<measure unit="divs">10</measure>
-<measure unit="tokens">10993</measure>
-<measure unit="chars">64699</measure>
-<measure unit="size_kb">79</measure>
-<measure unit="chapters">9</measure>
-<measure unit="shortStories">0</measure>
-<measure unit="parts">0</measure>
-<measure unit="sections">0</measure>
-<measure unit="divisions">0</measure> 
-<measure unit="blocks">381</measure> 
-<measure unit="lg.poems">1</measure> 
-<measure unit="lg.stanzas">0</measure> 
-<measure unit="line.verses">2</measure> 
-<measure unit="heads">9</measure> 
-<measure unit="stages">0</measure> 
-<measure unit="sps">0</measure> 
-<measure unit="paragraphs">370</measure> 
-<measure unit="abs">0</measure> 
-<measure unit="fts">0</measure>
-<measure unit="paragraphs.ds">118</measure>
-<measure unit="saids">132</measure>
-<measure unit="narrative.ps">252</measure>
-<measure unit="punctual_ss">630</measure> 
-<measure unit="numerals">0</measure> 
-<measure unit="puncts">2210</measure> 
-<measure unit="len.abstract">859</measure>
-<measure unit="chapters.len.mean">7399.33</measure>
-<measure unit="chapters.len.std">3864.29</measure>
-<measure unit="chapters.len.median">7505.00</measure>
-<measure unit="chapters.len.iqr">3907.00</measure>
-<measure unit="types">3546</measure>
-<measure unit="ss">473</measure>
-<measure unit="ss.num.mean">139.73</measure>
-<measure unit="ss.num.std">113.64</measure>
-<measure unit="ss.num.median">109.00</measure>
-<measure unit="ss.num.iqr">115.00</measure>
-<measure unit="ss.active.verbs.mean">2.24</measure>
-<measure unit="ss.active.verbs.std">1.77</measure>
-<measure unit="ss.active.verbs.median">2.00</measure>
-<measure unit="ss.active.verbs.iqr">2.00</measure>
-<measure unit="ws">13114</measure>
-<measure unit="ws.num.mean">4.08</measure>
-<measure unit="ws.num.std">2.96</measure>
-<measure unit="ws.num.median">3.00</measure>
-<measure unit="ws.num.iqr">4.00</measure>
-<measure unit="conjunctions">879</measure>
-<measure unit="determiners">1910</measure>
-<measure unit="nouns">2730</measure>
-<measure unit="verbs">1897</measure>
-<measure unit="adverbs">520</measure>
-<measure unit="adjectives">639</measure>
-<measure unit="adpositions">1545</measure>
-<measure unit="punctuations">2092</measure>
-<measure unit="pronouns">848</measure>
-<measure unit="dates">5</measure>
-<measure unit="numbers">32</measure>
-<measure unit="interjections">17</measure>
-<measure unit="ne.persons">251</measure>
-<measure unit="ne.organizations">31</measure>
-<measure unit="ne.locations">57</measure>
-<measure unit="ne.others">25</measure>
-<measure unit="wnlex.noun.plants">29</measure>
-<measure unit="wnlex.verb.communications">174</measure>
-<measure unit="wnlex.noun.foods">31</measure>
-<measure unit="wnlex.verb.possessions">65</measure>
-<measure unit="wnlex.verb.cognitions">68</measure>
-<measure unit="wnlex.noun.communications">139</measure>
-<measure unit="wnlex.noun.states">44</measure>
-<measure unit="wnlex.verb.statives">325</measure>
-<measure unit="wnlex.noun.cognitions">71</measure>
-<measure unit="wnlex.noun.times">61</measure>
-<measure unit="wnlex.verb.bodys">125</measure>
-<measure unit="wnlex.noun.persons">442</measure>
-<measure unit="wnlex.adj.alls">425</measure>
-<measure unit="wnlex.noun.quantitys">11</measure>
-<measure unit="wnlex.noun.phenomenons">13</measure>
-<measure unit="wnlex.verb.creations">97</measure>
-<measure unit="wnlex.adj.perts">13</measure>
-<measure unit="wnlex.adv.alls">200</measure>
-<measure unit="wnlex.noun.processs">12</measure>
-<measure unit="wnlex.noun.artifacts">297</measure>
-<measure unit="wnlex.verb.perceptions">123</measure>
-<measure unit="wnlex.noun.feelings">48</measure>
-<measure unit="wnlex.verb.weathers">17</measure>
-<measure unit="wnlex.noun.substances">45</measure>
-<measure unit="wnlex.noun.shapes">17</measure>
-<measure unit="wnlex.verb.competitions">17</measure>
-<measure unit="wnlex.verb.motions">156</measure>
-<measure unit="wnlex.noun.animals">40</measure>
-<measure unit="wnlex.noun.acts">117</measure>
-<measure unit="wnlex.noun.bodys">134</measure>
-<measure unit="wnlex.noun.objects">43</measure>
-<measure unit="wnlex.noun.motives">1</measure>
-<measure unit="wnlex.verb.socials">109</measure>
-<measure unit="wnlex.noun.groups">81</measure>
-<measure unit="wnlex.verb.consumptions">27</measure>
-<measure unit="wnlex.noun.possessions">15</measure>
-<measure unit="wnlex.noun.Topss">19</measure>
-<measure unit="wnlex.noun.relations">2</measure>
-<measure unit="wnlex.noun.attributes">102</measure>
-<measure unit="wnlex.verb.emotions">53</measure>
-<measure unit="wnlex.noun.locations">47</measure>
-<measure unit="wnlex.noun.events">52</measure>
-<measure unit="wnlex.verb.contacts">118</measure>
-<measure unit="wnlex.xxxs">8966</measure>
-<measure unit="wnlex.verb.changes">123</measure>
-</extent>
-<publicationStmt>
-<publisher>CLiGS</publisher>
-<availability status="free">
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Los pies y los zapatos de Enriqueta</title>
+				<title type="sub"></title>
+				<title type="short">Zapatos</title>
+				<title type="idno"><idno type="viaf">185858025</idno></title>
+				<author>
+					<idno type="bne">XX1720928</idno>
+					<idno type="viaf">29542991</idno>
+					<name type="short">Miro</name>
+					<name type="full">Gabriel Miró</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">419</measure>
+				<measure unit="divs">10</measure>
+				<measure unit="tokens">10993</measure>
+				<measure unit="chars">64699</measure>
+				<measure unit="size_kb">79</measure>
+				<measure unit="chapters">9</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">0</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">381</measure> 
+				<measure unit="lg.poems">1</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">2</measure> 
+				<measure unit="heads">9</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">370</measure> 
+				<measure unit="abs">0</measure> 
+				<measure unit="fts">0</measure>
+				<measure unit="paragraphs.ds">118</measure>
+				<measure unit="saids">132</measure>
+				<measure unit="narrative.ps">252</measure>
+				<measure unit="punctual_ss">630</measure> 
+				<measure unit="numerals">0</measure> 
+				<measure unit="puncts">2210</measure> 
+				<measure unit="len.abstract">859</measure>
+				<measure unit="chapters.len.mean">7399.33</measure>
+				<measure unit="chapters.len.std">3864.29</measure>
+				<measure unit="chapters.len.median">7505.00</measure>
+				<measure unit="chapters.len.iqr">3907.00</measure>
+
+				<measure unit="types">3546</measure>
+
+				<measure unit="ss">473</measure>
+				<measure unit="ss.num.mean">139.73</measure>
+				<measure unit="ss.num.std">113.64</measure>
+				<measure unit="ss.num.median">109.00</measure>
+				<measure unit="ss.num.iqr">115.00</measure>
+				<measure unit="ss.active.verbs.mean">2.24</measure>
+				<measure unit="ss.active.verbs.std">1.77</measure>
+				<measure unit="ss.active.verbs.median">2.00</measure>
+				<measure unit="ss.active.verbs.iqr">2.00</measure>
+
+				<measure unit="ws">13114</measure>
+				<measure unit="ws.num.mean">4.08</measure>
+				<measure unit="ws.num.std">2.96</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">879</measure>
+				<measure unit="determiners">1910</measure>
+				<measure unit="nouns">2730</measure>
+				<measure unit="verbs">1897</measure>
+				<measure unit="adverbs">520</measure>
+				<measure unit="adjectives">639</measure>
+				<measure unit="adpositions">1545</measure>
+				<measure unit="punctuations">2092</measure>
+				<measure unit="pronouns">848</measure>
+				<measure unit="dates">5</measure>
+				<measure unit="numbers">32</measure>
+				<measure unit="interjections">17</measure>
+
+				<measure unit="ne.persons">251</measure>
+				<measure unit="ne.organizations">31</measure>
+				<measure unit="ne.locations">57</measure>
+				<measure unit="ne.others">25</measure>
+
+				<measure unit="wnlex.noun.plants">29</measure>
+				<measure unit="wnlex.verb.communications">174</measure>
+				<measure unit="wnlex.noun.foods">31</measure>
+				<measure unit="wnlex.verb.possessions">65</measure>
+				<measure unit="wnlex.verb.cognitions">68</measure>
+				<measure unit="wnlex.noun.communications">139</measure>
+				<measure unit="wnlex.noun.states">44</measure>
+				<measure unit="wnlex.verb.statives">325</measure>
+				<measure unit="wnlex.noun.cognitions">71</measure>
+				<measure unit="wnlex.noun.times">61</measure>
+				<measure unit="wnlex.verb.bodys">125</measure>
+				<measure unit="wnlex.noun.persons">442</measure>
+				<measure unit="wnlex.adj.alls">425</measure>
+				<measure unit="wnlex.noun.quantitys">11</measure>
+				<measure unit="wnlex.noun.phenomenons">13</measure>
+				<measure unit="wnlex.verb.creations">97</measure>
+				<measure unit="wnlex.adj.perts">13</measure>
+				<measure unit="wnlex.adv.alls">200</measure>
+				<measure unit="wnlex.noun.processs">12</measure>
+				<measure unit="wnlex.noun.artifacts">297</measure>
+				<measure unit="wnlex.verb.perceptions">123</measure>
+				<measure unit="wnlex.noun.feelings">48</measure>
+				<measure unit="wnlex.verb.weathers">17</measure>
+				<measure unit="wnlex.noun.substances">45</measure>
+				<measure unit="wnlex.noun.shapes">17</measure>
+				<measure unit="wnlex.verb.competitions">17</measure>
+				<measure unit="wnlex.verb.motions">156</measure>
+				<measure unit="wnlex.noun.animals">40</measure>
+				<measure unit="wnlex.noun.acts">117</measure>
+				<measure unit="wnlex.noun.bodys">134</measure>
+				<measure unit="wnlex.noun.objects">43</measure>
+				<measure unit="wnlex.noun.motives">1</measure>
+				<measure unit="wnlex.verb.socials">109</measure>
+				<measure unit="wnlex.noun.groups">81</measure>
+				<measure unit="wnlex.verb.consumptions">27</measure>
+				<measure unit="wnlex.noun.possessions">15</measure>
+				<measure unit="wnlex.noun.Topss">19</measure>
+				<measure unit="wnlex.noun.relations">2</measure>
+				<measure unit="wnlex.noun.attributes">102</measure>
+				<measure unit="wnlex.verb.emotions">53</measure>
+				<measure unit="wnlex.noun.locations">47</measure>
+				<measure unit="wnlex.noun.events">52</measure>
+				<measure unit="wnlex.verb.contacts">118</measure>
+				<measure unit="wnlex.xxxs">8966</measure>
+				<measure unit="wnlex.verb.changes">123</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
-<date when="2015">2015</date>
-<idno type="cligs">ne0050</idno>
-</publicationStmt>
-<sourceDesc>
-<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/los-pies-y-los-zapatos-de-enriqueta/"/>.</bibl>
-<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1934">1934</date></bibl>
-<bibl type="edition-first"><date when="1912">1912</date></bibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p/>
-</encodingDesc>
-<profileDesc>
-<abstract source="MdLE10">
-<p><seg type="narrative"><s>Comienza la crítica de la vida provinciana.</s><s> Miró deja en segundo plano la contemplación esteticista para preocuparse de los problemas sociales de su tiempo.</s></seg></p>
-<p><seg type="narrative"><s>La acción se desarrolla en el publecito alicantino de Boraida, que vive bajo el cacicato de la Señora.</s><s> Este persoanje sirve de lazo de unión entre las diversas historias que se cuentan.</s><s> Dos de ellas tienen un protagonista individual: la de la abula Mari-Rosario, que por desavenencias con su nuera acaba en el más triste de los abandonos; y el fracaso sentimental de Enriqueta, que ingresa en un convento.</s><s> Otros episodios atañen a la vida colectiva del pueblo: la sequía con la procesión de rogativa a San Rafael, que termina con la "milagrosa" llegada del zahorí BAutista; y la presencia de unos húngaros que son considerados como intrusos porque su libertad contrasta con la mezquina vida lugareña.</s></seg></p>
-</abstract>
-<textClass>
-<keywords scheme="keywords.xml" cert="high">
-<term type="author.TOC.range" resp="MdL10">7</term>
-<term type="author.continent">Europe</term>
-<term type="author.country">Spain</term>
-<term type="author.date.birth">1879</term>
-<term type="author.date.death">1930</term>
-<term type="author.gender">male</term>
-<term type="author.litHist.pages" resp="MdL10">33</term>
-<term type="author.movement">avantgarde</term>
-<term type="author.nonNovelGenre">short-stories</term>
-<term type="author.submovement">3-modernista</term>
-<term type="author.year.change">1914</term>
-<term type="authorText.group">novelas de la segunda etapa</term>
-<term type="authorText.relation">none</term>
-<term type="text.characters.protagonist.age">young</term>
-<term type="text.characters.protagonist.gender">female</term>
-<term type="text.characters.protagonist.name">Enriqueta</term>
-<term type="text.characters.protagonist.profession">none</term>
-<term type="text.characters.protagonist.socLevel">medium</term>
-<term type="text.corpora.CoNSSA">True</term>
-<term type="text.corpora.CoNSSA.canon">True</term>
-<term type="text.form">prose</term>
-<term type="text.genre">novela</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">sentimental</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">social</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="2">realist</term>
-<term type="text.genre.subgenre.litHist" resp="MdLE"/>
-<term type="text.genre.subtitle"/>
-<term type="text.genre.supergenre">narrative</term>
-<term type="text.language">Spanish</term>
-<term type="text.litHist.ToC">4</term>
-<term type="text.litHist.mentioned" resp="HdLE">True</term>
-<term type="text.litHist.mentioned" resp="MdLE">True</term>
-<term type="text.litHist.pages" resp="MdLE10">1.0</term>
-<term type="text.movement">modernista</term>
-<term type="text.narration.narrator">heterodiegetic</term>
-<term type="text.plot.end">negative</term>
-<term type="text.plot.representation">realistic</term>
-<term type="text.publication">book</term>
-<term type="text.setting.continent">Europe</term>
-<term type="text.setting.country">Spain</term>
-<term type="text.setting.represented">Boraida</term>
-<term type="text.setting.settlement">Boraida</term>
-<term type="text.setting.settlement.represented.exist">True</term>
-<term type="text.setting.settlement.type">rural</term>
-<term type="text.setting.territory">Valencia</term>
-<term type="text.time.period">contemporary</term>
-<term type="text.time.span">365</term>
-<term type="text.litHist.literaryQuality" resp="MdLE">medium</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change when="2015-04-01" who="#jct">Initial TEI version.</change>
-<change when="2015-11-06" who="#jct">New metedata after reading the text as eBook.</change>
-</revisionDesc>
-</teiHeader>
+				<date when="2015">2015</date>
+				<idno type="cligs">ne0050</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/los-pies-y-los-zapatos-de-enriqueta/"/>.</bibl>
+				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1934">1934</date></bibl>
+				<bibl type="edition-first"><date when="1912">1912</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE10">
+				<p>Comienza la crítica de la vida provinciana. Miró deja en segundo plano la contemplación esteticista para preocuparse de los problemas sociales de su tiempo.</p>
+				<p>La acción se desarrolla en el publecito alicantino de Boraida, que vive bajo el cacicato de la Señora. Este persoanje sirve de lazo de unión entre las diversas historias que se cuentan. Dos de ellas tienen un protagonista individual: la de la abula Mari-Rosario, que por desavenencias con su nuera acaba en el más triste de los abandonos; y el fracaso sentimental de Enriqueta, que ingresa en un convento. Otros episodios atañen a la vida colectiva del pueblo: la sequía con la procesión de rogativa a San Rafael, que termina con la "milagrosa" llegada del zahorí BAutista; y la presencia de unos húngaros que son considerados como intrusos porque su libertad contrasta con la mezquina vida lugareña.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="high">
+					<term type="author.TOC.range" resp="MdL10">7</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1879</term>
+					<term type="author.date.death">1930</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL10">33</term>
+					<term type="author.movement">avantgarde</term>
+					<term type="author.nonNovelGenre">short-stories</term>
+					<term type="author.submovement">3-modernista</term>
+					<term type="author.year.change">1914</term>
+					<term type="authorText.group">novelas de la segunda etapa</term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">young</term>
+					<term type="text.characters.protagonist.gender">female</term>
+					<term type="text.characters.protagonist.name">Enriqueta</term>
+					<term type="text.characters.protagonist.profession">none</term>
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">True</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">4</term>
+					<term type="text.litHist.mentioned" resp="HdLE">True</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE10">1.0</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Spain</term>
+					<term type="text.setting.represented">Boraida</term>
+					<term type="text.setting.settlement">Boraida</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">rural</term>
+					<term type="text.setting.territory">Valencia</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span">365</term>
+					<term type="text.litHist.literaryQuality" resp="MdLE">medium</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+					
+			
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2015-04-01" who="#jct">Initial TEI version.</change>
+			<change when="2015-11-06" who="#jct">New metedata after reading the text as eBook.</change>
+		</revisionDesc>
+	</teiHeader>
 <text>
 <front>
 <div>

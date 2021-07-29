@@ -204,6 +204,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Cádiz</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-6.292567900000001</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">36.5298292</term>
 					<term type="text.setting.settlement">Cádiz</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

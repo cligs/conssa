@@ -203,6 +203,8 @@
 					<term type="text.setting.continent">Africa</term>
 					<term type="text.setting.country">South Africa</term>
 					<term type="text.setting.represented">Johannesburgo</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">28.049721999999996</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">-26.205</term>
 					<term type="text.setting.settlement">Johannesburgo</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

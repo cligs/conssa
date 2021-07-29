@@ -1,217 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Historia vulgar</title>
-<title type="sub"/>
-<title type="short">HistoriaVulgar</title>
-<title type="idno">
-<idno type="viaf">175523776</idno>
-</title>
-<author>
-<idno type="bne">XX841898</idno>
-<idno type="viaf">34456883</idno>
-<name type="short">Lorca</name>
-<name type="full">Federico García Lorca</name>
-</author>
-<principal xml:id="jct">José Calvo Tello</principal>
-</titleStmt>
-<extent>
-<measure unit="lines">197</measure>
-<measure unit="divs">12</measure>
-<measure unit="tokens">6389</measure>
-<measure unit="chars">36239</measure>
-<measure unit="size_kb">51</measure>
-<measure unit="chapters">6</measure>
-<measure unit="shortStories">0</measure>
-<measure unit="parts">0</measure>
-<measure unit="sections">4</measure>
-<measure unit="divisions">0</measure> 
-<measure unit="blocks">129</measure> 
-<measure unit="lg.poems">4</measure> 
-<measure unit="lg.stanzas">0</measure> 
-<measure unit="line.verses">14</measure> 
-<measure unit="heads">12</measure> 
-<measure unit="stages">0</measure> 
-<measure unit="sps">0</measure> 
-<measure unit="paragraphs">99</measure> 
-<measure unit="abs">4</measure> 
-<measure unit="fts">4</measure>
-<measure unit="paragraphs.ds">49</measure>
-<measure unit="saids">58</measure>
-<measure unit="narrative.ps">50</measure>
-<measure unit="punctual_ss">544</measure> 
-<measure unit="numerals">4</measure> 
-<measure unit="puncts">1458</measure> 
-<measure unit="len.abstract">97</measure>
-<measure unit="chapters.len.mean">6099.50</measure>
-<measure unit="chapters.len.std">1622.55</measure>
-<measure unit="chapters.len.median">6218.50</measure>
-<measure unit="chapters.len.iqr">2447.00</measure>
-<measure unit="types">2026</measure>
-<measure unit="ss">331</measure>
-<measure unit="ss.num.mean">109.58</measure>
-<measure unit="ss.num.std">182.49</measure>
-<measure unit="ss.num.median">68.00</measure>
-<measure unit="ss.num.iqr">63.00</measure>
-<measure unit="ss.active.verbs.mean">2.30</measure>
-<measure unit="ss.active.verbs.std">3.63</measure>
-<measure unit="ss.active.verbs.median">1.00</measure>
-<measure unit="ss.active.verbs.iqr">1.00</measure>
-<measure unit="ws">7430</measure>
-<measure unit="ws.num.mean">3.93</measure>
-<measure unit="ws.num.std">2.66</measure>
-<measure unit="ws.num.median">3.00</measure>
-<measure unit="ws.num.iqr">4.00</measure>
-<measure unit="conjunctions">378</measure>
-<measure unit="determiners">1144</measure>
-<measure unit="nouns">1494</measure>
-<measure unit="verbs">1256</measure>
-<measure unit="adverbs">276</measure>
-<measure unit="adjectives">336</measure>
-<measure unit="adpositions">843</measure>
-<measure unit="punctuations">1059</measure>
-<measure unit="pronouns">618</measure>
-<measure unit="dates">3</measure>
-<measure unit="numbers">12</measure>
-<measure unit="interjections">11</measure>
-<measure unit="ne.persons">88</measure>
-<measure unit="ne.organizations">6</measure>
-<measure unit="ne.locations">19</measure>
-<measure unit="ne.others">4</measure>
-<measure unit="wnlex.noun.plants">17</measure>
-<measure unit="wnlex.verb.communications">83</measure>
-<measure unit="wnlex.noun.foods">12</measure>
-<measure unit="wnlex.verb.possessions">39</measure>
-<measure unit="wnlex.verb.cognitions">57</measure>
-<measure unit="wnlex.noun.communications">82</measure>
-<measure unit="wnlex.noun.states">26</measure>
-<measure unit="wnlex.verb.statives">230</measure>
-<measure unit="wnlex.noun.cognitions">49</measure>
-<measure unit="wnlex.noun.times">73</measure>
-<measure unit="wnlex.verb.bodys">77</measure>
-<measure unit="wnlex.noun.persons">197</measure>
-<measure unit="wnlex.adj.alls">248</measure>
-<measure unit="wnlex.noun.quantitys">5</measure>
-<measure unit="wnlex.noun.phenomenons">32</measure>
-<measure unit="wnlex.verb.creations">58</measure>
-<measure unit="wnlex.adj.perts">6</measure>
-<measure unit="wnlex.adv.alls">105</measure>
-<measure unit="wnlex.noun.processs">12</measure>
-<measure unit="wnlex.noun.artifacts">207</measure>
-<measure unit="wnlex.verb.perceptions">59</measure>
-<measure unit="wnlex.noun.feelings">25</measure>
-<measure unit="wnlex.verb.weathers">9</measure>
-<measure unit="wnlex.noun.substances">48</measure>
-<measure unit="wnlex.noun.shapes">9</measure>
-<measure unit="wnlex.verb.competitions">6</measure>
-<measure unit="wnlex.verb.motions">170</measure>
-<measure unit="wnlex.noun.animals">67</measure>
-<measure unit="wnlex.noun.acts">39</measure>
-<measure unit="wnlex.noun.bodys">72</measure>
-<measure unit="wnlex.noun.objects">71</measure>
-<measure unit="wnlex.noun.motives">0</measure>
-<measure unit="wnlex.verb.socials">48</measure>
-<measure unit="wnlex.noun.groups">52</measure>
-<measure unit="wnlex.verb.consumptions">19</measure>
-<measure unit="wnlex.noun.possessions">11</measure>
-<measure unit="wnlex.noun.Topss">31</measure>
-<measure unit="wnlex.noun.relations">1</measure>
-<measure unit="wnlex.noun.attributes">47</measure>
-<measure unit="wnlex.verb.emotions">46</measure>
-<measure unit="wnlex.noun.locations">51</measure>
-<measure unit="wnlex.noun.events">26</measure>
-<measure unit="wnlex.verb.contacts">101</measure>
-<measure unit="wnlex.xxxs">4715</measure>
-<measure unit="wnlex.verb.changes">92</measure>
-</extent>
-<publicationStmt>
-<publisher>CLiGS</publisher>
-<availability status="free">
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Historia vulgar</title>
+				<title type="sub"></title>
+				<title type="short">HistoriaVulgar</title>
+				<title type="idno">
+					<idno type="viaf">175523776</idno>
+				</title>
+				<author>
+					<idno type="bne">XX841898</idno>
+					<idno type="viaf">34456883</idno>
+					<name type="short">Lorca</name>
+					<name type="full">Federico García Lorca</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">197</measure>
+				<measure unit="divs">12</measure>
+				<measure unit="tokens">6389</measure>
+				<measure unit="chars">36239</measure>
+				<measure unit="size_kb">51</measure>
+				<measure unit="chapters">6</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">4</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">129</measure> 
+				<measure unit="lg.poems">4</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">14</measure> 
+				<measure unit="heads">12</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">99</measure> 
+				<measure unit="abs">4</measure> 
+				<measure unit="fts">4</measure>
+				<measure unit="paragraphs.ds">49</measure>
+				<measure unit="saids">58</measure>
+				<measure unit="narrative.ps">50</measure>
+				<measure unit="punctual_ss">544</measure> 
+				<measure unit="numerals">4</measure> 
+				<measure unit="puncts">1458</measure> 
+				<measure unit="len.abstract">97</measure>
+				<measure unit="chapters.len.mean">6099.50</measure>
+				<measure unit="chapters.len.std">1622.55</measure>
+				<measure unit="chapters.len.median">6218.50</measure>
+				<measure unit="chapters.len.iqr">2447.00</measure>
+
+				<measure unit="types">2026</measure>
+
+				<measure unit="ss">331</measure>
+				<measure unit="ss.num.mean">109.58</measure>
+				<measure unit="ss.num.std">182.49</measure>
+				<measure unit="ss.num.median">68.00</measure>
+				<measure unit="ss.num.iqr">63.00</measure>
+				<measure unit="ss.active.verbs.mean">2.30</measure>
+				<measure unit="ss.active.verbs.std">3.63</measure>
+				<measure unit="ss.active.verbs.median">1.00</measure>
+				<measure unit="ss.active.verbs.iqr">1.00</measure>
+
+				<measure unit="ws">7430</measure>
+				<measure unit="ws.num.mean">3.93</measure>
+				<measure unit="ws.num.std">2.66</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">378</measure>
+				<measure unit="determiners">1144</measure>
+				<measure unit="nouns">1494</measure>
+				<measure unit="verbs">1256</measure>
+				<measure unit="adverbs">276</measure>
+				<measure unit="adjectives">336</measure>
+				<measure unit="adpositions">843</measure>
+				<measure unit="punctuations">1059</measure>
+				<measure unit="pronouns">618</measure>
+				<measure unit="dates">3</measure>
+				<measure unit="numbers">12</measure>
+				<measure unit="interjections">11</measure>
+
+				<measure unit="ne.persons">88</measure>
+				<measure unit="ne.organizations">6</measure>
+				<measure unit="ne.locations">19</measure>
+				<measure unit="ne.others">4</measure>
+
+				<measure unit="wnlex.noun.plants">17</measure>
+				<measure unit="wnlex.verb.communications">83</measure>
+				<measure unit="wnlex.noun.foods">12</measure>
+				<measure unit="wnlex.verb.possessions">39</measure>
+				<measure unit="wnlex.verb.cognitions">57</measure>
+				<measure unit="wnlex.noun.communications">82</measure>
+				<measure unit="wnlex.noun.states">26</measure>
+				<measure unit="wnlex.verb.statives">230</measure>
+				<measure unit="wnlex.noun.cognitions">49</measure>
+				<measure unit="wnlex.noun.times">73</measure>
+				<measure unit="wnlex.verb.bodys">77</measure>
+				<measure unit="wnlex.noun.persons">197</measure>
+				<measure unit="wnlex.adj.alls">248</measure>
+				<measure unit="wnlex.noun.quantitys">5</measure>
+				<measure unit="wnlex.noun.phenomenons">32</measure>
+				<measure unit="wnlex.verb.creations">58</measure>
+				<measure unit="wnlex.adj.perts">6</measure>
+				<measure unit="wnlex.adv.alls">105</measure>
+				<measure unit="wnlex.noun.processs">12</measure>
+				<measure unit="wnlex.noun.artifacts">207</measure>
+				<measure unit="wnlex.verb.perceptions">59</measure>
+				<measure unit="wnlex.noun.feelings">25</measure>
+				<measure unit="wnlex.verb.weathers">9</measure>
+				<measure unit="wnlex.noun.substances">48</measure>
+				<measure unit="wnlex.noun.shapes">9</measure>
+				<measure unit="wnlex.verb.competitions">6</measure>
+				<measure unit="wnlex.verb.motions">170</measure>
+				<measure unit="wnlex.noun.animals">67</measure>
+				<measure unit="wnlex.noun.acts">39</measure>
+				<measure unit="wnlex.noun.bodys">72</measure>
+				<measure unit="wnlex.noun.objects">71</measure>
+				<measure unit="wnlex.noun.motives">0</measure>
+				<measure unit="wnlex.verb.socials">48</measure>
+				<measure unit="wnlex.noun.groups">52</measure>
+				<measure unit="wnlex.verb.consumptions">19</measure>
+				<measure unit="wnlex.noun.possessions">11</measure>
+				<measure unit="wnlex.noun.Topss">31</measure>
+				<measure unit="wnlex.noun.relations">1</measure>
+				<measure unit="wnlex.noun.attributes">47</measure>
+				<measure unit="wnlex.verb.emotions">46</measure>
+				<measure unit="wnlex.noun.locations">51</measure>
+				<measure unit="wnlex.noun.events">26</measure>
+				<measure unit="wnlex.verb.contacts">101</measure>
+				<measure unit="wnlex.xxxs">4715</measure>
+				<measure unit="wnlex.verb.changes">92</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
-<date when="2016">2016</date>
-<idno type="cligs">ne0198</idno>
-</publicationStmt>
-<sourceDesc>
-<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Fine Reader, CLiGS, <date when="2016">2016</date>.</bibl>
-<bibl type="print-source">Chistopher Maurer, Cátedra, Madrid, <date when="1994">1994</date></bibl>
-<bibl type="edition-first">Not published, <date when="1917">1917</date></bibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p><seg type="narrative"><s>.</s></seg></p>
-</encodingDesc>
-<profileDesc>
-<abstract source="MdLE11">
-<p><seg type="narrative"><s>Narra en seis cantos las desventuras de un mozo que muere de dolor por la ausencia de la amada.</s></seg></p>
-</abstract>
-<abstract>
-<p><seg type="narrative"><s>Capítulo 1:</s><s> Se presenta al protagonista, Juan, y cómo piensa en chicas del pueblo.</s><s> Capítulo 2: llega la fiesta de San Juan y Juan habla con Patrocinio para que sea su novia, a lo que ella accede.</s><s> Capítulo 3:</s><s> Juan lleva un cordero recién nacido a su novia Patrocinio.</s><s> Hablan de su relación y la posibilidad de casarse.</s><s> Juan vuelve al establo donde trabaja.</s><s> Capítulo 4: en la familia de Patrocinio se discute sobre huir del pueblo al día siguiente y emigrar a América.</s><s> Patrocinio piensa en Juan.</s><s> Un grupo de lobo se acercan al establo de Juan, pero él los ahuyenta.</s><s> Capítulo 5:</s><s> Juan y Patrocinio se ven una última vez, ella no le dice nada.</s><s> La familia de Patrocinio se va del pueblo.</s><s> Al día siguiente el pueblo comenta la huída.</s><s> Juan está destrozado, piensa en suicidarse.</s><s> Capítulo 6: pasan los meses y Juan sigue deprimido.</s><s> Llega la fiesta de San Juan y Juan decide suicirdarse tirándose al río.</s></seg></p>
-</abstract>
-<textClass>
-<keywords scheme="keywords.xml" cert="high">
-<term type="author.TOC.range" resp="MdL11">7</term>
-<term type="author.continent">Europe</term>
-<term type="author.country">Spain</term>
-<term type="author.date.birth">1898</term>
-<term type="author.date.death">1936</term>
-<term type="author.gender">male</term>
-<term type="author.litHist.pages" resp="MdL11">95</term>
-<term type="author.movement">avantgarde</term>
-<term type="author.nonNovelGenre">poetry</term>
-<term type="author.submovement">vanguardista</term>
-<term type="author.year.change">0</term>
-<term type="authorText.group"/>
-<term type="authorText.relation">none</term>
-<term type="text.characters.protagonist.age">young</term>
-<term type="text.characters.protagonist.gender">male</term>
-<term type="text.characters.protagonist.name">Juan</term>
-<term type="text.characters.protagonist.profession">worker</term>
-<term type="text.characters.protagonist.socLevel">low</term>
-<term type="text.corpora.CoNSSA">True</term>
-<term type="text.corpora.CoNSSA.canon">False</term>
-<term type="text.form">prose</term>
-<term type="text.genre">novela</term>
-<term type="text.genre.subgenre.edit" resp="#"/>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">modernist</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">sentimental</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">symbolic</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="2">realist</term>
-<term type="text.genre.subgenre.litHist" resp="MdLE"/>
-<term type="text.genre.subtitle">historia</term>
-<term type="text.genre.subtitle.source" resp="bne">historia</term>
-<term type="text.genre.supergenre">narrative</term>
-<term type="text.language">Spanish</term>
-<term type="text.litHist.ToC">1</term>
-<term type="text.litHist.mentioned" resp="HdLE">False</term>
-<term type="text.litHist.mentioned" resp="MdLE">True</term>
-<term type="text.litHist.pages" resp="MdLE11">0.2</term>
-<term type="text.movement">modernista</term>
-<term type="text.narration.narrator">heterodiegetic</term>
-<term type="text.plot.end">negative</term>
-<term type="text.plot.representation">realistic</term>
-<term type="text.publication">book</term>
-<term type="text.quality.listhist" resp="#"/>
-<term type="text.setting.continent">Europe</term>
-<term type="text.setting.country">Spain</term>
-<term type="text.setting.represented">unknown</term>
-<term type="text.setting.settlement">unknown</term>
-<term type="text.setting.settlement.represented.exist">True</term>
-<term type="text.setting.settlement.type">rural</term>
-<term type="text.setting.territory">unknown</term>
-<term type="text.time.period">contemporary</term>
-<term type="text.time.span" cert="low">365</term>
-<term type="text.time.year">18??</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change when="2016-09-09" who="#jct">Initial TEI version.</change>
-<change when="2016-09-25" who="#jct">Correction after reading the text as eBook.</change>
-</revisionDesc>
-</teiHeader>
+				<date when="2016">2016</date>
+				<idno type="cligs">ne0198</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Fine Reader, CLiGS, <date when="2016">2016</date>.</bibl>
+				<bibl type="print-source">Chistopher Maurer, Cátedra, Madrid, <date when="1994">1994</date></bibl>
+				<bibl type="edition-first">Not published, <date when="1917">1917</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE11">
+				<p>Narra en seis cantos las desventuras de un mozo que muere de dolor por la ausencia de la amada.</p>
+			</abstract>
+			<abstract>
+				<p>Capítulo 1: Se presenta al protagonista, Juan, y cómo piensa en chicas del pueblo. Capítulo 2: llega la fiesta de San Juan y Juan habla con Patrocinio para que sea su novia, a lo que ella accede. Capítulo 3: Juan lleva un cordero recién nacido a su novia Patrocinio. Hablan de su relación y la posibilidad de casarse. Juan vuelve al establo donde trabaja. Capítulo 4: en la familia de Patrocinio se discute sobre huir del pueblo al día siguiente y emigrar a América. Patrocinio piensa en Juan. Un grupo de lobo se acercan al establo de Juan, pero él los ahuyenta. Capítulo 5: Juan y Patrocinio se ven una última vez, ella no le dice nada. La familia de Patrocinio se va del pueblo. Al día siguiente el pueblo comenta la huída. Juan está destrozado, piensa en suicidarse. Capítulo 6: pasan los meses y Juan sigue deprimido. Llega la fiesta de San Juan y Juan decide suicirdarse tirándose al río.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="high">
+					<term type="author.TOC.range" resp="MdL11">7</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1898</term>
+					<term type="author.date.death">1936</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL11">95</term>
+					<term type="author.movement">avantgarde</term>
+					<term type="author.nonNovelGenre">poetry</term>
+					<term type="author.submovement">vanguardista</term>
+					<term type="author.year.change">0</term>
+					<term type="authorText.group"></term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">young</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">Juan</term>
+					<term type="text.characters.protagonist.profession">worker</term>
+					<term type="text.characters.protagonist.socLevel">low</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">symbolic</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subtitle">historia</term>
+					<term type="text.genre.subtitle.source" resp="bne">historia</term>
+					<term type="text.genre.subtitle.source.first.edition">historia</term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">1</term>
+					<term type="text.litHist.mentioned" resp="HdLE">False</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE11">0.2</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.quality.listhist" resp="#"></term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Spain</term>
+					<term type="text.setting.represented">unknown</term>
+					<term type="text.setting.settlement">unknown</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">rural</term>
+					<term type="text.setting.territory">unknown</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span" cert="low">365</term>
+					<term type="text.time.year">18??</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2016-09-09" who="#jct">Initial TEI version.</change>
+			<change when="2016-09-25" who="#jct">Correction after reading the text as eBook.</change>
+		</revisionDesc>
+	</teiHeader>
 <text>
 <front>
 <div>

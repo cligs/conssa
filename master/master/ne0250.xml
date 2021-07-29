@@ -208,6 +208,8 @@
 					<term type="text.setting.continent">other</term>
 					<term type="text.setting.country">Farsalia Nova</term>
 					<term type="text.setting.represented">Ursaria</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">13.606347199999998</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">45.1490782</term>
 					<term type="text.setting.settlement">Ursaria</term>
 					<term type="text.setting.settlement.represented.exist">False</term>
 					<term type="text.setting.settlement.type">small-city</term>

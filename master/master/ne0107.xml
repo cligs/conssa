@@ -203,6 +203,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">France</term>
 					<term type="text.setting.represented">París</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">2.3514992</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">48.85661010000001</term>
 					<term type="text.setting.settlement">París</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

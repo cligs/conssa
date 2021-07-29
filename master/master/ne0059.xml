@@ -207,6 +207,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Oleza</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-0.944931169547534</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">38.0812208</term>
 					<term type="text.setting.settlement">Oleza</term><!--Orihuela-->
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

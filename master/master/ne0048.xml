@@ -201,6 +201,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Almina</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-8.17893330037838</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">37.8691851</term>
 					<term type="text.setting.settlement">Comunidad Valenciana</term>
 					<term type="text.setting.settlement.represented.exist">False</term>
 					<term type="text.setting.settlement.type">rural</term>

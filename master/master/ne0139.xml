@@ -203,6 +203,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Belalcázar</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-5.1669539</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">38.575185999999995</term>
 					<term type="text.setting.settlement">Belalcázar</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

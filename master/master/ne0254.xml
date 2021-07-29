@@ -200,6 +200,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Roman Empire</term>
 					<term type="text.setting.represented">Sagunto</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-0.2534322424926</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">39.707126099999996</term>
 					<term type="text.setting.settlement">Sagunto</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

@@ -202,6 +202,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Comunidad valenciana</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-0.7654406</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">39.6819591</term>
 					<term type="text.setting.settlement">?</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

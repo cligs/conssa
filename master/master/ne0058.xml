@@ -201,6 +201,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Almería</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-2.4628134999999998</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">36.8414197</term>
 					<term type="text.setting.settlement">Almería</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

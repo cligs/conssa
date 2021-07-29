@@ -202,6 +202,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">La Coruña</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-8.58094180455789</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">43.1538815</term>
 					<term type="text.setting.settlement">Marineda</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

@@ -203,6 +203,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">San Sebastián</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-1.9838889</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">43.322421899999995</term>
 					<term type="text.setting.settlement">San Sebastián</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

@@ -205,6 +205,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Italy</term>
 					<term type="text.setting.represented">Liguria</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">8.7026296</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">44.4777617</term>
 					<term type="text.setting.settlement">Ligura</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

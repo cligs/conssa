@@ -199,6 +199,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Sevilla</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-5.995317099999999</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">37.388630299999996</term>
 					<term type="text.setting.settlement">Sevilla</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

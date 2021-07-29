@@ -208,6 +208,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Condado</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-3.5231169999999996</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">42.8095788</term>
 					<term type="text.setting.settlement">Condado</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

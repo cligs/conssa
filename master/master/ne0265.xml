@@ -204,6 +204,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">France</term>
 					<term type="text.setting.represented">Monte-Carlo</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">7.426558999999999</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">43.7402961</term>
 					<term type="text.setting.settlement">Monte-Carlo</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

@@ -204,6 +204,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Sanabria</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-5.3141481</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">37.350846999999995</term>
 					<term type="text.setting.settlement">Valverde de Lucerna</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term><!--Valverde de Lucerna-->

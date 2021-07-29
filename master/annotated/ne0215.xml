@@ -1,212 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">El hombre de oro</title>
-<title type="sub"/>
-<title type="short">HombreOro</title>
-<title type="idno">
-<idno type="bne">XX2487360</idno>
-<idno type="viaf">309350829</idno>
-</title>
-<author>
-<idno type="bne">XX896547</idno>
-<idno type="viaf">7399994</idno>
-<name type="short">Dario</name>
-<name type="full">Rubén Darío</name>
-</author>
-<principal xml:id="jct">José Calvo Tello</principal>
-</titleStmt>
-<extent>
-<measure unit="lines">407</measure>
-<measure unit="divs">5</measure>
-<measure unit="tokens">11108</measure>
-<measure unit="chars">64305</measure>
-<measure unit="size_kb">80</measure>
-<measure unit="chapters">3</measure>
-<measure unit="shortStories">0</measure>
-<measure unit="parts">0</measure>
-<measure unit="sections">0</measure>
-<measure unit="divisions">0</measure> 
-<measure unit="blocks">367</measure> 
-<measure unit="lg.poems">0</measure> 
-<measure unit="lg.stanzas">0</measure> 
-<measure unit="line.verses">27</measure> 
-<measure unit="heads">3</measure> 
-<measure unit="stages">0</measure> 
-<measure unit="sps">0</measure> 
-<measure unit="paragraphs">337</measure> 
-<measure unit="abs">0</measure> 
-<measure unit="fts">0</measure>
-<measure unit="paragraphs.ds">156</measure>
-<measure unit="saids">189</measure>
-<measure unit="narrative.ps">181</measure>
-<measure unit="punctual_ss">683</measure> 
-<measure unit="numerals">0</measure> 
-<measure unit="puncts">2294</measure> 
-<measure unit="len.abstract">808</measure>
-<measure unit="chapters.len.mean">22134.67</measure>
-<measure unit="chapters.len.std">11171.32</measure>
-<measure unit="chapters.len.median">18888.00</measure>
-<measure unit="chapters.len.iqr">13390.00</measure>
-<measure unit="types">3530</measure>
-<measure unit="ss">503</measure>
-<measure unit="ss.num.mean">131.12</measure>
-<measure unit="ss.num.std">119.34</measure>
-<measure unit="ss.num.median">98.00</measure>
-<measure unit="ss.num.iqr">104.50</measure>
-<measure unit="ss.active.verbs.mean">1.96</measure>
-<measure unit="ss.active.verbs.std">1.75</measure>
-<measure unit="ss.active.verbs.median">2.00</measure>
-<measure unit="ss.active.verbs.iqr">2.00</measure>
-<measure unit="ws">13372</measure>
-<measure unit="ws.num.mean">3.97</measure>
-<measure unit="ws.num.std">2.89</measure>
-<measure unit="ws.num.median">3.00</measure>
-<measure unit="ws.num.iqr">4.00</measure>
-<measure unit="conjunctions">716</measure>
-<measure unit="determiners">1969</measure>
-<measure unit="nouns">2929</measure>
-<measure unit="verbs">1735</measure>
-<measure unit="adverbs">412</measure>
-<measure unit="adjectives">841</measure>
-<measure unit="adpositions">1704</measure>
-<measure unit="punctuations">2221</measure>
-<measure unit="pronouns">788</measure>
-<measure unit="dates">1</measure>
-<measure unit="numbers">39</measure>
-<measure unit="interjections">17</measure>
-<measure unit="ne.persons">334</measure>
-<measure unit="ne.organizations">68</measure>
-<measure unit="ne.locations">96</measure>
-<measure unit="ne.others">34</measure>
-<measure unit="wnlex.noun.plants">42</measure>
-<measure unit="wnlex.verb.communications">198</measure>
-<measure unit="wnlex.noun.foods">63</measure>
-<measure unit="wnlex.verb.possessions">36</measure>
-<measure unit="wnlex.verb.cognitions">63</measure>
-<measure unit="wnlex.noun.communications">153</measure>
-<measure unit="wnlex.noun.states">76</measure>
-<measure unit="wnlex.verb.statives">472</measure>
-<measure unit="wnlex.noun.cognitions">117</measure>
-<measure unit="wnlex.noun.times">67</measure>
-<measure unit="wnlex.verb.bodys">64</measure>
-<measure unit="wnlex.noun.persons">450</measure>
-<measure unit="wnlex.adj.alls">557</measure>
-<measure unit="wnlex.noun.quantitys">5</measure>
-<measure unit="wnlex.noun.phenomenons">46</measure>
-<measure unit="wnlex.verb.creations">117</measure>
-<measure unit="wnlex.adj.perts">38</measure>
-<measure unit="wnlex.adv.alls">129</measure>
-<measure unit="wnlex.noun.processs">10</measure>
-<measure unit="wnlex.noun.artifacts">223</measure>
-<measure unit="wnlex.verb.perceptions">102</measure>
-<measure unit="wnlex.noun.feelings">65</measure>
-<measure unit="wnlex.verb.weathers">15</measure>
-<measure unit="wnlex.noun.substances">86</measure>
-<measure unit="wnlex.noun.shapes">4</measure>
-<measure unit="wnlex.verb.competitions">19</measure>
-<measure unit="wnlex.verb.motions">167</measure>
-<measure unit="wnlex.noun.animals">38</measure>
-<measure unit="wnlex.noun.acts">123</measure>
-<measure unit="wnlex.noun.bodys">117</measure>
-<measure unit="wnlex.noun.objects">78</measure>
-<measure unit="wnlex.noun.motives">2</measure>
-<measure unit="wnlex.verb.socials">91</measure>
-<measure unit="wnlex.noun.groups">69</measure>
-<measure unit="wnlex.verb.consumptions">28</measure>
-<measure unit="wnlex.noun.possessions">10</measure>
-<measure unit="wnlex.noun.Topss">19</measure>
-<measure unit="wnlex.noun.relations">3</measure>
-<measure unit="wnlex.noun.attributes">136</measure>
-<measure unit="wnlex.verb.emotions">58</measure>
-<measure unit="wnlex.noun.locations">71</measure>
-<measure unit="wnlex.noun.events">74</measure>
-<measure unit="wnlex.verb.contacts">89</measure>
-<measure unit="wnlex.xxxs">8907</measure>
-<measure unit="wnlex.verb.changes">75</measure>
-</extent>
-<publicationStmt>
-<publisher>CLiGS</publisher>
-<availability status="free">
+		<fileDesc>
+			<titleStmt>
+				<title type="main">El hombre de oro</title>
+				<title type="sub"></title>
+				<title type="short">HombreOro</title>
+				<title type="idno">
+					<idno type="bne">XX2487360</idno>
+					<idno type="viaf">309350829</idno>
+				</title>
+				<author>
+					<idno type="bne">XX896547</idno>
+					<idno type="viaf">7399994</idno>
+					<name type="short">Dario</name>
+					<name type="full">Rubén Darío</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">407</measure>
+				<measure unit="divs">5</measure>
+				<measure unit="tokens">11108</measure>
+				<measure unit="chars">64305</measure>
+				<measure unit="size_kb">80</measure>
+				<measure unit="chapters">3</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">0</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">367</measure> 
+				<measure unit="lg.poems">0</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">27</measure> 
+				<measure unit="heads">3</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">337</measure> 
+				<measure unit="abs">0</measure> 
+				<measure unit="fts">0</measure>
+				<measure unit="paragraphs.ds">156</measure>
+				<measure unit="saids">189</measure>
+				<measure unit="narrative.ps">181</measure>
+				<measure unit="punctual_ss">683</measure> 
+				<measure unit="numerals">0</measure> 
+				<measure unit="puncts">2294</measure> 
+				<measure unit="len.abstract">808</measure>
+				<measure unit="chapters.len.mean">22134.67</measure>
+				<measure unit="chapters.len.std">11171.32</measure>
+				<measure unit="chapters.len.median">18888.00</measure>
+				<measure unit="chapters.len.iqr">13390.00</measure>
+
+				<measure unit="types">3530</measure>
+
+				<measure unit="ss">503</measure>
+				<measure unit="ss.num.mean">131.12</measure>
+				<measure unit="ss.num.std">119.34</measure>
+				<measure unit="ss.num.median">98.00</measure>
+				<measure unit="ss.num.iqr">104.50</measure>
+				<measure unit="ss.active.verbs.mean">1.96</measure>
+				<measure unit="ss.active.verbs.std">1.75</measure>
+				<measure unit="ss.active.verbs.median">2.00</measure>
+				<measure unit="ss.active.verbs.iqr">2.00</measure>
+
+				<measure unit="ws">13372</measure>
+				<measure unit="ws.num.mean">3.97</measure>
+				<measure unit="ws.num.std">2.89</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">716</measure>
+				<measure unit="determiners">1969</measure>
+				<measure unit="nouns">2929</measure>
+				<measure unit="verbs">1735</measure>
+				<measure unit="adverbs">412</measure>
+				<measure unit="adjectives">841</measure>
+				<measure unit="adpositions">1704</measure>
+				<measure unit="punctuations">2221</measure>
+				<measure unit="pronouns">788</measure>
+				<measure unit="dates">1</measure>
+				<measure unit="numbers">39</measure>
+				<measure unit="interjections">17</measure>
+
+				<measure unit="ne.persons">334</measure>
+				<measure unit="ne.organizations">68</measure>
+				<measure unit="ne.locations">96</measure>
+				<measure unit="ne.others">34</measure>
+
+				<measure unit="wnlex.noun.plants">42</measure>
+				<measure unit="wnlex.verb.communications">198</measure>
+				<measure unit="wnlex.noun.foods">63</measure>
+				<measure unit="wnlex.verb.possessions">36</measure>
+				<measure unit="wnlex.verb.cognitions">63</measure>
+				<measure unit="wnlex.noun.communications">153</measure>
+				<measure unit="wnlex.noun.states">76</measure>
+				<measure unit="wnlex.verb.statives">472</measure>
+				<measure unit="wnlex.noun.cognitions">117</measure>
+				<measure unit="wnlex.noun.times">67</measure>
+				<measure unit="wnlex.verb.bodys">64</measure>
+				<measure unit="wnlex.noun.persons">450</measure>
+				<measure unit="wnlex.adj.alls">557</measure>
+				<measure unit="wnlex.noun.quantitys">5</measure>
+				<measure unit="wnlex.noun.phenomenons">46</measure>
+				<measure unit="wnlex.verb.creations">117</measure>
+				<measure unit="wnlex.adj.perts">38</measure>
+				<measure unit="wnlex.adv.alls">129</measure>
+				<measure unit="wnlex.noun.processs">10</measure>
+				<measure unit="wnlex.noun.artifacts">223</measure>
+				<measure unit="wnlex.verb.perceptions">102</measure>
+				<measure unit="wnlex.noun.feelings">65</measure>
+				<measure unit="wnlex.verb.weathers">15</measure>
+				<measure unit="wnlex.noun.substances">86</measure>
+				<measure unit="wnlex.noun.shapes">4</measure>
+				<measure unit="wnlex.verb.competitions">19</measure>
+				<measure unit="wnlex.verb.motions">167</measure>
+				<measure unit="wnlex.noun.animals">38</measure>
+				<measure unit="wnlex.noun.acts">123</measure>
+				<measure unit="wnlex.noun.bodys">117</measure>
+				<measure unit="wnlex.noun.objects">78</measure>
+				<measure unit="wnlex.noun.motives">2</measure>
+				<measure unit="wnlex.verb.socials">91</measure>
+				<measure unit="wnlex.noun.groups">69</measure>
+				<measure unit="wnlex.verb.consumptions">28</measure>
+				<measure unit="wnlex.noun.possessions">10</measure>
+				<measure unit="wnlex.noun.Topss">19</measure>
+				<measure unit="wnlex.noun.relations">3</measure>
+				<measure unit="wnlex.noun.attributes">136</measure>
+				<measure unit="wnlex.verb.emotions">58</measure>
+				<measure unit="wnlex.noun.locations">71</measure>
+				<measure unit="wnlex.noun.events">74</measure>
+				<measure unit="wnlex.verb.contacts">89</measure>
+				<measure unit="wnlex.xxxs">8907</measure>
+				<measure unit="wnlex.verb.changes">75</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
-<date when="2016">2016</date>
-<idno type="cligs">ne0215</idno>
-</publicationStmt>
-<sourceDesc>
-<bibl type="digital-source" source="#other" subtype="pdf">Marjinalia Bilduma, <date when="1999">1999</date>, <idno/>, <ref target="www.euskalnet.net/xgalarreta/artxiboak/38_liburua.pdf"/>.</bibl>
-<bibl type="print-source"><date/></bibl>
-<bibl type="edition-first"><date when="1897">1897</date></bibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p/>
-</encodingDesc>
-<profileDesc>
-<abstract source="#jct">
-<p><seg type="narrative"><s>En el primer capítulo observamos como una joven intenta encontrar a sus compañeros de fe cristianos en la Roma pocos años después de la muerte de Jesucristo.</s><s> Un grupo de cristianos leen pasajes de Pablo, cuando la chica llega.</s></seg></p>
-<p><seg type="narrative"><s>En el segundo capítulo se toma la perspectiva de Lucio Varo, joven poeta rico que charla en su casa con algunos amigos.</s><s> Llega invitado un vecino judío suyo con cierta aura dorada al que llaman el hombre de Oro que posteriormente se descubre como Judas de Kariot (es decir, Judas Iscariote).</s><s> Después de beber, Julio Varo y Judas persiguen por la ciudad a la chica del capítulo 1, terminando este capítulo en el mismo lugar que lo hacía el primero.</s></seg></p>
-<p><seg type="narrative"><s>En el tercer capítulo Julio Varo escucha y discute con el apostol Pablo, cuyo mensaje cala tanto en la gente como en el mismo Julio.</s></seg></p>
-</abstract>
-<textClass>
-<keywords scheme="keywords.xml" cert="high">
-<term type="author.TOC.range" resp="MdL8">7</term>
-<term type="author.continent">America</term>
-<term type="author.country">Nicaragua</term>
-<term type="author.date.birth">1867</term>
-<term type="author.date.death">1916</term>
-<term type="author.gender">male</term>
-<term type="author.litHist.pages" resp="MdL8">50</term>
-<term type="author.movement">modernism</term>
-<term type="author.nonNovelGenre">poetry</term>
-<term type="author.submovement">2-modernista</term>
-<term type="author.year.change">0</term>
-<term type="authorText.group"/>
-<term type="authorText.relation">none</term>
-<term type="text.characters.protagonist.age">young</term>
-<term type="text.characters.protagonist.gender">male</term>
-<term type="text.characters.protagonist.name">Lucio Varo</term>
-<term type="text.characters.protagonist.profession">artist</term><!--writer-->
-<term type="text.characters.protagonist.socLevel">high</term>
-<term type="text.corpora.CoNSSA">True</term>
-<term type="text.corpora.CoNSSA.canon">False</term>
-<term type="text.form">prose</term>
-<term type="text.genre">novela</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">sentimental</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">spiritual</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="2">historical</term>
-<term type="text.genre.subgenre.litHist" resp="MdLE">conato novelístico</term>
-<term type="text.genre.subtitle"/>
-<term type="text.genre.supergenre">narrative</term>
-<term type="text.language">Spanish</term>
-<term type="text.litHist.ToC">1</term>
-<term type="text.litHist.mentioned" resp="HdLE">False</term>
-<term type="text.litHist.mentioned" resp="MdLE">True</term>
-<term type="text.litHist.pages" resp="MdLE8">0.2</term>
-<term type="text.movement">modernista</term>
-<term type="text.narration.narrator">heterodiegetic</term>
-<term type="text.plot.end">neutral</term>
-<term type="text.plot.representation">realistic</term>
-<term type="text.publication">book</term>
-<term type="text.setting.continent">Europe</term>
-<term type="text.setting.country">Italy</term>
-<term type="text.setting.represented">Roma</term>
-<term type="text.setting.settlement">Roma</term>
-<term type="text.setting.settlement.represented.exist">True</term>
-<term type="text.setting.settlement.type" cert="low">big-city</term>
-<term type="text.setting.territory">Roma</term>
-<term type="text.time.period">antiquity</term>
-<term type="text.time.span">2</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change when="2016-01-13" who="#jct">Initial TEI version.</change>
-<change when="2016-02-19" who="#jct">Checked after reading it as eBook.</change>
-</revisionDesc>
-</teiHeader>
+				<date when="2016">2016</date>
+				<idno type="cligs">ne0215</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#other" subtype="pdf">Marjinalia Bilduma, <date when="1999">1999</date>, <idno></idno>, <ref target="www.euskalnet.net/xgalarreta/artxiboak/38_liburua.pdf"/>.</bibl>
+				<bibl type="print-source"><date></date></bibl>
+				<bibl type="edition-first"><date when="1897">1897</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="#jct">
+				<p>En el primer capítulo observamos como una joven intenta encontrar a sus compañeros de fe cristianos en la Roma pocos años después de la muerte de Jesucristo. Un grupo de cristianos leen pasajes de Pablo, cuando la chica llega.</p>
+				<p>En el segundo capítulo se toma la perspectiva de Lucio Varo, joven poeta rico que charla en su casa con algunos amigos. Llega invitado un vecino judío suyo con cierta aura dorada al que llaman el hombre de Oro que posteriormente se descubre como Judas de Kariot (es decir, Judas Iscariote). Después de beber, Julio Varo y Judas persiguen por la ciudad a la chica del capítulo 1, terminando este capítulo en el mismo lugar que lo hacía el primero.</p>
+				<p>En el tercer capítulo Julio Varo escucha y discute con el apostol Pablo, cuyo mensaje cala tanto en la gente como en el mismo Julio.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="high">
+					<term type="author.TOC.range" resp="MdL8">7</term>
+					<term type="author.continent">America</term>
+					<term type="author.country">Nicaragua</term>
+					<term type="author.date.birth">1867</term>
+					<term type="author.date.death">1916</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL8">50</term>
+					<term type="author.movement">modernism</term>
+					<term type="author.nonNovelGenre">poetry</term>
+					<term type="author.submovement">2-modernista</term>
+					<term type="author.year.change">0</term>
+					<term type="authorText.group"></term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">young</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">Lucio Varo</term>
+					<term type="text.characters.protagonist.profession">artist</term><!--writer-->
+					<term type="text.characters.protagonist.socLevel">high</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE">conato novelístico</term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">1</term>
+					<term type="text.litHist.mentioned" resp="HdLE">False</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE8">0.2</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">neutral</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Italy</term>
+					<term type="text.setting.represented">Roma</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">12.4829321</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">41.8933203</term>
+					<term type="text.setting.settlement">Roma</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type" cert="low">big-city</term>
+					<term type="text.setting.territory">Roma</term>
+					<term type="text.time.period">antiquity</term>
+					<term type="text.time.span">2</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2016-01-13" who="#jct">Initial TEI version.</change>
+			<change when="2016-02-19" who="#jct">Checked after reading it as eBook.</change>
+		</revisionDesc>
+	</teiHeader>
 <text>
 <front>
 <div>

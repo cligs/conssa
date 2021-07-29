@@ -201,6 +201,8 @@
 					<term type="text.setting.continent">America</term>
 					<term type="text.setting.country">Argentina</term>
 					<term type="text.setting.represented">Buenos Aires</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-58.3930969</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">-34.6452384</term>
 					<term type="text.setting.settlement">Buenos Aires</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">big-city</term>

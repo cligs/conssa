@@ -205,6 +205,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Brandeso</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-8.1818919</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">42.9110375</term>
 					<term type="text.setting.settlement">Brandeso</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type" resp="#jct">rural</term>

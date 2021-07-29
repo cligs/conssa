@@ -201,6 +201,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Badajoz</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-6.9733409</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">38.87686160000001</term>
 					<term type="text.setting.settlement">Badajoz</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

@@ -207,6 +207,8 @@
 					<term type="text.setting.continent">America</term>
 					<term type="text.setting.country">Santa Fe de Tierra</term>
 					<term type="text.setting.represented">México</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-99.1333416</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">19.4326009</term>
 					<term type="text.setting.settlement" cert="low">Santa Mónica</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type" cert="low" resp="#jct">rural</term>

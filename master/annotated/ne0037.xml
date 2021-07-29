@@ -1,212 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">La media noche</title>
-<title type="sub">visión estelar de un momento de guerra</title>
-<title type="short">MediaNoche</title>
-<title type="idno">
-<idno type="bne">XX2215989</idno>
-<idno type="viaf">313997394</idno>
-</title>
-<author>
-<idno type="bne">XX1055436</idno>
-<idno type="viaf">68936773</idno>
-<name type="short">Valle</name>
-<name type="full">Valle-Inclán, Ramón del</name>
-</author>
-<principal xml:id="jct">José Calvo Tello</principal>
-</titleStmt>
-<extent>
-<measure unit="lines">374</measure>
-<measure unit="divs">43</measure>
-<measure unit="tokens">12230</measure>
-<measure unit="chars">72067</measure>
-<measure unit="size_kb">86</measure>
-<measure unit="chapters">40</measure>
-<measure unit="shortStories">0</measure>
-<measure unit="parts">0</measure>
-<measure unit="sections">0</measure>
-<measure unit="divisions">0</measure> 
-<measure unit="blocks">274</measure> 
-<measure unit="lg.poems">0</measure> 
-<measure unit="lg.stanzas">0</measure> 
-<measure unit="line.verses">0</measure> 
-<measure unit="heads">41</measure> 
-<measure unit="stages">0</measure> 
-<measure unit="sps">0</measure> 
-<measure unit="paragraphs">233</measure> 
-<measure unit="abs">0</measure> 
-<measure unit="fts">0</measure>
-<measure unit="paragraphs.ds">112</measure>
-<measure unit="saids">113</measure>
-<measure unit="narrative.ps">121</measure>
-<measure unit="punctual_ss">871</measure> 
-<measure unit="numerals">1</measure> 
-<measure unit="puncts">2311</measure> 
-<measure unit="len.abstract">305</measure>
-<measure unit="chapters.len.mean">1743.75</measure>
-<measure unit="chapters.len.std">653.97</measure>
-<measure unit="chapters.len.median">1545.50</measure>
-<measure unit="chapters.len.iqr">791.75</measure>
-<measure unit="types">3192</measure>
-<measure unit="ss">593</measure>
-<measure unit="ss.num.mean">117.18</measure>
-<measure unit="ss.num.std">77.46</measure>
-<measure unit="ss.num.median">104.00</measure>
-<measure unit="ss.num.iqr">91.00</measure>
-<measure unit="ss.active.verbs.mean">2.01</measure>
-<measure unit="ss.active.verbs.std">1.45</measure>
-<measure unit="ss.active.verbs.median">2.00</measure>
-<measure unit="ss.active.verbs.iqr">2.00</measure>
-<measure unit="ws">13712</measure>
-<measure unit="ws.num.mean">4.11</measure>
-<measure unit="ws.num.std">2.93</measure>
-<measure unit="ws.num.median">3.00</measure>
-<measure unit="ws.num.iqr">4.00</measure>
-<measure unit="conjunctions">611</measure>
-<measure unit="determiners">2344</measure>
-<measure unit="nouns">3117</measure>
-<measure unit="verbs">1835</measure>
-<measure unit="adverbs">275</measure>
-<measure unit="adjectives">790</measure>
-<measure unit="adpositions">1838</measure>
-<measure unit="punctuations">2141</measure>
-<measure unit="pronouns">671</measure>
-<measure unit="dates">1</measure>
-<measure unit="numbers">72</measure>
-<measure unit="interjections">17</measure>
-<measure unit="ne.persons">49</measure>
-<measure unit="ne.organizations">32</measure>
-<measure unit="ne.locations">31</measure>
-<measure unit="ne.others">2</measure>
-<measure unit="wnlex.noun.plants">14</measure>
-<measure unit="wnlex.verb.communications">100</measure>
-<measure unit="wnlex.noun.foods">18</measure>
-<measure unit="wnlex.verb.possessions">56</measure>
-<measure unit="wnlex.verb.cognitions">39</measure>
-<measure unit="wnlex.noun.communications">116</measure>
-<measure unit="wnlex.noun.states">36</measure>
-<measure unit="wnlex.verb.statives">298</measure>
-<measure unit="wnlex.noun.cognitions">76</measure>
-<measure unit="wnlex.noun.times">47</measure>
-<measure unit="wnlex.verb.bodys">103</measure>
-<measure unit="wnlex.noun.persons">289</measure>
-<measure unit="wnlex.adj.alls">541</measure>
-<measure unit="wnlex.noun.quantitys">20</measure>
-<measure unit="wnlex.noun.phenomenons">93</measure>
-<measure unit="wnlex.verb.creations">64</measure>
-<measure unit="wnlex.adj.perts">76</measure>
-<measure unit="wnlex.adv.alls">97</measure>
-<measure unit="wnlex.noun.processs">39</measure>
-<measure unit="wnlex.noun.artifacts">503</measure>
-<measure unit="wnlex.verb.perceptions">84</measure>
-<measure unit="wnlex.noun.feelings">44</measure>
-<measure unit="wnlex.verb.weathers">25</measure>
-<measure unit="wnlex.noun.substances">61</measure>
-<measure unit="wnlex.noun.shapes">20</measure>
-<measure unit="wnlex.verb.competitions">34</measure>
-<measure unit="wnlex.verb.motions">306</measure>
-<measure unit="wnlex.noun.animals">79</measure>
-<measure unit="wnlex.noun.acts">148</measure>
-<measure unit="wnlex.noun.bodys">213</measure>
-<measure unit="wnlex.noun.objects">191</measure>
-<measure unit="wnlex.noun.motives">4</measure>
-<measure unit="wnlex.verb.socials">64</measure>
-<measure unit="wnlex.noun.groups">141</measure>
-<measure unit="wnlex.verb.consumptions">8</measure>
-<measure unit="wnlex.noun.possessions">3</measure>
-<measure unit="wnlex.noun.Topss">25</measure>
-<measure unit="wnlex.noun.relations">1</measure>
-<measure unit="wnlex.noun.attributes">119</measure>
-<measure unit="wnlex.verb.emotions">27</measure>
-<measure unit="wnlex.noun.locations">114</measure>
-<measure unit="wnlex.noun.events">88</measure>
-<measure unit="wnlex.verb.contacts">205</measure>
-<measure unit="wnlex.xxxs">8919</measure>
-<measure unit="wnlex.verb.changes">163</measure>
-</extent>
-<publicationStmt>
-<publisher>CLiGS</publisher>
-<availability status="free">
+		<fileDesc>
+			<titleStmt>
+				<title type="main">La media noche</title>
+				<title type="sub">visión estelar de un momento de guerra</title>
+				<title type="short">MediaNoche</title>
+				<title type="idno">
+					<idno type="bne">XX2215989</idno>
+					<idno type="viaf">313997394</idno>
+				</title>
+				<author>
+					<idno type="bne">XX1055436</idno>
+					<idno type="viaf">68936773</idno>
+					<name type="short">Valle</name>
+					<name type="full">Valle-Inclán, Ramón del</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">374</measure>
+				<measure unit="divs">43</measure>
+				<measure unit="tokens">12230</measure>
+				<measure unit="chars">72067</measure>
+				<measure unit="size_kb">86</measure>
+				<measure unit="chapters">40</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">0</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">274</measure> 
+				<measure unit="lg.poems">0</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">0</measure> 
+				<measure unit="heads">41</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">233</measure> 
+				<measure unit="abs">0</measure> 
+				<measure unit="fts">0</measure>
+				<measure unit="paragraphs.ds">112</measure>
+				<measure unit="saids">113</measure>
+				<measure unit="narrative.ps">121</measure>
+				<measure unit="punctual_ss">871</measure> 
+				<measure unit="numerals">1</measure> 
+				<measure unit="puncts">2311</measure> 
+				<measure unit="len.abstract">305</measure>
+				<measure unit="chapters.len.mean">1743.75</measure>
+				<measure unit="chapters.len.std">653.97</measure>
+				<measure unit="chapters.len.median">1545.50</measure>
+				<measure unit="chapters.len.iqr">791.75</measure>
+
+				<measure unit="types">3192</measure>
+
+				<measure unit="ss">593</measure>
+				<measure unit="ss.num.mean">117.18</measure>
+				<measure unit="ss.num.std">77.46</measure>
+				<measure unit="ss.num.median">104.00</measure>
+				<measure unit="ss.num.iqr">91.00</measure>
+				<measure unit="ss.active.verbs.mean">2.01</measure>
+				<measure unit="ss.active.verbs.std">1.45</measure>
+				<measure unit="ss.active.verbs.median">2.00</measure>
+				<measure unit="ss.active.verbs.iqr">2.00</measure>
+
+				<measure unit="ws">13712</measure>
+				<measure unit="ws.num.mean">4.11</measure>
+				<measure unit="ws.num.std">2.93</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">611</measure>
+				<measure unit="determiners">2344</measure>
+				<measure unit="nouns">3117</measure>
+				<measure unit="verbs">1835</measure>
+				<measure unit="adverbs">275</measure>
+				<measure unit="adjectives">790</measure>
+				<measure unit="adpositions">1838</measure>
+				<measure unit="punctuations">2141</measure>
+				<measure unit="pronouns">671</measure>
+				<measure unit="dates">1</measure>
+				<measure unit="numbers">72</measure>
+				<measure unit="interjections">17</measure>
+
+				<measure unit="ne.persons">49</measure>
+				<measure unit="ne.organizations">32</measure>
+				<measure unit="ne.locations">31</measure>
+				<measure unit="ne.others">2</measure>
+
+				<measure unit="wnlex.noun.plants">14</measure>
+				<measure unit="wnlex.verb.communications">100</measure>
+				<measure unit="wnlex.noun.foods">18</measure>
+				<measure unit="wnlex.verb.possessions">56</measure>
+				<measure unit="wnlex.verb.cognitions">39</measure>
+				<measure unit="wnlex.noun.communications">116</measure>
+				<measure unit="wnlex.noun.states">36</measure>
+				<measure unit="wnlex.verb.statives">298</measure>
+				<measure unit="wnlex.noun.cognitions">76</measure>
+				<measure unit="wnlex.noun.times">47</measure>
+				<measure unit="wnlex.verb.bodys">103</measure>
+				<measure unit="wnlex.noun.persons">289</measure>
+				<measure unit="wnlex.adj.alls">541</measure>
+				<measure unit="wnlex.noun.quantitys">20</measure>
+				<measure unit="wnlex.noun.phenomenons">93</measure>
+				<measure unit="wnlex.verb.creations">64</measure>
+				<measure unit="wnlex.adj.perts">76</measure>
+				<measure unit="wnlex.adv.alls">97</measure>
+				<measure unit="wnlex.noun.processs">39</measure>
+				<measure unit="wnlex.noun.artifacts">503</measure>
+				<measure unit="wnlex.verb.perceptions">84</measure>
+				<measure unit="wnlex.noun.feelings">44</measure>
+				<measure unit="wnlex.verb.weathers">25</measure>
+				<measure unit="wnlex.noun.substances">61</measure>
+				<measure unit="wnlex.noun.shapes">20</measure>
+				<measure unit="wnlex.verb.competitions">34</measure>
+				<measure unit="wnlex.verb.motions">306</measure>
+				<measure unit="wnlex.noun.animals">79</measure>
+				<measure unit="wnlex.noun.acts">148</measure>
+				<measure unit="wnlex.noun.bodys">213</measure>
+				<measure unit="wnlex.noun.objects">191</measure>
+				<measure unit="wnlex.noun.motives">4</measure>
+				<measure unit="wnlex.verb.socials">64</measure>
+				<measure unit="wnlex.noun.groups">141</measure>
+				<measure unit="wnlex.verb.consumptions">8</measure>
+				<measure unit="wnlex.noun.possessions">3</measure>
+				<measure unit="wnlex.noun.Topss">25</measure>
+				<measure unit="wnlex.noun.relations">1</measure>
+				<measure unit="wnlex.noun.attributes">119</measure>
+				<measure unit="wnlex.verb.emotions">27</measure>
+				<measure unit="wnlex.noun.locations">114</measure>
+				<measure unit="wnlex.noun.events">88</measure>
+				<measure unit="wnlex.verb.contacts">205</measure>
+				<measure unit="wnlex.xxxs">8919</measure>
+				<measure unit="wnlex.verb.changes">163</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
-<date when="2015">2015</date>
-<idno type="cligs">ne0037</idno>
-</publicationStmt>
-<sourceDesc>
-<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2014">2014</date>, <idno/>, <ref target="https://archive.org/details/lamedianochevisi00vall"/>.</bibl>
-<bibl type="print-source">Imprenta Clásica Española, <date when="1917">1917</date></bibl>
-<bibl type="edition-first"><date when="1917">1917</date></bibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p/>
-</encodingDesc>
-<profileDesc>
-<abstract source="#jct">
-<p><seg type="narrative"><s>Descripción de una noche de la Primera Guerra mundial en varios lugares de la frontera entre Francia y Alemania.</s><s> Se describen escenas cortas de trincheras, preparación de estrategia, curas de enfermos, familias moribundas y batallas entre aliados (franceses e ingleses) y alemanes (prusianos y bávaros).</s></seg></p>
-</abstract>
-<textClass>
-<keywords scheme="keywords.xml" cert="high">
-<term type="author.TOC.range" resp="MdL8">8</term>
-<term type="author.continent">Europe</term>
-<term type="author.country">Spain</term>
-<term type="author.date.birth">1866</term>
-<term type="author.date.death">1936</term>
-<term type="author.gender">male</term>
-<term type="author.litHist.pages" resp="MdL8">162</term>
-<term type="author.movement">modernism</term>
-<term type="author.nonNovelGenre">theatre</term>
-<term type="author.submovement">2-modernista</term>
-<term type="author.year.change">1920</term>
-<term type="authorText.group"/>
-<term type="authorText.relation">none</term>
-<term type="text.characters.protagonist.age">adult</term>
-<term type="text.characters.protagonist.gender">other</term>
-<term type="text.characters.protagonist.name">unknown</term>
-<term type="text.characters.protagonist.profession">military personnel</term>
-<term type="text.characters.protagonist.socLevel">low</term>
-<term type="text.corpora.CoNSSA">True</term>
-<term type="text.corpora.CoNSSA.canon">False</term>
-<term type="text.form">prose</term>
-<term type="text.genre">?</term>
-<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica ; Historia, teoría literaria y crítica, Ficción contemporánea; Obras de consulta, Antologías, Antologías; Ficción clásica, Ficción contemporánea</term>
-<term type="text.genre.subgenre.edit" resp="epublibre">Otros</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">realist</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">social</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">war-novel</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="2">historical</term>
-<term type="text.genre.subgenre.litHist" resp="MdLE"/>
-<term type="text.genre.subtitle"/>
-<term type="text.genre.supergenre">narrative</term>
-<term type="text.language">Spanish</term>
-<term type="text.litHist.ToC">4</term>
-<term type="text.litHist.mentioned" resp="HdLE">False</term>
-<term type="text.litHist.mentioned" resp="MdLE">True</term>
-<term type="text.litHist.pages" resp="MdLE8">2.0</term>
-<term type="text.movement">modernista</term>
-<term type="text.narration.narrator">heterodiegetic</term>
-<term type="text.plot.end">negative</term>
-<term type="text.plot.representation">realistic</term>
-<term type="text.publication">book</term>
-<term type="text.setting.continent">Europe</term>
-<term type="text.setting.country">France</term><!--Also Germany-->
-<term type="text.setting.represented">Europe</term>
-<term type="text.setting.settlement">mixed</term>
-<term type="text.setting.settlement.represented.exist">True</term>
-<term type="text.setting.settlement.type">rural</term>
-<term type="text.setting.territory">mixed</term>
-<term type="text.time.period">contemporary</term>
-<term type="text.time.span">1</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change when="2015-02-09" who="#">Initial TEI version.</change>
-</revisionDesc>
-</teiHeader>
+
+				<date when="2015">2015</date>
+				<idno type="cligs">ne0037</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2014">2014</date>, <idno></idno>, <ref target="https://archive.org/details/lamedianochevisi00vall"/>.</bibl>
+				<bibl type="print-source">Imprenta Clásica Española, <date when="1917">1917</date></bibl>
+				<bibl type="edition-first"><date when="1917">1917</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p></p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="#jct">
+				<p>Descripción de una noche de la Primera Guerra mundial en varios lugares de la frontera entre Francia y Alemania. Se describen escenas cortas de trincheras, preparación de estrategia, curas de enfermos, familias moribundas y batallas entre aliados (franceses e ingleses) y alemanes (prusianos y bávaros).</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="high">
+					<term type="author.TOC.range" resp="MdL8">8</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1866</term>
+					<term type="author.date.death">1936</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL8">162</term>
+					<term type="author.movement">modernism</term>
+					<term type="author.nonNovelGenre">theatre</term>
+					<term type="author.submovement">2-modernista</term>
+					<term type="author.year.change">1920</term>
+					<term type="authorText.group"></term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">adult</term>
+					<term type="text.characters.protagonist.gender">other</term>
+					<term type="text.characters.protagonist.name">unknown</term>
+					<term type="text.characters.protagonist.profession">military personnel</term>
+					<term type="text.characters.protagonist.socLevel">low</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">?</term>
+					<term type="text.genre.analyzed" cert="medium">novela</term>
+					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica ; Historia, teoría literaria y crítica, Ficción contemporánea; Obras de consulta, Antologías, Antologías; Ficción clásica, Ficción contemporánea</term>
+					<term type="text.genre.subgenre.edit" resp="epublibre">Otros</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">war-novel</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">4</term>
+					<term type="text.litHist.mentioned" resp="HdLE">False</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE8">2.0</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">France</term><!--Also Germany-->
+					<term type="text.setting.represented">Europe</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">6.1296751</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">49.8158683</term>
+					<term type="text.setting.settlement">mixed</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">rural</term>
+					<term type="text.setting.territory">mixed</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span">1</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2015-02-09" who="#">Initial TEI version.</change>
+		</revisionDesc>
+	</teiHeader>
 <text>
 <front>
 <div>

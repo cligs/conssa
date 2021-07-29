@@ -202,6 +202,8 @@
 					<term type="text.setting.continent">America</term>
 					<term type="text.setting.country">Argentina</term>
 					<term type="text.setting.represented">Presa</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-68.5167112876042</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">-34.83263635</term>
 					<term type="text.setting.settlement">Presa</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

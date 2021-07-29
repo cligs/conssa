@@ -209,6 +209,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Oleza</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-0.944931169547534</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">38.0812208</term>
 					<term type="text.setting.settlement">Oleza</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type" cert="low" resp="#jct">rural</term>
@@ -349,10 +351,10 @@
 					<head>III. «Jesús»</head>
 					<p>Espuch y Loriga, el curioso cronista de Oleza, tío de don Amancio, dejó inéditos sus <seg rend="italic">Apuntes históricos de la Fundación de los Estudios de Jesús</seg>. Yo he leído casi todo el manuscrito, y he visitado muchas veces los edificios, cantera insigne de sillares caleños fajeados de impostas, con tres pórticos: el del templo, en cuya hornacina está el Señor de caminante con su cayada; el del Internado, de columnas toscanas y recantones, donde se sientan los mendigos que piden a las familias de los colegiales, y el de la Lección, con pilastras y archivoltas de acantos, por el que pasan y salen los externos. Tiene el colegio tres claustros: el de Entrada, con hortal; el de las Cátedras, con aljibe en medio; el de los Padres, de arcos escarzanos y medallones cogidos por ángeles. Tiene huerta grande y olorosa de naranjos, monte de viña moscatel y gruta de Lourdes. Hay escalera de honor de barandal y bolas de bronce, refectorios y salas de recreación de alfarjes magníficos que resaltan en los muros blancos; capillas privadas, crujías profundas, biblioteca de nichos de yeso, y en un ángulo, una celda, cavada en cripta, prisión de frailes y novicios. De la viga cuelga el cepo, y en una losa quedan estos versos de un condenado:</p>
 					<lg type="poem">
-						<l part="initial">«Todo es uno para mí, </l>
-						<l part="initial">esperanza o no tenella; </l>
-						<l part="initial">pues si hoy muero por vella,</l>
-						<l part="initial"> mañana porque la vi».</l>
+						<l part="I">«Todo es uno para mí, </l>
+						<l part="I">esperanza o no tenella; </l>
+						<l part="I">pues si hoy muero por vella,</l>
+						<l part="I"> mañana porque la vi».</l>
 					</lg>
 					<p>En cuatrocientos mil ducados de oro tasa Espuch y Loriga el coste de la fábrica; y para que mejor se entienda y aprecie la suma, añade: «...que en aquel tiempo no pasaba de cinco ducados el cahíz de trigo, ni de uno un carnero, ni de dos reales el jornal de un buen operario».</p>
 					<p>Ese «aquel tiempo» es el del fundador, don Juan de Ochoa, pabordre de Oleza, que tuvo asiento en las Cortes de Monzón.</p>
@@ -997,18 +999,18 @@
 					<p>Alcanzó de un vasar de yeso el <seg rend="italic">Directorio de Religiosas</seg>.</p>
 					<p>En la huerta retallecida, bajo un envigado de rosales en flor, giraba un ruedo de hermanas jovencitas que cantaban, mirando la ventana de sor María Fulgencia:</p>
 					<lg type="poem">
-						<l part="initial">Mari-ábreme la puer... </l>
-						<l part="initial">Mari-ábreme la puer... </l>
-						<l part="initial">¡Que vengo muy mal-herí!... </l>
-						<l part="initial">¡Que ven-go muy mal herí!...
+						<l part="I">Mari-ábreme la puer... </l>
+						<l part="I">Mari-ábreme la puer... </l>
+						<l part="I">¡Que vengo muy mal-herí!... </l>
+						<l part="I">¡Que ven-go muy mal herí!...
 						</l>
 					</lg>
 					<p>Crujió una vidriera, y salió una tonadilla de párvula respondiendo:</p>
 					<lg type="poem">
-						<l part="initial">No llaméis con tanto gri...</l>
-						<l part="initial"> no llaméis con tanto gri...</l>
-						<l part="initial"> que nos oye la clavá...</l>
-						<l part="initial"> que nos o-ye la clavá...</l>
+						<l part="I">No llaméis con tanto gri...</l>
+						<l part="I"> no llaméis con tanto gri...</l>
+						<l part="I"> que nos oye la clavá...</l>
+						<l part="I"> que nos o-ye la clavá...</l>
 					</lg>
 					<p>Y la madre volvía las hojas rosigadas del libro, hasta que se detuvo, porque tropezó en el capítulo que dice: «¿Qué es vivir conforme al espíritu?».</p>
 					<p>«...Si una hermana es dulce, agradable, y yo la amo con ternura, y ella también me ama, y hay amor recíproco, ¿quién no ve que la amo conforme a la carne, sangre y sentidos?».</p>
@@ -1951,25 +1953,25 @@
 					<p>Durante la cena, el silencio de don Álvaro refluía en el silencio de la familia. El trueno del Segral se enroscaba por los muros. Pablo se acostó.</p>
 					<p>A las diez le llegó la jaculatoria de tía Elvira:</p>
 					<lg type="poem">
-						<l part="initial">   «Señor, a dormir voy.</l>
-						<l part="initial"> Confesión pido;</l>
-						<l part="initial"> Óleo Santo.</l>
-						<l part="initial"> perdón </l>
-						<l part="initial">del Espíritu Santo».
+						<l part="I">   «Señor, a dormir voy.</l>
+						<l part="I"> Confesión pido;</l>
+						<l part="I"> Óleo Santo.</l>
+						<l part="I"> perdón </l>
+						<l part="I">del Espíritu Santo».
 						</l>
 					</lg>
 					<p>...Y a la otra tarde buscó las estampas prohibidas. Se contuvo mirándose sus dedos, que se le estremecían como los del padre Bellod. Vio santas empaladas, trucidadas, enrodadas, rotas a martillo. En el tormento de la virgen Engracia leyó con avidez los versos de Prudencio:</p>
 					<lg type="poem">
-						<l part="initial">   «Tú sola vences la muerte;</l>
-						<l part="initial"> vives palpando el hueco</l>
-						<l part="initial"> de tu arrancada carne. </l>
-						<l part="initial">Una mano inmunda </l>
-						<l part="initial">desgarró tu costado; </l>
-						<l part="initial">rebanados los pechos,</l>
-						<l part="initial"> se vio tu corazón desnudo.</l>
-						<l part="initial"> La gangrena roía tus médulas;</l>
-						<l part="initial"> agudos garfios arrebataron </l>
-						<l part="initial">tus entrañas a pedazos».
+						<l part="I">   «Tú sola vences la muerte;</l>
+						<l part="I"> vives palpando el hueco</l>
+						<l part="I"> de tu arrancada carne. </l>
+						<l part="I">Una mano inmunda </l>
+						<l part="I">desgarró tu costado; </l>
+						<l part="I">rebanados los pechos,</l>
+						<l part="I"> se vio tu corazón desnudo.</l>
+						<l part="I"> La gangrena roía tus médulas;</l>
+						<l part="I"> agudos garfios arrebataron </l>
+						<l part="I">tus entrañas a pedazos».
 						</l>
 					</lg>
 					<p>Venía un gañido tan ansioso, que Pablo dejó su lectura; y vio que se escapaba del patio el padre Bellod; y él aguardose un poco y salió. Estaba la graja apiolada con una atadera roñosa de media; tenía los alones desgoznados; se le hinchaba y vaciaba el buche como un fuelle; y un clavo le desencajaba las dos mitades del pico. Como si se hubiera pregonado su agonía, acudieron moscas bobas, hormigas chiquitinas y hormigas cabezudas de buenas tenazas, gusarapillos y lombrices del arbollón. Se le subían al pardal impedido, corriéndole por el borde y el telo de los ojos, por las boqueras, por el paladar; se le entraban y salían; algunos se quedaban cogidos en las calientes crispaciones de la substancia. Toda la graja se retorció por el feroz prurito del insaciable tránsito de las sabandijas.</p>
@@ -2349,12 +2351,12 @@
 					<p>Don Magín penetró en la segunda morada de su conciencia:</p>
 					<p>«¡Era verdad; todo pasaba volando después de haber pasado! Pero ¿y antes de pasar? En las delicias y en las adversidades pocos escapan de decirse: ¡Eso no lo pude gozar! ¡Esto no lo podré resistir! Pues aguardemos, y dentro de algunos años: diez, quince, veinte años, todo se habrá derretido. Escondida tentación de mujer: ¿Es aquélla? ¿Es esta mujer? -¿Pensaría entonces don Magín en doña Purita?- Ella tiene treinta años y yo cincuenta. ¡Dentro de veinte más! Todo pasa, inclusive lo que no pasó».</p>
 					<lg type="poem">
-						<l part="initial">   Pues que vemos lo presente </l>
-						<l part="initial">que en un punto se es ido </l>
-						<l part="initial">y acabado, </l>
-						<l part="initial">si juzgamos sabiamente </l>
-						<l part="initial">daremos lo no venido </l>
-						<l part="initial">por pasado.</l>
+						<l part="I">   Pues que vemos lo presente </l>
+						<l part="I">que en un punto se es ido </l>
+						<l part="I">y acabado, </l>
+						<l part="I">si juzgamos sabiamente </l>
+						<l part="I">daremos lo no venido </l>
+						<l part="I">por pasado.</l>
 					</lg>
 					<p>¿También lo no pasado lo daremos por pasado? Todo pasa. ¿Todo? Pero ¿qué es lo que única y precisamente pasará sino lo que fuimos, lo que hubiéramos gozado y alcanzado? Y si no pudimos ser ni saciar lo apetecido, entonces ¿qué es lo que habrá pasado? ¿No habrá pasado la posibilidad desaprovechada, la capacidad recluida? ¿Y nuestro dolor? También nuestro dolor. ¿Y no quedará de algún modo lo que no fuimos ni pudimos, y habremos pasado nosotros sin pasar? Dolorosa consolación la de tener que decir: ¡Todo pasa, si morimos con la duda de que no haya pasado todo: la pasión no cumplida, la afición mortificada!...</p>
 					<p>Sin doña Purita se desganaba la charla, quedándose en porciones. Verdaderamente habían pasado también los tiempos de la tertulia de doña Corazón.</p>

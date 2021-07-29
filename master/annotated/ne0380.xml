@@ -1,219 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Crimen</title>
-<title type="sub"/>
-<title type="short">Crimen</title>
-<title type="idno">
-<idno type="bne">XX1961933</idno>
-<idno type="viaf">309368888</idno>
-</title>
-<author>
-<idno type="bne">XX830087</idno>
-<idno type="viaf">61601797</idno>
-<name type="short">Espinosa</name>
-<name type="full">Agustín Espinosa</name>
-</author>
-<principal xml:id="jct">José Calvo Tello</principal>
-</titleStmt>
-<extent>
-<measure unit="lines">292</measure>
-<measure unit="divs">31</measure>
-<measure unit="tokens">7692</measure>
-<measure unit="chars">44485</measure>
-<measure unit="size_kb">58</measure>
-<measure unit="chapters">6</measure>
-<measure unit="shortStories">0</measure>
-<measure unit="parts">0</measure>
-<measure unit="sections">24</measure>
-<measure unit="divisions">0</measure> 
-<measure unit="blocks">217</measure> 
-<measure unit="lg.poems">0</measure> 
-<measure unit="lg.stanzas">0</measure> 
-<measure unit="line.verses">0</measure> 
-<measure unit="heads">29</measure> 
-<measure unit="stages">0</measure> 
-<measure unit="sps">0</measure> 
-<measure unit="paragraphs">188</measure> 
-<measure unit="abs">0</measure> 
-<measure unit="fts">0</measure>
-<measure unit="paragraphs.ds">13</measure>
-<measure unit="saids">11</measure>
-<measure unit="narrative.ps">175</measure>
-<measure unit="punctual_ss">472</measure> 
-<measure unit="numerals">16</measure> 
-<measure unit="puncts">1227</measure> 
-<measure unit="len.abstract">1442</measure>
-<measure unit="chapters.len.mean">7507.50</measure>
-<measure unit="chapters.len.std">3890.27</measure>
-<measure unit="chapters.len.median">6470.50</measure>
-<measure unit="chapters.len.iqr">6413.00</measure>
-<measure unit="types">2537</measure>
-<measure unit="ss">434</measure>
-<measure unit="ss.num.mean">102.22</measure>
-<measure unit="ss.num.std">83.97</measure>
-<measure unit="ss.num.median">83.00</measure>
-<measure unit="ss.num.iqr">92.25</measure>
-<measure unit="ss.active.verbs.mean">1.24</measure>
-<measure unit="ss.active.verbs.std">1.21</measure>
-<measure unit="ss.active.verbs.median">1.00</measure>
-<measure unit="ss.active.verbs.iqr">2.00</measure>
-<measure unit="ws">8725</measure>
-<measure unit="ws.num.mean">4.13</measure>
-<measure unit="ws.num.std">2.88</measure>
-<measure unit="ws.num.median">3.00</measure>
-<measure unit="ws.num.iqr">4.00</measure>
-<measure unit="conjunctions">442</measure>
-<measure unit="determiners">1300</measure>
-<measure unit="nouns">1804</measure>
-<measure unit="verbs">1095</measure>
-<measure unit="adverbs">411</measure>
-<measure unit="adjectives">663</measure>
-<measure unit="adpositions">1206</measure>
-<measure unit="punctuations">1177</measure>
-<measure unit="pronouns">551</measure>
-<measure unit="dates">17</measure>
-<measure unit="numbers">58</measure>
-<measure unit="interjections">1</measure>
-<measure unit="ne.persons">35</measure>
-<measure unit="ne.organizations">10</measure>
-<measure unit="ne.locations">13</measure>
-<measure unit="ne.others">5</measure>
-<measure unit="wnlex.noun.plants">19</measure>
-<measure unit="wnlex.verb.communications">45</measure>
-<measure unit="wnlex.noun.foods">16</measure>
-<measure unit="wnlex.verb.possessions">21</measure>
-<measure unit="wnlex.verb.cognitions">55</measure>
-<measure unit="wnlex.noun.communications">77</measure>
-<measure unit="wnlex.noun.states">55</measure>
-<measure unit="wnlex.verb.statives">316</measure>
-<measure unit="wnlex.noun.cognitions">41</measure>
-<measure unit="wnlex.noun.times">103</measure>
-<measure unit="wnlex.verb.bodys">43</measure>
-<measure unit="wnlex.noun.persons">179</measure>
-<measure unit="wnlex.adj.alls">458</measure>
-<measure unit="wnlex.noun.quantitys">9</measure>
-<measure unit="wnlex.noun.phenomenons">27</measure>
-<measure unit="wnlex.verb.creations">56</measure>
-<measure unit="wnlex.adj.perts">31</measure>
-<measure unit="wnlex.adv.alls">143</measure>
-<measure unit="wnlex.noun.processs">3</measure>
-<measure unit="wnlex.noun.artifacts">283</measure>
-<measure unit="wnlex.verb.perceptions">51</measure>
-<measure unit="wnlex.noun.feelings">25</measure>
-<measure unit="wnlex.verb.weathers">10</measure>
-<measure unit="wnlex.noun.substances">38</measure>
-<measure unit="wnlex.noun.shapes">5</measure>
-<measure unit="wnlex.verb.competitions">7</measure>
-<measure unit="wnlex.verb.motions">96</measure>
-<measure unit="wnlex.noun.animals">71</measure>
-<measure unit="wnlex.noun.acts">117</measure>
-<measure unit="wnlex.noun.bodys">165</measure>
-<measure unit="wnlex.noun.objects">70</measure>
-<measure unit="wnlex.noun.motives">1</measure>
-<measure unit="wnlex.verb.socials">71</measure>
-<measure unit="wnlex.noun.groups">44</measure>
-<measure unit="wnlex.verb.consumptions">12</measure>
-<measure unit="wnlex.noun.possessions">2</measure>
-<measure unit="wnlex.noun.Topss">22</measure>
-<measure unit="wnlex.noun.relations">4</measure>
-<measure unit="wnlex.noun.attributes">56</measure>
-<measure unit="wnlex.verb.emotions">17</measure>
-<measure unit="wnlex.noun.locations">56</measure>
-<measure unit="wnlex.noun.events">45</measure>
-<measure unit="wnlex.verb.contacts">61</measure>
-<measure unit="wnlex.xxxs">5617</measure>
-<measure unit="wnlex.verb.changes">80</measure>
-</extent>
-<publicationStmt>
-<publisher>CLiGS</publisher>
-<availability status="free">
-<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
-</availability>
-<date when="2018">2018</date>
-<idno type="cligs">ne0380</idno>
-</publicationStmt>
-<sourceDesc>
-<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Finereader, <date when="2018">2018</date>.</bibl>
-<bibl type="print-source">Libros del Innombrable, Zaragoza <date when="1999">1999</date></bibl>
-<bibl type="edition-first"><date when="1934">1934</date></bibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p><seg type="narrative"><s>.</s></seg></p>
-</encodingDesc>
-<profileDesc>
-<abstract source="MdLE10">
-<p><seg type="narrative"><s>Espinosa es autor de la que viene considerándose como una de las muestras más representativas del surrealismo español:</s><s> Crimen (1934).</s><s> Aunque responde a esa indefinición de géneros que caracteriza al autor, se puede catalogar como novela [...].</s></seg></p>
-<p><seg type="narrative"><s>Antes de que apareciera en formato de libro se publicaron varios fragmentos en periódicos y revistas.</s><s> Resultó ser una obra polémica y sufrió duros ataques, ya que el erotismo exacerbado y la necrofilia se mezclan con lo repugnante y cruel.</s><s> Campea el humor negro.</s><s> Es un complejo entramado en el que se superponen los sueños y la realidad.</s><s> Una suma de Freud y Sade.</s></seg></p>
-<p><seg type="narrative"><s>Con un alarde imaginativo el autor pretende asustar al buen burgués.</s><s> [...] La obra es de una belleza convulsiva que se enfrenta al canon clásico y a la sensibilidad, la moral y la lógica tradicional.</s></seg></p>
-<p><seg type="narrative"><s>Le da cierta unidad el estar narrada en primera persona por el asesino, un viejo impotente que a causa de los celos mata a su mujer, María Ana, mucho más joven que él.</s><s> Después de ser detenido, acaba huyendo a la "isla de las maldiciones". [...] es a la vez una novela policiaca, fantástica e irreal, y una elegía por la muerte de la amada.</s><s> El protagonista se siente confuso y angustiado; su personalidad se desintegra.</s><s> Asistimos a una extrañada vivivficación de los objetos: un sombrero con sexo, faroles que participan en un crimen, barcos que se miran con angustia...</s></seg></p>
-<p><seg type="narrative"><s>Abundan las frases breves, a modo de pinceladas electrizantes.</s></seg></p>
-</abstract>
-<textClass>
-<keywords scheme="keywords.xml" cert="medium">
-<term type="author.TOC.range" resp="MdLE10"/>
-<term type="author.continent">Europe</term>
-<term type="author.country">Spain</term>
-<term type="author.date.birth">1897</term>
-<term type="author.date.death">1939</term>
-<term type="author.gender">male</term>
-<term type="author.litHist.pages" resp="MdLE">10</term>
-<term type="author.movement">avantgarde</term>
-<term type="author.nonNovelGenre">essay</term>
-<term type="author.submovement">vanguardista</term>
-<term type="author.year.change"/>
-<term type="authorText.group"/>
-<term type="authorText.relation">none</term>
-<term type="text.characters.protagonist.age">mature</term>
-<term type="text.characters.protagonist.gender">male</term>
-<term type="text.characters.protagonist.name">?</term>
-<term type="text.characters.protagonist.profession">?</term>
-<term type="text.characters.protagonist.socLevel">medium</term>
-<term type="text.corpora.CoNSSA">True</term>
-<term type="text.corpora.CoNSSA.canon">True</term>
-<term type="text.form">prose</term>
-<term type="text.genre" cert="medium">novela</term>
-<term type="text.genre.subgenre.edit" resp="amazon">Ensayos, Historia, teoría literaria y crítica,  Poesía; </term>
-<term type="text.genre.subgenre.edit" resp="epublibre"/>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">crime-fiction</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">thriller</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="2">vanguardist</term>
-<term type="text.genre.subgenre.litHist" resp="HdLE"/>
-<term type="text.genre.subgenre.litHist" resp="MdLE">novela policíaca, novela fantástica, novela irreal</term>
-<term type="text.genre.subtitle"/>
-<term type="text.genre.subtitle.source" resp="bne"/>
-<term type="text.genre.supergenre">narrative</term>
-<term type="text.language">Spanish</term>
-<term type="text.litHist.mentioned" resp="HdLE">True</term>
-<term type="text.litHist.mentioned" resp="MdLE">True</term>
-<term type="text.litHist.pages" resp="MdLE10">1.0</term>
-<term type="text.litHist.literaryQuality" resp="HdLE10">high</term>
-<term type="text.movement">vanguardista</term>
-<term type="text.narration.narrator">autodiegetic</term>
-<term type="text.plot.end">negative</term>
-<term type="text.plot.representation">non-realistic</term>
-<term type="text.publication">book</term>
-<term type="text.setting.continent">other</term>
-<term type="text.setting.country">other</term>
-<term type="text.setting.represented">other</term>
-<term type="text.setting.settlement">other</term>
-<term type="text.setting.settlement.represented.exist">False</term>
-<term type="text.setting.settlement.type">?</term>
-<term type="text.setting.territory">other</term>
-<term type="text.time.period">contemporary</term>
-<term type="text.time.span" cert="low">365</term>
-<term type="text.litHist.audience" resp="MdLE">elite</term>
-<term type="text.litHist.brow">high</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change when="2018-05-22" who="#jct">Initial TEI version.</change>
-</revisionDesc>
-</teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Crimen</title>
+				<title type="sub"></title>
+				<title type="short">Crimen</title>
+				<title type="idno">
+					<idno type="bne">XX1961933</idno>
+					<idno type="viaf">309368888</idno>
+				</title>
+				<author>
+					<idno type="bne">XX830087</idno>
+					<idno type="viaf">61601797</idno>
+					<name type="short">Espinosa</name>
+					<name type="full">Agustín Espinosa</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">292</measure>
+				<measure unit="divs">31</measure>
+				<measure unit="tokens">7692</measure>
+				<measure unit="chars">44485</measure>
+				<measure unit="size_kb">58</measure>
+				<measure unit="chapters">6</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">24</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">217</measure> 
+				<measure unit="lg.poems">0</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">0</measure> 
+				<measure unit="heads">29</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">188</measure> 
+				<measure unit="abs">0</measure> 
+				<measure unit="fts">0</measure>
+				<measure unit="paragraphs.ds">13</measure>
+				<measure unit="saids">11</measure>
+				<measure unit="narrative.ps">175</measure>
+				<measure unit="punctual_ss">472</measure> 
+				<measure unit="numerals">16</measure> 
+				<measure unit="puncts">1227</measure> 
+				<measure unit="len.abstract">1442</measure>
+				<measure unit="chapters.len.mean">7507.50</measure>
+				<measure unit="chapters.len.std">3890.27</measure>
+				<measure unit="chapters.len.median">6470.50</measure>
+				<measure unit="chapters.len.iqr">6413.00</measure>
+
+				<measure unit="types">2537</measure>
+
+				<measure unit="ss">434</measure>
+				<measure unit="ss.num.mean">102.22</measure>
+				<measure unit="ss.num.std">83.97</measure>
+				<measure unit="ss.num.median">83.00</measure>
+				<measure unit="ss.num.iqr">92.25</measure>
+				<measure unit="ss.active.verbs.mean">1.24</measure>
+				<measure unit="ss.active.verbs.std">1.21</measure>
+				<measure unit="ss.active.verbs.median">1.00</measure>
+				<measure unit="ss.active.verbs.iqr">2.00</measure>
+
+				<measure unit="ws">8725</measure>
+				<measure unit="ws.num.mean">4.13</measure>
+				<measure unit="ws.num.std">2.88</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">442</measure>
+				<measure unit="determiners">1300</measure>
+				<measure unit="nouns">1804</measure>
+				<measure unit="verbs">1095</measure>
+				<measure unit="adverbs">411</measure>
+				<measure unit="adjectives">663</measure>
+				<measure unit="adpositions">1206</measure>
+				<measure unit="punctuations">1177</measure>
+				<measure unit="pronouns">551</measure>
+				<measure unit="dates">17</measure>
+				<measure unit="numbers">58</measure>
+				<measure unit="interjections">1</measure>
+
+				<measure unit="ne.persons">35</measure>
+				<measure unit="ne.organizations">10</measure>
+				<measure unit="ne.locations">13</measure>
+				<measure unit="ne.others">5</measure>
+
+				<measure unit="wnlex.noun.plants">19</measure>
+				<measure unit="wnlex.verb.communications">45</measure>
+				<measure unit="wnlex.noun.foods">16</measure>
+				<measure unit="wnlex.verb.possessions">21</measure>
+				<measure unit="wnlex.verb.cognitions">55</measure>
+				<measure unit="wnlex.noun.communications">77</measure>
+				<measure unit="wnlex.noun.states">55</measure>
+				<measure unit="wnlex.verb.statives">316</measure>
+				<measure unit="wnlex.noun.cognitions">41</measure>
+				<measure unit="wnlex.noun.times">103</measure>
+				<measure unit="wnlex.verb.bodys">43</measure>
+				<measure unit="wnlex.noun.persons">179</measure>
+				<measure unit="wnlex.adj.alls">458</measure>
+				<measure unit="wnlex.noun.quantitys">9</measure>
+				<measure unit="wnlex.noun.phenomenons">27</measure>
+				<measure unit="wnlex.verb.creations">56</measure>
+				<measure unit="wnlex.adj.perts">31</measure>
+				<measure unit="wnlex.adv.alls">143</measure>
+				<measure unit="wnlex.noun.processs">3</measure>
+				<measure unit="wnlex.noun.artifacts">283</measure>
+				<measure unit="wnlex.verb.perceptions">51</measure>
+				<measure unit="wnlex.noun.feelings">25</measure>
+				<measure unit="wnlex.verb.weathers">10</measure>
+				<measure unit="wnlex.noun.substances">38</measure>
+				<measure unit="wnlex.noun.shapes">5</measure>
+				<measure unit="wnlex.verb.competitions">7</measure>
+				<measure unit="wnlex.verb.motions">96</measure>
+				<measure unit="wnlex.noun.animals">71</measure>
+				<measure unit="wnlex.noun.acts">117</measure>
+				<measure unit="wnlex.noun.bodys">165</measure>
+				<measure unit="wnlex.noun.objects">70</measure>
+				<measure unit="wnlex.noun.motives">1</measure>
+				<measure unit="wnlex.verb.socials">71</measure>
+				<measure unit="wnlex.noun.groups">44</measure>
+				<measure unit="wnlex.verb.consumptions">12</measure>
+				<measure unit="wnlex.noun.possessions">2</measure>
+				<measure unit="wnlex.noun.Topss">22</measure>
+				<measure unit="wnlex.noun.relations">4</measure>
+				<measure unit="wnlex.noun.attributes">56</measure>
+				<measure unit="wnlex.verb.emotions">17</measure>
+				<measure unit="wnlex.noun.locations">56</measure>
+				<measure unit="wnlex.noun.events">45</measure>
+				<measure unit="wnlex.verb.contacts">61</measure>
+				<measure unit="wnlex.xxxs">5617</measure>
+				<measure unit="wnlex.verb.changes">80</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
+						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
+				</availability>
+				<date when="2018">2018</date>
+				<idno type="cligs">ne0380</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Finereader, <date when="2018">2018</date>.</bibl>
+				<bibl type="print-source">Libros del Innombrable, Zaragoza <date when="1999">1999</date></bibl>
+				<bibl type="edition-first"><date when="1934">1934</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE10">
+				<p>Espinosa es autor de la que viene considerándose como una de las muestras más representativas del surrealismo español: Crimen (1934). Aunque responde a esa indefinición de géneros que caracteriza al autor, se puede catalogar como novela [...].</p>
+				<p>Antes de que apareciera en formato de libro se publicaron varios fragmentos en periódicos y revistas. Resultó ser una obra polémica y sufrió duros ataques, ya que el erotismo exacerbado y la necrofilia se mezclan con lo repugnante y cruel. Campea el humor negro. Es un complejo entramado en el que se superponen los sueños y la realidad. Una suma de Freud y Sade.</p>
+				<p>Con un alarde imaginativo el autor pretende asustar al buen burgués. [...] La obra es de una belleza convulsiva que se enfrenta al canon clásico y a la sensibilidad, la moral y la lógica tradicional.</p>
+				<p>Le da cierta unidad el estar narrada en primera persona por el asesino, un viejo impotente que a causa de los celos mata a su mujer, María Ana, mucho más joven que él. Después de ser detenido, acaba huyendo a la "isla de las maldiciones". [...] es a la vez una novela policiaca, fantástica e irreal, y una elegía por la muerte de la amada. El protagonista se siente confuso y angustiado; su personalidad se desintegra. Asistimos a una extrañada vivivficación de los objetos: un sombrero con sexo, faroles que participan en un crimen, barcos que se miran con angustia...</p>
+				<p>Abundan las frases breves, a modo de pinceladas electrizantes.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="medium">
+					<term type="author.TOC.range" resp="MdLE10"></term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1897</term>
+					<term type="author.date.death">1939</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdLE">10</term>
+					<term type="author.movement">avantgarde</term>
+					<term type="author.nonNovelGenre">essay</term>
+					<term type="author.submovement">vanguardista</term>
+					<term type="author.year.change"></term>
+					<term type="authorText.group"></term>
+					<term type="authorText.relation">none</term>
+					<term type="text.characters.protagonist.age">mature</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">?</term>
+					<term type="text.characters.protagonist.profession">?</term>
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">True</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre" cert="medium">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="amazon">Ensayos, Historia, teoría literaria y crítica,  Poesía; </term>
+					<term type="text.genre.subgenre.edit" resp="epublibre"></term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">crime-fiction</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">vanguardist</term>
+					<term type="text.genre.subgenre.litHist" resp="HdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE">novela policíaca, novela fantástica, novela irreal</term>
+					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle.source" resp="bne"></term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.mentioned" resp="HdLE">True</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE10">1.0</term>
+					<term type="text.litHist.literaryQuality" resp="HdLE10">high</term>
+					<term type="text.movement">vanguardista</term>
+					<term type="text.narration.narrator">autodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">non-realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">other</term>
+					<term type="text.setting.country">other</term>
+					<term type="text.setting.represented">other</term>
+					<term type="text.setting.settlement">other</term>
+					<term type="text.setting.settlement.represented.exist">False</term>
+					<term type="text.setting.settlement.type">?</term>
+					<term type="text.setting.territory">other</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span" cert="low">365</term>
+					<term type="text.litHist.audience" resp="MdLE">elite</term>
+					<term type="text.litHist.brow">high</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+					
+			
+					
+			
+					
+			
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2018-05-22" who="#jct">Initial TEI version.</change>
+		</revisionDesc>
+	</teiHeader>
 <text>
 <front>
 </front>

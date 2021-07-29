@@ -1,213 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">De un cancionero apócrifo</title>
-<title type="sub"/>
-<title type="short">Cancionero</title>
-<title type="idno">
-<idno type="viaf">214772016</idno>
-</title>
-<author>
-<idno type="bne">XX991518</idno>
-<idno type="viaf">7385547</idno>
-<name type="short">AMachado</name>
-<name type="full">Antonio Machado</name>
-</author>
-<principal xml:id="jct">José Calvo Tello</principal>
-</titleStmt>
-<extent>
-<measure unit="lines">1708</measure>
-<measure unit="divs">82</measure>
-<measure unit="tokens">15355</measure>
-<measure unit="chars">92171</measure>
-<measure unit="size_kb">132</measure>
-<measure unit="chapters">46</measure>
-<measure unit="shortStories">0</measure>
-<measure unit="parts">7</measure>
-<measure unit="sections">28</measure>
-<measure unit="divisions">0</measure> 
-<measure unit="blocks">1119</measure> 
-<measure unit="lg.poems">76</measure> 
-<measure unit="lg.stanzas">0</measure> 
-<measure unit="line.verses">862</measure> 
-<measure unit="heads">69</measure> 
-<measure unit="stages">0</measure> 
-<measure unit="sps">18</measure> 
-<measure unit="paragraphs">150</measure> 
-<measure unit="abs">20</measure> 
-<measure unit="fts">14</measure>
-<measure unit="paragraphs.ds">17</measure>
-<measure unit="saids">30</measure>
-<measure unit="narrative.ps">133</measure>
-<measure unit="punctual_ss">527</measure> 
-<measure unit="numerals">34</measure> 
-<measure unit="puncts">3430</measure> 
-<measure unit="len.abstract">1295</measure>
-<measure unit="chapters.len.mean">2211.22</measure>
-<measure unit="chapters.len.std">4892.94</measure>
-<measure unit="chapters.len.median">613.00</measure>
-<measure unit="chapters.len.iqr">1014.75</measure>
-<measure unit="types">3731</measure>
-<measure unit="ss">696</measure>
-<measure unit="ss.num.mean">132.35</measure>
-<measure unit="ss.num.std">114.73</measure>
-<measure unit="ss.num.median">102.00</measure>
-<measure unit="ss.num.iqr">122.25</measure>
-<measure unit="ss.active.verbs.mean">1.98</measure>
-<measure unit="ss.active.verbs.std">1.79</measure>
-<measure unit="ss.active.verbs.median">1.00</measure>
-<measure unit="ss.active.verbs.iqr">2.00</measure>
-<measure unit="ws">18650</measure>
-<measure unit="ws.num.mean">3.98</measure>
-<measure unit="ws.num.std">3.05</measure>
-<measure unit="ws.num.median">3.00</measure>
-<measure unit="ws.num.iqr">4.00</measure>
-<measure unit="conjunctions">1060</measure>
-<measure unit="determiners">2627</measure>
-<measure unit="nouns">3730</measure>
-<measure unit="verbs">2313</measure>
-<measure unit="adverbs">820</measure>
-<measure unit="adjectives">1384</measure>
-<measure unit="adpositions">2132</measure>
-<measure unit="punctuations">3371</measure>
-<measure unit="pronouns">1075</measure>
-<measure unit="dates">7</measure>
-<measure unit="numbers">68</measure>
-<measure unit="interjections">63</measure>
-<measure unit="ne.persons">305</measure>
-<measure unit="ne.organizations">39</measure>
-<measure unit="ne.locations">48</measure>
-<measure unit="ne.others">27</measure>
-<measure unit="wnlex.noun.plants">31</measure>
-<measure unit="wnlex.verb.communications">225</measure>
-<measure unit="wnlex.noun.foods">21</measure>
-<measure unit="wnlex.verb.possessions">69</measure>
-<measure unit="wnlex.verb.cognitions">133</measure>
-<measure unit="wnlex.noun.communications">334</measure>
-<measure unit="wnlex.noun.states">100</measure>
-<measure unit="wnlex.verb.statives">713</measure>
-<measure unit="wnlex.noun.cognitions">365</measure>
-<measure unit="wnlex.noun.times">144</measure>
-<measure unit="wnlex.verb.bodys">71</measure>
-<measure unit="wnlex.noun.persons">383</measure>
-<measure unit="wnlex.adj.alls">984</measure>
-<measure unit="wnlex.noun.quantitys">18</measure>
-<measure unit="wnlex.noun.phenomenons">47</measure>
-<measure unit="wnlex.verb.creations">196</measure>
-<measure unit="wnlex.adj.perts">76</measure>
-<measure unit="wnlex.adv.alls">243</measure>
-<measure unit="wnlex.noun.processs">13</measure>
-<measure unit="wnlex.noun.artifacts">264</measure>
-<measure unit="wnlex.verb.perceptions">116</measure>
-<measure unit="wnlex.noun.feelings">75</measure>
-<measure unit="wnlex.verb.weathers">9</measure>
-<measure unit="wnlex.noun.substances">56</measure>
-<measure unit="wnlex.noun.shapes">12</measure>
-<measure unit="wnlex.verb.competitions">12</measure>
-<measure unit="wnlex.verb.motions">107</measure>
-<measure unit="wnlex.noun.animals">27</measure>
-<measure unit="wnlex.noun.acts">221</measure>
-<measure unit="wnlex.noun.bodys">94</measure>
-<measure unit="wnlex.noun.objects">125</measure>
-<measure unit="wnlex.noun.motives">11</measure>
-<measure unit="wnlex.verb.socials">167</measure>
-<measure unit="wnlex.noun.groups">47</measure>
-<measure unit="wnlex.verb.consumptions">10</measure>
-<measure unit="wnlex.noun.possessions">17</measure>
-<measure unit="wnlex.noun.Topss">133</measure>
-<measure unit="wnlex.noun.relations">10</measure>
-<measure unit="wnlex.noun.attributes">192</measure>
-<measure unit="wnlex.verb.emotions">51</measure>
-<measure unit="wnlex.noun.locations">51</measure>
-<measure unit="wnlex.noun.events">80</measure>
-<measure unit="wnlex.verb.contacts">71</measure>
-<measure unit="wnlex.xxxs">12399</measure>
-<measure unit="wnlex.verb.changes">127</measure>
-</extent>
-<publicationStmt>
-<publisher>CLiGS</publisher>
-<availability status="free">
-<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
-</availability>
-<date when="2016">2016</date>
-<idno type="cligs">ne0217</idno>
-</publicationStmt>
-<sourceDesc>
-<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Cain, r1.3, <date when="2014">2014</date>, <idno>6176</idno>, <ref target="https://www.epublibre.org/libro/detalle/6176"/>.</bibl>
-<bibl type="print-source"><date/></bibl>
-<bibl type="edition-first"><date when="1933">1933</date></bibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p><seg type="narrative"><s>.</s></seg></p>
-</encodingDesc>
-<profileDesc>
-<abstract source="MdLE8">
-<p><seg type="narrative"><s>El camino emprendido en Nuevas canciones lleva directamente a los apócrifos.</s><s> Si allí teníamos poesía filosófica, en esta nueva aventura literaria encontramos filosofía poética.</s><s> Aunque escrito mayoritariamente en prosa, De un cancionero apócrifo es la continuación y el luminoso comentario de la lírica machadiana.</s></seg></p>
-<p><seg type="narrative"><s>Estas prosas entreveradas de versos desconcertaron al público lector.</s><s> [...] Los textos imitan, parodian las exposiciones académicas de los sistemas filosóficos y poéticos, y las biografías y caracterizaciones de sus creadores.</s><s> Con toda libertad, saltando de un tema a otro, jugando con paradojas.</s><s> Machado va retratando los perfiles de dos poetas que no existieron, pero que debieron existir.</s><s> Al principio la nónima era más amplia y abarcaba los Doce poetas que pudieron existir [...] (en realidad incluyó catorce(, y seis filósofos españoles del siglo XIX.</s><s> Todos ellos quedaron reducidos a dos:</s><s> Abel Martín y su discípulo Jaun de Mairena.</s><s> Aparece también para dialogar con Mariena, Jorge Meneses, uno de los "doce inexistentes poetas".</s><s> Se había propuesto Machado crear como contrapunto al decimonónico Martín y a su discípulo, un apócrifo moderno, vanguardista, al que puso el nombre de Pedro de Zúñiga.</s><s> También quiso inventar al poeta del futuro aunque no llegó ni a bautizarlo.</s></seg></p>
-</abstract>
-<textClass>
-<keywords scheme="keywords.xml" cert="medium">
-<term type="author.TOC.range" resp="MdL8">7</term>
-<term type="author.continent">Europe</term>
-<term type="author.country">Spain</term>
-<term type="author.date.birth">1879</term>
-<term type="author.date.death">1939</term>
-<term type="author.gender">male</term>
-<term type="author.litHist.pages" resp="MdL8">103</term>
-<term type="author.movement">modernism</term>
-<term type="author.nonNovelGenre">poetry</term>
-<term type="author.submovement">3-modernista</term>
-<term type="author.year.change">0</term>
-<term type="authorText.group"/>
-<term type="authorText.relation">high</term>
-<term type="text.characters.protagonist.age">mature</term>
-<term type="text.characters.protagonist.gender">male</term>
-<term type="text.characters.protagonist.name">Abel Martín</term>
-<term type="text.characters.protagonist.profession">teacher</term>
-<term type="text.characters.protagonist.socLevel">medium</term>
-<term type="text.corpora.CoNSSA">True</term>
-<term type="text.corpora.CoNSSA.canon">False</term>
-<term type="text.form">mixed</term>
-<term type="text.genre">?</term>
-<term type="text.genre.subgenre.edit" resp="amazon">Europea, Antologías; Poesía; Antologías; Poesía humorística, Poesía, Poesía; Poesía</term>
-<term type="text.genre.subgenre.edit" resp="epublibre">Otros</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">comedy</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="1">modernist</term>
-<term type="text.genre.subgenre.litHist" resp="#jct" importance="2">philosophical</term>
-<term type="text.genre.subgenre.litHist" resp="MdLE">prosa poética</term>
-<term type="text.genre.subtitle">cancionero</term>
-<term type="text.genre.subtitle.source" resp="bne">cancionero</term>
-<term type="text.genre.supergenre">mixed</term>
-<term type="text.language">Spanish</term>
-<term type="text.litHist.ToC">5</term>
-<term type="text.litHist.mentioned" resp="HdLE">False</term>
-<term type="text.litHist.mentioned" resp="MdLE">True</term>
-<term type="text.litHist.pages" resp="MdLE8">7.0</term>
-<term type="text.movement">modernista</term>
-<term type="text.narration.narrator">heterodiegetic</term>
-<term type="text.plot.end">neutral</term>
-<term type="text.plot.representation">realistic</term>
-<term type="text.publication">book</term>
-<term type="text.setting.continent">Europe</term>
-<term type="text.setting.country">Spain</term>
-<term type="text.setting.represented">unknown</term>
-<term type="text.setting.settlement">unknown</term>
-<term type="text.setting.settlement.represented.exist">True</term>
-<term type="text.setting.settlement.type">rural</term>
-<term type="text.setting.territory">Andalucía</term>
-<term type="text.time.period">contemporary</term>
-<term type="text.time.span">unknown</term>
-<term type="text.time.year">18??</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change when="2016-04-19" who="#jct">Initial TEI version.</change>
-</revisionDesc>
-</teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">De un cancionero apócrifo</title>
+				<title type="sub"></title>
+				<title type="short">Cancionero</title>
+				<title type="idno">
+					<idno type="viaf">214772016</idno>
+				</title>
+				<author>
+					<idno type="bne">XX991518</idno>
+					<idno type="viaf">7385547</idno>
+					<name type="short">AMachado</name>
+					<name type="full">Antonio Machado</name>
+				</author>
+				<principal xml:id="jct">José Calvo Tello</principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">1708</measure>
+				<measure unit="divs">82</measure>
+				<measure unit="tokens">15355</measure>
+				<measure unit="chars">92171</measure>
+				<measure unit="size_kb">132</measure>
+				<measure unit="chapters">46</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">7</measure>
+				<measure unit="sections">28</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">1119</measure> 
+				<measure unit="lg.poems">76</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">862</measure> 
+				<measure unit="heads">69</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">18</measure> 
+				<measure unit="paragraphs">150</measure> 
+				<measure unit="abs">20</measure> 
+				<measure unit="fts">14</measure>
+				<measure unit="paragraphs.ds">17</measure>
+				<measure unit="saids">30</measure>
+				<measure unit="narrative.ps">133</measure>
+				<measure unit="punctual_ss">527</measure> 
+				<measure unit="numerals">34</measure> 
+				<measure unit="puncts">3430</measure> 
+				<measure unit="len.abstract">1295</measure>
+				<measure unit="chapters.len.mean">2211.22</measure>
+				<measure unit="chapters.len.std">4892.94</measure>
+				<measure unit="chapters.len.median">613.00</measure>
+				<measure unit="chapters.len.iqr">1014.75</measure>
+
+				<measure unit="types">3731</measure>
+
+				<measure unit="ss">696</measure>
+				<measure unit="ss.num.mean">132.35</measure>
+				<measure unit="ss.num.std">114.73</measure>
+				<measure unit="ss.num.median">102.00</measure>
+				<measure unit="ss.num.iqr">122.25</measure>
+				<measure unit="ss.active.verbs.mean">1.98</measure>
+				<measure unit="ss.active.verbs.std">1.79</measure>
+				<measure unit="ss.active.verbs.median">1.00</measure>
+				<measure unit="ss.active.verbs.iqr">2.00</measure>
+
+				<measure unit="ws">18650</measure>
+				<measure unit="ws.num.mean">3.98</measure>
+				<measure unit="ws.num.std">3.05</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">1060</measure>
+				<measure unit="determiners">2627</measure>
+				<measure unit="nouns">3730</measure>
+				<measure unit="verbs">2313</measure>
+				<measure unit="adverbs">820</measure>
+				<measure unit="adjectives">1384</measure>
+				<measure unit="adpositions">2132</measure>
+				<measure unit="punctuations">3371</measure>
+				<measure unit="pronouns">1075</measure>
+				<measure unit="dates">7</measure>
+				<measure unit="numbers">68</measure>
+				<measure unit="interjections">63</measure>
+
+				<measure unit="ne.persons">305</measure>
+				<measure unit="ne.organizations">39</measure>
+				<measure unit="ne.locations">48</measure>
+				<measure unit="ne.others">27</measure>
+
+				<measure unit="wnlex.noun.plants">31</measure>
+				<measure unit="wnlex.verb.communications">225</measure>
+				<measure unit="wnlex.noun.foods">21</measure>
+				<measure unit="wnlex.verb.possessions">69</measure>
+				<measure unit="wnlex.verb.cognitions">133</measure>
+				<measure unit="wnlex.noun.communications">334</measure>
+				<measure unit="wnlex.noun.states">100</measure>
+				<measure unit="wnlex.verb.statives">713</measure>
+				<measure unit="wnlex.noun.cognitions">365</measure>
+				<measure unit="wnlex.noun.times">144</measure>
+				<measure unit="wnlex.verb.bodys">71</measure>
+				<measure unit="wnlex.noun.persons">383</measure>
+				<measure unit="wnlex.adj.alls">984</measure>
+				<measure unit="wnlex.noun.quantitys">18</measure>
+				<measure unit="wnlex.noun.phenomenons">47</measure>
+				<measure unit="wnlex.verb.creations">196</measure>
+				<measure unit="wnlex.adj.perts">76</measure>
+				<measure unit="wnlex.adv.alls">243</measure>
+				<measure unit="wnlex.noun.processs">13</measure>
+				<measure unit="wnlex.noun.artifacts">264</measure>
+				<measure unit="wnlex.verb.perceptions">116</measure>
+				<measure unit="wnlex.noun.feelings">75</measure>
+				<measure unit="wnlex.verb.weathers">9</measure>
+				<measure unit="wnlex.noun.substances">56</measure>
+				<measure unit="wnlex.noun.shapes">12</measure>
+				<measure unit="wnlex.verb.competitions">12</measure>
+				<measure unit="wnlex.verb.motions">107</measure>
+				<measure unit="wnlex.noun.animals">27</measure>
+				<measure unit="wnlex.noun.acts">221</measure>
+				<measure unit="wnlex.noun.bodys">94</measure>
+				<measure unit="wnlex.noun.objects">125</measure>
+				<measure unit="wnlex.noun.motives">11</measure>
+				<measure unit="wnlex.verb.socials">167</measure>
+				<measure unit="wnlex.noun.groups">47</measure>
+				<measure unit="wnlex.verb.consumptions">10</measure>
+				<measure unit="wnlex.noun.possessions">17</measure>
+				<measure unit="wnlex.noun.Topss">133</measure>
+				<measure unit="wnlex.noun.relations">10</measure>
+				<measure unit="wnlex.noun.attributes">192</measure>
+				<measure unit="wnlex.verb.emotions">51</measure>
+				<measure unit="wnlex.noun.locations">51</measure>
+				<measure unit="wnlex.noun.events">80</measure>
+				<measure unit="wnlex.verb.contacts">71</measure>
+				<measure unit="wnlex.xxxs">12399</measure>
+				<measure unit="wnlex.verb.changes">127</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
+						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
+				</availability>
+				<date when="2016">2016</date>
+				<idno type="cligs">ne0217</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Cain, r1.3, <date when="2014">2014</date>, <idno>6176</idno>, <ref target="https://www.epublibre.org/libro/detalle/6176"/>.</bibl>
+				<bibl type="print-source"><date></date></bibl>
+				<bibl type="edition-first"><date when="1933">1933</date></bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="MdLE8">
+				<p>El camino emprendido en Nuevas canciones lleva directamente a los apócrifos. Si allí teníamos poesía filosófica, en esta nueva aventura literaria encontramos filosofía poética. Aunque escrito mayoritariamente en prosa, De un cancionero apócrifo es la continuación y el luminoso comentario de la lírica machadiana.</p>
+				<p>Estas prosas entreveradas de versos desconcertaron al público lector. [...] Los textos imitan, parodian las exposiciones académicas de los sistemas filosóficos y poéticos, y las biografías y caracterizaciones de sus creadores. Con toda libertad, saltando de un tema a otro, jugando con paradojas. Machado va retratando los perfiles de dos poetas que no existieron, pero que debieron existir. Al principio la nónima era más amplia y abarcaba los Doce poetas que pudieron existir [...] (en realidad incluyó catorce(, y seis filósofos españoles del siglo XIX. Todos ellos quedaron reducidos a dos: Abel Martín y su discípulo Jaun de Mairena. Aparece también para dialogar con Mariena, Jorge Meneses, uno de los "doce inexistentes poetas". Se había propuesto Machado crear como contrapunto al decimonónico Martín y a su discípulo, un apócrifo moderno, vanguardista, al que puso el nombre de Pedro de Zúñiga. También quiso inventar al poeta del futuro aunque no llegó ni a bautizarlo.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="keywords.xml" cert="medium">
+					<term type="author.TOC.range" resp="MdL8">7</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1879</term>
+					<term type="author.date.death">1939</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL8">103</term>
+					<term type="author.movement">modernism</term>
+					<term type="author.nonNovelGenre">poetry</term>
+					<term type="author.submovement">3-modernista</term>
+					<term type="author.year.change">0</term>
+					<term type="authorText.group"></term>
+					<term type="authorText.relation">high</term>
+					<term type="text.characters.protagonist.age">mature</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name">Abel Martín</term>
+					<term type="text.characters.protagonist.profession">teacher</term>
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">False</term>
+					<term type="text.form">mixed</term>
+					<term type="text.genre">?</term>
+					<term type="text.genre.analyzed" cert="medium">ensayo</term>
+					<term type="text.genre.subgenre.edit" resp="amazon">Europea, Antologías; Poesía; Antologías; Poesía humorística, Poesía, Poesía; Poesía</term>
+					<term type="text.genre.subgenre.edit" resp="epublibre">Otros</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">comedy</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">philosophical</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE">prosa poética</term>
+					<term type="text.genre.subtitle">cancionero</term>
+					<term type="text.genre.subtitle.source" resp="bne">cancionero</term>
+					<term type="text.genre.subtitle.source.first.edition" resp="bne">cancionero</term>
+					<term type="text.genre.supergenre">mixed</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.ToC">5</term>
+					<term type="text.litHist.mentioned" resp="HdLE">False</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE8">7.0</term>
+					<term type="text.movement">modernista</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
+					<term type="text.plot.end">neutral</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">Europe</term>
+					<term type="text.setting.country">Spain</term>
+					<term type="text.setting.represented">unknown</term>
+					<term type="text.setting.settlement">unknown</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">rural</term>
+					<term type="text.setting.territory">Andalucía</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span">unknown</term>
+					<term type="text.time.year">18??</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2016-04-19" who="#jct">Initial TEI version.</change>
+		</revisionDesc>
+	</teiHeader>
 <text>
 <front>
 </front>

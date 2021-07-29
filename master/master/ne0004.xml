@@ -207,6 +207,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Madrid</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-3.6919440000000003</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">40.418889</term>
 					<term type="text.setting.settlement">Madrid</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type" resp="#jct">big-city</term>

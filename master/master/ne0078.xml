@@ -205,6 +205,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Galicia</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-7.863111999999999</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">42.61946</term>
 					<term type="text.setting.settlement">Pazos de Ulloa</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>

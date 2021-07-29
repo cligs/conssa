@@ -208,6 +208,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Oviedo</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-5.87951433952683</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">43.3533424</term>
 					<term type="text.setting.settlement">Vetusta</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">small-city</term>

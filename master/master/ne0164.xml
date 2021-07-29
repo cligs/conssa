@@ -203,6 +203,8 @@
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Valencia</term><!--territorios cercanos a Valencia-->
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">-0.3759513</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">39.4699014</term>
 					<term type="text.setting.settlement">unknown</term>
 					<term type="text.setting.settlement.represented.exist">True</term>
 					<term type="text.setting.settlement.type">rural</term>
