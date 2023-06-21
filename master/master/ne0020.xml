@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los cruzados de la Causa</title>
-				<title type="sub">La guerra carlista</title>
+				
 				<title type="short">CruzadosCausa</title>
-				<title type="idno"><idno type="viaf">175126136</idno></title>
+				
 				<author>
-					<idno type="bne">XX1055436</idno>
-					<idno type="viaf">68936773</idno>
-					<name type="short">Valle</name>
-					<name type="full">Valle-Inclán, Ramón del</name>
+					<name type="short" ref="#Valle"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1105</measure>
@@ -138,22 +131,72 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2014">2014</date>
-				<idno type="cligs">ne0020</idno>
+						<idno type="cligs">ne0020</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2014">2014</date>, <idno></idno>, <ref target="https://archive.org/details/loscruzadosdelac00vall"/>.</bibl>
-				<bibl type="print-source">Imprenta de Primitivo Fernández, <date when="1930">1930</date></bibl>
-				<bibl type="edition-first"><date when="1908">1908</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los cruzados de la Causa</title>
+					<title type="sub">La guerra carlista</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/175126136/">175126136</idno>
+				</idno>
+				</title>
+					<author xml:id="Valle">
+						<name type="full"><forename>Ramón</forename> <surname>del Valle-Inclán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8840 - IP 8845">IP 8840 - IP 8845</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118626019">118626019</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q311001/">Q311001</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1055436.html">XX1055436</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/68936773/">68936773</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2014">2014</date>, <idno/>, <ref target="https://archive.org/details/loscruzadosdelac00vall"/>.</bibl>
+					<bibl type="print-source">Imprenta de Primitivo Fernández, <date when="1930">1930</date></bibl>
+					<bibl type="edition-first"><date when="1908">1908</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Guerra Carlista ; P. 1, Los cruzados de la causa</title> <date when="1920">1920</date>, <publisher>Perlado, Paéz y Comp. Eds.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="474649903" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=474649903"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1927">1927</date>, <publisher>Ed. Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="522557287" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522557287"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1960">1960</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1372770739" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1372770739"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1960">1960</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="463223888" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463223888"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los Cruzados de la causa</title> <date when="1960">1960</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="233020942" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233020942"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1969">1969</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="577231278" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=577231278"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la Causa</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1077543263" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1077543263"/> 		<idno type="isbn" n="8423938220;842393523X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="038259052" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=038259052"/> 		<idno type="isbn" n="8423932222;8423938220;8423935221"/></bibl>
+						<bibl type="further-edition"><title type="main">Die Kreuzfahrer des Königs</title> <date when="1981">1981</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="617151229" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=617151229"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1984">1984</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="326485244" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=326485244"/> 		<idno type="isbn" n="8423904601"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1985">1985</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="624795497" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=624795497"/> 		<idno type="isbn" n="8423904601"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Kreuzfahrer des Königs</title> <date when="1991">1991</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="857469169" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=857469169"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1991">1991</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="561419426" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=561419426"/> 		<idno type="isbn" n="8422632632"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1993">1993</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1124399305" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1124399305"/> 		<idno type="isbn" n="842397328X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la Causa</title> <date when="1993">1993</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1107680751" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1107680751"/> 		<idno type="isbn" n="8423938719"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1993">1993</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="19010550X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=19010550X"/> 		<idno type="isbn" n="8423938719"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cruzados de la causa</title> <date when="1994">1994</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="196108772" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=196108772"/> 		<idno type="isbn" n="842397328X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La guerra Carlista, vol. 1: Los cruzados de la causa</title> <date when="2017">2017</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1003397271" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1003397271"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract>
 				<p>El Marqués de Bradomín llega desde las guerras carlistas en Navarra a una aldea gallega. En ella, el Marqués conecta a varios grupos de la nobleza (la familia de Cara de Plata) y el clero (sacristanes, monjas y capellanes) para apoyar con dinero, personas y un alijo de armas a los combatientes en Navarra. A su vez, los soldados liberales intentan mantener el orden mediante métodos violentos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8841" key="IP 8841" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">8</term>
 					<term type="author.continent">Europe</term>
@@ -185,8 +228,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">war-novel</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -216,6 +259,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2014-01-07" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,7 +267,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0020_chap1">
-				<head>I</head>
+				<head xml:id="ne0020_head_000">I</head>
 				<p>Caballeros en mulas y a su buen paso de andadura, iban dos hombres por aquel camino viejo que, atravesando el monte, remataba en Viana del Prior. A tiempo de anochecer entraban en la villa espoleando. Las mujerucas que salían del rosario, viéndolos cruzar el cementerio con tal prisa, los atisbaron curiosas sin poder reconocerlos, por ir encapuchados los jinetes con las corozas de juncos que usa la gente vaquera en el tiempo de lluvias, por toda aquella tierra antigua. Pasaron los jinetes con hueco estrépito sobre las sepulturas del atrio, y las mujerucas quedáronse murmurando apretujadas bajo el porche, ya negro a pesar del farol que alumbraba el nicho de un santo de piedra. Voces de viejas murmuraron bajo el misterio de los manteos:</p>
 				<p>—¡Son las caballerías del palacio!</p>
 				<p>—Esperaban, días hace, al señor mi Marqués. Viene para levantar una guerra por el Rey Don Carlos.</p>
@@ -242,7 +286,7 @@
 				<p>Amenguaba la lluvia, y las viejas dejaron el abrigo del porche, encorvadas bajo los manteos, chocleando los zuecos. Se dispersaron, y algunas pudieron ver que estaban iluminadas las grandes salas del palacio de Bradomín. El Marqués acababa de descabalgar ante la puerta que aún conservaba, partidas en dos pedazos, las cadenas del derecho de asilo. El caballero legitimista venía enfermo, a convalecerse en aquel retiro de una herida alcanzada en la guerra.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0020_chap2">
-				<head>II</head>
+				<head xml:id="ne0020_head_001">II</head>
 				<p>Han encendido fuego en la gran sala del palacio, y allí, al toque de las ánimas, le sirven la colación al viejo dandy. El mayordomo, que había ido a esperarle con las mulas, viene a entretenerle con historias sin interés. Después llegan dos clérigos, canónigos de la Colegiata. Los dos habían recibido recado del caballero, que traía para ellos órdenes del Cuartel Real. Ninguno le conocía, porque eran veinte años los que llevaba ausente el famoso Marqués. Todo entre ellos fue plática de cortesanías, hasta que, levantados los manteles, salió el mayordomo y el caballero cerró con noble empaque las cuatro puertas de la sala. Los canónigos cambiaron una mirada, y el viejo dandy, avanzado hacia el centro de la estancia, exclamó:</p>
 				<p>—¡Saludémonos, como cruzados de la Causa!</p>
 				<p>Estas palabras bastaron para que los clérigos se emocionasen. Las habían oído otras muchas veces, ellos mismos solían repetirlas, y sólo entonces, pronunciadas por aquel anciano caballero que volvía de la guerra con un brazo de menos, las sintieron resonar dentro del alma como palabras de oración. Tenían un sentido religioso y combatiente, un rebato de somatén, en el silencio de aquella sala y en los labios de aquel prócer que volvía después de veinte años. Uno de los canónigos dijo con grave dignidad.</p>
@@ -280,7 +324,7 @@
 				<p>Después los dos canónigos y el caballero legitimista acordaron verse al día siguiente en la Sala Capitular. Urgía que los soldados tuviesen pronto fusiles.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0020_chap3">
-				<head>III</head>
+				<head xml:id="ne0020_head_002">III</head>
 				<p>La llegada del caballero legitimista, aquella misma noche corrió en lenguas por Viana del Prior. A la casa grande del vinculero, como seguían diciendo por tradición en la villa, llevó la nueva un criado que llamaban en burlas Don Galán. El amo, un viejo con ese hermoso y varonil tipo suevo tan frecuente en los hidalgos de la montaña gallega, dio grandes voces en son de regocijo y de sorpresa:</p>
 				<p>—¿Dices que acaba de llegar mi sobrino Bradomín? ¡Gran señor, gran ingenio, gran corazón!... ¡Mala cabeza!...</p>
 				<p>La voz tenía una hueca resonancia en aquella cocina de la casona. Don Juan Manuel Montenegro, sentado ante una mesa cubierta con manteles de lino casero, cenaba al amor del hogar, acompañado por dos de sus hijos. Servíales a los tres una moza, barragana del viejo. Tenía los ojos azules y cándidos, con algo de flor, era casi una niña: Siempre que posaba las viandas sobre la mesa, las manos le temblaban y los hijos del hidalgo la seguían de soslayo, con celo y con rencor. Eran dos mancebos muy altos, cetrinos, forzudos y encorvados. El uno, cruzaba con desgaire bajo el brazo la bayeta de un manteo, y en el remate de su silla había colgado el tricornio que aún usan los seminaristas en Viana del Prior: Se llamaba Don Farruquiño. Al otro, por la belleza de su rostro, le decían en su casa y en toda aquella tierra, Cara de Plata. Los dos comentaron la llegada del Marqués de Bradomín:</p>
@@ -332,7 +376,7 @@
 				<p>—¡Don Galán, trae un jarro del vino blanco de la Arnela!</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0020_chap4">
-				<head>IV</head>
+				<head xml:id="ne0020_head_003">IV</head>
 				<p>El Marqués de Bradomín madrugó para oír misa en el convento de donde era abadesa una de sus primas, aquella pálida y visionaria Isabel  Montenegro y Bendaña. El viejo caballero al recordarla, sentía una tristeza de crepúsculo en su alma. ¡Cuántas veces había pasado la muerte su hoz! De aquellas tres niñas con quienes había jugado en el jardín señorial, sólo una vivía. Como en el fondo de un espejo desvanecido, veía los rostros infantiles, las bocas risueñas, los ojos luminosos. Evocaba los nombres: ¡María Isabel! ¡María Fernandina! ¡Concha! Y aspiraba en ellos el aroma del jardín en otoño con sus flores marchitas, y una emoción musical y sentimental. ¡María Isabel! ¡María Fernándina! ¡Concha! Los claros nombres resonaban en su alma con un encanto juvenil y lejano. El amable Marqués de Bradomín tenía lágrimas en los ojos al entrar en el locutorio del convento donde le esperaba su prima la vieja abadesa, aquella pálida y visionaria María Isabel. La monja se levantó el velo:</p>
 				<p>—¡Dios te bendiga, Xavier!</p>
 				<p>Era alta, ojerosa, con las manos tan blancas, que parecían hechas del pan de las hostias. Hizo sentar a Bradomín en un sillón que había al pie de la reja, y seguidamente preguntó por los asuntos de la guerra y de la Corte de Don Carlos:</p>
@@ -369,7 +413,7 @@
 				<p>—¡Estoy pisando sobre fusiles!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0020_chap5">
-				<head>V</head>
+				<head xml:id="ne0020_head_004">V</head>
 				<p>Después del coro, algunos canónigos y beneficiados quedáronse a esperar la visita del caballero legitimista: Hablaban de la guerra calentándose en pie delante del brasero, en medio de la Sala Capitular. De tiempo en tiempo se oía el golpe de una puerta y el vuelo inocente de un esquilón. Viejos sacristanes y monagos vestidos de rojo, iban y venían en la sombra. La Sala Capitular era grande, silenciosa y con olor de incienso. Tenía el techo artesonado y los muros revestidos de terciopelo carmesí franjeado de oro. En los rincones brillaban algunas cornucopias, colgadas sobre cómodas antiguas con incrustaciones. Por las mañanas el sol doraba los cristales de una ventana enrejada, y tan alta que debajo quedaba espacio para una alhacena con herrajes y talla del Renacimiento. El Marqués de Bradomín entró acompañado de su capellán. Canónigos y beneficiados le recibieron con esa cortesía franca y un poco jovial, que parece timbrar las graves voces eclesiásticas:</p>
 				<p>—¡Señor Marqués de Bradomín!</p>
 				<p>—¡Ilustre amigo!</p>
@@ -400,7 +444,7 @@
 				<p>Los canónigos habían acogido con murmullos ardientes y aprobatorios, las últimas palabras del Maestre-Escuela. Sobre una mesa forrada de velludo carmesí había un tintero de plata con plumas de ave, y desfilaron todos, escribiendo su nombre y su contribución en un pliego de papel de barba que se llenó de rúbricas y de borrones.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0020_chap6">
-				<head>VI</head>
+				<head xml:id="ne0020_head_005">VI</head>
 				<p>El Marqués de Bradomín recibió aquel día un pliego de la Junta de Santiago: Eran malas noticias las que le daban: Había caído prisionera una tropa carlista que hacía leva de mozos y requisa de caballos en la raya portuguesa, cerca de San Pedro de Sil: También recordaban los señores de la Junta la falta de dinero, y aquella urgencia con que lo reclamaban de la guerra. El Marqués de Bradomín llamó a su mayordomo y le habló de la venta del palacio con sus tierras y rentas forales. El mayordomo se demudó:</p>
 				<p>—¿Vender el palacio y las rentas del mayorazgo?...</p>
 				<p>El Marqués afirmó con entereza:</p>
@@ -444,7 +488,7 @@
 				<p>De nuevo callaron marido y mujer. Pedro de Vermo fue por la vaca y la trajo al pesebre. El animal sacudió varias veces la cabeza y comenzó a mordisquear la yerba dando leves mugidos de satisfacción y de ansia.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0020_chap7">
-				<head>VII</head>
+				<head xml:id="ne0020_head_006">VII</head>
 				<p>El Señor Ginero, después de la siesta, todas las tardes salía de su casa con la escopeta al hombro y un cestillo de mimbres en la mano. Andaba lentamente, arrastrando los pies, y de reojo atisba al interior de las casas donde veía los camastros sobre caballetes pintados de azul, y a las mujeres sentadas en el suelo haciendo red. A veces asomaba la cabeza por alguna puerta llena de humo, ese humo pobre de la pinocha, con olor de sardinas asadas:</p>
 				<p>—¿Lagarteira, está tu marido? Respondía una voz dando gritos:</p>
 				<p>—¡Está en el mar!</p>
@@ -460,7 +504,7 @@
 				<p>Desde la mañana sabía la llegada del caballero legitimista, y quedara convenido con el mayordomo Pedro de Vermo.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0020_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0020_head_007">VIII</head>
 				<p>Canónigos y beneficiados, al volver del paseo, dieron compañía al caballero legitimista hasta la portalada de su palacio: Allí se despidieron con promesa de tornar en la noche para hacerle tertulia, y el caballero entrose solo por el vasto zaguán. Una sombra paseaba bajo las bóvedas, ya oscuras, y se oía el rumor de pasos y espuelas. Un caballo estaba atado en la puerta. La sombra vino hacia el Marqués de Bradomín:</p>
 				<p>—¡Soy uno de los hijos de Don Juan Manuel Montenegro!</p>
 				<p>El Marqués le tendió la mano:</p>
@@ -502,7 +546,7 @@
 				</lg>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0020_chap9">
-				<head>IX</head>
+				<head xml:id="ne0020_head_008">IX</head>
 				<p>El Señor Ginero se detuvo en la puerta haciendo una profunda cortesía:</p>
 				<p>—¿Da su permiso, mi dueño y mandatario el ilustre Marqués de Bradomín?</p>
 				<p>Al tiempo que encorvaba su aventajado talle, abría los brazos con beatitud: En una mano tenía el sombrero de copa y en la otra el cestillo de las ciruelas. El caballero legitimista le acogió con gesto protector y amable. Dio algunos pasos el usurero, hizo otra cortesía, dejó sobre la mesa el cesto de las frutas, y delicadamente le alzó las hojas de higuera con que venía cubierto:</p>
@@ -536,7 +580,7 @@
 				<p>—¡Ese hombre será el heredero de nuestras casas!</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0020_chap10">
-				<head>X</head>
+				<head xml:id="ne0020_head_009">X</head>
 				<p>Cara de Plata sentose a cenar con el caballero legitimista. De pronto rompió en una carcajada extraña que tenía cierto timbre cruel, y miró al Marqués:</p>
 				<p>—¿Nos estaremos comiendo tu brazo?</p>
 				<p>Aquel viejo dandy que amaba tanto la originalidad, la impertinencia y la audacia, hizo, sin embargo, un gesto doloroso. Pero luego sonrió bajo la mirada del bello segundón. Los ojos de Cara de Plata, verdes como dos esmeraldas, tenían una violencia cristalina y alegre, parecían los ojos de un tigre joven. El Marqués de Bradomín repuso con fría elegancia:</p>
@@ -582,7 +626,7 @@
 				<p>El Marqués de Bradomín hizo un gesto, recordando ciertas palabras de la Madre Abadesa.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0020_chap11">
-				<head>XI</head>
+				<head xml:id="ne0020_head_010">XI</head>
 				<p>Todas las puertas del convento estaban guardadas por centinelas, y era la consigna no permitir a nadie ni la salida ni la entrada. En lo alto de la torre una monja, loca de miedo, seguía tocando las campanas, mientras hacía ronda en torno del convento y del huerto, una escuadra de marineros desembarcados de la trincadura Almanzora, que aquella tarde, ya puesto el sol, viérase entrar en bahía con todo el velamen desplegado. El comandante, un viejo liberal que alardeaba de impío, recorría el claustro y la iglesia, seguido de cuatro marineros con linternas que hacían cateo bajo los altares, como en la bodega de un barco contrabandista. La comunidad, reunida en el coro, cantaba un miserere, y la voz del órgano era bajo las bóvedas como la voz del viento en un naufragio, temerosa y misteriosa, voz de procelas. El comandante quiso registrar las celdas, y salió a recibirle en el coro, sola y con el velo caído, la Madre Abadesa:</p>
 				<p>—Señor comandante, quien rompa la clausura incurre en pena de excomunión.</p>
 				<p>Seguía oyéndose el canto latino de las monjas, medido y guiado por la voz del órgano como por el rugido de un león que fuese pastor. El comandante erguíase adusto tras la reja del locutorio:</p>
@@ -621,7 +665,7 @@
 				</lg>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0020_chap12">
-				<head>XII</head>
+				<head xml:id="ne0020_head_011">XII</head>
 				<p>En el locutorio apareció una hermana lega que venía rezando y santiguándose: Sus zapatos claveteados resonaban sobre la tarima: Era alta, con el rostro aldeano y el ademán brioso: Llevaba, en vez de hábito, basquiña de estameña, y sobre la frente morena y bruñida, una toca de lienzo pegada a la raíz del cabello. Siempre rezando entre dientes, buscó una llave en el manojo que le colgaba de la cintura y abrió la puerta de la reja:</p>
 				<p>—Pasen y hagan su escudriña.</p>
 				<p>El comandante entró mirando a la lega con fiero talante, y los cuatro mozos de la escuadra le siguieron chocando las linternas con una risa estúpida. La lega cogió de un brazo al que tenía más cerca, y le zarandeó:</p>
@@ -637,7 +681,7 @@
 				<p>El comandante hizo abrir la puerta y entraron en la iglesia. Moviendo las linternas se dispersaron por las capillas, y varias veces fueron y vinieron del presbiterio al cancel, y pasaron y repasaron de una nave a otra nave: Alzaban los paños de los altares y abrían los confesonarios. En el coro, las sombras blancas de las monjas cantaban su latín.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0020_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0020_head_012">XIII</head>
 				<p>La calle donde estaba el convento era angosta, y al rebato de campanas habíase llenado de mujerucas y de niños. El huerto daba sobre los esteros del río, un huerto triste, con matas de malva olorosa y cipreses muy viejos, donde había un ruiseñor. En el portón que daba al camino, dos mendigos, hombre y mujer, hablaban con el centinela, sentados en la orilla verde: Eran vagamundos que iban por los mercados vendiendo cribos. La mujer decía:</p>
 				<p>—Si hay contrabando escondido, no habéis de dar con él.</p>
 				<p>Y el hombre afirmaba con un gesto desdeñoso, poniendo sobre el pecho una mano negruzca:</p>
@@ -669,7 +713,7 @@
 				<p>—Esa es la ley de Dios... Y lo otro, el ser yo tu comandante, sería conveniente para los que mandan, porque yo sé como son mañeros los contrabandistas y conveniente para mi señora que tendría un lorito del Brasil. ¡Palmucena, no te caerá arrastrar cola y estar todo el día dándote aire con un abano!</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0020_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0020_head_013">XIV</head>
 				<p>Por el camino llegaba un corro de mujeres con algunos niños de pecho. Rodeaban a una vieja que venía dando voces con las manos en la cabeza:</p>
 				<p>—¡Ladrones!... ¡Enemigos malos!... ¡Sacar a los mozos de la vera de sus padres para luego hacerlos ir contra la ley de Dios!</p>
 				<p>El centinela se detuvo mirando al camino. La vieja, una sombra menuda y negra, corría ante el grupo de las mujeres, con los dedos enredados en los cabellos y la mantilla de paño, sobre los hombros, como en un entierro:</p>
@@ -698,7 +742,7 @@
 				<p>Y arrojando el fusil, rompió a correr hacia las casas del pueblo, perdiéndose en la oscuridad, mientras algunas mujerucas levantaban a la vieja, accidentada.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0020_chap15">
-				<head>XV</head>
+				<head xml:id="ne0020_head_014">XV</head>
 				<p>—¡Alto!</p>
 				<p>—¡Alto!</p>
 				<p>Era un grito que se escalonaba con el chascar de los fusiles al ser montados. El marinero corría como cuando era niño y le asustaban con los muertos, corría sin saber adonde, con la angustia de ser alcanzado, con un anhelo confuso de que la tierra le tragase y le tuviese escondido, hasta que los otros que venían a su alcance, pasasen y estuviesen lejos:</p>
@@ -717,7 +761,7 @@
 				<p>Sonó un tiro y luego otro. El marinero llegaba a la esquina y la dobló. Los pasos de los perseguidores resonaban en la calle. Muchas cabezas asomaron en las ventanas, se enracimaban y tenían una expresión dolorida, como en los retablos de ánimas. Los perseguidores doblaron también la esquina y se detuvieron. El otro estaba caído sobre la acera, boca abajo, en un charco de sangre. Las dos balas le habían entrado por la nuca, y aún movía una pierna el marinerito.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0020_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0020_head_015">XVI</head>
 				<p>Algunas mujeres asomaban en las puertas, se escurrían a la calle con sus hijos agarrados a las basquiñas, alargaban el cuello sin osar acercarse, pálidas, miedosas. Con vago andar de sombras se fueron juntando todas en medio del arroyo, y hablaban en voz baja y miraban al muerto desde lejos. Un perro del vinculero, con la cola entre las patas, atravesó la calle y se puso a lamer la sangre: En medio del silencio, se oía el chapoteo de la lengua sobre las piedras rojas. Una vieja le llamó enseñándole un pedazo de borona:</p>
 				<p>—¡Toma cadelo! ¡Toma!</p>
 				<p>Otra vieja le tiró un canto:</p>
@@ -761,7 +805,7 @@
 				<p>—No tenía otro hijo, pero mejor lo quiero aquí muerto, como lo vedes todos agora, que como yo lo vide esta tarde, crucificando a Dios Nuestro Señor.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0020_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0020_head_016">XVII</head>
 				<p>Don Juan Manuel se retiró al fondo de la sala, que estaba en oscuridad, y comenzó a pasearse con el balcón abierto. Se oía un acompasado plañir de mujerucas, y de tiempo en tiempo el alarido de la madre:</p>
 				<p>—¡Asesinos! ¡Asesinos!</p>
 				<p>Don Juan Manuel Montenegro sentía una cólera justiciera y violenta, una exaltación de caballero andante. Soñaba con emular las glorias de su quinto abuelo, que una noche había puesto fuego a tres galeras de piratas ingleses, sin otra ayuda que la de sus hijos, todos niños y el último de nueve años. Entró Don Galán con el resuello jadeante, y el vinculero le recibió gritando desde el fondo oscuro de la sala:</p>
@@ -801,7 +845,7 @@
 				<p>Y Don Juan Manuel despertó con el pie al bufón, que, arrodillado delante del sitial, comenzaba a roncar.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0020_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0020_head_017">XVIII</head>
 				<p>La casa del vinculero daba también a una plaza verde y silenciosa, donde algunos clérigos paseaban al sol del invierno. Tenía una gran puerta blasonada y un arco que comunicaba con la iglesia del convento, siendo paso reservado para la tribuna que aquellos hidalgos disfrutaban a la derecha del altar mayor, en la capilla del Cardenal Montenegro. Micaela la Roja, una criada vieja, se levantó cerca de media noche y encendió luz, pero un soplo de aire la dejó a oscuras en el corredor. Parecía que una voz de mujer gritase tras la puerta de la tribuna pegando los labios a la cerradura. De tiempo en tiempo, se oían golpes que despertaban el ladrido de los perros. Era una voz muy afligida la que llamaba:</p>
 				<p>—¡Don Juan Manuel!... ¡Don Juan Manuel!...</p>
 				<p>La criada pensó que era el ánima del muerto, y tuvo miedo. En el oscuro corredor sentíase un soplo de aire, y parecía que fuese suya aquella voz. Resonaban los golpes en la puerta de la tribuna, y los perros ladraban atados bajo la parra del corral. Micaela la Roja comenzó a rezar en voz alta, arrodillada en el claro de luna que entraba por el montante de una ventana. Volvía aquella voz de misterio:</p>
@@ -831,7 +875,7 @@
 				<p>Y en la calle, alrededor del muerto, seguía el planto de las mujerucas igual y monótono, como en una pauta, y la luna, desde un cielo frío y raso, parecía mirar a la tierra, bogando en su cerco de sueño, indiferente al amor y al odio.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0020_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0020_head_018">XIX</head>
 				<p>—¡Don Juan Manuel! ¡Don Juan Manuel!</p>
 				<p>Era una voz apagada que parecía deshacerse en el viento y en la oscuridad. El vinculero interrogó, deteniéndose ante la puerta cerrada:</p>
 				<p>—¿Quién es?</p>
@@ -880,7 +924,7 @@
 				<p>—¡El destructor de toda la tradición española! Los mayorazgos eran la historia del pasado y debían ser la historia del porvenir. Esos hidalgos pobres y dadivosos venían de una selección militar fuerte y legendaria. Eran los únicos españoles que podían amar la historia de su linaje, que tenían el culto de los abuelos, y el orgullo de las cuatro sílabas del apellido. Vivía en ellos el romanticismo de las batallas y de las empresas aventureras que se simbolizaban en un lobo pasante o en un león rapante. El pueblo está degradado por la miseria, y la nobleza cortesana por las adulaciones y los privilegios, pero los hidalgos, los secos hidalgos de gotera, eran la sangre más pura, destilada en un filtro de mil años y de cien guerras. ¡Y todo lo quebrantó el caballo de Atila!</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0020_chap20">
-				<head>XX</head>
+				<head xml:id="ne0020_head_019">XX</head>
 				<p>Se oyó rumor de pasos muy apresurados, y momentos después una sombra se destacaba en la puerta:</p>
 				<p>—¿Es el amigo Minguiños?</p>
 				<p>—El mismo, Señor Maestre-Escuela. Mi saludo a todos... En esta oscuridad apenas nos vemos las caras.</p>
@@ -925,7 +969,7 @@
 				<p>—¡Del Infierno, Señor Don Minguiños!</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0020_chap21">
-				<head>XXI</head>
+				<head xml:id="ne0020_head_020">XXI</head>
 				<p>El Marqués de Bradomín habló a media voz con Cara de Plata:</p>
 				<p>—¡Tu padre sería un magnífico cabecilla!</p>
 				<p>El hidalgo se volvió con arrogancia:</p>
@@ -953,7 +997,7 @@
 				<p>—Tiene la simplicidad de aquella lega, cuya historia refiere nuestra Madre Santa Clara.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0020_chap22">
-				<head>XXII</head>
+				<head xml:id="ne0020_head_021">XXII</head>
 				<p>Con Minguiños entra un hombre pequeño,  flaco y tuerto, a quien llamaban el Girle. Había sido soldado en la primera guerra carlista y ahora, ya viejo, vivía a la sombra del convento. Era recadero, hortelano, y cavaba la sepultura de las monjas. Venía armado con el pico, y suspiró al dejarlo en un rincón:</p>
 				<p>—¡Toda la santa noche en la posada esperando al capitán de la goleta!</p>
 				<p>Interrogó la monja:</p>
@@ -991,7 +1035,7 @@
 				<p>La Madre Abadesa levantose tras de la reja: — ¡Hijo mío, será lo que disponga Dios Nuestro Señor!</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0020_chap23">
-				<head>XXIII</head>
+				<head xml:id="ne0020_head_022">XXIII</head>
 				<p>El Girle comenzó a golpear con el pico, explorando donde sonaba a hueco. Los fusiles estaban ocultos bajo las losas del locutorio, en la bóveda de una antigua capilla subterránea, cerrada al culto hacía más de cien años. Se dieron prisa a desenterrarlos y conducirlos a la casa del vinculero. En aquella tarea todos ayudaron con ardor silencioso y fanático. Era una procesión a lo largo de los claustros entristecidos por el alba, y a través de la iglesia oscura, donde habían ido poniendo luces de distancia en distancia, para determinar y alumbrar el camino: Brillaban desde lejos agujereando la sombra... Ya era un farol posado en tierra, ya era un cabo de cirio, resto de algún funeral, derramándose erguido sobre el balconaje del pulpito. Don Juan Manuel había despertado a sus criados para que ayudasen en aquel acarreo, y cuando el alijo estuvo en recaudo, los reunió a todos en una sala y cerró las puertas, jurando arrancarles la lengua si no guardaban bien guardado el secreto. Micaela la Roja se arrodilló:</p>
 				<p>—¡Ay, señor mi amo, puesta en el fuego no lo dijera!</p>
 				<p>Don Galán se rascaba la greña:</p>
@@ -1012,7 +1056,7 @@
 				<p>El Marqués de Bradomín, el segundón y el canónigo, atalayaban tras las vidrieras de un salón que daba a la desierta plaza.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0020_chap24">
-				<head>XXIV</head>
+				<head xml:id="ne0020_head_023">XXIV</head>
 				<p>Don Juan Manuel se animaba recordando y narrando parecidos lances de la otra guerra, y la monja, que muy en sigilo había venido a la casa del vinculero, quiso mostrar aquel ejemplo a Cara de Plata:</p>
 				<p>—¡Si tienes el corazón de tu padre, mucha gloria puedes alcanzar bajo las banderas del Rey!</p>
 				<p>Y advirtió el Maestre-Escuela:</p>
@@ -1070,7 +1114,7 @@
 				<p>Y seguía sonriendo doctoralmente.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0020_chap25">
-				<head>XXV</head>
+				<head xml:id="ne0020_head_024">XXV</head>
 				<p>Cuando los fusiles estuvieron en los carros, el hermoso segundón bajó a la era, y por sí mismo los fue cubriendo con haces de paja. Era media mañana cuando se pusieron en camino, después de la parva de borona caliente y vino nuevo, que viejos y mozos saborearon puestos en hilera, a la sombra del hórreo. Cara de Plata, ya encima de su caballo, hablaba con el canónigo y la monja, que estaban en una ventana:</p>
 				<p>—Llegaremos con la puesta y podremos embarcar durante la noche.</p>
 				<p>La monja alzó los ojos al cielo:</p>
@@ -1119,7 +1163,7 @@
 				<p>—¡Hasta mañana!</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0020_chap26">
-				<head>XXVI</head>
+				<head xml:id="ne0020_head_025">XXVI</head>
 				<p>La mañana gris y anubascada, era presagio de tormenta y temporal en la costa. Por las callejuelas que bajan a la playa, aparecían trechos de un mar saltante y espumoso. Era una visión azul, clara y terrible, en la oscuridad lluviosa de aquellas cuestas toldadas por un cielo plomizo, que serpenteaban entre casas mezquinas con escalones en las puertas. Los porches de las iglesias parecían llenos por la voz del mar, se ofrecían sonoros y desnudos al paso del viento.</p>
 				<p>La tarde transcurrió toda en chubascos, con un largo ulular nocturno. Dos mujeres, madre e hija, con las basquiñas arremolinadas, atravesaron la plaza y entraron en el palacio de Bradomín. El caballero legitimista las recibió sentado cerca del fuego, en la gran biblioteca, donde leía en latín los Comentarios de César. Las dos mujeres se detuvieron en la puerta, haciendo una reverencia, sonrientes y silenciosas: Se tocaban con mantillas de velludo, como las aldeanas ricas, y arrollaban a las manos grandes rosarios de azabache engarzados en plata. Habló la hija, con una gran expresión de inmovilidad extendida sobre la cara, y los ojos llenos de atención:</p>
 				<p>—En nuestra casa es donde come Mister Briand. Encargó mucho que fuésemos al convento... La Madre Isabel nos encamina aquí...</p>
@@ -1160,7 +1204,7 @@
 				<p>Se despidieron, y el viejo dandy las acompañó como a dos princesas. Con la cabeza descubierta, bajó la gran escalera.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0020_chap27">
-				<head>XXVII</head>
+				<head xml:id="ne0020_head_026">XXVII</head>
 				<p>Las gaviotas volaban sobre la playa, y el mar entraba y salía en los socavones de las peñas, hirviente y rugiente: Eran las ollas del diablo. Y la niña de la posada, de tiempo en tiempo, aparecía en un ventano abierto bajo el alero y cercado por una banda de añil. Suspiraba mirando hacia la goleta, que aparejaba dos velas. Un bulto que estaba en el puente era el capitán, y la marinería daba bandadazos sobre cubierta, entre la zaloma y grita de la maniobra. Después, la niña de la posada derramaba la vista por el mar, hasta la línea del horizonte donde se confundía con el cielo, y la mirada de sus ojos, y el rosa pálido de su boca, tenían una tristeza sagrada. La estancia era pequeña, toda blanca de cal, y con el techo partido por una gran viga. Percibíase el vaho de la taberna que estaba en el zaguán: El olor de la caña holandesa, de los serones de higos, del azúcar húmedo y moreno, que la vieja, sentada delante de las balanzas, repartía en cartuchos de a cuarto y de a dos cuartos: Era un vasto olor, triste como la llovizna, y como el mar, y como las disputas de aquellos marineros que jugaban a los naipes. La niña tomó la costura y fue a sentarse cerca del ventano, mirando al mar, con la aguja prendida en el lienzo. La goleta parecía esconderse en los pliegues de la llovizna, navegaba con los masteleros calados y dos palmos de vela, a sotavento del faro Ruano. Con un sollozo, la niña inclinó la cabeza y besó su labor. Cosía el ajuar de boda. El Niño Jesús parecía sonreír a la blancura de la estancia, desde su rinconera con mantelillo, en un círculo de caracoles marinos, nacarados, fabulosos y sonoros. Y un barco de juguete, con banderas inglesas y aparejo de goleta, colgaba de la viga, pintada de añil como el encuadre del ventano. Resonaron en la escalera las pisadas de la madre que, al asomar en la puerta, se detuvo y agitó en el aire una carta que traía en la mano. La niña se levantó corriendo:</p>
 				<p>—¡Suya!</p>
 				<p>La vieja respondió con un gesto expresivo, y luego gritó al oído de la niña, pasándole la mano por el cabello:</p>
@@ -1182,7 +1226,7 @@
 				<p>La niña rezó toda la noche con una pena confusa, oyendo el tumbo de las olas al pie de su ventano, y los gritos de los pescadores que volvían de arribada. De pronto la vidriera retembló tan fuerte, que la niña volvió la cabeza. La vio abierta, inmóvil bajo la furia del viento, como si una mano la retuviese, y sintió erizados los cabellos bajo un soplo húmedo y salobre.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0020_chap28">
-				<head>XXVIII</head>
+				<head xml:id="ne0020_head_027">XXVIII</head>
 				<p>En un vaho de niebla aparecía y desaparecía el faro Ruano. La goleta pasó bajo él, ciñendo el viento, y apenas doblada la punta del playazo, rectificó el rumbo, y con todas las luces apagadas hizo proa a la ensenada de Lantañón, paraje desierto al socaire de los picos Lantaños. El arenal, de guijas ásperas y amarillentas, invadía parte del robledo, un bosque de maleza y carballos retorcidos, con los troncos descortezados, y los nudos grandes, lisos y redondos como calaveras. Algunos árboles muy viejos, arraigados entre peñascales, se inclinaban sobre el mar, y sufrían el salsero de las olas que entraban en los socavones del monte. A corta distancia del mar, comenzaban los molinos, que parecían esparcidos por esa mano ingenua que dispone los nacimientos de Navidad: Casucas viejas con emparrados en las puertas, prendidas sobre una quebrada del monte por donde baja el río, un río saltante y espumante que tiene, en la paz dorada de los días, la música del cristal, con remansos de ensueño bajo la sombra verde de los mimbrales. Pero entonces, embarrado y amarillento, tenía la voz soturna del monte y de los lobos. Cara de Plata había llegado anochecido. Los carros se anunciaban en la vereda con su largo canto, que parecía más triste en aquella soledad honda y granítica, bajo aquel cielo de lluvia, donde algún buitre batía las alas. Los aldeanos, encapuchados con las corozas de juncos, iban sentados sobre la carga, silenciosos y cabeceantes. De tiempo en tiempo, oíase una voz acuciando a la yunta:</p>
 				<p>—¡To!,.. ¡Marelo!... ¡To!.... ¡Bermello!...</p>
 				<p>Los carros seguían las rodadas que otros carros, en cientos de años, habían labrado en las piedras de aquel temeroso camino viejo como el mundo. Cara de Plata se apeó a la puerta del molino, que regía un viejo antiguo criado de sus abuelos, y dejó el potro atado al abrigo del alpende: Los carros entraron en la era, y el segundón, con tres hombres de escolta, bajó a la playa por un atajo. Sentose sobre los peñascales, mirando al mar. No se distinguía una sola vela. Las gaviotas revolaban en la playa: Una pasó muy alta, batiendo las alas. Cara de Plata la vio remontarse y bajar sobre una ola, y volver a subir dando graznidos. Se puso a pensar: Vuela muy alta, pero seguramente podré matarla de un tiro. Si la mato será buena señal, y embarcaremos los fusiles sin contratiempo... Si no la mato... Si no la mato... El hermoso segundón dudaba sin resolver nada y la gaviota volaba tan alto que iba a perderse en el cielo. Todavía en aquella duda, echose el fusil a la cara y disparó. Al pronto el humo no le dejó ver, y luego creyó que la gaviota volaba más alta, casi en las nubes. Fue solo un momento. Seguía mirando, y comprendió que bajaba muy lentamente, volinando con una ala rota. Cayó en la orilla. Uno de los aldeanos la recogió mojada del mar: Tenía las alas negras y el pecho blanco y sangriento. Ladraban los perros de todos los molinos:</p>
@@ -1194,7 +1238,7 @@
 				<p>Volvió a inquirir hacia el mar, seguía sin descubrirse una vela en toda la extensión verdeante y ululante.</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0020_chap29">
-				<head>XXIX</head>
+				<head xml:id="ne0020_head_028">XXIX</head>
 				<p>Cuando retornaba al molino, el segundón columbró dos bultos que saltaban la cerca, seguidos de un perro. Los bultos agazapáronse entre las zarzas, y el perro quedó avizorando al camino. Cara de Plata dio una gran voz:</p>
 				<p>—¡Hijos de cabra!</p>
 				<p>Y corrió adonde los bultos se escondían. El perro huyó con las orejas altas, después de lanzar algunos ladridos, y el segundón, cateó entre los zarzales que orillaban la vereda</p>
@@ -1233,7 +1277,7 @@
 				<p>Entrose al molino, encendió en el hogar un haz de paja, a modo de antorcha, y bajó corriendo a la playa. La goleta se le aparecía en la rasgadura de los relámpagos, sin velamen, batida de costado por el mar. Era un instante todo incierto, todo lívido, y después volvía la noche negra, llena del rugido del viento y del oleaje. De a bordo hicieron señales con una luz que bajaba y subía. Cara de Plata respondió agitando su antorcha, y corriendo a lo largo del arenal. La luz se apagó y volvió a brillar: Parecía que la columpiasen furiosamente, tales eran los bandazos del barco: Tocaba las olas y luego remontábase a las nubes. De pronto se extinguió. Cara de Plata, encaramado en una roca, siguió mucho tiempo agitando la antorcha. Bajo sus pies rompía la resaca, y la ola espumante y saltante, le mojaba el rostro y le ponía en los labios un sabor amargo, como de lágrimas. Estaba atento a los relámpagos, por descubrir el mar y la goleta en la brevedad de aquella luz, y, al volver la oscuridad, agitaba desesperado la antorcha, en duda de cuanto había visto. Le parecía que la goleta se alejaba, zozobrante entre crestas de espuma, con el casco de través. Al fin los relámpagos solamente le mostraron la vastedad tormentosa de las olas. La goleta había desaparecido. Cara de Plata la esperó hasta el amanecer, y, viendo que no tornaba, mandó enterrar los fusiles en la playa. Luego despidió a su gente. El, todavía con una vaga esperanza, quedose en el molino, pero a la tarde pidió su caballo y tomó al galope el camino real.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0020_chap30">
-				<head>XXX</head>
+				<head xml:id="ne0020_head_029">XXX</head>
 				<p>Por la Puerta del Deán, que aún queda en pie de la antigua muralla, entraba el hermoso segundón con el caballo cubierto de sudor, y al rodear el huerto del convento, cuya tapia daba sobre los esteros del río, distinguió luces y un gran bulto de gente caminando por aquella calzada aldeana que se aparecía envuelta en el vapor violeta de la puesta solar. Tocaban a muerto todas las campanas, y se oía un acompasado plañir de mujerucas:</p>
 				<p>—¡Se lo robaron a su madre para las escuadras!</p>
 				<p>—¡Era el rey de los mozos!</p>
@@ -1253,7 +1297,7 @@
 				<p>La mendiga seguía su rezo, sola, en medio del camino, mientras se perdía a lo lejos galopando el hermoso segundón. Aquella vieja mendiga, temblorosa bajo el capuz del manteo, parecía hecha de tierra, y el vuelo de los murciélagos, y el son de las campanas que tocaban a muerto, aumentaban la desolación de aquella sombra centenaria que caminaba trenqueante, apoyada en su palo, por el camino crepuscular.</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0020_chap31">
-				<head>XXXI</head>
+				<head xml:id="ne0020_head_030">XXXI</head>
 				<p>Cara de Plata se apeó a la puerta del palacio de Bradomín. Ya era noche cerrada y en el charcal de la plaza, donde salpicaba el claro de luna, se columbraba la sombra de un perro, mirándose en el agua fangosa, en medio de un  gran silencio y de una gran soledad. La plaza, con su hueca resonancia y sus cipreses, que dejaban caer de las cimas velos de sombras, parecía un cementerio. Muy de tarde en tarde,  algún clérigo con los hábitos arremolinados, la atravesaba, salvando los charcos con grandes zancadas, y desaparecía en el zaguán del palacio, apenas alambrado por un farol de retorcidos hierros. Otras veces era un jinete, hidalgo aldeano, que se apeaba goteando agua de su montecristo. Se reunían todos en un salón largo y oscuro, que ostentaba en cada testero un canapé dorado, de gusto francés, con cojines de seda florida y desvanecida. El caballero legitimista los convocara secretamente para hacer recaudo de dineros y acudir a sostener la guerra. Algunos llegaban de villas y de aldeas remotas. Del otro lado del mar habían acudido, el arcipreste de Céltigos, el escribano Acuña, y Don Pedro de Lanzós y Don Diego Montesacro, que eran cuñados. De la montaña, se juntaban el capitán Cantillo, veterano de la otra guerra, el alcalde de San Clodio, el sumiller Aguiar, tres labradores ricos de Barrantes, y los abades de Gondar, de Grondarín, de Brandeso, de Bealo, de Lantañón y de Lantaño. El viejo dandy hizo su aparición tras larga espera, apoyado en el brazo de Cara de Plata: Volvía del cementerio: Estaba muy pálido y sus ojos tristes tenían una misteriosa consonancia con sus manos afiladas, de monje penitente. Llevaba sobre los hombros una taima aforrada en piel de marta, y en el lado izquierdo abría sus lises de sangre, la cruz de Santiago. Cara de Plata, para poder enterarle a solas, había esperado fuera del salón. Al entrar aún hablaban en voz baja:.</p>
 				<p>—Fletaremos otro barco.</p>
 				<p>—¡Tú no pierdes la esperanza!</p>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Sonata de invierno</title>
-				<title type="sub">Memorias del Marqués de Bradomín</title>
+				
 				<title type="short">SonataInvierno</title>
-				<title type="idno">
-					<idno type="bne">XX2017509</idno>
-					<idno type="viaf">177949330</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1055436</idno>
-					<idno type="viaf">68936773</idno>
-					<name type="short">Valle</name>
-					<name type="full">Valle-Inclán, Ramón del</name>
+					<name type="short" ref="#Valle"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1163</measure>
@@ -141,22 +131,93 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0016</idno>
+						<idno type="cligs">ne0016</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2014">2014</date>, <idno>46182</idno>, <ref target="http://www.gutenberg.org/ebooks/46182"/>.</bibl>
-				<bibl type="print-source">Perlado, Páez y Compañía, <date when="1914">1914</date></bibl>
-				<bibl type="edition-first"><date when="1905">1905</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Sonata de invierno</title>
+					<title type="sub">Memorias del Marqués de Bradomín</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2017509.html">XX2017509</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/177949330/">177949330</idno>
+				</idno>
+				</title>
+					<author xml:id="Valle">
+						<name type="full"><forename>Ramón</forename> <surname>del Valle-Inclán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8840 - IP 8845">IP 8840 - IP 8845</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118626019">118626019</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q311001/">Q311001</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1055436.html">XX1055436</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/68936773/">68936773</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2014">2014</date>, <idno>46182</idno>, <ref target="http://www.gutenberg.org/ebooks/46182"/>.</bibl>
+					<bibl type="print-source">Perlado, Páez y Compañía, <date when="1914">1914</date></bibl>
+					<bibl type="edition-first"><date when="1905">1905</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno : memorias del Marques de Brandomin</title> <date when="1924">1924</date>, <publisher>Renacimiento [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1506566766" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1506566766"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno: memorias del Marques de Bradomin</title> <date when="1924">1924</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1335848681" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1335848681"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1924">1924</date>, <publisher>Perlado, Paéz y Comp. Eds.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="461221489" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=461221489"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno: memorias del Marques de Bradomin</title> <date when="1927">1927</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1135362734" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135362734"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1927">1927</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="324900589" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=324900589"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno: memorias del Marques de Bradomin</title> <date when="1933">1933</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1177614154" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177614154"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de Invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1933">1933</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="522759963" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522759963"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de otoño</title> <date when="1940">1940</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1146359535" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1146359535"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño; Sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1940">1940</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="462917452" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=462917452"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de Invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1941">1941</date>, <publisher>Rua Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="522558550" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522558550"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="1950">1950</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1523094680" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1523094680"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title> <date when="1950">1950</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="630638764" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=630638764"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title> <date when="1952">1952</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="324861303" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=324861303"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno</title> <date when="1961">1961</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="460345044" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460345044"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="1963">1963</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="133713306X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133713306X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1963">1963</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="461305615" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=461305615"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno</title> <date when="1963">1963</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="460344927" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460344927"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="1969">1969</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1129043398" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1129043398"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de Invierno</title> <date when="1969">1969</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="571383572" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=571383572"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">Sonata de estío, Sonata de otoño, Sonata de invierno ; memorias del Marqués de Bradomín</title> <date when="1972">1972</date>, <publisher>Porrúa</publisher> <pubPlace>México, D.F.</pubPlace> 		<idno type="ppn" n="770302572" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=770302572"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="1975">1975</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1182598900" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182598900"/> 		<idno type="isbn" n="8423904415"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title> <date when="1979">1979</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="391702378" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=391702378"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de otoño</title> <date when="1983">1983</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1095338552" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1095338552"/> 		<idno type="isbn" n="8423904415"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Wintersonate</title>: 	<title type="sub">Memoiren des Marqués de Bradomín</title> <date when="1985">1985</date>, <publisher>Klett-Cotta</publisher> <pubPlace>Stuttgart</pubPlace> 		<idno type="ppn" n="1617542601" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1617542601"/> 		<idno type="isbn" n="3608951938"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de otoño</title> <date when="1985">1985</date>, <publisher>Ed. Arte y Literatura</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="109918312X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=109918312X"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Wintersonate</title>: 	<title type="sub">Memoiren d. Marqués de Bradomín</title> <date when="1985">1985</date>, <publisher>Klett-Cotta</publisher> <pubPlace>Stuttgart</pubPlace> 		<idno type="ppn" n="469033045" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469033045"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Wintersonate</title>: 	<title type="sub">Memoiren des Marqués de Bradomín</title> <date when="1985">1985</date>, <publisher>Klett-Cotta</publisher> <pubPlace>Stuttgart</pubPlace> 		<idno type="ppn" n="021029466" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=021029466"/> 		<idno type="isbn" n="3608951938"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1986">1986</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="600361160" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=600361160"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="1989">1989</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1671319265" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1671319265"/> 		<idno type="isbn" n="8423918610"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="1990">1990</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1104819627" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1104819627"/> 		<idno type="isbn" n="8423918610"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de otoño, sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomin</title> <date when="1990">1990</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="082947155" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=082947155"/> 		<idno type="isbn" n="8423918610"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1991">1991</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="561419019" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=561419019"/> 		<idno type="isbn" n="8422632594"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="1994">1994</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1132238013" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1132238013"/> 		<idno type="isbn" n="8423918610"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title> <date when="1996">1996</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="249482428" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=249482428"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title> <date when="2005">2005</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="843633883" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=843633883"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de otoño</title> <date when="2005">2005</date>, <publisher>Editorial Espasa Calpe, S.A.</publisher> <pubPlace>Pozuelo de Alarcón (Madrid)</pubPlace> 		<idno type="ppn" n="843633670" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=843633670"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de invierno</title> <date when="2010">2010</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="680036490" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=680036490"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de invierno</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="2017">2017</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1003397093" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1003397093"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
 				<p>Estancia del Marqués de Bradomín en Estella, Navarra, centro del carlismo. El Marqués se ve envuelto en las intrigas entre las diferentes facciones del movimiento. La relación sentimental la desarrolla con María Antonieta, duquesa y dama de la Reina, quien quiere dejar de ser la amante de Bradomín para respetar la inminente muerte de su marido. En una misión impuesta por el pretendiente Carlos de Borbón, Bradomín es herido y su brazo debe ser amputado. Durante su convalecencia es cuidado por Maximina, hija de Bradomín en un convento a la que él, sin revelarle que es su padre, la seduce.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8841" key="IP 8841" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">8</term>
 					<term type="author.continent">Europe</term>
@@ -188,7 +249,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">memoria</term>
 					<term type="text.genre.subtitle.source" resp="bne">memoria, novela satírica</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">memoria</term> 
@@ -229,6 +290,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2014-11-10" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>

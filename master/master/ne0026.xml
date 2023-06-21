@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Incesto</title>
-				<title type="sub">Novela original</title>
+				
 				<title type="short">Incesto</title>
-				<title type="idno">
-					<idno type="bne">XX2930015</idno></title>
+				
 				<author>
-					<idno type="bne">XX1137688</idno>
-					<idno type="viaf">51728159</idno>
-					<name type="short">Zamacois</name>
-					<name type="full">Eduardo Zamacois</name>
+					<name type="short" ref="#Zamacois"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1270</measure>
@@ -139,13 +131,35 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0026</idno>
+						<idno type="cligs">ne0026</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2015">2015</date>, <idno>48654</idno>, <ref target="http://www.gutenberg.org/ebooks/48654"/>.</bibl>
-				<bibl type="print-source">Ramón Sopena, Barcelona<date></date></bibl>
-				<bibl type="edition-first"><date when="1900">1900</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Incesto</title>
+					<title type="sub">Novela original</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2930015.html">XX2930015</idno>
+				</idno>
+				</title>
+					<author xml:id="Zamacois">
+						<name type="full"><forename>Eduardo</forename> <surname>Zamacois</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 04365 - IQ 04366">IQ 04365 - IQ 04366</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1020929944">1020929944</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3320774/">Q3320774</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1137688.html">XX1137688</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/51728159/">51728159</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2015">2015</date>, <idno>48654</idno>, <ref target="http://www.gutenberg.org/ebooks/48654"/>.</bibl>
+					<bibl type="print-source">Ramón Sopena, <pubPlace>Barcelona</pubPlace><date/></bibl>
+					<bibl type="edition-first"><date when="1900">1900</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -155,6 +169,14 @@
 				<p>.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 04365" key="IQ 04365" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">6</term>
 					<term type="author.continent">Europe</term>
@@ -167,7 +189,7 @@
 					<term type="author.nonNovelGenre">theatre</term>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">low</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -215,6 +237,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-10-23" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -222,7 +245,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0026_chap1">
-				<head>I</head>
+				<head xml:id="ne0026_head_000">I</head>
 				<p>Mercedes dió las buenas noches y salió: iba triste, algo pálida, con las ojeras violáceas y la mirada errabunda y brillante de las mujeres nerviosas a quienes el tósigo de una obsesión impide dormir tranquilas; y los dos viejecitos permanecieron sentados, contemplándose con aire melancólico.</p>
 				<p>Él ocupaba un cómodo sillón canonjil de ancho y sólido respaldar. Era un anciano como de sesenta años, envuelto en una bata obscura que caía a lo largo de su cuerpo alto y enjuto formando pliegues de majestuosa severidad sacerdotal; el pecho era angosto, el busto débil se encorvaba hacia adelante, obedeciendo a esa viciosa propensión física de las personas que envejecieron sentadas, y sus manos, bajo cuya piel rugosa serpeaban grandes venas azules, asían los brazos del sillón con afilados y amarillentos dedos de convaleciente.</p>
 				<p>Aquel cuerpo blandengue, enfermizo y tan para poco, contrastaba poderosamente con la cabeza; una cabeza apostólica que recordaba la de Ernesto Renán en sus últimos tiempos, y en la que aparecían acopladas la noble majestad de la vejez y la bizarra gallardía y el vivir heroico de la juventud.</p>
@@ -347,7 +370,7 @@
 				<p>Aquel combate se prolongó durante muchas horas: la pluma batallando por perpetuar el recuerdo de una vida, la gloria de un hombre; y el reloj fatídico negándolo todo, burlándose de todo, triturando la vida y la gloria entre las dos sílabas de su negación eterna: tic-tac, tic-tac...</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0026_chap2">
-				<head>II</head>
+				<head xml:id="ne0026_head_001">II</head>
 				<p>El paternal ¡alerta! de Gómez-Urquijo llegaba tarde. Mientras los dos ancianos discutían los ocultos motivos que desde hacía poco tiempo iban trocando en mustio y retraído el antes expansivo y decidor carácter de Mercedes, la joven entró en su cuarto, encendió una luz y empezó a desnudarse prestamente, quitándose sus vestidos con una especie de horror: las enaguas cayeron delante de la mesilla de noche; el cuello de pieles y el corsé fueron arrojados sobre un sillón, y las medias enrolladas quedaron olvidadas sobre la alfombra, como anillos de una enorme serpiente rota...</p>
 				<p>Ya en el lecho, ese fiel encubridor de los grandes secretos femeninos, Mercedes sacó del seno un papelito plegado en varios dobleces, aproximó la luz para ver mejor y apoyada sobre un brazo con orientalesco abandono, púsose a leer, alargando el hociquillo, frunciendo el entrecejo y haciendo otros hechiceros mohines de mujer que no entiende bien lo que va leyendo. Aquel billetito era de Roberto Alcalá, quien la citaba para el día siguiente.</p>
 				<p>«Mañana, a las tres de la tarde, te aguardo en la plaza de Oriente, bajo los, arcos del Teatro Real. Carmen o Nicasia irán a buscarte. No faltes. Te quiero con toda el alma. Recibe sobre los párpados mis mejores besos...»</p>
@@ -585,7 +608,7 @@
 				<p>—Ea... pues... ya está dicho. ¡Me voy con usted!...</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0026_chap3">
-				<head>III</head>
+				<head xml:id="ne0026_head_002">III</head>
 				<p>La juventud, garbo y apasionado temperamento de Mercedes, rindieron muy pronto a Roberto, inspirándole un capricho que, por lo consecuente y duradero, ofrecía los gayos visos de una legítima pasión. Adoraba su ingenio desigual, a ratos candoroso y a ratos descocado y mordaz; sus ardores desbordantes y sus anhelos desenfrenados de saberlo todo; y como hombre mundano a quien las decepciones enseñaron a no preocuparse del mañana, aceptaba muellemente el curso de los acontecimientos, olvidando los peligros a que se exponía y las graves consecuencias que acaso trajese aparejadas aquel cariño. Roberto, en fin, jamás pensó en que Mercedes fuese, ni su mujer, ni su querida; esto dependía del porvenir, de las circunstancias... tal vez de los merecimientos que la joven tuviese para ser manceba o ascender a la categoría de esposa.</p>
 				<p>Ella, por su parte, idolatraba a Roberto, aunque tampoco midió la dulce posibilidad de legitimar aquellos amores. Roberto era a sus ojos el más guapo de los hombres, el mejor conversador, el más irresistible, el más socaliñero. Todas las partes de su cuerpo le parecían dignas de especial cariño y atención: admiraba su frente, cortada por las arrugas que formaron las frecuentes contracciones de los músculos frontales; y sus manos, llenas de experiencia; y sus oídos, que hubieron de escuchar los voluptuosos juramentos de muchas mujeres enamoradas; y sus labios, acostumbrados a besar y a mentir. Comparando a Roberto con los galanes protagonistas de <seg rend="italic">Eva</seg> y <seg rend="italic">Cabeza de mujer</seg>, le hallaba superior a ellos y digno, por tanto, de coronarse vencedor en cualquier torneo pasional. Amaba sus palabras, sus gestos, la expresión burlona y ambigua de sus ojos azules, el color de sus trajes, el corte de sus pantalones... hasta el perfume de sus pañuelos... Únicamente le preocupaba el pasado de Roberto: aquella historia amorosa de quince años, poblada, acaso, de mujeres inolvidables.</p>
 				<p>—¿Tú habrás tenido muchas novias?—decía.</p>
@@ -888,7 +911,7 @@
 
 			</div>
 			<div n="4" type="chapter" xml:id="ne0026_chap4">
-				<head>IV</head>
+				<head xml:id="ne0026_head_003">IV</head>
 				<p>Después de cenar Mercedes se retiró a su dormitorio fingiéndose aquejada de un violento dolor de cabeza; doña Balbina, juzgándose responsable, en parte, de lo sucedido y temiendo que don Pedro la abrumase con sus reproches, se fué a la cocina y Gómez-Urquijo penetró en su despacho y encendió el quinqué. Durante largo rato estuvo paseando por la habitación, con la vista fija en el suelo y las manos cruzadas a la espalda: luego se detuvo y tocó un timbre.</p>
 				<p>—¿Llamaba el señor?...—preguntó Felipa apartando los cortinajes de la puerta.</p>
 				<p>—Dile a mi mujer que venga.</p>
@@ -1413,7 +1436,7 @@
 				<p>Y fué...</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0026_chap5">
-				<head>V</head>
+				<head xml:id="ne0026_head_004">V</head>
 				<p>Aquella noche Mercedes la pasó delirando: su frente y sus manos ardían, tenía los labios secos y los ojos abrillantados por la fiebre; poseída de una terrible exaltación nerviosa, se revolcaba sobre el lecho destapándose, buscando la frescura de las sábanas, barbotando un monólogo disparatado que revelaba el incoherente trajín de su cerebro.</p>
 				<p>—Palco... esa puerta... déjame... ¡Oh, qué ruído, qué calor, cuánta gente!... ¡Me ahogo, me ahogo... abrir la puerta!...</p>
 				<p>Doña Balbina, sentada en un sillón, junto al lecho, la escuchaba sin responder, para no aumentar su exitación, según Gómez-Urquijo la había aconsejado. Luego, merced a unos pediluvios de agua hirviendo, la enferma se recobró mucho, dejó de hablar, y momentos después dormía tranquilamente. A la mañana siguiente despertó bien, extrañando que la hubiesen oído soñar en voz alta.</p>

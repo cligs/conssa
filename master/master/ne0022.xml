@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Gerifaltes de antaño</title>
-				<title type="sub">la guerra carlista</title>
+				
 				<title type="short">GerifaltesAntano</title>
-				<title type="idno">
-					<idno type="bne">XX1976382</idno>
-					<idno type="viaf">178795042</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1055436</idno>
-					<idno type="viaf">68936773</idno>
-					<name type="short">Valle</name>
-					<name type="full">Valle-Inclán, Ramón del</name>
+					<name type="short" ref="#Valle"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1201</measure>
@@ -142,22 +132,70 @@
 				</availability>
 
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0022</idno>
+						<idno type="cligs">ne0022</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2014">2014</date>, <idno></idno>, <ref target="https://archive.org/details/gerifaltesdeanta00vall"/>.</bibl>
-				<bibl type="print-source">Imprenta de Primitivo Fernández, <date when="1930">1930</date></bibl>
-				<bibl type="edition-first"><date when="1909">1909</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Gerifaltes de antaño</title>
+					<title type="sub">la guerra carlista</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1976382.html">XX1976382</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/178795042/">178795042</idno>
+				</idno>
+				</title>
+					<author xml:id="Valle">
+						<name type="full"><forename>Ramón</forename> <surname>del Valle-Inclán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8840 - IP 8845">IP 8840 - IP 8845</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118626019">118626019</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q311001/">Q311001</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1055436.html">XX1055436</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/68936773/">68936773</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2014">2014</date>, <idno/>, <ref target="https://archive.org/details/gerifaltesdeanta00vall"/>.</bibl>
+					<bibl type="print-source">Imprenta de Primitivo Fernández, <date when="1930">1930</date></bibl>
+					<bibl type="edition-first"><date when="1909">1909</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Comme un vol de gerfauts</title> <date when="1941">1941</date>, <publisher>Fernand Sorlot</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="464600073" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464600073"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de antaño</title> <date when="1960">1960</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1372770550" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1372770550"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de antaño</title> <date when="1960">1960</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46322390X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46322390X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de Antaño</title> <date when="1960">1960</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="233015523" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233015523"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de antaño</title> <date when="1970">1970</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1146989571" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1146989571"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de antaño</title> <date when="1970">1970</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="08396830X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=08396830X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la Hoguera. Gerifaltes de Antaño</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1077543271" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1077543271"/> 		<idno type="isbn" n="8423935221;8423938220"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera. Gerifaltes de antaño</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="037728210" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=037728210"/> 		<idno type="isbn" n="8423932230;842393523X;8423938239"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de antaño</title> <date when="1980">1980</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="326485481" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=326485481"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Gerfalken aus der Vorzeit</title> <date when="1991">1991</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="857469207" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=857469207"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de antaño</title> <date when="1991">1991</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="561419590" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=561419590"/> 		<idno type="isbn" n="8422632659"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la Hoguera. Gerifaltes de Antaño</title> <date when="1993">1993</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1107680921" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1107680921"/> 		<idno type="isbn" n="8423938727"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera. Gerifaltes de antaño</title> <date when="1993">1993</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="190105674" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=190105674"/> 		<idno type="isbn" n="8423938727"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Gerifaltes de antaño</title> <date when="1994">1994</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1124399992" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1124399992"/> 		<idno type="isbn" n="8423973301"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La guerra Carlista, vol. 3: Gerifaltes de antaño</title> <date when="2017">2017</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1003397719" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1003397719"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract>
 				<p>El cura Santa Cruz, cabecilla carlista, intenta apoderarse de los soldados de las otras partidas, inlcuidos los de Miquelo Egoscué. Mientras es perseguido por republicanos y carlistas, asalta Otaín. En esa población vive la familia de Redín, republicana, de la que destacan tres personajes: la Marquesa, abuela, que es juzgada y humillada por los carlistas; la nieta, Eulalia, que se reencuentra con su antiguo amante el Duque de Urdax, militar republicano presente en la anterior novela; y el nieto, Agila, obligado por sus padres a ser soldado republicano. En la obra aparecen otros personajes de las novelas anteriores como Roquito o Cara de Plata.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8841" key="IP 8841" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">8</term>
 					<term type="author.continent">Europe</term>
@@ -189,8 +227,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">war-novel</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -217,6 +255,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2014-01-21" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -224,13 +263,13 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0022_chap1">
-				<head>I</head>
+				<head xml:id="ne0022_head_000">I</head>
 				<p>Santa Cruz volvió a caer sobre Otaín. Desde los hayedos del monte, bajó como los lobos al ponerse el sol, y corriendo en silencio toda la noche llegó a las puertas de la villa, cuando cantaban los gallos del alba. Llevaba consigo cerca de mil hombres, vendimiadores y pastores, lañadores que van pregonando por los caminos y serradores que trabajan en la orilla de los ríos, carboneros que encienden hogueras en los montes y alfareros que cuecen teja en los pinares, gente sencilla y fiera como una tribu primitiva, cruel con los enemigos y devota del jefe. Aldeanos que sonreían con los ojos llenos de lágrimas oyendo cuentos pueriles de princesas emparedadas, y que degollaban a los enemigos con la alegría santa y bárbara, llena de bailes y de cantos, que tenían los sacrificios sangrientos, ante los altares de piedra, en los cultos antiguos.</p>
 				<p>Quinientos infantes habían quedado guarneciendo la villa, cuando con un revuelo de gerifaltes, cayó sobre ella la partida del Cura. Dos escuadras de cien hombres entraron delante dando gritos, una por el camino del río, y otra por la Calle del Mercado. Quemaban las puertas de las casas, apaleaban a los viejos y hacían correr a las mujeres con los niños en brazos. Los soldados republicanos, sorprendidos en los alojamientos, salían despavoridos, restregándose los ojos. Sostuvieron algún tiroteo en las calles inmediatas a un convento, convertido en fuerte cuando ganó la villa a los carlistas Don Enrique España. Retrocedían sin orden, revueltos con los voluntarios, que cargaban a la bayoneta. El Cura, con el resto de su gente, guardaba todas las salidas de Otaín. Pero como las cornetas republicanas tocaban retirada en lo alto del fuerte, comprendió que la guarnición se encerraba entre aquellos muros, y entró por la villa a sangre y fuego. Sobre su cabeza se abrían las ventanas y clamaban muchas voces:</p>
 				<p>—¡No hagáis mal! ¡Todos somos partidarios! ¡Viva Carlos VII!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0022_chap2">
-				<head>II</head>
+				<head xml:id="ne0022_head_001">II</head>
 				<p>Santa Cruz levantó parapetos y emplazó dos cañones que había ganado en el encuentro de Hernani. Después de haber intimado la rendición a los del fuerte, que no quisieron admitir las condiciones impuestas por el faccioso, rompió el fuego, que duró todo el día. Por la tarde, cuando cesaba el tiroteo, se le unió la partida de Miquelo Egoscué. Los dos cabecillas se saludaron secamente: Egoscué, con bien declarado despecho, el otro, receloso y sin mirarle. Santa Cruz estaba entre una guardia de doce partidarios, en el atrio de la iglesia. Egoscué se le acercó a caballo:</p>
 				<p>—Don Manuel, todos se quejan en la villa de que los ha tratado como a enemigos.</p>
 				<p>El Cura repuso sordamente:</p>
@@ -250,7 +289,7 @@
 				<p>Don Manuel Santa Cruz entró en la iglesia con los doce de su guardia. Iba entre ellos con la mirada recelosa, sin armas, sin insignias, y más parecía un prisionero que un capitán vencedor. Era fuerte de cuerpo y menos que mediano en la estatura, con los ojos grises de aldeano desconfiado y la barba muy basta, toda rubia y encendida. Su atavío no era sacerdotal ni guerrero. Boina azul muy pequeña, zamarra al hombro, calzón de lienzo y medias azules, bajo las cuales se descubría el músculo de las piernas. Aquel cabecilla sobrio, casto y fuerte, andaba prodigiosamente, y vigilaba tanto, que era imposible sorprenderle. Los que iban con él contaban que dormía con un ojo abierto, como las liebres.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0022_chap3">
-				<head>III</head>
+				<head xml:id="ne0022_head_002">III</head>
 				<p>En Octubre de 1873, las tropas republicanas ocupaban muchas aldeas y caseríos en el valla de Baztán. Cada día llegaban nuevos regimientos que empobrecían con tributos aquella tierra feraz. Estas fuerzas, siempre volantes, ahora tenían orden de concentrarse para caer sobre Estella. Moriones, que acababa de ser nombrado comandante general, deseaba apoderarse de la ciudad, arca santa del carlismo. Era la victoria que mayor sonoridad podía tener, y también el deseo de todo el ejército republicano. Era la voz unánime en el Estado Mayor:</p>
 				<p>—Hay que dar una gran batalla, y ganarla.</p>
 				<p>Los soldados sentían el cansancio de la guerra y deseaban volver a sus casas. En continuas marchas y contramarchas, apenas tenían tiempo de reposarse en alguna aldea, oyendo siempre detrás el paso redoblado de las partidas carlistas, señoras de Navarra. Y el comandante general buscaba la ocasión de una batalla para darle el triunfo, como un pan de comunión, a todo el Ejército. Era preciso apagar el grito que resonaba por valles y montes:</p>
@@ -266,7 +305,7 @@
 				<p>Y rodeado de sus ayudantes, dejando al caballo que mordiese la yerba del camino, tendía los ojos por el valle, todo en verdor y en paz. Era de un encanto primitivo, con la gracia de esos paisajes donde los evangelarios antiguos hacen florecer la infancia del Niño Jesús. Por los caminos blancos, entre mieses estremecidas, viñedos en fruto y dorados castañares, veían llegar nuevas tropas, que dejaban sin guarnición todas las villas desde Urdax a Tolosa.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0022_chap4">
-				<head>IV</head>
+				<head xml:id="ne0022_head_003">IV</head>
 				<p>Tres confidentes llegaron uno en pos de otro, con la noticia de que atravesaba los puertos la partida del Cara. Iba de prisa y en silencio, como los lobos cuando bajan al poblado. Oyendo a los perros había cruzado sin detenerse las aldeas dormidas, San Paul, Astigar, Arguiña. Pero las confidencias no aventuraban adonde fuese el terrible cabecilla, que anochecía en un paraje y amanecía a veinte leguas. Los tres espías, sentados en el banco que tenía a su entrada el alojamiento del general, loaban aquel prodigio, hablando en vascuence. Aún estaban descansando cuando llegó un viejo con noticias de la sorpresa de Otaín. Montaba su buena mula y dijo que lo enviaba la Señora Marquesa. Después de oírle, el general le mandó salir, señalándole la puerta con leve movimiento de la mano, y se volvió a sus ayudantes:</p>
 				<p>—¡Tejer y destejer! Ahora correrán órdenes para que reforcemos la guarnición de la villa, porque es indudable que resistirá en el fuerte.</p>
 				<p>Entró un coronel con levita de uniforme y pantalón de paisano. Era el jefe del Estado Mayor:</p>
@@ -316,7 +355,7 @@
 				<p>El veterano se acercó a la mesa, y arrugó el papel entre sus manos trémulas.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0022_chap5">
-				<head>V</head>
+				<head xml:id="ne0022_head_004">V</head>
 				<p>Santa Cruz quiso castigar a la villa, porque y olvidando su claro abolengo legitimista, había consentido a la tropa republicana que sacase bagajes y raciones. Temerosos andaban escondiéndose los merinos, y dio un pregón condenándolos a muerte si antes de la noche no se presentaban en la rectoral donde tenía el Cuartel. Era tal el terror que inspiraba, que acudieron todos... Y después de oírlos un momento, mientras bebía un vaso de vino y tomaba una rebanada de pan blanco, les mandó dar cincuenta palos en la Plaza de los Fueros:</p>
 				<p>—¡Uno!... ¡Dos!... ¡Tres!...</p>
 				<p>Marcaba la pauta el tambor redoblando. Los contaba muy recio un sargento destacado al flanco, y a coro con él contaban los niños de la escuela encaramados a los árboles, y alguna vieja antigua que tenía el recuerdo sagrado de la otra guerra:</p>
@@ -342,7 +381,7 @@
 				<p>—¡Qué inquisidores!</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0022_chap6">
-				<head>VI</head>
+				<head xml:id="ne0022_head_005">VI</head>
 				<p>Santa Cruz estuvo alerta toda la noche, paseándose solo en la solana de la rectoral. Al amanecer bajó al zaguán, y a los voluntarios que dormían escombrando el paso, les tocaba con el palo para despertarlos. Después de oír misa, hizo formar en el atrio y municionar a los doscientos hombres que habían venido con Egoscué:</p>
 				<p>—¡Ahora a tumbar herejes!</p>
 				<p>Y con gesto taciturno y huraño los vio desfilar hacia las trincheras, donde ya comenzaba el fuego contra los sitiados del fuerte. Había dispuesto que se hiciese una mina, y trabajaban en ella sin descanso todos los vecinos leales, ayudados de algunas mujeres. A las doce, los voluntarios fueron racionados en las trincheras, ración de balas, de vino mosto y pan caliente, que recibieron relinchando. El Cura paseaba entre ellos, taciturno, con la frente obstinada y el garrote en el puño. En algunos sitios se detenía y daba orden de no interrumpir el fuego. Los cañones del fuerte respondían alternativamente, y las balas se enterraban en la tierra de los parapetos. Santa Cruz iba tranquilo, sin alarde, con la cabeza inclinada y santiguándose. En el camino de los viñedos, donde estaba la vanguardia, sentose a descansar en una piedra, contemplando las líneas de tiradores..</p>
@@ -365,7 +404,7 @@
 				<p>Abrió bostezando la boca grande, y tan bermeja, que parecía hilar sangre por la barba encendida, y fue a descabezar un sueño en la cama que le esperaba hacía dos noches.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0022_chap7">
-				<head>VII</head>
+				<head xml:id="ne0022_head_006">VII</head>
 				<p>El cabecilla hizo un sueño ligero. Por la calle, bajo sus ventanas, pasaba un tumulto regocijado. El tamboril y la gaita tocaban en desacuerdo, y se trenzaban sus sones con fantasía grotesca. Santa Cruz, de una gran voz, llamó a los voluntarios de su guardia, siempre en centinela mientras dormía. Los sintió venir desde el fondo del corredor:</p>
 				<p>—¿Qué pasa?</p>
 				<p>Los mozos tenían una ingenua alegría en los ojos:</p>
@@ -427,7 +466,7 @@
 				<p>Terminó de hablar con un gemido, porque el cabecilla le empujó violento contra los otros dos, que permanecían arrodillados en la charca sangrienta del vino. Silencioso salió Santa Cruz de la bodega, la barba en el pecho, la mirada esquiva, y muy en lo alto del bordón, que le ayudaba a mesurar el paso, la mano blanca y pecosa, cubierta de un vello dorado. Fuera tocaba un aire el tamboril y otro el gaitero: Se trenzaban grotescos, como los zuecos de esos vejetes ladinos que en las fiestas de aldea rompen bailando el corro de las mozas.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0022_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0022_head_007">VIII</head>
 				<p>El Cura abrió la ventana y miró al cielo. Apenas brillaban las estrellas. Estúvose quieto y meditando, con los ojos fijos en la sombra de los montes. Bajo la bóveda de la noche, todos los rumores parecían llenos de prestigio. El ladrido de los perros, el paso de las patrullas, el agua del río en las presas, eran voces religiosas y misteriosas, como esos anhelos ignotos que estremecen a las almas en su noche oscura. Y todas las cosas decían una verdad que los hombres aún no saben entender. Las sombras y los rumores, las estrellas que se encienden y se apagan, las aguas de plata que las llevan en su fondo, los pasos que resuenan sobre la tierra, todo tenía una eternidad y una eficacia en el gran ritmo del mundo, donde nada se pierde, porque todo es la obra de Dios.</p>
 				<p>Pero aquel cabecilla que había dejado su iglesia para hacer la guerra a sangre y fuego, sólo veía en la noche la oscuridad propicia para sus sueños de batallas. Meditaba ir con su banda al encuentro de las tropas que venían sobre la villa. Temblaba antes de decidirse, y toda su alma se tendía en acecho, iluminada por un resplandor como el que tienen los gatos en los ojos. Era preciso levantar el cerco y salir en las tinieblas con tal sigilo que los sitiados no lo advirtiesen. Se decidió con un sentimiento torvo y lleno de recelo que le ponía un gran frío en las mejillas. Sólo dejó cien voluntarios, porque al alba del día hiciesen alarde ante el fuerte y entretuviesen a los sitiados con parlamentos para que se rindieran. Salió la partida en grupos de pocos hombres, tal que los del fuerte no pudiesen descubrir la línea oscura de la formación en el claro de la carretera. Santa Cruz, al salir de Otaín, llevaba consigo, atados en cuerda, a los tres viejos. Cuando subía un alto del camino se detuvo y mandó detener a su gente:</p>
 				<p>—Muchachos, ya visteis la justicia que hice en los merinos de Otaín. Fue por la ayuda que dieron a los republicanos cuando entraron en la villa. Si alguno lo ignoraba, ya lo sabe.</p>
@@ -452,7 +491,7 @@
 				<p>El cuervo tenía el benigno volar de una paloma.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0022_chap9">
-				<head>IX</head>
+				<head xml:id="ne0022_head_008">IX</head>
 				<p>En el Crucero de Belda halló el Cabecilla a un confidente que venía cruzando los prados, llenos de amorosa fragancia, bajo la luna. Santa Cruz se apartó mucho de su gente para hablar a solas con aquel hombre, y al emparejarse murmuró las palabras torvas con que recibía, a todos los confidentes:</p>
 				<p>—¿De dónde vienes?</p>
 				<p>—De Arguiña.</p>
@@ -484,7 +523,7 @@
 				<p>—¡Señor, líbrame de enemigos!</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0022_chap10">
-				<head>X</head>
+				<head xml:id="ne0022_head_009">X</head>
 				<p>Pasada la foz, donde el camino se ensanchaba, emparejó con Miquelo Egoscué. Después de ir a su lado buen espacio, con la mirada esquiva y silencioso, musitó como si saliese de un sueño:</p>
 				<p>—Miquelo, mañana entierran a Sorotea.</p>
 				<p>El otro levantó los ojos hasta las estrellas, con serena calma:</p>
@@ -526,7 +565,7 @@
 				<p>Y si había inquietud en su conciencia, con aquel pensamiento la soterraba.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0022_chap11">
-				<head>XI</head>
+				<head xml:id="ne0022_head_010">XI</head>
 				<p>Muchas horas después de haberse retirado los últimos voluntarios carlistas, aún permanecía encerrada en el fuerte la guarnición republicana de Otaín. Con recelo de una celada, seguía arma al brazo, avizorando tras los muros aspillerados, puestas atalayas en la torre sin campanas. A media tarde asomaron por la vega algunos jinetes de húsares que venían destacados en patrullas, explorando por el frente y flanco izquierdo, únicos sitios donde los carlistas podían emboscarse para un ataque. La infantería avanzaba por secciones a paso de marcha, metiéndose a veces en las siembras, porque era el camino muy angosto y pedregoso. De pronto se llenó la vega con el son de las cornetas, y otras cornetas respondieron roncas y claras, desde los muros del viejo convento. Cuatro compañías de África y cien jinetes, llegaban en socorro de los defensores de Otaín. El Duque de Ordax, ascendido a capitán, mandaba el pelotón de los húsares, y toda la fuerza el coronel Guevara. Se ordenó el alto en la Plaza de los Fueros. De tiempo en tiempo, asomaban corros de chiquillos, que gritan al amparo de una esquina, y escapan corriendo:</p>
 				<p>—¡Abajo los guiris!</p>
 				<p>El Duque de Ordax estaba bajo el balcón saledizo de la posada, viendo cómo le herraban el caballo, cuando llegó un soldado que le habló en voz baja:</p>
@@ -563,7 +602,7 @@
 				<p>En la plaza se oía el rasgueo de las guitarras, los soldados encendían fogatas, y en grupos, cogidos de las manos, se acercaban a las mozas que estaban en las puertas, y les proponían armar un baile. Pero las mozas, casi sin oírlos, se entraban esquivas en los zaguanes.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0022_chap12">
-				<head>XII</head>
+				<head xml:id="ne0022_head_011">XII</head>
 				<p>El Duque de Ordax cambió de uniforme en la posada, y después de rizarse los mostachos ante un espejo roto que le presentó su asistente, se dirigió al palacio de Redín. En la antesala halló a un viejo vestido de negro, con la levita salpicada de rapé. Era el mayordomo tan arrugado y consumido, que parecía una momia descubierta en el fondo de alguna alacena polvorienta. Tenía el rosario entre las manos, y rezaba sepultado en un sillón de cuero, frente a una litografía de Napoleón en Santa Elena. Se levantó consternado:</p>
 				<p>—¡Señor Duque, qué afrenta para una familia de tanta alcurnia, y para toda la nobleza, y aun para los que servimos en estas casas conociendo lo que representan y lo que fueron en la Historia!</p>
 				<p>Moviendo el cráneo pelado y amarillo, donde se dibujaban las suturas de los huesos, levantó el tapiz de una puerta para ofrecer paso al Duque. Entraron los dos al salón, colgado de damasco carmesí como una sala capitular, frío y sin alfombra, luciendo dos grandes braseros apagados, uno a cada testero. Y cerca de un balcón muy chato, con cortinas de muselina en los cristales, están como una tradición familiar, la butaca y el velador donde jugaba a las damas la Marquesa. El Duque se detuvo en medio del salón, mirándose en los espejos de las consolas, también velados por muselinas. Se oyó el roce da una puerta y entró Eulalia. Tenía los ojos llorosos, estaba un poco pálida y sonreía:</p>
@@ -595,7 +634,7 @@
 				<p>—¡Hermana! ¡Hermanita del alma! Y volvió la cabeza, y en el umbral descubrió abrazados a los dos hermanos.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0022_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0022_head_012">XIII</head>
 				<p>Eulalia se conmovió un poco ante su hermano vestido de soldado y oliendo a cuadra:</p>
 				<p>—¡Pero, Agila, qué has hecho!</p>
 				<p>El muchacho repuso con una sonrisa infantil, que reclama indulgencia:</p>
@@ -667,7 +706,7 @@
 				<p>Y salió ligera y muy feliz. Jorge, al verla desaparecer, clavó en Agila una mirada de desprecio, y se alejó sin hablarle.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0022_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0022_head_013">XIV</head>
 				<p>Agila, muy despacio, llegó hasta la puerta, y pegando los hombros, se escurrió. Anduvo por los anchos y vacíos aposentos, misteriosos y olorosos como cajas de sándalo llenas de secretos. Perdido en ellos, sin oír voz ni rumor, le parecía que eran sus pasos grandes y resonantes. Al verle de lejos hacía su reverencia el mayordomo, que daba cuerda a un reloj. Agila pasa, y al desaparecer por otra puerta, siente en la espalda la sensación magnética de unos ojos que miran fijos. Por un salón reflejado en el fondo de un espejo, viene una vieja muy encorvada. Agila sonríe pensando que aquella vieja tan menuda, presa en el cristal, quiere salir para bailar sobre la consola dorada, entre los daguerreotipos. Pero de pronto, la vieja huye del espejo y entra por una puerta. Anda menudamente, y sobre el alda negra, las manos son amarillas. Salen de unos puños muy apretados. En una mano trae el bolsón de la calceta, y en la otra una alcuza de aceite. La sombra de la vieja es muy grotesca en la pared, y la alcuza marca el garabato de una nariz bajo el borde pringado del manto. Agila se acuerda de la Rosalba... ¡Tía Rosalba, que vivía en un desván del palacio y salía siempre al trasluz! ¡Tía Rosalba, hermana de la abuela, hija de una criada y del bisabuelo! Después recordó de niño, cuando había tenido fiebres y aquella vieja menuda estaba a la cabecera de día y de noche. Y recordó la convalecencia a su lado en el desván, jugando con un yesquero de oro, que había pertenecido al bisabuelo:</p>
 				<p>—¡Eres tú, marquesito!</p>
 				<p>—¿Cómo va, tía Rosalba?</p>
@@ -688,7 +727,7 @@
 				<p>El Cristo del Gran Poder era una imagen antigua que había en una calle estrecha, cerca del palacio. La devoción de la vieja movió en el alma de Agila un despecho egoísta y frío. Hubiera querido que le llevase derechamente al lado de la abuela. Comenzaron a bajar la escalera en silencio. Agila miraba a la vieja y sentía la tentación de empujarla para que rodase. Era un pensamiento que le salía a los ojos, un deseo pueril y bárbaro de niño cruel. Le atraía la escalera larga, toda de piedra, un poco oscura, con el claro de la puerta abierto sobre el vasto zaguán, allá en lo hondo. Se quedó un poco atrás y empujó a la tía Rosalba. Al mismo tiempo sentía un gran frío en las mejillas y oprimido el corazón. Rodó la vieja con ruido mortecino, y a su lado la alcuza iba saltando hueca, metálica y clueca.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0022_chap15">
-				<head>XV</head>
+				<head xml:id="ne0022_head_014">XV</head>
 				<p>Eulalia estaba en la saleta arrodillada a los pies de su abuela, oidora en silencio, la cabeza con tembleque y un poco torpe la atención. La nieta le lava las manos en una salvilla de cristal que adornan filetes de oro. Después le recoge y prende la toca de encaje, caída sobre un hombro todo a lo largo de la espalda. La Marquesa mira tan obstinadamente, que da miedo. Había sido trasquilada con grandes escaleras, por quitarle la miel, que ya de otro modo no se soltaba del cabello, y tenía el aire de una mendiga vieja y loca. No cesa un momento el temblor de aquella cabeza cenicienta y salpicada de roeles blancos, con las orejas despegadas, casi tocando los hombros, que se hispan como dos alones sin plumas. Eulalia intercede por su hermano, pero la vieja señora, con los ojos parados, divaga y se distrae. De pronto, la nieta se levanta y mira en redor suyo, hacia las puertas. En otra sala resuenan roces de susto. Una doncella asoma pálida y apresurada. Eulalia se vuelve, hurtando con el cuerpo la vista a su abuela, y se lleva un dedo a los labios. La doncella queda incierta un momento y luego se va. Ante los ojos de Eulalia flota un lazo blanco del delantal. La Marquesa interroga torpemente:</p>
 				<p>—¿Qué sucede, hija?</p>
 				<p>—Nada, abuela.</p>
@@ -736,7 +775,7 @@
 				<p>Tenían enlazadas las manos, y se miraron en el fondo de los ojos, los dos muy fijos, hasta que bajó los suyos Eulalia.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0022_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0022_head_015">XVI</head>
 				<p>Veintitrés voluntarios se desertaron en las angosturas del monte, cuando corrió por las filas aquel rumor medroso y cauteloso que anunciaba la desaparición de Egoscué. Fue el primero en volverse desandando camino, el pastor que una noche había sacrificado sus siete cabras para ofrecerlas en un banquete con cantos de versolaris, como en un pasaje antiguo, a los soldados del amo Miquelo. Descarriado de la partida, Ciro Cernín, trepaba a los riscos más altos, negro y quimérico bajo la luna. Erguido sobre ellos llamaba, dando a la voz un ronco y prolongado son de bocina:</p>
 				<p>—¡Amo Miquelo!... ¡Amo Miquelo!...</p>
 				<p>Y la voz, llenándose de sombras, rodaba por el nebuloso cimear de los hayedos y pasaba por entre las foces resonantes:</p>
@@ -754,7 +793,7 @@
 				<p>Le sorprendió el rayar del día por una cima lejana, y se sentó a descansar. Entonces se durmió, y como un niño, tuvo un sueño, bajo el oro angélico de la aurora.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0022_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0022_head_016">XVII</head>
 				<p>Agila, al cruzar la cocina de su alojamiento, vio dos sombras que estaban calentándose cerca del fuego. Y al subir la escalera del sobrado, oyó la voz asombradiza de la dueña:</p>
 				<p>—¡El Demonio lo hace!... Cubre con la anguarina el cuerpo del lobo. ¡El Demonio lo hace, pues se me representa mi marido, Don Diego!</p>
 				<p>Agila iba casi huyendo, con el alma recogida y atenta. Salía del palacio donde la vieja se quejaba apretando los labios, y había tenido un gran miedo de que viéndole salir le llamase. ¿Qué le hubiera dicho entonces la tía Rosalba? Agila recordaba su expresión dulce y pueril, con la frente vendada, y seguía pensando en lo mismo. ¿Qué le hubiera dicho? Probablemente le hablaría bajando mucho la voz, para que los criados no se enterasen, y le amenazaría con la mano igual que a un niño:</p>
@@ -767,7 +806,7 @@
 				<p>Agila no recuerda que habló en voz alta, y se estremece oyendo al pastor. Bajo la mirada fija de aquel iluminado, cierra los ojos, y con los labios helados, aún intenta sonreír.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0022_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0022_head_017">XVIII</head>
 				<p>El cabrero sacó del zurrón un ángel, esculpido por él en madera olorosa de limón, y sentado sobre la cama, cerca de la luz, se aplicó a perfilarle el plumaje de las alas con la punta de su cuchillo. Agila le miraba lleno de curiosidad. El pastor, al cabo de un momento, levantó los ojos, que tenían la pureza de los horizontes montañeros:</p>
 				<p>—¡No es buena cosa la guerra!</p>
 				<p>Agila respondió moviendo la cabeza:</p>
@@ -824,7 +863,7 @@
 				<p>Osciló la luz. Una patrulla de caballería pasaba trotando bajo la ventana.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0022_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0022_head_018">XIX</head>
 				<p>Todas las confidencias daban en la frontera al Cura Santa Cruz.</p>
 				<p>El terrible cabecilla, perseguido de los carlistas y de los republicanos, tenía que andar con un pie en la raya de Francia. El Rey Don Carlos, tiempo atrás habíale mandado llamar, pero el rebelde, fingiéndose enfermo, esquivó presentarse en la Corte de Estella. Desde entonces, por los mercados de las villas se anunciaba que iba sobre él, con muchas tropas, el general Don Antonio Lizárraga. El Cura, ante aquellas nuevas, permanecía en los montes de la frontera, al acecho de una ocasión propicia para invadir el solar de Guipúzcoa. Tenía allí muchos amigos, y esperaba poder burlar a republicanos y carlistas, aun cuando los dos bandos se juntasen para perseguirle. Y tal suceso, de juzgarle como a un bandolero, lo iban pregonando por aquellos caseríos algunos cabecillas parciales del general Lizárraga.</p>
 				<p>En Arguiña, donde sólo una noche tuvo campo, se le habían unido los voluntarios de Sorotea. Pocos iban de grado, pero contrario a seguirle no se declaraba ninguno. Estaban faltos de capitán, y sin descubrir entre ellos quién pudiera serlo. Fue en esta gran desesperanza, cuando llegó y los metió en sus filas Santa Cruz. Cayó la partida con revuelo de gerifaltes. El dónde eran, y los mandó formar. Rezaron juntos el rosario los veteranos y los nuevos, y aquella misma noche, cantando la letanía, los sacó a todos de Arguiña. Encomendó a Juan Elizalde, primo hermano suyo y gran veredero, que guiase la partida a través de los montes, y él, sólo con treinta perros mastines, se volvió desandando camino.</p>
@@ -833,7 +872,7 @@
 				<p>Estas audaces apariciones, repetidas muchas veces, ponían un acento de asombro a las confidencias que seguían dándole en la raya de Francia.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0022_chap20">
-				<head>XX</head>
+				<head xml:id="ne0022_head_019">XX</head>
 				<p>Eulalia, cuando entró en la saleta de su abuela, venía sofocada y riente, seguida de Jorge. Al verla, un grupo de muchachas que rodeaba a la vieja señora, se alzó con rumor de bandada volando a besarla. Sólo una dama flaca, morena y bizca, permaneció sentada cerca de la Marquesa. Era la madre de aquellas niñas, y tenía un parentesco de tradición con la casa del general Redín. Muy amable, de palabra melosa, estaba casi en el suelo, y acariciaba sobre sus rodillas una mano de la tía Paquita. Su figura se destacaba por oscuro sobre una cortina de encaje, delante de un balcón. Tenía el perfil triste, la silueta flaca, toda la figura muy severa, de una rancia hidalguía castellana. Pero hablando se metía en el corazón con sus palabras de miel, a veces de una malicia bobalicona y graciosa, un poco de priora. Por su matrimonio con un viejo calavera y devoto, muy afecto a los fueros, era Condesa de Santa María de Vérriz. Las niñas, feas, morenas y con los ojos negros, tenían el perfil de su madre. Eulalia les decía al pagar sus besos:</p>
 				<p>—¿No pensaréis en iros hoy?</p>
 				<p>Acababan de llegar en un landó, tirado por cuatro mulas que aún cascabeleaban a la puerta del palacio. Venían de su granja, un predio de leguas, con iglesia en su término, dependiente en lo antiguo de los abades de Vérriz. Era una jornada muy larga por el camino real, y algunos trajinantes la dividían en dos, haciendo alto en la Venta del Galán. Eulalia les preguntó cuándo habían salido, y el coro de niñas hizo una escala de huecas flautas:</p>
@@ -881,7 +920,7 @@
 				<p>Todas sintieron miedo y se alejaron corriendo hacia el jardín.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0022_chap21">
-				<head>XXI</head>
+				<head xml:id="ne0022_head_020">XXI</head>
 				<p>A prima noche, después de haber comunicado el santo y seña, salió de su alojamiento el coronel Guevara. Era pequeño y tripudo. Viéndole andar, sin saber por qué, daba la sensación de un viejo maestro de baile. Con saltos menudos atravesó la plaza, toda clara de luna, y entró en el palacio de Redín. Desde el comienzo de la guerra, los jefes que hacían alto en la villa, concurrían a la tertulia de aquella dama contemporánea de Espartero. Hablando con el coronel, preguntándole noticias de la guerra, la vieja se animaba. Pero de pronto, tenía un gesto de enfado:</p>
 				<p>—Lo que hacen ustedes no puede llamarse guerra.</p>
 				<p>La Marquesa murmuraba de los generales, se quejaba de los robos que hacían los soldados, y refería una historia muy larga, de cuatro valencianos y de un convoy que iba, que venía. Los valencianos se hacían ricos y continuaban llevando nuevos convoyes, que se perdían muchas veces. De repente, se quedaba con los ojos obstinados, fijos en el coronel:</p>
@@ -955,7 +994,7 @@
 				<p>El coronel Guevara, muy conmovido, estrechó las manos de la anciana Marquesa de Redín, Condesa de los Arapiles.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0022_chap22">
-				<head>XXII</head>
+				<head xml:id="ne0022_head_021">XXII</head>
 				<p>Era casa cristiana y de mucha labranza aquella donde tenía su alojamiento el soldado de húsares Agil a Palafox y Redín. Los dueños, carlistas de abolengo, le trataban con generosa largueza, pero sin agasajo. Tampoco sabían que fuese nieto de la Marquesa. Hasta el domingo no corrió la voz por Otaín. Don Teodosio de Goñi supo la nueva en la misa mayor, y al retorno, por encima de la puerta, enteró a la dueña de la casa. Hicieron los dos un comentario lamentando el extravío de los jóvenes, y el caballero se despidió porque le esperaba su chocolate. Sacando por el embozo de la capa la punta de los dedos en un guante verde, saludó con finura de antiguo lechuguino:</p>
 				<p>—¡Vaya, consérvate siempre tan guapa, Serafinita!</p>
 				<p>Doña Serafina Peralta estaba casada con aquel gigante de las antiparras negras, llamado Don Diego Elizondo. Era una familia patriarcal, con cinco hijos mancebos, castos, silenciosos y fuertes. Los hijos, aconsejados por los padres, esperaban dejar hecha la vendimia para irse a la guerra. Aquella noche, Don Diego y Doña Serafina, ya sentados ante la cena, encomendaron al mayor que fuese en busca del alojado y le dijese si quería honrar sus manteles. Descendió Agila con el primogénito, y los amos le recibieron con gravedad de señores antiguos. Cenaban en la cocina, bajo la gran campana de la chimenea, y le dejaron sitio en un banco adosado a la pared del fondo, toda negra. Gritó Don Diego, llenando un vaso y ofreciéndoselo al nieto del famoso guerrillero navarro:</p>
@@ -994,7 +1033,7 @@
 				<p>Y le temblaban las manos, y le temblaba la cabeza, y temblaba toda aquella torre de huesos. Agila le sintió el aliento. Quiso levantarse, en un impulso de rabia, pero la mesa le dio vueltas. Se tambaleó para caer. Acudió a tenerle Doña Serafina. Le reclinó sobre el pecho, y como a un hijo, le limpió en los labioseas heces del vino. Agila, con los ojos entornados, en un reír de boba insolencia, tarareaba compases sueltos de una canción francesa.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0022_chap23">
-				<head>XXIII</head>
+				<head xml:id="ne0022_head_022">XXIII</head>
 				<p>Doña Serafina y una maritornes se fueron por la escalera, sosteniendo en vilo el cuerpo de Agila. Y los hombres, con una burla grave en los ojos, parecían desdeñarlo mientras lo miraban. A poco de subir, bajó Doña Serafina muy compadecida, y uno de los hijos le tomó de la mano el farol que traía:</p>
 				<p>—No apague, madre.</p>
 				<p>—¿Está por acomodar el ganado?</p>
@@ -1038,7 +1077,7 @@
 				<p>Con las manos trémulas, cubrió el fuego Doña Serafina. A la zagala y a la vieja que intentaron ayudarla, les ordenó que subiesen al piso alto y velasen en la escalera, atentas a la puerta de la sala donde dormía el nieto de la Marquesa de Redín.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0022_chap24">
-				<head>XXIV</head>
+				<head xml:id="ne0022_head_023">XXIV</head>
 				<p>Los tres voluntarios carlistas estaban chorreando agua, con las ropas pegadas al cuerpo. Traían sus armas, aun cuando el río lo hubieron de pasar a nado, buceando bajo la puente, para no ser descubiertos por los centinelas, y surgiendo lejos, en los rieles de la luna. Después habían venido agachados por las huertas, unas veces deteniéndose a escuchar cerca de las higueras y entre las viñas, otras, arrastrándose por los surcos donde dormían las codornices.</p>
 				<p>Los tres habían pertenecido a la hueste de Miquelo Egoscué. Contaban que, con otros siete, luego extraviados en el monte, venían huyendo de la partida del Cura. No querían servir bajo sus banderas, después de la traición con que anduvo para juntarse con ellos y matarles el capitán. Les preguntó Don Diego:</p>
 				<p>—¿Y adónde vais?</p>
@@ -1082,7 +1121,7 @@
 				<p>Con el alba, vino ella misma a despertarlos, y los tres voluntarios salieron al campo, escondidos en las tinajas de la vendimia, que los hijos del lobo cano conducían en carros de bueyes, cantando por los caminos.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0022_chap25">
-				<head>XXV</head>
+				<head xml:id="ne0022_head_024">XXV</head>
 				<p>Santa Cruz, de quien andaban huyendo aquellos tres voluntarios, ahora tenía cercado y preso, en el caserío de Urría, a un viejo guerrillero de la otra guerra, Don Pedro Mendía, que achacoso y casi ochentón, había juntado una partida de sesenta hombres, siendo de los primeros en echarse al campo por Carlos VII. Este Don Pedro Mendía, hidalgo de cuenta en la montaña navarra, es el mismo capitán a quien, en algunos escritos de la otra guerra, llaman Don Pedro de Alcántara. Ahora, enfermo de mal de piedra, habíase refugiado en el caserío de Urría, y los días dorados del otoño le sacaban en un sillón a la solana. Desde allí, sus ojos callados contemplaban los montes, menos altos y enteros que su fe. Una mañana, rayando el alba, vio entrar en la sala donde dormía al Cura Santa Cruz. El viejo, insomne por los grandes dolores, se incorporó en las almohadas con el rostro amarillo y el ceño adusto:</p>
 				<p>—¿Qué traes, hijo?</p>
 				<p>El Cura, desde que entró, miraba la escopeta de caza que el veterano tenía a la cabecera de la cama:</p>
@@ -1123,7 +1162,7 @@
 				<p>Y la dueña del caserío, que ha llamado con los nudillos en la puerta, entra empujándola, despacio. Trae en las manos una taza que bailotea en su plato azul y esparce el aroma de un cocimiento de yerbas. El veterano se incorpora en las almohadas, y sonríe muy amarillo, alargando una mano de huesos. Santa Cruz, puesto en pie, le mira con aquella hondura triste y experimentada de los que han visto muchos moribundos. Era la mirada del clérigo, que, en su aldea, acompañaba en la hora de la muerte a todos los feligreses, desde los niños de siete años a los viejos de cien.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0022_chap26">
-				<head>XXVI</head>
+				<head xml:id="ne0022_head_025">XXVI</head>
 				<p>Los dos cabecillas estaban en la solana. El cuadrante de piedra puesto en un esquinal de la casa marcaba la hora de mediodía. Santa Cruz, con las manos a la espalda, paseaba despacio, y el veterano de la otra guerra, hundido en su sillón, temblaba bajo el hermoso sol de Otoño, con los ojos puestos en los montes y una noble expresión sobre el rostro mortal. En el ambiente campesino resonaban los gritos de algunos voluntarios que jugaban un partido de pelota, corriendo por el fondo de un campo húmedo, verde y sonoro. Don Pedro se levantó muy encorvado, y dio varios paseos con el Cura. Realizado aquel esfuerzo de entereza, volvió a sentarse. Santa Cruz le miró con lástima:</p>
 				<p>—Don Pedro, déjese de valentias.</p>
 				<p>Replicó colérico el viejo:</p>
@@ -1175,13 +1214,13 @@
 				<p>Y el viejo guerrillero dobló la cabeza como si en realidad fuese a morir.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0022_chap27">
-				<head>XXVII</head>
+				<head xml:id="ne0022_head_026">XXVII</head>
 				<p>Santa Cruz había dispuesto que una parte de sus voluntarios, distribuida en parejas, vigilase las veredas del monte y los vados del río. Hecho esto, bajó con su guardia de doce hombres a pedir raciones en los poblados de Belza, Urría y San Pedro de Olaz. Por aquellas labranzas, alquerías, molinos e iglesarios, estaban repartidos los setenta mozos que iban en pos de Don Pedro Mendía, y que comenzaban a mal sufrir el enojo de tantos días de paz. Sentían renacer el tiempo de los romances viejos, oyendo el relato de las mujerucas que por las tardes les remendaban los ponchos, bajo la parra sin hojas. Eran aquellas las abuelas que parecen hermanas de los sarmientos. Encendidos los mozos con el recuerdo de la otra guerra, ardían como cirios votivos. Santa Cruz, avizorado y astuto, de todo se daba cuenta, e hizo que los suyos, mezclándose en los antiguos juegos, ágiles y fuertes, pudiesen hacer algún alarde de sus correrías mientras descansan bebiendo la sidra en el nocedal. Al mismo tiempo, por ganar la voluntad del cabecilla moribundo, enviaba a pedirle una orden para el alojo de la gente, aparentando que en toda aquella tierra no regía otro fuero que el de Don Pedro Mendía.</p>
 				<p>El Cura veló toda la noche esperando la llegada de sus confidentes. Acudían en rosario adonde quiera que ponía el real. Llegaban de todas partes y por todos los caminos, con las almas llenas de fe, como a una romería. Eran de muy varia laya: Aldeanas de gran refajo, que hablan con los brazos quietos y abiertos, asustados los ojos bajo el pelo tirante; graves labradores que vienen en su mula; algún mozo con capusay y larga vara; algún mendigo que duerme en los pajares; el loco que duerme en los caminos y habla con la sombra de las cosas; un leñador, un afilador, un ciego de romances, que hacen la vía para una feria; y la mujer del borracho, que al ir a la busca del marido escuchando por las puertas, se enteró y vino corriendo... Pero los que llegan siempre en mayor número, son los pastores. Viejos y niños zagales, como en las Adoraciones: Entre las pieles del zamarro traen una gracia de rocío y un bautismo lunar.</p>
 				<p>Santa Cruz oía todas las confidencias con la cabeza baja y sin hablar palabra. Oyéndolas parecía tranquilo, pero sentía revolar el pensamiento, con aquella violencia del pájaro que bate en lo oscuro. Paseando bajo los nogales del huerto, experimentaba una gran amargura sabiéndose cercado por los batallones carlistas, que se concertaban con los republicanos para prenderle y matarle. Su vida y su campaña se le aparecían claras y fuertes, sujetas a la pauta de la conciencia. Las torturas, los incendios, las muertes, eran males de la guerra, no pecados del hombre. Él había salido de su iglesia puro y con las manos inocentes. Jamás había tomado venganza de los enemigos ni derramado sangre mientras fue pastor que guiaba un rebaño de almas. Ahora sentía una gran inquietud mística, y arrodillado en la sombra de los nogales, rezaba con los brazos abiertos. En aquella oración, ardiente se fortalecía para seguir en la guerra y hacer frente a todos los enemigos. Salía mejor armado, con el alma fuerte y resplandeciente, dispuesto a pasar entre las foces enemigas como el acero de una hoz.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0022_chap28">
-				<head>XXVIII</head>
+				<head xml:id="ne0022_head_027">XXVIII</head>
 				<p>El Cura Santa Cruz, despedido el último confidente en la cancela del huerto, se volvió despacio, mirando receloso bajo la sombra de los manzanos donde ladraban tres perros atados con cadenas. Había luz en una ventana del pisa alto. Recogido en la cocina del caserío, al amor de la lumbre, oía los gritos con que en el sobrado dolíase Don Pedro Mendía. Se levantó cauteloso y subió la escalera, sin despertar a la dueña que sentada en el primer peldaño, adormecía con el gato en la falda. Santa Cruz se detuvo en la puerta de la sala donde el viejo guerrillero jadea dolido, postrado en el sillón. Tiene un libro de rezos entre las manos, y el candil que cuelga de la viga, pone sobre ellas un resplandor de oro pálido. El resto de la figura, arrugada y consumida, queda en la sombra. Murmura el Cura desde la puerta:</p>
 				<p>—¿No puede dormir, amigo Don Pedro?</p>
 				<p>—¡Dormir!... ¡Cuánto tiempo que no duermo!... El sueño es peor que la vigilia cuando está poblado de fantasmas. Hay un mozo de pocos años que yo hice matar por sospechas de que me vendía... Siempre se me aparece en el sueño y mana sangre del costado, como el Divino Jesús... Tú tampoco puedes dormir, ¡Cura de Hernialde, sientes hervir bajo la almohada las ollas de la sangre!</p>
@@ -1203,7 +1242,7 @@
 				<p>—¡Pecador de mí! ¡Pecador de mí!</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0022_chap29">
-				<head>XXIX</head>
+				<head xml:id="ne0022_head_028">XXIX</head>
 				<p>Don Pedro parecía muerto en el sillón. Ya no se quejaba, y la cabeza caída sobre el respaldo recibía, como las manos, el reflejo del candil. Era pálida y consumida, con la mitad de los pómulos temblando en un círculo de sombra, y en claro la frente y el perfil. Santa Cruz, inmóvil en la puerta, como guardándola, le miraba duro y obstinado:</p>
 				<p>—Amigo Don Pedro, haga por recobrar el habla.</p>
 				<p>El veterano no cambió de actitud:</p>
@@ -1260,7 +1299,7 @@
 				<p>Los voluntarios le besaban la mano: El moribundo, alguna vez, les daba los brazos y los veía partir con una pena desolada que sabía ocultar. El rumor de armas y voces al formar los voluntarios bajo la ventana, le parecía oscuro y lejano como rumor de mar. Su pensamiento y su voluntad se desvanecían en él perdidos como en el hueco de una cueva. El moribundo comenzó a ver sombras lejanas, perfiles desvanecidos de la juventud y de la infancia, Santa Cruz subió el último al sobrado y lo encontró ya frío en su sillón, muerto de aquel triste mal de piedra.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0022_chap30">
-				<head>XXX</head>
+				<head xml:id="ne0022_head_029">XXX</head>
 				<p>Llovía menudo y ligero en aquella fértil tierra del Baztán. Era una cortina gris, que a los prados húmedos, tendidos detrás, daba un reflejo de naranja, agrio como una desafinación de violín. Con aquel reflejo, sol anaranjado, armonizaban extrañas las cornetas militares tocando diana. Era agresiva la clara voz del metal en la paz aldeana y religiosa del valle, con campanarios entre arboleda y caserío, con rebaños de vacas marchando bajo los castaños o metidas por los herbales. En el puente de Elizondo, y todo a lo largo de la carretera, formaba una compañía de cazadores, entre el son de las cornetas y las voces de los sargentos. Los oficiales, caladas las capuchas de los impermeables y las polainas manchadas de barro, estaban guarecidos bajo el balcón, pintado de añil, de una casa nueva, donde había taberna. De tiempo en tiempo, asomaba un hombre, que en una bandeja traía vasos de aguardiente para los oficiales. Era el tabernero, tripudo y risueño, lleno de recuerdos de sus viajes a las Islas de Ultramar. Un Sileno con chaleco de bayetón colorado y faja azul, mal ceñida, que al hablar de las Islas hablaba siempre de la canela y de la hoja del tabaco. El capitán que mandaba la fuerza, le dio un cigarro. El tabernero encendió, usando un yesquero de plata, y ufano de lucirlo, ofreció fuego a todos los oficiales. Humeando el cigarro, preguntó:</p>
 				<p>—¿Al fin cae Santa Cruz?</p>
 				<p>Los oficiales se miraron, y el capitán repuso entre dientes:</p>
@@ -1292,7 +1331,7 @@
 				<p>La compañía se formaba despacio en la carretera. Muchos soldados se rezagaban: Venían por el fondo de las calles corcovadas, salían de los postigos, con el fusil al hombro, doblando el cuerpo para no tropezar en el dintel. Llegaban todos con el aliento corto y vivo, encendidos por el aire de llovizna. Se juntaban en grupos, antes de ponerse en fila, y concertados, se dirigían a una taberna que estaba en frente al parador de los oficiales. Los veteranos se distinguían de los bisoños por el aire más despierto y sagaz, pero todos tenían el mismo talante marcial, aplastados como tortugas bajo las mochilas, y sacando el brillo de los ojos entre la carrillera y la visera del ros. Las cornetas iniciaban el último toque. El capitán dio la mano a los tenientes. Fueron los tres a sus puestos, y comenzaron las voces de mando. Se oyó como un aletazo el rumor de los fusiles al ser alzados y puestos en descanso. El cacareo de un toque y el son de la marcha.</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0022_chap31">
-				<head>XXXI</head>
+				<head xml:id="ne0022_head_030">XXXI</head>
 				<p>Como el camino es llano y todo el campo descubierto, el capitán y los tenientes se han reunido entre la primera y segunda sección, para seguir hablando. Decía Carmelo Nicéforo:</p>
 				<p>—¡Por confirmado el relevo del general España!</p>
 				<p>El teniente Velasco manifestaba alguna duda moviendo la cabeza:</p>
@@ -1360,7 +1399,7 @@
 				<p>Los dos tenientes levantaron los ojos tristes, graves, compasivos, ante la buena fe del capitán. Y los tres, como en un tácito acuerdo, tiraban de los cigarros, muy cavilosos, mirando a los soldados.</p>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0022_chap32">
-				<head>XXXII</head>
+				<head xml:id="ne0022_head_031">XXXII</head>
 				<p>Santa Cruz pasó los puertos de Arga y Arguiña. Allí, reunido con su gente, quiso burlar la persecución de republicanos y carlistas, haciendo grandes marchas nocturnas para que nunca supieran dónde estaba. Era artimaña suya: Con ella conseguía que no se concertaseis para un movimiento envolvente, los republicanos y el general Lizárraga. Santa Cruz esperaba vencerlos separadamente, cada uno en su vez. Pero la ocasión no se presentaba y crecía el riesgo y el estrecho. Cerca de Belza, en un intento para pasar a Guipúzcoa, se vio perdido, con los republicanos al frente, y picándole la retaguardia desde hacía treinta horas, cuatro compañías del general Lizárraga. Hizo alto al abrigo de unos molinos, y en el encinar que desde el río subía tendiéndose por el monte, paso guardia de hombres y los tres perros del molino. Fue advertencia de una vieja, que ella lo viera hacer a los contrabandistas. En el molino no había molinero. Cuando un voluntario preguntó dónde andaba, el ama joven se encrespó sacudiéndose la halda verde:</p>
 				<p>—¡Aquí bajo lo tengo!</p>
 				<p>Era una mujer alta, demacrada y encinta. El ama vieja, que estaba en su silla baja desgranando maíz, terció al caso:</p>
@@ -1390,7 +1429,7 @@
 				<p>El Cura meditaba con una mano sobre los ojos. Sintió latir los perros en el encinar y abrió la ventana. Se juntaba la gente de la partida, sobre la ribera del río, para seguir la marcha nocturna por los caminos blancos de luna, por las arboledas todas en quietud. Se aprestaba sombría, con el ansia y recelo del peligro, dura a la fatiga de aquellas marchas continuas, muchas veces a la vista de las hogueras enemigas. De nuevo iba a comenzar la huida, sañuda y rebelde, con el paso a la media noche por las aldeas dormidas al claro lunar que aman las brujas. El Cura recapacitó los caseríos donde debía pedir raciones. Santa Cruz tenía parciales en todos los poblados y aldeas, sabía ganarlos unas veces con clemencia, y otras con duras justicias. En aquellas jornadas, al amanecer metíase a los montes, y descansaba hasta la noche en el resguardo de alguna quebrada, puestos centinelas.</p>
 			</div>
 			<div n="33" type="chapter" xml:id="ne0022_chap33">
-				<head>XXXIII</head>
+				<head xml:id="ne0022_head_032">XXXIII</head>
 				<p>El Cura, arrimado a la ventana, meditaba con la mano sobre los ojos. Volvieron a latir los perros en el encinar, y corriendo por entre los maizales, venía un mozo de ágiles piernas, capusay y luenga vara. El cabecilla descubrió los ojos, y reconoció a uno de sus confidentes:</p>
 				<p>—¿Ramuncho?</p>
 				<p>Respondió una voz:</p>

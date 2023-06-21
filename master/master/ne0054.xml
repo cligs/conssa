@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Figuras de la Pasión del Señor 1</title>
-				<title type="sub"></title>
+				
 				<title type="short">Pasion1</title>
-				<title type="idno"><idno type="viaf">309275657</idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1517</measure>
@@ -138,16 +131,41 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0054</idno>
+						<idno type="cligs">ne0054</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/figuras-de-la-pasion-del-seor-i/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, <date when="1933">1933</date></bibl>
-				<bibl type="edition-first"><date when="1916">1916</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Figuras de la Pasión del Señor 1</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/309275657/">309275657</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/figuras-de-la-pasion-del-seor-i/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <date when="1933">1933</date></bibl>
+					<bibl type="edition-first"><date when="1916">1916</date><idno source="k10plus" type="ppn" n="575635975" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=575635975"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"> <date when="1916">1916</date>, <publisher>Domenech</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="575635975" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=575635975"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -157,6 +175,14 @@
 				<p>Las <seg rend="italic">Figuras</seg> recorren en orden cronológico los diversos hitos de la Pasión, desde la útlima cena a la resurrección de Cristo. Jesús es, claro está, el protagonista de todas ellas, pero en cada una aparece algún otro personaje que le da título: Judas, Kaifás, Un nazareno que le vio llorar, Mujeres de Jerusalén... La técnica es morosamente descriptiva.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -185,7 +211,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">figuras</term>
 					<term type="text.genre.subtitle.source" resp="bne">figuras</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">figuras</term>
@@ -217,6 +243,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-07" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,7 +254,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0054_chap1">
-				<head>Judas</head>
+				<head xml:id="ne0054_head_000">Judas</head>
 				<quote><p>«Y dijo uno de sus discípulos, Judas Iscariote, el que le había de entregar: "¿Por qué no se ha vendido este ungüento en trescientos denarios para socorrer pobres?"».</p>
 					<p>(S.   Juan,   XII,   4, 5)</p>
 				</quote>
@@ -387,7 +414,7 @@
 				<p>-¡Nunca duerme la madre del Rábbi!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0054_chap2">
-				<head>El Padre de Familias</head>
+				<head xml:id="ne0054_head_001">El Padre de Familias</head>
 				<quote><p>«Y envió a Pedro y a Juan diciendo: "Id y aparejadnos la Pascua para que comamos"».</p>
 					<p>(S.   Lucas,  XXII,  8)</p>
 				</quote>
@@ -633,7 +660,7 @@
 				<p>Soltose  el  Padre  de  Familias   del   hombro   de su  hijo, y fue   avanzando   con   las   manos   juntas, estremecidas y frías; sintió que sus sandalias retumbaban como en un recinto muy hondo;   que   se remontaba  la bóveda recia y triste sobre su cráneo. Y  penetró  en   su  sangre y  en   sus   huesos   el   filo de una emoción desconocida, emoción de lo que no se ve y sale de todo lo que miran los ojos; emoción de una presencia que no está y atraviesa los muros, y el aire nos toca  como  unos dedos  impalpables; emoción  del   primer  hombre   pisando   las   piedras del primer templo cristiano...</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0054_chap3">
-				<head>El mancebo que abandona su vestidura</head>
+				<head xml:id="ne0054_head_002">El mancebo que abandona su vestidura</head>
 				<quote><p>«Mas él le respondió diciendo: "Maestro, todo esto he guardado desde mi juventud". Y Jesús, poniendo en él los ojos, le amó y le dijo: "Una cosa te falta: anda, vende cuanto tienes y dalo a los pobres, y ven y sígueme"».</p>
 					<p>(S.   Marcos,   X,  20,   21)</p>
 				</quote>
@@ -790,7 +817,7 @@
 				<p>-¡No me dejéis, para que él no me vea; no me dejéis, porque yo quiero ser dichoso, y el Rábbi, el Rábbi me miraba como si no pudiera serlo nunca!</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0054_chap4">
-				<head>Kaifás</head>
+				<head xml:id="ne0054_head_003">Kaifás</head>
 				<quote><p>«[...] Y le buscaban el día de la fiesta diciendo: "¿En dónde está aquél?"».</p>
 					<p>(S.  Juan,   VII,   11)</p>
 				</quote>
@@ -1004,7 +1031,7 @@
 				<p>Y en el Templo saludaban las trompetas al nuevo día, que iba abriéndose por la cumbre de rosa del Hebrón.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0054_chap5">
-				<head>Un nazareno que le vio llorar</head>
+				<head xml:id="ne0054_head_004">Un nazareno que le vio llorar</head>
 				<quote><p>«Y se levantaron y le echaron de la ciudad, y le llevaron hasta la cumbre del monte para despeñarlo...».</p>
 					<p>(S.   Lucas,   IV, 29)</p>
 				</quote>
@@ -1118,7 +1145,7 @@
 				<p>Entonces  pasaban los legionarios y la muchedumbre hacia el palacio de Herodes Antipas.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0054_chap6">
-				<head>Annás</head>
+				<head xml:id="ne0054_head_005">Annás</head>
 				<quote><p>«[...] Uno de los ministros que estaban allí dio una bofetada a Jesús...».</p>
 					<p>(S. Juan,  XVIII, 22)</p>
 				</quote>
@@ -1156,7 +1183,7 @@
 				<p>...Y quedose dulcemente dormido el hombre venturoso entre todos  los hombres  de  Palestina...</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0054_chap7">
-				<head>Barrabas</head>
+				<head xml:id="ne0054_head_006">Barrabas</head>
 				<quote><p>«Por la solemnidad de aquel día, se dejaba libre el preso que el pueblo escogiese. Y había entonces uno muy famoso que se llamaba Barrabas».</p>
 					<p>(S.  Mateo,  XXVII,   15, 16)</p>
 				</quote>
@@ -1252,7 +1279,7 @@
 				<p>Y  temblábale el pomo del arma por el regurgitar de la sangre y las convulsiones de sus entrañas segadas...</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0054_chap8">
-				<head>Herodes Antipas</head>
+				<head xml:id="ne0054_head_007">Herodes Antipas</head>
 				<quote><p>«En aquel tiempo, Herodes, el tetrarca, ovó la fama de Jesús y dijo: "Este es Juan el Bautista que resucitó entre los muertos, y las virtudes de lo alto obran en él"».</p>
 					<p>(S.  Mateo,  XIV, 1, 2)</p>
 				</quote>
@@ -1522,7 +1549,7 @@
 				<p>Y  él se sentó en una losa, como un mendigo...</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0054_chap9">
-				<head>Pilato</head>
+				<head xml:id="ne0054_head_008">Pilato</head>
 				<quote><p>«[...] Siendo Poncio Pilato procurador de la Judea...».</p>
 					<p>(S.  Lucas,  III,  1)</p>
 				</quote>

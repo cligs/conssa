@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La palma rota</title>
-				<title type="sub"></title>
+				
 				<title type="short">PalmaRota</title>
-				<title type="idno">
-					<idno type="bne">XX2443381</idno>
-					<idno type="viaf">183438744</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">637</measure>
@@ -141,16 +131,47 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0045</idno>
+						<idno type="cligs">ne0045</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/la-palma-rota-1/"/>.</bibl>
-				<bibl type="print-source">Tipografía Altés, Barcelona, <date when="1934">1934</date></bibl>
-				<bibl type="edition-first"><date when="1909">1909</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La palma rota</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2443381.html">XX2443381</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/183438744/">183438744</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/la-palma-rota-1/"/>.</bibl>
+					<bibl type="print-source">Tipografía Altés, <pubPlace>Barcelona</pubPlace>, <date when="1934">1934</date></bibl>
+					<bibl type="edition-first"><date when="1909">1909</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del cercado</title>: 	<title type="sub">la palma rota</title> <date when="1915">1915</date>, <publisher>Maucci</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="465106293" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465106293"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del Cercado. La palma rota. Los pies y los zapatos de Enriqueta</title> <date when="1952">1952</date>, <publisher>Editorial Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="579750051" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=579750051"/> </bibl>
+						<bibl type="further-edition"><title type="main">La Palma rota</title> <date when="1952">1952</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="384780903" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=384780903"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Novelas cortas</title> <date when="1986">1986</date>, <publisher>Instituto de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1089500483" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1089500483"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Novelas cortas</title>: 	<title type="sub">Nómada, La palma rota, El hijo santo, Los pies y los zapatos de enriqueta</title> <date when="1986">1986</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="03865833X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=03865833X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de Ojeda (Ensayo de novela). Hilván de escenas. De vivir. La novela de mi amigo. Nómada. La palma rota. El hijo santo. Las cerezas del cementerio. Niño y grande</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362006"/> 		<idno type="isbn" n="8496452255;9788496452251"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -158,6 +179,14 @@
 				<p>El relato se halla presidido por la simbología de la palma. Cuando al principio de la novela parece verde, esbelta y llena de vitalidad, representa a la Luisa que quiere Aurelio, la que pudo ser o la que fue en otro tiempo, fresca auténtica, sensible, sin doblegarse a las exigencias sociales. La palma rota de la última escena simboliza a una Luisa cuya alma sublime se ha tronchado por su voluntaria aceptación de los convencionalismos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -188,8 +217,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">symbolic</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">etopeya</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -216,6 +245,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-01" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -225,7 +255,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0045_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0045_head_000">- I -</head>
 				<p>-¿Llora usted, maestro? -decía bromeando con dulzura don Luis, el viejo ingeniero, a Gráez, el viejo músico, pálido y descarnado por enfermedades y pesadumbres.</p>
 				<p>-¡Oh, no es para tanto! -repuso irónico un abogado muy pulido y miope, con lentes de oro de mucho resplandor.</p>
 				<p>-¡Yo no sé si lloraba... pero estas páginas resuenan en mi alma como una sinfonía de Beethoven!</p>
@@ -308,7 +338,7 @@
 				<p>Quedó la doncella contemplando el volumen; dobló sus páginas primeras. Y de súbito se fruncieron sus labios  y su frente; dejó el libro sobre una mesita de oloroso ciprés  y se sentó ante el piano, diciéndose: «¡No lo leo!».</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0045_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0045_head_001">- II -</head>
 				<p>Huérfano Aurelio Guzmán, quedó en la dolorosa compañía de una hermana de su madre. Murmurábase en Aduero que amarguras por hijos siniestros, ya muertos, habían enflaquecido el juicio de la señora. Pero su demencia no era de gritos  y furias, sino sosegada, de lágrimas  y mutismo. La razón alumbraba intermitentemente su cansado ánimo,  y entonces se cuidaba con un ahínco febril de aquella casa grande y triste.</p>
 				<p>Aurelio la trataba filialmente, lleno de compasión. Y la enferma, siempre aterrada, llorosa, recogida en sí misma, dio en hablarle con sumisión de sierva. No le tuteaba y decíale <seg rend="italic">señorito Aurelio</seg>. Pedíale el joven, fingiendo risas y lacerada su alma, que viese en él al huérfano, al hijo de la hermana. «Figúrese que yo la llamase a usted doña María del Carmen, en vez de mamá Carmen -que usted lo es ahora, porque murió  mamá   Dolores.  ¿Se   acuerda   usted   de   mi madre? ¿Por qué no me contesta? Míreme. Piense que estoy solo. Dígame, ¿me oye? Pues figúrese que yo le dijese doña María... ¡qué feo, qué frío! ¿verdad? ¡Aun es más feo  y más frío lo que usted me llama!... ¿Lo dirá más? ¿Verdad que no? ¡Si usted me quiere mucho!...» Lloraba la anciana, exclamando:</p>
 				<p>-¡Oh, señorito Aurelio, señorito Aurelio!...</p>
@@ -388,7 +418,7 @@
 				<p>¿Qué le sucedía? -se dijeron ellas, mirándose. Fue la <seg rend="italic">Princesita</seg> a su lado. Y en el comienzo de la calle distinguió a Luisa  y Alfredo, que retornaban de su paseo campesino.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0045_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0045_head_002">- III -</head>
 				<p>Pasmábanse en Aduero de que Gráez hubiese recibido en otros tiempos el crisma de la gloria. ¿Era éste el solicitado de opulentos y de príncipes de los grandes pueblos, cuando allí se le veía remoto a toda magnificencia, prefiriendo la compañía de un hombre demasiado mozo y escritor sin fama, por añadidura? Porque el maestro buscó la amistad de Guzmán sin medianero que les acercase o hiciese la presentación. Guzmán fumaba y leía. La rancia fámula le avisó la llegada de un peregrino señor. Y apareció Gráez.</p>
 				<p>Aurelio le contemplaba amorosamente; la frente del anciano tenía majestad, su cabellera romanticismo,  y sus ojos sabiduría y ternura.</p>
 				<p>-Soy Gráez, el violoncellista.</p>
@@ -506,7 +536,7 @@
 				<p>Ella se distrajo, mezclándose risueña  y gentil con las amigas.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0045_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0045_head_003">- IV -</head>
 				<p>Otro día habían acudido a la noble casa de don Luis los que en Aduero amaban  y sabían de música, porque el apuesto letrado de los anteojos presentaba a un amigo suyo venido de la corte y apreciado como pianista insigne.</p>
 				<p>-Usted debe conocerlo -decíanle a Gráez.</p>
 				<p>Y Gráez no lo conocía.</p>
@@ -596,7 +626,7 @@
 				<p>La <seg rend="italic">Princesita</seg> recogiose junto a su madre. No se explicaba por qué en presencia de Luisa sentíase muy débil  y veía a su primo distinto  y alejado.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0045_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0045_head_004">- V -</head>
 				<p>Gráez pidió a Madrid sus muebles, sus ropas y  libros; adquirió casa  y se hizo enteramente provinciano.</p>
 				<p>Aurelio  y la familia de Castro ayudaron al orden y arreglo de las habitaciones; y en el gabinete de estudio del violoncellista había siempre, desde que se inició la primavera, el precioso adorno de un búcaro con flores y ramas olorosas del huerto de Luisa.   Algunas  tardes  era   ella, acompañada del padre, la portadora del obsequio, y hallaban al escritor trabajando o soñando ante una mesita de maderas prietas y hierros oxidados, mueble de celda de abad o de austero aposento de hidalgo, mientras el viejo artista improvisaba o leía. Allí se respiraban mezclados olores de café, de tabaco y de flores mustiadas.</p>
 				<p>Llegaba Luisa; renovaba el agua y el ramo, y en la estancia se producía frescura y como una brisa suave, nueva y dulce de jardín y amor.</p>
@@ -643,7 +673,7 @@
 				<p>Y Luisa nunca le envió esas flores.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0045_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0045_head_005">- VI -</head>
 				<p>Un camino ancho, nublado por las altas frondas de álamos blancos y añosos, cruzaba el valle. Por los espacios de los troncos arrancados o caídos, penetraba gozosamente el día de la llanura, la buena llanura de hierba espesa, obscurecida a la sombra de los árboles; y lejos, rizada y rubia de alegría bajo el sol esparcido.</p>
 				<p>El camino llegaba a los casales y aceñas ribereños. Tenía el río orillas de misterio tupidas de renuevos de chopos y olmos viejos ya cortados; y servían de puentes y vaderas leños allanados que alcanzaban la otra margen, descansando en frescos medallones de verdor y carrizos, emergidos de la corriente mansa y somera. Después seguía la llanada suave, generosa, atusada de pastura; parecían sus tierras recién creadas, vírgenes; y los humos azules y tranquilos de las caserías, los de los sacrificios de Abel, gratos al Señor.</p>
 				<p>A la derecha del camino,  ya  pasado el río, la dulce vera subía  y ondulaba haciendo un altozano humilde;  y encima se murmuraban quejas  y rumores, enlazando sus brazos, tres pinos olvidados, ramosos desde la raíz. Y en el cielo de crepúsculo  y en las noches inmensas  y nevadas de luna, eran como tres monjes recogidos en oración o tres peregrinos muy viejos, muy tristes, inclinados por cansancio  y pesadumbre de recuerdos.</p>
@@ -725,7 +755,7 @@
 				<p>Había comenzado el crepúsculo. Encima del río descansaba la niebla.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0045_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0045_head_006">- VII -</head>
 				<p>Ya pisaba el portal del ingeniero, y Aurelio se detuvo; volvió la espalda  y se fue apartando de aquella mansión. Amigas de Luisa que cruzaban por la opuesta acera viéronle otra vez detenerse, retroceder  y allegarse nuevamente a la misma casa. Ellas sonrieron hablándose  y mirando al escritor.</p>
 				<p>Vacilaba la voluntad de Aurelio; la sentía reducida por otra ancha, fuerte y dominadora. «El que ama criatura, tan bajo se queda como aquella criatura, y en alguna manera más bajo, porque el amor no sólo iguala, más aún, sujeta al amante a lo que ama». Y estas recordadas palabras de San Juan de la Cruz le hirieron, viéndose rendido. Protestó en su corazón embravecido y altivo. Él, sí; él amaba, pero sin pérdida ni menoscabo de sí mismo. Más que cautiverio rahez, sufría su alma amargura y piedad de la amada. ¡Siempre enemigos, desemejantes, distanciados; si se acercaban en dichosos momentos, era para luego separarse como aproximación de onda a la ribera! ¡La evitaría! Y recordó esta promesa al trasponer su umbral; y alejándose de él, arrepintiose de no haber entrado. ¿Por qué no había de hacerlo?</p>
 				<p>Y llamó. Una vieja criada como la suya, abrió la cancela.</p>
@@ -769,7 +799,7 @@
 				<p>Pensó en los besos. Y le pareció haber besado a otra mujer que no a Luisa...</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0045_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0045_head_007">- VIII -</head>
 				<p>Gráez y el ingeniero conversaban en un ángulo  del comedor, sorbiendo tazas de una dorada y aromática infusión de hierbas. Luisa miraba los grabados de una revista musical.</p>
 				<p>Cortaban la plática de tiempo en tiempo los ancianos para escuchar la lluvia, que resonaba en las vidrieras, lluvia otoñal, lluvia de paisajes lejanos y humosos; de tierras y caminos dorados de hojas; de cielo espeso que baja a la serranía y se enreda en la arboleda, y todo está cruzado por la urdimbre del agua, que finge un antiguo tapiz.</p>
 				<p>Se hizo tormentosa la noche, hirviente de recia lluvia, aullada del viento. Canales, tejaroces y gárgolas vertían caños. Se oía la angustia de los árboles, el gemido de todas las cosas; tronaba el cielo duro, seco, metálico; los vidrios de los balcones se estremecían, y retemblaban los muros profundamente.</p>
@@ -806,7 +836,7 @@
 				<p>Estaba solo.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0045_chap9">
-				<head>- IX -</head>
+				<head xml:id="ne0045_head_008">- IX -</head>
 				<p>Amaneció un día gozoso, de magnificencia de sol y de azul. Los anegados campos eran trozos de espejo de los cielos; el verdor que aun tenían los árboles estaba enternecido  y vislumbraba de lluvia prendida; el aire poblábase del alborozo de alas de palomas  y gritos de golondrinas; los templos  y las casas, apagados, ennegrecidos de tan húmedos, aparecían más vetustos, recortándose en la alegría de la mañana;  y sobre el fondo del silencio del paisaje, resbalaba el trueno fresco, espumoso  y profundo de la avenida recial del río.</p>
 				<p>Aurelio  y Gráez paseaban por las afueras. Sentía el escritor contento de pureza, de inocencia,  y en todo hallaba un aroma  y sonrisa de juventud.</p>
 				<p>-¡Maestro! ¿Verdad que le parece ser nombre recién creado? ¡Yo, sí; o acabado de salir del Arca del elegido por Dios para repoblar la tierra! ¡Lástima que no pase sobre nosotros la banda gloriosa del arco iris!</p>
@@ -837,7 +867,7 @@
 				<p>Sola quedó Luisa. Su mirada se esparció en la llanura; llegó a la palma rota, y contemplándola, la vio transformada en mujer; y era ella misma, alumbrada y henchida de amor; más joven; con fe y ansiedad en sus ojos; y ella besaba a Aurelio en su frente de gloria, en su cabello, en sus mejillas, en su boca de apasionado, de niño excelso, ¡príncipe y cruel! Y el alma de Luisa se torció de dolor de celos, celos incurables, malditos, feroces, celos de sí misma.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0045_chap10">
-				<head>- X -</head>
+				<head xml:id="ne0045_head_009">- X -</head>
 				<p>Gráez se detuvo; y volvió otra vez sus ojos  hacia el confín de la llanura. Un vellón de humo se deshilaba en el azul... Y desapareció el correo.</p>
 				<p>Y el músico siguió caminando, penetrado de la soledad, del desamparo del paisaje.</p>
 				<p>Un bando de grajos alzose de la sementera gañendo aciagamente. Volaron esparcidos; y pronto fueron espesándose, obscureciendo un trozo de la tarde; y bajaron a un bancal paniego.</p>

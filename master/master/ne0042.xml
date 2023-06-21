@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Del vivir</title>
-				<title type="sub">Apuntes de parajes leprosos</title>
+				
 				<title type="short">Vivir</title>
-				<title type="idno">
-					<idno type="bne">XX2462753</idno>
-					<idno type="viaf">174271200</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1225</measure>
@@ -141,22 +131,62 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0042</idno>
+						<idno type="cligs">ne0042</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/del-vivir-2/"/>.</bibl>
-				<bibl type="print-source">Tipografía Altés, Barcelona, <date when="1932">1932</date></bibl>
-				<bibl type="edition-first"><date when="1904">1904</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Del vivir</title>
+					<title type="sub">Apuntes de parajes leprosos</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2462753.html">XX2462753</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/174271200/">174271200</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/7832686-2">7832686-2</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/del-vivir-2/"/>.</bibl>
+					<bibl type="print-source">Tipografía Altés, <pubPlace>Barcelona</pubPlace>, <date when="1932">1932</date></bibl>
+					<bibl type="edition-first"><date when="1904">1904</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Del vivir</title>: 	<title type="sub">apuntes de parajes leprosos</title> <date when="1918">1918</date>, <publisher>Imp. Elzeviriana, Borrás, Mestres y Ca.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="465106552" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465106552"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Del vivir, corpus y otros cuentos</title> <date when="1927">1927</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465107044" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465107044"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Del vivir, Corpus y otros cuentos</title> <date when="1927">1927</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342696491" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696491"/> </bibl>
+						<bibl type="further-edition"><title type="main">Del vivir</title>: 	<title type="sub">la novela de mi amigo</title> <date when="1932">1932</date>, <publisher>Altés</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="46510794X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46510794X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Del Vivir, Corpus y otros cuentos</title> <date when="1951">1951</date>, <publisher>Editorial Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="579749924" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=579749924"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de Ojeda (Ensayo de novela). Hilván de escenas. De vivir. La novela de mi amigo. Nómada. La palma rota. El hijo santo. Las cerezas del cementerio. Niño y grande</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362006"/> 		<idno type="isbn" n="8496452255;9788496452251"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
 				<p>Sigüenza solo tiene dieciocho años. Viaja en un asno y le sirve de guía un arriero. Se dirige al foco leproso de Parcent; de ahí que la obra lleve el subtítulos de "Apuntes de parajes leprosos". Tempranamente toma conciencia de la crueldad y el dolor de la vida humana.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -220,6 +250,7 @@
 		<revisionDesc>
 			<change when="2015-03-06" who="#jct">Initial TEI version.</change>
 			<change when="2015-12-18" who="#jct">New metadata.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -242,7 +273,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0042_chap1">
-				<head>- I  -</head>
+				<head xml:id="ne0042_head_000">- I  -</head>
 				<p>Sigüenza, hombre apartadizo que gusta del paisaje y de humildes caseríos, caminaba por tierra levantina.</p>
 				<p>Dijo: «Llegaré a Parcent».</p>
 				<p>-Parcent es foco leproso -le advirtieron. Y luego Sigüenza fingiose un lugarejo hórrido, asiático, en cuyas callejas hirviesen como gusanos los lazarinos.</p>
@@ -339,7 +370,7 @@
 				<p>Era el hostal.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0042_chap2">
-				<head>- II  -</head>
+				<head xml:id="ne0042_head_001">- II  -</head>
 				<p>Había cerca del hogar una mesa blanca que trascendía a fregadura; tan recién estropajeada estaba.</p>
 				<p>Un hombre molletudo, rapado, sumergía rebanadas de hogaza en una fuente humeante. Con gran calma, miraba la marca ele su poderosa dentadura en el pan o en los tasajos.</p>
 				<p>Este hombre era el huésped.</p>
@@ -479,7 +510,7 @@
 				<p>La leprosa se irguió. Y loca, transida, tambaleándose horriblemente, salió y perdiose en la noche...</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0042_chap3">
-				<head>- III  -</head>
+				<head xml:id="ne0042_head_002">- III  -</head>
 				<p>Era grande el aposento de Sigüenza.</p>
 				<p>El huésped, que le había guiado, se fue dejando colgado un candil sobre una oronda arca. Por el suelo rudo, sin ladrillos, pardeaban  montones de patatas. El azófar abollado de un peso daba miradas de luz color cinabrio.</p>
 				<p>Retraída en el misterio de un ángulo empollaba una rubia gallina, quieta, observadora, reverenda.</p>
@@ -631,7 +662,7 @@
 				<p>Su voz rasgó la calma del amanecer; sus ojos lumbrearon, y alzando sus brazos, secos, largos, que remataban en garras de animalia de blasón, bendijo al Señor.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0042_chap4">
-				<head>- IV  -</head>
+				<head xml:id="ne0042_head_003">- IV  -</head>
 				<p>Mañaneó Sigüenza.</p>
 				<p>En la entrada  del  hostal, la  moza  ancha, rubia y pecosa, aljofifaba el piso.</p>
 				<p>Comían dos arrieros  sentados a la blanca  mesa.</p>
@@ -703,7 +734,7 @@
 				<p>-Vámonos, vámonos, señor de <seg rend="italic">Sigüensa</seg> -repetía-. Pues «nada hay tan importuno como el hambre», que dijo Homero en su <seg rend="italic">Odysea</seg>.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0042_chap5">
-				<head>- V  -</head>
+				<head xml:id="ne0042_head_004">- V  -</head>
 				<p>Sigüenza sucumbía a la calma de la siesta.</p>
 				<p>Dormitaba en el zaguán.</p>
 				<p>El   suelo   rociado   y  las   puertas   entornadas mentían frescor.   Una   cortina  rameada pintaba de rojo la raja de claridad que bajaba desde el dintel al peldaño.</p>
@@ -799,7 +830,7 @@
 				<p>No lo consintieron. Y el chico murió. Y don Ramón lloraba grandemente; lloraba como un santo que mi mujer tiene en una estampa.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0042_chap6">
-				<head>- VI  -</head>
+				<head xml:id="ne0042_head_005">- VI  -</head>
 				<p>Era de mañana.</p>
 				<p>Otra vez caminaba Sigüenza.</p>
 				<p>En la pasada noche había entendido del jefe de la ronda el anuncio de que ojearían el <seg rend="italic">Carrascal</seg> al día siguiente.</p>
@@ -934,7 +965,7 @@
 				<p>Su boca hervía en saliva.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0042_chap7">
-				<head>- VII  -</head>
+				<head xml:id="ne0042_head_006">- VII  -</head>
 				<p>Paseaba   Sigüenza   por el   camino. Veía,  hacia la   diestra,  amontonarse   el   pueblo  trepando por el peñascal.  Al sur se tiende el paisaje en vastedad severa que limita la ancha sierra.</p>
 				<p>Entonces, atardecía.</p>
 				<p>No cantaba una voz en el campo; no  salía  tampoco del pueblo que semejaba desierto, en abandono: un brazado de casucas arrancadas a otra ciudad y vertidas allí como cascote.</p>
@@ -1033,7 +1064,7 @@
 				<p>El agua de la fuente caía turbulenta, gruesa, estrepitosa.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0042_chap8">
-				<head>- VIII  -</head>
+				<head xml:id="ne0042_head_007">- VIII  -</head>
 				<p>El huésped dijo:</p>
 				<p>-Mire:   ahí,    en    esa    casa    <seg rend="italic">conosco</seg>   bien. Podemos   sentarnos, y   me    creo   que   verá pasar algún leproso. Frente por frente vive una  de esas del mal.</p>
 				<p>Asintió Sigüenza y entraron. Y vieron una mujer joven que pesaba harina, fiscalizada groseramente por una vieja cenceña.</p>
@@ -1163,7 +1194,7 @@
 				<p>...Y a la entrada del sombrajo se apostaron los pavos, inmóviles, inexorables, siniestros como enlutados hombres y como hombres tenaces en su aborrecer, hasta sacrificar su descanso por dañar a sus hermanos...</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0042_chap9">
-				<head>- IX  -</head>
+				<head xml:id="ne0042_head_008">- IX  -</head>
 				<p>Sigüenza se prometió muy buena tarde.</p>
 				<p>El médico le había dicho:</p>
 				<p>-¿Quiere usted venir conmigo? Iremos a...</p>
@@ -1285,7 +1316,7 @@
 				<p>Cerca de Parcent, rapaces jubilosos y gritadores saltaban una hoguera alta y crepitante... Del haz de fuego y del humo que subía retorciéndose brotaba desgranado el oro de las chispas.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0042_chap10">
-				<head>- X  -</head>
+				<head xml:id="ne0042_head_009">- X  -</head>
 				<p>Estaba Sigüenza  a la  ventana   de   su   desván-alcoba.</p>
 				<p>En la calle,  el guía  acomodaba aquel  asno de paso prudentísimo, de orejas grises, remedadoras de hojas de pitas.</p>
 				<p>Pronto Sigüenza dejaría Parcent. El médico entró.</p>

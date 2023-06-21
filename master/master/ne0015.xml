@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Sonata de primavera</title>
-				<title type="sub">Memorias del Marqués de Bradomín</title>
+				
 				<title type="short">SonataPrimavera</title>
-				<title type="idno">
-					<idno type="bne">XX3383843</idno>
-					<idno type="viaf">181048902</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1055436</idno>
-					<idno type="viaf">68936773</idno>
-					<name type="short">Valle</name>
-					<name type="full">Valle-Inclán, Ramón del</name>
+					<name type="short" ref="#Valle"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">817</measure>
@@ -141,22 +131,103 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0015</idno>
+						<idno type="cligs">ne0015</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2013">2013</date>, <idno>42440</idno>, <ref target="http://www.gutenberg.org/ebooks/42440"/>.</bibl>
-				<bibl type="print-source">Perlado, Páez y Compañía <date when="1913">1913</date></bibl>
-				<bibl type="edition-first"><date when="1904">1904</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Sonata de primavera</title>
+					<title type="sub">Memorias del Marqués de Bradomín</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX3383843.html">XX3383843</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/181048902/">181048902</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q6132118/">Q6132118</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/106002747X">106002747X</idno>
+				</idno>
+				</title>
+					<author xml:id="Valle">
+						<name type="full"><forename>Ramón</forename> <surname>del Valle-Inclán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8840 - IP 8845">IP 8840 - IP 8845</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118626019">118626019</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q311001/">Q311001</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1055436.html">XX1055436</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/68936773/">68936773</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2013">2013</date>, <idno>42440</idno>, <ref target="http://www.gutenberg.org/ebooks/42440"/>.</bibl>
+					<bibl type="print-source">Perlado, Páez y Compañía <date when="1913">1913</date></bibl>
+					<bibl type="edition-first"><date when="1904">1904</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1905">1905</date>, <publisher>Impr. de Arróyave, González y Co.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="624972666" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=624972666"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1907">1907</date>, <publisher>Granada</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1135363331" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135363331"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1914">1914</date>, <publisher>Perlado, Paéz y Comp. Eds.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="461221438" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=461221438"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera: memorias del Marques de Bradomin</title> <date when="1922">1922</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1335847898" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1335847898"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1922">1922</date>, <publisher>Impr. Helénica</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="324900309" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=324900309"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">[Sonata de Primavera]</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1928">1928</date>, <publisher>Rivadeneyra [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1409587886" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1409587886"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de Primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1928">1928</date>, <publisher>Soc. General Española de Librería [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="522557597" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522557597"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera: memorias del Marques de Bradomin</title> <date when="1933">1933</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1177580667" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177580667"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera, sonata de estío</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1938">1938</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="522753337" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522753337"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de primavera</title> <date when="1940">1940</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1142431851" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1142431851"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de Primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1942">1942</date>, <publisher>Rua Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="522558186" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522558186"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de primavera</title> <date when="1949">1949</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="152296164X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=152296164X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1961">1961</date>, <publisher>Las Américas Publ. Company</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="46537428X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46537428X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1961">1961</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="460344676" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460344676"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de Primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1965">1965</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="233047255" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233047255"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1969">1969</date>, <publisher>Salvat Ed.;Alianza Ed.</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="466002238" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466002238"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1969">1969</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="450457575" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=450457575"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de primavera</title>: 	<title type="sub">Del Valle-Inclán, Ramón [María] ; Sonata de estío. Memorias del Marqués de Bradomin</title> <date when="1970">1970</date>, <publisher>Inst. del libro</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="450457583" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=450457583"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">Sonata de estío, Sonata de otoño, Sonata de invierno ; memorias del Marqués de Bradomín</title> <date when="1972">1972</date>, <publisher>Porrúa</publisher> <pubPlace>México, D.F.</pubPlace> 		<idno type="ppn" n="770302572" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=770302572"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1975">1975</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1182598633" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182598633"/> 		<idno type="isbn" n="842390430X"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de primavera</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1489920064" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1489920064"/> 		<idno type="isbn" n="842390430X"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Frühlingssonate</title>: 	<title type="sub">Memoiren des Marqués de Bradomín</title> <date when="1980">1980</date>, <publisher>Suhrkamp</publisher> <pubPlace>Frankfurt a. Main</pubPlace> 		<idno type="ppn" n="468685928" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468685928"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Frühlingssonate</title>: 	<title type="sub">Memoiren des Marqués de Bradomin</title> <date when="1980">1980</date>, <publisher>Suhrkamp</publisher> <pubPlace>Frankfurt am Main</pubPlace> 		<idno type="ppn" n="012778532" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=012778532"/> 		<idno type="isbn" n="3518016687"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1982">1982</date>, <publisher>R.T.V.E.</publisher> <pubPlace>[S.l.]</pubPlace> 		<idno type="ppn" n="1450021395" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1450021395"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1982">1982</date>, <publisher>R.T.V.E.</publisher> <pubPlace>[S.l.]</pubPlace> 		<idno type="ppn" n="1334931534" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334931534"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sonata de primavera</title> <date when="1983">1983</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1095334379" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1095334379"/> 		<idno type="isbn" n="842390430X"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de primavera</title> <date when="1984">1984</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="134830085X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=134830085X"/> 		<idno type="isbn" n="842390430X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1984">1984</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="496699865" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=496699865"/> 		<idno type="isbn" n="842390430X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1984">1984</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="194966127" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=194966127"/> 		<idno type="isbn" n="842390430X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1984">1984</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039961346" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039961346"/> 		<idno type="isbn" n="8420600695"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1988">1988</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="083417656" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083417656"/> 		<idno type="isbn" n="8423918378"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués Bradomín</title> <date when="1989">1989</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="781366186" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=781366186"/> 		<idno type="isbn" n="9788423918379"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1991">1991</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="561443610" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=561443610"/> 		<idno type="isbn" n="8422632683"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Frühlingssonate</title>: 	<title type="sub">Memoiren des Marqués de Bradomín</title> <date when="1991">1991</date>, <publisher>Suhrkamp</publisher> <pubPlace>Frankfurt am Main</pubPlace> 		<idno type="ppn" n="118834703" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=118834703"/> 		<idno type="isbn" n="3518403559"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1994">1994</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="113223610X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=113223610X"/> 		<idno type="isbn" n="8423918378"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="1994">1994</date>, <publisher>Alianza</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="829309616" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=829309616"/> 		<idno type="isbn" n="8420646296"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de Primavera</title> <date when="1994">1994</date>, <publisher>ALGA [u.a.]</publisher> <pubPlace>Murcia</pubPlace> 		<idno type="ppn" n="567832295" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=567832295"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="1995">1995</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="249893045" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=249893045"/> 		<idno type="isbn" n="8423918378"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera. Sonata de Estío</title>: 	<title type="sub">memorias del Marqués Bradomín</title> <date when="1996">1996</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="241219043" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=241219043"/> 		<idno type="isbn" n="8423918378"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="2000">2000</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1160019126" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1160019126"/> 		<idno type="isbn" n="8423918378"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="2000">2000</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="320192148" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=320192148"/> 		<idno type="isbn" n="8423938999"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín. Ramón del Valle-Inclán. Introd. Pere Gimferer</title> <date when="2006">2006</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="563051981" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=563051981"/> 		<idno type="isbn" n="8467021721"/></bibl>
+						<bibl type="further-edition"><title type="main">Sonata de Primavera</title> <date when="2008">2008</date>, <publisher>ALGA</publisher> <pubPlace>Murcia</pubPlace> 		<idno type="ppn" n="653798806" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=653798806"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title> <date when="2011">2011</date>, <publisher>Espasa</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1480248983" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1480248983"/> 		<idno type="isbn" n="9788467033465"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de Primavera</title> <date when="2017">2017</date>, <publisher>Alianza Editorial</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="890983917" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=890983917"/> 		<idno type="isbn" n="8491045570;9788491045571"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sonata de primavera</title>: 	<title type="sub">memorias del Marqués de Bradomín</title> <date when="2017">2017</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="877876657" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=877876657"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
 				<p>Un joven Marqués de Bradomín viaja a la ciudad italiana de Ligura como guardia noble del Papa para entregar un capelo al Obispo de Betulia, que está a punto de morir y quien se encuentra en el palacio de su hermana, la princesa Gaetani. Esta tiene cinco hijas, la mayor de las cuales tiene veinte años y entrará en breve a un convento. El Marqués comienza a seducirla y la princesa intenta detenerlo de manera encubierta. En una escena de seducción, la hija más pequeña de la princesa se cae por la ventana y muere, tras lo que Xavier huye.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8841" key="IP 8841" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">8</term>
 					<term type="author.continent">Europe</term>
@@ -187,7 +258,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">memoria</term>
 					<term type="text.genre.subtitle.source" resp="bne">memoria</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">memoria</term>
@@ -228,19 +299,20 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2014-11-05" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Dedicatoria</head>
+				<head xml:id="ne0015_head_000">Dedicatoria</head>
 				<p>No hace todavía tres años vivía yo escribiendo novelas por entregas, que firmaba orgulloso, no sé si por desdén si por despecho. Me complací dolorosamente la oscuridad de mi nombre y el olvido en que todos me tenían. Hubiera querido entonces que los libros estuviesen escritos en letra lombarda, como las antiguas ejecutorias, y que solo algunos iniciados pudiesen leerlas. Esta quimera ha sido para mí como un talismán. Ella me ha guardado de las competencias mezquinas, y por ella no he sentido las crueldades de una vida toda de dolor. Solo, altivo y pobre he llegado a la literatura sin enviar mis libros a esos que llaman críticos, y sin sentarme una sola vez en el corro donde a diario alientan sus vanidades las hembras y los eunucos del Arte. De alguien, sin embargo, he recibido protección tan generosa y noble, que sin ella nunca hubiera escrito las <seg rend="italic">Memorias del Marqués de Bradomín</seg>. Tal protección, única en mi vida, fue de un gran literato y de un gran corazón: He nombrado a Don José Ortega Munilla</p>
 				<p>Hoy quiero ofrecerle este libro con aquel ingenuo y amoroso respeto que, cuando yo era niño, ofrecían los pastores de los casales amigos el más blanco de sus corderos en la casa de mi padre.</p>
 				<p>V.-I.</p>
 				<p>Real Sitio de Aranjuez.- Mayo de 1904</p>
 			</div>
 			<div>
-				<head>Soneto autumnal para el Señor Marqués de Bradomín</head>
+				<head xml:id="ne0015_head_001">Soneto autumnal para el Señor Marqués de Bradomín</head>
 				<quote>
 					<lg type="poem">
 						<lg type="stanza">
@@ -270,13 +342,13 @@
 				</quote>
 			</div>
 			<div>
-				<head>Notas</head>
+				<head xml:id="ne0015_head_002">Notas</head>
 				<p>Estas páginas son un fragmento de las «Memorias Amables», que ya muy viejo empezó a escribir en la emigración el Marqués de Bradomín. Un Don Juan admirable. ¡El más admirable tal vez!…</p>
 				<p><seg rend="italic">Era feo, católico y sentimental.</seg></p>
 			</div>
 		</front>
 		<body>
-			<head>Memorias del Marqués de Bradomín</head>
+			<head xml:id="ne0015_head_003">Memorias del Marqués de Bradomín</head>
 			<div n="1" type="chapter" xml:id="ne0015_chap1">
 				<p>Anochecía cuando la silla de posta traspuso la Puerta Salaria y comenzamos a cruzar la campiña llena de misterio y de rumores lejanos. Era la campiña clásica de las vides y de los olivos, con sus acueductos ruinosos, y sus colinas que tienen la graciosa ondulación de los senos femeninos. La silla de posta caminaba por una vieja calzada: Las mulas del tiro sacudían pesadamente las colleras, y el golpe alegre y desigual de los cascabeles despertaba un eco en los floridos olivares. Antiguos sepulcros orillaban el camino y mustios cipreses dejaban caer sobre ellos su sombra venerable.</p>
 				<p>La silla de posta seguía siempre la vieja calzada, y mis ojos fatigados de mirar en la noche, se cerraban con sueño. Al fin quedeme dormido, y no desperté hasta cerca del amanecer, cuando la luna, ya muy pálida, se desvanecía en el cielo. Poco después, todavía entumecido por la quietud y el frío de la noche, comencé a oír el canto de madrugueros gallos, y el murmullo bullente de un arroyo que parecía despertarse con el sol. A lo lejos, almenados muros se destacaban negros y sombríos sobre celajes de frío azul. Era la vieja, la noble, la piadosa ciudad de Ligura.</p>

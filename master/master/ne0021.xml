@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El resplandor de la hoguera</title>
-				<title type="sub">La guerra carlista</title>
+				
 				<title type="short">ResplandorHoguera</title>
-				<title type="idno">
-					<idno type="bne">XX3384448</idno>
-					<idno type="viaf">314167748</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1055436</idno>
-					<idno type="viaf">68936773</idno>
-					<name type="short">Valle</name>
-					<name type="full">Valle-Inclán, Ramón del</name>
+					<name type="short" ref="#Valle"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1446</measure>
@@ -141,22 +131,73 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2014">2014</date>
-				<idno type="cligs">ne0021</idno>
+						<idno type="cligs">ne0021</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2010">2010</date>, <idno></idno>, <ref target="https://archive.org/details/elresplandordela00vall"/>.</bibl>
-				<bibl type="print-source">Imprenta de Primitivo Fernández, <date when="1909">1909</date></bibl>
-				<bibl type="edition-first"><date when="1909">1909</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El resplandor de la hoguera</title>
+					<title type="sub">La guerra carlista</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX3384448.html">XX3384448</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/314167748/">314167748</idno>
+				</idno>
+				</title>
+					<author xml:id="Valle">
+						<name type="full"><forename>Ramón</forename> <surname>del Valle-Inclán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8840 - IP 8845">IP 8840 - IP 8845</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118626019">118626019</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q311001/">Q311001</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1055436.html">XX1055436</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/68936773/">68936773</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2010">2010</date>, <idno/>, <ref target="https://archive.org/details/elresplandordela00vall"/>.</bibl>
+					<bibl type="print-source">Imprenta de Primitivo Fernández, <date when="1909">1909</date></bibl>
+					<bibl type="edition-first"><date when="1909">1909</date><idno source="k10plus" type="ppn" n="373489803" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=373489803"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1909">1909</date>, <publisher>Fernandez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="373489803" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=373489803"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera o la guerra carlista</title> <date when="1937">1937</date>, <publisher/> <pubPlace>Santiago</pubPlace> 		<idno type="ppn" n="464524008" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464524008"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1961">1961</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1372770992" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1372770992"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1961">1961</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="463223896" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463223896"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Resplandor de la hoguera</title> <date when="1961">1961</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="233017895" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233017895"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1970">1970</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1182596568" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182596568"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1970">1970</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="577229559" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=577229559"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la Hoguera. Gerifaltes de Antaño</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1077543271" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1077543271"/> 		<idno type="isbn" n="8423935221;8423938220"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera. Gerifaltes de antaño</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="037728210" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=037728210"/> 		<idno type="isbn" n="8423932230;842393523X;8423938239"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1980">1980</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="326485430" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=326485430"/> </bibl>
+						<bibl type="further-edition"><title type="main">Im Flammenschein</title> <date when="1981">1981</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="617151342" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=617151342"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Im Flammenschein</title> <date when="1991">1991</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="857469193" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=857469193"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1991">1991</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="56141954X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=56141954X"/> 		<idno type="isbn" n="8422632640"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1993">1993</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1124399518" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1124399518"/> 		<idno type="isbn" n="8423973298"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la Hoguera. Gerifaltes de Antaño</title> <date when="1993">1993</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1107680921" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1107680921"/> 		<idno type="isbn" n="8423938727"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera. Gerifaltes de antaño</title> <date when="1993">1993</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="190105674" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=190105674"/> 		<idno type="isbn" n="8423938727"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El resplandor de la hoguera</title> <date when="1994">1994</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="196110386" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=196110386"/> 		<idno type="isbn" n="8423973298"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La guerra Carlista, vol. 2: El resplandor de la hoguera</title> <date when="2017">2017</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1003397409" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1003397409"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract>
 				<p>Varias monjas (de la anterior novela) que quieren ayudar a curar a los soldados en Navarra. Son acompañadas por Cara de Plata, que intenta convertirse en cabecilla de soldados. En su camino se encuentran con otros personajes que huyen de los soldados liberales. Se describe tanto las intrigas entre las facciones carlistas como las relaciones tensas del bando liberal. Miquelo Egoscué aparece como líder de un grupo de carlistas que realizan guerra de guerrillas por las montañas.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8841" key="IP 8841" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">8</term>
 					<term type="author.continent">Europe</term>
@@ -188,8 +229,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">war-novel</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -225,6 +266,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-01-12" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -232,7 +274,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0021_chap1">
-				<head>I</head>
+				<head xml:id="ne0021_head_000">I</head>
 				<p>Oíase un lejano cascabeleo que parecía rolar sobre la nieve. Y se acercaba aquel son ligero y alegre. Una voz habló desde el fondo del carro:</p>
 				<p>—¡Pues no habíamos equivocado el camino!</p>
 				<p>Y respondió, desabrido, el hombre que iba a pie, al flanco del tiro:</p>
@@ -308,7 +350,7 @@
 				<p>—Cara de Plata, hijo mío, sube y pongámonos de acuerdo.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0021_chap2">
-				<head>II</head>
+				<head xml:id="ne0021_head_001">II</head>
 				<p>El Cura había esparcido sus confidentes por toda la serranía, enviando cartas, recados y encarecimientos a Don Pedro Mendía, al Sangrador, al Manco y a Miquelo Egoscué. Cuatro capitanes de partida que también hacían la guerra por su cuenta y aventura. Santa Cruz en sus cartas les decía que se le juntasen para caer en una sorpresa nocturna sobre los batallones republicanos que habían ocupado Otaín. Pero Don Pedro Mendía, que era un viejo receloso y adusto, mandó, como respuesta, dar de palos al emisario. El Sangrador y el Manco ofrecieron ir. Pero más tarde, puestos de acuerdo, también entraron en sospecha y se internaron por la sierra. Solamente acudió al llamamiento Miquelo Egoscué. Era galán de mucho brío, y gozaba por toda aquella tierra de una leyenda hazañosa que tenía la ingenua y bárbara fragancia de un cantar de Gesta. Las mujeres de los caseríos, cuando hacían corro en las cocinas para desgranar el maíz, contaban y loaban las proezas de aquel hombre. Y las abuelas, entonces, parecían enamoradas, y las mocetas suspiraban, contemplando la hoguera toda en lenguas de oro y de temblor. Egoscué se hallaba dormido en la borda de un cabrero, cuando llegó la carta del Cura Santa Cruz. El pastor, un mancebo rubio que tenía sobre los ojos como la niebla de un ensueño, le movió blandamente para despertarle:</p>
 				<p>—¡Amo! ¡Amo Miquelo!</p>
 				<p>El capitán, aún medio dormido, interrogó sin sobresalto:</p>
@@ -347,7 +389,7 @@
 				<p>Salió, juntó las cabras, silbó al perro, volviose a entrar para coger el cayado, y sin cerrar la puerta de su borda, echó por delante del capitán hacia las lejanas cimas de Astigar.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0021_chap3">
-				<head>III</head>
+				<head xml:id="ne0021_head_002">III</head>
 				<p>En la hondura de una quebrada, y cercado de pinos cabeceantes, se ocultaba el caserío de San Paul. El carro se detuvo en la trocha, a la puerta de una venta, y las mujeres asomaron los rostros desgreñados, tan pálidos, que parecían consumidos por el ardor calenturiento de los ojos. La muchacha interrogó a la vieja:</p>
 				<p>—¿Es aquí donde pasaremos la noche?</p>
 				<p>Y la vieja respondió con un gesto muy expresivo:</p>
@@ -410,7 +452,7 @@
 				<p>Con esto se llegaron al hogar, y enteraron de lo convenido a Cara de Plata. Cuando el trato estuvo hecho, de una alacena empotrada en la pared, tomó el ventero un frasco de aguardiente, y llenó tres vasos pequeños de vidrio tallado, donde una fimbria de mugre destacaba el dibujo de las cenefas talladas en el vidrio.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0021_chap4">
-				<head>IV</head>
+				<head xml:id="ne0021_head_003">IV</head>
 				<p>Entraron en la cocina dos mendigos, hombre y mujer. Venían disputando. La mujer, con la basquiña echada por la cabeza, daba el pecho a un niño amoratado de frió. El hombre entró delante, corriendo como un gamo, aun cuando traía la pierna derecha, desde el muslo al tobillo, envuelta en trapos húmedos y sórdidos. El ventero se volvió y les hizo un gesto que suponía acuerdo entre ellos. Los otros callaron, y con los ojos bajos, alzando los hombros y estremeciéndose, se acercaron al fuego. La vieja del carro y la muchacha los miraban de soslayo, sin interrumpir el rezo. Sentados cerca del hogar los dos mendigos parecían montones de guiñapos, y al calor del fuego exhalaban un vaho de miseria. El hombre tenía los ojos fijos sobre Cara de Plata. En voz baja dijo al oído de la mujer:</p>
 				<p>—¡Paréceme un caballero de mi tierra!</p>
 				<p>—¡Calla, borrachón!</p>
@@ -489,7 +531,7 @@
 				<p>—¡Parece que te repelaron bien las barbas, compadre!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0021_chap5">
-				<head>V</head>
+				<head xml:id="ne0021_head_004">V</head>
 				<p>La Madre Isabel, toda maravillada, se hacía cruces:</p>
 				<p>—¡Nunca te reconociera! ¿Cómo llegaste a tanta miseria? ¿Cómo no escribiste a nuestra convento?</p>
 				<p>A las preguntas de la monja, el antiguo sacristán respondía dándose golpes de pecho:</p>
@@ -543,7 +585,7 @@
 				<p>La mujer sollozó. Callaban todos. Y como si las almas se hablasen en el silencio, las miradas iban unas en pos de otras, hacia el niño que dormía en el cuévano lleno de mendrugos, y el niño se despertó llorando...</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0021_chap6">
-				<head>VI</head>
+				<head xml:id="ne0021_head_005">VI</head>
 				<p>Roquito, después de hacer oración arrodillado cerca del pozo, en el corral blanco de nieve, entró al establo soplándose los dedos:</p>
 				<p>—¡Vaites!... ¡Vaites!... Una gran penitencia. ¡Vaites!... ¡Vaites!... ¡Yo te ofrezco mi sangre en descargo de mis pecados, amantísimo Jesús!</p>
 				<p>Descolgó la esquila de una vaca, la guardó en el pecho, y salió al camino. Un momento estuvo indeciso, mirando a todos lados, y luego partió corriendo hacia el caserío de San Paúl. En el camino se le hizo de noche. Sólo se oía el fragor de las torrenteras. Roquito, sin dejar de correr, se santiguaba invocando el nombre de los santos y de las vírgenes que tenía en mayor devoción:</p>
@@ -581,7 +623,7 @@
 				<p>Se puso a llorar y a correr. Cerca de Otaín unos soldados que vivaqueaban, le prendieron tomándole por loco, y como la herida que tenía en la espalda marcaba una huella de sangre, le enviaron al hospital en un carro da forraje. Cuando atravesó la antigua villa agramontesa, tiritaba de fiebre y daba voces de delirio. Dos monjas le recibieron en la portería del piadoso asilo, fundado cien años antes por Doña Juana Azlor de Aragón, Abadesa en Santa Clara de Viana.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0021_chap7">
-				<head>VII</head>
+				<head xml:id="ne0021_head_006">VII</head>
 				<p>Algunos oficiales jugaban al dominó en el único café de la villa, y otros paseaban en la plaza, bajo los arcos del palacio de Redín. Era la plaza grande y silenciosa, con una iglesia y un parador. De tiempo en tiempo pasaba sobre el silencio el vuelo de las campanas. Un capitán de cazadores, pesado y corpulento, con la ceniza del cigarro esparcida por la barba, salió del café muy sofocado, abrochándose el capote, y se acercó a dos oficiales que discutían:</p>
 				<p>—¿Qué hay, caballeros? ¿Se sabe si vamos a dormir mucho tiempo en este maldito pueblo?</p>
 				<p>Alzó los hombros, muy desdeñoso, el más alto de los dos oficiales, un buen mozo que lucía sobre el dormán de los húsares la venera de Santiago:</p>
@@ -638,7 +680,7 @@
 				<p>—No sea usted chaval, alférez Alaminos.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0021_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0021_head_007">VIII</head>
 				<p>El Duque de Ordax tomó asiento cerca de una ventana, y como los otros continuaban bajo los porches, tocó en los cristales y los llamó con la mano. El capitán y el alférez entraron. Alaminos tenía un gesto de reserva pueril. Viéndoles llegar, el húsar murmuró con gran sencillez:</p>
 				<p>—Fuera hace demasiado frío, caballeros.</p>
 				<p>El capitán arrastró una silla:</p>
@@ -743,7 +785,7 @@
 				<p>Comenzaban a tocar las cornetas en la plaza.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0021_chap9">
-				<head>IX</head>
+				<head xml:id="ne0021_head_008">IX</head>
 				<p>El Mariscal de Campo Don Enrique España había entrado en la antigua villa agramontesa como en un campamento de moros, desplegadas las banderas, sonantes los tambores, la soldadesca hambrienta y desmandada, soberana y soberbia. Los sargentos veteranos jaleaban a bisoños que, por cobrar fama, se mostraban audaces y rompían filas, entrándose a las casas, abrazando a las mozas, sacando afuera las herradas llenas de vino... Por castigar a la villa de su claro abolengo legitimista, el anciano general asentó sus cuarteles en un convento de monjas y mandó clavar la campana que anunciaba los rezos. Solamente días después, al terminar un agasajo de chocolate y confituras, le venció el ruego de las monjas, y con galantería de viejo gentilliombre dejó aquel alojamiento para trasladarse al palacio de Redín.</p>
 				<p>La Condesa, dama en otro tiempo muy famosa por sus ideas liberales, hacía muchos años que llevaba vida retirada entre aquellos muros, sin pisar jamás la calle. Era una anciana de gran talento y de extraordinaria energía, con una vanidad un poco rancia por su belleza pasada, por su literatura epistolar y por la gloria del general Redín. Al conocer el triunfo de las armas liberales, habíase calado los espejuelos de concha, y requerido la pluma para ofrecer su palacio al vencedor de las partidas carlistas reunidas en Otaín. En la carta, muy larga y de letra ya temblona, hacía recuerdo de su luto y de su soledad, con una melancolía que evocaba el buen tiempo de los rizos cayendo sobre las mejillas y de las camelias en los corpiños. Consagraba un suspiro a los días felices, aquellos cuando aún la muerte no había segado la hermosa vida de su inolvidable esposo el Capitán General de los Ejércitos Don Francisco de Redín y Espoz, Conde de Redín y Marqués de los Arapiles. ¡El héroe nacional en la gran epopeya de la guerra contra Bonaparte!</p>
 				<p>Al cabo de los años se abrieron nuevamente los grandes balcones del palacio, y el sol, iluminando rayolas de polvo, entró en las estancias, y vio pasar la sombra de la anciana señora y el claro vestido de su nieta. En el patio, todas las mañanas cantaba un clarín, y a lo largo de los corredores se acompasaba el son de las espuelas con el son de los sables. La Condesa sentíase revivir. Con una sonrisa de abuela se asomaba a las ventanas para ver entrar a los ayudantes del general cuando volvían de correr el campo, en alegre tropel, a la caída de la tarde. Y nunca ponderó su bizarría sin tener que enjugarse los ojos. En el patio, las herraduras de los caballos resonaban con noble estrépito, y aquellas piedras viejas se animaban con el golpe de uniformes y el aleteo de las banderas.</p>
@@ -753,7 +795,7 @@
 				<p>—¡Qué loco! ¡Qué loco!... ¡Y se ha casado!...</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0021_chap10">
-				<head>X</head>
+				<head xml:id="ne0021_head_009">X</head>
 				<p>Las cornetas alzaban su coro entre un son de campanas que tocaban a misa. Reunidos en el atrio de la iglesia, esperando la llamada del esquilón, atendían a la formación de la tropa algunos viejos señores, prez de la antigua villa agramontesa. Paseaban embozados en sus graves capas, y de tiempo en tiempo se detenían para hacer algún comentario. Don Teodosio de Goñi dejó oír su risa clueca:</p>
 				<p>—Desde el campanario de la iglesia, un buen tiro, y cazaba al petimetre de la cruz encarnada, que sale ahora del palacio. ¡Si pudiera, aún entraba en mi casa por la escopeta!</p>
 				<p>Afirmó Don Iñigo de la Peña:</p>
@@ -831,7 +873,7 @@
 				<p>—El Cura está de acuerdo con los guiris. ¡Pero no han contado con Miquelo Egoscué, ni con Don Pedro Mendía, ni con el Manco, ni con el Sangrador!...</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0021_chap11">
-				<head>XI</head>
+				<head xml:id="ne0021_head_010">XI</head>
 				<p>Miquelo Egoscué capitaneaba una tropa de cien boinas rojas, gente valerosa y sufrida. Aquellos mutiles parecían hermanos, hijos de algún viejo patriarca que todavía repartiese justicia bajo el roble de Astigar. Miquelo Egoscué se juntó con ellos en la cueva del monte, donde tenían su cuartel: Hizo matar las siete cabras que llevaba el pastor, y mientras se asaban para el banquete, en la gran hoguera de urces, enteró a sus mutiles de la carta del Cura.</p>
 				<p>—Yo voy allá con los que quieran seguirme.</p>
 				<p>El segundo de la partida respondió por todos:</p>
@@ -921,7 +963,7 @@
 				<p>La luna caía sobre la nieve y entraba en la cueva el resplandor. El capitán dio orden de partir. Se alinearon fuera, bajo el azul nocturno, y las almas tenían el temblor misterioso y luminoso de las estrellas. En la bajada del monte, entre la masa fosca de un pinar, tiembla también una luz. Allí es la venta del camino de Francia.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0021_chap12">
-				<head>XII</head>
+				<head xml:id="ne0021_head_011">XII</head>
 				<p>Cara de Plata y el contrabandista se calentaban en la cocina de la venta, esperando la hora de media noche para ponerse al camino, bajo la fe del ventero. La monja y la muchacha habían subido al piso alto, donde, tras largo rezo, descabezaban un sueño, juntas las dos en una cama de siete colchones. Se oyó en el camino el paso de un caballo. Luego llamaron a la puerta. El ventero salió soñoliento del pajar, quitó una albarda vieja que servía para cegar  un ventano, y asomando preguntó quién era el caminante. Pero le reconoció al mismo tiempo, y sin respuesta, fue a quitar los tranqueros. Entró el pastor tirando del caballo:</p>
 				<p>—¡Ave María Purísima!</p>
 				<p>Atravesó la cocina con el caballo del diestro, y se ocultó por la puerta de los establos. El ventero le seguía con el candil de aceite que descolgara del velador. Quedó la cocina alumbrada por la llama del hogar. Cara de Plata y el contrabandista se hablaron en voz baja:</p>
@@ -1005,7 +1047,7 @@
 				<p>Y subió al piso alto para despertar a Eladia. La pobre niña sorda seguía durmiendo a pesar del tumulto que alzaban aquellas cien boinas rojas.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0021_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0021_head_012">XIII</head>
 				<p>Se oyó la voz de la abuela y el canto de los gallos. Una moza soñolienta descorrió la cortina de estameña verde, que resguardaba el camastro donde la vieja descansaba con el gato a los pies. La Mai Cruz se incorporó en el cabezal, dando un suspiro:</p>
 				<p>—¡Ay, mis huesos, viejines!</p>
 				<p>Llamó a un soldado, sacando de entre las cobijas una mano consunta. El soldado se llegó al camastro, y la vieja, con un dedo, le apuntó  hacia el horno. No entendió el mozo lo que quería decir, y le gritó:</p>
@@ -1061,7 +1103,7 @@
 				<p>Y moviendo muy deprisa los dedos, le alabó los ojos, comparándolos con los luceros. Eladia, poniéndose encendida y riendo, se lo contó a la Madre Isabel. Entraron en la casa, y las hijas del cirujano, siete señoritas lugareñas, se agolparon a la escalera para recibirlas.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0021_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0021_head_013">XIV</head>
 				<p>Aquella misma tarde, un aldeano trajo noticia de que estaba cerca la caballería republicana, y en seguida se reunieron en la plaza los voluntarios y algunos viejos de la villa, mal armados con escopetas antiguas. Una viuda que vivía al pie de la iglesia, y un niño, hijo suyo, tocaban a rebato las campanas. Se interrumpieron los bailes, desapareció la tranquilidad que reinaba, y todos se dispusieron para volver al monte. No era posible arriesgar un combate con la caballería republicana, pero tampoco querían huir al solo anuncio de que estaba cerca, sin esperarla en los riscos del camino real y derribar algún jinete. El aldeano que había traído la noticia, limpiándose el sudor, se bebía un tanque de sidra a la puerta de la casa rectoral:</p>
 				<p>—¡Chaquetes colorados! ¡Por cima de los trescientos, y...!</p>
 				<p>Miquelo Egoscué decidió esperar hasta saber los movimientos de aquella tropa, que aún estaba a tres leguas de camino. En una sala grande, donde había una mesa de alas y un Cristo sobre la pared encalada, el cabecilla explicábale a Cara de Plata:</p>
@@ -1108,7 +1150,7 @@
 				<p>—¡Aprende tú, la senda de esos pies descalzos!</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0021_chap15">
-				<head>XV</head>
+				<head xml:id="ne0021_head_014">XV</head>
 				<p>La Josepa durmió en una cueva, cerca de San Pedro de Olaz. Rayando el día, se dirigió al molino donde se alojaban algunos soldados, y andando entre ellos comenzó a pedir limosna. A lo lejos sonaba un clarín. Los soldados se apresuraban almohazando los caballos: Algunos, embozados en las mantas, bajaban al río, y sus cantos tenían una claridad juvenil en la mañana fría y lluviosa. Eran cantos regionales donde se sentía el alma primitiva del pueblo  pastoril y guerrera. La Josepa entró al molino, y descubriendo la cara pálida del niño, que dormía en sus brazos, comenzó una letanía para que la consintiesen secarse al fuego. Un soldado, compadecido, le dejó algunas rebañaduras de su rancho. La Josepa comenzó otra letanía de gracias:</p>
 				<p>—¡Dios te lo pague, hijo de buena mai! ¡Dios te lo pague, ligero! ¿Llevas mucho tiempo en la tropa? ¡Así te camines a tu casa en el mismo día de hoy, con el cañutero de la licencia! ¡San Cernín Glorioso, si aparenta que no has de tener los quince años entodavía! ¿Ya habrás pasado lo tuyo? ¡Penas y trabajos! ¡Penas y trabajos!... ¿Cómo es el nombre de tu escuadrón, mocé?</p>
 				<p>El soldado sonrió con orgullo:</p>
@@ -1190,7 +1232,7 @@
 				<p>—¡Tendríais alma de matarlo!.. ¡Pues tendríais alma!</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0021_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0021_head_015">XVI</head>
 				<p>—Hay que hacer las cosas conforme lo manda Dios.</p>
 				<p>Diego Mail, el sargento de los forales, decía tales palabras a modo de sentencia, al entender que los mozos de la escuadra se iban concertando en voz baja, para poner sus balas en la cabeza de Roquito. El corneta guiñó un ojo, indicando a la Josepa:</p>
 				<p>—Si la señora da en seguirnos... ¡Y al fin, ello tendrá que ser!...</p>
@@ -1245,7 +1287,7 @@
 				<p>Se despidió con una mirada larga y nublada, que tenía esa tristeza que tienen en los ojos los mastines viejos. Por la tarde, entregó al preso en la cárcel de Olaz. Josepa la de Arguiña durmió en el quicio de la puerta.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0021_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0021_head_016">XVII</head>
 				<p>Dos dias permanecieron en la villa y sus contornos los mutiles de Miquelo Egoscué. Al alba del tercero, todavía con estrellas, se pusieron al camino. El carro iba en la retaguardia con una escolta de tres soldados aspeados. Cerca de San Martín de Goy se juntaron con una partida de siete hombres, que venían atajando por un campo encharcado, lívido bajo las luces del amanecer. Todos se conocían y desde lejos comenzaron a darse voces:</p>
 				<p>—¡Teneos! ¡Teneos!</p>
 				<p>—¿Qué ocurre?</p>
@@ -1323,7 +1365,7 @@
 				<p>Se apeó del caballo, y tirando de las riendas, se juntó con el segundón. Marchando a la par, se emboscaron monte arriba. Poco después, por todo aquel camino entre montañas, sólo se oía un cascabeleo de colleras.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0021_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0021_head_017">XVIII</head>
 				<p>El sol se levantaba sobre los montes. Había un prado que parecía de esmeralda y un bosque negro, con las ramas sin hojas, inmóviles, destacándose sobre el oro de la luz, como dibujadas con tinta china. El carro rodaba por la carretera, lento y bamboleante. Sólo conducía a las mujeres, pues el soldado enfermo también se había quedado con la partida. Eladia mecía al niño, la monja miraba al camino y el contrabandista, sentado entre las varas, con el vaivén, se adormilaba. La Madre Isabel, de tiempo en tiempo, separaba los ojos del camino y se recogía en sí misma. Hojeaba su libro de oraciones, leía algunas palabras y miraba una estampa de la Virgen y el Niño. Era copia de un cuadro italiano, y tenia para la monja el encanto inocente de sus viejos rosales conventuales. La monja sentía venir de aquella estampa el aroma campesino del Evangelio. Lo sentía en la manzana que el Niño alzaba como en juego y en el copo de lino que hilaba la Virgen María.</p>
 				<p>Otras veces, la Madre Isabel miraba los campos tendidos bajo el oro de la luz, y suspiraba pensando en la guerra. Recordaba el ardimiento de aquellos aldeanos que acechaban el paso de las tropas republicanas. Era un pueblo de cruzados que luchaba por la fe. Y, sin embargo, cuando iban a morir y a dar la muerte, no entraban en sí mismos, no sentían el alma toda en temblor ante el misterio de la eterna justicia. ¿Era así la guerra? ¡Un olvido de la vida y del fin! ¡Un resplandor que calcina todos los pensamientos! ¡Un resoplar y un golpear de fragua que enrojece las almas y las bate como el hierro! De aquellos aldeanos ocultos en los breñales, y prontos a caer sobre el camino, nadie podría decir cuáles eran los que llevaban consigo la muerte. Estaba ya con ellos y ninguno la sentía.</p>
 				<p>La Madre Isabel recogíase en sí misma, y con los ojos en su libro de oraciones, dejaba caer las lágrimas sobre las hojas, conmovida por el candor milagroso de la estampa donde la Virgen hila su copo y el Niño sostiene la manzana. Lloraba contrita. Aquélla debía ser la pauta del mundo: Una sucesión de vidas en la gracia de una paz familiar: Y la ley para todos los hombres, aquel libro campesino y divino donde estaban las parábolas de Jesús. Pero este sentimiento se quemaba como un perfume en la llama de otro sentimiento, cuando la monja alzaba los ojos con rocío de lágrimas, y los hundía en la bruma matinal. Muy a lo lejos brillaban los fusiles de la tropa republicana: Flameaban las banderas y se veía descollar a los jinetes dominando las filas de roses. La monja temblaba con el anhelo de la victoria, era un temblor apasionado y fuerte. Comprendía entonces el fin de la guerra, y que la sangre, sobre aquellos campos, era también signo de redención.</p>
@@ -1386,7 +1428,7 @@
 				<p>Y marchó sola por la carretera embarrada.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0021_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0021_head_018">XIX</head>
 				<p>Aquella retaguardia de enfermos y bisoños, perdido el contacto con las compañías de vanguardia, desfilaba entre dos lomas que parecían los pechos de una giganta. Más lejos se perfilaba un puente de madera que tenía el pretil blanco de nieve, y a uno y otro lado enriscados montes, con las quebradas cubiertas de pinar. Y entre el pinar y el río, al flanco izquierda, una siembra encharcada. Gil García espoleó su asno al mismo tiempo que le gritaba a un capitan muy joven, ocupado en liar el cigarro, con las riendas abandonadas sobre el cuello de su montura:</p>
 				<p>—¡Buen sitio para asar carne!</p>
 				<p>—No es malo.</p>
@@ -1419,7 +1461,7 @@
 				<p>El bagajero se levantó rechazando con fiereza a un soldado que, al retroceder de espaldas, iba a poner sobre el rostro del niño muerto su zapato lleno de clavos. El soldado volviose con ojos de espanto, y siguió corriendo, sin darle ya cara al enemigo. A mitad de la carrera soltó el fusil, un poco más lejos tropezó y cayó. Retrocedían otros soldados pisoteando la yerba ensangrentada, y el bagajero, cargando a la espalda el cuerpo del hijo, entrose por la siembra. De pronto se vio envuelto, empujado, sacudido: No podía andar, no podía moverse. Una corneta cambió el toque. Los cazadores, rehechos lejos del fuego carlista, atacaban para tomar el puente. El bagajero tuvo que abandonar el cuerpo de su hijo bajo los pies de los soldados. Las boinas rojas aparecían sobre los riscos. Al ver el empuje de los cazadores, hacían fuego a pecho descubierto y se enardecían con alegres voces, como en la siega y en el zorzico:</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0021_chap20">
-				<head>XX</head>
+				<head xml:id="ne0021_head_019">XX</head>
 				<p>Asomaron dos voluntarios en lo alto de una barranca donde se apoyaba la retaguardia carlista. Habían trepado corriendo y daban voces. Se les veía en silueta sobre el pálido azul, agitar los brazos y blandir los fusiles. Luego, más lejos y más alto, surge un voluntario solo, que da las mismas voces, y luego otro que baja saltando de risco en risco. Eran las parejas destacadas sobre el camino para vigilar y noticiar los movimientos de la vanguardia republicana. Las voces no se entendían en la distancia, pero al cabecilla le bastó ver el afán desesperado con que alzaban los brazos aquellas figuras ágiles, amenguadas en la lejanía azul. Sin duda, los republicanos, advertidos por el tiroteo, volvían para proteger la retaguardia. Miquelo Egoscué vio de pronto a su lado al molinero de Arguiña:</p>
 				<p>—Ordena la retirada, Miquelo.</p>
 				<p>—¿Se hizo cuanto se podía?</p>
@@ -1457,7 +1499,7 @@
 				<p>Parecía que le echaba encima los ojos, nublados y profundos.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0021_chap21">
-				<head>XXI</head>
+				<head xml:id="ne0021_head_020">XXI</head>
 				<p>Sonaban las cornetas. Era una alegría luminosa y cruel, como la del sol en el aire de la mañana. ¡Aquel aire ermitaño y de milagro, con aroma de yerbas frescas, profanado por el humo de la pólvora! Había cesado el fuego, y sólo muy de tarde en tarde pasaba silbando una bala perdida, y rodaba el eco de un tiro por las quebradas sonoras del monte. Ninguna boina roja asomaba entre jaras y picachos, ningún grito... Veíase a lo lejos las líneas de cazadores desplegarse para envolver a los carlistas: Las tropas de retaguardia y de vanguardia convergían en un movimiento y escalaban el monte por los flancos. Dos compañías formaban en la carretera, y permanecían inmóviles en orden de batalla. Cambió de pronto el toque de las cornetas y el movimiento de las líneas: Hecho el alarde de perseguir a los carlistas, venía la orden de replegarse. Continuaron las compañías del frente formadas en la carretera. Un ayudante joven y con lentes tomaba notas arrimado al pretil del puente. Más lejos repartía su tabaco con algunos soldados, el veterano capitán García. Estaba sentado sobre un montón de piedras, con la levita desabrochada y un pie descalzo a causa de una herida contusa. No podía andar sin grandes dolores, pero seguía mirando todas las cosas con una sonrisa radiante. Les decía a los soldados:</p>
 				<p>—Hemos vencido. ¡Bravo, muchachos!</p>
 				<p>Llegaron dos sanitarios para curarle, y los rechazó jovial:</p>
@@ -1490,7 +1532,7 @@
 				<p>Las mujeres seguían a pie, zagueras del último carro: Un carro de aldea tirado por bueyes, donde iban amontonados tres muertos, cuyas manos lívidas asomaban por las orillas de una manta vieja que cubría a los tres. Por no detenerse a cavar una hoya, los llevaban a San Pedro de Olaz. Pero antes hallaron cristiana sepultura en el cementerio de una aldea donde las tropas se detuvieron a sestear... Y allí se quedaron solas la monja y la novicia, cuando las cornetas tocaban marcha. Se quedaron solas en la paz de la aldea, rezando por los muertos a la sombra de los cipreses, donde cantaba un mirlo en la puesta solar.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0021_chap22">
-				<head>XXII</head>
+				<head xml:id="ne0021_head_021">XXII</head>
 				<p>En el cementerio estaba un viejo con dos cabras que pacían la yerba de las sepulturas. La monja y la novicia, para no equivocar el camino de la aldea, aprovecharon salir con el pastor. Era un sendero verde, todo en paz de oración, y el viejo hablaba en vascuence y reía enseñando su boca sin dientes. Era todo cristalino el paisaje, y los montes parecían de amatista. Cerca de la aldea una mujer que descansaba en la orilla del camino, se alzó y corrió al encuentro de las monjas. Era Josepa la de Arguiña:</p>
 				<p>—Pues antes las descubrí entre los negros, y maginé que las conducían presas. Por sonsacar anduve enseñando las casas, a los que acá se quedan alojados... ¡Y de Poquito, la gran valentía!... Todo les contaré... ¿Y agora, por este camino, adonde es el caminar, con mi guelo de las cabras?</p>
 				<p>Respondió la Madre Isabel:</p>
@@ -1552,7 +1594,7 @@
 				<p>Sobre las cuatro mujeres, inmóviles en medio del camino, caía la sombra del nogal, y Josepa la de Arguiña ponía en su acento, la vaguedad medrosa de la hora. El ama joven, al oír que eran monjas, quería besarles las manos. Después las hizo marchar delante, y las condujo al caserío en precesión, con aquella sonrisa sana y geórgica de las buenas caseras cuando entra por sus puertas el don de las vendimias y de las siegas. La bendición de Dios.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0021_chap23">
-				<head>XXIII</head>
+				<head xml:id="ne0021_head_022">XXIII</head>
 				<p>Las monjas durmieron en el sobrado, las dos en una cama con sábanas de hilo casero, bien espliegadas, y jergón de maíz hopado y esponjado como el pan de fiesta al salir del horno. Durmieron vestidas y con gran zozobra, oyendo abajo el ronquido de los alojados, y el andar receloso de los caseros, toda la noche alerta, rondando por los establos y a la redonda del huerto. Los alojados del caserío eran cuatro ampurdaneses que hablaban un catalán violento, de rudeza visigoda. El ama sólo les diera leña, sal y un caldero para que pudiesen hacer su rancho en un rincón del hogar. Pasaron la prima noche jugando a las cartas, y luego se tumbaron a dormir en la cocina. El amo viejo los miraba como a bárbaros. Para aquel aldeano que aún regía su casa por usanzas patriarcales, el extranjero había hablado siempre en el austero rezo de Castilla. Oía a los ampurdaneses con una sonrisa maliciosa, acariciando la tabaquera, y ponía igualdad entre la zalagarda de los canes y aquel tosco vocear agresivo y sanguíneo, que desgarraba las bocas y violentaba los gestos. No salió de la cocina hasta que los vio dormidos: Entonces fue al establo para la ordeña, y allí se le juntaron la nuera y Josepa la de Arguiña. Hablaron los tres con gran sigilo. El viejo:</p>
 				<p>—No me acostaré en toda la noche.</p>
 				<p>Ugena, la nuera:</p>
@@ -1610,7 +1652,7 @@
 				<p>Con esto entraron a la cocina, que estaba llena de humo. Ateridos de la noche, los soldados habían echado al hogar un haz de tojo dispuesto para la cocedura del Sábado. Viendo aquella gran llamarada, se dijeron con los ojos su terror.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0021_chap24">
-				<head>XXIV</head>
+				<head xml:id="ne0021_head_023">XXIV</head>
 				<p>Un momento que los ampurdaneses se divertían fuera con el juego de las chapas, la mendiga asomó la cabeza mirando bajo la campana de la chimenea:</p>
 				<p>—Ten paciencia, Roquito.</p>
 				<p>Llegó de lo alto una voz lastimera:</p>

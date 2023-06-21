@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La enferma</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Enferma</title>
-				<title type="idno">
-					<idno type="bne">XX2930010</idno></title>
+				
 				<author>
-					<idno type="bne">XX1137688</idno>
-					<idno type="viaf">51728159</idno>
-					<name type="short">Zamacois</name>
-					<name type="full">Eduardo Zamacois</name>
+					<name type="short" ref="#Zamacois"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1665</measure>
@@ -139,13 +131,38 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0008</idno>
+						<idno type="cligs">ne0008</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2015">2015</date>, <idno>48302</idno>, <ref target="http://www.gutenberg.org/ebooks/48302"/>.</bibl>
-				<bibl type="print-source">Compañía Ibero-Americana de Publicaciones, Madrid, <date when="1903">1903</date></bibl>
-				<bibl type="edition-first"><date when="1896">1896</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La enferma</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2930010.html">XX2930010</idno>
+				</idno>
+				</title>
+					<author xml:id="Zamacois">
+						<name type="full"><forename>Eduardo</forename> <surname>Zamacois</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 04365 - IQ 04366">IQ 04365 - IQ 04366</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1020929944">1020929944</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3320774/">Q3320774</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1137688.html">XX1137688</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/51728159/">51728159</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2015">2015</date>, <idno>48302</idno>, <ref target="http://www.gutenberg.org/ebooks/48302"/>.</bibl>
+					<bibl type="print-source">Compañía Ibero-Americana de Publicaciones, <pubPlace>Madrid</pubPlace>, <date when="1903">1903</date></bibl>
+					<bibl type="edition-first"><date when="1896">1896</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La enferma</title>: 	<title type="sub">novela</title> , <publisher>Co. Ibero-Americana de Publ. Renacimiento</publisher> <pubPlace>Madrid;Barcelona;Buenos Aires</pubPlace> 		<idno type="ppn" n="468188908" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468188908"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -155,6 +172,14 @@
 				<p>.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 04365" key="IQ 04365" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">6</term>
 					<term type="author.continent">Europe</term>
@@ -167,7 +192,7 @@
 					<term type="author.nonNovelGenre">theatre</term>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">low</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender" cert="low" resp="#jct">female</term>
@@ -213,12 +238,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-10-21" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>ADVERTENCIA</head>
+				<head xml:id="ne0008_head_000">ADVERTENCIA</head>
 				<p>Este libro, publicado en 1896, es mi primera novela: afortunadamente, la prensa apenas habló de ella, la edición fué corta y mi esfuerzo pasó inadvertido. Aunque ogaño la presento muy corregida, el lector sorprenderá en sus páginas candores y balbuceos de principiante, descripciones borrosas, retratos que mi mano bisoña no supo dejar rotunda y gallardamente concluídos, momentos psicológicos que el temor de parecer machacón y difuso, dejó mal alumbrados. Conste así en desagravio de la labor que luego he hecho.</p>
 				<ab> E. Z.
 				</ab>
@@ -227,7 +253,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0008_chap1">
-				<head>I</head>
+				<head xml:id="ne0008_head_001">I</head>
 				<p>Consuelito Mendoza despertó presa de un ligero acceso de fiebre: toda la noche estuvo viendo danzar ante ella varios personajes cubiertos de sangre y con heridas horribles por las cuales asomaban entrañas palpitantes. Las primeras claridades matutinas causáronla inmenso bien, al ahuyentar aquel mundo fantástico y rojo; mas la penosa impresión de la pesadilla y la falta de reposo, la dejaron rendida. Aún permaneció largo rato echada, sin atreverse a mover pie ni mano, bostezando nerviosamente, tiritando a pesar de la agradable temperatura de la habitación y sintiendo en sus oídos un raro y sostenido murmujeo. Estaba silenciosa, acurrucada en un ángulo de su gran cama matrimonial, paseando miradas indiferentes de un sitio a otro: primero sus ojos repararon en el abrigo de pieles que había dejado la víspera sobre una silla. ¡Pícara camarera, no acordarse de llevarlo a su sitio!... Aplicóse a examinarlo fijamente, por hacer algo y distraerse, batallando por buscarle semejanza con otro objeto, pero sin conseguirlo; siempre le parecía lo que era: un abrigo de pieles. Mas luego la endiablada imaginación empezó a triunfar de los sentidos, y lo que los ojos no pudieron ver lo vió el alma descomponiendo la realidad a través de los misteriosos cristales imaginativos: una arruga se la antojó un sombrero de copa antiguo, ancho de arriba y estrecho de abajo: aquello ya era algo, pero no todo: el sombrero, sí, era perfecto; mas, ¿dónde estaba la cabeza? Continuó mirando... y, nada; la realidad se obstinaba en no doblegarse al capricho.</p>
 				<p>—Pues yo he de conseguirlo—murmuró la joven esbozando un mohín picaresco.</p>
 				<p>Frunció los ojos y miró con uno de ellos a través de su mano derecha medio cerrada a guisa de telescopio: así quedóse inmóvil, embelesada, observando siempre: la autosugestión continuó y pronto la visión rebuscada surgió de golpe, con claridad indudable. Bajo el gran sombrero de copa, negro y peludo, había una cara redonda, mofletuda y riente; aquel rostro tenía un ojo hinchado y la nariz torcida; una nariz ciranesca, insolente y sensual. Consuelo se echó a reír recordando a Gelasio, el cochero de una amiga suya, cuando iba en el pescante bajo su pelerina de pieles, con el sombrero encajado hasta las orejas y los carrillos amoratados por el frío. Siguió mirando y la imagen tornó a descomponerse: el sombrero de copa se prolongaba convirtiéndose en hocico; la cara, formada por un trozo de piel blanca, parecía el terrible pechazo de un animal, las patas se bosquejaron en la sombra. Consuelo quiso reconocer al cochero y ya no pudo: Gelasio se había trocado en un oso negro, enorme, que por momentos adquiría mayores visos de objetividad. La joven lanzó un grito; la fiera no se movió; entonces ella encogióse más aún, presa de un temblor nervioso que estremecía el lecho moviendo hasta los cortinajes de muselina: al fin, sacando bríos de su propio terror y flaqueza, y con desatinados aspavientos, apoderóse de un zapatito que la víspera quedó olvidado sobre la mesilla de noche y lo arrojó violentamente contra la quimera: el fantasma del oso se deshizo y el zapatito cayó al suelo, reapareciendo el abrigo de pieles.</p>
@@ -332,7 +358,7 @@
 
 			</div>
 			<div n="2" type="chapter" xml:id="ne0008_chap2">
-				<head>II</head>
+				<head xml:id="ne0008_head_002">II</head>
 				<p>Jorge Sand dijo que "una mujer no puede amar al hombre a quien considere inferior a ella, porque el amor sin veneración y sin entusiasmo sólo es amistad". Con este idolátrico, ciego y bienhechor frenesí, quería Consuelito Mendoza a Sandoval: más fuerte que ella, dominándola por la amplitud y serenidad de su pensamiento y la entereza de su resolución. Alfonso era condescendiente, benévolo, fácil siempre a la súplica y al perdón; pero a ratos, en los asuntos de riesgo y trascendencia, sabía desenvolver su voluntad inexorable, probando cuán recta y dura eran su orientación y su temple.</p>
 				<p>A despecho de tales rozaduras, acaso por este mismo antagonismo de caracteres, ambos se amaban locamente. Consuelo reconocía ciertamente que Alfonso Sandoval era muy celoso, pues no la permitía salir sola a ninguna parte, y hasta dió a entender a sus amigos que las puertas de su casa no se abrían con gusto para ninguno de ellos, creyendo fundadamente que, si bien hay mujeres en quienes puede tenerse absoluta seguridad por lo que a ellas atañe y concierne, de los hombres, aun de los más fieles y allegados, debe siempre desconfiarse: mas aquel exceso de pasión halagaba el amor propio de la joven, y como no quería nada fuera de su hogar, no sintió el peso de tales prohibiciones. Vivía consagrada a su marido, con exclusión rotunda de todo otro afecto; y, sin procurarlo, imitó su manera de hablar, sus gestos, sus frases favoritas: le adivinaba en el modo de pisar, de toser, de subir la escalera; y a obscuras, sólo por el olor, reconocía sus ropas, aun cuando estuviesen recién lavadas, en algo simpático que sólo ella percibía. Hallándose sola, esperándole, solía suceder que su corazón, de pronto, latiese con más violencia.</p>
 				<p>—¡Ahí viene!—exclamaba corriendo a la ventana.</p>
@@ -467,7 +493,7 @@
 				<p>Al día siguiente, y sin otro contratiempo o motivo, Consuelito Mendoza amaneció tiritando otra vez bajo las garras de la calentura.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0008_chap3">
-				<head>III</head>
+				<head xml:id="ne0008_head_003">III</head>
 				<p>Gabriel Montánchez vivía en un piso tercero de la calle Hortaleza, sin otra familia que una vieja sirvienta y un hermoso perrazo negro que agonizaba de viejo y de gordo.</p>
 				<p>La primera juventud de Montánchez fué borrascosa. Cuando cursaba el cuarto año de Medicina se enamoró de una modista vecina suya, y fué correspondido; su familia, sabiendo que el joven pagaba largamente las mercedes de la muchacha y que la pasión amorosa le quitaba la del estudio, intentó romper el idilio. La escena entre el padre y el hijo fué violentísima y se separaron sin avenirse.</p>
 				<p>Al día siguiente Gabriel corrió al Monte de Piedad a empeñar su reloj, sus sortijas y cuantas alhajas tenía, malbarató sus libros y algunos trajes, pidió dinero a varios amigos de posición holgada, aguzó el ingenio hasta conseguir que un prestamista conocido le facilitase dos mil reales, y con más de cuatrocientos duros en la bolsa, y en compañía de la moza que le había vuelto el juicio, emigró a París: fué un viaje relámpago, salpicado de peripecias interesantes, de escenas imprevistas.</p>
@@ -633,7 +659,7 @@
 
 			</div>
 			<div n="4" type="chapter" xml:id="ne0008_chap4">
-				<head>IV</head>
+				<head xml:id="ne0008_head_004">IV</head>
 				<p>Eran Sandoval y Gabriel Montánchez. La joven murmuró:</p>
 				<p>—Os había presentido.</p>
 				<p>—¿Estabas soñando?—preguntó Alfonso.</p>
@@ -907,7 +933,7 @@
 
 			</div>
 			<div n="5" type="chapter" xml:id="ne0008_chap5">
-				<head>V</head>
+				<head xml:id="ne0008_head_005">V</head>
 				<p>Las experiencias que siguieron a esta primera sugestión se realizaron fácilmente.</p>
 				<p>Todas las tardes iba Gabriel Montánchez a casa de Alfonso, y era tan grande la presión que ejercía sobre el ánimo de la joven, que no necesitaba recurrir al procedimiento de la bolita metálica, ni a ninguno de los medios que provocan la hipnotización por fatiga: le bastaba mirarla repentinamente a los ojos para ponerla en estado cataléptico.</p>
 				<p>Una vez dormida, Gabriel imponía su voluntad de un modo absoluto, con sólo tocar a la enferma, obedeciendo ésta los mandatos del médico con la pasividad de una máquina.</p>
@@ -1131,7 +1157,7 @@
 				<p>—¡Pues, aunque no quiera!—exclamó Montánchez con arrebato—, en uno de esos ataques puede sobrevenir la ruptura de la aorta y morirse... Ya ves, estamos jugándonos su vida, que es preciosa, y debemos disputársela a la muerte con energía y por cuantos medios sean oportunos; yo estoy resuelto a todo; ahora, quien tiene que decidirse eres tú...</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0008_chap6">
-				<head>VI</head>
+				<head xml:id="ne0008_head_006">VI</head>
 				<p>Gabriel Montánchez acompañó a su amigo hasta el recibimiento y luego volvió a su laboratorio a continuar un experimento que la inesperada visita de Sandoval había interrumpido.</p>
 				<p>Montánchez vestía su ropa de trabajo: una dulleta con el cuello y las bocamangas de piel, y un gorro colorado adornado por una larga borla de seda negra.</p>
 				<p>Las hojas de madera de los balcones estaban cerradas, según costumbre, y las cortinas corridas; sobre la mesa de escribir lucía un gran quinqué con depósito de cristal y pantalla verde, que sólo iluminaba la parte inferior de la habitación, dejando la mitad superior de los armarios, el cuadro de Cleopatra y las sangrientas figuras de los atlas anatómicos, envueltos en sombras.</p>
@@ -1261,7 +1287,7 @@
 
 			</div>
 			<div n="7" type="chapter" xml:id="ne0008_chap7">
-				<head>VII</head>
+				<head xml:id="ne0008_head_007">VII</head>
 				<p>Las amistosas relaciones entre Gabriel Montánchez y Sandoval parecían haberse enfriado un poco: sólo de tarde en tarde se veían, y cuando Alfonso reprochaba a su amigo su tibieza, el médico se disculpaba alegando sus muchas ocupaciones.</p>
 				<p>Consuelo Mendoza celebró aquel retraimiento, pero a pesar de tan tranquilizadoras apariencias siempre recordaba con miedo la tarde en que Montánchez estuvo hablándola de amistad, quejándose de sus soledades y explicando su necesidad de ser querido por alguien; y sus palabras, sus gestos, el fuego que puso en su conversación y la extraña expresión de su mirada. En su lenguaje apasionado, la joven adivinó un amor criminal; y aunque Montánchez, o por prudencia o por miedo, no se declaró más francamente y todo ello parecía olvidado, Consuelo recelaba las consecuencias de esas tempestades que se forman poco a poco y sin ruido, y en un momento dado estallan con violencia aterradora.</p>
 				<p>Consuelo sentía cernirse sobre su cabeza aquel ciclón "pasional"; empezó por un puntito negro apenas perceptible y ya ocupaba el horizonte. Como a sus cándidos ojos de niña crédula Gabriel Montánchez se había ofrecido como un genio superior relacionado y hasta emparantado con los espíritus maléficos más poderosos del otro mundo, temía que el endiablado médico pusiera en juego para rendirla algún procedimiento sobrenatural, algún filtro o conjuro, alguna hierba milagrosa de ésas que, según afirman las viejas zurcidoras de voluntades, poseen la virtud de volver los corazones hacia determinados afectos. Y esto era precisamente lo que más miedo y repugnancia le causaba: la idea de que Montánchez poseyese el secreto de hacerse querer de ella, hasta estrecharla entre sus brazos alguna vez...</p>
@@ -1503,7 +1529,7 @@
 				<p>El quinqué, falto de petróleo, se apagó y Alfonso quedó a obscuras, el ceño fruncido, persiguiendo entre las sombras el semblante de aquel hombre que desde hacía algunas horas procuraba inútilmente reconocer: parecía Harpócrates velando la cuna de un niño. Pero el fresquecillo de la mañana y el cansancio de aquella terrible noche rindieron su voluntad, y acabó quedándose adormilado, la frente apoyada sobre el lecho.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0008_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0008_head_008">VIII</head>
 				<p>Estos violentos ataques de histerismo determinaron nuevos desarreglos en la salud de Consuelo. La desdichada, presa de fuerte calentura, pasaba las noches y casi todas las horas del día delirando o sumida en un sopor del que despertaba temblando de miedo.</p>
 				<p>En los tres días consecutivos al primer ataque, el mal adquirió ventajas decisivas; los desvanecimientos eran tan prolongados, los delirios tan intensos, había tal confusión en las ideas de la paciente y tal expresión de insensibilidad en su mirada, que Alfonso llegó a temer que Consuelo perdiese la razón.</p>
 				<p>Alarmado por este pensamiento, encargó a las criadas el cuidado de la joven y corrió a casa de Montánchez.</p>

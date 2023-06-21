@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los pies y los zapatos de Enriqueta</title>
-				<title type="sub"></title>
+				
 				<title type="short">Zapatos</title>
-				<title type="idno"><idno type="viaf">185858025</idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">419</measure>
@@ -138,16 +131,46 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0050</idno>
+						<idno type="cligs">ne0050</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/los-pies-y-los-zapatos-de-enriqueta/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1934">1934</date></bibl>
-				<bibl type="edition-first"><date when="1912">1912</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los pies y los zapatos de Enriqueta</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/185858025/">185858025</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/los-pies-y-los-zapatos-de-enriqueta/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1934">1934</date></bibl>
+					<bibl type="edition-first"><date when="1912">1912</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del Cercado. La palma rota. Los pies y los zapatos de Enriqueta</title> <date when="1952">1952</date>, <publisher>Editorial Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="579750051" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=579750051"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Novelas cortas</title>: 	<title type="sub">Nómada, La palma rota, El hijo santo, Los pies y los zapatos de enriqueta</title> <date when="1986">1986</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="03865833X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=03865833X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Los pies y los zapatos de Enriqueta</title> <date when="1995">1995</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="561632944" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=561632944"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta ; Corpus y ntos ; El abuelo del rey ; Dentro del cercado ; Figuras en la Pasión del señor ; El humo dormido</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="528944231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=528944231"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+						<bibl type="further-edition"><title type="main">Los pies y los zapatos de Enriqueta</title> <date when="2007">2007</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1348488182" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1348488182"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta. Corpus y otros cuentos. El abuelo del rey. Dentro del cercado. Figuras de la pasión del Señor. El humo dormido</title> <date when="2007">2007</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362189" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362189"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -155,6 +178,14 @@
 				<p>La acción se desarrolla en el publecito alicantino de Boraida, que vive bajo el cacicato de la Señora. Este persoanje sirve de lazo de unión entre las diversas historias que se cuentan. Dos de ellas tienen un protagonista individual: la de la abula Mari-Rosario, que por desavenencias con su nuera acaba en el más triste de los abandonos; y el fracaso sentimental de Enriqueta, que ingresa en un convento. Otros episodios atañen a la vida colectiva del pueblo: la sequía con la procesión de rogativa a San Rafael, que termina con la "milagrosa" llegada del zahorí BAutista; y la presencia de unos húngaros que son considerados como intrusos porque su libertad contrasta con la mezquina vida lugareña.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -182,8 +213,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -214,6 +245,7 @@
 		<revisionDesc>
 			<change when="2015-04-01" who="#jct">Initial TEI version.</change>
 			<change when="2015-11-06" who="#jct">New metedata after reading the text as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -224,7 +256,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0050_chap1">
-				<head>- I - La abuela</head>
+				<head xml:id="ne0050_head_000">- I - La abuela</head>
 				<p>Cuando Mari-Rosario salió al portal, temblole gozosamente el corazón viendo dos rapaces que llegaban.</p>
 				<p>Eran sus dos nietos, Martinico y Sarieta de su hijo Martín.</p>
 				<p>Un año había estado sin verles; ahora en Pascuas se cumplía. Jurole la nuera, la noche de la última pendencia, que ni las criaturas habían de venir.</p>
@@ -261,7 +293,7 @@
 				<p>En el pinar, alborotaban los grajos.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0050_chap2">
-				<head>- II - Los húngaros</head>
+				<head xml:id="ne0050_head_001">- II - Los húngaros</head>
 				<p>Eran los húngaros de una tribu de maravillosos lañadores y caldereros, llegada al lugar en víspera de fiestas. Todos traían ropas muy vistosas, con enormes botones de plata afiligranada, chambergos velludos de ancha falda, cabelleras negras y untuosas de nazareno, calzado alto y recio hasta el hinojo, donde desbordaba el plegoso pantalón. Las mujeres llevaban sartales de onzas y dijecicos de vidrio y coral, y sayas, almillas y jubones de muchos y vivos colores. Parecían vestidos para salir a la comedia, según dijeron los lugareños, hombres sosegados que usaban alpargata y lienzo enjuto y obscuro.</p>
 				<p>Colgaron los húngaros sus tiendas en las tapias de los últimos corrales del pueblo. Cocían la comida en anafes con garabato monstruoso; se acostaban en colchones de crin; bañaban a sus hijos chiquitos en barreños y después los ungían de grasa que se acortezaba al sol; tenían fragua y martillos ciclópeos; cantaban con alaridos, y por las noches, delante de los tendales, ardían las hogueras, y sobre su fondo de llamas o de brasas se veía pasar, lentos y siniestros, dos perros cruzados de lobos.</p>
 				<p>Los labriegos, los cabreros, los leñadores que retornaban de la faena; los caballeros hacendados que volvían de sus heredades, los artesanos, las mujeres, las señoras, el juez, el notario, el párroco, todos se paraban a ver estos nómadas, que sonreían con dulce insolencia el pasmo y contemplación de aquellas buenas gentes.</p>
@@ -271,7 +303,7 @@
 				<p>Bien lo pasaban estas andariegas criaturas, pero no tenían hogar, ni Dios ni ley, según advirtieron las gentes principales, y más que todos lo comentó la Señora, con mucho desdén y lástima.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0050_chap3">
-				<head>- III - La Señora</head>
+				<head xml:id="ne0050_head_002">- III - La Señora</head>
 				<p>Esta Señora no nace falta nombrarla. Al menos en Boraida, sin mentar su nombre, se la conocía sólo diciendo eso: la Señora.</p>
 				<p>Tenía muy grata presencia, y aunque de talla menuda denotaba autoridad por la amplitud de su frente, el entono de su paso, y la sabiduría que brillaba en su mirada. Debajo de aquellos ojos tan grandes, negros, austeros, casi solemnes, resultaba infantil su naricita levantada y su boca, todavía fresca, con un levísimo vello de almendruco y un lunar de color de café en la comisura izquierda, inclinado hacia la barbita gordezuela.</p>
 				<p>Vestía siempre de rico paño de merino; y en sus manos brillaba pálidamente el anillo nupcial, muy fino, adelgazado por la lima del tiempo.</p>
@@ -368,7 +400,7 @@
 				<p>-¿De verdad?</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0050_chap4">
-				<head>- IV - Enriqueta y don Jaime</head>
+				<head xml:id="ne0050_head_003">- IV - Enriqueta y don Jaime</head>
 				<p>Cuando don Acacio aparecía en el umbral del párroco, brincaba el podenco pidiendo que lo desatasen, trinaba locamente el canario, y hasta en el hortalillo alborotaban cacareando las gallinas como si todas hubiesen acabado de depositar su huevo en las calientes granzas.</p>
 				<p>-Si fuera usted más devoto -decía mosén Antonio muy risueño-, de buena fe creeríamos que era usted portador de la gracia divina.</p>
 				<p>Don Acacio gritaba mil zumbas, mientras Enriqueta, la bella sobrina del párroco, le buscaba el más holgado sillón de anea, le hispía una almohada para respaldo, y en seguida soltaba el perro que, después de olfatear las faltriqueras de su amigo, quedábase muy quito, dejándole el hocico sobre los hinojos para que las manos del caballero le rascasen desde las rojas fauces hasta las dobladas orejas.</p>
@@ -395,7 +427,7 @@
 				<p>-Me envía mi madre para rogarle que la acompañe hoy, en vez del sábado, a las visitas de misericordia.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0050_chap5">
-				<head>- V - <seg rend="italic">Consolatrix aflictorum</seg></head>
+				<head xml:id="ne0050_head_004">- V - <seg rend="italic">Consolatrix aflictorum</seg></head>
 				<p>Recibían estas visitas de misericordia los enfermos menesterosos, los afligidos por duelos y calamidades, los faltos de consejo, las familias mal avenidas. Inflamada de piedad llegó la Señora a entrarse por los aduares de los húngaros repartiendo estampitas del Niño Jesús entre la rapacería de los nómadas. Y sabedora la tribu de la alta condición de la dama, acogiola con mucho respeto y alborozo, ofreciéndole baratijas de su país y una pasmosa cacerolita hecha de una moneda de diez céntimos.</p>
 				<p>Después que la Señora les pronunció una dulcísima plática, encomiando los bienes y consuelos de nuestra Fe, dos húngaros bailaron una peregrina zarabanda con algunos lances y movimientos atrevidos que escandalizaron a la honestísima dama.</p>
 				<p>Casi nunca la acompañaba su hija en estos caritativos ejercicios.</p>
@@ -450,7 +482,7 @@
 				<p>Ella sintiose muy pequeñita. No podía respirar de la congoja. ¿Por qué la acariciaban, por qué le hablaban? Buscó el refugio de su huerto. ¡Y también olía a árboles, a fruta, a dicha de mujer!</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0050_chap6">
-				<head>- VI - La sacristía</head>
+				<head xml:id="ne0050_head_005">- VI - La sacristía</head>
 				<p>No es posible que haya sacristía más alegre, clara y limpia que la de la parroquia de Boraida. Y era muy humilde; el suelo, de mellados manises de fondo blanco y una gentil cenefa de follaje y frutos desbordando de cuernos de abundancia torcidos, tejiendo guirnalda; en el vano de la verja del huerto y la puertecita de la calle del Gínjol estaba el armario-archivo parroquial, decrépito y roído de carcomas que mordían tan sonoramente que sobresaltaban a la gentil sobrina del capellán. Al otro lado había un escritorio, y sumido en un ángulo, reventaba de gordo y de buena vejez un aguamanil, con su fazaleja de rodillo donde podían enjugarse los dedos los ángeles más allegados al Señor. Pues el ropero, hondo, panzudo, tumbado como un arcaz, de maderas prietas, estaba tan bruñido que se veía dentro el reloj de pesas, angosto y moreno, de pie siempre junto a la entrada del presbiterio.</p>
 				<p>Entre dos sillones fraileros resaltaba un reclinatorio; y presidiendo el muro del guardarropa había un Cristo dulcemente nublado por una gasa de color de rosa.</p>
 				<p>No se veían candeleros babosos, ni los ciriales y la cruz de manga que suelen hallarse arrinconados, ni imágenes ruinosas y mutiladas, que son telar de las viejas arañas levíticas, ni ese armazón de arandelas de la cifra de la Virgen, que en todo el mes de mayo resplandece cuajada de candelas como una primorosa constelación; no había a espaldas de las ventanas y puertas, sotanillas de los chicos misarios, peanas de custodia, atributos caídos de los santos, que todo lo tenía Enriqueta guardado en el cuarto que, sin malicia, llamaba de los chismes.</p>
@@ -497,7 +529,7 @@
 				<p>Y la tomó de la cintura, y abrazada se la llevó por el huerto a la madre, ofreciendo volver en seguida, que don Jaime ya se impacientaba.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0050_chap7">
-				<head>- VII - La sequía y la rubia</head>
+				<head xml:id="ne0050_head_006">- VII - La sequía y la rubia</head>
 				<p>Acompañada la Señora de los suyos, del párroco y don Acacio, paseaba por su hacienda de Boraida viendo los daños de la sequía.</p>
 				<p>Cincuenta almendros de los más ubérrimos yacían tendidos en las almantas, recién arrancados, mostrando la raigambre muerta. Quedaron eriales algunas hazas de pan llevar; y mucha huerta agostada, convertida en duro secano.</p>
 				<p>Sin embargo, de toda la comarca, era esta finca la menos castigada. Todavía le quedaba un manantial delgadito que regaba una tabla de panizo y el plantío de guisantes que tanto gustaban de mirar don Acacio y mosén Antonio desde el alcor del Calvario.</p>
@@ -520,7 +552,7 @@
 				<p>-¡Cuántas gracias! Mi hijo ya lo tengo a salvo de todo peligro, muy bien casado en Laderos; y la sobrina de usted en el noviciado, sin presenciar estas corrupciones.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0050_chap8">
-				<head>- VIII - El rincón y el milagro</head>
+				<head xml:id="ne0050_head_007">- VIII - El rincón y el milagro</head>
 				<p>Despacio, rendidas, sudadas, caminaban las mulas. El viejo tendal de carrizos y lona combado sobre los adrales se estremecía cuando las ruedas se hundían recrujiendo en los surcos de piedra viva. Bajo el vientre del carro, atado y jadeante, iba un perro barcino, desrabado y huesudo, que ladraba enfurecidamente a los caminantes; la llama de su lengua se nublaba entre el humo de polvo de la carretera.</p>
 				<p>A la sombra del toldo, encima de sacas y odres, fumaban tendidos el cosario, gordo y risueño, y otro hombre enjuto y largo, de ojos socarrones.</p>
 				<p>-Yo me creo -decía el carretero- que habéis de ser demonios los que averiguáis el camino del agua por lo hondo de la tierra. Pero a Boraida de balde es el ir, que no hay agua ni para una sed.</p>
@@ -577,7 +609,7 @@
 				<p>-¿No os lo prometí? ¡Bendigamos a San Rafael, y hacedme el favor de cargar con las andas y vamos a volverlo a su puesto!</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0050_chap9">
-				<head>- IX - Los zapatos de la monja</head>
+				<head xml:id="ne0050_head_008">- IX - Los zapatos de la monja</head>
 				<p>Desde el calvario de Boraida se columbraba la torre de la Colegiata de Laderos, y un grupo gentilísimo de palmeras muy altas, viejos y maravillosos candelabros en cuyas copas ardía el cansado sol de la tarde; y en las noches de feria de octubre veíase el claror de las luminarias como un trozo de la vía láctea acostado y dormido sobre la plaza de viejos soportales, plaza histórica, orgullo de los laderenses, donde hay un casón que fue posada de Isabel II y del general Martínez Campos.</p>
 				<p>Tan cercanos se bailaban estos pueblos, que don Jaime iba muchas tardes, en su tordilla o en su galera, a visitar a su madre, y la Señora pasaba los domingos y fiestas en Laderos.</p>
 				<p>Por eso no se cansaba la dama de bendecir a los hombres que fundaron tan próximos entrambos lugares. Verdaderamente no comprendía por qué todas las ciudades no habían de estar una al lado de otra, como casas de un solo pueblo.</p>

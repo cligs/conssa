@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Dentro del cercado</title>
-				<title type="sub"></title>
+				
 				<title type="short">DentroCercado</title>
-				<title type="idno">
-					<idno type="bne">XX2092633</idno>
-					<idno type="viaf">194930056</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">875</measure>
@@ -141,23 +131,64 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0053</idno>
+						<idno type="cligs">ne0053</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/dentro-del-cercado/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1934">1934</date></bibl>
-				<bibl type="edition-first"><date when="1916">1916</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Dentro del cercado</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2092633.html">XX2092633</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/194930056/">194930056</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/dentro-del-cercado/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1934">1934</date></bibl>
+					<bibl type="edition-first"><date when="1916">1916</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del cercado</title>: 	<title type="sub">la palma rota</title> <date when="1915">1915</date>, <publisher>Maucci</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="465106293" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465106293"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del cercado</title> <date when="1927">1927</date>, <publisher>Juventud</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="342696831" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696831"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del Cercado. La palma rota. Los pies y los zapatos de Enriqueta</title> <date when="1952">1952</date>, <publisher>Editorial Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="579750051" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=579750051"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del cercado</title> <date when="1952">1952</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="384779247" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=384779247"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del cercado</title> <date when="1992">1992</date>, <publisher>Inst. de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1105158969" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1105158969"/> 		<idno type="isbn" n="8477849439"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dentro del cercado</title> <date when="1992">1992</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="131272853" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=131272853"/> 		<idno type="isbn" n="8477849439"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta ; Corpus y ntos ; El abuelo del rey ; Dentro del cercado ; Figuras en la Pasión del señor ; El humo dormido</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="528944231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=528944231"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta. Corpus y otros cuentos. El abuelo del rey. Dentro del cercado. Figuras de la pasión del Señor. El humo dormido</title> <date when="2007">2007</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362189" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362189"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
 				<p>Se centra de nuevo en las pulsiones eróticas de Luis, el protagonista, un arquitecto enomarodo de la naturaleza y el arte, que ama a dos mujeres. En su esposa, Librada, encuentra un tierno  amor conyugal, sosegado y manso; a Laura la mira con pasión de amante y con afán protector. Vienen a ser la cumbre y la llanura y juntas completan su ideal erótico. Lo mórbido de la situación viene dado por el gran amor que une a las dos mujeres. La obra mantiene una continua tensión entre los encuentros y separaciones de Luis y Laura, que tienen que vencer sus escrúpulos.</p>
-				<p></p>
+				<p/>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -186,9 +217,9 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">etopeya</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -196,7 +227,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE10">0.3</term>
 					<term type="text.movement">modernista</term>
-					<term type="text.narration.narrator" >heterodiegetic</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">positive</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
@@ -215,6 +246,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-07" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,9 +255,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Primera parte</head>
+				<head xml:id="ne0053_head_000">Primera parte</head>
 				<div n="1" type="chapter" xml:id="ne0053_chap1">
-					<head>- I  -</head>
+					<head xml:id="ne0053_head_001">- I  -</head>
 					<p>Laura y  la vieja Martina suspiraron, alzando los ojos y  el corazón al Señor. La enferma las  había mirado y  sonreído. Sus secas manos asían crispadamente el embozo de las ropas; los párpados y  ojeras se le habían ennegrecido tanto, que parecía mirar con las órbitas vacías. Pero, estaba mejor; lo decía sonriendo.</p>
 					<p>Laura puso el azulado fanal al vaso de la lucerna; envolviose en su manto de lana, cándido y  dócil como hecho de un solo copo inmenso y  esponjoso; y, acercando la butaca, reclinó su dorada cabeza en las mismas almohadas de la madre.</p>
 					<p>Todo el celeste claror de la pequeña lámpara, que ardía dulce y  divina como una estrella, cayó encima de la gentil mujer. Descaecida por las vigilias y  ansiedades, blanca y  abandonada en el ancho asiento, su cuerpo aparecía delgado, largo y  rendido, de virgen mística después de un éxtasis ferviente y trabajoso. Pero, al levantarse para mirar y cuidar a la postrada, aquella mujer tan lacia y pálida, se transfiguraba mostrándose castamente la firme y bella modelación de su carne.</p>
@@ -299,7 +331,7 @@
 					<p>Del establo comenzó a salir apretadamente el ganado, entre un temblor idílico de esquilas y  balidos, y  el ladrar de los mastines, que saltaban y  se derribaban,   fingiéndose   medrosos,   bajo   las   finas patas y blandos corpezuelos de los recentales.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0053_chap2">
-					<head>- II  -</head>
+					<head xml:id="ne0053_head_002">- II  -</head>
 					<p>En Alcera, se pronunciaron muchas palabras de lástima y alabanza a la memoria de la infortunada señora muerta; y  después hablose más de la soledad, de la riqueza y hermosura de la hija.</p>
 					<p>Las gentes picoteras y tracistas, hallaron paño que cortar imaginando lo que a la huérfana había de acomodarle. Ya la sacaban o la quitaban de su apartamiento, y ya la extrañaban, enviándola a otros lugares, porque, ¿qué haría en Alcera mujer tan moza, sola, principal y tan esquiva...?</p>
 					<p>Se lo preguntaron a Bernardo Suárez, amigo familiar de Luis; pero Suárez no lo sabía.</p>
@@ -348,7 +380,7 @@
 					<p>-Mujer, ni sabes hablar ni sonreír siquiera, ¿en qué piensas?</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0053_chap3">
-					<head>- III  -</head>
+					<head xml:id="ne0053_head_003">- III  -</head>
 					<p>Librada   torció   la  llavecita   de  la   lámpara, y   se encendieron tres  uvas de luz bajo pámpanos de cobre de un tostado color otoñal.</p>
 					<p>Sentose después al lado de Laura; y sonriendo a Luis le indicó que escuchase los peregrinos pensamientos de su prima.</p>
 					<p>Turbose la huérfana adorablemente. Esperaban que  hablase.   ¿Qué podía  decir  y   cómo  había  de decirlo? De su madre aprendió  a  reprimir y a esconder la  más leve vehemencia;  y   ahora  había sido  arrebatada  declarando un deseo de mucha sencillez, pero que acaso fuese demasiado significativo para Luis. En la soledad de su apartada casa quiso marcharse  a   su   «masía»,    y    este   deseo   le parecía  va  de  mujer  antojadiza  por   el  apresuramiento en el decirlo y  por el apetito de cumplirlo.</p>
@@ -395,7 +427,7 @@
 					<p>La huérfana se recogió llorando en su dormitorio. ¡Oh, Señor, por qué recordó entonces que una noche muy lejana vio a su padre acostado sobre este mismo suelo, con la frente vendada y  una hebra de sangre bajándole entre los ojos!...</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0053_chap4">
-					<head>- IV  -</head>
+					<head xml:id="ne0053_head_004">- IV  -</head>
 					<p>Mucho deseó, pero mucho temió también Luis la efusiva reunión de este día. Cumpleaños de su mujer. Estaban invitados Bernardo y  su hermana, y la presencia de ellos y la plática de todos le dejarían aparecer más sereno que hallándose solo con Librada y  Laura después del hurto de los besos.</p>
 					<p>Vinieron muy temprano los Suárez. Y  Librada los llevó en seguida al estudio del arquitecto. Negábase a entrar la humilde doncellona, temerosa de distraer y  enfadar al artista. Y  su amiga porfiaba que pasase, que ese día no le era lícito encerrarse a su señor marido.</p>
 					<p>Asomó Luis para recibirles; y  en aquel punto vibró un timbre y  el arquitecto, él mismo, cruzando apresuradamente la antesala abrió... ¿Por qué había salido?</p>
@@ -492,9 +524,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Segunda parte</head>
+				<head xml:id="ne0053_head_005">Segunda parte</head>
 				<div n="5" type="chapter" xml:id="ne0053_chap5">
-					<head>- I  -</head>
+					<head xml:id="ne0053_head_006">- I  -</head>
 					<p>«Muchos me han dicho, y  yo estuve muy cerquita de creerlo, que mi espíritu era de un heroísmo y  firmeza que me hacía superior a casi todas las mujeres. Y  tanto he pensado en mi singularidad, que algunas tardes me ponía triste, muy femenina, imaginando, y  subiéndolo a las nubes, el sacrificio de mi retraimiento de señorita delicada, romántica y  lugareña. Entonces cambiaba mi vida por una vida newyorkina de mujer zancuda y  flaca, con máquina de escribir en vez del bastidor de bordar, lentes, un fieltro hincado en el moño por un agujón como una espada y  un traje liso y  cortito, y  tomando los tranvías a codazos. Como no me agradase esa figura ni fuese tampoco justa con lo que de mí decían, dábame yo otra de mujer <seg rend="italic" type="foreign" xml:lang="en">snob</seg>, extranjera o española, es igual, opulenta excéntrica y  hasta hermosa, una Diana o una Minerva moderna, según les parece a los feministas y a los antifeministas; y mira, Librada: viéndome audaz y resplandeciente y sabia modificábame tanto que ni siquiera me gustaban los chiquillos.</p>
 					<p>Más ruda y más esquiva   que  en   ese  pueblo debo de parecer en estas soledades, y sin embargo de estas condiciones de <seg rend="italic" type="foreign" xml:lang="en">miss</seg>, yo te confieso, digan lo   que   quieran   de   lo   <seg rend="italic">extraordinario</seg>   de   mi temperamento,  que todo  lo  más   que  puedo hacer y conseguir de mí, es una buena muchacha maestra de escuela de Atalajas.  Atalajas es la villa más importante de estos contornos; hay párroco y vicario.</p>
 					<p>A mí me tiene loca mi ahijada.   ¡Sus padres se quejan de que no sea chico! Yo no puedo oír sin enfurecerme esa blasfemia, porque esta  <seg rend="italic">Corderita</seg> tiene  las  gracias   audaces   de   los   muchachos  sin perder la delicadeza de las niñas. Les he prohibido que  lo  digan  y   les he  prohibido   que  le  griten. ¡Gritar a un pequeñuelo! Estos no, pero hay padres que les dicen a sus hijos chiquitos palabras atroces de rabia, como si fueran ya grandes los pobrecillos... ¿Lo comprendéis vosotros?».</p>
@@ -527,7 +559,7 @@
 					<p>Y se abrazaron, sentándose la esposa infantilmente en las rodillas de Luis. Besábanse con alegría ruidosa, y  él la bendijo gozando su alma resplandores y  paz de inocencia, porque amaba a la huérfana como se quiere a una hermanita, sintiéndose comunicado de la castidad y  sencillez de Librada.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0053_chap6">
-					<head>- II  -</head>
+					<head xml:id="ne0053_head_007">- II  -</head>
 					<p>«¿Para qué habré venido?», se decía Luis inquieto y hastiado.</p>
 					<p>Y  como naturalmente era escrupuloso y  se escuchaba y  pulsaba sus escondidos pensamientos, arrepintiose de aquellas palabras. No, no había venido para buscar ni lograr nada, sino por una exaltación generosa y limpia de su vida. Y mucho tenía, pues delante de sus ojos se le presentaba toda suya la inmensa mañana estival.</p>
 					<p>Y quedose Luis pacificado y contento.</p>
@@ -560,7 +592,7 @@
 					<p>Y  desapareció entre los frutales. Laura  le  vio después saltar el vallado, pasar la era, anegarse en el  alto  y   maduro   cebadal,    y    perderse   entre  los primeros pinos de los bosques del Sanatorio.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0053_chap7">
-					<head>- III  -</head>
+					<head xml:id="ne0053_head_008">- III  -</head>
 					<p>El pinar olía calientemente. La tierra resbaladiza y  mullida  de   maleza tierna y   de pinocha prometía  a  Luis un  regazo  de  silencio y  delicia, amparado por el ramaje oloroso que alguna vez se movía y  resonaba como un bordón estremecido por los dedos de la brisa del mar. A trechos caía una   hebra   de   sol.   Bajaba  la  luz   toda   de   oro, alumbrando el trémulo vuelo de pobres insectos, los hilos de plata de las arañas; y  descansaba la luz en el suelo, ensanchándose, alborozando el humilde y  escondido nacimiento del renuevo de un árbol, y  el fatigoso tránsito por una piña vana de una hormiga terca y  rapaz, cargada de un grano de simiente.</p>
 					<p>Notó Luis que sus primeros ímpetus misericordiosos habían enflaquecido, que la llama de su caridad temblaba oscilando como si la doblase y  venciese un vientecillo cargado de emanaciones de vida amplia, placentera, que quitaban todo recuerdo de angostura y  apagamiento de enfermedades y  tristezas. Y  para mantener su propósito, que antes era dulcísimo y  arrebatado porque naturalmente fluía de su corazón, tuvo que acudir a la idea del deber.</p>
 					<p>Necesitaba al médico. Lo buscarla. Lo arrancaría de donde se hallase para llevárselo a Laura.</p>
@@ -584,7 +616,7 @@
 				</div>
 
 				<div n="8" type="chapter" xml:id="ne0053_chap8">
-					<head>- IV  -</head>
+					<head xml:id="ne0053_head_009">- IV  -</head>
 					<p>Cuando abrían la cerca, hallaron al labrador que iba en su busca para avisarles  que  su hija abrasaba y  deliraba de fiebre,  ensanchando los ojos que daba espanto.</p>
 					<p>Pasaron a la alcoba.</p>
 					<p>Un perro largo, flaco, velludo, se puso al lado de la niña, mirándola, mirándola.</p>
@@ -642,7 +674,7 @@
 					</quote>
 				</div>
 					<div n="9" type="chapter" xml:id="ne0053_chap9">
-						<head>- V  -</head>
+						<head xml:id="ne0053_head_010">- V  -</head>
 						<p>Por la noche volvió el mediero al Hotel para comprar más nieve.</p>
 						<p>Cuando regresaba, se apartó del  camino, y  entre el  foscor del olivar, llegose a  la masía del niño enfermo.</p>
 						<p>Estuvo acechando. Y  asustose de oírse el latido de su corazón, que parecía traspasarle la espalda, penetrar en el atadijo de hielo, enfriándole toda su vida.</p>
@@ -700,7 +732,7 @@
 						<p>Después sus ojos coincidieron en la figura de Librada, y vieron en ella un resplandor de pureza.</p>
 					</div>
 					<div n="10" type="chapter" xml:id="ne0053_chap10">
-						<head>- VI  -</head>
+						<head xml:id="ne0053_head_011">- VI  -</head>
 						<p>Estaba naciendo la mañana, muy pálida, quietecita, blanda y  húmeda de nieblas. Era una mañana recogida, reducida bajo un finísimo nublado; y  había  más  quietud,  más  silencio  que en la noche, porque no  se  oía  ningún  rumorcito ni cántico de esas menudas criaturas que viven al amor de las estrellas y la luna. Si alguna avecita osaba rebullirse, debía hacerlo muy escondida en los árboles o muy alta, entre las brumas, porque su canción sonaba apagada  y   breve. Todo semejaba aguardar que el sol, como una mano bondadosa de padre, se alzara y abriera las puertas del día; todo parecía mirar infantilmente hacia la cumbre de la lejana sierra oriental que se llama «Sien de oro».</p>
 						<p>Crecía la claridad sin perder su misterio. Seguramente el sol se había subido encima de la alta serranía, pero estaba velado de cendales de nieblas, porque todo el valle parecía un inmenso incensario que exhalaba un humo purísimo y espeso como de bendición y gracias.</p>
 						<p>Después, unos dedos de luz rasgaron el cielo; por sus delgadas heridas bajaron unas cuerdas o caminos vaporosos, cándidos y vivos  y, al llegar a los sembrados, a la graciosa redondez de algún otero, a la retama de un yermo, se deshacían en oro tierno y jovial, que se iba esparciendo, y  entonces los verdores más tenebrosos, los troncos más decrépitos, las piedras más rudas, todo lo tocado por aquellas hebras celestiales, adquiría una milagrosa juventud.</p>
@@ -751,7 +783,7 @@
 						<p>Delante iba el labriego con la jáquima de la bestia; al costado Luis; detrás, el abuelo seguido del mastín, calentando con la brasa de su lengua los recios y  desnudos calcañares de su amo.</p>
 					</div>
 					<div n="11" type="chapter" xml:id="ne0053_chap11">
-						<head>- VII  -</head>
+						<head xml:id="ne0053_head_012">- VII  -</head>
 						<p>La concupiscencia, el egoísmo, le hundían cautelosamente en el alma los dardos de sus reproches. ¿Para qué había dejado su estudio, los preparativos y  trabajos de un posible triunfo en América? ¿Para qué había venido a la soledad campesina? ¿Qué hizo sino renovar el escondido padecimiento de Laura, pasearse a la sombra olorosa de las  bóvedas  de pinares, presenciar, ahora, la partida de los tísicos, que acabada oficialmente la época de su alivio, regresaban a sus tierras y  hogares con algunos bacilos de menos en los esputos, según censura del macizo doctor, y  sabiendo que debían de volver a esta vida de bosque disciplinada por rigores terapéuticos y  de Empresa, y, finalmente, ver la agonía de <seg rend="italic">Corderita</seg>?</p>
 						<p>El pinar terminaba; y  vino la tierra ancha de los maizales y  rastrojos, con sus sendas delgaditas, estrechadas   todos   los   años   por   manos   codiciosas para ganar medio almud de sembradura.</p>
 						<p>Lejos, a poniente, encima de un collado fértil, blanqueaba la hacienda de Laura.</p>
@@ -765,7 +797,7 @@
 						<p>Y Luis contempló los remotos horizontes. Codiciaba trasponerlos todos y rodearse de otra vida lejana y desconocida, y en ella estaban también Laura y Librada, y eran suyas fuera de las tristezas de estos lugares que, como la ciudad, tenían angostura de cercado...</p>
 					</div>
 					<div n="12" type="chapter" xml:id="ne0053_chap12">
-						<head>- VIII  -</head>
+						<head xml:id="ne0053_head_013">- VIII  -</head>
 						<p>Librada quejábase de la sofocación y  calma de la noche; y  era una noche llena de estrellas  clarísimas que hacían muy hondo el cielo, y  de tiempo en tiempo aleteaba un aire delgado y  fresco que venía de las montañas, oloroso de árboles; y  llegaba también la respiración salina del mar entre pinares y  huertas.</p>
 						<p>No tenía razón Librada, decíase Laura; en cambio ella se angustiaba del demasiado perfume; le dolía la frente; y  esos olores que traspasaban como puñales, debían de ser de matas de dondiegos y  de la bravía hierba del cementerio.</p>
 						<p>Y Luis pensaba que tampoco era verdad, porque estos olores expandían el alma, y  parecían traer sensación de anchura, olores de árboles que se asoman desde las cumbres a la abundancia de otros valles y  recogen algo de lo inmenso de otros horizontes y  del mar. ¿Cómo este olor húmedo, generoso y  bueno podía ser para Laura llegado de la profundidad y  aridez de la muerte?</p>
@@ -836,9 +868,9 @@
 					</div>
 				</div>
 			<div type="part">
-				<head>Tercera parte</head>
+				<head xml:id="ne0053_head_014">Tercera parte</head>
 				<div n="13" type="chapter" xml:id="ne0053_chap13">
-					<head>- I  -</head>
+					<head xml:id="ne0053_head_015">- I  -</head>
 					<p>Lejos y encima del mar surgió un rizo de humo que   estuvo   mucho  tiempo enredado  en   sí mismo, solo y  quietecito sobre el azul, mientras el barco que lo dejaba se iba perdiendo envuelto de resplandores  de  sol poniente. Por el camino que pasa  a  espaldas  del Hontanar y se entra en las sierras fragosas, rodaba jadeante un carro, y debajo de  su toldo  salía una  copla que también parecía torcerse  y   rizarse en el silencio lo mismo que el humo del buque en el cielo, y prolongarse ella sola y deshacerse muy despacio.</p>
 					<p>Las montañas y los pinares alumbrados del rojo del ocaso acostaban sus siluetas hasta tocar en los granados del huerto de Laura.</p>
 					<p>Aquel barco, como un grano de trigo, aquella canción traspasando la soledad y dejándola toda prendida de su tristeza, y aquellas cimas de la arboleda y de los montes que recogían la cansada llama, la dulce entrega de toda la tarde, sutilizaban el corazón de Laura llenándolo de ansia por lo lejano. Pronunciaba para sí misma la palabra «lejos»; y le enamoraba decirla, y volaba su mirada sobre todos los horizontes y concebía el silencio de otras inmensidades.</p>
@@ -861,7 +893,7 @@
 					<p>Y Laura apartó sus ojos del milagroso lucero porque le iluminaba demasiado las escondidas inquietudes de su alma, y, sin quererlo el astro ni ella, la guiaba al portal de su amor.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0053_chap14">
-					<head>- II  -</head>
+					<head xml:id="ne0053_head_016">- II  -</head>
 					<p>Recién llegada Laura a su hacienda, un recadero del Sanatorio le llevaba las pocas cartas que tenía. Pero como las tierras de la finca lindaban con el camino, dispuso la huérfana que un mozo de la labranza saliese al paso de la diligencia para recoger su correo. Así vendría antes.</p>
 					<p>Y halló que también este mensajero era tardo. ¡Oh, la gente campesina es muy andariega y muy fuerte, pero son de un paso flemático que desespera!</p>
 					<p>-¿No te parece? ¿Oyes, ama?</p>
@@ -910,7 +942,7 @@
 					<p>Entornó las ventanas; pero, apagado y todo el cuarto, todavía lloraba como si las paredes llameasen de sol. Le dolían abrasadamente las sienes, pareciéndole que se las traspasaban tizones ferocísimos de aquel incendio, cuyo recuerdo perfumaba de dicha el alma de su prima.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0053_chap15">
-					<head>- III  -</head>
+					<head xml:id="ne0053_head_017">- III  -</head>
 					<p>Treinta  años llevaba  subido  a  su  asiento   de crines y  cuero remendado el mayoral de la diligencia   de  Alcera  al Sanatorio.  Era  un buen hombre, seco y recio; respondía destempladamente   a   cuanto   le hablaban   aquellas  cargas  de humanidad desgraciada de su coche; pero su aspereza  ocultaba mucha compasión. Los niños y las mujeres enfermas le hacían odiar a otros viajeros varones y más fuertes. Y  se ensombrecía, daba rugidos  y   tronaba su látigo, para distraerse y no pensar   en  las   pobres   gentes   que  le   miraban medrosas.</p>
 					<p>Se había quedado sin familia. Ya estaba muy cansado de sus jornadas, y no se daba cuenta. Parece que sentía el cansancio y  la piedad sin saberlo.</p>
 					<p>Después de la última revuelta costanera, cerca de los primeros pinos, dejaba las riendas; abría la valija, y con gustosa mansedumbre, que pasmaba al zagal, iba buscando, buscando entre periódicos y  cartas; y hallada la apetecida, saltaba del pescante y caminaba junto a la diligencia. A poco, aparecía Laura, saliendo entre los árboles; y  él le ofrecía su correspondencia, y ella le saludaba sonriendo.</p>
@@ -952,7 +984,7 @@
 					<p>Entonces Moisés contempló pasmadamente al médico, y  sin poder reprimir un celoso movimiento de su ánima, se dijo: «¡Pues no es tan mentecato como yo lo imaginaba!...».</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0053_chap16">
-					<head>- IV  -</head>
+					<head xml:id="ne0053_head_018">- IV  -</head>
 					<p>Obedeció Laura al médico y  Martina; y  una mañana tibia y  seca de los postreros días otoñales, salió apoyada en el brazo de su dueña por la senda del huerto al Sanatorio.</p>
 					<p>El sol abrigaba y  doraba dulcemente a la pálida doncella, que iba mirando con enternecimiento su paisaje. Los árboles y  la menuda verdura de los ribazos más conocidos y  predilectos de su mirada y  los claros contornos de los montes, que siempre gustaba de contemplar, todo tenía un color cansado y suave que llevaba su alma a la resignación... Alzo los ojos al peñasco del sepulcro, en cuya rasgadura penetraba la pureza de la lumbre durmiéndose entre el silencio del nidal. Ya no estaban las águilas; ella las esperó muchas tardes, mirando todo el cielo, y no   viéndolas   se   había   sentido   más   sola y   más enferma.</p>
 					<p>El médico, a su lado, no acababa de repetirle los consejos para la convalecencia.</p>
@@ -972,7 +1004,7 @@
 					<p>Y  cuando ya tarde, se expandió en el silencio el dulce tañido de la esquila del Hotel, Laura y  Martina dieron gracias de su compañía al director y  al enfermo; y  muy despacio, retornaron a la heredad.</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0053_chap17">
-					<head>- V  -</head>
+					<head xml:id="ne0053_head_019">- V  -</head>
 					<p>Palpitante, encendida, leyó Laura la carta de Luis y  de Librada.</p>
 					<p>Luis se despedía. Había triunfado en el concurso de Lima, y  se marchaba para iniciar las obras. Los periódicos americanos y  españoles publicaban autógrafos y  retratos del artista. Librada le prometía a la huérfana un fajo de esas páginas mensajeras de la glorificación del amado. Y  él, le daba su adiós con palabras de una tristeza pegadiza, casi retórica. Su pluma debió temblar gozosamente al escribir...</p>
 					<p>Luis dedicaba unas líneas a Alcera, a Suárez y otros amigos vanos, y lo  que nombraba,   quedaba comunicado y dentro de su alegría; amaba a todo el mundo como nunca o se amaba a sí mismo en todo.</p>
@@ -1008,9 +1040,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Cuarta parte</head>
+				<head xml:id="ne0053_head_020">Cuarta parte</head>
 				<div n="18" type="chapter" xml:id="ne0053_chap18">
-					<head>- I  -</head>
+					<head xml:id="ne0053_head_021">- I  -</head>
 					<p>Maravilla y ufanía de la ciudad era el Casino. Todos los forasteros habían de visitarlo; y  si no iban por espontáneo pensamiento, y los indígenas sabían tan grave descuido llevábanlos altivamente.</p>
 					<p>En seguida desnudaban de fundas los estrados y sillas de gala; se alumbraban los salones, aunque la visita fuese mañanera; desplegaban los cortinajes y reposteros de lujo guardados para fiestas y ceremonias; y  llegados a los cuartos de baño, el conserje iba soltando las espitas de las pilas y  de los lavabos, y  abriendo los armarios de los lienzos y  fazalejas, armarios ingleses.</p>
 					<p>Y en tanto, este funcionario, apodado «¿Napoleón», por su semejanza facial y  el bizarro gesto de llevar una mano descansada y  abierta entre los dorados botones de su levita y  la otra sobre los robustos lomos,  «¿Napoleón», hacía un menudo cuento del origen de la casa, del celo de su gobierno y  del mérito y  precio del mueblaje.</p>

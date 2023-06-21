@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Libro de Sigüenza</title>
-				<title type="sub"></title>
+				
 				<title type="short">LibroSiguenza</title>
-				<title type="idno"><idno type="viaf">309267791</idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1345</measure>
@@ -138,16 +131,55 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0056</idno>
+						<idno type="cligs">ne0056</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/libro-de-siguenza/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1936">1936</date></bibl>
-				<bibl type="edition-first"><date when="1917">1917</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Libro de Sigüenza</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/309267791/">309267791</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/libro-de-siguenza/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1936">1936</date></bibl>
+					<bibl type="edition-first"><date when="1917">1917</date><idno source="k10plus" type="ppn" n="422084875" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=422084875"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">Libro de Sigüenza</title> <date when="1917">1917</date>, <publisher>Domenech</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="422084875" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=422084875"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de Sigüenza</title> <date when="1922">1922</date>, <publisher>Eduardo Domenech;Atenea</publisher> <pubPlace>Barcelona;Madrid</pubPlace> 		<idno type="ppn" n="464743001" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464743001"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El libro de Sigüenza</title> <date when="1927">1927</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342696580" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696580"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de sigüenza</title>: 	<title type="sub">jornadas de este caballero levantino</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1569977992" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1569977992"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de sigüenza</title>: 	<title type="sub">jornadas de este caballero levantino</title> <date when="1938">1938</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1372774165" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1372774165"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El libro de Sigüenza</title>: 	<title type="sub">jornadas de este caballero Levantino</title> <date when="1938">1938</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="52060010X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=52060010X"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Zwei Erzählungen aus dem Spanischen</title> <date when="1956">1956</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="096831626" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=096831626"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de Sigüenza</title>: 	<title type="sub">jornadas de este caballero levantino</title> <date when="1957">1957</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="463554612" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463554612"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de Sigüenza</title>: 	<title type="sub">jornadas de este caballero levantino</title> <date when="1969">1969</date>, <publisher>Ed. Guadarrama</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465891624" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465891624"/> </bibl>
+						<bibl type="further-edition"><title type="main">Libro de sigüenza</title> <date when="1984">1984</date>, <publisher>Taurus Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1644899965" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1644899965"/> 		<idno type="isbn" n="8430641491"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de sigüenza</title> <date when="1984">1984</date>, <publisher>Taurus</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1621601382" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1621601382"/> 		<idno type="isbn" n="8430641491"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de Sigüenza</title> <date when="1984">1984</date>, <publisher>Taurus</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="11440416X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=11440416X"/> 		<idno type="isbn" n="8430641491"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de sigüenza</title> <date when="1990">1990</date>, <publisher>Inst. de cultura</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1100320571" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1100320571"/> 		<idno type="isbn" n="8477849781"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Libro de Sigüenza</title> <date when="1990">1990</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="197934498" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=197934498"/> 		<idno type="isbn" n="8477849781"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El ángel, el molino, el caracol del faro. Nuestro Padre San Daniel. El obispo leproso. Libro de Sigüenza. Años y leguas</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="587995521" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=587995521"/> 		<idno type="isbn" n="9788496452565"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -156,6 +188,14 @@
 				<p>En la primera parte, titulada Capítulos de la historia de España, se recogen anécdotas de otros individuos queu va conociendo por el camino: El señor CUenca y su sucesor, El pececillo del padre guardián... En el resto del libro predominan las estampas paisajísticas y costumbristas. TErmina con un capítulo lleno de ternura: La nena de la tos ferina, que refleja, como tantos otros, el desbordante amor de Miró a los débiles.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -187,7 +227,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">autobiographical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">libro</term>
 					<term type="text.genre.subtitle.source" resp="bne">libro</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">libro</term>
@@ -222,12 +262,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-07" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Lector: (Página preliminar de la  primera  edición)</head>
+				<head xml:id="ne0056_head_000">Lector: (Página preliminar de la  primera  edición)</head>
 				<p>Este Sigüenza que aquí aparece es el mismo que caminó tierras de Parcent, recogiendo el dolor de sus hombres leprosos.</p>
 				<p>Sigüenza ha sido el íntimo testimonio y aun la medida y la palabra de muchas emociones de mi juventud.</p>
 				<p>Para mí, Sigüenza significa ahínco, recogimiento, evocación y aun resignación de las cosas que a todos nos pertenecen. De aquí que su libro puedas considerarlo tuyo. Yo te digo que lo que en él se refiere se hizo carne en Sigüenza. No me he regodeado formando a Sigüenza a mi imagen y semejanza. Vino él a mí según era ya en su principio. Y cuanto él ve y dice, no supe yo que había de verlo y de decirlo hasta que lo vio y lo dijo.</p>
@@ -236,9 +277,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Capítulos de la Historia de España</head>
+				<head xml:id="ne0056_head_001">Capítulos de la Historia de España</head>
 				<div n="1" type="chapter" xml:id="ne0056_chap1">
-					<head>El señor de Escalona: (Justicia) </head>
+					<head xml:id="ne0056_head_002">El señor de Escalona: (Justicia) </head>
 					<p>En la primera mocedad de Sigüenza, algunos amigos familiares le dijeron:</p>
 					<p>-¿Es que no piensas en el día de mañana?</p>
 					<p>Y Sigüenza les repuso con sencillez, que no, que no pensaba en ese día inquietador, y citó las Sagradas Escrituras, donde se lee: «No os acongojéis diciendo: ¿qué comeremos, o qué beberemos, o con qué nos cubriremos?». Y todo aquello de que «los lirios del campo no hilan ni trabajan, y que las pajaricas del cielo no siembran, ni siegan, ni allegan en trojes...».</p>
@@ -288,7 +329,7 @@
 					<p>1907.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0056_chap2">
-					<head>El señor Cuenca y su sucesor (Enseñanza) </head>
+					<head xml:id="ne0056_head_003">El señor Cuenca y su sucesor (Enseñanza) </head>
 					<p>Pasaba ya el tren por la llanada de la huerta de Orihuela. Se iban deslizando, desplegándose hacia atrás, los cáñamos, altos, apretados, obscuros; los naranjos tupidos; las sendas entre ribazos verdes; las barracas de escombro encalado y techos de «mantos» apoyándose en leños sin dolar, todavía con la hermosa rudeza de árboles vivos; los caminos  angostos, y  a lo lejos la  carreta con su carga de verdura olorosa; a la sombra de un olmo, dos vacas cortezosas de estiércol, echadas en la tierra, roznando cañas tiernas de maíz; las sierras rapadas, que entran su costillaje de roca viva, yerma, hasta la  húmeda  blandura de los bancales, y luego se apartan con las faldas ensangrentadas por los sequeros de <seg rend="italic">ñoras</seg>; un trozo de río con un viejo molino rodeado de patos; una espesura de chopos, de moreras; una palma solitaria; una ermita con su cruz votiva, grande y negra, clavada en el hastial; humo azul de márgenes quemadas; una acequia ancha; dos hortelanos en zaragüelles, espadando el cáñamo con la agramadera; naranjales, panizos; otra vez el río, y en el fondo, sobre el lomo de un monte, el Seminario, largo, tendido, blanco, coronado de espadañas; y bajo, en la ladera, comienza la ciudad, de la que   suben torres y cúpulas rojas, claras, azules, morenas, de las parroquias, de la catedral, de los monasterios; y, a la derecha, apartado y reposando en la sierra, obscuro, macizo, enorme, con su campanario  cuadrado  como  un torreón, cuya cornisa descansa en las espaldas de unos hombrecitos monstruosos, sus gárgolas, sus buhardas y luceras, aparece el Colegio de Santo Domingo de los Padres Jesuitas.</p>
 					<p>Sobre la huerta, sobre el río y el poblado se tendía una niebla delgada y azul. Y el paisaje daba un olor pesado y caliente de estiércol y de establos, un olor fresco de riego, un olor agudo, hediondo, de las pozas de cáñamo, un olor áspero de cáñamo seco en almiares cónicos.</p>
 					<p>Sigüenza contemplaba la tarde, angustiado, enfermo de tristeza, una tristeza tan acerba, tan densa, que le parecía que no era sólo un sentimiento suyo, sino que tenía una realidad propia, separada, grande, más fuerte que nuestra alma; la tristeza se le incorporaba de todo lo que veía, porque la vega, sus humos, sus árboles, los montes y el cielo, todo estaba hecho, cuajado de tristeza; la misma que le oprimía siendo chiquito, cuando, vestido de uniforme de colegial, salía con su brigada, la de los pequeños, por aquellas sendas, aguardando el paso del tren, un tren que le traía tantas memorias alegres, que aun le entristecía más que el paisaje y el regreso al Colegio de Santo Domingo.</p>
@@ -321,7 +362,7 @@
 					<p>1908.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0056_chap3">
-					<head>El paseo de los Conjurados (Revolución) </head>
+					<head xml:id="ne0056_head_004">El paseo de los Conjurados (Revolución) </head>
 					<p>Era un paseo largo, antiguo y desamparado; tenía las empalizadas podridas; las pilastras, grietosas; el piso, agreste; los bancos, rotos, con hierba en sus heridas; la fuente, seca; los árboles, polvorientos... Había dos edificios grandes, amarillos y decrépitos: el Hospital y el Hospicio. Es que en muchos pueblos, los casones viejos, opresores, húmedos son para las criaturas frágiles, doloridas y tristes. También suele suceder que una catedral venerable sirva de alojamiento de un escuadrón de caballería.</p>
 					<p>Las callejas angostas, cercanas a ese paseo de las afueras, llevan el nombre de un poeta, porque un día el Cabildo siente una lírica exaltación y decide glorificar a un peregrino ingenio escribiendo su nombre en el ladrillo, en el rótulo de una esquina. Es costoso el hallazgo de la calle porque todas ostentan el apellido glorioso de un corregidor, de un político o de un general. Por fortuna, la Naturaleza es conciliadora: hay en los extremos del pueblo una callecita que se llama la «Calle del Aire» o «Calle del Árbol», y se quita el Aire o el Árbol y lo sustituye Fray Luis de León o Garcilaso. Pero los vecinos y aun los bandos y pragmáticas municipales siguen diciendo «calle del Aire o del Árbol».</p>
 					<p>Era aquel paseo el de las familias enlutadas, de los hidalgos viejecitos y aburridos, de los lisiados y enfermos. Y cuando se cruzaban los solitarios quedábanse mirando, y volvían la cabeza para mirarse más. «Este pobre también lleva luto, o tiene la color de las enfermedades». Y diciéndolo repasaban las malaventuras suyas.</p>
@@ -362,7 +403,7 @@
 					<p>1908.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0056_chap4">
-					<head>Una jornada del Tiro de pichón  (Deporte)</head>
+					<head xml:id="ne0056_head_005">Una jornada del Tiro de pichón  (Deporte)</head>
 					<p>Delante del mar, cercado de tapiales blancos, está el Tiro de pichón con su redonda explanada orillada de una red que descansa encima de las algas. El edificio tiene una fachada con adornos de yeso que recuerdan los primores de soplillo o merengue de las tortadas; hay en las cercas una puerta de hierro de prodigiosa traza modernista; fue admirable la paciencia del autor. ¡Cuánto hierro! Una bandera roja llamea bizarramente sobre el azul, avisando que en su recinto se celebra alguna jornada gloriosa.</p>
 					<p>Dentro, en los grandes alcahaces, las cautivas palomas vuelan, se arrullan, se golpean en las mallas metálicas del techo, por donde asoma el alborozo de la libertad de los cielos. El aire parece estremecido por el hondo y constante arrullo. Se piensa en una granja manchega, en la paz de los molinos reflejados en el sueño de un río.</p>
 					<p>Esta reposada y campesina emoción suele apartarla el fragor señorial de los automóviles que llegan a la dulce fachada.</p>
@@ -398,7 +439,7 @@
 					<p>1909.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0056_chap5">
-					<head>El pececillo del Padre Guardián (Hidráulica) </head>
+					<head xml:id="ne0056_head_006">El pececillo del Padre Guardián (Hidráulica) </head>
 					<p>Cuando el tren, un tren mixto muy viejo, abandonó la humilde estación, penetró en Sigüenza todo el silencio de aquellos lugares; porque era una de esas estaciones desamparadas, sin pueblo. El pueblo que le había dado generosamente su nombre estaba perdido en la soledad, sin tren. Era una de las más castizas estaciones españolas.</p>
 					<p>Andando atravesó Sigüenza campos arrugados por la labranza, terronosos y duros. Las cebadas, antes de espigar, tenían color de maduras, quemadas de sed; la viña, apenas mostraba algunos nudos tiernos por el brote; las sendas pasaban retorcidas, huyendo delante de las masías, muchas ya cerradas por la emigración.</p>
 					<p>Y los bancales yermos, con árboles crispados; las tierras enjutas; los rastrojos inmensos, tejían, ensamblándose, la parda solana, tendida y muda bajo el cielo glorioso de la tarde.</p>
@@ -468,7 +509,7 @@
 					<p>1909.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0056_chap6">
-					<head>Recuerdos y parábolas (Política) </head>
+					<head xml:id="ne0056_head_007">Recuerdos y parábolas (Política) </head>
 					<p>En  aquellos días de violencia,  de odio y estruendo no veía Sigüenza la figura del hombre I aborrecido. Un humo de hoguera o de polvo lo cegaba. Pero muchos rugían:</p>
 					<p>¿Es que no veis cómo mira, cómo se ríe y alza la frente? Todo en él es de reto execrable.</p>
 					<p>...Vino el reposo, la claridad del aire. Y aquel hombre ya no estaba.</p>
@@ -538,9 +579,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Muelles y mar</head>
+				<head xml:id="ne0056_head_008">Muelles y mar</head>
 				<div n="7" type="chapter" xml:id="ne0056_chap7">
-					<head>Una mañana</head>
+					<head xml:id="ne0056_head_009">Una mañana</head>
 					<p>Salió Sigüenza por la orilla de los muelles.</p>
 					<p>Era una mañana inmensa de oro. Lejos, encima del mar, el cielo estaba blanco, como encandecido de tanta lumbre, y las paradas aguas, que de tiempo en tiempo hacían una blanda palpitación, ofrecían el sol infinitamente roto. Si pasaba una lancha, silenciosa y frágil, los remos, al emerger, desgranaban una espuma de luz.</p>
 					<p>Gritaban las gaviotas delirantes de alegría y de azul. Y en las viejas barcas de carga, los gorriones picaban el trigo y el maíz desbordado de los costales, y luego saltaban por la proa, dejando en la marina una impresión aldeana muy rara y graciosa.</p>
@@ -565,7 +606,7 @@
 					<p>1910.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0056_chap8">
-					<head>Una tarde</head>
+					<head xml:id="ne0056_head_010">Una tarde</head>
 					<p>Nunca tuvo nuestro mar la pureza, la alegría y quietud de esa tarde.</p>
 					<p>Sigüenza vio  algunas gentes asomadas a los balcones. Todas le parecieron comunicadas de la gracia infantil, de la inocencia <seg rend="italic">antigua</seg> del Mediterráneo. Si pasaba algún barco de vela se veía todo   su   dibujo   primorosamente  calado  sobre el cielo y las aguas. La isla de Tabarca, que siempre tiene un misterio azul de distancia, como hecha de  humo,  mostrábase  cercana,  clara,  desnuda y virginal.</p>
 					<p>Las gaviotas parecía que volasen en un recinto guardado entre dos cristales: el del cielo y el del mar, porque el mar estaba tan liso, tan inmóvil como si se hubiera cuajado en una delgada lámina y bajo de ella no hubiese más agua, sino el fondo enjuto, alumbrado de sol.</p>
@@ -606,7 +647,7 @@
 					<p>1909.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0056_chap9">
-					<head>Otra tarde  (La gaviota)</head>
+					<head xml:id="ne0056_head_011">Otra tarde  (La gaviota)</head>
 					<p>Una tarde primaveral, de mucha quietud, salió Sigüenza antes de que se le mustiase el ánimo bajo el poder de pensamientos, que, si no tenían trascendencia ni hondura filosófica, agobian las más levantadas ansiedades.</p>
 					<p>«¡Qué haría el mismo Goethe atado con mis sogas!», se dijo para disculparse de su mohína y cansancio.</p>
 					<p>Nada se contestó de Goethe por no inferir el mal de la respuesta. Es verdad que entonces venía la gozosa bandada de muchachos de una escuela en asueto, porque era jueves. Y esta infantil alegría suavizole de su meditación, y aun le alivió más la vista del cercano paisaje, ancho, tendido, plantado de arvejas y cebadas, va revueltas y doradas por la madurez, y parecía que todo el sol caído en aquel día estaba allí cuajado en la llanura.</p>
@@ -656,7 +697,7 @@
 					<p>1908.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0056_chap10">
-					<head>Una   noche (En Cristianía) </head>
+					<head xml:id="ne0056_head_012">Una   noche (En Cristianía) </head>
 					<p>Aunque lo leyó en libros muy antiguos, y lo     escuchó  hasta   de gentes humildes,  sólo después de muchos meses de postración y de padecimiento supo  Sigüenza  que  en  la   salud estaba el más grande bien y alegría del hombre.</p>
 					<p>Si otra ansia sentía, quizá se derivaba de lo mismo: de la codicia de la fortaleza. Ser fuerte, sano, ágil como los marineros que pasaban bajo sus ventanas. Y viéndolos, imaginaba la vida de inmensidad, la de los puertos remotos, la vida ancha, gustosa, descuidada y andariega por países desconocidos y lueñes.</p>
 					<p>Y decidió viajar.</p>
@@ -706,7 +747,7 @@
 					<p>1910.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0056_chap11">
-					<head>En el mar.- Vinaroz</head>
+					<head xml:id="ne0056_head_013">En el mar.- Vinaroz</head>
 					<p>Las luces de la ciudad se hunden estremecidamente en las aguas negras del puerto.</p>
 					<p>Va engulléndose el barco a una muchedumbre cargada de hijos, de hoces y azadas, de fardelicos y costales de ropas pobres que huelen a hogar muy humilde; y hay un vocerío de feria aldeana.</p>
 					<p>Cuando la sirena del vapor ha arrastrado su lamento en el fondo de toda la noche, y comienza a latir la hélice entre un fresco ruido de espumas, Sigüenza sube al puente con su compañero de viaje. Es un ingeniero sencillo y bueno, que trae en cada zapato una piel de novillo andaluz, y parece algo pariente de Tomé Cecial.</p>
@@ -763,9 +804,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Días y gentes</head>
+				<head xml:id="ne0056_head_014">Días y gentes</head>
 				<div n="12" type="chapter" xml:id="ne0056_chap12">
-					<head>Origen del turrón</head>
+					<head xml:id="ne0056_head_015">Origen del turrón</head>
 					<p>Pasa  Sigüenza por la Huerta de Alicante. Es un hondo llano de jardines sedientos y de tierras labradas, de árboles viejos, grandes, patriarcales, de vides robustas y ardientes. La alegría, el halago fresco y azul del mar va siguiéndole hasta doblar los montes del confín, los bellos montes lisos y zarcos, y por las tardes, el sol muestra redondeces, collados, angosturas, casales y arboledas, todo rubio y de un color de carne y de rosas. Entonces esa serranía parece avanzar y ofrecernos toda su desnudez, toda su vida. Arden las cumbres con un triunfo, con una gloria humana y dolorida. Cruzan el cielo los pájaros buscando la querencia de las palmeras, de los cipreses solitarios que dan compañía y una sombra larga a los torreones moriscos, a las casas de placer, antiguas, venerables, las únicas que todavía dejan una emoción señorial en este paisaje roto por edificios nuevecitos, por <seg rend="italic">hoteles</seg> pulidos, que no saben qué hacer en el silencio campesino...</p>
 					<p>Hay caminos profundos y callados entre tapiales de cal, entre morenas albarradas; ventas polvorosas con argollas y pesebres en las faenadas, y algún olmo agarrado ansiosamente a la humedad de un ribazo. Es una huerta terronosa y vetusta. El ruido de los árboles evoca la delicia del agua, y ver un bancal regado, decirlo, oír un rumor de acequia, trae el pensamiento de contar mucho dinero en un escritorio o quizá la memoria de un lance de sangre. La pureza, la canción del agua es lo que más mueve y mantiene la raíz y el breñal de la criminalidad levantina. Y la huerta se abre, se interrumpe de cuando en cuando, y aparece un caserío, un pueblo.</p>
 					<p>Santa Faz reposa al lado del monasterio donde se guarda el lienzo santísimo, amor y remedio de los rancios señores, de las cigarreras, de los labriegos malparados. Tiene esta aldea unas casas con los balcones de celosías siempre cerradas; por los sillares, que se agrietan con dorados regaños como el pan, suben cactos verdes, escamosos, que parecen enormes lagartos dormidos al sol, y por las cercas desborda un jazminero, un rosal, de fronda ancha de árbol viejo, evocadora de tardes románticas. Está todo en la quietud mística del ostensorio de la Faz divina. Pasan coches, automóviles, las pesadas diligencias que hacen trepidar las celdas de las monjitas, los retablos y las columnas de los obscuros altares. Se persignan las mujeres, se descubren los viajeros devotos mientras conversan de deleite, y el estruendo de la jácara retumba en los canceles de la iglesia y en toda la paz aldeana.</p>
@@ -802,7 +843,7 @@
 					<p>1910.</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0056_chap13">
-					<head>Pastorcitos rotos</head>
+					<head xml:id="ne0056_head_016">Pastorcitos rotos</head>
 					<p>Una abuelita  con  saboyana  roja y corpiño negro, que lleva un reverendo pavo en sus brazos, camina descabezada sobre la verde lisura del tomo III de Luciano.</p>
 					<p>Hay en la orilla de un tintero de Talavera un viejo sentado en su peña, con montera de piel y capa pardal y zahones nuevecitos que antes tendía sus manos encima de lumbre de leña, y hogaño está manco y sus muñones se asoman al abismo de tinta.</p>
 					<p>En el cestillo de la labor de la madre yace derribado el negro rey Gaspar, cuya cabalgadura tiene una pata quebrada por la corva, y una labriega, que traía en la cabeza un añacal todo rubio de panes, contempla sus piernas entre la corona del mago.</p>
@@ -821,7 +862,7 @@
 					<p>1906.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0056_chap14">
-					<head>Un domingo</head>
+					<head xml:id="ne0056_head_017">Un domingo</head>
 					<p>Sigüenza y sus amigos miraron la noche, honda  y desoladora de los campos.</p>
 					<p>Los fanales del tren, esas lamparillas que se van desjugando, y el aceite turbio, espeso y verdoso remansa en el fondo del vidrio cerrado; esas lamparillas que dejan un penoso claror en las frentes, en los pómulos, quedando los ojos en una trágica negrura, y alumbran la risa, la tribulación, el bullicio, el cansancio de gentes renovadas que parecen siempre las mismas gentes; esas lamparillas daban sus cuadros de luz a los lados del camino, y doraban un trozo, un rasgo del paisaje: una senda que se quiebra en lo obscuro, un casal todo apagado, un árbol que se tuerce en la orilla de un abismo... Todas las noches reciben la rápida lumbre, y muestran su soledad, su desamparo.</p>
 					<p>¿Dónde estarán?, se pregunta Sigüenza asomándose, y busca amorosamente en la noche la senda, la casa y el árbol, todo ya perdido. Y entretanto, siguen los fanales viejecitos del tren avivando caminos, árboles, majadas, soledades, que luego se sepultan para siempre.</p>
@@ -872,7 +913,7 @@
 					<p>1908.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0056_chap15">
-					<head>Un viaje de novios</head>
+					<head xml:id="ne0056_head_018">Un viaje de novios</head>
 					<p>La noble y vieja señora recibió a Sigüenza en su salita de labor.</p>
 					<p>Las sillas, los escabeles y el estrado eran de rancia caoba, vestidos de grana; los cuadros, apagados; las paredes, blancas. Era un aposento abacial.</p>
 					<p>Delante de la butaca de la dama había un alto brasero resplandeciente; y entre el follaje de azófar se veía arder, retorciéndose, una mondadura de lima. La olorosa tibieza de la sala daba una dulce sensación de intimidad, de recogimiento de casa abastada y sencilla. Así lo notaría la señora, porque luego de contemplar el moblaje, la alfombra, y de mirarse el viejo y rico jubón de terciopelo que traía, y sus botas de paño, puso la mirada en la copa de fuego, y suspirando dijo:</p>
@@ -932,7 +973,7 @@
 					<p>1908.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0056_chap16">
-					<head>Los almendros y el acanto</head>
+					<head xml:id="ne0056_head_019">Los almendros y el acanto</head>
 					<p>Estaba el huerto todavía blando, redundado del riego de la pasada tarde; y el sol de la mañana se entraba deliciosamente en la tierra agrietada por el tempero.</p>
 					<p>En los macizos ya habían florecido los pensamientos, las violetas y algunos alhelíes; las pomposas y rotundas matas de las margaritas comenzaban a nevarse de blancas estrellas; los sarmientos de los rosales rebrotaban doradamente; los tallos de las clavellinas engendraban los apretados capullos, y todo estaba lleno y rumoroso de abejas.</p>
 					<p>Por encima de los almendros asomaba la graciosa y gentil ondulación de los collados, en cuyas umbrías   las   nieves  postreras iban derritiéndose.</p>
@@ -963,7 +1004,7 @@
 					<p>1906.</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0056_chap17">
-					<head>El señor de los ataques</head>
+					<head xml:id="ne0056_head_020">El señor de los ataques</head>
 					<p>Don Claudio era alto y de entonada presencia. Vestía atildadamente; se teñía la barba y el cabello sin ningún designio falaz, porque sabía que todos lo sabían; calzaba zapatos que relumbraban como cristales;  se sacaba los   puños para mirarse los orientes de sus perlas en el inmaculado blancor; se miraba, también muy complacido, la punta doblada de su pañuelo de seda, caída dulcemente sobre el pecho, insignia ésta de singular y primorosa elegancia de don Claudio, porque muchos pretendieron traer así el pañizuelo, y después de afanosos dobleces habían de sepultar avergonzados todas las marchitas puntas en lo más hondo del alto bolsillo. No podían imitarle.</p>
 					<p>Don Claudio sonreía al hablar, al destocarse delante de las damas, y enseñaba unos dientes apretadísimos, limpios y menudos, de doncellita. Frecuentaba los estrados femeninos, y, aunque ruinoso, todavía le tuviera por la flor de la cortesía el mismo conde Baltasar de Casteglione.</p>
 					<p>Sin embargo, las madres de hijas doncellonas murmuraron con aspereza del caballero: «Este hombre, ¿qué pensamientos tiene?».</p>
@@ -1001,7 +1042,7 @@
 					<p>1903.</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0056_chap18">
-					<head>La señora que hace dulces</head>
+					<head xml:id="ne0056_head_021">La señora que hace dulces</head>
 					<p>Apenas llegó Sigüenza, quiso su prima llevarle a la solana para que viese el rosal trepador  y la yedra  que  plantaron juntos, siendo chiquitos, al pie de los muros.</p>
 					<p>No lo consintió su madre. Era preciso que antes descansara en el sofá, al lado de su sillón de paja vestido de dril, que le refiriese puntualmente los encargos de familia, y lo que le sucediera en el camino, porque tía Paz era lectora muy devota de boletines y relatos de Misiones, y no comprendía un viaje sin peligros. Además, había de darle el jarabe de pina con agua fría de la fuente del Enebro, famosa entre todos los hontanares de la comarca; y después de ver el cuarto que le tenían preparado, irían donde quisiera su hija.</p>
 					<p>La cual juntó sus manitas, hizo un mohín delicioso de niña, y su zapatito de lona con suela de cáñamo, que en ella era como de disfraz de aldeana muy donosa, dio un menudo golpe de enojo en los blancos manises.</p>
@@ -1046,7 +1087,7 @@
 					<p>1909.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0056_chap19">
-					<head>La tía pobre</head>
+					<head xml:id="ne0056_head_022">La tía pobre</head>
 					<p>Hay en lo hondo de la casa un aposentillo con una ventana encima de un patio de baldosas húmedas y roídas. Suena, de tiempo en tiempo, el blando gotear de un caño oxidado, el golpe de una vasija que una mujer del sótano deja abandonada en la umbría de un rincón; sube el grito agudo y áspero de una rata atormentada, ahogada despacito en agua clara, para que vean toda su angustia los niños que han acudido de todos los pisos.</p>
 					<p>Arriba, el cielo es de una dulce claridad; va pasando su pureza y hermosura sobre los muros viejos y rezumantes de los patios, y se aleja al amor de los campos verdes, feraces, luminosos.</p>
 					<p>Ese aposento recibe una luz casta, inmaculada, la primera que baja a la casa. Los alborotos de los gorriones que tienen la querencia en las cobijas y en el arimez dejan por las tardes una impresión de árbol grande, caliente y vivo de nidos, árbol bondadoso que ampara el portal de los casales.</p>
@@ -1076,7 +1117,7 @@
 					<p>1911.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0056_chap20">
-					<head>Sigüenza habla de su tía</head>
+					<head xml:id="ne0056_head_023">Sigüenza habla de su tía</head>
 					<p>Me brinca y aletea el corazón por deciros que tuve una tía viejecita, cenceña, solitaria y rica.</p>
 					<p>¡Por Dios; que no halléis desabrido el cuento! Mirad que es de mucha mitigación para mi ánima, y de grande justicia para mi señora tía que yo haga andariega su memoria.</p>
 					<p>¡Oh, la pobrecita que siempre se estuvo quieta y recatada junto a las vidrieras de su aposento, tejiendo calzas, cuyos puntos contaba por jaculatorias, y alzando, de rato en rato, los cansados ojos hacia los muros húmedos y morenos de la parroquia de San Mauro! ¡Sí, sí, que sea su figura muy peregrina, y sabida de las gentes!</p>
@@ -1111,7 +1152,7 @@
 					<p>1910.</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0056_chap21">
-					<head>Sigüenza, el pastor y el cordero</head>
+					<head xml:id="ne0056_head_024">Sigüenza, el pastor y el cordero</head>
 					<p>La masía estaba en las sierras de Alcoy, sierras ásperas, amontonadas, que se desgarran en hoces y barrancos. Algunas veces son delicadas y graciosas, y se recogen, se ciñen femeninamente la fragosidad de sus faldas y producen una cañada húmeda y obscura, un verdadero regazo, mullido, labrado, donde reposa algún olivo de vejez perdurable y fecunda y tiende sus raíces la higuera napolitana que resuena de abejas.</p>
 					<p>Sucede también que estas sierras, después de haberse mostrado abruptas, cerriles, enemigas hasta en su color de estaño, que da una cabal impresión de aridez, y aun en su huello, que no deja descansar ni tocarlo, se hinchan, se redondean gruesamente y prorrumpen en un vientre generoso, blando y suave: es una loma rotunda, tierna y olorosa, como un pan enorme que parece que huele y sabe a casa labradora: loma llena de grama, de romero, de tomillo, de árnica, de sendas y piedras musgosas, que, al levantarlas, muestran su jazilla de humedad avivada de gusanitos y hormigas que nos tienen miedo.</p>
 					<p>Al comienzo de las laderas reposaba la masía donde fue Sigüenza buscando sosiego y salud. Había mucha viña escalonada, un viejo olivar y un huerto seco, casi yermo dorante el verano; pero, llegadas las primeras lluvias otoñales, se agrieta la tierra y van apareciendo los cogollos tiernecitos de las azucenas, y resucitan las hojas, de un color tostado de amaranto,  de los rosales, y los viejos arbustos de la hierbaluisa, y las lilas se cuajan de yemas jugosas, y  los crisantemos, renegridos por la sed, reciben el alborozo del nuevo verdor, y en cada miga de los terrones surge la pelusa del musgo, de las malvas y de  otras matas cuyas semillas revientan, y nacen equivocadamente las hijas calentadas  por el sol otoñal, que después las abandona y se mueren.</p>
@@ -1162,7 +1203,7 @@
 					<p>1903.</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0056_chap22">
-					<head>De los balcones y portales</head>
+					<head xml:id="ne0056_head_025">De los balcones y portales</head>
 					<p>Caminaba Sigüenza por lo más fragoso y bravío de la comarca alicantina. Era un valle hondo  y muy feraz, entre dos sierras de faldas verdes de viña y panes, y las cimas de muchas leguas yermas entrándose en el cielo.</p>
 					<p>Los pueblecitos y aldeas pardeaban agarrándose temerosamente al peñascal.</p>
 					<p>Sigüenza viajaba en jumento, que era grande y viejo y algo reacio a los mandatos del espolique y a los suaves golpes de sus calcañares, pues montaba a la jineta y todo, aunque en silla de zaleas y de rudos aciones de soga.</p>
@@ -1190,7 +1231,7 @@
 					<p>1903.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0056_chap23">
-					<head>Un envidiado caballero</head>
+					<head xml:id="ne0056_head_026">Un envidiado caballero</head>
 					<p>Los olores de las huertas y del mar llegaron hasta el corazón de Sigüenza. Miraba y aspiraba  este hombre con tanto ímpetu, que llegó a sentir cansancio y dolor en su carne. Y nunca se saciaba, sino que le parecía que le faltaba tiempo para hundir sus ojos en aquellas hermosuras, y recoger toda la vida que se le ofrecía desde el alto camino.</p>
 					<p>Allí estaba el levante frondoso, lleno, regado, alborozado y fecundo. Allí las montañas daban aguas muy delgadas y dulces, y tenían tierras de buena grosura que llevan la sementera, la viña y el olivo; allí el hondo y la solana, todo estaba cuajado de huertas  que apretadamente llegaban hasta las arenas de la costa, y los bancales de hortalizas, que siempre viera Sigüenza al amor de la balsa de una vieja  noria  o  chupando la pobre corriente de las ramblas levantinas, los bancales hortelanos de esta comarca se entraban descuidados bajo el gran sol, rezumando de tan viciosos como si siempre acabasen de recibir los dones de la lluvia, y gozosamente se presentaban al Mediterráneo. Por eso se mezclaba el dulce olor de los frutales y verduras, de campos feraces, con la fuerte y deliciosa emanación de las entrañas del mar.</p>
 					<p>El pueblo comenzaba en la ribera, y se subía por un altozano. Y era muy curioso de ver sus casas de porches abiertos donde se orean las frutas de cuelga; los corrales, con garbas de sarmientos y un dulce sonar de cencerricos de ganado, y las parras desbordando jovialmente de las tapias, y por las bardas de al lado asomaban los remos, algún mástil roto y podrido, las redes tendidas en los balcones, y en el portal, las cañas, los palangres, las nasas de esparto y rimeros de todas las artes de pesca.</p>
@@ -1213,7 +1254,7 @@
 					<p>1909.</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0056_chap24">
-					<head>Plática que tuvo Sigüenza con un capellán</head>
+					<head xml:id="ne0056_head_027">Plática que tuvo Sigüenza con un capellán</head>
 					<p>Estaba la calle sola, en silencio. Dos palomos gordos, azulados, de gravísimo buche, hicieron un gozoso estrépito de alas, y bajaron desde las bardas de una vecina casa angosta y ruda. Picoteaban en los carriles de polvo, en la orilla de la acera. Andaban a pasitos menudos, presuntuosos.</p>
 					<p>Pero no; es posible que estos palomos fuesen tan sencillos como dicen que lo son todos los palomos, y que esa ufanía estuviera en la malicia de la mirada de <seg rend="italic">Sigüenza</seg>. Estos palomos son caseros, retraídos, de cercado, amigos de gallinas enclaustradas, de alguna cabra de corral que pasa el día balando porque se acuerda de la libre y tierna pastura de un collado. Estos palomos han ido envejeciendo y cebándose; han tenido muchas parejas de cría, son ya patriarcales. Y esa mañana, viendo la calle en quietud, bajaron a solazarse, imaginando que descendían a tierras paniegas de solana.</p>
 					<p>Y estas buenas y rollizas aves, que hasta entonces nada más las viera Sigüenza asomadas a los muros donde se amaban y saltaban ladeando las cabecitas, o se paseaban por la cumbrera soleándose pacíficamente como dos gruesos canónigos; estas donosas aves, al caminar  por  el  arroyo,  habían de hacerlo muy despacio por la rudeza del piso y porque sus patitas eran demasiado frágiles para mantener la opulencia y pesadumbre de sus pechugas.</p>
@@ -1241,7 +1282,7 @@
 					<p>1909.</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0056_chap25">
-					<head>Sigüenza, los peluqueros y la muerte</head>
+					<head xml:id="ne0056_head_028">Sigüenza, los peluqueros y la muerte</head>
 					<p>De un librillo de un docto licenciado se deduce que el uso de cortarse el cabello los españoles tiene su origen en el trono y en la desventura. Y fue, porque habiendo enfermado del cuero de la cabeza el emperador Carlos V, hubo de rapársela para untársela bien y cabalmente. Entonces, todos los españoles se esquilaron curándose en salud.</p>
 					<p>Y el autor de ese libro exclama: «Con lo cual estaban libres de peluqueros, y el capricho no había dado en este ramo del lujo que tantos millones cuesta y que más que ningún otro ha contribuido para afeminar a los nombres». Pero, al desposarse doña Ana de Austria, hermana de Felipe IV, con Luis XIII, vinieron de Francia sus gustos, sus deleites, sus costumbres y sus peluqueros. Algunos escritores de mucha sabiduría y austeridad se quejan de los daños que aquellos buenos hombres traen a la patria.</p>
 					<p>El doctor don Gutierre, marqués de Careaga, escribe una <seg rend="italic">Invectiva en discursos apologéticos contra el abuso público de las guedejas</seg>. Se promulgan bandos como este del 23 de abril de 1639, que comienza de esta manera:</p>
@@ -1287,7 +1328,7 @@
 					<p>1912.</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0056_chap26">
-					<head>Campos de Tarragona</head>
+					<head xml:id="ne0056_head_029">Campos de Tarragona</head>
 					<p>Viajaba Sigüenza en un humilde y cansado tren.   Era por los campos de Tarragona, campos exultantes, jugosos y embebidos de azul. Está el azul en las frondas que parecen siempre mojadas, en los troncos, que aun los robustos y viejos son tan tiernos que Sigüenza creía que pudieran abrirse y zumar un verdor hecho luz; está el azul en la encendida tierra que tiene la color gloriosa de las ruinas. Está el cielo, el mismo cielo de la comarca de Sigüenza, redundando el paisaje, como la miel caliente que penetra en el pan. Se derrama la lumbre azul dentro de los colores, avivándolos, estremeciéndolos en sí mismos... Campos de Tarragona, todavía lejos de la costa, y a través de la pompa de oro pálido Y fresco de la retama, y en todo el aire, palpita la claridad del Mediterráneo. Y ese aire de gracia de antiguos horizontes deja en el sol de la mies y en la umbría del pinar la emoción y la blancura rubia del mármol hecho carne. Vemos nuestra angosta vida iluminada y agrandada por un antaño que sonríe con todas las sonrisas de las diosas desnudas. Tierra encamada, inagotable, alma tierra que nutre la olivera, ancha y solemne como un ara, y al lado está el cerezo, oloroso y herido de fruto; tierra milagrosa que da ardor al nopal y el delicioso frío al avellano. En los ribazos se abren las ascuas de los granados; sobre los panes se doblan de abundancia los almendros; de los huertos cerrados suben las palmas; la viña invade la llanura y la mansa cuesta de los alcores; los pámpanos velludos y lustrosos de las higueras se ayuntan con la rigidez de las encinas; los pinares bajan torrencialmente por la montaña, y los algarrobos, sacando sus garras de raíces de la besana, de los barbechos, de las laderas, caminan tercos y fuertes hasta el mar, y entre los peñascales se tienden rendidos calándose sobre los eternos confines azules.</p>
 					<p>Campos de Tarragona, hervor y almáciga de paisajes, tierra de olor caliente y bueno de madre limpia, grande y sana...</p>
 					<p>...Llegó el tren de Sigüenza a un pueblo abrupto, con muros almenados, prorrumpiendo de casas anchas y morenas. Olmos centenarios dejan su sombra y un alboroto de pájaros en la ventana de un aposento, donde quisiéramos leer un libro arcaico que nos parecería reciente. De cuando en cuando, saldría nuestra mirada como si quisiera contemplar en el silencio campesino el alma de sus gratos y sutiles rumores. Quizá se nos escapase de los dedos una página trémula, viva, aleteante por el vientecillo que viene cargado de olor de simiente, de árboles y de agua de riego de huertas.</p>
@@ -1317,9 +1358,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>La ciudad</head>
+				<head xml:id="ne0056_head_030">La ciudad</head>
 				<div n="27" type="chapter" xml:id="ne0056_chap27">
-					<head>Razón y virtudes de muertos</head>
+					<head xml:id="ne0056_head_031">Razón y virtudes de muertos</head>
 					<p>Dice Sigüenza que el amor más grande del hombre, además del amor al hijo, es el de su personalidad, de su conciencia, del sentimiento de sí mismo.</p>
 					<p>Este autosentimiento, esta visión de sí mismo, es el principio y efecto, la flor y el fruto de su vida, la luz y la sal de su vida, de la vida del ser complejo, conjunto sociable de muchas vidas o células sedentarias. Parece que somos una suma, una emulsión de treinta trillones de células. (¿Treinta trillones o sesenta trillones? Es igual.)</p>
 					<p>Sigüenza mira su carne; mira también, honestamente, la carne de los demás.</p>
@@ -1349,7 +1390,7 @@
 					<p>1914.</p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0056_chap28">
-					<head>La aldea en la ciudad</head>
+					<head xml:id="ne0056_head_032">La aldea en la ciudad</head>
 					<p>Sigüenza ha entrado en la ancha calle de «todos  los días», calle <seg rend="italic">europea</seg>, recta, larga, con árboles esquilados que se juntan a lo lejos haciendo un macizo de verdura; con cables, que revibran como una cigarra enorme de este hondo ardiente de la ciudad. Todas las mañanas llega Sigüenza al mismo cantón de la calle, pasando por los mismos sitios, y al pisar las roídas losas y las desolladuras de cemento de la acera vuelve a vivir en las anteriores mañanas.</p>
 					<p>Todos recordamos que Kant salía puntualmente a las dos de la tarde de su casa de Koenigsberg, y se recogía a las tres, caminando siempre por los mismos lugares. Parece que esto fue lo único que vio del mundo de fuera. Y tampoco lo vio, porque iba entregado al mundo metafísico. Pues Sigüenza aventaja al filósofo en tardar más tiempo; en que el mundo de fuera, los desportillos y atolladeros de las baldosas le recuerdan el camino de su oficina, y, finalmente, se diferencia del varón de Koenigsberg en que éste andaría con el reposo del sabio, y Sigüenza con el atolondramiento de un hombre que llevase una recia cartera de <seg rend="italic">negocios</seg> debajo del brazo, pero que no trae esa cartera. ¡Es terrible, Señor, tener prisa y no sentirla, y sentirla y no tenerla!</p>
 					<p>Y cuando <seg rend="italic">esa</seg> mañana -que no es preciso determinarla porque es semejante a todas las mañanas- ha llegado Sigüenza a <seg rend="italic">su</seg> parada de tranvía, ha visto que le miraba y se le acercaba un señor capellán.</p>
@@ -1414,7 +1455,7 @@
 					<p>1914.</p>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0056_chap29">
-					<head>La fruta y la dicha</head>
+					<head xml:id="ne0056_head_033">La fruta y la dicha</head>
 					<p>La frescura y delicia de las cerezas y de los albaricoques, que van llegando a la plenitud  del sabor de sus sucos, de los colores y gracia de su forma y de la fragancia de su piel, traen siempre a Sigüenza el recuerdo de las josas y de los huertos, cuando están los frutales desnudos de fronda y prendidos delicadamente de flor nupcial. Y esas cerezas, ya grandes, con un brillo tierno, jugoso y frío en su encendimiento de sangre y de brasa, y esos albaricoques que huelen y saben a jardín romántico y a carne de mujer de una castidad tan melancólica y selecta que santificaría el mismo pecado, estas frutas presentan también a Sigüenza la emoción del verano, le colocan bajo un pórtico estival: desde él se ve la vida campesina, dorada, gloriosa -sin dejar de sentirse la primavera-, una vida grande, llameante y breve. Y recuerda también una mañana que comió una guinda o un albaricoque tan exquisito que quiso perpetuarlo y plantó el hueso en... ¿dónde plantaría ese hueso, Señor?</p>
 					<p>...Pues en esos «días frutales» se ha oído a sí mismo pronunciar: «seamos dichosos». Y al decirlo comenzaba a serlo; su vida se abría gozosamente para recibir los finos oreos y las largas contemplaciones de la dicha prometida. Porque en aquellas palabras había un principio de voluntad y de conciencia de la dicha, sin las cuales el hombre a quien las gentes envidian por venturoso se aburre, y el aburrimiento no es ni desgracia; es una tristeza obscura, confinada de humo que viene de las hogueras de los otros. ¿Habéis visto un niño que se aburre? Parece que se anticipe a una pobre mayor edad; un niño que se aburre es un remordimiento para los grandes. En la mirada de un niño aburrido ve Sigüenza las angustias de los hombres. Y un hombre que se aburre ha regresado a una infancia sin ternuras, sin tránsitos de ilusión, de exaltación.</p>
 					<p>Pero este «seamos dichosos» de Sigüenza no ha surgido sólo de quererlo ser. Se lo habrá dictado un instante bueno y emotivo, de holgura de alma, en que todo se presenta a nuestros ojos de una manera cordial y fácil.</p>
@@ -1426,7 +1467,7 @@
 					<p>1914.</p>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0056_chap30">
-					<head>El discípulo amado</head>
+					<head xml:id="ne0056_head_034">El discípulo amado</head>
 					<p>En aquel tiempo pasaba Sigüenza muchas tardes por un lugar callado más hondo y  obscuro que todos los lugares de la ciudad, porque allí las calles eran estrechas, los muros altos, el suelo empedrado rudamente como un camino aldeano. Si alguien se quedaba mirando a Sigüenza desde una vidriera, él se decía: Será un enfermo, una mustia doncella, una viejecita que cuida de su hermano beneficiado, segundo organista o maestro de ceremonias de la catedral; será una madre viuda que apenas ve a su hijo, porque este hijo mozo, disipado y alegre, vive todavía en los sitios grandes y magníficos, y cuando se recoge ya es el alba, y la madre suspira en su dormitorio, oyendo las pisadas y las toses de fatiga del hijo entre la pureza de las primeras campanas...</p>
 					<p>Y todas esas pálidas  cabezas  que  miraban  a Sigüenza no parecía que se asomasen detrás de los cristales, sino detrás del tiempo, del tiempo dormido en el viejo lugar, a la umbría de la basílica. Y en esos cuerpos se perpetúa el alma de las primitivas familias que han morado en estas mismas casas venerables y tenebrosas como retablos. Allí la piedad se ha hecho carne y piedra. Habrá matrimonios ricos, reumáticos y estériles. Los domingos les visitarán los sobrinos, vestidos austeramente, sin galas ni joyas, aunque puedan traerlas y las tengan, para que los tíos no sospechen vanidades y les malquieran.</p>
 					<p>Quizá vive con ellos, de continuo, algún sobrinito porque se ha quedado huérfano o porque así les conviene a los padres. Estos sobrinitos suelen aborrecer los floreros de la cómoda o un álbum de retratos descoloridos, bordado por la señora en los primeros meses de su desposorio, cuando todavía esperaba los dulces afanes de la maternidad, que seguramente le fue negada para difícil prueba de su resignación y mansedumbre; aborrecen a la criada, una antigua criada, morena, seca, desabrida; aborrecen unas llaves de la señora, una toca raída, los botones del gabán del esposo, un cigarro de brea, algo que se halla cerca del cariño y de la vida de sus tíos...</p>
@@ -1458,7 +1499,7 @@
 					<p>1914.</p>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0056_chap31">
-					<head>La ciudad</head>
+					<head xml:id="ne0056_head_035">La ciudad</head>
 					<p>Algunas mañanas, cuando sale Sigüenza, halla que la ciudad es más grande y poderosa que otros días; parece que sólo ella quepa en la mañana. La ciudad retiembla, hierve, resuena y abrasa con un ímpetu que no encuentra anchura donde expansionarse, con una impaciencia que se devora a sí misma mitológicamente para crecer más con su hambre y su mantenencia. Y nosotros, y los árboles, y los pájaros, y el aire, todo, todo es ciudad, todo participa de su fragor y de su dureza. No tiene paisaje ni cielo; no la rodea la creación. Está ella sola.</p>
 					<p>Se oye el silbo de un tren. Un tren nos presenta siempre evocaciones campesinas. A Sigüenza le emocionan más las beldades que viajan que las de los saraos y teatros, por el misterio de las mujeres viajeras, por la melancólica idea de que no las volveremos a ver y porque esas mujeres viajeras, aunque no se asomen al camino, pasan sobre fondos de naturaleza. Las mujeres debieran amar el campo siquiera agradecidas de lo que el campo las <seg rend="italic">favorece</seg>. Una mujer de espíritu patricio que huela a campo, que tenga la luz y el aliento del paisaje en su mirada, en sus cabellos, en su carne, en sus ropas, en toda su figura, es una vida tan primitivamente sagrada y triunfal, que, siendo ella, es a la vez un resumen de las gracias femeninas, y rinde con una dulce gloria al hombre. La mujer tiene entonces encanto de diosa; el velo de lo sagrado ha sido siempre la inquietud tentadora del hombre. Lo sagrado sin tentaciones que remediar se hallaría en una tristeza y soledad divinas inconcebibles...</p>
 					<p>Pero no ha de ataviarse el espíritu con naturaleza como se adorna un sombrero con frutas y flores y aves, porque hay el riesgo de que el tocado resulte demasiado geórgico...</p>
@@ -1473,9 +1514,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Argüelles</head>
+				<head xml:id="ne0056_head_036">Argüelles</head>
 				<div n="32" type="chapter" xml:id="ne0056_chap32">
-					<head>Simulaciones (Llegada a Madrid) 
+					<head xml:id="ne0056_head_037">Simulaciones (Llegada a Madrid) 
 					</head>
 					<p>No recuerda ahora Sigüenza dónde ha leído -el no anotar, el no marginar el estudio, dejándolo que se le transfunda como elemento de la propia sangre, le incapacita para ser erudito o crítico-; no recuerda dónde ha leído que la moderna arquitectura metálica, de sostenes y costillajes monstruosos separados del organismo del edificio, osamentas de hormigón, vértebras y articulaciones de cemento, tiene sus antepasados en los contrafuertes, arbotantes y bizarrías del arte gótico.</p>
 					<p>Pues las formidables y chatas locomotoras <seg rend="italic" type="foreign" xml:lang="en">Pacific</seg> tendrán también, por lo que atañe a su sirena, un antecedente de música litúrgica.</p>
@@ -1498,7 +1539,7 @@
 					<p>1919.</p>
 				</div>
 				<div n="33" type="chapter" xml:id="ne0056_chap33">
-					<head>La nena de la tos ferina</head>
+					<head xml:id="ne0056_head_038">La nena de la tos ferina</head>
 					<p>De lejos, de una casa nueva, que remata en una torrecilla india con cuatro águilas de fundición, vienen por las noches, atravesando un solar vallado, aullidos de ahogo. Y la noche, tan inmóvil, tan dulce, se estremece de hipo.</p>
 					<p>Sigüenza deja su lectura y acude para mirar. ¡Qué delicia la del cielo enjoyado, la del silencio después del aullido! Y al remover otra página se vuelve con recelo hacia el foscor de la casa de las cuatro águilas. No es posible que los clamores salgan de ese edificio de elegancia dominguera. Pero de allí vienen siempre. Nadie hace caso. Lo que da miedo, el miedo de padecer, es que en esos gritos convulsos de estrangulación se ven las uñas de las manos que se niñean para aguantarse, para resistir desesperadamente, y el alarido de bestia se agota en una queja de garganta frágil de hija.</p>
 					<p>-Es una niña que tiene la tos ferina.</p>

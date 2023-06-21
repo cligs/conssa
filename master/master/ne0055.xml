@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Figuras de la Pasión del Señor 2</title>
-				<title type="sub"></title>
+				
 				<title type="short">Pasion2</title>
-				<title type="idno"><idno type="viaf">309275657</idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1306</measure>
@@ -138,16 +131,42 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0055</idno>
+						<idno type="cligs">ne0055</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/figuras-de-la-pasion-del-seor-i/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, <date when="1933">1933</date></bibl>
-				<bibl type="edition-first"><date when="1917">1917</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Figuras de la Pasión del Señor 2</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/309275657/">309275657</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/figuras-de-la-pasion-del-seor-i/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <date when="1933">1933</date></bibl>
+					<bibl type="edition-first"><date when="1917">1917</date><idno source="k10plus" type="ppn" n="575635991" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=575635991"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"> <date when="1917">1917</date>, <publisher>Domenech</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="575635991" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=575635991"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta. Corpus y otros cuentos. El abuelo del rey. Dentro del cercado. Figuras de la pasión del Señor. El humo dormido</title> <date when="2007">2007</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362189" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362189"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -158,6 +177,14 @@
 			</abstract>
 			
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -186,7 +213,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">figuras</term>
 					<term type="text.genre.subtitle.source" resp="bne">figuras</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">figuras</term>
@@ -218,6 +245,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-07" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,7 +255,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0055_chap1">
-				<head>Pilato y Cristo</head>
+				<head xml:id="ne0055_head_000">Pilato y Cristo</head>
 				<quote><p>«[...] Mas los judíos gritaban diciendo: "Si sueltas a ése, no eres amigo de César"».</p>
 					<p>(S.  Juan, XIX,   12)</p>
 				</quote>
@@ -665,7 +693,7 @@
 				<p>En la paz del Pretorio tronaron las bocinas, pregonando la hora sexta.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0055_chap2">
-				<head>Simón de Cyrene</head>
+				<head xml:id="ne0055_head_001">Simón de Cyrene</head>
 				<quote><p>«Y obligaron a uno que pasaba, Simón de Cyrene, padre de Alejandro y de Rufo, que venía de una granja, a que cargase con la cruz de Jesús».</p>
 					<p>(S. Marcos, XV, 21)</p>
 				</quote>
@@ -760,7 +788,7 @@
 				<p>Mucho tiempo pasaron para arrancársela. Era como la arista de un cascabillo de cebada. Y se la dieron. Simón lloraba mirándola...</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0055_chap3">
-				<head>Mujeres de Jerusalén</head>
+				<head xml:id="ne0055_head_002">Mujeres de Jerusalén</head>
 				<quote><p>«Y le seguía una multitud, y entre ella un grupo de mujeres que le lloraban».</p>
 					<p>(S.  Lucas,  XXIII, 27)</p>
 				</quote>
@@ -868,7 +896,7 @@
 				<p>En torno de las murallas, en el júbilo de las ferias, encontraban a sus esposos, a sus padres, a sus hermanos, dándose un saludo recatado y breve, porque todos acechan a la judía y murmuran de la que se para a platicar con los hombres.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0055_chap4">
-				<head>María Cleofás</head>
+				<head xml:id="ne0055_head_003">María Cleofás</head>
 				<quote><p>«Y estaban junto a la cruz de Jesús su madre y la hermana de su madre, María de Cleofás, y María Magdalena».</p>
 					<p>(S.   Juan,  XIX,   25)</p>
 				</quote>
@@ -1007,7 +1035,7 @@
 				<p>De una granja venía el balar de una oveja parida y el fresco ruido de una balsa llena...</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0055_chap5">
-				<head>Sanhedritas amigos de Jesús</head>
+				<head xml:id="ne0055_head_004">Sanhedritas amigos de Jesús</head>
 				<quote><p>«Y  he aquí un varón llamado Josef, que era sanhedrita, varón bueno y justo. Éste llegó a Pilato y le pidió el cuerpo de Jesús».</p>
 					<p>(S. Lucas,  XXIII, 50-52)</p>
 				</quote>
@@ -1159,7 +1187,7 @@
 				<p>-¡Lástima de hombre!</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0055_chap6">
-				<head>La samaritana</head>
+				<head xml:id="ne0055_head_005">La samaritana</head>
 				<quote><p>«Vino una mujer de Samaria a sacar agua, Jesús le dijo: "Dame de beber"».</p>
 					<p>(S. Juan,  IV, 7)</p>
 				</quote>
@@ -1237,14 +1265,14 @@
 		<back>
 			<div>
 				<div>
-					<head>Aquí terminan las figuras de la Pasión del Señor</head>
+					<head xml:id="ne0055_head_006">Aquí terminan las figuras de la Pasión del Señor</head>
 				</div>
 					<div>
-						<head>Apéndices</head>
+						<head xml:id="ne0055_head_007">Apéndices</head>
 						<div>
-							<head>I. Figuras de Bethlem: (Fragmentos)</head>
+							<head xml:id="ne0055_head_008">I. Figuras de Bethlem: (Fragmentos)</head>
 							<div>
-								<head>Bethlem</head>
+								<head xml:id="ne0055_head_009">Bethlem</head>
 								<quote><p>«Y tú, Bethlem, tierra de Judá, tú no serás el más humilde de los lugares, porque de ti ha de salir el que disponga de mi pueblo».</p>
 									<p>(Micheas, V, 2.- San Mateo, II, 6)</p>
 								</quote>
@@ -1261,7 +1289,7 @@
 								<p>Después de los vergeles, las tierras llevan olivar, viña, mijo, centeno, cebadales... y en los campos segados y en la hierba de la senara, tocan las esquilas de los corderos de Bethleem.</p>
 							</div>
 							<div>
-								<head>Ruth</head>
+								<head xml:id="ne0055_head_010">Ruth</head>
 								<p>Vino el hambre al país del Señor, y hasta Bethlem, la aldea recostada en su abundancia, se descarnó de sufrir. Muchas gentes se alzaron de sus heredades, y entre ellas Elimeleck, siervo puro de Dios, y su mujer Noemí, la hermosa, y sus dos hijos.</p>
 								<p>Atravesaron la serranía, rodearon las aguas de sal de la mar muerta y se acogieron a la tierra extraña de Moab, que estaba rubia de cosechas.</p>
 								<p>Allí murió el padre, y se casaron los hijos con mujeres moabitas; la una se llamaba Orfa, y la otra Ruth. Y después de diez anos, ellos también murieron. Entonces Noemí, huérfana de todos los de su sangre, sintiose más extranjera.</p>
@@ -1337,7 +1365,7 @@
 								<p>Allí vuelve a la «Sulamita» el gozo de su infancia; allí espera todas las mañanas al rey que la inunda de caricias como el sol que lo trae. Y Salomón pasa por Bethlem en su carro de luz, y la aldea queda magnificada bajo el vuelo de las vestiduras del descendiente de Ruth, la mujer que alzaba las espigas que se le caían a los jornaleros...</p>
 							</div>
 							<div>
-								<head>Llegan San José y Santa María</head>
+								<head xml:id="ne0055_head_011">Llegan San José y Santa María</head>
 								<p>-¡Abrok!... ¡Abrok! -gritan los caravaneros levantando   el   dorbán, la   vara  de  bambú de anillos de colores, y en la punta el rejón que aguija el portante de la recua.</p>
 								<p>-¡Abrok!... ¡Abrok! -Y los camellos se van arrodillando, con un ruido de aparejos, de odres, de cántaras; les tiemblan los corvejones, acortezados de callo; les crujen las ancas huesudas, hasta doblarse y postrarse del todo, muy despacio, para no volcar ni una vasija ni un atadijo de la carga. Dóciles y medrosos vuelven al amo sus ojos de niebla, y se les tuerce y eriza el enorme labio hendido como una llaga seca.</p>
 								<p>Les quitan los costales, y bajan de los «kar» las mujeres, rodeadas de hijos; los ancianos, las siervas. Sus túnicas, sus ropones, sus lienzos, tienen la rigidez del cuero; se han endurecido en los relentes y tolvaneras de los llanos de Samaria, en las hoyadas verdes de Galilea, en las humedades y aires de sal de las vertientes del Hebrón.</p>
@@ -1360,7 +1388,7 @@
 								<p>...Eran San José y Santa María.</p>
 							</div>
 							<div>
-								<head>Los tres caminantes</head>
+								<head xml:id="ne0055_head_012">Los tres caminantes</head>
 								<p>Se les veía en los fríos azules de las bóvedas, en los escalones de sol de Sión y de Ofel, en las costanas arrabaleras, en el trajín de los paradores... Otros vinieron con mitras de pieles, con nutras de lumbres, con mitras de lino y, en medio, el globo de los Sassanidas; mitras armenias, frigias, medas, persas... Se apartaban por las rutas de Ptolemaida y de Ascalón; y, después, las ciudades de Idumea, de Fenicia, de Libia, de Italia se los llevaban para embeberse del poder de sus maleficios, del secreto de su estrellería. Dominaban el Mundo; y el Mundo los devoraba. Ellos no. Balthásar, Gaspar y Melchor no salían de Jerusalem, escudriñándolo todo; embelesándose y desconfiando de todo.</p>
 								<p>Y bajaron a Xystus, la plaza de claustros blancos, tan íntimos y frágiles entre las combas del puente de Tyropeon y el cubo cimero de la torre Antonia. Los soportales del Sanhedrín, las escarpas del Templo resudan el oro de sus piedras viejas. Encima, la tarde palpita coronada  de   palomas   de   los   columbarios que fundó Herodes. Pasaban fariseos tenebrosos y oblicuos; saduceos avenidos con  los  extraños  que menosprecian el país del Señor y quieren amistad con la corte judía; mercaderes y contratistas, centuriones de la <seg rend="italic">Castra hiberna</seg> de Siria que reposan de sus jornadas financieras y militares; atenienses nómadas que siguen a los patricios en sus viajes, les  redactan  sus  epístolas,  les  componen   tonadas para sus Mimos, llegan a probar que Homero nació en una colina  de Roma...- Y la bojiganga griega que  representaba   en   la   Parthia   «Las   Bacantes», arranca del tirso de Agavé el mascarón de Penteo, y clava en la pina la cabeza de Craso que ha traído el sátrapa vencedor de las águilas romanas.</p>
 								<p>Plaza honda de mármoles; remanso de ocios; brillos de literas, de cotas, de yelmos. Los felats de andrajos y mataduras, paran sus jumentos; abren los cofines de higos y dátiles, las seras de membrillos, de granadas, de melones y uvas de invierno. Y las manos y las ropas de los gentiles se llenan del olor de los campos de las Doce Tribus.</p>
@@ -1474,14 +1502,14 @@
 							</div>
 						</div>
 						<div>
-							<head>II. La conciencia mesiánica en Jesús</head>
+							<head xml:id="ne0055_head_013">II. La conciencia mesiánica en Jesús</head>
 							<p>La revista <seg rend="italic">España</seg> me había encomendado otro tema, que resumidamente era: «El monoteísmo  y el culto de los santos locales en España». Leyéndolo, recordé las palabras de San Agustín: <seg type="quotation">«Los ídolos expulsados de sus templos, se refugian muchas veces en el fondo de los corazones»</seg>. Y después, lo que el Rdo. F. Cabrol ha escrito en «La Oración de la Iglesia»: <seg type="quotation">«Se ha dicho que los dioses del paganismo han sido trocados en santos; o, también: que el vulgo sustituyó a sus ídolos por otros bautizados con distinto nombre. Es rigurosamente histórico que en ciertos lugares, el culto de un dios fue suplantado por el de un santo; mas esta transformación no debe sorprendemos. La Iglesia no ha venido a destruir el sentimiento religioso, sino a purificarlo y ennoblecerlo»</seg>.</p>
 							<p>Quizá con esos textos, algunas fáciles citas místicas y hagiografías, y la añadidura de lo que yo he podido recoger por esos pueblos y parroquias de España, el artículo para este número se me daba ya casi modelado. Pero en estos días, cerca de la Semana Santa, me ha parecido de más cristiana <seg rend="italic">actualidad</seg> remover y exprimir algunos estudios relativos a la vida del Señor. Sé que el título <seg rend="italic">La Conciencia mesiánica en Jesús</seg>, es demasiado presuntuoso y viejo; y, sin embargo, no se me ofrece otro tan sencillo y ardiente.</p>
 							<p>Hace tiempo, yo le decía a un devoto: Nadie ha podido saciar el ansia de saber la vida de Jesús desde su niñez hasta el principio de su predicación. ¿Cómo vivió, qué pensó, qué hizo Jesús hasta los treinta años?- Y el devoto me contestó arrebatadamente: -¡Y a usted qué le importa!</p>
 							<p>Sí que les importa a muchos ortodoxos y heterodoxos; y les importa para bien de la sensibilidad religiosa.</p>
 							<p>Yo, aquí, escogeré cuatro autores de distinto acento de fervor: Stapfer, Chollet, Harnack y Le Camus. Y al renovar su lectura, con la de los Evangelios y la de algunas páginas de Josefo, iré condensando, elementalmente, tres apuntes con estos tres epígrafes: «Infancia de Jesús».- «La plenitud de los tiempos».- «Bautismos y tentaciones».</p>
 							<div>
-								<head>Infancia de Jesús</head>
+								<head xml:id="ne0055_head_014">Infancia de Jesús</head>
 								<p>Aparte del nacimiento, de la epifanía y del episodio del Templo (San Lucas, II), en que después nos hemos de parar, los Sinópticos callan la vida de Jesús hasta que cumple treinta años. Como nada dicen de su infancia y cada día se comunica más la inquietud de saberla y amarla, los Apócrifos escriben sus relatos con toda la exaltación y complacencia de los orientales en lo ingenuamente maravilloso. Pero, en sus escritos, la niñez de Jesús resulta la de una criatura poseída, obra  de  brujería  popular,  un  poco cansada.  Ni siquiera tienen el calor humano y la gracia primitiva de la historia de María y de Josef, el Carpintero.</p>
 								<p>Se ha de reconstruir la infancia del Señor acogiéndose a la semejanza de su hogar con los otros hogares nazarenos, piadosos y pobres.</p>
 								<p>Nazareth resplandece de cal en la ladera de una colina desnuda.  Casas cuadradas, con su escalera exterior del terrado y cámara alta para las noches calientes;  campos  de  trigo y de viña; cercas de cactos;  higueras y  olivar.  La Synagoga con sus follajes viejos. Pasada la última cuesta del camino, a la entrada del pueblo, la fuente donde acuden las mujeres y los hijos. María viene a llenar sus cántaros.  Más tarde trae a Jesús. La madre, con el ánfora recta sobre su frente; el hijo, con el cantarillo que le va goteando hasta el portal. María le enseña la plegaria. Escucha -<seg rend="italic">Schema</seg>-; los versículos mosaicos más precisos -el Dios único, la predilección de Dios por su pueblo. Todavía no hay verdaderas escuelas en Palestina-. La única <seg rend="italic">Beth Hassepher</seg> -Casa del libro- está en Jerusalén. Del año 60 al 70, después de Jesucristo, principian las fundaciones escolares con carácter obligatorio. <seg type="quotation">«Perezca el Santuario antes que los niños dejen de ir a lección»</seg>, dice el Talmud.</p>
@@ -1495,13 +1523,13 @@
 								<p>Después, añade San Lucas: <seg type="quotation">«Y descendió con ellos -con José y María- y vino a Nazareth; y estaba sujeto a ellos. Guardaba su madre todas estas cosas en su corazón»</seg>.- José muere pronto; ya no se le nombra, <seg type="quotation">«y Jesús crecía en saber, en edad y gracia delante de Dios y de los hombres»</seg>.</p>
 							</div>
 							<div>
-								<head>La plenitud de los tiempos</head>
+								<head xml:id="ne0055_head_015">La plenitud de los tiempos</head>
 								<p>Con la plegaria y el concepto del Dios único, el judío recibe de los padres sus convicciones políticas exclusivistas. La Patria es el «país del Señor». La tierra, sus frutos y los hijos a Él le pertenecen. Jeovah es el Dios de los ejércitos, que aparta al extranjero, y el Dios agrícola, que tiene la Dave de las lluvias y ama y exige la primicia de las cosechas. Un pueblo, un Dios, un caudillo, un dueño, un altar. Cada vez que los hebreos cometen el pecado de  la fornicación religiosa, volviéndose a divinidades gentílicas sanguinarias y muelles, Jeovah permite que las gentes extrañas los opriman o los deporten a países remotos y duros. Los hebreos claman. Entonces, surgen los liberadores. Cada juez que se levanta, significa ya el arrepentimiento de un contagio politeísta. Cada profeta es un medianero del Señor, que avisa el mal y el castigo; que promete el triunfo mesiánico. Con la Monarquía se ha perdido la inocencia patriarcal que aun  quedaba en la época  de la judicatura. Ocurre el cisma de las tribus. El tránsito de Alejandro deja un surco de paganismo. La Galilea se va poblando de gentiles. El habla Greciana se oye tanto como el arameo. Hay estatuas inmundas, convites y galas abominables; teatros, gimnasios, certámenes. Algunos hebreos participan de las luchas y carreras; y como han de presentarse desnudos, ocultan su circuncisión con un prepucio artificial. La ortodoxia tiene distinta palabra en cada una de las tres sectas: essenios, fariseos, saduceos. Finalmente, el trono de David pasa a un linaje advenedizo. Un idumeo, Antipater, se apodera de la voluntad apocada de Hyrcan, el príncipe y pontífice legítimo. El hijo de Antipater, Herodes, es proclamado rey por el imperio y fuerza de Roma, que ya no levanta su pie de la tierra elegida. Se enciende la revuelta contra los sacrilegios del rey y de la intervención romana. Un águila de oro, puesta por Herodes en los portales del Santuario, remueve la ira de los creyentes, que arrebatan el emblema y lo destrozan. Los héroes, cuarenta  fariseos  puros, son quemados vivos. Un decreto del Emperador, ordenando el censo de las familias y propiedades de Israel para  regular  los tributos,  desata  el  motín,   que  acaudilla  Judas   el Gaulonita. El «país del Señor» no ha de tributar sino al Señor. Judas muere en el suplicio. Dos hijos suyos, herederos de su rebelión, son crucificados. Después de Herodes, Varus, el legado del César, cuelga de la cruz a dos mil judíos. El reino se reparte en tetrarquías. Es una provincia romana. Y el asesinato patriótico se comete en la ciudad, en la granja, en el camino. No puede resistir más el devoto. Y vuelve su mirada a los textos apocalípticos: Ha de venir el verdadero caudillo que consuele a Israel, que realice todas las promesas mesiánicas. Será de la sangre davídica; ante su aparición, se purificará la patria de injusticias y contaminaciones. El Ungido humillará todos los pueblos; se le arrodillarán todos los reyes; se volverá Jerusalén de oro, de púrpura y de cedro; y los hebreos, todos los hebreos, vivirán ya siempre en las delicias de un sábado abundante y eterno del Reino de Dios...</p>
 								<p>Los rabinos lo repiten inflamadamente. Llega el Mesías, porque había de venir en la hora de las más grandes desgracias, y éstas han ido cumpliéndose. He aquí la plenitud de los tiempos. La exaltación de las esperanzas es como una espada encendida de gozo, que traspasa desde la serranía del Hebrón, desde las nieves del Hermón, desde la cumbre redonda del Thabor a las aguas azules del Tiberiades. Todo aguarda el grito del mensaje divino. Y los ancianos y las mujeres y las criaturas que acuden al hortal y a la fuente callan y se vuelven esperando cuando pasa un caminante forastero o ven subir el polvo de una caravana.</p>
 								<p>Nazareth ha redoblado su plegaria y su ansiedad. Jesús se para entre los grupos lugareños; se recoge en la oración y en la lectura de los escritos proféticos; se aparta en la quietud de los campos, bajo la gloria y soledad de los cielos. Y parece que inclina su oído hacia su corazón y en él escuche el corazón del mundo.</p>
 							</div>
 							<div>
-								<head>Bautismo y tentaciones</head>
+								<head xml:id="ne0055_head_016">Bautismo y tentaciones</head>
 								<p>Desde que Jesús cumplió doce años -la mayoría de edad religiosa- asiste a las grandes fiestas rituarias. En el trastorno de Jerusalén se le renueva el panorama del mundo. La patria, cerrada por los antepasados, se abre, estos días, a todas las proyecciones de Oriente y Occidente. Desborda de extranjeros y de hermanos judíos que llegan de Alejandría, de Grecia, de Italia, de lo profundo de Asiria... Y entre los placeres, el júbilo y el tumulto, Jesús descubre siempre un  aturdimiento  infantil  en  los  hombres   que   se cansan y gozan sin ser felices.  Pasión y tristeza; sequedad y olvido de todo valor humano. Y en el templo del Señor, ferias de ganados, de  aves, de frutas, de amuletos, de ropas; mesas de cambistas; ruedos de tañedores. Humos apretados y olorosos del brasero de los perfumes y de las reses quemadas. La plegaria, los cánticos, las disputas, se juntan en grito sin emoción de palabra. Y, arriba, pasa el cielo desnudo, solitario y azul, separado del todo de la tierra...</p>
 								<p>Cuando Jesús se vuelve a Nazareth, tiene un desabor, una fatiga de la enorme ciudad; y los campos, el silencio, los horizontes suyos le acogen más íntimos. Gobierna el obrador de carpintero que le dejó su padre. Labra yugos, cribas, bieldos, arados, celemines, vigas, postigos. Acude a las casas y heredades para remendar las techumbres, las escalas de los terrados, las tarimas, los cofres, los aperos agrícolas. En sus marchas de artesano rural aprende las más escondidas veredas; se para mirando la faena de los jornaleros de la labranza, de la viña, de los huertos; el cuidado de los pastores, la labor de las mujeres hacendosas, el vuelo y las costumbres de las aves, la hermosura olvidada de algunas plantas: las anémonas, las ciclamas, los ranúnculos. Todo lo atiende, todo lo aspira, todo lo contempla; se le va quedando la imagen y la sensación exacta de la vida de los hombres y de las cosas en la calma de la naturaleza; y de todo ha de valerse cuando trace la visión del Reino de Dios.</p>
 								<p>No le basta el oficio del sábado en la Synagoga, y aprovecha las tardes del lunes y jueves, que también se abre la Casa de la Oración; y como entonces no es obligada la asistencia, hay menos devotos; es posible el diálogo, la lectura  entretenida, la glosa espontánea  con  el buen hombre   que  guarda los Libros  Santos;  puede  trasladar algunos textos en fajas de  pergamino, y  quizá un viejo  escriba le ayude a copiar. Jesús ha leído los libros de Moisés, de Josué, de los Jueces, de los Reyes, de Samuel, de Isaías, Jeremías, Ezequiel, Oseas, Joel, Amós, Abdías, Jonás, Micheas, Nahum, Habacuc, Aggeo, Zacarías,   Malakias,  y   el  libro  de Daniel y los Salmos.</p>

@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Amores de Antón Hernando</title>
-				<title type="sub"></title>
+				
 				<title type="short">AmoresAntonHernando</title>
-				<title type="idno"><idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">522</measure>
@@ -138,16 +131,38 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0047</idno>
+						<idno type="cligs">ne0047</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/amores-de-anton-hernando-2/"/>.</bibl>
-				<bibl type="print-source">Los Contemporáneos, <date when="1909">1909</date></bibl>
-				<bibl type="edition-first"><date when="1909">1909</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Amores de Antón Hernando</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/amores-de-anton-hernando-2/"/>.</bibl>
+					<bibl type="print-source">Los Contemporáneos, <date when="1909">1909</date></bibl>
+					<bibl type="edition-first"><date when="1909">1909</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -155,6 +170,14 @@
 				<p>La imagen pura de Elena, de la que se anomora a los catorce años, preside toda su adolescencia, suscitando en él sueños de inocencia pagana. Su recuerdo tendrá que luchar con las fuerzas del instinto, representadas por otras mujeres que se cruzan en su camino.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -188,7 +211,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">autobiographical</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela autobiográfica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -217,6 +240,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-01" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -224,7 +248,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0047_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0047_head_000">- I -</head>
 				<p>Parece que quien escribe o cuenta de su vida, necesariamente ha de decirnos las maravillas del héroe, la excelsitud del genio, la destreza del <seg rend="italic">pejenicolao</seg> o los donaires y travesuras de un Don Pablo...</p>
 				<p>Yo no he de asombraros por mis audacias, ni cegar vuestro entendimiento con las lumbres del mío, ni quiero que se me tenga por pícaro, gracioso y desenvuelto.</p>
 				<p>Empiezo confesando que mi nombre es el de Antonio, y mi linaje el de Hernando, de los ricos labradores de La Mancha, humildes y temerosos de Dios. Mis padres, por llaneza y poco cuidado en imaginar, no lo tuvieron de adornarme con nombre, que, delante de Hernando, calificase el apellido y aun entrambos se diesen pompa quimérica y resonancia. Pusiéranme Gerardo, Guillermo, Galileo -de la inicial G noble entre todas-, o Alejandro, Augusto, Alberto -aun de la misma A tan principal y de sencilla elegancia-, o Cayo, Castor, Carlos -de la C, letra romántica y gentil- y al oírlo o leerlo me imaginaríais con más agrado o presunción de lances estupendos.</p>
@@ -293,7 +317,7 @@
 				<p>¡Jesús no me quería...! Y lloré.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0047_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0047_head_001">- II -</head>
 				<p>...Cuando cumplí nueve años, mis padres me pusieron interno en un Colegio de religiosos, muy antiguo y nombrado en toda aquella comarca.</p>
 				<p>La vastedad y el silencio de los Estudios, del refectorio, de los claustros; la umbría de los pasadizos cavados dentro de los muros; lo siniestro de las mal alumbradas hornacinas de los dormitorios, en cuyas paredes se tendía la espantable sombra de un santo obispo de talla descomunal y pavorosa; la negrura y pesadez de los tejados y torres donde se acostaban nieblas, y volaban lentos y gritando pájaros rapaces que yo contemplaba desde mi pupitre; lamentos de campanas, clase de gramática, zumbas de los antiguos, visión de la dulzura y libertad del cielo y de los campos, todas las sensaciones fueron partes que, ayudadas de mi flaqueza, me mustiaron y entristecieron y acabé por enfermar, pero no de modo que necesitase volver a mi casal ribereño. La melancolía de mi ánimo se tradujo y manifestó en mi cuerpo con un plebeyo reuma en la rodilla izquierda. Había de ir en pos de las brigadas, zaguero y cojo como cría lisiada de un rebaño.</p>
 				<p>Mis grandes miedos los sentía las mañanas de los lunes y los siguientes de fiesta al sentarnos en clase y ver a los profesores.</p>
@@ -456,7 +480,7 @@
 				<p>Apartándome de los viejos muros, sentí sobre nosotros el vuelo de los pájaros negros, en la torre paseaba la figurita redonda del padre Salguiz, ¡altísima, tierna y amorosa alma...!</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0047_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0047_head_002">- III -</head>
 				<p>Mi madre y yo siempre estábamos solos en nuestro casal. Sebastián Reyes acudía algún domingo y nos aconsejaba que debíamos trasladarnos a La Mancha, al amor de los únicos parientes que de los Hernando quedaban, y al cuidado de otros bienes que poseíamos. Y abandonamos la apacible vega murciana, vendiendo antes la hacienda a mi padrino.</p>
 				<p>De noche llegamos al pueblo manchego, elegido para nuestra residencia.</p>
 				<p>Sobrecogiome el silencio, soledad y tristeza del lugar. En el espacio, negreaba el fantasma de la torre con su farol, guía de andariegos de ganados y yuntas; su luz melancólica parecía una lágrima desprendida de una estrella.</p>
@@ -665,7 +689,7 @@
 				<p>¡Y yo que amé a doña Francisca por limpia; y un palomar que originó la andanza!</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0047_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0047_head_003">- IV -</head>
 				<p>...El día de la Inmaculada, mi madre amaneció muerta. Estaba enferma del corazón. Mujer santísima, dulce y callada siempre, hizo su tránsito silenciosa y sola. ¡Y yo estaba cerca, y no pudo verme!</p>
 				<p>Mis paseos al cementerio, detrás de los entierros, me habían gastado o encallecido la impresión de los muertos. Hasta entonces yo sólo pensé en los muertos. Mi madre me hizo pensar en la muerte.</p>
 				<p>Mi dolor y abandono, y los libros místicos y románticos, me redujeron a mi interior, y en mí mismo hice asilo y refugio. Y en mi retiro he sido vano. Yo me creí forjado de santo y de caballero novelesco bellamente herido y triste. ¡Y aun olvidé que me llamaba Antón! Bueno; pero ¡<seg rend="italic">Antón</seg> suelen o pueden llamarse muchos hombres!</p>

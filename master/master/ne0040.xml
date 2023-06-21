@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La mujer de Ojeda</title>
-				<title type="sub">Ensayo de novela</title>
+				
 				<title type="short">MujerOjeda</title>
-				<title type="idno"><idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1250</measure>
@@ -138,22 +131,56 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0040</idno>
+						<idno type="cligs">ne0040</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/la-mujer-de-ojeda--ensayo-de-novela/"/>.</bibl>
-				<bibl type="print-source">Alicante, Imp. Juan José Carratalá, <date when="1901">1901</date></bibl>
-				<bibl type="edition-first"><date when="1901">1901</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La mujer de Ojeda</title>
+					<title type="sub">Ensayo de novela</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/la-mujer-de-ojeda--ensayo-de-novela/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Alicante</pubPlace>, Imp. Juan José Carratalá, <date when="1901">1901</date></bibl>
+					<bibl type="edition-first"><date when="1901">1901</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">La mujer de Ojeda (Ensayo de novela)</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1346221219" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1346221219"/> 		<idno type="isbn" n="9788496452251;8496452255"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de Ojeda (Ensayo de novela). Hilván de escenas. De vivir. La novela de mi amigo. Nómada. La palma rota. El hijo santo. Las cerezas del cementerio. Niño y grande</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362006"/> 		<idno type="isbn" n="8496452255;9788496452251"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
 				<p>Carlos Osorio mantiene una relación de amistad con una mujer llamada Clara Osorio, por quien se siente atraído. Informa a su amigo Andrés sobre su desarrollo, quien finalmente viaja al pueblo. Allí Andrés también se sienta atraído por Clara, lo que causa los celos de Carlos. Finalmente ella rechaza a ambos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -192,7 +219,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE10">0.2</term>
 					<term type="text.movement">realista</term>
-					<term type="text.narration.narrator" >homodiegetic</term><!--The first part of the text is epistolar-->
+					<term type="text.narration.narrator">homodiegetic</term><!--The first part of the text is epistolar-->
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
@@ -212,12 +239,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-03-06" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Prefacio</head>
+				<head xml:id="ne0040_head_000">Prefacio</head>
 				<div>
 					<p>Cuando me dijo Gabriel Miró que estaba escribiendo una novela, no hubo de parecerme extraño. Acometer las empresas difíciles, con esforzado ánimo y decidido propósito de alcanzar el lauro apetecido, es propio de quien, como Miró, aúna buena inteligencia y amor al estudio con el poderoso aliento de la sana juventud. En la noble aspiración del que escribe y quiere hacer <seg rend="italic">algo</seg>, ese eterno algo que todos buscan por ser recabador de gloria, el primer vuelo de la fantasía por las regiones literarias de la novela, debe de ser recompensado con un aplauso. Para el que vence, será galardón de su triunfo; para el vencido, será fuerza nueva que le impulsará a seguir luchando.</p>
 					<p>No ha menester la novela de exordio alguno, ni van las presentes líneas a manera de prólogo; antes bien, es deber del que las escribe, hacer constar que forman a vanguardia de la obra, como <seg rend="italic">nota de presentación</seg> al público lector. Éste es el crítico que, empíricamente o con fundamento científico, ha de juzgar. Y a tal juez he de advertir que el autor de <seg rend="italic">La mujer de Ojeda</seg> cuenta veintidós años de edad, y que, lógicamente, a un autor novel no se le puede exigir lo que tenemos derecho a reclamar de un maestro.</p>
@@ -240,7 +268,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0040_chap1">
-				<head>Noticia preliminar</head>
+				<head xml:id="ne0040_head_001">Noticia preliminar</head>
 				<p>Buceando no ha mucho tiempo en las entrañas de antiguo y herrumbroso arcón, encontré un voluminoso legajo, cuidadosa y discretamente atado con descolorido balduque. Y como soy de curiosa condición, deshice las lazadas de la <seg rend="italic">oficinesca</seg> cinta, rompí la envoltura y me dispuse a hojear su contenido.</p>
 				<p>Con sorpresa y regocijo, vi en la primera página un rótulo que decía: «Materiales para una novela». Con regocijo, sí, porque mi indiscreción iba a proporcionarme el solaz de novelesca lectura.</p>
 				<p>Cuyo era el mencionado legajo, no es indispensable que lo sepas, lector amable. Sólo te diré que la letra y la manera de exponer los hechos no me fueron desconocidas; y por éstas y otras razones, que también te oculto, conjeturo que el autor era un grande amigo mío, tan íntimo y cariñoso, como debió serlo Gazel Ben-Aly del que escribió <seg rend="italic">Los eruditos a la violeta</seg>.</p>
@@ -249,9 +277,9 @@
 				<p>Convendríanme ahora ciertas frases en defensa de mi arrojo, pero me abstengo de prolongar esta Noticia, y termino ya, porque recuerdo aquel feliz consejo que así reza: <seg type="quotation">«Sé breve en tus razonamientos, que ninguno hay gustoso si es largo»</seg>; sesudas palabras dirigidas al prudente Sancho por el que fue <seg rend="italic">flor y espuma</seg> de la andante caballería.</p>
 			</div>
 			<div type="part">
-				<head>Primera parte</head>
+				<head xml:id="ne0040_head_002">Primera parte</head>
 				<div n="2" type="chapter" xml:id="ne0040_chap2">
-					<head>Carta primera</head>
+					<head xml:id="ne0040_head_003">Carta primera</head>
 					<p><seg rend="italic">Majuelos 5 de junio</seg>.</p>
 					<p>«Querido Andrés:</p>
 					<p>Desde que llegué a este pueblecillo alegra, noto cierta calma aliviadora, que va neutralizando las ansias de mi espíritu enfermo.</p>
@@ -283,7 +311,7 @@
 					<p>Carlos».</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0040_chap3">
-					<head>Carta segunda</head>
+					<head xml:id="ne0040_head_004">Carta segunda</head>
 					<p><seg rend="italic">Majuelos 12 de junio</seg>.</p>
 					<p>«Mi buen Andrés:</p>
 					<p>En mi anterior te decía que una dulce alegría se ha apoderado de mí, desde que miro este cielo puro y sereno y contemplo este paisaje incomparable.</p>
@@ -302,7 +330,7 @@
 					<p>Carlos».</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0040_chap4">
-					<head>Carta tercera</head>
+					<head xml:id="ne0040_head_005">Carta tercera</head>
 					<p><seg rend="italic">Majuelos 18 de junio</seg>.</p>
 					<p>«¡Con cuánta razón, querido Andrés, te extrañas de la miopía de mi inteligencia!</p>
 					<floatingText>
@@ -347,7 +375,7 @@
 					<p>Y... basta por hoy».</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0040_chap5">
-					<head>Carta cuarta</head>
+					<head xml:id="ne0040_head_006">Carta cuarta</head>
 					<p><seg rend="italic">Majuelos 10 de julio</seg>.</p>
 					<p>«No te he olvidado, pero sí me ha faltado tiempo que consagrarte, Andrés amigo.</p>
 					<p>Antes de empezar esta carta han luchado mi corazón y mi cerebro, acerca del contenido de la misma. El primero se negaba a participarte lo que por mí pasa, mientras que mi <seg rend="italic">yo</seg> racional, me imponía el deber de contártelo todo, todo, sin omitir un pensamiento, sin ocultar una palpitación, sin esconder un dictado de mi alma. Y he aquí que te confieso mi rebelión y pecado.</p>
@@ -371,7 +399,7 @@
 					<p>Espero pronto tu carta».</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0040_chap6">
-					<head>Carta quinta</head>
+					<head xml:id="ne0040_head_007">Carta quinta</head>
 					<p><seg rend="italic">Majuelos 21 de julio</seg>.</p>
 					<p>«¡Qué escena tan bellamente conmovedora la de anoche, Andrés!</p>
 					<p>Yo creo que gozo más recordándola, que cuando fui actor principal de ella.</p>
@@ -409,7 +437,7 @@
 					<p>Juntos los tres nos dirigimos hacia la casa, y en la puerta me despedí».</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0040_chap7">
-					<head>Carta sexta</head>
+					<head xml:id="ne0040_head_008">Carta sexta</head>
 					<p><seg rend="italic">Majuelos 28 de julio</seg>.</p>
 					<p>«Por tu última carta infiero que juzgas desfavorablemente a Clara. No es ésta "la tienda del árabe que en este desierto del amor, brinda hospitalidad y acoge con regocijo encubierto primero, y desnudo y franco después, al viajero sediento de caricias", no; tu símil será bello, pero no aplicable.</p>
 					<p>¿Que cómo entonces afirmo que me quiera y se regale con mis palabras? Trataré de explicarme.</p>
@@ -432,7 +460,7 @@
 					<p>Carlos».</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0040_chap8">
-					<head>Carta séptima</head>
+					<head xml:id="ne0040_head_009">Carta séptima</head>
 					<div type="section">
 						<p><seg rend="italic">Majuelos 31 de julio</seg>.</p>
 						<p>«Si como dijo un sabio, "la cabeza es el trono de la decencia", la testa de señor Ojeda, apenas si es una grotesca caricatura de tan preciado y acatado solio.</p>
@@ -485,7 +513,7 @@
 					</div>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0040_chap9">
-					<head>Carta octava</head>
+					<head xml:id="ne0040_head_010">Carta octava</head>
 					<p><seg rend="italic">Majuelos 3 de agosto</seg>.</p>
 					<p>«Así como en Tartarín se encerraban dos temperamentos: el soñador y <seg rend="italic">épico</seg> del hidalgo manchego, y el reflexivo y prudente del <seg rend="italic">escudero</seg> Sancho, así en el señor Ojeda, descubro yo dos maneras diferentes de ser; pero no es esta dualidad de carácter, tan admirable y noble como en el tarasconés <seg rend="italic">cazador de leones</seg>.</p>
 					<p>Por ciertos rasgos y detalles que de Ojeda en mis pasadas cartas te he contado, fácilmente habrás colegido lo áspero de su naturaleza. Recordarás asimismo que te dije que cuando regresó de su último viaje, advirtiese en él cierto ridículo y enfadoso empaque y postizas maneras de gran señor.</p>
@@ -509,7 +537,7 @@
 					<p>Los primeros días, para gozar y regalarme con la presencia de Clara, tenía antes que sufrir el infierno de la conversación del marido, porque me sublevaba ante su necedad y me <seg rend="italic">herían</seg> sus vulgaridades. Muchas veces contestele con ira, y la disputa entre los dos surgía; disputa que luego, serena ya mi inteligencia, apréciame tristemente ridícula. Ahora lo desprecio <seg rend="italic">piadosamente</seg> y guardo y practico aquel precepto del Sabio: <seg rend="italic" type="foreign" xml:lang="la">Stulto juxta stultitiam suam, ne sibi sapiens esse videatur</seg>».</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0040_chap10">
-					<head>Carta novena</head>
+					<head xml:id="ne0040_head_011">Carta novena</head>
 					<p><seg rend="italic">Majuelos 8 de agosto.</seg></p>
 					<p>«No busques, no, querido Andrés en esta carta, algo que conmoverte de entusiasmo pueda. Son estas líneas tranquilas, apacibles como sonrisas de niño.</p>
 					<p>Fue el día de ayer para mí, fugaz, brevísimo, porque <seg rend="italic">viví</seg> casi todas sus horas con mi Clara.</p>
@@ -553,7 +581,7 @@
 					<p>Transcurrió la tarde apaciblemente y fulguraban inquietas las estrellas en el obscurísimo cielo, cuando regresaba a mi casa por el solitario campo. A mi paso enmudecían los grillos, quejábase alguna planta, rodaba un guijarro, saltaba un insecto...».</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0040_chap11">
-					<head>Carta décima</head>
+					<head xml:id="ne0040_head_012">Carta décima</head>
 					<p><seg rend="italic">Majuelos 18 de agosto</seg>.</p>
 					<p>«¡Desde hace algunos días, odios y zozobras sufre mi pobre alma, y por la noche imágenes horribles me brinda el sueño!</p>
 					<p>¡No sé cómo calificar mi estado, y si justificada o no encontrarás mi intranquilidad; pero yo no gozo un momento de reparador descanso!</p>
@@ -594,7 +622,7 @@
 					<p>Adiós, adiós».</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0040_chap12">
-					<head>Carta undécima</head>
+					<head xml:id="ne0040_head_013">Carta undécima</head>
 					<p><seg rend="italic">Majuelos 21 de agosto</seg>.</p>
 					<p>«No te negaré, Andrés querido, que pasados mis ímpetus y furores y serena ya mi inteligencia, paréceme mi estado menos grave, exagerados mis presentimientos e indiscreta mi conducta. Pero tampoco creas que de bienhechora calma gozo y de cuidados y temores véome libre.</p>
 					<p>Expuesta veo a Clara a un constante peligro; pero no tan irremediable como antes lo juzgaba.</p>
@@ -611,7 +639,7 @@
 					<p>Espero tus noticias; yo muy pronto te las daré».</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0040_chap13">
-					<head>Carta duodécima</head>
+					<head xml:id="ne0040_head_014">Carta duodécima</head>
 					<p><seg rend="italic">Majuelos 27 de agosto</seg>.</p>
 					<p>«Distraído con la tarea de hacer de mis cartas espejos en los que vieras reflejado el estado de mi ánimo, he descuidado lo que pudiera denominar <seg rend="italic">parte narrativa</seg> de mis amores.</p>
 					<p>Trataré de enmendar mi yerro, y para ello sujetaré mi imaginación a lo acaecido después del encuentro de Ojeda, cuando frenético buscaba a José y luego, desolado, regresaba a mi casa.</p>
@@ -634,7 +662,7 @@
 					<p>Nada sucedió luego».</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0040_chap14">
-					<head>Carta decimotercera</head>
+					<head xml:id="ne0040_head_015">Carta decimotercera</head>
 					<p><seg rend="italic">Majuelos 4 de septiembre</seg>.</p>
 					<p>«Leída fríamente tu carta y pesando con sereno juicio los varios consejos que en ella me das, fácil es asentir a todo, declararse vencido ante la dialéctica que en ella luces, y seguir el camino que me trazas. Pero leída por mí, que, lejos de tener serenas las facultades mentales, téngalas turbulentas y constantemente fabricando espumas que todo lo ocultan, califico tu carta de amantísima y de vulgares tus consejos. Perdóname por mi manera descarnada y áspera de expresarme.</p>
 					<p>Dícesme en tu última, que terminados ya los asuntos que aquí me trajeron, haga mi equipaje, y sin despedirme de nadie, vaya a reunirme contigo.</p>
@@ -650,7 +678,7 @@
 					<p>Hasta mi próxima».</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0040_chap15">
-					<head>Carta decimocuarta</head>
+					<head xml:id="ne0040_head_016">Carta decimocuarta</head>
 					<p><seg rend="italic">Majuelos 10 de septiembre</seg>.</p>
 					<p>«Terminé mi anterior precipitadamente, por la visita de Ojeda.</p>
 					<p>¿Qué pasará? -me preguntaba a mí mismo con ansiedad-. Y como Ojeda es tardo en el decir algo y largo en palabras que nada expresen, ardía yo en amante curiosidad, por si en el objeto de su visita estaba interesada Clara.</p>
@@ -672,7 +700,7 @@
 					<p>Esta noche irá a su casa, donde no he estado hace varios días».</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0040_chap16">
-					<head>Carta decimoquinta</head>
+					<head xml:id="ne0040_head_017">Carta decimoquinta</head>
 					<p><seg rend="italic">Majuelos 12 de septiembre</seg>.</p>
 					<p>«¡No sé para qué te escribo: seguro estoy de que no podré reflejar fielmente lo que por mí pasa!</p>
 					<p>¡Si digo que estoy tranquilo, miento; si afirmo que una exaltación continua martiriza mi alma, no digo la verdad! A veces me doy a pensar mil cosas para llevar a mi ánimo la dulzura de la paz, pero apenas he probado ese azúcar, mil ideas horribles ponen en conmoción todo mi ser y mi alma se anega en un mar de vacilaciones, de odios y temores.</p>
@@ -698,7 +726,7 @@
 					<p>¡Canallas! ¡Canallas!».</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0040_chap17">
-					<head>Carta decimosexta</head>
+					<head xml:id="ne0040_head_018">Carta decimosexta</head>
 					<p><seg rend="italic">Majuelos 18 de septiembre</seg>.</p>
 					<p>«Propúseme defender mi alma con una fuerte coraza de paciencia (ya que no encontraba solución a mi conflicto), pero me siento desfallecer y por momentos noto abollada y maltrecha mi armadura y próximas a estallar mis iras.</p>
 					<p>No te extrañe, Andrés amigo, que en una de mis futuras cartas te dé la noticia de haber <seg rend="italic">acometido</seg> a esta gente que pincha y envenena con sus lenguas.</p>
@@ -731,7 +759,7 @@
 					<p>Ya los oigo llegar. Adiós».</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0040_chap18">
-					<head>Carta decimoséptima</head>
+					<head xml:id="ne0040_head_019">Carta decimoséptima</head>
 					<div type="section">
 						<p><seg rend="italic">Majuelos 22 de septiembre</seg>.</p>
 						<p>«¡Soy bueno, Andrés, soy bueno! ¡Acabo de convencerme: desconfío tanto que hasta de mi alma ya dudaba; pero la envuelve ahora tal ternura, viendo sufrir al que hasta hace pocos momentos despreciaba! ¡Siento una congoja! Que un beso de Clara yo daría a cambio de regalar algún alivio a su marido.</p>
@@ -770,7 +798,7 @@
 					</div>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0040_chap19">
-					<head>Carta decimoctava</head>
+					<head xml:id="ne0040_head_020">Carta decimoctava</head>
 					<p><seg rend="italic">Majuelos 24 de septiembre</seg>.</p>
 					<p>«Ha muerto Ojeda.</p>
 					<p>Su agonía ha sido lenta y horrible.</p>
@@ -818,7 +846,7 @@
 					<p>¡Qué cansancio siento!».</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0040_chap20">
-					<head>Carta decimonona</head>
+					<head xml:id="ne0040_head_021">Carta decimonona</head>
 					<p><seg rend="italic">Majuelos 26 de septiembre</seg>.</p>
 					<quote>
 						<p>«Acuérdate de tus postrimerías y nunca pecarás».</p>
@@ -863,7 +891,7 @@
 
 				</div>
 				<div n="21" type="chapter" xml:id="ne0040_chap21">
-					<head>Carta vigésima</head>
+					<head xml:id="ne0040_head_022">Carta vigésima</head>
 					<p><seg rend="italic">Majuelos 8 de octubre</seg>.</p>
 					<p>«Aunque antes de expirar este displicente mes, <seg rend="italic">serás conmigo</seg> en Majuelos, te escribo hoy para comunicarte un suceso que pudo ocasionar el infortunio de <seg rend="italic">mi</seg> Clara.</p>
 					<p>Impresionado hondamente por la enfermedad y muerte del señor Ojeda, nada te he dicho de la llegada de José.</p>
@@ -915,9 +943,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Segunda parte</head>
+				<head xml:id="ne0040_head_023">Segunda parte</head>
 				<div n="22" type="chapter" xml:id="ne0040_chap22">
-					<head>- I -</head>
+					<head xml:id="ne0040_head_024">- I -</head>
 
 					<p>Terminada la ordenación de las anteriores cartas, creí encontrarme ya en la suave y amena pendiente por donde, con descanso y alborozo, pudiese caminar hasta llegar al término de mi tarea. Pero no bien hube leído tres capítulos de la segunda parte de esta historia, cuando empecé a sudar y trasudar de puro acobardado. Y fue la causa de mi temor, el <seg rend="italic">hallarme</seg> con una gran cantidad de pliegos cuyo contenido, careciendo de enlace o harmonía en la forma, entorpece su corrección y arreglo. Páginas hay en el legajo, escritas en estilo de Memorias, y en las que se advierte y resplandece una ingenuidad que deleita y halaga; en otras, el autor narra o expone los hechos en forma dialogada, muy lejos de la personalísima o íntima, empleada en las primeras.</p>
 					<p>A punto estuve de abandonar la construcción de esta novela, porque ¿cómo el exprimido ingenio mío iba a crear tipos y escenas, él, que nunca logró componer o inventar una conseja? Pero la funesta osadía atropelló y venció al discreto temor, y decidime a proseguir la vida de Clara, que tan simpática había sido.</p>
@@ -990,7 +1018,7 @@
 
 				</div>
 				<div n="23" type="chapter" xml:id="ne0040_chap23">
-					<head>- II -</head>
+					<head xml:id="ne0040_head_025">- II -</head>
 					<p>De la torre de la Rectoral salieron cinco campanadas graves y largas, que se extinguieron perezosamente.</p>
 					<p>Dormía Majuelos, sumido en la obscuridad y en el silencio.</p>
 					<p>Sólo de tiempo en tiempo escapábase de algún tejado un débil y vergonzoso gorjeo, como la voz de un niño que protesta de la blanda sujeción de la cuna y pide luz y libertad... «Aún no es hora», parecía decir otro más severo piar; y ante la amonestación del padre o <seg rend="italic">jefe de la casa</seg>, enmudecían todos los picos... Pero la quietud, el silencio fue breve. Vibró el enérgico canto de un gallo; contestó otro, y otro y otro, avisando sin duda que el alba, por <seg rend="italic">sigilosa</seg> que fuese, no les sorprendería sobre el cortezoso listón del gallinero... Generalizáronse los llamamientos o saludos de estas madrugadoras aves, y ya los pajarillos, excusándose en ellas, piaron y piaron con furor primero, intermitentemente después.</p>
@@ -1022,7 +1050,7 @@
 					<p>Y entre la curiosidad de los vecinos, que se asomaban a los postigos y ventanas, cruzó el coche dos o tres calles más, y, por fin, detúvose ante la vetusta casa de los Osorios.</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0040_chap24">
-					<head>- III -</head>
+					<head xml:id="ne0040_head_026">- III -</head>
 					<p>«No vengo solo, Clara» -murmuró Osorio al entrar en la linda salita donde aquélla estaba, acompañada por una especie de dueña, cuyo nevado y sospechoso moño parecía peluca de macero.</p>
 					<p>La <seg rend="italic">diosa</seg> estrechó la mano de nuestro amigo, y dijo fijando sus ojos en Andrés, que en aquel momento se inclinaba cortesanamente.</p>
 					<p>«No hace falta la presentación, porque adivino quién es el que con usted viene, y perdóneme esta rusticidad que el campo me ha prestado. A usted, Carlos, no le extrañará tanto esta completa ausencia de elegancia y distinción, como a su amigo».</p>
@@ -1065,7 +1093,7 @@
 					<p>Embozose después, y salió a la calle.</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0040_chap25">
-					<head>- IV -</head>
+					<head xml:id="ne0040_head_027">- IV -</head>
 					<p>Aún brillaba el sol, cuando Clara, febril, y oprimido su pecho por cruel congoja, buscó en el lecho reparador descanso.</p>
 					<p>Su imaginación le trajo la figura sombría de don Fulgencio, y la memoria le repitió aquellas amonestaciones casi insolentes, revestidas de falsa y empalagosa dulzura, y proferidas con sibilante voz.</p>
 					<p>«...Pero ¿qué les he hecho yo para que así me traten, para que así hablen?» decía entre sollozos; e involuntariamente paladeaba el recuerdo de dos seres leales y superiores.</p>
@@ -1100,7 +1128,7 @@
 					<p>...Y entre estos soliloquios y evocaciones risueñas y tristes, pasó la viuda de Ojeda aquella noche pavorosa, en que el viento gemía como atribulada alma en el Infierno del Dante...</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0040_chap26">
-					<head>- V -</head>
+					<head xml:id="ne0040_head_028">- V -</head>
 					<p>Desde las ocho de la noche hasta que se extinguía la mortecina luz esparcida por antiquísimo lampión, provisto de verde y rizada pantalla, reuníanse en la trastienda de la farmacia los vecinos más empingorotados del pueblo.</p>
 					<p>Me refiero a las tristes, frías y largas noches de invierno y a las desapacibles del otoño, que en las estivales, estas <seg rend="italic">asambleas</seg> efectuábanse bajo la majestuosa bóveda estrellada. Pero desde la estación precursora de los fríos, retirábase la buena sociedad majuelense a la ya mencionada estancia, y en derredor de una <seg rend="italic">amorosa</seg> mesa de brasero, se entregaba al honesto juego de la aduana, y al sabroso recreo de la murmuración y crítica.</p>
 					<p>El aprovechado estudiante de Derecho, Joaquinito Manzano, era el encargado de pregonar los pintados cartones, y hacíalo con tal arte, picardía y exuberancia de <seg rend="italic">chistosas</seg> frases, que la concurrencia, <seg rend="italic">conmovida</seg>, no podía menos que exclamar:</p>
@@ -1165,7 +1193,7 @@
 					<p>El timbre de la puerta sonó, sonó muchas veces, hasta el punto de excitar la curiosidad de algunos vecinos, que se asomaron tras los cristales de sus balcones, extrañados y envidiosos de la enorme venta que aquella noche don Blas hacía...</p>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0040_chap27">
-					<head>- VI -</head>
+					<head xml:id="ne0040_head_029">- VI -</head>
 
 					<p>Sin anteponer ningún preámbulo que pueda distraer la atención del discreto lector y fatigar su ánimo, voy a copiar algunos trozos del «Diario» de Carlos.</p>
 					<floatingText>
@@ -1210,7 +1238,7 @@
 					</floatingText>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0040_chap28">
-					<head>- VII -</head>
+					<head xml:id="ne0040_head_030">- VII -</head>
 					<p>Era como una sonrisa del otoño aquella mañana espléndida de noviembre.</p>
 					<p>Prestaba el sol una agradable tibieza a la atmósfera e inundaba los campos de vivificante luz. Las obscuras ramas de los desnudos árboles recortábanse enérgicamente sobre el azul intensísimo de un cielo risueño y sereno.</p>
 					<p>Los majuelenses <seg rend="italic">ricos</seg> salían de sus casas ansiosos de recibir las caricias de aquel sol alegre como el de primavera. Desde los primeros días de octubre que frecuentes celliscas y huracanados vientos habían impedido los paseos y holgorios campestres.</p>
@@ -1255,7 +1283,7 @@
 					<p>Después Miró al cielo y exclamó apasionadamente: «¡Qué brillante está; hoy se saborea la vida...!».</p>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0040_chap29">
-					<head>- VIII -</head>
+					<head xml:id="ne0040_head_031">- VIII -</head>
 
 					<p>Una piedra caída en el fondo del más sereno y transparente lago, basta para ensuciar sus aguas con asqueroso cieno.</p>
 					<p>La certeza de que Clara prefería y amaba a Andrés, fue para Osorio la piedra que enturbió su espíritu con el limo repugnante de la rabia y envidia. Que toda conciencia por limpia de condición que sea y por mucho que la tribulación o desgracia la haya purificado, guarda gérmenes del mal.</p>
@@ -1284,7 +1312,7 @@
 					<p>¡Con cuánto amor la odio! ¡Con qué rabia la quiero!».</p>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0040_chap30">
-					<head>- IX -</head>
+					<head xml:id="ne0040_head_032">- IX -</head>
 
 					<p>Continúo copiando del «Cuaderno» de Osorio.</p>
 					<floatingText>
@@ -1373,7 +1401,7 @@
 					</floatingText>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0040_chap31">
-					<head>- X -</head>
+					<head xml:id="ne0040_head_033">- X -</head>
 					<p>Dejo ya, lector amigo, el «Cuaderno de memorias» de Carlos, y con el auxilio preciosísimo de algunas notas, procuraré continuar este relato, cuyo fin se acerca, para felicidad tuya y descanso mío.</p>
 					<p>La noche de aquel día que describe Osorio en las anteriores páginas de sus apuntes, fue martirizadora para nuestro amigo.</p>
 					<p>Solo, en su cuarto, pasó las horas, sufriendo desgarraduras en el alma y atormentado por las excitaciones que su cerebro fabricaba...</p>
@@ -1419,7 +1447,7 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Conclusión</head>
+				<head xml:id="ne0040_head_034">Conclusión</head>
 				<div n="32" type="chapter" xml:id="ne0040_chap32">
 					<p>Desde el instante en que Clara confesó su amor a Andrés, sintió en su alma ese malestar, esa perturbación destructora de todo reposo del humano pecho que, en pos de sí, deja la falta cometida. Y al recordar con delicia cualquier frase o mirada de su amante, la memoria le traía también la imagen de Carlos, pálido y entristecido, llenos de fuego sus ojos: fuego cruel que los iba consumiendo lentamente hasta dejar las cuencas negras y vacías, pero negrura de abismo que atemoriza y expresa más que algunas claridades.</p>
 					<p>Era un suplicio inmenso el de su alma. Su fantasía se rebelaba cruelmente contra su voluntad. En vano se esforzaba por gozar con libertad la repetición imaginaria de escenas apasionadas con Andrés; al lado de éste surgía la figura de Carlos, fiero unas veces, humilde otras, enamorado siempre.</p>

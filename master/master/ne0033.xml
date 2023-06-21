@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La Corte de los Milagros</title>
-				<title type="sub"></title>
+				
 				<title type="short">Corte</title>
-				<title type="idno">
-					<idno type="viaf">220171699</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1055436</idno>
-					<idno type="viaf">68936773</idno>
-					<name type="short">Valle</name>
-					<name type="full">Valle-Inclán, Ramón del</name>
+					<name type="short" ref="#Valle"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">4411</measure>
@@ -140,13 +131,60 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0033</idno>
+						<idno type="cligs">ne0033</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.1, Titivillus, <date when="2016">2016</date>, <idno>25410</idno>, <ref target="https://www.epublibre.org/libro/detalle/25410"/>.</bibl>
-				<bibl type="print-source"></bibl>
-				<bibl type="edition-first"><date when="1927">1927</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La Corte de los Milagros</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/220171699/">220171699</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4217530-6">4217530-6</idno>
+				</idno>
+				</title>
+					<author xml:id="Valle">
+						<name type="full"><forename>Ramón</forename> <surname>del Valle-Inclán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8840 - IP 8845">IP 8840 - IP 8845</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118626019">118626019</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q311001/">Q311001</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1055436.html">XX1055436</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/68936773/">68936773</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.1, Titivillus, <date when="2016">2016</date>, <idno>25410</idno>, <ref target="https://www.epublibre.org/libro/detalle/25410"/>.</bibl>
+					<bibl type="print-source"/>
+					<bibl type="edition-first"><date when="1927">1927</date><idno source="k10plus" type="ppn" n="1522962832" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1522962832"/><idno source="k10plus" type="ppn" n="324901321" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=324901321"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1927">1927</date>, <publisher>Soc. General Española de Librería [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1522962832" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1522962832"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1927">1927</date>, <publisher>Soc. General Española de Librería [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="324901321" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=324901321"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1940">1940</date>, <publisher>Ramón Sopena</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="465007619" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465007619"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1961">1961</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1337132675" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1337132675"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1961">1961</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="462838943" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=462838943"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1968">1968</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="450457494" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=450457494"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1971">1971</date>, <publisher>Ed. Progreso.</publisher> <pubPlace>Moskva</pubPlace> 		<idno type="ppn" n="384784593" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=384784593"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1973">1973</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1147466572" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1147466572"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El ruedo ibérico</title> <date when="1973">1973</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1135260583" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135260583"/> 		<idno type="isbn" n="8420614513"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1973">1973</date>, <publisher>Alianza Editorial</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="522760910" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522760910"/> 		<idno type="isbn" n="8420614513"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El ruedo ibérico</title>: 	<title type="sub">La corte de los milagros ; Viva mi dueño</title> <date when="1974">1974</date>, <publisher>Ed. de Arte y Literatura</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="083730249" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083730249"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros. Sonata de estio [u.a.]</title> <date when="1976">1976</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1090476876" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1090476876"/> 		<idno type="isbn" n="8403040342"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1976">1976</date>, <publisher>Ediciones Júcar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="126077169" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=126077169"/> 		<idno type="isbn" n="8433401580"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title>: 	<title type="sub">el ruedo ibérico</title> <date when="1979">1979</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1604678259" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1604678259"/> 		<idno type="isbn" n="8423912965"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1979">1979</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039463966" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039463966"/> 		<idno type="isbn" n="8420614513"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1986">1986</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="624790770" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=624790770"/> 		<idno type="isbn" n="8423912965"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1990">1990</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="037860615" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=037860615"/> 		<idno type="isbn" n="8423919080"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1992">1992</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="561451974" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=561451974"/> 		<idno type="isbn" n="8422632810"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1993">1993</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1129331296" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1129331296"/> 		<idno type="isbn" n="8423919080"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corte de los milagros</title> <date when="1993">1993</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227001788" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227001788"/> 		<idno type="isbn" n="8423919080"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El ruedo ibérico</title> <date when="2007">2007</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1379076013" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1379076013"/> 		<idno type="isbn" n="9788467023442"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El ruedo ibérico</title>: 	<title type="sub">la corte de los milagros : primera serie, tomo primero</title> <date when="2017">2017</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="877883211" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=877883211"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +194,14 @@
 				<p>En los últimos años del reinado de Fernando VII el absolutismo va mitigando su rigor, mientras que en la corte se va formando una vasta intriga alrededor del hermano del monarca, que continúa con la subida al trono de Isabel II tras la derogación de la ley sálica. Todo su reinado será una serie ininterrumpida de conspiraciones, revueltas y camarillas. Trazando la caricatura de la ya de por sí esperpéntica realidad, Valle acierta a exponer todos los tópicos vigentes, todos los lemas de los partidos, y a componer un mosaico de personajes reales e inventados, a través de la historia de la familia Torre-Mellada. Una obra protagonizada por las intrigas, el cabildeo y las camarillas de una época en la que no faltaron milagros palaciegos ni monjas estigmatizadas.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8841" key="IP 8841" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">8</term>
 					<term type="author.continent">Europe</term>
@@ -187,7 +233,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela histórica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -223,6 +269,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-04-05" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -230,44 +277,44 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Libro primero: Aires Nacionales</head>
+				<head xml:id="ne0033_head_000">Libro primero: Aires Nacionales</head>
 				<div n="1" type="chapter" xml:id="ne0033_chap1">
-					<head>I</head>
+					<head xml:id="ne0033_head_001">I</head>
 					<p>El reinado isabelino fue un albur de espadas: Espadas de sargentos y espadas de generales. Bazas fulleras de sotas y ases.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0033_chap2">
-					<head>II</head>
+					<head xml:id="ne0033_head_002">II</head>
 					<p>El General Prim caracoleaba su caballo de naipes en todos los baratillos de estampas litográficas: Teatral Santiago Matamoros, atropella infieles tremolando la jaleada enseña de los Castillejos:</p>
 					<p>—¡Soldados, viva la Reina!</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0033_chap3">
-					<head>III</head>
+					<head xml:id="ne0033_head_003">III</head>
 					<p>Los héroes marciales de la revolución española no mudaron de grito hasta los últimos amenes. Sus laureadas calvas se fruncían de perplejidades con los tropos de la oratoria demagógica. Aquellos milites gloriosos alumbraban en secreto una devota candelilla por la Señora. Ante la retórica de los motines populares, los espadones de la ronca revolucionaria nunca excusaron sus filos para acuchillar descamisados. El Ejército Español jamás ha malogrado ocasión de mostrarse heroico con la turba descalza y pelona que corre tras la charanga.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0033_chap4">
-					<head>IV</head>
+					<head xml:id="ne0033_head_004">IV</head>
 					<p>—¡Pegar fuerte!</p>
 					<p>La rufa consigna bajaba de las alturas hasta la soldadesca, que relinchaba de gusto porque la orden nunca venía sin el regalo del rancho con chorizo, cafelito, copa y tagarnina. Los edictos militares, con sus bravatas cherinolas proclamadas al son de redoblados tambores, hacían malparir a las viejas. El palo, numen de generales y sargentos, simbolizaba la más oportuna política en las cámaras reales. La Señora encendida de erisipelas, se inflaba con hucheo de paloma:</p>
 					<p>—¡Pegar fuerte, a ver si se enmiendan!</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0033_chap5">
-					<head>V</head>
+					<head xml:id="ne0033_head_005">V</head>
 					<p>¡No se enmendaban! Ante aquella pertinaz relajación, la gente nea se santigua con susto y aspaviento. Las doctas calvas del moderantismo enrojecen. Los banqueros sacan el oro de sus cajas fuertes para situarlo en la pérfida Albión. La tea revolucionaria atorbellina sus resplandores sobre la católica España. Las utopías socialistas y la pestilencia masónica amenazan convertirla en una roja hoguera. El bandolerismo andaluz llama a sus desafueros rebaja de caudales. El labriego galaico, pleiteante de mala fe, rehúsa el pago de las rentas forales. Astures y vizcaínos de las minas promueven utópicas rebeldías por aumentar sus salarios. El huertano levantino, hombre de rencores, dispara su trabuco en las encrucijadas, bajo el vuelo crepuscular de los murciélagos. El pueblo vive fuera de ley desde los olivares andaluces a las cántabras pomaradas, desde los toronjiles levantinos a los miñotos castañares. Falsos apóstoles predican en el campo y en los talleres el credo comunista, y las gacetas del moderantismo claman por ejemplares rigores. Entre tricornios y fusiles, por las soleadas carreteras, cuerdas de galeotes proletarios caminan a los presidios de África.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0033_chap6">
-					<head>VI</head>
+					<head xml:id="ne0033_head_006">VI</head>
 					<p>Se pegó muy a conciencia. No faltó la ley de fugas, ni se excusaron encarcelamientos regidos de ayuno y maltrato de verdugones, como pide el restablecimiento del orden, frente al desmán popular que rompe faroles y apedrea conventos. Los edictos militares, con sus hipérboles baladronas, se emulaban en aquel retórico escupir por el colmillo. Desde todas las esquinas nacionales lanzaban roncas contra las logias masónicas, que en sus concilios de medianoche habían decretado la revolución incendiaria, el amor libre y el reparto de bienes. Con tales alarmas se asustaba la gente crédula, y las comunidades de monjas rezaban trisagios, esperando la hora de ser violadas. El maligno andaba suelto, sin que pudiese fusilarlo el General Narváez. ¡Y todo lo exigía el restablecimiento del orden! Se zurró con tan generosa voluntad y se quebraron en la fiesta tantas varas, que se peló de florestas Castilla. Valladolid estuvo tres días con tres noches tartamuda bajo las ráfagas del tiroteo, con las manos en las orejas, medio ojo abierto sobre la soldadesca tiznada de pólvora, que penetraba a culatazos en las tabernas y hacía servicio de retén a la custodia de conventos y Bancos.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0033_chap7">
-					<head>VII</head>
+					<head xml:id="ne0033_head_007">VII</head>
 					<p>En Santa Clara, de Valladolid, la monja organista quedó loca para muchos días, suceso no extraño si se atiende a que una bala le rozó las tocas cuando sacaba agua del pozo. En aquel tiroteo hubo cinco muertos en la calle y un lorito en el balcón de Capitanía. Todo lo acarreaba la judaica pasión por los bienes terrenales, ahora más temosa con la quiebra fraudulenta del Banco de Castilla. Eran muchos los que se lloraban arruinados, y unánimes en el rencoroso clamor por el castigo del presidente y los consejeros, santones de la opinión moderantista en las riberas del Pisuerga. Una providencia judicial, alzando el auto que los tenía en cárcel, sirvió de pretexto a los enemigos del orden. Comenzó la jarana con pedrea y rotura de cristales, alarma de gritos y susto de carreras. Salió la tropa, resbaló un caballo, holgóse el motín callejero alternando chifles y vayas, abroncáronse con esto los pechos militares, sonaron cornetas, encendió el aire la fusilada, y entre cirrus de pólvora, en charcas de sangre, cantaron su triunfo las ranas del orden. Cinco paisanos muertos, y aquel verdigualda cotorrín antillano, que las furias populares inmolaron a pedradas en el balcón de Capitanía. El restablecimiento del orden nunca se logra sin el sacrificio de vidas inocentes. La muerte de su cotorrín desconsoló a la señora generala. Recibía visitas de pésame en el estrado, y con mimos de cuarterona solicitaba del veterano esposo un castigo ejemplar para los crímenes de la demagogia. El general, marido complaciente, dictó un bando de farrucas retóricas y extremó ternezas conyugales disponiendo que fuese disecado el cotorrín para consuelo de su dueña y adorno de consola. La generala, entre soponcios y congojas, con beata simplicidad, prometía donárselo a las monjas de Santa Clara: Su mitológica fantasía de criolla cuarterona ambicionaba que la maravilla verdigualda del cotorrín, emulase en los limbos monjiles a la blanca paloma del Espíritu Santo.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0033_chap8">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_008">VIII</head>
 					<p>La gente nea rezaba trisagios implorando la salvación de España. Toda Andalucía, delirante de rencores proletarios, sentíase convulsa por la fiebre anarquista. En Lucena, Montilla y Villar del Duque, los gremios menestrales y las peonadas agrarias asaltaban los archivos municipales y les ponían lumbre. Era su clamor por el reparto de tierras. Con el susto de las represalias se fugaban a las capitales de provincia los caciques y alcaldes de Real Orden. Se desvanecían los alguaciles y chulos del resguardo. En las Casas Consistoriales, llenas de humo, sólo aparecían por raro caso los famélicos chupatintas que se dejan crecer la uña del meñique: Aparentaban simpatía por la causa popular, y con falso guiño leguleyo aconsejaban cordura: Sórdidos, desgalichados, retuertos, insinuaban tramposos arbitrios convenientes a la defensa de los amotinados si, fallado el golpe, los empapelaban en un proceso. Y, a hurto, echaban un ojo por las ventanas, en avizorada espera de que asomase la Guardia Civil.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0033_chap9">
-					<head>IX</head>
+					<head xml:id="ne0033_head_009">IX</head>
 					<p>En Villar del Duque, el alcalde, un usurero ricachón con mucha gramática parda, salvó la vida declarándose conforme con el reparto de bienes. Caído en poder de los revoltosos, cuando a lomos de un asno se fugaba con disfraz de melero, fue arrastrado hasta la Casa Consistorial: Entre pitos y befas, a empellones, siempre en un cerco de roncos y estentóreos amotinados, salió al balcón:</p>
 					<p>—¡Ea, caballeros, haremos el reparto, y no se hable más cosa ninguna! A lo que sea de razón no ha de negarse vuestro alcalde.</p>
 					<p>Se arrancó un curda:</p>
@@ -315,7 +362,7 @@
 					<p>Cuando mayor era el tumulto oyóse el toque de militares cornetas que sonaban fuera de la villa, y del balcón municipal se fugaron los amotinados que rodeaban al señor alcalde. Por la lontananza amarilla del rastrojo, moviéndose en hileras, fulgían de roses y fusiles. Los pantalones colorados escalaban los cerros: Latían los gozques de corral sobre las bardas: Eran un clamoroso guirigay todos los gallineros.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0033_chap10">
-					<head>X</head>
+					<head xml:id="ne0033_head_010">X</head>
 					<p>Al dramatismo libertario y anárquico de las peonadas andaluzas, romántica falseta de cante jondo, respondían bromas de vinazo, bermejas de pimentón, las ribereñas cabilas del Ebro. Los bonetes de aldea predicaban la cruzada carlista, y el jaque valentón rasgueaba el guitarrín patriótico, cantando la jota. La musa popular coronada de ajos y guindillas romanceaba en el lauredo umbral de los ventorros: El rejo temerón y selvático de aquellas métricas, era punteado por todos los guitarros del Ebro. En las sacristías se iniciaban colectas para contrabandear fusiles por la muga de Francia: Las comunidades de monjas bordaban escapularios con el detente, bala. Si en el silencio de la medianoche oían el punteado de las rondallas, deslizábanse, furtivas y descalzas, de sus catres penitentes, para acechar, como novias, tras de las rejas:</p>
 					<lg type="poem">
 						<l>—Levantaremos pendones</l>
@@ -325,48 +372,48 @@
 					</lg>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0033_chap11">
-					<head>XI</head>
+					<head xml:id="ne0033_head_011">XI</head>
 					<p>La tea anarquista y las hogueras inquisitoriales atorbellinaban sus negros humos sobre el haz de España. La furia popular trágica de rencores, milagrera y alucinante, incendiaba los campos, y en el cielo rojo del incendio creía ver apariciones celestiales. La fiebre revolucionaria, en la hora de máxima turbulencia, se infantilizaba con apariciones y presagios del milenio. El clero aldeano, predicador de la cruzada carcunda, conducía a sus feligreses a las gándaras de los ejidos comunales. Ágiles pastores de cándidos ojos mostraban el sendero, como en las viejas crónicas que refieren las batallas contra el moro, con la blanca aparición de Santiago. Las negras sotanas escalaban los cerros capitaneando las fanáticas rogativas. Sobre el horizonte incendiado, los niños pastores señalaban las celestes apariciones. La comunión de feligreses esperaba inmovilizada. En el silencio atento, rompía los cristales de la tarde el suspiro histérico de las beatas como en una cópula sagrada. Sobre las rojas lumbres de las represalias se encendían las cándidas luces del milagro. Todos los ojos contemplaban el teologal prodigio de las escalas angélicas y el trono de nubes donde pacen ovejas e hila su copo de oro Nuestra Señora. Y el incendio de las furias populares corría sobre los campos, y el rico avariento huido de su fundo, se refugiaba en las ciudades, y por las hispánicas veredas, con los últimos reflejos del día destellaban tricornios y fusiles.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0033_chap12">
-					<head>XII</head>
+					<head xml:id="ne0033_head_012">XII</head>
 					<p>En las sedientas villas labradoras, negras de moscas, cercadas de corrales, encendidas de sol, los alcaldes de capa y monterilla reclamaban el amparo de la Guardia Civil. Temían el desmán de las glebas hambrientas desbandadas por los caminos con adusto duelo, sin hallar trabajo: En cuadrillas, implorando limosna, emigraban a las tierras bajas ribereñas del mar, menos castigadas del hambre que las altas llanuras trigueras: Dormían bajo el cielo de luceros, por las lindes de los campos asolados. En los villajes de la ruta pedían pan. Algunas mozuelas bailaban a la puerta de los ricos: Viejas de greña caída y ojos de brasa se metían por los zaguanes enlabiando bernardinas: Lloriqueaban los críos encadillados al refajo de las madres, pardas mujerucas en preñez: Tenían una canturía lastimera, y las madres les daban lección de humildad cristiana enseñándoles a besar el mendrugo de la limosna. Las sarracenas peonadas que aún cargaban al hombro las hoces en huelgo, pedían un polvo de tabaco, la palabra adusta, los ojos esquivos bajo el negro zorongo, el rojo pañolete, el catite o la montera, según fuese su éxodo riberas del Ebro, del Guadalquivir, del Tajo, del Sil, del Duero. Se salían del camino real para rastrear por los majuelos algún racimo olvidado del gorrión: Divertían el hambre con raíces y langostas silvestres como los Profetas del Desierto: Soportaban con enconado rencor la ceñuda hostilidad de la Guardia Civil: Temían su encuentro en el despoblado de las carreteras: Se descubrían y saludaban:</p>
 					<p>—¡Con Dios la Señora Pareja!</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0033_chap13">
-					<head>XIII</head>
+					<head xml:id="ne0033_head_013">XIII</head>
 					<p>Entre tricornios y fusiles, cuerdas de proletarios sospechosos de anarquismo acezaban por todas las carreteras de España: En los páramos y soledades camperas se atribulan con el presentimiento de la muerte: Sus ojos, quemados del sol y del polvo, tienen lumbre de rencores: Aletea su pensamiento en una noche de recelos y penas: Caminan esposados, taciturnos: Cargan escuetos hatillos sobre los hombros, y con miradas de través acechan las dañinas intenciones de los tricornios. Nunca se les autoriza para descansar en poblado: Frecuentemente son conducidos fuera del camino real por tajos de rastrojeras, sendas de olivar y negros pinares de silencio, con huellas de lobos y raposos. Entre luces salen a la vista de algún remoto villorrio de los que todavía tienen cárcel con cadena, cepo para borrachos y blasfemos, y en la plaza el rollo labrado por toscos y barrocos cinceles. En torno del campanario aletean vencejos y murciélagos. Dan un humo azul los tejados. Una guitarra llora penas. El nocturno morado del cielo solemniza las voces y las sombras. Los tricornios se contraseñan en silencio, inician un despliegue sobre los flancos, retroceden de espalda con los fusiles prevenidos, ganan distancia, hacen fuego. Un guardia lleva el parte al villorrio. El alcalde lo convida a unas copas. El secretario, en la misma mesa, moja la pluma en el tintero de asta. Redacta entre dientes: Viéndose esta fuerza agredida por un grupo que intentaba facilitar la fuga de los presos…</p>
 					<p>El monterilla bebe con el guardia:</p>
 					<p>—Y menos mal que por esta vez los habéis caído cerca del pueblo.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0033_chap14">
-					<head>XIV</head>
+					<head xml:id="ne0033_head_014">XIV</head>
 					<p>Las tropas salían de los cuarteles batiendo marcha, se acantonaban en los villorrios, merodeaban por los corrales. Las mujerucas que sufrían el daño sacaban de lejos las uñas, enronqueciendo clamores. Los pantalones colorados perseguidos por la zalagarda de los perros, el gruñido de los marranos y el rebuzno de los asnos escapaban trasponiendo las bardas. Los jaques de pueblo se reunían en la taberna: Si el mosto acaloraba los ánimos y encendía la trifulca popular, tres toques de atención para empezar la fusilada y restablecer el orden como previenen las sabias leyes marciales. El Caballo de Espadas, levantado en corneta, arenga con rutilantes tropos. En las mochilas cacarea un gallinero. Ladran los perros, innúmeros perros, nubes de perros: En fuga, cojeando, se expanden por la redondez del ruedo ibérico. Y sobre todos los horizontes, en el curvo límite, donde se juntan la tierra sin sembrar y el cielo, roses y pantalones colorados, brillo de bayonetas, fusilada y humo de pólvora. De la mochila de un quinto vuelan plumas de gallina. El Caballo de Espadas comenta en plática doctrinal con el rucio de Sancho:</p>
 					<p>—¡El mundo se arregla pegando fuerte!</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0033_chap15">
-					<head>XV</head>
+					<head xml:id="ne0033_head_015">XV</head>
 					<p>Los Generales de la Unión Liberal conspiraban fumando vegueros en las tertulias del Casino de Madrid. Aquellos Martes con reuma sifilítico, con juanetes, con bigotes y perillona de química buhonera, compadreaban por las prebendas en ciernes, y comprometían pactos para coronar al Duque de Montpensier. En la espera acudían al tapete verde para probar fortuna, y firmaban pagarés a cuenta de la cucaña revolucionaria: Con sesuda cuquería de tresillistas, premeditaban una función de pólvora, sin plebe, sin muertos, liberal en el reparto de mercedes, y les ponía en cuidado la ambiciosa condición del Conde de Reus. ¡Aquel soldado de aventura que caracoleaba un caballo de naipes en todos los baratillos de estampas litográficas!</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0033_chap16">
-					<head>XVI</head>
+					<head xml:id="ne0033_head_016">XVI</head>
 					<p>El reinado isabelino fue un albur de espadas. Espadas de sargentos y espadas de generales. Bazas fulleras de sotas y ases.</p>
 				</div>
 			</div>
 
 			<div type="part">
-				<head>Libro segundo: La Rosa de Oro</head>
+				<head xml:id="ne0033_head_017">Libro segundo: La Rosa de Oro</head>
 				<div n="17" type="chapter" xml:id="ne0033_chap17">
-					<head>I</head>
+					<head xml:id="ne0033_head_018">I</head>
 					<p>La Santidad de Pío IX, corriendo aquel año subversivo de 1868, quiso premiar con la Rosa de Oro, que bendice en la Cuarta Dominica Cuaresmal, las altas prendas y ejemplares virtudes de la Reina Nuestra Señora. A la significación de tan fausto suceso, no correspondió, como prometía, el cristiano sentimiento de la Nación Española: Aquellos que más debieran celebrarlo tenían intrigado en las camarillas vaticanas contra la designación de esta señalada merced para la Reina Nuestra Señora. Hubo una difusa intriga diplomática con mitras, frailes y monjas, recordando el tiempo de los Apostólicos. Personajes muy señalados terciaron en aquel enredo: Del Padre Fulgencio, Confesor del Rey Don Francisco, parece probado, y acaso no estuvo tan ajeno como debiera el Augusto Consorte. Una monja milagrera también anduvo en ello, según se propaló en murmuraciones de antecámara: Esta monja, que tenía captadas las regias voluntades, preciaba sus artes políticas por mejores que las de Roma. El Confesor y la Madre Patrocinio estimaban más eficaces que las muestras de amor indulgentes los anatemas con su cortejo de diablos y espantos: La monja y el fraile trataban de purificar al pueblo español de la contaminación masónica, y, escarmentados de otras veces, recelaban que por el conforto de las bulas pontificias, se les fuese de las manos el gobierno de la Señora. La Reina, libre de miedos, candorosa y desmemoriada, podía volver a los descarríos de antaño y firmar paces con las facciones liberales, que, emigradas, conspiraban en Francia. Eran muchos los palaciegos que acogían este linaje de suspicacias cuando llegó a la Corte el Enviado Apostólico. Con tal motivo hubo grandes fiestas en el Real Palacio: Capilla con señores obispos y cantantes de la Opera: Besamanos y parada: Banquete de gala y rigodón diplomático. Todo el lucido y barroco ceremonial, de la Corte de España.</p>
 				</div>
 
 				<div n="18" type="chapter" xml:id="ne0033_chap18">
-					<head>II</head>
+					<head xml:id="ne0033_head_019">II</head>
 					<p>La Rosa de Oro, salvado el símbolo y mirada en su ser de orfebrería, no era un primor del cincel: Si deslumbraba a los legos ingenuos, a los peritos edificaba contándoles las estrecheces del Santo Padre. Su Majestad La Reina, muy experta tasadora de alhajas, en el ceremonial de la entrega se afligió con un ahogo de lágrimas, secundado por todo el cortejo de plumas y bandas que llenaba la Real Capilla. Fue la solemnidad del acto, en consonancia a la señalada muestra con que distinguía a su Amada Hija en Cristo, la Santidad de Pío IX. Ofició el Señor Patriarca, asistido por los mitrados de Tuy y Salamanca. Estrenóse un terno pluvial, que la regia munificencia había encargado a las Seráficas Madres de Jesús. Era muy rico y refulgente, sin que pasase a competir con otros más antiguos que guarda aquella Real Sacristía. Alguna gente de tonsura lo denigró más de lo justo, comentándose que, por sólo el bordado de aquellos sacros paños, hubiesen percibido doscientos mil reales las Benditas de Jesús. Vicarios y sacristanes de otras monjas promovían estas murmuraciones. El reparto de las regias mercedes siempre acongoja más ánimos de los que congracia.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0033_chap19">
-					<head>III</head>
+					<head xml:id="ne0033_head_020">III</head>
 					<p>Fue muy conmovedor el momento, y escasos ojos permanecieron enjutos cuando se alzó para leer la salutación pontificia el rojo Legado Apostólico:</p>
 					<p>—Nos, Sumo Vicario de la Iglesia, para conocimiento y edificación de todos los fieles, queremos atestiguar solemnemente, con acendrado empeño y perenne monumento, el amor ardentísimo que te profesamos, carísima hija en Cristo. Con excelso gozo te confirmamos en esta predilección, así por las altas virtudes con que brillas como por tus egregios méritos para con Nos, para con la Iglesia y para con esta Sede Apostólica.</p>
 					<p>Se oían suspiros y sollozos. El Reverendo Padre Claret, Arzobispo de Trajanópolis, había traducido al romance castellano el mensaje latino, y los monagos repartían la bula en vitelas impresas con oros chabacanos. Salmodiaba ante el altar refulgente de luces el Legado de Roma:</p>
@@ -374,7 +421,7 @@
 					<p>Las cláusulas prosódicas subían en ampulosas volutas con el humo de los incensarios, y el cortejo palatino, asegurado en la bula del fraile, se maravillaba entendiendo aquel latín ungido de dulces inflexiones toscanas. La Familia Real tenía un resplandor de códice miniado. La Señora, particularmente, estaba muy majestuosa con el incendio que le subía a la cara: Sobre su conciencia, turbada de lujurias, milagrerías y agüeros, caían plenos de redención los oráculos papales.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0033_chap20">
-					<head>IV</head>
+					<head xml:id="ne0033_head_021">IV</head>
 					<p>Cuando, al término de la ceremonia, el palatino cortejo de plumas, bandas, espadines y mantos se acogió a los regios estrados, la Reina Nuestra Señora hubo de pasar a su camarín para aflojarse el talle. La Doña Pepita acudió pulcra y beatona: Era dueña del tiempo fernandino, una sombra familiar en las antecámaras reales. La Señora, al aflojarla la opresa cintura las manos serviles de la azafata, suspiró aliviándose: Estaba muy conmovida y olorosa de incienso: En la capilla, oyendo leer la salutación del Santo Padre, casi se transportaba, y el ahogo feliz del ceremonial veníale de nuevo. La Reina sentíase desmayar en una onda de piedad candorosa, y batía los párpados presintiendo un regalado deleite:</p>
 					<p>—Pepita, voy a confiarte un secreto. ¡Es para ti sola y no vayas a publicarlo por los desvanes!</p>
 					<p>Saltó la Doña Pepita, muy avispada:</p>
@@ -418,7 +465,7 @@
 					<p>De un sorbo apuró el marrasquino, poniendo el sello a su palabra real.</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0033_chap21">
-					<head>V</head>
+					<head xml:id="ne0033_head_022">V</head>
 					<p>La Majestad de Isabel II, pomposa, frondosa, bombona, campaneando sobre los erguidos chapines, pasó del camarín a la vecina saleta. La dama de servicio, con el aire maquinal de los sacristanes viejos cuando mascullan sacros latines, le prendió en los hombros el manto de armiño. Los regios ojos, los claros ojos parleros, el labio popular y amable, agradecieron con una sonrisa a la cotorrona de Casa y Boca. Aquella estantigua de credo apostólico, nobleza rancia, cacumen escaso, chismes de monja y chascarrillos de fraile, también intrigaba en las tertulias de antecámara desde el año feliz de las bodas reales. Era Duquesa de Fitero y Marquesa de Villanueva de los Olivares, con otros títulos y sobrenombres de claro abolengo, mucha hacienda en cortijos, dehesas, ganados, paneras, cotos, granjas, castillos y palacios. El escudo de sus armas está repartido por toda la redondez de España. La vejancona, confusamente, se sabía de un gran linaje, sangre bastarda de reyes aragoneses y judíos castellanos. Luego, tras estas exiguas luces, todo el saber histórico y familiar de la rancia señora constituía una fábula trivial, llena de incertidumbre, cubierta de polvo como los legajos de Simancas. En la puerta, cuando salía, se detuvo la Reina Nuestra Señora:</p>
 					<p>—Eulalia, de ti para mí, y no vayas más lejos…</p>
 					<p>Respondió hueca y espetada la rancia infanzona:</p>
@@ -452,7 +499,7 @@
 					<p>La Duquesa, en la punta de los pies, aseguraba con sus manos de momia los postizos y la diadema, que hacían un guiño en la cabeza de la Reina Nuestra Señora.</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0033_chap22">
-					<head>VI</head>
+					<head xml:id="ne0033_head_023">VI</head>
 					<p>Entre un cortejo de plumas fatuas y chafados visajes pasó la Reina Nuestra Señora al salón de Gasparini. Una gran mesa fulgente de cristal y argentería estaba dispuesta a fin de que hubiesen reparo para sus fallecidos ánimos las ilustres personas que habían recibido el pan eucarístico en la solemne función de Capilla. Para todos tenía una zumba popular y amable la Majestad de Isabel II. El Rey Don Francisco hacía chifles de faldero al flanco opulento de la Reina. Las Augustas Personas, agotado el repertorio de sonrisas y lisonjas, se entretuvieron largo espacio con el Duque de Valencia: Estaban los tres en el hueco de un balcón, tan profundo y amplio, que parecía una recámara. El Rey, menudo y rosado, tenía un lindo empaque de bailarín de porcelana. La Reina, con el pavo sanguíneo, se abanicaba. El Espadón, puesto en medio, abría las zancas y miraba de través, bajando una ceja, a las Personas Reales:</p>
 					<p>—Mi deber es aconsejar lealmente, sin perder de vista los intereses políticos y las altas responsabilidades de mis actos. La Real Familia no puede reconocer públicamente, ni tampoco con relaciones privadas, el origen misterioso de ese personaje.</p>
 					<p>Acudió severa la Reina:</p>
@@ -493,7 +540,7 @@
 					<p>La Reina Nuestra Señora, chungona y jamona, regia y plebeya, enderezaba con su abanico el borrego del toisón que llevaba al cuello el adusto Duque de Valencia, Presidente del Real Consejo.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0033_chap23">
-					<head>VII</head>
+					<head xml:id="ne0033_head_024">VII</head>
 					<p>La Majestad de Isabel II —luego de haber repartido retratos con laudosas dedicatorias entre obispos, monseñores y palaciegos— se retiró a los limbos familiares de su Cámara. El Excelentísimo Señor Don Jerónimo Fernando Baltasar de Cisneros y Carvajal, Maldonado y Pacheco, Grande de España, Marqués de Torre-Mellada, Conde de Cetina y Villar del Monte, Maestrante de Sevilla, Caballero del Hábito de Alcántara, Gran Cruz de la ínclita Orden de Carlos III, Gentilhombre de Casa y Boca con Ejercicio y Servidumbre, Hermano Mayor de la Venerable Orden Tercera y Teniente Hermano de la Cofradía del Rosario, hacía las veces como Sumiller de Corps. En la Cámara de la Reina el personaje ponía los ojos en blanco, doliéndose respetuosamente, pues también había esperado un retrato de la graciosa voluntad de la Señora. Era un vejete rubiales, pintado y perfumado, con malicia y melindres de monja boba: En cuanto a letras y seso, no desdecía en las cotorronas tertulias de antecámara: Vano, charlatán, muy cortés, un poco falso, visitaba conventos por la mañana, lucía hermosos troncos por la tarde, a la hora del rosario acudía secretamente al reclamo de una suripanta, y ponía fin a la jornada en un palco de los Bufos, donde se hablaba invariablemente del cuerpo de baile y de caballos. La Señora le consoló populachera y jovial:</p>
 					<p>—¿No comprendes, calabaza, que a las personas de mi íntimo aprecio quiero hacerles un presente más señalado? ¿Te parece mandar fundir una medallita? Precisamente quería consultarte.</p>
 					<p>El Marqués de Torre-Mellada se desbarató con una escala de gallos:</p>
@@ -529,7 +576,7 @@
 					<p>Se levantó con mecimiento de bombona, pasando al camarín por aliviarse de nuevo.</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0033_chap24">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_025">VIII</head>
 					<p>El besamanos estaba señalado para las tres de la tarde, pero comenzó lindando las cuatro. La clara luz de la tarde madrileña entraba por los balcones reales, y el séquito joyante de tornasoles, plumas, mantos y entorchados evocaba las luces de la Corte de Carlos IV. La Reina Nuestra Señora, revestida de corona y armiños, empecinada como una matrona popular, entró con mucha ceremonia en el Salón del Trono. El Rey Don Francisco dábale el brazo: Vestido de capitán general, muy perejil, todo colgado de cruces y bandas, casi desaparecía al flanco pomposo y maduro de la Señora: Asidos levemente de la mano, subieron las gradas del trono: Se saludaron con una genuflexión, como pastores de villancico, y tomaron asiento, sonrientes para el concurso, con gracia amanerada de danzantes que miman su dúo sobre un reloj de consola. Su Alteza Real el Príncipe de Asturias, vestido con marcial uniforme y luciendo divisas de cabo, hizo besamanos el primero: Era un niño pálido, con las orejas muy separadas: El enclenque desparpajo de la figura, la tristeza de la mirada, llena de prematuras curiosidades, promovían, con aquel disfraz del charrasco y el pantalón colorado, un recóndito dejo de cruel mojiganga. La expresión aguzada, enfermiza y precoz del Augusto Niño no prometía una vida lozana. Le agasajó con maternal orgullo la Señora. Alargó el Rey, sin llegar a tocarle, una mano blanca y llena de hoyos. Resplandeció el palatino cortejo, con sonrisa extasiada, y todos los rostros se asemejaron en una expresión de embobamiento familiar. El bálsamo cadencioso de la ceremonia religiosa se decantaba en los pechos cruzados de bandas: Todos eran felices en aquel momento y casi se amaban, complacidos en el júbilo maternal de la Reina Nuestra Señora. Sentían la protección celeste, estaba en sus corazones como una miel acendrada. El besamanos fue largo, pero tan lucido de mantos y oropeles, que muchos, en su embeleso, no lo reputaron cansado, y las horas se les hicieron instantes. La Señora, siempre de la mano de su Augusto Esposo, sonriendo, purpúrea bajo la coronal real, descendió del Trono: Tuvo palabras gratas para sus cortesanos. Era pimpante, donosa y feliz de malicias en la vana charla de la etiqueta: Entonces advertíase reina. ¡Hada de alcázares! Pero en las asperezas del gobernar político se le desvanecía la atención, dolorosamente incomprensiva. En este año de la Rosa de Oro se amargaba con la duda de que muchos españoles habían dejado de quererla. ¡Eran bien ingratos! ¡Y cuántos tendrían que condenarse por sus ideas extraviadas de progreso! ¡Condenarse! La Señora no deseaba el fuego eterno ni a sus mayores enemigos: Era pecado del que jamás había tenido que lavar su conciencia ante el Santo Tribunal. ¡El infierno, para nadie! La Señora, por el hilo de los pensamientos, llevó la mirada de sus claros ojos al Señor Duque de Valencia, que, vestido de gran uniforme, destacaba en medio del dorado salón su angosto talle de gitano viejo. La Señora le sonrió llamándole: Y hablaron a solas. Los que estaban vecinos, respetuosamente se distanciaban:</p>
 					<p>—Te estuve mirando, y me parece que algo te pasa. Estás preocupado. ¿Hay malas noticias? ¿Se han pronunciado en algún cuartel?</p>
 					<p>—Vuestra Majestad puede estar tranquila.</p>
@@ -546,7 +593,7 @@
 					<p>La Señora le dio a besar su real mano y apagó el celaje de los ojos bajo el vuelo de un presentimiento que la llenó de pavorosa inquietud. El General Narváez, abriendo el flamenco compás de las zancas, desaparecía como un fantasma, entre el fatuo susurro de las Camarillas.</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0033_chap25">
-					<head>IX</head>
+					<head xml:id="ne0033_head_026">IX</head>
 					<p>Por las galerías y a lo largo de las escaleras, uniformes y mantos susurraban al despedirse loores de aquel paso donde habían sido vistosos comparsas. Con aire de pedrisco pasó, de pronto, la nueva y el comento del agrio talante con que se tenía despedido de las Reales Personas el Señor Duque de Valencia. Algunos políticos decían que enfermo: Casi todos los palatinos, que enojado. El Marqués de Torre-Mellada se afligía, y en secreto comunicaba sus temores al Marqués de Redín: Eran cuñados los dos Marqueses: Este de Redín, casado con una hermana de Torre-Mellada: Bajaban despacio, y retardándose, la gran escalera. Sobre la gala de los uniformes destacaban los guantes blancos su cruel desentono, y eran todas las manos manos de payaso. El Marqués de Redín, que pertenecía al Cuerpo Diplomático, comentó con inflexiones perspicaces y erres francesas de salón de Embajada:</p>
 					<p>—Lo peligroso, realmente, sería una auténtica enfermedad del General Narváez.</p>
 					<p>Bajaron tres escalones, y en un rellano:</p>
@@ -586,7 +633,7 @@
 					<p>Sucédense los años, y todavía, cuando se pondera el ingenio tradicional de las grandes damas, se recuerda en las tertulias aristocráticas a la Duquesa de Santa Fe de Tierra Firme. En la Corte Isabelina se hizo famoso su desgarro, y cuchicheaban sus salaces donaires todos aquellos palaciegos gazmoños, que tenían, otras veces, llorado de risa con las gracias de fray Gerundio y Tirabeque. ¡El lego y el frailuco droláticos habían sido los maestros humanistas en aquella Corte de Licencias y Milagros!</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0033_chap26">
-					<head>X</head>
+					<head xml:id="ne0033_head_027">X</head>
 					<p>El ceremonial conmemorando el fausto suceso de la Rosa de Oro finó con banquete y baile de gran gala. El Señor Duque de Valencia, Presidente del Real Consejo, no pudo asistir, enfermo, según se susurró, con fiebres y punto de costado. El Ministro de la Gobernación tuvo una plática muy reservada con los reyes. Era un viejo craso y cetrino, con ojos duros de fanático africano: Ceceaba:</p>
 					<p>—Abrigo el presentimiento de un luto nacional. El Duque se halla realmente grave, y esta tarde ha tenido momentos de delirio.</p>
 					<p>La Reina, gozosa y encendida de la fiesta, imbuida de ilusa confianza, cerraba los oídos a las agoreras nuevas del señor González Bravo:</p>
@@ -606,7 +653,7 @@
 					<p>—¡Esta grandísima…!</p>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0033_chap27">
-					<head>XI</head>
+					<head xml:id="ne0033_head_028">XI</head>
 					<p>El Barón de Bonifaz —Adolfo Bonifaz en los salones—, después de los lanceros, mereció el honor de dar unas vueltas de habanera con la Señora. La Majestad de Isabel suspiraba en la danza, y el galán interrogaba con rendimiento:</p>
 					<p>—¿Se fatiga Vuestra Majestad?</p>
 					<p>—Tú debes ser el fatigado, porque estoy muy pesada.</p>
@@ -630,18 +677,18 @@
 					<p>La Majestad de Isabel II iba en los brazos del pollastre, meciendo las caderas al compás de la música criolla, gachoneando los ojos. El voluptuoso ritmo complicaba una afrodita esencia tropical, y todas las parejas velaban una llama en los párpados. Adolfito, propasándose, se acercaba más, y consentía candorosa la Reina Nuestra Señora. Era muy feliz en el mareo de las luces, viendo brillar en el fondo de los espejos multiplicados jardines de oro.</p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0033_chap28">
-					<head>XII</head>
+					<head xml:id="ne0033_head_029">XII</head>
 					<p>La Católica Majestad de Isabel adormecíase con las luces del alba, mecida en confusos pensamientos de reina —terrores, liviandades, milagros, rosadas esperanzas, clamoreo de cismas políticos, fusilada de pronunciamientos militares—. Isabel II, en este año subversivo de 1868, se contristaba con el espectro de la Revolución, causa de tantos males en el Reino: Juzgaba, candorosamente, que extirpada la impiedad liberal y masónica tornaría a la ruta de sus grandes destinos la Nación Española. Era muy reverenciosa de las conquistas sobre infieles de su abuelo San Fernando. España —la hija predilecta de la Iglesia—, vilmente calumniada por los malos patriotas desterrados en la frontera, la encendía en lumbres y corajes populares de Dos de Mayo: Visitaba todos los sábados por la tarde el Convento de Jesús. Hacía en el camarín largos rezos, pasando la camándula de la Madre Patrocinio: Mudaba más que nunca de la risa al llanto, y era tan pronto amor como esquivez lo que sentía por el Príncipe de Asturias. En Francia, algunos emigrados fomentaban una intriga para que abdicase la Señora. Felizmente, Roma, en aquella hora tan atribulada, acudía con sus bálsamos al conforto de su amada hija en Cristo. La Reina adormecíase cobijando ilusas esperanzas: El dejo azul de los ojos se velaba en el oro de las pestañas: Soñaba con labrar la felicidad de todos los españoles: El Santo Padre, señalándola con nuevas prendas de amor, promulgaba una bula que redimía de las calderas infernales a todos los súbditos de Isabel: Las glorias masónicas, en procesiones de penitentes, con capuchas y velillas verdes, se acogían al seno de la Iglesia. La Reina de España sentía el aliento del milagro en el murmullo ardiente con que la bendecía su pueblo. ¡Y en este limbo de nieblas babionas y piadosas imágenes brillaba con halo de indulgencia y felices oráculos la Rosa de Oro!</p>
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro tercero: Ecos de Asmodeo</head>
+				<head xml:id="ne0033_head_030">Libro tercero: Ecos de Asmodeo</head>
 				<div n="29" type="chapter" xml:id="ne0033_chap29">
-					<head>I</head>
+					<head xml:id="ne0033_head_031">I</head>
 					<p>El palacio de los Marqueses de Torre-Mellada estuvo en la Costanilla de San Martín. El Palacio de los Picos le decían por el ornamento del muro. Aquel caserón, con gran portada barroca, rejas y chatos balcones montados sobre garabatos de hierro, fue, en las postrimerías del reinado isabelino, lugar de muchas cábalas y conjuras políticas. La crónica secreta conserva en donosos relatos y malignas hablillas el recuerdo del vetusto caserón con rejas de cárcel y portada de retablo, la clásica portada de los palacios de nobles en Madrid.</p>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0033_chap30">
-					<head>II</head>
+					<head xml:id="ne0033_head_032">II</head>
 					<p>El Salón de la Marquesa Carolina —rancia sedería, doradas consolas, desconcertados relojes— repetía, un poco desafinado, los ecos literarios y galantes de los salones franceses en el Segundo Imperio. La Marquesa, ahora en su cautivante y melancólico otoño, escéptica de las ilusionadas peregrinaciones en busca del amor, conspiraba soñándose una Marquesa de la Fronda. Acababa de encender las luces el lacayo de estrados, y la doncella, reflejada sucesivamente en los espejos de las consolas, reponía las flores en los jarrones. La Marquesa Carolina, esta noche, como otras noches, mimaba la comedia del frágil melindre nervioso, recostada en el gran sofá de góndola, entre tules y encajes, rubia pintada, casi desvanecida en la penumbra del salón retumbante de curvas y faralaes, pomposo y vacuo como el miriñaque de las madamas. La Marquesa Carolina era de un gran linaje francés, hija del célebre Duque de Ramilly, Mariscal y Par del Reino en la Corte de Luis Felipe. Reclinada en el sofá de góndola, perezosa y lánguida, quejábase de una enfermedad imaginaria. Hacíanle tertulia dos damiselas y un caballero con empaque de rancio gentilhombre. Este caballero era el afrancesado Marqués de Bradomín. Las damiselas —lindas las dos— eran Feliche Bonifaz y Teresita Ozores. La Marquesa se oprimía las sienes con las manos: El gesto doliente agraciaba su expresión de rubia otoñal. Teresita Ozores encarecía los encantos de París: Acababa de llegar, y suspiraba por volver:</p>
 					<p>—¡Los franceses, locos con el Imperio! ¡París, maravilloso! ¡La Opera, brillante! ¡Los modistos, un escándalo! ¡Pero qué lujo, qué gracia, qué esprit! Esta primavera, el último grito, los fulares estampados con rosas. Eugenia ha puesto la moda. ¡Para las rubias, admirable! ¡Tú, Carolina, estarás encantadora!</p>
 					<p>Teresita Ozores escondía sus treinta abriles bajo un vistoso plumaje de pájaro perejil. Hablaba con voluble y casquivano gorjeo. La Marquesa Carolina murmuró, declinando los ojos y la sonrisa:</p>
@@ -650,7 +697,7 @@
 					<p>—¡Cierto! París es único.</p>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0033_chap31">
-					<head>III</head>
+					<head xml:id="ne0033_head_033">III</head>
 					<p>El Marqués de Torre-Mellada, con uniforme muy papagayo, cubierto de cruces y bandas, retocado y rubiales, entró haciendo gallos:</p>
 					<p>—La conjura revolucionaria parece abortada. Se confirma que unionistas y progresistas andan a la greña, sin ponerse de acuerdo para designar candidato al Trono. Hacen como los compadres que peleaban una noche por quién echaría en la olla un tordo que habían visto en el aire aquella mañana. ¡Hay que rezarle un responso al Duque!</p>
 					<p>—¡Muy interesante! ¡Muy interesante!</p>
@@ -665,7 +712,7 @@
 					<p>Y en medio de cada frase, el gorgorito de una risa, que presta a las palabras la gracia que no tienen y muestra la blancura de los dientes, al mismo tiempo que esparce la fragancia del seno alzándole en una armoniosa palpitación. Todas aquellas señoras intrigaban. Para ellas, la política era el botín de las bandas, de las grandes cruces, de los títulos de Castilla: Amaban los besamanos y los enredos de antecámara: Curiosas y noveleras, procuraban descubrir entre los caballerizos y gentileshombres al futuro favorito de aquella reina tan española, tan caritativa, tan devota de la Virgen de la Paloma. El Salón de Carolina Torre-Mellada fue famoso en las postrimerías del régimen isabelino, cuando rodaba en coplas de guitarrón la sátira chispera de licencias y milagros.</p>
 				</div>
 				<div n="32" type="chapter" xml:id="ne0033_chap32">
-					<head>IV</head>
+					<head xml:id="ne0033_head_034">IV</head>
 					<p>Dolorcitas Chamorro, en el sofá secreteaba con la francina Marquesa. La Chamorro, vejancona nariguda, con ojos de verdulera, negros y enconados, era sangre ilustre de aquel famoso aguador camarillero y compadre del difunto Narizotas. Dolorcitas picoteaba:</p>
 					<p>—¡El Duque está indignado! ¡Hija de mi alma, le cuesta un dineral la danza revolucionaria, y ahora quieren darle carpetazo! ¡Ya sabes que pone el veto a su candidatura para rey el trasto de Pringue! ¡Le dejarán compuesto y sin novia! ¡Me lo estoy temiendo! Si Ayala viene esta noche, procura sonsacarle. Dicen que el candidato de los radicales es el Niño Terso. ¿Has visto mayor escándalo?</p>
 					<p>Murmuró Carolina Torre-Mellada, con un gesto distraído, como si diese respuesta a sus callados pensamientos:</p>
@@ -677,7 +724,7 @@
 					<p>Era el que entraba un caballero alto, fuerte, cabezudo, gran mostacho y gran piocha: Vanidad de sargento de guardias.</p>
 				</div>
 				<div n="33" type="chapter" xml:id="ne0033_chap33">
-					<head>V</head>
+					<head xml:id="ne0033_head_035">V</head>
 					<p>Feliche Bonifaz miraba furtiva al Marqués de Bradomín. La Chamorro se allegó cotillona:</p>
 					<p>—Tu hermano, si ahora tuviese juicio… Me han contado que han sido marcadísimas las deferencias de la Señora. ¡Ya os veo en Palacio!</p>
 					<p>Feliche se había encendido, y estaba muy bella:</p>
@@ -699,7 +746,7 @@
 					<p>—La Chamorro, con sus husmas cotillonas, sus postizos y remangues, no era un anacronismo en la Corte Isabelina. Acaso un poco anticuado el estilo de sus derrotes, que lozaneaban la tradición del difunto Rey Narizotas.</p>
 				</div>
 				<div n="34" type="chapter" xml:id="ne0033_chap34">
-					<head>VI</head>
+					<head xml:id="ne0033_head_036">VI</head>
 					<p>López de Ayala, el figurón cabezudo y basto de remos, autor de comedias lloronas que celebraba por obras maestras un público sensiblero y sin caletre, saludaba con pomposa redundancia a las madamas del estrado: Tenía el alarde barroco del gallo polainero. La Marquesa Carolina le acogió con bella sonrisa:</p>
 					<p>—¿Trae usted alguna noticia? Nosotras estamos rezando el trisagio, como las viejas cuando truena.</p>
 					<p>—¡No es para que los luceros lloren perlas!</p>
@@ -742,7 +789,7 @@
 					<p>Carolina juntaba las manos, como en una visita de pésame.</p>
 				</div>
 				<div n="35" type="chapter" xml:id="ne0033_chap35">
-					<head>VII</head>
+					<head xml:id="ne0033_head_037">VII</head>
 					<p>Con gritos y aspavientos, irrumpieron los que se habían ido a los bufos, damas y galanes:</p>
 					<p>—¡Hay barricadas!</p>
 					<p>—¡No se puede tolerar!</p>
@@ -775,7 +822,7 @@
 					<p>—¡Ole tu madre, resalado!</p>
 				</div>
 				<div n="36" type="chapter" xml:id="ne0033_chap36">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_038">VIII</head>
 					<p>Gonzalón Torre-Mellada recibía las lecciones de cante y acompañamiento de guitarra en la biblioteca, vasta sala frailuna y silente, propicia al trato de las musas y al estudio de la guitarra por cifra, que profesa Paco el Feo. Asistían a la lección y terciaban con timos y sentencias Pepe Río-Hermoso, el Duque de Ordax y el Pollo de los Brillantes. Una redoma pintada de rubio sobre dos pies del bailarín, con tacones muy altos. El Pollo de los Brillantes era una momia acicalada: En este tiempo vivía del juego, y algunos sospechaban si de acuñar moneda. Era muy camarada del Barón de Bonifaz: Corrían las mismas chirlatas y cenaban juntos. El Duquesito de Ordax era un pollo, teniente de húsares, que llevaba el luto de su padre, y se divertía por los colmados no pudiendo hacerlo en su mundo. Pepe Río-Hermoso, primogénito de esta casa condal, asistía a la lección por matar el tiempo, y sin conseguirlo: Le miró, templando, Paco el Feo:</p>
 					<p>—Pepillo, para ti, mi vida, estos tientos. A ver si sueltas la murria, pelmazo. ¡Allá va!</p>
 					<p>Abría la boca el cañí, sacando la nuez, y entraba Adolfito:</p>
@@ -813,7 +860,7 @@
 					<p>Dispersóse el alegre cotarro. Gonzalón dio un suspiro y tiró de la campanilla para que compareciese Toñete.</p>
 				</div>
 				<div n="37" type="chapter" xml:id="ne0033_chap37">
-					<head>IX</head>
+					<head xml:id="ne0033_head_039">IX</head>
 					<p>Una sombra apareció en la puerta de la biblioteca. Gonzalón, que apuraba el caneco, cloqueó con el gollete en la boca:</p>
 					<p>—¡Toñete!</p>
 					<p>—¡Se ha evaporado!</p>
@@ -852,7 +899,7 @@
 					<p>Y remató haciendo bailar con la punta del pie al desprevenido pelele, que, puestas las manos en las nalgas, rompió a llorar en falsete.</p>
 				</div>
 				<div n="38" type="chapter" xml:id="ne0033_chap38">
-					<head>X</head>
+					<head xml:id="ne0033_head_040">X</head>
 					<p>El Café Suizo no cerraba sus puertas. El madruguero cazador —morral, escopeta y perro— podía entrar con el alba a beberse una taza de café caliente, antes de salir al ojeo en la paramera de Vicálvaro. El Suizo mantenía siempre encendidos los pomposos tulipanes de la rinconada frontera al mostrador. Allí aposentábase un cenáculo de noctámbulos: El periodista mordaz, el provinciano alucinado, el cómico vanidoso, el militar de fanfarria, el respetuoso borracho profesional, admirador de los cráneos privilegiados, el guitarrista alcahuete, el opulento mendigo, primogénito de noble casa: Era una trinca apicarada y donosa, con ajadas plumas calderonianas, un eco de arrogancias y estocadas, recogido en aire de jácara matona. Aquella noche se juntaban Toñete Bringas, Perico el Maño, el Coronel Zárate, Manolo Gandarias, el Barón de Bonifaz, Paco Cembrano, el Cura Regalado, Don Joselito el Pollo de los Brillantes y el Rey de Navarra. Las horas luminosas en aquella tertulia solían ser las de madrugada, cuando aparecía el sablista famélico, siempre cesante. El ilustre primogénito, el militar, el torero, guiñando la pestaña, roncos de la misma ronquera, hacían gárgaras con ron de Jamaica. Entonces el gacetillero cruel jugaba el vocablo, el provinciano se extasiaba, el cómico encarecía el corte de su sastre, el borracho profesional, lloroso y babón, le adulaba, y el guitarrista, con sonsoniche, feriaba a una niña de tablado: Era aquél uno de los círculos más depurados de la sensibilidad española, y lo fue muchos años. El Suizo y sus tertulias noctámbulas fueron las mil y una noches del romanticismo provinciano. Adolfito Bonifaz propuso salir a robar capas. Celebraron la ocurrencia Toñete Bringas y Perico el Maño: Sin pagar, en cuerpo, se echaron a la calle. Comentó el mozo que los vio tan dispuestos:</p>
 					<p>—¡Vaya unos perdularios!</p>
 					<p>El Cura Regalado les echó una bendición: Paco Cembrano y el Rey de Navarra, con absoluta indiferencia, siguieron dándose jaque mate, atentos al tablero, en la última mesa de la rinconada. Pero se alzó como un león el Coronel Zárate:</p>
@@ -883,7 +930,7 @@
 					<p>Este Rey de Navarra, quimérico y perdulario, era en verdad un gran señor, rama primogénita de Alfonso X el Sabio: Pleitos, usuras y dádivas le habían empobrecido, y desde muy joven vivía de trampas: En este momento isabelino, su edad no pasaría de los cincuenta: Indulgente, con una magnánima y desdeñosa comprensión de todos los pecados, no se pasmaba de nada: Era ingenioso, placentero y muy cortesano. Los amigos de aquella tertulia, recordando alguna de sus fantasías, le llamaban siempre Rey de Navarra. Paco Cembrano, viejo cínico, de pintoresca labia, con un dejo de jugador del mus, le llamaba simplemente Monarca. El Cura Regalado, cuando tenía cuatro copas, le decía César Imperator. Otros, Majestad. Por su nombre, ninguno le llamaba. Pero el mote burlesco, en su pompa resonante llevaba un reconocimiento de jerarquía y una amistosa complacencia en señalarlo. El arruinado prócer inspiraba el respeto de las imágenes sacras cubiertas de polvo y maltratadas del tiempo. Piedad y lástima. La rubia del mostrador le amaba en secreto, y era visible la emoción con que le nombraba. En rigor, la rubia habíase prendado de aquel círculo luminoso y romántico, donde se referían, como en las novelas, amores y adulterios de grandes damas. La Tertulia del Suizo, en sus horas más brillantes, con sus eternos temas de conspiraciones y valentías, lances de naipes y tauromaquia, cobraba un interés expresivo, una contorsión de teatral jactancia. En aquellos momentos, el corazón marchito de la rubia se conmovía con una primaveral floración, que le recordaba oscuramente la fiesta patriótica del Dos de Mayo.</p>
 				</div>
 				<div n="39" type="chapter" xml:id="ne0033_chap39">
-					<head>XI</head>
+					<head xml:id="ne0033_head_041">XI</head>
 					<p>El Barón de Bonifaz, Toñete Bringas y Perico el Maño celebraron consejo en la puerta del Suizo: Allí, bajo el parpadeo de las estrellas sonámbulas, se concertaron para la burla, en aquellas noches madrileñas, reverdecida por una juvenil cuadrilla de chulos parásitos, jaques marchosos y aristócratas tronados. Por la calle desierta cruzaba el coche ministerial que conducía a González Bravo. Adolfito apenas pudo saludar desde la acera con un afanoso golpe de sombrero: Súbitamente recobraba el modo fatuo y ceremonioso de los elegantes isabelinos en las postrimerías de aquel reinado, cierto automatismo petulante de fantoche británico. Habían impuesto la moda de aquel saludo algunos pollos de la goma que se vestían en Londres. El Ministro de la Corona, incierto en el fondo del coche, respondió inclinándose, maquinal y preocupado. El cochero, desabrido, dijo al lacayo:</p>
 					<p>—¡Vaya unos pollos!</p>
 					<p>Y el lacayo filosofó:</p>
@@ -926,7 +973,7 @@
 					<p>—¿Cómo se llama el Nuncio? ¿Es Pérez, o Fernández?</p>
 				</div>
 				<div n="40" type="chapter" xml:id="ne0033_chap40">
-					<head>XII</head>
+					<head xml:id="ne0033_head_042">XII</head>
 					<p>Comenzó la juerga. Las niñas batían palmas con estruendo, y el chaval entraba y salía toreando los repelones de Luisa la Malagueña: La daifa, harta de aquel juego, saltó sobre la mesa, y, haciendo cachizas, comenzó a cimbrearse con un taconeo:</p>
 					<p>—¡Ole!</p>
 					<p>Se recogía la falda, enseñando el lazo de las ligas. Era menuda y morocha, el pelo endrino, la lengua de tarabilla, y una falsa truculencia, un arrebato sin objeto, en palabras y acciones: Se hacía la loca con una absurda obstinación completamente inconsciente. En aquel alarde de risas, timos manolos y frases toreras, advertíase la amanerada repetición de un tema. La otra daifa, fea y fondona, con chuscadas de ley y mirar de fuego, había bailado en tablados andaluces antes de venir a Madrid con Frasquito el Ceña, puntillero en la cuadrilla de Cayetano. Pidió venia, anunciándose con los nudillos, el Pollo de los Brillantes: Esparcía una ráfaga de cosmético, que a las daifas del trato seducía casi al igual que las luces de anillos, cadenas y mancuernas. Susurró en la oreja de Adolfito:</p>
@@ -946,7 +993,7 @@
 					<p>—Caballeros, abajo están los guindas; van a subir. No quiero compromisos en mi casa. Si andan ustedes vivos, creo que pueden pulirse por la calle de la Gorguera.</p>
 				</div>
 				<div n="41" type="chapter" xml:id="ne0033_chap41">
-					<head>XIII</head>
+					<head xml:id="ne0033_head_043">XIII</head>
 					<p>Resonaban pasos en el corredor. Asomaron los bigotes de un guardia:</p>
 					<p>—¿Dan ustedes su permiso?</p>
 					<p>El guardia, detenido en la puerta, miró a las daifas, al chaval del mandilón y a Garabato: Le inspiraban un sentimiento familiar en su calidad de pueblo, y mirándolos consolaba su aturdimiento. Toñete Bringas y el Pollo de los Brillantes probaron la captación del guardia, y lo torearon al alimón, como ellos decían:</p>
@@ -985,7 +1032,7 @@
 					<p>Fueron las últimas palabras, porque todos huían escaleras abajo.</p>
 				</div>
 				<div n="42" type="chapter" xml:id="ne0033_chap42">
-					<head>XIV</head>
+					<head xml:id="ne0033_head_044">XIV</head>
 					<p>—¡En los altos del Suizo!</p>
 					<p>Corrida la consigna, cada cual buscó argucia para salir del enredo. Adolfito y Gonzalo se entraron en un cuarto vacío, que aún tenía sobre la mesa los relieves de una cena. Adolfito ordenó con helada prudencia:</p>
 					<p>—¡Siéntate y cuélgate una servilleta!</p>
@@ -1022,7 +1069,7 @@
 					<p>Bajo los marciales bigotes masculló la pareja embrolladas palabras de agradecimiento. Pepe Garabato, con un guiño, marcó su aplauso por la faena, y corredor adelante, siguió abriendo puertas. Gonzalón roncaba a un canto de la mesa, de bruces sobre el mantel, y una mariposa nocturna se quemaba en la lámpara.</p>
 				</div>
 				<div n="43" type="chapter" xml:id="ne0033_chap43">
-					<head>XV</head>
+					<head xml:id="ne0033_head_045">XV</head>
 					<p>Gonzalón Torre-Mellada, vinoso y soñoliento, en la prima mañana, como tantas veces, pasó entre los criados que lustraban la enorme antesala. Cruzó torpón entre los trastos revueltos, y con el mismo aire sonámbulo se acostó, ayudándole una vieja que le había mecido en la cuna: Se durmió con feliz ronquido de borracho: Dormido estaba, cuando entró con gran aspaviento la antigua niñera:</p>
 					<p>—¡Hijo! ¿Qué has hecho? Quieren llevarte a la cárcel. ¡El mundo está loco! ¿Con qué compañías te has juntado? Cuatro guardias en la escalera. ¡No es para ti, niño mío, el cadalso! El Inspector está en disputa para llevarte. ¡Tus papas están traspasados! Hijo, ¿qué estás a discurrir?</p>
 					<p>Barboteó Gonzalón:</p>
@@ -1044,7 +1091,7 @@
 					<p>—Se les ciega. Al Señor Inspector, con todo respeto, dile que me presentaré apenas me vista, y avisa a Toñete.</p>
 				</div>
 				<div n="44" type="chapter" xml:id="ne0033_chap44">
-					<head>XVI</head>
+					<head xml:id="ne0033_head_046">XVI</head>
 					<p>El Marqués se presentó en el cuarto de su hijo, un poco friolero, zapatillas bordadas, gorro y bata de Rey Mago: Se dramatizó en la puerta con respingo de fantoche:</p>
 					<p>—¡Acabas de echar un borrón sobre tu sangre! ¡Incomprensible! ¡Sin explicación!</p>
 					<p>Se disculpó el hijo con gesto amurriado:</p>
@@ -1070,7 +1117,7 @@
 					<p>Todos comprendían que debía costar algunas pesetas el consuelo de aquella mujer ronca y desconocida, que acaso clamaba maldiciones en un barrio lejano, ante el cadáver del guardia.</p>
 				</div>
 				<div n="45" type="chapter" xml:id="ne0033_chap45">
-					<head>XVII</head>
+					<head xml:id="ne0033_head_047">XVII</head>
 					<p>La Marquesa de Torre-Mellada tenía crispaciones, ahogos, gritos, soponcios y otros mil remilgos de dama nerviosa: Por ráfagas fulguraba en su pensamiento el súbito espanto de la casa llena de guardias, con los criados atónitos cambiando mudos signos: Una visión extática y trastornada como la del relámpago, de lívidas imágenes en movimiento sin mudanza. La doncella, para calmar aquellas congojas, le sirvió una taza de tila con cinco perlas de éter, receta de un famoso especialista de París —el Doctor Jenkins—. La Marquesa tenía la fórmula por su gran amiga la Duquesa de Morny. Se animó con la tila y el éter. El Marqués se anunció con dos golpes discretos en la puerta del tocador:</p>
 					<p>—¿Puedo pasar?</p>
 					<p>La doncella, a una seña dolorida de su señora, abrió la puerta, cuadriculada de espejillos con figuras pompeyanas. Entró de puntillas el marido:</p>
@@ -1106,7 +1153,7 @@
 					<p>—¡Qué asco de vida!</p>
 				</div>
 				<div n="46" type="chapter" xml:id="ne0033_chap46">
-					<head>XVIII</head>
+					<head xml:id="ne0033_head_048">XVIII</head>
 					<p>La Marquesa abrió los ojos con cierta extrañeza de insomnio alucinado. Un murmullo de voces apagadas venía del tocador. Respondía la doncella. ¿Pero quién interrogaba? La Marquesa se incorporó en los cojines de encaje:</p>
 					<p>—¿Eres tú, Feliche? Pasa, estoy trastornada. ¿Y tú, mi pobre niña? ¿Cómo no has entrado antes? ¡Todo el tiempo acordándome de ti!</p>
 					<p>Sollozó Feliche:</p>
@@ -1143,7 +1190,7 @@
 					<p>—No insisto. Te disculparé. En nuestro mundo, afortunadamente, todos saben lo que son nervios.</p>
 				</div>
 				<div n="47" type="chapter" xml:id="ne0033_chap47">
-					<head>XIX</head>
+					<head xml:id="ne0033_head_049">XIX</head>
 					<p>Cayetana, la antigua niñera, con un trotecillo voluble y asmático, acudía al requerimiento de la señora Marquesa. Viéndola entrar, ordenó perentoria la madama:</p>
 					<p>—Una falda de trapillo y tu manto. Vísteme como para visita de pobres.</p>
 					<p>Feliche, pálida y ojerosa, esperaba en pie: Las manos, crucificadas sobre su libro de misa y su rosario. Cayetana arrugaba la boca con un puchero:</p>
@@ -1170,7 +1217,7 @@
 					<p>Y otra vez el relámpago de la casa en susto, con las figuras lívidas, paralizadas en una acción, como figuras de cera.</p>
 				</div>
 				<div n="48" type="chapter" xml:id="ne0033_chap48">
-					<head>XX</head>
+					<head xml:id="ne0033_head_050">XX</head>
 					<p>Rodaba el simón por una calle angosta de tabernuchos y empeños. Feliche se recogió en el fondo, echándose la mantilla a los ojos:</p>
 					<p>—¡Creo que nos ha visto!</p>
 					<p>—¿Quién?</p>
@@ -1199,7 +1246,7 @@
 					<p>Cayetana, la vieja servidora, pulcramente asomada a la puerta de un tabernucho, llamaba al cochero, que levantaba el vaso de morapio, brindando por la República.</p>
 				</div>
 				<div n="49" type="chapter" xml:id="ne0033_chap49">
-					<head>XXI</head>
+					<head xml:id="ne0033_head_051">XXI</head>
 					<p>Venían en disputa por la acera, una rubiales enlutada, y un prójimo con catadura de músico ambulante, el violín en funda y la colilla pegada al labio. Con un reojo a las madamas del coche, se metieron por el zaguán. La portera les salió al paso, con misterios de comadre:</p>
 					<p>—¡Gente de postín! Han preguntado por la Macaria. ¡Para mí que le traían un socorro!</p>
 					<p>Saltó la rubiales:</p>
@@ -1272,7 +1319,7 @@
 					<p>La Marquesa Carolina estrechó la mano de Feliche.</p>
 				</div>
 				<div n="50" type="chapter" xml:id="ne0033_chap50">
-					<head>XXII</head>
+					<head xml:id="ne0033_head_052">XXII</head>
 					<p>La Marquesa Carolina, prendida de perlas y encajes, con bucles y camelias en el escote, repartía saludos y sonrisas desde su palco en el Teatro de la Cruz. Julián Romea, envejecido y mortal bajo el colorete, celebraba su beneficio con <seg type="cite">El Alcalde de Zalamea</seg>. Valero hacía el Pedro Crespo, y el Don Lope de Figueroa, Romea. En el Saloncillo de Autores, un crítico flaco, miope y pedante, ponía cátedra con maullido histérico. Le decían por burlas Epidemia:</p>
 					<p>—Nuestro Adelardo se ha parangonado, se ha parangonado con el genio de Calderón. ¡De Calderón! Ayala no ha refundido, no ha refundido; ha colaborado. Como Calderón había antes colaborado con Lope. ¡Con Lope! El tema inicial pertenece al Fénix. Ayala ha igualado la versión calderoniana en sus más felices momentos. ¡En los más felices de Calderón! ¡Igualado!</p>
 					<p>Interrogó un pollo camastrón que asistía a todos los estrenos, y regalaba bombones a las actrices:</p>
@@ -1287,7 +1334,7 @@
 					<p>—¡Zape!</p>
 				</div>
 				<div n="51" type="chapter" xml:id="ne0033_chap51">
-					<head>XXIII</head>
+					<head xml:id="ne0033_head_053">XXIII</head>
 					<p>Julián Romea jadeaba, suelto el coleto. Espada, chambergo y capa, repartidos por los muebles del camerino: El arruinado galán también puso atención a los aplausos tributados al bailarín.</p>
 					<p>—¡Es triste y bochornoso! La joya del teatro clásico, refundida por otro clásico, apenas se tolera. No se aplaude la admirable interpretación de Pepe Valero. ¡Verdaderamente admirable, si se prescinde de ciertos defectos propios de su escuela! ¡Malos tiempos, cuando así triunfan del arte las boleras manchegas!…</p>
 					<p>Quedó taciturno mirándose las flacas y descoloridas manos. Don Luis González Bravo, sentado enfrente, observaba con adusto efecto al arruinado don Lope.</p>
@@ -1337,7 +1384,7 @@
 					<p>El Capitán, Isabel, Felipe II y Rebolledo entraban con una relumbrante corona, ofrenda de la farándula al genio de Julián Romea.</p>
 				</div>
 				<div n="52" type="chapter" xml:id="ne0033_chap52">
-					<head>XXIV</head>
+					<head xml:id="ne0033_head_054">XXIV</head>
 					<p>El Ministro de la Gobernación, Don Luis González Bravo, meditaba en su poltrona, con los pies en la tarima del brasero y el gorro turco sobre la oreja. Meditaba, y se enfriaba el chocolate con churros, que solía tomar en las horas de madrugada: Tenía la mirada semita y de azulinos blancos, que parecía afilarse sobre la línea corva de la nariz, la frente calva con tufos de ceniza, y aquel ceño brusco y acusado que, otro tiempo, los imagineros ponían a los judíos en los pasos de Semana Santa. Entró Carlos Mori, un pollo elegante, pariente remoto y secretario del Ministro:</p>
 					<p>—Don Luis, ha vuelto el Marqués de Torre-Mellada.</p>
 					<p>Afirmó su duro ceño de jaque gaditano el Ministro de la Gobernación:</p>
@@ -1391,7 +1438,7 @@
 					<p>—Pues convídame a chocolate con buñuelos.</p>
 				</div>
 				<div n="53" type="chapter" xml:id="ne0033_chap53">
-					<head>XXV</head>
+					<head xml:id="ne0033_head_055">XXV</head>
 					<p>En el Palacio de Torre-Mellada se albergaban dos tertulias mal avenidas, como en las Regias Cámaras: El Salón de la Marquesa Carolina y el Tresillo del Marqués, en la Biblioteca: Allí, disputas, toses, reumas de apostólicos carcamales, comentaban con igual acrimonia las veleidades del naipe y las calumnias propaladas en el extranjero por la demagogia revolucionaria. Estaban aquella noche en momento de paz las dos tertulias. La Marquesa, arrastrando la cola, frágil y mundana, recorría las mesas de juego apoyada en el brazo del Marqués: Con lánguido arrumaco dulcificaba los ojos sobre la constelación de calvas y lechuguinos bisoñés. Hacía invitaciones y se despedía para Los Carvajales:</p>
 					<p>—¡Señor Navia Osorio! ¡Señor Arcediano! ¡Brigadier! No olviden que esperamos la visita de ustedes.</p>
 					<p>Soplaron alternativamente los tres bajos:</p>
@@ -1414,7 +1461,7 @@
 					<p>Los Marqueses, apartando en abanico las cabezas, asentían con su sonrisa pintada. Tocando con la flor rosada de los dedos el brazo del marido, tornó a su estrado la Marquesa Carolina. El tema, la tos y el resuello sochantre de los carcamales tresillistas la escoltaban. Aquella noche, por corto tiempo, firmaban paces las dos tertulias hostiles del Palacio de Torre-Mellada.</p>
 				</div>
 				<div n="54" type="chapter" xml:id="ne0033_chap54">
-					<head>XXVI</head>
+					<head xml:id="ne0033_head_056">XXVI</head>
 					<p>Se fueron en el tren nocturno de Andalucía. Las siete de la tarde, en aquellos claros días marzales, era una hora elegante y discreta para las últimas despedidas en la Estación de Atocha. ¡Las siete de la tarde! Volvían de la Castellana los troncos con un vaho acre, salpicados de espuma los paramentos. El Marqués se llenaba de angustia con aquella evocación: El desfile de carruajes, los teatros, las visitas de monjas, el ceremonial palatino, todas las candilejas de su vida refitolera y mundana se apagaban en la cortijera reclusión de Los Carvajales. Para consuelo y amargura, lo mejor de la sociedad habíase dado cita en la Estación de Atocha. Un sentimiento confuso de ajenjo y almíbares arrugábale la cara, mientras se ponía los guantes, detenido en la portezuela del vagón. Asomó la Marquesa:</p>
 					<p>—¡Feliche! ¿Dónde estás, Feliche?</p>
 					<p>—No se pierde Feliche.</p>
@@ -1430,18 +1477,18 @@
 					<p>—¡Serías capaz de representar el Quijote con faldas!</p>
 				</div>
 				<div n="55" type="chapter" xml:id="ne0033_chap55">
-					<head>XXVII</head>
+					<head xml:id="ne0033_head_057">XXVII</head>
 					<p>Eran las últimas despedidas. Saludaban los caballeros alzándose las chisteras. Agitaban el pañolito las madamas. Teresita Ozores se subía al estribo para decirle un verde donaire a Torre-Mellada. Trepidaba el tren. La locomotora chispeaba, sudando aceite. Por la puerta de viajeros, de carrerilla, en un remolino, aspados los brazos, entraba un tipejo. Torre-Mellada lo vio y recibió el último consuelo mundano: Aquel tipejo que llegaba con retardo era Asmodeo.</p>
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro cuarto: El Coto de Los Carvajales</head>
+				<head xml:id="ne0033_head_058">Libro cuarto: El Coto de Los Carvajales</head>
 				<div n="56" type="chapter" xml:id="ne0033_chap56">
-					<head>I</head>
+					<head xml:id="ne0033_head_059">I</head>
 					<p>Eran tierras de señorío. La vasta casona fue lugar de muchas intrigas y conjuras palaciegas durante el reinado de Isabel II. Los Duendes de la Camarilla más de una vez juntaron allí sus concilios, y tiene un novelero resplandor de milagro, aquel del año 49, donde se hizo presente en figura mortal la célebre Monja de las Llagas. ¡Notorio milagro! Se comprobó que, cuando esto acontecía, la Santa Madre Patrocinio estaba rezando maitines en el Convento de la Trinitá del Monti, recoleta clausura de los Estados Pontificios, donde ejemplarizó día a día todo el tiempo del inicuo destierro a que la tuvo condenada el colérico Espadón de Loja. ¡Mucho sufrió entonces el cristiano sentir de la Reina de España! Para ahorrarle lágrimas y tribulaciones de conciencia, se celebraban aquellos concilios de Los Carvajales: Ellos trajeron nuevamente a la santa beata y sosiego al piadoso corazón de Nuestra Señora. Después, el tiempo veleidoso, que muda usanzas y tradiciones, sustituyó el santo rosario de las momias apostólicas por las cacerías y apartados de reses bravas, tientas y derribas, que están historiadas en los <seg type="cite">Ecos de Asmodeo</seg>. En este año subversivo de 1868, los lucios personajes del credo moderado y la aristocracia camarillera intrigaban con el sesudo acuerdo de quebrantar la hidra del liberalismo que conduce fatalmente al caos de las Revoluciones. Unos, como los viejos predicadores de aldea, sacaban el Retablillo del Alma Condenada. Otros, más profanos y teatrales, de un lugar invisible del espacio, sacaban, asida por los pelos, la ensangrentada cabeza de Luis XVI. ¡Cabeza de malabares que desdobla su ejemplo en las logias y en las sacristías, mostrando alternativamente una de sus caras, porque tiene dos, como el latino Jano! Del Coto de Los Carvajales quedan luengas memorias en las páginas tontainas de Asmodeo.</p>
 				</div>
 				<div n="57" type="chapter" xml:id="ne0033_chap57">
-					<head>II</head>
+					<head xml:id="ne0033_head_060">II</head>
 					<p>La señorita Aline, Damiana, Toñete y Monsieur Pierre Durand, jefe de las cocinas, viajaban, con billete de segunda, en la santa compañía de dos monjas. El resto de la servidumbre iba en tercera. Los caballos, en un vagón, bajo la custodia de ternes mozos de cuadra. Las jaurías, estibadas en la perrera. Toñete, siempre que lo permitía la demora en las estaciones, se apeaba y asomaba la jeta tras el vidrio del coche donde viajaban los señores. El Marqués pegaba la nariz batiendo con el ovillejo de los guantes:</p>
 					<p>—¡Los caballos! ¿Cómo van los caballos?</p>
 					<p>Toñete le tranquilizaba con un gesto y desaparecía. El tren dejaba la estación con su candilejo triste y sus bultos enmantados: Corría por los campos desiertos, que, a la luna, copiaban el blanco de los osarios y tenían claros lejos azules de quiméricos mares. Bajo la luna muerta, el convoy perfilaba una línea de ataúdes negros: Con su pupila roja y su fragor de chatarra, corría en la soledad de la noche, en la desolación de los campos, hacia las yertas lejanías de mentidos mares. Toñete penetraba en el coche con el tren en marcha, se aflojaba la bufanda y reverdecía una antigua querella con la señorita Aline. Las monjas, juntas las rodillas haciendo mesa, tenían abierto el escriño de su parca colación. La más anciana murmuró dengosa:</p>
@@ -1465,7 +1512,7 @@
 					<p>El revisor saludó alzándose la mano a la visera del quepis, abrió la portezuela y se fue por el estribo. Las monjas, para reponerse del susto, aceptaban las alcaparras y el borgoña.</p>
 				</div>
 				<div n="58" type="chapter" xml:id="ne0033_chap58">
-					<head>III</head>
+					<head xml:id="ne0033_head_061">III</head>
 					<p>A los costados de un vagón de tercera, por sendas ventanillas, asomaba fusiles y tricornios la Benemérita Pareja. Como un gato, se descolgaba la sombra adolescente de un pícaro, y luego corría a campo traviesa. Jadeaba el tren. Ahora, por el mismo costado del vagón, asomaban parejos los cañones de dos fusiles. Apuntaban. Sonaron alternos disparos, y el pícaro que corría echó los pies por alto con brusca zapateta. Murmuró un inglés, vendedor de Evangelios:</p>
 					<p>—¿Lo han morido, señores Guardias?</p>
 					<p>—¡Vaya usted a saber!… Algo lleva.</p>
@@ -1497,7 +1544,7 @@
 					<p>Otra vez se enzarzaron. El ama tiraba del balandrán al clérigo. Dos mozuelas del trato, que iban bajo la custodia de una vieja, se conchababan con los lacayos del Marqués. Alargando el rabillo del ojo, espiona, la celestina ríe con tres dientes. En los túneles eran los achuchones y la bulla maleante. Un alarido de antruejo rijoso revoloteaba en el vagón. El convoy perfilaba su línea negra por el petrificado mar del llano manchego. Trotaba detrás, enristrada la lanza, todo ilusión en la noche de luna, el yelmo, la sombra de Don Quijote: Llevaba a la grupa, desmadejado de brazos y piernas, un pelele con dos agujeros al socaire de las orejas.</p>
 				</div>
 				<div n="59" type="chapter" xml:id="ne0033_chap59">
-					<head>IV</head>
+					<head xml:id="ne0033_head_062">IV</head>
 					<p>—¡Argamasilla de la Orden! ¡Diez minutos de parada!</p>
 					<p>Los Civiles cambiaron algunas palabras:</p>
 					<p>—¿Qué tiempo ha dicho?</p>
@@ -1529,7 +1576,7 @@
 					<p>La Pareja de Civiles se apresuró a montar, y con las últimas estrellas, ensuciando de humo los albores del páramo, entró el convoy en la estación de Los Pedrones.</p>
 				</div>
 				<div n="60" type="chapter" xml:id="ne0033_chap60">
-					<head>V</head>
+					<head xml:id="ne0033_head_063">V</head>
 					<p>El Marqués de Torre-Mellada, Conde de Cetina y Villar del Monte, Señor de la Torre de Los Pedrones, adueñaba por estas antiguas casas muchas tierras de señorío en los términos de Solana del Maestre. Don Segis Olmedilla, gallo cuarentón y garboso, era el administrador, con residencia en Córdoba. Don Segis estaba en la estación, escoltado por una tropa de monteros uniformados con rodamonte y castoreño: Tenían con tal avío un aire de bandoleros cantando zarzuela. El Marqués, asomado a la ventanilla, los miraba complacido:</p>
 					<p>—¡Carolina, ha sido un acierto el nuevo uniforme! ¡Muy elegante! ¡Verdaderamente elegante! ¡No lleva mejor a sus monteros Benardino Frías!</p>
 					<p>Don Segis corría al costado del tren: Era alto, patilludo, berrendo en colorado. Vestía de labrador andaluz, con muchos brillantes, y llevaba la capa con garbo. En Córdoba le decían el Niño de Benamejí. El Marqués le recibió con los brazos abiertos:</p>
@@ -1582,7 +1629,7 @@
 					<p>Con el tren en marcha, saltó al estribo, revolera la capa y en alto el sombrero. El Marqués correteaba por el andén, a juntarse con las pálidas y despeinadas madamas.</p>
 				</div>
 				<div n="61" type="chapter" xml:id="ne0033_chap61">
-					<head>VI</head>
+					<head xml:id="ne0033_head_064">VI</head>
 					<p>Fuera de la estación esperaba el coche. Cascabeleaban las cuatro mulillas del tiro, cubiertas de borlones, primorosas y parejas: Ocupaba el pescante y tenía las riendas un viejo de centeno quemado, duro, ojiverde, las sienes con brillos de acero. El Marqués celebró el atalaje:</p>
 					<p>—Muy bien, Blasillo. ¡Muy bien!</p>
 					<p>El señor Blasillo de Juanes era un antiguo cachicán, que también terciaba de picador y de cochero. La Marquesa le interrogó con amable indiferencia de gran dama:</p>
@@ -1619,7 +1666,7 @@
 					<p>El Marqués dobló la cabeza con un suspiro y restalló la fusta. Las cuatro mulillas arrancaron, llenando la mañana de cascabeles.</p>
 				</div>
 				<div n="62" type="chapter" xml:id="ne0033_chap62">
-					<head>VII</head>
+					<head xml:id="ne0033_head_065">VII</head>
 					<p>Cinco quinterías albergaba en su término el Coto de Los Carvajales: Castril, Solanilla, Pedrones, Cerrato y Majuelos: Era un gran dominio de olivas y tierras adehesadas, con casona antigua en cerco de cuadras, alpendes, lagares y toriles. A lo largo del camino, oculta en los encinares, sonaba la castañuela de la urraca. En los oros celestes cantaban las remontadas alondras, y las gentiles gollerías picoteaban en las siembras, moviendo las caperuzas con melindre de niñas viejas. Un cazador —sombrero haldudo, escopeta y perro— cruzaba un cerrillo de fulvas retamas, con el sol de soslayo, anguloso y negro. El balandro de las esquilas, el grito del boyero, el restallo de la honda, juntaban su música agreste con los olores de la tierra, y en el cielo, rasgado de azules intactos, era sólo el trino de la alondra remota, remota.</p>
 					<p>La Marquesa y Feliche, en el fondo del coche, con dulce conforto se estrechaban las manos: No hablaban, pero sin decírselo, cada una sabía de la otra, y de su consolación en el feliz cristal del campo mañanero. El Marqués ponía su atención en las mulillas del tiro: Preguntaba por el precio del ganado y la concurrencia de las ferias. El cachicán, sentado a su vera en el pescante, le informaba por menudo. Las cuatro mulillas sostenían el trote, alegres y cascabeleras. El camino cruzaba un olivar viejo, con pardos baldíos. Una moza venía cantando sobre el anca de su borriquillo. Se entreveía un palomar. Entró el coche por un majuelo: Eran tan verdes y juveniles los brotes de la viña, de tan suave rosa la tierra del camino, tan azul el cielo, la luz tan clara, tan nítidas las voces en el beato silencio, que las madamas sentían la sensación de una pena mitigada, como después de haber llorado y rezado mucho. Traspuesto un cerro almagrero, asomó el campanario de Doña Ximena. Ahora entraba el coche por una avenida de negrillos. Ladraban los perros. En el fondo aparecía la casona, con sus grandes rejas y su portalada, donde se agrupaba el cortejo de mozas, jayanes, pastores, guardas. Feliche se sobresaltó. Le dolía el corazón, y sintióse como arañada por una torva aridez espiritual: Le pesaba su cruz, y resistía abrazarse con ella: Un negro resplandor le atorbellinaba la conciencia: Feliche se asomaba ceñuda a un abismo de odio, que copiaba la imagen, que repetía la voz de su hermano: La idea de verle, de oír aquella voz, la sumía en una angustia azorada y esquiva:</p>
 					<p>—¡Qué horror de hermano!</p>
@@ -1649,7 +1696,7 @@
 					<p>—¡Cutres! No han sido para darme un chulí.</p>
 				</div>
 				<div n="63" type="chapter" xml:id="ne0033_chap63">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_066">VIII</head>
 					<p>Las madamas, con las ojeras del insomnio, pero refrescadas y olorosas de aguas inglesas, desayunaban en la sala del zaguán: Era vasta como un refectorio, con enormes rejas y techos de bovedilla. Las paredes, encaladas y desnudas, tenían un zócalo de azulejos, tan alto que sobrepasaba el dintel de las puertas, chatas y con bailones herrajes, parejas, por su tracería, de las holgonas alacenas empotradas en los muros. La Marquesa y Feliche, mostrando desgana, apenas mordían la punta de los picatostes, apenas los humedecían en el chocolate:</p>
 					<p>—¡Qué horror! ¡Feliche, podemos decir que hemos visto la estampa de la muerte! ¡Yo estoy descompuesta para todo el día! ¡Es incomprensible cómo viven esas gentes!</p>
 					<p>—Como les permite su miseria.</p>
@@ -1703,7 +1750,7 @@
 					<p>—¡Entregó a Dios el alma la madre Dalmaciana!</p>
 				</div>
 				<div n="64" type="chapter" xml:id="ne0033_chap64">
-					<head>IX</head>
+					<head xml:id="ne0033_head_067">IX</head>
 					<p>Fanny, la yegua inglesa, elegante, desfallecida, romántica, tose y parece contagiada por la Dama de las Camelias. En torno del pesebre hacen junta mozos de cuadra y gañanes cortijeros. Tío Blas de Juanes, tascando la tagarnina, y por muestra de su luto la capa a cuestas, entró dando compañía a un vejete de levitín y castora, como los escribanos. Era Don Lope Calderete, mesonero, comadrón y albéitar en Solana del Maestre. Se pasó aviso al Señor Marqués. Don Lope, calándose las antiparras, inquirió si el animal mordía o coceaba, y tras el seguro que le dieron los mozos, procedió a mirarle los dientes. Luego, entrándose por el horcajo de los brazuelos, salió por el costado, sacudiéndose el levitín. Llegaba el Señor Marqués, y el albéitar le saludó con una genuflexión muy petulante: La mano extendida, y encorvándose con gesto de sacerdote africano, formuló su dictamen:</p>
 					<p>—Siempre se tropieza en la práctica con que estos pacientes no saben explicarse… Y el animal, salvo que sea inglés, no está mal sacado.</p>
 					<p>El Marqués de Torre-Mellada cacareó divertido, abriendo un paréntesis en el duelo:</p>
@@ -1732,7 +1779,7 @@
 					<p>Por delante de la puerta cruzó la sombra de un zagalón negruzco y polvoriento, que caminaba apoyado en una vara verde con flores de retama en la punta: La greña, sudada y angustiada, se le pegaba a la frente: Sentado a distancia bajo un olivo, clavaba los ojos en el horizonte, ojos negros y atristados de mozo doliente. La Pareja de Civiles azacanaba por la linde de los olivares, con el sol en los tricornios, y al zagalón se le quebró aún más el color de la cara. Alzóse y, disimulando la cojera, desapareció tras un almiar, ocultándose a la vista de la Pareja.</p>
 				</div>
 				<div n="65" type="chapter" xml:id="ne0033_chap65">
-					<head>X</head>
+					<head xml:id="ne0033_head_068">X</head>
 					<p>La hija de la difunta, el manteo en capuz y asomándole al borde un hacillo de cuatro velas, galguea a carón de las bardas, y hace el planto, conservando entre lágrimas los colores de cereza lozana. Aúllan nigrománticos los perros, y en las cochiqueras gruñen indiferentes los marranos. Tienen un azorado presagio los círculos de las palomas. Mirlos y tordos revolotean anocturnados en las ramas de los olivos. Velando a la difunta, allegados y amistades se consuelan con rondas de anisete y roscos de dulcero. Al pie del ventano hilvana la mortaja Gilda la Costurera: Con afanoso braceo, tasca bajo el diente la hebra, y requiere las tijeras, y es, toda ella, un cierre de ojos, y un mover de labios, y un abismarse en cálculos, con el palmo tendido sobre la mortaja. Entraba, encrespando el planto, la hija de la difunta. Una comadre le tomó la cera, otra le hizo catar un sorbo de anisete: La mozuela serenóse viendo alumbrar el rectángulo de las cuatro velas, con una oscura consolación ante la simetría de las luces. Gilda la Costurera, al pie del ventano, daba el último hilván a la mortaja. Bajo el alpende el viejo cachicán, tascando la tagarnina, escudriñaba el tempero, cabal para la poda del olivo y el enterramiento de su vieja. Entre pajas, anidada en un cesto derrengado, cacarea la clueca, sin el cuido de la difunta. El hijo, baboso, cegato y tontaina, con aguardentosa pena, llenaba la copa que de mano en mano corría el círculo del duelo. Los críos de una comadre, lambiscando los roscos del dulcero, pedían la cata. El cegato tontaina, bajo el influjo del anisete, encandilado con la luz de las velas, llorón y cordial, conquería a los remilgados para que no hiciesen cumplimiento. La hija, al pie del ventano, sacaba de la faltriquera la esterilla que mercara para decoro de la mortaja. Gilda la Costurera abría el palmo haciendo un visaje:</p>
 					<p>—¿Qué has comprado?</p>
 					<p>—Siete cuartas.</p>
@@ -1783,7 +1830,7 @@
 					<p>El vaho azulado de los olivos se dilataba en onduladas líneas, colmadas de silencio y galbana. Las barcinas esguevas, con matorros de carrascal, resecas y erémicas, pedían agua al cielo. Los rebaños se inmovilizaban sobre los alcores. El rumor de la vida, en el silencio del campo, tenía un compás de eternidad, un fatalismo geomántico de dolor y de indiferencia.</p>
 				</div>
 				<div n="66" type="chapter" xml:id="ne0033_chap66">
-					<head>XI</head>
+					<head xml:id="ne0033_head_069">XI</head>
 					<p>La casona del señorío, reclusa en su cerco de limoneros y naranjos, parecía achatarse bajo el aleteo de las palomas que iniciaban el vuelo. La Marquesa y Feliche conversaban con espacios de silencio, en la sala zaguanera. La señorita Aline anunció a Monsieur Pierre. El franchute, craso, chaparro, reluciente, apareció en la puerta luciendo una condecoración del Principado de Mónaco:</p>
 					<p>—¡Señora Marquesa, yo no puedo mismo comprometer mi reputación! Aquí no hay medios para guisar un pimiento. Querría presentar una salsa de langostinos con setas. ¡Imposible! Faltan los elementos. Un lenguado al gratín con berros. ¡Imposible! Faltan los elementos. ¡Señora Marquesa, declino mi responsabilidad!</p>
 					<p>La Marquesa le despidió con gesto de fatiga:</p>
@@ -1794,13 +1841,13 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro quinto: La jaula del pájaro</head>
+				<head xml:id="ne0033_head_070">Libro quinto: La jaula del pájaro</head>
 				<div n="67" type="chapter" xml:id="ne0033_chap67">
-					<head>I</head>
+					<head xml:id="ne0033_head_071">I</head>
 					<p>Está el Coto de Los Carvajales señalado en la crónica judiciaria de aquellos días isabelinos como madriguera de secuestradores y cuatreros. El Viroque y Vaca Rabiosa, Carifancho y Patas Largas, reverdecían los laureles del Tempranillo y Diego Corrientes. El Marqués de Torre-Mellada, en los pagos manchegos, y Su Alteza el Infante Don Sebastián, en Córdoba, eran notorios padrinos de la gente bandolera. Mojigatos los dos, soñaban con el espectro de la demagogia incendiando los campos, y a cuenta de no tener malos sueños, protegían al Maruxo y al Lechuga, a Vaca Rabiosa y al Tuerto. Y tan notorio era este padrinazgo, que la gente de la chanfaina, mudándole el nombre a lo pícaro, llamaba a Los Carvajales, Ceuty.</p>
 				</div>
 				<div n="68" type="chapter" xml:id="ne0033_chap68">
-					<head>II</head>
+					<head xml:id="ne0033_head_072">II</head>
 					<p>Había salido la luna y era el olivar una incierta humareda verdina. Tío Blas de Juanes silbó de lejos, contraseñando, y el lechuzo cantó por tres veces. A poco, sobre el camino, resonaban las herraduras de un caballo. El viejo raposo salió de su silo, entre matorros. La sombra de un jinete —tabardo y calañés— se perfilaba en el claro lunero. Traía los brillos del retaco en el arzón:</p>
 					<p>—¡A la paz de Dios, Tío Juanes!</p>
 					<p>—Con ella vengas. ¿Qué novedades dejas?</p>
@@ -1812,7 +1859,7 @@
 					<p>Y le soltó el estribo para que montase. Tres jinetes —calañés, retaco y manta— salieron de los jarales. La noche, diluyendo los contornos, agrandaba las sombras. A lo lejos choqueaban las esquilas de un rebaño de chivos y destacaba sobre el cielo la silueta del ágil pastor insomne, que los seguía saltando de risco en risco. La tropilla de jinetes, a la procura del molino donde estaba dispuesto el aparejo de la cena, subía la cuesta de Jaral Bermejo.</p>
 				</div>
 				<div n="69" type="chapter" xml:id="ne0033_chap69">
-					<head>III</head>
+					<head xml:id="ne0033_head_073">III</head>
 					<p>Sobre la piedra del hogar se calentaba un hombre tullido, acochavado en astroso serón de esparto. Salía el pabilo del busto, cosido en la amarilla angostura de un jubón de franela. La molinera aguzaba el ojo de atalaya en el ventano: Era tuerta, endrina, rizosa: En la figura, brío y vivacidad de cabra. Murmuró apagando la voz:</p>
 					<p>—¡Si no vendrán esta noche!</p>
 					<p>El tullido, avispado en su yacija, alargaba la oreja:</p>
@@ -1838,7 +1885,7 @@
 					<p>—Esperándote quedo, cabra loca.</p>
 				</div>
 				<div n="70" type="chapter" xml:id="ne0033_chap70">
-					<head>IV</head>
+					<head xml:id="ne0033_head_074">IV</head>
 					<p>Cuando entró la molinera, explicaba la causa del retardo un mozo crudo, cumplido de la trena, que atendía por Patas Largas: Era cañí y ceceaba muy cortado, en el modo extremeño:</p>
 					<p>—La Pareja nos echó el alto desde un cerrillo, y nos ha dado una migaja de trabajo.</p>
 					<p>La molinera, que encendía el farol agachada sobre el hogar, se recogió suspensa:</p>
@@ -1858,7 +1905,7 @@
 					<p>—Pues tomamos campo, y estuvimos culebreando por esos olivares, hasta que se entró bien la noche.</p>
 				</div>
 				<div n="71" type="chapter" xml:id="ne0033_chap71">
-					<head>V</head>
+					<head xml:id="ne0033_head_075">V</head>
 					<p>Iba nublada la luna, y en el recato de las bardas se hacían un bulto el cachicán y la bisoja… Y ha vuelto la luna, que tras el nublo saca un cuerno. La molinera ríe, desatándose con garbo tuno el pañolito del talle, sacudiéndose los granciones prendidos en los flecos. Endrina, garbosa, tuerta, cenceña, ríe caprina y maligna. La sombra del viejo, socarrona y parda, proyecta otra sombra sobre las cales del tapial: Tiene brillos lilailos en el pecho, luces de lentejuelas, obra de un majo escapulario de Nuestra Señora del Monte Carmelo —un escapulario regalo de monjas, que el cachicán, en fiestas y domingos, se reviste sobre la gala de sus prendas—. Sujetándose las ligas, se comba y cimbra la comadre:</p>
 					<p>—Esta broma hay que rematarla. Igual hace usted que un mozo sin miramiento. Para usted que se camina, bueno está… Pero no dice lo mismo quien aquí se recrea oyendo las músicas de un perro sarnoso. Tío Barrabás, ¿qué hizo usted para despabilarse de su vieja?</p>
 					<p>Picardeó el viudo:</p>
@@ -1886,7 +1933,7 @@
 					<p>La voz cazurra trascendía un sentido de rezo sacrílego ante la silueta que en el claro de luna cimbreaba su arabesco caprino y moreno.</p>
 				</div>
 				<div n="72" type="chapter" xml:id="ne0033_chap72">
-					<head>VI</head>
+					<head xml:id="ne0033_head_076">VI</head>
 					<p>La molinera levantaba el farol, que había escondido bajo el caparazón de un cesto viejo.</p>
 					<p>—¿Quiere usted echarle la vista al palomo, Tío Juanes?</p>
 					<p>—No estará por demás.</p>
@@ -1929,7 +1976,7 @@
 					<p>La molinera, con quiebro y sandunga, levantaba en la punta del pie la venda del cautivo. El farol aprisionaba en su círculo bailón las figuras, y correteaban por el muro, con intriga de marionetas, las tres sombras.</p>
 				</div>
 				<div n="73" type="chapter" xml:id="ne0033_chap73">
-					<head>VII</head>
+					<head xml:id="ne0033_head_077">VII</head>
 					<p>En la cocina del molino la pellejuda del mosto hacía la rueda. Sobre la piedra del hogar, retorcido como un pabilo, el baldado mojaba el hocico en la honrada compañía de Vaca Rabiosa, Patas Largas, Pinto Viroque y Carifancho. El tullido, que reparaba con un ojo a la puerta, cuando entró el cachicán escupió repetidamente en la lumbre y se puso a picar tabaco con una navaja de a tercia, cacheada en su nido de remiendos. La bisoja, con el escarnio y el desafío de su risa de cabra, sacó del horno un lebrillo de chicharrones:</p>
 					<p>—¡Vamos a repartirnos esta pobreza!</p>
 					<p>Cantó Patas Largas:</p>
@@ -1964,7 +2011,7 @@
 					</lg>
 				</div>
 				<div n="74" type="chapter" xml:id="ne0033_chap74">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_078">VIII</head>
 					<p>Tío Juanes, con dignidad homérica, metió los dedos en el condumio, y los cuatro bandidos secundaron en el ejemplo. El mosto y la ocasión azarosa condujeron el coloquio. Pinto Viroque, desertor de presidio, contrabandista y cuatrero, expuso el ideario del Finisbusterre de Cartagena:</p>
 					<p>—La ley de Dios es la igualdad entre los hombres. ¡Va diferencia del robo que supone la riqueza, sustentándose sobre el trabajo del pobre, y la justicia que nosotros hacemos rebajando caudales!</p>
 					<p>—¡Ésa es la chachipé!</p>
@@ -1995,7 +2042,7 @@
 					<p>—Pues si mi fe valiera, antes de rebajar un chulí se obraba un escarmiento. En la primera carta a la familia, se ha escrito que se colgaría la cabeza del cautivo en el aldabón de su puerta, y no se aventuran palabras para no darles cumplimiento.</p>
 				</div>
 				<div n="75" type="chapter" xml:id="ne0033_chap75">
-					<head>IX</head>
+					<head xml:id="ne0033_head_079">IX</head>
 					<p>Hacía nocharniegas el farol y estaba floja la pellejuda. El Tío Blas de Juanes explicaba con su rezo conciso, que tenía tañido de metal antiguo:</p>
 					<p>—Todo en la vida se pone en lo mismo, y no hay otra cosa. ¡Tener aldabas! Ahora las aldabas dicen: Caballeros, a no repicarnos y andarse con pupila y estarse aplastados. Pues eso nos cumple, y la primera cosa ha de ser esquivarnos de peligros manifiestos y transponer al pájaro. Y, en fin de cuentas, ver si en alguna cosa puede condescenderse, y rematar lo más pronto posible este negocio.</p>
 					<p>Enconado, asestó el tullido:</p>
@@ -2030,7 +2077,7 @@
 					<p>El tullido se recogía escupiendo en la lumbre con tos cavernosa.</p>
 				</div>
 				<div n="76" type="chapter" xml:id="ne0033_chap76">
-					<head>X</head>
+					<head xml:id="ne0033_head_080">X</head>
 					<p>Tío Blas de Juanes maduraba en los rincones de la boca su mueca de viejo pardo:</p>
 					<p>—Si esta noche hacéis cuenta de transponer al mochuelo, no hay que perder la sazón.</p>
 					<p>Saltó la comadre, palmoteando sobre la cadera, con un revuelo de la falda:</p>
@@ -2058,7 +2105,7 @@
 					<p>Vaca Rabiosa apagó el chicote en la suela del zapato, y agudo se salió afuera.</p>
 				</div>
 				<div n="77" type="chapter" xml:id="ne0033_chap77">
-					<head>XI</head>
+					<head xml:id="ne0033_head_081">XI</head>
 					<p>La bisoja, apartadas las gavillas que disimulaban la lobera y puesto el farolillo al borde, se sumía en el antro.</p>
 					<p>—¡Padre camastrón, aquí tocan llamada!</p>
 					<p>—¡Me abraso de sed!</p>
@@ -2076,7 +2123,7 @@
 					<p>Acudió ligero el bandido, jugando los brazos al saltar del bardil desde donde oteaba. Cubierto con las jalmas, metieron al preso en la cocina. Era un mascarote consumido, afligido, en pernetas, como lo habían raptado de su cama. Un pañuelo le vendaba los ojos, un cepo le trababa los pies, un grillete le rodeaba las manos. Le metieron en la cocina. Para verle, el baldado del fogón aguzaba el hocico y los ojos, con una expresión de rata maligna.</p>
 				</div>
 				<div n="78" type="chapter" xml:id="ne0033_chap78">
-					<head>XII</head>
+					<head xml:id="ne0033_head_082">XII</head>
 					<p>—Suéltensele las manos y póngasele delante el lebrillo de los chicharrones. ¡Que lo rebañe! El requisito del bien cenar no se le niega a ningún reo de muerte.</p>
 					<p>Empavorecióse la voz del cautivo:</p>
 					<p>—¿Van ustedes a matarme?</p>
@@ -2111,7 +2158,7 @@
 					<p>—¡Aviado!</p>
 				</div>
 				<div n="79" type="chapter" xml:id="ne0033_chap79">
-					<head>XIII</head>
+					<head xml:id="ne0033_head_083">XIII</head>
 					<p>Los caballistas se consultaban con los ojos. Tío Juanes meditaba. Se arrastraba el tullido al borde del fogaril. Suspiraba el preso. Patas Largas le tenía apoyada la punta del facón sobre la nuca. Musitó el cautivo:</p>
 					<p>—¡En mi casa no hay dinero!</p>
 					<p>Tío Juanes, arisco, sin volver la cara, interrogó:</p>
@@ -2137,25 +2184,25 @@
 					<p>—¡Detente!</p>
 				</div>
 				<div n="80" type="chapter" xml:id="ne0033_chap80">
-					<head>XIV</head>
+					<head xml:id="ne0033_head_084">XIV</head>
 					<p>Tío Juanes trabó una lucha para que no descargase el golpe. El cautivo no se movía. Asustado, miraba en la pared el tumulto de sombras, el guirigay de brazos aspados, ruedos de catite, mantas flotantes, retacos dispuestos. Intuía el sentido de una gesticulación expresiva y siniestra por aquel anguloso y tumultuoso barajar de siluetas recortadas. La sota de copas, ronca de la disputa, bebía de una pellejuda. La de espadas, inscribía en la pared los ringorrangos de un jabeque. El cautivo temblaba con el cartapacio sobre las rodillas: Alarmas y recelos le sacudían: Batallaban sensaciones y pensamientos, en combate alucinante, con funambulescas mudanzas, y un trasponerse del ánimo sobre la angustia de aquel instante al pueril recuerdo de caminos y rostros olvidados: Sentíase vivir sobre el borde de la hora que pasó, asombrado, en la pavorosa y última realidad de trasponer las unidades métricas de lugar y de tiempo, a una coexistencia plural, nítida, diversa, de contrapuestos tiempos y lugares. Fuera se remontaban azorados ladridos, cacareaba, puesto en vela, el gallinero, zamarreaban con relinchos y coces los caballos atados bajo el cobertizo. Crujía la techumbre. El preso volvió la cabeza: Acicateados en una ráfaga, contrahechos en una sombra sin relieves, los bandidos se salían por la puerta. El tullido, encenizado, oliendo a chamusco, se sacaba del jubón la llave del cepo:</p>
 					<p>—¡Oye, gran rajado, sinvergüenza! Yo te liberto las tabas y tú me sacas en brazos. ¡Esos tíos sarnosos y la gran roída poco que se alegrarán de vernos salir ilesos! ¡Y este cochino techo está mirando cuándo nos aplasta!</p>
 				</div>
 				<div n="81" type="chapter" xml:id="ne0033_chap81">
-					<head>XV</head>
+					<head xml:id="ne0033_head_085">XV</head>
 					<p>¡La riada! Giraban las aspas del molino con un vértigo negro de pájaros absurdos. Huroneaba por los olivares el viento. La zorra aullaba al borde de la barranca y su hálito fosforecía en la nocturna tiniebla. Bajo la luna, la quiebra azulada del horizonte, indecisa de resplandores y nieves, tenía un pronto y confuso tumulto de rebotante marea: Saltante, pujante, espumante torbellino de crines al viento. Hacían agorino todas las voces del campo, despiertas, sobrecogidas de terror ante el crinado relámpago de las azulinas quiebras. El lobo y la loba, en el claro de luna, suspendían sus juegos y aguzaban las orejas. Los pájaros que dormían en los surcos se levantaban azorados, acogiéndose a los olivos, con inquieto aleteo. Arreciaba remoto el baladro de los chivos, y el machero, encaramado en un tolmo cercado de espumas, rezaba juntando las manos, la cigüeña del cayado, sobre un fondo de luceros. Rugían las secas esguevas, y sus terrenas encías desmoronábanse enlodando el rugiente cristal de las quebradas nieves. Una tromba de viento desgreñó el lunero tejado del molino. Las aspas, negras y frenéticas, rodaban sus cruces sobre el repente de voces asustadas. La riada, abierta en mares, remansada en curvas de espuma, se tendía ganando las vegas. Flotaba sobre el agua un gallinero arrancado de sus poyos: El gallo y las gallinas navegaban cacareando. Gruñía en el fangal una piara. Pronunciábase la gente de las quinterías con gritos y alarmas. Gatos y mujeres desnudas salían a los tejados. En los remansos de las vegas la luna multiplicaba su medalla.</p>
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro sexto: La soguilla de Caronte</head>
+				<head xml:id="ne0033_head_086">Libro sexto: La soguilla de Caronte</head>
 				<div n="82" type="chapter" xml:id="ne0033_chap82">
-					<head>I</head>
+					<head xml:id="ne0033_head_087">I</head>
 					<p>Negro, sobre la lumbrada del ocaso, el arruinado molino tenía inmóviles las aspas. El Marqués de Bradomín, a mitad de la cuesta, muy velazqueño con atavíos de cazador, oía los cuentos de la molinera, y atendían de lejos, sentadas en un ribazo del camino, Feliche y la Marquesa Carolina. Agorinaba la molinera:</p>
 					<p>—¡Subitáneo, mi señorita! ¡Subitáneo! ¡Fue aquel desate un propio santiamén de Lucifer! ¡Como lo pinto! ¡A pique de perecernos sin el aviso de la viga!… ¡Y vaya un revuelo de tejas por los aires, más negras que cárabos! ¡Como lo pinto! ¡Propio desboque de yeguas era aquel tumulto de mares monte abajo! ¿Y ahora qué se hace? ¡Buscar una cueva para acabar estos tristes años! ¡Todo aquel arreglo bendito se lo llevó el desate de aguas! ¡Santísimo Dios! ¡Ya nos tienes otra vez coritos como al nacer! ¿Qué cueva nos deparas, Justo Juez? ¡Y si tampoco quieres darnos una cueva, mándanos un tabardillo y acaba tu obra misericordiosa, ya que tan desnudos nos dejaste! ¡No lo descuides, Rey de los Cielos! ¡Cinco inocentes, dos de un parto, un hombre impedido que pinga los reumas!… ¡Y qué te cuento, si sabido lo tienes!</p>
 					<p>En el cielo raso y azul, serenaban las lejanías sus crestas de nieves, y en pujante antagonismo cromático encendía sus rabias amarillas la retama de los cerros. Remansábase el agua en charcales. Asomaba, en anchos remiendos, el sayal de la tierra. Volaban los pájaros en aparejado noviazgo: Entraba y salía, en los círculos de la tarde serena, el frívolo cuclillo con su flautín irreverente.</p>
 				</div>
 				<div n="83" type="chapter" xml:id="ne0033_chap83">
-					<head>II</head>
+					<head xml:id="ne0033_head_088">II</head>
 					<p>Las madamas, desde el ribazo, recogidas y sobrecogidas, miraban a la molinera, flaca, morena, caprina, un ojo velido, el otro con iris de verdes ágatas. Murmuró Feliche, impregnada la voz de suave bálsamo:</p>
 					<p>—¿Y ahora dónde se acogen?</p>
 					<p>Agorinó la molinera:</p>
@@ -2187,7 +2234,7 @@
 					<p>La molinera, acurujada en el camino, asestaba la inquieta y redonda pupila sobre Feliche. El ojo velido acrecía enigmático el prestigio unitario del ojo que miraba.</p>
 				</div>
 				<div n="84" type="chapter" xml:id="ne0033_chap84">
-					<head>III</head>
+					<head xml:id="ne0033_head_089">III</head>
 					<p>Tornando a Los Carvajales aullaban lúgubres los perros Luzbel y Belial. Se detenían vueltos sobre un rastro, las orejas erguidas, el rabo cobarde. La Marquesa Carolina se impacientó con un grito nervioso:</p>
 					<p>—¡Por Dios! ¿Qué les pasa a esos bichos?</p>
 					<p>—¡Ventean a la difunta!</p>
@@ -2220,7 +2267,7 @@
 					<p>Se volvió con instintivo sobresalto: Sentía la mirada fisgona de la molinera, la mirada redonda y enconada, que parecía signarla con negro presagio.</p>
 				</div>
 				<div n="85" type="chapter" xml:id="ne0033_chap85">
-					<head>IV</head>
+					<head xml:id="ne0033_head_090">IV</head>
 					<p>La Marquesa y Feliche, estrechándose, cogidas del brazo, medrosas y ligeras, se metían por el portón de la casona. Un mozuelo pitañoso y zanquilargo, gorra de visera y alpargatas, batía la aldaba sin que acudiese ningún criado. Ante el revuelo de las azoradas madamas se ariscó, escupiendo una salivilla:</p>
 					<p>—¡Contra! ¡Aquí todos parecen sordos! ¿Es que no va a haber quien reciba un parte del telégrafo?</p>
 					<p>Volvió a los redobles de aldabón y salió un criado de librea, solemne, las manos a la espalda, la pechuga de papagayo: Echaba por delante con grave compás los zapatos de hebilla:</p>
@@ -2243,7 +2290,7 @@
 					<p>Sentíase yerta, transida de angustioso sobresalto, con la certeza irremediable de su destino, como si acabase de verlo en el fondo maligno de aquella pupila agorera.</p>
 				</div>
 				<div n="86" type="chapter" xml:id="ne0033_chap86">
-					<head>V</head>
+					<head xml:id="ne0033_head_091">V</head>
 					<p>El Marqués de Torre-Mellada, avecinándose al balcón, desdoblaba el telegrama que un lacayo acababa de presentarle en bandeja de plata. Terminada la breve lectura, con los quevedos en la punta de la nariz y el aire lelo, miró a su mujer. La Marquesa, aspirando el pomo de sales inglesas, le observaba:</p>
 					<p>—¿Alguna contrariedad?</p>
 					<p>—¡Un telegrama que no entiendo!</p>
@@ -2330,7 +2377,7 @@
 					<p>—¡Es horrible! Avise usted a Toñete. Es preciso que den tierra a ese cuerpo.</p>
 				</div>
 				<div n="87" type="chapter" xml:id="ne0033_chap87">
-					<head>VI</head>
+					<head xml:id="ne0033_head_092">VI</head>
 					<p>La Marquesa Carolina, mimando la comedia del frágil melindre nervioso, bajó a la sala zaguanera donde damas y galanes hacían la tertulia del véspero. Teresita Ozores, Lulú Berlanga, Pepe Támara y Jorge Ordax se divertían jugando al burro, con chabacana algarabía. El Brigadier Valdemoro y Don Pedro Navia paseábanse de uno a otro testero, arcanos y meditativos. Dos bueyes labrando un surco. Gonzalón, cabalgando en una silla, tomaba el fresco al pie de la reja y desde allí, de tiempo en tiempo, graznaba un timo chulapo. Pepín Río-Hermoso asistía al carcamal palaciego en la traducción de un tratado inglés de veterinaria. La Marquesa Carolina hizo su aparición armoniosa y lánguida, rubia pintada, gracia crepuscular y francina de Dama de las Camelias. El Marqués llamó a su mujer, con falsete casquivano y glándulo:</p>
 					<p>—Carolinita, ¿quieres sacarnos de esta confusión?</p>
 					<p>Entornó los ojos la madama:</p>
@@ -2396,7 +2443,7 @@
 					<p>—¡Un Daoíz y Velarde, como dice mi doncella!</p>
 				</div>
 				<div n="88" type="chapter" xml:id="ne0033_chap88">
-					<head>VII</head>
+					<head xml:id="ne0033_head_093">VII</head>
 					<p>Con voces, silbos, carreras y zalagarda de canes, se avecinaban al portón de la casona algunos huéspedes, que por quemar la pólvora habían estado tirando a los buitres de Los Castriles. El Marqués de Torre-Mellada se avizoró metiendo la cabeza por la reja:</p>
 					<p>—¡Adolfito! ¡Adolfito!</p>
 					<p>Graznó una voz jocosa:</p>
@@ -2433,7 +2480,7 @@
 					<p>Sobre la voz fatua apuntó de pronto un mimo asustado. El Marqués se acordaba del guardia muerto en la tasca de Garabato. Y su pensamiento se comunicó a todos. Sobrevino el silencio tras la festiva bullanga de damas y galanes. Entraba el claro de luna por las rejas, y el nigromante ladrido de los canes rasgaba el azul nocturno de grillos y luceros. La Marquesa Carolina, como el héroe antiguo, se tapaba las orejas.</p>
 				</div>
 				<div n="89" type="chapter" xml:id="ne0033_chap89">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_094">VIII</head>
 					<p>El farolillo, bajo el alpende de las yuntas, convocaba al velorio. La caja, puesta sobre dos caballetes, partía el círculo de luz. Hedía la carroña de la difunta. El velorio, apartado en un rincón del corralizo, bajo los naranjos, mataba las horas chusco y refranero. Las mozuelas prendían en los labios hojas de malva olorosa. Algún jayán se restregaba la jeta con aguardiente: Otro, con requiebro, cortaba un ramo de azahares y lo repartía entre el concurso femenino: Otro se jactaba de tener perdida la olisca con unas fiebres. Gritó una voz que se acercaba:</p>
 					<p>—¿Cuándo contáis darle tierra al cadáver? La Señora Marquesa ha tenido noticia del caso y dispone que sepultéis el fiambre, como ello sea.</p>
 					<p>El Tío Juanes, arrastrando la capa, salió al claro de luna, sobre el borde de sombra que dibujaban los naranjos:</p>
@@ -2484,7 +2531,7 @@
 					<p>La voz enmascarada del ayuda de cámara resaltaba como una pulla irreverente en el nocturno de perros nigromantes.</p>
 				</div>
 				<div n="90" type="chapter" xml:id="ne0033_chap90">
-					<head>IX</head>
+					<head xml:id="ne0033_head_095">IX</head>
 					<p>Con las últimas estrellas, viejos y viejas del velorio adormecen calamocanos, mientras mozos y mozas insomnes, encandilándose con rijos de celo, se hacen mamolas. Y Tío Juanes apareja el cuartago bajo el alpende, propositando llegarse a tratar el entierro con el Padre Cura de Doña Ximena. Al tiempo de alzarse sobre el estribo, distinguió una sombra que gazapeaba al arrimo de la barda: Salió trotando, los ojos avizorados, tendidos en curva mirada. De un burujo incierto, al borde del camino, surgió la confusa silueta de Juana de Tito:</p>
 					<p>—Se halla de vuelta el padrino, y reclama por usted, Tío Juanes. Dende la cancilla le descubrí a usted aparejando, y fue el aplastarme a la espera, para no ser notada. ¡Pues se halla de vuelta el padrino y aparenta sobresaltado!</p>
 					<p>—¿Dónde te has entrevistado tú con nuestro majito?</p>
@@ -2518,7 +2565,7 @@
 					<p>Sobre la linde, bajo un grupo de olivos, el padrino cuarteaba la sudada montura, por mantenerla con la grupa al viento, y dos jinetes culebreaban por el olivar, en operación de descubierta.</p>
 				</div>
 				<div n="91" type="chapter" xml:id="ne0033_chap91">
-					<head>X</head>
+					<head xml:id="ne0033_head_096">X</head>
 					<p>Tío Juanes, de un espolazo, se puso a la vera del padrino:</p>
 					<p>—¡A la paz de Dios! Parece que su merced le ha metido un buen julepe a la jaca. ¿Ocurre algún contratiempo?</p>
 					<p>Don Segis asintió, brusco y encapotado:</p>
@@ -2549,12 +2596,12 @@
 					<p>—¡Pídame usted otra ciencia!</p>
 				</div>
 				<div n="92" type="chapter" xml:id="ne0033_chap92">
-					<head>XI</head>
+					<head xml:id="ne0033_head_097">XI</head>
 					<p>Tío Juanes, cambiadas noticias y concertados pareceres, espoleó el cuartago, sobre su anterior propósito de tramitar el entierro. Cruzó por Vado Jarón. Oyó la misa muy beato, con golpes de pecho y bisbiseo de oraciones. Sobre el ítem entróse a la sacristía y trató el entierro de la parienta con el señor Vicario de Doña Ximena. Pagó los responsos, se enjugó los ojos, ofreció una misa, y fuese, dejando una pieza de dos cuartos en el cepo de las Animas. Por el camino, a lomos del cuartago, sentíase fortalecido por una fe tosca y milagrera. La Santísima Virgen del Carmen, que le tenía asistido con su celestial ayuda en más apurados empeños, ahora, en aquella faena, no iba a negarle una punta de su manto de luceros. Durante la misa, entre kiries y leisones, habíase cuidado de recordarle que era su devoto del tiempo de la nana. Obstinábase sobre el atisbo de que así obligaba a la Divina Señora. ¿A un devoto antiguo iba a negarle el cobijo de su manto, de una punta, ya que no solicitaba más el Tío Juanes? ¡Y aun contaba con otros valedores en la Corte Celestial! El Cristo de Medinica, Nuestra Señora de la Serrana, San Pedro de Matejón, San Dámaso de Ceruel. En la iglesia, aquella misma mañana, también tenía mosconeado sus rezos por congraciarse la ayuda de estos aventajados padrinos. Suspicaz y cazurro, consideraba que nunca por mucha cebada enflaquece el bayo. ¡Y cuántas tribulaciones para sólo mal vivir! ¡En este valle de lágrimas, todo son redes y caramillos puestos al pobre desafortunado! Sufre más persecución que los lobos, siempre en el trámite de atropellar las leyes. Los Bienaventurados de la Corte Celestial, donde se conocen todas las intenciones, de por fuerza habían de considerarlo así. ¡Nadie por su gusto se juega la cabeza y lleva un vivir sobresaltado! La rebaja de caudales, aun cuando los ricos la acriminasen, era obra de justicia. El derramamiento de sangre en casos extremos, tampoco merecía el vituperio con que lo señalaban. En un vivir de tantos riesgos, las sentencias de los caballistas eran siempre obligadas, en tanto que muchos desgraciados, sin mayor delito que buscarse el manró, acababan en el patíbulo por la mala voluntad de jueces y escribanos. Transpuesto Vado Jarón, con el cuartago a paso de andadura, iba el viejo pardo devanando la madeja de sus pensamientos. La vista de las tierras asoladas le nubló el ánimo con esquivos dejos de amargura. Erguido sobre la silla, abarcaba con acuciado oteo los campos encharcados y malograda la siembra. Sentía más honda la cotidiana pesadumbre de la vejez esclava de las labranzas, sin levantar jamás cabeza. ¡Castigo del fisco! ¡Castigo del amo! ¡Y en última instancia, el sinfín de calamidades que se le ocurra ordenar al Padre Celestial! ¡Unos, hartazgo, y otros, tan poco, que una vuelta de las nubes basta a dejarlos sin pan y sin techo!</p>
 					<p>¡Si es más que justicia rebajarle a los ricos sus caudales! ¡Tanto vituperio sobre los caballistas, y callar la boca para el mal ejemplo del que corrompe su hacienda en el bateo de vino, baraja y mujeres! ¿Y esto no es más escarnio que tentarle las onzas a un malvado usurero que las tiene enterradas? No les faltaba razón a los compadres cuando decían que las leyes las sacan los ricos, sin otra mira que sus prosperidades. El viejo pardo, por el hilo de sus cavilaciones y recelos, deducía el monstruo de una revolución social. En aquella hora española, el pueblo labraba este concepto, desde los latifundios alcarreños a la Sierra Penibética.</p>
 				</div>
 				<div n="93" type="chapter" xml:id="ne0033_chap93">
-					<head>XII</head>
+					<head xml:id="ne0033_head_098">XII</head>
 					<p>Sobre la querencia del pesebre, apresurábase con relinches el cuartago de Tío Juanes: Salía el jinete del olivar, sesgando la campa de barcinos almiares: Oteaba la casona del señorío, cercada de cipreses y naranjales, el vasto vuelo de aleros, el torreado de chimeneas: La portalada tenía soles de mañana: Era luminosa con su retablo de escudos y rejas. Cabrilleaban prestigios de charoles y metales en el arco de entrada, y había fuera un grupo de gente quieta. Tío Juanes sintió el alma enfriarse, serena y fuerte, como un mar que hubiese quedado convertido en roca de cristal, en la inminencia de mayor zozobra. ¡La Pareja! Tricornios, fusiles, cartucheras, definían sus luces negras. Tío Juanes, sin una vacilación, puso espuelas y bajó resuelto adonde estaba la Pareja. El peligro se convertía en un sentimiento quieto, mudo, sin tregua, una carga del nacer, una condición fatal de la vida, como las plagas celestes sobre los campos. Trotó valiente:</p>
 					<p>—¡Señores Guardias, a la paz de Dios!</p>
 					<p>—¡A la paz de Dios, Tío Blases!</p>
@@ -2597,7 +2644,7 @@
 					<p>El cachicán silbaba, y con la punta del verduguillo hacía primores en una rama de oliva.</p>
 				</div>
 				<div n="94" type="chapter" xml:id="ne0033_chap94">
-					<head>XIII</head>
+					<head xml:id="ne0033_head_099">XIII</head>
 					<p>El Marqués de Torre-Mellada, gorro, batín y pantuflas, se ovillaba en una mecedora, la cara vuelta a la reja. Más que por fuero orgulloso, por el repulgo de no mostrarse despintado, permaneció de espaldas cuando entró la Pareja:</p>
 					<p>—¡A la orden de Vuecencia, Señor Marqués!</p>
 					<p>Cacareó el prócer con cacareo usado, untoso de rutina protocolaria:</p>
@@ -2629,7 +2676,7 @@
 					<p>Toñete asintió pasando la navaja por el cordobán. Eran palabras mayores, palabras escandidas con una claridad tipográfica de libro escolar, redondeadas, pulimentadas en un fluir de conceptos y deberes, intuidas con la palmeta del dómine. El ayuda de cámara sentía la retórica como un papanatas.</p>
 				</div>
 				<div n="95" type="chapter" xml:id="ne0033_chap95">
-					<head>XIV</head>
+					<head xml:id="ne0033_head_100">XIV</head>
 					<p>El Marqués y Don Segis tuvieron conversación muy reservada. El Marqués, terminada la toaleta, recibió al administrador con una sonrisa amanerada, tocándose el pecho para reconocer si llevaba la petaca; explorando por el pañuelo en los faldones del levitín:</p>
 					<p>—Retírate, Toñete.</p>
 					<p>El palatino, con lisonjas y mieles, acabó solicitando del administrador un adelanto sobre las rentas. Don Segis, sin aventurar prenda, dábale el vaya con promesas marrajas:</p>
@@ -2676,7 +2723,7 @@
 					<p>—Segismundo, recoja usted esos papeles. Estudie usted la operación. Si no pudiéramos acordar nada definitivo esta noche, hace usted un viaje a Madrid. Salgamos, Segismundo. ¡Se impone una visita a Fanny!</p>
 				</div>
 				<div n="96" type="chapter" xml:id="ne0033_chap96">
-					<head>XV</head>
+					<head xml:id="ne0033_head_101">XV</head>
 					<p>El Marqués de Torre-Mellada, rejuvenecido por artes de alquimia, el trote menudo, los gritos éticos, apareció entre sus huéspedes: Falso, casquivano, timorato, repartía, como caramelos, palmadas, agasajos y zalemas. En una puerta, pronto a esquivarse, muy expresivo, con mano y sonrisa, llamó a Bonifaz. El pollastre abrió los ojos, arqueó las cejas y pidió confirmación con un gesto exorbitante. El palatino asintió con lento mecimiento de cabeza y manos: Adoptaba una indulgencia de tío de comedia, tío francés, de comedia francesa mejorada por Mariano Pina. Al salir de la sala, que se abría sobre un patio de naranjos, el carcamal sacó el perfumado pañuelo, limpiándose los ojos:</p>
 					<p>—¡Adolfito, ya sabes que te quiero como a un hermano menor!</p>
 					<p>Adolfito se sacudió los bolsillos vacíos:</p>
@@ -2737,7 +2784,7 @@
 					<p>El Marqués hablaba con un tono beato, y el oírse le producía una efusión de lágrimas felices, una ternura chabacana con eco de novenas, sermones y comedias ramplonas.</p>
 				</div>
 				<div n="97" type="chapter" xml:id="ne0033_chap97">
-					<head>XVI</head>
+					<head xml:id="ne0033_head_102">XVI</head>
 					<p>Tenía la casona un jardín de naranjos con alambrilla en los caminos: Un jardín de traza morisca, recluso entre tapias de cal rosada. El espejo de una alberca estrellaba sus mirajes en una métrica de azulejos sevillanos. Aquel jardín pedía las voces de un esquilón de monjas, tal era su gracia sensual y cándida, huidiza del mundo, quebrada de melancolía. El Marqués de Bradomín amaba desenvolver sobre aquel fondo romántico sus coloquios con Feliche: El Marqués los conducía con arte de lírico mundano, sabía engarzarlos en sales y burlas, tenía en la verba fáciles y oportunos cristales de letras y arte. Feliche, serena, agacelada, sumisa, se deleitaba con las historias del viejo dandy. El Marqués habíale retirado de las manos un librote empergaminado, y teniéndolo cerrado en las suyas, exponía una extravagante lección de paradojas y donaires:</p>
 					<p>—¡El <seg type="cite">Quijote</seg>! Feliche, éste es el libro que no debe leer una niña ilusionada. Este libro perverso va contra los sueños que todos hemos tenido, alguna vez, de redimir los dolores del prójimo.</p>
 					<p>—El celo de almas.</p>
@@ -2783,7 +2830,7 @@
 					<p>Pasaba por el silencio del jardín el rumor de un cortejo lejano, con campanilla y salmodia. Aullaban nigrománticos los perros.</p>
 				</div>
 				<div n="98" type="chapter" xml:id="ne0033_chap98">
-					<head>XVII</head>
+					<head xml:id="ne0033_head_103">XVII</head>
 					<p>El entierro iba sesgando el olivar: Llevaba una carrera agalgada, gacho y nocharniego: Pero cuando cruzaba por los atardecidos prados, el ocaso ponía brillos y romerías de luces sobre el negro betún del féretro. Acezaba el cortejillo de jayanes y mujerucas lloronas, enternecidas con el anisete de cinco noches de velorio. Era muy remoto el cementerio, y el camino, transpuesto el olivar, de muy mal paso. En la tarde serena y azul, el flaco cortejillo calcaba su silueta galguera, remontando por la ribera del río, a buscar los vados por donde iba antaño el arruinado puente de maderos. El Villaje de Doña Ximena, sobre la otra orilla, acastillado en un cerro, escalonaba bardas y tejados: Cimero, entre tapias y cipreses, el campanario de la iglesia abría los ojos de sus campanas, bajo el roído tejadillo, ilustrando una metamorfosis de la corneja. El doble de difuntos dilataba sus mohosos círculos en el atardecido. El entierro galgueaba adonde dicen Vado Jarón. De la mano contraria, por un vericueto, aparecían los brillos de la cruz parroquial, y entre cuatro mantillas revoloteaba la sobrepelliz del clérigo. Tras de la cruz aguzaba sus cuernos el bonete. Se adelantó el sacristán, y encaramado a una cresta de la orilla, dio al aire su carraspera de viejo mandón que anda a escobazos con los santos:</p>
 					<p>—¡Ahí va la soguilla!</p>
 					<p>Tiró un tejuelo amarrado al cabo de una piola. Al otro lado, todo el cortejillo alzaba los ojos siguiendo el vuelo del tiro. Cayó la piedra en mitad de la corriente. El sacristán habló para sí: Rosmaba. Borrachín, barbudo, pelicano, tenía el tartajo de cascarrabias que los añejos chascarrillos atribuyen a San Pedro. Corriendo por la vera del río, volteaba el brazo para darle impulso al tejo, que otra vez se hundió en la corriente. Gritó el viudo, al canto del féretro:</p>
@@ -2803,7 +2850,7 @@
 					<p>—¡Jalaaa!… ¡Jalaaa!…</p>
 				</div>
 				<div n="99" type="chapter" xml:id="ne0033_chap99">
-					<head>XVIII</head>
+					<head xml:id="ne0033_head_104">XVIII</head>
 					<p>Un vuelo de cuervos manchaba con negros graznidos el cénit de la tarde morada… El hijo de la difunta, en muestra de filial respeto, ofreció al padre la cantimplora de aguardiente:</p>
 					<p>—¡Vaya un trago!</p>
 					<p>El veterano cachicán saludó reverente al concurso, y bebió poniéndose en la boca el gollete. Afirmó el hijo llorón y badulaque:</p>
@@ -2858,9 +2905,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro séptimo: Para que no cantes</head>
+				<head xml:id="ne0033_head_105">Libro séptimo: Para que no cantes</head>
 				<div n="100" type="chapter" xml:id="ne0033_chap100">
-					<head>I</head>
+					<head xml:id="ne0033_head_106">I</head>
 					<p>Corría el galgo madruguero por al sayal de las labranzas, pesquisidor sobre la sombra de las alondras en vuelo. Tío Blas de Juanes, con profundos dejos de melancolía, miraba perdido el sudor de la siembra. Era sol naciente. Las gollerías picaban en la juvenil amanecida, sacudiendo la caperuza de niñas viejas. Sobre las bardas doraba sus plumas el gallo algarero, y los charcales eran floridos de luces. Aún farfullaban, crecidos, los cauces serranos. El cachicán subía el recuesto del arruinado molino, y la comadre tuerta bajaba ondulando los guindillones de la falda:</p>
 					<p>—¿Se halla usted al tanto, Tío Juanes? La Pareja se me ha incautado del mala costilla. ¡Y ese solimán se berrea tanicuanto le aprietan las mancuerdas! ¡Que no vaya adelante de ningún escribano, porque nos pierde, Tío Juanes!</p>
 					<p>Abismóse el viejo crudo, en su gesto senequista, rendidas las miradas del ánimo, a considerar la incertidumbre de los sucesos:</p>
@@ -2895,7 +2942,7 @@
 					<p>—Juanilla, que los amigos se dejen caer por la Venta del Manchuela. Allí se resolverá. ¡En el apuro, plan maduro!</p>
 				</div>
 				<div n="101" type="chapter" xml:id="ne0033_chap101">
-					<head>II</head>
+					<head xml:id="ne0033_head_107">II</head>
 					<p>La Carifancho, comadre renegrida y garbosa, canta, disputa y peina la mata, a la boca de un silo, en Castril de las Cuevas. Las pencas del chumbo espinan las bardas. Perros y jamelgos, bien amados de la mosca, sacuden el rabo con ritmos alternos. Las voces, las greñas arañadas y las rapiñas, tejen el hilo de la cotidiana disputa que allí mueven las mujeres. Los coimes, cuando no cumplen alguna sentencia en presidio, garbean en la tunería de lechuzas, aljorjines y traineles, o se licencian en los estudios mayores de caballistas y cuatreros. Aquel rancho gitano tiene un resalte de ochavo moruno: Luces cobrizas, magias y sortilegios, ciencia caldea de grimorios y pentáculos .En Castril de las Cuevas la herradura, el cuerno, el espejillo rajado, los azabaches y corales de las gigas, el santico bendito, con ataduras y por los pies ajorcado, son los mejores influjos para torcer y mejorar los destinos del castigado Errate. El cuerno, hace mal de ojo a los vellerifes: El espejillo, enferma de muerte a los jueces. El santico ligado y ajorcado, abre las cárceles: La herradura prospera sobre los caminos y saca adelante en los pasos apurados: Las gigas mejoran la estrella del nacimiento. En Castril de las Cuevas, a la boca de un silo, canta y peina la greña Malena de Carifancho: En éstas ha visto llegar, dándose aire con una punta del pañuelo, a la comadre tuerta:</p>
 					<p>—¿Por dónde anda el tuyo, Malena?</p>
 					<p>—¡Cristo!, ¿qué se pasa?</p>
@@ -2936,7 +2983,7 @@
 					<p>Las tres figuras, al moverse sobre las cales de la cueva, alternativamente cortaban la rayóla de sol, y salía de la sombra su gesto expresivo, con un claroscuro potente.</p>
 				</div>
 				<div n="102" type="chapter" xml:id="ne0033_chap102">
-					<head>III</head>
+					<head xml:id="ne0033_head_108">III</head>
 					<p>Comadrejas, con el hombro pegado a las bardas, hacían cauteloso acecho por unas eras Juana de Tito y Malena la Carifancho. Subían los Guardias con el preso, hacia el villorrio lomero de Castril Morisco. Un zagal requisado por los tricornios alegraba al rucio con oraciones arrieras y halagos de vara. Ponía el sol en los adobes una llama adusta, una luz de castigo que calcaba con tintas chinas el perfil de los tejados. Las comadrejas, cada una por su sesgo, abiertas las mirlas, y el ojo lagartero, metíanse por las callejuelas, atisbonas a los pasos e intenciones de los Guardias. Recayeron a un campillo con tres casucas arrugadas, puestas de esquina, en disputa temosa de viejas. Ante la puerta laureada de un tabernucho, apagaban las sedes del camino el rucio, el espolique, el preso y la Pareja. Los tricornios con una sangría: Con agua de la noria los otros tres penitentes. Las comadrejas sacaban el ojo por contrapuestas esquinas. Los Guardias se alzaron, y el bulto del asno con el tullido salió trotando a la carretera, bajo la lluvia de azotes e injurias con que lo animaba el renegado espolique. Juana de Tito, escurrida y ligera, se acogió al tabernucho, cortando el terreno a espaldas de la Pareja: Con el pañuelo caído sobre el ojo tuerto, llegó al mostrador, y garbeando la mano soltó una peseta:</p>
 					<p>—Madre Melonilla, desengáñeme si es buena esta beata.</p>
 					<p>Cambiaron un guiño. Disimulando, la tabernera contó la peseta en cobres, y puso el cambio sobre el mostrador:</p>
@@ -3035,7 +3082,7 @@
 					<p>La Tía Melonilla, renqueando, bajó al mostrador. Paco guipó por el aire su seña, buscó pretexto y suspendió el julepe.</p>
 				</div>
 				<div n="103" type="chapter" xml:id="ne0033_chap103">
-					<head>IV</head>
+					<head xml:id="ne0033_head_109">IV</head>
 					<p>Paco el Seminarista rascó la garganta con una tos maja viendo salir a las disfrazadas comadrejas. El mentido chaval se le ponía a la vera tocándose el catite:</p>
 					<p>—¡Salud, maestro! ¿Sabría usted decirnos dónde hallar bagaje, que la güela no puede moverse? Señores Guardias se han servido requisarnos el rucio para un pícaro que se hace el baldao. Por aquí los verían ustedes pasar.</p>
 					<p>Simuló con hipo senil la Carifancho:</p>
@@ -3077,7 +3124,7 @@
 					<p>—¡Tenemos que entrevistarnos!</p>
 				</div>
 				<div n="104" type="chapter" xml:id="ne0033_chap104">
-					<head>V</head>
+					<head xml:id="ne0033_head_110">V</head>
 					<p>Por Jarón de San Blas, en los lejos, avizoraban las dos disfrazadas comadruelas. Arrimados los fusiles al muro de la ermita, sesteaba la Pareja. Tito el Baldado retorcía el pabilo del busto en la palmatoria de tuertas canalejas, peregrinante por el campillo, sobre los bastes del rucio, que tendía el cuello y desconcertaba los cuadriles, olfateando por una brizna de hierba. Era la hora del descanso y curiosos de mirar al preso acudían los gañanes de un cortijo. Tenían destellos de sudados soles, risas fulvas y rejos ibéricos. Con aquella cuadrilla, acuciado de un cierto sobresalto, asomábase por vigilar la ermita el pardo santero: Movía en el baldón de la capa las secas tabas de galgo verdino: Con alegres cintajos de escapularios animaba el sombrero: En las manos sostenía el cepillo del Santo. Entró en la ermita y salió en talle con un botijo, que brindó a los Guardias:</p>
 					<p>—¡Otra cosa no tengo mejor que ofrecerles!</p>
 					<p>Un jayanote soldado veterano sacó el busto, el hombro, el brazo y el gesto, encarando a la Pareja:</p>
@@ -3091,7 +3138,7 @@
 					<p>Por unas lomas se retardaban, disimulándolo con el paso cansado, el zagal verdino y la vieja baldona. Las dos comadrejas, a pesar del disfraz, tenían recelo de aventurarse, sospechándose la mala voluntad de aquel dañino: ¡Era muy lince, y si las descubría, las delataba a la Pareja! De lejos estuvieron mirando el cotejo de los borricos y el baile babilónico que, asegurado en el goce del suyo, celebró tío Solano, Santero de San Blasito. El Glorioso Patrono, todo báculo y mitra, en la clave de un arquillo, proyectaba su ingenua bendición de piedra.</p>
 				</div>
 				<div n="105" type="chapter" xml:id="ne0033_chap105">
-					<head>VI</head>
+					<head xml:id="ne0033_head_111">VI</head>
 					<p>Tito el Baldado se retorcía sobre los bastes del rucio y clamaba por que le aflojasen las ligaduras. La gañanada lucía los dientes: Risas crueles animaban los rostros centenos:</p>
 					<p>—Ya te curarán con sal y vinagre.</p>
 					<p>—¡Qué tan buenas acciones llevarás tú a cuestas!</p>
@@ -3102,7 +3149,7 @@
 					<p>El garabato del pícaro, cosido en el jubón de hieles, encinchado a los bastes del rucio, zarandero entre los rígidos fusiles, traspasaba el atento silencio con su grito misionero. La tropa cortijil, morena, sudada de soles labradores, extasiaba la bárbara risa, tensa y suspensa en las voces dramáticas del preso: Gustaba, en la gracia ingenua de sus orígenes, la virtud del romance popular y de la estampa con que se ganan la vida por ferias y romerías los ciegos evangelistas.</p>
 				</div>
 				<div n="106" type="chapter" xml:id="ne0033_chap106">
-					<head>VII</head>
+					<head xml:id="ne0033_head_112">VII</head>
 					<p>De lejos tuvieron el atisbo las disimuladas comadrejas, advertidos los ojos, por el movimiento de las figuras allá abajo, en el Campillo de San Blasito. Huidizas tomaron vuelo para la Venta del Pino: Allí se asilaron. Era el ventero un compadre desertor de presidio, que llevaba treinta años por aquellos parajes con el nombre supuesto de Frasquito Manchuela. Ya estaban en concilio Carifancho, Viroque y Patas Largas: Reunidos en torno de la lumbre, asegurados de que no había huéspedes ni otro recelo, dándole fin a una fritada de higadillos, perfilaban las últimas socaliñas para poner los espartos a la Pareja. Y apenas asomaron por la puerta las disfrazadas comadres, se alborozaron los bailones, al tino de quiénes eran los tales. Juana la Tito cortó la bulla, rajada de piernas, de gesto y de brazos:</p>
 					<p>—¡A lo que importa! Para mi discurso, visto el temor de que ese veneno nos lleve a la horca, más que a libertarle de los vellerifes ha de irse a sellarle el pío. La Pareja, si le echáis el alto, lo primero que hace es enfriar al preso. ¡Eso de toda la vida! ¡Pues a ello, chavales, y orégano sea!</p>
 					<p>La unitaria pupila de ónix, avivada por la lumbre del hogar, imponía su oráculo. Patas Largas, que a todo miraba, apuntó un reconcomio antiguo, que tenía con el Tío Juanes:</p>
@@ -3124,7 +3171,7 @@
 					<p>Como ya lo tenían tratado entre sí los bailones, con pocas palabras más hubo concierto, y se caminaron a un jaral, donde habían escondido las monturas. Vaca Rabiosa, en centinela sobre su cuartago, las tenía en reata. Salieron en fuga, apretadas las espuelas, bebiendo los libres aires y las luces del hogar ibérico.</p>
 				</div>
 				<div n="107" type="chapter" xml:id="ne0033_chap107">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_113">VIII</head>
 					<lg type="poem">
 						<l>—¡Por verme, por verme,</l>
 						<l>por verme la liga!</l>
@@ -3158,7 +3205,7 @@
 					<p>La Pareja, repartida a una y otra linde, con los fusiles montados, desdoblaba las negras siluetas, apostillando la cinta luminosa de la carretera por donde dicen la Barga del Moro.</p>
 				</div>
 				<div n="108" type="chapter" xml:id="ne0033_chap108">
-					<head>IX</head>
+					<head xml:id="ne0033_head_114">IX</head>
 					<p>La Barga del Moro se alegraba con el cascabeleo del atalaje. Trotaban las cuatro mulillas enganchadas al faetón y las regía el Marqués de Torre-Mellada. En la adusta soledad penibética era un adefesio anacrónico aquel vejete de chistera gris, guantes anaranjados, tobina con recortes de astracán, y en los fláccidos cachetes, rosicleres de alquimia… Tío Blasillo de Juanes, acerado de sienes, ojiduro, cetrino, cenceño, iba en el pescante a la vera del pintado carcamal. Adolfito Bonifaz, hundido en los almohadones del asiento, proyectaba el humo de un sueño ambicioso. ¡César o nada! Y con la divisa sonora, trenzaba el devaneo ruin con que se prometía jugarle una mala partida a Torre-Mellada. ¡Una con que reventase de rabia aquel mentor impertinente! Adolfito Bonifaz alargaba las piernas, cuidadoso de no macular con mesocráticas rodilleras los lechuguinos pantalones de trabilla. Las mulas amusgaban la oreja. En medio del camino, un pastor rodeado del hato abría en el aire las mangas del capisayo. Tío Juanes se incorporó en el pescante y ojiduro removió la boca:</p>
 					<p>—¡Esto dice cautela!</p>
 					<p>El tiro de mulillas enderezaba las orejas Dos perros con carlancas lamían en la charca negra y viscosa de sangre. Las moscas picaban los ojos yertos del tullido y del asnete. Crispóse asustado el Marqués. Emperezó Adolfito una mueca torcida de asco. Tío Juanes callaba, y disimulando hacía el cuento de las horas y sacaba sus consecuencias. El Marqués de Torre-Mellada dilató el susto y la congoja en una fuga de gallos:</p>
@@ -3170,7 +3217,7 @@
 					<p>—¡Pues será al parigual de toda la redonda España!</p>
 				</div>
 				<div n="109" type="chapter" xml:id="ne0033_chap109">
-					<head>X</head>
+					<head xml:id="ne0033_head_115">X</head>
 					<p>El Marqués saltó del pescante, refitolero y medroso, las manos cruzadas bajo las haldillas de la tobina pisaverde:</p>
 					<p>—¡Se nos aguó la fiesta!</p>
 					<p>Adolfito acentuaba su cínica indiferencia:</p>
@@ -3185,9 +3232,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro octavo: Malos agüeros</head>
+				<head xml:id="ne0033_head_116">Libro octavo: Malos agüeros</head>
 				<div n="110" type="chapter" xml:id="ne0033_chap110">
-					<head>I</head>
+					<head xml:id="ne0033_head_117">I</head>
 					<p>Olivas y rastrojos, pardos sayales de aradas tierras, agrestes tomillares, fulvas retamas, morados lejos de carrascos en flor, venenosos digitales y torbiscos, quebrados roquedos. Un tren con fragor de chatarra cruza el puente de hierro. Notas de minio en la cárdena herrumbre. La locomotora, sudada de aceites, despide borregos de humo, relumbra el arete dorado de la chimenea.</p>
 					<p>—¡Pedrones! ¡Cinco minutos!</p>
 					<p>Renegridas mujerucas haldeaban a lo largo del tren, ofreciendo botijos ibéricos con leche de cabra: Subían al estribo, acuciosas y vocingleras. El Marqués de Torre-Mellada, en el angosto marco de la portezuela, se los compraba, y, tras de pagarlos, se los volvía gozando mentecato la puerilidad limosnera de aquel toma y daca. Toñete, en el fondo del vagón, acomodaba en las rejillas sacos, mantas, sombrereras. Silbó la máquina y montaron con premura los rezagados. Un mozo con galones rojos, sucio de hollín y aceites, pasó echando el aldabillo a las portezuelas. El Marqués encasquetóse un gorrete de seda. Adolfito, sentado enfrente, presentía el aburrimiento del viaje y reclinaba la cabeza, entornando los ojos. El palaciego se santiguó devoto y se abismó en un gesto de reserva:</p>
@@ -3202,7 +3249,7 @@
 					<p>—¡El botijo tres cuartos! ¡Fresca! ¡Fresca!</p>
 				</div>
 				<div n="111" type="chapter" xml:id="ne0033_chap111">
-					<head>II</head>
+					<head xml:id="ne0033_head_118">II</head>
 					<p>El Barón de Bonifaz, desabrido y displicente, se tumbó en el asiento:</p>
 					<p>—¡Jerónimo, así no se viaja!… Debías llevar el coche abonado.</p>
 					<p>—¡Indudablemente! Pero fíjate lo precipitado del viaje.</p>
@@ -3252,7 +3299,7 @@
 					<p>Entraba por un túnel el tren. En la oscuridad de los túneles el tiempo se alarga, se desdobla, multiplica las locuras acrobáticas del pensamiento.</p>
 				</div>
 				<div n="112" type="chapter" xml:id="ne0033_chap112">
-					<head>III</head>
+					<head xml:id="ne0033_head_119">III</head>
 					<p>Rasgó la sombra el duro llamear de los páramos barcinos, y se desovilló en su rincón el Marqués de Torre-Mellada:</p>
 					<p>—¡Está mandado alumbrar los coches en los túneles, y jamás se cumple el reglamento de ferrocarriles! ¡Con la mayor facilidad pudimos ser degollados a mansalva!</p>
 					<p>El mayoral, calándose los ojos, sentenció con sorna:</p>
@@ -3291,7 +3338,7 @@
 					<p>El Marqués asintió con sonrisa benévola. Decaída la llama de la siesta, era en los páramos lívida y angustiada de infinito la tarde.</p>
 				</div>
 				<div n="113" type="chapter" xml:id="ne0033_chap113">
-					<head>IV</head>
+					<head xml:id="ne0033_head_120">IV</head>
 					<p>Alcázar. ¡Veinte minutos!</p>
 					<p>Jipi, guayabera de dril, zapatos de charol, un negro antillano corría el andén abierto de zancas y balanceaba una jaula de loro o cotorra en cada mano. Bajo la marquesina de cinc, ocupando el recuadro de sombra, se agrupaba en retablillo el familión de un militar que regresaba de Cuba. La Coronela era joven, morocha, caída de pechos, aviejada, con la mata fosca de canas y azabaches: Tenía en los ojos una tristeza de carnales fuegos, en insomne contraste con la ceniza de la crencha: Aturbulaba los ojos sobre los hombres, con un mirar sagrado, profundo de tinieblas y génesis. Las hijastras eran tres señoritas muy semejantes, con la semejanza de tres cirios que arden en un candelero con igual angustia de apagarse: Las tres concertaban sobre la madrastra una mirada atenta y chismosa. La madrastra tenía para ellas perezoso despego: No era más extremada con los hijos, una tropa chamiza entregada al cuido de mucamas y asistentes. La servidumbre, negra y mulata, se desplegaba por el andén portando maletines, sombrereras, líos de mantas: Ondulante, ceñida a la sierpe del tren, ceceaba tropicales cadencias. La Coronela, bajo la marquesina, fumaba un largo veguero. Asombrados y burlones, los pardillos indígenas se paraban en hilera. Mocinas, abuelas y zagalones se anonadaban en la verde maravilla de los loros y en el escándalo con que fumaba la mujer morena. El Coronel Sagastizábal, alto, flaco, enfermo de calenturas, del hígado, de los remos, maniático, polemista, republicano, hereje, masón y poeta, volvía de las calientes islas antillanas. Desembarcado en Lisboa, pisaba tierra hispánica en Alcázar: Retórico y buen patriota, frente al campo adusto, sin agua, sin pájaros, sin ramos, buscaba en el cofre de las divisas heroicas una sugestión para entusiasmarse, y se desolaba en la procura: El alma permanecía en un estado de sórdida sequedad: A la visión real del páramo manchego se yuxtaponía la nostalgia memorosa del remoto archipiélago antillano, en una transposición de imágenes con luz tropical: Maniguales espesos, campos de caña, vegas tabaqueñas, cafetales, vastos silencios, encendidas siestas. La hamaca, el esclavo, el rebenque. Cerró los ojos frente al páramo y se recogió en sí mismo, envolviendo el alma friolera en un jirón de retórica roja y gualda:</p>
 					<p>—¡Qué hermosa es la patria!</p>
@@ -3301,7 +3348,7 @@
 					<p>—¡Señores viajeros, al tren!</p>
 				</div>
 				<div n="114" type="chapter" xml:id="ne0033_chap114">
-					<head>V</head>
+					<head xml:id="ne0033_head_121">V</head>
 					<p>Se acomodó por tres coches el retablo antillano. La Coronela, con las hijastras en el reservado de las señoras: Por donde cupieron, los diablos menudos, con asistentes y mucamas: El Coronel, con la fardeta de espadines, sables, bastones de mando y otros de raras maderas, incrustó su esqueleto entre la momia palaciega y el castizo de la garrocha. El Coronel, con gesto guillado, sacó del capote un juguete de acertijo, dos alambres con terceduras gemelas, representando dos báculos enlazados:</p>
 					<p>—¿Conocen ustedes este embeleco? ¡Muy ingenioso! ¡Un furor en Lisboa! Es divertido el nombre que le pusieron. ¡De mucha chispa! Cuestión Romana. Fíjense ustedes: ¡Dos báculos unidos! ¡Hay que separarlos! ¿Conocen ustedes el truco? Dos báculos unidos. ¿Quiere alguno de ustedes quebrarse la cabeza?</p>
 					<p>El palaciego tomó el juguete, y le dio vueltas entre los dedos enguantados, con un gesto perplejo en los craqueles de la careta:</p>
@@ -3329,7 +3376,7 @@
 					<p>Guiñaba el ojo, con humorismo de enfermo del hígado, el heroico Coronel Sagastizábal. Otro túnel. El tiempo se alargaba diluido, amortajado en la sinuosidad de tinieblas y alientos trepidantes. Por la oscuridad radiaba el lagartijeo de los pensamientos. El túnel convertía el vagón en una muda jaula de locos.</p>
 				</div>
 				<div n="115" type="chapter" xml:id="ne0033_chap115">
-					<head>VI</head>
+					<head xml:id="ne0033_head_122">VI</head>
 					<p>El palaciego proyectaba su anímula en falsas sonrisas de monja curiosa:</p>
 					<p>—Usted, como militar y caballero, no quiere comentar las disposiciones del Capitán General. Es una actitud que comparto.</p>
 					<p>El Coronel hizo un gesto de enigmas guillados:</p>
@@ -3370,7 +3417,7 @@
 					<p>—Sin duda, debo hacer mi presentación: Soy el Marqués de Torre-Mellada.</p>
 				</div>
 				<div n="116" type="chapter" xml:id="ne0033_chap116">
-					<head>VII</head>
+					<head xml:id="ne0033_head_123">VII</head>
 					<p>El palaciego, inquieto de curiosidades, mosconeaba sus malicias de monja boba sobre el tema de aquellas desavenencias suscitadas entre Fray Jacinto de María Anunciadora, Obispo de La Habana, y el Capitán General de la Gran Antilla. El Coronel, prendido en los lazos del palaciego, hacía la relación con pintorescas divagaciones de progresista guillado:</p>
 					<p>—El Ilustrísimo Señor Obispo tomó pasaje con rumbo a las patrias playas días antes que este servidor de ustedes. En Madrid debe estar intrigando.</p>
 					<p>El palatino puso la tilde de protocolo:</p>
@@ -3421,7 +3468,7 @@
 					<p>—No es usted justo. El Obispo, me consta, ha sido llamado por el Gobierno.</p>
 				</div>
 				<div n="117" type="chapter" xml:id="ne0033_chap117">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_124">VIII</head>
 					<p>¡Madrid! Lostregaba a lo lejos la collera de luces municipales. El convoy, con silbatadas de vapor y humos densos, echaba de sí la postrera fatiga. El Marqués se asomaba, aplastando la máscara tras el vidrio de la portezuela. El reloj de la estación le caía delante.</p>
 					<p>—¡Escandaloso! ¡Seis horas de retraso! ¡Nuestro mal endémico! ¡Lo he dicho siempre! ¡Nuestro mal endémico! ¡En este país nadie tiene prisa, y el tiempo es oro, como canta el inglés de la zarzuela! ¡Ahí debíamos tomar ejemplo! ¡Pero somos incorregibles! ¡Sólo servimos para las acciones heroicas! ¡Lo he dicho siempre! ¡Nos sobra heroísmo y nos falta maquinismo!</p>
 					<p>Se abrían algunas portezuelas. Astures y galaicos bigardotes corrían el andén, luciendo en las gorras el bronce de sus medallas y la probidad racial en la cantiga. Toñete, marchoso y cañí, vino al estribo, saludando a su amo:</p>
@@ -3437,7 +3484,7 @@
 					<p>—¡Extraordinario de <seg type="cite">La Correspondencia</seg>! ¡Gravedad del Duque de Valencia!</p>
 				</div>
 				<div n="118" type="chapter" xml:id="ne0033_chap118">
-					<head>IX</head>
+					<head xml:id="ne0033_head_125">IX</head>
 					<p>El landó rozaba la acera. Se inflaba rubicundo el inglés del pescante, y el lacayo, al pie del estribo rendía la chistera galoneada. El palaciego suspiró, recogiéndose en los almohadones:</p>
 					<p>—¡Qué momentos para la Patria!</p>
 					<p>Y cuidando de no torcerse el bisoñé, declinaba la sien sobre el hombro de Adolfito. Malició el perdulario:</p>
@@ -3478,7 +3525,7 @@
 					<p>Pueril, insignificante, se recogía en una mansa actitud de beaterio.</p>
 				</div>
 				<div n="119" type="chapter" xml:id="ne0033_chap119">
-					<head>X</head>
+					<head xml:id="ne0033_head_126">X</head>
 					<p>Rodaba el coche por una calle angosta, entre iluminadas cortinillas de tabernas. Las ventanas, con fuentes de guisote, tendían bandas de luz sobre las aceras. Salió de su fláccida meditación el Marqués:</p>
 					<p>—¡Esos intrigantes se han cogido los dedos!</p>
 					<p>—¿Quiénes?</p>
@@ -3511,7 +3558,7 @@
 					</lg>
 				</div>
 				<div n="120" type="chapter" xml:id="ne0033_chap120">
-					<head>XI</head>
+					<head xml:id="ne0033_head_127">XI</head>
 					<p>El Palacio de Torre-Mellada. La gran escalera. La antesala. Reverencias de lacayos. Sigilo de sombras. Timbres de relojes. Haces de luces en candelabros. El Marqués, ratonil y fugaz, cruzó la dorada penumbra de los salones: Frente a los espejos calaba los ojos con pueril desconsuelo, adivinándose la figura lacia, chafada. Penetró en el tocador, seguido del ayuda de cámara:</p>
 					<p>—Toñete, un retoque y vísteme.</p>
 					<p>Arrugado sobre el butaquín se reflejaba en el biombo de tres luces, con bronces franceses del Imperio. Sentenció Toñete:</p>
@@ -3541,9 +3588,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro noveno: Réquiem del espadón</head>
+				<head xml:id="ne0033_head_128">Libro noveno: Réquiem del espadón</head>
 				<div n="121" type="chapter" xml:id="ne0033_chap121">
-					<head>I</head>
+					<head xml:id="ne0033_head_129">I</head>
 					<p>El Palacio de Torre-Mellada, en la Costanilla de San Martín. Entre dos salones mal alumbrados, un camarote con mesillas de naipes y pinturas pompeyanas: Humo de vegueros, brillo de calvas. El Marqués se santiguaba, timorato:</p>
 					<p>—¡Habría para creer en agüeros y hechicerías, si no fuese pecado, como reza el Padre Astete! ¡Todo ha salido mal en este viaje!</p>
 					<p>Escuchaba la trinidad de carcamales, al reparto verde de la mesa de tresillo, solemnes las calvas. Con los tufos blancos encaracolados sobre las orejas, alguno tenía el estrafalario acento de un faldero achacoso. El Marqués, peinando el naipe, balaba su cuita beatona:</p>
@@ -3560,7 +3607,7 @@
 					<p>—La puesta sacada, presentaremos nuestros respetos a la Señora Marquesa.</p>
 				</div>
 				<div n="122" type="chapter" xml:id="ne0033_chap122">
-					<head>II</head>
+					<head xml:id="ne0033_head_130">II</head>
 					<p>La Marquesa Carolina, rubia y lánguida, tules y encajes, mimaba la comedia del frágil melindre nervioso. La Marquesa, con visaje de susto y escuela francesa de teatro, refería aquel espanto de Los Carvajales. El estrado isabelino pomposo de curvas y miriñaques, encendido de luces cristalinas y prismáticas, divinizaba su rosicler de París. ¡Y era tan emocionante el parlamento que suscitaba los murmullos del melodrama en la comparsa de tertuliantes! Atendía Feliche inmóvil, rígido el busto, cruzados los brazos. La Marquesa Carolina anovelaba de literatura el encuentro con la última sibila manchega. Sobre el relato pasaba, con fuga de susto, el comentario de Feliche:</p>
 					<p>—¡Aquella mujer daba miedo!</p>
 					<p>Don Adelardo López de Ayala, tendido el alón de gallo barroco, cacareó, encendida la cresta de retóricos galanteos:</p>
@@ -3570,7 +3617,7 @@
 					<p>Inmovilizado, recluso en las jambas doradas de una puerta, se prolonga el vacío de otro salón iluminado, donde hace reverencias un lacayo con librea de sinople y gules. Por el fondo vienen haciendo estaciones dos viejos calvos y otro con hábitos talares, verde la borla del solideo.</p>
 				</div>
 				<div n="123" type="chapter" xml:id="ne0033_chap123">
-					<head>III</head>
+					<head xml:id="ne0033_head_131">III</head>
 					<p>La Marquesa Carolina, coqueta y lánguida, recibía el último homenaje del gallo polainudo. Don Adelardo López de Ayala, pomposo, barroco, hiperbólico modulaba sus despedidas. Estaba la Marquesa bajo el reflejo malva de una lámpara, reclinada en el nido de plumas y faralaes, con pintada sonrisa de madama en retrato:</p>
 					<p>—¡Se va usted cuando tenemos tantas cosas que contarnos!</p>
 					<p>—¡No soy yo, ciertamente, quien menos lo deplora!</p>
@@ -3603,7 +3650,7 @@
 					<p>La Marquesa Carolina, adivinadora, guiaba los rubios ojos de pájaro por su tertulia, y sutilmente se hacía dueña de todo cuanto las lenguas decían. El Marqués y Adolfito cerraban una curva para encontrarse. La Marquesa, invadida del frío neumónico del éter, presentía el diálogo.</p>
 				</div>
 				<div n="124" type="chapter" xml:id="ne0033_chap124">
-					<head>IV</head>
+					<head xml:id="ne0033_head_132">IV</head>
 					<p>—¡Alea jacta est!</p>
 					<p>—¿Dónde?</p>
 					<p>—Ahora, en la Presidencia del Consejo.</p>
@@ -3647,7 +3694,7 @@
 					<p>A mitad de la gran escalera vacía y destartalada, se volvió, haciendo un ademán de rufa bellaquería, con juego de los dos brazos. Arriba, y en el primer escalón, asomaba un búho con la pañosa azul y la chistera ladeada de González Bravo.</p>
 				</div>
 				<div n="125" type="chapter" xml:id="ne0033_chap125">
-					<head>V</head>
+					<head xml:id="ne0033_head_133">V</head>
 					<p>El Marqués, enfurruñado y chillón, insinuando un liviano hipo, a cada zarandeo del coche vituperaba la falta de respeto a las conveniencias sociales:</p>
 					<p>—¡Adolfito, te hundes! ¡Te encanallas! ¿En qué salón has visto ese ademán?</p>
 					<p>Adolfito experimentaba una maligna satisfacción de rufo:</p>
@@ -3682,7 +3729,7 @@
 					<p>El Barón de Bonifaz se apeó saludando a las estrellas con una carcajada.</p>
 				</div>
 				<div n="126" type="chapter" xml:id="ne0033_chap126">
-					<head>VI</head>
+					<head xml:id="ne0033_head_134">VI</head>
 					<p>El Club vertía sus luces sobre la acera, y el sereno, caperuza, chuzo, farol, apuntaba sus triángulos sobre una esquina. El Marqués de Redín, en la puerta luminosa, levantaba el junco. Las luces de la chistera y el charol de las botas inscribían el prestigio elegante de la silueta.</p>
 					<p>Con el junco erguido y el veguero echando humo, entonado y británico, llamaba a su cochero. El Marqués de Torre-Mellada se apeó agitando las manos de foca, zalamero, con flautín de alharaca:</p>
 					<p>—¡Fernandito, qué alegría! Deseando saber de vosotros. Tenemos que hablar confidencialmente. ¿A qué lugar de perdición encaminas los pasos?</p>
@@ -3750,7 +3797,7 @@
 					<p>Redín entornó los ojos y se aseguró los quevedos, un poco irónico del incienso con que le regalaba su cuñado. Torre-Mellada sentía el agobio del silencio y se mareaba hablando, con un dolor íntimo y lejano, de su situación en Palacio.</p>
 				</div>
 				<div n="127" type="chapter" xml:id="ne0033_chap127">
-					<head>VII</head>
+					<head xml:id="ne0033_head_135">VII</head>
 					<p>El Ateneo Literario y Artístico tenía su sede en un casón oscuro y decrépito de la calle de la Montera. Bullían algareros los Ejércitos de Apolo. Estaba indecisa la batalla entre el Rey Don Francisco y el Duque de Montpensier. Patricio de la Escosura peroraba en un corro. Eduardo Saco correteaba por salas y pasillos, agudo y maldiciente. En el Olimpo de sillones y calvas, tosía Julián Romea. Manuel del Palacio, cerca de una ventana, apartado con otros de la cuerda progresista, recitaba un soneto, que era celebrado con risas. Floro Moro, bohemio y noctámbulo, se desayunaba en un rincón, con chocolate y buñuelos. Se abrazaban bajo una lámpara el Marqués de Molíns y González Bravo. Un ujier potroso, los botones colgantes y la colilla apagada en la oreja, daba bordos buscando con la mirada y batiendo la misma tecla:</p>
 					<p>—¡El Señor Marqués de Redín!</p>
 					<p>Iba de uno a otro grupo. Julio Nombela, pequeño, barbudo, circunspecto, subía a la tribuna para comunicar el aplazamiento de la votación: Despedíale el concurso con aplausos y siseos. Patricio de la Escosura se inflaba tribunicio:</p>
@@ -3774,7 +3821,7 @@
 					<p>—Adiós, Redín. Y gracias, porque ha sido usted para mis dudas el Paracleto.</p>
 				</div>
 				<div n="128" type="chapter" xml:id="ne0033_chap128">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_136">VIII</head>
 					<p>El Marqués de Redín halló su casa en trastorno. Medianoche pasada, y las luces del zaguán y de la escalera todavía sin apagar. Franca la antesala, un criado recibiendo el abrigo, el bastón, el sombrero del Doctor Laguna:</p>
 					<p>—¿Quién está enfermo?</p>
 					<p>El Doctor se volvió bajo el globo del farolón iluminada la carátula inglesa de setter con espejuelos:</p>
@@ -3798,7 +3845,7 @@
 					<p>—¡Un milagro! Véalo usted.</p>
 				</div>
 				<div n="129" type="chapter" xml:id="ne0033_chap129">
-					<head>IX</head>
+					<head xml:id="ne0033_head_137">IX</head>
 					<p>El Doctor, suspenso en la puerta, se hacía cargo de la posición del enfermo. Agila, pálido, con la frente bajo una servilleta, mojada en vinagre, apenas entreabrió los ojos. El Doctor, indicando con el gesto que aproximasen una luz, le descubrió el pecho y las manos: Le estiró los brazos con largo movimiento y los colocó paralelos al tronco. Puso sobre la sábana su cartera de cirugía. En el arsenal de aceros buscó las tijeras y cortó la camisa: Sobre el desnudo esternón corría la luz con un tremido que desconcertaba las líneas de la figura yacente. Eulalia se cubrió los ojos. El Doctor levantó la cabeza y miró en redondo, paseando las lunas de los espejuelos con una muda interrogación. Sus dedos tanteaban sobre el cuerpo de Agila.</p>
 					<p>—Quéjese cuando sienta mayor dolor bajo la presión de mis dedos.</p>
 					<p>Suspiró Agila:</p>
@@ -3827,7 +3874,7 @@
 					<p>—La Señora Marquesa reclama los auxilios del Señor Doctor.</p>
 				</div>
 				<div n="130" type="chapter" xml:id="ne0033_chap130">
-					<head>X</head>
+					<head xml:id="ne0033_head_138">X</head>
 					<p>La Marquesa de Redín, en el sofá de su alcoba, se recogía llorosa, con un papel en las manos. El Marqués, sentado enfrente, guardaba silencio, contraído el rostro con una expresión de duda angustiada. Entró el Doctor:</p>
 					<p>—Molimiento, coscorrones, travesura innata. ¡Mañana, saltando!</p>
 					<p>Sollozó la Marquesa:</p>
@@ -3856,7 +3903,7 @@
 					<p>Las lunas de los espejuelos brillaban joviales sobre los rubios cachetes de perdiguero británico.</p>
 				</div>
 				<div n="131" type="chapter" xml:id="ne0033_chap131">
-					<head>XI</head>
+					<head xml:id="ne0033_head_139">XI</head>
 					<p>El Doctor y el Marqués, vagarosos, lentos, conversando en voz baja, se acogieron a una saleta vecina, con fuego en la chimenea. El Marqués de Redín, sin perder su elegante empaque, se apartaba el cordón de los quevedos, sobre el rizo de una oreja:</p>
 					<p>—Doctor, necesito su consejo: Su doble consejo de padre prolífico y hombre de ciencia. Tengo remordimientos respecto a mi conducta —acaso demasiado rígida— en los métodos educativos empleados con Agila. ¡Es una criatura anormal y me negaba a reconocerlo! ¡Me dolía profundamente! Ahora me obsesiona su evidencia. ¡Mi severidad ha sido monstruosa! Doctor, ¿usted qué me aconseja? ¿Doblegarme? ¿Ceder? ¿Dar oídos a esa carta? ¡Ceder! ¿Pero a los propios ojos de ese niño no arrastraría mi dignidad de padre? ¡En este momento son tantas mis dudas, que me harán un gran bien sus consejos, querido Doctor!</p>
 					<p>El Marqués fraseaba con atildada tersura, recalcando los acentos sintáxicos, ondulando las cláusulas. El Doctor pringaba en el cangilón de chocolate los populares buñuelos:</p>
@@ -3893,7 +3940,7 @@
 					<p>El Doctor abismaba la carátula de perro canelo en un gran gesto. Tenían cabrilleos de sabiduría los brillantes de sus manos y de su pechera.</p>
 				</div>
 				<div n="132" type="chapter" xml:id="ne0033_chap132">
-					<head>XII</head>
+					<head xml:id="ne0033_head_140">XII</head>
 					<p>El Marqués se recogía el cordón de los quevedos con aquel su empaque de atildada prosopopeya:</p>
 					<p>—El Duque de la Torre volverá a ser Ministro Universal.</p>
 					<p>En la rubia carátula del médico acusaron los cachetes una sonrisa de filósofo humorista:</p>
@@ -3919,7 +3966,7 @@
 					<p>Sobrevino el silencio. Se apagaba el fuego en la chimenea. Un reloj desconcertado precipitó en el silencio su lluvia de lentejas sonoras.</p>
 				</div>
 				<div n="133" type="chapter" xml:id="ne0033_chap133">
-					<head>XIII</head>
+					<head xml:id="ne0033_head_141">XIII</head>
 					<p>El Espadón de Loja, con garrafas en los pies, cáusticos en los costados, y en las orejas cuatro pendientes de sanguijuelas, íbase de este mundo amargo, a todo el compás de sus zancas gitanas. En sopor, con hervores de pecho, sostenía inconexos diálogos, agitado por los fantasmas de la fiebre:</p>
 					<p>—¡España se divorcia de la Monarquía!</p>
 					<p>Aconsejó, familiar, el criado que le velaba:</p>
@@ -3942,7 +3989,7 @@
 					<p>—¡Vete al diablo, Bodega!</p>
 				</div>
 				<div n="134" type="chapter" xml:id="ne0033_chap134">
-					<head>XIV</head>
+					<head xml:id="ne0033_head_142">XIV</head>
 					<p>El Espadón de Loja batalla con las ansias de la muerte, y el guitarrillo del ciego ya solfea unas guajiras con la befa del entierro: Don Felipito, dómine jubilado, las entona a puerta cerrada en la rebotica del Licenciado Santa Marta: Era Don Felipito un vejete con negras antiparras, bigote de pavo, taima y guitarrillo. El gozque de lanas que le guía de un cordel, atiende al nombre de Merengue: En dos pies, con el platillo sobre los brazuelos, plantábase ante las bolsas cerradas, destacando una escala agresiva de ladridos, que dibujaba con el rabo. Merengue sabía oír en una actitud recogida las coplas de su amo y entornar como un académico los tristes ojos con legañas. Era un perro sabio. Don Felipito cantaba:</p>
 					<lg type="poem">
 						<l>—¡Gori! ¡Gori! ¡El cherinol</l>
@@ -4027,7 +4074,7 @@
 					<p>Se fue, guiado de Merengue. Un momento permaneció detenido en la acera, adivinando el claro cielo con luceros.</p>
 				</div>
 				<div n="135" type="chapter" xml:id="ne0033_chap135">
-					<head>XV</head>
+					<head xml:id="ne0033_head_143">XV</head>
 					<p>Don Felipito, pegado al filo de la acera, golpea con el hierro de la garrota en los adoquines, hasta sacar chispas. Le detuvo un guindilla, que al oírle pasar, salió de la iluminada taberna:</p>
 					<p>—¡Alto!</p>
 					<p>Tendíase sobre la acera ancha banda de luz, y el ciego se detuvo en ella con rara sensibilidad:</p>
@@ -4105,7 +4152,7 @@
 					<p>Y tirando del cordel al perrillo, caminó bajo la luna, siguiendo la acera. El hierro de la garrota, al batir las losas, resonaba en la calle solitaria. El vejete se anunciaba de lejos, y pasaba sin ver, triste, con la tristeza de sus antiparras negras, orientado por el rabo de Merengue. También era triste la vitola del perrillo. ¡Una pinturera trasquila convertía en león de consola al petulante Merengue!</p>
 				</div>
 				<div n="136" type="chapter" xml:id="ne0033_chap136">
-					<head>XVI</head>
+					<head xml:id="ne0033_head_144">XVI</head>
 					<p>Don Felipito entró en el Café de Platerías. La coima sin edad que vendía fósforos, aleluyas, gomas y calendarios, le detuvo en la puerta:</p>
 					<p>—Han estado los del Orden. Se llevaron a los de <seg type="cite">El Gil</seg>. Dicen que mañana salen en cuerda. A mí me quitaron tres números de <seg type="cite">El Alacrán</seg>. No me quedaban más, si más me quedan, igualmente se los llevan. ¡Ya no se puede vivir! Usted, Don Felipito, si trae algún papel de los subversivos, anda expuesto.</p>
 					<p>—¡He vendido todas mis coplas al boticario de Santo Domingo!</p>
@@ -4189,7 +4236,7 @@
 					<p>Los del Orden, aprovechando el momento patriótico, salen en fila india, una mano en la visera y otra recogiendo el charrasco. La sala, con noble sentimiento que desborda de su fe progresista, aplaude. Un chulo alumbrado les invita a tomar lo que gusten. Un Coronel honorario los llama y les estrecha los dátiles. Se habla en algunas mesas de proponerles para una recompensa. La menor de las pensionistas encontraba muy simpático al de en medio. Se conocía que era de buena familia. En Doña Gonzalita, la efusión y las lágrimas patrióticas, que le correspondían por huérfana de militar, recalaban siempre en una nota romántica amorosa y tierna. Había nacido el mismo día que Doña Isabel. Le gustaban las batas sueltas, los loros y las habaneras. Lloraba leyendo los folletines, y tenía que tomar agua de azahar.</p>
 				</div>
 				<div n="137" type="chapter" xml:id="ne0033_chap137">
-					<head>XVII</head>
+					<head xml:id="ne0033_head_145">XVII</head>
 					<p>El Barón de Bonifaz ha entrado en el café. Remoto en el fondo nebuloso de divanes y espejos, hace señas un clérigo fachendoso —alzacuello, capa torera, espejuelos verdes—. El Niño de Benamejí, rasurado, con el chisterón a lo curro, tenía la maja vitola de un capellán castrense. Adolfito llegó sorteando las mesas:</p>
 					<p>—Recibí tu aviso cuando meditaba un atraco. Y a ti, ¿cuándo te echan el guante? Te va bien el alzacuello, pero un clérigo de tu pinta requiere llevar al costado buena ama. Segis, tú vas a ser mi tabla de salvación. Antes de las doce de mañana me son urgentes treinta mil reales. ¡Segis, tú vas a ser mi padre!</p>
 					<p>El otro repuso en sordina, especioso, dando al aire el humo del veguero:</p>
@@ -4221,7 +4268,7 @@
 					<p>—El Señor Marqués, si usted no ve compromiso, tendrá gusto en hablarle y conferenciar.</p>
 				</div>
 				<div n="138" type="chapter" xml:id="ne0033_chap138">
-					<head>XVIII</head>
+					<head xml:id="ne0033_head_146">XVIII</head>
 					<p>El Marqués leía la prensa moderada, recogido a sus habitaciones con remusgos de gato larero: Saliéndose de la niebla soporífera de un artículo de fondo, aprestó la oreja: Reconocía el trote lechuguino del ayuda de cámara. El Marqués vivía afligido de usuras y deudas. Era por aquellos tiempos muy extrema su carestía de dineros, y estaba en gran zozobra de que naufragasen los préstamos que tenía en trámite con el Niño de Benamejí. Todas las esperanzas del palaciego se cimentaban en los arbitrios de aquel marchoso, por donde tanto le urgía sacarle libre de malos pasos. Para concertar unas secretas visitas, había nombrado internuncio a Toñete. El Marqués suscitado por el trote tilingo, volvió los ojos a la puerta, con plácido suspiro:</p>
 					<p>—¿Qué?</p>
 					<p>—¡Bueno, gracias!</p>
@@ -4241,7 +4288,7 @@
 					<p>Toñete se arrodilló con el rosario a los pies de la cama. El beato carcamal pasó blandamente del rezo al sueño, y sobre el latín macarrónico del segundo gloria, ya roncaba.</p>
 				</div>
 				<div n="139" type="chapter" xml:id="ne0033_chap139">
-					<head>XIX</head>
+					<head xml:id="ne0033_head_147">XIX</head>
 					<p>El Marqués se despertó cuando diluía su pueril repique, en rubias luces, el esquilón de unas monjas confiteras. El Marqués tenía por devoción hacer su desayuno con el sabroso chocolate de aquellas Benditas Madres. Entre sorbo y bizcocho, malicia apocada y suspiro beato, divertía la oreja con los cuentos del ayuda de cámara. Doblando sobre un hombro el perfil de loro afligido, vestida la bata de seda verde con borlones y ringorrangos, escuchaba las décimas del réquiem, y aun procuraba aprenderse la tonadilla, según la lección de Toñete. Daba fin al desayuno, cuando el criado le presentó el correo. En tanto desgarraba los sobres, quería recordar con fláccidos pianos el sonsonete de las espinelas. Entre solfa y soflama, agorinaba el carcamal:</p>
 					<p>—¡Un sacrilegio, Toñete! ¡Un sacrilegio! ¡No debías venirme con esas fábulas de la canalla más vil! ¡Un escándalo que esas irreverentes coplas puedan circular libremente! ¡Ya no se respeta ni la Parca ni el Trono! ¿Adónde vamos?</p>
 					<p>Toñete disponía en el tocador un lujoso estuche de navajas barberas:</p>
@@ -4275,7 +4322,7 @@
 					<p>—¡Réquiem in pace!</p>
 				</div>
 				<div n="140" type="chapter" xml:id="ne0033_chap140">
-					<head>XX</head>
+					<head xml:id="ne0033_head_148">XX</head>
 					<p>El Marqués de Torre-Mellada salió de sus habitaciones, retocado y pintado, a una galería de arcos, abierta sobre el picadero. Pepín Río-Hermoso adiestraba una jaca. El picadero del engomado carcamal era un círculo de elegancias, en las postrimerías del Reinado Isabelino. Madrid, famoso en el mundo por sus mujeres y sus caballos, adquiría el tono supremo con una cuadra tenida a la inglesa, como la cuadra de Torre-Mellada. El lujo de carrozas y palafrenes era tradición de aquella antigua casa. El Marqués no ignoraba que a la prosapia de sus caballos debía el resalte mundano y el rango en la Corte Isabelina.</p>
 					<p>Su valimiento en la servidumbre palaciega estaba sostenido sobre el aparato de sus caballos y cocheros ingleses. El Marqués se arruinaba con esta clara conciencia de su proyección en el mundo. Desde la galería examinaba y ponía precio, entre mientes, a la jaca anglo-hispana de Pepín Río-Hermoso. Pepín le saludó con inocencia de niño en juegos:</p>
 					<p>—¿Qué te parece el animal?</p>
@@ -4291,7 +4338,7 @@
 					<p>En un ángulo, el tuno de cuadra, que cepillaba un arreo, se encendió de risa, sacando lustre al cordobán. El chaleco de librea fulgía con el correaje y la carota inflada en las luces de una claraboya.</p>
 				</div>
 				<div n="141" type="chapter" xml:id="ne0033_chap141">
-					<head>XXI</head>
+					<head xml:id="ne0033_head_149">XXI</head>
 					<p>El Gabinete Azul de la Marquesa Carolina, puro colorín de titiritainas, frívola aspiración de elegancias, pintoresco y exótico, pronunciaba sus luces con arreglo al estilo y la moda que iniciaba París de Francia. La Marquesa, en poético <seg rend="italic">deshabillé</seg>, rasgaba los márgenes del <seg rend="italic">Monitor Inglés</seg>, y era un dije de preciosa latiniparla, la menuda cuchilla con labores de Damasco. Fue anunciado el Marqués de Redín. La dama, lánguida, se miró la camelia sujeta en el pico del escote, y requirió la entrega abandonada en el regazo. Al azar, sobre cualquier página, entretuvo los ojos, con delicada insinuación de hastío en el carmín de la boca, la mano izquierda, como flor, caída en la falda. El Marqués se detuvo en la puerta:</p>
 					<p>—Temo molestarte.</p>
 					<p>La madama suspiró en su trono de encajes:</p>
@@ -4324,13 +4371,13 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro décimo: Jornada regia</head>
+				<head xml:id="ne0033_head_150">Libro décimo: Jornada regia</head>
 				<div n="142" type="chapter" xml:id="ne0033_chap142">
-					<head>I</head>
+					<head xml:id="ne0033_head_151">I</head>
 					<p>Aquella primavera, como tantas otras, trajeron orla de luto las brisas del Guadarrama. Marzo y abril, siempre ventosos en sus idus, suelen declinar cierzos y nieves sobre la Corte de España. Los azules filos serranos, en estas lunas, se llevan del mundo a muchos viejos de catarro y asma. Así, de un aire, acabó sus empresas políticas, y sus bravatas de jácaro, el Excelentísimo Señor Don Ramón María Narváez. ¡Guadarrama de azules lejos, fríos y claros como el alma de los criminales insignes, por tu culpa lloran los azules ojos de la Reina de España! ¡Tus colados filos segaron la flor de la canela para entregarla a pasto de gusanos!</p>
 				</div>
 				<div n="143" type="chapter" xml:id="ne0033_chap143">
-					<head>II</head>
+					<head xml:id="ne0033_head_152">II</head>
 					<p>Los Señores Ministros, abrazados a las carteras, esperaban en la Real Antecámara. Su Majestad, voluble de inquietudes y buenos propósitos, deseaba celebrar Consejo. Los Señores Ministros esperaban con grave compostura. Cambiaban impresiones. Tenían una sombra preocupada. Eran muy alarmantes los pliegos llegados de Londres y París. Aquellas Embajadas advertían de un complot para derribar el Trono. Los Generales Unionistas, olvidando todos sus juramentos, amenazaban con sacar las espadas contra la Reina. Algunos Consejeros se negaban a creerlo. Era, sin embargo, indudable que se conspiraba más que nunca en los cuarteles. Don Luis González Bravo, en veces presidenciales, oía el medroso agorinar, con sonrisa de hieles:</p>
 					<p>—Ni Sartorius ni Bravo Murillo lograron sobreponerse al elemento militar. A la tercera va la vencida, y espero mostrar que puede un hombre civil ejercer la dictadura.</p>
 					<p>El Ministro de la Guerra, inquieto, nervioso, tecleaba sobre el rojo marroquín de su ministerial cartera. Tragaba saliva, saltábale la nuez. Con la lengua hacía trabajos de aproche tanteando la fortaleza de su dentadura postiza. Al fin rompió:</p>
@@ -4351,7 +4398,7 @@
 					<p>—¡Algún cuento!</p>
 				</div>
 				<div n="144" type="chapter" xml:id="ne0033_chap144">
-					<head>III</head>
+					<head xml:id="ne0033_head_153">III</head>
 					<p>La Cámara de la Reina tenía aire de velorio. Doña Isabel lloraba con medroso presagio de su ruina, la muerte del Espadón. La Señora tenía en la boca un pucherete de desconsuelo, y la morrilla de la nariz, reluciente. La Doña Pepita Rúa, en servicio de alcoba, la asistía con vinagrillos: Por distraerla, enhebraba cuentos, devociones y chismes de azafata rancia. La Reina de España, frondosa, rubia y herpética, con nada se consolaba: Para no caer en desmayo, se fortalecía con bizcochos y marrasquino, tumbada en el sofá de damascos reales. Pasó el día en afligida zozobra. Al encender las luces, quiso hacer su tocado nocturno. Suspiró los rezos, tomó agua bendita, entró en la cama, santificado el rubio y flamenco desnudo con la camisa que antes había vestido la monja milagrera: Cuatro aspas de sangre en el costado de la preciada reliquia dibujaban una cruz. La Señora, recogidas las trenzas en la papalina de seda celeste, sin dormirse, atendía al ir y venir de la azafata sahumando con la salvilla donde se quemaba la clásica pajuela de incienso y estoraque: La Reina, cubierta por la colcha de damasco, apagaba los suspiros en los encajes de la almohada: El sahumerio dábale un vago sentimiento piadoso de liturgia y latines solfeados:</p>
 					<p>—¡Pepita, estoy muy preocupada! Deja la chufleta. Acércate, mujer, y ven a consolarme.</p>
 					<p>La Doña Pepita se acercó silenciosa, con las manos juntas, y quedó a los pies de la cama. Era pequeña, flaca, arrugada, con los ojos muy negros y el pelo entrecano. Doña Isabel suspiró, enjugándose su real llanto con una punta de encajes:</p>
@@ -4389,7 +4436,7 @@
 					<p>—¡Mira, tráelas! ¡Yo me confesaré por ti del pecado, si lo fuese!</p>
 				</div>
 				<div n="145" type="chapter" xml:id="ne0033_chap145">
-					<head>IV</head>
+					<head xml:id="ne0033_head_154">IV</head>
 					<p>La Católica Majestad, incorporada en las almohadas, metíase un rizo en la papalina, con gesto picarón y campechano. Doña Pepita, santiguándose para dejar toda sombra de pecado, sacó de la faltriquera el naipe, y miró a los rincones, buscando una mesilla. Batió en la colcha, con las regordetas palmas, la Reina:</p>
 					<p>—Aquí, mujer.</p>
 					<p>Y se santiguó como lo había hecho la azafata. Doña Pepita puso la baraja al corte, y luego extendió las cartas en hileras de siete. Preguntó Doña Isabel:</p>
@@ -4415,7 +4462,7 @@
 					<p>Se durmió con entrecortados suspiros, que, lentamente, fueron cambiando hasta tornarse en plácido roncar. ¡Guadarrama de azules lejos, ya cansados de llorar, los azules ojos se han dormido! ¡La boca sonríe libre del pucherete que la apenaba! Sueña la graciosa Soberana. ¡Ole! ¡Ole! Don Luis González Bravo, terciada la capa, templa el guitarrillo, cantando las boleras antiguas de la salvación de España. ¡Ole! ¡Ole!</p>
 				</div>
 				<div n="146" type="chapter" xml:id="ne0033_chap146">
-					<head>V</head>
+					<head xml:id="ne0033_head_155">V</head>
 					<p>Era plena de luces la mañana madrileña cuando dejó su lecho de columnas con leones dorados la Reina Nuestra Señora. La Católica Majestad, vestida una bata de ringorrangos, flamencota, herpética, rubiales, encendidos los ojos del sueño, pintados los labios con las boqueras del chocolate, tenía esa expresión, un poco manflota, de las peponas de ocho cuartos: Con desgonce de caderas asentóse frente al tocador, altarete lleno de lilailos en el gusto de los retablos monjiles, y esperó a que la azafata pasase la chufleta para comenzar el tocado.</p>
 					<p>—Pepita, quiero que me pongas muy guapetona. Tengo interés en gustar…</p>
 					<p>Remilgóse la Doña Pepita:</p>
@@ -4442,13 +4489,13 @@
 					<p>Y comenzó un susurro de comadres. Hasta el camarín de la Reina llegaba, de tiempo en tiempo, rodante, difuso de apagadas y profundas sonoridades, el eco militar de las salvas que rendían honores fúnebres al General Narváez.</p>
 				</div>
 				<div n="147" type="chapter" xml:id="ne0033_chap147">
-					<head>VI</head>
+					<head xml:id="ne0033_head_156">VI</head>
 					<p>Las Madres de Jesús recibieron la regia visita con gozosos aspavientos: Habían puesto en los altares rizadas velas, primorosos paños, extraordinarios floripondios de talcos y papel. Una nube de incienso flotaba en el locutorio sigiloso, lleno de tácitas pisadas, susurros y sombras: En la tiniebla de los rincones, las cornucopias tenían un brillo de remotos faustos, y la religiosa vastedad del locutorio agrandábase en la incerteza de la penumbra, donde apenas concretaban sus destellos la esfera de un reloj, la copa de un brasero, las espadas de una Dolorosa. Llegaban apagados los ecos de la plegaria que cantaba en el coro la Comunidad. Rezaba, repartido por la iglesia, el palatino cortejo. En el locutorio, asistida por dos novicias que alumbraban con velas verdes, apareció la Madre Patrocinio. Eran transparentes de blancura el rostro y las manos. Caminaba rígida y extraña. Parecía en tránsito. Se abrió rechinante la enrejada puerta y, afligida con el pañolito sobre los ojos, entró Doña Isabel. La Seráfica Madre quedó en pie, los brazos abiertos en cruz, mostrando la palma sangrienta de las manos, sobre las dos novicias arrodilladas, alumbrantes con sus velillas verdes: La figura de la monja tenía un acento de pavor milagrero y dramático. Doña Isabel se arrodilló sollozante:</p>
 					<p>—¡Madre mía, qué enojada estás con tu pobre Reina!</p>
 					<p>La monja exhaló una queja y retrocedió andando de espaldas en la tiniebla del ámbito. Las dos alumbrantes quedaron aisladas en el círculo de sus velas. La Madre Patrocinio apoyó los hombros en una puerta, que se abrió silenciosa para darle paso, y desapareció con un grito. La Reina se cubrió el rostro. En el movedizo círculo de las velas las dos alumbrantes seguían el canto remoto del coro.</p>
 				</div>
 				<div n="148" type="chapter" xml:id="ne0033_chap148">
-					<head>VII</head>
+					<head xml:id="ne0033_head_157">VII</head>
 					<p>Entró en el locutorio, con premura y afanes, la dama de Su Majestad. Acudieron también, entre luces, algunas monjas. La Priora, con mieles y sahumerios de beata lagarta, se acercó a la Reina. Sollozaba la Señora en brazos de la dama: No podía respirar con la congoja, se ahogaba, iba a desmayarse. Otras Madres trajeron vinagrillos olorosos en salvillas de plata, para humedecerle las sienes, reliquias, agua del Jordán. Doña Isabel, poco a poco, se recobraba conmovida por largos suspiros, reclinando la cabeza en el sillón dorado, con un cojín de terciopelo a los pies, entre la dama y la Priora. El azul celino de sus ojos sonreía en el cerco de lágrimas. De las tenues y claras pupilas se borraba el susto, bajo los mimos de las Benditas Madres. Sentía el amor de aquellas vidas consagradas al rezo y al ayuno, místicas desposadas del Divino Crucificado. El piadoso sobresalto de las monjas penetraba como bálsamo el ánimo amoroso de la Reina. Lloraba y sonreía, agradeciendo aquellos cuidados de la Comunidad. La rodeaba el coro beato —ondular de sombras talares, albura de tocas y manos, rumor de sandalias, sonajería de cruces, rosarios y patenas—. La Comunidad había dispuesto un agasajo de almíbares y chocolate. La Priora consultaba el caso en voz baja con la dama de la Reina:</p>
 					<p>—¿No le convendría un reparito a la Señora?</p>
 					<p>La dama respondió con un gesto, indicando espera. La Señora tomó por la mano a la monja, acercándola más a su vera, con un secreto murmullo en los labios. La Priora se levantaba la toca sobre una oreja para mejor oírla.</p>
@@ -4472,7 +4519,7 @@
 					<p>Doña Isabel se puso en pie y requirió el brazo de su dama. La Comunidad le abrió camino, repartiéndose en dos hileras, y pasó despacio, acariciando el rostro a las novicias, palmeando el hombro de las viejas sores, estrechando a todos la mano, sonriendo y suspirando.</p>
 				</div>
 				<div n="149" type="chapter" xml:id="ne0033_chap149">
-					<head>VIII</head>
+					<head xml:id="ne0033_head_158">VIII</head>
 					<p>La Señora, al arrancar el coche, murmuró, limpiándose la mano húmeda de babas y lágrimas:</p>
 					<p>—¡Patrocinio es una santa insoportable! Suponiendo que sea santa, porque hay quien se ríe de sus llagas.</p>
 					<p>Se sulfuró la dama de guardia:</p>
@@ -4496,7 +4543,7 @@
 					<p>¡Si está clavado, mujer! Son unos pillastres que debían estar en Fernando Poo. Narváez, últimamente, no era ni su sombra. En otro tiempo ya hubiera mandado darles una paliza, cuando menos. Y <seg rend="italic">O'Donnell</seg>, con su vista larga, les hubiera soltado dinero para que hablasen mal de Prim… El Gobierno de España tiene que ser un tira y afloja. ¡Cuando más falta me hacían, la muerte me roba a los dos Espadones! ¡Estoy sola, sin cabezas para regir esta casa de orates!</p>
 				</div>
 				<div n="150" type="chapter" xml:id="ne0033_chap150">
-					<head>IX</head>
+					<head xml:id="ne0033_head_159">IX</head>
 					<p>Cantaban las cornetas militares y formaba la guardia de trasquilados pistolos, presentando armas, en las puertas de Palacio. El regio cortejo —damas, caballerizos, edecanes— volvía cariacontecido a murmurar su intriga por rincones de antecámara, galerías y escaleras. Solamente Doña Isabel tenía una expresión encalmada, contenida en augusto gesto de chunga borbónica: Campaneándose con aire de oca graciosa, entre golpes de alabarda y trémolo de cornetas, subía la gran escalera apoyada en el brazo del Marqués de Novaliches: Retirada al secreto de su cámara, dejó caer la máscara, recayendo en los temores y congojas del convento: Tomó la pluma con ánimo de escribirle a la monja; pero le dolían los ojos, y la pluma sólo dejaba caer borrones: Llamó a Doña Pepita Rúa, y cambió de vestido. La azafata, con arrumacos de bruja, daba vueltas en torno de la Reina:</p>
 					<p>—¡Pepita, no me marees! Tú algo tienes que pedir: Habla pronto y vete. Estoy de muy mal humor y muy harta de tus entrometimientos. ¡Hubieras visto el feo de la Bendita Madre!</p>
 					<p>La cotillona se alargaba en un aspaviento.</p>
@@ -4517,7 +4564,7 @@
 					<p>Pero la vieja se fue aspaventera y corretona.</p>
 				</div>
 				<div n="151" type="chapter" xml:id="ne0033_chap151">
-					<head>X</head>
+					<head xml:id="ne0033_head_160">X</head>
 					<p>La Reina, en desmayo, vio llegar a la monja beata. Era un canto dulcísimo su voz:</p>
 					<p>—¡Laus Deo!</p>
 					<p>Sor Patrocinio caminaba serena y traía un dorado pomo de sales en la mano. Suspiró la Reina:</p>
@@ -4546,7 +4593,7 @@
 					<p>—¡Vuestra Majestad no debe agitarse hablando!</p>
 				</div>
 				<div n="152" type="chapter" xml:id="ne0033_chap152">
-					<head>XI</head>
+					<head xml:id="ne0033_head_161">XI</head>
 					<p>La Doña Pepita incorporaba la cabeza de la Reina:</p>
 					<p>—¡Señora, un sorbo de agua de azahar!</p>
 					<p>Doña Isabel alargó una mano trémula, que apenas podía sostener el cristal. Se desvanecía. La santa aparición, ¿dónde estaba? ¿Por qué se iba alejando y parecía moverse en un fondo de esmalte? La veía en el cristal de la copa, distinta y miniada como una estampa piadosa: Desaparecía con un cabrilleo de la luz en el agua. Suspiró Doña Isabel:</p>
@@ -4563,7 +4610,7 @@
 					<p>Doña Isabel entornó los ojos. Sentíase feliz. ¡Quedaba aplazado el cambio político!</p>
 				</div>
 				<div n="153" type="chapter" xml:id="ne0033_chap153">
-					<head>XII</head>
+					<head xml:id="ne0033_head_162">XII</head>
 					<p>El Señor González Bravo esperaba en la cámara regia. Esperó mucho tiempo. La Señora jamás se dignó acudir puntual a sus regias audiencias. Don Luis González Bravo, en aquella ocasión, no pasó a exponerle la situación política sin una larga meditación de antecámara: La Señora le acogió con hipos de pena:</p>
 					<p>—Siéntate. Ya veo que no traes cartera. Te lo agradezco, porque no hubiera podido ocuparme de asuntos de gobierno. ¡Estoy desolada! Se me va el más leal de los políticos militares. Si vienes a consultarme respecto a los honores del duelo, mi voluntad es que no le falte ninguno de los que llevó <seg rend="italic">O'Donnell</seg>. ¡Y si hay más, más!</p>
 					<p>Asintió el Ministro:</p>
@@ -4608,7 +4655,7 @@
 					<p>—Dame que te firme el decreto. ¡Bravo, qué cosa tan terrible es la muerte!</p>
 				</div>
 				<div n="154" type="chapter" xml:id="ne0033_chap154">
-					<head>XIII</head>
+					<head xml:id="ne0033_head_163">XIII</head>
 					<p>Don Luis González Bravo, cumpliendo deberes de etiqueta, pasó a presentar sus respetos al Rey Don Francisco. El Augusto Señor le recibió con amable reserva, adamando la figura bombona:</p>
 					<p>—Me alegro que seas tú quien recoja la herencia del pobre Narváez. Yo estoy muy contento porque conozco tu lealtad y sé que siempre has querido mucho a Isabelita. Mi Persona también ha recibido de ti señaladas muestras de afecto… Además, no soy rencoroso… Si lo fuese, es posible que en estos momentos tuviese de ti una queja muy grande: Me la reservo y no quiero reconvenirte… Se ha omitido consultarme para la provisión de cargos en Palacio. Se ha querido, sin duda, con esa actitud, ultrajar mi dignidad de esposo, mayormente cuando mis exigencias no son exageradas. Que Isabelita no me ame es muy explicable… Yo la disculpo, porque nuestro enlace no dimanó del afecto y ha sido parto de la razón de Estado. Yo soy tanto más tolerante cuanto que yo tampoco he podido tenerla cariño. Nunca he repugnado entrar en la senda del disimulo y siempre actué propicio a sostener las apariencias para evitar un desagradable rompimiento… Pero Isabelita, o más ingenua o más vehemente, no ha podido cumplir con este deber hipócrita, con este sacrificio que exigía el bien de la Nación. Yo me casé porque debía casarme… Porque el oficio de Rey lisonjea… Yo entraba ganando en la partida y no debí tirar por la ventana la fortuna con que la ocasión me brindaba, y acepté con el propósito de ser tolerante para que lo fueran igualmente conmigo. ¿Y qué consideración se me guarda? No hablo sólo por mí. Esos nombramientos van a escandalizar en la Nación. ¡La Nación no puede tolerar dignamente el espectáculo y el escarnio que se hace del tálamo! ¡Godoy ha guardado siempre las mayores deferencias a mi abuelo Carlos IV! En ningún momento ha olvidado que era un vasallo. ¡Cierto que son otros los tiempos! Pero el respeto a las jerarquías debe ser una norma inquebrantable. Es la clave del principio monárquico. Mi abuela María Luisa no sé lo que haya tenido con Godoy. ¡Allá su conciencia! Lo que todos sabemos es el profundo respeto y amor que siempre mostró a su Soberano el Príncipe de la Paz. Pero mi situación es muy otra, y con ser tan bondadoso el abuelo dudo que la hubiera soportado. La Reina, con su conducta, se hace imposible a mi dignidad y a la del pueblo español.</p>
 					<p>El Rey Don Francisco se puso en pie, señalando el final de la audiencia. El Señor González Bravo le clavaba los ojos adustos, movidos los rincones de la boca por una sonrisa de compasión y escarnio:</p>
@@ -4621,7 +4668,7 @@
 					<p>En la Cámara Real, vasta, cuadrada, solemne, su voz recibía una mengua jocosa, de fantoche que sale al tablado vestido con manto y corona de rey de baraja.</p>
 				</div>
 				<div n="155" type="chapter" xml:id="ne0033_chap155">
-					<head>XIV</head>
+					<head xml:id="ne0033_head_164">XIV</head>
 					<p>El Espadón de Loja tuvo magnas exequias con honores de capitán general muerto en campaña. Para ver pasar el entierro por la carrera tendida de roses y fusiles ha salido al ruedo celeste, vestido de luces, el mozo rubio, como retórica la tribu faraona, allá por los pagos del difunto. El Espadón había dispuesto que se le diese sepultura en tierra de Loja. Madrid le despedía tendido por las calles, animado y bullanguero con tantos brillos de bayonetas, roses, plumajes y charangada de metales. La guarnición, con uniforme de gala, cubría la carrera. La pompa de luces y cánticos, músicas y banderas, coronas y salvas militares era de una desorbitada redundancia a lo largo de las callejuelas moriscas, con tabernuchos, empeños y casas de trato. El latín de los rezos se difundía en barrocas nubes de incienso por la calle verdulera: Los acólitos levantaban los incensarios, y las graves voces de los oboes solfeaban la oquedad protocolaria del duelo nacional. Hacían Viernes Santo, a lo largo de las aceras, niños hospicianos con flacas velillas, y con fachenda de hachones, los porteros de Cámaras, Tribunales y Academias. El Rey Consorte, exiguo y tripudo como una peonza, presidía el duelo. Pasos de bailarín y arreos de capitán general. Batían marcha los tambores. Un mirlo, viejo solista, silba el trágala en la tienda del zapatero, héroe de barricadas, que se ha puesto, con desafío, el morrión de miliciano. El cortejo bajaba hacia la Estación de Atocha. Aromaban las primeras lilas y eran plenas de misterio floral las arboledas del Jardín Botánico. En el andén, elocuentes voces del moderantismo tejieron la rocalla de fúnebres loores, y tras el último pucherete retórico, renovóse el flato de añejas conjuras que tenían por patrono al Rey Consorte.</p>
 				</div>
 			</div>
@@ -4630,7 +4677,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

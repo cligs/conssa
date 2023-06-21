@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Hilván de escenas</title>
-				<title type="sub"></title>
+				
 				<title type="short">Hilvan</title>
-				<title type="idno"><idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1407</measure>
@@ -138,22 +131,58 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0041</idno>
+						<idno type="cligs">ne0041</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/hilvan-de-escenas-2/"/>.</bibl>
-				<bibl type="print-source">Alicante, Imprenta Luis Esplá, <date when="1903">1903</date></bibl>
-				<bibl type="edition-first"><date when="1903">1903</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Hilván de escenas</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/hilvan-de-escenas-2/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Alicante</pubPlace>, Imprenta Luis Esplá, <date when="1903">1903</date></bibl>
+					<bibl type="edition-first"><date when="1903">1903</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Hilván de escenas</title> <date when="2004">2004</date>, <publisher>Inst. de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1187562084" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1187562084"/> 		<idno type="isbn" n="8477844550;8460937453"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Hilván de escenas</title> <date when="2004">2004</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="48773016X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=48773016X"/> 		<idno type="isbn" n="8460937453;8477844550"/></bibl>
+						<bibl type="further-edition"><title type="main">La mujer de Ojeda (Ensayo de novela)</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1346221219" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1346221219"/> 		<idno type="isbn" n="9788496452251;8496452255"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de Ojeda (Ensayo de novela). Hilván de escenas. De vivir. La novela de mi amigo. Nómada. La palma rota. El hijo santo. Las cerezas del cementerio. Niño y grande</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362006"/> 		<idno type="isbn" n="8496452255;9788496452251"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
 				<p>Pedro Luis llega como nuevo médico del pueblo de Confines junto con Buenaventura, un hombre de más edad que él. Se nos muestran las relaciones de los personajes de Confines, como la cacique (Trinidad Bermúdez Sila), su sobrina Carmen, cura, etcétera. Pedro Luis intenta tener una relación sentimental con Carmen, pero esta se impulsada a rechazarle al saberse en el pueblo que Pedro Luis es expósito (fue abandonado por sus padres) y que Buenaventura lo recogió.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -217,15 +246,16 @@
 		<revisionDesc>
 			<change when="2015-03-06" who="#jct">Initial TEI version.</change>
 			<change when="2015-12-18" who="#jct">New metadata.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front> </front>
 		<body>
 			<div type="part">
-				<head>Preliminares</head>
+				<head xml:id="ne0041_head_000">Preliminares</head>
 				<div n="1" type="chapter" xml:id="ne0041_chap1">
-					<head>- I -: Escenario</head>
+					<head xml:id="ne0041_head_001">- I -: Escenario</head>
 					<p>Entre dos estribaciones enormes y fragosas del Aylona, serpea el valle de Badaleste, hondo y vicioso.</p>
 					<p>En el horcajo de tamañas sierras, en altitud bravía está Confines, viejo y parduzco pueblecillo sobre cuyo costroso hacinamiento de tejados verdinegros, eleva la decrépita Abadía su campanario estrecho, amarillento y alto, maculado junto a su cornisa por las rudas y ennegrecidas piedras que deja ver un desgarrón de la fachada.</p>
 					<p>Las paredes de las últimas casas del pueblo reciben <seg rend="italic">ávidas</seg> las caricias de los primeros verdores del valle. Éstos se originan con escalones inmensos de ondulantes mieses, sombreadas de trecho en trecho por redondos olivos y talludos almendros de retorcidos y negrales troncos.</p>
@@ -252,7 +282,7 @@
 					<p>Y el vendaval silba, vocea, aúlla, recorre la altitud, se precipita por los sembrados, lo azota, lo asuela todo implacable, y a su paso por las laderas, los pinares, de imperecedero verdor, protestan, plañen, murmuran con rumor de oleaje fiero, de muchedumbre impaciente.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0041_chap2">
-					<head>- II -: La Señora</head>
+					<head xml:id="ne0041_head_002">- II -: La Señora</head>
 					<p>Badaleste, diminuto y blanco, se esparce entre las rocas abruptas, desnudas, inmensas.</p>
 					<p>Desde el cercano Benifante, sube <seg rend="italic">travieso</seg> y jiboso un caminito que, serpeando entre las casas, llega a una muy alta peña horadada por angosto túnel que inició Naturaleza y ultimó el artificio y pujanza del hombre.</p>
 					<p>Al otro lado de la obscura entraña, acaba el caserío. Quedan sólo unas cuantas casitas extendidas en blanca andana junto a la peña del túnel; y enfrente se alza con pesantez la solariega casa de los antiguos señores del valle; un caserón frío, austero, de apariencia monástica, con sus paredes rudamente encaladas y el negro ventanaje siempre cerrado. A su izquierda sobresale un inquietante risco, liso y estrecho, rematado en su altura por una garita blanca y cuadrada como un dado nuevo, en donde reposa la vieja campana perteneciente a la Iglesia, que se halla bajo, al otro extremo del solar, humilde, silenciosa, sin torre ni espadaña.</p>
@@ -277,7 +307,7 @@
 					<p>Las dos hojas de la enorme puerta del vestíbulo, casi siempre entornadas, abríanse alguna vez, empujadas por un rústico brumado de legumbres o leña; la luz penetraba entonces franca y esplendorosa, pero pronto era rechazada por los rudos tableros de la puerta, al cerrarse, y el hombre perdíase en el fondo penumbroso del zaguán. Allí, envuelta por crasas sombras, sube a los pisos superiores una escalera de macizo barandal y crujientes peldaños espaciosos. Allí están las entradas al comedor, verdadero refectorio de convento, largo, encalado, frío; a otras dependencias, y a un patio donde cacareaban las gallinas y dormitaba, sobre descomunal pira de sarmientos, un mastín blanco encadenado por la carlanca a la argolla de un pesebre.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0041_chap3">
-					<head>- III -: Castellanos y caciques</head>
+					<head xml:id="ne0041_head_003">- III -: Castellanos y caciques</head>
 					<p>Los Bermúdez Sila, de empolvada peluca, recamada casaca, corto calzón y hebillado zapato de espejeante pantalia, estimaron que tan cortesanas galas repelían el nido y lueñe escenario de Badaleste.</p>
 					<p>Otro vivir, más blando, halagador y bullicioso que aquel seguido en el valle, tan sosegado y eremítico, apetecían ellos, y así, arrancando de su solar lo más estimable de su aderezo, y vendiendo no pocas yugadas y algunos pinares, dejaron el abundoso suelo, tan hazañosamente conquistado por sus mayores, y trasladáronse a la Corte, donde podrían espaciar sus ansias de goces y grandezas con los rendimientos aún copiosos de sus restantes tierras badalestinas.</p>
 					<p>Cerrado y mudo quedó el adusto edificio. Manchas verdosas invadieron las fachadas, y aun osaron costrear por los recortados signos heráldicos del viejo blasón, que descansa sobre el dintel de la inmensa puerta. El sol, la lluvia, el viento y las celliscas ennegrecieron y descascarillaron las paredes con su oleada de fuego y fríos arañazos, y exprimieron y agrietaron el maderaje.</p>
@@ -370,9 +400,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Parte primera</head>
+				<head xml:id="ne0041_head_004">Parte primera</head>
 				<div n="4" type="chapter" xml:id="ne0041_chap4">
-					<head>- I -: La mañana del Corpus</head>
+					<head xml:id="ne0041_head_005">- I -: La mañana del Corpus</head>
 					<p>La Señora, ya <seg rend="italic">enmantillada</seg>, se asomó al balcón.</p>
 					<p>Desde Benifante ascendía el estruendoso clamor de un campaneo solemne.</p>
 					<p>Los atiplados esquilones parecían burlarse con risas descaradas del grave, lento y fatigoso rodar de una campana grande que, de cuando en cuando, apresuraba su son, pero luego desfallecida tornaba a su primitiva calma, y entonces la gritería metálica de las pequeñas hacíase más apresurada y aguda; bien así como groseras y traviesas chicuelas que arreciasen sus mofas y regocijo al ver impotente la cólera de una mujer gorda por ellas ridiculizada...</p>
@@ -491,9 +521,9 @@
 					<p>-¡Oh, no, no señor! -repuso sonriendo el buen mosén Vicente-. Era del Ayuntamiento, pero ahora es de la Iglesia.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0041_chap5">
-					<head>- II -: Dos historias</head>
+					<head xml:id="ne0041_head_006">- II -: Dos historias</head>
 					<div type="section">
-						<head>- I -</head>
+						<head xml:id="ne0041_head_007">- I -</head>
 						<p>Todos los pueblecillos, aldehuelas y <seg rend="italic">mases</seg> que se esconden en los repliegues del valle, se asoman entre los trigos y la arboleda y salpican la serranía, dependen judicialmente de Ballosa, pueblo de risueña y dilatada vega, cuya <seg rend="italic">alma</seg> tierra prodiga olorosos y exquisitas fresas, que gozan muy merecida fama.</p>
 						<p>En Benifante hay Juzgado municipal, que antaño ejercíalo un buen hombre, el cual, dedicado al cultivo de sus terrones, dejaba pesar los judiciales asuntos sobre las espaldas del secretario, tan anchas y poderosas como las de Atlante.</p>
 						<p>Era áquel un muchachote algo estevado, muy grave, <seg rend="italic">gran supuesto</seg>. A él acudían en consulta por su olor de honrado y entendido, autoridades y lugareños.</p>
@@ -627,7 +657,7 @@
 						<p>Una campanada salió de Benifante; elevose serena, resonó suave, parecía andar, deslizarse en el espacio pálido, hasta desfallecer. Y extinguirse temblorosa, como si se diluyera lentamente en el silencio del crepúsculo...</p>
 					</div>
 					<div type="section">
-						<head>- II -</head>
+						<head xml:id="ne0041_head_008">- II -</head>
 						<p>Junto a los políticos pasó el peatón que llevaba la valija del correo. Era un viejecillo ético, astroso, manco de la mano izquierda.</p>
 						<p>Años atrás, muchos años, Gaspar el <seg rend="italic">manquet</seg> (así se llamaba y apodaban en la comarca al mutilado) era un mozo alegre, aunque valetudinario, que residía en una casita de las más encumbradas de la sierra.</p>
 						<p>Su mujer, una trigueña altiva, orgullosa de su belleza, de su carne incitadora, le esperaba al regreso del trabajo. Y triscando como dos novillos, correteaban por los bancales, hasta caer rendidos sobre un ribazo blando y verde, con asombro de la fauna que <seg rend="italic">enmudecía</seg> atemorizada por las travesuras de Amor.</p>
@@ -705,7 +735,7 @@
 						<p>De cuando en cuando, el mutilado, sufría adormecimiento cerebral, obscuridad en la mirada, el mismo silencio, la misma pasajera muerte que sintiera en la noche de la total ruina de su dicha.</p>
 					</div>
 					<div type="section">
-						<head>- III -: De la cima a la sima</head>
+						<head xml:id="ne0041_head_009">- III -: De la cima a la sima</head>
 						<p>La cigarra, de tan regaladora y dulce armonía para los griegos, canturreaba furiosa, ronca, entre la pompa del nogal que vive en lo alto de Badaleste.</p>
 						<p>En la manchosa sombra del árbol sesteaba enroscado un perro flacucho, anguloso, de vello blanco y lacio.</p>
 						<p>Reverberaban las peñas; en la hondura yacía el boscaje con quietud y silencio de agostamiento; calmosamente se movían los braceros en los lienzos verdes de los bancales; las casas, con sus puertas y ventanas entreabiertas, no exteriorizaban ni un ruido, ni una voz.</p>
@@ -841,9 +871,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Parte segunda</head>
+				<head xml:id="ne0041_head_010">Parte segunda</head>
 				<div n="6" type="chapter" xml:id="ne0041_chap6">
-					<head>- I -: La llegada de la sobrina</head>
+					<head xml:id="ne0041_head_011">- I -: La llegada de la sobrina</head>
 					<p>Llovía.</p>
 					<p>Tejía el agua un inmenso estambrado diagonal y gris muy visible sobre el fondo pardusco o verdeante de las limpias sierras, embozadas en su altura por nubes enormes de movientes perfiles.</p>
 					<p>Cendales de niebla bajaban al valle y pasaban blanqueando sobre la naciente sementera inundada por la lluvia; enredándose en la fronda pálida de un olivar o en el verde terciopelo de los pinares; suspendiéndose, como nube de polvo, sobre los ennegrecidos tejados de un caserío.</p>
@@ -910,7 +940,7 @@
 					<p>¡Qué espantoso es el dolor, cuando no tiene voz en el tormento!</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0041_chap7">
-					<head>- II -: La señorita Carmen</head>
+					<head xml:id="ne0041_head_012">- II -: La señorita Carmen</head>
 					<p>En extremo quedaron sorprendidas y desilusionadas las dos rollizas sirvientes de doña Trinidad, al ver a la forastera.</p>
 					<p>No era ésta lo que esperaban y habían fabricado sus campesinas imaginativas.</p>
 					<p>«...Una señorita joven, que había tenido coches y vivido en un palacio; madrileña por añadidura». ¡Válgame Dios, y por fuerza que reguapa y vistosa había de ser!</p>
@@ -945,7 +975,7 @@
 					<p>-¡Dios te salve! -le corrigió su tía, con dureza.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0041_chap8">
-					<head>- III -: Paisaje y figuras</head>
+					<head xml:id="ne0041_head_013">- III -: Paisaje y figuras</head>
 					<p>Pedro Luis regresaba de una <seg rend="italic">masía</seg> subida en la ladera de la sierra fronteriza a Benifante.</p>
 					<p>El día era seco y tibio.</p>
 					<p>Pedro Luis atravesó un sembrado de avena, corta y rala, que amarilleaba a trechos.</p>
@@ -990,7 +1020,7 @@
 					<p>Pedro Luis llegó al pueblo con el alma exaltada por lástimas y amor inmenso hacia esos hombres vencidos sin luchar.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0041_chap9">
-					<head>- IV -: Agraz</head>
+					<head xml:id="ne0041_head_014">- IV -: Agraz</head>
 					<p>La Señora, Carmen y el médico estaban en el comedor.</p>
 					<p>Por los hierros nudosos, curvos, rectilíneos del barandal de un balcón, trepaban los desnudos y negros mugrones de un jazminero, y enlazados a rígidos alambres, subían hasta el dintel y rayaban un cielo nuboso.</p>
 					<p>En el valle, los almendros <seg rend="italic">escarchados</seg> de florecillas blancas y rosáceas, lozaneaban por las laderas, por los márgenes, por los bancales.</p>
@@ -1079,7 +1109,7 @@
 					<p>Las palabras de Carmen llegaban a Pedro Luis acariciadoras, placenteras, como brisa procedente de naranjal nevado de castos azahares…</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0041_chap10">
-					<head>- V -: Mosén Ricardo</head>
+					<head xml:id="ne0041_head_015">- V -: Mosén Ricardo</head>
 					<p>La casa-abadía de Benifante es la primera de una calle muy blanca que, por un extremo, se ensancha hasta formar desnivelada plaza donde reposa la Iglesia, y por el otro se asoma el campo.</p>
 					<p>En el piso alto de la casa tenía mosén Ricardo su despacho y dormitorio, que comunicaba con el de su madre.</p>
 					<p>Ocupa la parte de atrás del edificio una habitación larga y estrecha con dos ventanas diminutas que dan a un huertezuelo plantado de frutales y hortalizas.</p>
@@ -1137,7 +1167,7 @@
 					<p>Y mosén Ricardo sonrió, sonrió dichosamente mientras soñaba. Después corrió la cortina azul de la ventana, apartose de ésta, y tomó el breviario, abriolo, santiguose y emprendió un paseo lento por el despacho.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0041_chap11">
-					<head>- VI -: La Señora y Lisaña</head>
+					<head xml:id="ne0041_head_016">- VI -: La Señora y Lisaña</head>
 					<p>Obtenido el asentimiento de mosén Ricardo, el cacique comenzó a filtrar en el ánimo de la Señora, solapadas razones que malparaban al sencillo cura de Badaleste.</p>
 					<p>Pero viendo que el embozo dado a sus palabras, les sustraía mucho de su intención y fuerza, resolviose una mañana a hablar con lisura y empuje para conseguir antes que todo la expulsión o traslado de mosén Vicente.</p>
 					<p>Habilidoso estuvo Lisaña acusando. Acentuado su visaje de amargura, condoliose del desamparo que en prácticas religiosas ofrecían la Iglesia y el pueblo de Badaleste.</p>
@@ -1179,7 +1209,7 @@
 					<p>Lisaña, con más ira que el dios Pan, abandonó la casa de los Bermúdez, sin haber deslizado en los oídos de la Señora, ni el nombre del médico.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0041_chap12">
-					<head>- VII -</head>
+					<head xml:id="ne0041_head_017">- VII -</head>
 					<quote>
 						<lg type="poem">
 							<l>«De los sos oios tan fuerte-mientre llorando</l>
@@ -1262,9 +1292,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Parte tercera</head>
+				<head xml:id="ne0041_head_018">Parte tercera</head>
 				<div n="13" type="chapter" xml:id="ne0041_chap13">
-					<head>- I -: Vulgaridades</head>
+					<head xml:id="ne0041_head_019">- I -: Vulgaridades</head>
 					<p>Pedro Luis, apoyado en un quicial de la ventana, contempló la noche.</p>
 					<p>La <seg rend="italic">vía láctea</seg>, como polvoriento camino luminoso, blanqueaba por un cielo estrellado.</p>
 					<p>Bajo, se extendía el manchón infinito del paisaje.</p>
@@ -1382,7 +1412,7 @@
 					<p>El que duda, ignora.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0041_chap14">
-					<head>- II -: Prosiguen las vulgaridades</head>
+					<head xml:id="ne0041_head_020">- II -: Prosiguen las vulgaridades</head>
 					<p>-Dices que has de contarme algo muy grave y que me interesa en extremo -murmuró la Señora dirigiéndose al cacique. Y después de un momento de silencio, agregó:</p>
 					<p>-Nada; por mucho que me doy a pensar, no adivino lo que pueda ser...</p>
 					<p>Mosén Ricardo sentado junto a la mesa del comedor, tabaleaba suavemente con sus dedos secos y morenos, aparentando discreta indiferencia a todos los preludios del debate.</p>
@@ -1493,9 +1523,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Epílogo</head>
+				<head xml:id="ne0041_head_021">Epílogo</head>
 				<div n="15" type="chapter" xml:id="ne0041_chap15">
-					<head>- I -</head>
+					<head xml:id="ne0041_head_022">- I -</head>
 					<p>Hace tres años que Pedro Luis está en Madrid.</p>
 					<p>Vive solo. <seg rend="italic">Polifemo</seg> ha muerto.</p>
 					<p>Pedro Luis desempeña una secundaria ayudantía en importante clínica; empleo alcanzado gracias a un su antiguo maestro, sabio médico.</p>
@@ -1518,7 +1548,7 @@
 					<p>Y a los tres años de residir en Madrid, cuando se cree fortalecido y quizás en el comienzo de la nueva vida consoladora, dichosa, por él mismo creada, las palabras de un personaje perteneciente a su <seg rend="italic">edad media</seg>, le conmueven aflictivamente y muestran la simpleza de sus ensueños engañosos.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0041_chap16">
-					<head>- II -</head>
+					<head xml:id="ne0041_head_023">- II -</head>
 					<p>Declina el invierno.</p>
 					<p>Es tibia y serena la mañana.</p>
 					<p>Pedro Luis se dirige a la clínica.</p>
@@ -1577,7 +1607,7 @@
 					<p>¡Pero la sociedad es una!</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0041_chap17">
-					<head>- III -</head>
+					<head xml:id="ne0041_head_024">- III -</head>
 					<p>Por las tardes, al salir de la clínica, Pedro Luis no se encierra en su cuarto como antes efectuaba.</p>
 					<p>Ahora va a las calles donde la gente hierve, a la Castellana, al Retiro, «por gozar del ocaso del día, de su última luz», según él mismo piensa, esforzándose en apagar una <seg rend="italic">voz íntima</seg> que le desmiente, diciéndole: «Vas por <seg rend="italic">ella</seg>, por si logras verla, que ella es tu luz, débil o espléndida, pura o engañosa, pero que atrae y baña dulcemente tu alma».</p>
 					<p>Y la ve por fin.</p>

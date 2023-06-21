@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El abuelo del rey</title>
-				<title type="sub"></title>
+				
 				<title type="short">AbueloRey</title>
-				<title type="idno"><idno type="viaf">313855614</idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1272</measure>
@@ -138,16 +131,53 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0052</idno>
+						<idno type="cligs">ne0052</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/el-abuelo-del-rey-1/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1933">1933</date></bibl>
-				<bibl type="edition-first"><date when="1915">1915</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El abuelo del rey</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/313855614/">313855614</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/el-abuelo-del-rey-1/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1933">1933</date></bibl>
+					<bibl type="edition-first"><date when="1915">1915</date><idno source="k10plus" type="ppn" n="575634774" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=575634774"/><idno source="k10plus" type="ppn" n="465007198" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465007198"/><idno source="k10plus" type="ppn" n="422084840" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=422084840"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1915">1915</date>, <publisher>Ed. Iberica</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="575634774" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=575634774"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey ...</title> <date when="1915">1915</date>, <publisher>Ed. Ibérica, J. Pugés S. en C.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465007198" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465007198"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1915">1915</date>, <publisher>Ed. iberica</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="422084840" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=422084840"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1929">1929</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1135148155" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135148155"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1929">1929</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="498730352" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=498730352"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1929">1929</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465106773" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465106773"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1952">1952</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1114425257" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1114425257"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1952">1952</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="463554604" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463554604"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1991">1991</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="04328261X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=04328261X"/> 		<idno type="isbn" n="8477849374"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1992">1992</date>, <publisher>Inst. de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1101316624" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1101316624"/> 		<idno type="isbn" n="8477849374"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo del rey</title> <date when="1992">1992</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="132217481" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=132217481"/> 		<idno type="isbn" n="8477849374"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta ; Corpus y ntos ; El abuelo del rey ; Dentro del cercado ; Figuras en la Pasión del señor ; El humo dormido</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="528944231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=528944231"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta. Corpus y otros cuentos. El abuelo del rey. Dentro del cercado. Figuras de la pasión del Señor. El humo dormido</title> <date when="2007">2007</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362189" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362189"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -155,6 +185,14 @@
 				<p>Representan a la mentalidad tradicional don Arcadio, el abuelo, y el catedrático de historia, don César, que rechazan cualquier intento de innovación. Don Arcadio está obsesionado por conservar la raza señorial de Serosca, pero con su nieto Agustín se acabará la estirpe. El vetusto patriarca no podrá evitar la invasión de los hombres de la marina que obligarán a la levítica ciudad a abrirse a los nuevos tiempos. El hijo y el nieto, inteligentes y amantes del progreso, no quieren sepultarse en ese ambiente cerrado y parten en busca de aventuras. Encuentran su final en tierras lejanas.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -187,7 +225,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela colectiva</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela social</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -214,6 +252,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-07" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -224,9 +263,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Noticias del lugar y de algunos varones insignes de Serosca</head>
+				<head xml:id="ne0052_head_000">Noticias del lugar y de algunos varones insignes de Serosca</head>
 				<div n="1" type="chapter" xml:id="ne0052_chap1">
-					<head>- I -</head>
+					<head xml:id="ne0052_head_001">- I -</head>
 					<p>Está Serosca en medio de una vega de mucha abundancia. Tiene hondas tierras oliveras de   santísimo   reposo.   Hay   josas   umbrías   y almendrales   que,  cuando  florecen,  visten  todo   el campo de blancura de una pureza y voluptuosidad de  desposada.   El  herreñal  tierno, mullido,  donde duerme el viento y se tiende el sol ya cansado y se oye siempre un idílico y dulce sonar de esquilas, y los  chopos  finos, palpitantes,   de un susurro de vuelo, dejan en el paisaje una emoción de inocencia, de frescura, de alegría tranquila. Pero los montes que   pasan   a   la   redonda   parece   que  aprieten y apaguen   la  ciudad.   En los  días  muy abiertos y limpios,  desde las  cumbres y las  majadas   de  la solana, se descubre el azul inmenso del Mediterráneo. Los rebaños trashumantes, cuando llegan a los altos  puertos,   se   quedan   deslumbrados   del  libre horizonte.  Los pastores  miran la aparición de un barco de vela, un bello fantasma hecho de claridad. El barco se pierde, se deshace como una ola; o, pasa la tarde,  y sigue parado lleno  de resplandores; un vapor negro y codicioso se desliza por debajo y lo deja obscurecido de humo. Se queda solo el blanco fantasma, hundiéndose dentro del azul que parece todo mar o todo cielo. Llegada la noche, los  astros bajan en el confín, al amor de las aguas. El barco debe de estar recamado de estrellas, como una joya de la Virgen de Serosca.</p>
 					<p>Tiene esta comarca un lado o término abierto: el desportillo de un collado humilde; por aquí asoma el genuino paisaje de Levante, del Levante escueto y ardiente, desgarrado por ramblas pedregosas donde crece abrasándose la adelfa.</p>
 					<p>Junto a las morenas masías se tuercen y descoyuntan las chumberas; sube una palma y abre en el cielo su copa de color de bronce; los sembrados se crispan de sed bajo un vaho de horno; la viña madura se va cuajando de miel; así como la miel, de espeso  y de dulce, es el zumo de sus racimos; los olivos y algarrobos recruzan y trenzan sus raíces centenarias por el haz de los bancales; un aire manso y cálido levanta tolvaneras de los barbechos y de las sendas, que se pierden entre la encendida calina.</p>
@@ -237,7 +276,7 @@
 					<p>Pero el catedrático don César sostiene que la primitiva Serosca debió de hallarse más a la izquierda.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0052_chap2">
-					<head>- II -</head>
+					<head xml:id="ne0052_head_002">- II -</head>
 					<p>Parose don Arcadio delante de un vallado; tocó con mucha prudencia una pita valiente, erizada de púas; y mirando la lisera, gruesa, alta, que reventaba de suco, dijo:</p>
 					<p>-¡Qué poderío de planta, María Santísima! ¡Y se trata de una pitera toda pinchosa y colgada de telas de araña! ¿Me quieren decir ustedes para qué necesita tanta fuerza?</p>
 					<p>Hablaba el buen caballero con su nieto y con don Lorenzo, antigua amistad de la casa; pero en sus preciosos hallazgos de observación y en todo advertimiento gustaba de tratar de usted a los más allegados.</p>
@@ -302,7 +341,7 @@
 					<p>Y le  dio tanta  lástima como la pobre higuera agotada de la maldición.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0052_chap3">
-					<head>- III -</head>
+					<head xml:id="ne0052_head_003">- III -</head>
 					<p>Había   un  grupo  de   varones  en  quien todos veían   reflejarse la antigüedad,  la vieja Serosca.</p>
 					<p>Se sentía por ellos la misma veneración arqueológica y la misma indiferencia que por el castellar de  las  tres  torres,   entre  cuyas   piedras   mutiladas subía la ternura de una planta que llaman «trepadora de los fosos». Es una mata briosa, de vástagos trenzados, de hojas recias, pero tiene su verdor el melancólico apagamiento de las ruinas donde vive.</p>
 					<p>Don Arcadio, el catedrático don César y el señor Llanos, fabricante de sombreros, eran como los tres macizos  seculares   del   castillo; y don Lorenzo -un músico triunfal y aventurero en  su juventud-, la verdura jugosa del presente que aún parecía lozanear sobre el antaño con una suave tristeza.</p>
@@ -372,9 +411,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Tiempos antiguos. Abuelos y padres del héroe</head>
+				<head xml:id="ne0052_head_004">Tiempos antiguos. Abuelos y padres del héroe</head>
 				<div n="4" type="chapter" xml:id="ne0052_chap4">
-					<head>- I -</head>
+					<head xml:id="ne0052_head_005">- I -</head>
 					<p>Don Arcadio y doña Rosa se desposaron muy jóvenes, con lucida ceremonia en la parroquia mayor de Santa María. Desbordaba la muchedumbre por los viejos canceles; y en la plaza quedó mucha gente artesana y labradora aguardando la salida de la pareja nupcial.</p>
 					<p>Aunque los novios pertenecían a las familias más rancias y hacendadas de Serosca, eran bien conocidos y queridos de mozos humildes, porque, de chicos, fueron a la misma escuela y costura. Por eso, al lado del parabién pulido y del rico presente de joyas o prendas finísimas, oyeron palabras y estrecharon manos que trascendían a legón húmedo y artesa, y recibieron el rudo agasajo de alguna orza, de aceitunas aliñadas o una fuente de brescas que destilaban su dulce oro.</p>
 					<p>Estaba la novia hermosa con las galas de desposada y con las ropas sencillas de señorita lugareña; y de todas maneras parecía triste, de una tristeza blanda y amable.</p>
@@ -416,7 +455,7 @@
 					<p>-¿Aún lo duda, aún lo duda usted? ¡Por María Santísima!</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0052_chap5">
-					<head>- II -</head>
+					<head xml:id="ne0052_head_006">- II -</head>
 					<p>Todas las noches iba don Lorenzo a la noble casa   de   don   Arcadio.   Allí   descogía   del dorado huso de sus memorias de artista, las amenas jornadas, las espirituales andanzas. Y bajo la sutileza de una ironía, en el silencio de una pausa, aleteaba dentro del pecho de la señora la inquieta paloma de la emoción. Y doña Rosa, inclinando los turbados ojos, tomaba de nuevo la costura.</p>
 					<p>El esposo leía una vieja revista agronómica. El músico emprendía un lento paseo sobre las flores ajadas de la alfombra. Parábase, de pronto, delante del piano, y alzaba la mirada al perfil en cobre de Mozart, que le regalaron en Viena y que él ofreció a la dama. A poco, ella volvía a dejar en el cestillo la malla o el lenzuelo, y don Arcadio se anotaba alguna curiosa fórmula insecticida.</p>
 					<p>Era que el artista estaba tocando.</p>
@@ -444,7 +483,7 @@
 					<p>Un sol de alegría doraba el melancólico rosal del corazón de la esposa.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0052_chap6">
-					<head>- III -</head>
+					<head xml:id="ne0052_head_007">- III -</head>
 					<p>No se avenían las damas de la ciudad a que Carlota,   la   mujer   de   Agustín,  fuese   de Nuevitas. Ni ellas ni los varones. Ni los legítimos serosquenses ni los advenedizos. Aquéllos eran reposados hasta por la raíz etimológica de la ciudad; y los de la Marina, horbachones hasta por herencia mediterránea. Iban en mangas de camisa, los veranos, por las calles, como si todo Serosca fuese la fresca entrada de sus casas. ¡Y ahora venía una forastera,  delgada y descolorida,  a recordarles  su quietud, su ocio, su poco mundo! Fantasiosa era la pobre mujer.   Carlota sería de Canarias o quizá de Mallorca.   Y cuando la gentil cubana recordaba con su dulce dejo las hermosuras y rarezas de la lejana patria, las señoras que la escuchaban se miraban sonriendo, y, a la salida, se decían que aquel hablar debía de ser fingido, y embuste cuanto refería, y que desde luego vendría de Mahón, si acaso. Además, no tiritaba de frío ni estaba tendida en hamacas; nada había en ella de país remoto o tropical; parecía también que la hubiesen conocido de antiguo. No era ninguna belleza del otro mundo; agraciada, pero frágil; menuda, morena, la frente chiquita, la nariz gordezuela, la boca grande, siempre gozosa, los ojos  negros, que entornaba perezosamente para mirar. La catedrática dijo que se asemejaba mucho a la dueña de una tahona que hubo en la plaza de Santa María. Y ya se convino,  se decidió que fuese mallorquina.</p>
 					<p>En  cambio,   don   Arcadio y  doña   Rosa  sí  que creyeron   a   su  nuera   de  Cuba,  y aun de sitio más apartado,  según   costaba   en   llegarles   al   alma, y el vaho, la bruma de distancia que cegaba su vida. Ella añoraba  mucho,   haciendo   un   plañido y regaño  de criatura -que el suegro no comprendía cómo pudiera hacerse a los veinticinco años cabales-, la delicia de su baño al acostarse; toda el agua de olores, y cuajado de olor caliente y dulce el viento  de la  profunda noche; pero de su casa, de los suyos, sólo alguna vez nombraba llorando a un hermanito muerto; y todavía sin enjugarse las lágrimas, se iba bajo los manzanos del jardín y prorrumpía  en una guajira  azucarada, en cuyos  versos se nombraban   todos   los   frutos  y pájaros exóticos.</p>
 					<p>Don Arcadio acercábase despacito a la celosía del balcón. Después volvía resoplando nervioso, y cerca de la butaca de su esposa, se detenía, plegaba los brazos, balanceaba su cabecita calva, haciendo crujir el escabel con un taconazo de su zapatilla.</p>
@@ -472,7 +511,7 @@
 					<p>-Por lo pronto, han cerrado la tenería a pesar de su fama y de su origen casi histórico.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0052_chap7">
-					<head>- IV -</head>
+					<head xml:id="ne0052_head_008">- IV -</head>
 					<p>Juan Crisóstomo, Wolfango, Teófilo, Mozart, Pertl nació en Salzburgo el 27 de enero de 1736. Sus padres fueron famosos por su hermosura. Pero un biógrafo alemán dice que Wolfango no era de muy buen talle ni de facciones gratas.</p>
 					<p>-¡Eso no puede ser, don Lorenzo de mi vida! -protestó Carlota, descolgando la hoja de cobre donde estaba grabado el busto del maestro-. ¡A mí me parece muy lindo este hombre, diga lo que quiera ese señor alemán!</p>
 					<p>Don  Lorenzo  sonrió   con   dulzura,   y   también contempló embelesadamente la cabeza del genio.</p>
@@ -493,7 +532,7 @@
 					<p>Esto sucedió en la velada del domingo de Ramos.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0052_chap8">
-					<head>- V -</head>
+					<head xml:id="ne0052_head_009">- V -</head>
 					<p>Acabándose  la tarde del Martes Santo,  parió      costosamente la mujer de Agustín un hijo muy hermoso que plañía  tan recio que a todos maravillaba.</p>
 					<p>Don Arcadio y don Lorenzo se abrazaron junto a la vidriera de la alcoba.</p>
 					<p>-Yo le juro -exclamó conmovido el abuelo- que nunca, ni siquiera al nacerme el hijo, sentí la grande, la rara emoción de ahora. ¡Y debe de ser ese llanto, ese llanto tan poderoso, que me parece que lloren todos los míos...!</p>
@@ -533,7 +572,7 @@
 					<p>No, no era posible acristianar al nieto... Lo comprendió malhumoradamente don Arcadio. ¡Cuán indiscretas algunas mujeres para el parto!: ¡en Semana Santa,  y nevando! ¡No, no había ni que pensar por entonces en bautizo! ¡Qué diría Serosca, la antigua Serosca! -que de la otra no se le daba un ardite al hidalgo.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0052_chap9">
-					<head>- VI -</head>
+					<head xml:id="ne0052_head_010">- VI -</head>
 					<p>Ya estaba la rancia levita, de rico paño frisado, ahuecada en el respaldar de la butaca, exhalando la fragancia de la caoba del ropero. Después, don Arcadio sacó del escriño la hermosa botonadura de gemas, y cuando iba a enjoyar la bordada camisa, entró Agustín espantado, transido, con las manos rojas de sangre. Gritó su padre al verle. Acudieron todos a la alcoba de la puérpera. Vino el médico, y sólo pudo presenciar los últimos instantes de la cubana, que sonreía enajenada, mirando a su hijo, blanca, transparente, exhausta de la hemorragia torrencial.</p>
 					<p>-¡Qué  Jueves   Santo! -exclamó   don   Arcadio, contemplando el lecho empapado de la desbordada vida.</p>
 					<p>Volvió a su dormitorio; guardó las solemnes joyas familiares, y dijo que avisaran a don Lorenzo para que asistiera por él en la parroquia a la procesión del Monumento.</p>
@@ -565,7 +604,7 @@
 					<p>-¡Perdón, Serosca, si el comandante, ese comandante, ha llevado mi vara!</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0052_chap10">
-					<head>- VII -</head>
+					<head xml:id="ne0052_head_011">- VII -</head>
 					<p>Después   del   <seg rend="italic" type="foreign" xml:lang="la">Miserere</seg> diose   cuenta   don Lorenzo de que sus amigos, postrados por la repentina desventura, nada le dijeron del entierro. Y marchose diligentemente en busca de don Arcadio. Halló la casa silenciosa, apagada. Sólo de las habitaciones  del jardín salía la claridad de las luces de la muerta. Las criadas parecía que caminasen descalzas; respondían sigilosas y suspirando, y dentro,  en la holgura de la cocina, de tiempo   en tiempo,   sonaba   una  risa  reprimida,   una  palabra rota, bullicio de mozas y labradores que vinieron de las heredades para velar.</p>
 					<p>Don Arcadio estaba paseando por la fosca sala cuando llegó el músico. El estrado, la alfombra, todos los muebles, todo el recinto, olían a ropas, a mantillas guardadas, a gente. Hasta familias enteras de escaso trato con los Fernández-Pons, descansaron allí de la visita a los Sagrarios para saber y dolerse de la desgracia. Y casi nadie conociera a Carlota. Solo estuvo don Arcadio estrechando manos y repitiendo la súbita muerte. Doña Rosa cuidaba del huérfano. El viudo se asomaba a la alcoba, salía al huerto; desde un retorcido granado de las orillas de la alberca, miraba la ventana alumbrada; volvía junto a <seg rend="italic">ella</seg>; se iba; echado en el sofá comedor contaba los cuadros, los sillones, las copas rizadas, antiguas, que le miraban resplandeciendo desde las arcaicas alacenas de roble. Un crujido, una pisada hacíale acudir anhelante a la alcoba. Despabilaba los cirios  y raía las arandelas con las manos; los dedos le punzaban del latido de las quemaduras; se le pegaban;  y huía mordiendo una bola de cera...</p>
 					<p>Don Arcadio pidió una lámpara, y respiró, complacido de la presencia de don Lorenzo. ¡Oh, y qué harto de las gazmoñerías de las visitas y cuán cansado de su soledad! ¡Aquella soledad le sobrecogía como si paseara dentro de su sepulcro!</p>
@@ -620,7 +659,7 @@
 					<p>El huérfano lloraba.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0052_chap11">
-					<head>- VIII -</head>
+					<head xml:id="ne0052_head_012">- VIII -</head>
 					<p>Por mandato de Agustín quedó toda la alcoba como   la   dejara  la muerta:  los  colchones tendidos y  desnudos; las almohadas, con la huella de la cabecita; la roja cobertura de damasco desplegada y caída   a los pies del lecho. De un perchero  de  ciprés colgaba una camisa femenina, larga, amplia y cándida, como una casta túnica; y al tocarla   desprendía   un   leve   perfume   de   cuerpo dormido.  Bajo la butaca de seda pálida, se veían juntitas las perezosas chinelas. En el tocador brillaban,  traspasados  de sol, los pomos de esencias y copas de medicamentos; dos frascos angostos, con los cepillitos levemente sonrosados de elíxir, como si aún retuviesen   la  frescura  de la  boca;  la  jabonera   de plata, abierta, mostrándose la pella blanca y olorosa, adelgazada por los  brazos y  manos  de la amada. Hasta   la   luna   del   armario   moderno,    traído    de Barcelona,    parecía    que    esperase    la    descuidada imagen de <seg rend="italic">ella</seg>.</p>
 					<p>Agustín paseaba sombrío, hastiado, por el huerto verde,   rumoroso y  abundante  de  los   favores   del verano;  subía   a   su  cuarto, y miraba con   odio la vieja  ciudad   quemada de la lumbre  estival;  y  la maldecía  y   la   acusaba   de   seca,   de  no   <seg rend="italic">haberla</seg> querido y llorado. Carlota le sonreía desde el azul, resignada y buena, lo mismo que al arribar él de sus viajes, perdonándole sus ausencias y premiándole la felicidad de sus rápidos momentos de amor.</p>
 					<p>Don   Arcadio   le   llamaba   en   la   hora   de  las comidas.   Apenas  conversaban.   Le daban partidos los manjares; le escogían las frutas más sabrosas de los árboles de casa.  Le decían cuantas noticias de Serosca pudieran divertirle. Tornó  don Lorenzo  a contar sus aventuras de artista viajero.  Y Agustín permanecía frío y hosco.  Buscaba un retraído sillón de la sala donde su madre hacía labor con la cunita del huérfano delante de sus ojos.  Le seguían todos.</p>
@@ -643,9 +682,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Edad Media. Serosca la Nueva. Infancia de Agustín</head>
+				<head xml:id="ne0052_head_013">Edad Media. Serosca la Nueva. Infancia de Agustín</head>
 				<div n="12" type="chapter" xml:id="ne0052_chap12">
-					<head>- I -</head>
+					<head xml:id="ne0052_head_014">- I -</head>
 					<p>Oída   misa   de   ocho,   hacía   don  Arcadio   la compra, costumbre heredada  de  su padre, que fue tan entendido en eso de escoger y mercar   los   peces   más   delicados y la carne  más tierna, que parecía que sólo con el olor supiese el paraje  del  mar  de donde salió  un lenguado y la hora precisa de su muerte, o la pastura que mantuvo en vida a la res desollada. La uña y el vientre de vaca,   o  el  seso y la  criadilla de cordero, y otras delicadezas  y  enjundias,   tan raras  en las  mesas serosquenses,   porque   el terrible  fondista   de   «La Esperanza» las arrebataba para sus viajantes, casi todos  de  casas catalanas, nunca faltaban en la de aquel Fernández-Pons, sin costarle adehalas ni usar de arterías y adrollas como el huésped.</p>
 					<p>Muerto el padre, y casado don Arcadio, quedole como vinculado y honorífico el ministerio de viandista; y cuando la vieja ama de llaves recogía en su cesta lo que su señor pagó y apartó en puestos y garabitos,  y   después,   en   casa,  se  sabía  el  precio todo eran zumbas de las  mozas,  murmuraciones  de la dueña y lamentos de la señora.</p>
 					<p>Pero don Arcadio nunca se dejó persuadir de los avisos  y protestas de las mujeres. Un mandato íntimo le llevaba al mercado.</p>
@@ -693,7 +732,7 @@
 					<p>-¡Sin misa, sin misa mayor, y por culpa de un chicuelo de la raza nueva!</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0052_chap13">
-					<head>- II -</head>
+					<head xml:id="ne0052_head_015">- II -</head>
 					<p>Soleábanse los palomos espadañándose y pisando muy gentilmente por el arimez de la azotea. Los más audaces volaban hasta las gárgolas de Santa María; y desde allí se asomaban, volviendo la cabecita, con ligereza y donaire femeninos, a toda la ciudad apretada y umbrosa.</p>
 					<p>Don Arcadio no se cansaba de mirarlos. Su blancura dejaba un copo de alegría, de ternura y de gracia en las viejas piedras. ¡Eran verdaderamente palomos de la familia de Fernández-Pons! ¡Con qué elegancia y docilidad acudían apenas les señoleaba! ¡Con qué gravedad se renovaban en las celdas de sus hormillas!</p>
 					<p>Después de encerrarlos, vigilaba la firmeza y tupidez de los alambres de las portezuelas, porque perdiose el sosiego de los palomares desde que los hombres de la Marina se avezaron a soltar palomas a los halcones de Berna, la sierra más excelsa y fragosa.</p>
@@ -723,7 +762,7 @@
 					<p>Y  los tres hidalgos desaparecieron, porque eran el símbolo de la antigua raza sorprendido en el pecado de solazarse con la raza nueva.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0052_chap14">
-					<head>- III -</head>
+					<head xml:id="ne0052_head_016">- III -</head>
 					<p>Cuando alguna labriega o lugareña menesterosa entraba suspirando en la vasta cocina, las mozas o Camila, la vieja criada, mujer de toda la confianza y de todas las llaves, le preguntaba:</p>
 					<p>-¿Viene para hablar con la señora?</p>
 					<p>-¡Ay sí que quisiera! -y se subía las puntas del delantal a sus lagrimales rojos y húmedos.</p>
@@ -763,7 +802,7 @@
 					<p>-Oye ¿por qué llora la abuelita?</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0052_chap15">
-					<head>- IV -</head>
+					<head xml:id="ne0052_head_017">- IV -</head>
 					<p>La <seg rend="italic">Colombófilo</seg> era más rica, más nombrada y amena que el mismo Casino Viejo de Serosca. A buen seguro que nuestro parecer agraviaría a don Arcadio; pero nos tenemos nosotros por más amigos de la verdad que de Platón, como diría don César, si bien el docto profesor lo diría en latín.</p>
 					<p>Fundó <seg rend="italic">La Colombófila</seg> la gente nueva, la aborrecida de los claros caballeros del lugar, y, sin embargo, casi todos pertenecían a su gremio desde la tarde que gustaron del pasatiempo de aquella liza de gerifaltes  y palomas.</p>
 					<p>Era tan grato este solaz y tan gustosos los comentarios de sus lances que, aun a trueque de mezclarse con los advenedizos, solía don Arcadio ir algún rato a sus reuniones. Es cierto que siempre se rodeaba de los suyos.</p>
@@ -805,7 +844,7 @@
 					<p>-¡Claro que lo hubo! -y el sabio catedrático le sonrió indulgentemente-. Ese nombre de Murat trae  siempre a la memoria la fecha épica del 2 de mayo. Tengo un trabajo premiado donde estudio a Murat, príncipe y gran duque de Berg. Ominoso es su bando, por el que fueron arcabuceados hombres pacíficos que no cometieron más crimen que traer en sus bolsillos unas tijeritas de unas, un mondaorejas, un cortaplumas. ¡Bando draconiano, dice Lafuente,  y no le falta razón! Este Murat, fue nombre ladino y cruel. De músico, yo no sé; aunque es posible que también lo fuera, porque esos franceses son muy regalados. ¡Versalles! ¡Versalles perdurará en el espíritu de la Francia republicana, digan lo que quieran!...</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0052_chap16">
-					<head>- V -</head>
+					<head xml:id="ne0052_head_018">- V -</head>
 					<p>Cuando el caballero de Serosca -bien merece la antonomasia la acendrada fidelidad de don Arcadio- pasó a la sala de ajedrez y tresillo de <seg rend="italic">La Colombófila</seg>, dispuesto a quitar su nombre del índice plebeyo de los socios, llegaba también la gentil caravana cazadora de balcones, que fue recibida con gritos triunfales y estruendo de cucharillas  y tacos de billar.</p>
 					<p>Tenían los expedicionarios un talante guerrero y aun científico; parecían héroes, sabios, exploradores camaradas del capitán Cook; todos con polainas, botas como abarcas, tabardos de pana, cascos blancos argelinos, bastones ferrados. Daba gusto y miedo de verlos. Pues en el portal quedaron dos mulas sudadas  y rendidas bajo el peso de los costales de municiones  y de la mantenencia,  y de tiendas  y menaje de campaña.</p>
 					<p>Ya que les vieron  y palparon menudamente los que no salieron de la ciudad, y contemplaron a su sabor dos gavilanes traspasados por una lercha de enebro, sentados todos a la redonda del tesorero, pidiéronle que refiriese la cacería.</p>
@@ -843,9 +882,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Juventud de Agustín. Don Lorenzo</head>
+				<head xml:id="ne0052_head_019">Juventud de Agustín. Don Lorenzo</head>
 				<div n="17" type="chapter" xml:id="ne0052_chap17">
-					<head>- I -</head>
+					<head xml:id="ne0052_head_020">- I -</head>
 					<p>Graduose Agustín de bachiller en el Instituto antiguo de Alicante una mañana de septiembre, tan clara, que se transparentaba todo hasta muy lejos.</p>
 					<p>En seguida que tuvo el documento de su suficiencia sintió bullirle el ansia de decírselo a otro, que no fuera el profesor lugareño que vino acompañándole, el cual ya lo sabía, y como un penitenciario le brumó de máximas y avisos:</p>
 					<p>-Advierte lo que ya eres; y piensa en lo que has de ser. Mira que ya se te presenta el día de mañana con todos sus peligros. Ahora empiezas a sufrir; ya se acabaron para ti los holgorios de los chicos. Como hombre has de comportarte. ¡Cuánto has de llorar después si ahora yerras el camino!...</p>
@@ -867,7 +906,7 @@
 					<p>...Y el nieto, con la mirada esparcida en el mar, sonreía, porque él tuteaba a sus abuelos, no comprendiendo que se hablase de usted más que a don César, al señor Llanos y al preceptor.</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0052_chap18">
-					<head>- II -</head>
+					<head xml:id="ne0052_head_021">- II -</head>
 					<p>¡Hoy es en verdad un día histórico para esta familia! -repetía don  César sin  que nadie le hiciera caso, afanosos todos por agasajar al viajero.</p>
 					<p>-¡Si tu padre te viese! -le decía llorando la abuela.</p>
 					<p>Y don Lorenzo nombró a la madre. Las miradas buscaron las vidrieras del dormitorio solitario. Parecía surgir la pálida figura de la cubana, acostada en el enorme lecho de columnas vestido de damasco rojo, que siempre evocaba una agonía llena de sangre. Aquel recinto había  perdido toda la blancura,  el tibio perfume de intimidad de la muerta. Se habían renovado las ropas, los muebles. Era ya uno de esos aposentos que nadie pisa, que siempre está umbroso; algunas noches se ve pasar como una sombra muy leve, muy blanda; parece que alguien haya suspirado; y la cama roja, trágica y sagrada como una tumba, hacía  volver  los  ojos  por  un brillo húmedo   que sacaba de la seda una onda de luna, fría y pálida como las manos de Carlota la noche de luna de un Jueves Santo...</p>
@@ -898,7 +937,7 @@
 					<p>Y no lo dijo; pero vio una cabeza pálida y rubia como la suya reflejada en un espejo que todo lo envejeciese; y la cabeza salía del mar para contemplarle y tornaba a hundirse y aparecía más lejos, siempre mirándole desde las aguas llenas de sol...</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0052_chap19">
-					<head>- III -</head>
+					<head xml:id="ne0052_head_022">- III -</head>
 					<p>El músico, don Arcadio y Agustín salieron por los campos que estaban vestidos de la delicada niebla de las flores de almendro.</p>
 					<p>Agustín le había cogido el bastón a su abuelo, y con el cuento rompía los cachos de las almantas, que, al quebrarse, mostraban entre su miga, húmeda y fresca, las tiernas simientes recién abiertas a la vida.</p>
 					<p>-¡Me angustio cuando veo el almendral en flor! -decía el caballero de Serosca-. Yo no sé para qué esa prisa, esa impaciencia de rebrotar, si después viene el tramontana, el gigante de los vientos de estos parajes, o una escarcha de las nuestras, y los abrasa y trae la perdición de todos. ¿A ustedes, no les da lástima?</p>
@@ -923,7 +962,7 @@
 					<p>Y miró al árbol, allí donde se mostraba la venturosa herida del injerto.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0052_chap20">
-					<head>- IV -</head>
+					<head xml:id="ne0052_head_023">- IV -</head>
 					<p>Servidos los postres -los predilectos eran nueces y almendras bañadas de miel de los panales de la heredad-, ocurriósele al hidalgo de Serosca preguntar por don Lorenzo, que no acudía a las tertulias familiares. Y contó gravemente con los dedos los días que pasaran sin verse.</p>
 					<p>-¡La única ausencia en diez y ocho años lo menos!</p>
 					<p>-¡En veintidós! -enmendole suavemente la esposa.</p>
@@ -1027,9 +1066,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Tiempos modernos. Agustín el inventor</head>
+				<head xml:id="ne0052_head_024">Tiempos modernos. Agustín el inventor</head>
 				<div n="21" type="chapter" xml:id="ne0052_chap21">
-					<head>- I -</head>
+					<head xml:id="ne0052_head_025">- I -</head>
 					<p>¡Si te viera don Lorenzo! -dijo la señora contemplando, llorosa y palpitante de alegría, a su nieto, ya hombre fuerte y hermoso, con los rubios cabellos encrespados y quizá demasiado largos.</p>
 					<p>Se lo notó en seguida el abuelo.</p>
 					<p>-Te sobran de tres a cuatro dedos... Al pobre amigo le hubiese agradado esa abundancia; pero estas gentes se reirán de ti, no las nuestras, sino las otras; y las nuestras también.</p>
@@ -1048,7 +1087,7 @@
 					<p>Y Agustín prosiguió calculando el orden de sus talleres y de su estudio de inventor.</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0052_chap22">
-					<head>- II -</head>
+					<head xml:id="ne0052_head_026">- II -</head>
 					<p>La <seg rend="italic">Colombófila</seg> se había trocado en Casino republicano. Las paredes estaban adornadas  de rozagantes lazos de los colores nacionales, entreverados con los de la bandera de la República. Entre los tulipanes del gas, aparecían los retratos de Thiers, Mac-Mahon, Ruiz Zorrilla, Figueras, y de todos los presidentes de la junta del Casino. Encima del aguamanil del billar, y guardado por un hermoso vidrio, había un cromo grande, rojo y alegórico, de la figura de la matrona o Minerva republicana con un capacete encendido en vez del casco olímpico, rodeada de una muchedumbre que trae divisas y letreros llenos de consoladoras promesas.</p>
 					<p>Nadie se acordaba ya de los gerifaltes y palomas; los designios políticos y una onda, un fervor oratorio hinchaba los corazones de los socios. Eran comunicativos, socarrones y fantásticos; murmuraban buenamente de todo. No sucedía lance ni aventura de barraganía que no se supiese y celebrase; y, en punto a fisgas y holgorios, nunca se saciaban ni bailaban círculo que pudiera imitarles. El secretario entró una noche montado en su yegua pía para leer el acta de una junta general.</p>
 					<p>Don Arcadio, el catedrático, el señor Llanos, las familias graves y recogidas de Serosca tenían siempre una frase de desprecio y condenación para esa casa de escándalo. Desde luego, el noble hidalgo ya no era socio.</p>
@@ -1072,7 +1111,7 @@
 					<p>-La raza  es una cosa, amigo mío, y el hogar otra; y sin éste, sin la familia, no puede producirse aquélla.  ¡Ni quién  soy yo para sacrificar a nadie! ¡La familia! ¡Si usted supiera cuántas dolorosas abdicaciones nos presenta la Historia! Todavía  está muy apartado el ideal del individuo del ideal histórico. Entre el sacrificio de la familia y el mío, prefiero austeramente el mío; yo me entrego, me sacrifico yo, que además estoy jubilado desde el 20  de febrero. ¡Una iniquidad española! Y si no, fíjense en Ortells, el de Matemáticas, que sigue en su cátedra, y hace pocas noches lo recogieron de la calle, en calzoncillos, maquinando sobre los lados de no sé qué triángulo...</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0052_chap23">
-					<head>- III -</head>
+					<head xml:id="ne0052_head_027">- III -</head>
 					<p>Desde Mengs escribió el ingeniero belga al de Serosca, aviniéndose a comprarle el privilegio de la «Encajera Fernández-Enríquez». Es verdad que la oferta traía toda la bellaquería y astucia del mercader ruin, pero el alborozo y la confianza que sintió el inventor viéndose solicitado de gentes extrañas, le arrebataba a la eminencia y pureza de la vida, velando los bajos caminos del logro ajeno.</p>
 					<p>En cambio, cuando don Arcadio oyó traducida la carta, no pudo contener su cólera; maldijo al extranjero, y tanto oro dijo de pedir, que toda la sala parecía resplandecer maravillosamente.</p>
 					<p>Aquietábale el nieto contando las tribulaciones y angosturas de esclarecidos mecánicos, como Arkwright, Peel, Heathcoat.</p>
@@ -1108,7 +1147,7 @@
 					<p>Agustín la contemplaba rendidamente. Ella dejó su mirada dentro de la suya; se sonrieron señoreados de  una  íntima,  de  una   inefable   complacencia, sintiéndose vestidos de luz y de gracia, sin cuidados ni memoria de nada; miraban el sueño de la alberca y sólo vieron sus cuerpos felices y juntos; miraban los árboles y una pomposa nube que viajaba en el azul del día, y ellos  imaginaban  que  todo había sido hecho para cobijarlos en su dicha. Y, durante un  momento,  quedáronse bajo  una   obscuridad placentera;  una  obscuridad  aterciopelada,   dorada; obscuridad de ojos entornados por el beso, un beso muy lento; y al abrirlos y ver, bailaron sus figuras en la paz de las aguas, tan enlazadas como los ramos del granado. Y no vieron el abandono y naufragio de las dos ruedas de la máquina sublime, rodeadas de un mundo de pasmadas criaturas de la balsa; no lo vieron porque habían sido poseídos de la verdad y del impulso perdurables de la máquina excelsa del amor,  que todo lo  ata y mueve con sus cuerdas sutiles que nunca han de quebrarse...</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0052_chap24">
-					<head>- IV -</head>
+					<head xml:id="ne0052_head_028">- IV -</head>
 					<p>Se   buscan   los  que   se   aman   y   se   desean;   se miran   en   los   ojos;   se   contemplan   todo   el cuerpo y parece que le expriman  la  delicia con la voracísima  mirada; se solicitan el tibio aire de sus bocas, como si sólo él pudiera traerles el de la vida;  piensan   que   besándose   probarán   todos   los sabores de amor, si por su desventura tienen vedado el poseerse;  pero  la  llama   que   gustosamente   les quema, salta de los labios a los brazos y a toda la carne; y ya  no  hay  reposo  en  sus   vidas.   No  lo tuvieron Loreto y Agustín después que se besaron. Ella recordaba sus imágenes, abrazadas en el espejo de la alberca, y le ardían las mejillas de rubor como si se hubiese visto desnuda.</p>
 					<p>Se afanaban hasta dolorosamente por hallarse y mirarse; y se veían, y no se curaban de la ansiedad.</p>
 					<p>Sorprendió don Arcadio la ruina del invento una tarde de riego de un tablar de panizo. Lastimado y abatido, subió al estudio para saber la razón del abandono de la máquina.</p>
@@ -1137,7 +1176,7 @@
 					<p>-¡Si te oyese don Lorenzo! -Y la señora sonrió  y besó los cabellos de Agustín-. ¡Dios mío, sería pecado sentirse un instante dichosa!</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0052_chap25">
-					<head>- V -</head>
+					<head xml:id="ne0052_head_029">- V -</head>
 					<p>Miraba el ingeniero sus olvidados trozos de máquinas, que parecían hundidos en una lejanía polvorienta. ¡Qué pesadumbre, qué rigidez de muertas cosas tenía lo que meses antes iba tomando la forma dócil, cálida y viva de su pensamiento! Todo lo tocaba con una fiebre de deseo, de las asperezas y herrumbes de los armazones y círculos dentados, inquietadores como ingenios de suplicio.</p>
 					<p>Pero cuando sus manos, sus ojos y su recuerdo llegaban a un punto que habían recibido la gracia del esfuerzo, de la colaboración de la amada, entonces tornábase la rudeza de la madera y del acero en algo leve, generoso, fácil y vestido de la luz de la idea madre.</p>
 					<p>Tanto ahínco, tanto poderío había en su mirada, que ya lo veía articularse, moverse, tronándole dentro de su vida. Sentíase poseído de un impulso de acción, de una voluntad infinita; pero al decidir aplicarla determinadamente y fijarla para cada propósito, le atormentaba el dolor de la amputación de su quimera.</p>
@@ -1168,7 +1207,7 @@
 					<p>Los recogió, después, a la inmaculada blancura de los manteles; bajó su frente, y sirviose de una opulenta col, lardeada con tropezones de tocino rancio, que exhalaba un vaho humilde y generoso.</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0052_chap26">
-					<head>- VI -</head>
+					<head xml:id="ne0052_head_030">- VI -</head>
 					<p>Aquella misma tarde salieron el abuelo y el nieto camino de El Almendral, la postrera  hacienda de su mayorazgo, y empeñada, por añadidura.</p>
 					<p>No había en toda la comarca de Serosca árboles mejor criados y que llevasen más esquilmo; árboles grandes, hermanados, nacidos en una hoya de tierra delgada y de dulce tempero; pero esos mismos favores hinchaban las gemas que se abrían tempranamente, y luego se veían desvalidas, desnudas, bajo los fríos y rosadas.</p>
 					<p>Don Arcadio y Agustín se internaron por las almantas de la hermosa arboleda.</p>
@@ -1191,7 +1230,7 @@
 					<p>Y, transportado del regocijo de la simple maravilla, amparose don Arcadio en el pecho del nieto y lo besó llorando.</p>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0052_chap27">
-					<head>- VII -</head>
+					<head xml:id="ne0052_head_031">- VII -</head>
 					<p>Cuando el señor Llanos acabó de referir las amarguras de don Arcadio, y dijo cómo mediara él para consolarle, entonó la familia de don César un cántico de elogios.</p>
 					<p>La esposa y las hijas doncellonas del historiador, que estrenaban vestidos primaverales, comprados en Valencia por la hija, la casada, rodearon mimosamente a la mujer del fabricante, y le dijeron:</p>
 					<p>-¡Nada, nada; es preciso que nos lleven a la nueva heredad! Dicen que es de lo que no hay; que la casa, los graneros, el lagar, las caballerizas, todo es de finca de señores nobles. ¡Las lágrimas que habrá costado esa pérdida a la pobre de doña Rosa!</p>
@@ -1229,7 +1268,7 @@
 					<p>-<seg rend="italic" type="foreign" xml:lang="la">¡Delenda est domus amici Arcadii o Arcadi!</seg>... Arcadi, con una i...</p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0052_chap28">
-					<head>- VIII -</head>
+					<head xml:id="ne0052_head_032">- VIII -</head>
 					<p>En la umbría del viejo granado, donde Agustín besó a Loreto, como si fuese su velada, allí  también la besó con la amargura de la despedida. Allí le dijo sus ambiciones para bien de todos. Le juraba que había de volver poderoso.</p>
 					<p>Su quietud era ya ruindad. Los abuelos morirían de pena si él no les alzaba del abatimiento de su pobreza. Vendría pronto, porque el ansia de hacerla dichosa le prendía alas de águila en su vida.</p>
 					<p>Para el pueblo ya sólo era el ingeniero regalado, el inventor de burlas que precipitaba con delirios la perdición de su casa. Y él sentía dentro de su sangre una levadura de quimeras, y el reposo, la fría serenidad del calculador. Su renacimiento y su triunfo en España serían demasiado lentos. Cuanto más se alejara, más merecería, que todo trabajo y sacrificio piden, atraen la recompensa. Sabía de oídas o por lecturas, de cuyo origen no se acordaba, que Bolívar, el Liberador, dijo: «Llamemos a las gentes europeas que nos traigan sus artes, sus ciencias. Nos faltan mecánicos y agricultores». Pues él, acabó sonriéndose lo mismo que hubiera sonreído don Lorenzo, él como geórgico, como agricultor, no buscaba acogida en la apartada América, pero veía resplandecer  y trepidar aquellos pueblos con la llama y el fragor de sus invenciones.</p>
@@ -1260,12 +1299,12 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>El abuelo del rey</head>
+				<head xml:id="ne0052_head_033">El abuelo del rey</head>
 				<div n="29" type="chapter" xml:id="ne0052_chap29">
-					<head>- I -</head>
+					<head xml:id="ne0052_head_034">- I -</head>
 					<p>De un señor de la Marina al yerno de don César.</p>
 					<div type="section">
-						<head>2 de octubre...</head>
+						<head xml:id="ne0052_head_035">2 de octubre...</head>
 						<p>«Escribí a mi sobrino de Montevideo haciendo la recomendación de ese señor Fernández,  de Serosca; y puse en mi carta más interés del que vi en la tuya; es verdad que tú recomendabas tan sólo a un paisano... y para mí era un desconocido que me pareció hasta pintoresco.</p>
 						<p>Bueno; ese señor Fernández no llegó en el barco que tú me anunciabas; y dice mi sobrino que si algún día llega, aunque lo duda siendo de Serosca, y se le disipan esos humos de inventor, acaso le busque sitio acomodado en sus peleterías.</p>
 						<p>Mi sobrino se da a los diablos por tu flojedad. Me jura que no mediando yo, ni hablaría del asunto de vuestro ingeniero. Motivo le sobra para su enojo, pues el negocio o empresa que te propuso debiste siquiera agradecérselo.  Dice que ahí en Serosca te pudrirás como  buen español hasta que tengas  que curtir tu  piel  y la  de  tus  hijos,   si   el   Señor te los concede, porque llegará  día  que  no  quede  ni   una cabra   ni   un   carnero,   los   cuales   han   de   preferir morirse hartos de pasturar las basuras de los muladares. Tú te ríes de estos augurios, y yo también. Aquí no habrá prados o dehesas tan ricos y grandes como en otros países, pero es donde más abunda o más fácilmente se mantiene el ganado.</p>
@@ -1273,12 +1312,12 @@
 						<p>(Suprimimos por innecesarias las consideraciones  y alabanzas que de la leche hace el señor de la Marina).</p>
 					</div>
 					<div type="section">
-						<head>25 de noviembre...</head>
+						<head xml:id="ne0052_head_036">25 de noviembre...</head>
 						<p>«El muy americano de mi sobrino ha comprado no sé cuántas leguas de pradería en la Patagonia para ensanchar sus negocios, que comienzan a florecer. Me escribe que está contentísimo no sólo por su prosperidad, sino porque imagina el coraje que ha de roerte  cuando  tú  lo  sepas. Como ves, las alegrías americanas se parecen a las nuestras.</p>
 						<p>En mi próxima te contaré algunos lances curiosos del arribo de vuestro paisano a Montevideo, que al cabo llegó, y del cual asegura mi sobrino que se morirá de hambre o será un hombre extraordinario».</p>
 					</div>
 					<div type="section">
-						<head>31 de diciembre...</head>
+						<head xml:id="ne0052_head_037">31 de diciembre...</head>
 						<p>«¿Ahora sale tu suegro con sus reparos históricos a que hay más ganado cabrío en España que en otros países? Yo no lo afirmé dogmáticamente; no hice estadística. Ese análisis que hace de los pastos será muy científico, pero ya te dije que nuestras cabras comen con resignación todo cuanto nuestra tierra les depara; quizá comen sólo tierra, y les parece hierba cencida.</p>
 						<p>Lo del señor Fernández resulta algo épico. ¡Ah, y antes de que se me olvide, quiero que me facilites noticias de ese hombre que todos mis amigos encuentran de una  agradable rareza!</p>
 						<p>Durante el camino, cuentan que tuvo rasgos que interesaron a todo el pasaje; hasta monseñor Rojas, obispo de Tucumán, un anciano rollizo y bondadoso, que fuera de su ministerio sólo le preocupan las etimologías, abandonó su mesa privilegiada y una raíz hebrea, y asomose a la cámara de segunda por escuchar a vuestro serosquense.</p>
@@ -1293,14 +1332,14 @@
 						<p>¿Qué os parece? ¿Y ese joven es un soñador apocado? Yo más le tengo por un aventurero impetuoso, y no me explico cómo no triunfó en España».</p>
 					</div>
 					<div type="section">
-						<head>11 de marzo...</head>
+						<head xml:id="ne0052_head_038">11 de marzo...</head>
 						<p>«...Apenas se sabe ya de él. Mi sobrino no pudo tenerlo en su casa. "Sabía tanto -dice- que perdíamos el tiempo y la plata siguiendo sus cálculos y su humor; y si le contrariábamos se ponía loco". Después pasó a la Argentina, ingresando en la poderosa granja de <seg rend="italic">Vockel y Compañía</seg>, de la que saliose muy pronto. Sospechan que se ha internado en Chile, seguido de unos indios.</p>
 						<p>Ya puede citarme tu suegro toda la historia y hasta las actas del Concejo de Mesta. No sabía yo que el nombre de España significase abundancia de conejos.  Y no se opone a lo que yo digo. Nada como España   para   la   cría  y   granjería   de los  ganados. La leche es, sin duda, uno de los negocios mejores de nuestra patria; la leche de cabra, y hasta  la  de vaca,   aunque   te  asombre. He  decidido  probar. No   necesito   de  prados.  Nutriré  mis ganados  con pienso; y el pienso lo compraré en la Argelia,  que allí resulta más bajo de precio por la misma razón que les resulta a los ingleses más barata la almendra de nuestros campos que a nosotros. Es decir, no veo la razón. Yo creo haber acertado y reunido todos los pormenores de este asunto, que no consiste sólo en la leche, sino que principalmente   depende   de  las lecherías. Hay que ofrecer la leche sobre un fondo de blancura que recuerde la suya, y servirla siempre embotellada</p>
 						<p>Yo he comenzado por siete vacas y diez y seis cabras...».</p>
 						<p>(Sigue hablando de la leche).</p>
 					</div>
 					<div type="section">
-						<head>20 de junio...</head>
+						<head xml:id="ne0052_head_039">20 de junio...</head>
 						<p>(Comienza tratando de lo mismo).</p>
 						<p>Después dice de Agustín:</p>
 						<p>«He aquí lo último que he podido averiguar del señor Fernández: En la granja de <seg rend="italic">Vockel y Compañía</seg> trabajaban seis onas, que un gerente de la Casa en Punta Arenas quiso traer a las excelencias de la civilización. Para estos humildes fueron las mejores palabras, la solicitud, la ternera del señor Fernández, que les desmenuzaba con paciencia de misionero las explicaciones de las cosas. Los indios, que antes se arrastraban bajo los ojos y la voz de <seg rend="italic">Vockel y Compañía</seg>, empezaron a tener el sentimiento de su voluntad, de sus preferencias, porque notose que prescindían de la "razón social" y sólo buscaban el someterse al señor Fernández. Le oían como si fuese un mago, y mirándole se les mojaban los ojos, sobrecogidos de un gustoso pasmo. El señor Fernández les hablaba con dulzura que ellos nunca habían catado.</p>
@@ -1315,10 +1354,10 @@
 					</div>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0052_chap30">
-					<head>- II -</head>
+					<head xml:id="ne0052_head_040">- II -</head>
 					<p>Los cinco fragmentos epistolares de los que antes se da casi un puntual traslado, corresponden a otros cinco movimientos del espíritu de Serosca, y son como un vivo glosario de las cartas del levantino, y un claro espejo de los serosquenses.</p>
 					<div type="section">
-						<head>2 de octubre...</head>
+						<head xml:id="ne0052_head_041">2 de octubre...</head>
 						<p>Lo que en la carta de este día se refiere despierta y trae en volandas la memoria de Agustín, que ya se esfumaba en la noble ciudad. Y todos murmuran:</p>
 						<p>¿De modo que Agustín, el <seg rend="italic">señor Fernández</seg>, no había llegado de América? ¡Pero si hubo tiempo hasta para haber naufragado!... ¡Ése ni se embarcó ni ya se embarca! ¡No es el padre!</p>
 						<p>La risa de la burla pasa heladamente por las calles arcaicas y modernas de Serosca.</p>
@@ -1331,7 +1370,7 @@
 						<p>Serosca había sido burlada; y acaso se regocijó en su engaño...</p>
 					</div>
 					<div type="section">
-						<head>26 de noviembre...</head>
+						<head xml:id="ne0052_head_042">26 de noviembre...</head>
 						<p>Dos días después de esta fecha toda la ciudad prorrumpe:</p>
 						<p>-¡Sí que se fue y llegó! ¡Y ahora que manifestase su fuste y enjundia porque, para hacer lo mismo que hizo aquí, bien pudo quedarse quieto aunque le hubiesen caído encima los viejos artesones de su casa!</p>
 						<p>Algunos afirmaron que Agustín no se volvería sin tasajo.</p>
@@ -1341,7 +1380,7 @@
 						<p>Nótase  en  Serosca  el   aumento   del   pastoreo. Muchas calles huelen a majada.</p>
 					</div>
 					<div type="section">
-						<head>31 de diciembre...</head>
+						<head xml:id="ne0052_head_043">31 de diciembre...</head>
 						<p>Por la noche y todo el día siguiente de cabo de año, el Casino viejo y el Círculo, las tiendas, los portales, todo Serosca pronuncia el panegírico de las proezas de su paisano.</p>
 						<p>Principalmente en el Círculo, donde el yerno del sabio historiador ha leído, declamándola, la carta del amigo de la Marina, en el Círculo, los fervorosos comentaristas traman sin advertirlo un segundo relato del arribo de Agustín a Montevideo.</p>
 						<p>Parece que el héroe llegó a disparar la pistola; que él solo guió el barco casi hundido en las negras aguas, después de atar en la chimenea al patrón y maquinista.</p>
@@ -1352,7 +1391,7 @@
 						<p>Don Arcadio la agradeció tiernamente.</p>
 					</div>
 					<div type="section">
-						<head>11 de marzo...</head>
+						<head xml:id="ne0052_head_044">11 de marzo...</head>
 						<p>La ciudad duda. La ciudad desconfía y espera. Pasa un temblor de sonrisa y anhelo haciendo ondular las almas como el aire sobre la mies.</p>
 						<p>Agustín queda lacio, obscuro, desceñido de todos los atributos y galas del héroe. Puede abatirse al suelo ruin de una vencida criatura.</p>
 						<p>Pero pronto se oculta bajo las nieblas del misterio.</p>
@@ -1366,7 +1405,7 @@
 						<p>Tiene en El Almendral cuatro vacas y veinte cabras.</p>
 					</div>
 					<div type="section">
-						<head>20 de junio...</head>
+						<head xml:id="ne0052_head_045">20 de junio...</head>
 						<p>Apenas el yerno de don César lee la carta de este día, busca atropelladamente a su mujer. La leen juntos; entran al despacho del historiador, que les recibe con el volumen III del <seg rend="italic">Viaje de Anacharsis</seg>.</p>
 						<p>-¿Qué tenéis? -les pide asustado el padre.</p>
 						<p>-¡Agustín, el nieto de don Arcadio, es rey!</p>
@@ -1396,7 +1435,7 @@
 					</div>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0052_chap31">
-					<head>- III -</head>
+					<head xml:id="ne0052_head_046">- III -</head>
 					<p>Murió la  pálida doña Rosa antes  de la exaltación de  su nieto. Tuvo una muerte bienaventurada, sin agonía; expiró mirando el grabado de Mozart.</p>
 					<p>Desde su viudez fue secándose la vida del hidalgo. Apenas salía de su dormitorio. Allí le servía filialmente Loreto, blanca, lisa, dolorida de pensar.</p>
 					<p>Por las tardes rodeaban a don Arcadio los amigos, amigos nuevos y amigos del pasado, que a todos acogía con la misma sonrisa paternal y triste, que parecía descender de un trono.</p>
@@ -1459,7 +1498,7 @@
 				</div>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0052_chap32">
-				<head>Serosca contemporánea</head>
+				<head xml:id="ne0052_head_047">Serosca contemporánea</head>
 				<p>No es posible negar los progresos urbanos de Serosca.</p>
 				<p>En 1898 se derriban los trozos de murallas que aún ceñían los arrabales del Norte. Las calles de la Santa Faz, de Atalajes, del Tinte, de la Lonja y de la Costanilla de la Cochura, desbordan sus edificios recientes en el frescor de las primeras huertas expropiadas.</p>
 				<p>En 1901 queda aprobado un definitivo plan de ensanche.</p>

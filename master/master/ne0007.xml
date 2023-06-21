@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La mujer de todo el mundo</title>
-				<title type="sub"></title>
+				
 				<title type="short">MujerMundo</title>
-				<title type="idno">
-					<idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1137561</idno>
-					<idno type="viaf">59126336</idno>
-					<name type="short">Sawa</name>
-					<name type="full">Alejandro Sawa</name>
+					<name type="short" ref="#Sawa"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">727</measure>
@@ -139,13 +131,39 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0007</idno>
+						<idno type="cligs">ne0007</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcdr2q8 "/>, <ref target="http://www.cervantesvirtual.com/obra/la-mujer-de-todo-el-mundo--0/"/>.</bibl>
-				<bibl type="print-source">Edición facsímil, Biblioteca de la Universidad de Alicante, <date when="1988">1988</date></bibl>
-				<bibl type="edition-first"><date when="1885">1885</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La mujer de todo el mundo</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Sawa">
+						<name type="full"><forename>Alejandro</forename> <surname>Sawa</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9830 - IO 9831">IO 9830 - IO 9831</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118874071">118874071</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q2087482/">Q2087482</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1137561.html">XX1137561</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/59126336/">59126336</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcdr2q8 "/>, <ref target="http://www.cervantesvirtual.com/obra/la-mujer-de-todo-el-mundo--0/"/>.</bibl>
+					<bibl type="print-source">Edición facsímil, Biblioteca de la Universidad de <pubPlace>Alicante</pubPlace>, <date when="1988">1988</date></bibl>
+					<bibl type="edition-first"><date when="1885">1885</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de todo el mundo</title> <date when="1901">1901</date>, <publisher>Tip. Lit. de Pertierra, Bartolí y Ureña</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="464968178" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464968178"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de todo el mundo</title> <date when="1988">1988</date>, <publisher>Moreno-Avila</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="042206537" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=042206537"/> 		<idno type="isbn" n="8486943019"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -158,6 +176,14 @@
 				<p>En una reunión de alta sociedad Luis, amigo de Eudoro, humilla a la condesa descubriendo toda la relación y lo ocurrido. Poco después la condesa enferma y en n ataque nervioso decide quemar ciertos documentos. Ocurre un incendio en la casa y la condesa y la criada Emilia mueren carbonizadas.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9830" key="IO 9830" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL9">6</term>
 					<term type="author.continent">Europe</term>
@@ -170,7 +196,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">1-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age" cert="medium">mature</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -190,7 +216,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">erotic</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela naturalista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela naturalista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
@@ -220,6 +246,7 @@
 		<revisionDesc>
 			<change when="2015-10-21" who="#jct">Initial TEI version.</change>
 			<change when="2016-03-23" who="#jct">Text and metadata corrected after reading it as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,7 +254,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0007_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0007_head_000">- I -</head>
 				<p>Palacios buenos los habría en Z, Z, la capital de un territorio de cerca de veinte millones de habitantes, tostado por el sol y por la cólera de los dioses; pero como el de la condesa del Zarzal muy pocos o ninguno. ¡Aquello sí que era lujo! No parecía sino que no cabiendo materialmente en las amplias habitaciones del hotel, se desparramaba, se vaciaba por todos los boquetes de aquella casa desde las bocas de las chimeneas hasta los barrotes recamados de las ventanas de la planta baja. A veinte pasos de distancia del edificio ya se percibían los tibios y aduladores perfumes del jardín, que por lo penetrantes y lo activos en su misión de hacer simpático el sentido localizado en la nariz, simulaban así como heraldos mensajeros de una corte de amor o como la promesa vaga de un mundo más perfecto; y cuando el transeúnte, haciendo caso de aquellas inspiraciones de olor que enardecían su olfato seguía adelante hasta pararse en la verja dorada de aquel parque del paraíso, ¡oh! entonces, burgués o demagogo, linfático o nervioso, con el cerebro chato o esférico, como quiera que fuera, sentía subir desde el estómago al cerebro la oleada biliosa del socialismo, y pensaba indistintamente, como piensan los que están durmiendo, en que Dios no es justo, no, en que Dios no es justo, fundando toda la mecánica social del Universo, en la ley absurda de la desnivelación y el desequilibrio.</p>
 				<p>¿Quién puede, después de eso, mirar con gusto los costurones hechos a sangre fría por la miseria en las paredes del tabuco donde se funde y se confunde la mayoría humana? ¿Ni saludar con aspiraciones voluptuosas las flores puestas a cobrar su parte de oxígeno en el balcón que da a la calle, o en la ventana que da al patio, o en el agujero negro que da al tejado, según la gradación de miseria de cada uno? ¡Ay nadie! Y por eso, y si los opulentos tuvieran plena conciencia de sus intereses, deberían ocultar los soberbios resplandores de su lujo como una gran vergüenza o como una infamia irredimible.</p>
 				<p>Y sin embargo, desgracia propia de todos los edificios modernos; aquel palacio distaba mucho de ser un prodigio de arquitectura. Prodigio de gracia, sí; de esbeltez, también; de inspiración, de grandeza, seguramente no; porque ni el color rosado de su fachada, ni las mezquinas aspiraciones de su techumbre, ni la magnitud y forma de la puerta principal, mucho menos de las accesorias, llevaban a la mente, haciéndola circular con la sangre, ninguna de esas ideas de grandeza que los edificios antiguos hacían hervir hasta en las inteligencias más indiferentes. Bonito como un parque inglés, como una cascada artificial, como un <seg rend="italic">bibelot </seg>de París, como un capricho de tocador en barro cocido de esos que los artistas florentinos reparten por el mundo para satisfacer caprichos de enamoradas y neurálgicas, como un traje de fantasía hecho de encargo por un modisto parisién; pero liada más que eso. Un argumento en piedra contra la seriedad de aspiraciones de nuestra época.</p>
@@ -245,7 +272,7 @@
 				<p>-¡No hablemos más del asunto! Ea, se acabo. Se hará lo que tú quieras, pero ya verás cómo... ¿pero qué demonio de hora será que ya vuelve la señora del teatro? Adiós, gatita, vida mía -dijo tratando de contener el ímpetu de la gatita que se había lanzado fuera de la habitación al percibir el olor a carne de la señora... Y no bien quedó solo, dando paseos con la cabeza baja, por la habitación que parecía vacía desde que la dejó Emilia que la llenaba toda con su picante gracia de mujer bonita, grave e irreprochable, pulcramente afeitado, con la raya del pelo junto a la sien izquierda y las huellas de las tenacillas de rizar profusamente repartidas por toda la cabeza, vestido correctamente de negro, decía, como un cura sombrío entonando el <seg rend="italic">Te Deum </seg>de todas sus esperanzas-: ¡qué profeta aquel más a la moderna! «¡esto se va, esto se va!»</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0007_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0007_head_001">- II -</head>
 				<p>La condesa del Zarzal había pasado muy mala noche y dado orden a su doncella de que no la despertara hasta la una de la tarde, y que a esa hora la subieran el almuerzo a sus habitaciones. No quería ver a nadie.</p>
 				<p>¡Qué modo de revolverse en el lecho, Dios mío! Solo en los hospitales se ven de vez en cuando enfermos heridos por la muerte en el estómago que se revuelquen por sus camas con la rabia que lo estuvo haciendo toda la noche la señora condesa del Zarzal. Lanzaba sollozos, rechinaba los dientes, y cuando a la mañana tocó el timbre para dar la orden de que no se la despertara hasta la una, tenía los labios lívidos, la tez, histriada de colores distintos, los ojos inyectados, no ya de sangre, sino de humores, probablemente de bilis, y la voz ronca y fatigada como de haber estado chillando veinte años seguidos. Todo su cuerpo revelaba un gran combate sostenido con el pensamiento, enemigo poderoso por lo mismo que es impalpable, y de aquel combate había salido rendida. No tenía necesidad de decirlo: hasta en la forma de estar echada sobre el lecho se veía el desplome. Había algo en aquella espléndida naturaleza de mujer hermosa, que había venido abajo, a tierra, sin estrépito, pero con cataclismo: uno de los sillares que sustentaban su vida que había rodado, falto de equilibrio, por el angustioso declive de un destino triste que comenzaba a iniciarse: y por más que hacía la favorita de la suerte por contener la carrera loca de aquel elemento de vida que se le escapaba de entre las manos, ¡ah! más parecía el insensato burlarse de ella, y con más anhelo mostraba su impaciencia de arrojarse al fondo...</p>
 				<p>Era su buena dicha que se le escapaba; eran sus cincuenta y seis años, tan ocultos, tan tapados, tan escondidos, que parecían deshechos, presentándose inopinadamente a concurso de acreedores; era su prestigio, era su fortuna, era su capital, eran sus medios de vida, era toda su vida, era el oro que combinaba sus reflejos dorados con el azul de los cortinajes, y el ámbar de las sillerías, y el rojo o el color viejo del fondo de las estancias; que alineaba matemáticamente las exuberancias de su jardín meridional; que perfumaba hasta las libreas de los lacayos, escapándosele de las arcas, y de los bolsillos y de las manos, ni más ni menos que si tuviera inteligencia, y hubiera declarado en asamblea que aquella casa, la casa del Conde, era la casa de un apestado: era que la ruina acababa de descargar sobre la cabeza poética hasta el extravío, de la Condesa, su zarpazo brutal de fiera, sin más instinto que los de su estómago, siempre hambriento, y los de sus garras, siempre furiosas: era que se hacía preciso decirle ¡adiós! al fausto, a los esplendores, a la riqueza, y ante esta frase, siempre tan triste y ahora tan trágica ¡adiós! la Condesa temblaba desde la punta de los pelos hasta las uñas de los pies, y decía, arrebujándose en la colcha de damasco rosa de su cama, con un movimiento delicioso de criatura aterida de frío:</p>
@@ -285,7 +312,7 @@
 				<p>Y su madre, arrancándose de pronto la careta no bien quedó sola, se metamorfoseó en lo que naturalmente era: en una enorme egoísta de cuerpo entero.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0007_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0007_head_002">- III -</head>
 				<p>¿Llamarlo? Sí, era lo más conveniente. «Esta carta a su destino». Y diez minutos después ya estaba D. Felipe, el confesor y consejero áulico de la condesa, a presencia suya.</p>
 				<p>Don Felipe pertenecía a ese género especial de curas híbridos que no han previsto ninguna legislación canónica. Todo lo menos cura posible y todo lo menos seglar posible: un cura empezado a formar, pero resultando admirable en su estado de boceto: bonito, pulcro, de ojos chiquitos y brillantes, negrísimos hasta hacer aparecer blancas todas las cosas que los rodeaban; boca pequeña y nerviosa, nariz fina, testa de Luis Gonzaga perfeccionada por la pomada tártara. Vestía con suma elegancia hábitos entallados de seda, y una de las prendas predilectas de su coquetería sacerdotal eran los zapatos de charol con hebillas de plata que completaban su indumentaria de cura petrimetre. Chapeo <seg rend="italic">derniere </seg>de alas anchas y redondas al igual de las de los trabajadores del campo, y siempre, en toda estación, guante negro de castor o de piel de Suecia, según la sensibilidad termométrica de su cuerpo. Decían del color siempre sonrosado de sus mejillas los maliciosos, que el tocador andaba por mucho en ello, pero yo creo sencillamente que aquel agradable color de manzana bien conservada, o de cara de niño llorón, procedía de las riquezas gástricas del estómago de D. Felipe, para quien la vida no era en realidad sino un festín permanente, para el que se había hecho de billete de libre circulación: y eso es todo; que digería con facilidad y que comía con buen apetito.</p>
 				<p>-¿Qué novedades hay, querida condesa? ¿Con qué nuevo don os favorece hoy el cielo?</p>
@@ -305,7 +332,7 @@
 				<p>¡Ah! D. Felipe era el padre de confesión de la señorita de Galindo.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0007_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0007_head_003">- IV -</head>
 				<p>La ceremonia religiosa de la boda tuvo lugar en París en la capilla de una embajada latina: una capilla donde se reza a Dios en nombre del presupuesto de Estado de una nación tan esencialmente atea, que en materia de divinidades sólo cree en la Virgen del P*** y en la del Carmen, y yo me figuro que porque son bonitas y lujosas; a Dios lo maltrata la boca del pueblo con blasfemias y salivazos a todas horas, constantemente, a propósito de todo y a causa de todo: como si aceptara su ubicuidad para proporcionarse el refinamiento voluptuoso de encontrar por todos partes pedazos de esencia divina donde vomitar miserias y odios...; cuanto lleva consigo.</p>
 				<p>¡Qué artículo más mundano, más lleno de modernismo, el que publicó <seg rend="italic">Le Fígaro </seg>al día siguiente describiendo la ceremonia, los trajes de los invitados, la fisonomía social de cada uno de ellos, las hijas casaderas que tenían, y la dote probable de cada una de ellas!</p>
 				<p>¡Oh! ¡Verdaderamente la condesa estaba encantada!</p>
@@ -341,7 +368,7 @@
 				</lg>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0007_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0007_head_004">- V -</head>
 				<p>Aquella mañana del mes de Mayo había amanecido fresca y otoñal: era un crepúsculo sombrío y cárdeno el que rasgando medrosamente las espesas oscuridades del cielo, pintarrajeado todo de nubarrones negros, comenzaba a dar entonaciones propias y características a las cosas, a proteger la vanidosa ostentación de los colores, nunca satisfechos de que se les admire bastante.</p>
 				<p>Pero tenía que luchar en competencia con la niebla, que semejante a un ejército invasor victorioso, lo llenaba todo, se atrevía con todo, colándose por todas partes, borrando líneas aquí, colores allá, perspectivas por todos lados, con una rabia de ocultación, de escondite, que no parecía sino que la Naturaleza iba a acometer un gran crimen, y que horrorizada de sí misma, de lo que pensaba, se tapaba ruborosa con aquel manto de nieblas, tan bien tejido, pero tan horrible. Y era un espectáculo desesperador y curioso al mismo tiempo para los que saben mirar el de aquellas casas, apenas alumbrada por la dudosa claridad de un astro que diríase agonizante, semejantes a fantasmas de la edad de piedra, altas e imponentes, silenciosas como una tumba, y animadas interiormente por resuellos y por toda clase de movimientos, sin cambiar en nada su fisonomía indiferente de todos los días, ¡ay! tan sordas a la desesperación como al alborozo, como si no hubiera una identificación más grande de lo que generalmente se cree, entre la criatura y el nido, entre el hombre y el techo familiar, el techo de todos los días, que mira desde la cama cuando sueña, o cuando piensa en lo indistinto.</p>
 				<p>Comenzaba la gente a poblar las galerías de árboles del bosque de Bolonia, a turbar con risotadas y palabras emitidas con esa mayor franqueza, que aun a los temperamentos más hipócritas les acomete a las primeras horas de la mañana, la hermosa independencia de los pájaros, su afición a marchar a saltitos por el suelo, descaradamente, hastiados de sus alas, aburridos de los espacios azules, de los grandes horizontes... Y como si los párpados hinchados, la cara un tanto abotagada, la piel lustrosa de ese brillo sucio con que embadurna el sueño a todos sus súbditos, a todos los mortales, la agilidad y la gracia en los movimientos, el mayor descuido en el vestir, y la risa, no ya la risa, la carcajada, fácil, pronta, repentina, fueran cosas de derecho natural, de reglamento, algo así como una obligación formalísima que se hubieran impuesto, aquella multitud de madrugadores, diseminada en direcciones opuestas, corriendo, gritando, lanzando frases de alegría en todos los idiomas posibles, daba a aquella reunión del bosque de Bolonia un carácter tan uniforme, que parecía más bien que la representación auténtica, legítima, de las cinco partes del mundo visitando a París en busca de mayores vicios, de mayor cultura y de mayor humanismo que en sus respectivas patrias, parecía más que eso, un ejército disciplinado realizando un plan, practicando una consigna, reglamentados, iguales.</p>
@@ -373,7 +400,7 @@
 				<p>Aquella desventurada había concluído por sentir envidia hasta de esa especie de sonámbula que la había saludado al paso, quizá sin darse cuenta de lo que hacía, al gran trote de sus caballos por la avenida central del bosque de Bolonia.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0007_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0007_head_005">- VI -</head>
 				<p>Cundió por Z la nueva con la velocidad de un rayo: de los círculos aristocráticos bajó o subió la noticia, que en esto de si subió o bajó no podemos emitir informe, a los de la clase media, y de los de la clase media a los del pueblo. Lo que en los círculos dorados se comentaba solo con una sonrisa maliciosa o con un signo hecho todo, formado todo, de una intención venenosa que hubieran envidiado los zanganotes del infierno, era comentado en las tabernas con esos apóstrofes que reventan en la boca del pueblo de exceso de energía, de sobra de fuerza... «esa aristocracia podrida, esos marqueses que ni siquiera son hombres... chupando en la misma odiosa proporción oro que vicio y nunca ahítos. ¡Más oro más vicio!, que critican nuestra hambre y se burlan de nuestras manos callosas...</p>
 				<p>La condesa, ya hacía tiempo que tenía conocimiento del hecho: lo había adivinado, presentido, antes de la boda, cuando recibió las primeras revelaciones del hijo. «Yo estoy enfermo mamá, no puedo casarme.» Ahora, ya hacía dos meses que trataba de preparar la opinión para suavizar el escándalo: pero el escándalo estalló en el aire como una nube cargada de electricidad; disparando el rayo: la marquesa de Puerto Arcas había solicitado de los tribunales franceses la anulación de su matrimonio por impotencia del esposo: aceptaba las pruebas; se sometía a las experimentaciones periciales, -estaba virgen después de cuatro meses de unión conyugal;- se había casado con un eunuco.</p>
 				<p>Como la boda se había hecho en Francia, en Francia tendrían que deshacerla; de aquí la intranquilidad de la condesa; si fuera en Z..., si entendieran en eso los tribunales de Z..., la batalla estaría ganada sin remisión; pero en Francia, ¡ah! en Francia es otra cosa; en Francia hay más moralidad en las instituciones del Estado, y, sobre todo, el conde su esposo no había sido jefe del Gobierno allí, no había improvisado de la noche a la mañana generales, ministros, magistrados; no podía explotar hasta la degradación, hasta la infamia, los estómagos agradecidos, los bolsillos satisfechos... No valía, pues, dejar el asunto para mañana, dormirse en las pajas. La resolución había de ser pronta, porque el ataque había sido pronto también...</p>
@@ -421,7 +448,7 @@
 				<p>Ahora sí que tuvo la escena más espectadores que antes. La <seg rend="italic">madonna </seg>a la cabecera, el grupo furioso del conde y la condesa en el centro, y allá en el fondo, detrás de los biombos de laca, unos ojos muy abiertos y muy brillantes, que parecían felinos por la fosforescencia que desarrollaban, mirando con ansia y mirando más, como si no se cansaran nunca de ver aquello; la mujer tendida sobre el lecho y el hombre pasando la nariz por todos los sitios indecentes, insaciable en su tarea de aspirar hedores.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0007_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0007_head_006">- VII -</head>
 				<p>...De un libro de memorias.</p>
 
 				<floatingText>	
@@ -440,7 +467,7 @@
 				</floatingText>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0007_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0007_head_007">- VIII -</head>
 				<p>Fueron amores funestos, aquellos amores de Eudoro Gamoda y la condesa. A veces un torbellino de pasión le arrancaba a la condesa estas palabras:</p>
 				<p>-Si permaneciera quince días sin verte me moriría.</p>
 				<p>-¿A qué pensar en la eternidad -le respondía su amante- cuando se posee el momento?</p>
@@ -497,7 +524,7 @@
 				<p>Todavía al final de la calle continuaba saludando desde la ventanilla del coche con el abanico, a su amante, aquel sexo prepotentísimo de la condesa; a su amante, parado, detenido allí, en medio del arroyo, como un imbécil a quien no le quedara más cantidad de inteligencia que la precisamente justa para poder despedir gravemente, quitándose el sombrero, a toda su felicidad, a toda su vida, que parecía escapársele de entre las manos, al rodar angustioso y trepidante de una berlina de alquiler ajustada por una carrera.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0007_chap9">
-				<head>- IX -</head>
+				<head xml:id="ne0007_head_008">- IX -</head>
 				<p>Había vuelto de París, martirizada por fatales presentimientos. Sabía lo que significaba la traslación del asunto de su divorcio a Z; sabía que significaba la derrota, la muerte. Cuando le anunciaron, ya separada particularmente de Enrique, los propósitos de su suegra, su plan de ataque, rió con un acceso de risa tan franco que le duraría muy bien un cuarto de hora. Se hacía la ilusión de que su enemigo no había de conseguir lo que solicitaba; pero cuando los periódicos comenzaron a hablar de la creación de un nuevo partido, a cuyo frente estaba el conde del Zarzal; cuando supo que ese partido, formado en su inmensa mayoría de republicanos cuando la república fue una legalidad política en A, era, había hecho declaraciones esencialísimamente monárquicas y aun dinásticas, exagerando la nota de monarquismo hasta el punto de regatear el valor de ese concepto a los más reaccionarios elementos de los partidos conservadores, tocado de esa especie de fiebre de limosneo, de petición, que hace pesados y hasta odiosos a los mendigos de la calle. -«Señorito, por Dios; señorito por Dios, un centimito nada más...» -Cuando vio que la verdad, y la moral y las leyes, y todo lo poco que hay de sagrado en la vida, estaban amagados de uno de esos arrollamientos, furiosos con que acostumbraba a embestir la loca fortuna de la condesa a cuantos obstáculos le salían al paso; cuando vio todo esto, vio también la derrota suspendida sobre su cabeza, amenazándola con el puño cerrado como un fantasma trágico; vio su ruina, y a cambio de todo eso, dejó de ver a Dios, ese Dios justo y misericordioso, posado en una nubecilla celeste, hermoso como un sueño de ventura, que le habían mostrado en las estúpidas enseñanzas de <seg rend="italic">Le Sacré Coeur</seg>, diciéndole: -«Cree en ese. Es el eterno dispensador de justicia; sin él la vida estaría envenenada por el error y la infamia, sería imposible, odiosa... Póstrate en oración ante él, ámalo, que él es el amor sumo...»</p>
 				<p>Luisa Galindo pensaba ahora que quizá se hacía preciso ser un poco canalla para merecer el amor de ese Dios hermoso como un sueño de ventura y posado en una nubecilla celeste, que le habían mostrado en las estúpidas enseñanzas de <seg rend="italic">Le Sacré Coeur, </seg>como síntesis hecha realidad del amor sumo, del bien sumo... de la eterna justicia.</p>
 				<p>Salió de París y volvió a Z, apremiada por una papeleta de citación de uno de sus juzgados. Era una opulenta mañana del mes de Julio, un verdadero día de fiesta de la naturaleza; por todas partes podían percibirse las cópulas fecundas de la vida, las espléndidas iniciativas de la Creación.</p>
@@ -530,7 +557,7 @@
 				<p>Hecho esto esperó: esperó sombría y desesperada, el nuevo zarpazo con que la amagaba su horrible, su implacable suerte.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0007_chap10">
-				<head>- X -</head>
+				<head xml:id="ne0007_head_009">- X -</head>
 				<p>-La señora espera a Vd. con impaciencia y me ha dado orden de que la pase inmediatamente a su gabinete, donde está aguardándola.</p>
 				<p>-No importa... Como si no fuera de la familia. Anúnciame.</p>
 				<p>Volvió la doncella un instante después:</p>
@@ -588,7 +615,7 @@
 				<p>Sólo le restaba ya actividad para eso, para decir «¡madre mía, madre de mi alma!» un grito que parece una oración, según es sagrado. ¡Pero ¡ay! aunque viviera su madre, la madre de su alma, no podría hacer nada por ella! Formaba parte de una vorágine, y no lo quedaba otro recurso que pelearse con el huracán o fundirse con la ola; las dos formas de desaparición humana más tristes que conozco.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0007_chap11">
-				<head>- XI -</head>
+				<head xml:id="ne0007_head_010">- XI -</head>
 				<p>En Z en el mes de Octubre, cuando le da al sol por tener buena cara, por tener buen comportamiento, se gozan de temperaturas tan magníficas que involuntariamente hacen pensar en el Paraíso. Un otoño en Z, puede constituir para los espíritus tiernos, formal presentimiento del cielo. No se han despojado los árboles todavía de sus graciosos adornos, de sus hojas, de sus racimos, de su resina, de su interesante magnificencia externa. La atmósfera continúa llevando en disolución esos perfumes de la primavera, que parecen una caricia, un gracioso y prolongado saludo de la naturaleza vegetal a la animal, de las plantas a los hombres, esas otras plantas más infortunadas. El aire continúa tibio, amorosamente tibio, como el aliento de una mujer que se nos acerca para besarnos. Hay azul sobre nuestras cabezas, y ante nuestros ojos, vibrando con el éter, y descomponiéndose con la luz, los colores del iris, revueltos y confundidos en promiscuidades tan delirantes, que hacen pensar en los amores furiosos del verde con el grana y del blanco con el negro. Se oyen por todas partes armonías que confirman los supuestos conciertos de la Creación; y el tumultuoso parlotear de los niños, y el alegre trinar de las aves, parece como si hicieran bien al cuerpo, avivando la circulación de la sangre, y las soberbias combustiones de la vida, exuberante esos días, hasta en los tísicos, hasta en los curiales arrugados por el uso...</p>
 				<p>Eudoro Gamoda tradujo esa magnificencia del día por un simpático apercibimiento de la naturaleza al hombre para que se emancipara de la ley del trabajo, dura y terca como una maldición que viniera de lo alto. Cerró la puerta de su estudio, guardándose la llave, y se lanzó a la calle, llamándose a la parte en la espléndida repartición de aromas, de músicas y de colores.</p>
 				<p>Estaba triste, sin embargo. Vivía por el amor, exclusivamente por eso, tan harto estaba de lo demás, y el amor comenzaba a tratarlo con indiferencia, el más insoportable de todos los suplicios para los espíritus bien formados, para los espíritus que sólo viven en la tierra lo suficiente para que no se les declare fuera de la sociedad, desterrados del rebaño humano... malditos...</p>
@@ -672,7 +699,7 @@
 				<p>Sólo después de hacérselo repetir hasta tres veces, como un idiota que no entendiera el lenguaje humano, pudo erguirse algo ante tanto desplome, el alma hermosa de aquel infortunado.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0007_chap12">
-				<head>- XII -</head>
+				<head xml:id="ne0007_head_011">- XII -</head>
 				<p>Conducen a aquel pueblo de los alrededores de Z hasta tres carreteras, todas ellas igualmente sucias y descuidadas. En invierno los baches del camino hacen más peligrosa la Odisea de un viaje por aquellas inmensidades de fango que una expedición por el Atlántico en época de equinoccios, y en verano es tan espesa la capa de finísimo polvo amarillento, polvo de greda, que el caminante huella con su pie y mide aterrorizado con la vista, que a veces diríase que aquel polvo tiene sentimientos de odio, según el cuidado que pone en sepultar hasta las corvas a todo el que se aventura a recorrerlo.</p>
 				<p>La carretera que une a Z con el pueblo de que hablo, tiene próximamente una extensión de cuatro kilómetros: cuatro kilómetros en línea recta que es un horror para el caminante. El camino es árido, sórdido y fúnebre como las fantasías dantescas del <seg rend="italic">Infierno </seg>ilustradas por el lápiz sombrío de Doré. Ni un árbol, ni una fuente, ni una mata, ni una flor, ni un recodo donde poder sentarse y soñar con ideales de ventura en aquel desierto de greda; nada, sólo polvo. Se siente allí positivamente un gran desaliento de la Naturaleza creadora. Se ve fatiga, aburrimiento en la causa genésica del Cosmos. Aquello está hecho por un aprendiz de Creador y no por un maestro. Es aquel camino por misérrimo y por triste un bostezo y una lágrima, todo a un tiempo. No quiero decir que un argumento contra el cielo.</p>
 				<p>Sin embargo, como es una necesidad física de los pobres organismos humanos que sólo descansan cuatro días al mes, buscar expansión para sus miserias y aliento para sus pulmones, en horizontes más abiertos que los de las cuatro paredes del taller en que se les usa la vida, los domingos, y en general todos los días festivos, aquellos alrededores de Z están muy concurridos por tribus obreras, por verdaderas tribus, que van allí a devorar callos y a embrutecerse con vino tinto, en caravanas que son verdaderas procesiones de miseria, idiotas cuando van y locas cuando vuelven, enfurecidas por el vino tinto.</p>
@@ -709,7 +736,7 @@
 				<p>-Luisa Galindo, marquesa de Puerto-Arcas.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0007_chap13">
-				<head>- XIII -</head>
+				<head xml:id="ne0007_head_012">- XIII -</head>
 				<p>La naturaleza humana, a medida que es más fina, más perfecta, tiene mayor miedo a la muerte. Un héroe no es otra cosa que un convulsionario o un loco. Los ejércitos, las grandes masas de combatientes, que saben que avanzando van a morir, y corren hacia adelante sin volver la vista atrás, siquiera para despedirse de la vida, están formados de patanes. César en el Senado se tapó la cara con el manto a presencia de los puñales conjurados contra su vida, y Napoleón sólo fue héroe en Arcola: debió morir en Waterloo o suicidarse en su jaula de Santa Elena. Héroes los trágicos desesperados de la historia, Leónidas, Espartaco, Viriato, Churruca, Nelson, Garibaldi. Y sobre todo, héroes los grandes temerarios de la inteligencia, las intrépidas avanzadas del progreso humano; esos, Sócrates, Cristo, Savonarola, Juan Huss, Jerónimo de Praga, Giordano Bruno, Tomás Moro, Galileo, Bernardo de Palissy, Dionisio Papin, Proudhon, los generosos atletas del 93, sin exceptuar a uno solo, esos, esos son los héroes, los verdaderos héroes; y casi al mismo nivel de ellos, y no por encima de ellos, porque teniendo sólo la aureola de lo útil, les falta la de lo sublime, que únicamente puede darla el martirio, los enormes combatientes de la paz, Torricelli, Newton, Keplero, Laplace, James Wat, Stephenson, los hermanos Montgolfier, Claudio Bernard, Bell, Edison, Lesseps. Que no se hable de otros héroes que esos. Los demás sólo son, exceptuando una docena de nombres, carniceros equivocados de vocación. Locos cuando se baten, y casi idiotas cuando están parados.</p>
 				<p>Eudoro Gamoda, que era inteligente, no podía, pues, tener ese heroísmo activo de los temperamentos groseros. Se había batido en el Salón, y lo mismo habría hecho hasta ensangrentarse y sucumbir en la demanda, desde una barricada en defensa de una idea generosa, de una utopía de civilización. Ahora no le quedaba otra cosa que resistir. Resistir a su pena, a sus dolores, que él temía que pudiera convertirse en locura: resistir a costa de todo, aunque fuera preciso para eso saltarse los ojos y arrancarse las uñas; no volver a verla, y si lo llamaba, responderla con una sola frase, con una sola: «Señora, yo tengo vergüenza...»</p>
 				<p>Pero no podía salir de Z, negar en absoluto a su corazón la cobarde esperanza de que pudiera alguna vez, al cruzar una calle o al detenerse en cualquier sitio a donde lo arrojara su fatalidad del día, verla, verla aunque no fuera más que un instante, un instante sólo, que lo dejara efecto de deslumbramiento en el alma, como el que produce en los ojos habituados a la oscuridad, el desbordamiento de luz de una ventana abierta repentinamente, por sorpresa, para que el asalto a las tinieblas sea más violento y la victoria más pronta, más repentina.</p>
@@ -744,7 +771,7 @@
 				<p>Lanzóse a la calle, y a la media noche, ya estaba, sombrío y miserable, temblando de vergüenza y de frío, acurrucado en uno de los portales inmediatos al hotel de la condesa del Zarzal, aquel infortunado que había sido un hombre, convertido ahora en harapo, en desperdicio, en <seg rend="italic">detritus</seg>, por el amor, esa cosa magnífica, como dicen los poetas.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0007_chap14">
-				<head>- XIV -</head>
+				<head xml:id="ne0007_head_013">- XIV -</head>
 				<p>Pasó una hora... dos... tres... ¡y la condesa sin volver! Debería estar bien, donde quiera que estuviera. Así se daba tan poca prisa en volver adonde la aguardaban.</p>
 				<p>El espíritu de Gamoda, amodorrado y todo como estaba, sufrió todas las crisis de la noche, como si se hubiera fundido con ella. Al principio, en las primeras horas, estaba sombrío, sombrío como siempre, pero con algo de animación en el pensamiento, con alguna marejada de pasiones en el cráneo. Subían y bajaban, y aunque no dejaran en su espíritu otra impresión que el ruido, un ruido de olas batiendo una costa, ese ruido era por entonces su compañero, y se acomodaba a él, y no encontraba su soledad tan miserable como otras veces en que le sonaba la cabeza a hueco de un modo desconsolador, especie de petrificación humana. Luego, cuando a la noche sucedió la madrugada y advirtió por la mayor soledad de la calle, y el más precipitado andar de los que la cruzaban ansiosos de llegar a sus casas, que era tarde, que se había echado la hora encima, y el canto de las tórtolas prisioneras en sus jaulas, y el silbido de los mirlos, y el especie de ¡alerta! que dan los gallos, ¡qui-qui-ri-quí! -sin progreso, siempre lo mismo- le avisaban que la hora era llegada, que en Z dormía todo el mundo a esas horas, menos los ladrones, los calaveras de profesión y los aristócratas, Gamoda se incorporaba en su lecho de piedras, y aguardaba; y, por fin, cuando los primeros tímidos arreboles del día coloreaban fantásticamente de un blanco amarillento los edificios, y los barrenderos, y los vendedores ambulantes de café llenaban de ruidos de humanidad la calle, Gamoda renació a nueva vida: se acercaba el instante; estaba a dos pasos de un grave acontecimiento. Iba a decidirse el más grande conflicto de su vida.</p>
 				<p>Entonces, animado de una resolución salvaje, comenzó a pasear por la acera del hotel en que vivía la condesa: ¡alguna vez habría de llegar y entonces...!</p>
@@ -780,7 +807,7 @@
 				<p>Aceptó el primer brazo que se le ofreció, y algunos momentos después sólo quedaba en la calle, de aquel crimen de dos, un solo castigo, una sola víctima, aquel cadáver...</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0007_chap15">
-				<head>- XV -</head>
+				<head xml:id="ne0007_head_014">- XV -</head>
 				<p>Gran fiesta en los salones de la Embajada francesa. Ha comenzado la las doce y no debe concluir hasta el amanecer. Todo cuanto Z contiene de distinguido en todos los órdenes de la vida, aristocracia, arte, banca, parece como si se hubiera puesto de acuerdo para hacer de aquellos salones de la Embajada, una imponente y soberana exposición de grandezas. Se oyen pronunciar por todos lados hombres ilustres del pasado o del presente, y es tanta la obsesión que esto produce en los que no tienen, en los que no pueden ostentar esos nombres, pero que asisten a la velada en concepto de invitados como los demás, que creen asistir a una resurrección de la historia antigua, y se figuran contribuir a la formación de los anales patrios, ni más ni menos que los egregios abuelos de los que danzan por aquellos salones. Pero lo que hace más vistosa, más espléndida la fiesta, es la profusión de extraños uniformes azules, blancos, encarnados, verdes, deslumbradores a fuerza de oro, que desfilan ante los ojos deslumbrados de los que no tienen la costumbre de ver tanta claridad, aun en los vestidos, a las doce de la noche. La monotonía del frac es insoportable; esa nota negra, parecida a una mancha, que ensucia todas las reuniones de la aristocracia. Es inconcebible el empeño que tienen los hombres de nuestra época en hacer sombrías todas sus reuniones con ese traje negro, que como decía Musset: «Parece que está pidiendo consuelo.» Si es un símbolo, bien: esta generación tiene el deber de vestirse de negro: lleva luto por muchas esperanzas, por muchas ideas consoladoras. Ha presenciado muchos cataclismos ¡ay! y tiene la seguridad de que le quedan todavía otros muchos que contemplar. Pero si es una manifestación del gusto, entonces ¡maldito sea ese gusto que da tonos sombríos a todas las reuniones humanas, haciéndolas aparecer como reuniones de enterradores y curiales!</p>
 				<p>Pero condecoraciones, brocados, uniformes fantásticos, oro de los entorchados y de las franjas, todo esto desaparecía como a través de una nube, hiriendo las retinas sólo de un modo vago, al lado de la Mujer que parecía celebrar una apoteosis de su sexo, según se presentaba allí omnipotente y magnífica. La inmensa, la enorme superioridad de gusto de la mujer sobre el hombre, se advierte más que en nada, en el modo que tiene de vestirse, de peinarse, iba a decir que hasta en el modo de sentarse, artístico, aunque ella no lo procure. Allí estaba, con su cabecita rubia o negra, pero siempre inspirada, siempre luminosa, como si la rodearan los áureos limbos de las vírgenes cristianas; con sus hermosos ojos que miran con más delicadeza, con más humanidad que los de los hombres: descotadas, para hacer sentir más poderosamente la arrebatadora poesía de la carne: vestidas con trajes de largas colas que les daban apariencias de magas, de ondinas, mejor que de mujeres: adornadas de pedrerías y de flores, y dispuestas a hacer pensar en el prodigio de una desaparición completa de la tierra cuando los arrebatadores compases del wals llegaran a ese <seg rend="italic">crescendo </seg>en que la planta de la mujer casi se convierte en el ala de un ave, según lo suavemente que roza la superficie de la alfombra, irisada de colores brillantes, de reflejos de luz, adornada en las orillas de flecos de oro.</p>
 				<p>La mancha de color que presentaban las mujeres cuando se reunían en especie de <seg rend="italic">bouquets 					</seg>humanos para deliberar un chisme cualquiera, era tan soberbia, que los hombres, aun los más brillantes, los mejor vestidos, sólo conseguían, al aproximarse a ellas, parecer especie de moscardones de colores, muchos de ellos especie de gusanos, empinándose a una flor para afearla o destruirla con inmundicias o con picaduras, dos formas de batirse contra la Naturaleza, que no son sólo peculiares del insecto, porque el hombre las domina tanto que ha llegado a perfeccionarlas.</p>
@@ -897,7 +924,7 @@
 				<p>El coro se deshizo con la ligereza y la gracia de una bandada de pájaros que alza alegremente el vuelo después de haber deliberado a saltitos, y bien pronto no quedó en el ángulo del salón que había ocupado aquella improvisada Asamblea de gracias, otro recuerdo que un perfume vago y penetrante, como si hubieran sido flores y no mujeres las que allí se reunieron para contarse sus impresiones y cambiar y combinar entre sí sus sueños, con las temerarias audacias de la juventud.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0007_chap16">
-				<head>- XVI -</head>
+				<head xml:id="ne0007_head_015">- XVI -</head>
 				<p>La condesa estaba enferma, seriamente enferma. Se le escapaba la vida por todos los poros de su cuerpo: se moría.</p>
 				<p>De su enfermedad circulaban noticias realmente fantásticas, que hacían novelesco su modo de morir. Se contaba que había despedido a toda la servidumbre masculina del hotel en una especie de furor rabioso que se le había declarado contra los hombres; añadíase a esto, que por no ver a ninguno en su presencia, había hecho venir de Inglaterra a una doctora, cuyos extravagantes procedimientos terapéuticos eran motivo de escándalo entre todo el cuerpo médico de Z. Decíase, además, que había mandado talar todos los arbustos del jardín, porque el más ligero perfume le provocaba espasmos nerviosos tan exagerados, que casi siempre degeneraban en furiosas convulsiones, que no podrían ser dominadas por toda la guarnición militar de Z, de imponderables, de violentas; y apoderada la imaginación, que podríamos llamar colectiva, la imaginación popular, del asunto, era inacabable el cuadro sintomático que presentaban de la neurosis de la condesa... No quería ver la luz del día y había hecho cerrar todas las ventanas del edificio y tapar con yeso todos los intersticios por donde pudiera la claridad colarse traidoramente. No podía resistir su pupila la visión de los colores vivos, y había hecho decorar todas sus habitaciones de blanco, como los dormitorios de las vírgenes. No quería escuchar el acento humano, y hacía que le hablaran por señas, como a los sordo-mudos. Para que su aislamiento de todo el mundo externo fuera más completo, había también mandado enarenar la calle, de modo que no llegara hasta ella el fatigoso ruido que producen los carruajes al rodar por pavimentos duros; y era un espectáculo más propio de la literatura delirante de Hoffman o Poe que de la verdadera vida humana, subir a aquellas habitaciones a la una de la tarde, y encontrarlas iluminadas artificialmente con bujías, como si allí, en aquella casa, tuvieran el cinismo de protestar del sol.</p>
 				<p>Lo demás de la vida material corría parejas con lo que llevamos descrito. Todos los días se mudaba de personal en las cocinas, porque ningún procedimiento culinario satisfacía al estómago herido de la condesa. El sueño era intermitente y febril, conmovido por espantosas pesadillas; más que sueño, aquello era un largo delirio que comenzaba cuando la condesa cerraba los ojos y terminaba cuando los abría, y eso que la fatalidad del delirio era vigorosamente atacada con sendas pociones de opio, que ingería con verdadera ansia, más bien que el cuerpo, el espíritu acobardado de la moribunda. No recibía a nadie, no quería ver a nadie. Y un día o una noche, porque en aquella casa no se subía nunca eso, cuándo era de día ni cuándo era de noche, en que Emilia, la doncella predilecta de la condesa, la habló de un chisme mundano, para alejar quizás algunas nubes sombrías que comenzaban a espesarse en la frente de la condesa, amenazando tempestad.</p>
@@ -906,7 +933,7 @@
 				<p>¡Qué horrible cementerio, Dios mío, aquella casa!</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0007_chap17">
-				<head>- XVII -</head>
+				<head xml:id="ne0007_head_016">- XVII -</head>
 				<p>Se temía una crisis. Hacía ya dos días que la condesa no se acostaba, y eso constituía para aquellos servidores, aleccionados en las enfermedades nerviosas por la práctica, un síntoma aterrador. Estaban, pues, abocados a un conflicto.</p>
 				<p>Aquel modo de morir de la condesa era solemne, pero frío. No había sentimiento en los que la rodeaban. No había más que cansancio. Se veía en todos los rostros una brutal aspiración de que terminara pronto aquello...; de buena gana, en vez de cerrarlas, habrían abierto a la muerte todas las puertas para que entrara sin empujar... No, seguramente no se lucharía con ella a brazo partido como en las alcobas de los que mueren dejando una estela de amor por el mundo... Podía venir cuando quisiera. No habrían de disputar por eso. Y cuanto antes mejor...</p>
 				<p>Emilia era quizá el único ser en toda la casa que asistía con lágrimas a aquella despedida... No lo podía remediar; le había tomado cariño a la señora. ¡Si se hubiera dejado llevar de sus consejos...! Y cada cinco minutos, de día, lo mismo que de noche, se acercaba de puntillas a la alcoba de la histórica, a ver si la necesitaba, si la quería para algo, despeinada, casi verdosa por el insomnio.</p>

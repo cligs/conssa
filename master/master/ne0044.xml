@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La novela de mi amigo</title>
-				<title type="sub"></title>
+				
 				<title type="short">Amigo</title>
-				<title type="idno">
-					<idno type="bne">XX2334062</idno>
-					<idno type="viaf">310249228</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">592</measure>
@@ -141,22 +131,65 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0044</idno>
+						<idno type="cligs">ne0044</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/la-novela-de-mi-amigo-1/"/>.</bibl>
-				<bibl type="print-source">Tipografía Altés, Barcelona, <date when="1932">1932</date></bibl>
-				<bibl type="edition-first"><date when="1908">1908</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La novela de mi amigo</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2334062.html">XX2334062</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/310249228/">310249228</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/la-novela-de-mi-amigo-1/"/>.</bibl>
+					<bibl type="print-source">Tipografía Altés, <pubPlace>Barcelona</pubPlace>, <date when="1932">1932</date></bibl>
+					<bibl type="edition-first"><date when="1908">1908</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464851351" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464851351"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342696475" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696475"/> </bibl>
+						<bibl type="further-edition"><title type="main">Del vivir</title>: 	<title type="sub">la novela de mi amigo</title> <date when="1932">1932</date>, <publisher>Altés</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="46510794X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46510794X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo, nómada</title> <date when="1938">1938</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="521232503" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521232503"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo</title>: 	<title type="sub">nómada</title> <date when="1938">1938</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464851556" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464851556"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo. Nómada</title> <date when="1938">1938</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="353666351" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=353666351"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo</title> <date when="1951">1951</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="384777821" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=384777821"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de Ojeda (Ensayo de novela). Hilván de escenas. De vivir. La novela de mi amigo. Nómada. La palma rota. El hijo santo. Las cerezas del cementerio. Niño y grande</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362006"/> 		<idno type="isbn" n="8496452255;9788496452251"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo</title> <date when="2015">2015</date>, <publisher>Instituto Alicantino de Cultura Juan Gil-Albert;Diputación Provincial de Alicante</publisher> <pubPlace>Alicante;Alicante</pubPlace> 		<idno type="ppn" n="1538965275" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1538965275"/> 		<idno type="isbn" n="9788477847007;8477847002"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de mi amigo</title> <date when="2015">2015</date>, <publisher>Instituto Alicantino de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="856652962" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=856652962"/> 		<idno type="isbn" n="9788477847007"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
 				<p>Está protagonizada por Federico Urios, un artista que cuenta su historia al autor, evocando sombríos recuerdos. Es una criatura decadente, con ramalazos de crueldad, romántica y exaltada, de perfiles borrosos y doliente sensibilidad. Desde su infancia se siente ahogado por el medio en que vive y sufre la falta de amor, encarnada primero en su padre y luego en su mujer. Ahora tiene necesidad de hablar para justificar el extravío a que ha llegado.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -189,7 +222,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -200,7 +233,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE10">0.5</term>
 					<term type="text.movement">modernista</term>
-					<term type="text.narration.narrator" >homodiegetic</term>
+					<term type="text.narration.narrator">homodiegetic</term>
 					<term type="text.plot.end" cert="low">negative</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
@@ -222,6 +255,7 @@
 		<revisionDesc>
 			<change when="2015-04-01" who="#jct">Initial TEI version.</change>
 			<change when="2015-12-18" who="#jct">New metadata.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -241,7 +275,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0044_chap1">
-				<head>I. Su infancia</head>
+				<head xml:id="ne0044_head_000">I. Su infancia</head>
 				<p>Mi madre fue lavandera; mi padre, albañil. Tuve una hermanita que se llamaba Lucía. La vida de esta hermana puedo decir que se redujo al espanto de su muerte... Mi padre había salido a la faena; mi madre, a lavar en una acequia muy honda que pasaba cerca de nuestra casa. Lucita quedó a mi cuidado. Tenía yo diez años; ella no llegaba a tres; ¡qué digo tres: ni dos y medio! Jugamos con un gato largo y flaco, de piel de conejo de patio, manso, paciente por comodidad y egoísmo; cuando lo tomábamos guardaba sus viejas uñas y se fingía dormido. Después, jugamos a tiendas; es decir, era yo solo quien hacía de mercader y de criada que compraba azafrán, perejil, arroz, pimiento molido, cebollas, lentejas (fíjese en la humildad de nuestro comercio; y es que copiábamos en bromas las veras de lo que mercaba nuestra madre). Y Lucía, sentadita, con los ojos muy anchos... ¿Usted ha observado cómo miran los hermanitos a los hermanos grandes? ¡Qué admiración tan tierna y verdadera tienen esos ojos! Pues Lucita contemplaba mis manos y mi boca porque yo remedaba la voz, las falacias, los ademanes del abacero y la charla gritadora de las mujeres de su parroquia. Siendo tan chiquitina, demostraba saber su debilidad y menoría. Le pasmaba mi destreza para hacer cucuruchos de periódicos, y más que todo admiraba mi peso de cortezas de naranja... Pero también nos cansamos de las riendas. Entonces le dije si quería pan, porque yo tenía hambre. Busqué en la alacena. Y el pan era duro.</p>
 				<p>-Lo torraremos, ¿verdad? -le propuse-, y yo seré un hornero que cocería el pan que tú trajeses al horno, ¿quieres?</p>
 				<p>Lucía se levantó del suelo muy contenta; daba saltitos como una pajarita en los bancales recién segados. ¿Sabe usted qué pajaritas digo?... Pues de esas tan finas, tan leves, tan inquietas... La comida caliente de mi padre se cocía en una olla negra, a fuego de ascuas. Hundí entre ellas el pan, y pronto hizo llama ruidosa como de leña seca. ¡Se quemaba nuestro pan! ¡Del puchero del padre salía humo y desbordaba caldo, que chirrió doloroso, como si tuviese vida y se quejase! Me pareció que era mi mismo padre quien se derretía. Mi hermana me miraba con ansiedad... Acaso piense usted que todo esto era muy pequeño, muy simple; ¡no lo crea!; yo le digo que era muy enorme. Fíjese: estábamos solos, es decir, yo, yo estaba solo; de mí dependía la cazuela, y el pan, y el humo, y el chillido de atormentado de aquella agua hirviente, olorosa, que rugía... Y vi al gato junto a mí. Entonces me pareció un diablo o una fiera. Miraba erizado al fuego; acechaba mis manos... Y toda la casa en silencio. ¡Qué no hubiese dado yo por oír los pasos de mi madre!... Porque las cosas no son grandes ni menudas, sino indiferentes. ¿Que no? Mire; una hormiga, asustada, se asoma al agujero de sus tinieblas, sale al sol y silencio de una senda campesina; un águila escapa loca de su nidal de los Andes, espantada de una convulsa sacudida geológica que despedaza las cumbres; pues bien; ¿cree usted que las tierras del sendero y las rocas de los Andes que vieron salir a la hormiga y oyeron el grito desdichado del águila han asistido a lo menudo y a lo grande? ¿Lo cree usted? Pues yo, no. Humanizaré el ejemplo. ¿Conocerá usted <seg rend="italic">La Ilíada</seg>, verdad? ¡La conozco yo! Elija usted la hazaña que más le plazca y entusiasme de Aquiles, Héctor o Agamenón, y póngala junto al lanceamiento que hizo Don Quijote en el rebaño que tomara por huestes de Pentapolín, o al lado de otra aventura de nuestro caballero. ¿Son las primeras empresas superiores a las segundas?... ¿Distintas, dice usted? ¡Nunca, nunca!...  ¡Si para el delirante hidalgo eran hombres enemigos y desaforados los mansos corderos! Los hechos se trenzan indiferentemente... No; no nos entenderemos. No; yo sí que me entiendo; y es lástima que a usted no le ocurra lo mismo... Y esto lo decía yo por... por... ¿Por qué lo decía yo?</p>
@@ -307,7 +341,7 @@
 			</div>
 
 			<div n="2" type="chapter" xml:id="ne0044_chap2">
-				<head>II. La vena del padre</head>
+				<head xml:id="ne0044_head_001">II. La vena del padre</head>
 				<p>Una mañana cálida, dorada y tranquila de marzo, busqué a mi amigo. Su casón estaba arrinconado en una calle vieja, siempre en silencio de siesta aldeana. De los cornisamentos y cobijas, de los mechinales de los muros, brotaban las golondrinas, se espesaban gritadoras en las umbrías, y veloces como dardos mojaban sus alas en los aguazales de las últimas lluvias.</p>
 				<p>En un balcón angosto, de suelo de tablas, se hastiaba un varón pesado y caduco mirando la soledad. Asomose una señora que podía o debía ser la suya; pero en estos matrimonios decrépitos hombre y mujer parecen hermanos. También es rancia la fámula que les asiste, y murmuradora; y si tienen perro, gato, canario o loro, desde luego son viejos y recelosos, de piel o plumaje enfermizos. Conservan sus aposentos obscuridad antigua, obscuridad reposada,   remansada,   obscuridad   de  años  anteriores... Los dormitorios huelen a vahos de hierbas cocidas; en la sombra de los balcones, entre la prisión de los balaustres, cuelga espesamente la mata de la cera, o trepa la de la pluma de Santa Teresa, o sube otra cáctea dura, retorcida, espinosa, infernal... La quietud es disciplina en estos hogares. Y al mirarlos rápidamente, pensamos si habrá allí recogida alguna sobrinita;  y se angustia nuestro corazón, y queremos distraernos y recibir en los ojos alegría y anchura de cielo, porque decimos: «¿Y si fuésemos nosotros sobrinos huérfanos  y viviésemos con estos señores?... Nos despertarían muy temprano; la criada nos reñiría; habríamos de jugar sin contiendas ni júbilo, sin hacer ruido; pasearíamos de la mano de nuestros tíos, oída misa mayor, o por las tardes, después de merendar;  y cuando nuestros tíos se detuvieran conversando o al saludar otro matrimonio amigo, nosotros, siempre asidos por manos arrugadas  y frías, contemplaríamos otros muchachos libres, como un palomo llevado en brazos al encierro debe de mirar a las gozosas palomas que resplandecen en el azul, sobre el paisaje...». Y nos vemos muy pálidos, desmedrados  y tristes... ¡Pues qué será ser doncella y sobrina! ¡Sin refugio de madre! ¡Qué importa que sean los tíos más buenos que el pan candeal!...</p>
 				<p>...La casa de mi amigo estaba ruinosa y fragmentada por codicia del dueño en agobiosos vasares humanos;  la   escalera,   de   ladrillos   desportillados, hedía a humedad; en las paredes, pandeadas y rudas, muchachos aburridos escribieron no muy honestos letreros y trazaron barcos y dibujos de hombres de rigidez egipcia; los brazos les nacían de las rayas del cuello...</p>
@@ -407,7 +441,7 @@
 			</div>
 
 			<div n="3" type="chapter" xml:id="ne0044_chap3">
-				<head>III. Proteo</head>
+				<head xml:id="ne0044_head_002">III. Proteo</head>
 				<p>Sonó una tosecica contrahecha; humilde tos de que se valen algunos para anunciarse,  y es indicio de poquedad,  y es como la primera palabra.</p>
 				<p>-¿Me permite?</p>
 				<p>Y la cabeza del pintor Federico Urios asomó entre las puertas de mi cuarto, embozada por los pliegues de las cortinas.</p>
@@ -476,7 +510,7 @@
 			</div>
 
 			<div n="4" type="chapter" xml:id="ne0044_chap4">
-				<head>IV. De cómo se casó</head>
+				<head xml:id="ne0044_head_003">IV. De cómo se casó</head>
 				<p>Los campos labrados se rasgaban, haciendo una rambla honda  y seca; las márgenes se amurallaban indomablemente de viejos nopales, plantas hordálicas que parecen sorprendidas en una contorsión de ira o de danza grotesca.</p>
 				<p>Descendía la senda al barranco, torciéndose en busca del abrigo de un palmeral que se espesaba a poniente, recortando su perfil de paisaje bíblico sobre un cielo de hoguera.</p>
 				<p>Entraba cansadamente en el bosque el último y viejo sol,  y las dobladas ramas de encima relucían como los bronces limpios.</p>
@@ -519,7 +553,7 @@
 			</div>
 
 			<div n="5" type="chapter" xml:id="ne0044_chap5">
-				<head>V. Su hija</head>
+				<head xml:id="ne0044_head_004">V. Su hija</head>
 				<p>En el tejado verde  y costroso del casón de mi amigo se levantaba un aposento, techado  por una lucera con celosía de alambres. Y éste era el estudio del pintor. Yo estuve en él una tarde estival.</p>
 				<p>Llegábase por una retorcida escalera, que empezaba en las tinieblas de un largo pasillo, labrada con ruinas de cajas y puertas.</p>
 				<p>-No tema -me dijo el artista al subir el primer peldaño, que hizo quejumbres de vejez-. Aquí la impresión es de tumba, pero arriba se nos premia con el júbilo del cielo.</p>
@@ -596,7 +630,7 @@
 			</div>
 
 			<div n="6" type="chapter" xml:id="ne0044_chap6">
-				<head>VI. Pasión</head>
+				<head xml:id="ne0044_head_005">VI. Pasión</head>
 				<p>Días después de mi visita al pintor en su estudio, ya casi entornada la tarde, un mendigo, modelo de todos los artistas de la ciudad, me trajo una tabla. No descubría en ella trazos ni pintura;  y el pordiosero me advirtió:</p>
 				<p>-Es para que lea.</p>
 				<p>Me fijé  y hallé escrita con lápiz esta ávida imploración:</p>
@@ -735,7 +769,7 @@
 			</div>
 
 			<div n="7" type="chapter" xml:id="ne0044_chap7">
-				<head>VII. El umbral de la dicha</head>
+				<head xml:id="ne0044_head_006">VII. El umbral de la dicha</head>
 				<p>Le hablaba yo a mi amigo de la intensidad  y lumbre de nuestro paisaje levantino.</p>
 				<p>Amo yo el silencio, quizá por mi demasiada molicie; y en aquella tarde me era de insufridera violencia callar, viendo a Federico retirado en la soledad acerba de su espíritu, hundiéndose en sus entrañas el insaciable pico de sus pensamientos.</p>
 				<p>Cruzábamos frente al casal del muerto mastín. En la puerta cosía una mujer seca, abrasada, como las tierras rubiales del contorno.</p>
@@ -768,7 +802,7 @@
 			</div>
 
 			<div n="8" type="chapter" xml:id="ne0044_chap8">
-				<head>VIII. Atardecer</head>
+				<head xml:id="ne0044_head_007">VIII. Atardecer</head>
 				<p>Íbamos por la vereda de la rambla seca  y fragosa del palmeral.</p>
 				<p>Y él dijo:</p>
 				<p>-...Me analizo hasta el sentimiento más leve. Soy como un implacable oído de mí mismo;  y espío los rumores, las voces  y sacudidas de mi alma, toda mi   alma.   Y   cuando   percibo   la   dislaceración,   el quejido de mi carne de vida íntima  y sagrada, siento alegría y orgullo  y confianza. Es mi grandeza. Y es porque aún sufro. ¡No me curo todavía! Podré no curarme, ¿verdad?... Yo he matado. Le juro que es verdadera mi culpa...</p>
@@ -791,7 +825,7 @@
 			</div>
 
 			<div n="9" type="chapter" xml:id="ne0044_chap9">
-				<head>IX. Luna</head>
+				<head xml:id="ne0044_head_008">IX. Luna</head>
 				<p>Quedó la noche desoladora  y clara,  y parecía más grande que todas las noches... Estaban las aguas en llanura infinita de silencio,  y el corazón de este mar se estremecía blandamente de joyas de luna; y después, espesadas, eran un vial de luna, un torrente de las cumbres acostado en el mar, camino de esencia de luna para huella de almas apuradas por el padecimiento...</p>
 				<p>Comenzaba la lumbre romántica entre los mordidos peñascales costaneros, en la lisura acerada de las arenas, con gotas de luz, algas de luz, rizadas por la suave palpitación de las aguas que llegan de lo inmenso y acaban con humildad, desmayando sobre la espalda de la orilla. Y las gotas  y hebras de luna se congelan  y van esparciendo el sendero de pureza, y, muy lejos, la lluvia de blancura caída se entrega anchamente a los cielos...</p>
 				<p>Esplendían las grandes estrellas en soledades de espacio,  y del confín oriental se remontaba una nube magna, gloriosa, de espuma, como un bando de cisnes de encantamiento...</p>

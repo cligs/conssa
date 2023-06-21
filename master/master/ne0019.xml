@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La bodega</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Bodega</title>
-				<title type="idno">
-					<idno type="bne">XX1892690</idno>
-					<idno type="viaf">207945635</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1988</measure>
@@ -141,13 +131,56 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0019</idno>
+						<idno type="cligs">ne0019</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg.org, <date when="2009">2009</date>, <idno>28927</idno>, <ref target="http://www.gutenberg.org/files/28927/28927-h/28927-h.htm"/>.</bibl>
-				<bibl type="print-source">Sempere y Compañía, Editores, Valencia-Madrid <date></date></bibl>
-				<bibl type="edition-first"><date when="1905">1905</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La bodega</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892690.html">XX1892690</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/207945635/">207945635</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4577880-2">4577880-2</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg.org, <date when="2009">2009</date>, <idno>28927</idno>, <ref target="http://www.gutenberg.org/files/28927/28927-h/28927-h.htm"/>.</bibl>
+					<bibl type="print-source">Sempere y Compañía, Editores, <pubPlace>Valencia</pubPlace>-<pubPlace>Madrid</pubPlace> <date/></bibl>
+					<bibl type="edition-first"><date when="1905">1905</date><idno source="k10plus" type="ppn" n="521330602" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521330602"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">La bodega</title>: 	<title type="sub">novela</title> <date when="1905">1905</date>, <publisher>Libreria Nacional y Extranjera</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="521330602" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521330602"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="133440612X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133440612X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La bodega</title>: 	<title type="sub">Blasco Ibañez, V[icente] ; Novela. 45.000</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445657855" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657855"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226410528" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226410528"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">La Cité des futailles ('La Bodega'), roman</title> <date when="1923">1923</date>, <publisher>Flammarion</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="531897222" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=531897222"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464644100" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464644100"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Bodega</title> <date when="1932">1932</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="1116134152" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116134152"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Bodega</title> <date when="1932">1932</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="464643961" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464643961"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Bodega</title>: 	<title type="sub">Deutsch v. Elisabeth u. Otto Albrecht van Bebber</title> <date when="1932">1932</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="445657863" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657863"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Bodega</title> <date when="1932">1932</date>, <publisher>Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="335884636" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=335884636"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition"><title type="main">La bodega</title> <date when="1990">1990</date>, <publisher>Plaza &amp; Janés</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="082915229" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=082915229"/> 		<idno type="isbn" n="8401491665"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title> <date when="1998">1998</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="254018076" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=254018076"/> 		<idno type="isbn" n="8437616646"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title> <date when="2008">2008</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1613252080" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1613252080"/> 		<idno type="isbn" n="9788437616643"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479518379" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479518379"/> 		<idno type="isbn" n="9788496452985"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega. La horda. La maja desnuda. Sangre y arena</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="647447312" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=647447312"/> 		<idno type="isbn" n="9788496452541"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title> <date when="2015">2015</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="837911605" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=837911605"/> 		<idno type="isbn" n="9788437616643"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -160,6 +193,14 @@
 				<p>A la postre, los trabajadores rebeldes son aplastados y deciden buscar las mejoras por la vía de la concordia. EL pesimismo de la derrota queda paliado por las consideraciones finales de Salvatierra que, seguro de que al final triunfará la revolución, pone su esperanza en las ciudades, que no van a dejarse engañar por el falso consuelo del vino.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -225,6 +266,7 @@
 		<revisionDesc>
 			<change when="2015-12-16" who="#jct">Initial TEI version.</change>
 			<change when="2015-12-18" who="#jct">New metadata.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -232,7 +274,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0019_chap1">
-				<head>I</head>
+				<head xml:id="ne0019_head_000">I</head>
 				<p>Apresuradamente, como en los tiempos que llegaba tarde a la escuela, entró Fermín Montenegro en el escritorio de la casa Dupont, la primera bodega de Jerez, conocida en toda España; «Dupont Hermanos», dueños del famoso vino de Marchamalo, y fabricantes del cognac cuyos méritos se pregonan en la cuarta plana de los periódicos, en los rótulos multicolores de las estaciones de ferrocarril, en los muros de las casas viejas destinados a anuncios y hasta en el fondo de las garrafas de agua de los cafés.</p>
 				<p>Era lunes, y el joven empleado llegaba al escritorio con una hora de retraso. Sus compañeros apenas levantaron la vista de los papeles cuando él entró, como si temieran hacerse cómplices con un gesto, con una palabra, de esta falta inaudita de puntualidad. Fermín miró con inquietud el vasto salón del escritorio y se fijó después en un despacho contiguo, donde en medio de la soledad alzábase majestuoso un <seg rend="italic">bureau</seg> de lustrosa madera americana. «El amo» no había llegado aún. Y el joven, más tranquilo ya, sentose ante su mesa y comenzó a clasificar los papeles, ordenando el trabajo del día.</p>
 				<p>Aquella mañana encontraba al escritorio algo de nuevo, de extraordinario, como si entrase en él por vez primera, como si no hubiesen transcurrido allí quince años de su vida, desde que le aceptaron como <seg rend="italic">zagal</seg> para llevar cartas al correo y hacer recados, en vida de don Pablo, el segundo Dupont de la dinastía, el fundador del famoso cognac que abrió «un nuevo horizonte al negocio de las bodegas», según decían pomposamente los prospectos de la casa hablando de él como de un conquistador; el padre de los «Dupont Hermanos» actuales, reyes de un estado industrial formado por el esfuerzo y la buena suerte de tres generaciones.</p>
@@ -413,7 +455,7 @@
 				<p>Malo, no. Fermín recordaba la largueza caprichosa y desordenada con que algunas veces socorría a las gentes en desgracia. Pero su bondad era estrechísima: dividía en castas la pobreza; y a cambio del dinero exigía una supeditación absoluta a todo lo que él pensase y amase. Era capaz de aborrecer a su propia familia, de sitiarla por hambre, si creía con ello servir a su Dios; a aquel Dios a quien profesaba inmensa gratitud porque hacía prosperar los negocios de la casa y era el sostén del orden social.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0019_chap2">
-				<head>II</head>
+				<head xml:id="ne0019_head_001">II</head>
 				<p>Cuando don Pablo Dupont iba a pasar un día con su familia en la famosa viña de Marchamalo, una de sus diversiones era mostrar el señor Fermín, el antiguo capataz, a los Padres de la Compañía o a los frailes dominicos, sin cuya presencia no creía posible una excursión feliz.</p>
 				<p>—A ver, señor Fermín—decía sacando el viejo a la gran explanada que se extendía frente a las casas de Marchamalo, que casi formaban un pueblo.—Eche usted una voz de mando; pero con arrogancia, como cuando era usted de los rojos y marchaba de partida por la sierra.</p>
 				<p>El capataz sonreía viendo que el amo y sus acompañantes de sotana o capucha mostraban gran placer en oírle; pero su sonrisa de campesino socarrón, no llegaba a saberse si era de burla o de agrado por la confianza del señor. Contento de proporcionar un rato de descanso a los muchachos que se encorvaban entre las cepas, ladera abajo, levantando y abatiendo sus azadas pesadísimas, avanzaba con cómica rigidez hasta el parapeto de la explanada, prorrumpiendo en un grito prolongado y atronador:</p>
@@ -578,7 +620,7 @@
 				<p>Y al volver los criados al comedor vieron a doña Elvira, con la pililla de agua bendita de su dormitorio, rociando apresuradamente la silla en que se había sentado el ogro rojo e impío.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0019_chap3">
-				<head>III</head>
+				<head xml:id="ne0019_head_002">III</head>
 				<p>Cuando la docena de perros, bien contada, que tenía el cortijo de Matanzuela, galgos, mastines y podencos, olfateaban a medio día el regreso del aperador, saludaban con fieros aullidos y tirones de cadena el trote de la jaca, y avisado por estas señales el tío Antonio, conocido por el apodo de <seg rend="italic">Zarandilla</seg>, asomábase al portalón para recibir a Rafael.</p>
 				<p>El viejo había sido durante mucho tiempo aperador del cortijo. Le tomó a su servicio el antiguo dueño, hermano del difunto don Pablo Dupont; pero el amo actual, el alegre don Luis, quería rodearse de gente joven, y teniendo en cuenta sus años y la debilidad de su vista, lo había sustituido con Rafael. Y muchas gracias—como él decía con su resignación de labriego—por no haberle enviado a mendigar en los caminos, permitiéndole que viviese en el cortijo con su compañera, a cambio de ocuparse la vieja del cuidado de las aves que llenaban el corral y de ayudar él al encargado de las pocilgas que se alineaban a espaldas del edificio. ¡Hermoso final de una vida de incesante trabajo, con la espina quebrada por una curvatura de tantos años escardando los campos o segando el trigo!...</p>
 				<p>Los dos inválidos de la lucha con la tierra no encontraban otra satisfacción en su miseria que el excelente carácter de Rafael. Como dos perros viejos, a los que se reserva por lástima un poco de pitanza, esperaban la hora de la muerte en su tugurio junto al portalón del cortijo. Sólo la bondad del nuevo aperador hacía llevadera su suerte. El tío <seg rend="italic">Zarandilla</seg> pasaba las horas sentado en uno de los bancos al lado de la puerta, mirando fijamente, con sus ojos opacos, los campos de interminables surcos, sin que el aperador le regañase por su indolencia senil. La vieja quería a Rafael como un hijo. Cuidaba de su ropa y su comida, y él pagaba con largueza estos pequeños servicios. ¡Bendito sea Dios! El muchacho se parecía por lo bueno y lo guapo al único hijo que los viejos habían tenido; un pobrecito que había muerto siendo soldado, en tiempos de paz, en un hospital de Cuba. Todo le parecía poco a la seña Eduvigis para el aperador. Reñía al marido porque no se mostraba, según ella, bastante amable y solícito con Rafael. Antes de que los perros anunciasen su proximidad, oía ella el trotar del caballo.</p>
@@ -846,7 +888,7 @@
 				<p>—El mundo empieza a despertar de su sueño de miles de años; protesta de haber sido robado en su infancia. La tierra es vuestra: nadie la ha creado y pertenece a todos. Si en ella existe algún mejoramiento, obra es de vuestras negras manos, que son vuestros títulos de propiedad. El hombre nace con derecho al aire que respira, al sol que lo calienta, y debe exigir la posesión de la tierra que le sostiene. El suelo que cultiváis para que otro recoja la cosecha, os pertenece, aunque vosotros, infelices, envilecidos por miles de años de servidumbre, dudéis de vuestro derecho, temiendo avanzar la mano para que no os crean ladrones. El que acapara un pedazo de tierra, excluyendo de él a los demás, el que lo entrega a las bestias humanas para que lo hagan producir mientras él permanece ocioso, ese es el que verdaderamente roba a sus semejantes.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0019_chap4">
-				<head>IV</head>
+				<head xml:id="ne0019_head_003">IV</head>
 				<p>Los dos mastines que guardaban durante la noche los alrededores de la torre de Marchamalo, cesaron de dormitar bajo las arcadas de la casa de los lagares, con el cuerpo en círculo, apoyando en el rabo las feroces mandíbulas.</p>
 				<p>Irguiéronse los dos al mismo tiempo, husmearon el espacio, y después de balancearse con cierto titubeo, rugieron, lanzándose viña abajo con un impulso arrollador que hacía saltar la tierra entre sus patas.</p>
 				<p>Eran unos animales casi salvajes, de ojos de fuego y boca roja, erizada de dientes que daban frío. Los dos se abalanzaron sobre un hombre que marchaba encorvado por entre las cepas, fuera del camino que en recta pendiente conducía de la carretera a la torre.</p>
@@ -1076,7 +1118,7 @@
 				<p>¡Un gran día, amigos míos! ¡Un espectáculo conmovedor! El mundo, para marchar bien, debía organizarse con arreglo a las sanas tradiciones... Lo mismo que su casa.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0019_chap5">
-				<head>V</head>
+				<head xml:id="ne0019_head_004">V</head>
 				<p>Un sábado por la tarde, Fermín Montenegro, al salir del escritorio encontró a don Fernando Salvatierra.</p>
 				<p>El maestro dirigíase a las afueras de la ciudad para dar un largo paseo. Trabajaba gran parte del día en traducciones del inglés o escribiendo artículos para los periódicos de la <seg rend="italic">idea</seg>; una faena que le producía lo necesario para el pan y el queso, permitiéndole además auxiliar al <seg rend="italic">compañero</seg> que le alojaba en su casucha y a otros <seg rend="italic">compañeros</seg> no menos pobres que le asediaban con frecuencia, demandándole apoyo en nombre de la solidaridad.</p>
 				<p>Su único placer, después del trabajo, era el paseo; pero un paseo de horas, casi un viaje, hasta bien cerrada la noche, apareciendo inesperadamente en cortijos situados a varias leguas de la ciudad.</p>
@@ -1266,7 +1308,7 @@
 				<p>El aperador lo comprendió todo... ¡Pero qué señorito tan gracioso! Para dar una sorpresa a los amigos y reír con el susto de las mujeres, había obligado a <seg rend="italic">Zarandilla</seg> a que soltase un novillo del establo. La gitana, alcanzada por la bestia, habíase desmayado del susto... ¡Juerga completa!</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0019_chap6">
-				<head>VI</head>
+				<head xml:id="ne0019_head_005">VI</head>
 				<p>—¡La pobrecita Mari-Cruz!—lloriqueó <seg rend="italic">Alicappón</seg>—.</p>
 				<p>La gitana Mari-Cruz se moría. Lo anunciaba <seg rend="italic">Alcaparrón</seg> con sus lloriqueos a todos los del cortijo, sin hacer caso de las protestas de su madre.</p>
 				<p>—¡Qué sabes tú, bobo!... A otros, peor que ella, los sacó alante mi comare...</p>
@@ -1446,7 +1488,7 @@
 				<p>—¡Se va la paloma blanca; la gitana durse; el capullito de rosa antes de abrir!... ¡Señó Dios! ¿en qué piensas, que sólo ajogas a los buenos?...</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0019_chap7">
-				<head>VII</head>
+				<head xml:id="ne0019_head_006">VII</head>
 				<p>Al llegar las vendimias con el mes de Septiembre, los ricos de Jerez se preocupaban más de la actitud de los jornaleros que del buen resultado de la recolección.</p>
 				<p>En el <seg rend="italic">Círculo Caballista</seg>, hasta los señoritos más alegres olvidaban los méritos de sus jacas, los excelencias de sus perros y el garbo de las mozas cuya propiedad se disputaban, para no hablar más que de aquella gente tostada por el sol, curtida por los penalidades, sucia, maloliente y de ojos rencorosos que prestaba los brazos a sus viñas.</p>
 				<p>En los numerosas sociedades de recreo que ocupaban casi todos los bajos de la calle Larga, no se hablaba de otra cosa. ¿Qué más querían los trabajadores de las viñas?... Ganaban un jornal de diez reales, comían en lebrillos la menestra que ellos mismos se arreglaban sin que el amo interviniese; tenían una hora de descanso en invierno y dos en verano, para no caer asfixiados sobre la tierra caliza que echaba chispas; les concedían ocho cigarros durante la jornada y por las noches dormían, teniendo los más de ellos una sábana sobre las esterillas de enea. Unos verdaderos sibaritas los tales viñadores; ¿y aún se quejaban y exigían reformas amenazando con la huelga?...</p>
@@ -1619,7 +1661,7 @@
 				<p>María de la Luz caía y caía en el agujero negro de la inconsciencia, y al caer se agarraba con desesperación a este sostén, concentrando en ello toda su voluntad, dejando el resto de su cuerpo en insensible abandono.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0019_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0019_head_007">VIII</head>
 				<p>A principios de Enero, la huelga de los trabajadores se había extendido por todo el campo de Jerez. Los gañanes de los cortijos hacían causa común con los viñadores. Los dueños de los campos, como en los meses de invierno no eran importantes los trabajos agrícolas, sobrellevaban sin impaciencia el conflicto.</p>
 				<p>—Ya se rendirán—decían.—El invierno es duro y el hambre mucha.</p>
 				<p>En las viñas, el cuidado de las cepas se hacía por los capataces y los braceros más allegados al dueño, arrostrando la indignación de los huelguistas, que les tachaban de traidores, amenazándolos con venganzas colectivas.</p>
@@ -1873,7 +1915,7 @@
 				<p>Y, precipitadamente, salió del hotel. Cuando llegó a la calle comenzaba a anochecer.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0019_chap9">
-				<head>IX</head>
+				<head xml:id="ne0019_head_008">IX</head>
 				<p>A media tarde llegaron los primeros grupos de trabajadores al inmenso llano de Caulina. Presentábanse como negras bandadas, saliendo de todos los puntos del horizonte.</p>
 				<p>Unos bajaban de la serranía, otros venían de los cortijos del llano, o de las tierras situadas al otro lado de Jerez, llegando a Caulina después de rodear la ciudad. Los había de los confines de Málaga y de la vecindad de Sanlúcar de Barrameda. El aviso misterioso había volado de los ventorros a los ranchos, por toda la extensa campiña, y cuantos trabajaban en ella acudían presurosos, creyendo llegado el momento de la venganza.</p>
 				<p>Miraban con ojos feroces a Jerez. El desquite de los pobres estaba próximo, y la ciudad blanca y risueña, la ciudad de los ricos, con sus bodegas y sus millones, iba a arder, iluminando la noche con el esplendor de su ruina.</p>
@@ -2096,7 +2138,7 @@
 				<p>Y acabó por desplomarse de bruces, con gran estrépito de botellas y copas que le siguieron en su caída, como si el vino quisiera mezclarse con la sangre.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0019_chap10">
-				<head>X</head>
+				<head xml:id="ne0019_head_009">X</head>
 				<p>Tres meses iban transcurridos desde que el señor Fermín abandonó la viña de Marchamalo, y sus amigos apenas si le reconocían, viéndole sentado al sol, en la puerta de la miserable casucha que habitaba con su hija en un arrabal de Jerez.</p>
 				<p>—¡Pobre señó Fermín!—decían las gentes al verle.—No es ni su sombra.</p>
 				<p>Había caído en un mutismo cercano a la imbecilidad. Permanecía horas enteras inmóvil, con la cabeza abatida, como si le abrumasen los recuerdos. Cuando su hija se aproximaba a él para hacerle entrar en la casa o anunciarle que la comida estaba en la mesa, parecía despertar, darse cuenta de lo que le rodeaba, y sus ojos seguían a la muchacha con una mirada severa.</p>

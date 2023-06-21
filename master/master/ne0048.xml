@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Las cerezas del cementerio</title>
-				<title type="sub"></title>
+				
 				<title type="short">Cerezas</title>
-				<title type="idno"><idno type="viaf">312352496</idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1661</measure>
@@ -138,16 +131,52 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0048</idno>
+						<idno type="cligs">ne0048</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/las-cerezas-del-cementerio-2/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1932">1932</date></bibl>
-				<bibl type="edition-first"><date when="1910">1910</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Las cerezas del cementerio</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/312352496/">312352496</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/las-cerezas-del-cementerio-2/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1932">1932</date></bibl>
+					<bibl type="edition-first"><date when="1910">1910</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title>: 	<title type="sub">novela</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1418335037" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1418335037"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342696467" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696467"/> </bibl>
+						<bibl type="further-edition"><title type="main">Las cerezas del cementerio</title>: 	<title type="sub">novela</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="084302364" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=084302364"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title>: 	<title type="sub">novela</title> <date when="1930">1930</date>, <publisher>Co. Ibero-Americana de Publ.</publisher> <pubPlace>Madrid;Barcelona;Buenos Aires</pubPlace> 		<idno type="ppn" n="465839398" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465839398"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title>: 	<title type="sub">novela</title> <date when="1940">1940</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1421206161" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421206161"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title>: 	<title type="sub">novela</title> <date when="1940">1940</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464910404" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464910404"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title> <date when="1952">1952</date>, <publisher>Editorial Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="463554590" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463554590"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title> <date when="1991">1991</date>, <publisher>Taurus Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1620270250" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1620270250"/> 		<idno type="isbn" n="8430601600"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title> <date when="1991">1991</date>, <publisher>Taurus Edición</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="126991820" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=126991820"/> 		<idno type="isbn" n="8430601600"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de Ojeda (Ensayo de novela). Hilván de escenas. De vivir. La novela de mi amigo. Nómada. La palma rota. El hijo santo. Las cerezas del cementerio. Niño y grande</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362006"/> 		<idno type="isbn" n="8496452255;9788496452251"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title> <date when="2007">2007</date>, <publisher>Inst. Alicantino de Cultura "Juan Gil-Albert";Diputación Provincial de Alicante</publisher> <pubPlace>Alicante;Alicante</pubPlace> 		<idno type="ppn" n="1343075165" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1343075165"/> 		<idno type="isbn" n="9788477849728;9788475991887"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las cerezas del cementerio</title> <date when="2007">2007</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="550340211" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=550340211"/> 		<idno type="isbn" n="9788477849728"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
@@ -155,6 +184,14 @@
 				<p>Félix decide hacer un viaje siguiendo los pasos de su tío muerto a la India. Antes pasa por las fincas de los hermanos de su padre. Allí vuelve a ver  a su prima Isabel (con la que coquetea) y su primo Silvio. Beatriz y Julia llegan tambien al mismo lugar, donde tienen una finca y Félix y Beatriz reinician su romance. Félix decide realizar un viaje por las montañas de alrededor. Al volver tiene varios enfrentamientos con Silvio (quien ha comenzado una relación sentimental con Julia y tiene envidia de Félix) y con el marido de una mujer con la que Félix ha fantaseado. Al poco tiempo muere por una angina de pecho.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -185,8 +222,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">etopeya</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -194,7 +231,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE10">2.0</term>
 					<term type="text.movement">modernista</term>
-					<term type="text.narration.narrator" >heterodiegetic</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
@@ -221,13 +258,14 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-01" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front> </front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0048_chap1">
-				<head>- I - Preséntanse algunas figuras de esta fábula</head>
+				<head xml:id="ne0048_head_000">- I - Preséntanse algunas figuras de esta fábula</head>
 				<p>Desde el primer puente del buque contemplaba Félix la lenta ascensión de la luna, luna enorme, ancha y encendida como el llameante ruedo de un horno. Y miraba con tan devoto recogimiento, que todo lo sentía en un santo remanso de silencio, todo quietecito y maravillado mientras emergía y se alzaba la roja luna. Y cuando ya estuvo alta, dorada, sola en el azul, y en las aguas temblaba gozosamente limpio, nuevo, el oro de su lumbre, aspiró Félix fragancia de mujer en la inmensidad; y luego le distrajo un fino rebullicio de risas. Volviose, y sus ojos recibieron la mirada de dos gentiles viajeras cuyos tules, blancos, levísimos, aleteaban sobre el pálido cielo.</p>
 				<p>Se saludaron; y pronto mantuvieron muy gustoso coloquio, porque la llaneza de Félix rechazaba el enfado o cortedad que suele haber en toda primera plática de gente desconocida. Cuando se dijeron que iban al mismo punto, Almina, y que en esta misma ciudad moraban, admirose de no conocerlas siendo ellas damas de tan grande opulencia y distinción. Es verdad que él era hombre distraído, retirado de cortesanías y de toda vida comunicativa y elegante.</p>
 				<p>-Tampoco nosotras -le repuso la que parecía más autorizada por edad, siendo entrambas de peregrina hermosura- sabemos de visitas ni de paseos. Yo nunca salgo, y mi hija sólo algunas veces con su padre.</p>
@@ -328,7 +366,7 @@
 				<p>Nada confesó a sus padres, barruntando la enemiga de entrambas familias. Padecía por averiguar la razón de ella, y gustaba de abandonarse a su secreto, cuyas nieblas, y las del apartamiento de la vida de Beatriz y Julia, no dejaban que su amistad se empobreciese y degenerase en la que suelen tenerse los sosegados y maldicientes vecinos de un mismo lugar provinciano.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0048_chap2">
-				<head>- II - La mirada </head>
+				<head xml:id="ne0048_head_001">- II - La mirada </head>
 				<p>Rendido, Félix dejó hincado el azadón en la tierra. Tenía el cuello y los brazos húmedos y desnudos, y la cabeza nevada de florecillas caídas de los frutales. Desenterró los pies, que sacaron enredadas hierbas y raíces rotas y jugosas, y brincando, zahondando y cayéndose llegó a la suave firmeza de un sendero.</p>
 				<p>Desde un sombráculo, hecho de higueras domadas hasta ayuntarse redondamente, miraba doña Beatriz el retorno del joven.</p>
 				<p>-Le avisé que se cansaría pronto; y usted se burlaba, terco y entusiasmado de hacerse labriego. ¿Todavía no sabe cómo es de tornadizo?</p>
@@ -369,7 +407,7 @@
 				<p>Sonrieron. Y no se atrevieron a mirarse ni hablarse; y padecían en el silencio; y para no confesarse la turbación de sus almas, se asomaron a la cisterna. Estaba el agua somera, clara, inmóvil, llena de júbilo del cielo y de las parras. Apareció copiada la rubia cabeza de Félix, y luego doña Beatriz asomada a sus hombros. Y ¡oh, prodigiosa visión del limpio, fresco y deleitoso espejo!, Beatriz se veía pálida y aniñada como su hija; y la mirada que antes no osaron darse, la recibieron entrambos tan fuerte y seguida dentro de la guardada agua, que creyeron rizado y roto el natural espejo, y fueron ellos los que se habían conmovido apasionadamente.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0048_chap3">
-				<head>- III - Doña Beatriz cuenta de Guillermo. Pasa el espectro de Koeveld</head>
+				<head xml:id="ne0048_head_002">- III - Doña Beatriz cuenta de Guillermo. Pasa el espectro de Koeveld</head>
 				<p>Pensaba Félix que el entristecimiento, los ideales, los raptos y ansiedades del héroe, del santo, del sabio, acaso tendrían su principio en un desposeerse de lo presente, en alejarse de sí mismo viéndose entre un humo o vapor luminoso de gloria, de infortunio, de infinito, dentro de un pasado remoto, inmenso; envueltos en un mañana sin límites, perdido, olvidado o malquerido el pobrecito instante de lo actual. La augusta serenidad divina emanaría de no salir nunca del Hoy eterno. Y seguía diciéndose Félix que él, tan aturdido y espléndido de alegría cuando la vida se le deslizaba <seg rend="italic">sucesivamente</seg>, pasaba a una ansia insaciada y misteriosa, quizá enfermiza, recordando lo pretérito o fingiéndose lo no llegado o desconocido en tiempos, tierras y placeres. ¿Era esto prender alas a su ánima, ennoblecerse, sublimarse? Pues siéndolo, ¡Señor!, confesaba que, lejos de probar el altísimo goce que viene de pulir nuestro espíritu, el suyo padecía y se apagaba.</p>
 				<p>¡Cuánto no sufrirían los héroes, los místicos y genios! ¿O es que el sufrimiento cerca y penetra vorazmente a los que no pertenecen a esas elevadas estirpes y lo desean, originándose la casta infortunada de los artistas, infortunada por ese perpetuo tránsito del dolor al goce, por ese hundirse en lo pasado embriagándose de su rara y santa fragancia, y el perderse en lo no visto, queriéndolo tener, siendo nada, y no gozar la realidad viva y sabrosa?</p>
 				<p>Y aquí llegaba Félix en su pensamiento, cuando le asaltó la risa. Calló. Y volvió a reírse largamente.</p>
@@ -431,7 +469,7 @@
 				<p>Los recios balaustres se estremecieron por el acometimiento de Félix. Bajo las últimas palmeras de la silenciosa y ancha calle se alejaba una bella mujer; detrás caminaba un hombre alto, craso, pálido, cabeceando pesadamente.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0048_chap4">
-				<head>- IV - Hogar de Félix. Estrado de amor </head>
+				<head xml:id="ne0048_head_003">- IV - Hogar de Félix. Estrado de amor </head>
 				<p>Hundido en una vieja butaca de cordobán, escuchaba Félix, muy risueño, la menuda y amorosa plática de su padre. Y no pudiendo seguir atado a tan largo silencio y quietud, alzose, miró al anciano de modo dulcísimo, y con suave ironía le dijo:</p>
 				<p>-Lo que hasta aquí me has dicho «son documentos que han de adornar mi ánima»; ahora sepamos los que han de servir para ornato y salud de mi cuerpo.</p>
 				<p>Don Lázaro amohinose mucho, y no quiso proseguir.</p>
@@ -526,7 +564,7 @@
 				<p>«Y si mirasteis las estrellas al abrazar a vuestra amada, no la abrazaréis de igual modo que si hubieseis mirado las paredes de vuestro aposento».</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0048_chap5">
-				<head>- V - Donde se cuenta el viaje que Félix hizo con el espectro</head>
+				<head xml:id="ne0048_head_004">- V - Donde se cuenta el viaje que Félix hizo con el espectro</head>
 				<p>Comenzaba a removerse un tren mixto, viejo y pesado, de Almina a Los Almudeles, cuando Félix logró subir al único departamento de primera.</p>
 				<p>Román, antiguo y celoso criado de los Valdivia, que se desesperó y rezongó furiosamente mientras Félix estuvo despidiéndose de su «madrina», dejó en un asiento el equipaje de su señor; éste lo puso en las mallas del coche, y después sentose rendido, enjugándose la bañada frente, y sólo entonces reparó el viajero en otros dos que le estaban mirando. Apenas pudo saludarles, impresionado de la visión de una figura crasa, descolorida, de oblicuos y menudos ojos, y boca torcida por una mueca de espanto o de mal. ¡Van Koeveld! Sí, Koeveld; pero el seudo Koeveld, que el feroz holandés había muerto verdaderamente; y el Koeveld del vagón era el mismo hombre que Beatriz y él vieran una tarde caminando despacio detrás de su esposa.</p>
 				<p>Al lado estaba la bella mujer. Su actitud, su palabra, su blancura y hasta el liso peinado de sus cabellos negros y opulentos, la mostraban infortunada y medrosa. Contemplaba sumisamente al marido; sus pupilas, grandes, obscuras y aterciopeladas, se llenaban de compasión, y luego, sus ojos se apagaban, entristecidos, gastados. En fin, toda la faz de la señora recordaba las pálidas y esfumadas efigies de los miniados esmaltes antiguos. Y este infantil y tímido aspecto hacía más insinuante y atrevida la línea valiente de su busto, cuya palpitación se le notaba por lo delgado del vestido primaveral. Levantose para ver un pueblecito blanco, que se bañaba en los jugosos verdores de los viñedos, y, ahora, se manifestó la completa y espléndida gentileza de su cuerpo. Pero tan graciosas lozanías parecían mustiadas y oprimidas por miedos y pesares de su espíritu y, algunas veces, por la fuerza rechazadora y celosa de los ojos del marido. Mirábala el falso Koeveld, y todas las escondidas hermosuras de la esposa se reducían humilladas, en actitud de un plebeyo cansancio, llegando a parecer vestida de ropas groseras y recias de fámula, de esas telas que aprietan, menoscaban y ahogan toda línea triunfal de la carne. Pronto recuperaba su donaire, pasaba a embelesamientos tentadores, y de cuando en cuando alzaba las manos para enmendar alguna rebeldía de su sombrero, y entonces resaltaba el prodigio de su pecho, firme y redondo, como de doncella, y adivinábase el delicioso secreto de sus axilas.</p>
@@ -562,7 +600,7 @@
 				<p>...En tanto, la bella viajera seguía musitando la trabajosa lección del periódico; Koeveld dormitaba; de tiempo en tiempo entreabría los párpados, y una pupila blanda, untuosa, de pez muerto, se posaba en Félix. Félix, entregado a sus pensamientos, miraba distraído el paisaje. El viejo tren aullaba y jadeaba subiendo un agrio desmonte, desde cuya altura un cabrerizo gritó riéndose y su hato huía espantado como del lobo. La pupila de Koeveld tornaba a cegarse, y la mujer leía, triste y cansadamente.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0048_chap6">
-				<head>- VI - En el que aparecen nuevos personajes</head>
+				<head xml:id="ne0048_head_005">- VI - En el que aparecen nuevos personajes</head>
 				<p>Desde la ventanilla reconoció Félix a don Eduardo, o tío Eduardo, varón muy bondadoso, grueso y pálido, vestido de negro, corbata de tirilla de seda, sombrero de paja morena y de alas tan recogidas que tenía hechura eclesiástica. En sus manos femeninas o de prelado, siempre traía una caña de Indias con puño redondo de hueso, rajado de caérsele con frecuencia. A su lado estaba Silvio, hijo de su hermana, muy colorado y rollizo perito electricista que ministraba dos molinos harineros y otro de papel de tío Eduardo. Era mozo de reposado temperamento, hacía maravillas de marquetería y paseaba con graves señores.</p>
 				<p>Silvio enrojeció más al ver a su primo. A punto de abrazarle se contuvo y apartose para que primeramente lo hiciera don Eduardo.</p>
 				<p>Hasta la llegada a los Almudeles sintió Félix la esperanza de que nadie saliese a recibirle, facultándole este descuido para olvidarse de los avisos de su padre y cenar y dormir en cualquier hospedería y buscar postas que muy temprano le llevasen al retiro de «La Olmeda».</p>
@@ -641,7 +679,7 @@
 				<p>-¿Yo atolondrado? ¡Y le hablo a Isabel con palabras de una santa doctora!</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0048_chap7">
-				<head>- VII - De lo que aconteció en casa de don Eduardo</head>
+				<head xml:id="ne0048_head_006">- VII - De lo que aconteció en casa de don Eduardo</head>
 				<p>La sala del piano era de mucha sencillez: las paredes, enlucidas; el suelo, de viejos manises, blancos y lustrosos; la sillería, enfundada de lienzo, rígido de almidón; los cuadros tenían marcos anchos y lisos de palisandro, y vidrios opacos y verdosos como láminas de agua de mar, y bajo sus cuajadas ondas se esfumaban grabados idílicos de Berghem y retratos familiares. El piano era de un hermoso color de ámbar que hacía transparencias; y en un rincón prorrumpía, de un orondo cuenco de Talavera, una mata de lirios de paño, obra de monjas.</p>
 				<p>La sala tenía una alcoba muy honda, en la que fue aposentado Félix.</p>
 				<p>No salieron al camino de los olmos, y temprano quedó en silencio toda la casa.</p>
@@ -719,7 +757,7 @@
 				<p>No se reía, no se burlaba de él. La tortuga, muy quietecita, estaba devorando una mosca que tenía las alas quebradas.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0048_chap8">
-				<head>- VIII - Camino de «La Olmeda»</head>
+				<head xml:id="ne0048_head_007">- VIII - Camino de «La Olmeda»</head>
 				<p>Era la dorada siesta. Había un hondo silencio, y en él se derramaba una blanda llovizna de grititos de los pájaros ocultos en los follajes, y el fresco estruendo de los caños de la fuente, tan encandecidos de sol que semejaban varas de plata. Félix oyó retumbar sus pasos en todo el ámbito de la vieja escalera.</p>
 				<p>Entró en el escritorio. Sólo le aguardaba Silvio, que para divertir la somnolencia golpeaba un globo de cristal, que, al tocarlo, se llenaba internamente de una espesa cellisca, y el país de bulto de su fondo quedaba nevado, desoladísimo. Era de grande recreación para Silvio estremecer este pisapapeles. Félix también lo movió.</p>
 				<p>Avisole su primo que en las afueras esperaban las bestias, y que ya se llevaron su equipaje.</p>
@@ -808,7 +846,7 @@
 				<p>Fueron entrando. Cerráronse las ferradas puertas con recio estruendo. La paz de la noche quedó rota mucho tiempo por el fiero ladrar de los mastines; otros perros lejanos respondían, y un autillo que moraba en la flecha del ciprés voló medrosamente a los más remotos álamos del río.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0048_chap9">
-				<head>- IX - Tía Lutgarda</head>
+				<head xml:id="ne0048_head_008">- IX - Tía Lutgarda</head>
 				<p>Una autorizada criada, redonda, lardosita, encendió la lámpara de bronce de la sala, cuyas rejas se abrían frente a los almiares. Y Félix vio, aterrado, que por las blancas y lisas paredes se precipitaban las sombras de dos piernas enormes unidas en los pies, y de un cuerpo colgado y retorcido. Luego los espectros quedaron fijos en el muro.</p>
 				<p>Volviose, y halló un Cristo muerto en la cruz, encima de unas andas.</p>
 				<p>-¿Miras la santa imagen? ¡Es el Cristo de Posuna, tan milagroso! Pero ven, descansa.</p>
@@ -915,7 +953,7 @@
 				<p>Paseó por la estancia. Su blancura, la noble ancianidad del mueblaje, la cama grande, de columnas y velos, la cruz de palmera bendecida sobre la pilita de loza azul, y luego, el silencio y la sensación de grandeza y vejez de toda la casa y de la profunda noche de este paisaje, le llevaron imaginativamente a remotos tiempos, cuando poblaban el solar los Valdivia que decidieron su vida; él aún no existía y ya estaba plasmada y sellada su alma con herencia de misticismos, de miedos, de pesadumbres, de alegrías y apasionamientos delirantes...</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0048_chap10">
-				<head>- X - Anacreóntica</head>
+				<head xml:id="ne0048_head_009">- X - Anacreóntica</head>
 				<p>Félix abrió los ojos; ni voz ni ruido le habían despertado. Largo rato estuvo sintiéndose dormido, sabiéndolo placenteramente. Estaban entornados los maderos de las ventanas, transparentándose sus nudos de púrpura. Un dedo de sol hacía el bello milagro del iris tocando la copa del agua, y el prisma se deshacía en gotas por las blancas cortinas del lecho.</p>
 				<p>Contempló cariñosamente el aposento. Notó el silencio, aún más profundo porque se durmió emblandecido y arrullado por los cánticos de los insectos, y ahora despertaba sumido en quietud de mañana de domingo.</p>
 				<p>Nada más sonaba el enojo de una abeja, que había subido hasta la ventana por la escala de mieles de un viejo rosal. El zumbido se alejaba, se dormía dentro de las flores; en seguida rebrotaba la terca murmuración.</p>
@@ -998,7 +1036,7 @@
 				<p>...Por el zarzal del seto asomaba la espantada cabeza de Alonso, ya sin majestad, sin lumbres de triunfo ni nada...</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0048_chap11">
-				<head>- XI - Plática</head>
+				<head xml:id="ne0048_head_010">- XI - Plática</head>
 				<p>-Yo no sé, Félix, a qué punto llega tu descreimiento y frialdad en las cosas devotas...</p>
 				<p>-A ninguno, tía Lutgarda, ¿quieres que lo jure?</p>
 				<p>-¡No jures, hijo, no jures! -le pidió la señora mirándole enternecidamente. Teresa sirvió una sopa dorada y olorosa.</p>
@@ -1044,7 +1082,7 @@
 				<p>Y llegando aquí el <seg rend="italic">Cide Hamete</seg> de esta sencilla historia, jura solemnemente que el labriego cometió bellaquería, porque Félix no llegó a chuparle ni la uña a la señora de Giner, y que lo que hizo Félix fue tomar y acercarse la mano y calentarle con su aliento el dedo herido; y todavía añade que entonces Alonso recomendó a la dama una medicina compuesta de vilezas, que el historiador no quiere decir, y que Félix lo castigó con indignadas y furiosas palabras.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0048_chap12">
-				<head>- XII - De lo que le aconteció a Félix en su primera salida por los campos de Posuna</head>
+				<head xml:id="ne0048_head_011">- XII - De lo que le aconteció a Félix en su primera salida por los campos de Posuna</head>
 				<p>La primera semana de su llegada la pasó Félix sin salir del agreste estado de «La Olmeda». Todo lo caminó: hondones frondosos y obscuros y eminencias bravías y yermas, comiendo algunas veces con labriegos y pastores. Las mulas, las vacas, las ovejas, los perros y hasta las gallinas y los gorriones de la heredad, amaron a este Valdivia que les daba con mucha solicitud zoquetitos de pan y azúcar y les hablaba como un san Francisco, aunque de otra manera más profana. Singularmente los cabritillos y recentales le hacían halagos muy lindos, brincando y amagando toparle graciosamente. Y un mastín corpulento, siempre jadeante, tenía celos, y no bien se recostaba Félix sobre la hierba, iba y le colocaba encima su cabezota hirsuta, feroz y triste.</p>
 				<p>Vino otro sábado, día de la visita de Silvio; pero éste avisó que le era necesario marcharse a Valencia con su madre para esclarecer un pago del fisco. A la otra mañana, tía Lutgarda pidió a Félix que le asentase las notas de cargas y moliendas de la aceituna. De una arquilla de ciprés sacó la señora los cuadernos de cuentas; pero después de los fajos de documentos, descubrió el sobrino los vislumbres de joyas antiguas; y los abalorios de ámbar, miniaturas, anillos, sartales de filigranas, abanicos, bujetas y aderezos divirtieron a Félix de su trabajo. Todo lo iba mostrando tía Lutgarda, y exhalaba un hondo suspiro al abrir los estuches. Dejó para el postrero uno grande, de concha, y al tomarlo murmuró:</p>
 				<p>-Es joya sagrada y de mucha hermosura. La trajo un Valdivia que estuvo de oidor en la Chancillería de Cartagena de Indias, para un deudo suyo, obispo de Murcia.</p>
@@ -1097,7 +1135,7 @@
 				<p>...Esa noche, Félix tuvo un sueño de un hombre hirsuto y cojo aplastado de piedras, de un pollo desplumado y cornudo, y una paloma blanca degollada por un feroz cuchillo de cocina, y todo rodeado de la hermosura y alegría de la vida.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0048_chap13">
-				<head>- XIII - Al lado de Isabel</head>
+				<head xml:id="ne0048_head_012">- XIII - Al lado de Isabel</head>
 				<p>Don Eduardo no dejó que Félix reposase un momento. En seguida que vino se lo llevó para mostrarle todo el edificio, que era grande, encalado y alegre, con su reloj de sol de reluciente estilo en el hastial, encima de la placa del Sagrado Corazón de Jesús, que dice: «Reinaré».</p>
 				<p>Los lagares, la almazara y los trojes entusiasmaron a Félix.</p>
 				<p>Y su tío, sonriendo beatíficamente, repetía:</p>
@@ -1193,7 +1231,7 @@
 				<p>Se hundieron en la quebrada de «La Olmeda»; y al pasar bajo la quinta, que Félix imaginaba en abandono, recibieron la inesperada luz de todos sus balcones. En el portal había dos acémilas bramadas de equipaje. Ladraba ferozmente el perro desorejado. Dentro, en la casa, resonaba un alegre vocerío...</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0048_chap14">
-				<head>- XIV - Nuevo estrado de amor</head>
+				<head xml:id="ne0048_head_013">- XIV - Nuevo estrado de amor</head>
 				<p>En tanto que Félix acababa de vestirse, comentaba con mucho donaire la blandura de tío Eduardo y la rigidez de doña Constanza.</p>
 				<p>Tía Lutgarda, que le escuchaba con embelesamiento, le dijo:</p>
 				<p>-¡Llegarás a quererla tanto que no podrás separarte de esa señora!</p>
@@ -1285,7 +1323,7 @@
 				<p>Todos la miraron mucho.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0048_chap15">
-				<head> - XV - Vino dulcísimo en amarga copa</head>
+				<head xml:id="ne0048_head_014"> - XV - Vino dulcísimo en amarga copa</head>
 				<p>¡Qué aliento, qué alas nos llevan y remontan gloriosamente a las más altas cumbres de la vida; y qué mano velluda, gorda y callosa, mano de Alonso, nos postra y sepulta en abismos donde asistimos a nuestro propio acabamiento! Casi con estas palabras se decía Félix su íntimo examen; y ellas parece que le hicieron acordarse de las de Stendhal: «Nada es tan doloroso como examinarse y dudar cuando se goza».</p>
 				<p>Porque Félix guardaba todavía en sus labios y hasta en sus entrañas la gustosa suavidad del último beso de doña Beatriz, recibido al tomar de la enyesada y florida cantarera la limpia jarra trasudada de frescura.</p>
 				<p>Salió de retorno a «La Olmeda». Toda la tarde, tan azul, tan infinita, estaba aromada de mujer, como su boca.</p>
@@ -1354,7 +1392,7 @@
 				<p>¡Acatado sea divinamente el poeta, que supo cantar el amargor que nace del seno del placer, amargor escondido hasta en las mismas flores! Del sabio Lucrecio digo.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0048_chap16">
-				<head>- XVI - El Calvario</head>
+				<head xml:id="ne0048_head_015">- XVI - El Calvario</head>
 				<p>Lícitamente se puede afirmar que los padres del señor párroco de Posuna no supieron palabra de Sócrates.</p>
 				<p>Pues bien; sin conocerlo, siguieron el prudente aviso del filósofo que recomienda el dar a los hijos nombres significativos y sonoros; y al suyo, que, andando los años, había de ser capellán de su aldea, le pusieron Leonardo.</p>
 				<p>No consta que tuviese eficacia tan grande acierto y cuidado.</p>
@@ -1467,7 +1505,7 @@
 				</lg>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0048_chap17">
-				<head>- XVII - Beatriz y Lambeth</head>
+				<head xml:id="ne0048_head_016">- XVII - Beatriz y Lambeth</head>
 				<p>Una mañana, doña Beatriz se dijo que, amando inmensamente a su hija, sentía celos de ella. Y luego de confesárselo, se avergonzó y dudó, porque los celos inducen a malquerer a quien los motiva; engendran el deseo de su daño, de que no sea hermoso o perfecto, si es la belleza, la inocencia o venustidad lo que atrae el amor codiciado.</p>
 				<p>Doña Beatriz deleitábase en la gentileza y donosura de Julia; sabiéndose lozana, adornada de gracias peregrinas, no le pesaba que la hija mereciese y aun le quitase miradas y rendimiento, como dicen que les lastima a algunas madres todavía abrasadas de fuego de juventud. No temía que aquella florescencia mustiara el pomposo y dulce rosal de su cuerpo, antes bien le halagaba el cuidado de ese huerto nacido de su carne y de su alma.</p>
 				<p>Tampoco imitaba los donaires y candores de las doncellitas como Julia, ni engañaba su edad con mudas, afeites y otros embelecos y malicias de tocador. Quizá no era todo sencillez de ánimo, o no manifestaba sacrificio, porque la señora estaba en la cumbre de la juventud y hermosura. Sin pensamiento de pecado hubiese recibido el requiebro de un gallardo yerno, deseándolo poseído de amor por Julia. La contemplaba embelesadamente; la veía adorable, y agradecía a Dios la merced abundosa de encantos que sobre ella derramara; y si en aquel instante, y por acaso, algún espejo le mostraba la espléndida línea de su figura, la lumbre de sus ojos, el oro opulentísimo de sus cabellos, daba otra vez gracias al Señor, sin compararse a la hija ni pensar en los diecisiete años que las alejaban.</p>
@@ -1538,7 +1576,7 @@
 				<p>-Le ocurre siempre. Después que duerme se hunde tres dedos en la garganta para arrojar; se enjuaga y queda ya bien.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0048_chap18">
-				<head>- XVIII - En la «Cumbrera»</head>
+				<head xml:id="ne0048_head_017">- XVIII - En la «Cumbrera»</head>
 				<p>La manta, dobladita; el cestillo de la comida, muy lleno, limpio y oloroso; los anteojos, sujetos a la cayada de cuento afilado; la linterna y unas viejas polainas; todo lo puso tía Lutgarda, la primorosa estanciera de Félix, encima de la mesa, mientras el sobrino dormía. Además le dejó escritos muchos avisos maternales y la súplica de que viniese pronto.</p>
 				<p>Estos cuidados conmovieron a Félix; pero, en seguida, le violentaron, llegando a entristecerle. ¡Jamás los quiso tío Guillermo en sus audaces aventuras! Obermann, los despreciaría. Obermann, abandona en su hospedería los dineros, el reloj, todo lo que pueda recordarle la pobre vida reglada de ciudad, y trepa solo por los Alpes; hambriento, cegado por la nieve, se pierde y se abandona a un alud que cae con trueno de castigo bíblico sobre un torrente...</p>
 				<p>Félix decidió no llevarse los gemelos. Es que le cansaba encerrar la mirada en esos tubos tan negros y le agobiaba el despedazar las perspectivas.</p>
@@ -1661,7 +1699,7 @@
 				<p>-¡Qué lástima! ¡Qué lástima! -Y tía Lutgarda miró desoladamente al Señor de la Cruz.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0048_chap19">
-				<head>- XIX - Reaparece el espectro de Koeveld</head>
+				<head xml:id="ne0048_head_018">- XIX - Reaparece el espectro de Koeveld</head>
 				<p>Despertose Félix; abrió las ventanas, y se acostó de nuevo teniendo delante la magnificencia del día. Sobre el azul viajaba una nube como una montaña de espumas. Y Félix sintió que se llenaba de su blancura gloriosa, que se sumía en ella deslizándose. El cansancio de sus jornadas por la «Cumbrera» le emblandecía y ahondaba en una pereza mezclada de dolor y delicia. Notaba muy delgadamente los rumores, la quietud, la color, la sensación de todo cuanto le cercaba y veía; y su cuerpo estaba tan sutilizado, tan leve, que perdía el sentirse a sí mismo, pareciéndole hecho de lo demás, de silencio, de claridad y grandeza de la mañana.</p>
 				<p>Tía Lutgarda le había traído un tazón de leche y quedose mucho rato acompañándole, mirándole, sin hablar. Le separó los cabellos de la frente. Y los dedos de la señora fueron tan suavísimos, que Félix volvió a dormirse.</p>
 				<p>Ya muy tarde, después que doña Lutgarda terminara sus rezos, y el reloj de pesas de una alta estancia, cerrada siempre, diera las doce, tornó a subir y pasar inquieta y tímida al dormitorio del sobrino.</p>
@@ -1746,7 +1784,7 @@
 				<p>Quedó tendido bajo las rodillas de Giner. Estaba muy blanco, siniestro, con livores en la nariz y en los labios. El sudor y el estiércol le pegaban los dorados cabellos a las sienes.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0048_chap20">
-				<head>- XX - «En los nidos de antaño no hay pájaros hogaño»</head>
+				<head xml:id="ne0048_head_019">- XX - «En los nidos de antaño no hay pájaros hogaño»</head>
 				<p>El Señor había escuchado las plegarias de tía Lutgarda. Y cuando don Lázaro, su esposa y doña Dulce Nombre llegaban a los portales de la casona, Félix pudo asomarse a lo último de la ancha escalera para recibirles.</p>
 				<p>Quisieron que en seguida se acostase el enfermo, creyendo que sólo por mitigarles su ansiedad había salido. Pero Félix les pidió tanto que le dejasen asistir a la comida, que se lo consintieron. Es cierto que el día era de los más limpios y templados del otoño, y que un médico de Almudeles, hombre rico y viejo y antiguo amigo de la casa, que vino y alojaba en «La Olmeda» desde la tarde del mal de Félix, les dijo que éste podía quedar levantado, pero que nada más tomase leche de oveja.</p>
 				<p>Las hondas y humeantes fuentes que sacaba Teresa, las devolvía colmadas a la cocinera, pues los señores apenas las cataban. Sólo el doctor engullía de todos los guisos y loaba con entusiasmo sus primores. En cambio, todos hablaban mucho y nerviosamente. Don Lázaro comentó la ausencia de don Eduardo y Silvio.</p>
@@ -1820,7 +1858,7 @@
 				<p>Félix había muerto.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0048_chap21">
-				<head>- XXI - Las cerezas del cementerio</head>
+				<head xml:id="ne0048_head_020">- XXI - Las cerezas del cementerio</head>
 				<p>La «madre Giner» y los hijos llegaron a la heredad del valle de Posuna cuando la abundancia doblaba el ramaje de los cerezos y trenzaba y rendía los panes.</p>
 				<p>La bendición del Señor, que bajaba a las tierras de don Eduardo, solía beneficiar también los campos de toda la llanada.</p>
 				<p>Pero, ese año, la divina merced era copiosísima.</p>
