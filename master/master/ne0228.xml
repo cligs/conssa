@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">En la carrera</title>
-				<title type="sub"></title>
+				
 				<title type="short">Carrera</title>
-				<title type="idno">
-					<idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1051062</idno>
-					<idno type="viaf">79060694</idno>
-					<name type="short">Trigo</name>
-					<name type="full">Felipe Trigo</name>
+					<name type="short" ref="#Trigo"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1875</measure>
@@ -139,13 +131,43 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0228</idno>
+						<idno type="cligs">ne0228</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/en-la-carrera--0/"/>.</bibl>
-				<bibl type="print-source"><date when="1000"></date></bibl>
-				<bibl type="edition-first"><date when="1909">1909</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">En la carrera</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Trigo">
+						<name type="full"><forename>Felipe</forename> <surname>Trigo</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654 - IP 8655">IP 8654 - IP 8655</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118867806">118867806</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3068144/">Q3068144</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1051062.html">XX1051062</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/79060694/">79060694</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/en-la-carrera--0/"/>.</bibl>
+					<bibl type="print-source"><date when="1000"/></bibl>
+					<bibl type="edition-first"><date when="1909">1909</date><idno source="k10plus" type="ppn" n="464130603" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464130603"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En la carrera</title> <date when="1909">1909</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464130603" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464130603"/> </bibl>
+						<bibl type="further-edition"><title type="main">En la carrera</title>: 	<title type="sub">(un buen chico estudiante en Madrid) ; novela</title> <date when="1920">1920</date>, <publisher>Renacimiento</publisher> <pubPlace>(Madrid)</pubPlace> 		<idno type="ppn" n="601694236" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=601694236"/> </bibl>
+						<bibl type="further-edition"><title type="main">En la carrera</title>: 	<title type="sub">Un buen chico estudiante en Madrid. Novela</title> <date when="1920">1920</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="405824777" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=405824777"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En la carrera</title>: 	<title type="sub">(un buen chico estudiante en Madrid)</title> <date when="1981">1981</date>, <publisher>Univ. Ed.</publisher> <pubPlace>Salamanca</pubPlace> 		<idno type="ppn" n="075888912" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=075888912"/> 		<idno type="isbn" n="8485583140"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En la carrera</title>: 	<title type="sub">(un buen chico estudiante en Madrid); novela</title> <date when="1988">1988</date>, <publisher>Ed. Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="04201557X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=04201557X"/> 		<idno type="isbn" n="847506227X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En la carrera</title> <date when="2016">2016</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1004942397" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1004942397"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -155,6 +177,14 @@
 				<p>Vemos como dos jóvenes que se aman, Esteban y Antonia, son separados y condenados a ser infelices por un corpus social que no les comprende y no acepta el amor en libertad.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654" key="IP 8654" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -179,13 +209,13 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">erotic</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela erótica</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela de crítica social</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -215,6 +245,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-03-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,9 +254,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Primera parte</head>
+				<head xml:id="ne0228_head_000">Primera parte</head>
 				<div n="1" type="chapter" xml:id="ne0228_chap1">
-					<head>I</head>
+					<head xml:id="ne0228_head_001">I</head>
 					<p>Las cinco luces ardían sobre la mesa en que se había servido, más suculento que de ordinario, el desayuno, y el carbón, hecho una grana, en la estufa. Pero advirtió Amelia (que lloraba menos) cómo entraba franca por el balcón la claridad del día, y torció la llave de la araña.</p>
 					<p>Con este lívido fulgor de amanecer aparecieron más ajados los semblantes. Gloria no se quitaba el pañuelo de los ojos. La madre sollozaba sobre el hombro del «niño», dándole consejos, y el niño, el joven Esteban, comía de un modo maquinal cuanto le habían puesto en el plato. No hablaba. No hablaban. Un ómnibus que acababa de pasar había conmovido a todos como el coche de los muertos, y otros ómnibus, que se acercaba ahora con gran estruendo de hierros y de ruedas, los aterró.</p>
 					<p>-¡Ahí está! ¡Hala, vamos..., que parecéis unas criaturas! ¡Ni que el viaje fuera al Polo! -animó Amelia levantándose, porque había parado el ómnibus. Y al ir por su marido, le vio llegar poniéndose la pelliza, y le apostrofó dulcemente-: ¡Vaya, hijo! ¡Pues ya no puedes tomar nada!</p>
@@ -346,7 +377,7 @@
 					<p>Venía rendido y penetrábale este frío fino de Madrid hasta los huesos. Exageraba su devoción, queriendo asistir desde ahora mismo a San Carlos. Pero..., ¡reconcho!, ¡qué peste esta del gas... a coles!... Y la cama era estrechita, la alcoba era pequeña, el gabinete, así, así... Echaba bien de menos las holguras de su casa... A los pies, y a modo de edredón, se puso el gabán y la chaqueta.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0228_chap2">
-					<head>II</head>
+					<head xml:id="ne0228_head_002">II</head>
 					<p>A las doce le despertó una estruendosa música veloz como de piedras. Fue al gabinete y miró por la entreabertura del balcón: era un piano de manubrio. Se vistió, respetando el sueño de Eduardo, en esta alcoba, y el de los demás en las demás, y almorzó solo y salió sin compañía. Iba a telegrafiarle a su madre la llegada. La precisa dirección del telégrafo se la había dado doña Rosa, quien le advirtió también que «por una peseta podría volverse en coche desde cualquier parte, en caso de extravío»...</p>
 					<p>Lo primero que le volvió a chocar fue la altura de las casas. Luego, la gente y las enormes lunas de las tiendas. Bien pelados los hombres, bien peinados y con impecable pulcritud en los cuellos y las botas. Las mujeres, muy blancas, lucían, jóvenes y viejas, cuerpos airosos. En Badajoz, fuera de un pequeño grupo que tenía fama de elegante, solían verse bigotes sin rizar y barbas descuidadas. Es decir, que aquí todos los hombres eran elegantes, y que llevaban corsé hasta las verduleras. Se fijó; incluso dos o tres jóvenes muy flacos y con raídos gabancetes de color indefinible lucían cuellos de brillo y las botas rotas charoladas; debían ser poetas, escritores...</p>
 					<p>En la Red de San Luis le pasmaron la grande animación y los tranvías eléctricos, unos tras otros. Los de Badajoz, chicos, de mulas, y con tres o cuatro viajes al día desde San Juan a la estación... Pero ¿por qué tanta gente?... Viernes hoy; nada de domingo ni de fiesta. Imposible dar seguidos cuatro pasos. Creyó reconocer a uno de Badajoz. En la Puerta del Sol, que recordó de las postales y que le pareció pequeña, creyó reconocer a otro de Badajoz. ¡Y no! ¡Falsos parecidos!</p>
@@ -438,7 +469,7 @@
 					<p>Rezaba, rezaba..., pensando en su madre, en sus hermanas, en su Antonia, tan ideal y tan bonita..., ¡tan pura!</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0228_chap3">
-					<head>III</head>
+					<head xml:id="ne0228_head_003">III</head>
 					<p>Lunes, al fin.</p>
 					<p>Pero... ¡las once!</p>
 					<p>El perínclito Mesonero Romanos volvió a acurrucarse debajo de las sábanas, un momento despertado por Esteban, y éste se levantó con enorme voluntad.</p>
@@ -508,7 +539,7 @@
 					<p>Odió a Madrid con toda el alma. Harto de ver calles y paseos con Luis y con <seg rend="italic">la Burra, 						</seg>penetrado de frío hasta los tuétanos, deambulaba cada tarde bajo el peso de un aburrimiento colosal. A los coches y palacios y alegrías incomprensibles, sólo él profundizábales su fugacidad y su limitación de anfiteatro..., de muerte. Luis prefería, por cálculo de higiene, las grandes caminatas por el campo, por las cercanías del Hipódromo, por Vallecas, por los dos Carabancheles..., al sol. ¡Qué burla de campo y de sol al lado de los extremeños! Porque lo singular en la reacción de Esteban era que todo lo de la corte, gentes y cosas, que al llegar le obsesionaban como parecidas en una amplificación magnificente a las de Badajoz, impresionábanle, al fin, con una vil desemejanza rabiosa, irreductible..., en otra obsesión evocadora de plácidas sencilleces que hubiera él para siempre perdido. Por volver a Badajoz hubiera dado medía vida. Consideraba el número de días que faltaban hasta junio, y ahogábasele el corazón en la inmensidad del tiempo y de esa insípida ciudad que hubiese antes de matarle de tedio y desafecto. Nadie le conocía, ni nada le importaba a él. Hasta los buenos camaradas de allá, del Instituto, volvíanse aquí egoístas, recelosos. Le había propuesto a <seg rend="italic">la Burra </seg>cambiar de alcoba, pretextando su intimidad con Luis, y ni uno ni otro accedieron: en primer lugar, alegaban que ellos dos pagaban menos junto al comedor, y cuando les allanó el obstáculo la aclaración de que él sería quien siguiese pagando igual, a pesar del trueque, disculpábase <seg rend="italic">la Burra </seg>con reparos sobre si Eduardo resultábale o no engreído por demás con su apellido de estirpe y sus pujos de elegancia... En cuanto a Mazo, <seg rend="italic">la</seg> <seg rend="italic">Burra </seg>también había descubierto la arteria de su generosidad; al explícarle a Esteban: «¡Bah, te ha regalado los libros y esas cosas porque eres también de Badajoz, como él, y busca que le guardes el secreto de su <seg rend="italic">estudio! </seg>¡Mira si me las negaba a mí, que le he sacado el esqueleto a fuerza de rogar, y haciéndome más falta!»</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0228_chap4">
-					<head>IV</head>
+					<head xml:id="ne0228_head_004">IV</head>
 					<p>A pesar de todo, con <seg rend="italic">la</seg> <seg rend="italic">Burra </seg>hallaba su triste corazón la mayor comunidad de sentimientos. Luis, que en el grado fue su competidor de premios y de honores, continuaba siendo aquí un estoico, tan indiferente a su humildad y a la aspereza de esta vida emocional que rodeábalos como atento al ideal de su carrera. Pálido, pequeñito, serio y con un prematuro y largo bigote lacio color castaña, aun sólo llevándoles tres años a ellos dos, no hablaba más que de la Anatomía... En cambio, cuando, sentados por el Retiro o en cualquier piedra del campo, Esteban y <seg rend="italic">la Burra </seg>poníanse cordialmente a recordar de sus familias, de sus casas respectivas, de Badajoz y de Alanje, ni los miraba siquiera...: cogía un bicho de la hierba y se dedicaba a examinarlo, arrancándole las patas.</p>
 					<p>En casa, igual: Luis Cerrato era el único impasible, a la hora de la cena, ante las airadas discusiones que les afrontaban Esteban y <seg rend="italic">la</seg> <seg rend="italic">Burra </seg>a Fagoaga y a Eduardo. Morita, mientras, dábale pellizcos a Margot. Dos bandos: el de los defensores de Madrid, y el de los de la provincia. Esteban acusaba a Madrid de no tener murallas, ni río como el Guadiana, ni torres como la de San Juan. Los otros recomendábanle que viese la de la calle de Atocha. <seg rend="italic">La Burra 						</seg>osaba blasonar del balneario de su pueblo. Doña Rosa, que nació en Logroño, intervenía contra la corte algunas veces.</p>
 					<p>Pero esta noche, en la animación del vino, con que ya iba disponiéndose para su fúnebre borrachera de después, Esteban creyó notar que no siempre a Margot le enojaban los pellizcos de Morita. Le asaltó una idea... «Si esta muchacha, al menos, quisiera acompañarte por las noches...» Ni fea, ni guapa, con su carita de rubia granujienta. Daba igual. Aunque tendría él que enmascararlo de otra cosa, por no delatarle su insigne cobardía, tratábase, nada más, de un servicio, de que le acompañara, en rigor. De los noventa y tantos duros, sería capaz de ofrecerla la mitad, por todo el año. Y dejó que <seg rend="italic">la Burra </seg>siguiese defendiendo la provincia. Se le acercó Margot con la ensalada, y él jugó diestramente el codo contra el muslo de Margot, que tuvo apenas una sonrisa de extrañeza. Miró a Margot desde entonces confiadísimo.</p>
@@ -583,7 +614,7 @@
 					<p>Le alzó en su regazo, y pusiéronse los dos a desnudarse. Temblaba Esteban, a cada seda y a cada lazo, cada vez más íntimos, que a ella le iba descubriendo de reojo...</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0228_chap5">
-					<head>V</head>
+					<head xml:id="ne0228_head_005">V</head>
 					<p>Al llegar a casa, al mediodía, se le recibió en el comedor ruidosamente: «¡Hombre, el santito..., el forastero!... ¡Cómo ya se bandeaba por Madrid!»... Novedades, también, que le pusieron del color de los tomates: «Margot habíase despedido, porque <seg rend="italic">uno </seg>fue a su cuarto -y este <seg rend="italic">uno... </seg>¡era él!, ¡era él!... ¡y el que robaba las botellas!»</p>
 					<p>-¡Sí, tú, borracho, ladrón!</p>
 					<p>-¡Tú, borracho, perdido!</p>
@@ -702,7 +733,7 @@
 					<p>En un clavo, como un recuerdo doloroso, yacía... la llave de la puerta de la casa de la Coja.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0228_chap6">
-					<head>VI</head>
+					<head xml:id="ne0228_head_006">VI</head>
 					<p>Una mañana, al salir con Cerrato para San Carlos, Esteban se encontró en el mismo portón una visita. Un señor. «Parecía de Badajoz.» ¡Sí, esta vez no fue visión de su casi olvidada mamá!...,de Badajoz: Collado, Zacarías Collado.</p>
 					<p>-¡Hola! ¿Cómo estamos?... ¿No es usted Esteban Sicilia?... Pues muchas memorias de su madre. Acabamos de llegar, yo y la Renata.</p>
 					<p>No se habían hablado nunca. Apenas si de vista conocíanse. Esteban le recordaba como una de las clásicas figuras de Badajoz, tal que a <seg rend="italic">Daguirri</seg> el fosforero, a Bonifacio el de los sermones, y a <seg rend="italic">Charepe. </seg>En otra categoría y con más respeto, es decir, sin que le siguieran los chiquillos nunca, este Zacarías, el <seg rend="italic">lelo, </seg>solía verse con su alta y flaca figura desvaída, con sus barbas lacias y su boca abierta, siempre solo por las calles, una veces a pie, otras en un caballo que tranqueaba o trotaba a su placer, baja la cabeza y las riendas en el cuello.</p>
@@ -800,7 +831,7 @@
 					<p>¿Qué importaba el tiempo en las inmensidades de la vida y del amor?</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0228_chap7">
-					<head>VII</head>
+					<head xml:id="ne0228_head_007">VII</head>
 					<p>Y esta noche, al volver, Esteban por sí propio comprobaba que hay un grado de la dicha que llega hasta el tormento. Sus labios traían la quemadura de un ascua fresca de la gloria. Fueron besos en la mano llena de sortijas, cuando ella se entreasomó al pasillo a despedirle. La mano resistió, pero... ¡entregada!</p>
 					<p>Daban las tres.</p>
 					<p>Cogió el dichoso la gardenia -la pobre gardenia de diez días, que ya sólo era un despojo- y desde la solapa la guardó eucarísticamente en el baúl. Se apoyó en las barras de la cama, y quedóse absorto, abrumadísimo. No había cenado en casa. Vio dos cartas sobre un fémur. Eran de su madre y de la novia. Las cogió, rompió los sobres, las miró..., no pudo decir que las leyó. ¡Cuán lejos todo eso!</p>
@@ -918,7 +949,7 @@
 					<p>Se levantaron Esteban y Julián, y se fueron.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0228_chap8">
-					<head>VIII</head>
+					<head xml:id="ne0228_head_008">VIII</head>
 					<p>La vida, ¡si!..., cada vida una contradicción; pero resuelta en armonía de disparates cuando su clave de absurdo se encuentra. Esteban, luego de estudiar a Enríquez al retirarse por la noche del hotel y tomarse juntos en un <seg rend="italic">tupi</seg> el coñac de última hora, comprendía que el poeta ingenuo, aun habiéndole a él preferido, aun suponiéndole acaso «completamente vencedor», no se hubiese retirado en absoluto. Los buscaba hacia el final en los teatros, y los llevaba a los más céntricos cafés: Fornos, entre ellos, donde habían visto a Renata los paisanos, y donde había sido visto él por la Coja, sin que le reconociera... afortunada o desdichadamente.</p>
 					<p>-¡Qué guapa esa mujer! -había dicho al paso Renata.</p>
 					<p>Y Esteban, a no ser por el miedo de que luego la hallase ridícula al verla salir cojeando, hubiese dicho quizás: «¡Pues es mi... amiga!»</p>
@@ -1009,7 +1040,7 @@
 					<p>«¡Ella le deja; le deja ahora, por cobarde!»</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0228_chap9">
-					<head>IX</head>
+					<head xml:id="ne0228_head_009">IX</head>
 					<p>Madrid, tras dos semanas de lluvia, que había mojado ya los renuevos tiernos de los árboles, resurgía en una definitiva y dulce primavera oliente a acacias, a lilas, a nardos. De vuelta de las clases, Esteban se paraba en los paseos a contemplar las platabandas de alhelíes y a las yemas verdegay que formaban en las oscuras ramas de los cedros sumidades muy vistosas. Esto, y las grecas y festones hechos con los tonos claros de picadas hierbas sobre el trébol, recordábanle las zapatillas de cañamazo y lana dulce que a su hermana él había visto bordar alguna vez. Los jardineros madrileños eran buenos bordadores, y en medio de cada florón del jardín, una estatua blanqueaba.</p>
 					<p>Le daban ahora tanta envidia estas estatuas, al sol, bajo las ramas y los pájaros, oyendo no lejos el eco de una fuente, como frío y compasión habíale dado tiempo atrás el pobre Goya, sentado y sin poderse mover de su sillón de bronce de la escalinata del museo, ni en los más terribles días de huracán y de granizo.</p>
 					<p>El Prado le embelesaba. Desde la sombra de un banco veía a los niños jugar. Los había preciosos. Las había preciosas, niñas también como ángeles. Las cofias pálidas, llenas de cintas, caían a maravilla sobre los tirabuzones rubios, negros, y sobre las caras de rosa. A veces conversaba con algunos más pequeños, despedidos en enfado por los otros. Hacíale gracia ver cómo pasaban del llanto a la sonrisa, y del recelo a la confianza, con unos pocos barquillos. Las niñeras y las institutrices, en cambio, coqueteaban alrededor, creyendo que toda la maniobra de él sería por cortejarlas.</p>
@@ -1052,9 +1083,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Segunda parte</head>
+				<head xml:id="ne0228_head_010">Segunda parte</head>
 				<div n="10" type="chapter" xml:id="ne0228_chap10">
-					<head>I</head>
+					<head xml:id="ne0228_head_011">I</head>
 					<p>Ganó el alto del cerro y dio vista a Badajoz. Se había desorientado un poco. Conocía casi un tercio de provincia palmo a palmo, y no, sin embargo, aun teniéndolos en las narices, estos campos de por la Puerta Trinidad, que acababa de recorrer y que no tenían facha de mineros. Sus bolsillos venían llenos de pedruscos -por si acaso-. Se sentó. Iba borrándose el crepúsculo y lucía la luna plateando allí abajo el Rivilla, a la derecha el Guadiana, y el Jévora más lejos. Tenía enfrente los murallones del Castillo y el Huerto del Manco. Luego volvía por el mismo sitio a la ciudad.</p>
 					<p>De un bolsillo de la americana sacó dos piedras, y de otro del pantalón un martillo. Las golpeó y se sintió sujeto por los hombros:</p>
 					<p>-¡Date preso, granuja!</p>
@@ -1105,7 +1136,7 @@
 					<p>En la alcoba enjugóse aún una lágrima que esta vez no sabía por lo que fuese.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0228_chap11">
-					<head>II</head>
+					<head xml:id="ne0228_head_012">II</head>
 					<p>Se quitó del chaleco una pelusa, y salió.</p>
 					<p>Salía, después de tres horas de siesta, como de un nido, como de una mansión de paz aforrada de blanduras y de orden.</p>
 					<p>Había llegado a las once. En la estación, esperándole, su madre y sus hermanas y Ramón. Gozó en sus brazos las calmas del cariño. La casa le pareció muy grande y limpia. Le chocó no ver por parte alguna muebles cojos, ni manchas, ni alfombras sucias y raídas, y sí, en cambio, monadas y adornitos de esos con que las mujeres cuidadosas llenan las paredes. Se bañó en la tina de cinc de cuarto alegre, purificándose de vicios y miserias, y almorzaron luego en clarísima vajilla sobre mantel adamascado y con cubiertos de plata cuyo peso le chocó, cual si estas sensaciones de comodidad las recibiese por vez primera el estudiante que habría nacido y vivido siempre en y para el inmundo comedor de doña Rosa... Últimamente se había acostumbrado en su cama ancha, blanda..., limpia, limpia, limpia..., ¡oh, sí!, ¡qué limpia!..., ¡limpia como si la hubiesen sahumado con los efluvios mismos de sus almas sus hermanas y su madre!</p>
@@ -1211,7 +1242,7 @@
 					<ab><seg rend="italic">Antonia.»</seg></ab>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0228_chap12">
-					<head>III</head>
+					<head xml:id="ne0228_head_013">III</head>
 					<p>Esteban acordábase de haber visto por el cielo alguna vez, en sus excursiones campestres, grandes bandadas de aves que eran blancas; pero de pronto se volvían, les daría de otro modo el sol, y ya eran negras. Sólo a esto podía comparar el repentino y uniforme cambio de las ilusiones de su vida por la carta inconcebible.</p>
 					<p>Le llegó a las diez de la mañana y hasta las doce estuvo releyéndola, aturdido. Luego escribió otra breve carta pidiendo explicaciones; y la criada se la trajo sin abrir: «No la quiso recibir la señorita.»</p>
 					<p>-¿La señorita? ¿Tú la hablaste?</p>
@@ -1308,7 +1339,7 @@
 					<p>En seguida, guiando al joven por los charcos, le entró en la cocina y le dio las instrucciones convenientes: «para entrar, le esperaría; para salir, él no tendría más que tirar, cerrando el picaporte, si ella se acostaba...»</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0228_chap13">
-					<head>IV</head>
+					<head xml:id="ne0228_head_014">IV</head>
 					<p>La butaca debió de haber sido granate, y ahora era, a vetas, salmón, y estaba rota.</p>
 					<p>Dejó de mirarla y se miró la mano, que le pareció primero pequeñita, y luego colosal... A lo largo, así tendida, diríase que había hasta la punta de sus pies dos leguas. ¿Por qué? ¿Qué tenía ella en los ojos?</p>
 					<p>«Piiiiiiii... iiiii... ií...»</p>
@@ -1488,7 +1519,7 @@
 					<p>Y un momento después, Esteban iba por la calle, al sol, como un borracho, sin saber a dónde iba.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0228_chap14">
-					<head>V</head>
+					<head xml:id="ne0228_head_015">V</head>
 					<p>Pasaba el tiempo.</p>
 					<p>En los primeros días, en el primero, sobre todo, desde la casa de Mauricia habíase ido Esteban a su casa cierto de que recibirían, él y su madre, por parte de la Antonia la visita que iba a decidirle el porvenir. La esperó con la inquietud de lo solemne. Sabía encontrar en las complejidades su significación de resumen, y había visto que no debía sino alegrarse del suceso; «principio del fin»: descubierta Antonia..., los casarían. Pensó más de la mitad de aquella tarde, en lo que se llama el <seg rend="italic">sino de las criaturas. </seg>Algo que va recto a su objeto bajo no importa qué apariencias. Obstáculos y contrariedades les habían servido, mejor que dispuestos por él mismo, para la rápida realidad de su esperanza. Un más que mucho imprevista y estupenda habría que resultarle a su familia la cuestión, y a él, y principalmente si la Gamboa no supiera reportarse un más que poco ruborosa; pero... trámite que tenía detrás la eterna dicha conquistada, bien para el hombre merecía el primero y el último rubor de las mejillas del muchacho.</p>
 					<p>Cuando transcurrió la tarde; cuando transcurrió el siguiente día; cuando fue transcurriendo luego, como ya iba transcurriendo, una semana sin que nadie apareciese..., reformó sus cálculos: la Gamboa no debió enterarse de nada trascendental; puesta en la huella por lo de San Francisco y por lo del pañuelo, espió sin duda a su hija, la vio escribir, y la siguió y la quitó la carta; no diría la carta de Antonia cosas importantes y ella creería que todo se redujo a que Mauricia le estuviese sirviendo de correo... ¿Cuándo Antonia, más encerrada que nunca, resolveríase a plantearle su conflicto?... Porque esta vez, a él y a mayor o menor distancia, ¡cómo dudarlo!, la seguridad le acompañaba: «una señorita que le ha entregado al novio la honra, es del novio..., por encima de cualesquiera extrañas voluntades y hasta por encima de su misma voluntad». Inevitable. Fatal. Absoluto. Desconfiar porque pasasen días de gris y siniestra calma, fuera como temer en días nublados que jamás volvería a salir el sol.</p>
@@ -1594,7 +1625,7 @@
 					<p>-¡Qué barbaridad!</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0228_chap15">
-					<head>VI</head>
+					<head xml:id="ne0228_head_016">VI</head>
 					<p>Notábase Antonia un ambiente de extrañeza alrededor. De sus más íntimas amigas, unas, como Gloria, no la visitaban, y otras, como Paca Prida, Charo, y Jacinta y Sagrario Fajarnés, la visitaban poco. Solía sorprenderlas contemplándola de un modo raro, entre curioso y piadoso, y oíales a ellas y a sus madres preguntarle con ciertas reticencias por Esteban. Sin embargo, todas la seguían acogiendo afablemente en los comercios de la calle de San Juan ¿Sabían algo?... ¡Oh, sí sabían algo! Acabó por darle miedo la gente y apenas salía de casa.</p>
 					<p>Esperaba, con las dudas de su angustia puestas en Esteban. Había una viejecita a quien ella, desde chica, le vendía las pieles de liebre y de conejo, socorriéndola también con sobras de comida, y confiaba en que le pudiera servir para entablar correspondencia. Las cartas de Madrid vendrían a su nombre. No había vuelto la viejecita desde casi principios de verano; mas, por una conocida suya, vendedora de vinagre, Antonia supo que estaba en el hospital, que la habían curado primeramente asma y ahora cataratas, que saldría y volvería pronto a su comercio de pellizas.</p>
 					<p>Una noche, al pasar Antonia con su madre por la calle de Aduanas, les oyó de tienda a tienda a un dulcero y a un barbero:</p>
@@ -1691,7 +1722,7 @@
 					<p>Y ahora, Antonia, en vez de llorar, se iba siempre a su cuarto y se tumbaba como una imbécil en el butacón de terciopelo.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0228_chap16">
-					<head>VII</head>
+					<head xml:id="ne0228_head_017">VII</head>
 					<floatingText><body><div type="section"><p><seg rend="italic">«Cádiz, 4 de enero.</seg></p>
 								<p>»Querida Antonia: Te extrañará mi silencio de estos días. Dispénsame. Llevo medio mes atareadísimo. Harás mal creyendo que te olvido. Al revés, tú has llegado a ser para mí una obsesión de sufrimiento; y más, cuando contra mi voluntad veo retardarse tanto, veo alejarse tanto el día de que se puedan cumplir tus deseos y mis deseos. Te debo en tal concepto una franca explicación. Creo haber dicho alguna vez, en nuestros ratos deliciosos, inolvidables, que soy viudo, y que cuando yo te conocí no hacía tres meses que lo era. Pues bien: mi suegro, en cuya casa he vuelto a estar en noviembre a mi paso por Madrid, y que adoraba a su hija, es un influyente personaje a quien le debo cuanto valgo. El cargo que actualmente desempeño, él me lo ha dado, y de mis conversaciones con él, de mis insinuaciones, ahora al verle, he deducido cómo me significaría su resuelta enemistad una boda sin el respeto siquiera de un año a la memoria de la muerta. ¿Comprendes, Antonia?... ¡Razones de delicadeza, y de egoísmo, por si no bastase, que tendré que respetar..., porque imagínate tú lo que fuese la protección de un prohombre vuelta animosidad contra un funcionario del Estado!</p>
 								<p>»¡Perdóname! Esto que acabo de decirte sin duda te aclarará lo que habrás juzgado vacilaciones y subterfugios míos desde que nos separamos. Nada menos verdad. Sueño contigo. El recuerdo de tus brazos, de tu belleza incomparable, forma mi gloria y mi tormento. Mi gloria, porque lo fuiste. Mi tormento, porque... no te tuve jamás con esa calma de descuidos y reposos infinitos que requiere una pasión. ¡Oh, qué sola veo esta vida mía y esta casa donde pudieras estar!...; y para decírtelo, justamente, te escribo hoy de un modo tan sincero y doloroso. Por una parte, te declaro la imposibilidad de realizar nuestra esperanza con la prontitud que tú querrías. Por otra, te invito a nuestra unión inmediata. Vente a Cádiz. Vente a esta casa, que es tuya, y que se encuentra sin ti muy triste. Es la manera de conciliarlo todo que tan llegado a concretar mis desvelos, mis ansias, después de pensarlo bien. Pasado el plazo prudencial, nos casaríamos.</p>
@@ -1796,9 +1827,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Tercera parte</head>
+				<head xml:id="ne0228_head_018">Tercera parte</head>
 				<div n="17" type="chapter" xml:id="ne0228_chap17">
-					<head>I</head>
+					<head xml:id="ne0228_head_019">I</head>
 					<p>Dejó el tranvía y cruzó la explanada de Atocha.</p>
 					<p>Había reconocido la estación por su aspecto de alcázar diáfano hundido en laberintos de verjas y fosos y jardines.</p>
 					<p>-¿Hace el favor de decirme por dónde se entra a la estación?</p>
@@ -1985,7 +2016,7 @@
 					<p>Recostada atrás, como estaba ella, él quitó corchetes y encajes y puso los dos senos a la luz blanca de la lámpara.</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0228_chap18">
-					<head>II</head>
+					<head xml:id="ne0228_head_020">II</head>
 					<p>En el gabinete había un retrato de la tita en negro marco oval. Único recuerdo salvado por Antonia y lo único que ligábala con un pasado entre el cual y el presente se tendía la imposible voluntad de olvido.</p>
 					<p>Cuando a Esteban le llegaban cartas de su casa, el sobre, el sello de Badajoz, la crispaban. Evocación de la ciudad de orden y de luz que fue infierno para ella. Habíansele <seg rend="italic">muerto </seg>allí su madre, su familia, su pureza, su nombre. Tuvo una gran compasión muy triste hacia todas estas cosas muertas, mientras creyó, durante un año, por irónico consuelo, que la histérica inconsciencia de su madre la arrastró, como a ella misma, al desprecio y al oprobio. El clavo de la pena barrenábala con su áspera punta a la idea de las pobres hermanas deshonradas. Clarita, de once años; Herminia, Laura, Marina..., de siete, de cuatro, de dos. Inocentes que habrían de ir sabiendo su pública degradación aun antes de saber siquiera lo que fuese su inocencia. ¡A ella, en cambio, la tempestad la había arrojado a estas playas lejanas e ignoradas de una gloria!</p>
 					<p>Tal pensó y tal sufrió mientras Esteban, cortés, con una cortesía del alma bien distinta de aquella otra de «aquel hombre», y queriendo respetarla su voluntad absoluta de olvidar las vivas cosas muertas, ni le habló de Badajoz ni le leyó estas cartas de su madre. Pero las cartas, que él dejaba abiertas por los muebles, le infundían a la adoradísima infamada un recelo constante de amenaza y de peligro. Un día, en que tras una noche de dichas inefables su recelo fue mayor, osó, al salir Esteban, mirarlas. En algunas, Gloria le escribía a su hermano. En una, la madre le mostraba al hijo su conformidad con haberse mudado «a una casa tranquila, sin locos compañeros» y con «la resolución de estudiar por libre, si esto reportábale ventajas». En otra, Gloria le contaba una función de caridad que habían dado en el teatro, trabajando las muchachas, y enviábale con las revistas fragmentos de periódicos. Se admiró Antonia. Las letras impresas contenían el nombre de su hermana Clara, como actriz, y el de su madre como una de las concurrentes distinguidas. A ambas los periódicos dedicábanles mención muy principal<seg rend="italic">...</seg>; y ella, la desterrada, la proscripta en ignominias, pero la enormemente dichosa al fin, lloró de raras alegrías. Al volver Esteban, le interrogó por única vez, y oyó que la confirmaba amargo en su dulzura:</p>

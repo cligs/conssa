@@ -1,24 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La sirena negra</title>
-				<title type="sub"/>
 				<title type="short">Sirena</title>
-				<title type="idno">
-					<idno type="bne">XX2120608</idno>
-					<idno type="viaf">217034240</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1104029</idno>
-					<idno type="viaf">51699645</idno>
-					<name type="short">Bazan</name>
-					<name type="full">Emilia Pardo Bazán</name>
+					<name type="short" ref="#Bazan"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">733</measure>
@@ -141,13 +130,57 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0085</idno>
+						<idno type="cligs">ne0085</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2002">2002</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmctt4m8 "/>, <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/la-sirena-negra--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Espasa-Calpe, <date when="1981">1981</date></bibl>
-				<bibl type="edition-first"><date when="1908">1908</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La sirena negra</title>
+					<title type="sub"/>
+					<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2120608.html">XX2120608</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/217034240/">217034240</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4466004-2">4466004-2</idno>
+				</idno>
+				</title>
+					<author xml:id="Bazan">
+						<name type="full"><forename>Emilia</forename> <surname>Pardo Bazán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9748 - IO 9753">IO 9748 - IO 9753</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118641476">118641476</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q275929/">Q275929</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1104029.html">XX1104029</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/51699645/">51699645</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2002">2002</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmctt4m8 "/>, <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/la-sirena-negra--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Espasa-Calpe, <date when="1981">1981</date></bibl>
+					<bibl type="edition-first"><date when="1908">1908</date><idno source="k10plus" type="ppn" n="46515171X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46515171X"/><idno source="k10plus" type="ppn" n="368664635" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=368664635"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1908">1908</date>, <publisher>M. Pérez Villavicencio</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46515171X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46515171X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title>: 	<title type="sub">novela</title> <date when="1908">1908</date>, <publisher>Villavicencio</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="368664635" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=368664635"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Sirena negra</title> <date when="1914">1914</date>, <publisher>Renacimiento [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464287278" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464287278"/> </bibl>
+						<bibl type="further-edition"><title type="main">La sirena negra</title>: 	<title type="sub">novela</title> <date when="1914">1914</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid [u.a.]</pubPlace> 		<idno type="ppn" n="099920026" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099920026"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title>: 	<title type="sub">la piedra angular</title> <date when="1945">1945</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465178634" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465178634"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1947">1947</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires [u.a.]</pubPlace> 		<idno type="ppn" n="1547042990" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1547042990"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1947">1947</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires [u.a.]</pubPlace> 		<idno type="ppn" n="1134341385" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134341385"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1947">1947</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires;México</pubPlace> 		<idno type="ppn" n="464678684" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464678684"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1958">1958</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="475015452" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=475015452"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1963">1963</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid [u.a.]</pubPlace> 		<idno type="ppn" n="466897634" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466897634"/> </bibl>
+						<bibl type="further-edition"><title type="main">La sirena negra</title>: 	<title type="sub">Insolación. Con un estudio prelim. y notas a cargo de José Onrubia de Mendoza</title> <date when="1970">1970</date>, <publisher>Bruguera</publisher> <pubPlace>Barcelona [usw.]</pubPlace> 		<idno type="ppn" n="44314561X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44314561X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1977">1977</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1608196801" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1608196801"/> 		<idno type="isbn" n="8423907600"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="1981">1981</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="249476231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=249476231"/> 		<idno type="isbn" n="8423907600"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera. La Sirena Negra. Dulce Dueño</title> <date when="1999">1999</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="315929111" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=315929111"/> 		<idno type="isbn" n="8489794359"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera. La sirena negra. Dulce Dueño</title> <date when="2000">2000</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1159744270" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1159744270"/> 		<idno type="isbn" n="8489794359"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Sirena Negra</title> <date when="2010">2010</date>, <publisher>Linkgua Ediciones,</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1758796928" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1758796928"/> 		<idno type="isbn" n="9788490079157"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="2021">2021</date>, <publisher>Castalia Ediciones</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1773398091" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1773398091"/> 		<idno type="isbn" n="9788497408592"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La sirena negra</title> <date when="2021">2021</date>, <publisher>Nocturna</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1764629000" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1764629000"/> 		<idno type="isbn" n="9788418440090"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -159,6 +192,14 @@
 				<p>Trini decide por fin casarse y Gaspar seinte ganas de vivir y de romper sus vínculos con la parca, pero Solís lo reta a duelo. Él se niega a defenderse. El preceptor disparar; nuestro hombre se aparta y la bala mata a Rafaelín que había acudido a defenderle. Anonadado, Gaspar comprende su orgullo y su error al atreverse a jugar con la muerte. Se pone humildemente en manos de Dios.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9749" key="IO 9749" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -194,7 +235,7 @@
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela simbolista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cligs:importance="2">novela esteticista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cligs:importance="1">novela modernista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.subtitle.source" resp="bne">novela,novela fantástica</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
 					<term type="text.genre.supergenre">narrative</term>
@@ -227,6 +268,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-07-07" who="#JCT">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -235,7 +277,7 @@
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0085_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0085_head_000">- I -</head>
 				<p>En la esquina de la Red de San Luis y el de Gracia, me separé del grupo que venía conmigo desde el teatro de Apolo, donde acabábamos de asistir a un estreno afortunado. Si hablase en alta voz, hubiese dicho «grupo de amigos», pero, para mi sayo, ¿qué necesidad tengo de edulcorar la infusión? Espero no poseer amigo ninguno; no tanto por culpa de los que pudieran serlo, cuanto por la mía. Si alguna vez me he dejado llevar del deseo de comunicación, de expansión, de registrarme el alma y enseñar un poco de su oscuro contenido a la media hora de hacerlo estaba corrido y pesaroso, según estaría un sacerdote hebreo que hubiese permitido a un profano tocar al arca de alianza.</p>
 				<p>Por lo mismo, me guardé de terciar en la polémica que armaron sobre «la idea» de la obra. La tal idea es ya para mí una persona de toda confianza: por sexta vez en este invierno la aprovecha un autor. Según los recitados, cantares y diálogos de la zarzuelilla, la vida es buena, la alegría es santa y los que no andan por ahí chorreando satisfacción son unos porros. No sé por qué (acaso por efecto de la discusión trabada entre los del grupo, y que me golpeó en el cerebro con redoble de martillazos secos y ligeros sobre una placa sonora), la cuestión, en aquel momento, me preocupaba. Ningún problema, para el que vive, revestirá mayor interés que este de la calidad de la vida.</p>
 				<p>Y, aunque preocupado, mediante la facultad de desdoblamiento que poseemos los meditativos sensuales, no dejaba yo de notar una serie de insignificantes circunstancias. Bajo mis pisadas, la acera resonaba metálicamente. La noche era límpida; el frío, puñalero; y al abrigo del tapabocas de malla de seda, mi respiración se liquidaba en gotitas glaciales, humedeciendo la barba. Se me ocurrió tomar un coche; después opté por seguir andando. El frío duro me activaba el pensar, y en aquel mismo instante decidí plantearme yo el problema, aprovechando todas las ocasiones de caminar hacia su resolución, no en beneficio del género humano, sino para mi gobierno tan sólo. El «género humano» es el vocablo más vacío de sentido; no hay humanidad, hay hombres. Si algo se afirma del género humano, los hombres se encargan de desmentir al punto la afirmación. Rumiando estas afirmaciones, saqué el pañuelo y sequé las esférulas que me aljofaraban la barba, impregnada de brillantina olorosa.</p>
@@ -265,7 +307,7 @@
 				<p>Entré con mi llavín; los criados seguramente no se habrían levantado; mi hermana, menos; la casa estaba muda. Encendí mi serpentina de gas fluido, y a los cuatro minutos tuve agua caliente para las abluciones. Enjabonado, pasada la esponja de mil ojos, enjuto, reaccionado, me vestí el camisón, y llegó el momento mágico de alzar las ropas y deslizarse, ágil y desmadejado a un tiempo, en la ancha cama, suspirando de placer. La frialdad de las sábanas cede a la corriente de calor que pronto establece el cuerpo; el colchón rebota con suave elasticidad al dar yo vuelta y arroparme; los ruidos de la calle se extinguen para mí... Por última vez, suspiro de bienestar... Duermo.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0085_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0085_head_001">- II -</head>
 				<p>Mi hermana Camila tiene, acerca de mí, proyectos matrimoniales. Creo que es el caso general de todas las hermanas, a menos que sea el contrario -un odio corso a cualquier ser femenino que su hermano distinga.</p>
 				<p>Propala mi hermana que ha sido muy feliz en su matrimonio; y no lo dudo, entre otras razones porque la unión duró cinco o seis años, y mi cuñado estuvo dos de ellos en Cuba, arreglando negocios pendientes. Si Camila fuese franca, confesaría que es ahora cuando lo pasa bien; pero, ¿y la <seg rend="italic">pose</seg> de viuda inconsolable? ¿Quién se la quita? Una vez, anualmente, <seg rend="italic">inconsolable</seg> la proclama la cuarta plana de <seg rend="italic">La Correspondencia,</seg> en la esquela más cara y espaciosa de las que allí se publican. Aquel día, la viuda encarga misas en diversas parroquias. Por la tarde, una docena de amigos y parientes vienen a hacer el duelo a Camila; un duelo en que no se alude al finado, en que se murmura sin mostaza y se planean combinaciones de abonos para la temporada de primavera. Ya el año pasado, que acudió más gente, se sirvió té, con galletas (auténticas de Londres), y un revistero de sociedad anunció el<seg rend="italic">five</seg>. Ese día no falta <seg rend="italic">ella</seg> nunca; y, generalmente, la veo cada semana dos o tres veces, en el Real o en mi casa, donde almuerza bastantes domingos.</p>
 				<p>He subrayado <seg rend="italic">ella,</seg> únicamente por no singularizarme; por conformarme a los usos establecidos en tales materias. Si miro hacia mi corazón, o adonde se cobijen los efectos, allí no la llamo <seg rend="italic">ella,</seg> sino buenamente Trini.</p>
@@ -307,7 +349,7 @@
 				<p>Mientras ella mordisquea, yo la considero, y quisiera abrir su cabeza, destaparla, registrarla, para conocer el arcano que oculta, y por el cual me tiene sujeto, con fidelidad de amante que espera y teme y respeta y calla; el arcano, único atractivo de este espíritu que, de noche, vaga perdido entre las tinieblas del Miedo y del Mal.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0085_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0085_head_002">- III -</head>
 				<p>Amoscada anda mi hermana con lo de Rita: no sé quién se lo habrá soploneado. Es verosímil que me haya espiado en el teatro, a pesar de las precauciones que tomo. Y se me figura que Trini y ella, en sus intimidades, han conferenciado acerca del asunto, con esos campaneos de cabeza y esos enarcamientos de cejas que son la mímica de esta clase de conciliábulos entre mujeres sensatas.</p>
 				<p>Al fin no pudo vencerse Camila, y cierta mañana irrumpió en mi gabinete-despacho, una hora antes de la de almorzar, el momento que dedico a leer cosas serias, porque tengo la cabeza despejada y el estómago libre. Hubo preámbulos, diplomacia y, por último, estallido. Yo tenía una querida, y además, un hijo de semejante mujerzuela. Y mi tácito compromiso con Trini, y el mal lugar en que las dejaba, y la honra, y, y, y...</p>
 				<p>Mientras Camila se explaya, la considero atentamente, sin enojo y sin reto, como se mira correr en estío una fuente parlera. Camila se parece de un modo sorprendente a mi madre: las mismas facciones clásicas de matrona romana, la misma mirada imperiosa, el mismo cuerpo arrogante, donde la seda hace pliegues solemnes, como estudiados, y juegos de luz, al estilo de los ropajes suntuosos que pintaba Madrazo con tanto acierto. Un cariño meramente instintivo o impulsivo era lo que por mi madre sentía yo, y, realmente, según el espíritu, sólo soy hijo de mi padre, rezagado romántico, soñador, y que, conforme a la moda de su tiempo, fue algo poeta (ahora, por moda también, somos algo intelectuales). Hacia Camila experimento el mismo apego natural que hacia mi madre; pero con un toque de desdén, de convicción de mi superioridad. Ella entiende lo contrario; me tiene en menos; se cree más cuerda, más práctica, más razonable cien veces que yo, y me protege y vela por mí (que es modo de desdeñar). Ejerce sobre mí un ascendiente material, del cual reniego, y que se funda en mezquinos servicios y auxilios prestados a veces, como cuidados durante enfermedades, advertencias relativas a cuestiones de interés; nada en suma.</p>
@@ -357,7 +399,7 @@
 				<p>Me incorporé. El almuerzo me pesaba como plomo en el estómago, y el calor de la chimenea me asfixiaba. Volví las espaldas, sin saludar, sin despedirme, y a paso lento me retiré a mi cuarto. Trini dijo no sé qué; acaso pronunció con ahínco mi nombre. No hice caso alguno. Ya en mi habitación, tomé sombrero, abrigo, guantes, y me fui a ver a Rita.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0085_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0085_head_003">- IV -</head>
 				<p>La encontré con una hemorragia. La palangana, llena de coágulos, descansaba sobre una silla. Ella, echada en su humilde cama de hierro, apenas respiraba. Me sonrió doloridamente, como al través de un velo. La niñera y única sirviente, la guipuzcoana Marichu, entretenía a Rafaelín por medio de un carro hecho de dos carretes y unas cañas. Pero el niño, al verme, dejó sus juegos y vino a agarrarse a mis piernas.</p>
 				<p>-¡Bapar! ¡Aúpa!</p>
 				<p>Le aupé, le besé los ojos, le apreté firme. Reía a chorros, pegándome manotazos y tirándome de las barbas. Le dejé en el suelo, y anuncié:</p>
@@ -445,7 +487,7 @@
 				<p>Abiertos los ojos a la penumbra, pensaba en la que va a desaparecer después de sufrir tal suplicio en su corazón, selva de plantas ponzoñosas. Esa vaga incredulidad que nos asalta ante el no ser, me dominó por un momento. ¿Era posible que Rita, la caprichosa, la vivaz, la que tanto se entusiasmaba y hacía tales extremos en el teatro, la que había padecido los furores de la antigüedad criminal, fuese mañana un poco de materia orgánica en descomposición? ¿Cómo puede suceder algo tan extraordinario en un segundo? ¿Porque se arroja sangre si cesa de existir? Murió Rita, dirán. Entonces, Rita no es su cuerpo enmagrecido, no es sus cabellos foscos, no es su tez verdosa, no es su cuello de flor medio tronchada. Todo eso ahí estará... y Rita no. Puse sobre el velador los codos y sobre las palmas derrumbé la cabeza. Mi meditación se convertía en cavilación visionaria. Acaso dormía, acaso deliraba. El alcaloide del café concentrado actuaba sobre mi sistema nervioso, y con malsano goce dejé volar mi fantasía, provista de unas alas membranosas, gris oscuro, de murciélago, que acababan de brotarle.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0085_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0085_head_004">- V -</head>
 				<p>En árida llanura amarilla, cercada por un anfiteatro de montañuelas calvas y telarañosas, iba atardeciendo muy despacio. Crepúsculo interminable; del cielo cárdeno parecía descender lluvia de ceniza sutil; y el sol, que detrás de los cerros se ponía, era un globo sin calor, medio apagado, enorme, una pupila de cíclope agonizante.</p>
 				<p>Tan doliente paisaje ofrecía los tonos secos, mitigados y polvorientos de los antiguos tapices, y las figuras que sobre el paisaje comenzaron a desfilar en caricaturesca procesión, de tapiz eran también: de tapiz o de orla de códice cuatrocentista. El cuadro se contaba en el número de los espantos que el arte ha querido agregar a los espantos de la naturaleza.</p>
 
@@ -471,7 +513,7 @@
 				<p>Y el médico y yo, despertados a un tiempo, él del feliz sueño de la buena digestión, yo del devaneo de mi fantasía volando con alas de murciélago, nos precipitamos hacia la alcoba.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0085_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0085_head_005">- VI -</head>
 				<p>El doctor me lleva a un rincón, secreteando.</p>
 				<p>-Esto se acaba. La fatiga y el ansia que siente es que va a repetirle la hemoptisis. Y en ella, no respondo de que...</p>
 				<p>En vez de alarmarme, aprobé tranquilo. Era lo que tenía que suceder; ¡si lo sabría yo! Como que acababa de verlo... Acababa de asistir anticipadamente al momento que iba a transcurrir ahora: los pasos de la Seca tal vez resonaban en la calle, en la escalera tal vez. De todos modos, no tardaría en presentarse. Eran inútiles llaves y cerrojos para oponerse a su paso; y el doctor, con sus recetas y sus pociones, estaba soberanamente en ridículo, fuerza es reconocerlo.</p>
@@ -535,7 +577,7 @@
 				<p>-Suerte tiene Rafaelín... ¡Amparo no le falta!</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0085_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0085_head_006">- VII -</head>
 				<p>El contento que me oxigenaba el espíritu me animó a empeñar, desde el primer instante, la batalla con Camila. Como todo hombre, no dejo de temblar a las peloteras domésticas; sin embargo, el orgullo de mi superioridad me presta una fuerza que acaso la razón no me daría.</p>
 				<p>Transcurre el almuerzo. Cobardemente, por hacerme los lares propicios, lo elogio, aunque no me encanta: a los huevos revueltos les faltan trufas; los <seg rend="italic">beefsteacks</seg> están demasiado hechos, y el pescado no trae salsa aguda, correctora de su insipidez; lo reviste esa bandolina amarilla titulada mayonesa. Camila propende a la economía; inspecciona a veces la cocina, y está siempre tirando de la rienda, para ahorrar una mezquindad. El elegante desprendimiento que hace tolerable el roce entre sirvientes y amos, quitándole la aspereza batalladora del interés, es desconocido y sospechoso para Camila.</p>
 				<p>Puesta la conversación en el terreno conciliador, pasamos al gabinete, a saborear el café. Me traen mi kummel, y cargo la mano en la dosis. Camila reprende el abuso: ¡pocos licores, pocos! Poco de todo, parsimonia en todo, excepto en lo que puede dar de nosotros alta idea a la sociedad, tal parece ser la regla de conducta de Camila.</p>
@@ -577,7 +619,7 @@
 				<p>La sentí temblar, escalofriarse y estallar en sollozos. Entonces me avergoncé, y tartamudeando, formulé una excusa. Ella seguía llorando, habiendo dado al diablo su corrección, su equilibrio, su majestad de respetable dueña todavía apetecible; de cierto comprendía aquel instante que los cuidados mundanos son miserias, nonadas ante la perspectiva infinita de lo eterno... Conmovido a pesar mío, la eché los brazos al cuello, la consolé, me acusé de estúpido, de mal intencionado... Ella correspondió a mi arranque fraternal con otras caricias, sonriendo ya en medio del llanto miedoso; y por un instante, los que tanto tiempo hacía que no éramos hermanos, lo fuimos, unidos por nuestra común miseria, por el espanto del más allá, por el poder incontrastable de lo que manda en nosotros y nos iguala al suprimirnos... como iguala el segador la hierba del prado.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0085_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0085_head_007">- VIII -</head>
 				<p>Son en mí tan poco frecuentes los arranques sentimentales: los reprime tan pronto el cerebro, que aproveché la situación de ánimo desusada en que había quedado para volver sobre mí mismo.</p>
 				<p>Tal vez contribuiría a preocuparme la impresión de ciertas palabras y, sobre todo, del gesto con que Camila las había pronunciado... Era un gesto sincero (aun cuando Camila adolece de afectación, y muchas veces miente creyendo cumplir uno de sus deberes sacratísimos). ¿Estaré en efecto...? Lo que tomo por meditación y análisis, ¿será desvarío de insania...?</p>
 				<p>Vuelvo atrás la vista y abarco mi existencia -no la exterior, que nada significa ni vale; la positiva, la de dentro-. Exteriormente, yo he llevado una vida normal y sin tribulaciones de esas que se comentan con lástima. Mis penas ante el público las enumero así (por el orden de la importancia que el público les atribuyó):</p>
@@ -623,7 +665,7 @@
 				<p>como dice la reina Yocasta en la magnífica tragedia <seg rend="italic">Les frères ennemis,</seg> que releo, cultivando el goce, para mí delicado, del terror antiguo.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0085_chap9">
-				<head>- IX -</head>
+				<head xml:id="ne0085_head_008">- IX -</head>
 				<p>Me ha servido de distracción el arreglo de mi nueva morada, un hotelito riente, con regular trozo de jardín, en calle solitaria y nueva. Lo he adquirido, lo he destripado, lo he dispuesto a mi manera, agregándole un ala, y acabo de instalarme en él.</p>
 				<p>A planta baja, un salón, la biblioteca, el comedor, una antesala: en el principal, mi dormitorio, mi cuarto de baño, mis servidores; en el segundo, las habitaciones de Rafaelín y de la inglesa que le cuida; las dependencias, <seg rend="italic">office,</seg> en el ala agregada; y la cochera, en un pabellón al extremo del jardín, con entrada independiente. Es curioso que los hombres más distintos por dentro de la mayoría de la humanidad, sean tan previstos y tan gregarios en la mayor parte de sus exteriorizaciones. Apenas terminado mi nido, caigo en la cuenta de que, como los pájaros, me he sujetado a la regla general, al hábito, y que si Camila, con todo su normalismo, fuese la directora de mi instalación, no la haría de otro modo.</p>
 				<p>El hábito tiene una fuerza singular. ¡Me ha costado trabajo separarme de Camila! Todas las incompatibilidades de carácter que con ella me reconozco, todas las impertinencias de su cominería fiscalizadora, no impidieron que sintiese un penoso hormigueo llegado el momento crítico de la escisión. Ella, por su parte, demostró que la pesaba gravemente quedarse sola, y, con la expresión del que dice «ahí viene la primavera médica, habré de purgarme», murmuró: «Será preciso casarse otra vez. No está bien una mujer, sin arrimo, entregada a sí misma...»</p>
@@ -650,7 +692,7 @@
 				<p>La propina fue pingüe, y en mí quedó un reconcomio, una lamentación de perder tan leal criada, y una espina de duda y sospecha. ¿Acierto en lo relativo a Rafael? ¿Le rodean elementos convenientes para la formación de su espíritu? Y me propongo observar, observar (con el interés vehemente que produce en mí la observación) a las institutrices y a los preceptores.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0085_chap10">
-				<head>- X -</head>
+				<head xml:id="ne0085_head_009">- X -</head>
 				<p>Cuando retraso la hora de levantarme y me dejo estar arropadito en la cama, hay días en que experimento una impresión como de hogar, hogar mío, propio. Es que me traen al niño para que me acaricie...</p>
 				<p>Solís se encarga de esta ceremonia, incompatible con el pudor de la inglesa. El niño se me presenta ya hecho una lechuga, oliendo al jabón Pears y a los vinagres caros y deliciosos que he mandado venir para su tocadorcito. Trepa por mi cama arriba y me abofetea a sus anchas, hartándome de mimos zalameros. Yo, riendo, procuro despertar en mi corazón el abandono de confianza, la ceguedad amorosa que inspiran los hijos de nuestra carne. El día en que noto a manera de una pared invisible entre la criatura y mi alma; el día en que a pesar mío, murmuro sordamente «esto es una comedia de familia», estoy de murria la mañana entera.</p>
 
@@ -684,7 +726,7 @@
 				<p>-¡Ah! Por nada -responde él, evasivo, encogiéndose de hombros.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0085_chap11">
-				<head>- XI -</head>
+				<head xml:id="ne0085_head_010">- XI -</head>
 				<p>Los primeros calores empalidecen las florecientes mejillas de Rafael, y su dulzura de Niño Jesús de San Antonio se transforma en abatimiento. Consulto, y me ordenan llevarle a un sitio fresco: si es posible, al borde del mar. Y tan posible como es. Me le llevo a la casa de Portodor, donde he pasado días de mi edad temprana. Hace muchos años que no la he pisado; he solido, en verano, viajar por Suiza y Alemania; pero Camila, consecuente en sus hábitos de sabia previsión y buen gobierno, no quiso dejar en el abandono esa finca, y al residir allí cortas temporadas, de seguro cuidaría y arreglaría la antigua residencia. Sin embargo, para cerciorarme -como me sería muy desagradable encontrar camas duras, vajillas desportilladas y muebles ratonados-, me resuelvo a visitar a mi hermana, pegando un martillazo a la costra de hielo de nuestra casi ruptura.</p>
 				<p>Camila me recibe afabilísima. La mujer práctica ha echado sus cuentas y comprendido que es inútil y bobo reñir con nadie, a menos que reporte provecho. Su amabilidad, sin embargo, se asemeja a la que demostramos a los locos o semilocos, a quienes, en opinión de la gente, no se debe «llevar la contraria»; con quienes no se discute. Me invita a almorzar, y acepto, telefoneando a mi hotel para que no me aguarden Desiderio y Annie. Expongo mis propósitos, formulo mi interrogatorio. ¿Hay en Portodor siquiera lo necesario? Porque con añadir lo superfluo...</p>
 				<p>-Lo necesario para ti es mucho, Gaspar -responde melifluamente Camila-. Para mí, y para la mayoría de los mortales, aquello se halla habitable, y hasta cómodo. He renovado infinitos trastos: he puesto el salón de cretonas alegres, francesas, y lo mismo el gabinete. Mira, es más sencillo: tengo el inventario; te lo doy, y tú señalas en él lo que falte. ¿No te acuerdas de que hace cuatro años se gastaron allí algunos miles de pesetas, que tú pagaste, claro, porque la casa es tuya? No creas que vas a meterte en un palomar. Donde yo paso, pongo orden.</p>
@@ -749,7 +791,7 @@
 				<p>-Mis armas, mi máquina de fotografía... ¡Oye! Cinco o seis juguetes mecánicos bonitos para ir sorprendiendo a Rafaelín...</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0085_chap12">
-				<head>- XII -</head>
+				<head xml:id="ne0085_head_011">- XII -</head>
 				<p>¡Portodor!... Cuántos años que no pisaba estas playas de rubia arena, extendidas como veletes de gasa de oro; este bosque antiguo, legendario, donde se alza una piedra en equilibrio, la Pena Moura -céltica, según opinión de los arqueólogos locales-. Un sentimiento de sorpresa se apodera de mí al recordar que he traveseado y me he escondido en los rincones de la casa en que ahora resido otra vez. El sentimiento de mi propio misterio me inquieta. ¿Soy el mismo que era entonces? Siempre esta incertidumbre me ha preocupado: ¿subsiste la personalidad al través del cambio y evolución de todos sus elementos?</p>
 				<p>Antes, la casa me parecía enorme: ahora veo que no es muy amplia: consta, como la mayor parte de estas construcciones del siglo XVII, viviendas de hidalgos poderosos, que quizá sólo las habitaban en la época de la recolección o de la vendimia, de una torre y un cuerpo de edificio. La torre, nada sombría, nada feudal, se corona de inofensivas almenas picudas. La piedra de armas es enfática, aportuguesada, por lo mismo que se labró en tiempos relativamente modernos -reinado de Carlos II.</p>
 				<p>Si la casa ha disminuido, el paisaje que se domina desde el segundo piso de la torre me sorprende por más grandioso de lo que suponían mis recuerdos. Al amanecer, la extensión de la ría, poblada de barcas de pesca, es un himno de alegría heroica, el animoso canto de la naturaleza eternamente joven. Algo de esta alegría quiere infiltrarse en mi alma. No sé si porque respiro aire mejor, o porque el niño ejerce en mí singular influjo, desde que he llegado a esta aldea riente, saudosa y familiar, un poco de paz, de amor al mundo, entran en mí... ¡Ah! ¡Ya era tiempo!</p>
@@ -770,7 +812,7 @@
 				<p>En su anhelo de ser querido por todos, el chiquitín adivina el rencor mudo de la institutriz, y no cesa de aplacarla con zalamerías... Ella no se doblega, no se amansa. Conserva su agravio en vinagre -como suelen estas naturalezas estrictas, esclavas de un contrato, pero cultamente ambiciosas...</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0085_chap13">
-				<head>- XIII -</head>
+				<head xml:id="ne0085_head_012">- XIII -</head>
 				<p>El desquite, el triunfo de miss Annie, es la hora del baño de mar. El niño, entonces, la pertenece por completo, y, al principio, no sé si calculadamente, la inglesa se opuso a que yo presenciase de cerca este rito sacro; porque, desde lejos, no habría modo de impedirlo. Yo me impuse. El playazo donde se baña Rafael es mío; forma parte de la posesión. Lo cercan altos áloes, formidables -que se crían aquí y echan su pitón de oro, como si estuviésemos -en alguna tierra africana-. Miss Annie entra en el agua con su alumno. En vano Solís, angustiosamente, tercamente, ha reclamado para sí el privilegio de bañar a Baby. ¿Qué le importa? ¿Por qué insiste?... ¿Acaso?... Estemos sobre aviso. Y, para forzar la tensión, excluyámosle de la playa.</p>
 				<p>En una caseta de lona a rayas rojas y grises se desnudan y preparan Baby y Annie, ayudados de una rapaza humilde, una sierva del terruño. La arena, tersa y compacta, convida a pisarla con pies descalzos, y despide calor vibrante bajo la refracción solar... Conchillas rosadas y pequeñas, como orejas de muchachas bonitas, la esmaltan allí donde la ola dejó un borde de vegetaciones salobres, húmedas aún, de un verdor luminoso. Una beatitud material, voluptuosa, emana de esta marina apacible en que parecen inverosímiles los naufragios; son risas subacuáticas de náyades retozonas lo que riza y ondula el cristal del agua, y, para mayor mitologismo, ayer he visto saltar a corta distancia a los delfines -que llaman <seg rend="italic">golfines</seg> aquí-. Me siento bajo el quitasol, en un peñasco excavado de oquedades colmas de agua, donde corretean vivaces cangrejillos y se desperezan actinias cabelludas. Y miro, miro, aletargado el pensamiento. El niño sale de la tienda de campaña: viene encogido, a remolque, deseoso de ocultarse, con esa repulsión instintiva de las criaturas al agua, o mejor dicho, a la primera sensación de frío y al terror de lo inmenso. Admiro su torso, gentil, que empieza a perder las redondeces crasas del bebé y a estirarse un poco, con tendencia a ser musculoso y firme, tallado en roble. Admiro sus brazos adorables, su pie delicado, su vientrecillo, igual a una de estas conchas trigueñas y curvas; su testa de angelote, de rizos brillantes, sedosos. Detrás de él asoma Annie, agarrándole la mano y empujándole. La franela blanca de su traje masculino, corto de brazo y pierna, es menos dulce de color que su nuca, descubierta, porque la gorra de hule recoge el pelo, no tanto que unos <seg rend="italic">abuelos</seg> locos no diableen cerca del arranque de las espaldas. Jamás me he dado cuenta de este carácter étnico, la blancura de la piel inglesa, como ahora. Es un blanco que será desesperante para un pintor: un blanco tintado imperceptiblemente de rosa té, un blanco virginal, «carne de doncella»... La misma blancura a lo Van Dyck se nota en la pierna larga, esbelta, derecha; en el brazo duro, nada corto; en el pie de mármol cuyas uñas descubro que están limadas cuidadosamente, y abrillantadas, sin duda, con polvos de coral, pues una vez más me reproducen la imagen, sensual y delicada, de las menudas conchas traídas por la ola, envueltas en perlas verdosas, resbalantes.</p>
 				<p>La inglesa se apresura, semidesnuda, púdica y resuelta; se lanza con el niño, animándole: <seg rend="italic">Hip</seg>, <seg rend="italic">Baby, go</seg>; oigo el chillido del pequeño, acortado, sofocado por la misma violencia de la impresión, y mientras Sardiñete, el marinero contratado para asegurar de todo riesgo a Rafaelín, le coge y le sostiene dentro de las mansas olas, Annie rompe a nadar, diestramente, y se aleja, se aleja, delatada por la ligera espuma que sus brazos y pies levantan al palear avanzando. La veo a bastante distancia, echada sobre el lomo azul de este mar peregrino, mar griego en costas del Noroeste; saco del bolsillo mis gemelos marinos, y entonces me salta a los ojos, acrecentada por el misterioso rielar del agua con ziszás del sol, la blancura de ondina de los brazos, de las piernas, de la garganta, y la risa silenciosa de la boca emperlada de anchos dientes, otro género de blancura deslumbrante... Pero ¿qué es lo que pasa? Annie ha hecho un movimiento, se ha quitado su gorra de hule, el único recato de su atavío de bañista; el pelo rubio, mojado, se esparce y la rodea de una aureola de serpezuelas de cobre... ¿Sabe que la miro? ¡De cierto! Y, con paladas suaves, casi negligentes, vuelve hacia la orilla, toma al niño otra vez de la mano -imperiosa, pues el chico se resiste a salir y juega en el agua- y de pronto se detiene, sin soltar a Rafaelín.</p>
@@ -787,7 +829,7 @@
 				<p>-Súbete: soy tu caballo, o tu pollino, como quieras... Para ti, nenito, soy asno. ¡Sólo para ti!</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0085_chap14">
-				<head>- XIV -</head>
+				<head xml:id="ne0085_head_013">- XIV -</head>
 				<p>En el juego y desquite que mi cerebro se toma, entreteniéndose en presenciar y aún en provocar conflictos espirituales, encuentro un aliciente inesperado: además de Annie, otra persona está pendiente de mi escarceo. ¡Ya me lo sospechaba yo! Por lo visto, Desiderio Solís ha caído; había caído, por mejor decir, en las redes de la común enemiga y conservadora del género humano...</p>
 				<p>Vuelvo a concentrar mi atención, un momento distraída por un ampo de blancura en una encarnación femenil, en el alma que creí atormentada, complicada y simpática a la mía, del joven futuro preceptor... No, preceptor no; no temas, Rafaelín; te buscaremos un guía no tan fácil en soliviantarse, en aturdirse al olor del mosto de la mocedad; un hombre en quien se hayan sedimentado las pasiones y que adore los libros; vendrá el viejecito cura bibliófilo. Para mí, Desiderio, has bajado muchos peldaños de la escala de valores. Soñar otras cosas, bueno; soñar a la mujer, y de esta manera anticuada, prevista, folletinesca, con arrebatos de celos y con sufrimientos enervantes, como el vulgacho... eso no me interesa absolutamente nada, y me produce una reacción de humorismo, que demuestro manteniendo al incauto en perpetuo estado de excitación y tortura. ¡Sufre, alma sin valor ni fuerza, sufre... o elévate, como yo, hasta más allá de los dolores y los goces pequeños..., hasta más allá de las epidermis de nieve, rosas y demás cursilerías!</p>
 				<p>A cada mirar insistente que en la mesa dirijo a miss Annie; a cada palabra significativa que entre ella y yo se cruza, veo estremecerse a Desiderio, y noto la descomposición de sus facciones, de su cara turbia y movible como el mar. A la hora del baño, estoy convencido de que, si le aplicásemos a Solís un termómetro clínico, se apreciaría elevación en su temperatura. Adolece de una cotidiana pasional, una calentura de león. Más tarde, está caído y deshecho; sus ojeras amoratadas descubren la alteración de su organismo. Su violín solloza, y de noche me complace extrañamente escuchar el gemido de las cuerdas, que me parecen la queja de un condenado lamentándose más allá de la sepultura... ¿Por qué me recreo en oír desesperarse a este hombre a quien he querido sacar de la miseria? ¿Es mi eterno desprecio al sentimiento, al dolor, a la flaqueza, a la necedad de mis... prójimos? ¡No, eso no; yo prójimos no tengo, ni quiero tener!</p>
@@ -834,7 +876,7 @@
 				<p>-<seg rend="italic">Father</seg>, dime, anda... ¿Qué es morir? El pescadito, si muere, ¿cómo quedará? Y su <seg rend="italic">Father</seg>,¿llorará por él, di?</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0085_chap15">
-				<head>- XV -</head>
+				<head xml:id="ne0085_head_014">- XV -</head>
 				<p>El día siguiente a la tarde en que pasamos este diálogo Solís y yo, domingo era, y había limosneo. Conservo y restauro esta costumbre, procedente del tiempo de mis padres, no porque me parece caritativa, sino únicamente por encontrarla estética, complemento adecuado de la torre de tostadas almenas picudas, inútiles para la defensa, pero bonitas sobre el celaje. Además, ¡el niño goza tanto con la distribución!, razón babosa que ejerce sobre mí suma fuerza. Nos sentábamos bajo el emparrado, entonces cubierto de pámpanos, entre los cuales comenzaban a pintarse de un carmín claro aún los racimos. Al lado, la fuente gorgoriteaba su canción monótona y deleitosa. Frente a nosotros, descubría la vista la extensión de la ría, espejeante, rebrilladora, salpicada de espuma un momento por el brinco de un delfín, o cortada por el vuelo airoso de una barca de pesca, tendida el ala de su vela latina. Los puertecillos de la costa agrupaban diminutos, como casas de juguete, su caserío. Olía a helechos frescos, a madreselva y a soplos de mar, que llegaban por bocanadas. Yo, cauto, me provistaba de un frasquito primoroso de sal inglesa, por si los mendigos esparcían su acostumbrado vaho a hormigas, a salmuera, a aguardiente de caña en estómagos mal nutridos.</p>
 				<p>Presos los perros, irreconciliables enemigos de los pobres, presentaba el mayordomo el cestón atestado de trozos de pantrigo -no de sobras, eso lo prohibía yo, sino de mollete fresco y de tortas de borona-. A Rafaelín se le entregaba un bolsón repleto de cobre. En mi bolsillo danzaba plata menuda, para los casos de mayor simpatía o capricho de la criatura. Los pordioseros, según orden que se les había dado, aguardaban formados en doble fila.</p>
 				<p>Yo conocía ya a muchos de ellos; pero cada domingo venían algunos nuevos, de otras parroquias, atraídos por la fama que cundía de mi liberalidad y buen corazón. Se respetaba jerarquía y antigüedad: los de la parroquia eran socorridos primero, luego los de las circunvecinas, por orden de proximidad a Portodor. La expresión de todas las caras, o de casi todas, es de júbilo y de una malicia humilde, como la de los legos bobos que fían en Dios y chorrean esperanza. La presencia de Rafaelín les saca de sus casillas, y ríen más, y exclaman cosas más chuscas y optimistas; vejezuelas desdentadas ríen como niños de pecho; vejezuelos reumáticos, arrastrándose sostenidos en un palo, ríen plegando el rancio cuero de su cara de manzana tabardilla muy madura; un lelo ríe de felicidad al tocarle la manecita del nene, y se olvida de decorar el mendrugo; un ciego es el más jovial, y se empeña en mosconear en la <seg rend="italic">zanfona</seg> y en dedicarnos coplas alusivas, aduladoras, donde nos llama reyes.</p>
@@ -877,7 +919,7 @@
 				<p>Visitan la casa las señoras, gustosamente. Se detienen mucho en recorrerla. Lo que las interesa, al parecer, es la distribución de las habitaciones. Camila lo revuelve todo, lo pescuda todo, con su ojeada maliciosa, digna y escandalizada a la vez. El examen resulta inquietante. Yo ocupo, en el segundo piso de la torre, un cuarto no muy amplio; detrás de él, en otro más chico, duerme Tadeo, mi ayuda de cámara; y enfrente, dos habitaciones de dimensiones iguales, separadas por un pasillo, corresponden a Rafael y miss Annie. El primer piso de la torre queda reservado para un salón. Y al cuerpo de edificio, detrás del despacho y comedor, está relegado Solís. De aquí, los espionajes nocturnos. Le veo que observa a Camila y nota su actitud; dijérase que los dos pensamientos, las dos sospechas, se encuentran, cruzan y abrazan en el aire, como dos espadas desnudas. Al contacto de la sospecha de Camila, la de Solís acaso se hace certidumbre.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0085_chap16">
-				<head>- XVI -</head>
+				<head xml:id="ne0085_head_015">- XVI -</head>
 				<p>Nos sentamos a almorzar. Camila, frente a mí, preside. A su derecha, Rafaelín. Solís, al otro lado. A mi derecha, Trini; la inglesa, en el puesto inferior, a la izquierda.</p>
 				<p>Convencido como estoy de que la mayor parte de nuestros estados psíquicos, aunque jamás carecerán de razones de ser, las tienen frecuentemente tan ocultas que ni nosotros mismos las traducimos y analizamos, no he intentado explicarme por qué aquel almuerzo fue una hora excepcional en mi vida; por qué desde que Trini se colocó a mi lado, comprendí su deseo y su sinceridad, y presentí el desarrollo que iban a tener los sucesos.</p>
 				<p>La mesa lucía un adorno muy vulgar, pero encantador: canalitos de vidrio liso llenos de agua en que refrescan flores y ramillas tiernas de helecho. Eran como riachuelos dormidos sobre la blancura del mantel. Dado que en Portodor andamos mal de jardinería, Tadeo se había ingeniado y traído del río buena provisión de las umbelas rosa que huelen a almendra amarga; y el ligero olor, avivado por el calor y la frescura, me penetraba en el alma como un cuchillo de oro. El cocinero, aunque careciendo, según decía, de mil recursos que no faltan en Madrid, había sacado partido de la mariscada y pesca tan abundante en Portodor, y desde las menudas anchoas hasta los filetes de lenguado a la Monrny y el rodaballo a la Teodora braseado al <seg rend="italic">champagne</seg>, el menú, casi magro, era para despertar el paladar del más gastado gastrónomo. Trini, que habitualmente come poco, animada por mis bromas y mis obsequios, estuvo hasta glotona; dos veces se sirvió el rodaballo, ensalzándolo. Solís, aliviado de su tortura al notar cómo yo atendía a Trini y cómo ella se esponjaba dichosa, y un tanto excitado quizá por los excelentes vinos que ordené a Tadeo que sirviese, empezó por destacar alguna frase y, al fin, habló brillantemente, desplegando ingenio, conocimientos y buen humor irónico, que descargó sobre el pueblecillo de Portodor, sus notabilidades, sus festejos, su casino, sus bellezas. Trini se reía; hasta Camila desfrunció el entrecejo, sonrió y dos o tres veces aprobó.</p>
@@ -905,7 +947,7 @@
 				<p>-Hemos quedado -advierto a Camila- en que volveréis a pasar aquí el día del jueves. Iré a esperaros en el desembarcadero. Y antes, es probable que me aparezca en San Roque...</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0085_chap17">
-				<head>- XVII -</head>
+				<head xml:id="ne0085_head_016">- XVII -</head>
 				<p>Y apenas se aleja, con ruido apagado de rodadas, el coche que lleva a las dos señoras, entrego a Tadeo la criatura soñolienta, para que la suba en brazos a la Torre, hago una seña a los marineros y vuelvo a saltar en el bote.</p>
 				<p>-¿Caradónde, señorito?...</p>
 				<p>-Adonde queráis... Un paseo.</p>
@@ -944,7 +986,7 @@
 				<p>-¡Pillastre!</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0085_chap18">
-				<head>- XVIII -</head>
+				<head xml:id="ne0085_head_017">- XVIII -</head>
 				<p>Tadeo se presentó a los tres minutos. Venía azorado: sin duda había oído desde abajo gritos roncos, ruidos de lucha.</p>
 				<p>-¿Quiere algo el señor? Me parecía...</p>
 				<p>-Nada... Váyase usted...</p>

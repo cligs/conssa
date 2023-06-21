@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La reina Calafia</title>
-				<title type="sub"></title>
+				
 				<title type="short">Reina</title>
-				<title type="idno">
-					<idno type="bne">XX2314759</idno>
-					<idno type="viaf">307968037</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1316</measure>
@@ -141,13 +131,46 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0166</idno>
+						<idno type="cligs">ne0166</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epub libre, <date when="2015">2015</date>, <idno>20996</idno>, <ref target="https://www.epublibre.org/libro/detalle/20996"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1923">1923</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La reina Calafia</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2314759.html">XX2314759</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/307968037/">307968037</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epub libre, <date when="2015">2015</date>, <idno>20996</idno>, <ref target="https://www.epublibre.org/libro/detalle/20996"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1923">1923</date><idno source="k10plus" type="ppn" n="464795125" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464795125"/><idno source="k10plus" type="ppn" n="226414299" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226414299"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Reina Calafia</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464795125" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464795125"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Reina Calafia</title>: 	<title type="sub">(novela)</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226414299" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226414299"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Queen Calafia</title> <date when="1924">1924</date>, <publisher>E. P. Dutton &amp; Company</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="464693608" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464693608"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La Reina Calafia. Novelas de la Costa Azul...</title> <date when="1967">1967</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520994825" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520994825"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La Reina Calafia. Novelas de la Costa Azul...</title> <date when="1969">1969</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="521202817" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521202817"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos, La reina calafia, Novelas de la Costa Azul, La vuelta al mundo de un novelista, Novelas de amor y muerte, El papa del mar, En busca del gran kan, El caballero de la virgen, El fantasma de la alas de oro, Estudios literarios</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621554" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621554"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La Reina Calafia. Novelas de la Costa Azul ... - 8. ed., 5. reimpr. - 1978</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="03764730X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=03764730X"/> 		<idno type="isbn" n="8403000103"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La reina Calafia. Novelas de la Costa Azul ...</title> <date when="1987">1987</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="032954972" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=032954972"/> 		<idno type="isbn" n="8403000103"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -160,6 +183,14 @@
 				<p>Nos cuenta las peripecias de Concha Ceballos, una multimillonaria californiana que representa el tipo de mujer emancipada. Se evoca la legendaria California del libro de caballerías.</p></div>-->
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -190,7 +221,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">symbolic</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">adventure</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novelas de aventuras</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
@@ -221,6 +252,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-08-13" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -228,7 +260,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0166_chap1">
-				<head>I - Lo que hizo una mañana el catedrático Mascaró al salir de la Universidad Central</head>
+				<head xml:id="ne0166_head_000">I - Lo que hizo una mañana el catedrático Mascaró al salir de la Universidad Central</head>
 				<p>Cuatro veces por semana, después de explicar su lección de historia y literatura de los países hispanoamericanos, don Antonio Mascaró volvía paseando a su casa, situada al otro extremo de Madrid.</p>
 				<p>En los primeros años de su existencia matrimonial, había vivido cerca de la Universidad. Luego, al crecer su hija única, doña Amparo su esposa, que se arrogaba un poder sin límites en todo lo referente a la administración y decoro de la familia, había creído oportuno trasladarse lejos de este barrio, frecuentado por los estudiantes. Él, además, había hecho algunos viajes al extranjero, acostumbrándose a las comodidades de otros países, y encontraba cada vez menos tolerable la vida en caserones construidos con arreglo a las necesidades del siglo anterior.</p>
 				<p>Don Antonio, después de lo que había visto en el «otro mundo» —así llamaba él A América—, aceptó con gusto la casa escogida por su esposa en los límites del barrio de Salamanca, cerca de la plaza de Toros, con teléfono en la portería, ascensor en la escalera (solo para subir) y cuarto de baño, que, aunque pequeño, tenía los aparatos en uso corriente, no estando ocupada su bañera por cajas de sombreros, como ocurría en otras viviendas. Un «hombre de progreso» y que no era rico, debía contentarse con esto y no pedir más.</p>
@@ -327,7 +359,7 @@
 				<p>—Es ella… Es la reina Calafia.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0166_chap2">
-				<head>II - Aguas arriba en el pasado</head>
+				<head xml:id="ne0166_head_001">II - Aguas arriba en el pasado</head>
 				<p>Al ver a Balboa sintió perderse una parte de la fuerza hostil que la había empujado hasta allí. Se sentó en el sillón que le ofrecía el dueño de la casa, mientras su modesta compañera ocupaba otro a su lado sin esperar a que la invitasen.</p>
 				<p>Fue contestando maquinalmente a los saludos del ingeniero, y al mismo tiempo sus ojos no podían apartarse de él, fijos por la atracción de la sorpresa. «¡Qué viejo está!… No le hubiese conocido al encontrarlo en la calle».</p>
 				<p>Y mientras repetía esto en su cerebro, fue saltando mentalmente sobre un período considerable de su propia existencia.</p>
@@ -448,7 +480,7 @@
 				<p>—Hablemos de cosas más agradables. No somos enemigos ni vamos a devorarnos. Viéndose acaban por entenderse las personas de buena voluntad. Acordémonos un poco de cuando nos conocimos, allá en California. ¡Qué de cosas han pasado desde entonces!…</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0166_chap3">
-				<head>III - Donde se dice quién fue la reina Calafia y cómo gobernó su ínsula llamada California</head>
+				<head xml:id="ne0166_head_002">III - Donde se dice quién fue la reina Calafia y cómo gobernó su ínsula llamada California</head>
 				<p>A las nueve de la noche se presentaron en casa de Balboa don Antonio, su esposa y su hija, y la conversación en la sala de trabajo giró inmediatamente sobre la visita de mediodía.</p>
 				<p>Mostraba el ingeniero un orgullo de vencedor al recordar con qué amabilidad se había despedido de él «la Embajadora», después de tantas cartas amenazantes, y de su entrada silenciosa y hostil, como si se preparase para un combate.</p>
 				<p>—A estas señoras de genio fuerte —dijo con petulancia— hay que hablarlas con energía, para que se convenzan de que no inspiran miedo. Además, bien mirado, es una mujer adorable.</p>
@@ -528,7 +560,7 @@
 				<p>—Así fue —continuó el catedrático— como algún tiempo antes de ser descubierta América inventó el nombre de California un novelista de la meseta central de España, que fue soldado en muchas guerras, pero tal vez murió sin haber visto nunca el mar.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0166_chap4">
-				<head>IV - En el que se prosigue la historia de California y se cuenta la vida de la Santa de las Castañuelas</head>
+				<head xml:id="ne0166_head_003">IV - En el que se prosigue la historia de California y se cuenta la vida de la Santa de las Castañuelas</head>
 				<p>Mascaró siguió hablando.</p>
 				<p>—Los españoles tardaron dos siglos en colonizar la Alta California, después de haberla descubierto geográficamente. Buscaban oro y piedras preciosas, ni más ni menos que todos los exploradores de entonces, fuese cual fuese su nacionalidad. Navegando en barcos pequeños y conociendo mal las costas y los vientos, lo que hacía interminables los viajes, es absurdo exigirles que fuesen en busca de vulgares artículos de comercio. Estos empezaron a transportarse de un hemisferio a otro con los modernos adelantos de la navegación, cuando los buques fueron enormes. Si los descubridores arriesgaban su vida, era con la esperanza de enriquecerse en poco tiempo, cargando sus pequeñas naves de objetos valiosos y escasos en volumen, como son los metales.</p>
 				<p>Los navegantes franceses e ingleses de entonces, ya que no podían buscar oro en unas tierras que pertenecían a los españoles por haberlas descubierto, se dedicaron simplemente al saqueo de las nacientes colonias de América que pillaban descuidadas, o a robar los cargamentos de las naves que volvían a Europa.</p>
@@ -641,7 +673,7 @@
 				<p>—Esta es la historia de la Santa de las Castañuelas, que pasó la mayor parte de su existencia mirando el mar solitario de California, sintiendo en su alma el vaivén de la confianza y el desaliento, igual al ir y venir de las olas; llorando unas veces la infidelidad y el olvido del ausente, creyendo en otros momentos que iba a llegar, cuando los centinelas del fuerte anunciaban una vela en el horizonte… ¡Y el hombre esperado durante tantos años había muerto!… ¡Y ella no lo supo hasta los últimos tiempos de su vida; una vida compuesta de diez días de amor y treinta y seis años de espera!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0166_chap5">
-				<head>V - «¿Qué hace usted aquí?… El mundo es grande»</head>
+				<head xml:id="ne0166_head_004">V - «¿Qué hace usted aquí?… El mundo es grande»</head>
 				<p>Cuando la esposa de Mascaró comparaba a Consuelito con muchas señoritas de su misma edad que ella llamaba desdeñosamente «modernistas», los méritos de su hija le inspiraban una satisfacción solo comparable al escándalo y el menosprecio que le infundían las otras.</p>
 				<p>—¡Qué niñas las de ahora! —decía—. Parecen huir de sus madres, como si las odiasen. Muchas quieren ir solas por las calles, lo mismo que gitanas. No saben más que bailar y bailar, como si fuesen del teatro; llevan el pelo cortado, igual que los antiguos pajes, y fuman en público con los muchachos que las acompañan a los tés y los <seg rend="italic">dancing</seg>. ¡Si esto se hubiese visto cuando yo era soltera e iba a todas partes con mamá!… ¡Cómo gobernarán su hogar esas mujeres cuando se casen, si es que con tal educación pueden pensar en casarse!…</p>
 				<p>El catedrático sonreía con una expresión tolerante.</p>
@@ -766,7 +798,7 @@
 				<p>—¿Qué hace usted aquí?… El mundo es grande.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0166_chap6">
-				<head>VI - Donde van presentándose los enamorados de la reina y se habla un poco de la famosa Ciudad-Camaleón</head>
+				<head xml:id="ne0166_head_005">VI - Donde van presentándose los enamorados de la reina y se habla un poco de la famosa Ciudad-Camaleón</head>
 				<p>Al atravesar la viuda, una semana después, el <seg rend="italic">hall</seg> de su hotel a la hora del almuerzo, tuvo un encuentro inesperado.</p>
 				<p>Un hombre hundido en un sillón, con el rostro envuelto en la nube olorosa de su habano, dejó este, al verla, sobre una mesilla inmediata y se puso de pie, sonriendo.</p>
 				<p>—¡Oh, mistress Douglas! ¡Qué agradable sorpresa!… No sabía que estaba usted en Madrid.</p>
@@ -913,7 +945,7 @@
 				<p>—Veo que ha hecho usted, apenas llegada, muy buenas amistades en Madrid. ¿Verdaderamente, le interesa la gente tan joven?…</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0166_chap7">
-				<head>VII - De las discusiones que tuvo Mascaró con su esposa y de un recado que le envió Florestán</head>
+				<head xml:id="ne0166_head_006">VII - De las discusiones que tuvo Mascaró con su esposa y de un recado que le envió Florestán</head>
 				<p>El día que conocieron en Florencia a Casa Botero, y después en las numerosas conversaciones tenidas con él en París y otras ciudades, las dos californianas le oyeron hablar siempre con orgullo de su noble abolengo español.</p>
 				<p>—Los Casa Botero somos de origen siciliano, pero mis ascendientes sirvieron con tal lealtad a <seg rend="italic">Carlos III</seg>, que al renunciar este a la corona de Nápoles para ser rey de España, no quiso separarse de ellos y ordenó que le siguieran a su nuevo reino, figurando mucho en la corte de Madrid.</p>
 				<p>Esto lo decía estando en Italia y en Francia; pero al vivir en Madrid empezó a mostrarse más siciliano que español. Olvidaba a los abuelos que siguieron a <seg rend="italic">Carlos III</seg> para hacer memoria únicamente de los otros que se habían quedado junto a los Borbones de Nápoles, así como de ciertas propiedades y derechos que aún poseía en Sicilia.</p>
@@ -1039,7 +1071,7 @@
 				<p>Y señaló un automóvil de alquiler que estaba esperando junto a la acera desde una hora antes.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0166_chap8">
-				<head>VIII - Lo que pasó en la «Quinta de los Desafíos» y en el Palace Hotel</head>
+				<head xml:id="ne0166_head_007">VIII - Lo que pasó en la «Quinta de los Desafíos» y en el Palace Hotel</head>
 				<p>Cuando entró el catedrático en el Palace Hotel latía en su pensamiento una protesta, o más exactamente dicho, una lamentación indignada, que le hizo recordar otras muchas emitidas por la voz iracunda de doña Amparo:</p>
 				<p>«¡Qué perturbaciones nos ha traído esta señora!».</p>
 				<p>Y en seguida, del hemisferio opuesto de su pensamiento surgía una rectificación de justicia como respuesta a dicha queja:</p>
@@ -1155,7 +1187,7 @@
 				<p>Entonces, la amazona, con el implacable orgullo de la venganza, sin darse cuenta tal vez de lo que hacía, fijó su pensamiento en otro hombre, levantó un pie y puso su tacón alto y agudo sobre la boca del caído.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0166_chap9">
-				<head>IX - Cómo la reina Calafia alabó la invención del automóvil</head>
+				<head xml:id="ne0166_head_008">IX - Cómo la reina Calafia alabó la invención del automóvil</head>
 				<p>Una semana había transcurrido solamente desde su instalación en la quinta de Alaminos, y ella se imaginó más de una vez, al rememorar el pasado, que llevaba varios meses viviendo en dicho lugar. En ciertos momentos hasta creía haber estado allí siempre, olvidando el suceso inicial que la impulsó a realizar tal cambio.</p>
 				<p>Otras veces recordaba la inquietud de las dos primeras noches pasadas en esta quinta, sus largas horas de angustia, durante las cuales miraba con avidez los cristales de los balcones, deseando que blanqueasen bajo la claridad lívida del alba, como si la luz de un nuevo día pudiese traer para ella la certeza de la salvación de Florestán. Manteníase insensible en estas noches al sueño y al cansancio, leyendo en un sillón, sin saber ciertamente lo que leía, interrumpiendo su lectura para pasar una mano por la frente del herido, contestando con palabras de maternal arrullo a las incoherencias que la fiebre hacía surgir de su boca.</p>
 				<p>Abría el joven sus ojos con momentánea lucidez en las altas horas nocturnas, mirando extrañado a la persona que se inclinaba sobre su lecho.</p>
@@ -1313,7 +1345,7 @@
 				<p>—Dile al chófer que antes de media noche vamos a salir de viaje… pero viaje largo. Que no se olvide de preparar el faro grande. Quiero que cuando mañana salga el sol me vea lejos, ¡muy lejos! de Madrid.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0166_chap10">
-				<head>X - La mentira</head>
+				<head xml:id="ne0166_head_009">X - La mentira</head>
 				<p>Languidecía la tarde al salir ella del Casino. Su automóvil marchó a gran velocidad por el tortuoso camino de la costa. La luz solar, antes de extinguirse, tomaba los colores del limón y la rosa, reflejándose sobre las cumbres amarillas o bermejas de los Alpes.</p>
 				<p>La señora Douglas deseaba no llegar con retraso a su hotel de Niza. Distraída por el juego en los salones privados del Casino de Monte-Carlo, había olvidado que aquella noche era de gran comida en el Hotel Negresco, donde ella estaba instalada, con exhibición a los postres de bailarinas célebres. Como había dejado a Rina en Niza ocupada en cumplir ciertos encargos suyos, iba sola en su carruaje. Entornando los ojos para no ver al conductor, se hacía la ilusión de que aquel marchaba solo, como un animal inteligente y amaestrado que obedecía su voluntad sin que ella necesitase valerse de palabras.</p>
 				<p>Todos los días veía a la ida y a la vuelta este paisaje maravilloso de la Costa Azul, acostumbrándose a él como si fuese un espectáculo ordinario; pero ahora creía encontrar en su contemplación una inexplicable novedad, un atractivo misterioso. Era sin duda el hálito de la primavera anunciando desde lejos su llegada; los juveniles efluvios de esa pubertad del año, que parece cambiar el aspecto de las cosas y el carácter de las personas.</p>

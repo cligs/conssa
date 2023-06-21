@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los cuatro jinetes del apocalipsis</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Apocalipsis</title>
-				<title type="idno">
-					<idno type="viaf">186013085</idno></title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2141</measure>
@@ -139,13 +131,76 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0165</idno>
+						<idno type="cligs">ne0165</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>24536</idno>, <ref target="http://www.gutenberg.org/ebooks/24536"/>.</bibl>
-				<bibl type="print-source">Valencia, Prometeo, <date when="1919">1919</date></bibl>
-				<bibl type="edition-first"><date when="1916">1916</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los cuatro jinetes del apocalipsis</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/186013085/">186013085</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1139306251">1139306251</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>24536</idno>, <ref target="http://www.gutenberg.org/ebooks/24536"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Valencia</pubPlace>, Prometeo, <date when="1919">1919</date></bibl>
+					<bibl type="edition-first"><date when="1916">1916</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">Da fire Ryttere</title>: 	<title type="sub">autoriseret oversættolse</title> , <publisher>Nationalforlaget</publisher> <pubPlace>København</pubPlace> 		<idno type="ppn" n="47489410X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=47489410X"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The four horsemen of the apocalypse</title> <date when="1918">1918</date>, <publisher>E. P. Dutton</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="656756373" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=656756373"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The four Horsemen of the Apocalypse</title> <date when="1918">1918</date>, <publisher>E. P. Dutton &amp; Company</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="46463668X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46463668X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1334406901" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334406901"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464266815" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464266815"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="46426670X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46426670X"/> </bibl>
+						<bibl type="further-edition"><title type="main">The four Horsemen of the Apocalypse</title>: 	<title type="sub">Transl. by Charlotte Brewster Jordan</title> <date when="1919">1919</date>, <publisher>Dutton</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="445658045" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658045"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="22641518X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=22641518X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La batalla del Marne</title>: 	<title type="sub">an episode of Los cuatro jinetes del Apocalipsis</title> <date when="1920">1920</date>, <publisher>Heath</publisher> <pubPlace>Boston [u.a.]</pubPlace> 		<idno type="ppn" n="083730788" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083730788"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The four Horsemen of the Apocalypse</title> <date when="1921">1921</date>, <publisher>Constable and Company</publisher> <pubPlace>London</pubPlace> 		<idno type="ppn" n="464644402" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464644402"/> </bibl>
+						<bibl type="further-edition"><title type="main">The four Horsemen of the Apocalypse. Los cuatro jinetes del Apocalipsis Engl. Transl. by Charlotte Brewster Jordan</title> <date when="1921">1921</date>, <publisher/> <pubPlace>London</pubPlace> 		<idno type="ppn" n="13353636X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=13353636X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die apokalyptischen Reiter</title>: 	<title type="sub">Roman</title> <date when="1922">1922</date>, <publisher>Mörlins</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="1376680378" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376680378"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die apokalyptischen Reiter</title>: 	<title type="sub">Roman</title> <date when="1922">1922</date>, <publisher>Mörlins</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="897057619" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=897057619"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die apokalyptischen Reiter</title>: 	<title type="sub">Roman. (Übers. aus d. Span. v. Enrique Koert)</title> <date when="1922">1922</date>, <publisher>W. J. Mörlins</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="445658037" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658037"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die apokalyptischen Reiter</title>: 	<title type="sub">Roman</title> <date when="1922">1922</date>, <publisher>Mörlins</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="236933485" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=236933485"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del apocalipsis</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1116179350" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116179350"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">(novela)</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350948240" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350948240"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del apocalipsis</title> <date when="1924">1924</date>, <publisher>La Novela Film</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1700486217" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1700486217"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die apokalyptischen Reiter</title>: 	<title type="sub">Roman</title> <date when="1924">1924</date>, <publisher>Mörlins</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="1116180413" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116180413"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die apokalyptischen Reiter</title>: 	<title type="sub">Roman</title> <date when="1924">1924</date>, <publisher>Mörlins</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="466316240" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466316240"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464266947" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464266947"/> </bibl>
+						<bibl type="further-edition"><title type="main">Los cuatro Jinetes del Apocalipsis</title>: 	<title type="sub">novela</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445658029" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658029"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">comedia dramática en cinco actos</title> <date when="1928">1928</date>, <publisher>Editorial Siglo XX</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1693636441" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1693636441"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The four Horsemen of the Apocalypse</title> <date when="1943">1943</date>, <publisher>E. P. Dutton &amp; Company</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="46463654X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46463654X"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The four Horsemen of the Apocalypse</title> <date when="1945">1945</date>, <publisher>E. P. Dutton &amp; Company</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="464636442" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464636442"/> </bibl>
+						<bibl type="further-edition"><title type="main">The four horsemen of the apocalypse</title>: 	<title type="sub">From the Spanish of Vicente Blasco Ibañez</title> <date when="1945">1945</date>, <publisher>Dutton</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="432214860" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=432214860"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">novela</title> <date when="1958">1958</date>, <publisher>Ed. Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="538036796" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538036796"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Metro presents Rex Ingram's production of Vicente Blasco Ibáñez' literary masterpiece The four horsemen of the apocalypse</title> <date when="1963">1963</date>, <publisher>Turner Entertainment [u.a.];Metro Pictures [Orig.-Prod.]</publisher> <pubPlace>[S.l.];[S.l.]</pubPlace> 		<idno type="ppn" n="1378467477" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1378467477"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title> <date when="1971">1971</date>, <publisher>Inst. Cubano del Libro</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="520713923" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520713923"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los 4 jinetes del apocalipsis</title> <date when="1976">1976</date>, <publisher>Plaza &amp; Janes</publisher> <pubPlace>Esplugas de Llobregat (Barcelona)</pubPlace> 		<idno type="ppn" n="362854297" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=362854297"/> 		<idno type="isbn" n="8401805317"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title> <date when="1978">1978</date>, <publisher>Plaza &amp; Janés</publisher> <pubPlace>Esplugas de Llobregat</pubPlace> 		<idno type="ppn" n="1671916816" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1671916816"/> 		<idno type="isbn" n="8401480388;9788401480386"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente, Sangre y arena, Los muertos mandan, Luna benamor, Los cuatro jinetes del apocalipsis, Mare nostrum, Los enemigos de la mujer, El militarismo mejicano, El prestamo de la difunta y otros cuentos, El paraiso de las mujeres</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621457" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621457"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="311830544" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=311830544"/> 		<idno type="isbn" n="8420633496"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title>: 	<title type="sub">una novela sobre los terrores de la guerra</title> <date when="2005">2005</date>, <publisher>Yoyo</publisher> <pubPlace>[S.l.]</pubPlace> 		<idno type="ppn" n="595768245" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=595768245"/> 		<idno type="isbn" n="9584301810;9584301810;9789584301819"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title> <date when="2007">2007</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Pozuelo de Alarcón</pubPlace> 		<idno type="ppn" n="555933652" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=555933652"/> 		<idno type="isbn" n="8467023996;9788467023992"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los cuatro jinetes del Apocalipsis</title> <date when="2012">2012</date>, <publisher>Akal</publisher> <pubPlace>Tres Cantos</pubPlace> 		<idno type="ppn" n="715396145" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=715396145"/> 		<idno type="isbn" n="9788446035145"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los muertos mandan</title> <date when="2013">2013</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479519006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479519006"/> 		<idno type="isbn" n="9788415255253"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los muertos mandan. Los cuatro jinetes del Apocalipsis</title> <date when="2013">2013</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="74490871X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=74490871X"/> 		<idno type="isbn" n="9788415255253"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +212,14 @@
 				<p>Blasco Ibáñez acudía al frente a inspirarse. La batalla del Marne esta espléndidamente descrita.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -220,6 +283,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-10-20" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,9 +291,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>PRIMERA PARTE</head>
+				<head xml:id="ne0165_head_000">PRIMERA PARTE</head>
 				<div n="1" type="chapter" xml:id="ne0165_chap1">
-					<head>I - En el jardín de la Capilla Expiatoria </head>
+					<head xml:id="ne0165_head_001">I - En el jardín de la Capilla Expiatoria </head>
 					<p>Debían encontrarse á las cinco de la tarde en el pequeño jardín de la Capilla Expiatoria, pero Julio Desnoyers llegó media hora antes, con la impaciencia del enamorado que cree adelantar el momento de la cita presentándose con anticipación. Al pasar la verja por el bulevar Haussmann, se dió cuenta repentinamente de que en París el mes de Julio pertenece al verano. El curso de las estaciones era para él en aquellos momentos algo embrollado que exigía cálculos.</p>
 					<p>Habían transcurrido cinco meses desde las últimas entrevistas en este <seg rend="italic">square</seg> que ofrece á las parejas errantes el refugio de una calma húmeda y fúnebre junto á un bulevar de continuo movimiento y en las inmediaciones de una gran estación de ferrocarril. La hora de la cita era siempre las cinco. Julio veía llegar á su amada á la luz de los reverberos, encendidos recientemente, con el busto envuelto en pieles y llevándose el manguito al rostro lo mismo que un antifaz. La voz dulce, al saludarle, esparcía su respiración congelada por el frío: un nimbo de vapor blanco y tenue. Después de varias entrevistas preparatorias y titubeantes, abandonaron definitivamente el jardín. Su amor había adquirido la majestuosa importancia del hecho consumado, y fué á refugiarse de cinco á siete en un quinto piso de la <seg rend="italic">rue de la Pompe</seg>, donde tenía Julio su estudio de pintor. Las cortinas bien corridas sobre el ventanal de cristales, la chimenea ardiente esparciendo palpitaciones de púrpura como única luz de la habitación, el monótono canto del <seg rend="italic">samovar</seg> hirviendo junto á las tazas de té, todo el recogimiento de una vida aislada por el dulce egoísmo, no les permitió enterarse de que las tardes iban siendo más largas, de que afuera aún lucía á ratos el sol en el fondo de los pozos de nácar abiertos en las nubes, y que la primavera, una primavera tímida y pálida, empezaba á mostrar sus dedos verdes en los botones de las ramas, sufriendo las últimas mordeduras del invierno, negro jabalí que volvía sobre sus pasos.</p>
 					<p>Luego, Julio había hecho un viaje á Buenos Aires, encontrando en el otro hemisferio las últimas sonrisas del otoño y los primeros vientos helados de la pampa. Y cuando se imaginaba que el invierno era para él la eterna estación, pues le salía al paso en sus cambios de domicilio de un extremo á otro del planeta, he aquí que se le aparecía inesperadamente el verano en este jardín de barrio.</p>
@@ -389,7 +453,7 @@
 					<p>—¿Crees realmente que no habrá guerra? ¿Crees que podremos casarnos?... Dímelo otra vez. Necesito que me tranquilices... Quiero oirlo de tu boca.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0165_chap2">
-					<head>II - El centauro Madariaga </head>
+					<head xml:id="ne0165_head_002">II - El centauro Madariaga </head>
 					<p>En 1870, Marcelo Desnoyers tenía diez y nueve años. Había nacido en los alrededores de París. Era hijo único, y su padre, dedicado á pequeñas especulaciones de construcción, mantenía á la familia, en un modesto bienestar. El albañil quiso hacer de su hijo un arquitecto, y Marcelo empezaba los estudios preparatorios, cuando murió el padre repentinamente, dejando sus negocios embrollados. En pocos meses, él y su madre descendieron la pendiente de la ruina, viéndose obligados á renunciar sus comodidades burguesas para vivir como los obreros.</p>
 					<p>Cuando á los catorce años tuvo que escoger un oficio, se hizo tallista. Este oficio era un arte y estaba en relación con las aficiones despertadas en Marcelo por sus estudios forzosamente abandonados. La madre se retiró al campo buscando el amparo de unos parientes. El avanzó con rapidez en el taller, ayudando á su maestro en todos los trabajos importantes que realizaba en provincias. Las primeras noticias de la guerra con Prusia le sorprendieron en Marsella trabajando en el decorado de un teatro.</p>
 					<p>Marcelo era enemigo del Imperio, como todos los jóvenes de su generación. Además estaba influenciado por los obreros viejos, que habían intervenido en la República del 48 y guardaban vivo el recuerdo del golpe de Estado del 2 de Diciembre. Un día vió en las calles de Marsella una manifestación popular en favor de la paz, que equivalía á una protesta contra el gobierno. Los viejos republicanos en lucha implacable con el emperador, los compañeros de la Internacional que acababa de organizarse, y gran número de españoles é italianos huídos de sus países por recientes insurrecciones, componían el cortejo. Un estudiante melenudo y tísico llevaba la bandera, «Es la paz lo que deseamos; una paz que una á todos los hombres», cantaban los manifestantes. Pero en la tierra, los más nobles propósitos rara vez son oídos, pues el destino se divierte en torcerlos y desviarlos. Apenas entraron en la Cannebière los amigos de la paz con su himno y su estandarte, fué la guerra lo que les salió al paso, teniendo que apelar al puño y al garrote. El día antes habían desembarcado unos batallones de zuavos de Argelia que iban á reforzar el ejército de la frontera, y estos veteranos, acostumbrados á la existencia colonial, poco escrupulosa en materia de atropellos, creyeron oportuno intervenir en la manifestación, unos con las bayonetas, otros con los cinturones desceñidos. «¡Viva la guerra!» Y una lluvia de zurriagazos y golpes cayó sobre los cantores. Marcelo pudo ver cómo el cándido estudiante que hacía llamamientos á la paz con una gravedad sacerdotal rodaba envuelto en su estandarte bajo el regocijado pateo de los zuavos. Y no se enteró de más, pues le alcanzaron varios correazos, una cuchillada leve en un hombro, y tuvo que correr lo mismo que los otros.</p>
@@ -591,7 +655,7 @@
 					<p>—Está bien—dijo—. Cada uno que se lleve lo suyo. Me parece justo.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0165_chap3">
-					<head>III - La familia Desnoyers </head>
+					<head xml:id="ne0165_head_003">III - La familia Desnoyers </head>
 					<p>La «sucesión Madariaga»—como decían en su lenguaje los hombres de ley interesados en prolongarla para aumento de su cuenta de honorarios—quedó dividida en dos grupos separados por el mar. Los Desnoyers se establecieron en Buenos Aires. Los Hartrott se trasladaron á Berlín luego que Karl hubo vendido todos los bienes, para emplear el producto en empresas industriales y tierras de su país.</p>
 					<p>Desnoyers no quiso seguir viviendo en el campo. Veinte años había sido el jefe de una enorme explotación agrícola y ganadera, mandando á centenares de hombres en varias estancias. Ahora el radio de su autoridad se había restringido considerablemente al parcelarse la fortuna del viejo con la parte de Elena y los numerosos legados. Le encolerizaba ver establecidos en las tierras inmediatas á varios extranjeros, casi todos alemanes, que las habían comprado á Karl. Además, se hacía viejo, la fortuna de su mujer representaba unos veinte millones de pesos, y su ambicioso cuñado, al trasladarse á Europa, demostraba tal vez mejor sentido que él.</p>
 					<p>Arrendó parte de sus tierras, confió la administración de otras á algunos de los favorecidos por el testamento, que se consideraban de la familia, viendo siempre en Desnoyers al patrón, y se trasladó á Buenos Aires. De este modo podía vigilar á su hijo, que seguía llevando una vida endiablada, sin salir adelante en los estudios preparatorios de ingeniería... Además, Chichí era ya una mujer, su robustez le daba un aspecto precoz, superior á sus años, y no era conveniente mantenerla en el campo para que fuese una señorita rústica como su madre. Doña Luisa parecía cansada igualmente de la vida de estancia. Los triunfos de su hermana le producían cierta molestia. Era incapaz de sentir celos; pero, por ambición maternal, deseaba que sus hijos no se quedasen atrás, brillando y ascendiendo como los hijos de la otra.</p>
@@ -691,7 +755,7 @@
 					<p>Sus deseos podían realizarse. El marido les facilitaba el paso con su inesperada intervención. Y el joven Desnoyers se marchó á América para reunir dinero y casarse con Margarita.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0165_chap4">
-					<head>IV - El primo de Berlín </head>
+					<head xml:id="ne0165_head_004">IV - El primo de Berlín </head>
 					<p>El estudio de Julio Desnoyers ocupaba el último piso sobre la calle. El ascensor y la escalera principal terminaban ante su puerta. A sus espaldas, dos pequeños departamentos recibían la luz de un patio interior, teniendo como único medio de comunicación la escalera de servicio, que ascendía hasta las buhardillas.</p>
 					<p>Argensola, al quedarse en el estudio durante el viaje de su compañero, había buscado la amistad de estos vecinos de piso. La más grande de las habitaciones se hallaba desocupada durante el día. Sus dueños sólo volvían después de comer en el restorán. Era un matrimonio de empleados, que únicamente permanecía en casa los días festivos. El hombre, vigoroso y de aspecto marcial, prestaba servicio de inspector en un gran almacén. Había sido militar en África, ostentaba una condecoración y tenía el grado de subteniente en el ejército de reserva. Ella era una rubia, abultada y algo anémica, de ojos claros y gesto sentimental. En los días de fiesta pasaba largas horas ante el piano, evocando sus recuerdos musicales, siempre los mismos. Otras veces la veía Argensola por una ventana interior trabajando en la cocina, ayudada por su compañero, riendo los dos de sus torpezas é inexperiencias al improvisar la comida del domingo.</p>
 					<p>La portera tenía á esta mujer por alemana, pero ella hacía constar su condición de suiza. Desempeñaba el empleo de cajera en un almacén que no era el de su compañero. Por las mañanas salían juntos, para separarse en la plaza de la Estrella, siguiendo cada uno distinta dirección. A las siete de la tarde se saludaban con un beso en plena calle, como enamorados que se encuentran por primera vez, y luego de su comida volvían al nido de la <seg rend="italic">rue de la Pompe</seg>. Argensola se vió rechazado, en todos sus intentos de amistad, por el egoísmo de esta pareja. Le contestaban con una cortesía glacial: vivían únicamente para ellos.</p>
@@ -825,7 +889,7 @@
 					<p>—¡Quién sabe! Este es un país de sorpresas. Al francés hay que verlo á la hora en que procura remediar sus imprevisiones. Diga lo que diga el bárbaro de tu primo, hay entusiasmo, hay orden... Peor que nosotros debieron verse los que vivían días antes de lo de Valmy. Todo desorganizado: como única defensa, batallones de obreros y campesinos que por primera vez tomaban un fusil. Y sin embargo, la Europa de las viejas monarquías no supo cómo librarse durante veinte años de estos guerreros improvisados.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0165_chap5">
-					<head>V - Donde aparecen los cuatro jinetes </head>
+					<head xml:id="ne0165_head_005">V - Donde aparecen los cuatro jinetes </head>
 					<p>Los dos amigos vivieron en los días siguientes una vida febril, considerablemente agrandada por la rapidez con que se sucedían los acontecimientos. Cada hora engendraba una novedad—las más de las veces falsa—, que removía la opinión con rudo vaivén. Tan pronto el peligro de la guerra aparecía conjurado, como circulaba la voz de que la movilización iba á ordenarse dentro de unos minutos.</p>
 					<p>Veinticuatro horas representaban las inquietudes, la ansiedad, el desgaste nervioso de un año normal. Y lo que agravaba más esta situación era la incertidumbre, la espera del acontecimiento temido y todavía invisible, la angustia por el peligro que nunca acaba de llegar.</p>
 					<p>La Historia se extendía desbordada fuera de sus cauces, sucediéndose los hechos como los oleajes de una inundación. Austria declaraba la guerra á Servia, mientras los diplomáticos de las grandes potencias seguían trabajando por evitar el conflicto. La red eléctrica tendida en torno del planeta vibraba incesantemente en la profundidad de los océanos y sobre el relieve de los continentes, transmitiendo esperanzas ó pesimismos. Rusia movilizaba una parte de su ejército. Alemania, que tenía sus tropas prontas con pretexto de maniobras, decretaba el estado de «amenaza de guerra». Los austriacos, sin aguardar las gestiones de la diplomacia, iniciaban el bombardeo de Belgrado. Guillermo II, temiendo que la intervención de las potencias solucionase el conflicto entre el zar y el emperador de Austria, forzaba el curso de los acontecimientos declarando la guerra á Rusia. Luego, Alemania se aislaba, cortando las líneas férreas y las líneas telegráficas para amasar en el misterio sus fuerzas de invasión.</p>
@@ -967,9 +1031,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>SEGUNDA PARTE</head>
+				<head xml:id="ne0165_head_006">SEGUNDA PARTE</head>
 				<div n="6" type="chapter" xml:id="ne0165_chap6">
-					<head>I - Las envidias de don Marcelo </head>
+					<head xml:id="ne0165_head_007">I - Las envidias de don Marcelo </head>
 					<p>El primer movimiento del viejo Desnoyers fué de asombro al convencerse de que la guerra resultaba inevitable. La humanidad se había vuelto loca. ¿Era posible una guerra con tantos ferrocarriles, tantos buques de comercio, tantas máquinas, tanta actividad desarrollada en la costra de la tierra y sus entrañas?... Las naciones se arruinarían para siempre. Estaban acostumbradas á necesidades y gastos que no conocieron los pueblos de hace un siglo. El capital era dueño del mundo, y la guerra iba á matarlo; pero á su vez moriría ella á los pocos meses, falta de dinero para sostenerse. Su alma de hombre de negocios se indignó ante los centenares de miles de millones que la loca aventura iba á invertir en humo y matanzas.</p>
 					<p>Como su indignación necesitaba fijarse en algo inmediato, hizo responsables de la gran locura á sus mismos compatriotas. ¡Tanto hablar de la <seg rend="italic">revancha</seg>! ¡Preocuparse durante cuarenta y cuatro años de dos provincias perdidas, cuando la nación era dueña de tierras enormes é inútiles en otros continentes!... Iban á tocar los resultados de tanta insensatez exasperada y ruidosa.</p>
 					<p>La guerra significaba para él un desastre á breve plazo. No tenía fe en su país: la época de Francia había pasado. Ahora los triunfadores eran los pueblos del Norte, y sobre todos, aquella Alemania que él había visto de cerca, admirando con cierto pavor su disciplina, su dura organización. El antiguo obrero sentía el instinto conservador y egoísta de todos los que llegan á amasar millones. Despreciaba los ideales políticos, pero por solidaridad de clase había aceptado en los últimos años todas las declamaciones contra los escándalos del régimen. ¿Qué podía hacer una República corrompida y desorganizada ante el Imperio más sólido y fuerte de la tierra?...</p>
@@ -1049,7 +1113,7 @@
 					<p>Y el señor Desnoyers envidió esta cólera.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0165_chap7">
-					<head>II - Vida nueva </head>
+					<head xml:id="ne0165_head_008">II - Vida nueva </head>
 					<p>Cuando Margarita pudo volver al estudio de la <seg rend="italic">rue de la Pompe</seg>, Julio, que vivía en perpetuo mal humor, viéndolo todo con sombríos colores, se sintió animado por un optimismo repentino.</p>
 					<p>La guerra no iba á ser tan cruel como se la imaginaban todos al principio. Diez días iban transcurridos, y empezaba á hacerse menos visible el movimiento de tropas. Al disminuir el número de hombres en las calles, la población femenina parecía haber aumentado. Las gentes se quejaban de escasez de dinero; los Bancos seguían cerrados para el pago. En cambio, la muchedumbre sentía una necesidad de gastos extraordinarios para acaparar víveres. El recuerdo del 70, con las crueles escaseces del sitio, atormentaba las imaginaciones. Había estallado una guerra con el mismo enemigo, y á todos les parecía lógico la repetición de iguales accidentes. Los almacenes de comestibles se veían asediados por las mujeres, que hacían acopio de alimentos rancios á precios exorbitantes, para guardarlos en sus casas. El hambre futura producía mayor espanto que los peligros inmediatos.</p>
 					<p>Estas eran para Desnoyers todas las transformaciones que la guerra había realizado en torno de él. Las gentes acabarían por acostumbrarse á la nueva existencia. La humanidad posee una fuerza de adaptación que le permite amoldarse á todo para continuar subsistiendo. El esperaba continuar su vida como si nada hubiese ocurrido. Bastaba para esto que Margarita siguiese fiel á su pasado. Juntos verían deslizarse los acontecimientos con la cruel voluptuosidad del que contempla una inundación, sin riesgo alguno, desde una altura inaccesible.</p>
@@ -1166,7 +1230,7 @@
 					<p>Y Desnoyers pensó que, efectivamente, eran dos seres que estaban al margen de la vida. Esta había dado un salto, cambiando de cauce. No quedaba lugar en la nueva existencia para aquel pobre pintor de almas y para él, héroe de una vida frívola, que había alcanzado de cinco á siete de la tarde los triunfos más envidiados por los hombres.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0165_chap8">
-					<head>III - La retirada </head>
+					<head xml:id="ne0165_head_009">III - La retirada </head>
 					<p>La guerra había extendido uno de sus tentáculos hasta la avenida Víctor Hugo. Era una guerra sorda, en la que el enemigo, blando, informe, gelatinoso, parecía escaparse de entre las manos para reanudar un poco más allá sus hostilidades.</p>
 					<p>—Tengo á Alemania metida en casa—decía Marcelo Desnoyers.</p>
 					<p>Alemania era doña Elena, la esposa de von Hartrott. ¿Por qué no se la había llevado su hijo, aquel profesor de inaguantable insuficiencia, que él consideraba ahora como un espía?... ¿Por qué capricho sentimental había querido permanecer al lado de su hermana, perdiendo la oportunidad de regresar á Berlín antes de que se cerrasen las fronteras?...</p>
@@ -1304,7 +1368,7 @@
 					<p>Y después del rudo vaivén que le hicieron sufrir la sorpresa y la muerte, se dispersó, desapareciendo casi instantáneamente, absorbido por la arboleda.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0165_chap9">
-					<head>IV - Junto á la gruta sagrada </head>
+					<head xml:id="ne0165_head_010">IV - Junto á la gruta sagrada </head>
 					<p>Argensola tuvo una nueva ocupación más emocionante que la de señalar en el mapa el emplazamiento de los ejércitos.</p>
 					<p>—Me dedico ahora á seguir al <seg rend="italic">taube</seg>—decía á sus amigos—. Se presenta de cuatro á cinco, con la puntualidad de una persona correcta que acude á tomar el té.</p>
 					<p>Todas las tardes, á la hora mencionada, un aeroplano alemán volaba sobre París, arrojando bombas. Esta intimidación no producía terror: la gente aceptaba la visita como un espectáculo extraordinario é interesante. En vano los aviadores dejaban caer sobre la ciudad banderas alemanas con irónicos mensajes dando cuenta de los descalabros del ejército en retirada y de los fracasos de la ofensiva rusa. ¡Mentiras, todo mentiras! En vano lanzaban bombas, destrozando buhardillas y matando ó hiriendo viejos, mujeres y pequeños. «¡Ah, bandidos!» La muchedumbre amenazaba con el puño al mosquito maligno, apenas visible á dos mil metros de altura, y después de este desahogo lo seguía con los ojos de calle en calle ó se inmovilizaba en las plazas para contemplar sus evoluciones.</p>
@@ -1427,7 +1491,7 @@
 					<p>¡A París!... Una ilusión nueva iba á poblar el inmenso vacío de su existencia sin objeto.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0165_chap10">
-					<head>V - La invasión </head>
+					<head xml:id="ne0165_head_011">V - La invasión </head>
 					<p>Huía don Marcelo para refugiarse en su castillo, cuando encontró al alcalde de Villeblanche. El estrépito de la descarga le había hecho correr hacia la barricada. Al enterarse de la aparición del grupo de rezagados elevó los brazos desesperadamente. Estaban locos. Su resistencia iba á ser fatal para el pueblo. Y siguió corriendo para rogarles que desistiesen de ella.</p>
 					<p>Transcurrió mucho tiempo sin que se turbase la calma de la mañana. Desnoyers había subido á lo más alto de uno de sus torreones y con los anteojos exploraba el campo. No alcanzaba á distinguir la carretera; sólo veía los grupos de árboles inmediatos. Adivinó con la imaginación debajo de este ramaje una oculta actividad: masas de hombres que hacían alto, tropas que se preparaban para el ataque. La inesperada defensa de los fugitivos había perturbado la marcha de la invasión. Desnoyers pensó en este puñado de locos y su testarudo jefe: ¿qué suerte iba á ser la suya?...</p>
 					<p>Al fijar sus gemelos en las cercanías del pueblo vió las manchas rojas de los kepis deslizándose como amapolas sobre el verde de unas praderas. Eran ellos que se retiraban, convencidos de la inutilidad de su resistencia. Tal vez les habían indicado un vado ó una barca olvidada para salvar el Marne, y continuaban su retroceso hacia el río. De un momento á otro, los alemanes iban á entrar en Villeblanche.</p>
@@ -1818,9 +1882,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>TERCERA PARTE</head>
+				<head xml:id="ne0165_head_012">TERCERA PARTE</head>
 				<div n="11" type="chapter" xml:id="ne0165_chap11">
-					<head>I - Después del Marne </head>
+					<head xml:id="ne0165_head_013">I - Después del Marne </head>
 					<p>A fines de Octubre, la familia Desnoyers volvió á París. Doña Luisa no podía vivir en Biarritz, lejos de su marido, En vano «la romántica» le hablaba de los peligros del regreso. El gobierno todavía estaba en Burdeos; el presidente de la República y los ministros sólo hacían rápidas apariciones en la capital. Podía cambiar de un momento á otro el curso de la guerra: lo del Marne sólo representaba un alivio momentáneo... Pero la buena señora se mantuvo insensible á estas sugestiones luego de haber leído las cartas de don Marcelo. Además, pensaba en su hijo, su Julio, que era soldado... Creyó que regresando á París estaría más en contacto con él que en esta playa vecina á la frontera española.</p>
 					<p>Chichí también quiso volver. René ocupaba mucho lugar en su pensamiento. La ausencia había servido para que se enterase de que estaba enamorada. ¡Tanto tiempo sin ver al «soldadito de azúcar»!... Y la familia abandonó su vida de hotel para regresar á la avenida Víctor Hugo.</p>
 					<p>París iba modificando su aspecto después de la sacudida de á principios de Septiembre. Los dos millones escasos de habitantes que permanecieron quietos en sus casas, sin dejarse arrastrar por el pánico, habían acogido con grave serenidad la victoria. Ninguno se explicaba con exactitud el curso de la batalla: vinieron á conocerla cuando ya había terminado.</p>
@@ -1896,7 +1960,7 @@
 					<p>Después, vacilando sobre sus piernas, súbitamente desfallecida, se llevó el pañuelo á los ojos y rompió á llorar desesperadamente.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0165_chap12">
-					<head>II - En el estudio </head>
+					<head xml:id="ne0165_head_014">II - En el estudio </head>
 					<p>Al abrir una tarde la puerta, Argensola quedó inmóvil, como si la sorpresa hubiese clavado sus pies en el suelo.</p>
 					<p>Un viejo le saludaba con amable sonrisa.</p>
 					<p>—Soy el padre de Julio.</p>
@@ -1983,7 +2047,7 @@
 					<p>—No; la bestia no muere. Es la eterna compañera de los hombres. Se oculta, chorreando sangre, cuarenta años... sesenta... un siglo, pero reaparece. Todo lo que podemos desear es que su herida sea larga, que se esconda por mucho tiempo y no la vean nunca las generaciones que guardarán todavía nuestro recuerdo.</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0165_chap13">
-					<head>III - La guerra </head>
+					<head xml:id="ne0165_head_015">III - La guerra </head>
 					<p>Iba ascendiendo don Marcelo por una montaña cubierta de arboleda.</p>
 					<p>El bosque ofrecía una trágica desolación. Se había inmovilizado en él una tempestad muda, fijándolo todo en posiciones violentas, antinaturales. Ni un solo árbol conservaba la forma rectilínea y el abundante ramaje de los días de paz. Los grupos de pinos recordaban las columnatas de los templos ruinosos. Unos se mantenían erguidos en toda su longitud, pero sin el remate de la copa, como fustes que hubiesen perdido su capitel; otros estaban cortados por la mitad, en pico de flauta, lo mismo que las pilastras partidas por el rayo. Algunos dejaban colgar en torno de su seccionamiento las esquirlas filamentosas de la madera muerta, á semejanza de un mondadientes roto.</p>
 					<p>La fuerza destructora se había ensañado en los árboles seculares: hayas, encinas y robles. Grandes marañas de ramaje cortado cubrían el suelo, como si acabase de pasar por él una banda de leñadores gigantescos. Los troncos aparecían seccionados á poca distancia de la tierra, con un corte limpio y pulido, como de un solo hachazo. En torno de las raíces desenterradas abundaban las piedras revueltas con los terrones; piedras que dormían en las entrañas del suelo y la explosión había hecho volar sobre la superficie.</p>
@@ -2166,7 +2230,7 @@
 					<p>—No hay quien le mate. Me lo anuncia el corazón, que nunca me engaña... ¡No hay quien le mate!</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0165_chap14">
-					<head>IV - No hay quien le mate </head>
+					<head xml:id="ne0165_head_016">IV - No hay quien le mate </head>
 					<p>Cuatro meses después, la confianza de don Marcelo sufrió un rudo golpe. Julio estaba herido. Pero al mismo tiempo que recibía la noticia con un retraso lamentable, Lacour le tranquilizó con sus averiguaciones en el Ministerio de la Guerra. El sargento Desnoyers era subteniente, su herida estaba casi curada, y gracias á las gestiones del senador vendría á pasar una quincena de convalecencia al lado de su familia.</p>
 					<p>—Un valiente, amigo mío—terminó diciendo el personaje—. He leído lo que dicen de él sus jefes. Al frente de su pelotón atacó á una compañía alemana; mató por su mano al capitán; hizo no sé cuántas hazañas más... Le han dado la Medalla Militar, lo han hecho oficial... Un verdadero héroe.</p>
 					<p>Y el padre, llorando de emoción, movía su cabeza temblorosamente, cada vez más envejecido y más entusiasta. Se arrepintió de su falta de fe en los primeros momentos, al recibir la noticia de la herida. Casi había creído que su hijo podía morir. ¡Un absurdo!... A Julio no había quien lo matase: se lo afirmaba el corazón.</p>
@@ -2253,7 +2317,7 @@
 					<p>—¡Oh, Julio!... ¡Oh, hijo mío!...</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0165_chap15">
-					<head>V - Campos de muerte </head>
+					<head xml:id="ne0165_head_017">V - Campos de muerte </head>
 					<p>Iba avanzando el automóvil lentamente, bajo el cielo lívido de una mañana de invierno.</p>
 					<p>Temblaba el suelo á lo lejos con blancas palpitaciones, semejantes al aleteo de una banda de mariposas posada en los surcos. Sobre unos campos, el enjambre era denso; en otros, formaba pequeños grupos.</p>
 					<p>Al aproximarse el vehículo, las blancas mariposas se animaban con nuevos colores. Un ala se volvía azul; otra, encarnada... Eran pequeñas banderas, á cientos, á miles, que se estremecían día y noche con la tibia brisa impregnada de sol, con el huracán acuoso de las mañanas pálidas, con el frío mordiente de las noches interminables. La lluvia había lavado y relavado sus colores, debilitándolos. Las telas, inquietas, tenían sus bordes roídos por la humedad. Otras estaban quemadas por el sol, como insectos que acabasen de rozar el fuego.</p>

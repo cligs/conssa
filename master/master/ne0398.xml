@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El gusano de luz</title>
-				<title type="sub">Novela andaluza</title>
+				
 				<title type="short">GusanoLuz</title>
-				<title type="idno">
-					<idno type="bne">bimo0001676790</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1022853</idno>
-					<idno type="viaf">17371849</idno>
-					<name type="short">Rueda</name>
-					<name type="full">Salvador Rueda</name>
+					<name type="short" ref="#Rueda"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1250</measure>
@@ -140,13 +131,40 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0398</idno>
+						<idno type="cligs">ne0398</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bne" subtype="pdf">BNE, <date>?</date> <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000062484&amp;page=1"/>.</bibl>
-				<bibl type="print-source">Imprenta el crédito público, <date when="1889">1889</date>, Madrid.</bibl>
-				<bibl type="edition-first">Imprenta el crédito público, <date when="1889">1889</date>, Madrid.</bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El gusano de luz</title>
+					<title type="sub">Novela andaluza</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0001676790.html">bimo0001676790</idno>
+				</idno>
+				</title>
+					<author xml:id="Rueda">
+						<name type="full"><forename>Salvador</forename> <surname>Rueda</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 7460 - IP 7461">IP 7460 - IP 7461</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5121471/">Q5121471</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1022853.html">XX1022853</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/17371849/">17371849</idno>
+							<idno type="gnd" corresp="  https://d-nb.info/gnd/118603833">118603833</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bne" subtype="pdf">BNE, <date>?</date> <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000062484&amp;amp;page=1"/>.</bibl>
+					<bibl type="print-source">Imprenta el crédito público, <date when="1889">1889</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first">Imprenta el crédito público, <date when="1889">1889</date>, <pubPlace>Madrid</pubPlace>.<idno source="k10plus" type="ppn" n="446897396" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=446897396"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">El gusano de luz</title>: 	<title type="sub">Novela andaluza</title> <date when="1889">1889</date>, <publisher>El Credito publ.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="446897396" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=446897396"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El gusano de luz</title>: 	<title type="sub">novela andaluza</title> <date when="1890">1890</date>, <publisher>López</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="589198858" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=589198858"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El gusano de luz</title> <date when="1997">1997</date>, <publisher>Editorial Arguval</publisher> <pubPlace>Málaga</pubPlace> 		<idno type="ppn" n="252888936" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=252888936"/> 		<idno type="isbn" n="8489672210"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +174,14 @@
 				<p>Es una novela descriptiva y evocadora de la tierra natal del poeta. EL argumento, algo inverosímil, nos narra la pasión que nace entre el tío Sebastián, ya entrado en años, y su sobrina Concha. Las relaciones sexuales se santifican con el matrimonio -descuiden los escrupulosos-. Sobre este endeble cañamazo se bordan las cotusmbres de los cortijos, las escenas de la vendimia, los bailes populares, etcétera.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 7460" key="IP 7460" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL8">6</term>
 					<term type="author.continent">Europe</term>
@@ -168,7 +194,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">1-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">low</term>
 					<term type="text.characters.protagonist.age">?</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -180,7 +206,7 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
@@ -196,7 +222,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE8">0.5</term>
 					<term type="text.litHist.literaryQuality" resp="MdLE8">low</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end" cert="medium">positive</term>
 					<term type="text.plot.representation">realistic</term>
@@ -209,20 +235,21 @@
 					<term type="text.setting.settlement.type">rural</term>
 					<term type="text.setting.territory" cert="high">Andalucía</term>
 					<term type="text.time.period" cert="medium">contemporary</term>
-					<term type="text.time.span"></term>
+					<term type="text.time.span"/>
 					<term type="text.time.year">18??</term>
 				</keywords>
 			</textClass>
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-03-08" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			
 			<div>
-				<head>EL GUSANO DE LUZ: ESTUDIO DE D. JUAN V ALERA</head>
+				<head xml:id="ne0398_head_000">EL GUSANO DE LUZ: ESTUDIO DE D. JUAN V ALERA</head>
 				<p>Hace ya meses que tengo deseo y propósito de escribir algo acerca de la novela cuyo Ululo me sirve de epígrafe ahora; pero sobra de quehaceres y falta Je humor no me lo han consentido.</p>
 				<p>La novela me parece bien escrita; pinta con grada y vi veía las costumbres campesinas de la gente de la costa en La provincia de Málaga, y ios personajes «|iie intervienen en la acción interesan. La acción misma, a tintine en extremo sencilla, excita la curiosidad, cautiva La atenci6n y entretiene.</p>
 				<p>Todo esto, no obstante, no <seg rend="bold">bastarla </seg>á moverme para escribir un artículo, ni siquiera para decidir, allá en mi interior y sin decírselo á nadie, los grados de mérito que tiene Ja novela. Menester eü que sea muy mala una obra de esta ciase para que yo. ai llego <seg rend="italics">k</seg> leer treinta páginas, no las lea todas con deleite- Loque pur signos menos falibles me hace creer que La novela del Si\ Rueda alcanza no común valer. es que au Lectura ba despertado en mi espíritu dudas y cuestiones que, ya que yo no aliñe á resolver aquí» he de plantear at menos.</p>
@@ -265,23 +292,23 @@
 				<p>La novela,tal como es, es bonita: pero lo hubiera sido más sí hubieran aparecido en dicho amor causas más complicadas y altas; la novela entonce.*, sin faltar á Ja verdad, sino más conforme con ella, aunque menos á Ja moda de Francia, hubiera sido un delicadísimo idilio. En esto ha ejercido mal influjo el naluralísmn francés. El preconcepto de que hay algo de enfermizo, de fatalmente vicioso y como de nefando en el amor de ía muchacha* derrama sobre toda la obra cierta des* agradable tristeza. En cambio, dicho naturalismo ha influido de un modo benéfico en el esmero y en <seg rend="italics">h</seg> amorosa y atinada pulcritud con que el Sr. Rueda pulc<seg rend="sub">P</seg> atilda y.cinceJa el estilo. Se ve, se toca y basta se huele lo que el Sr. Rueda describe. Sos creemos en el cortijo: sentimos, en su amasijo campestre. Jos acres efluvios de la levadura, y, durante la vendimiai el aroma del mosto que fermenta en las tinajas. Se diría que respiramos el ambiente del campo de Andalucía, impregnado en Ja humedad salina del mar que está cerca. Los paisajes, los cuadros de costumbres, los diálogos de los rústicos, el ser de los persona* jes secundarios, todo está copiado del natural con fidelidad y con gracia.</p>
 			</div>
 			<div>
-				<head>Tal vei en e&amp;to llega el Sr* Rueda a ser un</head>
+				<head xml:id="ne0398_head_001">Tal vei en e&amp;to llega el Sr* Rueda a ser un</head>
 				<p><seg rend="bold">DI D» JUAN VAL**A</seg></p>
 				<p>modelo, al pintar á la gitana que vende el pañolón, que dice á Concha la buenaventura, y que descubriendo (y no era difícil) sus amo-rea con el lío, los exalta y aguijonea con melosas y elocuentes frases. Toda la charla déla gitana es la propia verdad poética; es red de palabras blandas y filtro lascivo y música de sirena con que la oruja acaha de alar, de embriagar y de seducir los corazones de la sobrina y del tío. Se conoce que el Sr. llueda. bnen poeta en verso, es poeta en prosa tamhién; ama la forma, y quiere competir, y compite, por el afán y acierto con que la cuida, con su paisano <seg rend="italics">El Solitario,</seg></p>
 				<p>Mucho tendría yo qne decir aún; pero no debo cansar á tos lectores. Básteme afirmar, para poner fin &amp; este artículo, que fa impresión que produce la lectura de toda la novela es la de que hay en España un buen novelista más* Su artislíca elegancia y su limpia y castiza manera de estilo y lenguaje prometen mucho, y ya convidan <seg rend="italics">k</seg> que sus obras no sean de Las que se leen á ver fo que sucede, y luego se dejan y se olvidan, sino de las que, des* pués de leídas, vuelven á leerse para saborear la dulzura atinente déla dicción, y para contemplar con reposo en los cuadros la firmeza y corrección del dibujo y los varios tonos del espléndido y armónico colorido.</p>
 			</div>
 			<div>
-				<head>Juan Valera.</head>
+				<head xml:id="ne0398_head_002">Juan Valera.</head>
 				<p><seg rend="sup">r</seg> Publicado por primer* vese en <seg rend="italics">El h»parcial</seg> de Madrid, el 18 de Marzo de 18890</p>
 			</div>
 			<div>
-			<head>EL GUSANO DE LUZ</head>
+			<head xml:id="ne0398_head_003">EL GUSANO DE LUZ</head>
 			</div>
 		</front>
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0398_chap1">
-				<head>I: EL DESAYUNO</head>
+				<head xml:id="ne0398_head_004">I: EL DESAYUNO</head>
 				<p>Esperando á que la incierta luz de la ma-ñaña entre en hilos de claridad por las hendiduras de la puerta que da al campo, uno do Jos gatos del cortijo está en perspicaz acecho, con las dos manos estendijas hacia adelante, y la cabeza algo agachada, lo mismo que ai se hallara á la vista de algún fugitivo ratón.</p>
 				<p>Esta vez no espera, sin embargo, echar Jas unas á su victima, síno que, por el contrario, aguarda <seg rend="italics">la venida de la rosada aurora, </seg>porque con ella arriba ai cortijo la solicita <seg rend="italics">despenseray</seg> cargada con lodos los artículos que han de hacer falta durante el día.</p>
 				<p>Entro dios, clara es )a cosa, viene la deseada cordilla do los gatos, y aquí acaba de explicarse que sólo por el interés es por Jo que el más antiguo de los vigilantes de rincones del cortijo, está como cosido á la puerta, no  haciendo otro movimiento que el de sacudir repentinamente de vez en cuando una de sus orejas, coma s» al llegar á ellas otro rumor que no fuera e! de los pasos de La mujer, lo lanzara, molesto, de su oído.</p>
@@ -320,7 +347,7 @@
 				<p>Luego se retira de los vivos rayos del sol, y colocado dentro de la casa, quedase mirando la túnica vaporosa de la niebla hecha infinitos girones sobre el paisaje* y la atmósfera impregnada de una polvareda de luz y oro donde Jas moléculas bailan en Jiberlad Ja esplendorosa danza matutina.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0398_chap2">
-				<head>II: MONOLOGO</head>
+				<head xml:id="ne0398_head_005">II: MONOLOGO</head>
 				<p>Retiróse el tío Sebastián dentro de la casa, y así que el sabroso alimento reanimó un tanto su espirita, tomó una cómoda postura en Ja silla, y á la Ytsla de aquel florecer de la naturaleza, que ni mismo tiempo que granaba los racimos, poblaba de pájaros las arboledas, empezó á hacer su primer monólogo del día, y dijo calladamente para sus adentros:    <seg rend="sup">L</seg></p>
 				<p>—«Buen ver tiene este ano la cosecha; las tierras sorbieron el agua, como esponja, durante las primera* lluvias, y ya no queda tallo sin retoño, ni árbol sin su relevo de ramas nuevas. Mala cosecha la pasada, peor aún la anterior y lo mismo las que le antecedieron, Ja que abora dice naquí vengo*), parece que va á desquitarse con creces de las anteriores* Buena falta hace, pues aunque ni el dinero ni la abundancia se echaron de menos, íos gastos del cortijo subieron á mucho, y contra la guJa debe eslar la templanza, así como tras del tener, la caridad. Buenamente pensando, no es regular convertirse tino lodo en ramas para dar sombra á cuantos se le arrimen; pero jípié se va á hacer con tos que nos quieren, sino corresponder con lo que Dios uos dió para poder espantar la miseriaJ A nadie tengo que dar cuenta de mía acciones; nadie hay tampoco de mi familia que necesite de mí,</p>
 				<p>Ímes mi hermano Andrés posee cuanto le hace alta para los suyos, y con esto pare usted de contarde parientes* Por otra parte, las piaras de cabras dan leche para surtir al pueblo vecino y aportan á la casa buenas monedas; las ovejas echan Lana <seg rend="italics">si Dios tiene qué\</seg> los <seg rend="italics">frutales,</seg> por mala que venga La cosecha de uvas, cumplen como deben; y las crías de cerdo alargan por la buena Lo bastante para salir bien de gastos imprevistos; con esto, y con que arribe Lozana la cosecha de este ano, que mucho granizo ha de caer ó sale bien de ra* cimos, el cortijo se redondea como quien dice, y hace frente á Los gastos y socaliñas, para que bien recibamos Nochebuena.»</p>
@@ -342,7 +369,7 @@
 				<p>Pero á eso, después de su ya lejanísimo matrimonio, se opuso siempre et hombre, y detrás de las correrías de su juventud, vino á vivir snbre lo suyo, apartado completamente de familia, y así piensa morir con su ya considerable caudal de aflos, que pasan do Jos cincuenta, sin que nada ambicione sino reposar y luego morir, semejante á las flores que una vez marchitas y secas por el sol, doblan humildemente la cabeza sobre el tallo,</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0398_chap3">
-				<head>III: AL RUMOR DEL AGUA</head>
+				<head xml:id="ne0398_head_006">III: AL RUMOR DEL AGUA</head>
 				<p>Antonia, una vez que hubo terminado las tareas del almuerzo y puesto la mesa en medio de la cecina, que era, tomo en todas las casas de campo andaluzas, el <seg rend="italics">estrado</seg> del cortijo, se acerró al tío Sebastián, sacándole de sus abstracciones, y con aquel respeto mezclado de cariño con que siempre Je hablaba, -¡Señor Sebastián — le dije;—el almuerzo está en la mesa,</p>
 				<p>Vino en sí el viejo á la voz de la sirviente, pasado un instante en que no supo donde se hallaba, arrastró luego con una mano la misma silla que le sosteníanse colocó en uno de los frentes de la mesa, sentándose Antonia en el del Jado opuesto, cosa á que se había hecho acreedora por su antigüedad en el cortijo y por su conducta en el fiel cumplimiento de sus deberes, No habrá de extrañarse este <seg rend="italics">Ei</seg> pmana    ¡» ra^go de franqueza, si sb tiene en cuenta <seg rend="bold">la </seg>tradición en ludo cortijo noble y rico, de con* ceder tales privilegios á la persona qoe logra croarse <seg rend="bold">un </seg>puesto de consideración en <seg rend="bold">la Ta</seg>ñí i tía.</p>
 				<p>Antonia, pues, se sentó frente á frente del cortijera con aquel aire de respeto que saben adoptar Iris personas que conocen los favores que se les dispensan, y ambos metieron la cuchara, primero el lío Sebastián y luego el Ja, en la íuente de <seg rend="italics">sopas de ia olla,</seg> que, con sus hojas do <seg rend="italics">yerbabuena,</seg> esparcidas sobre el liquido, exhalaba un vapor oloroso y confortable que st* desvanecía no bien se alzaba una cuarla del plato colocado sobre Ja mesa. Solíase poner ésta en tiempo de verano entre la puerta principal de la casa y otra que cafa al lado opuesto y daba sobre el campo; así es que á izquierda y derecha de ambas</p>
@@ -375,7 +402,7 @@
 				<p>Antonia, corno muchas mujeres de Andalucía, que suelen parecer volubles y caprichosas, guardó fé inquebrantable á su esposo con una entereza de carácter increíble, y allá en et fondo de  alma le al/ó como ;'l modo de un santuario, doedesúto penetraba, en actitud de orar, su pensamiento, con la pureza de un rayo de sol sobre la nieve.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0398_chap4">
-				<head>IV: ARRE, ULTEtRO</head>
+				<head xml:id="ne0398_head_007">IV: ARRE, ULTEtRO</head>
 				<p>En tlkueruela, pueblo de D. Andrés, el hermano del cortijero, notábase muy de mañana, en el corral de tina casa, trasiego de varias</p>
 				<p>Ípersonas que iban y venían en torno de dos ucidos jumentos; uno, a cuyos lomos poníanse las jamugas donde había de ¡r encajada una mujer, y otro que cinchaba un solícito sirviente metiéndote una de las rodillas en la panza, en eí cual iría cómodamente montado un propietario de pueblo» hombre como basla de cin* cuenta aftos, alto, enjuto, naturalmente distinguido, evalcalde hacía tiempo del lugar, y finalmente, padre de la desmejorada Concha, que no otra que ella era <seg rend="italics">te</seg> que habla de ser conducida al cortijo, como tampoco era otro que D. Andrés, su padre, quien en compañía n un hombre conocedor del terreno, llevaría su hija cerca y bajo Ja vigilancia de su hermano*</p>
 				<p>La escasa luz del cíelo y la del candil, que otro sirviente sostenía en una de sus manos, alumbraban Ja escena que se verificaba bajo el emparrado, cuyas frescas hnjas, acusadas finamente por la fuña, fingían en eJ sudo las somJ»ras de grandes insectos.</p>
@@ -419,7 +446,7 @@
 				<p>—¡Ay qué bonito, papá!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0398_chap5">
-				<head>V: CAMINO ADELANTE</head>
+				<head xml:id="ne0398_head_008">V: CAMINO ADELANTE</head>
 				<p>El camino desde Migúemela al cortijo donde se trasladaba Concha, cogía en su comedio á la capital de la provincia, dividiendo á un lado y otro La distancia: así es que aguardaban á La viajera magníficos cuadros, primero circundados por ía íínea azul del mar que ya se había presentado á sus ojos, y Luego compuestos sólo de vides y arboledas, cuando hubiera atravesado la población.</p>
 				<p>Por lo pronto, empezaron á bajar, padre, é bija y e! hombre que Ies acompañaba, la enorme pendiente que se extendía desde el pueblo á la playa, loda erizada de trancos y dificultades.</p>
 				<p>A un lado y otro, y á cosa de medía legua, come nía ron a descubrirá la luz del día las casas de campo colgadas de Las laderas en medio del trozo de sembrado que les correar pendía; Los bardales de chumberas que encerraban cil camino en peligrosas angosturas; las ventas donde bacfan el arreglo de Ja mañana las venteras sacando á Ja puerla los frascos de aguardiente y Los <seg rend="italics">yelon,</seg> ó azucarillos, para expenderlos a Jos transeúntes; tas medrosas guaridas, medio en ruinas, domfe un tiempo se albergaron contrabandistas y bandoleros y donde aun parecían asomar, por las rotas ventanas, trabucos y cabezas ceñidas de vivos pañuelos de colores; términos y lejanías velados de leves brumas doradas por et sol, y grandes manchas de olivos, alternando con hazas de cartas de azúcar y frondosos álamos y finares.</p>
@@ -474,7 +501,7 @@
 				<p>Aquel reconocimiento arrancó á todos una vibración de alegría. Cristóbal sintió que sus labios se contraían en forma depueñero; Concha dió un grito de placer, porque le agradaba lo nuevo y desconocido, y 0« Andrés disimulando su sentimiento, adelantóse un poco del grupo, metiendo espuelas al jumento, pornue 5 todo correr se le venían las lágrimas ú los ojos.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0398_chap6">
-				<head>VI: PIE A TIERRA</head>
+				<head xml:id="ne0398_head_009">VI: PIE A TIERRA</head>
 				<p>—¡Venga acá <seg rend="italics">el Gusano</seg> «fe <seg rend="italics">luz</seg>!—dijo adelantando por el empedrado de la pol lada el tío Sebastián, extendiendo Jas manos para bajar de un abrazo á su sobrina,</p>
 				<p>—¡Ay mi tío, ay mi tío Sebastián!—<seg rend="bold">exclamó </seg>la muchacha, ¡lena de alegría, dejándose robar por eE cortijero<seg rend="sub">fc</seg> que /a cogió <seg rend="bold">por </seg>la cintura y Jo puso  n colmo de besos en Ja cara* <seg rend="bold">Luego, </seg>no suelta todavía, clamó hablando de tú por lú á su lio:—¿Sabes ipie eres un viejo muy simpático?</p>
 				<p>Olra vez el hombre, míe sentía molerse en <seg rend="bold">su </seg>ser <seg rend="bold">como </seg>agua por <seg rend="bold">Jos </seg>huecos de uua esponja, toda aquella frescura y juventud, oprimió In <seg rend="bold">figura </seg>gentil de la joven y le enterró Ja cabeza contra su pecho.</p>
@@ -530,7 +557,7 @@
 				<p>Envuelta en las blancuras del Jecho, Concha respiraba, á medida de irse hundiendo eu el sueño, el aíre hermoso y sano lleno de perfumes campestres, y su cuerpo sentía como uoa filtración de bienestar por sus huesos, y algo así como si ansiara obedecer á siitites llamamientos de vida.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0398_chap7">
-				<head>VII: LA FIESTA EN LOS LAGARES</head>
+				<head xml:id="ne0398_head_010">VII: LA FIESTA EN LOS LAGARES</head>
 				<p>Decididamente el viejo senlja algo extraño en todo su ser desde Ja llegada de su sobrioa.</p>
 				<p>A noque no acostumbrado á especulado o es metafísicas, como al recuerdo de la joven sentía correr raras sensaciones por su cuerpo, llamóse á sí mismo á examen de conciencia una vez que vióse tendido en el lecho, porque, desde luego se puso receloso, y quedó ante el tnbunal de la razón.</p>
 				<p>Lo primero que alegó, queriendo hacer el proceso de aquella emoción, en el extraordinaria, fue que los ojos verdes y luminosos de Concha, todo transparencia, y su boca linda y</p>
@@ -619,7 +646,7 @@
 				<p>A su regreso vió poco á poco desvanecerse las visiones que tanto le habían amedrentado en el camino. Las canas, alumbradas débilmente por el día, dejaron de ser blandones funerales; las zarzas sacaron de la sombra sus redondas moras maduras; los pámpanas no conservaban huella del paso de Jas culebras, y el manantiaJ seguía sonando sus polas, sin imitar los ecos de liras de cristal.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0398_chap8">
-				<head>VIII: LA ROTURA DE LA CRISÁLIDA</head>
+				<head xml:id="ne0398_head_011">VIII: LA ROTURA DE LA CRISÁLIDA</head>
 				<p>Días después de la llegada de los viajeros al cortijo, la mañana de un hermoso día traja un alegre despertar para todos, excepto para Concha, á quien su estado especial, pronla á pasar de él, hacíale quedarse más tiempo que el de costumbre buceando en los abismos del sueno.</p>
 				<p>Callando y de puntillas salió Antonia del cuarto de la muchacha donde quedábase á dormirlas primeras noches para estar cerca de su lecho,</p>
 				<p>Por más que á Ja sirviente no se le hablan pegado las sábanas, encontróse ya levantado al lío Sebastián, algo ojeroso como de haber pasado en cavilaciones la noche, y hallóse también de punta al diligente don Andrés ocupado en ver aparejar las bestias en Ja portada» porque es lo que dijo A su hermano apenas tuvo tiempo de echarse de la cama.</p>
@@ -648,7 +675,7 @@
 				<p>En Ja copa de agua que el <seg rend="italics">Gusano de luz </seg>pon ja cerca de su lecho, a parecía el capullo regalado por el viejo, hecho ya rosa, y en la joven verificábase el mismo poético misterio que en Ja flor.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0398_chap9">
-				<head>IX: AL SON DE LA CIGARRA.</head>
+				<head xml:id="ne0398_head_012">IX: AL SON DE LA CIGARRA.</head>
 				<p>Con la entrada de Agosto entra la animación en el cortijo, Va están contratadas las cuadrillas para Ja vendimia, todas ellas venidas del reino de Granada- El traje que visten conlrasta notablemente con el de Jos hombres del lagar, pucsá medida que éstos usan el vestido común á los campesinos andaluces, loa de aJlá</p>
 				<p>Jíevan holgados zaragüelles que bacín el efecto de cu agüela sí justillo que dejan abierto, igual que Ja delantera de ía camisa; faja ceñida en ¡nli ni las vueltas <seg rend="italics">k</seg> la cintura; calcetas que cubren la pantorrilla y dejan Los <seg rend="italics">en franquea </seg>del pie metidos como en un estribo de punía, v aIbarcas ó alpargatas, con Jas imprescindible* galgas liadas al tobillo y la <seg rend="italics">captUd</seg> de escasas medidas.</p>
 				<p>Como las cuadrillas llegadas de Guarcho y Albuhol no caminan sin la cuchara, cada trabajador muestra la suya clavada en el sombrero, recordando el antiguo tricornio estudiantil, y de eHa ge auxilia paro comer, en unión de La navaja de corva punta, que, á falta de agua en muchas ocasiones, humedecen Jos hombres, de no muy aseada manera, y La limpian después en las cuerdas de cánamo del alpargate, pañuelo obligado para algunos usos de su cuerpo.</p>
@@ -713,7 +740,7 @@
 				<p>—¿Usté me <seg rend="italics">quisiera?</seg></p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0398_chap10">
-				<head>X: LA VUELTA DE MISA,</head>
+				<head xml:id="ne0398_head_013">X: LA VUELTA DE MISA,</head>
 				<p>Muy esperanzado con el paso que a dar se arriesgaba acerca de los amores de Rosario; el jusIjIJo de los domingos mostrando en su pecho todos sus ramillos, bordados y hojuelas; la chaqueta ribeteada de trenciJJa, con goJpes de arabescos, colocada con primor subíe sus hombros; el camisón de mil labrados, dejándose ver por las abiertas hojas deí justillo, corno se ven fus grupos de majas al través de las caladas hojas de papel en ta vislosa caja de pasas; el sombrero de <seg rend="italics">barqaüta<seg rend="sub">i</seg></seg> con moLas y morillas en el ala, derriliado sobre el ojo cíe donde partían los significativos guiños amorosos^ los zapatos cuajados de torzales, con un solo cerco de clavos, ccftidos extraordinariamente á Jos pies, y el pantalón á vivas rayas* pegado como fuerte venda á Las piernas, saJe de ta majada el acicalado mozueJo, y apóyase en Ja enorme porra, uue es el complemento de su atavío, llevando asimismo entre la faja un palito de higuera, que, como objeto oue había de Llegar á manos de Rosario, babía de antemano primorosamente Labrado á punta de navaja, y esculpido en el con amorosa paciencia el nombre de su dueño,</p>
 				<p>Los pámpanos caídos á uno y otro lado de Ja vereda, se abrían para dejar paso al pre-íendiente, y las hojas de tos árboles, sacudidas por el aire, batían palmas de entusiasmo á su presencia.</p>
 				<p>La gente de los lagares por donde pasaba, admirada de verle tocado de tan rica manera, salla á la explanada para saludarle y para decirle:—¿Ande vas, Roque, que tan bien vas engalanao?</p>
@@ -757,7 +784,7 @@
 				<p>En el espejo de enfrento de la puerta, se reproduce gran parte del paisaje, que forman primero tablas de huerta, Juego oscuras copas de limoneros, y, por último, una enorme mancha de sol, por medio de la cual se prolonga una larga biJera de caltas, que movida por el aire, forma evolucionen de grande y alineado ejército desplegado en campo de batalla.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0398_chap11">
-				<head>XI: ¿DE QUÉ ES ESTE PALITO?</head>
+				<head xml:id="ne0398_head_014">XI: ¿DE QUÉ ES ESTE PALITO?</head>
 				<p>No bien pasó el tiempo suficiente para que La familia diese de mano á Ja cuchara, cuando Hoque, saliendo del escondite de árboles, puso otra vei el pié en la vereda, dió algunos retoques de uñasá su pelo, estiróse ambas <seg rend="italics">hojas</seg> de la chaqueta, y asegurándose de que llevaba entre Ja faja el palo de higuera, sonrió con aires de triunfo y empezó á darle puntadas al camino.</p>
 				<p>En verdad que eJ mozo, puesto al servicio de tan c¿mica idea, obcecado por Ja licción oída á Matusalén, armado caballero de declarar amores pues la <seg rend="italics">espada</seg> llevábala Llena de labores y filigranas en el cinto, parecía algo asi como D, Quijote yendo tras alguna soñada Dulcinea, ó una viva representación de La Locura,</p>
 				<p>Pudo Roque emplear fórmula distinta de declaración, como la de aguardar el santo de Robarlo para rondar su caita, afianzadas las mañosa dos enormes limones, y en el momento de verla pa*ar tras alguna puerta ó ven-lana, largarle un tremendo Innonazo» que tanto más expresiva sería su declaración, cuanto con mayor fuerza Fuese disparado el proyectil; perú se contentó con adoptar <seg rend="italics">h</seg> fórmula de la higuera, sin recurrir á libro alguno de dictar carias, A recado por medio de zagal, ó á alcahueta de oficio» intermediarias que lanío abundan en todas parles.</p>
@@ -836,7 +863,7 @@
 				<p>Aquella segunda puftaíada puso en pié á Roque como cadáver animado por el galvanismo; echó el paso como pudo,, y al salir, sin decir «adiós» de la casa<seg rend="sub">h</seg> la pluma que no hahía cesado en sus retozos y cabriolas, alzóse en remolino impelida por el aire del cuerpo del mozo, y á semejanza del muchacho que se burla en la calle de los campesinos, dióle o n pescozón en la cabeza <seg rend="italics">¡</seg> como si enterada del suceso quisiera demostrar su regocijo.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0398_chap12">
-				<head>XII: LAS BROMAS CAMPESINAS</head>
+				<head xml:id="ne0398_head_015">XII: LAS BROMAS CAMPESINAS</head>
 				<p>Habiéndole sorprendido á Roque la noche en el camino, pues se entretuvo eJ resto del día de lagar en lagar viendo de <seg rend="bold">distraer </seg>su pena, no nudo estar de vuelta á tiempo d« asistir al clasico gazpacho*</p>
 				<p>Hombres y mujeres que dieron de mano, esperan bajo la enramada el momento de la cena, confundidos entre las pirámides de pasas que suben de ios fruteros.</p>
 				<p>Antonia, como el <seg rend="italics">Gusano</seg> ^¿««manifestara deseos de comer del pfato andaluz, puso lodo su empego en sacar a las mil maravillas el majado de pan. ajo y pimiento que había de dar base y <seg rend="italics">origen</seg>, como si dijéramos, al gazpacho.</p>
@@ -916,7 +943,7 @@
 				<p>Saciada la sed abrasadora de) burro, olfateó con recelo en ta oscuridad y <seg rend="italics">apuntó</seg> con las orejas a las malas de juncos que echaban sobre el suelo sus medrosas sombras de luna; silbó luego el zagal con lilailas notas, incitandoá beber más á la beslia; dió esta la última hocicada, dejando caer por Ja nariz dos delgados hilos de agua, y vuelto hacia el cortijo el muchacho, metió los lalones al jumento, á tiempo que en algún cortijo lejano, el perro acostado en la broza, lanzaba ladridos entresuelos, cre^ yendo ver aún La larga procesión de lanlasmas que poco antes vagara por el aéreo perfil de la colina.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0398_chap13">
-				<head>XIII: LA BUENAVENTURA</head>
+				<head xml:id="ne0398_head_016">XIII: LA BUENAVENTURA</head>
 				<p>Una vez que se verificó la evolución de Concha! comenzó á dejarse ver en «Ha la mujer,</p>
 				<p>bjpii en una impensada actitud del modelado cuerpo, ya en un dicho juicioso, aunque eran menos frecuentas; ora en el a «Jar, y en el mirar mismo, que tomaban, augustos movimientos el primero, y vaguedades y deseos el segundo.</p>
 				<p>Aquel Aviso misterioso que parecía querer venir á decir á su pecho que se levantara, á sus mejillas que tomaran Untas de rusa, á su» ojos que adquiriesen rayos valientes y á su ser todo que entrabe en la plenitud de <seg rend="italics">Va</seg> vida, ilegó de prisa \ corriendo, y de [a nina enclenque surgió bella é inmaculada la virgen, como del capullo sale y se despliega la corola„</p>
@@ -1025,7 +1052,7 @@
 				<p>Entróse el tío Sebastián en la casa, echó Concha el pañuelo sobre una silla, y llenan* dose de repentina tristeza, quedó mirando, sin verlo, eJ loJdo de moléculas luminosas que cubría el cuadro magnillco del campo.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0398_chap14">
-				<head>XIV: EL AMASIJO CAMPESTRE</head>
+				<head xml:id="ne0398_head_017">XIV: EL AMASIJO CAMPESTRE</head>
 				<p>Reprimendas echadas aJ amor por causas del amur mismo/ ¿un palabras esr ritas en el viento. Concha, después de nuevas regaña* de] tío, volvía á hacer las paces con él, y éJ tornaba á dejarle iluminar por Jos ojos de el La.</p>
 				<p>En medio de La más completa armonía de una y otro, llegó, después de pasado tiempo, la viscera de uno de Los días de amasijo, y come á la joven interesaban las escenas campestres, dijo, antes de acostarse, que Ja llamaran ¿ bora oportuna, pues quería ver, en unión de su Uo, Ja tarea.</p>
 				<p>Arriba, que ya es hora!—gritó á La puerta del cuarto de Antonia, que era la obligada directora del amasijo, el madrugador y diligente Roque, muy antes de venir el alba, V fuese luego con más tiento á llamar en la habitación del amo, que también deseaba presenciar la faena del amasijo.</p>
@@ -1117,7 +1144,7 @@
 				<p>El atba adornó después, con líneas liradas á regla, el horizonte; el día recogió del cielo las estrellas, y el sol, asomando (ras las crestas de los montes, fué briosamente á romperse sobre el rocín de Jos cañaverales.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0398_chap15">
-				<head>XV: BATALLA</head>
+				<head xml:id="ne0398_head_018">XV: BATALLA</head>
 				<p>Furiosa como león que da vueltas dentro de la jaula, iba y venía Antonia, á la mañana siguiente» desde la cocina á la sala y desde la sala ¿ la cocina, ocupada en las tareas del almuerzo, sintiendo aun en todo su ser ía ira de la noche anterior, tema que la tuvo desvelada toda la nocbe y con el oído alerta, por si notaba que el viejo salía, con no buenos Tines, de su cuarto.</p>
 				<p>Ningún incidente turbó las doce mortales Lo--ras de la noche: á la mañana, vistióse Antonia como de costumbre, púsose Roque á ordeñar la cabra que daba sus vasos de leche para el cortijero y para Concha, y el espacio se llenaba con los rumores del trabajo, que se activaba más que nunca en las tareas de la vendimia.</p>
 				<p>Titilándole las miradas como pistilo dentro de cáliz de flor, salió Concha de su habitación sin atreverse á dará Antonia los buenos días,como que en su interior algo exlremecíale la conciencia y le acusaba de Ja escena pasada con su tío.</p>
@@ -1177,7 +1204,7 @@
 				<p>Entonces se recorren con el pensamiento todos les circuios de nuestra vida, se aviva el carino hacia las personas ausentes, y ansiamos borrar nuestros pecados, emprendiendo una vida nueva en que no volvamos á enredarnos en el fiero zarzal de Jas pasiones.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0398_chap16">
-				<head>XVI: ¡LADRONES!</head>
+				<head xml:id="ne0398_head_019">XVI: ¡LADRONES!</head>
 				<p>Cerró la noche huracanada y negra como boca de lobo. Temiéndose que acabaran en <seg rend="italics">tocata celóte</seg> la hinchazón y el aparato de que empezó á revestirse el tiempo, <seg rend="italics">mecharon </seg>convenientemente les toldos; en tos de lienzo, desarrollando éste á lo largo de los paseros; y en Los de tablas, abriendo la sucesión de las mismas y colocándoles piedras encima para que el viento no las levantase.    <seg rend="sup">L</seg></p>
 				<p>Repartióse el cotidiano jornal á los trabajadores, que emprendieron el camino de su albergue; cerróse á piedra y lodo la puerta del cortijo, y después de oírse el susurro del rosario, que echó, hosco y serio, el patriarca do</p>
 				<p>Ja casa, el lío Sebastián, dió Concha media vuelta para su cuarto llevando lauto sueño sobre sus floridas abriles como cansancio en iodo su cuerpo; tomó el viejo cocina adelante en dirección del suyo, y Antonia, después de dar una vuelta por la segunda cocina para tomar</p>
@@ -1205,7 +1232,7 @@
 				<p>Después, cuando pasada la alarma, lodos meditaban con recelo, cada cual en su lecho, sobre eJ suceso terminado, Concha, lejos de medir con el pensamiento el peligro, se extasiaba en la contemplación de aquel hombre que surgía ante sus ojus tal como Jo hahfa visto en la Jucha, fiero, imponente, valeroso, y dibujado con trazos de lumbre en sus retinas, lo mismo que si fuera la desnuda y vigorosa estatua de ía energía.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0398_chap17">
-				<head>XVII: EL JUEGO DE LAS BRUJAS</head>
+				<head xml:id="ne0398_head_020">XVII: EL JUEGO DE LAS BRUJAS</head>
 				<p>No podré decir si fué que un trabajador del cortijo notó algo relativo á los amores del viejo y su sobrina y el trabajador mismo empezó á formar la bola de nieve, ó si á Antonia es-capósele, en la furia de que hallábase poseída aquellos dias, alguna palabra acerca del asunto; pero es lo cierto que el <seg rend="italics">run run</seg>, como dice la gente del campo, en que se comentaba el suceso, fué primero como un leve susurro de viento, después como correr atropellado de arroyo, más tarde semejante á río que dilata su zumbido por la costa, y últimamente la murmuración tomó las proporciones de mar que canta con todas sus lenguas de espumas el himno valiente de sus olas.</p>
 				<p>A todo esto, como acontece en casos tales, lo mismo en la aldea que en las grandes poblaciones, los enamorados eran los únicos que nada habían notado, y después de aquella batalla en que partiéronse los guiñapos y Antonia quiso dejar la casa, el viejo seguía más apasionado de la muchacha y esta del viejo, no habiendo esfuerzo posible de voluntad que rompiera con aquel fenómeno del amor.</p>
 				<p>Cada paso que daba la joven haciendo ejecutar á todos sus miembros de diosa lina <seg rend="italics">melodía sin ecos</seg>, una hermosa <seg rend="italics">canción de vio-vimientos</seg> en que todo era equilibrado y bello, el ritmo magestuoso del andar, el discurso elocuente de las curvas, lo gallardo de! continente y la elegancia de los modales, arrancaba una ovación é lodns Jas fibras del viejo, Jas cuales á falta de manos con (¡lie aplaudí r, i  u e« I á lia nsc v i lira nd o la rgo ra to romo Jas golpeadas cuerdas de un instrumento. Con la abierta nariz quedábase recociendo en el aire el aroma de virgen que ella dejaba romo rastro al pasar.</p>
@@ -1267,7 +1294,7 @@
 				<p>Ella rompió u llorar, cayendo en Jos brazos del combatido hombre; y al abarcar él la escultura para evitar, por el roto equilibrio, la caída, todos sus nobles propósitos rompiéronse en un insiante, como deshace un vano soplo el penacho de espuma de una ola, Hccbazó, sin embargo, á la mujer, sacando nn soberano esfuerzo de si, y quedaron una frente <seg rend="italics">k</seg> otro,</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0398_chap18">
-				<head>XVIII: DRAMA BN LA SOMBRA</head>
+				<head xml:id="ne0398_head_021">XVIII: DRAMA BN LA SOMBRA</head>
 				<p>Concha, ¿qué viene á ser esto?—clamé e( desvelado con dnra vos, después que corrió una chispa eléctrica por sus nervios.</p>
 				<p>—Nada, he estado sin dormir, pensando en que todos lus disgustos son por mi causa; sospeche que no le Thabrías acostado, y he querido decirle.,»</p>
 				<p>—¡Oué!—agregó ól corlando como con un cuchillo la frase.</p>
@@ -1330,7 +1357,7 @@
 				<p>Ya tocaba la cacería á su fin, porque manchado de claridad azul un lado del mar, empezaban á cerrar sli ojo de cíclope las atalayas de la cosía, y la alondra hirió con una nota las alturas, haciendo vibrar como un sonoro tímpano Jos cielos.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0398_chap19">
-				<head>XIX: Á TODA LUZ</head>
+				<head xml:id="ne0398_head_022">XIX: Á TODA LUZ</head>
 				<p>Mientras el tío Sebastián rumiaba tendido en el Jecho, á la mañana siguiente, la pasada escena, y cada vez sentía renacer en su pecho mayor recelo y temor ante aquel carácter terrible de Antonia» contra la cual no eran posibles Jas asechanzas, y Concha, dejando ir por utro lado el pensamiento, sentía aun en Ja boca con inefable desvanecimiento do placer, el cosquilleo del bigote del viejo, y la si r vi en* te, por su parte, con todos Jos demonios en el cuerpo en v ¡ si a de Ja insistencia de los amantes, lomó el camino del cercano pueblo donde la Llamaba imprescindible necesidad de hacer por ella algunas compras para La casa (no srn haber dejado antes preparado el almuerzo). Ruque y los demás trabajadores Liada n un paréntesis en la faena de la pasa para dedicar ía atención a la trilla, porque el cortijero sembraba todos los anos un puñado de fanegas, para así tener más asegurado el pan de cada día. Aquella mañana verificábase lo que se Llama un <seg rend="italics">rwnaU de gavillas.</seg> Las últimas que ató en los campos el gavillero, llegaron en enorme carreta, y como es costumbre cnlre la gente del campo, guió Boque Ja faena de adornarlos bueyes con laLLos de canas y clavar lambtén algunos en lo alto de la carga, encima de tos cuales tendió cada cual á guisa de bandera, su faja, y celebraron el feliz remate de la siega.</p>
 				<p>AL apuntar el sol, el manijero tiró el sombrero por alto y enlonó el <seg rend="italics">/Sanio Dios!</seg> de cada aurora que fué contestado á coro por las voces de La cuadrilla, la cual elevó su oración ante el sublime espectáculo de ía naturaleza, Ksia ceremonia magnifica qne se verificaba á cada amanecer, fué abura más inspirada y conmovedora que nunca, y más Impregnada de sentimiento divino y religioso, filien oye esta orquesta de voces al salir una serena mañana á los campos, y en medio de la resonancia de las arboledas y del sublime rezo de Jos inanantiaJes, se penetra de la idea de los trabajadores que antes de poner mano á la tarea aclaman al Dios de cíelos y tierras* y ve temblar al mismo tiempo los collares de rocío en las hojas cuyas gotas humean á los tibios rayos del sol, y aspira el aire fian-<seg rend="smallcaps">üo y </seg>libre que viene á carrera tendida por Jas vides, y se entrega en cuerpo y alma á los goces de la nato raleza, no puede por menos de sentir la linaria de las lágrimas á Jos ojos y de inclinar a tierra Ja frente anie las grandes maravillas do Dios,</p>
 				<p>El esquilón cuyas ñolas de bronce llegan en alas del viento desde el recinto humilde de Ja aldea; la voz deJ hombre que enlona su copla, y llega á los oídos con la indecisión de las ráfagas de música lejana; el andar soñoliento de los bueyes que llenen el profundo reposo de Ja tierra; el canto de los pájaros oue forman ruidos y aJgazaras en las torres de hojas de Jos árboles » todo Jo qué en el campo tiene movimiento, luz ó sonido, acaba por llenar de inspiración nuestra mente y nos hace recibir la jo visible comunión que lava de pecado, que Dios ofrece al hombreen la naturaleza,</p>
@@ -1390,7 +1417,7 @@
 				<p>la selva entera brilló de pronloanie ambos con una Itrj superior en fuerza á Ja del sol; inflamóse en átomos de oro el ambiente, y el supremo arrebato de pasión , resolvióse, ya amor-tiaguada la llama, en el descanso de un beso absolutamente largo y tranquilo,...</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0398_chap20">
-				<head>XX: A LAS ANCAS</head>
+				<head xml:id="ne0398_head_023">XX: A LAS ANCAS</head>
 				<p>La nodie filé terrible, singularmente para el viejo que midió con fa inteligencia loda La profundidad de su culpa, pero provechosa cuanto <seg rend="italics">k</seg> Imar planes que habrían de cumplirse, con las cuales remediar el daflo causado, Na sentía lener por esposa ó su sobrina, que era buena de alma cuanto puede serlo itn espíritu encerrado en cuerpo de mujer; pera temía demasiado el ridículo para no irse con pies de plomo en ponto A dar á Jas gentea la inesperada noticia ríe su enlace*</p>
 				<p>Porque esto fue fu que resolvió liara quedar bien con su conciencia. No era hombre que diera una palabra y en el aclo no tratara de cumplirla. Lo t|ire no veta c/aro, ni abordable bajo ningún concepto» era pedir ú su hermano <seg rend="italics">Ui</seg> muchacha y darle también de paso la noticia estupenda de mi enamoramiento. CJaro es que para nada tenia que decirle fa perfidia cometida con el <seg rend="italics">Gusano^</seg> puesto i|ue se halla* ba dispuesto á remediarla; pero con lodo, el aclo de coger Ja pluma—porque él no iba ni aludo á hali/ar<seg rend="sub">p</seg> frente á frente, fi su hermano —para decirle que había resuello casarse y que ía conlrayente era gustosa en ello, lo veía como una montana* sobre la cual tendría que pasar si quería cumplir como hombre de honor y de conciencia.</p>
 				<p>Lo hixu así, después que viú que no había otro remedio y agregaba a) ünal de la carta, <seg rend="italics">n</seg>que se casaba. que se cacaba á escape v corriendo, antes se oue fuero á negarle á su‘hija* para fa que deseaba toda su Torluna y a quien dedicaría Ja mucha ó poca vida que Je restara,» »No vengas, querido Andrés—decía*—ni venga tampoco nadie de la familia; comprendo Ja di lerenda de edad que hay entre Concha Y yo» y Jo que quiero es que nos casemos sin ostentación alguna, porque ya subes lo novelera que es la gente y of escándalo que armarla»* «Venid, sí, pero pasado algún tiempo, cuando poco <seg rend="italics">k</seg> poco se haya ido sabiendo Ja noticia. Confía en rol, querido Andrés que tu bija será reina y seftora de mi casa, y no habrá de tener en torno suyo más que respetos y carino. Perdona esta acción de tu hermano<seg rend="italics">,</seg> y participa mi resolución á la familia.—Tuyo, <seg rend="italics">Sebastián.</seg></p>
@@ -1428,7 +1455,7 @@
 				<p>Loa trabaja do res que habían de servir de testigos, entraron con el viejo y Concha en eJ templo, y después de la confesión de Jus culpables, adelantó eJ reducido grupo al altar En medio de la ceremonia, las almas de ambos verilicaron el puro lavatorio de sus culpas, y bañadas de un reflejo místico auedaron una y otra sujetas al amor, como al cuerpo del pájaro van unidas un ala y otra ala....</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0398_chap21">
-				<head>XXI: LA CENCERRADA</head>
+				<head xml:id="ne0398_head_024">XXI: LA CENCERRADA</head>
 				<p>La noticia, en los primeros días contenida , del casamiento del <seg rend="italics">ex-tñudo</seg>con flor tan Lo-lana y fresca como Concha, rebosó del cáuce donde tuviéronla contenida, y como agua derramada desde una eminencia, qne ese privilegio tienen las cosas caídas de Jo alto, bajó partiéndose en infinitos raudales por Ja comarca, cantando cada chorro y pregonando cada salto la nueva sorprendente e inesperada.</p>
 				<p>£1 viejo, que creía poseer sJo en unión de su esposa y dos personas más el secreto, sintió * moción igual a la que sentiría si teniendo fija una luz delante de los ojos, Le interpusieran un cristal profusamente tallado: la luz se multiplicaría hasta Jo infinito.</p>
 				<p>En un solo momento vió reproducida la</p>
@@ -1462,7 +1489,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

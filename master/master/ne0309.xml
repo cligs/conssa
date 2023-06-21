@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El origen del pensamiento</title>
-				<title type="sub"></title>
+				
 				<title type="short">Pensamiento</title>
-				<title type="idno">
-					<idno type="bne">XX2550638</idno>
-					<idno type="viaf">bimo0000441817</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1035048</idno>
-					<idno type="viaf">61554068</idno>
-					<name type="short">Valdes</name>
-					<name type="full">Armando Palacio Valdés</name>
+					<name type="short" ref="#Valdes"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1737</measure>
@@ -141,16 +131,49 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0309</idno>
+						<idno type="cligs">ne0309</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, titivillus, r1.0, <date when="2015">2015</date>, <idno>24983</idno>, <ref target="https://www.epublibre.org/libro/detalle/24983"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first">Hijos de M.G. Hernández, Madrid, <date when="1893">1893</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El origen del pensamiento</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2550638.html">XX2550638</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/bimo0000441817/">bimo0000441817</idno>
+				</idno>
+				</title>
+					<author xml:id="Valdes">
+						<name type="full"><forename>Armando</forename> <surname>Palacio Valdés</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736 - IO 9737">IO 9736 - IO 9737</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118789252">118789252</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q645141/">Q645141</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1035048.html">XX1035048</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/61554068/">61554068</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, titivillus, r1.0, <date when="2015">2015</date>, <idno>24983</idno>, <ref target="https://www.epublibre.org/libro/detalle/24983"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first">Hijos de M.G. Hernández, <pubPlace>Madrid</pubPlace>, <date when="1893">1893</date><idno source="k10plus" type="ppn" n="534510329" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=534510329"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El origen del pensamiento</title>: 	<title type="sub">novela</title> <date when="1893">1893</date>, <publisher>Hernández</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="534510329" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=534510329"/> </bibl>
+						<bibl type="further-edition"><title type="main">El origen del pensamiento</title> <date when="1923">1923</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099859254" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099859254"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El origen del pensamiento</title> <date when="1947">1947</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584336683" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584336683"/> </bibl>
+						<bibl type="further-edition"><title type="main">El origen del pensamiento</title> <date when="1947">1947</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="467818002" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467818002"/> </bibl>
+						<bibl type="further-edition"><title type="main">El Orígen del pensamiento</title> <date when="1947">1947</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099864312" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099864312"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Señorito Octavio. El idilio de u enfermo. La espuma. El maestrante. El origen del pensamiento. Lo cármenes de Granada. La novela de u novelista. Album de un viejo. A car o cruz. Cuentos. Escritos varios</title> <date when="1948">1948</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1145122051" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1145122051"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El señorito Octavio. El idilio de un enfermo. La espuma. El maestrante. El origen del pensamiento. Los cármenes de Granada. La novela de un novelista. Album de un viejo. A cara o cruz. Cuentos. Escritos varios</title> <date when="1952">1952</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1144460735" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1144460735"/> </bibl>
+						<bibl type="further-edition"><title type="main">El Señorito Octavio. El idilio de u enfermo. La espuma. El maestrante. El origen del pensamiento. Lo cármenes de Granada. La novela de u novelista. Album de un viejo. A car o cruz. Cuentos. Escritos varios</title> <date when="1965">1965</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1071613138" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1071613138"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="epublibre">
@@ -158,6 +181,14 @@
 				<p>Pintura admirable de tipos y escenas, de humor finísimo y dolor penetrante, El origen del pensamiento podría calificarse de tragicomedia. El argumento salta sin complejos de lo cómico, rayano en el sainete —incluso castizo, de su tiempo—, a la comedia seria que a veces llega a rozar la tragedia, sin que por esta diestra convivencia de ambos extremos se escamotee ningún valor humano ni se falsee ninguna situación real en el desarrollo de la obra.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736" key="IO 9736" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -189,14 +220,14 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela autobiográfica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
 					<term type="text.litHist.mentioned" resp="HdLE">False</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE7">0.5</term>
-					<term type="text.litHist.literaryQuality" resp="MdLE7"></term>
+					<term type="text.litHist.literaryQuality" resp="MdLE7"/>
 					<term type="text.movement">naturalista</term>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
@@ -219,6 +250,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-09-15" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -226,7 +258,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0309_chap1">
-				<head>I</head>
+				<head xml:id="ne0309_head_000">I</head>
 				<p>Mario tenía encendidos los pómulos y el resto de la cara bien pálido: la mano le temblaba al llevarse la cucharilla a la boca: la garganta se resistía a dar paso al café, que tragaba apresuradamente y sin gustarlo. Sus ojos se volvían frecuentemente hacia una de las próximas mesas donde una familia compuesta de padre, madre y dos niñas de veinte a veinticuatro abriles tomaban igualmente café. Los papás leían los periódicos; las niñas escuchaban distraídas las notas prolongadas, quejumbrosas, del violín.</p>
 				<p>El violín se quejaba bien amargamente aquella noche; ya sabremos por qué. El vasto salón del café estaba poblado de sus habituales parroquianos. Eran, por regla general, modestos empleados que por el módico precio de la taza de café se regalaban con sus familias toda la noche escuchando al piano y al violín todas las sinfonías y todos los nocturnos habidos y por haber, conversaban, leían los periódicos y se daban tono de personas pudientes. Había también estudiantes, militares subalternos, comerciantes de escasa categoría y artesanos de mucha. Los domingos, la clase de horteras aportaba un contingente considerable.</p>
 				<p>De todas las calles céntricas de Madrid, la única que conserva cierta tranquilidad burguesa que le da aspecto honrado y amable es la calle Mayor. Entrando por ella vienen a la memoria nuestras costumbres patriarcales de principios del siglo, la malicia inocente de nuestros padres, los fogosos doceañistas, la Fontana de Oro, y se extraña no ver a la izquierda las famosas gradas de San Felipe. El café del Siglo, situado hacia el promedio de esta calle, participa del mismo carácter burgués, ofrece igual aspecto apacible y honrado. Hasta la hora presente no se han dado cita allí las bellezas libres y nocturnas que invadieron sucesivamente a temporadas muchos otros establecimientos de la capital. Ni a primera ni a última hora de la noche reina allí Príapo, numen impuro, sino su hermano Himeneo, protector de los castos afectos.</p>
@@ -354,7 +386,7 @@
 				<p>Moreno, algo amoscado, guardaba silencio, maldiciendo en su interior de la facilidad que su amiguito tenía para liquidarse.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0309_chap2">
-				<head>II</head>
+				<head xml:id="ne0309_head_001">II</head>
 				<p>Romadonga se acercó al grupo cuando la discusión religiosa acababa de zanjarse de aquel modo imprevisto y húmedo. Mario vio el cielo abierto. Don Laureano le hizo con sonrisa de condescendencia una seña, y nuestro impaciente joven se disponía a levantarse cuando uno de los mozos que servían allá abajo, cerca de la puerta, se acercó al viejo tenorio y le habló algunas palabras al oído.</p>
 				<p>—Soy con usted al momento —dijo éste a Mario.</p>
 				<p>Y se alejó.</p>
@@ -493,7 +525,7 @@
 				<p>—Mira, Adolfo —dijo al fin procurando reprimir la indignación—, yo nunca he dudado de tu ciencia. Reconozco que sabes mucho más que yo, y aunque a mí no me interesen gran cosa los Bochimanos, les concedo toda la importancia que tú quieras, por más que tú mismo dices que son unos salvajes… Pero, francamente —añadió poniéndose fuertemente colorado y clavando una mirada colérica en la mesa—, eso de que hablándote yo de mi amor por Carlota, que es un ángel bajado del cielo, me saques a relucir el gorila y el chimpancé, no es decente… no es decente… ¡vamos, que no es decente!</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0309_chap3">
-				<head>III</head>
+				<head xml:id="ne0309_head_002">III</head>
 				<p>Vivió desde aquella noche memorable en un estado de exaltación próximo a la locura. En su casa dejó de ser, con sorpresa de la patrona, el huésped silencioso, tolerante, que ésta se complacía en ofrecer de modelo a los demás. Se mostró impaciente, huraño, imperioso; armaba con la criada cada pelotera que la vajilla retemblaba con los apóstrofes; todo porque le había servido el almuerzo diez minutos más tarde de lo que le había ordenado, o no había podido llevarle el sombrero a planchar. De igual modo andaba constantemente a la greña con la planchadora sobre si los puños, sobre si los cuellos, y con la camarera sobre si las botas, sobre si el botón de la levita. La misma Doña Romana, su respetabilísima patrona, a pesar de su continente digno y talento persuasivo, no se libraba de las amargas recriminaciones del joven, y a veces de sus violentísimos apóstrofes.</p>
 				<p>—Pero, Don Mario —decía la diplomática señora mientras los ricitos postizos de su cabeza se agitaban con elocuencia—, ¿cómo quiere usted que la comida esté sazonada o no se la sirvan fría, cómo quiere usted que le tenga el cuarto arreglado a tiempo ni las cosas a punto, si desde hace una temporada no tiene hora fija para nada; tan pronto se le ocurre almorzar a las once como a las dos, unas veces se levanta a las siete de la mañana, otras duerme hasta las tres de la tarde? Y sobre esto, los criados siempre en danza, a casa del sastre, del camisero, a llevar cartas y recados a la calle de Ramales.</p>
 				<p>Era el mismo Evangelio lo que la buena señora alegaba. Los tirabuzones sujetos a su frente lo corroboraban con vivos movimientos de trepidación. Mario cometía estos desórdenes y otros más. La causa estaba en la calle de Ramales, bien lo sabía Doña Romana; pero no se atrevía a expresarlo, aunque lo indicaba recalcando un poquito la palabra. Es decir, no estaba en la calle de Ramales. Donde estaba realmente era en el cerebro exaltado del joven escultor. Porque ¿qué culpa tenía Carlota de que se levantase a las seis de la mañana, habiéndole dicho la noche anterior que oiría misa a las diez en el Sacramento? ¿Ni por qué pedía a grandes voces el almuerzo a las once, si le constaba que hasta las dos lo menos no había de salir de tiendas Doña Carolina con sus hijas? Tampoco era Carlota responsable de que nuestro joven perdiese la razón al ver una minúscula arruga en el planchado de los puños o las botas sin el conveniente brillo, porque no tenía la costumbre de reconocer minuciosamente ni los puños ni las botas de su novio. Es más, aunque advirtiese la arruga del planchado o la opacidad de las botas, era tan bonachona que se lo perdonaría sin gran esfuerzo.</p>
@@ -569,7 +601,7 @@
 				<p>No hubo más remedio que resignarse. Don Pantaleón hallaba prematuro el matrimonio. Los hombres, según decía su esposa, miran las cosas de un modo prosaico; se fijan en el porvenir, en las necesidades y obligaciones que trae consigo; todo lo ven de color negro. Nosotras procedemos de otro modo, por entusiasmo, por cariño; cuando se nos interesa el corazón no queremos ver las dificultades. Por mi parte, aunque no tuviese usted empleo ninguno, aunque fuese un pobre de la calle, bastaría el afecto que le tengo para que le entregase a mi hija sin reparar en nada.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0309_chap4">
-				<head>IV</head>
+				<head xml:id="ne0309_head_003">IV</head>
 				<p>Esperaron, pues, pacientemente a que Sánchez se ablandara. La vida siguió deslizándose en la misma forma que antes, creciendo de día en día la confianza y el cariño entre nuestro joven y la familia de su novia. No salía de la casa. Cuando iban a paseo por Recoletos, Mario y Carlota marchaban delante y detrás Doña Carolina y Presentación. Al poco tiempo todo Madrid los conocía. «Ahí vienen <seg rend="italic">los novios</seg>,» se decían los paseantes al verlos. Entre algunos chistosos comenzó a llamárseles <seg rend="italic">I promessi spossi</seg>. Y como suele suceder, al cabo de algunos meses llegaron a aburrir a la gente. ¡Pero, señor! ¿cuándo se casan estos chicos?</p>
 				<p>Doña Carolina consintió al fin, a ruego de Mario, en tutearle, y hasta llevó su condescendencia a permitir que la llamase mamá, todo en secreto por supuesto y cuando Sánchez no se hallaba presente. Un día que delante de éste se le escapó llamarle de tú, ¡Jesucristo, lo colorada que se puso la buena señora! Mario estaba hechizado; la adoraba.</p>
 				<p>Pocos meses después acaeció un cambio en la política. Cayó el ministerio y se formó otro nuevo. El ministro de Ultramar saliente se acordó de Mario por la amistad que había mantenido con su padre y le dejó ascendido en lo que se denomina en términos burocráticos testamento. Tenía diez y seis mil reales de sueldo. Doña Carolina mostró al saberlo una alegría verdaderamente maternal. Tanto que a los pocos días le llevó sigilosamente hacia un rincón y le dijo con misterio que si se lo permitía iba a dar «otro tiento» a Sánchez: desconfiaba bastante del éxito, pero iba a hacer un esfuerzo supremo… «Ya veríamos».</p>
@@ -625,7 +657,7 @@
 				<p>—Este polvo, residuo de la digestión de la planta, es precisamente lo que, al herir la mucosa de la nariz, nos causa esa sensación agradable que llamamos aroma. De suerte —añadió con sonrisa de benévola ironía— que el perfume de las flores, cantado por los poetas y que enloquece de placer a los temperamentos románticos, no es otra cosa en realidad que el olor de su excremento.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0309_chap5">
-				<head>V</head>
+				<head xml:id="ne0309_head_004">V</head>
 				<p>A la manera que el grano depositado en la tierra germina bajo la acción combinada del calor y la humedad, así las preciosas ideas depositadas por Moreno en el cerebro del ingenioso Sánchez germinaron allí toda la noche bajo la tibia temperatura de las sábanas. Hasta que el sueño vino a apoderarse de sus facultades mentales no dejó de repetirse con creciente asombro: «¡El excremento!». Y esta idea, maravillosamente fecunda, iba penetrando poco a poco en su ser, se apoderaba de él y le abría repentinamente inmensos horizontes en los cuales su genio dormido jamás había soñado.</p>
 				<p>Cuando se levantó por la mañana tenía las mejillas enrojecidas, los ojos brillantes, todo el cuerpo en tan ágil disposición, que su digna esposa quedó, al verle entrar en el comedor, no poco sorprendida. La sorpresa fue en aumento cuando Sánchez, después de tomar el desayuno, en vez de retirarse a su gabinete para terminar concienzudamente la lectura de <seg rend="italic">La Época</seg>, se dirigió a la cocina y preguntó si había alguna legumbre fresca. Como la criada no hubiese traído ninguna aquel día, se apoderó al fin de una cebolla y se fue a su cuarto; destornilló el objetivo de unos gemelos de teatro, y con esta lente improvisada se pasó la mañana dando cortes trasversales al vegetal y examinando detenidamente su estructura. Por la tarde salió a dar su acostumbrado paseo por el Retiro. ¡Ah, este paseo tenía ahora muy diversa significación! Hasta entonces Sánchez había paseado por puros motivos higiénicos, arrastrado de la costumbre. Su pensamiento permanecía inactivo lo mismo cuando daba vueltas en torno del <seg rend="italic">Ángel caído</seg> que cuando se sentaba frente al Estanque grande y descansaba horas enteras haciendo rayas en la arena con el bastón. Mas ahora aquellos senderos, aquellas calles de árboles estaban iluminadas por la chispa que ardía en su cerebro. Ya no las cruzaba con la indiferencia vituperable del ignorante. La Naturaleza comenzaba a hablarle su lenguaje grave y solemne, prometiendo revelarle los secretos que guarda en su seno.</p>
 				<p>Don Pantaleón, dándose cuenta vagamente del alto destino a que estaba llamado y del importante papel que pronto iba a representar en el progreso de los conocimientos humanos, respondió dignamente a los llamamientos del reino vegetal. No daba cuatro pasos sin que se detuviese a conversar con algún árbol del camino. Arrancaba delicadamente una ramita y, aplicando el ojo a la lente, examinaba con atención sus particularidades morfológicas. No sólo los grandes árboles añosos, que bordeaban el paseo, eran objeto de su atención investigadora. Con admirable intuición comprendía ya que las plantas más diminutas merecían el mismo examen atento que los árboles seculares, porque en todas partes la Naturaleza revela su inmensa riqueza. Por eso brincaba a menudo por encima de los setos y se metía por los cuadros de flores para estudiar los organismos inferiores.</p>
@@ -669,7 +701,7 @@
 				<p>A la segunda vez que Sánchez le presentó el cartón no se satisfizo con esto. Lo cogió airado entre los dientes y en menos de un segundo lo hizo trizas. Sánchez comprendió que era necesario esperar que se calmase aquella cólera insensata. Dejó trascurrir algunos días sin repetir el experimento. Y cuando pensó que había desaparecido tal estado de ferocidad, una mañana antes de almorzar, hallándose el Clavel en el regazo de su ama dormitando, se presenta en el gabinete con los cartoncitos en la mano. Verlos el Clavel, lanzarse sobre el sabio a hincarle los dientes en la mano pecadora, fue una misma cosa. Gritos, confusión, vivísimas interjecciones. Don Pantaleón, pálido y secándose la sangre con el pañuelo, se retira profundamente afectado a su dormitorio. La ciencia, la humanidad pierden una interesante monografía del perro.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0309_chap6">
-				<head>VI</head>
+				<head xml:id="ne0309_head_005">VI</head>
 				<p>La familia Sánchez se estrechó un poquito para que cupiese Mario. En el cuarto donde antes alojaban las dos hermanas se aposentó ahora el matrimonio. Presentación pasó a dormir en un cuartito interior, donde antes tenían los armarios de la ropa.</p>
 				<p>Mario nadó los primeros días en una gloria azul y luminosa sembrada de estrellas, cercada de querubines alados como las que colocan los pintores en la esquina del cuadro cuando quieren representar la muerte de un santo. Don Pantaleón era el Padre Eterno, Doña Carolina la esposa del Padre Eterno, Presentación un ángel, y hasta la cocinera Rita guardaba alguna semejanza con Santa Mónica, madre de San Agustín. En cuanto a Carlota, era la misma Virgen Santísima concebida sin mancha en el primer instante de su ser natural.</p>
 				<p>No se saciaba de mirarla. Por la mañana, con un pañolito rojo de seda al cuello, los negros cabellos anudados al desgaire y un traje de percal color lila, barriendo y arreglando el cuarto, estaba verdaderamente deliciosa. Un poco más tarde, haciendo el café, cortando el pan y distribuyendo el azúcar y la manteca, le parecía la bella diosa Pomona cargada de frutos ultramarinos. Por la tarde, lavada, peinada, perfumada, con una linda bata color crema, sentada al lado del balcón bordándole a él unas zapatillas, no podía darse nada más correcto y a la vez más interesante. Cuando salían de paseo y se ponía un sombrerito de paja adornado con campanillas rojas y el traje negro de seda, regalo de sus papás, era maravillosa. Por la dignidad del continente, por la delicadeza del cutis, por su belleza sencilla y serena, no había en todo Madrid quien pudiese competir con ella. Pero esto no era nada si se compara a la forma en que se le aparecía los sábados. En este día Carlota tenía por costumbre lavar sus camisas. Con la cabeza ceñida por un pañuelo que dejaba sólo ver algunos rizos, la garganta y una buena porción del pecho al descubierto y los brazos por completo al aire, estaba sencillamente sublime. ¡Qué ondulaciones de torso! ¡qué pureza de líneas! ¡qué armonía! ¡qué majestad!</p>
@@ -727,7 +759,7 @@
 				<p>Pocos momentos después nació en su espíritu la sospecha aterradora de que la conversación empezaba a aburrirle. Apresurose a levantarse, y dando algunas palmaditas amicales a su amigo en el hombro y deseándole que se arreglase pronto el asunto, se alejó balanceando su figura distinguida, como los perros cuando ya no hay terrones de azúcar que ofrecerles.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0309_chap7">
-				<head>VII</head>
+				<head xml:id="ne0309_head_006">VII</head>
 				<p>No se arruinaría él, no, por mujeres de mármol. Tampoco por las de carne y hueso, aunque lo comprendiese mejor. Hasta entonces al menos ninguna había logrado tomar de su bolsillo más que lo que en cuenta corriente había destinado a este ramo exquisito de sus placeres. A fuerza de experiencia y de cálculo, cuando emprendía alguna nueva conquista, sabía de antemano lo que iba a costarle; trazaba su presupuesto con la exactitud de un experto maestro de obras.</p>
 				<p>El de la pobre Concha, la hermosa chula que hacía algunos meses había conocido en el café del Siglo, fue de los más modestos que en su carrera galante había formado.</p>
 				<p>—Estas chicas populares son el género más barato, y no por eso menos sabroso —solía decir a sus amiguitos del café.</p>
@@ -806,7 +838,7 @@
 				<p>Una hora después salían ambos del café con sendas brevas en la boca, colorados, risueños; despidiéndose muy afectuosamente en la primer esquina.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0309_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0309_head_007">VIII</head>
 				<p>Seis meses nada más bastaron para que el genio que dormía en el fondo del espíritu de Don Pantaleón Sánchez se levantase y echase a andar por la tierra. En este corto espacio de tiempo su mirada penetrante abarcó de una vez la existencia toda y sondó sus inefables arcanos. En el mundo no había más que hechos, hechos <seg rend="italic">constatados</seg>, como decía un libro traducido del francés que Moreno le había dado.</p>
 				<p>Todas las supersticiones se borraron de pronto de su privilegiada inteligencia: no sólo la superstición de Dios, la del alma y la moral, inventadas por la debilidad de los hombres secundada por la ambición de los sacerdotes, sino ciertas nociones ridículas en que el género humano se había entretenido puerilmente hasta ahora; las ideas de lo verdadero, lo bueno y lo bello. Risa inextinguible le causaban los que sostienen que se ignora el origen de estas ideas. Lo ignorarían ellos. Moreno y él sabían perfectamente a qué atenerse. Eran sensaciones, nada más que sensaciones, agradables o desagradables, como las que produce la humedad, el calor o la fetidez de las alcantarillas.</p>
 				<p>Las profundas observaciones que había llevado a cabo en los últimos tiempos sobre las cebollas, las patatas y otros ejemplares del reino vegetal, lo mismo que el estudio atento de algunos animales domésticos, le habían empujado tan fuertemente al análisis que no comprendía otro método. Lo que por medio del análisis no se hallara, inútil era buscarlo por otro procedimiento. Es así que ni el escalpelo ni el microscopio habían tropezado jamás con el alma ni con un Ser Supremo; luego, etc.</p>
@@ -871,7 +903,7 @@
 				<p>Aunque la amenaza no espantó a la familia tanto como era de esperar, se convino, no obstante, en no servirle más que alimentos fosfatados.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0309_chap9">
-				<head>IX</head>
+				<head xml:id="ne0309_head_008">IX</head>
 				<p>Sintió Carlota profundo pesar cuando su marido le notició la cesantía. Quedaron ambos larguísimo rato silenciosos y tristes. Algo sonaba también lúgubremente dentro del alma de ella, profetizando la muerte de su dicha. Doña Carolina la recibió con tranquilidad. Únicamente se le advirtió más seria a la hora de comer. Después, habiéndose suscitado una conversación propicia, expresó algunos conceptos acerca de la holgazanería, de la presunción y la ligereza que a Mario se le antojaron alusivos. Tal vez no serían: no había motivo fundado para suponerlo, pues su suegra le había dado repetidas pruebas de afecto y consideración. De todos modos, no pudo menos de sentir el corazón apretado. Cuando se retiraron a su cuarto nada dijo de esta sospecha a su esposa. Se acostaron en silencio y fuertemente preocupados.</p>
 				<p>La vida de la familia siguió el mismo curso metódico y apacible. No había pasado nada. Mario, a las horas de oficina, se iba de paseo solo o con su mujer. Por las noches continuaban asistiendo al café. A las comidas la conversación solía animarse. Presentación embromaba a su cuñado. Mario la embromaba a ella. Carlota escuchaba sonriente aquel tiroteo, tomando parte alguna vez por su marido. Don Pantaleón les asaba a explicaciones científicas: el vino, el pan, el azúcar, todo era motivo para exponer largamente la muchedumbre de secretos que iba arrancando a la naturaleza. Doña Carolina seguía con el mismo humor benigno, rigiendo la casa a su talante, aunque siempre por delegación de su esposo.</p>
 				<p>No obstante, una nube de malestar y tristeza, de la cual en el fondo todos se daban cuenta, envolvía a la familia. Las relaciones entre ella seguían siendo en la apariencia tan cordiales; pero cada cual percibía un dejo de inquietud, cierto embarazo que procuraban ocultar exagerando la sonrisa, acentuando la nota cómica. Mario sentía la falsedad de su situación en aquella casa y notaba bien que todos los demás la sentían igualmente. La mayor amabilidad de su cuñada con él era un modo de expresárselo; el silencio de Doña Carolina, la humildad de su esposa para responder a una y a otra, lo mismo. Un sentimiento insoportable de vergüenza iba apoderándose de él.</p>
@@ -949,7 +981,7 @@
 				<p>Y salió de la estancia precipitadamente. Carlota le siguió, y en lo alto de la escalera volvieron a abrazarse.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0309_chap10">
-				<head>X</head>
+				<head xml:id="ne0309_head_009">X</head>
 				<p>Cuando hubo salido a la calle y traspuesto la esquina, se detuvo. Aquellos infinitos sitios de que había hablado a Carlota eran una piadosa mentira. Quedó inmóvil, con el pensamiento vacío y el corazón apretado. Unas ansias atroces de sollozar le subían del pecho a la garganta amenazando ahogarle. Pero logró tenerlas encerradas: sólo algunas lágrimas brotaron a sus ojos sin darse cuenta hasta que vio la mirada de los transeúntes fijarse con curiosidad en él. Entonces se llevó el pañuelo a la cara como para sonarse, y prosiguió su camino.</p>
 				<p>¿Adónde iba? Marchó a la ventura largo rato, tratando de coordinar sus ideas. Al fin no halló otra cosa mejor que dirigirse a su antiguo alojamiento. Pero esto le causaba profundo disgusto y humillación. ¿Cómo responder a las preguntas de su antigua patrona? ¿Qué explicación iba a dar a sus compañeros? Al llegar a la puerta cambió de resolución y pasó de largo sin entrar. Subió a la primera fonda que tropezó, alquiló una habitación y volvió a salir. Su inquietud y dolor no menguaron por esto. Al contrario, la idea de que no tenía dinero para pagar el pupilaje le atormentó de modo indecible. Pensó entonces en algún amigo con quien comunicar sus pesares y que le diese algún buen consejo, y los pies le guiaron a casa de Miguel Rivera. Aunque le llevase éste bastantes años y tuviese un carácter burlón y agresivo que a menudo pinchaba a los que se le acercaban, Mario sentía hacia él irresistible inclinación: debajo de aquella cáscara amarga adivinaba un corazón dulce y generoso. Además, si para alguno limaba un poco la punta afilada de su lengua Rivera, era para nuestro joven. Fácilmente se advertía su predilección cuando se hallaba en la tertulia del café.</p>
 				<p>El antiguo periodista vivía solo con su hijo en un cuarto sin lujo, pero limpio y agradable, de la calle de Recoletos.</p>
@@ -1062,7 +1094,7 @@
 				<p>—Me parece —dijo Mario cuando hubo sosegado la risa— que Don Laureano ha infundido demasiada vida a esa chica.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0309_chap11">
-				<head>XI</head>
+				<head xml:id="ne0309_head_010">XI</head>
 				<p>Repitiéronse metódicamente aquellos festines conyugales todas las semanas. Esta singular posición les apenaba y alegraba a un mismo tiempo. Sentían dolor cuando pensaban en que vivían separados, como si no estuvieran unidos para siempre por vínculo indisoluble. Pero sus entrevistas tenían por esto mismo sabor dulcísimo, un encanto especial que compensaba todos sus dolores. Hasta que una noche sintió Carlota los precursores del alumbramiento. Se envió recado al médico y a Mario, y éste corrió desalado a la casa de sus suegros, pisándola otra vez contra la voluntad de su esposa. Vino al mundo un niño robusto y hermoso. Según los datos suministrados por algunas vecinas que asistieron o tuvieron conocimiento inmediato de su presentación, había motivos para afirmar que poseía además ingenio profundo y ameno a la vez, unido a un corazón verdaderamente heroico.</p>
 				<p>Con tal motivo, Mario siguió entrando en la casa, aunque sin comer ni dormir en ella. Su suegra, viéndole en camino de hacerse independiente, le acogía con más agrado, pero siempre mostrando reserva, apercibida a romper toda relación en cuanto tuviese la osadía de quedarse sin qué comer. Don Pantaleón comenzó a sentir por él una predilección tan señalada que el muchacho estaba sorprendido. Al fin paró en lo que paran generalmente estas predilecciones repentinas, en leerle un par de folletos manuscritos que pensaba dar muy pronto a la imprenta. El uno se titulaba <seg rend="italic">Ensayo para una patología administrativa</seg>; el otro era una <seg rend="italic">Terapéutica del comercio</seg>. Se estudiaba en ellos lo mismo la administración pública que el comercio desde un punto de vista fisiológico, con los modernos métodos de la ciencia positiva, explicándose admirablemente los reglamentos y los aranceles por la acción combinada de las fuerzas naturales, como un simple fenómeno de la vida orgánica, sin necesidad de acudir para nada a la voluntad de los directores y jefes de sección.</p>
 				<p>Todavía le dio otra prueba de particular confianza y afecto. Después que le hubo hecho saborear los interesantes fenómenos patológicos que su penetrante inteligencia había logrado arrancar a la vida administrativa y comercial, un día le llamó aparte con misterio y le dijo:</p>
@@ -1207,7 +1239,7 @@
 				<p>Mario le contempló lleno de pasmo, como siempre que se acercaba desde hacía algún tiempo a aquel hombre extraordinario.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0309_chap12">
-				<head>XII</head>
+				<head xml:id="ne0309_head_011">XII</head>
 				<p>Presentación no quedó ciega, pero sí desfigurada. Era un dolor ver aquel rostro, tan hechicero en otro tiempo, ultrajado por repugnantes costurones. La infeliz no cesaba de llorar, aunque con esto dañase a sus ojos, aún no curados por completo. Una honda tristeza dominaba a toda la familia.</p>
 				<p>Sin embargo, su digno jefe Don Pantaleón, por virtud de una actividad incesante, atenta siempre a los hechos, aun los más insignificantes, del mundo de la Naturaleza, y resguardado por las grandes verdades del orden físico y químico que había podido adquirir, se hallaba fuera del alcance de toda emoción penosa. Había publicado ya la <seg rend="italic">Terapéutica del comercio</seg> y la <seg rend="italic">Patología administrativa</seg>. Pero su inteligencia había crecido de tal manera con el régimen de los alimentos fosfatados a que se hallaba sometido, que estos interesantes libros nada valían al lado de las empresas prodigiosas que su mente proyectaba. Por de pronto, entre él y Moreno comenzaron a redactar dos revistas científicas mensuales, una titulada <seg rend="italic">El Mundo Orgánico</seg> y la otra <seg rend="italic">El Mundo Inorgánico</seg>, para dar a conocer al público las observaciones que en los dos mundos iban haciendo con maravillosa penetración.</p>
 				<p>Estas observaciones no se limitaban al laboratorio. El estudio directo de la Naturaleza y de la vida social se las ofrecía muy varias. Para ello hacían frecuentes excursiones a los alrededores y pueblos comarcanos de Madrid. Generalmente las hacían a pie, vistiendo ambos el largo y vueludo gabán característico de los sabios, sombrero de alas amplísimas y zapatos claveteados; en la nariz, las imprescindibles gafas de cristales ahumados y en la mano sendos paraguas de tela de algodón. Con este arreo nadie dudaría que aquellos hombres estaban destinados a arrancar a la Naturaleza sus secretos. Pero Don Pantaleón llevaba gran ventaja en este punto a su compañero. Ningún sabio moderno estuvo dotado de figura más grave, majestuosa y verdaderamente científica. Era necesario remontarse con la fantasía a Solón o a Anacharsis el Viejo para representarse algo tan profundo y reflexivo.</p>
@@ -1329,7 +1361,7 @@
 				<p>Moreno y Sánchez se hicieron una seña, y aprovechándose de la distracción general, se escabulleron bonitamente, bajaron la escalera y se plantaron en la calle. Desde allí dirigiéronse a la estación del tranvía, y metiéndose en el primero que salió, regresaron en pocos minutos a Madrid, no muy contentos del resultado de aquella famosa salida antropológica.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0309_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0309_head_012">XIII</head>
 				<p>Durante año y medio Mario desempeñó atentamente cuantos trabajos le encomendaba su amigo y protector Rivera. Mas no se despidió por eso de su antigua afición a la escultura. En su gabinete, a las horas que tenía libres, seguía rindiéndole el mismo culto fervoroso y humilde. Miguel había hecho poco caso hasta entonces de aquellas aficiones. Mas un día, al pasar por delante del cuarto de su amigo, viendo por la puerta, que se hallaba entreabierta, una figura tapada con un lienzo, se decidió a entrar. Levantó la tela y quedó gratamente sorprendido. Era una pequeña figura de cuatro pies de alto que representaba a Ofelia coronada de flores. Había tanto desembarazo en la postura, tal delicadeza en las facciones, tanta inocencia en la expresión, que jamás había visto una interpretación más viva de la inmortal heroína de Shakespeare. Quedó pensativo y preocupado. Cuando Mario llegó a comer le preguntó afectando indiferencia:</p>
 				<p>—¿Cuándo has terminado esa figurita que tienes en el cuarto?</p>
 				<p>Mario se puso colorado.</p>
@@ -1380,7 +1412,7 @@
 				<p>Pero en estas contestaciones se pasó bastante tiempo. El joven sintió de pronto un frío intenso. Se apresuró a salir del Retiro y tomó un coche para dirigirse a su casa. Durante el camino fueron en aumento los escalofríos; la vista se le turbaba; creyó no poder llegar sin desmayarse. Al fin pudo subir la escalera y meterse en la cama. Poco después se le declaró una fuerte calentura.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0309_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0309_head_013">XIV</head>
 				<p>—Pues yo sostengo que lo que ha hecho mi yerno esta mañana es un acto inmoral.</p>
 				<p>Los tertulios del café del Siglo quedaron estupefactos al escuchar tan singular afirmación. Todos protestaron más o menos suavemente contra ella. El arrojo de Mario había despertado admiración en la tertulia del café. Se hacían elogios calurosos de su noble corazón y valentía.</p>
 				<p>El ingenioso Sánchez paseó tranquilamente sobre ellos sus ojos opacos, reflexivos, donde se leía constantemente la concentración profunda de un cerebro positivo, y dijo sin advertir siquiera la indignación de aquellos hombres-niños:</p>
@@ -1495,7 +1527,7 @@
 				<p>—Pero, hombre, ¿la quiere usted más dentro del teatro todavía? —dijo Romadonga sacudiendo la cabeza desesperadamente.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0309_chap15">
-				<head>XV</head>
+				<head xml:id="ne0309_head_014">XV</head>
 				<p>Mientras una cruel pulmonía postraba en el lecho a Mario, su nombre corría por la prensa periódica, era objeto de apasionadas discusiones. El fallo del jurado, en lo que a él se refería, fue condenado como injusto por varios críticos. Otros lo sostuvieron, o por convicción o por amistad hacia los jurados, o por envidia al nuevo artista. Rivera había quedado casi tan estupefacto como Mario y casi tan acobardado. Temía que su cariño le hubiese ofuscado. Pero cuando vio la lucha empeñada lanzose intrépidamente a ella. Y la pluma del viejo periodista, tanto tiempo colgada, nada había perdido de su destreza y proverbial causticidad; vibraba a impulso de la indignación con tal donaire y desenfado que puso inmediatamente de su lado al público indiferente. Al propio tiempo, como poseía y sabía tocar la cuerda del sentimiento, sacó mucho partido de la enfermedad de su amigo, víctima de su arrojo heroico en los momentos mismos en que lo era de una miserable injusticia.</p>
 				<p>De tal modo que cuando el joven escultor se levantó de la cama gozaba de mayor reputación y gloria que si le hubiesen dado la medalla de honor. Por esta vez la envidia había errado el golpe. La primer noche que se presentó en el café, sus amigos se pusieron en pie y palmotearon briosamente. Los demás asistentes siguieron el ejemplo: se le hizo una ruidosa ovación, de la cual dieron cuenta al día siguiente los periódicos.</p>
 				<p>—El arte es la apoteosis de la inutilidad —vertió sentenciosamente Moreno al oído de don Pantaleón, ya que se hubo calmado el entusiasmo—. Cuando los objetos útiles dejan de serlo, pasan a la categoría de artísticos. Un ánfora antes servía para contener agua o vino. Hoy es objeto decorativo sobre las chimeneas o sobre columnas. Éstas, a su vez, antes servían para sostener los techos; hoy adornan los rincones de los gabinetes.</p>
@@ -1585,7 +1617,7 @@
 				<p>—En cuanto le tropiece, no hay más, ¡le piso la cara!</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0309_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0309_head_015">XVI</head>
 				<p>Don Laureano Romadonga no era hombre que se dejase aprisionar fácilmente por los artificios femeninos; que comprometiese el sosiego de su vida, sus placeres, su independencia por una mujer, cualquiera que ella fuese. Conocedor profundo de la existencia, había formado hacía mucho tiempo su plan, y de él no se apartaba una línea. Sus días se deslizaban serenos, risueños, libando voluptuosamente la corta cantidad de miel que sólo proporciona este valle de lágrimas a los solterones ricos y sanos.</p>
 				<p>Desgraciadamente la impetuosidad absurda de su última querida había venido a turbar el curso sereno de estos días. Hacía ya algún tiempo que el viejo seductor comprendiera que le convenía cortar estas relaciones enfadosas. Si no lo ponía en práctica, como en casos semejantes había hecho, no era por falta de voluntad, sino por el temorcillo que la navaja de la chula había logrado inspirarle. No obstante, después de la escena escandalosa del teatro, la separación quedó resuelta en principio. Aunque por un refinamiento de hombre gastado le placiesen para queridas las mujeres de genio vivo y hasta un poco agresivas, los arranques de la hija del sillero rebasaban ya los límites de lo tolerable. No era posible continuar. Sus planes sabios corrían peligro de hundirse para siempre con aquella chiquilla violenta y caprichosa.</p>
 				<p>Era demasiado listo, sin embargo, para dejar traslucir sus propósitos. Continuó en apariencia tan enamorado. Mantuvo a la Conchita en la ilusión de ser su última y definitiva querida. Hasta le dejó entrever algunos tenues y lejanos rayos de luz matrimonial. Mientras tanto, allá en el fondo de su cerebro artificioso se elaboraba tranquilamente un plan maquiavélico que iba a marchitar en flor tanta dulce esperanza. Romper con la chula quedándose en Madrid era expuestísimo. Aunque avisase a la policía, tenía la seguridad de que Concha le daba una puñalada por la espalda. ¡La conocía bien! A aquella muchacha fiera y escandalosa le importaba un bledo ir a presidio o a la horca con tal de satisfacer su venganza. Era necesario escapar de Madrid. ¿Adónde? Después de meditar varios días este punto, se decidió por París. Aquella inmensa ciudad, emporio de todos los placeres, convenía admirablemente a los fines interesantes que Romadonga perseguía en esta vida. Pasar el invierno en París; desde allí, cuando viniese el verano, trasladarse a Biarritz o San Sebastián; en el mes de Octubre, trascurrido ya cerca de un año, regresar a Madrid. En todo este tiempo la hija del sillero le olvidaría, hallaría otro acomodo, desaparecería de Madrid. ¿Quién sabe lo que podía suceder?</p>
@@ -1619,7 +1651,7 @@
 				<p>Esto fue lo único que comprendió el círculo de curiosos que les rodeaba. La noticia causó sorpresa y no poca risa. El agente no se avino a ello sin llevarlos a ambos antes a las oficinas de la policía. Entonces Romadonga, con la galantería propia de un fidalgo español, ofreció el brazo a la chula y se fueron escoltados por el guardia. La muchedumbre aplaudía riendo.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0309_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0309_head_016">XVII</head>
 				<p>Mario llegó a ser un escultor distinguido. Llovieron las demandas de obra en su estudio. Bustos, estatuas, jarrones, mausoleos, todo lo trabajó con gloria y provecho. Comenzó a ganar sumas considerables.</p>
 				<p>Alquilaron un buen cuarto en la calle Mayor, cerca de la de Ramales, donde sus padres habitaban. Vivieron con desahogo, hasta con lujo; pero sin despilfarro. El ingenioso Sánchez y Doña Carolina andaban un poco apurados de dinero por los gastos del primero en publicaciones, instrumentos científicos, excursiones, etc, etc. Carlota los protegía. Pero a Mario le parecía siempre poco lo que les daba. Era tan infeliz aquel muchacho, que cuando doña Carolina venía a llorarle alguna lástima, por su gusto le entregaría todo el dinero que había en la casa.</p>
 				<p>—¿Para qué necesitamos nosotros tanto? —decía a menudo a su esposa.</p>
@@ -1723,7 +1755,7 @@
 				<p>Y aquella animosa mujer detuvo un coche que pasaba y se metió en él con las dos criadas, mientras su marido, sin dejar de sollozar, corría a la calle de Hortaleza, donde la vieja prendera tenía su domicilio.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0309_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0309_head_017">XVIII</head>
 				<p>Doña Rafaela había estado en las Ventas del Espíritu Santo a recoger un dinero que le debían. A la vuelta se apeó del tranvía frente al Retiro, paseó un rato, y mucho antes de llegar la noche se fue a su casa. Allí se encontró una carta, fechada en la cárcel, que decía:</p>
 				<p>«Mi respetable y amada protectora: Desde hace tres días me hallo en este lugar vergonzoso, tratado como un criminal. La infinita bondad de Dios me envía esta prueba, que no sé si podré resistir, porque soy una criatura débil y pecadora. Bendito por siempre sea su santo nombre. Si no temiera abusar de su bondad le suplicaría que viniese en algún momento libre a consolarme y a fortalecerme con sus sanos consejos. ¡Ojalá no me hubiese apartado jamás de ellos! Si no le fuese posible le ruego por la salvación de su alma que vaya a San José y ponga un cirio en el altar de Nuestra Señora y rece con fervor una salve por su desgraciado amigo que de veras necesita de sus oraciones. —<seg rend="italic">Godofredo Llot</seg>».</p>
 				<p>No bien la hubo leído cuando, volviendo a echarse el mantón sobre los hombros, salió a la calle, montó en un coche y se hizo trasladar a la cárcel. Tenía allí la prendera un sobrino empleado, quien por favor especial hizo llamar a Godofredo a la sala de declaraciones.</p>
@@ -1843,7 +1875,7 @@
 				<p>Mario alzó la cabeza bruscamente; abrió los ojos de un modo desmesurado, mirando a su amigo con vaga expresión de terror; se puso horriblemente pálido, y, alzándose del diván, salió corriendo de la estancia sin pronunciar una palabra. Rivera quedó un instante inmóvil con la vista fija en la puerta; luego salió también a la carrera en pos de él.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0309_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0309_head_018">XIX</head>
 				<p>Don Pantaleón se hallaba en el período de fiebre que suele preceder a los grandes descubrimientos. No comía, no dormía, no sosegaba. Pasaba pocas horas en el laboratorio. Los preparados y el microscopio ya le habían dicho la última palabra. Su pensamiento corría desatado en busca del misterioso origen, esperando una feliz casualidad como las que han entregado muchas veces los secretos de la Naturaleza a los hombres de ciencia. Discurría horas y horas al través de las calles, o por las afueras, abstraído, ojeroso, inquieto, torturado por recónditos anhelos de indagación, incomprensibles para los seres que cruzaban a su lado.</p>
 				<p>Sin embargo, aquel largo, vueludo gabán, que el gran antropólogo gastaba desde su memorable conversión a las ciencias positivas, llamaba la atención de los transeúntes. La llamaba especialmente cuando el viento, introduciéndose entre sus pliegues, lo agitaba. Entonces el insigne fisiólogo tomaba la apariencia de un negro bergantín desplegando sus velas para alguna lejana región desconocida. Los transeúntes, al hacer esta observación, se hallaban muy lejos de sospechar que tal fugaz apariencia era un símbolo. Porque Sánchez, en las altas esferas de la indagación científica, marchaba osadamente a regiones jamás exploradas hasta entonces.</p>
 				<p>Una cosa le preocupaba hondamente en aquellos días. Había leído en un libro reciente que el pensamiento debía de producirse en el cerebro por medio de continuas explosiones, trasmitidas desde las células por las fibras nerviosas. No lo creía; más aún: lo rechazaba indignado. Ya sabemos que su teoría era la de la destilación. Pero necesitaba demostrarla con pruebas irrefragables, necesitaba convencer al mundo de la inepcia de los fisiólogos sus predecesores. Sólo sorprendiendo al cerebro en funciones podía lograrse este resultado, que llenaría a los hombres de felicidad y le coronaría a él de gloria.</p>
@@ -1904,7 +1936,7 @@
 				<p>Y le oprimía con sus rodillas el pecho. De tal suerte que el infeliz escultor hubiera perecido si Miguel Rivera no entrase en aquel momento. Con su ayuda pudo levantarse, y con la de los vecinos que acudieron al ruido se logró sujetar al loco y atarlo con la misma cuerda que aprisionaba a la desgraciada criatura.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0309_chap20">
-				<head>XX</head>
+				<head xml:id="ne0309_head_019">XX</head>
 				<p>Algunos medicamentos recetados por el doctor calmaron en pocas horas el terrible acceso de Sánchez. Se le quitó la camisa de fuerza. Siguiose un estado de grave postración; se temió por su vida. Pero a los pocos días se inició la mejoría; no tardó en ponerse bueno, aunque disparatando cada vez más. Su locura tomó un aspecto apacible. Hablaba de todo con bastante lucidez menos cuando se tocaba el punto de la antropología. El médico, temiendo y aun augurando un nuevo acceso de furia, aconsejó a la familia que lo recluyese cuanto más pronto en alguna casa de salud, Mario se resistía, lleno de compasión.</p>
 				<p>—¡Pobre viejo! —decía—. Le vamos a dar la muerte encerrándolo en un manicomio. ¡Dejadlo al pobre! ¿Quién sabe si irá mejorando poco a poco hasta ponerse enteramente bueno? Con un par de criados que le vigilen día y noche todo queda arreglado.</p>
 				<p>Pero Carlota no quería oír de este arreglo. Su temperamento sano, equilibrado, rechazaba con profunda aversión toda insanidad del espíritu. Mientras Mario perdonaba y aun olvidaba el martirio de su hijo, ella lo tenía grabado a fuego en el corazón; no podía arrojar de su alma cierto rencor contra su padre, aunque fuese irresponsable. Tampoco Presentación le había perdonado las quemaduras del rostro. Fue necesario pensar en el establecimiento adonde le habían de conducir. Después de varias conferencias se convino en llevarlo a un manicomio de Carabanchel. Para efectuarlo sin violencia forjaron, como suele hacerse en tales casos, una comedia. Miguel Rivera fue el inventor de ella. Se escribió desde Carabanchel una carta al loco, «el más insigne antropólogo con que hoy contaba la Europa civilizada,» noticiándole la existencia de cierto individuo que ofrecía en sus funciones vitales algunas anomalías reversivas con extraños caracteres zoológicos que hasta entonces no había podido descifrar ningún fisiólogo. Se hacía una descripción, bastante cómica por cierto, de estas anomalías y se le invitaba a él, gran anatómico, gran paleontólogo, gran embriólogo, para que viniese a examinarlo y emitir su opinión.</p>
@@ -1951,7 +1983,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

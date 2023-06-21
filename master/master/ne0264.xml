@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Mare nostrum</title>
-				<title type="sub">(Novela)</title>
+				
 				<title type="short">MareNostrum</title>
-				<title type="idno">
-					<idno type="viaf">174700936</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">3111</measure>
@@ -140,13 +131,63 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0264</idno>
+						<idno type="cligs">ne0264</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg project, <date when="2007">2007</date>, <idno>23236</idno>, <ref target="http://www.gutenberg.org/ebooks/23236"/>.</bibl>
-				<bibl type="print-source">Prometeo, Valencia, <date when="1919">1919</date></bibl>
-				<bibl type="edition-first"><date when="1918">1918</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Mare nostrum</title>
+					<title type="sub">(Novela)</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/174700936/">174700936</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4577879-6">4577879-6</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg project, <date when="2007">2007</date>, <idno>23236</idno>, <ref target="http://www.gutenberg.org/ebooks/23236"/>.</bibl>
+					<bibl type="print-source">Prometeo, <pubPlace>Valencia</pubPlace>, <date when="1919">1919</date></bibl>
+					<bibl type="edition-first"><date when="1918">1918</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title>: 	<title type="sub">(novela)</title> <date when="1917">1917</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350948658" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350948658"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1134595972" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134595972"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title>: 	<title type="sub">Novela</title> <date when="1919">1919</date>, <publisher/> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1116179709" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116179709"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="192599038" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=192599038"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Mare nostrum</title> <date when="1924">1924</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="464625653" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464625653"/> </bibl>
+						<bibl type="further-edition"><title type="main">Mare nostrum</title>: 	<title type="sub">Novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="44565810X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44565810X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350948720" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350948720"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Amphitrite</title>: 	<title type="sub">Roman</title> <date when="1928">1928</date>, <publisher>Orell Füssli</publisher> <pubPlace>Zürich;Leipzig</pubPlace> 		<idno type="ppn" n="464747570" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464747570"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Amphitrite</title> <date when="1931">1931</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="464747686" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464747686"/> </bibl>
+						<bibl type="further-edition"><title type="main">Amphitrite</title>: 	<title type="sub">Übertr. v. Otto Albrecht van Bebber</title> <date when="1931">1931</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="445658118" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658118"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Amphitrite</title> <date when="1931">1931</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="248601458" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=248601458"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title>: 	<title type="sub">novela</title> <date when="1943">1943</date>, <publisher>Prometeo</publisher> <pubPlace>México</pubPlace> 		<idno type="ppn" n="466297998" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466297998"/> </bibl>
+						<bibl type="further-edition"><title type="main">Mare nostrum</title>: 	<title type="sub">novela</title> <date when="1945">1945</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464869803" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464869803"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Mare nostrum</title> <date when="1950">1950</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="1130303659" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1130303659"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title>: 	<title type="sub">novela</title> <date when="1956">1956</date>, <publisher>Ed. Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="226413985" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226413985"/> </bibl>
+						<bibl type="further-edition"><title type="main">Mare nostrum</title>: 	<title type="sub">novela</title> <date when="1958">1958</date>, <publisher>Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="083732608" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083732608"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="1975">1975</date>, <publisher>Ed. de arte y literatura</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="1173182195" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1173182195"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="1975">1975</date>, <publisher>Ed. Arte y Literatura</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="467857822" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467857822"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="1977">1977</date>, <publisher>Plaza &amp; Janes</publisher> <pubPlace>Esplugas de Llobregat;Barcelona</pubPlace> 		<idno type="ppn" n="464210178" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464210178"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente, Sangre y arena, Los muertos mandan, Luna benamor, Los cuatro jinetes del apocalipsis, Mare nostrum, Los enemigos de la mujer, El militarismo mejicano, El prestamo de la difunta y otros cuentos, El paraiso de las mujeres</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621457" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621457"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="1994">1994</date>, <publisher>Inst. de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1601543212" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1601543212"/> 		<idno type="isbn" n="8477841063"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="1998">1998</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="254018319" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=254018319"/> 		<idno type="isbn" n="8437616522"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="2014">2014</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479519294" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479519294"/> 		<idno type="isbn" n="9788415255314"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="2014">2014</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="78398006X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=78398006X"/> 		<idno type="isbn" n="9788415255314;8415255314"/></bibl>
+						<bibl type="further-edition" xml:lang="pol"><title type="main">Mare nostrum</title> <date when="2021">2021</date>, <publisher>Ktoczyta.pl</publisher> <pubPlace>Warszawa</pubPlace> 		<idno type="ppn" n="1782484191" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1782484191"/> 		<idno type="isbn" n="9788382179835"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +197,14 @@
 				<p>Mare nostrum (1918) es una de las novelas más reconocidas a nivel internacional del autor. Fue escrita durante la primera guerra mundial y sucede como muchas de sus novelas, en este ambiente bélico. Deja clara su posición a a favor de los aliados y esto causo gran popularidad hasta convertirse en best-seller.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -222,6 +271,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-20" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,7 +279,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0264_chap1">
-				<head>I: EL CAPITÁN ULISES FERRAGUT</head>
+				<head xml:id="ne0264_head_000">I: EL CAPITÁN ULISES FERRAGUT</head>
 				<p>Sus primeros amores fueron con una emperatriz.</p>
 				<p>El tenía diez años y la emperatriz seiscientos. Su padre, don Esteban Ferragut—tercera cuota del Colegio de Notarios de Valencia—, admiraba las cosas del pasado.</p>
 				<p>Vivía cerca de la catedral, y los domingos y fiestas de guardar, en vez de seguir á los fieles que acudían á los aparatosos oficios presididos por el cardenal-arzobispo, se encaminaba con su mujer y su hijo á oír misa en San Juan del Hospital, iglesia pequeña, rara vez concurrida en el resto de la semana.</p>
@@ -324,7 +374,7 @@
 				<p>Y pensaba en su hermano el médico, que vivía retirado en la casa paterna, allá en la Marina, un hombre excelente pero algo loco, al que llamaban el <seg rend="italics">Dotor</seg> las gentes de la costa y el poeta Labarta apodaba el <seg rend="italics">Tritón</seg>.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0264_chap2">
-				<head>II: MATER ANFITRITA</head>
+				<head xml:id="ne0264_head_001">II: MATER ANFITRITA</head>
 				<p>Cuando de tarde en tarde aparecía el <seg rend="italics">Tritón</seg> en Valencia, la hacendosa doña Cristina modificaba el régimen alimenticio de la familia.</p>
 				<p>Este hombre sólo comía pescado. Y su alma de esposa económica temblaba angustiosamente al pensar en los precios extraordinarios que alcanza la pesca en un puerto de exportación.</p>
 				<p>La vida en aquella casa, donde todo marchaba acompasadamente, sufría graves perturbaciones con la presencia del médico. Poco después de amanecer, cuando sus habitantes saboreaban los postres del sueño, oyendo adormecidos el rodar de los primeros carruajes y el campaneo de las primeras misas, sonaban rudos portazos y unos pasos de hierro hacían crujir la escalera. Era el <seg rend="italics">Tritón</seg>, que se echaba á la calle incapaz de permanecer entre cuatro paredes así que apuntaba la luz. Siguiendo las corrientes de la vida madrugadora llegaba al Mercado, deteniéndose ante los puestos de flores, donde era más numerosa la afluencia femenina.</p>
@@ -490,7 +540,7 @@
 				<p>Un secreto existía entre los dos. Ulises, que terminaba su bachillerato, asistía al mismo tiempo en el Instituto á los cursos de pilotaje. Dos años le bastaban para completar estos estudios. El tío le había facilitado las matrículas y los libros, recomendándolo además á uno de los profesores, antiguo compañero de navegación.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0264_chap3">
-				<head>III: PATER OCEANUS</head>
+				<head xml:id="ne0264_head_002">III: PATER OCEANUS</head>
 				<p>Cuando murió casi repentinamente don Esteban Ferragut, su hijo tenía diez y ocho años y estudiaba en la Universidad.</p>
 				<p>En sus últimos tiempos, el notario llegó á sospechar que Ulises no iba á ser el jurisconsulto célebre que él había soñado. Huía de las clases, para pasar la mañana en el puerto ejercitándose en el remo. Si entraba en la Universidad, los bedeles le vigilaban, temiendo la largura de sus manos. El se creía un marino, é imitaba á los hombres de mar, que, acostumbrados á medirse con los elementos, consideran poca cosa reñir con un hombre.</p>
 				<p>Con violentas alternativas de estudio y de holganza se aproximaba trabajosamente al término de su carrera, cuando una angina de pecho acabó de pronto con el notario.</p>
@@ -620,7 +670,7 @@
 				<p>Y durante muchos años, las mujeres que seguían la costa al anochecer apresuraron el paso, persignándose, al distinguir en las aguas obscuras un madero ó un paquete de algas. Temían que surgiese de pronto el <seg rend="italics">Tritón</seg>, barbudo, lúbrico, chorreante, volviendo de su correría por las misteriosas entrañas del mar.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0264_chap4">
-				<head>IV: FREYA</head>
+				<head xml:id="ne0264_head_003">IV: FREYA</head>
 				<p>El nombre de Ulises Ferragut empezó á ser famoso entre los capitanes de los puertos españoles. Las aventuras náuticas de su primera época entraban por muy poco en esta popularidad. Los más de ellos habían arrostrado mayores peligros, y si le apreciaban, era por el instintivo respeto que sienten los hombres enérgicos y simples ante una inteligencia que consideran superior. Sin otras lecturas que las de su carrera, hablaban con asombro de los numerosos libros que llenaban el camarote de Ferragut, muchos de ellos sobre materias que les parecían misteriosas. Algunos hasta hacían afirmaciones inexactas para completar el prestigio de su camarada:</p>
 				<p>—Sabe mucho... Además de marino, es abogado.</p>
 				<p>La consideración de su fortuna contribuía igualmente al aprecio general. Era accionista importante de la compañía naviera á la que prestaba sus servicios. Los compañeros calculaban con orgullosa exageración la riqueza de su madre, tasándola en millones.</p>
@@ -954,7 +1004,7 @@
 				<p>Y aunque Ferragut sentía la tentación de seguirla, permaneció inmóvil, viéndola alejarse con paso rápido, como si huyese de las palabras que había dejado caer ante el pequeño templo del poeta.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0264_chap5">
-				<head>V: EL ACUARIO DE NÁPOLES</head>
+				<head xml:id="ne0264_head_004">V: EL ACUARIO DE NÁPOLES</head>
 				<p>A pesar de su promesa, Freya no hizo nada para volver á encontrarse con el marino. «Nos veremos... Yo le buscaré.» Pero era Ferragut quien buscaba el encuentro, apostándose en las inmediaciones del hotel.</p>
 				<p>—¡Qué loca estuve la otra mañana!... ¡Qué habrá pensado usted de mí!—dijo ella la primera vez que volvieron á hablarse.</p>
 				<p>No todos los días conseguía Ulises el placer de esta conversación que se desarrollaba invariablemente desde la vía Partenope al monumento de Virgilio. Las más de las mañanas aguardaba en vano frente á los puestos de los ostricarios, escuchando á los músicos que saludaban con sus romanzas y sus mandolinas las ventanas cerradas de los hoteles. Freya no aparecía.</p>
@@ -1139,7 +1189,7 @@
 				<p>Y se dejó arrastrar por la caricia de fiera, con el pensamiento perdido y el cuerpo inerte y resignado, lo mismo que el náufrago que desciende y descienda las infinitas capas del abismo, sin llegar nunca al fondo.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0264_chap6">
-				<head>VI: LOS ARTIFICIOS DE CIRCE</head>
+				<head xml:id="ne0264_head_005">VI: LOS ARTIFICIOS DE CIRCE</head>
 				<p>Creyó después de este beso que sus otros deseos iban á realizarse inmediatamente. Lo más difícil del camino ya estaba andado. Pero con Freya había que esperar siempre algo absurdo é inconcebible.</p>
 				<p>El cañonazo del mediodía los sacó de su arrobamiento voluptuoso, que había durado unos segundos, largos como años. Los pasos del guardián, cada vez más próximos, acabaron por separar sus dos bustos y desenredar sus brazos.</p>
 				<p>Freya fué la primera en serenarse. Sólo un ligero humo quedó flotando en el fondo de sus pupilas, como si fuese el vaho del ardor recién extinguido.</p>
@@ -1504,7 +1554,7 @@
 				<p>—Yo soy alemana y...</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0264_chap7">
-				<head>VII: EL PECADO DE FERRAGUT</head>
+				<head xml:id="ne0264_head_006">VII: EL PECADO DE FERRAGUT</head>
 				<p>Al despertar Tòni todas las mañanas con las primeras luces del alba, experimentaba una sensación de sorpresa y desaliento.</p>
 				<p>—¡Todavía en Nápoles!—decía mirando por el ventano de su camarote.</p>
 				<p>Luego contaba los días. Diez iban transcurridos desde que el <seg rend="italics">Mare nostrum</seg>, terminadas sus reparaciones, había anclado en el puerto comercial.</p>
@@ -1948,7 +1998,7 @@
 				<p>Era su hijo el joven que había visto entrando en el <seg rend="italics">albergo</seg> cuando él marchaba á encargarse de la goleta para llevar combustible á los submarinos alemanes.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0264_chap8">
-				<head>VIII: EL JOVEN TELÉMACO</head>
+				<head xml:id="ne0264_head_007">VIII: EL JOVEN TELÉMACO</head>
 				<p>Siempre que el <seg rend="italics">Mare nostrum</seg> volvía á Barcelona, Esteban Ferragut experimentaba una sensación de deslumbramiento, lo mismo que si se abriese un glorioso ventanal en su existencia obscura y monótona de hijo de familia.</p>
 				<p>Ya no vagaba por el puerto, admirando de lejos los grandes trasatlánticos anclados frente al monumento de Colón ó los vapores de carga que se alineaban en los muelles comerciales. Un buque importante era de su absoluta propiedad por algunas semanas. El capitán y los oficiales pasaban el tiempo en tierra con sus familias. Tòni, el segundo, era el único que dormía á bordo. Muchos de los marineros solicitaban permiso para vivir en la ciudad, y el vapor quedaba confiado á la guarda del tío <seg rend="italics">Caragòl</seg>, con media docena de hombres para la diaria limpieza.</p>
 				<p>El pequeño Ferragut podía hacerse la ilusión de que era el capitán del <seg rend="italics">Mare nostrum</seg>. Se movía en el puente imaginándose que estaba arrostrando una gran tormenta; examinaba los instrumentos náuticos con una gravedad de experto conocedor; corría todos los departamentos habitables del buque, bajaba á las bodegas, que se aireaban, abiertas, en espera de carga, y finalmente se metía en el bote de servicio, desamarrándolo de la escala, para remar unas horas con más satisfacción que en los ligeros <seg rend="italics">yoles</seg> del Club de Regatas.</p>
@@ -2102,7 +2152,7 @@
 				<p>Un alarido... La gente corrió... Un hombre acababa de caer redondo, rebotando su cuerpo sobre la cubierta.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0264_chap9">
-				<head>IX: EL ENCUENTRO DE MARSELLA</head>
+				<head xml:id="ne0264_head_008">IX: EL ENCUENTRO DE MARSELLA</head>
 				<p>Tòni, que abominaba de los viajes en ferrocarril, por su entumecedora inmovilidad, tuvo que abandonar el <seg rend="italics">Mare nostrum</seg>, sufriendo el tormento de permanecer acoplado doce horas entre personas desconocidas.</p>
 				<p>Ferragut estaba enfermo en un hotel del puerto de Marsella. Le habían desembarcado de un buque francés procedente de Nápoles, sumido en doloroso mutismo. Quería morir. Durante el viaje le sometieron á una estrecha vigilancia para que no repitiese sus intentos de suicidio. Varias veces quiso arrojarse al agua.</p>
 				<p>Esto lo supo Tòni por el capitán de un vapor español que acababa de llegar de Marsella, precisamente un día después que los periódicos de Barcelona relataron la muerte de Esteban Ferragut en el torpedeamiento del <seg rend="italics">Californian</seg>. El viajante de comercio contaba en todas partes el suceso, y á continuación su novelesco encuentro con el padre, la caída mortal de éste al recibir la noticia, su desesperación cuando recobró el conocimiento.</p>
@@ -2399,7 +2449,7 @@
 				<p>Aquella misma tarde el <seg rend="italics">Mare nostrum</seg> salió de Marsella.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0264_chap10">
-				<head>X: EN BARCELONA</head>
+				<head xml:id="ne0264_head_009">X: EN BARCELONA</head>
 				<p>Cuatro meses después, el capitán Ferragut estaba en Barcelona.</p>
 				<p>Había hecho durante este tiempo tres viajes á Salónica, y en el segundo tuvo que comparecer ante un capitán de navío del ejército de Oriente. El marino francés estaba enterado de sus expediciones anteriores para el avituallamiento de las tropas aliadas; conocía su nombre, y le miró como un juez que se interesa por el acusado. Había recibido de Marsella un largo telegrama referente á Ferragut. Un espía sometido á la justicia militar le acusaba de haber trabajado en el aprovisionamiento de los submarinos alemanes.</p>
 				<p>—¿Qué hay de eso, capitán?...</p>
@@ -2708,7 +2758,7 @@
 				<p>—Deseo comer, tío <seg rend="italics">Caragòl</seg>—dijo alegremente—. Me contentaré con lo que haya... El susto me ha dado hambre.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0264_chap11">
-				<head>XI: "ADIÓS. VOY A MORIR"</head>
+				<head xml:id="ne0264_head_010">XI: "ADIÓS. VOY A MORIR"</head>
 				<p>Cuando Ferragut salió de Barcelona ya tenía casi cicatrizada la herida del hombro. Las negativas rotundas de él y su piloto á los interrogatorios de los carabineros le libraron de nuevas molestias. «No sabían nada; no habían visto nada.» El capitán acogió con fingida indiferencia la noticia de haber sido encontrado en la misma noche el cadáver de un hombre, al parecer alemán, pero sin papeles, sin nada que permitiese su identificación, en un muelle algo lejano del lugar que ocupaba el <seg rend="italics">Mare nostrum</seg>. Las autoridades no consideraron necesario averiguar más, clasificando el hecho como una simple pelea entre refugiados.</p>
 				<p>El servicio de aprovisionamiento de las tropas de Oriente hizo navegar á Ferragut en los meses sucesivos formando parte de un convoy. Un despacho cifrado le llamaba unas veces á Marsella, otras á un puerto atlántico: Saint-Nazaire, Quiberón ó Brest.</p>
 				<p>Iban llegando con pocos días de separación vapores de diversas clases y nacionalidades. Los había que delataban su origen aristocrático en las líneas finas de la proa, la esbeltez de las chimeneas y el color todavía blanco de los pisos superiores. Eran iguales á los corceles de gran precio que la guerra había transformado en simples caballos de batalla. Antiguos buques-correos, veloces carreristas de las olas, se veían descendidos á la vil servidumbre de barcos de transporte. Otros, negros y sucios, con pegotes de apresurada reparación y una chimenea tísica sobre su casco enorme, avanzaban tosiendo humo, escupiendo ceniza, jadeando con ruidos de hierro viejo. Las banderas de los aliados y las de las marinas neutrales ondeaban en las diversas popas.</p>
@@ -3073,7 +3123,7 @@
 				<p>—Esa Freya Talberg—continuó—ha hecho hablar bastante de su persona. Parece que es una mujer <seg rend="italics">chic</seg>: una especie de dama de novela. Muchos protestan de que no la hayan ejecutado aún. Es triste tener que matar á una persona de su sexo. ¡Matar á una mujer, y además una mujer hermosa!... Pero sin embargo, resulta preciso... Creo que la fusilarán de un momento á otro.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0264_chap12">
-				<head>XII: ¡ANFITRITA!... ¡ANFITRITA!</head>
+				<head xml:id="ne0264_head_011">XII: ¡ANFITRITA!... ¡ANFITRITA!</head>
 				<p>El <seg rend="italics">Mare nostrum</seg> hizo otro viaje de Marsella á Salónica.</p>
 				<p>Buscó en vano Ferragut antes de partir nuevas noticias de Freya en los periódicos de París. Varios sucesos distrajeron por unos días la atención pública, y la espía quedó momentáneamente olvidada.</p>
 				<p>Al llegar á Salónica hizo discretas preguntas á sus amigos militares y marinos en los cafés del puerto. Casi todos desconocían el nombre de Freya Talberg. Los que lo habían leído en los diarios contestaban con indiferencia.</p>
@@ -3324,7 +3374,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN</head>
+				<head xml:id="ne0264_head_012">FIN</head>
 				<p>París.—Agosto-Diciembre 1917.</p>
 
 			</div>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La maja desnuda</title>
-				<title type="sub"></title>
+				
 				<title type="short">Maja</title>
-				<title type="idno">
-					<idno type="bne">XX1892712</idno>
-					<idno type="viaf">218115915</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1683</measure>
@@ -141,13 +131,51 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0259</idno>
+						<idno type="cligs">ne0259</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2013">2013</date>, <idno>43030</idno>, <ref target="http://www.gutenberg.org/ebooks/43030"/>.</bibl>
-				<bibl type="print-source">Sempere y Compañia, Valencia, <date when="1909">1909</date></bibl>
-				<bibl type="edition-first"><date when="1906">1906</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La maja desnuda</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892712.html">XX1892712</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/218115915/">218115915</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5967250/">Q5967250</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4576877-8">4576877-8</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2013">2013</date>, <idno>43030</idno>, <ref target="http://www.gutenberg.org/ebooks/43030"/>.</bibl>
+					<bibl type="print-source">Sempere y Compañia, <pubPlace>Valencia</pubPlace>, <date when="1909">1909</date></bibl>
+					<bibl type="edition-first"><date when="1906">1906</date><idno source="k10plus" type="ppn" n="646214586" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=646214586"/><idno source="k10plus" type="ppn" n="226411885" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226411885"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La maja desnuda</title>: 	<title type="sub">(novela)</title> <date when="1906">1906</date>, <publisher>Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="646214586" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=646214586"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La maja desnuda</title>: 	<title type="sub">novela</title> <date when="1906">1906</date>, <publisher>Ed. Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="226411885" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226411885"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Maja desnuda</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1136758704" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1136758704"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La maja desnuda</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="269393943" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269393943"/> </bibl>
+						<bibl type="further-edition"><title type="main">La maja desnuda</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="083730737" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083730737"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La maja desnuda</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464368820" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464368820"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La maja desnuda</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226412466" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226412466"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Maja desnuda</title> <date when="1998">1998</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1605861162" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1605861162"/> 		<idno type="isbn" n="8437616654"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479518379" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479518379"/> 		<idno type="isbn" n="9788496452985"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega. La horda. La maja desnuda. Sangre y arena</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="647447312" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=647447312"/> 		<idno type="isbn" n="9788496452541"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -158,6 +186,14 @@
 				<p>En palabras del mismo Blasco Ibáñez: Renovales, es «simplemente la personificación del deseo humano, este pobre deseo que, en realidad, no sabe lo que quiere, voluble y eternamente insatisfecho. Cuando, por fin, obtenemos lo que deseamos, no nos parece suficiente. "Más, quiero más", decimos. Si perdemos algo que nos vuelve la vida insoportable, de inmediato lo deseamos volver a tener como indispensable para nuestra felicidad. Así somos: pobres niños ilusos que llorábamos ayer por lo que despreciamos hoy y desearemos mañana, pobres seres engañados circulando por la vida en las alas icarianas del capricho».</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -190,7 +226,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela prototípica</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela sicológica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -219,6 +255,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -226,9 +263,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>PRIMERA PARTE</head>
+				<head xml:id="ne0259_head_000">PRIMERA PARTE</head>
 				<div n="1" type="chapter" xml:id="ne0259_chap1">
-					<head>I</head>
+					<head xml:id="ne0259_head_001">I</head>
 					<p>Eran las once de la mañana cuando Mariano Renovales llegó al Museo del Prado. Algunos años iban transcurridos sin que el famoso pintor entrase en él. No le atraían los muertos: muy interesantes, muy dignos de respeto, bajo la gloriosa mortaja de los siglos, pero el arte marchaba por nuevos caminos y no era alli donde él podía estudiar, á la falsa luz de las claraboyas, viendo la realidad á través de otros temperamentos. Un pedazo de mar, una ladera de monte, un grupo de gente desarrapada, una cabeza <seg rend="italics">expresiva</seg>, le atraían más que aquel palacio de amplias escalinatas, blancas columnas y estatuas de bronce y alabastro, solemne panteón del arte, donde titubeaban los neófitos, en la más estéril de las confusiones, sin saber qué camino seguir.</p>
 					<p>El maestro Renovales detúvose unos instantes al pie de la escalinata. Contemplaba con cierta emoción—como se contempla después de larga ausencia los lugares de la juventud—la hondonada que da acceso al palacio, con sus declives de césped fresco, adornados á trechos por débiles arbolillos. En lo alto de estos desmontes, la antigua iglesia de los Jerónimos, de gótica mampostería, marcaba sobre el espacio azul sus torres gemelas y sus arcadas ruinosas. El invernal ramaje del Retiro servia de fondo á la blanca masa del Casón. Renovales pensó en los frescos de Giordano que adornaban sus techos interiores. Después se fijó en un edificio de muros rojos y portada de piedra que cerraba el espacio pretenciosamente, en primer término, al borde de la pendiente verdosa. ¡Puá! ¡La Academia! Y el gesto despreciativo del artista encerró en una misma repugnancia la Academia de la Lengua y las demás Academias; la pintura, la literatura, todas las manifestaciones del pensamiento, amojamadas y agarrotadas, con una inmortalidad de momia, en los vendajes de la tradición, las reglas y el respeto á los precedentes.</p>
 					<p>Una ráfaga de viento helado agitó las haldas de su gabán, sus barbas luengas y algo canosas y el ancho fieltro, bajo cuyos bordes asomaban los mechones de una melena, escandalosa en su juventud, que había ido disminuyéndose con prudentes recortes, conforme ascendía el maestro, adquiriendo fama y dinero.</p>
@@ -293,7 +330,7 @@
 					<p>—¡La maja de Goya!... ¡La maja desnuda!...</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0259_chap2">
-					<head>II</head>
+					<head xml:id="ne0259_head_002">II</head>
 					<p>Al recordar Mariano Renovales los primeros años de su vida, su sensibilidad, siempre exquisita para las impresiones exteriores, evocaba un incesante choque de martillos. Desde que asomaba el sol hasta que la tierra comenzaba á entenebrecerse con la penumbra del crepúsculo, cantaba el hierro ó gemía en el suplicio del yunque, haciendo temblar las paredes de la casa y el piso del alto cuartucho donde Mariano jugueteaba, tendido en el suelo, junto á los pies de una mujer pálida, enfermiza, de ojos graves y profundos, la cual dejaba con frecuencia su costura para besar al pequeño con repentina vehemencia, como si temiese no verle más.</p>
 					<p>Aquellos martillos incansables, que habían acompañado el nacimiento de Mariano, le hacían saltar de la cama apenas apuntaba el día y bajar á la fragua para calentarse junto al incandescente fogón. Su padre, un cíclope bondadoso, velludo, tiznado de negro, iba de un lado á otro revolviendo hierros, manejando limas, dando órdenes á sus ayudantes con fuertes gritos, para que pudiesen oirle en el estrépito del martilleo. Dos mocetones despechugados braceaban jadeantes sobre el yunque, y el hierro, unas veces rojo y otras dorado, saltaba en chorros luminosos, se esparcía en ramilletes crepitantes, poblaba el negro ambiente de la fragua de un enjambre de moscas de fuego que iban á morir, apagadas y negras, en el hollín de los rincones.</p>
 					<p>—Cuidado, pequeño—decía el padre abarcando su cabeza tierna de pelos finos y ensortijados con una de sus manazas.</p>
@@ -409,7 +446,7 @@
 					<p>—Te adoro, Josefina. Eres hermosa como Venus. No: Venus, no. Es fría y reposada como una diosa, y tú eres una mujer. Pareces... ¿qué es lo que pareces?... Sí; te veo igual. Eres la majita de Goya, con su gracia delicada, con su seductora pequeñez... ¡Eres la maja desnuda!</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0259_chap3">
-					<head>III</head>
+					<head xml:id="ne0259_head_003">III</head>
 					<p>La vida de Renovales fué otra. Enamorado de su mujer, temiendo que ésta notase alguna falta en su bienestar y pensando con cierta inquietud en aquella viuda de Torrealta, que podía quejarse de que la hija del «ilustre diplomático, de imperecedero recuerdo», no era feliz, por haber descendido á unirse con un pintor, trabajaba tenazmente para mantener con el pincel las comodidades de que había rodeado á Josefina.</p>
 					<p>Él, que tanto había despreciado el arte <seg rend="italics">industrial</seg>, la pintura por dinero á que se entregaban sus camaradas, imitó á éstos, pero con la vehemencia que ponía en todas sus empresas. En ciertos estudios levantó gritos de protesta este competidor incansable que abarataba escandalosamente los precios. Había vendido su pincel, por un año, á uno de aquellos mercaderes judíos que exportaban pintura al extranjero; á tanto la pieza, y con prohibición absoluta de pintar para otro comerciante. Renovales trabajaba de la mañana á la noche, cambiando de asuntos cuando así lo exigía aquel que llamaba su empresario. «Basta de <seg rend="italics">chocharos</seg>: ahora moros.» Después los moros perdían su valor en el mercado y entraban en tanda los mosqueteros en gallardo duelo, los pastorcillos sonrosados á lo Wateau ó las damas de cabello empolvado, embarcándose en una góndola de oro al son de cítaras. Para refrescar el surtido, intercalaba una escena de sacristía con gran alarde de casullas bordadas é incensarios dorados, ó alguna bacanal, imitando de memoria y sin modelo las voluptuosas redondeces y las carnes de ámbar del Ticiano. Cuando se acababa el catálogo, los <seg rend="italics">chocharos</seg> volvían á estar de moda, y otra vez á empezar. El pintor, con su extraordinaria facilidad de ejecución, producía dos ó tres cuadritos por semana. El empresario, para animarle en su trabajo, le visitaba muchas tardes, siguiendo la marcha de su pincel con el entusiasmo del que cuenta el arte á tanto el palmo y la hora. Sus noticias eran para infundir nuevos ánimos.</p>
 					<p>La última bacanal pintada por Renovales estaba en un <seg rend="italics">bar</seg> elegante de Nueva York. Su procesión de los Abruzos la tenían en uno de los castillos más nobles de Rusia. Otro cuadro, representando una danza de marquesas disfrazadas de pastorcillas, sobre una pradera de violetas, lo guardaba en Francfort un barón judío y banquero... El mercader se frotaba las manos, hablando al artista con aire protector. Su nombre iba creciendo gracias á él, que no pararía hasta crearle una reputación universal. Ya le escribían sus corresponsales pidiendo que sólo enviase obras del <seg rend="italics">signore Renovales</seg>, pues eran las que se movían mejor en el mercado. Pero Mariano le contestaba con un estallido brusco de su amargura de artista. Todos aquellos lienzos eran porquerías. Si el arte fuera esto, preferiría picar piedra en una carretera.</p>
@@ -559,7 +596,7 @@
 					<p>La vida del maestro Renovales era un infierno, cuando poseía ya la gloria y la riqueza, con las que había soñado tantos años, cifrando en ellas su felicidad.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0259_chap4">
-					<head>IV</head>
+					<head xml:id="ne0259_head_004">IV</head>
 					<p>Eran las tres de la tarde cuando el ilustre pintor volvió á su casa después del almuerzo con el húngaro.</p>
 					<p>Al entrar en el comedor, antes de dirigirse al estudio, vió á dos mujeres que, con el sombrero puesto y el velillo ante el rostro, parecían disponerse á salir. Una de ellas, tan alta como el pintor, se arrojó á su cuello con los brazos abiertos.</p>
 					<p>—Papá, papaíto, te hemos esperado hasta cerca de las dos. ¿Has almorzado bien?...</p>
@@ -663,7 +700,7 @@
 					<p>El maestro le empujó por una puerta que daba al jardín. Después, al quedar solo, corrió á colocarse ante un viejo espejo veneciano, contemplándose un instante en su luna azulada y profunda, alisándose con los dedos la crespa y encanecida cabellera.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0259_chap5">
-					<head>V</head>
+					<head xml:id="ne0259_head_005">V</head>
 					<p>Entró con gran estrépito de blondas y sedas, acompañado su menudo paso por el <seg rend="italics">fru-fru</seg> de las ropas interiores, esparciendo un perfume de variadas esencias, semejante á la respiración de exótico jardín.</p>
 					<p>—Buenas tardes, <seg rend="italics">mon cher maître</seg>.</p>
 					<p>Mirándole con sus impertinentes de concha, pendientes de una cadena de oro, adquiría el ámbar gris de sus ojos, al través de los vidrios, una fijeza insolente, un gesto extraño, con algo de caricia y burla al mismo tiempo.</p>
@@ -767,7 +804,7 @@
 					<p>—Te envidio, <seg rend="italics">cherie</seg>. Tú, al menos, eres feliz: has encontrado un marido que te adora... Maestro, cuídela usted mucho: mímela para que se ponga buena y guapa... Cuídela usted, ó reñiremos.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0259_chap6">
-					<head>VI</head>
+					<head xml:id="ne0259_head_006">VI</head>
 					<p>Renovales acabó de leer en la cama, según su costumbre los periódicos de la noche, y antes de apagar la luz miró á su mujer.</p>
 					<p>Estaba despierta. Sobre los embozos de la cama vió sus ojos desmesuradamente abiertos, fijos en él con una tenacidad hostil, y los rabitos de su pobre cabellera, que se escapaban lacios y tristes por entre las blondas de la gorra de noche.</p>
 					<p>—¿No duermes?—preguntó el pintor con una entonación cariñosa, en la que había algo de inquietud.</p>
@@ -853,9 +890,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>SEGUNDA PARTE</head>
+				<head xml:id="ne0259_head_007">SEGUNDA PARTE</head>
 				<div n="7" type="chapter" xml:id="ne0259_chap7">
-					<head>I</head>
+					<head xml:id="ne0259_head_008">I</head>
 					<p>Al llegar la primavera, López de Sosa, el «intrépido <seg rend="italics">sportman</seg>», según le llamaba Cotoner, presentábase todas las tardes en el hotel de Renovales.</p>
 					<p>Fuera de la verja quedaba el automóvil de cuarenta caballos, su última adquisición, de la que hablaba con orgullo; un vehículo enorme, charolado de verde, que avanzaba y retrocedía bajo la mano del <seg rend="italics">chauffeur</seg>, mientras el dueño cruzaba el jardín de la casa del pintor.</p>
 					<p>Renovales le veía entrar en su estudio, vestido de azul, con una gorra de visera brillante sobre los ojos, afectando el aire resuelto de un marino ó de un explorador.</p>
@@ -913,7 +950,7 @@
 					<p>—Oye: si Josefina te pregunta adónde voy, no digas nada... Ya sé que eres discreto, pero ella es de cuidado. Te digo esto para evitarme explicaciones. Las dos no se llevan bien... ¡Cosas de mujeres!</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0259_chap8">
-					<head>II</head>
+					<head xml:id="ne0259_head_009">II</head>
 					<p>Al principio de la primavera, cuando Madrid creía de buena fe haber entrado en la buena estación y los impacientes sacaban á luz sus sombreros veraniegos, volvió inesperadamente el invierno con un retroceso traidor, entenebreciendo el cielo, cubriendo con una sábana de nieve la tierra resquebrajada por el calor solar, los jardines en los que apuntaban las hojas de la vegetación primaveral y se esparcían las primeras flores.</p>
 					<p>La chimenea volvió á encenderse en el salón de la de Alberca, buscando su calor todos los señores que formaban su tertulia los días en que la «ilustre condesa» se <seg rend="italics">quedaba en casa</seg>, no teniendo reunión que presidir ni visitas que hacer.</p>
 					<p>Renovales, al llegar una tarde, habló con entusiasmo del aspecto que ofrecía la Moncloa cubierta de nieve. Venía de allá; un hermoso espectáculo; el bosque, sumido en el silencio invernal, sorprendido por el blanco sudario, cuando comenzaba á crujir con el primer hervor de la savia. ¡Lástima que la manía fotográfica poblase el bosque de tantos buenos señores, que iban de una parte á otra con sus maquinillas, ensuciando la pureza de la nieve!</p>
@@ -1049,7 +1086,7 @@
 					<p>Estaba decidido. Huiría de aquella mujer. No la vería más.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0259_chap9">
-					<head>III</head>
+					<head xml:id="ne0259_head_010">III</head>
 					<p>Y no la vió; no la vió en dos días. Pero al tercero llegó á sus manos una cartita azul, de sobre prolongado, saturada de un fuerte perfume que tenia la virtud de estremecerle.</p>
 					<p>La condesa se quejaba de su ausencia con cariñosos lamentos. Necesitaba verle, tenía que decirle muchas cosas. Una verdadera carta de amor, que el artista se apresuró á ocultar, temiendo que su lectura hiciera suponer lo que no era cierto aún.</p>
 					<p>Renovales se mostró indignado.</p>
@@ -1151,7 +1188,7 @@
 					<p>«Es inútil, buen hombre. Estás loco por ella, la sigues, pero ella es para otros. La conozco bien... Todo lo sé. ¡Ay! ¡Cómo ríen las gentes de ti! ¡Cómo me río yo!... ¡Cómo te desprecio!»</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0259_chap10">
-					<head>IV</head>
+					<head xml:id="ne0259_head_011">IV</head>
 					<p>Á principios del verano se verificó la boda de la hija de Renovales con el elegante López de Sosa. Los periódicos publicaron columnas enteras hablando de este acontecimiento, por el cual, según la expresión de ciertos cronistas, «se unía la gloria y el esplendor del arte con el prestigio de la aristocracia y la fortuna». Nadie se acordaba ya del apodo de <seg rend="italics">Bonito en escabeche</seg>.</p>
 					<p>El maestro Renovales hizo bien las cosas. No tenía más que una hija y deseaba casarla con regio aparato; que Madrid y España entera se enterasen de este suceso, cayendo sobre Milita un rayo de la gloria conquistada por su padre.</p>
 					<p>La lista de los regalos fué grande. Todas las amistades del maestro, elegantes damas, próceres de la política, artistas famosos y hasta personas reales, figuraron en ella con su correspondiente obsequio. Había para llenar una tienda. Los dos estudios de honor quedaron convertidos en galerías de bazar, con interminables mesas cargadas de objetos; una exposición de telas y dijes, visitada por todas las amigas de Milita, aun las más lejanas y olvidadas, que venían á felicitarla con palidez de envidia.</p>
@@ -1253,7 +1290,7 @@
 					<p>—Marianito, maestro del alma... Te amo, te admiro. Seré tu esclava... No me dejes nunca... Te buscaría de rodillas... Tú no sabes cómo voy á quererte... No te me escaparás: tú lo has querido... pintor de mis entrañas... feo adorable... gigantón... ídolo mío.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0259_chap11">
-					<head>V</head>
+					<head xml:id="ne0259_head_012">V</head>
 					<p>Una tarde, á fines de Octubre, Renovales notó en su amigo Cotoner cierta inquietud.</p>
 					<p>El maestro bromeaba con él, haciéndole relatar sus trabajos de restaurador en el antiguo templo. Había vuelto más grueso, más alegre, con cierto lustre grasoso y sacerdotal. Se había traído, según decía Renovales, toda la salud de los canónigos. La mesa del obispo, con sus abundancias suculentas, era un dulce recuerdo para Cotoner. La ensalzaba y la describía, elogiando á aquellos buenos señores que, como él, vivían exentos de pasiones, sin otra voluptuosidad que la de una refinada nutrición. El maestro reíase imaginando la sencillez de los sacerdotes que por las tardes, después del coro, formaban grupo ante el andamio de Cotoner, siguiendo con admiración la labor de sus manos; el respeto de los familiares y demás gente palaciega, pendiente de los labios de don José, asombrados de tanta sencillez en un artista que era amigo de los cardenales y había hecho sus estudios nada menos que en Roma.</p>
 					<p>Al verle el maestro aquella tarde, grave y silencioso después del almuerzo, quiso saber cuál era su preocupación. ¿Se habían quejado de sus restauraciones? ¿Ya no le quedaba dinero?... Cotoner movió su cabeza. No era asunto suyo. Le preocupaba el estado de Josefina. ¿No se fijaba en ella?...</p>
@@ -1350,9 +1387,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>TERCERA PARTE</head>
+				<head xml:id="ne0259_head_013">TERCERA PARTE</head>
 				<div n="12" type="chapter" xml:id="ne0259_chap12">
-					<head>I</head>
+					<head xml:id="ne0259_head_014">I</head>
 					<p>Hasta principios del invierno siguiente, no volvió Renovales á Madrid. La muerte de su mujer le dejó estupefacto, como si dudase de su realidad, como si sintiera extrañeza al contemplarse solo y dueño de sus acciones. Cotoner, viéndole sin deseos de trabajar, tendido en los divanes del estudio, con un gesto vago, cual si soñase despierto, interpretaba su estado como un inmenso dolor sordo y silencioso. Además, le molestaba que la condesa, apenas muerta Josefina, frecuentase el hotel para visitar al ilustre maestro y á su querida Milita.</p>
 					<p>—Debes irte—aconsejaba el viejo artista.—Eres libre; lo mismo vivirás en cualquier parte que aquí. Te conviene un viaje largo: eso te distraerá.</p>
 					<p>Y Renovales emprendió su viaje con la alegría de un estudiante, libre por vez primera de la vigilancia de la familia. Solo, rico y dueño de sus actos, se creyó el ser más feliz de la tierra. Su hija tenía á su marido, formaba familia aparte; él se veía en grato aislamiento, sin preocupaciones, sin deberes, sin otros lazos que los dulcísimos de aquellas cartas interminables de Concha, que le salían al encuentro en su viaje. ¡Oh, libertad feliz!...</p>
@@ -1429,7 +1466,7 @@
 					<p>—¡Un horror, hija mía! ¡Una lata insufrible!</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0259_chap13">
-					<head>II</head>
+					<head xml:id="ne0259_head_015">II</head>
 					<p>Apenas despertó al día siguiente, el maestro Renovales sintió un deseo imperioso de aire libre, de luz, de espacios ilimitados, y salió del hotel, no parando en su paseo, Castellana arriba, hasta llegar á los desmontes vecinos al palacio de la Exposición.</p>
 					<p>La noche anterior había comido en casa de la de Alberca; un banquete casi de ceremonia, en celebración de su ingreso académico, con asistencia de muchos de los graves señores que formaban la tertulia de la condesa. Ésta se había mostrado radiante de alegría, como si festejase un triunfo suyo. El conde trataba con mayores respetos al ilustre maestro, cual si acabase de dar el paso más grande en su fama artística. Su respeto por todas las glorias decorativas le bacía admirar aquella medalla de académico, única distinción que él no podía unir á su carga de condecoraciones.</p>
 					<p>Renovales pasó una mala noche. El Champagne de la condesa fué triste para él. Había vuelto á su casa con cierto temor, como si en ella le esperase algo anormal que su inquietud no podía definir. Se despojó del traje de ceremonia que le había atormentado varias horas, y se metió en la cama, extrañándose del vago temor que le acompañó hasta los umbrales de su casa. Nada veía de extraordinario en torno de él; su cuarto ofrecía el mismo aspecto de todas las noches. Se durmió, vencido por el cansancio, por la torpeza digestiva de aquel banquete extraordinario, y no despertó en toda la noche; pero su sueño fué cruel, interminable, cortado por visiones que tal vez le habían hecho gemir.</p>
@@ -1527,7 +1564,7 @@
 					<p>—¡Josefina! ¡Josefina!</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0259_chap14">
-					<head>III</head>
+					<head xml:id="ne0259_head_016">III</head>
 					<p>Una mañana el maestro llamó con gran urgencia á Cotoner, y éste se presentó, mostrándose alarmado por los términos del aviso.</p>
 					<p>—No es nada grave—dijo Renovales.—Necesito que me digas dónde fué enterrada Josefina. Quiero verla.</p>
 					<p>Era un deseo que se había formado lentamente en su pensamiento durante varias noches; un capricho de las interminables horas de insomnio que arrastraba en la obscuridad.</p>
@@ -1624,7 +1661,7 @@
 					<p>Renovales la llevaba en su interior; la contemplaba sólo con recogerse en su pensamiento. Nadie podía conocerla mejor que él. Los demás la tenían olvidada. Así la veía... y así había sido.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0259_chap15">
-					<head>IV</head>
+					<head xml:id="ne0259_head_017">IV</head>
 					<p>La condesa de Alberca logró introducirse una tarde en el estudio del maestro.</p>
 					<p>La vió llegar el criado, como otras veces, en un coche de alquiler, atravesar el jardín, subir las escaleras del vestíbulo y entrar en el recibimiento, con un paso agitado de mujer resuelta que marcha ante ella rectamente y sin vacilación. Intentó cerrarle el paso con respeto, yendo de un lado á otro, saliéndola al encuentro cada vez que avanzaba ladeándose para burlar este obstáculo. ¡El señor trabajaba! ¡El señor no recibía! ¡Era una orden severa y sin excepción!... Pero ella siguió adelante, con el ceño duro, una luz de fría cólera en los ojos, una resolución manifiesta de abofetear al criado si era preciso, de pasar por encima de su cuerpo.</p>
 					<p>—Vamos, buen hombre, apártese usted.</p>
@@ -1737,7 +1774,7 @@
 					<p>Y el triste maestro agrandaba con el pensamiento el último fantasma de su deseo; colgaba de la imagen amada de la muerta todos los delirios de su imaginación, deseando infundirla nueva vida con una parte de la suya. Cogía á puñados el barro del pasado, la masa del recuerdo, para hacerla más grande, ¡muy grande! que ocupara todo el camino, que cerrase el horizonte como un cerro inmenso, que ocultase hasta el último instante el lóbrego desfiladero término de la jornada.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0259_chap16">
-					<head>V</head>
+					<head xml:id="ne0259_head_018">V</head>
 					<p>La conducta del maestro Renovales fué motivo de extrañeza, y hasta de escándalo, para todos sus amigos.</p>
 					<p>La condesa de Alberca mostraba especial cuidado en hacer saber á todos que no la unían con el pintor otras relaciones que las de una amistad cada vez más glacial y ceremoniosa.</p>
 					<p>—Está loco—decía.—Es un hombre acabado. No queda de él más que un recuerdo de lo que fué.</p>

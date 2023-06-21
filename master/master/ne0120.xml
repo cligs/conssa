@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El primer loco</title>
-				<title type="sub"></title>
+				
 				<title type="short">Loco</title>
-				<title type="idno">
-					<idno type="bne">bimo0000177647</idno></title>
+				
 				<author>
-					<idno type="bne">XX881851</idno>
-					<idno type="viaf">51711491</idno>
-					<name type="short">RdCastro</name>
-					<name type="full">Rosalía de Castro</name>
+					<name type="short" ref="#RdCastro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">400</measure>
@@ -139,13 +131,35 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0120</idno>
+						<idno type="cligs">ne0120</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, <date></date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/el-primer-loco--0/"/>, <ref target="http://www.cervantesvirtual.com/obra/el-primer-loco--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Imp. y librería de Moya y Plaza, <date when="1881">1881</date></bibl>
-				<bibl type="edition-first"><date when="1881">1881</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El primer loco</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0000177647.html">bimo0000177647</idno>
+				</idno>
+				</title>
+					<author xml:id="RdCastro">
+						<name type="full"><forename>Rosalía</forename> <surname>de Castro</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9410 - IO 9411">IO 9410 - IO 9411</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118935267">118935267</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q464264/">Q464264</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX881851.html">XX881851</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/51711491/">51711491</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, <date/>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/el-primer-loco--0/"/>, <ref target="http://www.cervantesvirtual.com/obra/el-primer-loco--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Imp. y librería de Moya y Plaza, <date when="1881">1881</date></bibl>
+					<bibl type="edition-first"><date when="1881">1881</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +170,14 @@
 				<p>Cuando termina de contar las historias a Pedro, aparecen Berenice, embarazada, y su marido por el monasterio. Luis ataca a Berenice y a su marido fuera de control, pero consiguen controlarle. Berenice pierde al niño al poco tiempo. Luis muere delirando.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9410" key="IO 9410" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -168,7 +190,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">realista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -181,8 +203,8 @@
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="3">sentimental</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
@@ -209,6 +231,7 @@
 		<revisionDesc>
 			<change when="2015-10-21" who="#jct">Initial TEI version.</change>
 			<change when="2016-03-07" who="#jct">Corrected after reading it as eBook. Also put the character » at the beginning of those paragraph that are part of the saying of one of the characters..</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -216,7 +239,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0120_chap1">
-				<head>Capítulo I</head>
+				<head xml:id="ne0120_head_000">Capítulo I</head>
 				<p>-¡Ya puedo respirar libremente... ya me encuentro en mi verdadera atmósfera! Sólo aquí, en este lugar de mis predilecciones, en mi quinta abacial, tan llena de encantos y de misterio, puedo calmar en parte la inquietud que me devora el alma... ¡pero, qué inquietud, Dios mío!</p>
 				<p>-¿Tu quinta has dicho...? Nunca he sabido...</p>
 				<p>-Sí, Pedro; tiempo hace ya que este hermoso retiro, con sus verdes frondas, su claustro y su silencio me pertenece de derecho. Espero que muy pronto ha de pertenecerme también de hecho, a no ser que la adversidad o el destino hayan dispuesto otra cosa.</p>
@@ -393,7 +416,7 @@
 				<p>-No, no... repuso éste... siento hoy un cruel placer en recordar todo aquello, y voy a proseguir.. es una historia al parecer muy extrañar la que te cuento... escucha.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0120_chap2">
-				<head>Capítulo II</head>
+				<head xml:id="ne0120_head_001">Capítulo II</head>
 				<p>En efecto, como el que gozase en arrancarse las propias entrañas, Luis, con acento cada vez más expresivo y conmovedor, prosiguió hablando de esta manera:</p>
 				<p>»-Usted está hechizado -me dijo una mañana la amiga de Berenice, acercándoseme en el claustro de la catedral, en donde agobiado por la tristeza me paseaba oyendo resonar a lo lejos el órgano, mientras leía como en libro consolador los epitafios de las sepulturas que iba pisando con mis pies-. Usted tiene en sí un maleficio, añadió, y es fuerza que le venzamos. Hace tiempo que me han autorizado para ello, y al fin veo que es necesario llevar a cabo obra tan meritoria. ¿A qué proseguir soñando y consumiéndose por lo que para usted es menos que una sombra? <seg rend="italic">Ella</seg> no era capaz de amar, ni comprendió nunca el verdadero significado de esa palabra.</p>
 				<p>»Y como notase que tan amargas aseveraciones me hacían un daño tal que se traslucía en mi rostro de una manera harto clara la dolorosa sorpresa y el desagrado que me causaban, prosiguió diciéndome con cariñosa severidad.</p>
@@ -478,7 +501,7 @@
 				<p>»-¿Cómo estamos? -me preguntó algún tiempo después el buen fraile-. ¿Vamos mejorando? Porque si el mal persistiese -añadió- (y se me antoja que sí) volveríamos <seg rend="italic">contra ellos</seg> con todo el poder que el Señor nos ha otorgado. Haylos, sin embargo, tenaces, y que se resisten (quizá obedeciendo a altos designios de la Providencia) a abandonar su presa, aun cuando se usen con ellos remedios supremos. En este caso, amigo mío, es fuerza resignarse, como a un castigo que acaso merecemos, al mal que nos aqueja; porque no se pueden contrarrestar las corrientes que vienen de lo alto, y lo único que resta que hacer al enfermo es ponerse a bien con el Todopoderoso, hacer vida ejemplar y esperar humildemente la muerte, ya que, con maleficios o sin ellos, nadie ha de verse libre de sus garras.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0120_chap3">
-				<head>Capítulo III</head>
+				<head xml:id="ne0120_head_002">Capítulo III</head>
 				<p>»Proseguí, sin embargo, volviendo al bosque, pues como cosa de milagro tornara a familiarizarme con cuanto allí había sido en otro tiempo grato a mi corazón. Tras de las locuras a que solía entregarme en la ciudad, venía aquí, como quien dice, a reparar mis fuerzas y a saborear el recuerdo de mis abominaciones y venganzas. Bajo la sombra de estos robles hallaba siempre a Esmeralda, que me salía al paso los primeros días en que nos conocimos para preguntarme cómo iba de mi herida y después por el estado de mi salud; porque aquella pobrecilla se había empeñado en creerme enfermo a pesar de que nunca me oyó quejar de cosa alguna.</p>
 				<p>»Me parece haberte dicho que me había vuelto repentinamente poco menos que perverso. Tan cambiado y tan fuera del centro en que había vivido me encontraba que me desconocía a mí mismo. No acertaría, por lo tanto, a explicarte cómo dejé que Esmeralda llegase hasta mí, ni que maneras y lenguaje pude emplear con aquella muchacha que no parecía campesina ni por lo delicado de su belleza, ni por el señorío de sus maneras, ni por la calidad de sus sentimientos. Lo que sí comprendí desde luego, pues era como vaso en que todo se transparentaba, fue que sentía hacia mí una de esas atracciones fatales que nos llevan tras de un ser dado, como la corriente lleva a la hoja marchita hacia el mar, y el viento la arista hacia el río.</p>
 				<p>»Hasta ignoro la hora y el día en que empecé a hacerla cómplice de mis iniquidades, porque el estado de sobreexcitación en que me encontraba era de esos que no nos permiten recordar los casi irreflexivos actos a que se entrega el hombre a quien las furias infernales tocaron con sus manos. Como aquellos a quienes la embriaguez producida por la cerveza sume en un estado de sombría exaltación, poseíame de continuo secreta saña contra todo ser viviente, siendo aquella en quien me vengaba con mayor crueldad de mis no interrumpidas decepciones la pobre y enamorada niña que, recordándome a Berenice, enconaba mis heridas tornándome duro, extravagante y brutal con ella.</p>
@@ -558,7 +581,7 @@
 				<p>-No; esto no es mentira en absoluto -se decía-, sintiendo que un sudor glacial inundaba su cuerpo. ¡Hay aquí algo de verdadero que me hace temer y creer en cosas que antes no creía...!</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0120_chap4">
-				<head>Capítulo IV</head>
+				<head xml:id="ne0120_head_003">Capítulo IV</head>
 				<p>Pasado breve rato, en un tono que cada vez tenía más de vago y fantástico que de real, pero que resonaba en los oídos de Pedro de una manera tal que le hacía estremecerse, Luis prosiguió diciendo:</p>
 				<p>-Tras de la muerte de aquella niña, a cuyo fin prematuro contribuí sin duda alguna; tras de la desaparición en la tierra de aquel ángel cuyos albos ropajes manché sin escrúpulo, y cuyo corazón hice pedazos, operóse otro nuevo cambio en mi existencia. Enemigos diversos dieron en combatirme; en la sombra, en el sol, en el agua y en el viento los sentía siempre a mi lado, en lucha consigo mismos y conmigo. Imposible me era huir su invisible compañía. El recuerdo de Esmeralda, así como también su espíritu, bullía entre ellos, persiguiéndome con tan fatídica tenacidad que no podía evocar la imagen de mi Berenice sin que la suya viniera a interponerse entre los dos, sonriéndome de aquella manera terrible con que antes de que su cuerpo reposase en el sepulcro me había sonreído: parece que había querido darme el último adiós, mirando con aquellos ojos sin brillo los abrazos con que mi alma se unía estrechamente al alma de mi amada. Ya muerta Esmeralda, me atormentaba más, mucho más que lo había hecho en vida... ¿Cómo podía ser aquello?</p>
 				<p>»Acordéme entonces de los malos espíritus en que creía el fraile y de aquellos maleficios, aparecidos y fantasmas, de los cuales nuestros campesinos murmuran en silencio al pie del hogar, mientras el fuego que en él arde templa a la par que alumbra, de una manera a propósito para ver visiones y sombras los supersticiosos, el sombrío interior de sus chozas. Entreguéme entonces con ardor al estudio de las ciencias que aclaran tales misterios, por más que estén tenidas ya por absurdas, así como al de la historia y conocimiento de las supersticiones de todos los pueblos antiguos y modernos, y pude así llegar a comunicarme mas que nunca con todo aquello que no se ve, pero que está en perenne contacto con nosotros. Erré de noche por los cementerios; permanecí desde el toque de la oración hasta el toque del alba en el interior de los viejos templos; subí a la cima de las montañas, y me interné en lo profundo de esas cuevas misteriosas, en donde habitan los innumerables espectros del pasado, mezclados los gérmenes en incubación del porvenir. Y al cabo pude convencerme de que la superstición no desaparecerá nunca de la tierra en tanto la habite el hombre, así como existe desde que él ha existido, porque tiene su origen en él mismo, y en algo más también que la razón no podrá nunca medir, como tampoco explicar nuestras aspiraciones eternas hacia lo infinito. Sí, Pedro, nunca desaparecerá entre los que nacieron para morir la creencia de que los que aquí dejaron de ser vuelven algunas veces al mundo en espíritu, y aun que permanecen en él el tiempo que para castigo de sus culpas les envía Dios a vagar por los parajes en donde han pecado. No; no nos abandonan como parece los que aquí han perdido, por medio de la muerte, su corpórea forma, ni nada de cuanto Dios ha criado, como te indiqué ya, puede acabar para siempre.</p>

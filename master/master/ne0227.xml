@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El médico rural</title>
-				<title type="sub"></title>
+				
 				<title type="short">Medico</title>
-				<title type="idno">
-					<idno type="viaf">bimo0001512007</idno></title>
+				
 				<author>
-					<idno type="bne">XX1051062</idno>
-					<idno type="viaf">79060694</idno>
-					<name type="short">Trigo</name>
-					<name type="full">Felipe Trigo</name>
+					<name type="short" ref="#Trigo"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2247</measure>
@@ -139,13 +131,43 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0227</idno>
+						<idno type="cligs">ne0227</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/el-medico-rural--0/"/>.</bibl>
-				<bibl type="print-source">Edición digital basada en la edición de Barcelona, Turner, <date when="1974">1974</date></bibl>
-				<bibl type="edition-first">Editorial Renacimiento, Madrid, <date when="1912">1912</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El médico rural</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/bimo0001512007/">bimo0001512007</idno>
+				</idno>
+				</title>
+					<author xml:id="Trigo">
+						<name type="full"><forename>Felipe</forename> <surname>Trigo</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654 - IP 8655">IP 8654 - IP 8655</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118867806">118867806</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3068144/">Q3068144</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1051062.html">XX1051062</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/79060694/">79060694</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/el-medico-rural--0/"/>.</bibl>
+					<bibl type="print-source">Edición digital basada en la edición de <pubPlace>Barcelona</pubPlace>, Turner, <date when="1974">1974</date></bibl>
+					<bibl type="edition-first">Editorial Renacimiento, <pubPlace>Madrid</pubPlace>, <date when="1912">1912</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El médico rural</title>: 	<title type="sub">novela</title> <date when="1916">1916</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1407178962" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1407178962"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El médico rural</title>: 	<title type="sub">novela</title> <date when="1921">1921</date>, <publisher/> <pubPlace>Renacimiento</pubPlace> 		<idno type="ppn" n="464270871" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464270871"/> </bibl>
+						<bibl type="further-edition"><title type="main">El médico rural</title>: 	<title type="sub">Novela</title> <date when="1921">1921</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="405824890" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=405824890"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El médico rural</title> <date when="1974">1974</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="466263090" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466263090"/> </bibl>
+						<bibl type="further-edition"><title type="main">El médico rural</title> <date when="1978">1978</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1615971904" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1615971904"/> 		<idno type="isbn" n="8485137043"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El médico rural</title> <date when="2016">2016</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1004942508" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1004942508"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -155,6 +177,14 @@
 				<p>En El médico rural Trigo rememora la época de su vida en que desempeñó este oficio. Esteban se ha casado con Jacinta y va a ejercer la medicina en un pueblo miserable, Palomas. Allí tiene ocasión de conocer las más negras simas del atraso, la ignorancia y el caciquismo. Logra vencer el desaliento y obtiene un gran éxito profesional que revalida en otro pueblo más importante, Castellar. A la postre, se verá inmerso en esa sociedad a la que tanto odiaba y dejará de lado sus ideales. El análisis de la problemática colectiva se simultanea con la peripecia amorosa de ESteban que se debate entre el amor sencillo y puro de Jacinta y el de Evelina, una mujer del mundo.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654" key="IP 8654" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -181,14 +211,14 @@
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon">Ficción histórica, Ficción por género ; Ficción histórica, Ficción histórica, Ficción por género</term>
 					<term type="text.genre.subgenre.edit" resp="epublibre">Drama, Realista</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">autobiographical</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela erótica</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novelas de crítica social</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
@@ -218,6 +248,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-08-11" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -225,9 +256,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Primera parte</head>
+				<head xml:id="ne0227_head_000">Primera parte</head>
 				<div n="1" type="chapter" xml:id="ne0227_chap1">
-					<head>- I -</head>
+					<head xml:id="ne0227_head_001">- I -</head>
 					<p>Partió el tren, negro, largo, con sus dos locomotoras. Esteban y Jacinta, en el andén, al pie de las maletas, le vieron alejarse entre el encinar, con una emoción de adiós a algo doloroso de que habíales arrancado y despedido para siempre. Fue en los dos jóvenes, en los dos casi chiquillos, tan honda y compartida esta emoción, que al deshacerse las últimas volutas de vapor en el final del puente, ellos se miraron y cogiéronse la mano. Jacinta se acercó a darle un beso y a ordenarle los encajes de la gorra a su hijo, que dormía en brazos de la vieja y fiel criada; y Esteban, inundado por la bondad de su mujer, sintió en los ojos humedad de lágrimas, en una dulce angustia de la honradísima alegría que le causaba el poder empezar, al fin, a hacerla venturosa.</p>
 					<p>-Bueno, ¿y quién habrá venido por nosotros? ¿Nadie? -desconfió Nora, la sirviente, que había criado a Jacinta y que, por quererla como madre, trataba a Esteban con la misma confianza-. El pueblo no se ve. Sería bueno que tuviésemos que ir a pata con estos cachivaches.</p>
 					<p>-No, mujer -repuso Esteban-. El pueblo, a dos leguas. Yo escribí, y seguramente habrá alguien esperándonos.</p>
@@ -302,7 +333,7 @@
 					<p>Y el carro, al fulgor de las estrellas, seguía marchando lento, lento, entre fuertes y selváticos perfumes de hinojos y mastranzos, haciendo gemir ahora blandamente sobre la arena del camino sus trancas y sus cubos.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0227_chap2">
-					<head>- II -</head>
+					<head xml:id="ne0227_head_002">- II -</head>
 					<p>-Dispierte si le paice a las señoras, porque vamos allegando.</p>
 					<p>-¿Llegando? -extrañó Esteban, que no veía entre las sombrías siluetas de unas tapias luz alguna.</p>
 					<p>-Sí, señó. Estos son los corralones.</p>
@@ -380,7 +411,7 @@
 					<p>¡Su ansiosa emoción de paz en las bellas y honradas calmas de Palomas, fundíansele y se le amargaban con la bien clara conciencia horrible de su ineptitud para merecerlas!</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0227_chap3">
-					<head>- III -</head>
+					<head xml:id="ne0227_head_003">- III -</head>
 					<p>Dormía Jacinta, y su marido se incorporó junto a ella cautamente para ver el reloj, en la mesita.</p>
 					<p>Las tres.</p>
 					<p>Cerró el libro.</p>
@@ -428,7 +459,7 @@
 					<p>Y así se iba durmiendo en estas noches, y así trataba ahora de dormirse junto al libro, que yacía sobre las sábanas, junto a la sucia y pringosa capuchina que humeaba en la mesita...</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0227_chap4">
-					<head>- IV -</head>
+					<head xml:id="ne0227_head_004">- IV -</head>
 					<p>Seis días después, por influjo del señor Porras, lograron mudarse a una de las casas más decentes del lugar: la del tío Boni, viejo gordo y gigantesco, de cara y ademanes de arzobispo, que partía temprano hacia su viña, detrás y al paso lento de una yunta de borricas, no volviendo hasta la noche, y cuya mujer, alta, seca, garrotosa, pero limpia, padecía ataques epilépticos. Sin hijos, este matrimonio redújose a dos cuartos interiores, cediéndole al médico lo mejor de la vivienda.</p>
 					<p>Jacinta pudo ver sus muebles en una sala y una alcoba que, si bien pequeñas, tenían bóvedas, suelo de cal y ventana con un minúsculo cristal en un postigo; a desear más luz, podría abrirse completamente la ventana, poniéndola un bastidor de muselina, que defendía de la maldita paja de la calle.</p>
 					<p>Esteban instaló sus libros, su despacho en otra salita de enfrente, que a través de una portada sin puertas, adornada con un claro cortinaje, daba acceso al cuarto del niño y de la Nora.</p>
@@ -464,7 +495,7 @@
 					<p>El cuarto, la casa entera, olía a humo de cigarros; y los mosquitos y las moscas, en plaga irrechazable, no obstante los cuidados de Jacinta, dejábanle dormir difícilmente. Dedicaba sus desvelos a pensar en los enfermos y a lamentar la desdicha de que el médico de Orbaz, como enemigo, y aquí el cura, el maestro de escuela también, únicos con quienes pudiese establecer alguna intimidad, fuesen, por lo visto, liberales que no querían venir a la tertulia.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0227_chap5">
-					<head>- V -</head>
+					<head xml:id="ne0227_head_005">- V -</head>
 					<p>Por las mañanas, terminada la visita, solía el médico irse un rato a casa del señor Vicente, que convidábale a café y le esperaba cuidándolo en la lumbre.</p>
 					<p>-Bueno, y diga usted, señor Vicente -trató un día Esteban de informarse-: el maestro de escuela, ¿dónde anda, que aún no le conozco?</p>
 					<p>El señor Vicente se admiró. Chocábale que no conociera al maestro, concurrente a la tertulia algunas veces. ¡No, no era liberal!</p>
@@ -542,7 +573,7 @@
 					<p>-¡Ca, hombre! ¡Si esto es mu tranquilo! -le respondía el alcalde siempre que le manifestaba el médico su temor de una catástrofe.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0227_chap6">
-					<head>- VI -</head>
+					<head xml:id="ne0227_head_006">- VI -</head>
 					<p>A principios de noviembre seguía haciendo un calor como en agosto. Los aldeanos, ya bien acabados sus trabajos de las viñas y el acarreo de estiércol a las tierras, vagaban en una desesperación de ocio, para cuyo alivio últimamente no contaban con las fiestas de embriaguez tan de su agrado. Se habían bebido el vino. Sólo unos cuantos contumaces, que disponían de crédito o dinero, continuaban escanciándolo y jugando al mus en la taberna.</p>
 					<p>Unos íbanse por leña, con sus burros. Otros de caza, para cansarse de andar estérilmente, porque estaba cogido por grandes cotos el término rural, y en las viñas y barbechos juntábanse más hombres que liebres y perdices.</p>
 					<p>La mayor parte, al anochecer, acudían con el señor Porras al cerrillo del Cementerio, y contemplaban el cielo augustiadamente. Siempre azul. El aire inmóvil. El sol poníase en doradas agonías de su propia luz, sin una nube, áridas y tristes. Calma de ruina, de retraso de las siembras, de paralización de todas las tareas, de hambre y frío para el invierno, a seguir el tiempo así.</p>
@@ -612,7 +643,7 @@
 					<p>Era el ensueño de ambos -una vivienda en donde aislar de extraños sus ternuras-. Prolongándose el encanto, cuando Nora y el pequeño se acostaban, ellos seguían de charlas hasta las doce, hasta la una, o jugaban a la brisca, o hacía labor Jacinta, y Esteban leía en voz alta los periódicos; pasábanse al fin por el cuarto de su hijo, le arropaban en la cuna, le besaban, le miraban, le adoraban... y unidos en gentil abrazo marchaban también a acostarse, casi llorando de mutua gratitud por la ventura que a fuerza de bondad y de corazón íbanse tejiendo.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0227_chap7">
-					<head>- VII -</head>
+					<head xml:id="ne0227_head_007">- VII -</head>
 					<p>Mas no quiso el destino que ni tal menguada dicha les durase.</p>
 					<p>Días aciagos volvieron para Esteban, colmados de crueldad. Estalló una epidemia de fiebres malignas, biliosas cuya térmica alcanzaba grande altura, y de las cuales tenía seis atacados, y sus dos crónicos enfermos, además, el muchacho escrofuloso que padecía un glaucoma en el ojo izquierdo y la anciana que sufría del corazón, agraváronse notablemente.</p>
 					<p>El muchacho, de la noche a la mañana, se vio aquejado de agudísimos dolores que nada podía calmar, y pasábase las horas en un grito. Al principio, cuando llegó Esteban a Palomas, este enfermo tenía el ojo hinchado, duro y casi blanco; pero veía con él los bultos, como detrás de una niebla, y aun el chico iba a la escuela y jugaba por las calles; luego había ido abultándosele, poniéndosele sensible y adquiriendo un color de ámbar y una tensión alarmantísima. Sin embargo, su martirio databa de unos días: tanto se le inflamó, que no podía cerrar los párpados, y al lado de la niña, borrada en la confusión de aquella masa lamentable, iniciábase una ampolla de pus, un absceso que dejó al médico aterrado.</p>
@@ -749,7 +780,7 @@
 					<p>Pero seguía inmóvil, allí, al lado de la pena..., puesto ya el sol, y templando el infeliz los fuegos de su fiebre con el frío del aire y de la lluvia que empezaba con la noche.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0227_chap8">
-					<head>- VIII -</head>
+					<head xml:id="ne0227_head_008">- VIII -</head>
 					<p>Cuando Esteban volvió del campo, encontró a Jacinta y a Nora asustadísimas. El niño estaba atacado de violentas náuseas y de un frío que le tenía muy palidito, haciéndole temblar; al mismo tiempo, a la amenaza de un ataque, agitaba la cabeza y giraba medio estrábicos los ojos. Nora le tenía cerca de un gran fuego, en la cocina: y el tío Boni y su mujer, y la mujer y las hijas del señor Porras, que solícitamente habían venido, preparaban botellas calientes para mudarle las que íbanle poniendo, y agua y vinagre que le aplicaban a la frente.</p>
 					<p>La madre, en medio de la confusión, no sabía sino andar de un lado a otro sin concierto, consternada, llorando a gritos, como loca.</p>
 					<p>-¡Se muere! ¡Se muere nuestro niño! -clamó desgarradamente al ver a Esteban, echándose en sus brazos.</p>
@@ -815,7 +846,7 @@
 					<p>Del sueño reparador que allí junto a su Jacinta le turbó a Esteban la luz del alba entrando por el ventanillo, pasó a la sorpresa de advertirse confiadísimo y feliz, plenamente satisfecho de la vida que antes pesábale tan triste. Había arrancado de la muerte a un ángel y de la desolación a su Jacinta; su vida, pues, servía de mucho más que para pasársele en inútiles lamentos...</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0227_chap9">
-					<head>- IX -</head>
+					<head xml:id="ne0227_head_009">- IX -</head>
 					<p>Un mes después, cuando ya Esteban jugaba al sol alegremente con Luis y con Jacinta; cuando terminaba aquel tráfago de enfermos, aquella lucha sin reposo con que afrontó las epidemias..., pudo darse cuenta de lo enorme de su triunfo.</p>
 					<p>A sus libros, a su aplicación, a su tenaz constancia en el trabajo, al rígido concepto de su dignidad y sus deberes, debíanle la existencia muchos niños y muchos atados por la fiebre, y, sin embargo, habían vuelto a cruzar las calles diez o doce entierros. De éstos, sólo uno correspondió a un cliente que a Esteban recurrió casi en la agonía, traspasado del médico de Orbaz; los otros, empezando por el tío Marín <seg rend="italic">el Disparao</seg> y por <seg rend="italic">Rigodón, </seg>y siguiendo por una jovencita, por tres o cuatro mocetones y por unos cuantos chicos a quienes hubo de ahogar la difteria entre mantas de algodón y cataplasmas, fueron víctimas de la torpeza del médico -que así en la competencia entablada por él mismo, y a pesar de su antigua amistad con estas gentes, cayó al descrédito con plena rapidez desde lo alto de la autoridad de su caballo y de sus fachendas de cacique y de gordo labrador y ganadero. Una tarde, delante del último ataúd, se le vio partir en fuga; el potro conducíale a Orbaz tan briosamente como le trajo tantas veces; pero él iba con menos gallardía. Preocupado con los cerdos y los campos, aunque ansioso de aumentarse las ganancias, no importara cómo, en las visitas, debía de desconocer los baños, los sueros e inyecciones, los preciosos sistemas curativos de que al principio maldijo y se mofó, sabiendo que Esteban los usaba.</p>
 					<p>Bien. No le quedaba al joven ningún remordimiento. Con malas artes, el compañero descortés y falso aspiró a desprestigiarle; en liza abierta, él había sabido reconquistarse la clientela, humillándole con la fuerza de los hechos y debiéndole, además, por la pública comparación de los tan distintos resultados, la fe que le faltaba para ejercer su profesión.</p>
@@ -835,7 +866,7 @@
 					<p>Amigo del cura, por haberle asistido como enfermo, fue en seguida a visitarle. El cura estaba viendo cómo el ama asaba unos torreznos. Sin descubrirle su cuita le encomió Esteban la conveniencia de que los misioneros viniesen a Palomas. ¿Cómo? ¡ah!... Más hecho el viejo cazador al gusto de su comodidad silvestre, a las manchas de su ropa, a sus uñas negras, a su buen fuego de sarmiento y a su perro y su perdiz, que no a la redención de feligreses, se mostró contrariado y sorprendido: lo primero, porque pobre, y con una vieja ama que no entendía de cocinera, pondríase en el caso de alojar a los padres jesuitas sin hacerlo con decoro; y lo segundo, porque jamás había visto a Esteban en misa, ni un domingo. Sin embargo, insistía el médico, aludiendo a la rudeza de los aldeanos, por nada nunca ni por nadie invitados como no fuese a las tabernas, y no supo el cura dignamente resistir. El propio Esteban redactó y púsole a la firma la petición para el obispo.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0227_chap10">
-					<head>- X -</head>
+					<head xml:id="ne0227_head_010">- X -</head>
 					<p>Y a la mañana siguiente, a pie, precedidos por su fama y esperados en las afueras del lugar por el alcalde, el juez, algunos concejales y todas las mujeres y chiquillos, llegaron los dos ilustres jesuitas, el P. Galcerán y el P. Sartos. Acompañábanles los párrocos de Orbaz, de Valleleón y Medinilla. Encaminados a la iglesia, viéronse favorecidos desde luego con un lleno rebosante.</p>
 					<p>Lo que más atrajo para ellos la atención, hasta que hablaron, fueron los fajines, las gafas de oro, que aumentábanle un diáfano centelleo de inteligencia y de dominio a sus limpios rostros afeitados, y las tejas... felpudas, pequeñas y redondas, casi como sombreros de paisano, tan distintas de aquellas otras grandes tejas de los curas.</p>
 					<p>¡Ah, pero cuando hablaron!... el éxito, el entusiasmo que subrayó a las gentes fue tan colosal, que Esteban, perdido y apretujado por la muchedumbre en el rincón del baptisterio, tuvo que reconocer el poderío de la elocuencia.</p>
@@ -896,7 +927,7 @@
 					<p>Esteban, ya en la mesa aguardado por Jacinta, la dijo, sí, que venía de visitarlos; mas no el afán que le acuitaba. Para volver con ella a la gran intimidad, desde la de él rota en sus almas por cien secretos de vergüenza y cobardía, juzgaba preferible llegar primero a la redención espiritual que habría de dignificarle, que hubiese nuevamente de igualarlos. ¡Sólo entonces podría alzarse hasta ella en fuerza de sinceridad y de arrepentimiento..., obteniendo su perdón!</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0227_chap11">
-					<head>- XI -</head>
+					<head xml:id="ne0227_head_011">- XI -</head>
 					<p>A las cinco se hallaba en casa de don Roque. Para el habitual paseo, acompañaban a los tres sacerdotes el alcalde, el juez y otras personas. El P. Galcerán adelantóse a todos, con Esteban.</p>
 					<p>A preguntas del curioso, íbale diciendo que no tenía aún cuarenta años, que había pasado siete en África, y tres de profesor de Filosofía en su Colegio-residencia. Su acento afable, impregnado de no se supiera qué desinterés de juventud, invitaba a la confidencia fuertemente; la hermosura primaveral de la campiña predisponía asimismo a la abundancia efusiva de las almas, y el médico, con la ágil complacencia melancólica que hubiese podido referirle a un camarada sus dolores, púsose a contarle su infancia, su pasado tormentoso, como una explicación de su presente.</p>
 					<p>Pisando hinojos y amapolas, iban por el lindero de unos trigos frondosísimos, cuyas verdes espigas les llegaban a los hombros. Las codornices cantaban. Creeríanse solos y perdidos en el mar fofo de esmeraldas, sin ver siquiera a los otros paseantes. Hablaba, hablaba el médico, evocando ahora de su Antonia la historia terrible, y el P. Galcerán seguía aquel drama de pasión con tanto anhelo como si también en sus recuerdos fuesen despertando algunos parecidos.</p>
@@ -952,9 +983,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Segunda parte</head>
+				<head xml:id="ne0227_head_012">Segunda parte</head>
 				<div n="12" type="chapter" xml:id="ne0227_chap12">
-					<head>- I -</head>
+					<head xml:id="ne0227_head_013">- I -</head>
 					<p>-«¡Castellar! ¡Oh!... ¡Tres mil... cinco mil pesetas»... Feliz obsesión de Esteban y de todos.</p>
 					<p>Desde que se levantaban, abriendo los ojos a la persuasión que les imponía en la hermosa casa la bella realidad, reíanse y saltaban de contentos. Nora les mostraba los regalos que íbanles haciendo: jamones y quesos y gallinas; aparte los carros de leña con que les llenaban los corrales. Él y Jacinta, tomando el desayuno en el amplio comedor, cuyas dos rejas, sombreadas por la fronda de un parrón, daban a un patio de baldosas en que a sus anchas podía jugar Luisín sin ensuciarse, se asombraban de tanta esplendidez. Quedábanse por un rato en cónclave de locos regocijos.-« ¡Anda, anda, el doctor Peña!» - «¡Anda, anda, Juan Alfonso!» - «¡Y un buen pueblo, de gente fina, con campanas, con buñuelos, ¿eh?<seg rend="italic">...,</seg> con buena carne de carneros matados cada día!» - «¿Ves, Nora, mujer?... Cinco mil pesetas... ¡porque sí, se sacarán!... ¡nada menos que mil duros, como un teniente coronel! ¡Como mi padre, de un golpe!» -«Pero, ¿qué vas a hacer con tanto, pelagatos?...» Gritaban, reían, besábanse. Besaba incluso Nora a Esteban, más alucinada que ellos mismos de tal caudal futuro en tanta juventud.</p>
 					<p>En vano delante de las gentes, como esta tarde en el agradabilísimo paseo con el cura y la sobrina, el joven matrimonio pretendía volver a su circunspección de graves personajes. Dos niños, y aún más que en el dolor en la alegría. Se admiraban de que todo el mundo asimismo en Castellar, les llamasen «don» y «doña» a todo trapo, incluso una señora, doña Claudia de Guzmán, vecina por las traseras de los huertos, a quien solían ver desde las tapias (dama muy simpática, que con su pelo medio cano, con su altiva corpulencia y sus nobles ademanes lentos, ceremoniosos, dábale a Esteban el recuerdo de su madre), y Esteban tuvo que confesarle a Jacinta, al notar lo ingenuamente que ella se extrañaba de que la señora la hablase con igual jovialidad que si fuese otra chicuela o Jacinta una matrona: -«Sí, mujer, ¡eres graciosa!... Te trata como a casada, como mamá, como lo que es ella también. ¡Tú y yo, con nuestros diecinueve y veintidós años, no acabamos de darnos cuenta de nuestro papel en el mundo! ¡Cuando más serio algún señor me dice «don Esteban», me dan ganas de reír y ponerme a jugar a los bolindres!»...</p>
@@ -998,7 +1029,7 @@
 					<p>Y sorprendido de encontrase en mitad de estos proyectos con un cándido misticismo absolutamente igual que el que durante la infancia hubo de inspirarle su inmensa fe cristiana, no obstante hacerlo ahora derivarse de un materialismo brutal y desolado en la apariencia, sentía su corazón una ola de firmeza, de nobleza, de purezas exquisitas.</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0227_chap13">
-					<head>- II -</head>
+					<head xml:id="ne0227_head_014">- II -</head>
 					<p>De los señoritos, ninguno usaba bastón; pero alguien advirtió a Esteban, regalándole uno, que era propio de médicos; y al salir a la visita se apoyaba en él -fuerte, de acebuche-. El donador le había explicado que el puño, tallado con navaja, representaba una cabeza de pato con un higo en el pico. ¡Bien!</p>
 					<p>Servíale para no tropezar en los guijarros. Acostumbrado a orientarse, no necesitaba al alguacil que le guió los tres primeros días.</p>
 					<p>Grande el pueblo; sin embargo, bastante rectas y bien rotuladas las calles y todas las puertas con número. Entre las bajas viviendas blancas, alzábanse de cuando en cuando otras de dos pisos, azules, nuevas, en muchas de las cuales entraba el joven estirándose los puños, por tratarse de gente encopetada.</p>
@@ -1088,7 +1119,7 @@
 					<p>Por brutos que fuesen los pacientes, tomaríales en cuenta su opinión, así viniesen a decirle que tenían un caimán en la cabeza.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0227_chap14">
-					<head>- III -</head>
+					<head xml:id="ne0227_head_015">- III -</head>
 					<p>Terminadas las cuentas pesadísimas que la tenían hacía hora y media en el despacho haciendo números, dejó la pluma doña Claudia y púsose a guardarlo todo. A cada carpeta rotulada volvieron los recibos y contratos; a los bolsos los duros, la plata suelta, el cobre; a sendos departamentos de la gran cartera de billetes, los de veinticinco pesetas, los de cincuenta, los de ciento, los de quinientas, los de mil..., en gruesos fajos.</p>
 					<p>Se levantó y fue ordenadamente depositando cosa a cosa en la caja de caudales. Sentía la satisfacción que da la exactitud. Según costumbre, no habíase equivocado ni en un céntimo. El numerario y sus notas convenían. ¡Ah, pobre administración si el talento y la actividad de ella no supliesen el corto alcance del marido!</p>
 					<p>Desde los arriendos y el trabajo de bufete, hasta los más mínimos pormenores de la casa, pesaban en su responsabilidad.</p>
@@ -1219,7 +1250,7 @@
 					<p>Al levantarse, y a fuerza de meditaciones larguísimas, había encontrado que era llegada la ocasión de traer de Oviedo a Inés, de casarla con Alberto, y de irse preocupando un poco, en fin, de la niña de su alma.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0227_chap15">
-					<head>- IV -</head>
+					<head xml:id="ne0227_head_016">- IV -</head>
 					<p>El edificio de las escuelas, nuevo, alzado con planos del arquitecto provincial, y bajo los auspicios del poderosísimo señor don Indalecio Márquez (padre de Juan Alfonso), que ejecutaba cuanto bueno y malo pudiera ejecutarse en Castellar, tenía el fanfarrón aspecto de un palacio. Su larga y altísima fachada de tres pisos, con hileras de grandes ventanas y balcones, destacábase aún más que la de la iglesia, así que se miraba al pueblo desde no importase qué lugar de la campiña; y sin embargo, dejado a la mitad por construir, no tenía más que tres salones superpuestos, sin encaladura al exterior, donde aún veíanse los hondos agujeros que había dejado el andamiaje, y los muros de arranque, por la parte de atrás, que habrían de haber constituido las magníficas viviendas para las familias de la maestra y el maestro.</p>
 					<p>Estos, por lo pronto, agotado el presupuesto de las obras, quedáronse sin casa. Durante los primeros cuatro años, las niñas concurrieron a un salón, los niños a otro, y en el último estuvo funcionando el Juzgado y parte de las oficinas del Consejo. Pero desde hacía dos, y a consecuencia de ser chico y malo el Casino, causa por la cual dio la gente en concurrir a una especie de titulado <seg rend="italic">Círculo Republicano, </seg>que hubieron de fundar Pablo Bonifacio y Gironza el albañil, tuvo don Indalecio Márquez la felicísima ocurrencia de partir el salón alto en tres, por medio de tabiques, reduciendo allí ambas escuelas y el Juzgado, y de ocupar los otros con el <seg rend="italic">Casino Principal, </seg>a cuya regia y moderna instalación contribuyó con su dinero.</p>
 					<p>«¡Oh, oh, este hombre!» -decían admirados los vecinos, viendo las paredes repintadas, los muebles nuevos, la mesa de billar. Y el golpe fue terrible para el estúpido y tenaz republicanismo de Pablo Bonifacio y de Gironza, que viéronse inmediatamente abandonados por el público versátil.</p>
@@ -1338,7 +1369,7 @@
 					<p>Iba a empezar el <seg rend="italic">monte.</seg></p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0227_chap16">
-					<head>- V -</head>
+					<head xml:id="ne0227_head_017">- V -</head>
 					<p>Cansado de la monotonía de las tertulias que hasta medianoche retenían a la gente en el Casino, vio Esteban llegada la ocasión de reconstituirse una vida independiente en plena consonancia con sus gustos. Ansioso de sencillez, sus días de niño se le ofrecieron por modelo. Nunca había sido más dichoso.</p>
 					<p>Sí; era indispensable tornar a las infantiles inocencias. A los quince años, gozó de todo en un bello y candoroso misticismo, al cual podría volver desde un punto de vista diferente. Pintaba entonces cromos y muñecos, estudiaba, pasaba las horas muertas aprendiendo solo a toquetear una bandurria, y en las tardes buenas solía huir de los amigos y salirse al campo con una escopetilla a matar pájaros.</p>
 					<p>Empezó por comprarse una escopeta y una caja de pinturas -y además un perdigón-. Hizo que también le trajesen de Oyarzábal una magnífica bandurria de diez duros y un juego de ajedrez.</p>
@@ -1438,7 +1469,7 @@
 					<p>¿La envidia? ¿La imposibilidad de sentir cualquier desinteresada admiración?... Evelina vivía aquí tal que una marquesa, y esto, aparte la humilde procedencia del marido (si no también a causa de ello), heriría la estúpida y tosca vanidad de los ricachos.</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0227_chap17">
-					<head>- VI -</head>
+					<head xml:id="ne0227_head_018">- VI -</head>
 					<p>Había realmente en Esteban mucha experiencia dormida; conteníase en él un crítico de sobra experto, para que pudiese por demasiado tiempo transigir con aquellas triviales distracciones. No se podía ser niño sin la inocencia del niño; él la había perdido, y «la inocencia, igual que la virginidad, no se recobra».</p>
 					<p>Si durante su ya no breve permanencia en estos pueblos de barbarie y de falsa sencillez pudo engañarse con un ansia de vida simple y primitiva, Evelina vino a ser el reactivo que le despertó bruscamente a lo pasado<seg rend="italic">...,</seg> a su antigua aventurera y tormentosa vida madrileña.</p>
 					<p>La veía diariamente, en largos ratos que íbanles llevando a una rápida amistad, y sus cantos y sus músicas, que sin ser, en verdad, una maravilla, eran algo de positiva aptitud y de innata gracia y de aprendida técnica, hiciéronle menospreciarse en el ridículo aspecto de bandurrista de afición, tanto como los cuadritos y tablas y retratos que ella poseía, hechos por artistas de renombre, en el de espontáneo pintor ignorantísimo. Por extensión, advirtió que ni siquiera resultaban menos risibles sus condiciones de cazador improvisado. Mató la perdiz, que no cantaba y que habíale costado viva una peseta; hízola echar en el puchero, y dejó arrumbadas en un rincón del comedor la bandurria y las pinturas.</p>
@@ -1576,7 +1607,7 @@
 					<p>Era una aterrada. Era una sumisa entregada por un absurdo conjunto inexplicable de terror, de bestialidad, de piadosa vanidad, de inconsciencias del alcohol y la lujuria...</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0227_chap18">
-					<head>- VII -</head>
+					<head xml:id="ne0227_head_019">- VII -</head>
 					<p>Dos caballos negros, hermosísimos, montado uno por un mozo y el otro de la rienda, detuviéronse en la puerta del médico, llamando la atención del vecindario.</p>
 					<p>Salió Esteban al sentirlos, y reconoció a los de don Teodobaldo Paluzie, personaje de Oyarzábal, que ya había mandado a buscarle tiempo atrás. No venían de parte de su dueño, sino del amigo de éste, doctor Lázaro Aspreaga. El mozo entregó a Esteban la carta en que el ilustre compañero le suplicaba su concurso para una grave operación.</p>
 					<p>-¡Anda, ve! ¡Y a la tarde haces la visita! -apremió Jacinta, orgullosa, porque ganaba mucho su marido y le llamaban de poblaciones importantes. La otra vez le pagó el espléndido señor Paluzie veinte duros; ahora, de la operación, traería cuarenta o cincuenta, por lo menos.</p>
@@ -1643,7 +1674,7 @@
 					<p>-¡Sí, sí, se hizo todo felizmente!</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0227_chap19">
-					<head>- VIII -</head>
+					<head xml:id="ne0227_head_020">- VIII -</head>
 					<p>Durante el mes de agosto habían ocurrido en Castellar grandes novedades. El <seg rend="italic">Colita </seg>murió de otro formidable ántrax, que no pudo curarle Esteban, a pesar de su interés. Ya veinte días antes -a los muy pocos de haber caído en Madrid el Gobierno- fue Gironza nombrado juez, en sustitución de Pablo Bonifacio, y éste, alcalde; y fue el primer acto de las dos autoridades el de procesar a muchos concejales, cambiándolos por amigos. Mas para que los atribuladísimos «señores» no pudiesen dudar que las influencias eran de Evelina, exclusivamente de Evelina, sin maldita la intervención del esposo, he aquí que el flamante partido republicano socialista, bajo los auspicios de la viuda, y con el genuino apoyo de la Sociedad cooperativa, apercibíase ahora lleno de pujanza a la elección de diputados: dueños de los gubernativos resortes y de la mayoría del censo, una Comisión de obreros acababa de visitar al candidato don Juan de Dios Martínez Navas, casi perpetuo representante en Cortes, por lo demás, de este distrito (y no hay que decir si uña y carne con don Indalecio Márquez), ofreciéndosele a condición de que instituyese jefe local a Pablo Bonifacio, y de que se mostrase en resuelta hostilidad contra sus antiguos amigos los «señores». Don Juan de Dios aceptó. La concordia quedó hecha, y gracias a una suprema razón de la sinrazón política, sin alma, sin entrañas, rota con los «señores» y con el propio don Indalecio la amistad del diputado.</p>
 					<p>Cuando ellos tuvieron que rendirse a la dura realidad, al ver que el don Juan de Dios -¡un medio pariente, y sin que el otro pariente senador se le opusiera!- sosteníales los procesos, ponían el grito en la luna y no acertaban a explicarse qué clase de mujer o de demonio fuese aquélla con tantas influencias, con tantas osadías, y que habría venido a su propio deudo a aniquilarlos.</p>
 					<p>¡Increíble! ¡Inverosímil!... Los hechos, sin embargo, eran los hechos, y tenían una gran fuerza de penosa convicción los que podían mirar por todas partes; presos, detenidos por seis horas, sin más que haberse permitido gritar contra Gironza, Ramón Guzmán y el intrépido Macario; copados el Juzgado y el Concejo; desierto el hermoso Casino Principal y el otro lleno siempre hasta los topes... Hasta la Guardia Civil, ¡quién lo diría!, habíaseles vuelto de espaldas, sorprendiéndoles una noche la ruleta<seg rend="italic">...,</seg> y el albéitar, los barberos, los pastores y criados bailábanle el agua a la <seg rend="italic">Cachunda </seg>y engrosaban la Sociedad cooperativa sin miedo a sus dueños legítimos de siempre<seg rend="italic">...,</seg> antes bien, burlándoseles e imponiéndoles una huelga colectiva en las casas y en los campos si era alguno despedido.</p>
@@ -1709,7 +1740,7 @@
 					<p>Esteban, como un Maquiavelo bondadoso, quedábase asimismo sonriendo, de haberle visto sonreír. ¡Cuán fácil le sería a la adulación deshacer todos los odios!</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0227_chap20">
-					<head>- IX -</head>
+					<head xml:id="ne0227_head_021">- IX -</head>
 					<p>Tal era la prisa, que para apremiarle había salido a legua y media otro mozo con un mulo; y aun a dos kilómetros de la finca apareció don Anselmo Cayetano galopando con su jaca.</p>
 					<p>-¡Hola, don Esteban!... ¡Vamos! ¡La niña está muy mal!</p>
 					<p>Ni le preguntó por la salud, en su azoramiento. Revolvióse, picando las espuelas, y Esteban le siguió con el caballo.</p>
@@ -1811,7 +1842,7 @@
 					<p>Gracias a lo cual iba Esteban tirando sin disgustos.</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0227_chap21">
-					<head>- X -</head>
+					<head xml:id="ne0227_head_022">- X -</head>
 					<p>-Bueno, tú, tontito; y ahora, ¿qué?..., ¿lo crees?</p>
 					<p>Por absurdo, por inverosímil que ello fuese, allí, en persona, Juan Alfonso estaba demostrándolo. Se le veía junto a la noria, apoyado en un astial y mirando hacia el <seg rend="italic">chalet. </seg>Evelina, para convencerle, había hecho ir esta mañana al testarudo Esteban, que, siempre incrédulo, al oírselo afirmar, se sonreía.</p>
 					<p>-Y vienes veinte veces, y lo mismo le verás, a esta hora en que yo cuido mi jardín.</p>
@@ -1891,7 +1922,7 @@
 					<p>Salió Esteban como un rayo, como un niño, y Evelina, piadosa y satisfecha de tanto coraje de amor que disiparíasele en la puerta, estuvo por salir, por llamarle y... darle el premio de sus besos, de sus brazos, de su estatua... No lo hizo porque no pudo seguirle, desnuda... Y, aparte de esto..., ¡ah, qué singular idea la de aquel Juan Alfonso, viniendo aquí como a humillarle todas las antiguas altiveces de su casta!... Si el pobre Esteban no tuviese en realidad aquellos celos tan tremendos, ella misma le pediría que lo trajese: ¡a Juan Alfonso!</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0227_chap22">
-					<head>- XI -</head>
+					<head xml:id="ne0227_head_023">- XI -</head>
 					<p>Iban todos a la feria de Torres de Morón, en cabalgata: Macario, Juan Alfonso, <seg rend="italic">Cascabel, 						</seg>Frasquito Márquez, el médico, don Anselmo Cayetano, Rómulo, Ramón Guzmán, el notario, el boticario... Ganoso Esteban de hablar aparte con Alfonso, extrañábale advertir cómo le huía, picando hacia adelante su caballo si él iba detrás, y viceversa. No pudo dudarlo más, a los dos o tres intentos. No se lo explicaba. ¿Qué tenía para con él, y hoy, <seg rend="italic">precisamente, </seg>el buen amigo?</p>
 					<p>Transcurridos trece días desde su presentación en el <seg rend="italic">chalet, </seg>sabía Esteban (porque Evelina, en otro rapto de satánico cinismo, se lo hubo de avisar la tarde antes) que acababan de pasar juntos la noche.</p>
 					<p>Alfonso llevaba además en el pálido y fatigadísimo semblante los rastros delatores; pero llevaba también una expresión de avara felicidad sombría y reconcentrada que hacíale ir marchando silencioso, pensativo..., en un verdadero contraste de abstracción entre el bullicio de los otros.</p>
@@ -1922,7 +1953,7 @@
 					<p>Y marchaban, seguían marchando todos a la feria de Torres de Morón.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0227_chap23">
-					<head>- XII -</head>
+					<head xml:id="ne0227_head_024">- XII -</head>
 					<p>He aquí unos impresos circulados por el pueblo:</p>
 					<floatingText><body><div type="section">
 					<p>«DIEGO ROVIRA CAMARGO</p>
@@ -2023,7 +2054,7 @@
 					<p>¡Y bendita fuese también la Jacinta rubia y buena que con su honradísima ambición de madre le excitaba al médico sus honradísimos deberes!</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0227_chap24">
-					<head>- XIII -</head>
+					<head xml:id="ne0227_head_025">- XIII -</head>
 					<p>«¡Los literatos!»</p>
 					<p>Les llamaban «los literatos». Jacinta y Rosa; y muchas noches, dejándoles en el comedor con su ajedrez y sus francesas lecturas, que ellas no entendían, se iban a la casa de enfrente para hacer dulces o para charlar con más libertad mientras bordaban.</p>
 					<p>Inés y Esteban, al verse solos, mirábanse en una honda complacencia de amistad, de intimidad, de la grande intimidad a que habían ido llegando poco a poco. Se hablaban de<seg rend="italic"> tú</seg> los cuatro, por acuerdo de Jacinta, a quien le había parecido mal que el marido no tratase con la misma confianza a sus amigas; y siempre Esteban ponía término a aquel agrado de los ojos de los dos con un breve comentario:</p>
@@ -2156,7 +2187,7 @@
 					<p>-¡Juega, Inés, a ti te toca!... ¡Anda, mujer, al rey!... ¡A la reina y al alfil!...</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0227_chap25">
-					<head>- XIV -</head>
+					<head xml:id="ne0227_head_026">- XIV -</head>
 					<p>Salía un enfermo y entraba otro, escoltados por tres o cuatro de familia.</p>
 					<p>Un hidrocele que Esteban había punzado con el trocar; un carbunco que había cauterizado con el termo; un epitelioma del labio que excindió...</p>
 					<p>Nutrida la consulta, más acreditada cada día, constituíale un manantial de experiencia y de ingresos, pero asimismo un semillero de tristezas al médico filósofo.</p>
@@ -2262,7 +2293,7 @@
 					<p>Le alargó la mano, se la estrechó él, con toda la fuerza de su alma, y partió radiante Curra, triunfal...</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0227_chap26">
-					<head>- XV -</head>
+					<head xml:id="ne0227_head_027">- XV -</head>
 					<p>-¡Anda, anda, los literatos! -decía Jacinta al ver que su marido, según volvía a tomar por maña en estas noches, preparábase a salir, apenas llegó Inés y acabaron ellos de cenar-. Pero tú, Esteban, ¿dónde vas?... Este, hija, Inés, nos abandona; cánsase de todo... ¡es una veleta!</p>
 					<p>-¡Claro, sí! -repuso él, en tanto Inés bajaba ruborosa la cabeza y sonreía-. ¡Como no quieras darme también una aguja y que me ponga con vosotras a coser!</p>
 					<p>Su compañera de juego y de lectura, Inés, ahora, con las prisas del ajuar, traíase siempre labores y bordados y se ponía a trabajar con las amigas.</p>
@@ -2302,7 +2333,7 @@
 					<p>Nadie en la noche negra y fría, rato después, al pasar, pudiera imaginarse que allí, tan cerca, se moría de muertes deshechas e inmortales de la vida la señorita Inés, tan famosa de rubores en el pueblo.</p>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0227_chap27">
-					<head>- XVI -</head>
+					<head xml:id="ne0227_head_028">- XVI -</head>
 					<p>Jacinta, tendida en la otomana, y débil aún en el novenario de su parto, sonreía hechizadamente mirando a Rosa vestir a la niñina; bordaba Inés, y calcaba Esteban dibujos de bordados contra un vidrio, al trasluz de la ventana.</p>
 					<p>-¡Cartero! -se oyó al peatón en el pasillo.</p>
 					<p>-¡Entre, Julián!...</p>
@@ -2389,7 +2420,7 @@
 					<p>Ni la alucinación torpísima pudo quitarle la azul bondad de ángel a sus ojos.</p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0227_chap28">
-					<head>- XVII -</head>
+					<head xml:id="ne0227_head_029">- XVII -</head>
 					<p>Fuera, en la tibia noche de marzo, y todavía a las once, seguía vociferando casi la misma multitud que escoltó al cortejo hacia la iglesia y al retorno de la iglesia. Desde la terraza de las tapias, los criados encendían antorchas y bengalas, y Curra no cesaba de lanzar puñados de confites.</p>
 					<p>Dentro no cabía más gente; alrededor de la gran mesa del <seg rend="italic">hall</seg> apretujábanse damas y señores, riendo, gritando, manchándose con los vinos y los dulces. Muchos tenían que resignarse a estar amontonados por las puertas, y algunos, más prácticos, retirábanse en grupos al pasillo con su sorda borrachera y una botella de champaña... Porque había champaña, legítimo; timbre fastuoso de una fiesta que quiso poner doña Claudia al nivel del fastuosísimo suceso.</p>
 					<p>Habían venido de Oviedo los tíos de Inés; de Oyarzábal, el doctor Peña con sus hijas, y parientes de otros pueblos. Únicamente el conde senador, lustre y prez de la familia, hubo de disculparse con políticas urgencias. El director del banco lucía su mundano aspecto y un botón en el ojal. El doctor Peña, otra condecoración y sus brillantes. El notario y el farmacéutico bebían en broma con el cura, con don Luis. Y abundaban las levitas, no todas de buen ver y no faltaban tampoco las chaquetas, ya por igual disimuladas a su plena libertad entre el desorden.</p>

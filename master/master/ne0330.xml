@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Cinematógrafo</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Cinematografo</title>
-				<title type="idno">
-					<idno type="bne">bdh0000201956</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX870038</idno>
-					<idno type="viaf">49351066</idno>
-					<name type="short">Carranque</name>
-					<name type="full">Andres Carranque de Ríos</name>
+					<name type="short" ref="#Carranque"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2652</measure>
@@ -140,13 +131,37 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2017">2017</date>
-				<idno type="cligs">ne0330</idno>
+						<idno type="cligs">ne0330</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bne" subtype="pdf">BDH, <idno>bdh0000201956</idno>, <ref target="http://bdh.bne.es/bnesearch/detalle/bdh0000201956"/>.</bibl>
-				<bibl type="print-source">Espasa-Calpe, Madrid, <date when="1936">1936</date></bibl>
-				<bibl type="edition-first">Espasa-Calpe, Madrid, <date when="1936">1936</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Cinematógrafo</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bdh0000201956.html">bdh0000201956</idno>
+				</idno>
+				</title>
+					<author xml:id="Carranque">
+						<name type="full"><forename>Andres</forename> <surname>Carranque de Ríos</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3436">IP 3436</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX870038.html">XX870038</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11953326X">11953326X</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/49351066/">49351066</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bne" subtype="pdf">BDH, <idno>bdh0000201956</idno>, <ref target="http://bdh.bne.es/bnesearch/detalle/bdh0000201956"/>.</bibl>
+					<bibl type="print-source">Espasa-Calpe, <pubPlace>Madrid</pubPlace>, <date when="1936">1936</date></bibl>
+					<bibl type="edition-first">Espasa-Calpe, <pubPlace>Madrid</pubPlace>, <date when="1936">1936</date><idno source="k10plus" type="ppn" n="465485782" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465485782"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cinematógrafo</title>: 	<title type="sub">novela</title> <date when="1936">1936</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465485782" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465485782"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>Texto convertido desde el PDF de la BNE a XML-TEI, revisado a mano si estaba bien formado y validado con el esquema de CLiGS.</p>
@@ -160,6 +175,11 @@
 				<p>La obra adquiere un tono amargo y despierta -o intenta despertar- en el lector la solidaridad con las víctimas del sistema.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">5</term>
 					<term type="author.continent">Europe</term>
@@ -172,7 +192,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">social-realista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">medium</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -184,10 +204,10 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">philosophical</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -223,12 +243,13 @@
 		<revisionDesc>
 			<change when="2017-01-31" who="#jct">Initial TEI version.</change>
 			<change when="2017-02-01" who="#jct">Added metadata and annotation.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div type="part">
-				<head>OTRAS NOTICIAS</head>
+				<head xml:id="ne0330_head_000">OTRAS NOTICIAS</head>
 				<p>Por ahora todo lo que se refiera a la vida de Pablo Gómez quedará reducido en <seg rend="smallcaps">Cinematógrafo </seg>a esta especie de nota postuma: «Pablo Gómez no fué otra cosa que un vulgar prestidigitador.»</p>
 				<p>Pablo Gómez ya no existe. Es decir, existe en Madrid el regalo hecho a nuestro hombre por un dictador sudamericano. Un bastón jorobado por tres grandes nudos. Un bastón muy extraño, casi amarillo.</p>
 				<p>El duerme ahora en la fosa común, y su bastón, adornado por un grueso anillo de oro, está guardado en el escaparate de una casa de compraventa. En un ángulo del escaparate se tuerce el bastón al lado de dos acordeones, varios mantones de Manila y multitud de relojes parados.</p>
@@ -257,9 +278,9 @@
 		<body>
 			<div type="part">
 			<div n="1" type="chapter" xml:id="ne0330_chap1">
-				<head>LOS PEQUEÑOS ACONTECIMIENTOS: </head>
+				<head xml:id="ne0330_head_001">LOS PEQUEÑOS ACONTECIMIENTOS: </head>
 				<div type="section">
-					<head>1</head>
+					<head xml:id="ne0330_head_002">1</head>
 					<p>No tengo amigos.</p>
 					<p>He fracasado como estudiante, como empleado y como comparsa. Me canso pronto de hacer un mismo trabajo. Ahora soy comisionista de cintas para máquinas de escribir. Estas cintas me las proporciona Martínez, un hombre que ya ha cumplido los cuarenta años. Sin embargo, Martínez asegura que no ha llegado a loe treinta y cinco.</p>
 					<p>Se casará pronto. Un día me ha confesado: «Es lo mejor que puedo hacer.»</p>
@@ -269,31 +290,31 @@
 					<p>Recuerdo que una vez me ha dicho: «Usted puede llamarme Juliana o Julianita...»</p>
 				</div>
 				<div type="section">
-					<head>2</head>
+					<head xml:id="ne0330_head_003">2</head>
 					<p>Si tuviera algún amigo le confesaría estas pequeneces. ¡Ah! Si tuviera un amigo se tendría que reír con mis cosas. En mi vida suceden hechos... Hace tiempo fui a casa de un conocido. Después de discutir sobre muchas tonterías, cogí un lapicero que uno de sus niños llevaba en una mano. Se trataba de un lapicero apenas estrenado, y se me ocurrió que debía esperar una ocasión para guardármelo. Trató de dibujar el rostro de un niño. En ese momento el padre se fué de la habitación. Yo volví a recordar que carecía de lapicero para apuntar los pedidos de cintas. No lo dudé más y me guardé el que me servía para dibujar. Cuando apareció el padre, yo mostré el dibujo. «No está del todo mal», afirmó sin ningún entusiasmo.</p>
 					<p>Pasado un rato, y después de hacer unos comentarios sobre lo difícil que es situarse en «sociedad», el padre pidió a su hijito el lapicero. El niño hizo señas de que yo me lo había guardado. Como es natural, negué el que yo lo hubiera cogido. Para disimular mi inoportuna turbación, empecé a buscar el lapicero por el suelo, por entre las sillas y bajo la mesa. Al ponerme erguido, el padre me contempló lleno de un molesto recelo. Desde ese instante ya no pensé en otra cosa que no fuera en abandonar aquella casa. Pero ocurrió que algo extraño a mí mismo me sujetaba al suelo. El padre se fué a su despacho —estábamos en el comedor—, dejándome al irse una sonrisa de desprecio. Yo marché tras él para buscar una salida a mi estúpida situación. Al entrar en el despacho le dije: «El dibujo no está muy acertado..., creo que otra vez lo haré mejor.»</p>
 					<p>No me contestó. En cambio, me empujó hasta la puerta. Hallándome en el rellano de la escalera me explicó con una fría cordialidad: «Será conveniente que no vuelva usted por esta casa. Sucede —qué «sucede» más convencional— que yo salgo de Madrid uno de estos días.» Y me sonrió como lo había hecho anteriormente, con lástima.</p>
 					<p>Ya en la calle apreté el paso cuanto pude. Quería encontrarme lejos de donde vivía mi conocido. Cuando hube cruzado varias calles, saqué el dichoso lapicero y miré en torno mío. Nadie circulaba en aquel momento cerca de mi lado. Entonces me dije: «Ahora es la ocasión.» Y arrojé el lapicero contra el arroyo. La situación ya estaba solucionada.</p>
 				</div>
 				<div type="section">
-					<head>3</head>
+					<head xml:id="ne0330_head_004">3</head>
 					<p>Anoche tuve que mentir a la patrona. A pesar de no tener ningún encargo, la dije, recalcando mucho mis palabras: «Mañana tiene usted que despertarme a las siete en punto; necesito entregar varios pedidos.»</p>
 					<p>La patrona puso una cara feliz. En estos casos siempre me sonríe y me suele decir: «No se apure. Todo se arreglará.»</p>
 					<p>Y sin embargo, esto es lo que me acobarda. Es grotesco lo que voy a confesar, pero quiero decir la verdad. He aquí el hecho: La patrona se ha enamorado de mí. Hace unos días me he dado cuenta de una manera que no ofrece dudas. Ella se hallaba con su marido en el comedor. Yo estaba vistiéndome cuando oí que el patrón se quejaba de mis llegadas al amanecer, de mi costumbre de levantarme con las primeras luces del anochecer. Se notaba que el patrón no se atrevía a confesar sus sospechas. Tasado un rato, y después de un corto silencio, era la patrona la que hablaba alto. Por último, vi al marido marchar por el pasillo. Cruzó con la cabeza inclinada y mascullando palabras.</p>
 					<p>La patrona es gallega, tiene la cara ancha, la boca muy grande, y cuando anda por la casa parece un soldado. Su marido me mira cada día con más recelo. Sin duda cree que yo voy a terminar por seducir a su mujer. Hace unos díaB me saludó con una alegría pueril. Me golpeó en la espalda y me confesó: «Usted es la persona más honrada que conozco.»</p>
 				</div>
 				<div type="section">
-					<head>4</head>
+					<head xml:id="ne0330_head_005">4</head>
 					<p>Ahora, en la calle, me aparto de estos recuerdos. Me distraen las mujeres que regatean sus compras. Lo único que me molesta es tener que aguardar varias horas hasta ver a Martínez. De pronto siento una enorme alegría. Resulta que tengo alguna calderilla para poder entrar en un bar. Además me queda tabaco del que compré anoche.</p>
 				</div>
 				<div type="section">
-					<head>5</head>
+					<head xml:id="ne0330_head_006">5</head>
 					<p>Estoy cenando con prisa. En la casa de comidas estamos comiendo un mozo de cuerda y yo. El hombre se halla frente a mí. Cena sin mirarme, con el rostro casi metido en el plato de porcelana. En estos comedores parece que nos odiamos. Comemos nuestra escasa alimentación con molestia, sin fijarnos en los demás. Durante el tiempo que empleo en cenar la hija del dueño no se aparta de la puerta que conduce a la cocina. Todas las noches hace lo mismo; en los momentos libres se arrima a la puerta y no me quita el ojo.</p>
 					<p>La muchacha es gorda, de cutis grasiento y muy blanco. Al pagar, ella me mira con descaro, esperando, sin duda, que yo la diga algo agradable.</p>
 					<p>La entrego el dinero como todas las noches: casi con desgana.</p>
 				</div>
 				<div type="section">
-					<head>6</head>
+					<head xml:id="ne0330_head_007">6</head>
 
 					<p>Ahora estoy sentado, con una bebida sobre la mesa, y escucho música de pianola.</p>
 					<p>Los que vais a los grandes cafés no podéis comprender esta felicidad mía de entrar aquí a tomar un modesto cafó con leche. Para eso es necesario andar diez o quince kilómetros por las calles de Madrid, para después sentarse en este bar y dejar que transcurra una hora, dos horas.</p>
@@ -310,15 +331,15 @@
 			</div>
 		</div>
 			<div type="part">
-				<head>PRIMERAS ESCENAS</head>
+				<head xml:id="ne0330_head_008">PRIMERAS ESCENAS</head>
 					<quote>
 						<p>Peter Lynne debe su jama de ador cinematográfico a su manera de fumar en pipa. Gracias a esta cualidad fué visto en un café por mister Barry y contratado en el acto para trabajar en la película Marineros alegres.</p>
 						<p>Después de este film, Peter Lynne no ha conocido más que éxito tras éxito.</p>
 					</quote>
 				<div n="2" type="chapter" xml:id="ne0330_chap2">
-					<head>I: TONY EN LUGAR DE ANTONIO:</head>
+					<head xml:id="ne0330_head_009">I: TONY EN LUGAR DE ANTONIO:</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_010">1</head>
 
 						<p>Ahora fué doña Luisa la que recibió el dinero. Con sumo cuidado lo introdujo en su portamonedas y salió sin prestar atención a las mujeres que todavía tenían que esperar. Al llegar al ancho portalón que daba a la calle de Atocha, cruzó ante la guardia. Los uniformes de los carabineros le trajeron el recuerdo de su marido. Esto le ocurría todos los primeros de mes, cuando, con sus treinta duros en el bolso, salía del viejo edificio de la Deuda Pública. Pero este recuerdo traía poca felicidad a su vida y lo ahogó inmediatamente. Después de pensar que iba a cumplirse el sexto aniversario de la muerte de su marido, doña Luisa empezó a andar camino de la plaza de Santa Cruz.</p>
 						<p>Tenía todo tan calculado, que se dirigió inmediatamente a una zapatería de la calle de Preciados. El modelo de los zapatos estaba elegido desde hacía dos semanas. La cosa tenía su importancia, puesto que los zapatos, por efecto de un inesperado saldo, iban a costarle a doña Luisa cinco pesetas con noventa y cinco céntimos.</p>
@@ -329,7 +350,7 @@
 						<p>La buhardilla era demasiado pequeña, pero bastaba para ellos dos. Desde el fogón seguía un corto pasillo, que terminaba en la única habitación donde comían y descansaban por la noche, separados por una cortina. Media habitación llegaba a una altura normal; pero la otra mitad se inclinaba hasta cerca del suelo. En el balconcillo que daba al tejado doña Luisa tenía unos tiestos, a los que prestaba mucha atención. Era un tesoro inútil, puesto que nadie, a excepción de ella y Antonio, se daba cuenta de aquella belleza que crecía sobre el tejado. Cuando doña Luisa o Antonio se inclinaban sobre los tiestos, veían las esculturas de piedra que coronaban la Puerta de Toledo. Mucho más a distancia podían contemplar las casas agrupadas a lo largo de la carretera de Extremadura, y algunos claros, donde en verano caía el sol con toda su fuerza. Era verdad que aquello era muy reducido; que para hacer uso del retrete había que salir a un rellano de la escalera, donde estaba la fuente junto a la letrina. Sin embargo, doña Luisa estaba satisfecha de su buhardilla, ya que por cuatro duros tenía solucionado lo del piso. Con las ciento treinta pesetas que le quedaban después de pagar el alquiler, doña Luisa hacia grandes economías para vestir y comer. Estaba tan segura de que algún día las cosas iban a cambiar, que a veces llegaba a emocionarse con este pensamiento. Entonces, en medio de un agradable silencio, acunaba la rubia cabeza de su ahijado.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_011">2</head>
 						<p>Doña Luisa preparó agua caliente para que Antonio se hiciera un gran lavado. Después utilizó el fogón para poner una comida extraordinaria. Los primeros de mes, en la buhardilla se preparaba un menú a base de «alimentos caros». Pero como doña Luisa solía hacerlo todo con un gran sentido, estos «alimentos caros» no le costaban mucho dinero. Cuando el despertador que había sobre la cómoda marcó la una, la comida fué puesta en la pequeña mesa de caoba —esta mesa pertenecía a cierta época de bienestar—. A las dos de la tarde doña Luisa se sentó en una silla para decir a Antonio:</p>
 						<p>—Espero que te acuerdes de todo. Primero empiezas con la cómoda, luego con la mesa y después conmigo.</p>
 						<p>Antonio fué al extremo del pasillo, y, desde la puerta, inició unos pasos hasta llegar adonde estaba doña Luisa. Entonces se inclinó ligeramente ante la cómoda y pronunció: «Buenas tardes, señor X. ¿Cómo está usted, señor X?»</p>
@@ -342,21 +363,21 @@
 						<p>—Si lo haces así —afirmó doña Luisa con entusiasmo—, todo saldrá muy bien. Acuérdate siempre del final. ¿Me oyes bien? Sobre todo el final.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_012">3</head>
 						<p>En «Academia-Film» se proporcionaban artistas convenientemente adiestrados. Ningún director de películas había solicitado personal de esta Academia, lo que no era un obstáculo para que allí abundaran los alumnos. En una cartulina, claramente visible, se hacía saber al visitante que los pagos se hacían por adelantado. Aunque el piso donde estaba la Academia era bastante espacioso, los alumnos solamente podían utilizar dos habitaciones. En el resto de la casa vivían los dos hermanos Sancho. A veces llegaba de donde debía de estar la cocina un olor sospechoso de cosa frita. En esos momentos no estaba entre los alumnos José Sancho, el hermano mayor. Cuando José regresaba de las clases, era su hermano Jacinto el que desaparecía por el pasillo para meterse en la cocina. Ellos mismos se hacían las camas, y con ayuda del botones, los suelos de la casa estaban limpios a las tres de la tarde. Las lecciones comenzaban a las cuatro. A esa hora los alumnos tomaban asiento en unos bancos de madera, y entre las lecciones a desarrollar se destacaban estas dos: «En una habitación está cosiendo Rosa. Sin que ella se dé cuenta, alguien abre la puerta y entra en la habitación el seductor Alberto. Rosa continúa dando puntadas, hasta que una mano, que se apoya traidoramente en su cabeza, la hace volver los ojos. Alberto la habla pasionalmente. Rosa retrocede hacia la pared, mientras con un gesto, claramente significativo, explica que ella pertenece a otro hombre. Alberto no toma en consideración esta protesta y, avanzando resuelto a todo, llega hasta Rosa para rodearla con sus brazos. En ese instante es cuando tiene que aparecer el esposo de Rosa. Se entabla una breve lucha y el seductor Alberto abandona la habitación completamente vencido. Con el pelo en desorden llega hasta la puerta y desde allí lanza una mirada de odio al esposo de Rosa. Luego desaparece.»</p>
 						<p>La escena tiene aún que seguir su curso. Con el rostro lleno de sospecha, el marido recrimina a su mujer el que lo engañe con tanto descaro. Rosa grita su inocencia, explicando que Alberto la ha sorprendido en la habitación. Sin embargo, el marido no cree nada de lo que dice Rosa, y huye de la alcoba para no volver más. Rosa queda llena de espanto; completamente enloquecida. Con la más triste desesperación se acerca a una ventana para mirar un cielo invisible. Entonces uno de los hermanos Sancho, grita una palabra inglesa: ¡Stop!</p>
 						<p>Es que la escena ya ha terminado.</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_013">4</head>
 						<p>La otra importante prueba a la que eran sometidos los alumnos de «Academia-Film» se desarrollaba en estos términos: «El joven duque arriesga fríamente su fortuna en una sala de juego. (Este texto y el anterior pertenecen a los guiones escritos por los hermanos Sancho.) Frente a él, y al otro lado de la mesa, se halla la seductora artista de ópera, Vera Bellini, mujer de belleza misteriosa y causante de tres suicidios. Vera Bellini ama al joven duque, pero prefiere mortificarlo con su indiferencia. Observa cómo el duque desciende a una ruina cierta. (Mientras esto sucede, los demás artistas pasearán como si fueran invitados a la fiesta.) Sin ninguna compasión, Vera mira al duque despectivamente. Entonces el aristócrata se juega su finca de Montecarlo. Vera Bellini se da cuenta del gesto y pide una copa de champán; bebe dos sorbos, y comienza a reír nerviosamente. El duque mira con algún disimulado temor el girar de la bolita; pero cuando contempla que otra vez le falla la suerte, observa a Vera Bellini y marcha al jardín. Vera lo ve salir. Su gesto de burla se transforma en gesto de tristeza. Vacila un instante, pero al fin marcha en busca del duque para ofrecerle <seg rend="smallcaps">bus </seg>joyas y su amor.— Stop.»</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_014">5</head>
 						<p>Como elementos técnicos, los hermanos Sancho tenían un viejo aparato tomavistas. Cuando en «Academia-Film» se presentaba un alumno con aspecto de tener dinero, Jacinto, como operador, y José, como director, lo citaban para que acudiera a la Casa de Campo. Allí le hacían ir de un lado para otro. El alumno tenía que «reír fríamente, con sarcasmo y con ironía». También era necesario que «pusiera cara de tristeza», y si llegaba a llorar, entonces José Sancho le tocaba en el hombro para elogiarle aquellas insospechadas facultades para el arte de la pantalla. José, en su papel de director, le hacía saber al alumno que acababan de «rodarle» unos metros de película, que las escenas habían salido muy naturales y que no tardaría mucho tiempo en que fuera contratado ventajosamente. El alumno pagaba de cien a doscientas pesetas, aparte de lo que abonaba por las lecciones de la academia. Ya hecha la despedida, Jacinto cogía el trípode y José la máquina tomavistas. Aunque los dos hermanos aseguraban que en su interior se hallaba el celuloide impresionado, la verdad era que dentro del aparato no había absolutamente nada.</p>
 					</div>
 					<div type="section">
-						<head>6</head>
+						<head xml:id="ne0330_head_015">6</head>
 						<p>Doña Luisa pasó con Antonio a una de las habitaciones de «Academia-Film». Allí había una mesa, un diván y cuatro sillas. Doña Luisa observó multitud de «fotos» donde sonreían o miraban seriamente artistas de fama mundial.</p>
 						<p>Jacinto Sancho no tardó en aparecer.</p>
 						<p>—He leído el anuncio de ustedes —empezó doña Luisa—, y quisiera saber el precio de las lecciones.</p>
@@ -389,20 +410,20 @@
 					</div>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0330_chap3">
-					<head>II: COSAS DE «ACADEMIA-FILM»</head>
+					<head xml:id="ne0330_head_016">II: COSAS DE «ACADEMIA-FILM»</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_017">1</head>
 						<p>De los veinticuatro alumnos que estaban inscriptos en «Academia Film», el más mimado por los hermanos Sancho era un muchacho de diecinueve años. Este alumno se llamaba Ramón Díaz, y era un tipo pequeño, de anchas espaldas y rostro inocentón. Jacinto Sancho le había sugerido que poseía grandes cualidades para interpretar papeles de hombre feroz. Ramón Díaz estaba empleado como pinche de cocina en un palacio madrileño. Esto, que parecía no tener ninguna importancia, motivó un interrogatorio entre Ramón Díaz y los hermanos Sancho. El resultado de esta conversación fué que todas las tardes Ramón Díaz entrara directamente a la cocina perteneciente a «Academia-Film». Allí dejaba su paquete y después marchaba a la habitación para comenzar las lecciones con los demás alumnos. El envoltorio dejado en la cocina contenía restos de lo que se cocinaba en el palacio. Una tarde Ramón Díaz dejó en la cocina algo poco vulgar. Se trataba de unos huevos cuyo cascarón estaba pintado de morado, de azul y de amarillo. Como los hermanos Sancho pidieran una explicación sobre la pintura que adornaba los huevos, Ramón Díaz confesó que siempre que el obispo iba a comer al palacio era costumbre servirle los huevos pintados de varios colores.</p>
 						<p>Desde aquella tarde los hermanos Sancho no dudaron que los obispos eran unos seres privilegiados.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_018">2</head>
 						<p>Para no gastar dinero mientras aguardaban a que comenzaran las clases, doña Luisa y Tony dieron un paseo, y terminaron sentándose en un banco de la glorieta de San Bernardo.</p>
 						<p>Doña Luisa entregó a Tony diez céntimos para que comprara pipas de girasol. Después pasaron cerca de hora y media viendo cruzar tranvías y automóviles. A pesar de que un sol agradable hacía olvidar que se estaba a merced de los días helados de febrero, doña Luisa anunció a Tony de que muy pronto tendría que llover, ya que a ella le dolían las articulaciones de los pies. Después de decir ésto, sacó un pequeño peine y corrigió a Tony el pelo. Regresaron a «Academia-Film» antes de las cuatro. Fueron los primeros en sentarse en los bancos que encuadraban la sala de clases, y doña Luisa vió poco más tarde que los alumnos eran todos muy jóvenes. En días sucesivos pudo observar que los jóvenes que gastaban un fino bigote eran solicitados por el director para interpretar el papel del «seductor Alberto». En cambio, los otros alumnos que no usaban bigote hacían todas las tardes de «esposos de Rosa». Estas observaciones causaban en doña Luisa un efecto maravilloso, aunque a veces la llenaban de confusión.</p>
 						<p>También observó que de las tres señoritas que había en «Academia-Film» solamente la más delgada y menos simpática, una señorita de rostro extrañamente bello, era la que tenía que ensayar el papel de la «cantante Vera Bellini». Las otras alumnas, que a doña Luisa le eran extraordinariamente simpáticas, no salían del centro de la sala más que cuando había que hacer el papel de Rosa cosiendo de espaldas a la puerta por donde tenía que entrar el «seductor Alberto», y más tarde, el «esposo sorprendido».</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_019">3</head>
 						<p>En aquella primera tarde en que Tony debía de empezar sus lecciones, las clases no se dieron hasta las cuatro y media. De este retraso fué culpable el alumno Ramón Díaz. Este había entrado en la cocina con un paquete. Al regresar a la habitación donde aguardaban los alumnos, José Sancho notó en doña Luisa como mi gesto de franca impaciencia. Entonces se fué directamente a ella.</p>
 						<p>—Les voy a presentar a ustedes—dijo para todo el mundo— al pequeño Tony. Esta academia necesitaba un gran artista infantil.</p>
 						<p>Sin prestar demasiada atención al cambio de saludos, José Sancho se puso a liar un cigarro. Mientras tanto, doña Luisa dijo algo al oído de Tony. Este empezó por el alumno que tenía más cerca, hasta dar la vuelta al pequeño salón. Más de diez veces se le oyó repetir esta única pregunta: «¿Cómo está usted? ¿Cómo está usted? ¿Cómo está usted?...»</p>
@@ -427,7 +448,7 @@
 						<p>En el centro del pasillo José Sancho manoseó el envoltorio de los filetes, hasta que, dando media vuelta, hizo un viaje a la cocina y dejó en el fogón lo que había rechazado el hombre de los argumentos. Para alejar de su cabeza la inquietud que le había provocado el visitante con su inesperada despedida, tomó un bocado y bebió un vaso de vino. Cuando apareció entre los alumnos se estaba ensayando la escena de «Rosa y el seductor Alberto».</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_020">4</head>
 						<p>José Sancho llegó adonde estaba su hermano y, suspendiendo la escena, dijo para todos:</p>
 						<p>—Muy pronto van ustedes a trabajar en una película. Acaba de estar conmigo un señor para pedirme que le haga un presupuesto de un <seg rend="italics">film</seg> que no cueste mucho dinero.</p>
 						<p>En la gente hubo un murmullo feliz. Jacinto Sancho miró a su hermano detenidamente.</p>
@@ -445,15 +466,15 @@
 					</div>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0330_chap4">
-					<head>III: MANUSCRITO DE ÁLVARO GIMÉNEZ</head>
+					<head xml:id="ne0330_head_021">III: MANUSCRITO DE ÁLVARO GIMÉNEZ</head>
 
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_022">1</head>
 						<p>Mañana por la mañana empezaré a desenvolverme en mi nueva situación. Una situación poco agradable. Sin embargo, en cualquier momento podría justificar el haber dado este paso, que ha escandalizado a mis compañeros de redacción, y que, desde luego, ha sacado de quicio a mi antiguo director. Ya que hablo de justificar, quiero decir algo de lo que me ha obligado a abandonar mi profesión de periodista. La gente no sabe bien lo que es un periodista. No me refiero a los periodistas que firman sus artículos, que comen con los ministros y que, a veces, son nombrados gobernadores civiles. Hablo de esos periodistas obscuros que van de un lado para otro con sus zapatos <seg rend="italics">decentemente</seg> viejos. Esos periodistas... En fin, lo cierto es que mañana yo debo madrugar. Tengo todo preparado. Se trata de un pantalón y una americana de mangas destrozadas. He aquí mi nuevo uniforme. Vestido con este traje no tendré que preguntar todas las mañanas por la salud de la esposa del director, ni como están los niños del redactor-jefe. Declaro que estoy envilecido. En dos años no he cesado de llamar ilustres o insignes a unos cuantos cretinos que hacen teatro o arte para facilitar la vulgar digestión de los públicos «distinguidos». Durante dos años me he puesto de rodillas ante la robusta tontería nacional. Todo esto es cierto. Mas ahora es como si fuera hacerme de nuevo. A partir de mañana voy a ser otro hombre. Un hombre que va a ganar su comida sin necesidad de preguntar al señor ministro de Agricultura qué opina sobre «la cuestión del trigo».</p>
 						<p>Por último, he aquí la noticia. Desde mañana empiezo a trabajar como peón de albañil.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_023">2</head>
 						<p>Yo estaba harto del periódico mucho antes de buscarme este nuevo trabajo. Ya no podía aguantar aquel salón donde nos movíamos los redactores. Mis compañeros eran unos terribles iconoclastas dispuestos a negar el excelente «orden» capitalista. Sin embargo, en los dos años que he estado en el periódico he visto desfilar por la redacción a mucha gente nueva. Los «otros» han logrado colocarse en diarios bendecidos por Su Santidad.</p>
 						<p>El único que no abandonó aquella redacción fui yo. Esta fidelidad al periódico no pasó desapercibida para el director. El hombre quiso protegerme, y lo realizó a su manera. En adelante todos los domingos estaba invitado a comer con el jefe. Lo grave era lo que venía después de la comida. De tres a siete de la tarde yo tenía que jugar a las cartas con la mujer del director. Una vieja pintada y gruñona, a la que no era conveniente ganar en ninguna clase de juego. Mientras se sucedían las partidas, el director marchaba a otra habitación a tocar óperas italianas.</p>
 						<p>La vieja me hacía trampas. Puedo asegurar que de haber seguido visitando la casa del director es posible que hubiera acabado de mala manera. Pero no quiero continuar este embuste. Es preferible contar la verdad aunque mi papel quede un poco lamentable. La última tarde que visité la casa del director no pude sujetar mis nervios y ocurrió el incidente. Detallaré el suceso todo lo posible por si consigo hacer «razonable» mi grosería. Desde luego, hubo agresión, pero no una agresión grave. En la casa estábamos el director, su mujer y yo. La criada había salido de paseo, no teniendo que regresar hasta la hora de la cena. El director fué en busca de sus óperas italianas, quedando yo con la dama. Nota importante es que yo jugaba dinero, y este dinero me lo daba el director «generosamente». Mi jefe conocía muy bien el aspecto moral de su esposa, por lo que sabía que aquellas cinco o seis pesetas que me regalaba no iban a tardar en pasar a poder de su mujer.</p>
@@ -468,19 +489,19 @@
 						<p>Al día siguiente fui al periódico, me dieron unas pesetas, y por encargo del director me comunicaron que no volviera más por la redacción.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_024">3</head>
 						<p>Como era de esperar, el dinero me duró poco tiempo. En cuanto no pude pagar a la patrona decidí buscar trabajo. Desde luego, nada de redacciones. El periódico pudre de una manera lenta. Y cuando un periodista llega a ser llamado «maestro del periodismo», entonces ese hombre es como la gran bestia estúpida.</p>
 						<p>Lástima que mi situación haga pensar que opino bajo una presión de envidia. Es verdad que yo no he demostrado aptitudes brillantes en el periodismo; pero esta mala suerte es debida principalmente a mi «modo» de reaccionar ante las cosas.</p>
 						<p>No quiero ocultar que mi ex director trató alguna vez de encauzarme para que yo pudiera llegar a ser un gran periodista. Sus consejos venían todos a terminar en que era necesario que comprendiera que no se deben atacar «ciertas cosas», puesto que «todo son intereses creados».</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_025">4</head>
 						<p>He encontrado este trabajo gracias a un pariente de mi madre. Se trata de un modesto contratista de obras, a quien mi petición de ser admitido como peón de albañil no ha dejado de causarle algún estupor.</p>
 						<p>A las siete y media de mañana tengo que estar en su casa para recoger algunas herramientas. Después marcharé a la obra. Mi pariente es un hombre endurecido por el trabajo. Aunque sus aspiraciones son las de llegaY a construir grandes edificios, por ahora tiene que conformarse con levantar casas de uno o dos pisos. Cuando le hice la visita me aconsejó que buscara trabajo en los periódicos —seguramente tenía la idea de que yo era un hombre «listo»—, y hasta se me ofreció para hablar a un amigo con el fin de meterme en una oficina. Al comprender que lo único que yo deseaba era trabajar como obrero, dejó de hablarme de los periódicos y de su amigo. Entonces se puso a hablar de mi madre. Empezó recordando que él había jugado con ella cuando los dos eran niños. Como notara que esta explicación me hacía su efecto, redondeó su recuerdo hasta confesar que fué novio de mi madre mucho antes de que la conociera mi padre. Después se habló de lo referente al trabajo, explicándome mi pariente que el ramo de la construcción iba cada vez peor debido a las exigencias de los obreros y a la carestía de los materiales.</p>
 						<p>«No sé dónde vamos a parar», terminó diciendo poco antes de que yo saliera de su casa.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_026">5</head>
 						<p>La obra se halla al otro lado del Puente de la Princesa, en un barrio llamado de Usera. Cuando llegamos, seis hombres están descargando de un carro cubos, palas y picos. Ya han dejado en el suelo dos carretillas y algunos tablones para formar los andamios. Mi pariente se dirige al encargado, y entre los dos toman unas medidas sobre la tierra, en la que verdean algunos brotes de hierba. A nuestro alrededor no hay ninguna casa edificada. A unos cien metros de nosotros tres vacas pacen bajo la vigilancia de un muchacho. La mañana va a transcurrir en medio de este limpio silencio que hace que las voces de mi pariente y el encargado tengan una sonoridad especial.</p>
 						<p>Estoy vestido con mi traje viejo y aguardo el que me manden empezar. El momento llega en seguida. El encargado nos reparte el trabajo, y yo empiezo a maniobrar con un pico sobre la tierra húmeda. Mi pariente se marcha en cuanto deja todo ordenado. Aparte de las zanjas para los cimientos, tenemos que hacer un vaciado de cuatro metros, donde ha de quedar construido el sótano. Sin dejar de picar, me voy enterando de estas cosas. También me entero que, cerca de aquí, hay una taberna donde puede comerse por un precio muy arreglado.</p>
 						<p>Mientras descanso, el que está detrás de mí aparta con la pala la tierra picada. En estos dos o tres minutos respiro mi fatiga y veo a lo lejos la silueta de Madrid. Por la parte de la derecha brota de entre los edificios el cuadrado rojo de la iglesia de Santa Cruz.</p>
@@ -489,7 +510,7 @@
 						<p>Respondo con la cabeza y, casi tambaleándome, trato de alzar el pico para clavarlo en la tierra. Quiero impedir que el encargado cuente a mi pariente mi debilidad, y aprieto el astil con mis manos llagadas. Hundo el pico docenas de veces pensando que por fin llegará mediodía; un mediodía falto de sol, donde yo podré descansar una hora.</p>
 					</div>
 					<div type="section">
-						<head>6</head>
+						<head xml:id="ne0330_head_027">6</head>
 						<p>Por la noche no he tenido fuerzas para levantarme a cenar. Estoy deshecho, a pesar de las fricciones de alcohol que me he dado por todo el cuerpo. Cuando he cogido el sueño, ya no despierto hasta la mañana siguiente. A las seis y media me incorporo en la cama y me pregunto si no debo buscar otra clase de trabajo. Me acuerdo de los dolores de cabeza. En cuanto a mis manos, no necesito mirármelas para asegurarme que están hechas una lástima. Al lavarme, el agua enjabonada me escuece en las heridas. Termino de vestirme sin una segura noción de lo que voy a hacer, y salgo del piso.</p>
 						<p>Camino del Puente de la Princesa pienso en muchas cosas. Puede que todo el pequeño sistema filosófico de mi vida se halla modificado en esta mañana en que no he querido utilizar el tranvía para de esta manera poder manejar convenientemente mis ideas. En esta mañana he tenido bastante tiempo para asegurarme que lo importante por ahora es resistir.</p>
 						<p>Me produce contento el que anoche mi patrona no ocultara su alegría al saber que yo ya había encontrado trabajo. Para no alarmarla no la he dicho la verdad sobre mi nueva profesión. En el fondo ella es lo mismo que mis ex compañeros del periódico y piensa exactamente igual que mi antiguo director.</p>
@@ -497,9 +518,9 @@
 					</div>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0330_chap5">
-					<head>IV: UN COMPAÑERO DE CLÍNICA</head>
+					<head xml:id="ne0330_head_028">IV: UN COMPAÑERO DE CLÍNICA</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_029">1</head>
 
 						<p>Después de trabajar en las construcciones de mi pariente durante ocho meses, hoy he tenido que dejar la faena por haberme lesionado en un pie. La herida no es grave. Sin embargo, un compañero me lleva a una Casa de Socorro. Después de la cura mi acompañante se marcha a la obra, y yo tomo un tranvía para regresar al centro de Madrid y recoger en la clínica que depende de la Sociedad de Seguros mi baja como accidentado.</p>
 						<p>Cuando salgo de la consulta son las cuatro de la tarde. Lo primero que hago es comprarme unas alpargatas. Me coloco una en el pie herido, y con mi pequeña cojera me dirijo a casa a descansar.</p>
@@ -509,7 +530,7 @@
 						<p>Felipe usa de sus «habilidades», porque sabe muy bien que cincuenta años de fidelidad al amo o al patrón vienen a tener como premio unas trescientas sesenta y cinco pesetas anuales.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_030">2</head>
 						<p>Hoy se me ha hecho la última cura. El médico afirma que dentro de cuatro o cinco días podré empezar mi trabajo. Quedo en volver a la clínica para recoger el alta. Al salir encuentro a Felipe en el gabinete de visitas. El ya ha sido revisado, y ahora me pregunta cómo marcha lo mío.</p>
 						<p>No le digo nada hasta que estamos en plena calle. Cuando le explico que a fines de semana me van a dar el alta, Felipe frunce el ceño como si mi curación fuera una mala cosa.</p>
 						<p>—¿Tienes mucho interés en empezar el trabajo? —me pregunta, mirándome el pie derecho.</p>
@@ -528,7 +549,7 @@
 						<p>Marchando hacia la puerta, el periodista trata de ponerse delante de nosotros. Entonces lo miro fijamente, y cuando él espera con una sonrisa el que le pregunte sobre sus «actividades literarias», yo rae dirijo a Felipe para decirle cualquier cosa acerca de «la mosca de Milán»,</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_031">3</head>
 						<p>Anoche fué Felipe el que me colocó el parche. Ahora, al levantarme, me observo la parte del talón donde tengo puesta una cantárida del tamaño de una moneda de dos pesetas. Según las órdenes de Felipe, no he de quitarme el parche hasta una hora antes de ir al médico. Cuando llega este momento, me lo desprendo con cuidado y entonces descubro que sobre el sitio donde tuve la herida se ha formado una ampolla de un color amarillento.</p>
 						<p>Otro consejo de Felipe es que me quite con alcohol las huellas o residuos que haya dejado el parche. Realizado todo, me voy a comer, y sobre las cuatro me dirijo a la clínica.</p>
 						<p>Cuando me quito el calcetín, el médico y los practicantes miran extrañados el proceso que ha tenido la herida en cuatro días. Sobre todo, el médico me contempla preocupado.</p>
@@ -553,24 +574,24 @@
 					</div>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0330_chap6">
-					<head>V: «FILMS ROCAMORA»</head>
+					<head xml:id="ne0330_head_032">V: «FILMS ROCAMORA»</head>
 
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_033">1</head>
 						<p>Hasta aquella tarde en que Felipe fué abordado en un café, la razón social «Films Rocamora» había producido tres películas. Este material cinematográfico dejaba una gran ganancia, puesto que los gastos quedaban reducidos a pocas pesetas, gracias a las habilidades del señor Rocamora. Para comprender con claridad por qué estos <seg rend="italics">filvis</seg> producían aquellas ganancias, es necesario explicar cómo el señor Rocamora había organizado su sistema de trabajo. Primeramente revelemos que el señor Rocamora tenía como operador tomavistas a un hombre de pocas aspiraciones. El «cameramen» había recibido unas cuantas lecciones sobre fotografía en los días en que el señor Rocamora lo tenía como contable para sus negocios teatrales. Rodríguez —el contable, secretario y operador del señor Roca-mora, era llamado simplemente Rodríguez— caía muy útil en aquella casa.</p>
 						<p>Rodríguez cobraba por sus innumerables aptitudes un sueldo de doscientas cincuenta pesetas mensuales. A cambio de este dinero, Rodríguez tenía que buscar artistas, maquillarlos y después fotografiar las escenas.</p>
 						<p>Entre las gratificaciones que recibía el operador estaban los trajes usados del señor Rocamora y las palabras referentes a un aumento de sueldo. A Rodríguez nunca se le oía una protesta, pero tampoco fué posible ver en su cara un gran contento. Cuando hablaba, nunca el tono de su voz se elevaba demasiado. Todo lo hacía silencioso y procurando no meter escándalo. Rodríguez era eso que llaman un hombre sin carácter.</p>
 						<p>En cambio, el señor Rocamora gritaba cuando era necesario; pero su palabra se hacía muy dulce en el momento de escamotear algún dinero a los artistas que desfilaban por sus películas. De técnica cinematográfica el señor Rocamora sabía bien poca cosa. Todo lo hacía por lo que leía en las revistas de cine. Y ahora descubramos el sistema de producción del señor Rocamora.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_034">2</head>
 						<p>En primer lugar, el señor Rocamora buscaba un argumento de público. En este argumento tenía que haber un torero. Si en la película anterior circulaba este personaje, entonces se incluía en el nuevo <seg rend="italics">film</seg> a un bandido andaluz. Si el torero y el bandido andaluz ya habían sido utilizados, el señor Rocamora se decidía por un argumento donde nuevamente actuara mi torero. Quince días antes de empezar la película el señor Rocamora enviaba a Rodríguez a un periódico para que insertara este anuncio: «Jóvenes de ambos sexos. Vuestro porvenir está asegurado si os dedicáis al cine. En... (aquí venía el domicilio de «Films Rocamora») se os hará una prueba gratuitamente. Más de cien artistas contratados en menos de un año.»</p>
 						<p>La casa «Films Rocamora» se veía invadida por hombres y mujeres. Rodríguez los iba pasando al despacho del jefe, después de una escrupulosa selección. El señor Rocamora elegía lo que le era necesario, y al día siguiente efectuaba las pruebas. Estas pruebas se desarrollaban en distintos lugares; en una calle madrileña, en una taberna, en los alrededores de la ciudad o en algún pueblo cercano. Después de las pruebas, el futuro artista recibía amplios elogios del señor Rocamora. El celuloide impresionado en los ensayos era llevado a revelar, se sacaba una copia del negativo y el señor Rocamora, ayudado por Rodríguez, hacía el montaje de las escenas y de los títulos. La gran sorpresa era para los artistas que, veinte o treinta días después de haber hecho las pruebas, veían una película en la que ellos habían tomado parte. Lo admirable del señor Rocamora era aquella habilidad suya para calmar a los que acudían a protestar del engaño recibido en las pruebas. Tenía una voz tan persuasiva, que los principiantes se alejaban de la oficina con la ilusión de trabajar en la próxima película a cambio de excelentes honorarios.</p>
 						<p>En la «próxima película» el señor Rocamora repetía lo del anuncio, y por segunda vez realizaba su <seg rend="italics">film</seg> sin haber gastado mucho dinero.</p>
 						<p>La fama de hombre de negocios que el señor Rocamora empezó a adquirir dió motivo a que un caballero de Valencia le ofreciera algún dinero a cambio de hacer una película cuyo asunto proporcionaba el nuevo socio de «Films Rocamora». El argumento tenía situaciones tan importantes como éstas: «Alberto Cabeza de Toro es un joven aristócrata de apuesta figura y vida licenciosa. Está enamorado de la linda hija de los marqueses de Peña Rubia, la señorita Carlota. Cabeza de Toro no puede pagar una deuda de juego, y cuando se dispone a pegarse un tiro aparece Carlota y se desarrolla la escena que es de suponer. Cabeza de Toro abandona su vida de antes y marcha a Marruecos para ingresar en la Legión extranjera. Después de brillantes hechos de armas, regresa Heno de cruces y, por fin, se casa con Carlota...»</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_035">3</head>
 						<p>—Aquí hay algunas dificultades —señaló el señor Roca-mora a su nuevo socio—. Tenemos que hacer las escenas de Marruecos, y esto costará más de lo que usted aporta para la producción de la película.</p>
 						<p>El socio hizo un gesto como si aquello le preocupara demasiado. En realidad, esta preocupación duró en él muy poco tiempo. El señor Rocamora salió en su ayuda con esta imprevista solución:</p>
 						<p>—Se me ha ocurrido una idea, y es que lo de Marruecos lo podemos hacer en la finca de un amigo mío. Esta finca se halla cerca de Leganés.</p>
@@ -585,7 +606,7 @@
 						<p>El socio quedó conforme en que se agregara a la película ««Ua sargento gordo», el cual tendría que hacer una serie de escenas regocijantes.</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_036">4</head>
 						<p>Doña Luisa, con el periódico en una mano, entró en la oficina de «Films Rocamora» acompañada por Tony. Rodríguez intentó cerrarles el paso, pero ella fué avanzando, hasta encontrarse frente al director.</p>
 						<p>—¿Qué le trae por aquí? —preguntó el señor Rocamora, creyendo que la mujer y el niño ya habían estado en aquella casa.</p>
 						<p>Doña Luisa hizo alusión al anuncio, pero el señor Rocamora explicó que ya estaba tomado todo el personal.</p>
@@ -598,8 +619,8 @@
 						<p>Tony no dijo nada. Estaba totalmente abrumado. Como si de aquel fracaso solamente él tuviera la culpa. Dejaron el portal, y después continuaron juntos camino de la calle de Toledo.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
-						<head><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
+						<head xml:id="ne0330_head_037">5</head>
+						<head xml:id="ne0330_head_038"><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
 						<p>Felipe me ha hecho un calado en un zapato, y sin la nota deprimente de la alpargata, ahora nos dirigimos a la casa cinematográfica. A última hora he tratado de no acompañarle, pero Felipe ha sabido quitarme de la cabeza esta idea. Todos sus pensamientos convergen en que el cine es el gran negocio del porvenir.</p>
 						<p>—La prueba de que las películas dan mucho dinero la tienes en que todos los cines siempre están llenos.</p>
 						<p>Le dejo que continúe elogiándome el cine para yo poder pensar en mis asuntos.</p>
@@ -635,7 +656,7 @@
 						<p>—Cuando yo tenía tus años —me confiesa Felipe con alguna pesadumbre— era sargento del ejército mejicano y pesaba cuarenta kilos menos que ahora. Sin embargo, aquí me tienes dispuesto a todo.</p>
 					</div>
 					<div type="section">
-						<head>6</head>
+						<head xml:id="ne0330_head_039">6</head>
 						<p>La película se ha realizado con el título <seg rend="italics">Todo lo puede el amor.</seg></p>
 						<p>Lo único interesante de este <seg rend="italics">film</seg> ha sido el suceso del que ha participado Felipe. Ayer se celebró la primera exhibición de <seg rend="italics">Tolo lo puede el amor</seg> en una prueba a la que solamente han sido invitados los artistas que han tomado parte en la película y algunos periodistas.</p>
 						<p>El pequeño escándalo ha estallado al salir en la pantalla las escenas del joven Cabeza de Toro cuando arriesga su dinero en una casa de juego. Alrededor de la mesa están algunos militares; pero antes explicaré lo que ha dado origen a que algunos espectadores hayan exteriorizado su alegría viendo hacer a Felipe «cierta maniobra» que no estaba escrita en el argumento de la película. El hecho es el siguiente: Hace un mes se filmaron estas escenas de la sala de juego. Yo actué de comparsa y fui colocado con otros artistas alrededor de una larga mesa. Cerca de mí estaban el protagonista y Felipe. Como no había fichas para simular las jugadas, el director mandó que nos entregaran a cada uno una pieza de cinco pesetas. Con el duro sobre el tapete verde cada cual fingía su postura, y al acabar las escenas se dió la orden de entregar el dinero. En aquel momento se originó algún escándalo, pues faltaron cuatro duros. No hubo manera de recuperarlos, ni de averiguar quiénes se habían guardado estas pesetas. Este acontecimiento ha estado mucho tiempo sin que nadie lo volviera a recordar, hasta ayer que el director mostró la película a artistas y críti-eos. La carcajada ha sido general en las escenas de la sala de juego, cuando todo el mundo ha visto cómo Felipe se guardaba, con un inútil disimulo, la pieza de cinco pesetas que tenía que haber entregado una vez acabada la escena.</p>
@@ -649,10 +670,10 @@
 						<p>Y me contempla con unos ojos que expresan claramente: «Llevarse un duro no tiene esa importancia que le estáis dando. Un duro no es mucho dinero.»</p>
 					</div>
 					<div type="section">
-						<head>VI: UNA TERTULIA</head>
+						<head xml:id="ne0330_head_040">VI: UNA TERTULIA</head>
 					</div>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_041">1</head>
 
 						<p>El café forma ángulo con las calles de Alcalá y Peligros. Al fondo del establecimiento hay un rincón donde acuden los artistas cinematográficos. Llegan a ocupar hasta cinco mesas, lo que supone la entrada de unos veinte clientes. De estos veinte clientes, unos cuantos toman café o consumen cualquier clase de bebida. Los otros no piden nada y suelen aparecer en la reunión con un retraso prudente. Estos últimos buscan su asiento sin el barullo del caballero que tiene para pagar su consumición. No se quitan el sombrero, y cuando acude el camarero (éste sabe lo que va a suceder), el que acaba de sentarse explica sonriente: «No me traiga nada. Me voy en seguida».</p>
 						<p>Si el camarero se decide a preguntar a otro de los que llegan retrasados, tiene que escuchar algo parecido a esto: «Muchas gracias. Acabo de tomar café en otro sitio.»</p>
@@ -663,7 +684,7 @@
 						<p>Norberto G. Robledal gasta un pelo muy largo, de un color cenizoso. También fuma un tabaco que saca de un paquete impreso con letreros ingleses. El humo que brota de su pipa tiene un ligero matiz azul verdoso y da a su rostro, de falso compositor, un aire mundano.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_042">2</head>
 						<p>En este café aparecen y desaparecen hombres cuyas historias no se conocerán nunca. Algunos aguantan unos días; otros, resisten hasta semanas; pero al fin abandonan el café para no volver más.</p>
 						<p>En la tertulia entró una noche un hombre de unos cincuenta y cinco años. Se trataba de un viejo cantante que llegaba con el propósito de dedicarse al cine. Este artista debía de vivir muy mal porque toda su ropa estaba en ese estado en que los trajes no dan más de sí. El viejo fué presentado a Norberto G. Robledal, escuchando inmediatamente que él poseía un gran tipo para interpretar mayordomos, viejos aristócratas y generales retirados. El señor Robledal exageró el asunto, pues llegó a contratar «moralmente» al viejo artista para trabajar en una película de bandidos andaluces. Se le ordenó que se dejara patillas de boca de hacha, «ya que el trabajo tendría que empezarze lo más pronto posible».</p>
 						<p>Crecieron las patillas y el artista no consiguió firmar el contrato, lo que hubiera significado una cantidad de pesetas.</p>
@@ -673,30 +694,30 @@
 						<p>Y, con una risita repugnante, abandonó el cafó sin que su canción cilla dejara aclarada su imprevista salida.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_043">3</head>
 						<p>Hasta que una noche el señor Robledal comunicó «la gran noticia».</p>
 						<p>—Antes de un mes —declaró lleno de seguridad— empezaremos a trabajar. La película llevará por título <seg rend="italics">El estudiante enamorado.</seg> Ayer me han leído el argumento. ¡Algo maravilloso! Ya verán ustedes...</p>
 					</div>
 					<div type="section">
-						<head>4</head>
-						<head><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
+						<head xml:id="ne0330_head_044">4</head>
+						<head xml:id="ne0330_head_045"><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
 						<p>Aquella noche cada cual marchó a su domicilio. Alguno tuvo que acostarse sin cenar. Esto no es un hecho extraordinario; pero cuando un hombre busca la cama con el estómago vacío, la misma alegría de lo que está al llegar tiene un sabor agridulce. Entonces este hombre se agita en la cama, cambia de postura varias veces y, en el silencio de su modesta habitación, siente una inmensa generosidad hacia todo lo que le rodea.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_046">5</head>
 						<p>Es que todavía no sabe lo que va a Ruceder.</p>
 					</div>
 				</div>
 			</div>
 			<div type="part">
-				<head>SEGUNDAS ESCENAS</head>
+				<head xml:id="ne0330_head_047">SEGUNDAS ESCENAS</head>
 					<quote><p><seg rend="italics">Nació en Dakota del Sur (EE. UU.) un 14 de mayo. Estatura: Cinco pies y cuatro pulgadas y media. Pasatiempos favoritos: el tenis y la natación.</seg></p>
 					</quote>
 				<div n="7" type="chapter" xml:id="ne0330_chap7">
-					<head>I: LAS PRIMERAS ROSAS</head>
+					<head xml:id="ne0330_head_048">I: LAS PRIMERAS ROSAS</head>
 
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_049">1</head>
 						<p>Para los trabajos preliminares se alquiló una habitación, donde se montó una especie de oficina. En la habitación se colocaron unas sillas, una mesa de escritorio, y, sobre las paredes, se clavaron bastantes fotografías, que representaban escenas de películas americanas. Detrás de la mesa estaba Nor-berto G. Robledal trabajando en el guión de <seg rend="italics">El estudiante enamora ¡o.</seg> A su lado se veía cómo un señor observaba cuidadosamente todo lo que ocurría en la habitación. La oficina estaba abierta de diez a una de la mañana y de cuatro a seis de la tarde. Como se trataba de elegir personal artístico, jóvenes y viejos salían de aquella habitación después de ser observados por Norberto G. Robledal. Ya estaba hecho el presupusto de la película y la cantidad ascendía a cuarenta y cinco mil pesetas. Para gastos extraordinarios se habían destinado mil quinientas; pero este dinero no debía emplearse sino en último término y después de agotar todos los medios posibles para no gastarlo.</p>
 						<p>De las visitas a la oficina se destacaron las de Felipe. Alvaro Giménez, doña Luisa y Tony. El señor Robledal sólo se fijó en Alvaro Giménez para proponerle como uno de los amigos de <seg rend="italics">El estudiante enamorado.</seg> Alvaro recibiría como sueldo total seiscientas pesetas. Felipe, a pesar de exponer que ya había tomado parte en una película, no causó gran impresión en el señor Robledal. En cambio, el capitalista del <seg rend="italics">film</seg> creyó ver en Felipe el único artista que podía representar el papel de padre de <seg rend="italics">El estudiante.</seg></p>
 						<p>—Desde luego —insinuó Felipe—, yo no pido mucho dinero. Ahora sólo trato de darme a conocer.</p>
@@ -709,12 +730,12 @@
 						<p>—Ahora han sido trescientas. Muy pronto serán cinco mil.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_050">2</head>
 						<p>Tony había realizado varias demostraciones. La última fué la del niño abandonado. A pesar de haberla hecho con absoluta perfección, no pudo romper la actitud negativa del señor Robledal y de su socio. Doña Luisa se dió cuenta de que no iban a conseguir absolutamente nada. Le parecía imposible que después de ver cómo Tony fingía que dejaba la habitación, no aceptaran sus deseos de trabajar en la película. Como un recurso inútil dejó las señas de casa y, cogiendo a Tony de la mano, marchó de la habitación.</p>
 						<p>Mediado el mes de abril el cielo se extendía en un azul limpio y transparente. Llegaron a la Puerta del Sol, descendieron por la calle de Arenal y se encaminaron al Paseo de Rosales. Aquel recorrido terminó en uno de los bancos que había a lo largo de los paseos que dividían los jardines. Tony quiso sentarse en el suelo, en tanto que doña Luisa desliaba un paquete en donde había carne frita y una tortilla. Cerca de las tres de la tarde doña Luisa quedó adormilada sobre el banco. En lo último que había pensado era que Tony estaba muy flaco y que era necesario comprar un específico. El frasco costaba cerca de cuatro pesetas. Esto del precio preocupó grandemente a doña Luisa. Pero fué por poco tiempo, porque en seguida volvió a dormirse. Tony escribió en la arena algunos nombres. Cuando levantaba la cabeza veía unos campos en donde él no estuvo nunca. Un tren, que momentos antes había salido de la estación del Norte, se alejaba ahora hacia la Sierra. Doña Luisa abrió los ojos, trató de decir algo, pero volvió a dar un par de cabezadas, mientras en un débil resto de conciencia oprimió en sus manos el viejo bolso que guardaba el dinero para vivir lo que quedaba del mes.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_051">3</head>
 						<p>El señor Poch, capitalista de la película <seg rend="italics">El estudiante enamorado,</seg> había llegado a su domicilio sobre la una y media. A las dos menos cuarto la criada le entregó una tarjeta de visita en la que se leía:</p>
 						<floatingText><body><div type="section"><p>JOSE SANCHO <seg rend="smallcaps">Director de «Academia-Film»</seg></p></div></body></floatingText>
 						<p>Dejó la tarjeta sobre una mesa y aguardó a que apareciera el visitante. El director de «Academia-Film» entró bastante efusivo, como queriendo demostrar que, aunque él y el señor Poch no se conocían, esto no era un obstáculo para que desde aquel momento circulara entre los dos la más grande cordialidad.</p>
@@ -768,7 +789,7 @@
 						<p>Los cafés «Ecuador» se propagan por la fuerza de su calidad. ¡Intelectuales, obreros, hombres de negocios! Vuestros nervios necesitan una taza de cafó «Ecuador». Probadlo y os convenceréis.»</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_052">4</head>
 						<p>Por vez primera José Sancho encontró que los transeúntes no hacían otra cosa que entorpecer su camino. Llegó al portal de su casa, y, sin apenas responder al saludo del portero, trepó por la escalera y abrió la puerta que conducía a «Academia-Film». Descubrió a su hermano Jacinto sentado en la cocina y comiendo un bocadillo. Explicó su visita al señor Poch, y los dos hermanos marcharon a la habitación que era utilizada como despacho. Allí se continuó discutiendo sobre las medidas que habría que tomar para que la visita del señor Poch tuviera una acogida eficaz.</p>
 						<p>A las tres y media apareció el «botones». Jacinto Sancho le obligó a que dejara todo en orden. Como siempre, doña Luisa y Tony fueron los primeros en llegar. Tomaron asiento en uno de los bancos y esperaron a los otros alumnos. De vez en cuando surgía uno de los hermanos, miraba a las paredes, observaba las «fotos» y, después de contemplar a Tony y a doña Luisa, desaparecía sin decir absolutamente nada.</p>
 						<p>A las cuatro y veinte minutos el pequeño salón se hallaba con todos los alumnos. Entonces se abrió la puerta del despacho. Ahora, fueron los dos hermanos los que contemplaban al grupo. Se comunicaron entre sí algo que no se llegó a escuchar, y, cerrando la puerta, dejaron en la habitación una sensación de extrañeza. Poco más tarde ocurrió otra cosa que aumentó la sorpresa entre los alumnos. El «botones» entró en la habitación para fijar en las paredes unas hojas amarillas. Al lado de las hojas que anunciaban el café del señor Poch estaban las fotografías de los artistas extranjeros. Un alumno preguntó al «botones» qué significaba aquello. El muchacho no sabía nada y nada pudo aclarar. En este estado se continuó hasta las cinco y media. Entonces José Sancho apareció precedido por su hermano Jacinto, y lo ocurrido tuvo una natural explicación. Resultaba que todos iban a tomar parte en una película que llevaría por título <seg rend="italics">El estudiante enamorado.</seg> Aunque en esta película no era posible pagar sueldos, Jacinto Sancho aseguró de manera formal que en la próxima cinta habría dinero suficiente para que sus alumnos cobraran una cantidad honorable.</p>
@@ -782,7 +803,7 @@
 						<p>El señor Poch contempló cómo Tony miraba a un lado y a otro. En su rostro había mucha pesadumbre. Se le vió volverse al grupo de alumnos y, en un gesto final, levantar los brazos a un cielo invisible. Por último, Tony se dirigió a la puerta que comunicaba con el vestíbulo. Entonces su cuerpo avanzó ya sin esperanza y en un encogimiento de renunciación.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_053">5</head>
 						<p>La casualidad hizo que Felipe y Alvaro Giménez siguieran el mismo camino que doña Luisa y Tony. A los diez minutos de marcha, Felipe caminaba hablando con doña Luisa, y detrás de ellos dos, Tony iba junto a Alvaro. Felipe, como es natural, había cedido la acera a doña Luisa, y esto hacía que él andara con algunas precauciones, pues tenía que guardar el equilibrio constantemente. Al final de la calle de Postas, y antes de entrar en los soportales de la Plaza Mayor, doña Luisa provocó la despedida. Por aquellos sitios tenía que hacer sus pequeñas compras, y para esto necesitaba estar libre de gente que la conociera. Antes de separarse, Alvaro aconsejó que debían de cortar a Tony el pelo. Doña Luisa recibió alarmada el consejo y expücó que aquella media melena hacía muy bien a Tony. A pesar de los reparos de doña Luisa, Alvaro volvió a aconsejar «que Tony debía llevar una cabeza normal». Hasta hizo alusión al cutis amarillo del pequeño artista e indicó que Tony necesitaba tomar baños de sol.</p>
 						<p>—Podría dolerle la cabeza —argumentó Felipe, al notar que la proposición no había hecho feliz a doña Luisa.</p>
 						<p>Alvaro tuvo que añadir que los baños de sol regeneraban la sangre y daban a la cara un color más saludable que aquel que se extendía por el rostro de Tony.</p>
@@ -799,10 +820,10 @@
 					</div>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0330_chap8">
-					<head>II: ALGUNOS PREPARATIVOS</head>
+					<head xml:id="ne0330_head_054">II: ALGUNOS PREPARATIVOS</head>
 
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_055">1</head>
 						<p>Cuando el señor Rocamora se encontró frente al señor Poch fué explicando en una cálida intervención que él había realizado cinco películas, que los beneficios habían sido excelentes y que su larga práctica en los negocios cinematográficos le obligaba en aquel instante a exponer varias de las razones que aconsejaban el no apresurarse a llevar a la pantalla <seg rend="italics">El estudiante enamorado.</seg></p>
 						<p>El señor Poch no demostró gran curiosidad por las noticias que le traía aquel caballero. El había hecho sus cálculos, y tenía por seguro que <seg rend="italics">El estudiante enamorado</seg> no era un fracaso económico. Miró sonriendo a su visitante, y esta sonrisa fué lo que hizo que el señor Rocamora aludiera a los hermanos Sancho.</p>
 						<p>—En fin, si usted está seguro de que va a realizar un gran negocio no tiene por qué preocuparse de mis consejos. Yo dudo de su optimismo por la simple razón de que esos hermanos Sancho no son más que unos hábiles embaucadores de los jóvenes que asisten a hacer tonterías a su academia. Mi opinión es que los negocios deben hacerlos los hombres experimentados. Observe usted esta lista —el señor Rocamora mostró una hoja de papel—. Mi última película, <seg rend="italics">La tragedia del torero,</seg> ha dado, solamente en la región de Cataluña, más de lo que ha costado. Ahora hay que añadir los ingresos de la región Centro, Norte y Baleares. Claro que todo se debe a que yo cuido mucho de elegir los argumentos. El triunfo o el fracaso de una película depende únicamente de su argumento. Tengo entendido que el asunto de <seg rend="italics">El estudiante enamorado</seg> se refiere a un muchacho que no tiene suerte en los exámenes, y que como está perdidamente enamorado de una distinguida señorita, decide emigrar a América, y allí llega a ser un gran cosechero en café.</p>
@@ -835,7 +856,7 @@
 						<p>—Bien —asintió el señor Poch—. Ya se nota que usted domina estas cosas.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_056">2</head>
 						<p>Para redactar los títulos de <seg rend="italics">El estudiante enamorado</seg> se había solicitado la ayuda de un periodista. Se trataba de un hombre de unos cuarenta años. Un hombre más bien bajo, con una nariz de gancho y unos ojos de pájaro que miraban llenos de una ágil curiosidad, tras unos lentes de miope.</p>
 						<p>José Sancho lo presentó al señor Poch con el nombre de Joaquín Ñuño. Cuando ya estaban de acuerdo en lo que se refería a lo que el señor Ñuño iba a cobrar por escribir los títulos, el señor Poch preguntó:</p>
 						<p>—¿En qué periódicos escribe usted?</p>
@@ -870,8 +891,8 @@
 						<p>Joaquín Ñuño cogió las hojitas como si le hubieran propuesto algo anormal. Después, y sin decir ya nada, marchó acompañado hasta la puerta de la escalera.</p>
 					</div>
 					<div type="section">
-						<head>4</head>
-						<head><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
+						<head xml:id="ne0330_head_057">4</head>
+						<head xml:id="ne0330_head_058"><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
 						<p>Como anticipo por mi trabajo en <seg rend="italics">El estudiante enamorado,</seg> hoy he recibido doscientas cincuenta pesetas. Felipe ha recibido mucho menos. Solamente ha tomado veinte duros. Además, mi contrato tiene la ventaja de que, según una de las cláusulas, yo he de ir a El Escorial por un tiempo no inferior a cinco días. Esto del viaje ha causado en Felipe cierto desencanto. Ahora resulta que, por razones de economía, a Felipe le han suprimido su viaje a El Escorial. Aunque yo le explico que su situación es mucho más cómoda, puesto que no tiene que moverse de Madrid, Felipe acoge mis palabras moviendo la cabeza con aire desilusionado.</p>
 						<p>Como el dinero nos ha sido entregado esta tarde, Felipe me invita a merendar en un cafó de la Puerta de Atocha, donde a las seis tiene una cita con un pariente. Al salir de «Academia-Film» la invitación a merendar la hace extensiva a una señora que suele acompañar a la academia a un niño medio enfermo. Este niño se llama Antonio, pero ahora le han hecho creer que es preferible que se deje llamar Tony. La señora y el niño acuden a las clases con una curiosa puntualidad y siempre son de los últimos en dejar la academia. Ayer me dijo la señora que su ahijado es muy listo, y que aunque ella tiene que pagar cinco duros por las lecciones, está dispuesta a hacer lo imposible porque Tony llegue a ser una «estrella» cinematográfica.</p>
 						<p>He pensado aclarar a doña Luisa—Felipe la nombra de esta manera— que todo lo de esta academia no es más que una gran mentira; pero he creído que lo mejor es dejar que las cosas sigan como doña Luisa piensa que deben seguir.</p>
@@ -898,14 +919,14 @@
 					</div>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0330_chap9">
-					<head>III: EL OBSTÁCULO DE LA LLUVIA</head>
+					<head xml:id="ne0330_head_059">III: EL OBSTÁCULO DE LA LLUVIA</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_060">1</head>
 
 						<p>Para evitar que los alumnos notaran demasiado la ausencia de los hermanos Sancho, no se cerró el local de «Academia-Film». Todo quedó al cargo del «botones». De esta manera los artistas podían acudir por las tardes. A falta de director, cada cual ensayaba lo que le parecía; pero los ensayos resultaban demasiado pobres. Por orden de José Sancho el «botones» compró varias revistas de cine y las colocó en el centro del salón, distribuyéndolas sobre una mesita. Los alumnos acudieron a «Academia-Film». Sin embargo, en cuanto leyeron las revistas, el hastío y el aburrimiento los alejó por unos días. Quedaron solos doña Luisa y Tony. Ellos habían leído también las revistas; pero cada vez que contemplaban una fotografía o releían algún texto de propaganda, sentían la sensación de que lo estaban haciendo por primera vez. Para no gastar luz eléctrica —el piso de ((Academia-Film» daba al interior—, doña Luisa aconsejó al «botones» que no encendiera las luces. En aquella semiobscuridad ella solía adormecerse sobre el banco de madera mientras Tony recorría con los ojos las fotografías de las paredes. Al lado de las ((fotos» estaban las hojas amarillas donde se anunciaban los cafés del señor Poch. Tony no comprendía del todo el significado de las hojas, o, por lo menos, cual era el motivo de que junto a los retratos de Charlot figurase un anuncio de café.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_061">2</head>
 						<p>En la tarde del sexto día estaba el «botones» recortando una estampa de una revista atrasada. Al otro lado de la mesa se hallaba Tony. José Sancho había ordenado que hasta su regreso no entrara nadie en aquella habitación; pero el «botones» tuvo necesidad de unas tijeras y no halló otra solución que abrir la puerta prohibida. Tony miraba curiosamente lo que hacía el «botones» con las tijeras. Una vez que la estampa estuvo a punto, fué colocada sobre una cartulina. En aquellos momentos sonó el timbre. El «botones» recogió rápidamente su trabajo y empujó a Tony hacia la salida. Al dar luz en la sala de los ensayos doña Luisa abrió los ojos sobresaltada. Cuando el «botones» tiró de la puerta vió a un hombre de unos treinta años. Estaba descubierto y tenía la cabeza completamente rapada. Una pipa sin humo le salía de la boca, y los ojos, fijos en el «botones», miraban de un modo extraño.</p>
 						<p>—¿Está el director? —preguntó de forma que su voz pareciese misteriosa.</p>
 						<p>—No, señor —respondió el «botones» con ganas de que aquel hombre se alejara en seguida.</p>
@@ -955,7 +976,7 @@
 						<p>El portero negó lo de Barcelona, y afirmó, por último, que él no le conocía de ningún sitio. Cuando el de la boina salió de la casa, el portero quedó pensando en que algunos hombres discuten a veces cosas inseguras.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_062">3</head>
 						<p>—¡Qué hombre mas chiflado! —soltó Felipe—. ¿A qué viene el ponerse esos bigotes?</p>
 						<p>—¿No es un artista? —y doña Luisa no ocultaba su temor de que todo lo que había hecho aquel hombre fuera producto de una pobre cabeza en desorden.</p>
 						<p>—¡Por Dios, doña Luisa! —con qué placer pronunciaba lo de «doña Luisa»—. ¿Cree usted que un artista puede decir esas tonterías? Ahora de lo que se trata es de saber qué va hacer usted —y Felipe señaló también al pequeño Tony.</p>
@@ -999,8 +1020,8 @@
 						<p>Al llegar a casa, doña Luisa observó que dos vecinas hablaban cerca del portal. Sintió como un sonrojo de que la vieran acompañada y, despidiéndose de Felipe, desapareció con Tony en busca de la buhardilla.</p>
 					</div>
 					<div type="section">
-						<head>4</head>
-						<head><seg rend="italics">(Parte principal de la carta de Alvaro Giménez)</seg></head>
+						<head xml:id="ne0330_head_063">4</head>
+						<head xml:id="ne0330_head_064"><seg rend="italics">(Parte principal de la carta de Alvaro Giménez)</seg></head>
 						<p>«Al segundo día de nuestra llegada nos han despertado a las seis de la mañana. Nos han reunido en el comedor del hotel y hemos sido maquillados por el mismo hombre que pega los bigotes y que pone en marcha el gramófono, que el director trae para que entremos en situación en los momentos difíciles.</p>
 						<p>Como no ha dejado de llover desde que llegamos a El Escorial, estamos todo el día con la cara pintada de amarillo, viendo cómo el señor Poch no cesa de asomarse al patio del hotel para mirar un cielo nublado. A uno de los artistas le colocan cada mañana un bigote y dos trozos de patillas. El director le ha dicho que procure no reír o hacer gestos exagerados, ya que esto podría ocasionar el que se le desprendan los postizos. Este artista no hace más que recorrer el salón de punta a punta. Sin hablar apenas con nosotros, se pasa desde las siete de la mañana hasta la hora de la comida.</p>
 						<p>La madre de la primera actriz es la que da menos importancia a esto de la lluvia. Es una vieja acartonada que se entretiene fumando cigarros ordinarios. Por el comedor del hotel todos andamos de un lado para otro. La vieja nos mira como a bichos raros y arroja bocanadas de humo. Yo creo que si no acaba de llover, esto va a terminar de mala manera. El señor Poch nos habla ya con el gesto avinagrado. Ayer ha tenido una grave discusión con el director porque uno de los artistas ha hecho que en la comida le cambien un plato de guisado por una ración de jamón. A grandes voces el señor Poch nos ha descubierto que «él ha tenido que comer mucho guisado, muchas judías y hasta pan duro».</p>
@@ -1013,7 +1034,7 @@
 						<p>En estos días he pensado también en tu sobrino. Ese sindicalista es muy superior a ti, a mí y a Felipe II.»</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_065">5</head>
 						<p>Después de dejar a doña Luisa, Felipe marchó a su casa y se arregló los vendajes. Como había echado el pestillo de la puerta, se desnudó y se colocó una venda limpia. La sucia fué metida en una palangana llena de agua, y una vez que estuvo vestido, jabonó la tira de hilo, la aclaró y la tendió sobre la percha donde estaba su viejo gabán. A las siete marchó a cenar. En la taberna había poca gente. Hasta las ocho no empezaba a llenarse el saloncillo cubierto de azulejos. Visiblemente preocupado, Felipe comió sin ninguna gana. Por primeras vez, desde hacía muchos años, pensaba que su manera de vivir necesitaba un cambio total. Este cambio podía facilitárselo muy bien su ingreso en el cine, ya que su cuerpo no podría resistir mucho tiempo aquellos improvisados «accidentes» que él utilizaba para salir adelante económicamente. En concreto, Felipe buscaba «un modo de existencia confesable a los ojos de doña Luisa». Aunque ella todavía no hacía fáciles sus deseos, Felipe pensaba que era demasiado urgente el variar de situación.</p>
 						<p>A las siete y media había terminado de cenar. Fué entonces cuando en lugar de abonar la comida para marcharse pidió un vaso de vino. Su cabeza trabajaba simultáneamente en dos cosas. Primero, recordaba a doña Luisa, y este recuerdo le ayudaba a salir de aquel callejón sin salida que era su vida, sus «accidentes» y la duda de que en el cinematógrafo él no llegara a triunfar.</p>
 						<p>Ya que había machacado sobre todo esto, sacó la carta de Alvaro Giménez y la leyó una, dos y hasta más veces. Y la verdad era que la carta no le produjo ninguna tranquilidad.</p>
@@ -1025,10 +1046,10 @@
 					</div>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0330_chap10">
-					<head>IV: JOSÉ SANCHO PIERDE AUTORIDAD</head>
+					<head xml:id="ne0330_head_066">IV: JOSÉ SANCHO PIERDE AUTORIDAD</head>
 
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_067">1</head>
 						<p>A los siete días de haber llegado a El Escorial cesó de caer agua y el cielo se aclaró totalmente. Se dispuso que el trabajo comenzara a la otra mañana. La orden fué dada personalmente por el señor Poch, a pesar de que José Sancho había expuesto con cierta dureza que en la dirección de una película no debía de mandar más que una sola persona. El señor Poch no hizo ningún caso de la advertencia y repartió cuantas órdenes quiso. Por temor a que la cosa pasara a mayores, José Sancho no agravó la cuestión con nuevas razones. De todas formas plantearía el asunto en un momento más oportuno.</p>
 						<p>No era aquella la primera rozadura entre él y el señor Poch. El día anterior, sobre las once de la mañana, el señor Poch bajó al comedor con un paquete de hojas impresas. Todos los artistas estaban maquillados y dispuestos a empezar el trabajo. José Sancho aseguró al señor Poch que al otro día podría comenzarse la película. El señor Poch quedó conforme con la explicación, pero entonces llamó al maquillador.</p>
 						<p>—El trabajo no ha de empezar hasta mañana —fué diciendo, mientras desataba el paquete—. Guarde usted los bigotes de esa gente —y señaló a los artistas que tenían postizos—, y después se da una vuelta por los hoteles y bares de este pueblo. Puede dejar diez o quince hojas de estas en cada establecimiento.</p>
@@ -1051,7 +1072,7 @@
 						<p>Salieron en fila. Primero el señor Poch; luego el maquillador, y por último, José Sancho. Los artistas se levantaron para desperdirlos. Alguno llegó hasta la puerta de la calle para ver alejarse, con paso rápido, al señor Poch y a sus dos acompañantes. Detrás de él ya no marchaba el maquillador. El segundo puesto lo había solicitado José Sancho con una simple orden dada al salir del hotel. Las calles de El Escorial, todavía húmedas de las recientes lluvias, fueron recorridas con verdadera prisa. El señor Poch no solamente entró en los hoteles, sino que también repartió las hojas en algunas tabernas. Los dueños o empleados de los establecimientos recogían los prospectos extrañados de que en el pueblo se hiciera aquella clase de propaganda. Primeramente, el señor Poch pedía permiso para hacer su reparto. En cuanto se lo concedían, hacía una señal a José Sancho y al maquillador, obligándoles a que presenciaran como testigos el desarrollo de su trabajo. Cuando dejaban el local, los dueños salían a contemplarlos desde la puerta. Ninguno de los tres volvía la cabeza. Dando pequeños saltos sobre el horrible adoquinado del pueblo, caminaban y caminaban. El señor Poch no quiso dirigirles la palabra hasta que terminó el reparto de las hojas. Al entrar en el hotel los artistas hicieron un movimiento de gente que ha estado aguardando un grave final. El hermano de José Sancho no se atrevió a presenciar la escena y marchó del comedor. El señor Poch se llenó un vaso de agua y bebió hasta la mitad. Después se dejó caer sobre una silla y, en lugar de gritar, o de decir simplemente algo que aplacara la curiosidad de todos, se puso a rebuscar en los bolsillos de su americana. Del lado derecho sacó un papel. Era un único prospecto de los que anunciaban sus «cafés». El señor Poch hizo con él una pelotilla apretando el papel con unos dedos llenos de convulsiones nerviosas. Miró a todos y se levantó. Según caminaba hacia la salida fué apretando la bolita que había fabricado momentos antes. A un metro de la puerta arrojó la reducida pelotilla. El movimiento fué de una intensidad casi agrevisa.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_068">2</head>
 
 						<p>Las seis de la mañana cogieron despierto al señor Poch. Su primer ademán lo llevó al balcón; después comenzó a vestirse. Ya se había levantado el maquillador y estaba terminando su arreglo personal. Aparte de colocar postizos y maquillar, este hombre se había compremetido a servir como ayudante del director. Por tanto, fué el primero en bajar al comedor del hotel. A las seis y media ya había desayunado y tenía abiertas las cajas donde estaban las barras de pintura, los lapiceros de sombrear los ojos y los polvos de distintas tonalidades.</p>
 						<p>Los hermanos Sancho aparecieron minutos antes que el señor Poch. Jacinto colocó la máquina tomavistas y el trípode cerca de la puerta. Los artistas fueron los últimos en bajar. Por orden de personalidad, el maquillador empezó su trabajo. Primero la actriz; después el galán, y más tarde Alvaro Giménez. Aunque la mañana brillaba bajo un espléndido sol, en algunas caras existía una antipática seriedad. El señor Poch estaba en ese grupo de gente agria; pero su estado, indudablemente, era un residuo de lo que había ocurrido el día anterior con motivo del reparto de las hojas.</p>
@@ -1079,7 +1100,7 @@
 						<p>El director agachó ligeramente la cabeza y sopló en el pito. El ensayo se volvió a repetir, haciéndose después la escena real. Desde la plaza marcharon a otro sitio donde estaba el portal por el que tenía que hacer varias entradas y salidas la primera actriz y el hombre del bigote postizo. A la una y media todo el mundo regresó al hotel. Los artistas iban cansados y sudorosos, como si hubieran andado docenas de kilómetros.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_069">3</head>
 						<p>En el instante en que el señor Poch se dirigía al comedor, un camarero le comunicó que subiera a la habitación de José Sancho. El señor Poch se llegó al primer piso, llamó sobre una puerta y pasó a presencia del director.</p>
 						<p>José Sancho estaba de pie. A su derecha había una mesita y encima del mueble se veían las hojas a máquina del «guión» de <seg rend="italics">El estudiarte enamorado.</seg> Sin decirse nada como saludo, José Sancho empezó de esta manera:</p>
 						<p>—Usted no tiene ningún derecho a gritarme delante de los artistas. No olvide que yo soy el director y que si necesita darme alguna queja puede aguardar a que nadie esté con nosotros.</p>
@@ -1093,7 +1114,7 @@
 						<p>Y, empujando a su director con unos golpecitos singulares, salieron del cuarto para dirigirse al salón comedor.</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_070">4</head>
 						<p>Las escenas de la tarde correspondieron a la primera actriz y al galán. Según lo escrito en el «guión», la pareja había decidido darse cita en la Silla de Felipe II. Para llegar al alto promontorio necesitaron utilizar un auto pequeño. El autobús de la mañana no hubiera podido ascender por el estrecho camino.</p>
 						<p>José Sancho, molesto de aquella manera de meterse en todo que tenía el señor Poch, aconsejó a éste que podía quedarse en el hotel. El señor Poch no aceptó la proposición y se metió en el automóvil. Por el camino encontraron bastantes frailes. Los religiosos apenas si se fijaban en los artistas. Sentados bajo los árboles, tenían una mirada tranquila y perezosa.</p>
 						<p>—Esto es lo que hace que España no prospere —declaró el señor Poch refiriéndose a los frailes—. Son como la polilla...</p>
@@ -1117,7 +1138,7 @@
 						<p>—Bien, bien; cuando usted lo dice... —y el señor Poch se puso a jugar con los guijarros que tenía cerca de la punta de sus zapatos.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_071">5</head>
 						<p>Regresaron a la caída de la tarde. Como el camino era en descenso, se podía ver El Escorial bajo un fanal de vaho que cubría todo el pueblo. El sol empezaba a meterse al otro lado de las montañas, pero aun brillaba en las torres del Monasterio. El auto de los artistas pasó frente al antiguo edificio. Por allí andaba Alvaro Giménez. No llegaron a verle y continuaron hasta el hotel.</p>
 						<p>Alvaro se sentó sobre la tierra que encuadraba el estanque. El agua copiaba las partes altas del Monasterio. En algunos sitios capas de verdín flotaban inmóviles. Alvaro miró por la parte que debía estar Madrid. Sin ninguna necesidad de pensar en ello, recordó las trampas de la mujer de su antiguo director. Recordó otras cosas. Todas eran de escaso valor. El mismo, bajo aquel cielo agrisado y transparente, era también una cosa insegura y expuesta a multitud de contratiempos.</p>
 						<p>Felipe cruzó los soportales de la Plaza Mayor. Preguntó a un guardia municipal por unas señas y el agente le indicó un ancho portal. Felipe subió al primer piso, recorrió un pasillo y apareció en un salón donde había cerca de cuarenta lectores inclinados sobre unos pupitres de pino barnizado. Le entregaron una hoja de papel y una chapa. En la hoja apuntó lo que deseaba leer, escribió su nombre y apellidos y esperó a que se le sirviera lo solicitado. Quiso recordar cuándo había estado en otra biblioteca, pero su memoria no le trajo nada disculpable. Cuando se estaba reprochando su falta de asistencia a los centros de cultura, un empleado le entregó un grueso volumen. Felipe recorrió el salón hasta encontrar un asiento desocupado. Como era la primera vez que tenía en sus manos un diccionario, tardó unos minutos en hallar esta breve definición:</p>
@@ -1138,23 +1159,23 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>TERCERAS ESCENAS</head>
+				<head xml:id="ne0330_head_072">TERCERAS ESCENAS</head>
 					<quote>
 						<p><seg rend="italics">En cuanto a las corbatas de Lewis Rudolph, es ya del dominio público que son las más famosas y las más apreciadas por los elegantes. Solamente en la película</seg> Días de gran lujo, <seg rend="italics">Lewis Rudolph exhibe cerca de dos docenas.</seg></p>
 						<p><seg rend="italics">Digamos también que el gris es el color favorito de Lewis Rudolph.</seg></p>
 					</quote>
 
 				<div n="11" type="chapter" xml:id="ne0330_chap11">
-					<head>I: LA PRUEBA</head>
+					<head xml:id="ne0330_head_073">I: LA PRUEBA</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_074">1</head>
 						<p>En la primera quincena de julio recibieron los críticos cinematográficos unas invitaciones para que asistieran a la primera proyección de <seg rend="italics">El estudiante enamo ado.</seg> Los empresarios recibieron igualmente dichas invitaciones, y en cuanto a los artistas que habían trabajado en la película, ya hacía más de una semana que esperaban contemplarse en la pantalla.</p>
 						<p>Debido a unas ligeras modificaciones que José Sancho había introducido en el argumento, todos los alumnos de «Academia-Film» desfilaron ante la cámara fotográfica.</p>
 						<p>A ruegos de José Sancho, el señor Poch no vió proyectado ningún trozo de la película. «Era preferible que aguardara a que el <seg rend="italics">film</seg> estuviera completamente en orden y en disposición de ser presentado a la crítica y a los empresarios.»</p>
 						<p>En aquellos días las páginas que los periódicos dedicaban al cine habían publicado «fotos» donde se veían escenas de la película. En algunas, estaba en primer término la máquina tomavistas. Jacinto Sancho sonreía detrás con la gorra colocada al revés. Junto al operador se mezclaban los artistas, pero dejando en un sitio muy visible al director José Sancho, y al señor Poch. Sin duda alguna, la «foto» más importante fué la publicada por una revista de Barcelona. En ella, Tony, con un montón de periódicos bajo el brazo, voceaba las últimas noticias. Doña Luisa compró tres ejemplares. Uno lo dejó disimuladamente entre los periódicos de «Academia-Film»; otro lo envió a unos parientes, y el tercero lo retuvo en la buhardilla. El pié que habían puesto al retrato no era muy extenso, pero llegaba a decir: «El gran artista Tony en la película española <seg rend="italics">«El estudiante enamorado</seg>».</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_075">2</head>
 						<p>Artistas, empresarios, críticos y demás invitados cubrieron medio patio de butacas. A las once de la mañana sonaron en la sala los compases movidos de un pasodoble. En la fila cuarta estaba el grupo de Tony, doña Luisa, Felipe y Alvaro Giménez. Se colocaron tan cerca de la pantalla porque doña Luisa no veía lo suficiente desde las otras filas de butacas.</p>
 						<p>El señor Poch se hallaba en un palco, rodeado por los hermanos Sancho y acompañado también por el autor de los títulos, el periodista señor Ñuño. A medida que avanzaba el pasodoble, entre los artistas había cierta nerviosidad.</p>
 						<p>En el instante de terminar la música las luces de la sala se extinguieron en tres suaves sacudidas. De la cabina de proyección brotó una manga de fulgor blanco y sobre la pantalla apareció el título del <seg rend="italics">film,</seg> los nombres de los artistas y de los elementos técnicos. Doña Luisa leyó muchos nombres, pero fué inútil que esperara encontrar el de Tony. Nadie le había asegurado esta propaganda; sin embargo, ella creía que el trabajo de Tony era merecedor de figurar en la lista de intérpretes. A su lado estaba Felipe. Doña Luisa no preguntó sobre el caso, aunque apetecía una clara explicación.</p>
@@ -1205,7 +1226,7 @@
 						<p>Esta vez Felipe no acompañó a doña Luisa nada más que hasta la puerta del café. Suponía que ella necesitaba hacer las compras de la comida y prefirió no molestar.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_076">3</head>
 						<p>Alvaro fué llevado a la taberna de los azulejos. Felipe había elegido esta taberna con un obscuro propósito.</p>
 						<p>—Necesito hablar contigo —empezó cerca de la taberna—. Quiero que me des un consejo.</p>
 						<p>Alvaro hizo un movimiento para que el otro continuara. Desde luego, no sospechaba la clase de confesión que se disponía a hacer Felipe.</p>
@@ -1247,7 +1268,7 @@
 						<p>Hacía un calor tremendo; pero solucionó esta molestia respirando con la boca abierta.</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_077">4</head>
 						<p>No se oía más ruido que el que llegaba del fogón. Doña Luisa estaba haciendo la limpieza de los platos utilizados en la comida. Tony se había sentado junto a la ventana. Con gran habilidad recortaba fotografías de artistas cinematográficos —esto se lo había visto hacer al«botones»de «Academia-Fibn»— para después aumentar la colección que guardaba en su estuche de colegial. El no haber salido en la película le había preocupado mientras duró la prueba, y después, cuando estuvo en el bar. Ahora, otras cosas danzaban por su imaginación.</p>
 						<p>Dejó sin acabar el recorte de una «foto» para asomarse a la ventana. Tony miró cuanto podían abarcar sus ojos y decidió marchar en busca de doña Luisa. Llevaba la intención de preguntar «cuándo iban a pasear por aquellos campos que se veían desde la ventana».</p>
 						<p>Observó a su madrina maniobrando en un barreño con agua. Entonces no dijo nada de lo de marchar al campo. Se apoyó en el fogón y dejó que doña Luisa le preguntara si le había agradado la comida. Tony movió la cabeza como decepcionado. Regresó a la ventana y contempló la parte alta de la Puerta de Toledo. Más allá, y sobre una colina, se veía el cementerio de San Isidro. Tony tenía la costumbre de mirar detenidamente hacia aquella colina. Se le había dicho que era allí donde se enterraban a los muertos, y él pensaba que aquella parte de Madrid pertenecía a una tierra misteriosa.</p>
@@ -1258,8 +1279,8 @@
 						<p>Cuando empezaba a anochecer Tony quedó dormido sobre la silla que había utilizado para limpiar las judías.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
-						<head><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
+						<head xml:id="ne0330_head_078">5</head>
+						<head xml:id="ne0330_head_079"><seg rend="italics">(Manuscrito de Alvaro Giménez)</seg></head>
 						<p><seg rend="italics">El estudiante enamorado</seg> es una película fácil. El señor Poch ha hecho muy bien en unirse a los hermanos Sancho y al periodista que ha redactado los títulos del <seg rend="italics">film.</seg> Todos juntos han fabricado más de hora y media de inofensivo entretenimiento. Desde luego, yo no creo que el argumento haya sido escrito por el señor Poch, aunque él figura como autor; sospecho que toda la trama de esta película es debida al portero de un aristócrata, o al gusto clarificado de una señorita católica. En <seg rend="italics">El estudiante enamorado,</seg> hay pocos conflictos —la sociedad española que gobierna Alfonso XIII siente un gran horror a la polémica—. La única complicación que muestra la película —si se casará o no se casará el rico con la pobre— se soluciona gracias a un rezo que hace la madre de la muchacha, de rodillas, ante una estampa religiosa. Después de lo del rezo, el joven rico empieza a ordenar su vida, abandona a sus amigos viciosos y, obligado por una misteriosa fuerza, entrega su corazón a la humilde muchacha que ha conocido en el pueblo.</p>
 						<p>Hasta la miseria que muestra una parte de este <seg rend="italics">film</seg> —escenas entre la madre y la hija en momentos de penuria económica— es una miseria sin escándalo. El autor o autora del argumento de <seg rend="italics">El estudiante enamorado</seg> sabe muy bien que el distinguido público de butacas no estima en nada ese realismo tan puesto en moda por los desvergonzados escritores rusos.</p>
 						<p>En el mundo normal lo aceptable sería que el joven poderoso se uniera a la muchacha humilde por el solo impulso de su conciencia. Sin embargo, en la película del señor Poch no ocurre nada de esto.</p>
@@ -1268,17 +1289,17 @@
 					</div>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0330_chap12">
-					<head>II: SEGUNDA PRODUCCIÓN DEL SEÑOR POCH</head>
+					<head xml:id="ne0330_head_080">II: SEGUNDA PRODUCCIÓN DEL SEÑOR POCH</head>
 
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_081">1</head>
 						<p>Fué inútil que Felipe acudiera todas las tardes al salon-cillo de «Academia-Film». Ni doña Luisa ni Tony hicieron acto de presencia desde el día de la prueba de <seg rend="italics">El estudiante enamorado.</seg> Felipe se aburría enormemente porque no le agradaban nada aquellos ensayos que ahora se hacían bajo la dirección de Jacinto Sancho. José ya no se ocupaba de los alumnos. Sólo, o acompañado por el señor Poch, visitaba empresarios de cines, hablaba con alquiladores de películas o se encerraba en su despacho a preparar su segundo <seg rend="italics">film.</seg></p>
 						<p>Felipe trató de arrastrar a aquella casa a Alvaro Giménez. Este estuvo dos tardes y ya no volvió más. Por otra parte, los jóvenes que acudían a la academia no hacían por entenderse con él. Felipe percibía claramente que allí no iba a encontrar ningún amigo que fuera capaz de escucharle unos minutos.</p>
 						<p>Transcurrieron varios días. Felipe se arriesgó a merodear por la calle de Toledo. Creyendo que doña Luisa bajaría a hacer alguna compra, se apostaba en el trozo de la Fuentecilla a la Puerta de Toledo. Sobre las diez de la mañana Felipe empezaba a hacer ese recorrido. A mediodía abandonaba su vigilancia y se iba a la taberna de los azulejos. Durante la comida pensaba en Alvaro Giménez. Alvaro hablaba cosas un poco fuera de lo corriente, pero Felipe prefería estar con él sentado en cualquier café.</p>
 						<p>En presencia de Alvaro, Felipe sentía que el mundo que le había rodeado hasta entonces era un mundo sin importancia. Al lado de Alvaro Giménez todo empezaba a hacerse obscuro, pero lleno de extrañas teorías. Algunas noches, y antes de acostarse, Felipe manoseaba unos papeles que guardaba entre las hojas de un cuaderno. Allí estaba la carta que había recibido desde El Escorial y los apuntes que tomó en la biblioteca sobre la palabra anarquista. En su estrecha habitación estas cosas tomaban grandes proporciones. Además, todo terminaba envuelto por el recuerdo de doña Luisa. Cuando Felipe se colocaba un vendaje, o fregoteaba en la jofaina para lavarse un pañuelo o un cuello de la camisa, éste recuerdo era algo que ocupaba toda la habitación. Llegaba un instante en que ya no le era posible desenvolverse en su cuarto; entonces abría una ventana, tragaba un poco de aire y se volvía para sentarse en un borde del colchón.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_082">2</head>
 						<p>Aunque la idea había partido de José Sancho, fué el periodista Joaquín Ñuño el encargado de dar forma al asunto. La primera reunión se celebró un miércoles por la noche. El sábado de aquella misma semana el señor Poch, José Sancho y el periodista Ñuño volvieron a entrevistarse en el despacho de «Academia-Film». En la casa no se oía ningún ruido; a las diez de la mañana aquello era muy distinto de lo que sería después cuando llegaran los alumnos a hacer sus ensayos. El señor Poch ofreció cigarrillos, pero absteniéndose él de fumar. Su único deseo era ver lo que había escrito el periodista Ñuño acerca de sus cafés «Ecuador». Joaquín Ñuño sacó dos cuartillas escritas a máquina y se dispuso a leer.</p>
 						<p>—Supongo que el argumento será muy corto —insinuó José Sancho—. La película no debe durar más de diez minutos.</p>
 						<p>—Esto es lo que he escrito —empezó Joaquín Ñuño, después de haber asentido al consejo de José Sancho—. La película puede titularse <seg rend="italics">El que no corre, vuela.</seg> En cuanto al argumento, escuchen ustedes: «Por distintas calles de Madrid se ven grupos de transeúntes que van corriendo en varias direcciones. Entre los que corren hay niños, viejos, mujeres, soldados, etc. Un chófer abandona su taxi y se une a los que pasan. El cliente que está dentro del coche se da cuenta del escándalo, y cuando pregunta a uno de los que corren a qué se debe tal movimiento, el hombre comprende el motivo y sale disparado hacia donde todos han de reunirse.»</p>
@@ -1300,7 +1321,7 @@
 						<p><seg rend="italics">El que no corre, vuela</seg> tenía que estar en disposición de poder proyectarse en los cines en un plazo no superior a catorce días. Todo empresario que tomara en alquiler <seg rend="italics">El estudiante enamorado</seg> recibiría gratuitamente la película de los cafés «Ecuador». De esta manera el señor Poch hacía una eficaz propaganda de su negocio, evitándose por otro lado el reparto de las hojitas.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_083">3</head>
 						<p>Nada más llegar, Felipe recibió recado de pasar al despacho de los hermanos Sancho. Había sido seleccionado para interpretar el caballero que tenía que demostrar el apreciable sabor del café del señor Poch. Qomo era el personaje de más responsabilidad, José Sancho le comunicó que cobraría veinte pesetas por una única sesión. Se le aclaró que se trataba de un <seg rend="italics">film</seg> pequeño para propagar unos cafés.</p>
 						<p>—Usted es el único actor que aparece en la película. Los demás son comparsas.</p>
 						<p>Felipe agradeció la deferencia, y cuando ya se disponía a salir del despacho, se volvió para preguntar algo que le interesaba enormemente.</p>
@@ -1314,7 +1335,7 @@
 						<p>La mujer le indicó el piso. Aunque había que montar muchos escalones, Felipe se dirigió rápidamente hacia la escalera.</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_084">4</head>
 						<p>Fué tal la sorpresa que se apoderó de doña Luisa, que Felipe se arrepintió de no haber utilizado otro medio de avisarla. Después de un instante de violenta vacilación, doña Luisa preguntó el motivo de aquella visita. En el cuarto todo estaba en orden. Hasta Tony mostró una cabeza recién peinada.</p>
 						<p>—Me envía el director de «Academia-Film» —Felipe sabía que era imprescindible empezar por esta parte—. Usted y Tony tienen que trabajar en una película. Están citados para mañana por la tarde.</p>
 						<p>Doña Luisa se animó de pronto, pero disimuló el alegre efecto de aquella inesperada noticia. Tony se había sentado como aparte. En cuanto escuchó lo dicho por Felipe, empezó a impacientarse, hasta que terminó levantándose.</p>
@@ -1347,7 +1368,7 @@
 						<p>—Tony no cumplió lo que se le pedía. Felipe disimuló su fracaso dando a Tony una moneda de diez céntimos. Cuando empezaba a bajar escalones se volvió para hacer una última reverencia, pero doña Luisa ya había cerrado la puerta.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_085">5</head>
 						<p>A unos cien pasos de donde vivía doña Luisa, Felipe se paró un instante. Se quedó mirando por donde estaba el portal del que había salido y, sujeto a una resolución que acababa de tomar, emprendió el camino que conducía al domicilio del señor Rocamora. Un cuarto de hora después Felipe se encontraba en presencia de su antiguo director.</p>
 						<p>—Casualmente pasaba por aquí —inició Felipe como un subordinado— y me he dicho: «Voy a subir a saludar al señor Rocamora.»</p>
 						<p>El director sonrió de un modo superficial y no dijo nada. Pareció que estaba esperando a que Felipe terminara de una vez.</p>
@@ -1365,7 +1386,7 @@
 						<p>El señor Rocamora se puso de espaldas, y en esa postura dijo algo que no llegó claramente a oídos de Felipe. En aquel momento entraba en el despacho el ayudante Rodríguez seguido de un caballero. Felipe se colocó a un lado para no estorbar, pero viendo que se prescindía totalmente de él, terminó marchando hacia la puerta sin que nadie prestara atención a su despedida .</p>
 					</div>
 					<div type="section">
-						<head>6</head>
+						<head xml:id="ne0330_head_086">6</head>
 						<p>José Sancho tuvo el tiempo justo de poner dos continentales, que llegaron a los domicilios del señor Poch y del periodista Joaquín Ñuño poco antes de que éstos empezaran a cenar. Las dos cartas decían exactamente esto: «Mi querido amigo: Una modificación en el argumento de <seg rend="italics">El que no corre, vuela</seg> me hace citarle a usted con toda urgencia en mi propio domicilio. Espero acuda esta noche, y procure hacerlo antes de las once. A esta hora cierran los portales. Suyo afectísimo, <seg rend="italics">José Sancho</seg>.»</p>
 						<p>El primero en acudir a la cita fué el señor Poch. Entró en el despacho de «Academia-Film» con una ligera preocupación que le hizo quedar de pie.</p>
 						<p>—No he esperado a mañana —indicó inmediatamente el director—, porque nos falta tiempo para todo. Es necesario empezar inmediatamente. En esto del cine conviene no dormirse.</p>
@@ -1415,10 +1436,10 @@
 					</div>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0330_chap13">
-					<head>III: CUATRO HORAS DE LA VIDA DE TONY</head>
+					<head xml:id="ne0330_head_087">III: CUATRO HORAS DE LA VIDA DE TONY</head>
 
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_088">1</head>
 						<p>La película de los cafés no se pudo hacer en veinticuatro horas, sino que hubo que emplear mucho más tiempo. En la tarde del cuarto día fué cuando José Sancho regresó a «Academia-Film», después de haber terminado de impresionar las últimas escenas.</p>
 						<p>Doña Luisa cobró cuarenta pesetas. Cuatro duros que le correspondieron a ella y otros cuatro que ganó Tony con su trabajo. El cobro se realizó en casa de José Sancho. En cuanto doña Luisa tuvo el dinero en su poder, burló la vigilancia de Felipe, que estaba en la habitación de los ensayos. Ya en la calle estuvo a punto de entrar en una farmacia a comprar el específico que habían recomendado a Tony. No hizo nada de esto, y, en cambio, se puso a recorrer los escaparates de una pañería de la- Plaza Mayor. Tony seguía detrás ignorando la adquisición que de un momento a otro iba a realizar su madrina. A punto de cerrar el comercio, doña Luisa se decidió a hacer la compra. Un dependiente extendió sobre el mostrador una pieza de terciopelo negro. Doña Luisa manoseó el paño hasta que pidió precio, después de calcular lo que haría falta para hacer un traje a Tony. El dependiente habló de cincuenta pesetas, cantidad superior a los gastos que podía hacer doña Luisa.</p>
 						<p>Estaban bajando los cierres metálicos, y doña Luisa no hacía otra cosa que continuar tocando la fina superficie del terciopelo. Aunque hubiera querido llevarse el corte de aquel paño le habría sido imposible, pues en su bolsillo solamente tenía los ocho duros que le entregó José Sancho.</p>
@@ -1429,7 +1450,7 @@
 						<p>Una vez en casa pudo enterarse Tony del inesperado regalo. Doña Luisa tomó unas medidas sobre su cuerpo, colocándole un metro de hule. Al día siguiente, nada más comer, Tony esperaría en la buhardilla mientras doña Luisa llevaba el paño a casa de una amiga, donde quedaría cortado el traje y en disposición de empezar la costura. Como es natural, doña Luisa no podía adivinar todo lo que iba a ocurrir a Tony en la tarde del día siguiente.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_089">2</head>
 						<p>Se celebró la comida sobre las doce. A la una de la tarde doña Luisa cogió el paquete del paño y se dirigió a la puerta. La abrió, y después de cerrarla pidió desde el otro lado de donde estaba Tony que éste diera dos vueltas a la llave. Tony obedeció la orden. En seguida escuchó los pasos de doña Luisa. Primero sonaron muy fuertes, hasta que se oyeron lejanos. Tony tenía el oído pegado a la puerta y pudo notar cómo llegó un momento en que de abajo ya no subía ninguna clase de ruido.</p>
 						<p>Cuando se apartó de donde estaba escuchando, dió unoB cuantos pasos por la casa. Sin tener realmente hambre, cogió un pedazo de pan para dar unos bocados. Terminó abandonando el trozo de pan y se acercó a la ventana. Entonces cometió su primera torpeza. En uno de los tiestos —el tiesto más mimado por doña Luisa— habían abierto tres rosas. Tony cortó la que le vino en gana y se puso a olería mientras miraba a lo lejos la línea de casas que se prolongaban hasta Cara-banchel. Más acá, y a la derecha del puente de Toledo, Tony vió la colina donde se asentaban los cementerios. No apartó los ojos de aquel sitio sino al cabo de un gran rato. «Sabía que doña Luisa volvería a casa al anochecer.»</p>
 						<p>Este pensamiento se cruzaba en sus miradas a los cementerios y a aquel campo misterioso donde parecía que habían plantado unas casas muy pequeñas. «Unas casas iguales a esas que los niños recortan de una cartulina para pegarla por los sitios señalados por líneas de puntos negros.»</p>
@@ -1440,7 +1461,7 @@
 						<p>Por fin, giró la llave por segunda vez. Tiró de la puerta y contempló frente a él los primeros tramos de la escalera. Desde ese instante todo fué realizado rápidamente. Cerró por fuera y se guardó la llave, después de haberla envuelto en su pañuelo. Inició el descenso con prisa para desaparecer cuanto antes de la escalera. En el portal estaban hablando dos vecinas. Tony realizó lo más hábil de la tarde. Esperó a que las mujeres se pusieran de espaldas, y sólo entonces llevó a efecto su fuga.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_090">3</head>
 						<p>Hasta la puerta de Toledo marchó temeroso de ser descubierto. Cruzó el arco central y bajó en dirección a la glorieta de las Pirámides. Como era la primera vez que pasaba por aquellos sitios, hacía una parada a cada instante. Al llegar al túnel del ferrocarril se empinó sobre las traviesas y esperó el paso de un tren. Abajo se alargaban las vías hasta meterse por la boca de otro túnel. Aunque el sol apretaba de firme, Tony siguió en su sitio. Al cabo de diez minutos sintió que la tierra trepidaba bajo sus pies. Se apretó contra las traviesas, y antes de que tuviera tiempo de retirarse, una nube de vapor y de humo rebasó el borde del túnel y lo envolvió completamente. Al disiparse el humo, vió alejarse una máquina que arrastraba una fila de vagones. Tony extrañó que los transeúntes no sintieran curiosidad por aquel espectáculo. La gente subía y bajaba por la acera sin preocuparse por aquella fila de vagones que se deslizaban por la vía bajo la fuerza de una vieja locomotora.</p>
 						<p>Dejó aquel sitio y continuó descendiendo la calle de Toledo. Por ahora, sus pensamientos estaban muy lejos de doña Luisa y de la buhardilla. Su única preocupación era no perder la llave del piso. De vez en cuando apretaba el bolsillo hasta sentir que todavía la llevaba envuelta en el pañuelo. Al llegar a la glorieta de las Pirámides se encontró con que tenía varios caminos a seguir. Se acercó donde empezaba el puente de Toledo, y al descubrir los cementerios de San Isidro decidió conocer aquellos lugares que ahora se mostraban de forma tan distinta a cuando él los miraba desde la ventana de la buhardilla.</p>
 						<p>Cruzó el puente entre un bullicio de personas, de tranvías y de autos. Tony se asomó para ver el río. Una agua sucia, color de tierra, cruzaba sin fuerza bajo los arcos de piedra. Quedó muy defraudado al descubrir aquella escasa corriente de agua. A doscientos metros del puente unos chicos corrían desnudos para arrojarse en el río. Pensó en acercarse a aquella parte; pero antes necesitaba conocer de cerca los cementerios. Aligeró el paso hasta llegar al camino alto de San Isidro. A su derecha estaba el vacío de la Pradera, y mucho más lejos surgía Madrid en un amontonamiento de casas. Tony imaginó que entre aquellos tejados se hallaba su buhardilla.</p>
@@ -1461,7 +1482,7 @@
 						<p>«Cuando en lo sucesivo se asomara a la ventana de la buhardilla ya no sería un secreto para él aquello que se veía desde el tejado. Ahora tenía una idea aproximada de lo que era el campo. En cuanto a los cementerios, Tony recordaba la llegada de los caballeros para acompañar al ataúd, y aquella salida que hacían después del enterramiento para hablar ruidosamente y fumar muchos cigarrillos. En adelante ya no podría contemplar desde la ventana la colina de los cementerios sin pensar a un mismo tiempo en los hombres que fumaban y se decían cosas que producían risa.»</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_091">4</head>
 						<p>Durmió una media hora y se despertó en el instante en que doña Luisa llamaba desde el otro lado de la puerta. Tony se incorporó y vió a sus pies cómo el agua del río continuaba en su viaje hacia el puente de Toledo. Al darse cuenta de que había soñado, suspiró profundamente.</p>
 						<p>No sabiendo qué hora sería en aquel momento, hizo cálculos con la posición del sol y se aseguró de que todavía no habían dado las cinco, cuando ya eran más de las seis.</p>
 						<p>Sacudió de su traje el polvo cogido en la siesta y empezó a hacer el regreso a la calle de Toledo. Yendo por la orilla del río descubrió un sitio donde el agua apenas cubría el fondo de arena. El calor y la sed tuvieron la culpa de que se descalzara y se quitara los calcetines. Entró en el río por donde cubría rnengs y pudo llegar a la otra orilla sin haberse mojado nada más que hasta la mitad de las piernas. No salió del agua sino después de permanecer en ella unos minutos. Ya no sentía tanta sed y el calor parecía alejado de su cuerpo.</p>
@@ -1488,7 +1509,7 @@
 						<p>—Fuera de la tintura de yodo y de la aspirina, todo lo demás es andar a ciegas. —Respiró como si lo que había dicho le hubiera fatigado, y añadió—: Además, todo el mundo tiene hambre. Nadie come lo suficiente. ¡Es decir, comen los que tienen dinero! ¡Los otros padecen anemia general! —Otro descanso, para continuar más exaltado—: Yo le aconsejaría que llevara a su pequeño al campo; pero usted me diría inmediatamente que eso es imposible. Que usted no tiene dinero y que...</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_092">5</head>
 						<p>Doña Luisa sufrió un hipo doloroso y el médico guardó un corto silencio para agachar unos hombros en los que parecía que había un peso invisible.</p>
 						<p>—Su hijo curará —afirmó sin ninguna alegría—. No creo que la cosa vaya a peor. De todas maneras volveré mañana.</p>
 						<p>En el rostro de doña Luisa se extendió una dulce tranquilidad. Entonces el médico pronunció sus últimas palabras:</p>
@@ -1498,16 +1519,16 @@
 					</div>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0330_chap14">
-					<head>IV: Notas de Alvaro Giménez</head>
+					<head xml:id="ne0330_head_093">IV: Notas de Alvaro Giménez</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_094">1</head>
 
 						<p>Hasta hoy he podido salir adelante gracias a que en la taberna donde voy a comer me han fiado por espacio de veinte días. En cuanto a lo que pago por dormir, esto es más fácil de solucionar, puesto que las quince pesetas que tengo que abonar cada sábado quedan reducidas a un duro o dos que entrego de vez en cuando, a condición de liquidar la cuenta total en el momento que encuentre colocación.</p>
 						<p>Previendo algo desagradable, esta noche me dirijo a la taberna. Me acomodo en una mesa y en seguida noto que el dependiente no hace por venir hacia donde yo estoy. De esta manera llego a permanecer cerca de un cuarto de hora. Observo que el dueño me mira de vez en cuando y que, por fin, echa a andar en mi busca. Desde luego, sus propósitos los he oído de forma que los demás clientes no han podido enterarse de nada. El dueño me ha expuesto demasiadas razones que me impiden volver por la taberna mientras no abone todo lo atrasado.</p>
 						<p>Mi posición es tan violenta, que no acierto a salir. El dueño está circulando entre las mesas ocupadas y ya no espera sino que 3^0 me largue de una vez. Una idea mediocre me hace salir airoso del comedor. Llamo al chico que sirve a las mesas y le pido un vaso de vino. Bebo con una estúpida naturalidad, le doy diez céntimos y me levanto en busca de la calle.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_095">2</head>
 						<p>Cuando el estómago se halla vacío las ideas se afinan y se recortan. A propósito de ideas, mañana estoy citado con el director de una revista de gran circulación. Confieso, sin ninguna vanidad, que yo tengo cierto prestigio entre la gente de «pluma» y que este prestigio me ha ayudado bastante en arreglar la cita de mañana.</p>
 						<p>El director a quien he de ver es un hombre de unos treinta y siete años. He sido informado de que este señor es un admirador de Marcel Proust, del profesor Freud y de las películas de René Clair. El amigo que me ha dado estos informes está seguro de que yo he de entenderme perfectamente con un hombre de esta tipología. Ya veremos si mañana sucede todo de esta manera.</p>
 						<p>En el momento de la entrevista yo debo señalarle al director los títulos y asuntos que pienso escribir para su revista. Es verdad que todavía no he hecho nada, pero, de aquí hasta mañana, tengo tiempo para pensar en tres o cuatro trabajos de interés.</p>
@@ -1520,7 +1541,7 @@
 						<p>Ahora me voy a dormir. Quiero que mi visita de mañana me coja descansado. Sobre todo, no debo olvidar que el director de esa revista lee al profesor Freud, ama las películas de René Clair y es un admirador de Marcel Proust.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_096">3</head>
 
 						<p>Estoy acostado, y al ladearme para apagar la luz, descubro el periódico que hace unos minutos he comprado en la calle. Ponerme a leer ahora va a ocasionar a mi patrona un pequeño disgusto. En cuanto note que la luz continúa encendida, moverá las sillas del comedor, gritará a la criada y conseguirá sus propósitos de que yo corte la corriente eléctrica.</p>
 						<p>A pesar de todo, recojo el periódico y echo una ojeada a lo que pueda tener un interés. Ahora se acusa notablemente en mi estómago la falta de comida. Un deseo especial me hace levantarme de la cama para mirarme en el espejo del lavabo. En mi rostro hay una melancolía de perro hambriento.</p>
@@ -1537,7 +1558,7 @@
 						<p>«He aquí todo lo que deseaba confesarte. Ahora, otra vez adiós. Y que cenes, te acuestes y duermas. ¡Gran cosa esa de dormir!»</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_097">4</head>
 						<p>En una librería de viejo acabo de vender tres libros en seis reales. Un vaso de café con leche aclarará mis ideas y calentará mi estómago. Son las diez y media y la cita ha sido fijada para las doce de la mañana. Cerca de este bar está el edificio de la revista. Ahora necesito pensar en tres o cuatro reportajes. Un asunto importante puede ser una descripción que muestre cómo viven las familias que no tienen ni domicilio. Este reportaje me lo ha sugerido la madre que vi anoche repartiendo pan a sus pequeños.</p>
 						<p>A los diez minutos de darle vuelta a este tema encuentro un título que espero interese al director. Sobre la cuartilla que tengo sobre la mesa escribo en letras grandes: «Cómo viven los que no pueden vivir».</p>
 						<p>Como en esa revista se da mucha importancia a las fotografías, espero llevar al fotógrafo por las afueras de Madrid. Tengo idea de que bajo los puentes del río Manzanares duermen familias de trabajadores parados.</p>
@@ -1547,7 +1568,7 @@
 						<p>No dándome tiempo para encontrar otros asuntos entro en el portal y paso al ascensor.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_098">5</head>
 						<p>Después de discutir sobre Freud, sobre los <seg rend="italics">films</seg> de René Clair y sobre las novelas de Marcel Proust, el director me dirige esta pregunta:</p>
 						<p>—¿Tiene usted ahí los asuntos de los reportajes?</p>
 						<p>Saco la cuartilla, le muestro los dos títulos y le explico todo el interés que pueden encontrar los lectores en esos dos trabajos y en las fotografías que habrá de tomar el fotógrafo bajo mi dirección.</p>
@@ -1583,16 +1604,16 @@
 						<p>Este director es el proveedor espiritual de «sacerdotes, burgueses, militares, porteras y guardias civiles». Es muy posible que este lector de las novelas de Marcel Proust crea que estos sacerdotes, burgueses, etc., que compran su revista son algo más que un detritus de esta civilización. Es muy posible que crea que este público «es una humanidad».</p>
 					</div>
 					<div type="section">
-						<head>6</head>
+						<head xml:id="ne0330_head_099">6</head>
 						<p>Para entrar en un café es demasiado pronto. Todavía no son las dos de la tarde. A estas horas lo más razonable es sentarse en un banco de la plaza de España. Antes de sentarme compro un panecillo. En la panadería despacha una mujer joven. Siento vergüenza de mi compra y marcho rápidamente a los jardinillos. Por uno de los senderos no circula nadie. A pesar de mi hambre, no puedo acabar con el pan. Tiro al suelo lo que me sobra y me acomodo en uno de los bancos que rodean una plazoleta llena de sol. Ya se han ido las criadas, y guarecido en una zona de sombra está comiendo un fotógrafo. A un lado tiene el trípode y el cajón que contiene el objetivo. El fotógrafo está sentado a caballo sobre el banco de madera y come de lo que saca de una tartera de aluminio. En los otros bancos no hay nadie sentado. Un silencio pesado, como cargado de calor, entorpece los sentidos. A unos metros de mi sitio está tirado sobre la arena del paseo la mitad del panecillo. Siento ganas de cerrar los ojos, dormir hasta que me levante para ir a un café. Pero no duermo. Aunque me he echado el sombrero hacia adelante, observo perfectamente lo que pasa a mi alrededor. Veo avanzar a dos hombres. Detrás del primero camina el otro a una distancia de tres o cuatro metros. El que marcha a retaguardia hace un ruido especial con la garganta con intención de escupir. Entonces el que va delante se vuelve de repente, como si temiera que el otro fuera a hacerlo sobre él. Descubre que la cosa ha ido a parar a otro sitio y se tranquiliza.</p>
 						<p>Enfrente de mí el fotógrafo sigue dándole a las mandíbulas. En los Jados de su modesto aparato de retratar hay muchas fotografías. Estas postales son la garantía de que allí se trabaja como es debido. El es un pobre retratista que no tiene nada que ver con esos capitanes de industria que poseen a la puerta de su casa una serie de premios y medallas. Esos genios de la industria que dictan a su mecanógrafa al mismo tiempo que hablan por teléfono con su agente de París o de Francfort. Cualquiera de estos ilustres fabricantes es dueño de medallas y de una linda mujer. Muchos días, cuando dan las cuatro de la tarde, la esposa entra en el cuarto de baño. Luego viene el colocarse una ropa interior de gran precio. Cuando la mujer sale de la casa, el marido sonríe con cierta vanidad. Ahora podrá trabajar con nuevos bríos. El posee un gran estilo comercial. Sabe ganar medallas, sabe reventar una huelga para después rebajar los jornales, pero ignora quién es Luisito. ¡Ah! Esto es lo que él no sabe, lo que él no conocerá nunca...</p>
 						<p>El fotógrafo ha terminado de comer. Guarda la tartera en una bolsa de tela que cuelga del trípode y se dispone a liar un pitillo. Cuando empieza a echar humo, su cara transpira comodidad. Supongo que ya deben de estar muy cerca las tres de la tarde. De un momento a otro voy a levantarme para dejar estos jardinillos. Por ahora estoy muy lejos de adivinar que mañana he de salir de viaje. Un viaje insospechado que va a tener un final alarmante.</p>
 					</div>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0330_chap15">
-					<head>V: CON EL HOMBRE DE LA CAMIONETA</head>
+					<head xml:id="ne0330_head_100">V: CON EL HOMBRE DE LA CAMIONETA</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_101">1</head>
 						<p>Desde la cama oigo a mi patrona hablar sobre mí. Está indicando que yo suelo levantarme cerca de mediodía y que, aunque ya son más de las diez de la mañana, es muy seguro que aun esté durmiendo. Intervienen en la conversación dos hombres. Uno de ellos tiene una voz que no me es desconocida. En seguida adivino que se trata de Felipe y salto de la cama. Me meto los pantalones para acercarme hasta la puerta.</p>
 						<p>—Pasen a mi habitación —digo asomando la cabeza.</p>
 						<p>Entra Felipe y el que le acompaña; detrás aparece mi patrona trayendo una silla. Yo he vuelto a meterme en la cama, pero antes he dejado entreabierto el balcón.</p>
@@ -1630,7 +1651,7 @@
 						<p>Ya he terminado de vestirme. Dejo todo en orden, abro el balcón y salimos del cuarto. Mi patrona me despide con menos frialdad que de costumbre. La causa de este cambio podré explicármela ahora cuando salga del portal de la casa.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_102">2</head>
 						<p>Cerca de la puerta hay un auto de transporte. Es una camioneta pintada de rojo. Antes de que Juanito me explique lo que está deseando decirme, observo que el auto tiene matrícula de Ciudad Real. Mi patrona ha debido ver la camioneta y alguien le ha dicho quién es el dueño. Para ella esto supone que yo voy a empezar algún trabajo. Supone que todo lo que le adeudo quedará saldado en estos días.</p>
 						<p>—¿Qué le parece? —pregunta Juanito señalando el brillante aspecto de su camioneta.</p>
 						<p>Tal vez me sienta influido por la mañana, donde un sol que apenas molesta penetra en mi ropa y le quita ese olor húmedo que hay cobijado en las habitaciones de la casa de mi patrona. Lo cierto es que empiezo a elogiar el auto. No recuerdo quién fué el que un día me dijo que el rey, siempre que le presentaban un automóvil, daba una patada en una de las ruedas delanteras.</p>
@@ -1660,7 +1681,7 @@
 						<p>No contesto, pero sonrío de nn modo que viene a significar: «Ya veremos. Todo se andará.» Y dejo que Juanito y Felipe se comuniquen su guiño de inteligencia.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_103">3</head>
 						<p>Estamos terminando de comer cuando Juanito me sorprende con esta pregunta:</p>
 						<p>—¿Por qué no se viene conmigo? Antes de una semana tengo que volver a Madrid. Si usted quiere, me acompaña a Daimiel. No tiene que preocuparse de nada, porque vivirá en mi casa.</p>
 						<p>Como hago algunos reparos, Felipe interviene inmediatamente:</p>
@@ -1701,14 +1722,14 @@
 						<p>—Yo no entiendo de nada —confiesa, como justificación a todo lo que le rodea—; pero creo que el mundo bien podría marchar así...</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_104">4</head>
 						<p>En un pequeño envoltorio llevo una camisa, unos calzoncillos, cuatro pañuelos y dos cuellos postizos. Y en un paquete aparte he guardado los útiles de afeitar, un peine y lo de limpiar la dentadura. En un bolsillo de mi americana he guardado un libro de versos escrito por Antonio Machado.</p>
 						<p>Son las nueve de la noche. Juanito llegará a las once al sitio convenido. Para gastar tiempo me dirijo hacia la calle de Segovia. En la Cava Baja un grupo de gente se arremolina alrededor de un auto de línea. En el testero del carruaje leo el nombre del pueblo en donde el autobús ha de rendir su viaje. Me meto entre los viajeros y escucho cosas muy distintas. La gente se mueve precipitada y entrega sus bultos a un hombre que maniobra subido en el techo del auto.</p>
 						<p>Cruzo a la acera de enfrente y desde este sitio no me muevo hasta que el conductor del autobús cierra las puertas y da marcha al motor. El auto arranca con dificultad debido al poco espacio que ofrece la calle. Lleva las luces encendidas y los viajeros miran a los que quedamos en tierra con una mirada que a mí me parece de lástima.</p>
 						<p>Dejo la Cava Baja, cruzo Puerta Cerrada y desciendo por la calle de Segovia. Cuando estoy a unos pasos del Viaducto observo la masa obscura de hierro. Arriba lucen los faroles de gas y algunas sombras cruzan el puente. Por una calle que monta en rampa marcho al barrio de la Morería. Termino desembocando otra vez en el Viaducto. Ahora veo desde arriba la parte donde hace unos minutos estaba parado. Cruzo al otro lado para contemplar a vista de pájaro el caserón de la antigua Casa de la Moneda. Creo que en este edificio vivió <seg rend="italics">Fígaro.</seg> Desde mi sitio descubro unos corredores. Pienso que por aquí debió circular José María de Larra. Pienso en el suicidio de ese escritor; sin embargo, yo continúo entusiasmado con la partida de esta noche. No puedo olvidar aquello «de que llegaremos al amanecer»...</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_105">5</head>
 						<p>Poco después de las once llega Juanito guiando su camioneta. Sin dejar el volante y con el motor en marcha, me grita suba al baquet. En cuanto me acomodo junto a él, damos la vuelta a la Plaza Mayor y bajamos por la calle de Toledo.</p>
 						<p>—¿Quiere usted que tomemos una copa? —invita Juanito, señalándome las tabernas que se suceden a lo largo de la calle.</p>
 						<p>Como lo pide con ganas, acepto su petición, pero no dejo de advertirle:</p>
@@ -1759,9 +1780,9 @@
 					</div>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0330_chap16">
-					<head>VI: LA HUIDA</head>
+					<head xml:id="ne0330_head_106">VI: LA HUIDA</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0330_head_107">1</head>
 						<p>En lugar de entregar los muebles, Juanito me conduce a su casa. Primero pasamos a un patio cubierto por una parra llena de racimos maduros. En un rincón del patio sobresale el brocal de un pozo. Juanito me presenta una vieja vestida de luto. Es su madre. La mujer no parece descontenta de mi visita. «¿Se habrá extendido hasta ella las conversaciones que sobre mí han tenido Juanito y Felipe?»</p>
 						<p>Se me lleva al interior de la casa. Por donde paso huelo a limpieza y a orden. Juanito me señala la habitación donde he de dormir las noches que permanezca en Daimiel. En el cuarto hay una cama, una cómoda, un palanganero y dos sillas de asiento de paja. En el testero de la cama está colgada una litografía que representa Jesús. En un momento en que la madre de Juanito se halla fuera de la alcoba, éste me explica:</p>
 						<p>—Si usted quiere quitamos esa estampa —y me seíiala el cuadro de Jesús.</p>
@@ -1784,7 +1805,7 @@
 						<p>—Después de almorzar —me dice antes de poner el motor en marcha— daremos una vuelta por el pueblo. Tiene usted que conocer a mis amigos. Ellos van al Casino. En Daimiel hay dos Casinos —aclara convenientemente—. El Casino de los ricos y el Casino de los obreros.</p>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0330_head_108">2</head>
 						<p>Desde la casa de Juanito a la plaza del pueblo, sitio donde se halla el Casino de los ricos, hay una distancia de unos seiscientos metros. Esta distancia ha sido recorrida por nosotros en hora y media. A cada momento Juanito detiene la marcha para entrar en una casa y presentarme a uno de sus amigos o a toda una familia. En cuanto cruzamos las primeras palabras, alguien de la casa saca una jarra con vino y bebemos todos para elogiar después el sabor del liquido. Yo tengo que hacer verdaderos esfuerzos para continuar bebiendo. El vino me sabe ya a vinagre. Sin embargo, al entrar en la cuarta casa, repito lo de coger la jarra y trago un poco de vino. En cuanto suelto mi elogio sobre el contenido de la jarra, no sé ya qué añadir y me quedo mirando a Juanito. La conversación viene a ser la misma de las visitas anteriores. Todos se quejan del campo, de la falta de agua y de la filoxera. Después de las lamentaciones, la jarra de vino va de mano en mano. Cada cual se limpia la boca con lo que tiene a propósito y luego bebe sin ningún entusiasmo.</p>
 						<p>Al salir a la calle una luz violenta hiere los ojos. Las casas, encaladas, reflejan los rayos del sol en una blancura que contrasta fuertemente con el azul del cielo. Las aceras, empedradas del mismo modo que la calle, destrozan los pies con sus cantos de punta. Siento las molestias del vino, y aunque Juanito y yo marchamos por la sombra, el calor se echa encima de manera cargante. Todo el suelo está lleno de briznas de paja, de tierra abrasada por el sol y de estas piedras del adoquinado, que parecen que han sido arrojadas al azar con el propósito de molestar a los transeúntes. Estoy fatigado y medio borracho. A1 desembocar en la plaza del pueblo Juanito me señala el edificio del Casino. A los lados de la plaza hay soportales. Nadie pasea por ellos, pero un guardia municipal que está apoyado en una de las columnas, saluda a Juanito.</p>
 						<p>—Espere usted —dice Juanito—. Voy a presentarle a este amigo.</p>
@@ -1824,12 +1845,12 @@
 						<p>—¿Y por qué quiere usted ir solo? ¿No le he dicho que iré yo también? Ahora entraremos en el Casino de los obreros. Está muy cerca de aquí.</p>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0330_head_109">3</head>
 						<p>No hay una gran diferencia entre este salón del Casino de los obreros y el otro salón del Casino de los ricos. La diferencia está en los clientes. Observo menos barrigas y menos americanas. La mayoría de los que juegan o circulan por el salón visten blusas negras o grises. También se grita más que en el Casino de los ricos, y en cuanto a la autoridad, aquí se halla representada por un simple cabo de la Guardia civil. Juanito me ha descubierto que, aunque esto se llama Casino de los obreros, los ricos entran a veces a tomar un café para demostrar que ellos no odian a los trabajadores. Este círculo está bien visto por los curas y por los ricos de Daimiel. Lo que los ricos no pueden comprender es que muchos obreros no entren en este círculo y en cambio vayan a la Casa del Pueblo. Una de las muchas razones con que tratan de «convencer» a los trabajadores para que no visiten la Casa del Pueblo es la de explicarles que en el Casino tienen fichas para jugar al dominó, tienen billar y barajas. Pueden tomar café, otras bebidas, o, si les parece bien, no necesitan tomar nada. Pueden ahorrarse el dinero de la consumición. En cambio, en la Casa del Pueblo no tienen nada de esto. Incluso el local es pequeño y hay pocos asientos. En el Casino todo el mundo fraterniza: obreros y Guardia civil. Claro que después llega una huelga y la Guardia civil «se ve obligada a repeler la agresión».</p>
 						<p>Es verdad que en la Casa del Pueblo hay una habitación bastante espaciosa; pero en ella todo está ocupado por la biblioteca y por una mesa alargada, donde los trabajadores pueden leer. A pesar de lo de la biblioteca, los ricos siguen argumentando: «¿Pero queréis explicarnos qué es lo que os produce la lectura? ¿Acaso los libros os van a dar de comer? Además, vuestros jefes socialistas son unos sinvergüenzas. ¿Es que no sabéis que cuando van de viaje lo hacen bien acomodados en primera clase, y que cuando están cerca de donde tienen que apearse se cambian a un vagón de tercera?»</p>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0330_head_110">4</head>
 
 						<p>No mucho antes de abandonar el Casino de los obreros Juanito se levanta y se pone a mariposear por entre las mesas. Por un simple juego de recuerdos sospecho todo el alcance de las maniobras de este hombre. Está atardeciendo y a estas horas es precisamente cuando está acordada nuestra visita a la Casa del Pueblo. El resultado de los trabajos de Juanito no se hace esperar. Ya viene a mi mesa con un amigo, a quien soy presentado «como un periodista de Madrid)). Empleamos unos minutos en hablar del pueblo. Otra vez se me explica el grave problema de la filoxera.</p>
 						<p>Juanito abona mi consumición y salimos para encaminamos al domicilio del amigo recién presentado. Este señor tiene una bodega, y en cuanto empezamos a beber miro fijamente a Juanito, pero prefiero no decirle por qué me ha traído a este lugar. De una tinaja vamos a otra tinaja. Es imposible no aceptar las invitaciones que nos hace el dueño de la bodega. Conforme vacío vasos, el rostro de Juanito adquiere cierta satisfacción. Las ventanas de la bodega caen al nivel del suelo de la calle y ya no proyectan sobre nosotros más que una débil claridad. El dueño enciende la luz eléctrica.</p>
@@ -1870,7 +1891,7 @@
 						<p>Continuamos en silencio hasta que vamos a cruzar ante la puerta de un taller de guarnicionero. Juanito se para a hablar unas palabras con un hombre vestido con una blusa negra y un mandil de cuero. Por primera vez Juanito no me presenta sino que, en cuanto lo cree oportuno, se despide para continuar la marcha. Cerca ya de su casa me pide que no diga nada a su madre de la visita que hemos hecho a la Casa del Pueblo. En cambio, conviene que yo hable del Casino de los ricos, de las visitas a las familias donde nos han obsequiado con vino y del agasajo que nos ha hecho el dueño de la bodega. Del fugitivo y de la Casa del Pueblo, ni una palabra. Juanito lo demanda encarecidamente con los hombros cargados de pesadumbre.</p>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0330_head_111">5</head>
 						<p>A nuestra llegada encontramos la mesa puesta. La madre de Juanito me llena un plato de carne guisada. Según transcurre la cena observo que la madre no quiere comer y que apenas habla con su lujo. En su rostro parece que existe un grave malestar. Juanito trata de disimular la situación y me cuenta unos chismes que han sucedido en el pueblo. Entonces la madre se levanta de la mesa como si no pudiera tolerar la broma. Juanito también me deja, pasando a una habitación, donde ahora se halla su madre. Primero escucho que hablan en voz baja, pero en seguida levantan el tono y la madre grita a su hijo censurándole que haya entrado en la Casa del Pueblo. Se refiere a los asociados y los llama bandoleros. Juanito trata inútilmente de calmar a su madre. Sin duda, está pensando en mi situación. Al preguntar quién le ha traído la noticia de nuestra visita a la Casa del Pueblo, la madre dice que ha sido una vecina, pero no confiesa el nombre de esa mujer. Otra vez se exalta para colmar de insultos a la Casa del Pueblo y a los trabajadores. Explica que en esa casa vive el demonio, que esos obreros quieren robar el dinero que los ricos han ganado con su trabajo y repite por segunda vez la palabra bandoleros. Juanito calla. Se ve que no quiere descubrirme; que prefiere que su madre crea que él ha sido el causante de la visita a la Casa del Pueblo. Yo no puedo continuar en la mesa. Han debido de escuchar el ruido que he producido con la silla, porque aparecen madre e hijo.</p>
 						<p>—Su hijo no tiene ninguna culpa —explico a la madre—. He sido únicamente yo el que tuvo la ocurrencia de conocer la Casa del Pueblo.</p>
 						<p>No adelanto nada con mis palabras. La madre calla, pero sigue preocupada. Juanito está apoyado en la pared y mira, o parece mirar, los ladrillos del suelo. Sobre la mesa hay tres platos. El mío está a medio consumir. Los otros dos casi no han sido vaciados. Doy unos pasos y entro en la habitación donde tengo mi camisa, los cuellos, la máquina de afeitar y lo demás. En menos de un minuto queda todo envuelto. Entonces regreso al comedor. Cuanto Juanito descubre el paquete, se me coloca delante como si tratara de cerrarme el paso.</p>
@@ -1893,7 +1914,7 @@
 				</div>
 			</div>
 				<div type="part">
-					<head>CUARTAS ESCENAS</head>
+					<head xml:id="ne0330_head_112">CUARTAS ESCENAS</head>
 						<quote>
 							<p><seg rend="italics">Guardias de a pie, guardias de a caballo y agentes de policía secreta vigilaban todo el trayecto por donde tenía que pasar la fúnebre comitiva.</seg></p>
 							<p><seg rend="italics">Los hombres se descubrían respetosamente mientras las mujeres, con los ojos cargados de lágrimas, arrojaban ramos de flores que habían besado momentos antes.</seg></p>
@@ -1901,9 +1922,9 @@
 							<p><seg rend="italics">Nadie conocerá nunca quién fué aquel caballero; sin embargo, aquel caballero dijo al paso del entierro la más grande verdad. «El cine está de luto! ¡El ídolo ha muerto»</seg></p>
 						</quote>
 					<div n="17" type="chapter" xml:id="ne0330_chap17">
-						<head>I: UN GRAN PROYECTO</head>
+						<head xml:id="ne0330_head_113">I: UN GRAN PROYECTO</head>
 						<div type="section">
-							<head>1</head>
+							<head xml:id="ne0330_head_114">1</head>
 							<p>Norberto G. Robledal pasó a presencia del señor Poch. Esta era la segunda vez que aquel director de películas visitaba el domicilio particular del propietario de los cafés «Ecuador». Desde el día en que fué suspendido de la dirección de <seg rend="italics">El estudiante enamorado.</seg> Norberto G. Robledal no había dado señales de vida. El señor Poch estaba aguardándole detrás de su mesa-despacho. En su interior el señor Poch sufría una molesta sensación de desconfianza. Norberto G. Robledal vestía un temo gris, y sobre sus zapatos de charol se destacaban notablemente unos botines blancos. Con una inesperada cordialidad, el director ofreció su mano derecha, mientras en la izquierda tenía unos guantes amarillos. Recién afeitado, y con la cabeza peinada cuidadosamente el señor Robledal sonrió y dijo las primeras palabras:</p>
 							<p>—No he querido saludarle en su despacho oficial. Aquí, en su misma casa, liemos de llegar mejor a un acuerdo—y tomó asiento al tiempo que lo hacía el señor Poch.</p>
 							<p>Antes de continuar, sacó su pitillera y ofreció cigarrillos ingleses. El señor Poch prefirió que fumara solamente el director. Viéndole jugar con el cigarrillo, el señor Poch comparaba el aspecto elegante y dominador de Norberto G. Robledal con la figura achatada y ordinaria de José Sancho. El director Robledal, con su traje gris, con su calzado de charol, sus botines blancos, su tabaco inglés y aquella cabellera cenicienta peinada hacia atrás en un elegante desdén, producía en el señor Poch un dominio seductor y al mismo tiempo una ligera contrariedad.</p>
@@ -1938,7 +1959,7 @@
 
 						</div>
 						<div type="section">
-							<head>2</head>
+							<head xml:id="ne0330_head_115">2</head>
 							<p>Con unas tablas, con dos juegos de ruedas y con dos varillas de acero, Felipe había construido el pequeño vehículo. Dos de las ruedas, las que tenían que rodar en el juego delantero, no pasaban del tamaño de una moneda de cinco pesetas. Las del juego trasero eran algo más grandes y de un grosor más fino. Al costado derecho del carrito, un listón, que podía ser accionado por el conductor, servía de freno al tropezar el listón con el suelo. No es que Felipe hubiera construido materialmente aquel diminuto carruaje. Sin embargo, había dirigido toda sü realización; en primer lugar, comprando las ruedas y los ejes en un puesto del Rastro. El carpintero solamente puso el trabajo y la madera. Como detalle importante, el carrito estaba provisto de un botellín de lubrificante a base de aceite común, y dentro del botellín había una pluma de ave que podía ser utilizada a manera de pincel con que engrasar las ruedas. En cuanto a la dirección, ésta había sido simplificada extraordinariamente. Del juego delantero partían dos cueidas de gran resistencia. ¿Que el conductor quería girar hacia la derecha? Entonces bastaba con tirar en este sentido de la cuerda, o en sentido contrario si se trataba de marchar hacia la izquierda. A excepción de Felipe y del carpintero, nadie había sido enterado de la construcción. Por último, el peso total del carrito podía calcularse en unos cuatro kilos.</p>
 							<p>Ahora que Felipe llevaba el regalo bajo el brazo pensaba en la sorpresa que estaba a punto de ocasionar. Era muy de mañana, y decidió esperar todavía. A él era a quien se le había ocurrido lo de que Tony diera todas las mañanas un gran paseo. Del enfriamiento había quedado muy débil. Felipe convenció a doña Luisa que Tony necesitaba aire fresco y sol. Y si no se refirió a la comida fué por no causar en doña Luisa alguna contrariedad.</p>
 							<p>A las nueve y minutos empezó a montar la escalera. Cuando llamó en la puerta ya tenía el carrito escondido a un lado. Sin duda, doña Luisa esperaba la visita, porque se mostró a los ojos de Felipe toda arreglada. La habitación había sido barrida y las dos camas ya estaban hechas. Tony enseñó su melena perfectamente peinada y recibió a Felipe sonriente y nervioso.</p>
@@ -1954,7 +1975,7 @@
 							<p>Fué a coger el carrito, pero Tony se opuso a ello. Por fin salieron, siendo acompañados hasta la escalera. Felipe vió cómo doña Luisa quedaba sobre la puerta. Quedaba sonriente y llena de confianza. «Mañana o pasado mañana se lo diré todo.» Esto mismo lo repitió Felipe cuando ya marchaba con Tony calle de Toledo abajo.</p>
 						</div>
 						<div type="section">
-							<head>3</head>
+							<head xml:id="ne0330_head_116">3</head>
 							<p>La prueba se llevó a efecto en la cuesta que va desde la puerta de Toledo hasta la glorieta de las Pirámides. Felipe mandó a Tony que se colocara en el asiento y le enseñó el manejo de las cuerdas, que en un momento de peligro podían modificar la dirección. Obligó a que Tony manejara el freno varias veces y, ya todo explicado, dió al carruaje un pequeño empujón. Tony, dentro del carrito, empezó a deslizarse por la pendiente. Cuando Felipe mandaba parar, Tony bajaba la palanca de madera. Ninguno de los dos había reparado que los transeúntes tenían que apartarse a la llegada del carricoche. Cortando y dando marcha llegaron al final de la acera. Ahora se encontraban en la glorieta. Felipe, antes de ordenar subir hacia la puerta de Toledo, pidió a Tony hacer un corto descanso. Tomaron asiento en un banco de piedra. Cuando Felipe trató de levantarse, no pudo hacerlo. Estaba realmente cansado. Toda la cuesta la había descendido a un paso rápido obligado por la velocidad del carrito. Se tocó en los vendajes y notó que los tenía movidos. Confiando en la seriedad de Tony permitió que éste subiera solo un trozo de cuesta para después lanzarse como lo había hecho momentos antes. Tony se apresuró a cumplir el encargo. Por el centro de la calle bajaban ahora los carros de los traperos. Como la basura colmaba los carros, los traperos tenían que ir montados sobre pequeñas montañas de inmundicia. Felipe se entusiasmaba con estos ligeros sucesos que ofrecía la calle.</p>
 							<p>Prestó atención al descenso de Tony. Este bajaba ya envuelto en el pequeño alboroto que producían las ruedas al rozar las losas de la acera. Bajaba con la cara sonriente y sin preocuparse de que sus débiles brazos no podían mantener la dirección del juego delantero. Al llegar al banco de piedra, Tony accionó sobre el listón del freno y paró casi inmediatamente.</p>
 							<p>—¡Bien, muy bien! —exaltó Felipe ante la habilidad.</p>
@@ -1979,7 +2000,7 @@
 							<p>Esperó a que el tranvía estuviera totalmente parado. Entonces, y tomando toda clase de precauciones, bajó al estribo y del estribo saltó al suelo. No se atrevió a sacar la mano que sujetaba los vendajes. Lo que hizo fué apresurar el paso para llegar cuanto antes a su casa.</p>
 						</div>
 						<div type="section">
-							<head>4</head>
+							<head xml:id="ne0330_head_117">4</head>
 							<p>Cuando en la mañana anterior salía el director Robledal del domicilio del señor Poch, éste pensó en entrevistarse inmediatamente con José Sancho. Si no llevó a efecto sus deseos fué porque la magnitud del negocio exigió que él dedicara todo el resto de aquel día a reflexionar si era o no era conveniente asociarse a José Sancho. Por fin decidió citar al director en su casa. Este apareció con una cara de extrañeza. En primer lugar, el señor Poch le llamaba a su domicilio particular. Y cuando apenas habían cambiado unos saludos, preguntó el señor Poch:</p>
 							<p>—¿Sabe usted cuántos gallegos hay en la Argentina?</p>
 							<p>José Sancho quedó cortado a causa de la pregunta.</p>
@@ -2002,7 +2023,7 @@
 							<p>—Hasta esta tarde —dijo por último el capitalista—. Y no vaya a decirme luego que no ha tenido tiempo, que si esto y que si lo otro...</p>
 						</div>
 						<div type="section">
-							<head>5</head>
+							<head xml:id="ne0330_head_118">5</head>
 							<p>Entró en el portal cuando en el reloj de Gobernación eran la una y veinte minutos. Antes de dirigirse aquí había estado en el domicilio del periodista Joaquín Ñuño. Pero este señor se hallaba trabajando en un ministerio y no regresaría a su casa hasta después de las dos. Para hacer tiempo, José Sancho pensó en averiguar lo de las lluvias. Hasta decidirse a visitar el centro gallego estuvo dando vueltas a unas cuantas calles de Madrid. El no podía preguntar a cualquiera la fecha en que empezarían las lluvias en la región gallega. Confiando en la casualidad, continuó su marcha, subió a casa del periodista, se enteró de la hora en que podría verle y regresó a la calle dispuesto a proseguir sus pesquisas. En un bar se bebió un vermut, sintiendo entonces cómo su cerebro adquiría claridad. Acababa de acordarse de su sereno. Indudablemente su sereno debía de ser gallego; pero este hombre no estaría visible hasta las once de la noche, y mucho antes de esa hora José Sancho tenía que llevar su respuesta al señor Poch.</p>
 							<p>Algo desalentado continuó cruzando calles, hasta que, jugando con la imaginación, fué a caer en que los gallegos, los catalanes y los hombres de las demás regiones de España tenían en Madrid su domicilio Bocial. José Sancho vió el cielo abierto. Ahora sólo necesitaba buscar una guía de teléfonos. Descubierto en la guía el centro de los gallegos llegaba más tarde a este portal. Una vez arriba, empujó una puerta. En el vestíbulo no había nadie. Pasó a un salón y tampoco encontró a quién preguntar. Cuando se volvía, extrañado de aquella soledad, vió venir a un empleado.</p>
 							<p>—¿No hay nadie por aquí? —y José Sancho señalaba el vacío que remaba en la casa.</p>
@@ -2052,7 +2073,7 @@
 							<p>Y descendió rápidamente, como si temiera nuevas palabras del periodista. Por otra parte, la realidad de haber solucionado todo le hizo saltar los escalones alegremente y con una completa confianza.</p>
 						</div>
 						<div type="section">
-							<head>6</head>
+							<head xml:id="ne0330_head_119">6</head>
 							<p>En aquel mismo día Alvaro Giménez rendía viaje en el pueblo de Manzanares. El alba lo sorprendió en los alrededores de la pequeña ciudad. Se echó en la cuneta para quitarse los zapatos y descansar hasta que avanzara el día. Al desprenderse de los calcetines vió sus pies inflamados y con ampollas. Algunas se le habían reventado, lo que le producía un vivo escozor.</p>
 							<p>Un grupo de nubes, que Alvaro hubo observado cuando empezaba a amanecer, se alejaba ahora como si fueran barridas por el sol. Desde la cuneta veíanse las chimeneas de las destilerías de alcohol y las cúpulas de dos iglesias. Pero Alvaro se hallaba más atento al estado de sus pies. De vez en cuando pasaban por la carretera algunos campesinos. Subidos en carros de labranza, se dirigían a las huertas cercanas. Todos miraban a aquel hombre vestido con ropa de ciudad que tenía los pies desnudos.</p>
 							<p>Pensaba Alvaro que entrar en el pueblo a aquellas horas era exponerse a no encontrar una manera de continuar su viaje hasta Madrid. Por otra parte tenía sueño. Un sueño que allí mismo empezaba a adormecerlo. Se puso los calcetines y se metió los zapatos, aguantando el dolor que le producían las heridas de los pies. Ya levantado, se acercó hasta las primeras casas y se tumbó junto a una tapia. No tardó en dormirse. Hacia las once sintió calor. Abrió los ojos para buscar una zona de sombra y se cobijó en un sitio en que la tapia le servía de parapeto. Sin mirar lo que hacían sus manos volvió a descalzarse, puso los zapatos a modo de cabecera y, casi sin sentirlo, entró en un nuevo sueño. Por su cerebro, como por un camino obscuro, corría un hombre extraño y mal vestido. Alvaro marchaba detrás gritando al fugitivo que se detuviera.</p>
@@ -2061,9 +2082,9 @@
 						</div>
 					</div>
 					<div n="18" type="chapter" xml:id="ne0330_chap18">
-						<head>II: LECTURA DE VERSOS</head>
+						<head xml:id="ne0330_head_120">II: LECTURA DE VERSOS</head>
 						<div type="section">
-							<head>1</head>
+							<head xml:id="ne0330_head_121">1</head>
 							<p>Al no editarse en Manzanares ningún periódico, Alvaro tenía que orientarse por otro lado. Al doblar una esquina quedó frente a un edificio con grandes ventanales. En la acera que bordeaba aquella casa había sillas de mimbre ocupadas por gente de aspecto adinerado. Alvaro se acordó del Casino de los ricos que había visitado en Daimiel. Los que se hallaban en la acera miraron para su sitio y entonces Alvaro se dirigió hacia ellos. Entró en un ancho portal y a un camarero que venía hacia la calle le dijo que deseaba hablar con el presidente del Casino.</p>
 							<p>—Ahí lo tiene usted —respondió el camarero, señalando en dirección a la calle.</p>
 							<p>—Dígale que le quiere hablar un periodista de Madrid —y sentándose en una silla que había al principio del salón, terminó para el camarero—: Aquí mismo le esperaré.</p>
@@ -2100,7 +2121,7 @@
 							<p>Y salió del salón. Alvaro dejó la silla para sentarse en un sillón que había junto a un ventanal. Mirando el aspecto del salón se notaba en seguida que aquello estaba dispuesto para un baile. Las mesas habían sido quitadas y toda la sillería se prolongaba en una doble fila alineada junto a la pared. Al fondo había una pequeña plataforma donde estaba el piano y cuatro atriles de música. En aquella plataforma debía subir Alvaro para leer los versos, y la lectura no tenía que empezar antes de las seis y media de la tarde. Esto era lo convenido.</p>
 						</div>
 						<div type="section">
-							<head>2</head>
+							<head xml:id="ne0330_head_122">2</head>
 							<p>Antes de las seis y media se celebraba en Madrid la entrevista de Norberto G. Robledal con el productor de películas Rocamora. Robledal se explicó en términos parecidos a como lo había hecho en su visita al señor Poch. Repitió las cifras de los gallegos que residían en la América del Sur y los que vivían solamente en Buenos Aires. Cuando habló de las trescientas mil pesetas de ganancia líquida que podía obtenerse con sólo exhibir la película en la capital argentina, el señor Rocamora cruzó la mirada con su ayudante Rodríguez.</p>
 							<p>—Hasta ahora —descubrió Norberto G. Robledal— he reunido setenta mil pesetas. Esta cantidad ha sido aportada por un socio de Vizcaya. Basta con que ingresen en la empresa otros tres socios para que se puedan empezar los trabajos.</p>
 							<p>Una corta pausa y añadió:</p>
@@ -2115,7 +2136,7 @@
 							<p>—Excelente caca —dijo para Rocamora y su ayudante. Y metiéndose la mano derecha en uno de sus guantes amarillos, marchó pasillo adelante, abrió él mismo la puerta, y una vez al otro lado, cerró con un portazo que era como una franca repulsa.</p>
 						</div>
 						<div type="section">
-							<head>3</head>
+							<head xml:id="ne0330_head_123">3</head>
 							<p>Media hora antes de comenzar el baile el conserje encendió algunas luces. Entonces descubrió que un hombre se había quedado dormido en uno de los sillones. Al acercarse notó que el forastero no dormía, aunque esa fuera la postura.</p>
 							<p>Alvaro buscó un nuevo sitio, marchando a la parte donde estaba el piano. Puso una silla al otro lado de los atriles y se sentó. El conserje observó la mudanza y siguió manejando luces y corrigiendo la colocación de algunas sillas.</p>
 							<p>A las seis menos cuarto llegaron los músicos y a continuación entraron las primeras familias. Al dar las seis el salón estaba completo de gente. Alvaro descubrió al secretario del Casino. Cruzó la mirada con él, pero éste se puso a hablar con unas señoritas. Se oían notas sueltas de música, mientras por el centro del salón circulaban las parejas en espera de que el baile diese comienzo. Alvaro buscaba entre el público al presidente del Casino, temiendo que el secretario no se acordara o «no quisiera acordarse», de lo de la lectura.</p>
@@ -2255,7 +2276,7 @@
 							<p>Regresó a la cama y se acostó. Cuando al otro día bajó a la taberna se encontró con que el gasto de la cena y el alquiler de la habitación ya habían sido pagados. El dueño explicó que todo estaba abonado por el conserje del Casino. Añadió también el dueño que una hora antes el conserje había venido a la taberna. Lo último que dejó dicho es que le dieran de su parte muchos recuerdos. Que él no podía acompañarlo a la estación; pero que, de todas maneras, «muchos recuerdos».</p>
 						</div>
 						<div type="section">
-							<head>4</head>
+							<head xml:id="ne0330_head_124">4</head>
 							<p>En cuanto al argumento gallego, he aquí que Joaquín Ñuño trabajó de firme en la primera noche. En líneas generales, el escenario quedaría sujeto a esta breve historia: «En uno de tantos pueblos de la región gallega vive una honrada familia compuesta de un padre, una madre y una hija. Esta familia es muy trabajadora; mas todo el fruto de su trabajo se lo lleva un viejo usurero. El canalla tiene en su poder unos documentos en los cuales consta que de no abonarle cierta cantidad, él podrá apoderarse entonces de la casa y la huerta, que son el Tínico sustento de la familia. El viejo ofrece una repugnante solución. El no tiene inconveniente en anular esos documentos si la hija de los pobres viejos se casa con un sobrino suyo. Este sujeto es un tipo enclenque y medio calvo.</p>
 							<p>»Transcurre algún tiempo, y un día que la bella muchacha está paseando por la carretera descubre que cerca de ella hay parado un lujoso automóvil. Por bajo del coche sobresalen las piernas de un hombre. El que está escondido termina por salir de debajo del auto. Entonces, la muchacha ve que tiene delante a un joven apuesto y simpático. Por lo visto, la avería del coche es de bastante gravedad. El joven pregunta dónde hay un local para llevar su automóvil. La muchacha ofrece su misma casa. Después ocurre que el joven acepta el pernoctar en el hogar de los padres de la muchacha mientras llega de Vigo un experto mecánico. Naturalmente, la joven se enamora del elegante, aunque éste no demuestra el darse por enterado. En aquellos días hace el viejo una de sus odiosas visitas. Esta vez acaba de llegar con su enclenque sobrino. El viejo dice que ya no espera más tiempo. O se le paga todo lo que se le adeuda o se queda con la casa y la huerta. La famiba pide un nuevo plazo; pero el viejo parece insensible a todo lo que no sea cobrar. Ni las lágrimas de la bella muchacha llegan a conmoverlo. Ni aun viendo cómo los padres se le ponen de rodillas es capaz de acceder a Jo del plazo. Unicamente el viejo canalla ofrece cancelar la deuda si la hija se casa con su sobrino. En esta situación: los padres de rodillas, la muchacha llorando, el sobrino a la expectativa y el viejo con los documentos en lo alto de una mano, aparece el joven del automóvil. El viejo y el sobrino quedan perplejos; no así el joven, que, rápidamente, arrebata los papeles comprometedores para arrojarlos al fuego que arde en la chimenea. La muchacha mira deslumbrada y los padres lloran de emoción. El joven del automóvil levanta del suelo a los padres; después coge al viejo y a su sobrino de los cuellos de las americanas y de dos tremendos puntapiés los arroja a la calle.</p>
 							<p>»A1 volverse el joven declara al padre que está dispuesto a casarse con su hija. Los viejos, como es lo propio, brincan de júbilo y ella se acerca hasta reposar en el pecho de su prometido...</p>
@@ -2265,9 +2286,9 @@
 						</div>
 					</div>
 					<div n="19" type="chapter" xml:id="ne0330_chap19">
-						<head>III: DOS ARGUMENTOS PARA AMÉRICA DEL SUR</head>
+						<head xml:id="ne0330_head_125">III: DOS ARGUMENTOS PARA AMÉRICA DEL SUR</head>
 						<div type="section">
-							<head>1</head>
+							<head xml:id="ne0330_head_126">1</head>
 							<p>En «Academia-Filin» reinaba la animación natural. De nuevo hubo necesidad de suspender los ensayos para que el director José Sancho organizara todo lo conveniente a su tercera película. El argumento de Joaquín Ñuño sufrió la inevitable modificación que tanto se le había anunciado al periodista. Desde el primer momento el señor Poch se opuso a que el viejo usurero figurase en la película como nacido en Galicia. Para salvar aquella dificultad, Joaquín Ñuño hizo del personaje un avaro catalán. El señor Poch aceptó el cambio, sabiendo que su película pertenecía por entero a los dos millones de gallegos residentes en la América del Sur. En lo que no hubo discusión fué en lo tocante al título. Joaquín Ñuño fué felicitado al saber que la película sería producida con el título de <seg rend="italics">Un amo: en Galicia.</seg></p>
 							<p>Con relación a los personajes, el reparto no pasaba de seis artistas principales. Estos artistas tenían que interpretar los papeles de el viejo usurero, el joven del automóvil, el padre, la madre, la hija y el sobrino del usurero. Todo lo demás sería comparsería o papeles de una o dos sesiones. Determinada cada cosa, José Sancho marchó a Galicia para fijar los lugares en donde habría de hacerse la filmación. A su regreso se hizo la selección de los artistas, escogiéndolos entre los alumnos de la academia. Aunque Tony no estaba en condiciones de ser presentado a José Sancho, allí se hallaba con los demás alumnos. Felipe, doña Luisa y Tony estaban sentados cerca de la puerta que comunicaba con el despacho de la dirección. El haberse sentado en aquel sitio era idea de Felipe. Otra idea suya fué el avisar a doña Luisa para que se presentara con Tony en «Academia-Film».</p>
 							<p>El primero en ser requerido fué un alumno que acudía a las clases conduciendo un auto de su propiedad. El padre de este alumno tenía en Madrid un gran comercio. Unos minutos después salió el muchacho con una cara de triunfo que decía claramente que había sido contratado para hacer «el joven del automóvil». Cuando desfilaron por el despacho otros alumnos, Jacinto Sancho se asomó a la puerta para nombrar a doña Luisa.</p>
@@ -2310,7 +2331,7 @@
 							<p>Nada más pasar a la habitación de las clases se llevó aparte a doña Luisa y a Tony. Explicó todo lo ocurrido para terminar marchando a un café.</p>
 						</div>
 						<div type="section">
-							<head>2</head>
+							<head xml:id="ne0330_head_127">2</head>
 							<p>—Ya sabe usted —empezó Felipe a la vista de un café con leche— que saldremos pasado mañana.</p>
 							<p>Llena de gozo, doña Luisa partió un trozo de su bocadillo y se lo entregó a Tony. Felipe sorbió un poco de su vaso y se levantó.</p>
 							<p>—Vuelvo ahora mismo —y se alejó hacia el fondo del bar.</p>
@@ -2332,13 +2353,13 @@
 							<p>—Estoy deseando que regrese del pueblo ese amigo mío —habló ya en la calle y por decir algo. Y como un reproche, cuya intención verdadera no podía comprender doña Luisa, enlazó a lo que había dicho antes—: Se aburre uno de estar solo. Por lo menos que se pueda hablar con alguien.</p>
 						</div>
 						<div type="section">
-							<head>3</head>
+							<head xml:id="ne0330_head_128">3</head>
 							<p>Por su parte, el director y productor Rocamora hizo un excelente empleo de su tiempo. El otoño estaba ya muy próximo y sólo a fuerza de rapidez podía realizarse la película destinada a los dos millones de gallegos de la América del Sur. El director Rocamora no tenía, como el señor Poch, un escritor de argumentos. No lo tenía por la razón sencilla de que no lo necesitaba. Él mismo trazaba los escenarios de sus películas. De esta forma el director Rocamora se ahorraba dos cosas: el dinero que hubiera tenido que pagar al escritor y las discusiones naturales al no estar conforme con lo que le presentaban.</p>
 							<p>A la redacción del argumento contribuyó no poco el ayudante Rodríguez no permitiendo que molestaran al director con visitas inútiles. Así, perfectamente aislado en su despacho, el director Rocamora dió fin al escenario en treinta y tantas horas. Tal vez había menos estilo que en el argumento escrito por el periodista a sueldo del señor Poch; más en lo tocante al sentido del cine, o por lo menos a lo que sería agradable a los dos millones de gallegos, el productor Rocamora no quedaba en inferioridad con referencia a lo escrito por Joaquín Ñuño.</p>
 							<p>Lo que no podía evitar el director Rocamora era cierta lástima sentida hacia Norberto G. Robledal. Porque lo que había hecho aquel señor era una gran tontería y una gran ligereza. Explicar la manera de hacer un negocio al primero que se presenta era un candor propio de gente que no conocía la forma de trabajar en España.</p>
 						</div>
 						<div type="section">
-							<head>4</head>
+							<head xml:id="ne0330_head_129">4</head>
 							<p>El productor y director Rocamora había hecho algunos versos allá en su juventud. Por eso en todos sus escenarios existía una gran temperatura lírica. En sus películas <seg rend="italics">Un bandido andaluz</seg>, <seg rend="italics">Maldición gitana, El amor de un torero,</seg> etc., circulaba esta corriente lírica. Y detalle de importancia es que esta tierna manera de ver las cosas no había hecho más que darle facilidades para desenvolverse por la vida. En primer lugar, enamorando a la hija de uno de los hombres más ricos de Soria. Para terminar, el director Rocamora tenía fe en los resultados de su lírica, y nada más empezar a trazar situaciones en el argumento para los gallegos, fué llevando las cosas de manera que en la película hubiera mucho amor. Un amor desgraciado al comienzo del <seg rend="italics">film</seg>, pero que al final resultaba vencedor en la lucha entablada entre un honrado campesino gallego y un señorito de Madrid. Como era de presumir, el premio a esta lucha estaba encarnado en una hermosa joven nacida en Galicia.</p>
 							<p>Es lamentable que Rocamora careciera de un imprescindible orden literario. Muy a pesar suyo, sus argumentos tenían en las cuartillas un aspecto quebrado y nervioso. Pero Roca-mora, al igual de algunos hombres sin instrucción, tenía «su aritmética particular». Unicamente él era capaz de desentrañar la maraña que se extendía en sus escenarios. De su mismo argumento, escrito para los dos millones de gallegos, nadie, a excepción de él, hubiera sacado una obra normal y presentable. Con un fragmento de ese mismo escenario puede hacerse una demostración del estilo personal del director y productor Rocamora. Esto que voy a reproducir es una muestra cualquiera.</p>
 							<p>«José es un muchachote gallego. Los ancianos le quieren. Los jóvenes le temen. Nadie es capaz de vencerlo en levantamientos de pesos. ¿Llevarle el pulso?; ¡Ni hablar! En cambio, el señorito madrileño Fermín es un tipo idiota. Un vanidoso y un embustero. El cree que sus trajes y sus corbatas y su automóvil pueden enamorar a Rosiña. ¡Ya veremos cuando tenga que enfrentarse con José!»</p>
@@ -2348,7 +2369,7 @@
 							<p>Y se dejó caer en una cómoda butaca simulando un cansancio que no existía en su cuerpo ni en su cerebro.</p>
 						</div>
 						<div type="section">
-							<head>5</head>
+							<head xml:id="ne0330_head_130">5</head>
 							<p>Para contratar artistas se hizo uso del mismo método empleado anteriormente. El efecto de los anuncios fué fulminante. Los tipos más diversos entraron en el despacho de Rocamora, se dejaron contemplar un instante, y en la mayoría de los casos se marchaban a la calle sin haber logrado más que unas palabras de despedida. Esta vez tenía que fallarle a Rocamora su truco de hacer su película a base de unas cuantas pruebas hechas con espontáneos. No era lo mismo decir: «Mañana le haré a usted unos metros en la Casa de Campo», que «Tendrá usted que acompañarme a Galicia».</p>
 							<p>Tuvo que pagar, que anticipar algún dinero. Pero fué tan poco, que Rocamora calculó poder realizar <seg rend="italics">Alma gallega</seg> con unas treinta y cinco mil pesetas. Hizo un segundo cálculo para el revelado y tiraje de las copias— unas nueve mil pesetas— y sacó en conclusión que con un gasto inferior a diez mil duros él llegaría a Buenos Aires provisto de abundante material cinematográfico.</p>
 							<p>Encima de la mesa Rocamora tenía multitud de cosas. Periódicos, trozos de película, el escenario de <seg rend="italics">Alma gallega, </seg>el presupuesto de este <seg rend="italics">film</seg>, y como es natural, tenía también un tintero doble, plumas y un frasco de goma, dos reglas, un calendario perpetuo, y esparcidos como hormigas, tenía igualmente alambres retorcidos, que podían servirle para sujetar hojas de papel. Tras de aquella cantidad de objetos, el director Rocamora pasaba revista a hombres, mujeres y niños. Su ayudante Rodríguez permanecía de pie vigilando a los que entraban y salían. Y en aquel ambiente apareció un joven que no aguardó a ser requerido, sino que se precipitó sobre la mesa, tras la que Rocamora estaba cómodamente sentado.</p>
@@ -2400,10 +2421,10 @@
 						</div>
 					</div>
 					<div n="20" type="chapter" xml:id="ne0330_chap20">
-						<head>IV: PROPAGANDA POLÍTICA</head>
+						<head xml:id="ne0330_head_131">IV: PROPAGANDA POLÍTICA</head>
 
 						<div type="section">
-							<head>1</head>
+							<head xml:id="ne0330_head_132">1</head>
 
 							<p>Su patrona lo recibió a la llegada con vivas muestras de júbilo. Precisamente había estado por la mañana un caballero a preguntar por él, explicando que le llevaba un asunto de gran interés.</p>
 							<p>—Es un señor muy bien vestido —añadió la patrona—. Cuando le dije que no estaba usted en Madrid me dejó esta tarjeta para que usted fuera por su casa.</p>
@@ -2417,7 +2438,7 @@
 							<p>Alvaro ya estaba dentro de la cama. Para no molestar a su patrona en la primera noche de su llegada a Madrid, desistió de leer. Apagó la luz y poco más tarde escuchó los ruidos que hacían los huéspedes al llegar al comedor.</p>
 						</div>
 						<div type="section">
-							<head>2</head>
+							<head xml:id="ne0330_head_133">2</head>
 							<p>Por la mañana sufrió la primera contrariedad. Fué al meterse el pantalón. Una pernera cedió por la parte de la rodilla y se desgajó. Alvaro llamó a su patrona para explicarle el suceso. La mujer zurció el pantalón de modo que la obra no salió muy perfecta; pero Alvaro tenía prisa y marchó de la casa sin dar mucha importancia al zurcido.</p>
 							<p>Esta vez tuvo más suerte. Nada más anunciarse pasó a presencia del caballero de la tarjeta. El accionista era un tipo basto, con un brillante en el meñique de la mano izquierda y una cadena de oro que le cruzaba su abultado pecho.</p>
 							<p>—Seguro que no esperaba usted el que yo le llamara —habló el accionista.</p>
@@ -2433,7 +2454,7 @@
 							<p>Después de una hora de paseo se regresó a casa del accionista. Allí continuaron fumando puros, bebiendo coñac y discutiendo. Alvaro no escribió nada de lo que le había anunciado el accionista. Fué transcurriendo la tarde, y al anochecer hubo otro paseo de automóvil. Luego se tomaron aperitivos, se celebró la cena, se asistió a un teatro y a un cabaret, y por último se acordó efectuar la visita más importante.</p>
 						</div>
 						<div type="section">
-							<head>3</head>
+							<head xml:id="ne0330_head_134">3</head>
 							<p>El capitán habló del calor y se desprendió del correaje. Era un tipo delgado, de un pelo rubio que hacía más notable la frialdad do sus movimientos. Debió de agradarle el rostro triste de la mujer que estaba a su lado, porque la apartó de las otras.</p>
 							<p>—Marta se queda conmigo —soltó como confirmación a sus propósitos.</p>
 							<p>A la mujer le sorprendió que el capitán continuase en el salón mientras sus amigos habían desaparecido en busca de habitaciones.</p>
@@ -2455,7 +2476,7 @@
 							<p>Al encontrarse sola Marta sintió que aumentaba su mareo. Se levantó y subió a su alcoba. Abrió el balcón y miró un cielo negro en el que resaltaban las estrellas. La noche avanzaba silenciosamente hacia la madrugada. Marta recordaba las escenas con el militar, pero no podía precisar cómo era el rostro del capitán. Lo único que recordaba era la mejilla atravesada por el alfiler y la mano de la quemadura. Marta se echó vestida en la cama y trató de dormir.</p>
 						</div>
 						<div type="section">
-							<head>4</head>
+							<head xml:id="ne0330_head_135">4</head>
 							<p>En cuanto el caballero se despojó de su ropa se le desbordaron las grasas en un desahogo escandaloso. Marta observó todo esto, notando que aquel caballero olía a trasto viejo.</p>
 							<p>—Me gusta esta casa —explicó el caballero, rodeando a Marta con un brazo—, porque los muebles son caros.</p>
 							<p>Marta lo vió desde el sueño enmarañado que el alcohol creaba en su cabeza. Entonces temió un ataque de risa. Se salvó de esta amenaza apagando la luz del techo. Ahora solamente una bombilla verde mandaba, desde el cabecero de la cama, un débil rayo de luz.</p>
@@ -2469,7 +2490,7 @@
 							<p>Pero Marta ya  tenía deseos de reír. Se notaba sin fuerzas y con ganas de quejarse a alguien que no fuese aquel caballero que resoplaba a su lado. Llegó a estorbarle la luz verde que iluminaba ligeramente la cama y dió al interruptor. Ya en plena obscuridad se atrevió a terminar con el desconocido.</p>
 						</div>
 						<div type="section">
-							<head>5</head>
+							<head xml:id="ne0330_head_136">5</head>
 							<p>Cuando ella volvió al salón acababan de entrar Alvaro, el accionista y sus tres amigos. Llegaban hablando de lo que habían visto en un cabaret. Después de mirar su magnífico reloj de oro, el accionista empezó a dar órdenes.</p>
 							<p>—Tenemos hora y media hasta que volvamos al automóvil —observó a las mujeres que aguardaban en el centro del salón y se acercó a una de ellas—. Yo me voy con esta señorita; creo que vosotros debéis hacer lo mismo.</p>
 							<p>Y, antes de marchar, el accionista se dirigió a Marta en estos términos:</p>
@@ -2520,7 +2541,7 @@
 							<p>Nadie le contestó. Ninguno dijo nada por pereza o porque el ruido del motor producía sueño. Alvaro veía prolongarse al otro lado del parabrisas la franja de la carretera. Pensó en Marta. Pensó en el discurso que debía escribirle al accionista. Pensó también en el zurcido que le había hecho la portera en el pantalón. Y como un recurso pueril a lo que danzaba en su cabeza, cerró los ojos y se hundió en el asiento del auto. Sin embargo, hasta allí dentro, hasta lo último de su pensamiento, llegó el ruido del motor «como el murmullo de una conciencia que estuviera trabajando por su liberación».</p>
 						</div>
 						<div type="section">
-							<head>6</head>
+							<head xml:id="ne0330_head_137">6</head>
 							<p>El accionista poseía una memoria prodigiosa. Tal vez la misma falta de ideas originales le permitía almacenar en su cabeza un mundo de palabras ajenas.</p>
 							<p>Coaccionado por la falta de tiempo, Alvaro escribió en im cuarto del hotel hasta diez cuartillas. Una vez terminado todo lo que tenía que soltar el accionista al final del banquete, Alvaro leyó en voz alta lo escrito. El accionista sonreía satisfecho, mientras que Alvaro comprendía que aquello era detestable y simple. Acabada la lectura, el accionista cogió las cuartillas y estudió todo lo escrito con aquella asombrosa facilidad que le era peculiar. Una hora después se colocó frente a Alvaro y empezó a repetir lo que estaba escrito en las cuartillas. Alvaro sintió vergüenza de que le recordaran aquella serie de vulgaridades. El accionista vacilaba todavía en algunos sitios, y necesariamente hubo nuevos ensayos. Resuelta, por fin, la lectura, Alvaro recibió doscientas pesetas.</p>
 							<p>—Aquí tiene usted para sus primeros gastos —explicó el accionista.</p>
@@ -2536,7 +2557,7 @@
 							<p>Ya cerca de la estación vió un poco de humo blanco. Al disgregarse el vapor quedó detrás un cielo sin nubes. Alvaro dió unos cuantos pasos y entró en la sala de los billetes.</p>
 						</div>
 						<div type="section">
-							<head>7</head>
+							<head xml:id="ne0330_head_138">7</head>
 							<p>Al recibir la carta, el accionista buscó primeramente quién la firmaba. En aquellos momentos le rodeaba un grupo de correligionarios. Todos estaban en el poco espacio de la habitación del hotel; pero bastó un gesto del accionista para que lo dejaran solo. Entornó la puerta y se acercó al balcón, como si no se diera cuenta que podía leer la carta en cualquier lugar del cuarto. Muy sorprendido, empezó a leer a media voz: «No estoy conforme con usted ni con esos señores que le han aplaudido. De lo que usted ha dicho, yo me avergüenzo sinceramente. Usted no tiene que ver nada con el príncipe de Dinamarca. Tampoco sus amigos merecen mezclarse en la vida de Hamlet. Precisamente acabo ahora de dar un largo paseo por las calles de Segovia. ¿Por qué no hace usted lo mismo? Observará usted muchas cosas. Pero, por favor, dejen quieto a Hamlet. Hamlet era un soñador.</p>
 							<p>»Repito que estoy avergonzado de mi colaboración. Sin embargo, todo ha sido por culpa de «mi difícil situación económica». ¿Conoce usted el malestar que produce el no comer en cuarenta y ocho horas?</p>
 							<p>«Reconozco que usted ha sido muy espléndido conmigo. Estas doscientas pesetas que me ha entregado «por mis primeros trabajos» han de serme muy útiles. Primeramente pagaré a mi patrona. Ahora ya podré leer con la luz eléctrica, sin que mi patrona tire las sillas del comedor. También pagaré lo que debo en la taberna donde acostumbro a comer. Gracias a usted saldré adelante por unos días.</p>
@@ -2546,9 +2567,9 @@
 						</div>
 					</div>
 					<div n="21" type="chapter" xml:id="ne0330_chap21">
-						<head>V: INTERMEDIO SENTIMENTAL</head>
+						<head xml:id="ne0330_head_139">V: INTERMEDIO SENTIMENTAL</head>
 						<div type="section">
-							<head>1</head>
+							<head xml:id="ne0330_head_140">1</head>
 							<p>En una casa de compraventa de la calle de la Magdalena fué donde adquirió el pantalón. Uno de los dependientes le acompañó al interior, y en un cuarto rodeado de estanterías repletas de ropas Alvaro se quitó el pantalón viejo y se probó el que deseaba comprar.</p>
 							<p>—Basta con que se lo estrechen un poco —le explicó el dependiente tirando de la pretina—. Tienen que meterle unos dos centímetros.</p>
 							<p>Alvaro se volvió a enfundar el pantalón del zurcido y marchó a la tienda. Mientras le envolvían la compra observó que una mujer dejaba en el mostrador un paquete. Un dependiente deslió el envoltorio, extendiendo sin interés un par de camisas usadas.</p>
@@ -2604,7 +2625,7 @@
 							<p>El escritor fué marchando calle abajo. Cerca del callejón de Eslava se adelantó a unos transeúntes y desapareció. Alvaro tardó en tomar una dirección. Cuando se dirigió a la Plaza Mayor iba tarareando las danzas del príncipe Igor. Recomo los soportales, siempre acompañado por aquella música, y después regresó a la taberna de los azulejos.</p>
 						</div>
 						<div type="section">
-							<head>2</head>
+							<head xml:id="ne0330_head_141">2</head>
 							<p>Ya cenado, buscó un café y allí intentó escribir un artículo para hacer frente a la situación en que se tenía que ver en cuanto se le terminara el dinero. En aquel trabajo Alvaro sacaría a la superficie la existencia de un pueblo que no tenía alcantarillado. Un pueblo con miles de agujeros, con un millonario, con un cura, con un boticario, con un suboficial de la Guardia civil y con un loco a quien todo el mundo volvía la espalda.</p>
 							<p>Alvaro pidió un tintero y una pluma. Un vasto panorama danzaba por su cabeza. Mojóla pluma, pero no supo empezar a escribir aquel conjunto de cosas que revivía su memoria. Por segunda vez, y sin haber escrito nada, hizo uso del tintero. Percibió que alguien se había sentado cerca de su mesa. Observó de reojo y vió a un señor con el rostro tapado por un periódico. Alvaro pensó en el director que le había rechazado los dos reportajes. Pensó también que ningún director iba a admitirle su artículo. Y abandonó la pluma.</p>
 							<p>El cliente apartó el periódico para mostrar una cara sin gracia. «He aquí un lector de esa revista escrita para sacerdotes, militares, porteras, burgueses y guardias civiles.»</p>
@@ -2613,7 +2634,7 @@
 							<p>Sobre un suelo cubierto de una capa de polvo agrisado estaba un perro tirado a lo largo. Al sentir pasos el animal levantó la cabeza y se dejó acariciar. Alvaro siguió adelante hasta desembocar en un terreno donde había montones de escombros. Más allá, empezaba un campo con hondonadas donde caía el fulgor de la luna en un tenue color de gas. Alvaro se sentó sobre la tierra y no marchó de allí hasta pasada cerca de una hora.    .</p>
 						</div>
 						<div type="section">
-							<head>3</head>
+							<head xml:id="ne0330_head_142">3</head>
 							<p>Era más de medianoche cuando cruzó el comedor. El haber paseado produjo en él un cansancio general que le hizo desnudarse con alguna torpeza. Cuando Alvaro marchó a la cama la ropa quedó diseminada por la habitación. Esta vez la patrona no iba a decirle nada si él trataba de leer. Había saldado la deuda y esto era bastante para mantener encendida la bombilla por un tiempo prudencial. Sin embargo, prefirió la obscuridad. En aquellas tinieblas llegaba más claro el recuerdo de Marta. Con este recuerdo fué perdiendo la noción del tiempo, olvidando que estaba acostado sobre unas sábanas que no habían sido cambiadas en aquella semana. Olvidó igualmente que al entrar en el comedor había visto encima de la mesa el tablero del «Parchís». Entonces pensó en el escritor. «La gente cree que la vida son esos tranvías, esos automóviles y esos transeúntes...»</p>
 							<p>Un reloj sonó en la calle las tres de la mañana. Alvaro sabía de dónde llegaban aquellas campanadas. Primero se escucharon cuatro toques en un sonido más débil al sonido de las tres campanadas que batían después el silencio de la noche. En el cuarto no hacía ni frío ni calor. Por la parte del balcón entraba, a través de los cristales sin visillos, un poco de luz. Quiso echar la cuenta de lo que había gastado durante el día. No ignorando el dinero que le quedaba, saltó de la cama para contar la plata y la calderilla que tenía repartida en los bolsillos del chaleco. Después fué cuando manoseó un billete de cincuenta pesetas. Todavía estaba libre de preocupaciones económicas. Esta verdad era tan agradable, que volvió a tocar el dinero. Y ocurrió el suceso. Alvaro dejó caer una moneda de cinco pesetas. Creyó que los huéspedes y hasta su patrona se habrían despertado a causa del ruido. Entonces recogió el duro y precipitadamente guardó todo en el chaleco. Entró en la cama con cuidado, pero los muelles gruñeron hasta tres veces. Toda la casa continuó en el mismo silencio de antes. Nadie se había despertado.</p>
 							<p>Se sentía muy conforme con todo, hasta de este incidente del duro. Hacía mucho tiempo que no se acostaba tan ligeramente alegre, tan resuelto a dormir lo más tarde posible, para de esta manera darle más vueltas a unos cuantos recuerdos. He aquí su estado espiritual en aquella noche. El hombre de la camioneta y el mismo Felipe se habrían contagiado de esta felicidad que danzaba por el cuarto de Alvaro. Sobre todo, Felipe hubiera sido el más sorprendido de este suceso.</p>
@@ -2628,9 +2649,9 @@
 						</div>
 					</div>
 					<div n="22" type="chapter" xml:id="ne0330_chap22">
-						<head>VI: ÚLTIMOS ACONTECIMIENTOS</head>
+						<head xml:id="ne0330_head_143">VI: ÚLTIMOS ACONTECIMIENTOS</head>
 						<div type="section">
-							<head>1</head>
+							<head xml:id="ne0330_head_144">1</head>
 							<p>Cuando Felipe apareció en el cuarto era poco más de las cinco de la tarde. Alvaro se hallaba acostado cara a la pared.</p>
 							<p>—¡Ya estoy en Madrid! —exclamó con verdadero gozo. Y reflexionando sobre el aspecto de Alvaro y de aquella habitación, preguntó—: ¿Estás enfermo?</p>
 							<p>Alvaro se encogió para quedar sentado en el centro del colchón. En su rostro había una barba de tres o cuatro días. Cuando parecía que Felipe se disponía a relatar algo de su viaje a Galicia, Alvaro lo vió dirigirse al balcón.</p>
@@ -2682,7 +2703,7 @@
 							<p>Alvaro sonrió y fué bajando escalones. Sentía debilidad en las piernas y la misma sensación de mareo que había percibido estando en el cuarto. Al salir del portal una ola de luz le dolió en los ojos.</p>
 						</div>
 						<div type="section">
-							<head>2</head>
+							<head xml:id="ne0330_head_145">2</head>
 							<p>Bebieron el café, haciéndolo Alvaro rápidamente y cuando aún el líquido calentaba demasiado.</p>
 							<p>—Yo quisiera que doña Luisa se diera buena cuenta de que yo no soy de esos hombres que necesitan estar siempre encima de una mujer —empezó Felipe con ánimo de que Alvaro transmitiese también este parecer suyo—. Ahora, lo que yo no quiero es vivir solo. A mí me gustaría ir a un teatro acompañado por doña Luisa para después discutir en casa de lo que ocurre en el mundo. El señor Poch me ha hablado de darme cincuenta duros mensuales de sueldo. Cuéntale esto del sueldo.</p>
 							<p>De improviso Felipe dejó de hablar. Observó detenidamente el rostro enflaquecido y sin afeitar de Alvaro y preguntó: —¿No tienes dinero?</p>
@@ -2706,7 +2727,7 @@
 							<p>—Estoy contento porque ahora me cuidaré lo del vientre. De no hacerlo podría venirme una eventración. Me parece que eso se llama de esta manera.</p>
 						</div>
 						<div type="section">
-							<head>3</head>
+							<head xml:id="ne0330_head_146">3</head>
 							<p>Al otro día, y sobre las nueve, Felipe acudió a despertar a Alvaro.</p>
 							<p>—A lo mejor he madrugado mucho —dijo en seguida—. Hace una mañana muy buena. Asómate al balcón y te convencerás.</p>
 							<p>Tumbado boca arriba, Alvaro escuchó todo medio inconsciente. A pesar de haberse acostado a buena hora, sentía el mismo cansancio que si no hubiera dormido.</p>
@@ -2756,7 +2777,7 @@
 							<p>Doña Luisa hizo un gesto de malestar. Evidentemente, aquello llegó a producirla una sensación de asco. Alvaro percibió el efecto que había causado y se despidió. Desde el cuarto hasta llegar a la puerta no se habló de nada. Cuando Alvaro se volvió para inclinarse, doña Luisa se estaba secando los ojos.</p>
 						</div>
 						<div type="section">
-							<head>4</head>
+							<head xml:id="ne0330_head_147">4</head>
 							<p>Felipe estaba sentado detrás de una mesa. Había pedido aguardiente; pero la copa no tenía señales de haber sido vaciada. Lo primero que vieron sus ojos fué el carrito de pino. Ni se movió, ni dijo nada. Totalmente ensimismado, observó que Alvaro tomaba asiento en una de las banquetas. El carrito fué colocado bajo la mesa. Era tan significativo el silencio de Alvaro que Felipe ya tuvo una clara noción de lo que había ocurrido.</p>
 							<p>—¿Qué vas a tomar? —preguntó con una voz aparentemente tranquila.</p>
 							<p>—No quiero nada. Me parece que podríamos marcharnos —dijo Alvaro, viendo el aspecto deprimido de Felipe.</p>
@@ -2784,7 +2805,7 @@
 							<p>Por la calle de Carretas bajaban y subían tranvías, los autos sonaban sus claxons y todo el mundo circulaba en una nerviosidad general. Felipe volvió a pensar en Tony. «¿Qué falta le hacía ya el botellín?» Referente al carrito, ahora mismo había decidido regalarlo. Al entregarlo tendría que explicar que, a excepción del botellín, todo marchaba bien. Lo del botellín se podía arreglar fácilmente. Bastaba con buscar un frasco pequeño, llenarlo de aceite y colocarlo en los dos ganchos de hojalata que había en la parte interior del carrito.</p>
 						</div>
 						<div type="section">
-							<head>5</head>
+							<head xml:id="ne0330_head_148">5</head>
 							<p>Apenas pasó a su cuarto, la patrona se llegó de la cocina, cruzó el comedor y llamó sobre la puerta.</p>
 							<p>—¿No ha encontrado usted trabajo? —fué lo primero en preguntar.</p>
 							<p>Alvaro negó con la cabeza. No esperaba esta visita de su patrona, ni aquella manera de llamar. Ella tenía siempre la costumbre de hablarle al salir o al entrar en la casa.</p>
@@ -2798,7 +2819,7 @@
 							<p>La patrona sonrió complacida, y agachándose hasta el suelo, recogió un botón. Se marchó confiada, pero colocando antes el botón en sitio seguro. Alvaro no salió del cuarto hasta las doce y media. A esa hora fué en busca de Felipe. Llegó antes de la una y esperó. En el comedor había alguna gente. A la una y media Felipe no había aparecido todavía. A las dos de la tarde Felipe seguía sin presentarse. En una mesa un señor con tipo de empleado echó unos terrones de azúcar en una taza llena de café. Alvaro estaba enfrente y no prestó atención hasta que le vió empezar a beber el café a fuerza de llevarse a la boca la cucharilla. Como es natural, el hombre tenía que producir un ruido de cosa aspirada. Alvaro se levantó, cruzó por aquella mesa y en seguida se encontró en la calle. Ir para arriba o para abajo eran para él una misma cosa. Por si Felipe llegaba todavía, Alvaro no se movió de la puerta de la taberna. Pero dieron las tres y entonces decidió no esperar más.</p>
 						</div>
 						<div type="section">
-							<head>6</head>
+							<head xml:id="ne0330_head_149">6</head>
 							<p>El aviso del señor Poch era terminante. «Se empezará a trabajar a las doce de la mañana. Usted será el primero. A las doce menos cuarto tendrá que estar maquillado.»</p>
 							<p>Entonces eran más de las once y media. Felipe leyó otra vez la carta del señor Poch. Pensó en la cita que tenía con Alvaro. Acudir a la taberna significaba contravenir la orden del señor Poch. Esto, en vísperas de ser empleado, era un disparate. Lleno de disgusto cogió una toalla, la envolvió en un periódico y salió de la habitación. El «estudio» estaba al final de la calle de Bravo Murillo. Ni siquiera tenía tiempo para tomar un tranvía. Mandó parar un taxi, se metió dentro y dió las señas. ¿Qué habría ocurrido para adelantar dos días la fecha de comenzar a trabajar? Lo del taxi llegaría a costarle más de tres pesetas. Si él daba cuenta de aquel gasto era muy probable que se lo abonara el señor Poch.</p>
 							<p>—¡No le importe correr! —gritó al chófer—. Hace media hora que tenía que estar en ese sitio. Estoy haciendo una película.</p>
@@ -2821,7 +2842,7 @@
 							<p>Felipe afirmó que estaba enterado de todo lo que tenía que hacer. Le rodeaban el artista que hacía de sobrino, José Sancho, el señor Poch, el operador, los electricistas y el maquillador. Todos estaban pendientes de su actuación. Felipe los sintió allí mismo, pero no quiso mirarlos por temor a que vieran en su mirada su falta de entusiasmo. En un ángulo de la decoración había un reloj de pesas. Aunque las manillas marcaban las diez, Felipe no podía ignorar que aquello era una simple necesidad de la escena. Fuera de aquella habitación, hecha con paredes de papel, los relojes indicaban la una y minutos. Para Felipe esto era un dato abrumador.</p>
 						</div>
 						<div type="section">
-							<head>7</head>
+							<head xml:id="ne0330_head_150">7</head>
 							<p>Cuatro horas después de salir de la taberna de los azulejos entraba Alvaro en el portalón de la escuela de pintura. Cruzó un patio, abrió una puerta y continuó por un pasillo hasta entrar en una sala donde en aquel momento estaban funcionando las clases. Encima de una plataforma una mujer, toda desnuda, recibía una luz circular. Los alumnos se hallaban repartidos a corta distancia. Alvaro observó que entre los alumnos había muchas señoritas. A su encuentro vino un hombre cubierto con un guardapolvos.</p>
 							<p>—Soy modelo —dijo Alvaro—. Quisiera saber si necesitan gente.</p>
 							<p>—¿Es la primera vez que viene a la escuela?</p>
@@ -2845,7 +2866,7 @@
 							<p>Alvaro se aproximó a la barandilla, puso un pie en los hierros, y antes de que llegaran a alcanzarlo, estaba subido en la parte alta de la verja. Alguien dió un grito. Algunos echaron a correr, pero ya fué demasiado tarde para impedir que Alvaro se dejara caer. Al alboroto anterior sucedió un silencio absoluto. Una racha de aire movió las hojas de los árboles. Algunas se desprendieron, pero otras continuaron metiendo un ruido de papel removido. Arrimados a la barandilla unos hombres miraban al fondo del Viaducto. Miraban, pero no se decían nada. Por la calle de Segovia corría la gente. Corría para arriba y para abajo. Corría todo el mundo. Un tranvía, con las luces encendidas, estaba parado en la vía. Dentro no había ni un solo pasajero. El conductor y el cobrador habían desertado también de sus puestos. La sorpresa era general...</p>
 						</div>
 						<div type="section">
-							<head>8</head>
+							<head xml:id="ne0330_head_151">8</head>
 							<p>En un piso de la Gran Vía estaba el salón de las máquinas de escribir. Norberto G. Robledal tomó asiento al lado de una graciosa mecanógrafa.</p>
 							<p>—Tendrá que esperar unos diez minutos —dijo la muchacha.</p>
 							<p>—No tengo ninguna prisa —declaró Robledal de buen humor—. Además, acabaremos en seguida.</p>
@@ -2860,7 +2881,7 @@
 							<p>Más abajo, y sin ningún saludo de despedida, venía la firma de Norberto G. Robledal.</p>
 						</div>
 						<div type="section">
-							<head>9</head>
+							<head xml:id="ne0330_head_152">9</head>
 							<p>Al Depósito judicial sólo acudieron Felipe y el contratista de obras que meses antes había dado trabajo a Alvaro Giménez.</p>
 							<p>—¿Era usted amigo de Alvaro? —preguntó el contratista.</p>
 							<p>—Sí, señor —confirmó Felipe, todo abrumado—. Hoy no querían darme permiso para venir al entierro, pero he sabido escabullirme.</p>
@@ -2884,7 +2905,7 @@
 							<p>—¡Es verdad que no somos nada!</p>
 						</div>
 						<div type="section">
-							<head>10</head>
+							<head xml:id="ne0330_head_153">10</head>
 							<p>Felipe y el contratista regresaron al centro de Madrid. En aquella parte se separaron. Ya era de noche. Felipe marchó directamente a casa, contraviniendo las órdenes del señor Poch. Al entrar en su cuarto se dejó caer en un borde de la cama. Estaba cansado y sentía dolor debajo de las vendas que le cubrían el vientre. Medio mareado se fijó en el carrito de pino. Allí estaba todavía, con su madera manchada de aceite. Esto llegó a conmoverlo, y a punto de llorar, dió unas cabezadas para reanimarse. Pasado un rato se dirigió al balcón. Abrió las maderas. Las abrió con fatiga, como si esta vez fueran más pesadas que otros días. Al asomarse a la calle se apoyó en la barandilla. Después se irguió un poco, hasta quedar descansando en una esquina del balcón.</p>
 							<p>Luego de pensar en Tony, en doña Luisa, en Alvaro y en el señor Poch, Felipe vió que una lluvia menuda caía encima de un suelo encharcado. El acontecimiento era demasiado simple, pero Felipe continuó mirando cómo el suelo de la calle seguía mojándose una y otra vez..., una y otra vez...</p>
 						</div>

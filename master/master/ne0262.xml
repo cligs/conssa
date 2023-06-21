@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los argonautas</title>
-				<title type="sub"></title>
+				
 				<title type="short">Argonautas</title>
-				<title type="idno">
-					<idno type="bne">XX5557894</idno>
-					<idno type="viaf">33145424470886830121</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2987</measure>
@@ -141,13 +131,48 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0262</idno>
+						<idno type="cligs">ne0262</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>25640</idno>, <ref target="http://www.gutenberg.org/ebooks/25640"/>.</bibl>
-				<bibl type="print-source">Buenos Aires-París, 1913-<date when="1914">1914</date></bibl>
-				<bibl type="edition-first"><date when="1914">1914</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los argonautas</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX5557894.html">XX5557894</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/33145424470886830121/">33145424470886830121</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1081750898">1081750898</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>25640</idno>, <ref target="http://www.gutenberg.org/ebooks/25640"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Buenos Aires</pubPlace>-<pubPlace>París</pubPlace>, 1913-<date when="1914">1914</date></bibl>
+					<bibl type="edition-first"><date when="1914">1914</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los argonautas</title> , <publisher>F.Sempere y Comp. Ed.</publisher> <pubPlace>Valencia;Madrid</pubPlace> 		<idno type="ppn" n="342478419" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342478419"/> </bibl>
+						<bibl type="further-edition"><title type="main">Los argonautas</title>: 	<title type="sub">novela</title> , <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="097467928" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=097467928"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="47638074X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=47638074X"/> </bibl>
+						<bibl type="further-edition"> <date when="1920">1920</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="46474802X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46474802X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los argonautas</title>: 	<title type="sub">(novela) ; tomo segundo</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="342566237" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342566237"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los argonautas</title>: 	<title type="sub">(novela) ; tomo primero</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="342566148" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342566148"/> </bibl>
+						<bibl type="further-edition"><title type="main">Los argonautas</title>: 	<title type="sub">novela</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445657782" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657782"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los argonautas</title>: 	<title type="sub">[novela]</title> <date when="2000">2000</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1165426609" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1165426609"/> 		<idno type="isbn" n="8470307045"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los argonautas</title> <date when="2000">2000</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="332286908" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=332286908"/> 		<idno type="isbn" n="8470307045"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +182,14 @@
 				<p>El autor narra en esta hermosa y emocionante novela esas dos semanas durante las que, encerradas en el transatlántico, vidas distintas se entrecruzan, coinciden y se oponen. Ha sido un viaje lleno de voluntad y de esperanza para millonarios europeos y nuevos ricos americanos, o para tristes emigrantes italianos y españoles que sufren vejámenes y transformaciones apoyados en la ilusión.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -186,7 +219,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela americana</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -213,6 +246,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -220,7 +254,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0262_chap1">
-				<head>I</head>
+				<head xml:id="ne0262_head_000">I</head>
 				<p>Al sentir un roce en el cuello, Fernando de Ojeda soltó la pluma y levantó la cabeza. Una palmera enana movía detrás de él con balanceo repentino sus anchas manos de múltiples y puntiagudos dedos. Para evitarse este contacto avanzó el sillón de junco, pero no pudo seguir escribiendo. Algo nuevo había ocurrido en torno de él mientras con el pecho en el filo de la mesa y los ojos sobre los papeles huía lejos, muy lejos, acompañado en esta fuga ideal por el leve crujido de la pluma.</p>
 				<p>Vio con el mismo aspecto exterior cosas y personas al salir de su abstracción; pero una vida interna, ruidosa y móvil parecía haber nacido en las cosas hasta entonces inanimadas, mientras la vida ordinaria callaba y se encogía en las personas, como poseída de súbita timidez.</p>
 				<p>Sus ojos, fatigados por la escritura, huían de las ampollas eléctricas del techo, inflamadas en plena tarde, para reposarse en los rectángulos de las ventanas que encuadraban el azul grisáceo de un día de invierno. La blancura de la madera laqueada temblaba con cierto reflejo húmedo que parecía venir del exterior. Dos salones agrandados por la escasez de su altura eran el campo visual de Ojeda. En el primero, donde estaba él, mezclábase a la blancura uniforme de la decoración el verde charolado de las palmeras de invernáculo, el verde pictórico de los enrejados de madera tendidos de pilastra a pilastra y el verde amarillento y velludo de unas parras artificiales, cuyas hojas parecían retazos de terciopelo. Sillones de floreada cretona en torno de las mesas de bambú formaban islas, a las que se acogían grupos de personas para embadurnar con manteca y mermeladas el pan tostado, husmear el perfume del té o seguir el burbujeo de las aguas minerales teñidas de jarabes y licores.</p>
@@ -424,7 +458,7 @@
 				<p>—Qué vida, ¿eh, amigo Ojeda?... La comida a sus horas, a toque de trompeta; la mesa puesta cuatro veces al día; un ejército de camareros y doncellas, la mayor parte de los cuales me entienden con dificultad, lo que es una ventaja para prolongar la conversación y conocerse mejor. Cada uno revestido con sus mejores ropas, como si el <seg rend="italics">smoking</seg> fuese la casulla del culto del estómago; cerveza fresca como el hielo, música gratis a cada instante, y una adorable sociedad: una sociedad condenada a vivir junta, así se enfade o esté alegre, a mostrarse cada uno con su verdadera fisonomía, pues no hay comediante que sostenga sus fingimientos en una representación tan larga y continua... Y nadie puede huir; y nadie está obligado a pensar ni a hacer nada; y todos nos ofrecemos en espectáculo tales como somos. Comer bien y... lo otro, si es que se presenta una buena ocasión; he aquí el programa... ¡Lástima que nuestra vida no haya sido así siempre!... ¡lástima que no lo sea cuando lleguemos a la otra acera de esta calle azul!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0262_chap2">
-				<head>II</head>
+				<head xml:id="ne0262_head_001">II</head>
 				<p>Una marcha militar despertó a Ojeda sonando sobre su cabeza con gran estrépito de marciales cobres. Por la ventana del camarote entraba un rayo de sol, trazando sobre la pared temblonas y cristalinas ondulaciones, reflejo de las aguas invisibles. El buque avanzaba lentamente, y al fin quedó inmóvil, mientras arriba continuaba rugiendo la música su marcha triunfal, que parecía evocar un desfile de águilas bicéfalas con las alas extendidas sobre masas de cascos puntiagudos.</p>
 				<p>Tenerife. Miró Fernando por entre las cortinillas, y sólo vio un mar azul y tranquilo: las aguas unidas y luminosas de una bahía en calma. La tierra estaba al otro costado del buque. Y como conocía la isla, por haber bajado a ella en anteriores navegaciones, volvió a acostarse para gozar despierto del regodeo de la pereza, mientras en los camarotes inmediatos chocaban puertas, se cruzaban llamamientos en distintos idiomas, y sonaba en los corredores un trote de gentes apresuradas, atraídas por el encanto de la tierra nueva.</p>
 				<p>Una hora después subió Ojeda a las cubiertas superiores. El buque, al inmovilizarse, parecía otro. Había perdido el aspecto de mansión cerrada y bien calafateada que tenía en los días anteriores. Puertas y ventanas estaban abiertas, dejando entrar a chorros, junto con el sol, un aire cargado de efluvios de vegetación caliente. Los pájaros cantaban en sus jaulas con repentina confianza al sentirlas inmóviles. Las plantas del invernáculo parecían expandirse moviendo acompasadamente sus manos verdes, como si saludasen a las hermanas de la orilla próxima. Flores frescas, que aún mantenían en sus pétalos el rocío de los campos, agrupábanse sobre las mesas del comedor. Los pasajeros asentaban sus pies con extrañeza y satisfacción en el suelo inmóvil y firme como el de una isla, después de la inestabilidad ruidosa de la noche anterior.</p>
@@ -525,7 +559,7 @@
 				<p>Era la esperanza, la ciega esperanza que con el avance de su torso señalaba al Sur.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0262_chap3">
-				<head>III</head>
+				<head xml:id="ne0262_head_002">III</head>
 				<p>Después del almuerzo, los pasajeros del <seg rend="italics">Goethe</seg> oyeron sonar a proa la banda de música, con la lejanía soñolienta que infunde la inmensidad del Océano a todas las vibraciones.</p>
 				<p>—Van a vacunar a los de tercera—dijo Maltrana, siempre enterado de lo que ocurría en el buque.</p>
 				<p>Estaban aún frente a la isla, costeando sus rugosas montañas, pétreo oleaje de antiguas erupciones llegadas hasta el mar. Bajaban por las laderas, como ovejas en tropel, blancas viviendas, medio ocultas algunas de ellas en los repliegues sombreados de verde. Por encima de las cumbres iba pasando la caperuza nevada del Teide como una cabeza curiosa, ocultándose o apareciendo, según el buque marchaba cerca o lejos de la costa.</p>
@@ -669,7 +703,7 @@
 				<p>—Es lástima que no queden sirenas. Y sin embargo, aún las había en tiempos de Colón... ¿No sabe usted eso? Él vio salir tres «muy altas sobre el mar», cerca de la embocadura de un río de Santo Domingo. Y dice Las Casas que al Almirante no le llamaron la atención, porque había visto otras muchas en sus navegaciones de mozo, por las costas de Guinea y la Manegueta, y que las sirenas no son tan hermosas como las pintan, «pues en cierto modo tienen forma de hombre en la cara».</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0262_chap4">
-				<head>IV</head>
+				<head xml:id="ne0262_head_003">IV</head>
 				<p>Erguidos ante sus atriles con militar rigidez, entonaban los músicos una marcha solemne, que servía de acompañamiento a los pasajeros en su entrada al comedor. Los hombres vestían de frac o de <seg rend="italics">smoking</seg>, guardando en una mano la gorra de viaje. Algunos se detenían en las puertas formando grupos para ver a las señoras que iban saliendo de los camarotes de preferencia o venían de los de abajo por la gran escalera de doble rampa, con un roce de finas ropas interiores.</p>
 				<p>Deslizábanse rápidas todas ellas, entre saludos y sonrisas, para sumirse, más allá de las mamparas de cristales, en un mar de luz en el que nadaban los colores de inquietas banderas. Una estela de polvos de tocador y vagas esencias de jardín artificial seguía el aleteo de las faldas desmayadas y flácidas, con brillantes pajuelas de oro o plata; el crujiente arrastre de los tejidos sedosos; el brillo de las espaldas desnudas suavizadas con una capa de blanquete; la tersura de las nucas, sobre las que se elevaba el edificio de un peinado extraordinario, el primero de una navegación que únicamente se había prestado hasta entonces a exhibir sombreros de paseo y velos de odalisca.</p>
 				<p>En el antecomedor lucía un gran cartel pintarrajeado con una pareja danzante y una inscripción gótica en alemán y en español: «Esta noche baile.» Y el anuncio parecía esparcir por todo el buque un regocijo de colegio en libertad. «Esta noche baile», repetían las personas de grave aspecto, como si se prometiesen un sinnúmero de misteriosas satisfacciones.</p>
@@ -855,7 +889,7 @@
 				<p>Por algo habían florecido en las islas mediterráneas los pueblos adoradores de Afrodita, que hicieron vibrar todas las cuerdas del arpa de la voluptuosidad; por algo se habían elevado en las costas las blancas columnatas de los santuarios de amor, con sus rebaños de cortesanas sagradas; por algo los poetas sacerdotales habían hecho nacer a Venus de la espuma de las olas.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0262_chap5">
-				<head>V</head>
+				<head xml:id="ne0262_head_004">V</head>
 				<p>A las diez de la mañana iban colocando los músicos sus atriles al final de la cubierta, entre el fumadero y una barandilla, sobre la explanada de popa. Ensanchábase el paseo en este lugar, ofreciendo el aspecto de una terraza de café con mesas al aire libre y arbolillos redondos plantados en cajones verdes.</p>
 				<p>Rompía a tocar la banda una «Marcha granadera» del tiempo de Federico el Grande, con estruendosos alaridos de trompetería, y poco a poco la gente iba poblando el paseo.</p>
 				<p>El buque, húmedo, sombreado, limpio, parecía sonreír como un dormilón que se despabila con las frías abluciones matinales. Desde mucho antes caminaban los madrugadores por la azulada penumbra de la cubierta, saludándose al paso y comunicándose noticias de la noche anterior. Algunos, vestidos con pijamas o medio desnudos bajo un largo gabán, descendían del gimnasio y se deslizaban rápidamente en busca de sus camarotes.</p>
@@ -1160,7 +1194,7 @@
 				<p>—¡Muy bien dicho, poeta! ¡Muy hermoso! Que la matrona azul y blanca no nos haga concebir falsas ilusiones... que de cerca nos parezca tan hermosa como de lejos... Que así sea. Amén.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0262_chap6">
-				<head>VI</head>
+				<head xml:id="ne0262_head_005">VI</head>
 				<p>—¿Qué día es hoy? ¿viernes?... ¿sábado? He perdido la cuenta del tiempo que llevo en el buque. Los días son dobles... dobles no, triples. Desde que despertamos hasta el almuerzo, un día; del almuerzo a la comida, otro; y de la comida a la hora de dormir, el día más largo para algunos, pues lo prolongan hasta que sale el sol... ¡Y siempre las mismas caras! Vemos las mismas personas cien veces al día. Parece que nos conocemos desde que nacimos... Dígame, Manzanares: ¿en qué día estamos?</p>
 				<p>Era Maltrana el que hacía la pregunta, en las primeras horas de la mañana, caminando por la cubierta de paseo con el comerciante español. La calle de estribor estaba inundada de luz; la de babor guardaba la humedad del mangueo reciente, con una fresca penumbra de galería subterránea.</p>
 				<p>Corría la sombra del buque sobre las aguas unidas y tranquilas, como una silueta chinesca. En su lomo se marcaban los perfiles de botes y pescantes y la masa cuadrangular de la chimenea. Tendíase el Océano en calma hasta lo infinito, sin una ondulación, con el verde esmeralda de los mares tropicales, denso y adormecido. No había en él otras espumas que las dos láminas burbujeantes que levantaba la proa al arar su superficie. De vez en cuando, de las aguas removidas surgía un enjambre de peces voladores. Aleteaban lo mismo que enormes libélulas; abríase su tropa en varias direcciones formando abanico, y así volaban a gran distancia a ras del Océano, trazando sobre él restos y sutiles surcos, hasta que el cansancio de la fuga los obligaba a sumergirse otra vez.</p>
@@ -1461,7 +1495,7 @@
 				<p>—Así será—dijo el doctor—. Dos y dos serán cuatro en la Argentina alguna vez... Indudablemente, dentro de siglos. Pero entonces—añadió con tristeza—nadie irá a ella; porque para encontrarse con la misma aritmética del país natal, con la novedad de que dos y dos sólo hacen cuatro, no hay hombre que sienta deseos de moverse de su casa.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0262_chap7">
-				<head>VII</head>
+				<head xml:id="ne0262_head_006">VII</head>
 				<p>—Sí; dice usted bien. El poder demoníaco de la música, que influye en nuestra suerte, como en otros tiempos influían los astros... El Maestro habla de él al recordar en sus Memorias los años de iniciación... Afina nuestra sensibilidad, para que suframos más intensamente las heridas de la existencia.</p>
 				<p>Mina Eichelberger, la mujer del director de orquesta, murmuraba estas palabras con el mentón apoyado en el pecho y la mirada fija en Fernando, de pie junto a ella.</p>
 				<p>Hablaban en la cubierta de los botes, bajo la sombra movediza de un toldo de lona que dejaba avanzar una faja de sol o la repelía, siguiendo el balanceo del buque, largo, suave, apenas perceptible.</p>
@@ -1734,7 +1768,7 @@
 				<p>Y para llegar hasta ella, el héroe no había tenido que combatir el obstáculo del fuego, que se salva con sólo un impulso de coraje... Su firmeza y su paciencia habían sido tan grandes como su valor ante los océanos que desalientan por su inmensidad; las montañas que crecen y se repiten así como se va avanzando por sus rugosidades; los bosques obscuros y laberínticos, en los que se pierden la luz del sol y las huellas de los pasos; las llanuras desoladas que no terminan nunca.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0262_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0262_head_007">VIII</head>
 				<p>La víspera del paso del Ecuador, al penetrar la luz del alba en las entrañas del buque, fue esparciéndose con ella una melodía suave de metales discretos, una música con sordina que sólo aspiraba a despertar levemente a los pasajeros, para que reanudasen el sueño con mayor placer.</p>
 				<p>Avanzaban los músicos quedamente a lo largo de los corredores todavía iluminados por la luz eléctrica, y deteniéndose en un cruce, embocaban sus instrumentos, repitiendo la solemne alborada.</p>
 				<p>Los durmientes se agitaban en sus lechos. Todos sabían lo que significaba esta música oída entre sueños. El <seg rend="italics">Coral</seg> de Lutero. Era domingo, y el buque protestante lo anunciaba a sus gentes con este salmo instrumental, que recordaba a muchos una ópera de Meyerbeer.</p>
@@ -1924,7 +1958,7 @@
 				<p>—Y así marchamos a través del misterio azul, en busca de una lejana tierra de ensueño para nuestro cargamento de miserias y ambiciones. Hace años, seguíamos todos el mismo rumbo con la tenacidad de un rebaño que no conoce otro camino. Íbamos al Norte de América, tragadero insaciable de hombres, olla hirviente de razas, tierra de prodigios absurdos y opulencias insolentes... Pero ahora, el camino se ha bifurcado: conocemos nuevos mundos. El rebaño de acero y humo se reparte, y mientras unos siguen la antigua senda, nosotros ponemos la proa al Sur, llevando sobre nuestro lomo la aventura y la ilusión, en busca de pueblos nuevos, pueblos de esperanza, pueblos de aurora, cuyos nombres suenan con el retintín del oro.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0262_chap9">
-				<head>IX</head>
+				<head xml:id="ne0262_head_008">IX</head>
 				<p>El primer acto de la fiesta ecuatorial fue el paseo de la música a las nueve de la mañana por todas las cubiertas, deslizándose luego en los pasadizos y recovecos de los camarotes.</p>
 				<p>Muchos pasajeros estaban aún en la cama, y al apagarse el eco de los instrumentos, volvieron a reanudar su sueño. Se habían acostado tarde. En la noche anterior, las luces del café permanecieron encendidas hasta que el amanecer fue empañando su brillo. La marinería, al limpiar las cubiertas, habían salpicado con su mangueo algunos escarpines de charol que marchaban titubeantes sin encontrar su camino y <seg rend="italics">smokings</seg> cuya negrura estaba constelada de manchas de ceniza y de champán.</p>
 				<p>La gente menuda del pasaje fue la única que corrió bulliciosa al escuchar este primer anuncio de la fiesta. Niños y criadas marchaban al frente de la banda, admirando los disfraces con que se habían cubierto los músicos en honor de la grotesca solemnidad; sus caras con chafarrinones de almagre y sus narices de cartón. Un camarero vestido de pielroja, con gran abundancia de plumas, iba ante la música haciendo molinetes con una cachiporra de tambor mayor.</p>
@@ -2218,7 +2252,7 @@
 				<p>¡Pobre Wagner!... ¡Pobre Víctor Hugo!...</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0262_chap10">
-				<head>X</head>
+				<head xml:id="ne0262_head_009">X</head>
 				<p>Después de la comida, Fernando se sentó en el paseo lejos de la música, que empezaba su concierto nocturno.</p>
 				<p>Estaba triste, y su tristeza era de engaño y arrepentimiento. Aquella pobre mujer había dicho la verdad: las ilusiones de él iban a morir de un golpe con la satisfacción del deseo. Mejor hubiese sido creerla. Todo el edificio fantástico elevado en el curso de sus diálogos se habían venido abajo por un simple encontrón de la realidad. Y Ojeda salía de esta aventura con una gran inquietud de conciencia. ¿Qué hacer ahora?...</p>
 				<p>¡Pobre Mina! Ella había sido la primera en darse cuenta de la tristeza y el desaliento que habían seguido a su delirio amoroso. Al despertar y serenarse, un gesto suyo de resignación, un adiós humilde, habían dado a entender a Fernando que no se hacía ilusiones acerca del porvenir. Todo estaba concluido. Y cuanto él dijese por restablecer el pasado sería piadosa mentira, falsedad galante para enmascarar su decepción.</p>
@@ -2528,7 +2562,7 @@
 				<p>Maltrana asintió: así era. Y el doctor sonrió maliciosamente, como si después de saber esto comprendiese mejor la historia del Nuevo Mundo.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0262_chap11">
-				<head>XI</head>
+				<head xml:id="ne0262_head_010">XI</head>
 				<p>Al detenerse el trasatlántico, después de tantos días de marcha, una sensación de extrañeza pareció circular por todo él, desde la quilla a lo alto de los mástiles.</p>
 				<p>Fue poco después de la salida del sol, y todos los pasajeros, aun los menos madrugadores, despertaron casi a un tiempo, con el mismo sobresalto del que experimenta una dificultad repentina en sus órganos respiratorios.</p>
 				<p>Habituados al suave balanceo de la cama, al movimiento de péndulo de las ropas colgantes, al desnivel alternativo del piso, al escurrimiento de los objetos sobre mesas y sillas, como algo natural de esta existencia oceánica, sintieron todos cierta angustia viendo entrar cuanto les rodeaba en rígida inmovilidad. El oído, acostumbrado al roce incesante de las espumas en los costados del buque, al estremecimiento de la atmósfera cortada por el impulso de la marcha, al lejano zumbido de las máquinas extendiendo su vibración por los muros y tabiques del gigantesco vaso de acero, acogía ahora con extrañeza este silencio repentino, absoluto, abrumador, como si el buque flotase en la nada.</p>
@@ -2870,7 +2904,7 @@
 				<p>Y al subir por una escalerilla de hierro recibieron en la cara el soplo musical de las enrojecidas ventanas del salón. Una voz de mujer cantaba el amor, la única verdad y la mentira más grande de nuestra vida... ¡Pobre vida, que no puede marchar por sus propias fuerzas y necesita el apoyo de la ilusión!</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0262_chap12">
-				<head>XII</head>
+				<head xml:id="ne0262_head_011">XII</head>
 				<p>Dos días antes de llegar a Buenos Aires, el <seg rend="italics">Goethe</seg> empezó a remozarse. Trabajaba la marinería de sol a sol bajo la mirada escrutadora de los oficiales. Era una agitación semejante a la de un navío de guerra en vísperas de combate.</p>
 				<p>La última cubierta se empequeñecía. Las balleneras pendientes sobre el mar eran retiradas al interior, descansando fijas en sus cuñas. Los paseantes veíanse obligados a moverse entre estas embarcaciones, que sólo dejaban accesibles estrechos pasadizos.</p>
 				<p>Una limpieza minuciosa y paciente retocaba el exterior de la nave desde la línea de flotación a los topes, dejándola como nueva. Por todas partes se encontraban marineros arremangados y despechugados, con un cubo de pintura en una mano y una brocha en la otra. Sosteníanse en peligroso equilibrio sobre mástiles y barandillas. Sentados en andamios y teniendo a sus pies el mar, pintaban los costados del buque balanceándose sobre el abismo.</p>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Don Juan Solo</title>
-				<title type="sub">Relación contemporánea</title>
+				
 				<title type="short">JuanSolo</title>
-				<title type="idno">
-					<idno type="bne">bimo0001263936</idno>
-					<idno type="viaf"></idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1129706</idno>
-					<idno type="viaf">42728255</idno>
-					<name type="short">Munilla</name>
-					<name type="full">José Ortega Munilla</name>
+					<name type="short" ref="#Munilla"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1238</measure>
@@ -141,13 +131,39 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0384</idno>
+						<idno type="cligs">ne0384</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bne" subtype="pdf">Biblioteca Nacional de España, <date when="2018">2018</date>, <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000201414&amp;page=1"/>.</bibl>
-				<bibl type="print-source">Alfredo de Carlos Hierro, <date when="1889">1889</date>, Madrid.</bibl>
-				<bibl type="edition-first"><date when="1880">1880</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Don Juan Solo</title>
+					<title type="sub">Relación contemporánea</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0001263936.html">bimo0001263936</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Munilla">
+						<name type="full"><forename>José</forename> <surname>Ortega Munilla</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9725 - IO 9726">IO 9725 - IO 9726</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/122764641">122764641</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3186502/">Q3186502</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1129706.html">XX1129706</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/42728255/">42728255</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bne" subtype="pdf">Biblioteca Nacional de España, <date when="2018">2018</date>, <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000201414&amp;amp;page=1"/>.</bibl>
+					<bibl type="print-source">Alfredo de Carlos Hierro, <date when="1889">1889</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first"><date when="1880">1880</date><idno source="k10plus" type="ppn" n="465039731" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465039731"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Don Juan Solo</title>: 	<title type="sub">relación contemporánea</title> <date when="1880">1880</date>, <publisher>Alfred de Carlos Hierro, Editor</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465039731" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465039731"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>La calidad del OCR de los últimos capítulos es relativamente baja debido a la calidad del documento digitalizado original.</p>
@@ -158,6 +174,14 @@
 				<p>Toda la obra gira en torno al dolor del protagonista provocado por su monomanía.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9725" key="IO 9725" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -170,7 +194,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">naturalista</term>
 					<term type="author.year.change">1884</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -182,20 +206,20 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.edit" resp="amazon">Ficción histórica, Literatura y ficción; Historia, Historia; Ficción, Europea, Antologías</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.mentioned" resp="HdLE">True</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE7">0.5</term>
 					<term type="text.litHist.literaryQuality" resp="MdLE7">high</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
@@ -217,16 +241,17 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-03-05" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
-			<head>DON JUAN SOLO</head>
+			<head xml:id="ne0384_head_000">DON JUAN SOLO</head>
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0384_chap1">
-				<head>I</head>
-				<head>Empecemos por la. mitad</head>
+				<head xml:id="ne0384_head_001">I</head>
+				<head xml:id="ne0384_head_002">Empecemos por la. mitad</head>
 				<p>Cuando D. Juan Solo llegó á su casa pudo dar rienda sucha á su dolor. Todas las fibras de su alma estaban rotas, todas sus esperanzas destruidas, todas sus aspiraciones sumidas en el golfo de lo imposible. ¡Se acabó! ¿A qué más vida? El minuto que trascurrió después de hechas estas reflexiones fue cruel como un verdugo, largo como el camino de vuelta, y helado como Diciembre. ¡Se acabó, sí, y para siempre! Sus sesenta años de sacrificios iban á tener un desenlace bien triste. La escena ocurrida en casa •    de    su    hija    no    podia    ser    recordada    sin horror, sin vergüenza, sin miedo, todo junto.</p>
 				<p>Cerró el paraguas, subió los setenta escalones que separaban el piso tercero de la calle, tiró de la campanilla, y entrando en su despacho se dejó caer en el sillón. A un lado cayó el paraguas y á otro el sombrero, abandonados por las manos que acudían á ocultar el rostro, donde un llanto desgarrador salió fuera como lluvia de la feroz tormenta.</p>
 				<p>—¡Ah!—dijo—¡infame!</p>
@@ -234,8 +259,8 @@
 				<p>—No... Ella no... ¡El!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0384_chap2">
-				<head>II</head>
-				<head>Ahora... empecemos formalmente</head>
+				<head xml:id="ne0384_head_003">II</head>
+				<head xml:id="ne0384_head_004">Ahora... empecemos formalmente</head>
 				<p>D. Juan Solo de Estúban había nacido en Fuentidueña de Tajo el año io. Su familia', último tallo de un árbol genealógico que dió bien poco que hacer á la heráldica, se componía de traficantes en ganado y en granos. La abundancia columpió su cuna; pero no pudo saber verdaderamente lo que era una familia, porque la suya, demasiado numerosa, tenía en común la vida y en una misma casa, que puede servir de tipo á la morada del castellano rico, estaban desde el abuelo al último criado. El hogar común, las relaciones íntimas de hermanos, cuñados, primos, tias viejas y regañonas—que eran siete hermanas de su padre—arrebataron á la infancia de D. Juan las dichas del regazo materno. Allí se vivía en público. Era una república á uso espartano, y la comida, en el enorme salón de la casa, revestía cierto aspecto glacial de comida hecha en una fonda por diversos viajeros que vienen y van de ó á distintas partes con contrapuestos intereses, indiferentes entre sí. Los Solo de Esteban parecían, más bien que miembros de una familia, obreros de una fábrica. El respeto al jefe de la dinastía, la obediencia á sus órdenes, las puramente oficiales relaciones de ellos, la poca importancia de las mujeres de los cinco hermanos casados, todo le daba el carácter de una reunión de gentes unidas por vínculos completamente diversos de los que la sangre engendra. Allí el más útil era el más atendido.— Las malas cosechas de 1822 arrebataron á los Esteban la mitad de su prosperidad, y cuando Juan cumplió los veinte años hallóse casi pobre. El cólera mató á su madre y se llevó la cuarta parte de la lechigada de solteronas que llenaban la casa de toses y perros. Hallóse el con una salud débil, con una predisposición á la melancolía invencible, poco avezado al mundo y exento de pasiones y afectos. Su corazon sólo le servía de entraña.—Al estallar la guerra civil lcfc Esteban perdieron el resto de sus bienes: una partida de muías lechales que traian del Pirineo fué cogida por los carlistas, y el abuelo Esteban murió de rabia maldiciendo á aquellos bandidos. No tardó en seguirle su hijo mayor, padre de Juan. La soledad de éste fué espantosa. Se encontró completamente entregado á sí mismo, á su carácter débil, á su propensión cavilosa y pensadora, á su miedo del mundo. ¿Qué hacer? No habia recibido educación alguna. Como el Santo filósofo lo ignoraba todo; pero no era santo. Hombre de ménos aspiraciones no se ha conocido. El pedia tan poco á la sociedad, que sedaba por contento con que le dejara un rincón donde esperar la muerte. Sin haber penetrado en las profundidades de las cavernas de la vida, presentía sus horrores y de antemano le inspiraban pavor. Vino á Madrid en una galera que paró en la posada del Galgo, que aún existe en la Cava baja. Era aquella época en que escribía Fígaro; en que Espronceda conquistaba renombre y popularidad; en que el Duque de Rivas comenzaba su carrera literaria y diplomática; en que España se bañaba en las olas primeras del romanticismo. Las damas peinaban sus cabezas con grandes moñas que, colocadas sobre el occipital, tomaban el nombre de castañas, y unos enormes miriñaques las envolvían, convirtiéndolas en plazas fuertes. El pudor iba como las cubas: entre aros. Las luces de las calles eran de aceite. Habia cien simones para toda la Corte de las Españas. Paquiro mataba cada lunes cuatro toros en la plaza. Empezaba á sonar aquí la palabra «revolución» sin que la gente se persignase, y ya habia dos ó tres docenas de españoles que creyeron en Mesmer, en el telégrafo y en el libre exámen. El ferro-carril no habia <seg rend="bold">aún </seg>dejado llegar el ruido de su nombre a Madrid. La Puerta del Sol era cinco veces más pequeña que lo es ahora. Habia en el Principal guardia de milicianos, y sus morriones con grandes y coruscantes carrilleras ocupaban lugar preeminente en el adorno de las aceras de la Puerta del Sol, amén de las cinco soberbias farolas que de noche lucían, si no mandaba luna el calendario. En este gran pueblo, pobre y sin brillo como el más oscuro lugaron de las Castillas, y que empezaba á experimentar los anhelos de la capital, se encontró D. Juanito Solo, solo y sin esperanzas. A los dos años le encuentran nuestros apuntes casado y hecho escribiente del Excmo. Ayuntamiento, en mangas de camisa, con dos tirantes bordados, dando vueltas á la cuna de su hija Elena. Su existencia ha caido en ese mar de plomo de las grandes ciudades, que uhoga bajo su peso y entre sus olas el porvenir de miles de séres. ¡Dios mío! ¡Estar casado y tener 4.200 rs. de sueldo al año! ¡La sed de Tántalo, y ni una gota de agua! Aquel matrimonio le explica el cronista de esta historia verdadera como un acto de lealtad. Juan vivió de pupilo en una casa de huéspedes, donde tuvo la debilidad de enamorarse de una muchacha delgaducha, de poco pelo, fea, y muy débil de carácter. Parece que su honestidad fué castillo de mimbres, y que Juan puso bien poco de su parte para derribarlo; pero al cabo de breves meses hallóse padre de una niña muy linda y yerno de una suegra odiosa. Se resignó. Tenía su alma, á falta de cualidades brillantes, cualidades de resistencia. No sabia atraer las alondras con el relampagueo de los espejos hábilmente colocados; pero si venian los cuervos á picarle, se dejaba roer por ellos las entrañas. El amor no endulzó ni un dia su vida. Su suegra doña Prístina Je acibaró muchos.</p>
 				<p>Pertenecía la dama con quien emparentó á una de esas familias míseras que la burocracia española envuelve en atmósfera mortífera de necesidades de lujo y pobreza. El padre de Emilia fuó oficial de Hacienda; cobraba 20.000 reales de sueldo, que eran mucho en aquellos años económicos en que una casa regular costaba una peseta diaria y la carne á 10 cuartos la libra. Emilia se educó, pues, en una posicion falsa. Lo supérliuo presidió á su educación, con su abanico de plumas de pavo real. Aprendió á cantar, áun cuando su oido era abominable y su disposición estética nula. Como entóneos estaban de moda las muchachas pálidas, y el nombre de Emilia era del catálogo de heroínas de novela romántica, esta niña concibió todas las ilusiones de una vida holgazana y dulce, entre las adulaciones maternas y la estúpida ceguedad del empleado en tabacos, que no tuvo jamás otra habilidad que la de hacer sumas y restas como una máquina desprovista de todo asomo de inteligencia. Ella soñaba con un D. Juan de larga melena, descolorido, ó verde si fuera posible, de grandes ojos negros, que hablase del rocío de las flores, de Atala y Rene, del crepúsculo vespertino y de la última <seg rend="italics">loalete</seg>—que así se decía por aquellos inocentes anos de nuestros desgraciados abuelos.—Al morir el empleado en Hacienda, como en aquella casa se vivía al día, doña Prístína se vió apuradísima. Del desastre apenas pudo salvar una caja de cartón con los rizos de Emilia^ un baúl donde había alguna ropa blanca, y media sillería de Vitoria, amén de cuatro cuadritos representando en grabados pésimos <seg rend="italics">L'enfant prodigue avec les porceau.v,</seg> y otras escenas de esta parábola bíblica.</p>
 				<p>—¡Ah!—exclamaba doña Pristína atándose bajo la barba los cabos de un pañuelo de seda.—¡Si el que come tierra viviese... ;cómo habían de despreciarnos esos pordioseros, hartos de ajos, que nos miran por encima del hombro?</p>
@@ -243,8 +268,8 @@
 				<p>Cuando sobrevino el engendro, la vieja se complicó de furia. «¡Qué deshonor! ¡Juan era un malvado! Abusar de una niña, de un ángel. Emilia merecia una palma, sí, la palma de las vírgenes. \a no habia personas decentes.» Bien sabe el Señor de todas las cosas que en el trance de la seducción, Juan, si no fué el seducido, lo que es seductor no lo fué tampoco; y aquí se empeñan en que los copiemos unas cuantas notas de las que con gran trabajo y acucia hemos recogido para esta historia; notas que ponen en verdadero punto cuestión tan árdua y que por respeto á la memoria de Emilia no queremos copiar, aunque, lo repetimos, agitando las cuartillas en que están escritas, nos llaman la atención muy delicadamente. Por lo cual, y para no dejarnos seducir por ellas, hacemos punto y pasamos á otro capítulo. '    .</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0384_chap3">
-				<head>III</head>
-				<head>Escenas de interior.—Figuras del año 33</head>
+				<head xml:id="ne0384_head_005">III</head>
+				<head xml:id="ne0384_head_006">Escenas de interior.—Figuras del año 33</head>
 				<p>—Señora, yo estoy dispuesto á portarme como un hombre honrado. Ya verá V. como hay personas decentes en el mundo. Por lo menos yo lo seré.</p>
 				<p>—¡Ay, hija mia! ¡Qué vergüenza! ¡Tú, tú, tú! Verte como te ves. ¿En qué has estado pensando?</p>
 				<p>Emilia no supo qué contestar. Bajó los ojos, que se habian agrandado con la palidez creciente por su situación vergonzosa, y desde entónces procuró vestirse de manera que los pliegues de gabanes y faldamentos encubrieran el desarrollo abdominal. D. Juan puso manos á la obra del matrimonio, y en la parroquia de San Millan, una mañanita fria, cuando pasaban las burras de leche por la inmediata calle de Juanelo, se consumó la desgracia.—Aquel día fué memorable en las letras, porque murió Larra y nació Zorrilla.</p>
@@ -262,8 +287,8 @@
 				<p>Fué la ceremonia ligera. D. Juan se acordaba siempre de la cabeza del cura que le casó, de su crespa cabellera gris, de sus labios salientes y abelfados, de su sobrepelliz nada limpia y de su estola pendiente de la manga, que iba y venía repartiendo bendiciones, hisopazos y aspersorias. Se acordaba de la sacristía, húmeda, llena de los ruidos de la calle sobre los que dominaba el cantorrio de un ciego, invadida y profanada por una turba de chicos que se disputaban las misas para ayudar como acólitos y beberse las reliquias corroborantes de la vinajera... Se acordaba de la comida con que los padrinos les obsequiaron, del apetito de su suegra, de los suspiros de la señora gorda, de la palidez de su cara mitad, de la tarde que iba cayendo, del los que se puso de un modo muy triste, muy triste; de muchas cosas desagradables que invadían de recuerdos enlutados y cómicamente enojosos su memoria.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0384_chap4">
-				<head>IV</head>
-				<head>De la cuna que compró D. Juan el día en que le dejaron cesante</head>
+				<head xml:id="ne0384_head_007">IV</head>
+				<head xml:id="ne0384_head_008">De la cuna que compró D. Juan el día en que le dejaron cesante</head>
 				<p>Hubo, sí, un día de placer en la vida de D. Juan. Cuando fué padre: al entregarle el comadron á la niña para que la reconociera, sintió un golpe violentísimo en el corazon, abrió sus ojos insignificantes y vagos que tenian algo de una mirada a través de un vaso de agua, palpó á la criatura y parece que vió delante de sí un horizonte inmenso, que sintió en sus hombros la impresión de un peso y que dentro de su alma un deleite y un vigor inverosímiles le poseyeron.</p>
 				<p>¡Mía, mia... mia!—balbuceó.—¡Hija de mi alma!</p>
 				<p>Le beso la cara, amoratada aún, y recibió la primer mirada de aquellos ojitos recien nacidos. Con una cucharilla puso en los labios del nuevo sér unas gotas de agua azucarada. Después devolvió su hija á Emilia. Eran las cinco de la tarde y tenía dos pesetas en el bolsillo por todo capital.</p>
@@ -296,8 +321,8 @@
 				<p>—¿Cuánto vale?... ¿Treinta reales?... Tómelos V... Un mozo para llevarlo... ¿Que le llevará luego?... Nó, nó, ahora mismo... ¿Que si es desconfianza?... Nó; es que esta cuna es para mi hija, y ya vé V... no es cosa de que espere la pobrecita criatura... Mi hija debe tener una cuna... Lo que yo siento es que no sea tan buena como la del Príncipe de Asturias.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0384_chap5">
-				<head>V.</head>
-				<head>D. Juan Solo y Juan Claudio.</head>
+				<head xml:id="ne0384_head_009">V.</head>
+				<head xml:id="ne0384_head_010">D. Juan Solo y Juan Claudio.</head>
 				<p>Comenzó D. Juan sus faenas administrativas con tanto celo, que el viejo carbonero Críspulo se llenó de gozo al ver el libro que inauguró aquella mañana, limpio y ordenado, con cada rasgo y cada perfil que daba alegría el verlo. Fué preciso que D. Juan hiciese el sacrificio de su sombrero de copa y de las faldas de su levita, porque no sentaban bien detrás de un mostrador de carbonería tales adornos caballerescos. Bien es verdad, que la carbonería era un gran establecimiento donde habia no menos de doscientos quintales de leña y unos quinientos de carbón, con lo cual ascendía en importancia, así como es cierto que D. Juan ni pesaba el carbón ni cargaba los carros, lo cual hubiese sido demasiado descenso para su triste prosopopeya social. Para estos recados y otros menesteres de baja esfera, los criados de Críspulo sobraban, y D. Juan, detrás de su mesa, con la pluma de ave colada en la derecha oreja, dirigía y presidia las operaciones de los negros y des-garrapizados obreros del almacén, envuelto en una nube negra de polvo de carbón. El primer dia, D. Juan Solo sa- t. .’ ’ lió del almacén de color de aceituna; el segundo de color de cuero, y después el polvillo negro se posesionó pacíficamente de su cutis, llenó los intersticios de la nariz, se asentó en la comisura de los párpados, sembró las cejas, y matizó los poros. Fué preciso resignarse á aquel color de mulato, pues el almacén era el único medio de vivir que al sin ventura se le ofrecia. En medio del tono pardo de la piel, la blancura de los globos de los ojos resaltaba cómica y singularmente. Algo saltones de por sí, con aquel contraste se acentuaban, dando al rostro de D. Juan Solo alguna semejanza con el rostro de un polichinela. Sus dientes, blancos y recios, eran asimismo notables en la oscuridad mate de los labios, y todas las partes blancas de su traje, los puños de la camisa y el cuello, se destacaban con crudeza y vigor... Pero, ¿qué le importaban á D. Juan Solo el mundo, el bien parecer, el polvo del carbón y los faldones de su levita? Su hija, su hija, eso era lo que él amaba. Cuando á las ocho de la noche se cerraba el almacén, corría á su casa y se apoderaba de la muñeca, Ja paseaba por la habitación, la cantaba todo un repertorio de cantares soporíferos, y cuando se le dormia en los brazos, llevábala á la cuna, depositábala en el blando coginete con sumo tiento, y se estaba horas y horas mirando los gestos que aquel angelillo dormido hacía. Veíala mover los labios como buscando el dulce y próvido seno materno. Veíala sonreír, marcándosele en las dos manzanitas de los carrillejos dos hoyos graciosísimos, ¡y D. Juan Solo se sen-lia inundado de una dicha, de un júbilo!... Aquello era un pedacito de paraíso que se había caído al mundo. La buhardilla de D. Juan Solo llenábase en horas tales de todos los lumínicos reflejos del cielo de los bienaventurados. La vida suspendía su andar lento y enojoso; el reló se detenía y D. Juan Solo se quedaba embebecido en su propia obra, como un íilósofo, un artista ó un Dios.</p>
 				<p>—Yo no sabia lo que era la vida—se decía á sí mismo el pobre de D. Juan.—¡La vida es tener un hijo y matarse por él! ¡Viva, viva mi hija de mi alma! ¡Bendíganla los cielos! ¡Sea dichosa, y nada más me importa de cuanto sobre la tierra existe!</p>
 				<p>Tanto se aplicó en el gobierno del almacén, que en poco más de dos meses el Sr. Críspulo se convenció, á pesar de sus desconfianzas de comerciante, de que D. Juan le servía de mucho. Fuéle iniciando en sus secretos poco á poco.</p>
@@ -317,8 +342,8 @@
 				<p>Allí ocupó Juan Cláudio un lugar decoroso, porque era más que criado y ménos que mayordomo: recibía los carros cargados de huesos, y pagaba á los chicos que venían, Dios sabe de dónde, con unas cuantas cañas de vaca y cráneos de carnero. La Robustiana estaba satisfecha de Juan Cláudio. Sí, era un hombre fiel, no había más que verle. Podía fiarse de su lealtad. Por entonces ya se honraba la persona de Juan Cláudio con un chaquetón que tué levita en sus buenos dias, y con un pantaloncillo de dril comido por las tobilleras. Una cualidad notable del carácter de Juan Cláudio: sabía amoldarse á las circunstancias, de tal modo, que su alma era como un pliego de papel del cual pueden hacerse cuantos dobleces se quiera. Se doblega á merced de las nuevas, y al mismo tiempo conservaba su carácter, su modo de ser propio, personal, originalísimo é incopiable. En el patio de la Robustiana era preciso ser por la mañana mozo de escoba, barrer las sendas practicadas en medio de los huesos. Por la tarde debia el mozo de escoba convertirse en cajero para pagar á los proveedores. Luego, llegada la noche, el cajero tenía que realizar un prodigio: tenía que descender la escala zoologica uno, tres, veinte grados... y trocarse en perro vigilante, porque aquellos barrios, que aún hoy son centro de operaciones de la gente de mal vivir, hervian entónces en ladronzuelos, y la Robustiana pasaba por guardar en sus arcas mucha onza. Y era horrible pasar la noche rondando aquellos pudrideros, en los que se oia el roer sigiloso de los gusanos, y de cuya masa llena de ángulos surgían lenguas de luz movible que el viento soplaba y desvanecía. Juan Cláudio tuvo miedo la primera noche; pero su voluntad era indomable, y logró hacerla superior á todos los instintos. Durmió sobre los huesos. Hubiera dormido en el cono de un volcan, si esto hubiese conducido á algo. Conquistó aquel baluarte de malos designios que se llama voluntad de la Robustiana, y de su criado se convirtió en su asociado. Enriqueció el almacén con otros géneros de comercio, y no fué sólo en huesos y trapos en lo que se traficó, sinó en harinas que desde Santander y Medina del Campo venian en carros cargados hasta las trancas. Cuando Juan Cláudio inauguró su alianza con el tio de D. Juan Solo, ocurrió un incidente que desagradó mucho á Juan Cláudio, á saber: que del fondo de la provincia de Sória vino á Madrid un chicuelo de no más de ocho años, sobrino de la Robustiana, á quien su primo Basiliso Herrera se le enviaba por «ver de que el muchacho metiese la cabeza en la Corte.» La Robustiana, que era una mujer gorda, crasa, linfática, torpe en el discurrir, y sin otra forma de la actividad que la avaricia, no vió con el mayor agrado á aquella criatura; pero como éste se hacía querer siendo dócil y servicial, acabó por tomarle todo el cariño posible en su ánimo. Fué una sombra de heredero que se interponía en el camino de Juan Cláudio, el cual había ya dado por suyos en el santuario de la conciencia todas las onzas de la Robustiana. Pepin Carandía se llamaba aquel enemigo mortal de Juan Cláudio, el cual desempeñaba el importante oficio de barrer el despacho de harinas cuando llegó á verle D. Juan Solo. Era el muchacho alegre, amigo del cantar, juguetón y muy moreno, delgado y chiquito: un cascabel, en suma, por lo pequeño y bullicioso.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0384_chap6">
-				<head>VI</head>
-				<head>Pepin Carandia descubre un nido de «churumbeles»</head>
+				<head xml:id="ne0384_head_011">VI</head>
+				<head xml:id="ne0384_head_012">Pepin Carandia descubre un nido de «churumbeles»</head>
 				<p>Lo que más le molestaba á Pepin era la inacción. No trabajar es aburrirse. No jugar condenarse. Hé aquí sus doctrinas. Así, pues, apenas acababa el barrido y Juan Cláu-dio se volvía á su habitación, Pepin se escurría por la puerta del corral y se salia á las Peñuelas. ¡Buen sol! ¡Bonito cielo! ¡Vaya unas nubes que van galopando con la crin tendida por el firmamento! ¡Oh, gozo de las almas! ¡Sentir la naturaleza es tener el genio de la creación bajo la caja del cerebro, y Pepin Carandia era de estos afortunados! ¡Angel complicado de pilluelo!</p>
 				<p>Pasó revista á sus bolsillos: en el de la blysa habi?. una pelota; en el del chaleco un peón con su guita para hacerle rodar; en el del pantalón, lado derecho, un cigarro á medio fumar, y en el del lado izquierdo una caja de cerillas.</p>
 				<p>—¿Qué hago?—pensó Pepin consultando el abismo de sus juicios.—¿Pelota, peón ó humo?</p>
@@ -353,7 +378,7 @@
 				<p>Retiróse á su corral, y en la puerta le esperaba armado de un vergajo Juan Claudio.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0384_chap7">
-				<head>VII</head>
+				<head xml:id="ne0384_head_013">VII</head>
 				<p>La araña, la mosca y la escoba</p>
 				<p>¡Pillo! ¡Tuno!—gritó Juan Cláudio y sacudió un vergajazo á Pepin Carandia.</p>
 				<p>Este no se quejó; tenia un orgullo loco, salvaje. Quejarse ¿no era reconocer en Juan Cláudio, el derecho de pegarle?</p>
@@ -385,8 +410,8 @@
 				<p>—La primera persona decente del mundo es D. Juan... y la segunda <seg rend="italics">Chivato.</seg></p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0384_chap8">
-				<head>VIII</head>
-				<head>Diez años que vuelan</head>
+				<head xml:id="ne0384_head_014">VIII</head>
+				<head xml:id="ne0384_head_015">Diez años que vuelan</head>
 				<p>La muerte se llevó al viejo Críspulo, á doña Prístina y á Emilia. Encontróse D. Juan Solo sólo con su hija, que entónces cumplía los doce años. El testamento de Críspulo fué para su ayudador y consocio ménos generoso de lo que todos esperaban. Aquel hombre que habia hecho todos los sacrificios de carácter por el servicio del almacén; que por las mañanas, cuando el alba venía, íbase paso á paso á la puerta de Fuencarral para tratar con los carreteros que traían de la sierra carbón; que luégo se iba al alfolí del trigo á recibir las partidas remesadas desde Salamanca y Medina; que no pensaba, ni hablaba, ni se ocupaba de otra cosa que de la fortuna de su tio, tenía derecho á que éste se hubiese acordado de él en su última voluntad. Pero nada le dejó, ni un real, ni un pedazo de madera, ni un grano de carbón. Entónces D. Juan Solo, que habia aprendido las coVrientes de esa pequeña vida mercantil, propia de los grandes capitales, de que sale la estatua de Mercurio con su armadura de oro, como Minerva de la frente de Júpiter, decidió seguir sus negocios con poco más de doce mil reales que habia conseguido ahorrar. Despreció el tráfico del combustible y se dedicó únicamente á los cereales. Entónces vivía D. Juan Solo en un piso cuarto de la calle del Estudio, (rente á la plaza del Cuervo. A las cuatro acababa sus ocupaciones, iba á su casa, donde una criada vieja cuidaba de la niña Elena, vestía á ésta con un lujo superior á su condicion social, y se la llevaba de paseo. Las gentes, al ver pasará la niña tan elegante y al padre tan míseramente vestido, se encogían de hombros como desaprobando aquel sistema de educación. Elena era esbelta, menuda, chiquita, muy mona, tan poseída del amor de su padre y conociendo instintivamente de un modo tan maravilloso los milagros que una gran voluntad dedicada con heroísmo al servicio de otra puede llevar á cabo, que miraba desdeñosamente todo, segura de que sí ella lo ambicionase, ella lo tendría con sólo decírselo á I). Juan. Sus labios serios é inmóviles tenían hermoso, pero inexpresivo pliegue de estátua. Empezaba á marcarse su seno bajo la línea recta de la infancia. Unos ojos verdes con lineacíones y puntos auríferos como los de la purpurina, hablaban de íntima y fervorosa vida espiritual. Eran aquellos ojos un prodigio de fuego y de elocuencia. Parecían dos gotas de agua del mar cayendo sobre dos monedas de oro. Las manos delgadas, largas, elegantes y nerviosas, traían á la memoria involuntariamente esas lianas de la vegetación tropical que todo loasen y todo lo ahogan con su ténue blandura y su debilidad invencible—manos de sirena—manos que dominan—manos de maga. Don Juan la miraba con embelesamiento, la obedecía como un esclavo, sonreía siempre delante de ella, la temía como á un dios. Olvidado tan completamente de sí, como lo estaba, no será extraño que se díga que su traje habia llegado á ser un harapo puro. Un chaquetón de invierno, negro y lleno de man chas; un pantalón de tela de algodon á cuadros blancos y negros; un hongo, sudado por delante y con tres abolladuras innobles; un palo sin contera en la diestra: estas prendas caracterizaban tan bien á D. Juan Solo, que los vecinos de la calle de los Estudios conocian desde una legua al buen hombre, el cual, como todo ser que vive únicamente para el servicio de una idea, parecía fuera de ella un sonámbulo, con el mirar vago, la boca dilatada, los ojos muy abiertos y el paso rápido de camello derrengado. Andaba de prisa siempre, por el arroyo, esquivando las gentes y los coches, sin que le llamase la atención cosa alguna. Iba á su objeto como la piedra abandonada vá á la tierra. La nariz, que es una facción traidora, habia seguido creciendo, y ahora la tenía D. Juan Solo descomunalmente larga, aunque siempre delgada. Sus ojos, pesados y sin luz, parecian ojos de sictedurmiente, que no ven la claridad por más que permanezcan abiertos. Un borde sanguinolento rodeaba los párpados. Lo que conservaba bien D. Juan Solo era la dentadura; gruesa, fuerte, blanca y limpia como resplandor de su alma. Levantábase al alba, besaba á la niña y se iba a sus negocios, después de echar al gato fuera de la alcoba, no fuese á despertar á la preciosa Elena.</p>
 				<p>—Tendrás dote—pensaba D. Juan Solo cada mañana al ver dormida á su hija.</p>
 				<p>Esta ¡dea le espoleaba, le aguijaba, le hería. Como el caballo de raza tocado constantemente del acicate no repara en barreras y salva los precipicios, D. Juan Solo salvaba las vallas de su amor propio, las de su carácter, las de su propensión, más pensadora y meditativa que enérgica y amiga de obrar. Su marcha por el país de los negocios era salvaje, violenta, irresistible. Era el héroe del tanto por ciento, que también puede haber héroes en los alfolíes, en los mercados y en las Bolsas. Acometía el negocio con ímpetu salvaje, y como en esta época de grande excepticismo muchos púgiles flaquean y caen en la arena por no tener Dios ni señora de sus pensamientos d quien confiarse, á D. Juan Solo le coronaba siempre un felice suceso, porque á lo léjos le animaba y sonreía la criatura preciosa, Elena, la hija querida y sin par. La virtud de trasformar los ca-ractéres dada es sólo al amor. Lo que hay de sacrificio en el trueco, se desvanece: lo que hay de agradable ó útil para el sér amado se acentúa, crece y se agiganta. D. Juan Solo, haciendo cuanto hacía, aún se consideraba en deuda con su hija. Tal actividad, tal celo, tal empuje, tal previsión, artes tan múltiples, inspiradas, hábiles y eficaces, jamás han estado á servicio de empresa humana alguna. Con mé-nos elementos morales fué el soldado César, el tramposo de Bretaña Mirabeau y el ciego de Atenas pintor. Del Don Juan Solo que entró de escribiente en el Ayuntamiento, al D. Juan Solo que husmeaba las mercancías, seguía el rastro del vendedor apremiado por la penuria, espiaba el negocio ageno fracasado, y sorprendía en el aire las emanaciones de dolor que deja como estela sensible, mediaba un abismo: el corazon de un padre. A la mutación moral habia seguido la física: habíase hecho más feo, habia huido de su rostro el angélico sello de bondad y confianza, habíase aplomado su paso. Ahora, si las cosas iban á su placer* se metía las manos en los bolsillos del chaleco, levantaba el cuerpo sobre las puntas de los piés, le dejaba caer sobre los talones, y una sonrisa que salía franca y alegre de sus labios tomaba cierto tinte de malicia demoniaca al matizarse con el rojo borde de los párpados. Si las ideas fijas diesen lugar á la reflexión, y D. Juan Solo hubiese podido examinarse en un espejo, hubiésese inspirado lastima y horroi.</p>
@@ -457,8 +482,8 @@
 				<p>Juan Cláudio era demasiado hábil en las artes del mundo para no tener ya coche é influencia.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0384_chap9">
-				<head>IX</head>
-				<head>El padre y la hija</head>
+				<head xml:id="ne0384_head_016">IX</head>
+				<head xml:id="ne0384_head_017">El padre y la hija</head>
 				<p>A Elena comenzó á enojarla la pobreza y mal aspecto de su casa, y el contraste vivo y enérgico que ofrecían sus lindos trajes y sus pobres muebles, le llenaba de ira y de encono contra D. Juan. Ella le creía bien rico; un avaro atento sólo á esconder las monedas, y más dispuesto á dejarse matar que á permitir que las sacasen de debajo de las baldosas donde, según la vieja Quiteria, las escondía. Empezó, pues, Elena una campaña de filial coquetería para conseguir que del sotabanco de la calle de los Estudios trasladase D. Juan su hogar á algún piso tercero bien amueblado, y si posible fuese con su pianito, que es el sueño que se esconde en todo sotabanco habitado por muchachas. ¡El piano! ¡Qué felicidad! Hacer galopar los dedos sobre aquellas teclas negras y blancas; sentarse en el taburete buscando una posicion elegante, y puestos los ojos en el rincón del techo preludiar algún retazo sin fin posible. Esto volvía loca á Elena: la felicidad estaba dentro de un piano. Empezó, pues, su campaña, y no se sabe qué fué primero, si comenzarla ó tenerla concluida, porque don Juan Solo escuchó la petición con sus claros ojillos entornados, sonriéndose dulcemente, dejando fluir por los poros de su cara, por los rojos vértices de sus párpados y por la comisura de sus labios toda aquella buen alma que Dios le habia dado, y de que tan preciosa porcion incólume conservaba á pesar de sus gatuperios de mercachifle y de sus marrullerías de tendero. De la calle de los Estudios fueron trasportados todos los muebles viejos á un piso segundo de la calle de Segovia, y Elena quiso dar fin á la vida de un despelotado sillón por mil partes roto, lleno de recuerdos memorables, y tan falto de tachuelas como de blanduras.</p>
 				<p>—¡Hija de mi alma—exclamó D. Juan levantándose sobre las puntas de los piés, según su costumbre cuando estaba contento, y dejándose caer luégo sobre sus talones,— en ese sillón murió tu abuela!</p>
 				<p>—Vaya, y eso ¿qué?¿Ha de volver otra vez á pedirnós-le para sentarse? Los muertos tienen bastante sillón con la caja.</p>
@@ -471,8 +496,8 @@
 				<p>—Los chicos de la portera juegan á los soldados... señal indudable... Los niños tienen el presentimiento de las catástrofes, de las guerras, como los ratones el del hundimiento y los pájaros el de la lluvia. Y habrá jaleo, habrá jaleo, sí, querida Elena, habrá jaleo... Nos marcharemos de Madrid á pasar un mes fuera. Tú no sabes, niña mia, lo que es el campo; aquí en Madrid no hay campo... ¡por eso hay tantos hombres malos! El campo moraliza, porque hace amar. Yo, en vez de matar á un asesino, lo soltaría á una selva... ya se han dado casos de estos en América, y no ha habido criminal cuya maldad resistiese á la segunda primavera.... de modo, que tú, que eres tan buena, en el campo te harás mejor. Allí toda mujer se convierte en ángel, porque abundan los perfumes y las alas.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0384_chap10">
-				<head>X</head>
-				<head>El padre, la hija y el amor</head>
+				<head xml:id="ne0384_head_018">X</head>
+				<head xml:id="ne0384_head_019">El padre, la hija y el amor</head>
 				<p>Elena sabía que se llamaba Leandro. ¿Leandro qué. I ouj importaba el apellido. En el primer amor es todo el nombre; en el segundo es todo el apellido. Leandro podía ser el héroe de la epopeya de Elena, y como á Elena le pareció linda su ligura, enérgico su rostro moreno, y sobre todo tan ardientes y abrasadores sus ojos, desde aquella tarde en que saliendo con Quiteria de San Francisco el Grande le vió contemplando las cornisas, solo en medio de la gran área de piedra y simétricamente colocado en el centro del arco, soñó muchas veces con él.</p>
 				<p>—¡Quiteria! ¡Quiteria! ¿has visto qué ojos? Son dos braserillos.</p>
 				<p>Ella cerró los suyos, que ya se han comparado á dos gotas de agua del mar cayendo sobre dos monedas de oro. En realidad, Leandro llamábase de apellido Henares, y no era su oficio, como acaso imaginó Elena, cazar silfos y mariposas, sinó llevar los libros del banquero D. Juan Cláudio Malaña, de quien tantas aventuras van referidas. Era Leandro delgado, enjuto y chico, ménos esbelto que suele serlo el ideal de los primeros amores; bilioso de temperamento, aunque con disfraz de nervioso, que ocultaba bajo la máscara fulgurante de su rostro una frialdad infim-ta; afeitado con esmero, vestido con pulcritud, suelto en sus ademanes, audaz é insinuante en su palabra, y habituado al trato femenil, no fué mucho que, tomando la casualidad por tercera, se entrase en el alma de Elena fácilmente. Fué para ella cosa insensible: tomólo á broma, y la curiosidad hizo lo demás. ¡La curiosidad, que no es una pasión, sinó el fermento de todas ellas!</p>
@@ -492,8 +517,8 @@
 				<p>De este raciocinio vino á concluir Elena que lo más prudente era tener novio y callárselo á D. Juan, lo cual no sólo no la disgustó, sinó que la llenó de júbilo, dando á sus amores un poético y romancesco barniz de fruto prohibido. Aquella noche soñó Elena con rejas y celosías por las cuales bajaba del ciclo lluvia de cartas de amor; con balcones, voleados, de que pendian escalas de seda; con raptos y fugas protegidas por la Virgen, cómplice santa de todas las locuras del amor. Sobre la conciencia de Elena no habia esa mirada de la madre que detiene el extravio de la juventud: la madre y la hija están unidas por un masonismo de sentimientos, que hacen de la una garantía de la otra. El honor de un hombre está seguro entre una madre y una hija. No es preciso que la madre sea perspicaz: basta que sea madre. Exenta Elena de esta vigilancia, su confianza encontraba obstáculos para precipitarse en el corazon de D. Juan Solo, y no le parecía digno de su orgullo tomar por confidente á Quíteria, para la cual todos los secretos del mundo y todos los problemas de la tierra estaban dentro de una olla bien espumada. Así creció aquel amor. Elena no amó á Leandro: amó al hombre. Y el supo hábilmente concretar en su favor aquella aspiración vaga del alma de la niña.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0384_chap11">
-				<head>XI</head>
-				<head>En que se hace el recuento de una fortuna</head>
+				<head xml:id="ne0384_head_020">XI</head>
+				<head xml:id="ne0384_head_021">En que se hace el recuento de una fortuna</head>
 				<p>El negocio de D. Juan Solo prosperaba á mas y mejor. Hubo entónces una subida en el precio de los granos, que de  reales fanega la cebada y 43 el trigo, á que se vendían puestos en el mercado de Madrid, llegaron á contratarse á 44 y  respectivamente. Fué una buena fortuna para D. Juan, que hallóse poseedor de muchas fanegas, aún no pagadas, pero contratadas ya y que vendió realizando una ganancia de más de cinco mil duros. Encontróse casi rico: esta suma, unida á otros cinco mil que tenía ahorrados de sus anteriores manejos, le daban garantías de mayor éxito en lo porvenir. Respiró con júbilo. Pensó en su hija con tranquilidad. La idea de morir pobre y dejar abandonada á Elena, habia mezclado siempre al dulce brebaje de su amor paternal un grano amargo de remordimiento.</p>
 				<p>—Engendrar un hijo y dejarle pobre, es el acto de egoísmo más brutal... Pero señor, ¿es posible que esta ¡dea no mate todos los días á un padre?</p>
 				<p>A la abundancia siguió el lujo, y Elena pudo dormir en un bonito lecho de madera amarilla y peinar sus hermosas trenzas delante de un tocador de boj con sus candeleros provistos de velas de parafina. Aumentóse la servidumbre de la casa con una criada, y la vieja Quiteria ascendió en categoría á la de ama de llaves. Donde menos se notó la prosperidad de D. Juan Solo fué en su persona, porque únicamente en los dias muy señalados y festivos abandonaba los trapos de su ordinario uso y se vestía un largo levitón que casi le llegaba á los talones. Todos los esfuerzos seductores de Elena iban encaminados á operar en D. Juan Solo la moditicacion que ya habia conseguido en la casa; pero encontraba dulce resistencia en el viejo. Decia él:</p>
@@ -541,8 +566,8 @@
 				<p>No pudo D. Juan Solo hablar entónces, porque sus sentimientos estallaron impetuosos y rebeldes. Seguía estrechando la mano de Elena, que, fríay abandonada, era como la mano de una estatua. Pocos minutos después empezaron una conversación llena de números. El amor del padre se expresaba en cifras, y la hija, indiferente é incapaz de comprender lo que en el pecho de ). Juan sucedía, clavaba en él una á una todas las espinas de hielo de su condición.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0384_chap12">
-				<head>XII</head>
-				<head>El padrea, la hija, el amor y la culebra</head>
+				<head xml:id="ne0384_head_022">XII</head>
+				<head xml:id="ne0384_head_023">El padrea, la hija, el amor y la culebra</head>
 				<p>Henares era de Sevilla. Habia venido á Madrid en busca de una posicion que le negaba la provincia: allí adquirió hábitos de lujo y abundancia en la casa de su tio D. Hermenegildo Recarildo y Henares, el ganadero que toros más bravos y hermosos tenía en toda la tierra española. Pero cuando murió D. Hermenegildo quedóse Henares en las astas del toro de la miseria. Recogió sus pequeñas alhajas, su ajuar de muchacho elegante de provincia, y vino á la Corte en esa edad en que si no se tiene una posicion conquistada, no se alcanza ya por ¡os medios del éxito justó. Sentia él la nostalgia del gran mundo, y sus relaciones de Sevilla le colocaron en una estrecha situación donde mucho sufrió su amor propio. Obligado á vestir bien, y careciendo de todo recurso pecuniario, hubo de vivir derritiendo sus alhajas. Un mes le mantuvo á flote una sortija de brillantes. Vivía en un angosto zaquizamí de la calle de la Aduana, teniendo en su oscuro recinto por todo mueblaje una silla y una cama. Si quería leer de noche, en la cama, tenía que poner la vela de mala esperma hedionda sobre la silla. Experimentó esas pequeñas miserias que matan, porque son una rueda de menudos garfios que vienen á herir suavemente uno después de otro, llevándose la sangre y la salud. Debia á la lavandera dos duros, y para que le continuase fiando se veia obligadoá adularla. ¡Humillación horrible! También se hallaba precisado á adular á la vieja dueña de la casa por idénticos motivos. Iba devorando cada dia un pedazo de su dignidad. El lado más repugnante y triste de la miseria de Madrid es este que en las poblaciones pequeñas se desconoce: una camisa planchada, un par de guantes, un sombrero nuevo, un detalle cualquiera del traje hace sufrir al que no le tiene humillaciones lastimosas, y puede decirse que la dignidad de muchos hombres tarda aquf en caer lo que tardan en agujereársele las botas. Henares fué transigiendo con estas vergüenzas de la vida. Adquirió el aplomo de la costumbre, y bajo la ceceosa habla y los modales correctos del señorito andaluz, despuntó algo de la naturaleza de Gil Blas ó de D. Pablos. Hubo, con todo, un momento en que la catástrofe sobrevino. Los pequeños acreedores le cercaron. Cayatte el zapatero francés, O'Donne el sombrerero, el sastre Manta-ño, se reunieron una mañana á la puerta de la casa de su deudor y allí le esperaron. Cuando salió Henares, vestido tan elegante como solía, ocurrió una de esas escenas que no pueden recordarse sin vergüenza y sonrojo. Toda la vecindad se enteró de que allí vivía un caballero de industria, y los porteros de las cercanías pudieron hacer comentarios sobre esos señoritos hambrientos y desvergonzados que bajo una apariencia de duques llevan el estómago vacío y el corazon podrido. Aquí se desvanece la figura de Leandro Henares, y durante mucho tiempo nada de él nos dicen nuestros apuntes. Una vez se le vió á la puerta del Suizo y otra tomando café en la Iberia; luégo se hicieron más frecuentes sus apariciones y vino á ser, por fin, uno de tantos en esc ejército de la holganza viciosa, alimento y sosten de los cafés y <seg rend="italics">restaurants</seg> á la moda. Así como en la generación degradada y pobre de Felipe IV eran las gradas de San Fermin escaparate y muestrario de todas las variedades de la miseria innoble, han venido á ser estos sitios del Madrid moderno especie de hervideros de esa gentecilla engendrada por la vanidad hijo-dalga y perezosa de nuestros abuelos y el excepticismo brutal y frió de nuestra época. En San Fermin habia las golillas almidonadas en falso, los espadines sin hoja, las chupas sin forro, las medias con puntos remediados con tinta y todas las tragicómicas engañifas de una podredumbre adecentada: de igual manera estos lugares de Madrid son hoy una exposición curiosa y un barómetro del país. ¿Qué hace allí aquella juventud dorada? ¿En qué se emplea? No es ya la juventud que iba al café Lorentini á soñar con la libertad, ni la que en La Fontana de Oro plagiaba á los convencionales. Los de ahora no tienen ya fé alguna y su conversación es la del que ya no cree ni en sí mismo! Sentía D. Juan Solo por tales bichos una repugnancia invencible, y decia que al ver á uno de ellos experimentaba la misma impresión que si hubiese pisado un sapo.—Henares desempeñaba sin embargo, algún cargo interesante y se le veía frecuentemente con manojos de papeles de color de rosa, que por ser papel de la Deuda, no aquel agradable color, sinó el de las desesperaciones le correspondía. Habíase familiarizado con el <seg rend="italics">caló</seg> de la Bolsa y estaba fuerte en el manejo de ese idioma especial, sin moral ni gramática, que forma el diálogo de los centros bursátiles y de los cafés políticos. Vestía con afectada elegancia, y una variación casi diaria de pantalones le daba entre los necios aire de prócer, porque el guardaropa es hoy el archivo de la heráldica. A las tres se le encontraba indefectiblemente en la Bolsa, de donde salia con su jefe D. Juan Cláudio Malaña. Ibanse en el coche de éste, que al partir al galope de sus caracoleantes caballos dejaba á los gurrupetos y menudos traficantes de la Bolsa entregados á misteriosos comentarios en que andaba la honra de los dos caballeros poco ménos que por el santísimo suelo. D. Juan Cláudio parecía demostrar mucha consideración á Henares, y hasta sonreía con gozo cuando observaba sus artes en el mareo de la Bolsa.</p>
 				<p>Tal era el hombre de quien se habia enamorado Elena.</p>
 				<p>D. Juan Solo y ella salieron para Aranjuez como lo tenían determinado. Elena se hizo prometer por Leandro que iría á verla, y no pudo dominar su tristeza cuando se vio encerrada en el wagón y arrancó la locomotora. Aran-juez hallábase entonces vestido con todas las galas de suj bosques. La primera vez que Elena se encontró en aquellas avenidas que se pierden de vista, y cuyos árboles enlazando allá arriba sus ramas producen la ilusión óptica de que vá estrechándose el camino y ellos confundiéndose en ángulo de sombra, no fué dueña de contener un singular y extraño impulso de llanto que acudió á sus ojos. ¡Inexpli cables contrasentidos de la naturaleza! ¡Cómo un corazon tan frió puede al mismo tiempo ser tan sensible! Ella se sorprendió distintas veces en flagrante delito de tontería, porque el vuelo de un pájaro, y la carcajada de una fuente, y el chirrido metálico de un insecto, y el campanilleo de la res vagabunda, y un grupo de niños jugando sobre la hierba, y un nido de golondrina roto, y una paloma que se alisaba el plumaje en la esquina de un tejado... y otra porcion de nonadas que vió y consideró en su primer pasco, convirtieron éste en rosario de emociones dulcísimas y nunca por ella sentidas. Y luégo, llegado el crepúsculo, que allí es siempre entre nubes, sus ruidos de campanas y sus canciones de labradores que vuelven al pueblo, y más tarde la noche rutilante y esplendorosa de estrellas y chispazos de luz, y aquel silencio hondo y profundo, y el sueño de Aranjuez, y los estallidos de la madera espiados por oido vigilante, iban llevando el alma de Elena por una escala mágica, al fin de la cual se hallaba la estatua del Amor.</p>
@@ -555,8 +580,8 @@
 				<p>La noche encerró aquel amor en un lecho de sombra.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0384_chap13">
-				<head>XIII</head>
-				<head>Así que hacen los grandes hombres</head>
+				<head xml:id="ne0384_head_024">XIII</head>
+				<head xml:id="ne0384_head_025">Así que hacen los grandes hombres</head>
 				<p>¿Y qué? ¿Es cosa de que abandonemos para siempre á aquel animoso Pepin Carandia? ¿Nó, y cien veces nó? <seg rend="italics">Cantemos á los pequeños,</seg> como dice el poeta.</p>
 				<p>Llegó un dia en que Pepin no pudo sufrir más las reprimendas de la Robustiana y los vergajazos de D. Juan Cláudio, y se salió bonitamente del corral de las Peñuelas. como D. Quijote se salió del corral de su casa, dispuesto á abrirse camino en el mundo y por de pronto un plato con algo que comer. Acertó á ser dia de lluvia, y las gentes que pasaban por el puente de Toledo eran escasas. Pepin Carandia iba trotando, las manos en los bolsillos de la blusa, remangados los pantalones por miedo al barro, y en los piés unos borceguíes llenos de clavos que sonaban como herraduras. Apénas habia crecido el muchachuelo, y las ropas no se le habian quedado cortas; el sombrero habia perdido toda su juventud y atravesaba una vejez horrible, llena de disgustos y mojaduras. Como llovia y los latigazos de agua herían á Pepin en el rostro, dijo con mal humor echando mano al ala del sombrero:</p>
 				<p>—¡Cuerno! ¡Maldito seas! No sirves pa ná.</p>
@@ -589,8 +614,8 @@
 				<p>Pepin, á pesar de que llevaba en la cabeza dos arrobas lo menos de peso, dió un brinco é hizo una zapateta de alegría.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0384_chap14">
-				<head>XIV</head>
-				<head>Así, asi se hacen los grandes hombres</head>
+				<head xml:id="ne0384_head_026">XIV</head>
+				<head xml:id="ne0384_head_027">Así, asi se hacen los grandes hombres</head>
 				<p>Pepin Carandia sentia anhelos de gloria. Pues qué, ¿porque duerma uno al raso, buscando un banco de la Plaza de Oriente por cama, no puede sentir dentro del alma los desperezos salvajes de la ambición? Sobre todo, le desagradaba el vivir errante y sin casa, siendo cada comida un problema, esclavo del estómago, sin libertad para las empresas grandes, empeñado y ocupado en las pequeñas. A los tres dias de su escapatoria se halló, sin saber cómo en una barbería de la calle de Embajadores en clase de aprendiz, llevando al maestro y al oficial el agua caliente, lim* piando las navajas, pasándolas delicadamente por el ensebado cuero del afilador. La blusa azul que trajo de su pueblo fué sustituida por un levitin que perteneció al hijo mayor del barbero, previo recorte de las mangas y amputación de los faldones. Raparon á Pepin el pelo, que era nc-uro, brusco y abundante, y le obligaron á lavarse las manos, que las tenía muy sucias de andar con las cabezas ensangrentadas de los carneros. El oficial de la barbería era un mozancon que llevaba el pelo muy peinado, chalina del color más chillón en el cuello, y chalecos abigarradísimos. Leia ciertos papeles que se meten por debajo de las puertas con el presuntuoso título de novelas, y á esta erudi-don literaria suya se’debió el que á Pepin le llamasen D. Carandia, porque en uno de aquellos libros se hablaba de un Infanzón terrible á quien el autor del engendro puso tan inverosímil nombre.</p>
 				<p>Era la barbería de piso bajo y estaba frente por frente de la Inclusa. Sus parroquianos sólo se afeitaban una vez por semana, y esta habia de ser el sábado ó el domingo. Eran albañiles del barrio, carboneros de las inmediaciones, romaneros del mercado de la Cebada, cocheros de punto y otras variedades del género. El resto de la semana pocas pisadas de parroquianos se oian sobre el entarimado, sucio del polvo ó el lodo de la calle. En las tablas de mármol, que eran tres, yacian las navajas, las tijeras y los burdos cosméticos. El maestro, que solia marcharse de tertulia á la tienda de ultramarinos de enfrente, era natural de Ri-vadavia y vivia en Madrid desde el año . Usaba de continuo un levitin desnaturalizado y un pantalón estrecho de grandes cuadros blancos y negros. Gustaba mucho de hablar de política, era siempre de oposicion y se suponía conocedor de los secretos del Ministerio.</p>
 				<p>—¡Yo cazo largo!—se decia cerrando un ojo y poniéndose el índice delante de la nariz.—¿V. cree que O’Don-nell?... ¿O’Donnell? ¡Bueno está O’Donnell!</p>
@@ -601,8 +626,8 @@
 				<p>Pepin Carandia recibe su primera impresión, ele amor</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0384_chap15">
-				<head>XV</head>
-				<head>Peín Carandia recibe su primera impresión de amor</head>
+				<head xml:id="ne0384_head_028">XV</head>
+				<head xml:id="ne0384_head_029">Peín Carandia recibe su primera impresión de amor</head>
 				<p>El dia en que cumplió los catorce años, le dijo la maestra:</p>
 				<p>—Chico, vete á misa.</p>
 				<p>Tenía cinco reales ahorrados, una gorra de seda y un par de borceguíes muy buenos con sus «ringleras de tachuelas», como él decia. Los cinco reales, en una peseta y un real de á ocho, teníalos escondidos dentro de la <seg rend="italics">Mujer adúltera</seg>, y después de vestido pasó la suma á sus bolsillos.</p>
@@ -616,7 +641,7 @@
 				<p>A pesar de que las campanillas de plata indicaron que iba á consagrarse el pan ácimo, Pepin no las oyó, preocupado, embebecido, embelesado y ciego como lo estaba mirando, devorando con los ojos á la niña. El altar se apaga'-ba, el cielo se oscurecía, las flores desechas por manos invisibles caian de sus pétalos, perdía el mundo sus encantos... porque todos ellos se resumían, se sintetizaban y venían á simbolizarse en el rostro de ella... Cuando Pepin salió del templo no supo por qué sus piernas se habían puesto en movimiento. Supo sólo que iba detrás de la niña de cabecita aguileña; la cual, así que pisó la calle, quitóse el pañuelo de la cabeza; y fué prodigio como el de ver á un nardo quitarse su envoltura de leves telillas para más airosa sacar la corola á ver el sol. En la calle de Carretas ocurrió una cosa sensible. La gente que venía se encontró con la que iba. Hubo un remolino de cabezas y sombreros... y en medio de él perdióse la niña del pelo rubio. Pepin la buscó con la vista arriba y abajo, por la acera de enfrente y por el cielo... ¡Inútilmente! Por ser el dia de su santo, experimentó Pepin la tristeza más honda que hasta cn-tónces habia experimentado.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0384_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0384_head_030">XVI</head>
 				<p>¡Ay de nosotros!</p>
 				<p>Dos dias estuvo D. Juan Solo ausente de Aranjuez. Cuando regresó le aguardaba una noticia terrible. Su casa estaba cerrada á piedra y lodo. Llamó con el puño en la puerta, golpeando ansioso. No llamó con el puño, llamó con el alma, porque todas sus funciones intelectuales, toda su sensibilidad, su voluntad entera se resumieron en el al-dabonazo, que resonó en la puerta y se repercutió allá dentro en las vacías habitaciones como un eco que decia: «¡No hay nadie! ¡Nadie... nadie!»</p>
 				<p>—¡¡Elena!!—gritó D. Juan.</p>
@@ -642,7 +667,7 @@
 				<p>—A Madrid... á Madrid... allí estará... Yo levantaré la tapa de la tierra para encontrarla.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0384_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0384_head_031">XVII</head>
 				<p>El gran motín</p>
 				<p>La mañana era caliginosa y nublada. Tras el toldo ceniciento de las nubes se adivinaban las oleadas de fuego de un sol canicular. En Valdemoro la estación se encontraba llena de gente. En medio de un grupo numeroso, un guardia civil herido hablaba con indignación, agitando sus manos en el vacío, mientras una mujer le anudaba una venda en la frente.</p>
 				<p>—¡Esacanalla, esos presidiarios!—decia el guardia.</p>
@@ -688,8 +713,8 @@
 				<p>Pero D. Juan no espero que se la dieran... Echó á correr, y su desgarbada persona mas fea pareció y más ridicula bajo el decrépito y fenomenal sombrero de copa y en mangas de camisa.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0384_chap18">
-				<head>XVIII</head>
-				<head>¡Fuego! ¡Fuego! ¡Fuego!</head>
+				<head xml:id="ne0384_head_032">XVIII</head>
+				<head xml:id="ne0384_head_033">¡Fuego! ¡Fuego! ¡Fuego!</head>
 				<p>Madrid ardía. Sus calles céntricas desiertas, sus extremos llenos de hombres que luchaban. La sangre habia huido del centro hácia la periferia. En la plaza del Progreso una horrenda carnicería llenaba el suelo de desastre. Don Juan Solo pasó por ella, indiferente al peligro, cruzó los fuegos de la guardia civil y los rebeldes. Iba á la calle de la Encomienda, donde vivía una hermana de su criada Quiteria, á ver si allí tenía noticias de su hija.</p>
 				<p>—¡Dios mió!—pensaba. — Parece que mis pensamientos se han salido de mi alma y andan sueltos por Madrid...</p>
 				<p>El estupor habia helado su espíritu y no le dejaba darse buena cuenta de lo que en Madrid ocurría. ¿Qué es estoí ¿Andan á tiros? ¿Se matan unos á otros? ¿Por qué?</p>
@@ -746,15 +771,15 @@
 				<p>Un lamento cortó la palabra á D. Juan.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0384_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0384_head_034">XIX</head>
 				<p>El fin do la batalla</p>
 				<p>La revolución, en tanto, habíase propagado por Madrid. Oíanse tiros en todas partes. En la plazuela del Progreso la lucha era horrible. El mónstruo de las guerras civiles se abrevaba en sangre. Corrían grupos de hombres descamisados, horrendos, heridos, empuñando el arma con crispada mano de ódio. Don Juan Solo víó en la calle de la Esgrima un viejo miserable, de barba gris, que llevaba en la mano una pistola de arzón montada. Iba en mangas de camisa, tiznados de sangre los brazos, caminando con una serenidad heladora y dejando rastro de su marcha con los piés que goteaban sangre. Cada paso era un alarido sofocado por la ira. Detrás de él, una chicuela como de diez años, corría zancajeando, harapienta, medio desnuda.</p>
 				<p>—¡Padre, padre!... ¡Ay, que le van á matará V.!—lloraba la muchacha.</p>
 				<p>Al desembocar en la plaza del Progreso oyóse caracoleo ruidoso de caballos. Un peloton de húsares galopaba disparando sus pistolas sobre el pueblo. Fué como una tromba de fieras terribles. Don Juan Solo vió vacilar á la niña como vara de azucena que troncha el pié del transeúnte, y sintió en su costado derecho un latido horrible, algo entre golpe y herida, más bien que por el dolor, advertido por el chorro de sangre caliente que saltó á su rostro. Cayó al suelo, dando de bruces sonoro y mortal golpazo... Parecióle que el luminar del dia se apagaba, que las casas perdían su aplomo, que se despeñaba por una pendiente sin fin, que se quedaba sin sangre y que por sus venas corria burbujeando el viento... Un calor hórrido calcinó sus pupilas, un frió de nieve irradió de su corazon... Vió los árboles de la plaza del Progreso bailar sobre un fondo de color de sangre, como esqueletos negros y rígidos. Vió luego una cabalgata que cruzaba rápida galopando, y al frente de ella, sereno, impasible, lúgubre... un general, un hombre extraño, de pelo ceniciento, de bigote grueso y aplomado... O’Donnell... Creyó que era una estatua de ceniza, y como la pesantez de sus párpados le privó de la facultad de ver, cuando desapareció de sus pupilas imaginó que el hombre de ceniza se habia disuelto en la atmósfera.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0384_chap20">
-				<head>XX</head>
-				<head>Pepin Carandia afeita á un personaje</head>
+				<head xml:id="ne0384_head_035">XX</head>
+				<head xml:id="ne0384_head_036">Pepin Carandia afeita á un personaje</head>
 				<p>Y cuando la noche bajó á las calles pudo ver su rostro en los anges de un espejo de rojo cristal. Había en las esquinas huellas de manos sangrientas que habían arañado el yeso áíftes de caer. Habia en los tejados, detrás de las chimeneas, colchones apostados allí para hacer fuego ocultos en ellos. Habia en las aceras proyectiles aplastados-especie de medallas de la muerte! El terror se habia grabado en todos los rostros. La derrota del pueblo decia que la sangre no habia cesado de correr.</p>
 				<p>Pepin Carandia no se había atrevido á salir de su cuchitril. Allí escuchó las alternativas de la lucha y siguió sus trámites con paciencia. En la tienda no dejaba de entrar y salir gente. Unos venían á traer noticias, otros á pedirlas. El barbero de Rivadavia tenía fama de liberal y revolucionario, y le aconsejaban que se escondiese porque la policía andaba ya echando mano á muchas gentes del barrio. El barbero se resistió á esconderse; pero tanto se lo rogaron, y tantas ponderaciones hicieron del peligro que corria, que al cabo se decidió á buscar un rincón seguro. Además, dígase, porque así es la verdad, que no influyó poco en la determinación del barbero el gusto de pasar plaza desujeto principal y conspirador, para cuya hcróica carrera le habia despertado mucha vocacion la diaria lectura de <seg rend="italics">La Iberia.</seg> Pepin, medio tapado con las ropas de su lecho, de donde nadie habia ido á sacarlo, oyó que la gente de la tienda se iba marchando poco á poco. Luego el barbero anduvo en el cajón del dinero sacando lo que contenia... luego sus pasos resonaron rápidos en las planchas de madera del dintel... y el silencio dominó en la barbería. Pepin esperó mucho rato. La puerta se habia quedado abierta, y el viente-cilio caloroso de aquel mes de Junio llegaba hasta Pepin... Decidióse á bajar. Halló los sillones desordenados, y en las tablas de mármol de las mesas varias botellas de vino vacías. Aún quedaba en la atmósfera de la calle olor de pólvora, y la soledad de la vecina Ronda era completa. Pepin encendió una luz. En aquel momento entró en la barbería, asustado é inquieto, un hombre vestido con blusa azul, pero cuyo rostro, cubierto de hermosa barba negra, y cuyas manos finas y delicadas decían que no era el humilde traje de obrero propio y usual de la persona que lo llevaba.</p>
 				<p>—¿Puedes afeitarme?—dijo el hombre de la blusa á Pepin.</p>
@@ -819,8 +844,8 @@
 				<p>—Doctor Carandia, adiós.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0384_chap21">
-				<head>XXI</head>
-				<head>Detrás de la camilla</head>
+				<head xml:id="ne0384_head_037">XXI</head>
+				<head xml:id="ne0384_head_038">Detrás de la camilla</head>
 				<p>Cuando Pepin volvió al mundo de las realidades eran las nueve de la noche, y una neblina densa se paseaba por las calles desiertas y lóbregas. Oyó en la acera pisadas fuertes de hombres que llevan en sus hombros peso grande y patalean afirmando la planta ántes de moverse, y cuando su curiosidad le llevó á la puerta de la barbería, la camilla, pues una camilla era, se detuvo, y sus conductores —dos fornidos mozos astures de la vecina casa de Socorro (6.° distrito)—lanzaron un par de suspiros como fuelles de fragua que toman aliento.</p>
 				<p>—¿Tienes agua y vinagre?—dijo uno de ellos á Pepin. .</p>
 				<p>Este trajo lo que se le pedia, y el mozo más humano de los dos levantó la cubierta de hule de la camilla, y apoyando la cabeza del herido que iba dentro en su brazo, dióle de beber algunas gotas del refrigerante brebaje.</p>
@@ -874,8 +899,8 @@
 				<p>—Elena es la mujer. Comete el crimen y se esconde..... Andan muy cerca la maldad y la hiprocresía... La manzana del paraíso estaba vecina de la higuera... ¡Viejo moribundo! ¿Eras de los nuestros? ¿Te has batido en las barricadas?... Te envío un abrazo, ya que dártele^no puedo porque estoy atado... Chiquillo, escucha este título de una poesía que empiezo á hacer: «El abrazo que dió un hombre maniatado...» El reló canta las doce... ahora acaba el día grande... Hoy es el 22 de Junio..V22 Germinal... ¡Mueran los polacos! ¡Mueran los unionistas, esos lobos disfrazados de corderos! ¡Abajo los resellados! O'Donnell es Tiberio con forro de Ignacio de Loyola...M¡ amigo Laudenes ha muerto en el fuego... Una bala es un Dios de plomo... Resuelve lo insoluble. Laudenes debia morir de pena y ha-muerto de bala...Una bala es una pena de plomo... Si me dejase Luisa habría otra revolución...</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0384_chap22">
-				<head>XXII</head>
-				<head>Rincón de paraíso</head>
+				<head xml:id="ne0384_head_039">XXII</head>
+				<head xml:id="ne0384_head_040">Rincón de paraíso</head>
 				<p>Cerca del Retiro, en una calle de nueva construcción, por donde asentó sus cabeceras entóneos lo que poco después fué Barrio de Salamanca, habia un nido. Era un piso cuarto...—nido con casero, nido con buho. Todo era allí nuevo, bonito, pequeño, resplandeciente. El papel de grandes ramajes dorados; los muebles escasos, pero elegantes, de madera de boj barnizada. El boj es la madera del hogar feliz, pobre y nuevo. ¿Veis pasar por la calle una sillería de boj en la espalda de un mozo de cuerda? Pues por ahí anda el amor. En esas sillas se van á dar besos. El banquillo es el mueble del asesino. El taburete de boj es el escabel del amor.</p>
 				<p>Pepin habia aquel domingo salido de paseo. Era el domingo o de Junio de j86C, uno de los más hermosos del año. El miedo encerraba aún á las gentes en las calles, y el Retiro estaba solo. Habia en los árboles cabeceo dulce de ramas agitadas por el viento, murmullo de aguas despeñadas por los estrechos cauces—flautas de cristal que cantan eternamente.—El gorrion es un pájaro esencialmente madrileño. Vive medio año en un tejado, y medio año en el Retiro. ¡Sensual cortesanillo que tiene posesiones de verano! Miles de ellos piaban en aquel árbol negro que Pepin contemplaba embelesado. Aquel árbol era un cedro de aérea copa, alta y gallardísima. Frente habia una plazuela sobre cuya arena menuda advertíanse las huellas que habían dejado los juegos de los niños. Más allá mostrábase entre árboles un pedazo de estanque, y por este pedazo de agua tersa y azulada, solia pasar una pareja de cisnes haciendo eses con el largo cuello, de plumón blando cubierto. El cisne es un pájaro ingerto en serpiente. Arriates de flores llenas de luz, perfume y dicha; manojos de pensamientos multicolores, dominando—¡como en el mundo!—los negros; en el aire un hilo de araña flotando, como el cabello de una ninfa ó como un rayo de sol que se ha caido á la atmósfera terrestre. Y sobre todo esto, combinándolo en angélica armonía, una ¡dea de plenitud, de abundancia exuberante, de desbordamiento de los ocultos raudales prolíficos del estío: idea que embriagaba á Pepin y le daba miedo al mismo tiempo. El lujo del campo le produjo vergüenza de su mala vestimenta.</p>
 				<p>—Esas flores que se visten de nuevo todas las primaveras son más felices que yo... Dios las dá traje, y á mí no me le dá... Nunca le falta el grano de trigo al gorrion; pero le falta el pedazo de pan al pobre.</p>
@@ -894,8 +919,8 @@
 				<p>Pero en aquel momento Elena y su novio se retiraron de la ventana dejando ésta abierta, y dos golondrinas que encima de ella y en un hueco del tejado habían hecho su nido, volvieron de un charco de barro del camino con dos motitas de tierra húmeda en sus picos.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0384_chap23">
-				<head>XXIII</head>
-				<head>Un nuevo sacrificio</head>
+				<head xml:id="ne0384_head_041">XXIII</head>
+				<head xml:id="ne0384_head_042">Un nuevo sacrificio</head>
 				<p>Cuando supo D. Juan Solo por Pepin que su hija vivia, exclamó:</p>
 				<p>—¡Soy feliz!... Vive... Ya puedo vivir yo.</p>
 				<p>Quiso levantarse del lecho donde le habian colocado en una sala de distinguidos del Hospital de Atocha, pero no lo consintió el practicante.</p>
@@ -961,8 +986,8 @@
 				<p>¿Hasta entonces nó? ¡Oh, qué vil es la opinion de los viles!</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0384_chap24">
-				<head>XXIV</head>
-				<head>Curcius: Homero: Baco</head>
+				<head xml:id="ne0384_head_043">XXIV</head>
+				<head xml:id="ne0384_head_044">Curcius: Homero: Baco</head>
 				<p>Conoció D. Juan Solo á Henares y le pareció excelente, puesto que á Elena le gustaba. La reconciliación llegó á punto y no se habló más del pasado, de aquel pasado tan odioso para el banquero Malaña. El dia de la boda, algo restablecido D. Juan, pudo ir ála iglesia con su mejor ropa. También fué de la partida el insigne Pepin, que salió para siempre de la barbería y empezó sus estudios de gramática castellana y latina en la Escuela Pia de San Antón. Elena al encontrarse por primera vez con su padre se puso roja de vergüenza y lloró mucho, pero D. Juan la consoló, diciendo que no habia para qué acordarse de un suceso de que la principal culpa era suya. La alegría volvió á los ojos de Elena y el rubor se alejó con viento fresco. Leandro la amaba, ¿y quién 110 la amara si era tan bella? Con la dicha acabó de reventar el boton de rosa. La aurora se encendió en medio dia, y en el rostro y en el seno de Elena la hermosura, el vigor y la lozanía se exhibieron triunfantes. Aun cuando Elena se negaba á celebrar su boda por motivos fáciles de comprender, D. Juan quería que su hija se casase como las hijas de los demás hombres. Determinóse una expedición al campo. Poca gente y bien avenida. Alegría modesta y económica. Comida abundante, un par de coches, vino excelente y regreso á Madrid cuando el sol se pusiese. Leandro no gustó mucho del programa que era algo <seg rend="italics">cursi</seg>—él empleó mentalmente esta palabra que empezaba á oirse entonces—pero hubo de ceder por no disgustar á D. Juan Solo. El tenía sus planes, planes que hoy no se refieren por dejar tiempo al tiempo y no perturbar una boda con cosas sérias. Otra vez será.</p>
 				<p>Cuando salian para el Vivero las seis ú ocho personas, invitadas, vió D. Juan en medio del camino á un hombre vestido con ámplio gaban de verano que le arrastraba casi, el cual hombre así que vió á D. Juan, le dijo:</p>
 				<p>—¡Oh, mortal venturoso! Troyano padre de la dulce Elena. ¿Está V. ya curado de su dolencia? Al patriota herido ha seguido el patriota regocijado.</p>
@@ -995,8 +1020,8 @@
 				<p>—No eres Faetón, cochero. Eres Neptuno. No vamos en un lando sinó en el carro de conchas de tortuga... La venganza es el placer de los dioses, y la lluvia la desesperación de los mortales sin paraguas... ¡Un genio sin tabaco y sin paraguas! ¡Horror!... ¿Sabes por qué se ha hecho la revolución? Porque yo no tenía tabaco... Dios quiere aguarnos el vino...</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0384_chap25">
-				<head>XXV</head>
-				<head>Vamos á prisa.</head>
+				<head xml:id="ne0384_head_045">XXV</head>
+				<head xml:id="ne0384_head_046">Vamos á prisa.</head>
 				<p>La boda de Elena y Leandro fue jalón que marcó una etapa nueva en la vida de D. Juan Solo. Cediendo á su hija todos sus bienes, hubo de romper sus relaciones comerciales, y quedó aquella actividad sin empleo, parada aquella inteligencia.</p>
 				<p>Yo—pensaba D. Juan—soy como árbol que ha dado todo el fruto... Sólo sirvo ya de estorbo.</p>
 				<p>Pasaba dias enteros sin salir de su casa, un sotabanco xle la calle de Juanelo, en que la portera le guisaba y servía, bien malamente por cierto. Todas las semanas comia una vez con su hija, que le recibía llena de júbilo. Leandro Henares no solia estar en casa á tales horas. Comia en una fonda á la moda, por exigirlo así sus ocupaciones continuas. El sacrificio llevado á cabo por D. Juan Solo, áun cuando nacido de un sentimiento sublime, le hizo gozar de fama de loco entre sus conocidos. Habia asegurado una renta vitalicia de 10.000 rs. en el Banco de España, y la <seg rend="bold">cobraba por </seg>trimestres. Eran no duros los que cobraba cada tres meses, y de ellos hacía tres partes: una empleaba en pagar su mísero tugurio y su pobre comida; otra que invertía en regalar pequeñas fruslerías á su hija, y el resto que ahorraba echándolo en una hucha de barro que compró por cuatro cuartos.</p>
@@ -1038,8 +1063,8 @@
 				<p>—¿Que quéme parece? ¡Mecachis! ¡Vaya un lio de huesos, y nervios, y músculos, y demonios encadenados!... Yo no sé cómo Dios se entiende con tanto hueso y tanta venita pequeña.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0384_chap26">
-				<head>XXVI</head>
-				<head>Los polvos de la madre Celestina</head>
+				<head xml:id="ne0384_head_047">XXVI</head>
+				<head xml:id="ne0384_head_048">Los polvos de la madre Celestina</head>
 				<p>Pepin y D. Juan compraron dos anfiteatros de la peor fila. Pero á Pepin le parecieron magníficos, porque jamás habia soñado más deslumbrante espectáculo que el que ofrecian el patio del teatro, lleno de gente bien vestida, los palcos desbordando mujeres descoladas, y el paraíso hormigueante de ojos mirones, de bocas jamás calladas, de cabezas femeniles cubiertas de pañuelo por cuyo principal pliegue asomaba el rodete artificioso. 1 emplaban sus violines ios músicos, y una á una iban encendiéndose las candilejas del proscenio. Por bajo el telón veia Pepin pasar piés veloces que le llenaban de asombro y curiosidad. Eran, fin duda, de los carpinteros y tramoyistas que estaban aderezando la escena; pero á Pepin le maravillaban, y hubiese dado su libro de <seg rend="italics">Física</seg> porque le dejasen entrar entre bastidores para ver de cerca el complicado misterio que el telón le ocultaba. D. Juan Solo se quitó el apabullado y mísero sombrero de copa, y se le colocó sobre las rodillas. El cráneo piriforme quedó al descubierto, y las hebras de pelo plateado que trataban en vano de tapar el reluciente hueso. Hacia las orejas conservábanse negras dos crenchas como rabos de conejo; pero el resto de la cabellera parecía un puñado de hilazon de estopa puesto sobre una bola de billar. El hábito de sufrir contrariedades grandes y pequeñas y el continuo dominar los impulsos del alma, que son la fuerza ciega del sér racional, como la gravedad lo es en lo inanimado, habian centuplicado las arrugas del rostro de D. Juan, y podia estudiarse ahora un curso completo de orografía en el cutis desigual, estirado y enjuto del mísero padre. Más de treinta líneas, todas originarias de arruga, culebreaban en su frente: una cordillera pirenáica de protuberancias y excrescencias, formadas por la contracción de los músculos maxilares, descendía desde los párpados por las mejillas. En el mentón, saliente como el de los Felipes de Austria, habia una partidura somera que se profundizaba bajo la barba para dar ingreso al cartílago de la nuez; nuez protuberante y marcada. La navaja habia curtido el pellejo, dando á los cañones de la barba dureza y rigidez, y como D. Juan solia pasarse, por olvido y no por incuria, dos y tres semanas sin afeitarse, aquellos cañones que crecían lentamente, sin llegar á trabarse nunca, daban á su rostro una penumbra sombría y lastimosa, como la que la enfermedad pone en el semblante de los que acaban de salir de su esclavitud medrosa. Su camisa habia perdido la forma primitiva en el cuello y puños. Eran, aquel una tira de lienzo, mitad alzacuello, mitad garrote, y éstos cierta mezcla de manopla de coracero y ahuecador monjil. Quiero decir, que el traje de D. Juan Solo y su aspecto físico eran cifra y estampa de todas las miserias.</p>
 				<p>La función de aquella noche era notable. Había llegado á Madrid pocos días ántes una embajada de S. M. el Emperador de Marruecos, y la Corte la obsequiaba con una función de gala. Cerrado ya el teatro de la Opera donde esta suerte de funciones es de rigor se celebren, fuá preciso apelar al teatro Español, y la embajada, compuesta de siete personajes tan empingorotados como negruzcos y feos, ocupaban lugar de respeto. Pepin iba de asombro en asombro; D. Juan de tristeza en tristeza porque la vista de aquellas damas tan lucidas le traian delante de sus ojos la imagen de Elena. Cuando el telón se alzó las facultades visuales y auditivas de Pepin se reunieron, se concentraron en el escenario.—D. Juan Solo... D. Juan Solo pegó un brinco en su menguado asiento.</p>
 				<p>—¡Dios mio!!.. ¡Dios mió!—balbuceó.</p>
@@ -1058,8 +1083,8 @@
 				<p>¿Te gusta?... Es claro, tú tienes buen gusto... Tú, serás, no comadron, sinó lo que quieras... Eres un buen chico, un buen chico, un excelente chico... ¿Ya se bajó el telón?... ¿Qué, se ha acabado esto?... La gente se marcha... Ella se retira de su palco... Es un entreacto... ¡Creo que son muy largos los entreactos!</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0384_chap27">
-				<head>XXVII</head>
-				<head>Ronda, nocturne</head>
+				<head xml:id="ne0384_head_049">XXVII</head>
+				<head xml:id="ne0384_head_050">Ronda, nocturne</head>
 				<p>Al terminarse la función, Pepin estaba como fuera de sí, medio estupefacto. Las maravillas del escenario le habian asustado. Pero aún le habian maravillado y asustado más el abismo de amor paterno que habia descubierto en el alma de D. Juan Solo. El resultado de esta lucha entre las maravillas de la tramoya y las maravillas del corazon fue una victoria de éstas sobre aquellas.</p>
 				<p>—¡Ah!—exclamaba para sí Pepin—¡Si yo tuviese un padre que me quisiera así!</p>
 				<p>—Pepin, Pepin... ¿Quieres venir conmigo?... ¡Hombre, sí, ven... Vamos á hacer una calaverada...</p>
@@ -1108,8 +1133,8 @@
 				<p>de Hortaleza siguió á Henares.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0384_chap28">
-				<head>XXVIII</head>
-				<head>Unos bailan y otros lloran: «ata os la Wda</head>
+				<head xml:id="ne0384_head_051">XXVIII</head>
+				<head xml:id="ne0384_head_052">Unos bailan y otros lloran: «ata os la Wda</head>
 				<p>-¡Dios mió!... ¡Qué perdido! ¡Qué pillo!... Es un miserable...—exclamó D. Juan al amanecer del dia siguiente, hurgando con la cerradura la llave de su aposento. ^</p>
 				<p>—¿Cómo viene V. tan tarde?—le preguntó la seña Ramona, que se habia despertado al sentir moverse las Hojas baldosas del pasillo bajo el peso de D. Juan.</p>
 				<p>-Señora-contestó D. Juan con reserva llena de dignidad,—he tenido que hacer.</p>
@@ -1123,8 +1148,8 @@
 				<p>-¡Cuándo vendrá el sol!... Hoy lo haré todo... Hoy acabaré, bien y para siempre... Es decir, que ese pillo tiene una querida, y mi Elena cree ser amada... ¡Ah, traidor. Vas á pagar todas tus vilezas juntas.</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0384_chap29">
-				<head>XXIX</head>
-				<head>Asi es el mundo</head>
+				<head xml:id="ne0384_head_053">XXIX</head>
+				<head xml:id="ne0384_head_054">Asi es el mundo</head>
 				<p>Llegó la noche, y D. Juan apareció en la Puerta del Sol después de haber oscuramente andado por los lejanos barrios, que antes habitó, de los Estudios y el Rastro. Allí compró en mísero tenducho de prendería algo que llevaba en el bolsillo del gaban y que acariciaba con su nerviosa mano.</p>
 				<p>—¡Esta noche saldrá!—pensaba,-y esta noche nos veremos las caras... ¡Ah, Sr. D. Leandro Henares!... ¡Cuenta las horas que te quedan de vida!</p>
 				<p>Llegó á la calle de Hortaleza, y delante de la casa de las bolas se detuvo indeciso.</p>
@@ -1174,8 +1199,8 @@
 				<p>Elena se habia retirado. D. Juan se dió cuenta de sí pocos momentos después. Cogió su sombrero, que habia rodado por el suelo, y tambaleándose, como ébrio, con las piernas flojas y macilentas, bajó la escalera, entre los insultos y las bromas brutales de los lacayos, que le empujaban y le dieron con los codos hasta dejarlo solo, solo, solo, en medio de la calle.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0384_chap30">
-				<head>XXX</head>
-				<head>Véase el capítulo I</head>
+				<head xml:id="ne0384_head_055">XXX</head>
+				<head xml:id="ne0384_head_056">Véase el capítulo I</head>
 				<p>—Ya sabia yo que le iba á encontrar aqui.</p>
 				<p>—¿Quién me habla? ¡Dios mió!... ¡Sueño andando, sueño despierto, sueño siempre! ¿Es que he perdido la cabe za? Los viejos chochean y yo he entrado ya en ese período... ¿Quién eres?    _</p>
 				<p>—No sueña V... Soy Pepin... He venido á buscar á mi señor D. Juanito.</p>
@@ -1227,13 +1252,13 @@
 				<p>Llego a su casa dando sollozos, y al entrar en la alcoba se arrojó en el divan de anea arrebatado de dolor.</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0384_chap31">
-				<head>XXXI</head>
-				<head>Lluvia</head>
+				<head xml:id="ne0384_head_057">XXXI</head>
+				<head xml:id="ne0384_head_058">Lluvia</head>
 				<p>Sin darse cuenta de su presencia, ignorando si vivía, si dormía, si soñaba, D. Juan Solo permaneció en aquel divan hasta el alba. Entónces experimentó en el pecho un ahogo que le mataba, falta de aire, agitaciones incomprensibles en el corazon. ¡Creyó llegada su última hora! Casi arrastrándose fué hasta el balconcillo del patio, y se echó de bruces en el antepecho. Sonó en la caja de su pecho el golpazo de la caida. D. Juan aspiró con ánsia, con delicia el aire húmedo del alba lluviosa. La luz nueva, empapada aún de átomos de la sombra, dibujaba en los altos tejados líneas azuladas que se desvanecían luégo en matices rosá ceos. Oíase el andar torpe y lento de la muía que movía el torno de la vecina tahona, y de rato en rato la voz del gañan que la arreaba. Los sombrajos y golpes de humedad que manchaban las paredes, tenían bajo la acción difusiva de la luz incierta del amanecer aún más triste aspecto que en pleno dia. Empezó á llover: fueron primero gotas redondas, pequeñas, que caian fuertes, sonando en cristales y tejas; luégo agujas de cristal menudas, frias, que hacían invisible herida para llenar de hielo los poros; después láminas de agua, chorros enormes é irregulares; por fin, una lluvia torrencial, de esas que hinchan los arroyos, producen apoplegía en las venas de las fuentes, anginas en las tajeas de los caminos. El sistema de canales del patio se llenó de agua, que borboteaba, hervia, se colaba con furia produciendo sonidos extraños, gipidos de (lauta ronca, ex-tertores de tráquea enferma. La lluvia se desplomaba sobre los tejados, se despeñaba pegando vuelcos, y haciéndose espumosa y negra por las vertientes, entraba en los canales, y la hojalata de ellos se extremecia, sonando cada tubo como flauta de órgano. Después reventaron hinchados, y el agua se vió libre de aquella envoltura: creció, bajó, saltó por donde quiso... el patio se llenó de barro, se rezumó por todas partes, se lavó de piés á cabeza, tomó un baño definitivo, reblandeciéndose y preparándose al hundimiento. Estallaron algunos cristales; se hundieron dos mechinales y una teja vana; se llenaron de humedad los dos lienzos de pared que habian procurado hasta entónces sonreír con la blanca sonrisa de la cal, y... en lo sucesivo, el patio de la casa de D. Juan Solo fué digno agujero para vivienda del dios del reuma.</p>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0384_chap32">
-				<head>XXXI</head>
-				<head>Una conciencia</head>
+				<head xml:id="ne0384_head_059">XXXI</head>
+				<head xml:id="ne0384_head_060">Una conciencia</head>
 				<p>Leandro Henares, desde que le conocimos hasta que los sucesos de esta monografía de un dolor llegaron al pun to en que se hallan ahora, habia experimentado las .1 t nativas, mudanzas y truecos de un espíritu lleno de an dones que se encuentra sin medios de realizarlas. Leandro Henares <seg rend="bold">carecía </seg>de cultura científica, pero tenia un supre mo conocimiento del mundo; sabia vei claro en 1 y cosas, porque el tinte misántropo de sus pupilas morales le hacía acertar pensando mal de todo. El amor a los ideales en moral no existía en su espíritu. No comprendía, ni se preguntaba, porqué vino el hombre al mundo Bien avenido con su ceguedad respecto á los destinos finales, su problema era pasar bien los ratos picaros de la vida, teniendo alfombra que pisar, mesa abundante en que comer, goces materiales sin cuento y una consideración social influyente en el éxito de sus empresas. Los dolores de vida habían sido pequeños. Todos los hombres padecen; pero no todos padecen lo mismo, porque d I distinotemple de las almas marca distintos grados de sensibilidad decisiva en que el sér viva dichoso, resignado ó desventurado^ Leandro Henares se sabia de memoria la vida. Cuando descubría un nuevo rostro vaticinaba sus acciones. Jamás le sorprendía una mala acción. Lo que le cogia de nuevas siempre eran los hechos generosos, las abnegaciones, los sacrificios. Esto, como que le producía cierto desórden en su sistema de ideas. No encajaba con su encasillado de juicios ni con su plano moral aquella suerte de acciones.</p>
 				<p>Al hallarse en el mundo con D. Juan Cláudio Malaña sintió que en los alones desnudos de toda pluma le nacia la idea del vuelo. Quiso volar, vió ante sí un horizonte nuevo y empicó sus facultades, las aguzó, las templó, las hizo duras, finas, invencibles. La crisálida de la miseria le purificó de errores y candideces. El dia en que mutuamente se conocieron él y Malaña, cuando de una á otra conciencia fueron las confesiones, halló nuevas aspiraciones que realizar que una mano firme y segura escribía en el álbum de sus esperanzas.</p>
 				<p>—Tú necesitas una fortuna—le dijo Malaña.—Sin la base del oro, ¿qué se puede conseguir? ¡El trabajo! Es la esclavitud del hombre. Yo he trabajado mucho, me he envilecido en un taller, en una posada, en el desperdicio diario de la actividad á cambio de la miserable comida... Pero una fortuna es la base de un capital... Dámc un millón y te devolveré cincuenta... El negocio es hijo del millón y la voluntad. El millón es el macho de este contubernio... La hembra es la voluntad... Ei negocio viene naturalmente como el hijo á los nueve meses del primer abrazo... ¡Santa Polonia! Si todos los hombres estuviesen convencidos como yo lo estoy de esto,¿cómo nos arreglaríamos los que tenemos algo que perder para impedir que nos los quitasen?... Pero, amigo Leandro, aún hay hombres que creen en el trabajo... aún hay espíritus ¡nocentes, cándidos como palomas, dulces como tórtolas, sufridos como jumentos, que abrigan la esperanza dc hacerse ricos con el trabajo, sin apelar á esa álgebra sublime que tiene dos incógnitas: el presidio ó el palacio... Esas gentes, con su inverosímil, pero cierta ignorancia, son la garantía del millón... La probidad es una virtud de los pobres explotada por los ricos.</p>
@@ -1242,13 +1267,13 @@
 				<p>D. Juan Cláudio era para Leandro un semi-dios. Sus escasas lecturas habían hecho concebir á su imaginación un extraño modo de ver ciertas figuras excepcionales más bien melodramático que real, y al acercarse á D. Juan Cláudio experimentaba el divino pavor que producía el acercarse al Arca Santa.</p>
 			</div>
 			<div n="33" type="chapter" xml:id="ne0384_chap33">
-				<head>XXXIII</head>
+				<head xml:id="ne0384_head_061">XXXIII</head>
 				<p>Un deseo, un beso, una. desilusión</p>
 				<p>Digámoslo, esta es la verdad: Leandro llenaics se casó enamorado de su mujer; pero aquel amor duró muy poco, porque con la posesion se vió saciado y harto. La hermo sura de Llena sirvió de pasto á la voracidad de la bestia de las sensualidades; cuando el pasto se acabó, el amor de 1 nares fué amenguándose. Por mucho que el interés hubiese intervenido en su matrimonio, es lo cierto que <seg rend="bold">su </seg>.ifiuon la.belleza de Elena ensalzó mucho la idea del sacrificio. La hija de llarpagon rica! ¡Qué felicidad! ¡La hija do Harpa gon opulenta y bella! ¡Cuántas felicidades! Como el hombre por muy bajo que esté nunca 1o está tanto que dejen de despuntar en él las alegrías que engendra el creerse mejor por el sentimiento de lo que se es por la razón, llenares halló delicioso, sublime, ennoblecedor, aquel matrimonio que para las gentes era de conveniencia y para él era de pasión Hubo un momento en que se juzgó enamorado de Elena. ¡Ella era tan bonita! ¡Qué escéptico hubiese dejado de dar crédito &amp; sus sentidos cuando le dijesen que los ojos de Elena eran un compendiado paraíso, un breve cielo, un arco de pestañas de oro, bajo el cual relucía el sol de la sonrisa angélica? Henares quedó hechizado y fascinado, ébrio, loco, embebecido en el raudal de placeres que de la ignota fuente de amor corría por una idílica pradera esmaltada de gayas Hores. El las arrancó á mansalva á puñados, á brazadas, oprimiéndolas, besándolas, perfumando con ellas sus manos y su traje. Diósc un baño de cuerpo entero en la naturaleza, y esto le hizo creerse enamorado. Esta parte de nuestra narración, puramente experimental, podrá ser tachada de inverosímil, y habrá una razón para ello: que arranca dc la realidad, y la realidad es siempre inverosímil. Pero es indudable que llenares acabó por aburrirse de la dicha, y Elena empezó á saborear el amargo fruto dc las desilusiones. El lecho conyugal fué partido. Cuando dos esposos duermen en distintas camas, es que la felicidad se ha hecho cansada. ¡Triste ecuador de la desventura! Al lado de allá están las tardes de paseo en que Leandro y Elena buscaban los recónditos y agrestes parajes del país elegido para patria de himeneo; las fondas del viaje de novios; los vagones reservados del ferro-carril; las partidas dc campo en que el <seg rend="italics">menú</seg> de la merienda está compuesto de rosas y besos. Al lado dc acá están las ocupaciones imprevistas, las exigencias dc los amigos, la Bolsa, la necesidad de comer á horas distintas, las horas de sueño diversas... ¡Cuando dos amantes no duermen á la misma hora, es que sus relojes andan desacordes! Poco á poco, hoy un átomo, otro mañana, el frió fué penetrando en el corazon de los dos. Leandro creyó que sus ausencias del hogar motivarían escenas cómico-dramáticas entre él y Elena... Pero no fué así... Elena no se dió por aludida ni por ofendida. Parecía no darse cuenta del cambio operado en sus costumbres con yugales. ¡Era que su amor propio se defendía! El amor propio dc una mujer es Cupido que se trueca en Marte.</p>
 			</div>
 			<div n="34" type="chapter" xml:id="ne0384_chap34">
-				<head>XXXIV</head>
-				<head>Las marismas de Castro</head>
+				<head xml:id="ne0384_head_062">XXXIV</head>
+				<head xml:id="ne0384_head_063">Las marismas de Castro</head>
 				<p>¿Qué se puede hacer de unas marismas? El poeta Jes cribe su vaciedad pantanosa en que vuela el cuervo » re luce el canto, plateado de tratarse con las madréporas. El agricultor las puebla de árboles y plantas... El hombre negocios procede por otro sistema. Manda hacer un plano de ellas, corta en m.l pedacitos un papel azul ó ver e en que esté grabada su firma y el nombre de las <seg rend="italics">Marismas t Castro,</seg> vende estos papelillos en la Bolsa á 10.000 rea e cada uno, y á su gabela van á parar, llevados por el sifón prodigioso del crédito, miles de bellas piezas de oro, en tanto que centenares de gentes de excelente sentido sue ñan con las ganancias portentosas que aquel papelillo azu lado ha de producirles. En todo papel de la Bolsa hay algo de cédula de la lotería.</p>
 				<p>Leandro llenares, bajo la dirección del Sr. e i a ana, llevó á cabo una de estas operaciones. Pero Leandro care cia de muchas de las condiciones precisas para prosperar en el mundo de lo. negocios, si guiaba. Podia ser el in.rrun.en.o, el buril... pero no pod,. aspirar á ser . cabeza, nUun Quiera -la a,,no. Lue<seg rend="sub">S</seg>o sus costumbres <seg rend="bold">os,</seg>enrosas le perdieron. Iba bolsa amenguindóse, iba su arca quedándose vacía. Además, Henares tenía desde su juventud un vicio horrible: jugaba, y con la suerte más negra. Las monedas de oro puestas sobre el tapete verde le fascinaban como los ojos de un dragón. Él las miraba, las consideraba, y sentíase atraído á ellas como por el hechizo de amor. Resistíase en vano: le arrebataba una fuerza ciega, un vértigo poderoso le empujaba, y caia sobre el tapete verde como cae el cuerpo muerto. Allí se dejaba sangrar por los uñas feroces y duras del vampiro del juego, y de sus bolsillos corria la sangre del crédito... ¡Imposible parece! ¡En una noche perdió .ooo duros! Ala mañana siguiente no sabia cómo pagarlos.</p>
 				<p>—¡Tengo agotados mis medios! Esas <seg rend="italics">marismas</seg>, ¿se han desecado? Ya no me queda ni un real de ellas... Por fortuna el expediente será largo, y los trabajos no empezarán en mucho tiempo!... ¡Bah! se lo diré á mi mujer... Ella me autorizará á sacar del Banco su dote... Luégo con un par de buenas jugadas restituiré esa cantidad...</p>
@@ -1259,8 +1284,8 @@
 				<p>«Querido papá: Vente hoy á comer con nosotros.  ráete algún dinero que necesita tu hija que te envia mil besos.</p>
 			</div>
 			<div n="35" type="chapter" xml:id="ne0384_chap35">
-				<head>XXXV</head>
-				<head><seg rend="bold">Tántalo</seg></head>
+				<head xml:id="ne0384_head_064">XXXV</head>
+				<head xml:id="ne0384_head_065"><seg rend="bold">Tántalo</seg></head>
 				<p>—¿Que lleve dinero?—se dijo D. Juan. ¡No, no lo en Tiendo... Pero me llama... ¿que me quiere?... Ya se ha olvidado de aquella noche... de aquella noche cruel... ¿A fué realmente una pesadilla mia?... ¡Sin duda al„una. i quedé dormido en la calle, y soñé aquel horroroso cumu o •de disparates... «Tráete algún dinero.» ¿Qué dinero necesita mi hija?... ¿Para qué lo querrá?... Ella está en la abundancia... Sí, sí... Yo he trabajado para eso... yo me he arrastrado por el mundo para que ella vuele con alas oro... Además, de que yo no tengo dinero... No tengo... vamos á ver.    _</p>
 				<p>Abrió el armariejo verde que habia frente á su lee o, y de allí sacó un papelón dentro del cual vibraron algunas monedas de plata. Vació el papelón sobre la cama.</p>
 				<p>—¡Trescientos duros!... No tengo más... Es inúti que busque .. Cuando el dinero se acaba, se acaba dc <seg rend="sup">,nltIV</seg>“ mente... ¡Ah! mi deseo es infinito, pero mi bolsa no dá mas de sí... Señor, Señor, ya que nos haces padres ¿por qué no nos haces omnipotentes? ya que nos concedes la facultad de crear como tú, ¿por qué no nos concedes tam íen el hacer felices á nuestras creaciones...</p>
@@ -1295,8 +1320,8 @@
 				<p>Y de sus ojos cristalizados y saltones salió un mar de lágrimas.</p>
 			</div>
 			<div n="36" type="chapter" xml:id="ne0384_chap36">
-				<head>XXXVI</head>
-				<head>El buscador de oro</head>
+				<head xml:id="ne0384_head_066">XXXVI</head>
+				<head xml:id="ne0384_head_067">El buscador de oro</head>
 				<p>Don Juan habia concebido un propósito.</p>
 				<p>—Yo tendré ese dinero.</p>
 				<p>Encaminóse al lóbrego callejón donde vivía debajo de una teja Pepin. Encontróle estudiando, con una gomlla de seda bien encasquetada en las orejas. Su cuarto en camaranchón extenso, en medio de cuya desnudez el tablado con un jergón de hoja de maíz parecía un ' medio del Sahara.</p>
@@ -1330,8 +1355,8 @@
 				<p>—Yo le debo á V. mucho más que eso... No hablemos más de eso... Y otra vez, para cosillas tan menudas, y en que V. es dueño, no me pida permiso... ^ <seg rend="sup">0 s0</seg>)</p>
 			</div>
 			<div n="37" type="chapter" xml:id="ne0384_chap37">
-				<head>XXXVII</head>
-				<head>Caro infirmis</head>
+				<head xml:id="ne0384_head_068">XXXVII</head>
+				<head xml:id="ne0384_head_069">Caro infirmis</head>
 				<p>Al fin... ¡no podía suceder otra cosa!... Al fin el cuerpo de D. Juan Solo fué débil para resistir tunta agitación y dolores tan continuos. Una mañana experimentó un encogimiento horrible en los músculos del pecho. Era como si habiendo rodeado los pulmones de una red metálica, ésta de improviso se encogiese magullando los tejidos esponjosos de la caja torácica.</p>
 				<p>Solo en su cuarto quiso levantarse, pero fue inútil. No pudo andar. Solo consiguió arrastrarse sobre las baldosas, dar dolorosos rodillazos y permanecer media hora medio exánime, desnudo, tendido en el yerto, rojizo y súcio suelo, con los codos clavados en el polvo. Cuando subió la señá Ramona con el desayuno, le ayudó á recobrar la cama.</p>
 				<p>—Usted ha hecho muy mala vida... El caballo que corre mucho, revienta-díjo la brutal portera.-¿Quién vá á cuidarle ahora si enferma? Yo no podré si V. no me paga diez reales diarios.</p>
@@ -1344,8 +1369,8 @@
 				<p>Un médico vino, y las recetas agotaron en dos dias los cuatro duros que poseía D. Juan Solo como único capital. Pepin tuvo que empeñar su capa para comprar una docena de emplastos de Abel que el médico recetó.</p>
 			</div>
 			<div n="38" type="chapter" xml:id="ne0384_chap38">
-				<head>XXXVIII</head>
-				<head>Agonía-—Baile</head>
+				<head xml:id="ne0384_head_070">XXXVIII</head>
+				<head xml:id="ne0384_head_071">Agonía-—Baile</head>
 				<p>D. Juan lanzó un rujido, cuando oyó decir á Pepin:</p>
 				<p>—No vendrá... No vendrá ninguno de los dos. Es una descastada, una infame.</p>
 				<p>—Calla—balbuceó el viejo destapándose el rostro que se habia cubierto con la estrecha y fementida sábana.—Calla, hereje... Estás insultando á un ángel.... Mi h')a me ama.</p>
@@ -1438,8 +1463,8 @@
 				<p>Un movimiento vibrátil agitó las pupilas de D. Juan Solo; una vacilación conmovió su cabeza... Luégo... luégo nada... Se quedó yerto, inanimado, tieso como un Cristo de pino!</p>
 			</div>
 			<div n="39" type="chapter" xml:id="ne0384_chap39">
-				<head>XXXIX</head>
-				<head>Final</head>
+				<head xml:id="ne0384_head_072">XXXIX</head>
+				<head xml:id="ne0384_head_073">Final</head>
 				<p>Al dia siguiente se leía en los periódicos dc la Corte:</p>
 				<p>«Un suntuoso baile se celebró anoche en la elegante morada del acaudalado banquero D. Leandro Henares. Su bella esposa hizo los honores de la fiesta con su habitual discreción.»</p>
 				<p>Y en otra parte:</p>

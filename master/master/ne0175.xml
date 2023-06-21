@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El niño de la Bola</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Bola</title>
-				<title type="idno">
-					<idno type="viaf">312335351</idno></title>
+				
 				<author>
-					<idno type="bne">XX920308</idno>
-					<idno type="viaf">44294383</idno>
-					<name type="short">Alarcon</name>
-					<name type="full">Pedro Antonio de Alarcón</name>
+					<name type="short" ref="#Alarcon"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1549</measure>
@@ -139,14 +131,61 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0175</idno>
+						<idno type="cligs">ne0175</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, AlexAitken, FineReader, <date when="2010">2010</date>, <idno></idno>, <ref target="https://archive.org/details/elniodelabolan00alar
-					"/>.</bibl>
-				<bibl type="print-source">Madrid, Imprenta central a cargo de Victor Saiz, <date when="1880">1880</date></bibl>
-				<bibl type="edition-first"><date when="1880">1880</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El niño de la Bola</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/312335351/">312335351</idno>
+				</idno>
+				</title>
+					<author xml:id="Alarcon">
+						<name type="full"><forename>Pedro Antonio</forename> <surname>de Alarcón</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9261 - IO 9262">IO 9261 - IO 9262</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118869302">118869302</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q313553/">Q313553</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX920308.html">XX920308</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/44294383/">44294383</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, AlexAitken, FineReader, <date when="2010">2010</date>, <idno/>, <ref target="https://archive.org/details/elniodelabolan00alar      "/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Imprenta central a cargo de Victor Saiz, <date when="1880">1880</date></bibl>
+					<bibl type="edition-first"><date when="1880">1880</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Manuel Venegas</title> <date when="1881">1881</date>, <publisher>Spemann</publisher> <pubPlace>Stuttgart</pubPlace> 		<idno type="ppn" n="133535916" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133535916"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Manuel Venegas</title> <date when="1882">1882</date>, <publisher>Spemann</publisher> <pubPlace>Stuttgart</pubPlace> 		<idno type="ppn" n="1118607287" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1118607287"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Manuel Venegas</title> <date when="1882">1882</date>, <publisher>Spemann</publisher> <pubPlace>Stuttgart</pubPlace> 		<idno type="ppn" n="464736145" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464736145"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la Bola</title> <date when="1884">1884</date>, <publisher>Pérez Dubrull</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1112668993" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1112668993"/> </bibl>
+						<bibl type="further-edition"><title type="main">El niño de la bola</title>: 	<title type="sub">novela</title> <date when="1884">1884</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="434360473" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=434360473"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1890">1890</date>, <publisher>Pérez Dubrull</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464967171" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464967171"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title>: 	<title type="sub">novela</title> <date when="1890">1890</date>, <publisher>Pérez Dubrull</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="246066873" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=246066873"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1900">1900</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="194802841" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=194802841"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1905">1905</date>, <publisher>[wechselnde Drucker]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="461135396" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=461135396"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1920">1920</date>, <publisher>[wechselnde Drucker]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="528728261" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=528728261"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1923">1923</date>, <publisher>[wechselnde Drucker]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46113540X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46113540X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title>: 	<title type="sub">novela</title> <date when="1925">1925</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1126797316" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1126797316"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1930">1930</date>, <publisher>[wechselnde Drucker]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="461135418" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=461135418"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title>: 	<title type="sub">novela</title> <date when="1941">1941</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1134285205" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134285205"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Historia de un gran amor</title>: 	<title type="sub">(El niño de la bola) : novelización de la película del mismo título producida por Agustín J. Fink para Films Mundiales, S.A., inspirada en la famosa obra "El niño de la bola" de Pedro A. de Alarcón, y dirigida por Julio Bracho</title> <date when="1942">1942</date>, <publisher>Ediciones Atlántida, S. de R.L.</publisher> <pubPlace>México, D.F.</pubPlace> 		<idno type="ppn" n="1745717951" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1745717951"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1948">1948</date>, <publisher>Editorial Tor S.R.L.</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="84899115X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=84899115X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1971">1971</date>, <publisher>Salvat</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="244100705" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=244100705"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1975">1975</date>, <publisher>Tebas</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1138957496" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1138957496"/> 		<idno type="isbn" n="8472730697"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1986">1986</date>, <publisher>Salvat</publisher> <pubPlace>[Barcelona]</pubPlace> 		<idno type="ppn" n="162025199X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=162025199X"/> 		<idno type="isbn" n="8434583208"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1990">1990</date>, <publisher>Excmo Ayuntamiento de Guadix</publisher> <pubPlace>Granada</pubPlace> 		<idno type="ppn" n="1124703853" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1124703853"/> 		<idno type="isbn" n="8450595045"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="1990">1990</date>, <publisher>Excmo. Ayuntamiento de Guadix</publisher> <pubPlace>Granada</pubPlace> 		<idno type="ppn" n="110247833" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=110247833"/> 		<idno type="isbn" n="8450595045"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Niño de la Bola</title> <date when="2004">2004</date>, <publisher>Fundacíon José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1187853615" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1187853615"/> 		<idno type="isbn" n="8489794987"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Niño de la Bola</title> <date when="2004">2004</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="497442620" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=497442620"/> 		<idno type="isbn" n="8489794987"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El niño de la bola</title> <date when="2014">2014</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="78229295X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=78229295X"/> 		<idno type="isbn" n="9788437632377"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +198,14 @@
 				<p>Al cabo de ocho años regresa el joven el mismo día del baile. Se entera de que su amada se ha casado con un forastero, Antonio Arregui. Todos temen un fatal desenlace. Don TRinidad hace lo posible para eviatarlo; recurre a la devoción que Manuel había tenido en otro tiempo a la imagen del Niño de la bola. Tras una terrible lucha, nuestro héroe decide marcharse para siempre. Cuando ya está de camino, Vitriolo le lleva una carta de Soledad en la que el confiesa sin recato su amor y le ruega que no se vaya. Regresa al pueblo. En la fiesta bailas los dos. Manuel abraza estrechamente a Soledad hasta ahogarla sin darse cuenta, y Antonio le clava a él un puñal en el corazón. Los cadáveres yacen juntos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9261" key="IO 9261" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -171,7 +218,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">realista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -229,6 +276,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-01-28" who="#jct">Initial TEI version. Compared the basic structure of the text with the PDF. Pages 15-16 from PDF messing.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -236,9 +284,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>LIBRO PRIMERO.: EN LO ALTO DE LA SIERRA.</head>
+				<head xml:id="ne0175_head_000">LIBRO PRIMERO.: EN LO ALTO DE LA SIERRA.</head>
 				<div n="1" type="chapter" xml:id="ne0175_chap1">
-					<head>I.: SINFONÍA.</head>
+					<head xml:id="ne0175_head_001">I.: SINFONÍA.</head>
 					<p>Entre la vetusta Ciudad, cabeza de Obispado, en que ocurrieron los famosos lances de <seg rend="italics">-El Sombrero de tres picos,»</seg> y la insigne Capital de aquella estacionaria Provincia, donde hay todavía muchos moros vestidos de cristianos, álzase, como muralla divisoria de sus respectivos horizontes, un formidable contrafuerte de la Sierra más erguida y elegante de toda España.</p>
 					<p>Cerca de diez leguas de espesor (las mismas que la Capital y la Ciudad distan entre sí) tiene por la base aquel enorme estribo de la gran cordillera, mientras que su altura, graduada por termino medio, será de seis ó siete mil pie's sobre el nivel del mar. — Subir á tal elevación por retorcidas cuestas, y descender de allí luégo por otras cuestas no menos retorcidas, es la tarea común de cuantos van ó vienen de una á otra comarca; cosa que sólo podia hacerse, á la fecha en que principia nuestra relación, por un mal camino de herradura, convertido poco despues en un mucho peor camino carretero.</p>
 					<p>Ahora bien, amigos lectores: el primer cuadro del drama romántico de chaqueta y rigurosamente histórico (aunque no político) que voy á contaros (tal y como aconteció, y yo lo presencié, entre la extinción de los Frailes y la creación de la Guardia Civil, entre el suicidio de Larra y la muerte de Espronceda, entre el Abrazo de Vergara y el Pronunciamiento del General Espartero; en 1840, para decirlo de una vez), — tuvo por escenario la cumbre de esa montaña, el promedio de ese camino, el tránsito del uno al otro horizonte; punto crítico y neutro, que dista cinco leguas de la Ciudad y otras cinco de la Capital, y en que, por ende, suelen encontrarse al mediodía y decirse «/tí <seg rend="italics">la pa¡ de Dios, caballeros</seg>!» los viandantes que salieron al amanecer de cada una de ambas poblaciones.</p>
@@ -250,14 +298,14 @@
 					<p>Y, pues que el Hombre, el rey de la Creación, solia pasar por allí dando el mal ejemplo de temer á sus prójimos, nada tuvo de particular ni de ofensivo que los humildes irracionales se apresurasen, como todos los dias, á evitar su real presencia.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0175_chap2">
-					<head>II.: NUESTRO HÉROE.</head>
+					<head xml:id="ne0175_head_002">II.: NUESTRO HÉROE.</head>
 					<p>Aquella nube de polvo traia en su seno á un arrogante jinete, seguido de un arriero á pié v de tres soberbias muías cargadas de equipaje.</p>
 					<p>El caballero, á juzgar por su figura y vestimenta y por el abiga rado aspecto de las tales cargas, pa-recia juntamente un feriante, un contrabandista y un indiano. También hubiera sido fácil suponerlo un capitan de bandidos de primera clase, que regresara á su guarida con el rico botin de alguna afortunada empresa.</p>
 					<p>Érase un joven como de veintisiete años; fino y elegante, aunque vestía de chaqueta (traje usado entonces en Andalucía por personas muy principales), y tan airoso, nervudo y bien formado, que habria podido servir de modelo para la famosa estatua del <seg rend="italics">Gladiador combatiente.</seg> La mencionada chaqueta, a.sí como el chaleco y el pantalón (ó más bien calzón de montar) que llevaba, eran de punto azul muy ceñido al cuerpo, y concluía por abajo su equipo en unos botines ó polainas de gamuza gris, con sendas espuelas de plata labrada, dignas éstas de un Capitan General. Gruesos botones de muletilla, también de plata, orlaban hasta cerca del codo las boca-mangas de la chaqueta y servian de botonadura al chaleco. Un pañuelo negro de crespón, anudado á la marinera, le servia de corbata, y negro era asimismo el rico ceñidor de seda china que ajustaba á modo de faja su esbelta cintura. En los puños y cuello de la camisa lucía costosos brillantes; pero ninguno de tanto valor como el que radiaba en el dedo meñique de su mano izquierda. Finalmente, el sombrero (que en aquel momento se acababa de quitar) era de finísima paja de color de café, ancho de alas y muy alto y puntiagudo, como los usan muchas gentes de América y de las Dos Sicilias,— á cuya forma se da en Granada el pintoresco nombre de <seg rend="italics">«sombrero de catite</seg>.»</p>
 					<p>Tan singular personaje (á quien sentaba perfectamente aquel raro atavío semi-andaluz, semi-exótico) llamaba la atención, más que por todo lo dicho, por la varonil hermosura de su cara. Que ésta habria sido de extraordinaria blancura, indicábalo aún aquella parte de su despejada y altiva frentefque el sombrero solia proteger; pero, en lo demas, habíala quemado el sol por tal extremo, que su palidez marmórea habia adquirido un tinte como de oro mate, cuyo tono igual y sosegado no carecía de hechizo. Eran negros y muy rasgados y grandes sus africanos ojos, medio dormidos á la sombra de largas pestañas; mas, cuando súbitamente los abria del todo, excitado por cualquier idea ó caso repentino, salia de ellos tanta luz, tanto luego, tanta energía vital, que su mirada no podía soportarse. Esta mirada reunia á un mismo tiempo la temible majestad de la del león, la fijeza de la del águila y la inocencia de la del niño; sólo que era más triste que la del último, y más tierna en ocasiones que la de los citados reyes de las selvas y de los aires.—Su abundante cabello, negro también y muy cortado por detras, orlaba ámplia-mente la parte superior de la cabeza, semejando una rizada pluma tendida del lado izquierdo al derecho; lo cual daba mayor realce á aquella fogosa fisonomía. Completaban su peregrina belleza un perfil intachable, sirio más bien que griego, una boca escultural, clásica, napoleónica, tan audaz como reflexiva, y, sobre todo, una barba negra, undosa, de sobrios aunque largos rizos, trasunto fiel de las nobles y celebradas barbas árabes y hebreas. En resumen, y para pintar con un solo rasgo tan interesante figura, diremos que, por su estilo oriental, por su selvática melancolía, por su atlética complexión, por la viril hermosura del semblante y por la grandeza de alma que resplandecía en sus ardientes ojos, cualquier aficionado á estudios artísticos hubiera comparado á nuestro héroe (prescindiendo de su grotesco traje y de los accesorios profanos que lo rodeaban) al terrible San Juan Bautista cuando regresó del Desierto á la edad de 29 años.</p>
 					<p>Montaba el joven que tan minuciosamente hemos descrito un soberbio potro cordobés, negro como la endrina, enjaezado con silla á la española, sobre cuyo arzón iba Sujeto un angosto maletín de baqueta y sobre cuya grupa ostentaba vivos y múltiples colores una manta mejicana de gran mérito, ó, mejor dicho, lo que allí se denomina un 7<seg rend="italics">arape.</seg>—Armas... no llevaba en su persona ni en su cabalgadura; pero, hablando en verdad, de uno de los tres bagajes mencionados pendían juntas cuatro excelentes escopetas (dos de ellas con todos los honores de espingardas) que podían sacar de apuros á cualquier valiente...</p>
 					<p>Digamos algo del arriero.—Su pantalón largo, de tela veraniega; la chaquetilla de lienzo blanco que llevaba al hombro, á lo húsar; su faja encarnada, casi siempre desceñida y arrastrando; su sombrero calañés tirado atras, y su fisonomía movible y falsa como la de un comediante, denotaban al individuo de baja estofa del litoral malagueño;</p>
-					<gap />
+					<gap/>
 					<p>nacido en la playa, al aire libre; criado sin casa ni hogar; educado por los truhanes más listos del viejo y corrompido Mediterráneo, y capaz de todo lo malo y de todo lo bueno que pueda hacer un hombre, salvo decir la verdad dos veces seguidas ó rehusar una copa de aguardiente.</p> 
 					<p>Por último: las cargas de las tres muías se componían de cofres, maletas, arcas antiguas, cajones esterados, cestas y cuévanos de diversos tamaños v hechuras, y otra infinidad de lios de raras materias y formas. Recios manojos de larguísimos bambúes y de enormes y vistosas plumas empenachaban además gallardamente cada uno de estos bagajes; y, en fin, sobre el altísimo túmulo y copete Jel mayor de ellos, veíase una gran jaula de hoja de lata, dentro de la cual se consumía de nostalgia el más corpulento y verde loro que haya atravesado nunca el Océano Atlántico.—Indudablemente, el apuesto jóven, ó la persona á quien hubiese robado (suponiendo que nos las hayamos con un bandido), acababa de llegar de América...</p>
 					<p>Nada podemos asegurar todavía sobre estas cosas. El mismo arriero las ignoraba á la sazón, según que dijo después, jurándolo por un puñado de cruces. Lo único que en tal punto y hora sabía era que, el mártes de aquella semana, lo habia buscado un fondista de Málaga para que condujese aquel en evitación de tropiezos con la partida de ladrones del Tuerto B, del Chato X, del Manco H, ó de cualquier otro <seg rend="italics">lisiado por la mano de Dios</seg>,— que siempre fueron los cabecillas más célebres y temidos.—Y, áun así, el encuentro solia tener lugar, con derrota segura de los confederados viajeros.</p>
@@ -317,9 +365,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>LIBRO II.: ANTECEDENTES.</head>
+				<head xml:id="ne0175_head_003">LIBRO II.: ANTECEDENTES.</head>
 				<div n="3" type="chapter" xml:id="ne0175_chap3">
-					<head>I.: LA .MOSCA Y LA ARAÑA.</head>
+					<head xml:id="ne0175_head_004">I.: LA .MOSCA Y LA ARAÑA.</head>
 					<p>El memorable año de 1808 vivía en la Ciudad cierto cumplido caballero, huérfano, célibe, y de unos cinco lustros de edad, llamado D. Rodrigo Venegas, que se jactaba de proceder de aquel Re-duan del mismo apellido, príncipe moro con vetas de cristiano, cuyo nacimiento se debió, según ya sabréis, al dramático enlace de un vástago de la casa señorial de Luque con la hermosísima Princesa Cetimerien, descendiente del Profeta Ma-homa...</p>
 					<p>Como quiera que fuese, nuestro D. Rodrigo habia heredado de sus padres mucha hacienda y un viejísimo y destartalado caserón, con honores de palacio, en cuya fachada se veían los ambiguos es cudos de armas de tan rsclarecida familia, pregonando antiguas hazañas que ya no iban teniendo imitadores en tierra española...; y, por resultas de todo ello, el buen hijodalgo, hombre de entero co-razon y encumbradas ideas, se consumía en aquel decaido y sedentario pueblo, no sabiendo qué ha cersc de sus rentas ni de su sangre, ansiosas de correr en empeños nobles y generosos.</p>
 					<p>Imaginaos, pues, el efecto que le producirla la súbita explosion de la Guerra de la Independencia. Español al tin, aunque en realidad descendiese de españoles no bautizados, empuñó seguidamente las armas contra el francés; empero, como no era hombre de contentarse con hacer lo que cualquiera otro, llegó en su patriotismo hasta equipar, armar y mantener á sus expensas, durante cuatro años, una Partida de voluntarios de caballería, al frente de los cuales se cubrió de gloria en muchas y muy célebres batallas. Consecuencia de tan relevante conducta fue' que, cuando, despues de la victoria de los Arapiles y entrada de nuestros Ejércitos en Madrid, D. Rodrigo regresó á la Ciudad, á curarse su quinta herida, y sin haber querido admitir recompensa alguna del Gobierno de la Nación, encontróse vacíos sus graneros, muertos sus ganados, sus tierras sin arar desde 1809, y talados ó arrancados de cuajo sus olivares y viñas por los vengativos soldados de Sebastiani.—Ni paraban aquí los menoscabos de su hacienda: hallóse también entrampado en la respetable suma de cuatro mil duros con el más rico y feroz usurero de la Ciudad (á quien habia tenido que ir pidiendo dinero desde Bailen, desde Ocaña y desde Talavera, para sostener la benemérita Partida), y en nada menos que otros diez mil duros que importaban los réditos, y los réditos de los réditos, de aquella cantidad, según la socorrida cuenta del <seg rend="italics">ínteres compuesto...</seg></p>
@@ -338,7 +386,7 @@
 					<p>Pocas horas despues era cadáver.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0175_chap4">
-					<head>II.: FINIQUITO.</head>
+					<head xml:id="ne0175_head_005">II.: FINIQUITO.</head>
 					<p>No necesitamos describir, por ser cosa que se adivinará fácilmente, el profundísimo dolor, mezclado de admiración y entusiasmo, que produjo en toda la Ciudad y pueblos limítrofes la muerte del buen caballero, ni tampoco el magnífico entierro que <seg rend="italics">le costearon</seg> sus iguales, dado que en él hubiese algo que <seg rend="italics">costear,</seg> que no lo hubo, á Dios gracias, pues hasta la música de la Capilla de la Catedral asistió de balde, y el cerero no quiso cobrar la merma, y todas las Parroquias concurrieron <seg rend="italics">gratis </seg>y espontáneamente á compartir con la del difunto el señalado honor de dar tierra y descanso á aquellos gloriosísimos restos...—Diremos tan sólo, para que se vea hasta dónde llegó el delirio público, que la tarde de la fúnebre ceremonia (á la cual no asistió el usurero) no Ifc cabia á nadie duda de que el mismo Caifás, en premio de la sublime acción de D. Rodrigo, se contentaría con reintegrarse de los diez ó doce mil duros que efectivamente le habia prestado y con una ganancia regular y módica, dejando el resto de los bienes para el pobre huérfano, de edad de diez años, que se quedaba solo en el mundo, sin más [amparo que la misericordia de los buenos...</p>
 					<p>Pronto salieron de su error aquellos ilusos. Don Elias no aguardó siquiera á que acabase de humear el incendio de su casa (donde, dicho sea entre nosotros, habia perdido únicamente el valor del edificio y seis ú ocho mil duros en ropas y muebles, en las alhajas de su hija y en un poco dinero contante y sonante), sino que, el mismo dia del entierro del caballero, presentó al juzgado los vales y recibos de éste, reclamando la <seg rend="italics">totalidad del adeudo,</seg> ó sea tres millones de reales en números redondos.</p>
 					<p>Gran repugnancia costó al Juez declarar legítima aquella petición; pero el usurero tenía tan bien atados los cabos, y el noble deudor se habia dejado ligar tan estrechamente, que fué indispensable sacar á pública subasta todos los bienes del caballero...— Ni faltaron entónces, de parte de otros hijosdalgo y personas acomodadas, buenos propósitos, y juntas, y discursos, y hasta votaciones, en que se reconoció por unanimidad la conveniencia de presentarse á la licitación, y pujar las fincas hasta las nubes, cargando en mancomún con el perjuicio que resultare; todo ello á fin de reunir decorosamente un pedazo de pan al hijo de Vene-gas...—Mas ya se sabe lo que suele ocurrir en estas cosas. Hablóse tanto, que del hablar resultaron querellas personales entre los presuntos bienhechores, sobre quién estaba dispuesto á hacer más sacrificios, y sobre los móviles secretos de cada uno, y sobre lo que sucedió cierta vez en un caso análogo, y sobre las ideas y actos políticos de D. Rodrigo en aquella tormentosa época, y, con esto, hubo tales disgustos, que se retrajeron de asistir á las juntas muchas personas que también debian grandes cantidades á <seg rend="italics">Caifas,</seg> y pasaron dias, y llegó el marcado por los edictos, y, como aquellos señores no habian llegado á un acuerdo, la subasta resultó desierta.—Rematáronse, pues, á favor del prestamista, por ministerio de la Ley y con gran sentimiento del público, las viñas, los olivares, los cortijos, la casa, los muebles, las ropas y hasta la espada del benemérito patricio, en la cantidad de cien mil y pico de duros...</p>
@@ -358,7 +406,7 @@
 					<p>Aquí es donde verdaderamente principia nuestra historia.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0175_chap5">
-					<head>III.: DE CÓMO UN NIÑO DEJÓ DE SERLO.</head>
+					<head xml:id="ne0175_head_006">III.: DE CÓMO UN NIÑO DEJÓ DE SERLO.</head>
 					<p><seg rend="italics">Manuel,</seg> que así se llamaba el huérfano, era, la funesta mañana en que su padre lo dejó dormido para ir á lanzarse al fuego que devoraba la casa de D. Llías, un gentilísimo muchacho, blanco y sonrosado como el más vistoso amanecer, y alegre y retozon como una fierecilla descuidada.—Criábalo D. Rodrigo con el mayor esmero, no cifrado todavía en enseñarle nada literario, ni tan siquiera á leer y á escribir, de lo cual decía que siempre habría tiempo, sino en fortalecer y avalorar su ya robusta naturaleza física, sujetándolo á rudos ejercicios de agilidad y fuerza, aleccionándolo en la equitación y en la natación , obligándolo á andar largas jornadas en interminables cacerías y explicándole de paso los misterios de la Sierra, la botánica de los montesinos, la medicina de los cortijeros, la astronomía de los pastores, las costumbres de todos los animales, la manera de luchar con ellos y matarlos, ó de cogerlos vivos y reducirlos á su obediencia, y otros muchos secretos de la vida agreste y montaraz; de donde resultaba que siempre estaban juntos padre é hijo, y que se querían y trataban, más que como lo que eran, como dos hermanos, como dos camaradas, como dos compadres.</p>
 					<p>Nada sabía el halagado pequeñuelo de la total ruina de su casa ni de las consiguientes zozobras de D. Rodrigo (quien, como se ve, lo criaba para pobre, presintiendo que llegaría á serlo); y, por lo tanto, su niñez se deslizaba tranquila, dichosa, placentera, hasta donde es posible en quien no ha conocido madre, cuando vinieron en monton y de golpe sobre su frente todos los infortunios humanos...— l-Zn un mismo dia... ¡en el espacio de pocas horas!..., vió que traian de la calle, abrasado y sin conocimiento, al ídolo, al señor, al compañero y único amigo de su vida; presenció su espantosa muerte, sin recibir ni una mirada de sus inmóviles ojos ni un consejo ni un ósculo de sus convulsos labios; se enteró de que existia <seg rend="italics">Caifas</seg> y de la terrible tragedia del incendio, así como de su espantoso origen; supo que era tan pobre como los mendigos descalzos que piden limosna de puerta en puerta; comprendió que tenía que despedirse para siempre de aquellas paredes y de cuanto encerraban, inclusos los objetos que más le hubieran recordado al autor de sus dias; contempló, cual si sonase, á todos los vecinos de la Ciudad, constituidos en su casa, alrededor del cadáver de don Rodrigo, guardándolo como si fuera suyo, hasta que (inalmente lo alzaron en hombros y se lo llevaron..., no sin darle ántes á él muchos besos y decirle muchas cosas, que no le supieron á nada..., y quedóse allí abandonado, silencioso, estúpido, sentado en un rincón de la cámara mortuoria, en la actitud de quien no espera ni tiene para qué esperar á nadie...</p>
 					<p>Llegada, en lin, la noche..., la primera noche de orfandad; cuando dejaron de tañer las campanas y de sonar las remotas músicas del entierro; cuando hasta las tinieblas le advertían que ya estaba solo sobre la tierra; cuando comenzaba á figurarse que él también habia muerto y sido sepultado, oyó una voz ronca y áspera, la voz de un sacerdote grueso y feo, que le decia lúgubremente:</p>
@@ -366,7 +414,7 @@
 					<p>Manuel lo siguió como un autómata, ó más bien como el pobre can que se ha quedado sin dueño.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0175_chap6">
-					<head>IV.: UN CURA DE MISA Y OLLA.</head>
+					<head xml:id="ne0175_head_007">IV.: UN CURA DE MISA Y OLLA.</head>
 					<p>Apresurémonos á decir algo (muy poco) respecto de este Sacerdote, ántes de engolfarnos completamente en la historia del que habia llegado á ser su pupilo.</p>
 					<p>D. Trinidad Muley era uno de aquellos curas á la antigua española, á quienes aman y respetan todos sus feligreses y cuantos los conocen, sin distinción de partidos políticos ni áun de creencia  religiosas: curas que, sin ser liberales, ni dejar de serlo, ó, mejor dicho, por no tener opinion alguna sobre las cosas <seg rend="italics">del Cesar,</seg> pero sí una altísima idea de las cosas <seg rend="italics">de Dios,</seg> no perdieron nunca esc amor y esc respeto, ni en la explosion nacional de 1808. ni en la reacción absolutista de 1814, ni en el furor revolucionario de 1820, como tampoco los perdieron después, cuando vino Angulema, ni por resultas del Motin de la Granja, ni en ninguna de las vicisitudes posteriores, tan fecundas en desave nencias entre la Iglesia y el Estado: curas indígenas, por decirlo así, que aman á su patria como cualquier hijo de vecino, sin tener nada de cosmopolitas, de europeos, ni áun de ultramontanos.... por loque rara vez legan su nombre á la Historia: curas, en fin, de la clase de católicos rancios, sin ribetes de política ni de filosofía, que no suelen poseer ni exigir de nadie sutilísimos conceptos teológicos con que explicar la mente del Autor del mundo, ni inflexibles fórmulas de escuela sobre la sociedad y su gobierno, sino la práctica real y efectiva de todas las virtudes cristianas.</p>
 					<p>El ejemplar que tenemos á la vista era al propio tiempo tan natural y sencillo de suyo, tan humano v tan valiente, de espíritu tan abierto y corazon tan bondadoso, tan <seg rend="italics">padre de almas</seg> por esencia, presencia y potencia, que lo mismo que servia para Cura párroco de Santa María de la Cabeza, y, como tal, derramaba muchos bienes morales y materiales en cuanto alcanzaban sus recursos, hubiera servido para sacerdote hebreo, mahometano, protestante ó chino, con gran respeto y edificación de tales gentes.—Digamos, pues , como resumen de sus cualidades positivas.y negativas, que era un verdadero hombre de bien, lleno de caridad ingénita, iluminada por la palabra de Cristo; profundamente esperanzado en otra mejor vida, como todo el que-tiene un alma grande, incapaz de satisfacerse con las vanas alegrías de la tierra; pobrísimo de humanidades, pero no de ciencia del mundo ni de conocimiento del corazon humano; muy escaso de imaginación, pero no de sana lógica ni de sentido común; que tal vez no sabía predicar un buen sermón sobre el Dogma (ni creia necesario meterse allí en tales honduras), pero que embelesaba y mejoraba al auditorio desde el púlpito con su paternal actitud, con sus tiernas exhortaciones al bien y con su propio ejemplo...—No era, no, de la casta de San Agustin, de Santo Tomás ó de San Ignacio de Loyola; pero sí de la de San Cayetano, de la de San Diego de Alcalá y de la de San Juan de Dios, aunque menos docto y más vulgar que ellos y que la generalidad de los curas, tenientes y be-neliciados de aquella Diócesis...</p>
@@ -377,7 +425,7 @@
 					<p>No lo hacemos á la presente, porque reclama nuestra atención el hijo de Venegas, ó sea el que ya muy pronto va á comenzar á llamarse <seg rend="italics">«»El Niño de la Hola.»</seg></p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0175_chap7">
-					<head>V.: EL ACREEDOR DEL USURERO</head>
+					<head xml:id="ne0175_head_008">V.: EL ACREEDOR DEL USURERO</head>
 					<p>El pobre niño habia quedado como si fuese de hielo, por resultas de aquellos repentinos y bárbaros golpes de la suerte, contrayendo una palidez mortal que le duró ya toda la vida.—Nadie habia hecho caso del infeliz en el primer momento de angustia, ni reparado en que no gemia, hablaba ni lloraba; y, cuando al cabo acudieron á él, lo hallaron contraido y yerto como una petrificación del dolor, aunque andaba, oia, veia, y daba continuos besos á su llagado y moribundo padre.—¡No habia, pues, derramado ni una sola lágrima durante la agonía de aquel ser tan querido, ni al besar su frió rostro, despues que hubo muerto, ni al ver cómo se lo llevaban para siempre, ni al abandonar la casa en que habia nacido, ni al hallarse albergado por caridad en la ajena!—Algunas personas elogiaron su valor: otras criticaron su insensibilidad: las madres de familia lo compadecieron profundamente, adivinando por instinto la cruel tragedia que habia quedado encerrada en el cora-zon del huérfano, por falta de un se'r tierno y piadoso que llorase á su lado.</p>
 					<p>Tampoco habia vuelto Manuel á hablar palabra desde que vio llegar en la agonía á su buen padre; ni respondió luego á las cariñosas preguntas que le hizo D. Trinidad cuando se lo llevó á su casa; ni se le oyó más el metal de la voz en el Trascurso de los tres primeros años que vivió en su santa compañía; y ya pensaban todos que se habia quedado mudo para siempre, cuando un dia que se hallaba como de costumbre en la iglesia de que era cura su protector, observó el sacristan que, encarándose con una linda efigie del Niño de la Bola que allí se veneraba, le decia melancólicamente:</p>
 					<p>—Niño Jesús: ¿por qué no hablas tú tampoco?</p>
@@ -424,7 +472,7 @@
 					<p>En cuanto al niño, no habian transcurrido cinco minutos cuando ya estaba otra vez sentado en el poyo de la acera de enfrente.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0175_chap8">
-					<head>VI.: SOLEDAD.</head>
+					<head xml:id="ne0175_head_009">VI.: SOLEDAD.</head>
 					<p>A los dos dias de la anterior escena, Manuel cambió las horas de su cotidiana visita á la Plazuela de los Yenegas, y, en vez de por la tarde, la hizo por la mañana, constituyéndose allí á las nueve, que terminó el servicio ordinario de la Parroquia, con indudable propósito de estarse hasta la una, que era la hora de comer en casa de D. Trinidad.</p>
 					<p>¿Por que este cambio?—¿Presumió el niño que ¿5 tales horas habría más entrantes y salientes en casa de <seg rend="italics">Caifas,</seg> y por lo tanto mayor campo para sus observaciones? <seg rend="italics">¿ó</seg> tuvo noticia terminante y cierta de que así le sería fácil conocer á aquella niña de que le habia hablado la mujer del usurero, á aquella defensora de doce años que tanto le compadecía, á aquella Soledad inolvidable que le habia calificado de <seg rend="italics">hermoso?</seg></p>
 					<p>Lo ignoramos completamente.—Pero el caso fue que la mañana en que hizo tal novedad, vio Manuel entrar y salir varias veces al criado y cobrador del prestamista, ora solo, ora acompañado de escribanos y de otras personas más ó ménos notables de la Ciudad, y que, cerca de las doce, volvió á salir del caserón el mismo sirviente, el cual, despues de muchos rodeos y vacilaciones, penetró en un Colegio de Niñas, situado al extremo opuesto de aquella prolongada plaza, como á cien pasos de la puerta del palacio y del paraje fronterizo en que el sitiador tenía plantados sus reales...</p>
@@ -444,7 +492,7 @@
 					<p>Samson habia conocido á Dalila.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0175_chap9">
-					<head>VII.: VARIAS Y DIVERSAS OPINIONES DE DON TRINIDAD MULEY.</head>
+					<head xml:id="ne0175_head_010">VII.: VARIAS Y DIVERSAS OPINIONES DE DON TRINIDAD MULEY.</head>
 					<p>El descendiente de los Venegas tuvo, sin embargo, bastante fuerza de voluntad para no volver en muchísimo tiempo por aquella plaza ni por sus cercanías, bien que semejante resolución no dimanase excluxivamente de su conciencia.</p>
 					<p>D. Trinidad Muley fue' quien, al ver que el joven no quiso comer ni cenar el dia mencionado, ni durmió aquella noche, y amaneció al dia siguiente con calentura, le recibió declaración indagatoria, y, sabedor de todo lo ocurrido, díjole estas palabras:</p>
 					<p>—Caminas derechamente á tu perdición. Va te lo anuncie cuando me opuse á que fueras á sentarte en aquel maldito poyo...; pero no quisiste hacerme caso, y el resultado lo estás viendo.— ¡Temprano empiezan á gustarte las amigas de la serpiente!...— Sin embargo, yo no telo criticaría (pues no todos han de seguir mi ejemplo, en cuyo caso se acabaria el mundo...); no te lo criticaría, digo, si no se tratara de la hija del que tan cruel fue con tu padre...— Pero se trata de ella, y comprendo que los escrúpulos de haberte complacido en mirarla te hayan quitado el sueño y la salud, como á todos los que están en pecado mortal.— Por consiguiente, en nombre de D. Rodrigo Venegas (Q.. E. P. D.) y hasta en nombre de Dios te conjuro á que no vuelvas á acercarte á aquel barrio, si no quieres perder mi cariño, la estimación de las gentes, y por de contado tu propia alma!</p>
@@ -496,7 +544,7 @@
 					<p>—¡Mañana veremos!...—iba diciéndose el mozo con la tranquilidad de la justicia y de la fuerza.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0175_chap10">
-					<head>VIII.: PERIPECIA.</head>
+					<head xml:id="ne0175_head_011">VIII.: PERIPECIA.</head>
 					<p>El día siguiente, á las once de la mañana, estaba ya Manuel á la puerta del Colegio, en busca de la contestación que aguardaba de parte de D. Elias, y, mientras era llegada la hora de que la niña saliese de aquel santuario (donde vulgarísimas muchachas y estólidas maestras—así suelen discurrir los enamorados—tenian la gloria de verla coser y de oiría decorar sus lecciones, como si ella fuese también criatura mortal), el pobre mancebo se paseaba, lo más lejos posible del mudo caserón, enmarañando y devanando por centésima vez en su memoria todas las palabras que dijera la víspera á la señora de sus pensamientos y todas las temeridades y locuras que desde entonces se le habian ocurrido sobre la significación del rubor, de la mirada, del enojo, del desenojo, del miedo, de la sonrisa y de la fuga de la intrépida y silenciosa adolescente.</p>
 					<p>De lo que no podia dudar, de lo que no dudaba, de lo que estaba segurísimo era de que Soledad le amaba: no ya porque D. Trinidad Muley se lo hubiese contado, con referencia á la mujer del usurero, sino porque á e'l se lo había dicho todo su se'r, enajenado de un gozo y una delicia que no podian engañar á su leal naturaleza, desde que recibió aquella mirada (reveladora de dulces y ya presentidos misterios) con que la niña, trocada en mujer, habia transfigurado al niño en hombre.</p>
 					<p>En cuanto á lo que pudiese contestar D. Elias á su demanda , Manuel estaba también completamente tranquilo.</p>
@@ -555,7 +603,7 @@
 					<p>Manuel abrazó, en cuanto era posible, la respetable mole de D. Trinidad Muley, y no contestó palabra alguna; pero en su noble y hermosa frente se leian temerarias resoluciones.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0175_chap11">
-					<head>IX.: OPERACIONES ESTRATÉGICAS.</head>
+					<head xml:id="ne0175_head_012">IX.: OPERACIONES ESTRATÉGICAS.</head>
 					<p>Desde aquel triste dia hasta la fecha del ruidoso lance que obligó á Manuel á salir de la Ciudad (para no regresar á ella en el espacio de ocho años, según indicamos en el Libro Primero de la presente historia), cumplió nuestro joven con asombrosa firmeza de carácter el vasto programa que habia concebido en el Camino de las Huertas y cuyos pormenores no creyó oportuno explicar al buen Cura de Santa María; — programa atrevidísimo y sumamente complicado (á lo que se vió despues), que contenia tres líneas paralelas de conducta: una para consigo mismo, otra para con el público, y otra para con D. Elias y Soledad.</p>
 					<p>Respecto de sí mismo, habia resuelto trabajar, ganar dinero, conquistar su independencia, no sólo para dejar de ser gravoso á su protector, sino para ir reuniendo un pedazo de pan que ofrecer algún dia á su adorada, seguro de que ella lo aceptaría gustosísima, dejando inmediatamente á D. Elias y sus mal ganados millones por los puros goces del amor y de la virtud, únicas bases firmes y duraderas de la felicidad del alma...</p>
 					<p>La Sierra, aquel tesoro que entónces no era de nadie, y al cual por ende tenían derecho todos, á título de aprovechamiento común, fue' también en esta ocasion el ancho campo de la actividad y gigantesco poderío del huérfano. Pero no ya para fantasear allí, corriendo inútiles peligros, ó para gozar á sus anchas de la libre vida de la naturaleza, sino para sacar abundantísimo fruto de las sábias y providenciales lecciones que le diera su padre y del propio conocimiento por e'l adquirido acerca de los misterios y riquezas de la maravillosa Montaña que en otra obra nuestra nos atrevimos á denominar « <seg rend="italics">la Madre de Andalucía.»</seg></p>
@@ -668,9 +716,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>LIBRO III.: LA VUELTA DEL AUSENTE.</head>
+				<head xml:id="ne0175_head_013">LIBRO III.: LA VUELTA DEL AUSENTE.</head>
 				<div n="13" type="chapter" xml:id="ne0175_chap13">
-					<head>I.: LA CAIDA DE LA TARDE.</head>
+					<head xml:id="ne0175_head_014">I.: LA CAIDA DE LA TARDE.</head>
 					<p>Pues que ya sabemos tanto como el que más acerca del gallardo jinete que cruzaba por lo alto de la Sierra cuando levantamos el telón para dar principio al presente drama, tiempo es de que corramos en su seguimiento hasta alcanzarlo, á fin de entrar con él, despues de ocho años de misteriosa ausencia, en la morisca Ciudad que fué su cuna.</p>
 					<p>Restábale apénas una hora de sol á aquel esplendoroso dia, en el momento que nuestro héroe logró salir del laberinto de cumbres y barrancos que t'orma allí la gran cordillera, y descubrió á lo léjos el ámplio horizonte de su país nativo , su llana campiña, sus verdes viñedos y oscuros olivares y las conocidas siluetas de los remotos cerrajones que delimitan la comarca. — La Ciudad querida, la señora de todo aquel territorio, quedaba aún oculta detras de los arcillosos cerros que al oeste le sirven de dosel, bajo el cual duerme hace siglos su muerte histórica; pero ya era fácil distinguir (sobre todo, teniendo anterior idea de su situación) la enhiesta a^uja de la Torre de la Catedral y el Torreon del Yijía de la Alcazaba árabe, derruido pocos años después...</p>
 					<p><seg rend="italics">El Niño de la Bola</seg> detuvo su caballo para contemplar aquel nunca olvidado panorama... La más viva emocion se leia en su semblante, menos duro y altivo que cuando la melancolía de la ausencia y las lecciones del mundo no habian trabajado aún su brioso corazon ... Quitóse reverentemente el sombrero , por vía de salutación á sus lares patrios, y lanzó un hondo suspiro, como quien llega al término de largos afanes.</p>
@@ -698,7 +746,7 @@
 					<p>—Manuel: ¿eres tú?—Hazme el favor de oir una palabra...</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0175_chap14">
-					<head>II.: LA REALIDAD.</head>
+					<head xml:id="ne0175_head_015">II.: LA REALIDAD.</head>
 					<p>Manuel refrenó el potro, y, á la luz de la lámpara que alumbraba aquel humilde Santuario, vio, de pié, á la entrada del dicho porche, separado del interior de la Ermita por unos barrotes de madera, la imponente figura de una mujer alta y vestida de negro, que añadió, al verlo detenerse:</p>
 					<p>—¿Conque eres tú?—¡Gracias á la Virgen Santísima! ¡Temí que hubieses echado por otro camino!</p>
 					<p>—Sí, señora... Yo soy... (respondió Manuel, lleno de asombro.) — ¿Y usted? ¿quién es?—Yo quiero reconocer esa voz...</p>
@@ -764,7 +812,7 @@
 					<p>Y, gritando de esta manera , sollozando ó riendo, pero sin derramar ni una lágrima , salió tambaleándose de la Ermita, montó á caballo, y desapareció fuera de camino, por en medio de los oscuros sembrados, como si huyese á un mismo tiempo de las tierras en que habia estado ausente tantos años y de la Ciudad á cuyas puertas acababa de ser herido de muerte.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0175_chap15">
-					<head>III.: DE LO QUE AQUELLA NOCHE PENSARON Y DIJERON LOS HABITANTES DE LA CIUDAD.</head>
+					<head xml:id="ne0175_head_016">III.: DE LO QUE AQUELLA NOCHE PENSARON Y DIJERON LOS HABITANTES DE LA CIUDAD.</head>
 					<p>La súbita noticia de que el <seg rend="italics">Niño de la Bola</seg> estaba de vuelta, colmado de riquezas, y también de ira, cundió aquella misma noche por toda la Ciudad con la rapidez del pavor, cual si se tratase de la llegada del cólera ó de la proximidad de un ejército enemigo.—El arriero malagueño, vagando con sus tres cargas por aquellas calles para él desconocidas, sin saber dónde meterse, y teniendo que preguntar á los transeúntes «<seg rend="italics">por un D. Manuel Venegas que habia venido con él de Málaga y de quien se habia apoderado, al pasar por delante de cierta Ermita, una especie de alma en pena, vestida de negro»,</seg> fué el primero que, ya cerca de las Animas, reveló al público tan interesante nueva, confirmada poco despues por una antigua criada de la señora de Arregui (álias la <seg rend="italics">Dolorosa),</seg> que tuvo que ir á la botica de la Plaza por tila y flor de azahar para la señá María Josefa, y contó de camino á cuantos halló al paso todo lo acontecido en el santuario campestre, tal y como la madre acababa de referírselo á su hija...</p>
 					<p>Era ya muy tarde para que, en un pueblo tan anticuado, se prolongaran mucho en calles y plazas los corrillos y comentarios de las gentes, áun tratándose de-negocio de tanta monta; por lo que todos se contentaron con cerciorarse de la verdad del hecho, y se marcharon á sus casas, á rumiarlo santamente en familia, al propio tiempo que la ensalada de la cena...—Podemos, pues, asegurar que, empezando por el Palacio del señor Obispo y concluyendo por la última cueva de gitanos, todo el mundo se acostó y durmió aquella noche pensando en nuestro héroe, en la dramática historia de su juventud, en su amor á Soledad, en las amenazas que profirió al marcharse y en el conflicto que de seguro iba á ocasionar su vuelta.</p>
 					<p>Los necesitados de dinero recordaron además la generosa esplendidez con que el hijo de D. Rodrigo habia sacado de apuros á muchos pobres cuando sólo poseia algunos miles de reales, y prometiéronse, al saber que llegaba de Indias con tres cargas de onzas, salir de deudas y trabajos, sin más que presentarle una apuntación de lo que les hacía falta para ponerse á flote. Las mozas por casar, especialmente las llamadas <seg rend="italics">señoritas,</seg> preguntaron si venía soltero, y hablaron pestes de la</p>
@@ -777,7 +825,7 @@
 					<p>Pero ántes de copiar lo que dijo, no estará de más que nos fijemos un poco en la citada forastera y también en cierto jovenzuelo, de ella locamente enamorado, que á la sazón fluctuaba allí entre el suicidio y la gloria, y el cual interesará en algún modo á nuestros lectores, por más que su papel en este drama sea tan breve, accidental y episódico como el de la pobre mujer que tantas grandezas y tantas locuras de la Corte representaba á la sazón en aquel oscurecido pueblo.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0175_chap16">
-					<head>IV.: DOS RETRATOS, POR VÍA DE ENTREMES. (CAPÍTULO INÚTIL, QUE PUEDEN DEJAR DE LEER LOS IMPACIENTES)</head>
+					<head xml:id="ne0175_head_017">IV.: DOS RETRATOS, POR VÍA DE ENTREMES. (CAPÍTULO INÚTIL, QUE PUEDEN DEJAR DE LEER LOS IMPACIENTES)</head>
 					<p>La aristocrática madrileña frisaría en los treinta años, y era una valiente hembra, alta, desenvuelta y garbosa, cuya magistral elegancia suplia con exceso cualquier deterioro que el vivir muy de prisa hubiese causado á su natural hermosura. Tenía mucho talento, mucha gracia y, sobre todo, mucho mundo: conocia y trataba indudablemente (pues ya habia recibido cartas que lo probaban) á todas las personas notables de Madrid, empezando por D. Evaristo Perez de Castro, á la sazón Presidente del Consejo de Ministros, y concluyendo por Olózaga, el orador más insigne de la oposicion: hablaba el francés, el inglés y el italiano, y siempre estaba leyendo libros en estos idiomas, no sólo de Literatura, sino de Medicina, de Historia Natural, á que era muy aficionada, y alguno que otro de Filosofía antireligiosa...: iba, empero, á misa todos los domingos y fiestas de guardar, y áun agradábale la conversación de los sacerdotes ilustrados y bien vestidos: tocaba perfectamente el piano: cantaba de memoria óperas enteras: montaba á caballo en todas posturas: aseguraba que sabía nadar (como lo acreditaría en llegando el verano): tiraba, en fin, muy bien la escopeta y la pistola; y, <seg rend="italics">sin embargo,</seg> ó, por mejor decir, <seg rend="italics">en medio de todo esto, </seg>no habia sido recomendada al señor de Mirabel en concepto de casada ni de viuda, sino en calidad de soltera; lo cual pareció á aquellos atrasados vecinos y vecinas mucho más extraordinario y^sorpren-dente que todas las dichas habilidades.</p>
 					<p><seg rend="italics">—«Es una Diana Caladora»...</seg>—solía exclamar D. Trajano, muy orgulloso y satisfecho de alojar en su casa aquella <seg rend="italics">notabilidad,</seg> y más prendado de sus hechizos y <seg rend="italics">salvaje pudor</seg> (sic) de lo que convenia á un hombre tan provecto, respetable y acaudalado...</p>
 					<p>—No niego yo que sea una <seg rend="italics">Diana</seg> en cuanto á la castidad (le argüía su mujer cuando estaban solos); pero, ¡quién sabe si resultará una <seg rend="italics">Diana pescadora!...</seg></p>
@@ -799,7 +847,7 @@
 					<p>Dijo así el ilustre personaje:</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0175_chap17">
-					<head>V.: DE CÓMO SE CASÓ ANTONIO ARREGUI.</head>
+					<head xml:id="ne0175_head_018">V.: DE CÓMO SE CASÓ ANTONIO ARREGUI.</head>
 					<p>—Meses, años, lustros (ó, por lo menos, un lustro y parte de otro) pasaron sin que volviese á haber noticias del mal llamado <seg rend="italics">Niño de la Bola</seg>...— Digo más: hasta hace dos horas y media, no ha sabido nadie en la Ciudad si era muerto ó vivo, si habia logrado enriquecer ó estaba en la miseria, ni qué zona, clima ó región del globo presenciaba su gigantesca lucha con el Hado...</p>
 					<p>—Pero ¿por qué no escribía?—interrogó la madrileña, cuyo Ínteres hácia aquel drama de carne y hueso, tan apropiado á los gustos literarios de entónces, se comprenderá fácilmente.</p>
 					<p>D. Trajano respondió en el acto:</p>
@@ -882,9 +930,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>LIBRO IV.: LA BATALLA.</head>
+				<head xml:id="ne0175_head_019">LIBRO IV.: LA BATALLA.</head>
 				<div n="18" type="chapter" xml:id="ne0175_chap18">
-					<head>I.: EL CUARTEL GENERAL DE VITRIOLO.</head>
+					<head xml:id="ne0175_head_020">I.: EL CUARTEL GENERAL DE VITRIOLO.</head>
 					<p>Amaneció al fin aquel memorable domingo en que habia de tener comienzo la ruda batalla de treinta y seis horas que riñeron definitivamente el Bien y el Mal en torno de Manuel Venegas y dentro de su atormentado corazon;—batalla empeñadísima y desastrosa, en que tomaron parte más ó ménos activa, directa y justiciable todos los habitantes de la Ciudad, ó sea todos los individuos del gran Jurado que solemos llamar <seg rend="italics">«el público</seg>.»</p>
 					<p>Vitriolo habia citado la noche anterior á su gente «para el toque de diana, en la puerta de la botica», y allí estaban, en efecto , desde el amanecer, los que mds atras denominamos <seg rend="italics">«mochetes muy mal criados, bien que algo instruidos en materias asa¡ delicadas»...,</seg> de que era apóstol y cabeza el pasante de farmacéutico.</p>
 					<p>También se encontraban en aquel centro ordinario de noticias (y excelente acechadero en tal mañana para seguir las operaciones de Manuel Venegas, cuyo domicilio distaba pocos pasos) otras muchas personas de distinta edad, clase y condición, todas ellas muy afanadas en averiguar ó referir lo último que se sabía relativamente á los pavorosos sucesos que se <seg rend="italics">veian llegar...,</seg> que <seg rend="italics">eran infalibles...,</seg> que hasta <seg rend="italics">se aguardaban con impaciencia...,</seg> y contra los cuales no dejaría de tronar todo el mundo ni de proceder activamente la Justicia, luégo que se hubiesen consumado. Las mismas criadas que iban á la compra se acercaban á aquella gran tertulia al aire libre y metian su baza en la conversación, indicando lo que debia hacer cada personaje, <seg rend="italics">asi tenía honor y vergüenza»... </seg>Las más sisadoras y alegres de cascos eran las más implacables y terribles, y repetían punto por punto los juramentos y amenazas que el <seg rend="italics">Niño de la Bola </seg>pronunció hacía ocho años, terminando toda su arenga con la frase sacramental de: <seg rend="italics">u¡Ahora veremos si hay hombres</seg>!»—El propio Alcalde, persona muy digna, discurría allí con la mayor seriedad, sobre si Manuel mataría á Antonio aquella tarde, ó lo dejaría para el dia siguiente en la Rifa, inclinándose á que sucedería lo primero.—Un Familiar del Obispo, todavía simple diácono, aunque ya iba para viejo, pero que comenzaba á tener fama de gran teólogo, habíase aproximado á la reunión, como por casualidad, y no perdía palabra de lo que en ella se decía, sin que áun hubiese despegado los labios por su parte...—En fin, hasta nuestro antiguo amigo, aquel Capitan retirado que ofreció dos pagas á Manuel Venegas la tarde de la célebre Rifa, hallábase entre los curiosos, á pesar de sus setenta y ocho inviernos y gloriosísimos achaques...</p>
@@ -997,7 +1045,7 @@
 					<p>Sigamos nosotros el turbión de la gente, y trasladémonos también á aquel apartado barrio, donde nos aguardan muchas personas conocidas.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0175_chap19">
-					<head>II.: LA PROCESION.</head>
+					<head xml:id="ne0175_head_021">II.: LA PROCESION.</head>
 					<p>Era una hermosísima y apacible tarde, en que la Primavera, vestida de andaluza, llenaba el cielo de esplendores y sonrisas, de cálidos besos el sosegado ambiente y de fragantes rosas los huertos y balcones de la Ciudad, el lustroso peinado de las doncellas y las manos de sus felices ó desgraciados amadores.</p>
 					<p>Todavía faltaba media hora para la salida de la Procesion, y la calle de Santa María de la Cabeza (á cuyo extremo inferior se halla situado el Templo del mismo nombre) estaba ya hecha un patio del Cielo, una antesala de la Gloria, un verdadero Empíreo..., tal y como los nietos de Adán y Eva nos imaginamos y solemos representar semejantes excelsitudes desde nuestro confinamiento terrestre...</p>
 					<p>Quiero decir con esto, que todas las ventanas tenian grandes colgaduras de coco, de zaraza, de filipichín y hasta de damasco, en las cuales era fádi reconocer las colchas de novios de muchas generaciones, miéntras que el suelo de la prolongada calle y de toda la carrera que habia de llevar la Procesión veíase alfombrado de verde juncia, de amarilla gayomba, de olorosos mastranzos y de otras campesinas hierbas... — Las campanas de Santa María repicaban gozosamente por segunda vez, anunciando que ya se acercaba el momento solemne... Cohetes voladores reventaban á docenas en los aires, como notificando á los demas planetas lo que ocurria en el nuestro..., y el tambor de la Milicia Nacional daba <seg rend="italics">golpes</seg> y redobles de <seg rend="italics">atención y llamada,</seg> que hadan subir de punto la general expectativa...</p>
@@ -1129,7 +1177,7 @@
 					<p>Y pronto no quedó más que el recuerdo de la inolvidable Procesion de aquel dia, como del fulgente sol que habia iluminado las engalanadas y ya entenebrecidas calles sólo quedaba un vago crepúsculo en los remotos celajes de Poniente.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0175_chap20">
-					<head>III: ÚLTIMO VUELO DE UN PAR DE PERDICES</head>
+					<head xml:id="ne0175_head_022">III: ÚLTIMO VUELO DE UN PAR DE PERDICES</head>
 					<p>No pocos sudores costó á D. Trinidad Muley deshacerse de otras muchas personas que habian entrado en la Capilla y en la Sacristía en pos de ambos Niños de la Bola, y que aún permanecían allí dos horas después de terminada la Procesion.</p>
 					<p>Por una parte, los socios de la Hermandad celebraban en la Sacristía la siempre borrascosa Junta en que anualmente eligen aquella noche y eñ aquel sitio (tomando bizcochos y unas copitas de rosoli) nuevo Mayordomo ó Hermano Mayor: y, por otro lado, centenares de valientes, algo bebidos por cuenta propia, se arremolinaban en la Iglesia, empeñados en hablar al hijo de D. Rodrigo, á fin de ver qué efecto le producían las noticias (que deseaban darle) del regreso de Antonio Arregui y de su hombrada de haber avanzado hasta allí en busca de satisfacción y desagravio...</p>
 					<p>Pero el buen Padre de almas se movió de tal modo; fué y vino tanto de la Iglesia á la Sacristía y de la Sacristía á la Iglesia; tuvo tan felices ocurrencias en la Junta, y suplicó en tan sentidos términos á la otra gente «que se apiadase, siquiera por aquella noche, del pobre Manuel Venegas, en vez de aumentar sus acerbos disgustos», que al cabo logró, cerca ya de las ocho, verse libre de los Cofrades y del último calamocano, bravucón y cócora...—Púsose entonces los hábitos de calle; dio al Sacristan, en voz muy baja, algunas órdenes que parecían importantísimas; apretó la cara cuanto pudo, como para tener aire de muy enfadado, y pasó á poner en libertad á su prisionero.</p>
@@ -1296,7 +1344,7 @@
 					<p>—Y ¡qué buenas deben de estar las picaras!— ¡Esta Polonia guisa como un ángel!</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0175_chap21">
-					<head>IV.: LOS NIÑOS Y LOS VIEJOS.</head>
+					<head xml:id="ne0175_head_023">IV.: LOS NIÑOS Y LOS VIEJOS.</head>
 					<p>Poquísimas personas encontraron en las calles D. Trinidad y Manuel al trasladarse de una casa á otra, y todas ellas se arrimaron á las paredes, con no ménos susto que respeto, para dejar pasar á aquellos dos maravillosos personajes de que tanto se estaba hablando en toda la Ciudad.</p>
 					<p>No sucedió, empero, lo mismo cuando, llegados á la Plaza Mayor, tuvieron que cruzar por delante de la célebre botica... Hallábase ésta á medio cerrar, y en la media puerta que aún dejaba paso á la luz de adentro veiase á <seg rend="italics">Vitriolo,</seg> que despedía á sus últimos tertulios, dándoles tal vez instrucciones para el dia siguiente.</p>
 					<p>Tan luégo como divisaron y reconocieron á la claridad de la luna el interesante grupo que formaban el Cura y Manuel, comenzaron á reir y murmurar en voz baja, y dun los mds jóvenes se atrevieron á seguirlos y á pasar casi rozando con ellos, á ver si les cogian alguna frase.</p>
@@ -1370,7 +1418,7 @@
 					<p>Manuel quedó solo con el Niño Jesús.</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0175_chap22">
-					<head>V.: EL ROCÍO DEL ALMA.</head>
+					<head xml:id="ne0175_head_024">V.: EL ROCÍO DEL ALMA.</head>
 					<p>Las doce de la noche acababa de cantar el sereno cuando D. Trinidad y la seña María Josefa se retiraron de la sala, dejando en manos de la famosa Imágen del Niño de la Bola la solucion de la suprema crisis á que habia llegado el espíritu de Manuel Venegas.</p>
 					<p>Reinó desde entónces en la casa un profundo silencio, interrumpido únicamente por los cautelosos pasos del vigilante Cura, que se acercaba de vez en cuando á la rendija de la puerta á observar á Manuel, y por los cuchicheos de las mujeres, acuarteladas en la cocina.</p>
 					<p>Polonia se encontraba entre ellas, por no haber podido dominar su inquietud y desasosiego quedándose en la otra casa. — Dormia el hijo de Soledad en brazos de su abuela, despues que Basilia lo hubo amansado con algunos bizcochos.— La <seg rend="italics">Vo-lanta,</seg> á fuerza de llorar hipócritamente, habia conseguido que D. Trinidad dejase de mirarla con prevención, y formaba también parte de aquella especie de tertulia de enfermeras, en que tan buenas cosas se estarían diciendo.—Y, por último, el arriero de Málaga roncaba en el patio, incómodamente sentado en una dura silla, como lo exigia la gravedad de las circunstancias.</p>
@@ -1475,7 +1523,7 @@
 					<p>No intentaremos describir los últimos minuto» que Manuel Venegas permaneció todavía en su casa, ni los renovados, tristísimos adioses que allí se dieron aquellos se'res de tan sencillo y tierno corazon...—Temeríamos afligir demasiado á nuestros lectores, que, pues todavía no han soltado esta obra en que se rinde culto á la pobreza de espíritu. seguramente tienen la dicha de pensar y sentir como ellos.—Preferimos, pues, salir á la Plaza, y confundirnos con la generalidad del público, en cuya compañía podremos ver con más frescura la solemne marcha de Manuel Venegas y los dramáticos lances que acontecieron con este motivo.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0175_chap23">
-					<head>VI.: MARCHA TRIUNFAL.</head>
+					<head xml:id="ne0175_head_025">VI.: MARCHA TRIUNFAL.</head>
 					<p>Hacía una mañana hermosísima, sobre todo para aquellos felices mortales que 110 tuvieran fijos sus ojos en la negrura del revuelto mar de las pasiones, sino que hubiesen preferido salir al campo á espaciar su vista y su alma por el sublime templo de la Naturaleza, por la pintada Tierra, llena de prodigios, por la rutilante bóveda del Cielo, y por el propio cielo de una conciencia suficientemente limpia para poder reflejar las misteriosas visiones de lo Infinito...</p>
 					<p>No estaban de este humor aquel funesto lunes, 6 de Abril de 1840, las muchas personas que acudían á la Plaza Mayor de la Ciudad á enterarse de los adelantos que el dolor y la ira habian hecho durante la noche en el corazon de Manuel Venegas y Antonio Arregui. Ni hay que decir que el grupo en que más excitados estaban los ánimos, por cuenta ajena, era el formado, como de costumbre, á la puerta de la Botica, ¡terrible aduana, por donde tenía que pasar el infortunado <seg rend="italics">Niño de la Bola</seg> al marcharse del pueblo!</p>
 					<p><seg rend="italics">Vitriolo</seg> estaba más acerbo y feroz que nunca, sin poder callarse (aunque no dejaban de aconsejárselo sus discípulos), y, si por acaso interrumpía sus discursos, era para decir á los que iban á comprar medicinas:</p>
@@ -1545,9 +1593,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>EPÍLOGO.:</head>
+				<head xml:id="ne0175_head_026">EPÍLOGO.:</head>
 				<div n="24" type="chapter" xml:id="ne0175_chap24">
-					<head> I.: LLEGADA DE DESAIX Á MARENGO.</head>
+					<head xml:id="ne0175_head_027"> I.: LLEGADA DE DESAIX Á MARENGO.</head>
 					<p>De buena gana hubiéramos terminado esta obra con el capítulo anterior...—Nada habria perdido en ello la dignidad del género humano (en cuanto puedan representarla personajes tan imperfectos y oscuros como Manuel Venegas y la <seg rend="italics">Doloroso),</seg> y mucho nos lo hubiesen agradecido nuestros lectores predilectos..., que, si no son los más sabidos y leídos, tampoco son los de peor alma.</p>
 					<p>Pero hoy no tenemos la libertad discrecional del novelista: hoy somos esclavos de unos hechos desgraciadamente reales y positivos, y, por lo tanto, nos vemos en la dura obligación de referir aquí el trágico suceso que llenó de luto la Ciudad aquel inolvidable dia, y que sobrepujó á los deseos del mismo <seg rend="italics">Vitriolo</seg> y á las aficiones románticas de la forastera.</p>
 					<p>No creáis, sin embargo, que la indicada catástrofe contradijo en el fondo (ya que sí en apariencia) el saludable concepto final que , á nuestro juicio, se desprende de lo que llevamos narrado hasta ahora. Antes bien le sirvió de comprobacion inmediata, demostrando cuán en lo cierto estuvo don Trinidad Muley al decir á Manuel Venegas, luego que se enteró de que habia perdido la <seg rend="italics">fe</seg> religiosa (cuya restauración <seg rend="italics">por el sentimiento apenas</seg> se habia iniciado despues en su pobre alma):—«; <seg rend="italics">Va serás del último que llegue</seg>esto es: ya no tendrá para tí más <seg rend="italics">autoridad</seg> el Bien que el Mal: ya elegirás entre ellos según tus aficiones, ó según el estado de lucidez de tu conciencia: ya no regulará tus actos otra <seg rend="italics">Ley</seg> que la que dicten tus propios afectos: ya no servirá de límite á tu soberbio albedrío el angosto cauce de la <seg rend="italics">obediencia:</seg> ya caerás en todos los abismos que te atraigan...</p>
@@ -1637,7 +1685,7 @@
 					<p>—¡Soledad! no dirás que te olvido...—Tú echaste mi carta á un perro para que se la comiera... ¡Yo he echado la tuya á un tigre furioso!...— ¡Estamos en paz, alma de mi alma!</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0175_chap25">
-					<head>II.: LA RIFA.</head>
+					<head xml:id="ne0175_head_028">II.: LA RIFA.</head>
 					<p>Aquel mismo sol cuyos matutinos rayos habian alumbrado la solemne y conmovedora partida de Manuel Venegas, continuaba á las tres y media de la tarde su majestuosa marcha por el cielo, llevando en pos de m las horas póstumas y sobrantes de un dia al parecer ya inútil, cuyo Ínteres y juicio histórico dieron por concluidos tan de mañana todos los habitantes de la Ciudad.</p>
 					<p>Obedeciendo, empero, la mayoría de éstos á la ley de inmemoriales costumbres, habian acudido, después de comer, á aquel anfiteatro de amarillos cerros, cuajados de habitadas cuevas, donde, como todos los años en tal fecha, debía celebrarse el Baile de Rifa del Niño de la Bola, y donde ocho años ántes tuvo lugar la fatal subasta en que el hijo de D. Rodrigo fué derrotado por D. Elias Perez.</p>
 					<p>No sólo este acaudalado sujeto, sino otros muchos ricos y pobres de los que allí vimos, habian muerto desde <seg rend="smallcaps">i83 </seg>á 1840. En cambio, innúmera-bles niñas y niños de entónces eran ya mujeres y hombres hechos y derechos; muchos solteros y solteras se habian casado y tenian hijos, y no pocos padres y madres á quienes conocimos frescos y buenos mozos figuraban ya entre los viejos y los abuelos... — Por consiguiente, el cuadro, aunque hubiese variado en sus individuales pormenores, venía á ser el mismo á primera vista y en conjunto.</p>

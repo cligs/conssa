@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">De tal palo, tal astilla</title>
-				<title type="sub"></title>
+				
 				<title type="short">PaloAstilla</title>
-				<title type="idno">
-					<idno type="viaf">7146095279200371797</idno></title>
+				
 				<author>
-					<idno type="bne">XX982332</idno>
-					<idno type="viaf">54167127</idno>
-					<name type="short">Pereda</name>
-					<name type="full">José María de Pereda</name>
+					<name type="short" ref="#Pereda"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2251</measure>
@@ -139,13 +131,55 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0294</idno>
+						<idno type="cligs">ne0294</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/de-tal-palo-tal-astilla--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Imprenta de Manuel Tello, <date when="1885">1885</date></bibl>
-				<bibl type="edition-first"><date when="1880">1880</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">De tal palo, tal astilla</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/7146095279200371797/">7146095279200371797</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1096202166">1096202166</idno>
+				</idno>
+				</title>
+					<author xml:id="Pereda">
+						<name type="full"><forename>José María</forename> <surname>de Pereda</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9754 - IO 9756">IO 9754 - IO 9756</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118790293">118790293</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q4115628/">Q4115628</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX982332.html">XX982332</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/54167127/">54167127</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/de-tal-palo-tal-astilla--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Imprenta de Manuel Tello, <date when="1885">1885</date></bibl>
+					<bibl type="edition-first"><date when="1880">1880</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1885">1885</date>, <publisher>Tello [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="540243523" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=540243523"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1891">1891</date>, <publisher>Tello [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464178908" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464178908"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal Palo, tal Astilla</title> <date when="1910">1910</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="133536025" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133536025"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1921">1921</date>, <publisher>Librería General de Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584392796" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584392796"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De Tal Palo, Tal Astilla</title> <date when="1935">1935</date>, <publisher>Tello</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1376877643" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376877643"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1944">1944</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires [u.a.]</pubPlace> 		<idno type="ppn" n="1143139127" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1143139127"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1965">1965</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1419890735" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1419890735"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1965">1965</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="52133103X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=52133103X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1976">1976</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="188626867" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=188626867"/> 		<idno type="isbn" n="8437600553"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1979">1979</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465617530" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465617530"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1981">1981</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1607333848" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1607333848"/> 		<idno type="isbn" n="8423904873"/></bibl>
+						<bibl type="further-edition"><title type="main">De tal palo, tal astilla</title> <date when="1981">1981</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="440251702" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=440251702"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1981">1981</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="225389010" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=225389010"/> 		<idno type="isbn" n="8437600553"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1984">1984</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1619292912" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1619292912"/> 		<idno type="isbn" n="8437600553"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Don Gonzalo González de la Gonzalera. De tal palo, tal astilla</title> <date when="1991">1991</date>, <publisher>Tantín</publisher> <pubPlace>Santander</pubPlace> 		<idno type="ppn" n="1102409677" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1102409677"/> 		<idno type="isbn" n="8487464467"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Don Gonzalo González de la Gonzalera. De tal palo, tal astilla</title> <date when="1991">1991</date>, <publisher>Ed. Tantín</publisher> <pubPlace>Santander</pubPlace> 		<idno type="ppn" n="124020992" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124020992"/> 		<idno type="isbn" n="8487464467"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De tal palo, tal astilla</title> <date when="1996">1996</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="226527786" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226527786"/> 		<idno type="isbn" n="8437600553"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +190,14 @@
 				<p>Muere la madre de Águeda, doña Marta Rubárcenas, y en el testamento ordena a esta que se case con un hombre católico. La protagonista con excesiva cerrazón, conmina a su enoramdo a convertirse o abandonarla. Tras mil intentos desesperados Fernando, que no logra ver la luz de la fe cristiana, se suicida.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9755" key="IO 9755" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -180,7 +222,7 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">moralist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
@@ -189,7 +231,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela costumbrista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela de tesis</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -223,6 +265,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-07-21" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -233,7 +276,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0294_chap1">
-				<head>- I - : Pateta </head>
+				<head xml:id="ne0294_head_000">- I - : Pateta </head>
 				<p>Si no fuera por ese privilegio maravilloso y descomunal que se ha otorgado a los novelistas para describir lo más recóndito, leer lo que aún no está escrito, y hasta hablar de lo que no entiendes una jota, apuradillo me viera yo en este instante para describir el lugar de la escena con que doy comienzo a la presente historia. Tan oscura es la noche, tan deshecha la tempestad, tan profunda y angosta la hoz en cuyo esófago mismo hemos de penetrar para ver lo que allí pasa.</p>
 				<p>Cierto que, siguiendo los procedimientos de muy acreditadas escuelas, alguien en mi caso intentara un esfuerzo de inducción, aplicando ora el oído, ora las narices, ora las manos, allí donde los ojos son inútiles por la intensidad de las tinieblas; y anotando este rumor y aquel estruendo, cierto tufillo de sótano o de ortigas o de musgo, tal cual aroma de <seg rend="italic">poleos</seg> y zarzamora, y haciendo con todo este acopio una discreta y erudita excursión por los campos de la geología, de la química orgánica, de la física experimental y hasta por la <seg rend="italic">Ley de aprovechamiento de aguas</seg>, llegara a darnos, no ya las partes componentes del misterio, sino su panorama en realce, con su flora y su fauna correspondientes. Yo admiro tan ingeniosa sapiencia; pero sin rubor declaro que no la poseo, y que, por ende, no intento salir del apuro valiéndome de tales procedimientos. Lo mismo fuera meterme con los ojos cerrados entre el fragor de un terremoto.</p>
 				<p>Novelista, aunque indigno, al privilegio me agarro, y amparado con él, allá va en cuatro palabras la descripción del cuadro, como si viéndole estuviera a la luz del mediodía.</p>
@@ -388,7 +431,7 @@
 				<p>Pero de este asunto y de otros con él muy enlazados, hablaremos en el capítulo siguiente.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0294_chap2">
-				<head>- II - : La comisión del doctor </head>
+				<head xml:id="ne0294_head_001">- II - : La comisión del doctor </head>
 				<p>El cuadro que alumbró la luz que introdujo en la alcoba don Lesmes era poco risueño. He aquí sus figuras y principales accesorios: un lecho revuelto, y en él un cuerpo humano devorado por la fiebre. El cuerpo era de mujer, y de mujer de hermosas facciones, aunque a la sazón alteradas por el fuego de la calentura. Tenía la cabeza en escorzo, con la boca en lo más alto de él; y el óvalo gracioso de la cara recortábase en un fondo de enmarañadas guedejas de cabellos grises, desparramados sobre la almohada. Jadeaba la enferma; y las ropas del lecho alzábanse y descendían al agitado compás de una respiración fatigosa y sibilante, como si al llegar el aire a los resecos labios atravesara mallas de alambre caldeado.</p>
 				<p>Sentada junto a la cabecera de la cama estaba una joven de cabellos rubios y cutis blanquísimo, con los brazos cruzados bajo el pecho de gallardo perfil, y con los azules, rasgados ojos, velados por las lágrimas, fijos en el rostro de la enferma, y atenta a los menores movimientos de su cuerpo.</p>
 				<p>Al alcance de su mano había una mesa con jaropes de botica, que desde lejos se daban a conocer por lo subido de sus olores; y entre los jaropes, un reloj de bolsillo con la tapa abierta. Sobre la cabecera de la cama, colgado en la pared, un crucifijo de marfil; y debajo, una benditera y un ramito de laurel sujeto al lazo de seda que la sostenía.</p>
@@ -489,7 +532,7 @@
 				<p>Al mismo tiempo lanzó Águeda un grito desgarrador, y se abrazó al cadáver de su madre. Los sollozos, hasta entonces comprimidos, trocáronse en llanto ruidoso: moviéronse en desconcertado tropel las figuras vivas del triste cuadro alrededor del fúnebre lecho... y yo dejo aquí los pinceles, lector, declarando, en alivio de mi conciencia, que ni uno solo de los tristes pormenores apuntados en este capítulo son de rigurosa necesidad en la presente historia. ¡Mira tú si hemos perdido el tiempo!</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0294_chap3">
-				<head>- III - : El sobrino de su tío </head>
+				<head xml:id="ne0294_head_002">- III - : El sobrino de su tío </head>
 				<p>Macabeo pasó la noche como un perro fiel a la vera de su amo. Ni siquiera se acercó a la lumbre para secar su ropa, ni se acordó de que no había cenado, ni el cansancio de la pasada caminata le pidió su medicina de sueño. La agonía de la señora, el dolor de sus hijas y el intento de servir de algo en aquellas tan largas horas de desconsuelo le absorbían la atención, y lloró como chiquillo cuando los lamentos de las huérfanas y de los criados hicieron saber que el temido infortunio se había consumado. Después hincó sus rodillas en el duro suelo, y oró por el alma que estaba ya en presencia de Dios.</p>
 				<p>Calentaban los rayos del sol cuando el doctor bajó al portal con las polainas ceñidas y las espuelas calzadas; y ya Macabeo le aguardaba con el garrote en la mano, el caballo ensillado y el capote sobre el arzón. Con el desvelo y las lágrimas vertidas, tenía el pobre hombre los ojos como puños.</p>
 				<p>El doctor le miró con interés; y conociendo por las señas lo mucho que había padecido y lo poco que había descansado, diole unas palmaditas en el hombro, y le dijo entre grave y chancero:</p>
@@ -558,7 +601,7 @@
 				<p>Y así entró en el corral, apaleando las piedras, y cerró los portones con estrépito.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0294_chap4">
-				<head>- IV - : La raza </head>
+				<head xml:id="ne0294_head_003">- IV - : La raza </head>
 				<p>Decían las gentes de Perojales que los Peñarrubia eran como los vencejos: aparecía uno, arreglaba el nido, formaba una familia y desaparecía con ella, sin saberse adónde ni por qué. Al cabo de los tiempos, volvía un nuevo Peñarrubia, restauraba el caserón de abolengo y etc. Así hasta nuestro doctor.</p>
 				<p>Todos los de Peñarrubia, según la tradición perojaleña, parecían fundidos en un mismo troquel. Todos eran misteriosos, huraños, poco afectos a la tierra nativa, y señaladamente irreligiosos. Esa cualidad era la que podía llamarse, como ninguna de las otras, el sello de raza. De manera que no tenían número las horrendas historias y los pavorosos relatos que, a propósito de la insigne familia, pasaban de padres a hijos entre el vulgo del país, gente sencilla y cristiana y, por contera, suspicaz y maliciosa.</p>
 				<p>Apenas hay aldea en la Montaña que no tenga su <seg rend="italic">Casa</seg> correspondiente; casa infanzona y de prosapia, no siempre rica, pero muy a menudo tan rica como empingorotada. Esa casa pertenece al pueblo, como el <seg rend="italic">son</seg> de las campanas de la iglesia, como la fama de ciertos frutos peculiares a su suelo, la de la altura del monte comunal o la de las truchas del río; y no porque provee de pan a los menesterosos, de consejos a los atribulados, de cartas a los que se van, de padrinos a casi todos los recién nacidos, y hasta de materia de difamación a los ingratos y malévolos, sino por cuestión de vanidad. Que diga un montañés: «¡Los Cuales de mi pueblo! Gran casa, gente de lustre, de mucha hacienda y de buena entraña». No faltará quien replique, royendo la colilla y echándose sobre el palo: «No diré que no; pero ¡cuidado con los Tales de mi lugar! Nada les debo, la verdad sea dicha; pero sin ofensa de nadie, donde está esa casa, que no alce ninguna chimenea. En punto a posibles y señoríos, reyes pueden entroncar con ella, y saldrán muy honrados».</p>
@@ -606,7 +649,7 @@
 				<p>De la puerta que abre al patio en la muralla, sale un camino que en el mismo llano de la meseta se divide repentinamente en dos, echando el uno hacia la hoz, y el otro en dirección contraria; caminos que parecen los brazos de aquel gigante, extendidos para cerrar, por los términos de sus dominios, toda salida a la aldea, que le contempla desde allá abajo, a la sombra de la montaña, sobre rústico y fragante tapiz de flores y entre verdes maizales, con el oído atento a las murmuraciones del río, que por detrás de ella se desliza alejándose, como si huyera de manchar sus aguas con las tierras de aquel abominable señorío.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0294_chap5">
-				<head>- V - : La familia </head>
+				<head xml:id="ne0294_head_004">- V - : La familia </head>
 				<p>Mientras el doctor se acercaba a su casa por el camino de la hoz, por el opuesto subía, con igual rumbo, otro viajero, también a caballo. Hubiéranse hallado frente a frente en lo alto de la meseta, pues casi a igual distancia de ella caminaban, si no lo hubiera impedido un grupo de árboles y malezas que ocultaron al doctor al acabarse el recuesto que iba subiendo poco a poco. Así es que cuando apareció en lo despejado, el otro, sin haberle visto, estaba apeándose en el patio del caserón o, como si dijéramos, dentro del rastrillo de la fortaleza. Era el tal viajero, gallardo mozo, ligeramente moreno, pálido, con el pelo, los ojos y el bigote negros como una endrina, y los dientes blancos como la porcelana; cabeza, en una palabra, de árabe de teatro, hasta con su desdeñosa melancolía. Vestía un elegante y cómodo traje de camino, y a la legua se echaba de ver que no eran las rústicas asperezas de Perojales las que producían tantos refinamientos y gallardía en una sola pieza.</p>
 				<p>Llegó el doctor en esto; y en cuanto le conoció, arrojóse del caballo que montaba, no sin que el joven le viera y se lanzara a su encuentro. Abrazáronse estrechamente.</p>
 				<p>-Pero ¿qué milagro es éste? -dijo al punto el mozo-. ¡Tú viajando!... ¡y a estas horas!</p>
@@ -726,7 +769,7 @@
 				<p>-¡Hasta siempre, hijo mío! -respondió el padre contemplándole embelesado.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0294_chap6">
-				<head>- VI - : Don Sotero </head>
+				<head xml:id="ne0294_head_005">- VI - : Don Sotero </head>
 				<p>De las pocas casas que en Valdecines tenían balcón, una era la de don Sotero; pero entre las de esta categoría, era la más vieja y sucia y destartalada. A un lado se le arrimaba una huertecilla mal cercada y al opuesto una casuca baja, a la cual se adhería otra por el estilo y más baja aún; tanto, que las primeras ramas de un breval que la amparaba por el costado descubierto, cuando se zarandeaban sobre las tejas al menor soplo del viento, no las tocaban. Las tres casas tenían una misma corralada, abierta.</p>
 				<p>En las dos pequeñas todo era ruido, luz y movimiento, como que en ellas hacían vida común los hombres y las bestias; hasta el punto de que por el mismo <seg rend="italic">sarzo</seg> pasaban, para salir por entre las tejas, a falta de mejor chimenea, el humo de la cocina y el tufillo del establo, el mugido de las vacas y las voces de la familia. Las puertas sólo se entornaban, y eso, a las horas de dormir. Abiertas de par en par durante el día, cuanto en los pobres hogares se encerraba, lo ponía de manifiesto el primer rayo de sol que llegaba al pueblo. ¡Tan sencillo y tan escaso era, y tan a la vista estaba! Lo propio sucedía con los pensamientos de las honradas gentes que allí moraban: siempre andaban a gritos en el portal, a merced del primer oído que quisiera apoderarse de ellos.</p>
 				<p>En la casa de don Sotero todo era silencio, oscuridad y misterio. Su puerta no se abría sino para dar paso, muy rara vez en el día, a alguna persona; y en cuanto a las ventanas, de higos a brevas, dejaban un resquicio entre las dos hojas para que entrara el aire o saliera el polvo de la escoba, si es que allí se barría alguna vez. Cito este contraste como disculpa de que la pública curiosidad no apartase nunca los ojos ni el pensamiento de aquella casa.</p>
@@ -792,7 +835,7 @@
 				<p>Con lo cual, la vieja se volvió a su escondrijo, y el hombre a sus papeles.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0294_chap7">
-				<head>- VII - : Águeda </head>
+				<head xml:id="ne0294_head_006">- VII - : Águeda </head>
 				<p>Si la superficie de un dormido lago se transformara súbitamente en pradera verde y lozana, y a un extremo de ella brotaran un bardal espeso aquí; un grupo de castaños allá; dos higueras enfrente; un robledal más lejos; una fila de cerezos delante de un barullo de manzanos y <seg rend="italic">cerojales</seg>; una mimbrera junto a una charca festoneada de juncos, <seg rend="italic">menta de perro</seg> y <seg rend="italic">uvas de culebra</seg>, un alisal hacia el monte... y otros cien adornos semejantes, que el buen gusto del lector puede ir imaginando sin temor de alejarse de la verdad; y luego colocáramos una casita, agazapada debajo de su ancho alero, como tortuga en su concha, al socaire del bardal; otras dos parecidas, a la sombra de las higueras; cuatro o cinco, no mayores, detrás de los castaños; algunas con balcón de madera, aquí y allí compartiendo amistosamente con las más humildes el amparo del robledal o los sabrosos dones de los frutales; otras muchas, y cada una de por sí, arrimadas a la setura, de un <seg rend="italic">solar</seg>, o a la pared de un huerto; y en el centro de este <seg rend="italic">ordenado</seg> y pintoresco <seg rend="italic">desorden</seg>, una iglesia modestísima alzando su aguda espadaña como pastor vigilante la cabeza para cuidar de su disperso rebaño; y, por último, subiéramos al monte frontero, y en una de sus cañadas tomáramos la linfa de un manantial, y la dejáramos descender a su libertad, y arrastrarse a las puertas de este caserío, y murmurar entre las lindes de dos huertos de la mala acogida que se le hiciera en las abiertas corraladas, hasta que después de refrescar las raíces de los álamos cercanos a la iglesia y hacer a ésta una humildísima reverencia que le costara un nuevo rodeo en su camino, se largara mies abajo, entre berros y espadañas, tendríamos, lector discreto, pintiparado a Valdecines. Así está tendido al comienzo de un angosto y no muy largo valle, llano como la palma de la mano; así están distribuidos como en un dibujo de hábil artista, sus caseríos, sus huertos, sus arboledas y sus aguas. Montes de poca altura, pero bien vestidos, y la sierra que conocemos, amparan el valle por todas partes: y se une a otro más extenso por el angosto boquete que da salida al riachuelo que, paso a paso y con la ayuda de otros vagabundos como él, va tomando humos de río.</p>
 				<p>La casa en que han ocurrido los sucesos de que dimos noticia al lector en el capítulo II es de las más próximas a la sierra. Como la mayor parte de las solariegas de la Montaña, sólo en dos fachadas tiene balcones: al oriente y al mediodía. La corralada, de que también hemos hablado, está delante de esta fachada; la del oriente cae sobre un jardín separado de la vía pública por un enverjado que arranca de la pared del corral y se une por el otro extremo a un muro que, después de describir una curva extensísima, va a soldarse con el otro costado de la portalada, dejando encerrado un vasto parque en que abunda, con inteligente distribución, lo útil y lo agradable.</p>
 				<p>Dentro de esta casa no se busque el muelle lujo de la ciudad. Holgura, comodidad, abundancia, buen gusto y primores de limpieza, eso sí. Durante el feliz matrimonio de la última de los Rubárcenas con el señor de Quincevillas se hicieron en ella notables reformas, procurándose hermanar en lo posible las reliquias de antaño y las exigencias de las necesidades modernas. Son muy venerables los techos de madera, las camas de alto testero y los bancos de encina con tallado espaldar; pero son mucho más cómodos los cielos rasos, las camas metálicas, con jergón de muelles y los sillones tapizados, siempre que se trata de dormir y de sentarse. Cuando se fundó aquella casa, todo el lujo de <seg rend="italic">clase</seg> consistía, después de los indispensables blasones esculpidos en piedra sobre el centro de la <seg rend="italic">solana</seg>, en una portalada de sillería con adornos y remates de escultura, costoso marco en que encajaban dos portones macizos atestados de clavos de altísima cabeza, para dar ingreso a un corral, obstruido ordinariamente por el acopio de leña para largos meses, un carro de labranza, un horno de pan, el brocal de un pozo con su correspondiente pila, y a menudo un montón de estiércol, amén del perro y las gallinas, cuando no los conejos. Esto al mediodía, en lugar preferente. El huerto, pequeño y sombrado por elevadas tapias, como cosa indigna de verse, estaba relegado a la fachada del norte, es decir, al frío y a la oscuridad. Sin embargo, era otro detalle <seg rend="italic">de clase</seg>; por lo cual se cargaba el despilfarro y la fachenda en las tapias que se veían, importando dos cominos que la fruta y las legumbres fueran pocas y malas.</p>
@@ -852,7 +895,7 @@
 				<p>-Adiós, hija mía -contestó Águeda, estrechando a la niña contra su pecho y dándola un beso en los rizos de la frente.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0294_chap8">
-				<head>- VIII - : La espina de Águeda </head>
+				<head xml:id="ne0294_head_007">- VIII - : La espina de Águeda </head>
 				<p>Mientras esto pasaba arriba, abajo, cerca de la portalada, se apeaba un personaje, no desconocido para el lector, y entregaba el caballo a Macabeo, que le había visto llegar y tenido el estribo.</p>
 				<p>Y decía Macabeo:</p>
 				<p>-Ya extrañaba yo que, hallándose usted en la tierruca, no se diera una vuelta por acá a rendir su homenaje correspondiente a la pobre señorita... Porque, hablando en punto de verdad, ¡qué caráspitis!, si en vida de la señora, que en paz descanse, hubo entre ustedes sus dares y tomares, nunca mejor ocasión que ésta para echar pelillos a la mar; y nada tiene que ver el que las gentes no congenien, con venir a limpiar las lágrimas de los que lloran por los muertos: la caridad de Dios lo manda y el mesmo corazón lo pide. ¿No es verdad, don Fernando?</p>
@@ -950,7 +993,7 @@
 				<p>-¡Señor y Redentor mío, inspírale! ¡Envía a su corazón una chispa de tu gracia! ¡Que crea y se salve, aunque yo le pierda; y si el peso de sus errores ha de vencerle, que no me falten fuerzas par llevar con resignación la cruz de mi desventura!</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0294_chap9">
-				<head>- IX - : Los trapillos de Macabeo </head>
+				<head xml:id="ne0294_head_008">- IX - : Los trapillos de Macabeo </head>
 				<p>Al mismo tiempo que Fernando abría el postigo de la portalada para salir del corral, iba a entrar en él don Sotero. Halláronse, pues, frente a frente y a media vara de distancia, los dos personajes. Fernando retrocedió como si hubiera pisado una culebra. Don Sotero, con la cabeza gacha, según su costumbre, después de detenerse un rato, como para ceder el paso al joven, díjole, mirándole al mismo tiempo por debajo de la espesura de sus cejas:</p>
 				<p>-No me pesa verle a usted bueno, caballerito.</p>
 				<p>-Me explico sin esfuerzo esa satisfacción -respondió Fernando apretando los puños.</p>
@@ -1106,7 +1149,7 @@
 				<p>-¡De todas suertes no me pesa el desfogue, porque, así como así, no podía ya con la congoja!</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0294_chap10">
-				<head>- X - : Las uñas del raposo </head>
+				<head xml:id="ne0294_head_009">- X - : Las uñas del raposo </head>
 				<p>Oyéronse a la puerta del gabinete en que Águeda se hallaba unos golpecitos muy acompasados y una voz afectadamente tímida, que preguntaba:</p>
 				<p>-¿Hay permiso?</p>
 				<p>Águeda se estremeció, como quien despierta de un largo sueño con el graznido de la corneja, y respondió de muy mala gana:</p>
@@ -1184,7 +1227,7 @@
 				<p>Después se puso a escribir una carta.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0294_chap11">
-				<head>- XI - : Pasacalle </head>
+				<head xml:id="ne0294_head_010">- XI - : Pasacalle </head>
 				<p>En cuanto la tuvo escrita y cerrada, mandó llamar a Macabeo. Presentóse éste con la puntualidad que se le impuso en lo apremiante del recado, y le dijo Águeda:</p>
 				<p>-¡Necesito que inmediatamente me hagas el más grande favor que puedes hacerme en tu vida, por larga que sea!</p>
 				<p>Macabeo respondió sin titubear:</p>
@@ -1248,7 +1291,7 @@
 				<p>La voz y la estaca y los estacazos eran del piadosísimo don Sotero, que salía de la iglesia de rezar el <seg rend="italic">cuarto de oración</seg>. Tío y sobrino, éste delante y rengueando, y el otro aguijoneándole con la voz y midiéndole a trechos las costillas con la estaca, tomaron el rumbo del viejo caserón, y llegaron a la corralada sin otra novedad que digna de mencionarse sea en este imparcial y verídico relato.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0294_chap12">
-				<head>- XII - : Más notas para un retrato </head>
+				<head xml:id="ne0294_head_011">- XII - : Más notas para un retrato </head>
 				<p>Trasponía en aquel instante la luna, oronda y mofletuda, las cumbres más lejanas, y derramaba su luz pálida y confusa por todos los ámbitos de Valdecines. Alcanzábale su gratuita ración correspondiente a la casa de don Sotero que, a tener que pagarla, sin ella se pasara tan guapamente; y he aquí que, de pronto, se detienen tío y sobrino, viendo que en el portal había un caballo amarrado al poste, y una persona que entretenía la impaciencia paseando de un lado a otro, entre el caballo y la pared del fondo.</p>
 				<p>Como en los ojos de don Sotero había algo de la virtud de los del tigre, no tardó en conocer al paseante.</p>
 				<p>-Sube -dijo a Bastián muy callandito- y di que encienda la vela de mi cuarto.</p>
@@ -1318,7 +1361,7 @@
 				<p>Después llamó a Celsa, y la mandó preparar la cena.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0294_chap13">
-				<head>- XIII - : Lo que se decía </head>
+				<head xml:id="ne0294_head_012">- XIII - : Lo que se decía </head>
 				<p>Ya que en Valdecines estamos, y de noche y con luna, hemos de dar un vistazo a la botica. Porque en Valdecines había, a la sazón, y habrá hoy probablemente, su poco de botica, de la cual se surtían, en los trances muy apurados de la vida, hasta siete pueblos de tres leguas en contorno. «Su poco de botica», dije, porque, en rigor de verdad, la de Valdecines no era botica por entero. Por de pronto, el boticario, hombre que ya pasaba de los sesenta, así manejaba la espátula en su laboratorio, como el zarcillo en la huerta, o el hacha en el monte cuando le pedían muy caro por bajarle un carro de leña, pues como él decía al tachársele estas inconveniencias profesionales, los tiempos corrían apurados, <seg rend="italic">el arte</seg> no lucía, y la familia, femenina, sin una sola excepción, abundante y, desacomodada, a eso y a mucho más le obligaba..., por ejemplo, a ser industrial con matrícula, sin dejar de ser científico con real diploma; razón por la que, en el no muy holgado local de la botica, lo mismo se despachaban píldoras y vomitivos, que sogas de esparto, clavos de ripia y jabón de Málaga; de donde resultaba, a creer a los marchantes, que las medicinas de aquella botica supiesen a especies y bacalao, y a cerato y a valeriana los comestibles de aquella tienda. Y como entre la mesa de la oficina y el mostrador no había solución de continuidad, en ausencia del boticario despachaba las recetas aquella de sus hijas que estaba de turno en el mostrador; y por el contrario, en ausencia de la hija, servía el farmacéutico a los parroquianos de la tienda.</p>
 				<p>No faltaba quien, en el pueblo y fuera del pueblo, murmurase de estas informalidades en el trascendentalísimo manipuleo de los jaropes; pero a esas murmuraciones respondía el farmacéutico, con muchísima razón, que la culpa estaba en los mismos murmuradores que se resistían a pagar, por todo un año de <seg rend="italic">asalareo</seg>, más de dos celemines de maíz, o veinte reales en dinero. ¡Vaya usted por todo ese tiempo y esa cuota a surtir de medicamentos a una familia entera, y oblíguese, con las ganancias, a tener mancebo que le supla en ausencias y enfermedades! ¡Gracias si de sus preparados contra lombrices y <seg rend="italic">jaldía</seg>, en los cuales achaques era el tal farmacéutico un especialista de cierta fama, sacaba un adarme de jugo para endulzar los amargores de su penuria! Y gracias también a que, con el sistema de don Lesmes, apenas despachaba en el pueblo más que recetas de zaragatona. Lo cual no le impedía acribillar al pobre cirujano con zumbas y dicterios muy a menudo.</p>
 				<p>Solía ayudarle en la empresa, aunque recargando el auxilio con durezas y groserías jamás merecidas de un hombre tan inofensivo en su conversación como don Lesmes, la tercera capacidad del pueblo, ya que no le fuera por el entendimiento, por la profesión que en él ejercía, aunque también a medias, como el boticario la suya. Refiérome al maestro de escuela, hombre de tanta edad como el cirujano y el farmacéutico, y lo mismo que ellos, forrado en antiguallas y rutinas, con un geniazo bestial, apegado a la <seg rend="italic">pauta</seg> y al <seg rend="italic">puntero</seg> y, sobre todo, a la palmeta, sin que leyes ni métodos, ni tratados, lograran hacerle cambiar de sistema, ni tampoco obligarle a dejar la plaza en beneficio de profesor más apto y competente, según rezaba y lo exigía la ley imperante. Pero sin duda alguna, las cosas de Valdecines se imponían por su propia virtud al Estado mismo; o, al contrario, tan poco realce tenía el pueblo en el mapa general, que nadie se acordaba de él sino para sacarle las contribuciones y los quintos; por lo que, <seg rend="italic">en punto a médico, botica y escuela, atrasaba dos siglos muy cumplidos en el reloj de los tiempos</seg>.</p>
@@ -1399,7 +1442,7 @@
 				<p>Y por <seg rend="italic">fas</seg> o por <seg rend="italic">nefas</seg>, así cada noche, y todas las del año.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0294_chap14">
-				<head>- XIV - : El fondo del abismo </head>
+				<head xml:id="ne0294_head_013">- XIV - : El fondo del abismo </head>
 				<p>Ya he dicho que Fernando fiaba mucho en la fuerza de sus convicciones filosóficas para desvanecer los reparos de Águeda. Que le dejaran hablar, discutirlos, y el triunfo era infalible. Porque, en su concepto, las ideas religiosas de aquélla no tenían base ni arraigo; eran, más bien, reflejo de las ideas de su madre, que quizá tampoco las tuvo propias acerca de ese punto. Faltaba ya la madre y, por consiguiente, no existía el doble influjo de su autoridad y de su talento; y Águeda le tenía extraordinario, y además le amaba como nunca; porque el mismo obstáculo que entorpece los proyectos, hace que se acrecienten los deseos... De todas maneras, no podía resignarse a perderla, y no la perdería.</p>
 				<p>«¡Si parece -pensaba- que el mundo está lleno de ella! ¡La siento, la veo en el aire que respiro, en el agua que corre, en la hoja que se mueve, en la nube que cruza el espacio, en el viento que la empuja, en la luz que ilumina y fecunda la Tierra, en mi pensamiento, en mi voluntad y en todas las aspiraciones de mi alma! Unidos están nuestros corazones, acordes nuestros deseos, una misma fuerza nos da vida... ¡Sólo nos separa una palabra, expresión confusa de una idea más vaga todavía!... ¿Cómo es posible que este grano de arena obstruya tan ancho camino?».</p>
 				<p>Y, a pesar de lo pequeño que a sus ojos era el obstáculo, cuando la serenidad le enfriaba un poco el entusiasmo, dudaba y temía y el pan le amargaba, y el sueño le encarecía con exceso sus halagos.</p>
@@ -1497,7 +1540,7 @@
 				<p>Águeda no podía más. Había gastado todas las fuerzas de su espíritu en la terrible lucha sostenida entre su corazón y su conciencia. Lloró y oró mucho. Para saber qué súplicas elevó al cielo, sería preciso conocer la magnitud de la tribulación en que estaba sumida aquella alma pura, recta... y enamorada.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0294_chap15">
-				<head>- XV - : La astilla y el palo </head>
+				<head xml:id="ne0294_head_014">- XV - : La astilla y el palo </head>
 				<p>¡Qué vuelta la de Fernando a su casa! Llevaba una tempestad dentro de la cabeza; y parecíale que aquella tempestad le arrastraba por sendas y parajes desconocidos. El sol esplendoroso derramaba sobre el paisaje torrentes de colores y de vida; y él, sin embargo, veíase envuelto en una nube negra, preñada de horrores y tristezas; el campo no tenía matices ni aromas; los árboles no mecían su follaje ostentoso al blando soplo de la brisa; más bien gemían desnudos como si los fuera deshojando el cierzo de sus pesadumbres. Llegó a la hoz, y féretro se le antojó a su fantasía; canto funerario el lento murmurar del río, y eco de los suspiros de sus marchitas esperanzas el triste quejido del pájaro solitario; y como su imaginación era reflejo de las impresiones de su alma, hasta las peñas, entre arbustos y zarzales, le remedaban con insultante propiedad las hinchadas narices, los punzantes ojos y la infernal sonrisa de don Sotero, que se gozaba en su agonía; y ¡cosa más extraña aún!, por una caprichosa combinación de sentimientos y de ideas, todo este conjunto de objetos, de sonidos, de formas y de colores, venía a delinear la imagen fiel de Águeda inexorable, desoyendo los gritos de su corazón y lanzándole, solo y desarmado, a luchar contra el imposible de su conflicto. Recordaba todas las palabras que oyó de sus labios, como si estuviera oyéndolas todavía; y al pretender despojarlas, con el examen, de la aspereza de su rigor, los negros crespones de su espíritu les daban el color de la muerte y el amargor de la duda.</p>
 				<p>No supo cuándo, ni cómo, ni por dónde llegó a casa, ni por qué se fue derecho al cuarto de estudio del doctor, ni cuánto tiempo estuvo dando vueltas allí, sin advertir que éste le contemplaba y le seguía con anhelante mirada, en la cual se pintaban a la vez la curiosidad del médico y las angustias del padre.</p>
 				<p>-¡Fernando! -le dijo éste al fin-. ¡No es vida la que traes, ni la que me haces pasar a mí, viendo cómo tus preocupaciones crecen de día en día, y hasta dónde te llevan hoy!</p>
@@ -1607,7 +1650,7 @@
 				<p>Esto dijo Fernando levantándose desesperado y saliendo de la estancia. Y no tuvo la entrevista otro resultado, si no se cuenta como tal la puñalada que sintió en la consabida víscera el doctor con las últimas palabras de su hijo, cuyos dolores estaban quitándole a él la vida.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0294_chap16">
-				<head>- XVI - : Raya en el agua </head>
+				<head xml:id="ne0294_head_015">- XVI - : Raya en el agua </head>
 				<p>No daba el doctor Peñarrubia dos adarmes de peso a los motivos de la angustia de Fernando; pero no desconocía que el grano de pólvora que, inflamado al aire libre, no mueve una paja, oprimido entre obstáculos levanta una roca. Aun suponiendo en Águeda todos los atractivos imaginables, su amor, con obstáculos y todo, no podía causar estragos en un pecho avezado a esa clase de impresiones y abierto al aire libre de las vulgares corrientes peripecias de la vida galante. Pero en Fernando, el mismo caso ofrecía muy graves peligros. Era, por naturaleza, lo que comúnmente se llama <seg rend="italic">juicioso</seg>; es decir, reflexivo, incapaz de encariñarse, y mucho menos de entusiasmarse, con aficiones pasajeras ni con frivolidades pueriles. Podía equivocarse en la elección de una senda; pero se equivocaba en buena ley, es decir, poniendo en sus meditaciones, antes de decidirse, cuanto cabía en su discurso. Así, era entusiasta sin dejar de ser frío. El caudal de sus ideas, buenas o malas, lo formaba adquiriéndolas poco a poco y saboreándolas; y una vez pertrechado de esta suerte, iba hasta el fin de sus proyectos, sin arredrarle los peligros, que antes le enardecían cuanto más inesperados eran y mayores.</p>
 				<p>Tenía su padre bien conocidas y comprobadas estas y otras análogas condiciones de carácter; y he aquí por qué, no obstante la pequeñez real del motivo, en opinión del doctor, andaba éste sin hora de sosiego, aunque cosa muy distinta aparentaban sus zumbas de dientes afuera.</p>
 				<p>Muchas veces intentó reanudar la conversación tan bruscamente interrumpida por Fernando, a quien no perdía de vista un momento. No lo pudo lograr. Desde que el mozo se convenció de que en su padre no había lo que él necesitaba para salir del ahogo, todo lo esperaba del aislamiento y de la meditación. Pero tardó dos días en recobrar el equilibrio de sus ideas, y cerca de tres en ser dueño de toda la fuerza de su discurso. Probóla en la contemplación de sí mismo, y vio que la borrasca había pasado; pero que quedaban los estragos de ella. Los examinó con serenidad, y le parecieron enormes. Había que proceder inmediatamente a su remedio; es decir, a ver qué podía alcanzarse del único conocido.</p>
@@ -1626,7 +1669,7 @@
 				<p>Y como, al revés de lo que dice el proverbio, por Roma iba a todas partes, fuese con el pensamiento a Valdecines, de donde rara vez le separaba, y con el cuerpo insensible y perezoso al retiro de su habitación.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0294_chap17">
-				<head>- XVII - : Mar sin riberas </head>
+				<head xml:id="ne0294_head_016">- XVII - : Mar sin riberas </head>
 				<p>Amaneció el día encapotado y brumoso. Las nubes acumuladas sobre los más altos picos descendían lentamente, como si las montañas tiraran de ellas para cubrirse los pies; y así fueron arrebujándose poco a poco en la densa envoltura, hasta desaparecer por completo debajo de ella. Luego comenzó a caer sobre el valle una llovizna tenue y sosegada, como espeso rocío. Recibiéronla los prados, sedientos con el calor de la víspera, con la fruición voluptuosa del chino que fuma su pipa cargada de opio; hasta que, saturados de ella, como verdaderos borrachos, inclinaron la cabeza soñolientos, y fueron acostándose las verbenas sobre el llantén, el trébol sobre las verbenas, y las centauras sobre el trébol. Una hora después apareció, sin saberse por dónde, un remusguillo juguetón que la emprendió con las nieblas del valle; y soplando aquí y allá, hízolas refugiarse en la montaña; abrió por las cimas más altas algunas rendijas en las densas veladuras; introdujo por ellas sus rayos el sol; y a su contacto, los dispersos jirones blanquecinos reuniéronse en fantásticas moles, y fueron rodando monte arriba, sobre brañas y barrancos, hasta desvanecerse detrás de las cordilleras en el azul intenso del espacio. Entonces aparecieron los campos como desperezándose bajo un pesado velo de perlas y diamantes; y a medida que el sol iba bebiéndole, levantaban las flores la cabeza y abrían el rico broche de sus perfumes, que el blando terral esparcía por todos los ámbitos del valle, en cuyas arboledas entonaban sus mejores cánticos los ruiseñores y los jilgueros; y brillaban aún las trémulas cristalinas gotas de la pasada llovizna.</p>
 				<p>En tal hora dejó Fernando los blandos colchones de su lecho, y se vistió con la pulcritud que en él era una necesidad, si bien con la holgura propia del lugar en que se encontraba. Desayunóse apenas, y salió al campo a disipar la lobreguez de sus pensamientos con la fragancia y el esplendor de un día tan hermoso.</p>
 				<p>Ya sabemos que para él no había más que un camino en aquella porción del mundo: el camino de Valdecines. Ese camino tomó, no con ánimo de llegar al pueblo, sino porque sentía la necesidad de moverse y de respirar aire libre y oxígeno puro.</p>
@@ -1677,7 +1720,7 @@
 				<p>-¡El último esfuerzo!</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0294_chap18">
-				<head>- XVIII - : El último esfuerzo </head>
+				<head xml:id="ne0294_head_017">- XVIII - : El último esfuerzo </head>
 				<p>La casita del cura de Valdecines, próxima a la iglesia, no se cerraba en todo el día; y como la escalera arrancaba de la misma puerta que daba a la calle, Fernando subió sus peldaños sin necesidad de preguntar a nadie por el camino que buscaba. En aquella pequeñez no había ni cabía más que uno, y no era posible el extravío. Cuando llegó al piso, llamó a la puerta, entreabierta, con el regatón de la sombrilla; contestáronle «adelante», y se halló a los pocos pasos en una salita que se llenaba con una mesa de nogal, con las alas caídas, y cuatro sillas de paja, y se decoraba con las estampas de un <seg rend="italic">Vía-Crucis</seg> de papel, pegadas con obleas en las paredes, en el orden conveniente. Esta pieza lindaba por un extremo con otra más pequeña, que pudiéramos llamar gabinete, en el cual había una mesita con tapete verde, arrimada a un viejo sillón de roble; sobre el tapete, un crucifijo y avíos de escribir; a un lado, una cama de haya torneada, con un jergón sostenido por sogas entrelazadas y cubierto con una colcha de indiana; en el otro lienzo de pared, tres estantes de libros en latín, y el <seg rend="italic">Añalejo</seg> colgado de un clavo y abierto; en el tercer lienzo, frontero a la sala, una ventana, cuyo alféizar arañaban las ramas de un manzano movidas por el viento, que penetraba suave y cariñoso por los abiertos postigos, trayendo, para distribuirlos por toda la casa, los aromas recogidos en la campiña, que desde allí parecía un ascua de oro, iluminada por el sol canicular.</p>
 				<p>Hallábase el cura, envuelto en un raído balandrán y cubierta la cabeza con el solideo, acomodado en el sillón de roble. Pasaba, por las señales, de los setenta, y era pequeñito y endeble, de cara afilada y muy pálida, ojos vivos y cejas canas, como el poco pelo que le quedaba hacia las sienes. Tenía abierto sobre la mesa el <seg rend="italic">Flos Sanctorum</seg>, y leía en él la vida del santo del día.</p>
 				<p>Fernando se detuvo delante de aquella reducidísima estancia, que le infundía cierta veneración, si no por la investidura del que la ocupaba, cuando menos por la humildad y el aseo que se respiraba en ella. Hizo notar su presencia con algunas palabras de cortesía; y al oírle, levantó el cura los ojos del libro y los fijó en él con señales de sorpresa y de curiosidad. Después se enderezó el cuerpecillo poco a poco, sin dejar de mirar a Fernando, y por último, le invitó a que pasara adelante. Al mismo tiempo salió a la sala, tan apresuradamente como se lo permitieron sus débiles fuerzas; cogió una silla, la acercó a la mesa del cuartito y brindó con ella al joven. Éste la aceptó, y entonces se sentó el cura en su viejo sillón.</p>
@@ -1765,7 +1808,7 @@
 				<p>Tenía razón el cura de Valdecines, mientras el peso de los errores nos abrume el alma, empresa es de titanes desprenderse de ellos.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0294_chap19">
-				<head>- XIX - : Lo que llegó a decirse </head>
+				<head xml:id="ne0294_head_018">- XIX - : Lo que llegó a decirse </head>
 				<p>Poco después que Fernando, salió de la misma casa el ama del cura, viejecita muy limpia, muy fiel y muy cariñosa, pero fisgona incorregible y charlatana impenitente. Deslizóse a lo largo de las tapias, y muy arrimadita a ellas, encorvado el espinazo y muy diligentes los pies, en un credo llegó a la guarida de don Sotero; alzó la aldabilla de la puerta y entró.</p>
 				<p>Ya sabía el negro personaje que Fernando había estado en casa de Águeda, y lo que más en alarma le ponía, que había salido por la puerta del jardín; hecho inusitado y por todo extremo ocasionado a gravísimas conjeturas. Pero no sabía más, porque con saber eso sólo se conformó el soplón que se lo dijo.</p>
 				<p>Traíale el caso con grandes escozores en el espíritu; pero aún le producía mayor desasosiego otro particular de este mismo asunto. Dos días llevaba el hombre cavila que te cavila, midiendo horas, pensando inconvenientes y saboreando propósitos y resultados; y como nunca lograba armonizar por entero los múltiples registros de sus proyectos, sudaba la gota gorda, ¡y eso que era pez de buenas agallas!</p>
@@ -1850,7 +1893,7 @@
 				<p>Aquella noche no hubo palos allí, porque el pedagogo era un cobardón, y a don Lesmes le agarró el bastón el boticario, saltando sobre la mesa cuando el cirujano le enarbolaba para cascar las liendres al deslenguado.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0294_chap20">
-				<head>- XX - : Lobo y cordero </head>
+				<head xml:id="ne0294_head_019">- XX - : Lobo y cordero </head>
 				<p>Llegó la víspera de San Juan, y con aquel día eran ya tres los pasados sin que don Sotero pusiera los pies en casa de los Rubárcenas. Águeda le suponía entretenido en la tarea a la cual dio el celoso administrador tanta importancia en la entrevista que el lector recordará. Un día más transcurrido así, y la atribulada joven se vería libre para siempre de la odiada presión que sobre ella ejercía aquel antipático personaje. Porque don Plácido no podía tardar más que ese tiempo en llegar a Valdecines, si vivía, y tenía que vivir, porque le parecía imposible que hasta de ese amparo la privara su desdicha.</p>
 				<p>De esta suerte discurría Águeda cuando, por breves instantes, lograba apartar su pensamiento de las hondas y enconadas heridas de su corazón. Éstas eran su perenne martirio, su cruz, su agonía sin el consuelo de la muerte. ¿Qué habría sido de Fernando después de su última y desgraciada tentativa de reconciliación?... Y ¡qué sería de ella, obligada, por una burla cruel de la desgracia, a ser, en tan bárbaro suplicio, víctima, juez y verdugo a un mismo tiempo!</p>
 				<p>Entretanto, los vecinos de la corralada de don Sotero, andaban asombrados al saber que éste había comprado medio celemín de cal viva en la tejera, y hasta cerca de tres cuarterones de clavos trabaderos en la fragua. Además, se habían oído en la casa fuertes martillazos y como ruido de muebles que se arrastran; era notorio que Celsa hizo, en una sola mañana, más de tres viajes a la fuente, con <seg rend="italic">escala</seg> y botijo; y, por último, se había visto a Bastián asomado un instante a la ventana, con una escoba amarrada a la punta de un palo, y el palo, la escoba y Bastián, revocados de blanco como si él y el palo y la escoba se hubieran zambullido en el tinajón de la harina. ¿Qué ocurría en aquella casa de ordinario tan sucia, desmantelada y silenciosa? Para ponemos en camino de averiguarlo, volvamos a la de Águeda.</p>
@@ -1937,7 +1980,7 @@
 				<p>Hizo don Sotero una profundísima reverencia y, sin responder una sola palabra, se puso en seguimiento de las huérfanas.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0294_chap21">
-				<head>- XXI - : Un caso de moral </head>
+				<head xml:id="ne0294_head_020">- XXI - : Un caso de moral </head>
 				<p>En la alcoba en que vimos encerrarse a Bastián cuando su tío le despidió de la suya de muy mala manera, conversaban los mismos dos personajes, cosa de una hora después de lo referido en el capítulo anterior. Y digo que conversaban, porque don Sotero, contra su costumbre, no maltrataba a Bastián con apóstrofes y dicterios; antes le agasajaba con tal cual sonrisilla placentera, y le buscaba con mimos los pocos registros sonoros que cabían en aquella inteligencia rudimentaria y agreste. Conversaban, repito, muy por lo bajo, con la puerta cerrada, sentado el tío en la única silla que había en el cuarto, y el sobrino al borde de la fementida cama, que le llenaba casi todo.</p>
 				<p>-No me negarás -decía don Sotero- que Águeda es una perla de hermosura. ¡Qué cuerpo! Oro entre algodones... ¡Qué ojos! Estrella de enero... ¡Qué talle!... ¿Tú has visto bien aquel talle, Bastián?</p>
 				<p>Bastián oía, se rascaba la cabeza y enseñaba los dientes.</p>
@@ -2004,7 +2047,7 @@
 				<p>Y en dos zancadas atravesó la sala, y en pocas más llegó al portal; y como ya hacía rato que se estaban oyendo las campanas de la iglesia y algunos estallidos de cohetes, en cuanto se vio al aire libre comenzó a relinchar y a dar corcovos, como potro cerril que columbra el verde de la rozagante pradera.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0294_chap22">
-				<head>- XXII - : La hoguera de San Juan </head>
+				<head xml:id="ne0294_head_021">- XXII - : La hoguera de San Juan </head>
 				<p>Cuando entraban las dos hermanas en el portal de don Sotero, ya corrida media tarde, llegaba a la <seg rend="italic">brañuca</seg> de la iglesia el primer carro cargado de <seg rend="italic">rozo</seg> destinado a la hoguera de aquella noche. Media hora después llegó otro más, y tumbó su talumba sobre la del anterior, ya tendida en el suelo. Entonces subió el campanero a la espadaña, y apenas se oyó en el pueblo su primer repique, lanzó al espacio el mayordomo del santo hasta media docena de cohetes de las ocho o diez cabales que había adquirido para quemarlas en honor del glorioso patrono, entre el día de la fiesta y sus preludios solemnes; a cuyos seis estampidos (y ya se deja ver con este dato que los cohetes no eran de los mejores) el maestro dio por terminada la escuela en aquel día y puso en libertad a los muchachos. Corrieron los más talludos al campanario, y los rapazuelos a contemplar el rozo amontonado, y a tirar después de esta mata y de la otra, creyéndose muy felices con mostrárselas a sus camaradas del campanario, entre brincos y algazara, pero haciéndoseles siglos las horas que faltaban hasta que les fuera lícito prenderlas fuego, juntamente con todas las del montón, que se alzaba en la brañuca, prometiendo a los mirones, para aquella noche, una luz tan clara como la del mismo sol, y más chasquidos y chisporroteos que una función de pólvora mojada.</p>
 				<p>Silbaban como cien huracanes los chicos del campanario, sin cesar un punto de tocar las campanas, cuyos badajos había dejado a su disposición, y de muy buena gana, el campanero, y en los aires estallaba todavía algún cohete que otro; en los cuales ruidos provocadores la gente de la mies se sintió picada de la impaciencia; dio en la gracia de cortar con la azada tantos maíces como resallaba; convínose por unanimidad en que el estropicio consistía en el <seg rend="italic">aquel</seg> de la fiesta, que <seg rend="italic">aceleraba</seg> la mano; acordóse por los viejos dar suelta libre a los jóvenes, que ya no habían de hacer cosa con traza; y ahí tienen ustedes a las mozas tornando al pueblo, con las azadas al hombro, echando por parejas, cuando no por grupos de más de cinco, a gañote desplegado, los más alegres y regocijados cantares que habían resonado en el valle en todo el año. Seguíanlas los mozos en idéntico orden de formación; y apenas acababan ellas, con un suspiro, el dejo interminable del cantar, allí estaban ellos con una balada, lenta y dormilona, que prometía no tener fin. Pero le tenía, más tarde o más temprano; y vuelta a cantar ellas, y vuelta ellos a replicar. Y así en todas las mieses, por los cuatro costados de Valdecines; de modo que la poca gente útil que había en el pueblo se echó, también cantando, a la calle; y cátate convertida la comarca en una pajarera, motivo por el cual los viejos que se habían quedado resallando, juzgando de <seg rend="italic">mal ver</seg> seguir en la tarea, también la suspendieron por aquel día, volviéndose al lugar, si no cantando, oyendo embelesados los cantares y recordando con gozo los ya remotos años en que ellos, con igual motivo, hacían dos cuartos de lo propio.</p>
 				<p>Entre tanto, el mayordomo había colocado las doradas andas, que estaban sobre un confesonario cubiertas con una desechada capa pluvial, en una mesa a la derecha del presbiterio, y bajaba luego la imagen del santo de su nicho del altar mayor, y la acomodaba sobre la peana de las andas, y la limpiaba el polvo, y la dejaba en disposición de ser vestida al día siguiente, mucho antes de la misa mayor, con dos pañuelos, bien cumplidos, de espumilla, y adornada con un arco más alto que ella, sujeto por sus dos extremidades a la barandilla de las andas, y profusamente revestido de pañuelos, cintas, relicarios y acericos, prestados a mucha honra por los pudientes del lugar.</p>
@@ -2026,7 +2069,7 @@
 				<p>Y ahora sábete lector, por remate y fin de este capítulo, que no llegaron a seis los ramos puestos; pero que, ¡oh dolor de los dolores e inclemencia de las inclemencias!, de aquellos ignominiosos sambenitos, más de la mitad se alzaban en tierras del pobre Macabeo.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0294_chap23">
-				<head>- XXIII - : La moral de aquel caso </head>
+				<head xml:id="ne0294_head_022">- XXIII - : La moral de aquel caso </head>
 				<p>No es fácil cosa describir el cuadro de ideas encerrado en la mente de Águeda mientras fue desde su casa a la de don Sotero. Había en él sombras y contornos terribles; esbozos de colosales figuras; tintas indecisas y vagas; confusión, desorden, ruidos extraños que la aturdían y amedrentaban; pero ni una sola concepción detallada y en reposo en qué fijar la atención y dar rumbo al pensamiento. En tal estado de aturdimiento entró en el viejo caserón y llegó, conducida por el atento y comedido mayordomo, a la alcoba en que la hallamos encerrada cuando el tío y el sobrino hablaban de ella, según queda puntualizado más atrás.</p>
 				<p>Agarrada con ansia a su mano, y medio envuelta entre los pliegues de su vestido, la acompañó Pilar, mirando horrorizada cuanto había que ver en la vetusta guarida de aquel hombre que se llevaba a las dos huérfanas, como si fuera amo y señor de ellas y no su servidor asalariado. Jurara la pobre niña, cuando llegó al estragal y fue subiendo la derrengada escalera, y atravesó el tortuoso y oscuro pasadizo, y luego el desamparado salón, y por último, se vio encerrada en la alcoba, que todo aquello que le sucedía era la realidad de una pesadilla que más de una vez le había atormentado durmiendo. Era frecuente en ella soñar con casas muy grandes, muy viejas y muy solas, llenas de rendijas y de lamparones, con los techos negros ahumados y cubiertos de telarañas, en las que se bamboleaban, cabeza abajo y mirándola con ojos de basilisco, enormes murciélagos; los suelos, medio devorados por la polilla, inundados de ratones, que corrían por todas partes sin hacer ruido; cuartos entreabiertos y oscuros como la noche; desvanes sin fin atestados de muebles viejos muy raros y con las patas hacia arriba, figurando ladrones y difuntos y almas en pena; y por último, allá en el fondo de todo este conjunto de cosas espantables, un hombre, como don Sotero, andando siempre, y sin llegar nunca, hacia la pobre niña, que ya se daba por muerta y comida de ratas y culebrones..., hasta que el exceso del espanto que sentía la despertaba. Pues casi todo esto que tantas veces había soñado, tenía entonces en realidad y verdad delante de los ojos; ni siquiera faltaba el hombre negro y gordo; no mudo, silencioso y a lo lejos, como en la pesadilla, sino a media vara de distancia, con voz que se oía y pies que sonaban al andar, y una intención que sólo Dios podía penetrar en aquel instante.</p>
 				<p>Y eso que ni el mismo lector que la vio días atrás, conociera la casa de don Sotero cuando las huérfanas entraron en ella. Estaban las paredes de la alcoba y las de la sala recién blanqueadas; tan recientemente, que aún se veían en el suelo y en las puertas los regueros de la lechada, y se olía la cal húmeda, como si acabara Bastián de extenderla con la escoba; y las mayores aberturas del tillado estaban medio tapadas con listones en bruto, sí, pero bien afirmadas con clavos trabaderos; se había barrido la alcoba y sacado de ella el arcón viejo; la mesa no tenía encima más que el tapete y la palmatoria; en la cama había almohadas con funda limpia y una colcha en buen uso y por último, arrimadas a la pared, hasta dos sillas útiles.</p>
@@ -2106,7 +2149,7 @@
 				<p>Entonces llegaban a la corralada los primeros vecinos de ella, que volvían de la hoguera. El atentado de Bastián no produjo el escándalo imaginado por don Sotero.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0294_chap24">
-				<head>- XXIV - : De cuerpo entero </head>
+				<head xml:id="ne0294_head_023">- XXIV - : De cuerpo entero </head>
 				<p>Seguro de que el lector, por lo que ha visto y oído, no ha de decirme que levanto falsos testimonios, ni que falto a la caridad sacando a la pública vergüenza lo que es mejor para callado cuando las pruebas no abundan, y los juicios son, por ende, temerarios, voy a referirle en confianza lo poco que le falta saber, aunque parte de ello se lo haya presumido, del piadoso tutor y curador de las huérfanas de nuestra historia.</p>
 				<p>Es cosa averiguada que sus maldades y picardías le pusieron en la necesidad de abandonar la capital del partido en que por muchos años ejerció el cargo de procurador.</p>
 				<p>Al establecerse en Valdecines, su pueblo natal, como no era hombre capaz de perder el tiempo en ninguna parte, obedeciendo al impulso de una inveterada costumbre que era en él necesidad, tendió en su derredor los penetrantes ojos, diciéndose al propio tiempo: «¿Qué hay aquí de explotable y provechoso?». Y vio la casa de los Rubárcenas. «¿Cómo se entra en ella? Con la ley de Dios. Yo no la conozco... Pues la falsifico». Y se hizo beato, como pudo haberse hecho en otras circunstancias bandolero.</p>
@@ -2134,7 +2177,7 @@
 				<p>-Mañana nos veremos. ¡Lo que deploro -añadió echando una mirada triste por suelos y paredes- es el gasto ocioso hecho en la jaula en obsequio de esos pájaros, que se me han escapado de ella sin dejar siquiera las plumas entre los hierros!</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0294_chap25">
-				<head>- XXV - : Don Plácido </head>
+				<head xml:id="ne0294_head_024">- XXV - : Don Plácido </head>
 				<p>No podía darse hombre más insignificante, en la apariencia, que don Plácido Quincevillas. No había en toda su persona un solo rasgo digno de llamar la atención de nadie. Pertenecía al grupo innumerable de esos individuos con los cuales se codea uno toda la vida en la calle y en los paseos públicos, que nunca van a la moda, se asemejan a todo el mundo, y a quienes jamás llegamos a conocer, por no tomarnos la molestia de preguntar cómo se llaman. Ni en verano se aligeran de ropa, ni en invierno se abrigan con exceso. Parece que nunca cambian de traje, y siempre le tienen en buen uso; andan sin apresurarse, y pisan sin hacer ruido con los pies; nadie los ha conocido jóvenes, ni alcanza, por mucho que viva, a verlos enteramente viejos; siempre han sido y nunca dejan de ser <seg rend="italic">señores formales</seg>; tienen bastante buena conversación, pero jamás hablan de cosa que valga dos cominos; son frugales en la comida, gozan de buena salud... y algunos de buena renta, cuyas tres cuartas partes ahorran, no por codicia, sino por falta de necesidades..., y pare usted de contar. De estos últimos era don Plácido. Y es todo cuanto tengo que decir de su carácter y figura. En cuanto a sus aficiones y entretenimientos, ya sabemos por don Lesmes que estaban reducidos a la cría de las gallinas y estudiar sin descanso el modo de obtenerlas de muchos colores.</p>
 				<p>Con lo que le dijo Macabeo en Treshigares y andando el camino de Treshigares a Valdecines, y lo que sabía por la carta de Águeda, y lo que le refirió ésta tan pronto como se vio en su casa después de salir de la de don Sotero, en la cual ocasión también le hizo enterarse detenidamente de las consabidas cláusulas testamentarias, llegó a conocer al buen ex procurador tan a fondo como le conocemos el lector y yo; tanto, que en un arrebato de indignación de que se vio poseído al referirle su sobrina los pormenores del secuestro, sin ocultarle el gran conflicto de su alma, arrebato que le llenó de asombro porque jamás se había indignado sino contra la desgracia, que le hacía perder algunas veces las echaduras de mejores esperanzas, se creyó capaz de hacer una hombrada con don Sotero en cuanto le viera al alcance de su mano.</p>
 				<p>Habiendo preguntado Águeda cómo se obró el milagro de que tan a punto entrara Macabeo por la ventana de la casa de don Sotero, dijo así don Plácido:</p>
@@ -2172,7 +2215,7 @@
 				<p>Retiróse Águeda, pidiendo al cielo nuevas y mayores pesadumbres, si con su martirio llegaba a redimirse el alma de Fernando, y se echó Macabeo a la calle para acabar de saber (pues en los comienzos andaba desde muy temprano) quién era la desalmada moza que había puesto los ramos ignominiosos en sus heredades.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0294_chap26">
-				<head>- XXVI - : La gota del agua </head>
+				<head xml:id="ne0294_head_025">- XXVI - : La gota del agua </head>
 				<p>Dejamos a Fernando en camino de su pueblo, más abatido con el peso de la última inclemencia de Águeda, que ufano con los frutos de su entrevista con el párroco de Valdecines. Según iba profundizándose la herida de su corazón, menos se prometía de los remedios para cicatrizarla. Cada paso que retrocedía, le alejaba una inmensidad del término de su jornada. Condición es ésta que se cumple con rigor extremo en las grandes fatigas del espíritu.</p>
 				<p>Como ya no era nuestro personaje el hombre de los ímpetus apasionados, hijos de las primeras contrariedades de la vida, sino un desdichado más, sujeto a la cadena de un imposible, iba arrastrándola poco a poco, atento sólo a medir las escasas fuerzas que le quedaban, no a buscar en el desierto de imaginación un punto donde arrojar la pesada carga, refrescar las sedientas fauces y alentar el fatigado pecho con aguas cristalinas y aires embalsamados.</p>
 				<p>En tal grado de desaliento llegó a su casa. Continuaba huyendo de su padre; pero éste hallaba modo de observarle desde lejos, y medía con el diestro compás de su experiencia y de su amor los estragos producidos en su alma por la tempestad que le combatía. Rara vez conversaban; y en estos casos el doctor no respondía con chanzonetas a las escasas palabras de su hijo; antes medía y pesaba las suyas, como se pesa y se mide la sustancia que así puede dar la vida como quitarla, según la dosis en que se emplee.</p>
@@ -2231,7 +2274,7 @@
 				<p>El cáliz estaba lleno: una gota bastó para desbordar las hieles que contenía.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0294_chap27">
-				<head>- XXVII - : Lo que encubrió la noche </head>
+				<head xml:id="ne0294_head_026">- XXVII - : Lo que encubrió la noche </head>
 				<p>Muchas horas después de este suceso, Fernando se paseaba en el cuarto de estudio de su padre. Revelaba tranquilidad, aunque era ésta muy semejante a la que tienen en sus comienzos algunas tempestades de verano: ni un soplo de aire, ni el ruido de una mosca, la quietud y el silencio reinan en la naturaleza; pero hay celajes siniestros, tintas en el horizonte que parecen manojos de centellas, aire que asfixia, monstruos que la fantasía dibuja en los plúmbeos nubarrones... Nada sucede en aquel instante; pero toda conflagración es posible al menor choque entre los aletargados elementos.</p>
 				<p>A la luz que alumbraba la estancia, el doctor leía, o aparentaba leer; porque es lo cierto que más atentos estaban sus ojos al ir y venir de Fernando, que a las páginas del libro: siendo muy de notar que no había tanta alarma como curiosidad en las miradas furtivas del viejo Peñarrubia.</p>
 				<p>Había visto por la mañana llegar a casa a su hijo en el estado de exaltación en que nosotros le vimos salir de Valdecines; y había logrado, a fuerza de fuerzas y al cabo de muchas horas, reducirle a la calma y a la reflexión. Entonces hablaron. La conversación era la válvula por donde el doctor se proponía desahogar aquel pecho y aquel cerebro henchidos de tumultos. Supo que no era Águeda la causa de ellos; pero no supo la verdad entera, que Fernando cuidó de ocultarle por no afligirle más.</p>
@@ -2267,7 +2310,7 @@
 				<p>Retiróse de la ventana, trémulo por la agitación de sus ideas, y pocos minutos después era una sombra que se movía entre la oscuridad del jardín; y luego en la relativa claridad del camino que iba a unirse al de la hoz, un gusanillo más que se arrastraba sobre la costra de la tierra.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0294_chap28">
-				<head>- XXVIII - : Lo que descubrió el día </head>
+				<head xml:id="ne0294_head_027">- XXVIII - : Lo que descubrió el día </head>
 				<p>Y aconteció que al amanecer el siguiente, un hombre de Valdecines que tenía negocios en Perojales, entró cantando en la hoz. Cantando seguía sin cerrar la boca, y mirando tan pronto al río como a las peñas de lo alto, cuando cátate que, hallándose junto al <seg rend="italic">asomo</seg> más descarado del sendero que llevaba, fáltanle de repente la voz y movimiento, y quédase con los ojos tan abiertos como la boca, y hasta se le muda el color y se le encrespa la greña debajo del sombrero.</p>
 				<p>-¡Mil demonios -se dijo cuando el espanto le dejó libre el uso del entendimiento-, si aquello no es tan persona humana como yo mesmo!</p>
 				<p>Y en esto retiraba el cuerpo hacia la montaña y avanzaba la cabeza sobre el abismo.</p>
@@ -2317,7 +2360,7 @@
 				<p>En la hoz estaba ya, y muy adentro, cuando le encontró el alguacil que le llevaba la carta consabida. Detúvole, entregándoselo, sin miramientos ni precauciones; leyóla el otro, más con el corazón que con los ojos; pidió luego como deben pedir la muerte los que no pueden con la vida, <seg rend="italic">¡más noticias!</seg>, y el alguacil le refirió cuanto sabía, que no era poco. ¡Tan reciente era la que llevaba el doctor clavada en el pecho como un puñal de cien puntas, y tan inhumanamente se le había dado la puñalada! Ahora podrá ver el lector a su verdadera luz la escena que tuvo lugar poco después en el fondo del precipicio.</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0294_chap29">
-				<head>- XXIX - : De rechazo </head>
+				<head xml:id="ne0294_head_028">- XXIX - : De rechazo </head>
 				<p>Desde que don Sotero vio la obra de Bastián destruida por la inesperada venida de don Plácido a Valdecines, juzgó en descenso su fortuna. Alentábale, sin embargo, la esperanza que ponía en el carácter estrafalario, bonachón y docilote del solterón de Treshigares; pero cuando habló con él y le vio tan firme y resuelto, comprendió que principiaba el fin de sus iniquidades y, lo que era más grave para él, que había quedado preso en la red tendida al caudal de los Rubárcenas. Ni sus atrevimientos hasta allí tenían fácil disculpa, ni el sesgo que tomaban las cosas se prestaba a imponerlos como ley por la fuerza de otros mayores. Meditó seriamente sobre el caso, y le vio muy negro por todas partes. Su mayor aspiración no podía exceder ya de que se le perdonara lo pasado. En cuanto a su intervención en casa de los Rubárcenas, no ya como tutor y curador de las huérfanas, pero ni siquiera como administrador de sus bienes, era una insensatez no darla por concluida. De manera que no solamente tenía que renunciar a la posesión de aquel caudal, con tanta maña perseguido, sino también a lo que de él pudiera pegársele a fuerza de manosearle. Era la primera vez que se le escapaba de entre las uñas una presa señalada con sus ojos. Le costó mucho trabajo resignarse a verlo así; pero la necesidad le obligó a ello.</p>
 				<p>La mejor jugada de toda su vida había estado a punto de hacerla en la vejez, y aquella jugada la perdió al cabo. Probado está que a esa edad es cuando más estragos causan las grandes pesadumbres y las agudas enfermedades. No se asombre, pues, el lector si le digo que en menos de veinticuatro horas se abatió la entereza de don Sotero, como áspero y bravío roble herido por el hacha en sus raíces, quédase aún enhiesto, pero hasta las brisas le bambolean, y el primer viento le derriba.</p>
 				<p>Resuelto a implorar hasta la misericordia de sus víctimas para sacar el único partido que le ofrecían las dificultades de su situación, consagró el corto plazo que le dio el indignado señor de Quincevillas para optar entre los dos extremos que le propuso, a arreglar sus cuentas del mejor modo posible; y aun en aquella ocasión demostró el buen ex procurador que, como el gitano del cuento, era una hormiguita para su casa. ¡Qué mano de <seg rend="italic">raspa</seg> tan admirable! ¡Qué primor de destreza aquella pluma para imitar recibos de doña Marta! ¡Qué instinto aritmético el suyo para obtener alcances en su favor allí donde no había sino rastro de sus ávidas manos, al sacarlas llenas de lo que no le pertenecía, durante tantos años de administración! Y todos esos milagros los hacía el pío varón en medio del mayor desconcierto cerebral. Porque es de saberse que a la sazón hablaba solo y deliraba; y hasta el escaso mendrugo que comía, menos le servía para alimento del cuerpo que para dar fuerzas a su pesadumbre. ¡Qué no hubiera hecho el santo hombre puesto a la misma tarea en sana salud!</p>
@@ -2339,7 +2382,7 @@
 				<p>Bastián que tal oyó, echóse sobre el agotado cuerpo de su tío, no para llorar ni para mesarse las greñas en testimonio de su pesadumbre, sino para registrarle los bolsillos, hasta dar con la llave de aquellos cajones en que se guardaban los tesoros del avariento. Cuando las tuvo en la mano recogió los libros y papeles que había sobre la mesa, los guardó en el arcón muy sosegadamente, y entonces salió a cumplir el encargo hecho por don Lesmes, entre las maldiciones de Celsa y el asombro de los demás.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0294_chap30">
-				<head>- XXX - : El sol de Tasia </head>
+				<head xml:id="ne0294_head_029">- XXX - : El sol de Tasia </head>
 				<p>En las primeras horas de la tarde del día de San Juan, mientras las campanas repicaban al rosario, y las mozas se vestían y se adornaban par ir a rezarle y andar otra vez la procesión antes de dar comienzo la romería, y se dirigían a Valdecines por sierras, mieses y montañas las gentes de los pueblos circunvecinos, Águeda había llamado a Macabeo a su casa.</p>
 				<p>-Para que esta tarde celebres la fiesta del santo Patrono más alegremente que lo poco que alcanzaste de la velada de anoche, quiero que sepas que he determinado, con el beneplácito de mi hermana y de mi tío, regalarte cuantas tierras llevas de esta casa en arriendo, sin perjuicio de manifestarte la estimación en que todos te tenemos con otras dádivas, hasta hacer de ti uno de los mejor acomodados labradores del pueblo. En cuanto al servicio que anoche me prestaste, como no es de los que pueden pagarse con dinero, queremos que le vayas cobrando considerándote como persona allegada a nuestra familia... ¿Te satisface lo que te digo, Macabeo?</p>
 				<p>-¡No señora! -respondió éste entre conmovido y entusiasmado-, y máteme Dios si dejo de agradecer en todo lo que vale esa riqueza que usté me ofrece; pero es el caso que, viéndome ya tan pagado, el día en que usté me pida la vida entera porque la necesite, yo mismo he de creer, al dársela, que se la doy a cuenta de lo recibido, y eso no tendría gracia maldita.</p>
@@ -2378,7 +2421,7 @@
 				<p>-Por poca vida que Dios me conceda, ¡cuánto me toca ver todavía en esta casa! ¡Y si ello fuera alegre!...</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0294_chap31">
-				<head>- XXXI - : Las heces del cáliz </head>
+				<head xml:id="ne0294_head_030">- XXXI - : Las heces del cáliz </head>
 				<p>Ningún bálsamo tan prodigioso para templar en la memoria de Águeda los recuerdos de la pasada noche como la noticia que tuvo al día siguiente, de que Fernando había encomendado al cura de Valdecines la tarea de su conversión.</p>
 				<p>Ya hemos visto que, al considerar los motivos que la alejaban de él, padecía dos tormentos a la vez: el tormento de perderle y el tormento de pensar que el incrédulo se perdía. Ambos dolores se calmaban con aquel remedio.</p>
 				<p>No hay sol más resplandeciente que el primero que luce después de una tempestad. Así son las ilusiones: las que se forja la imaginación en las treguas de los grandes martirios, son las más agradables. ¿Qué mucho que Águeda se recrease en dar cuerpo y alas y espacio en que volar a las suyas, adquiridas después de tantas y tan deshechas tempestades?</p>

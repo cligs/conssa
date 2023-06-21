@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">De un cancionero apócrifo</title>
-				<title type="sub"></title>
+				
 				<title type="short">Cancionero</title>
-				<title type="idno">
-					<idno type="viaf">214772016</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX991518</idno>
-					<idno type="viaf">7385547</idno>
-					<name type="short">AMachado</name>
-					<name type="full">Antonio Machado</name>
+					<name type="short" ref="#AMachado"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1708</measure>
@@ -140,13 +131,42 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0217</idno>
+						<idno type="cligs">ne0217</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Cain, r1.3, <date when="2014">2014</date>, <idno>6176</idno>, <ref target="https://www.epublibre.org/libro/detalle/6176"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1933">1933</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">De un cancionero apócrifo</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/214772016/">214772016</idno>
+				</idno>
+				</title>
+					<author xml:id="AMachado">
+						<name type="full"><forename>Antonio</forename> <surname>Machado</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 5560 - IP 5565">IP 5560 - IP 5565</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q243771/">Q243771</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX991518.html">XX991518</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/7385547/">7385547</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118640739">118640739</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Cain, r1.3, <date when="2014">2014</date>, <idno>6176</idno>, <ref target="https://www.epublibre.org/libro/detalle/6176"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1933">1933</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Juan de Mairena</title> <date when="1955">1955</date>, <publisher>Gallimard</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="1146413998" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1146413998"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuevas canciones y De un cancionero apócrifo</title> <date when="1971">1971</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1107127866" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1107127866"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuevas canciones y De un cancionero apócrifo</title> <date when="1971">1971</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="466156820" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466156820"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">De un cancionero apócrifo</title>: 	<title type="sub">1924 - 1926</title> <date when="1971">1971</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="463352181" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463352181"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuevas canciones y De un cancionero apócrifo</title> <date when="1971">1971</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="189380748" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=189380748"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +177,14 @@
 				<p>Estas prosas entreveradas de versos desconcertaron al público lector. [...] Los textos imitan, parodian las exposiciones académicas de los sistemas filosóficos y poéticos, y las biografías y caracterizaciones de sus creadores. Con toda libertad, saltando de un tema a otro, jugando con paradojas. Machado va retratando los perfiles de dos poetas que no existieron, pero que debieron existir. Al principio la nónima era más amplia y abarcaba los Doce poetas que pudieron existir [...] (en realidad incluyó catorce(, y seis filósofos españoles del siglo XIX. Todos ellos quedaron reducidos a dos: Abel Martín y su discípulo Jaun de Mairena. Aparece también para dialogar con Mariena, Jorge Meneses, uno de los "doce inexistentes poetas". Se había propuesto Machado crear como contrapunto al decimonónico Martín y a su discípulo, un apócrifo moderno, vanguardista, al que puso el nombre de Pedro de Zúñiga. También quiso inventar al poeta del futuro aunque no llegó ni a bautizarlo.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 5561" key="IP 5561" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL8">7</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +197,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">high</term>
 					<term type="text.characters.protagonist.age">mature</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -216,6 +244,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-04-19" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,7 +252,7 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>CLXVII</head>
+				<head xml:id="ne0217_head_000">CLXVII</head>
 
 				<div n="1" type="chapter" xml:id="ne0217_chap1">
 					<ab>(ABEL MARTIN)</ab>
@@ -232,7 +261,7 @@
 					<p>Sevilla (1840). Murió en Madrid (1898)</p>
 				</div>						
 				<div n="2" type="chapter" xml:id="ne0217_chap2">
-					<head>LA OBRA</head>
+					<head xml:id="ne0217_head_001">LA OBRA</head>
 					<milestone unit="section"/>
 					<p>Abel Martín dejó una importante obra filosófica (<seg rend="italic">Las cinco formas de la objetividad</seg>, <seg rend="italic">De lo uno a lo otro</seg>, <seg rend="italic">Lo Universal cualitativo</seg>, <seg rend="italic">De la esencia heterogeneidad del ser</seg>) y una colección de poesías, publicada en 1884 con el título de <seg rend="italic">Los complementarios</seg>.</p>
 					<milestone unit="section"/>
@@ -331,7 +360,7 @@
 					<p>El amor comienza a revelarse como un súbito incremento del caudal de la vida, sin que, en verdad, aparezca objeto concreto al cual tienda.</p>
 					<milestone unit="section"/>
 					<lg type="poem">
-						<head>PRIMAVERAL</head>
+						<head xml:id="ne0217_head_002">PRIMAVERAL</head>
 						<l>Nubes, sol, prado verde y caserío</l>
 						<l>en la loma, revueltos. Primavera</l>
 						<l>puso en el aire de este campo frío</l>
@@ -358,7 +387,7 @@
 					<p>En una de ellas dice Abel Martín: «Ya algunos pedagogos comienzan a comprender que los niños no deben ser educados como meros aprendices de hombres, que hay algo sagrado en la infancia para vivido plenamente por ella. Pero ¡qué lejos estamos todavía del respeto a lo sagrado juvenil! Se quiere a todo trance apartar a los jóvenes del amor. Se ignora o se aparenta ignorar que la castidad es, por excelencia, la virtud de los jóvenes, y la lujuria, siempre, cosa de viejos; y que ni la Naturaleza ni la vida social ofrecen los peligros que los pedagogos temen para sus educandos. Más perversos acaso, y más errados, sin duda, que los frailes y las beatas, pretenden hacer del joven un niño estúpido que juegue, no como el niño, para quien el juego es la vida misma, sino con la edad de quien cumple un rito solemne. Se quiere hacer de la fatiga muscular beleño adormecedor del sexo. Se aparta al joven de la galantería, a que es naturalmente inclinado, y se le lleva al deporte, al juego extemporáneo. Esto es perverso. Y no olvidemos —añade— que la pederastía, actividad erótica, desviada y superflua, es la compañera inseparable de la gimnástica».</p>
 					<milestone unit="section"/>
 					<lg type="poem">
-						<head>ROSA DE FUEGO</head>
+						<head xml:id="ne0217_head_003">ROSA DE FUEGO</head>
 						<l>Tejidos sois de primavera, amantes,</l>
 						<l>de tierra y agua y viento y sol tejidos.</l>
 						<l>La sierra en vuestros pechos jadeantes,</l>
@@ -385,7 +414,7 @@
 					<p>Pero sigamos con las rimas eróticas de Abel Martín.</p>
 					<milestone unit="section"/>
 					<lg type="poem">
-						<head>GUERRA DE AMOR</head>
+						<head xml:id="ne0217_head_004">GUERRA DE AMOR</head>
 
 						<l>El tiempo que la barba me platea,</l>
 						<l>cavó mis ojos y agrandó mi frente,</l>
@@ -464,9 +493,9 @@
 					<milestone unit="section"/>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0217_chap3">
-					<head>CONSEJOS, COPLAS, APUNTES</head>
+					<head xml:id="ne0217_head_005">CONSEJOS, COPLAS, APUNTES</head>
 					<div type="section">
-						<head>1</head>
+						<head xml:id="ne0217_head_006">1</head>
 						<lg type="poem">
 							<l>Tengo dentro de un herbario</l>
 							<l>una tarde disecada,</l>
@@ -475,7 +504,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>2</head>
+						<head xml:id="ne0217_head_007">2</head>
 						<lg type="poem">
 							<l>Y en la página siguiente,</l>
 							<l>los ojos de Guadalupe,</l>
@@ -483,13 +512,13 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>3</head>
+						<head xml:id="ne0217_head_008">3</head>
 						<lg type="poem">
 							<l>Y una frente…</l>
 						</lg>
 					</div>
 					<div type="section">
-						<head>4</head>
+						<head xml:id="ne0217_head_009">4</head>
 						<lg type="poem">
 							<l>Calidoscopio infantil.</l>
 							<l>Una damita, al piano.</l>
@@ -499,7 +528,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>5</head>
+						<head xml:id="ne0217_head_010">5</head>
 						<lg type="poem">
 							<l>Y rosas en un balcón</l>
 							<l>a la vuelta de una esquina,</l>
@@ -507,7 +536,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>6</head>
+						<head xml:id="ne0217_head_011">6</head>
 						<lg type="poem">
 							<l>Amores, por el atajo,</l>
 							<l>de los de «Vente conmigo».</l>
@@ -515,7 +544,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>7</head>
+						<head xml:id="ne0217_head_012">7</head>
 						<lg type="poem">
 							<l>En el mar de la mujer</l>
 							<l>pocos naufragan de noche;</l>
@@ -523,7 +552,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>8</head>
+						<head xml:id="ne0217_head_013">8</head>
 						<lg type="poem">
 							<l>Siempre que nos vemos</l>
 							<l>es cita para mañana.</l>
@@ -531,7 +560,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>9</head>
+						<head xml:id="ne0217_head_014">9</head>
 						<lg type="poem">
 							<l>La plaza tiene una torre,</l>
 							<l>la torre tiene un balcón,</l>
@@ -546,7 +575,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>10</head>
+						<head xml:id="ne0217_head_015">10</head>
 						<lg type="poem">
 							<l>Por la calle de mis celos</l>
 							<l>en veinte rejas con otro</l>
@@ -554,14 +583,14 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>11</head>
+						<head xml:id="ne0217_head_016">11</head>
 						<lg type="poem">
 							<l>Malos sueños he.</l>
 							<l>Me despertaré.</l>
 						</lg>
 					</div>
 					<div type="section">
-						<head>12</head>
+						<head xml:id="ne0217_head_017">12</head>
 						<lg type="poem">
 							<l>Me despertarán</l>
 							<l>campanas del alba</l>
@@ -569,7 +598,7 @@
 						</lg>
 					</div>
 					<div type="section">
-						<head>13</head>
+						<head xml:id="ne0217_head_018">13</head>
 						<lg type="poem">
 							<l>Para tu ventana</l>
 							<l>un ramo de rosas me dio la mañana.</l>
@@ -583,7 +612,7 @@
 						<milestone unit="section"/>
 					</div>
 					<div type="section">
-						<head>(«Los complementarios»)</head>
+						<head xml:id="ne0217_head_019">(«Los complementarios»)</head>
 						<p>«La conciencia —dice Abel Martín—, como reflexión o pretenso conocer del conocer, sería, sin el amor o impulso hacia <seg rend="italic">lo otro</seg>, el anzuelo en constante espera de pescarse a sí mismo. Mas la conciencia existe, como actividad reflexiva, porque vuelve sobre sí misma, agotado su impulso por alcanzar el objeto trascendente. Entonces reconoce su limitación y se ve a sí misma, como tensión erótica, impulso hacia lo otro inasequible». Su reflexión es más aparente que real, porque en verdad, no vuelve sobre sí misma para captarse como pura actividad consciente, sino sobre la corriente erótica que brota con ella de las mismas entrañas del ser. Descubre el amor como su propia impureza, digámoslo así, como su otro inmanente, y se le revela la esencial heterogeneidad de la substancia. Porque Abel Martín no ha superado, ni por un momento, el subjetivismo de su tiempo, considera toda objetividad propiamente dicha como una apariencia, un vario espejismo, una varia proyección ilusoria del sujeto fuera de sí mismo. Pero apariencias, espejismos o proyecciones ilusorias, productos de un esfuerzo desesperado del ser o sujeto absoluto por rebasar su propia frontera, tienen un valor positivo, pues mediante ellos se alcanza conciencia en su sentido propio, sin saber o sospechar la propia heterogeneidad, a tener la visión analítica —separando por abstracción lógica lo en realidad inseparable— de la constante y quieta mutabilidad.</p>
 						<milestone unit="section"/>
 						<p><seg rend="italic">El gran ojo que todo lo ve al verse a sí mismo</seg> es, ciertamente, un ojo ante las ideas, en actitud teórica, de visión o distancia; pero las ideas no son sino el alfabeto o conjunto de signos homogéneos que representan las esencias que integran el ser. Las ideas no son, en efecto, las esencias mismas, sino su dibujo o contorno trazado sobre la negra pizarra del no ser. Hijas del amor y, en cierto modo, del gran fracaso del amor, nunca serían concebidas sin él, porque es el amor mismo o conato del ser por superar su propia limitación quien las proyecta sobre la <seg rend="italic">nada</seg> o <seg rend="italic">cero absoluto</seg>, que también llama el poeta cero divino, pues, como veremos después, Dios no es el creador del mundo —según Martín—, sino el creador de la nada. No tienen, pues, las ideas realidad esencial, per se, son meros trasuntos o copias descoloridas de las esencias reales que integran el ser. Las esencias reales son cualitivamente distintas y su proyección ideal tanto menos substancial y más alejada del ser cuanto más homogéneo. Estas esencias no pueden separarse en realidad, sino en su proyección ilusoria, ni cabe tampoco —según Martín— apetencia de las unas hacia las otras, sino que todas ellas aspiran conjunta e indivisiblemente, a lo otro, <seg rend="italic">a un ser que sea lo contrario de lo que es</seg>, de lo que ellas son, en suma, a lo imposible. En la metafísica intrasubjetiva de Abel Martín fracasa el amor, pero no el conocimiento, o, mejor dicho, es el conocimiento el premio del amor. Pero el amor, como tal, no encuentra objeto; dicho líricamente: la amada es imposible.</p>
@@ -640,7 +669,7 @@
 						<p>No obstante, Abel Martín sostiene que, sin incurrir en contradicción, se puede afirmar que es el concepto del no ser la creación específicamente humana; y a él dedica un soneto con el cual cierra la primera sección de <seg rend="italic">Los complementarios</seg>:</p>
 						<milestone unit="section"/>
 						<lg type="poem">
-							<head>AL GRAN CERO</head>
+							<head xml:id="ne0217_head_020">AL GRAN CERO</head>
 							<l>Cuando el <seg rend="italic">Ser que se es</seg> hizo la nada</l>
 							<l>y reposó, que bien lo merecía,</l>
 							<l>ya tuvo el día noche, y compañía</l>
@@ -669,7 +698,7 @@
 						<p>Tras este soneto, no exento de énfasis, viene el <seg rend="italic">canto de frontera</seg>, por soleares (cante hondo) a la muerte, al silencio y al olvido que constituye la segunda sección del libro <seg rend="italic">Los complementarios</seg>. La tercera sección lleva, a guisa de prólogo, los siguientes versos:</p>
 						<milestone unit="section"/>
 						<lg type="poem">
-							<head>AL GRAN PLENO O CONCIENCIA INTEGRAL</head>
+							<head xml:id="ne0217_head_021">AL GRAN PLENO O CONCIENCIA INTEGRAL</head>
 							<l>Que en su estatua al alto Cero</l>
 							<l>—mármol frío,</l>
 							<l>ceño austero</l>
@@ -709,10 +738,10 @@
 
 			</div>
 			<div type="part">
-				<head>CLXVIII</head>
+				<head xml:id="ne0217_head_022">CLXVIII</head>
 				<p>JUAN DE MAIRENA, poeta, filósofo, retórico e inventor de una Máquina de Cantar. Nació en Sevilla (1865). Murió en Casariego de Tapia (1909). Es autor de una <seg rend="italic">Vida de Abel Martín</seg>, de un <seg rend="italic">Arte poética</seg>, de una colección de poesías: <seg rend="italic">Coplas mecánicas</seg>, y de un tratado de metafísica: <seg rend="italic">Los siete reversos</seg>.</p>
 				<div n="4" type="chapter" xml:id="ne0217_chap4">
-					<head>MAIRENA A MARTÍN, MUERTO</head>
+					<head xml:id="ne0217_head_023">MAIRENA A MARTÍN, MUERTO</head>
 					<lg type="poem">
 						<milestone unit="section"/>
 						<l>Maestro, en tu lecho yaces,</l>
@@ -778,7 +807,7 @@
 					<p>La composición continúa, algo enrevesada y difícil, con esa dificultad artificiosa del barroco conceptual, que el propio Mairena censura en su <seg rend="italic">Arte poético</seg>. En las últimas estrofas, el sentimiento de piedad hacia el maestro parece enturbiarse con mezcla de ironía, rayana en sarcasmo. Y es que toda nueva generación ama y odia a su precedente. El elogio incondicional rara vez es sincero. Lo del <seg rend="italic">logos</seg> variopinto no es, sin duda, expresión demasiado feliz para significar la facultad creadora de aquellos universales cualitativos que persiguió Martín. Y más que incomprensión parece acusar —en Mairena— una cierta malevolencia, que le lleva al sabotaje de las ideas del maestro. Lo del Amor bizco tiene una cuádruple significación: anecdótica, lógica, estética y metafísica. Una honda explicación de ello se encuentra en la <seg rend="italic">Vida de Abel Martín</seg>.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0217_chap5">
-					<head>EL «ARTE POÉTICA» DE JUAN DE MAIRENA</head>
+					<head xml:id="ne0217_head_024">EL «ARTE POÉTICA» DE JUAN DE MAIRENA</head>
 					<milestone unit="section"/>
 					<p>Juan de Mairena se llama a sí mismo <seg rend="italic">el poeta del tiempo</seg>. Sostenía Mairena que la poesía era un arte temporal —lo que ya habían dicho muchos antes que él— y que la temporalidad propia de la lírica sólo podía encontrarse en sus versos, plenamente expresada. Esta jactancia, un tanto provinciana, es propia del novato que llega al mundo de las letras dispuesto a escribir por todos y para todos, y, en último término, contra todos. En su <seg rend="italic">Arte poético</seg> no faltan párrafos violentos, en que Mairena se adelanta a decretar la estolidez de quienes pudieran sostener una tesis contraria a la suya. Los omitimos por vulgares, y pasamos a reproducir otros más modestos y de más substancia.</p>
 					<milestone unit="section"/>
@@ -862,7 +891,7 @@
 					<p>En suma, Mairena no se chupa el dedo en su análisis del barroco literario español. Más adelante añade —en previsión de fáciles objeciones— que él no ignora cómo en toda época, de apogeo o decadencia, ascendente o declinante, lo que se produce es lo único que puede producirse, y que aun las más patentes perversiones del gusto, cuando son realmente actuales, tendrán siempre una sutil abogacía que defiende sus mayores desatinos. Y en verdad que esa abogacía no defiende, en el fondo, ni tales perversiones ni tales desatinos, sino a un espíritu incapaz de producir otra cosa. Lo más inepto contra el culteranismo lo hizo Quevedo, publicando los versos de fray Luis de León. Fray Luis de León fue todavía un poeta, pero el sentimiento místico, que alcanzó en él una admirable expresión de remanso, distaba ya tanto de Góngora como de Quevedo, era precisamente lo que ya no podía cantar, algo definitivamente muerto a manos del espíritu jesuítico imperante.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0217_chap6">
-					<head>LA METAFÍSICA DE JUAN DE MAIRENA</head>
+					<head xml:id="ne0217_head_025">LA METAFÍSICA DE JUAN DE MAIRENA</head>
 					<milestone unit="section"/>
 					<p>«Todo poeta —dice Juan de Mairena— supone una metafísica; acaso cada poema debiera tener la suya —implícita—, claro está —nunca explícita—, y el poeta tiene el deber de exponerla, por separado, en conceptos claros. La posibilidad de hacerlo distingue al verdadero poeta del mero señorito que compone versos». (<seg rend="italic">Los siete reversos</seg>, pág. 192). Digamos algunas palabras sobre la metafísica de Juan de Mairena.</p>
 					<milestone unit="section"/>
@@ -1003,7 +1032,7 @@
 				</div>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0217_chap9">
-				<head>CLXIX</head>
+				<head xml:id="ne0217_head_026">CLXIX</head>
 				<ab>ULTIMAS LAMENTACIONES DE ABEL MARTÍN</ab>
 				<ab>(CANCIONERO APÓCRIFO)</ab>
 				<lg type="poem">
@@ -1069,7 +1098,7 @@
 				</lg>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0217_chap10">
-				<head>CLXX</head>
+				<head xml:id="ne0217_head_027">CLXX</head>
 				<ab>(SIESTA)</ab>
 				<ab>EN MEMORIA DE ABEL MARTIN</ab>
 				<lg type="poem">
@@ -1094,12 +1123,12 @@
 				</lg>
 			</div>
 			<div type="part">
-				<head>CLXXI</head>
+				<head xml:id="ne0217_head_028">CLXXI</head>
 				<ab>A LA MANERA DE JUAN DE MAIRENA. APUNTES PARA</ab>
 				<ab>UNA GEOGRAFÍA EMOTIVA DE ESPAÑA</ab>
 
 				<div n="11" type="chapter" xml:id="ne0217_chap11">
-					<head>I</head>
+					<head xml:id="ne0217_head_029">I</head>
 					<lg type="poem">
 						<l>¡Torreperogil!</l>
 						<l>¡Quién fuera una torre, torre del campo</l>
@@ -1107,7 +1136,7 @@
 					</lg>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0217_chap12">
-					<head>II</head>
+					<head xml:id="ne0217_head_030">II</head>
 					<lg type="poem">
 						<l>Sol en los montes de Baza.</l>
 						<l>Mágina y su nube negra.</l>
@@ -1116,7 +1145,7 @@
 					</lg>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0217_chap13">
-					<head>III</head>
+					<head xml:id="ne0217_head_031">III</head>
 					<lg type="poem">
 						<l>En Garciez</l>
 						<l>hay más sed que agua;</l>
@@ -1124,7 +1153,7 @@
 					</lg>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0217_chap14">
-					<head>IV</head>
+					<head xml:id="ne0217_head_032">IV</head>
 					<lg type="poem">
 						<l>¡Qué bien los nombres ponía</l>
 						<l>quien puso Sierra Morena</l>
@@ -1132,7 +1161,7 @@
 					</lg>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0217_chap15">
-					<head>V</head>
+					<head xml:id="ne0217_head_033">V</head>
 					<lg type="poem">
 						<l>En Alicún se cantaba:</l>
 						<l>«Si la luna sale,</l>
@@ -1141,7 +1170,7 @@
 					</lg>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0217_chap16">
-					<head>VI</head>
+					<head xml:id="ne0217_head_034">VI</head>
 					<lg type="poem">
 						<l>Y en la Sierra de Quesada;</l>
 						<l>«Vivo en pecado mortal:</l>
@@ -1150,7 +1179,7 @@
 					</lg>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0217_chap17">
-					<head>VII</head>
+					<head xml:id="ne0217_head_035">VII</head>
 					<lg type="poem">
 						<l>Tiene una boca de fuego</l>
 						<l>y una cintura de azogue.</l>
@@ -1172,7 +1201,7 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>CLXXII</head>
+				<head xml:id="ne0217_head_036">CLXXII</head>
 				<ab>(ABEL MARTÍN)</ab>
 				<ab>LOS COMPLEMENTARIOS</ab>
 				<milestone unit="section"/>
@@ -1180,7 +1209,7 @@
 				<ab>RECUERDOS DE SUEÑO, FIEBRE Y DUERMEVELA</ab>
 
 				<div n="18" type="chapter" xml:id="ne0217_chap18">
-					<head>I</head>
+					<head xml:id="ne0217_head_037">I</head>
 					<lg type="poem">
 						<l>Esta maldita fiebre</l>
 						<l>que todo me lo enreda,</l>
@@ -1215,13 +1244,13 @@
 					</lg>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0217_chap19">
-					<head>II</head>
+					<head xml:id="ne0217_head_038">II</head>
 					<lg type="poem">
 						<l>En la desnuda tierra…</l>
 					</lg>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0217_chap20">
-					<head>III</head>
+					<head xml:id="ne0217_head_039">III</head>
 					<lg type="poem">
 						<l>Era la tierra desnuda,</l>
 						<l>y un frío viento, de cara,</l>
@@ -1241,7 +1270,7 @@
 					</lg>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0217_chap21">
-					<head>IV</head>
+					<head xml:id="ne0217_head_040">IV</head>
 					<lg type="poem">
 						<l>¡Oh, claro, claro, claro!</l>
 						<l>Ya están los centinelas</l>
@@ -1304,7 +1333,7 @@
 					</lg>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0217_chap22">
-					<head>V</head>
+					<head xml:id="ne0217_head_041">V</head>
 					<lg type="poem">
 						<l>Con esta bendita fiebre</l>
 						<l>la luna empieza a tocar</l>
@@ -1319,7 +1348,7 @@
 					</lg>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0217_chap23">
-					<head>VI</head>
+					<head xml:id="ne0217_head_042">VI</head>
 					<lg type="poem">
 						<l>Junto al agua fría,</l>
 						<l>en la senda clara,</l>
@@ -1338,7 +1367,7 @@
 					</lg>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0217_chap24">
-					<head>VII</head>
+					<head xml:id="ne0217_head_043">VII</head>
 					<lg type="poem">
 						<l>¡Qué fácil es volar, qué fácil es!</l>
 						<l>Todo consiste en no dejar que el suelo</l>
@@ -1347,7 +1376,7 @@
 					</lg>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0217_chap25">
-					<head>VIII</head>
+					<head xml:id="ne0217_head_044">VIII</head>
 					<lg type="poem">
 						<l>¡Volar sin alas donde todo es cielo!</l>
 						<l>Anota este jocundo</l>
@@ -1363,7 +1392,7 @@
 					</lg>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0217_chap26">
-					<head>IX</head>
+					<head xml:id="ne0217_head_045">IX</head>
 					<lg type="poem">
 						<l>Pero caer de cabeza,</l>
 						<l>en esta noche sin luna,</l>
@@ -1394,7 +1423,7 @@
 					</lg>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0217_chap27">
-					<head>X</head>
+					<head xml:id="ne0217_head_046">X</head>
 					<lg type="poem">
 						<l>¡Bajar a los infiernos como el Dante!</l>
 						<l>¡Llevar por compañero</l>
@@ -1423,7 +1452,7 @@
 					</lg>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0217_chap28">
-					<head>XI</head>
+					<head xml:id="ne0217_head_047">XI</head>
 					<lg type="poem">
 						<l>—Es ella… Triste y severa.</l>
 						<l>Di, más bien, indiferente</l>
@@ -1453,7 +1482,7 @@
 					</lg>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0217_chap29">
-					<head>XII</head>
+					<head xml:id="ne0217_head_048">XII</head>
 					<lg type="poem">
 						<l>¡Oh, claro, claro, claro!</l>
 						<l>Amor siempre se hiela.</l>
@@ -1503,10 +1532,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>CLXXIII</head>
+				<head xml:id="ne0217_head_049">CLXXIII</head>
 				<ab>(CANCIONES A GUIOMAR)</ab>
 				<div n="30" type="chapter" xml:id="ne0217_chap30">
-					<head>I</head>
+					<head xml:id="ne0217_head_050">I</head>
 					<lg type="poem">
 						<l>No sabía</l>
 						<l>si era un limón amarillo</l>
@@ -1534,7 +1563,7 @@
 					</lg>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0217_chap31">
-					<head>II</head>
+					<head xml:id="ne0217_head_051">II</head>
 					<lg type="poem">
 						<l>En un jardín te he soñado,</l>
 						<l>alto, Guiomar, sobre el río,</l>
@@ -1575,7 +1604,7 @@
 					</lg>
 				</div>
 				<div n="32" type="chapter" xml:id="ne0217_chap32">
-					<head>III</head>
+					<head xml:id="ne0217_head_052">III</head>
 					<lg type="poem">
 						<l part="Y">Tu poeta</l>
 						<l>piensa en ti. La lejanía</l>
@@ -1633,11 +1662,11 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>CLXXIV</head>
+				<head xml:id="ne0217_head_053">CLXXIV</head>
 				<ab>OTRAS CANCIONES A GUIOMAR</ab>
 				<ab>(A LA MANERA DE ABEL MARTÍN Y DE JUAN DE MAIRENA)</ab>
 				<div n="33" type="chapter" xml:id="ne0217_chap33">
-					<head>I</head>
+					<head xml:id="ne0217_head_054">I</head>
 					<lg type="poem">
 						<l>¡Sólo tu figura,</l>
 						<l>como una centella blanca,</l>
@@ -1678,7 +1707,7 @@
 					</lg>
 				</div>
 				<div n="34" type="chapter" xml:id="ne0217_chap34">
-					<head>II</head>
+					<head xml:id="ne0217_head_055">II</head>
 					<lg type="poem">
 						<l>Todo amor es fantasía;</l>
 						<l>él inventa el año, el día,</l>
@@ -1690,7 +1719,7 @@
 					</lg>
 				</div>
 				<div n="35" type="chapter" xml:id="ne0217_chap35">
-					<head>III</head>
+					<head xml:id="ne0217_head_056">III</head>
 					<lg type="poem">
 						<l>Escribiré en tu abanico:</l>
 						<l>te quiero para olvidarte,</l>
@@ -1698,7 +1727,7 @@
 					</lg>
 				</div>
 				<div n="36" type="chapter" xml:id="ne0217_chap36">
-					<head>IV</head>
+					<head xml:id="ne0217_head_057">IV</head>
 					<lg type="poem">
 						<l>Te abanicarás</l>
 						<l>con un madrigal que diga:</l>
@@ -1706,7 +1735,7 @@
 					</lg>
 				</div>
 				<div n="37" type="chapter" xml:id="ne0217_chap37">
-					<head>V</head>
+					<head xml:id="ne0217_head_058">V</head>
 					<lg type="poem">
 						<l>Te pintaré solitaria</l>
 						<l>en la urna imaginaria</l>
@@ -1717,7 +1746,7 @@
 					</lg>
 				</div>
 				<div n="38" type="chapter" xml:id="ne0217_chap38">
-					<head>VI</head>
+					<head xml:id="ne0217_head_059">VI</head>
 					<lg type="poem">
 						<l>Y te enviaré mi canción:</l>
 						<l>«Se canta lo que se pierde»,</l>
@@ -1726,7 +1755,7 @@
 					</lg>
 				</div>
 				<div n="39" type="chapter" xml:id="ne0217_chap39">
-					<head>VII</head>
+					<head xml:id="ne0217_head_060">VII</head>
 					<lg type="poem">
 						<l>Que apenas si de amor el ascua humea</l>
 						<l>sabe el poeta que la voz engola</l>
@@ -1746,7 +1775,7 @@
 					</lg>
 				</div>
 				<div n="40" type="chapter" xml:id="ne0217_chap40">
-					<head>VIII</head>
+					<head xml:id="ne0217_head_061">VIII</head>
 					<lg type="poem">
 						<l>Abre el rosal de la carroña horrible</l>
 						<l>su olvido en flor, y extraña mariposa,</l>
@@ -1768,7 +1797,7 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>CLXXV</head>
+				<head xml:id="ne0217_head_062">CLXXV</head>
 				<ab>(MUERTE DE ABEL MARTIN)</ab>
 				<milestone unit="section"/>
 				<p>Pensando que no veía</p>
@@ -1778,7 +1807,7 @@
 				<milestone unit="section"/>
 				<p>J. de MAIRENA: «Epigrama»</p>
 				<div n="41" type="chapter" xml:id="ne0217_chap41">
-					<head>I</head>
+					<head xml:id="ne0217_head_063">I</head>
 					<lg type="poem">
 						<l>Los últimos vencejos revolean</l>
 						<l>en torno al campanario;</l>
@@ -1821,7 +1850,7 @@
 					</lg>
 				</div>
 				<div n="42" type="chapter" xml:id="ne0217_chap42">
-					<head>II</head>
+					<head xml:id="ne0217_head_064">II</head>
 					<lg type="poem">
 						<l>El ángel que sabía</l>
 						<l>su secreto salió a Martín al paso.</l>
@@ -1834,7 +1863,7 @@
 					</lg>
 				</div>
 				<div n="43" type="chapter" xml:id="ne0217_chap43">
-					<head>III</head>
+					<head xml:id="ne0217_head_065">III</head>
 					<lg type="poem">
 						<l>Y vio la musa esquiva,</l>
 						<l>de pie junto a su lecho, la enlutada,</l>
@@ -1853,7 +1882,7 @@
 					</lg>
 				</div>
 				<div n="44" type="chapter" xml:id="ne0217_chap44">
-					<head>IV</head>
+					<head xml:id="ne0217_head_066">IV</head>
 					<lg type="poem">
 						<l>Viví, dormí, soñé y hasta he creado</l>
 						<l>—pensó Martín, ya turbia la pupila—</l>
@@ -1869,7 +1898,7 @@
 					</lg>
 				</div>
 				<div n="45" type="chapter" xml:id="ne0217_chap45">
-					<head>V</head>
+					<head xml:id="ne0217_head_067">V</head>
 					<lg type="poem">
 						<l>Y sucedió a la angustia la fatiga,</l>
 						<l>que siente su esperar desesperado,</l>
@@ -1897,7 +1926,7 @@
 				</div>
 			</div>
 			<div n="46" type="chapter" xml:id="ne0217_chap46">
-				<head>CLXXVI</head>
+				<head xml:id="ne0217_head_068">CLXXVI</head>
 				<ab>(OTRO CLIMA)</ab>
 				<lg type="poem">
 					<milestone unit="section"/>
@@ -1936,7 +1965,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

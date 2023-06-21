@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Crimen</title>
-				<title type="sub"></title>
+				
 				<title type="short">Crimen</title>
-				<title type="idno">
-					<idno type="bne">XX1961933</idno>
-					<idno type="viaf">309368888</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX830087</idno>
-					<idno type="viaf">61601797</idno>
-					<name type="short">Espinosa</name>
-					<name type="full">Agustín Espinosa</name>
+					<name type="short" ref="#Espinosa"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">292</measure>
@@ -141,13 +131,48 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0380</idno>
+						<idno type="cligs">ne0380</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Finereader, <date when="2018">2018</date>.</bibl>
-				<bibl type="print-source">Libros del Innombrable, Zaragoza <date when="1999">1999</date></bibl>
-				<bibl type="edition-first"><date when="1934">1934</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Crimen</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1961933.html">XX1961933</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309368888/">309368888</idno>
+				</idno>
+				</title>
+					<author xml:id="Espinosa">
+						<name type="full"><forename>Agustín</forename> <surname>Espinosa</surname></name>
+						<idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/120890933">120890933</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q20014909/">Q20014909</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX830087.html">XX830087</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/61601797/">61601797</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Finereader, <date when="2018">2018</date>.</bibl>
+					<bibl type="print-source">Libros del Innombrable, <pubPlace>Zaragoza</pubPlace> <date when="1999">1999</date></bibl>
+					<bibl type="edition-first"><date when="1934">1934</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Ensayo de un crimen</title>: 	<title type="sub">inspirades en la obra de Rodolfo Usigli "Ensayo de un crimen"</title> <date when="1955">1955</date>, <publisher>Alianza Cinematografica</publisher> <pubPlace>[S.l.]</pubPlace> 		<idno type="ppn" n="1154633829" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1154633829"/> </bibl>
+						<bibl type="further-edition"><title type="main">Crimen</title>: 	<title type="sub">Lancelot 28°-7° : (Guía integral de una isla atlántica). Media hora jugando a los dados</title> <date when="1974">1974</date>, <publisher>Taller de Ed. J. Betancor</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039622169" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039622169"/> 		<idno type="isbn" n="847330019X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Crimen y otros textos</title> <date when="1990">1990</date>, <publisher>Viceconsejería de Cultura y Deportes, Gobierno de Canarias</publisher> <pubPlace>[S.l.], Islas Canarias</pubPlace> 		<idno type="ppn" n="468926607" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468926607"/> 		<idno type="isbn" n="8487137334"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Crimen y otros textos</title> <date when="1990">1990</date>, <publisher>Viceconsejería de Cultura y Deportes, Gobierno de Canarias</publisher> <pubPlace>[S.l.]</pubPlace> 		<idno type="ppn" n="115081933" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=115081933"/> 		<idno type="isbn" n="8487137334"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Crimen</title>: 	<title type="sub">Media hora jugando a los dados</title> <date when="1999">1999</date>, <publisher>Libros del innombrable</publisher> <pubPlace>Zaragoza</pubPlace> 		<idno type="ppn" n="1625867050" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1625867050"/> 		<idno type="isbn" n="8495399024"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Crimen</title>: 	<title type="sub">[narrativa]</title> <date when="1999">1999</date>, <publisher>Libros del Innombrable</publisher> <pubPlace>Zaragoza</pubPlace> 		<idno type="ppn" n="34624059X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=34624059X"/> 		<idno type="isbn" n="8495399024"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La vie criminelle d'Archibald de la Cruz &amp; EL</title>: 	<title type="sub">ensayo de un crimen</title> <date when="2001">2001</date>, <publisher>Ciné-Club</publisher> <pubPlace>[S.l.]</pubPlace> 		<idno type="ppn" n="1324996463" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1324996463"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">¿Garrote o zanahoria?</title>: 	<title type="sub">factores asociados a la disminución de la violencia homicida y el crimen en Bogotá, 1993 - 2002</title> <date when="2003">2003</date>, <publisher>Univ. de los Andes, CEDE</publisher> <pubPlace>[Bogotá]</pubPlace> 		<idno type="ppn" n="615546374" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=615546374"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">¿Garrote o zanahoria?</title>: 	<title type="sub">Factores asociados a la disminución de la violencia homicida y el crimen en Bogotá, 1993 - 2002</title> <date when="2003">2003</date>, <publisher/> <pubPlace>Santafé de Bogotá</pubPlace> 		<idno type="ppn" n="389582697" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=389582697"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Crimen y otros escritos vanguardistas</title> <date when="2007">2007</date>, <publisher>Ed. Idea;La Página</publisher> <pubPlace>Santa Cruz de Tenerife [u.a.]</pubPlace> 		<idno type="ppn" n="622400711" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=622400711"/> 		<idno type="isbn" n="8496640973;9788496640979"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Crimen</title> <date when="2019">2019</date>, <publisher>Siruela</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1685004040" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1685004040"/> 		<idno type="isbn" n="9788417996031"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -161,8 +186,13 @@
 				<p>Abundan las frases breves, a modo de pinceladas electrizantes.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
-					<term type="author.TOC.range" resp="MdLE10"></term>
+					<term type="author.TOC.range" resp="MdLE10"/>
 					<term type="author.continent">Europe</term>
 					<term type="author.country">Spain</term>
 					<term type="author.date.birth">1897</term>
@@ -172,8 +202,8 @@
 					<term type="author.movement">avantgarde</term>
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">vanguardista</term>
-					<term type="author.year.change"></term>
-					<term type="authorText.group"></term>
+					<term type="author.year.change"/>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">mature</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -186,13 +216,13 @@
 					<term type="text.genre" cert="medium">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon">Ensayos, Historia, teoría literaria y crítica,  Poesía; </term>
-					<term type="text.genre.subgenre.edit" resp="epublibre"></term>
+					<term type="text.genre.subgenre.edit" resp="epublibre"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">crime-fiction</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">vanguardist</term>
-					<term type="text.genre.subgenre.litHist" resp="HdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="HdLE"/>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela policíaca, novela fantástica, novela irreal</term>
-					<term type="text.genre.subtitle"></term>
-					<term type="text.genre.subtitle.source" resp="bne"></term>
+					<term type="text.genre.subtitle"/>
+					<term type="text.genre.subtitle.source" resp="bne"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.mentioned" resp="HdLE">True</term>
@@ -227,6 +257,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-05-22" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
     <text>
@@ -253,9 +284,9 @@
 <p>Yo ya sólo vivo para un estuche de terciopelo blanco, donde guardo dos ojos azules, encontrados por el guardagujas la menstrua alba de mi crimen, entre los últimos escombros sanguinolentos de la vía.</p>
 </div>
     		<div n="2" type="chapter" xml:id="ne0380_chap2">
-	<head>primavera</head>
+	<head xml:id="ne0380_head_000">primavera</head>
     			<div type="section">
-<head>luna de miel</head>
+<head xml:id="ne0380_head_001">luna de miel</head>
 <p>Me había dormido entre veinte senos, veinte bocas, veinte sexos, veinte muslos, veinte lenguas y veinte ojos de una misma mujer. Por eso fue mi despertar más angustioso y horripilante: crucificado sobre mi propia cama de matrimonio puesta en posición vertical tras un gran balcón de cristales abierto a una calle desolada. Amanecía tras aquel balcón que me servía de vitrina. Estaba completamente desnudo. Sentía frío y vergüenza de que me pudieran ver desde la calle. Unas finas manos de mujer florecían sobre mis pies como dos clavos blancos, y, probablemente, eran ellas las que me sujetaban a la madera de la cama, aunque yo me consolara creyendo que intentaban desclavarme únicamente. La vergüenza de mi desnudez me angustiaba de nuevo. Inventé, para aquel momento, una oración llena de ternura en la que había mezclados confusos recuerdos de un libro sobre las obras de misericordia que se me hizo aprender de memoria de niño y versos de Paul Claudel y fragmentos de mi Segundo epistolario.</p>
 <p>Tras mi tierna oración, un ejército de moscas de alas verdes, de caracoles de campo, de cucarachas, de sapos y de pequeños ratones blancos, comenzaron a subirme por las piernas hasta cubrirme con sus inmundicias todo el cuerpo. He aquí el traje que se me tenía reservado. Bullía en torno a mi cabeza el hervidero hostil de las moscas. Un temblor espeluznante palpitaba sobre mi vientre y sobre mis brazos y sobre mi cara y sobre mis axilas y hasta sobre mis manos clavadas a la cama por dos anchos puñales que me producían una sangría abundante. Los ojos se me nublaban, y preveía que me iba a desmayar de un momento a otro. Mis mayores amarguras no provenían de esto sin embargo. Sino de una cabeza truncada de mujer morena, que desde un rincón del balcón me miraba con ojos suplicantes, como si dependieran sólo de mí sus destinos. De aquella cabeza terriblemente pálida, colocada sobre un pequeño velador, e iluminada por la luz tenue del alba, fluía un fino hilo de sangre que había formado un gran charco en el piso del balcón. Habló, al fin, la cabeza, y la voz de María Ana amaneció de pronto sobre la noche apremiante de la alcoba.</p>
 <p>-Ahora puedo decirte que te odio, mi pobre viejo burlado, mi gran cornudo macilento. No tocarás ya jamás mis senos, acariciados hoy por manos de ángeles. Anda mi sexo ahora por las casas de prostitución de los puertos del Mediterráneo, visitadas por jóvenes marineros audaces, y mis pies corren tras brazos desclavados y tras labios vírgenes. Para ti me queda esta cabeza truncada y estos ojos tímidos y esta perenne boca insultante.</p>
@@ -264,7 +295,7 @@
 <p>Vi cómo el velador cedía como bajo un gran peso, y la cabeza de María Ana rodaba al suelo, arrastrando en su caída cuatro blandones encendidos que yo no había visto hasta entonces. En el cielo, que empezaba a hacerse apenas rosado, flotaba una gran cruz oblonga a cuyo alrededor volaban varios cuervos silenciosos como siniestro rebaño de ataúdes alados.</p>
     				</div>
     			<div type="section">
-    				<head>hazaña de som brero</head>    				
+    				<head xml:id="ne0380_head_002">hazaña de som brero</head>    				
 	<p>Un sombrero fue el protagonista de este divino sueño incontado.</p>
 <p>Desde un andamio demasiado alto de una casa en obras lo veía caído abajo, en medio de la calle, esperando a pie firme la hora próxima de una cita exacta. Estuvo a punto de perecer varias veces bajo varias ruedas de automóvil. La brisa de la tarde le libertó de una colilla de cigarro que hubiera terminado perforándole el ala. Un escupitajo cayó tan cerca de él, que le salpicó, aunque sólo de modo muy ligero. El fino zapato de ante de una muchacha rubia le rozó suavemente, y yo vi al sombrero que se estremecía hasta la copa, dolorido de un sexo formado como por asociación de úlceras recientes.</p>
 <p>Anochecía, cuando apareció en una esquina un hombre destocado. Atravesó con presura la calle, y, al pasar junto al sombrero, se agachó disimuladamente, lo recogió del suelo y se lo ladeó sobre la oreja izquierda. Luego se perdió más abajo, entre la muchedumbre constituida a aquella hora exclusivamente por oficinistas y obreros recién salidos del trabajo.</p>
@@ -277,7 +308,7 @@
 <p>Al amanecer del día siguiente era encontrado en una alameda de las afueras el cadáver de una niña de seis años. Llevaba puesto un sombrero de hombre, sujeto por un grueso alfiler, que, perforándole ambos parietales, le atravesaba la masa encefálica.</p>
 </div>
 <div type="section">
-<head>la noche buena de fígaro</head>
+<head xml:id="ne0380_head_003">la noche buena de fígaro</head>
 <p>Sentía una ternura que me llevaba a acariciar todas las cosas: lomos de libros, filos de navajas, hocicos de gato, rizos de pubis, prismas de hielo, cucarachas mohosas, lenguas de perro y pieles de marta, gusaneras y bolas de cristal.</p>
 <p>Mis manos estaban tocando algo frío y repugnante. Primero las orejas, luego la nariz, después las cejas del cadáver de un hombre como de cincuenta años, escorzado horizontalmente en un gran primer plano de gran «film», que fuera a la vez un gran cuadro. Tenía aquel hombre un ojo medio cerrado, y el otro, vidrioso, desmesuradamente abierto, y una barba de enfermo de una semana. No llevaba puestos zapatos, sino unos calcetines negros, de muy mala clase, rotos por el talón y sobre los dedos. Tenía la cabeza recién afeitada, y cubría únicamente su ya macabra humanidad un abrigo de señora, impecable, sin una sola arruga, abrigo de maniquí de escaparate de sastrería, demasiado largo para el muerto, al que sólo dejaba en libertad los pies. El abrigo llevaba cosido aún en un costado un papel donde se leía: «M.ª A., soltera, de 16 años, desconocida».</p>
 <p>Todo esto entre dos hileras de cubiertos, sobre el mantel blanco de una mesa de comedor preparada para una gran cena de Nochebuena. Los mal vestidos pies, rozando la blancura de unos pasteles de coco y la ligera arquitectura de un castillo de hojaldre; una de las manos, de uñas curvas y oscuras, medio sumergida en una fuente de «chantilly».</p>
@@ -288,7 +319,7 @@
 <p>Aunque sólo acariciaba las orejas, los labios, las mejillas de un hombre a quien había asesinado unas horas antes en su misma habitación, para sustituir su cabeza por una cabeza más clásica: capricho último, de noche de Navidad, de una mujer de pelo rojo y caderas ampulosas. Por quien había llegado hasta el crimen. Y que esperaba, en tanto, voluptuosamente, mi retorno imperioso a su casa, portador de la cena mágica, en la cual habría de ser yo, a la vez, «maitre», matarife y comensal enamorado.</p>
 </div>
 <div type="section">
-<head>¿era yo un caballo?</head>
+<head xml:id="ne0380_head_004">¿era yo un caballo?</head>
 <p>Primero -y no era primero acaso- dijiste:</p>
 <p>-¡Ya estamos solos!</p>
 <p>Estábamos solos, en medio de una plaza inclemente, tú, yo y el cochero de la esquina.</p>
@@ -305,7 +336,7 @@
 <p>En el sitio donde estaba antes mi estatua había ahora un buró apolillado, cojo de una pata, y un cubo de basura adornado con lirios blancos.</p>
 </div>
 <div type="section">
-<head>ángelus</head>
+<head xml:id="ne0380_head_005">ángelus</head>
 <p>Únicamente desde una nube, desde una torre alta, desde un avión o desde una cornisa de rascacielos se ven las cosas como yo las veía aquella tarde desde una vulgar ventana de alcoba.</p>
 <p>Lo que veía no era realmente nada extraordinario, pero a mí me llenaba de un ardoroso júbilo: sobre una aguda roca solitaria, un gran pájaro blanco.</p>
 <p>Acaso no era completamente blanco, sino sólo gris, y la distancia y el tono oscuro de la roca desvirtuaban sobremanera el color. El recuerdo que me queda de éste es, de todos modos, más vago, y no es así del desmesurado tamaño, que me es aún hoy mismo muy fiel. Era -debía o quería ser por lo menos- un buitre. Su cabeza, como la de un niño de dos años. Su estatura, de casi dos metros. Su pico hocico. Su cola, como la de un pavo real.</p>
@@ -315,35 +346,35 @@
 </div>
     		</div>
     			<div n="3" type="chapter" xml:id="ne0380_chap3">
-	<head>verano</head>
+	<head xml:id="ne0380_head_006">verano</head>
 <div type="section">
-<head>diario entre dos cruces</head>
+<head xml:id="ne0380_head_007">diario entre dos cruces</head>
 	<div type="section">
-	<head>I</head>
+	<head xml:id="ne0380_head_008">I</head>
 <p>Junto a cada árbol una aguda piedra para cada pie desgarrado. Navajas sobre carne viva, luz espejeada, fuente sórdida sobre desmedrados estanques. Van a mi espalda los peores adioses. Van ladridos de perros detrás de mi sombra, detrás del sudor caído en el polvo. Y todavía. Una cortina rota. Un sueño encadenado. Una tormenta ejemplar. Un toro enfermo. Un río de sangre.</p>
 <p>El concierto está más allá. Aquí, el desconcierto. Llueve la luz en complicidad con ecos deseados. Como un mar, satisface mis dos eternas hambres. Es todo -cielo, aire, alcohol- temblor de la sensualidad escondida. Trapos. Ya está. ¿Dónde más trapos que por los costados de Dios? Sombras mojadas de los suburbios, ávidas de cuentos celestes y de plurales jardines. Manchas de aceite de unos ordenados olivos cuyo verde tiembla aún en mis ojos turbios de odios amontonados por no sé qué miradas adversas, qué manos crueles, qué palabras esquivas.</p>
 	</div>
 	<div type="section">
-		<head>2</head>
+		<head xml:id="ne0380_head_009">2</head>
 		<p>Flotan hollejos sobre el agua y se arremolinan junto a inesperados tientos. No hay mar tampoco aquí. Que el mar es trama de héroes, selva de perdidos y no jarama-go de invernadero.</p>
 <p>¿Quién empujó mi cuerpo y pronunció mi nombre? ¿Quién insultó, junto a mi oído, mi alma? Tiembla el cobre en mis manos. Tiembla lo opaco, lo despreciable. ¿Qué temo de esa esquina muda, de ese portal solitario, de ese hombre alto, que me ha mirado al pasar como a un tiñoso perro?</p>
 	</div>
 	<div type="section">
-		<head>3</head>
+		<head xml:id="ne0380_head_010">3</head>
 		<p>Una tarde -ayer tarde- unos obrerillos se han apuñalado ante mis ojos, y he visto caer la sangre sobre sus camisas de domingo, y transformarse en flores rojas las piedras de una calle donde jugaban unos niños. Y he visto luego, esta noche, a la luz de un farol y entre blancas batas asépticas, los rostros de tres muertos recientes. De tres muertos de odio. De tres héroes de barrio proletario. Tenía el mayor diecisiete años y una ancha frente de soñador sin alas. Estaban sus destinos acaso en acabar el uno poeta, el otro, pintor, actor de cinema, el otro. Y ahora están ya mudos y fríos para siempre, con una moza mueca de amargura en la boca y extraviados los ojos y las manos rígidas.</p>
 <p>¿Qué sabe nadie, qué sabemos nosotros, del puñal que nos herirá, de las manos que nos estrangularán, de la bala que nos estallará la cabeza? ¿O en qué plaza, en qué calle, en qué ciudad, bajo qué cielo caeremos un lozano día para no levantarnos más? Para que nos extravíen los ojos y se nos amargue, con una conocida mueca, la boca. Para ser espectáculo de unas horas, entre trajes oficiales y ojos curiosos. Para que un periodista anónimo haga su crónica más cruenta, mientras muerde un bocadillo y sorbe un vaso de ginebra y chupa un cigarro que no sabe si es suyo o por qué caminos le ha llegado. Para que unas llorosas mujeres se lamenten, y coman luego con más apetito aquella noche.</p>
 	</div>
 	<div type="section">
-		<head>4</head>
+		<head xml:id="ne0380_head_011">4</head>
 		<p>Vamos soñando pesadillas por la vida. Sueños de otros mezclados con nuestros propios sueños. Cada hora trae su sorpresa. A esta mujer que ahora amamos tanto, que daríamos por ella la vida, acaso la odiaremos mañana. Traicionaremos a este amigo, a cuya aventura está sujeta la nuestra. A quien nos ayudó en nuestra empresa peor, le dejaremos naufragar en su buena desgracia. Y salvaremos a quien no nos ha de salvar o a quien nos ha de empujar hacia un lado para salvar a su enemigo más próximo.</p>
 <p>¿Quién eres tú? ¿Dónde vas? Todos gritándomelo. Todos deseando que no les oiga. Todos expectantes de mi calvario de ciego, de las quebraduras de mi empresa, de la acechanza final en que todo se acabe.</p>
 	</div>
 	<div type="section">
-		<head>5</head>
+		<head xml:id="ne0380_head_012">5</head>
 		<p>¿Qué sueña el mar estos amaneceres de agosto para que sea su canto tan tierno, tan sutil su espuma, tan sonriente su azul, tan melodioso su oleaje? Siguen las alcantarillas desembocando en sus aguas. Neptuno le ha olvidado ya. Las antiguas sirenas habitan ahora estrellas distantes. Pero el mar sueña aún no sé qué deliciosos sueños, pues es tierno su canto y sutil su espuma y sonriente su azul y melodioso su oleaje.</p>
 	</div>
 	<div type="section">
-		<head>6</head>
+		<head xml:id="ne0380_head_013">6</head>
 		<p>-Muchacha, ¿dónde vas?</p>
 <p>-Vuelan dos ángeles sobre la tumba de mi amante.</p>
 <p>-¿Quieres sujetarles las alas, o es que ansias, con gritos y brazos, ahuyentarlos?</p>
@@ -351,7 +382,7 @@
 <p>Quedó la calle sola. En una esquina próxima se quebró un cuerpo herido. Se oyeron, cada vez más distantes, unos lánguidos pasos. Lejos temblaba, sobre un horizonte cárdeno, un laberinto de cruces entre cales mojadas.</p>
 	</div>
 	<div type="section">
-		<head>7</head>
+		<head xml:id="ne0380_head_014">7</head>
 		<p>Treme la luz del mediodía sobre un paisaje de casas oscuras, de callejones crueles, de pobreza maloliente.</p>
 <p>A esta misma hora cantaba otros días una voz de mujer en una ventana entreabierta.</p>
 <p>Yo escuchaba su voz con apasionada ternura. Y el sol de las doce rizaba sus oros sobre el paisaje que ahora miro. Y eran claras las casas y rientes las calles y bieno-liente la pobreza.</p>
@@ -360,9 +391,9 @@
 </div>
     		</div>
 	<div n="4" type="chapter" xml:id="ne0380_chap4">
-		<head>otoño</head>
+		<head xml:id="ne0380_head_015">otoño</head>
 <div type="section">
-<head>la mano muerta</head>
+<head xml:id="ne0380_head_016">la mano muerta</head>
 <p>Yo busco una mano desesperanzadamente. Imitada sin fortuna en mármoles, ceras y bronces. Una mano lívida, fría, yerta. Que descorra las cortinas de mi alcoba, que guíe mis deslucidos pasos, que quiebre en el aire, entre sus dedos dulces, saetas enemigas, que se apoye en mis peores horas sobre mis desvelados hombros.</p>
 <p>Una mano pálida, fina y trágica. Una mano recién mutilada. Aún anillados sus dedos y rojas aún y espejeantes sus uñas. Una mano de novia que se ha querido hace ya mucho tiempo. Una mano que ha olvidado ya la caricia del guante. La que me cierre un día los ojos que no podrá la muerte cerrarme; ni mis amigos más fieles, ni mis padres, ni mis hijos, ni mis hermanos. Sino sólo tú, mano de muerta, errante; mano de mis sueños del alba, mano que espera, como una estrella de mi alma, mi cuerpo.</p>
 <p>Yo conozco una mano, pero no es ésa.</p>
@@ -375,11 +406,11 @@
 <p>Una mano angustiosamente blanca.</p>
 </div>
 		<div type="section">
-			<head>retorno</head>
+			<head xml:id="ne0380_head_017">retorno</head>
 <p>Han habitado una calle y una plaza mis sueños de muchas horas y años. Han sido escenario de mis pesadillas fustigantes, refugio de mis tropezones injustos, cielo de mis valerosas regresiones. En mi episodiario cotidiano, esa plaza y esa calle no han faltado nunca. En ellas ha estado mi estatua de héroe y la sombrerería de un duelo. En ellas, la vitrina de un alba y la alcoba de un ocaso y el cuerpo sangrante de una mujer lejana. En ellas, un entierro grotesco, un muchacho carbonizado, una parada pavorosa. Junto a mis ojos de niño anormal; desde mi infancia desesperada y trágica. Ya sólo aquí y ahora. Ni después ya ni en otro sitio.</p>
 <p>¡Tal nebulosa entre alas de ayer y cárceles de siempre!</p>
 <div type="section">
-<head>1</head>
+<head xml:id="ne0380_head_018">1</head>
 <p>Se llamaba así: la calle del Muerto. Pero su categoría no llegaba ni aun a callejón. Eran veinte metros de mal empedrado camino entre dos muros, blancos casi por milagro.</p>
 <p>El nombre investía de todos modos a la calle del Muerto de una macabridad que no le venía. A ratos, debía de horrorizarse de su nombre la calle del Muerto, y en esos momentos se lo hubiera cambiado por cualquier otro.</p>
 <p>La calle del Muerto tenía en su fondo un paisaje de barcas de vela sobre un mar de calma, de gaviotas, soles de poniente y nubes rosadas.</p>
@@ -392,7 +423,7 @@
 <p>A ella debo también una cicatriz retorcida, como de escrófula cerebral, que mi calva prematura acabará abandonando en el centro de la frente.</p>
 </div>
 			<div type="section">
-				<head>2</head>
+				<head xml:id="ne0380_head_019">2</head>
 				<p>En mis tardes de entonces había una plaza solitaria hasta donde llegaba el ruido del mar cercano. La plaza era grande y oscura, con bancos vulgares de piedra y árboles altos e incoloros.</p>
 <p>Veía la plaza únicamente desde el fondo de un callejón empinado que moría en la misma plaza. No recuerdo haberla pisado nunca. Sé, sin embargo, que si pudiera sentarme hoy en cualquiera de sus bancos los recordaría con la sensación exacta de su dureza, más que advertirla por primera vez. Creo saber también qué profundidad darían las huellas de mis botas sobre su piso de tierra. Pasearía por ella como su huésped, más que como su vecino.</p>
 <p>El mar sonaba tan próximo a la plaza, que la convertía en playa; que la limitaba con el mar. Era -no tuvo nunca fue- una playa abandonada, vestida con abalorios de plaza de provincia. Tenía la desolada desnudez fatal de la playa. Arboles y bancos, mirándose miedosos, llenábanla de una angustia muda, que se comunicaba a todo cuanto rozaba con ella.</p>
@@ -400,16 +431,16 @@
 </div>
 		</div>
 <div type="section">
-<head>¡no!¡no!</head>
+<head xml:id="ne0380_head_020">¡no!¡no!</head>
 <p>Una madrugada de noviembre desvaída y hosca, un hombre, extenuado de muchas noches de vigilia, se paseaba agitadamente entre las paredes de una habitación celular, monologando en voz alta.</p>
 <p>He aquí sus palabras:</p>
 <p>-¡No! ¡No! ¡No es eso! ¡Ni lo ha sido nunca! La ventana sigue en el sitio de siempre. Pasaban ayer bajo ella las horas. Era mayo, y había sombras largas en sus perfumados ocasos. Era febrero, y una luz senil tendía una cortina de encajes sobre una ociosa calleja. Y era agosto, con cálidas rosas sobre muros resolados. O noviembre, con cristales nublosos y siluetas imprecisas de unos espectrales amantes, como en escaparate de pascuas. La ventana empezó -¿qué febrero, qué mayo, qué agosto, qué noviembre?- a motivar preguntas misteriosas. Un perro huidizo fue muerto en un alba por una madrugadora carreta. Su cadáver permaneció varios días bajo la ventana ignorante. Fue otro día un sacerdote quien se abrió allí las venas. La gente empezó a mirar con superstición hacia la macabra ventana. Luego, ya, todo asesino vulgar, todo caprichoso suicida, era atraído hacia el tradicional escenario. Había de ser allí precisamente, aunque hubiera rincones más penumbrosos, plazas más solitarias, superiores encrucijadas. Esa muchacha que ha muerto hace apenas diez días, llevándose hasta el cielo el secreto de su destrozado cuerpo y de su cráneo fracturado, si se detuvo un instante, al morir, bajo una ventana iluminada, no fue para hacerse doble blanco de un puñal lanzado al aire y de un acelerado mazazo. No hacen falta relecciones de Poe ni sherlockhólmicas sutilezas. ¡Cuando Esquilo ya ha hablado, y ha hablado Shakespeare, y Lenormand ha hablado! Pero hay, en tanto, un enamorado infeliz entre bizquerías judiciales y lobregueces de una casa celular y sonar de llaves y horizontes enrejados. Ha perdido su ventana de tantos días. Ha perdido sus ocasos de mayo, sus encajes de febrero, sus rosas de agosto, sus encristaladas luces otoñales. ¿Qué ha tenido que ver con ese sacerdote, esa muchacha o ese perro? Habla ahora en voz baja, y suspira, y dice: «Señor», con el mismo aire vaticinal que cuando era marco de su vida una ventana abierta sobre un callejón desolado. Llegará -va a llegar- el día de los birretes oscuros y las oscuras togas. Llegará -va a llegar- la oración leguleya y el ceremonioso fallo. ¡Y la ventana espera! He visto, por primera vez, unas tablas,despintadas tras los envelados cristales. He visto unas flores reflejadas en su luna nueva. Está como muerta. Como recién apuñalada por la sanción de un perro hambriento, un cura paranoide y una misteriosa muchacha. ¡Si no por ese amante infeliz -soflamadas lenguas hermenéuticas, síes juratoriales, índices oficiantes- por la angustiosa soledad de la dolorosa ventana!</p>
 </div>
 		</div>
     		<div n="5" type="chapter" xml:id="ne0380_chap5">
-    			<head>invierno</head>
+    			<head xml:id="ne0380_head_021">invierno</head>
 <div type="section">
-<head>«parade»</head>
+<head xml:id="ne0380_head_022">«parade»</head>
 <p>Realizaba con esto altivos sueños de los cincuenta años. Mi espalda comba, mi paso tembloroso y mi desmesurada calva medían bien los días aguardados.</p>
 <p>¿Cuánto tiempo había permanecido cerrado el trágico balcón? Lo abrí vacilante, pensando que aún habría sobre las maderas huellas de sus manos. Todo seguía teniendo el mismo aire de entonces. Venía de la calle un conocido olor a humedad y a grasas. Los raíles de la vía brillaban bajo la luna con iguales reflejos. Iba y venía despaciosamente, la gorra en una mano, la sombra triste del guardagujas. Pasaron dos trenes aureolados de humo negro y de lamentos de sirena.</p>
 <p>¿Habéis oído alguna vez a una orquesta de clownes tocando la «Valsé poudrée», de Popy? La música y sus intérpretes van tan de acuerdo, está tan hecha la una para los otros, que se piensa que más de una expresión de letra ajena se trata de una instintiva improvisación.</p>
@@ -456,9 +487,9 @@
 <p>Si en mi fichero íntimo aparece el crimen del busto bajo el signo de Olalla Pineda, ya sabéis por qué he traído este santo nombre y por qué he evitado, también, el verdadero.</p>
 </div>
 <div type="section">
-<head>diario a la sombra de una barca</head>
+<head xml:id="ne0380_head_023">diario a la sombra de una barca</head>
 <div type="section">
-<head>13 de enero</head>
+<head xml:id="ne0380_head_024">13 de enero</head>
 <p>Los barrios marineros de los puertos del mediterráneo están hoy demasiado vigilados para que pudiera terminar bien mi aventura. Eso es todo. Mi parada se quebró en sus mitades. Se agostó su fin, como sueño interrumpido. Quedaron allá, en la blanca alcoba del crimen, esperando revolver de mis ojos, y entre dorados cascos policíacos, un caballo de cartón, asesino de su infantil dueño; un cable eléctrico, electrocutador de un viejo cochero; un guerrero de cuadro histórico, que apenas dio, para asesinarle, tiempo a su pintor, a que terminase de pintarle su espada; una hoja Gillette, autora de milagrosas sangrías; un sexagenario pene, violador y asesino, a la vez, de una niña de siete años.</p>
 <p>Fue todo tan imprevisto, estaba yo tan lejos del mundo, tan cerca de Dios o tan vecino de los ángeles, que me es imposible poder reconstruir ahora cómo sucedió todo aquello.</p>
 <p>Me admira aún la fría habilidad con que pude burlar una persecución tan astuta. Me tiemblan todavía las</p>
@@ -466,16 +497,16 @@
 <p>De este marinero espero mi liberación, que se alarga ya demasiado. No duermo. Apenas como. El ruido igual y constante del mar sobre un viejo rompeolas cercano terminará volviéndome loco, si antes no me hago un ataúd con mi barca o me dejo tragar por los tiburones.</p>
 </div>
 <div type="section">
-<head>18 de enero</head>
+<head xml:id="ne0380_head_025">18 de enero</head>
 <p>Anoche he visto, sobre una luna en menguante, una rubia Virgen del Carmen. Tenía un gran escapulario marrón y unos azules ojos maternales. Ella misma me ha anunciado mi próxima liberación sobre una hermosa nave de plata.</p>
 </div>
 <div type="section">
-<head>19 de enero</head>
+<head xml:id="ne0380_head_026">19 de enero</head>
 <p>Desde el amanecer acecho inútilmente, a través de una ancha rendija abierta entre dos tablas de la barca, el paso imperioso de una nave.</p>
 <p>Espero que esta noche se resolverá tal vez todo. Confío, más que en el marinero noruego, en la próxima luna. El mar se confundirá de pronto con el cielo, y serán los vientos del Este mis huéspedes, y mi barca la luna naciente. Podré ir desnudo sobre ella, dueño de mis barbas floridas, timonel de sus cuernos, blanco como ella y como ella sin patria. Será un viaje feliz de no sé aún qué remota Citerea. Preveo que todo sucederá tal como lo pienso.</p>
 </div>
 <div type="section">
-<head>20 de enero</head>
+<head xml:id="ne0380_head_027">20 de enero</head>
 <p>Blanca como el barco que me salve era aquella blanca muchacha. ¿Quién desnudó su cuerpo? ¿Quién lo arrojó en el aire?</p>
 <p>Yo vi su entierro de joven desposada. ¿No toqué acaso sus enrojecidas carnes?</p>
 <p>No sé su nombre, ni el color de sus cabellos, ni el timbre de su alma. Habrá sin duda una pequeña lápida, perdida entre flores de un cementerio de barrio.</p>
@@ -489,7 +520,7 @@
 </div></div>
     			</div>
     		<div n="6" type="chapter" xml:id="ne0380_chap6">
-    			<head>epílogo en la isla de las maldiciones</head>
+    			<head xml:id="ne0380_head_028">epílogo en la isla de las maldiciones</head>
 <p>Esta isla lejana, en la que ahora vivo, es la isla de las maldiciones.</p>
 <p>Bulle a mi alrededor un mar adverso, de un azul blanquecino, que se oscurece en un horizonte marchito, vacío de velas latinas y de chimeneas trasatlánticas. Hay bajo mis pasos una masa de tierra parda bajo puñales curvos de cactus, higueras mórbidas y aulagas doradas. Sobre unas rocas frontales se desmayan las sombras violeta de unas garzas.</p>
 <p>Yo, el hijastro de la isla. El aislado.</p>
@@ -511,7 +542,7 @@
     	</body>
 		<back>
 			<div>
-					<p></p>
+					<p/>
 			</div>
 		</back>
 	</text>

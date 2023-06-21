@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Luna Benamor</title>
-				<title type="sub"></title>
+				
 				<title type="short">Luna_n</title>
-				<title type="idno">
-					<idno type="bne">XX2314740</idno>
-					<idno type="viaf">bimo0000600717</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">274</measure>
@@ -141,13 +131,47 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0261</idno>
+						<idno type="cligs">ne0261</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.0, <date when="2015">2015</date>, <idno>25360</idno>, <ref target="https://www.epublibre.org/libro/detalle/25360"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1909">1909</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Luna Benamor</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2314740.html">XX2314740</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/bimo0000600717/">bimo0000600717</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.0, <date when="2015">2015</date>, <idno>25360</idno>, <ref target="https://www.epublibre.org/libro/detalle/25360"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1909">1909</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna Benamor</title> , <publisher>F.Sempere y Comp. Ed.</publisher> <pubPlace>Valencia;Madrid</pubPlace> 		<idno type="ppn" n="342478354" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342478354"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna benamor</title>: 	<title type="sub">novela</title> <date when="1910">1910</date>, <publisher>Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="630309531" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=630309531"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna Benamor</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1334406782" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334406782"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna Benamor</title>: 	<title type="sub">(Novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445657847" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657847"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna Benamor</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464366879" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464366879"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna Benamor</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464366631" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464366631"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna Benamor</title> <date when="1948">1948</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="342480871" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342480871"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente, Sangre y arena, Los muertos mandan, Luna benamor, Los cuatro jinetes del apocalipsis, Mare nostrum, Los enemigos de la mujer, El militarismo mejicano, El prestamo de la difunta y otros cuentos, El paraiso de las mujeres</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621457" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621457"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Luna Benamor</title> <date when="2017">2017</date>, <publisher>Ediciones Akal</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1016526016" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1016526016"/> 		<idno type="isbn" n="9788446043690"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +183,14 @@
 				<p>Luis Aguirre es un diplomático joven que tiene que viajar a Australia para ocupar el puesto de cónsul. La acción se sitúa en Gibraltar y ayuda al lector a conocer aquel lugar y sus alrededores con el habitual realismo propio del autor. Esperando el embarque conoce a Luna Benamor, judía residente en la ciudad, que nos ocupa, y pese a sus respectivas creencias se enamoran y comienzan un idilio intenso.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -190,7 +222,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novelas sicológicas</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -220,6 +252,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,7 +260,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0261_chap1">
-				<head>I</head>
+				<head xml:id="ne0261_head_000">I</head>
 				<p>Cerca de un mes llevaba Luis Aguirre de vivir en Gibraltar. Había llegado con el propósito de embarcarse inmediatamente en un buque de la carrera de Oceanía, para ir a ocupar su puesto de cónsul en Australia. Era el primer viaje importante de su vida diplomática. Hasta entonces había prestado servicio en Madrid, en las oficinas del Ministerio, o en ciertos consulados del Sur de Francia, elegantes poblaciones veraniegas donde transcurría la existencia en continua fiesta durante la mitad del año. Hijo de una familia dedicada a la diplomacia por tradición, contaba con buenos valedores. No tenía padres, pero le ayudaban los parientes y el prestigio de un apellido que durante un siglo venía figurando en los archivos del Ministerio de Estado. Cónsul a los veintinueve años, iba a embarcarse con las ilusiones de un colegial que sale a ver el mundo por vez primera, convencido de la insignificancia de los viajes que llevaba realizados hasta entonces.</p>
 				<p>Gibraltar fue para él la primera aparición de un mundo lejano, incoherente y exótico, mezcla de idiomas y de razas, en cuya busca iba. Dudó, en su primera sorpresa, de que aquel suelo rocoso fuese un pedazo de la península natal avanzando en pleno mar y cobijado por una bandera extraña. Cuando contemplaba desde las laderas del peñón la gran bahía azul, sus montañas de color de rosa, y en ellas las manchas claras de los caseríos de La Línea, San Roque y Algeciras, con la alegre blancura de los pueblos andaluces, convencíase de que estaba aún en España; pero encontraba enorme la diferencia entre las agrupaciones humanas acampadas al borde de esta herradura de tierra llena de agua de mar. Desde la punta avanzada de Tarifa hasta las puertas de Gibraltar, la unidad monótona de raza, el alegre gorjeo del habla andaluza, el ancho sombrero pavero, el mantón envolviendo los bustos femeniles y el aceitoso peinado adornado con flores. En la enorme montaña verdinegra rematada por el pabellón inglés, que cierra la parte oriental de la bahía, una olla hirviente de razas, una confusión de lenguas, un carnaval de trajes: indios, musulmanes, hebreos, ingleses, contrabandistas españoles, soldados de casaca roja, marineros de todos los países, viviendo en la estrechez de las fortificaciones, sometidos a una disciplina militar, viendo abiertas las puertas del aprisco cosmopolita con el cañonazo del amanecer y cerradas al retumbar el cañón de la tarde. Y como marco de este cuadro, bullicioso en su amalgamamiento de colores y gestos, en el término más remoto de la línea del mar, una hilera de cumbres, las alturas de África, las montañas marroquíes, la orilla fronteriza del Estrecho, el más concurrido de los grandes bulevares marítimos, por cuya calzada azul transcurren incesantemente pesados veleros de todas las nacionalidades, de todas las banderas; negros trasatlánticos que cortan el agua en busca de las escalas del Oriente poético, o cruzando el callejón de Suez van a perderse en las inmensidades del Pacífico, moteadas de islas.</p>
 				<p>Para Aguirre era Gibraltar un fragmento del lejano Oriente que le salía al paso; un puerto de Asia arrancado de su continente y arrastrado por las olas para venir a encallar en la costa de Europa, como muestra de la vida en remotas tierras.</p>
@@ -245,7 +278,7 @@
 				<p>Aguirre, algunas veces, cual si despertase de un ensueño, se preguntaba qué hacía en Gibraltar. Desde que llegó con el propósito de embarcarse, habían pasado el Estrecho tres grandes vapores con rumbo a las tierras oceánicas. Y él los había dejado partir, fingiendo ignorar su paso, no acabando nunca de enterarse de las condiciones del viaje, escribiendo a Madrid, a su poderoso tío, cartas en las que hablaba de vagas dolencias que por el momento retardaban su embarque. ¿Por qué?…, ¿por qué?…</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0261_chap2">
-				<head>II</head>
+				<head xml:id="ne0261_head_001">II</head>
 				<p>Al levantarse de la cama, al día siguiente de su llegada a Gibraltar, Aguirre miró a través de las persianas de su cuarto con la curiosidad de un forastero. El cielo estaba nublado, un cielo de Octubre; pero hacía calor, un calor pegajoso y húmedo que delataba la proximidad de las costas africanas.</p>
 				<p>En la azotea de una casa vecina vio una construcción extraña, un gran cenador hecho de cañas entrecruzadas y adornado de ramas verdes. En el interior de este frágil edificio, al través de unas cortinas de colorines, entrevió una larga mesa, sillas y una lámpara de forma antigua pendiente del techo… ¡Qué rareza la de aquellas gentes, que, teniendo una casa, vivían sobre el tejado!</p>
 				<p>Un sirviente del hotel, mientras arreglaba el cuarto, contestó a sus preguntas. Los judíos de Gibraltar estaban de fiesta: la fiesta de las Cabañas, uno de sus más importantes regocijos del año. Era en memoria de la larga peregrinación del pueblo israelita por el desierto. Para conmemorar sus errantes penalidades, los judíos debían comer al aire libre, en una cabaña que recordase las tiendas y chozas de sus remotos abuelos. Los más fanáticos y apegados a los usos antiguos comían de pie, con un báculo en la mano, como si con el último bocado fuesen a reanudar el viaje. Los comerciantes hebreos de la céntrica calle montaban su cabaña en la azotea; los de los barrios míseros establecían su choza en un patio o en un corral, allí donde podían ver un palmo de cielo libre. Los que vivían recluidos en un tugurio por su sórdida pobreza, eran invitados a comer en los sombrajos de los más felices, con la fraternidad de una raza estrechamente solidaria por el odio y la persecución de los enemigos.</p>
@@ -303,7 +336,7 @@
 				<p>Aguirre salió de la tienda con una alegría de triunfo. Se habían hablado: ya se conocían. Así que la viese sola en la calle, se pegaría a ella, aprovechando la libertad de unas benditas costumbres que parecían hechas para los enamorados.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0261_chap3">
-				<head>III</head>
+				<head xml:id="ne0261_head_002">III</head>
 				<p>Ninguno de los dos pudo darse cuenta de cómo nació la amistosa confianza, luego de varios encuentros ordinarios, y cuál fue la primera palabra que reveló el misterio de sus pensamientos.</p>
 				<p>Se veían por las mañanas, al asomarse Aguirre a la ventana de su cuarto. Había terminado la fiesta de las Cabañas, desmontando los Aboab el religioso sombrajo; pero Luna seguía subiendo a la azotea con diversos pretextos, para cambiar con el español una mirada, una sonrisa, un gesto de saludo. No se hablaban en estas alturas por miedo a los vecinos, pero luego se encontraban en la calle, y Luis, tras un grave saludo, se unía a la joven, marchando juntos como dos camaradas, lo mismo que otras parejas que encontraban al paso. Todos se conocían en aquella ciudad. Únicamente así podían distinguirse los matrimonios de los simples amigos.</p>
 				<p>Luna entraba en las tiendas para hacer preguntas por encargo de los Aboab, como una buena hebrea que se interesa por los negocios de la familia. Otras veces vagaba sin objeto por la calle Real, o se aventuraba hasta el paseo de la Alameda, llevando a su lado a Aguirre, al que explicaba las cosas de la ciudad. En mitad de estos paseos, deteníanse en la tienda del banquero cambista para saludar al patriarca, que sonreía infantilmente contemplando a la pareja juvenil y hermosa.</p>
@@ -351,7 +384,7 @@
 				<p>El indio volvió a sonreír de su ignorancia. Cada raza tiene sus gustos y su olfato. A Aguirre, que era bueno, se atrevía él a revelarle un terrible secreto. ¿Veía a los blancos, a los europeos, tan satisfechos de su limpieza y sus baños?… Todos eran impuros, de una hediondez natural que no podrían borrar. El hijo del país del loto y del barro sagrado tenía que hacer un esfuerzo para soportar su contacto… Todos olían a carne cruda.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0261_chap4">
-				<head>IV</head>
+				<head xml:id="ne0261_head_003">IV</head>
 				<p>La tarde era de invierno, el cielo encapotado, la luz gris; pero no hacía frío. Luna y el español marchaban a paso lento por el camino que conduce a Punta de Europa, el extremo más avanzado de la península de Gibraltar. Habían dejado atrás la Alameda y las riberas del Arsenal, pasando por entre frondosos jardines, rojizas «villas» habitadas por oficiales de mar y tierra, enormes hospitales, semejantes a pueblos, y cuarteles que parecían conventos, con múltiples galerías en las que correteaban enjambres de niños o lavaban sus ropas y vajillas las mujeres de los soldados, animosas peregrinas del mundo, tan pronto de guarnición en la India como en el Canadá. El cielo nebuloso ocultaba la costa de África, dando al Estrecho la apariencia de un mar sin límites. Frente a la enamorada pareja extendíanse las aguas obscuras de la bahía, y el promontorio de Tarifa marcaba débilmente su contorno negro en la bruma, como un rinoceronte fabuloso llevando sobre su hocico, a guisa de cuerno, la avanzada torre del faro. Por entre las nubes cenicientas escapábase un tímido rayo de sol, un triángulo de luz brumosa, semejante al chorro luminoso de una linterna mágica, que trazaba una gran mancha de oro mortecino en la verdinegra superficie del mar. En medio de este redondel de luz anémica flotaba, como un cisne moribundo, la pincelada blanca de un buque velero.</p>
 				<p>Los dos jóvenes apenas se daban cuenta de lo que les rodeaba. Caminaban sumidos en ese egoísmo amoroso que concentra la vida entera en la mirada, o en el contacto ligero de los cuerpos que se encuentran y se rozan al mover los pies. De toda la Naturaleza, sólo existía para ellos la luz apagada de la tarde, que les permitía verse, y la brisa un poco cálida, que, susurrando entre los cactos y las palmas, parecía servir de musical acompañamiento a sus palabras.</p>
 				<p>El oído derecho les zumbaba con un ruido lejano: el del mar batiendo las rocas. Por el izquierdo deslizábase una placidez pastoril, la calma rumorosa de los pinares, cortada sólo de trecho en trecho por el rodar de las carretas que, seguidas de un pelotón de soldados arremangados y en cuerpo de camisa, avanzaban por los caminos del monte.</p>
@@ -410,7 +443,7 @@
 				<p>Se estremecieron los dos como si despertasen de un sueño. Luna corrió senda arriba en busca del camino, sin escuchar a Aguirre, con una precipitación de fuga… Iba a llegar tarde a su casa; nunca volverían allí. Era peligroso.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0261_chap5">
-				<head>V</head>
+				<head xml:id="ne0261_head_004">V</head>
 				<p>El señor cónsul vagaba por la calle Real, con la pipa apagada, la mirada triste y el británico junco pendiente de una mano, con cierto desaliento. Cuando en sus idas y venidas deteníase instintivamente ante la puerta de la tienda de Khiamull, tenía que pasar adelante. Khiamull no estaba allí. Tras el mostrador sólo había dos muchachos dependientes, tan verdosos como él. Su pobre amigo estaba en el hospital, con la esperanza de que unos días de reposo, fuera de la penumbra húmeda de la tienda, bastarían para quitarle aquella tos que parecía desencuadernar su cuerpo, haciéndole arrojar sangre. Era del país del sol y necesitaba su caricia divina.</p>
 				<p>Aguirre podía detenerse en el despacho de los Aboab, pero esto le daba cierto miedo. El viejo lloriqueaba de emoción, como siempre, al hablar con él, pero en sus gestos de patriarca bondadoso había algo nuevo que parecía repeler al español. Zabulón le acogía con un gruñido y continuaba contando dinero.</p>
 				<p>Cuatro días llevaba Aguirre sin ver a Luna. ¡Las horas pasadas en la ventana del hotel, contemplando inútilmente la vivienda de los Aboab! Nadie en la terraza; nadie tras las persianas, como si la casa estuviese deshabitada. Varias veces encontró en la calle a la esposa y las hijas de Zabulón, que pasaron ante él fingiendo no verle, graves y estiradas, en su imponente obesidad.</p>

@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Sonnica la cortesana</title>
-				<title type="sub"></title>
+				
 				<title type="short">Sonnica</title>
-				<title type="idno">
-					<idno type="bne">bimo0000600796</idno></title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1532</measure>
@@ -139,13 +131,51 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0254</idno>
+						<idno type="cligs">ne0254</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.1., <date when="2015">2015</date>, <idno>7806</idno>, <ref target="https://www.epublibre.org/libro/detalle/7806"/>.</bibl>
-				<bibl type="print-source"><date when="1923">1923</date></bibl>
-				<bibl type="edition-first"><date when="1901">1901</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Sonnica la cortesana</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0000600796.html">bimo0000600796</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q18546914/">Q18546914</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.1., <date when="2015">2015</date>, <idno>7806</idno>, <ref target="https://www.epublibre.org/libro/detalle/7806"/>.</bibl>
+					<bibl type="print-source"><date when="1923">1923</date></bibl>
+					<bibl type="edition-first"><date when="1901">1901</date><idno source="k10plus" type="ppn" n="22640899X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=22640899X"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title>: 	<title type="sub">novela</title> <date when="1901">1901</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="22640899X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=22640899X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Doč' Afrodity</title>: 	<title type="sub">Visente Blasko Ibańes ; Roman. Perev</title> <date when="1912">1912</date>, <publisher>(Obnovlenie)</publisher> <pubPlace>Moskva</pubPlace> 		<idno type="ppn" n="445658347" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658347"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1334405352" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334405352"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="083732594" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083732594"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="466025572" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466025572"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350950296" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350950296"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sónnica la cortesana</title>: 	<title type="sub">novela</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445658339" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658339"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sónnica la cortesana</title> <date when="1991">1991</date>, <publisher>Plaza &amp; Janés</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="082916969" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=082916969"/> 		<idno type="isbn" n="8401498090"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="305327208" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=305327208"/> 		<idno type="isbn" n="8420633798"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana. Cañas y barro. La catedral. El intruso</title> <date when="2009">2009</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="634254987" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=634254987"/> 		<idno type="isbn" n="9788496452886"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479517852" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479517852"/> 		<idno type="isbn" n="9788496452886"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la Cortesana</title> <date when="2017">2017</date>, <publisher>JPM</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1014727529" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1014727529"/> 		<idno type="isbn" n="9788415499497"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -155,6 +185,14 @@
 				<p>Realización de un deseo de adolescencia y complemento de las novelas que tienen por escenario la tierra valenciana, SÓNNICA LA CORTESANA (1901) recrea la heroica resistencia de la ciudad de Sagunto ante las tropas de Aníbal. Inserta en la tradición narrativa que toma como escenarios episodios históricos de épocas pretéritas y que recorre todo el XIX, desde «Los últimos días de Pompeya» hasta «Quo vadis», pasando por «Salambó», Vicente Blasco Ibáñez (1867-1928) resucita en esta novela el mundo fastuoso y heroico, refinado y salvaje a la vez, de la Antigüedad.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -185,7 +223,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela valenciana</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela arqueológica</term><!--En realidad lo llama novela arqueológica-->
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -214,12 +252,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>AL LECTOR</head>
+				<head xml:id="ne0254_head_000">AL LECTOR</head>
 				<p>Esta obra la escribí en 1901, para completar con ella la serie de mis novelas que tienen por escenario la tierra valenciana.</p>
 				<p>Había publicado ya <seg rend="italic">Arroz y tartana, Flor de Mayo, La barraca</seg> y <seg rend="italic">Entre naranjos</seg>, que son la novela de la vida en la ciudad, de la vida en el mar, de la vida en la huerta y de la vida en los naranjales. Tenía entonces el proyecto de escribir <seg rend="italic">Cañas y barro</seg>, y para ello estudiaba la existencia de los habitantes del lago de la Albufera. Pero antes de producir esta última obra sentí la imperiosa necesidad de resucitar el episodio más heroico de la historia de Valencia, sumiéndome para ello en el pasado, hasta llegar a los primeros albores de la vida nacional. Y abandonando la novela de costumbres contemporáneas, la descripción de lo que podía ver directamente con mis ojos, produje una obra de reconstrucción arqueológica más o menos fiel, una novela de remotas evocaciones.</p>
 				<p>Con esto realicé un deseo de mi adolescencia, cuando empezaba a sentir las primeras tentaciones de la creación novelesca.</p>
@@ -245,7 +284,7 @@
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0254_chap1">
-				<head>I EL TEMPLO DE AFRODITA</head>
+				<head xml:id="ne0254_head_001">I EL TEMPLO DE AFRODITA</head>
 				<p>Cuando la nave de Polyantho, piloto saguntino, llegó frente al puerto de su patria, ya los marineros y pescadores, de vista aguzada por las distancias del mar, habían reconocido su vela teñida de azafrán y la imagen de la Victoria, que con las alas extendidas y una corona en la diestra, llenaba todo el filo de la proa, hasta mojar sus pies en las ondas.</p>
 				<p>—Es la nave de Polyantho, la <seg rend="italic">Victoriata</seg>, que vuelve de Gades y Cartago–Nova.</p>
 				<p>Y para verla mejor se agolpaban en el muelle de piedra que cerraba los tres lagos del puerto de Sagunto, puestos en comunicación con el mar por un largo canal.</p>
@@ -439,7 +478,7 @@
 				<p>—¡Roma…! ¡Roma!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0254_chap2">
-				<head>II LA CIUDAD</head>
+				<head xml:id="ne0254_head_002">II LA CIUDAD</head>
 				<p>Estaba muy elevado el sol cuando Acteón se dirigió a la ciudad por el camino llamado de la Sierpe.</p>
 				<p>Cruzábase en su marcha con numerosas carretas cargadas de odres de aceite y ánforas de vino. Las filas de esclavos encorvados bajo el peso de los fardos y con los pies cubiertos de polvo apartábanse al borde del camino para dejarle paso, con la sumisión y el encogimiento que inspiraba el hombre libre. Detúvose el griego un momento ante los molinos de aceite, viendo girar las enormes piedras empujadas por esclavos encadenados. Luego siguió su marcha al pie de los montes, en cuyas cimas alzábanse las <seg rend="italic">speculas</seg>, rojas torrecillas que con sus hogueras anunciaban a la Acrópolis de Sagunto la llegada de las naves o los movimientos notados en la vertiente opuesta, donde empezaba el territorio de los hostiles turdetanos.</p>
 				<p>El agro extendía su fertilidad bajo la lluvia de oro del sol de la mañana. De las aldeas, de las casas de campo, de todas las innumerables viviendas esparcidas en el extenso valle, afluía gente al camino de la Sierpe, marchando hacia la ciudad.</p>
@@ -629,7 +668,7 @@
 				<p>El pastor era Hanníbal.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0254_chap3">
-				<head>III LAS DANZARINAS DE GADES</head>
+				<head xml:id="ne0254_head_003">III LAS DANZARINAS DE GADES</head>
 				<p>Dos horas después del mediodía despertó Sónnica. Los rayos oblicuos del sol se filtraban entre las varillas doradas de la ventana y el follaje de las parras. Su luz coloreaba los vivos estucos que servían de marco a las escenas de los Juegos Olímpicos pintadas en el muro de las columnillas de mármol rosa que adornaban la puerta.</p>
 				<p>La hermosa griega arrojó al suelo las cubiertas de blanco lino de Saetabis, y su primera mirada al despertar fue para su desnudez, siguiendo con ojos cariñosos todos los contornos de su cuerpo, desde el seno, hinchado por redondeces armoniosas, hasta el extremo de sus rosados pies.</p>
 				<p>La cabellera opulenta, perfumada y de sedosos bucles, descendiendo a lo largo de su cuerpo, la envolvía como un regio manto de oro, acariciándola de la nuca a las rodillas con su suave beso. La antigua cortesana, al despertar, admiraba su cuerpo con la adoración que habían infundido en ella los elogios de los artistas de Atenas.</p>
@@ -871,7 +910,7 @@
 				<p>Y con el manto flotante, salió al galope entre una nube de polvo, atropellando a los campesinos y esclavos, que se arremolinaban en los bordes del camino para dejarle paso.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0254_chap4">
-				<head>IV ENTRE GRIEGOS Y CELTIBEROS</head>
+				<head xml:id="ne0254_head_004">IV ENTRE GRIEGOS Y CELTIBEROS</head>
 				<p>A nadie habló Acteón de este encuentro. Es más: a los pocos días casi lo había olvidado. Veía tranquila la ciudad, ocupada en preparar las grandes fiestas Panatheas, segura bajo la protección de su aliada Roma, y el recuerdo de la entrevista con el africano tomaba en su memoria la vaguedad de un ensueño.</p>
 				<p>Tal vez las palabras de Hanníbal no eran más que arrogancias de la juventud. Odiado por los ricos de su país y sin más auxilios que los que él mismo pudiera procurarse, no iba a acometer la audaz empresa de atacar a una ciudad aliada de Roma, violando con esto los tratados de Cartago.</p>
 				<p>Además, el griego vivía en dulce embriaguez; siempre entre los brazos de Sónnica o tendido en su regazo en la frescura del peristilo, escuchando las liras de las esclavas y las flautas de las aulétridas y contemplando las danzas de las de Gades, mientras su amante le ceñía de flores la cabeza o derramaba sobre él costosos perfumes.</p>
@@ -1015,7 +1054,7 @@
 				<p>El griego y el celtíbero se abrazaron. Luego, como suprema despedida, se besaron en los ojos, signo de fraternal amistad.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0254_chap5">
-				<head>V LA INVASION</head>
+				<head xml:id="ne0254_head_005">V LA INVASION</head>
 				<p>La hermosa Sónnica creyó haber perdido para siempre a Acteón. Su repentina partida la consideró como un capricho del veleidoso ateniense, eterno viajero impulsado por la fiebre de conocer nuevos países. ¡Sólo los dioses podían saber adónde iría aquel pájaro errante después de su visita a las tribus celtíberas! Tal vez se quedase con Alorco; tal vez guerrease con aquellos bárbaros, y éstos subyugados por su cultura y su astucia, acabarían dándole un reino.</p>
 				<p>Al creer Sónnica que el ateniense no volvería más, se imaginó que su corta primavera de amor había sido semejante a la fugitiva felicidad de las mujeres que tuvieron relaciones con los dioses cuando bajaron éstos a la tierra. Ella, tan insensible y burlona para los afectos, pasaba los días llorando en su lecho o recorría por la noche como una sombra su vasto jardín, deteniéndose en la gruta donde el griego había hecho caer por primera vez el cinturón de su túnica. Los esclavos comentaban con miedo el humor desigual y temible de su ama. Unas veces gimoteaba como una niña; otras, enfurecida por súbita crueldad, ordenaba castigos para todos. Pero de repente, una mañana, se presentaba el griego ante la quinta, montando un caballo polvoriento y sudoroso, despedía a los bárbaros de feroz catadura que venían escoltándole, corría con los brazos abiertos hacia la trémula Sónnica, y todo el inmenso dominio parecía resucitar; la señora sonreía, el jardín se mostraba más hermoso, en la terraza brillaban con mayor esplendor los plumajes de las aves raras, parecían sonar más alegres las flautas de las aulétridas, y a los esclavos les parecía más dulce el aire y más puro el cielo.</p>
 				<p>La quinta de Sónnica recobró su regocijada vida, como si su dueña hubiese resucitado. Por la noche hubo banquete en el gran triclinio, llegaron invitados los jóvenes elegantes de la ciudad, y hasta Eufobias el filósofo encontró su sitio en la mesa sin tener que luchar antes con el palo de los esclavos.</p>
@@ -1119,7 +1158,7 @@
 				<p>Empezaba la defensa de la ciudad.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0254_chap6">
-				<head>VI ASBYTE</head>
+				<head xml:id="ne0254_head_006">VI ASBYTE</head>
 				<p>Hanníbal se agitaba entre las mantas de colores de su lecho, sin poder conciliar el sueño.</p>
 				<p>Habían anunciado los gallos la media noche, rasgando con su grito el silencio del campamento, y el caudillo permanecía desvelado, cerrando los ojos sin poder dormir. Le tenía en vela el canto de un ruiseñor posado en un gran árbol, de cuyo ramaje pendía su tienda.</p>
 				<p>Una lámpara de barro iluminaba la aglomeración de los objetos en torno a su lecho. Centelleaban en el suelo corazas, glebas y cascos cubiertos por pedazos de ricas telas robadas en las quintas saguntinas. Los muebles griegos, las ánforas de tocador sutilmente cinceladas, los tapices con escenas mitológicas, estaban revueltos y confundidos con los látigos de piel de buey sin curtir, los escudos de cuero de hipopótamo y los harapos de Hanníbal, tan amante del brillo de sus armas como descuidado y sucio en sus ropas. Vasos de rica labor estaban destinados a los más bajos usos. Una crátera de alabastro cubierta por un escudo servía de asiento; un gran vaso de arcilla roja decorado por un artista helénico con las aventuras de Aquiles lo empleaba el africano con desprecio para sus desahogos más íntimos; pedazos de estatuas y columnas destrozadas por el furor de la invasión se hundían en el suelo, ofreciendo asiento a los capitanes de Hanníbal cuando celebraban Consejo en la tienda del caudillo. Era el botín, amontonado y magullado por la fiebre del robo. De este botín, sólo una pequeña parte había llegado hasta el héroe, que sentía un absoluto desprecio por la belleza artística cuando no estaba impresa en metales preciosos. Reía de los dioses de aquella tierra lo mismo que de los dioses de su país y del mundo entero, y escupía sobre los mármoles de las divinidades que llenaban su campamento, viendo en ellos únicamente pedazos de piedra, buenos para enviarlos con la catapulta contra los enemigos.</p>
@@ -1254,7 +1293,7 @@
 				<p>De repente, el caudillo repelió a los que le sostenían y cojeando dolorosamente, anduvo hacia un bulto blanco y rojo que se destacaba sobre la tierra como un harapo ensangrentado. Se inclinó sobre él, y los númidas que le rodeaban vieron llorar al terrible Hanníbal por primera y última vez, uniendo su boca a la destrozada cabeza de la amazona Asbyte, besando aquel rostro amado, en torno de cuyas facciones aplastadas y ennegrecidas por la sangre seca empezaba a revolotear un enjambre de fúnebres moscas.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0254_chap7">
-				<head>VII LAS MURALLAS DE SAGUNTO</head>
+				<head xml:id="ne0254_head_007">VII LAS MURALLAS DE SAGUNTO</head>
 				<p>La herida de Hanníbal proporcionó a la ciudad algunos días de calma. Los sitiadores permanecían en su campamento, inactivos, mirando a Sagunto de lejos. Salían los honderos por las mañanas para ejercitar sus brazos disparando contra la muralla; pero aparte de esto y de los flechazos con que les respondían los de la ciudad, no se cruzaban otras hostilidades entre sitiados y sitiadores.</p>
 				<p>La caballería recorría el agro forrajeando, y la turba inmensa de tribus feroces acababa su obra de devastación destruyendo las <seg rend="italic">villas</seg> y casas de campo. Se aclaraban los grupos de árboles: cada día derribaban los invasores nuevos troncos para llevar leña al campamento, y en los espacios descubiertos ya no se veían tejados ni torres. Sólo ruinas humeantes y negruzcas surgían sobre los abandonados campos. Un mosaico a flor de tierra era muchas veces el único vestigio de una quinta elegante, arrasada hasta los cimientos.</p>
 				<p>Los sitiados veían engrosar rápidamente el ejército de Hanníbal. Todos los días llegaban nuevas tribus. Parecía que la Iberia entera, subyugada por el prestigio del cartaginés, fuese a acampar en torno a Sagunto, famosa por sus riquezas. Llegaban a pie o a caballo, sucios, feroces, cubiertos de pieles, vestidos de esparto, con el escudo de media luna y la espada corta de dos filos, ansiosos de pelear y trayendo consigo vistosos presentes para el africano, cuya gloria les deslumbraba. Los saguntinos que habían comerciado con las tribus del interior reconocían desde las murallas a los recién llegados. Venían de muy lejos; algunos habían marchado más de un mes para llegar a Sagunto; y señalaban a los lusitanos, de figura atlética, de los que se relataban horrorosas ferocidades; a los galaicos, que vivían de la pesca o de fundir el oro de sus ríos; a los astures, que fabricaban el hierro, y a los vascos sombríos, cuya lengua no podían aprender los otros pueblos. Mezclados con ellos llegaban nuevas tribus de la Betica, que se habían retrasado en acudir al llamamiento del cartaginés: infantes ágiles, de piel aceitunada, con la cabellera esparcida sobre la espalda, vistiendo faldellines cortos y blancos rematados por ancha franja de púrpura y embrazando grandes escudos redondos que les servían de barcos para pasar los torrentes. El campamento, que se extendía a lo largo del río, acabó esparciéndose por el inmenso valle, formando grupos de tiendas y chozas hasta perderse de vista. Era una verdadera ciudad, más grande que Sagunto, que avanzaba y avanzaba como si fuera a tragarse sus murallas.</p>
@@ -1359,7 +1398,7 @@
 				<p>Y el ateniense, conmovido por la bondad de aquella mísera criatura, besó sus labios secos y fláccidos, que dejaban escapar el avinagrado hedor del vino de los honderos baleares.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0254_chap8">
-				<head>VIII ROMA</head>
+				<head xml:id="ne0254_head_008">VIII ROMA</head>
 				<p>Al enrojecer los primeros rayos de sol las murallas del Capitolio, la vida de Roma había empezado ya una hora antes.</p>
 				<p>Los romanos abandonaban el lecho a la luz de las estrellas. Rodaban en las oscuras y tortuosas calles los carros de la campiña; desfilaban los esclavos con sus cestos y útiles de labranza, despertados por el canto de los gallos, y cuando apuntaba el día, todas las casas tenían ya abiertas sus puertas de par en par y los ciudadanos sin ocupación en los campos marchaban a reunirse en el Foro, centro del tráfico y de los negocios públicos, que comenzaba a adornarse con los primeros templos y conservaba grandes espacios yermos, sobre los cuales se habían de elevar, siglos después, las magnificencias de la Roma señora del mundo.</p>
 				<p>Hacía dos días que Acteón estaba en la gran ciudad, alojado en una posada de extramuros propiedad de un griego. Aún no se había extinguido en él la admiración que le causó desde el primer momento esta República severa viviendo casi en la pobreza; pueblo duro de agricultores y soldados que llenaba con su fama el mundo y se mantenía con mayor parquedad que cualquier lugarejo de los alrededores de Atenas.</p>
@@ -1468,7 +1507,7 @@
 				<p>—Di a tus compañeros que se preparen a partir. Mañana al anochecer os embarcaréis los tres con nuestros legados en el puerto de Ostia.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0254_chap9">
-				<head>IX LA CIUDAD HAMBRIENTA</head>
+				<head xml:id="ne0254_head_009">IX LA CIUDAD HAMBRIENTA</head>
 				<p>Más de quince días llevaba navegando la trirreme de los enviados de Roma.</p>
 				<p>Había remontado las costas del mar Tirreno, cruzando después el mar de Liguria, de orillas abruptas, para pasar ante Massilia, la próspera colonia griega, aliada también de Roma. Después, atravesando audazmente el gran golfo, había puesto su proa hacia Emporión y seguido a lo largo de las costas de Iberia.</p>
 				<p>Los legados de Roma eran el patricio Valerio Flaco, uno de los que con palabras de prudencia quería mantener la paz, y Bebio Tamfilo, muy amado por la plebe romana a causa del interés con que defendía el remedio de sus miserias.</p>
@@ -1603,7 +1642,7 @@
 				<p>—Hanníbal me conoce. He despreciado su amistad y me odia. Ve y salva a la ciudad… Ese africano no retrocede en su cólera. Perdonará a todos menos a mí… Y yo moriré antes que verme esclavo o agonizante en una cruz.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0254_chap10">
-				<head>X LA ÚLTIMA NOCHE</head>
+				<head xml:id="ne0254_head_010">X LA ÚLTIMA NOCHE</head>
 				<p>Era más de media tarde cuando Acteón, que estaba entre los defensores de la parte alta de la ciudad, vio aproximarse a Ranto por una callejuela inmediata a la muralla.</p>
 				<p>No había encontrado a la pastorcilla desde su regreso a Sagunto, y al verla reconoció en ella los estragos causados por las penalidades del sitio y el dolor que quebrantaba su razón.</p>
 				<p>Caminaba absorta, con la cabeza baja, y en su enmarañada cabellera asomaban algunas florecillas mustias, que soltaban a cada paso sus pétalos muertos. La túnica, desgarrada, dejaba ver su cuerpo enflaquecido, que aún conservaba la esbeltez admirada por el griego. El pecho se había desarrollado un tanto, como si el dolor madurase sus globos, que apuntaban antes como capullos. Sus ojos, dilatados por la demencia, parecían llenar todo su rostro, esparciendo en torno de él una luz misteriosa, una aureola de fiebre.</p>
@@ -1739,7 +1778,7 @@
 		</body>
 		<back>
 			<div>
-				<head>Fin</head>
+				<head xml:id="ne0254_head_011">Fin</head>
 				<ab>Playa de la Malvarrosa (Valencia). Julio–Septiembre 1901.</ab>
 			</div>
 		</back>

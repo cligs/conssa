@@ -1,22 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Dulce Dueño</title>
-				<title type="sub"/>
 				<title type="short">DulceDueño</title>
-				<title type="idno">
-					<idno type="viaf">192603475</idno></title>
+				
 				<author>
-					<idno type="bne">XX1104029</idno>
-					<idno type="viaf">51699645</idno>
-					<name type="short">Bazan</name>
-					<name type="full">Emilia Pardo Bazán</name>
+					<name type="short" ref="#Bazan"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1642</measure>
@@ -139,13 +130,43 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0086</idno>
+						<idno type="cligs">ne0086</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2002">2002</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcdz073 "/>, <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/dulce-dueno--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, V. Prieto y Cía, <date when="1911">1911</date></bibl>
-				<bibl type="edition-first"><date when="1911">1911</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Dulce Dueño</title>
+					<title type="sub"/>
+					<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/192603475/">192603475</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4466002-9">4466002-9</idno>
+				</idno>
+				</title>
+					<author xml:id="Bazan">
+						<name type="full"><forename>Emilia</forename> <surname>Pardo Bazán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9748 - IO 9753">IO 9748 - IO 9753</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118641476">118641476</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q275929/">Q275929</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1104029.html">XX1104029</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/51699645/">51699645</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2002">2002</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcdz073 "/>, <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/dulce-dueno--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, V. Prieto y Cía, <date when="1911">1911</date></bibl>
+					<bibl type="edition-first"><date when="1911">1911</date><idno source="k10plus" type="ppn" n="464284252" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464284252"/><idno source="k10plus" type="ppn" n="09992000X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=09992000X"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce Dueño</title> <date when="1911">1911</date>, <publisher>Renacimiento [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464284252" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464284252"/> </bibl>
+						<bibl type="further-edition"><title type="main">Dulce dueño</title> <date when="1911">1911</date>, <publisher>V. Prieto, ed. [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="09992000X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=09992000X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce dueño</title> <date when="1989">1989</date>, <publisher>Editorial Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="11724015X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=11724015X"/> 		<idno type="isbn" n="8470395335"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera. La Sirena Negra. Dulce Dueño</title> <date when="1999">1999</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="315929111" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=315929111"/> 		<idno type="isbn" n="8489794359"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera. La sirena negra. Dulce Dueño</title> <date when="2000">2000</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1159744270" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1159744270"/> 		<idno type="isbn" n="8489794359"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -156,6 +177,14 @@
 				<p>En los tiempos modernos y en Alcalá de Henares, la protagonista es fiel trasunto de su patrona, Santa Catalina de Alejandría. La intimidad de Lina se nos muestra en sus más sugerentes entresijos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9749" key="IO 9749" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -187,8 +216,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">symbolic</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -219,6 +248,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-07-07" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -226,7 +256,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0086_chap1">
-				<head>- I - : Escuchad </head>
+				<head xml:id="ne0086_head_000">- I - : Escuchad </head>
 				<p>Fuera, llueve: lluvia blanda, primaveral. No es tristeza lo que fluye del cielo; antes bien, la hilaridad de un juego de aguas pulverizándose con refrescante goteo menudo. Dentro, en la paz de una velada de pueblo tranquilo, se intensifica la sensación de calmoso bienestar, de tiempo sobrante, bajo la luz de la lámpara, que proyecta sobre el hule de la mesa un redondel anaranjado.</p>
 				<p>La claridad da de lleno en un objeto maravilloso. Es una placa cuadrilonga de unos diez centímetros de altura. En relieve, campea destacándose una figurita de mujer, ataviada con elegancia fastuosa, a la moda del siglo XV. Cara y manos son de esmalte; el ropaje, de oros cincelados y también esmaltados, se incrusta de minúsculas gemas, de pedrería refulgente y diminuta como puntas de alfiler. En la túnica, traslucen con vítreo reflejo los carmesíes; en el manto, los verdes de esmaragdita. Tendido el cabello color de miel por los hombros, rodea la cabeza diadema de diamantillos, sólo visibles por la chispa de luz que lanzan. La mano derecha de la figurita descansa en una rueda de oro obscuro, erizada de puntas, como el lomo de un pez de aletas erectas. Detrás, una arquitectura de finísimas columnas y capitelicos áureos.</p>
 				<p>En sillones forrados de yute desteñido, ocupan puesto alrededor de la mesa tres personas. Una mujer, joven, pelinegra, envuelta en el crespón inglés de los lutos rigurosos. Un vejezuelo vivaracho, seco como una nuez. Un sacerdote cincuentón, relleno, con sotana de mucho reluz, tersa sobre el esternón bombeado.</p>
@@ -542,9 +572,9 @@
 				</lg>
 			</div>
 			<div type="part">
-				<head>- II - : Lina </head>
+				<head xml:id="ne0086_head_001">- II - : Lina </head>
 				<div n="2" type="chapter" xml:id="ne0086_chap2">
-					<head>- I -</head>
+					<head xml:id="ne0086_head_002">- I -</head>
 					<p>¡Como una bomba, el notición! Cuando traen el telegrama, estoy aseando mi cuartito, porque mi única sirviente apenas sabe pasar una escoba antipática, abarquillada de puro vieja. Desgarro el misterio del cierre, extraigo, y leo: «Ha fallecido repentinamente tía Catalina. Tú, instituida heredera universal. Vente. Farnesio».</p>
 					<p>¡Tía Catalina! ¡Yo su heredera única! Y ni siento vértigo, ni tampoco efusión de gratitud. Lo encuentro curioso; la extrañeza vence. ¿Por qué me instituye heredera la que en vida me pasaba una miseria de pensión, no perdonaba medio de inducirme a que fuese monja, y me tenía relegada al destierro de Alcalá de Henares? Me prometo averiguarlo, aunque sé que los muertos se llevan consigo la verdadera clave de sus actos (por lo cual me río de la historia).</p>
 					<p>Mi viaje a Madrid se arregla pronto. Respondo al telegrama de Farnesio, me pongo el vestidito negro de paño, la toca de fieltro, felizmente, negra también, y, a pie, por la pulcra acera enladrillada, me dirijo a la estación. El tren pasará a las siete. Me siento en un banco, ante la puerta de la sala de espera; no se oyen ruidos; una acacia, muy cerca, columpia su ramaje, desprendiendo hojuelas doradas; una chiquilla mocosa, chata y curtida, me observa como si me fuese a retratar. Por primera vez me doy cuenta de que soy opulenta, poderosa. Revuelvo en mi saco de gamuza marrón, usado y de rota cadenilla, y alargo a la chica una peseta. La mira, me mira, y, escamada, suponiendo burla, en vez de tomarla, echa a correr. La riqueza asusta, por lo visto...</p>
@@ -605,7 +635,7 @@
 					<p>-Ocúpese usted de que yo tenga manto mañana a primera hora. Y muy tupido.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0086_chap3">
-					<head>- II -</head>
+					<head xml:id="ne0086_head_003">- II -</head>
 					<p>Hasta la tarde del día siguiente, no se celebró la anunciada conferencia. Todavía el salón conservaba el olor dulzaino y repulsivo de los desinfectantes y las flores, envenenadas, en descomposición, desde el punto mismo en que las depositamos sobre un cadáver. Mandé abrir las ventanas de par en par; ordené que a nadie se recibiese, pues los contados íntimos de la tía ya habían asistido a las misas, devorándome a miradas de curiosidad frenética; y recorrí la casa. Magnífica, concedido... pero apelmazada, de pésimo gusto. Ya la airearé también. Las casas envejecen con sus dueños. Daré juventud... Mi juventud, reconcentrada por el aislamiento y llena ya de una experiencia amarga y sabrosa cual la aceituna.</p>
 					<p>Conversamos don Genaro y yo en el gabinete inmediato a mi dormitorio. Por él se puede bajar al jardín. Un macizo verde, al través de los vidrios, me halaga. Estoy chancera y afectuosa con el sesentón.</p>
 					<p>-¿Sabe usted, don Genaro que esta mañana, al despertarme en una habitación desconocida, creí que era un sueño lo de la herencia?</p>
@@ -662,7 +692,7 @@
 					<p>-¡Ya lo ves, ya lo ves, si te quería tu bienhechora!</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0086_chap4">
-					<head>- III -</head>
+					<head xml:id="ne0086_head_004">- III -</head>
 					<p>Me instalo en el bienestar -no en el lujo- de mi gran fortuna. El bienestar es práctico, y el lujo, estético. El lujo no se improvisa. El lujo, muy intensificado, constituye una obra de arte de las más difíciles de realizar. Yo tengo un ideal de lujo, hambre atrasada de mil refinamientos; ahora comprendo lo que he sufrido en la prosa de mi vida alcalaína. Otra mujer quizás hubiese encontrado hasta dulce aquel escondido vivir, pero mi fantasía y el culto que profeso a mi propia persona, me hicieron a veces llorar ante un puchero desportillado o unos zapatos cuyo tacón empezaba a torcerse...</p>
 					<p>No está todavía depurado mi gusto para formarme mi envolvente lujosa, y, por ahora, me limito a la comodidad, a alegrar esta casa suntuosa que trasuda aburrimiento.</p>
 					<p>La mentalidad de doña Catalina, sus burgueses instintos, iban reflejándose en el mobiliario. Llamo a un prendero y le vendo un sin fin de cachivaches. Comprendo que Farnesio se horripila; cree que hago una locura. Respiro al verme libre de estos espejos de tan mal gusto, de estos entredoses con bronces falsos, de estas butacas rellenas, recercadas, que parecen acericos de monja. Lo vuelvo todo patas arriba; no dejo cosa con cosa; el jardincillo pierde su aspecto terroso, secatón, y arreglo en él una <seg rend="italic">serre</seg> en miniatura, provista de calorífero. Allí almuerzo casi todos los días. Mi departamento lo alhajo a la moderna, de claro, y salpico alguna antigualla fina.</p>
@@ -681,7 +711,7 @@
 					<p>Pensando en <seg rend="italic">él</seg>, prolongo mi estación ante el tocador, y las lunas altas, límpidas, copian mi cara expresiva, mis ojos ansiosos, mi busto brotando del escote como un blanco puñal de su vaina de oro cincelado... Y pruebo más trajes; uno azul, del azul de los lagos, bordado de verdes chispas de cristal y largas cintas de seda crespa, y otro blanco, en que se desflecan orlas de cisne, y otro del tono leonado de las pieles fulvas, transparentes, bajo el cual se trasluce un forro de seda naranja, azafranoso... Y me sonrío, y entreabro abanicos, y juego a prenderme flores, y vierto por el suelo esencias, y, por último, rendida, arrojo aprisa mis galas, y estremecida por la horripilación del amanecer, corro con los brazos cruzados sobre el pecho a refugiarme en mi cama, donde me apelotono, me hago un ovillo, encogida, trémula de cansancio, con los pies helados, la cabeza febril...</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0086_chap5">
-					<head>- IV -</head>
+					<head xml:id="ne0086_head_005">- IV -</head>
 					<p>Al empezar a crecer los días, remanece la idea de irme a Alcalá una semana, a ver a mis viejos amigos. Se combina este propósito con mis maliciosos recelos. Es indudable que esos arrinconados y modestos señores, que no me han hecho en tres o cuatro meses ni una visita, poseen la clave de mi historia, saben lo que yo todavía no comprendo, lo que inútilmente busqué en el armario de papeles. Farnesio es impenetrable; nada le arrancaré; cada día se difumina mejor la verdad en las nieblas de su habla sobria. El secreto, sin embargo, no puede ser verdadero secreto, ya que lo han conocido, por lo menos, tres personas: Farnesio, Carranza y Roa, el fallecido.</p>
 					<p>Dispongo mi viaje. Nada de aparato; me alojaré en la casa que tantos años habité, y que ahora es mía, y me servirá Sidra, la misma maritornes de antaño... La tengo allí al cuidado de los muebles. ¡Vaya unos muebles! El cocinero, eso sí, enviará todos los días la comida, y un pinche encargado de presentarla.</p>
 					<p>Invitaré al canónigo; se le soborna por la boca: es amigo de la mesa. Malo será que no se descorra el velo. Una circunstancia, al parecer insignificante, acrece mi curiosidad ardorosa. Con motivo de las formalidades de testamentería, he visto mi partida de bautismo. Fui bautizada en Segovia. Y mis nombres de pila son: Catalina, Natalia, Micaela... He interrogado a Farnesio, como al descuido:</p>
@@ -742,7 +772,7 @@
 					<p>Y me dejó sola con don Antón de la Polilla.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0086_chap6">
-					<head>- V -</head>
+					<head xml:id="ne0086_head_006">- V -</head>
 					<p>No necesito diplomacia, o por lo menos, no necesito astucia con este amigo, cuya boca no sufre candados.</p>
 					<p>-Me estaba riendo, don Antón, de los guiños que usted me hacía.</p>
 					<p>-Ya, ya lo noté... ¡Ese Carranza! ¡Qué clérigos! Antes, empeñado en meterte en un claustro, y ahora... ¡Vamos, son criminales; no reconocen la ley moral desde el momento en que se ordenan!</p>
@@ -806,9 +836,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- III - : Los procos </head>
+				<head xml:id="ne0086_head_007">- III - : Los procos </head>
 				<div n="7" type="chapter" xml:id="ne0086_chap7">
-					<head>- I- : Episodio soñado </head>
+					<head xml:id="ne0086_head_008">- I- : Episodio soñado </head>
 					<p>Volví de Alcalá con una venda menos en los ojos del alma. El caudal de la experiencia parece completo y siempre es menguado. La sospecha, al confirmarse, nos deja un poso que satura eternamente nuestras horas. Si se conociese la historia íntima de cada persona, ¡qué de acíbares!</p>
 					<p>La herida me sangra hacia dentro. Me acuerdo de mi madre, negándome no ya su compañía, sino una caricia, un abrazo; empujándome a un claustro por evitarse rubores en la arrugada frente... ¡Miseria todo! Una necesidad de ilusión, de idealismo inmenso, surge en mí. ¡Azucenas, azucenas! Porque me asfixio con los vapores de la tierra removida, del craso terruño del cementerio, en que se pudre lo pasado.</p>
 					<p>¿Dónde habrá azucenas...? Donde lo hay todo... En nosotros mismos está, clausurado y recóndito, el jardín virginal. Un amor que yo crease y que ninguno supiese; un amor blanco y dorado como la flor misma... ¿Y hacia quién?</p>
@@ -831,7 +861,7 @@
 					<p>-¡Buena mujer!</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0086_chap8">
-					<head>- II - : El de Polilla </head>
+					<head xml:id="ne0086_head_009">- II - : El de Polilla </head>
 					<p>Una mañana, ¡sorpresa! Se aparece en mi casa el bueno de don Antón, pidiéndome familiarmente de almorzar.</p>
 					<p>Le acojo alegre, y, desde el primer momento, abordo la cuestión de los cuerpos de los niños mártires...</p>
 					<p>-Ya sabe usted que corre de mi cuenta imprimir la disertación, Polillita. Con grabados, si usted quiere. Y muchas notas. ¿Qué se creía Carranza? También por acá se es erudito.</p>
@@ -886,7 +916,7 @@
 					<p>Y, casi en alto, suelto la carcajada. Se me ha ocurrido la idea de que esta es mi primer cita de amor...</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0086_chap9">
-					<head>- III -</head>
+					<head xml:id="ne0086_head_010">- III -</head>
 					<p>Apagado el eco sordo de mi risa, absorbida ampliamente la bocanada de fragancia amargosa -tomillo, jara, brezo, menta-, sobre el sendero que alumbra el sol declinando, veo avanzar a dos hombres.</p>
 					<p>Representamos la comedieta. «¡Usted por aquí, don Antón!». Y lo demás. Autorizado, se acerca el acompañante. La luz poniente enciende su cara, de un tono en que la palidez parece difamada con arcilla. Se descubre, y veo su pelo tupido, rizoso, su frente bruñida aún por la juventud, sus ojos azules, miopes, indecisos detrás de los quevedos, que le han abierto un surco violáceo a ambos lados de la nariz. Es de corta estatura, de pecho hundido, y se ve que viene atusado; no hay peor que atusarse, cuando falta la costumbre. El proco huele a perfume barato y a brillantina ordinaria. Lleva guantes completamente nuevos, duros. Sus botas, nuevas también, rechinan.</p>
 					<p>Al cabo de un minuto de coloquio, les hago subir al coche, con gran descontento de Daisy, que gruñe en sordina, y de cuando en cuando lanza un ladridillo cómico, desesperado. Si se atreviese, mordería, con sus dientecitos invisibles. Si no tolera el lulú el vaho de miseria, quizás le exaspera doblemente la mala perfumería.</p>
@@ -940,7 +970,7 @@
 					<p>-¡A la una! -insisto, al soltarles en la acera.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0086_chap10">
-					<head>- IV -</head>
+					<head xml:id="ne0086_head_011">- IV -</head>
 					<p>Choque, con Farnesio, cuando se entera de que tengo invitado a almorzar a un hombre desconocido, una nueva relación.</p>
 					<p>Planteo la cuestión resueltamente.</p>
 					<p>-Amigo mío, le quiero a usted muy de veras, no lo dude, pero pienso hacer mi gusto.</p>
@@ -992,9 +1022,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- IV - : El de Farnesio </head>
+				<head xml:id="ne0086_head_012">- IV - : El de Farnesio </head>
 				<div n="11" type="chapter" xml:id="ne0086_chap11">
-					<head>- I -</head>
+					<head xml:id="ne0086_head_013">- I -</head>
 					<p>Los soplos primaverales, con su especie de ilusoria renovación (todo continúa lo mismo, pero al cabo, <seg rend="italic">en nosotros</seg>, en lo único que acaso sea real, hay fervorines de savia y turgencias de yemas), me sugieren inquietud de traslación. Me gustaría viajar. ¿No fueron los viajes uno de los goces que soñé imposibles en mi destierro?</p>
 					<p>A la primer indicación que hago a Farnesio, para que me proviste de fondos, noto en él satisfacción; mis planes, sin duda, encajan en los suyos. Es quizás el solo momento en que se dilata placenteramente su faz, que ha debido de ser muy atractiva. Habrá tenido la tez aceitunada y pálida, frecuente en los individuos de origen meridional, y sobre la cual resalta con provocativa gracia el bigote negro, hoy de plomo hilado. Sus ojos habrán sido apasionados, intensos; aún conservan terciopelos y sombras de pestañaje. Su cuerpo permanece esbelto, seco, con piernas de alambre electrizado. No ha adquirido la pachorra egoísta de la cincuentena: conserva una ansiedad, un sentido dramático de la vida. Todo esto lo noto mejor ahora, acaso porque conozco antecedentes...</p>
 					<p>-¿Viajar? ¡Qué buena idea has tenido, Lina! Justamente, iba a proponerte...</p>
@@ -1065,7 +1095,7 @@
 					<p>¿Por qué lo deseo? Tampoco esto me lo defino bien. En tantos años de comprimida juventud y de soledad, he pasado, sin duda, mi ensueño por el tamiz de mi inteligencia; he pulido y afiligranado mi exigencia sentimental; he tenido tiempo de alimentarla; la he alquitarado, y su esencia es fuerte. Mi ansia es exigente; mi cerebro ha descendido a mi corazón, le ha enlorigado con laminillas de oro, pero en su centro ha encendido una llama que devora. Y, enamorada perdida, considero imposible enamorarme...</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0086_chap12">
-					<head>- II -</head>
+					<head xml:id="ne0086_head_014">- II -</head>
 					<p>En la estación de Granada me aguardan los Mascareñas.</p>
 					<p>Desde una hora antes, hemos trabajado Octavia y yo en disimular las huellas de la noche en ferrocarril. Y me he tratado, a mí misma, de estúpida. ¿Por qué no haber venido en auto? Pero un auto de camino, decente, tampoco se encontraría en Madrid, de pronto.</p>
 					<p>Por fortuna he dormido, y no presento la máscara pocha del insomnio. Mi hálito no delata el trastorno del estómago revuelto. Lo impulso varias veces hacia las ventanas de la nariz, y me convenzo de su pureza. Por precaución, me enjuago con agua y elixir y mastico una pastilla de frambuesa, de las que encierra mi bombonerita de oro, cuya tapa es una amatista cabujón, orlada de chispas. En joyería, está Madrid más adelantado que en <seg rend="italic">confort</seg>.</p>
@@ -1123,7 +1153,7 @@
 					<p>Cuando existen sitios como la Alhambra, tiene que existir el amor. ¿Por qué no viene más aprisa? ¿Por qué no me devora?</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0086_chap13">
-					<head>- III -</head>
+					<head xml:id="ne0086_head_015">- III -</head>
 					<p>En casa de mi tío no saben qué pensar de mí. Soy una maniática; soy una casquivana; soy una hembra «de cuidado», con la cual hay que mirar donde se pisa? Gugú no me entiende. Se afana en obsequiarme, insegura del resultado. Estebanillo, el mocetón anglófilo, de labio rasurado, aunque afecte frialdad y superioridad, me teme un poco. José María, que no es ningún patán, pero cuyo pensamiento no va más allá del sensualismo de su raza, está desconcertado: con otra mujer hubiese él pisado firme... ¡Vaya! Su olfato sagaz en lo femenino le aconseja que conmigo no se aventure, no se resbale... Y, sobre todo, el tío, el gitano-señor, anda receloso: empieza a consagrarme un estudio excesivo, una atención disimulada, de todos los momentos. ¿Por dónde saldré? Es sobrado ladino para no conocer que José María y yo, a pesar de las apariencias, todavía no... vamos, no... En el mismo acostumbrado tono, de galantería chancera, picante, popular y señoril, el tío Clímaco me analiza, quiere desentrañar mis aspiraciones, saber de qué pie cojea esta sobrina millonaria y extravagante, que se va de noche a la Alhambra, con un guapo mozo, a mirar realmente correr el agüilla... ¿Seré de mármol, como los leones? ¿Seré una romanticona...? ¡Qué de hipótesis! La verdad, no es dable que la interprete el de las grises patillas, el marrajo que me ha señalado por suya, a fin de que no prevalezca la superchería y vuelva la rama a la rama y el tronco al tronco...</p>
 					<p>Debe de correr por Granada una leyenda a propósito de mí. Lo noto en la aguda curiosidad que me acoge, en los eufemismos con que se me habla. ¡Lo que más ha contribuido a dar cuerpo a la leyenda, es mi originalidad de no querer ver, en la ciudad, absolutamente más que la Alhambra! El primer día me llevaron al Laurel de la Reina. Después, me negué rotundamente. Ni Catedral, ni Cartuja, ni sepulcro de los Católicos, ni Albaicín, ni Sacro Monte... Nada que pudiese mezclar sus líneas y sus colores y sus formas con las de la Alhambra.</p>
 					<p>-Se acabó, prenda: que la Jalambra te ha embrujao...</p>
@@ -1184,7 +1214,7 @@
 				</div>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0086_chap14">
-				<head>- V - : Intermedio lírico </head>
+				<head xml:id="ne0086_head_016">- V - : Intermedio lírico </head>
 				<p>Llego a Madrid de sorpresa, y la alarma de Farnesio es indecible.</p>
 				<p>-¿Pero qué ha sucedido? ¿No te encontrabas bien? ¿Algún disgusto?</p>
 				<p>-Nada... Convénzase usted de que yo estoy donde me lo dicta mi antojo.</p>
@@ -1289,9 +1319,9 @@
 				<p>-¡Nunca! ¡Nunca!</p>
 			</div>
 			<div type="part">
-				<head>- VI - : El de Carranza </head>
+				<head xml:id="ne0086_head_017">- VI - : El de Carranza </head>
 				<div n="15" type="chapter" xml:id="ne0086_chap15">
-					<head>- I -</head>
+					<head xml:id="ne0086_head_018">- I -</head>
 					<p>Una fiebre nerviosa, no grave, me postra varios días. Convalezco serenamente. Farnesio está como loco. De una parte, cree que me muero; de otra cree que el tío Clímaco ha venido resuelto a hacer una. Sólo es verdad que el tío está en Madrid y no me ha visitado.</p>
 					<p>-Tendrá sus asuntos. No le podemos negar el derecho de viajar a ese señor.</p>
 					<p>Un fruncimiento de cejas de don Genaro; su cara más alargada y preocupada que de costumbre, me indican que el recelo le socava y le mina el espíritu. Ya me figuro lo que teme. Sin embargo, la empresa no ha de ser tan liviana. Sabré defenderme, ahora que las fantasmagorías de amor se han desvanecido, y sólo me queda el ansia de una vida fuerte, intensa, con otros goces y otros triunfos; los que mi brillante posición me asegura, a mí que ya traigo en la lengua, si no la pulpa, por lo menos el jugo acre y fuerte de la poma del bien y del mal...</p>
@@ -1334,7 +1364,7 @@
 					<p>-Por algo le dije yo a Agustín que tú vales un imperio...</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0086_chap16">
-					<head>- II -</head>
+					<head xml:id="ne0086_head_019">- II -</head>
 					<p>¿Qué aspecto tiene el nuevo proco? A fe mía, agradable hasta lo sumo. Buena estatura, no muy grueso aún, por más que demuestra tendencia a doblar; moreno, de castaña y sedosa barba en horquilla; tan descoloridas las mejillas como la frente, de ojos algo salientes, señal de elocuencia, de pelo abundante, bien puesto, con arranque en cinco puntas, fácilmente parecería un tenor, si la inteligencia y la voluntad no predominasen en el carácter de su fisonomía. Desde el primer momento -es una impresión plástica- su cabeza me recuerda la de San Juan Bautista en un plato; la hermosa cabeza que asoma, lívida, a la luz de las estrellas, por la boca del pozo, en <seg rend="italic">Salomé</seg>. Cosa altamente estética.</p>
 					<p>El pretexto honroso de la visita es que, informado por Carranza del riesgo que pueden correr mis intereses y la odiosa maquinación de que quiere «alguien» hacerme víctima, para despojarme de lo que en justicia me pertenece, viene a ofrecerse como consejero y guía, y cuando el caso llegue, como letrado, a fin de parar el golpe. Esto lo dice con naturalidad, con esa soltura de los políticos, hechos a desenredar las más intrincadas intrigas y a buscar fórmulas que todo lo faciliten. Sin duda los políticos son gentes que se pasan la vida sufriendo el embate de los intereses egoístas y ávidos, tropezando con el amor propio y la vanidad en carne viva, amenazados siempre de la defección y la puñalada artera. Nada se les ofrece de balde a los políticos, y todos, al dirigirse a ellos, hacen un cálculo de valor, de conveniencia. Así es que pesan la palabra y comiden la acción. Almonte no pronuncia frase que no responda a un fin... Y si yo soy la desilusionada, él debe ser el escéptico. Nuestros ojos, al encontrarse, parecen decirse:</p>
 					<p>«Una misma es nuestra pena...».</p>
@@ -1371,7 +1401,7 @@
 					<p>¡Ah, Carranza! Reconozco tu mano eclesiástica, diplomática, de futuro cardenal, en la manera de haber adoctrinado a este proco. Le has revelado mi herida y la precaución que se ha menester para no irritar la viva llaga... Le has descubierto mi espíritu crispado de horror, mis nervios encalabrinados, mi mente nublada por sombras y caricaturas goyescas, por visiones peores que las macabras, ¡oh, la muerte es menos nauseabunda! Y, tal vez así...</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0086_chap17">
-					<head>- III -</head>
+					<head xml:id="ne0086_head_020">- III -</head>
 					<p>Una magia es Biarritz, con su aire salobre, vivaz, su agua marina encolerizada, la alegría de sus edificaciones modernas, y el apetito que he recobrado, y el humor juvenil de moverme, de hacer ejercicio, de bañarme en el mar, sin necesidad probablemente. Por otra parte, en Biarritz empiezo a entrever esa actividad intensa, sin lirismo, esos resortes y esos fines que no evocan lo infinito, sino lo que está al alcance, no de todas las manos -despreciable sería entonces- sino de pocas y sabias y hábiles...</p>
 					<p>Entreveo ese juego atrayente, de que es imagen muy burda el otro juego, del cual se habla aquí y en que salen desplumados los «puntos». Así se lo escribo a Agustín, no en la postalcita que humildemente pidió, sino en una carta amistosa, en que apunta el compañerismo. El pretexto para convencerme de que debo escribirle pronto y largo, es que parece natural enterarle de la acogida que me dispensa la Ambas Castillas, mediante la esquela de presentación, redactada en términos de apremiante interés. La duquesa, a quien envío la esquela por Dick, contesta por el mismo, anunciando inmediata visita; y a la media hora se presenta, ágil y airosa y envelada la cara de tules, a fin de disimular y suavizar el estrago que los años han ejercitado, impíos, en su belleza célebre. Los rasgos permanecen aún, bajo el estuco; el pie es curvo, la mano elegante al través de la Suecia; el busto, atrevido, obedece a la obra maestra del corsé; y en su maceramiento de sesentona, persiste una gracia arrogante que yo desearía imitar. Envidio los gestos delicados, de coquetería y de hermosura triunfante, de gentil aplomo y gentil recato altanero; envidio este aire que sólo presta cierto ambiente... al ambiente que debe llegar a ser mío.</p>
 					<p>Corta es la visita. Por la tarde, en su automóvil, me lleva a recorrer caminos pintorescos, hasta San Sebastián. Nos cruzamos con otros autos, con mucha gente, mujeres maduras, niños de silueta modernista, hombres que saludan con respeto galante; dos autos se detienen, el nuestro lo mismo; la Ambas Castillas hace presentación: me flechan agudas curiosidades; oigo nombres, cuyo runrún había percibido desde lejos. Con nosotros viene una hermana de la Ambas Castillas, insignificante, callada y al parecer devota, pues se persigna al cruzar por delante de las iglesias. La duquesa me envuelve en preguntas. ¿Desde cuándo conozco a Agustín Almonte y a don Federico?</p>
@@ -1399,7 +1429,7 @@
 					<p>-¡A Suiza! -ordeno lacónicamente-. Vamos directamente a Ginebra... Prepare usted el equipaje.</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0086_chap18">
-					<head>- IV -</head>
+					<head xml:id="ne0086_head_021">- IV -</head>
 					<p>Noto en Suiza lo contrario que en Granada. A Granada pude yo hacerla para mí. Suiza está hecha: tan hecha, que nada nuevo íntimo descubro en ella. La sedación de Suiza, su frígida pureza de horizontes, me hacen, eso sí, un bien muy grande. Comprendo que aquí se busque reposo después de una caída de las de quebrantahuesos. Reposo activo; no la disolvente languidez de la Alhambra.</p>
 					<p>Como Agustín me escribe que todavía le detendrán una quincena los quehaceres y que en Ginebra nos reuniremos, dedico este tiempo a ciudades y lagos. De los Alpes, visito todo lo que no obliga a alardes de alpinismo. ¡Soy de la meseta castellana! Subo, por dentro, a las montañas inaccesibles; con los pies, no. He visitado Friburgo y Berna, encontrando superiores los hoteles a las ciudades; Lucerna y Zurich, y, por Schaaffhausen, me he dirigido al lago de Constanza, punto menos infestado de turistas ingleses que el resto de Suiza. El Rin, que forma estos dos lagos entre los cuales Constanza remeda el broche de una clámide, es al menos un río cuya imagen he visto en mis deseos, un río de leyenda. Constanza es poco más que un pueblecillo; sin embargo, los hoteles no ceden a los de ninguna parte. Suiza ha llegado, en punto a hoteles, a lo perfecto. Y es una sensación de calma y de goce físico, reparadora, la que me causa, después del enervamiento del tren, esta vida solitaria y magnífica, con Maggie que no me da tiempo a formular un deseo, y pasándome el día entero al aire libre, el aire virgen, purificado por las nieves eternas, en un balcón o veranda sobre el lago, que enraman las rosas trepadoras y los cabrifollos gráciles. A mi lado, sentada perezosamente, una inglesita lee una novela; de vez en cuando sus ojos flor de lino buscan, ansiosos, los ojos de un inglesón de <seg rend="italic">terra cotta</seg>, que sin ocuparse de su compañera, se mece al amparo de la sábana de un periódico enorme. Pobre criatura, ¿sabrás lo que anhelas? ¡Qué fuerza tendrá el engaño para que tu cabecita de arcángel prerrafaelista, nimbada de oro fluido, se vuelva con tal insistencia hacia ese pedazo de rubicunda carne, amasada con lonchas de buey crudo, e inflamada con mostaza desolladora y picores de rabiosa especiería!</p>
 					<p>De Constanza, me agrada también el que sus recuerdos no me producen lirismo... Aquí no flotan más sombras que las de herejes recalcitrantes asados en hogueras, y emperadores, condes y barones a quienes hubo que embargar sus riquezas porque no pagaban el hospedaje a los burgueses de la ciudad. Bien se echa de ver que los suizos están convencidos, al través de las edades, de dos cosas: que hay que ser independiente y cobrar a toca teja las cuentas del hotel.</p>
@@ -1438,7 +1468,7 @@
 					<p>Creo que este diálogo lo pasamos una noche, en que el lago reflejaba una luna enorme, encendida todavía por los besos del poniente. Estábamos en la veranda, muy cerca el uno del otro, y los camareros, cuando pasaban llamados por algún viajero que pedía <seg rend="italic">whisky and soda</seg>, cerveza o aperitivos, apresuraban el andar, por no ser molestos a los enamorados españoles. Y, sin embargo, en el momento sugestivo, no se aproximaban temblantes muestras manos, ni se inclinaban nuestros cuerpos el uno hacia el otro.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0086_chap19">
-					<head>- V -</head>
+					<head xml:id="ne0086_head_022">- V -</head>
 					<p>Y avanza el singular noviazgo, frío y claro como las nieves que revisten esos picachos y esas agujas dentelladas, que muerden eternamente en el azul del cielo puro. Aun diré que era más frío el noviazgo que las nieves, ya que estas, alguna vez, se encendían al reflejo del sol. Me lo hizo observar un día Agustín. Él no lamentaría que la situación cambiase; pero lo procuraba con labor fina, sabiendo que yo estaba a prueba de sorpresas. Aplicaba a la conquista de mi espíritu la ciencia psicológica y matemática a un tiempo con que estudiaba al resto de la gente, piezas de su juego de ajedrez. Dueño de largas horas y propicias ocasiones, teniendo por cómplices los azares de un viaje, supuso -después lo he comprendido- que siempre llega el cuarto de hora. Debo reconocer que esta idea, algo brutal en el fondo, la aplicó el proco con artística finura.</p>
 					<p>Su actitud fue la del hombre que busca un afecto, y, para conseguirlo profundo, lo quiere completo, sin restricciones. Estaba seguro de mi amistad, contaba conmigo como asociada... pero ¿y si, abandonando él en mí lo que no debe abandonarse, otro hombre...?</p>
 					<p>-Ni en hipótesis -confirmo tercamente.</p>
@@ -1480,7 +1510,7 @@
 					<p>-¡Así es! Ojalá no fuese.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0086_chap20">
-					<head>- VI -</head>
+					<head xml:id="ne0086_head_023">- VI -</head>
 					<p>Y dispusimos la boda. Se escribió para los papeles indispensables. Permaneceríamos en Ginebra hasta mediados de septiembre, mientras se arreglaba todo. Nos casaríamos en París.</p>
 					<p>Al evocar aquel período, recuerdo que me sorprendió algún tanto la placidez que demostró Agustín, después de sus arrebatos de Annecy, revestidos de un carácter de violencia sombría y halagadora. Placidez apasionada, galante tierna, pero placidez. ¿Esperaba yo que me aplicase antorchas encendidas? ¿Quería un martirio ferozmente amoroso? Hubo monerías, hubo mil gentilezas. Brasas bien contenidas dentro de una estufa correcta, con guardafuego de bronce.</p>
 					<p>-Acuérdate, Agustín, de que eres mi novio...</p>
@@ -1576,9 +1606,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- VII - : Dulce Dueño </head>
+				<head xml:id="ne0086_head_024">- VII - : Dulce Dueño </head>
 				<div n="21" type="chapter" xml:id="ne0086_chap21">
-					<head>- I -</head>
+					<head xml:id="ne0086_head_025">- I -</head>
 					<p>Al llegar a Madrid, en enero, todavía muy floja y decaída, me ven sucesivamente dos o tres doctores de fama. Hablan de nervios, de depresión, de agotamiento por sacudimiento tremendo; en suma, Perogrullo. Hacen un plan, basado principalmente en la alimentación. El uno me prescribe leche y huevos; el otro, nuez de kola y vegetales, puches y gachas a pasto; aquel me receta baños tibios, purés, jamón fresco, carnes blancas... y, sobre todo, ¡calma!, ¡descanso!, ¡sedación! Mi sistema nervioso puede hacerme una jugarreta... En suma, trasluzco que temen si mi razón... ¡La razón! ¡Qué saben ellos de mi arcano!</p>
 					<p>Por egoísmo -no por atender a la salud- he cerrado la puerta a los curiosos, a los noticieros, a los impresionistas. Así que empiezo a reponerme algo, recobrando, gracias a la proximidad de la primavera, una apariencia de fuerza, no puedo negarme a la entrevista trágica con el padre y la madre de Agustín Almonte. Cuando el padre recogió el cuerpo del hijo, en Suiza, yo deliraba y me abrasaba de calentura en el hotel.</p>
 					<p>Ellos creen que mi larga enfermedad, mi estado de abatimiento, de «neurastenia», dicen los médicos en su jerga especial, no reconocen otra causa que la impresión de la desgraciada muerte de su hijo, mi futuro. La leyenda ha rodado; es original notar cómo, bajo su varita de bruja, se ha transformado la esencia de los hechos, sin alterarse en lo más mínimo lo apariencial. Los dos enamorados «bogábamos en silencio» -recuérdese a Lamartine-, sin otra preocupación que la de soñar que el amor, según nos enseña el poeta, no es eterno, que tan deliciosas horas huyen, y deben aprovecharse con avidez. Éramos una pareja a la cual «todo sonreía», a la cual estaban preparados destinos triunfales. De súbito, el Leman hinchó su seno pérfido, pegó el horrible salto de dos metros cincuenta, y nuestra barca nos volcó. Agustín, aterrado, gritó al barquero la consigna de salvarme, y quiso intentarlo él, a su vez; el grueso abrigo, empapado, le arrastró al fondo, mientras a mí el suizo me libraba de una muerte cierta. Al recobrar el conocimiento y saber la tremenda verdad, el dolor estuvo a punto de acabar también con mi vida. Aquella tristeza honda, aquella postración, eran tributo pagado por mi alma al sufrimiento de tal pérdida. Se había tronchado la flor preciosa de mis cándidas ilusiones. Cosa muy tierna, muy interesante. Los párrafos que nos consagraban los periódicos, al publicar nuestros retratos (obtenido el mío con estratagemas de pieles rojas cazadores, pues yo me resistía horripilada a la «información gráfica»), eran de una sensibilidad vehemente, elegíaca. Recibí entonces, de desconocidos, cartas febriles, en que se traslucía un amor reprimido, pronto a crecer y estallar.</p>
@@ -1631,7 +1661,7 @@
 					<p>-Lo primero que haré, será impedir que esos desdichados padres sigan llamándote <seg rend="italic">hija</seg>, lo cual es un escarnio... Y no te acuerdes más de tu antiguo amigo Carranza. Me has sacado de quicio; la locura es contagiosa. ¡No sé qué te haría! Se me pasan ganas de abofetearte... Es mejor que me retire... Adiós, Lina; siempre he desconfiado de las hembras... Tú me enseñas que el abismo del mal sólo puede llenarlo la malignidad femenil. Siento haberme descompuesto tanto... Parezco un patán... ¡Agustín, pobre Agustín! ¡Quién me lo diría! ¡Y por mi culpa!</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0086_chap22">
-					<head>- II -</head>
+					<head xml:id="ne0086_head_026">- II -</head>
 					<p>El portazo que pegó Carranza me retumbó en la cabeza, que un dardo agudo de jaqueca nerviosa atarazaba. Quizás se me hubiese quitado con tomar alimento, pero mi garganta, atascada, no permitía el paso ni aun a la saliva pegajosa ardiente que encandecía, en vez de humedecerlas, mis fauces.</p>
 					<p>Salí del oratorio. Me recogí a mis habitaciones. Un azogue no me consentía sentarme, ni echarme sobre la meridiana, ni hacer nada que aliviase mi desasosiego. Me contenía para no batir en las paredes la cabeza, para no romper y hacer añicos porcelanas, vidrios, cuadros; para no desgarrar mis propias ropas y el rostro con las uñas... Un reloj de ónix y bronce, con su tic-tac monótono, me exasperaba. De un manotón, lo arrojé al suelo. El golpe paró el mecanismo. Al ruido, acudió mi doncella, la antigua Eladia, triunfadora del extranjero con los dos episodios desastrosos de Octavia y de Maggie...</p>
 					<p>-¡Jesús mil veces! Creí que era la señorita la que se había caído... ¿Recojo el reloj? ¡Qué lástima! Se ha roto por la esquina...</p>
@@ -1706,7 +1736,7 @@
 					<p>-Excepto en mí.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0086_chap23">
-					<head>- III -</head>
+					<head xml:id="ne0086_head_027">- III -</head>
 					<p>Salí de Madrid dos semanas después, al anochecer, con una maleta vieja por todo equipaje. Llevaba puesto lo más sencillo que encontré en mi guardarropa: traje sastre, de sarga, abrigo de paño color café con leche. Ni guantes, ni sombrero. Un velillo resguardaba mi cabeza y mi faz, ya deshinchada, en que sólo la mella del diente recordaba el suceso. Mi peinado era todo recogimiento y modestia.</p>
 					<p>Antes de emprender la caminata, por la mañana, me había arrodillado en la iglesia de Jesús, a los pies de un capuchino joven, de amarilla tez venada de azul, barbitaheño, consumido y triste. Oyome casi impasible; un movimiento ligero de párpados, una palpitación de las afiladas ventanas de la nariz. Un instante sólo le vi alterado, expresando pasión.</p>
 					<p>-Ese sacerdote que le ha dicho a usted que no la absolverían... ha pecado gravemente contra la esperanza y contra la caridad. ¿Quién es él para poner lindes a la misericordia? ¡No crea usted eso, hermana... Dios perdona siempre!</p>
@@ -1755,7 +1785,7 @@
 					<p>-¡Ah! Por las tardes, respirando el olor embeodante de las florescencias, cuyo polen llevaban las abejuelas de una parte a otra, auxiliando la fecundación, me dirijo a ti, Dueño que no vienes... ¿Por qué han pasado los tiempos en que, a precio de la tortura, de la piel arrancada, de la cabeza destroncada, acudías, exacto a la cita, transportado de ardor? ¿Por qué no me es concedido comprarte a ese precio? Lo que estoy haciendo, me cuesta más, mayor esfuerzo, un vencimiento largo, tedioso, sin fin. Como Teresa, la que tanto te quiso, yo estoy sedienta de martirio, y me iría a tierra de moros, si allí se martirizase. ¡Época miserable la nuestra, en que el bello granate de la sangre eficaz no se cuaja ya, no brilla! De las dos sangres excelentes, la del martirio y la de la guerra, la primera ya es algo como las piedras fabulosas y mágicas, que se han perdido; y la otra, también la quieren convertir en rubí raro, histórico, guardado tras la vitrina de un museo! ¡Edad menguada! ¡No poder ser mártir! En una hora, ganarte, unirme a ti... Si tú quisieses, dulce Dueño, yo te ofrecería licor para refrescar el de tus cruentas llagas... Yo te daría con qué renovar el Grial. Soy muy desventurada, porque no me es concedido dejar correr las fuentes de mis venas. ¡No poder sufrir, no poder morir!</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0086_chap24">
-					<head>- IV -</head>
+					<head xml:id="ne0086_head_028">- IV -</head>
 					<p>Y, poco a poco, mientras ejecuto las cosas prosaicas, comunes, antipáticas a mis sentidos, allá en lo oculto, en lo reservado de mí misma, noto los indicios de una transformación. Bogo hacia mi ideal, trabajosamente, desviando troncos, chocando en piedras. El espíritu de docilidad y el de renunciación van depositándose en mí, como en la celdilla ya preparada se deposita la miel. Según la miel se purifica, siento que se purifica mi ánimo. Voy cortando los circuitos de mis impurezas, análogos a los que forman las neuronas, las cuales reproducen el acto vicioso ya con independencia de nuestra voluntad. Lo material de mi expiación, lo cumplo sin pensar en ello, sin atribuirle valor ninguno. Atiendo más bien a lo íntimo. Vivo interiormente.</p>
 					<p>El convento no influye en esto. Voy a la iglesia, pero evito a los carmelitas. Lo hago por prudencia, por quitar palabreos entre los paletos maliciosos. Los carmelitas, supongo que por igual razón, ni parecen sospechar que existo. Son pocos y se encierran en su conventillo, cuyas celdas y claustros están forrados de corcho. Silencio, quietud y soledad. No se la he de robar, ni ellos a mí. Tan gran bien es justo que se respete. ¿Y quién sabe si estos frailes se parecen o no a los directores ininteligentes, fustigados por San Juan de la Cruz?</p>
 					<p>Comprendo que no basta la paciencia. Necesito el amor. Es preciso que lo amargo me sea dulce. Que me sepan a miel estas molestias que me tomo por dos mujeres bajas, burdas. ¿Tendré que amarlas, para amarte a ti, para que tú me ames? ¿Será este el secreto, la palabra del enigma? ¿Y cómo se hace para eso? ¡Estoy tan al principio de mi deificación! Me faltan etapas, me faltan grados. Hay momentos en que desconfío, dudo, y la secura me invade.</p>
@@ -1802,7 +1832,7 @@
 					<p>-Dulce Dueño...</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0086_chap25">
-					<head>- V -</head>
+					<head xml:id="ne0086_head_029">- V -</head>
 					<p>En este asilo, donde me recluyeron, escribo estos apuntes, que nadie verá, y sólo yo repaso, por gusto de convencerme de que estoy cuerda, sana de alma y de cuerpo, y que, por la voluntad de quien puede, soy lo que nunca había sido: feliz.</p>
 					<p>Mi felicidad tiene, para los que miran lo exterior (lo que <seg rend="italic">no es</seg>), el aspecto de completa desventura.</p>
 					<p>En lo mejor de mis años, me encuentro encerrada, llevando la monótona vida del establecimiento; sometida a la voluntad ajena, sin recursos, sin distracciones, sin ver más que médicos, enfermeros y dolientes... En comparación con mi suerte actual, el convento en que antaño pretendieron que ingresase, sería un paraíso.</p>

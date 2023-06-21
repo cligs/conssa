@@ -1,24 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los trabajos del infatigable creador Pío Cid</title>
-				<title type="sub"></title>
+				
 				<title type="short">Trabajos</title>
-				<title type="idno">
-					<idno type="bne">XX3051789</idno>
-					<idno type="viaf">308880964</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX919410</idno>
-					<idno type="viaf">76339208</idno>
-					<name type="short">Ganivet</name>
-					<name type="full">Ángel Ganivet</name>
+					<name type="short" ref="#Ganivet"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">3059</measure>
@@ -141,13 +131,55 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0134</idno>
+						<idno type="cligs">ne0134</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org <date when="2013">2013</date>, <idno></idno>, <ref target="https://archive.org/details/lostrabajosdelin12gani"/>.</bibl>
-				<bibl type="print-source">Madrid, <date when="1898">1898</date></bibl>
-				<bibl type="edition-first"><date when="1897">1897</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los trabajos del infatigable creador Pío Cid</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX3051789.html">XX3051789</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/308880964/">308880964</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4513477-7">4513477-7</idno>
+				</idno>
+				</title>
+					<author xml:id="Ganivet">
+						<name type="full"><forename>Ángel</forename> <surname>Ganivet</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3692 - IP 3693">IP 3692 - IP 3693</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118537504">118537504</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q706889/">Q706889</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX919410.html">XX919410</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/76339208/">76339208</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org <date when="2013">2013</date>, <idno/>, <ref target="https://archive.org/details/lostrabajosdelin12gani"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, <date when="1898">1898</date></bibl>
+					<bibl type="edition-first"><date when="1897">1897</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> , <publisher>Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="09672045X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=09672045X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1911">1911</date>, <publisher>Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465896529" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465896529"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1911">1911</date>, <publisher>Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465896219" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465896219"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1911">1911</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="270210040" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=270210040"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1911">1911</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="270209840" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=270209840"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="1911">1911</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="270209360" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=270209360"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">[Los trabajos del infatigable creador Pío Cid. España filosófica contemporánea. Trabajos varios ...]</title> <date when="1962">1962</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="519189256" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=519189256"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="1966">1966</date>, <publisher>Revista de Occidente</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465573231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465573231"/> </bibl>
+						<bibl type="further-edition"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="1983">1983</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="435821032" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=435821032"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="1983">1983</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039981592" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039981592"/> 		<idno type="isbn" n="843760415X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="1987">1987</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="530675137" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=530675137"/> 		<idno type="isbn" n="8403870108"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La conquista del reino de Maya</title>: 	<title type="sub">por el último conquistador español Pío Cid. Los trabajos del infatigable creador Pío Cid</title> <date when="1988">1988</date>, <publisher>Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="042390737" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=042390737"/> 		<idno type="isbn" n="8432039888"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="1998">1998</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="838089070" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=838089070"/> 		<idno type="isbn" n="843760415X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="1998">1998</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="246649127" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=246649127"/> 		<idno type="isbn" n="8470397850"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="2000">2000</date>, <publisher>Diputación Provincial de Granada [u.a.]</publisher> <pubPlace>Granada</pubPlace> 		<idno type="ppn" n="1187597252" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1187597252"/> 		<idno type="isbn" n="8478072713"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los trabajos del infatigable creador Pío Cid</title> <date when="2000">2000</date>, <publisher>Diputación Provincial;Fundación Caja de Granada</publisher> <pubPlace>Granada</pubPlace> 		<idno type="ppn" n="322278600" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=322278600"/> 		<idno type="isbn" n="8478072713"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +191,14 @@
 				<p>Al volver a Madrid, acoge en su casa a Mercedes, una mujer caída, y redime de una vida vacía y convencional a la duquesa de Almadura. FInalmente, Martina, celosa de esta competidora, consigue que Pío Cid le prometa que se traladarán a Barcelona.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3692" key="IP 3692" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -171,7 +211,7 @@
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">2-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">high</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -192,7 +232,7 @@
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cligs:importance="1">antinovela</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cligs:importance="1">nivola</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cligs:importance="1">novela costumbrista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -220,6 +260,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-11-11" who="#jct">Initial TEI version, from Fine Reader.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,9 +268,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Tomo I</head>
+				<head xml:id="ne0134_head_000">Tomo I</head>
 				<div n="1" type="chapter" xml:id="ne0134_chap1">
-					<head>Trabajo Primero: Pío Cid intenta desasnar á unos estudiantes.</head>
+					<head xml:id="ne0134_head_001">Trabajo Primero: Pío Cid intenta desasnar á unos estudiantes.</head>
 					<p>En una modesta casa de huéspedes de la calle de Jacometrezo vivía Pío Cid cuando le conoció mi amigo Cándido Vargas, de quien he recogido las escasas noticias que tengo sobre los primeros años de vida madrileña del original protagonista de esta instructiva historia. Yo le conocí algunos años después, y me interesó tan profundamente la rareza, con visos de genialidad, de sus dichos y hechos, que formé el firme propósito de estudiarle de cerca para satisfacer mi curiosidad de novelista incipiente y utilizarle en una obra de psicología novelesca al uso, que me quitaba entonces el sueño y el apetito.</p>
 					<p>Por fortuna mía, la amistad que, andando el tiempo, llegó á unirme con Pío Cid fue tan íntima, tan desinteresada y tan fraternal, que, aun supuesto que yo no me hubiera arrepentido de mi deseo de ser escritor á la moderna, nunca hubiera tenido la avilantez de emplear en esta historia de mi desgraciado amigo los procedimientos literarios que las escuelas en boga preconizan. No merece, en verdad, mi amado héroe que se le observe, analice y maltrate como á un conejo ó rata de Indias, en los que el frío y descorazonado vi-visector ensaya sus venenos; merece, al contrario, que se le ame y se le saque á la luz pública para universal enseñanza, como ejemplo de un hombre que vivió muy humanamente y que con humanidad debe de ser juzgado. Esta historia será, pues, una biografía escrita con amor; un retrato moral exacto en lo que afirma y piadoso en lo que encubre , que será todo lo que el original tuvo de censurable. Y aun sospecho que muy poco he de encubrir, porque los numerosos disparates que mi amigo cometió lo fueron sólo en apariencia, y dejan de serlo cuando se los mira en el conjunto de sn extraña vida, con los ojos con que él, al realizarlos, los miraba; tuvo momentáneos desfallecimientos y dió grandes caídas, como hombre que era, y tampoco esto se ha de ocultar, porque realza la humanidad de su carácter y de sus obras; en suma, sólo he de guardar reserva sobre aquellas acciones que, por arrancar de los bajos instintos materiales, descomponen y afean la noble figura humana.</p>
 					<p>Aquella malsana curiosidad mía fué, sin embargo, provechosa, porque me movió á conocer á Pío Cid y á averiguar muchos misterios de su vida que, sin mi diligencia, hubieran quedado ocultos, y, por último, á convencerme de que aquel hombre que yo había tomado por extravagante ó estrambótico era el prototipo de la sencillez admirable y de la noble naturalidad. Que la virtud del esfuerzo de la inteligencia se reconoce, entre otras muchas señales, en la purificación de nuestro espíritu, el cual comienza á veces á ejercitarse con intención dañada ó malévola, y conforme avanza en su tortuoso camino va distinguiendo claramente lo innoble de su proceder hasta concluir por el arrepentimiento; de suerte, que el trabajo que dimos en la sombra sale á luz de pronto, transformado y como transfigurado por nuestra tardía bondad, más fecunda, de cierto, que la bondad temprana de aquellos que nunca sufrieron la atracción del mal y nunca sintieron tampoco el inefable contento de descubrir el bien como tesoro escondido y de regocijarse con él como con hallazgo inesperado. Así, esta historia, concebida con ánimo de arrojar á la voracidad pública los más íntimos secretos de un amigo confiado, se transfiguró al calor de la amistad y de la confianza en algo semejante á un legado piadoso, historia escrita para cumplir un deber de conciencia: el de dar á conocer á quien poseyó la suma grandeza humana y vivió oculto en una envoltura humildísima, y murió sin molestarse en que le conocieran sus contemporáneos.</p>
@@ -334,7 +375,7 @@
 					<floatingText>
 						<body>
 							<div type="section">
-								<head>«EL PROTOPLASMA.</head>
+								<head xml:id="ne0134_head_002">«EL PROTOPLASMA.</head>
 								<p>»Poco después de oscurecido entró Pepe Ore-llana en el café Imperial.</p>
 								<p>»Se dirigió á la mesa donde tenía costumbre de sentarse todas las noches, y saludó á dos jóvenes que allí estaban discutiendo sobre la corrida de toros de la tarde anterior.</p>
 								<p>»—¿No ha venido todavía D. Perfecto?—preguntó.</p>
@@ -615,7 +656,7 @@
 					<p>Y al mismo tiempo su pensamiento se alejaba de allí volando á tierras lejanas, donde veía sombras de mujeres que él quizá había amado, y cuyo recuerdo había venido á visitarle en forma de visión alada y á anunciarle la resurrección del amor en aquella mujer de ojos grandes y negros que la fatalidad le había puesto delante. Y él se veía encadenado, sin poder ni querer huir, resignado voluntariamente á seguir un nuevo rumbo y á arrojarse en brazos del azar. Entonces sintió una hondísima y desconsoladora tristeza, y se echó á llorar como un niño. La joven le veía llorar con asombro sin atreverse á romper el silencio. Sonaron en la escalera pasos de los huéspedes que volvían, y ella fué á la puerta á ver si estaba bien cerrada; volvió junto á la mesa de noche y apagó el moribundo cabo de vela, que se derretía sobre la piedra de mármol, para que no vieran luz encendida los que entrasen. Luego se acercó á Pío Cid, le cogió á tientas la cabeza, se sentó sobre sus rodillas, le echó un brazo por el cuello y comenzó á besarle los ojos para enjugarle las lágrimas.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0134_chap2">
-					<head>TRABAJO SEGUNDO: Pío Cid pretende gobernar á unas amazonas.</head>
+					<head xml:id="ne0134_head_003">TRABAJO SEGUNDO: Pío Cid pretende gobernar á unas amazonas.</head>
 					<p>Azarosa filé por demás la vida del capitán de infantería D. »José Montes, y si hubiera de referirla punto por punto tendría materia sobrada para llenar varios volúmenes. No más que con la relación de los traslados que sufrió en su carrera desde que la comenzó de soldado raso á mediados de siglo, hasta que se retiró de capitán graduado de comandante á los cincuenta años de servicios, 7 con la descripción de los disgustos que le dió D.<seg rend="sup">a</seg> Socorro, su mujer, en veintitantos año.s que le duró á la infeliz señora una enfermedad crónica de la matriz, que la tenía siempre en estado de excitación insoportable, habría asunto para escribir una docena de capítulos, llenos de abusos é injusticias, de dolores y de miserias; El capitán Montes fué perpetuamente el tipo del hombre obscuro, que se halla en todas partes, y á quien nunca le ocurre nada digno de mención. Su vida era una proeza continuada, y no había ninguna proeza en su vida. Estuvo en la guerra de Africa, en el Norte y en Cuba, y nunca tuvo ocasión para lucirse, como él hubiera deseado,, y a. que no por su inteligenqia, que era mediana; .ni por su pericia, que era la de un militar rutinario, por su corazón, que era de buen temple. ¡Qué remedio! No tenía fortuna, y tuvo que tener paciencia y subir paso á paso y quedarse en los primeros escalones. Pero como el capitán Montes, aunque pobre y sin fortuna, era un hombre á la buena de Dios y con su pizca de filosofía, se consideraba venturoso en medio de sus contrariedades, y decía continuamente que si mil veces volviera á nacer mil veces haría lo mismo que había hecho, incluso casarse con la que fué su mujer, la cual, aunque le dió muchos malos ratos, tenía un corazón de oro y había sido una madre como pocas. Así, cuando al buen capitán le llegó la hora de morirse, en Murcia, al lado de su hija Candelaria, con la que se fué á vivir cuando se quedó viudo, cuentan que mandó llamar á un capellán castrense, llamado D. Gualberto González, que era su mejor amigo, para tener con él una última entrevista y cumplir los deberes de buen cristiano. Como su amigo le conocía muy á fondo, no tuvo la entrevista el carácter de una confesión, sino que ambos platicaron largamente con familiaridad y tan sin reserva, que Candelaria oyó gran parte de las razones que su padre tuvo en aquella hora suprema, y recordaba siempre la serenidad con que, resumiendo toda su vida, dijo:</p>
 					<p>«Yo no sé si será vanidad esta pretensión mía; pero crea usted, amigo D. Gualberto, que ahora que me veo tan cerca de cerrar el ojo, estoy más satisfecho que nunca de mi conducta y más convencido de que he hecho cuanto me tocaba hacer en el mundo. Mi pobre Socorro me echaba siempre en cara mi falta de resolución, y hubiera querido que yo llegara á general, puesto que otros sin valer más que yo llegaron, Dios sabe cómo; y claro está que á mí me gustaría dejar á mis hijos un nombre encopetado, y que les diera más lustre que el que puede darles el de un obscuro capitán, que es lo más que yo he podido ser; pero al menos mi nombre es honrado como el primero y en mi hoja de servicios consta que yo permanecí siempre fiel á la disciplina; y habiendo estado en medio mundo, y nunca con muchos haberes, tengo el orgullo de no deberle nada á nadie y de no haber dejado á nadie un mal recuerdo mío. A mi mujer no le faltó nada en la larga enfermedad con que Dios quiso probarla á ella y probarnos á todos, y mis cinco hijos quedan colocados y no necesitan ya de nadie. Ricardo, el mayor, sigue en Barcelona, y ahora parece que sentó los cascos y que tiene un destino bastante decente en una oficina de Seguros. Ya sabe usted lo calavera que me salió este picaro de Ricardo y lo mucho que me ha dado que hacer y lo que yo he bregado para ver de darle una carrera formal; siquiera he conseguido que sepa bien de pluma y cuentas, y con esto y con su dón de gentes, creo que no le faltará nunca que comer. Por el que estoy más tranquilo es por Luis, porque éste tiene su carrera; y aunque pasa sus apuros, y más ahora que está en Madrid, donde con el sueldo de teniente no hay para empezar, pronto ascenderá y mejorará algo. Ahora le he escrito para quitarle de la cabeza la idea que tiene de pedir para Filipinas, porque yo soy perro viejo y estoy al cabo de lo que pasa en Ultramar. El Pepe me salió poco hábil para los estudios, y no pudo entrar en la Academia, pero él se ha sabido buscar la vida; se pasó á la Guardia civil, y ahora lo tiene usted en Cuba muy bien casado y muy contento. Este era el mejor de todos, y yo estoy seguro de que será el más feliz, porque, desengáñese usted, D. Gual-berto, para mí la primera cualidad dél hombre es la bondad, y aunque se diga que los pillos prosperan, me río yo de estas prosperidades; al fin el que es bueno es el más estimado de todo el mundo, y aunque no consiga glorias del otro jueves-consigue vivir á gusto y hacer felices á los que le rodean. Con las mujeres es otra la canción; no tienen más salida que casarse, y si le digo á usted la verdad, ninguna se casó completamente á mi gusto. Este Colomba no es malo, usted le conoce de sobra; pero es un hombre sin pies ni cabeza y con el que no se puede contar para nada; menos mai que tiene para vivir con desahogo, y á mi Candelaria, ya que pasa sus tragos, al menos no le falta nada y podrá educar bien á mis nietas, que en verdad lo merecen, porque lo que es la Candelita en particular, esto no es ceguedad de abuelo, va á ser un prodigio. Usted sabe los disgustos que sufre mi Candelaria y la saliva que yo he tenido que tragar para no enviar á mi yerno á paseo; pues bien, más tranquilo me moriría si tuviera á mi Justa á mi lado, casada con otro Colomba, aunque fuera con otro un poco peor. Las hermanas creen que Justa es la afortunada de la familia, y casi le tienen envidia, por pensar que está nadando en oro; pero un padre no se equivoca, y cuando á mí no n\e lia entrado nunca el fantasmón de mi yerno, por algo será. En fin¡ nada es perfecto en este mundo', y quizá yo peque de caviloso. Después de .todo, ¿qué más puedo apetecer que dejar á mis dos hijas puestas en estado? Peor sería que se quedaran solteras, con una miserable pensión y expuestas á mayores calamidades. Aunque estén mal casadas, las mujeres ganan siempre teniendo al lado un hombre que les dé sombra; así, por este lado me puedo también morir tranquilo, aunque á ratos me aflija el pensar que las mujeres nunca tienen asegurado el porvenir, y que, por mucho que un padre haga por sus hijas, tiene que confiar su suerte á manos extrañas.»</p>
 					<p>No eran vanos estos presentimientos del honrado capitán, y si hubiera vivido algunos años más, su muerte, turbada sólo por las leves dudas que asaltaron su espíritu de padre previsor, hubiera sido amargada por las desdichas que cayeron sobre los suyos y contra las que no había ningún remedio. La primera víctima fué su hija Justa, que vivía en Matanzas, casada con un cubano rico, el fantasmón que tan poco simpático era á su suegro.</p>
@@ -1011,7 +1052,7 @@
 					<p>Con estas meditaciones se fué desnudando, apagó la luz y se acostó sin hacer ruido para no despertar á Martina.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0134_chap3">
-					<head>TRABAJO TERCERO: Pío Cid quiere formar un buen poeta.</head>
+					<head xml:id="ne0134_head_004">TRABAJO TERCERO: Pío Cid quiere formar un buen poeta.</head>
 
 					<p>Al día siguiente comenzó á funcionar la casa de la calle de Villanueva bajo la prudente dirección de Pío Cid. Las mamás eran las dueñas del bolsillo mancomunada y solidariamente, que hubiera dicho el insigne Orellana; las niñas trabajaban en las faenas de la casa y en los nuevos estudios en que las fué iniciando un maestro tan consumado como Pío Cid, y éste ganaba y pensaba por todos. Se levantaba al ser de día á pesar de los regaños de su mujer, y escribía hasta la hora de almorzar; después se iba á la oficina, y á la vuelta recogía á las muchachas y las llevaba á dar un paseo, ordinariamente por el Retiro; de regreso comían, y luego dedicaban el resto de la noche al piano, al canto, á la guitarra y á otros mil entretenimientos y enseñanzas útiles y recreativos. No entraba nadie de la calle al principio; pero más tarde solían concurrir á las reuniones dos muchachos excelentes, y no ciertamente porque Pío Cid los buscara, sino porque ellos solos se presentaron, y Pío Cid á nadie le cerraba la puerta. Cuando D.<seg rend="sup">a</seg> Paulita se quedó sin su paisano, á quien tan obligada y agradecida estaba, no pudo resignarse á una despedida tan seca ni se atrevía á ir á visitarle, é ideó valerse de alguien para meter las narices en aqnel lío, ó lo que fuera. Acudió en primer término á Purilla, y le dijo qne debía ir á dar las gracias á su antiguo profesor por el regalo del pañuelo; pero la muchacha se negó resueltamente, prefiriendo que la mataran antes que conocer á la familia con quien Pío Cid había ido á hospedarse. Entonces recurrió doña Paulita á Benito, y le dió á leer la carta de Pío Cid, y le convenció de que cuando éste le mostraba mayor afecto que á los demás, nombrándole á él solo en la posdata, era porque no quería romper con él.</p>
 					<p>—Debe usted ir á visitarle—le recomendó, y procure usted ver cómo vive nuestro buen amigo, pues en Madrid hay muchas lagartas, y me temo que le hayan engañado como á un chino.</p>
@@ -1501,9 +1542,9 @@
 			</div>
 			<div type="part">
 
-				<head>TOMO II</head>
+				<head xml:id="ne0134_head_005">TOMO II</head>
 				<div n="4" type="chapter" xml:id="ne0134_chap4">
-					<head>TRABAJO CUARTO: Pío Cid emprende la reforma política de España.</head>
+					<head xml:id="ne0134_head_006">TRABAJO CUARTO: Pío Cid emprende la reforma política de España.</head>
 					<p>Yo tenía pensado ir á Granada á pasar las fiestas del Corpus al lado de mi familia; pero al saber que Pío Cid iba á Aldamar con motivo de su elección, y que se detendría algunos días en Granada, me decidí á adelantar mi viaje para ir con él, sin otra mira que la de nuestra desinteresada amistad. Fue cosa convenida en la Redacción de <seg rend="italic">El Eco</seg> en menos que se dice.</p>
 					<p>—¿Qué quieres para Granada?—me preguntó, tuteándome por primera vez, aunque á poco de conocernos comenzamos á tratarnos con gran confianza.</p>
 					<p>—Lo que quisiera—le contesté—sería irme contigo. Si fuera tres semanas después, hacíamos juntos el viaje.</p>
@@ -2078,7 +2119,7 @@
 					<p>—Nada, eso corre de cuenta y poco he de valer si no lo consigo—afirmó por último Cañaveral, con aire autoritario, retorciéndose y estirándose las soberbias guías del bigote.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0134_chap5">
-					<head>TRABAJO QUINTO: Pío Cid acude á levantar á una mujer caída.</head>
+					<head xml:id="ne0134_head_007">TRABAJO QUINTO: Pío Cid acude á levantar á una mujer caída.</head>
 					<p>«Mi adorado Pío:</p>
 					<p>»Me alegraré de que hayas hecho el viaje felizmente. Nosotras sin novedad, y yo deseando saber de ti por horas y momentos.</p>
 					<p>2) Te escribo sólo para que tengas noticias mías. Aunque te dije que te escribiría cuando recibiera carta tuya, no puedo esperar más, pues sólo hace veinticuatro horas que nos separamos, y ya me parece que hace un siglo que no te veo. Anoche no pude pegar los ojos; ya veo que si tuviera que vivir separada de ti me moriría: puedes creerlo. La casa parece que está tonta desde que te fuiste. Yo sólo te encargo, una vez más, que no estés ahí más que el tiempo preciso, pues sufro separada de ti. Tú te ríes de mis cosas; puede que algún día te convenzas de lo mucho que te quiero, por más que tú lo sabes, y aunque te disgustas cuando te muevo gresca, me perdonas porque sabes que todo es efecto de mi mucho cariño.</p>
@@ -2579,7 +2620,7 @@
 					<p>—Hombre, nunca le cojo á usted desprevenido. Quizás conozca usted también el pensamiento que me ha servido para mi poesía; yo lo traduje libremente, cambiándolo bastante, y sobre él he escrito unas estrofas, que le voy á leer para que me diga si sirven.</p>
 					<p>—Ya escucho—dijo Pío Cid, con curiosidad. Gandaria sacó un papel, y después de estirar el cuello y de mirarse los zapatos de charol, leyó:</p>
 					<lg type="poem">
-						<head>CANTO DE PRIMAVERA.</head>
+						<head xml:id="ne0134_head_008">CANTO DE PRIMAVERA.</head>
 						<l>¡Oh humano corazón! ¿Qué es tu ventura</l>
 							<l>Un momento fugaz, irreparable,</l>
 						<l>Un enigma que surge indescifrable,</l>
@@ -2669,7 +2710,7 @@
 					<l>Tienen las patas muy largaaas y también son cabezoneees.....</l>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0134_chap6">
-					<head>TRABAJO SEXTO: Pío Cid asiste á una enferma de frivolidad.</head>
+					<head xml:id="ne0134_head_009">TRABAJO SEXTO: Pío Cid asiste á una enferma de frivolidad.</head>
 					<p>—¿Conque usted es amigo tan antiguo de Mi-ralles ?—preguntó distraídamente la Duquesa después que hubo leído la carta del Gobernador.</p>
 					<p>—Sí, señora—contestó Pío Cid,—le conocí hace ya muchos años en Inglaterra.</p>
 					<p>—¿Ha vivido usted en Inglaterra?</p>
@@ -3183,7 +3224,7 @@
 					<floatingText>
 						<body>
 							<div type="section">
-								<head>SOLEDAD.</head>
+								<head xml:id="ne0134_head_010">SOLEDAD.</head>
 								<sp>
 									<speaker>La Sombra.</speaker>
 									<lg type="poem">
@@ -3277,7 +3318,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

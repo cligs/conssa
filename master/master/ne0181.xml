@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La velada en Benicarló</title>
-				<title type="sub">Diálogo de la guerra de España</title>
+				
 				<title type="short">Velada</title>
-				<title type="idno">
-					<idno type="bne">XX2335738</idno>
-					<idno type="viaf">315900442</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX823666</idno>
-					<idno type="viaf">22156967</idno>
-					<name type="short">Azana</name>
-					<name type="full">Manuel Azaña</name>
+					<name type="short" ref="#Azana"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1484</measure>
@@ -141,13 +131,49 @@
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0181</idno>
+						<idno type="cligs">ne0181</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.2, <date when="2015">2015</date>, <idno>5736</idno>, <ref target="https://www.epublibre.org/libro/detalle/5736"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1939">1939</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La velada en Benicarló</title>
+					<title type="sub">Diálogo de la guerra de España</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2335738.html">XX2335738</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/315900442/">315900442</idno>
+				</idno>
+				</title>
+					<author xml:id="Azana">
+						<name type="full"><forename>Manuel</forename> <surname>Azaña</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3300 - IP 3301">IP 3300 - IP 3301</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118505319">118505319</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q203708/">Q203708</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX823666.html">XX823666</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/22156967/">22156967</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.2, <date when="2015">2015</date>, <idno>5736</idno>, <ref target="https://www.epublibre.org/libro/detalle/5736"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1939">1939</date><idno source="k10plus" type="ppn" n="489446469" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=489446469"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">diálogo sobre la guerra de España</title> <date when="1939">1939</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="489446469" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=489446469"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">diálogo de la guerra de España</title> <date when="1974">1974</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="277806747" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=277806747"/> 		<idno type="isbn" n="8470391844"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">Diálogo de la guerra de España</title> <date when="1974">1974</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="038983192" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=038983192"/> 		<idno type="isbn" n="8470391844"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">diálogo de la guerra de España</title> <date when="1980">1980</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1604141565" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1604141565"/> 		<idno type="isbn" n="8470391844"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title> <date when="1981">1981</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039915581" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039915581"/> 		<idno type="isbn" n="842392081X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Vigil en Benicarló</title> <date when="1982">1982</date>, <publisher>Farleigh Dickinson Univ. Pr. [u.a.]</publisher> <pubPlace>Rutherford [u.a.]</pubPlace> 		<idno type="ppn" n="040193586" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=040193586"/> 		<idno type="isbn" n="0838630936"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">diálogo de la guerra de España</title> <date when="2005">2005</date>, <publisher>Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="514031751" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=514031751"/> 		<idno type="isbn" n="8497401581"/></bibl>
+						<bibl type="further-edition"><title type="main">La veillée à Benicarló</title> <date when="2009">2009</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="612812286" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=612812286"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">diario de la guerra de España</title> <date when="2011">2011</date>, <publisher>Reino de Cordelia</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="687084040" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=687084040"/> 		<idno type="isbn" n="8493891363;9788493891367"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">diálogo de la guerra de España</title> <date when="2017">2017</date>, <publisher>Edhasa</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="895271672" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=895271672"/> 		<idno type="isbn" n="9788435011280"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La velada en Benicarló</title>: 	<title type="sub">diálogo de la guerra de España</title> <date when="2017">2017</date>, <publisher>Edhasa</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="885521056" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=885521056"/> 		<idno type="isbn" n="9788435011280"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +185,14 @@
 				<p>Aunque el autor expresa su pensamiento a través de todos ellos, se idenftifica fundamentalmente con el exministro Garcés y con escritor Eliseo Morales.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3300" key="IP 3300" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">6</term>
 					<term type="author.continent">Europe</term>
@@ -171,7 +205,7 @@
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">4-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">high</term>
 					<term type="text.characters.protagonist.age" cert="medium">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -189,7 +223,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">dialogue</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">diálogo</term>
 					<term type="text.genre.subtitle.source" resp="bne">diálogo</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">diálogo</term>
@@ -224,20 +258,21 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-01-15" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>PRELIMINAR</head>
+				<head xml:id="ne0181_head_000">PRELIMINAR</head>
 				<p><seg rend="italic">Escribí este diálogo en Barcelona, dos semanas antes de la insurrección de mayo de 1937. Los cuatro días de asedio deparados por el suceso, me entretuve en dictar el texto definitivo, sacándolo de borrador. Lo publico (no ha podido ser antes) sin añadirle una sílaba. Si el curso ulterior de la historia corrobora o desmiente los puntos de vista declarados en el diálogo, importa poco. No es el fruto de un arrebato fatídico. No era un vaticinio. Es una demostración. Exhibe agrupadas, en formación polémica, algunas opiniones muy pregonadas durante la guerra española, y otras, difícilmente audibles en el estruendo de la batalla, pero existentes, y con profunda raíz. Sería trabajo inútil querer desenmascarar a los interlocutores, pensando encontrar, debajo de su máscara, rostros populares. Los personajes son inventados. Las opiniones, y, como se dice, el «estado de espíritu» revelado por ellas, rigurosamente auténticos, todavía comparables, si valiese la pena. Todas concurren a mostrar una fase del drama español, mucho más duradero y profundo que la atroz peripecia de la guerra. En tiempos venideros, variados los nombres de las cosas, esquilmados muchos conceptos, los españoles comprenderán mal por qué sus antepasados se han batido entre sí más de dos años; pero el drama subsistirá, si el carácter español conserva entonces su trágica capacidad de violencia apasionada. Percibirlo así, una vez más, en la plenitud de la furia fraticida, ha llevado el ánimo de algunas personas a tocar desesperadamente en el fondo de la nada. Por otra parte, es muy dudoso que, después de este viaje, corto en el tiempo, demasiado largo por sus borrascas, la razón y el seso de muchos hayan madurado. Más valor tiene, pues, el que algunos hayan mantenido, en las jornadas frenéticas, su independencia de espíritu. Desde el punto de vista humano, es un consuelo. Desde el punto de vista español, una esperanza.</seg></p>
 				<ab>Mayo, 1939</ab>
 			</div>
 			<div>
-				<head>DIÁLOGO</head>
+				<head xml:id="ne0181_head_001">DIÁLOGO</head>
 			</div>
 			<div>
-				<head>Hablan en el diálogo:</head>
+				<head xml:id="ne0181_head_002">Hablan en el diálogo:</head>
 				<milestone unit="section"/>
 				<ab>M<seg rend="small">iguel rivera</seg>, <seg rend="italics">diputado a cortes</seg>.</ab>
 				<ab>E<seg rend="small">l doctor lluch</seg>, <seg rend="italics">de la Facultad de Medicina de Barcelona</seg>.</ab>
@@ -256,7 +291,7 @@
 		<body>
 			<div type="part">
 				<div n="1" type="chapter" xml:id="ne0181_chap1">
-					<head>La velada</head>
+					<head xml:id="ne0181_head_003">La velada</head>
 					<p>(El auto del doctor Lluch devora la distancia entre Barcelona y Benicarló. En el morro del coche se despliega un banderín gualda, y en la mirilla trasera, «Metge», dice un letrero blanco anegado en polvo. La profesión, los servicios de Lluch le habían valido conservar el disfrute del coche, último resto de sus comodidades de burgués: guiándolo, introduce en su estado presente una punta sarcástica, recuerdo de su antigua condición de dueño. Junto a Lluch viaja Miguel Rivera, diputado, joven aún y, hasta seis meses antes, millonario. Dentro, el comandante Blanchart, un oficial de aviación, Laredo, convaleciente de heridas atroces y la Paquita Vargas, artista de zarzuela. Necesitados de viajar por motivos diferentes, Rivera había obtenido de su amigo Lluch que admitiera en su coche a los dos militares y a la Paquita, hasta Valencia. Declinante un día de marzo, cortan la campiña del Panados, la tierra fragosa, poblada de olivos y algarrobos, que vomita turbiones en el mar, las vegas de Tortosa, y desembocan en la Plana, llameantes los ocres de la costa sobre el agua azul, anegada en tintas de violeta la hosquedad confusa del Maestrazgo. Ningún tropiezo. A medio camino, un entierro. Cipreses verdinegros, sobredorados por el ocaso, cobijan el cementerio contiguo a la carretera. Lluch detiene el coche. Sobre el féretro, una bandera roja y negra; detrás, el pueblo entero, alineado, y una música en silencio. Al paso del féretro, Lluch levanta el puño. Inquietud de Rivera. Otros del cortejo, contestan. Se oye el arrastrar de pies por la carretera. Algunos ojos escrutan el interior del coche, atraídos por los uniformes. Más lejos, una patrulla.</p>
 					<p>—¡Alto! ¡Los papeles!</p>
 					<p>Lluch exhibe un pliego lacerado por las firmas, rúbricas, sellos, contraseñas y marcas bastantes a acreditar su lealtad. El cabo de la patrulla parece horadar el papel con la mirada. Lluch se impacienta.</p>

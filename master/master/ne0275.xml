@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La loca de la casa</title>
-				<title type="sub">comedia en cuatro actos</title>
+				
 				<title type="short">LocaCasa</title>
-				<title type="idno">
-					<idno type="bne">bimo0001295511</idno></title>
+				
 				<author>
-					<idno type="bne">XX1014802</idno>
-					<idno type="viaf">71395987 </idno>
-					<name type="short">Galdos</name>
-					<name type="full">Benito Pérez Galdós</name>
+					<name type="short" ref="#Galdos"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">8516</measure>
@@ -139,13 +131,53 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0275</idno>
+						<idno type="cligs">ne0275</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Cervantes Virtual, <date when="2000">2000</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc9c6v6"/>, <ref target="http://www.cervantesvirtual.com/obra/la-loca-de-la-casa-comedia-en-cuatro-actos--0/"/>.</bibl>
-				<bibl type="print-source">Guirnalda, Madrid, <date when="1893">1893</date></bibl>
-				<bibl type="edition-first"><date when="1892">1892</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La loca de la casa</title>
+					<title type="sub">comedia en cuatro actos</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0001295511.html">bimo0001295511</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5967198/">Q5967198</idno>
+				</idno>
+				</title>
+					<author xml:id="Galdos">
+						<name type="full"><forename>Benito</forename> <surname>Pérez Galdós</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9760 - IO 9765">IO 9760 - IO 9765</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118641573">118641573</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q189869/">Q189869</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1014802.html">XX1014802</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/71395987/">71395987</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Cervantes Virtual, <date when="2000">2000</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc9c6v6"/>, <ref target="http://www.cervantesvirtual.com/obra/la-loca-de-la-casa-comedia-en-cuatro-actos--0/"/>.</bibl>
+					<bibl type="print-source">Guirnalda, <pubPlace>Madrid</pubPlace>, <date when="1893">1893</date></bibl>
+					<bibl type="edition-first"><date when="1892">1892</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Loca de la Casa</title>: 	<title type="sub">comedia en 4 actos</title> <date when="1893">1893</date>, <publisher>Impr. de La Guirnalda</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1504265289" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1504265289"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa</title>: 	<title type="sub">comedia en 4 actos</title> <date when="1893">1893</date>, <publisher>Impr. de La Guirnalda</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464850401" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464850401"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa</title>: 	<title type="sub">comedia en cuatro actos</title> <date when="1893">1893</date>, <publisher>Guirnalda</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="083676201" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083676201"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa ...</title> <date when="1896">1896</date>, <publisher>La Guirnalda</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584554850" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584554850"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Loca de la casa</title> <date when="1915">1915</date>, <publisher>Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1377081354" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1377081354"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa</title>: 	<title type="sub">novela dialogada en 4 jornadas</title> <date when="1915">1915</date>, <publisher>Hernando [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584590261" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584590261"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa</title>: 	<title type="sub">comedia en cuatro actos</title> <date when="1918">1918</date>, <publisher>La novela teatral</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1067414835" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1067414835"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa</title>: 	<title type="sub">comedia en 4 actos</title> <date when="1920">1920</date>, <publisher>Hernando [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584576382" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584576382"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa</title>: 	<title type="sub">comedia en cuatro actos</title> <date when="1920">1920</date>, <publisher>Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="44348953X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44348953X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La loca de la casa</title>: 	<title type="sub">novela dialogada en cuatro jornadas</title> <date when="1943">1943</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1143139488" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1143139488"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa</title>: 	<title type="sub">comedia en 4 actos</title> <date when="1960">1960</date>, <publisher>Ed. Alfil</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465287441" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465287441"/> </bibl>
+						<bibl type="further-edition"><title type="main">La loca de la casa</title> <date when="1983">1983</date>, <publisher>Dial Discos</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464679796" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464679796"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The theatre of Galdos</title>: 	<title type="sub">La loca de la casa (1893)</title> <date when="1995">1995</date>, <publisher>Edwin Mellen Press</publisher> <pubPlace>Lewiston, N.Y.</pubPlace> 		<idno type="ppn" n="1617752630" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1617752630"/> 		<idno type="isbn" n="0773488626;0889463867"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The theatre of Galdós</title>: 	<title type="sub">"La Loca de la casa" (1893)</title> <date when="1995">1995</date>, <publisher>Edwin Mellen Pr.</publisher> <pubPlace>Lewiston, N.Y.;Queenston, Ontario;Lampeter, Dyfed, Wales</pubPlace> 		<idno type="ppn" n="469813334" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469813334"/> 		<idno type="isbn" n="0773488626"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La loca de la casa (1893)</title> <date when="1995">1995</date>, <publisher>Edwin Mellen Press</publisher> <pubPlace>Lewiston, NY [u.a.]</pubPlace> 		<idno type="ppn" n="194066649" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=194066649"/> 		<idno type="isbn" n="0773488626;0889463867"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +189,14 @@
 				<p>Victoria, que va a tomar los hábitos en breve, decide casarse con el bruto para salvar a su padre; juzga que este sacrificio es el mejor que puede hacer. Una vez unidos en matrimonio, se inicia entre ellos una lucha sin cuartel. Cruz es implacable y no tiene compasión de nadie. Se niega a prorrogar el pago de un recibo a la marqueda y quiere adueñarse de sus propiedades. Victoria, a espaldas de su marido, le da un cheque a Daniel para su madre. Al enterarse Cruz, arde de ira y celos. Tras una violentísima escena entre los dos hombres, se produce la separación del matrimonio. Pero los esposos se dan cuenta entonces de que no pueden vivir el uno sin el otro. El hijo que va a nacer acaba de reconciliarlos. Sin embargo, Cruz se ve obligado a aceptar muchas condiciones, entre ella la de dedicar parte de su sinero a obras pías.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9761" key="IO 9761" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">8</term>
 					<term type="author.continent">Europe</term>
@@ -183,7 +223,7 @@
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon"> Humor, Humor</term>
 					<term type="text.genre.subgenre.edit" resp="epublibre">Memorias</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
@@ -222,6 +262,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-27" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -234,7 +275,7 @@
 			</div>
 			<div>
 				<castList>
-					<head>PERSONAJES</head> 
+					<head xml:id="ne0275_head_000">PERSONAJES</head> 
 					<castItem>VICTORIA, <seg rend="italic">hija de MONCADA.</seg></castItem>
 					<castItem>GABRIELA, <seg rend="italic">hija de MONCADA.</seg> </castItem>
 					<castItem>DOÑA EULALIA, <seg rend="italic">hermana del mismo.</seg> </castItem>
@@ -246,7 +287,7 @@
 					<castItem>DANIEL, <seg rend="italic">marqués de Malavella.</seg> </castItem>
 					<castItem>JAIME.</castItem>
 					<castItem>HUGUET, <seg rend="italic">amigo y agente de MONCADA.</seg> </castItem>
-					<castItem></castItem>
+					<castItem/>
 					<castItem>JORDANA, <seg rend="italic">alcalde de Santa Madrona.</seg> </castItem>
 					<castItem>LLUCH, <seg rend="italic">portero de la fábrica.</seg></castItem>
 					<castItem><seg rend="italic">Hermanas de la caridad.</seg></castItem>
@@ -260,11 +301,11 @@
 		</front>
 		<body>
 			<div type="act">
-				<head>Acto I</head>
+				<head xml:id="ne0275_head_001">Acto I</head>
 				<p><stage>Salón de planta baja en la torre o casa de campo de Moncada, en Santa Madrona.-Al fondo, galería de cristales que comunica con una terraza, en la cual hay magníficos arbustos y plantas de estufa, en cajones.-En el foro, paisaje de parque, frondosísimo, destacándose a lo lejos las chimeneas de una fábrica.-A la derecha, puertas que conducen al gabinete y despacho del señor de Moncada.-A la izquierda, la puerta del comedor, el cual se supone comunica también con la terraza.-A la derecha de esta, se ve el arranque de la escalera, que conduce a las habitaciones superiores de la casa y al oratorio.-A la derecha, mesa grande con libros, planos y recado de escribir.-A la izquierda, otra más pequeña con una cestita de labores de señora.-Muebles elegantes.-Piso entarimado.-Es de día.</stage></p>
 
 				<div n="1" type="chapter" xml:id="ne0275_chap1">
-					<head>Escena I</head>
+					<head xml:id="ne0275_head_002">Escena I</head>
 
 					<p><stage>La <seg rend="normal">MARQUESA DE MALAVELLA</seg> con sus dos hijos, <seg rend="normal">DANIEL</seg> y <seg rend="normal">JAIME</seg>, que entran por el parque. Después <seg rend="normal">GABRIELA</seg>.</stage></p>
 
@@ -472,7 +513,7 @@
 					</sp>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0275_chap2">
-					<head>Escena II</head>
+					<head xml:id="ne0275_head_003">Escena II</head>
 
 					<p><stage><seg rend="normal">GABRIELA</seg>, <seg rend="normal">JAIME</seg>.</stage></p>
 
@@ -675,7 +716,7 @@
 					</sp>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0275_chap3">
-					<head>Escena III</head>
+					<head xml:id="ne0275_head_004">Escena III</head>
 
 					<p><stage>Dichos. <seg rend="normal">MONCADA</seg>, que sale por la derecha, muy caviloso y triste; después <seg rend="normal">HUGUET</seg>.</stage></p>
 
@@ -743,7 +784,7 @@
 					</sp>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0275_chap4">
-					<head>Escena IV</head>
+					<head xml:id="ne0275_head_005">Escena IV</head>
 
 					<p><stage><seg rend="normal">MONCADA</seg>, <seg rend="normal">HUGUET</seg>.</stage></p>
 
@@ -913,7 +954,7 @@
 					</sp>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0275_chap5">
-					<head>Escena V</head>
+					<head xml:id="ne0275_head_006">Escena V</head>
 
 					<p><stage>Dichos. <seg rend="normal">DOÑA EULALIA</seg>, vestida de negro, con sombrilla y un libro de rezos. Es señora de cabellos blancos, de rostro pálido y sin movilidad.</stage></p>
 
@@ -1056,7 +1097,7 @@
 				</div>
 
 				<div n="6" type="chapter" xml:id="ne0275_chap6">
-					<head>Escena VI</head>
+					<head xml:id="ne0275_head_007">Escena VI</head>
 
 					<p><stage>Dichos. La <seg rend="normal">MARQUESA</seg>, <seg rend="normal">DANIEL</seg>, <seg rend="normal">JAIME</seg>, por el fondo; después <seg rend="normal">GABRIELA</seg>.</stage></p>
 
@@ -1139,7 +1180,7 @@
 					</sp>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0275_chap7">
-					<head>Escena VII</head>
+					<head xml:id="ne0275_head_008">Escena VII</head>
 
 					<p><stage>Dichos. <seg rend="normal">JOSÉ MARÍA CRUZ</seg> y <seg rend="normal">JORDANA</seg>, que entran por el foro. El primero es hombre rudo y de ademanes torpes, rostro ceñudo. Viste con decencia y sencillez, sin pretensiones de elegancia.</stage></p>
 
@@ -1712,7 +1753,7 @@
 
 				</div>
 				<div n="8" type="chapter" xml:id="ne0275_chap8">
-					<head>Escena VIII</head>
+					<head xml:id="ne0275_head_009">Escena VIII</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">HUGUET</seg>, después <seg rend="normal">DOÑA EULALIA</seg>.</stage></p>
 
@@ -1747,7 +1788,7 @@
 					</sp>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0275_chap9">
-					<head>Escena IX</head>
+					<head xml:id="ne0275_head_010">Escena IX</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">DOÑA EULALIA</seg>.</stage></p>
 
@@ -1838,7 +1879,7 @@
 					</sp>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0275_chap10">
-					<head>Escena X</head>
+					<head xml:id="ne0275_head_011">Escena X</head>
 
 					<p><stage>Dichos. <seg rend="normal">HUGUET</seg>.</stage></p>
 
@@ -1888,7 +1929,7 @@
 
 				</div>
 				<div n="11" type="chapter" xml:id="ne0275_chap11">
-					<head>Escena XI</head>
+					<head xml:id="ne0275_head_012">Escena XI</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">DOÑA EULALIA</seg> y <seg rend="normal">GABRIELA</seg>.</stage></p>
 
@@ -2017,7 +2058,7 @@
 					</sp>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0275_chap12">
-					<head>Escena XII</head>
+					<head xml:id="ne0275_head_013">Escena XII</head>
 
 					<p><stage><seg rend="normal">GABRIELA</seg>, <seg rend="normal">DOÑA EULALIA</seg>, <seg rend="normal">JORDANA</seg>.</stage></p>
 
@@ -2060,7 +2101,7 @@
 					</sp>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0275_chap13">
-					<head>Escena XIII</head>
+					<head xml:id="ne0275_head_014">Escena XIII</head>
 
 					<p><stage><seg rend="normal">GABRIELA</seg>, <seg rend="normal">DOÑA EULALIA</seg>, <seg rend="normal">MONCADA</seg>, <seg rend="normal">HUGUET</seg> por la derecha.</stage></p>
 
@@ -2149,7 +2190,7 @@
 					</sp>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0275_chap14">
-					<head>Escena XIV</head>
+					<head xml:id="ne0275_head_015">Escena XIV</head>
 
 					<p><stage><seg rend="normal">MONCADA</seg>, <seg rend="normal">HUGUET</seg>.</stage></p>
 
@@ -2188,7 +2229,7 @@
 					</sp>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0275_chap15">
-					<head>Escena XV</head>
+					<head xml:id="ne0275_head_016">Escena XV</head>
 
 					<p><stage><seg rend="normal">MONCADA</seg>, <seg rend="normal">VICTORIA</seg>, <seg rend="normal">SOR MARÍA DEL SAGRARIO</seg>.</stage></p>
 
@@ -2226,12 +2267,12 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Acto II</head>
+				<head xml:id="ne0275_head_017">Acto II</head>
 
 				<p><stage>La misma decoración del acto primero.</stage></p>
 
 				<div n="16" type="chapter" xml:id="ne0275_chap16">
-					<head>Escena I</head>
+					<head xml:id="ne0275_head_018">Escena I</head>
 
 					<p><stage><seg rend="normal">MONCADA</seg>, junto a la mesa de la derecha, revisa cartas y papeles, demostrando inquietud y tristeza. Junto a la mesilla de la izquierda, <seg rend="normal">DOÑA EULALIA</seg>, entretenida en una labor de gancho; a su lado la <seg rend="normal">MARQUESA</seg> como de visita. Después <seg rend="normal">VICTORIA</seg>, que entra y sale varias veces durante la escena.</stage></p>
 
@@ -2591,7 +2632,7 @@
 					</sp>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0275_chap17">
-					<head>Escena II</head>
+					<head xml:id="ne0275_head_019">Escena II</head>
 
 					<p><stage><seg rend="normal">MONCADA</seg>, <seg rend="normal">VICTORIA</seg>.</stage></p>
 
@@ -2744,7 +2785,7 @@
 				</div>
 
 				<div n="18" type="chapter" xml:id="ne0275_chap18">
-					<head>Escena III</head>
+					<head xml:id="ne0275_head_020">Escena III</head>
 
 					<p><stage>Dichos. <seg rend="normal">HUGUET</seg>.</stage></p>
 
@@ -2863,7 +2904,7 @@
 					</sp>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0275_chap19">
-					<head>Escena IV</head>
+					<head xml:id="ne0275_head_021">Escena IV</head>
 
 					<p><stage>Dichos. <seg rend="normal">GABRIELA</seg>, que sale precipitadamente por la izquierda, con delantal.</stage></p>
 
@@ -3010,7 +3051,7 @@
 				</div>
 
 				<div n="20" type="chapter" xml:id="ne0275_chap20">
-					<head>Escena V</head>
+					<head xml:id="ne0275_head_022">Escena V</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">GABRIELA</seg>, <seg rend="normal">CARMETA</seg>, que entra y sale por la izquierda.</stage></p>
 
@@ -3107,7 +3148,7 @@
 				</div>
 
 				<div n="21" type="chapter" xml:id="ne0275_chap21">
-					<head>Escena VI</head>
+					<head xml:id="ne0275_head_023">Escena VI</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>; después <seg rend="normal">CRUZ</seg>; al fin de la escena <seg rend="normal">HUGUET</seg>.</stage></p>
 
@@ -3293,7 +3334,7 @@
 					</sp>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0275_chap22">
-					<head>Escena VII</head>
+					<head xml:id="ne0275_head_024">Escena VII</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, sola, meditabunda.</stage></p>
 
@@ -3303,7 +3344,7 @@
 					</sp>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0275_chap23">
-					<head>Escena VIII</head>
+					<head xml:id="ne0275_head_025">Escena VIII</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">MONCADA</seg>, que entra por la derecha muy agitado.</stage></p>
 
@@ -3361,7 +3402,7 @@
 
 				</div>
 				<div n="24" type="chapter" xml:id="ne0275_chap24">
-					<head>Escena IX</head>
+					<head xml:id="ne0275_head_026">Escena IX</head>
 
 					<p><stage>Dichos. <seg rend="normal">DANIEL</seg>.</stage></p>
 
@@ -3400,7 +3441,7 @@
 					</sp>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0275_chap25">
-					<head>Escena X</head>
+					<head xml:id="ne0275_head_027">Escena X</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>; después <seg rend="normal">SOR MARÍA DEL SAGRARIO</seg>.</stage></p>
 
@@ -3556,7 +3597,7 @@
 					</sp>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0275_chap26">
-					<head>Escena XI</head>
+					<head xml:id="ne0275_head_028">Escena XI</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>; después <seg rend="normal">HUGUET</seg> y <seg rend="normal">CRUZ</seg>.</stage></p>
 
@@ -3648,7 +3689,7 @@
 					</sp>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0275_chap27">
-					<head>Escena XII</head>
+					<head xml:id="ne0275_head_029">Escena XII</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">CRUZ</seg>.</stage></p>
 
@@ -3877,7 +3918,7 @@
 					</sp>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0275_chap28">
-					<head>Escena XIII</head>
+					<head xml:id="ne0275_head_030">Escena XIII</head>
 
 					<p><stage><seg rend="normal">HUGUET</seg>, que entra cuando <seg rend="normal">VICTORIA</seg> sale; después, <seg rend="normal">DOÑA EULALIA</seg> y la <seg rend="normal">MARQUESA</seg>.</stage></p>
 
@@ -3940,7 +3981,7 @@
 					</sp>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0275_chap29">
-					<head>Escena XIV</head>
+					<head xml:id="ne0275_head_031">Escena XIV</head>
 
 					<p><stage>Dichos. <seg rend="normal">JAIME</seg>.</stage></p>
 
@@ -4022,7 +4063,7 @@
 					</sp>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0275_chap30">
-					<head>Escena XV</head>
+					<head xml:id="ne0275_head_032">Escena XV</head>
 
 					<p><stage>Dichos. <seg rend="normal">MONCADA</seg>, <seg rend="normal">DANIEL</seg>, dándole el brazo.</stage></p>
 
@@ -4057,7 +4098,7 @@
 					</sp>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0275_chap31">
-					<head>Escena XVI</head>
+					<head xml:id="ne0275_head_033">Escena XVI</head>
 
 					<p><stage>La <seg rend="normal">MARQUESA</seg>, <seg rend="normal">JAIME</seg>, <seg rend="normal">DANIEL</seg>.</stage></p>
 
@@ -4133,7 +4174,7 @@
 					</sp>
 				</div>
 				<div n="32" type="chapter" xml:id="ne0275_chap32">
-					<head>Escena XVII</head>
+					<head xml:id="ne0275_head_034">Escena XVII</head>
 
 					<p><stage><seg rend="normal">DANIEL</seg>, poco después <seg rend="normal">VICTORIA</seg>.</stage></p>
 
@@ -4312,7 +4353,7 @@
 
 				</div>
 				<div n="33" type="chapter" xml:id="ne0275_chap33">
-					<head>Escena XVIII</head>
+					<head xml:id="ne0275_head_035">Escena XVIII</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">CRUZ</seg>.</stage></p>
 
@@ -4493,7 +4534,7 @@
 					</sp>
 				</div>
 				<div n="34" type="chapter" xml:id="ne0275_chap34">
-					<head>Escena XIX</head>
+					<head xml:id="ne0275_head_036">Escena XIX</head>
 
 					<p><stage>Dichos. <seg rend="normal">MONCADA</seg>, <seg rend="normal">EULALIA</seg>, <seg rend="normal">HUGUET</seg>, por la derecha; <seg rend="normal">GABRIELA</seg>, la <seg rend="normal">MARQUESA</seg>, <seg rend="normal">JAIME</seg>, por la izquierda.</stage></p>
 
@@ -4512,12 +4553,12 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Acto III</head>
+				<head xml:id="ne0275_head_037">Acto III</head>
 
 				<p><stage>Sala en la fábrica de Santa Madrona.-En el fondo un hueco, de donde parte un pasadizo largo y estrecho que conduce a los talleres.-A la izquierda, dos puertas por donde se pasa a las habitaciones particulares del director del establecimiento.-A la derecha, paramento o mirador de cristales, en cuyo último tramo (hacia el ángulo del fondo) desemboca la escalera de madera por donde se sube desde el campo.-Por dicha escalera entran todos los que no habitan en la casa.-En las paredes del fondo, muestras de cerámica ordinaria en estantes, y un armario con cuerdas y herramientas.- Mesa y sillas ordinarias.-Es de día.</stage></p>
 
 				<div n="35" type="chapter" xml:id="ne0275_chap35">
-					<head>Escena I</head>
+					<head xml:id="ne0275_head_038">Escena I</head>
 
 					<p><stage><seg rend="normal">HUGUET</seg>, <seg rend="normal">JORDANA</seg>, que entran por la escalera; <seg rend="normal">LLUCH</seg>, portero anciano.</stage></p>
 
@@ -4715,7 +4756,7 @@
 					</sp>
 				</div>
 				<div n="36" type="chapter" xml:id="ne0275_chap36">
-					<head>Escena II</head>
+					<head xml:id="ne0275_head_039">Escena II</head>
 
 					<p><stage>Dichos. <seg rend="normal">CRUZ</seg>, que viene de los talleres por el pasadizo del fondo.</stage></p>
 
@@ -4867,7 +4908,7 @@
 					</sp>
 				</div>
 				<div n="37" type="chapter" xml:id="ne0275_chap37">
-					<head>Escena III</head>
+					<head xml:id="ne0275_head_040">Escena III</head>
 
 					<p><stage><seg rend="normal">HUGUET</seg>, <seg rend="normal">JORDANA</seg>, la <seg rend="normal">MARQUESA</seg>, medrosa, que entra por la escalera.</stage></p>
 
@@ -4992,7 +5033,7 @@
 				</div>
 
 				<div n="38" type="chapter" xml:id="ne0275_chap38">
-					<head>Escena IV</head>
+					<head xml:id="ne0275_head_041">Escena IV</head>
 
 					<p><stage>Dichos. <seg rend="normal">MONCADA</seg>, visiblemente envejecido, apoyándose en un bastón. Entra por la escalera.</stage></p>
 
@@ -5077,7 +5118,7 @@
 				</div>
 
 				<div n="39" type="chapter" xml:id="ne0275_chap39">
-					<head>Escena V</head>
+					<head xml:id="ne0275_head_042">Escena V</head>
 
 					<p><stage>Dichos. <seg rend="normal">DOÑA EULALIA</seg>.</stage></p>
 
@@ -5119,7 +5160,7 @@
 					</sp>
 				</div>
 				<div n="40" type="chapter" xml:id="ne0275_chap40">
-					<head>Escena VI</head>
+					<head xml:id="ne0275_head_043">Escena VI</head>
 
 					<p><stage><seg rend="normal">MONCADA</seg>, <seg rend="normal">DOÑA EULALIA</seg>.</stage></p>
 
@@ -5274,7 +5315,7 @@
 					</sp>
 				</div>
 				<div n="41" type="chapter" xml:id="ne0275_chap41">
-					<head>Escena VII</head>
+					<head xml:id="ne0275_head_044">Escena VII</head>
 
 					<p><stage>Dichos. <seg rend="normal">GABRIELA</seg>, <seg rend="normal">JAIME</seg>, la <seg rend="normal">MARQUESA</seg>, que entran por el ángulo del foro. Poco después <seg rend="normal">VICTORIA</seg>, por la izquierda.</stage></p>
 
@@ -5385,7 +5426,7 @@
 
 				</div>
 				<div n="42" type="chapter" xml:id="ne0275_chap42">
-					<head>Escena VIII</head>
+					<head xml:id="ne0275_head_045">Escena VIII</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">GABRIELA</seg>.</stage></p>
 
@@ -5494,7 +5535,7 @@
 					</sp>
 				</div>
 				<div n="43" type="chapter" xml:id="ne0275_chap43">
-					<head>Escena IX</head>
+					<head xml:id="ne0275_head_046">Escena IX</head>
 
 					<p><stage>Dichos. <seg rend="normal">CRUZ</seg>, que entra por la izquierda en mangas de camisa, con una blusa azul en la mano, mostrando un rasgón en la manga.</stage></p>
 
@@ -5561,7 +5602,7 @@
 					</sp>
 				</div>
 				<div n="44" type="chapter" xml:id="ne0275_chap44">
-					<head>Escena X</head>
+					<head xml:id="ne0275_head_047">Escena X</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">GABRIELA</seg>.</stage></p>
 
@@ -5649,7 +5690,7 @@
 					</sp>
 				</div>
 				<div n="45" type="chapter" xml:id="ne0275_chap45">
-					<head>Escena XI</head>
+					<head xml:id="ne0275_head_048">Escena XI</head>
 
 					<p><stage>Dichos. <seg rend="normal">CRUZ</seg>, que entra vestido de blusa y con botas de agua.</stage></p>
 
@@ -5684,7 +5725,7 @@
 					</sp>
 				</div>
 				<div n="46" type="chapter" xml:id="ne0275_chap46">
-					<head>Escena XII</head>
+					<head xml:id="ne0275_head_049">Escena XII</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">GABRIELA</seg>.</stage></p>
 
@@ -5793,7 +5834,7 @@
 					</sp>
 				</div>
 				<div n="47" type="chapter" xml:id="ne0275_chap47">
-					<head>Escena XIII</head>
+					<head xml:id="ne0275_head_050">Escena XIII</head>
 
 					<p><stage><seg rend="normal">GABRIELA</seg>, <seg rend="normal">DANIEL</seg>.</stage></p>
 
@@ -5840,7 +5881,7 @@
 					</sp>
 				</div>
 				<div n="48" type="chapter" xml:id="ne0275_chap48">
-					<head>Escena XIV</head>
+					<head xml:id="ne0275_head_051">Escena XIV</head>
 
 					<p><stage><seg rend="normal">DANIEL</seg>, solo.</stage></p>
 
@@ -5850,7 +5891,7 @@
 					</sp>
 				</div>
 				<div n="49" type="chapter" xml:id="ne0275_chap49">
-					<head>Escena XV</head>
+					<head xml:id="ne0275_head_052">Escena XV</head>
 
 					<p><stage><seg rend="normal">DANIEL</seg>, la <seg rend="normal">MARQUESA</seg>, que entra afanadísima, por la escalera; después <seg rend="normal">LLUCH</seg>.</stage></p>
 
@@ -5917,7 +5958,7 @@
 
 				</div>
 				<div n="50" type="chapter" xml:id="ne0275_chap50">
-					<head>Escena XVI</head>
+					<head xml:id="ne0275_head_053">Escena XVI</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, con el hacha en la mano, el rostro tiznado y encendido; <seg rend="normal">LLUCH</seg>, que se va por la escalera y vuelve poco después.</stage></p>
 
@@ -5948,7 +5989,7 @@
 					</sp>
 				</div>
 				<div n="51" type="chapter" xml:id="ne0275_chap51">
-					<head>Escena XVII</head>
+					<head xml:id="ne0275_head_054">Escena XVII</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">VICTORIA</seg>.</stage></p>
 
@@ -6252,7 +6293,7 @@
 					</sp>
 				</div>
 				<div n="52" type="chapter" xml:id="ne0275_chap52">
-					<head>Escena XVIII</head>
+					<head xml:id="ne0275_head_055">Escena XVIII</head>
 
 					<p><stage>Dichos. <seg rend="normal">LLUCH</seg>, en la escalera; después <seg rend="normal">DANIEL</seg>.</stage></p>
 
@@ -6535,7 +6576,7 @@
 
 				</div>
 				<div n="53" type="chapter" xml:id="ne0275_chap53">
-					<head>Escena XIX</head>
+					<head xml:id="ne0275_head_056">Escena XIX</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">CRUZ</seg>, <seg rend="normal">GABRIELA</seg>, que entra por la izquierda, alarmada; por la derecha, <seg rend="normal">DOÑA EULALIA</seg>, <seg rend="normal">MONCADA</seg>.</stage></p>
 
@@ -6579,12 +6620,12 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Acto IV</head>
+				<head xml:id="ne0275_head_057">Acto IV</head>
 
 				<p><stage>Sala baja en el Hospital y Casa de Maternidad de Santa Madrona, de construcción ojival.-A la derecha, la entrada de la iglesia, con escalinata de cuatro o cinco peldaños.-En el lienzo del fondo, a la izquierda, rompimiento de arco ojival que da paso al claustro, del cual se ve una parte.-A la derecha, frente al espectador, puerta pequeña de una estancia, en la cual se verá, cuando se indique, mesa puesta como para un refresco.-A la izquierda, dos puertas: una de ellas conduce a las cocinas y dependencias del establecimiento, las cuales se supone están en el sótano.-Mesa y sillas.-Es de día.-Antes de alzarse el telón, óyese música de órgano, que continúa durante la escena primera.</stage></p>
 
 				<div n="54" type="chapter" xml:id="ne0275_chap54">
-					<head>Escena I</head>
+					<head xml:id="ne0275_head_058">Escena I</head>
 
 					<p><stage><seg rend="normal">JORDANA</seg>, de frac; dos Hermanas de la caridad; después la <seg rend="normal">MARQUESA</seg>.</stage></p>
 
@@ -6624,7 +6665,7 @@
 				</div>
 
 				<div n="55" type="chapter" xml:id="ne0275_chap55">
-					<head>Escena II</head>
+					<head xml:id="ne0275_head_059">Escena II</head>
 
 					<p><stage>La <seg rend="normal">MARQUESA</seg>, <seg rend="normal">DANIEL</seg>, que sale de la iglesia poniéndose el sombrero. Calla el órgano.</stage></p>
 
@@ -6768,7 +6809,7 @@
 					</sp>
 				</div>
 				<div n="56" type="chapter" xml:id="ne0275_chap56">
-					<head>Escena III</head>
+					<head xml:id="ne0275_head_060">Escena III</head>
 
 					<p><stage>Dichos. <seg rend="normal">JORDANA</seg>.</stage></p>
 
@@ -6845,7 +6886,7 @@
 					</sp>
 				</div>
 				<div n="57" type="chapter" xml:id="ne0275_chap57">
-					<head>Escena IV</head>
+					<head xml:id="ne0275_head_061">Escena IV</head>
 
 					<p><stage>Dichos. <seg rend="normal">MONCADA</seg>, que entra por el claustro; después <seg rend="normal">DOÑA EULALIA</seg> y <seg rend="normal">JAIME</seg>.</stage></p>
 
@@ -6912,7 +6953,7 @@
 
 				</div>
 				<div n="58" type="chapter" xml:id="ne0275_chap58">
-					<head>Escena V</head>
+					<head xml:id="ne0275_head_062">Escena V</head>
 
 					<p><stage><seg rend="normal">MONCADA</seg>, <seg rend="normal">JORDANA</seg>.</stage></p>
 
@@ -6943,7 +6984,7 @@
 					</sp>
 				</div>
 				<div n="59" type="chapter" xml:id="ne0275_chap59">
-					<head>Escena VI</head>
+					<head xml:id="ne0275_head_063">Escena VI</head>
 
 					<p><stage>Dichos. <seg rend="normal">VICTORIA</seg>, una <seg rend="normal">HERMANA DE LA CARIDAD</seg>, que entran por el claustro.</stage></p>
 
@@ -6994,7 +7035,7 @@
 					</sp>
 				</div>
 				<div n="60" type="chapter" xml:id="ne0275_chap60">
-					<head>Escena VII</head>
+					<head xml:id="ne0275_head_064">Escena VII</head>
 
 					<p><stage><seg rend="normal">VICTORIA</seg>, <seg rend="normal">MONCADA</seg>.</stage></p>
 
@@ -7095,7 +7136,7 @@
 				</div>
 
 				<div n="61" type="chapter" xml:id="ne0275_chap61">
-					<head>Escena VIII</head>
+					<head xml:id="ne0275_head_065">Escena VIII</head>
 
 					<p><stage>Dichos. <seg rend="normal">GABRIELA</seg> y una <seg rend="normal">SEÑORA</seg>, que aparecen por una de las puertas de la izquierda. Poco después <seg rend="normal">JAIME</seg> y <seg rend="normal">DANIEL</seg>, por la derecha.</stage></p>
 
@@ -7188,7 +7229,7 @@
 				</div>
 
 				<div n="62" type="chapter" xml:id="ne0275_chap62">
-					<head>Escena IX</head>
+					<head xml:id="ne0275_head_066">Escena IX</head>
 
 					<p><stage><seg rend="normal">DANIEL</seg>, <seg rend="normal">CRUZ</seg>, <seg rend="normal">JORDANA</seg>; después una <seg rend="normal">HERMANA DE LA CARIDAD</seg>.</stage></p>
 
@@ -7250,7 +7291,7 @@
 
 				</div>
 				<div n="63" type="chapter" xml:id="ne0275_chap63">
-					<head>Escena X</head>
+					<head xml:id="ne0275_head_067">Escena X</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">DANIEL</seg>.</stage></p>
 
@@ -7578,7 +7619,7 @@
 				</div>
 
 				<div n="64" type="chapter" xml:id="ne0275_chap64">
-					<head>Escena XI</head>
+					<head xml:id="ne0275_head_068">Escena XI</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>; <seg rend="normal">VICTORIA</seg>, <seg rend="normal">GABRIELA</seg>, <seg rend="normal">MONCADA</seg>, <seg rend="normal">JORDANA</seg>, <seg rend="normal">JAIME</seg>, <seg rend="normal">DOÑA EULALIA</seg>, la <seg rend="normal">MARQUESA</seg>, señoras y caballeros, que entran por el claustro, entre ellos, ceremoniosamente, una mujer vestida al uso del país con un niño en brazos, envuelto en ricas mantillas y capa de bautizo. Siguen las Hermanas de la caridad, un monaguillo. Suena el órgano.</stage></p>
 
@@ -7622,7 +7663,7 @@
 
 				</div>
 				<div n="65" type="chapter" xml:id="ne0275_chap65">
-					<head>Escena XII</head>
+					<head xml:id="ne0275_head_069">Escena XII</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">MONCADA</seg>.</stage></p>
 
@@ -7751,7 +7792,7 @@
 					</sp>
 				</div>
 				<div n="66" type="chapter" xml:id="ne0275_chap66">
-					<head>Escena XIII</head>
+					<head xml:id="ne0275_head_070">Escena XIII</head>
 
 					<p><stage>Dichos. La comitiva del bautizo sale de la iglesia; primero las Hermanas de la caridad, luego las señoras y caballeros invitados, <seg rend="normal">JORDANA</seg> delante. Siguen <seg rend="normal">JAIME</seg>, <seg rend="normal">GABRIELA</seg>, <seg rend="normal">DOÑA EULALIA</seg>, la <seg rend="normal">MARQUESA</seg>, <seg rend="normal">VICTORIA</seg>, la nodriza, con el niño en brazos.</stage></p>
 
@@ -7813,7 +7854,7 @@
 
 				</div>
 				<div n="67" type="chapter" xml:id="ne0275_chap67">
-					<head>Escena XIV</head>
+					<head xml:id="ne0275_head_071">Escena XIV</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">VICTORIA</seg>.</stage></p>
 
@@ -7864,7 +7905,7 @@
 				</div>
 
 				<div n="68" type="chapter" xml:id="ne0275_chap68">
-					<head>Escena XV</head>
+					<head xml:id="ne0275_head_072">Escena XV</head>
 
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">JORDANA</seg>.</stage></p>
 
@@ -7955,7 +7996,7 @@
 				</div>
 
 				<div n="69" type="chapter" xml:id="ne0275_chap69">
-					<head>Escena XVI</head>
+					<head xml:id="ne0275_head_073">Escena XVI</head>
 					<p><stage><seg rend="normal">CRUZ</seg>, <seg rend="normal">VICTORIA</seg>, comiéndose un bizcocho.</stage></p>
 					<sp>
 						<speaker>VICTORIA.-</speaker>
@@ -8633,7 +8674,7 @@
 					</sp>
 				</div>
 				<div n="70" type="chapter" xml:id="ne0275_chap70">
-					<head>Escena XVII</head>
+					<head xml:id="ne0275_head_074">Escena XVII</head>
 
 					<p><stage>Dichos. <seg rend="normal">MONCADA</seg>, <seg rend="normal">GABRIELA</seg>, <seg rend="normal">DOÑA EULALIA</seg>, la <seg rend="normal">MARQUESA</seg>, <seg rend="normal">DANIEL</seg>, <seg rend="normal">JAIME</seg>, <seg rend="normal">JORDANA</seg>, que entran por el <seg rend="italic"><seg type="foreign" xml:lang="fr">buffet</seg></seg>.</stage></p>
 

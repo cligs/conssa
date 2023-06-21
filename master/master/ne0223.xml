@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los terribles amores de Agliberto y Celedonia</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">TerriblesAmores</title>
-				<title type="idno">
-					<idno type="bne">XX1874148</idno></title>
+				
 				<author>
-					<idno type="bne">XX1156013</idno>
-					<idno type="viaf">22177850</idno>
-					<name type="short">Bacarisse</name>
-					<name type="full">Mauricio Bacarisse</name>
+					<name type="short" ref="#Bacarisse"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2310</measure>
@@ -139,16 +131,42 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0223</idno>
+						<idno type="cligs">ne0223</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2005">2005</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra-visor-din/obras--0/html/"/>.</bibl>
-				<bibl type="print-source"> Edición digital basada en la de Madrid, Fundación Santander Central Hispano,  <date when="2004">2004</date></bibl>
-				<bibl type="edition-first"><date when="1931">1931</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los terribles amores de Agliberto y Celedonia</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1874148.html">XX1874148</idno>
+				</idno>
+				</title>
+					<author xml:id="Bacarisse">
+						<name type="full"><forename>Mauricio</forename> <surname>Bacarisse</surname></name>
+						<idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1188845357">1188845357</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q6006879/">Q6006879</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1156013.html">XX1156013</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/22177850/">22177850</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2005">2005</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra-visor-din/obras--0/html/"/>.</bibl>
+					<bibl type="print-source"> Edición digital basada en la de <pubPlace>Madrid</pubPlace>, Fundación Santander Central Hispano,  <date when="2004">2004</date></bibl>
+					<bibl type="edition-first"><date when="1931">1931</date><idno source="k10plus" type="ppn" n="464674689" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464674689"/><idno source="k10plus" type="ppn" n="267044119" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=267044119"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los terribles amores de Agliberto y Celedonia</title>: 	<title type="sub">novela</title> <date when="1931">1931</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464674689" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464674689"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los terribles amores de Agliberto y Celedonia</title>: 	<title type="sub">novela</title> <date when="1931">1931</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid [u.a.]</pubPlace> 		<idno type="ppn" n="267044119" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=267044119"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los terribles amores de Agliberto y Celedonia</title> <date when="1989">1989</date>, <publisher>Mestral Libros</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="042432405" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=042432405"/> 		<idno type="isbn" n="8475753809"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
@@ -157,6 +175,11 @@
 				<p>Capítulo 36: Agliberto discute con el supuesto novelista de este texto sobre su vida. Capítulo 37: Mab parece que sigue viva, aunque Agliberto ya no tiene relaciones con ella. Celedonia y él son felices y hablan en la playa</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL11">4</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +192,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">vanguardista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term><!--25-->
 					<term type="text.characters.protagonist.gender">male</term>
@@ -181,7 +204,7 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">fantastic</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">philosophical</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
@@ -221,6 +244,7 @@
 		<revisionDesc>
 			<change when="2016-03-30" who="#jct">Initial TEI version.</change>
 			<change when="2016-08-08" who="#jct">Amended after reading it as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -232,7 +256,7 @@
 				</lg>
 			</div>
 			<div>
-				<head> A Ramón Gómez de la Serna</head>
+				<head xml:id="ne0223_head_000"> A Ramón Gómez de la Serna</head>
 				<p>HACE CUATRO AÑOS sentí la sugestión de escribir una novela que llevara por título Los terribles amores de Agliberto y Celedonia<seg rend="italics">. Hasta qué punto pensé entonces en poner bajo tal epígrafe el actual contenido de ella es problema arduo para mi memoria y mi sinceridad. Publicaba la Revista de Occidente su colección</seg> <seg type="foreign" xml:lang="la">Nova Novorum</seg> <seg rend="italics">y me propuse fabricar para aquella serie un breve relato erótico-burlesco. En los últimos días de enero de 1927 emprendí su ejecución sobre las mesas de unos cafés de Gibraltar y Algeciras. A mediados de abril de aquel año terminé las cien cuartillas proyectadas en un mesón de Montilla, ante una fiesta rural. Trabajo perdido. La novelita no gustó al <seg type="abbr">Sr.</seg> García Vela y no se publicó. No me entristeció el contratiempo porque no diputo infalible al antedicho censor asturiano. Pudo dolerme, tan solo, que no saliera a la luz de la publicidad, porque ya iba, en aquella su primitiva y originaria forma, dedicada a usted.</seg></p>
 				<p>Por otra parte, reconocí que los estrechos límites que imponían aquellas publicaciones quizá hubieran comprimido los bríos de desarrollo de mi novela. Decidí ampliarla, dilatarla, nutrirla. En Palencia, en Vigo, en Oviedo, en Ávila (1928-1929), a ratos perdidos, recompuse e hinché aquel inicial bosquejo. Las cien cuartillas se convirtieron en seiscientas; pero como la obra, en un principio, llevaba su nombre a la cabeza, al medrar, no iba a mudar de dedicatoria, y aquí está, ante usted y para usted, en homenaje de corroboración de nuestra amistad de catorce años.</p>
 				<p>Si su volumen no fuera tan excesivo, expondría en un prólogo mis propósitos; pero la novela está demasiado preñada de prolijidades, niñerías y digresiones, que si no aclaran, a lo menos reiteran los objetos fundamentales que perseguí al escribirla. Los tres o cuatro temas cardinales: la supremacía de la sugestión verbal; la superioridad combatiente de los mitos de la realidad y de la acción sobre los mitos de la fantasía, como facultad mucho más económica y previsora de lo que se dice, y, por último, la afirmación de que el amor material estimado como instintivo en las civilizaciones más insensibles y bárbaras, es lo menos material que hay en el mundo, están tan repetidos en los diferentes capítulos que fuera impertinente y ocioso abusar, con previas justificaciones, de la atención del lector, que habrá de seguir largo tiempo sin desmayo por el laberinto de numerosos y enmarañados episodios.</p>
@@ -247,7 +271,7 @@
 		</front>
 		<body>
 			<div type="part">
-				<head> Primera parte : La sirena </head>
+				<head xml:id="ne0223_head_001"> Primera parte : La sirena </head>
 				<quote>
 					<lg type="poem">
 						<l><seg type="foreign" xml:lang="en">Tut! I have lost myself; I am not here.</seg></l>
@@ -257,7 +281,7 @@
 				</quote>
 
 			<div n="1" type="chapter" xml:id="ne0223_chap1">
-				<head> Viaje de novios</head>
+				<head xml:id="ne0223_head_002"> Viaje de novios</head>
 				<p>ESTUVO TENTADO de no entrar en la estación, de huir por los campos, enfurecidos de calor, recién licenciados de su gala de sol, azulinos, polvorientos, destelleantes solo en las altas charreteras de oro, puestas sobre las clavículas de los aleros, bajo el cielo, ya color de greda. ¿Para qué aquel viaje? ¿Por qué no desistir de él? De buena gana hubiese dejado que se dispararan sus equipajes, facturados de antemano, con rumbo ciego e inútil, y rompiera la menuda cartulina del billete, correosa y amarillenta como una ternilla, mordiéndola, si su estado de revulsión y empacho, vecino de la náusea, no le imposibilitara para todo arranque de decisiones definitivas. ¡Estúpido, estúpido! Cuarenta y ocho horas antes pudo modificar su trayectoria en un cuadrante exacto y seguir una ruta perpendicular, camino de una región espumeante de oteros verdes y bahías zarcas, donde la sonrisa se prolonga y la sidra se reitera. Pero ¡ya era tarde! Además se había comprometido con Mab. La víspera, al ver cómo hojeaba un álbum de fotografías de aquel país, le preguntó:</p>
 				<p>-¿Ha estado usted?</p>
 				<p>-Nunca -le respondió ella, devolviéndole la interrogación.</p>
@@ -394,7 +418,7 @@
 				<p>-Ocho meses -contestó la recién despierta, solemne y sin vacilación.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0223_chap2">
-				<head> El duro falso</head>
+				<head xml:id="ne0223_head_003"> El duro falso</head>
 				<p>LA CAMARERA TEMBLABA de los tacones a la cofia. Celedonia estaba hecha una furia. Cada uno de los rayos de sol de su cabeza (cien mil mañanas de junio) era una centella. Hubiera querido destruir su equipaje, acobardado a sus pies, rebaño sumiso; destrozar aquel hermoso lecho imperial que llenaba buena parte del aposento. Todo el hotel se estremecía, y no de frío. Un buen calor cuajado, inmóvil, de cinco de la tarde, hacía pensar en un incendio.</p>
 				<p>-¿Quién ha podido creer que somos matrimonio?</p>
 				<p>-No sé, señora, mejor dicho, señorita. Ha debido de ser una confusión -dijo la pobre en su idioma, balbuciente.</p>
@@ -497,7 +521,7 @@
 				<p>Salió. Parecía que acababa de desencarnar. La noche de julio, oreada de ozonos y de lágrimas celestes, era un dulce caos: violines, risas, estrellas, rosas. Pasaban por su vera de noctívago mujeres con luceros en los zapatos. Los castaños de Indias tenían las hojas más finas, más sutiles, epidermis más transparente que nunca. Detrás de ellos corría clara y preclara la sangre de los arcos, los farolillos, los anuncios luminosos. Seguía la siembra de sonrisas. Agliberto estaba cansadísimo. Vio una verbena, tan familiar y sin originalidad como todas las cosas que se ven por vez primera. Anduvo largo rato y acabó durmiéndose, andando. Completamente dormido dio su paseo, encontró el hotel, su escalera, su cuarto. Entonces despertó. Reinaba un silencio seductor, con acierto temido por Celedonia. Miró al reloj, solo para pensar: «También Mab debe de estar acostada a estas horas». Volvió a dormir, y, dormido ya, se desvistió y cayó en el lecho.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0223_chap3">
-				<head> Citeres, ida y vuelta</head>
+				<head xml:id="ne0223_head_004"> Citeres, ida y vuelta</head>
 				<p>SIN DUDA ALGUNA, también dormido, se afeitó; se bañó, se hizo con gran habilidad el nudo de una corbata escocesa, pues al día siguiente, que era lunes, despertó en un barco perfumado de alquitranes, enredado en cordajes, cabellos azules de mar y rubia pelambre de la barra de un río, que desde muy lejos -ciudades imperiales e imperiosas, reales sitios- arrastraba una melena ferruginosa y sanguinaria.</p>
 				<p>Celedonia sonreía, muy cerca de su rostro. En el esmalte de sus dientes temblaban los pequeños arco iris de las conchas y las perlas.</p>
 				<p>-¿En qué soñabas? -le preguntó.</p>
@@ -582,7 +606,7 @@
 				<p>-Porque es un sitio del que están prohibidas las reproducciones, desde que el mundo es mundo, para todos los mortales, desde la primera pareja hasta nosotros.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0223_chap4">
-				<head> La tentación en el paraíso de Virginia</head>
+				<head xml:id="ne0223_head_005"> La tentación en el paraíso de Virginia</head>
 				<p>EL PLIEGO DE LA CARTA, que Agliberto tenía empezada sobre la mesa, decía textualmente:</p>
 				<floatingText>
 					<body>
@@ -644,7 +668,7 @@
 				<p>Al separarse para entrar en sus cuartos, ella en el azul, él en el rosa, la deuda quedó saldada. Le dio el beso, pero en el dorso de la mano, reverencioso, como palaciego en antecámara. Ella se retiró contentísima, reina ante la genuflexión de un vasallo.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0223_chap5">
-				<head> Film</head>
+				<head xml:id="ne0223_head_006"> Film</head>
 				<p>EL MARTES POR LA MAÑANA Agliberto también despertó en la calle. La noción de Celedonia se le revelaba más remota, más alejada y fugitiva. ¡Sí, la había perdido! Ni sabía dónde estaba ella, ni ella sabía dónde estaba él. Sí; la había perdido. Y bailaba de gusto por las aceras acogedoras y joviales, un paso de danza negra, evitando pisar las junturas de las piedras, pues todo el mundo sabe que poner el pie encima de los intersticios da una mala sombra aciaga. Después, los asfaltos y las losetas, unas por nada y otras por mucho, hicieron imposible el entretenimiento. El hecho de madrugar engendra optimismo; las ciudades tienen patente entonces el número estricto de transeúntes con misión a medio justificar. (Nunca se justifica el tránsito de modo absoluto y satisfactorio.)</p>
 				<p>Pasó por siete plazas y doce calles. Notaba, en medio de su deleite, que varias personas le seguían. ¿Sería azar? ¿Sería curiosidad? Ya no sabía dónde estaba, pero se sentía observado. Vaciló en el firme suelo, ni más ni menos que un barrista en pleno ejercicio de equilibrio, y volvió el rostro. Uno de sus secuaces espontáneos apuntó con el índice: «Por ahí». No le cupo sino obedecer, ya que le ahorraban toda pregunta. «Algo bueno me espera, puesto que me guían.» Vino a presentarse, con el consiguiente embarazo, una encrucijada prendida con una estatua. Otros dos de su difuso séquito, a quienes había perdido de vista, se acercaron para encarrilarlo: «Siempre derecho».</p>
 				<p>Pensaba: «No hay nada que hablar. Todos vamos a lo mismo». La mayoría de las gentes que le acompañaban, distantes, pero solícitas, iban bien portadas. No podía tratarse ni de un reparto de ropas ni de un desayuno benéfico. Allí no se daban corridas de toros. «¿Habrá mitin o partido de <seg type="foreign" xml:lang="en">foot-ball</seg> mejor?», supuso.</p>
@@ -657,7 +681,7 @@
 				<p>-¡Hay que ver! Todas las personas a quien he preguntado por ti te han encontrado, sin conocerte.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0223_chap6">
-				<head> El balancín del alma</head>
+				<head xml:id="ne0223_head_007"> El balancín del alma</head>
 				<floatingText>
 					<body>
 						<div type="section">
@@ -731,7 +755,7 @@
 				<p>Agliberto suspiraba al considerar: «Yo era feliz. Tenía un vaso, tenía agua, tenía sed. Ya me han quitado el vaso. Después, me quitarán el agua. Después, hasta la sed. Estoy jugándome la boda con Mab, dos niños, una niña, y treinta y cinco años en vida conyugal enriquecida de mediocridades sabrosísimas».</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0223_chap7">
-				<head> Los poetas y las carrozas</head>
+				<head xml:id="ne0223_head_008"> Los poetas y las carrozas</head>
 				<p>-¿VAMOS A HACER nuestra póstuma visita al poeta muerto? -dijo Agliberto el miércoles por la tarde.</p>
 				<p>-Sí, es una ineludible obligación -apoyó ella-. Llegar aquí, casi en el novenario, y no rezar sobre sus restos sería imperdonable.</p>
 				<p>-Sería una falta de turismo.</p>
@@ -810,7 +834,7 @@
 				<p>Princesa y príncipe recién casados, en el desconcierto de la situación improvisada, sin saber qué hacer y por dónde empezar, temerosos de ofender al protocolo con un abrazo y sintiendo la evidencia de que tan suntuoso carruaje y tan sabrosa soledad y penumbra no les servían para nada, dieron grandes gritos de alarma para salir cuanto más pronto de aquella propicia galería, gris y resonante, donde un beso debía de tener ciento cincuenta ecos.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0223_chap8">
-				<head> El crimen</head>
+				<head xml:id="ne0223_head_009"> El crimen</head>
 				<p>AGLIBERTO ESTÁ PENDIENTE de la película, que muestra, oscilante, temblona, cómo fueron los funerales del gran poeta a quien visitaron difunto. Hervor de comitiva, fermentación de masas; después, el ataúd, bamboleante, en hombros de estudiantes imberbes, enlevitados y cubiertos de largas capas sin esclavina. En el silencio obscuro del cine, apenas turbado por el siseo de torno del aparato se ahueca una palabra que suena como las grandes burbujas de aire, al emerger del agua. ¡La gloria! ¡La gloria!</p>
 				<p>Celedonia se ciñe a él a través del rígido brazo de la butaca, de un modo injustificado, excesivo, intolerable.</p>
 				<p>-Hija mía, ¿no sientes el calor?</p>
@@ -851,7 +875,7 @@
 				<p>La joven gritaba desde el balcón. Se desmayó, rompiendo un sofá en un ataque de nervios. Pero Agliberto estaba satisfechísimo de la experiencia. Y tenía razón para ello. Un solo reparo podía ponerse a aquella operación tan diestra: el señor que yacía en el suelo, con la cabeza rota, ni había estado en el cine ni había sido el infame que intentó desabrochar las ligas de Celedonia.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0223_chap9">
-				<head> El castigo</head>
+				<head xml:id="ne0223_head_010"> El castigo</head>
 				
 				<floatingText>
 					<body>
@@ -916,7 +940,7 @@
 				<p>-¡Hombre, es tan natural! -dijeron ellos, todos a una, retirándose.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0223_chap10">
-				<head> Piedras antiguas y micos azules</head>
+				<head xml:id="ne0223_head_011"> Piedras antiguas y micos azules</head>
 				<p>-¿EN QUÉ ÉPOCA te hubiera halagado vivir, Agliberto?</p>
 				<p>-En cualquiera, menos en esta.</p>
 				<p>-¿Tanto te desagrada el presente?</p>
@@ -983,7 +1007,7 @@
 				<p>-Vámonos por aquí. Allí está la de Montegrís con su papá y su mamá. ¡Quién hubiera sospechado encontrársela! ¡Por Dios, que no nos vean! ¡Menudo jaleo se arma si nos conocen! Se lo cuentan a mi familia y a medio Madrid. Sí, pero me parece que ya nos han guipado. Deben de esperarnos. Mira, chico, vamos por aquella puertecita y les damos el gran mico.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0223_chap11">
-				<head> Brujas de sábado</head>
+				<head xml:id="ne0223_head_012"> Brujas de sábado</head>
 				<p>OYÓ RUIDO EN EL CUARTO contiguo. Los nudillos de Celedonia, capullos tiernos, se deshojaban contra la vieja flora de papel parietal, en terca llamada, casi pugilato.</p>
 				<p>Continuó escribiendo: «Por desdicha, Mab, todas mis fotografías salen mal. Mejor dicho, todas salen bien, muy bien, pero con un defecto. ¿Conoce usted eso que los joyeros en las piedras finas llaman jardines? Seguro. Pues todas mis fotografías tienen algún jardín, es decir, una sombra, un portillo, una mella, una desconchadura. Y no es de defecto de técnica. Yo mismo lo veo así en la realidad. Muy bello, muy lindo, pero siempre con una cicatriz, a veces muy pequeña, pero que me encocora, haciéndome sentir lo cerca que está de la perfección. ¿Nunca ha oído usted hablar, celeste Mab, de lo que es el límite de una variable? Seguramente no. Tanto mejor. Pero volvamos a usted, ofreciéndole esta naturaleza, este mar, estos castillos románticos, torres medievales y parques lánguidos, a los que siempre falta una esquirla, a los que siempre se les advierte una caries para ser del todo bellos. ¿Qué han menester? Amor. Pero no amor de destierro y de suspiro, sino de asistencia. Para que este país acabe de ser hermoso, para que mis fotografías salgan íntegras, precisa un solo requisito que tiene sus múltiples alvéolos vacíos: la presencia de una mujer. ¡Estoy tan solo!».</p>
 				<p>Celedonia repicó, de nuevo, en el tabique. Agliberto no la escuchaba, absorto y distraído, emberrenchinándose al recapitular todo el encanto de aquel país, tan firme, casi entero, si no estuviera un poquito desportillado. A la naturaleza le hace falta Mab: «Esta región la pide a todo momento, la reclama, tal como la carne de ternera requiere la mostaza».</p>
@@ -1013,7 +1037,7 @@
 				<p>Ella ya no contestaba a sus preguntas. La mazorca quedó sin un grano, hecha residuo leve y deleznable, espuma vegetal. Entonces pudo dormir.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0223_chap12">
-				<head> Cosas del otro jueves</head>
+				<head xml:id="ne0223_head_013"> Cosas del otro jueves</head>
 				<p>HAN TRANSCURRIDO cuatro días. Ella, muy apoyada en sus tacones, garza humana, enseriecida, con un empaque mitad de señora casada, mitad de primera actriz de comedia que ha de probar cómo la virtud repelida sale a flor de gesto. Se ha puesto las sortijas, las pulseras, los pendientes de su madre, en señal solemne. Llevan diez días en la ciudad y es fuerza ya abandonarla. Agliberto está muy pálido, frente a ella, ante un pórtico barroco de una iglesia.</p>
 				<p>-¿Cuándo te reúnes con tu amiga Claudia?</p>
 				<p>-Yo ya no puedo reunirme con nadie, Agliberto. Después de lo que aconteció anoche... ¡Quién iba a decírmelo! ¡Ayer y tú!</p>
@@ -1074,7 +1098,7 @@
 				<p>El carruaje se metió en la ciudad. Las colleras, al alejarse, disolvían el trote de los cascabeles en un vago rasgueo de guitarra. Allí iba la sirena. Se parecía tanto a Celedonia que nadie advirtió la sustitución.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0223_chap13">
-				<head> La sirena de recambio</head>
+				<head xml:id="ne0223_head_014"> La sirena de recambio</head>
 				<p>LA HIJA DE LOS MARES hablaba poco; su mutismo daba mala espina. No dijo nada de marcharse. Era un ser libre. No tenía que preparar coartada alguna con ninguna Claudia. En la habitación de la <seg rend="italics">otra</seg> hacía igual vida, leía los mismos libros, se probaba sus sombreros ante el espejo aún empañado por el otro aliento inofensivo y casi colegial. Usaba los mismos lápices, polveras, perfumes y cepillos ajenos, con una marina despreocupación. Alguna vez Agliberto la oyó desde su alcoba tararear, más que entonar, algunos de sus cantos o, más bien, tonadillas. Estaba muy desconcertado y poco contento de sí. No sabía por qué causa misteriosa la Providencia había querido adjudicarle aquel agregado místico, más grave y peligroso que la obstinada compañía de su imprudente camarada, con la cual siempre podían usarse dos tácticas opuestas: la blanca y la negra, la norte y la sur. Pero ¡con una sirena! El más ligero piropo, la más formularia galantería era un incauto mordisco al cebo de las fatalidades, una satisfacción corroboradora al calendario zaragozano de los cataclismos. Solo en el estado de postración y debilidad en que se hallaba cuando topó con ella en el Acuario podía explicar la tolerancia de su adhesión, inaceptable para cualquier hombre sensato que no fuera un suicida. Su depresión iba aumentando y él lo sentía en los síntomas: además de una perfecta y absoluta indiferencia por la suerte de la desaparecida, una desgana invencible para escribir a Mab. El óbito de su amiga inocente no le produjo excesiva congoja ni hondo pesar. Él mismo estaba consternado ante su propia insensibilidad marmórea. Por supuesto que aquella reiteración de la fatalidad en oponer una rival a la novia soñada por su imaginación era lo que mayor y más torturadora inquietud podía producirle. Afortunadamente -pensaba-, esta no podrá soportar la vida en tierra firme, la existencia en hoteles, casinos y trenes; tendrá que volver a los saraos de los tritones, a las carreras de cetáceos, a los banquetes de tiburones, a los tés de Anfitrite.</p>
 				<p>Desde luego, no cabía duda, se trataba de una sirena auténtica, del más legítimo cuño abisal. Su indumento y su arrogancia causaban explosiones en el comedor, cuando entraba delante de Agliberto. Los viejos verdes que cenaban, vestidos de frac, con tres marcas de champán quedaban atónitos, paralizados, con la baba caída. Todas las damas esgrimían sus impertinentes. Algunos capitanes, atezados y fanfarrones, poníanse de pie para mejor verla, dejando caer al suelo las servilletas. Ella avanzaba hasta la mesa, distraída, imperturbable, taconeando con sus prodigiosos zapatos bordados de aljofar o de cuentecitas de coral, envuelta en un halo de aurora boreal, resplandeciente de lentejuelas de amanecer y de nácares de efecto de luna, oliendo a rosas submarinas y a marisco celeste.</p>
 				<p>A Agliberto ¿le gustaba, le disgustaba esta más que la otra? Eran muy semejantes, salvo el grado de esplendor. Pero no; no se trataba de eso. El complemento de su existencia era Mab. Al llegar a la mayoría de edad el hombre ya sabe lo que le gusta: había tomado las medidas de sus preferencias y se las había enviado al gran bazar de modas hechas de la imaginación, y esta había trabajado en confeccionársela con los mejores elementos, había pagado portes de aduana y le había proporcionado una presentación para los hermanos, hermanas y padres de la muchacha y facilidad para entrar en su casa.</p>
@@ -1159,7 +1183,7 @@
 				<p>-¿Por qué ama usted tanto a este hombre?</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0223_chap14">
-				<head> Una visita a otro poeta</head>
+				<head xml:id="ne0223_head_015"> Una visita a otro poeta</head>
 				<p>EL GRAN POETA vivía en una callecita silenciosa, próxima a la Universidad. Constaba de dos pisos y en el superior, en un saloncito y un gabinete de estudio, se veían unos muebles modestos, retratos, libros, muchos libros. El gran poeta se había partido una pierna en un largo viaje por Europa. Agliberto nunca pensó que se pareciera tanto a Simó Raso. Apareció andando trabajosamente, apoyado en un bastón-muleta y condujo al visitante a una terracita, blanqueada, pizpireta, como para un sainete de los «Señores Álvarez Quintero, Hermanos».</p>
 				<p>-¿Usted es escritor español? -preguntó sonriente con la carta en la mano.</p>
 				<p>-No, señor; voy a ser ingeniero de caminos.</p>
@@ -1204,7 +1228,7 @@
 				<p>-Sí, es una desgracia como otra cualquiera -sonrió el gran poeta, cojeando, bajo el dintel.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0223_chap15">
-				<head> La escopeta y la mandolina</head>
+				<head xml:id="ne0223_head_016"> La escopeta y la mandolina</head>
 				<p>AGLIBERTO SENTÍA LA TENTACIÓN de ver la playa donde le bañaban a los cuatro años. Decidió partir allá con la sirena. Volaba el auto ansioso, como ese afán de volver a hallar lo transcurrido que mueve a los hombres a las mayores empresas, pues más se inclinan estas a reiterar lo malo conocido que a acometer la búsqueda de los verdaderos encantos, incógnitos e insospechados.</p>
 				<p>A mitad de camino, les alcanzó una motocicleta roja, montada por un hombre cubierto de un casco, con una escopeta y algo así como una mandolina a la bandolera, cruzada sobre la espalda. Era el vizconde, que no había podido soportar ni un día la ausencia de la atrayente oceánida.</p>
 				<p>-¿Va usted a cazar? -le preguntó el joven ingeniero.</p>
@@ -1290,7 +1314,7 @@
 				<p>-Porque tengo veinticinco años y he estudiado para confeccionarme un porvenir a la medida y adquirir derecho a una existencia segura y garantizada.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0223_chap16">
-				<head> Napoleón</head>
+				<head xml:id="ne0223_head_017"> Napoleón</head>
 				<p>-¿TÚ NO JUEGAS al tenis, sirenita?</p>
 				<p>-No, nada más que al water polo. Ya supondrás lo que nos cuesta introducir cada una de las alas de nuestra cola en un zapato. Esta es la razón de los encantos de nuestro pasito menudo, y de que no podamos bailar un tango. Nuestros pies apenas se separan lo más preciso para fijar el canon de los andares perfectos o para dibujar los compases de un chotis chulo. Las grandes zancadas, a lo Susana Lenglen, nos están vedadas.</p>
 				<p>Habían eludido los asedios del vizconde y de los inflamados escolares. Estaban en una playa ostentosa, granada de chalets y de delicias, toda en blanco mayor, salvo el ámbar de las arenas. Agliberto había pedido a su familia el segundo cheque. La catástrofe tenía todos los reflejos, incluso el económico. Hubiera él querido resolver su mal humor, su excitación crispada en algún ejercicio físico.</p>
@@ -1323,7 +1347,7 @@
 				<p>-Dijo una frase que no se me olvida: «En cuestiones de amor, en batallas con mujeres, o seres parecidos, no cabe más que una victoria: la huida».</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0223_chap17">
-				<head> El canto y el pelo de la sirena</head>
+				<head xml:id="ne0223_head_018"> El canto y el pelo de la sirena</head>
 				<p>MÚSICA, PERENNE NIÑERA del hombre, consolatriz del mundo, lenguaje sin gramática y sin lógica, maravilla de Dios; tú sola puedes traer la evocación, el timbre, las vibraciones de la luz de ciertas tardes con su signo individual de horas, mes, semana, país, región y lugar; tú, única, puedes devolverle el oro del estío remoto y muerto de la infancia o de la juventud lejanas, con su cuño, con su efigie, con su gráfila, con su sonido, tal y como salió de la gran Casa de la Moneda de la emoción humana. Música de las flautas de madera, que das los tonos puros, de exhalación de bosques y voz de río, bendita seas; música de los violines, hija del beso de la crin de los Pegasos, corceles del cielo herrados con liras, raptores de nubes, con las fibras de las entrañas de las bestias humildes y sufridoras, bendita seas también; pero, sobre todas las demás, bendita seas tú, música de la voz de la mujer, temblor del metal supremo que lleva una poderosa aleación del aliento mortal y de la vida.</p>
 				<p>Y tú, cabellera femenina, si no bendita, alabada seas. Tú que has hecho a Ella siempre más ondulada, más vegetal y más frondosa; palmera de nuestro único oasis; frutal de rosada floración, en yemas, en capullos donde las abejas captan la mejor miel antes de elaborarla; enramada sutil, flexible y suave, en la cual resplandecen todas las aves del Paraíso junto a las manzanas de la tentación y del secreto.</p>
 				<p>Agliberto iba de mal en peor. No hacía cosa a derechas. El descontento que le producían unas condiciones de existencia, inadecuadas y peligrosas, le había hecho perder la brújula del trato. Su tanteo, siempre desacertado en la administración de las melosidades y las acritudes -siempre estas últimas más abundantes-, le ocasionó repetidos lances y originó diversos incidentes que aumentaban el desconcierto, la desorientación, el furor, y acarreaban la abulia, el reconocimiento de la impotencia, y luego la entrega a una situación cada vez más ridícula. Sin embargo, él la justificaba como mal menor, temeroso de calamidades todavía por germinar.</p>
@@ -1414,7 +1438,7 @@
 				<p>-A nuestras casas. Tú, a la tuya; yo, a la mía. Es imposible seguir juntos.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0223_chap18">
-				<head> La crisálida, la mariposa y el gobernador</head>
+				<head xml:id="ne0223_head_019"> La crisálida, la mariposa y el gobernador</head>
 				<p>AL DÍA SIGUIENTE, ya se los llevaba el tren. A ella, Poseidón sabe dónde. A él, junto a su Mab, afligida, sollozante y huérfana. Empero no podía llegar a tiempo de asistir al entierro de su padre, pues había de cumplir un encargo familiar cerca de una tía suya en una ciudad española intermedia entre la frontera y la costa. Al acercarse a España se sentía más repatriado, más reintegrado y devuelto a sí mismo, impelido por un imán que por su natural delicado no quería confesar y reconocer como obscura y animal querencia. Ahora, al final, a la hora del balance y del saludo se juzgaba muy cobarde y muy ridículo junto a la sirena rehusada, y, además, se despreciaba a sí mismo un poco por no acatar la novedad, la improvisación, el regalo imprevisto, y aferrarse a lo más viejo, manido y gastado de su ilusión amorosa. Pero no. ¡Mab valía más que todas las sirenas, náyades y ondinas! Iba a verla, al fin, después de veinticinco días. No le apenaba el dolor de ella, su desgracia reciente. ¿No estaba él en el mundo para consolarla, para traerle la revelación de la felicidad? A medida que el tren le aproximaba a ella, se sentía más seguro, más poderoso, más semejante a sí mismo, con menos deseos de adoptar una personalidad postiza, de jefe de Administración, de seductor vulgar o de Napoleón Bonaparte.</p>
 				<p>Todo el convoy iba apenado. Cada viajero, dolorido. ¡De qué distinto humor iba el coro anónimo y obsequioso de las gentes comparado con el de sus compañeros del viaje de ida! Verdad es que aquella era una Celedonia y ésta otra Celedonia. Todas las risas, palmoteos, bromas, eran ahora suspiros, dolor, desencanto, desesperanza. No fue una señora, fueron todas las señoras y los caballeros del tren a preguntar: «¿Hace mucho tiempo que se han casado ustedes?».</p>
 				<p>Primero, fue el sol barajando sus naipes dorados; después el ojo de la luna entró burlón por las ventanillas jugando con las maderas meladas del coche. La sirenita, bajo toda una bisutería de lágrimas, se deshacía en alaridos. No quería soltarle, abrazada, engarrafada a él.</p>
@@ -1457,14 +1481,14 @@
 			</div>
 			</div>
 			<div type="part">
-				<head> Segunda parte : Mab </head>
+				<head xml:id="ne0223_head_020"> Segunda parte : Mab </head>
 				<quote><lg type="poem">
 						<l><seg type="foreign" xml:lang="la">Haud dubie igitur ego etiam sum, si me fallit.</seg></l>
 					</lg>
 					<ab>DESCARTES <seg rend="italics">Segunda meditación metafísica</seg></ab>
 				</quote>
 			<div n="19" type="chapter" xml:id="ne0223_chap19">
-				<head> Crespones</head>
+				<head xml:id="ne0223_head_021"> Crespones</head>
 				<p>ENCONTRÓ UN MADRID desconocido. El cielo gredoso. La luz pálida. El ladrillo más insolente que nunca. En el paseo de San Vicente y en la embocadura del de la Virgen del Puerto las acacias y los triacantos en fila de formación enseñaban unas florecillas blancas, vergonzantes, entecas, remedo nostálgico del buen pan y quesillo de mayo. De otros árboles caía una eflorescencia tenue, semejante a una caspa verde que esperanzaba con su tinte el alejamiento de las perspectivas. El calor molía, trituraba, para disolver después. Los caballos subían trabajosamente. Entre las alabardas de la verja del Campo del Moro, semifusa de pentagrama, volaba alguna mariposa amarilla. Sobre las tabernas y fruterías de enfrente, toldos con máculas de lluvia antigua, quizá del Diluvio. Sabandijas de corteza de limón en bocales de morapio sanguinolento. Medidores sudorosos. Hombres en camiseta, sin afeitar. Más allá las uvas ácidas, más agraces por la gasa verde de los bandos higienistas. Y en pirámides, las grandes sandías rientes, abadesas del verbeneo, orondas, chulas, comadres, frescas, sosas como lo es la flamenquería sonrosada, nodrizas de las puestas de sol, placentas de la luz de la alborada. Una bóveda de plátanos altos, copudos. Después, plátanos más pequeños con un gentío de hojas apretujadas, densas, sofocadas unas con otras. Luego una ciudad entera, vacía, desahuciada, desierta. Pocas ventanas abiertas, persianas, persianas, persianas. Verdes, jaldes, blancas, de láminas, de cierre, enrollables. Algunos toldos. Y andamios en casi todas las casas. Todo Madrid entablillado, bizmado de tablones, tomizas, espartos. En las fachadas variolosas, algunas deformes cariátides con la llana en la mano o un cubo al hombro. Escayola, rotura de huesos, inmovilidad, entablillamiento. Andamios, andamios, andamios.</p>
 				<p>Agliberto necesitaba ver a Mab en seguida, cuanto antes. El duelo, el aislamiento del dolor eran obstáculo para visitarla al día siguiente del entierro, al que no había podido asistir por retrasarse su llegada. ¡Las conveniencias, las fórmulas! Pero era urgente verla, consolarla, tenerla frente a sí. ¿Sería delicado presentarse en su casa? Sus dos hermanos eran amigos suyos, buenos amigos, si no antiguos. Peana doble por la que el joven galán empezó a adorar a la suprema santa. Sin embargo, parecer ir a visitarlos a ellos era un desaire para su amor, y para su madre y hermana. Presentarse de improviso, viajero recién llegado, antojábasele teatral, incongruente, poco correcto frente al dolor ajeno necesitado de soledad y de reposo. Todos, en aquel hogar, sabían que era el pretendiente de Mab, y no ignoraban que de todos los aspirantes era el más brillante y recomendado. Siempre se había dicho: «Linda pareja», y como en las revistas <seg type="foreign" xml:lang="en">high-life</seg>, se les había comparado en dos medallones de futuro enlace: a ella, morena-rosa, cobre sin pátina, ondas negras, ángulo facial nobilísimo, ojazos acisternados; él, rubio, mechones inclados, pupilas como la flor del lino... Pero no se trataba ahora de eso, sino de la horrible muerte, tenebrosa, escalofriante. ¿Ir? ¿No ir? No ir sería imperdonable. Además, esas cosas nunca se olvidan...</p>
 				<p>Envió una carta a la madre de Mab, reiterándole su pésame telegráfico y solicitando ser recibido aquella misma tarde. La viuda le respondió a las dos horas, agradeciéndole sus testimonios de sentimiento, su viaje precipitado y su visita, en tales momentos, confortadora y apreciable. Escasas veces había penetrado en aquella casa. La amistad de los hermanos, provocada, requerida en año y medio; firme y estrecha ahora, fue una larga y cordial estratagema para acercarse a aquella maravilla revelada en la calle, compendio y epítome de sus ensueños. En los últimos meses, ya presentado a Mab, y amigo de ella, había acudido con menos frecuencia a su domicilio, pues prefería las charlas sin testigos en la Castellana, en los cines, en el tenis. La asiduidad de sus diálogos correspondía con un cierto alejamiento de sus hermanos en la camaradería varonil y una polarización de atenciones y conquista de la voluntad en dirección de la madre y la hermana.</p>
@@ -1510,7 +1534,7 @@
 				<p>Entre las persianas caídas había en muchas casas armaduras de tablones, tomizas, listones, maromas. Los muros, picados de viruela. Andamios. Andamios... Cantaba un grillo al amanecer. Salió la luna, perol de cobre. La ciudad estaba entablillada, con un brazo en cabestrillo; entre escayolas y vendas, sin duda, se había partido un hueso al dar el batacazo.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0223_chap20">
-				<head> El reloj de arena</head>
+				<head xml:id="ne0223_head_022"> El reloj de arena</head>
 				<p>NO OBSTANTE, ERA MENESTER volver a encontrar a Mab, reconstruirla, rehacerla. Era su única razón de vivir, su salvación. Y para verla, acabado el novenario, para penetrar en su casa, era preciso inventar un pretexto, hacerse el indispensable prestando servicio a la familia. Después de un fallecimiento hay dos caminos en que ofrecer la utilidad de su asistencia al prójimo: desinfección y herencia; pero en estos dos senderos su colaboración era improcedente. Uno de los hermanos de Mab era médico; el otro, abogado del Estado. ¿En qué concepto podría él intervenir en la testamentaría? De cualquier modo era urgente encontrar medio de verla a menudo, y así matar al monstruo de la decepción.</p>
 				<p>¿Dónde meditar y perseguir un plan? La única criada que había en casa de Agliberto le daba mal de cenar para ahuyentarlo y poder ella irse con el novio. ¿Qué se le había perdido en Madrid al señorito?</p>
 				<p>¿Dónde cenar? Problema de todas las noches. ¿Con quién hablar? Cuestión de cada hora. Todos los amigos estaban fuera. Las amigas también. En el Aéreo, un vacío horrible. En el Ateneo, trataba a muy pocos socios y en tal época no había más que opositores desesperados estudiando en mangas de camisa. Con la linterna de Diógenes iba buscando un camarada. Sin esperanza, tomó un taxi.</p>
@@ -1639,7 +1663,7 @@
 				<p>-Este debe de ser el fundamento, el origen de los anuncios luminosos -dijo.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0223_chap21">
-				<head> La resurrección de Celedonia</head>
+				<head xml:id="ne0223_head_023"> La resurrección de Celedonia</head>
 				<p>AL DÍA SIGUIENTE, Agliberto recibió una carta azulada, con timbre francés y matasellos de Deauville. En la punta del cierre del sobre, un enlace o una sigla indescifrable, con dos espaditas cruzadas, semejante a la marca de ciertas porcelanas de Sajonia. Una letra descuidada y volandera malcubría un pliego que encerraba estos conceptos, entre otros:</p>
 				<floatingText>
 					<body>
@@ -1705,7 +1729,7 @@
 				<p>-¡Ay, Agliberto! Esto es intolerable. ¿Acaso tú, que me soñaste, que me pediste como soy, pudiste suponer que tu futura y tierna esposa pudiera escuchar esas procacidades sin sonrojo y sin protesta?</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0223_chap22">
-				<head> En voz alta</head>
+				<head xml:id="ne0223_head_024"> En voz alta</head>
 				<p>-MIRA, HIJA, COMPRENDO que tu ingenierito, que es una monada de hombre, haya respetado el luto durante dos meses, sin decidirse. Pero su tardanza ya va picando en historia. Es menester acelerar la declaración. Estos pelmazos tienen mucha asadura. Pesan, miden, calculan. Dicen: sí; pero yo valgo mucho. Se miran en las lunas del cuarto de baño al afeitarse y se pavonean ante el espejo de su carrera privilegiada. Todo les parece poco, si no es una princesa tártara. Es menester ponerlos en la disyuntiva de que escojan entre el vado o la puente. Hazme caso a mí, que me sobran muchos años de experiencia de los hombres. No le aguantes más tabarras. Ya que tu madre y tus hermanos no han tenido la energía suficiente para plantarlo de patitas en la calle, tú debes ponerle las peras a cuarto. ¿Quieres hacerme caso? Ven a pasar una temporada a casa. No te verá. Allí no puede entrar. Tu alejamiento avivará su interés. Ya verás: rondará el jardín como un perro hambriento. ¡Si no los conociera yo! Todo eso caso de que tú sigas tan decidida por él. Yo creo que con mi Torcuato hubieras hecho buenas migas; pero, Mab de mi alma, no me guía el resentimiento, sino la amistad, y con tal de verte contenta y alegre, hija mía, ¿qué no haría yo? Se lo diremos a tu madre. Como no habéis salido este verano por causa de la muerte de tu padre, que en gloria esté, lo aprobará; a ti te sentará de perlas una temporadita en las afueras. ¡Si vieras qué preciosidad de rosales! ¡Está aquello tan hermoso! ¡Y a ver si ese ganso del Capitolio rompe de una vez! ¿Le quieres, Mab, le quieres?</p>
 				<p>-No sé, Mencía, si estamos hechos el uno para el otro. Pero de lo que sí estoy segura es de que yo estoy hecha para él.</p>
 				<p>La cizañosa y pizpireta sexagenaria hablaba en un apartado gabinete con la escultórica doncella. En el fondo, pretendía la buena señora secuestrar a Mab, para quien tenía preparado uno de sus pimpollos. Movía la zarpa contra Agliberto, que se había introducido en la casa de un modo súbito, impertinente y pegajoso, para no concertar rápidamente la boda y hacer perder tiempo a la muchacha. Se realizó el plan y Mab huyó al chalet de doña Mencía, entre la ciudad y la Dehesa de la Villa. Allí aguardó entre pinos pomposos, rosales mustios y lamentables, geranios en macetas esmaltadas, en una construcción de estilo suizo con listones azules en aspas diagonales, la declaración de Agliberto. La entrada al hotel le estaba vedada. Habían de entrevistarse con una verja y varios metros de jardín por medio. Ella desde un balcón, él desde fuera. «No es una dificultad extraordinaria, ni un secuestro. No creo que acelere mi decisión», pensó Agliberto. En estas vacilaciones y con la natural impaciencia de Mab, pasaron los primeros días de octubre. Las zozobras de la criatura, realizadas según el patrón imaginativo, aumentaron en medio de aquel plan peligroso. Antes de resucitar Celedonia, el joven la veía casi todos los días, con rarísima excepción. Después estableció dos turnos, uno par y otro impar: lunes, miércoles, viernes y domingos, para el té casero, el <seg type="foreign" xml:lang="en">flirt</seg> prematrimonial, con la modelo de la casa de confecciones de Dios; martes, jueves y sábados, con Celedonia en chocolaterías secretas, a hurtadillas, en coches de Casino. Iban al Retiro al anochecer, al final de estas tardes de otoño, tan finas y acendradas, algo contritas de los ardores estivales, en que pueden darse los mejores y más sabrosos contrastes. Alguna vez llegó ella con esa deliciosa contradicción de indumento, tan frecuente, en esos días de transición; zapato y media blancos y un zorrito o cibelina en el cuello sobre el vestido de crespón claro. A través de los arcos de la Puerta de Alcalá contemplaban la perspectiva escenográfica de la calle, bajo los celajes desgarrados en rosas, en arreboles, en grises de perla obscura como plumas de avestruz agitadas por el viento.</p>
@@ -1760,7 +1784,7 @@
 				<p>-Ven mañana. No faltes, y por la noche me escribes esa carta. ¡Que sea muy larga y muy bonita!</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0223_chap23">
-				<head> Las estrellas</head>
+				<head xml:id="ne0223_head_025"> Las estrellas</head>
 				<p>Y AGLIBERTO ESCRIBIÓ una carta, que copiamos:</p>
 				<p>«Hace dos días que saboreo la prueba de que soy correspondido. No puedo, no quiero escribir ni pensar que me ames. Me parece demasiado como premio -como verdad, indispensable- y su expresión resulta lastimosa, inconveniente, fatua, irreproductible para contribuir a un estado de convencimiento que no necesita de comprobantes verbales. Quisiera explicarme. Que una mujer ame a un varón puede ser algo indecoroso e infortunado, pero que corresponda al amor de un hombre es acabar, conseguir, dar remate al mayor y mejor milagro del mundo. ¡Oh, prodigio de los prodigios! ¡Corresponder a un amor!</p>
 				<p>¿Quién fue el primero que imaginó la balanza para símbolo de la justicia? ¿Por qué el símbolo se refugió en el estado más excepcional del aparato? Ten presente, Mab, que pongo aquí aparato y no instrumento. Es decir, sí. Como símbolo, instrumento, que todos los símbolos instrumentos son. Pero la balanza es algo más que símbolo: es imagen. Y si es imagen de algo es del alma humana. Cuando un platillo sube el otro baja, y viceversa. Quizá sirva para ponerlos al mismo nivel. Pero de hecho están siempre a distinta altura, disconformes, discutiendo, en riña, tirando el uno del otro, en pugna por un triunfo que nunca se consigue, pues el empeño de un platillo sobre el empeño del otro no se traduce más que en desequilibrio, nunca en supremacía. En la suave cuenca de esos platillos descansan los sentimientos, las pasiones, las ideas, los programas, la ambición; todos los azufres, las raíces, los polvos de la madre Celestina de la droguería psicológica.</p>
@@ -1789,7 +1813,7 @@
 				<p>Todas son para ti, Mab. ¡Ojalá que no exista ninguna que se rebele o caiga fuera de tu reino! Te manda muchos besos, imperceptibles, invisibles, para no herir tu recato, infinitos y luminosos, sin embargo; un camino de Santiago de besos, tu <seg rend="italics">Agliberto</seg>».</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0223_chap24">
-				<head> El cabás</head>
+				<head xml:id="ne0223_head_026"> El cabás</head>
 				<p>-¿TE HA GUSTADO MI CARTA, Mab?</p>
 				<p>-Sí, es muy larga, muy bonita, sí..., pero no la he entendido toda. Mejor dicho, del todo sí la he entendido. Pero de algunas carillas, ni jota. Es muy difícil.</p>
 				<p>-Pues te he escrito cuando mi corazón soñaba -suspiró Agliberto con decepción.</p>
@@ -1855,7 +1879,7 @@
 				<p>-No esperes una letra mía. Traidora -pero besó una a una las cinco cartas recibidas.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0223_chap25">
-				<head> Los nardos</head>
+				<head xml:id="ne0223_head_027"> Los nardos</head>
 				<p>AGLIBERTO DECIDIÓ no seducir a Mab, pero sí pervertirla. Ante la impotencia de su propia imaginación, frente al producto de la estúpida fantasía de su sentimiento, que en vez de fraguar disparates, construir patrañas, crear maravillas sin pies ni cabeza, había soñado la más perfecta cordura aburguesada, la más canónica prudencia, el joven sentía un furor frenético y un torturador desencanto. No había más remedio que rehacer, fundir de nuevo a Mab, «desausterizarla», enflorecerla, y después de mezclar a ella un aliento de insania, cierta dosis de perfume enloquecedor, acuñarla o ponerla en su molde otra vez. Pensó que la mejor aleación para su carne y su alma eran los nardos, flores tentadoras que conducen a la embriaguez, a la volatilización, al delirio apasionado.</p>
 				<p>Madrid tiene preparados sus nardos desde fines de agosto. Cuando vuelven de las playas, de las sierras, de las suntuosas ciudades extranjeras las gentes afortunadas, la corte les tributa un recibimiento delicadísimo y con los esbeltos hisopos de las varas hace una deliciosa aspersión de ese olor tan oriental que parece tender una alcatifa a nuestros pies. El culto del nardo se va perdiendo desde que han disminuido, para casi desaparecer, las floristas y los <seg type="foreign" xml:lang="en">clubmen</seg> con chaleco de piqué blanco. Esa flor se marchita, como se aja la lozanía de las doncellas, dentro de cárceles de vidrio o barro, en las tiendas de flores, con el escalofrío de humedad de esos días de reconcomio y escalofrío en que empiezan a correr los remisguillos de octubre. Ya no luce el nardo en los femeninos petos ni en la solapa de los elegantes del otoño como compendio de aventuras de litoral y gran casino, de terraza y <seg type="foreign" xml:lang="en">garden-party</seg>, como insignia de esa encomienda de la nostalgia y de la evocación de los azules amores del estío, entre cumbres de oro o espumas de plata. Pero su imperio sigue durando dos meses en búcaros y floreros; así prolonga y confirma la esplendidez de mito del verano con su aroma prometedor y nupcial. Si el ser humano, tan débil para formar concepto exacto del alma, quiere sustituir esa idea por una imagen, ninguna mejor que la de ese perfume tan hondo y tan sutil que es la forma sustancial de esos pétalos, a su vez trasunto de la carne adorada y prestigiosa. El nardo, o los nardos, pues siempre van y ejercen en pandilla, alargan el verano, demoran el equinoccio y presiden las citas prometidas entre dos casetas de una playa o un refugio montés; fructifican en mil y una noches de voluptuosidades y delirios, hasta que la viuda o la huérfana, o la sensible piadosa sencillamente, despiertan, después de tan dulce sueño, a la realidad de los crisantemos del día de Difuntos, una mañana de lluvia y de llanto.</p>
 				<p>Agliberto pensó: «Estos prodigios de la química psicológica son tan costosos como la obtención de un miligramo de sal de radio; es menester estropear muchas toneladas de mineral». Si no por toneladas, quiso adquirir los nardos por quintales. La ocasión era propicia, pues estaban en liquidación, y aunque aún lozanos en su mayoría, enloquecidos, suicidas de fragancia, tenían ya en su caries vegetal esas hebras o rayas del marfil de la muerte. Pensó gastar en nardos las dos mil pesetas destinadas a un viaje de olvido, primero; de novios, después. Visitó todas las tiendas de flores, ataviadas con toda la gama fría de los azules trasnochados y los verdes grises de sus cristales, olientes a tierra húmeda, a mantillo removido del Paraíso de donde había brotado el hombre. Adquiría todas las existencias como un acaparador y las enviaba en cestos, en ramos, en brazadas, en carritos de mano a casa de Mab, de modo que allí todo eran nardos. No había vasijas bastantes para contenerlos. No quedó recipiente que no se habilitara para macerar y refrescar aquellas invasoras flores: licoreras, heladeras, cafeteras rusas, aguamaniles, salseras, pilas de agua bendita, inclusive. Había nardos en el suelo, en las rinconeras, en las repisas de las cornucopias, en las panoplias, en el techo. La casa, abrumada con aquel olor pagano, y sus habitantes se desvanecían a cada momento con aquella coacción de estío, de trópico, de oriente, junto a un mobiliario recién vestido de invierno, con recientes olores de alfombras, moquetas y colgaduras de terciopelo, anticipaciones del frío y la niebla.</p>
@@ -1899,7 +1923,7 @@
 				<p>Apenas durmió aquella noche. Sí, era inevitable: don Juan iba a quitarle la novia.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0223_chap26">
-				<head> Don Juan</head>
+				<head xml:id="ne0223_head_028"> Don Juan</head>
 				<p>UN AMPLIO Y ALTO salón como el de los Embajadores en la Alhambra. Una labor complicadísima, una flora entrelazada de letras polícromas, trenzas salomónicas de palabras que no pueden pronunciarse, en alicatados de añil, sangre y oro. En un ángulo, un diván de terciopelo carmesí; en el opuesto, otro diván de seda negra. Junto a este y a Mab -sentada con toda indolencia, toda blanca de piqué y lino, cruzadas las piernas, una zapatilla de tenis sobre otra-, don Juan, de rodillas, sin temor a estropear sus ropas acuchilladas, recitaba unas décimas deplorables. En el extremo opuesto, Celedonia conversaba con Jorge. Nata y miel, albirrubia, vestía un traje de baile, verde azulado, muy propio para un asalto de casino de provincia o para una ondina de zarzuela mitológica en el cuadro que remeda el fondo de los mares. Él, con señales de impaciencia, estrechaba las blancas manos de la niña entre las suyas. Llevaba una máquina fotográfica a la bandolera.</p>
 				<p>Mientras tanto, Agliberto, inmóvil ante un formidable ventanal, daba vueltas al manubrio de un instrumento entre aristón o zampoña gallega. Una melodía insulsa y gangosa se exhalaba de aquel monótono ejercicio. Por el ventanal no se veía nada más que una claridad dulzarrona y esmerilada. Un rumor de agua se mezclaba con la música. Dejó de hacer girar el manubrio por oír lo que decían entre sí las parejas, indiferentes a lo que no fuera su idilio.</p>
 				<p>Mab declaraba sin rubor y sin oscilación en la voz:</p>
@@ -2038,7 +2062,7 @@
 				<p>Ahora tenía junto a sí a Mab. Era melindrosa en su recato, pero no era culpa de ella. Además, el único que podía vencer su pudor era él; por eso la empresa no encerraba mérito mayor, pues no hay prodigio en adaptarse a una prenda confeccionada a la medida, sobre todo después de la segunda prueba. Poseer a aquella criatura, bella previsión y prevista belleza, era aventura tan poco aventurada como comprobar que dos y dos son cuatro y que es cierto el teorema de Pitágoras. Había que ir hacia la Vida humilde y soberana, desconcertante, sabrosa, imprevisible. Salió a la calle. En la bóveda de la noche, en letras de fuego, se leía un nombre: Celedonia.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0223_chap27">
-				<head> Nuevos preparativos de boda</head>
+				<head xml:id="ne0223_head_029"> Nuevos preparativos de boda</head>
 				<p>NI EL DISCO del atleta, ni la esfera del jugador de bolos se lanzan al espacio sin arrastrar al hombre que les infundió el vaivén y se adhieren en la rúbrica del voleo hasta sacarle de las casillas de su equilibrio. En amor, buscando el varón al rival, casi siempre se encuentra a sí mismo. Y se halla a sí propio, unas veces para culminar en el triunfo de su superación; otras, para consumar su aniquilamiento.</p>
 				<p>Ya los actos posibles no dejaban a Agliberto margen alguno para la indiferencia. Se manifestaban únicos, insustituibles, con apremiante urgencia. Aquella cifra, 3.154, le obsesionaba ardorosamente, número del teléfono íntimo con que había de comunicar exclusivamente, número de auto en que necesariamente había de viajar.</p>
 				<p>3.154. 3.154 contra 0. Nunca se había encontrado en el billar en tan vergonzosa inferioridad. La tacada era descomunal, pero había terminado. Ahora le tocaba a él el turno, y desgastaba, impaciente, en el taco del denuedo recién revelado, la tiza azul de los sueños. El pálido membrillo de la luz de las tardes, las acerolas de la inquietud, los nísperos de los celos, algo de miel de la Alcarria del amor de Mab, en aquel otoño habían recrudecido su recuerdo del estío recién abandonado; las excursiones en yate, los viajes en trenecitos de juguete por vegas floripondiadas, el paso bajo los arcos de los acueductos o los monasterios, junto a Celedonia. En la sabrosa persona de la enamorada sentía el desaire que había hecho a la brindadora solicitación de su destino. Y ahora, ¡qué tardía y con qué pando andar transcurría la noche, arrastrando las horas interminables!...</p>
@@ -2072,7 +2096,7 @@
 				<p>Se encaminó a su horrible chalet. La bordadora le interrogó con la mirada. No, no traía a su amante. Traía otra cosa. Desenvolvió una caja de cartón blanquecina y tosca, donde se enroscaba una coronita de novia pobre, triste recuerdo de la flor del naranjo, de cera amarilla y papel de un verde chillón. Era lo más cursi, lo más lamentable y desatinado que había podido hallar. Con una emoción desalentada la dejó alrededor de uno de los boliches del amplio lecho de nogal, feo y bruñido como un peón, y se retiró dando traspiés.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0223_chap28">
-				<head>Nupcias</head>
+				<head xml:id="ne0223_head_030">Nupcias</head>
 				<p>-LO QUE NO PUEDO explicarme es por qué no estás enfadada conmigo, Celedonia.</p>
 				<p>-Quizá sea ése nuestro destino. Estar siempre muy próximos y siempre desunidos. No me quieres, no me has querido nunca, Agliberto. Es posible que no me quieras, que no puedas quererme jamás. ¡Qué le vamos a hacer! No me entristece en el grado que tú supones. Me hace llorar mucho, a veces. Pero en seguida me repongo y río y bailo de contento al suponer que, sin tenerte, puedo hablar contigo y mirarte.</p>
 				<p>-Celedonia, ¿no te parece que las nubes tienen un tinte dorado sobre sus pieles grises, sobre su <seg type="foreign" xml:lang="fr">petit-gris</seg> de aviadoras frioleras?</p>
@@ -2136,7 +2160,7 @@
 				<p>Celedonia no estaba decepcionada. Para festejar la vida, Agliberto la cubrió de besos.</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0223_chap29">
-				<head> Mab palidece</head>
+				<head xml:id="ne0223_head_031"> Mab palidece</head>
 				<p>EL AUTOR DE ESTE RELATO no puede satisfacer la curiosidad de sus lectores en el punto de afirmar concretamente si Celedonia cayó en brazos de Agliberto definitiva y totalmente aquella mañana en el chalet de la cataléptica. Pero sí puede conjeturar que si no fue aquel día fue al siguiente, o dos después. Ni la desidia ni el falso pudor ni la exacerbada discreción en no franquear el supuesto territorio de su jurisdicción son la causa de esta laguna histórica. El autor no ha consultado sino con el alma de sus personajes, y esta no ha podido darle datos fidedignos, ni por parte de ella, ni por parte de él. Del hecho que pudiéramos llamar, bárbaramente, material no aducen detalle, ni impresión particular. Estoy convencido de que si su sinceridad les hubiera movido a algún pormenor descriptivo no habrían tenido la reticencia de escamotearlo en gracia de que la novela no resultara pornográfica. Transcribo, pues, lo que la pareja ha declarado: que no tienen nada que alegar en justificación del hecho, considerado por Celedonia como inexplicable y por Agliberto como axiomático, estando, pues, de acuerdo; que asumen la responsabilidad de él; que no pueden dar el menor informe introspectivo del acto, definido exclusivamente para su conciencia como un mero despertar. Al volver en sí, reanimados con su resurrección, deslumbrados por el mundo nuevo, ni apuntaron sus sensaciones ni se dieron cuenta del día de la semana en que vivían, pues prescindieron, entre otras cosas, de mirar calendarios, periódicos u otras ridiculeces impresas.</p>
 				<p>Lo cierto es que se vieron y amaron siempre que les fue posible en su apartado escondrijo. El universo sonaba, para ellos, como una gigantesca collera de infinitos cascabeles. Celedonia se quitaba las ropas con presteza, sola, en un cuarto contiguo. Con sus cabellos largos, sin cortar por entonces, se hacía dos trenzas doradas y larguísimas, que dejaban muy atrás, al caer, el borde de su corta camisa. Descalza, casi desnuda, era la niña adulta que juega a la comba con el amor y está más en el aire que en el suelo. Al fin, se decidía a acercarse a su amado, besaba una medallita de oro que llevaba al cuello, y luego le besaba a él, como si hubiera vuelto ileso de un combate. Después entraba en el lecho de la colcha y los cuadrantes bordados sollozando de frío, de pudor y de alegría, para aceptar allí su egregio papel de primera actriz en el teatro de las sábanas blancas.</p>
 				<p>La felicidad que encontraron hizo palidecer a Mab. Aquel ángel de retablo, de la mejor madera, estofado con el oro del más alto prestigio de las virtudes soñadas, de la dote y del amor ciego, fiel e inalienable, no pudo resistir la rivalidad de una mujer cualquiera, de una Celedonia de carne y hueso. Pero ¿era realmente de carne y hueso? Agliberto, el que más motivos tenía para ello, no se hubiera atrevido a certificarlo. La posesión reiterada no hace más que aumentar la vaguedad; el ansia, la imprecisión; la sed, la vaporosidad de la mujer amada; y para él era más que una mujer, una nube, cuya realidad cambiante se diluía ante sus ojos y se le deshacía entre los dedos. Esa era la prueba de que la amaba única y absolutamente. Y entonces, ¿por qué no tuvo la lealtad de declarárselo a Mab y romper con ella, a quien quería cada día menos, ya que es imposible amar a dos mujeres a un tiempo? Mab era también de carne y hueso; era una creación de Dios, para dar cumplimiento a sus ensueños y divagaciones de adolescente; no era un fantasma frente a una realidad palpitante. Tanto la una como la otra vivían; eran ambas una mixtura de nube, de delirio, de ficción, y, por otra parte, de eso que se llama principio físico, naturaleza, materia; pero en el predominio de una porción sobre la otra llevaban un camino, un proceso de dirección contraria. Mab era el ensueño convertido en realidad. Celedonia la realidad transformándose en humo, desvarío, espíritu, y esta vencía a aquella, porque los mitos de la realidad superan siempre a los mitos de la fantasía. Pero al desrealizarse Celedonia en la íntima y abrasadora experiencia sexual (después de la intimidad erótica la hembra no conserva para el varón el significado y valor anteriores y su dilema es: evaporarse, eterizarse, o hacerse repulsiva y despreciable) iba dejando un hueco de sí misma, iba quedando tullida, amputada e incompleta. Y el vacío que dejaba, Agliberto intentaba rellenarlo con la presencia noviazguera de Mab. Esta venía a ser el remiendo, la cuña, la laña de que se valía el joven ingeniero de caminos para recomponer a la incompleta Celedonia, para sintetizar con dos mujeres un solo y único objeto amado. Mas lo cierto era que la niña rubia, espontánea, traviesa iba absorbiendo cada vez con mayor fuerza la casi totalidad del objeto mixto del amor, y cada vez, en el alma del joven, necesitaba menos de la colaboración de la canónica e irreprochable doncella morena, trasunto de virtudes imaginables, dechado doméstico, patrón de la perfecta casada. Lo que una ganaba otra perdía. La victoria iba decidiéndose por la que elaboraba lo imprevisto en perjuicio de la que garantizaba las anticipadas seguridades.</p>
@@ -2145,7 +2169,7 @@
 				<p>No obstante, satisfecho y saturado de los besos y ternuras de una, acudía a casa de la otra, atraído por el señuelo de su ejemplaridad de futura <seg type="foreign" xml:lang="la">mater admirabilis</seg>, suspenso y embelesado por la inquebrantable virtud de aquella mujer confeccionada a base de sus preocupaciones y egoísmos burgueses. Sin embargo, tales ventajas le iban pareciendo cada vez más ridículas, más empalagosas y cargantes, después de recibir la ducha de caricias, de aquella catarata de besos, de vitalidad y de aventura, que era Celedonia. Como su nombre desabrido y amargo en un principio se hacía dulcísimo y balsámico a medida que se saboreaba, su amor enojoso al iniciarse llegó a fascinarle en la entrega, en el abandono y la pasión. Si Mab se hubiera ofrecido entera, en cuerpo y alma, habría podido luchar con ella en igualdad de condiciones. Pero su entrega total estaba en pugna con su propia esencia: era una contradicción de su origen y de su destino: un imposible metafísico. Y así iba, la pobre, ángel de Ribera o Montañés, con su garrida belleza, su perfil de medalla, sus ojazos negros y su cuerpo mollar, a la más irremisible de las derrotas, a pesar de su espada, su guitarra y su raqueta de tenis, pues nunca hay paridad en el combate entre la vida, interpretada como sorpresa pura e inagotable y la vida tomada como corolario, aunque sea de principios muy altos y sagrados.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0223_chap30">
-				<head> Doña Mencía</head>
+				<head xml:id="ne0223_head_032"> Doña Mencía</head>
 				<p>ES DIFÍCIL SOSTENER amores con dos mujeres a un tiempo. Las horas destinadas a una son acaparadas por la otra en demoras inexplicables, retrasos casi siempre interpretados de modo certero por una intuición misteriosa, un sexto sentido de escama que mantiene al espíritu femenino siempre dispuesto a desconfiar.</p>
 				<p>Con tal dualidad suspicaz no hay posibilidad de programa ni de recta administración de la vida. El descontento, la desgana subsiguiente a ese desequilibrio de economía cronológica, hace muy desgraciados, en su desconcierto, a los bígamos y hombres de amores múltiples. Agliberto, al mes de entablar sus relaciones con Mab había hecho de Celedonia su amante. Estaba obligado a una doble asiduidad y a una forzosa exhibición con ambas. El luto, riguroso y reciente, de la novia le eximía de acompañarla a los espectáculos públicos; pero, en revancha, le obligaba a una asistencia ineludible a misas y funciones de iglesia. Pero Celedonia, por su parte, no perdonaba acto alguno de alto rango espiritual: conferencia, concierto o exposición. Era, al fin y al cabo, una universitaria fracasada. Además, se pirraba por la ópera y el cine, sin desdeñar el drama. Adoraba los tés de los grandes hoteles y de los saloncitos en boga, y sentía una debilidad burguesa si que también intelectual por el club de la Puerta de Hierro. De este modo el joven ingeniero estaba a todas horas muy comprometido, y su situación era angustiosísima para salir adelante con sus dos idilios. La incompatibilidad de citas, las horas de <seg rend="italics">oficina</seg>, de noviazgo oficial en casa de una, las clandestinas o públicas entrevistas con la otra le obligaban al uso perpetuo del vehículo, poniéndole en tensión nerviosa continua, y le imponían un malabarismo de imaginación, de pretextos y de embustes realmente agotador. Solo la pícara vanidad masculina podía soportar aquel alarde de recursos, con sus gastos, sus riesgos y sus molestias. Advertía el revuelo de extrañeza que entre los amigos y conocidos de vista ocasionaba el trueque de pareja, la dual alternativa en el galante o amartelado acompañamiento de ambas muchachas. Los incidentes, las sospechas de una y otra empezaron a manifestarse a fin de año, pero sin tempestuosa gravedad. Ellas, entre sí, se conocían sin tratarse y se odiaban hace tiempo por esa antipatía profética y adivinadora, tan mujeril, de posibles antagonismos en lo futuro. No conocieron lo terrible de su rivalidad, sino después de muy avanzada su competencia. Un día, una tía de Mab le sorprende con Celedonia en un concierto matinal; otro, un amigo de esta le denuncia por esperar a aquella frente a una iglesia. Los comentarios de la duplicidad de su amor se multiplican en chismes, insidias y leyendas. Empieza el martirio del asno de Buridán sentimental, al correr del mes de enero, después de dos meses de estratagemas y delicias.</p>
 				<p>Doña Mencía siempre detestó a Agliberto. No se sabe por qué linaje de indicios se le antojó un galán inconveniente y sospechoso, incapaz de llevar la felicidad al corazón de la niña modelo, digna pareja de su hijo Torcuato. Cuando llegaron a sus oídos los rumores de intimidad entre Celedonia y Agliberto, se indignó con el malvado que llevaba la ruina, la deshonra y el escándalo a dos dignos hogares. Su odio se desencadenó torrencial e irreprimible. Hubiera deseado que se reinstaurara la Inquisición para que pudieran dársele todos los tormentos merecidos. Era de la más urgente justicia aplicarle el castigo más feroz y cruel.</p>
@@ -2235,7 +2259,7 @@
 				<floatingText><body><div type="section"><p>«Distinguida alimaña: Procure hacerme gracia de su presencia. Ninguna de las maquinaciones urdidas por su perfidia de bruja han dejado de dar sus correspondientes y funestos resultados. Prevenga la formación de un zaguanete integrado por su esposo, hijos, sobrinos y demás parientes si quiere evitar que le dé el trato debido a las comadrejas. -<seg rend="italics">Agliberto</seg>».</p></div></body></floatingText>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0223_chap31">
-				<head> La primavera médica</head>
+				<head xml:id="ne0223_head_033"> La primavera médica</head>
 				<p>EL TORBELLINO ESCANDALIZADO que aquella misiva levantó en el ánimo de doña Mencía cundió hasta casa de Mab. El joven ingeniero, arrepentido a los pocos minutos de tan brutales expresiones, fue requerido por la familia de su novia para dar explicaciones a la ofendida, ya dispuesta a que todos sus hijos lidiasen con el insolente para vengar tan grosero ultraje. No obstante, la señora, menos inflamada que Arias Gonzalo, hubiera encontrado en el joven Agliberto un peligroso Diego Ordóñez, deseoso de vengar la traición de que había sido víctima, de no haberse aclarado el motivo del retraimiento y reserva de Mab en varios días. La retirada a sus habitaciones -según confesión de ella- no obedecía a resentimiento o a manifiesta intención de gazmiarse. La verdadera causa de haberse apartado de su dulce amor era una pequeña erupción, un sarpullido ligerísimo ocasionado por el movimiento de humores en esa anticipación vernal que se llama la primavera médica. Para demostrarlo, se exhibió, no sin dengues y escrúpulos, ante él, envuelta la cabeza en un cachemir.</p>
 				<p>-Perdóname -le dijo-, estoy muy fea. Una mujer hecha según <seg rend="italics">un patrón ideal</seg> debe ser obediente a su modelo toda la vida. Estas cosas de la sangre son para desilusionar a cualquiera. ¿Me soñaste tú alguna vez, me pediste, me apeteciste con estas pintitas en la cara? ¿No es mejor evitarte este pasajero desencanto?</p>
 				<p>Al oír la palabra sangre, pensó él en aquella llama roja líquida que le corrió por la mano, abrasándole con una emoción desconocida, cuando levantó en sus brazos a Celedonia. Ahora lo que le desencantaba era el intento de dar importancia a la sangre de las erupciones cutáneas, la sangre de la coquetería decente, frente a la otra, a la insospechable sangre volcánica de las erupciones dramáticas. «¡Esta Mab hace todo lo que puede para perder terreno!», pensó.</p>
@@ -2265,7 +2289,7 @@
 				<p>Después de aquella entrevista el joven ingeniero consintió en dar explicaciones a doña Mencía y su reconciliación fue leal y sincera por ambas partes, pues el ardor beligerante siempre consigue tras de las treguas una paz duradera. Pero Mab no quería mostrar su sarpullido. Y mientras tanto, Agliberto corría a resarcirse de tal desamparo olvidándola en brazos de Celedonia. Procuraba verla a todas horas: por la mañana, por la tarde, por la noche; en la calle, en los teatros, en los bailes y, sobre todo, en el chalet de la cataléptica. Cuando no la encontraba o no había ocasión de verla, los celos se desencadenaban en su alma; no comía, ni dormía, ni alentaba pensando en ella y en su traición posible, y aquella zozobra que rayaba en la tortura se le antojaba la más hermosa y concluyente afirmación de la vida.</p>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0223_chap32">
-				<head> Napoleón otra vez</head>
+				<head xml:id="ne0223_head_034"> Napoleón otra vez</head>
 				<p>CARMELA PONCE, Betty y Marisol eran las tres mejores amigas de Celedonia; una sevillana garrida, de ojos magníficos; una inglesa criada en Madrid, y una madrileña en su propio jugo. Betty no era bella de rostro, pero era selecta de formas en lo espiritual y en lo corporal. Marisol se parecía a la Maja de Goya. Chicas solteras, ociosas, ricas, deliciosamente inútiles para lo que no fuera el deporte, el baile, el <seg type="foreign" xml:lang="en">flirt</seg> y quizá el amor, campaban por su desenvuelta alegría más que por sus respetos y recato. Las tres conocían los amores de Mab y de Agliberto, y aun sospechando la intimidad de este con Celedonia, nunca le denunciaron a ella. El lozano y florido goce de la existencia las eximía de toda mezquindad. Guapas mozas, sanas y protegidas de la fortuna, andaban como moro sin señor, independizadas de la moral burguesa, de sus familias y sus confesores, y no sentían mojigata malquerencia por aquel Hamlet rubio, cortés, ingenioso y desconcertante, siempre muy respetuoso y distanciado respecto de ellas. Agliberto las utilizó durante todo el invierno con calculado sentido pragmático para encontrar a Celedonia en casa de cualquiera de las tres. El pretexto del tango o el <seg rend="italics">mah-jong</seg> en su domicilio particular le excusaba de más públicas exhibiciones. Ellas quizá sorprendieran la razón utilitaria de su frecuentación, pero lejos de resentirse miraban con complacencia al supuesto que hacía el mozo del apartamiento, retiro y secreto que ellas tácitamente le brindaban.</p>
 				<p>Todo aquel mes de febrero, en que sortearon las nieves con los soles. Agliberto se consagró por entero a Celedonia. Iban con frecuencia casi cotidiana al chalet de Tetuán de las Victorias, a veces con indumento de alpinista y botas de sierra, porque junto a la verja de su albergue de amor llegó a formarse un nevero difícil de franquear con zapatos. Otras veces, en esos crepúsculos de fin de invierno, tan finos y tan tersos, con su cielo verde y colorado como una manzana, él la esperaba en un lugar poco concurrido y la raptaba en su moto hacia el modesto y, no obstante, soberano paraíso. Nadie podía reconocerlos; él, cubierto por su casco; ella, embutida en el sidecar entre las pieles de su abrigo.</p>
 
@@ -2282,7 +2306,7 @@
 				<p>Aquella máxima, desde un punto de vista lógico, parece que iría a aplicarse mecánicamente a Celedonia, pero por una de esas sorprendentes paradojas del corazón humano tenía por blanco y meta el fiel y ejemplar amor de Mab. La huida, sí, la huida -como decía Bonaparte-. Era preciso abandonar a la novia ideal, a la encarnación de lo previsto, al ideal de encargo, con objeto de tener tiempo para investigar quién era el rival que le disputaba a Celedonia y a quien esta amaba, ocultamente.</p>
 			</div>
 			<div n="33" type="chapter" xml:id="ne0223_chap33">
-				<head> El mantón de Manila</head>
+				<head xml:id="ne0223_head_035"> El mantón de Manila</head>
 				<p>Mab, aunque tarde, adquirió la triste y desconsoladora certeza de que Agliberto ya no la amaba. Comprendió la inanidad de sus atributos de mujer soñada, y tuvo la clara intuición de su derrota frente a la desenvuelta y arriesgada muchacha que, con un nombre feo, sin sus perfecciones canónicas de estatua, sin sus virtudes, no siendo casi nada, había engendrado el supremo mito vital para la captación del amor viril, y había ido haciéndose, completándose, desarrollándose, quizá perfeccionándose por la acción laboriosa de un conjunto de mentiras de la realidad, de patrañas de la acción y de la pasión, superiores en encanto y seducciones a los más dulces trampantojos de la fantasía. Y aunque tarde, Mab, que también era de carne y hueso, quiso luchar de mujer a mujer con la que le arrebataba un amor de derecho casi divino. También ella lubricaría una realidad, sin escrúpulos, sin miramientos, a todo arrojo y a todo peligro. No era tan solo un problema de amor propio, era un verdadero problema de amor. Además, a ella, prometida de un solo hombre, no le cabía el recurso de buscar a otro. Era, pues, un conflicto trágico de esencia: de ser o de no ser.</p>
 				<p>El domingo de Carnaval de 1924 coincidió con el 2 de marzo. Fue un día amarillo, transparente y traspasado de un vientecillo fino y fresco. Agliberto estaba citado con Mab y con Celedonia casi a la misma hora. Acudió primero a ver a la ideal; su erupción había desaparecido; después de misa y de un paseo corto se despidieron a condición de que él prescindiese de todo contacto con las máscaras y pasara la tarde en casa de ella. Después vio a la real, estaba más enojada que otras veces por la demora forzosa que le impuso la primera entrevista. Saldría, según dijo, al paseo, disfrazada, en un coche engalanado con Carmela Ponce, Marisol y otras amigas, pero necesitaba verle en el Palace a las siete y media. Aquellas circunstancias favorecían al galán; el reparto de tiempo se hacía cómodo y dar satisfacción a ambas era perfectamente compatible.</p>
 				<p>Su intachable prometida le manifestó por la tarde el deseo de ir al baile del Real del lunes. Él, que presumía la asistencia de Celedonia, arguyó:</p>
@@ -2388,7 +2412,7 @@
 				<p>Agliberto sacó un billete de cincuenta pesetas y se lo dio. Después, con el codo roto, el sombrero sobre la oreja y arrastrando el precioso mantón de Manila, salió a la calle, bajo la plena luz de mediodía, a buscar un taxi.</p>
 			</div>
 			<div n="34" type="chapter" xml:id="ne0223_chap34">
-				<head> Epopeya en un simón</head>
+				<head xml:id="ne0223_head_036"> Epopeya en un simón</head>
 				<p>DURMIÓ CASI TODO el martes de Carnaval, agitado por terrores y pesadillas confusas e insistentes. Al anochecer pudo conciliar un sueño más denso e igual. Prescindió de sus citas con Mab y Celedonia. Todo su empeño se concentraba en substraerse a la conciencia, evitar la vigilia clarividente. A la hora de cenar se sentó entre los suyos. Su padre le reconvino por los desórdenes que había observado en su conducta. Le intimó a un mayor arreglo y a una puntualidad rigurosa a las horas de cenar.</p>
 				<p>-Te agradeceré que no vengas después de las diez -le dijo con tono seco y dolorido.</p>
 				<p>Las hermanas rectificaron:</p>
@@ -2463,7 +2487,7 @@
 				<p>Cariacontecido, deshecho, el joven salió a la calle. En un café comió mecánicamente. Allí encontró a su amigo el periodista, borracho. Bebieron de madrugada cerveza, ajenjo, morapio. En su embriaguez desacostumbrada, las imágenes dolorosas despertaron en Agliberto la tentación del suicidio. Bajó al Manzanares con intención de ahogarse. La crecida era imponente, pero el alba rompió con un <seg rend="italics">ballet</seg> de nubes rosadas y adolescentes, con un pedazo de luna de oro y con un azul tan rico que desistió de sus propósitos ante la aurora del nuevo día.</p>
 			</div>
 			<div n="35" type="chapter" xml:id="ne0223_chap35">
-				<head> Los platillos de la balanza</head>
+				<head xml:id="ne0223_head_037"> Los platillos de la balanza</head>
 				<p>AL DÍA SIGUIENTE, en el chalet de los amantes, Celedonia, acusada de alta traición, contestaba al interrogatorio inexorable, entre la espada de los celos y la pared de sus tartas y retratos devueltos, en el banquillo de las enamoradas.</p>
 				<p>-¿Quién es ese teniente?</p>
 				<p>-Un teniente.</p>
@@ -2500,7 +2524,7 @@
 			</div>
 			
 			<div type="part">
-				<head> Intento de epílogo</head>
+				<head xml:id="ne0223_head_038"> Intento de epílogo</head>
 				<quote>
 					<lg type="poem">
 						<l><seg rend="italics">¡Cuánto ignora, cuánto yerra</seg></l>
@@ -2511,7 +2535,7 @@
 				</quote>
 
 			<div n="36" type="chapter" xml:id="ne0223_chap36">
-				<head> Una visita al novelista</head>
+				<head xml:id="ne0223_head_039"> Una visita al novelista</head>
 				<p>UNA JUGOSA TARDE de mayo Agliberto, ya ingeniero, con un bello traje gris y un clavel rojo en el ojal, llegó a casa del Novelista. Este le recibió entre contrariado y sonriente, en medio de cuartillas desparramadas y libros abiertos. En un jarrón de vieja loza de Sevilla se esponjaban unas rosas.</p>
 				<p>-¿Quién es usted y qué desea? -preguntó el escritor, apoyándose en el respaldo de un sillón Renacimiento francés.</p>
 				<p>-Soy Agliberto, personaje de novela.</p>
@@ -2565,7 +2589,7 @@
 				<p>-¡Gracias al cielo! -exclamó-. ¡Ya se ha marchado! ¡Qué impertinentes son estos jóvenes personajes de novela!</p>
 			</div>
 			<div n="37" type="chapter" xml:id="ne0223_chap37">
-				<head> Otra vez frente al mar</head>
+				<head xml:id="ne0223_head_040"> Otra vez frente al mar</head>
 				<p>AGLIBERTO SE OLVIDÓ de Mab, la desechó. Han pasado dos, tres años. Los que quieras, lector. Mediodía. Una playa. Ellos, los dos (no hay que preguntar quiénes), semidesnudos en sus trajes de baño. El cuerpo de ella apenas cubierto por un leve antifaz del torso, ingles y axilas por fronteras.</p>
 				<sp>
 					<speaker>CELEDONIA. </speaker>
@@ -2630,7 +2654,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

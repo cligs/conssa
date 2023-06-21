@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Entre naranjos</title>
-				<title type="sub"></title>
+				
 				<title type="short">Naranjos</title>
-				<title type="idno">
-					<idno type="bne">XX1892706</idno>
-					<idno type="viaf">309265512</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1522</measure>
@@ -141,13 +131,63 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0253</idno>
+						<idno type="cligs">ne0253</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2009">2009</date>, <idno>30122</idno>, <ref target="http://www.gutenberg.org/ebooks/30122"/>.</bibl>
-				<bibl type="print-source">Valencia, <date when="1904"></date></bibl>
-				<bibl type="edition-first"><date when="1900">1900</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Entre naranjos</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892706.html">XX1892706</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309265512/">309265512</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q929409/">Q929409</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2009">2009</date>, <idno>30122</idno>, <ref target="http://www.gutenberg.org/ebooks/30122"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Valencia</pubPlace>, <date when="1904"/></bibl>
+					<bibl type="edition-first"><date when="1900">1900</date><idno source="k10plus" type="ppn" n="1400950589" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950589"/><idno source="k10plus" type="ppn" n="139301013X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=139301013X"/><idno source="k10plus" type="ppn" n="226408663" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226408663"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">novela</title> <date when="1900">1900</date>, <publisher>F. Sempere</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1400950589" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950589"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre Naranjos</title>: 	<title type="sub">Novela</title> <date when="1900">1900</date>, <publisher>Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="139301013X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=139301013X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre Naranjos</title>: 	<title type="sub">novela</title> <date when="1900">1900</date>, <publisher>Ed. Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="226408663" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226408663"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1335705031" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1335705031"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="864820534" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=864820534"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="083730753" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083730753"/> </bibl>
+						<bibl type="further-edition" xml:lang="ita"><title type="main">Tra gli Aranci</title>: 	<title type="sub">romanzo</title> <date when="1920">1920</date>, <publisher>Vitagliano</publisher> <pubPlace>Milano</pubPlace> 		<idno type="ppn" n="464604982" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464604982"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">(novela)</title> <date when="1924">1924</date>, <publisher>Ed. Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="506554260" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=506554260"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464643791" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464643791"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464643716" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464643716"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title>: 	<title type="sub">(novela)</title> <date when="1927">1927</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350949883" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350949883"/> </bibl>
+						<bibl type="further-edition"><title type="main">Entre naranjos</title> <date when="1958">1958</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="757198082" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=757198082"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="1958">1958</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="461090171" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=461090171"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="1960">1960</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1113154160" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1113154160"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="1961">1961</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="465547516" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465547516"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="1972">1972</date>, <publisher>Inst. cubano del libro</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="1414737688" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1414737688"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="1972">1972</date>, <publisher>Inst. cubano del libro</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="326507663" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=326507663"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="1997">1997</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="246979232" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=246979232"/> 		<idno type="isbn" n="8437615852"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="2006">2006</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="61035535X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=61035535X"/> 		<idno type="isbn" n="8437615852"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479517194" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479517194"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana. Flor de Mayo. La barraca. Entre naranjos</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="615813569" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=615813569"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="2009">2009</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="83792457X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=83792457X"/> 		<idno type="isbn" n="9788437615851"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Entre naranjos</title> <date when="2013">2013</date>, <publisher>Divisa</publisher> <pubPlace>Valladolid</pubPlace> 		<idno type="ppn" n="750689943" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=750689943"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -158,6 +198,14 @@
 				<p>"Entre naranjos" es, en líneas generales, una novela de amor, alternándose entre el amor platónico, la sensualidad materialista, y los celos apasionados. A su vez, goza de gran protagonismo el mundo de la música, y en particular la ópera, una de las grandes pasiones de Blasco.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -191,7 +239,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela valenciana</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela valenciana</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -220,6 +268,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -228,9 +277,9 @@
 
 		<body>
 			<div type="part">
-				<head>PRIMERA PARTE</head>
+				<head xml:id="ne0253_head_000">PRIMERA PARTE</head>
 				<div n="1" type="chapter" xml:id="ne0253_chap1">
-					<head>I</head>
+					<head xml:id="ne0253_head_001">I</head>
 					<p>—Los amigos te esperan en el casino. Sólo te han visto un momento esta mañana: querrán oírte; que les cuentes algo de Madrid.</p>
 					<p>Y doña Bernarda fijaba en el joven diputado una mirada profunda y escudriñadora de madre severa que recordaba a Rafael sus inquietudes de la niñez.</p>
 					<p>—¿Vas directamente al Casino?...—añadió.—Ahora mismo irá Andrés.</p>
@@ -299,7 +348,7 @@
 					<p>—Bien venido, Rafaelito. No sé por qué, le esperaba esta tarde. Ya nos hemos enterado de sus triunfos: hasta este desierto llegaron la música y los vivas. Mi enhorabuena, señor diputado. Pase adelante su señoría.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0253_chap2">
-					<head>II</head>
+					<head xml:id="ne0253_head_002">II</head>
 					<p>Desde Valencia hasta Játiva, en toda la inmensa extensión cubierta de arrozales y naranjos que la gente valenciana encierra bajo el vago título de <seg rend="italics">la Ribera</seg>, no había quien ignorase el nombre de Brull y la fuerza política que significaba.</p>
 					<p>Cual si no se hubiera realizado la unidad nacional, y el país siguiera dividido en taifas o waliatos como cuando existía un rey moro en Carlet, otro en Denia y otro en Játiva, el régimen de elecciones mantenía una especie de señorío inviolable en cada distrito, y al recorrer en el gobierno de la provincia el mapa político, siempre que se fijaban en Alcira, decían lo mismo.</p>
 					<p>—Ahí estamos seguros. Contamos con Brull.</p>
@@ -409,7 +458,7 @@
 					<p>Aún acarició a su hijo el día que le vio entrar en el patio, escoltado por don Andrés, con el título de abogado. Le regaló su escopeta, una verdadera joya, admirada por todo el distrito, y un magnífico caballo. Y como si sólo esperase ver cumplido el deseo del viejo Brull, que él no supo realizar, a los pocos días lanzó su última tos, sonaron quejumbrosamente todas las campanas de la ciudad, salió con una orla negra de a palmo el semanario del partido, y de todo el distrito llegó la gente como en procesión, para ver si el cadáver del poderoso don Ramón Brull, que sabía detener o acelerar el curso de la justicia en la tierra, se pudría lo mismo que los despojos de los demás hombres.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0253_chap3">
-					<head>III</head>
+					<head xml:id="ne0253_head_003">III</head>
 					<p>Cuando doña Bernarda se vio sola y dueña absoluta de su casa, no pudo ocultar su satisfacción.</p>
 					<p>Ahora se vería de lo que era capaz una mujer.</p>
 					<p>Contaba con el consejo y experiencia de don Andrés, más unido a ella que nunca y con la figura de Rafael, el joven abogado sostenedor del nombre de los Brull.</p>
@@ -523,7 +572,7 @@
 					<p>—¡Imbécil!... ¡estúpido!... <seg rend="italics">¡¡Provinciano!!</seg></p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0253_chap4">
-					<head>IV</head>
+					<head xml:id="ne0253_head_004">IV</head>
 					<p>Doña Bernarda no llegó a sospechar el motivo por el cual su hijo se levantó al día siguiente pálido y ojeroso como quien ha pasado una mala noche. Tampoco sus amigos políticos adivinaron por la tarde la razón por la que Rafael, haciendo buen tiempo, fuese a encerrarse en la atmósfera densa del Casino.</p>
 					<p>Los más bulliciosos correligionarios le rodearon para hablar una vez más de la gran noticia que hacía una semana traía revuelto al partido. Iban a ser disueltas las Cortes; los diarios no hablaban de otra cosa. Dentro de dos o tres meses, antes de finalizar el año, nuevas elecciones, y con ellas el triunfo ruidoso y unánime de la candidatura de Rafael.</p>
 					<p>Don Andrés y los más graves de sus adeptos, andaban preocupados recordando fechas y haciendo cuentas con los dedos, como cortesanos que forman sus cálculos en vísperas de la declaración de mayor edad del príncipe.</p>
@@ -591,7 +640,7 @@
 					<p>Creyó que la muchacha le miraba, que le reconocía por entre el follaje, a pesar de la distancia, y sintiendo un repentino miedo de chiquillo que se ve sorprendido en plena travesura, volvió la espalda y se alejó rápidamente hacia la ciudad, experimentando después cierta satisfacción, como si hubiera adelantado algo en el conocimiento de Leonora, sólo con llegar a las inmediaciones de la casa azul.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0253_chap5">
-					<head>V</head>
+					<head xml:id="ne0253_head_005">V</head>
 					<p>Las primeras lluvias del invierno caían con insistencia sobre la comarca. El cielo gris, cargado de nubes, parecía tocar la copa de los árboles. La tierra rojiza de los campos obscurecíase bajo el continuo chaparrón; los caminos hondos y tortuosos, entre las tapias y setos de los huertos, convertíanse en barrancos; paralizábase la vida laboriosa del cultivo y los pobres naranjos, tristes y llorosos, encogíanse bajo el diluvio, como protestando de aquel cambio brusco en el país del sol.</p>
 					<p>El río crecía. Las aguas rojas y gelatinosas, como arcilla líquida, chocaban contra las pilastras de los puentes, hirviendo como montones removidos de hojas secas. Los habitantes de las casas inmediatas al Júcar seguían con mirada ansiosa el curso del río y plantaban en la orilla cañas y palos para convencerse de la subida de su nivel.</p>
 					<p>—<seg rend="italics">¿Munta?...</seg>—preguntaban los que vivían en el interior.</p>
@@ -842,7 +891,7 @@
 					<p>Rafael, abandonando el timón, con el rostro vuelto a la casa, sólo veía aquella arrogante figura, que agitaba un pañuelo saludándoles. La vio mucho tiempo, y cuando las copas de los árboles sumergidos le ocultaron el balcón, inclinó la cabeza, entregándose al silencioso placer de saborear la dulzura que aún sentía en sus labios.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0253_chap6">
-					<head>VI</head>
+					<head xml:id="ne0253_head_006">VI</head>
 					<p>Las elecciones pusieron en movimiento a todo el distrito. Había llegado el momento solemne para la casa de Brull y todos sus fieles, no seguros aún de la omnipotencia del partido, como si temieran a ocultos enemigos que podían presentarse inesperadamente, se agitaban en la ciudad y los pueblos lanzando cual grito de victoria el nombre de Rafael.</p>
 					<p>Pocos se acordaban de la inundación. El sol bienhechor había secado los campos; los huertos se mostraban más hermosos que nunca, como si el río, al invadirlos, les hubiese fecundado con nueva vida; se anunciaba una cosecha magnífica, y sólo como recuerdo de la catástrofe quedaba algún seto aplastado, alguna cerca desmoronada, algún camino hondo con los ribazos destruidos.</p>
 					<p>Todo se reparaba con relativa rapidez y la gente mostrábase contenta hablando del pasado peligro con desprecio. ¡Hasta la otra!</p>
@@ -923,9 +972,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>SEGUNDA PARTE</head>
+				<head xml:id="ne0253_head_007">SEGUNDA PARTE</head>
 				<div n="7" type="chapter" xml:id="ne0253_chap7">
-					<head>I</head>
+					<head xml:id="ne0253_head_008">I</head>
 					<p>En la plazoleta que formaban frente a la casa azul los altos y tupidos rosales, erguíanse cuatro palmeras que, abandonadas muchos años, dejaban colgar las secas ramas como miembros muertos debajo de las palmas nuevas, arrogantes y rumorosas. Hundidos en el follaje de los rosales, a la entrada de la plazoleta, había dos bancos antiguos de mampostería, blanqueados con cal, con el asiento y el respaldo de viejos azulejos valencianos de una transparencia aterciopelada, en la que resaltaban los floreados arabescos, los caprichos multicolores de una fabricación heredada de los árabes.</p>
 					<p>Eran bancos con la elegancia de líneas de un sofá del pasado siglo, frescos y de saludable dureza, en los que gustaba sentarse Leonora por las tardes, cuando las palmeras extendían su sombra en la plazoleta.</p>
 					<p>En uno de ellos leía la sencilla doña Pepita la historia del santo del día, ayudada por unas antiguas gafas con montura de plata. Beppa la doncella, escuchábala atenta para comprender todas las palabras, con una admiración respetuosa de muchacha de la campiña romana familiarizada con la devoción desde sus primeros años.</p>
@@ -973,7 +1022,7 @@
 					<p>—Confío en que usted habrá vuelto de su viaje más serio y respetuoso. Nada de juegos y atrevimientos, ¿eh? Ya sabe usted que soy fuerte y cómo las gasto.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0253_chap8">
-					<head>II</head>
+					<head xml:id="ne0253_head_009">II</head>
 					<p>Toda la noche la pasó Rafael despierto y revolviéndose en su cama.</p>
 					<p>Los partidarios le habían obsequiado con una serenata hasta más de media noche. Los más notables se mostraban ofendidos por haber pasado toda la tarde en el casino esperando en vano al diputado. Este, apareció allí al anochecer, y después de estrechar de nuevo manos y contestar saludos como por la mañana, volvió a su casa sin atreverse a levantar la cabeza ante su madre.</p>
 					<p>Tenía miedo a aquellos ojos iracundos, en los que podría leer seguramente el relato de cuanto había hecho por la tarde; pero al mismo tiempo abrigaba el propósito de desobedecer a su madre, oponiendo a su energía una resistencia glacial.</p>
@@ -1069,7 +1118,7 @@
 					<p>Estaba cogido en la estela de seducción, en aquel torbellino de amor que seguía a la artista por todas partes, aprisionando a los hombres, arrojándoles al suelo quebrantados y sin voluntad, como siervos de la belleza.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0253_chap9">
-					<head>III</head>
+					<head xml:id="ne0253_head_010">III</head>
 					<p>—Temprano nos vemos hoy: buenos días, Rafaelito... Madrugo por ver el mercado. De niña era para mí un acontecimiento la llegada del miércoles. ¡Cuánta gente!</p>
 					<p>Y Leonora, olvidada ya de las aglomeraciones de las grandes ciudades, se admiraba ante la confusión de gente que se agita en la plaza llamada del Prado, donde todos los miércoles se verificaba el gran mercado del distrito.</p>
 					<p>Llegaban los labradores, con la faja abultada por los cartuchos de dinero, a comprar lo que necesitaban para toda la semana allá en su desierto, rodeado de naranjos; iban de un puesto a otro las hortelanas, elegantes y esbeltas cual campesinas de opereta, peinadas como señoritas, con faldas de batista clara que, al recogerse, dejaban al descubierto las medias finas y los zapatos ajustados. El rostro tostado y las manos duras era lo único que delataba la rusticidad de aquellas muchachas a quienes un cultivo riquísimo hacía vivir en la abundancia.</p>
@@ -1167,7 +1216,7 @@
 					<p>Y para dar más fuerza a estas palabras cuando Rafael, humillado y sucio, salió del huerto, Leonora cerró tras él la verja de madera con tan brutal ímpetu, que casi hizo saltar los barrotes.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0253_chap10">
-					<head>IV</head>
+					<head xml:id="ne0253_head_011">IV</head>
 					<p>Doña Bernarda mostrábase contenta de su Rafael. Se acabaron las miradas feroces, los gestos severos, las mudas escenas entre madre e hijo, que presenciaban con temor los íntimos de la casa.</p>
 					<p>Ya no iba a la casa azul; lo sabía con gran certeza, gracias al espionaje gratuito con que la servían las gentes afectas a la familia. Apenas salía de casa; un rato al casino por las tardes, y el resto del día en el comedor con ella y los amigos, o encerrado en su cuarto, a vueltas sin duda con sus libros, que la austera señora miraba con el respeto supersticioso de su ignorancia.</p>
 					<p>Don Andrés, el consejero, se mostraba triunfante al comentar aquel cambio. ¿Qué había dicho él, siempre que doña Bernarda, en las íntimas confidencias de aquella amistad que casi tomaba el carácter de una pasión senil, tranquila y respetuosa, se quejaba de la rebeldía del muchacho? Aquello pasaría: era un capricho de la edad; había que dar a la juventud lo suyo. Rafael no había estudiado para cartujo. ¡Otros a su edad y aun con más años eran peores!... Y el viejo señor pensaba sonriendo en sus fáciles conquistas de los almacenes, entre el rebaño despeinado, miserable y de sucios zagalejos que empapela la naranja. La buena doña Bernarda, después de sufrir tanto de su marido era demasiado exigente con su hijo. ¡Que se divirtiera! ¡que gozara! Ya se cansaría de la artista con ser tan hermosa, y entonces sería fácil volverle a la buena senda.</p>
@@ -1293,7 +1342,7 @@
 					<p>—¡Casarnos! ¿y para qué?... Eso es para otros. Quiéreme mucho, niño mío, ámame cuanto puedas... Yo sólo creo en el Amor.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0253_chap11">
-					<head>V</head>
+					<head xml:id="ne0253_head_012">V</head>
 					<p>—Pero bebé, ¿cuándo llegamos a la isla?... Me fatiga estar en este banco, lejos de ti, viendo esos bracitos míos, cómo se cansan de tanto darle a los remos. ¡Un beso!... ¡aunque te enfades! Eso te refrescará.</p>
 					<p>Y poniéndose en pie, Leonora dio dos pasos en la blanca barca, imprimiéndola un fuerte balanceo, y besó varias veces a Rafael, que soltando los remos se defendía entre risas.</p>
 					<p>—¡Loca! Así no llegaremos nunca. Con descansos como estos se hace poco camino, y yo te he prometido llevarte a la isla.</p>
@@ -1393,7 +1442,7 @@
 					<p>Pero Rafael no vaciló. Siguió subiendo los peldaños, sin recatarse, sin temblar cual otras veces; como el señor que ha estado ausente mucho tiempo y entra arrogante en la casa que es suya.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0253_chap12">
-					<head>VI</head>
+					<head xml:id="ne0253_head_013">VI</head>
 					<p>—Dice usted bien, Andrés. Rafael no es mi hijo; me lo han cambiado. Esa perdida ha hecho de él otro hombre. Peor, mil veces peor que su padre. Loco por esa mujer; capaz de pasar por encima de mí si le separo de ella. Usted se queja de su falta de respeto; ¿pues y yo?... Se hubiera avergonzado usted viéndole. La otra mañana al entrar en casa me trató igual que a usted. Pocas palabras, pero buenas. El hará lo que quiera, o lo que es lo mismo, seguirá con esa mujer hasta que se canse o reviente de una indigestión de pecados como su padre... ¡Dios mío! ¿y para esto he sufrido yo? ¿para esto me he sacrificado años y más años queriendo hacer de él un grande hombre?</p>
 					<p>La austera doña Bernarda, vencida en su autoridad por la rebeldía tenaz del hijo, lloraba hablando con su íntimo confidente. En sus lágrimas de dolor maternal había también algo del despecho de mujer autoritaria, al ver en la propia casa una voluntad que se rebelaba, colocándose por encima de la suya.</p>
 					<p>Relataba a don Andrés entre suspiros la vida de su hijo en aquellos días, desde que había adquirido su independencia. Ya no se recataba para pasar la noche fuera de casa. Volvía después de amanecer, y por la tarde con el bocado en la boca, como ella decía, emprendía de nuevo el camino de la casa azul apresuradamente, como si le faltase el tiempo para ver a aquella condenada.</p>
@@ -1461,7 +1510,7 @@
 					<p>Ella partiría cuanto antes; él iría a su encuentro dos días después cuando hubiese renacido la confianza y todos la creyeran lejos, muy lejos. ¿Dónde se encontrarían? Primero pensaron en Marsella, pero era demasiado lejos. Después en Barcelona. Regateaban las horas y los minutos. Les parecía intolerable pasar varios días sin verse. Cuanto antes se reuniesen, mejor, lo importante era salir de la ciudad. Y acabaron por decidir que se reunirían lo más cerca posible: en Valencia. El amor gusta de la audacia.</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0253_chap13">
-					<head>VII</head>
+					<head xml:id="ne0253_head_014">VII</head>
 					<p>Acababan de almorzar entre las maletas y las cajas, que ocupaban una gran parte de la habitación de Leonora en el hotel de Roma.</p>
 					<p>Por primera vez se sentaban en la mesa juntos en familiar intimidad, sin otro testigo que Beppa, la fiel doncella, acostumbrada por la azarosa vida de su señora a toda clase de sorpresas, y que contemplaba a Rafael con respetuosa sonrisa, como un ídolo nuevo con el que debía compartir la devota sumisión que sentía por Leonora.</p>
 					<p>Era el primer momento de tranquilidad y alegría que había tenido el joven en algunos días. El antiguo hotel con sus habitaciones grandes, de alto techo; sus corredores en discreta penumbra y su calma conventual, le parecía un lugar de delicias, un ameno retiro en el que se consideraba libre ya de las murmuraciones y luchas que le habían oprimido como un círculo infernal. Además, sentía allí ese viento exótico que parece soplar en los puertos y las grandes estaciones de ferrocarril. Todo le hablaba de la fuga, de la incógnita y deliciosa ocultación en aquel país tan calurosamente descrito por Leonora, desde los macarrones del almuerzo y el Chianti en empajada y ventruda redoma, hasta el castellano defectuoso y musical de los dueños del hotel, carnosos hombretones con enormes bigotes que recordaban los tradicionales mostachos de la casa de Saboya.</p>
@@ -1546,9 +1595,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>TERCERA PARTE</head>
+				<head xml:id="ne0253_head_015">TERCERA PARTE</head>
 				<div n="14" type="chapter" xml:id="ne0253_chap14">
-					<head>I</head>
+					<head xml:id="ne0253_head_016">I</head>
 					<p>—Don Rafael; los señores de la Comisión de Presupuestos aguardan a usía en la sección segunda.</p>
 					<p>—Voy al momento.</p>
 					<p>Y el diputado siguió inclinado sobre su pupitre en el gabinete de escritura del Congreso, terminando su última carta, añadiendo un sobre más al montón de correspondencia que se apilaba en el extremo de la mesa, junto al bastón y el sombrero de copa.</p>
@@ -1600,7 +1649,7 @@
 					<p>Y todo aquel rebaño de malhumorados que esperando un acta jamás llegada, corrían como viejos caballos al olor de la pólvora a aglomerarse en dos masas al lado de la presidencia, apenas en el salón se armaba bronca con campanillazos, no podían imaginarse que el joven diputado muchas noches interrumpía su lectura con la tentación de arrojar contra la pared los gruesos tomos de las sesiones, y acababa pensando con escalofríos de intensa voluptuosidad en lo que habría sido de él corriendo el mundo tras unos ojos verdes cuya luz dorada creía ver temblar entre los renglones de la amazacotada prosa parlamentaria.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0253_chap15">
-					<head>II</head>
+					<head xml:id="ne0253_head_017">II</head>
 					<p>—Orden del día: continúa la discusión del presupuesto de obligaciones eclesiásticas.</p>
 					<p>En el salón de sesiones se marcó un movimiento de fuga; el mismo pánico que desbanda los ejércitos y disuelve las multitudes. Se levantaban los más resueltos para escapar y les seguían en su huida grupos enteros, aclarándose por momentos los escaños.</p>
 					<p>La Cámara estaba llena desde primera hora. Era día de emociones: una discusión entre el jefe del gobierno y un antiguo compañero que ahora estaba en la oposición; un antagonismo de viejos compadres, en el que salían a luz los secretos de la intimidad, todas las antiguas artimañas en común para sostenerse en el poder. Y el silencioso público que se deleitaba con este pugilato, los diputados que llenaban los escaños, las dos masas que se estrujaban a ambos lados de la presidencia, emprendieron la fuga al ver terminado el incidente, sabiéndoles a poco las dos horas de alusiones y punzantes recuerdos.</p>
@@ -1657,7 +1706,7 @@
 					<p>—Parece extranjera. Será mujer de algún diplomático.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0253_chap16">
-					<head>III</head>
+					<head xml:id="ne0253_head_018">III</head>
 					<p>Al salir del palacio la vio en la acera, disponiéndose a subir en una berlina. Un ujier del Congreso sostenía la portezuela con el respeto que inspira el coche oficial, el galón de oro brillante en el sombrero de los cocheros.</p>
 					<p>Rafael se aproximaba, creyendo todavía a la vista de aquel carruaje en una asombrosa semejanza. Pero no, era ella; la misma; ¡como si no hubiesen transcurrido ocho años!</p>
 					<p>—¡Leonora! ¡Usted aquí!...</p>
@@ -1735,7 +1784,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN</head>
+				<head xml:id="ne0253_head_019">FIN</head>
 			</div>
 		</back>
 	</text>

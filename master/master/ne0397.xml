@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La cópula</title>
-				<title type="sub">Novela de amor</title>
+				
 				<title type="short">Copula</title>
-				<title type="idno">
-					<idno type="bne">XX2795014</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1022853</idno>
-					<idno type="viaf">17371849</idno>
-					<name type="short">Rueda</name>
-					<name type="full">Salvador Rueda</name>
+					<name type="short" ref="#Rueda"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">516</measure>
@@ -140,13 +131,41 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0397</idno>
+						<idno type="cligs">ne0397</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bne" subtype="pdf">BNE, <date when="2018">2018</date>.<ref target="http://bdh-rd.bne.es/viewer.vm?id=0000192587&amp;page=1"/></bibl>
-				<bibl type="print-source">IMPRENTA DE J. RUEDA, <date when="1908">1908</date>, Madrid.</bibl>
-				<bibl type="edition-first"><date when="1906">1906</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La cópula</title>
+					<title type="sub">Novela de amor</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2795014.html">XX2795014</idno>
+				</idno>
+				</title>
+					<author xml:id="Rueda">
+						<name type="full"><forename>Salvador</forename> <surname>Rueda</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 7460 - IP 7461">IP 7460 - IP 7461</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5121471/">Q5121471</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1022853.html">XX1022853</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/17371849/">17371849</idno>
+							<idno type="gnd" corresp="  https://d-nb.info/gnd/118603833">118603833</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bne" subtype="pdf">BNE, <date when="2018">2018</date>.<ref target="http://bdh-rd.bne.es/viewer.vm?id=0000192587&amp;amp;page=1"/></bibl>
+					<bibl type="print-source">IMPRENTA DE J. RUEDA, <date when="1908">1908</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first"><date when="1906">1906</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">La cópula</title>: 	<title type="sub">novela de amor</title> <date when="1908">1908</date>, <publisher>Libr. de Pueyo</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464878462" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464878462"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La cópula</title>: 	<title type="sub">novela de amor</title> <date when="1922">1922</date>, <publisher>Ed. Arte y Letras</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464705231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464705231"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La cópula</title> <date when="2010">2010</date>, <publisher>Clan</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="656612932" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=656612932"/> 		<idno type="isbn" n="9788496745537"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La cópula</title> <date when="2014">2014</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="77769672X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=77769672X"/> 		<idno type="isbn" n="9788437632193"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +176,14 @@
 				<p>Los agrios censores de esta novela la han tachado de naturalista e impúdica. Nada más lejos de la realidad. Rueda, en verso y en prosa, confiere al amor y al sexo una proyección cósmica, espiritual, simbólica. La cópula no es un relato crudamente realista ni pornográfico, sino un profesión de fe en la grandeza y las maravillas del mundo creado. Esa exagerada trascendencia son las alas y también el lastre de la novela.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 7460" key="IP 7460" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL8">6</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +196,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">1-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -181,7 +208,7 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">modernist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">costumbrista</term>
@@ -195,7 +222,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE8">0.2</term>
 					<term type="text.litHist.literaryQuality" resp="MdLE8">high</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">positive</term>
 					<term type="text.plot.representation">neutral</term>
@@ -216,17 +243,18 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-02-05" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>SALVADOR RUEDA</head>
+				<head xml:id="ne0397_head_000">SALVADOR RUEDA</head>
 				<p><seg rend="bold">LA COPULA</seg></p>
 				<p>Novela de amor</p>
 			</div>
 			<div>
-				<head>CÓPULA</head>
+				<head xml:id="ne0397_head_001">CÓPULA</head>
 				<p><seg rend="bold">NOVElA DE AMOR</seg></p>
 				<p><seg rend="bold">MADRID </seg> <seg rend="bold">IMPRENTA DE J. RUEDA</seg></p>
 				<p>—HUERTAS</p>
@@ -239,7 +267,7 @@
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0397_chap1">
-				<head>I</head>
+				<head xml:id="ne0397_head_002">I</head>
 				<p>Rosalía era la unigénita de un riquísimo moro, perezoso y soñador, y de una andaluza bautizada en Sevilla. Del padre heredó la mocita la intuición artística, el pensar vago y flotante, la somnolencia que hacía resbalar su alma por idealidades aúreas, como el amor á la luz, al color, á la brillantez y á cuanto llena el alma de halago y la preña de visiones sensuales. El raudal de caliente sangre mora que la casi mujer llevaba en las venas, caldeaba su cerebro constantemente como si fuese un narcótico do placer, una morfina inefable.</p>
 				<p>De la madre, tenía la concepción pintoresca, lija en el acto por la imagen plástica que esculpe; el sentido rápido de lo cómico, que, á sus solas, desahogaba en frescos borbotones de risa. Reíase á solas para no desprestigiar nada de la vida, que ella hubiera dado algo de su ser por remediar. También tenía la virtud de la limpieza; no ya la que viste de claridad cuanto toca, sino otra de origen más alto, la que bruñe por medio de la estética el alma. Esa limpieza que es derrame de luz interior, daba á Rosalía la condición suprema, la de un corazón templado en la luz viva de la belleza.</p>
 				<p>No ejercía el arte, lo amaba, y ni siquiera sabía ella que lo amaba: en el génesis de mujer tan especial, la sensibilidad era lo más despierto, la afinación de sentidos, el temblor constante en que la tenían siempre cuanto suena y refulge, atrae y enamora.</p>
@@ -249,7 +277,7 @@
 				<p>Este era el boceto de persona que empezaba á diseñarse en Rosalía. El vaso, el cuerpo donde se encerraba el espíritu, era alto, delgado, aéreo con la armonía y la ligereza que tienen al andar las mujeres de Sevilla. Su cuello era csnceño; las orejas exageradamente reducidas; la mata de polo, espesa, negra, brutal, pelo para hacer tres cabelleras; la nariz aguileña; los ojos rasgados y verdes, llenos de vaguedades y ensueños, ojos de profundidades sin fondo; la frente curva y redonda como una patena; las mejillas aterciopeladas, y en medio de la soñadora faz árabe, unos 1 abios gruesos, redondos, que incitaban á chuparlos, labios de un carmín alarmante, especie de doble grito rojo del sensualismo.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0397_chap2">
-				<head>II</head>
+				<head xml:id="ne0397_head_003">II</head>
 				<p>Aprendido de su mismo padre desde pequeña, llegó Rosalía á saber el árabe, y de saber el árabe vulgar, pasó á conocer el árabe literario, el árabe elegante de los poetas. Cuando pudo dominarlo bien, se amplió su alma con un goce nuevo, el de la poesía hiperbólica sembrada de imágenes deslumbradoras. Aquellos libros no le parecieron enfadosos como los demás: al contrario, cada estrofa se le antojaba un trabajo comprimido de piedra preciosa, especie de apretada estalactita que se compone de millones y millones de gotas convertidas en piedra. Luego, las imágenes de los poetas de su raza, eran tan vivas como si fuesen recortadas de relámpagos, y se complacía ella en la soledad, en ver rutilar una hipérbole presa á la poesía como una trémula mariposa atravesada por un alfiler: aquella intensidad de vida y de visión, la enloquecía.</p>
 				<p>Como quien se tiende boca abajo al borde de un estanque para ver pasar por el fondo el inmenso parpadeo sideral, ella tendía el alma sobre los libros forjados á golpe de ritmo, para ver pasar por sus páginas las estalladoras imágenes de los poetas. Aquel centelleo cegador do la frase, aquellas explosiones de luz le hacían temblar con un placer á otro ninguno igualado, y le hacían ver que hay todavía una cosa superior á la naturaleza misma, y es la propia naturaleza grabada por imágenes inalterables dentro de la cadencia del verso.</p>
 				<p>La piedra de toque suprema para saberse si un temperamento humano es artista hasta la médula del espíritu en punto á literatura, no es penetrarse de la idea, no es ejercitar el raciocinio, no es abarcar la síntesis, no es ver claramente la brújula con que señala el autor: es sencillamente sentir la imágen por ella misma, dejarse alumbrar interiormente por su luz como por un relámpago que hace oscilar de goce todos los matices del alma, bien como hace oscilar el sol toda la gama de una perla. Así era Rosalía: nadie la enseñó á sentir la imágen en la poesía, porque eso no se puede enseñar, como no puede enseñarse por profesor ninguno el sentimiento del color en la pintura ni el sentimiento del ritmo en la estrofa.</p>
@@ -266,7 +294,7 @@
 				<p>El cordaje nervioso de la joven templado estaba al unísono de todas las cosas de la naturaleza, y cualquier sonido, cualquier matiz, cualquier olor, cualquier estremecimiento, iban á resonar en su organismo, como el más leve soplo del viento hace gemir las cuerdas de un violín prodigioso.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0397_chap3">
-				<head>III</head>
+				<head xml:id="ne0397_head_004">III</head>
 				<p>Un día, esta gran intuitiva, al dejar el lecho, regó de amapolas de sangre las sábanas, y saltó á tierra hecha mujer. Durante el sueño, la fisiología no paró de hacer su misterio, y al romper el sol, estalló del capullo la soberana rosa de carne. Los átomos, que no paran durante los siglos, que son los más tenaces trabajadores de la Creación, vinieron cincelando y cincelando-durante años en aquel cuerpo, hasta íormar una estatua de hermosura. Se alegró el padre de Rosalía de aquel desplega-miento, porque enfermo como se hallaba, á la hora menos prevista dejaría de vivir, y era un gran consuelo para él dejarse en el mundo, ya íuera de la primera evolución material, á su hija, coronada, además, por una inmensa fortuna.</p>
 				<p>La abrazó con amor tiernísimo, nacido de los huesos y se miró en aquellos ojos profundos de Rosalía, que semejaban dos fuentes de misterios. Luego se entretuvo en enredarla, jugando, en su propia cabellera fúnebre y enorme, gozando el viejo con aquel prodigio, especie de compacto cortinaje de hebras de ébano. Era un espectáculo siempre nuevo, en verdad, mirar aquel torrente de cabellos: parecía como si hecha un desbordamiento de hilos largísimos, se le saliera la fantasía por la excelsa redondez de la cabeza.</p>
 				<p>Enfundado con noble abandono en una costosa bata y con su gorro árabe de borla ingrávida que le barría los hombros hundidos y caducos, el moro gustaba jugar con su hija como le gustará á la nieve jugar con una llama. Comprendía que Dios había dado demasiada imaginación á la joven, que la había hecho demasiado sensible y quebradiza, como si la fraguara con tentáculos de caracol y con películas do cristal. Además la encontraba demasiado taciturna; pero en eso se equivocaba el padre. Las largas horas que en silencio pasaba la joven con los ojos fijos en la naturaleza, eran horas de clarísimas fiestas interiores, de despilfarros de goce exquisito, de éxtasis ensoñadores en que la ya mujer veía con clarividencia maravillosa</p>
@@ -290,7 +318,7 @@
 				<p>Este era el David do carne amorosa y viviente, el David soberano y magnífico que al registrar Rosalía su memoria contusa, se irguió de pronto en su alma y dijo: / <seg rend="italics">Aquí estoy!</seg></p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0397_chap4">
-				<head>IV</head>
+				<head xml:id="ne0397_head_005">IV</head>
 				<p>Al incorporarse aquel hombre, en ilusión, dentro de ella, Rubí lo reconoció y dió un grito do intenso júbilo material, de alegría salvaje y loca, y sintió que su corazón disparado, transmitía su repique de campanario á las sienes, al cerebro, á los ojos, que se le llenaron de chirivitas anunciadoras de un exceso de sangre rica y ociosa.</p>
 				<p>Si Rubí quería millones de medias moléculas en qué calcar las suyas, allí tenía moléculas de largo. Se podían hacer seis Rosalías del cuerpo colosal del moro. Después de aquella alegría intensísima, casi dolorosa, do todas las vértebras de la mujer al reconocer á su antiguo eleíante, un arrebato de desesperación la acometió al extender las manos hacia el gigante y no poder agarrar más que un sueño; aire: sus manos quedaron vacías como las del que pretende agarrar un rayo de luz. Lo veía en la actitud por él preferida, y en presencia de aquella aparición, más ardía su pecho apasionado.</p>
 				<p>¡Oh alarido de la carne, oh encendimiento súbito de la material ¿Visteis el castillo de fuegos artificiales empezar por una luz que se inicia en su base, y se duplica, y se centuplica, y se propaga en millones de luces que silban, crujen, estallan, hasta correr á lo ancho y á lo largo del cas Cilio encendiéndolo entre estampidos do batalla y convirtiéndolo en una magnífica forma que arde toda, que tiembla toda, que hormiguea toda, erizada de retinas multicolores? Pues así ardió toda Rosalía al reconocer á su hércules de otros tiempos y no poder agarrar con sus manos sino un sueño, una niebla, una burlesca onda de aire. Toda Rubí temblaba: su pecho se estremecía, elevando y descendiendo las dos ánforas vírgenes coronadas por capullos de adellas; temblaban sus hombros: ardía su pecho como carne verde.</p>
@@ -298,7 +326,7 @@
 				<p>Una cama de elegantes tallados, donde los escoplos habían indicado ligeros motivos de plantas exóticas, recojió la escultura armoniosa de la virgen, por cuyas líneas corría como una claridad sagrada: los millones de hebras de seda de las sábanas, la besaron á lo largo con limpidez purísima, y el cabezal de holandas recogió entre sus encajes aquella cabeza inédita de pecados. Entornó sus párpados, detrás de los cuales se guarecían dos esmeraldas clarísimas, y sus labios formularon los apretados repliegues de un capullo, como para dar un beso duro y largo. Luego extendió las manos satinadas de brillos virginales y dió un abrazo al aire antes de quedarse dormida. Como las Irutas ráyanse cuando están en la plenitud de la sazón, los brazos de mujer abrazan do un modo instintivo, cuando el seno está plenamente alto y plenamente redondo, y cuando las caderas han llevado á su límite sus curvas gloriosas. Como una palmera desmayada en una siesta africana, Rosalía se durmió. Su imaginación volvió á reconstruir la figura de hombre que iba encerrada en ella, y el moro se apareció en el sueño, paternal, grandón, riente, con su bondad despojada de doblez. Rosalía se amparó, en sueños, entre los brazos de aquel hombre, símbolo, por su grandor, de todos los hombres, y creyóse segura, como metida en una fortaleza. Ella, lo débil, lo aromado, lo exqui. sito, la mujer, en fin, que pareoía el símbolo de todas las mujeres, encontró, al cabo, su mitad justa, la otra media humanidad, que era el vigor, la masculinidad, la grandeza. Mientras no se verifica este encuentro, las dos partes en que se divide lo humano, van incompletas y dessquilibradas, viviendo media innutrida existencia. En el sueño, Rosalia, emboscó su cabeza de pajarito débil, entre las barbas torrenciales y machunas de David, y tendida sobro sus muslos poderosos y defendida por los dos brazos del gigante, se columpió, como un niño en el regazo maternal. Rosalía aspiró, hasta recalar sus entrañas, el vaho de luerza, el vaho á hombre, que se exhalaba de aquel enorme macho, y reblandecidas de sentimiento sus entrañas, lloró con largo lloro de felicidad. Agarraba por fin á su maestro en fisiología amorosa, lo prendía de las barbas con las manos, con los dientes apretados; luego lo abarcaba por el torso colosal; estaba allí, sí, y no le cabía entre los brazos; no se le escaparía. El le sonreía con sus dos gordas y sensuales rayas de bermellón bondadoso.—¡Rubí!— decíale, jugando, el cíclope, y la besaba con aquel be90 que pesaba una libra, el beso chorreante de fuerza de un clavel reventón. Soñando, creíase Rosalía que la creación entera la besaba. ¡Que plena de sí misma se mecía en el regazo del dios! Nadie osaría quitárselo; lo trincaba, le clavaba las zarpas felinas de mujer, lo agarraba á puñados de las mollas de carne excelsa, de las cerdas largas y potentes del tórax, de las bizarras tetillas, como amplios clavos de puerta antigua de iglesia. Luego, soñando, le contó toda su historia desde el tiempo en que no se habían visto; la muerto de su madre; la enfermedad gravísima del padre que por poco no se va á Iaotra vida; el abandono del comercio después de haber hecho inmensamente millonario áDon Ezequiel; el traslado de éste y de ella á los montes donde se hallaban; años de no verse, de no oirse, de no saber ella siquiera que lo quería, más aún, ni que existiese. «Ahora, tú, cuéntame tú dónde has estado; qué has hecho; si te acordaste de mí; si ya no me vas á dejar nunca. Mi padre, herido en el corazón, morirá el mejor día, y yo quiero ser tuya, tuya, tuya, tuya, para siempre.® Y en un trenesí de amor lleno de lágrimas, de balbuceos, de incoherencias, Rubí crepitaba como un brasero al encenderse y hablaba, y rogaba, y besaba, y mordía, y pronunciaba palabrasrotas como un collar suelto que se rocia á la desbandada. —«¿Rubí?»—respondía él como si la llamara, retardando, por gozarse en ello, el comenzar su relato, y quedábase mirándola con los ojos varoniles y grandes llenos de nobleza de león, mostrándole siempre los labios gordísimos de un rojo magnánimo y sensual. Cogióle él una mano de -gada y sútil como el ala de un pájaro, pero nerviosa y recia cual manojo de alambres, y la dirigió á lo misterioso... Rosalía tembló como si por sus anillos dorsales corriera un latigazo eléctrico; toda ella se encandiló como una lámpara. Pidió, antes de desmayar nuevamente, un beso al cíclope. Este la besó, más bien lazamarreó con la boca entre las barbas bíblicas y so-solemnes. Y al tabletear los músculos de la mujer en un orgasmo de felicidad, despertó. El coloso se había disuelto en la luz. Todo había sido un sueño.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0397_chap5">
-				<head>V</head>
+				<head xml:id="ne0397_head_006">V</head>
 				<p>El abandono religioso en que durante los años que habían transcurrido desde la muerte de su madre, estuvo Rosalía, acabó por no poner freno á su imaginación, ni á sus antojos, ni aun después de estar convertida en mujer. Quintaesenciada de un modo natural su sensibilidad, y desarrollada su intuición por un vehemente anhelo hacia lo desconocido, necesitaba unas bridas tensas, una serreta poderosa, lo que da la cristiana, inmensa religión; pero como la modorra árabe del padre, poblada de narcóticos, no se cuidó de esa disciplina, Rubí quedó sin rienda, y no solamente sin rienda, pero aleccionada con frecuencia por el inconsciente David en el génesis amoroso, en el despertar de las moléculas al canto procreador de la vida.</p>
 				<p>Lo que no era pecado para la abandonada inteligencia de David, no lo era tampo. co para Rosalía, en la cual no se había es-</p>
 				<p>tampado nada espiritual y alto en sentido de muro defensor.</p>
@@ -334,7 +362,7 @@
 				<p>De entre un remolino de blondas, ella saltó del lecho, y, en medio del recinto, puso su estatua de pié. Un espejo la arrebató para sí. Ella vió el robo, y rióse en la plenitud triunfal de su belleza.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0397_chap6">
-				<head>VI</head>
+				<head xml:id="ne0397_head_007">VI</head>
 				<p>No podía David vivir sin estar entre brillos rientes de piedras preciosas. Parecían éstas á su bondad, siempre infantil, seres divinos, almas nacidas para reir, corazones diminutos de cristal, ojos que miran, y que llenan de juventud. Parado ante las vitrinas, cuando en algún comercio estaba á cargo de ellas, se balanceaba de pie, haciendo temblar levemente el pavimento, por el gusto de ver á los diamantes, á las esmeraldas, á los rubíes, á toda la pedrería luminosa, echarse á reir y titilar. David, cuando veía en derredor suyo tantas piedras preciosas, creíase un Sultán que ya tenía los collares y las diademas para las sultanas, pero que éstas, todavía no habían llegado. En cuanto llegaran, las sembraría de brazaletes, de pulseras, de tumbagas, de zarcillos maravillosos, de coronas rutilantes, de collares sorprendentes, y en cuanto viera á todas las sultanas temblar como constelaciones, empezaría una por una, á irles demostrando que él era el gallo del Harem.</p>
 				<p>Pero las odaliscas no llegaban nunca, y la pedrería estaba sola esperando pechos, brazos, dedos, frentes...</p>
 				<p>Como el gigantón de David, no tenía codicia del dinero, ni ambición de ser rico y sí sólo el anhelo de vivir como un manso y paciente buey, no veía en las piedras la escalera por donde subir á ser afortunado, y de todas ellas solamente amaba el temblor, el que son alegres y no conocen la pena, el que están dichosas de si mismas y por eso despiden la alegría. A veces cogía David un gran solitario, y, cerrando uno de los ojos, se lo interponía entre el otro y la luz para ver á la piedra hacer irradiaciones y locuras y cabriolas de ráfagas: así permanecía mucho rato,encantado como unniño grandullón y riendo con sus dos gordos, redondos y ahuevados labios sangrientos. Después cojía una esmeralda, la revolvía delante de la luz, y la veía relampaguear y encenderse y hacer variaciones y escalas cromáticas de matices, hasta que sus ojos se hartaban de la tonalidad verde. Y entonces cojía un ópalo y lo veía fulgurar y erizarse de delicadas entonaciones, de resignadas melancolías, de espirituales reflejos que hablaban de ternura y de amor. —¡Bendito seas!—decía David besándolo, y era como si besara á un ser vivo.</p>
@@ -353,7 +381,7 @@
 				<p>El alma turbia que no vea en mi intento algo alto y grande, digno do la vasta reproducción de los átomos en la vida universal, debe cerrar este libro, pues no se ha escrito para ella. Está escrito mirando al Sol y á Dios, que son las dos Fuentes do la Vida.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0397_chap7">
-				<head>VII</head>
+				<head xml:id="ne0397_head_008">VII</head>
 				<p>Nuestro cíclope, siempre que en el gran comercio de Amberes donde servía, pasaba revista á las piedras de algún <seg rend="bold">lote </seg>para examinarlas, al llegar á los rubíes y tener entre sus dedos el más encendido, puro y bello, lo miraba largamente, dulcemente, tristemente; y al sentir que quería asomar una lágrima á sus ojos, lo besaba y lo ponía á un lado. ¿Por qué? En el grandor tosco de David, donde todos los sentimientos iban revueltos, aquel asomo de lágrima quería decir que él había sido camarada de juegos de una niña delicadísima como la luz, á la cuál le había puesto el nombre de Rubí. ¡Oh, cuando hubiera crecido, él hubiera sido su padre, á la vez que su hermano, y á la vez que su esposo; un lío, un trozo de caos moral: David poseía el amor, así, <seg rend="italics">todo el amor,</seg> y lo daba tal como lo tenía; y parecíale, que las clasificaciones en matices, eran sutilezas despreciables, cosas de desocupados, entretenimientos de los hombres que se ponen á partir un pelo en mil hebras. En su indisciplina de bestia generosa, así sentía el cariño. Y al recordar á Rosalía, la pequeña, la dulce, la tierna, la delicada, sentía dentro de sí todos los amores para ella, toda una familia metida dentro de un solo cuerpo grande y vigoroso.</p>
 				<p>¿Qué sería de su nena?... ¡Oh, si se hubiera quedado sola en el mundo y alguien intentara ofenderla, de un solo puñetazo!...</p>
 				<p>El padre de la muñeca tenía el corazón roto. ¿Viviría? ¿Habría muerto? David hubiera esperado á Rubí á que se hiciese grande, para casarse con ella, pero ¡cómo iba la hija de un millonario, á casarse con él, pobre, feo, bestia y tres veces bestia! Además de que él tenía mucha más edad, aunque para el moro no habría nunca edades en eso de estar apto en todo momento para la generación. Acaso—pensaba—ella le hubiera aborrecido, al hacerse grande y ver que él, sin poder remediarlo, le había querido anticipar el conocimiento de la alegría del amor. No lo decía David así, pero lo sentía y padecía con la suposición</p>
@@ -373,7 +401,7 @@
 				<p>Sobrecogido y suspirante por el desbordamiento de placer, rodó David al suelo en un inmenso espasmo. La cara de Rubí, dejó de temblar; y las esmeraldas miraron al órgano del moro en tierra, fijas, absorbentes y agrandadas por una loca dilatación pasional.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0397_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0397_head_009">VIII</head>
 				<p>¡Si tuviera David algún día que vender la cara de su Rubí!—había pensado infinitas veces. En cuantas ocasiones los joyeros de las grandes capitales habían pedido precio por aquellas tres piedras, que íue-ron elegidas entre millares de lotes, el moro marcó, como autorizado que estaba para hacer y deshacer, una cantidad tan fabulosa, que habían retrocedido todos los acaparadores. Y la cara de Rubí, seguía en el aro de oro inaccesible á los ambiciosos de todas las partes del mundo.</p>
 				<p>Temía también David que el dueño del comercio, al ver tanto tiempo aquellas tres piedras magníficas sin vender, demandase la causa y tuviese que decirle las cantidades enormes que pedía á los que preguntaban.</p>
 				<p>Además, David, que era la honradez hecha hombre, la virtud acrisolada y pura, empezaba á sentir estremecimientos de conciencia, dolor de su pecado, pesar al sentir el paso de la primera nube por su alma. Aquellas tres piedras eran un capital retenido, un tesoro productivo, sujeto por él sin que fuese suyo... Habría que vender la cara, deshacer el idilio, romper la égloga de amor.</p>
@@ -388,7 +416,7 @@
 				<p>Cogió la llave áurea de la vitrina, y abrió. Su mano se dirigió á las dos purísimas esmeraldas, que en aquel instante, á la hora crepuscular, brillaban como dos retinas llenas de un influjo desconocido...</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0397_chap9">
-				<head>IX</head>
+				<head xml:id="ne0397_head_010">IX</head>
 				<p>Mientras tanto ¿qué hacía, no la figurada y constituida por tres divinas piedras, sino la auténtica, la humana y preciosa Rubí?</p>
 				<p>Daba á su padre, en pleno campo, una lección de nupcias vegetales.</p>
 				<p>La inconsciente profesora de amor, había, desde pequeña, adivinado por intuición y visto por observación, la vida de las plantas en su momento pasional, é intercalaba su curiosa fantasía por entre los cálices abiertos, por entre las patas de las abejas, por entre los caparazones de los mariscos, por allí donde hubiese celebración de bodas naturales.</p>
@@ -439,7 +467,7 @@
 				<p>Estas y mil preguntas se hacia JRubí, mientras soñaba ante el misterio de las libélulas. ¿Qué clámide daría lo desconocido al insecto que en aquel instante era cincelado en santidad y en alegría, en goce prolongado y en idea de cadena futura?</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0397_chap10">
-				<head>X</head>
+				<head xml:id="ne0397_head_011">X</head>
 				<p>No se vió jamás constructor más obstinado que Rosalía, en punto á edificar miles de veces, con el pensamiento, la figura del hombre que la hipnotizaba, la figura de David. Era su ocupación única, la de todo enamorado. Trazaba ella en su mente, el contorno, la línea general, y luego se fijaba en la cabeza para darle relieve con la fantasía.</p>
 				<p>Y de la cabeza, construía la frente amplia, de varonil y adiosado entrecejo; los ojos grandes y claros llenos de ingenuidad; las mejillas carnosas entre las que se alargaba la airosa y aguileña nariz; después solo percibía su imaginación una zalea negrísima que era la barba colosal; y asomando por debajo del bigote tremendo, veía la media libra de labios curvos y rojos sonriendo con una benevolencia natural. A Rosalía que era lo femenino, le gustaba aquella testamagníficade Jefe de tribu sagrada.</p>
 				<p>Después, construía la mujer el tórax, cerdoso como piel de jabalí, del cual sobresalían, anchas y fuertes, las tetillas bizarras.</p>
@@ -470,7 +498,7 @@
 				<p>¿Cuál era? ¿un dedo? no; ¿una mano? no; ¿una oreja? no; ¿la nariz? ¿la boca? ¿la frente? no, no, no..........................</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0397_chap11">
-				<head>XI</head>
+				<head xml:id="ne0397_head_012">XI</head>
 				<p>La mano de David, una vez abierta la vitrina para robar las esmeraldas, retrocedió .</p>
 				<p>El primer robo que iba á cometer en su vida, le aterrorizó, le heló la sangre. Aunque era aquel un hurto simbólico, la boca de la novia valía un Potosí, y los dos ojos claros y verdes, no los habían visto más hermosos las minas del Perú. '</p>
 				<p>Si el encandilado árabe hubiera podido desposeer á las tres piedras de su valor intrínseco, de la cantidad positiva que representaban y dejarles solo el mérito de la belleza, no le hubiese temblado el corazón al dirigirse á la vitrina.</p>
@@ -512,7 +540,7 @@
 				<p>David o terró á todos, tendido en el suelo, solemne, grande, rígido y blanco como el cadáver de un dios tallado en mármol admirable.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0397_chap12">
-				<head>XII</head>
+				<head xml:id="ne0397_head_013">XII</head>
 				<p>En verdad que daba una misericordia infinita ver con la frente echada contra la reja de la cárcel, llorando y llorando en silencio, al culpado David, cuyos ojos se habían retirado al fondo de sus órbitas y miraban con una desolación de Olimpo desgajado.</p>
 				<p>Lloraba y lloraba el moro, sin saber defenderse, sin saber demostrar que él no era un ladrón de tres piedras que valían un caudal, sino el raptor de una mujer ideal, de un sér misterioso, de una novia de luz, de una prometida divinizada.</p>
 				<p>Ni lo sabía decir, ni el pudor ni la vergüenza de estar enamorado de tres piedras preciosas, le hubiesen permitido descubrir lo recóndito de su corazón á las gentes.</p>
@@ -537,7 +565,7 @@
 				<p>Son funerales inventados en los grandes centros de civilización, en los centros que llaman maravillosos <seg rend="italics">focos</seg> de cultura.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0397_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0397_head_014">XIII</head>
 				<p>No hay que decir si sería severa la carta que el principal de David puso al padre de Rosalía, contestándole acerca del paradero del desgraciado David.</p>
 				<p>Porque una de las personas de Amberes á quien pidió noticias D, Ezequiel., fué al irritado principal del encarcelado moro.</p>
 				<p>«Nunca lo hubiera pensado—decía entre otras cosas la carta;—nunca hubiese podido imaginar que un hombre de una virtud tan probada, pudiera meter, como estafador, las manos dentro de una vitrina. Yo mismo lo vi,—proseguía—porque me puse á espiar al desgraciado.</p>
@@ -569,7 +597,7 @@
 				<p>Y como el dinero allana los montes y compra absolutamente todas las conciencias del mundo, David íuó puesto en libertad, le entregaron las tres cristalizaciones y emprendió el camino que conducía al lado de su antigua Rubí.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0397_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0397_head_015">XIV</head>
 				<p>Pero no había de ver su vuelta D. Eze~ quiel.Estaba ya próximo á llegar el portador de los tres minerales, solo faltaban días, horas acaso, momentos quizás, para su arribo, cuando una mañana, dobló el cuello el padre de Rosalía y expiró como si se quedará dormido.</p>
 				<p>Dormido para no despertar. Era el primer inmenso dolor que recibía aquella hija suya, la cual venía á ser como el fecundo compendio de la vida. Cuando Don Ezequiel, cumplida su misión de reencarnarse y do crear á Rosalía y de dejar una mujer más en el mundo, quedó tendido entre una cruz de blandones, Rubí pensó morir de espanto y de dolor.</p>
 				<p>Trajeron la caja lúnebre con un crucifijo encima, hecho al relieve, y al intentar los servidores de la casa encerrar en el ataúd la forma desechada por el torrente de la vida, Rosalía se opuso porque no poclía resistir la aterradora impresión de ver á su padre entre las tablas que habían de llevárselo á la tierra.</p>
@@ -598,7 +626,7 @@
 				<p>Bajó la pareja do mariposas persiguiéndose á la misma distancia, ni más cerca ni más lejos, como extremos de una pesa de gimnasio alada: los dos insectos, el doble temblor de vida, las dos luces atadas por el amor, los dos pétalos vivos abrochados por un hilo de sol, revolotearon siguiéndose, mordiéndose, casi pisándose las alas, y vinieron á rodar sobre el ataúd; allí, sobre los labios mismos del Cristo hecho en relieve, las dos mariposas se <seg rend="italics">fundieron</seg> en un rapidísimo y gozoso temblor de átomos: los labios del Cristo, parecieron besar la divina cópula de luz. Ya habría mariposas por los siglos de los siglos.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0397_chap15">
-				<head>XV</head>
+				<head xml:id="ne0397_head_016">XV</head>
 				<p>De noche, entro las pausas de un velatorio de Mayo, estallante de vida, en el corredor que daba al campo, una pareja de gusanos de luz cayó del ramaje de un ma-cetón sobre el ataúd que aun aguardaba vacío.</p>
 				<p>Replegándose y desrizándose, y replegándose y desrizándose, los dos gusanos, llevando su luz, no á cuestas, sino algo más abajo del corazón, empezaron, buscándose uno á otro, á trazar un geroglífico de líneas fosfóricas sobre la cápsula mortuoria, como un originalísimo laberinto del amor. La geometría de los dos minúsculos seres, la red, el plan de mutua persecución, caía sobre el ataúd como una combinación prodigiosa.</p>
 				<p>Se acercaron lentamente los divinos reptiles envueltos en sus túnicas luminosas, y acaeo por la atracción inmensa de la mirada de Cristo, fueron á posarse, como las mariposas, sobre los ojos del Maestro; y al celebrar sobre ellos sus nupcias amorosas, Jesús pareció tener por retinas inmor -tales dos misteriosos gusanos de luz...</p>
@@ -628,7 +656,7 @@
 				<p>Las dos mitades humanas se encontraban al fin, y se juntaban sobre el muerto, como dos lenguas de llamas sobre un puñado de cenizas.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0397_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0397_head_017">XVI</head>
 				<p>Aterrorizada Rosalía por el vacío pavoroso que deja la extinción de una persona, se amparó en el corazón de David como detrás de un gran escudo de carne.</p>
 				<p>El verse sola en la vida, absolutamente sola, la precipitó á su casamiento con aquel hombre, que desde niña llevaba estampado en todos los repliegues de su alma. Arreglados los documentos, levantaron el vuelo para celebrar el idilio de amor lejos, en comarca para ellos desconocida.</p>
 				<p>En la estúpida vida ordinaria y entre gentes amigas, aquel acto parecería la estrafalaria boda de la mujer acaudalada con el esclavo pobre, poro iuera de aquel imbécil recetario del vivir de cada día, semejante unión era el gran himno humano de la materia, el encuentro sublime de la fecundidad.</p>
@@ -661,7 +689,7 @@
 				<p>Y en ese paraíso eterno de Granada, entre ese concierto de frescura y de juventud inmortal y al compás de cien mil surtidores y entre una orquesta milagrosa de pájaros, era donde iba á celebrarse el encuentro sublime de las dos mitades humanas.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0397_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0397_head_018">XVII</head>
 				<p>Y todo deseaba en la Naturaleza reencarnarse, no solo David y Rosalía.</p>
 				<p>Junio había madurado todos los senos seminales, desde las espigas con granos rítmicos como gotas de polen hasta las semillas y ovarios do arbustos y de flores. Las abejas y mariposas, al pasar revolando de las corolas machos á las corolas hembras, llevaban inconscientemente el reguero que preña, y establecían una especie de telégrafo alado como un volante miembro procreador.</p>
 				<p>Ese aíán de persistir de todos los seres, de tranafusionarse, de transmitirse á nueva íorma, encendía el aire, los árboles, las piedras.</p>
@@ -683,7 +711,7 @@
 				<p>¡Oh Tierra, toda á la vez matriz, toda á la vez falo, toda á la vez frente, toda á la vez corazón! ¿Dónde está tu podredumbre? ¿Dónde está tu vicio? ¿Dónde está tu pornografía? Toda tú eres casta y sagrada, y en el momento inmenso, simultáneo y múltiple en que celebras tu Cópula infinita, parece que levantas millares de hostias en las almas.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0397_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0397_head_019">XVIII</head>
 				<p>Muchas tonalidades verdes había visto David durante su vida de vendedor de cristales selectos; claridades y transparencias arrobadoras había contemplado durante un interminable desfile de esmeraldas; pero luces como las de los ojos que ahora tenía delante de los suyos, matiz verde como el de aquellas dos retinas que miraba cerca dejándose calentar por su fuego, jamas lo había podido admirar en ninguna piedra preciosa.</p>
 				<p>¡Oh!, una cosa son dos interesantes esmeraldas, extraídas del seno de la tierra, y otra cosa más sublime son unos ojos de un verde pensativo y soñador que nos miran recalándonos hasta los huesos, embalsamándonos de pasión, ungiéndonos de un fuego suave que sentimos correr por nuestras venas.</p>
 				<p>Lo rojo, donde mejor sienta es en el terciopelo; lo morado, dondo mejor cae es en</p>

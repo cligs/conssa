@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Nuestro Padre San Daniel</title>
-				<title type="sub">Novela de capellanes y devotos</title>
+				
 				<title type="short">SanDaniel</title>
-				<title type="idno"><idno type="viaf">212904891</idno></title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1605</measure>
@@ -138,16 +131,70 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0059</idno>
+						<idno type="cligs">ne0059</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/nuestro-padre-san-daniel-novela-de-capellanes-y-devotos-1/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1945">1945</date></bibl>
-				<bibl type="edition-first"><date when="1921">1921</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Nuestro Padre San Daniel</title>
+					<title type="sub">Novela de capellanes y devotos</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/212904891/">212904891</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4335149-9">4335149-9</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/nuestro-padre-san-daniel-novela-de-capellanes-y-devotos-1/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1945">1945</date></bibl>
+					<bibl type="edition-first"><date when="1921">1921</date><idno source="k10plus" type="ppn" n="465108601" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465108601"/><idno source="k10plus" type="ppn" n="342696270" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696270"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotos</title> <date when="1921">1921</date>, <publisher>Publ. Atenea</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465108601" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465108601"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotos</title> <date when="1921">1921</date>, <publisher>Atenea</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342696270" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696270"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela; segunda parte de Nuestro padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1569978980" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1569978980"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title>: 	<title type="sub">(novela de cappelanes y devotos)</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="156997859X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=156997859X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela; segunda parte de nuestro padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1402363818" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1402363818"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela; segunda parte de Nuestro padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1372773185" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1372773185"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="663655633" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=663655633"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela. Segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520600134" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520600134"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464814278" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464814278"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464814146" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464814146"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342696645" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696645"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title>: 	<title type="sub">(novela de cappelanes y devotos)</title> <date when="1930">1930</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1372773746" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1372773746"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotos</title> <date when="1930">1930</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465106927" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465106927"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de "Nuestro Padre San Daniel"</title> <date when="1957">1957</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="521232198" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521232198"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotos</title> <date when="1957">1957</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="475113160" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=475113160"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title>: 	<title type="sub">el obispo leproso</title> <date when="1969">1969</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465787126" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465787126"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title> <date when="1974">1974</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1177615789" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177615789"/> 		<idno type="isbn" n="8420612146"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotos</title> <date when="1981">1981</date>, <publisher>Ed. de la Torre</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039940608" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039940608"/> 		<idno type="isbn" n="8485866185"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">2. parte de Nuestro Padre San Daniel</title> <date when="1984">1984</date>, <publisher>Ed. de la Torre</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1645831434" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1645831434"/> 		<idno type="isbn" n="8485866495"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">segunda parte de Nuestro Padre San Daniel ; ed. crítica</title> <date when="1984">1984</date>, <publisher>Ed. de la Torre</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="469027533" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469027533"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">segunda parte de nuestro Padre San Daniel</title> <date when="1984">1984</date>, <publisher>Edic. de la Torre</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="357192451" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=357192451"/> 		<idno type="isbn" n="8485866495"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotes</title> <date when="1988">1988</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1619736144" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1619736144"/> 		<idno type="isbn" n="8437607825"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotos</title> <date when="1988">1988</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="043481906" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043481906"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title> <date when="1991">1991</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="043057497" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043057497"/> 		<idno type="isbn" n="8423972240"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title> <date when="1994">1994</date>, <publisher>Inst. de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1116331659" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116331659"/> 		<idno type="isbn" n="8477841101"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Gabriel Miró, Nuestro Padre San Daniel and El obispo leproso</title> <date when="1994">1994</date>, <publisher>Grant &amp; Cutler in association with Tamesis</publisher> <pubPlace>London</pubPlace> 		<idno type="ppn" n="153360941" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=153360941"/> 		<idno type="isbn" n="0729303543;8459933652"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro padre San Daniel</title>: 	<title type="sub">novela de capellanes y devotos</title> <date when="1995">1995</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="191514934" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=191514934"/> 		<idno type="isbn" n="8477841101"/></bibl>
+						<bibl type="further-edition"><title type="main">El ángel, el molino, el caracol del faro</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1384415416" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1384415416"/> 		<idno type="isbn" n="9788496452565"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El ángel, el molino, el caracol del faro. Nuestro Padre San Daniel. El obispo leproso. Libro de Sigüenza. Años y leguas</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="587995521" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=587995521"/> 		<idno type="isbn" n="9788496452565"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -156,6 +203,14 @@
 				<p>Hay en este relato poca acción. Las tres primeras partes están dedicadas a introducirnos en el ambiente. No sin fundamento lleva el subtítulo de Novela de capellanes y devotos, dado el relieve que tiene la vida religiosa. Primero se nos cuenta la historia de los santos venerados en la ciudad, empezando, claro está, por Nuestro Padre San Daniel. Luego vamos conociendo a los personajes y se van perfilando sus posturas ideológicas enfrentadas. Es en la cuarta parte cuando topamos con un elemento argumental importante: la boda de Paulina y don Álvaro. Vemos cómo esta mujer, que vive permanentemente enamorada sin amor, se va a sentir frustrada en su matrimonio. Su padre, don Daniel, muere de soledad y tristeza después de una largar agonía. En las últimas páginas asistimos al nacimiento de Pablo, el hijo de Paulina.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -188,8 +243,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">bildungsroman</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -224,6 +279,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-03-06" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -232,9 +288,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>- I - Santas imágenes</head>
+				<head xml:id="ne0059_head_000">- I - Santas imágenes</head>
 				<div n="1" type="chapter" xml:id="ne0059_chap1">
-					<head>I. Nuestro Padre San Daniel</head>
+					<head xml:id="ne0059_head_001">I. Nuestro Padre San Daniel</head>
 					<p>Dice el señor Espuch y Loriga que no hay, en todo el término de Oleza, casa heredad de tan claro renombre como el «Olivar de Nuestro Padre», de la familia Egea y Pérez Motos.</p>
 					<p>He visto un óleo del señor Espuch y Loriga: en su boca mineralizada, en sus ojos adheridos como unos quevedos al afilado hueso de la nariz, en su frente ascética, en toda su faz de lacerado pergamino, se lee la difícil y abnegada virtud de las comprobaciones históricas. Todos sus rasgos nos advierten que una enmienda, una duda de su texto, equivaldría a una desgracia para la misma verdad objetiva.</p>
 					<p>En Oleza corre como adagio: «saber más que Loriga». Loriga ya no es la memoria de un varón honorable, sino la cantidad máxima de sapiencia que mide la de todos los entendimientos.</p>
@@ -250,7 +306,7 @@
 					<p>El templo y sus ministros constituyen el solar y casta del sacerdocio elegido. Las otras iglesias resultan casas segundonas de oración. Quieren algunos prelados favorecerlas; pero su clerecía trae vida obscura y hábito pobre.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0059_chap2">
-					<head>II. La Visitación</head>
+					<head xml:id="ne0059_head_002">II. La Visitación</head>
 					<p>Un día se divulga por Oleza que el laurel milagroso no ha nacido precisamente de la soca del olivo de Nuestro Padre, sino al lado. No se menoscaba su gloria. Ni siquiera se comprueban las murmuraciones. Es preferible admitir el milagro que escarbar en sus fundamentos vegetales.</p>
 					<p>Otro día -el de la Natividad de la Virgen- un maquilero, sordo, sale de su aceña gritando porque oye tocar campanas. Le preguntan rodeándole las gentes; pero él no percibe la voz de los hombres sino las campanas, y unas campanas cristalinas, muy hondas. Camina delante de todos, parándose para escuchar, volviéndose y doblándose para tentar la tierra. Llegados a una viña, que sube de la barranca del Molinar, se transfigura el sordo, se postra y junta la quijada con los cachos; los besa; pide un azadón; todos se precipitan y cavan hasta con las uñas; y aparece una imagen de Nuestra Señora. Es una Virgen menudita, de ojos de almendra. Tiene al Niño en su regazo de adolescente, un niño gordezuelo, desnudo, que ciñe corona y sube una mano como pidiendo una estrella.</p>
 					<p>Quieren traer la aparecida al oratorio del palacio prelaticio y no pueden, porque según la apartan del viñedo pesa irresistiblemente. Manda el obispo que la devuelvan al bancal del hallazgo, y entonces la Virgen es de una dulce levedad de tórtola. Intentan más veces lo mismo, y siempre se repite la maravilla del peso; y, ahora, ya todos oyen las recónditas campanas. Verdaderamente Nuestra Señora ha sido modelada por los ángeles, y es el cielo quien escoge su mansión. Se le erige un santuario, de hastial nítido, con dos rejas frondosas guardadas por cipreses. Se averigua que en la tierra del contorno reside una divina gracia de maternidad. Acuden alfareros al amparo de la ermita. Beber en picheles y cántaras de Nuestra Señora hace fecundas a las estériles. Virtud más grande que la de los panes amasados con yeso de la santa cueva de la leche de Bethleem, que llena los pechos exprimidos de las nodrizas.</p>
@@ -262,7 +318,7 @@
 					<p>Siéntense los afanes por un portento que quite el enojo de la huida de las aves mensajeras y pruebe el agrado del Señor hacia la nueva casa. Y el Señor lo concede a pesar de las discordias de los hombres. Ocurre en la misa de la dedicación. La primitiva lámpara de la Virgen, la que se mantuvo en el viejo ermitorio con las humildes alcuzas arrabaleras, colgaba ahora ciega y exhausta, olvidada como el exvoto de un difunto, entre la fastuosidad de la nueva hornacina. Y en medio de la mañana gloriosa de sol, truena el azul, y una invisible centella baja y enciende el vaso del sediento lamparín, que arde como una flor de ascuas.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0059_chap3">
-					<head>III. El Patrono de Oleza</head>
+					<head xml:id="ne0059_head_003">III. El Patrono de Oleza</head>
 					<p>Pero la devoción a San Daniel sube en cultos y ofrendas. Confiérese a su templo jerarquía de parroquia. Las novias y paridas quieren ser allí desposadas y purificadas. El tesoro de Nuestro Padre exige ya una Junta y dos clavarios. No tienen tasa las colgaduras de damasco, de terciopelos y brocateles; los frontales del altar y frontalicos para las credencias de todos los colores litúrgicos; las capas, casullas, dalmáticas, tunicelas, gremiales, almohadas, paños de túmulo y de púlpito de rasos de flores, de estofas de tisús y espolines de oro, de brocados de tres altos.</p>
 					<p>Penden del tambor de la media naranja treinta y dos lámparas de plata; de ellas, diez y nueve con dote para arder perpetuamente. Constan en registro: veinte cálices -doce de filigrana y gemas-; cinco custodias; siete arquillas de arracadas, brazaletes, relojes, anillos, camafeos, rosarios, cadenas, sartales, leontinas, esmaltes, brinquiños y dijes. Cinco planchas de oro labradas a martillo para guarnecer el púlpito, y no se aplican porque falta una. Dos copas de Venecia que desbordan de aljófares, de ámbar, de turquesas y granates. Un San Gregorio de setenta kilos de plata y veintidós carbunclos. Un cuerpo de un mártir, donación de un noble pontificio que murió en la huerta de Murcia. Y no contaré los hacheros, candeleros, vinajeras, crismeras, portapaces, bandejas, aguamaniles, hostiarios, incensarios, relicarios, píxides, navecillas, palmatorias de metales preciosos, de lapislázuli y ágatas...</p>
 					<p>Tiene el santo una cabellera para dentro del templo, y otra más larga, rizada y rubia, para la procesión de su fiesta. Tiene una túnica de seis mil libras de seda de ocales. Las vestiduras cubren las ropas talladas, pero prueban el primoroso ingenio de los terciopelistas y bordadoras olecenses; la fimbria resplandece de cuernos de abundancia, de viñas y cabezas aladas de querubines, resaltando un pavo real, símbolo primitivo de la eternidad, con el cuello elegantemente erguido.</p>
@@ -282,9 +338,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- II - Seglares, capellanes y prelados</head>
+				<head xml:id="ne0059_head_004">- II - Seglares, capellanes y prelados</head>
 				<div n="4" type="chapter" xml:id="ne0059_chap4">
-					<head>I. Casa de don Daniel Egea</head>
+					<head xml:id="ne0059_head_005">I. Casa de don Daniel Egea</head>
 					<p>Don Amancio Espuch, sobrino del curioso cronista señor Espuch y Loriga, y heredero de sus virtudes y manuscritos, se pregunta muchas veces: «¿Cuándo principió a decírsele «Olivar de Nuestro Padre» a la heredad de don Daniel Egea?».</p>
 					<p>Don Amancio lo sabe, pero le agrada sumirse bajo las selvas de su erudición para después salir cogido de su misma mano a la vertiente de una consecuencia: «La heredad tomaría tan devoto título al mismo tiempo que el Profeta del Olivo fuera trocándose en Nuestro Padre. Es una conmovedora derivación toponímica; originándose el nombre de Oleza del antiguo olivar, recae definitivamente en el olivar la sal y la gracia del bautismo de uno de sus árboles».</p>
 					<p>Su dueño se enternecía escuchándolo, y se llamaba Daniel.</p>
@@ -312,7 +368,7 @@
 					<p>-¡Es que es verdad! ¡Daniel! ¡Se llamaba como yo, Dios mío! -y el señor Egea cruzaba valerosamente sus brazos, viéndose rodeado de feroces leones, enflaquecidos de hambre, que se le postraban y le lamían desde las rodilleras hasta sus zapatillas de terciopelo malva, bordadas por doña Corazón Motos, prima del hidalgo, y dueña de un obrador de chocolates y cirios de la calle de la Verónica.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0059_chap5">
-					<head>II. El Padre Bellod y don Amancio</head>
+					<head xml:id="ne0059_head_006">II. El Padre Bellod y don Amancio</head>
 					<p>Ordenado de Epístola, tuvo viruelas el padre Bellod, y un grano de mal le llagó un ojo, precisamente el del canon de la misa. Alcanzó la dispensa: <seg rend="italic" type="foreign" xml:lang="la">Quoties missam celebraverit, tabellam canonis in medio altaris debet habere</seg>. De carne áspera y espíritu rígido y vigilante, mereció pronto el gobierno de una parroquia, y le encomendaron la de San Bartolomé, iglesia románica, tenebrosa como una catacumba, con suelo de costras de lápidas de enterramientos.</p>
 					<p>Entre la clerecía de la diócesis era este párroco cumbre y cátedra de religiosos austeros. Tanta virtud movería a llamarle padre Bellod, como si perteneciese al claustro. Su confesonario hacía estremecer los más limpios corazones femeninos. Siempre contaba el júbilo de arcángel que sintió San Antonio cuando supo que su hermana y las cuatrocientas mujeres que la seguían conservaron la virginidad venciendo grandes peligros y tentaciones. Recordaba también que, en los primeros siglos del cristianismo, las vírgenes consagradas al Señor constituyen la aristocracia de la comunidad de los fieles. Se las menciona especialmente en las plegarias. Tienen asiento privado en las basílicas. Todos las reverencian, y las austeras matronas no salen del recinto sin besarlas. Los epitafios de sus sepulcros proclaman con elogio el título de su doncellez. Y de seguro que en los cielos resplandecen con deliciosas luces de hermosura... Y el padre Bellod veíase en las gradas celestiales rodeado de sus hijas de confesión, todas vírgenes, todas de blanco como un jardín de lirios.</p>
 					<p>Ellas no osaban rebelarse, pero tampoco se avenían a prometerle la gloria de sus ansias. ¡El rayo de la cólera verbal de Tertuliano se encendía en la lengua del indomable justo pensando en las «indignidades del matrimonio», y viendo que sus criaturas no se amaban a sí mismas hasta el propósito de la continencia! De la abrasada Mauritania respondieron las vírgenes más principales al llamamiento del santo obispo de Milán pidiéndole el velo de esposas del Señor. ¡Y en Oleza, en Oleza!... ¡Y, después de todo, qué convites de galanía les deparaba Oleza si casi toda la juventud iba afeitada, y con alzacuello y pecherín negro de seminarista!</p>
@@ -339,7 +395,7 @@
 					<p><seg rend="italic">El Clamor de la Verdad</seg> publicó, con orla de luto, todo el documento de don Amancio.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0059_chap6">
-					<head>III. El casamiento de doña Corazón y una conocida anécdota del marido</head>
+					<head xml:id="ne0059_head_007">III. El casamiento de doña Corazón y una conocida anécdota del marido</head>
 					<p>Todavía muy joven doña Corazón, estuvo enamorada de don Daniel; pero le amó tan recatadamente que el hidalgo no lo supo, y la buscaba para decirle sus anhelos por la que fue su esposa. Logró su bien el distraído caballero, y sintiose obligado a mediar en los amores de ella, porque de seguro que su prima tenía alguna pena de amor. Eso sí que lo adivinaba el venturoso, y pomposamente se dijo: «Averigüemos ahora quién es el amado». Y se iba volviendo en torno de las amistades de la casa, y no le veía no viéndose a sí mismo.</p>
 					<p>Se lo preguntó a la resignada virgen.</p>
 					<p>Doña Corazón, muy blanca, con los ojos en tierra, le negaba sus dolores, y don Daniel estuvo a punto de creerlo, porque la pobre criatura no se había sonrojado, y el rubor era para su primo la callada confidencia de las mujeres.</p>
@@ -392,7 +448,7 @@
 					<p>Del huerto albardillado, fresco y monjil, entraba olor de naranjos, de higueras, de heliotropos, de jazmines. Arriba, desde la ventana de su dormitorio veía la señora las espadañas de la Visitación; un paisaje ancho y verde de río, molinos, barracas de cal con techos de leña, sendas entre cáñamos y, a lo último, dos oteros azules. Todo lo veía, todo menos a don Vicente Grifol, que seguía pasando a la misma hora, y daba su toquecillo con el bastón en la misma losa, y hacía su mesura y su saludo maquinalmente, ya sin mirar siquiera los dulces portales.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0059_chap7">
-					<head>IV. Don Jeromillo y don Magín</head>
+					<head xml:id="ne0059_head_008">IV. Don Jeromillo y don Magín</head>
 					<p>Todos los años, el 28 de junio, vigilia de los Apóstoles San Pedro y San Pablo, se ponía doña Corazón a la ventana de su dormitorio, esperando la galera del Olivar. Verdaderamente venía con reposo de arado, arrastrada por las mismas mulas de la labranza. Don Daniel había de asistir a las Horas Canónicas de la Catedral, Vísperas solemnes de primera clase. Nunca las perdió, porque eran de una liturgia tiernamente evocadora de todos los 28 de junio de su vida. Comía con doña Corazón, y así se evitaba el resistero del camino a la hora del Coro.</p>
 					<p>Les acompañaba don Jeromillo, capellán de las Salesas, alma todavía de nido, de tan simples pensamientos que los más comineros escrúpulos de las Madres le hacían trasudar y confundirse. Decíanle todos don Jeromillo, y nadie creía adelgazarle temerariamente el nombre. Parece que el de Jerónimo nos trae la memoria del glorioso doctor, representándonos un viejo de osamenta de gigante, macerado y agreste, hundido en su cueva de Bethleem, entre papiros revueltos como zarzales, ardiéndole los ojos de visiones magníficas de Jehová, y fluyendo de las cortezas de su boca la eterna palabra.</p>
 					<p>Llamarle Jeromillo a don Jeromillo significaba una exactitud de sustantividad y adjetivación. Menudo, rollizo, moreno y pecoso; el cabello amaizado, las cejas anchas y huidas, la piel de la frente en un renovado oleaje de perplejidad; los ojos, de un vidrio claro y húmedo; de todo se pasmaba, y sus manos se cogían la nuca como temiendo que se le derrumbase la Creación encima de su atlas. Solía equivocarse en los rezos, y por enmendarlos, se pasaba el día devorando el Breviario. Andaba siempre corriendo, tropezando, trabándose en sus haldas. Leía las Sagradas Escrituras con ánimo de no comprenderlas, porque ¿quién era él para tanto? Exaltábale la lección del Diluvio. Sus hermanas le pedían que no se agoniase. ¡Aquello había ya pasado! Y le cerraban el Génesis. Pero don Jeromillo se obcecaba en sus cavilaciones exegéticas, apuñazándose la cerviz, mordiéndose los artejos.</p>
@@ -424,7 +480,7 @@
 					<p>Y el capellán le miraba los dedos aspirando su aromosa limpieza, olor de bergamoto, pero bergamoto hecho ya carne y palidez delicada de la viuda.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0059_chap8">
-					<head>V. El clamor de los clamores</head>
+					<head xml:id="ne0059_head_009">V. El clamor de los clamores</head>
 					<p>Ese cardenal, que no había de escurrirse del puño del padre Bellod, se escapaba a su antojo. Don Magín no acudía a los recreos, ejercicios ni lecciones en comunidad, deslizándose con mucha sutileza de la nueva disciplina de la parroquia. Y no semejaba rebelde, sino camarada de su párroco, un camarada aborrecido por la ingenuidad de su desenfado y de su ingenio. Puesto en presencia del padre Bellod para recibir sus enojos y advertimientos, le atendía como un chico castigado; y luego le hablaba sosegadamente, sin sentirse ni acordarse de las severidades. Don Magín le miraba a la faz, y el párroco, no. Don Magín evitaba el ministerio del púlpito, y el párroco encomendole la homilía de las dominicas de Pascua. Nada más dijo una, exaltada de la leticia de la Iglesia y de la aleluya de la primavera. El párroco le dispensó de las otras, y don Magín le dio las gracias muy contento. Estaba rasurándose entonces el padre Bellod, y se sangró dos veces en la misma raedura. Acusole ante el vicario capitular de traer al Archivo asuntos frívolos en tiempos tan necesitados de palabra prudente.</p>
 					<p>Gobernaba la sede vacante el tío del difunto capitán de Manila, buen hombre, de mejillas pesadas, de ojos de un azul gordo, de fosas nasales ciegas de un zarzal tostado de rapé.</p>
 					<p>Todo lo hallaba de una realidad y de una metafísica sin remedio. «Las cosas eran; y eran según eran. Don Magín sería siempre lo mismo. Le amonestaría, pero que no confiaran en su enmienda». Y le llamó.</p>
@@ -461,7 +517,7 @@
 					<p>Soltose el limón de la mano de <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg>; y parecía que rodaba encima de toda Oleza la manzana de la discordia.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0059_chap9">
-					<head>VI. Su Ilustrísima</head>
+					<head xml:id="ne0059_head_010">VI. Su Ilustrísima</head>
 					<p>Llegó el obispo en una llameante mañana de verano. La ciudad se engalanó filialmente para alegría de su buen pastor. Alzó dos arcos de triunfo; uno más ahora que en otros principios de pontificados. Nadie se explicaba por qué se levantaron dos; uno de flámulas, de flores y de vasos de aceite, con los escudos de todos los arciprestazgos y parroquias de la diócesis, y en medio la tiara pontificia y la prelaticia y la breve leyenda: «Al ilustre y nuevo prelado». Otro arco de follajes de laurel, de palmera y olivo, del cabildo catedral, con una franja morada y letras de oro que decían: <seg rend="italic" type="foreign" xml:lang="la">Benedictus qui venit in nomine Domini</seg>.</p>
 					<p>Se restauró en el dintel de palacio la inscripción inspirada en la Epístola II a los Corintios: <seg rend="italic" type="foreign" xml:lang="la">Pro Christo Legatione Fungimur</seg>.</p>
 					<p>Mucho costó ordenar la comitiva. Trajo el pendón de Oleza -de seda verde con un castellar árabe y cruz de plata- el alguacil-pregonero, un viejo huesudo y cetrino, recién afeitado, vestido de ropilla de felpa negra con vuelillos y gola de rígidos encajes. Montaba una yegua pía que, avezada al reposo lugareño, asombrose de la multitud y botó a lo cerril, y descompuso las hileras de la gran parada de guardias rurales con sus carabinas de cebillo y pedernales, de huertanos en zaragüelles y con cayada de clava, de asilados, seminaristas, congregantes y colegiales con estandartes y banderas de muharras de símbolos piadosos: el monograma de Jesús, el de María, los Sagrados Corazones... Un familiar del difunto prelado se aupaba en una esquina para ver todo su perdido valimiento. Voceaban los buhoneros y los vendedores de limonadas, de agua de nieve, de rollos y santos de azúcar y candeal, de vidas y retratos del señor obispo. Y la jaca briosa, iba y cejaba llevándose y trayendo a su jinete, cogido de las crines, revuelta la esclavina, y el sombrerillo de candil todo erizado y cortezoso de las muchas caídas. Le seguían siempre los rapaces dándole el pendón, que se le escapaba porque no podía valerse de las manos, y, finalmente, se lo ataron a los arzones. Reducida la bestia heráldica, se puso delante de las Juntas y autoridades, y todos caminaron procesionalmente legua y media. Iban los regidores, los síndicos y el alcalde; las presidencias de los gremios, del Apostolado de la Oración, del Recreo de Luises, de la Defensa de Regantes, de la Industria de la seda y del cáñamo, de Socorros Píos, del Círculo de Labradores, cuya señera celeste con San Isidro, de lentejuelas y colores, la llevaba don Amancio, más enlutado, más denso en esa mañana su talante apócrifo de viudez, y a sus lados los cordonistas: don Daniel, dulce, aturdido, con su levita de bodas, guantes blancos de escolar de una pureza de primera comunión, y el homeópata Monera, el único homeópata del pueblo, de piel aceitosa, grueso y triste, encogido y aspado por su traje nuevo de ceremonias, que parecía de charol. En seguida la banda de música de Caudete. Ternas de franciscos, de capuchinos, de jesuitas, de carmelitas; todo el claustro del Seminario; el comandante del puesto de la Guardia Civil, un teniente viejo, con el tricornio desfelpado y la medalla de Beneficencia casi en la garganta; dos caballeros santiaguistas, de manto de blancura de marfil y la cauda fastuosamente recogida por un codo inmóvil; niños-ángeles, rubios, de mejillas pintadas y una poesía entre sus dedos de polvos de arroz y de tinta de escuela; el clero, de roquete y muceta; los gonfalones parroquiales; y el cabildo catedral de capa, descollando don Cruz con dos redondeles de carmín en los pómulos, y los párpados caídos y trémulos bajo la obstinación de la mirada de la muchedumbre, porque todo pudo haber sido en honra suya.</p>
@@ -513,9 +569,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- III - Oleza y el enviado</head>
+				<head xml:id="ne0059_head_011">- III - Oleza y el enviado</head>
 				<div n="10" type="chapter" xml:id="ne0059_chap10">
-					<head>I. El enviado</head>
+					<head xml:id="ne0059_head_012">I. El enviado</head>
 					<p>Los días también rodaban encima de Oleza. El nuevo obispo ya semejaba antiguo, y aceptose su carácter hundido, su vida apartada, como de varón sabio. Sólo algunas tertulias caseras, y principalmente el Círculo de Labradores, vigilaban con ojos adustos los actos de Palacio. Recogidos los puros corazones olecenses en la secretaría como en un cenáculo, aguardaban la plenitud de los tiempos, la gracia de un espíritu de fuego, mientras maldecían al execrable Gobierno de Madrid, que rechazó a don Cruz, sin duda por escoger obispo entre el sacerdocio desapegado del príncipe. Lo decían mirando doloridamente el óleo del «señor», viajero entonces en las Indias, y volviéndose a un autógrafo de Aparisi y Guijarro, lleno de promesas.</p>
 					<p>Pero algo más fuerte que el poder del tiempo, tiempo todavía corto, envejeció las cosas de la diócesis. Y fue la llegada de un caballero de Gandía, valeroso caudillo de la «buena causa». Presentose un lunes, día de mercado. Todo Oleza pudo contemplarle. Bastó que don Álvaro Galindo y Serrallonga dijese su nombre en el Círculo para que todos los socios le rodeasen y le sirviesen. Se le recordaba por emisario de difíciles acuerdos entre las facciones. Participó de jornadas memorables, y, después de la lucha, estuvo en Francia y en Inglaterra al lado del «señor», de cuyos labios había recogido revelaciones y mandamientos. Para escucharlos se le ofreció un chocolate de honor. Vino al agasajo mucha clerecía. Sentose el padre Bellod a la diestra del huésped, y a la izquierda don Amancio.</p>
 					<p>No supo don Daniel la presencia del caballero de Gandía hasta que <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg> se lo dijo con encargo del penitenciario de llevarle a la fiesta. No le agradaban a don Daniel estos alborozos y calenturas de partido. Le miró <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg> dentro de sus pupilas dulces y miopes.</p>
@@ -580,7 +636,7 @@
 					<p>Los frutales, la mies, la vid, los palomos, todo se le ofrecía con el ritmo y palpitación del dulce susto de su sangre.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0059_chap11">
-					<head>II. <seg rend="italic" type="foreign" xml:lang="la">Te Deum laudamus</seg></head>
+					<head xml:id="ne0059_head_013">II. <seg rend="italic" type="foreign" xml:lang="la">Te Deum laudamus</seg></head>
 					<p>Bajo el pasadizo de Palacio a la catedral topose don Daniel con el homeópata; y juntos entraron en los claustros. Les recibió un vano de piedras resudadas, de altares viejos, de árboles umbríos calentados por la siesta. Piaban cansadamente los gorriones como si estuvieran durmiéndose. Los dardos de los vencejos rasgaban con su grito el azul. El cimbalillo tocaba gota a gota.</p>
 					<p>Huerto blando de hierba borde. Rinconadas de escoria de incensarios, y malvas reales que suben sus tirsos de rosas leves, desaromadas. Un ciprés, el ciprés más recto y sensitivo de Oleza, que embebía su punta de claridad alta. Laureles inmóviles. Encima del pozo, de cigoñal plateresco, trenzado de zarcillos de calabacines, un tul de mosquitos y sol. Un limonero bajaba un pomo de cidras con luces de hilos de arañas; y en el brocal, en las baldosas, en los musgos, vislumbraban, gelatinosos y fríos, los lagartos.</p>
 					<p>Los pasos descoloridos del <seg rend="italic">vía-crucis</seg>, los retablos góticos, enjutos, rosigados, los altares barrocos de una talla rolliza, tenían para don Daniel una bondadosa decrepitud de mueble familiar. De las capillas del claustro prefería la de San Gregorio. En el muro de la bóveda, sobre cartelas de águilas, un cofre de basalto guardaba las entrañas de un rey. Siempre se paraba y leía los restos del epitafio, pronunciando cada letra:</p>
@@ -657,7 +713,7 @@
 					<p>En aquel punto desbordó del órgano una trompetería de victoria, empujando con su trueno de júbilo el coral del <seg rend="italic" type="foreign" xml:lang="la">Te Deum laudamus</seg>.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0059_chap12">
-					<head>III. El aparecido</head>
+					<head xml:id="ne0059_head_014">III. El aparecido</head>
 					<p>Paulina bajó a la vera. Sentía un ímpetu gozoso de retozar y derribarse en la hierba cencida, que crujía como una ropa de terciopelo. Acostada escuchó el tumulto de su sangre. Todo el paisaje le latía encima. El cielo se le acercaba hasta comunicarle el tacto del azul, acariciándola como un esposo, dejándola el olor y la delicia de la tarde. Se incorporó mirando asustadamente. Siempre se creía muy lejos, sola y lejos de todo. Sin saberlo, estaba poseída de lo hondo y magnífico de la sensación de las cosas. El silencio la traspasaba como una espada infinita. Un pájaro, una nube, una gota de sol caída entre follaje, le despertaba un eco sensitivo. Se sentía desnuda en la naturaleza, y la naturaleza la rodeaba mirándola, haciéndola estremecer de palpitaciones. El rubor, la castidad, todas las delicadezas y gracias de mujer se exaltaban en el rosal de su carne delante de una hermosura de los campos. Los naranjos, los mirtos, los frutales floridos, le daban la plenitud de su emoción de virgen, sintiéndose enamorada sin amor concreto. La puerilizaban los sembrados maduros viendo las mieses que se doblan y se acuestan, se alzan y respiran bajo el oreo, y juegan con él como rubias doncellas destrenzadas con un dios niño.</p>
 					<p>Entró en el reposo del olivar. Allí siempre iba recogida y despacio. Los troncos seculares, el ámbito callado de las frondas inmóviles, le dejaban una clara conciencia de la quietud y de la soledad, un amparo de techo suyo que parecía tenderse desde el origen de su casa.</p>
 					<p>En la paz de estos árboles, cerca del camino, esperó a su padre.</p>
@@ -699,7 +755,7 @@
 					<p>-¡Estás riendo y llorando! ¡Como yo, lo mismo que yo! -Y sentose en una vieja butaca, esperando la naranjada de todas las tardes. Se la trajeron. La cató; quiso más azúcar; tornó a beber, y sin acabar, les contó muy despacito la confidencia del señor penitenciario.</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0059_chap13">
-					<head>IV. Arrabal de San Ginés</head>
+					<head xml:id="ne0059_head_015">IV. Arrabal de San Ginés</head>
 					<p>Colgose de los hombros la esclavina vieja; se esponjó sobre la tonsura el gorro de verano; pidió la cayada de sus paseos rurales, y atravesando la corraliza y el huerto, donde se entretuvo para adobarse los dedos con matas de geranio, como si exprimiese una pella de jabón, salió don Magín de su parroquia por el portalillo del hostigo.</p>
 					<p>Venían revueltas afiladas, callejones de hierba y una subida de peldaños roqueros, hasta que ya principia el atajo de San Ginés. Una vez al año -por Santa Ana- lo tomaba don Magín.</p>
 					<p>Descansó en la sombra de los últimos tapiales para mirar el hondo. La ciudad se volcaba rota, parda, blanca. Porches morenos, azoteas de sol, las enormes tortugas de los tejados, paredones rojizos, rasgaduras de atrios, y plazuelas, jardines señoriales y monásticos. Un ciprés, un magnolio, una palmera, dos araucarias mellizas. Muros de hiedras, de mirtos; huertos anchos, calientes; frescor jugoso de limoneros, de parras, de higueras. Eucaliptos estilizados sobre piedras doradas y de apariciones de cielo de un azul inmediato. Un volar delirante de golondrinas y palomos. La torre descabezada de la Catedral, la flecha de Palacio entre coronas de vencejos, la cúpula de aristas cerámicas del Seminario, el piñón nítido de las tres espadañas de Santa Lucía. Más lejos, la torrecilla remendada de las Clarisas. A la derecha, un pedazo de la loriga azul del cimborio de Nuestro Padre, y la antorcha del campanario que brotaba de un hervor del río.</p>
@@ -768,7 +824,7 @@
 					<p>Y apareció <seg rend="italic">Cara-rajada</seg>.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0059_chap14">
-					<head>V. <seg rend="italic">Cara-rajada</seg></head>
+					<head xml:id="ne0059_head_016">V. <seg rend="italic">Cara-rajada</seg></head>
 					<p>Se quedó mirándolo todo con recelo; le colgaban los brazos; volviose muy súbito; juntó las puertas, y dijo cansadamente:</p>
 					<p>-Usted, don Magín, se pensará que yo soy como un perro, de ésos huidos, que le enseñan un mendrugo y acude, y ya va siguiendo la mano del pan... Porque usted me mandó que viniese, y yo no aguardé a mañana...</p>
 					<p>Don Magín le tomó de una manga, tan grande que semejaba vacía, y lo puso en la butaca más cerca del velón. Después, paseando por la sombra de las librerías, fue respondiéndole.</p>
@@ -855,7 +911,7 @@
 					<p>Los pasos rotos del enlutado se perdían y rebrotaban en las lejanas esquinas.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0059_chap15">
-					<head>VI. Prometidos</head>
+					<head xml:id="ne0059_head_017">VI. Prometidos</head>
 					<p>De pie, rígido y pálido; en la diestra, un pomo de rosas y un guante amarillo; en la siniestra, el junco y el sombrero; la mirada fija en un cobre de una cómoda Imperio; la barba estremecida, y la piedra de su frente con una circulación de sol. Así pidió don Álvaro la mano de Paulina.</p>
 					<p>Don Cruz, <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg>, y Monera atendían inmóviles y ceremoniosos cerca del estrado. Todo el estrado para don Daniel, muy solo, muy desvalido en un sofá tan ancho.</p>
 					<p>Reclinada sobre el costurero de ciprés de la madre, en una sillita de lienzo, estaba la novia. Le caían los pliegues lisos de su vestido azul como de túnica de una Anunciación; y en el fondo del ventanal, un arco blanco con una vid que subía, resaltaba el contorno de pureza de sus cabellos negros.</p>
@@ -937,7 +993,7 @@
 					<p>No pudo dormir Paulina. Toda la noche estuvo oyendo mugir a una vaca que le habían quitado el ternero.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0059_chap16">
-					<head>VII. La casa de los hijos</head>
+					<head xml:id="ne0059_head_018">VII. La casa de los hijos</head>
 					<p>Pronunciar el nombre de don Álvaro, oír su voz y sus pisadas, nada más presentirle, era para Paulina de un delicioso sobresalto. Amábale hasta dolerle el corazón de tanto ímpetu; pero el nombre, el recuerdo y el anuncio del amado le prometían mayores bienes y dulzuras que su misma presencia. Alzábase llena de júbilo para recibirle, y palpitaba como si fuera a rompérsele la vida. La honesta lumbre de sus ojos, el temblor de su boca y de sus pechos, su palidez apasionada, toda la transfiguración de la doncella convidaban a un exaltado acogimiento de amor; y aparecía don Álvaro, y quedábase contenida y callada. Hasta la gloria del pasado del caballero, que ungía su frontal ancho, duro y pálido, se iba quedando en el vestíbulo, colgada de su hongo de color de café.</p>
 					<p>A veces, don Álvaro parecía sólo de hueso y de barba, con el pliegue de su ceño indomable.</p>
 					<p>Acercábase el día de los desposorios; y una tarde parose una tartana negra en el portal y descendió el penitenciario seguido del novio. Estaba Paulina con Jimena y tía Corazón, que vino a traerle su regalo de bodas, repasando galas marchitas de la madre; y don Daniel las contemplaba desde el sofá, evocando blandamente la hermosura de la esposa muerta.</p>
@@ -1028,9 +1084,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- IV - Oleza y San Daniel</head>
+				<head xml:id="ne0059_head_019">- IV - Oleza y San Daniel</head>
 				<div n="17" type="chapter" xml:id="ne0059_chap17">
-					<head>I. Epitalámica</head>
+					<head xml:id="ne0059_head_020">I. Epitalámica</head>
 					<p>Cuando salieron de la parroquia comenzaba el día recogido entre nieblas.</p>
 					<p>De la parroquia a la heredad. Acabado el desayuno marcharían los novios en su galera a Murcia. De aquí, en tren, a Valencia, llegando hasta Gandía para visitar la tumba de los padres de don Álvaro.</p>
 					<p>Todo el camino del Olivar se desplegaba solitariamente, como recién tendido para los nuevos esposos, esperándoles desde lejos.</p>
@@ -1138,7 +1194,7 @@
 					<p>-¡Sí; que se alivie, leñe!</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0059_chap18">
-					<head>II. En Palacio</head>
+					<head xml:id="ne0059_head_021">II. En Palacio</head>
 					<p>Una llovizna silenciosa calaba la piel de los árboles, la corteza de las sendas, el verde de los vallados del huerto episcopal. La niebla, rota y mojada, se paraba tocando los vidrios de las rejas como pidiendo que le abriesen.</p>
 					<p>Los curiales tuvieron que encender sus velones, y la hojarasca de legajos de boletines y oficios siguió crujiendo entre manos enfriadas.</p>
 					<p>Venían capellanes forasteros, exhalando un olor de día desnudo, de lluvia campesina y de camino, y al saludar les humeaba el aliento.</p>
@@ -1255,7 +1311,7 @@
 					<p>Y conversando de lo mismo se fueron calle arriba la moza y el párroco.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0059_chap19">
-					<head>III. Don Magín, doña Corazón y Elvira</head>
+					<head xml:id="ne0059_head_022">III. Don Magín, doña Corazón y Elvira</head>
 					<p>Estuvo aspirando y tocando un pomo de geranios rosa de «pico de cigüeña», del búcaro que siempre se renovaba en el viejo mostrador, y dijo:</p>
 					<p>-Usted vive con recogimiento de santa...</p>
 					<p>-¡Ay, Dios se lo pague, don Magín!</p>
@@ -1364,7 +1420,7 @@
 					<p>Y la empujó suavemente; y cerró la puerta.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0059_chap20">
-					<head>IV. Don Álvaro</head>
+					<head xml:id="ne0059_head_023">IV. Don Álvaro</head>
 					<p>Todos los días pasaba el hijo del <seg rend="italic">Miseria</seg> junto a don Álvaro; y los dos se miraban; es decir, don Álvaro le veía y el otro le miraba, cogiéndose sus ojos con un tacto de piel prensible a los ojos del caballero.</p>
 					<p>Pareciole a don Álvaro que, desde su boda, recordaba concretamente todos los días porque la mirada de ese hombre se los iba dejando señalados. Muchas veces sus amigos se callaban de pronto, y el silencio le acercaba y le abandonaba al acecho del lisiado. Volvíase, y siempre estaban esperándole los ojos de burla y de rencor.</p>
 					<p>Escondió su inquietud. Le daba vergüenza y repugnancia. Pero llegó a sentirse un cómplice de esa mirada, un cómplice que había de aceptar la realidad de un secreto. En seguida lo rechazó con el orgullo y la dureza de sus virtudes. Pero ya lo había pensado. ¿Y por ventura cavilando y sufriendo calladamente no se fraguaba también un secreto, un secreto suyo y de ese hombre? Y no quiso ya contenerse; y, una tarde, exclamó:</p>
@@ -1418,7 +1474,7 @@
 					<p>Y apenas lo dijo, resonó el esquilón del portal. Elvira y don Álvaro palidecieron sobrecogidos por el milagro.</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0059_chap21">
-					<head>V. El caballero y la sombra</head>
+					<head xml:id="ne0059_head_024">V. El caballero y la sombra</head>
 					<p>Entró don Cruz; luego Monera. A poco vino el padre Bellod, y sin sentarse habló torrencialmente de las obras de la capilla. Se rascaba la pintura y el yeso de sus uñas, las cortezas de argamasa de su hábito; mostró un codo rasgado. Se iba descarnando como una carroña. Hacía faena de albañil, de dorador, de vidriero, brincando y descolgándose por la arboladura del andamiaje. Dos días amaneció sentado en el borde de su catre porque el sueño le rindió al quitarse las calzas. Verdaderamente le «devoraba el celo por su casa», y todo en vano. Alguien de mucho poder se complacía en que la imagen del Patrono no volviese a su altar hasta que pasaran las fiestas. Acudía a Palacio; y ya no le recibía Su Ilustrísima...</p>
 					<p>Llegó <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg> con <seg rend="italic">El Clamor de la Verdad</seg> recién estampado. Reseñaba entretenidamente las últimas veinticuatro horas de Otero, el que atentó contra la vida de Sus Majestades. Principiaba recordando su delito. Las dos balas que cayeron en el coche regio, y que pesaban dos onzas, socarraron la sien peluda del lacayo. La crónica de <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg> era de más curiosos pormenores que la de los periódicos de Murcia y de Valencia.</p>
 					<p>Temperamento ágil y profuso de «diarista», no se le pasó a don Amancio el registro de los que visitan al reo: el gobernador de la provincia; el capitán general; su defensor, señor Martínez Fresneda; otra vez el gobernador civil con el ministro de la Gobernación y el alcalde primero de Madrid; el capellán de honor de Palacio, señor Cardona; vuelve el capitán general; el duque de Sexto; una comisión de Hermanos de la Paz y Caridad que le nombra cofrade; el médico de la cárcel; de nuevo viene el señor Martínez Fresneda; el marqués de Torneros; el duque de Alba y de Huéscar. El señor Ducazcal, recientemente incorporado a la Hermandad, entra y sale de la capilla con frecuencia. Otero se duerme. Pasada una hora le despiertan para que oiga misa y comulgue. Le visten el hábito de los ajusticiados. Desde la puerta un hombre pronuncia: «Ave María Purísima», y se postra de hinojos delante del reo; le pide perdón, le quita el grillete del pie, le abraza, le besa y le ciñe las esposas. A las ocho menos cuarto aparece Otero en los corredores. Todos los reclusos le despiden cantando la Salve. En la escalerilla del patíbulo le reconcilia el capellán señor Arnáez. Ya sentado y con la argolla puesta, le dice al ejecutor: «Tenga buen pulso para no hacerme padecer». Francisco Otero González muere a las nueve menos veinte minutos. Ha cumplido el mismo día veintiún años y un mes...</p>
@@ -1446,7 +1502,7 @@
 					<p>La voz del viejo se quedó clamando entre los olmos del camino; y por las veredas de San Ginés pasaban los fanales y los cánticos del Rosario de la Aurora.</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0059_chap22">
-					<head>VI. Don Daniel y don Vicente</head>
+					<head xml:id="ne0059_head_025">VI. Don Daniel y don Vicente</head>
 					<p>No acababa el abejeo del coloquio que la mayordoma y doña Corazón tenían en la reja de la sala, la sala de los días contemporáneos, donde fue pedida la mano de Paulina y descansó el señor obispo.</p>
 					<p>Vino el médico. Lo trajo un mozo de la labranza.</p>
 					<p>-¡Sea quien sea -le dijo la mayordoma-, el que antes te depare Dios!</p>
@@ -1525,7 +1581,7 @@
 					<p>Y el viejecito se fue alejando bajo los follajes tiernos de los olmos.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0059_chap23">
-					<head>VII. Don Álvaro, Paulina y el padre</head>
+					<head xml:id="ne0059_head_026">VII. Don Álvaro, Paulina y el padre</head>
 					<p>Siempre llegaba el postrero don Amancio. Su estudio y academia de abogado, la biblioteca del Círculo, la crónica de Oleza, su labor de periodista, le dejaban muy poco vagar.</p>
 					<p>Lo comentaron también sus amigos en la tertulia de esa tarde. Tanto afán secaba la salud de <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg>. Corazón encendido de generosidades, le atormentaba todo menos su conveniencia.</p>
 					<p>Elogios y lástimas iban empachando a Monera. Más cavilaba y trajinaba él; y no le permitían que se enojase, que se quejase ni que estuviese alegre, porque con su rápido medro y buena boda, el enojo o la queja era ofender a Dios, y su alegría tentar al demonio y a los hombres. Y convencido de que estaba ya harto, aprovechose de una pausa, deslizando:</p>
@@ -1618,7 +1674,7 @@
 					<p>Don Daniel ya no pudo abrirlos.</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0059_chap24">
-					<head>VIII. La riada</head>
+					<head xml:id="ne0059_head_027">VIII. La riada</head>
 					<p>Amaneciendo comenzó el temporal. Oleza se entramaba en un recio tapiz de lluvia. Y entre el ruido fresco y crujiente de los follajes, de las baldosas, de los tejados, y el hostigo de los paredones, y el estruendo de las torrenteras y del río, que tronaba bravo y espumoso como una costa de cantiles, tocaban las campanas de Nuestro Padre, sus cinco campanas, siempre viejas y niñas, que se oyen desde nueve pueblos del contorno. Es un campaneo que viene de lo profundo de los años y ampara el paisaje, y va bajando y durmiéndose en la caliente quietud del olivar, en las tierras labradas, en el olvido de un huerto, en los calvarios aldeanos de hornacinas de cal y cipreses inmóviles... Caminante, pastor, yuntero y arriero de Oleza, sabe exactamente la revuelta, la hoyada, el surco o la linde donde principian a sentirse las campanas de San Daniel, y se para mirando las lejanías, y, rudo y todo, se le deshoja en el corazón el viejo calendario de las fiestas de su pueblo...</p>
 					<p>Pero, en aquella tarde, el humo y el telar de la lluvia cegaban la estampa de la víspera del Patrono. Manaban los cobertores para la procesión, los fanales para la verbena, las trenzas de guirnaldas de verdura. La ciudad era una gárgola que el río se bebía, un río enfangado, gordo de cuajadas de muladar, de espumas y bardomera, de hervideros de pringue y estiércol como la piel de una bestia roñosa; un río convulso de veloces hileros y oleajes que arrastraban garbas de cáñamo y de mies, cañizos de pimentón, cuévanos de capullos, artesas, aparejos; y detrás de un remolino de aves ahogadas, pasó un parral con sus vigas, que se quebró contra el puente de los Azudes.</p>
 					<p>Por los pretiles de la margen, por los techos de las anegadas aceñas, los molineros, con capuces de sacas, corrían apercibidos de garfios y sogas para los auxilios.</p>
@@ -1699,7 +1755,7 @@
 					<p>-¡A ése ya no le amortaja ni su madre!</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0059_chap25">
-					<head>IX. Hasta los males pasan</head>
+					<head xml:id="ne0059_head_028">IX. Hasta los males pasan</head>
 					<p>Camino de la Visitación, iba recordando <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg> que ya se había cumplido la profecía de <seg rend="italic">El Clamor de la Verdad</seg>.</p>
 					<p>En el principio del año, el Gabinete de Madrid prometió que las naves de España pasearían nuestra bandera hasta el Bósforo.</p>
 					<p><seg rend="italic">El Clamor de la Verdad</seg>, es decir, <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg>, se burló de las arrogancias del Gobierno; y con patriótica pesadumbre, preveía que «las costas de Italia, Austria, Grecia y Turquía, que de continuo saludaban los buques de las potencias europeas, seguirían sin conocer la marina de guerra de España».</p>
@@ -1757,7 +1813,7 @@
 					<p>Vuelto el párroco a San Bartolomé, quedó el capellán de la Visitación en su quietud de pobre. Damas, Juntas, prebendados fueron subiéndose a su jerarquía. Don Álvaro, el padre Bellod, don Cruz, <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg>, se remontaron como águilas sin acordarse de don Jeromillo. Y cuando don Magín le llevó a Palacio para agradecer a Su Ilustrísima sus bondades y honras, sobrecogiose, y buscó el arrimo del ventanal de la saleta. Desde allí, contemplando la noria, las almajaras, los frutales; imaginándose al obispo como un grave eclesiástico rural, resistió sus preguntas y sus ojos. ¡Ya no era el mismo Su Ilustrísima que antes! ¡Es decir: ahora Su Ilustrísima y los demás eran verdaderamente lo mismo, leñe! ¡Cuánto misterio!</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0059_chap26">
-					<head>X. Nuestro Padre San Daniel</head>
+					<head xml:id="ne0059_head_029">X. Nuestro Padre San Daniel</head>
 					<p>Un día, en medio de la calle, don Jeromillo se sonrojó y se aturdió más de lo suyo porque, sin querer, acababa de decirse que algunas mujeres se quedaban muy hermosas después de parir.</p>
 					<p>Lo pensó por la de Lóriz, que hasta en la voz y en el andar le parecía de una hermosura más dulce, más cálida y más firme desde que era madre.</p>
 					<p>Y confirmó su parecer viendo venir a Paulina de la misa de su purificación. Don Jeromillo se paró, mirándola; las gentes se asomaban, y en cada boca prorrumpía un requiebro para la hija de don Daniel. Iba entre el esposo y la hermana; y delante, el recién nacido, en brazos de la criada de Gandía. Paulina y la condesa también coincidieron, según comentó la Monera, en tener hijo. No en el nombre: al condesito se le puso el de su padrino, el hermano de la madre, el hermano artista y pecador: Máximo; al de Paulina, Pablo, por voluntad de don Cruz; pero <seg rend="italic" type="foreign" xml:lang="la">Alba-Longa</seg> le llamó el nombre primitivo del apóstol de las gentes: Saulo, esto es: deseado.</p>

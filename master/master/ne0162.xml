@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Juan Vulgar</title>
-				<title type="sub"></title>
+				
 				<title type="short">JuanV</title>
-				<title type="idno">
-					<idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1028454</idno>
-					<idno type="viaf">35252653</idno>
-					<name type="short">Picon</name>
-					<name type="full">Jacinto Octavio Picón</name>
+					<name type="short" ref="#Picon"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">512</measure>
@@ -139,22 +131,52 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0162</idno>
+						<idno type="cligs">ne0162</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, ALiante, <date when="2000"></date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmczw1f3 "/>, <ref target="http://www.cervantesvirtual.com/obra/lazaro-juan-vulgar--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Renacimiento, <date when="1918">1918</date></bibl>
-				<bibl type="edition-first"><date when="1885">1885</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Juan Vulgar</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Picon">
+						<name type="full"><forename>Jacinto Octavio</forename> <surname>Picón</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 9768">IP 9768</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118792083">118792083</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q432511/">Q432511</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028454.html">XX1028454</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/35252653/">35252653</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, ALiante, <date when="2000"/>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmczw1f3 "/>, <ref target="http://www.cervantesvirtual.com/obra/lazaro-juan-vulgar--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Renacimiento, <date when="1918">1918</date></bibl>
+					<bibl type="edition-first"><date when="1885">1885</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Lázaro</title>: 	<title type="sub">Juan Vulgar</title> <date when="1918">1918</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="467781494" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467781494"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE7">
 				<p>Juan Vulgar es el típico estudiante que alimenta la fantasía de un espléndido porvenir, pero que tiene que conformarse con un modesto empleo de administrativo.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -167,7 +189,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">naturalista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender" cert="low" resp="#jct">male</term>
@@ -185,7 +207,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cert="low" cligs:importance="2">novela realista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cert="low" cligs:importance="1">novela naturalista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -213,6 +235,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-10-20" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -220,7 +243,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0162_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0162_head_000">- I -</head>
 				<p>Tiene, al comenzar este verídico relato, diecisiete años. Su infancia ha sido la de casi todos los muchachos de pueblo. Nunca estuvo para él la fruta demasiado alta, ni logró su abuela esconder las golosinas en sitio que no descubriera, ni había en la comarca perro que no le temiese. A pedradas turbaba él sosiego de los pájaros ocultos en las frondas, y entre burlas y veras, con sus requiebros, traía desasosegados los corazones de las mozas. Más de una cuando él a la fuente se acercaba, fingió que no podía con el cántaro para que Juan la ayudase a levantarlo, mientras otra, dejándole ver los remangados brazos, alzaba vigorosamente el suyo, como dándole a entender cuán apretado lazo formaría con ellos en torno de su cuello.</p>
 				<p>Una, a quien hasta sus compañeras llamaban Luisa <seg rend="italic">la</seg> <seg rend="italic">bonita, </seg>llegó, por fin, a hacerse casi dueño de su alma, y desde entonces Juan, buscándola incesantemente, comenzó a descuidar la vigilancia de la hacienda de su padre. Por la mañana, muy temprano, se apostaba cerca de la casa de Luisa para verla cuando se asomaba a colgar de un clavo la jaula del pájaro que entretenía sus horas de costura; ya entrado el día, iba a esperarla en el arranque del camino de la fuente, y le hacía tomar el sendero más largo, obligándola a andarlo despacito; a la tarde, sin que el calor le arredrase, pasaba varias veces ante su puerta, para verla cosiendo ante el cancel o para oírla, si estaba más hacia dentro, cantar coplas que querían decirle «aquí me tienes». Después, al caer el día, hacían juntos el segundo viaje a la fuente, y al regresar envueltos entre sombras, ella le dejaba acercarse cuanto quería, más temerosa de la oscuridad que de los besos. Y luego, a la noche, cuando las gentes reposaban arrulladas por el airecillo que movía las ramas de los cercanos naranjales, él, apoyado en la reja y caído a sus pies el guitarro, le decía ternezas con los labios y cosas muy atrevidas con los ojos, mientras la chica, de rato en rato, le abandonaba las manos, ya que los maldecidos hierros les separaban las caras.</p>
 				<p>Así pasaron algunos meses, hasta que el padre de Juan, labrador de mediano caudal y ambicioso de buen porvenir para su hijo, quiso poner por obra el proyecto que de tiempo atrás acariciaba. El chico de su compadre estaba en Madrid estudiando hacía dos años; a Martín Gonzalete, hijo de un ricacho del pueblo, sólo le faltaba un año para graduarse de boticario, y cuando en las vacaciones venía a pasar el verano con su familia, era de ver el contraste que formaban su traje y sus maneras con la ropa y los modales de Juan. Hasta el tío Pipierno, chalán que se pasaba la vida recorriendo ferias para vender burros reumáticos y caballos gotosos, había mandado uno de sus hijos a la corte a seguir la carrera de agrimensor. De suerte, que el padre de Juan, ganoso de prosperidades soñadas y espoleado además por el pícaro amor propio, fue de día en día encariñándose con su propósito. Cada vez que oía a la mujer de Gonzalete decir: «Cuando Martín se <seg rend="italic">desamine de últimas</seg> le compraremos la botica de don Rufino»; cada vez que el tío Pipierno se llenaba la boca, publicando que su chico estudiaba de <seg rend="italic">pa</seg> <seg rend="italic">engeniero der campo, </seg>al pobre viejo le acometían intenciones de precipitarlo todo, enviando a Juan inmediatamente a la corte; pero luego, por no separarse de él, iba retrasándolo, temerosos su buen sentido y su corazón amante de la larga ausencia que era precisa. Los amoríos de Juan acabaron de decidirle. La muchacha era hija de unos arrendatarios suyos, que a duras penas podían pagarle cuando vencían los plazos; y aquel hombre, que se casó con mujer pobre, asustado ante la idea de que su chico hiciera lo mismo, decidiose repentinamente, y de la noche a la mañana corrió por el pueblo la noticia de que Juan marchaba a Madrid. Gonzalete iba a tener botica, el joven Pipierno iba a ser <seg rend="italic">engeniero... </seg>pues Juan sería abogado, y con esto más señor que ninguno de ellos.</p>
@@ -260,7 +283,7 @@
 				</lg>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0162_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0162_head_001">- II -</head>
 				<p>Juan tenía más imaginación de la que conviene al hombre: <seg rend="italic">la loca de la casa</seg>, dominaba imperiosamente en su espíritu. Nunca le parecieron, como a don Quijote, alcázares las ventas, ni tomó por princesas a las criadas de mesón; mas su fantasía, alterando las impresiones de la realidad, todo lo engrandecía y poetizaba. A cualquier mal hallaba remedio su esperanza; ningún bien era mezquino ante sus ojos; los ideales más lejanos le parecían fácilmente realizables; amaba el bien; y sentía la belleza por instinto; pero su imaginación se encargaba luego de exagerar lo bueno o agrandar lo bello; y su mente, considerándolo todo bajo el influjo de un optimismo engañador, se iba poblando de ideas falsas sobre el mundo y la vida. A todo pensamiento hermanaba algo de aspiración: el porvenir era para él un libro en que faltaba la palabra imposible.</p>
 				<p>Aquella predisposición a deleitarse fácilmente con lo hermoso y a sentirse atraído por lo bueno, se manifestó en Juan desde los primeros años de su juventud. En tanto que otros mozos del pueblo trabajaban con la frente sudorosa y la mano encallecida, él se abismaba contemplando los celajes de una puesta de sol, y a veces, más que el ver llenar las trojes de su padre, le entretenía observar si las enredaderas habían trepado bien en torno de una ventana.</p>
 				<p>Los grupos de gañanes y mozas que naturalmente se formaban en la recolección de la naranja, con sus fondos de boscaje verde y su brillante luz meridional, le encantaban por su aspecto artístico sin dejarle pensar cuánto producirla todo aquello; y si alguna vez oía de los sujetos al duro trabajo corporal una maldición o una queja, imaginaba que ha de venir un tiempo en que nadie reniegue de su suerte. Pero su fantasía, vigorosa al fingirse esperanzas, era indolente al concebir remedios; sin darse cuenta de ello, se asemejaba a esas plantas que viven del rocío y lo esperan lozanas, cual si estuviesen seguras de que no les ha de faltar nunca.</p>
@@ -291,7 +314,7 @@
 				<p>Cuando tomó esta determinación hacia varios meses que la tenía él enteramente olvidada.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0162_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0162_head_002">- III -</head>
 				<p>Entre asistir a la Universidad y reunirse con sus amigos pasaba Juan la vida, y entre el manejo de los libros y el roce con los compañeros, iba su entendimiento ilustrándose.</p>
 				<p>El rasgo distintivo y más notable de su inteligencia era una extraordinaria fuerza de asimilación. Lo que otros aprendían con esfuerzo, él lo dominaba casi fácilmente; por una sola manifestación, apreciaba la esencia de una idea: de cada hecho, de cada suceso, lo más importante, aunque fuese lo menos ostensible, era lo que mejor fijaba su atención; y así en sus estudios, como en el trato de las gentes, su talento consistía en saber distinguir y separar unas condiciones y unas cualidades de otras. Condensando sus impresiones en muy pocas palabras, y expresándolas sobria y enérgicamente, mostraba poseer juntamente aquel hermoso don de asimilarse el fruto del trabajo ajeno, y una aptitud envidiable para transformar en pensamientos propios las ideas que en su mente despertaban la reflexión, el estudio y el roce con los hombres. Pero junto a tales excelencias, faltábanle la constancia y el vigor intelectual que obrando a modo de fuerza de cohesión, confunden lo que se estudia y lo que se siente, para utilizarlos prudentemente. De aquí que no adquiriese en nada principios fijos, y que para él, aun las nociones más claras, fuesen como imágenes prontas a desvanecerse cediendo el puesto a otras distintas. Con la misma facilidad que aprendía, desvirtuaba lo aprendido; y al modo que un río ancho y sereno refleja sin detener su curso celajes infinitos, así su imaginación, impresionada un punto por lo que la hería, continuaba luego su carrera sin término.</p>
 				<p>En ninguno de sus diversos estudios logró dominar aquella movilidad de pensamiento esterilizadora de sus mejores facultades. Nunca supo escoger entre teorías y sistemas opuestos. Carecía de ese sentido práctico, especie de instinto, que hace al hombre atisbar lo mediano entre lo malo y lo mejor entre lo bueno. Lo claro de su entendimiento daba envidia; lo débil de su juicio inspiraba lástima, asombrando que pudieran en un mismo espíritu darse juntas tanta facilidad para convertir la observación en conocimiento, y tal falta de disposición para imprimir forma provechosa a la experiencia.</p>
@@ -302,7 +325,7 @@
 				<p>El único que ignoraba lo que quería ser, era Juan. Creyéndose, tal vez, capaz de todo, nada acometía con empuje. Su voluntad, siempre indecisa, parecía la aguja de un barómetro descompuesto.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0162_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0162_head_003">- IV -</head>
 				<p>Al año siguiente de haber concluido la carrera, citáronse una noche de verano a las ocho en el <seg rend="italic">Suizo</seg> casi todos los amigos del grupo. Cuando los demás, cansados de esperarle, se habían marchado, llegó Juan, contra su costumbre muy elegante, con levita, sombrero de copa y corbata negra.</p>
 				<p>-Ya se han ido, señorito -le dijo el mozo, restregando con un paño sucio el mármol de la mesa.</p>
 				<p>-¿Sabes dónde?</p>
@@ -335,7 +358,7 @@
 				<p>A la noche siguiente, fue uno de los primeros que llegaron al jardín del Buen Retiro.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0162_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0162_head_004">- V -</head>
 				<p>A pesar de aquel rasgo de prudente reserva, no tenía Juan carácter para callar por mucho tiempo a sus compañeros lo que le ocurría. En un principio, temeroso de las bromas que pudieran gastarle, guardó silencio; hasta pensó que era gran mérito aquella discreción, que tanto trabajo le costaba; pero a poco más de un mes, la vanidad que su buena suerte le produjo despertó en él vivísimo deseo de buscar confidente y su fantasía, propensa a abultar los sucesos y desvirtuar los hechos, le pintó con alegres colores la perspectiva de referir pronto lo que le pasaba. El gozo no le cabía en el pecho; creyó amar, se supuso amado; todos los desvaríos de su imaginación, fundados en libros, teorías y estudios, cedieron el puesto a la que él se fingió pasión avasalladora; y, como cuando solía edificar castillos en el aire con el plan de una obra que había de hacerle inmortal, o a semejanza de los ratos en que sus lecturas le arrancaban a la realidad, empezó a cimentar desatinadas esperanzas sobre la incierta y movediza base del capricho de una niña bonita.</p>
 				<p>Muchas veces, paseando con cualquier amigo, estuvo a punto de revelarle su secreto. Había días en que el primero a quien encontraba le parecía capaz de comprender lo que él sentía: otras veces desconfiaba de todos, suponiéndolos indiferentes, fríos, egoístas. Hasta llegaba a creer que, hablándoles de su dicha, sólo despertaría en ellos envidia. Por fin, una noche salió del café con Pedro Urgell, el catalán razonador y frío, y dando vueltas por las calles, tras hablar de cosas indiferentes, se encontraron otra vez ante la puerta del <seg rend="italic">Suizo</seg>.</p>
 				<p>-Chico -dijo Juan- tengo mucho calor, yo no me meto ahí.</p>
@@ -418,7 +441,7 @@
 				<p>Los que sueñan despiertos suelen dormir profundamente, sin que nada altere su reposo; cual si su imaginación, harta de desvaríos y quimeras, se aquietase como niño rendido por el cansancio y hastiado de juguetes.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0162_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0162_head_005">- VI -</head>
 				<p>¿Estaba Juan verdaderamente enamorado? Ni él mismo hubiera podido decirlo, a ser fácil que su fantasía le dejara razonar sin confundir la realidad con la ilusión. Lo único indudable era que María le gustaba mucho. Aquella señorita fina, instruida, si se la comparaba con las mujeres que trató hasta entonces; discreta, que escribía mezclando a su natural ingenio las reminiscencias de cien párrafos de novelas, y que parecía apreciar con regocijo la diferencia que notaba entre él y los insulsos mequetrefes que antes la cortejaron, causó en su ánimo una impresión muy honda y sincera, pero distinta del amor. Cualquier mujer, regularmente agraciada y de esfera superior a la suya, le hubiese producido igual efecto. Lo que supuso amor, no era sino la aspiración que siente todo hombre de instintos delicados a una pasión noble. Habíase ya olvidado por completo de la Luisilla del pueblo; y aunque la hubiese recordado, la muchacha lugareña, amante y cariñosa, habríale parecido zafia y tosca para el hombre habituado al refinamiento intelectual que en él se desarrolló por el estudio y la vida cortesana. De aquel idilio de aldea no quedaba en el ánimo de Juan sino la impresión vaga de una niñería: si acaso de tarde en tarde venía a su pensamiento el nombre de Luisa, se acordaba de ella como del huerto de sus padres o como de las tardes en que con los otros chicos del pueblo salía a cazar tordos en el olivar cercano; pero jamás, desde que arrojó al cajón de la cómoda, sin leerlas, las últimas cartas de la niña; volvió a traer amorosamente aquel nombre a su memoria.</p>
 				<p>Por otra parte, exceptuada Luisa, no había tenido amores con mujer alguna, ni conocía del amor sino esa satisfacción física, rápida y exenta de poesía, que proporciona el placer comprado. No era, pues, de extrañar que le halagase el suponerse querido por María; ni había tampoco nada extraordinario en que ésta, a su vez, aunque sin sentir por él pasión verdadera, prefiriese la hermosura varonil, la discreción y la elegancia natural de Juan a las figuras ridículas y enclenques de los caballeretes que frecuentaban su casa y sólo sabían decirle galanterías vulgares o hablarle de modas, como si fuesen mujercillas.</p>
 				<p>Hasta las dificultades con que ambos tropezaban para tratarse, servían a su amorío de acicate. Juan, al par privado y temeroso de frecuentar la casa de los padres de María, si quería verla tenía que seguirla en los paseos, cuando iba a misa o salía a tiendas.</p>
@@ -465,7 +488,7 @@
 				<p>Para su conciencia fue aquel un momento muy amargo. Por primera vez en la vida se vio ante sus propios ojos despreciable y ridículo.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0162_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0162_head_006">- VII -</head>
 				<p>De las dos cátedras que había vacantes, una era de Historia de España, otra de Literatura Nacional. Juan comenzó a dudar por cuál de ambas se decidiría, pareciéndole que bastaba optar por una y prepararse bien para que lo demás marchase a medida de su deseo. El desequilibrio intelectual que sometía sus raciocinios a sus ilusiones; la imaginación, siempre dispuesta a desnaturalizar cosas, ideas y sucesos, que le hizo en otro tiempo creer que amaba a Luisa y que dio a su ánimo valor ficticio para luchar contra la adversidad; aquella misma acalorada fantasía, que pintaba a sus ojos como pasión incontrastable la inclinación que María despertó en él, le indujeron también a forjarse nuevas ilusiones, destinadas a resolverse en nuevos desengaños.</p>
 				<p>Explicar Historia de España le pareció tarea hermosísima y el prepararse bien para la oposición cosa no muy difícil en realidad. ¿Qué tenia que hacer? A juicio suyo, demostrar que conocía las glorias y las desdichas patrias contadas por ilustres escritores; compendiar en concisas frases y abarcar en grandes síntesis el carácter de cada época, la tendencia de cada período, la índole de cada personaje; y luego establecer unas a modo de reglas generales, convergentes todas al ideal del progreso, que llamarla leyes eternas de la historia. Esto, sazonado con toques de erudición inesperada. Citas, pocas, pero raras. No hablar casi de las obras muy conocidas: nada de don Modesto Lafuente, ni del Padre Mariana, ni de Prescott, ni de Solís; y en cambio sacar a relucir párrafos de crónicas olvidadas, de historiadores, de hechos aislados, de cronistas regionales, y buscar datos en documentos literarios, revelando por la apreciación de los hombres contemporáneos a cada suceso el alcance que se atribuyó a las revoluciones y las ideas en los tiempos pasados. Había que redactar el programa de la asignatura, pero esto tampoco le parecía difícil. «Época primitiva -se decía-: celtas, iberos, cántabros, Túbal, etc., etc., y luego fenicios, griegos, cartagineses, romanos, godos, árabes, la Reconquista, -allá iba todo de un golpe- la reunión de las dos coronas, la coronilla, la unidad nacional, la casa de Austria, la decadencia, los Borbones... y se acabó la historia de España.» Con la misma facilidad que hacía esta enumeración, pensaba poder escribir completísimamente el programa exigido. Y luego, cuando le tocase discutir con sus contrincantes, ¡vaya unos discursos que pronunciaría! ¡Pobre Felipe II! ¡Desgraciado siglo XVII! ¡Cómo iban a quedar! Pues, ¿y la resurrección nacional de 1808? ¡Hermoso cuadro! Llamaría <seg rend="italic">sacratísimos</seg> a los escombros de Zaragoza y de Gerona; haría el elogio de los guerrilleros; ensalzaría el sentimiento popular de horror a la invasión, y procuraría justificar la tendencia revolucionaria e ilustrada que dominaba en los afrancesados. Esta le pareció una idea muy original: sí, era preciso fundir en un solo latido patriótico el horror al extranjero y el influjo de la Revolución francesa. Así le sucedía en todo: partiendo de ideas sensatas luego comenzaba su imaginación a desbarrar.</p>
 				<p>Pues ¿y la cátedra de literatura española? Tampoco había para qué asustarse. La única dificultad estribaba en saber demostrar al descuido mucha erudición y ser muy original en las apreciaciones. Lo primero era probar que conocía los críticos extranjeros; respecto a los orígenes del teatro, hablar de los <seg rend="italic">contrafacedores, </seg>de las <seg rend="italic">albas</seg> y <seg rend="italic">pastoretas</seg>, sin olvidar la <seg rend="italic">comedieta</seg> de Ponza; decir algo de los escritores arábigos, sacando a relucir que según algunos las coplas de Jorge Manrique son del Rey poeta Al-Motamid, de Sevilla; decir a este propósito algo de escritores moros, tan notables como Ibn-Chalikan, Makari y otros, en cuyas descripciones orientales parecen haberse inspirado nuestros mejores líricos; estudiar bien el <seg rend="italic">Romancero</seg> y los <seg rend="italic">cantos de gesta; </seg>suscitar la cuestión del naturalismo para probar que Quevedo ha dicho más porquerías, Cervantes más desvergüenzas y doña María de Zayas mayores inmoralidades que el mismísimo Zola; echar pestes, fáciles de justificar, contra el pseudo clasicismo a la francesa; y, sobre todo poner junto a las obscenidades de las guías de confesores la delicadeza y ternura de la poesía popular...</p>
@@ -480,7 +503,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0162_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0162_head_007">- VIII -</head>
 				<p>Cuando más en calma disfrutaba su amor la confiada pareja, si bien María empezaba ya a mirar con cierta repugnancia las excursiones al cafetín, el señor Volandas, sin llegar a enterarse de las escapatorias de su hija, supo que tenía novio.</p>
 				<p>El aya inglesa se había indispuesto con el ayuda de cámara, y por si ella contó o no contó a la señora, para que llegase a oídos del amo, cómo había desaparecido medio cajón de puros que se echó de menos, ello fue que el padre vino en conocimiento del noviazgo de su hija, y a la tarde siguiente la llamó cariñosamente a su despacho y le dijo, acercándola una butaca:</p>
 				<p>-Siéntate ahí, que tenemos que hablar de cosas serias.</p>
@@ -500,7 +523,7 @@
 				<p>Ni aun entonces abrió los ojos a la realidad. Creyó que un padre tirano, dominado por los errores de toda una clase social, le arrebataba el amor de su María, como antes la injusticia de los hombres le había despojado de la cátedra; y una idea consoladora flotó sobre el pesar que aquella carta le produjo. La prueba de que María le amaba -pensó él- era que no le pedía ni las cartas que le había escrito, ni el retrato que le regaló.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0162_chap9">
-				<head>- IX -</head>
+				<head xml:id="ne0162_head_008">- IX -</head>
 				<p>Mientras Juan se preparó a las oposiciones e hizo los ejercicios, no sólo transcurrieron los tres meses que se había impuesto como plazo para decir a su padre que no le enviase dinero, sino que las cartas de éste fueron siendo cada vez más desconsoladoras. El pobre viejo pedía ya claramente a su hijo que buscara una colocación, pues pronto llegaría el instante en que no le fuese posible mandarle una peseta; y, sobre todo, le aconsejaba en repetidos párrafos que, si la carrera no le era útil para nada, tornase al pueblo, donde, al menos, a él su compañía le serviría de algún alivio, y sufriendo juntos padecerían menos.</p>
 				<p>«No: volver al pueblo, es enterrarse en vida -pensaba Juan-. Me humilla ser empleado del gobierno o depender de un amo en una empresa particular. Las compañías modernas constituyen el feudalismo de nuestros días; pero, sino hay otro remedio, buscaré un destino. Todo consiste en hallar una buena recomendación.»</p>
 				<p>Entonces paró mientes en que todas sus relaciones se limitaban a los amigos del <seg rend="italic">Suizo</seg>, y hacía ya tiempo que sólo les veía de tarde en tarde. El estrecho lazo que antes les uniera, no se había roto, pero estaba muy flojo. Aquel grupo de muchachos que iban juntos a todas partes, viviendo voluntariamente sometidos a un comunismo de ideas, sentimientos y gustos, se había dispersado por completo.</p>
@@ -516,7 +539,7 @@
 				<p>Así, rebelde siempre su espíritu a las amarguras de la realidad, según iba concibiendo majaderías, iba prestándoles crédito, sin pensar que una crisis, un compromiso del ministro, cualquier cosa, podía dar al traste con lo que él llamaba pomposamente su nueva posición.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0162_chap10">
-				<head>- X -</head>
+				<head xml:id="ne0162_head_009">- X -</head>
 				<p>No pudiendo lucir sus conocimientos de otro modo, y ávido de mostrar la superioridad que tenía sobre los demás empleados de la secretaría particular de S. E., dio en la manía de redactar las cartas que le mandaban escribir en un castellano a su juicio puro, castizo y correctísimo, pero que al jefe le pareció insoportablemente ridículo. Nunca decía a veces, sino <seg rend="italic">a las veces; </seg>escribía <seg rend="italic">moharracho, </seg>por mamarracho; jamás puso me alegraré, sino <seg rend="italic">holgareme</seg>; a la conversación llamaba <seg rend="italic">plática; </seg>al dañar, <seg rend="italic">empecer; </seg>al pensar, <seg rend="italic">percatar; </seg>y dirigiéndose a cierta persona, a quien no se pudo complacer en el ministerio, porque tenía cuentas atrasadas con el ayuntamiento de su pueblo, le disparó un párrafo recomendándole que no insistiera en sus pretensiones en tanto no pagara <seg rend="italic">los pechos que al común debía.</seg></p>
 				<p>El resultado fue que le trasladaron al negociado de la prensa, donde no tenía más trabajo que cortar de los periódicos y pegar en grandes pliegos los sueltos y noticias que podían interesar al ministro.</p>
 				<p>Cerca de un año llevaba de cumplir tan trivial tarea, yendo diariamente a la oficina como el burro va al molino, cuando en un periódico leyó, con amarga sorpresa, el siguiente suelto:</p>
@@ -536,7 +559,7 @@
 				<p>Juan la miró con profundo desprecio. ¿Acaso era capaz de comer en tales momentos? -«¡Qué dichosos -se dijo- son los pobres de espíritu!»- Se marchó sin almorzar, pero por la tarde, al volver del ministerio, como llevaba cerca de veinticuatro horas sin tomar bocado, experimentó una debilidad muy grande, y se sentó a la mesa murmurando entre dientes: «¡Las necesidades del cuerpo... la imposición de la vil materia!» Y comió como un lobo.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0162_chap11">
-				<head>- XI -</head>
+				<head xml:id="ne0162_head_010">- XI -</head>
 				<p>Cuando Juan se acordaba de la <seg rend="italic">infausta mañana, </seg>como dio en llamar al día de la boda de María, se tenía por el más infeliz de los mortales, y durante algunos meses la disposición de su ánimo llegó a ser tal, que los demás huéspedes de la casa comenzaron a gastarle bromitas sobre lo melancólico y cariacontecido que andaba, a las cuales él respondía con sonrisas tan forzadas como amargas, pero muy satisfecho de que todo el mundo adivinase la honda pena que le destrozaba el alma. Afortunadamente, esta pesadumbre no le hostigaba de continuo, sino sólo a ratos, cuando el nombre de María venía involuntariamente a su memoria; y a pesar de sufrir tanto, algunas veces cada dos o tres días, al retirarse por la noche, daba una acometida brusca a la criada de la patrona, moza frescota y nada arisca, que le servía para contentara lo que él llamaba <seg rend="italic">la bestezuela de la carne. </seg>Por regla general, al desprenderse de los brazos de la Maritornes, era cuando más fuertes le daban los arrechuchos de amor platónico: entonces comparaba mentalmente aquellas caricias groseras, pero reales, con las que imaginó disfrutar siendo dueño de María, y satisfecha ya la animalidad, como si el amor físico no le importase nada, sacaba el retrato de la <seg rend="italic">perjura </seg>y lo cubría de besos.</p>
 				<p>Otra manifestación de su melancolía fue la afición que en él se desarrolló a paseos largos hacia sitios poco frecuentados, optando siempre por los más solitarios. En un par de meses anduvo tanto como en todo el resto de su vida; ni las excursiones de cuando era estudiante y faltaba a clase podían compararse con las caminatas que emprendía. Unas tardes, al salir del ministerio, bajaba por la calle de los Reyes, el paseo de San Vicente, la Virgen del Puerto, las rondas de Toledo y de Segovia y volvía a entrar en Madrid por el portillo de Embajadores, atravesando calles y más calles hasta la del Nao, donde vivía: otras veces tomaba hacia los barrios altos, y por la plaza de Monteleón iba a dar con sus huesos en Chamberí para salir cerca del barrio de Salamanca, y durante todo el camino, a no ser que se distrajese con lo que hallaba al paso, iba saboreando su pasión de ánimo.</p>
 				<p>En un principio, estas expediciones le dejaban rendido; luego adquirió poco a poco una agilidad y una fuerza semejantes a las que gozó de muchacho; y últimamente se le desarrollaron unas ganas de comer, que aterraban a la patrona. Al salir del ministerio, andaba despacio y muy triste; pero al tornar a casa iba como disparado y con un hambre voraz. Por entonces, las noches de la Maritornes fueron bastante agitadas, y el retrato de María se quedó en la cómoda sin recibir los besos de costumbre, resultando de todo ello que entre los paseos, el apetito, y las amorosas condescendencias de la criada, fue Juan transigiendo lentamente con su dolor, de suerte que el recuerdo de la perjura sufrió una transformación notabilísima. En la época de las entrevistas del cafetín, María había sido para él una promesa embriagadora, una mezcla de Ofelia y Dulcinea; después una mujer traidora por debilidad en la cual pensaba, según su fraseología, con <seg rend="italic">amoroso rencor; </seg>ahora era ya un recuerdo dulcísimo, un imposible para la realidad, una negación para la esperanza; pero tan querida, tan adorable, que en el amor que creía profesarla había algo de simbólico y emblemático. La amaba en espíritu como quien aspira a un ideal, con absoluta abstracción de los sentidos. Tanto se transformó su pasión, que sólo la recordaba cuando algo independiente de la voluntad se la traía a la memoria: ya las cartas arrugadas y partidas por los dobleces, que andaban traspapeladas en el cajón de la mesa; ya el retrato que surgía de pronto entre los guantes viejos, suscitando una evocación de lo pasado. Pero lo que con más frecuencia le hacía pensar en ella era lo atrasado de pagos que estaba con el sastre desde la temporada de las entrevistas en el café, porque como tenía que entregar al industrial, a cuenta de cuentas, cinco, duros mensuales, cada vez que el cobrador se presentaba con el recibo, el pobre soñador no podía menos de exclamar: «¡Parece increíble a qué abismos arrastra la pasión! El amor de una mujer basta para ocasionar la ruina de un hombre.¡Todo un drama!»</p>
@@ -568,7 +591,7 @@
 				<p>Transcurrido algún tiempo, intentó realizar la herencia de sus padres, para fijar su residencia en Madrid; pero no hallando comprador a las tierras, tuvo que arrendarlas. Por fin, terminadas las diligencias a que se vio obligado, regresó a la corte. Su renta ascendía, aproximadamente, a 5.500 reales, que con los 6.000 del destino arrojaban un total de 11.500 al año. «No soy rico -pensaba- pero puedo vivir. <seg rend="italic">¡Aurea mediocritas!... </seg>¡Ahora, al drama!»</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0162_chap12">
-				<head>- XII -</head>
+				<head xml:id="ne0162_head_011">- XII -</head>
 				<p>Mientras Juan sólo tuvo para atender a sus gastos el mezquino sueldo del empleo, soportó con paciencia el trato que le daba la patrona; pero así que se vio con un poco de dinero, adoptó la resolución de buscar una casa de huéspedes algo mejor. Por otra parte, este era el único medio de librarse de la criada complaciente que, tornando ya por lo serio su papel de amante, le servía mal, dejando de limpiarle las botas, dándole el chocolate frío y procurándole un sinnúmero de molestias análogas. Hízolo como lo pensó, y del miserable pupilaje de la calle del Nao fue a dar con su cuerpo, sus escasas ropas y sus muchos libros en una nueva casa de huéspedes más tolerable que la primera y donde no había de pagar sino las mismas tres pesetas diarias. Multiplicando los doce reales por los trescientos sesenta y cinco días del año, averiguó que gastarla 4.380 reales en lo más necesario, casa y comida, quedándole para el vestir y otras atenciones 7.120 reales, es decir, más de lo que necesitaba: «¡Tengo hasta para vicios!» -se dijo, esperanzado con permitirse de cuando en cuando alguna aventurilla amorosa; y ordenando su existencia, volvió al ministerio y se puso a trabajar en el drama. Pasaba el día leyendo periódicos y pegando recortes para que los leyese S. E., y dedicaba la noche, después de dar un paseíto por las calles, a escribir aquella obra tan bien pensada, tan hondamente sentida, y que si no había de hacerle inmortal, al menos le entornaría la puerta del palacio de la fama. ¡Vaya si estaba bien sentido el dramita! ¡Como que había volcado en él las angustias y las esperanzas de su inextinguible pasión!</p>
 				<p>Con tener el pensamiento continuamente ocupado por las peripecias del drama, modificose en su ánimo notablemente el recuerdo de María. Al tipo real sustituyó poco a poco la figura dramática, y el amor que tuvo a la primera se transformó lentamente en el cariño, casi paternal, de autor, que cobró a la segunda: la María de su noviazgo, la <seg rend="italic">perjura</seg>, trocose para él en un ser, de funesta influencia, que le recordaba un desengaño; la María, transfigurada por su fantasía iba, en cambio, a labrar su reputación, a ser una realidad gloriosa. A los ojos del soñador, la hija del señor Volandas, a la sazón señora de Alones, quedó convertida en un engendro romántico, algo así como la personificación de un ideal imposible o el recuerdo vago de un episodio de la juventud.</p>
 				<p>La oficina y el drama no le dejaban tiempo para nada; con los otros huéspedes sus compañeros, apenas tenía roce; sólo a las horas de comer les veía. Además, todos le fueron desde un principio antipáticos o indiferentes.</p>
@@ -621,7 +644,7 @@
 				<p>Lo que Juan no notaba es que la tos se oía cada noche antes y el monólogo resultaba cada, vez más corto.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0162_chap13">
-				<head>- XIII -</head>
+				<head xml:id="ne0162_head_012">- XIII -</head>
 				<p>Pasó un año, durante el cual los esposos disfrutaron la más completa calma. No tuvieron una disputa, una riña, ni el menor altercado.</p>
 				<p>Juan no era, sin embargo, tan dichoso, como a primera vista parecía: a ser capaz de interrogarse con la razón serena, no le habría sido tan fácil determinar la causa del desasosiego moral que comenzaba a sentir; pero con frecuencia, ya camino del ministerio, ya entregado a su trabajo, en cualquier rato que se quedara solo, alzábase en su pensamiento una inquietud imposible de apaciguar, cada día más terca y más incómoda. Ni su inteligencia sabía escudriñar en la realidad para explicarse lo que le acontecía, ni su voluntad era bastante poderosa a sofocar los primeros síntomas del desencanto. Le faltaba o le sobraba algo, mas no sabía qué. En su vida presente, el bienestar físico, las comodidades, eran muy superiores a las que jamás disfrutó, y a pesar de todo!... Mirándose los puños de la bien planchada camisa, se acordaba de lo deshilachados que los llevó en otro tiempo; palpando los ojales de la levita, cuidadosamente recosidos, rendía un tributo de admiración a su mujer; la compañera de su vida era afable, cariñosa, y, sin embargo, la tristeza se iba enseñoreando de Juan, como si alguien para hacerle aborrecible la existencia murmurase continuamente junto a su oído que la felicidad no estriba en carecer de penas, sino en gozar alegrías. ¿Y cuáles tenía él? Ninguna.</p>
 				<p>«Mi vida -pensaba algunas veces- es como lo que los marinos llaman <seg rend="italic">calma chicha; </seg>no me ahogo, pero no navego, es decir, no vivo. ¿Qué es esto? Ni un disgusto ni una contrariedad ¿pero las dichas, ¿dónde están? Pilar es buena, no puede ser mejor; ¡lástima que Dios no le haya dado más entendimiento!... Pero, vamos, yo quisiera que supiese comprenderme mejor; un hombre como yo necesitaba más viveza en ese cerebro, más penetración. A su juicio, lo que no es de la casa no es del mundo; para ella, el fuego más sagrado es del fogón... Ciertas cosas, ciertas ansias mías, no las comprenderá nunca. ¡Qué diablos! es mujer para el cuerpo, para la prosa del hogar; no es mujer para el espíritu. Ni por casualidad se le ha ocurrido la idea de coger una cuartilla del drama. El día de mi triunfo se quedará tan fresca. Y no es por tibieza de temperamento, ¡eso no! ¡Quiá! A las once, estemos donde estemos, a casita. Mal me vería yo como tuviera una querida... Antes, mientras se acostaba, me quedaba yo un ratito en el gabinete pensando, haciendo planes y proyectos; ahora, lo mismo es meterse en la cama que... «Juanito, pero hombre, ¿qué haces ahí?» Bonita, si es; cada día se va poniendo más guapa; ya lo sabe ella, ¡ya lo creo que lo sabe! ¡Es increíble hasta qué punto conoce su fuerza la mujer por muy honrada que sea! No, por falta de cariño, no puedo quejarme. Mimosa... zalamera... vehemente... apasionada... es decir, apasionada de cierto modo, porque fuera de la intimidad del matrimonio, ni le importa lo que hago ni es capaz de interesarse por nada. En la casa, orden y limpieza; conmigo, mucho amor; y aquí paz y después gloria; pero amor a su modo, a su manera; vaya, que no es mujer para el espíritu.</p>
@@ -682,7 +705,7 @@
 				<p>«-¡He sido un necio! (quizá fue esta una de las pocas ocasiones en que su imaginación no le engañó), sí, un estúpido. Ni ahora me miraba, ni antes me quiso. Se casó como se casan muchas... ¡así sale ello! ¡Vergüenza siento al recordar que la he amado! ¡Y en el drama la he pintado como una víctima, como una inocente sacrificada!... ¡Aquí no hay más víctima que yo!»</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0162_chap14">
-				<head>- XIV -</head>
+				<head xml:id="ne0162_head_013">- XIV -</head>
 				<p>Pilar fue desde que se casó, y continuaba siendo, en extremo dulce y cariñosa. Aquel exceso de amatividad, que a Juan pareció alguna vez prueba enfadosa de inmoderado afán por los goces menos puros del matrimonio, no era en su mujer consecuencia de la mera exaltación de los sentidos, sino resultado natural de juntarse en ella un entendimiento mediano y una exagerada vehemencia: amaba a Juan, pero sin que su educación ni su lenguaje pudieran ser intérpretes de lo que experimentaba; las pruebas amorosas de que era capaz resultaban siempre demasiado materiales. Cuidar la casa, darle bien de comer, tener siempre, minuciosamente repasada la ropa blanca, ¿qué era esto para un hombre que soñaba con hacer un drama que reflejase lo que <seg rend="italic">él</seg> había sufrido? A Pilar no se le alcanzaba que pudiese existir más clara demostración de cariño que ser ordenada, limpia, económica, y cuando a la noche Juan se quedaba en la butaca del gabinete entregado a sus eternos desvaríos, todo lo que a la pobre se le ocurría era llamarle con la entonación más dulce que el amor podía prestar a sus palabras, diciéndole:</p>
 				<p>-¡Anda, rico, ven con tu mujercita!</p>
 				<p>Tanto esmero en atender a las necesidades de la vida práctica y tan extremada dulzura en la intimidad, no bastaron a que Juan pudiese apreciar la verdadera índole de su esposa, que continuó pareciéndole siempre un ser inferior, una mujer incapaz de comprender <seg rend="italic">ciertas cosas</seg>. «Este materialismo instintivo -se decía cuando pensaba en ella- es asfixiante para el espíritu». Pilar, en cambio, sin más que la intuición exquisita de la mujer enamorada, atenta sólo a las duras pero claras advertencias de la realidad, comprendió que Juan echaba algo de menos, que en la existencia de su marido había un vacío que llenar, y que, o ella quedaba pronto vencedora en la lucha que iba a entablar contra el hastío, o tendría que resignarse a ser tratada con ese despego mal reprimido que imposibilita toda felicidad entre dos personas condenadas a vivir juntas.</p>

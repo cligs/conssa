@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Orfeo en el infierno</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">OrfeoInfierno</title>
-				<title type="idno">
-					<idno type="bne">XX2302656</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1056564</idno>
-					<idno type="viaf">59153970</idno>
-					<name type="short">Bayo</name>
-					<name type="full">Ciro Bayo</name>
+					<name type="short" ref="#Bayo"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1720</measure>
@@ -140,13 +131,38 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0119</idno>
+						<idno type="cligs">ne0119</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Recognition Server, <date when="2017">2017</date>.</bibl>
-				<bibl type="print-source">Obras completas de Ciro Bayo, Vol I., BIBLIOTECA CASTRO, FUNDACIÓN JOSÉ ANTONIO DE CASTRO, <date when="2005">2005</date></bibl>
-				<bibl type="edition-first"><date when="1912">1912</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Orfeo en el infierno</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2302656.html">XX2302656</idno>
+				</idno>
+				</title>
+					<author xml:id="Bayo">
+						<name type="full"><forename>Ciro</forename> <surname>Bayo</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9310 - IO 9311">IO 9310 - IO 9311</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/120389096">120389096</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5770236/">Q5770236</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1056564.html">XX1056564</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/59153970/">59153970</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Recognition Server, <date when="2017">2017</date>.</bibl>
+					<bibl type="print-source">Obras completas de Ciro Bayo, Vol I., BIBLIOTECA CASTRO, FUNDACIÓN JOSÉ ANTONIO DE CASTRO, <date when="2005">2005</date></bibl>
+					<bibl type="edition-first"><date when="1912">1912</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El peregrino entretenido (Viaje romancesco). Lazarillo espanõl. Guia de vagos en tierras de España por un peregrino industrioso. Con Dorregaray (Una correría por el Maestrazgo). Orfeo en el infierno (Novela)</title> <date when="2005">2005</date>, <publisher>Fund. José Antonio Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="514817690" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=514817690"/> 		<idno type="isbn" n="8496452085"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +173,14 @@
 				<p>Es, evidentemente, una trama convencional, sin el menor 					interés. Afirma Granjel [MaGN, 143], autor de un estudio 					fundamental, que esta novela prueba que el autor, amante 					de la vida aventurera, «se muestra impotente para imaginar 					una intriga y hacérsela vivir a unos personajes fruto de su 					fantasía».</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9310" key="IO 9310" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">5</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +193,7 @@
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">1-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -181,11 +205,11 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novel</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -195,7 +219,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE9">0.5</term>
 					<term type="text.litHist.literaryQuality" resp="MdLE9">low</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">partial negative</term>
 					<term type="text.plot.representation">realistic</term>
@@ -217,6 +241,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-01-10" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
     <text>
@@ -224,10 +249,10 @@
     	</front>
     	<body>
 <div type="part">
-<head>PRIMERA PARTE</head>
+<head xml:id="ne0119_head_000">PRIMERA PARTE</head>
 	<div n="1" type="chapter" xml:id="ne0119_chap1">
-		<head>CAPÍTULO PRIMERO</head>
-<head>La ría de Pasajes</head>
+		<head xml:id="ne0119_head_001">CAPÍTULO PRIMERO</head>
+<head xml:id="ne0119_head_002">La ría de Pasajes</head>
 <p>Monte Orgullo es nombre muy apropiado del promontorio pirenaico que domina la capital donostiarra.</p>
 <p>El mar se explaya a su frente, labrando la preciosa «Concha»; dos ríos, el Urumea y el Oyarzun, bordean sus contornos. El primero desemboca formando «la barra de la Zurrióla»; el segundo, viniendo de Rentería, desagua en la bahía de Pasajes, forma la ría de este nombre y separa las dos poblaciones de San Juan y de San Pedro.</p>
 <p>Ambas son factorías de San Sebastián, y a esta circunstancia deben su progreso.</p>
@@ -271,8 +296,8 @@
 <p>En este intermedio vamos a dibujarlos.</p>
 </div>
 <div n="2" type="chapter" xml:id="ne0119_chap2">
-<head>CAPÍTULO II</head>
-<head>La familia Mendi</head>
+<head xml:id="ne0119_head_003">CAPÍTULO II</head>
+<head xml:id="ne0119_head_004">La familia Mendi</head>
 <p>EL vicario de Pasajes se llama don Basilio de Mendi, o Mendi a secas, porque el clérigo es de los buenos vascongados que creen que para probar la nobleza de su apellido basta con justificar que este es vasco legítimo.</p>
 <p>Tendrá sus sesenta años cumplidos, pero más que viejo es un anciano, por el aseo de su persona y lo venerable de su aspecto. Los años le trajeron canas y arrugas, pero no han conseguido doblar su procer cuerpo, desmintiendo aquel aforismo de Hipócrates: «La gran estatura da gentileza a la juventud, mas en la vejez es incómoda y le lleva ventaja la pequeña».</p>
 <p>Don Basilio es oriundo de Alza, pueblecillo al otro lado de Pasajes nuevo, perdido entre bosques de castaños y manzanos. De joven ganó por oposición el curato de San Juan, y al enviudar una hermana suya, la madre de María, se trajo a su lado madre e hija.</p>
@@ -293,7 +318,7 @@
 <p>Esto no puede seguir así. Yo no he nacido para cura. Hay que dárselo a entender así a tío Basilio. Tú, como dueña de su voluntad, procura catequizarle. Yo no me atrevo, porque si le digo ahora que quiero ahorcar la sotana, él, aunque tan bueno, me querrá ahorcar a mí; y entonces te quedarías tú sin aquel que tanto te quiere, y pronto será contigo, <seg rend="italics">Micael».</seg></p>
 </div>
 <div n="3" type="chapter" xml:id="ne0119_chap3">
-<head>CAPÍTULO III: CÓMO UN OBISPO DE GINEBRA INSPIRA A UN VICARIO VASCONGADO</head>
+<head xml:id="ne0119_head_005">CAPÍTULO III: CÓMO UN OBISPO DE GINEBRA INSPIRA A UN VICARIO VASCONGADO</head>
 <p>PENSATIVA se quedó la moza con este mensaje. Tanto se atrevía ella como su primo a irle con el cuento a tío Basilio. Llamó a la vieja fámula que estaba al corriente de todo, y como le pidiese consejo, la buena Paula dio media vuelta, y haciéndose una santiguada se sacudió la mosca.</p>
 <p>Pero había que dar el notición, porque como escribía el seminarista, «aquello no podía seguir así». Mas ¿cómo decírselo al tío? ¿Poco a poco? ¿Hacerle tragar la píldora dorándosela con zalamerías y arrumacos en los que María era maestra? Esto era lo que entendía Miguel debía hacerse, cuando hablaba de catequizar al tío; pero María imaginó otro expediente, entre ejecutivo y dilatorio: que don Basilio lo supiese, y no por boca de ella, y esperar a ver por dónde salía.</p>
 <p>Y por quien lo había de saber el tío era por la misma carta de Miguel que ella pondría sobre la mesa de estudio del cura como cosa olvidada.</p>
@@ -339,8 +364,8 @@
 <p>Cuál fuera este lo veremos enseguida.</p>
 </div>
 <div n="4" type="chapter" xml:id="ne0119_chap4">
-<head>CAPÍTULO IV</head>
-	<head>En el que se vislumbra el porqué del título DE ESTE LIBRO</head>
+<head xml:id="ne0119_head_006">CAPÍTULO IV</head>
+	<head xml:id="ne0119_head_007">En el que se vislumbra el porqué del título DE ESTE LIBRO</head>
 
 <p>EL primer menester a que atendía don Basilio al levantarse era decir misa en la iglesia. Salía de la vicaría con esclavina y bonete, y a paso lento tomaba calle arriba rezando en el breviario.</p>
 <p>Poco después que él, al tercer toque de campana, salían María y Paula, que, con media docena más de mujeres, constituían las abonadas a diario a la misa tempranera. Los domingos era otra cosa; el oficio divino era a hora más conveniente, y el vecindario en masa acudía al templo, porque para católicos practicantes los vascongados.</p>
@@ -437,8 +462,8 @@
 <p>Acabada la refacción se asomó al mirador de la ría, y dando una voz a Chimún, que por allí iba barloventeando por si atrapaba algún pasajero en una u otra orilla, le mandó atracar. Volvió a besar Miguel la mano a su tío, dio un apretón de manos a las dos mujeres y con esto se despidió para Alza.</p>
 </div>
 <div n="5" type="chapter" xml:id="ne0119_chap5">
-<head>CAPÍTULO V</head>
-	<head><seg rend="italics">Chiquito de Alza</seg></head>
+<head xml:id="ne0119_head_008">CAPÍTULO V</head>
+	<head xml:id="ne0119_head_009"><seg rend="italics">Chiquito de Alza</seg></head>
 <p>MIGUEL saltó a tierra en la otra orilla con la ufanía de Oquendo de regreso de una hazaña. Cruzó el muelle y los terrenos de la vía férrea y siguiendo una calle del Pasajes nuevo, tomó el sendero de la montaña en que Alza se esconde.</p>
 <p>Subiendo las estribaciones que se despliegan en laderas y explanadas, siempre verdes y vistosas a favor de la humedad que rezuman las montañas vascas, arribó a la linde de la pomareda a cuyo extremo está el pueblo. Ya el sol se hundía por la parte del golfo y el joven apresuró el paso.</p>
 <p>En el pomar oyó el <seg rend="italics">aidá</seg> de un boyero, y conociendo quién era por la voz, ahuecó una mano y soltó el <seg rend="italics">irricina.</seg> El otro, que era un vecino de Alza, repitió el grito y parando los bueyes dejó llegar a Miguel. Los dos se saludaron; el joven acarició los bueyes, viejos conocidos suyos también, y dejando la impedimenta sobre la carga de heno, se adelantó.</p>
@@ -480,8 +505,8 @@
 <p>El marido salió a recoger el equipaje que venía en el carro y, a su regreso, Miguel se acostó como aquel que había llevado un día de mucho ajetreo.</p>
 </div>
 <div n="6" type="chapter" xml:id="ne0119_chap6">
-<head>CAPÍTULO VI</head>
-	<head>Donde se cita y explica este refrán italiano:</head>
+<head xml:id="ne0119_head_010">CAPÍTULO VI</head>
+	<head xml:id="ne0119_head_011">Donde se cita y explica este refrán italiano:</head>
 <p><seg rend="italics">LA BOTTA DÁ DEL VINO CH’ELLA HÁ</seg></p>
 <p>ES un decir, «Hacienda, tu amo te vea»; pero esto se entiende de aquello en que el amo es perito, porque, de lo contrario, servirá de estorbo más que otra cosa.</p>
 <p>¿Qué entendería el ex seminarista de economía rural, ni de esquilmo de vacas? Menos que el vicario, el cual, si bien cuidó de traer el toro <seg rend="italics">Sabino,</seg> padre de la vacada, delegó en los caseros la administración de la vaquería, primero, porque de esto no sabía jota; segundo, por razones de disciplina eclesiástica.</p>
@@ -555,8 +580,8 @@
 <p>A este punto les llamaron a comer y se sentaron a la mesa redonda con los demás de la casa. En acabando, <seg rend="italics">Chiquito</seg> cogió una cesta de pelota y los dos amigos bajaron por el sendero de la montaña a tomar el tren de Irún, a la estación de Pasajes.</p>
 </div>
 <div n="7" type="chapter" xml:id="ne0119_chap7">
-<head>CAPÍTULO VII</head>
-	<head>TÚ SERÁS REINA</head>
+<head xml:id="ne0119_head_012">CAPÍTULO VII</head>
+	<head xml:id="ne0119_head_013">TÚ SERÁS REINA</head>
 <p>MÁS que los baños, el atractivo de San Sebastián en los meses de verano es el ambiente mundano que allí se respira. Desde que la corte trasladó allí su residencia veraniega, la capital de Guipúzcoa es una sucursal de los Madriles.</p>
 <p>La <seg rend="italics">Concha</seg> donostiarra es, indudablemente, una de las mejores playas del Cantábrico para baños; pero otras hay en el mismo litoral, más espaciosas, tan limpias y tranquilas y nadie hace caso de ellas. Es que les falta el casino, el bulevar y demás atractivos que forman el marco de la otra, y eso llama mucho a los forasteros, a los madrileños sobre todo, que a título de bañistas, juegan, enamoran y se divierten en grande.</p>
 <p>De ese torrente inmigratorio alcanzan algunas salpicaduras a los pueblos vecinos.</p>
@@ -669,8 +694,8 @@
 <p>—¡Vaya unos humos que gasta la niña! —dijo Paula, que no estaba acostumbrada a estas réplicas secas de Mariucha.</p>
 </div>
 <div n="8" type="chapter" xml:id="ne0119_chap8">
-<head>CAPÍTULO VIII</head>
-	<head>Silbidos de serpiente</head>
+<head xml:id="ne0119_head_014">CAPÍTULO VIII</head>
+	<head xml:id="ne0119_head_015">Silbidos de serpiente</head>
 <p>EN efecto, aquella misma tarde, que fue al otro día del viaje a Irún de <seg rend="italics">Chiquito</seg> y Miguel, cayeron en Pasajes los dos jóvenes.</p>
 <p>El ex seminarista, que así seguiremos llamándole hasta tanto no le crezca el pelo de la tonsura, se sintió muy contrariado con la ausencia de María, pero se calló. Habló un rato con su tío, y por ser día de fiesta, marchó a la plaza a reunirse con <seg rend="italics">Chiquito.</seg></p>
 <p>En el país vascongado la plaza mayor tiene gran importancia, porque en ella baila la gente del pueblo al son del tamboril. Los Ayuntamientos pagan un tamborilero para que los días de fiesta se solace el vecindario, costumbre muy laudable, porque así se evitan no pocos excesos de los que cometen los menestrales en sus báquicas diversiones.</p>
@@ -744,8 +769,8 @@
 <p>—Yo me entiendo; <seg rend="italics">Cloris erat quœ Flora vocor</seg> —replicó el implacable latino, mascando y comiéndose las erres.</p>
 </div>
 <div n="9" type="chapter" xml:id="ne0119_chap9">
-<head>CAPÍTULO IX</head>
-	<head><seg rend="italics">Lupus est in fabula</seg></head>
+<head xml:id="ne0119_head_016">CAPÍTULO IX</head>
+	<head xml:id="ne0119_head_017"><seg rend="italics">Lupus est in fabula</seg></head>
 <p>¿QUIEN es, a todo esto, la flamante amiga de María?</p>
 <p>Si se lo preguntásemos a <seg rend="italics">Chiquito</seg> que, en calidad de amanuense de su tía, escribió el contrato de arriendo, nos diría que según la cédula personal que exhibiera la inquilina, esta era Flora Vargas, natural de Madrid, de cuarenta y cinco años, soltera y pensionista.</p>
 <p>Esto de pensionista es de concepto muy elástico. Llámanse así aquellas huérfanas o viudas que cobran del Montepío, por servicios al Estado de sus difuntos padres o maridos, a condición de mantenerse solteras o no volver a casarse.</p>
@@ -785,8 +810,8 @@
 <p>La fatalidad puso a María al alcance de sus garras. La vio sencilla y hermosa y trató de hacérsela suya. Y como al santo se le adora por la peana, Flora Vargas se captó las simpatías de don Basilio del modo que sabemos.</p>
 </div>
 <div n="10" type="chapter" xml:id="ne0119_chap10">
-<head>CAPÍTULO X</head>
-	<head>El partido de pelota</head>
+<head xml:id="ne0119_head_018">CAPÍTULO X</head>
+	<head xml:id="ne0119_head_019">El partido de pelota</head>
 <p>SIENDO Miguel y <seg rend="italics">Chiquito</seg> los únicos desocupados de Alza, no es extraño les volvamos a encontrar hablando, a falta de otra cosa.</p>
 <p>Pero no hablan por hablar, a juzgar por lo que dicen.</p>
 <p>—Melchor, estoy resuelto a acompañarte a Milán.</p>
@@ -866,7 +891,7 @@
 <p>Siguieron hablando de otras cosas que no vienen a cuento, hasta que el automóvil llegó al embarcadero de Pasajes. El barón ayudó a bajar a las viajeras, y cuando atracó el bote, las despidió galantemente.</p>
 </div>
 <div n="11" type="chapter" xml:id="ne0119_chap11">
-<head>CAPÍTULO XI</head>
+<head xml:id="ne0119_head_020">CAPÍTULO XI</head>
 <p>Viajeros a Milán y a Madrid</p>
 <p>COSTO estaba ya por terminar, y <seg rend="italics">Chiquito de Alza</seg> y Miguel</p>
 <p>Italia.</p>
@@ -935,9 +960,9 @@
 </div>
 </div>
 <div type="part">
-<head>SEGUNDA PARTE</head>
+<head xml:id="ne0119_head_021">SEGUNDA PARTE</head>
 	<div n="12" type="chapter" xml:id="ne0119_chap12">
-		<head>CAPÍTULO PRIMERO</head>
+		<head xml:id="ne0119_head_022">CAPÍTULO PRIMERO</head>
 		<p>Del caño al coro</p>
 <p>A grandeza de Italia no consiste en su unidad, en su poder</p>
 <p>-i—J militar, ni en un acuerdo de diplomáticos reunidos en conferencia internacional; es grande porque no ha cesado de contribuir, ni aun en sus momentos más críticos, a la obra del progreso. Porque no ha dejado nunca de estar representada, en el gran anfictionado del progreso, por sabios, artistas, filósofos y poetas, completando su obra, por último, con la independencia más difícil de conseguir: la económica.</p>
@@ -984,7 +1009,7 @@
 <p>Como quiera que sea, así vio Miguel los lugares más mentados de la Lombardía y se avispó.</p>
 	</div>
 <div n="13" type="chapter" xml:id="ne0119_chap13">
-<head>CAPÍTULO II </head>
+<head xml:id="ne0119_head_023">CAPÍTULO II </head>
 <p>PASADAS las Navidades, recibió Miguel una carta de Pasajes, en la que don Basilio le escribía:</p>
 <p>«Estoy enfermo; temo que lo que tengo es grave y que no pueda resistirlo mi edad avanzada. Mis postrimerías coincidirán, seguramente, con las del año. No me atrevo a rogarte que vengas, porque comprendo que te será imposible hacerlo. Lo mismo le ocurre a tu prima, que sigue en Madrid. Me cuida la buena Paula, pero ¡sería para mí una pena tan grande partir para el último viaje sin despedirme de vosotros...!».</p>
 <p>Miguel echó sus cuentas; vio que, a todo estirar, le quedaba un mes en Milán, y considerando ser obra de caridad y obligación suya el ir a consolar al anciano, preparó su partida.</p>
@@ -999,7 +1024,7 @@
 <p>Sólo con un enemigo no se reconcilió: con la letra R. Murió clamando: <seg rend="italics">Domine, in manus tuas commendo animam meam!</seg> Así, sin ninguna erre doble ni sencilla.</p>
 </div>
 <div n="14" type="chapter" xml:id="ne0119_chap14">
-<head>CAPÍTULO III</head>
+<head xml:id="ne0119_head_024">CAPÍTULO III</head>
 <p>La virgen loca</p>
 <p>LORA Vargas se había llevado a María a su casa de Madrid, un principal bien puesto, con relativo lujo; una de estas habitaciones que visten la mano del tapicero, el arte del ebanista y los surtidos de los bazares, antes que el arte casero y paciente de la mujer de su casa.</p>
 <p>Por toda servidumbre una criada coetánea de la señora. ínterin tomaba María posesión de su empleo en casa del barón, convivió con su amiga, que parecía desvivirse por complacerla.</p>
@@ -1059,7 +1084,7 @@
 <p>—Tienes razón, es feo, si que también viejo, pero ello es una ventaja, porque así no te lo disputarán otras mujeres... ¿Ves estos mequetrefes (paseaban por la Carrera), que te están comiendo con los ojos y te echan flores? No dan más de sí. Son tan fatuos que si les haces caso, van a creer que eres tú quien les enamoras a ellos. No dan dinero a las mujeres y muchas veces se lo piden a ellas. Para dinero, amor y reserva, los viejos.</p>
 </div>
 <div n="15" type="chapter" xml:id="ne0119_chap15">
-<head>CAPÍTULO IV</head>
+<head xml:id="ne0119_head_025">CAPÍTULO IV</head>
 <p>El minotauro</p>
 <p>LLEGO, por fin, la anunciada visita del barón.</p>
 <p>El ínclito prohombre creyó que un almuerzo de dos pesetas y una alhaja de diez duros eran dádivas suficientes para ganar una fortaleza. Entró con aire de protector, fumando y sin quitarse el sombrero, hasta que llegó al saloncillo. Aquí se sentó retrepado en el sofá, con las piernas cabalgando una encima de otra, haciendo el número cuatro.</p>
@@ -1113,7 +1138,7 @@
 <p>Como era la hora del paseo, vistiéronse y se echaron a la calle.</p>
 </div>
 <div n="16" type="chapter" xml:id="ne0119_chap16">
-<head>CAPÍTULO V: LO INEVITABLE</head>
+<head xml:id="ne0119_head_026">CAPÍTULO V: LO INEVITABLE</head>
 <p>PASARON algunos días desde aquel en que fue la visita del barón. En este lapso de tiempo, la Vargas, con suma habilidad, fue aglomerando dificultades financieras en torno de María, haciendo ver a esta que sus deudas le tenían con el agua al cuello. No es que le echara en cara la hospitalidad que le daba; pero le hacía el endoso de las cuentas de la modista y del sedero, pues la Vargas tuvo buen cuidado de que las facturas vinieran a cargo de la joven.</p>
 <p>Esta se desesperaba cuando los <seg rend="italics">ingleses</seg> llamaban a la puerta. Entonces la Vargas iba en su auxilio; daba una capea magistral, y pasado el peligro, decía invariablemente a su protegida:</p>
 <p>—¿Lo estás viendo? ¡Si tú hicieras caso a aquel hombre, sobre ahorrarte estos disgustos, nadarías en dinero...! ¿Quieres que le hable?</p>
@@ -1160,7 +1185,7 @@
 <p>Y    no hubo más que hablar; sino que cierta tarde, el barón fue a casa de la Vargas, y esta vez la entrevista con María no fue ciertamente en la sala roja.</p>
 </div>
 <div n="17" type="chapter" xml:id="ne0119_chap17">
-<head>CAPÍTULO VI</head>
+<head xml:id="ne0119_head_027">CAPÍTULO VI</head>
 <p>Una broma pesada</p>
 <p>EL minotauro devoró su presa, y, abotargado por la digestión, se hizo tardo de piernas y de oído. Lo primero porque consumado el festín, apenas si volvió un par de veces más a la casa; lo segundo, porque a las demandas pecuniarias de la joven contestaba con evasivas y un se proveerá. ¿Qué más podía exigírsele si había cumplido su palabra? El presente nupcial consistió en pagar a María la cuenta del rabioso modisto y en el desempeño de las papeletas del Monte; el tanto alzado, un billete de mil pesetas, base, según él, del futuro bienestar de su protegida.</p>
 <p>—Con menos empecé yo —le dijo cuando se lo dio—. Vine a Madrid ganando en una tienda una peseta diaria; a los dos años ascendí y gané dos. Tardé diez años en juntar la cantidad que ahora te doy de un golpe. Con mil pesetas me establecí, y al cabo de los años, el aprendiz montañés llegó a rentista y barón pontificio. ¿Por qué tú no has de prosperar, siendo joven y hermosa? No dirás que no soy fiel cumplidor de mi palabra. Te dejo en libertad completa.</p>
@@ -1211,7 +1236,7 @@
 <p>La Vargas no podía gritar como la otra vez porque ahora María no le debía nada. O porque supuso que volvería como antes, o porque ya le estorbaba, lo cierto es que no quiso rebajarse a pedir más explicaciones y la dejó marchar con todo lo suyo.</p>
 </div>
 <div n="18" type="chapter" xml:id="ne0119_chap18">
-<head>CAPÍTULO VII</head>
+<head xml:id="ne0119_head_028">CAPÍTULO VII</head>
 <p>La visita de Friné</p>
 <p>¿/^XUE haría en adelante? ¿En qué se emplearía? María no se detuvo en meditarlo.</p>
 <p>Hay momentos en la vida en que se toman resoluciones enérgicas, sin mirar atrás ni adelante. Es lo que en sentido figurado se llama un «salto mortal», lance que casi siempre decide de la suerte de una persona. A veces se cae bien, a veces se rompe uno el esternón.</p>
@@ -1281,7 +1306,7 @@
 <p>—Está bien —acabó por decir—; llévame al estudio, pero sin comprometerme. Tantearé el terreno... y veremos.</p>
 </div>
 <div n="19" type="chapter" xml:id="ne0119_chap19">
-<head>CAPÍTULO VIII</head>
+<head xml:id="ne0119_head_029">CAPÍTULO VIII</head>
 <p>El juicio de Paris</p>
 <p>EL estudio del pintor de Olimpia está emplazado al extremo de la calle de Ferraz, allí donde empiezan los desmontes del Parque del Oeste, en el sitio más ameno y despejado de Madrid, con vistas a la Moncloa, a los montes del Pardo y a las cumbres del Guadarrama.</p>
 <p>Para los pintores es el clásico pedazo del ambiente madrileño: cabe el Manzanares, los sotos y las praderas goyescas; en la planicie, las hondonadas, los ribazos y los árboles de los fondos de los cuadros velazqueños; los cielos luminosos, calientes, arrebolados.</p>
@@ -1327,8 +1352,8 @@
 <p>»Oíd el argumento; oye también tú, Olimpia, porque tú has de colaborar en mi obra... Estoy adiestrando una compañía dramática de perros. No entendáis por esta palabra que sea de actores malos, sino de canes que saldrán a escena, a representar deliciosas comedias y espeluznantes dramas. La obra del debut será un drama en un acto y tres cuadros, titulada <seg rend="italics">El Rapto. </seg>Tiene dos méritos altísimos; no es simbólica y no está escrita en verso ni en prosa. No soy yo quien ha de llamar vuestra atención sobre la belleza de los pensamientos que ella encierra; pero sí quiero hacer constar que el crítico más severo no podrá afirmar que en toda la obra dicen los personajes ni una sola tontería. Ya lo veréis en su día. Lamento no poder haceros un análisis detallado de mi nuevo drama, pero digo, sin jactancia, que voy a quedar a mayor altura que Rostand en su <seg rend="italics">Chantecler,</seg> y Linares Rivas en <seg rend="italics">Maese Lobo.</seg> El amigo Longo me dará la razón cuando lo vea.</p>
 </div>
 <div n="20" type="chapter" xml:id="ne0119_chap20">
-<head>CAPÍTULO IX</head>
-<head>La reina de Lidia</head>
+<head xml:id="ne0119_head_030">CAPÍTULO IX</head>
+<head xml:id="ne0119_head_031">La reina de Lidia</head>
 <p>A visita al estudio fue del gusto de María. Desde luego, le</p>
 <p>A-J parecieron más simpáticos, más agradables aquellos artistas, pobres de dinero si ricos de imaginación, que la piara de buscones que hasta entonces le ensordecieron con sus brutales gruñidos. Como no tenía nada que hacer acompañaba a Olimpia en sus lecciones de modelo.</p>
 <p>Ya los días empezaban a estar fríos, y en el estudio hallaba calor y distracción a su soledad.</p>
@@ -1350,7 +1375,7 @@
 <p>Que es lo que a la postre sucedió a la joven, como hemos de ver.</p>
 </div>
 <div n="21" type="chapter" xml:id="ne0119_chap21">
-<head>CAPÍTULO X</head>
+<head xml:id="ne0119_head_032">CAPÍTULO X</head>
 <p>El maestro de música</p>
 <p>POR estos días llegaba Miguel de Italia a tiempo de recibir el último suspiro de don Basilio. No bien dio cristiana sepultura al cadáver, resolvió ir a Madrid en busca de su prima, de la que no sabía en tanto tiempo.</p>
 <p>El caudal que dejó el finado fue tan escaso, que entre mandas pías y el legado a Paula, se fue todo. Miguel dio hospitalidad además a la vieja servidora, alojándola en su casa de Alza.</p>
@@ -1396,7 +1421,7 @@
 <p>—¡No hay como darles gusto! —dijo la monja a Miguel—. En cambio, con el pobre organista se declararon en huelga porque no les enseñaba más que himnos a Nuestra Señora. ¡Válgame Dios, qué niñas estas!</p>
 </div>
 <div n="22" type="chapter" xml:id="ne0119_chap22">
-<head>CAPÍTULO XI</head>
+<head xml:id="ne0119_head_033">CAPÍTULO XI</head>
 <p>La bajada de Orfeo al infierno</p>
 <p>TRANQUILO por este lado fuese Miguel en derechura a casa de doña Flora, a que le diese noticias de María. ¡Qué de cosas pensaba decir a su prima! Ante todo, una filípica por no haber ido a Pasajes a asistir al tío Basilio, si bien conjeturaba que algún raro incidente lo estorbó; después le contaría sus impresiones de Milán, su bautismo artístico en la escena, y tras esto, diría ella las suyas de Madrid.</p>
 <p>Pero antes de entrar en el portal de la casa, paseó la acera como si un vago pensamiento le dijera que no encontraría a quien buscaba, y que era inútil subir la escalera. Lo más natural en este caso era pedir informes en la portería. Iba ya a entrar en el portal, cuando reparó en un zapatero de viejo que estaba, dale que dale, claveteando una suela, en un cuchitril frente a la casa, y se le ocurrió una idea:</p>
@@ -1499,7 +1524,7 @@
 <p>A todo esto la mujer había encendido una hornilla de alcohol y puesto a calentar una tisana. Se la sirvió a la enferma, y cerrando la puerta con el picaporte para que aquella no tuviera que molestarse en levantarse cuando llamaran, salió de la habitación.</p>
 </div>
 <div n="23" type="chapter" xml:id="ne0119_chap23">
-<head>CAPÍTULO XII ¡Ay, </head>
+<head xml:id="ne0119_head_034">CAPÍTULO XII ¡Ay, </head>
 <p>HARÍA unos seis días que María estaba postrada en el lecho. Una puñalada del Guadarrama le había herido en un pulmón, poniéndola entre la vida y la muerte.</p>
 <p>En estos días de forzosa quietud, de recogimiento en sí misma, la imaginación, con su dedo de fuego, la representó todas las peripecias, todos los azares y desengaños de aquel su drama de tres meses en Madrid. La fiebre le hacía entornar los ojos, y una de las veces soñó estar volando por una región oscura; que ella era una paloma y que la perseguían dos feos pajarracos, uno con cara de la Vargas, otro con cara del barón. La paloma huía de sus perseguidores en la oscuridad de la noche, porque una estrella muy hermosa la guiaba hacia el palomar.</p>
 <p>Este palomar, este alcázar de su salvación era la casa de Pasajes, la casa del tío Basilio. Pero otra luz que se encendió en el horizonte la desorientó en su huida; un globo fosforescente que llevaba por lastre talegas de oro y ricos vestidos y preseas. De la barquilla salían ruidos de cantos, de carcajadas, de taponazos de champaña. La paloma deslumbrada vino a posarse en la navecilla. De pronto un rayo hendió los aires, rasgó la tela del aeróstato y a la caída los dos pajarracos que acechaban a la víctima hicieron presa en ella...</p>
@@ -1618,8 +1643,8 @@
 <lg type="poem"><l><seg rend="italics">¡Ay, infeliz de la que nace hermosa!</seg></l></lg>
 </div>
 <div n="24" type="chapter" xml:id="ne0119_chap24">
-<head>CAPÍTULO XIII</head>
-<head>El dúo de <seg rend="italics">La Africana</seg></head>
+<head xml:id="ne0119_head_035">CAPÍTULO XIII</head>
+<head xml:id="ne0119_head_036">El dúo de <seg rend="italics">La Africana</seg></head>
 <p>EL nuevo profesor de música cumplía con celo y puntualidad en el colegio. El número de alumnas iba en aumento, y esto, unido a la corrección de modales y a la competencia profesional de Miguel, le granjearon las simpatías y la confianza de sor Visitación.</p>
 <p>Era la clase de música en una sala que además servía de salón de actos y de visitas; una amplia estancia de altos ventanales, con cuadros al óleo en las paredes, veladores en los medios y divanes interpolados entre ringleras de sillas enfundadas. En días solemnes —como el santo del colegio, exposición de labores de las alumnas, o reparto de premios a fin de curso—, el salón se convertía en paraninfo de mamás y amigas suyas, atraídas más que por el espectáculo en sí, por los bombones y caramelos que repartían las aristocráticas monjas.</p>
 <p>Allá en invierno, un pesado tapiz separaba el estrado donde estaba el piano del resto de la sala, y el abrigado hueco, bien alumbrado por dos ventanas al jardín, se convertía en santuario de la música. Las alumnas acudían por turno, y Miguel las dedicaba más o menos tiempo, según eran las aptitudes o el adelanto de cada una.</p>
@@ -1697,8 +1722,8 @@
 <p>Y cerrando el piano, dio por terminada la lección.</p>
 </div>
 <div n="25" type="chapter" xml:id="ne0119_chap25">
-<head>CAPÍTULO XIV</head>
-<head>Dime cómo calzas y te diré quién eres</head>
+<head xml:id="ne0119_head_037">CAPÍTULO XIV</head>
+<head xml:id="ne0119_head_038">Dime cómo calzas y te diré quién eres</head>
 	<p>UNA tarde se le ocurrió a Miguel pasar por la calle en que</p>
 <p>VJ vivía la Vargas, para que el zapatero de viejo le remendara unas botas. Maestro y aprendiz le conocieron enseguida y le brindaron con un taburete junto a la puerta.</p>
 <p>—¿Qué, le duele a usted el pie? ¿Hay que ensanchar algo? —le preguntó maliciosamente el zapatero.</p>
@@ -1771,8 +1796,8 @@
 <p>—A la tercera va la vencida —replicó el remendón—. Vuelve a llenarla y te dejaré tocar la trompeta el primero. ¡No dirás que soy un ansioso!</p>
 </div>
 <div n="26" type="chapter" xml:id="ne0119_chap26">
-<head>CAPÍTULO XV</head>
-<head>La revelación</head>
+<head xml:id="ne0119_head_039">CAPÍTULO XV</head>
+<head xml:id="ne0119_head_040">La revelación</head>
 <p>INICIADO el idilio, las relaciones entre el maestro y la discí-pula se modificaron. Miguel, a pesar de la tristeza que había dejado en su corazón el recuerdo de María, parecía aceptar el tierno afecto de Luisa, sintiéndose halagado en su amor propio.</p>
 <p>Entrambos a dos se hallaban en aquel estado de ánimo asequible al entusiasmo propio de la juventud, si bien sus relaciones, más que de amantes, eran de amigos íntimos.</p>
 <p>Sin embargo, cuando sor Dominica los dejaba solos, los dos se hablaban un lenguaje más expresivo que las palabras, y no pocas veces en viendo venir a la monja, tenían que parodiar la escena de Rosina y Almaviva en la lección de música del <seg rend="italics">Barbero.</seg> La monja, desde la sorpresa del final del dúo aquel, empezó a recelar y a vigilar a Luisa; pero como no hay guardianes para el amor, los dos jóvenes se decían lo que tenían que decirse.</p>
@@ -1814,8 +1839,8 @@
 <p>Lo que siguieron hablando fue en voz tan baja, que sor Dominica, cuando entró, no entendió una sola palabra. Felizmente, los dos se habían entendido ya.</p>
 </div>
 <div n="27" type="chapter" xml:id="ne0119_chap27">
-<head>CAPÍTULO XVI</head>
-<head>La pena del talión</head>
+<head xml:id="ne0119_head_041">CAPÍTULO XVI</head>
+<head xml:id="ne0119_head_042">La pena del talión</head>
 <p>UQUE, como tantos jóvenes pobres, que no tienen para ser socios de un casino ni cuentan con comodidades en casa, tenía su peña en un café.</p>
 <p>El café donde era su tertulia es uno de tantos que hay en Madrid, donde todos se conocen y cada camarero tiene su turno invariable. Entre cuatro parroquianos llenan una mesa, y a consumición por barba pasan las veladas de invierno hablando, leyendo los periódicos de la noche u oyendo al pianista. Si son artistas, se entretienen además en criticar a Fulano y a Mengano.</p>
 <p>Con Luque se sentaban Olimpia, Gamboa y Miguel, que había hecho buenas migas con el poeta, desde que se hizo su colaborador musical. Días ha que Miguel había escrito su composictón; la estaban ensayando ya, y Luque estaba contentísimo.</p>
@@ -1911,8 +1936,8 @@
 <p>—Nos veremos en el cielo —contestó Luisa, con melancolía, dando la mano al joven, que este besó con religioso respeto.</p>
 </div>
 <div n="28" type="chapter" xml:id="ne0119_chap28">
-<head>CAPÍTULO ÚLTIMO</head>
-<head>El Rapto</head>
+<head xml:id="ne0119_head_043">CAPÍTULO ÚLTIMO</head>
+<head xml:id="ne0119_head_044">El Rapto</head>
 <p>EL cartel del Circo de Price anunciaba, para la tarde del domingo, el estreno de <seg rend="italics">El Rapto,</seg> drama en un acto y tres cuadros, representado por una compañía... de perros. Avaloraba la obra la música que la acompañaba, debida a un autor novel, y de la que los profesores de la orquesta hacían grandes elogios.</p>
 <p>Por todo esto y por ser día de fiesta, el teatro estaba lleno. Representáronse algunos números del programa, y cuando le tocó el turno al drama, a eso de las cinco de la tarde, en vista de que el autor de la música no comparecía, otro maestro tomó la batuta y la orquesta preludió la sinfonía.</p>
 <p>Tras de la cortina del escenario se oían ladridos de perros, impacientes por corretear en las tablas. Al cabo se levantó el telón, y primero que todo apareció una arrogante joven en traje de domadora: de tabardo, calzón de punto, botas de ante y guantes en la mano, empuñando un latiguillo. Olimpia, porque era ella, se acercó a las candilejas, y con gracioso mohín saludó al público. De las localidades altas y de las gradas se oyeron bravos y aplausos a la mujer hermosa, y con tan felices auspicios, empezó la representación.</p>
@@ -1932,7 +1957,7 @@
 		</body>
 		<back>
 			<div>
-					<p></p>
+					<p/>
 			</div>
 		</back>
 	</text>

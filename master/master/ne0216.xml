@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El oro de Mallorca</title>
-				<title type="sub"></title>
+				
 				<title type="short">Mallorca</title>
-				<title type="idno">
-					<idno type="bne">XX1943106</idno>
-					<idno type="viaf">199741078</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX896547</idno>
-					<idno type="viaf">7399994</idno>
-					<name type="short">Dario</name>
-					<name type="full">Rubén Darío</name>
+					<name type="short" ref="#Dario"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">343</measure>
@@ -141,13 +131,42 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0216</idno>
+						<idno type="cligs">ne0216</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="1999"></date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/el-oro-de-mallorca--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcs17z4 "/>.</bibl>
-				<bibl type="print-source">Edición digital a partir de la edición de Carlos Meneses, Madrid, Editorial Devenir, <date when="1990">1990</date></bibl>
-				<bibl type="edition-first"><date when="1914">1914</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El oro de Mallorca</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1943106.html">XX1943106</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/199741078/">199741078</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4755742-4">4755742-4</idno>
+				</idno>
+				</title>
+					<author xml:id="Dario">
+						<name type="full"><forename>Rubén</forename> <surname>Darío</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 27277 - IQ 27278">IQ 27277 - IQ 27278</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118671022">118671022</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q173767/">Q173767</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX896547.html">XX896547</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/7399994/">7399994</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="1999"/>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/el-oro-de-mallorca--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcs17z4 "/>.</bibl>
+					<bibl type="print-source">Edición digital a partir de la edición de Carlos Meneses, <pubPlace>Madrid</pubPlace>, Editorial Devenir, <date when="1990">1990</date></bibl>
+					<bibl type="edition-first"><date when="1914">1914</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">El oro de Mallorca</title> <date when="1978">1978</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="775146994" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=775146994"/> </bibl>
+						<bibl type="further-edition"><title type="main">El oro de Mallorca</title> <date when="2001">2001</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="368857557" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=368857557"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El oro de Mallorca</title> <date when="2020">2020</date>, <publisher>Editorial Verbum</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1750765926" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1750765926"/> 		<idno type="isbn" n="9788413372389"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +176,14 @@
 				<p>El músico Benjamín Itaspes se embarca desde Francia hacia Mallorca para pasar un tiempo de descanso. El protagonista es un trasunto del autor; como él es un americano reputado en Europa que se encuentra mal físicamente. En el tercer capítulo habla de la estancia de Chopin en Mallorca. En el cuarto capítulo reflexiona sobre la relación del protagonista con la religión y con Dios. En el quinto capítulo aparece Margarita Roger, divorciada de un antiguo converso judío. El narrador reflexiona sobre la historia de los judíos conversos en España y su mala fama. Benjamín traba amistad con Margarita. En el secto capítulo se habla sobre la felicidad en la vida y Benjamín y Margarita recuerdan su pasado. Benjamín la besa, pero ella le pide que solo sean amigos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 27277" key="IQ 27277" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">7</term>
 					<term type="author.continent">America</term>
@@ -169,7 +196,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">2-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">high</term>
 					<term type="text.characters.protagonist.age">mature</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -188,7 +215,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela autobiográfica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
@@ -218,6 +245,7 @@
 		<revisionDesc>
 			<change when="2016-01-07" who="#jct">Initial TEI version.</change>
 			<change when="2016-03-07" who="#jct">Corrected after reading it as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -226,7 +254,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0216_chap1">
-				<head>I</head>
+				<head xml:id="ne0216_head_000">I</head>
 				<p>El barco blanco de la Compañía Isleña Marítima se hallaba anclado cerca del muelle marsellés. El sol del mediodía estaba esquivo en la fresca mañana. Acompañado de un amigo, Benjamín Itaspes fue a bordo, se posesionó de su camarote, entregó su equipaje. Como ya se iba a partir, se despidió del amigo y se puso a pasear sobre cubierta. Él era el único pasajero de primera. Por la proa, escasa gente, toda mallorquina y catalana, posiblemente del pequeño comercio, conversaban en su áspera lengua. El vapor era limpio y bien tenido; con todo, había un vago olor muy madre-patria... La cocina estaba sobre el entrepuente y se veía a un cocinero sórdido manejar perniles y pescados. A un lado suyo, en una especie de jaula, había cecinas; sobreasadas, cebollas, pimientos rojos y salchichones. De cuando en cuando salía un fogonero, todo negro, de una puerta lateral. Cogía un botijo que había al alcance de su mano, y bebía a chorro. Luego volvía a descender a su carbonera.</p>
 				<p>El vapor pitó; se puso en actividad; salió, al lado de un gran navío catalán que descargaba sobre un lanchón pesadas barras de plata, o de estaño, en las cuales se leía en grandes letras vaciadas: «Figueroa». Pasó junto a los faros. Volvió a pitar. Entró mar afuera.</p>
 				<p>Benjamín miró el panorama de la gran ciudad mediterránea, dio un último saludo a la enorme estatua de Notre-Dame de la Garde, que se alza desde su eminencia, y luego se puso a contemplar distraídamente el mar, tan amado por él. Le había recorrido tantas veces en tan diferentes latitudes, y siempre le encontraba tan nuevo y tan constante, tan ambiguo y tan sincero... Era un vasto ser animado, líquido y palpitante, todo vida y enigma. Y a veces, en sus instantes de meditación o de exaltación, le hablaba como a una divinidad, o ser inteligente, le hablaba en voz alta, o a media voz, como cuando decía, todas las noches, su Padre-nuestro. Pues Itaspes había conservado, a pesar de su espíritu inquieto y combatido, y de su vida agitada y errante, mucho de las creencias religiosas que le inculcaron en su infancia, allá en un lejano país tropical de América. El mar estaba quieto, pero Benjamín percibía el eco profundo de su corazón, su honda y eterna melodía interior, que se comunica con la que el artista lleva en el arcano de su alma.</p>
@@ -247,7 +275,7 @@
 				<ab>Valldemosa, noviembre de 1913</ab>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0216_chap2">
-				<head>II</head>
+				<head xml:id="ne0216_head_001">II</head>
 
 				<p>Había nacido en una ciudad de la América española, de una familia burguesa, con algún haber. Por rencillas inmediatas, consecuencia de un matrimonio forzoso, sus padres se separaron, y él fue educado por una tía materna. «Ingrata suerte -se decía. Educación de mujer... Quizá de allí vienen mis caprichos, mis debilidades, mis exasperaciones nerviosas, mis creencias en lo extraordinario, mis supersticiones... Educación de mujer, cariños, rezos, a veces latigazos... Aquella vieja casa, donde por las noches, después de pasado el crepuscular vuelo de los murciélagos, se oía el especial siseo de las lechuzas, y en donde se aseguraba que 'espantaban'... La visión imborrable de la bisabuela, una anciana paralítica que se mantenía en un sillón moviendo la cabeza... El recuerdo de los continuos sustos, al hallar en las camas de cuero, al tiempo de ir a acostarse, alacranes y ciempiés... El especial ruido de las tejas cuando había temblor de tierra... Las consejas de aparecidos oídas en la cocina a las criadas indias y mulatas... Luego, después de los primeros años, una vida de escasez... Pensar en su infancia le entristecía y hacía revivir lejanas impresiones dolorosas, horas de temor y de melancolía...</p>
 				<p>Después, el despertar de su pubertad en el colegio, los estudios mal seguidos, un tiempo de internado en un establecimiento que había sido antiguo convento de franciscanos y donde era sabido que también aparecían fantasmas, aun de día, entre las viejas piedras terrosas... Las iniciaciones de la carne, las sorpresas sexuales de las que creía en su ignorancia ser descubridor... El como un día se sintió enamorado y poseído de la música y apasionado por el misterio de la mujer... Su misticismo junto a su innato erotismo... ¡Cuán lejos aquellos comienzos! Y, ¿no había sido entonces, entre los catorce y los quince años, cuando probó por la primera vez el veneno que había de influir más tarde en el desarrollo de su mentalidad y en la formación de su carácter, y quizá en una parte de su obra? Todo había sido dependiente de las disposiciones del destino. Si él hubiera nacido rico, ¿cuántas horas trágicas, cuántos terremotos vitales y mentales evitados, cuán diferente la realización de su obra artística... «Sí -le argüía una voz interior, que estaba de acuerdo con lo que mucha gente le decía- pero no sería tu obra la actual, no serías tú el que eres, no serías tú»... ¿Sería esto verdad? Sus armonías, sus poemas musicales, estaban impregnados de esencia fatal, estaban llenos de la sangre de su corazón, del sudor de sus agonías, y había sido preciso que así fuese eso... Y «eso», ¿para qué? Para la consecución de un nombre, de la gloria, que es, en lo infinito del tiempo, no el sol de los muertos, como dijo el gran novelista, sino un templo de deleznable ceniza... No estaba puesto en razón el divino y miserable francés que escribió:</p>
@@ -276,7 +304,7 @@
 				<ab>Valldemosa, diciembre de 1913</ab>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0216_chap3">
-				<head>III</head>
+				<head xml:id="ne0216_head_002">III</head>
 
 				<p>-Esta es la celda de George Sand y de Chopin, dijo Luis de Arosa señalando a su amigo, en el largo corredor del claustro, una puerta pintada de verde. A la verdad, ello no se sabe con seguridad, pero se cree que si no es esta, la número 2, es la número 3. ¡Se ocupa tan poco la francesa de estos detalles en su libro <seg rend="italics">Un hiver à Majorque</seg>!...</p>
 				<p>Benjamín conocía la aventura y había leído el libro, como todo lo que se refería a la obra y a la personalidad del músico polaco, que era una de sus adoraciones artísticas. Chopin enamorado, víctima de aquella curiosa hembra, caso teratológico por su intelectualidad y que cuando no era toda literatura era toda sexo... Una gata rijosa que comía ruiseñores... ¡Pobre Chopin, pobre Musset! Él, Itaspes, no hubiera caído en semejantes añagazas... Y, sin embargo, en sus años ingenuos y ardientes, ¿no había también sentido la enfermedad de amar y esto con mujeres que no tenían nada de Aurora Dupin?...</p>
@@ -300,7 +328,7 @@
 				<ab>París, enero de 1914</ab>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0216_chap4">
-				<head>IV</head>
+				<head xml:id="ne0216_head_003">IV</head>
 
 				<p><seg rend="italics">-«Bon día tengui»...</seg></p>
 				<p>Una sirvienta llegaba a avisar a Benjamín que en la iglesia daban el último toque para la misa.</p>
@@ -367,7 +395,7 @@
 				<ab>París, enero de 1914</ab>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0216_chap5">
-				<head>V</head>
+				<head xml:id="ne0216_head_004">V</head>
 
 				<p>Se había tomado el té en uno de los miradores de Miramar, la propiedad espléndida y pintoresca de un príncipe de Iliria, el archiduque Carlos Federico, que de lo que fue parte de la antigua alquería arábiga de Haddayán ha formado un conjunto de moradas, quioscos y terrazas que sobre los montes, a orillas de los abismos, entre rocas y verdores de vegetación, forman como una región de cuento oriental, que domina las tierras circundantes y tiene enfrente las mágicas aguas del mar Mediterráneo.</p>
 				<p>Se había tomado el té, mientras se esperaba la caída próxima de la tarde, la puesta del sol. Estaba Benjamín con los amigos que había saludado en el automóvil, Jaime de Flor, Ángel Armas, un periodista y las dos damas, una de las cuales, la rubia, que en realidad era parisiense. Era una mujer de 30 años, en toda la vitalidad y encanto de esa edad en que hay plenitud de vida, como jugo de sol en la cabeza y en las venas. Jaime de Flor se la había presentado: -Margarita Roger, artista-escultora. Una admiradora y compañera de Mme. Chandel.</p>
@@ -402,7 +430,7 @@
 				<ab>París, febrero de 1914</ab>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0216_chap6">
-				<head>VI</head>
+				<head xml:id="ne0216_head_005">VI</head>
 
 				<p>Salieron del hotel con humor jovial, como al amor de una nueva juventud. El almuerzo había sido medianejo, pues no abundan los elementos culinarios en la ciudad, ni se cultiva la «<seg rend="italics">bonne chère</seg>», aun en tal establecimiento que se estrenara con lujosos comienzos, decorado el comedor con floridos almendros del Catalán de los jardines, del famoso y excelente Santiago Rusiñol, y con bellas violencias de luz y fantasías de platea, en paisajes y visiones de Joaquín Mir.</p>
 				<p>Tomaron el tranvía que va por el Terreno, hasta Porto Pi, y que como todo lo de la isla, confirma el decir de George Sand: «mucha calma, <seg rend="italics">c'est la sagesse majorquine</seg>».</p>
@@ -446,7 +474,7 @@
 				<ab> (<seg rend="italics">La Nación</seg>, 13 de marzo de 1914, p. 7.)</ab>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0216_chap7">
-				<head>VALLDEMOSA</head>
+				<head xml:id="ne0216_head_006">VALLDEMOSA</head>
 				<lg type="poem">
 					<l>Vago con los corderos y con las cabras trepo</l>
 					<l>como un pastor por estos montes de Valldemosa,</l>
@@ -480,7 +508,7 @@
 				</lg>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0216_chap8">
-				<head>LA CARTUJA</head>
+				<head xml:id="ne0216_head_007">LA CARTUJA</head>
 				<lg type="poem">
 					<l>Este vetusto monasterio ha visto,</l>
 					<l>secos de orar y pálidos de ayuno,</l>
@@ -585,7 +613,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

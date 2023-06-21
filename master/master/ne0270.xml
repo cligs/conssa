@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El caballero de la Virgen</title>
-				<title type="sub"></title>
+				
 				<title type="short">CaballeroVirgen</title>
-				<title type="idno">
-					<idno type="bne">XX1892691</idno>
-					<idno type="viaf">308018857</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1473</measure>
@@ -141,13 +131,45 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0270</idno>
+						<idno type="cligs">ne0270</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.0, <date when="2015">2015</date>, <idno>25363</idno>, <ref target="https://www.epublibre.org/libro/detalle/25363"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1929">1929</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El caballero de la Virgen</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892691.html">XX1892691</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/308018857/">308018857</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5824119/">Q5824119</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.0, <date when="2015">2015</date>, <idno>25363</idno>, <ref target="https://www.epublibre.org/libro/detalle/25363"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1929">1929</date><idno source="k10plus" type="ppn" n="44565788X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44565788X"/><idno source="k10plus" type="ppn" n="226416895" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226416895"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">El caballero de la virgen</title>: 	<title type="sub">Alonso de Ojeda. Novela</title> <date when="1929">1929</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="44565788X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44565788X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El caballero de la Virgen</title>: 	<title type="sub">(Alonso de Ojeda)</title> <date when="1929">1929</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226416895" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226416895"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El caballero de la Virgen</title>: 	<title type="sub">novela histórica</title> <date when="1933">1933</date>, <publisher>Ed. Osiris</publisher> <pubPlace>Santiago, Chile</pubPlace> 		<idno type="ppn" n="465056164" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465056164"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos, La reina calafia, Novelas de la Costa Azul, La vuelta al mundo de un novelista, Novelas de amor y muerte, El papa del mar, En busca del gran kan, El caballero de la virgen, El fantasma de la alas de oro, Estudios literarios</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621554" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621554"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El caballero de la virgen</title> <date when="1980">1980</date>, <publisher>Plaza &amp; Janés</publisher> <pubPlace>Lima</pubPlace> 		<idno type="ppn" n="466760760" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466760760"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La reina Califa. En busca del Gran Kan. El Caballero de la Virgen. El fantasma de las alas de oro</title> <date when="2015">2015</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="835726479" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=835726479"/> 		<idno type="isbn" n="9788415255383"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +179,14 @@
 				<p>El caballero de la Virgen es el sobrenombre dado a Alonso de Ojeda, prototipo de los descubridores españoles de América, cuya vida se narra en esta obra.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -187,7 +217,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela histórica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -216,6 +246,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,9 +254,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>PARTE PRIMERA: LA REINA FLOR DE ORO</head>
+				<head xml:id="ne0270_head_000">PARTE PRIMERA: LA REINA FLOR DE ORO</head>
 				<div n="1" type="chapter" xml:id="ne0270_chap1">
-					<head>I: Escuchando la voz del cielo</head>
+					<head xml:id="ne0270_head_001">I: Escuchando la voz del cielo</head>
 					<p>El aire parecía transmitir con estremecimientos de inquietud y extrañeza las ondas sonoras surgidas del volteo de la campana. Era la primera vez que esta atmósfera de una tierra cuyos habitantes nunca habían conocido el uso de los metales repetía tales sonidos.</p>
 					<p>Fernando Cuevas hasta se imaginaba ver cómo los árboles de la selva inmediata adquirían nueva vida, moviendo sus copas con el mismo ritmo de esta voz de argentino timbre. Y los habitantes de la frondosidad secular, monos y loros, saltaban asustados de rama en rama, luego de oír largo rato, con una curiosidad silenciosa, esta nueva voz atmosférica, más potente que todas las voces animales y vegetales de la arboleda tropical.</p>
 					<p>El antiguo paje Andújar tenía ahora casa propia y estaba erguido ante la puerta de ella, escuchando el campaneo que saludaba por primera vez la salida del sol. Esta casa era un simple bohío, igual al de los indígenas, con paredes de estacas y barro y techo cónico de hojas de palmera. A corta distancia de tal edificio rústico se levantaban otros y otros, en doble fila, formando una ancha calle, semejante a las de los campamentos. El terreno no costaba nada, y todas las vías de la población naciente eran exageradamente amplias y de horizonte despejado.</p>
@@ -307,7 +338,7 @@
 					<p>Y algunos de estos indios eran de luengos cabellos y altos plumajes, con la cara y el cuerpo pintados, llevando arco, flechas y un palo duro a guisa de espada. Lo mismo que aquellos otros que al final del primer viaje habían intentado cautivar al paje Andújar y a un grupo de marineros.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0270_chap2">
-					<head>II: Donde el Caballero de la Virgen descubre oro y lucha heroicamente con el hambre</head>
+					<head xml:id="ne0270_head_002">II: Donde el Caballero de la Virgen descubre oro y lucha heroicamente con el hambre</head>
 					<p>Una tarde, Alonso de Ojeda, que estaba alojado en la misma casa de piedra ocupada por el Almirante, fue en busca de Fernando.</p>
 					<p>Don Cristóbal, todavía en cama, enfermo de fiebres y con el ánimo muy decaído, había llamado a su joven capitán. Los buques de la flota tenían ya echados en tierra sus cargamentos y debían volverse a España. Había esperado el Almirante disponer de enormes cantidades de oro y especias, acumuladas por la guarnición de la Navidad, y sólo encontró ruinas y cadáveres. ¿Qué dirían en España los reyes y todos los que habían acogido con júbilo la noticia de sus descubrimientos?…</p>
 					<p>—Es necesario —resolvió Colón— enviar allá algo. Estamos en Cipango y deben existir en el interior de la isla populosas ciudades, en alguna región más cultivada, allende las montañas elevadísimas que desde aquí vemos. Todos los indios hablan de Cibao como lugar de oro, y el nombre de Caonabo, que significa en nuestro romance «Señor de la casa dorada», demuestra la riqueza inmensa de sus Estados. Creo que sus minas no están más que a tres o cuatro días de viaje, marchando hacia el interior. Id, hijo, con algunos de vuestros hombres a explorar la tierra, antes de que zarpen los buques, y si Dios quiere que se confirmen mis esperanzas, la flota podrá llevar a España las nuevas de que hemos descubierto al fin las montañas de oro de Cipango.</p>
@@ -395,7 +426,7 @@
 					<p>Y abriendo una ventana, dio suelta a las dos palomas, que se alejaron con rápido vuelo.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0270_chap3">
-					<head>III: De qué modo el «Pequeño jefe blanco» llegó a apoderarse del «Señor de la casa dorada», admirándole el salvaje por su osadía y su astucia.</head>
+					<head xml:id="ne0270_head_003">III: De qué modo el «Pequeño jefe blanco» llegó a apoderarse del «Señor de la casa dorada», admirándole el salvaje por su osadía y su astucia.</head>
 					<p>Volvió el Almirante a Isabela después de varios meses de ausencia, cuando muchos le creían ya muerto en el mar. Su hermano Bartolomé, al que no había visto desde mucho antes de su primer viaje, o sea cuando se separaron en Portugal, le esperaba en la nueva ciudad.</p>
 					<p>Este hermano, de carácter enérgico, cuerpo vigoroso y muy dado a imponer su autoridad, le iba a ser más útil que el devoto y poco inteligente don Diego. En su fondo, Cristóbal y Bartolomé eran semejantes, pero el primero sabía disimular la brusquedad y egoísmo de su verdadero carácter con una dulzura estudiada, mientras el otro sólo podía expresarse secamente y con arrogancia.</p>
 					<p>Al saber Ojeda la vuelta del Almirante, dejó el fuerte de Santo Tomás confiado a uno de sus tenientes, y acompañado de Cuevas y su mujer volvió a Isabela.</p>
@@ -486,7 +517,7 @@
 					<p>Era Ojeda, y no Colón, quien merecía su saludo.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0270_chap4">
-					<head>IV: Donde se cuenta lo que hicieron Cuevas y don Alonso en una visita a la bella reina Flor de Oro</head>
+					<head xml:id="ne0270_head_004">IV: Donde se cuenta lo que hicieron Cuevas y don Alonso en una visita a la bella reina Flor de Oro</head>
 					<p>La prisión de Caonabo generalizó en toda la isla la hostilidad contra los españoles.</p>
 					<p>Uno de los hermanos de dicho cacique, llamado Manicaotex, igualmente osado en las operaciones de guerra, se entendió con los demás reyezuelos de Haití, organizando un ataque general contra los blancos. La hermosa Anacaona (nombre que en lengua del país significaba Flor de Oro), esposa del prisionero, influyó con su hermano Behechio, soberano de los ricos territorios de Jaragua, los más poblados de la isla, para que entrase en dicha coalición. El astuto y flojo Guanacari fue el único que se mantuvo amigo de los españoles, informando a Colón de los preparativos de los otros caciques y ofreciéndose como aliado, aunque sus servicios no podían ser de gran importancia en caso de guerra.</p>
 					<p>Durante la enfermedad del Almirante cuidó Alonso de la defensa de Isabela y del fuerte de Santo Tomás, por conocer el terreno y el carácter de los enemigos mejor que don Bartolomé, el hermano de Colón.</p>
@@ -591,7 +622,7 @@
 					<p>Antes de dormirse, su alma religiosa encontró una excusa a su pecado. Anacaona no era una criatura de Dios. Nunca había sido bautizada. La Virgen y doña Isabelita debían perdonarle. Su falta era leve, por haberla cometido con una criatura irracional, ignorante de las verdades divinas.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0270_chap5">
-					<head>V: Donde se cuenta el descubrimiento de las minas del rey Salomón, la vuelta a España del Caballero de la Virgen, y cómo lloró en una iglesia escuchando el sacristán.</head>
+					<head xml:id="ne0270_head_005">V: Donde se cuenta el descubrimiento de las minas del rey Salomón, la vuelta a España del Caballero de la Virgen, y cómo lloró en una iglesia escuchando el sacristán.</head>
 					<p>Cuatro naves procedentes de España fondearon ante Isabela con admirable oportunidad. Traían nuevos cargamentos de víveres para la colonia y otra vez reinaba en ésta el hambre, produciendo numerosas víctimas.</p>
 					<p>Obligados a trabajar para los extranjeros, los indígenas del interior habían adoptado la más desesperada de las resoluciones. Flojos o indolentes por naturaleza para toda labor continua y eficaz, consideraban la peor de las esclavitudes tener que trabajar unos cuantos días cada tres meses para pagar el tributo impuesto por el <seg rend="italic">Guamiquina</seg> de la ciudad vecina al mar. Habían buscado voluntariamente granos de oro para los blancos al ver con qué satisfacción acogían este regalo los hijos del cielo; pero desde el momento que dicha busca se convertía en obligación, la consideraron intolerable.</p>
 					<p>Parcos en la comida, acostumbrados a conseguirla con rápidas y superficiales labores del suelo, empezaron a quejarse en sus lamentosos cánticos de tener que cultivar la tierra de un modo regular para las cosechas periódicas que les exigían sus nuevos amos. Muchos de ellos preguntaban a los españoles cuándo pensaban volverse a <seg rend="italic">Turey</seg> esperando ver todos los días los bosques flotantes que los habían traído, extender otra vez al viento su blanco follaje, alejándose para siempre. Pero en lugar de esto, nuevos bosques flotantes y más hijos de <seg rend="italic">Turey</seg> iban llegando a la isla, y en señal de posesión interminable, creyendo de poca duración los bohíos, arrancaban piedras a las montañas para construirse sólidas cavernas, pues esto les parecían las casas y también los fortines, cada vez más numerosos en el interior de la isla.</p>
@@ -669,10 +700,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>PARTE SEGUNDA: EL OSO DEL REY SALOMÓN</head>
+				<head xml:id="ne0270_head_006">PARTE SEGUNDA: EL OSO DEL REY SALOMÓN</head>
 
 				<div n="6" type="chapter" xml:id="ne0270_chap6">
-					<head>I: Donde Colón descubre el Paraíso terrenal, es llevado con cadenas a España, y muere en la horca la reina Flor de Oro.</head>
+					<head xml:id="ne0270_head_007">I: Donde Colón descubre el Paraíso terrenal, es llevado con cadenas a España, y muere en la horca la reina Flor de Oro.</head>
 					<p>Seis años transcurrieron antes de que Fernando y Lucero volviesen a ver a don Alonso de Ojeda.</p>
 					<p>Fue este periodo de su vida el más abundante en cambios de domicilio y de oficio, y al mismo tiempo el de menos provecho. El Adelantado don Bartolomé Colón, los protegía algunas veces, recordando que habían acompañado a su hermano en el primer viaje; pero tal apoyo sólo servía para que el antiguo paje Andújar y su mujer viviesen un poco más desahogadamente que muchos otros recién llegados a la isla.</p>
 					<p>La ansiada riqueza revoloteaba diariamente ante sus ojos, sin dejarse nunca capturar. Cuevas veía cada vez más oro; pero no era para él. La juventud de los dos parecía relegarlos a una situación secundaria, teniendo siempre delante otros más favorecidos.</p>
@@ -761,7 +792,7 @@
 					<p>¡Pobre reina Flor de Oro!</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0270_chap7">
-					<head>II: Donde aparece la india Isabel, y Lucero se entera al fin cuál es la verdadera riqueza del Nuevo Mundo</head>
+					<head xml:id="ne0270_head_008">II: Donde aparece la india Isabel, y Lucero se entera al fin cuál es la verdadera riqueza del Nuevo Mundo</head>
 					<p>A fines del año 1500, cuando aún era Bobadilla gobernador de Santo Domingo, vieron Cuevas y Lucero entrar en su casa al señor Juan de la Cosa.</p>
 					<p>Tenía el mal aspecto de un hombre que acaba de sufrir grandes penalidades. Fernando, al escuchar sus primeras palabras, recordó inmediatamente algo que se venía diciendo en la ciudad desde días antes.</p>
 					<p>Tres pequeñas partidas de aventureros avanzaban a través de la Española comerciando con los naturales sin permiso del gobernador, y se añadía que cada uno de estos grupos llevaba un cofre lleno de oro y perlas. El célebre navegante era jefe de uno de estos grupos, y los otros estaban compuestos de náufragos que habían perdido sus buques en una costa lejana de la isla, viéndose obligados a comerciar con los indios para obtener de este modo víveres y seguir su marcha hasta Santo Domingo.</p>
@@ -845,7 +876,7 @@
 					<p>Y viviendo los dos esposos en tan pacificas y mansas aspiraciones llegó a Santo Domingo la noticia de que, meses antes, el 20 de Mayo de 1506, había muerto en Valladolid el Almirante don Cristóbal Colón.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0270_chap8">
-					<head>III: De las verdaderas mirlas del rey Salomón encontradas por don Cristóbal en Panamá, cerca del Ganges, y cómo Fernando Cuevas fue a España enviado por Ojeda, solicitando el permiso para conquistarlas.</head>
+					<head xml:id="ne0270_head_009">III: De las verdaderas mirlas del rey Salomón encontradas por don Cristóbal en Panamá, cerca del Ganges, y cómo Fernando Cuevas fue a España enviado por Ojeda, solicitando el permiso para conquistarlas.</head>
 					<p>Antes de que el Almirante muriese en España, lo vieron Cuevas y Lucero por última vez en Santo Domingo.</p>
 					<p>El gobernador de la isla tuvo que enviar una carabela para recogerlo en Jamaica, donde permanecía aislado varios meses, con sus buques podridos y una gran parte de sus tripulaciones sublevadas.</p>
 					<p>Su cuarto viaje de descubrimiento, pagado por los reyes después de muchos titubeos y demoras con el deseo de que Colón se rehabilitase del fracaso de su viaje anterior, resultaba una continua desdicha. Después de haber estado frente a Santo Domingo, sin que Ovando le dejase desembarcar, ponía su proa al Oeste; en busca del estrecho que iba a darle acceso a las verdaderas tierras del Gran Kan y a las bocas del Ganges.</p>
@@ -931,7 +962,7 @@
 					<p>Tan olvidado estaba ya el hombre que había muerto en Valladolid, buscando inútilmente al Gran Kan.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0270_chap9">
-					<head>IV: En el que se habla de los héroes de las Cuatro Calles y de cómo la animosa Lucero acometió espada en mano al intrépido Ojeda, haciéndole derramar sangre y lágrimas.</head>
+					<head xml:id="ne0270_head_010">IV: En el que se habla de los héroes de las Cuatro Calles y de cómo la animosa Lucero acometió espada en mano al intrépido Ojeda, haciéndole derramar sangre y lágrimas.</head>
 					<p>En Santo Domingo, el lugar más frecuentado por el vecindario era uno que recibía el nombre de las Cuatro Calles, por servir de cruce a las dos arterias más importantes de la ciudad. El gobernador Ovando se había preocupado mucho de las obras de ensanche y embellecimiento, y al sucederle en 1506 el segundo Almirante don Diego Colón, que había heredado de su padre don Cristóbal el virreinato de las indias, empezó Santo Domingo a adquirir mayor importancia.</p>
 					<p>Sus habitantes afirmaban orgullosos que no había ningún pueblo en España mejor construido, a excepción de la muy noble ciudad de Barcelona, y que su catedral, todavía sin acabar, iba a ser tan magnífica como las de Europa. Abundaban los veneros de hermosa piedra en las cercanías. Las construcciones del primer momento habían sido de adobes o de madera, con techos de ramaje. Luego, la gran abundancia de materiales y el haber aprendido los indios a dar ayuda a los albañiles venidos de Europa aumentó rápidamente las casas de piedra.</p>
 					<p>El río, navegable y muy hondo, tenía a un lado la ciudad y al otro campos de labranza y jardines, con muchos naranjos, cañafístulas y grupos de frutales, traídos de Europa. Las calles, bien ordenadas y anchas, daban por uno de sus extremos al río y por el otro a hermosas praderas.</p>
@@ -1035,7 +1066,7 @@
 					<p>El intrépido hidalgo, vehemente y tornadizo en sus pasiones, agradecía ahora la resistencia desesperada de ella, sus llamamientos, que le habían impedido cometer una acción infame contra su mejor hermano de armas.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0270_chap10">
-					<head>V: El desafío de los dos gobernadores, y cómo Ojeda partió finalmente a la conquista de las tierras de oro en Asia, no sin prometer antes a gritos que cortaría la cabeza a sus rivales.</head>
+					<head xml:id="ne0270_head_011">V: El desafío de los dos gobernadores, y cómo Ojeda partió finalmente a la conquista de las tierras de oro en Asia, no sin prometer antes a gritos que cortaría la cabeza a sus rivales.</head>
 					<p>Casi anclaron a un mismo tiempo en el puerto de Santo Domingo las dos pequeñas flotas —llamadas «armadillas» por los españoles— que iban a la conquista de las famosas tierras del oro cerca del Ganges.</p>
 					<p>El primero en llegar fue Juan de la Cosa con dos carabelas nada más. Había tenido que hacer verdaderos milagros de economía para adquirir en Portugal estos dos buques, por ser él hasta el presente único capitalista importante de tal empresa.</p>
 					<p>—Mi bolsa —decía el honrado marino— no está repleta, y Ojeda; mi asociado, tiene la suya completamente vacía.</p>
@@ -1112,7 +1143,7 @@
 					<p>Y corrió a embarcarse, antes de que Colón el mozo le disparase otro acreedor pidiendo el arresto de su persona.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0270_chap11">
-					<head>VI: De cómo salvó su vida el Caballero de la Virgen en la más portentosa de sus aventuras, y cómo murió hinchado de veneno el mayor de sus amigos.</head>
+					<head xml:id="ne0270_head_012">VI: De cómo salvó su vida el Caballero de la Virgen en la más portentosa de sus aventuras, y cómo murió hinchado de veneno el mayor de sus amigos.</head>
 					<p>Llegó en pocos días la armadilla cerca del golfo de Urabá, fondeando en un puerto natural donde años después fue establecida la ciudad de Cartagena.</p>
 					<p>Juan de la Cosa conocía este puerto por haber estado en él ocho años antes, en 1501, cuando lo descubrió Rodrigo de Bastidas, al que acompañaba como piloto mayor.</p>
 					<p>Con una prudencia que era el resultado de atentas observaciones, aconsejó a Ojeda que no se confiase en los indígenas de esta tierra, muy distintos a los débiles habitantes de la mayor parte de las islas antillanas.</p>
@@ -1236,10 +1267,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>PARTE TERCERA: EL OCASO DEL HÉROE</head>
+				<head xml:id="ne0270_head_013">PARTE TERCERA: EL OCASO DEL HÉROE</head>
 
 				<div n="12" type="chapter" xml:id="ne0270_chap12">
-					<head>I: Los suplicios de San Sebastián, y cómo los indios flecheros se convencieron de que «el pequeño jefe blanco» no era invulnerable.</head>
+					<head xml:id="ne0270_head_014">I: Los suplicios de San Sebastián, y cómo los indios flecheros se convencieron de que «el pequeño jefe blanco» no era invulnerable.</head>
 					<p>Sintiose Ojeda desorientado al perder a Juan de la Cosa.</p>
 					<p>Cuevas era su confidente íntimo y contaba con la lealtad de Francisco Pizarro para las empresas de guerra; pero le faltaba el consejo y la dirección de aquél amigo paternal, sabio y prudente.</p>
 					<p>Creyó llegado el momento de seguir sus prudentes indicaciones desistiendo de todo proyecto de colonización en esta parte de Tierra Firme, donde sólo había conocido desastres, y puso su rumbo al golfo de Urabá. Allí buscó el río Darién, del que tanto hablaban los indígenas por su abundancia de oro. Éste era el lugar, según La Cosa, más adecuado para la fundación de una colonia. Además, dicho río servía de límite entre su gobernación y la de Nicuesa. Pero, falto de la pericia del célebre piloto, no pudo dar con la desembocadura del Darién, desembarcando en distintos puntos del golfo, siempre en busca de un lugar favorable para establecer su ciudad.</p>
@@ -1338,7 +1369,7 @@
 					<p>—Talavera, ¡abajo con los otros! —ordenó, señalando los grupos de hombres que estaban en torno del palo mayor—. Donde está don Alonso de Ojeda no puede haber otro capitán.</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0270_chap13">
-					<head>II: Donde Ojeda es a la fuerza capitán de piratas, abandona para siempre a su Virgen, y pasan sus compañeros por las más horrendas aventuras, para acabar en la horca.</head>
+					<head xml:id="ne0270_head_015">II: Donde Ojeda es a la fuerza capitán de piratas, abandona para siempre a su Virgen, y pasan sus compañeros por las más horrendas aventuras, para acabar en la horca.</head>
 					<p>Obedeció Talavera, intimidado por la autoridad natural de aquel hombre acostumbrado al mando, y bajó de la popa para confundirse con sus camaradas.</p>
 					<p>Aquel día no pasó nada más, por mostrarse todos interesados en que don Alonso, que era a bordo el único enterado del arte de navegar, colocase bien el velamen y enderezase el rumbo; pero a la mañana siguiente ocurrió lo que esperaba Cuevas.</p>
 					<p>Bernardino de Talavera, soliviantado por los suyos, subió al alcázar de popa que Ojeda se había reservado como vivienda propia. Quería mandar en la nave lo mismo que don Alonso, o tal vez más, por ser él quien la había traído, no pudo, sin embargo, continuar, quedando cortada su reclamación por el impetuoso gobernador de Nueva Andalucía.</p>
@@ -1435,7 +1466,7 @@
 					<p>—¿Se acuerda su señoría de aquel a quien apodaban en las Cuatro Calles «el Esgrimidor», un tal Vasco Núñez de Balboa, que cultivaba tierras en el pueblecito de Durango, estaba entrampado hasta los ojos y no sabía cómo librarse de sus acreedores, que iban a encerrarle en la cárcel?… Pues se ha ido con el bachiller, sin que éste lo supiera, metido en un tonel.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0270_chap14">
-					<head>III: En el que se ve la creciente miseria del olvidado gobernador de Nueva Andalucía, y cómo se fue enterando de las aventuras de sus discípulos y los progresos de un tal Balboa, salido de un tonel</head>
+					<head xml:id="ne0270_head_016">III: En el que se ve la creciente miseria del olvidado gobernador de Nueva Andalucía, y cómo se fue enterando de las aventuras de sus discípulos y los progresos de un tal Balboa, salido de un tonel</head>
 					<p>Empezó a notar don Alonso en torno a su persona el apartamiento y la desconfianza que acompañan a todos los héroes considerados en decadencia.</p>
 					<p>Quiso comprar un barco y alistar gente para ir a su ciudad de San Sebastián, mas todos sus esfuerzos resultaron infructuosos. La gente huía de él como de un hombre marcado por la mala suerte.</p>
 					<p>Las desgracias de su colonia eran ya sabidas por los vecinos de Santo Domingo y las exageraban en sus comentarios. Don Diego Colón parecía aprobar la creciente impopularidad del héroe. Había sido enemigo de su padre, el primer Almirante, durante los últimos años de la vida de éste, y se expresaba con crudeza contra todos los de la familia Colón. Acaso esperaba que don Alonso le visitase para implorar su apoyo y ser capitán a sus órdenes, pero Ojeda, cada vez más altivo, según se aceleraba su decadencia, era incapaz de pedir amparo ni de servir a nadie. Durante el resto de su existencia sólo podía ser un heroico jefe de aventureros valerosos, y de no conseguirlo, prefería morir.</p>
@@ -1546,7 +1577,7 @@
 					<p>Don Alonso, para entretener sus soledades, se había hecho escritor.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0270_chap15">
-					<head>IV: Donde el orgulloso héroe escribe un libro que no se publicó nunca, y toma sus disposiciones pera que le pisen eternamente todos los habitantes de Santo Domingo.</head>
+					<head xml:id="ne0270_head_017">IV: Donde el orgulloso héroe escribe un libro que no se publicó nunca, y toma sus disposiciones pera que le pisen eternamente todos los habitantes de Santo Domingo.</head>
 					<p>Amaba Ojeda con preferencia las horas de la noche, por ser las de mayor soledad, aislándose durante ellas del trato con los hombres. Cada día iba en aumento su aversión hacia los antiguos compañeros de aventuras, odiándolos igualmente por su indiferencia o por las conmiseraciones que tenían con él.</p>
 					<p>La necesidad de buscar dinero le obligaba en las horas diurnas a ir a Santo Domingo, tomando una actitud altiva y algunas veces provocadora al ver de lejos a sus amigos de otro tiempo que venían hacia él.</p>
 					<p>La noche representaba el descanso en fresca soledad, el momento propicio para la mágica evocación del pasado. Y en el pobre bohío, que era toda su fortuna, escribía horas y horas, relatando las hazañas de su pasado: sus duelos, sus navegaciones, sus guerras, primero con los moros, luego con los indios de esta parte del Asia, cuya verdadera identidad no habían determinado aún cosmógrafos y navegantes.</p>
@@ -1611,7 +1642,7 @@
 					<p>«Para que todos —decía el papel— los que entren en la iglesia, grandes o pequeños, se vean obligados a pisar los restos de este gran pecador».</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0270_chap16">
-					<head>V: Del pavoroso encuentro que tuvo Fernando Cuevas un anochecer en las ruinas de Isabela, y lo que profetizó viendo la prosperidad de sus trabajos y la vigorosa audacia de su hijo.</head>
+					<head xml:id="ne0270_head_018">V: Del pavoroso encuentro que tuvo Fernando Cuevas un anochecer en las ruinas de Isabela, y lo que profetizó viendo la prosperidad de sus trabajos y la vigorosa audacia de su hijo.</head>
 					<p>Quiso tomar Cuevas bajo su protección a la familia de don Alonso, y los tres pequeños mestizos empezaron a pasar días enteros en su huerta, siguiendo al vigoroso Alonsico en sus juegos belicosos y obedeciéndole cual si fuesen servidores suyos.</p>
 					<p>La india Isabel veía con agradecimiento esta protección a sus hijos. Le gustaba además tenerlos fuera de su vivienda, a causa de sus audacias y gritos. Desde que había desaparecido «el jefe blanco», los tres mostraban un atrevimiento ruidoso de esclavos en libertad. Ya no temían a nadie dentro del bohío. Y para convencerse de su triunfo habían roto en menudos pedazos aquel cuaderno de su padre en el que trazaba signos misteriosos todas las noches.</p>
 					<p>Así acababan los <seg rend="italic">Comentarios</seg> de los primeros descubrimientos del Nuevo Mundo, las Memorias del infortunado héroe. Cuevas aún pudo ver algunos pedacitos de papel revoloteando cerca del bohío.</p>

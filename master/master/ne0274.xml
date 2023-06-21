@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Realidad</title>
-				<title type="sub">novela en cinco jornadas</title>
+				
 				<title type="short">Realidad</title>
-				<title type="idno">
-					<idno type="bne">XX2127953</idno>
-					<idno type="viaf">305927304</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1014802</idno>
-					<idno type="viaf">71395987 </idno>
-					<name type="short">Galdos</name>
-					<name type="full">Benito Pérez Galdós</name>
+					<name type="short" ref="#Galdos"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">8600</measure>
@@ -141,13 +131,67 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0274</idno>
+						<idno type="cligs">ne0274</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, <date when="2001">2001</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc70803"/>, <ref target="http://www.cervantesvirtual.com/obra/realidad-novela-en-cinco-jornadas--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Guirnalda, <date when="1890">1890</date></bibl>
-				<bibl type="edition-first"><date when="1889">1889</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Realidad</title>
+					<title type="sub">novela en cinco jornadas</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2127953.html">XX2127953</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/305927304/">305927304</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q18418797/">Q18418797</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1046030094">1046030094</idno>
+				</idno>
+				</title>
+					<author xml:id="Galdos">
+						<name type="full"><forename>Benito</forename> <surname>Pérez Galdós</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9760 - IO 9765">IO 9760 - IO 9765</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118641573">118641573</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q189869/">Q189869</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1014802.html">XX1014802</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/71395987/">71395987</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, <date when="2001">2001</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc70803"/>, <ref target="http://www.cervantesvirtual.com/obra/realidad-novela-en-cinco-jornadas--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Guirnalda, <date when="1890">1890</date></bibl>
+					<bibl type="edition-first"><date when="1889">1889</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title>: 	<title type="sub">novela en 5 jornadas</title> <date when="1890">1890</date>, <publisher>La Guirnalda</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584555857" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584555857"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad ...</title> <date when="1892">1892</date>, <publisher>La Guirnalda</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584556012" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584556012"/> </bibl>
+						<bibl type="further-edition"><title type="main">Realidad</title>: 	<title type="sub">Pérez Galdós, B[enito] ; Drama en 5 actos y en prosa. Arreglo de la novela del mismo titulo</title> <date when="1892">1892</date>, <publisher>La Guirnalda</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="443489718" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=443489718"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title>: 	<title type="sub">drama en 5 actos y en prosa ; (arreglo de la novela del mismo título)</title> <date when="1915">1915</date>, <publisher>Hernando [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584576080" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584576080"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title> <date when="1916">1916</date>, <publisher>Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1377080838" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1377080838"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title>: 	<title type="sub">novela en 5 jornadas</title> <date when="1916">1916</date>, <publisher>Hernando [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584589964" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584589964"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title>: 	<title type="sub">novela en 5 jornadas</title> <date when="1916">1916</date>, <publisher>Sucesores de Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465037674" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465037674"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title> <date when="1952">1952</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1145032664" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1145032664"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title> <date when="1952">1952</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584556349" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584556349"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title> <date when="1962">1962</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465415016" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465415016"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Teatro selecto de Pérez Galdós</title>: 	<title type="sub">Realidad, El abuelo, Doña perfecta</title> <date when="1972">1972</date>, <publisher>Escelicer</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1641058579" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1641058579"/> 		<idno type="isbn" n="8423810712"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Tormento. La de bringas. Lo prohibido. Fortunata y Jacinta. Miau. La incognita. Realidad. Torquemada en la hoguera. Torquemada en la cruz. Torauemada en el purgatorio. Torquemada y San Pedro</title> <date when="1975">1975</date>, <publisher>Aquilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1150050888" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1150050888"/> 		<idno type="isbn" n="8403001533"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title>: 	<title type="sub">novela en cinco jornadas</title> <date when="1977">1977</date>, <publisher>Taurus</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1620648105" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1620648105"/> 		<idno type="isbn" n="8430640991"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title>: 	<title type="sub">novela en cinco jornadas</title> <date when="1977">1977</date>, <publisher>Taurus Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="591446324" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=591446324"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad</title>: 	<title type="sub">novela en 5 jornadas</title> <date when="1977">1977</date>, <publisher>Taurus Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465391680" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465391680"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Tormento. La de bringas. Lo prohibido. Fortunata y Jacinta. Miau. La incognita. Realidad. Torquemada. En el purgatorio. Torquemada y San Pedro</title> <date when="1986">1986</date>, <publisher>Aquilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="110816904X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=110816904X"/> 		<idno type="isbn" n="8403001533"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Tormento. La de bringas. Lo prohibido. Fortunata y Jacinta. Miau. La incognita. Realidad. Torquemada. En el purgatorio. Torquemada y San Pedro</title> <date when="1990">1990</date>, <publisher>Aquilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1112959173" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1112959173"/> 		<idno type="isbn" n="8403001533"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Reality</title> <date when="1992">1992</date>, <publisher>Edwin Mellen Pr.</publisher> <pubPlace>Lewiston, NY;Queenston, Ont.;Lampeter, Wales</pubPlace> 		<idno type="ppn" n="469533226" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469533226"/> 		<idno type="isbn" n="0773491759"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The theatre of Galdos: Realidad (1892)</title> <date when="1993">1993</date>, <publisher>Mellen</publisher> <pubPlace>Lewiston [u.a.]</pubPlace> 		<idno type="ppn" n="1617253138" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1617253138"/> 		<idno type="isbn" n="0773492542"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">The theatre of Galdós</title>: 	<title type="sub">"Realidad" (1892)</title> <date when="1993">1993</date>, <publisher>Edwin Mellen Pr.</publisher> <pubPlace>Lewiston, N.Y.;Queenston, Ontario;Lampeter, Dyfed</pubPlace> 		<idno type="ppn" n="468664378" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468664378"/> 		<idno type="isbn" n="0773492542"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Realidad (1892)</title> <date when="1993">1993</date>, <publisher>Edwin Mellen Press</publisher> <pubPlace>Lewiston, NY [u.a.]</pubPlace> 		<idno type="ppn" n="124192777" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124192777"/> 		<idno type="isbn" n="0773492542;0889463867"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Miau. La incógnita. Realidad</title> <date when="2001">2001</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1169020577" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1169020577"/> 		<idno type="isbn" n="8489794456"/></bibl>
+						<bibl type="further-edition"><title type="main">Realidad</title> <date when="2001">2001</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="349217130" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=349217130"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La incógnita</title> <date when="2004">2004</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1182179940" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182179940"/> 		<idno type="isbn" n="8437621305"/></bibl>
+						<bibl type="further-edition"><title type="main">Realidad</title> <date when="2004">2004</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="386944024" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=386944024"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos fascinantes</title>: 	<title type="sub">viaje de la imaginación a la realidad</title> <date when="2006">2006</date>, <publisher>Clan</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="52012846X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=52012846X"/> 		<idno type="isbn" n="8489142939"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos fascinantes</title>: 	<title type="sub">viaje de la imaginación a la realidad</title> <date when="2020">2020</date>, <publisher>Clan</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1744886415" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1744886415"/> 		<idno type="isbn" n="9788496745759;8496745759"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -161,6 +205,14 @@
 					<p>Al día siguiente nuestra heroína finge enterarse de la noticia. Todos murmuran que ella tuvo algo que ver, pero la amante de Federico se mantiene en su negativa.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9761" key="IO 9761" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">8</term>
 					<term type="author.continent">Europe</term>
@@ -187,7 +239,7 @@
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon">Antologías ; Ficción clásica; Ficción clásica, Ficción clásica</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
@@ -234,13 +286,14 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-27" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			
 			<castList>
-				<head>DRAMATIS PERSONAE</head>
+				<head xml:id="ne0274_head_000">DRAMATIS PERSONAE</head>
 				<castItem>FEDERICO VIERA.	</castItem>
 				<castItem>OROZCO.	</castItem>
 				<castItem>JOAQUÍN VIERA,   padre de Federico.	</castItem>
@@ -271,10 +324,10 @@
 		</front>
 		<body>
 			<div type="act">
-				<head>Jornada I</head>
+				<head xml:id="ne0274_head_001">Jornada I</head>
 				<p><stage>La representa tres habitaciones de la casa de <seg rend="normal">OROZCO</seg>; gran salón en el centro y dos salas laterales, las tres piezas comunicadas entre sí y decoradas con elegancia y riqueza. Por la puerta del fondo del salón en entran los personajes que vienen del exterior. La sala de la derecha, en la cual se ven las mesas de tresillo, comunica por el fondo con el comedor y billar de la casa; la de la izquierda con gabinetes y dormitorios. Es de noche. El salón y sala de la derecha están profusamente alumbrados. En la sala de la izquierda, decorada a estilo japonés, sólo hay dos lámparas, ambas con grandes pantallas.</stage></p>
 				<div n="1" type="chapter" xml:id="ne0274_chap1">
-					<head>Escena I</head>
+					<head xml:id="ne0274_head_002">Escena I</head>
 					<p><stage>Sucesivamente, conforme lo indica el diálogo, entran por la puerta del fondo del salón central <seg rend="normal">VILLALONGA</seg>, <seg rend="normal">EL MARQUÉS DE CÍCERO</seg>, <seg rend="normal">AGUADO</seg>, <seg rend="normal">CISNEROS</seg>, <seg rend="normal">EL CONDE DE MONTE CÁRMENES</seg>.</stage></p>
 					<sp>
 						<speaker>VILLALONGA.- </speaker>
@@ -460,7 +513,7 @@
 					<p><stage>Entran en el salón el <seg rend="normal">EXMINISTRO</seg>, el <seg rend="normal">SEÑOR DE PEZ</seg> (de levita), el <seg rend="normal">SEÑOR DE TRUJILLO</seg> (de frac), anciano y valetudinario, apoyado en el brazo de su hijo, el cual viste uniforme de artillería.</stage></p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0274_chap2">
-					<head>Escena II</head>
+					<head xml:id="ne0274_head_003">Escena II</head>
 					<p><stage>Los mismos. Aparece <seg rend="normal">AUGUSTA</seg> en la sala de la derecha, dando el brazo a <seg rend="normal">MALIBRÁN</seg>.</stage></p>
 					<sp>
 						<speaker>MALIBRÁN.- </speaker>
@@ -650,7 +703,7 @@
 					</sp>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0274_chap3">
-					<head>Escena III</head>
+					<head xml:id="ne0274_head_004">Escena III</head>
 					<p><stage>Los mismos. <seg rend="normal">MANOLO INFANTE</seg> entra en el salón y lo recorre, observando con precaución. Atisba por la puerta de la izquierda.</stage></p>
 					<sp>
 						<speaker>INFANTE.- </speaker>
@@ -858,7 +911,7 @@
 					</sp>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0274_chap4">
-					<head>Escena IV</head>
+					<head xml:id="ne0274_head_005">Escena IV</head>
 					<p><stage>Los mismos; <seg rend="normal">FEDERICO VIERA</seg>.</stage></p>
 					<sp>
 						<speaker>INFANTE.- </speaker>
@@ -994,7 +1047,7 @@
 					</sp>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0274_chap5">
-					<head>Escena V</head>
+					<head xml:id="ne0274_head_006">Escena V</head>
 					<p><stage>Los mismos; <seg rend="normal">TERESA TRUJILLO</seg>, de edad madura, vivaracha, el pelo pintado de rubio.</stage></p>
 					<sp>
 						<speaker>AUGUSTA.- </speaker>
@@ -1128,7 +1181,7 @@
 					<p><stage>Entra <seg rend="normal">MONTE CÁRMENES</seg>. La conversación se generaliza y se deslíe, subdividiéndose.</stage></p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0274_chap6">
-					<head>Escena VI</head>
+					<head xml:id="ne0274_head_007">Escena VI</head>
 					<p><stage><seg rend="normal">OROZCO</seg>, <seg rend="normal">CALDERÓN</seg> y <seg rend="normal">AGUADO</seg> aparecen en la sala de la derecha. En una de las mesas de esta, continúan jugando al tresillo <seg rend="normal">CISNEROS</seg>, <seg rend="normal">MALIBRÁN</seg> y <seg rend="normal">PEZ</seg>. En otra juegan el <seg rend="normal">EXMINISTRO</seg> y los <seg rend="normal">TRUJILLOS</seg> padre e hijo.</stage></p>
 					<sp>
 						<speaker>OROZCO.- </speaker>
@@ -1324,7 +1377,7 @@
 					</sp>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0274_chap7">
-					<head>Escena VII</head>
+					<head xml:id="ne0274_head_008">Escena VII</head>
 					<p><stage>Los mismos, menos <seg rend="normal">MALIBRÁN</seg>.</stage></p>
 					<sp>
 						<speaker>OROZCO.- </speaker>
@@ -1542,7 +1595,7 @@
 					</sp>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0274_chap8">
-					<head>Escena VIII</head>
+					<head xml:id="ne0274_head_009">Escena VIII</head>
 					<p><stage>Alcoba en casa de <seg rend="normal">OROZCO</seg>. Dos camas, una a cada lado de la estancia.</stage></p>
 					<p><stage><seg rend="normal">OROZCO</seg>, sentado, meditabundo. <seg rend="normal">AUGUSTA</seg> que entra, vestida aún de sociedad.</stage></p>
 					<sp>
@@ -1744,9 +1797,9 @@
 			</div>
 
 			<div type="act">
-				<head>Jornada II</head>
+				<head xml:id="ne0274_head_010">Jornada II</head>
 				<div n="9" type="chapter" xml:id="ne0274_chap9">
-					<head>Escena I</head>
+					<head xml:id="ne0274_head_011">Escena I</head>
 					<p><stage>Antesala de un círculo de recreo. Sucesivamente cambia en escalera, en calle y en café, según se indica.</stage></p>
 					<p><stage><seg rend="normal">FEDERICO VIERA</seg>, <seg rend="normal">MANOLO INFANTE</seg>.</stage></p>
 					<sp>
@@ -2088,7 +2141,7 @@
 					</sp>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0274_chap10">
-					<head>Escena II</head>
+					<head xml:id="ne0274_head_012">Escena II</head>
 					<p><stage>Los mismos, <seg rend="normal">SANTANITA</seg>.</stage></p>
 					<p><stage>Ábrese la puerta y aparece <seg rend="normal">SANTANITA</seg>, el cual, al ver a los dos amigos, retrocede asustado y como si quisiera volver a meterse en el portal.</stage></p>
 					<sp>
@@ -2153,7 +2206,7 @@
 					</sp>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0274_chap11">
-					<head>Escena III</head>
+					<head xml:id="ne0274_head_013">Escena III</head>
 					<p><stage><seg rend="normal">FEDERICO</seg>, <seg rend="normal">INFANTE</seg>.</stage></p>
 					<sp>
 						<speaker>INFANTE.- </speaker>
@@ -2189,7 +2242,7 @@
 					</sp>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0274_chap12">
-					<head>Escena IV</head>
+					<head xml:id="ne0274_head_014">Escena IV</head>
 					<p><stage>Los mismos, <seg rend="normal">CLAUDIA</seg>.</stage></p>
 					<sp>
 						<speaker>CLAUDIA.- </speaker>
@@ -2289,7 +2342,7 @@
 					</sp>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0274_chap13">
-					<head>Escena V</head>
+					<head xml:id="ne0274_head_015">Escena V</head>
 					<p><stage>Gabinete lujoso en casa de <seg rend="normal">LA PERI</seg>. Es de día.</stage></p>
 					<p><stage><seg rend="normal">FEDERICO</seg>, <seg rend="normal">LEONOR</seg>.</stage></p>
 					<sp>
@@ -2510,7 +2563,7 @@
 					</sp>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0274_chap14">
-					<head>Escena VI</head>
+					<head xml:id="ne0274_head_016">Escena VI</head>
 					<p><stage><seg rend="normal">FEDERICO</seg>, solo, paseándose.</stage></p>
 					<sp>
 						<speaker> </speaker>
@@ -2518,7 +2571,7 @@
 					</sp>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0274_chap15">
-					<head>Escena VII</head>
+					<head xml:id="ne0274_head_017">Escena VII</head>
 					<p><stage><seg rend="normal">FEDERICO</seg>, <seg rend="normal">LEONOR</seg>.</stage></p>
 					<sp>
 						<speaker>LEONOR.- </speaker>
@@ -2643,7 +2696,7 @@
 					</sp>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0274_chap16">
-					<head>Escena VIII</head>
+					<head xml:id="ne0274_head_018">Escena VIII</head>
 					<p><stage>Dos habitaciones comunicadas, pequeñas, puestas con dudosa elegancia. En la de la derecha, sofá, butacas, un secreter, velador con tapete, un entredós con lámpara de bronce, cortinas de seda, chimenea encendida, sobre la cual hay un gran espejo. En la de la izquierda, tocador con colgadura, una silla larga, banquetas de pelouche, armario de luna, lavabo. En el fondo de este gabinete la puerta que comunica con una alcoba. Es de día.</stage></p>
 					<p><stage><seg rend="normal">AUGUSTA</seg>, <seg rend="normal">FELIPA</seg>.</stage></p>
 					<sp>
@@ -2660,7 +2713,7 @@
 					</sp>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0274_chap17">
-					<head>Escena IX</head>
+					<head xml:id="ne0274_head_019">Escena IX</head>
 					<p><stage><seg rend="normal">AUGUSTA</seg>, <seg rend="normal">FEDERICO</seg>.</stage></p>
 					<sp>
 						<speaker>FEDERICO.- </speaker>
@@ -2881,7 +2934,7 @@
 					<p><stage>Intermedio largo.</stage></p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0274_chap18">
-					<head>Escena X</head>
+					<head xml:id="ne0274_head_020">Escena X</head>
 					<p><stage>La misma decoración.</stage></p>
 					<p><stage>Los mismos personajes. <seg rend="normal">FEDERICO</seg> en el gabinete, reclinado en la silla larga. <seg rend="normal">AUGUSTA</seg> dentro de la alcoba. No se la ve al principio de la escena. Es de noche. La lámpara está encendida.</stage></p>
 					<sp>
@@ -3127,9 +3180,9 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Jornada III</head>
+				<head xml:id="ne0274_head_021">Jornada III</head>
 				<div n="19" type="chapter" xml:id="ne0274_chap19">
-					<head>Escena I</head>
+					<head xml:id="ne0274_head_022">Escena I</head>
 					<p><stage>Sala en casa de <seg rend="normal">FEDERICO</seg>.</stage></p>
 					<p><stage><seg rend="normal">CLAUDIA</seg>, <seg rend="normal">BÁRBARA</seg>, la primera con un chiquillo en brazos, la segunda con manto, como si entrara de la calle.</stage></p>
 					<sp>
@@ -3310,7 +3363,7 @@
 					</sp>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0274_chap20">
-					<head>Escena II</head>
+					<head xml:id="ne0274_head_023">Escena II</head>
 					<p><stage>Las mismas, <seg rend="normal">FEDERICO</seg>, que entra por el foro.</stage></p>
 					<sp>
 						<speaker>BÁRBARA.- </speaker>
@@ -3450,7 +3503,7 @@
 					</sp>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0274_chap21">
-					<head>Escena III</head>
+					<head xml:id="ne0274_head_024">Escena III</head>
 					<p><stage><seg rend="normal">FEDERICO</seg>, con el chiquillo en brazos, después <seg rend="normal">JOAQUÍN VIERA</seg>.</stage></p>
 					<sp>
 						<speaker>FEDERICO.- </speaker>
@@ -3614,7 +3667,7 @@
 					</sp>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0274_chap22">
-					<head>Escena IV</head>
+					<head xml:id="ne0274_head_025">Escena IV</head>
 					<p><stage>Comedor en casa de <seg rend="normal">OROZCO</seg>.</stage></p>
 					<p><stage><seg rend="normal">AUGUSTA</seg>, <seg rend="normal">OROZCO</seg>, <seg rend="normal">INFANTE</seg>, <seg rend="normal">MALIBRÁN</seg> y <seg rend="normal">VILLALONGA</seg>, sentados a la mesa, almorzando.</stage></p>
 					<sp>
@@ -3864,7 +3917,7 @@
 					</sp>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0274_chap23">
-					<head>Escena V</head>
+					<head xml:id="ne0274_head_026">Escena V</head>
 					<p><stage>Los mismos, menos <seg rend="normal">OROZCO</seg>.</stage></p>
 					<sp>
 						<speaker>AUGUSTA.- </speaker>
@@ -3996,7 +4049,7 @@
 					</sp>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0274_chap24">
-					<head>Escena VI</head>
+					<head xml:id="ne0274_head_027">Escena VI</head>
 					<p><stage>Los mismos, <seg rend="normal">OROZCO</seg>.</stage></p>
 					<sp>
 						<speaker>OROZCO.- </speaker>
@@ -4188,7 +4241,7 @@
 					</sp>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0274_chap25">
-					<head>Escena VII</head>
+					<head xml:id="ne0274_head_028">Escena VII</head>
 					<p><stage>Despacho en casa de <seg rend="normal">OROZCO</seg>.</stage></p>
 					<p><stage><seg rend="normal">OROZCO</seg>, <seg rend="normal">JOAQUÍN VIERA</seg>.</stage></p>
 					<sp>
@@ -4449,7 +4502,7 @@
 					</sp>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0274_chap26">
-					<head>Escena VIII</head>
+					<head xml:id="ne0274_head_029">Escena VIII</head>
 					<p><stage>Los mismos, <seg rend="normal">AUGUSTA</seg>, que entreabre cautelosamente la puerta del foro y permanece indecisa escuchando, sin atreverse a entrar.</stage></p>
 					<sp>
 						<speaker>AUGUSTA.- </speaker>
@@ -4605,7 +4658,7 @@
 					</sp>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0274_chap27">
-					<head>Escena IX</head>
+					<head xml:id="ne0274_head_030">Escena IX</head>
 					<p><stage><seg rend="normal">AUGUSTA</seg>, <seg rend="normal">OROZCO</seg>.</stage></p>
 					<sp>
 						<speaker>OROZCO.- </speaker>
@@ -4907,9 +4960,9 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Jornada IV</head>
+				<head xml:id="ne0274_head_031">Jornada IV</head>
 				<div n="28" type="chapter" xml:id="ne0274_chap28">
-					<head>Escena I</head>
+					<head xml:id="ne0274_head_032">Escena I</head>
 					<p><stage>Vestíbulo del teatro Real.</stage></p>
 					<sp>
 						<speaker>MALIBRÁN.- </speaker>
@@ -4917,7 +4970,7 @@
 					</sp>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0274_chap29">
-					<head>Escena II</head>
+					<head xml:id="ne0274_head_033">Escena II</head>
 					<p><stage>El mismo; <seg rend="normal">CISNEROS</seg>, <seg rend="normal">VILLALONGA</seg>.</stage></p>
 					<sp>
 						<speaker>CISNEROS.- </speaker>
@@ -5022,7 +5075,7 @@
 					<p><stage>Entran de la calle <seg rend="normal">OROZCO</seg> y <seg rend="normal">AUGUSTA</seg>.</stage></p>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0274_chap30">
-					<head>Escena III</head>
+					<head xml:id="ne0274_head_034">Escena III</head>
 					<p><stage>Los mismos; <seg rend="normal">OROZCO</seg>, <seg rend="normal">AUGUSTA</seg>.</stage></p>
 					<sp>
 						<speaker>CISNEROS.- </speaker>
@@ -5100,7 +5153,7 @@
 					<p><stage><seg rend="normal">AUGUSTA</seg> y <seg rend="normal">MALIBRÁN</seg> entran en el palco. <seg rend="normal">VILLALONGA</seg>, <seg rend="normal">OROZCO</seg> y <seg rend="normal">CISNEROS</seg> se detienen en el pasillo, donde aparece el <seg rend="normal">CONDE DE MONTE CÁRMENES</seg>.</stage></p>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0274_chap31">
-					<head>Escena IV</head>
+					<head xml:id="ne0274_head_035">Escena IV</head>
 					<p><stage><seg rend="normal">OROZCO</seg>, <seg rend="normal">CISNEROS</seg>, <seg rend="normal">VILLALONGA</seg>, <seg rend="normal">MONTE CÁRMENES</seg>.</stage></p>
 					<sp>
 						<speaker>MONTE CÁRMENES.- </speaker>
@@ -5168,7 +5221,7 @@
 					</sp>
 				</div>
 				<div n="32" type="chapter" xml:id="ne0274_chap32">
-					<head>Escena V</head>
+					<head xml:id="ne0274_head_036">Escena V</head>
 					<p><stage>Interior del palco de <seg rend="normal">OROZCO</seg>.</stage></p>
 					<p><stage><seg rend="normal">AUGUSTA</seg> en el antepecho, <seg rend="normal">MALIBRÁN</seg> detrás. En el antepalco, la <seg rend="normal">SEÑORA DE TRUJILLO</seg> leyendo La Correspondencia.</stage></p>
 					<sp>
@@ -5307,7 +5360,7 @@
 					</sp>
 				</div>
 				<div n="33" type="chapter" xml:id="ne0274_chap33">
-					<head>Escena VI</head>
+					<head xml:id="ne0274_head_037">Escena VI</head>
 					<p><stage><seg rend="normal">AUGUSTA</seg>, en el antepalco, <seg rend="normal">FEDERICO</seg>.</stage></p>
 					<sp>
 						<speaker>AUGUSTA.- </speaker>
@@ -5411,7 +5464,7 @@
 					</sp>
 				</div>
 				<div n="34" type="chapter" xml:id="ne0274_chap34">
-					<head>Escena VII</head>
+					<head xml:id="ne0274_head_038">Escena VII</head>
 					<p><stage>Gabinete en casa de <seg rend="normal">LA PERI</seg>. Es de día.</stage></p>
 					<p><stage><seg rend="normal">FEDERICO</seg>, <seg rend="normal">LEONOR</seg>.</stage></p>
 					<sp>
@@ -5808,7 +5861,7 @@
 					</sp>
 				</div>
 				<div n="35" type="chapter" xml:id="ne0274_chap35">
-					<head>Escena VIII</head>
+					<head xml:id="ne0274_head_039">Escena VIII</head>
 					<p><stage>Sala en casa de <seg rend="normal">LA VIUDA DE CALVO</seg>.</stage></p>
 					<p><stage><seg rend="normal">LA VIUDA DE CALVO</seg>, señora de edad avanzadísima, pero bien conservada, vestida de negro, con espejuelos, gorro a la francesa. Sale por la derecha apoyándose en un bastón; <seg rend="normal">CLOTILDE</seg>, que está junto al balcón de la izquierda, mirando a la calle.</stage></p>
 					<sp>
@@ -5865,7 +5918,7 @@
 					</sp>
 				</div>
 				<div n="36" type="chapter" xml:id="ne0274_chap36">
-					<head>Escena IX</head>
+					<head xml:id="ne0274_head_040">Escena IX</head>
 					<p><stage>Las mismas; <seg rend="normal">FEDERICO</seg>.</stage></p>
 					<sp>
 						<speaker>VIUDA DE CALVO.- </speaker>
@@ -6005,7 +6058,7 @@
 					</sp>
 				</div>
 				<div n="37" type="chapter" xml:id="ne0274_chap37">
-					<head>Escena X</head>
+					<head xml:id="ne0274_head_041">Escena X</head>
 					<p><stage>Los mismos; <seg rend="normal">OROZCO</seg>, <seg rend="normal">SANTANITA</seg>, que salen por la derecha.</stage></p>
 					<sp>
 						<speaker>OROZCO.- </speaker>
@@ -6181,7 +6234,7 @@
 					</sp>
 				</div>
 				<div n="38" type="chapter" xml:id="ne0274_chap38">
-					<head>Escena XI</head>
+					<head xml:id="ne0274_head_042">Escena XI</head>
 					<p><stage>Calle.</stage></p>
 					<p><stage><seg rend="normal">OROZCO</seg>, <seg rend="normal">FEDERICO</seg>.</stage></p>
 					<sp>
@@ -6350,7 +6403,7 @@
 					</sp>
 				</div>
 				<div n="39" type="chapter" xml:id="ne0274_chap39">
-					<head>Escena XII</head>
+					<head xml:id="ne0274_head_043">Escena XII</head>
 					<p><stage><seg rend="normal">FEDERICO</seg>, solo, vagando por las calles, en estado de vivísima agitación.</stage></p>
 					<sp>
 						<speaker> </speaker>
@@ -6358,7 +6411,7 @@
 					</sp>
 				</div>
 				<div n="40" type="chapter" xml:id="ne0274_chap40">
-					<head>Escena XIII</head>
+					<head xml:id="ne0274_head_044">Escena XIII</head>
 					<p><stage>Salones en casa de San Salomó.</stage></p>
 					<p><stage><seg rend="normal">FEDERICO</seg>, después <seg rend="normal">LA SOMBRA DE OROZCO</seg>.</stage></p>
 					<sp>
@@ -6520,7 +6573,7 @@
 					</sp>
 				</div>
 				<div n="41" type="chapter" xml:id="ne0274_chap41">
-					<head>Escena XIV</head>
+					<head xml:id="ne0274_head_045">Escena XIV</head>
 					<p><stage>Calle.</stage></p>
 					<sp>
 						<speaker>FEDERICO.- </speaker>
@@ -6528,7 +6581,7 @@
 					</sp>
 				</div>
 				<div n="42" type="chapter" xml:id="ne0274_chap42">
-					<head>Escena XV</head>
+					<head xml:id="ne0274_head_046">Escena XV</head>
 					<p><stage>Teatro.</stage></p>
 					<p><stage><seg rend="normal">FEDERICO</seg>, <seg rend="normal">OROZCO</seg>, que se le presenta de improviso al dar los primeros pasos en el patio. Un poco más lejos, el <seg rend="normal">MARQUÉS DE CÍCERO</seg> y el <seg rend="normal">CONDE DE MONTE CÁRMENES</seg>.</stage></p>
 					<sp>
@@ -6625,7 +6678,7 @@
 					</sp>
 				</div>
 				<div n="43" type="chapter" xml:id="ne0274_chap43">
-					<head>Escena XVI</head>
+					<head xml:id="ne0274_head_047">Escena XVI</head>
 					<p><stage>Gabinete en casa de <seg rend="normal">FEDERICO</seg>. Es de noche.</stage></p>
 					<p><stage><seg rend="normal">FEDERICO</seg>, <seg rend="normal">BÁRBARA</seg>; después <seg rend="normal">LA SOMBRA DE OROZCO</seg>.</stage></p>
 					<sp>
@@ -6849,9 +6902,9 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Jornada V</head>
+				<head xml:id="ne0274_head_048">Jornada V</head>
 				<div n="44" type="chapter" xml:id="ne0274_chap44">
-					<head>Escena I</head>
+					<head xml:id="ne0274_head_049">Escena I</head>
 					<p><stage>La misma decoración de la escena VIII de la Segunda Jornada. En el gabinete de la izquierda, mesa puesta con dos cubiertos. Anochece. Luz artificial.</stage></p>
 					<p><stage><seg rend="normal">FEDERICO</seg>, que entra cabizbajo y sombrío; <seg rend="normal">FELIPA</seg>, tras él, esperando órdenes.</stage></p>
 					<sp>
@@ -6904,7 +6957,7 @@
 					</sp>
 				</div>
 				<div n="45" type="chapter" xml:id="ne0274_chap45">
-					<head>Escena II</head>
+					<head xml:id="ne0274_head_050">Escena II</head>
 					<p><stage><seg rend="normal">FEDERICO</seg>. <seg rend="normal">AUGUSTA</seg>.</stage></p>
 					<sp>
 						<speaker>AUGUSTA.- </speaker>
@@ -7413,7 +7466,7 @@
 					</sp>
 				</div>
 				<div n="46" type="chapter" xml:id="ne0274_chap46">
-					<head>Escena III</head>
+					<head xml:id="ne0274_head_051">Escena III</head>
 					<p><stage>Los mismos; <seg rend="normal">LA SOMBRA DE OROZCO</seg>, que entra por la puerta de la derecha, y se sienta a la mesa frente a <seg rend="normal">FEDERICO</seg>. Viste traje de cazador con capote de monte. <seg rend="normal">AUGUSTA</seg> no le ve.</stage></p>
 					<sp>
 						<speaker>FEDERICO.- </speaker>
@@ -7533,7 +7586,7 @@
 					</sp>
 				</div>
 				<div n="47" type="chapter" xml:id="ne0274_chap47">
-					<head>Escena IV</head>
+					<head xml:id="ne0274_head_052">Escena IV</head>
 					<p><stage><seg rend="normal">FEDERICO</seg>, <seg rend="normal">AUGUSTA</seg>.</stage></p>
 					<sp>
 						<speaker>FEDERICO.- </speaker>
@@ -7573,7 +7626,7 @@
 					</sp>
 				</div>
 				<div n="48" type="chapter" xml:id="ne0274_chap48">
-					<head>Escena V</head>
+					<head xml:id="ne0274_head_053">Escena V</head>
 					<p><stage>Los mismos, <seg rend="normal">FELIPA</seg>.</stage></p>
 					<sp>
 						<speaker>AUGUSTA.- </speaker>
@@ -7637,7 +7690,7 @@
 					</sp>
 				</div>
 				<div n="49" type="chapter" xml:id="ne0274_chap49">
-					<head>Escena VI</head>
+					<head xml:id="ne0274_head_054">Escena VI</head>
 					<p><stage>Calle obscura. Casas a la derecha: a la izquierda; vallas de madera y solares abiertos; en el fondo un declive del terreno.</stage></p>
 					<sp>
 						<speaker>AUGUSTA.- </speaker>
@@ -7693,7 +7746,7 @@
 					</sp>
 				</div>
 				<div n="50" type="chapter" xml:id="ne0274_chap50">
-					<head>Escena VII</head>
+					<head xml:id="ne0274_head_055">Escena VII</head>
 					<p><stage>Salones en casa de <seg rend="normal">OROZCO</seg>. La misma decoración de la primera jornada. Es de noche.</stage></p>
 					<p><stage><seg rend="normal">MALIBRÁN</seg>, <seg rend="normal">VILLALONGA</seg>, en la sala de la derecha.</stage></p>
 					<sp>
@@ -7798,7 +7851,7 @@
 					</sp>
 				</div>
 				<div n="51" type="chapter" xml:id="ne0274_chap51">
-					<head>Escena VIII</head>
+					<head xml:id="ne0274_head_056">Escena VIII</head>
 					<p><stage>Los mismos; <seg rend="normal">OROZCO</seg>, <seg rend="normal">CALDERÓN</seg>, que salen del billar. Al propio tiempo, van entrando en el salón del centro los amigos de la casa que se indicarán después.</stage></p>
 					<sp>
 						<speaker>OROZCO.- </speaker>
@@ -7854,7 +7907,7 @@
 					</sp>
 				</div>
 				<div n="52" type="chapter" xml:id="ne0274_chap52">
-					<head>Escena IX</head>
+					<head xml:id="ne0274_head_057">Escena IX</head>
 					<p><stage>Los mismos; <seg rend="normal">CISNEROS</seg>, que aparece en la sala japonesa, viniendo del interior de la casa.</stage></p>
 					<sp>
 						<speaker>CISNEROS.- </speaker>
@@ -7966,7 +8019,7 @@
 					</sp>
 				</div>
 				<div n="53" type="chapter" xml:id="ne0274_chap53">
-					<head>Escena X</head>
+					<head xml:id="ne0274_head_058">Escena X</head>
 					<p><stage>Tocador de <seg rend="normal">AUGUSTA</seg>. Es de noche.</stage></p>
 					<p><stage><seg rend="normal">AUGUSTA</seg>, doliente, recostada en un sofá; <seg rend="normal">FELIPA</seg>, en pie, delante de ella.</stage></p>
 					<sp>
@@ -8123,7 +8176,7 @@
 					</sp>
 				</div>
 				<div n="54" type="chapter" xml:id="ne0274_chap54">
-					<head>Escena XI</head>
+					<head xml:id="ne0274_head_059">Escena XI</head>
 					<p><stage>Las mismas; <seg rend="normal">OROZCO</seg>.</stage></p>
 					<sp>
 						<speaker>OROZCO.- </speaker>
@@ -8199,7 +8252,7 @@
 					</sp>
 				</div>
 				<div n="55" type="chapter" xml:id="ne0274_chap55">
-					<head>Escena XII</head>
+					<head xml:id="ne0274_head_060">Escena XII</head>
 					<p><stage>Despacho de <seg rend="normal">OROZCO</seg>.</stage></p>
 					<p><stage><seg rend="normal">AUGUSTA</seg>, envuelta en su cachemira, se acomoda en una butaca, junto a la chimenea muy cargada de lumbre; <seg rend="normal">OROZCO</seg>, junto a la mesa, en la cual hay una lámpara encendida.</stage></p>
 					<sp>
@@ -8564,7 +8617,7 @@
 					</sp>
 				</div>
 				<div n="56" type="chapter" xml:id="ne0274_chap56">
-					<head>Escena XIII</head>
+					<head xml:id="ne0274_head_061">Escena XIII</head>
 					<p><stage><seg rend="normal">OROZCO</seg>, solo.</stage></p>
 					<sp>
 						<speaker> </speaker>
@@ -8635,7 +8688,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN DE LA NOVELA</head>
+				<head xml:id="ne0274_head_062">FIN DE LA NOVELA</head>
 				<p>Madrid, Julio de 1889.</p>
 			</div>
 		</back>

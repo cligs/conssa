@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Dulce y sabrosa</title>
-				<title type="sub"></title>
+				
 				<title type="short">DulceSabrosa</title>
-				<title type="idno">
-					<idno type="bne">XX2132272</idno>
-					<idno type="viaf">309261290</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028454</idno>
-					<idno type="viaf">35252653</idno>
-					<name type="short">Picon</name>
-					<name type="full">Jacinto Octavio Picón</name>
+					<name type="short" ref="#Picon"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2151</measure>
@@ -141,22 +131,60 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0155</idno>
+						<idno type="cligs">ne0155</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2003">2003</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/dulce-y-sabrosa--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcz8966"/>.</bibl>
-				<bibl type="print-source">Obras completas, 3 ª ed., Madrid ; Buenos Aires : Renacimiento, <date when="1915">1915</date></bibl>
-				<bibl type="edition-first"><date when="1891">1891</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Dulce y sabrosa</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2132272.html">XX2132272</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309261290/">309261290</idno>
+				</idno>
+				</title>
+					<author xml:id="Picon">
+						<name type="full"><forename>Jacinto Octavio</forename> <surname>Picón</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 9768">IP 9768</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118792083">118792083</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q432511/">Q432511</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028454.html">XX1028454</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/35252653/">35252653</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2003">2003</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/dulce-y-sabrosa--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcz8966"/>.</bibl>
+					<bibl type="print-source">Obras completas, 3 ª ed., <pubPlace>Madrid</pubPlace> ; <pubPlace>Buenos Aires</pubPlace> : Renacimiento, <date when="1915">1915</date></bibl>
+					<bibl type="edition-first"><date when="1891">1891</date><idno source="k10plus" type="ppn" n="521314909" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521314909"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce y sabrosa</title> <date when="1891">1891</date>, <publisher>La España Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="521314909" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521314909"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce y sabrosa</title> <date when="1915">1915</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid [u.a.]</pubPlace> 		<idno type="ppn" n="467779481" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467779481"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce y sabrosa</title> <date when="1921">1921</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="467780641" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467780641"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce y sabrosa</title> <date when="1927">1927</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid [u.a.]</pubPlace> 		<idno type="ppn" n="584968558" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584968558"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce y sabrosa</title> <date when="1976">1976</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1608347265" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1608347265"/> 		<idno type="isbn" n="8437600863"/></bibl>
+						<bibl type="further-edition"><title type="main">Dulce y sabrosa</title> <date when="1982">1982</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="440277736" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=440277736"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce y sabrosa</title> <date when="1982">1982</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="043481426" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043481426"/> 		<idno type="isbn" n="8437600863"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Dulce y sabrosa</title> <date when="1990">1990</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="225123622" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=225123622"/> 		<idno type="isbn" n="8437600863"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="wikipedia">
 				<p>Nuestro personaje es una variante burguesa del tópico don Juan [...]. En ejercicio de sus funciones, seduce y abandona a la bella actriz Cristeta Moruela, una muchacha de origen humilde. Tras la presentación de don Juan en el primer capítulo, el encuentro casual con su antigua amante en el Retiro dará pie para que el protagonista evoque el idilio vivido tres o cuatro años antes (caps. III-XIII). Se vuelve al punto de partida en el capítulo XIV y desde aquí hasta el final (cap. XXIII) presenciamos los recursos de que se sirve Cristeta para reconquistar a su enamorado. Contribuye no poco al éxito de la empresa el hecho de que Todellas crea, erróneamente, que es "fruta del cercado ajeno", gracias a un equívoco. A la postre triunfa el amor verdadero, el afecto, no el capricho sensual, y los dos amantes deciden unir sus vidas pero sin sujetarse a las cadenas del matrimonio, fórmula que Cristeta presume poco adecuada para su galán</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +197,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">naturalista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -187,7 +215,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">erotic</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela erótica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -195,7 +223,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE7">1.5</term>
 					<term type="text.movement">modernista</term>
-					<term type="text.narration.narrator" >heterodiegetic</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">positive</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
@@ -221,13 +249,14 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-08-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 
 			<div>
-				<head>Advertencia para esta edición</head>
+				<head xml:id="ne0155_head_000">Advertencia para esta edición</head>
 				<p>Si creyera que el publicar un escritor sus obras completas implica falta de modestia, no reimprimiría las mías. Lo hago porque están casi todas agotadas; pensando que es deber de padre no consentir que mueran sus hijos, aunque no sean tan buenos ni tan hermosos como él quiso engendrarlos; y también porque considero que el hombre tiene derecho a despedirse de la juventud recordando lo que durante ella hizo honradamente y con amor.</p>
 				<p>Otra disculpa pienso que atenúa mi atrevimiento. Porque ser partidario del arte por el arte, y yo lo soy muy convencido, no puede amenguar ni estorbar, aun cultivando esta que se llama amena literatura, el entusiasmo por ideas de distinta índole; las cuales unas veces veladamente se transparentan y otras ostensiblemente se muestran en la labor de cada uno; pues no es posible, y menos en nuestra época, que el literato y el artista sientan y piensen ajenos al ambiente que respiran. Quien carece de fuerzas para conquistar la costosa gloria de adelantarse a su tiempo, tenga la persistente virtud de servirle: así lo he pretendido; mas él ha caminado tan deprisa, que hoy acaso parezcamos tímidos los que ayer fuimos osados. De éstos quise ser: de los que al estudiar lo pasado y observar lo presente procuran preparar lo porvenir y se esperanzan con ello. Por eso rindo tributo de constancia y firmeza a las ideas de mi juventud, algunas hoy tan combatidas, reuniendo estos pobres libros, sin que me arredre el recuerdo de cómo unos fueron censurados, ni espere que retoñe la benevolencia con que otros fueron alabados. Discurro al igual de aquel gran prosista que decía: «No es temor, como no es vanidad».</p>
 				<p>Bien quisiera, lector, que pensáramos a dúo y que mi conciencia hallase siempre eco en la tuya: si por torpe desespero de lograrlo, por sincero creo merecerlo.</p>
@@ -241,7 +270,7 @@
 				<p>Madrid, 1891.</p>
 			</div>
 			<div>
-				<head>A quien leyere</head>
+				<head xml:id="ne0155_head_001">A quien leyere</head>
 				<p>Figúrate, lector, que vuelves a tu casa mohíno y aburrido, lacio el cuerpo, acibarado el ánimo por la desengañada labor del día. Cae la tarde; el amigo a quien esperas, no viene; la mujer querida está lejos, y aún no te llaman para comer. Luego el tiempo cierra en lluvia; y tú, apoyada la frente en la vidriera del balcón, te aburres viendo la inmensa comba de agua que se desprende de las nubes. Llegada la noche, el viento gime dolorosamente formando eco, y acaso despertando las tristezas de tu alma... No quieres dormir ni tienes sueño, y recelas que al reclinar la cabeza en la almohada se pueble tu pensamiento de recuerdos amargos y esperanzas frustradas. ¿A quién le faltan en la vida días negros, estériles para el trabajo, en que la soledad trae de la mano a la melancolía?</p>
 				<p>Contra ellos está escrito este libro, que, entre desconfiado y medroso, dejo pasar de mis manos a las tuyas. Recíbelo, no como novela que mueve a pensar, sino como juguete novelesco, contraveneno del tedio y engañifa de las horas.</p>
 				<p>JACINTO OCTAVIO PICÓN.</p>
@@ -250,7 +279,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0155_chap1">
-				<head>Capítulo I : Donde se traza el retrato de don Juan y se habla de otro personaje que, sin ser de los principales, influye mucho en el curso de este verídico relato </head>
+				<head xml:id="ne0155_head_002">Capítulo I : Donde se traza el retrato de don Juan y se habla de otro personaje que, sin ser de los principales, influye mucho en el curso de este verídico relato </head>
 				<p>Dijo uno de los siete sabios de Grecia, y sin ser sabio ni griego pudo afirmarlo cualquier simple mortal, que todo hombre es algo maníaco, y que la índole de su manía y la fuerza con que es dominado por ella, determinan o modifican cuanto en la vida le sucede.</p>
 				<p>Admitiendo esto como cierto, fácilmente puede ser comprendida y apreciada la personalidad de don Juan de Todellas, caballero madrileño y contemporáneo nuestro, cuya manía consiste en cortejar y seducir el mayor número posible de mujeres, con una circunstancia característica: y es, que así como hay quien se deleita y entusiasma con las ciencias, no en razón de las verdades que demuestran, sino en proporción del esfuerzo que ha menester su estudio, así don Juan, más que en poseer y gozar beldades, se complace en atraerlas y rendirlas; por donde, luego de lograda la victoria, viene a pecar de olvidadizo y despegado, entrándosele al alma el hastío en el punto mismo de la posesión.</p>
 				<p>En cuanto al origen de su apellido no cabe duda de que Todellas es corruptela y, contracción de <seg rend="italic">Todas-Ellas</seg>, alias o apodo que debió de usar alguno de sus ascendientes, y que, andando el tiempo, se ha convertido en nombre patronímico. De casta le viene al galgo ser rabilargo, y a don Juan ser enamoradizo.</p>
@@ -278,7 +307,7 @@
 				<p>Pero puede afirmarse que extrema la filantropía en lo que a la mujer se refiere, hasta la exageración, y aun sostiene que con ser tan sublime y adorable virtud la caridad, le lleva ventaja el amor; porque la caridad alegra un solo corazón, y el amor regocija dos almas y dos cuerpos.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0155_chap2">
-				<head>Capítulo II : En que, para satisfacción del lector, aparece una mujer bonita </head>
+				<head xml:id="ne0155_head_003">Capítulo II : En que, para satisfacción del lector, aparece una mujer bonita </head>
 				<p>Estaba don Juan hacía pocos días de regreso en Madrid, tras una ausencia de dos años y medio, semana más o menos, cuando una tarde, después de almorzar como debe hacerlo quien vive en servicio del amor, no pudo resistir a la tentación de abrir el balcón de su despacho y asomarse a dar, apoyado en la barandilla, las primeras chupadas a un buen veguero. Dos ideas ocupaban su imaginación: la primera mandar que buscasen y avisasen a la célebre Mónica para que estuviese dispuesta a volver a su servicio si la cocinera provisional no cumplía bien su sagrada obligación; y la segunda, no permanecer ocioso en materia de amores, para evitar lo cual, entre cada dos bocanadas de humo, dirigía unas cuantas miradas a la casa de enfrente, donde vivía una viuda de peregrina belleza, pero de tan fresca y reciente viudez, que don Juan no juzgaba cuerdo empezar todavía su conquista. A pesar de ello, miró discretamente varias veces hacia los visillos medio levantados, tras cuya muselina se dibujaba la figura de la viuda, entretenida en hacer labor. Acaso aquellas miradas fuesen estériles, mas también podían dar resultado; porque hay galanterías, homenajes y aun simples demostraciones de agrado, que son como letras de cambio a muchos días vista.</p>
 				<p>Luego se vistió don Juan con su habitual elegancia, tomó de sobre una mesa el sombrero, los guantes de piel de perro avellanados, con pespuntes rojos, el bastón con puño de plata labrada, y se echó a la calle deseoso de pasear, andando a la ventura y a lo que saliere, porque a la sazón no tenía mujer determinada que le ocupase el ánimo.</p>
 				<p>Al cabo de media hora llegó a una de aquellas alamedas del Retiro que empiezan junto a la <seg rend="italic">Casa de fieras</seg> y terminan en el estanque llamado <seg rend="italic">Baño de la elefanta</seg>.</p>
@@ -309,7 +338,7 @@
 				<p>Don Juan quedó profundamente dormido.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0155_chap3">
-				<head>Capítulo III : Donde el autor dice quién es la mujer bonita </head>
+				<head xml:id="ne0155_head_004">Capítulo III : Donde el autor dice quién es la mujer bonita </head>
 				<p>El padre de Cristeta fue covachuelista a la antigua, con poco sueldo, menos consideración, gorrito de pana y mangotes de percalina negra: la madre fue encajera de primorosas manos, que así componía, dejándolo nuevo, un entredós de Malinas, como restauraba un cuello de Alençon. Durante muchos años vivieron amantes y felices con el producto de su trabajo; pero llegó un día en que él quedó cesante, porque fue preciso emplear al sobrino del querido de la querida de un ministro, y a ella le faltó labor porque pasaron de moda los encajes. Entonces comenzaron a sufrir adversidades, escasez, pobreza, y hubieran llegado hasta verse miserables, si la muerte, que esta vez llegó a tiempo, no atajara sus desdichas. Ambos murieron con pocas semanas de diferencia, dejando en el mundo una niña de diez años, fruto de su amor, la cual tuvo por única herencia el despejo y la hermosura de su madre. Recogió a Cristeta una tía, casada, hermana de aquélla, que tenía estanco en uno de los sitios más céntricos de Madrid; y aunque las malas lenguas del barrio dijeron que el amparar a la huérfana fue arbitrar medio de tener persona de confianza que ayudase al despacho, es lo cierto que no sólo no sufrió malos tratos la niña, sino que hasta fue acogida con cariño y enviada a la maestra, donde aprendió a leer, escribir, contar, bordar y coser, pasando luego a encargarse del mostrador, hecha ya una mocita muy mona, y tan lista, que jamás se equivocaba en dar las vueltas, ni recibía moneda falsa, ni trabucaba los sellos de las cartas. Sus tíos no la mataban a trabajar; antes al contrario, le concedían permiso para salir de paseo los domingos con sus amiguitas, y la tenían limpia y decentemente vestida; limpieza y decencia que, según Cristeta fue creciendo, comenzaron a convertirse en extraordinario aseo y primoroso gusto.</p>
 				<p>Mientras ella despachaba sellos y cigarros, su tía permanecía junto al mostrador, en invierno haciendo calceta con el gato en la falda y puestos los pies en la tarima del brasero; en verano dormitando o abanicándose, y en todo tiempo celosa de que ningún comprador sostuviera conversación larga o palique peligroso con la chica, que ya exigía aquella vigilancia, porque según se iba desarrollando, aumentaba el número de los que la echaban chicoleos y flores, no siempre de aroma muy puro. Así llegó a tener fama de bonita, sin que nadie pudiera jactarse de haber conseguido de ella una mirada cariñosa.</p>
 				<p>Era lista y comprendía perfectamente, de un lado, que no le convenía incurrir en el desagrado de sus tíos ni desacreditarse a fuerza de coqueteos; y de otro, que no podía encontrar con facilidad, entre los hombres que frecuentaban el estanco, quien honrosamente mejorase su suerte. No le gustaban los jornaleros, y con instinto superior a sus años, adivinaba que los señoritos eran peligrosos.</p>
@@ -352,7 +381,7 @@
 				<p>Cuando Cristeta quedó sola, tuvo que apoyarse en la anaquelería para no caerse. Acostóse sin cenar casi, ni hablar con nadie; permaneció largo rato sentada en la cama, tardó mucho en desnudarse, lloró sin saber por qué, se le olvidó rezar y, por fin, al deslizarse entre las sábanas sintiendo las frías caricias del lienzo, tornó a sus pasadas ilusiones, antojándosele que el ruido de los coches que pasaban por la calle era estrepitoso rumor de aplausos y que las voces de los vendedores de periódicos eran bravos frenéticos.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0155_chap4">
-				<head>Capítulo IV : En el cual queda demostrado que la virtud, como el agua, brota donde menos se espera </head>
+				<head xml:id="ne0155_head_005">Capítulo IV : En el cual queda demostrado que la virtud, como el agua, brota donde menos se espera </head>
 				<p>A las pocas semanas de lo narrado estaba Cristeta contratada como <seg rend="italic">otra tiple cómica</seg> en un teatrillo de tercer orden, cuyo empresario era el amigo del editor que la oyó cantar mientras se peinaba. Los tíos de Cristeta, engolosinados con la oferta de dos duros diarios, consintieron en el ajuste. Convínose en que al principio no representaría la niña sino papelitos cuya parte musical pudiese aprender al oído, y también en que, sin pérdida de tiempo, comenzase a tomar lecciones de canto. Ella se puso loca de contento y los estanqueros, imaginando que su sobrina tenía una mina en la garganta, transigieron en pagar maestro.</p>
 				<p>El teatro donde quedó Cristeta escriturada era de los que dividen por horas las funciones, y en él se representaban cuatro cada noche. A la primera apenas iba gente; a la segunda asistían familias de los barrios cercanos cansadas de jugar a la perejila, jovenzuelos sin permiso para retirarse tarde, matrimonios de larga fecha que iban a pasar el rato para no verse solos, y forasteros deseosos de olvidar los sofiones recibidos en los ministerios con la agradable perspectiva del <seg rend="italic">coro de señoras</seg>. Provinciano de éstos había capaz de renunciar a la esperada credencial con tal de poder contar en su pueblo que había sido dueño de cualquiera de aquellas infelices, condenadas a estar siempre haciendo muecas voluptuosas con la cara pintada y trenzados con las piernas presas en las desvergonzadas mallas. El público que frecuentaba la tercera y cuarta función se componía casi exclusivamente de hombres aficionados a comprar hecho el amor, y de pecadoras elegantes. A última hora se ponían las piezas y zarzuelitas más verdes, y cual si esto les sirviese de aperitivo, era de ver cómo a la salida muchos caballeros, o vestidos de tales, esperaban en la calle la salida de bailarinas, coristas y figurantas: por fin, cuando terminado el espectáculo comenzaba la puerta del escenario a vomitar mujeres envueltas en mantones y con toquillas de estambre a la cabeza, cada hombre se llevaba su prójima, que solía ser ajena; alguna, envidiada de las demás, subía en coche, y ya formadas las parejas, que a veces en realidad eran tercetos, todos se iban contentos; ellas haciéndose las conquistadas, y ellos imaginando triunfo lo que, a lo más, era compra.</p>
 				<p>A llevar y recoger a Cristeta iba el tío estanquero, no sin repugnancia y protestas de su cónyuge, la respetable y añosa doña Frasquita.</p>
@@ -392,7 +421,7 @@
 				<p>Por fin, cierta mañana circuló en el ensayo una noticia estupenda. Díjose que la noche anterior Cristeta no había salido del teatro acompañada sólo de su tío; que con ellos iba un caballero de treinta y tantos años, buen mozo y elegante; añadióse que Cristeta se apoyó en su brazo para llegar desde su cuarto a la calle, que luego siguieron juntos, ella bien arrebujada en su abrigo, él subido el cuello del gabán de pieles, y detrás, a dos pasos, como guardia de respeto, el tío estanquero. La fiera debía de estar domada y el domador se llamaba don Juan de Todellas.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0155_chap5">
-				<head>Capítulo V : Que puede dejar dudas sobre la compatibilidad del amor y la virtud </head>
+				<head xml:id="ne0155_head_006">Capítulo V : Que puede dejar dudas sobre la compatibilidad del amor y la virtud </head>
 				<p>Pocos días antes de nacer aquellas murmuraciones, paseaba don Juan por los pasillos del teatro con un amigo, que le decía así:</p>
 				<p>-No recuerdo dónde afirma Cervantes que los alcahuetes son gentes útiles a la república, y que debieran ser muy considerados. Bueno: pues escudado en tan autorizada opinión, no tengo inconveniente en presentarte a la <seg rend="italic">incorruptible</seg>.</p>
 				<p>-¡No sabes la impresión que me ha causado esa mujer! ¿Y tú crees que nadie ha...?</p>
@@ -474,7 +503,7 @@
 				<p>Quien presenciase el atrevimiento de él y la indulgencia de ella, acaso imaginara que ya habían trocado el amor platónico por el experimental: y sin embargo, Cristeta estaba tan limpia de pecado, como la madre Eva antes de verse obligada a estrenar el primer vestido de hojas de parra entretejidas.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0155_chap6">
-				<head>Capítulo VI : En el cual don Juan despliega su astucia, y don Quintín se hace la ilusión de que pueden volver «aquellos tiempos» </head>
+				<head xml:id="ne0155_head_007">Capítulo VI : En el cual don Juan despliega su astucia, y don Quintín se hace la ilusión de que pueden volver «aquellos tiempos» </head>
 				<p>La noticia del viaje a provincias llenó al pronto de júbilo a don Juan, quedando luego su alegría algo mermada con la perspectiva de que Cristeta fuese bajo la guarda de don Quintín; así que resolvió evitar a todo trance dicha compañía, pero sin contar con la complicidad de aquélla.</p>
 				<p>Don Juan decidió poner en práctica uno de sus más profundos axiomas, que dice: «Conviene a veces, para lograr una mujer buena, utilizar los servicios de otra maleada». No se crea por esto que pensó en recurrir a ninguna corredora de alhajas, prendera a domicilio, o cualquiera otra congénere de la famosa vieja que perdió a Melibea: no buscó quien hiciese de demonio tentador, sino simplemente quien le despejase el camino.</p>
 				<p>Se propuso que don Quintín no saliese a provincias con Cristeta, y he aquí cómo lo consiguió.</p>
@@ -551,7 +580,7 @@
 				<ab> </ab>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0155_chap7">
-				<head>Capítulo VII : En el cual hay viaje, separación, monólogo y principio de algo más grave </head>
+				<head xml:id="ne0155_head_008">Capítulo VII : En el cual hay viaje, separación, monólogo y principio de algo más grave </head>
 				<p>No queriendo don Juan que su amada viajase en compañía de los demás cómicos ni en coche de segunda, como correspondía a su categoría artística, le proporcionó para sí y la doncella un reservado y fue a despedirla a la estación, donde cubrió el asiento que debía ocupar con un precioso ramillete de flores y una cestilla llena de exquisitas provisiones de boca.</p>
 				<p>Cristeta se presentó en el andén vestida con elegante sencillez. Ya no era la chiquilla que años antes salía muy de mañana con un pañuelo a la cabeza y un vestidillo de percal a comprar buñuelos para que sus tíos tomaran chocolate, ni recordaba en nada la humilde comiquilla de los primeros meses de contrata, en que iba a los ensayos con velo negro, como van al taller las oficialas de modista. Ahora parecía un figurín francés: llevaba un magnífico abrigo gris, largo y muy ajustado al talle; sombrero de anchas alas, adornado con lazos negros; en la mano un saquillo de piel de Rusia, y al subir al vagón mostró que, según su costumbre, iba primorosamente calzada. La doncella vestía con decencia, pero de modo que nadie pudiera dudar que fuese criada.</p>
 				<p>Ella sentada dentro del vagón, y él de pie en el estribo, Cristeta y don Juan estuvieron hablando un buen rato y sin testigos enojosos, porque doña Frasquita no permitió que su marido fuese a la estación para despedir a su sobrina.</p>
@@ -609,7 +638,7 @@
 				<p>Acostóse Cristeta, y al apagar la bujía vio que por el ojo de la cerradura entraba un hilo de luz, al cual parecían dejar paso mal intencionadamente las prendas colgadas de la percha. Entonces, pensando que aquel agujerito podría convertirse en observatorio peligroso para su honestidad, se levantó a oscuras y lo tapó a tientas con la punta de una toalla, murmurando al meterse segunda vez entre las sábanas: «¡Válgame Dios lo que es la vida! ¡Todo Madrid me ha visto medio desnuda en el teatro, y ahora tomo precauciones para que no me vea el único hombre a quien quiero...!»</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0155_chap8">
-				<head>Capítulo VIII : Lo que en éste sucede, mejor es para sentido que para escrito </head>
+				<head xml:id="ne0155_head_009">Capítulo VIII : Lo que en éste sucede, mejor es para sentido que para escrito </head>
 				<p>Durante cuatro noches se hablaron de balcón a balcón. A la quinta descargó sobre la ciudad una tempestad horrible, y hubieron de suspender el diálogo. Tan fragorosos eran los truenos, tan frecuentes los relámpagos, que ambos amantes juzgaron prudente retirarse cada cual a su cuarto, don Juan maldiciendo de Júpiter y de Eolo, y Cristeta, que ignoraba la Mitología, renegando de su mala estrella.</p>
 				<p>Era la una de la madrugada, y acababan de recogerse cerrando persianas y vidrieras, cuando Cristeta oyó golpecitos dados en la puerta por donde comunicaban las dos habitaciones.</p>
 				<p>Aproximóse al tabique, dio otros golpecitos, y acercando la boca al ojo de la cerradura preguntó:</p>
@@ -721,7 +750,7 @@
 				<p>Dijo Zenón que nunca desentrañará el hombre la esencia de las cosas; mas se le olvidó añadir que el sumo grado de lo imposible es descifrar lo que sueña la mujer.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0155_chap9">
-				<head>Capítulo IX : Busca don Quintín a una mujer y cae en las redes de otra </head>
+				<head xml:id="ne0155_head_010">Capítulo IX : Busca don Quintín a una mujer y cae en las redes de otra </head>
 				<p>Ni marido pobre de mujer acaudalada, ni yerno de suegra intolerante, ni protegido por rico vanidoso, se vieron nunca tan privados de libertad como el mísero don Quintín a partir de aquel día en que doña Frasquita se enteró del devaneo que su esposo traía entre manos; porque la aventura con Mariquita, que para él fue simple pecado de pensamiento, semejante a la delectación morosa que dicen los teólogos, a la vieja le pareció adulterio consumado. A fin de tenerle más sujeto, dispuso aquel <seg rend="italic">Tetrarca</seg> con faldas que la criada hiciese los pocos recados que en la casa se ofrecían; buscó y pagó persona que acudiese a los centros oficiales de donde había que recoger las sacas del tabaco y los pedidos del papel sellado; obligó a su esposo a encargarse de la venta desde que se abría hasta que se cerraba el estanco para que no tuviera momento libre, y, finalmente, decidió pasar el día sentada junto al mostrador, en continua vigilancia, con propósito de morder y arañar a quien se presentase trayendo carta o recado sospechoso. Tan horrible fue el cautiverio, que el infeliz llegó a no poner los pies en la calle sino los domingos y fiestas de guardar, a primera hora, cuando su esposa le llevaba a misa, sacándole a que tomase el aire, como las doncellas de servir sacan a los perritos falderos para que no empuerquen las alfombras.</p>
 				<p>Don Quintín pasó muy triste la primera quincena (desde que se había identificado con las cosas del teatro contaba por quincenas); luego, prescindiendo de atractivos inútiles, dejó de usar corbata y de teñirse los bigotes, y, por último, cayó en una melancolía tan dramática para él como risible para los que le rodeaban. Ratos había en que se quedaba embobado, despachando automáticamente lo que le pedían, hasta que la severa y desapacible voz de Frasquita venía a turbar sus arrobos con frases crueles.</p>
 				<p>-¿En qué piensas, burro? -solía decirle-; ¿te estás acordando de aquella sinvergüenza? ¡Cochino!</p>
@@ -806,7 +835,7 @@
 				<p>Y en lo más íntimo de su alma hizo acopio de rencor, y se juró que si la suerte, la casualidad o su propia astucia se le mostraban favorables, tomaría de don Juan espantosa venganza.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0155_chap10">
-				<head>Capítulo X : En que ocurre el más grave y deleitoso suceso de esta historia </head>
+				<head xml:id="ne0155_head_011">Capítulo X : En que ocurre el más grave y deleitoso suceso de esta historia </head>
 				<p>Don Juan resolvió triunfar de Cristeta, empleando medios extraordinarios.</p>
 				<p>Una de aquellas noches de los dúos forzosamente castos, con reservas mentales, abrió ella la puerta, pasó él, y sentados en el sofá lo más cerca que permitían el pudor y el respeto, comenzaron la cantata mil y tantos diciéndose esas eternas frases juntamente dulzonas, picarescas, inocentes, maliciosas, arteras, ingenuas, sinceras y mentidas, muchas veces estúpidas, pero siempre gratas, con que se entretienen y engañan los amantes mientras se prepara la catástrofe del drama a que la Providencia les tiene predestinados. Aquella noche la elocuencia de don Juan era maravillosa, y su ternura exquisita; a pesar de lo cual Cristeta tardó pocos minutos en notar que estaba caviloso. Traía fruncido el entrecejo y sus miradas denotaban mal disimulada preocupación.</p>
 				<p>-¿Qué tienes? -le preguntó cariñosamente.</p>
@@ -885,7 +914,7 @@
 				<p>A fuerza de ahondar en eso, don Juan se convenció de que Cristeta despertaba en él cierto interés, algo que no le hizo experimentar ninguna de cuantas había conocido hasta entonces. No obstante lo cual, sin pararse a desentrañar lo significativo del síntoma, quedaron en su ánimo resueltos el regalo y la fuga.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0155_chap11">
-				<head>Capítulo XI : A consecuencia del cual perderá don Juan la simpatía de las lectoras </head>
+				<head xml:id="ne0155_head_012">Capítulo XI : A consecuencia del cual perderá don Juan la simpatía de las lectoras </head>
 				<p>Durante varias noches observó Cristeta que su amante volvía a estar caviloso, y que sus impulsos amorosos sufrían intervalos en los cuales se quedaba ensimismado y triste. La verdad era que al pobre conquistador le costaba esfuerzo y pena fingir preocupación y mal humor: lo de tener que ponerse melancólico entre dos caricias, le iba pareciendo intolerable. Había momentos en que le daban ganas de echarlo todo a rodar, declarándose vencido y confesando que la casa Garcitola y su quiebra eran pura embustería. Al mismo tiempo, y esto sí que era grave, cuanto más dueño se hacía de Cristeta, más se asombraba de no sentir amagos de hastío: indudablemente el amor de aquella mujer era un bebedizo que en vez de calmar la sed, la producía y excitaba. Por lo cual don Juan suponiéndose puesto en ridículo ante sí mismo, se asustó y resolvió convencerse de que no había degenerado, y de que estaba en pleno uso de su libre albedrío. Entonces, rechazando como vergonzosa la posibilidad de haberse enamorado, sacrificó su gusto al pícaro amor propio, y determinó huir cuanto antes de Cristeta, en cuyos encantos comenzaba a vislumbrar, no una conquista semejante a sus anteriores hazañas, sino una red capaz de aprisionarle para siempre.</p>
 				<milestone unit="section"/>
 				<p>Eran las dos de la madrugada.</p>
@@ -991,7 +1020,7 @@
 				<p>«Haré lo que pueda.»</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0155_chap12">
-				<head>Capítulo XII : Siguen, Cristeta enamorada, don Quintín echándose a perder, y don Juan sin sospechar la que le espera </head>
+				<head xml:id="ne0155_head_013">Capítulo XII : Siguen, Cristeta enamorada, don Quintín echándose a perder, y don Juan sin sospechar la que le espera </head>
 				<p>Cuando, pasados algunos días, se convenció Cristeta de que don Juan no se acordaba de ella para escribirle cuatro líneas, su tristeza rayó en melancolía. Lo primero que se le ocurrió fue romper la contrata, volver a Madrid, renunciar al teatro y resignarse a vivir en el estanco con sus tíos. Lo que no se le pasó por el magín fue buscar ni desear heredero al amante fugitivo y perdido; porque, no cabía duda, don Juan se había escapado como chico que pone pies en polvorosa después de robar la golosina largo tiempo deseada. Unos ratos esta idea hacía presa en su pensamiento, otros momentos se esperanzaba con la posibilidad de reconquistarle. Por fin, comprendió que no era cuerdo aquello de romper la escritura. ¿Con qué pretexto? ¿Qué haría si la empresa, auxiliada por el gobernador, se obstinase en obligarla a trabajar? Era forzoso seguir en el teatro.</p>
 				<p>Estaba una noche sentada en su cuarto, después de concluida la última obra en que cantaba, cuando entró a saludarla uno de sus más entusiastas galanteadores, hijo de una rica familia comercial de Santurroriaga.</p>
 				<p>-Me alegro de que venga usted -dijo ella- porque tengo que pedirle un favor.</p>
@@ -1063,7 +1092,7 @@
 				<p>Recordaba él de tarde en tarde, sin querer; ella no dejó un solo día de esperarle.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0155_chap13">
-				<head>Capítulo XIII : Hacen alianza el amor, que es niño, y la travesura, que es mujer </head>
+				<head xml:id="ne0155_head_014">Capítulo XIII : Hacen alianza el amor, que es niño, y la travesura, que es mujer </head>
 				<p>En el estanco hubo notables alteraciones originadas de aquella alborotada pasión que se apoderó del viejo; pues lo que le hubiera ocurrido con Mariquilla, si don Juan no lo estorbara, le sucedió con Carola. Comenzó yendo a verla una vez por semana, como periódico de modas o entrega de novelón patibulario; luego cada tres días, cual si su amor fuese terciana, y acabó visitándola casi diariamente; no siendo lo lastimoso que menudeara las visitas, sino que entre el desasosiego que las precedía y lo desmazalado y lacio que solían dejarle, ni fuerza le quedaba en la lengua para humedecer un sello. A consecuencia de las cenas, y particularmente de los postres, el infeliz no tenía cabeza para nada.</p>
 				<p>Doña Franquista, creyendo que su mal humor era rabia por habérsele frustrado la aventura que ella evitó, le oía refunfuñar y maldecir sin hacerle pizca de caso, hasta que irritado con aquella ofensiva indiferencia y envalentonado por su senil amor, llegó a convertirse en tiranuelo del hogar donde dos años antes tenía idéntica autoridad que el gato. En vano pretendió su mujer recobrar el perdido ascendiente: Quintín estaba desconocido: tan pronto se enfurecía por un quítame allá esas pajas, como respondía a las lágrimas con desdeñoso encogimiento de hombros, acabando por quedarse impasible, a modo de ídolo chino de los que se contemplan el ombligo, con lo cual ella llegaba al paroxismo de la cólera.</p>
 				<p>Por contera, se hizo rumboso, y no para su casa. No podía regalar a su Circe piedras preciosas ni brocados; pero en la medida de sus posibles, le compraba los diamantes americanos por libras, y las telas de lanilla por kilómetros. En metálico le fue llevando primero poco a poco, y en seguida mucho a mucho, cuanto tenía ahorrado desde que vendió la primera tagarnina de a tres cuartos, y luego dio en la flor de sangrar el cajón de la venta diaria, dejándolo algunas veces sin cambio de dos pesetas. Si no trasladó al sotabanco de Carola cuanto había en la trastienda, fue por considerarlo indigno de tan gran señora; pero la única prenda lujosa que tenía Frasquita, un soberbio pañolón de Manila poblado de chinos y guacamayos multicolores, pasó del cofre marital al baúl del adulterio. Afortunadamente, la ultrajada esposa tardó mucho en saberlo.</p>
@@ -1205,7 +1234,7 @@
 				<ab> </ab>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0155_chap14">
-				<head>Capítulo XIV : Del cual se colige la vulgarísima verdad de que el hombre es un animalucho que desprecia lo que posee y torna a desearlo cuando le parece ajeno </head>
+				<head xml:id="ne0155_head_015">Capítulo XIV : Del cual se colige la vulgarísima verdad de que el hombre es un animalucho que desprecia lo que posee y torna a desearlo cuando le parece ajeno </head>
 				<p>Dos años y algunos meses pasaron desde que don Juan abandonó a Cristeta en Santurroriaga hasta que volvió a Madrid.</p>
 				<p>Al encontrarse con su víctima en las alamedas del Retiro, se quedó asombrado. Pasó casi toda la noche pensando en ella, y lo poco que durmió, contemplándola en sueños. Puesta su memoria en constante trabajo, recordó cuanto a la pobre muchacha se refería: la primera vez que hablaron, su diplomacia en cortejarla, los diálogos en el cuartito del teatro, interrumpidos bruscamente por las entradas del segundo apunte... ¡Qué guapa estaba con aquellos trajes! Creía verla de paje, de chula, de princesa, de gitana, y a veces medio desnuda, envuelta en un amplio manto rojo, destacando sobre un fondo de plantas tropicales y aureolada por los resplandores de la luz eléctrica. Al caer el telón (le parecía que fue ayer), abandonado el palco, bajaba las escalerillas de estampía... Después, Santurroriaga, la fonda... ¡y el Paraíso!</p>
 				<p>A la madrugada despertó intranquilo. Sin poder ni querer sofocar los impulsos de la imaginación, siguió complaciéndose en recordar lo que sintió por Cristeta, semejante al niño que, tras haber destrozado un juguete, se obstina, desvive y rabia por recomponerlo y restaurarlo. Después hizo mil conjeturas, fundadas en la diferencia que existía entre la Cristeta que le perteneció y la que acababa de ver en el Retiro. ¡Cuánto mejor le sentaban las galas de señora que los oropelescos e impúdicos disfraces del teatro! Le parecía mentira que fuese la misma a quien tantas veces tuvo entre los brazos. No podía decirse que hubiese sufrido, sino gozado cambio; antes era fina, gentil y airosa; ahora, sin perder elegancia, esbeltez ni gallardía, estaba más llenita y redondeada; de linda se había trocado en hermosa. ¡Y qué modo de vestir! ¡Buena modista y buen pagano!, porque todo lo que llevaba puesto era rico. ¿En poder de quién estaría? ¿Qué vida habría hecho desde que él la dejó burlada? Fuese amante o marido, hombre había por medio; era imposible explicarse de otra suerte el lujo que ostentaba, y mucho menos la existencia del niño. Lo más verosímil era que se hubiese casado, porque su severa elegancia, exenta de perifollos llamativos, no era propia de aventurera, sino de muy señora. Pero... ¿habría tenido la criminal imprudencia de casarse engañando a un hombre, ocultándole su pasado? ¡Lo pasado! En el largo catálogo de sus conquistas, ninguna recordaba don Juan que valiese lo que aquélla. No; en el alma de Cristeta no cabía la doblez de hacerse valer como doncella intacta..., y aún era menos admisible la suposición de que ella, tan poética y desinteresada, cobrase amor a un hombre capaz de quererla como propia sabiendo que otro la gozó primero. Lo cierto era que él había tenido sucesor, y la existencia del niño demostraba que el reemplazo fue rapidísimo. Nunca pudo -recordarse con más oportunidad aquello de «a rey muerto, rey puesto». «¡Al fin, mujer! Tanta promesa, tanto juramento, y luego... Todas son iguales -seguía monologueando don Juan-. Mientras no tienen idea exacta de lo que es el hombre, se embriagan de poesía y de ilusiones; pero en cuanto lo saben, quieren hartarse de realidad. A otras no es el amor ni el hombre quien las pierde, sino el lujo: la serpiente del Paraíso debió de presentar a Eva la manzana envuelta en un corte de vestido o metida en una capota. Sin embargo, mucho ha de haber variado Cristeta hasta igualarse con las que se prostituyen por cintas y brillantes. Aunque la cosa resulte anómala, tiene que estar casada... ¡tal vez casada por amor!»</p>
@@ -1215,7 +1244,7 @@
 				<p>Las últimas frases que don Juan pronunció mentalmente en aquel largo y humillante monólogo fueron estas: «Sí, ¿eh?... Pues ahora me gusta más que antes... ¡ella caerá! No es que me importe, nada de eso... lo único que quiero es tenerla una vez entre los brazos... porque sí... ¿Qué se habrá figurado la grandísima tonta?»</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0155_chap15">
-				<head>Capítulo XV : Donde se ve que cuando el hombre tiende la red, ya está pescando la mujer </head>
+				<head xml:id="ne0155_head_016">Capítulo XV : Donde se ve que cuando el hombre tiende la red, ya está pescando la mujer </head>
 				<p>El día en que don Juan vio a Cristeta en el Retiro, fue domingo. Al siguiente, hizo el viaje en balde: procuró distraerse mirando y remirando a cuantas pasaban; mas en vano. Acaso no faltasen en el paseo mujeres guapas y elegantes, pero todas se le antojaron cursis o feas. La de bonitos pies, tenía el cuerpo atalegado; la de cintura esbelta, era antipática de rostro; la bien vestida, horrible; la hermosa, iba hecha un adefesio. ¿Sería cosa providencial? No, sino que él llevaba grabada en el magín, como única apetecible y codiciable, la que realmente deseaba.</p>
 				<p>Entretanto, la maquiavélica Cristeta estaba solita en su modesto albergue de la calle de Don Pedro, diciéndose: «Hoy me andará buscando.»</p>
 				<p>Martes. Hermoso día de otoño, aunque algo fresco. En el Retiro muy poca gente: don Juan llega de los primeros, se cansa de andar, se disgusta y siente impulsos de volverse a casa. Por fin comienzan a venir paseantes. A las cinco aparece Cristeta al término de una alameda: traje, el mismo del día pasado; lleva al niño cogidito de la mano y el coche les sigue a corta distancia. Don Juan se adelanta, acorta la marcha, la deja pasar, la alcanza y retrocede, todo sin dejar de mirarla. Ella, calmosa, serena, impasible, como si no le conociera. Fue tan marcada su indiferencia, que don Juan se dijo: «¡Tendría gracia que yo me hubiese equivocado!» Pero tornó a mirarla y se convenció de que era ella, la misma, la propia Cristeta, que tantas veces le había dicho: «¡Juan mío!» Poco le faltó para llegarse a ella y hablarla. Por fortuna se contuvo pensando: «¿Y si me pega un bufido y me pongo en ridículo? No, todavía no.» Final, el mismo de la primera vez. El coche se para, Manolito, que va en el pescante, se quita respetuosamente el sombrero, Cristeta coge al niño, lo sienta, sube y desaparece sin que don Juan pueda sorprender una mirada de reojo, ni el más leve indicio de curiosidad. Atormentado del despecho, no se le ocurre más que esto: «Un cochero <seg rend="italic">de abono</seg> no saluda de esa manera; el carruaje es suyo. No me cabe duda; está casada. ¡mejor!»</p>
@@ -1363,7 +1392,7 @@
 				<p>Luego que le perdió de vista salió ella de su escondrijo. La risa le retozaba en el cuerpo, con los dedos metidos en la faltriquera iba palpando los duros, y de trecho en trecho, temerosa de ser seguida, volvía la cara. Precaución inútil. Don Juan marchaba en dirección contraria, y de tan mal humor, que ni siquiera dirigía una mirada a las mujeres que, al cruzar las calles enlodadas, se recogían las faldas, enseñando algo de lo que a él tanto le gustaba.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0155_chap16">
-				<head>Capítulo XVI : Donde se prosigue la demostración de que el amor puede hacer astuta a la engañada y crédulo al engañador </head>
+				<head xml:id="ne0155_head_017">Capítulo XVI : Donde se prosigue la demostración de que el amor puede hacer astuta a la engañada y crédulo al engañador </head>
 				<p>La carta confiada por don Juan a Julia y leída con avidez por Cristeta, decía lo siguiente:</p>
 				<floatingText>
 					<body>
@@ -1531,7 +1560,7 @@
 				<p>Fue conferencia importantísima, pero secreta; semejante a esos consejos de ministros en que se tratan cosas graves, que sólo andando el tiempo se descubren.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0155_chap17">
-				<head>Capítulo XVII : Donde el zorro se forja la ilusión de que la gallina puede venir a entregársele </head>
+				<head xml:id="ne0155_head_018">Capítulo XVII : Donde el zorro se forja la ilusión de que la gallina puede venir a entregársele </head>
 				<p>Tanto se envalentonó don Juan a consecuencia de la entrevista en la Moncloa que, por conducto de Julia, envió a su hermosa deseada la carta siguiente:</p>
 				<floatingText>
 					<body>
@@ -1615,7 +1644,7 @@
 				<p>¿Existirá en el mundo de las pasiones influencia secreta que aproxime y relacione las almas separadas moviéndolas simultáneamente con un mismo afecto, como viento invisible que a un tiempo menea en parajes apartados las ramas de los árboles? ¡Quién sabe! Lo cierto es que, mientras la esperanzada Cristeta veía posible la realización de su ventura, don Juan, puestos en ella los cinco sentidos con amoroso empeño, tomaba la resolución de buscar a don Quintín para que éste le sacase de dudas sobre si era o no verdad lo del casorio, y pensando en él se decía: «Está visto que ese pobre majadero ha nacido en provecho mío.»</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0155_chap18">
-				<head>Capítulo XVIII : De la importantísima conferencia que celebraron el Tenorio decadente y el estanquero libertino, con otros graves sucesos </head>
+				<head xml:id="ne0155_head_019">Capítulo XVIII : De la importantísima conferencia que celebraron el Tenorio decadente y el estanquero libertino, con otros graves sucesos </head>
 				<p>Ignorante don Juan de que don Quintín hubiese venido a menos, resolvió visitarle en su estanco, donde hasta entonces, por prudencia, jamás puso los pies. Fue allá, entró, pidió puros, escogiólos despacio mirando hacia la trastienda... y nada. Entonces se atrevió a preguntar al chicuelo mugriento, mofletudo y asabañonado que le despachaba.</p>
 				<p>-¿Está el amo?</p>
 				<p>-El señor Juaneca ha salido.</p>
@@ -1776,7 +1805,7 @@
 				<ab> </ab>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0155_chap19">
-				<head>Capítulo XIX : De cómo Cristeta representó en un palco mejor que cuando lo hacía en el escenario </head>
+				<head xml:id="ne0155_head_020">Capítulo XIX : De cómo Cristeta representó en un palco mejor que cuando lo hacía en el escenario </head>
 				<p>Don Juan tenía pensado alquilar un cuarto y amueblar en él dos habitaciones: una tal que pareciese oficina, para dar sombra de apariencia a lo de la empresa teatral, y otra cuidadosamente alhajada, donde, atraída Cristeta, quedara su resistencia vencida; pero en vista de la conferencia con don Quintín, consideró inútil lo primero, pues el grandísimo bribón no había menester disimulo, sino dinero; por lo cual a otro día del almuerzo le mandó a Benigno con una carta en que, a modo de primer mes de sueldo, le remitía mil reales, es decir, el amor de Carola provisionalmente asegurado. En cuanto a lo de alhajar cómoda y lujosamente un nido donde recibir a Cristeta, también varió algo su propósito, discurriendo que tal vez careciera de sentido común el forjarse ilusiones si la paloma había ya anidado en otro lado, y hasta hecho cría.</p>
 				<p>El deseo de aquel hombre iba sufriendo una transformación tan radical como justificada. Lo que hasta entonces le movió fue el apetito amoroso que juntamente despertaban en su ánimo la belleza de Cristeta, la envidia de su legítimo poseedor y la vanidad herida; pero a consecuencia del almuerzo con don Quintín, todo cambió. Ya no podía bastarle poseer a Cristeta como a una mujer cualquiera; quería saber si aún era amado de ella; aquilatar qué clase de afecto profesaba a su marido, o lo que fuese; obtener pleno conocimiento del origen del niño; en fin, salir de dudas. La frívola pertinacia del galanteador de oficio, la tenacidad irritante del mujeriego afortunado, habían cedido el puesto a móviles más serios. Lo que comenzó a guisa de vulgar conquista, iba transformándose en drama psicológico, sin puñalada, pistoletazo, ni catástrofe, pero muy serio: acaso con su catástrofe y todo, porque ¿quién era capaz de prever las complicaciones a que podría dar ocasión el odioso Martínez? Pero lo grave era que la mujer antes perseguida y deseada sólo por gentil y graciosa, se había trocado en hechicera enigmática: ya no era don Juan un temperamento atraído por la belleza, sino una voluntad obstinada en descubrir el arcano que llevaba una mujer dentro del pecho. Hasta el pecho ¡lo más hermoso del cuerpo de Cristeta! se le olvidaba pensando en su corazón.</p>
 				<p>Tomó un piso entresuelo en cierta casa de un amigo suyo (la calle, aunque céntrica, casi solitaria), y en cuatro días, a fuerza de dinero y con ayuda de don Quintín, hizo que le amueblaran un precioso gabinete donde todo era sencillo y de exquisito gusto. La alfombra, clara; sobre una mesita, una lámpara preparada, y como adorno, muchas flores. No había reloj, para indicar que quien lo dirigió todo no quería tasado el tiempo. Por precaución tenía la estancia puertas francas a escaleras distintas, y en los balcones visillos muy tupidos. Junto a la chimenea se veía uno de esos asientos llamados confidentes, dispuestos en forma de ese, donde una pareja puede mirarse rostro a rostro, llegando tibio el aliento del que habla a la oreja del que escucha: para diálogo amoroso, imposible hallarlo mejor; pero no era mueble incitante y traidor de aquellos en que la castidad suele reclinarse sana y levantarse herida.</p>
@@ -1912,7 +1941,7 @@
 				<p>Entonces el hombre insustancial y frívolo, que no había vertido una lágrima desde la muerte de su madre, se dejó caer en una butaca, cubrióse el rostro temiendo que le hicieran burla las Venus de bronce, las fotografías de mujeres hermosas o los retratos de queridas olvidadas y se echó a llorar como un niño.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0155_chap20">
-				<head>Capítulo XX : Los favores que don Juan hizo antaño a su cocinera Mónica, le fueron grandemente pagados sin que él lo sospechara </head>
+				<head xml:id="ne0155_head_021">Capítulo XX : Los favores que don Juan hizo antaño a su cocinera Mónica, le fueron grandemente pagados sin que él lo sospechara </head>
 				<p>Cartas impregnadas de ternura, junto a las cuales resultarían pálidas aquellas que se escribieron en el Paracleto; recados apremiantes enviados por conducto de Julia; súplicas, amenazas, todo fue inútil. Cristeta, voluntariamente recluida en su casa, daba la callada por respuesta. Entonces, al modo que el general sitiador a quien es adversa la fortuna suspende el ataque y se encierra en su tienda, don Juan comenzó a filosofar, recurso de desgraciados, y le pareció que su pasado era ridículo; su presente, amarguísimo; su porvenir, incierto. El mal humor fue poco a poco convirtiéndosele en tristeza y ésta en melancolía. Haciendo retrospectivo examen de conciencia, consideró que su vida fue hasta entonces una serie de aventuras vulgares. Las mujeres a quienes venció no eran dignas de ser conquistadas: unas, porque valiendo poco le costaron mucho; otras, porque no se rindieron al galán seductor, sino a su propia desesperada lascivia; ya eran jovencillas viciosas, ex-vírgenes locas; ya mal casadas, ya viudas consumidas en forzosa continencia. Todas le dieron sobras de amor, escoria de los sentidos; pocas recordaba que no le hiciesen reír o avergonzarse. Ahora comprendía que cuanta fruta mordió era de la que se pudre en agraz o de la que por su peso cae dañada del árbol: la única vez que llegó a cogerla sazonada y fragante, dejó, como un estúpido, que otro la saborease, y al querer recobrarla... «Imposible». El acento con que Cristeta pronunció esta palabra le taladraba los oídos y le acibaraba el alma.</p>
 				<p>A fuerza de permanecer encerrado en casa, comenzó a digerir mal, y luego a comer poco: unióse al desasosiego moral el malestar físico, ayudó la inapetencia a la melancolía, y en menos de tres semanas se quedó flaco y triste como fiera enjaulada.</p>
 				<p>Benigno, a quien el retiro de su amo tenía la libertad mermada, le propuso llamar a Mónica, la incomparable cocinera que en situaciones menos graves había restaurado sus fuerzas. Don Juan le preguntó:</p>
@@ -1991,7 +2020,7 @@
 							<p><seg rend="italic">Si consigo arreglar mis asuntos, me marcharé esta misma semana. Adiós por última vez.»</seg></p>
 						</div></body></floatingText></div>
 			<div n="21" type="chapter" xml:id="ne0155_chap21">
-				<head>Capítulo XXI : Del fin que tuvieron los desordenados amores de don Quintín y del principio de su cautividad </head>
+				<head xml:id="ne0155_head_022">Capítulo XXI : Del fin que tuvieron los desordenados amores de don Quintín y del principio de su cautividad </head>
 				<lg type="poem">
 					<l><seg rend="italic">Vuela pensamiento y diles</seg></l>
 					<l><seg rend="italic">a los ojos que más quiero</seg></l>
@@ -2180,7 +2209,7 @@
 				<p>Bien dice el <seg rend="italic">Ecclesiastes</seg>: «Cada cosa tiene su tiempo y sazón, y es mucha la aflicción del hombre».</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0155_chap22">
-				<head>Capítulo XXII : El delirio </head>
+				<head xml:id="ne0155_head_023">Capítulo XXII : El delirio </head>
 				<p>Pocas horas después de enviar don Juan a Cristeta su romántica y desesperada carta de despedida, recibió de ella un papelito que traía estas palabras escritas con mano temblorosa:</p>
 				<floatingText>
 					<body>
@@ -2256,7 +2285,7 @@
 				<p>¿Qué más necesita el hombre a quien aguarda una mujer?</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0155_chap23">
-				<head>Capítulo XXIII : Concluye ésta, entre verídica o imaginaria historia, con el raro ejemplo de una mujer que todo lo pospone al deseo de ser amada </head>
+				<head xml:id="ne0155_head_024">Capítulo XXIII : Concluye ésta, entre verídica o imaginaria historia, con el raro ejemplo de una mujer que todo lo pospone al deseo de ser amada </head>
 				<p>Salió don Juan vestido de viaje, tomó un coche, apeóse cerca de la calle de Don Pedro, y por fin llegó al portal de la casa en que vivía Cristeta. No arribó Ulises a la deseada Itaca, ni vieron los Magos el sagrado pesebre poseídos de tan honda emoción como la que él sentía.</p>
 				<p>Penetró en el zaguán, y acercándose casi respetuosamente al portero, de suntuoso levitón y gorra blasonada, le preguntó:</p>
 				<p>-¿La señora de Martínez?</p>

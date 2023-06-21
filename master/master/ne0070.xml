@@ -1,24 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Amor y pedagogía</title>
-				<title type="sub"/>
 				<title type="short">Pedagogia</title>
-				<title type="idno">
-					<idno type="bne">XX2213050</idno>
-					<idno type="viaf">193692100</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1139151</idno>
-					<idno type="viaf">88844103</idno>
-					<name type="short">Unamuno</name>
-					<name type="full">Miguel de Unamuno</name>
+					<name type="short" ref="#Unamuno"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1606</measure>
@@ -141,13 +130,52 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0070</idno>
+						<idno type="cligs">ne0070</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r.1.0, <date when="2015">2015</date>, <idno>22353</idno>, <ref target="https://www.epublibre.org/libro/detalle/22353"/>.</bibl>
-				<bibl type="print-source"><date/></bibl>
-				<bibl type="edition-first"><date when="1902">1902</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Amor y pedagogía</title>
+					<title type="sub"/>
+					<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2213050.html">XX2213050</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/193692100/">193692100</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5673140/">Q5673140</idno>
+				</idno>
+				</title>
+					<author xml:id="Unamuno">
+						<name type="full"><forename>Miguel</forename> <surname>de Unamuno</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8740 - IP 8745">IP 8740 - IP 8745</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118625403">118625403</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q185085/">Q185085</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1139151.html">XX1139151</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/88844103/">88844103</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r.1.0, <date when="2015">2015</date>, <idno>22353</idno>, <ref target="https://www.epublibre.org/libro/detalle/22353"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1902">1902</date><idno source="k10plus" type="ppn" n="406335729" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=406335729"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1902">1902</date>, <publisher>Henrich</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="406335729" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=406335729"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1934">1934</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464299691" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464299691"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1944">1944</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1331404274" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1331404274"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1944">1944</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>México;Buenos Aires</pubPlace> 		<idno type="ppn" n="464677866" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464677866"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1946">1946</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1184582807" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1184582807"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1946">1946</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="522425089" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522425089"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1952">1952</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="324903766" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=324903766"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1959">1959</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227337441" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227337441"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1968">1968</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="595675360" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=595675360"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="1989">1989</date>, <publisher>Alianza Ed</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1770833722" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1770833722"/> 		<idno type="isbn" n="8420603910"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra [u.a.]</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1118115201" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1118115201"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">(Narrativa). Paz en la guerra. Amor y pedagogía. Niebla. Abel Sánchez. La tía Tula</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="213874253" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=213874253"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Amor y pedagogía</title> <date when="2000">2000</date>, <publisher>Alianza Editorial</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="79246768X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=79246768X"/> 		<idno type="isbn" n="8420636134;9788420636139"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -158,6 +186,14 @@
 				<p>Cuando nace su hijo Apolodoro, don Avito no cesa de medirlo y estudiarlo. Para hacer de él un superhombre, cuenta con la ayuda de don Fulgencio Entrambosmares, un filósofo escolástico. El proceso de formación que sufre el pobre chico es una auténtica caricatura del método científico. Apolodoro no asimila bien las doctrinas y, ante la decepción de su padre, se converite en un ser inseguro y desgraciado. Su situación empeora aún más con un fracaso amoroso. Por otra parte, don Fulgencio lo atosiga con la obsesión de que es necesario tener hijos para pervivir. El infeliz muchacho, que iba para genio y se quedó en mediocridad, acaba ahorcándose.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8741" key="IP 8741" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL9">8</term>
 					<term type="author.continent">Europe</term>
@@ -188,7 +224,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">philosophical</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela humorística</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">nivola</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -196,7 +232,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE9">2.0</term>
 					<term type="text.movement">modernista</term>
-					<term type="text.narration.narrator" >heterodiegetic</term>
+					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
@@ -220,6 +256,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-07-21" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,7 +266,7 @@
 				<p>El autor</p>
 			</div>
 			<div>
-				<head>PRÓLOGO</head>
+				<head xml:id="ne0070_head_000">PRÓLOGO</head>
 				<p>Hay quien cree, y pudiera ser con fundamento, que esta obra es una lamentable, lamentabilísima equivocación de su autor.</p>
 				<p>El capricho o la impaciencia, tan mal consejero el uno como la otra, han debido de dictarle esta novela o lo que fuere, pues no nos atrevemos a clasificarla. No se sabe bien qué es lo que en ella se ha propuesto el autor y tal es la raíz de los más de sus defectos. Diríase que perturbado tal vez por malas lecturas y obsesionado por ciertos deseos poco meditados, se ha propuesto ser extravagante a toda costa, decir cosas raras, y lo que es aún peor, desahogar bilis y malos humores. Late en el fondo de esta obra, en efecto, cierto espíritu agresivo y descontentadizo.</p>
 				<p>Es la presente novela una mezcla absurda de bufonadas, chocarrerías y disparates, con alguna que otra delicadeza anegada en un flujo de conceptismo. Diríase que el autor, no atreviéndose a expresar por propia cuenta ciertos desatinos, adopta el cómodo artificio de ponerlos en boca de personajes grotescos y absurdos, soltando así en broma lo que acaso piensa en serio. Es, de todos modos, un procedimiento nada recomendable, aunque muy socorrido.</p>
@@ -264,7 +301,7 @@
 
 
 			<div n="1" type="chapter" xml:id="ne0070_chap1">
-				<head>I</head>
+				<head xml:id="ne0070_head_001">I</head>
 				<p>Hipótesis más o menos plausibles, pero nada más que hipótesis al cabo, es todo lo que se nos ofrece respecto al cómo, cuándo, dónde, por qué y para qué ha nacido Avito Carrascal. Hombre del porvenir, jamás habla de su pasado, y pues él no lo hace de propia cuenta, respetaremos su secreto. Sus razones tendrá cuando así lo ha olvidado.</p>
 				<p>Preséntasenos en el escenario de nuestra historia como joven entusiasta de todo progreso y enamorado de la sociología. Vive en casa de huéspedes, ayudando con sus sabias disertaciones de sobremesa, y aun de entre platos, la digestión de sus compañeros de alojamiento.</p>
 				<p>Vive Carrascal de sus rentas y ha llevado a cima, a la chita callando, sin que nadie de ello se percate, un hercúleo trabajo, cual es el de enderezar con la reflexión todo instinto y hacer que sea en él todo científico. Anda por mecánica, digiere por química y se hace cortar el traje por geometría proyectiva. Es lo que él dice a menudo: «solo la ciencia es maestra de la vida» y piensa luego: «¿no es la vida maestra de la ciencia?» Mas su fuerte está en la pedagogía sociológica:</p>
@@ -402,7 +439,7 @@
 				<p>Y he aquí cómo se unen la Materia y la Forma en indisoluble lazo.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0070_chap2">
-				<head>II</head>
+				<head xml:id="ne0070_head_002">II</head>
 				<p>«¡Has caído, Avito, has caído! —le dice la voz interior— ¡has caído! has convertido a la ciencia en alcahueta… ¡has caído!» Y mientras echa de menos a su fiel Sinforiano, no le sirve repetir: «¡cállate! ¡cállate! ¡cállate!» Pasada la embriaguez de los primeros días, disipada la nube que de las aguas de la ciencia levantaran los fuegos del instinto, empieza a vislumbrar la verdad. Ha sido una caída, una tremenda caída a la inducción, mas es preciso aceptarla y aprovecharla en beneficio del futuro genio. Ahora que posee a Marina se acuerda más de Leoncia, oliendo la cabellera de la braqui-morena sueña en la de la dólico-rubia. ¡Si cupiera fundirlas en una!… ¿Por qué el goce de lo poseído ha de encendernos el apetito de lo que no poseemos?</p>
 				<p>«La Materia es inerte, estúpida: tal vez no es la belleza femenina más que el esplendor de la estupidez humana, de esa estupidez que representa la perfecta salud, el equilibrio estable. Marina no me entiende; no hay un campo común en que podamos entendernos; ni ella puede nadar en el aire, ni yo volar en el agua. ¿Educarla? ¡imposible! Toda mujer es ineducable; la propia más que la ajena.» Así piensa Avito.</p>
 				<p>¿Y Marina? A los pocos días de trasladada del poder de su hermano al del marido se encuentra en regiones vagarosas y fantásticas, se duerme y en sueños continúa viviendo, en sueños incoherentes, bajo el dominio de la figura marital que anda, come, bebe, y pronuncia extrañas palabras.</p>
@@ -485,7 +522,7 @@
 				<p>La casa está dignamente provista para recibirlo; techos altos, como ahora se lleva, iluminación, aireación, antisepsia. Por todas partes barómetros, termómetros, pluviómetro, aerómetro, dinamómetro, mapas, diagramas, telescopio, microscopio, espectroscopio, que a donde quiera que vuelva los ojos se empape en ciencia; la casa es un microcosmo racional. Y hay en ella su altar, su rastro de culto, hay un ladrillo en que está grabada la palabra Ciencia, y sobre él una ruedecita montada sobre su eje; toda la parte que a lo simbólico, es decir, a lo religioso, como él dice, concede don Avito.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0070_chap3">
-				<head>III</head>
+				<head xml:id="ne0070_head_003">III</head>
 				<p>Ya tenemos al niño, al sujeto, y ahora surge el primer problema, el del nombre. El nombre que a uno le pongan y que tenga que llevar puede hacer su felicidad o su desgracia; es una perpetua sugestión.</p>
 				<p>¿No se oye decir a muchos: «me debo a mi nombre»? ¡Cosa ardua el cómo me llamen y cómo me llame a mí mismo!</p>
 				<p>El nombre tiene que ser griego por ser la lengua griega la de la ciencia, sonoro y significativo además. Relee Carrascal la carta en que el singular filósofo don Fulgencio ha contestado a su pregunta y que dice así:</p>
@@ -570,7 +607,7 @@
 				<p>Su padre, sin embargo, se dedica un rato todos los días a frotarle bien la cabeza por encima de la oreja izquierda para excitar así la circulación en la parte correspondiente a la tercera circunvolución frontal izquierda, al centro del lenguaje, pues algo de la excitación ha de atravesar el cráneo y ayudar al niño a romper a hablar.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0070_chap4">
-				<head>IV</head>
+				<head xml:id="ne0070_head_004">IV</head>
 				<p>Ahora en cine el alma de Apolodoro se acerca, merced a las fricciones superauriculares, al <seg rend="italic">amphioxus</seg> psíquico, ahora ha venido a habitar en nuestra ciudad el verbo de Carrascal, el insondable filósofo don Fulgencio.</p>
 				<p>Es don Fulgencio Entrambosmares hombre entrado en años y de ilusiones salido, de mirar vago que parece perderse en lo infinito, a causa de su cortedad de vista sobre todo, de reposado ademán y de palabra en que subraya tanto todo que dicen sus admiradores que habla en bastardilla. Jamás presenta a su mujer por avergonzarse de estar casado y sobre todo de tener que estarlo con mujer. El traje lo lleva de retazos hábilmente cosidos, intercambiables, diciendo: «esto os un traje orgánico: siempre conserva las caderas y rodilleras, signos de mi personalidad; mis caderas, mis rodilleras.»</p>
 				<p>Tiene en su despacho, junto a un piano, un esqueleto de hombre con chistera, corbata, frac, sortija en los huesos de los dedos y un paraguas en una mano y sobre él esta inscripción: <seg rend="italic">Homo insipiens</seg>, y al lado un desnudo esqueleto de gorila con esta otra: <seg rend="italic">Simia sapiens</seg>, y encima de una y de otra una tercera inscripción que dice: <seg rend="italic">Quantum mutatus ab illo!</seg> Y por todas partes carteles con aforismos de este jaez: «La verdad es un lujo; cuesta cara.» «Si no hubiera hombres habría que inventarlos.» «Pensar la vida es vivir el pensamiento.» «El fin del hombre es la ciencia.»</p>
@@ -655,7 +692,7 @@
 				<p>«Caíste, caíste y volverás a caer cien veces —le dice la voz interior a Carrascal mientras va a su casa—; ese hombre, Avito, ese hombre… ese hombre…» Mas al entrar en su casa y ver la rueda montada sobre el ladrillo de la ciencia se aquieta.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0070_chap5">
-				<head>V</head>
+				<head xml:id="ne0070_head_005">V</head>
 				<p>Así como todo principio tiene un fin, todo fin implica un principio, y en este se halla Apolodoro todavía. Va destetándose ya con mezcla de pesar y agrado por parte de Marina. Le hace comer su padre a reloj, a tal hora y tantos minutos, pesando la comida que le da y luego le pesa a él, tres veces al día. La higiene y la educación física ante todo; por ahora hay que hacer un buen animal y tupirle de habas; fósforo, mucho fósforo.</p>
 				<p>Empieza a andar. Para que lo logre le deja su padre en una gran pieza muellemente tapizada, que se las componga, ofreciéndole sillas y otros objetos a que se agarre y un palo que le sirva de bastón. Y si Marina quiere acudir a él, al verlo vacilar, tendiendo los bracitos:</p>
 				<p>—Quieta, quieta, déjale que se caiga, que no pasará del suelo.</p>
@@ -788,7 +825,7 @@
 				<p>Mira Carrascal a su mujer y a su hijo, baja la cabeza y dice: «¡dejarle! ¡dejarle! que le deje… pero ese hombre… ese hombre… ¡Hay que proceder con energía!»</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0070_chap6">
-				<head>VI</head>
+				<head xml:id="ne0070_head_006">VI</head>
 				<p>El filósofo insiste en que se dé al niño educación social, en que se forme en sociedad infantil, que se le mande a que juegue con otros niños, y al cabo Carrascal, aunque a regañadientes primero, cede. Pero es terrible, oh, es terrible, es terrible la escuela. ¡Qué de cosas trae de ella!</p>
 				<p>—Papá, el sol les dice a los planetas por dónde tienen que ir…</p>
 				<p>»¡Oh, la escuela, la escuela! ¡Le están enseñando en ella antropoformismo! ¿Que el sol <seg rend="italic">dice</seg>…?</p>
@@ -901,7 +938,7 @@
 				<p>¡Ese Ramiro me las tiene que pagar…! Luis, Luis, mi Luis, Luisito… santificado sea tu nombre… no le digas nada, ¿has oído? ¿por qué me llamará mamá Luis?… El oso hormiguero tiene la lengua así… ¡Pobre conejillo! ¡pobre conejillo!»</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0070_chap7">
-				<head>VII</head>
+				<head xml:id="ne0070_head_007">VII</head>
 				<p>El segundo hijo que ha dado a Avito Marina ha sido hija. Ni la ha pesado ni medido ni abierto expediente al nacer: ¿para qué? ¿Hija? Carrascal vuelve a pensar en eso del feminismo al que jamás ha logrado verle alcance. ¿Hija? Allá por dentro le encocora la cosa, es decir, la hija.</p>
 				<p>Tiempo hace que se formara convicciones respecto a lo que la mujer significa y vale. La mujer es para él un postulado y como tal indemostrable; un ser eminentemente vegetativo. La galantería es enemiga de la verdad, piensa, y debemos a la mujer, en su pro mismo, la verdad desnuda y aun más que desnuda descarnada, porque ¿es acaso verdad una verdad que no esté en huesos, demostrable?</p>
 				<p>—No hay cuestión feminista —decía años hace don Avito a su fiel Sinforiano, de sobremesa, en casa de doña Tomasa—; no hay cuestión feminista; no hay más que cuestión pedagógica y en esta se refunden todas…</p>
@@ -986,7 +1023,7 @@
 				<p>—No, hombre, no, nadie lo sabrá, no tengas cuidado. Anda, deja eso, hombre, déjalo.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0070_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0070_head_008">VIII</head>
 				<p>Ha corrido tiempo, Apolodoro ha crecido y cree don Fulgencio que ha llegado por fin el día de dirigírsele directamente. No le conoce más que de vista, de rápidas inspecciones.</p>
 				<p>Es día miliar para el futuro genio. Espérale el maestro en su sillón de vaqueta, al pie del <seg rend="italic">Simia sapiens</seg>, medio oculto tras un rimero de libros, en la misteriosa penumbra del despacho. Entra Apolodoro con el corazón alborotado, y como viene de más claro ámbito, apenas ve nada, no más que, en la sombra, el rostro hierático de don Fulgencio, ribeteado por la leve luz cernida, con ojos que parecen no mirar, con el bigote lacio. El maestro contempla a este muchacho pálido y larguirucho, de brazos pendientes como si, aflojados los tornillos, colgaran de los hombros, de labio superior recogido que le deja entreabierta la boca.</p>
 				<p>—¡Mi hijo! —exclama don Avito tendiendo a él los brazos como quien muestra un género de mercancía.</p>
@@ -1041,7 +1078,7 @@
 				<p>—El amor, el amor lo es todo; toda grande obra de arte en el amor se inspira; no hay más tábano poético —Menaguti traduce <seg rend="italic">estro</seg>— que el del amor; todos los trillamientos del alma —sabe que de <seg rend="italic">tribulare</seg> vino «trillar»— del amor vienen; el amor es el gran principio hipnótico —aspirando la «h»— <seg rend="italic">la Iliada</seg>, la <seg rend="italic">Divina Comedia</seg>, el <seg rend="italic">Quijote</seg> mismo y hasta el <seg rend="italic">Robinson</seg> en el amor se inspiran, tácita o expresamente. Hay que hacer obra de amor, obra de arte; no hay más genio que el genio poético. Haz poesía, Apolodoro.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0070_chap9">
-				<head>IX</head>
+				<head xml:id="ne0070_head_009">IX</head>
 				<p>¡Con qué ansia coge Apolodoro la cama, por las noches! Son entonces sus auroras, las fiestas de su alma. Recógese al frescor de las sábanas, acurrucadito, como estuvo, antes de nacer, en el vientre materno, y así, en postura fetal, espera al sueño, al divino sueño, piadoso refugio de su vida y tierra firme en que recobra ganas de vivir. Antes suele leer de alguno de esos libros que le ha dejado Menaguti y que a hurtadillas de su padre se lleva consigo y que esconde bajo la almohada.</p>
 				<p>Al llegar a ciertos pasajes el corazón le martillea, y con la boca entreabierta, respirando anheloso, tiene que suspender durante un momento la lectura. ¿Es que luego sueña? Ni él mismo lo sabe desde que le hizo leer su padre una doctísima obra acerca del sueño, sus causas y sus leyes. Espera al sueño y es su más dulce vivir el de esperarlo. El sueño es la fuente de la salud, porque es vivir sin saberlo. No sabe que tiene corazón quien le tenga sano, ni sabe que tiene estómago o hígado sino quien los tenga enfermos; no sabe que vive el que duerme. En el sueño nadie le enseña nada. ¡Pero no! hasta el sueño, hasta el sueño le viene con ensueños, con pedagogía. ¿Dónde estará uno a salvo? ¿Dónde habrá un sueño sin ensueños o inacabable? ¡Qué sueño el de la Vida!</p>
 				<p>Acuéstase casi todas las noches proponiéndose atrapar al sueño en el momento preciso en que le arranque de la vigilia, darse cuenta del misterioso tránsito, pero no hay medio, siempre el sueño llegándole cauteloso y por la espalda, sin meter ruido, le atrapa antes de que él pueda atraparle y sin darle tiempo a volverse para verle la cara. ¿Sucederá lo mismo con la muerte? —piensa y pónese a imaginar qué será eso de la muerte, aun cuando asegura su padre que no es ni más ni menos que la cesación de la vida, la cosa más sencilla que cabe. Para don Avito no hay tal problema de la muerte: eso es un contrasentido: la muerte es un fenómeno vital.</p>
@@ -1112,7 +1149,7 @@
 				<p>—En abstracto, sí. El amor, amigo don Avito, no es nominalista sino realista, no sube de lo concreto a lo abstracto, sino que baja de lo abstracto a lo concreto, es más platónico que aristotélico, empieza por enamorarse de la mujer y en cada individuación de ella no ve más que el género: solo más tarde parece concretarse… Parece, sí, porque en realidad solo se concreta en las pasiones heroicas, en las históricas, en las que han pasado a la leyenda, porque en ellas se concreta en absoluto lo abstracto. Julieta, Beatriz, Dido, Isabel de Segura, Carlota, Manon Lescaut, son concretos-abstractos… «¡Qué lío!» —le dice a Carrascal su demonio familiar, y ya en la calle, se dice: «¡Se ha enamorado! ¡se ha enamorado! ¿Y si este amor se concreta?»</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0070_chap10">
-				<head>X</head>
+				<head xml:id="ne0070_head_010">X</head>
 				<p>Y se ha concretado al fin el amor de Apolodoro.</p>
 				<p>Ha sido en casa de su maestro de dibujo, a donde acude, con otros mozos, a perfeccionarse. El bueno de don Epifanio, gran artista fracasado según muchos, ha llegado a cobrar hondo cariño al mozo. Mientras le corrige el dibujo suele decirle:</p>
 				<p>—Hay que vivir, Apolo, hay que vivir y lo demás son lilailas.</p>
@@ -1162,7 +1199,7 @@
 				<p>—Se habla de un ingeniero industrial que ha descubierto la trisección del ángulo… Esta noche sorpréndese Apolodoro con que las oraciones que de niño anidara en su memoria la madre le revolotean en torno a la cabeza, rozándole los labios a las veces con sus tenues alas. Y tras un «¡pobre padre!» susurrado mentalmente encuéntrase con el padrenuestro en la boca. Y piensa en su madre y se le va el alma al pensar en ella. Y bajito, muy bajito, en silencio casi, le susurra al oído del alma el demonio familiar: «¿No has notado como se parece Clarita a tu madre?»</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0070_chap11">
-				<head>XI</head>
+				<head xml:id="ne0070_head_011">XI</head>
 				<p>Con la invasión del amor ¡qué marea de melancolía! Es un sentir la vida como un derretimiento, es un soñar en dormirse para siempre en brazos de Clarita.</p>
 				<p>Ya de paseo a orillas del río; de los blancos álamos nievan aladas semillas, copos de vida. Y ve que se agolpan las gentes a contemplar algo. Es que va flotando en las aguas, llevado por la corriente, un hombre muerto. Parece dulcemente dormido, mecido por las ondas suaves. Ya a posarse sobre él una de las mullidas simientes de los álamos.</p>
 				<p>«El hombre vivo va al fondo, muerto flota —piensa Apolodoro, y empieza al punto a cavilar, con la sangre paterna, en el principio de Arquímedes— pesa ahora menos que el agua… peso específico menor que cero; de vivo pesaba más que ella, por encima de cero… luego la vida pesa… la vida pesa y la muerte aligera… ¡Duerme! duerme…»</p>
@@ -1253,7 +1290,7 @@
 				<p>«Porque… vamos a ver; después de todo, ¿no me aburro con Clarita? ¿no es estúpida la conversación que me da? ¿tiene acaso algún ingenio la pobre muchacha? ¿dice más que gansadas y vulgaridades? La quiero por inercia, por hábito; soy una víctima del amor. Sé todo esto, pero así que me encuentro a su lado lo olvido ya y no discurro. Y en cuanto a guapa… no, no es guapa; es como tantas otras… pero, sí, ¡es la más guapa! ¿No será que me he acostumbrado a su cara?»</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0070_chap12">
-				<head>XII</head>
+				<head xml:id="ne0070_head_012">XII</head>
 				<p>¿No está hoy Clarita displicente? ¿no se distrae sin motivo justificado? Contesta, no a lo que Apolodoro le pregunta, sino a lo que ella cree que le iba a preguntar, y aunque esto sea genuinamente femenino ¿no indica algo? Mas no se puede hablarle de Federico, ni siquiera dejarle presumir que se presume algo. Y don Epifanio mismo ¿no parecía hace poco con cara de pocos amigos? Hay que redoblar la ternura.</p>
 				<p>—Tú. tú eres la verdadera Pedagogía, mi pedagogía viva, mi pedagogía —y se le acerca.</p>
 				<p>—No me pongas ese nombre tan feo…</p>
@@ -1351,7 +1388,7 @@
 				<p>Apolodoro sale de casa del maestro diciéndose: «¡me ha fastidiado! ¡fracaso! ¡fracaso completo! Nadie me hace caso; todos se burlan de mí aunque me lo ocultan; Clarita no me quiere; ese Federico… ese Federico… Y luego que me venga Menaguti con todo eso del arte… ¡El arte! ¿tendrá razón este hombre? ¿será una porquería?»</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0070_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0070_head_013">XIII</head>
 				<p>Clarita sueña un duelo por su causa, mas no hay tal duelo. En la primera entrevista que tiene a solas con Federico, lo primero que este hace es cogerla en brazos y besarle furiosamente la boca, y ella, en desmayo, bajo el machaqueo del corazón, piensa: «¡este es un hombre! ¡pobre Apolodoro!» Federico acostumbra hacer lo primero que el cuerpo le pide, lo que le da la real gana, y gracias que ante gente, puesta la irónica máscara, se contenga.</p>
 				<p>—Y en adelante has de ser mía y solo mía, ¿has oído?</p>
 				<p>—Sí.</p>
@@ -1439,7 +1476,7 @@
 				<p>Y al conjuro de estas palabras dolorosas siente Apolodoro un furioso deseo de tener hijos, de hacerlos, y se acuerda de Clarita y suspira al acordarse de ella. Al despedirse le abraza don Fulgencio, llorando. Y ya en la calle, piensa Apolodoro: «Soy un genio abortado; el que no cumple su fin debe dimitir… Dimito, dimito, me mato. ¡Pobre don Fulgencio! Me mato… si no ¿cómo voy a presentarme ante Menaguti? Pero antes tengo que asegurarme esa inmortalidad, por si es verdad, pues ¿quién sabe? ¿quién sabe? ¿quién sabrá? Mamá cree en la otra y espera y sufre, sufre a papá… cree en la otra… Ese que pasa también me mira de esa manera especial; o ha leído mi cuento o sabe lo de Clarita; debe conocerme o conocer a mi padre, y por dentro se ríe de mí, como todos. ¡Oh, dimito, dimito!»</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0070_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0070_head_014">XIV</head>
 				<p>Ayer vio a Clarita, a lo lejos y de paso y se le encendió el mal extinguido amor, y ahora es cuando comprende que la quería, que la quería con toda el alma, ahora que otro la quiere y quiere ella al otro. Y se dice: «Ya que no puedo ser genio en vida, lo seré en la muerte; escribiré un libro sobre la necesidad de morirse cuando el amor nos falta y me mataré, me mataré por no dejarme morir…</p>
 				<lg type="poem">
 					<l>Fratelli, a un tempo stesso, Amore e Morte</l>
@@ -1520,7 +1557,7 @@
 				<p>«¿No será mejor que pretender hacer el genio, hacer primero la madre del genio? Tengo muy abandonada a Rosa, y la pobrecilla no me gusta, no, no me gusta: va desmejorando mucho, pero mucho; no sirve meteorizarla. Todo me sale mal, todo me sale mal: quiero guiar a Apolodoro por el buen camino, y va y se me enamora; quiero robustecer físicamente a Rosa, y nada, cada vez más enteca. Esa Marina me la echa a perder con sus mimos.»</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0070_chap15">
-				<head>XV</head>
+				<head xml:id="ne0070_head_015">XV</head>
 				<p>El pobre Apolodoro, tras días de besar y morder la almohada por las noches, va encalmándose y ya parece no pesarle que Clarita le dejara, antes bien se complace, allá, muy en su interior, en tener tal excusa para dimitir la vida, como es su secreto anhelo. Porque ¿para qué sirve ya, fracasado como cuentista y como novio? Diríase que esta necesidad de morir él ha guiado al Destino, al Determinismo, a que Clarita le deje. Era menester una motivación. Y se recrea en la infidelidad de su ex-novia y en el recuerdo de sus amores, más poéticos ahora que han pasado. «Nací como los más de los mortales, hastiado de la vida desde nacimiento, sin que haya logrado en mí la vida, como en los demás logra, borrar con el adquirido apetito la nativa saciedad. Y ahora ¿qué dirán si dimito? ¿qué pensará papá? ¡vaya unas cavilaciones que va a costarle! ¡pobrecillo! ¿Me daré un tiro? ¿me tiraré de una torre? ¿tomaré un veneno? ¿me ahorcaré? Pero, ¿y mamá? ¡mamá! ¿y Rosa, la pobre Rosa que está tan delicada? ¿no acelerará esto su fin, que está tan próximo? ¿no será mejor diferirlo hasta que ella acabe?» Y le invaden mil recuerdos vagarosos y se encuentra con el padrenuestro en los labios, y al acabar de paladearlo se dice: «¡no nos dejes caer en la tentación!» y desde el fondo del alma le dice la voz de don Fulgencio; «¡haz hijos, Apolodoro, haz hijos!»</p>
 				<p>—Cuando usted guste, señorito.</p>
 				<p>—¿Eh?</p>
@@ -1596,7 +1633,7 @@
 		</body>
 		<back>
 			<div>
-				<head>EPILOGO</head>
+				<head xml:id="ne0070_head_016">EPILOGO</head>
 				<p>Mi primer propósito al ponerme a escribir esta novela fue publicarla por mi cuenta y riesgo, como hice, y por cierto con buen éxito, con mi otra; pero necesidades ineludibles y consideraciones de cierta clase me obligaron a cederla, mediante estipendio, claro está, a un editor. El editor se propone publicar, a lo que parece, una serie de obras editadas con cierta uniformidad, y para ello le conviene que llegue cada una de ellas a cierta cantidad de contenido, porque todo, incluso las obras literarias, debe estar sujeto a peso, número y medida. Ya yo por mi parte, previendo que la obra resultara demasiado breve para los propósitos del editor, la hinché mediante el prólogo que la precede y con tal objeto se lo puse, mas ni aun así parece que he llegado a la medida. Hace seis días remití el manuscrito a mi buen amigo Santiago Valentí Camp, y he aquí que hoy, 6 de febrero, recibo carta fechada en Barcelona a 1 de febrero de 1902, en que este amigo, bajo el membrete <seg rend="italic">Ateneo Barcelonés - Particular</seg>, me dice lo que sigue:</p>
 				<quote>
 					<p>«Acabo de hacer entrega del original al señor Henrich, y por tanto queda ya casi terminada mi gestión en este asunto. Digo casi porque después de haber estudiado detenidamente con el señor Henrich y el jefe de la sección de cajas las proporciones del libro y el número de cuartillas que tiene el original resulta, que aun haciendo uso de todos los recursos imaginables, no alcanza más que 200 páginas. Usted dirá cómo se resuelve el conflicto. A mí se me ocurren dos medios para arreglarlo.»</p>
@@ -1713,24 +1750,24 @@
 				</lg>
 			</div>
 			<div>
-				<head>APUNTES PARA UN TRATADO DE COCOTOLOGÍA</head>
+				<head xml:id="ne0070_head_017">APUNTES PARA UN TRATADO DE COCOTOLOGÍA</head>
 
 				<div>
-					<head>Prolegómenos</head>
+					<head xml:id="ne0070_head_018">Prolegómenos</head>
 					<p>En esta parte ha de tratarse de todo lo divino y lo humano, de lo conocido, de lo desconocido y de lo inconocible, arrancando siempre, a poder ser, de la nebulosa o del homogéneo primitivo si fuere preciso. Es de grandísimo interés ante todo y sobre todo establecer el concepto de la ciencia, pues sin haber establecido tal concepto es absolutamente imposible dar un solo paso en firme en ciencia alguna. Lo del concepto de la ciencia nos llevará a tratar del problema del conocimiento, y con todo esto se puede llenar muy bien un tomo de regulares dimensiones.</p>
 				</div>
 				<div>
-					<head>Historia de la Cocotología</head>
+					<head xml:id="ne0070_head_019">Historia de la Cocotología</head>
 					<p>Empezaré diciendo que la historia de la cocotología, como la de todo lo existente, posible y concebible, se pierde en la noche de los tiempos, y acudiré al <seg rend="italic">Larousse</seg> a ver qué dice ella. Y como es de suponer que no diga nada, consideraré a las pajaritas de papel como un juego infantil y haré la historia de los juegos infantiles y de todos los juegos en general. Con esto bien puede llenarse otro tomo.</p>
 				</div>
 				<div>
-					<head>Razón de Método</head>
+					<head xml:id="ne0070_head_020">Razón de Método</head>
 					<p>Aquí expondré el por qué trato primero de lo primero y segundo de lo segundo y por qué lo tercero ha de ir antes de lo cuarto y después de este lo quinto. Esta es una parte muy importante y en que se requiere mucho pulso.</p>
 					<p>Sabido es, en efecto, que el método lo es todo y que la ciencia se reduce al método, es decir, al camino, pues método significa en griego camino. Y teniendo en cuenta que hay dos clases de caminos, vías o métodos, unos parados, por los que el caminante discurre y anda, como son los caminos terrestres, y otros «caminos que andan», que llevan al caminante, como son las vías fluviales o ríos, dividiré a los métodos, y por consiguiente a las ciencias que los encarnan, en dos grandes grupos: métodos parados o terrestres y métodos en movimiento o fluviales. De aquí las ciencias terrestres y las ciencias fluviales.</p>
 					<p>Y si me dijeren que esto es jugar con la metáfora, replicaré que todo es metáfora y así saldré del paso. Forzaré, además, la metáfora hablando de caminos o métodos férreos, como los de las matemáticas, aéreos, funiculares, vecinales, senderos, veredas, atajos, etc., y terminaré de una manera magnífica y altamente sugestiva hablando del mar, que todo él es camino, y comparándolo con la filosofía, y del aire, que también es todo él camino, comparándolo con la poesía. Porque es preciso hacer entrar la poesía entre las ciencias. Aquí encajará lo de los «húmedos senderos» de Homero y con tal ocasión hablaré de Homero y del helenismo.</p>
 				</div>
 				<div>
-					<head>Etimología</head>
+					<head xml:id="ne0070_head_021">Etimología</head>
 					<p>La palabra cocotología se compone de dos: de la francesa <seg rend="italic">cocotte</seg>, pajarita de papel, y de la griega <seg rend="italic">logia</seg>, de <seg rend="italic">logos</seg>, tratado. La palabra francesa <seg rend="italic">cocotte</seg> es una palabra infantil y que se aplica en su sentido primitivo y recto a los pollos y por extensión a todas las aves. En sentido traslaticio a las pajaritas de papel y a las mozas de vida alegre. Aquí habré de extenderme en una comparación entre estas mozas y las pajaritas, frágiles como ellas.</p>
 					<p>La primera cuestión que surge respecto al nombre de nuestra nueva ciencia es que es el tal un nombre híbrido, como el de sociología, compuesta de una palabra latina y otra griega, y son muchas las personas graves que han visto en eso del hibridismo de su título un fuerte argumento en contra de la nueva <seg rend="italic">sociología</seg>.</p>
 					<p>Acaso fuera mejor llamar a nuestra ciencia papyrornithología (παπυρορνιθιολια), de las palabras griegas <seg rend="italic">papyros</seg> (παπυρος) papel, <seg rend="italic">ornithion</seg> (όρνιθιον) pajarita y <seg rend="italic">logia</seg>, pero le encuentro a este nombre graves inconvenientes que me reservo mostrar cuando publique el tratado.</p>
@@ -1745,26 +1782,26 @@
 					<p>Con todas estas y otras consideraciones acerca del nombre, consideraciones que sacaré de mi cuadernillo rotulado Onomástica, justificaré la importancia capital que tiene el nombre que doy a la nueva ciencia, y como al nombrarla la creo. Porque el nombre y su etimología debe preceder a la definición misma.</p>
 				</div>
 				<div>
-					<head>Definición</head>
+					<head xml:id="ne0070_head_022">Definición</head>
 					<p>Aquí, después de exponer lo que es la definición y cuantas maneras de definición pueden darse y de dar la etimología de la palabra definición, pasaré a estampar cuantas definiciones pueden darse de la cocotología, empezando por la más sencilla de que es la ciencia que trata de las pajaritas de papel.</p>
 				</div>
 				<div>
-					<head>Importancia de nuestra Ciencia</head>
+					<head xml:id="ne0070_head_023">Importancia de nuestra Ciencia</head>
 					<p>Es importantísimo el dejar bien asentada <seg rend="italic">a priori</seg> la importancia de la ciencia de que se va a discurrir, no sea que los lectores torpes no lo conozcan. Es esto tan importante como lo que hacen ciertos predicadores dialécticos que después de desarrollar un argumento añaden: «queda, pues, evidentemente demostrada… tal o cual cosa», no sea que el oyente no lo haya conocido.</p>
 					<p>La importancia de la cocotología es que, como veremos más adelante, puede llegar a ser ciencia perfecta.</p>
 				</div>
 				<div>
-					<head>Lugar que ocupa entre las demás ciencias y sus relaciones con estas</head>
+					<head xml:id="ne0070_head_024">Lugar que ocupa entre las demás ciencias y sus relaciones con estas</head>
 					<p>He aquí dos puntos capitalísimos y que se prestan a no poca discusión. En realidad el segundo depende del primero, pues para colocar a nuestra ciencia en el lugar preeminente que le corresponde, tenemos que determinar antes sus relaciones con las demás ciencias.</p>
 					<p>Relaciónase con las físico-químicas porque el papel, sea fino sea de estraza, con que las pajaritas se hacen, está sujeto a las leyes todas físicas y químicas; pesa, refleja un color, da un sonido si se le hiere, se dilata por el calor, arde al fuego, es sensible a ciertos ácidos, etc., etc. Se relaciona con las ciencias naturales porque dicho papel se extrae de materias vegetales, y sin conocer estas mal se puede conocer bien tal papel. Relaciónase con la psicología, porque las pajaritas de papel ayudan al desarrollo de la psique infantil, y con las ciencias sociales por su valor como juego de los niños. Pero ante todo y sobre se relaciona, como veremos, con las ciencias matemáticas, porque la pajarita de papel adopta formas geométricas definidas y puede someterse a fórmula analítica.</p>
 				</div>
 				<div>
-					<head>División</head>
+					<head xml:id="ne0070_head_025">División</head>
 					<p>Aquí trataré de la división de la cocotología, pues no cabe tratar ciencia alguna sin dividirla antes por I, II, III, A, B, C, 1, 2, 3, a, b, c, etc.</p>
 					<p>La ciencia no puede ser fluyente y continua como una vena de agua, es menester que sea quieta y discontinua como un rosario.</p>
 				</div>
 				<div>
-					<head>Embriología</head>
+					<head xml:id="ne0070_head_026">Embriología</head>
 					<p>He de empezar por el estudio de la embriología de la pajarita de papel, a partir del cuadrado primitivo de papel, que salido del protoplasma papiráceo, es el óvulo de donde la pajarita habrá de desenvolverse. Y tal óvulo tiene que ser por fuerza cuadrado, lo más perfectamente cuadrado que quepa, sin que sirva que sea un cuadrilátero o paralelepípedo, pues de este no sale más que un monstruo, como puede comprobarlo el investigador si, como nosotros, lo ensaya.</p>
 					<p>El óvulo-cuadrado papiráceo experimenta primero la vuelta o involución de sus cuatro ángulos cuyos extremos vienen a coincidir en el centro, produciéndose el segundo período, el de <seg rend="italic">blastotetrágono</seg>, en que hay dos capas, la formada por los cuatro extremos plegados, el <seg rend="italic">endodermo</seg> o <seg rend="italic">endopapiro</seg>, y la formada por el centro del óvulo-cuadrado, el <seg rend="italic">ectodermo</seg> o <seg rend="italic">ectopapiro</seg>.</p>
 					<p>Una vez obtenido este segundo período experimenta el <seg rend="italic">blastotetrágono</seg> un tercer pliego, una tercera complicación, volviéndose las puntas de él hacia el lado inverso de aquel a que las primeras se volvieron, es decir, hacia el endopapiro, y así tenemos la gástrula papirácea. De esta puede salir ya, mediante un proceso que describiré minuciosamente en mi obra —obra ilustrada con exactos grabados— la primera forma de pájaras, la más elemental y primitiva, en que los extremos que se doblaron primero vienen a formar la cabeza, las patas y la cola. De aquí también, mediante otro proceso, puede salir una mesa, la <seg rend="italic">trapeza papyracea</seg>, la forma de tetrápodo o cuadrúpedo más sencilla que se conoce, como que es un cuadrúpedo puro, un mero tetrápodo, a tal punto que hay sabios que opinan, con algún fundamento, que no sirven las cuatro patas para sostener el cuadrado o tablero de la mesa, sino más bien este para soportar las patas. Aquí me extenderé en amplias consideraciones de como este tipo de la <seg rend="italic">trapeza papirácea</seg> lo vemos luego reproducido en todos aquellos organismos superiores, incluso el hombre, en que el cuerpo lleva las extremidades en vez de llevar estas al cuerpo, y estudiaré el tipo <seg rend="italic">trapeza</seg> en la especie humana, en aquellos hombres cuya razón de ser es tener manos y pies.</p>
@@ -1775,7 +1812,7 @@
 					<p>De los períodos sexto, séptimo, etc., nada diremos, pero sí haré juiciosas y hondas reflexiones acerca de la infinitud del número de estos períodos o grados, de cómo son inacabables. Sin embargo, a cada nuevo grado el grosor de la pajarita crece y la materia opone serias resistencias a su perfección geométrica, que es su razón de ser, por lo cual esos grados superiores están condenados a perecer en la lucha por la existencia, ya que no se adaptan a la perfección geométrica. Y esto nos lleva a la anatomía de la pajarita.</p>
 				</div>
 				<div>
-					<head>Anatomía</head>
+					<head xml:id="ne0070_head_027">Anatomía</head>
 					<p>La razón de ser, en efecto, de la pajarita de papel es su perfección geométrica, perfección a que todas ellas tienden, aunque no logren alcanzarla jamás.</p>
 					<p>La perfecta pajarita ha de poder ser inscrita en un cuadrado perfecto, como en la figura adjunta vemos, y si recordamos que el óvulo de que salió era un cuadrado de papel, veremos que su perfección consiste en poder inscribirse en su propio óvulo-cuadrado, en mantenerse fiel a su origen. Y de aquí deduciremos que la perfección de todo ser consiste en que se inscriba y atenga a su óvulo generador, en que se mantenga en los límites de su origen.</p>
 					<p>Claro está que en las precarias y miserables condiciones de nuestra vida terrestre y dados entre otros inconvenientes los que la materia presenta —el grosor y otras imperfecciones del papel—, no hay pajarita alguna que cumpla con toda exactitud rigurosa su ideal, su ideal geométrico; ideal que se cierne en el mundo platónico de las ideas puras. El divino arquetipo de la pajarita es una especie geométrica que yace desde la eternidad en el seno de la Geometría.</p>
@@ -1806,7 +1843,7 @@
 					<p>Así proseguiré desarrollando la anatomía geométrica de la pajarita.</p>
 				</div>
 				<div>
-					<head>Origen y fin de la Pajarita</head>
+					<head xml:id="ne0070_head_028">Origen y fin de la Pajarita</head>
 					<p>El origen de cada <seg rend="italic">cocotte</seg> o pajarita se nos aparece a primera vista muy claro y obvio, la construimos nosotros con nuestras propias manos tomando un pedazo de papel. Mas ya hemos visto que al construirla no pasamos de ser humilde instrumento de una Potencia Suprema e Inteligente que guía nuestras manos. Aquí de lo que quiero tratar es de su origen filogénico, del origen de la especie. Porque nosotros las aprendimos a hacer por haber visto hacerlas, mas ¿quién las ideó primero? ¿las ideó alguien? ¿surgieron de la nada, del azar o de Inteligencia creadora y ordenadora? ¡Grave cuestión!</p>
 					<p>¿Podrá haber quien nos persuada torpemente de que ser tan maravilloso, dotado de tantas y tan excelsas perfecciones, vaso de tan admirables relaciones métricas conmensurables e inconmensurables, estáticas y dinámicas, de que este perfecto ser papiráceo pudo ser obra del acaso? ¿Tendremos que recordar lo de que echando al azar caracteres de imprenta no pudo salir la <seg rend="italic">Ilíada</seg>? ¡Lejos de nosotros Demócrito y Leucipo y Holbach y los materialistas todos! ¡Oh ceguera de los hombres! ¡oh dureza de sus corazones! No, no es posible que nos persuadan de doctrinas tan absurdas como impías.</p>
 					<p>Ha surgido en modernos tiempos una secta proterva e impía llamada transformismo, darwinismo o evolucionismo —que con estos y otros tan pomposos nombres se engalana— que en su ceguera y arrogancia pretende que las especies hoy existentes se han producido todas, todas, incluso la humana, unas de otras, a partir de las más sencillas e imperfectas y ascendiendo a las más perfectas y complicadas. Pocas veces se ha visto error más nefasto.</p>

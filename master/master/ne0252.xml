@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Flor de mayo</title>
-				<title type="sub"></title>
+				
 				<title type="short">Flor</title>
-				<title type="idno">
-					<idno type="bne">XX1892709</idno>
-					<idno type="viaf">309278906</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1201</measure>
@@ -141,13 +131,56 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0252</idno>
+						<idno type="cligs">ne0252</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2012">2012</date>, <idno>41746</idno>, <ref target="http://www.gutenberg.org/ebooks/41746"/>.</bibl>
-				<bibl type="print-source">Prometeo, Valencia, <date when="1914">1914</date></bibl>
-				<bibl type="edition-first"><date when="1895">1895</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Flor de mayo</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892709.html">XX1892709</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309278906/">309278906</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1194894968">1194894968</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2012">2012</date>, <idno>41746</idno>, <ref target="http://www.gutenberg.org/ebooks/41746"/>.</bibl>
+					<bibl type="print-source">Prometeo, <pubPlace>Valencia</pubPlace>, <date when="1914">1914</date></bibl>
+					<bibl type="edition-first"><date when="1895">1895</date><idno source="k10plus" type="ppn" n="1376680408" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376680408"/><idno source="k10plus" type="ppn" n="1134595883" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134595883"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de mayo</title> , <publisher>F.Sempere y Comp. Ed.</publisher> <pubPlace>Valencia;Madrid</pubPlace> 		<idno type="ppn" n="342478184" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342478184"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de Mayo</title>: 	<title type="sub">novela</title> <date when="1895">1895</date>, <publisher>Impr. de "El Pueblo"</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1376680408" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376680408"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de Mayo</title>: 	<title type="sub">novela</title> <date when="1895">1895</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1134595883" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134595883"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de Mayo</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher/> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="133440478X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133440478X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de Mayo</title>: 	<title type="sub">[novela]</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445657979" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657979"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de Mayo</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464810574" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464810574"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de mayo</title>: 	<title type="sub">(novela)</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350946167" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350946167"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Valencia</title>: 	<title type="sub">die zwei Romane: Flor de Mayo und Die Huerta (Barraca)</title> <date when="1928">1928</date>, <publisher>Füssli</publisher> <pubPlace>Zürich;Leipzig</pubPlace> 		<idno type="ppn" n="1434597075" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1434597075"/> </bibl>
+						<bibl type="further-edition"><title type="main">Flor de Mayo</title> <date when="1928">1928</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="194771210" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=194771210"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Fleur-de-Mai</title> <date when="1930">1930</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="464707676" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464707676"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de mayo</title> <date when="1958">1958</date>, <publisher>Ed. Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="350946175" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350946175"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition"><title type="main">Flor de mayo</title>: 	<title type="sub">novela</title> <date when="1981">1981</date>, <publisher>Vicent García</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="436693798" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=436693798"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de Mayo</title> <date when="1999">1999</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="323772064" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=323772064"/> 		<idno type="isbn" n="8437617677"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479517194" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479517194"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana. Flor de Mayo. La barraca. Entre naranjos</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="615813569" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=615813569"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Flor de Mayo</title> <date when="2011">2011</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="833992449" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=833992449"/> 		<idno type="isbn" n="8437617677;9788437617671"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +190,14 @@
 				<p>En Flor de mayo nos hallamos ante un Blasco Ibáñez en pleno poder de sus recursos técnicos y compositivos. El realismo, el naturalismo y el impresionismo son atinadamente conjugados por el autor en esta novela, estructurada en torno a un tema colectivo, la lucha por la supervivencia en un pueblo de pescadores, un tema doméstico y personal, un adulterio con secuela de celos y venganzas, y un escenario luminoso, el Mediterráneo y la ciudad de Valencia.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -189,7 +230,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela naturalista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela valenciana</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -218,6 +259,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -225,7 +267,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0252_chap1">
-				<head>I</head>
+				<head xml:id="ne0252_head_000">I</head>
 				<p>Al amanecer cesó la lluvia. Los faroles de gas reflejaban sus inquietas luces en los charcos del adoquinado, rojos como regueros de sangre, y la accidentada línea de tejados comenzaba á dibujarse sobre el fondo ceniciento del espacio.</p>
 				<p>Eran las cinco. Los vigilantes nocturnos descolgaban sus linternas de las esquinas, y golpeando con fuerza los entumecidos pies se alejaban después de saludar con perezoso <seg rend="italics">¡bòn día!</seg> á las parejas de agentes encapuchados que aguardaban el relevo de las siete.</p>
 				<p>Á lo lejos, agrandados por la sonoridad del amanecer, desgarraban el silencio los silbidos de los primeros trenes que salían de Valencia. En los campanarios, los esquilones llamaban á la misa del alba, unos con una voz cascada de vieja, otros con inocente balbuceo de niño, y repetido de azotea en azotea vibraba el canto del gallo con su estridente entonación de diana guerrera.</p>
@@ -371,7 +413,7 @@
 				<p>Se alejó el carromato con suspiros de desvencijamiento y chirridos de hierro viejo, y la mujercita, con sus cestas al brazo, quedó inmóvil en la acera, como si despertase asombrada, no creyendo en la realidad de una reconciliación con su rival.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0252_chap2">
-				<head>II</head>
+				<head xml:id="ne0252_head_001">II</head>
 				<p>Habían pasado muchos años, y sin embargo, unos por referencia y otros como testigos presenciales, todos se acordaban en el Cabañal de lo ocurrido un martes de Cuaresma.</p>
 				<p>El día fué de los más hermosos. El mar estaba tranquilo, terso como un espejo, sin la más ligera ondulación, reflejando el inquieto triángulo de oro que formaba el sol sobre las muertas aguas.</p>
 				<p>Vendíase el pescado como una bendición de Dios. La demanda era mucha en el mercado de Valencia, y las barcas arrastraban sus redes frente al cabo de San Antonio sin la menor inquietud, fiadas en la calma y deseando sus patrones llenar las cestas cuanto antes para regresar al Cabañal, en cuya playa esperaban impacientes las pescaderas.</p>
@@ -481,7 +523,7 @@
 				<p>Pero toda la desesperación de la pobre mujer no impidió que saliese á luz lo que tan urgente hacía el matrimonio; y á los pocos meses la <seg rend="italics">siñá</seg> Tona despachaba copas tras el mostrador, enseñando su pecho voluminoso de vaca rolliza, y agarrada al obscuro pezón una niña blanca, enteca, de ojos azules y cabeza rubia y voluminosa, que parecía una bola de oro.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0252_chap3">
-				<head>III</head>
+				<head xml:id="ne0252_head_002">III</head>
 				<p>Pasaron los años sin que sufriese la menor alteración en su monótona vida la familia que se albergaba en la barca convertida en taberna.</p>
 				<p><seg rend="italics">El Retor</seg> era todo un marinero, fornido, cachazudo, bravo en el peligro. De <seg rend="italics">gato</seg> había ascendido á ser el tripulante de más confianza en la barca del <seg rend="italics">tío Borrasca</seg>, y cada mes solía entregar á su madre cuatro ó cinco duros de ahorros para que los guardase.</p>
 				<p>Tonet no hacía carrera. Entre él y su madre habíase entablado una lucha: Tona buscándole oficios, y él abandonándolos á los pocos días. Fué una semana aprendiz de zapatero; navegó poco más de dos meses con el <seg rend="italics">tío Borrasca</seg> en calidad de <seg rend="italics">gato</seg>, pero el patrón se cansó de pegarle, sin conseguir que le obedeciese; después intentó hacerse tonelero, que era el más seguro de los oficios, pero el maestro le echó á la calle, y por fin á los diez y siete años se metió en una <seg rend="italics">còlla</seg> del puerto, cuadrilla de descargadores de buques, en la que trabajaba hasta dos veces por semana, y esto de mala voluntad.</p>
@@ -559,7 +601,7 @@
 				<p>—<seg rend="italics">Y el que no es granuja, es com el Retor: un bestia</seg>.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0252_chap4">
-				<head>IV</head>
+				<head xml:id="ne0252_head_003">IV</head>
 				<p>Aunque el día era de invierno, picaba tanto el sol, que <seg rend="italics">el Retor</seg> y Tonet estaban en la playa, agazapados á la sombra de un laúd viejo encallado en la arena. Tiempo les quedaba de tostarse cuando saliesen al mar.</p>
 				<p>Los dos hablaban lentamente, como adormecidos por el brillo y el calor de la playa. ¡Vaya un día hermoso! Parecíales imposible que estuviesen en vísperas de Semana Santa, época de los aguaceros y de los repentinos temporales.</p>
 				<p>El cielo, inundado de luz, tenía un tinte blanquecino; como copos de espuma caídos al azar, bogaban por él algunos jirones de vapor plateado, y de la arena caldeada salía un vaho húmedo que envolvía los objetos lejanos, haciendo temblar sus contornos.</p>
@@ -633,7 +675,7 @@
 				<p>Lástima que sus dos mujeres se llevasen tan mal y hubiesen dado aquel escándalo en la Pescadería, del cual sólo vagas noticias habían llegado hasta él.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0252_chap5">
-				<head>V</head>
+				<head xml:id="ne0252_head_004">V</head>
 				<p>Tronaba en las calles del Cabañal, á pesar de que el día amaneció sereno.</p>
 				<p>La gente echábase de la cama aturdida por el ruido sordo é incesante, igual al tableteo de lejanos truenos. Las buenas vecinas, desgreñadas, con los ojos turbios y ligeras de ropas, salían á las puertas para ver á la azulada luz del alba cómo pasaban los fieros judíos, autores de tanto estrépito, golpeando los parches de sus destemplados y fúnebres atabales.</p>
 				<p>Los más grotescos figurones asomaban en las esquinas, como si, barajándose el almanaque, Carnaval hubiese caído en Viernes Santo.</p>
@@ -698,7 +740,7 @@
 				<p>Al día siguiente, cuando las campanas comenzaban á voltear el toque de gloria, cuando se disparaban tiros en las calles y los muchachos aporreaban las puertas con garrotes, la <seg rend="italics">Garbosa</seg>, aquella ruina del mar, aparejada como una barca pescadora, extendía su gran vela latina, blanca, fuerte y nueva, y se alejaba de la playa del Cabañal; contoneábase pesadamente sobre las olas como una belleza arruinada que oculta su vetustez, marchando en busca de la última conquista.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0252_chap6">
-				<head>VI</head>
+				<head xml:id="ne0252_head_005">VI</head>
 				<p>Muy entrada la noche navegaba la <seg rend="italics">Garbosa</seg> en aguas del cabo de San Antonio.</p>
 				<p>Coloreaban en torno de la barca como peces de fuego los encendidos reflejos del faro, rotos y arrollados por la incesante movilidad de las aguas.</p>
 				<p>Destacábase el cabo con su gigantesca cortadura, recta, trabajada y bruñida por las tempestades, y detrás, tierra adentro, erguíase con ascensión interminable el sombrío Mongó como un borrón sobre la inmensidad azul.</p>
@@ -820,7 +862,7 @@
 				<p>Y se fué con su tío hacia el lejano Cabañal, sin echar una última mirada á la infeliz <seg rend="italics">Garbosa</seg>, que se quedaba allí pataleando, prisionera de la arena, recibiendo en su pecho los puñetazos del mar, sintiendo á cada empujón que se le desencuadernaba el cuerpo y salía flotando un pedazo de sus entrañas; muriendo sin gloria, en la obscuridad, tras una larga vida de trabajo, como el caballo viejo, abandonado en medio del camino, cuyo blanco esqueleto atrae el revoloteo de los cuervos.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0252_chap7">
-				<head>VII</head>
+				<head xml:id="ne0252_head_006">VII</head>
 				<p>El producto de la aventura fueron unos doce mil reales, que el tío Mariano entregó al <seg rend="italics">Retor</seg> pocos días después.</p>
 				<p>Algo más ganó el marido de Dolores: el aprecio de su tío, que le consideraba un hombre de pro y estaba satisfecho de haber sacado su parte sin grave riesgo, y el elogio de la gente de playa, que se había enterado del viaje. La salida de las Columbretas resultaba una buena jugada. La escampavía fué allá á riesgo de anegarse y no encontró nada.</p>
 				<p><seg rend="italics">El Retor</seg> estaba como aturdido por su buena fortuna. El producto del <seg rend="italics">alijo</seg>, mas aquellos ahorros amasados peseta sobre peseta, que estaban escondidos donde él y Dolores sabían, formaban una bonita suma, con la que un hombre honrado podía meterse en <seg rend="italics">algo</seg>.</p>
@@ -921,7 +963,7 @@
 				<p>¿Pero no iba á callar? ¡En un día como aquel acordarse de que el mar tiene malas bromas! ¿Y qué? Si no quería verle en peligro, haberlo criado para obispo. Lo importante es ser honrado, trabajar, y venga lo que venga. Ellos nacían allí; no veían más sustento que el mar; se agarraban á sus pechos para siempre y había que tomar buenamente lo que diesen: el agrio de la tempestad ó lo dulce de las grandes pescas. Alguien tenía que exponerse para que la gente comiese pescado; le tocaba á él, y mar adentro se iría como lo estaba haciendo desde chico. <seg rend="italics">¡Rediel, agüela!</seg>... <seg rend="italics">¡calle ya!</seg>... ¡Que viva <seg rend="italics">Flor de Mayo!</seg> Otra copa, caballeros. Un día es un día. Él pagaba, y le darían disgusto los que estaban allí si no los recogían a media noche roncando sobre la arena como si <seg rend="italics">talmente</seg> fuesen unos cerdos.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0252_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0252_head_007">VIII</head>
 				<p>Volvía Pascual á su casa después de pasar la tarde en Valencia, y al llegar á la Glorieta detúvose frente al palacio de la Aduana.</p>
 				<p>Eran las seis. El sol daba un tinte anaranjado a la crestería del enorme caserón, suavizando la sombra verdinegra que las lluvias depositaban en los respiraderos de las buhardillas. La estatua de Carlos III bañábase en el ambiente azul y diáfano, saturada de luz tibia, y por los enrejados balcones escapábase un rumor de colmena laboriosa, gritos, canciones ahogadas y el ruido metálico de las tijeras, cogidas y abandonadas á cada instante.</p>
 				<p>Por el ancho portalón comenzaban a salir como rebaño revoltoso las operarias de los primeros talleres; una invasión de rameada indiana, brazos arremangados y robustos con la cesta como eterno apéndice, y menudos e incesantes pasos de gorrión. Era un confuso vocerío de llamamientos y desvergüenzas, extendiéndose ante la puerta, en el espacio donde paseaban los soldados de la guardia y se levantaban algunos aguaduchos.</p>
@@ -1033,7 +1075,7 @@
 				<p>No; aquello no estaba bien. Bromitas á él, todas las que quisieran; pero eso de meterse con la familia, era muy feo... muy indecente.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0252_chap9">
-				<head>IX</head>
+				<head xml:id="ne0252_head_008">IX</head>
 				<p>Aquel año protegía Dios á los pobres.</p>
 				<p>Así lo decían las pobres mujeres del Cabañal, agrupándose por la tarde en la playa, dos días después de la salida de las barcas.</p>
 				<p>Volvían las parejas del <seg rend="italics">bòu</seg> rápidamente, viento en popa, y la rígida línea del horizonte aparecía dentellada por las innumerables aletas que se aproximaban á pares como palomas unidas por una cinta á flor de agua.</p>
@@ -1247,7 +1289,7 @@
 				<p>Y poco después, un enjambre de manchas blancas marcábase en la bruma de aquel amanecer tempestuoso, corriendo desbocadas mar adentro, como si las atrajera el imán de la fatalidad.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0252_chap10">
-				<head>X</head>
+				<head xml:id="ne0252_head_009">X</head>
 				<p>Á las nueve navegaba la <seg rend="italics">Flor de Mayo</seg> á la vista de Sagunto, en el espacio libre que el <seg rend="italics">tío Batiste</seg>—con su afición á guiarse más por el fondo del mar que por los accidentes de la costa—marcaba entre la <seg rend="italics">Roca del Puig</seg> y el <seg rend="italics">Algar de Murviedro</seg>.</p>
 				<p>Ninguna pareja se había atrevido á ir tan lejos.</p>
 				<p>Por la parte de Valencia, y prolongándose hacia Cullera, marcábanse como puntos blancos las otras barcas emparejadas.</p>

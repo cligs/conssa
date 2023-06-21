@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La rendición de Santiago</title>
-				<title type="sub"></title>
+				
 				<title type="short">Santiago</title>
-				<title type="idno">
-					<idno type="viaf">bimo0001081035</idno></title>
+				
 				<author>
-					<idno type="bne">XX952949</idno>
-					<idno type="viaf">24624818</idno>
-					<name type="short">Lanza</name>
-					<name type="full">Silverio Lanza</name>
+					<name type="short" ref="#Lanza"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1539</measure>
@@ -139,13 +131,35 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0193</idno>
+						<idno type="cligs">ne0193</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, Alicante, <date when="2004">2004</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/novela-i--0/"/>.</bibl>
-				<bibl type="print-source">Edición digital basada en la de [Madrid], Fundación Santander Central Hispano, D.L. <date when="1999">1999</date></bibl>
-				<bibl type="edition-first"><date when="1907">1907</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La rendición de Santiago</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/bimo0001081035/">bimo0001081035</idno>
+				</idno>
+				</title>
+					<author xml:id="Lanza">
+						<name type="full"><forename>Silverio</forename> <surname>Lanza</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575 - IO 9576">IO 9575 - IO 9576</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/121485129">121485129</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q9077402/">Q9077402</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX952949.html">XX952949</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/24624818/">24624818</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Cervantes Virtual, <pubPlace>Alicante</pubPlace>, <date when="2004">2004</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/novela-i--0/"/>.</bibl>
+					<bibl type="print-source">Edición digital basada en la de [<pubPlace>Madrid</pubPlace>], Fundación Santander Central Hispano, D.L. <date when="1999">1999</date></bibl>
+					<bibl type="edition-first"><date when="1907">1907</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -158,6 +172,14 @@
 				<p>La estructura novelesca es original y novedosa, en su época y en la nuestra. La constituye un conjunto de escenas inconexas, cortadas muy a mednudo por las opiniones, paradojas y brillantes ocurrencias de Silverio Lanza. Todo el panorama social y cultural de la restauración e spuesto en la picota.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575" key="IO 9575" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -189,7 +211,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">ensayo novelado</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -216,12 +238,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-07-19" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Advertencia</head>
+				<head xml:id="ne0193_head_000">Advertencia</head>
 				<p>Aun está usted a tiempo de dejarme, lector y señor mío. Olvide usted que para leerme gastó usted unas pesetas; añádalas usted a las muchas que ha empleado mal o le han robado o le han exigido, y tire usted este libro sin leerlo, si no sabe usted leer.</p>
 				<p>Quiero decir que si usted buscaba un libro que <seg rend="italic">adornase</seg>, su biblioteca o su mesa de despacho, ha perdido usted su tiempo. Si usted buscaba el libro de moda, ha perdido usted su tiempo. Si usted buscaba el libro nuevo para hablar de él a los amigos y a los contertulios, ha perdido usted su tiempo, porque nadie le escuchará si de mí le habla. Si buscaba usted un libro que le deleitase, busque usted otro, porque éste es triste y soporífero. Si quería usted un libro que le ilustrase, no ha escogido usted bien, porque éste no le dirá nada nuevo; le dirá solamente lo que usted ya sabe, aunque no se atreva a decir que lo sabía. Y si buscaba usted un libro malo para darse el placer de censurarlo, también ha perdido usted su tiempo, porque en las primeras páginas del libro le advierto a usted que protesto de una manera enérgica y rotunda contra las censuras de usted.</p>
 				<p>Al comprar usted el libro, ha adquirido usted el derecho de leerlo, pero no el de censurarlo. Esto le parecerá a usted raro, pero se lo explicaré a usted.</p>
@@ -235,7 +258,7 @@
 				<p>Usted, lector mío, no debe seguir la lectura de este libro si se cree con derecho a censurarlo, porque el dinero que yo he recibido de usted ha sido solamente a cambio de papel impreso, y ya lo tiene usted en sus manos. Ni por las pocas pesetas que me ha dado usted, ni por ningún dinero me avengo a que me censure usted, que podrá ser, o no, una persona distinguida. Si desea usted censurarme, quiérame usted; disculpe mis faltas; corríjamelas razonadamente; convénzame usted de que es superior a mí en cultura, en cortesía y en corazón; y yo me someteré gustosísimo a su autoridad de usted.</p>
 			</div>
 			<div>
-				<head>Prólogo</head>
+				<head xml:id="ne0193_head_001">Prólogo</head>
 				<p>Entre los innumerables escritores que se florecieron a fines del pasado siglo, ocupa un lugar Silverio Lanza, cuyas obras va publicando su amigo D. J. B. A., a quien debo lo que nunca le podré pagar y a quien complazco escribiendo estas líneas que me tiene pedidas para algunos de los tomos, y que envío al señor A. para colocarlas en la cabeza de éste.</p>
 				<p>No es LA RENDICIÓN DE SANTIAGO el mejor libro de Silverio, ni es tampoco el peor. Si yo pudiese olvidar la serenidad de juicio y la discreción altísima que son prenda de buena crítica y que me acompañan siempre, quizá diría que esta obra que nos ocupa quedaba más bien a un extremo que al otro. Lo que sí es cierto con indubitable certidumbre, es que este libro es de su autor, sin que esto envuelva la afirmación de una personalidad típica, que sólo llegamos a conseguir quienes perseguimos el <seg rend="italic">único o vario</seg> que dijo Sócrates.</p>
 				<p>Sin negar a Silverio Lanza condiciones más bien de genial que de humorista, cae dentro de la esfera de acción del tropo; defecto que en todos los evos caracteriza las literaturas mediocres, dicho sea sin servicia. Y no me refiero al tropo, en cuanto es causa formal, sino en cuanto es interrogación sindérica; que si sólo a la influencia del tropo en la forma hubiéramos de atenernos, perdonables serían todos los errores de las literaturas tropicales.</p>
@@ -248,7 +271,7 @@
 				<p>Villa Arcadia, en Pozuelo.</p>
 			</div>
 			<div>
-				<head> Mi retrato</head>
+				<head xml:id="ne0193_head_002"> Mi retrato</head>
 				<p>Como este libro llegará a ser vendido a diez céntimos, aunque en las librerías <seg rend="italic">marque dos pesetas</seg>, bueno es que lleve mi retrato para que lo anuncien <seg rend="italic">con el retrato del autor</seg>.</p>
 				<p>Siempre he regateado mi imagen a editores y a periodistas, porque se me figura que soy muy feo, y bien lo prueba que jamás he hallado quien me quisiese por mi linda cara.</p>
 				<p>También he tenido la suerte (desgracia lo es para muchos) de no figurar en ningún suceso, porque</p>
@@ -279,7 +302,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0193_chap1">
-				<head> La aristocracia de la sangre y la aristocracia del vino</head>
+				<head xml:id="ne0193_head_003"> La aristocracia de la sangre y la aristocracia del vino</head>
 				<quote><p>Franceses: Tenéis todo lo que necesitáis para ser dichosos; sólo os falta el vivir seguros de que dormiréis en vuestras casas cuando seáis inocentes.</p>
 					<ab> A. Dumas </ab>
 				</quote>
@@ -312,7 +335,7 @@
 				<p>Pero, ¡qué tontos son los aristócratas de la sangre y los aristócratas del vino!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0193_chap2">
-				<head> La vil policía</head>
+				<head xml:id="ne0193_head_004"> La vil policía</head>
 				<p>Parece que escribo una obra contra la Policía, y así les parecerá a los tontos. Voy a desengañarles.</p>
 				<p>Desde luego, perdería mi tiempo atacando a funcionarios que no me molestan, ni me han molestado, ni, probablemente, me molestarán; que no han de procesarme (beneficio prodigioso para vender libros), y que no me ofrecerán dos pesetas para que los juzgue cariñosamente.</p>
 				<p>Además. Imaginar un perverso agente de Policía, un perverso cura, un perverso juez y un perverso guardia civil y publicar tales perversidades, es de la mejor conveniencia para esas instituciones, porque sus individuos parecen ángeles si se les compara con el perverso imaginado. Lo temible para el clero son los curas santos concebidos por Víctor Hugo, Alarcón y Escrich; lo temible para la Policía son las aventuras de <seg type="foreign" xml:lang="en"><seg type="abbr">Mr.</seg></seg> <seg type="foreign" xml:lang="fr">Lecoq</seg>. Al lado de aquellos personajes fantásticos parecen los reales poco airosos.</p>
@@ -335,7 +358,7 @@
 				</lg>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0193_chap3">
-				<head>La autoridad</head>
+				<head xml:id="ne0193_head_005">La autoridad</head>
 				<p>El buen Luis se quedó aterrado: ¡un novio para su hija! Fue preciso que Ramona reprodujese fielmente la confesión de Ángela. El muchacho la requebró a ella, a la jorobada, y la pidió amores en una carta muy bien hecha; y claro es que Angelita quería decirle que sí, pero lo había consultado con su madre, y Ramona la había oído y la había respondido:</p>
 				<p>-Pues, hija, a tu padre se lo diré.</p>
 				<p>Luis no creía que un hombre honrado pudiera desear aquella criatura deforme.</p>
@@ -454,7 +477,7 @@
 				<p>Pues, bien: un polizonte beodo, con las manos manchadas por el vino, por los naipes y por la obscenidad, me denuncia como autor de un delito que no he cometido, y me convierte en un criminal perseguible, y perseguido; abominable, y abominado. Ese polizonte, podrá sufrir una amonestación; podrá ir a la horca, degradado previamente, pero la corrección se ha consumado; yo soy criminal, hasta que otra autoridad opine lo contrario; y aun, si así opina, soy para siempre un procesado que no sufrió condena; y que aquella virginidad del alma, que yo llamaba mi honor, ha desaparecido. La autoridad es, la autoridad; eso: algo que ennoblece a quien la usa, y deshonra a quien la sufre; algo que debiera ennoblecer a quien la sufre, y ser ennoblecida por quien la usa; pero, que no es así y es del otro modo, y está muy bien que sea como es; porque estos asuntos no son materia de razón, sino artículo de fe; de una fe que se logra fácilmente, pasando, como yo, algunas semanas en la cárcel; y decidiéndose, como yo, a no volver a la cárcel, por un poco más o menos, de una fe que es tan cómoda.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0193_chap4">
-				<head> El expediente</head>
+				<head xml:id="ne0193_head_006"> El expediente</head>
 				<p>La mañana del día que fue enterrado el tabernero, apareció la taberna cerrada, y en la puerta un letrero, que decía así:</p>
 				<p>CERRADO</p>
 				<p>POR DEFUNCIÓN</p>
@@ -513,7 +536,7 @@
 				<p>¡Bienaventurado quien halle en la punta de su bota el expediente para acabar con los expedientes; y, dándoles un puntapié, logre cubrir el expediente!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0193_chap5">
-				<head> La Patria</head>
+				<head xml:id="ne0193_head_007"> La Patria</head>
 				<quote><p>¿Qué no se le perdona a un niño? Se le perdona el ser señor, el ser príncipe, el ser rey.</p>
 					<ab> Victor Hugo</ab> </quote>
 
@@ -601,7 +624,7 @@
 				<p>Patria, sé madre, y tendrás ciudadanos.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0193_chap6">
-				<head>El gran poder</head>
+				<head xml:id="ne0193_head_008">El gran poder</head>
 				<p>A las doce y media, llamó Santiago a la puerta de la taberna.</p>
 				<p>-¿Quién?</p>
 				<p>-Madre, soy yo.</p>
@@ -749,7 +772,7 @@
 				<p>¡Pobre Prensa!</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0193_chap7">
-				<head>Desacato casero</head>
+				<head xml:id="ne0193_head_009">Desacato casero</head>
 				<p>He dicho en el capítulo anterior, que Ricardo no amaba a su hijo, y esto habrá satisfecho a los cuatro tontos y a los cuatro granujas partidarios de la policía irracionalmente organizada. Les habrá satisfecho, porque hallarán que exagero, y argumentador que miente, es vencido.</p>
 				<p>Voy a quitarles la satisfacción a esos señores, diciéndoles que, en mi humilde opinión, los polizontes pertenecen a la especie humana, y se distinguen de los demás hombres en que no se aman a sí mismos. Un policía puede amar a su madre, a sus hijos, a sus amigos y a sus paisanos, pero si se amase a sí mismo, dejaría de ser policía.</p>
 				<p>El desamor de Ricardo hacia Luisito no provenía de que Ricardo fuese polizonte, sino de otras causas; y voy a referirlas:</p>
@@ -782,7 +805,7 @@
 				<p>Y Ricardo, que tenía conciencia de su degeneración, como hombre, no amaba a su hijo; y, como polizonte, estaba dispuesto a explotarle.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0193_chap8">
-				<head> Otro gran poder</head>
+				<head xml:id="ne0193_head_010"> Otro gran poder</head>
 				<p>Santiago bajó a pie desde la casa del periódico hacia la Puerta del Sol. Ya en la calle, pudo convencerse de que le seguía un sujeto con el tipo de los chulos.</p>
 				<p>La persecución fue tan inmediata que el desconocido, viendo que Santiago se encaraba con él, tuvo que disculparse y dijo:</p>
 				<p>-Perdone usted; creí que era usted un amigo que me había encargado que se lo arreglase todo para irse de voluntario a la guerra de Cuba.</p>
@@ -831,7 +854,7 @@
 				<p>-¡Bah! Un Ejército que no tiene libertad, ni medios, ni derecho para defender a un soldado, ¿cómo va a defender la Patria?</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0193_chap9">
-				<head>La verdadera terapéutica</head>
+				<head xml:id="ne0193_head_011">La verdadera terapéutica</head>
 				<p>Cuando Santiago se dio cuenta de que vivía y comprendió que se hallaba en el hospital, sintió el frío del espanto.</p>
 				<p>Es necesario ser pobre para comprender el horror que el hospital produce.</p>
 				<p>Los socialistas majaderos, que suelen ser artesanos holgazanes con pretensiones cursis, se anotan como victoria (¡tiene gracia!) el haber conseguido una ley sobre accidentes del trabajo. Han sustituido los recursos de una caridad que pudiera ser inagotable (y que ya no es preciso ejercerla), con unas pesetitas tan escasas o tan litigadas, que aseguran el hambre del paciente durante su enfermedad.</p>
@@ -952,7 +975,7 @@
 				<p>-¡Bah! ¡Los médicos! Pero si el médico es el que cura, ¿quién es el médico, el verdadero médico? ¿Quién? El duque.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0193_chap10">
-				<head>Lo que se llama aristocracia</head>
+				<head xml:id="ne0193_head_012">Lo que se llama aristocracia</head>
 				<p>El celibato del clero es una desgracia para los sacerdotes, para la iglesia y para las naciones católicas.</p>
 				<p>El celibato eclesiástico no es dogmático: lo han defendido los curas jóvenes, y lo soportan los curas viejos.</p>
 				<p>El celibato priva al sacerdote del amor de todos y del amor a todo, que son los amores que, con el suyo de ella, proporciona la mujer.</p>
@@ -1046,7 +1069,7 @@
 				<p>El atropello cometido por el duque con su automóvil en la persona del infeliz Román, alteró un instante la vida del palacio. El diplomático se dispuso a ejercer toda su influencia, y el abogadillo toda su habilidad; pero el duque, por consejo de don Saturnino, les hizo quedarse a comer; y, entre tanto, el administrador, en el Juzgado, y doña María, en el hospital, encauzaron hábilmente el asunto.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0193_chap11">
-				<head> Lo que se llama anarquía</head>
+				<head xml:id="ne0193_head_013"> Lo que se llama anarquía</head>
 				<p>Por escribir yo articulitos candorosos como el anterior, me ha llamado anarquista (produciéndome inocentemente muchas molestias) mi grande amigo y mayor literato <seg type="abbr">D.</seg> Pío Baroja.</p>
 				<p>El ser anarquista no produce a nadie temor ni sonrojo; pero es peligroso y vergonzoso que le llamen anarquista.</p>
 				<p>De aquí ya se deduce que se usa mal del vocablo.</p>
@@ -1091,7 +1114,7 @@
 				<p>Y por eso me llama anarquista (produciéndome inocentemente muchas molestias) mi grande amigo y mayor literato don Pío Baroja.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0193_chap12">
-				<head> El sempiterno femenino</head>
+				<head xml:id="ne0193_head_014"> El sempiterno femenino</head>
 				<p>Santiago llegó, no sin cansancio, a la casa de Román. El cuchitril que servía de garita a los porteros tenía abierto el paso hacia el portal y el paso hacia el patio. En el inmediato fondo de éste lavaba en una artesa la mujer del gallego. Santiago, antes que quisiese llamar, empezó a toser; acercose la portera, y cuando vio al repatriado, a quien a conocía, le hizo sentarse, le ofreció agua fresca, y le felicitó por verse libre del <seg rend="italic">maldito</seg> hospital.</p>
 				<p>-Si Román sábelo que usted hubiese de venir, pues que no sale; pero que está en casa del amo, porque han de ir todas las mañanas con don Saturnino a tomar la orden.</p>
 				<p>-Ya vendrá.</p>
@@ -1201,7 +1224,7 @@
 				<p>Y Santiago hundió su rostro en aquel seno abundante.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0193_chap13">
-				<head>¡Vivid la vida!</head>
+				<head xml:id="ne0193_head_015">¡Vivid la vida!</head>
 				<p>Pésame de haber descrito la brutalidad cometida por Santiago en la rolliza persona de doña María, porque si algún lector llegó a esta página, de seguro que no continúa leyendo; encierra el libro donde no puedan hallarlo mujeres, viejos y jóvenes; y después de condenar <seg rend="italic">mi</seg> obscenidad, prostituirá a su sirviente, deshonrará a una niña, seducirá a una casada o bestializará, si es su hábito.</p>
 				<p>Así fueron mis ayos, mis maestros, mis preceptores y mis consejeros respetables; por su culpa, no gocé de las grandes creaciones de la pintura, de la escultura y del arte literario; por su culpa, no gocé de mi misma vida, que era mía, exclusivamente mía, y que me robaron villanamente, sin que ahora, que la veo terminar, me quede otro consuelo que apretar contra el papel los puntos de la pluma y maldecir de mis consejeros respetables, de mis preceptores, de mis maestros y de mis ayos.</p>
 				<p>Pero entiéndase que no maldigo sus personas, porque, al fin, lucieron la necedad que era costumbre: he aquí la que yo maldigo. Siempre he sentido un intenso amor a las personas, y un odio intenso a las costumbres. Esto debe de ser gran virtud, porque me la han reído siempre. Ella me ha enseñado lo que muchos ignoran; y creo que, si todos la practicasen, haríamos en veinticuatro horas una extraordinaria revolución.</p>
@@ -1258,7 +1281,7 @@
 				<p>Y recordad que la vida propia se puede vivir sin la vida ajena, como la digestión se hace sin el estómago del prójimo.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0193_chap14">
-				<head>El bloqueo de Santiago</head>
+				<head xml:id="ne0193_head_016">El bloqueo de Santiago</head>
 				<p>Cuando llegó doña María al portal dijo al matrimonio.</p>
 				<p>-Santiago está muy malito, muy débil. Le ha dado como un vértigo al asomarse a la ventana y verse a tan grande altura. Le he hecho acostarse en su cama de ustedes, y allí sigue desmayado.</p>
 				<p>-¡Pobre muchacho!</p>
@@ -1286,7 +1309,7 @@
 				<p>-Está bien. Siga todo como siempre. Esperaremos, y a callar.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0193_chap15">
-				<head> ¡Solo!</head>
+				<head xml:id="ne0193_head_017"> ¡Solo!</head>
 				<quote><p>En la Naturaleza la soledad más absoluta y mejor soportada es la que rodea a un hombre de bien.</p>
 					<p>No hay poder humano que pueda nada contra un corazón que se siente solo en medio de la vida; la mayor fuerza que se conoce en el mundo es la de un hombre solo.</p>
 					<ab>Tomás Maestre</ab>
@@ -1376,7 +1399,7 @@
 				<p>Santiago no podía contar con sus parientes de Vilaldea. El pobrecito abuelo que tuvo arrendado el molino de Valdezotes, había muerto. Santiago no tenía dinero ni testigos para casarse, y le era necesario aceptar el dinero y los testigos de la novia. Esto era poco airoso; pero... Santiago estaba solo.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0193_chap16">
-				<head> La primera amonestación</head>
+				<head xml:id="ne0193_head_018"> La primera amonestación</head>
 				<p>-¿Da usted su permiso, don Saturnino?</p>
 				<p>-Adelante, doña María.</p>
 				<p>La jamona cerró cuidadosamente la puerta y se acercó a la mesa del despacho.</p>
@@ -1445,11 +1468,11 @@
 				<p>Don Saturnino miró a su hija, y quedó callado. La jamona le dio gracias por todo, y salió arrogante y sonriendo por la puerta del despacho.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0193_chap17">
-				<head> Santiago flaquea</head>
+				<head xml:id="ne0193_head_019"> Santiago flaquea</head>
 				<p>Santiago renunció en beneficio de su futura esposa, y por cuatrocientos duros, la herencia del abuelo muerto en la mayor miseria.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0193_chap18">
-				<head>Santiago obedece</head>
+				<head xml:id="ne0193_head_020">Santiago obedece</head>
 				<p>Román y su mujer se repartieron la boda. La mujer estuvo en la iglesia y en el almuerzo, y Román estuvo en la comida de campo, que se celebró en Puerta de Hierro.</p>
 				<p>Cuando los porteros se acostaron reunieron sus impresiones.</p>
 				<p>No había escaseado nada.</p>
@@ -1497,7 +1520,7 @@
 				<p>Santiago se calló, se acordó de su madre, y, lo mismo que ella, se resignó a obedecer.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0193_chap19">
-				<head> La mancha de la mora</head>
+				<head xml:id="ne0193_head_021"> La mancha de la mora</head>
 				<p>Acabo de leer las anteriores cuartillas a mi amiga la lavandera que pone en colada mis calzones y mis manuscritos, y me dice que lo de Barcelona no <seg rend="italic">saldrá bien</seg>, y me pregunta si esa mancha es de grasa o de pintura.</p>
 				<p>-Es la consabida mancha de la mora.</p>
 				<p>-Explíquese usted.</p>
@@ -1520,7 +1543,7 @@
 				<p>Es hambre y sed de justicia.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0193_chap20">
-				<head>Santiago tiembla</head>
+				<head xml:id="ne0193_head_022">Santiago tiembla</head>
 				<p>Yo vivía accidentalmente en Valdezotes de Arriba, donde pasaba la cuarentena de los baños medicinales, y Santiago vivía en Valdezotes de Abajo.</p>
 				<p>El ir de caza me servía de pretexto para pasearme armado, y salía de caza diariamente. Conocí a Santiago en su molino, le visité a menudo y llegó el pobre hombre a contarme las desventuras con que formé la novelita que dejo terminada.</p>
 				<p>Una tarde fijó Santiago su atención en mi escopeta y me dijo:</p>
@@ -1574,7 +1597,7 @@
 				<p>-¡Nombre de Dios!: porque no puedo.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0193_chap21">
-				<head> Por si muove</head>
+				<head xml:id="ne0193_head_023"> Por si muove</head>
 				<p>No soy el culpable, y quizá no lo sean ni Dios ni el diablo, de la infinita necedad humana; y he de soportarla con paciencia, porque me es preciso soportarla.</p>
 				<p>Si hablo de un Lucas caballeroso, ningún Lucas decente (y habrá muchos) se cree aludido, y me envía un cajón de cigarros. Pero si hablo de un Manuel que tiene sarna y se muerde las uñas, se creen aludidos todos los Manueles que conozco, aunque sean personas pulcras y sanas.</p>
 				<p>Si pinto un pueblo con caudaloso río y encantadores jardines, no me nombran hijo adoptivo en Aranjuez. Pero si añado que las mujeres son chismosas, se irritan contra mí todos los pueblos de España, aunque no tengan río ni jardines.</p>
@@ -1590,7 +1613,7 @@
 				<p>En la cuenta de los caciques hay que cargar las brutalidades actuales, y la impunidad que permite a locos y a majaderos, armados de bombas, de cuchillos y de procesos, molestar al rey, a Maura y a mí.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0193_chap22">
-				<head> Santiago se humilla</head>
+				<head xml:id="ne0193_head_024"> Santiago se humilla</head>
 				<quote><p>Aquí no manda la ley, ni el rey, ni Dios, ni el diablo; sino el señor Santiago.</p>
 					<ab><seg rend="italic"> Pasquín aparecido en la fachada del Ayuntamiento de Valdezotes.</seg></ab>
 				</quote>
@@ -1687,7 +1710,7 @@
 		</body>
 		<back>
 			<div>
-				<head> La rendición de Santiago</head>
+				<head xml:id="ne0193_head_025"> La rendición de Santiago</head>
 				<p>Silverio Lanza, autor de esta obrita, murió en Salamanca, en una miserable casucha de la calle de Tentenecio. Tocábamos juntos en un café, y así nos ganábamos la vida; pero Silverio, sin familia, y encerrado en aquella ratonera, gastaba mucho, comía mal, y la tisis se apoderó de él.</p>
 				<p>Ya no pudo tocar la bandurria y pensó en irse al hospital para morir allí.</p>
 				<p>Vendió su escasa ropa y sus escasos muebles, para franquear las cartas que escribía pidiendo caridad. Muy pocas personas le contestaron, y éstas se limitaban a recriminarle.</p>
@@ -1733,14 +1756,14 @@
 				<p>SILVERIO LANZA</p>
 			</div>
 			<div>
-				<head> Filosofía descarnada</head>
+				<head xml:id="ne0193_head_026"> Filosofía descarnada</head>
 				<p>Ya saben ustedes que si guardan sesenta kilogramos de difunto en un ataúd de zinc, llega un día que la carne ha desaparecido. ¿Quién se ha comido al muerto? Preciso es confesar que el muerto se ha comido a sí mismo a fuerza de discurrir.</p>
 				<p>Y, ¿qué discurren los muertos?</p>
 				<p>Como la vida nerviosa subiste después que termina la vida muscular claro es que el muerto se apercibe de que le tocan, y oye lo que se dice a su lado. Y después... nada nuevo: algún ruido de trepidación, y a comerse hasta los tobillos discurriendo.</p>
 				<p>Olvidaba decir a ustedes que todas las leyes (sabias) tienen su verificación experimental, y no le falta ésta a mi ley de la <seg rend="italic">autofagia</seg> de ultratumba. En efecto, ni la santidad ni la perversidad, ni las enfermedades ni la robustez determinan la consunción del cadáver. En cambio, vengo observando que al destapar el ataúd de un tonto aparece intacto el muerto: el pobrecito siguió sin discurrir.</p>
 			</div>
 			<div>
-				<head>Ave, César: tu víctima te saluda</head>
+				<head xml:id="ne0193_head_027">Ave, César: tu víctima te saluda</head>
 				<p>Al terminar el alquiler de la sepultura de Silverio, no pude renovarlo, y sólo obtuve la gracia de presenciar la exhumación.</p>
 				<p>Al abrir el ataúd, cayó un papel que yo había colocado y donde aún podía leerse:</p>
 				<p><seg rend="italic">Este es Sil</seg><seg rend="italic">Lanza,</seg><seg rend="italic"> que vivió pe</seg><seg rend="italic">nido</seg><seg rend="italic">por la Envi</seg><seg rend="italic">y por la Soberbia.</seg><seg rend="italic"> Hasta el últ</seg><seg rend="italic">momento</seg><seg rend="italic"> pensaba en</seg><seg rend="italic">a los caciques</seg><seg rend="italic">y a sus mujer</seg></p>

@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Genio y figura...</title>
-				<title type="sub"></title>
+				
 				<title type="short">Genio</title>
-				<title type="idno">
-					<idno type="viaf">309272320</idno></title>
+				
 				<author>
-					<idno type="bne">XX918093</idno>
-					<idno type="viaf">46770556</idno>
-					<name type="short">Valera</name>
-					<name type="full">Juan Valera</name>
+					<name type="short" ref="#Valera"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">830</measure>
@@ -139,22 +131,75 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0151</idno>
+						<idno type="cligs">ne0151</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2003">2003</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/genio-y-figura--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcdv1g3 "/>.</bibl>
-				<bibl type="print-source">Madrid, Librería de Fernando Fé, <date when="1897">1897</date></bibl>
-				<bibl type="edition-first"><date when="1897">1897</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Genio y figura...</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/309272320/">309272320</idno>
+				</idno>
+				</title>
+					<author xml:id="Valera">
+						<name type="full"><forename>Juan</forename> <surname>Valera</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9930 - IO 9935">IO 9930 - IO 9935</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11880376X">11880376X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q463630/">Q463630</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX918093.html">XX918093</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/46770556/">46770556</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2003">2003</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/genio-y-figura--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcdv1g3 "/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Librería de Fernando Fé, <date when="1897">1897</date></bibl>
+					<bibl type="edition-first"><date when="1897">1897</date><idno source="k10plus" type="ppn" n="464130352" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464130352"/><idno source="k10plus" type="ppn" n="133535975" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133535975"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1897">1897</date>, <publisher>Fernando Fé</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464130352" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464130352"/> </bibl>
+						<bibl type="further-edition"><title type="main">Genio y figura</title> <date when="1897">1897</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="133535975" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133535975"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1922">1922</date>, <publisher>Impr. Alemana</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1404637214" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1404637214"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura ...</title> <date when="1922">1922</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="420543643" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=420543643"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title>: 	<title type="sub">novelas</title> <date when="1922">1922</date>, <publisher>Impr. Alemana [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="306616963" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=306616963"/> </bibl>
+						<bibl type="further-edition"><title type="main">Genio y figura ...</title>: 	<title type="sub">novelas</title> <date when="1922">1922</date>, <publisher>Impr. "Cinema"</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099854546" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099854546"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title>: 	<title type="sub">novela</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="522769284" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522769284"/> </bibl>
+						<bibl type="further-edition"><title type="main">Genio y figura</title>: 	<title type="sub">novela</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099854554" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099854554"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1937">1937</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1345353022" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1345353022"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title>: 	<title type="sub">novela</title> <date when="1937">1937</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="467742545" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467742545"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1945">1945</date>, <publisher>Ed. Molino Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="680194088" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=680194088"/> </bibl>
+						<bibl type="further-edition"><title type="main">Genio y figura</title> <date when="1947">1947</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="730716384" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=730716384"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1975">1975</date>, <publisher>Ediciones Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="18358001X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=18358001X"/> 		<idno type="isbn" n="8437600502"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1978">1978</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="188339663" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=188339663"/> 		<idno type="isbn" n="8437600502"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1982">1982</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1618055941" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1618055941"/> 		<idno type="isbn" n="8437600502"/></bibl>
+						<bibl type="further-edition"><title type="main">Genio y figura</title> <date when="1982">1982</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="442337663" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=442337663"/> </bibl>
+						<bibl type="further-edition"><title type="main">Genio y figura</title> <date when="1986">1986</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="219296014" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=219296014"/> 		<idno type="isbn" n="8437600502"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Genio y figura</title> <date when="1986">1986</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="04348123X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=04348123X"/> 		<idno type="isbn" n="8437600502"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">(Novelas): Doña Luz, Juanita la Larga, Genio y figura, Morsamor</title> <date when="2003">2003</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1179382595" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1179382595"/> 		<idno type="isbn" n="8489794863"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Novelas</title>: 	<title type="sub">Doña Luz. Juanita la Larga. Genio y figura. Morsamor</title> <date when="2003">2003</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="381614182" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=381614182"/> 		<idno type="isbn" n="8489794863"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">A translation of Juan Valera's Genio y figura</title> <date when="2011">2011</date>, <publisher>Edwin Mellen Press</publisher> <pubPlace>Lewiston, N.Y</pubPlace> 		<idno type="ppn" n="780265351" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=780265351"/> 		<idno type="isbn" n="9780773439450;0773439455"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
 				<p>Rafaela es una joven andaluza que intenta tener fortuna en Portugal. Viaja a Brasil aconsejada para que cante, donde Joaquín Figueredo intenta ayudarla. No triunfa como cantante, pero mantiene una estrecha relación con Joaquín, persona mayor y poco querido. Ella lo cambia para que sea mejor visto e invierta en empresas positivas para la sociedad. Se casan, aunque Rafaela le engaña de manera constante con numerosos amantes, muchos de ellos diplomáticos de otros países (Paraguay, Argentina, Inglaterra, etcétera). Uno de ellos es Juan Maury. Durante un tiempo Rafaela desaparece de las fiestas sociales, pero vuelve a los meses. Su marido muere y ella reparte la herencia de manera muy generosa. Ella se muda a París, donde se relaciona con la clase alta durante muchos años. Allí descubre a un antiguo amigo de Portugal y Brasil. Él intenta seducirla. Ella confiesa en un largo texto lo que le ha pasado durante esos años: tuvo una hija de Juan Maury, niña que estuvo en un internado y que con el tiempo quiso hacerse monja de clausura. Ella siguió teniendo relaciones con diferentes amantes. Con uno de ellos creó una relación paterno-filial. Intentó que Juan Maury reconociese a su hija, pero este no lo hizo. Ella sospecha que su hija se avergüenza del pasado de su madre y de su origen bastardo, por lo que al final se suicida.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9931" key="IO 9931" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -167,7 +212,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">realista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -185,7 +230,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela realista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">5</term>
@@ -215,6 +260,7 @@
 		<revisionDesc>
 			<change when="2015-08-13" who="#jct">Initial TEI version.</change>
 			<change when="2015-11-06" who="#jct">New metadata after reading the text as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -236,7 +282,7 @@
 
 
 			<div n="1" type="chapter" xml:id="ne0151_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0151_head_000">- I -</head>
 				<p>En tres distintas y muy apartadas épocas de mi vida, peregrinando yo por diversos países de Europa y América, o residiendo en las capitales, he tratado al vizconde de Goivo-Formoso, diplomático portugués, con quien he tenido amistad afectuosa y constante. En nuestras conversaciones, cuando estábamos en el mismo punto, y por cartas, cuando estábamos en punto distinto, discutíamos no poco, sosteniendo las más opuestas opiniones, lo cual, lejos de desatar los lazos de nuestra amistad, contribuía a estrecharlos, porque siempre teníamos qué decirnos, y nuestras conversaciones y disputas nos parecían animadas y amenas.</p>
 				<p>Firme creyente yo en el libre albedrío, aseguraba que todo ser humano, ya por naturaleza, ya por gracia, que Dios le concede si de ella se hace merecedor, puede vencer las más perversas inclinaciones, domar el carácter más avieso y no incurrir ni en falta ni en pecado. El Vizconde, por el contrario, lo explicaba todo por el determinismo; aseguraba que toda persona era como Dios o el diablo la había hecho, y que no había poder en su alma para modificar su carácter y para que las acciones de su vida no fuesen sin excepción efecto lógico e inevitable de ese carácter mismo.</p>
 				<p>Los ejemplos, en mi sentir, nada prueban. De ningún caso particular pueden inferirse reglas generales. Por esto creo yo que siempre es falsa o es vana cualquier moraleja que de una novela, de un cuento o de una historia se saca.</p>
@@ -245,7 +291,7 @@
 				<p>Voy, pues, a ver si los relato, y si consigo, no adoctrinar ni enseñar nada, sino divertir algunos momentos o interesar a quien me lea.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0151_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0151_head_001">- II -</head>
 				<p>Hace ya muchos años, el vizconde y yo, jóvenes entonces ambos, vivíamos en la hermosa ciudad de Río de Janeiro, capital del Brasil, de la que estábamos encantados y se nos antojaba un paraíso, a pesar de ciertos inconvenientes, faltas y aun sobras.</p>
 				<p>La fiebre amarilla, recién establecida en aquellas regiones, solía ensañarse con los forasteros.</p>
 				<p>Las <seg rend="italic">baratas</seg>, que así llaman allí a ciertas asquerosas cucarachas con alas, nos daban muchísimo asco, sobre todo en los instantes que preceden a la lluvia, porque dichos animalitos buscan refugio en las habitaciones, las invaden, cuajan el aire formando espesas nubes, se posan en los muebles, en las manos y en las caras y esparcen un olor empalagoso y algo nauseabundo.</p>
@@ -262,13 +308,13 @@
 				<p>Menos en las temporadas en que había teatro, la Sra. de Figueredo recibía todas las noches. Cuando había teatro recibía también, pero no siempre. Sus tertulias eran animadísimas y solían durar hasta después de la una. Bien podía afirmarse que empezaban a las siete, porque la Sra. de Figueredo rara vez dejaba de tener convidados a comer, agasajándolos con cuantas delicadezas gastronómicas puede inventar y condimentar un buen cocinero, sin freno ni tasa en el gasto. Pero lo que sobre todo hacía agradable aquella casa, era la misma Sra. de Figueredo, que unía a su elegancia, discreción y hermosura, el carácter más franco y regocijado. Del sitio en que ella se presentaba, salía huyendo la tristeza. En torno suyo y en su presencia, no había más que conversaciones apacibles o jocosas, risas y burlas inocentes, sin mordacidad ni grave perjuicio del prójimo. Natural era, pues, que el primer obsequio que, no bien llegase a Río, se podía hacer a un forastero, era presentarle a una dama tan hospitalaria y divertida.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0151_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0151_head_002">- III -</head>
 				<p>En el tiempo de que voy hablando, aportó a Río, como secretario de la Legación de Su Majestad Británica, un inglesito joven y guapo; probablemente tendría ya cerca de treinta años, pero su rostro era muy aniñado y parecía de mucha menor edad. Era blanco, rubio, con ojos azules y con poquísima barba, que llevaba muy afeitada, salvo el bigotillo, tan suave, que parecía bozo y que era más rubio que el cabello. Era alto y esbelto, pero distaba no poco de ser un alfeñique. En realidad era fuerte y muy ágil y adiestrado en todos los ejercicios corporales. Tenía talento e instrucción, y hablaba bien francés, español e italiano, aunque todo con el acento de su tierra. Tenía modales finísimos, aire aristocrático y conversación muy amena cuando tomaba confianza, pues en general parecía tímido y vergonzoso, y a cada paso, por cualquier motivo y a veces sin aparente motivo, se ponía colorado como la grana.</p>
 				<p>No está bien que se declare aquí el verdadero nombre de este inglesito. Para designarle le daré un nombre cualquiera. El apellido Maury es muy común. Hay Maurys en Francia, Inglaterra y España. Supongamos, pues, que nuestro inglesito se llamaba Juan Maury.</p>
 				<p>El Vizconde y yo nos hicimos en seguida muy amigos suyos, y los tres íbamos juntos a todas partes. Claro está que una de las primeras a donde le llevamos fue a la tertulia de la Sra. de Figueredo, la cual le recibió con extremada afabilidad, y dejó conocer desde luego que el inglesito no le había parecido saco de paja. Él también, a pesar de ser muy reservado, como tomó con nosotros grandísima confianza, nos confesó que la Sra. de Figueredo era muy de su gusto, y se nos mostró curiosísimo de saber sus antecedentes; su vida y milagros, como si dijéramos. El Vizconde, que estaba bien informado de todo, y si no de todo, de mucho, le contó cuanto sabía, haciendo una relación, que vamos a reproducir aquí, poco más o menos como el Vizconde la hizo.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0151_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0151_head_003">- IV -</head>
 				<p>Hace ya mucho tiempo que ciertas niñas españolas, y particularmente las andaluzas, acuden a la gran ciudad de Lisboa, en busca de mejor suerte. Los señoritos de por allí, los <seg rend="italic">janotas</seg>, que es como si dijéramos los jóvenes elegantes, <seg rend="italic">dandies</seg> o <seg rend="italic">gomosos</seg> de Portugal, se pirran y despepitan por las tales niñas españolas. De ellas aprenden a hablar un castellano muy chusco y andaluzado: <seg rend="italic">flamenco</seg>, como ahora se dice no sé porqué. Ignoro si persisten estas costumbres; pero sí diré que, hace veinte años, todavía el vocablo españolita era en Lisboa sinónimo de lo que por aquí pudiéramos llamar <seg rend="italic">hetera, suripanta</seg> o <seg rend="italic">moza de rumbo</seg>. La afición decidida a las españolitas era entonces el más pronunciado síntoma y el más elocuente indicio de la posible unión ibérica.</p>
 				<p>El Vizconde, al empezar su narración, sostenía sin rodeos ni disimulos que ocho años antes del momento en que hablaba, había conocido a la Sra. de Figueredo, soltera aún y figurando y descollando entre las españolitas de Lisboa.</p>
 				<p>La llamaban Rafaela, y por sus altas prendas y rarísimas cualidades la apellidaban <seg rend="italic">la Generosa</seg>.</p>
@@ -294,7 +340,7 @@
 				<p>Rafaela era además tan mona, tan insinuante y tan dulce, que el Sr. de Figueredo, a pesar de lo arisco e invulnerable que había sido toda su vida, que por entonces contaba ya sesenta y cinco años de duración, se sintió muy propenso a favorecer a la muchacha en cuanto estuviera a su alcance. Así es que hizo muchas gestiones y consiguió que el periódico de mayor circulación de Río, <seg rend="italic">O Jornal do comercio</seg>, anunciase con bombo y platillos la feliz llegada y próxima aparición en el teatro de la famosa artista española, y consiguió también que el empresario la oyese, la viese y la ajustase para dar un concierto con intermedios sabrosos de danza andaluza. Pronto llegó la noche de la función. El teatro estaba de bote en bote. El público había acudido, excitado por la curiosidad, mas no por la benevolencia. Al contrario, el odio y el desprecio que el Sr. de Figueredo inspiraba, tocaron como por carambola y se estrellaron contra la pobre Rafaela. La mayoría de los oyentes sostuvo que Rafaela desentonaba y daba feroces gallipavos, y las damas severas y virtuosas y los honrados padres de familia clamaron contra el escándalo, e hicieron que su pudor ofendido tocase a somatén. El resultado de todo fue una espantosa silba, acompañada de variados proyectiles, con los que en aquel fecundo suelo brinda Pomona. Sobre la pobre Rafaela cayó un diluvio de aguacates, tomates, naranjas, bananas, cambucás y mantecosas chirimoyas. Rafaela estaba dotada de un estoicismo, no sólo a prueba de fruta, sino a prueba de bomba. Sufrió con calma el descalabro y hasta lo tomó a risa, calificando de majaderos a los que suponían que cantaba mal y de hipócritas a los que censuraban sus evoluciones y meneos coreográficos.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0151_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0151_head_004">- V -</head>
 				<p>Las burlas y los chistes con que Rafaela se vengaba de la silba, hacían mucha gracia al señor de Figueredo, quien se consideraba también vejado, lastimado, silbado y rechazado por la sociedad elegante de Río. Entendía además el señor de Figueredo que Rafaela cantaba como un <seg rend="italic">sabía</seg> o como un <seg rend="italic">gaturramo</seg>, que son la calandria y el ruiseñor de por allí, y que en punto a danzar echaba la zancadilla a la propia Terpsícore. La silba, por consiguiente, de que Rafaela había sido víctima, parecía injusta al viejo usurero y motivada por el odio que a él le tenían, por donde imaginaba que debía consolar a Rafaela e indemnizarla del daño que le había causado.</p>
 				<p>El oficio de darle consuelo le parecía gratísimo y en su modestia llegó a creer que él, y no ella, era el verdadero consolado.</p>
 				<p>Cada día simpatizaba más con Rafaela. Se ponía melancólico cuando estaba lejos de ella. Y no bien despachaba los asuntos de su casa, se iba a acompañarla en la fonda donde ella vivía.</p>
@@ -304,7 +350,7 @@
 				<p>A pesar de lo dicho, se justifica el que yo llame <seg rend="italic">Don</seg> al Sr. de Figueredo, porque, como al fin se casó con Rafaela que era española, y esta dio en llamarle mi D. Joaquín, todos los amigos y conocidos, y llegó a tener enjambres de ellos, aunque le suprimieron el <seg rend="italic">mi</seg>, le dejaron el <seg rend="italic">Don</seg>, y él acabó por ser universalmente <seg rend="italic">donificado</seg>. Pero no adelantemos los sucesos.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0151_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0151_head_005">- VI -</head>
 				<p>Mucho se ha discutido, se discute y se discutirá, sobre si la amena literatura y otras artes del deleite, estéticas o bellas, deben o no ser docentes. Afirman muchos que basta con que sean decentes, sin procurar fuera de ellas fin alguno, y sin enseñar nada: pero es lo cierto, que la creación de la belleza, y su contemplación, una vez creada, elevan el alma de los hombres y los mejora, por donde casi siempre las bellas artes enseñan sin querer, y tienen eficacia para convertir en buenas y hasta en excelentes las almas que por su rudeza y por los fines vulgares a que antes se habían consagrado eran menos que medianas, ya que no malas. Algo de este influjo benéfico ejercieron en el espíritu de don Joaquín las bellas artes de Rafaela. No me atreveré yo a calificarlas de decentes por completo, pero no puede negarse que fueron docentes. Ella las ejerció con certero instinto, superior a toda reflexión y a todo cálculo. Procedió con lentitud prudentísima para que la transfiguración no chocase, ni sorprendiese en extremo, ni al público que había de verla, ni al transfigurado que en su propio ser había de realizarla.</p>
 				<p>Escamondado ya interiormente D. Joaquín, Rafaela le obligó a que se afeitase casi de diario y a que se cortase bien las canas, que limpias, lustrosas y alisadas tomaron apariencia de venerables.</p>
 
@@ -313,7 +359,7 @@
 				<p>En resolución, y para no cansar más a mis lectores, diré que antes de cumplirse el año de conocerse y tratarse D. Joaquín y la bella Rafaela, él, con asombro general de sus compatriotas, parecía un hombre nuevo: era como la oruga, asquerosa y fea durante el período de nutrición y crecimiento, que por milagroso misterio de Amor, y para que se cumplan sus altos fines, transforma la mencionada deidad en brillante y pintada mariposa.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0151_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0151_head_006">- VII -</head>
 				<p>Como aún me queda no sé qué escozor y desasosiego de no haber dado, a pesar de todo lo dicho, concepto cabal de la transfiguración visible y palpable que en D. Joaquín se había verificado, quiero hablar aquí de un solo perfil o toque, a fin de que por él se infiera, rastree y calcule el cambio radical de aquel hombre. Era algo miope y tenía además la vista un poco fatigada. Para remediar esta falta, usaba antiparras, que en el Brasil y en Portugal llaman <seg rend="italic">cangalhas</seg>. Siempre las tenía prendidas en las orejas, y cuando no necesitaba de ellas para ver, se las apartaba de los ojos y se las levantaba apoyadas sobre la frente, lo cual no era nada bonito. Así es que Rafaela hizo que suprimiese las <seg rend="italic">cangalhas</seg> y que, en lugar de ellas, gastase monóculo. Todo, pues, contribuía a que tuviese el aspecto <seg rend="italic">fashionable</seg>, atildado y digno de un antiguo diplomático jubilado.</p>
 				<p>A su rara discreción y al entrañable afecto que había inspirado debió Rafaela los mencionados triunfos; pero los debió también a sus lisonjas, llenas de sinceridad y fundadas en fe <seg rend="italic">altruista</seg>. Esto requiere explicación, y voy a darla.</p>
 				<p>Seriamente no es lícito afirmar que Rafaela se enamorase de D. Joaquín; pero sí puede, y debe afirmarse, que le cobró grande amistad y le estimó en mucho, considerándole casi un genio para todo aquello que a la crematística se refiere. Y como se lo decía, dándole encarecidas alabanzas, le adulaba, le enamoraba y le animaba a la vez, todo sin el menor artificio. Así el imperio que sobre él había adquirido se hizo más firme y más completo.</p>
@@ -334,7 +380,7 @@
 				<p>Con tales aprestos, D. Joaquín, mejorado de facha, empezó a ganar amigos; y Rafaela, bien vestida, mejor hablada, decorosa e insinuante, fue haciendo olvidar su vida pasada, se introdujo poco a poco entre la flor y la crema de la sociedad, abrió sus salones y convidó a su mesa a lo más encopetado y aristocrático de todo el Imperio: a los poetas, a los Ministros, a los oradores, a los diplomáticos y a los militares.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0151_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0151_head_007">- VIII -</head>
 				<p>Todas las anteriores noticias sobre la Sra. de Figueredo y algunas otras que se omiten en obsequio de la brevedad, se las dio al inglesito mi amigo el Vizconde de Goivo-Formoso, cuyo conocimiento y amistad con Rafaela tenían ya fecha muy larga. La había conocido y tratado desde su primera humilde aparición en la gran ciudad de Lisboa, cuando ella no desdeñaba aún, sino que estimaba como el más delicado obsequio y regalo, que algún amigo generoso la llevase al <seg rend="italic">Retiro de Camoens</seg>, taberna, <seg rend="italic">casa de pasto</seg> o figón muy frecuentado y celebrado, a comer los excelentes <seg rend="italic">petiscos</seg> que allí se hacían y a beber los deliciosos vinos de Colares y de Bucelas que allí se escanciaban.</p>
 				<p>Enteramente cambiadas las cosas en el momento de que vamos hablando, Rafaela tenía toda la traza de una dama de muy alto copete, y, sin aparecer orgullosa y soberbia, mostraba cierta dulce majestad y aristocrático decoro.</p>
 				<p>No frecuentaban mucho su casa ni su tertulia las señoronas del país; pero esto le importaba poco y nada hacía para conseguirlo. De lo que ella gustaba, era de reunir en torno suyo lo más selecto de los caballeros, y lo había conseguido. Sus salones parecían un club, que tenía a una mujer por presidenta, o regio alcázar donde figuraba ella como reina en día de besamanos. Las señoras, por lo general de medio pelo, que se allanaban a ir a la tertulia, no parecían sus iguales, sino las acompañantas y servidumbre de una princesa o las figurantas y coristas que rodean en el escenario a la encumbrada y aplaudida <seg rend="italic">prima donna</seg>. Manifestó Juan Maury no pequeña curiosidad y deseo de enterarse de cuanto se traslucía y decía acerca de cierto punto un tanto escabroso. ¿Cuál había sido y cuál era la conducta de la señora de Figueredo desde que se casó hasta aquellos días? El Vizconde de Goivo-Formoso quiso indudablemente satisfacer con franqueza la curiosidad del joven inglés; pero, como hay cosas que no se ven a las claras y que suelen quedar en la penumbra o envueltas en más o menos densa nube de misterio, el Vizconde no atinó a poner en claro la certidumbre de los hechos, y se limitó a presentar hipótesis, no fundadas en pruebas fehacientes, sino en sospechas y en indicios vagos.</p>
@@ -350,7 +396,7 @@
 				<p>En lo sucesivo, además, yo me retiro de la escena, donde, como actor, nada tengo que hacer. De esta suerte podré contar con menos dificultades y tropiezos lo que hagan los otros. En cuanto a mi amigo el Vizconde, yo no le retiro, sino que le dejo en la escena, porque es uno de los principales actores.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0151_chap9">
-				<head>- IX -</head>
+				<head xml:id="ne0151_head_008">- IX -</head>
 				<p>Todavía, antes de proseguir contando la vida y milagros de Rafaela, me incumbe hacer una aclaración. Voy a penetrar, no ya como mero historiador, sino como novelista, así en los más apartados rincones de la casa de Rafaela, como en el centro más recóndito de su alma; pero por ningún estilo quiero fingir nada, y sólo penetraré en las profundidades donde el novelista penetra, cuando lo que yo muestre en dichas profundidades sea tan lógica consecuencia de la verdad históricamente demostrada que no pueda menos de ser también la verdad. Y sobre aquello de que yo no esté seguro, sino dudoso, no imaginaré ni bordaré nada, dejándolo en cierta penumbra y como entre nubes.</p>
 				<p>Es innegable que Rafaela pagaba a D. Joaquín la posición que le había dado. Por ella andaba él aseado, elegantemente vestido y empleado en negocios importantes que le daban honra y provecho. Ella le cuidaba, le mimaba, mostraba quererle, y, sin duda, le quería. Lograba que fuera de su casa olvidara o prescindiera el vulgo de los antecedentes de D. Joaquín, no le quisiera mal y casi le respetara. Y lo que es en casa, con sus mimos y con su dulzura, Rafaela le hacía dichoso, arrebolando y dorando con luz alegre los días de su vejez y colmándolos de satisfacción y de ventura.</p>
 				<p>De las coqueterías de Rafaela no había nadie que no tuviese certidumbre; pero, si estas coqueterías no pasaban de cierto límite, más que ofender a D. Joaquín lisonjeaban su amor propio. Lo que es él, estaba convencido o se empeñaba en estar convencido de la fidelidad de Rafaela.</p>
@@ -369,7 +415,7 @@
 				<p>Supuesto lo que antecede, murmuraban unos y celebraban otros que, avergonzada Rafaela de no tener en su casa ni leche de vacas ni <seg rend="italic">butiro</seg> fresco, había inducido a D. Joaquín a fundar una buena casa de vacas en la <seg rend="italic">chácara</seg> de Petrópolis, donde había ricos y abundantes pastos: un <seg rend="italic">capim</seg> exquisito. D. Joaquín hizo venir, de Inglaterra, de Holanda y de Suiza, vacas de leche de las mejores castas, y pronto tuvo <seg rend="italic">butiro</seg> fresco en abundancia y crema deliciosa.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0151_chap10">
-				<head>- X -</head>
+				<head xml:id="ne0151_head_009">- X -</head>
 				<p>Harto notarán los que lean con atención este relato, que el más marcado rasgo del carácter de Rafaela era su propensión invencible a ser didáctica. Y no puede negarse que para educar y perfeccionar a cuantos seres la rodeaban poseía aptitud pasmosa. Ya hemos visto los milagros que obró en su D. Joaquín.</p>
 				<p>En su confidenta, que las malas lenguas suponían su Enone, hizo también maravillas. Era una francesa que antes de entrar en su casa se había sustentado dando lecciones del propio idioma y del inglés, que sabía casi con igual perfección. Rafaela, que la había tomado primero por maestra, acabó por tomarla por acompañanta. La sentaba a su mesa, la llevaba consigo a misa, a tiendas y a paseo, ya a pie, ya en coche, y en sus tertulias le encomendaba que sirviese el té y que diese conversación a los tertulianos más fastidiosos y ordinarios.</p>
 				<p><seg rend="italic">Madame</seg> Duval, que así se llamaba la confidenta, por afirmar ella misma que era viuda de un Comandante francés de caballería, muerto heroicamente en Argelia matando moros, tenía cualidades excelentes, pero era remilgadísima y empalagosamente afectada, y empleaba al hablar tres o cuatro muletillas y frases sentimentales, que apenas se podían sufrir y pervertían y maleaban todas las virtudes y excelencias de la buena señora. Rafaela acertó a curarla de estos resabios, por tal arte, que, a los pocos meses de tener a <seg rend="italic">Madame</seg> Duval a su servicio, se había esta convertido en persona natural y sencilla, de trato franco y agradable, el cual ya como antes no se quebraba de puro fino.</p>
@@ -379,7 +425,7 @@
 				<p>Sólo deslustraba el indiscutible mérito del Padre García una inveterada y perversa maña, que desde la infancia había en él, y que le había valido entre sus condiscípulos del seminario el farmacéutico apodo de <seg rend="italic">Pildorillas</seg>. Era prodigiosa la inagotable fecundidad del filón de donde el Padre García las sacaba y las fabricaba. Sus narices eran venero inexhausto. Eran como los encantados cubiletes del prestidigitador más aplaudido. En cuanto cabe en lo humano, daban una idea aproximada del milagro de pan y peces. ¡Pues bien: apenas parece creíble! Rafaela, con gracioso talento, con amistosa delicadeza, sin dar a conocer que notaba en el Padre aquel vicio y censurándole sólo en los otros, logró curarle de él radicalmente, y esto, hasta tal extremo de perfecta curación, que, según los informes que he podido adquirir, el Padre García en los muchos años, que para bien y provecho de las almas, ha vivido después, no ha fabricado una sola píldora siquiera.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0151_chap11">
-				<head>- XI -</head>
+				<head xml:id="ne0151_head_010">- XI -</head>
 				<p>Mientras mejor dotado de brillantes cualidades entendía Rafaela que estaba un sujeto, y mientras mayores simpatías le inspiraba, mayor y más vehemente era en ella el deseo de corregir sus faltas, haciendo de él un dechado de perfección, hasta donde la perfección es dable a nuestra decaída humana naturaleza. Por esto me atrevo a asegurar que con nadie anheló más fervorosamente ejercer su eficaz magisterio que con el ilustre Pedro Lobo, Ayudante de campo de Juan Manuel Rosas, dictador de la República Argentina.</p>
 				<p>En 1850, Pedro Lobo había venido a Río con el carácter oficial de Agregado militar a la Legación de su patria, si bien se susurraba que tenía instrucciones secretas del dictador, cuyo favorito era.</p>
 				<p>La fama había precedido en Río a Pedro Lobo, refiriendo sus extraordinarias hazañas contra los indios del extremo Sur de la Pampa, más allá de Carmen de Patagones, y contra los unitarios refugiados en Montevideo, dando cuenta, con mil novelescos pormenores, de sus correrías por las más apartadas regiones de la misma Pampa, de los Andes, y de la Patagonia, y ensalzando sus raras prendas de carácter, su brío indómito y su agilidad y destreza en todos los ejercicios del cuerpo. Nadie desbravaba mejor que él el más fogoso potro no domado; nadie disparaba mejor las bolas ni detenía con el lazo, ya a los toros bravos, ya a los ligeros avestruces o ñandúes, ni nadie manejaba mejor el puñal y el machete, ni tenía tino más certero con la carabina.</p>
@@ -399,7 +445,7 @@
 				<p>De aquí que muy a menudo sus conversaciones con Pedro Lobo, más frecuentes cada día, fuesen una acalorada disputa.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0151_chap12">
-				<head>- XII -</head>
+				<head xml:id="ne0151_head_011">- XII -</head>
 				<p>Soliviantado el espíritu de Rafaela por la contradicción, extremaba su doctrina casi tanto como extremaba la suya el gallardo gaucho. Según ella todos los pueblos y tribus del Nuevo Mundo habían degenerado y se habían depravado hasta tal punto, que jamás ellos solos hubieran podido salir del tenebroso abismo en que se habían sumido. Fue menester que vinieran los españoles y que para sacarlos de él les tendiesen la mano. Aunque tarde, llegaron a tiempo. Si hubieran llegado pocos años después, las semicivilizaciones que encontraron en Méjico, en Bogotá y en el vasto dominio de los Incas, hubieran ya desaparecido. Todo hubiera caído en el estado salvaje, y tal vez los sacrificios humanos, el canibalismo y las guerras constantes de unas tribus con otras hubieran barrido de sobre la faz de aquel inmenso continente la degradada especie humana. Los indios, por lo tanto, debían estar eternamente agradecidos a los españoles que los habían levantado de la abyección y que les habían devuelto el ser de criaturas racionales que casi habían perdido.</p>
 				<p>Los razonamientos empleados por Rafaela para sostener su tesis excitaban la cólera de Pedro Lobo y hacían brotar de sus labios feroces discursos en contra.</p>
 				<p>Solían verificarse tales controversias después de la comida, cuando Pedro Lobo estaba convidado a comer en casa de los Sres. de Figueredo.</p>
@@ -410,7 +456,7 @@
 				<p>Cierto egregio personaje no tuvo noticia de las disputas histórico-filosóficas, pero la tuvo pronto de las intimidades y de los paseos. En su dignidad, jamás quiso darse por entendido ni mostrarse quejoso, pero desistió por completo de acudir y aun de pedir nuevas citas, dado que las antiguas hubiesen sido realidad y no invención o fábula de desocupados maldicientes.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0151_chap13">
-				<head>- XIII -</head>
+				<head xml:id="ne0151_head_012">- XIII -</head>
 				<p>Aunque dicen que de la discusión sale la luz, fuerza es confesar aquí que no salió luz ninguna de la discusión constante que Rafaela y el gaucho tenían, y en la que a veces tomaban parte varios tertulianos de la casa, diputados, senadores, hombres políticos y poetas, que siempre en el Brasil los hubo eminentes, descollando entonces entre todos Magalhaens, Gonzálvez Díaz y Araujo Portoalegre, los cuales eran comensales de la casa, complaciéndose Rafaela en tratarlos y agasajarlos.</p>
 				<p>Gustaba ella de lucir por todos estilos y de dar a sus salones cierto tinte de sabiduría y refinamiento aristocráticos.</p>
 				<p>Había educado tan bien a D. Joaquín, espoleándole para aquellos trotes, que él había ido, en su carrera desenfrenada, más allá de la meta que ella le puso. De aquí algunos percances y desengaños, que aguaron algo el contento con que D. Joaquín vivía, pero que a Rafaela no le importaron un comino.</p>
@@ -424,7 +470,7 @@
 				<p>Un argumento presentaba Rafaela a veces contra las pretensiones de D. Joaquín, pero éste refutaba victoriosamente el argumento. Decía Rafaela que no eran los Figueredos de Portugal, sino los Vargas Machucas de Castilla, los que machucaron a los moros y acabaron con el feudo de las cien doncellas. Y D. Joaquín contestaba que los Vargas Machucas, en efecto, descendían también de Güesto Ansures, si bien la rama principal y legítima era la de los Figueredos, mientras que los Vargas Machucas eran una rama secundaria, y en su sentir, bastarda, ya que, según D. Joaquín había oído explicar a una persona muy docta en la ciencia del blasón, a la que aplicaba como auxiliar la ciencia etimológica, Vargas o Bargas, que es como debiera escribirse, es una contracción de los vocablos <seg rend="italic">Barragana</seg> y <seg rend="italic">Barragania</seg>. Por fortuna, ningún caballero que tuviese el apellido de Vargas asistió jamás a la tertulia de Rafaela, y D. Joaquín pudo sostener su tesis, poco lisonjera para los Vargas, sin promover el menor altercado.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0151_chap14">
-				<head>- XIV -</head>
+				<head xml:id="ne0151_head_013">- XIV -</head>
 				<p>Salva la discrepancia en que solían estar marido y mujer sobre este punto de la nobleza, don Joaquín se mostraba siempre en perfecto acuerdo con Rafaela, gustando de lo que ella gustaba, y ensalzando y aplaudiendo lo que ella ensalzaba y aplaudía.</p>
 				<p>Pedro Lobo, pues, vino a ser el encanto de D. Joaquín, quien siempre quería tenerle en su casa, de suerte que, cuando Pedro Lobo, retenido por sus quehaceres, dejaba algún día de venir o retardaba su venida, D. Joaquín iba a buscarle y no paraba ni descansaba hasta que se le traía consigo. Todo esto daba ocasión a no pocos chistes, que cundían por la ciudad, pero que por fortuna jamás llegaban a los oídos de don Joaquín, víctima de ellos.</p>
 				<p>Algo más de un año duró esta armonía y constante convivencia entre D. Joaquín, Rafaela y Pedro Lobo.</p>
@@ -447,7 +493,7 @@
 				<p>Impulsada por tan benéficas miras, pronto atrajo Rafaela a su casa al joven Arturo; y pronto también logró que olvidase los devaneos de París y que reconociese que ella era por todos estilos más guapa que cuantas mujeres habían ido a cenar con él en el <seg rend="italic">Café Inglés</seg>, en la <seg rend="italic">Maison Dorée</seg> o en los <seg rend="italic">kursaals</seg> que regocijaban y animaban, en aquellos días, las inmediaciones del Taunus y de la Selva Negra.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0151_chap15">
-				<head>- XV -</head>
+				<head xml:id="ne0151_head_014">- XV -</head>
 				<p>El poder didáctico de Rafaela jamás realizó en nadie tan rápidas y provechosas mudanzas como en el ánimo y en todo el ser de Arturo Machado.</p>
 				<p>Las <seg rend="italic">saudades</seg> que él tenía de París, y que le hacían fastidioso a él mismo y a las demás personas, se disiparon por completo. Arturito volvió a gustar de su patria como cuando era estudiante y no había vivido aún en el <seg rend="italic">corazón y en el cerebro del mundo</seg>, como llama a París Víctor Hugo. Se hizo ordenado y económico y ni gastaba ni sabía en qué gastar su dinero. No pensaba ya en francachelas ni en vigilias tempestuosas. Y con su vida regular y morigerada recobró la salud, que nunca había sido muy fuerte y que habían estragado las excitaciones constantes de la existencia de calavera, para la cual no había nacido. Porque, si bien era lindo mozo, agraciado y simpático, tenía más de enclenque que de robusto. Era de genio manso, suave e inclinado a la quietud y a la paz. Y sólo el mal ejemplo, las perversas compañías y hasta la propia docilidad con que cedía él y dejaba que le guiasen habían sido causa de sus travesuras y derroches pasados. Para Rafaela, hecha ya esta conversión, se desvaneció por desgracia casi todo el atractivo de Arturito. Empezó a hallarle poco ameno, y después soso, y por último llegó a encontrarle empalagosísimo a causa de su dulzura.</p>
 				<p>Entonces sentía Rafaela grandes veleidades de plantarle; pero, como era caritativa y estimaba además como gloriosa producción de su ingenio y de la energía de su voluntad todos los progresos y mejoras de un espíritu cultivado por ella, resistía a la tentación de plantar a Arturito. Allá en sus adentros se comparaba a la vara que sostiene en el aire a una planta rastrera a fin de que no caiga al suelo y se ensucie y pudra en el fango. Temía Rafaela que Arturito cayese si le dejaba ella, y por eso no le dejaba. A menudo solía lamentar que aquel muchacho hubiera sido tan dócil y se hubiera convertido tan pronto. Lo conforme a su gusto hubiera sido una educación más larga y difícil, así porque, durando la educación, también hubiera durado el prestigio que hacia Arturito la había atraído como porque la misma tardanza en educarse y en cambiar de condición hubiera sido garantía de lo seguro y firme del cambio.</p>
@@ -464,7 +510,7 @@
 				<p>Así mientras duraban estos coloquios, como después al retraerlos a la memoria, Rafaela lo veía todo tan pulcro, tan acicalado y tan moralmente pulido y lustroso, que se desesperaba de sus amistosas relaciones con Arturito como si fuesen fea mancha en medio de tanto resplandor, nitidez y aseo. En suma, no había ya remedio; era menester borrar aquella mancha, pero sin rasgar la tela; era menester dar a Arturito su pasaporte, pero en forma de cucurucho repleto de delicadísimos confites.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0151_chap16">
-				<head>- XVI -</head>
+				<head xml:id="ne0151_head_015">- XVI -</head>
 				<p>Llegó por fin el día prefijado por Rafaela para tomar la cruel resolución, inevitable ya según su atormentada conciencia, de decir al pobre Arturito: hasta aquí llegó, no sigamos adelante.</p>
 				<p>D. Joaquín se había ido a la <seg rend="italic">chácara</seg> por una semana en compañía de tres o cuatro amigos.</p>
 				<p>Rafaela no recibía a sus tertulianos, pretextando frecuentes jaquecas, única enfermedad que solía alterar levemente su salud envidiable.</p>
@@ -495,7 +541,7 @@
 				<p>Rafaela tenía claro presentimiento de que si Pedro Lobo no había muerto en la pelea, no habría querido ni podido permanecer en territorio argentino y también se habría expatriado. Estaba además segura de su poderoso atractivo y de que él no se iría a Europa sin pasar por Río y sin venir a verla. Le creía apasionado, celoso y tal vez enterado de todo, porque nunca falta gente chismosa que se deleite en dar ciertas noticias. Derrotado y huido de su patria, Pedro Lobo debía de estar más feroz que nunca, y Rafaela temía, sino ponía en salvo a Arturito, apartándole de sí, que ocurriese a éste un lastimoso percance. Su propósito, perseverando en su plan de enmienda y santificación, era despedir también a Pedro Lobo, pero, por lo mismo, tenía mayor empeño en despedir antes a Arturo, para que ni remotamente imaginase el otro que aquel infeliz muchacho era causa de su despedida.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0151_chap17">
-				<head>- XVII -</head>
+				<head xml:id="ne0151_head_016">- XVII -</head>
 				<p>Rafaela no se había engañado. Dos días después de haber despedido a Arturito, supo que Pedro Lobo acababa de desembarcar en Río de Janeiro y que pretendía venir a verla.</p>
 				<p>Ausente D. Joaquín y víctima Rafaela de jaquecas continuas, Rafaela no recibía entonces ni salía de su casa.</p>
 				<p>Pedro Lobo buscó en la calle a <seg rend="italic">Madame</seg> Duval, le habló, y le pidió y casi le exigió que le diese una cita con su señora.</p>
@@ -514,7 +560,7 @@
 				<p>Así se preparó la fiesta, que prometía ser notabilísima por todo; hasta por la singularidad del maestresala.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0151_chap18">
-				<head>- XVIII -</head>
+				<head xml:id="ne0151_head_017">- XVIII -</head>
 				<p>Todo el tiempo de la larga residencia de Pedro Lobo en Río, Arturito había estado en París y no había tenido ocasión de conocer y de tratar al gaucho. Esto no ofrecía, sin embargo, el menor inconveniente para que el gaucho fuese a la fiesta. Era un <seg rend="italic">pick-nick</seg> donde Arturito no figuraba importando más que cualquiera de los otros jóvenes brasileños y extranjeros que habían de ser de la partida, y a quienes el gaucho conocía y trataba. Deseoso de asistir a la fiesta y aun excitado a asistir por los ruegos de dichos jóvenes y con el fin de divertirse y de distraer sus penas, Pedro Lobo fue como uno de tantos.</p>
 				<p>Por lo pronto, sólo pensó en el placer que aquello podría traerle, y no formó proyecto alguno de armar escándalo y camorra. Llegó a la Tejuca a caballo, con tres o cuatro de los que eran más amigos suyos, y se hizo presentar a Arturito del modo más correcto. Arturito le acogió con la debida cortesía.</p>
 				<p>No pasó por las mientes de nadie que pudiera sobrevenir un lance entre ambos.</p>
@@ -541,7 +587,7 @@
 				<p>Para el público se supuso que Arturito había muerto en la Tejuca de la fiebre amarilla.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0151_chap19">
-				<head>- XIX -</head>
+				<head xml:id="ne0151_head_018">- XIX -</head>
 				<p>Rafaela tuvo pronta y exacta noticia de cuanto había ocurrido, y su dolor fue muy hondo. Ella tendría sus defectos, pero no se puede negar que era leal y verídica, y que abominaba del embuste. Lo que había dicho a Arturito cuando le despidió era la verdad misma. Al dejar de quererle, como amante, había seguido queriéndole como si fuera su hijo: como criatura de su espíritu, ya que le había iluminado y mejorado. De aquí que la función de la Tejuca, triste prueba de la recaída del joven, abandonado por ella, bastó para afligirla; pero lo que la desoló, por no ofrecer ya remedio ni esperanza, fue la muerte violenta tan estúpida y brutalmente motivada.</p>
 				<p>Rafaela, distando mucho de ser merengue de fresa, sin tener nada de empalagoso sino de brioso, atesoraba en el centro de su corazón un inexhausto manantial de cariño. No por reflexión ni por estudiadas teorías, sino por ciego e indomable instinto, era la mujer filántropa. El Padre García se lo había dicho muchas veces: ¡Ay, hija mía, sí tú amases a Dios la mitad siquiera que a los hombres, no estarías ya en la tierra, sino en el cielo, en el ardiente coro de los más enamorados serafines que coronan cual nimbo luminoso el trono del Altísimo! Lo conveniente, añadía el Padre en otra ocasión, es que tu filantropía se trueque en caridad cristiana: que ames a Dios sobre todas las cosas. Considera lo encaramada y elevada que estás ya en el amor, y calcula, si puedes, hasta dónde te encumbrarías en cuanto pusieses sobre todo ello tu amor divino.</p>
 				<p>Por desgracia, esta deseada y aconsejada superposición no había llegado a verificarse, aunque Rafaela a menudo la apetecía.</p>
@@ -592,7 +638,7 @@
 				<p>Pedro Lobo revolvió mil cosas en su mente, formó mil desatinados proyectos: hasta pensó en ir de mano armada a buscar a Octaviano, adelantándose a matarle antes de que él le matara; pero al cabo, después de muchos desvaríos, prevaleció la determinación más juiciosa; y, cuatro días después de la conversación que tuvo con <seg rend="italic">Madame</seg> Duval, Pedro Lobo se embarcó en un vapor inglés que iba a Southampton y libró de su odiada presencia a Rafaela, a <seg rend="italic">Madame</seg> Duval, al señor Gregorio Machado, a Octaviano, y a casi toda la sociedad <seg rend="italic">fluminense</seg>.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0151_chap20">
-				<head>- XX -</head>
+				<head xml:id="ne0151_head_019">- XX -</head>
 				<p>Grosero y pesimista es el refrán que dice: el muerto al hoyo y el vivo al bollo. El refrán, con todo, tiene por desgracia mucho de verdad. A los siete u ocho días de muerto Arturito y a los tres o cuatro de ido Pedro Lobo, nadie se acordaba ya de Arturito, salvo su padre, Octaviano, Rafaela y el Sr. D. Joaquín, que le amaba y le lloraba como a su mejor amigo. Porque D. Joaquín, cual fruto almibarado y sabroso con cáscara amarga, no bien quedó despojado por el amor y el arte de su mujer de la cáscara de usurero en que durante muchos años se había parapetado y escondido, apareció como el ser más tierno y angelical entre todos los seres humanos.</p>
 				<p>En Río se seguía la vida de costumbre, si bien muchos caballeros y la elegante juventud dorada echaban de menos la tertulia de Rafaela, la cual andaba retraída y triste, y no recibía.</p>
 				<p>Muchos jóvenes de la buena sociedad acudían con frecuencia al casino como único recurso. Nuestros amigos, o por lo menos conocidos ya del lector, el vizconde de Goivoformoso y Juan Maury, eran de los que allí más acudían.</p>
@@ -617,7 +663,7 @@
 				<p>Pero no adelantemos los sucesos; prescindamos de este episodio que apenas tiene relación con nuestra historia, y volvamos a la noche en que Rosina Stolz apareció en el teatro de Río por vez primera.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0151_chap21">
-				<head>- XXI -</head>
+				<head xml:id="ne0151_head_020">- XXI -</head>
 				<p>Rafaela, que era generosa de todo, lo era también de aplausos y de alabanzas. Por nada del mundo hubiera gustado de que silbasen a la Stolz como la habían silbado a ella, a no tener a la mano otro D. Joaquín para consolarla de la silba. Rafaela quiso, pues, que la Stolz triunfase, y se propuso contribuir a su triunfo. Y como Rafaela además era aficionadísima a la música, no se resignó a dejar de oír a tan egregia cantarina. De aquí que saliese del retraimiento en que por la pena de la reciente muerte de Arturito se encontraba y apareciese en su palco, en el teatro, la primera noche en que la Stolz cantó en la <seg rend="italic">Semíramis</seg>. Don Joaquín fue también, aunque estaba tan apesadumbrado como si hubiese perdido un hijo.</p>
 				<p>En el entreacto, el vizconde de Goivoformoso y Juan Maury, que estaban en butacas contiguas, subieron juntos a visitar a Rafaela.</p>
 
@@ -633,7 +679,7 @@
 				<p>Pasado este incidente, advertido sólo por el vizconde de Goivoformoso y por los tres actores principales, empezó y transcurrió una época brillantísima para el hotel de los señores de Figueredo y famosa en los anales de la <seg rend="italic">high life</seg> fluminense. Banquetes, animadas tertulias, bailes, lucidas cabalgatas y hasta giras de campo se sucedían con corta interrupción. El inglesito no faltaba jamás en estas diversiones. Y Rafaela, como el sol en el meridiano, resplandecía por su hermosura y elegancia y parecía dichosa. Lo que es D. Joaquín no se mostraba menos elegante ni menos satisfecho, aunque sí harto menos bonito, y dejando notar en la flojedad de sus piernas y en el temblor de sus manos que lo que llaman vulgarmente el <seg rend="italic">bajón</seg> iba llegando para él, y que así para él como para los demás mortales, no pasan en balde los años.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0151_chap22">
-				<head>- XXII -</head>
+				<head xml:id="ne0151_head_021">- XXII -</head>
 				<p>Pronto pasó uno más, cuando ocurrió algo que, si bien hubiera debido preverse, fue muy doloroso para Rafaela. Juan Maury, trasladado por su gobierno con ascenso a una Legación de Europa, tuvo que abandonar a Río de Janeiro. Rafaela sintió sin duda grandísimo pesar, pero no le faltó energía para disimularle, y a los ojos del público apareció impasible y serena, así en los días que precedieron a la partida de Juan Maury como después de su partida.</p>
 				<p>Lo que pasó, durante aquellos días, en el corazón de Rafaela, no lo supo más que una persona. Rafaela no se lo podía ni se lo quería decir a <seg rend="italic">Madame</seg> Duval, por juzgar sobrado sublime su secreto para hacer partícipe de él a tan vulgar personaje. Ni podía ni quería tampoco confesarle al Padre García, por considerar su secreto profano y por no ver en él culpa acompañada de arrepentimiento.</p>
 				<p>Rafaela, no obstante, sentía la necesidad de desahogar con alguien su corazón, hablando de sus penas. Y como su único, constante y muy íntimo amigo en la ciudad era el Vizconde de Goivoformoso, a quien trataba desde que ella había llegado a Lisboa, Rafaela reconoció que sólo el Vizconde era su posible confidente, y habló con él de todo, si bien con mayor seriedad, con el mismo desenfado y con la misma franqueza que empleaba para hablar con él cuando, hacía ya más de diez años, él y ella iban a merendar o a cenar juntos en el <seg rend="italic">Retiro de Camoens</seg>.</p>
@@ -653,7 +699,7 @@
 				<p>El Vizconde tuvo que irse después por donde había venido, con el contento de que se hubiese reanudado y estrechado tan dulce amistad, y con la melancolía de que fuese ya otra su forma, harto más sutil, depurada y etérea que en lo antiguo.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0151_chap23">
-				<head>- XXIII -</head>
+				<head xml:id="ne0151_head_022">- XXIII -</head>
 				<p>Nada, durante los dos o tres meses que se siguieron pudo notar la persona más lince ni propalar la más maldiciente, que en la conducta de Rafaela contradijese los propósitos expresados por ella en su coloquio con el Vizconde. Se diría, por el contrario, que ella se extremaba en realizarlos. Sus mimos, sus cuidados hacia D. Joaquín eran incesantes. Entonces aún no había ferrocarril hasta Petrópolis. D. Joaquín, que había envejecido, aunque gustaba de ir allí, se fatigaba mucho y Rafaela se opuso a que fuese. Si iba alguna vez, Rafaela le acompañaba y compartía con él la fatiga. Jamás se quejaba ya de jaqueca, ni enviaba al campo a D. Joaquín cuando estaba jaquecosa. Casi siempre, sin jaqueca, y aun cuando por acaso la padeciese, se complacía en tener a D. Joaquín a su lado. Y al mismo tiempo no se mostraba ni triste ni más seria que en lo pasado; su buen humor y su alegría eran como siempre. Sus concurridas tertulias se hicieron diarias y sin interrupción. Nadie hubiera podido declarar con fundamento que la partida de Juan Maury había modificado el ser de Rafaela.</p>
 				<p>Su amistad hacia el Vizconde siguió tan fina y tan estrecha como en el coloquio, pero sin que el coloquio se repitiese. Ella seguía hablando con el Vizconde, si bien delante de todos y sin dar que sospechar. Su conversación amistosa la consolaba y la deleitaba.</p>
 				<p>No tardó Rafaela en perder también este consuelo y este deleite.</p>
@@ -672,7 +718,7 @@
 				<p>Sólo veinte años después por medio del Vizconde de Goivoformoso, he vuelto yo a saber de Rafaela, reanudándose su historia en lo más esencial con lo que contaré en adelante.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0151_chap24">
-				<head>- XXIV -</head>
+				<head xml:id="ne0151_head_023">- XXIV -</head>
 				<p>Entre no echar de menos a una persona y olvidarla por completo hay una enorme distancia. Si el Vizconde de Goivoformoso hubiera seguido siempre en Río de Janeiro, todo en torno de él, no sólo le hubiera recordado a Rafaela, si no le hubiera hecho desear su presencia y lamentar la falta de su trato y de su vista. Pero el Vizconde anduvo peregrinando por muy diversos y distantes países, viendo objetos nuevos, penetrando en el seno de muy diversas sociedades, hablando y oyendo hablar lenguas distintas y corriendo no pocas y variadas aventuras. Estuvo en Constantinopla, en Roma, en San Petersburgo, en Berlín y en Viena; y, aunque la nación a quien servía, así por su posición geográfica, como por la decadencia a que ha venido, no se mezclaba activamente en los grandes sucesos, él, por afición natural y también por su oficio, tuvo que enterarse circunstanciadamente de todos y mirarlos con interés. Ocurrieron casos extraordinarios que no pudieron menos de cautivar su atención poderosamente. Acabaron muchas dinastías, se hundieron muchos tronos; Italia logró al fin su unidad, en balde deseada durante trece o catorce siglos; se deshizo la confederación germánica; Austria perdió la hegemonía; Prusia, vencedora, se puso al frente de casi todos los pueblos germánicos; y por último, en tremenda lucha con Francia, Prusia la venció y la desmembró, apoderándose de algunas de sus hermosas ciudades y de parte de su fértil territorio y obligándola, desde su misma capital, de que se había apoderado, a pagar suma enormísima por su rescate.</p>
 				<p>La vida del Vizconde, que permaneció soltero, fue, a su modo, y aunque por estilo apacible, no menos rica de acontecimientos que la del mundo. No faltaron en ella lances de honor y fortuna que no nos incumbe relatar aquí. Baste saber que, durante veinte años, sobre pocos más o menos, pues no creo que importe mucho una gran exactitud cronológica, el Vizconde no volvió a ver en parte alguna a Rafaela, y ésta, si bien siguió presente en su memoria, fue como imagen aérea y algo confusa, velada como entre nubes de vagos recuerdos y de agradables antiguas emociones.</p>
 				<p>En los primeros días del año 1873, el Vizconde de Goivoformoso vino a París a pasar una larga temporada.</p>
@@ -691,7 +737,7 @@
 				<p>El Vizconde de Goivoformoso aceptó gustosísimo aquella amable invitación, y casi puede decirse que la primera tertulia a que asistió, después de su llegada, fue a un té en casa de la mencionada dama brasileña.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0151_chap25">
-				<head>- XXV -</head>
+				<head xml:id="ne0151_head_024">- XXV -</head>
 				<p>Vivía la señora de Pinto en una de las mejores calles que cortan perpendicularmente la calle de la Universidad: en la parte menos bulliciosa de las dos en que la ciudad está dividida por el Sena. La casa de la dama brasileña era nueva y tenía hermoso aspecto. La señora de Pinto habitaba en un piso principal, cómodo y espacioso.</p>
 				<p>Ella tenía buen gusto y había amueblado su estancia, valiéndose de los mejores tapiceros, con muebles elegantes y hasta lujosos, pero sin relumbrón alguno. Nadie hubiera podido criticar sus salones por lo chillón y lo dorado de los adornos, pero hubiera habido en ellos algo de trivial y sin carácter propio, si la mencionada dama, o por reflexión o por instinto, no hubiera acudido a ponerles un sello de originalidad peregrina, un tinte marcado de distinción semi-aristocrática, semi-americana. Había en la antesala tapices y reposteros, donde se veían bordados los complicadísimos escudos de la gloriosa e histórica familia de los Pintos; y en el centro, frente a la puerta de entrada, resplandecía, en gran cuadro al óleo, al parecer antiguo, la reverenda imagen de Fernán-Méndez, tan célebre por sus estupendas peregrinaciones, y uno de los más brillantes antepasados de que aquella familia se jactaba. Y como si fueran reliquias de los mil curiosos objetos que Fernán-Méndez Pinto hubo sin duda de traer cuando volvió a Europa, se admiraban en aquella antesala broqueles, armaduras, lanzas y sables chinos, japoneses e indostaníes, combinado todo en las panoplias con flechas y cuchillos de pedernal de los tupinambas, de los tupíes y de otras tribus guerreras del imperio brasílico. En dos salas contiguas apenas había nada de exótico, pero sí muchos primorcitos y antiguallas de porcelana, bronce y plata, estatuetas, esmaltes y vasos colocados en rinconeras, anaqueles y repisas, o ya sobre los mismos muebles, ya custodiados en <seg rend="italic">vitrinas</seg> de prolija talla y gracioso dibujo. El salón de baile era de la más sencilla elegancia, estilo Luis XVI; sin más adornos que grandes espejos. Los marcos y demás ornamentación, aljabas, palomitas, lazos y flores, todo de madera charolada o más bien esmaltada de blanco con filetes azules. En los ricos aparadores del comedor y en sus armarios de roble esculpido, había mucha plata labrada, y en las paredes se veía suspendida multitud de platos de diversas épocas y procedencias, muestras escogidas del arte cerámica.</p>
 				<p>La señora de Pinto, por último, había echado el resto en su <seg rend="italic">boudoir</seg> y marcádole más hondamente con el sello de su originalidad brasileña. Allí, sobre un fondo de muebles cómodos y bonitos, de lo más perfecto y refinado que en París se construye, había en urnas de cristal lindos pajaritos disecados, mariposas e insectos de vivísimos colores; pájaros vivos en doradas jaulas, y lozanas plantas de entre trópicos criadas en invernáculo con atinado esmero.</p>
@@ -701,7 +747,7 @@
 				<p>La mamá nada tenía de extraño en su tocado y vestido. En sus modales, si por algo pecaba, era por sobra de naturalidad y franqueza. La señora de Pinto, con relación a los remilgos afectados y a las ceremonias de París, era por demás llanota y campechana. Como ya frisaba en sesenta años, aunque se conservaba muy bien, no tenía para qué reportarse, ni se reportaba y refrenaba en sus manifestaciones de cariño; de modo que recibió al Vizconde materialmente con los brazos abiertos. Sus salones estaban ya llenos de gente, pero no impidió esto que el Vizconde fuese por ella abrazado y casi besado. Ella decía que era como una hermana que, después de largos años de ausencia, vuelve a ver a su hermano; pero él entendía que la suposición hubiera estado mejor hecha figurando ella como madre y él como hijo. La verdad era, que si bien el Vizconde tenía más de cincuenta años, estaba tan bien, que parecía un muchacho, un buen mozo, atildado, gallardo y fino.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0151_chap26">
-				<head>- XXVI -</head>
+				<head xml:id="ne0151_head_025">- XXVI -</head>
 				<p>Creyendo la señora de Pinto cumplir con un deber y deseosa además de presentar al Vizconde a los más notables personajes de su tertulia, se apoyo en su brazo y recorrió con él los salones. La concurrencia era verdaderamente cosmopolita, y, al parecer, de lo más selecto y encopetado. Verdad es que la señora de Pinto no nombraba sino a las personas que más notables le parecían, y sólo a las archinotables presentaba al Vizconde. Había allí cuatro príncipes rusos y dos o tres griegos, varios marqueses italianos, un miembro del Parlamento inglés, un célebre poeta rumano, algunos señores polacos y seis o siete condes de Alemania y de Austria, todos <seg rend="italic">hof-fähig</seg>, o dígase capaces de asistir en la corte, con dieciséis cuarteles cabales, y sin el menor menoscabo ni deterioro en ninguno de ellos. Las esposas, hijas o hermanas de todo aquel señorío masculino daban a los salones gracia, hermosura y lucimiento.</p>
 				<p>Había allí también literatos franceses, aunque de quinto o sexto orden, o de aquellos cuya celebridad y gloria estaban aún en ciernes o en capullo, sin acabar de florecer y de abrirse a la clara luz del día; periodistas de varios partidos y media docena de banqueros o aprendices de banqueros, unos israelitas y otros católicos.</p>
 				<p>No se habla aquí de los españoles, portugueses y americanos, porque estos eran muchos y formaban la gran mayoría de tan híbrida asamblea.</p>
@@ -724,7 +770,7 @@
 				<p>Habló con él como habló Fray Luis de León con sus discípulos después de salir de la cárcel. Rafaela dijo también: <seg rend="italic">decíamos ayer</seg>; esto es, habló con el Vizconde como si reanudase con él la conversación de la víspera. Si algo se aludió al tiempo pasado, fue para afirmar él, con admiración y con insistencia, que ese tiempo no había pasado por ella sino para mejorarla, o que al menos, durante todo ese tiempo, ella había estado como las encantadas princesas de los cuentos de hadas, sin que el tiempo, al pasar, las toque con sus alas, ni las ofenda, ni las huelle. El tiempo las deja en el mismo ser que tienen, ya que al empezar el encantamiento y al ponerse en ellas no les preste algo de sobrenatural y divino. Con la obligada y casi indispensable modestia, que en ocasiones tales se usa, Rafaela trató de probar que había envejecido; pero al cabo, tal vez porque no lo creía, o tal vez para evitar enojosas discusiones, convino en que estaba tan bien o mejor que nunca. Después, ella y el Vizconde charlaron muy largo rato y ambos volvieron a sentirse tan amigos como veinte años antes en Río de Janeiro, y como cerca de treinta años antes en Lisboa.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0151_chap27">
-				<head>- XXVII -</head>
+				<head xml:id="ne0151_head_026">- XXVII -</head>
 				<p>Muy lisonjeado estaba el Vizconde al notar el contento y la satisfacción que al volver a verle y al hablar con él sentía la señora de Figueredo; pero el Vizconde no era presumido ni fatuo, sino razonable y juicioso. Como todos los que lo son, receló que, si abusaba de la ventaja de reanudar aquellas relaciones amistosas después de tanto tiempo, prolongando mucho el coloquio, no era difícil que en el alma de Rafaela se desbaratase o se disipase el hechizo de la novedad y que el gusto se convirtiese en enfado. Quien tiene en rico vaso un licor exquisito, no le apura de un sorbo, sino que le contempla, le paladea y poco a poco le va bebiendo. En suma, el Vizconde no quiso apurar hasta las heces el deleite de hablar aquella noche con Rafaela, exponiéndose a cansarla y a hartarla con la mera conversación, aburriendo, marchitando y hasta secando, en el alma de ella, el deseo que tal vez pudiera nacer de que la conversación dejase de ser término y llegase a ser medio y camino para mayores y más dulces intimidades. Rafaela, en verdad, hacía involuntariamente que las deseara el Vizconde, porque estaba más guapa y más interesante que nunca.</p>
 				<p>Hechas en lo interior de su espíritu todas estas consideraciones y forjando mil propósitos vagos, el Vizconde, después de preguntar a Rafaela las señas de su casa, insinuó la pretensión de no ir sólo a dejarle tarjeta, sino de hallar a Rafaela y de ser recibido.</p>
 				<p>Rafaela le contestó que ella vivía más desordenadamente que nunca; que para recibir a sus amigos no había fijado ni día ni hora; pero que a él, por excepción, le recibiría cuando a ella le fuese posible y él fuese a verla.</p>
@@ -732,7 +778,7 @@
 				<p>Algo le contuvo también cierta ligera sonrisa burlona, que imaginó dos o tres veces ver pasar como un relámpago sobre el rostro de Rafaela, la cual harto bien sabía él que nunca había gustado de disimulos y rodeos, sino de prometer, conceder o negar, por estilo franco, sin el menor rebozo en la promesa. El Vizconde, además, no osaba pedir nada y nada pedía. ¿Con qué título, con qué motivo, había de pedir algo? ¿Era afecto renaciente, era liviano capricho, qué era lo que en aquel momento agitaba su corazón? Él mismo lo ignoraba. Sólo notaba, en el fondo de su alma, repentinos anhelos de deleite y una resucitada admiración, más vehemente que nunca, hacia aquella extraña mujer que sobre la lozana y alegre condición natural de la moza de Lisboa y sobre la graciosa pomposidad de la señora hacendada de entretrópicos, había logrado poner todos los perfiles, realces y filigranas de la parisiense más curtida y docta en el arte de los amores. El Vizconde, al menos, imaginaba todo esto, aunque nosotros no podamos asegurar que era real y exacto lo que imaginaba. Lo cierto es, que, en aquella noche, habló de todo con Rafaela: de teatros, de música, de libros recién publicados, de política y hasta de filosofía, pero no se atrevió o no halló ocasión oportuna para decirle, de sopetón y muy por lo serio, que de nuevo la amaba. Se limitó, pues, a echarle piropos, si bien con sobriedad, por miedo de hacerla reír, o lo que es peor, de fastidiarla. Así llegó la hora en que Rafaela tenía costumbre de retirarse. El Barón de Castell-Bourdac, su reconocido <seg rend="italic">cavaliere servente</seg>, vino en su busca, le dio el brazo, y se fue con ella, sin duda en el mismo coche, acompañándola hasta su casa, antes de retirarse a la suya.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0151_chap28">
-				<head>- XXVIII -</head>
+				<head xml:id="ne0151_head_027">- XXVIII -</head>
 				<p>Al día siguiente el Vizconde fue a visitar a Rafaela, que vivía en el primer piso de una magnífica casa, no lejos del Arco de la Estrella, en calle y barrio nuevos y elegantes. Rafaela no estaba en casa o no recibía. El Vizconde volvió casi de diario, pero siempre en balde.</p>
 				<p>Así transcurrió, no sin grande impaciencia del Vizconde, una semana entera, y llegó otro viernes, día en que la señora de Pinto tenía su tertulia.</p>
 				<p>El Vizconde acudió tan temprano, que sólo encontró a la señora y señoritas de la casa y a tres o cuatro amigos íntimos que habían estado a comer con ellas. Tuvo, pues, ocasión de ir pasando revista, según entraban, a todas las personas que fueron a la tertulia aquella noche.</p>
@@ -780,7 +826,7 @@
 				<p>Lleno el Vizconde de curiosa ansiedad, después de leer esta advertencia, abrió el libro, le leyó y vio que decía de esta suerte:</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0151_chap29">
-				<head>Confidencias</head>
+				<head xml:id="ne0151_head_028">Confidencias</head>
 				<p>Mucho de lo que voy a escribir ha de parecerte singular y raro, pero apenas hay en ello otra rareza que la sinceridad con que yo lo digo. Como poseedora de un maravilloso instrumento óptico, escudriñaré cuanto se oculta en los más hondos senos de mi alma y te lo contaré todo. Lo contaré en resumen para no cansarte ni cansarme.</p>
 				<p>No quiero ponderar aquí la devoción, la dulzura y el incesante desvelo con que cuidé de mi D. Joaquín durante su larga enfermedad hasta el día de su muerte. Piadosamente cerré sus ojos, y no por carencia de dolor, sino por vigor y constancia de ánimo, quise y pude amortajarle.</p>
 				<p>Te aseguro que lamenté y lloré mi viudez con no menor abundancia de lágrimas que las que vertería la más fiel y enamorada de las esposas a quien se le muriese, en la flor de la juventud, su idolatrado y gentil marido. No se afligió más que yo Artemisa con la muerte de Mausolo, ni Victoria Colonna con la del Marqués de Pescara, ni la propia Venus con la de Adonis. Y esto se explica muy bien. Las mencionadas señoras perdían algo de muy querido, perdían su encanto, sus delicias, pero, al cabo, no perdían nada que fuese como el propio ser de ellas mismas. Yo sí que le perdía, porque mi D. Joaquín, tal como le había yo transformado y mejorado, era primorosa producción y criatura de mi ingenio. Para afligirse como yo hubiera sido menester que, con los respectivos amados, perdiesen la Colonna sus canciones y sonetos, Artemisa su famoso y monumental sepulcro, y Venus el cinto donde están en germen sus virtudes y milagros.</p>
@@ -1038,7 +1084,7 @@
 				<p>De todos modos, hoy, antes de las diez, recibirás y leerás este libro.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0151_chap30">
-				<head>Conclusión</head>
+				<head xml:id="ne0151_head_029">Conclusión</head>
 				<p>El Vizconde de Goivoformoso le leyó en efecto, sintiendo sucesivamente dudas, sorpresa, susto e indecible angustia. Tenía por Rafaela cuanta estimación, cuanta amistad y cuanto cariño puede tener un gentil caballero por una mujer fácil y alegre, aunque por otra parte de corazón noble y leal y de muy buena pasta. Esperaba terminar una aventura amorosa, gratísima, bastante sentimental para que no fuese grosera, y lo menos trágica y lúgubre de cuantas aventuras puede haber en el mundo. Así es que el Vizconde pensó, primero, que Rafaela quería embromarle con todo aquello, aunque la broma era harto pesada. Imaginó luego que Rafaela se había vuelto loca: que los desdenes místicos de su hija habían perturbado su razón. Tal vez pensó también que la asidua lectura de libros malos e impíos había arrancado del alma de Rafaela las creencias cristianas que fueron su consuelo y la había inducido a tan horrendas abominaciones. En extremo le pasmó el deseo concebido y formulado por Rafaela de poner término y corona a la larga serie de sus livianos amores con un amor puro, fiel y constante. No quiso el Vizconde perder la esperanza. Aun aceptando como sinceramente sentido todo lo escrito por Rafaela, notó su indecisión hasta lo último, y se complació en suponer que el amor de la vida y del mundo había triunfado al fin, y que Rafaela le aguardaba, viva, lozana y amorosa. Dada esta suposición, él se prometía quitarle de la cabeza los romanticismos funestos y los ideales absurdos.</p>
 				<p>-Dicen -exclamaba atribulado el Vizconde- que nuestro siglo carece de ideal. Las personas que presumen de poéticas y delicadas deploran mucho esta carencia. ¿Puede imaginarse mayor majadería? Al contrario: en nuestro siglo hay plaga de ideales. Son una epidemia, casi estoy por llamarlos una epizootia, causa de mil infortunios, guerras, revoluciones y muertes.</p>
 				<p>Todo esto y mucho más lo discurría el Vizconde, sin sosiego, casi temblando de emoción, tomando a escape el sombrero, bajando precipitadamente las escaleras y entrando en el primer <seg rend="italic">fiacre</seg> que vio pasar para que le llevase a todo correr, y mucho antes de la hora convenida, en casa de la Sra. de Figueredo.</p>

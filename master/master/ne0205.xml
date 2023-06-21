@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El tren directo</title>
-				<title type="sub">Relación contemporánea</title>
+				
 				<title type="short">TrenDirecto</title>
-				<title type="idno">
-					<idno type="bne">XX2701130</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1129706</idno>
-					<idno type="viaf">42728255</idno>
-					<name type="short">Munilla</name>
-					<name type="full">José Ortega Munilla</name>
+					<name type="short" ref="#Munilla"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1761</measure>
@@ -140,13 +131,38 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0205</idno>
+						<idno type="cligs">ne0205</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2008">2008</date>, <ref target="https://archive.org/details/eltrendirectore00munigoog"/>.</bibl>
-				<bibl type="print-source">Oficinas de la ilustración española y americana, <date when="1880">1880</date>, Madrid.</bibl>
-				<bibl type="edition-first"><date when="1880">1880</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El tren directo</title>
+					<title type="sub">Relación contemporánea</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2701130.html">XX2701130</idno>
+				</idno>
+				</title>
+					<author xml:id="Munilla">
+						<name type="full"><forename>José</forename> <surname>Ortega Munilla</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9725 - IO 9726">IO 9725 - IO 9726</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/122764641">122764641</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3186502/">Q3186502</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1129706.html">XX1129706</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/42728255/">42728255</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2008">2008</date>, <ref target="https://archive.org/details/eltrendirectore00munigoog"/>.</bibl>
+					<bibl type="print-source">Oficinas de la ilustración española y americana, <date when="1880">1880</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first"><date when="1880">1880</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El tren directo</title>: 	<title type="sub">novela</title> , <publisher>V. H. Sanz Calleja</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465164013" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465164013"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +173,14 @@
 				<p>La trama incorpora gran número de elementos. El ferrocarril funciona como "símbolo del siglo" y contrata con la cerrazón y atraso de la zona [...].</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9725" key="IO 9725" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +193,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">naturalista</term>
 					<term type="author.year.change">1884</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -181,10 +205,10 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">relación contemporánea</term>
 					<term type="text.genre.subtitle.source" resp="bne">relación contemporánea</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">relación contemporánea</term>
@@ -194,7 +218,7 @@
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE7">0.5</term>
 					<term type="text.litHist.literaryQuality" resp="MdLE7">high</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
@@ -216,6 +240,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-02-22" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,8 +248,8 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0205_chap1">
-				<head>I</head>
-				<head>¿Empieza ó acaba?</head>
+				<head xml:id="ne0205_head_000">I</head>
+				<head xml:id="ne0205_head_001">¿Empieza ó acaba?</head>
 				<p>María Luisa habia pasado la noche en tristes y agitadas vacilaciones. Su casto lecho de viuda estaba, cuando el dia llegó, deshecho y revuelto; las sábanas, rebujadas; la fina colcha de punto, labor común de un producto inglés y una virtud china: el algodon y la paciencia, cubría apénas con un velo de pudor el seno hermoso de María Luisa y la curva griega de su talle. Los brazos salían fuera de' este rebozo, dejando descubierta su bella proporcion hasta mucho más arriba de los codos. Eran brazos morenos, suaves, de seda casi, bajo cuyo cutis corría el humor rosáceo de la vida con la agitación que produce una noche de placer ó una noche de calentura. Dieron las cuatro en un reloj de caja, previo el balbuceo de la campana ronca, y la lamparilla que ardia sobre un viejo taburete de piano, forrado de hule, se apagó, lanzando una ojeada ansiosa á los objetos del mueblaje y un chisporroteo chirriante como el del fósforo al encenderse. María Luisa alzó entonces de las almohadas la cabeza, apoyándose con las manos en el lecho, y miró la oscuridad del cuarto, y el filo blancuzco que en el maderaje de las dos ventanas trazaba el nuevo dia, y oyó el cacareo de un gallo y las campanillas de la muía dé un labrador que iba á sus faenas, arras-<seg rend="sub">x</seg> trando la rama del arado sobre el piso polvoriento. Des-pues se levantó, puso sus piés desnudos en la piel de cordero que cubria el pavimento á la derecha de la cama, y palpó las sombras hasta tocar el frió hierro de aquella cuna donde reposaba Justina. Aproximó su rostro á otro rostro infantil, y sin equivocarse, sus labios fuéronse á posar dulce y amorosamente en una cabeza que dormía.</p>
 				<p>—¡Oh! —dijo María Luisa — por tí al ménos, ángel mió... ¡ Es preciso!</p>
 				<p>Buscó sobre la mesa de noche la caja de cerillas y encendió la bujía. Al pié del lecho estaban sus ropas, y con rapidez se las vistió. La bata de percal negro con lunares blancos, y un pañuelo oscuro de seda, que anudó á su cabeza, prestáronle abrigo contra el relente del amanecer, que se colaba, á pesar de los burletes, por mil resquicios. Entonces abrió las maderas de una ventana, y cierto albor dudoso llenó la estancia. La casa despertaba toda. El campo empezaba á ser, y al salir de la noche parecía salir de la nada. El horizonte caia en lento declive hácia un camino de herradura, cuya amarillenta línea, serpeando entre sembrados, huertos y eriales, parecía un símbolo del Fisco, que en todas partes mete su importuna curiosidad. Allá lejos, despues de deseender poco á poco, subíase sobre los hombros del Cerralvo, un monte azulado, del cual caía la. luz como una sutil lluvia de nieve, y seguía culebreando hasta que la vista le dejaba de ver bajo un vapor ceniciento de nubes amontonadas. Este segmento deshabitado del horizonte faé el que contempló María Luisa al abrir la ventana. Despues, como oyera movimiento en la cuna, acercóse á ella.</p>
@@ -251,8 +276,8 @@
 				<p>Era un contrato, un puro contrato mercantil lo que la niña proponía. La madre le aceptó, y el ruido de besos que sonó en la estancia le puso el sello. ¡ Una madre y una niña que se enojan y se besan! Esto no puede ser el final de un drama. Veamos.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0205_chap2">
-				<head>II</head>
-				<head><seg rend="bold">Mirada al frente.—Mirada atras.—Mirada al rededor.</seg></head>
+				<head xml:id="ne0205_head_002">II</head>
+				<head xml:id="ne0205_head_003"><seg rend="bold">Mirada al frente.—Mirada atras.—Mirada al rededor.</seg></head>
 				<p>Terminaba Maria Luisa la faena de vestir á Justina, cuando entró en la estancia una señora que frisaría en los cincuenta años, áun bien conservada, fresca, gruesa, oronda y de pausado andar. Era su rostro redondo, con brillo aterciopelado en las mejillas fofas y blandas, y unas chapitas doradas en la frente y bajo los ojos. Sobre éstos se plegaba un cortinaje de piel rugosa, que, al correrse con lentitud, dejaba descubierta una pupila fria, verde y sin movimiento casi, y dos pestañas claras, siempre trémulas, como si les costase trabajo mantenerse en línea curva y la gravedad del sueño las mandase con su magnética influencia dormir hasta el fin de los siglos. Las cejas peludas y negras acentuaban por extraño modo este rostro, dándole sombra en su eterno sopor. Eran como los sauces de aquel cementerio humano. Cuando se movía la dueña de este rostro, las mejillas temblaban, cual si en vez de carne, de blanda gelatina fueran.</p>
 				<p>Vestía de telas negras: merino, orleans y estameña; de su desaforada cintura colgaba la correa de charol del hábito de los Dolores, y en su extremo, allí donde la piedad habia puesto un corazon de plata con sus siete espadas de lo mismo, descubríanse los arañazos de <seg rend="italics">Ge-deon</seg>, un gatito rubio que la perseguía como el ratón al elefante de la fábula, jugando con los ámplios vuelos de su falda y con el ovillo de su labor de aguja. Llamábase esta respetable dama doña Pazita Güemes y estaba unida á María Luisa por estrecho parentesco: era hermana de Bartolomé Güemes, el difunto padre de Justina. Permanecía soltera, porque nunca se ha casado el egoísmo sublime, y ella era el egoísmo en forma de paquete de gelatina. Dicen que fué egoísta de por vida y que nació con ese defecto; pero es incuestionable que se desarrolló más tan lastimosa disposición con la atmósfera reinante en casa de los Güemes, comerciantes de ferretería, en Pamplona. El mismo Bartolomé era un egoísta de marca mayor, y al casarse en Pamplona con María Luisa, pobre hija de un mísero oficial del Gobierno, pareció ponerse en contradicción con sus antecedentes de hombre calculista y frió. No fué pequeño el disgusto que tan desigual matrimonio produjo en el hogar de los Güemes. El tio Juan Güemes, fundador del comercio de las <seg rend="italics">Tres Menas</seg>, el más antiguo de Navarra, que poseyendo más de dos millones de duros en el Banco de Bilbao, paseaba su achacosa persona bajo los porches de la plaza, con un sombrero bajo y mugriento en la cabeza y un garrote de acebo en la mano, dijo, al saber que Bartolomé se casaba con María Luisa:</p>
 				<p>—¡Ese picaro nos deshonra!.... ¡Retaco!.... La hija de ese sorbetinteros traerá á mi casa la mala suerte.....</p>
@@ -280,8 +305,8 @@
 				<p>—¡Buenos dias, buenos dias!</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0205_chap3">
-				<head>III</head>
-				<head><seg rend="bold">Viaje alrededor de un notario.</seg></head>
+				<head xml:id="ne0205_head_004">III</head>
+				<head xml:id="ne0205_head_005"><seg rend="bold">Viaje alrededor de un notario.</seg></head>
 				<p>Abriéronse sucesivamente, una tras otra, todas las ventanas del edificio. Una cabeza de mujer ruda y salvaje, especie de busto de barro crudo á medio esbozar, fué apareciendo detras de las viejas persianas verdosas, y sus manos las empujaban hasta que, chocando con la pared, producían la caida de fragmentos de yeso y tierra. Aquel gran caserón era un anacronismo de manipostería. El tejado hundido, con sus hileras de tejas en línea curva, como si el fantasma del tiempo hubiese paseado muchas veces sobre él sus tarsos abrumadores, hacía perfecto maridaje con las paredes, de piedra hasta su mitad y desde allí de yeso, manchadas, parduscas, llena» de grietas, hendiduras, oquedades y bultos. Lluvia y viento habían escarbado con sus mil uñas aquel edificio,’ y en su larga labor de las noches de invierno, ¡cuántas* horas pasó Casa-Arijona gimiendo y retorciéndose en los brazos de la tormenta como un viejo paraguas de varillaje desgobernado, temiendo que el techo volase, qué los lienzos vinieran á tierra, que las puertas girasen sobre sus chirriantes goznes y se cerráran para adentro' con estrépito, montándose una hoja en otra y quedando hasta el fin de los siglos en la contorsion de la boca de nn epiléptico! Era un inválido con la pata de pino podrida, el chapeo arrugado, los ojos ciegos, las cruces percudidas de herrumbre. Pasaría un niño jugando, y de un pelotazo echaría por tierra toda aquella máquina de vejeces.</p>
 				<p>Cuando la cabeza de barro crudo hubo aparecido en cinco ventanas distintas, y abrió la sexta, que era la de la esquina, sacó medio cuerpo fuera é hizo con la mano gestos de despedida, miéntras contraía sus mejillas en gruesos pliegues una sonrisa de afecto. Saludaba á Justina, que puesta de brazos en la ventanilla única de la tartana, decía, devolviendo gesto por gesto y sonrida por sonrisa:</p>
 				<p>—Adiós, <seg rend="italics">Pajaróla!...</seg> ¡Que eches trigo á mi palomita...! No se te olvide Cuando vuelva.....</p>
@@ -331,8 +356,8 @@
 				<p>—¡Hay un Dios que se llama fatalidad í ¿ Por qué?.... Tenga calma el curioso; que á su tiempo sabrá cuanto desee, si es que acertamos á referirlo.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0205_chap4">
-				<head>IV</head>
-				<head>Arijona de Arriba.—Historia urbana.</head>
+				<head xml:id="ne0205_head_006">IV</head>
+				<head xml:id="ne0205_head_007">Arijona de Arriba.—Historia urbana.</head>
 				<p>Una mañana ¡si parece cosa de cuento!.... en lo más alto del Cerralvo apareció un objeto extraño é inverosímil, que los labradores de Aríjona de Arriba no supieron nombrar. Era un tubo dorado y coruscante, que puesto sobre tres patas agudas servia para «^ue una por-cion de señores extranjeros inspeccionáran el país con una curiosidad irritante. Los círculos sociales de Arijona se alarmaron. Gran contienda hubo en la posada del Zurdillo, y no menos animada fué la que en el hospedaje del Agujero se movió sobre qué significaban aquellas operaciones y quiénes eran aquellos caballeretes vestidos de gruesos capotes y gorras de piel, que fumaban magníficos vegueros con delectación y parsimonia. En la botica fué donde las explicaciones sabias de la gente culta levantaron la punta del velo.</p>
 				<p>—Son los ingenieros —afirmó el doctor Buendia.</p>
 				<p>—Vienen á hacer el trazado del ferro-carril directo ¿ Beimiel—añadió el boticario.</p>
@@ -353,8 +378,8 @@
 				<p>Montó á caballo ligeramente, y espoleó, ó por mejor decir, aporreó con los tacones de sus borceguíes los costados sumidos y enjutos del rocín, que tomando entre los dientes el freno para no caerse, como un cojo toma la muleta, salió trotando de medio lado con un airecillo tristón y melancólico.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0205_chap5">
-				<head>V</head>
-				<head><seg rend="bold">Petrilla.</seg></head>
+				<head xml:id="ne0205_head_008">V</head>
+				<head xml:id="ne0205_head_009"><seg rend="bold">Petrilla.</seg></head>
 				<p>A las ocho dejó de sonar el fuelle de la fragua y salió la luna. Petrilla venía ya en busca de su puchero de garbanzos y su dura cama. Guiñapos de un mantón cubrían sus hombros, y los zapatos que llevaba á la rastra por el piso escarchado eran más anchos que sus piés y más viejos que su actual usufructuario. Sonando el palo de punta aguzada, tanteando piedras y paredes, siempre arrimada á éstas y huyendo de aquéllas, alzando los piés á veces como una garza que se contonea, apresurándose luégo como quien teme algo, volviendo el infantil rostro hácia el negro hueco que la entrada de la calle tortuosa marcaba en el nocturno y tormentoso panorama campestre, no interrumpía su marcha la buena muchacha, que era toda valor y resolución. Iba cantando alegremente :</p>
 				<p><seg rend="bold">«Salió la luna,</seg></p>
 				<p><seg rend="bold">¡Ay qué tormenta!</seg></p>
@@ -445,8 +470,8 @@
 				<p>—¿Y Petrilla? ¿Y la ciega?</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0205_chap6">
-				<head>VI</head>
-				<head>No descansan ni el viento ni el avaro.</head>
+				<head xml:id="ne0205_head_010">VI</head>
+				<head xml:id="ne0205_head_011">No descansan ni el viento ni el avaro.</head>
 				<p>Aquel hombre dormía poco. Sus jergones de hoja de maíz, que crujían bajo el peso del cuerpo, dieron señal con su ruido de que la inquietud se habia apoderado de Clavo. Tocó las tres el reloj de la iglesia, y poco despues sonaron también en los dos relojes de la sala. El avaro no pudo aguantar más su impaciencia y se levantó; vistióse con rapidez, encendió el farolillo y salió á la sala. Allí, en medio de tanto mueble desigual y desordenado, dormía la niña, y su respiración tranquila simulaba el andar de una péndola. Clavo tuvo que saltar por encima del lecho para acercarse á una mesa donde él solía trabajar. Cubríala un paño verde por todo extremo raido y traspillado, y sobre él*estaba el mísero recado dé escribir: un tintero de cobre y dos plumas de ave, apuradas hasta cerca de las barbas. En la pared habia unas manchas de tinta lineales, paralelas, lo cual decía que Clavo secaba allí sus escritos para ahorrarse el gasto ruinoso de la arenilla.</p>
 				<p>—A las cuatro—se dijo miéntras, sentado ya frente á la mesa, abría uno de sus cajones—llegará Güemes... Güemes.</p>
 				<p>Ni al pensar omitía él la repetición de la última palabra de las oraciones.</p>
@@ -460,7 +485,7 @@
 				<p>Aquellas cartas... Aquel retrato... No sabríais de quién eran sin escuchar ántes lo que voy á referiros.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0205_chap7">
-				<head>VII</head>
+				<head xml:id="ne0205_head_012">VII</head>
 				<p><seg rend="bold">La novela de Petrilla.</seg></p>
 				<p>No creáis que Clavo fué siempre viejo. Apelo á vuestra credulidad para deciros que alguna vez tuvo treinta años  que hubo amores desatados en su alma. De entonces data su unión con la Zaina, una moza de rumbo, morena, africana casi por su belleza y su carácter, que tantas veces fué á llenar su cántaro á la fuente del amor, que al cabo vino á quebrársele. Yióse pobre, deshonrada  hermosa. Las gentes timoratas de Arijona la dejaron en ese aislamiento de que salen los pecadores arrepentidos ó llenos de perversidad. No ha que decir que Josefa la Zaina siguió el camino del pecado, porque basta referiros que se fué á vivir al callejón del Corregidor, uno de los más apartados del centro de la villa,  su casa fué desde aquel dia visitada por el demonio de los amores comprados. Uno de los primeros que gozaron de la privanza con aquella sierva de Vénus fué Clavo. Apasionóse de ella,  toda la continencia de treinta años de vida retirada, tranquila, virginal, en que el oro fué su único tirano, estalló como un volcan delante de Josefa. Dentro del pecho de Clavo luchaban horriblemente como bestias feroces el amor y la avaricia, y cuando ésta hundía su zarpa de oro en la hermosa visión creada por el ahogo dulcísimo de un deseo lujurioso, ó cuando esa visión de contorno lúcido y dintorno impalpable vencía y derribaba al vil vampiro del metal, Clavo pasaba por las alternativas de un cerebro sometido, ahora al hielo de los Alpes, y poco despues al incendio del Vesubio. Entregóse al fin, y sin fuerza ni aliento para la lucha, dejóse desbalijar impunemente por las bellas manos de aquel demonio familiar á quien la historia del averno llamára á la Zaina. No hubo grandeza en su caída, porque cayó en innoble postura, luchando y defendiendo la llave,de su gaveta. Josefa hizo pasar mil duras pruebas á su cortejo; le faé infiel tantas veces como primaveras pasaron; y últimamente, le abandonó por completo para seguir al hijo de Güemes, llegado casualmente á Arijona con un encargo mercantil de su padre. No se os ha hablado de este Güemes al pintar la galería de retratos de la familia, porque Patricio (tal era su nombre) no vivía en lo que faé purgatorio de María Luisa. Hallábase entonces en América, adonde faé despues de haber dilapidado su legítima en bromas y francachelas de la peor especie. No poco contribuyó á este derroche la Zaina, á quien llevó á Sevilla, su patria, con un lujo de princesa india ó loreta parisién. Acabado el dinero, se acabó el amor. Patricio Güemes experimentó desprecio por aquella mujer, qae le desdeñaba el mismo día en que se agotó el arroyo de plata en que habia ansiosa bebido, y se alejó de ella desesperado, loco, dispuesto á suicidarse, sin que en su alma restase un eco dulce, una fibra enérgica, una promesa de porvenir agradable. Josefa quedaba encinta, En su lecho de disolución iba á reposar un sé* inocente, como un pájaro en un pantano. Güemes lo sabía, pero en su alma el amor propio ofendido mandaba con mayor autoridad que el sentimiento paternal áun nacido apénas. Era hombre. violento por demas Patricio Güemes. La dureza de carácter era la única cualidad que habia heredado de su padre. Una vez concebido un pensamiento, lo ejecutaba como quien se arroja por una cuesta abajo. Para discurrir se rodeaba de la luz de los relámpagos de su pasión, y tomaba esos resplandores engañosos por claridad meridiana. Para obrar, abandonábase á los arrebatos de la tromba. Su vida era una tempestad sin calma ni descanso.</p>
 				<p>La Zaina volvió á Arijona pobre, degradada, sin fuerza para recuperar la virtud perdida, Los dolores de la maternidad, que algunas mujeres toman como evocaciones misteriosas al buen camino, agriaron la pasta de sus sentimientos, haciéndole perder su riente aspecto de odalisca alegre. Fué bajando peldaño á peldaño la escala de las afrentas. Dicen que hasta pidió limosna en las afueras de Arijona; que arrastró su hermosura ajada por aquellos caminos, dejándose en ellos los postreros jiro-r nes de su túnica de salamandra hechicera. ¿Qué hubiese sido de ella sin el amor del avaro? Una noche la encontró hambrienta, desfallecida, moribunda, y desde aquel momento Josefa se adhirió al viejo tronco sin primavera posible, como la madreselva seca á la cal del añoso muro. Clavo volvió á proteger á la Zaina, la permitió vivir en un caserón semiarruinado que poseía, la dió unos cuantos muebles, y la pasó una pequeña cantidad mensual, con que apénas podia sustentarse la triste pecadora. Su hija se llamó Petra. Era el bello fruto del placer furtivo. Clavo miró con celoso enojo á aquel nuevo sér, á la hija de su rival triunfante, prueba única de sus amores dichosos con Zaina, recuerdo para ésta del hombre que la abandonó. Impuso terribles condiciones á su querida á cambio de su apoyo.</p>
@@ -488,7 +513,7 @@
 				<p>Pero entonces se fundó en Arijona la fábrica de cristal, y el avaro supo que en ella trabajaban algunos obreros ciegos. No necesitó más. Cogió de la mano á la niña y la condujo á la fábrica, donde fué admitida en concepto de aprendiz en el taller de bruñido. ¿Cómo aprendió á trabajar Petrilla? ¡Prodigio inexplicable de la natura* leza, que no se concibe sino porque se ve!</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0205_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0205_head_013">VIII</head>
 				<p><seg rend="bold">El abismo de los cálculos.</seg></p>
 				<p>Febril y contenta la mirada, nerviosa la mano, encorvado el cuerpo sobre la mesa, estaba el viejo hojeando aquellos papeles, cuando la noche iba á entregar su legado de almas dormidas al alba triste y fria del invierno del Norte. Sobre ellos habia levantado un alto alcázar de planes financieros. Era su espíritu un famoso Midas, que con sólo ver los más viles objetos los trocaba en oro. De un roto pedazo de suela hacía él cosa aprovechable y útil, y de una muchachilla ciega é inculta iba á hacer una estatua del noble metal. Sus pensamientos iban expresándose en esta forma :</p>
 				<p>—Esta gente que se ha enriquecido en América no sabe ni esto de negocios. Allí el oro.anda en nubes por el aire y forma el lodo de la tierra Aquí hay que buscarlo como un garbanzo negro entre una fanega de garbanzos blancos. Este señor Patricio Güemes, que se trae de allá ¿qué sé yo? un disparate de dinero, empieza cometiendo una tontería, que le costará unas cuantas onzas.!... Esta es su carta de hace dos meses: «Apre-ciable amigo:»  ¡ Bueno! Lo mismo me aprecia que a la primera camisa que se puso ¡Judas Iscariote!..... « Echemos al olvido nuestros odios de ayer. La desdichada que los causó ya ha muerto. No hay, pues, motivo para que seamos malos camaradas. Ademas, es posible que le tenga cuenta estar bien conmigo. Voy á ésa á enseñar á los ricos á gastarse el dinero de un modo productivo y en grande. Ya verá V. qué envidia nos tienen..... Sí; nos tienen porque cuento con su ayuda y su colaboración. ¿Qué es de aquella niña que tuvo la Zaina? Ya comprende V. por qué me interesa un poquillo el saberlo. Me acuerdo á veces de si seré yo causa de que el Estado se arruine manteniéndola en alguna Inclusa » Esta otra carta es del mes pasado: «Nueva-York, etc.» ¿Dónde habla de la niña? ¡Ah, sí!  Esto es..... «¡Cómo! ¿Es posible? Entonces hay que canonizar á usted, señor de Clavo. En verdad le digo que yo tenía " formado de V. un mal concepto, juzgándole incapaz de todo acto generoso ¿Qué quiere V.? Me habia equivocado, y me alegro. Mil gracias por sus desvelos. ¡ La pobre chica es ciega! No sabe V. lo que me horroriza el pensar que mi hija no puede ver el sol Ahora iré á Arijona con dos motivos: el de mis negocios futuros y el de recoger á mi hija, indemnizando á V. de los gastos »</p>
@@ -510,8 +535,8 @@
 				<p>A las seis Eso lo verán Yds. en el capítulo siguiente, que es de esta manera :</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0205_chap9">
-				<head>IX</head>
-				<head>La princesa prefiere ser esclava.</head>
+				<head xml:id="ne0205_head_014">IX</head>
+				<head xml:id="ne0205_head_015">La princesa prefiere ser esclava.</head>
 				<p>Vino el alba y se levantó Petrilla. Fué á buscar el agua á la cantarera de la cocina, echó de ella en un cubo lo bastante, y remangándose hasta los codos los manguitos atados debajo de los hombros, desnudó su cuello y se lavó con esa resolución que da á entender poco miedo al frió. Sus ojos no tenían niña. Eran dos globos blancos, quietos é inexpresivos, algo amarillentos hácia los vértices del párpado, donde las venas y nervios se reunían en una red delicada y visible. Su nariz era bonita, corta, aguda, como pico de ave doméstica; la frente, angosta y rodeada de negras crenchas de desordenado é indómito cabello; la oreja, delgada, de lóbulo cartilaginoso y rosado; el cuello, robusto, sostenía el alcázar de los pensamientos con valiente arrogancia. A veces movíase de derecha á izquierda aquella cabecita con una oscilación muy común en los ciegos, bogando sobre los hombros como una barca sobre las olas. Diríase que estaba haciendo un viaje al país de la luz.</p>
 				<p>—¡Hoy llego tarde, madre mia! — dijo, enjugándose la cara en un basto paño de lienzo.</p>
 				<p>Y luégo buscó por los rincones el garrote que la servia de lazarillo.</p>
@@ -574,7 +599,7 @@
 				<p>—¡Oye, mala pécora! ¡Ya te estás quitando ese vestido ! Y mañana, apénas amanezca..... andandito á la fábrica á la fábrica.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0205_chap10">
-				<head>X</head>
+				<head xml:id="ne0205_head_016">X</head>
 				<p>Cuando anocheció, en la lejana mole de Pico Sacro dejóse ver una nube, que fué ensanchándose rápidamente como una inundación de sombras. El viento húmedo, el olor vivaz y penetrante de la tierra mojada, el cerco algodonáceo que envolvía á la luna fueron claros indicios para el extraviado y rendido caminante, que dijo, embozándose en la manta de viaje:</p>
 				<p>—¡Bien conozco el camino! Por aquí no hay otro remedio sino llegar. Pero... va á llover. ¡Esto es frió! Caramba. La noche está pidiendo una buena cama ¡Ay patria desagradecida, cómo recibes á tu hijo!</p>
 				<p>Despues, sintiéndose súbito enternecido, dejó el tonillo zumbón que le habia dado el ludir de su existencia comercial, y añadió:</p>
@@ -613,8 +638,8 @@
 				<p>Salieron á la calle. Entonces llovía, llovía, de tal modo, que Petrilla apretó contra sí los mal doblados pliegue» de su pañolillo de tartan, como un pájaro que aprieta las alas para librarse del agua y el frió.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0205_chap11">
-				<head>XI.</head>
-				<head>Al rededor de la luz.</head>
+				<head xml:id="ne0205_head_017">XI.</head>
+				<head xml:id="ne0205_head_018">Al rededor de la luz.</head>
 				<p>El aislamiento de María Luisa no era tan grande, que pudiera excusarse de recibir algunas noches á várias personas del lugar, que acudían, llevadas unas del puro deseo de distraer su aburrimiento, otras con el de ver el bello rostro de la viuda. Aquella noche, al dar las ocho en el lejano reloj de la torre, con campanadas lentas, de las cuales el viento sólo permitió oir la mitad, entró en el comedor tiritando el joven Dióscoro Ercilla, trayendo del brazo al buen cura D. Bernabé Gallostra, el cual parecía una galvanizada momia, entre los pliegues de su capa recia, bajo la cual se dió á luz al desembozarse el balandran pardo y grasiento, lleno de manchas rojizas en el pelado tablar del pecho, que no dejaban lugar á duda sobre que el digno pastor tomaba rapé.</p>
 				<p>—¡Qué noche!—dijo el joven Dióscoro.—Servidor de ustedes, señoras.</p>
 				<p>Les hizo una reverencia ridicula á puro rendida.</p>
@@ -694,8 +719,8 @@
 				<p>—¿No habrá peligro?—preguntó el señor Cura cuando salieron al campo.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0205_chap12">
-				<head>XII</head>
-				<head>En silla de postas.</head>
+				<head xml:id="ne0205_head_019">XII</head>
+				<head xml:id="ne0205_head_020">En silla de postas.</head>
 				<p>No era precisamente silla de postas, sino un birlocho desgobernado, con cuatro desniveladas ruedas, que rodaban torcidas por estar mal encajadas en los chirriantes ejes, lleno de barro hasta la capota, el que puso en con-mocion al puente de Arroyo-Corambre al atravesar al paso de dos muías los agujereados tablones que le formaban. El sucio farolillo que pendia de la capota, protegido por una alambrera dorada, alumbraba á trechos el camino, quebrando su luz en las charcas que se la echaban unas á otras como gnomos negros jugando con un haz de rayos «Je sol. Las bestias flacas, con una arroba de pelo en cada pata y una arroba de lodo en cada arroba de pelo, tiraban con heroico empeño de la caja, ya vadeando arroyos, ya metiéndose por sembrados para evitar los baches de peligro. Sus lomos sudaban, á pesar de la lluvia, y vapor fumoso salia de ellos. Cuatro mortales leguas traian de caminata, cuatro mortales leguas por un país de lodo y piedras, donde no era posible andar sin la paciencia de Job y la resistencia de Anteo. Las muías no po'dian ya más. Echaban*el alma por la boca, y el sudor por todos los pelos de su puerpo magro, constelado de mataduras.</p>
 				<p>—¿Será posible que no lleguemos nunca?—dijo una voz femenina, aguda y musical como canto de pájaro.</p>
 				<p>Sonaba esta voz dentro del carruaje, y sus últimas palabras salieron al exterior con una oleada de perfumes de <seg rend="italics">opoponax</seg> y heno, porque la ventanilla se abrió súbito, con gran estrépito de maderas desencajadas y vidrios vibrantes. Una cabeza de hombre se asomó y dijo con voz recia y brusca :</p>
@@ -767,7 +792,7 @@
 				<p>Cruzaron várias calles seguidos del carruaje y volvieron á salir al campo. Iban delante dos alguaciles llevando antorchas, detras Genaro, en cuyo brazo derecho se apoyaba Enriqueta, y á su lado el señor Alcalde, muy preocupado con dar á su persona voz, palabras y ademanes solemnes.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0205_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0205_head_021">XIII</head>
 				<p><seg rend="bold">Instalación.</seg></p>
 				<p>—Señor Alcalde, yo no me niego á hospedar en mi casa á esos señores pero la planta baja, única disponible, carece de comodidades y abrigo: está sin ventanas, sin cristales, las puertas no encajan Mejor será que les busque V. más decente hospedaje.</p>
 				<p>Asi habia dicho María Luisa al señor Alcalde, siempre que éste le indicó la necesidad en que el Gobernador de la provincia le habia puesto de disponer una casa para el Ingeniero Jefe de la línea férrea en construcción. Pero la digna Autoridad contestó siempre con evasivas, y cuando ocurrió la escena que acabamos de narrar, dando una prueba elocuente de sus condiciones de mando, condujo á D. Genaro Insausti y su esposa á Casa-Arijona, con no poca sorpresa de María Luisa, que no habia dado aún su consentimiento definitivo á las indicaciones del Alcalde.</p>
@@ -813,8 +838,8 @@
 				<p>—Es más bonita de lo que debia — pensó Enriqueta.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0205_chap14">
-				<head>XIV</head>
-				<head><seg rend="bold">El caballo de Troya.</seg></head>
+				<head xml:id="ne0205_head_022">XIV</head>
+				<head xml:id="ne0205_head_023"><seg rend="bold">El caballo de Troya.</seg></head>
 				<p>El viejo Clavo sabía algo de historia griega. No fué, pues, mucho que entrando un dia—quince ó diez y seis despues de que lo ántes relatado acaeciera—en la casa que arrendó y amuebló D. Patricio Güemes, llamado en el pueblo Güemes el americano, dijese en seguida de saludar al enriquecido comerciante :</p>
 				<p>—Aquí traigo el caballo de Troya.</p>
 				<p>Lo que apodaba el caballo de Troya era un voluminoso monton de papeles cosidos con rojo hilillo, el cual, al ser dejado sobre una mesa cubierta de verde hule, se desordenó, moviendo con ruido sus amarillas hojas, como si quisiese echar de sí algo malo y amenazante para justificar el título que el viejo le dió.</p>
@@ -878,8 +903,8 @@
 				<p>Ella se sentía disgustada en aquella atmósfera de decrepitud, y la conversación de Clavo, los rostros graves y odiosos de D. Tadeo y D. Lúeas, la producian enojo y aburrimiento. ¿Qué íué de sus coplas? ¡Nadie lo sabe! Ya no cantaba, ya no reia; habia dejado de ser aquella Petrilla que Zomeño, el señor amo de la Fábrica, pintorescamente llamaba afuna voz con un palo.»</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0205_chap15">
-				<head>XV</head>
-				<head>Estudio de paisaje.</head>
+				<head xml:id="ne0205_head_024">XV</head>
+				<head xml:id="ne0205_head_025">Estudio de paisaje.</head>
 				<p>Cuando el viento se fué, llevándose delante de sí enjambres de nubarrones oscuros, derritiéronse las altas nieves, centelleó el sol en los mil arroyos del campo, y pudo salir D. Genaro á inspeccionar los trabajos de la línea. De Pamplona llegó el caballo que había de montar: una noble bestia de peludas zancas nervosas, crin abundante y ojos vivos. El primer dia que salió despidióle en el portal de Casa-Arijona Enriqueta. Fué al paso hasta el puente Verde, y luégo dejóse llevar del ímpetu del bruto, que le condujo en poco más de mejlia Jiora más allá de Lugareda, á la derecha de los terraplenes, donde una brigada de obreros desmontaba el terreno y preparaba la apertura de un túnel. Toda la montaña en que Lugareda se asienta aparecía teñida de matices violeta, azul y dorado, según el sol se quebraba en un hueco, se detenia en una sombra ó se reflejaba en una planicie. El lugar repicaba por no sé qué fiesta, con todas las campanas de sus cinco iglesias, al lado de<seg rend="sup">1</seg> algunas de las cuales altos cipreses columpiaban con leves sacudidas su rígida cabeza cubierta de verde morrion. En las eras habia rejas de arado hincadas en el suelo blando de las recientes lluvias y más de un carro volcado hácia atras, con las varas levantadas al cielo, como cadáver de un enorme insecto con las antenas tiesas. Grupos de muchachos jugaban al chito ó la pata coja, ó á pedrada limpia se hostilizaban desde lejanas alturas. En el rio, lavanderas apaleaban la ropa, sin cesar sus diálogos de orilla á orilla, y las aguas, blancas de jabón, corrían como con ánsia de librarse del contagió de lás telas colgadas de palos ó tendidas sobre montones de zarzas, y que tenian la apariencia de grandes redes de arañas cubiertas de polvo. En las afueras, una reñida lucha de pelota se sostenía en el juego que hay en el alta pared de un derruido convento de franciscanos. Aun se veían por las ventanas sin maderas santos olvidados en las hornacinas, escuchando con una paciencia en que el fiel miraba reproducidos los dias del martirio, las soeces palabras de algunos de los jugadores y el peloteo continuo que se repercutía en las paredes, mezclado á los gritos del chicuelo que contaba las faltas con una voz chillona de tiple de catedral. Cerca de un corro de hombres en mangas de camisa, á pesar de la crudeza de la estación, divisábase el espíritu animador de la pelea é inspirador de los malsonantes vocablos: un jarro descomunal de vino, al cual iban á llenarse los arcaduces de la noria de la embriaguez.</p>
 				<p>Torció á la derecha el jinete, y hallóse en. el declive de Navalcaballo, erizado de zarzales á trechos, y á trechos desnudo de vegetación. Fulgores trémulos corrían á flor de tierra, al reflejarse la luz solar en mil fugitivos arroyos, produciendo en el observador algo de lo que los médicos llaman hipnotismo, una alucinación incómoda y ofensiva para las retinas delicadas. A lo lejos tres molinos de viento agitaban despacio sus aspas, haciendo vibrar las rotas lonas que entre mucho cordaje colgante y deshilado pendía de las ramas; Parecían tres mendigos andantes enseñando al pasajero, por moverle á piedad, los viles harapos de su manta multicolor y agujereada.</p>
 				<p>Oyó D. Genaro hácia los molinos ruido de campanillas y voces de álguien que hostigaba á una bestia, obligándola á andar. Estos rumores, al extenderse en el espacio vacío, parecían aplanarse, ahuecarse y sonar como si salieran de una tinaja quebrada; fenómeno que ha podido observar todo el que ha pasado algún tiempo en campo llano. Una tartana de capota roja venía á buen paso, camino de Arijona. Su frente era negro, y tenía una sola ventana, en la cual se veía algo blanco agitándose, y detras una cabeza humana. El sol daba de lleno en ella, y por exceso de luz se confundían sus líneas, rodeándose el contorno del rostro de resplandores vivos. Cuando D. Genaro se acercó más vió que aquella cabeza era de mujer, y que la mujer lloraba, sacando fuera del carruaje su dolor, porque álguien que debía ir dentro no lo descubriera. Un montecillo ocultó luégo el carruaje á D. Genaro; pero despues de traspuesto hallóse con que la mujer cuya cabeza asomaba por la ventanilla era era,su huéspeda, era María Luisa. Prontamente se retiró ella al reconocer al jinete, pero no tan pronto, que lograse ocultar de sus ojos las lágrimas y de sus facciones el contagioso y enternecedor espectáculo’ <seg rend="bold">«&amp;1</seg> sufrimiento. ¿Por qué no pudo D. Genaro reprimir cierto extraño sentimiento, profundamente excitado en su alma al ver el llanto de María Luisa? ¿ Qué habia de común entre aquellas lágrimas y él? «Seguramente nada», se decia á sí mismo. Detuvo el caballo para saludar, y la sombra de su cuerpo proyectada sobre la ventanilla de la tartana permitió á María Luisa quitar de sobre sus ojos la mano que, á modo de pantalla, habia puesto para librarlos de la luz cegadora. Despues del saludo dijo D. Genaro :</p>
@@ -982,8 +1007,8 @@
 				<p>Anduvo al paso hasta que la tartana se alejó buen trecho. Despues se detuvo y la miró perderse de vista entre las callejas de Pilar-Mojado. Sólo entonces puso á su caballo á galope tendido.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0205_chap16">
-				<head>XVI</head>
-				<head>Seducción.</head>
+				<head xml:id="ne0205_head_026">XVI</head>
+				<head xml:id="ne0205_head_027">Seducción.</head>
 				<p>Al levantar su voluminosa mole del blando lecho aquella exageración de la materia llamada doña Pazita, dijo, despues de sacudir el primer manotazo del día á <seg rend="italics">Gedeon:</seg></p>
 				<p>—¡Hoy también se han marchado!  ¡Qué negocios traerá esa María Luisa! ¡Nadame cuenta! Soy un cero á la izquierda, un cesto de mimbres, un saco de paja ¿Por qué te saliste, pobre Pazita, del convento de los Siete Pecados? Allí estabas bien, allí te consideraban mucho, allí eras algo ¡ Zape, maldecido <seg rend="italics">Gedeon!</seg></p>
 				<p>¡No me andes en el canastillo de la media!  ¡Yaya!</p>
@@ -1072,8 +1097,8 @@
 				<p>Clavo salió de tras de doña Pazita, sonriendo y dándose golpecitos en los nudillos. Era Napoleon despues de Austerlitz.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0205_chap17">
-				<head>XVII</head>
-				<head>Lo que pensó él.</head>
+				<head xml:id="ne0205_head_028">XVII</head>
+				<head xml:id="ne0205_head_029">Lo que pensó él.</head>
 				<p>Pasa una hora, y otra, y diez más, sin que novedad alguna distraiga el pensamiento. Por allá se venias torres desprovistas del gallardo arrojo de la arquitectura árabe que forman el recinto de Arijona. Por acá la llanura de San Juan de Cabuérniga. Más cerca aún las eminencias de Trempez, especie de intentona con que un terreno plano trata de convertirse en monte. A derecha é izquierda, grupos de trabajadores, líneas de brazos moviendo picos y azadas, una movilidad de hormiguero que fatiga la vista. Blusas azules, chaquetas de pana parduzca, chamarras de lana y camisetas de punto cubren los cuerpos de los que allí trabajan, dando variedad abigarrada á los tonos del traje. En cambio, los pantalones se parecen todos: son de matices oscuros y se confunden con el tinte pizarroso de la tierra pedreñal y abundante en arcillas. Las líneas de obreros oscilan como líneas de arbustos empujados por el viento. Cuando una cabeza desciende, álzase otra. Hay en su movimiento irregular, al mismo tiempo que monótono, algo de la mecánica inquietud de las zapatillas de un piano. Rostros del color del tabaco, boinas rojas, mechones de pelo-, pañuelos de algodon liados, á uso aragonés, alrededor de la frente; sombreros blancuzcos de alas inmensas coronan el conjunto. Parecen las filas de hombres escolopendras agitadas y enfurecidas. Culebrean haciendo eses, y ya trazan una G, ya una J, según los primeros trabajadores que las forman retroceden ó avanzan. Despues trepa el animalucho fantástico por un repecho. Detiénese en su promedio, y esgrimidos los negros utensilios de metal para escarbar la tierra, aun es más grande la semejanza suya con el insecto ántes citado, porque los picos y palas se parecen á las patas y antenas del ciempiés de un modo exactísimo y completo. Tanto marea el extremado mover de muchos objetos combinándose en absurdas geométricas figuras, como el reposo absoluto y prolongado de ellos. Así, cuando los obreros se detienen á reposar, es mareante y enojoso el ver tanto cuerpo dormido sobre la tierra. Son los muertos en la batalla del trabajo, y entonces el campo se entristece, porque el silencio pesa sobre todas las frentes, y del sueño de mil hombres parece desprenderse un caliginoso vapor provocante al dormir.</p>
 				<p>Don Genaro pasaba toda la mañana en su tienda de campaña, de figura cónica, y por cuya abertura, sostenida en dos ramas de fresno, veíase la mesilla de pino sin pintar, el camastro cubierto de pieles de oso y zorra, dos lámparas de petróleo, faroles y aparatos de luz eléctrica, una copa de hierro llena de brasas y una enorme cafetera cerca del fuego. Cuando llegó la noche quiso dormir, pero no pudo. Buscó en la lectura distracción, y en vano hojeó un libro francés, buscando en el aroma de las prensas — que es la mirra del siglo xix — lenitivo á la acerbidad de sus ideas. Salió, por fin, de la tienda, y embozado en su capote recorrió el campo, asistiendo á la retreta de aquel ejército de obreros. A pesar del frió relente, dormian al aire libre. Algunos se escondían en huecos abiertos en la tierra misma. Otrbs, de ramas de de sabina y hojarasca seca industriaban chozas. Los más escondían la cabeza en una manta y en rueda se tendían, puestos los piés junto á una fogata sin cesar renovada. La idea del hogar representábase allí en aquel perrillo que guardaba el hato, vigilante, con los ojos abiertos y vivaces,' y las orejas en centinela. La idea de la familia, en aquellos muchachos qae dormian juntos bajo una misma manta, abrazados los unos á los otros. La idea de la sociabilidad, atribuida al hombre como característica propiedad racional, en el corro de los que sentados hablaban, bebían vino y se reían unos de otros. De tal manera en aquella tribu de salvajes civilizados el embrión de todos los gérmenes de la vida social se patentizaba claramente.</p>
 				<p>El hielo que caía le hizo volver á la tienda, y sentado en el camastro, sin pensar én cubrirse los piés, que se quedaban fríos, estuvo largo rato, puestos los codos sobre las rodillas y la cara en las manos. Parecía que los propios pensamientos pesaban en aquella cabeza, haciéndole buscar el apoyo y sosten amorosos de las manos,</p>
@@ -1115,8 +1140,8 @@
 				<p>—Sí, sí, al trabajo—exclamó D. Genaro levantándose con súbita resolución.—Al trabajo..... Al deber.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0205_chap18">
-				<head>XVIII</head>
-				<head>Cuando la madre dice «Yo», habla de sus hijos.</head>
+				<head xml:id="ne0205_head_030">XVIII</head>
+				<head xml:id="ne0205_head_031">Cuando la madre dice «Yo», habla de sus hijos.</head>
 				<p>¡Ni la Pajaróla siquiera supo la escena habida entre Clavo y doña Pazita! Fué, pues, tan grande como el lector quiera la sorpresa que experimentó María Luisa cuando, llegado que hubo á Casa-Arijona, halló vacío el nido de la clueca ave. Oyéronse las vcces de María y de Justina buscándola por todas partes.</p>
 				<p>—¡Tia Pazita!</p>
 				<p>—Paz.</p>
@@ -1195,8 +1220,8 @@
 				<p>Don Genaro creyó que era inoportuno hablar de María Lnisa. Nada dijo, pues, de su encuentro con ella ni de Jas explicaciones que en su conversación habían mediado. Aquella noche se encontró á su antigua amiga en el jardín, y la habló de <seg rend="italics">tú;</seg> pero á otro día, cuando estaba delante Enriqueta, puso buen cuidado en llamarla de <seg rend="italics">usted</seg></p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0205_chap19">
-				<head>XIX</head>
-				<head>Pasan muchos dias.</head>
+				<head xml:id="ne0205_head_032">XIX</head>
+				<head xml:id="ne0205_head_033">Pasan muchos dias.</head>
 				<p>La crisis que experimentó la salud de Justina apartó durante un largo mes la atención de María Luisa de todo negocio, y ni una sola vez fué á Lugareda á enterarse de qué trámites seguía aquel hormiguero de pillerías tan bien trazadas por D. Saturnino Ceano y el tio Clavo. ¡ Largo mes fué, sí! Mes sin noches, porque no se desnudó María Luisa ni se cerraron sus párpados. Mes sin dias, porque no vió en ellos el sol alegre de la vida sonreirle ni un solo instante. El notario vino alguna vez á advertirla los manejos de sus enemigos; á excitarla, para que saliese de su abatimiento é inacción; á probarle con largas razones que si no andaba lista é iba á Pamplona, y buscaba influencias cerca de los magistrados, y si no se asía á buenas aldabas, tendría que verse perdida sin un pedazo de tierra sobre que caerse muerta. Pero al hablarla de «caerse muerta», María Luisa miraba con triste ternura á Justina, que escuchaba en su cama todas las palabras del depositario de la fe, y no podia dominar una lágrima que resbalaba por sus mejillas como una cuenta de cristal por una placa de marfil. Desesperado se mostraba el notario al ver la indiferencia de María Luisa, para quien no habia otro peligro cierto por entónces que la dolencia de su hija.</p>
 				<p>Y dicen que pasó Febrero, y que Marzo pasó, y que llegó Abril. ¡Sol divino y fecundo, padre del amor, sé bien venido! Justina le saludó con una carcajada aquel día en que, descorriendo el cortinaje de muselioa del lecho materno, una banda de luz dorada se dibujó en la blanca ropa. No pudo dominarse la enferma cuando de tal suerte y con tan lucido cortejo de átomos vibrantes é inquietos de polvo dorado llegaba la salud á buscarla. Escurrióse de los almohadones que la rodeaban formando un como trono de la enfermedad; culebreó entre la ropa, y en el centro de la cama, donde la faja de sol caía, puso su cabeza. Deshechas las trenzas, ondeante el cabello, medio cerrados los párpados bajo el peso de la luz, suspirantes los labios, á que la nueva vida daba color; movible la delgada naricilla como el hociquillo de un precioso animalito; trasparente el cutis, que por sobre los pómulos adquiría leve matiz azulado, haciéndose visible el serpear de las venas aquella cabeza, envuelta y bañada por el sol de Abril, podía servir de asunto á una paleta como la de Manet ó Fortuny.</p>
 				<p>—Hoy me vestiré—dijo.</p>
@@ -1303,8 +1328,8 @@
 				<p>María Luisa se quedó horrorizada, muda, presa de loco dolor ¡Su hija, su hija también!</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0205_chap20">
-				<head>XX</head>
-				<head>El túnel de Garriguedo</head>
+				<head xml:id="ne0205_head_034">XX</head>
+				<head xml:id="ne0205_head_035">El túnel de Garriguedo</head>
 				<p>El cura lo dispuso, defendiólo Enriqueta, pronunció en su apoyo Roberto un discurso que hizo reir á todos, y fué preciso aceptar la idea. Tratábase de una gira campestre al cerro de Carriguedo, donde los obreros acababan de abrir un túnel que debia poner en comunicación dos llanuras. María Luisa se resistió á ser de la partida, pero el padre Gallostra se empeñó en que venciese sus tristezas y los acompañára. Ademas, el doctor Buendía fué de opinion de -que la salud de Justina ganaría con aquel esparcimiento. No era, por otra parte, una diversión, sino un sencillo y honesto paseo, eñ que la amenidad de cielo y tierra constituirían el principal encanto de los expedicionarios.</p>
 				<p>—Justina beberá la salud en el aire de la primavera, mojado con el rocío de los helechos y perfumado con la respiración fragante de los tomillares — dijo el médico.</p>
 				<p>Y el Cura, acercando sus labios al oido de María Luisa, añadió :</p>
@@ -1377,8 +1402,8 @@
 				<p>Cuando llegó á Casa-Arijona se encerró con Justina, rezó de hinojos ante el cuadro de la Yírgen y derramó muchas lágrimas. La niña, llena de espanto por tan extremadas muestras de dolor, no se atrevió á interrumpirla; vestida y todo, de rodillas, junto al sofá, fué quedándose dormida, y sus labios, contraídos por triste pucherillo, llevaron al palacio fantástico del sueño todo el llanto que debían haber vertido sus ojos en el mundo de los vivos. Por primera vez María Luisa se habia olvidado dfe su hija en un arrebato de dolor. Acostóla sin despertarla; besó tres veces su frente, sus labios, sus manecitas cruzadas como las de un niño muerto. Luégo quiso cerrar las maderas de la ventana, por las que la luz de la luna entraba en inundación de resplandores cárdenos, y al ir á poner su mano en la falleba retrocedió horrorizada. Habia creído ver allí léjos¿ donde el campo libre empieza, á todos los hermanos de su marido amenazándola con los puños cerrados y la actitud colérica.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0205_chap21">
-				<head>XXI</head>
-				<head>Como San Antón.</head>
+				<head xml:id="ne0205_head_036">XXI</head>
+				<head xml:id="ne0205_head_037">Como San Antón.</head>
 				<p>Estaba Genaro asustado de los progresos que el amor á María Luisa habia hecho dentro de su alma en un dia. Quiso arrancar de raíz aquel arbolillo que le retoñaba en el corazon. Púsole el pié encima; pero el arbusto seguía prosperando.</p>
 				<p>—Puesto que su vista es la que me fascina, no la veré.</p>
 				<p>A otro dia salió de madrugada en su caballo y decidió no poner los piés en Arijona en muchos dias. Tan preocupado iba, que ni advirtió en los párpados de Enriqueta señales de llanto, ni en su despedida evidente frialdad.</p>
@@ -1396,8 +1421,8 @@
 				<p>—No está fuera de mí el remedio de mis culpas— pensaba entónces Genaro.—Viendo este gran panorama de Trempez me siento morir de pena, á pesar de ser él la misma alegría Dentro, dentro del alma es donde hay que mirar y curar.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0205_chap22">
-				<head>XXII</head>
-				<head>Batalla perdida por un ángel en defensa de dos.</head>
+				<head xml:id="ne0205_head_038">XXII</head>
+				<head xml:id="ne0205_head_039">Batalla perdida por un ángel en defensa de dos.</head>
 				<p>—¡Es la segunda! — dijo Clavo á D. Patricio, poniéndole delante de los ojos un papelillo azul.</p>
 				<p>—¿Y ñola pagan?—preguntó con ansiedad Güemes.</p>
 				<p>—¡No la pagan!..... Esto es atroz. Mire V., D. Patri cio mis intereses se van resintiendo Yo no puedo esperar más tiempo  Pero ¡ á qué extremos conduce el caprichoso sino! ¡ Qué burlas hace! Eso de que yo.....</p>
@@ -1491,8 +1516,8 @@
 				<p>Díjolo entre sollozos, y al fin se echó á llorar. ¡ Las lágrimas escapándose de unos ojos sin vista! j Qué horrible espectáculo! ¡ Es la lluvia en un cielo donde nunca ha salido el sol.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0205_chap23">
-				<head>XXIII</head>
-				<head>Bajo el jazmín.</head>
+				<head xml:id="ne0205_head_040">XXIII</head>
+				<head xml:id="ne0205_head_041">Bajo el jazmín.</head>
 				<p>Pero estaba escrito que el conflicto no estallase entonces, y bajo la falsa apariencia de una calma absoluta y de una amistad confiada, se reunieron, ya entrada la noche, á fines de Mayo, en el jardín que rodeaba á Casa-Arijona, Genaro, Enriqueta, María Luisay Justina. La enfermedad pasada habia hecho crecer á ésta más de cuatro dedos, y por su vestido claro, que no creció con el cuerpo, según refieren las Sagradas Letras que acaeciera con la tánica inconsútil del Redentor del Mundo,’ salían sus piernecillas flacas, asomándose al rostro pálido un par de ojos negros, lindos, mirones, curiosos, que parecían tener febril sed de impresiones nuevas.</p>
 				<p>Poco despues llegó el padre Gallostra, y no tardó en llegar también el poeta Dióscoro, todos los que se sentaron en sillas de paja bajo el pomposo y verde ramaje de un jazmín, que, protegido por enrejado artificioso de cañas, al que ya abrumaba y rendía con su peso, proyectaba una mancha de sombra en la iluminación de la luna. Era célebre aquel jazmín en la comarca. Daba tanta flor, que por el dia parecía nevado, y por la noche embriagaba su aroma y hacía soñar. Tan viejo como el mundo, nacido allí al arrimo de terrosa tapia, en su hojarasca jugaron sin duda los primeros gnomos de los campos vecinos, y las musas de la provincia en los dias de mitológico regocijo.</p>
 				<p>Quiso María Luisa acostar á Justina, pero el médico intervino en defensa de la niña, y se la permitió una hora más de velada. Roberto no había llegado aún del campo, á donde salió por la mañana en virtud de exigencias del servicio.</p>
@@ -1528,8 +1553,8 @@
 				<p>—¡Dios mió, Dios mió! ¡Virgen santa, perdóname I —dijo — ¡ perdóname!</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0205_chap24">
-				<head>XXIV</head>
-				<head><seg rend="bold">Domas Domini.</seg></head>
+				<head xml:id="ne0205_head_042">XXIV</head>
+				<head xml:id="ne0205_head_043"><seg rend="bold">Domas Domini.</seg></head>
 				<p>Oyó tocar á misa de alba, vistióse y salió al jardín, no sin haber besado la frente de Justina. Iba María Luisa serena, pero triste; pálida y más hermosa con el palmito descolorido, los cabellos atados al desgaire so el manto de luenga tela, bajos los ojos y acelerado el paso. El día no amaneció espléndido, sino nublado. Poco sol, mucha nube, humedad en el ambiente, pero nada de viento ni tramontana. Llegó á la iglesia, buscando las más desusadas callejuelas que á ella conducían, y entró por la puerta del Bautismo, sobre cuyo arco toral estaba grabado el Zodiaco, y en él estas palabras: « <seg rend="italics">Yo soy la luz</seg><seg rend="italics">Venid á mí. i»</seg> Aun no habia pobres en el atrio, ni muchos fieles en el templo. Un grupo de mantillas negras formaba un gran manchón oscura eobre las blancas losas del ábside, y cerca del altar mayor una vieja amarillenta con una candelica encendida en cada mano, y éstas en aspa, cumplía alguna penitencia, rezando con voz ronca y silbante por sus labios arrugados y viscosos. El templo no ofrecía ningún rasgo arquitectónico notable; no inspiraba devocion ni elevaba el espíritu. La desolada desnudez de los muros de piedra, blanqueados á trechos, tenía algo de hospital abandonado. Los hierbajoe del atrio y de la calle metíanse hasta la mitad de la nave, y en las junturas de las piedras sepulcrales que cubrían el pavimento agarrábanse hojas de plantas trepadoras, y encima de la pila del agua bendita nacía, al amor de la humedad, una familia de parietarias verdes. Las mantillas negras se movieron al entrar María Luisa, que sumergió su mano en el agua bendita y mojó con ella su frente. Luégo se acercó á un confesonario, dentro del cual, como el caracol en su concha, hallábase el padre Gallostra, envuelto, si no embozado, en el manteo, y con el bonete bien calado hasta los ojos. Púsose de rodillas María. Los mantos negros se volvieron todos, y por entre sus siete capuchas se vió asomar siete rostros curiosos. Eran como los siete pecados capitales. Miéntras María rezaba: «t <seg rend="italics">Yo pecador</seg>», los siete mantos se acercaron unos á otros, y en la silenciosa concavidad del alta techumbre sonaron los silbidos de siete bocas que hablaban bajo. Parecían siete siluetas arrancadas de los <seg rend="italics">Caprichos</seg> de Goya, y á quienes las culebras habían prestado su lenguaje.</p>
 				<p>Empezó la confesion. El padre Gallostra acercó su rostro á la rejilla, y por entre la alambrera María Luisa veia media cara del santo sacerdote y una mano del San Pedro de mármol que, atribuido al escultor Sebastian de Almonacid, coronaba un púlpito.</p>
 				<p>—¡Jesús! ¡Jesús! ¡Jesús! — exclamó el padre Gallostra.—¡Tú! ¡Eso has hecho tú! ¡Eso has consentido! ¡ Por ahi te despeñas al precipicio!! Cuéntame todo..... Rasga tu pensamiento y enséñame sus iniquidades.</p>
@@ -1574,8 +1599,8 @@
 				<p>Y aquel secreto de confesonario corrió en pocos minutos por todo el pueblo.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0205_chap25">
-				<head>XXV</head>
-				<head>En que se verá lo que decia la gente de un gran invento y de un gran pecado. — Wat y el Diablo son una misma cosa.</head>
+				<head xml:id="ne0205_head_044">XXV</head>
+				<head xml:id="ne0205_head_045">En que se verá lo que decia la gente de un gran invento y de un gran pecado. — Wat y el Diablo son una misma cosa.</head>
 				<p>El primero que vió la locomotora fué Lúeas Berrueco, que venía de visitar una de sus tierras. Trepidaba la arena del terraplen, y un atroz estremecimiento se extendía por el suelo. Era como si una manada de elefantes locos de terror galopasen hundiendo bajo sus disformes manazas la corteza terrestre. Cuando tras de una revuelta del camino, trazado entre la espesura de los matorrales como una línea blanca de un plano, apareció la locomóvil, el caballo de Berrueco pegó un gran bote, con que fué milagro que no sacára al jinete de la silla. Cuatro jumentos que apacentaban allí cerca levantaron la fea cabeza, y mirando aquella columna de humo negro á trechos, blanco á veces y resonante de continuo, manifestaron el mayor susto, y huyeron dando rebuznos espantosos, como los que dieron los Regidores del cuento cervantino. Hubo quien vió en estos pacientes animales una personificación de los manes de la antigüedad clásica, y no hay que añadir que Dióscoro Ercilla fué de £&amp; Tíusar xxjRBero.</p>
 				<p>su opinion. Pero la locomotora siguió corriendo con esa majestuosa serenidad que hace sublime la fuerza irresistible. El penacho del vapor quedaba suspendido en el tranquilo ambiente, y partiendo desde la chimenea, trazaba una línea oblicua sobre el cielo azul, y un ángulo con la línea recta de los wagones de palastro <seg rend="italics">qm </seg>seguían al <seg rend="italics">ténder</seg> crujiendo y causando diversos ruidos.</p>
 				<p>Dióscoro, que no carecía de imaginación, bien que la tuviese percudida y manchada con el contagio romántico, como un lente de aumento que se ha caído en un tintero, comparó allá en sus adentros á aquellos wagones con gigantes, y vió en cadq. uno el símbolo de una preocupación social, de un vicio hereditario de los españoles, de una miseria humana,—á todos los cuales llevaba presos y sojuzgados el progreso.—Un wagón que, cargado de piedra, al correr daba un ruido sordo, pensó él que era la ignorancia; el otro que seguía luégo vacío<seg rend="italics">j</seg> más alto que los demas, metiendo mucha bulla de metales removidos y haciendo oscilar sus cadenas como un presumido petimetre que juega con los dijes del reloj, parecióle la fatuidad misma, que heredamos del siglo de los Felipes, sin las grandezas de aquellos buenos conquistadores. Aun presentaba más fisonomía el tilti-mo carruaje, en donde cien arrobas de carbón de piedra absorbían,‘ sin reflejarla, la luz irresistible del sol primaveral. Yió en él un símbolo del espíritu clerical del país, que cruzaba por la vía echando polvo negro, como quien hecha excomuniones; y por un capricho de la casualidad, los terrones de cok diseñaban la figura de un enorme bonete, debajo del cual, con un trozo de tiza habían pintado unas cifras en el mismo carbón, expresando la cantidad de arrobas que allí marchaban de camino, pareciendo estas cifras la osamenta de un cráneo descomunal y medroso.</p>
@@ -1636,8 +1661,8 @@
 				<p>Don Pedrito Gifedo, que oyó todas estas contrarias opiniones, honró á cada una de ellas con un enérgico monosílabo afirmativo.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0205_chap26">
-				<head>XXVI</head>
-				<head>Diálogo entre un papagayo y una pipa.</head>
+				<head xml:id="ne0205_head_046">XXVI</head>
+				<head xml:id="ne0205_head_047">Diálogo entre un papagayo y una pipa.</head>
 				<p>El papagayo  porque Enriqueta tenía un papagayo..... estaba aquel dia triste. Enderezó la mitra multicolor que Dios le puso en la cabeza, y con sus ojos redondos, formados de tres círculos concéntricos—dorado el primero, azul el segundo, y el último verde—miró á su ama y á Roberto, que conversaban cerca de un velador, sobre el que juntamente se veian la labor d<seg rend="italics">efrivo-lité</seg> y una pipa de ámbar, representando una locomotora ahumada y negruzca.</p>
 				<p>—No he visto igual vileza—exclamó con acento de rabia monsieur Roberto.</p>
 				<p>—¡Oh, Dios mió! ¡ Qué ingrato!</p>
@@ -1720,8 +1745,8 @@
 				<p>Él también deseaba jurar quer acabaría por comerse aquel bicho de fuego que dentro de la pipa relucía, agitando sus alas de humo.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0205_chap27">
-				<head>XXVII</head>
-				<head>«Padecí en lo presente y en lo porvenir; porque padecí en mí y en mis hijos.»</head>
+				<head xml:id="ne0205_head_048">XXVII</head>
+				<head xml:id="ne0205_head_049">«Padecí en lo presente y en lo porvenir; porque padecí en mí y en mis hijos.»</head>
 				<p>«Dios me libre de que mi médico mueva la cabeza despues de verme»—habia^dícho Richelieu hace muchos años, sin pensar sin duda alguna que su frase pudiese servirme para empezar un capítulo. Pues ello es que el doctor Bienvenido movió muchas, muchas veces su noble y descarnada cabeza despues de salir de la estancia donde se consumía la vida de un pajarito, de un ángel, de Justina, para decirlo en claros términos. ¡Nervios malditos, que dejais escapar la llama de la vida presa en vuestra red! ¿Cómo no habrá medio humano de moralizar vuestra conducta? Los de aquella criatura eran unos pródigos derrochadores de la salud. Gastaban la vida como un visir de las <seg rend="italics">Mil y una Noches</seg> el oro de su amo, y Justina languidecía. En el lecho materno yacía la niña, pálida ¡ no pálida! amarilla como el marfil viejo ó como una magnolia seca. Su actividad luchaba por vencer á la languidez general de su organismo débil, y un carricoche de cerveza, tirado por un caballejo percheron de pasta, rodaba sin duelo por las sábanas, miéntras la inconsolable María Luisa intentaba rodear á su hija de una artificial atmósfera de alegría. El notario Ceano lie-gó aquella mañana, y dijo en buenos términos á la viuda :</p>
 				<p>—¡Muérdago, demonio, jinojo! ¡No es culpa mia! Ya se lo he advertido á V. ¡Medrados estamos! Van áganar los Güemes. Perderá V. el pleito por segunda vez No es eso lo peor; porque ¡muérdago! ya se sabe hasta dónde llegan los intereses Lo peor ¡jinojo, demonio! es que va V. á quedar desacreditada Sí  No me mire usted con extrañeza. Ya le advertí ¡ muérdago! que esto no tenía remedio ¡No hable V. para defenderse! En mi ánima, señora doña María Luisa, le juro que es usted una santa. Pero hay pruebas falsas sin duda mas pruebas al fin Ello es ¡muérdago, demonio, jinojo!</p>
 				<p>que yo me lavo las manos. He querido aconsejar á V. y llevarla por los difíciles senderos de la ley. Usted no ha querido seguirme. Usted se ha convertido en una estatua.</p>
@@ -1796,8 +1821,8 @@
 				<p>Justina se habia cansado de esperar y llamó á su madre. Genaro y María se separaron. ¡ Qué rostros los suyos al mirarse para despedirse! Eran los de dos muertos enamorados.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0205_chap28">
-				<head>XXVIII</head>
-				<head><seg rend="bold">Arriba y abajo, ó ¿dónde está el cielo?</seg></head>
+				<head xml:id="ne0205_head_050">XXVIII</head>
+				<head xml:id="ne0205_head_051"><seg rend="bold">Arriba y abajo, ó ¿dónde está el cielo?</seg></head>
 				<p>Enriqueta en sus largas soledades experimentaba un tormento que no está descrito en los anales de la crueldad humana. Sobre su cabeza retumbaban los pasos de su rival, y cuando María Luisa se separaba del lecho de su hija, el andar menudo de sus piés de gitana, chiquitos y peraltados, repercutíase con ecos de ira en el oido de la mujer olvidada, despreciada, iracunda, vengativa y terrible. No era posible el olvido de la injuria cuando tan cerca se hallaba el que injurió. Desvelaban su sueño aquellos pasos, y el ruido de los muebles del piso superior, al ser removidos, le hablaban de un hogar en que su marido habia puesto su amor, sustrayéndole furtivamente de donde debía tenerle atesorado. Uníase á este tormento aquel día el de una mordedura que dentro de su alma experimentó. Era un remordimiento naciente, que haciendo presa con su pico de acero en la conciencia, le decia:</p>
 				<p>—«¿Estás tú segura de obrar bien? ¿No faltas á Genaro en nada? ¿ No se te ha ocurrido aún la idea del per-don? ¡El perdón! ¡Cosa santa! ¡Sufre y te sentirás curada del mal de odio! ¡Lo que te quema en el corazon no 'es el daño ajeno, sino la propia ira! ¡ Echa fuera ese rescoldo abrasador que el diablo sopla para convertirlo en hoguera!»</p>
 				<p>Pero no: Enriqueta no queria perdonar. Creia necio, cándido, ridículo el abrumar con abnegaciones no emprendidas á los que le abrumaban á ella con desprecios sangrientos. ¡Perdonar! ¡ Palabra infame! No es digna de los labios del justo cuando el justo es víctima del protervo! Así pensaba Enriqueta miéntras la noche seguía avanzando.</p>
@@ -1829,8 +1854,8 @@
 				<p>¡Llamó!</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0205_chap29">
-				<head>XXIX</head>
-				<head><seg rend="bold">En que diablo y ángel se juntan, sin que se sepa quién es ángel y quién diablo.</seg></head>
+				<head xml:id="ne0205_head_052">XXIX</head>
+				<head xml:id="ne0205_head_053"><seg rend="bold">En que diablo y ángel se juntan, sin que se sepa quién es ángel y quién diablo.</seg></head>
 				<p>Llamó, y como el sueño de la Pajaróla era profundo, yademas esta buena Maritórnes, siendo más honrada que la de Cervántes, no era tan amiga de abandonar á destiempo las plumas muelles del lecho, fué preciso que María Luisa acudiera á abrir. ¡ No sin sobresalto! Al sentir el timbre de la campanilla imaginó que Genaro estaba al otro lado de la puerta. Pero al abrirla hallóse con Enriqueta. No venía, pues, á despertarla su amor; yenía á despertarla su remordimiento.</p>
 				<p>Mudas y sin pensamiento expresable quedaron las dos; María Luisa, turbada y como sorprendida en pleno delito; Enriqueta, vacilante entre el miedo á ser arrebatada, y la indignación de pedir amparo á aquella vil mujer, á quien ella apellidaba hipócrita, indigna, farsante del cariño maternal, y otros dicterios de este orden.</p>
 				<p>—He creído oir voces—dijo por decir algo Enriqueta y fingiendo motivo distinto del que la impulsó á subir.</p>
@@ -1879,8 +1904,8 @@
 				<p>Dejó de hablar para oir. También escuchó María Luisa. De un momento á otro pensaba que iba á romper el silencio la voz de Genaro. ¡Su mujer, su mujer estaba allí! ¡Qué vergüenza, qué desdoro para ella! Un vértigo de ideas se produjo en su alma. Giraron revueltos sus juicios, sus sentimientos, sus temores. Era una negra espiral que desde el cielo bajaba ondeando hasta los infiernos mismos, y en ella iba María Luisa, arrastrada, impulsada, sin vigor ni vida para resistir Tuvo que sentarse y lloró. Enriqueta la contempló en silencio y lloró con ella.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0205_chap30">
-				<head>XXX</head>
-				<head>¡Huid! ¡volad!</head>
+				<head xml:id="ne0205_head_054">XXX</head>
+				<head xml:id="ne0205_head_055">¡Huid! ¡volad!</head>
 				<p>Tantas veces habia salido á su rostro la vergüenza en aquella noche, que cuando el alba llegó' el de María era una faz de cera. Inmóvil en una silla pasó cuatro horas mirando á Enriqueta, pero sin verla. Ésta permaneció también aquellas cuatro horas en medio del temor y del arrepentimiento, helado su pensamiento y como sin vida, ardorosas sus sienes, en las que una vena azul muy visible latia pletórica con violencia. No quiso descender á su casa, temiendo hallarse en ella á Roberto. Aquellas dos mujeres pasaron la noche velando su odio.</p>
 				<p>Pero cuando la primera línea de claridad simuló una sonrisa en el confin donde cielo y tierra se juntan, María Luisa se levantó del asiento y fué á ver á su hija. Seguía durmiendo. Besóla en la frente y en sus manos, que tenía cruzadas como si estuviese muerta. Dulce rubor coloraba sus mejillas, y dormida sonreía como si estuviese deshojando rosas ó ensartando vilanos.</p>
 				<p>La Pajaróla se levantó, y su escoba comenzó á saludar el suelo. La línea blanca del Oriente se fue poniendo amarilla, de oro luégo. El perro encadenado en el corra-ion ladró, y una voz infantil dijo:</p>
@@ -1914,8 +1939,8 @@
 				<p>No tuvo tiempo de pensar lo que iba á hacer. ¡ Huir! Hé aquí la única tendencia de sus ideas; hé aquí la única forma de su actividad. Preguntó por Pacorro, pero no estaba en casa. Despertó á su hija, vistióla con rapidez. La niña, asustada, quería saber por qué la sacaba del lecho estando enferma. María arropó á Justina entre los pliegues de su recio mantón, lió á su frente un pañolillo y salió, precedida de la ciega, con su tesoro en brazos. Instantáneamente formuló su plan: caminaría á pié hasta la ermita de Acabadómine, y allí iría á buscarla Pacorro con la tartana. Desde la ermita, en el carruaji-11o, en un vuelo llegarían á Trempez, y allí tomaría el tren de Pamplona ¡ Su hija! j su hija! Prefería morir á dejar que se la arrebatáran.</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0205_chap31">
-				<head>XXXI</head>
-				<head>Empalma la línea del eielo con la del infierno.</head>
+				<head xml:id="ne0205_head_056">XXXI</head>
+				<head xml:id="ne0205_head_057">Empalma la línea del eielo con la del infierno.</head>
 				<p>¿Quién refiere despacio estas cosas que sucedieron de prisa? Los desenlaces tienen la concision del telégrama, como tienen la rapidez de la electricidad. Rápida caminaba María con su hija en brazos. Dejó atras el pueblo bien pronto, cruzó el rio, y temiendo hallar gente en el camino de la ermita, echó por la senda de Conejeros, que serpeaba por entre los pastos dorados de Tajo-Peña. Yolvia la cabeza para ver si la perseguían, y las ramas de los abedules, que se doblaban al pasar ella, le parecían manos que iban á detenerla.</p>
 				<p>—¿Cómo estás?—preguntó á Justina.</p>
 				<p>—Lo mismo  Bien  Nada me duele  Pero, ¿á dónde vamos? ¿ Por qué me llevas en brazos? Quiero andar, quiero andar.</p>
@@ -1951,8 +1976,8 @@
 				<p>Él, á pié, la miraba alejarse; y ella, al andar, volvía la cabeza.</p>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0205_chap32">
-				<head>XXXII</head>
-				<head><seg rend="bold"> Catástrofe S ¡Horror!</seg></head>
+				<head xml:id="ne0205_head_058">XXXII</head>
+				<head xml:id="ne0205_head_059"><seg rend="bold"> Catástrofe S ¡Horror!</seg></head>
 				<p>Cuando llegó á Trempez María Luisa, Justina se encontraba en un estupor material y moral absoluto. No pudo realizar aquélla sus planes, porque la circulación de viajeros estaba impedida con motivo de inaugurarse al otro dia la línea de Beimiel. Banderolas, gallardetes, eintajos y escudos adornaban el camino. Músicas marciales se columpiaban en el aire. La plebe, engalanada, se esparcía por las afueras de Trempez—lugar de carretera, cuya única calle tiene dos posadas—como el líquido ferviente se sale borboteando fuera de la vasija. Tuvo María Luisa que resignarse á esperar allí, hospedándose en una de las hosterías, en un cuartucho que, por haberle descrito Moratin en el <seg rend="italics">Sí de las Niñas</seg>, no tengo yo que pintar ahora. Quiso llamar á un médico; pero no estaba el único del pueblo en la localidad, y como crecian los espasmos y la fiebre, el susto de la madre rayó en delirio.</p>
 				<p>—¿Seré yo su verdugo?—pensó.</p>
 				<p>Allí iba á ocurrir una triste escena. Aquel .lecho era un lecho de muerte. ¡ Catre malhadado y duro! ¿por qué no truecas tus tripas de lana en blandas plumas de cisne, y tu colcha de pelefechil indiano en cubierta de rosas ? Sólo así sería digno tan feo mueble de soportar el peso de un ángel que se iba de la tierra. A las diez de la noche habia agotado María los últimos recursos de la ciencia doméstica; y la posadera, una buena vieja, llena de excelentes deseos, trajo nieve de un pozo para ponérsela en las sienes á Justina. Abríanse los párpados de ésta como para agarrarse con la mirada á los objetos del mueblaje. ¡ Inútiles esfuerzos de la vida, que caia, caía por aquel plano inclinado que lleva al no ser!</p>
@@ -1962,8 +1987,8 @@
 				<p>No fué agonía aquello. Fué muerte paulatina y gradual. La luz aminoró su brillo, la extensión de la llama acabó por apagarse. María sintió que sus manos palpaban algo frió. Miró horrorizada. ¡Tenía entre sus dedos una mano de Justina I Habia abierto los ojos para morir, y sus pupilas vidriosas miraron sin ver la luz de la ventana. Entónces resonó un ¡¡¡viva!!! en el campo..... cohetes, gritos, oleaje, confusion, y el agudo, musical silbido de la locomotora.</p>
 			</div>
 			<div n="33" type="chapter" xml:id="ne0205_chap33">
-				<head>XXXIII.</head>
-				<head><seg rend="bold">¿Hasta cuándo?</seg></head>
+				<head xml:id="ne0205_head_060">XXXIII.</head>
+				<head xml:id="ne0205_head_061"><seg rend="bold">¿Hasta cuándo?</seg></head>
 				<p>Dónde acabó el penar de María Luísa? ¡Sola, pobre, sin amor, sin honra, llevando su castigo en sa hermosura, huyó de aquellos pueblos! ¡ Cuánto me queda á mí que contaros de ella! Pero no he de hacerlo hoy, en que estáis vosotros cansados y yo también.</p>
 			</div>
 

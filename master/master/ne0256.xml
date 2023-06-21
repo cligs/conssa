@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La catedral</title>
-				<title type="sub"></title>
+				
 				<title type="short">Catedral</title>
-				<title type="idno">
-					<idno type="bne">XX1892693</idno>
-					<idno type="viaf">309269507</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1207</measure>
@@ -141,13 +131,66 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0256</idno>
+						<idno type="cligs">ne0256</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2005">2005</date>, <idno>16670</idno>, <ref target="http://www.gutenberg.org/ebooks/16670"/>.</bibl>
-				<bibl type="print-source">Barcelona, <date when="1978">1978</date></bibl>
-				<bibl type="edition-first"><date when="1903">1903</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La catedral</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892693.html">XX1892693</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309269507/">309269507</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q42850447/">Q42850447</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1185123113">1185123113</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2005">2005</date>, <idno>16670</idno>, <ref target="http://www.gutenberg.org/ebooks/16670"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Barcelona</pubPlace>, <date when="1978">1978</date></bibl>
+					<bibl type="edition-first"><date when="1903">1903</date><idno source="k10plus" type="ppn" n="226409910" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226409910"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">novela</title> <date when="1903">1903</date>, <publisher>Ed. Sempere</publisher> <pubPlace>Valencia;Madrid</pubPlace> 		<idno type="ppn" n="226409910" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226409910"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Catedral</title>: 	<title type="sub">(novela)</title> <date when="1904">1904</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1356995640" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1356995640"/> </bibl>
+						<bibl type="further-edition"><title type="main">La Catedral</title>: 	<title type="sub">Peyro [Guillén], Vicente ; Vicente Peyró. Gonzalo Jover ; Drama en 4 actos. Arreglo escénico de la novela de Vicente Blasco Ibañez</title> <date when="1905">1905</date>, <publisher>(Teatro popular)</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="443597685" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=443597685"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral ...</title> <date when="1916">1916</date>, <publisher/> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="584757476" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584757476"/> </bibl>
+						<bibl type="further-edition"><title type="main">Vicente Blasco Ibanez. La Catedral. Novela</title> <date when="1916">1916</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="267432585" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=267432585"/> </bibl>
+						<bibl type="further-edition"><title type="main">Dans l'ombre de la cathédrale</title> <date when="1917">1917</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="1145547761" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1145547761"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1334405859" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334405859"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="53188404X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=53188404X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La Catedral</title>: 	<title type="sub">Novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="44565791X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44565791X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La catedral</title>: 	<title type="sub">novela</title> <date when="1920">1920</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="630309450" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=630309450"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">(novela)</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1136757694" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1136757694"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="46464366X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46464366X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">(novela)</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="065310845" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=065310845"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">novela</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464643554" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464643554"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="269395709" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269395709"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title> <date when="1955">1955</date>, <publisher>Editora Interamerica</publisher> <pubPlace>Santiago</pubPlace> 		<idno type="ppn" n="265647592" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=265647592"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title> <date when="1978">1978</date>, <publisher>Plaza &amp; Janes</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="162089937X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=162089937X"/> 		<idno type="isbn" n="8401480140"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title> <date when="1986">1986</date>, <publisher>Ed. Nueva</publisher> <pubPlace>Managua</pubPlace> 		<idno type="ppn" n="1139634208" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1139634208"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title> <date when="1986">1986</date>, <publisher>Ed. Nueva Nicaragua</publisher> <pubPlace>Managua</pubPlace> 		<idno type="ppn" n="320775291" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=320775291"/> </bibl>
+						<bibl type="further-edition"><title type="main">La catedral</title> <date when="1986">1986</date>, <publisher>Ed. de Arte y Literatura</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="040658457" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=040658457"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title> <date when="2001">2001</date>, <publisher>Pareja</publisher> <pubPlace>Toledo</pubPlace> 		<idno type="ppn" n="1604808306" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1604808306"/> 		<idno type="isbn" n="8495453215"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title> <date when="2001">2001</date>, <publisher>Pareja</publisher> <pubPlace>Toledo</pubPlace> 		<idno type="ppn" n="460104780" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460104780"/> 		<idno type="isbn" n="8495453215"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana. Cañas y barro. La catedral. El intruso</title> <date when="2009">2009</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="634254987" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=634254987"/> 		<idno type="isbn" n="9788496452886"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La catedral</title> <date when="2009">2009</date>, <publisher>Paréntesis</publisher> <pubPlace>Alcalá de Guadaira</pubPlace> 		<idno type="ppn" n="605961344" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=605961344"/> 		<idno type="isbn" n="9788499190143"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479517852" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479517852"/> 		<idno type="isbn" n="9788496452886"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +200,14 @@
 				<p>En 1903, un año de extraordinaria cosecha en la literatura española del siglo XX, Vicente Blasco Ibáñez, publica La Catedral, segunda de sus novelas sociales o de rebeldía, como él dio en denominarlas. En plena crisis, cuya espoleta había quedado identificada en el Desastre cubano, el autor levantino echa el resto y destila con verdadero furor todas las ideas y peripecias que su largo compromiso político había acumulado hasta forjar una actitud personal que, si no demasiado clara en cuanto a qué sería lo mejor para sacar a España de su marasmo, sí se revestía de una ideología sustentada sobre dos pilares básicos: republicanismo y anticlericalismo.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -190,7 +241,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela social</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela social</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -222,6 +273,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,7 +281,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0256_chap1">
-				<head>I</head>
+				<head xml:id="ne0256_head_000">I</head>
 				<p>Comenzaba a amanecer cuando Gabriel Luna llegó ante la catedral. En las estrechas calles toledanas todavía era de noche. La azul claridad del alba, que apenas, lograba deslizarse entre los aleros de los tejados, se esparcía con mayor libertad en la plazuela del Ayuntamiento, sacando de la penumbra la vulgar fachada del palacio del arzobispo y las dos torres encaperuzadas de pizarra negra de la casa municipal, sombría construcción de la época de Carlos V.</p>
 				<p>Gabriel paseó largo rato por la desierta plazuela, subiéndose hasta las cejas el embozo de la capa, mientras tosía con estremecimientos dolorosos. Sin dejar de andar, para defenderse del frío, contemplaba la gran puerta llamada del Perdón, la única fachada de la iglesia que ofrece un aspecto monumental. Recordaba otras catedrales famosas, aisladas, en lugar preeminente, presentando libres todos sus costados, con el orgullo de su belleza, y las comparaba con la de Toledo, la iglesia-madre española, ahogada por el oleaje de apretados edificios que la rodean y parecen caer sobre sus flancos, adhiriéndose a ellos, sin dejarla mostrar sus galas exteriores más que en el reducido espacio de las callejuelas que la oprimen. Gabriel, que conocía su hermosura interior, pensaba en las viviendas engañosas de los pueblos orientales, sórdidas y miserables por fuera, cubiertas de alabastros y filigranas por dentro. No en balde habían vivido en Toledo, durante siglos, judíos y moros. Su aversión a las suntuosidades exteriores parecía haber inspirado la obra de la catedral, ahogada por el caserío que se empuja y arremolina en torno de ella como si buscase su sombra.</p>
 				<p>La plazuela del Ayuntamiento era el único desgarrón que permitía al cristiano monumento respirar su grandeza. En este pequeño espacio de cielo libre, mostraba a la luz del alba los tres arcos ojivales de su fachada principal y la torre de las campanas, de enorme robustez y salientes aristas, rematada por la montera del «alcuzón», especie de tiara negra con tres coronas, que se perdía en el crepúsculo invernal nebuloso y plomizo.</p>
@@ -362,7 +414,7 @@
 				<p>A Gabriel le hicieron daño estos sonidos. Había perdido de vista el mundo, y cuando se creía lejos, muy lejos de él, sentía su presencia, un poco más allá de los tejados del templo.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0256_chap2">
-				<head>II</head>
+				<head xml:id="ne0256_head_001">II</head>
 				<p>Desde los tiempos del segundo cardenal de Borbón, era el señor Esteban Luna jardinero de la catedral, por derecho que parecía vinculado en su familia. ¿Cuál fue el primer Luna que entró al servicio de la Santa Iglesia Primada? El jardinero, al hacerse esta pregunta, sonreía satisfecho, y sus ojos miraban a lo infinito, como queriendo abarcar la inmensidad del tiempo. Los Luna eran tan antiguos como los cimientos de la iglesia. Habían ido naciendo las diversas generaciones en los aposentos del claustro alto, y cuando el ilustre Cisneros aún no había construido las Claverías, los Luna vivían en las casas inmediatas, como si no pudiesen existir fuera de la sombra de la Primada. A nadie pertenecía la catedral con mejor derecho que a ellos. Pasaban los canónigos, los beneficiados y los arzobispos; ganaban la plaza, morían, y otro al puesto; era un desfile de caras nuevas, de señores que venían de todos los rincones de España a sentarse en el coro para morir años después, dejando la vacante a otros advenedizos; y los Luna siempre en su puesto, como si la antigua familia fuese una pilastra más de las muchas que sostienen el templo. Podría ser que el arzobispo que un día se llamaba don Bernardo, se llamase al año siguiente don Gaspar y al otro don Fernando; lo imposible e inverosímil era que la catedral pudiese existir sin tener algún Luna en el jardín, en la sacristía o en el crucero, acostumbrada durante tantos siglos a sus servicios.</p>
 				<p>El jardinero hablaba con orgullo de su estirpe: de su noble y desgraciado pariente el condestable don Álvaro enterrado como un rey en su capilla detrás del altar mayor; del papa Benedicto XIII, altivo y tozudo como todos los de la familia; de don Pedro de Luna, V de su nombre en la silla arzobispal de Toledo, y de otros parientes no menos ilustres.</p>
 				<p>—Todos somos del mismo tronco—decía con orgullo—. Todos vinimos a la conquista de Toledo con el buen rey Alfonso VI. Sólo que unos Luna le tomaron gusto a matar moros, y fueron señores y conquistaron castillos, y otros, mis abuelos, quedaron al servicio de la catedral, como fervorosos cristianos que eran.</p>
@@ -433,7 +485,7 @@
 				<p>Gabriel había adquirido en el Seminario esa dureza eclesiástica que hace del sacerdote un guerrero, más atento a los intereses de la Iglesia que a los afectos de la familia. Por esto no se impresionó gran cosa con la muerte de su padre. Desgracias de mayor gravedad traían preocupado al seminarista.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0256_chap3">
-				<head>III</head>
+				<head xml:id="ne0256_head_002">III</head>
 				<p>Eran los tiempos de la revolución de septiembre. En la catedral y el Seminario había gran revuelo, comentándose de la mañana a la noche las noticias de Madrid. La España tradicional y sana, la de los grandes recuerdos históricos, se venía abajo. Las Cortes Constituyentes eran un volcán, un respiradero del infierno para las negras sotanas que formaban corro en torno del periódico desplegado. Por cada satisfacción que les proporcionaba un discurso de Manterola, sufrían disgustos de muerte leyendo las palabras de los revolucionarios, que asestaban fuertes golpes al pasado. La gente clerical volvía sus miradas a don Carlos, que comenzaba la guerra en las provincias del Norte. El rey de las montañas vascongadas pondría remedio a todo cuando bajase a las llanuras de Castilla. Pero transcurrían los años, venía y se iba don Amadeo, ¡hasta se proclamaba la República! y la causa de Dios no adelantaba gran cosa. El cielo estaba sordo. Un diputado republicano proclamaba la guerra a Dios, le retaba a que le hiciese enmudecer, y la impiedad seguía inmune y triunfante, derramando su elocuencia como una fuente envenenada.</p>
 				<p>Gabriel vivía en un estado de belicosa excitación. Olvidaba los libros, despreciando su porvenir: ya no pensaba en cantar misa. ¿Qué le importaba su carrera viendo a la Iglesia en peligro y próxima a desvanecerse la poesía soñolienta de los siglos que le había envuelto desde la cuna como una nube perfumada de incienso viejo y rosas marchitas...?</p>
 				<p>Con frecuencia desaparecían alumnos del Seminario, y los catedráticos contestaban con un guiño malicioso a las preguntas de los curiosos:</p>
@@ -496,7 +548,7 @@
 				<p>Su dicha era no pensar, no hablar, amoldarse a aquel mundo muerto. Sería, entre las estatuas vivientes que poblaban el claustro alto, un autómata más; imitaría a aquellas criaturas que tenían en su ser algo de la aspereza de la piedra berroqueña de los contrafuertes; aspiraría como un bálsamo de tranquilidad la herrumbre de las rejas, que esparcían por el templo el perfume vetusto de los siglos.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0256_chap4">
-				<head>IV</head>
+				<head xml:id="ne0256_head_003">IV</head>
 				<p>Al salir al claustro por las mañanas, poco después de amanecer, la primera persona que veía Gabriel era don Antolín, el <seg rend="italics">Vara de plata</seg>. Este sacerdote ejercía autoridad a modo de gobernador de la catedral, pues a sus órdenes estaban los servidores laicos y bajo su inspección se hacían todos los trabajos de escasa importancia.</p>
 				<p>Abajo, en el templo, vigilaba a sacristanes y acólitos, cuidando de que los canónigos y los beneficiados no pudieran quejarse de descuidos en el servicio. Arriba, en el claustro, velaba por el buen orden y las sanas costumbres de las familias, siendo, por la gracia del cardenal-arzobispo, una especie de alcalde de aquel pequeño pueblo.</p>
 				<p>Ocupaba la mejor habitación de las Claverías. En las grandes fiestas marchaba al frente del cabildo Con capa pluvial y un bastón de plata tan alto como él, que hacía retemblar las losas con sus golpes, y durante la misa mayor y el coro de la tarde rondaba por las naves para evitar las irreverencias de los devotos y las distracciones de los empleados. A las ocho de la noche en invierno y a las nueve en verano cerraba la escalera del claustro alto, guardábase la llave en el bolsillo y toda la población quedaba aislada de la ciudad. Si de tarde en tarde se sentía alguien enfermo durante la noche, era preciso despertar a don Antolín; y hundiendo éste la mano en las profundidades de la sotana, se dignaba restablecer con su llave la comunicación con el mundo.</p>
@@ -598,7 +650,7 @@
 				<p>—Dices bien—afirmó la vieja tras corta reflexión—-. A mí, esto de los monjíos nunca me ha gustado gran cosa. ¿Dónde mejor que al lado de la familia, para convertirse con el buen ejemplo? La traeremos a casa, si está arrepentida y desea tranquilidad. A la primera que en las Claverías hable algo de ella, le arranco el moño. Mi yerno tal vez finja escandalizarse, pero ya le arreglaré yo la cuenta. Más valiera que no hiciese la vista gorda ante los paseos que Juanito, ese cadete sobrino de don Sebastián, da por el claustro cuando mi nieta se asoma a la puerta. El muy mentecato sueña nada menos que con emparentar con el cardenal y que su hija sea generala. Bien podía acordarse de la pobre Sagrario. En cuanto a don Sebastián, descansa, Gabriel. Nada dirá, si es que conseguimos traer a la chica. ¿Y por qué había de decir...? Hay que tener caridad con el semejante, y ellos más que nadie. Porque al fin, créeme, Gabriel... ¡hombres!, ¡nada más que hombres!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0256_chap5">
-				<head>V</head>
+				<head xml:id="ne0256_head_004">V</head>
 				<p>Las gentes de la Primada acogían con obstinado silencio la menor alusión al prelado reinante. Era costumbre tradicional en las Claverías: Gabriel recordaba haber visto lo mismo en su infancia.</p>
 				<p>Si se hablaba del arzobispo anterior, aquella gente, habituada a la murmuración, como todos los que viven en cierto aislamiento, soltaba la lengua comentando su historia y sus defectos. A prelado muerto no había que temerle. Además, era un halago indirecto al arzobispo vivo y sus favoritos hablar mal del difunto. Pero si en la conversación surgía el nombre de Su Eminencia reinante, todos callaban, llevándose la mano a la gorra para saludar, como si el príncipe de la Iglesia pudiese verlos desde el inmediato palacio.</p>
 				<p>Gabriel, oyendo a sus compañeros del claustro alto, recordaba el juicio funeral de los egipcios. En la Primada no se decía verdad sobre los prelados, ni osaba nadie publicar sus faltas, hasta que la muerte se apoderaba de ellos.</p>
@@ -768,7 +820,7 @@
 				<p>—Hermano, está bien—dijo con desaliento—. Puedes más que yo: cúmplase tu voluntad. Que se quede, ya que así lo quieres. ¡Pero que no la vea...! Quedaos: quien se va soy yo.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0256_chap6">
-				<head>VI</head>
+				<head xml:id="ne0256_head_005">VI</head>
 				<p>La máquina de coser sonaba desde el alba hasta la noche en la casa de los Luna. Este ruido metálico y el martilleo del zapatero eran las únicas manifestaciones de trabajo que turbaban el sagrado silencio del claustro alto.</p>
 				<p>Cuando Gabriel abandonaba el lecho al salir el sol, después de una noche de penosa tos, encontraba ya en la salita de entrada a Sagrario preparando la máquina para la diaria labor. Desde el día siguiente de su vuelta a la catedral había quitado la funda a la máquina, dedicándose al trabajo con tenacidad taciturna, como un medio de pasar inadvertida en las Claverías y que la gente la perdonase su pasado. La vieja jardinera le proporcionaba labores, y el ruido del pespunte sonaba en la antigua habitación, mezclándose muchas veces con las melodías del armónium del maestro de capilla.</p>
 				<p>El <seg rend="italics">Vara de palo</seg> pasaba por su casa como una sombra. Permanecía en la catedral o en el claustro bajo, no subiendo a su habitación más que en casos de necesidad. Comía con la cabeza baja, para no mirar a su hija, que estaba sentada al otro extremo de la mesa y parecía próxima a prorrumpir en llanto viéndose ante él. Un silencio penoso envolvía a la familia. Don Luis era el único que, en su inconsciencia de hombre distraído, no se percataba de la situación, y charlaba alegremente con Gabriel de sus esperanzas y de sus entusiasmos musicales. Todo lo encontraba natural, nada le sorprendía; la vuelta de Sagrario al hogar no le había causado la menor extrañeza.</p>
@@ -886,7 +938,7 @@
 				<p>—Muy buenas, don Antolín. Pero no lo olvide usted; aún no hemos salido de la fe y la espada. A ratos, nos dirige una o nos arrea la otra. Pero de la ciencia, ni una palabra. Ni siquiera ha regido España durante veinticuatro horas.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0256_chap7">
-				<head>VII</head>
+				<head xml:id="ne0256_head_006">VII</head>
 				<p>Gabriel, después de esta tarde, evitó las reuniones en el claustro para no discutir con el <seg rend="italics">Vara de plata</seg>. Estaba arrepentido de su audacia. Al quedar solo había reflexionado sobre los peligros a que se exponía emitiendo sus ideas con tanta libertad. Le aterraba el ser expulsado de la catedral, corriendo de nuevo el mundo, a la ventura. Se reprendía, echándose en cara su afán de chocar con los prejuicios del pasado. ¿Qué iba a conseguir cambiando el pensamiento de aquella pobre gente? ¿En qué podía pesar, para la emancipación de la humanidad, la conversión de aquellos hombres agarrados como moluscos a las piedras del pasado...?</p>
 				<p>La catedral era para Gabriel un gigantesco tumor que hinchaba la epidermis española como rastro de antiguas enfermedades. Nada había que hacer allí. No era un músculo capaz de desarrollo: era un absceso que aguardaba la hora de ser extirpado o de disolverse por los gérmenes mortales que llevaba en su interior. Él había escogido como refugio aquella ruina, y debía callar, ser prudente, para que no le echasen en cara su ingratitud.</p>
 				<p>Además, su hermano Esteban, rompiendo el mutismo frío en que se había encerrado desde la llegada de su hija, le aconsejaba prudencia.</p>
@@ -998,7 +1050,7 @@
 				<p>—Pero si me preguntáis por el Dios personal inventado por las religiones a semejanza del hombre, que saca el mundo de la nada, dirige nuestras acciones, guarda las almas clasificándolas por sus méritos y comisiona hijos para que bajen a la tierra y la rediman, buscadlo en esa inmensidad, ved dónde oculta su pequeñez. Aunque fueseis inmortales, pasaríais millones de siglos saltando de astro en astro, sin dar jamás con el rincón que oculta su majestad de déspota destronado. Ese Dios vengativo y caprichoso surgió del cerebro del hombre, y el cerebro es el órgano más reciente del ser humano, el último en desarrollarse.... Cuando inventaron a Dios, la Tierra existía millones de años.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0256_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0256_head_007">VIII</head>
 				<p>En la mañana del Corpus, la primera persona que vio Gabriel al salir al claustro fue don Antolín, que repasaba sus talonarios, alineándolos sobre el borde de piedra de la balaustrada.</p>
 				<p>—Hoy es un gran día—dijo Luna queriendo halagar al <seg rend="italics">Vara de plata</seg>—. Se prepara el gran ingreso: vendrán forasteros.</p>
 				<p>Don Antolín miró a Gabriel fijamente, como dudando de su sinceridad. Pero vio que no se burlaba, y contestó con cierta satisfacción:</p>
@@ -1133,7 +1185,7 @@
 				<p>—Tranquilícese, don Sebastián. Yo he visto muchos santos en esta casa, y valían menos que usted. Por asegurar su salvación hubiesen abandonado a los hijos. Por mantener lo que llaman la pureza del alma habrían renegado de la familia. Créame usted a mí: aquí no entran santos; hombres, todos hombres. No hay que arrepentirse de haber seguido el impulso del corazón. Dios nos hizo a su imagen y semejanza, y por algo nos puso el sentimiento de la familia. Lo demás, castidad, celibato y otras zarandajas, lo inventaron ustedes para distinguirse del común de las gentes. Sea usted hombre, don Sebastián, que cuanto más lo sea, resultará más bueno y mejor lo acogerá el Señor en su gloria.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0256_chap9">
-				<head>IX</head>
+				<head xml:id="ne0256_head_008">IX</head>
 				<p>Pocos días después del Corpus, una mañana don Antolín fue en busca de Gabriel. El <seg rend="italics">Vara de plata</seg> sonreía a Luna, hablándole con aire protector.</p>
 				<p>Había pensado en él toda la noche. Le dolía verle inactivo, paseando por el claustro. La falta de ocupación era lo que le inspiraba aquellas ideas tan perversas.</p>
 				<p>—Vamos a ver—añadió—: ¿te convendría bajar conmigo todas las tardes a la catedral para enseñar el Tesoro y las demás preciosidades? Vienen muchos extranjeros que apenas si se dejan entender cuando me preguntan. Tú conoces su lenguaje: sabes el francés, el inglés y no sé cuántos idiomas más, según afirma tu hermano. La catedral ganaría mucho pudiendo demostrar a esos extranjeros que tiene un intérprete a su disposición; tú nos harías un favor y no perderías nada. Siempre es un entretenimiento ver caras nuevas. En cuanto a recompensa....</p>
@@ -1420,9 +1472,9 @@
 		<back>
 			<div>
 				<div>
-					<head><seg rend="italics">Playa de la Malvarrosa</seg> (<seg rend="italics">Valencia</seg>).</head>
-					<head> <seg rend="italics">Agosto-septiembre 1903</seg>.</head>
-					<head>FIN</head>
+					<head xml:id="ne0256_head_009"><seg rend="italics">Playa de la Malvarrosa</seg> (<seg rend="italics">Valencia</seg>).</head>
+					<head xml:id="ne0256_head_010"> <seg rend="italics">Agosto-septiembre 1903</seg>.</head>
+					<head xml:id="ne0256_head_011">FIN</head>
 				</div>
 			</div>
 		</back>

@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La honrada</title>
-				<title type="sub">Novela de costumbres contemporáneas</title>
+				
 				<title type="short">Honrada</title>
-				<title type="idno">
-					<idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1028454</idno>
-					<idno type="viaf">35252653</idno>
-					<name type="short">Picon</name>
-					<name type="full">Jacinto Octavio Picón</name>
+					<name type="short" ref="#Picon"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1729</measure>
@@ -139,22 +131,54 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0158</idno>
+						<idno type="cligs">ne0158</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2000">2000</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/la-honrada--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcqb9z9 "/>.</bibl>
-				<bibl type="print-source">Madrid, Renacimiento,  <date when="1916">1916</date></bibl>
-				<bibl type="edition-first"><date when="1890">1890</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La honrada</title>
+					<title type="sub">Novela de costumbres contemporáneas</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Picon">
+						<name type="full"><forename>Jacinto Octavio</forename> <surname>Picón</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 9768">IP 9768</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118792083">118792083</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q432511/">Q432511</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028454.html">XX1028454</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/35252653/">35252653</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2000">2000</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/la-honrada--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcqb9z9 "/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Renacimiento,  <date when="1916">1916</date></bibl>
+					<bibl type="edition-first"><date when="1890">1890</date><idno source="k10plus" type="ppn" n="46492815X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46492815X"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La honrada</title>: 	<title type="sub">novela de costumbres contemporáneas</title> <date when="1890">1890</date>, <publisher>Henrich y Cía</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="46492815X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46492815X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La honrada</title> <date when="1910">1910</date>, <publisher>Libr. General de Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="467779597" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467779597"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La honrada</title> <date when="1924">1924</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid [u.a.]</pubPlace> 		<idno type="ppn" n="584968639" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584968639"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract>
-				<p></p>
+				<p/>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -182,7 +206,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">moralist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -213,6 +237,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-08-13" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -220,7 +245,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0158_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0158_head_000">- I -</head>
 				<p>El día fue muy caluroso, de legítimo verano madrileño; pero quedó la noche tan fresca y apacible, que Plácida y doña Susana -hija y madre- prolongaron la velada permaneciendo en el gabinete hasta más tarde de lo acostumbrado.</p>
 				<p>El airecillo que penetraba por los anchos huecos de los balcones venía impregnado en el perfume de las acacias de la Castellana, y era tan suave que apenas movía el fleco de los cortinajes. Los ruidos que la circulación produce disminuían poco a poco; pasaban menos coches, y los tranvías a más largos intervalos, oyéndose con mayor facilidad las voces de las gentes que llamaban al sereno y las carreras que éste daba para abrir las puertas. Según iba avanzando la noche era tal el silencio, que sonaba claro y distinto el pertinaz chirrido de un grillo preso en la vecindad para recreo de chicos, y si por el paseo se acercaba un grupo de caballeros, se entendían frases enteras del diálogo. También cruzaban por entre los troncos de los árboles parejas de hombre y mujer, andando despacito y de bracete; pero de lo que éstos decían no era posible sorprender palabra, confundiéndose su amoroso cuchicheo con el apagado son que movían las ramas al rozarse. En el reloj de un convento cercano dieron las doce, vibrando lenta y pausadamente las campanadas.</p>
 				<p>El gabinete estaba amueblado con lujo, indicando por los menores detalles comodidad, holgura, y sobre todo buen gusto. En nada había señal de nobleza heredada; ni escudo bordado, ni armas esculpidas. La alfombra era gris muy clara, escogida adrede para que sobre ella resaltase la sillería de madera negra y terciopelo rojo; los respaldos de los asientos estaban resguardados con bonitos cuadros en malla de hilo imitando antiguos encajes, y los veladores y las mesas aparecían llenas de floreros, figurillas de loza, cajitas de laca y baratijas japonesas. Lo mejor y más caro era el piano, magnífico Erard de media cola, casi cubierto con un hermoso paño de brocado viejo, encima del cual relucían los lomos y los cantos de algunos libros lujosamente encuadernados. En los ángulos de la habitación, y ante los balcones, había plantas en hermosos jarrones; dracenas y latanias de anchas hojas, cuyas sombras temblaban en el techo, se posaban, sobre los muebles, o dibujándose en las paredes obscurecían los arabescos de oro del papel que cubría los muros.</p>
@@ -266,7 +291,7 @@
 				<p>En menos de cinco minutos se recogió el pelo, se desnudó, y, cogiendo un libro, se acostó.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0158_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0158_head_001">- II -</head>
 				<p>Ni siquiera leyó una página. Maquinalmente dejó caer sobre el embozo la mano con que sujetaba el libro, apoyó el otro codo en la almohada, y reclinando en el brazo la cabeza, quedó ensimismada y pensativa.</p>
 				<p>Aquella era una de sus últimas noches de soltera: de allí a pocos días tendría que trocar la cama estrecha y solitaria por una mayor, donde no dormiría sola, y su alcoba y su gabinete, suyos, exclusivamente suyos, por otras habitaciones, encima de cuyos muebles vería a todas horas ropas de hombre: y el cambio debía ser inmediato, porque la fecha de la boda quedaría fijada en cuanto Fernando llegase de París.</p>
 				<p>Aunque procuraba considerar las cosas fríamente, no se podía acostumbrar a la idea de dejar de vivir allí, donde vivía desde que su padre la sacó del colegio; ni mucho menos aceptaba con entusiasmo la perspectiva de cambiar su existencia libre, casi independiente, por la sujeción a una voluntad ajena.</p>
@@ -278,7 +303,7 @@
 				<p>Por fin, ya muy tarde, se le fue apaciguando a Plácida aquella inquieta actividad de pensamiento que le hizo revolver tantas ideas: cansósele la imaginación, sintió que el sueño la vencería pronto, recogió el libro que desde el embozo de la cama había caído al suelo, y matando de un soplo la bujía se acomodó para dormir.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0158_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0158_head_002">- III -</head>
 				<p>Don Carlos Jarilla fue hombre honrado a carta cabal. Cuando joven tomó parte en las luchas políticas de su tiempo, llegando a ser diputado durante la rivalidad de Espartero y Narváez; pero en cuanto se convenció de que los políticos, aun los que parecen enemigos, se entienden y confabulan como chalanes en feria, se retiró de aquel juego de compadres, dedicándose exclusivamente al cuidado de sus bienes y al estudio de la historia y la literatura. A los pocos años de este retraimiento, y merced a unos cuantos trabajos de investigación y crítica literaria, comenzó a ser considerado como erudito chapado a la antigua, adquiriendo fama de ser el más infatigable revolvedor de archivos y bibliotecas. Sobre cualquier punto dudoso, o que le parecía tal, edificaba un monumento de datos, citas, comentarios y cotejos que lentamente tomaban forma de libro o de discurso. Sus ideas propias no eran muchas ni de gran originalidad; mas tenía, en cambio, el mérito de estudiar bien el origen, genealogía y desarrollo de las ajenas, esmerándose también en escribir correctamente, por todo lo cual adquirió reputación de laborioso concienzudo. Esta ilustración, las simpatías que le atrajo su bondadoso carácter y las buenas amistades que por su posición tenía, le abrieron en poco tiempo las puertas de dos Academias, sin protesta de nadie, porque si no era una notabilidad, valía bastante más que muchos de los que lograban igual honor. A partir de esta época su vida estuvo reconcentrada en el estudio que para él constituía verdadera delicia. No hay modo de expresar lo que gozaba llevando a <seg rend="italic">la de la Lengua </seg>una palabra olvidada por Covarrubias o Nebrijas, o a <seg rend="italic">la de la Historia </seg>una contradicción entre Zayas y Zurita, limitándose a esto sus placeres académicos; pues cuando llegaban ciertas vergonzosas votaciones y dictámenes, amañados, lejos de intervenir como otros en intrigas y cabildeos, votaba, y pedía por sistema lo más justo y de no ver claras las cosas, se abstenía, temeroso de que su voto y su opinión fueran torcidamente interpretados. Aquel voluntario alejamiento de la política y esta buena fe académica bastan para probar que con razón tenía fama de honrado.</p>
 				<p>En punto a negocios era la hombría de bien personificada; aunque, a decir verdad, no merecían nombre de negocios las vulgarísimas operaciones que verificaba para aumentar un poco sus rentas o costearse sin tocar a ellas la impresión de algún trabajo erudito. Quienes tenían verdaderos motivos para conocer prácticamente su bondad eran los colonos de las tierras que poseía y los inquilinos de las casas de Madrid, a los cuales complacía con mayor frecuencia de lo conveniente a su interés y acaso de lo que fuera justo. Así era; entre dispensar un beneficio, con riesgo de que no se lo agradeciesen, y dejar de hacerlo, temeroso de ser engañado, optaba sin vacilar por lo primero, diciendo que la ingratitud causa poco efecto en los buenos y que la necesidad puede fácilmente hacer peores a los malos.</p>
 				<p>Su principal mérito consistía en la rara mezcla de inteligencia y cariño con que se aplicó a la educación de su hija, inculcándole desde niña la misma bondad y elevación de ideas que él tenía.</p>
@@ -303,7 +328,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0158_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0158_head_003">- IV -</head>
 				<p>Fernando Lebriza fue una de las muchas personas que, a raíz del fallecimiento de don Carlos, acudieron a dar el pésame a Plácida y a doña Susana. Hacía mucho tiempo que no había estado a verlas, pero en aquella circunstancia le pareció mal dejar de ir. Además, también él llevaba luto por la muerte de su madre, acaecida dos meses antes, y no sabía dónde meterse de noche; así que, cuando se le ocurrió la idea de visitarlas, pensó matar dos pájaros de un tiro: pasaría el rato y quedaría bien con ellas.</p>
 				<p>Ambas le recibieron cortésmente; doña Susana, al parecer, mejor que Plácida, porque ésta, llena el alma del recuerdo de su padre, se quedaba horas enteras encerrada en su cuarto sin querer salir, en tanto que Susana, dando mayores muestras de resignación que de dolor, acogía con afabilidad a cuantos podían proporcionarla un momento de distracción. Para lograr esto, casi todas las tardes procuraba que se quedase alguien a comer con ellas: unas veces don Manolito, otras cualquier amiga; hasta pensó en invitar a Fulánez si la ocasión se presentaba propicia. A Fernando le convidó con tal insistencia, que aceptó.</p>
 				<p>Fernando llevaba vida de soltero y rico en toda la extensión de estas palabras. Desde que murió su madre, casi siempre comía fuera de casa, y por lo general de fonda; aquella tarde le gustó la comida, y a la semana siguiente volvió con intención de aceptar también el convite a la menor indicación.</p>
@@ -328,7 +353,7 @@
 				<p>-Hacía tiempo que lo veía venir... y si he de serte franca, no me parece mal.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0158_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0158_head_004">- V -</head>
 				<p>Resuelto también Fulánez a realizar el proyecto que había concebido, determinó acelerar su intento, comprendiendo que según pasaban los días, se hacía más prieto el lazo que le sujetaba a Susana. Sus cálculos eran sencillísimos. Dos cosas podían ocurrirle: que Plácida le acogiese favorablemente, o que desde el principio le desengañara, y ambos términos eran fin a su propósito, pues la madre había de enterarse. Si lo primero, como Plácida diera señales de oírle gustosa, no tendría Susana otro remedio que resignarse, porque no era creíble que para evitar la boda confesase a su propia hija el género de relaciones que con él mantenía, ni mucho menos que declarase haberlas contraído en vida de don Carlos; y si Plácida le rechazaba, tampoco debía importársele un ardite que lo supiera la madre. Iba, pues, a lograr mujer rica, o a quedar libre de querida pegajosa. Su línea de conducta era llana; mas debía poner extraordinario cuidado en que Susana no advirtiera nada hasta que él supiese fijamente a qué atenerse respecto de la actitud de Plácida.</p>
 				<p>Como desde el principio de sus amores con la madre había procurado hacerse simpático a la hija, la más rudimentaria astucia le aconsejaba empezar acentuando aquella galantería. Esto fue lo que hizo durante algún tiempo; pero estaba ya Plácida tan preocupada con la novedad de verse solicitada por Fernando, que no echó de ver aquella nueva red que iban tejiendo en torno suyo. En cuanto a Fulánez, ni frecuentaba la casa tanto como Fernando, ni podía dar rienda suelta a su deseo en presencia de Susana; de modo que pasaron algunas semanas sin que pudiese acometer el empeño claramente, limitándose a procurar ocasiones de hablar con Plácida. Esta le oía sin asomo de recelo, y si algo escuchaba que le pareciese lisonjero, no sentía ni mostraba sorpresa, imaginando que, lo mismo que le gustaba a Fernando, podía caer en gracia a los demás.</p>
 				<p>Por otra parte, lo que a Fulánez se le antojaba cautela era sencillamente lentitud: creía caminar con gran tiento, y no hacía sino andar despacio; temeroso de arriesgarse mucho, adelantaba poco; pretendía decir las cosas con precaución, y no las expresaba claras; sucediéndole a la postre lo que siempre ocurre a los vacilantes e indecisos: cuando determinó dar el primer paso fue más allá de lo discreto, y fracasó.</p>
@@ -386,7 +411,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0158_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0158_head_005">- VI -</head>
 				<p>Cuanto más obligada se vio Susana a la serenidad y al disimulo, mayor fue su tormento. Unos ratos, la pena que sentía era tranquila amargura, cual si la desilusión tomase forma de melancolía; otras veces, ensoberbecida de ira y despecho, le daban ganas de buscarle para desahogarse llenándole de improperios. ¡Qué castigo... y qué hombre! El único que por haberla arrastrado al mal estaba moralmente incapacitado para arrojarla lodo a la frente era el que la castigaba, Y ¡de qué modo!: ¡solicitando a su hija, e imaginando que ella sería capaz de tolerar aquellos amores, o que se vería obligada a ceder y callar! Gracias a que Plácida le rechazó. En algunos momentos, aun contra su misma hija, volvió rabiosa el pensamiento; porque le asaltó la idea de lo que pudiera haber ocurrido a portarse Plácida de otro modo. ¿Era absurdo suponer que sintiese alegría al verse cortejada por Fulánez? Entre experimentar esta impresión y agradecerla mediaba muy poco. ¿Y qué sucedería si por cualquier eventualidad Plácida reñía con Fernando, y Fulánez insistía en sus pretensiones?</p>
 				<p>Esta última consideración convertida en miedo, un miedo indefinible a que Plácida llegase a quererle, a ser suya, acabó por influir en su ánimo de un modo decisivo. El solo medio de ahuyentar aquella terrible contingencia consistía en casarla pronto, apurando cuantos medios le sugiriese el ingenio.</p>
 				<p>El primer recurso que se le ocurrió fue oponerse fingidamente a las relaciones de Plácida y Fernando, con objeto de irritarles, para que de ellos mismos, viéndose contrariados, surgiesen por sus pasos contados la insubordinación, la resistencia, el ardimiento, y al fin la resolución de casarse contra viento y marea: buen cuidado tendría ella de ceder a tiempo. Mas ¿y si cualquiera de ambos carecía de firmeza para soportar la prueba? No; lo mejor era estimular la vanidad, de Fernando, herirle el amor propio, amenazarle con la perspectiva de que si andaba reacio le robarían la mano de Plácida. Así lo hizo, y por raro ejemplo de la complejidad de sentimientos de que es susceptible el corazón de la mujer, aquella misma madre, a veces alterada por los impulsos del odio y de los celos, procuraba persuadirse de que obraba bien, obstinándose en acelerar la boda, imaginando honradamente que con ello estorbaba el peligro. Todo le parecía aceptable, cualquier mal le parecía pequeño, ante la eventualidad de que llegara un día, una noche, en que se viese obligada a ver partir a Plácida vestida de novia y apoyada en el brazo de su antiguo amante. El horror que esto la inspiraba era sincero. Algo bueno le quedaba en el alma.</p>
@@ -433,7 +458,7 @@
 				<p>Por fin llegaron a ver casi arreglada la casa, y como se echase encima la época en que habían pensado, Fernando marchó a París. Pocos días después, dos revisteros de salones daban la noticia del matrimonio, con lo cual llegó para Plácida el período de los últimos temores y recelos. Ausente Fernando, entregada a sí misma, libre de la atmósfera de halagos tentadores en que la envolvía, vinieron las cavilaciones, el miedo de no haber acertado y las noches de insomnio, como aquella en que, después de conversar con Susana, entró en el despacho y lloró posando los labios en el retrato de su padre.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0158_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0158_head_006">- VII -</head>
 				<p>Acababan de dar las ocho de la mañana y estaba dormitando el doctor Pedro de Mora, cuando entró a despertarle su criado, el cual, dirigiéndose hacia la claridad que brillaba en las rendijas de los balcones, los abrió diciendo:</p>
 				<p>-Señorito, es tarde y va a venir el coche.</p>
 				<p>El sol vivísimo de un día hermoso inundó de luz el dormitorio; el criado dejó sobre una butaca las ropas recién cepilladas que traía en la mano, echó agua limpia en la jofaina del lavabo y salió repitiendo:</p>
@@ -468,7 +493,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0158_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0158_head_007">- VIII -</head>
 				<p>Pocos días antes de la boda estuvo Plácida a pique de desbaratarla, obedeciendo a una corazonada. No se disgustó con el novio, ni con su madre, ni experimentó la más leve contrariedad: sin saber por qué, se levantó una mañana extremadamente cavilosa, lleno el pensamiento de ideas negras, acobardado el ánimo, cual si presintiera grandes e irreparables daños. Después de peinarse permaneció un rato muy largo sola en su tocador, arreglando para distraerse cajas y arquillas de lazos, guantes y pañuelos; mas tan intranquila por aquella repentina mudanza, que en nada hallaba contento. Si de pronto hubiese entrado Fernando, de fijo le recibiera mal: acaso, franca y ásperamente, le dijese que renunciaba al matrimonio, comprendiendo que si no iba al altar con la pena de quien se deja a la espalda recuerdos de otros amores, tampoco veía color de rosa el porvenir. No se juzgaba profundamente enamorada, ni creía que él lo estuviera. En lo más íntimo del alma tenía arraigada la certeza de que el amor era sentimiento más hondo que el que sentía e inspiraba. Mientras estaban juntos, en tanto que sus palabras le caían como lenguaje de seducción en los oídos, imaginaba querer y ser querida; luego que él se alejaba, ni su corazón ni su pensamiento experimentaban la soledad que entristece al verdadero enamorado. No le aguardaba con impaciencia ni le veía llegar con regocijo: su influjo se limitaba a los instantes en que escuchándole se creía llamada por voces misteriosas a sensaciones nuevas; mas luego de ido quedábase impasible, fría; la influencia ejercida por Fernando sobre ella era puramente material, de hombre sobre mujer; y Plácida, sin darse cuenta exacta de ello, lo presentía con zozobra. Tales eran su incertidumbre y desasosiego, que la menor alteración en sí o en lo que la rodeaba era bastante a trastornar sus impresiones: tan pronto se le figuraban vanos y ridículos sus temores, como creía apreciar bien la realidad. De seguir su ánimo en estas fluctuaciones unas cuantas horas, hubiera fracasado el plan de Fernando. Un suceso, al parecer insignificante, las modificó por completo.</p>
 				<p>Aquella tarde salió Plácida con su madre a ultimar ciertas compras en una tienda de las llamadas de <seg rend="italic">novedades, </seg>cuando a poco de entrar en ella y sentarse ambas junto al mostrador, de pronto y simultáneamente, vieron que entre las personas que hablaban al dueño del establecimiento estaba Fulánez. Plácida volvió la mirada hacia otra parte para no saludarle, y al desviar la cara observó que Susana se había quedado muy pálida y que se esforzaba inútilmente en serenarse: ella, entonces, se acordó de la breve escena ocurrida cuando contó a su madre la declaración de Fulánez, y sin que lo pudiese remediar se le vinieron al pensamiento aquellas ideas sombrías que otras veces la atormentaban. Fulánez se marchó en seguida, esquivando también el saludo, y Susana se tranquilizó; pero a Plácida no se le ocultó el enojo que recibió del encuentro. Por la noche estuvo con su novio más amable que nunca, cual si pretendiera estimularle, ansiosa de oír galanterías que la hiciesen olvidar aquello que la mortificaba. De esta suerte, por obra de un incidente casual, a trueque de no profundizar en lo que irreflexivamente rechazaba, vino a caer en el mismo amor que horas antes consideró mezquino.</p>
 				<p>A los ocho días se verificó la boda.</p>
@@ -505,7 +530,7 @@
 				<p>A un extremo del gabinete se veían las columnas que formaban la entrada de la alcoba. Los cortinajes recogidos parecían abrirles paso.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0158_chap9">
-				<head>- IX -</head>
+				<head xml:id="ne0158_head_008">- IX -</head>
 				<p>Los dos meses siguientes a la boda fueron de continuo ajetreo. Por las mañanas salían con pretexto de compras para completar el ajuar de la casa, a la tarde de paseo, y después de comer al teatro o a los conciertos del Retiro, dándose el fenómeno de que ni uno ni otro manifestasen empeño en evitar la compañía de Susana. Frecuentemente se ponían a charlar suegra y yerno sin que Plácida sintiese deseo de estar sola con su marido. Al volver dejaban a <seg rend="italic">mamá</seg> en el principal, y llegada la hora del silencio, propicia al amor, se recogían sin impaciencia. Únicamente entonces aparecía en Fernando el enamorado. Un día le dijo tímidamente Plácida:</p>
 				<p>-Eres más cariñoso de noche que de día.</p>
 				<p>Él repuso, sin sospechar que decía una grosería:</p>
@@ -569,7 +594,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0158_chap10">
-				<head>- X -</head>
+				<head xml:id="ne0158_head_009">- X -</head>
 				<p>En esto comenzó Fernando a quejarse del calor, diciendo que se ponía malo por infringir la costumbre de salir de Madrid durante el verano: comprendió Plácida que deseaba hacer el viaje a que ella se negó a raíz de la boda y, como no existían las razones en que fundó la anterior negativa, declaró que viajaría de grado. Por su gusto hubiera ido a pasar una temporada en cualquiera de las fincas de su marido, o a la casa de labor que ella y su madre tenían en Orejuela; pero Fernando dio a entender que aborrecía el campo, sobre todo el de España, para no tener que hablar de sus haciendas. Por último, Plácida se avino a pasar un mes recorriendo los Pirineos franceses y a detenerse, al volver, en San Sebastián. Aquella semana salieron de Madrid. Susana no les acompañó a la estación porque la tarde de su partida amenazaba tormenta, y Plácida se despidió de ella con la misma emoción que si emprendiese el viaje minutos después de la boda contribuyendo a este reverdecimiento de ternura filial la circunstancia de que en los dos meses transcurridos se le disiparon casi por completo las sospechas pasadas acerca del grado de amistad que pudiese unir a su madre con Fulánez: en primer lugar, porque no volvió a verle; luego observando que su madre no salía sola, y en último término, porque instintivamente deseaba haberse equivocado, prefiriendo ser rencorosa consigo por sus malos pensamientos, antes que fallar contra su madre.</p>
 				<p>Durante el viaje se convenció de que sus gustos eran más modestos y sencillos que los de Fernando: ella quería albergarse cómodamente; él con ostentación y lujo. Su empeño de ir siempre a los <seg rend="italic">hoteles </seg>más caros les llevó en Luchón a uno donde la situación del cuarto en que se alojaron facilitó que Plácida se enterase de una gran picardía de su marido, con ocasión de la cual tuvo el primer disgusto serio.</p>
 				<p>Había delante de la fonda un jardinillo formado de arbustos, adornado con macetas y lleno de sillas, bancos con toldo y veladores de hierro. El cuarto que ocupaban estaba en el entresuelo y sus balcones daban frente a la puerta de la verja. No era posible entrar ni salir de la casa, sin ser visto desde ellos.</p>
@@ -615,7 +640,7 @@
 				<p>-Pues claro que te quiero... Mira, no te me eches encima: recuéstate en el rincón: a ver si podemos dormirnos hasta Valladolid.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0158_chap11">
-				<head>- XI -</head>
+				<head xml:id="ne0158_head_010">- XI -</head>
 				<p>Desde la noche en que Fulánez habló atrevidamente a Plácida, hizo Susana proyecto de tener con él una explicación, pensando que lo exigían sus fueros de amante y su dignidad de madre. Se contuvo mientras los recién casados estuvieron en Madrid, sospechando que la entrevista sería agria; mas apenas emprendieron el viaje determinó buscarle para echarle en cara su falsía y su infame deseo de solicitar a Plácida. Comprendiendo que era inútil llamarle ni pedirle citas, determinó cogerle por sorpresa. Sabía que estaba empleado en Gobernación y que vivía al fin de la calle Mayor: lo natural era, por tanto, que para ir a la oficina saliese de su casa entre once y doce de la mañana, y del Ministerio poco después de las cinco. Hubiera preferido verle bajo techado, a solas, donde algunas lágrimas vertidas a tiempo ayudasen a sus palabras; pero esto era imposible. En cambio, la calle tenía otras ventajas: podría decirle libremente cuanto quisiera, y él se vería obligado a callar. En lo más íntimo de su corazón bullía el deseo de la reconciliación; pero lo que principalmente quería era desahogarse, decir ella la última palabra, no quedar abandonada, despreciada, como una corista o una modistilla.</p>
 				<p>Una mañana llegó a la Puerta del Sol a las once, y desde junto a la fachada de Gobernación emprendió la caminata por la calle Mayor, tomando la acera de la izquierda por donde era racional que viniese: fue despacio hasta la entrada del viaducto de la calle de Segovia, tornó a la Puerta del Sol, por la acera opuesta, mirando continuamente hacia atrás, y no logró verle. A las cinco de la tarde volvió e hizo lo mismo en sentido contrario, echando a andar desde el viaducto, y también fue inútil su cansancio. Al día siguiente no fue, temerosa de que se hubiesen fijado en ella las gentes de las tiendas. Por fin, al otro día, le vio salir de su casa, le siguió de cerca, y cuando llegaba a uno de los soportales que dan paso a la Plaza Mayor, colocándose a su espalda, muy cerca, le llamó por su nombre: él, sin sospechar la que le esperaba, se volvió y topó con ella. No tuvo escape. La entrevista fue corta y humillante para la imprudente señora.</p>
 				<p>Hablaron fingiendo sonreír, como conocidos que por casualidad se encuentran, medrosos ambos de que los transeúntes oyeran lo que se decían:</p>
@@ -721,7 +746,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0158_chap12">
-				<head>- XII -</head>
+				<head xml:id="ne0158_head_011">- XII -</head>
 				<p>Acompañó a su madre a Orejuela, arregló las habitaciones que había de ocupar, y pasados dos días regresó a Madrid con su doncella, encargando a la de Susana lo que debía hacer en caso de que la señora se pusiese enferma. Si tal cosa sucediese había de avisar con dos telegramas, uno a Plácida y otro al doctor Mora; y enviar el coche a la estación, que distaba una legua.</p>
 				<p>Está situada Orejuela en una cañada que forman dos altos cerros, por entre cuyas faldas pasa el Jaramilla formando curvas y remansos que fertilizan sus riberas. La casa, antiguo convento comprado por don Carlos en una venta de bienes nacionales, se alza sobre un montículo apartado del pueblo, en lo más sano de la campiña, y, como todo edificio de origen frailuno, es anchurosa, y cómoda. Tiene espaciosas habitaciones, cuadras, cuartos para gañanes, gran cocina, bodega, candiotera, lagares, huerto plantado de frutales y un trozo de jardín muy descuidado. Las tierras del contorno son de pan llevar y algo de viñedo; pero desde la muerte de don Carlos rentan poco. Los arrendatarios pagan tarde y mal, pretextando, ya que faltó el agua del cielo, ya que la riada anegó los sembrados o que el granizo apedreó los racimos cuando empezaban a granar. Cercan la casa frondosas arboledas pobladas de innumerables pájaros, y a la orilla del río se dilatan algunos prados que según van estando lejos del agua se convierten en terrenos áridos cruzados por la carretera que lleva a la estación del ferrocarril. Para gente hecha a visitar pueblecillos de baños, donde todo se dispone con deseo de atraer gente cortesana, aquellos lugares cercanos a Orejuela son demasiado rústicos: a quien sólo busque la apacible y tranquila quietud del campo, le parecerán deliciosos. De noche se escucha el manso rumor del Jaramilla que choca con las piedrezuelas de sus orillas, y de día se oyen juntamente los cantares de los palurdos, el cencerreo de las bestias que van por la polvorienta carretera y el silbar de las locomotoras que pasan entre cerros cortados por taludes, dejando nubes de humo prendidas al suelo y rastreando entre las matas hasta que el viento las disipa. Merced a los árboles que rodean el caserón, hay en su derredor grandes manchas de sombra, y el huerto ofrece distracción a quien quiere cuidarse de las colmenas arrimadas a la tapia, de los frutales, de las aves que pululan en la inmediata corraliza, o de las flores que independientes y bravías invaden los paseos retoñando fuera de los recuadros.</p>
 				<p>Con todo esto se distrajo Susana, y con la variación de aires y modo de vida comenzó a reponerse rápidamente. La mejoría física influyó en su ánimo, y sus ideas cambiaron mucho. Juzgó abominable pesadilla el amor que creyó haber sentido; el adulterio apareció a sus ojos despojado de la ficticia poesía con que procuró adornarlo, y arrepintiéndose del engaño hecho al pobre muerto, se horrorizó ante la posibilidad de que su amante hubiera llegado a ser marido de su hija. En Fulánez no pensó sino como en hombre bajo y miserable, al cual era fortuna no mirarse sujeta. Cuando recordaba la escena que tuvo con él en la calle, sentía asco, como si aún le resonasen en los oídos sus groseras frases. Un solo germen de inquietud le quedaba en el alma: comprendía que el deseo de verse libre para amar a Fulánez y luego el terror de que éste enamorase a Plácida, contribuyeron a que, imprevisora y ligera, precipitase la boda de su hija; y comenzó a descorazonarse imaginando que acaso Fernando no fuese capaz de hacerla feliz. Si así sucediese, los resultados serían tristísimos y ella sola culpable.</p>
@@ -827,7 +852,7 @@
 				<p>-¡No, por Dios, que no venga! -repuso alarmadísima, sin sujetar su pensamiento. Y en seguida, con más calma, para desvirtuar aquel arranque de involuntaria sinceridad que le brotó del alma, añadió: -No quiero llamarle, porque no sepa mamá lo que ha ocurrido.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0158_chap13">
-				<head>- XIII -</head>
+				<head xml:id="ne0158_head_012">- XIII -</head>
 				<p>Fernando, al mes siguiente, tuvo una racha de ganar que le duró una semana, con lo cual se puso de tan buen humor que a Plácida le parecía otro hombre. Una de las manifestaciones de este contento consistió en llevar varias veces algunos amigos a comer. Una tarde llegó con un señor viejo, prototipo del solterón egoísta, que por no estar solo aceptaba cuantos convites se le hacían, pagándolos en conversación amena; otra vez invitó a un secretario de la Embajada francesa, arrogante mozo que al siguiente día envió a Plácida un soberbio ramo de flores. Después fue a visitarla con muestras de estar prendado, dándoselo a entender tan claramente, que sólo a fuerza de tiempo y severa dignidad logró ella hacerle comprender lo inútil de su empeño. Por fin se portó como caballero, le pidió mil perdones y se disculpó indicando que su atrevimiento estaba fundado en cierta conmiseración que le inspiró el verla tan menospreciada mereciendo mejor suerte.</p>
 				<p>Después del francés, Fernando llevó a comer varias veces a un amigo que tenía una hermana de poca más edad que Plácida, muy guapa, y, según decía, viuda; pero en realidad separada del marido. Era éste suramericano, la conoció estando en Madrid de cónsul, se casaron, fue luego él llamado a su patria, partieron ambos, y en América, por liviandades de ella, acordaron separarse amistosamente. Pepa -que así se llamaba- volvió a España enlutada, diciendo que había enviudado, y al llegar propuso a su hermano que viviesen juntos, a lo cual accedió gozoso sabiendo que traía dinero. Él hacía la misma vida que Fernando: ella era ligera, frívola, habladora y algo más que coqueta. La influencia de ambos hubiera sido desastrosa en casa de Plácida, a no evitarlo ésta con su sentido moral y su elevación de ideas.</p>
 				<p>Entre Fernando y Luis, el hermano de Pepa, se estableció una especie de convenio tácito, por el cual procuraron que ellas simpatizaran y se viesen con frecuencia para quedar así en libertad completa. El carácter de Fernando no era dado a tan sutiles precauciones; mas la fortuna que por entonces le favorecía, le infundió recelos para el porvenir, calculando que cuando el <seg rend="italic">treinta y cuarenta </seg>o el <seg rend="italic">bacarrat </seg>le fuesen adversos, habría de recurrir a los bienes de Plácida. Bueno era, por tanto, no violentar las cosas, amansarse algo, estar más afable, y ya que él no la acompañaba nunca, procurar que tuviese alguna amiga con quien pasear e ir al teatro. Si Plácida hubiese conocido los antecedentes de Pepa, habría esquivado cortésmente su trato: los ignoraba, y aceptó su amistad. Mas vinieron los sucesos de modo que no llegaron a inspirarse mutuo ni verdadero afecto. Luis, el hermano, aún le era menos simpático. Tenía un afán de ir a buscar a Fernando a horas en que no había de encontrarle, un modo de mirarla, y un empeño en hacerla intimar con Pepa, que no podían ser más sospechosos; algunas frases osadas la persuadieron de que no merecía aprecio ni confianza. A pesar de todo, Pepa y Luis influyeron indirectamente en el pensamiento de Plácida. Luis la convenció de que esposa olvidada es como fruta que sobresale del cercado, a la cual todos se atreven; Pepa, contribuyó a despertar en ella ideas turbadoras de su reposo, y hasta intentó hacer oficio de demonio tentador. Era de esas que la falta de pecado propio se deleitan con el ajeno, inventan y aconsejan solapadamente disculpas, y truecan la amistad en tercería para concluir pregonando aquella misma afrenta cuyo principio protegieron envolviéndolo en la poesía del misterio.</p>
@@ -921,7 +946,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0158_chap14">
-				<head>- XIV -</head>
+				<head xml:id="ne0158_head_013">- XIV -</head>
 				<p>Perico se retiró procurando analizar las impresiones que acababa de recibir. ¿Quién podía prever las consecuencias de lo sucedido? Lo único claro para él era que experimentaba hacia Plácida una inclinación imposible de disfrazar. No dejó de pensar en ella desde que asistió a Susana, y con mayor tenacidad desde la tarde que comieron solos: ni podían borrársele de la memoria los largos ratos que pasó a su lado con pretexto de la enferma.</p>
 				<p>Durante la época estudiantil tuvo pocos y pasajeros amores: una modistilla y una amiga de la patrona. Con la primera hizo papel de Tenorio en bailes cursis y cenas baratas; sus relaciones con la segunda fueron el eterno y vulgarísimo episodio de la mujer corrida que se deja conquistar cuando es ella quien seduce. No tuvo más aventuras, y éstas no le dieron idea del amor. Luego llevó vida de hombre trabajador, en cuyo camino no se atraviesa mujer capaz de hacerse querer. Las <seg rend="italic">vengadoras 					</seg>y <seg rend="italic">momentáneas,</seg> por finas y elegantes que fuesen, le inspiraban antipatía: no porque alardease de moral, sino porque en amor, como en todo, aborrecía lo artificioso y mentido. En cuanto a la cubanita, Pepa estaba en lo cierto: aquella niña le proporcionó la ocasión de convencerse de que estaba enamorado de Plácida. En el episodio de la flor no había exageración; pero ¡qué diferencia entre la frialdad de entonces y la emoción sentida al recoger del suelo y guardarse a lo ratero las rosas de Plácida...! Aunque dejó de ir largas temporadas a casa de don Carlos, tenía fresco el recuerdo de cómo le vio formar el corazón y el entendimiento de su hija. Era inútil soñar con ella. Acaso llegase a comprender su amor, pero estaba seguro de que no lo compartiría; y si tal cosa sucediera, ella se lo sofocaría calladamente en el alma con el sentimiento del deber y el heroísmo de la virtud, como se ahoga entre dos brazos vigorosos una bestezuela agresiva. Y de no ser así, si le hiciese caso, ¡qué desencanto! Ya no sería la Plácida soñada desde aquella tarde de la comida: si cediese sería una mujer vulgar. Aún iba más lejos su romanticismo. Lo que le sucedía se le antojó castigo providencial por no haber intentado desbaratar la boda. ¡Ah!, ¡si aquella mañana en que leyó el periódico se hubiese ido a ver a Susana...!</p>
 				<p>¿De qué le servían sus propósitos de alejamiento? La aventura del Real los quebrantó por completo. ¿Iría a su casa como ofreció al dejarla en el coche? No; ¿para qué? Por último, al entrar en su despacho, sacó del bolsillo las rosas que Plácida había llevado en el escote y las tiró con rabia en el fondo de un cajón, donde acaso cayeron sobre la carta en que ella le anunció su boda.</p>
@@ -1007,7 +1032,7 @@
 				<p>A pesar de esta mutua inclinación que ambos sentían, Fernando seguía, por cálculo, relativamente cariñoso con Plácida; pero en sus expansiones con ella, aun en medio de las que parecían más sinceras, establecía mentalmente comparaciones, y teniéndola en brazos se acordaba de la otra, porque acababa de verla o porque meditaba ir a buscarla.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0158_chap15">
-				<head>- XV -</head>
+				<head xml:id="ne0158_head_014">- XV -</head>
 				<p>Si bien Plácida no mostró claramente su enojo, desde la noche de <seg rend="italic">lo del Real, </seg>estuvo algo fría con Pepa, y notándolo ésta habló de ello con su hermano.</p>
 				<p>Me fui por coger coche -decía.</p>
 				<p>-Pues se ha picado; como tuvo que salir sola...</p>
@@ -1082,7 +1107,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0158_chap16">
-				<head>- XVI -</head>
+				<head xml:id="ne0158_head_015">- XVI -</head>
 				<p>Fluctuando entre el despecho de verse postergada y la resignación a que por bondad nativa se inclinaba, dejó Plácida transcurrir algunas semanas, durante las cuales comenzó a sentirse enferma. Perdió las ganas de comer, experimentó en todo su ser un cambio extraño, el menor ejercicio le causaba extrema laxitud y fatiga, y por último se le acentuó tanto la dificultad en las digestiones, que no pasaba día sin vómitos ni noche tranquila. Al principio, creyó que tales molestias no eran sino consecuencia de lo que moralmente sufría, hasta que una tarde, al mes y medio de aquel persistente malestar, hallándose sola en su gabinete, comprendió que era otra la causa.</p>
 				<p>Imaginando traza de reformar un vestido, buscó un periódico francés de modas a que estaba suscrita, y no hallando el número que deseaba, empezó a calcular cuál era la fecha que le correspondía, teniendo para ello necesidad de recapacitar acerca de cuándo había recibido los últimos figurines. Permaneció un rato contando días por los dedos, cuando de pronto, por relación de ideas, se acordó de algo íntimo, personal privativo de sí misma: repentinamente se dirigió a una mesa, cogió un calendario y lo consultó con afán, volviendo a contar y recontar fechas, presa de una emoción indescriptible. Cuando soltó el calendario dejándole caer sobre un velador, estaba pálida y desencajada. El cómputo de fechas y la cuenta de días que con el pensamiento estaba haciendo, no se referían ya al número del periódico, sino a otra cosa que, de ser cierta, explicaba los vómitos, las malas digestiones, los vahídos, todo.</p>
 				<p>Se puso a pasear por el cuarto agitadísima, dominada por una idea, y al pasar ante el armario de luna, obedeciendo a la sospecha que acababa de alzarse en su alma, se miró al espejo y creyó verse variada, distinta de como siempre se veía. Estaba pálida, ojerosa, y tenía como caídos los carrillos. Volvió a coger el calendario, torno a contar días y fechas, se quedó unos segundos profundamente pensativa, y luego rompió a llorar sin saber si era pena o gozo, alegría o dolor, lo que sentía. Los días siguientes fueron de cruel incertidumbre; en vano esperó que se le corrigieran los desarreglos gástricos. Lo que en un principio fue sospecha acabó por convertirse en certeza. Por fin, pensó en hablar con un médico. Ocurrírsele esta idea y brotar en su imaginación el nombre de Perico, todo fue uno; pero sin reflexionar, instintivamente, se dijo: «No, de ningún modo: a él menos que a nadie.» Y poniéndose un traje muy sencillo salió con pretexto de hacer compras, resuelta a visitar al médico viejo que a ella y su madre les había asistido antes de que Mora volviese a frecuentar su trato.</p>
@@ -1159,7 +1184,7 @@
 				<p>Todo el día siguiente esperó en balde a don Manolito.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0158_chap17">
-				<head>- XVII -</head>
+				<head xml:id="ne0158_head_016">- XVII -</head>
 				<p>A las cuarenta y ocho horas de llegar a Madrid, dijo Susana que se ponía mala, -achacándolo al cansancio del camino y el cambio de alimentos; pero lo que en realidad tenía era el resultado de las impresiones sufridas, primero en su largo diálogo con Plácida y luego en la entrevista con don Manolito. En seguida de sentirse indispuesta mandó llamar a Perico.</p>
 				<p>-¿No valdría más avisar a don Julián? -preguntó Plácida.</p>
 				<p>-De ningún modo; no quiero viejos. Para mí no hay en el mundo más médico que Perico.</p>
@@ -1206,7 +1231,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0158_chap18">
-				<head>- XVIII -</head>
+				<head xml:id="ne0158_head_017">- XVIII -</head>
 				<p>Plácida determinó dar tiempo al tiempo, no hablar a Fernando palabra que se refiriese a dinero, y esperar a ver lo que él hacía; resuelta, por de contado, a seguir el consejo de don Manolito en lo tocante a no autorizarle para vender ni un pie de terreno, ni confiarle papel alguno que representase valor. De acuerdo con su madre siguió pagando inquilinato, servidumbre, mesa, ropas, y cuanto habían menester en la casa.</p>
 				<p>Fernando continuaba dominado por el juego: como nada gastaba en su propio hogar, con atrasos un día, con ganancias otro, el naipe le producía lo bastante para pagar la mezcla de capricho sensual y vanidad satisfecha que le tenía sujeto a Luisa, cuya elegancia y cuyo lujo comenzaron a dar envidia a las de su clase. En su aspereza respecto de Plácida varió algo, comprendiendo que si enviudase antes de ser padre habría perdido por completo la partida. Lo que le convenía era amansarse y dulcificarse, hasta que el alumbramiento le diese mayor autoridad. Ella sufría calladamente, aparentaba haberse olvidado de las injusticias y vejámenes pasados; pero de día en día se le iba acreciendo la antipatía con que ya le miraba. Así llegó una época en que él, pretextando guardarle consideraciones y miramientos de cierta índole por el estado en que se hallaba, evitó por completo toda intimidad matrimonial, con lo que Plácida, en vez de dolerse por tan ostensible desvío, se alegró del apartamiento. Su resignación rayaba en humildad: lo que no podía era fingir pasión, ni plegarse a pagar deseos de que no participaba, porque hasta en su modo de concebir las caricias había cierta pudorosa delicadeza, absurda e increíble para el hombre acostumbrado a convertir el amor en vicio. No hubo día ni momento preciso en que pactasen aquel divorcio íntimo y secreto de sus cuerpos, reflejo del que ya separaba sus almas; pero luego que él dejó de acercarse a ella, no se consideró olvidada, sino libre. De haber sido poseída por su marido, le quedaron dos impresiones distintas; una, la revelación de todos los secretos del amor material; y otra, el convencimiento de que aquellos goces hubieran ejercido diverso influjo en su vida a estar ella realmente enamorada y ser él hombre que supiera merecerla. Cuando el mal no tenía ya remedio, fue cuando advirtió quo había confundido el impulso de los sentidos con el verdadero amor. Mas por cima de la aversión con que, a causa de todo esto, miraba a Fernando, ponía ella el empeño de ir acostumbrándole a pensar en lo que había de nacer.</p>
 				<p>Vencido el sexto mes del embarazo, y estando él una tarde con el sombrero puesto para salir, le dijo Plácida:</p>
@@ -1247,7 +1272,7 @@
 				<p>Así que él se fue, estuvo largo rato muy cavilosa. ¿Qué le importaba que Perico la viese? ¿Era exceso de pudor? Harto comprendía que no. Era que se asustaba de sus propios pensamientos. Aunque Perico no se había atrevido a decirle nada que entrañase exceso de simpatía, ella le leía ya el amor en las miradas, y sentía miedo; pero no ese miedo producido por lo que se ve o se oye, sino ese otro pavor incontrastable y misterioso que agita el alma cuando en ella brotan ideas que la conciencia rechaza.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0158_chap19">
-				<head>- XIX -</head>
+				<head xml:id="ne0158_head_018">- XIX -</head>
 				<p>Se empeñó Plácida en amamantar al chiquitín y quiso que, como su abuelo, se llamara Carlos: si hubiese Fernando manifestado deseo de ponerle otro nombre, el suyo, por ejemplo, ella habría seguramente accedido; pero no se le ocurrió. Susana y don Manolito fueron a cristianarle: su padre lo supo pasados dos días, como pudo saberlo al cabo de dos meses: oyó hablar de Carlitos a los criados, y comprendió que se referían al niño. Rara vez le acariciaba y sólo a instancias de Susana solía besarle. Respecto de Plácida, aun era mayor el despego de Fernando: vivía como si no tuviera mujer, de lo cual ella casi se alegraba; pues desde que vio su indiferencia para con el niño, comenzó a cobrarle invencible antipatía. Si hubiera pretendido solicitarla, aproximarse amorosamente a ella, de fijo que hallara mal disimulada resistencia, o, al menos, fría pasividad. Fernando, lejos de pensar en reconciliarse con ella, estaba cada día más enamorado de Luisa. A fuerza de ruegos, y, sobre todo, de gastos llegó a suplantar al senador, prescindiendo casi en absoluto de su propia familia y erigiéndose en único dueño de la pecadora. Pasaba los días y la mayor parte de las noches, no en su casa de la Castellana, sino en el <seg rend="italic">hotel </seg>de la calle de Ferraz, donde hacía que le dirigiesen la correspondencia, citaba a los amigos y recibía las ropas que le enviaban el camisero y el sastre. Hasta llegó a presentarse descaradamente en público con Luisa. Quiso ésta en cierta ocasión que la acompañara a una tienda de guantes, y al preguntarle el dependiente su nombre y domicilio para mandárselos, dijo Fernando:</p>
 				<p>-Señora de Lebriza: calle de Ferraz, número...</p>
 				<p>Luisa, menos pervertida, le interrumpió sin empacho, diciendo:</p>
@@ -1332,7 +1357,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0158_chap20">
-				<head>- XX -</head>
+				<head xml:id="ne0158_head_019">- XX -</head>
 				<p>Tan desazonadas y nerviosas pasaron el día siguiente Susana y Plácida, que la primera, aun a riesgo de enojar a su hija, mandó llamar a Perico, cuyo consejo no pudo ser de más fácil ejecución. Opinó que, a todo trance y en beneficio del niño, evitasen escenas análogas, y que para lograrlo se marcharan al pueblo, ofreciéndoles que buscaría ama de cría, teniéndola dispuesta para partir a Orejuela, si el estado de Plácida lo exigía. Ambas aceptaron gustosas la proposición, acordando cumplirla en esta forma: Susana, a la sazón más fuerte que su hija, partiría primero con una doncella para preparar las habitaciones, porque habiendo de alojarse cinco personas, esto es, ellas, dos criadas y la cocinera, no lo permitía, sin previo arreglo, el estado de la casa; y al cabo de tres o cuatro días avisaría a Plácida. Ésta, temerosa de que Fernando dispusiera de ellos, mandó bajar al cuarto de su madre el piano y unos cuantos objetos con que estaba encariñada, y Susana marchó a Orejuela poseída de profunda amargura, reconociéndose culpable de cuanto allí ocurría, cierta de haber labrado la desdicha de su hija. Al despedirse de ella la besó como jamás la había besado, y juntas lloraron estrechamente abrazadas, diciendo Plácida:</p>
 				<p>-No tengas miedo, arréglalo todo pronto; el cuarto grande de junto al comedor para mí y el niño; la sala para ti. Lo principal es salir de aquí cuanto antes, evitar disputas y, sobre todo, ver si podemos pasar sin ama.</p>
 				<milestone unit="section"/>
@@ -1464,7 +1489,7 @@
 				<p>-¡Ah!, sí, ya sé lo que quiere usted decir. Unas <seg rend="italic">prógimas </seg>muy guapas, un hotel donde antes venían muchos señores y ahora viene mucho uno solo, alto, guapo... allí es.- Y extendiendo el brazo señaló el hotel que habitaban la <seg rend="italic">Revoltosa </seg>y la<seg rend="italic"> Rubia.</seg></p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0158_chap21">
-				<head>- XXI -</head>
+				<head xml:id="ne0158_head_020">- XXI -</head>
 				<p>Miró el portero con extrañeza a Plácida, quien le pareció por las trazas verdadera señora, y sin acertar con lo que debió de hacer llamó a una criada. Plácida, procurando calmarse, espero en el jardinillo. Al presentarse la doncella le puso dos duros en la mano, diciendo:</p>
 				<p>-Hágame usted el favor de decir a su ama que hay aquí una señora que desea hablarle.</p>
 				<p>-No sé... pero, en fin, venga la señorita conmigo.</p>
@@ -1520,7 +1545,7 @@
 				<p>-Guapa, no; muy señora es lo que parece.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0158_chap22">
-				<head>- XXII -</head>
+				<head xml:id="ne0158_head_021">- XXII -</head>
 				<p>Quedó Luisa satisfecha de sí misma, y armó a su amante una marimorena tremenda por haber dado margen a que hiciera su mujer lo que hizo, diciendo en su lenguaje chulesco y libre verdades como puños, de que él a tener delicadeza se hubiese avergonzado. Sus últimas palabras fueron éstas:</p>
 				<p>-Oye, conmigo te gastas el dinero, ¿estás?; pero no me vuelvas a traer cosas que no sean tuyas, ni me metas en líos. Si tu mujer <seg rend="italic">hubiá </seg>sido de otra pasta, hoy nos arrancamos el moño. Gracias a que ella debe de ser muy señora... y yo también.</p>
 				<p>Quien pagó las resultas de los improperios e insultos con que la <seg rend="italic">Rubia </seg>obsequió a Fernando fue la desgraciada Plácida. Entre marido y mujer ocurrió después una escena tristísima.</p>
@@ -1538,7 +1563,7 @@
 						</div></body></floatingText><milestone unit="section"/>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0158_chap23">
-				<head>- XXIII -</head>
+				<head xml:id="ne0158_head_022">- XXIII -</head>
 				<p>Desde la noche del Real, y aun más desde la torpe intentona de Luis para obtener el amor de Plácida, las relaciones de ésta con Pepa se habían enfriado mucho. Plácida no le pagaba una sola visita y la recibía con estudiada sequedad, a pesar de lo cual, ella seguía yendo a verla de cuando en cuando, no por amistad, sino deseosa de mortificarla, como ávida de obligarla a un rompimiento que le ocasionase un disgusto con su marido, y, sobre todo, esperanzada siempre en verla pecar y caer; su virtud y resignación le parecían un insulto.</p>
 				<p>Tal era el estado de su ánimo cuando tuvo motivo para sospechar que un hombre había puesto en Plácida los ojos. El amigo con quien Perico habló en el círculo para que inquiriese la situación en que Fernando se encontraba, cometió la imprudencia de averiguar con poca cautela lo que deseaba saber, preguntó a muchos, se expresó con sobrada claridad, circuló la noticia, y de lenguas en oídos llegó hasta Luis. Saberlo éste y hacer conversación de ello con su hermana, todo fue uno.</p>
 				<p>-Pues no te quepa duda -le respondió Pepa. -Cuando el médico anda en ello, por algo será. Y ahora recuerdo yo con qué confianza se saludaron en el teatro, y luego él no subió al palco... ¡Claro, como estaba yo allí! ¿No te decía yo que ya caería? ¡Sabe Dios! ¡No, y yo también lo he de saber!</p>
@@ -1574,7 +1599,7 @@
 				<p>A esta visita, y a lo ocurrido en ella, se refería Plácida en la carta que escribió a su madre.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0158_chap24">
-				<head>- XXIV -</head>
+				<head xml:id="ne0158_head_023">- XXIV -</head>
 				<p>Estaba la mañana fresca y apacible. Los álamos del huerto se movían blandamente, y confundido con el monótono son del roce de su ramaje se oía el canto de los pájaros. Una bandada de palomas revoloteaba en torno de la casa, y cuando el aire arreciaba un poco se percibía el rumor que, al doblegarse, producían los cañaverales cercanos al río. Susana, seguida de la doncella y recién terminado el almuerzo, salió al jardín con una canastilla de la que desbordaban dos o tres madejas de lanas de colores y unos largos ganchos de madera necesarios para la labor que traía entre manos. Pasó un rato mirando a un criado lugareño que con un escardillo iba limpiando el suelo de yerbas malas, y luego dijo a la doncella:</p>
 				<p>-Ponme la silla de tijera junto al emparrado del pozo.</p>
 				<p>Sonó a lo lejos el silbido de una locomotora, y un minuto después pasó el tren despidiendo humo por entre unos cerros que desde allí se veían.</p>
@@ -1613,7 +1638,7 @@
 				<p>En una de las veces que se aproximó a Susana, miró atentamente en torno de la cama: no había nada. Ya salía de la alcoba cuando a los pies de la cama, casi debajo de un armario ropero, vio dos papeles, uno mayor que otro y ambos arrugados: eran la carta y el sobre. Sin duda ella los guardó en el pecho, o los conservó estrujándolos en la mano al acometerle el accidente, y luego se le cayeron cuando la desnudaron. Perico los cogió con ansia, echó una ojeada hacia donde estaba la doncella, y no atreviéndose a leer allí se bajó al portalón de ingreso. El farolón, que pendía de una viga del techo, estaba agonizando. Por los rincones había arreos de mulas y aperos de labranza. Empujó la puerta y salió al camino. A la incierta y blanquecina luz del alba, trémulo de ira, leyó la carta. Era la segunda vez que veía letra de <seg rend="italic">ella; </seg>la primera fue cuando le escribió dándole gracias por la pulsera. ¡Pobre Plácida! Hubo momentos en que rugió de cólera al fingírsela, con los abultadores ojos de la imaginación, infamemente maltratada. De improviso, su rostro varió de expresión, los labios se le entreabrieron con una sonrisa de orgullo nobilísimo y sus ojos se detuvieron a releer algunas frases, deleitándose en ellas:... <seg rend="italic">«vino Perico, pero después de lo que me había dicho Pepa no quise recibirle. Sentiré con toda mi alma que se ofenda, pero no debo verle... Ya te lo explicaré todo...» 					</seg>Se quedó absorto, como pasmado. Era indudable que Plácida sabía a ciencia cierta que él la amaba. Sus propósitos de virtud estaban mezclados de alarma. No quería verle y le tenía miedo... Y aquella Pepa, ¿de qué hablaría con ella? Lo cierto era que iban a verse, pronto, allí mismo... Dobló la carta, guardola cuidadosamente y tornó a subir. La doncella seguía dormida. Susana, sin darse cuenta de ello, sufría ahogos crueles; la respiración comenzaba a ser estertorosa. A las cinco de la mañana, cuando ya el sol desparramaba su luz sobre los campos dorando los trigales y reverberando en las aguas del río y los vidrios del caserío lejano, la pobre señora lanzó tres o cuatro quejidos, se le dobló hacia un lado la cabeza cayendo fuera de la almohada, y quedó muerta.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0158_chap25">
-				<head>- XXV -</head>
+				<head xml:id="ne0158_head_024">- XXV -</head>
 				<p>Conjeturando Plácida que la doncella de su madre habría también avisado al doctor Mora, envió recado a casa de éste para salir de dudas, y la respuesta que dieron los criados confirmó su sospecha, tranquilizándola relativamente porque Perico debía estar ya a la cabecera de la enferma. En cambio, al pronto le desagradó sobremanera la idea de encontrársele en el pueblo y la necesidad de celebrar entrevistas con él; acaso tendrían que dormir bajo el mismo techo, o velar juntos largas horas...</p>
 				<p>Hubo un momento en que estuvo a punto de no moverse de Madrid. Pero, ¿y su madre? Además, ¿no estaba ella segura de sí misma? ¿Qué le podía importar verse obligada a hablar con él? Perico, tan noble, tan decente... ¡No!, a nada se atrevería; si las palabras de amor se le venían a los labios, se las tragaría... como ella sofocaba los pensamientos tentadores.</p>
 				<p>Después pasó toda la noche manoseando y releyendo el telegrama. Por fortuna, Fernando, que acaso le hubiese prohibido ir a Orejuela, no fue a dormir a casa.</p>
@@ -1691,7 +1716,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0158_chap26">
-				<head>- XXVI -</head>
+				<head xml:id="ne0158_head_025">- XXVI -</head>
 				<p>Cuando transcurrido mes y medio, a contar desde la muerte de Susana, se convenció Fernando de que su mujer no le hablaba de intereses, comenzó a dar señales de disgusto. En presencia de visitas y gentes extrañas, repetía cuantas vulgaridades y chistes se han inventado con las suegras, y a solas con Plácida aludía abiertamente a la herencia; todo lo cual sufría ella sin protesta, juzgándolo soportable mientras no pretendiese tomar las riendas de la casa. Su propósito era seguir, como hasta allí, haciendo frente a cuantas necesidades surgiesen, pronta a reconocer humildísimamente la jefatura de su marido si variaba de conducta, pero también resuelta a velar por los intereses de su hijo.</p>
 				<p>Los arrendadores y colonos de las tierras, acostumbrados a pagar a Susana en presencia de su hija, satisficieron a ésta un plazo vencido de las rentas. Don Manolito cobró y le hizo entrega del importe de un cupón corriente. Ella se entendía con el casero y los dueños de las tiendas donde se proveía, daba a la cocinera para los gastos de la compra diaria y, en suma, pagaba cuanto era preciso. De cuando en cuando venían gentes a presentar cuentas que Fernando tenía pendientes: el sastre, el camisero, el hombre que le vendía los tabacos; hasta fue a buscarle una chula florera que en los teatros surtía de camelias y varas de nardos a Luisa <seg rend="italic">la Rubia. </seg>Plácida le pagó también sin ostensible señal de enojo.</p>
 				<p>Se había resignado a vivir como en castidad de viuda virtuosa. Ciertos, impulsos de la naturaleza parecían en ella sofocados. Ni las largas horas pasadas en el solitario lecho, ni las calurosas horas de la siesta, ni el intenso perfume de un ramo puesto en un búcaro, ni el libro que hablaba de amores, nada era bastante poderoso a mover en ella la sorda palpitación de un deseo o el vago anhelo de una caricia. Su gabinete era a modo de lujosa celda donde vivía voluntariamente recluida, y en vez de imagen sagrada ante la cual prosternarse de continuo, tenía a su hijo. Evitaba, hasta donde le era posible, recibir visitas, y no pagaba ninguna. La conversación de las amigas se le hizo enojosa, pareciéndole que cuanto oía referir estaba plagado de burlas embozadas y alusiones a su situación. La soledad le producía menos tristeza que el choque de sus ideas con las ideas del prójimo, porque en fuerza de verse desdichada llegó a ser pesimista.</p>
@@ -1700,7 +1725,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0158_chap27">
-				<head>- XXVII -</head>
+				<head xml:id="ne0158_head_026">- XXVII -</head>
 				<p>Hallábanse una mañana Fernando y Plácida en el gabinete de su casa, él en traje de calle, dispuesto para salir, ella en ligeras y elegantes ropas de levantar, cuando entró la doncella diciéndoles que acababa de llegar el señor Pascual, deseoso de hablar con la señorita.</p>
 				<p>El señor Pascual era uno de los varios arrendadores de tierras de Susana que, a partir de la muerte de ésta, venían a entregar dinero a Plácida, por lo cual, presumiendo ella que trajese alguna cantidad, y esquivando recibirla en presencia de su marido, contestó a la muchacha:</p>
 				<p>-Ahora no puedo recibirle; dile que haga el favor de volver esta tarde.</p>
@@ -1863,7 +1888,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0158_chap28">
-				<head>- XXVIII -</head>
+				<head xml:id="ne0158_head_027">- XXVIII -</head>
 				<p>La noche de aquel mismo día fue apacible y serena. Acababan de dar las nueve. Por bajo de los balcones de la casa sonaban juntamente el crujir de la arena pisada en los paseos de la Castellana, el restallar de látigos, los pitos de los tranvías y el vocear de algún vendedor de periódicos.</p>
 				<p>El niño dormía tranquilo en una camita colocada junto a la grande de su madre, hasta que ella al acostarse le cogiese consigo.</p>
 				<p>Plácida estaba tumbada en una butaca, ladeado el cuerpo y puesta la cara sobre el respaldo humedecido con sus lágrimas. De cuando en cuando sollozaba y gemía, esforzándose en contener el aliento para no despertar al pequeñuelo.</p>
@@ -1878,7 +1903,7 @@
 				<p>-«¡Nunca..., nunca!»</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0158_chap29">
-				<head>Conclusión</head>
+				<head xml:id="ne0158_head_028">Conclusión</head>
 				<p>Han pasado cinco años.</p>
 				<p>Al caer la tarde, tras un hermoso día de invierno, comienza a soplar el viento helado y sutil del Guadarrama; <seg rend="italic">el aire de Madrid, que mata a un hombre y no apaga un candil. No </seg>se arremolinan los papeles esparcidos por el suelo, no se alza un átomo de polvo; pero las bestias que arrastran carros y carruajes lanzan por el hocico resoplidos tibios que empañan la diafanidad del ambiente con fugaces nubecillas de vaho. Las gentes andan tan presurosas que parecen perseguidas de cerca; los hombres, embozados en sus capas o cruzando los brazos para oprimir la chaqueta contra el cuerpo; las mujeres, según su clase y condición, envueltas en soberbios abrigos o arrebujadas en peludos mantones. Entre la incierta luz crepuscular, principian a lucir las temblorosas llamas del gas de los faroles. Las vidrieras de los cafés y los escaparates de las tiendas despiden a trechos grandes bocanadas de claridad que iluminan hasta el centro de la calle. Arrecia el frío, y algún mendigo sin techo a que acogerse se refugia en el hueco de una puerta, tendiendo la aterida mano a los que, más dichosos, alargan el paso estimulados con la esperanza de la comida y la familia que les aguarda en el hogar.</p>
 				<milestone unit="section"/>

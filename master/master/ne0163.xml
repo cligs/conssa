@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Arroz y Tartana</title>
-				<title type="sub"></title>
+				
 				<title type="short">Arroz</title>
-				<title type="idno">
-					<idno type="viaf">308552181</idno></title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1550</measure>
@@ -139,15 +131,55 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0163</idno>
+						<idno type="cligs">ne0163</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg,
-					<date when="2005"></date>, <idno>16413</idno>, <ref target="http://www.gutenberg.org/ebooks/16413"/>.</bibl>
-				<bibl type="print-source">Plaza and Janes SA, Barcelona
-					<date when="1978"></date></bibl>
-				<bibl type="edition-first"><date when="1894">1894</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Arroz y Tartana</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/308552181/">308552181</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg,
+					<date when="2005"/>, <idno>16413</idno>, <ref target="http://www.gutenberg.org/ebooks/16413"/>.</bibl>
+					<bibl type="print-source">Plaza and Janes SA, <pubPlace>Barcelona</pubPlace>
+					<date when="1978"/></bibl>
+					<bibl type="edition-first"><date when="1894">1894</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title>: 	<title type="sub">novela</title> <date when="1904">1904</date>, <publisher>La Novela Ilustrada</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1005558035" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1005558035"/> </bibl>
+						<bibl type="further-edition"><title type="main">Arroz y tartana</title>: 	<title type="sub">Novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445657790" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657790"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464267056" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464267056"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y Tartana</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="22640966X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=22640966X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y Tartana</title>: 	<title type="sub">(novela)</title> <date when="1930">1930</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1177392879" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177392879"/> </bibl>
+						<bibl type="further-edition"><title type="main">Arroz y Tartana</title> <date when="1943">1943</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires [u.a.]</pubPlace> 		<idno type="ppn" n="1140891049" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1140891049"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Tres novelas valencianas</title>: 	<title type="sub">Arroz y tartana, La barraca, Cañas y barro</title> <date when="1958">1958</date>, <publisher>Ed. Plenitud</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="350940010" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350940010"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Arroz y Tartana</title> <date when="1961">1961</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1182706649" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182706649"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="1961">1961</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="469030755" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469030755"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="1978">1978</date>, <publisher>Plaza &amp; Janés Editores</publisher> <pubPlace>Esplugas de Llobregat (Barcelona)</pubPlace> 		<idno type="ppn" n="1751597504" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1751597504"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="302857249" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=302857249"/> 		<idno type="isbn" n="842063350X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="2003">2003</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="77578785X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=77578785X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479517194" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479517194"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana. Flor de Mayo. La barraca. Entre naranjos</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="615813569" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=615813569"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="2011">2011</date>, <publisher>www.Linkgua.com</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="798536616" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=798536616"/> 		<idno type="isbn" n="9788498971231;9788498167542"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -158,6 +190,14 @@
 				<p>La protagonista es doña Manuela, una mujer casquivana, derrochadora y egoísta, que solo piensa en el dinero y el bienestar y en aparentar un nivel de vida que no puede mantener. Se casa con un hombre laborioso que llega a ser principal de las Tres rosas y muere consumido por la vida de dispendio que lleva su mujer. Ya viuda, doña Manual se vuelve a casar con un médico juerguista; juntos dilapidan toda su hacienda. Viuda de nuevo y arruinada, se entrega a un hombre que no ama, Antonio Cuadros, a quien había cedido la tienda. A la postre, la vemos abandonado por todos y consciente de su miseria materialy moral. Incluso ha provocado la muerte de su hijo Juanito, un muchacho tímido y enfermo que no puede soportar el haberla visto en la cama con don Antonio.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -188,7 +228,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela valenciana</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela valenciana</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -220,6 +260,7 @@
 		<revisionDesc>
 			<change when="2015-10-20" who="#jct">Initial TEI version.</change>
 			<change when="2015-12-18" who="#jct">New metadata.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,7 +268,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0163_chap1">
-				<head>I</head>
+				<head xml:id="ne0163_head_000">I</head>
 				<p>A las tres de la tarde entró doña Manuela en la plaza del Mercado, envuelto el airoso busto en un abrigo cuyos faldones casi llegaban al borde de la falda, cuidadosamente enguantada, con el limosnero al puño y velado el rostro por la tenue blonda de la mantilla.</p>
 				<p>Tras ella, formando una pareja silenciosa, marchaban el cochero y la criada: un mocetón de rostro carrilludo y afeitado que respiraba brutal jocosidad, luciendo con tanta satisfacción como embarazo los pesados borceguíes, el terno azul con vivos rojos y botones dorados y la gorra de hule de ancho plato, y a su lado una muchacha morena y guapota, con peinado de rodete y agujas de perlas, completando este tocado de la huerta su traje mixto, en el que se mezclaban los adornos de la ciudad con los del campo.</p>
 				<p>El cochero, con una enorme cesta en la mano y una espuerta no menor a la espalda, tenía la expresión resignada y pacienzuda de la bestia que presiente la carga. La muchacha también llevaba una cesta de blanco mimbre, cuyas tapas movíanse al compás de la marcha, haciendo que el interior sonase a hueco; pero no se preocupaba de ella, atenta únicamente a mirar con ceño a los transeúntes demasiado curiosos o a pasear ojeadas hurañas de la señora al cochero o viceversa. Cuando, doblando la esquina, entraron los tres en la plaza del Mercado, doña Manuela se detuvo como desorientada.</p>
@@ -370,7 +411,7 @@
 				<p>¡Cómo estaba el mundo! No había religión, orden ni autoridad, y... ¡claro! era imposible que una persona decente saliese a la calle sin que la pillería le diera que sentir.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0163_chap2">
-				<head>II</head>
+				<head xml:id="ne0163_head_001">II</head>
 				<p>En época pasada, aunque no remota, el Mercado de Valencia tenía una leyenda, que corría como válida en todos sus establecimientos, donde jamás faltaban testigos dispuestos a dar fe de ella.</p>
 				<p>Al llegar el invierno, aparecía siempre en la plaza algún aragonés viejo llevando a la zaga un muchacho, como bestezuela asustada. Le habían arrancado a la monótona ocupación de cuidar las reses en el monte, y lo conducían a Valencia para «hacer suerte», o más bien, por librar a la familia de una boca insaciable, nunca ahíta de patatas y pan duro.</p>
 				<p>El flaco macho que los había conducido quedaba en la posada de <seg rend="italic">Las Tres Coronas</seg>, esperando tomar la vuelta a las áridas montañas de Teruel; y el padre y el hijo, con los trajes de pana deslustrados en costuras y rodilleras y el pañuelo anudado a las sienes como una estrecha cinta, iban por las tiendas, de puerta en puerta, vergonzosos y encogidos, como si pidiesen limosna, preguntando si necesitaban un <seg rend="italic">criadico</seg>.</p>
@@ -487,7 +528,7 @@
 				<p>—Tu madre está loca—decía algunas veces a Juanito en la puerta de <seg rend="italic">Las Tres Rosas</seg>—. Si esto sigue más tiempo, todos iréis a pedir limosna. ¡Ah, qué cabeza...! ¡Parece imposible que sea mi hermana! Para ella lo principal es aparentar, y del mañana que se acuerde el diablo. Lo que yo digo: «arroz y tartana...» y trampa adelante.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0163_chap3">
-				<head>III</head>
+				<head xml:id="ne0163_head_002">III</head>
 				<p>El primer día del año, a las ocho de la mañana, Concha y Amparo ya habían abandonado el lecho, extraña diligencia en ellas, que por lo común no se levantaban hasta las diez.</p>
 				<p>Ligeritas de ropa a pesar de la estación, revoloteaban alegremente por su cuarto, que ofrecía el desorden del despertar, en torno de las dos camitas de inmaculada blancura, que en sus arrugadas sábanas guardaban el calor de los cuerpos jóvenes y ese perfume de salud y de vida que exhalan las carnes sanas y virginales.</p>
 				<p>Gorjeaban alegremente, como pájaros que despiertan, pero sus trinos no podían ser más vulgares.</p>
@@ -756,7 +797,7 @@
 				<p>—Bueno; seremos novios... pero ¡por Dios! que nada sepa la mamá.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0163_chap4">
-				<head>IV</head>
+				<head xml:id="ne0163_head_003">IV</head>
 				<p>El Carnaval de aquel año fue muy alegre para la familia de doña Manuela.</p>
 				<p>Las niñas se divirtieron. Rafaelito era socio de todos los círculos distinguidos y decentes donde se baila, mientras arriba, en una habitación con luces verdes, guardada y vigilada como antro de conspiradores, rueda la ruleta con sus vivos colorines o se agrupan los aficionados en torno de las cuatro cartas del <seg rend="italic">monte</seg>.</p>
 				<p>¡Qué noches aquéllas de emociones, de nerviosas alegrías, de mareos voluptuosos, y después de aplastamiento, de brutal cansancio...! Juanito era el encargado de abrir la puerta cuando la familia volvía del baile. En la madrugada, cerca de las cuatro, oía chirriar los pesados portones, entraba el carruaje en el patio, con gran estrépito, y él saltaba de la cama metiéndose los pantalones. La entrada de la familia le deslumbraba, sintiendo el infeliz una impresión de vanidad. Las hermanitas, vestidas unas veces con trajes de sociedad, obra de una modista francesa, y que todavía estaban por pagar; graciosamente disfrazadas otras de labradoras, de <seg rend="italic">pierrots</seg> o de calabresas; Rafael, de etiqueta, embutido en un gabán claro, tan corto de faldones que parecía una americana; y la mamá satisfecha del éxito alcanzado por sus niñas, y a pesar del cansancio, sonriente y majestuosa con su vestido de seda, que crujía a cada paso, y encima el amplio abrigo de terciopelo, Juanito contemplaba con el cariño de un padre este desfile desmayado que iba en busca de la cama, arrojando al paso en las sillas los adornos exteriores. La mamá era siempre para él un ídolo, un ser superior, y los hermanos, al verlos tan elegantes, le hacían recordar la época en que él, pequeño, pero avispado por el desvío maternal, les servía de niñera cuidadosa, llevándolos en sus brazos y sufriendo con sublime abnegación sus infantiles caprichos.</p>
@@ -910,7 +951,7 @@
 				<p>Y el poeta, envidiando su alegría, seguía en su puesto, iluminado por la última crepitación de la hoguera, desfallecido de hambre y de dolor, llorando de veras ahora que comenzaba a verse en la obscuridad, esperando algo vago e indeterminado, sin fuerzas para hacer nada y estremeciéndose al oír aquella voz tenue como un hilillo de seda, que se quebraba al llegar a lo más alto de la romanza, ahogándola con sus aplausos los complacientes convidados de la mamá.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0163_chap5">
-				<head>V</head>
+				<head xml:id="ne0163_head_004">V</head>
 				<p>Juanito era feliz. Próximo al ocaso de su juventud, a los malditos treinta años de que hablaba Espronceda, en vez de tristes desengaños experimentaba la alegría de saber que en el mundo hay algo más grato que adorar a la mamá como un ídolo y plegarse a todos los caprichos de los hermanitos.</p>
 				<p>El entusiasmo de la juventud, el ansia de vivir, manifestábanse en él con extraordinaria fuerza, como frutos tardíos del árbol de su vida, que había pasado invierno tras invierno sin conocer hasta ahora la primavera.</p>
 				<p>Al reunir y ordenar sus recuerdos, no se daba cuenta de cómo había ocurrido su transformación. Sin duda, el amor era más fuerte que su característica timidez. En la soledad, al recordar a Tónica, avergonzábase como el que ha cometido una acción punible; las palabras intencionadas que había deslizado en la conversación martilleábanle después los oídos, y tan pronto las consideraba ridículas como exageradamente audaces.</p>
@@ -1062,7 +1103,7 @@
 				<p>—Mira, hijo mío, quince mil pesetas justas no han de ser. Puedes firmar por dieciséis mil. No digas que no, rico mío. Completa tu sacrificio. Necesito algún dinerillo para pagar ciertas cuentas, y además, las Pascuas vamos a pasarlas en nuestra casa de Burjasot; vendrán amigos, y hay que quedar bien. Ante todo, el decoro de la familia y no caer en el ridículo. Conque no tuerzas el gesto, niñito mío; quedamos en que serán dieciséis mil.... ¡Ay, qué peso me has quitado de encima...!</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0163_chap6">
-				<head>VI</head>
+				<head xml:id="ne0163_head_005">VI</head>
 				<p>Había abandonado la mesa la familia y aún duraban los elogios a Visanteta por el mérito de la <seg rend="italic">paella</seg> que les había servido, cuando comenzaron a llegar los amigos.</p>
 				<p>—Mamá—gritaba Amparito desde la puerta de la calle—, las de López, que vienen en su faetón. ¡Calle! El tranvía ha parado en la esquina.... ¡Si son «las magistradas»! ¡Ay, y también el papá de Andresito, guiando su <seg rend="italic">charrette</seg>...! ¡Si parece que se han dado cita! ¡Todos a un tiempo...! ¡Venid, Conchita, mamá! ¡Mirad qué guapo está el señor Cuadros guiando su cochecito! ¡Parece que en toda su vida no haya hecho otra cosa...!</p>
 				<p>Y los convidados de doña Manuela entraron en la casa, confundiéndose unas familias con otras, saludándose las mujeres con un tiroteo de besos y elogiando todas las cualidades de la «posesión» que la viuda de Pajares tenía en Burjasot. Era un <seg rend="italic">chalet</seg> que parecía escapado de una caja de juguetes; un edificio construido por contrata, tan bonito como frágil, con sus tejados rojos y escalinatas con jarrones de yeso, situado en el centro de un jardincillo excavado en las rocas, con dos docenas de árboles tísicos que gemían melancólicamente, martirizadas sus raíces por la capa de dura piedra que encontraban a pocos palmos del suelo. A pesar de su aspecto de decoración de ópera, que tanto entusiasmaba a doña Manuela, el tal <seg rend="italic">chalet</seg> no pasaba de ser una casa de vecindad, enclavado como estaba entre otras construcciones de la misma clase, todas frágiles y pretenciosas, con sus jardincillos como sábanas, y sobre la verja, en letras doradas, los campanudos títulos de Villa-Teresa, Villa-María, etcétera, según fuese el nombre de la propietaria.</p>
@@ -1187,7 +1228,7 @@
 				<p>Juanito se fastidiaba.... ¡Bah! Aprensiones de viejo.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0163_chap7">
-				<head>VII</head>
+				<head xml:id="ne0163_head_006">VII</head>
 				<p>Los domingos, a las siete de la mañana, salía Juanito de su casa con el alegre desembarazo del colegial que en día de fiesta todo lo ve de color de rosa.</p>
 				<p>Iba estirado, satisfecho dentro de su traje de lanilla inglesa, algo incómodo por el cuello de la camisa almidonado y de bordes punzantes; pero le bastaba lanzar una mirada a sus botas de charol y a la corbata, siempre de colores vivos, para darse por satisfecho de todas las molestias que le causaba su transformación. La mamá y las hermanitas le contemplaban con asombro. ¿Qué creían ellas? El Juanito de ahora estaba muy lejos del de los tres meses antes. Ya era hora de dedicar a rodillas de cocina las levitas viejas de su padrastro el doctor Pajares, prendas que la mamá le había hecho usar para mayor economía.</p>
 				<p>El amor había transformado a Juanito. Su alma vestía también nuevos trajes, y desde que era novio de Tónica, parecía como que despertaban sus sentimientos por primera vez y adquiría otros completamente nuevos. Hasta entonces había carecido de olfato. Estaba segurísimo de ello; y si no, ¿cómo era que todas las primaveras las había pasado sin percibir siquiera aquel perfume de azahar que exhalaban los paseos y ahora le enloquecía, enardeciendo su sangre y arrojando su pensamiento en la vaguedad de un oleaje de perfumes? No era menos cierto que hasta entonces había estado sordo. Ya no escuchaba el piano de sus hermanas como quien oye llover; ahora la música le arañaba en lo más hondo del pecho, y algunas veces hasta le saltaban las lágrimas cuando Amparito se arrancaba con alguna romanza italiana de esas que meten el corazón, en un puño.</p>
@@ -1262,7 +1303,7 @@
 				<p>Habían dudado un poco antes de entregar sus ahorros, pero ahora sentían una dulce confianza pensando que quedaban arriba, en manos de un hombre a quien todos los días nombraban los periódicos con los títulos de «acaudalado y filantrópico banquero».</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0163_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0163_head_007">VIII</head>
 				<p>La vela del Corpus, con sus anchas listas azules y blancas, sombreaba desde los altos mástiles la plaza de la Virgen.</p>
 				<p>La muchedumbre, endomingada, agitábase en torno de las <seg rend="italic">rocas</seg>, admirando una vez más las carrozas tradicionales que todos los años salían a luz: pesados armatostes lavados y brillantes, pero con cierto aire de vetustez, luciendo en sus traseras, cual partida de bautismo, la fecha de construcción: el siglo XVII.</p>
 				<p>Recordaban aquellas enormes fábricas de madera pintada, con su lanza semejante a un mástil de buque y sus ruedas cual piedras de molino, las carrozas sagradas de los ídolos indios o los carromatos simbólicos que güelfos y gibelinos llevaban a sus combates.</p>
@@ -1369,7 +1410,7 @@
 				<p>Sólo habían transcurrido algunos meses, pero estaban ya lejanos para Cuadros aquellos tiempos en que el tendero de costumbres tranquilas y rutinarias se indignaba al saber que su hijo iba a los bailes y le esperaba tras la puerta empuñando fieramente la vara de medir.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0163_chap9">
-				<head>IX</head>
+				<head xml:id="ne0163_head_008">IX</head>
 				<p>A las cuatro de la tarde entraban las de Pajares en el paseo de la Alameda.</p>
 				<p>Era domingo, y la animación ruidosa y expansiva de los días festivos inundaba la acera izquierda del paseo. El tiempo era hermoso: una tarde de verano, con el cielo limpio de nubes, y en lo más alto, como un jirón de vapor tenue y apenas visible, la luna, esperando pacientemente que le llegase el turno para brillar. Las largas filas de rosales, los macizos de plantas, toda esa jardinería mutilada y corregida por las tijeras del hortelano, reverdecía con el soplo cálido de la tarde y se cubría de flores, uniendo sus simples perfumes a la estela de esencias que dejaban las señoras tras su paso.</p>
 				<p>Por el arroyo central daban vueltas y más vueltas, como arcaduces de noria, los carruajes alineados en interminable rosario. Las torres de los guardas erguían sus caperuzas de barnizadas tejas por encima de los árboles, y a los dos extremos del paseo, empequeñecidas por la distancia, destacábanse sobre el verde fondo las monumentales fuentes con sus figuras mitológicas ligeras de ropa. Era la hora en que el paseo adquiría su aspecto más brillante. A todo galope de los briosos caballos bajaban carretelas y berlinas, y por las aceras del paseo desfilaban lentamente, con paso de procesión, las familias endomingadas. Los verdes bancos no tenían ni un asiento libre. Un zumbido de avispero sonaba en el paseo, tan silencioso y desierto por las mañanas, y algunas familias ingenuas conversaban a gritos, provocando la sonrisa compasiva de los que pasaban con la mano en la flamante chistera, saludando con rígidos sombrerazos a cuantas cabezas asomaban por las ventanillas de los carruajes.</p>
@@ -1451,7 +1492,7 @@
 				<p>La pobre Teresa, al pensar que su antigua señora era la que había realizado tal milagro, atrayendo a su esposo a la buena senda, sentía tal gratitud, que no podía hablar de ella sin que se le saltaran las lágrimas. ¡Qué buena persona era doña Manuela! Ella únicamente había sabido catequizar al señor Cuadros.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0163_chap10">
-				<head>X</head>
+				<head xml:id="ne0163_head_009">X</head>
 				<p>Juanito vivía entregado a la agitación y la zozobra del que confía su porvenir a los caprichos del azar.</p>
 				<p>Él, tan metódico y cuidadoso de cumplir sus obligaciones, abandonaba la tienda para ir a la Bolsa en compañía de su principal, o a los lugares donde se reunían sus compañeros de explotación financiera. ¡Valiente cosa le importaba <seg rend="italic">Las Tres Rosas</seg>! Ya no quería ser dueño de la tienda. Las primeras ganancias, adquiridas con dulce facilidad, le habían cegado y sólo pensaba en ser millonario, en esclavizar la fortuna, riéndose ahora de aquellos tiempos en que soñaba con Tónica la existencia monótona y tranquila de rutinarios burgueses, amasando ochavo tras ochavo un capital para pasar tranquilamente la vejez.</p>
 				<p>Su novia, prácticamente, refrenaba sus entusiasmos financieros. No había que tentar a la fortuna; y ahora que se mostraba favorable, era una locura no retirarse a tiempo.</p>
@@ -1503,7 +1544,7 @@
 				<p>Juanito no tuvo tanta presencia de ánimo. Pálido, sudoroso, hablando y gesticulando como un sonámbulo, casi echó a correr sin despedirse de la familia. Iba al despacho del poderoso Morte, a aquella Meca de la fortuna, y sentía una inmensa extrañeza al ver que la gente no mostraba la menor impresión, que el cielo estaba azul, que todo se hallaba como siempre y no surgía la más leve señal exterior para hacer saber al mundo que el gran genio se había equivocado por primera vez aconsejando la baja.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0163_chap11">
-				<head>XI</head>
+				<head xml:id="ne0163_head_010">XI</head>
 				<p>La derrota fue completa.</p>
 				<p>A los dos días, ninguno de los bolsistas que tenían por oráculo al famoso don Ramón dudaba de ella. El mismo banquero confesaba que esta vez se había equivocado, aunque no por ello dejaba de sonreír, asegurando que lo mismo que había ocurrido una alza contra todas sus previsiones, podía sobrevenir una baja, pues no todos los tiempos son iguales.</p>
 				<p>Y aquellos hombres de fe inquebrantable acogían como risueña esperanza las ambiguas palabras del banquero, prestándoles esto cierta energía para sobrellevar el golpe. A todos los admiradores de don Ramón les había alcanzado la derrota; pero quien más sufría era el señor Cuadros, que de un golpe veía desaparecer todas las ganancias de su vida de bolsista.</p>
@@ -1672,7 +1713,7 @@
 				<p>Y cayó como un fardo sobre el mismo sofá en el que por la tarde había visto la arrugada chaqueta como impasible acusadora del adulterio.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0163_chap12">
-				<head>XII</head>
+				<head xml:id="ne0163_head_011">XII</head>
 				<p>Juanito se moría.</p>
 				<p>Toda la noche la pasó tendido en su cama como una masa inerte, con la pesada cabeza hundida en las sábanas, el rostro envejecido, la barba alborotada y los ojos cerrados.</p>
 				<p>El pecho elevábase acelerada y trabajosamente, como si dentro funcionara una válvula vieja, y en la alcoba sonaba sin interrupción un ronquido silbante, cual si a lo lejos estuviera una locomotora expeliendo el vapor de sus calderas. La familia pasó toda la noche junto a la cama del enfermo.</p>
@@ -1762,7 +1803,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN</head>
+				<head xml:id="ne0163_head_012">FIN</head>
 			</div>
 		</back>
 	</text>

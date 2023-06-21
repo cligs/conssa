@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El Papa del mar</title>
-				<title type="sub"></title>
+				
 				<title type="short">PapaMar</title>
-				<title type="idno">
-					<idno type="viaf">308701046</idno></title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1513</measure>
@@ -139,13 +131,46 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0267</idno>
+						<idno type="cligs">ne0267</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.1, adruki, <date when="2014">2014</date>, <idno>6205</idno>, <ref target="https://www.epublibre.org/libro/detalle/6205"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1925">1925</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El Papa del mar</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/308701046/">308701046</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.1, adruki, <date when="2014">2014</date>, <idno>6205</idno>, <ref target="https://www.epublibre.org/libro/detalle/6205"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1925">1925</date><idno source="k10plus" type="ppn" n="1116169940" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116169940"/><idno source="k10plus" type="ppn" n="467898642" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467898642"/><idno source="k10plus" type="ppn" n="269395830" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269395830"/><idno source="k10plus" type="ppn" n="195088107" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=195088107"/><idno source="k10plus" type="ppn" n="133536378" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133536378"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El papa del mar</title>: 	<title type="sub">Novela</title> <date when="1925">1925</date>, <publisher/> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1116169940" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116169940"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El papa del mar</title>: 	<title type="sub">novela</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="467898642" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467898642"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El papa del mar</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="269395830" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269395830"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El papa del mar</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="195088107" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=195088107"/> </bibl>
+						<bibl type="further-edition"><title type="main">El Papa del mar</title>: 	<title type="sub">Novela</title> <date when="1925">1925</date>, <publisher/> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="133536378" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133536378"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El papa del mar</title>: 	<title type="sub">(novela)</title> <date when="1927">1927</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464216656" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464216656"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos, La reina calafia, Novelas de la Costa Azul, La vuelta al mundo de un novelista, Novelas de amor y muerte, El papa del mar, En busca del gran kan, El caballero de la virgen, El fantasma de la alas de oro, Estudios literarios</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621554" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621554"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El papa del mar</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="305329065" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=305329065"/> 		<idno type="isbn" n="8420633828"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Papa del mar</title>: 	<title type="sub">1394-1423, El Papa Luna</title> <date when="2011">2011</date>, <publisher>V. García</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="688427375" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=688427375"/> 		<idno type="isbn" n="9788415182061"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +181,14 @@
 					<p>También es una novela romántica en este caso la vida y las peripecias de Claudio Borja, un moderno descendiente de aquel Papa testarudo, por desentrañar la historia de su ilustre antepasado, mientras intenta conquistar el amor de una bella y rica viuda argentina.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -185,7 +218,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela histórica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -214,6 +247,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -222,9 +256,9 @@
 		<body>
 
 			<div type="part">
-				<head>PRIMERA PARTE: LA CIUDAD DE LAS TRES LLAVES</head>
+				<head xml:id="ne0267_head_000">PRIMERA PARTE: LA CIUDAD DE LAS TRES LLAVES</head>
 				<div n="1" type="chapter" xml:id="ne0267_chap1">
-					<head>I - El Caballero Tannhäuser</head>
+					<head xml:id="ne0267_head_001">I - El Caballero Tannhäuser</head>
 					<p>Ella dudó un instante mientras exploraba mentalmente su pasado. Luego se apresuró a decir sonriendo, como si le regocijasen sus propias palabras:</p>
 					<p>—Lo conozco. Usted es <seg rend="italic">el caballero Tannhäuser</seg>, que tuvo amores con Venus.</p>
 					<p>Esto fue en el «Select Hotel» a las ocho de la noche. Claudio Borja, que la había observado de lejos durante la comida, abandonó su mesa para apostarse junto al <seg rend="italic">hall</seg>, y al verla llegar preguntó en español:</p>
@@ -315,7 +349,7 @@
 					<p>¡Ay!... Borja admiraba al cantor errante, envidiando su felicidad maldita. Era un enamorado sin esperanza de Venus Lilit, que ya no se digna mostrarse a los simples mortales.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0267_chap2">
-					<head>II - La Viuda del "Rey de los Campos"</head>
+					<head xml:id="ne0267_head_002">II - La Viuda del "Rey de los Campos"</head>
 					<p>Mientras Borja condensaba en un instante toda su vida anterior, tenía los ojos fijos en la dama argentina.</p>
 					<p>Había admirado su belleza al conocerla en casa de Bustamante, pero aquí en el hotel la veía de más cerca, sin las joyas y adornos, que aquella noche daban a su hermosura un brillo deslumbrador. Recordaba aún cierto collar de diamantes que había excitado la admiración y la envidia de las otras mujeres. Ahora sólo llevaba uno de perlas, de fulgor discreto sobre su carne, que aprecia tener la misma transparencia láctea. Su vestido, de elegante sencillez, era el único que había guardado su doncella en la maleta del automóvil para que la señora pudiese bajar al comedor cuando pernoctara en un hotel. Se adivinaba en toda su persona el tocado rápido de una viajera que ha llegado al caer la tarde y después del baño se acicala a toda prisa para ser vista únicamente por los otros compañeros de hospedaje y reanudar la marcha a la mañana siguiente. Olía a carne fresca recién sumergida, a jabón, a rápidas vaporizaciones de perfumes.</p>
 					<p>Claudio fue detallando con los ojos su hermosura, para explicarse la fuerza atractiva que parecía rodearla, como una aureola. Lo que inmediatamente llamaba la atención era la blancura de su tez, que hacía recordar la de la perla, la del marfil, la de todas las materias albas y luminosas que poseen un suave brillo interior. Nunca la había alterado con pinturas. Dedicaba indudablemente al mantenimiento de su belleza horas enteras, pero dicho trabajo lo disimulaba con discreta habilidad; sólo un poco de rojo en los labios, una ligerísima aureola azul en torno de los párpados, una sutil línea negra en sus comisuras.</p>
@@ -392,7 +426,7 @@
 					<p>—Estaba en París demasiado sola. Me aburría.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0267_chap3">
-					<head>III - La Gran Cautividad De Babilonia</head>
+					<head xml:id="ne0267_head_003">III - La Gran Cautividad De Babilonia</head>
 					<p>Siguiendo las indicaciones de su acompañante, Rosaura echó la cabeza atrás para abarcar con su vista la altura del monumento.</p>
 					<p>Un lado de la plaza estaba ocupado por una construcción enorme, robusta, asentada sobre el suelo con majestuosa pesadez, dejando adivinar la amplitud extraordinaria de sus muros. Todo era en este palacio-castillo de forma rectangular, de líneas rígidas, con esquinas que habían sido verticales y aparecían ahora dentelladas por las roeduras del tiempo o las huellas de los proyectiles de piedra que arrojaron las bombardas durante los sitios.</p>
 					<p>La arquitectura civil de la Edad Media no había producido en el interior de las ciudades nada semejante. Su masa formidable ocupaba una superficie de más de seis mil metros cuadrados con muros macizos y desnudos, verdaderos muros de fortaleza, sin las rasgaduras luminosas y coloreadas de los ventanales con vidrios. Las cortinas de piedra tendidas de una torre a otra tenían arcos prolongadísimos que empezaban a ras del suelo, remontándose audazmente hasta cerca de los matacanes y las almenas. Pero dichos arcos, estrechos como un hierro de lanza, los cegaba un segundo muro. Eran obras salientes de refuerzo, pilares unidos por ojivas, que parecían añadir nueva robustez al palacio-fortaleza. El sol y la atmósfera habían teñido de suave rojo muros, alamedas y torres.</p>
@@ -471,7 +505,7 @@
 					<p>El Pontificado de Aviñón era <seg rend="italic">la gran cautividad de Babilonia</seg>.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0267_chap4">
-					<head>IV - El Castillo de los Papas</head>
+					<head xml:id="ne0267_head_004">IV - El Castillo de los Papas</head>
 					<p>Subieron los peldaños algo roídos de una escalinata de piedra, atravesaron el arco profundo de la puerta principal, y otra más pequeña abierta a su derecha les dio acceso a un vasto salón con muros de sillería y techo abovedado que aún conservaba restos de viejas pinturas. Era el antiguo cuerpo de guardia del palacio, ahora antesala para los visitantes. Un mujer detrás de un mostrador ofrecía tarjetas postales, fotografías, volúmenes históricos, la pequeña e inevitable biblioteca que existe a la entrada de todo monumento.</p>
 					<p>Lentamente se fue amalgamando el grupo de curiosos venidos de diversas partes de la Tierra para visitar la antigua residencia de los papas. La bella criolla reconoció a muchos compañeros de hotel, vistos en la noche anterior. Poco después entraron algunas norteamericanas jóvenes, tal vez estudiantes que hacían una excursión por Europa; varios matrimonios franceses, gentes del Mediodía, admirando con patriótica vanidad las enormes dimensiones de este castillo tan celebrado por los poetas provenzales; dos sacerdotes protestantes, con plastrón negro cubriendo su camisa y una Guía abierta entre sus manos como si fuese un libro de oraciones; un <seg rend="italic">gentleman</seg> atlético, de cara redonda y afeitada, mirando ávidamente a todos lados en busca del extraordinario espectáculo que esperaba de esta visita, y un cura italiano, flacucho, de nariz picuda, cuyo perfil, según Borja, recordaba el de Dante, pero a través de un espejo deformatorio.</p>
 					<p>—Va usted a ver, querida señora, algo tan digno de interés como la antigua morada de los papas: el guía que la muestra.</p>
@@ -568,7 +602,7 @@
 					<p>—Para ser idealista —dijo lentamente—, para poder soñar, es preciso antes poder vivir... ¡Y nuestra vida nos obliga a tantas abdicaciones!...</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0267_chap5">
-					<head>V - El hijo de Micer Petracco</head>
+					<head xml:id="ne0267_head_005">V - El hijo de Micer Petracco</head>
 					<p>Dejaron atrás los baluartes rosados de Aviñón y el automóvil corrió a través de la campiña por un camino orlado de álamos.</p>
 					<p>Se alejaban de la cuenca del Ródano, y el vehículo subía insensiblemente el declive de las colinas que limitan su valle fluvial. Iban hacia el nacimiento del Sorges, afluente del Ródano que se pierde cerca de Aviñón, a la célebre fontana de Vaucluse, origen de este curso acuático, siempre claro y frío.</p>
 					<p>Borja habló a la señora de Pineda del hijo de mícer Petracco, como él llamaba al gran lírico italiano. Había nacido en Arezzo por un azar de la vida política de su padre, educándose luego en la tierra papal de Aviñón.</p>
@@ -669,7 +703,7 @@
 					<p>—¡Ah español! ¿Es que una mujer no puede ir a ninguna parte con un hombre sin que éste le hable de amor, exigiendo ser correspondido, lo mismo que un sultán que ha puesto sus ojos en una odalisca? ¿Es imposible que vivan en plácida tranquilidad, como dos amigos?... Le hablo muy seriamente, Claudio. Ha sido para mí una suerte encontrarlo en Aviñón. Me cuenta usted cosas muy interesantes; su conversación me hace olvidar otras preocupaciones; pero si continúa molestándome con esas tonterías de niño caprichoso, mañana a primera hora me marcho a la Costa Azul..., y no me verá más.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0267_chap6">
-					<head>VI - El nacimiento del Cisma</head>
+					<head xml:id="ne0267_head_006">VI - El nacimiento del Cisma</head>
 					<p>El nacimiento del Cisma Rosaura siguió con sus ojos a un grupo de viajeros, que atravesando la plaza del palacio subía por la escalinata de éste. Eran las diez de la mañana.</p>
 					<p>—Gente para nuestro amigo el felibre— dijo sonriendo.</p>
 					<p>El «idealista» va a empezar sus discursos ante los ventanales y entonará su canción a Magalí en la Gran Capilla. Borja acogió con un gesto de indiferencia el recuerdo del guía verboso. Estaba ocupado en explicar a su compañera cómo el sexto y el séptimo Papa se alejaron de Aviñón, dando origen sin quererlo, el último de los dos, a la larga pelea eclesiástica llamada el Gran Cisma de Occidente. Habían salida del hotel, por creer más oportuno el joven hablar de todo esto frente al palacio o paseando per los jardines que embellecen ahora el peñasco de Doms, árido y feo en otros siglos, situado entre la vivienda de los Pontífices y el Ródano. Las Grandes Compañías, tropas de mercenarios licenciados, representaban un peligro para los Pontífices. Saqueaban abadías y pueblos, y la ciudad del Ródano, famosa por sus riquezas, era el principal objeto de sus asechanzas. Para defenderla se veían obligados los Papas a mantener un ejército extraordinario, gastando además gran parte de sus rentas en construir fortalezas. Así habían surgido del suelo los hermosos baluartes de Aviñón.</p>
@@ -706,10 +740,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>SEGUNDA PARTE: LA GUERRA DE LOS TRES PAPAS</head>
+				<head xml:id="ne0267_head_007">SEGUNDA PARTE: LA GUERRA DE LOS TRES PAPAS</head>
 
 				<div n="7" type="chapter" xml:id="ne0267_chap7">
-					<head>I - De cómo el llamado "Papa de la Luna" se defendió cuatro años y medio en su palacio de Aviñón, acabando por vencer a los sitiadores</head>
+					<head xml:id="ne0267_head_008">I - De cómo el llamado "Papa de la Luna" se defendió cuatro años y medio en su palacio de Aviñón, acabando por vencer a los sitiadores</head>
 					<p>Atravesaron la plaza longitudinalmente, dejando atrás el palacio y ascendieron por una nueva cuesta orlada, de plantas floridas altos árboles. El antiguo peñasco de Doms, de cuya aridez se burlaba Petrarca, era ahora un jardín.</p>
 					<p>Sin interrumpir su marcha, continuó Borja describiendo al héroe de su libro. Era sobrio y virtuoso en medio de la corrupción general del clero. Llegaba a la silla de los Pontífices con gran fama de polemista, muy versado en el Derecho canónico. Su vida irreprochable le hacía destacarse con singular relieve sobre los hombres de su época.</p>
 					<p>—Hasta sus adversarios reconocían los defectos de este varón tenaz como simples excesos de magníficas cualidades. Su habilidad política degeneró en retorcida astucia, su energía se mostraba inflexible, hasta convertirse en terco empeño. La independencia de su carácter, su celosa dignidad personal, se transformaron muchas veces en un orgullo insoportable para los que le rodeaban.</p>
@@ -806,7 +840,7 @@
 					<p>—Ya se fue Don Pedro de Luna para siempre de Aviñón. ¿No le parece, Claudio, que ha llegado la hora de que también nos vayamos nosotros?...</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0267_chap8">
-					<head>II - Las navegaciones de la flota papal</head>
+					<head xml:id="ne0267_head_009">II - Las navegaciones de la flota papal</head>
 					<p>Estaban los dos ante una fortaleza de sillares grises oscurecidos por el tiempo. Eran muros robustos y ásperos uniendo torres que tenían en su parte superior grandes ventanas ojivales, completamente abiertas. Una fila de almenas que no habían sido construidas como adorno arquitectónico —verdaderas almenas de guerra— seguía las líneas altas y bajas de torreones y murallas. Esta fortaleza era un templo. Las ojivas de las dos torres principales las ocupaban varias campanas inmóviles.</p>
 					<p>Rosaura y Claudio acababan de visitar la iglesia de la antigua abadía de San Víctor: tres naves góticas con sepulcros. También habían descendido a sus criptas, que databan de los primeros siglos del cristianismo, cuando San Víctor murió mártir de los habitantes paganos de Marsella.</p>
 					<p>A sus espaldas se extendía el Puerto Viejo, repleto de embarcaciones, algunas de formas arcaicas. En su boca funcionaba un gigantesco transbordador, deslizándose de una orilla a otra, sobre las aguas que en pasados siglos estaban obstruidas por una cadena. Más allá del Puerto Viejo se extendía, siguiendo la costa, en un espacio de kilómetros y kilómetros, la sucesión de puertos nuevos, donde venían a anclar grandes transatlánticos y buques de carga de todos los mares del planeta.</p>
@@ -883,7 +917,7 @@
 					<p>Luego se alejó con paso enérgico y murmullos de protesta, cual si le volviese la espalda para siempre.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0267_chap9">
-					<head>III - Maestro Vicente</head>
+					<head xml:id="ne0267_head_010">III - Maestro Vicente</head>
 					<p>Ella bajó a las cinco. Se aburría en su habitación, completamente sola. Ni siquiera tenía el recurso de conversar con aquella doméstica que la acompañaba siempre en sus viajes.</p>
 					<p>Al sentarse junto a un velador, no le produjo extrañeza ver cómo se aproximaba Borja con aire humilde y suplicante. La estaba esperando para implorar su perdón. Como ella sabía de antemano lo que él pensaba decir, cortó sus palabras con un ademán de reina clemente:</p>
 					<p>—No hable. Todo queda olvidado si promete que no volverá a repetirse. En realidad, no se repetirá, pues es difícil que tenga usted ocasión para ello. Ya no hay nada de este viaje de que hablamos durante el almuerzo. ¡Qué disparate viajar con un hombre tan poco seguro!...</p>
@@ -987,7 +1021,7 @@
 					<p>Vieron los dos al señor Bustamante, un Bustamante verdadero, que entraba seguido de Estela y otra señora, tía de ésta, la cual hacía oficios de madre y regentaba en Madrid la casa del gran hombre.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0267_chap10">
-					<head>IV - Aparece por primera vez el General-Doctor</head>
+					<head xml:id="ne0267_head_011">IV - Aparece por primera vez el General-Doctor</head>
 					<p>El señor Bustamante se mostró menos sorprendido que Borja. Sólo al reconocer a la viuda de Pineda hizo un gesto de asombro, y, después de saludarla, dijo al joven:</p>
 					<p>—Veo que has recibido pronto el telegrama que te enviamos desde Barcelona. No esperaba que vinieses de Aviñón hasta la noche.</p>
 					<p>Borja balbució para ocultar su confusión y hacer creer al mismo tiempo que había recibido el despacho.</p>
@@ -1074,7 +1108,7 @@
 					<p>—Sin duda está esperando una carta de Urdaneta pidiéndole perdón para reconciliarse una vez más, y la carta no llega. Casi estoy seguro de que ha reñido con el <seg rend="italic">general-doctor</seg>.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0267_chap11">
-					<head>V - El alba del Protestantismo</head>
+					<head xml:id="ne0267_head_012">V - El alba del Protestantismo</head>
 					<p>Era cerca de mediodía cuando Rosaura bajó al salón del hotel. Borja la esperaba hojeando sin interés diarios y revistas algo atrasados que llenaban una mesa, y se apresuró a saludarla.</p>
 					<p>Había despedido en la estación a don Arístides y su familia. El tiempo era malo. Empezaba a soplar el mistral, modificando la fisonomía de Marsella.</p>
 					<p>Los dueños de los cafés de la Cannebière parecían capitanes de buque ordenando una maniobra. Sus tripulaciones de camareros amarraban los toldos con cabrias y cuerdas iguales a las de los barcos de vela; luego aseguraban con puntales las mamparas de vidrio de las terrazas, para que no las derribase el huracán. Sobre las aguas oscuras del Puerto Viejo danzaban con iguales vaivenes las embarcaciones grandes y pequeñas. El viento extraía polvo y papeles de los rincones de las calles, haciéndolos girar en espiral. Sonaban como disparos los golpes de las persianas al cerrarse. Y toda esta violencia instantánea de ciclón contrastaba con la augusta serenidad del cielo, intensamente azul, barrido de nubes.</p>
@@ -1178,10 +1212,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Tercera parte: EN EL ARCA DE NOÉ</head>
+				<head xml:id="ne0267_head_013">Tercera parte: EN EL ARCA DE NOÉ</head>
 
 				<div n="12" type="chapter" xml:id="ne0267_chap12">
-					<head>I - Yo te hice lo que eres y tu me envías al desierto</head>
+					<head xml:id="ne0267_head_014">I - Yo te hice lo que eres y tu me envías al desierto</head>
 					<p>Se detuvo en Perpiñán, como si le faltasen fuerzas para ir más allá de la frontera, abandonando el país de vivía Rosaura.</p>
 					<p>Una parte de la noche la pasó en el hotel, escribiendo una carta de varios pliegos. La había empezado con el firme propósito de romperla después de escrita. Era una necesidad literaria de colocar sobre el papel lo que había venido pensando desde Marsella, para leérselo luego a sí mismo. Mas, una vez terminada la carta, se acostó, dejándola sobre la mesa. La rompería al día siguiente.</p>
 					<p>Al despertar volvió a leerla, la metió en un sobre y acabó echándola al correo, dirigida a madame Pineda, en su casa de la Costa Azul.</p>
@@ -1262,7 +1296,7 @@
 					<p>—Decid esto a vuestro rey: «Yo te hice lo que eres, y tú me envías al desierto.»</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0267_chap13">
-					<head>II - Donde los cuervos del Concilio entran en el Arca de Noé y se habla de ciertas Hostias doradas, rellenas de miel y de arsénico</head>
+					<head xml:id="ne0267_head_015">II - Donde los cuervos del Concilio entran en el Arca de Noé y se habla de ciertas Hostias doradas, rellenas de miel y de arsénico</head>
 					<p>Al abrir Borja la pequeña ventana de su habitación vio el mar casi a sus pies, teñido de rosas por los arreboles del amanecer.</p>
 					<p>Estaba en Peñíscola. Quince días había necesitado para llegar a ella, deteniéndose en todas las ciudades donde vivió el Papa Luna durante el último período de su agitada historia.</p>
 					<p>No sentía prisa de llegar al término de su viaje. En Peñíscola moría el nonagenario Pontífice y terminaba él su libro. Más allá iba a crearse en su existencia un vacío que le inspiraba cierto miedo.</p>
@@ -1363,7 +1397,7 @@
 					<p>Sobre su cuerpo nonagenario no hacían mella los años ni las asechanzas de los hombres. Parecía que el Papa navegante fuese a ser eterno como el mar.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0267_chap14">
-					<head>III - De cómo la Señora de Pineda, al aburrirse en la Costa Azul, hizo un pequeño rodeo en su camino para volver a París</head>
+					<head xml:id="ne0267_head_016">III - De cómo la Señora de Pineda, al aburrirse en la Costa Azul, hizo un pequeño rodeo en su camino para volver a París</head>
 					<p>Una ancha avenida de colores descendía hasta el Mediterráneo. Era una sucesión de mesetas floridas rojas, azules, violeta, amarillo oro, que venían a terminar en las rocas de la costa.</p>
 					<p>Más allá del arranque de esta cascada multicolor, un vasto jardín esparcía sus frondas, tamizando el azul del mar y el cielo a través de sus columnatas de troncos, que entrecruzaban, como lianas, rosales serpenteantes. Sobre su eterno fondo verde resaltaba la blancura marmórea de fontanas y estatuas.</p>
 					<p>El sol descendiendo hasta el suelo en jirones de luz, despertaba una vida de inquietos murmullos. Flotaban las mariposas en el espacio como flores de la atmósfera; sonaba un lejano e insistente arrullo de palomas invisibles; en los tazones de las fuentes huían los peces de oro y bermellón, perseguidos por sus propias sombras color de ébano.</p>
@@ -1477,7 +1511,7 @@
 					<p>—Si; tal vez existe cierta semejanza, sobre todo en su muerte. Los dos, luego de procurar al mundo e inspirar temores desde su retiro, se extinguieron en silencio, momentáneamente olvidados.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0267_chap15">
-					<head>IV - En el arenal donde quemaron al fraile por "<seg rend="italic">envenenador y nigromante</seg>"</head>
+					<head xml:id="ne0267_head_017">IV - En el arenal donde quemaron al fraile por "<seg rend="italic">envenenador y nigromante</seg>"</head>
 					<p>Los amigos que tenía Borja en Peñíscola, el médico y el secretario municipal, subieron a la fortaleza atraídos por la noticia de esta visita. A los pocos minutos buscaron un pretexto para retirarse, satisfecha ya su curiosidad.</p>
 					<p>Sentíanse intimidados en presencia de esta gran señora, a la que no sabían qué decir. Balbucían, a pesar de la sonrisa y las miradas amables con que acompañaba ella sus preguntas. Los dos se preocuparon de buscar el sitio donde podría almorzar la elegante forastera. No debía ser dentro de Peñíscola. Consideraban imposible que se sentase a la mesa en una de las casas del pueblo, sin otro horizonte que la pared de enfrente, en una calle angosta, y teniendo que sufrir los enjambres pegajosos de insectos.</p>
 					<p>Resultaba mejor para dicha instalación la lengua de arena ocupada por los pescadores. Y partieron ambos para disponer lo necesario, deseosos al mismo tiempo de verse a solas y poder comentar dicha visita. Iban a apoderarse de los langostinos más grandes que hubiesen traído las barcas. En Peñíscola era inadmisible una comida sin estos mariscos, célebres en toda España.</p>
@@ -1585,7 +1619,7 @@
 					<p>—Don Claudio, si piensan ir a Castellón, váyanse pronto. El cielo amenaza tormenta.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0267_chap16">
-					<head>V - ¡Santa Bárbara Bendita!...</head>
+					<head xml:id="ne0267_head_018">V - ¡Santa Bárbara Bendita!...</head>
 					<p>Volvió el automóvil a cabecear en el camino de las marismas, dando saltos violentos sobre sus muelles. Atravesaron Benicarló siguiendo la carretera que va a Castellón y Valencia. Eran las cinco de la tarde, y parecía que estuviese próximo el anochecer.</p>
 					<p>Dudaba Borja sobre la conveniencia de continuar el viaje, pero su compañera se mostró más animosa, en vista del buen estado del camino. Mucho antes que cerrase la noche habrían llegado a Castellón. Y siguieron adelante.</p>
 					<p>Quince minutos después los inmovilizó un ligero incidente. Una de las ruedas había sido atravesada por un clavo perdido entre el polvo de la carretera.</p>

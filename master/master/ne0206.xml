@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Cleopatra Pérez</title>
-				<title type="sub"></title>
+				
 				<title type="short">Cleopatra</title>
-				<title type="idno">
-					<idno type="viaf">bimo0000768084</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1129706</idno>
-					<idno type="viaf">42728255</idno>
-					<name type="short">Munilla</name>
-					<name type="full">José Ortega Munilla</name>
+					<name type="short" ref="#Munilla"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">959</measure>
@@ -140,13 +131,42 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2017">2017</date>
-				<idno type="cligs">ne0206</idno>
+						<idno type="cligs">ne0206</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#abbyy" subtype="html"><date when="2017">2017</date>, Abbyy FineReader.</bibl>
-				<bibl type="print-source">Ed. de Juan Ignacio Ferreras, <date when="1976">1976</date>, Ediciones Cátedra, Madrid.</bibl>
-				<bibl type="edition-first"><date when="1884">1884</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Cleopatra Pérez</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/bimo0000768084/">bimo0000768084</idno>
+				</idno>
+				</title>
+					<author xml:id="Munilla">
+						<name type="full"><forename>José</forename> <surname>Ortega Munilla</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9725 - IO 9726">IO 9725 - IO 9726</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/122764641">122764641</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3186502/">Q3186502</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1129706.html">XX1129706</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/42728255/">42728255</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#abbyy" subtype="html"><date when="2017">2017</date>, Abbyy FineReader.</bibl>
+					<bibl type="print-source">Ed. de Juan Ignacio Ferreras, <date when="1976">1976</date>, Ediciones Cátedra, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first"><date when="1884">1884</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cleopatra Pérez</title>: 	<title type="sub">relación contemporánea</title> <date when="1890">1890</date>, <publisher>Sáenz de Jubera Hermanos</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464928761" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464928761"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cleopatra Pérez</title> <date when="1976">1976</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039153649" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039153649"/> 		<idno type="isbn" n="8437600650"/></bibl>
+						<bibl type="further-edition"><title type="main">Cleopatra Pérez</title> <date when="1982">1982</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="440206235" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=440206235"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cleopatra Pérez</title> <date when="1982">1982</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="043481337" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043481337"/> 		<idno type="isbn" n="8437600650"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cleopatra Pérez</title> <date when="1993">1993</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227009452" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227009452"/> 		<idno type="isbn" n="8437600650"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +176,14 @@
 				<p>Es truculenta y escaborsa. La protagonista es una huérfana que cae en los abismo de la prostitucuión de la mano de doña Leticia. Tiene un hijo, Valentín, fruto de sus amores con el duque de Ripamilán. EL niño va a parar a la inclusa; Cleopatra se desentiende por completo de él hasta que el viejo duque muere y lo nombra heredero. Comienza aquí la lucha por los intereses materiales ya que los protectores de Valentín se niegan a devolverlo. La ley favorece a la madre y el muchacho se ve inmerso en un mundo deslibrante, de aparente lujo ya que en el fondo CLeopatra está devorada por las deudas y los usureros. Su frustrante experiencia amorosa con la prostituta Virginia, sus dificultades económicas que le arrastran incluso al robo, y la degradación de su propia conducta y del ambiente que le rodea, llevan a Valentín al suicidio.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9725" key="IO 9725" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -186,7 +214,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela naturalista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela naturalista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.mentioned" resp="HdLE">True</term>
@@ -223,6 +251,7 @@
 		<revisionDesc>
 			<change when="2017-05-03" who="#jct">Initial TEI version.</change>
 			<change when="2017-05-04" who="#jct">Metadata added.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -230,7 +259,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0206_chap1">
-				<head>I. Última encarnación de la reina de Egipto</head>
+				<head xml:id="ne0206_head_000">I. Última encarnación de la reina de Egipto</head>
 				<p>En la decadencia triste de la alegría humana a que principalmente se debe el aspecto fúnebre de las fiestas de Carnestolendas, parécenos desvaído cuadro de lejanas costumbres aquel que representa a Madrid electrizado por las corrientes saturnalescas que permite dentro de la Religión Cristiana el influjo de Quasimodo. Sin embargo, lo cierto es que para hallarnos en el Madrid de las aristocráticas Comparsas, de las infinitas estudiantinas formadas por estudiantes de verdad, de las gentes cultas y principales que se dignan prescindir, por un momento, de la seriedad de su condición y cubrirla con el raso del antifaz; para hallarnos con este Madrid engalanado con paganos oropeles, enloquecido por ruidosa alegría, trasfor-mado por un remozamiento tan pasajero como febril e intenso, no hay que retroceder muchos años. Ya era la Puerta del Sol lo que hoy es; y si aún no estaba convertida en un cocherón de tranvías, cientos de coches la llenaban de ruido y peligros; ya había empezado a sus-tituit el parisién sombrero a la mantilla española; ya lucía el gas en los faroles públicos y en los mecheros de las tiendas; ya había dejado de ser Madrid el poblachón más grande y pretencioso de las Castillas, para convertirse en una capital de nación civilizada.</p>
 				<p>Al trote de dos bestias andaluzas, finas de remos, de cabeza acarnerada, y, en ella, ojo inquieto y sanguíneo, iba una berlina del más elegante corte, y dentro una máscara, cuyo rostro ocultaba el embozo de seda roja de no sé qué extraño disfraz. Por encima de este rebocillo, que a duras penas sostenía, sirviéndole de armadura, el brazo de la máscara, veíase el comienzo de una nariz que, empezando tan bien, no podía menos de concluir en maravilloso remate; y algo centelleante al mismo tiempo que sedoso, algo que era luz y suavidad, una mirada de ojos negros y unas cejas tan negras como los ojos, sobre los cuales se alzaba una frente de ese matiz semi-moreno, se-mi-rosado, color de oro viejo, color de trigo limpio, ni muy grande ni muy pequeña, aunque entonces la hacían parecer más breve los rizados cabellos, dispuestos en original peinado por causa del disfraz; un gorrito de raso, puntiagudo, de forma de cono truncado, de cuya altura pendían cintas y cascabeles, daban término a la máscara. Destacábase sobre el acojinado raso de la berlina, blanco como las palomas que lo son, y se comprendía, por lo extremado y coqueto del lujo del coche, la principalidad y opulencia de quien lo ocupaba. El cochero era también de lo mejor que empuña riendas en Madrid, alto, esbelto, de elegancia británica, inmóvil y espetado en su asiento, donde regía los movimientos vehementísimos de las jacas con aplomo y solemnidad. Lacayo no lo llevaba la berlina, y así, con haber descrito lo que descrito queda, podemos, sin omitir nada interesante, avanzar en el relato.</p>
 				<p>Llegó el coche a la calle de Recoletos, que entonces acababa de salir de manos de arquitectos  y lucía como joyas unas cuantas casitas a la francesa, que eran por aquellos años la última palabra de la elegancia. Detúvose ante una de ellas, abrióse la portezuela, saltó a tierra la enmascarada y pudo decirse que jamás pies tan pequeños caminaron tan de prisa, porque apenas habían pisado las anchas losas de mármol del portal, cuando ya se los oía taconear nerviosamente en la lustrada madera del piso principal. Sonó el timbre, se abrió la puerta, y con la misma velocidad impaciente y vertiginosa, la enmascarada cruzó un pasillo y abrió la puerta de un tocador, donde se precipitó... íbamos a decir como un rayo... como un rayo que oliese, en vez de azufre, a violetas.</p>
@@ -322,7 +351,7 @@
 				<p><seg rend="italics">¡Fichtre!...</seg> ¿Pues no he llorado?... ¡Como si estuviera seguro de que es mi hijo!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0206_chap2">
-				<head>II. El polispasto Rubín</head>
+				<head xml:id="ne0206_head_001">II. El polispasto Rubín</head>
 				<p>No fue un momento de inspiración de la piedad humana, sino obra de la hipocresía social la institución mal llamada benéfica de las Inclusas, si hemos de atenemos al cuadro que ante nuestra vista se presenta. La Casa de Maternidad del Santo Niño, fundada por un piadoso cristiano, y convertida, por el desbarajuste oficial, en una institución herodiaca, presenta, en aquella hora en que el sol se pone, un aspecto de aturdidor movimiento de ruidosa vida. En las estrechas escaleras y en las amplias salas acaban de encender los mecheros de gas que lucen opacamente en una atmósfera hedionda. Las paredes sucias, las baldosas rojizas, polvorientas y despegadas del cemento, las puertas viejas y mal ajustadas, las vidrieras rotas, las chimeneas que hacen humo y ante cuyos hogares de hierro encendido al rojo hay cañas sostenidas entre sillas y banquetas para que en ellas se sequen pañales y mantillas, los cánticos de las nodrizas que arrullan ásperamente algún niño, el llanto de otros que, hambrientos y helados, se agitan en las inmundas cunas... forman un conjunto desagradable que produce frío en el cuerpo y en el alma; el ahogo se apodera de los pulmones, y un sentimiento de pena del corazón. A esta hora es cuando cenan las nodrizas, allá abajo, en mal oliente cuadra, donde sobre una cocina de hierro cuece, en enormes cacerolas, un guisado piltrafoso de clara salsa, una comida capaz de imponer la dieta al más voraz. Cuando la campana avisa a las nodrizas, así como sedienta cuadriga de muías  salen relinchantes y coceando del pesebre en busca del pozo, aquellas madres mercenarias abandonan a sus hijos pegadizos y van a saciar el instinto fiero del hambre. Los niños se quedan solos, unos pateando en las cunas, otros tiesos e inmóviles entre sus negras mantillas; los más crecidos jugando o riñendo, revolcándose por el suelo en la desnudez que precede a la hora de cubre-fuego. Mientras en estas alcobas se ven en tal ocasión infantiles miserias, escuálidos miembros, amarillentas caritas, bien pocas de ellas sanas, la mayor parte afeadas por la escrófula y erizadas de pústulas y granos, en el comedor se oye el diálogo brutal y cínico de las indignas mujeres que ponen remate a la obra de la generación por acaso con una lactancia insuficiente y regateada. Sucias manazas van y vienen del plato a la boca: todas las formas asquerosas del comer tienen allí su manifestación. En aquellos labios que chupan el zoquete de pan chorreando grasa, en aquellos dientes caninos que roen un hueso, en aquella supresión, de tenedores, servilletas y vasos, se ve a la humanidad retrocediendo desde los centros de civilización a los bosques vírgenes; se dibuja bajo la figura de la mujer cristiana la silueta angulosa de la hembra de las especies primitivas; se adivina un modo de ser incipiente de la raza humana, aquel en que se acortan las distancias que separan al Rey de la Creación de sus más viles súbditos.</p>
 				<p>Cuando llega este caso y suena la aguda campanilla puesta en el tomo de la calle anunciando que ha llegado a la Casa de Maternidad otro niño sin padres, hay refunfuños de mal humor en aquel conjunto de hembras, que tiene tanto de rebaño como de aquelarre. Es que entra en la inocente y desvalida colectividad de mamones un nuevo socio de hambre con el estómago vacío y los labios ansiosos. ¡A quién le tocará el turno! De dos a cuatro es la Ramoncha, de cuatro a seis la Repolida, de seis a ocho están encargadas de velar por los expósitos que lleguen la Robustiana y la Gerinelda, porque en estas horas es cuando llegan más niños; es la hora del crepúsculo, cuando las sombras encubren y disimulan la acción infame de abandonar el fruto de las propias entrañas.</p>
 				<p>Esta vez fue la Gerinelda, una asturiana de fisonomía becerril, boca que más bien era hocico, ojos insignificantes, pequeños y sin brillo, como si su misión apenas fuera otra que ver las cosas de más bulto; fue la Gerinelda la que recibió de manos de una Hermana de la Caridad un envoltorio palpitante, entre cuyas holandas apareció una carilla amoratada, y al mismo tiempo se dejó oír un llanto agudo, brioso y gangosuelo. Cinco minutos antes, la propia doña Leticia había puesto en el torno aquel niño. El oficial encargado del registro, dejando éste encima de la mesa y después de remangarle las mantillas para reconocerle el sexo, escribió en su libro algunas cifras, hora de llegada y ama a quien correspondía.</p>
@@ -406,7 +435,7 @@
 				<p>Pero al pensar en que Valentín se marchaba, en que iban a interrumpirse aquellas sesiones científico-recreativas, en que iba a perder el único admirador que le quedaba en el mundo al polispasto, sintió inmensa amargura, hondo duelo. Cuando abrazó a Valentín para despedirle, tuvo un negro presentimiento: el de que no iba a verlo jamás... ¡Ah!, hubiera querido decirle: «No te vayas, Valentín, quédate...» pero estaba ante él doña Ernesta, y su severo rostro, en que veía retratado el deber, impuso silencio a su voz, ya que no a su alma... ¡Enamorado sin esperanzas de la beldad del Turia, sin defensa contra el fracaso del polispasto... sin Valentín...! muchas noches hacía que don Eleuterio no lloraba. Aquella noche lloró.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0206_chap3">
-				<head>III: Simia, vulpécula et alter</head>
+				<head xml:id="ne0206_head_002">III: Simia, vulpécula et alter</head>
 				<p>Los triunfos de Cleopatra Pérez continuaron en aumento. Después de su alumbramiento, que permaneció ignorado del público, porque la tropa de Venus oculta estos percances como un ejército sus derrotas, y tras muy breve convalecencia, su hermosura tornó a brillar más enérgicamente que nunca, y se completó, digámoslo así con una cosa que hasta entonces la había faltado: con un aplomo de matrona que servía de plinto a la estatua de sus gracias reunidas. Este despliegue de hermosura tenía en Cleo algo del rejuvenicimiento de la naturaleza por el mes de abril. Acaba de pasar el invierno; acaba de derretirse el hielo que ha convertido en turbios espejos los arroyos... El sol vuelve a mirar con amor a la tierra.</p>
 				<p>El primer hotel que se edificó en la Castellana fue el de Cleopatra. El duque de Ripamilán, su protector, sentía por ella una creciente adoración y a par de las bellezas de la cortesana, aumentaba la pasión del anciano.</p>
 				<p>No era solamente el culto del hombre sensual a las her- i mosuras de la carne; era, además, el desesperado amor    j del decrépito por sus últimos días viriles. Tenía el du-    i que la superstición de que, si se rompían sus relaciones con Cleo, si aquel tesoro de hermosura dejaba de ser suyo, iba a dejar de vivir, iba a desvanecerse su gallardía de viejo bien conservado... no habría sino enterrarle en su panteón familiar, o, lo que era peor, reducirse a la existencia senil, que tiene por único campo de acción la poltrona puesta detrás de la vidriera en el rayo de sol, y los cuidados hipócritamente cariñosos de una parentela de herederos.</p>
@@ -597,7 +626,7 @@
 				<p>—Don Juan Rubeña es el albacea del duque. Ayer se abrió el testamento, e ignoro sus disposiciones; pero cuando te llaman, no será para pedirte. Don Juan Rubeña quedó con el encargo de avisarte, pero es un señor así, algo raro... ya ves, a mí no me quiere dar la mano... y tampoco quiere venir a verte... ¿No querer ver a una muchacha tan bonita?... en fin, <seg rend="italics">non ragionar di loor... </seg>ello es que don Juan Rubeña se lo dijo al vizcondesito del Cenagal... por cierto que... patapún... hoy le ha despampanado el caballo... el vizcondesito se lo dijo al duque de Begoña, el duque de Begoña a la Honorina... y la Honorina a mí... con que taratatí... ya está el cuento concluido.</p>
 				<p>—¿Pero no sabe usted nada? —dijo doña Leticia deponiendo prontamente su furor.</p>
 				<p>—Nada... Cleo, creo que debes vestirte... ponte un sombrero, un mantón, un velo, lo que quieras... te vienes conmigo, tomamos un simón... porque ya sé que Simón, el de aquí, se ha despedido y —continuó cantando— <seg rend="italics">«esta noche no hay coche, porque...»</seg> y patapún, nos plantificamos en la escribanía... es la escribanía de Ezquerra. ¿Tú, qué te crees? Tengo yo una memoria de <seg rend="italics">mistó</seg>.</p>
-				<p>Rodolfo y Cleo fueron, en efecto, al Juzgado de Audiencia, atravesaron los húmedos patios donde el nitro y el polvo iban cubriendo de manchas verdosas las columnatas y arquitrabes. Muchedumbre bullía por aquellas salas y pasillos. En sucios bancos, cuyos respaldos relucían del continuo ludir con toda suerte de paños y telas, había filas de gente esperando turno, quién impaciente, quién resignado y triste. Los rabulillas <seg rend="italics"></seg> del Juzgado entraban y salían con la pluma detrás dé la oreja. De cuando en cuando dominaba el sordo murmullo de las conversaciones la voz de un alguacil que llamaba a alguna persona citada para un juicio. Cleo y Rodolfo pasaron i sin dificultad, suscitando la belleza y aparato de ella comentarios, chicoleos y miradas. En la escribanía los despacharon pronto. Un viejo muy seco y muy severo entregó ! a Cleo una copia del testamento, exigiéndole firma del; recibo. En el mediano monte de hojas de papel con que la curia había embrollado ya la testamentaría del duque, quedaron estampadas para siempre las patas de araña en que, andando los siglos, había de descubrir la Paleografía el nombre de la reina de Egipto.</p>
+				<p>Rodolfo y Cleo fueron, en efecto, al Juzgado de Audiencia, atravesaron los húmedos patios donde el nitro y el polvo iban cubriendo de manchas verdosas las columnatas y arquitrabes. Muchedumbre bullía por aquellas salas y pasillos. En sucios bancos, cuyos respaldos relucían del continuo ludir con toda suerte de paños y telas, había filas de gente esperando turno, quién impaciente, quién resignado y triste. Los rabulillas <seg rend="italics"/> del Juzgado entraban y salían con la pluma detrás dé la oreja. De cuando en cuando dominaba el sordo murmullo de las conversaciones la voz de un alguacil que llamaba a alguna persona citada para un juicio. Cleo y Rodolfo pasaron i sin dificultad, suscitando la belleza y aparato de ella comentarios, chicoleos y miradas. En la escribanía los despacharon pronto. Un viejo muy seco y muy severo entregó ! a Cleo una copia del testamento, exigiéndole firma del; recibo. En el mediano monte de hojas de papel con que la curia había embrollado ya la testamentaría del duque, quedaron estampadas para siempre las patas de araña en que, andando los siglos, había de descubrir la Paleografía el nombre de la reina de Egipto.</p>
 				<p>—Toma, y lee eso —dijo Cleo a Rodolfo entregándole la copia.</p>
 				<p>Éste recorrió el papel (ya estaban dentro del coche que, como dicen los clásicos, los reintegraba al hotel), y pasando por alto las enojosas e inútiles fórmulas, llegó a lo sustancial.</p>
 				<p>—Oye, chica, oye lo que dice: «En la villa y corte de Madrid, sano de entendimiento...» ¡qué ilusiones!... «quiero... etc... que mis deudas sean pagadas y se liquide mi patrimonio...» «ítem más, habiendo en momentos de razonamiento, y de volver sobre los hechos de mi vida pasada...» ¡escucha, muchacha, escucha!... «habiendo... deseado quedar en paz con mi conciencia, quiero y mando que se practiquen las más escrupulosas gestiones para que la llamada Cleopatra Pérez Lingorta revele el paradero de un niño que de ella hube y que ahora reconozco...» ¡pero chica, esto es un folletín francés!... ¿Qué historia de chico es esta?</p>
@@ -608,7 +637,7 @@
 				<p>Cuando Cleopatra salió de su silencio fue para decir: —¡Qué estúpido viejo!</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0206_chap4">
-				<head>IV. Cleopatra, viuda.—Cleopatra, madre</head>
+				<head xml:id="ne0206_head_003">IV. Cleopatra, viuda.—Cleopatra, madre</head>
 				<p>Detuvo el tren su marcha, y abriéndose la portezuela de un coche de primera, saltó sobre el andén de la estación de Nidonegro un caballerete muy lindo y compuesto: el gabán de verano pendiente del brazo izquierdo, que se ajustaba en graciosa curva a la cintura, un sombrero gris en la cabeza y a ratos en la mano derecha, porque el calor era grande y el sudor le corría por la frente. Cuando el tren continuó su marcha, el único viajero que había descendido en la estación de Nidonegro se acercó al jefe y le preguntó si estaba el pueblo cerca o lejos.</p>
 				<p>—Muy lejos —le contestó aquel funcionario—, más de media legua.</p>
 				<p>—¡Dios mío —exclamó Rodolfo—, media legua a pie con este polvo y con este calor!</p>
@@ -738,7 +767,7 @@
 				<p>Y se alejaron de aquella casa silenciosamente.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0206_chap5">
-				<head>V: De la casa del ciprés al hotel de la Castellana</head>
+				<head xml:id="ne0206_head_004">V: De la casa del ciprés al hotel de la Castellana</head>
 				<p>Iba delante don Juan Rubeña, detrás Valentín... ¿cómo se llama, si ha cambiado tres veces de apellido?... del Hijo de Dios... Rubín o... Pérez... Seguía, digo, Valentín a don Juan Rubeña, y lentamente bajaron la calle de Alcalá y llegaron al palacio de Cleopatra: don Juan Rubeña, deseoso de acabar la enojosa misión; Valentín, ansioso y lleno de miedo, palpitando las lágrimas entre las pestañas y el corazón acobardado en el pecho. Cuando llegaron al hotel y se encontró Valentín en un salón cuyas paredes cubría lujoso papel de estampaciones auríferas, y cuyo mueblaje tenía el sello de la coquetería femenina y un perfume halagador y agradable, el corazón no le cabía en el espacio que la naturaleza le ha concedido. Don Juan Rubeña miró con interés el rostro del joven; fue una mirada del observador, curiosa y escudriñadora, de las que no se detienen en la corteza material, sino que ahondan y buscan lo secreto.</p>
 				<p>—Serénate, hombre —le dijo.</p>
 				<p>Intentó sonreír amablemente el muchacho, pero la contracción nerviosa de sus labios convirtió su sonrisa en una mueca triste. Entró en el salón una dama vestida de negro. Avanzaba sin ver, porque los ojos los llevaba cubiertos con un pañuelo como si llorase.</p>
@@ -847,7 +876,7 @@
 				<p>—¡Ahí están don Bartolín y doña Leticia!</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0206_chap6">
-				<head>VI La reina de Egipto decae</head>
+				<head xml:id="ne0206_head_005">VI La reina de Egipto decae</head>
 				<p>Tuvo Cleo al oír aquellas palabras un sobresalto muy grande, porque la visita de don Bartolín nunca venía acompañada de cosa buena. Acudió rápidamente al llamamiento, y contrariadísima por aquella novedad, que rompía el placer de sobremesa tan bruscamente, llegó a su tocador, sobre cuyo fondo lujoso y alegre se destacaban las siluetas de doña Leticia y don Bartolín de una manera cómico-trágica. ¡Oh... don Bartolín!... No era el avaro de anguloso perfil, de rigor en la vieja literatura romántica; era obeso, superabundante, apoplético. Dos piernecitas cortas sostenían a duras penas y con ayuda de un bastón de roten la carga del abdomen, esférica, colosal, triunfante, coronando aquella obra maestra de la grasa un cuellecito corto y una cabeza minúscula, rasurada cuidadosamente, y en cuyo esferoide, de color anaranjado, chispeaban dos ojillos inteligentes y malignos. Al lado de don Bartolín, y en pie como él, estaba doña Leticia. ¡Vaya un contraste! Ella estaba aún más delgada que cuando por última vez la hemos visto. Las arrugas de su cutis habían aumentado, triplicándose sobre la demacración creciente; sus labios degeneraban en belfos, su nariz en pico de ave nocturna; sus ojos habían ganado cuanto había perdido el resto de la persona. Esa luz lambente de los pantanos y los cementerios, ésa era la luz que i fluía por entre los pliegues de sus párpados.</p>
 				<p>—¿Qué ocurre? —dijo con perentorio acento Cleopatra.</p>
 				<p>Don Bartolín hizo un gesto como para saludar, después avanzó su báculo y dio un paso torpe hacia adelante.</p>
@@ -1015,7 +1044,7 @@
 				<p>Virginia prometió cuanto la vieja quiso. Tan contenta quedó ésta de la obediencia modosísima de Virginia, que le dio palabra de darla aquella alhajilla que un día de apuro le empeñó. Doña Leticia despidió a Virginia con una caricia y un requiebro.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0206_chap7">
-				<head>VII: Suplicio, tortura, amor y pleito</head>
+				<head xml:id="ne0206_head_006">VII: Suplicio, tortura, amor y pleito</head>
 				<p>Entonces empezó en casa de Cleopatra, o más que empezó volvió a reproducirse aquella existencia azarosa y mísera, farsa de opulencia, representación de lujo bajo cuyos oropeles se ocultaba la más triste escasez. Cleopatra se encontraba en una situación angustiosa. Cuando una puerta se cierra, ciento se cierran: Cleopatra no tenía a quien acudir. Don Bartolín la acosaba día y noche, la molestaba de continuo, por la mañana al levantarse y por la tarde al salir de paseo; cuando acababa la visita, y con ella el enojoso duelo entre el acreedor y la deudora, empezaba la llegada de cartas, en las que había demandas y amenazas, quejas e insultos. La modista había advertido a Cleo que, si antes de tres días no le abonaba el total de su cuenta, apelaría al embargo previsto. Don Bartolín, una mañana se llevó los caballos, y cuando Cleo pidió el coche, subió Simón el cochero, y con palabras bastante groseras, después de anunciarle lo sucedido, la pidió sus salarios.</p>
 				<p>—Puesto que aquí ya no hay coche —la dijo— yo estoy de más, señorita... venga mí dinero; me debe usted siete meses.</p>
 				<p>No eran sólo deudas grandes, como la de la modista, como la del joyero, la de don Bartolín: le acosaban tambien mil pequeños créditos: el ramo de flores, el servicio de emparedados, el <seg rend="italics">champagne</seg> de la última fiesta, los salarios de Irene, la cuenta del gas, la contribución del hotel, una caja de guantes... los detalles todos de una existencia dilapidadora y sin orden, que va dejando detrás de sí una estela de delitos como la que deja de luz i un meteoro. Tenía Cleo momentos de fiereza y de ira. Todo se le ponía mal; el fracaso la conminaba. Hubo ocasión en que echaba la culpa de lo que ocurría al influjo funesto de Valentín, con cuya entrada en la casa había coincidido el desastre de la ruina. El muchacho paraba poco en el hotel: Rodolfo se lo llevaba aquí y allá, porque Cleo no quería en modo alguno que Valentín asistiera a una de aquellas escenas violentas y vergonzosas entre el que pide lo suyo y el que no puede dárselo. Unos días pasaba el muchacho la mañana en un picadero, donde Rodolfo iba a montar caballos, de gorra; las tardes solían pasarlas en una cervecería de la Carrera de San Jerónimo, en una reunión de sietemesinos y gomosos, cuyo lenguaje, cuyos gestos, cuya manera de vestir asombraban y confundían al lugareño de Nidonegró; las noches, unas en el teatro, otras en la citada cervecería, donde se hablaba únicamente de caballos y mujeres. Alguna vez, Rodolfo dejaba en medio de la calle a Valentín y desaparecía por muchas horas.</p>

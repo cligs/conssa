@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La tierra de todos</title>
-				<title type="sub">(Novela)</title>
+				
 				<title type="short">TierraTodos</title>
-				<title type="idno">
-					<idno type="bne">XX1892730</idno>
-					<idno type="viaf">309276403</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2485</measure>
@@ -141,13 +131,53 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0263</idno>
+						<idno type="cligs">ne0263</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2004">2004</date>, <idno>13519</idno>, <ref target="http://www.gutenberg.org/ebooks/13519"/>.</bibl>
-				<bibl type="print-source">Prometeo, Valencia, <date when="1922">1922</date></bibl>
-				<bibl type="edition-first"><date when="1922">1922</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La tierra de todos</title>
+					<title type="sub">(Novela)</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892730.html">XX1892730</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309276403/">309276403</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2004">2004</date>, <idno>13519</idno>, <ref target="http://www.gutenberg.org/ebooks/13519"/>.</bibl>
+					<bibl type="print-source">Prometeo, <pubPlace>Valencia</pubPlace>, <date when="1922">1922</date></bibl>
+					<bibl type="edition-first"><date when="1922">1922</date><idno source="k10plus" type="ppn" n="1116171236" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116171236"/><idno source="k10plus" type="ppn" n="46473214X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46473214X"/><idno source="k10plus" type="ppn" n="445658355" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658355"/><idno source="k10plus" type="ppn" n="197401260" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=197401260"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Tierra de todos</title>: 	<title type="sub">(novela)</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1116171236" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116171236"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos</title>: 	<title type="sub">novela</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="46473214X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46473214X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La tierra de Todos</title>: 	<title type="sub">Novela</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445658355" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658355"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Tierra de todos</title>: 	<title type="sub">(novela)</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="197401260" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=197401260"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">La tentatrice</title> <date when="1923">1923</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="468392963" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468392963"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Tierra de todos</title>: 	<title type="sub">novela</title> <date when="1948">1948</date>, <publisher>Ed. Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="226451100" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226451100"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La Reina Calafia. Novelas de la Costa Azul...</title> <date when="1967">1967</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520994825" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520994825"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La Reina Calafia. Novelas de la Costa Azul...</title> <date when="1969">1969</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="521202817" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521202817"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos ..</title> <date when="1976">1976</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1146183232" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1146183232"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos [u.a.]</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1103778331" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1103778331"/> 		<idno type="isbn" n="8403000103"/></bibl>
+						<bibl type="further-edition" xml:lang="ita"><title type="main">La tierra de todos</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1103177788" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1103177788"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos, La reina calafia, Novelas de la Costa Azul, La vuelta al mundo de un novelista, Novelas de amor y muerte, El papa del mar, En busca del gran kan, El caballero de la virgen, El fantasma de la alas de oro, Estudios literarios</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621554" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621554"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La Reina Calafia. Novelas de la Costa Azul ... - 8. ed., 5. reimpr. - 1978</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="03764730X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=03764730X"/> 		<idno type="isbn" n="8403000103"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos. La reina Calafia. Novelas de la Costa Azul ...</title> <date when="1987">1987</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="032954972" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=032954972"/> 		<idno type="isbn" n="8403000103"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Tierra de Todos</title> <date when="2014">2014</date>, <publisher>Linkgua Ediciones,</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1758796685" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1758796685"/> 		<idno type="isbn" n="9788499532608"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +187,14 @@
 				<p>En 1910, el escritor valenciano abandonó la creación y cruzó el Atlántico para probar fortuna como colono en la Argentina. Transcurridos los años, los recuerdos de aquella empresa fracasada impregnan una historia que se desarrolla en los áridos territorios de Río Negro, en la Patagonia, y tiene como punto de arranque un asunto que le permite exponer, de forma ficcional, uno de los tipos femeninos característicos de su narrativa: el de la mujer vamp, capaz de seducir a los hombres y sembrar la discordia en el tranquilo poblado de la Presa.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -216,6 +254,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,7 +262,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0263_chap1">
-				<head>I</head>
+				<head xml:id="ne0263_head_000">I</head>
 				<p>Como todas las mañanas, el marqués de Torrebianca salió tarde de su dormitorio, mostrando cierta inquietud ante la bandeja de plata con cartas y periódicos que el ayuda de cámara había dejado sobre la mesa de su biblioteca.</p>
 				<p>Cuando los sellos de los sobres eran extranjeros, parecía contento, como si acabase de librarse de un peligro. Si las cartas eran de París, fruncía el ceño, preparándose á una lectura abundante en sinsabores y humillaciones. Además, el membrete impreso en muchas de ellas le anunciaba de antemano la personalidad de tenaces acreedores, haciéndole adivinar su contenido.</p>
 				<p>Su esposa, llamada «la bella Elena», por una hermosura indiscutible, que sus amigas empezaban á considerar histórica á causa de su exagerada duración, recibía con más serenidad estas cartas, como si toda su existencia la hubiese pasado entre deudas y reclamaciones. Él tenía una concepción más anticuada del honor, creyendo que es preferible no contraer deudas, y cuando se contraen, hay que pagarlas.</p>
@@ -335,7 +374,7 @@
 
 			</div>
 			<div n="2" type="chapter" xml:id="ne0263_chap2">
-				<head>II</head>
+				<head xml:id="ne0263_head_001">II</head>
 				<p>La marquesa de Torrebianca encontró «altamente interesante» al amigo de su esposo.</p>
 				<p>Había regresado á su casa muy contenta. Sus preocupaciones de horas antes por la falta de dinero parecían olvidadas, como si hubiese encontrado el medio de amansar á su acreedor ó de pagarle.</p>
 				<p>Durante el almuerzo, tuvo Robledo que hablar mucho para responder á las preguntas de ella, satisfaciendo la vehemente curiosidad que parecían inspirarle todos los episodios de su vida.</p>
@@ -440,7 +479,7 @@
 
 			</div>
 			<div n="3" type="chapter" xml:id="ne0263_chap3">
-				<head>III</head>
+				<head xml:id="ne0263_head_002">III</head>
 				<p>En uno de los tés de la marquesa de Torrebianca conoció Robledo á la condesa Titonius, dama rusa, casada con un noble escandinavo, el cual parecía absorbido por su cónyuge, hasta el punto de que nadie reparase en su persona.</p>
 				<p>Era una mujer entre los cuarenta años y los cincuenta, que todavía guardaba vestigios algo borrosos de una belleza ya remota. Su obesidad desbordante, blanca y flácida tenía por remate una cabecita de muñeca sentimental; y como gustaba de escribir versos amorosos, apresurándose á recitarlos en el curso de las conversaciones, sus enemigas la habían apodado «Cien kilos de poesía».</p>
 				<p>Se presentaba en plena tarde audazmente escotada, para lucir con orgullo sus albas y gelatinosas superfluidades. Usaba joyas gigantescas y bárbaras, en armonía con una peluca rubia á la que iba añadiendo todos los meses nuevos rizos.</p>
@@ -564,7 +603,7 @@
 
 			</div>
 			<div n="4" type="chapter" xml:id="ne0263_chap4">
-				<head>IV</head>
+				<head xml:id="ne0263_head_003">IV</head>
 				<p>Robledo se levantó muy tarde; pero aún pudo admirar el suave esplendor de un día primaveral en pleno invierno. Una neblina ligera saturada de sol extendía su toldo de oro sobre París.</p>
 				<p>—Da gusto vivir—pensó al abandonar su hotel después de haber almorzado rápidamente en un comedor donde sólo quedaban los criados.</p>
 				<p>Paseó toda la tarde por el Bosque de Bolonia, y poco antes del ocaso volvió á los bulevares. Se proponía comer en un restorán, buscando luego á los Torrebianca para pasar juntos una parte de la noche en cualquier lugar de diversión.</p>
@@ -720,7 +759,7 @@
 
 			</div>
 			<div n="5" type="chapter" xml:id="ne0263_chap5">
-				<head>V</head>
+				<head xml:id="ne0263_head_004">V</head>
 				<p>Unos trabajadores aragoneses que habían emigrado á la Argentina, llevando una guitarra como lo más precioso de su bagaje para acompañar las coplas «sacadas de su cabeza», al verla pasar á caballo dedicaron una canción á «la Flor de Río Negro».</p>
 				<p>Este apodo primaveral se difundió inmediatamente por el país, y todos llamaron así á la hija del dueño de la estancia de Rojas; pero su verdadero nombre era Celinda.</p>
 				<p>Tenía diez y siete años, y aunque su estatura parecía inferior á la correspondiente á su edad, llamaba la atención por sus ágiles miembros y la energía de sus ademanes.</p>
@@ -879,7 +918,7 @@
 
 			</div>
 			<div n="6" type="chapter" xml:id="ne0263_chap6">
-				<head>VI</head>
+				<head xml:id="ne0263_head_005">VI</head>
 				<p>Un grupo de chicuelos cesó de jugar en la llamada calle principal, lanzando gritos de asombro al ver el aspecto extraordinario del carruaje que, tres veces por semana, ó sea los días de tren, iba y volvía de la Presa á la estación de Fuerte Sarmiento.</p>
 				<p>La misma diversidad étnica de los habitantes del pueblo se notaba en este grupo infantil, compuesto de distintas razas. Los niños blancos parecían como perdidos dentro de pantalones viejos de sus padres y sus pies se movían sueltos en el interior de enormes zapatos. Los indígenas llevaban una simple camisita ó iban con la barriga al aire, resaltando sobre su curva achocolatada el amplio botón del ombligo.</p>
 				<p>Como todos ellos estaban acostumbrados á que los viajeros que llegaban á la Presa no llevasen otro equipaje que la llamada «lingera», saco de lona donde guardaban su ropa, se asombraron al ver la cantidad de baúles y maletas del coche-correo, vieja diligencia tirada por cuatro caballos huesudos y sucios de lodo.</p>
@@ -989,7 +1028,7 @@
 
 			</div>
 			<div n="7" type="chapter" xml:id="ne0263_chap7">
-				<head>VII</head>
+				<head xml:id="ne0263_head_006">VII</head>
 				<p>—¿Otro matecito, comisario?</p>
 				<p>Don Carlos Rojas estaba en la habitación principal de su estancia, sentado á la mesa con don Roque, el comisario de Policía del pueblo. Una muchachita mestiza se mantenía erguida junto á ellos, mirándolos con sus ojos oblicuos, en espera de órdenes.</p>
 				<p>Los dos tenían en su diestra la calabacita llena de mate, y chupaban el líquido oloroso con un canuto de plata llamado «bombilla». Apenas se daba cuenta la mestiza por el burbujeo de los canutos de que escaseaba el líquido, corría á un fogón inmediato, trayendo la «París», tetera de agua hirviente, para llenar á chorro las dos calabacitas repletas de hierba mate.</p>
@@ -1113,7 +1152,7 @@
 
 			</div>
 			<div n="8" type="chapter" xml:id="ne0263_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0263_head_007">VIII</head>
 				<p>El aspecto de la casa de Pirovani cambió mucho al instalarse en ella los Torrebianca.</p>
 				<p>Las ventanas lucían ahora, á través de sus vidrios, unas cortinas flamantes. Ya no se mostraban en las galerías exteriores las domésticas mal vestidas y realizando al aire libre ciertos trabajos de limpieza. La presencia de aquella señora tan hermosa y elegante había impuesto á la servidumbre nuevos cuidados personales. Hasta la gorda Sebastiana iba vestida todos los días «de domingo», como decían sus amigas.</p>
 				<p>Otra novedad conoció el vecindario de la Presa con la instalación de Elena en la casa del contratista. El salón de Pirovani tenía un piano de media cola, que había permanecido cerrado hasta entonces. Lo compró el italiano en Buenos Aires por complacer á un compatriota suyo, dueño de un almacén de instrumentos de música. Además le habían dicho que un salón «distinguido» no está completo si carece de un piano, pero con cuerdas horizontales y la tapa á medio levantar. Y compró el valioso instrumento, sin esperanza de que llegase á la Presa un visitante capaz de utilizarlo.</p>
@@ -1220,7 +1259,7 @@
 
 			</div>
 			<div n="9" type="chapter" xml:id="ne0263_chap9">
-				<head>IX</head>
+				<head xml:id="ne0263_head_008">IX</head>
 				<p>El famoso Manos Duras vivía al borde de la altiplanicie, del lado de la Pampa, viendo enfrente el límite de la Patagonia, y á sus pies la amplia y tortuosa cortadura del río y un extremo de la estancia de Rojas.</p>
 				<p>Su casa, hecha de adobes, tenía alrededor otras construcciones aún más míseras y unos corrales de viejos maderos hincados en el suelo, que sólo de tarde en tarde guardaban algún animal.</p>
 				<p>Todos en el país conocían la situación del llamado «rancho de Manos Duras»; pero pocos iban á él, por ser lugar de mala fama. Algunas veces, los que pasaban con cierta inquietud por sus inmediaciones sólo conseguían tranquilizarse al notar su soledad. No ladraban ni salían al camino los perros de hirsuto pelaje, ojos sangrientos y agudos colmillos acompañantes del gaucho. Tampoco se veían sus caballos pastando la hierba rala de los alrededores.</p>
@@ -1302,7 +1341,7 @@
 
 			</div>
 			<div n="10" type="chapter" xml:id="ne0263_chap10">
-				<head>X</head>
+				<head xml:id="ne0263_head_009">X</head>
 				<p>Pocos meses después de haber empezado los trabajos en el campamento de la Presa, los habitantes de las diversas colonias establecidas á orillas del río Negro hablaron con admiración del nuevo boliche del Gallego, apreciándolo como el establecimiento más hermoso de la comarca. El dueño había embellecido su interior con una novedad tan instructiva como interesante.</p>
 				<p>Uno de los primeros que acudieron al campamento en busca de trabajo fué un inglés que llevaba muchos años vagando de un extremo á otro de la América del Sur. La última etapa de su existencia aventurera había sido en el corazón del Paraguay, comerciando con las tribus salvajes; tráfico que no parecía haberle hecho rico. Como recuerdo de su vida en las selvas, llevó á Buenos Aires cuatro cocodrilos del gran río Paraguay, llamados <seg rend="italics">yacarés</seg> con el caparazón relleno de paja, y una serpiente boa de varios metros de lorgitud, cuyo vientre había sido atiborrado de hierbas por los disectores indígenas.</p>
 				<p>En la capital de la Argentina le hablaron de los grandes trabajos que se realizaban junto al río Negro, haciendo necesario el enganche de numerosos jornaleros, y allá se fué con toda su colección de animales empajados, saltando de la temperatura tórrida del Paraguay y el Brasil inferior al invierno rudo de la Patagonia.</p>
@@ -1433,7 +1472,7 @@
 
 			</div>
 			<div n="11" type="chapter" xml:id="ne0263_chap11">
-				<head>XI</head>
+				<head xml:id="ne0263_head_010">XI</head>
 				<p>Poco después de la salida del sol abandonó Moreno su casa, por haberle llamado Canterac urgentemente.</p>
 				<p>Al entrar en el alojamiento del ingeniero encontró á éste paseando con impaciencia. Se había puesto ya las botas altas y el pantalón de montar. Un cinturón con revólver y su blusa estaban sobre una silla.</p>
 				<p>Con las mangas de la camisa recogidas y la pechera abierta, mostraba aún las frescas señales de su ablución matinal. Su rostro era más duro y autoritario que otros días. Una idea tenaz y molesta parecía colgar de su fruncido entrecejo. Sobre los muebles y en los rincones había numerosos paquetes envueltos en papel fino, atados y sellados elegantemente.</p>
@@ -1538,7 +1577,7 @@
 
 			</div>
 			<div n="12" type="chapter" xml:id="ne0263_chap12">
-				<head>XII</head>
+				<head xml:id="ne0263_head_011">XII</head>
 				<p>Llegó el día de la gran sorpresa preparada por Canterac. Los trabajadores, bajo la dirección de Moreno, colocaron los últimos árboles en la llanura inmediata al río.</p>
 				<p>Grupos de curiosos admiraban desde lejos este bosque improvisado. De Fuerte Sarmiento y hasta de la capital del territorio de Neuquen iban llegando gentes atraídas por la novedad de tal fiesta. Algunos obreros tendían de tronco á tronco guirnaldas de follaje y clavaban grupos de banderolas.</p>
 				<p>Friterini, elevado á la categoría de <seg rend="italics">maître d'hôtel</seg>, había sacado de su maleta un frac algo apolillado, recuerdo de los tiempos en que prestaba servicio como camarero auxiliar en hoteles de Europa y de Buenos Aires. Preocupándose de la integridad de su pechera dura y su corbata blanca, daba órdenes á una tropa de mestizas del boliche que se habían convertido en servidoras y preparaban las mesas para la fiesta de la tarde.</p>
@@ -1659,7 +1698,7 @@
 
 			</div>
 			<div n="13" type="chapter" xml:id="ne0263_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0263_head_012">XIII</head>
 				<p>Acabaron su cena silenciosamente Watson y Robledo, preocupados por lo que había ocurrido horas antes en el parque inventado por Canterac.</p>
 				<p>Un obstáculo invencible parecía haberse levantado entre los dos. Watson tenía el rostro sombrío y evitaba mirar á Robledo. Éste, al poner de vez en cuando los ojos en su asociado, sonreía con una expresión amarga. Pensaba en Elena, dominadora y malvada, que tal vez había aconsejado á Ricardo contra él.</p>
 				<p>Se levantó el joven de la mesa, saludando con algunas palabras confusas, y tomó el sombrero para salir.</p>
@@ -1784,7 +1823,7 @@
 
 			</div>
 			<div n="14" type="chapter" xml:id="ne0263_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0263_head_013">XIV</head>
 				<p>Empezaban á retirarse los parroquianos más trasnochadores del boliche, cuando llegó Robledo ante la casa ocupada por Elena.</p>
 				<p>Subió con pasos quedos la escalinata, llamando discretamente á la puerta después de unos instantes de vacilación. La puerta se abrió al poco rato, asomando á ella Sebastiana, sorprendida por este llamamiento cuando iba á acostarse.</p>
 				<p>Llevaba la dura cabellera dividida en numerosas trenzas, cada una con un lacito en la punta, y procuraba taparse con la enorme redondez de sus brazos una parte del pecho cobrizo, no menos exuberante, puesto al descubierto por el desabrochado corpiño. Sus ojos iracundos y anunciadores del chaparrón de malas palabras con que pensaba acoger al importuno se dulcificaron viendo á Robledo, y antes de que éste hablase, dijo ella con amabilidad:</p>
@@ -1909,7 +1948,7 @@
 
 			</div>
 			<div n="15" type="chapter" xml:id="ne0263_chap15">
-				<head>XV</head>
+				<head xml:id="ne0263_head_014">XV</head>
 				<p>Marchó Watson hacia el pueblo, sintiendo en su interior la comezón de una conciencia que empieza á perder su tranquilidad.</p>
 				<p>Recordaba con remordimiento aquel breve diálogo en el parque improvisado, durante el cual habló duramente á Robledo. «¡Y por esa mujer—pensaba—que lleva los hombres á la muerte, he maltratado al mejor de mis amigos!»</p>
 				<p>Luego, el rostro triste y lloroso de Celinda sucedía en su imaginación á la cara bondadosa de Robledo.</p>
@@ -2078,7 +2117,7 @@
 
 			</div>
 			<div n="16" type="chapter" xml:id="ne0263_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0263_head_015">XVI</head>
 				<p>Agitada por su curiosidad femenil, esperó la mestiza con impaciencia la hora de la cita.</p>
 				<p>Estaba en la cocina de la casa, situada en el corral, bajo un cobertizo. Sobre una mesa tenía un reloj despertador, y varias veces aproximó á él su quinqué para saber la hora. Poco antes de las diez se quitó los zapatos, atravesando descalza el corral, para seguir á continuación una de las galerías exteriores.</p>
 				<p>Así llegó, con paso silencioso, al ángulo del edificio más inmediato á la ventana del dormitorio de Elena. Luego se sentó en el suelo de tablas, encogiéndose para escuchar sin ser vista.</p>
@@ -2295,7 +2334,7 @@
 
 			</div>
 			<div n="17" type="chapter" xml:id="ne0263_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0263_head_016">XVII</head>
 				<p>Al levantarse Elena, bien entrada la mañana, vió con sorpresa que la mestiza no acudía á sus repetidas voces.</p>
 				<p>Finalmente se presentó una de aquellas muchachas apodadas «chinitas» que trabajaban en el servicio de la casa bajo las órdenes de Sebastiana. Según declaró esta joven, la respetable mestiza no había vuelto después de su salida á primera hora.</p>
 				<p>—Dicen que ha habido un bochinche en la estancia de don Carlos Rojas.  El comisario y muchos hombres se fueron para allá.</p>
@@ -2387,7 +2426,7 @@
 
 			</div>
 			<div n="18" type="chapter" xml:id="ne0263_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0263_head_017">XVIII</head>
 				<p>Para Watson empezaron á sucederse los hechos con la rapidez vertiginosa y la falta de lógica de los episodios de una pesadilla que se desarrollan más allá del tiempo y del espacio.</p>
 				<p>Oyó tiros; luego pasaron ante sus ojos varios jinetes á todo galope, mientras otros, deteniéndose, hacían fuego contra los dos andinos. En vano Piola gritaba levantando sus brazos:</p>
 				<p>—¡Hermanos, no nos baleen, que somos gentes de paz y nos entregamos!…</p>
@@ -2500,7 +2539,7 @@
 
 			</div>
 			<div n="19" type="chapter" xml:id="ne0263_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0263_head_018">XIX</head>
 				<p>—Han transcurrido doce años desde la última vez que estuve en  París… ¡Ay! Reconozco que mi aspecto ha cambiado mucho.</p>
 				<p>Y Robledo, al decir esto, volvió á verse tal como se contemplaba todas las mañanas en el espejo, con ojos de conmiseración, mientras procedía á su limpieza matinal.</p>
 				<p>Era todavía vigoroso y gozaba de excelente salud; pero la vejez había empezado á marcar en él sus devastaciones. La cúspide de su cráneo estaba completamente despoblada. En cambio había suprimido su bigote, rasurándolo por el motivo de tener con más abundancia las canas que los pelos obscuros. Esta transformación le había dado, según él, cierto aspecto de clérigo ó de actor, pero al mismo tiempo esparcía por su rostro cierta frescura juvenil.</p>
@@ -2614,7 +2653,7 @@
 
 			</div>
 			<div n="20" type="chapter" xml:id="ne0263_chap20">
-				<head>XX</head>
+				<head xml:id="ne0263_head_019">XX</head>
 				<p>Robledo la miró con severidad, al mismo tiempo que preguntaba bruscamente:</p>
 				<p>—¿Cómo se llama usted?</p>
 				<p>Ella pensaba en otra cosa, con los ojos fijos en el <seg rend="italics">whisky</seg>, y contestó, distraída:</p>
@@ -2712,7 +2751,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN</head>
+				<head xml:id="ne0263_head_020">FIN</head>
 				<p>Villa Fontana Rosa  Mentón (Alpes Marítimos)  Febrero-Abril 1922.</p>
 			</div>
 		</back>

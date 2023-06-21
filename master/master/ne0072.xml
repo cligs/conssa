@@ -1,24 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La tía Tula</title>
-				<title type="sub" cert="low">Como se hace una novela</title>
 				<title type="short">TiaTula</title>
-				<title type="idno">
-					<idno type="bne">XX2213118</idno>
-					<idno type="viaf">204060302</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1139151</idno>
-					<idno type="viaf">88844103</idno>
-					<name type="short">Unamuno</name>
-					<name type="full">Miguel de Unamuno</name>
+					<name type="short" ref="#Unamuno"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1899</measure>
@@ -141,13 +130,78 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0072</idno>
+						<idno type="cligs">ne0072</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Emiferro, r.1.1, <date when="2013">2013</date>, <idno>5041</idno>, <ref target="https://www.epublibre.org/libro/detalle/5041"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1921">1921</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La tía Tula</title>
+					<title type="sub" cert="low">Como se hace una novela</title>					
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2213118.html">XX2213118</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/204060302/">204060302</idno>
+				</idno>
+				</title>
+					<author xml:id="Unamuno">
+						<name type="full"><forename>Miguel</forename> <surname>de Unamuno</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8740 - IP 8745">IP 8740 - IP 8745</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118625403">118625403</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q185085/">Q185085</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1139151.html">XX1139151</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/88844103/">88844103</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Emiferro, r.1.1, <date when="2013">2013</date>, <idno>5041</idno>, <ref target="https://www.epublibre.org/libro/detalle/5041"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1921">1921</date><idno source="k10plus" type="ppn" n="227337239" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227337239"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title>: 	<title type="sub">(novela)</title> <date when="1921">1921</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227337239" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227337239"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Tante Tula</title> <date when="1928">1928</date>, <publisher>Meyer &amp; Jessen</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="1113965061" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1113965061"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Tante Tula</title> <date when="1928">1928</date>, <publisher>Meyer &amp; Jessen</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="316246867" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=316246867"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Tante Tula</title>: 	<title type="sub">ein Frauenroman</title> <date when="1933">1933</date>, <publisher>Phaidon</publisher> <pubPlace>Wien;Leipzig</pubPlace> 		<idno type="ppn" n="1129141462" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1129141462"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía tula</title> <date when="1942">1942</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires [u.a.]</pubPlace> 		<idno type="ppn" n="1186497408" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1186497408"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1944">1944</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="731818628" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=731818628"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1944">1944</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46390012X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46390012X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1946">1946</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires;México</pubPlace> 		<idno type="ppn" n="464670101" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464670101"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía tula</title> <date when="1952">1952</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1184581207" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1184581207"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía tula</title> <date when="1956">1956</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1186291745" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1186291745"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1959">1959</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="643983309" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=643983309"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1969">1969</date>, <publisher>Salvat</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="641279159" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=641279159"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía tula</title> <date when="1972">1972</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1169075487" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1169075487"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1972">1972</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="101651185X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=101651185X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="1972">1972</date>, <publisher>Instituto Cubano del Libro</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="1016511639" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1016511639"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1972">1972</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="561627525" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=561627525"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1981">1981</date>, <publisher>Taurus</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="117767220" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=117767220"/> 		<idno type="isbn" n="8430641084"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Tante Tula</title>: 	<title type="sub">Roman</title> <date when="1982">1982</date>, <publisher>Ullstein</publisher> <pubPlace>Frankfurt/M.;Berlin;Wien</pubPlace> 		<idno type="ppn" n="015643662" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=015643662"/> 		<idno type="isbn" n="3548301363"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1985">1985</date>, <publisher>Ed. Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1622061357" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1622061357"/> 		<idno type="isbn" n="8432082937"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1987">1987</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1613102836" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1613102836"/> 		<idno type="isbn" n="8420602361"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1987">1987</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464848938" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464848938"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1987">1987</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="122007883" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=122007883"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1988">1988</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="313859744" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=313859744"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1989">1989</date>, <publisher>Taurus</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1621802876" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1621802876"/> 		<idno type="isbn" n="8430641084"/></bibl>
+						<bibl type="further-edition"><title type="main">La tía Tula</title> <date when="1989">1989</date>, <publisher>Catedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1621802698" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1621802698"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1990">1990</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1612114660" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1612114660"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition"><title type="main">La tía Tula</title> <date when="1992">1992</date>, <publisher>Catedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1619378957" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1619378957"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition"><title type="main">La tía Tula</title> <date when="1993">1993</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1603836365" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1603836365"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra [u.a.]</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1118115201" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1118115201"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">(Narrativa). Paz en la guerra. Amor y pedagogía. Niebla. Abel Sánchez. La tía Tula</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="213874253" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=213874253"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1996">1996</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="669696390" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=669696390"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1997">1997</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="246927984" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=246927984"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="tur"><title type="main">Tula teyze</title> <date when="1999">1999</date>, <publisher>Cumhuriyet</publisher> <pubPlace>[Istanbul]</pubPlace> 		<idno type="ppn" n="1154010627" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1154010627"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="1999">1999</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="302122567" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=302122567"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="2003">2003</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="39006288X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=39006288X"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="2005">2005</date>, <publisher>El Pais</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1622388186" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1622388186"/> 		<idno type="isbn" n="849815006X"/></bibl>
+						<bibl type="further-edition"><title type="main">La tía Tula</title> <date when="2005">2005</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1613112505" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1613112505"/> 		<idno type="isbn" n="843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="2009">2009</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="610383973" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=610383973"/> 		<idno type="isbn" n="9788437606569"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="2014">2014</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="839497431" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=839497431"/> 		<idno type="isbn" n="9788437606569;843760656X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tía Tula</title> <date when="2015">2015</date>, <publisher>Divisa Home Vídeo;Mercury Films</publisher> <pubPlace>Valladolid;[Madrid]</pubPlace> 		<idno type="ppn" n="725396652" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=725396652"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -159,6 +213,14 @@
 				<p>Tula asume el mando de la casa, que se compara con una colmena, en la que la realización de las obrereas como individuos no depende de la maternidad física, sino del oficio que desempeña.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8741" key="IP 8741" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">8</term>
 					<term type="author.continent">Europe</term>
@@ -191,9 +253,9 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">nivola</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">nivola</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -226,12 +288,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-07-22" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>PRÓLOGO: (QUE PUEDE SALTAR EL LECTOR DE NOVELAS)</head>
+				<head xml:id="ne0072_head_000">PRÓLOGO: (QUE PUEDE SALTAR EL LECTOR DE NOVELAS)</head>
 				<p>«Tenía uno (hermano) casi de mi edad, que era el que yo más quería, aunque a todos tenía gran amor y ellos a mí; juntábamonos entrambos a leer vidas de santos… Espantábanos mucho el decir en lo que leíamos que pena y gloria eran para siempre. Acaecíanos estar muchos ratos tratando desto, y gustábamos de decir muchas veces ¡para siempre, siempre, siempre! En pronunciar esto mucho rato era el Señor servido, me quedase en esta niñez imprimido el camino de la verdad. De que vi que era imposible ir adonde me matasen por Dios, ordenábamos ser ermitaños, y en una huerta que había en casa procurábamos, como podíamos, hacer ermitas poniendo unas piedrecillas, que luego se nos caían, y ansí no hallábamos remedio en nada para nuestro deseo; que ahora me pone devoción ver cómo me daba Dios tan presto lo que yo perdí por mi culpa».</p>
 				<milestone unit="section"/>
 				<p>«Acuérdome que cuando murió mi madre quedé yo de edad de doce años, poco menos; como yo comencé a entender lo que había perdido, afligida fuime a una imagen de Nuestra Señora y supliquéla fuese mi madre con muchas lágrimas. Paréceme que aunque se hizo con simpleza, que me ha valido, pues conocidamente he hallado a esta Virgen Soberana en cuanto me he encomendado a ella y, en fin, me ha tornado a sí».</p>
@@ -286,7 +349,7 @@
 
 
 			<div n="1" type="chapter" xml:id="ne0072_chap1">
-				<head>I</head>
+				<head xml:id="ne0072_head_001">I</head>
 				<p>Era a Rosa y no a su hermana Gertrudis, que siempre salía de casa con ella, a quien ceñían aquellas ansiosas miradas que les enderezaba Ramiro. O, por lo menos, así lo creían ambos, Ramiro y Rosa, al atraerse el uno al otro.</p>
 				<p>Formaban las dos hermanas, siempre juntas, aunque no por eso unidas siempre, una pareja al parecer indisoluble, y como un solo valor. Era la hermosura espléndida y algún tanto provocativa de Rosa, flor de carne que se abría a flor del cielo a toda luz y todo viento, la que llevaba de primera vez las miradas a la pareja; pero eran luego los ojos tenaces de Gertrudis los que sujetaban a los ojos que se habían fijado en ellos y los que a la par les ponían raya. Hubo quien al verlas pasar preparó algún chicoleo un poco más subido de tono; mas tuvo que contenerse al tropezar con el reproche de aquellos ojos de Gertrudis, que hablaban mudamente de seriedad. «Con esta pareja no se juega», parecía decir con sus miradas silenciosas.</p>
 				<p>Y bien miradas y de cerca aún despertaba más Gertrudis el ansia de goce. Mientras su hermana Rosa abría espléndidamente a todo viento y toda luz la flor de su encarnadura, ella era como un cofre cerrado y sellado en que se adivina un tesoro de ternuras y delicias secretas.</p>
@@ -402,7 +465,7 @@
 				<p>Por los ojos de Gertrudis pasó como la sombra de una nube de borrasca, y si se hubiera podido oír el silencio habríanse oído que en las bóvedas de los sótanos de su alma resonaba como un eco repetido y que va perdiéndose a lo lejos aquello de «o ella …».</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0072_chap2">
-				<head>II</head>
+				<head xml:id="ne0072_head_002">II</head>
 				<p>Pero ¿qué le pasaba a Ramiro, en relaciones ya, y en relaciones formales, con Rosa, y poco menos que entrando en la casa? ¿Qué dilaciones y qué frialdades eran aquéllas?</p>
 				<p>—Mira, Tula, yo no le entiendo; cada vez le entiendo menos. Parece que está siempre distraído y como si estuviese pensando en otra cosa —o en otra persona, ¡quién sabe!— o temiendo que alguien nos vaya a sorprender de pronto. Y cuando le tiro algún avance y le hablo, así como quien no quiere la cosa, del fin que deben tener nuestras relaciones, hace como que no oye y como si estuviera atendiendo a otra…</p>
 				<p>—Es porque le hablas como quien no quiere la cosa. Háblale como quien la quiere…</p>
@@ -485,7 +548,7 @@
 				<p>Al siguiente día se fijaba el de la boda.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0072_chap3">
-				<head>III</head>
+				<head xml:id="ne0072_head_003">III</head>
 				<p>Don Primitivo autorizó y bendijo la boda de Ramiro con Rosa. Y nadie estuvo en ella más alegre que lo estuvo Gertrudis. A tal punto, que su alegría sorprendió a cuantos la conocían, sin que faltara quien creyese que tenía muy poco de natural.</p>
 				<p>Fuéronse a su casa los recién casados, y Rosa reclamaba a ella de continuo la presencia de su hermana. Gertrudis le replicaba que a los novios les convenía soledad.</p>
 				<p>—Pero si es al contrario, hija, si nunca he sentido más tu falta; ahora es cuando comprendo lo que te quería.</p>
@@ -537,7 +600,7 @@
 				<p>Y desde entonces empezó Gertrudis a frecuentar más la casa de su hermana.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0072_chap4">
-				<head>IV</head>
+				<head xml:id="ne0072_head_004">IV</head>
 				<p>En el parto de Rosa, que fue durísimo, nadie estuvo más serena y valerosa que Gertrudis. Creeríase que era una veterana en asistir a trances tales. Llegó a haber peligro de muerte para la madre o la cría que hubiera de salir, y el médico llegó a hablar de sacársela viva o muerta.</p>
 				<p>—¿Muerta? —exclamó Gertrudis—; ¡eso sí que no!</p>
 				<p>—¿Pero no ve usted —exclamó el médico— que aunque se muera el crío queda la madre para hacer otros, mientras que si se muere ella no es lo mismo?</p>
@@ -592,7 +655,7 @@
 				<p>Y así pasaba el tiempo y llegó otra cría, una niña.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0072_chap5">
-				<head>V</head>
+				<head xml:id="ne0072_head_005">V</head>
 				<p>A poco de nacer la niña encontraron un día muerto al bueno de don Primitivo. Gertrudis le amortajó después de haberle lavado —quería que fuese limpio a la tumba— con el mismo esmero con que había envuelto en pañales a sus sobrinos recién nacidos. Y a solas en el cuarto con el cuerpo del buen anciano, le lloró como no se creyera capaz de hacerlo. «Nunca habría creído que le quisiese tanto —se dijo—; era un bendito; de poco llega a hacerme creer que soy un pozo de prudencia; ¡era sencillo!».</p>
 				<p>—Fue nuestro padre —le dijo a su hermana— y jamás le oímos una palabra más alta que otra.</p>
 				<p>—¡Claro! —exclamó Rosa—; como que siempre nos dejó hacer nuestra santísima voluntad.</p>
@@ -631,7 +694,7 @@
 				<p>Y allá seguía yendo, a las veces desde muy temprano, encontrándose con el niño ya levantado, pero no así sus padres. «Cuando digo que hago yo aquí falta», se decía.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0072_chap6">
-				<head>VI</head>
+				<head xml:id="ne0072_head_006">VI</head>
 				<p>Venía ya el tercer hijo al matrimonio. Rosa empezaba a quejarse de su fecundidad. «Vamos a cargamos de hijos», decía. A lo que su hermana: «¿Pues para qué os habéis casado?».</p>
 				<p>El embarazo fue molestísimo para la madre y tenía que descuidar más que antes a sus otros hijos, que así quedaban al cuidado de su tía, encantada de que se los dejasen. Y hasta consiguió llevárselos más de un día a su casa, a su solitario hogar de soltera, donde vivía con la vieja criada que fue de don Primitivo, y donde los retenía. Y los pequeñuelos se apegaban con ciego cariño a aquella mujer severa y grave.</p>
 				<p>Ramiro, malhumorado antes en los últimos meses de los embarazos de su mujer, malhumor que desasosegaba a Gertrudis, ahora lo estaba más.</p>
@@ -715,7 +778,7 @@
 				<p>—Bueno; ahora a criarlos, te digo.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0072_chap7">
-				<head>VII</head>
+				<head xml:id="ne0072_head_007">VII</head>
 				<p>Ahora, ahora que se había quedado viudo, era cuando Ramiro sentía todo lo que sin él siquiera sospecharlo había querido a Rosa, su mujer. Uno de sus consuelos, el mayor, era recogerse en aquella alcoba en que tanto habían vivido amándose y repasar su vida de matrimonio.</p>
 				<p>Primero el noviazgo, aquel noviazgo, aunque no muy prolongado, de lento reposo, en que Rosa parecía como que le hurtaba el fondo del alma siempre, y como si por acaso no la tuviese o haciéndole pensar que no la conocería hasta que fuese suya del todo y por entero; aquel noviazgo de recato y de reserva, bajo la mirada de Gertrudis, que era todo alma. Repasaba en su mente Ramiro, lo recordaba bien, cómo la presencia de Gertrudis, la tía Tula de sus hijos, le contenía y desasosegaba, cómo ante ella no se atrevía a soltar ninguna de esas obligadas bromas entre novios, sino a medir sus palabras.</p>
 				<p>Vino luego la boda y la embriaguez de los primeros meses, de las lunas de miel; Rosa iba abriéndole el espíritu, pero era este tan sencillo, tan transparente, que cayó en la cuenta Ramiro de que no le había velado ni recatado nada. Porque su mujer vivía con el corazón en la mano y extendía esta en gesto de oferta, y con las entrañas espirituales al aire del mundo, entregada por entero al cuidado del momento, como viven las rosas del campo y las alondras del cielo. Y era a la vez el espíritu de Rosa como un reflejo del de su hermana, como el agua corriente al sol de que aquel era el manantial cerrado.</p>
@@ -731,7 +794,7 @@
 				<p>No, Rosa, su Rosa, no se había muerto, no era posible que se le hubiese muerto; la mujer estaba allí, tan viva como antes, y derramando vida en torno; la mujer no podía morir.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0072_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0072_head_008">VIII</head>
 				<p>Gertrudis, que se había instalado en casa de su hermana desde que esta dio por última vez a luz y durante su enfermedad última, le dijo un día a su cuñado:</p>
 				<p>—Mira, voy a levantar mi casa.</p>
 				<p>El corazón de Ramiro se puso al galope.</p>
@@ -834,7 +897,7 @@
 				<p>—Los niños lo comprenden todo; más que nosotros. Y no olvidan nada. Y si ahora no lo comprenden, lo comprenderán mañana. Cada cosa de estas que ve u oye un niño es una semilla en su alma, que luego echa tallo y da fruto. ¡Y basta!</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0072_chap9">
-				<head>IX</head>
+				<head xml:id="ne0072_head_009">IX</head>
 				<p>Y empezó una vida de triste desasosiego, de interna lucha en aquel hogar. Ella defendíase con los niños, a los que siempre procuraba tener presentes, y le excitaba a él a que saliese a distraerse. Él, por su parte, extremaba sus caricias a los hijos y no hacía sino hablarles de su madre, de su pobre madre. Cogía a la niña y allí, delante de la tía, se la devoraba a besos.</p>
 				<p>—No tanto, hombre, no tanto, que así no haces sino molestar a la pobre criatura. Y eso, permíteme que te lo diga, no es natural. Bien está que hagas que me llamen tía y no mamá, pero no tanto; repórtate.</p>
 				<p>—¿Es que yo no he de tener el consuelo de mis hijos?</p>
@@ -918,7 +981,7 @@
 				<p>—¡Para la elección, sí!</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0072_chap10">
-				<head>X</head>
+				<head xml:id="ne0072_head_010">X</head>
 				<p>Y era lo cierto que en el alma cerrada de Gertrudis se estaba desencadenando una brava galerna. Su cabeza reñía con su corazón, y ambos, corazón y cabeza, reñían en ella con algo más ahincado, más entrañado, más íntimo, con algo que era como el tuétano de los huesos de su espíritu.</p>
 				<p>A solas, cuando Ramiro estaba ausente del hogar, cogía al hijo de este y de Rosa, a Ramirín, al que llamaba su hijo, y se lo apretaba al seno virgen, palpitante de congoja y henchido de zozobra. Y otras veces se quedaba contemplando el retrato de la que fue, de la que era todavía su hermana y como interrogándole si había querido, de veras, que ella, que Gertrudis, le sucediese en Ramiro. «Sí, me dijo que yo habría de llegar a ser la mujer de su hombre, su otra mujer —se decía—, pero no pudo querer eso, no, no pudo quererlo…; yo, en su caso, al menos, no lo habría querido, no podría haberlo querido… ¿De otra? ¡No, de otra no! Ni después de mi muerte… Ni de mi hermana… ¡De otra, no! No se puede ser más que de una… No, no pudo querer eso; no pudo querer que entre él, entre su hombre, entre el padre de sus hijos y yo se interpusiese su sombra… No pudo querer eso. Porque cuando él estuviese a mi lado, arrimado a mí, carne a carne, ¿quién me dice que no estuviese pensando en ella? Yo no sería sino el recuerdo… ¡algo peor que el recuerdo de la otra! No, lo que me pidió es que impida que sus hijos tengan madrastra. ¡Y lo impediré! Y casándome con Ramiro, entregándole mi cuerpo, y no sólo mi alma, no lo impediría… Porque entonces sí que sería madrastra. Y más si llegaba a darme hijos de mi carne y de mi sangre…». Y esto de los hijos de la carne hacía palpitar de sagrado terror el tuétano de los huesos del alma de Gertrudis, que era toda maternidad, pero maternidad de espíritu.</p>
 				<p>Y encerrábase en su cuarto, en su recatada alcoba, a llorar al pie de una imagen de la Santísima Virgen Madre, a llorar mientras susurraba: «el fruto de tu vientre…».</p>
@@ -950,7 +1013,7 @@
 				<p>—Basta. Y no busques madrastra para tus hijos, que tienen madre.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0072_chap11">
-				<head>XI</head>
+				<head xml:id="ne0072_head_011">XI</head>
 				<p>«Esto necesita campo», se dijo Gertrudis, a indicó a Ramiro la conveniencia de que todos ellos se fuesen a veranear a un pueblecito costero que tuviese montaña, dominando al mar y por este dominada. Buscó un lugar que no fuese muy de moda, pero donde Ramiro pudiese encontrar compañeros de tresillo, pues tampoco le quería obligado a la continua compañía de los suyos. Era un género de soledad a que Gertrudis temía.</p>
 				<p>Allí todos los días salían de paseo, por la montaña, dando vistas al mar, entre madroñales, ellos dos, Gertrudis y Ramiro, y los tres niños: Ramirín, Rosita y Elvira. Jamás, ni aun allí donde no los conocían —es decir, allí menos—, se hubiese arriesgado Gertrudis a salir de paseo con su cuñado, solos los dos. Al llegar a un punto en que un tronco tendido en tierra, junto al sendero, ofrecía, a modo de banco rústico, asiento, sentábanse en él ellos dos, cara al mar, mientras los niños jugaban allí cerca, lo más cerca posible. Una vez en que Ramiro quiso que se sentaran en el suelo, sobre la yerba montañesa, Gertrudis le contestó: «¡No, en el suelo, no! Yo no me siento en el suelo, sobre la tierra, y menos junto a ti y ante los niños…». «Pero si el suelo está limpio… si hay yerba…». «¡Te he dicho que no me siento así!». «No, la postura no es cómoda…». «¡Peor que incómoda!».</p>
 				<p>Desde aquel tronco, mirando al mar, hablaban de mil nonadas, pues en cuanto el hombre deslizaba la conversación a senderos de lo por pacto tácito ya vedado de hablar entre ellos, la tía tenía en la boca un «¡Ramirín!» o «¡Rosita!» o «¡Elvira!». Le hablaba ella del mar y eran sus palabras, que le llegaban a él envueltas en el rumor no lejano de las olas, como la letra vaga de un canto de cuna para el alma. Gertrudis estaba brizando la pasión de Ramiro para adormecérsela. No le miraba casi nunca entonces, miraba al mar; pero en él, en el mar, veía reflejada por misterioso modo la mirada del hombre. El mar purísimo les unía las miradas y las almas.</p>
@@ -979,7 +1042,7 @@
 				<p>En la ciudad estaba su convento, su hogar, y en él su celda. Y allí adormecería mejor a su cuñado. ¡Oh!, si pudiese decir de él —pensaba— lo que santa Teresa en una carta —Gertrudis leía mucho a santa Teresa— decía de su cuñado don Juan de Ovalle, marido de doña Juana de Ahumada. «Él es de condición en cosas muy aniñado…». ¿Cómo le aniñaría?</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0072_chap12">
-				<head>XII</head>
+				<head xml:id="ne0072_head_012">XII</head>
 				<p>Al fin Gertrudis no pudo con su soledad y decidió llevar su congoja al padre Alvarez, su confesor, pero no su director espiritual. Porque esta mujer había rehuido siempre ser dirigida, y menos por un hombre. Sus normas de conducta moral, sus convicciones y creencias religiosas se las había formado ella con lo que oía a su alrededor y con lo que leía, pero las interpretaba a su modo. Su pobre tío, don Primitivo, el sacerdote ingenuo que las había criado a las dos hermanas y les enseñó el catecismo de la doctrina cristiana explicado según el Mazo, sintió siempre un profundo respeto por la inteligencia de su sobrina Tula, a la que admiraba. «Si te hicieses monja —solía decirle— llegarías a ser otra santa Teresa… Qué cosas se te ocurren, hija …». Y otras veces: «Me parece que eso que dices, Tulilla, huele un poco a herejía; ¡hum! No lo sé…, no lo sé… porque no es posible que te inspire herejías el ángel de tu guarda, pero eso me suena así como a… qué sé yo …». Y ella le contestaba riendo: «Sí, tío, son tonterías que se me ocurren, y ya que dice usted que huele a herejía no lo volveré a pensar». Pera ¿quién pone barreras al pensamiento?</p>
 				<p>Gertrudis se sintió siempre sola. Es decir, sola para que la ayudaran, porque para ayudar ella a los otros no, no estaba sola. Era como una huérfana cargada de hijos. Ella sería el báculo de todos los que la rodearan; pero si sus piernas flaquearan, si su cabeza no le mantuviese firme en su sendero, si su corazón empezaba a bambolear y enflaquecer, ¿quién la sostendría a ella?, ¿quién sería su báculo? Porque ella, tan henchida del sentimiento, de la pasión mejor, de la maternidad, no sentía la filialidad. «¿No es esto orgullo?», se preguntaba.</p>
 				<p>No pudo al fin con esta soledad y decidió llevar a su confesor, al padre Álvarez, su congoja. Y le contó la declaración y proposición de Ramiro, y hasta lo que les había dicho a los niños de que no le llamasen a ella todavía madre, y las razones que tenía para mantener la pureza de aquel hogar y cómo no quería entregarse a hombre alguno, sino reservarse para mejor consagrarse a los hijos de Rosa.</p>
@@ -1062,7 +1125,7 @@
 				<p>Y dicho esto, se levantó de junto al confesonario. Le costaba andar; tan doloridas le habían quedado del arrodillamiento las rodillas. Y a la vez le dolían las articulaciones del alma y sentía su soledad más hondamente que nunca. «¡No, no me entiende —se decía—, no me entiende; hombre al fin! Pero ¿me entiendo yo misma? ¿Es que me entiendo? ¿Le quiero o no le quiero? ¿No es soberbia esto? ¿No es la triste pasión solitaria del armiño, que por no mancharse no se echa a nado en un lodazal a salvar a su compañero …? No lo sé… no lo sé…».</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0072_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0072_head_013">XIII</head>
 				<p>Y de pronto observó Gertrudis que su cuñado era otro hombre, que celaba algún secreto, que andaba caviloso y desconfiado, que salía mucho de casa. Pero aquellas más largas ausencias del hogar no le engañaron. El secreto estaba en él, en el hogar. Y a fuerza de paciente astucia logró sorprender miradas de conocimiento íntimo entre Ramiro y la criada de servicio.</p>
 				<p>Era Manuela una hospiciana de diecinueve años, enfermiza y pálida, de un brillo febril en los ojos, de maneras sumisas y mansas, de muy pocas palabras, triste casi siempre. A ella, a Gertrudis, ante quien sin saber por qué temblaba, llamábale «señora». Ramiro quiso hacer que le llamase «señorita».</p>
 				<p>—No, llámame así, señora; nada de señorita…</p>
@@ -1159,7 +1222,7 @@
 				<p>—Cásate con ella, y se acabó.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0072_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0072_head_014">XIV</head>
 				<p>Una profunda tristeza henchía aquel hogar después del matrimonio de Ramiro con la hospiciana. Y esta parecía aún más que antes la criada, la sirvienta, y más que nunca Gertrudis el ama de la casa. Y esforzábase esta más que nunca por mantener al nuevo matrimonio apartado de los niños, y que estos se percataran lo menos posible de aquella convivencia íntima. Mas hubo que tomar otra criada y explicar a los pequeños el caso.</p>
 				<p>Pero, ¿cómo explicarles el que la antigua criada se sentara a la mesa a comer a los de casa? Porque esto exigió Gertrudis.</p>
 				<p>—Por Dios, señora —suplicaba la Manuela—, no me avergüence así…, mire que me avergüenza… Hacerme que me siente a la mesa con los señores, y sobre todo con los niños…, y que hable de tú al señorito…, ¡eso nunca!</p>
@@ -1209,7 +1272,7 @@
 				<p>—Sí, tú crees que yo no soy más que pensamiento…</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0072_chap15">
-				<head>XV</head>
+				<head xml:id="ne0072_head_015">XV</head>
 				<p>De nuevo la pobre Manuela, la hospiciana, la esclava, hallábase preñada. Y Ramiro muy malhumorado con ello.</p>
 				<p>—Como si uno no tuviese bastante con los otros… —decía.</p>
 				<p>—¡Y yo qué quieres que le haga! —exclamaba la víctima.</p>
@@ -1284,7 +1347,7 @@
 				<p>Al siguiente día llevó a los niños al lecho del padre, ya sacramentado y moribundo; los levantó uno a uno y les hizo que le besaran. Luego fue, apoyada en ella, en Gertrudis, Manuela, y de poco se muere de la congoja que le dio sobre el enfermo. Hubo que sacarla y acostarla. Y poco después, cogido de una mano a otra de Gertrudis, y susurrando: «¡Adiós, mi Tula!», rindió el espíritu con el último huelgo Ramiro. Y ella, la tía, vació su corazón en sollozos de congoja sobre el cuerpo exánime del padre de sus hijos, de su pobre Ramiro.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0072_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0072_head_016">XVI</head>
 				<p>Apenas, fuera de la soberana, hubo abatimiento en aquel hogar, pues los niños eran incapaces de darse cuenta de lo que había pasado, y Manuela, la viuda casi sin saberlo, concentraba su vida y su ánimo todos en luchar, al modo de una planta, por la otra vida que llevaba en su seno y aun repitiendo, como un gemido de res herida, que se quería morir. Gertrudis proveía a todo.</p>
 				<p>Cerró los ojos al muerto, no sin decirse: «¿Me estará mirando todavía…?». Le amortajó como lo había hecho con su tío, cubriéndole con un hábito sobre la ropa con que murió, y sin quitarle esta, y luego, quebrantada pór un largo cansancio, por fatiga de años, juntó un momento su boca a la boca fría de Ramiro, y repasó sus vidas, que era su vida. Cuando el llanto de uno de los niños, del pequeñito, del hijo de la hospiciana, le hizo desprenderse del muerto a ir a coger y acallar y mimar al que vivía.</p>
 				<p>Manuela iba hundiéndose.</p>
@@ -1302,7 +1365,7 @@
 				<p>¿Y los pobres niños de la hospiciana? «Esos también son míos —pensaba Gertrudis—; tan míos como los otros, como los de mi hermana, más míos aún. Porque estos son hijos de mi pecado. ¿Del mío? ¿No más bien el de él? ¡No, de mi pecado! ¡Son los hijos de mi pecado! ¡Sí, de mi pecado! ¡Pobre chica!». Y le preocupaba sobre todo la pequeñita.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0072_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0072_head_017">XVII</head>
 				<p>Gertrudis, molesta por las insinuaciones de don Juan, el médico, que menudeaba las visitas para los niños, y aun pretendió verla a ella como enferma, cuando no sabía que adoleciese de cosa alguna, le anunció un día hallarse dispuesta a cambiar de médico.</p>
 				<p>—¿Cómo así, Gertrudis?</p>
 				<p>—Pues muy claro: le observo a usted singularidades que me hacen temer que está entrando en la chochera de una vejez prematura, y para médico necesitamos un hombre con el seso bien despejado y despierto.</p>
@@ -1339,7 +1402,7 @@
 				<p>Pero ¿quién enfrenaba a un pensamiento que mordía en el fruto de la ciencia del mal? «¡El cristianismo, al fin, y a pesar de la Magdalena, es religión de hombres —se decía Gertrudis—; masculinos el Padre, el Hijo y el Espíritu Santo …!». Pero ¿y la Madre? La religión de la Madre está en: «He aquí la criada del Señor; hágase en mí según tu palabra» y en pedir a su Hijo que provea de vino a unas bodas, de vino que embriaga y alegra y hace olvidar penas, y para que el Hijo le diga: «¿Qué tengo yo que ver contigo, mujer? Aún no ha venido mi hora». ¿Qué tengo que ver contigo …? Y llamarle mujer y no madre… Y volvió a santiguarse, esta vez con verdadero temblor. Y es que el demonio de su guarda —así creía ella— le susurró: «¡Hombre al fin!».</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0072_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0072_head_018">XVIII</head>
 				<p>Corrieron unos años apacibles y serenos. La orfandad daba a aquel hogar, en el que de nada de bienestar se carecía, una íntima luz espiritual de serena calma. Apenas si había que pensar en el día de mañana. Y seguían en él viviendo, con más dulce imperio que cuando respirando llenaban con sus cuerpos sus sitios, los tres que le dieron a Gertrudis masa con qué fraguarlo, Ramiro y sus dos mujeres de carne y hueso. De continuo hablaba Gertrudis de ellos a sus hijos. «¡Mira que te está mirando tu madre!» o «¡Mira que te ve tu padre!». Eran sus dos más frecuentes amonestaciones. Y los retratos de los que se fuéron presidían el hogar de los tres.</p>
 				<p>Los niños, sin embargo, íbanlos olvidando. Para ellos no existían sino en las palabras de mamá Tula, que así la llamaban todos. Los recuerdos directos del mayorcito, de Ramirín, se iban perdiendo y fundiendo en los recuerdos de lo que de ellos oía contar a su tía. Sus padres eran ya para él una creación de esta.</p>
 				<p>Lo que más preocupaba a Gertrudis era evitar que entre ellos naciese la idea de una diferencia, de que había dos madres, de que no eran sino medio hermanos. Mas no podía evitarlo. Sufrió en un principio la tentación de decirles que las dos, Rosa y Manuela, eran, como ella misma, madres de todos ellos, pero vio la imposibilidad de mantener mucho tiempo el equívoco; y, sobre todo, el amor a la verdad, un amor en ella desenfrenado, le hizo rechazar tal tentación al punto.</p>
@@ -1374,7 +1437,7 @@
 				<p>Alguna vez la criatura se vomitó sobre aquella cama, limpia siempre hasta entonces como una patena, y de pronto sintió Gertrudis la punzada de la mancha. Su pasión morbosa por la pureza, de que procedía su culto místico a la limpieza, sufrió entonces, y tuvo que esforzarse para dominarse. Comprendía, sí, que no cabe vivir sin mancharse y que aquella mancha era inocentísima, pero los cimientos de su espíritu se conmovían dolorosamente con ello. Y luego le apretaba a la criaturita contra sus pechos pidiéndole perdón en silencio por aquella tentación de su pureza.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0072_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0072_head_019">XIX</head>
 				<p>Fuera de este cuidado maternal por la pobre criaturita de la muerte de Manuela, cuidado que celaba una expiación y un culto místicos, y sin desatender a los otros y esforzándose por no mostrar preferencias a favor de los de su sangre, Gertrudis se preocupaba muy en especial de Ramirín y seguía su educación paso a paso, vigilando todo lo que en él pudiese recordar rasgos de su padre, a quien físicamente se parecía mucho. «Así sería a su edad», pensaba la tía y hasta buscó y llegó a encontrar entre los papeles de su cuñado retratos de cuando este era un chicuelo, y los miraba y remiraba para descubrir en ellos al hijo. Porque quería hacer de este lo que de aquel habría hecho a haberle conocido y podido tomar bajo su amparo y crianza cuando fue un mozuelo a quien se le abrían los caminos de la vida. «Que no se equivoque como él —se decía—, que aprenda a detenerse para elegir, que no encadene la voluntad antes de haberla asentado en su raíz viva, en el amor perfecto y bien alumbrado, a la luz que le sea propia». Porque ella creía que no era al suelo, sino al cielo, a lo que había que mirar antes de plantar un retoño; no al mantillo de la tierra, sino a las razas de lumbre que del sol le llegaran, y que crece mejor el arbolito que prende sobre una roca al solano dulce del mediodía que no el que sobre un mantillo vicioso y graso se alza a la umbría. La luz era la pureza.</p>
 				<p>Fue con Ramirín aprendiendo todo lo que él tenía que aprender, pues le tomaba a diario las lecciones. Y así satisfacía aquella ansia por saber que desde niña le había aquejado y que hizo que su tío le comparase alguna vez con Eva. Y de entre las cosas que aprendió con su sobrino y para enseñárselas, pocas le interesaron más que la geometría. ¡Nunca lo hubiese ella creído! Y es que en aquellas demostraciones de la geometría, ciencia árida y fría al sentir de los más, encontraba Gertrudis un no sabía qué de luminosidad y de pureza. Años después, ya mayor Ramirín, y cuando el polvo que fue la carne de su tía reposaba bajo tierra, sin luz de sol, recordaba el entusiasmo con que un día de radiante primavera le explicaba cómo no puede haber más que cinco y sólo cinco poliedros regulares; tres formados de triángulos: el tetraedro, de cuatro; el octaedro, de ocho, y el icosaedro, de veinte; uno de cuadrados: el cubo, de seis, y uno de pentágonos: el dodecaedro, de doce. «Pero ¿no ves qué claro?», me decía —contaba el sobrino—, «¿no lo ves?, sólo cinco y no más, ¡qué bonito! Y no puede ser de otro modo, tiene que ser así», y al decirlo me mostraba los cinco modelos en cartulina blanca, blanquísima, que ella misma había construido, con sus santas manos, que eran prodigiosas para toda labor, y parecía como si acabase de descubrir por sí misma la ley de los cinco poliedros regulares…, ¡pobre tía Tula! Y recuerdo que como a uno de aquellos modelos geométricos le cayera una mancha de grasa, hizo otro, porque decía que con la mancha no se veía bien la demostración. Para ella la geometría era luz y pureza.</p>
 				<p>En cambio huyó de enseñarle anatomía y fisiología. «Esas son porquerías —decía— y en que nada se sabe de cierto ni de claro».</p>
@@ -1409,7 +1472,7 @@
 				<p>—Por amor propio, padre —y estalló a llorar.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0072_chap20">
-				<head>XX</head>
+				<head xml:id="ne0072_head_020">XX</head>
 				<p>Logró sacar a su sobrino de aquellas veleidades ascéticás y se puso a vigilarle, a espiar la aparición del primer amor. «Fíjate bien, hijo —le decía—, y no te precipites, que una vez que hayas comprometido a una no debes dejarla…».</p>
 				<p>—Pero, mamá, si no se trata de compromisos… Primero hay que probar…</p>
 				<p>—No, nada de pruebas; nada de esos noviazgos; nada de eso de «hablo con Fulana». Todo seriamente…</p>
@@ -1447,7 +1510,7 @@
 				<p>—Puede ser… puede ser.. No me los he mirado nunca de cerca ni puedo vérmelos desde dentro, pero puede ser… puede ser.. Al menos le he enseñado a mirar…</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0072_chap21">
-				<head>XXI</head>
+				<head xml:id="ne0072_head_021">XXI</head>
 				<p>¿Qué le pasaba a la pobre Gertrudis que se sentía derretir por dentro? Sin duda había cumplido su misión en el mundo. Dejaba a su sobrino mayor, a su Ramiro, a su otro Ramiro, a cubierto de la peor tormenta, embarcado en su barca de por vida, y a los otros hijos al amparo de él; dejaba un hogar encendido y quien cuidase de su fuego. Y se sentía deshacer. Sufría frecuentes embaimientos, desmayos, y durante días enteros lo veía todo como en niebla, como si fuese bruma y humo todo. Y soñaba; soñaba como nunca había soñado. Soñaba lo que habría sido si Ramiro hubiese dejado por ella a Rosa. Y acababa diciéndose que no habrían sido de otro modo las cosas. Pero ella había pasado por el mundo fuera del mundo. El padre Alvarez creía que la pobre Gertrudis chocheaba antes de tiempo, que su robusta inteligencia flaqueaba y que flaqueaba el peso mismo de su robustez. Y tenía que defenderla de aquellas sus viejas tentaciones.</p>
 				<p>Cuando un día se le acercó Caridad y, al oído, le dijo: «¡Madre…!», al notarle el rubor que le encendía el rostro, exclamó: «¿Qué? ¿Ya?». «¡Sí, ya!», susurró la muchacha. «¿Estás segura?». «¡Segura; si no, no te lo habría dicho!». Y Gertrudis, en medio de su goce, sintió como si una espada de hielo le atravesase por medio el corazón. Ya no tenía que hacer en el mundo más que esperar al nieto, al nieto de los suyos, de su Ramiro y su Rosa, a su nieto, a ir luego a darles la buena nueva. Ya apenas se cuidaba más que de Caridad, que era quien para ella llenaba la casa. Hasta de Manolita, de su obra, se iba descuidando, y la pobre niña lo sentía; sentía que el esperado iba relegándole en la sombra.</p>
 				<p>—Ven acá —le decía Gertrudis a Caridad, cuando alguna vez se encontraban a solas, ocasión que acechaba—, ven acá, siéntate aquí, a mi lado… ¿Qué, le sientes, hija mía, le sientes?</p>
@@ -1516,7 +1579,7 @@
 				<p>—Más me perjudica cavilar, y si me callo cavilo…, cavilo…</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0072_chap22">
-				<head>XXII</head>
+				<head xml:id="ne0072_head_022">XXII</head>
 				<p>La tía Tula no podía ya más con su cuerpo. El alma le revoloteaba dentro de él, como un pájaro en una jaula que se desvencija, a la que deja con el dolor de quien le desollaran, pero ansiando volar por encima de las nubes. No llegaría a ver al nieto. ¿Lo sentía? «Allá arriba, estando con ellos —soñaba—, sabré cómo es, y si es niño o niña… o los dos… y lo sabré mejor que aquí, pues desde allí arriba se ve mejor y más limpio lo de aquí abajo».</p>
 				<p>La última fiebre teníala postrada en cama. Apenas si distinguía a sus sobrinos más que por el paso, sobre todo a Caridad y a Manolita. El paso de aquella, de Caridad, llegábale como el de una criatura cargada de fruto y hasta le parecía oler a sazón de madurez. Y el de Manolita era tan leve como el de un pajarito que no se sabe si corre o vuela a ras de tierra. «Cuando ella entra —se decía la tía—, siento rumor de alas caídas y quietas».</p>
 				<p>Quiso despedirse primero de esta, a solas, y aprovechó un momento en que vino a traerle la medicina. Sacó el brazo de la cama, lo alargó como para bendecirla, y poniéndole la mano sobre la cabeza, que ella inclinó con los claros ojos empañados, le dijo:</p>
@@ -1564,7 +1627,7 @@
 				<p>El mal pensamiento era que el susurro diabólico allá, en el fondo de las entrañas doloridas con el dolor de la partida, le decía: «¡Muñecos todos!».</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0072_chap23">
-				<head>XXIII</head>
+				<head xml:id="ne0072_head_023">XXIII</head>
 				<p>Luego llamó a todos, y Caridad entre ellos.</p>
 				<p>—Esto es, hijos míos, la última fiebre, el principio de fuego del Purgatorio…</p>
 				<p>—Pero qué cosas dices, mamá…</p>
@@ -1588,7 +1651,7 @@
 				<p>Le dio un desmayo. Al volver de él no coordinaba los pensamientos. Entró luego en una agonía dulce. Y se apagó como se apaga una tarde de otoño cuando las últimas razas del sol, filtradas por nubes sangrientas, se derriten en las aguas serenas de un remanso del río en que se reflejan los álamos —sanguíneo su follaje también— que velan a sus orillas.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0072_chap24">
-				<head>XXIV</head>
+				<head xml:id="ne0072_head_024">XXIV</head>
 				<p>¿Murió la tía Tula? No, sino que empezó a vivir en la familia, a irradiando de ella, con una nueva vida más entrañada y más vivífica, con la vida eterna de la familiaridad inmortal. Ahora era ya para sus hijos, sus sobrinos, la Tía, no más que la Tía, ni <seg rend="italic">madre</seg> ya ni <seg rend="italic">mamá</seg>, ni aun tía Tula, sino sólo la Tía. Fue este nombre de invocación, de verdadera invocación religiosa, como el canonizamiento doméstico de una santidad de hogar. La misma Manolita, su más hija y la más heredera de su espíritu, la depositaria de su tradición, no le llamaba sino la Tía.</p>
 				<p>Mantenía la unidad y la unión de la familia, y si al morir ella afloraron a la vista de todos, haciéndose patentes, divisiones intestinas antes ocultas, alianzas defensivas y ofensivas entre los hermanos, fue porque esas divisiones brotaban de la vida misma familiar que ella creó. Su espíritu provocó tales disensiones y bajo de ellas y sobre ellas la unidad fundamental y culminante de la familia. La tía Tula era el cimiento y la techumbre de aquel hogar.</p>
 				<p>Formáronse en este dos grupos: de un lado, Rosita, la hija mayor de Rosa, aliada con Caridad, con su cuñada, y no con su hermano, no con Ramiro; de otro, Elvira, la segunda hija de Rosa, con Enrique, su hermanastro, el hijo de la hospiciana, y quedaban fuera Ramiro y Manolita.</p>
@@ -1628,7 +1691,7 @@
 				<p>Y Manolita, viéndoles alejarse, quedó diciéndose: «¿Chiquillos? ¡En efecto, chiquillos! Pero ¿he hecho bien en decirles lo que les he dicho? ¿He hecho bien, Tía? —e invocaba mentalmente a la Tía—. La intención viene después… ¿No soy yo la que con mis reconvenciones voy a darles una intención que les falta? Pero, ¡no, no! ¡Que no jueguen así! ¡Porque están jugando …! ¡Y ojalá les salga pronto el novio a ella y la novia a él!».</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0072_chap25">
-				<head>XXV</head>
+				<head xml:id="ne0072_head_025">XXV</head>
 				<p>El otro grupo lo formaban en la familia, no Rosita y Ramiro, sino la mujer de este, Caridad, y aquella su cuñada. Aunque en rigor era Rosita la que buscaba a Caridad y le llevaba sus quejas, sus aprensiones, sus suspicacias. Porque iba, por lo común, a quejarse. Creíase, o al menos aparentaba creer, que era la desdeñada y la no comprendida. Poníase triste y como preocupada en espera de que le preguntasen qué era lo que tenía, y como nadie se lo preguntaba sufría con ello. Y menos que los otros hermanos se lo preguntaba Manolita, que se decía: «¡Si tiene algo de verdad y más que gana de mimo y de que nos ocupemos especialmente en ella, ya reventará!». Y la preocupada sufría con ello.</p>
 				<p>A su cuñada, a Caridad, le iba sobre todo con quejas de su marido; complacíase en acusar a este, a Ramiro, de egoísta. Y la mujer le oía pacientemente y sin saber qué decirle.</p>
 				<p>—Yo no sé, Manuela —le decía a esta Caridad, su cuñada—, qué hacer con Rosa… Siempre me está viniendo con quejas de Ramiro; que si es un orgulloso, que si un egoísta, que si un distraído…</p>
@@ -1899,9 +1962,9 @@
 		</body>
 		<back>
 			<div>
-				<head>COMO SE HACE: UNA NOVELA</head>
+				<head xml:id="ne0072_head_026">COMO SE HACE: UNA NOVELA</head>
 				<div>
-					<head>COMO SE HACE UNA NOVELA</head>
+					<head xml:id="ne0072_head_027">COMO SE HACE UNA NOVELA</head>
 					<p>Héteme aquí ante estas blancas páginas —blancas como el negro porvenir: ¡terrible blancura!— buscando retener el tiempo que pasa, fijar el huidero hoy, eternizarme o inmortalizarme en fin, bien que eternidad e inmortalidad no sean una sola y misma cosa. Héteme aquí ante estas páginas blancas, mi porvenir, tratando de derramar mi vida a fin de continuar viviendo, de darme la vida, de arrancarme a la muerte de cada instante. Trato, a la vez, de consolarme de mi destierro, del destierro de mi eternidad, de este destierro al que quiero llamar mi des-cielo.</p>
 					<p>¡El destierro!, ¡la proscripción!, y ¡qué de experiencias íntimas, hasta religiosas, le debo! Fue entonces allí, en aquella isla de Fuenteventura, a la que querré eternamente y desde el fondo de mis entrañas, en aquel asilo de Dios, y después aquí, en París, henchido y desbordante de historia humana, universal, donde he escrito mis sonetos, que alguien ha comparado, por el origen y la intención, a los <seg rend="italic">Castigos</seg> escritos contra la tiranía de Napoleón el Pequeño por Víctor Hugo en su isla de Guernesey. Pero no me bastan, no estoy en ellos con todo mi yo del destierro, me parecen demasiado poca cosa para eternizarme en el presente fugitivo, en este espantoso presente histórico, ya que la historia es la posibilidad de los espantos.</p>
 					<p>Recibo a poca gente; paso la mayor parte de mis mañanas solo, en esta jaula cercana a la plaza de los Estados Unidos. Después del almuerzo voy a la Rotonda de Montparnasse, esquina del bulevar Raspail, donde tenemos una pequeña reunión de españoles, jóvenes estudiantes la mayoría y comentamos las raras noticias que nos llegan de España, de la nuestra y de la de los otros, y recomenzamos cada día a repetir las mismas cosas, levantando, como aquí se dice, castillos en Españas. A esa Rotonda se le sigue llamando acá por algunos la de Trotski, pues parece que allí acudía, cuando desterrado en París, ese caudillo ruso bolchevique.</p>
@@ -2073,7 +2136,7 @@
 					<p>«Dios no es capaz de ironía, y el amor es una cosa demasiado santa, es demasiado la cosa más pura de nuestra naturaleza para que no nos venga de Él. Así, pues, negar a Dios, lo que es absurdo, o creer en la inmortalidad». Así escribía desde Londres a su madre —¡a su madre!— el agónico Mazzini —¡maravilloso agonista!— el 26 de junio de 1839, treinta y tres años antes de su definitiva muerte terrestre. ¿Y si la historia no fuese más que la risa de Dios? ¿Cada revolución una de sus carcajadas? Carcajadas que resuenan como truenos mientras los divinos ojos lagrimean de risa.</p>
 					<p>En todo caso y por lo demás no quiero morirme no más que para dar gusto a ciertos lectores inciertos. Y tú, lector, que has llegado hasta aquí, ¿es que vives?</p>
 					<div>
-						<head>CONTINUACIÓN:</head>
+						<head xml:id="ne0072_head_028">CONTINUACIÓN:</head>
 						<p>Así acababa el relato de cómo se hace una novela que apareció en francés, en el número del 15 de mayo de 1926 del <seg rend="italic">Mercure de France</seg>, relato escrito hace ya cerca de dos años. Y después ha continuado mi novela, historia, comedia o tragedia de mi España, y la de toda Europa y la de la humanidad entera. Y sobre la congoja del posible acabamiento de mi novela, sobre y bajo ella, sigue acongojándome la congoja del posible acabamiento de la novela de la humanidad. En lo que se incluye, como episodio, eso que llaman el ocaso de Occidente y el fin de nuestra civilización.</p>
 						<p>¿He de recordar una vez más el fin de la oda de Carducci «Sobre el monte Mario»? Cuando nos describe lo de que «hasta que sobre el Ecuador recogida, a las llamadas del calor que huye, la extenuada prole no tenga más que una sola mujer, un solo hombre, que erguidos en medio de ruinas de montes, entre muertos bosques, lívidos, con los ojos vítreos, te vean sobre el inmenso hielo, ¡Oh sol, ponerte!». Apocalíptica visión que me recuerda otra, por más cómica más terrible, que he leído en Courteline y que nos pinta el fin de los últimos hombres, recogidos en un buque, nueva arca de Noé, en un nuevo diluvio universal. Con los últimos hombres, con la última familia humana, va a bordo un loro: el buque empieza a hundirse, los hombres se ahogan, pero el loro trepa a lo más alto del maste mayor y cuando este último tope va a hundirse en las aguas el loro lanza al cielo un «Liberté, Egalité, Fraternité!». Y así se acaba la historia.</p>
 						<p>A esto suelen llamarle pesimismo. Pero no es el pesimismo a que suele referirse el todavía rey de España —hoy 4 de junio de 1927— don Alfonso <seg rend="smallcaps">XIII</seg> cuando dice que hay que aislar a los pesimistas. Y por eso me aislaron unos meses en la isla de Fuerteventura, para que no contaminase mi pesimismo paradójico a mis compatriotas. Se me indultó luego de aquel confinamiento o aislamiento, a que se me llevó sin habérseme dado todavía la razón o siquiera el pretexto; me vine a Francia sin hacer caso del indulto y me fijé en París, donde escribí el precedente relato, y a fines de agosto de 1925 me vine de París acá, a Hendaya, a continuar haciendo novela de vida. Y es esta parte de mi novela la que voy ahora, lector, a contarte para que sigas viendo cómo se hace una novela.</p>
@@ -2107,7 +2170,7 @@
 						<ab>Terminado el viernes 17 de junio de 1927, en Hendaya, Bajos Pirineos, frontera entre Francia y España.</ab>
 					</div>
 					<div>
-						<head>MARTES 21:</head>
+						<head xml:id="ne0072_head_029">MARTES 21:</head>
 						<p>¿Terminado? ¡Qué pronto escribí eso! ¿Es que se puede terminar algo, aunque sólo sea una novela, de cómo se hace una novela? Hace ya años, en mi primera mocedad, oía hablar a mis amigos wagnerianos de melodía infinita. No sé bien lo que es esto, pero debe de ser como la vida y su novela, que nunca terminan. Y como la historia.</p>
 						<p>Porque hoy me llega un número de <seg rend="italic">La Prensa</seg>, de Buenos Aires, el del 22 de mayo de este año, y en él un artículo de <seg rend="italic">Azorín</seg> sobre Jacques de Lacretelle. Este envió a aquél un librito suyo titulado <seg rend="italic">Aparte</seg> y <seg rend="italic">Azorín</seg> lo comenta. «Se compone —nos dice éste hablándonos del librito de Lacretelle (no de De Lacretelle, amigos argentinos)— de una novelita titulada "Cólera", de un "Diario", en que el autor explica cómo ha compuesto dicha novela, y de unas páginas filosóficas, críticas, dedicadas a evocar la memoria de Juan Jacobo Rousseau en Ermenonville». No conozco el librito de J. De Lacretelle —o de Lacretelle— más que por este artículo de <seg rend="italic">Azorín</seg>; pero encuentro profundamente significativo y simbólico el que un autor que escribe un «Diario» para explicar cómo ha compuesto una novela evoque la memoria de Rousseau, que se pasó la vida explicándonos cómo se hizo la novela de esa su vida, o sea su vida representativa, que fue una novela.</p>
 						<p>Añade luego <seg rend="italic">Azorín</seg>:</p>
@@ -2122,19 +2185,19 @@
 						<p>¡Tapa de reló! Los niños despanzurran a un muñeco, y más si es de mecanismos, para verle las tripas, para ver lo que lleva dentro. Y, en efecto, para darse cuenta de cómo funciona un muñeco, un fantoche, un <seg rend="italic">homunculus</seg> mecánico, hay que despanzurrarle, hay que levantar la tapa del reló. Pero ¿un hombre histórico?, ¿un hombre de verdad?, ¿un actor del drama de la vida?, ¿un sujeto de novela? Este lleva las entrañas en la cara. O dicho de otro modo, su entraña —<seg rend="italic">intranea</seg>—, lo de dentro, es su extraña —<seg rend="italic">extranea</seg>—, lo de fuera; su forma es su fondo. Y he aquí por qué toda expresión de un hombre histórico verdadera es autobiográfica. Y he aquí por qué un hombre histórico verdadero no tiene tapa. Aunque sea un hipócrita. Pues precisamente son los hipócritas los que más llevan las entrañas en la cara. Tienen tapa, pero es de cristal.</p>
 					</div>
 					<div>
-						<head>JUEVES 30-6</head>
+						<head xml:id="ne0072_head_030">JUEVES 30-6</head>
 						<p>Acabo de leer que como Federico Lefreve, el de las conversaciones con hombres públicos para publicarlas en <seg rend="italic">Les Nouvelles Littèraires</seg> —a mí me sometió a una—, le preguntara a Jorge Clemenceau, el mozo de ochenta y cinco años, si se decidiría a escribir sus Memorias, éste le contestó: «¡Jamás!, la vida está hecha para ser vivida y no para ser contada». Y, sin embargo, Clemenceau, en su larga vida quijotesca de guerrillero de la pluma no ha hecho sino contar su vida.</p>
 						<p>Contar la vida, ¿no es acaso un modo, y tal vez el más profundo, de vivirla? ¿No vivió Amiel su vida íntima contándola? ¿No es su <seg rend="italic">Diario</seg> su vida? ¿Cuándo se acabará de comprender que la acción es contemplativa y la contemplación es activa?</p>
 						<p>Hay lo hecho y hay lo que se hace. Se llega a lo invisible de Dios por lo que está hecho —<seg rend="italic">per ea quae facta sunt</seg>, según la versión latina canónica, no muy ceñida al original griego, de un pasaje de San Pablo (Romanos, I, 20)— pero ése es el camino de la naturaleza, y la naturaleza es muerta. Hay el camino de la historia, y la historia es viva; y el camino de la historia es llegar a lo invisible de Dios, a sus misterios, por lo que se está haciendo, <seg rend="italic">per ea quae fiunt</seg>. No por poemas —que es la expresión precisa pauliniana—, sino por poesías; no por entendimiento, sino por intelección o mejor por intención —propiamente <seg rend="italic">intensión</seg>—. (¿Por qué ya que tenemos <seg rend="italic">extensión</seg> e <seg rend="italic">intensidad</seg>, no hemos de tener <seg rend="italic">intensión</seg> y <seg rend="italic">extensidad</seg>?).</p>
 						<p>Vivo ahora y aquí mi vida contándola. Y ahora y aquí es de la actualidad, que sustenta y funde a la sucesión del tiempo así como la eternidad la envuelve y junta.</p>
 					</div>
 					<div>
-						<head>DOMINGO, 3-7</head>
+						<head xml:id="ne0072_head_031">DOMINGO, 3-7</head>
 						<p>Leyendo hoy una historia de la mística filosófica de la Edad Media he vuelto a dar con aquella sentencia de San Agustín en sus <seg rend="italic">Confesiones</seg> donde dice (lib.10,c.33,n.50) que se ha hecho problema en sí mismo <seg rend="italic">mihi quaestio factus sum</seg> —porque creo que es por problema como hay que traducir <seg rend="italic">quaestio</seg>—. Y yo me he hecho problema, cuestión, proyecto de mí mismo. ¿Cómo se resuelve esto? Haciendo del proyecto, trayecto del problema, <seg rend="italic">metablema</seg>; luchando. Y así, luchando, civilmente, ahondando en mí mismo como problema, cuestión para mí, trascenderé de mí mismo, y hacia dentro, concentrándome para irradiarme, y llegaré al Dios actual, el de la historia.</p>
 						<p>Hugo de San Víctor, el místico del siglo <seg rend="smallcaps">XII</seg>, decía que subir a Dios es entrarse en sí mismo y no sólo entrar en sí, sino pasarse de sí mismo, en lo de más adentro —<seg rend="italic">in intimis etiam seipsum transire</seg>— de cierto inefable modo, y que lo más íntimo es lo más cercano, lo supremo y eterno. Y a través de mí mismo, traspasándome, llego al Dios de mi España en esta experiencia del destierro.</p>
 					</div>
 					<div>
-						<head>LUNES, 4-7</head>
+						<head xml:id="ne0072_head_032">LUNES, 4-7</head>
 						<p>Ahora que ha venido mi familia y me he establecido con ella, para los meses de verano, en una <seg rend="italic">villa</seg> fuera del hotel, he vuelto a ciertos hábitos familiares y entre ellos a entretenerme haciendo, entre los míos, solitarios a la baraja, lo que aquí en Francia, llaman <seg rend="italic">patience</seg>.</p>
 						<p>El solitario que más me gusta es uno que deja un cierto margen al cálculo del jugador, aunque no sea mucho. Se colocan los naipes en ocho filas de cinco en sentido vertical —o sea cinco filas de ocho en sentido horizontal— y se trata de sacar desde abajo los ases y los doses poniendo las 32 cartas que quedan en cuatro filas verticales de mayor a menor y sin que se sigan dos de un mismo palo, o sea, que a una sota de oros, por ejemplo, no debe seguir un siete de oros también, sino de cualquiera de los otros tres palos. El resultado depende en parte de cómo se empiece; hay que saber, pues, aprovechar el azar. Y no es otro el arte de la vida en la historia.</p>
 						<p>Mientras sigo el juego, ateniéndome a sus reglas, a sus normas, con la más escrupulosa conciencia normativa, con un vivo sentimiento del deber, de la obediencia a la ley que me he creado —el juego bien jugado es la fuente de la conciencia moral—, mientras sigo el juego es como si una música silenciosa brezara mis meditaciones de la historia que voy viviendo y haciendo.</p>
@@ -2144,11 +2207,11 @@
 						<p>¡Paciencia, pues y barajar!</p>
 					</div>
 					<div>
-						<head>MARTES, 5-7</head>
+						<head xml:id="ne0072_head_033">MARTES, 5-7</head>
 						<p>Sigo pensando en los solitarios, en la historia. El solitario es el juego del azar. Un buen matemático podría calcular la probabilidad que hay de que salga o no una jugada. Y si se ponen dos sujetos en competencia a resolverlas, lo natural es que en un mismo juego obtengan el mismo tanto por ciento de soluciones. Mas la competencia debe ser a quién resuelve más jugadas en igual tiempo. Y la ventaja del buen jugador de solitarios no que juegue más de prisa sino que abandone más jugadas apenas empezadas y en cuanto prevé que no tiene solución. En el arte supremo de aprovechar el azar, la superioridad del jugador consiste en resolverse a abandonar a tiempo la partida para poder empezar otra. Y lo mismo en política y en la vida.</p>
 					</div>
 					<div>
-						<head>MIERCOLES, 6-7</head>
+						<head xml:id="ne0072_head_034">MIERCOLES, 6-7</head>
 						<p>¿Es que voy a caer en aquello de <seg rend="italic">nulla dies sine linea</seg>, ni un día sin escribir algo para los demás —ante todo para sí mismo— y para siempre? Para siempre de sí mismo, se entiende. Esto es caer en el hombre del diario. ¿Caer? ¿Y qué es caer? Lo sabrán esos que hablan de decadencia. Y de ocaso. Porque ocaso, <seg rend="italic">ocasus</seg>, de <seg rend="italic">occidere</seg>, morir, es un derivado de <seg rend="italic">cadere</seg>, caer. Caer es morirse.</p>
 						<p>Lo que me recuerda aquellos dos inmortales héroes —¡héroes, sí!— del ocaso de Flaubert, modelo de novelistas —¡qué novela su «Correspondencia»!— los que le hicieron cuando decaía para siempre. Que fueron Bouvard y Pecuchet. Y Bouvard y Pecuchet, después de recorrer todos los rincones del espíritu universal acabaron en escribientes. ¿No sería lo mejor que acabase la novela de mi Jugo de la Raza haciéndole que, abandonada la lectura del libro fatídico, se dedique a hacer solitarios y haciendo solitarios esperar que se le acabe el libro de la vida? De la vida y de la vía, de la historia que es camino.</p>
 						<p><seg rend="italic">Vía y patria</seg>, que decían los místicos escolásticos, o sea: la historia y la visión beatífica. Pero, ¿son cosas distintas? ¿No es ya patria el camino? Y la patria, la celestial y eterna se entiende, la que no es de este mundo, el reino de Dios cuyo advenimiento pedimos a diario —los que pedimos—, esa patria ¿no seguirá siendo camino?</p>
@@ -2160,7 +2223,7 @@
 						<p>¡<seg rend="italic">Epur si mouve</seg>! ¡Ay, que no hay paz sin guerra!</p>
 					</div>
 					<div>
-						<head>JUEVES, 7-7</head>
+						<head xml:id="ne0072_head_035">JUEVES, 7-7</head>
 						<p>El camino, sí, la vía, que es la vida y pasársela haciendo solitarios —tal la novela—. Pero los solitarios son solitarios, para uno mismo solo; no participan de ellos los demás. Y la patria que hay tras de ese camino de solitarios, una patria de soledad —de soledad y vacío—. Cómo se hace una novela, ¡bien!, pero ¿para qué se hace? Y el para qué es el porqué. ¿Por qué, o sea, para qué se hace una novela? Para hacerse el novelista. ¿Y para qué se hace el novelista? Para hacer al lector, para hacerse uno con el lector. Y sólo haciéndose uno el novelador y el lector de la novela se salvan ambos de su soledad radical. En cuanto se hacen uno se actualizan y actualizándose se eternizan.</p>
 						<p>Los místicos medievales, San Buenaventura, el franciscano, lo acentuó más que otro, distinguen entre <seg rend="italic">lux</seg>, luz y <seg rend="italic">lumen</seg>, lumbre. La luz queda en sí, la lumbre es la que se comunica. Y un hombre puede lucir —y lucirse—, alumbrar —y alumbrarse—.</p>
 						<p>Un espíritu luce, pero ¿cómo sabremos que luce si no nos alumbra? Y hay hombres que se lucen, como solemos decir. Y los que se lucen es con propia complacencia; se muestran para lucirse. ¿Se conoce a sí mismo el que se luce? Pocas veces. Pues como no se cuida de alumbrar a los demás, no se alumbra a sí mismo. Pero el que no sólo luce, sino que al lucir alumbra a los otros, se luce alumbrándose a sí mismo. Que nadie se conoce mejor a sí mismo que el que se cuida de conocer a los otros. Y puesto que conocer es amar, acaso convendría variar el divino precepto y decir: ámate a ti mismo como amas a tu prójimo.</p>

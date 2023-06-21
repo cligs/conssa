@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Nona</title>
-				<title type="sub">novela póstuma</title>
+				
 				<title type="short">Nona</title>
-				<title type="idno">
-					<idno type="bne">XX2822545</idno>
-					<idno type="viaf">XX2822545</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX866103</idno>
-					<idno type="viaf">74118486</idno>
-					<name type="short">Selgas</name>
-					<name type="full">José Selgas Carrasco</name>
+					<name type="short" ref="#Selgas"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1614</measure>
@@ -141,13 +131,38 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0221</idno>
+						<idno type="cligs">ne0221</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2000">2000</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/nona-novela-postuma--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Imprenta de A. Pérez Dubrull, <date when="1883">1883</date></bibl>
-				<bibl type="edition-first">Madrid, Imprenta de A. Pérez Dubrull, <date when="1883">1883</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Nona</title>
+					<title type="sub">novela póstuma</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2822545.html">XX2822545</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/XX2822545/">XX2822545</idno>
+				</idno>
+				</title>
+					<author xml:id="Selgas">
+						<name type="full"><forename>José</forename> <surname>Selgas Carrasco</surname></name>
+						<idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1057465887">1057465887</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q2616337/">Q2616337</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX866103.html">XX866103</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/74118486/">74118486</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2000">2000</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/nona-novela-postuma--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Imprenta de A. Pérez Dubrull, <date when="1883">1883</date></bibl>
+					<bibl type="edition-first"><pubPlace>Madrid</pubPlace>, Imprenta de A. Pérez Dubrull, <date when="1883">1883</date><idno source="k10plus" type="ppn" n="46501884X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46501884X"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nona</title>: 	<title type="sub">novela póstuma</title> <date when="1883">1883</date>, <publisher>Impr. de A. Pérez Dubrull</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46501884X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46501884X"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +172,11 @@
 				<p>.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL7">3</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +189,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">realista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -181,10 +201,10 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela póstuma</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela póstuma</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela póstuma</term>
@@ -216,12 +236,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-04-05" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Prólogo</head>
+				<head xml:id="ne0221_head_000">Prólogo</head>
 				<p>A Selgas, como escritor, no hay para qué recomendarle al público. Abeja literaria de aquellas para quienes se dijo <seg rend="italic">Sic vos non vobis melleficatis apes</seg>, los editores de sus libros los han esparcido con tal profusión, que todo el mundo le conoce. Además, hay buenas firmas, de gran arraigo y responsabilidad en la república de las letras, que han garantizado el mérito sobresaliente de las obras de tan peregrino ingenio: Tamayo, Cañete, Alarcón, Pidal, nombres de sólido crédito, responden de que Selgas es una gloria nacional literaria; no se debe, pues, recusar la garantía de fiadores tan ilustres.</p>
 				<p>Pero la preciosa novela que con el título de <seg rend="italic">Nona</seg> sale hoy a la luz pública, requiere un prólogo, siquiera haya de ser muy breve. Se trata de una nueva joya legada a la posteridad por autor tan esclarecido, y es bien que los lectores sepan, cuando menos, que <seg rend="italic">Nona</seg> es obra póstuma, y que en ella resplandecen todas las eminentes cualidades de Selgas, sana intención, agudo ingenio, lenguaje puro y castizo, forma galana, espíritu penetrante de observación, y la fuerza descriptiva propia de quien, sabiendo pintar, estudiaba muy a fondo las costumbres.</p>
 				<p>Importa añadir que <seg rend="italic">Nona</seg> ha sido hallada sin terminar entre los papeles de su autor, y que, si bien por estar en el secreto un amigo suyo, el desenlace de la novela es el mismo que Selgas tenía pensado, ha sido necesario escribir para darla a la estampa el último capítulo. Habiéndose distinguido Selgas, entre otras cosas, por su conciencia literaria, sería casi una mala acción exponerle a que se le imputen pecados ajenos.</p>
@@ -239,7 +260,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0221_chap1">
-				<head>Capítulo I : Puerilidades  </head>
+				<head xml:id="ne0221_head_001">Capítulo I : Puerilidades  </head>
 				<p>Doña María de la Paz Pacheco y su buen esposo D. Martín, último barón de la ilustre casa de los Cañizares, jamás fueron los amantes de Teruel, ni Julieta y Romeo, ni siquiera Pablo y Virginia.</p>
 				<p>Ella había visto a Martín desde los primeros años de su vida como la cosa más natural del mundo, ni más ni menos que como se veía a sí misma, sin que advirtiese prodigio ni portento alguno en que hubiese venido al mundo como es costumbre entre los mortales. Martín, por su parte, no distinguía en María de la Paz más que ojos bastante perspicaces para descubrir la primera manzana que maduraba en el árbol, y boca expedita para comérsela, porque, como buena hija de Eva, la manzana era su fruta predilecta.</p>
 				<p>Ambos se encontraron en el camino de la vida a poco de haber nacido, y ningún género de admiración y asombro se causaron al verse por primera vez; más bien pudiera creerse que se habían conocido antes de llegar a conocerse, que se habían visto muchas veces antes de verse por la vez primera. Juntos pasaron los primeros años de la vida, juntos corrían en las eras, juntos saltaban las acequias por donde el agua acude a regar los fecundos surcos de las huertas, y unas veces ella y otras veces él, según las circunstancias del caso, trepaban a lo más alto de los árboles en busca de los nidos que los pájaros esconden en lo más espeso de las hojas.</p>
@@ -285,7 +306,7 @@
 				<p>Y dejándolo con la risa en la boca, echó a correr, abandonando el nido de los jilgueros que tan locamente había deseado.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0221_chap2">
-				<head>Capítulo II : Cañizares y pachecos  </head>
+				<head xml:id="ne0221_head_002">Capítulo II : Cañizares y pachecos  </head>
 				<p>No hay que darle vueltas: donde quiera que haya dos hombres, uno será más que otro, y, si no lo es, querrá serlo; y si no alcanza a conseguirlo, tratará por lo menos de aparentarlo. Tal es el origen de todas las aristocracias, y esta propensión es tan propia de la naturaleza humana, que serán inútiles cuantos sacrificios se hagan por destruirla.</p>
 				<p>Los Cañizares provenían de muy ilustre ascendencia. Oriundos de Andalucía, no desmintieron nunca su linaje, peleando en los tiempos de la Reconquista, unas veces contra el rey moro de Granada, otras veces contra el rey cristiano de Aragón, según caían las pesas, pero siempre con gran gloria de su nombre y crédito de sus hazañas. Descienden nada menos que del famoso Lope Cañizares, insigne andaluz que fue alcaide de la torre de Cartagena, en Algeciras, en los tiempos ¡friolera! del rey D. Pedro de Castilla, el Cruel según unos, y según otros el Justiciero.</p>
 				<p>Sobre la gran puerta del caserón de los Cañizares se ve aún el escudo de piedra toscamente labrado, y son sus armas un campo de gules con ocho aspas de oro por orla. Calcúlese ahora si la familia de Martín tendría puestos sus cinco sentidos en el abolengo de la casa, y si en punto a pergaminos se las mantendría tiesas al lucero del alba.</p>
@@ -352,7 +373,7 @@
 				<p>-Ahora, Martín, ya puedes reírte todo lo que quieras.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0221_chap3">
-				<head>Capítulo III : Las dos hermanas  </head>
+				<head xml:id="ne0221_head_003">Capítulo III : Las dos hermanas  </head>
 				<p>De la manera que sucintamente queda relatada, se unieron en las personas de Martín y María de la Paz las ilustres familias de Cañizares y Pacheco. Y no se dirá que tan ruidosa boda vino a ser el término de un drama interesante, ni siquiera de un tierno idilio. No hubo entre ellos más promesas que las que mutuamente se hicieron al pie del altar, y puede decirse que no fueron novios más que el día de la boda. Después de haber pasado la vida juntos, se encontraban al volver la esquina del matrimonio como si nunca se hubieran visto, como dos pájaros en el aire, como dos nubecillas en el cielo, como dos flores en un mismo tallo. Nada tenían que confiarse de la vida pasada; ni deseos ni esperanzas, ni celos ni desdenes. El amor empezaba en ellos precisamente donde tantas veces acaba; empezaba en el mismo día de la boda.</p>
 				<p>Ningún esfuerzo tuvieron que hacer aquellos corazones para acercarse y para unirse; vírgenes uno y otro, nada tenían que descubrirse ni nada que ocultarse; el último Cañizares y la última Pacheca se encontraban sin haberse buscado; nunca pensaron en casarse; pero una vez unidos por el vínculo del matrimonio, se hallaban como el pez en el agua, y se veían como hechos el uno para el otro, sin haber caído antes en la cuenta. La poesía enfermiza, escéptica, llorona y patibularia de nuestros tiempos pasaría junto a esta pareja sin advertirla, porque la estética trascendental que nos domina necesita como primera materia algún crimen que justificar, alguna pasión desordenada que enaltecer, algún vicio siquiera que redimir, ni más ni menos que si las deformidades morales fuesen ya el único objeto del arte y el único encanto del genio.</p>
 				<p>Como no hay en el mundo dicha cumplida, antes de que terminara el año de la boda, la madre de Martín cayó enferma; y aunque la dolencia no presentó síntomas alarmantes, ella se dio por muerta, y aprovechando una ocasión oportuna, atrajo hacia sí a María de la Paz, que no se separaba de la cama, y le dijo:</p>
@@ -424,7 +445,7 @@
 				<p>Desde entonces siempre que Aurora veía a su hermana la señalaba con el dedo, diciendo: «Nona, Nona»; y esta palabra, muchas veces repetida, llegó a ser un nombre, dejando Bernarda de ser Bernarda para ser Nona. ¡Desventurada criatura! Parecía que la abandonaba hasta el Santo de su nombre.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0221_chap4">
-				<head>Capítulo IV : La abuela  </head>
+				<head xml:id="ne0221_head_004">Capítulo IV : La abuela  </head>
 				<p>Digámoslo sabiamente: no hay solución de continuidad. El género humano se empalma por generaciones, y no acaba una sin que esté ya en el mundo la que ha de sucederle, y aquí se halla el único orden que los hombres no han podido trastornar todavía, sin que se haga uso, para conservarlo, de más fuerza que la fuerza de una ley que es inviolable, pura y simplemente porque es indiscutible. De la cuna al sepulcro: he ahí todo el camino que ha andado la especie humana en el corto espacio de seis mil años.</p>
 				<p>Por lo tanto, no es posible andar mucho tiempo por el camino de la vida sin tropezar una vez, y caer para siempre. Por triste que nos parezca el caso, ello es que la sepultura abierta va siempre delante de nosotros, como un asilo que, más tarde o más temprano, ha de recibirnos. No hay manera de salvar ese pequeño abismo; y, échese por donde se quiera, siempre vendremos a parar en la muerte.</p>
 				<p>La abuela de Aurora no se hallaba exenta de esta contingencia; pues si bien la hermosa nieta había podido contenerla por algún tiempo en las inquietudes de la vida, es lo cierto que no poseía el singular privilegio de eternizarla sobre la tierra. Es muy posible que, sin abandonar del todo la idea del otro mundo, la buena Pacheca hubiera aplazado el tránsito inevitable para una época más lejana, a lo menos para la época en que Aurora, adornada con todas las galas de la juventud y de la belleza, pudiese contraer un matrimonio digno de su ilustre ascendencia. En tal caso, sólo habría pedido una corta prórroga, la necesaria para recibir en sus brazos al primer hijo de su adorada nieta.</p>
@@ -468,7 +489,7 @@
 				<p>María de la Paz amortajó a su madre.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0221_chap5">
-				<head>Capítulo V : El relicario  </head>
+				<head xml:id="ne0221_head_005">Capítulo V : El relicario  </head>
 				<p>Siempre será un misterio impenetrable ese último pensamiento que el moribundo se lleva al pasar de esta vida a la otra. Algo queda por decir en ese momento solemne, que la muerte impide que se diga. En vano se ha pretendido encontrar en los yertos ojos del cadáver la última imagen que se ha reflejado en ellos. Inútilmente se interroga a la muerta expresión del rostro inanimado, buscando el rastro del último pensamiento que ha pasado por el alma del que acaba de morir. El arcano es siempre impenetrable, porque si la vida es así, frívola, ligera, inconstante, que a lo mejor nos vuelve la espalda, dejándonos con la palabra en la boca, la muerte, mil veces más seria que la vida, guarda acerca del secreto del último instante eterna reserva.</p>
 				<p>Este punto psicológico, digámoslo así, se ventilaba en la cocina de la casa de Cañizares entre la gente de escalera abajo. La vieja Marta, antigua cocinera de la Pacheca, jubilada ya en razón de su edad y sus achaques; Prisca, cocinera a la sazón, sin rival en el arroz con pollo y en el jamón frito con tomate; la Gila, niñera y moza de trabajo, de cara mofletuda y carnes apretadas, dispuesta siempre lo mismo para un fregado que para un barrido; el tío Ginés, mayoral de la casa, cachazudo como un poste, fiel como un perro, duro como la piedra; y, en fin, el mozo de mulas conocido por <seg rend="italic">Chucho</seg> en toda la comarca por su habilidad en imitar el ladrido de los perros, discurrían de esta manera:</p>
 				<p>-¡Lástima de ama!... (exclamaba Marta.) ¡Más buena que el pan!</p>
@@ -556,7 +577,7 @@
 				<p>-¡Ceja atrás... relicario!...</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0221_chap6">
-				<head>Capítulo VI : La sombra de la difunta  </head>
+				<head xml:id="ne0221_head_006">Capítulo VI : La sombra de la difunta  </head>
 				<p>Sin duda alguna es cosa muy natural que la madre muera antes que la hija, aunque ocurra con frecuencia todo lo contrario; mas es lo cierto que las cosas más naturales no suelen ser las más consoladoras. Así es que María de la Paz, que no había contado nunca con el privilegio de conservar eternamente sobre la tierra a la madre Cruz, no encontró en su corazón lágrimas bastantes para llorar su muerte. Esta desgracia esperada no fue por eso menos sentida, porque el temor no nos acostumbra a la realidad de lo que tememos, y no hay nadie que al ver morir a una persona querida no crea firmemente que aún tenía días en que vivir. Eso de no tener la muerte plazo fijo, la hará siempre a nuestros ojos intempestiva.</p>
 				<p>No vaya a creerse que María de la Paz andaba hecha una Magdalena, ostentando a la faz del mundo el desconsuelo de un llanto inagotable. Lloraba, sí, señor; pero lloraba a solas. Escondía sus lágrimas en los rincones de la casa por no afligir el corazón de su marido con el espectáculo continuo de su dolor; más aún: sonreía dulcemente, siempre que venía a cuento, para alegrar (si es posible decirlo así) a los ojos de Martín el luto que oscurecía su alma.</p>
 				<p>Su pena no era nube de verano que se deshacía en lágrimas y se desvanecía en sollozos; antes bien, era tan justa, tan legítima, tan verdadera, que no la derrochaba malgastándola en lloriqueos inútiles, más propios de la sensibilidad momentáneamente excitada que del sentimiento permanente.</p>
@@ -590,7 +611,7 @@
 				<p>María de la Paz se sentó en la cama, permaneciendo algunos instantes muda y pensativa; después pasó los extremos de los dedos por los párpados, porque sentía los ojos cuajados de lágrimas.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0221_chap7">
-				<head>Capítulo VII : El alma de la casa  </head>
+				<head xml:id="ne0221_head_007">Capítulo VII : El alma de la casa  </head>
 				<p>Hablando Martín Cañizares con el Cura, se explicaba de esta manera:</p>
 				<p>-Le digo a V., Padre Capellán, que hay que besar por donde ella pisa. Sí, señor; es una santa, muy capaz de contarle los pelos al diablo. Cuando muchacha era de la piel del demonio; lo mismo se encaramaba en los árboles que los gatos. Me acuerdo un día, y ya era moza, que apareció un nido de jilgueros en el peral grande del huerto de abajo, y sin encomendarse a Dios ni a Santa María, trepó a lo alto como una enredadera. Yo estaba al pie del tronco, y ella arriba... ¿Se hace V. cargo? Me parece que la estoy viendo. Pero aquello fue ver y no ver, porque cayó en la cuenta, y aunque yo era todo ojos, saltó furiosa del árbol, y me dejó con un palmo de narices. Y me la guardó hasta que nos casamos.</p>
 				<p>Aquí se detuvo para reírse, haciendo después con la boca el movimiento necesario para dejar entender que se chupaba mentalmente los dedos. Y es el caso, que el señor Cura también se sonreía. Pagado este tributo a aquel pícaro recuerdo, siguió diciendo:</p>
@@ -673,7 +694,7 @@
 				<p>Era la primera tempestad que nublaba el cielo de aquella casa.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0221_chap8">
-				<head>Capítulo VIII : Una fiesta popular  </head>
+				<head xml:id="ne0221_head_008">Capítulo VIII : Una fiesta popular  </head>
 				<p>Si queréis medir con exactitud el verdadero progreso humano de nuestros días comparado con el progreso de la antigüedad, tomad este punto de partida: Moisés, gran legislador del pueblo hebreo y del mundo entero; Licurgo y Solón, legisladores de Grecia; Numa Pompilio primero, y mucho después Justiniano, legisladores de Roma; D. Alfonso el Sabio, legislador de España; los Concilios fueron a la vez legisladores de la Iglesia y de los pueblos. Pues bien; legislador es hoy cualquiera.</p>
 				<p>La cualidad de legislador no es hoy una aptitud, es un derecho; para ser legislador basta ser ciudadano. Como quiera que las leyes se hacen para los pueblos, hemos sacado por consecuencia que los Pueblos deben ser sus propios legisladores. Ahora bien: aquí tenéis un hombre oscuro; su nombre no lo habéis oído pronunciar todavía en ninguna parte; os es permitido dudar si la cédula de vecindad que presenta es auténtica. ¿Suficiencia? Se desconoce. ¿Virtudes? Se ignoran. ¿Méritos? Ninguno. ¿Títulos? Cero. ¿Qué representa? Nada. ¿Es contribuyente? Ni eso. He ahí un legislador. Y no así como se quiera, sino un legislador inviolable en el ejercicio de sus funciones legislativas.</p>
 				<p>El rincón de la tierra teatro de las escenas que vamos refiriendo, se hallaba conmovido; y a pesar de que el semblante de las gentes que se dirigían apresuradas a la Plaza de la Villa no mostraba el mayor regocijo, otras señales dejaban entender que el motivo de la agitación pertenecía al orden de los sucesos faustos.</p>
@@ -719,7 +740,7 @@
 				<p>El primer plato que se puso sobre la mesa fue un cabrito, a la vez que la multitud vitoreaba desde la calle entre los bramidos de la música, el estruendo de las campanas y los silbidos de los cohetes.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0221_chap9">
-				<head>Capítulo IX : La mordedura de la serpiente  </head>
+				<head xml:id="ne0221_head_009">Capítulo IX : La mordedura de la serpiente  </head>
 				<p>Claro está que el Diputado electo no había de pasar por la cabeza de su distrito como un rayo desprendido de las nubes. Era la primera vez que pisaba aquella comarca, y parecía natural que se enterara por sus propios ojos de las necesidades del pueblo y de la mejor manera de remediarlas. Además, había objetos dignos de la culta curiosidad de un viajero ilustrado. Aún podían verse, formando el primitivo recinto de la población, cimientos medio desenterrados de muros romanos: allí está la iglesia mayor, de origen gótico, destruida y profanada por los árabes y reedificada en tiempo de D. Alfonso XI, con todo el exceso de adornos y detalles del gusto bizantino; fuera del pueblo, a corta distancia de las últimas casas, se descubren todavía las ruinas de una mezquita, cuyas paredes desgarradas parece que lloran su pasado dominio y su extinguida gloria; más allá, sobre una pequeña colina, mordido por el tiempo y surcado por la intemperie, aún se levanta el <seg rend="italic">rollo</seg>, suplicio permanente, que atestigua la antigua jurisdicción de la villa, columna miliaria que señala el tránsito de toda una época; rebuscando en los pedregales y en los derrumbaderos próximos, se pueden encontrar restos de mosaicos despedazados, tiestos de ánforas rotas y monedas gastadas, que sólo pasan en el mercado de los anticuarios más especialmente dedicados a la numismática.</p>
 				<p>Mas si el Diputado electo vive tan deprisa que no tiene tiempo para detenerse a contemplar esos despojos de lo pasado, la naturaleza, más antigua que la historia y más artista que el hombre, le ofrece lugares pintorescos, sitios caprichosos, perspectivas inagotables, eterna desesperación de los paisajistas. Allí está el <seg rend="italic">Juncar</seg> de los Cañizares, con su hilo de agua que baja del monte, con sus pequeños huertos escalonados, con sus colmenas formadas en línea, con su majada que humea al caer de la tarde, cuando el rebaño vuelve de pastar en las laderas vecinas. Detrás, más arriba, como colgada en la pendiente de la sierra, está la Gruta milagrosa. En ella, buscando los reconquistadores agua con que apagar la sed que los devoraba, encontraron tres tesoros: una imagen de la Virgen toscamente tallada en piedra oscura, un cofre de hierro que contenía collares de perlas, brazaletes de oro y una diadema cuajada de piedras preciosas, y cavando más en el fondo de la gruta, tropezaron con una vena de agua, que saltó sobre sus rostros, escapándose entre las grietas de los peñascos. La piedad erigió una capilla bajo la advocación de la Virgen de los Remedios, y la más viva devoción, heredada de padres a hijos, cubrió las paredes de la ermita de milagros de cera y el altar de sencillas y fervorosas ofrendas.</p>
 				<p>Desde este lugar, consagrado por la tradición y la fe, refugio de las esperanzas humanas, consuelo de las desdichas y remedio de los males, se extiende como en inmenso anfiteatro un paisaje cuyos límites se confunden con el horizonte. La tierra se humilla ante el pórtico de la Ermita y desciende hasta la llanura en cañadas bordadas de sementeros y festoneadas por largas hileras de naranjos, almendros, olivos y granados; lentiscos, tomillos y romeros rodean el santuario como en perpetua ofrenda, y el pinar trepa hasta la cumbre de la sierra, como si quisiera formar sobre la Ermita un dosel siempre verde.</p>
@@ -781,7 +802,7 @@
 				<p>Ella sonreía; él se llevó la mano al corazón, como si hubiese recibido en él un golpe inesperado. Sentía en el fondo de su ser un dolor desconocido, algo semejante a la mordedura de una serpiente.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0221_chap10">
-				<head>Capítulo X : El cofre de hierro  </head>
+				<head xml:id="ne0221_head_010">Capítulo X : El cofre de hierro  </head>
 				<p>Tenemos, pues, que el héroe del entusiasmo popular que acabamos de conocer no pudo dormir en toda la noche; y debe saberse que no eran las satisfacciones del triunfo las que ahuyentaban el sueño de sus párpados, porque con el triunfo contaba como César con la fortuna, y lo que agitaba su espíritu era para él enteramente nuevo, no anotado en el libro de sus previsiones.</p>
 				<p>En primer lugar, la tragedia de <seg rend="italic">Mindolo</seg> preocupaba su ánimo con tenacidad impertinente; la traición de la <seg rend="italic">Pastora</seg> le causaba extraña sorpresa; en segundo lugar, la ruda franqueza del señor de Cañizares mortificaba su amor propio. Aquel patán se había permitido mirarle por encima del hombro en medio de la plenitud de su gloria, y, lo que es más, se había atrevido a leer en su pensamiento; y, por último y sobre todo, Aurora resultaba dueña de su ser; desde el primer momento se sintió dominado por el singular encanto de su belleza, y luego aquella mirada imperiosa y aquella sonrisa acariciadora parecían decirle «adórame»; y él se sentía arrebatado por la ardiente idea de adorarla.</p>
 				<p>No pudo dormir en toda la noche, porque la vengativa <seg rend="italic">Pastora</seg>, el brutal Cañizares y la irresistible imagen de Aurora daban vueltas alrededor de su pensamiento como un torbellino; y no se sabe por qué misteriosa ilación de las ideas se enlazaban en su memoria esos tres recuerdos, avivados por la actividad incansable de la imaginación excitada por el insomnio: su situación venía a ser la del hombre que sueña despierto.</p>
@@ -854,7 +875,7 @@
 				<p>-¡Oh! Sí (exclamó). También he visto el cofre de hierro.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0221_chap11">
-				<head>Capítulo XI : El paraíso  </head>
+				<head xml:id="ne0221_head_011">Capítulo XI : El paraíso  </head>
 				<p>Hasta ahora no hemos hecho más que ver la parte exterior del personaje elegido por el voto popular, y podemos decir que aún no lo conocemos, puesto que todavía no sabemos su nombre. No hay que extrañar una falta que tan fácilmente puede subsanarse, y que, a mayor abundamiento, tiene sus razones. Primera: que la mayor parte de los electores del pueblo se encuentran en la misma ignorancia. Segunda: que una vez designado por todos con el título de Diputado, no necesita, en realidad, otro nombre para abrirse paso en el mundo, y ser conocido.</p>
 				<p>¿Acaso es tan ignorada esa nueva planta, y tan oscura la vida de esa especie espontánea, que no acertemos a distinguir los rasgos característicos de la familia en toda la variedad de sus ejemplares? Cabalmente, por punto general, vienen al mundo lo mismo que los simples mortales, sin ser conocidos de aquellos a quienes se atribuye la facultad de darles el ser. No nacen a la vida ordinaria, a la vida particular que vivimos los demás hombres; nacen a la vida pública; y como el secreto de las fecundaciones no se ha descubierto todavía, salen al mundo público incubados en el misterio perpetuamente impenetrable de las urnas electorales. El recién nacido puede ser joven, puede ser viejo; mas, de cualquier modo que sea, desde el punto mismo de su nacimiento corre de su cuenta el hacerse hombre. Es una generación nueva, mejor dicho, es la tendencia, el modo de ser dominante en la nueva generación. ¿Qué más quiere saberse?</p>
 				<p>Muy bien; pero somos curiosos, nos gustan las cosas con pelos y señales, y tenemos derecho a saber su nombre y apellido. ¿Y para qué? Ahí está el acta de su elección, porque las papeletas de la candidatura depositadas en la urna fueron quemadas inmediatamente después del escrutinio. Mas ¿qué nos importa su nombre? Désele uno cualquiera. ¡Hay tantos que poderle dar! Contentémonos con saber que es Diputado. Su naturaleza, después de todo, era la naturaleza humana; su vecindad, dudosa, porque activo, movible, impaciente, no acierta a estarse quieto en ninguna parte, viniendo a resultar que casi no tiene domicilio fijo; su casa siempre es la mejor fonda, con lo cual consigue tener buen hospedaje en todas las capitales del mundo; su profesión, se ignora; sus bienes de fortuna no constan anotados en ningún registro de la propiedad; pero indudablemente es hombre que sabe, porque habla de todo; y debe ser rico, porque gasta como un potentado. En cuanto a su familia, es seguro que ha de andar reñido con ella, pues nunca la nombra. ¿Se quieren más detalles? Vamos a darlos.</p>
@@ -904,7 +925,7 @@
 				<p>-¡El Paraíso!... ¡Oh!... ¡Magnífico!... Entremos en el Paraíso.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0221_chap12">
-				<head>Capítulo XII : Adán y Eva  </head>
+				<head xml:id="ne0221_head_012">Capítulo XII : Adán y Eva  </head>
 				<p>Medio escondida entre las ramas y las hojas entrelazadas, la rosa a medio abrir se veía como solemos ver la faz medio temerosa medio risueña de una monja al través de las dobles rejas del locutorio.</p>
 				<p>Aurora forzó fácilmente la clausura, y la sacó de la oscuridad del claustro en que el rosal la tenía cogida, para que brillara en el mundo de su cabeza sobre la negra sombra de sus cuantiosos rizos.</p>
 				<p>Fue dicho y hecho, pues cuando llegó nuestro hombre ya la rosa, prendida con toda la gracia del mundo, sonreía por sus cien hojas, satisfecha de adornar tan gallarda cabeza.</p>
@@ -997,7 +1018,7 @@
 				<p>El Diputado, pensativo, cabizbajo, llevando delante de los ojos la imagen de la hermosa Eva que había encendido su deseo, salió del valle como debió salir Adán del Paraíso.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0221_chap13">
-				<head>Capítulo XIII : Plan de campaña  </head>
+				<head xml:id="ne0221_head_013">Capítulo XIII : Plan de campaña  </head>
 				<p>Quedaba por cumplir en el programa de las fiestas, acordado por el Ayuntamiento como homenaje rendido a la popularidad del Diputado, la gran cacería, destinada a ser memorable en los fastos venatorios de la villa de los Remedios.</p>
 				<p>Al interés natural de la fiesta se añadía la circunstancia de un ojeo que pusiera término a las fechorías del lobo que a la sazón ensangrentaba los rebaños que pacían en toda la comarca contigua a la sierra. La fiera tenía amedrentados a los perros, y penetraba de noche en los rediles, escogiendo a su gusto la presa más regalada. Demasiado astuto para caer en las trampas armadas por los pastores, era señor de horca y cuchillo en todos aquellos contornos.</p>
 				<p>Preso el lobo en la red de un ojeo bien dirigido, vendría a ser una gloria más añadida a la popularidad del Diputado: así es que el Alcalde no perdonaba medio alguno que pudiese hacer más eficaz la batida.</p>
@@ -1081,7 +1102,7 @@
 				<p>A seis pasos de la catástrofe, el Ermitaño seguía con ávidos ojos los rápidos incidentes de aquella lucha mano a mano entablada entre el lobo y el hombre. Poco a poco fue alzando la escopeta hasta colocarla a la altura de sus ojos; entonces apuntó, hizo fuego, y el hombre y el lobo rodaron por la maleza: el señor Alcalde había desaparecido.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0221_chap14">
-				<head>Capítulo XIV : La caza del lobo  </head>
+				<head xml:id="ne0221_head_014">Capítulo XIV : La caza del lobo  </head>
 				<p>Continuas noticias del suceso llegaban al pueblo desde el amanecer, propagándose de boca en boca y llevando la inquietud y la zozobra de casa en casa. Desde las primeras horas de la mañana corrió la voz de que el lobo, encerrado dentro de la batida, se defendía furiosamente contra las asechanzas de los ojeadores, y de puerta a puerta y de ventana a ventana se comentaba el caso, despertando la ansiedad de las mujeres, que no esperaban nada bueno de aquella cacería.</p>
 				<p>Poco después se esparció un rumor pavoroso: se decía que el lobo era formidable; que medía tres varas de largo y cerca de dos varas de alto; que tenía melena como los leones; que echaba fuego por los ojos, y que cada colmillo venía a ser, poco más o menos, como una reja de arado. La ansiedad se convirtió en lamentos, y de puerta en puerta y de familia en familia, se extendió la noticia, llenando los ánimos de desolación y de espanto.</p>
 				<p>Nuevos datos vinieron a aumentar la consternación de que el pueblo se hallaba poseído. Acababan de llegar de la sierra dos fugitivos, asegurando que el lobo destrozaba cuanto se le ponía por delante; que las balas se aplastaban en su piel como en una plancha de hierro, y que iban ya muchos muertos y heridos; y para que no faltara nada al horror que infundía semejante relato, un pobre viejo, antiguo cazador de trampas, que vivía de limosna, arrastrando por las calles del pueblo sus piernas inútiles, al oír a los fugitivos, había movido la cabeza, frunciendo los labios y arqueando las cejas.</p>
@@ -1155,7 +1176,7 @@
 				<p>La malicia es agorera y supersticiosa, y los maliciosos pudieron restregarse las manos de gusto, porque el cuadro que se ofrecía a sus ojos era el siguiente: el Diputado recibía aquella lluvia de rosas que lo inundaba; Aurora las arrojaba desde el balcón con sus propias manos, y el futuro marido de la hija de Cañizares tenía la bandeja.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0221_chap15">
-				<head>Capítulo XV : Fermín  </head>
+				<head xml:id="ne0221_head_015">Capítulo XV : Fermín  </head>
 				<p>El pariente a quien Cañizares tenía prometida la mano de su hija acababa de llegar a la villa de los Remedios. No se le esperaba, porque, queriendo sorprender a la familia, había omitido todo aviso que pudiera anunciar su presencia. Se apeó en la puerta del parador en ocasión en que María de la Paz despachaba a <seg rend="italic">Chucho</seg> con orden expresa de traerle noticias de Martín, que estaba en el <seg rend="italic">Juncar</seg>. No se conocían, por la sencilla razón de que nunca se habían visto; pero en cuanto María de la Paz le echó la vista encima, hizo primero un gesto de sorpresa, y luego se le llenó la cara de alegría, y exclamó, diciendo:</p>
 				<p>-¡Fermín!... ¡Ah, sí; tú eres Fermín!... ¡Válgame Dios qué alto estás!... Abrázame... hijo mío... Así... ¿Sabes que eres un buen mozo? Y... ¡qué demonio de muchacho! Tiene toda la cara de su madre. ¡Jesús mil veces!... Me parece que la estoy viendo... Mira, me lleva cuatro años: pero hemos diableado mucho juntas, porque éramos uña y carne, hasta que se casó con el santo varón de tu padre, que se la llevó; lloramos más que Jeremías, y no hemos vuelto a vernos. Vamos, dime: ¿cómo están por allá?</p>
 				<p>-Por allá (contestó Fermín), todos comen de la olla grande. Solamente mi padre cerdea; está ya achacoso, y desde la muerte de mi hermano José se le ha venido el mundo encima. Era sus pies y sus manos; manejaba la hacienda como el mejor labrador de la comarca, y al buen señor se le caía la baba viendo crecer los intereses de la casa en manos de su hijo. Yo he tenido que abandonar mi carrera después de concluida para sustituirle; pero mi pobre José valía mucho.</p>
@@ -1239,7 +1260,7 @@
 				<p>No pudo más; vaciló, y hubiera caído en tierra, si Fermín no le hubiese sostenido en sus brazos. El espanto anudó la voz de todos los que se hallaban presentes.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0221_chap16">
-				<head>Capítulo XVI : El sumario  </head>
+				<head xml:id="ne0221_head_016">Capítulo XVI : El sumario  </head>
 				<p>Ni el terremoto de Orán causó más sorpresa ni más espanto en la ciudad asolada, que el robo de las alhajas de la Virgen produjo en la villa de los Remedios. Ojos afligidos que se elevaban al cielo, manos cruzadas sobre el pecho, semblantes atónitos que miraban a una y a otra parte, no acertando a dar crédito a lo que oían; tal era, poco más o menos, el cuadro que en las calles, en los portales de las viviendas y en el interior de las casas ofrecían los habitantes de aquel pueblo escondido en el último rincón del mundo.</p>
 				<p>¡Robadas las alhajas de la Virgen!... Pero... ¡cuándo!..., ¡cómo!..., ¡quién!... ¿Cuándo?... Durante la noche de la batida, en que medio pueblo se hallaba en la sierra. ¿Cómo? Escalando el muro que cerraba el huerto de la iglesia, abriendo con llave segura la puerta que comunicaba con la sacristía, y forzando la doble cerradura de la cajonera que contenía el cofre de hierro... ¿Quién?... Aquí hacían alto todas las sospechas, porque las conjeturas más suspicaces se detenían ante los nombres de las tres personas que el suceso hacía acudir a la memoria.</p>
 				<p>El señor Cura..., el Sacristán..., el Alcalde... El señor Cura, que vivía en la casa rectoral de la iglesia; el Sacristán, que habitaba en su pequeña casa del huerto junto a la sacristía, y el Alcalde, que tenía una de las llaves que guardaban las alhajas. Pero la veneración que inspiraba el señor Cura lo ponía a cubierto de toda sospecha: su sobriedad, su amor a la pobreza, su caridad, todo hablaba en su favor; el Sacristán, hombre sin necesidades, sin familia, pegado a la iglesia como la hiedra al tronco, y que además había pasado la noche en la sierra, no podía ser objeto de la suspicaz malicia de la gente; y, en fin, el señor Alcalde, ligero de cascos, farolón, mete-sillas y saca-muertos, tiranuelo de monterilla, muy a propósito para cualquier enjuague municipal, no era, sin embargo, capaz de tener arte ni parte en la ejecución de tan escandaloso sacrilegio.</p>
@@ -1272,7 +1293,7 @@
 				<p>-Nada se sabe; pero estamos sobre la pista, y no se puede descubrir el secreto del sumario: caerán, ¡vaya si caerán!, y no se han de escapar ni las ratas: como que tenemos la sartén del mango, y ahí está el Diputado, que nos ha prometido no salir del pueblo hasta que no se averigüe todo y sean castigados los culpables. Calma y orden... La autoridad no duerme, y ahora mismo voy a registrar el pueblo, casa por casa... ¡Ea!; seguidme, y veréis cómo no dejo piedra sobre piedra.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0221_chap17">
-				<head>Capítulo XVII : La velada  </head>
+				<head xml:id="ne0221_head_017">Capítulo XVII : La velada  </head>
 				<p>Allí está María de la Paz, empeñada en desenredar la madeja, hilada en la casa y curada al sol y al aire, que, extendida alrededor de las devanaderas de cañas, parece resuelta a que por el hilo se saque el ovillo. Mas a fuerza de paciencia, tira de aquí, tira de allí, consigue María de la Paz deshacer el enredo; las devanaderas dan unas cuantas vueltas sobre la barra de hierro que las sostienen, y de pronto vacilan, la hebra se resiste, y ya tenemos otra vez a Periquillo hecho fraile; vuelta a empezar; nuevo enredo y nuevo desenredo. El hilo de la madeja parece el hilo de la vida; apenas se desenreda, cuando vuelve a enredarse; pero en buenas manos está el pandero, y quieras que no quieras, la madeja poco a poco va enflaqueciendo, y el ovillo engruesa en las manos de la Pacheca.</p>
 				<p>Sentada delante de su madre, junto a la mesa cuadrada que, cubierta con una manta de lana y enriquecida con diversos dibujos y variados colores, sostiene el gran velón sombreado por doble pantalla, se entretiene Nona en retorcer entre sus redondos dedos, formando cordoncillos, la urdimbre suelta de las toallas que aquella misma tarde han salido del telar para entrar al servicio de la familia.</p>
 				<p>Al otro lado de la mesa, Aurora, inclinada sobre un periódico de modas, de fecha atrasada, verdadera serpiente tentadora de todas las Evas del nuevo paraíso, y que le había prestado la <seg rend="italic">Jueza</seg>, no precisamente la mujer del Juez, sino la hija, repasa los dibujos y los figurines que tiene delante con la atención de quien ve entreabiertas las puertas de un mundo soñado y desconocido.</p>
@@ -1350,7 +1371,7 @@
 				<p>Poco después la Pacheca hacía lo mismo. En medio del silencio se oían las sosegadas respiraciones del matrimonio, y era cosa de exclamar: ¡Cuán hermosamente duermen las conciencias tranquilas!</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0221_chap18">
-				<head>Capítulo XVIII : Al día siguiente  </head>
+				<head xml:id="ne0221_head_018">Capítulo XVIII : Al día siguiente  </head>
 				<p>Cuando Marta se despertó a la mañana siguiente, era ya muy de día; la luz iluminaba las junturas de la ventana; <seg rend="italic">Chucho</seg> aullaba desaforadamente en el parador, vaciando en las grandes tinajas del cobertizo los cántaros de agua que, con ayuda del macho, traía de la fuente. Prisca, remangada hasta los hombros, hacía sonar en un lebrillo inmenso rebosando de agua caliente, todos los cachivaches de la cocina, que, a fuerza de puños, quedaban brillantes como el oro; a la vez que atizaba la lumbre del hogar, que no quería acabar de encenderse. Su lengua tampoco estaba ociosa, pues unas veces contemplando la cacerola que tenía en las manos, torcía la boca diciendo: «¡Mira qué hermosa te quedas!...: desúñese V. para esto.» Otras veces, viendo rodar un puchero, decía: «Anda, panzón, corre y descrísmate.» Otras, en fin, miraba la lumbre sacudiendo la cabeza, y exclamaba: «¿Te querrás tú encender esta mañana? ¡Vaya, pues no echa pocos humos la señora!»</p>
 				<p>Por lo que hace a Gila, no estaba mano sobre mano; barría el corredor a grandes rasgos, llevando delante una nube de polvo, y de vez en cuando entonaba una copla con mucho retintín, que iba derecha a <seg rend="italic">Chucho</seg>, y le picaba en lo vivo.</p>
 				<p>Marta abrió los ojos y se sentó en la cama, santiguándose dos veces, una por devoción y otra de asombro: la primera, porque acababa de despertarse, y la segunda, porque era ya muy tarde, y no sabía cómo se le habían pegado las sábanas. Saltó de la cama, y se vistió en un vuelo. Asomó la cabeza al cuarto de Nona, que empezaba a desperezarse, y luego hizo la misma operación en el cuarto de Aurora, que dormía profundamente.</p>
@@ -1448,7 +1469,7 @@
 				<p>Nona se dirigió a la escalera, y comenzó a subirla con la frente inclinada, y lenta, muy lentamente, como si el mundo entero pesara sobre su cabeza.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0221_chap19">
-				<head>Capítulo XIX : Una por otra  </head>
+				<head xml:id="ne0221_head_019">Capítulo XIX : Una por otra  </head>
 				<p>Marta se había equivocado de medio a medio al decir que los hombres no hacen alto en ciertas cosas de las mujeres, como no les toquen muy de cerca; pues, sin ir más lejos, allí estaba Fermín que daba testimonio de todo lo contrario. Porque es el caso que el futuro marido de la hermosa hija de Cañizares, el novio oficial, auténtico, de la mejor moza del pueblo, que debía casarse de un día a otro, dando ocasión a la boda más ruidosa de aquellas cercanías, daba continuas vueltas en su cabeza al descubrimiento que acababa de hacer. Esta cavilación, mil veces ahuyentada, volvía a cebarse en su imaginación con la tenacidad de la mosca, y sacudida aquí, manotazo allá, la hacía irse, pero volvía, y no encontraba medio de deshacerse de tan molesto enemigo.</p>
 				<p>¡Nona, a media noche, en la reja, burlando la vigilancia de la familia, manos a boca con un hombre desconocido, que pronto abandonaría el pueblo para no volver en su vida! He ahí el punto de partida de su admiración. Mas ¿qué había en ello de extraordinario? Dos amantes más o menos misteriosos, a media noche, con una reja por medio, es un espectáculo que se encuentra a cada paso, en las calles solitarias de los pueblos del Mediodía, durante la noche.</p>
 				<p>Es verdad que no es el camino más seguro para que las cosas lleguen a buen término; pero las costumbres no son tan severas, y guiñándose el ojo, dejan que ruede la bola. Lo de la reja era, en efecto, moneda corriente; mas lo que a Fermín escarabajeaba es que fuese Nona la de la reja. ¿Y por qué? La casa de Cañizares, ¿era acaso un convento de monjas? ¿Había hecho Nona profesión de consagrar a Dios el resto de sus días? ¿Quién había dicho que por aquellos ojos apacibles como una mañana de mayo no había de entrar un rayo de amor humano, que es al fin el sol de las almas?</p>
@@ -1529,7 +1550,7 @@
 				<p>-¡Nona, Nona! ¡Lo estoy viendo con mis propios ojos, y aún me parece mentira!</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0221_chap20">
-				<head>Capítulo XX : Tres al saco  </head>
+				<head xml:id="ne0221_head_020">Capítulo XX : Tres al saco  </head>
 				<p>Era de ver la curiosidad con que <seg rend="italic">Chucho</seg> volvía la cabeza conforme se iba acercando a la casa de sus amos, colgada al brazo una cesta llena de manzanas. Cualquiera habría dicho que se veía perseguido por algún fantasma, porque nunca los rasgos descompuestos de su fisonomía habían ofrecido señales más visibles de estupidez. La visión, no obstante, se escapaba a la perspicacia de los ojos profanos, pues cabalmente en aquel momento sólo dos simples mortales cruzaban la calle.</p>
 				<p>El caso es que <seg rend="italic">Chucho</seg>, sin dejar de volver la cabeza, salvó de un salto el portal y llegó hasta el portón o puerta de enmedio, que de ambas maneras por allí se dice, y se detuvo, tragándose media manzana de un solo bocado, hasta que una figura humana oscureció la claridad de la puerta; figura que tenía algo de sombra, tanto por el reposo de sus movimientos como por lo negro del vestido que traía. <seg rend="italic">Chucho</seg> entonces se precipitó dentro de la casa, a tiempo que Gila pasaba por delante de la puerta, y chocaron uno con otro, y saltaron las manzanas fuera de la cesta y rodaron por el suelo.</p>
 				<p>-¡Ave María! (gritó Gila.) ¡Qué animal eres, y cómo te echas encima!</p>
@@ -1605,7 +1626,7 @@
 				<p>Y como se dice en las novelas, cayó desplomado sobre una silla, ocultando el rostro entre las manos.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0221_chap21">
-				<head>Capítulo XXI : Tragicomedia  </head>
+				<head xml:id="ne0221_head_021">Capítulo XXI : Tragicomedia  </head>
 				<p>Sentado sobre el borde de la cama y a medio vestir, D. Martín Cañizares llamaba a María de la Paz, a voz en grito, con señales visibles de un humor de todos los demonios.</p>
 				<p>-¿Qué quieres, hombre? (dijo la Pacheca entrando en la alcoba.) Vamos a ver: ¿qué tripa se te ha salido?</p>
 				<p>-¡Friolera! (exclamó D. Martín.) ¿Te parece poco encontrarme los pantalones sin botón en la pretina? Seis días hace que los llevo así, sin que le haya ocurrido a nadie en esta casa reparar en ello. Pues, mira, me voy hartando ya de que se me caigan los calzones de hombre de bien.</p>
@@ -1687,7 +1708,7 @@
 				<p>-Calla (dijo él). Gila viene a decirnos que ya es hora de almorzar...</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0221_chap22">
-				<head>Capítulo XXII : El locutorio  </head>
+				<head xml:id="ne0221_head_022">Capítulo XXII : El locutorio  </head>
 				<p>No, no estaba resentida la madre Purificación, porque, digan lo que quieran las vanidades humanas, hay corazones tan apartados de las cosas del mundo, que viven a cubierto hasta de las pequeñas mordeduras del amor propio. Mas, ¡ya se ve!, la buena monja no se hallaba tan desligada de los afectos de la familia, que allá en la paz interior de su alma no sintiese algo, así como cierto escozor que de vez en cuando se le venía a la punta de la lengua, y le hacía exclamar: «Esto es que el Señor me castiga, porque no merezco otra cosa.»</p>
 				<p>Todo ello consistía en que Fermín, el pícaro Fermín, prometido esposo y futuro marido de Aurora, no había parecido por el convento ni una vez siquiera a ver a la madre Purificación, que iba a ser dos veces su tía, aunque tía segunda las dos veces; y es el caso que habían llegado al locutorio las más favorables noticias, pues las gentes se hacían lenguas del muchacho y lo ponían en los cuernos de la luna, y cate V. que a la monja no se le cocía el pan, impaciente por echarle la vista encima; y quieras que no quieras, a la comunidad le sucedía dos cuartos de lo mismo.</p>
 				<p>Y véase lo que son las cosas: desde que Fermín puso los pies en la casa de Cañizares, todos los días se hablaba de llevarlo en procesión al convento; mas hoy por una cosa, mañana por otra, como en las casas de las mujeres hacendosas hay siempre tanto que hacer, se había ido aplazando la visita al convento; y Dios sabe cuándo habría llegado el día propicio, si una mañana María de la Paz no hubiese visto entrar por las puertas de su casa a la mandadera de las monjas, con una cesta colgada en el brazo izquierdo y una carta en la mano derecha. En cuanto la Pacheca distinguió a la mandadera, exclamó diciendo:</p>
@@ -1792,7 +1813,7 @@
 				<p>-Señor, proteged su inocencia, porque me parece que el mundo ha clavado en su corazón alguna espina.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0221_chap23">
-				<head>Capítulo XXIII : Drama  </head>
+				<head xml:id="ne0221_head_023">Capítulo XXIII : Drama  </head>
 				<p>Sin la luna, que sabe embellecer los objetos alumbrándolos de modo que se suavicen sus imperfecciones; sin el cielo tachonado de estrellas, que obligan a los ojos de la cara a llenarse de asombro y a los ojos del alma a meterse en honduras; sin el sueño, que, cuando se satisface a pierna suelta, viene a ser un período de vacaciones que se toma el alma, hemos de convenir en que la noche no podría dar muy buena idea de su persona. Cuando ella se envuelve en su manto de color de boca de lobo, y se lanza por esos mundos asida del brazo del dolor, que es su amigo, e imponiendo silencio a casi todas las voces de la naturaleza, el ánimo más suelto y retozón se recoge un poco, dentro de sí mismo; las ideas enfadosas que durante el día pasaron no más que rozándole, se fijan en él profundamente, y la imaginación, metiéndose en el abismo de los sinsabores de la vida, si no se perturba hasta el punto de crearse fantasmas o ver visiones, logra cuando menos que el manto de la noche se convierta lisa y llanamente en manto de tristeza.</p>
 				<p>Algo de esto ocurría en el seno de la familia de Cañizares la noche que sucedió a la tarde en que se había verificado la visita al Convento. Las sombras que habían invadido las calles produciendo una oscuridad densa como el caos, ejercían sin duda su influjo en las gentes de la casa, las cuales, contra su costumbre, se mostraban taciturnas. En el reloj muy respetable de la estancia donde se solía cenar ordinariamente habían sonado las nueve; y el bueno de D. Martín, sentado junto a la gran mesa de nogal dispuesta para recibir la cena, repasaba por tercera vez a la luz del velón, con el ceño fruncido, una carta que temblaba entre sus manos. Aquella carta era un anónimo.</p>
 				<p>Asombrada María de la Paz de que el reloj hubiera sido más exacto que su marido en dar la hora de la cena, fue a buscarle, diciéndole desde la puerta de la habitación:</p>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Abel Sánchez</title>
-				<title type="sub">Una historia de pasión</title>
+				
 				<title type="short">Abel</title>
-				<title type="idno">
-					<idno type="bne">XX2213046</idno>
-					<idno type="viaf">217038607</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1139151</idno>
-					<idno type="viaf">88844103</idno>
-					<name type="short">Unamuno</name>
-					<name type="full">Miguel de Unamuno</name>
+					<name type="short" ref="#Unamuno"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1541</measure>
@@ -141,13 +131,79 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0069</idno>
+						<idno type="cligs">ne0069</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Emiferro, r.1.1, <date when="2013">2013</date>, <idno>6069</idno>, <ref target="https://www.epublibre.org/libro/detalle/6069"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1917">1917</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Abel Sánchez</title>
+					<title type="sub">Una historia de pasión</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2213046.html">XX2213046</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/217038607/">217038607</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3822183/">Q3822183</idno>
+				</idno>
+				</title>
+					<author xml:id="Unamuno">
+						<name type="full"><forename>Miguel</forename> <surname>de Unamuno</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8740 - IP 8745">IP 8740 - IP 8745</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118625403">118625403</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q185085/">Q185085</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1139151.html">XX1139151</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/88844103/">88844103</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Emiferro, r.1.1, <date when="2013">2013</date>, <idno>6069</idno>, <ref target="https://www.epublibre.org/libro/detalle/6069"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1917">1917</date><idno source="k10plus" type="ppn" n="1334501939" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334501939"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1917">1917</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1334501939" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334501939"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Abel Sánchez</title>: 	<title type="sub">die Geschichte einer Leidenschaft</title> <date when="1925">1925</date>, <publisher>Meyer &amp; Jessen</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="1113965568" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1113965568"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Abel Sánchez</title>: 	<title type="sub">die Geschichte einer Leidenschaft</title> <date when="1925">1925</date>, <publisher>Meyer &amp; Jessen</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="406335982" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=406335982"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Abel Sánchez</title>: 	<title type="sub">die Geschichte einer Leidenschaft</title> <date when="1925">1925</date>, <publisher>Meyer &amp; Jessen</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="227355245" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227355245"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasion</title> <date when="1928">1928</date>, <publisher>Impr.Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="534415334" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=534415334"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1928">1928</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227337115" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227337115"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Tante Tula</title>: 	<title type="sub">ein Frauenroman</title> <date when="1933">1933</date>, <publisher>Phaidon-Verl.</publisher> <pubPlace>Wien;Leipzig</pubPlace> 		<idno type="ppn" n="1385031743" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1385031743"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1947">1947</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Buenos Aires;México</pubPlace> 		<idno type="ppn" n="464677033" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464677033"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1952">1952</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Airers</pubPlace> 		<idno type="ppn" n="488932416" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=488932416"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1956">1956</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1135251495" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135251495"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1958">1958</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="406335974" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=406335974"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="1960">1960</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="463378067" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463378067"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1963">1963</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="271386533" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=271386533"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1971">1971</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="57138143X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=57138143X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="1972">1972</date>, <publisher>Instituto Cubano del Libro</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="1016511639" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1016511639"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Unamuno</title>: 	<title type="sub">Abel Sánchez</title> <date when="1974">1974</date>, <publisher>Grant &amp; Cutler [u.a.]</publisher> <pubPlace>London</pubPlace> 		<idno type="ppn" n="039617475" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039617475"/> 		<idno type="isbn" n="0900411872"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1980">1980</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="595679358" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=595679358"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1985">1985</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="196137861" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=196137861"/> 		<idno type="isbn" n="8423901122"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="1985">1985</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="021682437" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=021682437"/> 		<idno type="isbn" n="8470394584"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Abel Sánchez</title>: 	<title type="sub">die Geschichte einer Leidenschaft</title> <date when="1987">1987</date>, <publisher>Selinka</publisher> <pubPlace>Ravensburg</pubPlace> 		<idno type="ppn" n="469811048" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469811048"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Abel Sánchez - die Geschichte einer Leidenschaft</title> <date when="1987">1987</date>, <publisher>P.-S.-Verl. Selinka</publisher> <pubPlace>Ravensburg</pubPlace> 		<idno type="ppn" n="010418644" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=010418644"/> 		<idno type="isbn" n="3926532017"/></bibl>
+						<bibl type="further-edition"><title type="main">Abel Sánchez</title>: 	<title type="sub">(lugu kirest)</title> <date when="1989">1989</date>, <publisher>Kirjastus Perioodika</publisher> <pubPlace>Tallinn</pubPlace> 		<idno type="ppn" n="27367689X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=27367689X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1990">1990</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="481072780" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=481072780"/> 		<idno type="isbn" n="8423901122"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="1990">1990</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="194551407" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=194551407"/> 		<idno type="isbn" n="8470394584"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Parallel but unequal</title>: 	<title type="sub">the contemporizing of Paradise Lost in Unamuno's Abel Sánchez</title> <date when="1990">1990</date>, <publisher>Albatros Ediciones</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="11410123X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=11410123X"/> 		<idno type="isbn" n="8472741729"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra [u.a.]</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1118115201" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1118115201"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">(Narrativa). Paz en la guerra. Amor y pedagogía. Niebla. Abel Sánchez. La tía Tula</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="213874253" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=213874253"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1995">1995</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="191829978" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=191829978"/> 		<idno type="isbn" n="8437613590"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="1996">1996</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="562405860" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=562405860"/> 		<idno type="isbn" n="8422655020"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="1996">1996</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="254104274" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=254104274"/> 		<idno type="isbn" n="8423901122"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="1997">1997</date>, <publisher>Alianza</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="312830114" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=312830114"/> 		<idno type="isbn" n="8420633232"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="2003">2003</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="474156168" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=474156168"/> 		<idno type="isbn" n="8437613590"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="2004">2004</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1621087794" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1621087794"/> 		<idno type="isbn" n="8437613590"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="2006">2006</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1613251254" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1613251254"/> 		<idno type="isbn" n="8437613590"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="2006">2006</date>, <publisher>Crítica</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1609441877" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1609441877"/> 		<idno type="isbn" n="9788484327509;8484327507"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="2007">2007</date>, <publisher>Espasa Calpe</publisher> <pubPlace>Pozuelo de Alarcón (Madrid)</pubPlace> 		<idno type="ppn" n="547250045" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=547250045"/> 		<idno type="isbn" n="9788467025781"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Abel Sánchez</title> <date when="2008">2008</date>, <publisher>Cervantes &amp; Co. [u.a.]</publisher> <pubPlace>Newark</pubPlace> 		<idno type="ppn" n="594110769" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=594110769"/> 		<idno type="isbn" n="1589770544;9781589770546"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title>: 	<title type="sub">una historia de pasión</title> <date when="2013">2013</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="842371745" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=842371745"/> 		<idno type="isbn" n="9788437613598"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Sánchez</title> <date when="2014">2014</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1025584864" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1025584864"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2014">2014</date>, <publisher>Editorial Porrúa</publisher> <pubPlace>México, D.F.</pubPlace> 		<idno type="ppn" n="1025584759" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1025584759"/> 		<idno type="isbn" n="9700767094;9789700767093;9700767108;9789700767109"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -160,6 +216,14 @@
 				<p>Los hijos de Joaquín y Abel tienen un hijo al que llaman Joaquín. Los dos abuelos se preocupan por saber a quién es más parecido el niño y con quién se lleva mejor. El niño tiene preferencia por su abuelo Abel, en parte porque él le hace dibujos. Joaquín se da cuenta y le pide a Abel que se marche, discuten, Joaquín agarra por el cuello a Abel y este muere debido a un problema médico. El nieto ve la escena. Joaquín enferma también y en el lecho de muerte, con toda su familia alrededor, confiesa que siempre odió a Abel, que estaba enamorado de Helena, que no quiso realmente a Antonia. Poco después moría.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8741" key="IP 8741" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL9">8</term>
 					<term type="author.continent">Europe</term>
@@ -230,12 +294,13 @@
 		<revisionDesc>
 			<change when="2015-07-21" who="#jct">Initial TEI version.</change>
 			<change when="2015-09-28" who="#jct">Corrections after reading as eBook. Abstract added.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>PRÓLOGO A LA SEGUNDA EDICIÓN</head>
+				<head xml:id="ne0069_head_000">PRÓLOGO A LA SEGUNDA EDICIÓN</head>
 				<p>Al corregir las pruebas de esta segunda edición de mi <seg rend="italic">Abel Sánchez: Una historia de pasión</seg> —acaso estaría mejor <seg rend="italic">Historia de una pasión</seg>— y corregirlas aquí, en el destierro fronterizo, a la vista pero fuera de mi dolorosa España, he sentido revivir en mí todas las congojas patrióticas de que quise librarme al escribir esta historia congojosa. Historia que no había querido volver a leer.</p>
 				<p>La primera edición de esta novela no tuvo en un principio, dentro de España, buen suceso. Perjudicóle, sin duda, una lóbrega y tétrica portada alegórica que me empeñé en dibujar y colorear yo mismo; pero perjudicole acaso más la tétrica lobreguez del relato mismo. El público no gusta que se llegue con el escalpelo a hediondas simas del alma humana y que se haga saltar pus.</p>
 				<p>Sin embargo, esta novela, traducida al italiano, al alemán y al holandés, obtuvo muy buen suceso en los países en que se piensa y siente en estas lenguas. Y empezó a tenerlo en los de nuestra lengua española. Sobre todo después que el joven crítico José A. Balseiro en el tomo <seg rend="smallcaps">II</seg> de <seg rend="italic">El vigía</seg> le dedicó un agudo ensayo. De tal modo que se ha hecho precisa esta segunda edición.</p>
@@ -256,7 +321,7 @@
 				<ab>En Hendaya. El 14 de julio de 1928.</ab>
 			</div>
 			<div>
-				<head>Abel Sánchez: Una historia de pasión</head>
+				<head xml:id="ne0069_head_001">Abel Sánchez: Una historia de pasión</head>
 				<p>Al morir Joaquín Monegro, encontrose entre sus papeles una especie de Memoria de la sombría pasión que le hubo devorado en vida. Entremézclanse en este relato fragmentos tomados de una confesión —así la rotuló—, y que viene a ser al modo de comentario que se hacía Joaquín a sí mismo de su propia dolencia. Esos fragmentos van entrecomillados. La <seg rend="italic">Confesión</seg> iba dirigida a su hija.</p>
 			</div>
 
@@ -266,7 +331,7 @@
 
 
 			<div n="1" type="chapter" xml:id="ne0069_chap1">
-				<head>I</head>
+				<head xml:id="ne0069_head_002">I</head>
 				<p>No recordaban Abel Sánchez y Joaquín Monegro desde cuándo se conocían. Eran conocidos desde antes de la niñez, desde su primera infancia, pues sus dos sendas nodrizas se juntaban y los juntaban cuando aún ellos no sabían hablar. Aprendió cada uno de ellos a conocerse conociendo al otro. Y así vivieron y se hicieron juntos amigos desde nacimiento, casi más bien hermanos de crianza.</p>
 				<p>En sus paseos, en sus juegos, en sus otras amistades comunes, parecía dominar e iniciarlo todo Joaquín, el más voluntarioso; pero era Abel quien, pareciendo ceder, hacía la suya siempre. Y es que le importaba más no obedecer que mandar. Casi nunca reñían. «¡Por mí como tú quieras…!», le decía Abel a Joaquín, y éste se exasperaba a las veces porque con aquel «¡como tú quieras…!» esquivaba las disputas.</p>
 				<p>—¡Nunca me dices que no! —exclamaba Joaquín.</p>
@@ -345,7 +410,7 @@
 				<p>¿Qué saldría de allí? ¿Encontraría también Helena, como sus compañeros de ellos, más simpático a Abel? Pensó negarse a la presentación, mas como ya se la había prometido…</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0069_chap2">
-				<head>II</head>
+				<head xml:id="ne0069_head_003">II</head>
 				<p>—¿Qué tal te pareció mi prima? —le preguntaba Joaquín a Abel al día siguiente de habérsela presentado y propuesto a ella, a Helena, lo del retrato, que acogió alborozada de satisfacción.</p>
 				<p>—Hombre, ¿quieres la verdad?</p>
 				<p>—La verdad siempre, Abel; si nos dijéramos siempre la verdad, toda la verdad, esto sería el paraíso.</p>
@@ -420,7 +485,7 @@
 				<p>Aquella tarde no pintó ya más Abel. Y salieron novios.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0069_chap3">
-				<head>III</head>
+				<head xml:id="ne0069_head_004">III</head>
 				<p>El éxito del retrato de Helena por Abel fue clamoroso. Siempre había alguien contemplándolo frente al escaparate en que fue expuesto. «Ya tenemos un gran pintor más», decían. Y ella, Helena, procuraba pasar junto al lugar en que su retrato se exponía para oír los comentarios y paseábase por las calles de la ciudad como un inmortal retrato viviente, como una obra de arte haciendo la rueda. ¿No había acaso nacido para eso?</p>
 				<p>Joaquín apenas dormía.</p>
 				<p>—Está peor que nunca —le dijo a Abel—. Ahora es cuando juega conmigo. ¡Me va a matar!</p>
@@ -488,7 +553,7 @@
 				<p>«Pasé una noche horrible —dejó escrito en su <seg rend="italic">Confesión</seg> Joaquín— volviéndome a un lado y otro de la cama, mordiendo a ratos la almohada, levantándome a beber agua del jarro del lavabo. Tuve fiebre. A ratos me amodorraba en sueños acerbos. Pensaba matarles y urdía mentalmente, como si se tratase de un drama o de una novela que iba componiendo, los detalles de mi sangrienta venganza, y tramaba diálogos con ellos. Parecíame que Helena había querido afrentarme y nada más, que había enamorado a Abel por menosprecio a mí, pero que no podía, montón de carne al espejo, querer a nadie. Y la deseaba más que nunca y con más furia que nunca. En alguna de las interminables modorras de aquella noche me soñé poseyéndola y junto al cuerpo frío e inerte de Abel. Fue una tempestad de malos deseos, de cóleras, de apetitos sucios, de rabia. Con el día y el cansancio de tanto sufrir volvióme la reflexión, comprendí que no tenía derecho alguno a Helena, pero empecé a odiar a Abel con toda mi alma y a proponerme a la vez ocultar ese odio, abonarlo, criarlo, cuidarlo en lo recóndito de las entrañas de mi alma. ¿Odio? Aún no quería darle su nombre, ni quería reconocer que nací, predestinado, con su masa y con su semilla. Aquella noche nací al infierno de mi vida».</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0069_chap4">
-				<head>IV</head>
+				<head xml:id="ne0069_head_005">IV</head>
 				<p>—Helena —le decía Abel—, ¡eso de Joaquín me quita el sueño…!</p>
 				<p>—¿El qué?</p>
 				<p>—Cuando le diga que vamos a casamos no sé lo que va a ser. Y eso que parece ya tranquilo y como si se resignase a nuestras relaciones…</p>
@@ -513,7 +578,7 @@
 				<p>—¿Y qué mal hay en ello? Es mi primo, tu primer amigo, a él debemos el habernos conocido. Y si no le convidas tú, le convidaré yo. ¿Que no va? ¡Mejor! ¿Qué va? ¡Mejor que mejor!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0069_chap5">
-				<head>V</head>
+				<head xml:id="ne0069_head_006">V</head>
 				<p>Al anunciar Abel a Joaquín su casamiento, este dijo:</p>
 				<p>—Así tenía que ser. Tal para cual.</p>
 				<p>—Pero bien comprendes…</p>
@@ -543,7 +608,7 @@
 				</floatingText>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0069_chap6">
-				<head>VI</head>
+				<head xml:id="ne0069_head_007">VI</head>
 				<p>Al poco de haber vuelto los novios de su viaje de luna de miel, cayó Abel enfermo de alguna gravedad y llamaron a Joaquín a que le viese y le asistiese.</p>
 				<p>—Estoy muy intranquila, Joaquín —le dijo Helena—; anoche no ha hecho sino delirar, y en el delirio no hacía sino llamarte.</p>
 				<p>Examinó Joaquín con todo cuidado y minucia a su amigo, y luego, mirando ojos a ojos a su prima, le dijo:</p>
@@ -592,7 +657,7 @@
 				<p>—¡Pues cállate!</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0069_chap7">
-				<head>VII</head>
+				<head xml:id="ne0069_head_008">VII</head>
 				<p>Dedicose Joaquín, para salvarse, requiriendo amparo a su pasión, a buscar mujer, los brazos maternales de una esposa en que defenderse de aquel odio que sentía, un regazo en que esconder la cabeza, como un niño que siente terror al coco, para no ver los ojos infernales del dragón de hielo.</p>
 				<p>¡Aquella pobre Antonia!</p>
 				<p>Antonia había nacido para madre; era todo ternura, todo compasión. Adivinó en Joaquín, con divino instinto, un enfermo, un inválido del alma, un poseso, y sin saber de qué, enamorose de su desgracia. Sentía un misterioso atractivo en las palabras frías y cortantes de aquel médico que no creía en la virtud ajena.</p>
@@ -631,7 +696,7 @@
 				<p>»Su mansedumbre me irritaba. Había veces en que ¡Dios me perdone!, la habría querido mala, colérica, despreciativa».</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0069_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0069_head_009">VIII</head>
 				<p>En tanto la gloria artística de Abel seguía creciendo y confirmándose. Era ya uno de los pintores de más nombradía de la nación toda, y su renombre empezaba a traspasar las fronteras. Y esa fama creciente era como una granizada desoladora en el alma de Joaquín. «Sí, es un pintor muy científico; domina la técnica; sabe mucho, mucho; es habilísimo», decía de su amigo, con palabras que silbaban. Era un modo de fingir exaltarle deprimiéndole.</p>
 				<p>Porque él, Joaquín, presumía ser un artista, un verdadero poeta en su profesión, un clínico genial, creador, intuitivo, y seguía soñando con dejar su clientela para dedicarse a la ciencia pura, a la patología teórica, a la investigación. ¡Pero ganaba tanto…!</p>
 				<p>«No era, sin embargo, la ganancia —dice en su <seg rend="italic">Confesión</seg> póstuma— lo que más me impedía dedicarme a la investigación científica. Tirábame a ésta por un lado el deseo de adquirir fama y renombre, de hacerme una gran reputación científica y asombrar con ella la artística de Abel, de castigar así a Helena, de vengarme de ellos, de ellos y de todos los demás, y aquí encadenaba los más locos de mis ensueños, mas por otra parte, esa misma pasión fangosa, el exceso de mi despecho y mi odio me quitaban serenidad de espíritu. No, no tenía el ánimo para el estudio, que lo requiere limpio y tranquilo. La clientela me distraía.</p>
@@ -660,7 +725,7 @@
 				<p>Durante unos días apenas pensó más que en el bebedizo. Y acabó diciéndose: «¡Es el pecado original!».</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0069_chap9">
-				<head>IX</head>
+				<head xml:id="ne0069_head_010">IX</head>
 				<p>Casose Joaquín con Antonia buscando en ella un amparo, y la pobre adivinó desde luego su menester, el oficio que hacía en el corazón de su marido y cómo le era un escudo y un posible consuelo. Tomaba por marido a un enfermo, acaso a un inválido incurable, del alma; su misión era la de una enfermera. Y le aceptó llena de compasión, llena de amor a la desgracia de quien así unía su vida a la de ella.</p>
 				<p>Sentía Antonia que entre ella y su Joaquín había como un muro invisible, una cristalina y transparente muralla de hielo. Aquel hombre no podía ser de su mujer, porque no era de sí mismo, dueño de sí, sino a la vez un enajenado y un poseído. En los más íntimos trasportes de trato conyugal, una invisible sombra fatídica se interponía entre ellos. Los besos de su marido parecíanle besos robados, cuando no de rabia.</p>
 				<p>Joaquín evitaba hablar de su prima Helena delante de su mujer, y ésta, que se percató de ello al punto, no hacía sino sacarla a colación a cada paso en sus conversaciones.</p>
@@ -713,13 +778,13 @@
 				<p>—«Creo en Dios» —se repitió Joaquín el verse solo; solo con el otro—; «¿y qué es creer en Dios? ¿Dónde está Dios? ¡Tendré que buscarle!».</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0069_chap10">
-				<head>X</head>
+				<head xml:id="ne0069_head_011">X</head>
 				<p>«Cuando Abel tuvo su hijo —escribía en su <seg rend="italic">Confesión</seg> Joaquín— sentí que el odio se me enconaba. Me había invitado a asistir a Helena al parto, pero me excusé con que yo no asistía a partos, lo que era cierto, y con que no sabría conservar toda la sangre fría, mi sangre arrecida más bien, ante mi prima si se viera en peligro. Pero mi diablo me insinuó la feroz tentación de ir a asistirla y de ahogar a hurtadillas al niño. Vencí a la asquerosa idea.</p>
 				<p>»Aquel nuevo triunfo de Abel, del hombre, no ya del artista —el niño era una hermosura, una obra maestra de salud y de vigor, "un angelito", decían—, me apretó aún más a mi Antonia, de quien esperaba el mío. Quería, necesitaba que la pobre víctima de mi ciego odio —pues la víctima era mi mujer más que yo— fuese madre de hijos míos, de carne de mi carne, de entrañas de mis entrañas torturadas por el demonio. Sería la madre de mis hijos y por ello superior a las madres de los hijos de otros. Ella, la pobre, me había preferido a mí, al antipático, al despreciado, al afrentado; ella había tomado lo que otra desechó con desdén y burla. ¡Y hasta me hablaba bien de ellos!</p>
 				<p>»El hijo de Abel, Abelín, pues le pusieron el mismo nombre de su padre y como para que continuara su linaje y la gloria de él, el hijo de Abel, que habría de ser andando el tiempo, instrumento de mi desquite, era una maravilla de niño. Y yo necesitaba tener uno así, más hermoso aún que él».</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0069_chap11">
-				<head>XI</head>
+				<head xml:id="ne0069_head_012">XI</head>
 				<p>—¿Y qué preparas ahora? —le preguntó a Abel Joaquín un día en que, habiendo ido a ver al niño, se encontraron en el cuarto de estudio de aquél.</p>
 				<p>—Pues ahora voy a pintar un cuadro de Historia, o mejor, del Antiguo Testamento, y me estoy documentando…</p>
 				<p>—¿Cómo? ¿Buscando modelos de aquella época?</p>
@@ -772,7 +837,7 @@
 				<p>—Acaso… La que les dio la misma leche; el bebedizo…</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0069_chap12">
-				<head>XII</head>
+				<head xml:id="ne0069_head_013">XII</head>
 				<p>Leyó Joaquín el Caín de lord Byron. Y en su <seg rend="italic">Confesión</seg> escribía más tarde:</p>
 				<p>«Fue terrible el efecto que la lectura de aquel libro me hizo. Sentí la necesidad de desahogarme y tomé unas notas que aún conservo y las tengo ahora aquí, presentes. Pero ¿fue sólo por desahogarme? No; fue con el propósito de aprovecharlas algún día pensando que podrían servirme de materiales para una obra genial. La vanidad nos consume. Hacemos espectáculo de nuestras más íntimas y asquerosas dolencias. Me figuro que habrá quien desee tener un tumor pestífero como no le ha tenido antes ninguno para hombrearse con él. ¿Esta misma <seg rend="italic">Confesión</seg> no es algo más que un desahogo?</p>
 				<p>»He pensado alguna vez romperla para librarme de ella. Pero ¿me libraría? ¡No! Vale más darse un espectáculo que consumirse. Y al fin y al cabo no es más que espectáculo la vida.</p>
@@ -789,7 +854,7 @@
 				<p>»El relato de la muerte de Abel, tal y como aquel terrible poeta del demonio nos lo expone, me cegó. Al leerlo sentí que se me iban las cosas y hasta creo que sufrí un mareo. Y desde aquel día, gracias al impío Byron, empecé a creer».</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0069_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0069_head_014">XIII</head>
 				<p>Le dio Antonia a Joaquín una hija. «Una hija —se dijo— ¡y él un hijo!». Mas pronto se repuso de esta nueva treta de su demonio. Y empezó a querer a su hija con toda la fuerza de su pasión y por ella a la madre. «Será mi vengadora», se dijo primero, sin saber de qué habría de vengarle, y luego: «Será mi purificadora».</p>
 				<p>«Empecé a escribir esto —dejó escrito en su <seg rend="italic">Confesión</seg>— más tarde para mi hija, para que ella, después de yo muerto, pudiese conocer a su pobre padre y compadecerle y quererle. Mirándola dormir en la cuna, soñando su inocencia, pensaba que para criarla y educarla pura tenía yo que purificarme de mi pasión, limpiarme de la lepra de mi alma. Y decidí hacerle que amase a todos y sobre todo a ellos. Y allí, sobre la inocencia de su sueño, juré libertarme de mi infernal cadena. Tenía que ser yo el mayor heraldo de la gloria de Abel».</p>
 				<p>Y sucedió que habiendo Abel Sánchez acabado su cuadro, lo llevó a una Exposición, donde obtuvo un aplauso general y fue admirado como estupenda obra maestra, y se le dio la medalla de honor.</p>
@@ -816,7 +881,7 @@
 				<p>Y al separarse la criada sintió Joaquín entrañada aversión a sí mismo. «Me estoy idiotizando —se dijo—. ¡Qué pensará de mí esta muchacha!». Y tanto le acongojó esto que hizo que con un pretexto cualquiera se le despachase a aquella criada. «¿Y si ahora va —se dijo luego— y vuelve a servir a Abel y le cuenta esto?». Por lo que estuvo a punto de pedir a su mujer que volviera a llamarla. Mas no se atrevió. E iba siempre temblando de encontrarla por la calle.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0069_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0069_head_015">XIV</head>
 				<p>Llegó el día del banquete. Joaquín no durmió la noche de la víspera.</p>
 				<p>—Voy a la batalla, Antonia —le dijo a su mujer al salir de casa.</p>
 				<p>—Que Dios te ilumine y te guíe, Joaquín.</p>
@@ -871,7 +936,7 @@
 				<p>—Ya he visto y he oído y me basta. ¡Cállate, digo!</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0069_chap15">
-				<head>XV</head>
+				<head xml:id="ne0069_head_016">XV</head>
 				<p>¡Pero no, no! Aquel acto heroico no le curó al pobre Joaquín.</p>
 				<p>«Empecé a sentir remordimiento —escribió en su <seg rend="italic">Confesión</seg>— de haber dicho lo que dije, de no haber dejado estallar mi mala pasión para así librarme de ella, de no haber acabado con él artísticamente, denunciando los engaños y falsos efectismos de su arte, sus imitaciones, su técnica fría y calculada, su falta de emoción; de no haber matado su gloria. Y así me habría librado de lo otro, diciendo la verdad, reduciendo su prestigio a su verdadera tasa. Acaso Caín, el bíblico, el que mató al otro Abel, empezó a querer a este luego que lo vio muerto. Y entonces fue cuando empecé a creer; de los efectos de aquel discurso provino mi conversión».</p>
 				<p>Lo que Joaquín llamaba así en su Confesión fue que Antonia, su mujer, que le vio no curado, que le temió acaso incurable, fue induciéndole a que buscase armas en la religión de sus padres, en la de ella, en la que había de ser de su hija, en la oración.</p>
@@ -909,7 +974,7 @@
 				<p>—Pregunte más bien que para qué nació…</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0069_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0069_head_017">XVI</head>
 				<p>Abel había pintado una Virgen con el niño en brazos que no era sino un retrato de Helena, su mujer, con el hijo, Abelito. El cuadro tuvo éxito, fue reproducido, y ante una espléndida fotografía de él rezaba Joaquín a la Virgen Santísima, diciéndole: «¡Protégeme! ¡Sálvame!».</p>
 				<p>Pero mientras así rezaba, susurrándose en voz baja y como para oírse, quería acallar otra voz más honda, que brotándole de las entrañas le decía: «¡Así se muera! ¡Así te la deje libre!».</p>
 				<p>—¿Conque te has hecho ahora reaccionario? —le dijo un día Abel a Joaquín.</p>
@@ -938,7 +1003,7 @@
 				<p>«Pero este hombre —se decía Joaquín al separarse de Abel— ¿es que lee en mí? Aunque no, parece no darse cuenta de lo que me pasa. Habla y piensa como pinta, sin saber lo que dice y lo que pinta. Es un inconsciente, aunque yo me empeñe en ver en él un técnico reflexivo…».</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0069_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0069_head_018">XVII</head>
 				<p>Enterose Joaquín de que Abel andaba enredado con una antigua modelo, y esto le corroboró en su aprensión de que no se había casado con Helena por amor. «Se casaron —decíase— por humillarme». Y luego se añadía: «Ni ella, ni Helena le quiere, ni puede quererle… ella no quiere a nadie, es incapaz de cariño, no es más que un hermoso estuche de vanidad… Por vanidad, y por desdén a mí, se casó, y por vanidad o por capricho es capaz de faltar a su marido… Y hasta con el mismo a quien no quiso para marido…». Surgíale a la vez de entre pavesas una brasa que creía apagada al hielo de su odio, y era su antiguo amor a Helena. Seguía, sí, a pesar de todo, enamorado de la pava real, de la coqueta, de la modelo de su marido. Antonia le era muy superior, sin duda, pero la otra era la otra. Y luego, la venganza… ¡es tan dulce la venganza! ¡Tan tibia para un corazón helado!</p>
 				<p>A los pocos días fue a casa de Abel, acechando la hora en que éste se hallara fuera de ella. Encontró a Helena sola con el niño, a aquella Helena, a cuya imagen divinizada había en vano pedido protección y salvación.</p>
 				<p>—Ya me ha dicho Abel —le dijo su prima— que ahora te ha dado por la iglesia. ¿Es que Antonia te ha llevado a ella, o es que vas huyendo de Antonia?</p>
@@ -985,7 +1050,7 @@
 				<p>Helena se levantó, fue al niño, y despertándolo, cogiolo en brazos, y volviendo a Joaquín, le dijo: «¡Vete! Es éste, el hijo de Abel, quien te echa de su casa; ¡vete!».</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0069_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0069_head_019">XVIII</head>
 				<p>Joaquín empeoró. La ira al conocer que se había desnudado el alma ante Helena, y el despecho por la manera como ésta le rechazó, en que vio claro que le despreciaba, acabó de enconarle el ánimo. Mas se dominó buscando en su mujer y en su hija consuelo y remedio. Ensombreciósele aún más su vida de hogar; se le agrió el humor.</p>
 				<p>Tenía entonces en casa una criada muy devota, que procuraba oír misa diaria y se pasaba las horas que el servicio le dejaba libre encerrada en su cuarto haciendo sus devociones. Andaba con los ojos bajos, fijos en el suelo, y respondía a todo con la mayor mansedumbre y en voz algo gangosa. Joaquín no podía resistirla y la regañaba con cualquier pretexto. «Tiene razón el señor», solía decirle ella.</p>
 				<p>—¿Cómo que tengo razón? —exclamó una vez, ya perdida la paciencia, él, el amo—. ¡No, ahora no tengo razón!</p>
@@ -1019,7 +1084,7 @@
 				<p>—Acaba tú con ello.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0069_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0069_head_020">XIX</head>
 				<p>Concentró entonces todo su ahínco en su hija, en criarla y educarla, en mantenerla libre de las inmundicias morales del mundo.</p>
 				<p>—Mira —solía decirle a su mujer—, es una suerte que sea sola, que no hayamos tenido más.</p>
 				<p>—¿No te habría gustado un hijo?</p>
@@ -1046,7 +1111,7 @@
 				<p>Y le hizo callar.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0069_chap20">
-				<head>XX</head>
+				<head xml:id="ne0069_head_021">XX</head>
 				<p>El hijo de Abel estudiaba Medicina, y su padre solía dar a Joaquín noticias de la marcha de sus estudios. Habló Joaquín algunas veces con el muchacho mismo y le cobró algún afecto; tan insignificante le pareció.</p>
 				<p>—¿Y cómo le dedicas a médico y no a pintor? —le preguntó a su amigo.</p>
 				<p>—No le dedico yo, se dedica él. No siente vocación alguna por el arte…</p>
@@ -1074,7 +1139,7 @@
 				<p>—¡Mi firma, pero es… Sánchez! ¡Y menos mal si no le da por firmar Abel S. Puig! Que le hagan marqués de Casa Sánchez. Y luego el Abel quita la malicia al Sánchez. Abel Sánchez suena bien.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0069_chap21">
-				<head>XXI</head>
+				<head xml:id="ne0069_head_022">XXI</head>
 				<p>Huyendo de sí mismo, y para ahogar con la constante presencia del otro, de Abel, en su espíritu, la triste conciencia enferma que se le presentaba, empezó a frecuentar una peña del Casino. Aquella conversación ligera le serviría como narcótico, o más bien se embriagaría con ella. ¿No hay quien se entrega a la bebida para ahogar en ella una pasión devastadora, para derretir en vino un amor frustrado? Pues él se entregaría a la conversación casinera, a oírla más que a tomar parte muy activa en ella, para ahogar también su pasión. Sólo que el remedio fue peor que la enfermedad.</p>
 				<p>Iba siempre decidido a contenerse, a reír y bromear, a murmurar como por juego, a presentarse a modo de desinteresado espectador de la vida, bondadoso como un escéptico de profesión, atento a lo de que comprender es perdonar, y sin dejar traslucir el cáncer que le devoraba la voluntad. Pero el mal le salía por la boca, en las palabras, cuando menos lo esperaba, y percibían todos en ellas el hedor del mal. Y volvía a casa irritado contra sí mismo, reprochándose su cobardía y el poco dominio sobre sí y decidido a no volver más a la peña del Casino. «¡No —se decía—, no vuelvo, no debo volver; esto me empeora; me agrava; aquel ámbito es deletéreo; no se respira allí más que malas pasiones retenidas; no, no vuelvo; lo que yo necesito es soledad, soledad. Santa soledad!».</p>
 				<p>Y volvía.</p>
@@ -1088,7 +1153,7 @@
 				<p>—Sí, estoy enfermo. Pero no quieras saber más.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0069_chap22">
-				<head>XXII</head>
+				<head xml:id="ne0069_head_023">XXII</head>
 				<p>Y volvió al Casino. Era inútil resistirlo. Cada día se inventaba a sí mismo un pretexto para ir allá. Y el molino de la peña seguía moliendo.</p>
 				<p>Allí estaba Federico Cuadrado, implacable, que en cuanto oía que uno elogiaba a otro preguntaba: «¿Contra quién va ese elogio?».</p>
 				<p>—Porque a mí —decía con su vocecita fría y cortante— no me la dan con queso; cuando se elogia mucho a uno, se tiene presente a otro al que se trata de rebajar con ese elogio, a un rival del elogiado. Eso cuando no se le elogia con mala intención, por ensañarse en él… Nadie elogia con buena intención.</p>
@@ -1142,7 +1207,7 @@
 				<p>Y se separaron.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0069_chap23">
-				<head>XXIII</head>
+				<head xml:id="ne0069_head_024">XXIII</head>
 				<p>Andaba por la ciudad un pobre hombre necesitado, aragonés, padre de cinco hijos y que se ganaba la vida como podía, de escribiente y a lo que saliera. El pobre acudía con frecuencia a conocidos y amigos, si es que un hombre así los tiene, pidiéndoles con mil pretextos que le anticiparan dos o tres duros. Y lo que era más triste, mandaba a alguno de sus hijos, y alguna vez a su mujer, a las casas de los conocidos con cartitas de petición. Joaquín le había socorrido algunas veces, sobre todo cuando le llamaba a que viese, como médico, a personas de su familia. Y hallaba un singular alivio en socorrer a aquel pobre hombre. Adivinaba en él una víctima de la maldad humana.</p>
 				<p>Preguntole una vez por él a Abel.</p>
 				<p>—Sí, le conozco —le dijo éste—, y hasta le tuve algún tiempo empleado. Pero es un haragán, un vago. Con el pretexto de que tiene que ahogar sus penas, no deja de ir ningún día al café, aunque en su casa no se encienda la cocina. Y no le faltará su cajetilla de cigarros. Tiene que convertir sus pesares en humo.</p>
@@ -1186,7 +1251,7 @@
 				<p>—Es que ése, el que creéis que me ha criado, no me ha criado, sino que me destetó con el veneno del odio que guarda al otro, al que me hizo y le obligó a casarse con mi madre.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0069_chap24">
-				<head>XXIV</head>
+				<head xml:id="ne0069_head_025">XXIV</head>
 				<p>Concluyó la carrera el hijo de Abel, Abelín, y acudió su padre a su amigo por si quería tomarle de ayudante para que a su lado practicase. Lo aceptó Joaquín.</p>
 				<p>«Le admití —escribía más tarde en su <seg rend="italic">Confesión</seg>, dedicada a su hija— por una extraña mezcla de curiosidad, de aborrecimiento a su padre, de afecto al muchacho, que me parecía entonces una medianía, y por un deseo de libertarme así de mi mala pasión a la vez que, por más debajo de mi alma, mi demonio me decía que con el fracaso del hijo me vengaría del encumbramiento del padre. Quería por un lado, con el cariño al hijo, redimirme del odio al padre, y por otro lado me regodeaba esperando que si Abel Sánchez triunfó en la pintura, otro Abel Sánchez de su sangre marraría en la Medicina. Nunca pude figurarme entonces cuán hondo cariño cobraría luego al hijo del que me amargaba y entenebrecía la vida del corazón».</p>
 				<p>Y así fue que Joaquín y el hijo de Abel sintiéronse atraídos el uno al otro. Era Abelín rápido de comprensión y se interesaba por las enseñanzas de Joaquín, a quien empezó llamando maestro. Este su maestro se propuso hacer de él un buen médico y confiarle el tesoro de su experiencia clínica. «Le guiaré —se decía— a descubrir las cosas que esta maldita inquietud de mi ánimo me ha impedido descubrir a mí».</p>
@@ -1203,7 +1268,7 @@
 				<p>Y luego se decía Joaquín: «¡Éste, este será mi obra! Mío y no de su padre. Acabará venerándome y comprendiendo que yo valgo mucho más que su padre y que hay en mi práctica de la Medicina mucha más arte que en la pintura de su padre. Y al cabo se lo quitaré, sí, ¡se lo quitaré! Él me quitó a Helena, yo les quitaré el hijo. Que será mío, y ¿quién sabe?…, acaso concluya renegando de su padre cuando le conozca y sepa lo que me hizo».</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0069_chap25">
-				<head>XXV</head>
+				<head xml:id="ne0069_head_026">XXV</head>
 				<p>—Pero dime —le preguntó un día Joaquín a su discípulo—, ¿cómo se te ocurrió estudiar Medicina?</p>
 				<p>—No lo sé…</p>
 				<p>—Porque lo natural es que hubieses sentido inclinación a la pintura. Los muchachos se sienten llamados a la profesión de sus padres; es el espíritu de imitación…, el ambiente…</p>
@@ -1256,7 +1321,7 @@
 				<p>—Mi madre…</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0069_chap26">
-				<head>XXVI</head>
+				<head xml:id="ne0069_head_027">XXVI</head>
 				<p>—Mira, Joaquín —le dijo un día Antonia a su marido—, me parece que el mejor día nuestra hija se nos va o nos la llevan…</p>
 				<p>—¿Joaquina? ¿Y dónde?</p>
 				<p>—¡Al convento!</p>
@@ -1296,7 +1361,7 @@
 				<p>—Sí, Antonia, esa hija quiere sacrificarse por mí, y no sabe que si va al convento me deja desesperado. ¡Su convento es esta casa!</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0069_chap27">
-				<head>XXVII</head>
+				<head xml:id="ne0069_head_028">XXVII</head>
 				<p>Dos días después encerrábase en el gabinete Joaquín con su mujer y su hija.</p>
 				<p>—¡Papá, Dios lo quiere! —exclamó resueltamente y mirándole cara a cara su hija Joaquina.</p>
 				<p>—¡Pues no! No es Dios quien lo quiere, sino el padrecito ése —replicó él—. ¿Qué sabes tú, mocosuela, lo que quiere Dios? ¿Cuándo te has comunicado con Él?</p>
@@ -1385,7 +1450,7 @@
 				<p>—¡Y acusan!</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0069_chap28">
-				<head>XXVIII</head>
+				<head xml:id="ne0069_head_029">XXVIII</head>
 				<p>—¡Quién fuera usted, don Joaquín! —decíale un día a este aquel pobre desheredado aragonés, el padre de los cinco hijos, luego que le hubo sacado algún dinero.</p>
 				<p>—¡Querer ser yo! ¡No lo comprendo!</p>
 				<p>—Pues sí, lo daría todo por poder ser usted, don Joaquín.</p>
@@ -1414,7 +1479,7 @@
 				<p>Y al quedarse, luego, éste solo se decía: «¡Quién fuera yo! ¡Ese hombre me envidia!, ¡me envidia! Y yo ¿quién quiero ser?».</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0069_chap29">
-				<head>XXIX</head>
+				<head xml:id="ne0069_head_030">XXIX</head>
 				<p>Pocos días después Abelín y Joaquina estaban en relaciones de noviazgo. Y en su <seg rend="italic">Confesión</seg>, dedicada a su hija, escribía algo después Joaquín:</p>
 				<p>«No es posible, hija mía, que te explique cómo llevé a Abel, tu marido de hoy, a que te solicitase por novia pidiéndote relaciones. Tuve que darle a entender que tú estabas enamorada de él o que por lo menos te gustaría que de ti se enamorase sin descubrir lo más mínimo de aquella nuestra conversación a solas, luego que tu madre me hizo saber cómo querías entrar por mi causa en un convento. Veía en ello mi salvación. Sólo uniendo tu suerte a la suerte del hijo único de quien me ha envenenado la fuente de la vida, sólo mezclando así nuestras sangres esperaba poder salvarme.</p>
 				<p>»Pensaba que acaso un día tus hijos, mis nietos, los hijos de su hijo, sus nietos, al heredar nuestras sangres, se encontraran con la guerra dentro, con el odio en sí mismos. Pero ¿no es acaso el odio a sí mismo, a la propia sangre, el único remedio contra el odio a los demás? La Escritura dice que en el seno de Rebeca se peleaban ya Esaú y Jacob. ¡Quién sabe si un día no concebirás tú dos mellizos, el uno con mi sangre y el otro con la suya, y se pelearán y se odiarán ya desde tu seno y antes de salir al aire y a la conciencia! Porque ésta es la tragedia humana, y todo hombre es, como Job, hijo de contradicción.</p>
@@ -1456,7 +1521,7 @@
 				<p>Y se la tapó con un beso.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0069_chap30">
-				<head>XXX</head>
+				<head xml:id="ne0069_head_031">XXX</head>
 				<p>—Ya te figurarás a lo que vengo —le dijo Abel a Joaquín apenas se encontraron a solas en el despacho de éste.</p>
 				<p>—Sí, lo sé. Tu hijo me ha anunciado tu visita.</p>
 				<p>—Mi hijo y pronto tuyo, de los dos. ¡Y no sabes bien cuánto me alegro! Es como debía acabar nuestra amistad. Y mi hijo es ya casi tuyo; te quiere ya como a padre, no sólo como a maestro. Estoy por decir que te quiere más que a mí…</p>
@@ -1495,7 +1560,7 @@
 				<p>Se separaron.</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0069_chap31">
-				<head>XXXI</head>
+				<head xml:id="ne0069_head_032">XXXI</head>
 				<p>Con el casamiento de su hija pareció entrar el sol, un sol de ocaso de otoño, en el hogar antes frío de Joaquín, y este empezar a vivir de veras. Fue dejándole al yerno su clientela, aunque acudiendo, como en consulta, a los casos graves y repitiendo que era bajo su dirección como aquel ejercía.</p>
 				<p>Abelín, con las notas de su suegro, a quien llamaba su padre, tuteándole ya, y con sus ampliaciones y explicaciones verbales, iba componiendo la obra en que se recogía la ciencia médica del doctor Joaquín Monegro, y con un acento de veneración admirativa que el mismo Joaquín no habría podido darle. «Era mejor, sí —pensaba éste—, era mucho mejor que escribiese otro aquella obra, como fue Platón quien expuso la doctrina socrática». No era él mismo quien podía, con toda libertad de ánimo y sin que ello pareciese, no ya presuntuoso, mas un esfuerzo para violentar el aplauso de la posteridad, que se estimaba no conseguible; no era él quien podía exaltar su saber y su pericia. Reservaba su actividad literaria para otros empeños.</p>
 				<p>Fue entonces, en efecto, cuando empezó a escribir su <seg rend="italic">Confesión</seg>, que así la llamaba, dedicada a su hija y para que ésta la abriese luego que él hubiera muerto, y que era el relato de su lucha íntima con la pasión que fue su vida, con aquel demonio con quien peleó casi desde el albor de su mente, dueña de sí hasta entonces, hasta cuando lo escribía. Esta confesión se decía dirigida a su hija, pero tan penetrado estaba él del profundo valor trágico de su vida de pasión y de la pasión de su vida, que acariciaba la esperanza de que un día su hija o sus nietos la dieran al mundo, para que éste se sobrecogiera de admiración y de espanto ante aquel héroe de la angustia tenebrosa que pasó sin que le conocieran en todo su fondo los que con él convivieron. Porque Joaquín se creía un espíritu de excepción, y como tal torturado y más capaz de dolor que los otros, un alma señalada al nacer por Dios con la señal de los grandes predestinados.</p>
@@ -1514,7 +1579,7 @@
 				<p>Ella, Helena, sí solía ir a casa de su nuera.</p>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0069_chap32">
-				<head>XXXII</head>
+				<head xml:id="ne0069_head_033">XXXII</head>
 				<p>—Pero dime —le decía un día Joaquín a su yerno—, ¿cómo no se le ocurrió a tu padre nunca inclinarte a la pintura?</p>
 				<p>—No me ha gustado nunca.</p>
 				<p>—No importa; parecía lo natural que él quisiera iniciarte en su arte…</p>
@@ -1551,7 +1616,7 @@
 				<p>—¡Ojalá no lo hubiese oído yo tampoco! —y la voz le lloraba.</p>
 			</div>
 			<div n="33" type="chapter" xml:id="ne0069_chap33">
-				<head>XXXIII</head>
+				<head xml:id="ne0069_head_034">XXXIII</head>
 				<p>Solía ir Helena a casa de su nuera, de sus hijos, para introducir un poco de gusto más fino, de mayor elegancia, en aquel hogar de burgueses sin distinción, para corregir —así lo creía ella— los defectos de la educación de la pobre Joaquina, criada por aquel padre lleno de una soberbia sin fundamento y por aquella pobre madre que había tenido que cargar con el hombre que otra desdeñó. Y cada día dictaba alguna lección de buen tono y de escogidas maneras.</p>
 				<p>—¡Bien, como quieras! —solía decir Antonia.</p>
 				<p>Y Joaquina, aunque recomiéndose, resignábase. Pero dispuesta a rebelarse un día. Y si no lo hizo fue por los ruegos de su marido.</p>
@@ -1585,7 +1650,7 @@
 				<p>—Sí, sabe también lo que se hizo, y no hablemos más de ello.</p>
 			</div>
 			<div n="34" type="chapter" xml:id="ne0069_chap34">
-				<head>XXXIV</head>
+				<head xml:id="ne0069_head_035">XXXIV</head>
 				<p>Y vino al mundo el hijo de Abel y de Joaquina, en quien se mezclaron las sangres de Abel Sánchez y de Joaquín Monegro.</p>
 				<p>La primer batalla fue la del nombre que había de ponérsele; su madre quería que Joaquín; Helena, que Abel; y Abel su hijo, Abelín y Antonia remitieron la decisión a Joaquín, que sería quien le diese nombre. Y fue un combate en el alma de Monegro. Un acto tan sencillo como es dar nombre a un hombre nuevo, tomaba para él tamaño de algo agorero, de un sortilegio fatídico. Era como si se decidiera el porvenir del nuevo espíritu.</p>
 				<p>«Joaquín —se decía éste—, Joaquín, sí, como yo, y luego será Joaquín S. Monegro y hasta borrará la ése, la ése a que se le reducirá ese odioso Sánchez, y desaparecerá su nombre, el de su hijo, y su linaje quedará anegado en el mío… Pero ¿no es mejor que sea Abel Monegro, Abel S. Monegro, y se redima así el Abel? Abel es su abuelo, pero Abel es también su padre, mi yerno, mi hijo, que ya es mío, un Abel mío, que he hecho yo. ¿Y qué más da que se llame Abel si él, el otro, su otro abuelo, no será Abel ni nadie le conocerá por tal, sino será como yo le llame en las <seg rend="italic">Memorias</seg>, con el nombre con que yo le marque en la frente con fuego? Pero no».</p>
@@ -1602,7 +1667,7 @@
 				<p>Y Joaquín se llamó el niño.</p>
 			</div>
 			<div n="35" type="chapter" xml:id="ne0069_chap35">
-				<head>XXXV</head>
+				<head xml:id="ne0069_head_036">XXXV</head>
 				<p>Tomaba al niño su abuela Antonia, que era quien le cuidaba, y apechugándolo como para ampararlo y cual si presintiese alguna desgracia, le decía: «Duerme, hijo mío, duerme, que cuanto más duermas mejor. Así crecerás sano y fuerte. Y luego también, mejor dormido que despierto, sobre todo en esta casa. ¿Qué va a ser de ti? ¡Dios quiera que no riñan en ti dos sangres!». Y dormido el niño, ella, teniéndole en brazos, rezaba y rezaba.</p>
 				<p>Y el niño crecía a la par que la <seg rend="italic">Confesión</seg> y las <seg rend="italic">Memorias</seg> de su abuelo de madre y que la fama de pintor de su abuelo de padre. Pues nunca fue más grande la reputación de Abel que en este tiempo. El cual, por su parte, parecía preocuparse muy poco de toda otra cosa que no fuese su reputación.</p>
 				<p>Una vez se fijó más intensamente en el nietecillo, y fue al verle una mañana dormido, exclamó: «¡Qué precioso apunte!». Y tomando un álbum se puso a hacer un bosquejo a lápiz del niño dormido.</p>
@@ -1622,7 +1687,7 @@
 				<p>Y vino Antonia, la abuela, y cogió al niño de la cuna y se lo llevó como para defenderle de uno y de otro abuelo. Y le decía: «¡Ay, hijo, hijito, hijo mío, corderito de Dios, sol de la casa, angelito sin culpa, que no te retraten, que no te curen! ¡No seas modelo de pintor, no seas enfermo de médico!… ¡Déjales, déjales con su arte y con su ciencia y vente con tu abuelita, tú, vida mía, vida, vidita, vidita mía! Tú eres mi vida; tú eres nuestra vida; tú eres el sol de esta casa. Yo te enseñaré a rezar por tus abuelos y Dios te oirá. ¡Vente conmigo, vidita, vida, corderito sin mancha, corderito de Dios!». Y no quiso Antonia ver el apunte de Abel.</p>
 			</div>
 			<div n="36" type="chapter" xml:id="ne0069_chap36">
-				<head>XXXVI</head>
+				<head xml:id="ne0069_head_037">XXXVI</head>
 				<p>Joaquín seguía con su enfermiza ansiedad el crecimiento en cuerpo y en espíritu de su nieto Joaquinito. ¿A quién salía? ¿A quién se parecía? ¿De qué sangre era? Sobre todo cuando empezó a balbucir.</p>
 				<p>Desasosegábale al abuelo que el otro abuelo, Abel, desde que tuvo el nieto, frecuentaba la casa de su hijo y hacía que le llevasen a la suya el pequeñuelo. Aquel grandísimo egoísta —por tal le tenían su hijo y su consuegro— parecía ablandarse de corazón y aun aniñarse ante el niño. Solía ir a hacerle dibujos, lo que encantaba a la criatura. «¡Abelito, santos!», le pedía. Y Abel no se cansaba de dibujarle perros, gatos, caballos, toros, figuras humanas. Ya le pedía un jinete, ya dos chicos haciendo cachetina, ya un niño corriendo de un perro que le sigue, y que las escenas se repitiesen.</p>
 				<p>—En mi vida he trabajado con más gusto —decía Abel—; ¡esto, esto es arte puro y lo demás… chanfaina!</p>
@@ -1658,7 +1723,7 @@
 				<p>—Me gustan más los dibujos que tú me haces… ¡Anda, píntame un toro y un picador a caballo!</p>
 			</div>
 			<div n="37" type="chapter" xml:id="ne0069_chap37">
-				<head>XXXVII</head>
+				<head xml:id="ne0069_head_038">XXXVII</head>
 				<p>—Mira, Abel —le dijo solemnemente Joaquín así que se encontraron solos—; vengo a hablarte de una cosa grave, muy grave, de una cuestión de vida o muerte.</p>
 				<p>—¿De mi enfermedad?</p>
 				<p>—No; pero si quieres de la mía.</p>
@@ -1718,7 +1783,7 @@
 				<p>Luego se fue, pálida y convulsa, pero sin perder su compostura, al cuerpo de su marido.</p>
 			</div>
 			<div n="38" type="chapter" xml:id="ne0069_chap38">
-				<head>XXXVIII</head>
+				<head xml:id="ne0069_head_039">XXXVIII</head>
 				<p>Pasó un año en que Joaquín cayó en una honda melancolía. Abandonó sus <seg rend="italic">Memorias</seg>, evitaba ver a todo el mundo, incluso a sus hijos. La muerte de Abel había parecido el natural desenlace de su dolencia, conocida por su hija, pero un espeso bochorno misterioso pesaba sobre la casa. Helena encontró que el traje de luto la favorecía mucho y empezó a vender los cuadros que de su marido le quedaban. Parecía tener cierta aversión al nieto. Al cual le había nacido ya una hermanita.</p>
 				<p>Postróle, al fin, a Joaquín una oscura enfermedad en el lecho. Y sintiéndose morir, llamó un día a sus hijos, a su mujer, a Helena.</p>
 				<p>—Os dijo la verdad el niño —empezó diciendo—, yo le maté.</p>
@@ -1768,7 +1833,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Ni en la vida ni en la muerte</title>
-				<title type="sub"></title>
+				
 				<title type="short">NiVida</title>
-				<title type="idno">
-					<idno type="bne">XX2048088</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX952949</idno>
-					<idno type="viaf">24624818</idno>
-					<name type="short">Lanza</name>
-					<name type="full">Silverio Lanza</name>
+					<name type="short" ref="#Lanza"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">680</measure>
@@ -140,13 +131,35 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0288</idno>
+						<idno type="cligs">ne0288</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
-				<bibl type="print-source">Edición digital basada en la de [Madrid], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
-				<bibl type="edition-first"><date when="1890">1890</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Ni en la vida ni en la muerte</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2048088.html">XX2048088</idno>
+				</idno>
+				</title>
+					<author xml:id="Lanza">
+						<name type="full"><forename>Silverio</forename> <surname>Lanza</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575 - IO 9576">IO 9575 - IO 9576</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/121485129">121485129</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q9077402/">Q9077402</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX952949.html">XX952949</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/24624818/">24624818</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
+					<bibl type="print-source">Edición digital basada en la de [<pubPlace>Madrid</pubPlace>], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
+					<bibl type="edition-first"><date when="1890">1890</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +172,14 @@
 				<p>Capítulo 1: se presenta a Ligurco Redondo, juez corrupto. Capítulo 2: se presenta a Pío de la Cruz, cura en Villaruin, al que critican fuertemente sin demasiados argumentos. Se presentan ideas sobre la corrupción y vicios de la Iglesia. Capítulo 3: se presenta a Bienvenido González, persona culta y atractiva al que el pueblo no toma en serio. Capítulo 4: se presenta a la familia Prada, principalmente la madre y la hija, ya que el marido, militar, murió. La familia está empobrecida y perseguida por el juez. Capítulo 5: se presenta el pueblo (de manera irónica), la huerta y el cementerio que cuida el tío Casto. Capítulo 6: llega al pueblo un militar para entregar una carta al juez. El militar habla con Bievenido González, quien termina obligándole a que le entregue la carta ya que tiene secuestradas las Prada. Capítulo 7: se presencia una fuerte discusión entre Teresa Prada (la madre) y el juez. Teresa muere, en parte por la presión del juez. Bievenido defiende a la familia Prada y el juez le encarcela. Capítulo 8: el cura ayuda a Loreta Prada (la hija) a ver el cadáver de su madre que espera el entierro. Ocurre un brutal enfrentamiento entre el cura y el juez. El cura se revela a Loreto que está enamorado de ella, y ella lo rechaza. Al final el juez y el cura se caen por un precipicio, con lo que mueren. Loreto queda inconsciente. Capítulo 9: mientras tanto, el tío Casto llega al depósito de cadáveres para enterrar a Teresa. Capítulo 10: Loreto se despierta y va al depósito de cadáveres. Encuentra al tío Casto violando el cadáver de su madre. Sufre un ataque y huye mostrando sus genitales. Capítulo 11: Loreto Prada quedó afectada mentalmente, pero el pueblo la defiende. Epílogo (a mi médico): se presentan ciertas ideas sobre la persecución social.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575" key="IO 9575" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -184,14 +205,14 @@
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">comedy</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">moralist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -203,14 +224,14 @@
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
-					<term type="text.quality.listhist"></term>
+					<term type="text.quality.listhist"/>
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Atarjea</term>
 					<term type="text.setting.represented">Villaruin</term>
 					<term type="text.setting.settlement">Villaruin</term>
 					<term type="text.setting.settlement.represented.exist">False</term>
 					<term type="text.setting.settlement.type">rural</term>
-					<term type="text.setting.territory"></term>
+					<term type="text.setting.territory"/>
 					<term type="text.time.period">contemporary</term>
 					<term type="text.time.span">7</term>
 					<term type="text.time.year">19??</term>
@@ -221,6 +242,7 @@
 		<revisionDesc>
 			<change when="2016-07-20" who="#jct">Initial TEI version.</change>
 			<change when="2016-09-25" who="#jct">Text ammended after reading it as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,7 +251,7 @@
 				<p><seg rend="italic">Convencidos de que Dios se hizo hombre, pretenden los hombres hacerse dioses. Mal oficio</seg>.</p>
 			</div>
 			<div>
-				<head>Personajes : (Retratos del natural) PERSONAJES </head>
+				<head xml:id="ne0288_head_000">Personajes : (Retratos del natural) PERSONAJES </head>
 				<p>Licurgo Redondo, <seg rend="italic">juez de delitos.</seg> Pío de la Cruz, <seg rend="italic">cura párroco.</seg> Bienvenido González <seg rend="italic">(el inocente).</seg> La familia Prada. Un sepulturero que no habla. <seg rend="italic">Un tabernero, un polizonte, gentes del pueblo, y otros personajes que ni son del pueblo ni son gentes.</seg></p>
 				
 				<p><seg rend="bold"> Se figura la acción en Villaruin, población próxima a Granburgo (capital de la Atargea), en el siglo XX del cristianismo, durante la dominación de las llamadas razas cultas. </seg></p>
@@ -238,7 +260,7 @@
 		<body>
 			<div type="part">
 			<div n="1" type="chapter" xml:id="ne0288_chap1">
-				<head>Don Ligurco Redondo : (Juez de delitos) </head>
+				<head xml:id="ne0288_head_001">Don Ligurco Redondo : (Juez de delitos) </head>
 				<p>Se le llama también juez de preparación o, como decía el presidente de un tribunal de apelación, «el juez de los primeros pasos», y en una procesión de Semana Santa envió al nominado detrás del Cristo amarrado a la columna, porque «usted me va inztruyendo este procezo y yo iré a la cola con él cabirdo para zentenciar con arreglo a justicia».</p>
 				<p>Cuando algún comerciante es presumido se dice que el tal se ha tragado la vara de medir: pues bien, el juez de delitos de Villaruin se ha tragado la vara de la justicia. Se la ha tragado porque anda más estirado que un pino. Se la ha tragado y le ha producido una indigestión.</p>
 				<p>Afortunadamente sólo se ha tragado la vara; otros se comen la justicia y engordan. El juez de Villaruin está para cebar; y el descaro con que asoman los huesos por debajo de la piel hace honor a la probidad de tan digno sacristán de Themis.</p>
@@ -361,7 +383,7 @@
 				<p>Licurgo, que no comprendió que para ser pillo es preciso ser astuto, y para ser buen juez es necesario ser bueno.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0288_chap2">
-				<head>Don Pío de la Cruz : (Cura Párroco) </head>
+				<head xml:id="ne0288_head_002">Don Pío de la Cruz : (Cura Párroco) </head>
 				<p>-¡Es un bandido!</p>
 				<p>- ¡Valiente Tenorio! ¡Pues no encuentra guapa a la hija del tío Perete!</p>
 				<p>-Y, ¿qué más?</p>
@@ -442,7 +464,7 @@
 				<p>Cuya frase traslado a quien corresponda para su superior conocimiento.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0288_chap3">
-				<head>Bienvenido González : (El inocente) </head>
+				<head xml:id="ne0288_head_003">Bienvenido González : (El inocente) </head>
 				<p>Apenas se sabe su apellido, y se le llama <seg rend="italic">el Inocente</seg> porque en los pueblos hay gran afición a designarlo todo con su verdadero nombre. Esta afición influye en el canto y hasta en los gritos: pudiera llamarse una tendencia onomatópica del lenguaje.</p>
 				<p>A Bienvenido le confirmó una mujer, y las mujeres descubren los inocentes a mucha distancia.</p>
 				<p>Además, el mote no le hizo gracia al apodado, y por esto le duró el mote toda su vida.</p>
@@ -455,7 +477,7 @@
 				<p>-¡Ah, Inocente! ¡Llora como una mujer lo que no supiste conservar como hombre!</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0288_chap4">
-				<head>La familia Prada</head>
+				<head xml:id="ne0288_head_004">La familia Prada</head>
 				<p>Playne, hablando con Recarte, empezó a definir al general Prada.</p>
 				<p>-Ese bizarro General tiene por delante todos los agujeros de su cuerpo.</p>
 				<p>-¿De veras?</p>
@@ -538,7 +560,7 @@
 				<p>-¿Por quién me has tomado? <seg type="foreign" xml:lang="la">Ego sum qui sum</seg>.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0288_chap5">
-				<head>La escena</head>
+				<head xml:id="ne0288_head_005">La escena</head>
 
 				<p>Todos los lugares a que me refiero en este cuento los describí prolijamente en el Viaje de Villaruin a Granburgo.</p>
 				<p>Sin embargo, pudiera leer estas páginas quien no hubiese leído la obrita citada, y no creo impertinente dar idea del cementerio de Villaruin. En dicho pueblo están los muertos más altos que los vivos, y como el viento ordinario de la villa es el <seg type="abbr">S. E.</seg>, en cuyo rumbo está el camposanto, tiene la seguridad quien muere en Villaruin de que los vivos le han de oler después de muerto.</p>
@@ -557,9 +579,9 @@
 			</div>
 			</div>
 			<div type="part">
-				<head>La acción del drama</head>
+				<head xml:id="ne0288_head_006">La acción del drama</head>
 				<div n="6" type="chapter" xml:id="ne0288_chap6">
-					<head>- I -</head>
+					<head xml:id="ne0288_head_007">- I -</head>
 					<p>Cuando la diligencia que viene de Enlace, trayendo los viajeros de Granburgo, paró a las once de la mañana del 7 de noviembre delante de la taberna del tío Cáñamo, acababa Bienvenido de beberse la tercera copa de aguardiente con que lograba que su paladar desechase el sabor del vino consumido con el almuerzo.</p>
 					<p>Y cuando la diligencia paró, fue Bienvenido uno de los primeros en acercarse al coche buscando noticias de la capital del imperio.</p>
 					<p>-¿Me traes la bota?</p>
@@ -766,7 +788,7 @@
 					<p>-Chica, <seg type="foreign" xml:lang="la">redata resfero</seg>, porque yo ya sabes que <seg type="foreign" xml:lang="la">vitam impendere vesto</seg>.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0288_chap7">
-					<head>- II -</head>
+					<head xml:id="ne0288_head_008">- II -</head>
 					<p>Siempre que me ocupo de estos asuntos, me asombro de que la humanidad crea cándidamente que ha resuelto algo emancipándose de la sotana y quedándose cogida entre los pliegues de la toga.</p>
 					<p>Natural era que convencidos los hombres de lo mal que hacen justicia, volviesen a usar las pruebas igualmente arbitrarias e irracionales del agua y del fuego o se hubiesen decidido por no hacer justicia, creando la costumbre de no delinquir como se ha creado la costumbre de robar.</p>
 					<p>No he conocido la Inquisición, pero me la figuro.</p>
@@ -789,7 +811,7 @@
 					<p>La muerte siguió inmóvil en el depósito, pero yo creo que pasaría largo rato pensando en lo que hubiera oído, porque yo he entendido siempre que hay una sobrevida sostenida por el sistema nervioso. Creo en esto como en un gran consuelo, porque, seguramente, lo que se oye después de la muerte dará al muerto la síntesis que la sociedad hace de aquella vida que le consagró el difunto.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0288_chap8">
-					<head>- III -</head>
+					<head xml:id="ne0288_head_009">- III -</head>
 					<p>Y se acabó el llanto, porque hasta las lágrimas se acaban antes que la pena.</p>
 					<p>Siguió Loreto caída sobre el desvencijado catre, inmóvil y con los ojos abiertos. Abiertos como los tenía su madre muerta. ¡Qué infamia! No me han dejado que los cerrase. Habrá llegado al cementerio y se habrá visto allí, sola... sola, ¡sin su hija! Me estará maldiciendo ¡Madre, no, no! ¡No me maldigas, madre! ¡Qué infamia! Pero, ¿por qué?... Estará sola; estará a oscuras ¡Qué horror, Dios mío! ¡Allí toda la noche... sola! ¿Y mañana? No sé. La enterrarán... Pero, ¿es posible que entierren a mi madre? Y yo me quedaré viva... Yo viva... y sola... Yo viva... pero no estaré viva. Me moriré también. Si esto es, yo me moriré mañana. Y esa mujer se ha marchado... Era tarde. No, no es eso. Es que aquí ya no habrá día... Y la debíamos tanto... También es mala... Y todos... No está aquí... está allí, sola. Tendrá frío y tendrá miedo. Y yo aquí... también sola. Pero ese hombre, ¿por qué es tan malo? ¿Por qué hay malos?... Ésos no se mueren. ¿Y el señor cura? Temblaba cuando me cogió las manos... Ése es bueno... y nos quiere... Pero hoy miraba de un modo... Ése no tiene miedo... Dijo hasta luego... Luego... es después... será mañana... Vivir mañana... ¡Oh, no!... Si mamita viviera... pero no vive... Dicen que no vive. Y allí sola... como yo... Tendrá frío... yo también tengo frío.</p>
 					<p>Nerviosamente los brazos de Loreto se aproximaron al busto. Hubo un impulso inicial en el movimiento de aquel cuerpo que parecía inerte. Toda la desesperación del espíritu fue fuerza acumulada que súbitamente llevaron los nervios a los músculos, y aquel ser lanzose de un salto a la sala. Empleáronse los sentidos con actividad inusitada; moviose el corazón rápidamente, circuló la sangre produciendo calor de fiebre, y el organismo se apoderó de todas las actividades.</p>
@@ -852,7 +874,7 @@
 					<p>Todo volvió a sombría calma, y sólo a lo lejos, junto a las tapias extremas de Villaruin, ladraba tenazmente un perro, acaso porque su fino olfato le denunciaba que aún quedaban enemigos del vecindario después de muertos el juez y el cura.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0288_chap9">
-					<head>- IV -</head>
+					<head xml:id="ne0288_head_010">- IV -</head>
 					<p>Mucho madruga el chico del sacristán para tocar el alba, pero más madruga el tío Casto cuando tiene entierro, porque lo que él dice:</p>
 					<p>-Cuanto más pronto despache la sepultura más tiempo me queda libre para vender en la plaza.</p>
 					<p>Así es que cuando apenas era sensible el nuevo día, ya estaba Casto tomándose el aguardiente.</p>
@@ -862,7 +884,7 @@
 					<p>Cerró las maderas de la ventana y empezó su faena.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0288_chap10">
-					<head>- V -</head>
+					<head xml:id="ne0288_head_011">- V -</head>
 					<p>Cuando Loreto volvió de su desmayo era ya pleno día.</p>
 					<p>Su mirada incierta reflejaba el estado de su espíritu. Llegaron todos los recuerdos desde la memoria a la inteligencia. Rehizo ésta el pasado proceso y Loreto huyó aterrorizada de aquel sitio y corrió en busca de la reja confiando en que a la luz del sol podría ver mejor a su <seg rend="italic">mamita muerta</seg>.</p>
 
@@ -874,7 +896,7 @@
 					<p>Volvió el sepulturero de su estupor. Saliose del cementerio y corrió tras Loreto que huyendo hacia Villaruin volvíase a intervalos para mostrar su vientre desnudo a aquel canalla que robaba a los muertos el pudor que no había sido presa de los vivos.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0288_chap11">
-					<head>- VI -</head>
+					<head xml:id="ne0288_head_012">- VI -</head>
 					<p>Hoy sigue Loreto loca y recorriendo diariamente el camino que va de Villaruin el cementerio, y sigue en el pueblo porque nos hemos jurado unos cuantos llenar de curas y jueces el foso del Purgatorio si Loreto se ve molestada por un cura o un juez.</p>
 					<p>Seremos unos bárbaros, pero las fieras se domestican a palos, porque son inferiores a los salvajes que sabían comprender la religión del Crucificado. Lo que no podemos evitar es que Loreto se levante sus ropas cuando algo le produce miedo. Esto divierte a la gente de este pueblo como divertiría a la de Granburgo. El más grosero sensualismo se ha apoderado de los humanos que, al cabo, no pueden encontrar más grato solaz para su perverso instinto.</p>
 					<p>Duerme Loreto en casa de Bienvenido y come en la mía.</p>
@@ -891,7 +913,7 @@
 		</body>
 		<back>
 			<div>
-				<head>A mi médico</head>
+				<head xml:id="ne0288_head_013">A mi médico</head>
 				<p>Amigo mío: (Hasta que usted me mate hemos de ser amigos). A sus manos de usted envío esta carta, que prometo hacer corta, porque usted comprende más fácilmente que yo explico y porque me reservo los pleonasmos para ocasiones que no es del caso mencionar aquí.</p>
 				<p>Hace doce años que estudio con atención lo que se escribe acerca del delirio de las persecuciones, y como no puedo leer mucho ni logro sacar de mis lecturas todo el fruto que una mejor inteligencia podría obtener, es lo cierto que me hallo tan ignorante en este asunto como me hallaba hace doce años.</p>
 				<p>Después de dicho esto sería lo lógico y prudente no seguir hablando de tal materia, pero la costumbre establecida me obliga a dar a usted mi voto y mis consejos, que usted no aceptará seguramente, fundándose no más que en la circunstancia de que yo no soy médico. Circunstancia que, dicho sea por lo propicio de la ocasión, nos da a mi familia y a mí la dulce esperanza de vivir algunos años más.</p>

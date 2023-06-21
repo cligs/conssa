@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
- <?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Niño y grande</title>
-				<title type="sub"></title>
+				
 				<title type="short">NinoGrande</title>
-				<title type="idno">
-					<idno type="bne">XX3384567</idno>
-					<idno type="viaf">176619928</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">894</measure>
@@ -141,16 +131,48 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0060</idno>
+						<idno type="cligs">ne0060</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/portales/gabriel_miro/obra/nio-y-grande-1/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1943">1943</date></bibl>
-				<bibl type="edition-first"><date when="1922">1922</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Niño y grande</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX3384567.html">XX3384567</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/176619928/">176619928</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/portales/gabriel_miro/obra/nio-y-grande-1/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1943">1943</date></bibl>
+					<bibl type="edition-first"><date when="1922">1922</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niño y Grande</title> <date when="1921">1921</date>, <publisher>Atenea</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342697013" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342697013"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niño y grande</title>: 	<title type="sub">novela</title> <date when="1938">1938</date>, <publisher>Biblioteca nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1569977887" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1569977887"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niño y grande</title> <date when="1953">1953</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="463554620" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463554620"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niño y grande</title> <date when="1988">1988</date>, <publisher>Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1642082260" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1642082260"/> 		<idno type="isbn" n="8470395157"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niño y grande</title> <date when="1988">1988</date>, <publisher>Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="122827171" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=122827171"/> 		<idno type="isbn" n="8470395157"/></bibl>
+						<bibl type="further-edition"><title type="main">Niño y grande</title> <date when="1988">1988</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="022685561" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=022685561"/> 		<idno type="isbn" n="8470395157"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La mujer de Ojeda (Ensayo de novela). Hilván de escenas. De vivir. La novela de mi amigo. Nómada. La palma rota. El hijo santo. Las cerezas del cementerio. Niño y grande</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362006" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362006"/> 		<idno type="isbn" n="8496452255;9788496452251"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -161,6 +183,14 @@
 				
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -194,7 +224,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">autobiographical</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela autobiográfica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -224,6 +254,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-03-06" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -237,9 +268,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>- I - La hermana de Bellver</head>
+				<head xml:id="ne0060_head_000">- I - La hermana de Bellver</head>
 				<div n="1" type="chapter" xml:id="ne0060_chap1">
-					<head>I. Mis padres. Mi abuela</head>
+					<head xml:id="ne0060_head_001">I. Mis padres. Mi abuela</head>
 					<p>Era mi padre de los Hernando de la Mancha, linaje de labradores ricos y temerosos de Dios. Muy joven pasó a la comarca de Murcia, y allí prendose de la mujer que había de ser mi madre, que era de casa rancia y empobrecida.</p>
 					<p>Pusiéronme de nombre Antonio, pero no parece sino que la Humanidad celebró concilio cuando vine al mundo para llamarme Antón. Ilustran, también, mi cédula de nacimiento los nombres de Sebastián y Macario: aquél, para complacencia de mi padrino, Sebastián Reyes, mercader de cerdos y ovejas; y el último, porque nací el día de San Macario, pero Macario de enero, pues se sabe de otro varón Macario, santo igualmente, que la Iglesia celebra el 1.º de abril. Estos conocimientos hagiológicos se los debo a una abuela mía, que me guió y educó con grandísimo celo de piedad. Debo a la misma señora las peregrinas noticias de que nací moreno como el pan de las familias pobres; que apenas me acristianaron volviose mi carne de baza en blanca, encendida y rubia como una candela, y que lloré mis primeras lágrimas al declinar el sol, cuando su redondo filo de fuego parecía rajar la torre de una aldea lejana. Por eso, por la incertidumbre de la hora -según me dijo-, tengo distinta tonalidad en la parda color de mis pupilas, y los lóbulos de mis orejas están algo separados de los maxilares.</p>
 					<p>No barruntéis ni el más leve olor de brujería en mi abuela. Fue muy devota; limpia de alma y sana de cuerpo. Conservó vista para coser mis delantales, y blanca y cabal su dentadura hasta bien doblados los ochenta años. Habitaba, sola con su criada, una casita azul rodeada de huerto, cerca del río. Me llevaban a besarla todas las tardes, y contábame milagros de elegidos. Pensaba tanto en la muerte, que, en vida, pagó su entierro en once parroquias. Y una noche el buen río se hinchó y arrebató árboles, gallinas, cabras, barracas, la casita azul con mi abuela en su seno, y le dio ignorada sepultura sin la santa mediación de las once iglesias, cuyos párrocos afirmaron que no se explicaban lo ocurrido.</p>
@@ -248,7 +279,7 @@
 					<p>Yo me zabullía bajo las sábanas para librarme de sus burlas.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0060_chap2">
-					<head>II. Jesús. El capellán. Los magos</head>
+					<head xml:id="ne0060_head_002">II. Jesús. El capellán. Los magos</head>
 					<p>Nuestra casa era grande y blanca; el campo, de llanura apretada de frutales, de cáñamos y mieses. Las acequias, de quijeros muy espesos de hierbas y de agua limpia, trémula, peinada por las matas caedizas, parecían sendas estremecidas, resplandecientes y vivas. Separaban los tablares de hortal, liños de moreras anchas y jugosas; y los setos, que guardaban los generosos naranjos, eran de aromos, de cuyas ramas, me dijo mi pobre abuela, hicieron los sayones la corona de espinas del Señor.</p>
 					<p>Al lado de los corrales, seguía la barraca de la familia labradora, con su cruz de ciprés bendito, el hastial siempre encalado, y en el rudo enjalbiego caían apretadamente las lenguas llameantes de los pimientos y los dorados racimos de las mazorcas. Delante subía una parra vieja, y sobre el techo, de <seg rend="italic">mantos</seg> de leños y henestrosa, bajaba, amparándola, el follaje de dos olmos, asilo de pájaros y cigarras y protección y sombra del tinado o pesebre, donde roznaban las vacas, que se volvían a mirarnos al zagal del labrador y a mí, cuando jugábamos con la becerra; y ella nos topaba, nos derribaba y lamía. La madre labradora nos avisaba los peligros, mientras le daba teta a una criatura nacida la misma mañana que la ternera, o fregaba escudillas de boj y lebrillos y cántaros en el remanso de la acequia.</p>
 					<p>Jesús, mi amigo, y yo, nos pasmábamos de que la becerra fuese ya más grande, más ágil y graciosa que su hermano.</p>
@@ -286,7 +317,7 @@
 					<p>-¿Cuándo te pondrás malo otra vez?</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0060_chap3">
-					<head>III. En los estudios. Bellver. Elena. Profanación.</head>
+					<head xml:id="ne0060_head_003">III. En los estudios. Bellver. Elena. Profanación.</head>
 					<p>Recién llegado a los trece años, me dejaron interno en un colegio de religiosos de la comarca, muy antiguo y de grande renombre.</p>
 					<p>La frialdad y el silencio de los Estudios, del refectorio y de los claustros; los hondos pasadizos cavados dentro de los muros; las siniestras hornacinas de los dormitorios, en cuyas paredes se tendía la sombra pavorosa de un santo obispo de talla descomunal; la foscura y pesadez de los tejados y torres, donde bajaban las nieblas y volaban los vencejos y gavilanes, que yo contemplaba desde mi pupitre; lamentos de campanas, clase de gramática, zumbas de los antiguos, y la emoción de la dulce libertad del cielo y de los campos, todas mis sensaciones, ayudadas de mi flaqueza, me mustiaron y entristecieron, y acabé por enfermar, aunque no de modo que necesitase volver a mi casa de la ribera. La melancolía de mi ánimo se tradujo y manifestó inexplicablemente en mi cuerpo por un plebeyo reúma de la rodilla izquierda. Había de ir en pos de las brigadas, zaguero y cojo, como cría lisiada de un rebaño.</p>
 					<p>Mis mayores miedos me acometían los lunes, en entrando en clase y ver a los maestros. Estaban recién afeitados, y todas sus facciones destacaban con filo duro en la piel pingüe y encarnada, o amarillenta y exprimida, singularmente la boca y la nariz. Las narices de los Padres y Hermanos, siquiera no fuesen todas desaforadas como las de Tomé Cecial, eran encendidas y sonoras. Es que todos sorbían un rapé, candente como un yodo, que tomaban de sus tabaqueras de hueso amarillo, que parecía cortado de cráneos.</p>
@@ -317,7 +348,7 @@
 					<p>¡La imagen, pálida y virginal, de Elena tropezaba con el pecho desnudo de una cocinera!</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0060_chap4">
-					<head>IV. La terna. Mis pies. La serpiente</head>
+					<head xml:id="ne0060_head_004">IV. La terna. Mis pies. La serpiente</head>
 					<p>En el paseo del jueves fuimos de terna: Marín-Galindo, un riojano chancero, Bellver y yo. Ellos se decían sus perversiones en una <seg rend="italic">germanía</seg> o habla cifrada. Yo me vi humillado por mi ignorancia y cortedad, que aumentaban con su risa. Ellos alcanzaron j a una fuerte y pasmosa varonía; eran los esotéricos de un estupendo culto, anhelado y temido por lo misterioso. Oyéndoles, me sentí alejado de Bellver, y tuve celos. Y pensando que su intimidad les llevaría a coloquios en que se pronunciase el nombre de Elena, me arrebató la ira, hasta dolerme los ojos de mirarles con rabia.</p>
 					<p>Pero dialogaron de la placentera sirviente. Y yo les escuché con avidez, y sonreí y todo con malicia, para que me creyesen sabedor y gozoso de tanta licencia; y en mis entrañas me enfurecía y me despreciaba por mi rebajamiento.</p>
 					<p>De pronto, se quedaron mirándose y riendo, y me dijeron muy confidenciales:</p>
@@ -372,7 +403,7 @@
 					<p>Me lo impuse; me reprimí; vacilé. Harto y cansado de dudar, fui quedándome dormido.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0060_chap5">
-					<head>V. Penitencias. Alucinaciones</head>
+					<head xml:id="ne0060_head_005">V. Penitencias. Alucinaciones</head>
 					<p>En el primer recreo de la mañana me buscaron el mallorquín y el riojano ansiosos de saber mi aventura. Me preguntaban con mucha fisga; pero reparando en mi tranquilo contento, me instaban sobresaltados a que todo lo contase.</p>
 					<p>Pues todo lo conté; y por entusiasmo y demasiada simplicidad hice tan cabal confesión, que les dije lo que aun no he dicho, y fue: que apenas me rindió el sueño, lo tuve de honestísimas delicias, porque, sin sortilegios ni diabólicas artes, no subió, sino que descendió a mi lado la hermanita de Bellver, desnuda y casta como una tibia escultura, y estuvimos juntos, lo mismo que Damis y Cloe, antes de que el pastor recibiese enseñanzas de la taimada Lycenia.</p>
 					<p>No había acabado de decir mi sueño, que al cabo era de pagana inocencia, cuando me sentí derribado por los puños de Bellver, que, como un perro, me mordió en la oreja dañada.</p>
@@ -417,9 +448,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- II - Doña Francisca</head>
+				<head xml:id="ne0060_head_006">- II - Doña Francisca</head>
 				<div n="6" type="chapter" xml:id="ne0060_chap6">
-					<head>I. Mis padrinos</head>
+					<head xml:id="ne0060_head_007">I. Mis padrinos</head>
 					<p>Mi madre y yo siempre estábamos solos. Nada más, algunas tardes de fiesta, venían mis padrinos, Sebastián Reyes y su mujer, la señora Leandra, a la que nunca di el dictado de madrina.</p>
 					<p>La señora Leandra era morena, enjuta, atrabiliaria y brava.</p>
 					<p>Quiso un día acariciarme, y grité de dolor, porque sus dedos duros laceraban como púas de un peine de carda. Desde entonces mirábame con desprecio y me decía: «mantequilla de Flandes».</p>
@@ -438,7 +469,7 @@
 					<p>Mi madre y yo caímos rendidos, angustiados de desamparo en el asiento del coche. Y el tren fue arrastrándose, y salió de la sombra de las viejas y ahumadas acacias de los andenes.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0060_chap7">
-					<head>II. Nuestras amistades</head>
+					<head xml:id="ne0060_head_008">II. Nuestras amistades</head>
 					<p>...De noche llegamos al pueblo manchego elegido para nuestra residencia. Nadie nos aguardaba; nadie nos conocía, en contra de las promesas del padrino.</p>
 					<p>Sobrecogiome el silencio y la tristeza del lugar. En el espacio negreaba la fantasma de la torre con su fanal en la altura, guía de andariegos, de ganados y yuntas; su luz melancólica parecía una lágrima desprendida de la gloria.</p>
 					<p>Por la mañana corrí el pueblo; vi que era grande, y de día también silencioso. Las calles, largas, empedradas rudamente, tenían soledad y aire de campo; las formaban dos, cuatro casas viejas y encaladas, siempre alguna con escudo de piedra verdosa en el dintel; y luego todo eran ya tapias de corrales, donde se recogían los mozos y mulas de labranza, que llegaban, al acabar la tarde, arrastrando el arado con mucho estruendo. Los gorriones saltaban y picaban descuidados como en senderos desiertos. Era lugar de hidalgos y labradores. En la cercanía estaba el campo, fresco, verde, de huertas y alamedas; después seguía majuelo y la rojiza inmensidad de las sembradas hazas bajo un azul raso, obscurecido, de tiempo en tiempo, por el reposado volar de las grajas. Frente a la iglesia parroquial se abría el paseo con olmos, tablado para la música y bancos para solearse los mendigos. A espaldas del templo vivíamos nosotros. Las sombras de sus muros apagaban nuestra casa; sólo por la mañana penetraba la alegría del sol. Desde la reja de mi cuarto oía yo las voces de los cincos misarios y campaneros, el órgano, el canto llano del coro. Los entierros pasaban todos delante de nuestro portal, y como las campanas doblaban por ricos y menesterosos, creíamos vivir en un eterno día de las Ánimas. Mi madre siempre estaba rezando padrenuestros por difuntos. Muchas veces cerraba yo mis libros o interrumpía las obras de un palomar que me estaba labrando en el patio, patio enorme y rudo, orillado de matas de dondiegos, y seguía a las gentes de los entierros. Acometiome un invencible prurito de ver muertos; y como nunca los conocí vivos, cuando en el cementerio destapaban las cajas no me despertaban ninguna idea o memoria de dulzura, de enojo, de mirada, de vida. Los muertos eran, para mí, ésos, los desconocidos. Parecíame que siempre debieron estar así: enlutados, rígidos, con las manos cruzadas apretadamente.</p>
@@ -480,7 +511,7 @@
 					<p>Yo me sofoqué por el recuerdo de mis pecados y por la mirada de la señora.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0060_chap8">
-					<head>III. El pecado. La ventana del muerto</head>
+					<head xml:id="ne0060_head_009">III. El pecado. La ventana del muerto</head>
 					<p>Algunos días paseaba yo con el señor Requena. Íbamos a sus majuelos. Siendo él el rico, y doña Francisca la pobre, hasta cuando la mentaba mostraba sumisión.</p>
 					<p>A su lado, pensaba yo involuntariamente en las intimidades del matrimonio; y no lograba imaginarme al señor Requena besado por doña Francisca; y sí que se besarían y todo.</p>
 					<p>Una tarde, asomados los esposos a la solana de su comedor, que colgaba encima del tuerto, me sorprendieron remendando el cobertizo de mi palomar.</p>
@@ -578,7 +609,7 @@
 					<p>No amaba, no lloraba; todo lo temía... Y sólo le acariciaba el recuerdo de la niña delgadita y rubia, de boca trémula, de ojos ávidos y asustados, con una gota de las luces del cadáver cayéndole por la frente. La soñé. La soñé llorando; y sus lágrimas escaldaban mis ojos...; la aparté para mirarla al claror de las velas, y la niña se transfiguraba en Elena, que huía para siempre de mi vida.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0060_chap9">
-					<head>IV. El capitán de la Guardia civil</head>
+					<head xml:id="ne0060_head_010">IV. El capitán de la Guardia civil</head>
 					<p>...Amaneció el último día de mayo, transparente, lleno de lumbre, que caía como un rocío en lo íntimo de los sembrados, en los árboles, en las hierbas de las calles; todo se recortaba fresco y encendido.</p>
 					<p>Muy temprano marchose mi madre con una familia amiga que celebraba fiesta religiosa en el ermitorio de su heredad.</p>
 					<p>Quisieron que yo fuese; pero me negué. Yo no podía apartarme de doña Francisca, «contento -según confiesa San Agustín- de verme atado con recias y fuertes ligaduras, para ser luego azotado y herido con varas de hierro ardiente, que esto son, para quien ama, los celos, las sospechas, las iras y contiendas».</p>
@@ -618,7 +649,7 @@
 					<p>¡Y yo que amé a doña Francisca por limpia, y un palomar que originó la andanza...!</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0060_chap10">
-					<head>V. Salida de la Mancha</head>
+					<head xml:id="ne0060_head_011">V. Salida de la Mancha</head>
 					<p>...El día de la Inmaculada, mi madre amaneció muerta. Estaba enferma del corazón. Mujer santísima, dulce y callada, murió en silencio y sola... ¡Yo estaba a su lado, y no pudo verme, no pudo llamarme!</p>
 					<p>Mis paseos al cementerio, detrás de los entierros, me habían encallecido la emoción de los muertos. Hasta entonces yo sólo pensé en los muertos. Mi madre me hizo pensar en la muerte.</p>
 					<p>Mi dolor y abandono, y los libros místicos y románticos, me redujeron a mi interior, y en mí mismo hice asilo y refugio.</p>
@@ -629,9 +660,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- III - Elena</head>
+				<head xml:id="ne0060_head_012">- III - Elena</head>
 				<div n="11" type="chapter" xml:id="ne0060_chap11">
-					<head>I. Después</head>
+					<head xml:id="ne0060_head_013">I. Después</head>
 					<p>...Siete años estuve en Madrid, pasando constantemente del bullicio y del amor placentero al recogimiento de la meditación y castidad. Las abrasadas espadas del pecado y del dolor encendieron y llagaron mi espíritu. He sentido las inquietudes, las imprecisas ansias de costosos ideales sin fijeza. Desconfié de mí mismo. ¿Qué apetecía yo, Dios mío?</p>
 					<p>Llegué a preguntarme si no hubiese sido un hombre fuerte, bueno y útil con otra idealidad más concreta y reposada, fundando hogar, gozando de mi sencilla abundancia horaciana, rodeado de mujer y de hijos. Lo dije a mis geniales amigos, y me avergonzaron con sus chanzas.</p>
 					<p>No; yo no sabía lo que anhelaba. Me hundía en vedados amores, por el impulsivo recuerdo del primer beso de dona Francisca, el beso inicial de seducción, que me mordía siempre, siempre, la carne; y me apartaba arrepentido, y hasta llorando, cuando en los ojos, los cabellos, la boca, las líneas de la figura de una mujer casta y hermosa veía una dulce semejanza con los rasgos casi infantiles de Elena, mi Venus Urania.</p>
@@ -663,7 +694,7 @@
 					<p>Juan me acercaba a Sebastián Reyes. Repasé la carta. No nombraba a la señora Leandra. Y fui en busca de mi padrino.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0060_chap12">
-					<head>II. Don Sebastián</head>
+					<head xml:id="ne0060_head_014">II. Don Sebastián</head>
 					<p>Apenas me asomé a su dormitorio, se arrojó, se derribó de la cama cubriéndose con un amplísimo ropón de lana velluda. Parecía vestido de pieles de sus ovejas; y casi le creí un héroe primitivo.</p>
 					<p>Toda mi infancia, la familia labradora de la barraca, la becerra, los árboles del río, la huerta murciana, me rodeaban sintiéndome abrazado de aquella fiera corpulenta y mansa que lloraba y se reía balbuciendo mi nombre sobre mis cabellos...</p>
 					<p>Yo, enternecido, me preguntaba si sería verdad que me quisiese tanto un hombre que fue para nosotros algo desamorado, frío, cauteloso.</p>
@@ -683,7 +714,7 @@
 					<p>Luego retirose para vestirse. Y a poco salía transfigurado, majestuoso, con sus botas inmensas de charol, el rozagante aleteo de su chaquet, de una elegancia franco-argelina; la botonadura de monedas de oro, y en la pechera, una perla desnuda, pudorosa, sólita. Tenía mi padrino una presencia magnífica y senatorial; avanzaba gallarda y patricia la línea de su tórax, fundiéndosele con la majestad de su vientre. Era su busto macizo y espléndido, digno de sentirse cruzado por las bandas más vistosas y de refulgir de placas, lazos, veneras, grandes cruces...</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0060_chap13">
-					<head>III. El vapor de Palma</head>
+					<head xml:id="ne0060_head_015">III. El vapor de Palma</head>
 					<p>Nuestra casa estaba enfrente del mar. Muy temprano me abrían los postigos de mis balcones; y acostado miraba la gloriosa mañana del Mediterráneo. Yo viajaba en todos los barcos que veía, y todos llevaban la ruta de Palma... Nunca me cansé de seguir el vuelo de las gaviotas; algunas subían solemnes y serenas; en lo alto, debían sentirse delirantes de tanto azul; por las tardes, envueltas de sol, se entraban sobre las aguas, buscando los remotos peñascales de su nidal.</p>
 					<p>Mi padrino se reía de mi insaciable contemplación. «Yo en el mar no veo sino agua salada». Y para demostrármelo y confirmármelo miraba un rato con mis catalejos... Y obstinábase después en cerrarme los ventanos para que siguiera durmiendo. ¡Qué lástima que cubriese su rudeza con el pesado paño de su levita financiera!</p>
 					<p>No sabía qué inventar para regalarme y complacerme. Yo, por halagarle y corresponder de alguna manera a sus cuidados, me hice espontáneamente su secretario. Siempre que le presentaban alguna carta dictada por mí, don Sebastián salía a las oficinas voceando que todos tomaran enseñanza de aquellos escritos ejemplares. «¡Si estudiasen ustedes antes de querer ganar dineros!».</p>
@@ -710,7 +741,7 @@
 					<p>Seguí mirando el barco, que era ya como una ligera y lejana espuma del mar. Mis ojos se fueron entrando, entrando; y se encontraron solos; y en el nuevo y grande horizonte de las aguas, en la serenidad del cielo, todo de luz, recogieron una inesperada promesa de ternura, una promesa de renacimiento de mi vida interior... Yo sentí que alguien me ofrecía la dicha.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0060_chap14">
-					<head>IV. Bellver, Senabria y yo</head>
+					<head xml:id="ne0060_head_016">IV. Bellver, Senabria y yo</head>
 					<p>El asombro y el enojo de mi padrino no tuvieron límites cuando le anuncié mi viaje a Palma.</p>
 					<p>-Nada más llevas tres meses a mi lado... ¿Qué buscas en Palma? Te advierto que aquello es una isla.</p>
 					<p>Hubo momentos que don Sebastián pareció trocarse en la señora Leandra. Después quiso vencerme y disuadirme con malicias. Acabada la cena leía un manojo de periódicos.</p>
@@ -749,7 +780,7 @@
 					<p>Yo los aparté; me tendí en la cama; y mordí y bañé de lágrimas los almohadones...</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0060_chap15">
-					<head>V. El señor Florín. La sucursal de Alfaz</head>
+					<head xml:id="ne0060_head_017">V. El señor Florín. La sucursal de Alfaz</head>
 					<p>Desde que supe que Elena era casada, ya no fue para mí el horizonte de mi vida, el ideal de pureza de amor niño y grande, sino que repentinamente la necesité, la deseé y la quise sin ningún misterio. Antes la veía lejana, esfumada y serena como una idea, como un dechado de venustidad; ahora se me aparecía cerca y vedada, en su línea concreta de mujer hermosa y prohibida, que pudo ser mía y la había perdido para siempre.</p>
 					<p>Me aborrecí; me maldije; me burlé de mi desgracia.</p>
 					<p>En cambio, mi padrino jamás fue tan dichoso y alegre como entonces. Cantaba, silbaba, y se reía hasta en su escritorio.</p>
@@ -783,7 +814,7 @@
 					<p>Al cabo se avino a escribir para que me buscasen residencia. Creía mi viaje un repentino antojo. Y fue el comienzo de nuestra separación definitiva.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0060_chap16">
-					<head>VI. El viaje. Mis asesinos</head>
+					<head xml:id="ne0060_head_018">VI. El viaje. Mis asesinos</head>
 					<p>-¿Seis horas de diligencia le faltan a usted todavía? -me preguntó pasmada y compasiva la gentil viajera. Y, como si la rindiese el cansancio y sintiese los fríos de mi camino, recostose en el mullido respaldar del asiento y se arrebujó en la perfumada dulzura de las pieles, como hacen las palomas entre el blando plumón de su cuello.</p>
 					<p>Su padre, un anciano de patricia figura, me sonreía bondadoso, lastimado también de la fatiga que me quedaba.</p>
 					<p>No hay criatura más vana que el hombre. Ya sé que lo han repetido muchos; pero yo lo digo porque me sentí poseído de esta verdad. Eso del pavón como símbolo de la ufanía me parece una gran injusticia. Yo, viéndome compadecido de aquella beldad, no sólo alabé las penosas horas de coche, sino que me tuve por artífice y padre de esas horas, ni más ni menos que el dios griego, y tan placido como si ellas significasen virtudes y merecimientos de mi alma.</p>
@@ -810,7 +841,7 @@
 					<p>...Acaso, entonces, la gentil viajera descansaría en un hotel fastuoso y lejano. Me asomé a la mañana. ¡Elena estaba cerca!</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0060_chap17">
-					<head>VII. La casa del Ánima</head>
+					<head xml:id="ne0060_head_019">VII. La casa del Ánima</head>
 					<p>¡Alfaz! Los primeros tapiales y casas de Alfaz pisaban la espesa verdura de los sembrados tiernos. Después, se iba subiendo apretadamente por una sierra delgada, femenina, que se ceñía con garbo la falda. Todo el pueblo era claro. Me daba la sensación de que estuviese desnudo. Un cendal de humos se alzaba del hondo y se dormía en la cintura de Alfaz.</p>
 					<p>Acabada la anchura simple y risueña de los alcaceres y el delicioso frescor de las huertas, todas las tierras, hasta la besana, llevaban olivares.</p>
 					<p>En la calma azul del aire volaba cansadamente un cuervo.</p>
@@ -847,7 +878,7 @@
 					<p>-¡Si yo fuese capaz de algo decidido y valeroso saldría ahora mismo de este pueblo sin ver a Elena!</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0060_chap18">
-					<head>VIII. Vuelve Senabria</head>
+					<head xml:id="ne0060_head_020">VIII. Vuelve Senabria</head>
 					<p>...Soy interiormente ciego -me repetía yo en mi soledad-, no sé qué busco; y, sin embargo, pretendo con feroz egoísmo que todos sean y vivan a mi imagen y semejanza... ¿Por qué no ha de ser Senabria un dechado admirable de hombres?... En el colegio era demasiado recio, bronco, abultado y voraz para niño. Le sobraba carne, y los ojos se le perdían entre grasa. Senabria no tuvo infancia. Desde luego, le sobraba carne, humanidad... Pero ahora le está bien; y el entendimiento le sienta con justeza. En cambio, es posible que mi traje humano se me haya quedado corto.</p>
 					<p>Entre las sienes de Senabria no caben más que las ideas justas, únicas que han de ser realizadas. Es firme, es activo. Sabe cuanto quiere y ha de menester. La fuerza de su ponderación lo ajusta y equilibra todo a su paso; hasta el capital de la casa Bellver con el de la suya, para que se acomodara a su matrimonio. Es lo mismo como individuo que como entidad mercantil; y su razón es la misma razón social. Es siempre y armónicamente «Hijo de B. Senabria». Trae muchas sortijas, cadenas, dijes. Si yo me enjoyase así, resultaría de una jactancia, de una ostentación indiana. Senabria, no; Senabria, aun parece sobrio; le cabe más pedrería y más oro.</p>
 					<p>El rostro de Senabria es ancho y macizo; le centellean los ojos de júbilo y de certidumbre en la verdad, en la verdad suya. Yo me paso el día dudando. Todavía no he averiguado si Senabria es superior o inferior a mí; él sólo pensará en mí cuando haya de decirle a Elena algo definido, concreto; por ejemplo: que soy rubio, de un rubio castaño, pues ni el color de mi cabello tiene firmeza. Trabaja ese hombre ocho horas diarias; sube a su casa para comer; debe de comer siempre con la misma hambre, gritando y riéndose. Viaja dos veces al año por el Norte y Andalucía, vendiendo sus aceites a las fábricas de conservas. Cuando regresa, le ofrece a su mujer un prendido de concha con una greca de diamantes. Dos veces me ha dicho:</p>
@@ -866,7 +897,7 @@
 					<p>Esas gentes eran unos imaginativos maravillosos; profesaban un culto hidrológico de ardentísima fe; prometían aguas y estaban sedientos.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0060_chap19">
-					<head>IX. Un hombrecito. Una postal con otro hombrecito.</head>
+					<head xml:id="ne0060_head_021">IX. Un hombrecito. Una postal con otro hombrecito.</head>
 					<p>-¿Por qué no voy a verla? -me preguntaba yo todos los días.</p>
 					<p>Y mi alma me lo dijo en voz baja. Yo no iba porque tenía miedo. Miedo de convencerme de su felicidad; y miedo de saber que fuera desdichada.</p>
 					<p>Y el marido volvió a visitarme. Le acompañaba don Camilo. Me pareció tan encogido, tan humillado en presencia de Senabria, que creí que acaso no se conocían y sólo coincidieran en su llegada.</p>
@@ -887,7 +918,7 @@
 					<p><seg rend="italic">María del Pilar Lanuza</seg>».</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0060_chap20">
-					<head>X. Elena y Amalia</head>
+					<head xml:id="ne0060_head_022">X. Elena y Amalia</head>
 					<p>...El silencio quedó estrujado por el fragor de un auto que se detuvo delante del portal.</p>
 					<p>Los pasos y voces de Senabria fueron traspasando poderosamente los muros. Y apareció con un guardapolvo gris, que le volaba como un manto, y un almete de pieles enfundándole todo el cráneo. Cogiome de un puñado; me puso, me aplastó el sombrero, y a empellones y risas me fue sacando por las salas.</p>
 					<p>-Pero, ¿dónde me llevas?</p>
@@ -950,7 +981,7 @@
 					<p>salieron a tejer sus telas delicadas, aventajaría en exquisitez y donaire a la hermosa señora picando las especias para adobar los lomos de los cerdos de Alfaz.</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0060_chap21">
-					<head>XI. Amor niño y grande</head>
+					<head xml:id="ne0060_head_023">XI. Amor niño y grande</head>
 					<p>Dos días estuvimos en <seg rend="italic">La Solana</seg>. Allí gocé de una felicidad sencilla, geórgica, viendo a Elena bajo las encinas patriarcales de la casa de labor, rodeada de su averío, que iba a picarle en el regazo, rubio de trigo como el íntimo elogio del seno de la Esposa.</p>
 					<p>Yo siempre adiviné su paloma o su gallina predilecta, que siempre era la más chiquita, la perseguida, la lisiada por la gula y la fortaleza de las grandes; y yo la cuidé con tanto regalo y ternura, que su dueña sonreía y bajaba los ojos.</p>
 					<p>De estos instantes apacibles y buenos, pasábamos a sufrir sequedades y violencias que me descubrieron el amargo fondo de la vida de Elena.</p>
@@ -985,7 +1016,7 @@
 					<p>Yo la quería tanto que no pensé en su amor, y la bendije... Después de nuestro regreso estuve doce días sin verla.</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0060_chap22">
-					<head>XII. Elena ha llorado</head>
+					<head xml:id="ne0060_head_024">XII. Elena ha llorado</head>
 					<p>...¡Confiese que le aburre esa revista!</p>
 					<p>Yo lo negué diciendo:</p>
 					<p>-A mí no me importan estas estampas de aperos y máquinas agrícolas; pero cuando yo vine las estaba usted mirando. Y todo lo que usted mira y tocan sus manos, y cuanto la rodea, me produce una emoción de belleza. Estos muebles, esta casa, todo este pueblo...</p>
@@ -1006,7 +1037,7 @@
 					<p>...Retirado, en la casona, escribí a mi padrino. De esta carta dependía el sosiego de Elena. Y me valí de la súplica, del engaño y de la amenaza.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0060_chap23">
-					<head>XIII. Don Camilo asciende</head>
+					<head xml:id="ne0060_head_025">XIII. Don Camilo asciende</head>
 					<p>Aquella noche de la Ascensión se abría el teatro que está en la Sociedad «Trabajo», donde a todas horas juegan los maridos al dominó mientras las mujeres están en las fábricas de curtidos.</p>
 					<p>Los pobres cómicos rebulleron mucho tiempo por las calles, con sus botas remendadas, cortezosas del barro de los caminos, y las ropas ajadas; hasta que salioles fiador y ya pudieron acomodarse en los paradores.</p>
 					<p>Era una compañía hecha de sobras y ruinas de teatros provincianos y de la farándula andariega.</p>
@@ -1047,7 +1078,7 @@
 					<p>-¡Aquí tienen a mi maridito ascendido! ¡Bien lo merece, que es un santo!</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0060_chap24">
-					<head>XIV. Senabria. Mi cuarto</head>
+					<head xml:id="ne0060_head_026">XIV. Senabria. Mi cuarto</head>
 					<p>No supe nunca si Elena me quería. Si alguna vez fue su mirada demasiado larga y cálida para ser sólo de piedad por mi abandono, entonces, sus labios pronunciaban el nombre del marido como esposa lastimada. ¡Y no le quería, Señor! La fidelidad de esa mujer era una virtud separada del amor, ceñida a su alma y a su carne con la aspereza del cilicio; ni siquiera podía complacerse en ella según nacen muchas mujeres que la ostentan como una joya.</p>
 					<p>Yo le había <seg rend="italic">restituido</seg> el esposo; y no me aproveché de la soledad de ella. Pero esto, ¿no resultaba ya de una ufanía villanesca? Me sorprendí preguntándome si Elena habría comprendido y penetrado mi sacrificio; y tuve miedo de despreciarme, porque llegué a dudar si quise embaucarla y atraérmela disfrazado de héroe virtuoso.</p>
 					<p>¿Qué hacía yo en Alfaz? Llevaba dos semanas sin verla. Me dije que quería probar la fineza de mis ansias; y fui una tarde.</p>
@@ -1103,7 +1134,7 @@
 					<p>-¡Llevas muy poco equipaje y aquello te gustará...!</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0060_chap25">
-					<head>XV</head>
+					<head xml:id="ne0060_head_027">XV</head>
 					<p>...Ha muerto Senabria. Se derrumbó de la butaca de su siesta dormido para siempre. Me lo escribe Bellver.</p>
 					<p>María del Pilar se desciñó de mi cuello. Después fue acercándoseme. Y encima de mis ojos y de mis lágrimas, pronunció con un dulce plañido:</p>
 					<p>-¡Me da más miedo tu tristeza de hoy, hoy que se cumple el primer mes de nuestra boda!</p>

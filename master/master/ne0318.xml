@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Mi media naranja</title>
-				<title type="sub"></title>
+				
 				<title type="short">MediaNaranja</title>
-				<title type="idno">
-					<idno type="bne">XX2859668</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1051062</idno>
-					<idno type="viaf">79060694</idno>
-					<name type="short">Trigo</name>
-					<name type="full">Felipe Trigo</name>
+					<name type="short" ref="#Trigo"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">712</measure>
@@ -140,13 +131,35 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0318</idno>
+						<idno type="cligs">ne0318</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante: Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/mi-media-naranja--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Imprenta Científica y Artística de Alrededor del Mundo.</bibl>
-				<bibl type="edition-first">Los contemporaneos, Madrid, <date when="1910">1910</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Mi media naranja</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2859668.html">XX2859668</idno>
+				</idno>
+				</title>
+					<author xml:id="Trigo">
+						<name type="full"><forename>Felipe</forename> <surname>Trigo</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654 - IP 8655">IP 8654 - IP 8655</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118867806">118867806</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3068144/">Q3068144</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1051062.html">XX1051062</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/79060694/">79060694</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace>: Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/mi-media-naranja--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Imprenta Científica y Artística de Alrededor del Mundo.</bibl>
+					<bibl type="edition-first">Los contemporaneos, <pubPlace>Madrid</pubPlace>, <date when="1910">1910</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +169,14 @@
 				<p>.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654" key="IP 8654" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -180,11 +201,11 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">erotic</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela erótica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -214,6 +235,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-09-06" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -221,9 +243,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Primera parte</head>
+				<head xml:id="ne0318_head_000">Primera parte</head>
 				<div n="1" type="chapter" xml:id="ne0318_chap1">
-					<head>- I -</head>
+					<head xml:id="ne0318_head_001">- I -</head>
 					<p>Como el otro, yo quisiera poder ser:</p>
 					<lg type="poem">
 						<l><seg rend="italic">entre señores, señor,</seg></l>
@@ -283,7 +305,7 @@
 					<p>Este padre parte un pelo por el aire. Apostaría á que ha estudiado en mi inquietud que... no es «amigo» quien me espera.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0318_chap2">
-					<head>- II -</head>
+					<head xml:id="ne0318_head_002">- II -</head>
 					<p>Salgo.</p>
 					<p>Este hotel está lejos de todo.</p>
 					<p>Hay coches cerca, por fortuna. Llego á la parada y tomo un simón.</p>
@@ -332,7 +354,7 @@
 					<p>-¡Hala, cochero, aprisa! ¡Jala!... digo ¡hala!</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0318_chap3">
-					<head>- III -</head>
+					<head xml:id="ne0318_head_003">- III -</head>
 					<p>Mi casa tiene el honor de estar frente á Neptuno.</p>
 					<p>Es un sitio de honor en Madrid. Árboles, estatuas, flores, palacios del Museo y de la Bolsa...</p>
 					<p>Subo.</p>
@@ -454,7 +476,7 @@
 					<p>Pero... ¡amigo!...</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0318_chap4">
-					<head>- IV -</head>
+					<head xml:id="ne0318_head_004">- IV -</head>
 					<p>Miro el reloj.</p>
 					<p>Las once menos cuarto.</p>
 					<p>Jala acaba de partir. Baila en el Salón Madrid su danza griega á las once en punto.</p>
@@ -499,7 +521,7 @@
 					<p>Por lo pronto, en la duda, me acogeré á la amplia franqueza y á la hermosa libertad con mis amigos. Tengo mi tertulia en el Casino.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0318_chap5">
-					<head>- V -</head>
+					<head xml:id="ne0318_head_005">- V -</head>
 					<p>Está hermosísima la tarde.</p>
 					<p>Y... ¡qué horrible!, yo, me aburro.</p>
 					<p>Sigo el Prado, lentamente. He salido de mi casa como echado por una soledad de bello panteón. Todos aquellos retratos, todas aquellas cosas de mujeres, me parecen epitafios, me parecen cosas muertas.</p>
@@ -605,9 +627,9 @@
 				</div>
 			</div>
 				<div type="part">
-					<head>Segunda parte</head>
+					<head xml:id="ne0318_head_006">Segunda parte</head>
 					<div n="6" type="chapter" xml:id="ne0318_chap6">
-						<head>- I -</head>
+						<head xml:id="ne0318_head_007">- I -</head>
 						<p>Un tren que pasa..., que deja á dos recién casados en una pequeña estación, en mitad de un campo hermoso y en el amanecer de un día primaveral, tiene algo de proyectil excelso de la dicha.</p>
 						<p>El tren se va, desaparece. Nos ha soltado. Nos deja con nuestra emoción de amor abandonados en el diáfano silencio de estos campos y esta aurora.</p>
 						<p>Proyectil. Desde Madrid nos ha lanzado en una noche á la vida bella en el reposo.</p>
@@ -666,7 +688,7 @@
 						<p>Al paso le he dicho á Paquita que suba á ponerse á disposición de la señora.</p>
 					</div>
 					<div n="7" type="chapter" xml:id="ne0318_chap7">
-						<head>- II -</head>
+						<head xml:id="ne0318_head_008">- II -</head>
 						<p>Espero en la mesa. Tiene flores y alegría -una alegría arcaicamente «honrada»- este viejo comedor. He dormido. Me he refrescado en el «tub» perfectamente. Llega mi Inés, y me levanto á recibirla. La conduzco por el brazo á su sillón, y addo descansar y presentárseme ahora con un travierto sus perfumes. Empiezan á servirnos.</p>
 						<p>Inés se alegra, sin duda, de que yo la haya dejaje coquetón, que no es el del viaje. Empieza «nuestra vida». Hágola notar que no hemos sido novios, realmente. Su madre no nos ha dejado hablar jamás por la ventana, ni siquiera formalizar una charla en un rincón. Nos falta confianza... para la «inmensa confianza» (¡se ruboriza!); nos habría faltado sin este viaje de fraternal intimidad..., sin esta cordialidad que desde el amanecer de hoy tenemos ambos en la casa...</p>
 						<p>-Novios... verdaderamente novios, Inés, ¡habremos de serlo esta tarde!</p>
@@ -724,7 +746,7 @@
 						<p>Vuelvo á besarla, en los ciegos ojos de su fe, en la dulce boca de mi fe; estrecho más su brazo contra el mío, y me dispongo, siempre paseando entre las flores, entre las rojas flores de este un poco helénico adelfal, á decirle á besos y á palabras nuevos «argumentos»...</p>
 					</div>
 					<div n="8" type="chapter" xml:id="ne0318_chap8">
-						<head>- III -</head>
+						<head xml:id="ne0318_head_009">- III -</head>
 						<p>Mi mujer es mía -en espíritu, en emoción, en... cuanto falta que lo sea... Vencida. Esta tarde vió ponerse el sol muerta de mi alma entre mis besos. Un alma... en que ya también la suya de cristiana alentaba sensual. Hablábamos del cielo y del sol, á besos. Luego, al tornar hacia la casa, seguimos hablando á besos de la luna y las estrellas. Y ella no sabía que así su alma de cristiana adoraba, en besos de mis labios, á Dios, al Universo.</p>
 						<p>Pero es llegada la hora de que el Universo y Dios se recojan, para las adoraciones todas de su vida y de mi vida, en nosotros mismos. Estamos en el rojo gabinete-comedor, y las seis cortas bujías de los candelabros se agotan; dos, han quemado ya sus arandelas. Calculé, pues, perfectamente. En un banquete nupcial, donde se habla y se sueña y se divaga y se sonríe más que se come, bien puede tardarse en llegar á los postres hora y media. Justamente la duración de estas bujías.</p>
 						<p>Todo previsto. El té final está en el samovar de níquel, para cuando quiera yo prender su lámpara. Trae Paquita el último pastel que ha hecho la excelente cocinera; trae el «biscuit-glacé», los dulces, el roquefort y los cakis y los dátiles y las piñas y naranjas (todo en una enorme bandeja)... y la mando traer también las botellas y las copas del champaña, de chartrés, del benedictino.</p>
@@ -776,7 +798,7 @@
 						<p>Y el que aun tiene ella en su copa, se derrama entre los dos...</p>
 					</div>
 					<div n="9" type="chapter" xml:id="ne0318_chap9">
-						<head>- IV -</head>
+						<head xml:id="ne0318_head_010">- IV -</head>
 						<p>Mi mujer sigue en la espantosa lucha nueva de mi alma con su alma.</p>
 						<p>Sus sueños, sus descansos, su despertar cada mañana en su blanco dormitorio, diríase que le dan, que vuelven implacablemente á darle cada día el recuerdo demoniesco de estos otros cuartos rojos.</p>
 						<p>Las noches son para un pagano mundo delicioso del alma de su carne.</p>
@@ -856,7 +878,7 @@
 						<p>La ofrezco partir esta tarde, le brindo el brazo, y bajamos al viejo comedor familiar... que no la asusta.</p>
 					</div>
 					<div n="10" type="chapter" xml:id="ne0318_chap10">
-						<head>- V -</head>
+						<head xml:id="ne0318_head_011">- V -</head>
 						<p>Como no hemos avisado, nadie nos espera.</p>
 						<p>Un ómnibus, desde la estación, y á casa. Paquita y la cocinera vienen con nosotros.</p>
 						<p>Inés ha dormido mucho en el viaje, ó al menos ha fingido dormir. Como olvidada de... todo, la he visto desorientadísima, cortés y siempre amable conmigo, sin embargo..., propensa en algunos besos al perdón.</p>
@@ -877,7 +899,7 @@
 						<p>Pasa Inés á sus estancias, y yo me acuesto.</p>
 					</div>
 					<div n="11" type="chapter" xml:id="ne0318_chap11">
-						<head>- VI -</head>
+						<head xml:id="ne0318_head_012">- VI -</head>
 						<p>A las doce me despiertan, no sin dificultad. Es Paquita y trae una carta.</p>
 						<p>-¿Y la señora? -le pregunto.</p>
 						<p>-En casa de sus padres. Su madre me ha dado esta carta para usted.</p>

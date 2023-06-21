@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Desde la quilla hasta el tope</title>
-				<title type="sub"></title>
+				
 				<title type="short">Quilla</title>
-				<title type="idno">
-					<idno type="bne">XX2592012</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX952949</idno>
-					<idno type="viaf">24624818</idno>
-					<name type="short">Lanza</name>
-					<name type="full">Silverio Lanza</name>
+					<name type="short" ref="#Lanza"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1446</measure>
@@ -140,13 +131,35 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0289</idno>
+						<idno type="cligs">ne0289</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
-				<bibl type="print-source">Edición digital basada en la de [Madrid], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
-				<bibl type="edition-first"><date when="1891">1891</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Desde la quilla hasta el tope</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2592012.html">XX2592012</idno>
+				</idno>
+				</title>
+					<author xml:id="Lanza">
+						<name type="full"><forename>Silverio</forename> <surname>Lanza</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575 - IO 9576">IO 9575 - IO 9576</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/121485129">121485129</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q9077402/">Q9077402</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX952949.html">XX952949</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/24624818/">24624818</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
+					<bibl type="print-source">Edición digital basada en la de [<pubPlace>Madrid</pubPlace>], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
+					<bibl type="edition-first"><date when="1891">1891</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +169,14 @@
 				<p>Es una novela en forma autobiográfica, en la que se han querido ver rasgos de la auténtica personalidad del autor. Lo cierto es que el arranque de la narración coincide, poco más o menos, con la biografía de Amorós (el protagonista es también marino de la armada), pero después el relato toma sus propios fantásticos vuelos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575" key="IO 9575" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -180,13 +201,13 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">memoir</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela autobiográfica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -198,7 +219,7 @@
 					<term type="text.plot.end">neutral</term>
 					<term type="text.plot.representation">non-realistic</term>
 					<term type="text.publication">book</term>
-					<term type="text.quality.listhist" resp="#"></term>
+					<term type="text.quality.listhist" resp="#"/>
 					<term type="text.setting.continent">mixed</term>
 					<term type="text.setting.country">mixed</term>
 					<term type="text.setting.represented">mixed</term>
@@ -214,6 +235,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-07-20" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -237,14 +259,14 @@
 				</quote>
 			</div>
 			<div>
-				<head>Nota del editor</head>
+				<head xml:id="ne0289_head_000">Nota del editor</head>
 				<p><seg rend="italic">Hay en este tomo una confusión de fechas que no me ha sido posible corregir.</seg></p>
 				<p><seg rend="italic">Ustedes perdonen.</seg></p>
 				<p>J. B. A.</p>
 			</div>
 			
 			<div>
-				<head>Prólogo del autor</head>
+				<head xml:id="ne0289_head_001">Prólogo del autor</head>
 				<p>En estas cuartillas he procurado que las verdades sean claras y las mentiras agradables.</p>
 				<p>Cuando se publiquen -si se publican- habré muerto y no necesitaré nada ni de nadie, y, por tanto, no parecerán adulaciones mis ingenuas alabanzas.</p>
 				<p>Esto me preocupa extraordinariamente, porque no quiero hacer un papel infame y porque sentiría que mis alabados -muy justamente- parecieran autores de bombos que no necesitan.</p>
@@ -260,9 +282,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>Antecedentes</head>
+				<head xml:id="ne0289_head_002">Antecedentes</head>
 				<div n="1" type="chapter" xml:id="ne0289_chap1">
-					<head>Servidor de ustedes</head>
+					<head xml:id="ne0289_head_003">Servidor de ustedes</head>
 					<p>A los tres años de edad tenía hecha una síntesis de la vida, después he seguido haciendo síntesis por afición y hoy las hago por costumbre, pero desconfío de todas las síntesis.</p>
 					<p>Creía yo, siendo niño, que la vida tenía dos partes: una dedicada a jugar poco y a sufrir regaños y otra que permitía jugar constantemente sin pedir permiso a nadie. Mi dorado sueño era llegar a ser hombre; ahora soy viejo y no quiero volverme niño porque estoy convencido de que en todas las edades se vive mal, muy mal, pésimamente, porque la humanidad que nos rodea se encarga por ignorancia o perversidad de producirnos todas las molestias posibles.</p>
 					<p>Esto parecerá pesimismo al lector tonto que esté royendo una piltrafa de relativa felicidad, pero dentro de dos horas alguno de sus semejantes le habrá dado un disgusto inmotivado, y convendrá conmigo en que yo discurriré como un pesimista, pero discurro con mucha exactitud. Es cierto que mi infancia no fue muy agradable porque mi padre murió cuando yo tenía cuatro años, y el consiguiente luto mantuvo triste y silencioso aquel amado hogar.</p>
@@ -282,7 +304,7 @@
 					<p>Algunos años después, revolviendo papeles antiguos y dejando a un lado las artísticas ejecutorias mandadas hacer por mi abuelo y por mi madre, puede convencerme de que desciendo de una lanza, de un soldado cuyo apellido valía menos que su oficio, y de éste tomó nombre. De aquel lanza hambriento ha venido este Lanza satisfecho, que saluda a ustedes, y el día en que los Lanzas dejen de trabajar volverán al lanza primitivo.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0289_chap2">
-					<head>En expectativa</head>
+					<head xml:id="ne0289_head_004">En expectativa</head>
 					<p>La libertad de enseñanza y la supresión del impuesto de consumos son dos procedimientos tan malos como sus contrarios, porque todos los procedimientos no pueden ser buenos cuando es una clase o individuo el encargado de proceder, porque entonces se llega fácilmente al abuso en beneficio de quien aplica el procedimiento.</p>
 					<p>El impuesto de consumos sirve para justificar el matute, y el ingreso libre de todos los artículos sirve para envenenar las poblaciones. La enseñanza oficial y absoluta crea pocos doctores, pero malos, y la irreflexiva libertad de enseñanza crea malos doctores, pero abundantes.</p>
 					<p>Valiéndome del desbarajuste que produjo la glorificada revolución de septiembre, conseguí el título de Bachiller en Artes sin ningún trabajo. Todos mis compañeros de examen y de colegio serán unos sabios, y no lo dudo, pero yo llegué a bachiller y no sabía las primeras letras; bien es verdad que éstas sólo son conocidas por algún maestro o algún fraile; el resto de los españoles no saben leer ni escribir, ni conocen la gramática, la geografía y el catecismo.</p>
@@ -334,7 +356,7 @@
 					<p>Pasamos al dormitorio para que mi madre viese mi cama, instalada en un cuartito donde tenía por compañero, según dijo Picker, al hijo del señor Marqués de la Almohaza, y después de un desfile de los profesores, que con fugas y contrapuntos cantaron delante de mi madre un concertante asegurando la bondad del método <seg type="foreign" xml:lang="la">inducti</seg>, <seg type="abbr">etc.</seg>, subió mi madre al coche después de abrazarme con alguna emoción, y yo quedé convertido en colegial interno de aquella Academia Politécnica de la Rivera de Curtidores.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0289_chap3">
-					<head>En preparación</head>
+					<head xml:id="ne0289_head_005">En preparación</head>
 					<p>Apenas se fue mi madre me llevó Cristóbal a un patio donde jugaban catorce o quince muchachos, casi todos de más edad que yo. Su juego consistía en fumar escondidos en un rincón, leer, también escondidos, alguna novela, o tirar la barra, ejercicio favorito de mi compañero don Félix Andía, que es hoy distinguido oficial del Cuerpo de Ingenieros Militares.</p>
 					<p>En aquel patio que, por sus altas paredes y su escasez de vegetación, parecía el de una cárcel, estuvimos dos horas, hasta que una campana rota, que producía sonidos análogos a la voz del portero, nos indicó que empezaban las horas de estudio, y fuimos a una salita, donde sentados sobre bancos estrechísimos y apoyando el pecho al borde de unos altos pupitres, comenzamos a descifrar el francés y la ciencia de <seg type="abbr">Mr.</seg> Cirode.</p>
 					<p>Tenía a mi izquierda al señor Andía y a mi derecha aparentaba estudiar Curro Molina, hijo del Marqués de la Amohaza; enfrente estaban Arnao, actual capitán de Caballería y hermano del insigne poeta; Ventura Fontán, que es hoy capitán de Estado Mayor, y su hermano Juan, que después fue compañero mío en la Armada.</p>
@@ -545,7 +567,7 @@
 					<p>Que la educación está en quien la tiene.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0289_chap4">
-					<head>A estudiar de veras</head>
+					<head xml:id="ne0289_head_006">A estudiar de veras</head>
 					<p>Mi madre quedó disgustada del mal resultado producido por la Politécnica Institución, y singularmente cuando supo lo mucho que leíamos, lo poco que estudiábamos y que el marquesito de la Almohaza era sencillamente hijo de una mujer de malos antecedentes, llamada Dolores la Mil-Onzas, que estaba amancebada con Paco el Bullanga, mozo de caballos que llegó a ser un personaje de la revolución y que se titulaba Marqués de la Almohaza, asegurando que el Rey don Amadeo le había concedido este título.</p>
 					<p>Empezaba el verano, y no era época conveniente para tomar una determinación. Quedé, por tanto, en libertad de pasearme por las calles, y empecé a poner en práctica las aficiones adquiridas con la lectura de Paul de Kock y de la literatura pornográfica que entró por los Pirineos con la revolución, y que es lo único que nos queda de aquel movimiento, que sirvió exclusivamente para producir algunas víctimas y algunos trastornos y hacer más necesaria y estable la monarquía de los Borbones.</p>
 					<p>Pero no es posible ser calavera sin dinero, y, como no me sobraba, comprendí con mi lógica habitual que para ser bueno o para ser malo es preciso ante todo ser algo.</p>
@@ -557,7 +579,7 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Aspirante</head>
+				<head xml:id="ne0289_head_007">Aspirante</head>
 				<quote>
 					<lg type="poem">
 						<l>Aspirante que aspiras</l>
@@ -579,7 +601,7 @@
 					<ab><seg rend="italic">Castella</seg></ab>
 				</quote>
 				<div n="5" type="chapter" xml:id="ne0289_chap5">
-					<head>Aspirante</head>
+					<head xml:id="ne0289_head_008">Aspirante</head>
 					<p>Llegaron las oposiciones, y allí fue Troya. Había veintiséis solicitudes para veinticinco plazas, y no se presentó a reconocimiento uno de los solicitantes; conque nos correspondía a plaza por cabeza, y hubiera sido preferible que nos las repartiesen sin exponernos a los disgustos naturales de todo examinando. El compañero a quien correspondió el número uno para examinarse fue reprobado en su primer examen, y de esta manera tristísima empezó aquella tragedia.</p>
 					<p>Desde los primeros días hicimos común amistad los opositores. Unos procedían de la Isla de San Fernando y venían acompañados de su director don Manuel de la Pascua. Algunos procedían de La Coruña y los demás habíamos estudiado en academias establecidas en Madrid.</p>
 					<p>La promoción anterior a la nuestra había sido reprobada casi por completo en el primer semestre, y en representación del profesorado de la escuela vino don Siro Fernández, que formó parte de nuestro tribunal con objeto de aquilatar los méritos de los futuros aspirantes.</p>
@@ -610,7 +632,7 @@
 					</lg>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0289_chap6">
-					<head>De la dársena a bahía</head>
+					<head xml:id="ne0289_head_009">De la dársena a bahía</head>
 					<p>Seguramente no conocerán los geógrafos los términos de este viaje, y, sin embargo, es el más agradable de la carrera que se empieza de opositor en el Ministerio de Marina y se acaba de general en el mismo Ministerio. De la dársena a bahía iba la Escuela Naval todos los veranos, y volvía a la dársena todos los inviernos. Aquellos viajes aumentaban en unas cuantas horas las de asueto que se nos concedían durante el año, y nos daban idea de cómo se hala por un calabrote, cómo se fondea y cómo se amarra una estacha.</p>
 					<p>Declaro sinceramente que aquellos días de mudanza constituyen el único recuerdo agradable que conservo de la Escuela, dejando aparte la indulgencia que merecí de mis profesores, singularmente de don José Ferrándiz y de don Gustavo Fernández, y las atenciones cariñosas que nos prodigaba nuestro director don Juan Romero.</p>
 					<p>Y no eran igualmente agradables la ida y la vuelta, porque la ida suponía la primavera, el estío y el otoño, que son maravillas de la naturaleza en la hermosa tierra de Benito Viceto, Vesteiro Torres, Pardo Bazán y Enríquez; y la vuelta suponía el invierno, el triste invierno de Galicia, sin sol y con lluvia constante, que ha hecho solidarios el paraguas y el gallego.</p>
@@ -650,7 +672,7 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>De guardia marina</head>
+				<head xml:id="ne0289_head_010">De guardia marina</head>
 				<quote>
 					<lg type="poem">
 						<l>Dada la estrella polar</l>
@@ -664,7 +686,7 @@
 					<ab><seg rend="italic">(Arreglo)</seg></ab>
 				</quote>
 				<div n="7" type="chapter" xml:id="ne0289_chap7">
-					<head>A rifar un juanete</head>
+					<head xml:id="ne0289_head_011">A rifar un juanete</head>
 					<p>Había saltado el viento al Noreste y nos dio la noche, porque hasta las nueve no se acabó la maniobra. Si aquel contratiempo nos ocurre una hora después, nos hubiera cogido con los juanetes aferrados y las gavias con una faja de rizos; pero, en fin, que ocurrió de otra manera.</p>
 					<p>Aquello fue aferrar trapo en un abrir y cerrar de ojos. El comandante se paseaba en el puente con la misma tranquilidad con que lo estoy contando. Yo estaba en batería y a menudo asomaba la cabeza por la escotilla de popa. Dábamos tales bandazos, que fue preciso tomar precauciones con la artillería. Empecé a oír las voces enérgicas del comandante, asomé la gaita sobre cubierta y pregunté a nostramo Gil, que tenía la maniobra del mesana.</p>
 					<p>-¿Qué hay?</p>
@@ -697,7 +719,7 @@
 					<p>-Ni guarda abajo. Ahí tiene usted un exceso de celo, codaste.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0289_chap8">
-					<head>Fuego a bordo</head>
+					<head xml:id="ne0289_head_012">Fuego a bordo</head>
 					<p>En Cartagena hicimos el correspondiente zafarrancho, y supimos el sitio que nos correspondía cuando hubiese fuego a bordo. Todas las mañanas, después de terminado el almuerzo, sonaba el repique de la campana e íbamos a ocupar nuestros puestos. Se armaba un gran lío de baldes, mangas, arena y cabos, el comandante pasaba revista, y terminaba el zafarrancho.</p>
 					<p>A los ocho días de hacer esta faena debió quedar el comandante satisfecho de nuestra instrucción, porque no volvió a repetirse el ejercicio.</p>
 					<p>Un mes después, y navegando una noche cerca de las islas Cíes, salió el comandante de su cámara a las dos de la madrugada y se acercó al vigilante que se hallaba en batería al lado del reloj.</p>
@@ -730,7 +752,7 @@
 					<p>-Maldita sea mi suerte, no se me olvidará nunca que el héroe en los fuegos es siempre quien echa el agua.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0289_chap9">
-					<head>El culto a Themis</head>
+					<head xml:id="ne0289_head_013">El culto a Themis</head>
 					<quote>
 						<lg type="poem">
 							<l>Y al cabo de la jornada</l>
@@ -799,7 +821,7 @@
 					<p>Éste es el proyecto de un nuevo culto a Themis.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0289_chap10">
-					<head>El cabo cartero</head>
+					<head xml:id="ne0289_head_014">El cabo cartero</head>
 					<p>Recuerdo que durante la época revolucionaria oía frecuentemente a un orador, tan ayuno de ciencia como ahíto de vanidad, que terminaba sus discursos hablando de la mano villana del Estado. Desde entonces, siempre que el Estado me molesta, me acuerdo de la mano villana de aquel sujeto.</p>
 					<p>¡Y molesta el Estado tantas veces!</p>
 					<p>Pero se lo perdono en atención a que es el gran cabo cartero, y aunque no lleva todas las cartas a su destino, hay que agradecerle que nos traiga alguna sin fractura y sin retraso.</p>
@@ -823,7 +845,7 @@
 					<p>Quedose el valiente marino mirando a los ojos de aquel muchacho, y debió comprender que hay mayores tiempos que los que se corren y capean: que hay seres para quienes la vida es un constante naufragio y quedan como boyas, sin morir de hambre ni de sed, y sin llegar jamás a tierra. Seres a quienes nunca se les devuelve la caricia que hicieron: tan desgraciados y tan dignos de compasión como el cabo cartero que nunca recibiese carta.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0289_chap11">
-					<head>Meditemos</head>
+					<head xml:id="ne0289_head_015">Meditemos</head>
 					<p>Lo primero que debe hacer todo guardia marina al levantarse es bendecir a Dios porque le da un día más, y a don Juan Romero que le dio un año de menos. Después pedirá al Todopoderoso que envíe a la tierra un ministro que acabe para siempre con esa etapa de la carrera que convierte al hombre en Midshipman.</p>
 					<p>Lo cierto es que si los cuatro años de guardia marina están dedicados a prácticas de lo aprendido durante dos en la Escuela Naval, o se practica malamente o se estudia muy deprisa, porque en la mayoría de las carreras militares se estudia durante cuatro años y se practica uno, aunque bien puede ocurrir que esté equivocada la mayoría.</p>
 					<p>Si de los cuatro años sirven tres, dos o uno para aprender teorías, podían hacerse estos estudios en una academia, donde, seguramente, se estudia con más sosiego y con más aprovechamiento.</p>
@@ -866,7 +888,7 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>De oficial</head>
+				<head xml:id="ne0289_head_016">De oficial</head>
 				<quote>
 					<lg type="poem">
 						<l>«Olas del mar que camináis a España</l>
@@ -890,7 +912,7 @@
 				</quote>
 
 				<div n="12" type="chapter" xml:id="ne0289_chap12">
-					<head>¡Chinchorro!</head>
+					<head xml:id="ne0289_head_017">¡Chinchorro!</head>
 					<p>-Allá va.</p>
 					<p>-¡Chinchorro!</p>
 					<p>-¡Qué!</p>
@@ -966,7 +988,7 @@
 					<p>Yo confieso mis flaquezas, pero oculto el nombre de aquel comandante, porque, desgraciadamente, hemos dispuesto que las autoridades pueden ser soberbias pero no deben ser humanas.</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0289_chap13">
-					<head>El viaje del tío Carando</head>
+					<head xml:id="ne0289_head_018">El viaje del tío Carando</head>
 					<p>Tenemos unas posesiones que administrábamos, en otro tiempo, de la manera siguiente:</p>
 					<p>Quedaba una isla abandonada durante seis o siete años, sin un soldado, sin la visita de un barco de guerra y sin más símbolo de autoridad y del dominio de la metrópoli que un indígena hecho gobernador sin que él supiese quién le había nombrado, y a las veces por usurpación o por herencia. El tal gobernador sólo ayuda a sus amigos y parientes, y se limita a manifestar su autoridad llevando al aire los faldones de la camisa. Siempre que viene un nuevo jefe se dispone la cobranza de los impuestos en la isla que me sirve de tipo para estas consideraciones, y como es natural, se ven obligados aquellos indígenas a pagar de pronto la contribución correspondiente a siete años, con recargos y otros gravámenes. Es lógico que los contribuyentes no paguen, y no pagan. Entonces se envían a la isla una columnita de ejército y dos barquitos, y al cabo de tres meses nos hemos gastado en pólvora y proyectiles más de lo que importaban las atrasadas contribuciones; hemos sufrido algunas bajas; no hemos cobrado un cuarto; hacemos la paz, prometiendo no percibir las contribuciones en algún tiempo; los periódicos ministeriales desenfundan la trompa épica para celebrar nuestros triunfos, y España sigue viviendo con honra y expuesta a morirse de hambre.</p>
 					<p>Claro es que esto sucedía en tiempos pasados, y a ellos me refiero al relatar a ustedes lo que nos ocurrió una noche en aquellas tierras al tío Carando y a mí.</p>
@@ -1007,7 +1029,7 @@
 					<p>El infeliz Carando había dado la vuelta al mundo.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0289_chap14">
-					<head>Huérfano</head>
+					<head xml:id="ne0289_head_019">Huérfano</head>
 					<p>Cuando teman ustedes que les ocurra alguna desgracia estén tranquilos, porque todas las desgracias son traidoras y llegan cuando no se las espera.</p>
 					<p>Me hallaba embarcado en la Vitoria, que estaba fondeada en el puerto de Lisboa, cuando murió mi madre, y el telegrama anunciando a mi comandante tan triste suceso llegó a la capital portuguesa cuando ya nos hallábamos en alta mar.</p>
 					<p>Quince días después fondeamos en Cartagena; salté a tierra, llegué al casino, mandé preparar el almuerzo y escribí a mi madre una carta cariñosa dándole cuenta de lo mucho que me había divertido en Lisboa, donde Su Majestad el monarca portugués (<seg type="abbr">q. e. p. d.</seg>) había obsequiado galantemente a nuestra escuadra.</p>
@@ -1055,7 +1077,7 @@
 					<p>Cuando salí de Barcelona envié a la tierra una oración que espero llegase hasta la tumba de mi madre, y al pasar por el paralelo de Cartagena di a las olas encargo de que llevasen mi saludo ante el espolón de la fragata <seg rend="italic">Vitoria</seg>, donde aprendí a ser humano, afable y esclavo de mis deberes.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0289_chap15">
-					<head>Una cruz de San Fernando</head>
+					<head xml:id="ne0289_head_020">Una cruz de San Fernando</head>
 					<p>Estábamos embarcados en la fragata <seg rend="italic">Blanca</seg>, es decir, acababa de embarcarme, porque yo llegué a bordo a las nueve de la mañana, y el hecho que voy a referir ocurrió a las once y media.</p>
 					<p>No sé si estaban cargando granadas a proa o si habían subido granadas cargadas a cubierta con un fin que desconozco. Ello es que, de súbito, vi que toda la gente corría hacia popa.</p>
 					<p>-¿Qué ocurre? -preguntábamos los demás.</p>
@@ -1072,7 +1094,7 @@
 					<p>Ignoro el nombre del marinero que tiró la granada al agua. Era el patrón del quinto bote, pero no se sabe más.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0289_chap16">
-					<head>Abarloarse</head>
+					<head xml:id="ne0289_head_021">Abarloarse</head>
 					<p>Recuerdo que hallándome en Cádiz -era yo teniente de navío, y antiguo- me disgusté con una moza, con quien gastaba mis ahorros y algo más. Inútil es decir que me disgusté porque aquella individua me hizo una charranada muy natural en ella. No pensé en suicidarme, pero pasé tres días decidido a tomar venganza. Al cabo de los tres días salimos a cruzar por el Mediterráneo, y durante el tiempo que duró el crucero me convencí de que ya no era un chiquillo y de que debía tomar estado. Confieso que esta idea me seducía, porque suponía un cambio radical en mi vida, pero al propio tiempo me asustaba, porque entrañaba un contrato hecho para siempre, y no me sentía con fuerzas para conservarme casado. Además, el escepticismo que produce la atención constante hacia lo perverso me llevaba a creer que las mejores mujeres eran las menos malas.</p>
 					<p>Y así andaba haciendo y deshaciendo proyectos, hasta que una noche, que navegábamos a máquina en demanda del puerto de Cartagena, me decidí a casarme después de haber andado dos leguas sin salir del puente.</p>
 					<p>Pasé revista a mis antiguas amadas por si entre ellas encontraba mi futura, y recordé a Juanita, aquella hija de aquel capitán que se dejaba abrazar -la niña- en el portal de su casa, y me escribía cartas llamándome «Cerido mío», y Lolita, la romántica, que me escribió una carta en verso que terminaba así:</p>
@@ -1166,7 +1188,7 @@
 					<p>La Virgen de la Caridad fue tan buena que me acordó todo cuanto la pedí.</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0289_chap17">
-					<head>Un naufragio</head>
+					<head xml:id="ne0289_head_022">Un naufragio</head>
 					<p>Y aseguro a ustedes que fue el más espantoso de los que he presenciado. Porque esos horribles conjuntos de olas altísimas, vientos huracanados, arboladuras que caen y cascos que crujen, llenándose de agua, son pavorosos, pero son fatales. Obedecen a leyes conocidas, y, por tanto, el barco que lucha con un tiempo se bate usando sus armas, y es lógico que el final de aquel duelo a muerte ha de ser el viento burlado o el barco sumergido.</p>
 					<p>Hay en esas tragedias silbidos del huracán entre las jarcias, ayes de las cuadernas que se separan unas de otras, se rectifican y cierran sus curvas, quejidos de los bragueros que sujetan la artillería, ese sordo ruido con que se mueve todo cuando el barco oscila, y entre estos ritmos, la voz humana, emitida en diferentes tonos y con diversos timbres pero siempre con la extraña armonía del grito, y siempre articulando los mismos vocablos, esas interjecciones con que el lenguaje logra derecho para llamarse humano porque expresa las desgracias del hombre con la rapidez precisa para imaginar la rapidez con que las desgracias llegan y hieren.</p>
 					<p>Este concertante de raros sonidos que describe los esfuerzos hechos para salvar primero el barco y después las vidas, corresponde a una decoración casi siempre constante, una masa negra coronada por jarcias, vergas y palos, perceptible cuando el relámpago la ilumina; con tres ojos, cuyas pupilas son en el uno blanca, en el otro roja y en el restante verde, ojos que guiñan y parecen revelaciones de endriagos que bailan fatídica danza para celebrar el inminente naufragio.</p>
@@ -1180,7 +1202,7 @@
 					<p>-Guarda abajo, Silverio, no te vayas a pique como el trincado de la piedra.</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0289_chap18">
-					<head>Hala hasta besar</head>
+					<head xml:id="ne0289_head_023">Hala hasta besar</head>
 					<p>Tengo el gusto de presentar a ustedes a la señora doña María de las Nieves Santisteban de Lanza, mi esposa recientita, porque acaba de desposarnos el <seg type="abbr">P.</seg> Atanasio que se ha quedado en el comedor engullendo una porción de cosas de las que el buen señor no puede disfrutar a diario.</p>
 					<p>Yo vi que Nieves se levantaba para traer los cigarros de patente que mi suegro guarda en su despacho, y los ojos se me iban detrás de mi Nieves.</p>
 					<p>-Anda tonto -me dijo el general- escúrrete, pero envía los habanos.</p>
@@ -1214,7 +1236,7 @@
 					<p>Ésta es la señora de Lanza, la mujercita de mi corazón, que besa a ustedes sus manos... pero solamente por fórmula.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0289_chap19">
-					<head>Varado</head>
+					<head xml:id="ne0289_head_024">Varado</head>
 					<p>Declaro que nuestros primeros días de residencia en Madrid nos fueron muy agradables, y quizá influyese en este encanto la natural alegría de dos recién casados jóvenes y amantes como nosotros; pero después que transcurrieron dos meses nos dimos cuenta de que la vida en la corte nos era insoportable.</p>
 					<p>Esto parecerá extraño a los provincianos que nunca gozaron del hermoso panorama que presenta la calle de la Paz vista desde la calle de la Bolsa, y hallarán injustificado nuestro aburrimiento los madrileños ahítos de imaginación y de pereza que hablan de todo y viven sin perdonar su diaria visita a la media plaza que se llama Puerta del Sol.</p>
 					<p>Es lógico que todas las fealdades de la capital no se prestarían al ridículo habiendo convenido en que no es Madrid la mejor población de España. Pero es tan impertinente la porfía con que defienden algunos la opinión opuesta, que yo, madrileño, que he visitado las ciudades españolas y las principales poblaciones de tres continentes, me creo en el deber de mortificar un poco el exagerado amor propio de mis paisanos, y lograr de esta manera que se apliquen a convertir la villa en un conjunto de bellezas que hagan olvidar fácilmente las de Barcelona, Málaga y la Coruña.</p>
@@ -1261,7 +1283,7 @@
 					<p>Y desde entonces fuimos forasteros en el pueblo donde yo he nacido y adonde no hubiera vuelto si el matrimonio no me hubiera hecho varar en la calle de Bailén.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0289_chap20">
-					<head>Navegar en conserva</head>
+					<head xml:id="ne0289_head_025">Navegar en conserva</head>
 					<p>Ya verás como nuestro hijo te trae los galones de comandante.</p>
 					<p>-¿Le has hecho el encargo?</p>
 					<p>-Sí, señor; y lo cumplirá.</p>
@@ -1446,14 +1468,14 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>De Jefe</head>
+				<head xml:id="ne0289_head_026">De Jefe</head>
 				<quote>
 					<p>El sueldo es un tormento tan cruel que aumenta con las necesidades sin llegar nunca a satisfacerlas. No mata, pero hace penosa la vida.</p>
 					<ab><seg rend="italic">(Ayes de un capitán de navío)</seg></ab>
 
 				</quote>
 				<div n="21" type="chapter" xml:id="ne0289_chap21">
-					<head>Hombre grave</head>
+					<head xml:id="ne0289_head_027">Hombre grave</head>
 					<quote>
 						<p>Cuanto más se sube más se ve el conjunto y menos se aprecian los detalles.</p>
 					</quote>
@@ -1514,7 +1536,7 @@
 					<p>Tampoco he de aludir a los jefes que me siguen y preceden en el escalafón, y cuya respetabilidad no quiero mermar inocentemente; ni trataré de las cuestiones técnicas, que preocupan muy poco, ni de las competencias entre constructores, ni de sucesos recientes que exacerbaron las pasiones de todos los interesados. De Jefe sólo se piensa en la síntesis, y con mayor empeño conforme se va acercando la muerte, que es la síntesis de la vida, y, por consiguiente, sólo expondré mis ideas de viejo, que serían para ustedes muy respetables si viesen la calva cabeza y las patillas blancas del que esto escribe, suspirando al recordar aquellos hermosos tiempos en que era un muchacho, aunque figurase en el escalafón como el más antiguo de los coroneles, porque es indudable que la seriedad ficticia no es tan molesta como la fatal seriedad que imponen los años. ¡Bienaventurado el que llega felizmente a general, como yo he llegado, pero infeliz al mismo tiempo, porque los entorchados van diciendo a quien los lleva: ¡Abuelillo, abuelillo!</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0289_chap22">
-					<head>La oración</head>
+					<head xml:id="ne0289_head_028">La oración</head>
 					<quote>
 						<lg type="poem">
 							<l>Y siempre en lontananza</l>
@@ -1535,7 +1557,7 @@
 					<p>Dúdese de la existencia de la santísima Virgen, ríanse de tales obsesiones; yo sólo sé que el hombre necesita de amor y de consuelo en esta tierra, y para consolar el quebrantado espíritu no ha dictado ningún código, nada con que poder sustituir esa hermosa salutación con que rogamos a la Virgen diciéndola: <seg type="foreign" xml:lang="la">Ave, Maria; Dominus tecum. Benedicta tui in mulicribus</seg>.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0289_chap23">
-					<head>Los vicios del marino</head>
+					<head xml:id="ne0289_head_029">Los vicios del marino</head>
 					<p>Si quieren ustedes saber algo acerca de la mar pregúntenle ustedes a un terrestre, y lo contrario de lo que diga es verdad innegable, porque ya he recordado en muchas ocasiones, y lo repetiré en otras muchas, que en esta nación, que debía ser un pueblo esencialmente marinero, los naturales del interior ignoran más o menos lo que se refiere a la mar, y los de las costas van a Madrid a ejercer la medicina o la abogacía. Todo esto depende, en suma, de que las ambiciones españolas son modestísimas o fantásticas, y en ambos casos no requieren para ser logradas el rudo trabajo y el constante peligro que produce la vida en la mar.</p>
 					<p>Pregunten ustedes a un labriego de Burgos o de Valladolid acerca de la limpieza de los barcos, y les dirá a ustedes que son una tacita de oro. Ése no ha visto las ratas de la sentina y de los pañoles. Ha contemplado con asombro los relucientes cañones, pero no ha escudriñado sus ánimas, donde pudieran hallarse los algodones para dar aceite y algún par de calcetines sucios. Esto no es decir que no haya limpieza en los buques; es sólo rectificar un juicio exagerado y venir al justo medio, que deja los barcos con el aseo de un taller limpio, pero no como los bibelotes que adornan el gabinete de una señorita.</p>
 					<p>Pregunten ustedes a un alguacil de la provincia de Cuenca si son viciosos los marinos, y contestará afirmativamente con tal acopio de datos que será preciso dudar si son sátiros, mosquitos o guardadores del Calvario, ésos, ¡ay!, tristes que llevan botón de ancla.</p>
@@ -1565,7 +1587,7 @@
 					<p>De los barcos han salido algunos frailes, pero no ha salido ningún turco.</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0289_chap24">
-					<head>La fatal ingratitud</head>
+					<head xml:id="ne0289_head_030">La fatal ingratitud</head>
 					<p>Conste que yo no era partidario de que Pepe fuera marino, y aunque el abuelo opinaba de distinto modo creyendo que su influencia y la mía serían suficientes para que el muchacho hiciera su carrera en el Ministerio, Pepe lo dispuso de otro modo, y a todos nos dejó disgustados: al abuelo porque no llevó el chico botón de ancla, y a mí porque le tuve más lejos de mi lado y más constantemente que si hubiese sido guardia marina.</p>
 					<p>Pero el chico obedeció a las impresiones que le producíamos su tío y yo, y dedujo que había mayor porvenir siendo ingeniero en Argelia que siendo brigadier en la Armada, y se empeñó en ser ingeniero industrial, y lo fue rápidamente, y con aprovechamiento.</p>
 					<p>Quizá su carácter influyese mucho en esta determinación, porque Pepe era un joven a la moderna, con las rarezas características de los jóvenes de nuestros días. Antiguamente todos éramos calaveras y buenos estudiantes al mismo tiempo; hoy los jóvenes o son graves como magistrado del Supremo, o se lanzan por el camino de los placeres de una manera irreflexiva. Pepe fue un viejo desde niño, amante del estudio por el deseo de saber, aficionado a todo lo docto y a todo lo culto y enemigo de lo efímero y lo banal. Durante los primeros años de su juventud temí que aquel espíritu estuviese perturbado por alguna íntima amargura, pero después llegué a convencerme de que las gravedades y las locuras de nuestros jóvenes son manifestaciones del escepticismo en que nos ha sumido la lucha entre la filosofía que muere y la filosofía que nace: la que no quiere morir sin matar y la que pretende alcanzar más rápidamente la victoria, negando todo lo existente, aun lo que es cierto y respetable.</p>
@@ -1598,7 +1620,7 @@
 					<p>-Toma, eso lo primero de todo.</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0289_chap25">
-					<head>Los ladrones a bordo</head>
+					<head xml:id="ne0289_head_031">Los ladrones a bordo</head>
 					<p>En los barcos, donde las costumbres reflejan las de la patria, rara vez se roban alhajas o dinero; pero muy a menudo se hurta vino y comida. Yo, esclavo de la verdad, declaro ingenuamente que, siendo guardia marina, quité a don Manuel Delgado Parejo una gallina, un bonito y unos kilos de carne, y a don Luis Bula medio jamón y una botella de Oporto. Pésanme las faltas cometidas, y estoy dispuesto a restituir lo hurtado, siempre que se me devuelvan los cigarros que me atraparon mis compañeros oficiales y las gallinas que se me comieron los guardia marinas cuando yo mandaba la Sagunto.</p>
 					<p>Conste, desde luego, que nadie debe apoderarse de lo que no es suyo, pero conste también que todos los privilegios odiosos están amenazados de muerte, y es privilegio odiosísimo que alguien tenga gallinas y <seg type="foreign" xml:lang="fr">champagne</seg> cuando otros padecen escasez de bacalao y de agua.</p>
 					<p>Repito que muy rara vez ocurre en puerto, donde el dinero se cambia inmediatamente por placeres, que alguien se apodere de dinero que no sea suyo, pero en puerto, como en la mar, se cogen las buenas tajadas y.. <seg rend="italic">todos en él pusimos nuestras manos</seg>.</p>
@@ -1611,7 +1633,7 @@
 					<p>Presente.</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0289_chap26">
-					<head>El sentimiento religioso</head>
+					<head xml:id="ne0289_head_032">El sentimiento religioso</head>
 					<p>Es un tema digno de profundo estudio lo que pudiéramos llamar la actividad religiosa en los barcos de guerra.</p>
 					<p>Desde luego, el hombre de mar siempre es creyente: cuando es ignorante, por supersticioso, y cuando es ilustrado, por esto mismo, porque su ilustración le impulsa a todas las agradables manifestaciones de sus puros sentimientos.</p>
 					<p>Los marinos españoles tienen extraordinaria devoción a la Virgen del Carmen, y no he visto marinero herido o enfermo que no llevase un escapulario recordando la popular advocación de la santísima Virgen. Es natural que en los barcos, donde hay hombres de mucha ciencia, existan algunos que rechacen ciertas afirmaciones eclesiásticas, que son más oscuras en su forma que erróneas en su fondo; pero esos cismáticos incipientes llevan también su escapulario, porque han tenido el sano criterio de entender que la religión es filosofía encarnada en el sentimiento, y que, por tanto, ha de amoldarse a la condición humana y ser constantemente origen y fin de nuestros consuelos y nuestras alegrías. Para el libre pensador que habita la cámara de una fragata no es el escapulario símbolo de una estrecha disciplina, ni de una disquisición llena de lucubraciones, donde lo abstracto se hace sutil hasta convertirse en incomprensible: para aquel hombre, el escapulario es el recuerdo de la madre que llora y de la amada que espera; la afirmación de las queridas esperanzas hechas por la santísima madre esposa, cuya vida conmovedora y ejemplar no hallará nunca descripción más interesante que la sencilla historia que refieren esos Evangelios, que nadie se encarga de hacer necesarios y populares.</p>
@@ -1622,7 +1644,7 @@
 					<p>Yo recuerdo, ahora que estoy caduco, aquellas misas que oí, formado con la marinería o al frente de ella, y me parece que oigo vibrar en batería el agudo son de la corneta, y recuerdo la piadosa unción con que tomaba parte de aquel culto, y cuando añado a estas memorias la de aquéllos que han sido herejes por obra de un sacerdote desalmado, creo firmemente que cualquiera perdona las inocentes blasfemias de los marinos, y que sólo Dios en su infinita misericordia puede perdonar las necedades de algunos presbíteros.</p>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0289_chap27">
-					<head>Yo, secretario</head>
+					<head xml:id="ne0289_head_033">Yo, secretario</head>
 					<p>Jamás había pensado en ser ministro; esto constituirá la aspiración de algunos oficiales, pero nunca fue la mía. Es cierto que mis amigos me habían anunciado repetidas veces el alto porvenir que me aguardaba, pero nada más.</p>
 					<p>Cuando se hizo la crisis de octubre estaba ocupado en buscar un aparato que desplazase los fondos a larga distancia sin necesidad de suspenderlos; algo que sustituyese ventajosamente a la draga. Y me preocupada con esto porque estaba indicado para capitán general del departamento de Cádiz. Vino la crisis; lo cierto es que ni supe sus causas ni cómo se verificó. Estábamos almorzando cuando llegó el secretario del señor Pérez y me dijo que este señor me suplicaba pasase a visitarle; conque lo hice inmediatamente.</p>
 					<p>Había notado que el secretario de Pérez usaba conmigo mayor respeto del que suelen usar los secretarios de los jefes de partido, y en la casa de Pérez noté iguales atenciones exageradas; pero era yo novicio en este trato de bajezas domésticas y aún no tenía formada ninguna sospecha, cuando el señor Pérez me ofreció la cartera de Marina.</p>
@@ -1672,7 +1694,7 @@
 					<p>Conste que fui ministro por mi mujer, y que por ella dejé de serlo, y esto demuestra una vez más la influencia que sobre mí ejerció siempre aquella gaditana.</p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0289_chap28">
-					<head>Filarmonía a bordo</head>
+					<head xml:id="ne0289_head_034">Filarmonía a bordo</head>
 					<p>Una manifestación de la mancomunidad que caracteriza la vida en los barcos en la especialísima manera con que se canta a bordo.</p>
 					<p>En los cuarteles y en los presidios, como en las iglesias y en los teatros, hay partes, pero a bordo sólo hay orfeones. Rara vez se oye a un marinero cantando solo, y aun entonces canta bajito, sin pretender lucirse, como si ensayase o estuviese murmurando.</p>
 					<p>Pero al llegar las últimas horas de la tarde, cuando se aproxima el momento de coger los cois, se reúne la gente en grupos en el castillo de proa o en el convés, y allí se canta de una manera tan admirable que constituye el mayor encanto de la vida en la mar, y el más desconocido para la gente de tierra. Sepáranse los cantores, quedando aislados los de cada región porque en todas las manifestaciones de las intimidades del alma aparecen el hogar, la región y la patria, y aparecerán siempre, con vida tan exuberante de energías que el filósofo menos discreto entiende desde luego que acaso la futura felicidad de la especie humana, esté en el reconocimiento expreso de un orden jerárquico que empiece en el individuo, como grado de mayor preferencia, y acabe en la humanidad.</p>
@@ -1689,7 +1711,7 @@
 					<p>Pero ésos no saben cantar la gallegada.</p>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0289_chap29">
-					<head>Viaje por circulo máximo</head>
+					<head xml:id="ne0289_head_035">Viaje por circulo máximo</head>
 					<p>Hacía tres meses que había muerto mi querida Nieves, y yo comprendía que Gregorio y mis hijos procuraban distraerme por todos los medios que les eran posibles. Al mismo tiempo observaba que Pepe y mi yerno aludían con extraordinaria insistencia a sus trabajos en África, y una noche, cuando concluimos de cenar, les propuse que tomásemos el té en mi despacho. Aceptaron ellos, sospechando que se preparaba algún acto solemne, y cuando ya estuvo el té servido aguardaron en silencio a que yo les hablase.</p>
 					<p>Le di a Gregorio las llaves del arca de hierro y le supliqué sacase un legajo, en cuya cubierta había yo escrito: «Para el día de mañana». Colocado el misterioso paquete sobre el pupitre, di un buen sorbo para dominar de este modo mi emoción, y con la cara más alegre que logré poner, les dije de esta manera:</p>
 					<p>-Mira, Gregorio, a pesar de lo listos que anduvimos tú y nosotros, murió tu padre sin verte, y yo recuerdo que el bondadoso abuelo se acordaba de ti más que de la medicina; porque, creedme, cuando se llega el momento de morirse, no hay suplicio más espantoso que la soledad. Está dicho, y ya veo que presumís el final de mis argumentos. Pues bien; eso es lo que quiero, que no me dejéis solo. No, no... si ya sé que me queréis, pero ahora vamos a hablar como hombres de negocios... ¿Que no? Pues no hay más remedio... Yo estoy sereno, me encuentro bien, os prometo no afectarme, y haz el favor, Pepe, de abrir ese legajo... Ahora vamos a hacer entre nosotros una testamentaría... Nada; no vale llorar; yo pasé por ello cuando murió mi madre, y ahora os toca a vosotros soportar este trago, que yo os endulzaré con mi experiencia... Conque, manos a la obra. El abuelo no hizo testamento, y obró cuerdamente. El abuelo tenía sus ahorros y yo era su cajero. Cuando murió, Dios le tenga en su santa gloria, ya dije a Gregorio que le correspondían 57.000 reales de los 114.000 y pico que constituían el capital íntegro que yo conservaba. Convinimos en no tocar a este dinero y emplearlo en papel del Est ado, y así lo hice, separando los dos caudales, el tuyo y el... otro... Ya he dicho que vamos a hablar de negocios; conque...</p>

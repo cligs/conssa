@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La guerra del Transvaal y los misterios de la Banca de Londres</title>
-				<title type="sub"></title>
+				
 				<title type="short">GuerraTransvaal</title>
-				<title type="idno">
-					<idno type="bne">XX2804205</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1003714</idno>
-					<idno type="viaf">34495436</idno>
-					<name type="short">Maeztu</name>
-					<name type="full">Ramiro de Maeztu</name>
+					<name type="short" ref="#Maeztu"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">9882</measure>
@@ -140,24 +131,51 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0095</idno>
+						<idno type="cligs">ne0095</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Recognition Server, <date when="2018">2018</date>.</bibl>
-				<bibl type="print-source">Taurus, <date when="1974">1974</date>, Madrid.</bibl>
-				<bibl type="edition-first"><date when="1901">1901</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La guerra del Transvaal y los misterios de la Banca de Londres</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2804205.html">XX2804205</idno>
+				</idno>
+				</title>
+					<author xml:id="Maeztu">
+						<name type="full"><forename>Ramiro</forename> <surname>de Maeztu</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 5615">IP 5615</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/119013886">119013886</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q1340223/">Q1340223</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1003714.html">XX1003714</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/34495436/">34495436</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#abbyy" subtype="html">Abbyy Recognition Server, <date when="2018">2018</date>.</bibl>
+					<bibl type="print-source">Taurus, <date when="1974">1974</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first"><date when="1901">1901</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#MdLE9">
-				<p>La única novela que figura en su haber es un proyecto 					que concibieron conjuntam ente Valle-Inclán, Baroja, Camilo Bargiela y Maeztu para tratar un tema de actualidad: la 					guerra del Transvaal. Sólo nuestro autor perseveró en el 					intento. El resultado fue una novela de historia contemporánea titulada <seg rend="italics">La guerra del Transvaal y los misterios de la 						Banca de Londres</seg>, que apareció en forma de folletín en <seg rend="italics">El 					país</seg> entre el 1 de abril de 1900 y el 6 de enero de 1901. Iba 					firmada con el seudónimo de Van Poel Krupp, presunto 					escritor holandés que había participado en la lucha.</p>
-				<p>Es un alegato antiimperialista con todos los ingrediente* 					románticos propios del folletín: aventuras, amores apasionados, enfrentamientos maniqueístas de buenos y malos... El 					autor se documentó mucho para escribirla, pero no siempre 					la historia y lo novelesco se funden bien.</p>
-				<p>Fox ha publicado este texto (Taurus, M adrid, 1974), pre­ 					cedido de un prólogo en el que se nos brindan datos de 					interés..</p>
+				<p>La única novela que figura en su haber es un proyecto que concibieron conjuntam ente Valle-Inclán, Baroja, Camilo Bargiela y Maeztu para tratar un tema de actualidad: la guerra del Transvaal. Sólo nuestro autor perseveró en el intento. El resultado fue una novela de historia contemporánea titulada <seg rend="italics">La guerra del Transvaal y los misterios de la Banca de Londres</seg>, que apareció en forma de folletín en <seg rend="italics">El país</seg> entre el 1 de abril de 1900 y el 6 de enero de 1901. Iba firmada con el seudónimo de Van Poel Krupp, presunto escritor holandés que había participado en la lucha.</p>
+				<p>Es un alegato antiimperialista con todos los ingredientes románticos propios del folletín: aventuras, amores apasionados, enfrentamientos maniqueístas de buenos y malos... El autor se documentó mucho para escribirla, pero no siempre la historia y lo novelesco se funden bien.</p>
+				<p>Foxá ha publicado este texto (Taurus, M adrid, 1974), precedido de un prólogo en el que se nos brindan datos de interés..</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -170,7 +188,7 @@
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">low</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -182,20 +200,20 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.edit" resp="amazon"> Literatura y ficción, Literatura y ficción</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">adventure</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">philosophical</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.mentioned" resp="HdLE">True</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE9">0.5</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">neutral</term><!--Es interesante que los dos amantes terminan juntos y realizados pero dentro de una guerra-->
 					<term type="text.plot.representation">realistic</term>
@@ -217,24 +235,25 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-01-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>LA GUERRA DEL TRANSVAAL Y: LOS MISTERIOS DE LA BANCA DE LONDRES: VAN POEL KRUPP</head>
+				<head xml:id="ne0095_head_000">LA GUERRA DEL TRANSVAAL Y: LOS MISTERIOS DE LA BANCA DE LONDRES: VAN POEL KRUPP</head>
 				<p>(Ramiro de Maeztu)</p>
 			</div>
 			<div>
-				<head>LA GUERRA DEL TRANSVAAL: Y: LOS MISTERIOS DE LA BANCA DE LONDRES</head>
+				<head xml:id="ne0095_head_001">LA GUERRA DEL TRANSVAAL: Y: LOS MISTERIOS DE LA BANCA DE LONDRES</head>
 				<p><seg rend="italics">Prólogo por </seg>E. Inman Fox</p>
 			</div>
 			<div>
-				<head>taurus</head>
+				<head xml:id="ne0095_head_002">taurus</head>
 				<p>© 1974, TAURUS EDICIONES, S. A. Plaza del Marqués de Salamanca, 7, <seg rend="smallcaps">Madrid </seg>ISBN: 84 9761 Depósito Legal: <seg rend="bold">M. </seg><seg rend="italics">PRINTED IN SPAIN</seg></p>
 			</div>
 			<div>
-				<head>PROLOGO</head>
+				<head xml:id="ne0095_head_003">PROLOGO</head>
 				<p>Por E. Inman Fox</p>
 				<p>Los que empezamos, hace más de una década, a merodear entre los periódicos y revistas en busca de nuevas y más satisfactorias soluciones a los problemas del ambiente del 98, no tardamos en advertir que las <seg rend="italics">Memorias</seg> de Pío Baroja proporcionaban muchas pistas a seguir con respecto a la colaboración periodística de los jóvenes escritores de la vuelta del siglo. Así, no resultó difícil tropezar con la alusión de don Pío a la supuesta novela de Ramiro de Maeztu <seg rend="italics">Los misterios del Trans-vaal,</seg> publicada en el folletín de <seg rend="italics">El País.</seg> Yo la leí por primera vez, si no recuerdo mal, en 1963, y creo que por entonces Rafael Pérez de la Dehesa y Jorge Campos también la habían hojeado. Pero se sabía tan poco del joven Maeztu y se disponía de tan escasos datos, que era dudoso atribuirle la autoría de esta novela rara, firmada con pseudónimo. Al rememorar sus años juveniles, Baroja nos despista más de una vez y considerábamos entonces más urgente investigar y aclarar otros temas e ideas.</p>
 				<p>En realidad, por una serie de circunstancias la figura del joven Maeztu ha quedado algo al margen —a pesar de unos trabajos excelentes, pero parciales, de Pérez de la Dehesa, Blanco Aguinaga y otros— del revisionismo que se ha practicado en los últimos años con respecto a la juventud del 98: olvido injusto, que espero rectificar a través de una serie de estudios que aparecerán en diversas editoriales y revistas durante este año, centenario del nacimiento de Maeztu.</p>
@@ -305,16 +324,16 @@
 			</div>
 		</front>
 		<body>
-			<div type="division"> <head>PRIMERA PARTE EL AMOR Y LOS DIAMANTES</head>
+			<div type="division"> <head xml:id="ne0095_head_004">PRIMERA PARTE EL AMOR Y LOS DIAMANTES</head>
 				<div type="part">
-					<head>LIBRO PRIMERO </head>
+					<head xml:id="ne0095_head_005">LIBRO PRIMERO </head>
 					<quote><p><seg rend="italics">Hemos tenido la colosal desgracia de que se mecieran nuestras cunas sobre campos de diamantes y de oro.</seg></p>
 						<p><seg rend="smallcaps">Steijn, </seg>Presidente del Estado Libre de Orange.</p></quote>
 					<div n="1" type="chapter" xml:id="ne0095_chap1">
-						<head>CAPITULO PRIMERO <seg rend="smallcaps">Donde el lector entabla relaciones con, Alejandro Lie-</seg></head>
-						<head><seg rend="smallcaps">BECK Y SU TÍO AbRAHAM VAN DEVINTER Y SE ENTERA DE LA SEGURIDAD QUE SE GOZA EN AQUELLOS CAMINOS DEL AFRICA</seg></head>
-						<head><seg rend="smallcaps">del Sur, cuya custodia corre a cargo de la paternal</seg></head>
-						<head><seg rend="smallcaps">Inglaterra</seg></head>
+						<head xml:id="ne0095_head_006">CAPITULO PRIMERO <seg rend="smallcaps">Donde el lector entabla relaciones con, Alejandro Lie-</seg></head>
+						<head xml:id="ne0095_head_007"><seg rend="smallcaps">BECK Y SU TÍO AbRAHAM VAN DEVINTER Y SE ENTERA DE LA SEGURIDAD QUE SE GOZA EN AQUELLOS CAMINOS DEL AFRICA</seg></head>
+						<head xml:id="ne0095_head_008"><seg rend="smallcaps">del Sur, cuya custodia corre a cargo de la paternal</seg></head>
+						<head xml:id="ne0095_head_009"><seg rend="smallcaps">Inglaterra</seg></head>
 						<p>—¿Y era bonita?</p>
 						<p>—Como una virgen de Rafael.</p>
 						<p>—¿Los cabellos rubios?</p>
@@ -472,8 +491,8 @@
 						<p>Alejandro Liebeck había perdido el conocimiento.</p>
 					</div>
 					<div n="2" type="chapter" xml:id="ne0095_chap2">
-						<head>CAPITULO II</head>
-						<head>DOS TELEGRAMAS, UN COMPLOT, UNA JUGADA DE BOLSA, UNA BORRACHERA ÍNTIMA Y UNA DESGRACIA INESPERADA</head>
+						<head xml:id="ne0095_head_010">CAPITULO II</head>
+						<head xml:id="ne0095_head_011">DOS TELEGRAMAS, UN COMPLOT, UNA JUGADA DE BOLSA, UNA BORRACHERA ÍNTIMA Y UNA DESGRACIA INESPERADA</head>
 						<p>Los dos compadres vaciaban las botellas con impetuosidad verdaderamente anglosajona.</p>
 						<p>Para cubrir las bajas sufridas en el jerez, entraban en batalla la ginebra de Holanda y el champagne de Reims. ¡Y aún se dirá que los ingleses no son cosmopolitas!</p>
 						<p>Ocurría la escena en uno de los más amplios salones de la casa palacio de Lord Denver en Kimberley.</p>
@@ -652,8 +671,8 @@
 						<p>Y cruzando los brazos sobre el pecho salió del cuarto por donde había entrado, mudo, rígido, como un espectro, como una sombra...</p>
 					</div>
 					<div n="3" type="chapter" xml:id="ne0095_chap3">
-						<head>CAPITULO III</head>
-						<head>Un domingo en Kimberley, la cita de Van Devinter y los APUROS DEL SHERIF</head>
+						<head xml:id="ne0095_head_012">CAPITULO III</head>
+						<head xml:id="ne0095_head_013">Un domingo en Kimberley, la cita de Van Devinter y los APUROS DEL SHERIF</head>
 						<p>Con paso largo, monótono y grave salió Abraham Van Devinter del salón donde Lord Denver y Barnato tambaleaban sus cuerpos, saturados de alcohol.</p>
 						<p>Recorrió los pasillos y escaleras sin vacilaciones, como hombre seguro del terreno que pisa.</p>
 						<p>En el portal se agrupaban los servidores de la casa, con la consternación más viva pintada en los semblantes.</p>
@@ -853,7 +872,7 @@
 						<p>Y mientras todos los policías de Kimberley se lanzaban desesperadamente a la captura de Abraham Van Devinter, el boer de las facciones inmutables entraba con paso largo, monótono y grave en la angosta morada del tío Guillermo, el moribundo que iba a confiarle su última voluntad.</p>
 					</div>
 					<div n="4" type="chapter" xml:id="ne0095_chap4">
-						<head>CAPITULO IV</head>
+						<head xml:id="ne0095_head_014">CAPITULO IV</head>
 						<p>En EL QUE DESCRIBE LA AGONÍA DEL PATRIARCA DE LOS AFRI-KANDERS, SE MUESTRA LA TRAICIÓN DE CECIL R H ODES Y ESCAPA DE UN PELIGRO NUESTRO AMIGO ABRAHAM VAN DEVINTER</p>
 						<p>—Aquí.</p>
 						<p>Cedió James Stone el paso a Van Devinter y subieron los dos por estrecha, tortuosa y oscura escalera.</p>
@@ -1036,10 +1055,10 @@
 						<p>La noche oscura, negra, impenetrable.</p>
 					</div>
 					<div n="5" type="chapter" xml:id="ne0095_chap5">
-						<head>CAPITULO V</head>
-						<head>Reaparición de Lady Denver y de Alejandro Liebeck y un</head>
+						<head xml:id="ne0095_head_015">CAPITULO V</head>
+						<head xml:id="ne0095_head_016">Reaparición de Lady Denver y de Alejandro Liebeck y un</head>
 
-						<head>IDILIO DE AMOR EN LAS TINIEBLAS</head>
+						<head xml:id="ne0095_head_017">IDILIO DE AMOR EN LAS TINIEBLAS</head>
 						<p>Al recobrar el conocimiento Alejandro Liebeck, paseó la mirada en tomo suyo.</p>
 						<p>¿Dónde estaba?</p>
 						<p>No pudo responderse a esta pregunta, primer pensamiento que le asaltara al volver en sí; la oscuridad era completa.</p>
@@ -1225,9 +1244,9 @@
 						<p>Y, fuera efecto de la fiebre o realidad inverosímil, en el lugar que debía corresponder a los ojos de la colérica señora, vio que iban y venían dos tenues llamaradas, azules, movedizas, humeantes, como las huellas que sobre un muro deja el roce de un fósforo en plena oscuridad!...</p>
 					</div>
 					<div n="6" type="chapter" xml:id="ne0095_chap6">
-						<head>CAPITULO VI</head>
-						<head>Que refiere la cacería organizada por la policía de Kimberley en seguimiento de Abraham Van <seg rend="smallcaps">Devinter,</seg></head>
-						<head>SUS CURIOSOS INCIDENTES E INESPERADO FIN</head>
+						<head xml:id="ne0095_head_018">CAPITULO VI</head>
+						<head xml:id="ne0095_head_019">Que refiere la cacería organizada por la policía de Kimberley en seguimiento de Abraham Van <seg rend="smallcaps">Devinter,</seg></head>
+						<head xml:id="ne0095_head_020">SUS CURIOSOS INCIDENTES E INESPERADO FIN</head>
 						<p>Desde el patio en que cayó Van Devinter vio en la ventana iluminada del cuarto de Van Vrij, el rostro y medio cuerpo del «sherif», tratando de explorar con la mirada la oscuridad nocturna.</p>
 						<p>—¿Qué buscará la policía en casa de Guillermo? —se preguntaba.</p>
 						<p>¿Tendrá noticias de los armamentos reunidos por el patriarca de los afrikanders?</p>
@@ -1428,7 +1447,7 @@
 						<p>Pero la policía se acercaba, y Van Eyck, sus hombres y Abraham Van Devinter se internaron en el fondo de la mina.</p>
 					</div>
 					<div n="7" type="chapter" xml:id="ne0095_chap7">
-						<head>CAPITULO VII</head>
+						<head xml:id="ne0095_head_021">CAPITULO VII</head>
 						<p>Tristezas y miserias de un pueblo rico y reunión secreta</p>
 						<p>DE LOS JEFES AFRIKANDERS DE KlMBERLEY EN EL FONDO DE UNA MINA ABANDONADA</p>
 						<p>Horas después, a las diez de la noche del lunes 16 de agosto de 1895, los «Treinta y Tres» fueron llegando uno a uno al lugar donde Frank Van Eyck les había citado.</p>
@@ -1748,11 +1767,11 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>LIBRO SEGUNDO: PERDIDAS Y HALLAZGOS DEL AGENTE DE POLICIA MR. BLACK</head>
+					<head xml:id="ne0095_head_022">LIBRO SEGUNDO: PERDIDAS Y HALLAZGOS DEL AGENTE DE POLICIA MR. BLACK</head>
 					<div n="8" type="chapter" xml:id="ne0095_chap8">
-						<head>CAPITULO PRIMERO</head>
-						<head>La <seg rend="smallcaps">visita inesperada de una joven AUMENTA EL MARASMO de Lord Denver, la cólera de Barnato y las incertidum-</seg></head>
-						<head>BRES Y CAVILACIONES DE MlSTER BLACK</head>
+						<head xml:id="ne0095_head_023">CAPITULO PRIMERO</head>
+						<head xml:id="ne0095_head_024">La <seg rend="smallcaps">visita inesperada de una joven AUMENTA EL MARASMO de Lord Denver, la cólera de Barnato y las incertidum-</seg></head>
+						<head xml:id="ne0095_head_025">BRES Y CAVILACIONES DE MlSTER BLACK</head>
 						<p>Dos horas después de que la policía hubo disuelto, con sólo aproximarse, la reunión de los afrikanders en el fondo de la «Julieta», conversaban en el despacho del «Sherif», éste, Lord Denver, Barnato y el señor de las patillas rubias.</p>
 						<p>Cuando hablaba cualquiera de los tres primeros, miraba al último, como buscando en su rostro señal de asentimiento a sus palabras.</p>
 						<p>Desde que mostró su habilidad e inteligencia al efectuarse el registro de los clientes a la hospedería de Herr Hüngel se le trataba con excepcional respeto.</p>
@@ -1966,9 +1985,9 @@
 						<p>Y forjando contestaciones hipotéticas a esta pregunta de solución difícil, y atusándose las rubias y bien cuidadas patillas, se echó míster Black en uno de los divanes del despacho del «Sherif».</p>
 					</div>
 					<div n="9" type="chapter" xml:id="ne0095_chap9">
-						<head>CAPITULO II</head>
-						<head>Que sirve para enlazar un secuestro con el principio de</head>
-						<head>UN DRAMA PASIONAL</head>
+						<head xml:id="ne0095_head_026">CAPITULO II</head>
+						<head xml:id="ne0095_head_027">Que sirve para enlazar un secuestro con el principio de</head>
+						<head xml:id="ne0095_head_028">UN DRAMA PASIONAL</head>
 						<p>Los pensamientos se le enredaban al bueno de Mr. Black:</p>
 						<p>«Van Devinter, Olimpia, el judío, Barnato, Lord Denver, reunión nocturna, secuestros, fugas, crímenes, robos de diamantes...»</p>
 						<p>Mr. Black se encontraba en este dilema: o volverse loco, o dormir.</p>
@@ -2131,7 +2150,7 @@
 						<p>Y comprendiendo Mr. Black que más adelantaba siendo amigo que enemigo de Lord Denver, se retiró filosóficamente, pensando en los hallazgos de la mañana y llevándose la mano al lugar de sus hallazgos más recientes.</p>
 					</div>
 					<div n="10" type="chapter" xml:id="ne0095_chap10">
-						<head>CAPITULO III</head>
+						<head xml:id="ne0095_head_029">CAPITULO III</head>
 						<p>En el que a través de una rivalidad amorosa y de una serie</p>
 						<p>DE CONSPIPACIONES, SE LLEGA A UNA TENTATIVA DE «CHANTAGE»</p>
 						<p>Instalado Alejandro Liebeck en casa de Lord Denver, durante las primeras semanas de su restablecimiento son escasos los sucesos merecedores de relato que a nuestros personajes acontecen.</p>
@@ -2349,7 +2368,7 @@
 						<p>—¡Ja, ja, ja!... Te has vuelto loco, Jack, completamente loco, insigne Dos Narices... ¡Ja, ja, ja!</p>
 					</div>
 					<div n="11" type="chapter" xml:id="ne0095_chap11">
-						<head>CAPITULO IV</head>
+						<head xml:id="ne0095_head_030">CAPITULO IV</head>
 						<p>Donde la tentativa de «chantaje» se convierte en capitulación DEL «CHANTAJISTA» Y GRANDES NOVEDADES QUE SIGUEN A ESTE ACUERDO</p>
 						<p>—¡Pero estás loca! —balbuceó Jack, frenético de cólera.</p>
 						<p>Lady Denver, poniéndose bruscamente seria, respondió:</p>
@@ -2534,7 +2553,7 @@
 						<p>«¡Despídete de Alejandro, amiga mía! ¡Otro talla!»</p>
 					</div>
 					<div n="12" type="chapter" xml:id="ne0095_chap12">
-						<head>CAPITULO V</head>
+						<head xml:id="ne0095_head_031">CAPITULO V</head>
 						<p>El complot</p>
 						<p>Al cuarto de Alejandro llegó ruido de voces.</p>
 						<p>Se hallaba bien, como nunca se había encontrado.</p>
@@ -2605,7 +2624,7 @@
 						<p>—Luego... se repetirán los <seg rend="italics">meetings</seg> de protesta contra Kruger... Cargaremos la máquina... La prensa inglesa vomitará rayos y centellas contra Kruger... Compraremos a los dueños de los bares para que no deje de distribuirse whisky entre el populacho. La bandera del imperio y <seg rend="italics">el alcohol</seg> ha sido siempre simpática a nuestro buen pueblo de Inglaterra... Tú, Jameson, saldrás mañana mismo para Mafeking, y te encargarás de organizar tus fuerzas comprando el mayor número posible de caballos, para que puedas llegar a Johannesburgo en el menor número de días.</p>
 						<p>—¿Y después?</p>
 						<p>—Cuando las gentes de Johannesburgo se hallen ebrias de entusiasmo..., se efectúa la distribución de armas... Mis dos hermanos se encargarán de organizarías... Y el día del <seg rend="italics">meeting </seg>definitivo se dirigirá un telegrama a Jameson concebido así:</p>
-						<floatingText><body><div type="section"><head>JAMESON</head>
+						<floatingText><body><div type="section"><head xml:id="ne0095_head_032">JAMESON</head>
 									<p><seg rend="italics">Mafeking.</seg></p>
 									<p><seg rend="italics">Distribuido aceite; necesitamos más.</seg></p>
 									<p>¡Y una vez Jameson en Johannesburgo, el triunfo será seguro!</p>
@@ -2907,10 +2926,10 @@
 						<p>Y cayó desvanecido en brazos de Lady Denver.</p>
 					</div>
 					<div n="13" type="chapter" xml:id="ne0095_chap13">
-						<head>CAPITULO VI</head>
-						<head>Que sirve de explicación al anterior y de prólogo</head>
+						<head xml:id="ne0095_head_033">CAPITULO VI</head>
+						<head xml:id="ne0095_head_034">Que sirve de explicación al anterior y de prólogo</head>
 
-						<head>AL SIGUIENTE</head>
+						<head xml:id="ne0095_head_035">AL SIGUIENTE</head>
 						<p>Durante toda aquella noche no dejó de hacer prisiones la policía.</p>
 						<p>Como la cárcel no bastara para contener a tanta gente, se habilitaron los cuarteles.</p>
 						<p>A cuantos estaban tachados de simpatizar con la causa afrikánder se les prendió sin más motivo.</p>
@@ -3116,7 +3135,7 @@
 						<p>—Cuando he conseguido domar a esta mujer, el carácter más enérgico que nunca conocí —pensaba en voz baja—, ¿qué me será negado en este mundo?</p>
 					</div>
 					<div n="14" type="chapter" xml:id="ne0095_chap14">
-						<head>CAPITULO VII</head>
+						<head xml:id="ne0095_head_036">CAPITULO VII</head>
 						<p>En el que Mr. <seg rend="smallcaps">Black, a falta de Van Devinter, se encuentra CON UNA DE LAS MÁS BELLAS PALIZAS QUE JAMÁS HAYA RECIBIDO AGENTE DE POLICÍA DE MANOS DE MUJER</seg></p>
 						<p>Sintió María vivísimas ansias de resistirse a los deseos de Cecil Rhodes, pero comprendía que más que deseos eran órdenes.</p>
 						<p>A pesar de la dulzura con que Rhodes le hablaba, entrevio María que era tratada como una sirvienta.</p>
@@ -3385,10 +3404,10 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>LIBRO TERCERO </head>
+					<head xml:id="ne0095_head_037">LIBRO TERCERO </head>
 					<div n="15" type="chapter" xml:id="ne0095_chap15">
-						<head>CAPITULO PRIMERO La <seg rend="smallcaps">hondonada invisible y los bandidos de los</seg></head>
-						<head>MONTES MALUTI</head>
+						<head xml:id="ne0095_head_038">CAPITULO PRIMERO La <seg rend="smallcaps">hondonada invisible y los bandidos de los</seg></head>
+						<head xml:id="ne0095_head_039">MONTES MALUTI</head>
 						<p>En el centro de la Basutolandia y en lo más alto de los montes Maluti, había en 1895 un paraje misterioso, terror de negros, espanto de misioneros y pavor de viandantes.</p>
 						<p>Lo designaban los primeros con el nombre de «Guarida de las Brujas» y los segundos con el de «Albergue del Diablo». La fantasía de los últimos no pasaba de tejas abajo. Denominábanlo, sin embargo, con la expresiva frase de «Región de la Muerte».</p>
 						<p>Cuando algún negro tenía que aventurarse por la montaña se pertrechaba con el pedazo de herradura, el cuerno de antílope blanco, el diente de niño o con cualquiera de los amuletos conocidos, si no había tomado la precaución de comprar al hechicero de su tribu la impunidad de un talismán al precio de un cordero.</p>
@@ -3585,7 +3604,7 @@
 						<p>—Y ahora, querido Brown, después de la mentirita que he soltado a tu Olimpia, puedes hacer y decir lo que quieras. Antes que darte un beso será capaz la boerina de atravesarse el corazón con un puñal... Y ya verás lo que es querer y no ser querido...</p>
 					</div>
 					<div n="16" type="chapter" xml:id="ne0095_chap16">
-						<head>CAPITULO II</head>
+						<head xml:id="ne0095_head_040">CAPITULO II</head>
 						<p>Camino de los montes Maluti</p>
 						<p>En la plaza de Wepener, pacífica villa del Estado libre de Orange, tres hombres blancos, ayudados por otros tantos cafres, hallábanse enjaezando uno de esos aparatos que caracterizan al Sur de Africa.</p>
 						<p>Porque hay cosas que por sí solas bastan para que surja en nuestra mente la imagen de todo un pueblo.</p>
@@ -3771,7 +3790,7 @@
 						<p>Y al cabo de varios días de marchas y contramarchas infructuosas, una noche nuestros amigos regresaron a Taba Basio, con la fatiga más enervadora en los cuerpos, con la desesperación y la muerte en el alma.</p>
 					</div>
 					<div n="17" type="chapter" xml:id="ne0095_chap17">
-						<head>CAPITULO III</head>
+						<head xml:id="ne0095_head_041">CAPITULO III</head>
 						<p>El despecho de la negra <seg rend="smallcaps">Bata</seg></p>
 						<p>Llevaban dos días en el Kraal, y estaban mal repuestos de su cansancio, cuando una tarde recibieron un recado del misionero, suplicándoles que fueran inmediatamente a la casa misión.</p>
 						<p>Acudieron solícitos al llamamiento.</p>
@@ -3923,7 +3942,7 @@
 						<p>Y a las dos horas de persecución estaba a cincuenta pasos de nuestros amigos.</p>
 					</div>
 					<div n="18" type="chapter" xml:id="ne0095_chap18">
-						<head>CAPITULO IV</head>
+						<head xml:id="ne0095_head_042">CAPITULO IV</head>
 						<p>El PASO DEL RIO Caledon</p>
 						<p>De entre el grupo de jinetes que perseguía a nuestros amigos se adelantó uno de luenga barba y sombrero ancho, exclamando en inglés:</p>
 						<p>—¡Rendios!</p>
@@ -4175,7 +4194,7 @@
 						<p>El mulato, aterrorizado, se olvidó de su orden, y echó a correr a todo galope, como un endemoniado perseguido por todos los horrores del infierno.</p>
 					</div>
 					<div n="19" type="chapter" xml:id="ne0095_chap19">
-						<head>CAPITULO V</head>
+						<head xml:id="ne0095_head_043">CAPITULO V</head>
 						<p>Las caricias de la muerte</p>
 						<p>El fuego había cesado en la orilla, y Alejandro, que conservaba frente al peligro su presencia de ánimo, advirtió que por el momento se acortaban las probabilidades de morir a tiros.</p>
 						<p>Olimpia permanecía inmóvil en sus brazos, la cabeza reclinada en su pecho.</p>
@@ -4403,7 +4422,7 @@
 						<p>... Y al cabo de tres días de tristísimo e interminable viaje se apeó Alejandro en la ciudad del Cabo, llorando la muerte de su novia y decidido a salvar la vida de Abraham Van Devinter.</p>
 					</div>
 					<div n="20" type="chapter" xml:id="ne0095_chap20">
-						<head>CAPITULO VI: LOS NEGOCIOS Y EL AMOR</head>
+						<head xml:id="ne0095_head_044">CAPITULO VI: LOS NEGOCIOS Y EL AMOR</head>
 						<p>En el despacho lujosísimo que posee Cecil Rhodes en su palacio señorial de la ciudad del Cabo conversaban animadamente el Napoleón sudafricano y su secretario, el belicoso doctor Jameson, jefe militar de la Compañía «Chartered».</p>
 						<p>Sobre la mesa despacho veíanse multitud de telegramas y cartas.</p>
 						<p>En un alto de la conversación se puso Cecil Rhodes a hacer números.</p>
@@ -4611,7 +4630,7 @@
 			<div type="division">
 				<p>SEGUNDA PARTE EN EL PAIS DEL ORO</p>
 				<div type="part">
-					<head>LIBRO PRIMERO </head>
+					<head xml:id="ne0095_head_045">LIBRO PRIMERO </head>
 					<div n="21" type="chapter" xml:id="ne0095_chap21">
 						<p>CAPITULO PRIMERO <seg rend="smallcaps">En </seg>la morada de Kruger</p>
 						<p>Advertidos por el telegrama que Alejandro les puso al tomar el tren en la ciudad del Cabo, su padre, Ignacio Liebeck, y su madre, Petra Van Devinter, salieron a esperarle a la estación de Pretoria.</p>
@@ -4726,7 +4745,7 @@
 						<p>Y al pensar en este espectáculo curioso, adivinó Alejandro una de las causas del odio que profesaba a los ingleses su tío Van Devinter.</p>
 					</div>
 					<div n="22" type="chapter" xml:id="ne0095_chap22">
-						<head>CAPITULO II</head>
+						<head xml:id="ne0095_head_046">CAPITULO II</head>
 						<p>En el que Alejandro Liebeck se reconcilia con la prensa, y se dispone a salir de Pretoria para Johannesburgo</p>
 						<p>Largo tiempo discurrieron Ignacio Liebeck, Petra Van Devinter y su hijo Alejandro, acerca de las palabras de Kruger relativas a la posibilidad de que Olimpia no hubiera muerto.</p>
 						<p>Convinieron los tres en agradecer el buen deseo del presidente, pero en conceptuar muy poco probable la reaparición de la hija de Abraham.</p>
@@ -4829,7 +4848,7 @@
 						<p>—Hay secretos que no deben confiarse al correo, sobre todo cuando es jefe del gobierno Cecil Rhodes.</p>
 					</div>
 					<div n="23" type="chapter" xml:id="ne0095_chap23">
-						<head>CAPITULO III</head>
+						<head xml:id="ne0095_head_047">CAPITULO III</head>
 						<p>La ciudad del oro, conjuradores y policías</p>
 						<p>Por primera vez en su vida iba Alejandro a Johannesburgo, la capital fabril, comercial y financiera del Africa del Sur.</p>
 						<p>La quinta de sus padres, en efecto, se hallaba situada en en Swartzkoppje, aldea de los alrededores de Pretoria donde Levis Marks, el gran industrial lord, íntimo amigo del presidente Kruger, ha levantado su señorial palacio, digno de un rey.</p>
@@ -5002,9 +5021,9 @@
 						<p>—Ya lo sabe; venga por aquí cuando quiera; dispone de mí y de mis subalternos; de día, de noche, a todas horas, mien tras duren estas circunstancias, me encontrará en este despacho.</p>
 					</div>
 					<div n="24" type="chapter" xml:id="ne0095_chap24">
-						<head>CAPITULO IV</head>
-						<head>Que dedicamos a hacer la historia de la conspiración</head>
-						<head>ORGANIZADA POR LOS MILLONARIOS INGLESES DE JOHANNESBURGO CONTRA EL GOBIERNO DEL TRANSVAAL</head>
+						<head xml:id="ne0095_head_048">CAPITULO IV</head>
+						<head xml:id="ne0095_head_049">Que dedicamos a hacer la historia de la conspiración</head>
+						<head xml:id="ne0095_head_050">ORGANIZADA POR LOS MILLONARIOS INGLESES DE JOHANNESBURGO CONTRA EL GOBIERNO DEL TRANSVAAL</head>
 						<p>Aquel ir y venir de comisarios en el despacho del jefe de la policía de Johannesburgo, aquel trajín incesante que de tal manera dificultaba el deseo de Alejandro de encontrar a su Olimpia, tenía por causa el hecho de que la ciudad del oro atravesaba en aquel diciembre de 1895 uno de los períodos más críticos de su historia y seguramente el más interesante para cuantos deseen conocer a fondo los orígenes de la guerra anglo-boer.</p>
 						<p>Y como los hechos episódicos de nuestra novela se entrelazan de tal modo con la historia, que la vida y la felicidad de Alejandro, de Olimpia, de Lord y Lady Denver, y de todos los personajes de nuestra obra, dependen del curso histórico de los acontecimientos, vamos a dejar por unas páginas a Alejandro en compañía del comisario encargado de la vigilancia de las estaciones y de los hoteles, para hacer un poco de historia, a grandes pero fidedignos rasgos.</p>
 						<p>Desde que en 1885 fueron descubiertos los yacimientos de oro, los ingleses, poco amigos de perder tiempo, reclamaron los puestos principales en la gobernación de la república a fin de que la administración pública protegiera los intereses de las compañías mineras sobre los de sus empleados, los comerciantes y los agricultores.</p>
@@ -5110,7 +5129,7 @@
 						<p>Y así estaba la ciudad de Johannesburgo cuando Alejandro entró en ella para buscar a su Olimpia y librarla de las garras de Brown, el bandido.</p>
 					</div>
 					<div n="25" type="chapter" xml:id="ne0095_chap25">
-						<head>CAPITULO V</head>
+						<head xml:id="ne0095_head_051">CAPITULO V</head>
 						<p>En el que entran factores tan diversos como LA INSOLENCIA DE UN CORREDOR INGLÉS, LOS CELOS DE LA NEGRA BATA, EL COCHE DE LADY ÜENVER Y UNA CASITA DE PIEDRA CONVENIENTEMENTE VIGILADA</p>
 						<p>Alejandro pasaba los días de su estancia en Johannesburgo bien haciendo centinela en la puerta de la magnífica morada de Barnato en Doorfontein, la parte más pintoresca de la población, en la Bolsa y en los círculos, bien conversando con el comisario que había puesto a sus órdenes el jefe de policía.</p>
 						<p>Pero de Brown el bandido ni de Olimpia no se sabía ni palabra.</p>
@@ -5258,9 +5277,9 @@
 						<p>Y tendiendo la mano derecha a Bata y volviendo la espalda se encaminó, corriendo a toda prisa al centro de la ciudad, al despacho donde solía encontrarse el comisario encargado de vigilar las estaciones y los hoteles de Johannesburgo.</p>
 					</div>
 					<div n="26" type="chapter" xml:id="ne0095_chap26">
-						<head>CAPITULO VI</head>
-						<head>En el que Alejandro se encuentra con lo que menos se</head>
-						<head>ESPERABA Y LADY DENVER RECIBE OTRA SORPRESA DE NO MENOR CUANTÍA</head>
+						<head xml:id="ne0095_head_052">CAPITULO VI</head>
+						<head xml:id="ne0095_head_053">En el que Alejandro se encuentra con lo que menos se</head>
+						<head xml:id="ne0095_head_054">ESPERABA Y LADY DENVER RECIBE OTRA SORPRESA DE NO MENOR CUANTÍA</head>
 						<p>Dos horas más tarde, Alejandro, su amigo el comisario de policía y ocho agentes llegaban en dos coches, frente a la casa en donde el bandido Brown había entrado.</p>
 						<p>—¡Bata! —dijo Alejandro al apearse.</p>
 						<p>De entre las sombrías paredes surgió como una sombra.</p>
@@ -5434,11 +5453,11 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>LIBRO SEGUNDO</head>
+					<head xml:id="ne0095_head_055">LIBRO SEGUNDO</head>
 					<div n="27" type="chapter" xml:id="ne0095_chap27">
-						<head>CAPITULO PRIMERO</head>
-						<head>En <seg rend="smallcaps">el que aparece Jack </seg>Dos <seg rend="smallcaps">Narices en el ejercicio de sus funciones y demuestra Barnato que no se puede ser al</seg></head>
-						<head>MISMO TIEMPO AMANTE, BORRACHO Y CONSPIRADOR</head>
+						<head xml:id="ne0095_head_056">CAPITULO PRIMERO</head>
+						<head xml:id="ne0095_head_057">En <seg rend="smallcaps">el que aparece Jack </seg>Dos <seg rend="smallcaps">Narices en el ejercicio de sus funciones y demuestra Barnato que no se puede ser al</seg></head>
+						<head xml:id="ne0095_head_058">MISMO TIEMPO AMANTE, BORRACHO Y CONSPIRADOR</head>
 						<p>Estamos en 24 de diciembre de 1895.</p>
 						<p>La pascua en Johannesburgo promete ser agitada.</p>
 						<p>Jameson aguardaba desde Mafeking la orden de invadir el Transvaal para apoyar a los revolucionarios de la Ciudad del Oro.</p>
@@ -5610,9 +5629,9 @@
 						<p>Entonces comprendió Barnato la imprudencia de sus palabras, pero borracho como estaba no pudo condolerse de otro modo que tumbándose a lo largo de un diván.</p>
 					</div>
 					<div n="28" type="chapter" xml:id="ne0095_chap28">
-						<head>CAPITULO II</head>
-						<head>La Bolsa de Johannesburgo; la fiebre del negocio, un</head>
-						<head>ALZA DESMESURADA Y EL SILENCIO DE UN ALEMÁN</head>
+						<head xml:id="ne0095_head_059">CAPITULO II</head>
+						<head xml:id="ne0095_head_060">La Bolsa de Johannesburgo; la fiebre del negocio, un</head>
+						<head xml:id="ne0095_head_061">ALZA DESMESURADA Y EL SILENCIO DE UN ALEMÁN</head>
 						<p>La noticia de la intervención de mister Chamberlain en la proyectada revolución de Johannesburgo llegó a la Bolsa a primera hora de la tarde.</p>
 						<p>Era un día de extraordinaria animación el de la víspera de Navidad. Al llegar los forzosos descansos que el calendario impone a los bolsistas, parece como que se aumenta la fiebre del negocio hasta trocarse en delirio.</p>
 						<p>Aquella tarde las operaciones no se verificaban en la calle «Entre las cadenas», sino en el interior del edificio, porque fuera el sol caía a plomo, derritiendo los sesos.</p>
@@ -5798,7 +5817,7 @@
 						<p>Quisieron castigarle, lo buscaron por todas partes, pero Lessing había desaparecido.</p>
 					</div>
 					<div n="29" type="chapter" xml:id="ne0095_chap29">
-						<head>CAPITULO III</head>
+						<head xml:id="ne0095_head_062">CAPITULO III</head>
 						<p>La Nochebuena de los conspiradores y los celos de Barnato</p>
 						<p>En uno de los salones del espléndido palacio de Barnato están reunidos el opulento ex payaso, su compadre el aventurero Lord Denver y la hermosa María Denver.</p>
 						<p>Hay varias botellas en un velador, pero todas están llenas; nadie piensa en vaciarlas.</p>
@@ -5914,9 +5933,9 @@
 						<p>—¡Borracho!</p>
 					</div>
 					<div n="30" type="chapter" xml:id="ne0095_chap30">
-						<head>CAPITULO IV</head>
-						<head>Dedicado principalmente a la conspiración, a Alejandro,</head>
-						<head>A LA EMIGRACIÓN Y AL ESPIONAJE</head>
+						<head xml:id="ne0095_head_063">CAPITULO IV</head>
+						<head xml:id="ne0095_head_064">Dedicado principalmente a la conspiración, a Alejandro,</head>
+						<head xml:id="ne0095_head_065">A LA EMIGRACIÓN Y AL ESPIONAJE</head>
 						<p>En la mañana del 31 de diciembre, la estación principal de Johannesburgo veíase invadida por una muchedumbre desbordante.</p>
 						<p>Ancianos, niños y mujeres abrían y cerraban las portezuelas de los coches buscando ansiosamente puesto donde meterse.</p>
 						<p>Y era inútil que los empleados de la Compañía pusieran dos locomotoras en el tren y añadieran vagones al ya larguísimo convoy.</p>
@@ -6065,7 +6084,7 @@
 						<p>—Aquí hay un espía. Tengo pruebas...</p>
 					</div>
 					<div n="31" type="chapter" xml:id="ne0095_chap31">
-						<head>CAPITULO V</head>
+						<head xml:id="ne0095_head_066">CAPITULO V</head>
 						<p>Un linchamiento frustrado y un estallido amoroso</p>
 						<p>Veíase Alejandro rodeado de una apiñada multitud que con oios amenazadores le miraba.</p>
 						<p>Imposible escaparse; imposible igualmente defenderse contra la muchedumbre enardecida.</p>
@@ -6213,9 +6232,9 @@
 						<p>—¡Berta, esposa mía...! ¡Y luego me habían dicho que eras mala!</p>
 					</div>
 					<div n="32" type="chapter" xml:id="ne0095_chap32">
-						<head>CAPITULO VI</head>
-						<head>Las calabazas de Barnato, las de Lady Denver y arreglo</head>
-						<head>ENTRE DOS CALABACEADOS</head>
+						<head xml:id="ne0095_head_067">CAPITULO VI</head>
+						<head xml:id="ne0095_head_068">Las calabazas de Barnato, las de Lady Denver y arreglo</head>
+						<head xml:id="ne0095_head_069">ENTRE DOS CALABACEADOS</head>
 						<p>—¿Estará loco de veras? —Tal era la pregunta que las gentes se hacían al oír que Mr. Goodman llamaba su esposa a Lady Denver.</p>
 						<p>¿Sería Lady Denver o Mistress Goodman la dama de los diamantes?</p>
 						<p>En otras circunstancias no se hubiera dado más crédito a las palabras de Mr. Goodman que a los propósitos de un loco.</p>
@@ -6312,9 +6331,9 @@
 						<p>Y esto es todo lo que pudo oír el novelista de la larga entrevista celebrada entre Brown el bandido y la señora María Berta Goodman, hasta ahora Lady Denver.</p>
 					</div>
 					<div n="33" type="chapter" xml:id="ne0095_chap33">
-						<head>CAPITULO VII</head>
-						<head>Fin de una revolución y dispersión de los personajes de</head>
-						<head>ESTA HISTORIA</head>
+						<head xml:id="ne0095_head_070">CAPITULO VII</head>
+						<head xml:id="ne0095_head_071">Fin de una revolución y dispersión de los personajes de</head>
+						<head xml:id="ne0095_head_072">ESTA HISTORIA</head>
 						<p>Han transcurrido otros tres días.</p>
 						<p>Durante ellos, los revolucionarios, por la ausencia de la policía, se han hecho dueños de Johannesburgo, juzgándose capaces de imponer condiciones al Gobierno de Kruger.</p>
 						<p>Se espera de un momento a otro la llegada del doctor Jameson, que al frente de sus hombres invencibles ha invadido el Transvaal.</p>
@@ -6442,12 +6461,12 @@
 				</div>
 			</div>
 			<div type="division">
-				<head>TERCERA PARTE LOS SECRETOS DE CHAMBERLAIN</head>
+				<head xml:id="ne0095_head_073">TERCERA PARTE LOS SECRETOS DE CHAMBERLAIN</head>
 				<div type="part">
-					<head>LIBRO PRIMERO</head>
+					<head xml:id="ne0095_head_074">LIBRO PRIMERO</head>
 					<div n="34" type="chapter" xml:id="ne0095_chap34">
-						<head>CAPITULO PRIMERO</head>
-						<head>Una conversación de sobremesa en el Midland Club de Birmingham</head>
+						<head xml:id="ne0095_head_075">CAPITULO PRIMERO</head>
+						<head xml:id="ne0095_head_076">Una conversación de sobremesa en el Midland Club de Birmingham</head>
 						<p>Estamos en Birmingham, la patria de Chamberlain.</p>
 						<p>Abril, 1899, dos de la tarde.</p>
 						<p>El cielo gris, la lluvia menuda e incesante enfanga las calles.</p>
@@ -6638,7 +6657,7 @@
 						<p>Se alejó el coche; regresaron al Club los señores, y los tres hombres de aspecto pobre se metieron por entre calles húmedas y oscuras.</p>
 					</div>
 					<div n="35" type="chapter" xml:id="ne0095_chap35">
-						<head>CAPITULO II</head>
+						<head xml:id="ne0095_head_077">CAPITULO II</head>
 						<p>Chamberlain, íntimo</p>
 						<p>El carruaje de Mr. Chamberlain se detuvo frente a la verja que ceñía espléndido jardín.</p>
 						<p>Abrió el lacayo la portezuela, preguntando:</p>
@@ -6851,7 +6870,7 @@
 						<p>—¿Y qué importa? ¿Han sido nunca los grandes hombres otra cosa más que la encamación de un destino fatal, superior a sí mismos?</p>
 					</div>
 					<div n="36" type="chapter" xml:id="ne0095_chap36">
-						<head>CAPITULO III</head>
+						<head xml:id="ne0095_head_078">CAPITULO III</head>
 						<p>En la taberna del Lobo Negro</p>
 						<p>Hemos dicho que cuando salió mister Chamberlain del Midland Club, había en la puerta tres individuos y que uno de ellos dijo a los dos: «¡Ese es!»</p>
 						<p>No bien montó en el coche el ministro de las Colonias, los tres sujetos se encaminaron hacia uno de los pobres arrabales de la ciudad manufacturera.</p>
@@ -6989,7 +7008,7 @@
 						<p>Y movido por este pensamiento más que por otro alguno, acompañó, en su viaje a Inglaterra, a su tío el heroico Van Devinter.</p>
 					</div>
 					<div n="37" type="chapter" xml:id="ne0095_chap37">
-						<head>CAPITULO IV</head>
+						<head xml:id="ne0095_head_079">CAPITULO IV</head>
 						<p>El crimen de Chamberlain</p>
 						<p>¿Hasta qué punto estaba en lo cierto Van Devinter al hacer responsable a Chamberlain de la invasión del doctor Jameson y de la agitación de Inglaterra contra la independencia del Transvaal?</p>
 						<p>Hemos llegado al punto culminante de nuestra obra en lo que tiene de historia íntima de los secretos de la guerra.</p>
@@ -7185,7 +7204,7 @@
 						<p>Pero veamos cómo.</p>
 					</div>
 					<div n="38" type="chapter" xml:id="ne0095_chap38">
-						<head>CAPITULO V</head>
+						<head xml:id="ne0095_head_080">CAPITULO V</head>
 						<p>Alejandro, conspirador en Birmingham</p>
 						<p>Una noche, reunidos O’Kelly, Mac Donald, Van Devinter y Alejandro, en la taberna del Lobo Negro, discutían acerca de la manera de consumar sus propósitos.</p>
 						<p>Las pesquisas de Mac Donald no habían sido de grandes resultados.</p>
@@ -7404,9 +7423,9 @@
 						<p>¡Eran demasiadas cosas para que nuestro héroe no olvidara un poco —y por primera vez— a su Olimpia, y no se durmiera, también por primera vez desde hacía años, con el sueño de los ángeles y de los justos!</p>
 					</div>
 					<div n="39" type="chapter" xml:id="ne0095_chap39">
-						<head>CAPITULO VI</head>
-						<head>En el que Alejandro se convence de que a veces se llega</head>
-						<head>A LA VERDAD, CULTIVANDO LA MENTIRA</head>
+						<head xml:id="ne0095_head_081">CAPITULO VI</head>
+						<head xml:id="ne0095_head_082">En el que Alejandro se convence de que a veces se llega</head>
+						<head xml:id="ne0095_head_083">A LA VERDAD, CULTIVANDO LA MENTIRA</head>
 						<p>Todas las mañanas, a cosa de las once, llegaba la doncella de miss Flora a la tienda de Juan Atkins, hacía sus compras del día y se marchaba sin cambiar más palabras que las estrictamente impuestas por la más elemental de las cortesías.</p>
 						<p>Fanny Smith —así se llamaba la muchacha— servía a miss Flora desde hacía tres años.</p>
 						<p>En esa época tenía dieciséis abriles y se dedicaba a vender flores en las calles de Londres, a la puerta de los teatros. Su belleza y su timidez le valía ser tratada con cariño por sus parroquianos, acostumbrados a encontrar en las floristas un atrevimiento y un descoco que faltaban en Fanny.</p>
@@ -7634,9 +7653,9 @@
 						<p>Y Alejandro, al advertir que su ensueño se alejaba, antes de que Fanny pudiera detenerle, se apeó rápidamente y, echando a correr con toda la fuerza de sus piernas, alcanzó el vehículo en donde había visto a Olimpia.</p>
 					</div>
 					<div n="40" type="chapter" xml:id="ne0095_chap40">
-						<head>CAPITULO VII</head>
-						<head>En donde advierte Alejandro los inconvenientes de ser</head>
-						<head>CONSPIRADOR</head>
+						<head xml:id="ne0095_head_084">CAPITULO VII</head>
+						<head xml:id="ne0095_head_085">En donde advierte Alejandro los inconvenientes de ser</head>
+						<head xml:id="ne0095_head_086">CONSPIRADOR</head>
 						<p>Alejandro se colocó de pie en la plataforma, junto a Olimpia, que estaba sentada en un rincón del vehículo.</p>
 						<p>¡Qué frenético deseo de abrazarla! ¡Qué «al fin» el que salió desde lo más íntimo de su alma! ¡Qué alegría, Dios santo, qué alegría!</p>
 						<p>Tres años de soledad quedaban enterrados, sin despertar recuerdo alguno, como las horas de un sueño sin sueños.</p>
@@ -7909,10 +7928,10 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>LIBRO SEGUNDO</head>
+					<head xml:id="ne0095_head_087">LIBRO SEGUNDO</head>
 					<div n="41" type="chapter" xml:id="ne0095_chap41">
-						<head>CAPITULO I</head>
-						<head>Alejandro, preso, libre, preso de nuevo, juzgado, condenado A LA HORCA... Y LO QUE SIGUE</head>
+						<head xml:id="ne0095_head_088">CAPITULO I</head>
+						<head xml:id="ne0095_head_089">Alejandro, preso, libre, preso de nuevo, juzgado, condenado A LA HORCA... Y LO QUE SIGUE</head>
 						<p>La escasa claridad que penetraba en el carruaje le permitía solamente reconocer que caminaba por sombríos callejones.</p>
 						<p>Por lo visto, se trataba de un rapto en toda regla.</p>
 						<p>Pero ¿quién lo hacía?</p>
@@ -8138,9 +8157,9 @@
 						<p>«¡Me he salvado por ahora! —pensó Alejandro—. ¡Veamos lo que estos locos tienen que decirme!»</p>
 					</div>
 					<div n="42" type="chapter" xml:id="ne0095_chap42">
-						<head>CAPITULO II</head>
-						<head>En el que Alejandro tiene que reprenderse algunos ratos,</head>
-						<head>FELICITARSE OTROS Y APRENDER EN TODOS</head>
+						<head xml:id="ne0095_head_090">CAPITULO II</head>
+						<head xml:id="ne0095_head_091">En el que Alejandro tiene que reprenderse algunos ratos,</head>
+						<head xml:id="ne0095_head_092">FELICITARSE OTROS Y APRENDER EN TODOS</head>
 						<p>—¿Por qué se me acusa? —preguntó Alejandro—. ¿Qué crimen he cometido?... ¿Qué trato reserva la Asociación a sus enemigos, cuando trata de este modo a los amigos?</p>
 						<p>—La Asociación teme, en efecto, que la hayáis traicionado, tal vez por descuido, tal vez por malicia.</p>
 						<p>—¿Pero cómo ha podido traicionarla?</p>
@@ -8355,8 +8374,8 @@
 						<p>—Esto es cosa de la policía —respondió O’Kelly con su gravedad característica.</p>
 					</div>
 					<div n="43" type="chapter" xml:id="ne0095_chap43">
-						<head>CAPITULO III</head>
-						<head>En el que todo lo que sucede es más o menos inesperado</head>
+						<head xml:id="ne0095_head_093">CAPITULO III</head>
+						<head xml:id="ne0095_head_094">En el que todo lo que sucede es más o menos inesperado</head>
 						<p>Largamente conversaron en la trastienda de Juan Atkins el irlandés O’Kelly y nuestro amigo Alejandro Liebeck.</p>
 						<p>Transcurrido un buen rato volvieron a reaparecer en el establecimiento y dijo O’Kelly:</p>
 						<p>—Pues conviene no perder el tiempo. De aquí a pocas horas sabremos dónde se encuentra ese Brown.</p>
@@ -8592,8 +8611,8 @@
 						<p>«¿Qué demonios querrá decir todo esto?»</p>
 					</div>
 					<div n="44" type="chapter" xml:id="ne0095_chap44">
-						<head>CAPITULO IV</head>
-						<head>La prensa inglesa por dentro</head>
+						<head xml:id="ne0095_head_095">CAPITULO IV</head>
+						<head xml:id="ne0095_head_096">La prensa inglesa por dentro</head>
 						<p>En la redacción de <seg rend="italics">The Express</seg> la agitación era extraordinaria.</p>
 						<p>Se habían terminado las tareas cuotidianas sin poner en ellas la menor atención.</p>
 						<p>¿Qué importaba a aquella chusma la confección del periódico?</p>
@@ -8860,8 +8879,8 @@
 						<p>Y ahora hablaremos del negocio que traían entre manos los redactores de <seg rend="italics">The Express.</seg></p>
 					</div>
 					<div n="45" type="chapter" xml:id="ne0095_chap45">
-						<head>CAPITULO V</head>
-						<head>En el que se siguen REVELANDO las INTERIORIDADES de la PRENSA INGLESA</head>
+						<head xml:id="ne0095_head_097">CAPITULO V</head>
+						<head xml:id="ne0095_head_098">En el que se siguen REVELANDO las INTERIORIDADES de la PRENSA INGLESA</head>
 						<p>Para comprender completamente la conversación verificada entre los redactores de <seg rend="italics">The Express,</seg> de que hemos hablado en el capítulo anterior, bueno es que retrocedamos cuarenta y ocho horas al describir los acontecimientos.</p>
 						<p>La escena se verifica en la antesala de la misma redacción.</p>
 						<p>Son las once de la noche.</p>
@@ -9113,8 +9132,8 @@
 						<p>Adiós, amigo.</p>
 					</div>
 					<div n="46" type="chapter" xml:id="ne0095_chap46">
-						<head>CAPITULO VI</head>
-						<head>En el que demuestra el irlandés O’Kelly conocer profundamente EL CORAZÓN DE LOS PERIODISTAS INGLESES</head>
+						<head xml:id="ne0095_head_099">CAPITULO VI</head>
+						<head xml:id="ne0095_head_100">En el que demuestra el irlandés O’Kelly conocer profundamente EL CORAZÓN DE LOS PERIODISTAS INGLESES</head>
 						<p>Pero ya sabemos que día y medio después de haberse celebrado esta conferencia, los redactores de <seg rend="italics">The Express</seg> no habían cobrado un céntimo por el negocio.</p>
 						<p>¿Era que el director no quiso darles ninguna parte?</p>
 						<p><seg rend="italics">¿Y</seg> cómo se habían enterado de la existencia del negocio?</p>
@@ -9359,8 +9378,8 @@
 						<p>—¡A casa de miss Flora!</p>
 					</div>
 					<div n="47" type="chapter" xml:id="ne0095_chap47">
-						<head>CAPITULO VII</head>
-						<head>Donde sigue Chamberlain descubriendo misterios</head>
+						<head xml:id="ne0095_head_101">CAPITULO VII</head>
+						<head xml:id="ne0095_head_102">Donde sigue Chamberlain descubriendo misterios</head>
 						<p>El coche de Chamberlain llegó a la calle donde vivía miss Flora pocos minutos después que el agente de policía Mr. Black había sufrido la extraña pregunta de ¿Cuál es la mitad de treinta y seis?</p>
 						<p>El agente de policía estaba devanándose los sesos, preguntándose qué significaría todo ello cuando vio venir el coche del ministro de las Colonias.</p>
 						<p>Dentro de la casa se encontraban, como no habrán olvidado nuestros lectores, miss Flora (o Lady Denver), su doncella Fanny y nuestro amigo Alejandro Liebeck.</p>
@@ -9632,8 +9651,8 @@
 						<p>Y el ministro y la dama subieron la escalera que conducía a la habitación donde Alejandro se encontraba.</p>
 					</div>
 					<div n="48" type="chapter" xml:id="ne0095_chap48">
-						<head>CAPITULO VIII</head>
-						<head>En el que se prepara el lógico final de estos sucesos</head>
+						<head xml:id="ne0095_head_103">CAPITULO VIII</head>
+						<head xml:id="ne0095_head_104">En el que se prepara el lógico final de estos sucesos</head>
 						<p>En un modesto piso de una casa de Birmingham se encontraba asomado a la ventana de la casa Abraham Van Devinter.</p>
 						<p>Tenía los ojos fijos en el cielo; miraba tristemente desfilar las nubes grises.</p>
 						<p>Estaba allí, amarrado a su cuarto, cumpliendo la palabra dada a O’Kelly de no salir de su casa hasta que se lo permitiere la Irlanda y Libertad.</p>
@@ -9762,9 +9781,9 @@
 						<p>Y cumpliendo como lo habían dicho, los dos amigos se despidieron dándose la mano.</p>
 					</div>
 					<div n="49" type="chapter" xml:id="ne0095_chap49">
-						<head>CAPITULO IX</head>
-						<head>Que muestra la manera que tuvo de realizarse el plan de O'Kelly y prepara el sangriento epílogo de esta</head>
-						<head>VERÍDICA HISTORIA</head>
+						<head xml:id="ne0095_head_105">CAPITULO IX</head>
+						<head xml:id="ne0095_head_106">Que muestra la manera que tuvo de realizarse el plan de O'Kelly y prepara el sangriento epílogo de esta</head>
+						<head xml:id="ne0095_head_107">VERÍDICA HISTORIA</head>
 						<p>En una taberna de uno de los barrios más infectos de Londres están reunidas gentes de la más baja condición social; marineros borrachos, obreros sin trabajo, cargadores de los docks, y aun otras gentes de oficios más sospechosos.</p>
 						<p>En un rincón y sentados en derredor de una mesa donde se ven algunos vasos de ponche de ron, se encuentran cuatro hombres; de los cuatro, dos son conocidos nuestros: O’Kelly y Abraham Van Devinter.</p>
 						<p>Uno de los otros dos, que tienen por cierto el más repugnante de los aspectos, pregunta:</p>
@@ -9864,7 +9883,7 @@
 						<p>¿Cómo se curó Olimpia?</p>
 					</div>
 					<div n="50" type="chapter" xml:id="ne0095_chap50">
-						<head>EPILOGO: UN IDILIO EN EL CAMPAMENTO </head>
+						<head xml:id="ne0095_head_108">EPILOGO: UN IDILIO EN EL CAMPAMENTO </head>
 						<p>Los hechos sucedieron como el destino inexorable lo había dispuesto.</p>
 						<p>Seis meses después de los últimos acontecimientos reseñados en esta verídica historia estalló la guerra inicua entre Inglaterra y las repúblicas sudafricanas, Transvaal y el Orange.</p>
 						<p>Pero hagamos una página de historia.</p>
@@ -10049,7 +10068,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN DE LA NOVELA: INDICE: Primera Parte </head>
+				<head xml:id="ne0095_head_109">FIN DE LA NOVELA: INDICE: Primera Parte </head>
 				<p>Libro Primero UN PUEBLO VICTIMA DE SUS RIQUEZAS</p>
 				<p>Capítulo Primero. Donde el lector entabla relaciones con Alejandro Liebeck y su tío Abraham Van Devinter y se entera de la seguridad que se goza en aquellos caminos del Africa del Sur, cuya custodia corre a cargo de la paternal Inglaterra.....................</p>
 				<p>Capítulo II. Dos telegramas, un complot, una jugada de Bolsa, una borrachera íntima y una desgracia inesperada .............................................</p>
@@ -10064,7 +10083,7 @@
 				<p>Libro Tercero EL NAPOLEON DEL CABO</p>
 			</div>
 			<div>
-				<head>Segunda Parte </head>
+				<head xml:id="ne0095_head_110">Segunda Parte </head>
 				<p>Libro Primero PRETORIA Y JOHANNESBURGO</p>
 				<p>Capítulo II. En el que Alejandro Liebeck se reconcilia</p>
 				<p>Capítulo IV. Que dedicamos a hacer la historia de la conspiración organizada por los millonarios ingleses de Johannesburgo contra el gobierno del Transvaal ... 292</p>
@@ -10072,7 +10091,7 @@
 				<p>Capítulo VI. En el que Alejandro se encuentra con lo que menos se esperaba y Lady Denver recibe otra sorpresa de no menor cuantía........................ 309</p>
 			</div>
 			<div>
-				<head>Libro Segundo </head>
+				<head xml:id="ne0095_head_111">Libro Segundo </head>
 				<p>Capítulo Primero. En el que aparece Jack Dos Narices en el ejercicio de sus funciones y demuestra Bar-nato que no se puede ser al mismo tiempo amante, borracho y conspirador........................... 319</p>
 				<p>Capítulo III. La Nochebuena de los conspiradores y</p>
 				<p>Capítulo V. Un linchamiento frustrado y un estallido</p>
@@ -10080,11 +10099,11 @@
 				<p>Capítulo VII. Fin de una revolución y dispersión de los</p>
 			</div>
 			<div>
-				<head>Tercera. Parte </head>
+				<head xml:id="ne0095_head_112">Tercera. Parte </head>
 				<p>Libro Primero</p>
 			</div>
 			<div>
-				<head>UNA CONSPIRACION EN LA INGLATERRA MODERNA</head>
+				<head xml:id="ne0095_head_113">UNA CONSPIRACION EN LA INGLATERRA MODERNA</head>
 				<p>Capítulo Primero. Conversación de sobremesa en el</p>
 				<p><seg rend="smallcaps">Capítulo </seg>VI. En el que Alejandro se convence de que</p>
 				<p><seg rend="smallcaps">Libro Segundo </seg>INGLATERRA EN PODER DE LOS JUDIOS</p>

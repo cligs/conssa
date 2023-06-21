@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Cuesta abajo</title>
-				<title type="sub"></title>
+				
 				<title type="short">Cuesta</title>
-				<title type="idno">
-					<idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX922976</idno>
-					<idno type="viaf">17218138</idno>
-					<name type="short">Clarin</name>
-					<name type="full">Alas, Leopoldo</name>
+					<name type="short" ref="#Clarin"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">305</measure>
@@ -139,13 +131,38 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0170</idno>
+						<idno type="cligs">ne0170</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#wikisource" subtype="html">Wikisource, Cárdenas, <date when="2007">2007</date>, <idno></idno>, <ref target="https://es.wikisource.org/wiki/Cuesta_abajo"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1891">1891</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Cuesta abajo</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Clarin">
+						<name type="full"><forename>Leopoldo</forename> <surname>Alas</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9265 - IO 9266">IO 9265 - IO 9266</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118884972">118884972</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q312747/">Q312747</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX922976.html">XX922976</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/17218138/">17218138</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#wikisource" subtype="html">Wikisource, Cárdenas, <date when="2007">2007</date>, <idno/>, <ref target="https://es.wikisource.org/wiki/Cuesta_abajo"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1891">1891</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuesta abajo y otros relatos inconclusos</title> <date when="1985">1985</date>, <publisher>Ed. Júcar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1620531224" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1620531224"/> 		<idno type="isbn" n="843341089X"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -155,6 +172,14 @@
 				<p>Se trata de unas memorias de Narciso Arroyo, catedrático de literatura [...]. Se reconstruye una historia sentimental. El protagonista nos habla de la atracción que ejercen a la vez sobre él dos hermanas: Emilia, hermosa, coqueta provocativa y sensual, y la adolescente Elena, cuyos atractivos no son fundalmente físicos sino espirituales. Narciso se debate entre el amor carnal y el platónico que despiertan en él una y otra.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9265" key="IO 9265" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -167,7 +192,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">naturalista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -182,8 +207,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -212,6 +237,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-12-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -219,7 +245,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0170_chap1">
-				<head>Día 7 de enero de 18...</head>
+				<head xml:id="ne0170_head_000">Día 7 de enero de 18...</head>
 				<p>A las cinco de la tarde Ambrosio Carabín, portero segundo o tercero (no lo sé bien) de esta ilustre escuela literaria, cerraba la gran puerta verde de la fachada oriental, y, después de meterse la llave en el bolsillo, se quedaba contemplando al propietario de la cátedra de Literatura general y española, que bajaba, bien envuelto en su gabán ceniciento, por la calle de Santa Catalina. Carabín, es casi seguro, pensaba a su manera: –¡Y que este insignificante, que ni toga tiene, me obligue a mí, con mis treinta años de servicios, a estar de plantón toda la tarde porque a él se le antoje tener clase a tales horas en vez de madrugar como hacen otros que valen cien veces más, según lo tienen acreditado!</p>
 				<p>Si el propietario de la cátedra de Literatura general y española hubiera oído este discurso probable de Carabín, se hubiera vuelto a contestarle:</p>
 				<p>–Amigo Ambrosio, reconozco la justicia de tus quejas; pero si yo madrugara ¡qué sería de mí! Déjame la soledad de mis mañanas en mi lecho si quieres que siga tolerando la vida. Me has llamado insignificante. Ya sé que lo soy. ¿Ves este gabán? Pues así, del mismo color, soy todo yo por dentro: ceniza, gris. Soy un filósofo, Carabín. Tú no sabes lo que es esto: yo tampoco lo sabía hace algún tiempo cuando estudiaba filosofía y no sabía de qué color era yo. Pues sí: soy un filósofo y casi casi un naufragio de poeta (no te rías)... y por eso no puedo, no debo madrugar. En cuanto a que mi cátedra te estorba, te molesta, lo admito: me lo explico. También me estorba, también me molesta a mí. Intriga con el Gobierno para que me paguen sin poner cátedra, y habrás hecho un beneficio al país, a ti mismo y al propietario de esta asignatura, que ni tú, ni yo, ni los estudiantes sabemos para qué sirve.</p>
@@ -234,7 +260,7 @@
 				<p>Cuesta abajo, es decir, camino del hoyo. Sí, no hay que forjarse ilusiones: ya no hay más horizonte; doblé la cumbre y voy descendiendo ya al otro lado de la montaña. Sólo podré ver la vertiente que dejo atrás con los ojos del recuerdo. Mientras yo bajo por este lado, las Memorias volverán a subir por el otro; pero, ¡ay!, el espíritu que las dicta va cuesta abajo. ¡Qué diferencia de vivir a volver a vivir! Si se pudieran hacer las cosas dos veces ¡qué mal las haríamos la segunda vez! Esta segunda vida sería obra del hombre, y la primera es obra de Dios. Tal creo.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0170_chap2">
-				<head>Día 8 de enero de 18...</head>
+				<head xml:id="ne0170_head_001">Día 8 de enero de 18...</head>
 				<p>Si, como quieren ciertos filósofos modernos, el hombre es un compuesto inestable, yo a los diez y siete años era un compuesto inestable... y sin novia. No tenía más novia que la Virgen Santísima. Alabada sea ella de todos modos. Nunca le perdonaré a Renan lo poco que dice de María. A los diez y siete años yo no sabía de Renan más que por una traducción de Los Apóstoles que publicaba en el folletín un periódico republicano que con motivo de la revolución triunfante quería arrancar a España de las garras del fanatismo, aunque fuera descalabrando el idioma de nuestros intolerantes antepasados.</p>
 				<p>Además, ahora que me acuerdo, había visto una traducción, mala también, de la Vida de Jesús, en la maleta de un americano muy rico y muy bruto, que quería educar a sus hijos a la moderna, y para ello se preparaba leyendo El Evangelio del Pueblo, del Sr. Henao y Muñoz, y llevando consigo a todas partes el libro de Renan, aunque sin leerlo, porque no estaba escrito en estilo cortado, como El Evangelio de Henao y los artículos de los periódicos satíricos que también deletreaba, y él los períodos largos no los entendía.</p>
 				<p>Tenía yo, en consecuencia, por un hombre de malas entrañas y mal gusto, por filósofo superficial y por historiador embustero, al insigne bretón; y eso que no sabía entonces, como supe después, que los oradores del Ateneo de Madrid, que el tal Renan todo lo copiaba de los Alemanes, menos la cháchara poética. No por ser tan injusto con el autor de San Pablo era yo en aquel entonces tan mentecato como parece deducirse del contexto. Hay que acostumbrarse a distinguir de facultades, porque unas se desarrollan antes y otras después, y algunas nunca, y no por eso deja de haber elementos dignos de aprecio en las almas de ese modo incompletas. Ni hay que suponer que ciertos espíritus, encerrados en la letra de una fe quieta, estancada, no puedan tener sus grandes anhelos poéticos de esperanzas insaciables, de abnegación metafísica, de idealidad independiente, y también los sentimientos y arranques anejos. No es lo más frecuente, pero los hay que tienen todo eso. También es verdad que cada día hay menos, y que las almas completamente sinceras y de cierto temple, casi todas son libres, en el sentido de que no las sujeta ningún dogma histórico. Pero vuelvo a mis diez y siete años. Acababa de pasar una gran fiebre nerviosa. Me encontré del lado de acá de la adolescencia en poder de una tristeza milenaria, suavemente apocalíptica. El mundo se había hecho viejo de repente; las cosas, todas pálidas, apenas tenían más que la superficie; el sol no era tan claro como antes; y entre mis ojos y las nubes, entre mis ojos y el mar lejano, aparecían enjambres de puntos, de circulillos opacos, como una vía láctea de estrellas apagadas. Aquello era para mí lo más doloroso y el símbolo de la ruina universal y, sobre todo, de mi propia ruina. Mi ruina era inmensa: aquel velo de puntos que había entre mis ojos y el mundo me decía que la hermosa vida, que ya no era hermosa, no era para mí. Yo venía a ser un príncipe, más, un emperador del ancho mundo, a quien habían destronado durante una enfermedad peligrosa. Como Gil Blas se levantó del lecho sin sus doblones, yo me levanté sin mis ensueños de rapaz ambicioso y fantaseador. Por eso no tiene nada de particular que cuando me ponía a escribir versos los dejase siempre sin concluir, aun sin mediar; porque tanta desesperación había en las primeras estrofas, tanto anhelo del aniquilamiento universal, que ya no había nada más que decir en este sentido, no cabía apurar más la gradación del desencanto, y no merecía en el mundo cosa alguna el esfuerzo de seguir buscando consonantes no vulgares, única clase que yo admitía; trabajillo que acaso entraba por algo en el abandono de todas mis tentativas rítmicas. Mientras fui niño, <seg rend="italic">proximus infantiae</seg> primero y <seg rend="italic">proximus pubertali</seg> después, fui absolutamente épico en mis lecturas y épico y dramático en mis escritos y en mis aspiraciones: leía novelas de aventuras y de pasión, historia, política, viajes y su poquito de filosofía; poemas y versos clásicos que no entendía; hacía alarde de mi erudición y de la imaginación siempre exaltada; contaba a mis amigos cuentos que yo iba discurriendo según los contaba, y escribía comedias y dramas a docenas, alguno de los cuales representábamos en teatritos caseros, en las guardillas y desvanes.</p>
@@ -246,7 +272,7 @@
 				<p>¡Oh, qué inolvidable aniquilamiento el que sentí un minuto después de sentarme! Ha dicho un crítico francés de los del día que el dolor físico es, si hablamos con sinceridad, mayor que el moral, en suma. Yo no lo afirmo, pero en aquella ocasión el terror de lo que sentí fue entonces superior con mucho a la angustia y a la locura de poco antes. Ello era que se me iba la vida por la espalda. Aquello no se llamaba morirse: era irse... escapar todo por la espalda, cayendo... cayendo, alejándome de mi madre, que, agarrada al mundo, a la materia, de que ella era parte, se quedaba allá lejos, desvaneciéndose, sin comprender mi mal, inútil para mí a pesar de su cara de compasión y de angustia.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0170_chap3">
-				<head>Día 8 de enero de 18... cont.</head>
+				<head xml:id="ne0170_head_002">Día 8 de enero de 18... cont.</head>
 				<p>Me tendía los brazos, que a pesar de tocarme no llegaban a mí, ¡ay!, no llegaban a la región en que yo sentía el espanto y también el cariño que llevaba ella dentro, como un niño en una cuna olvidada. Yo volvía atrás, volvía atrás, a la primera infancia... pero no para entrar en el seno de mi madre: para alejarme de él, cayendo, cayendo en la nada, que me invadía.</p>
 				<p>... Volví a la vida entre besos, lágrimas y abrazos de mi madre, más un poco de azahar, que llegó a tener para mí, a fuerza de usarlo, algo del olor del regazo materno. Mi madre creía en el azahar como en las oraciones. –La oración –pensaba ella– es medicina para los creyentes: el azahar para los nerviosos.</p>
 				<p>Siguió una reacción de alegría sin causa, como síntoma no más halagüeño, pero como bien positivo actual muy sabroso. Las alegrías sin causa no hay que descontarlas en la vida, porque tienen en sí mismas su razón de ser, que es la causa más constante. Ni los pesimismos ni los ascetismos deben echar en saco roto estos argumentos de las almas alegres <seg rend="italic">quand même</seg>. ¡Oh! ¡No hay que llevar demasiada metafísica a las pasajeras ráfagas de buen humor que orean de tarde en tarde la prosa manida de la existencia! Según me hago viejo, me inclino más cada día a un empirismo espiritual, a un epicurismo de buenas costumbres, moral y suave... Decía que, pasada la crisis nerviosa, volví aquel día al dominio de mi espíritu, alegre, vibrando, como placa sonora, con todas las impresiones que venían de la luz, del sonido, de los olores, del contacto. ¡Horas memorables éstas de armonía interior, en que la presencia de la realidad se convierte en una música y el alma adivina el timbre de todas las cosas y escucha las grandiosas sinfonías de la naturaleza latente!</p>
@@ -274,7 +300,7 @@
 
 			</div>
 			<div n="4" type="chapter" xml:id="ne0170_chap4">
-				<head>Día 8 de enero de 18... cont.</head>
+				<head xml:id="ne0170_head_003">Día 8 de enero de 18... cont.</head>
 				<p>Aviso a la juventud incauta. No se debe luchar, a cierta edad, con los grandes hombres que hablan en los libros. Siempre vencen ellos. El joven que piensa haber sacudido las riendas de la autoridad, el <seg rend="italic">magister dixit</seg>, se rinde sin saberlo al primer maestro que él a ciegas, por capricho, escoge por tirano. La fuerza de la autoridad, que es mucho más poderosa de lo que muchos creen ahora, se venga de los que rracionalmente se burlan de ella, imponiéndose a esos mismos en la más divertida y caprichosa variedad de formas. Cuenta otro pedagogo que a los niños de muy pocos años se les puede imponer la voluntad ajena con afirmaciones rotundas, enérgicas, de que los mismos niños desean lo que se pretende que hagan. El infante toma por voluntad propia la sugerida de esta suerte. Pues bien: a los jóvenes se les hace tomar por dictado de la razón lo que es dictado de la opinión de un hombre que tiene a sus ojos mucha autoridad. Los cambios de la opinión (aparente) de muchos jóvenes, librepensadores y todo, se deben a imposiciones de este género, tanto más fuertes y peligrosas cuanto que no son reconocidas. Tal vez parte, no digo más que parte, de la causa por que Hegel influyó tanto en el pensamiento moderno, consiste en esto.</p>
 				<p>Sí: los filósofos, los poetas, los moralistas, etc., etc., que hablan como dictadores, que mezclan elementos de voluntad, de energía en sus ideas, las imponen más fácilmente. Hegel, en efecto, en su Lógica, por ejemplo, nos llega a convencer de que seremos unos pelagatos intelectuales, unos cualquiercosa metafísicos, vulgo y nada más que vulgo, si no preferimos lo que él dice y quiere que sea la verdad a lo que el sentido común nos sugiere. Tal vez la famosa cuestión kantiana, la que es base del moderno escepticismo más o menos disimulado, la cuestión del fenómeno y del noúmeno, no pueda resolverla la humanidad nunca en un sentido satisfactorio para el valor real de la razón... sino por un acto de voluntad: no queriendo dudar de la correspondencia de lo representado con la representación. Schopenhauer debe gran parte de sus triunfos tardíos a su dandysmo filosófico, que se funda en un desdén, querido con constancia, de las ideas contrarias a su sistema.</p>
 				<p>Pero ¿qué más? El secreto del triunfo inmenso de todas las grandes religiones históricas está en los actos de fe, que no son en suma más que otros tantos martillazos de una voluntad de hierro descargados sobre el cráneo, de hueso al fin, de la mísera razón humana.</p>
@@ -293,7 +319,7 @@
 				<p>Sepa de una vez para siempre el Zoilo hipotético que yo soy germanista, que soy un latino que en esto de despreciar la arquitectura literaria me acerco a las leyendas de Odino y a los poemas caóticos de los primitivos sajones y demás hombres del norte.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0170_chap5">
-				<head>Día 8 de enero de 18... cont.</head>
+				<head xml:id="ne0170_head_004">Día 8 de enero de 18... cont.</head>
 				<p>El orden lo llevo yo en el alma: no es cuestión de literatura, es cuestión de conciencia. Yo aseguro que hay orden en todo lo dicho y basta. Leopardi y la Virgen María... ¿qué tienen que ver una cosa con otra? ¡Bah! Para la historia de mi espíritu, mucho. Yo, en el tiempo a que me vengo refiriendo, hacía a mi manera (de que ya hablaré) compatibles mis tristezas metafísicas, mi bancarrota universal, con las creencias católicas, o que por tales tenía mi relativa ignorancia. Yo creía, como tantos otros creen, que porque tenía el símbolo de la fe tenía la fe. No sabía que si mi catolicismo hubiese sido fuerte como el de un creyente de la edad media, verbigracia, mis tristezas no llegarían hasta la raíz del mundo. Pero, en fin, entre contradicciones, de que a ratos tenía conciencia en forma de remordimiento, yo me llamaba católico, y era casi místico, en el sentido de cuasi visionario. El culto de María, no externo, pues éste desde la lejana infancia no había vuelto a tenerle (fuera de las oraciones que mi madre me había enseñado poco después de nacer); el culto de María, interior, poético, vago y misterioso, era uno de mis pocos consuelos de entonces. Mi madre y la Virgen eran, en rigor, las únicas ventanas por donde yo veía entonces un poco de cielo azul. A veces, en horas de exaltación, yo había casi creído en la proximidad de una aparición de María. Pues bien: al terminar la lectura de aquellas quejas del pastor oriental a la luna, entre las lágrimas de compasión infinita que me inspiraba Leopardi, el pastor, la luna, el rebaño, el mundo entero... yo mismo sobre todo... como un engendro del llanto y de la caridad, nació en mi alma esta extraña idea: –La Virgen debió presentarse al pastor de Asia: ella, tan amiga de aparecerse a los pastores, a los adolescentes solitarios del campo, que meditan, en la somnolencia de su inocente vida, debió presentarse, apareciendo detrás de la luna, al mismo pastor de aquellas soledades y bajar hasta ponerle en el corazón una mano, con lo cual bastaría para explicarle el porqué del mundo, el porqué de las vueltas de la plateada rueda, como llamó a la luna nuestro Fray Luis de León, un pastor de almas que llevaba a María dentro del pecho. ¡Pobre Leopardi, pobre solitario de Recanati, alma llena de amor infinito y que no encuentra objeto para tanto amor, pues no hay enfrente de su cariño... no más que una infinita vanidad!</p>
 				<p>¿A quién mejor que al pobre poeta, joven, casi niño, tan capaz de comprenderla, tan capaz de amarla, tan inocente en su dolor, en su negación dolorosa; a quién mejor que a este ateo bueno, a este huérfano del alma podía aparecerse María?</p>
 				<p>Y puesta a disparatar mi fantasía calenturienta, ayudada por mi corazón pasmado, llegué, al ocurrírseme aquellas cosas, que no eran blasfemias ni sacrilegios, dada la pureza de mi intención, llegué a desear volver atrás el curso del tiempo y resucitar a Leopardi, y hacer que la Virgen se le apareciera y le consolase.</p>
@@ -313,7 +339,7 @@
 				<p>¡Y dirán que el hombre moderno no es complejo! ¡Dios mío, si hasta lo soy yo, Narciso Arroyo... que soy tan sencillo!</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0170_chap6">
-				<head>Día 9 de enero de 18...</head>
+				<head xml:id="ne0170_head_005">Día 9 de enero de 18...</head>
 				<p>–Conoció mi madre que me aburría en nuestro querido retiro; y como abandonar el campo durante el verano ambos lo hubiéramos reputado solemne locura, pensó ella en el modo de procurarme alguna distracción que me arrancara, por horas a lo menos, al hastío de mi soledad y a los peligros que ella barruntaba en mis largas cavilaciones.</p>
 				<p>No había que pensar en los aldeanos de la vecindad, pues aunque yo en aquella época no creía del todo lo que decían los desengañados retóricos acerca de la falsedad del género bucólico, y no desesperaba por completo de encontrar a Flérida algún día, escondida, a la hora de la siesta, en la calor estiva, entre los laureles y zarzas de una selva, a la sombra; sin embargo, esta vaga esperanza no bastaba a cerrarme los ojos ante los desencantos diarios de la triste y prosaica realidad.</p>
 				<p>No acababan de parecer Galatea ni Flérida, y mi madre me llevó una tarde consigo a visitar a las de Pombal. Había de mi casa a la de estas señoritas media legua larga, y nos la anduvimos a pie, porque mi madre no conocía el cansancio. En casa, todos los días, subiendo y bajando, de la cocina al corral, de la sala al desván, se tragaba dos o tres leguas. Lo que ella no quería era montar en burro; y en coches no había que pensar tratándose de los caminos empinados y fragosos de aquella tierra. Doblamos una colina y bajamos a un valle hondo, estrecho; un pozo de verdura que yo desde lo alto había contemplado muchas veces en mis paseos melancólicos, pero al cual no había descendido nunca, por aquella pereza triste de mis soledades y por cierto miedo pueril a encontrarme por aquellas pomaradas y castañares de la vega con las de Pombal, dueñas del Castillo y de la casita blanca y verde que a mí, desde arriba, se me antojaba semejante a cierto templo griego que había visto pintado en un libro. No tanto me recordaba el templo por la sencilla forma, como por la situación que ocupaba a media ladera, entre follaje, en un montículo que parecía artificial, una imitación de las lomas vecinas hecha por los pastores. El Castillo no era más que un antiguo torreón edificado en lo más alto de un cerro, en un prado de yerba muy alta, heredad de la casería de Pombal.</p>
@@ -336,7 +362,7 @@
 				<p>¡Ay! ¡No lo merecí! La vida feliz es la que va de la mano de la madre a la mano de la esposa, y de la mano de la esposa a la del misterio de la sepultura. ¡Mi madre, mi Elena, las dos muertas! ¡Y ella, lo inesperado, lo imposible, Eva, muerta también!</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0170_chap7">
-				<head>Día 10 de enero de 18...</head>
+				<head xml:id="ne0170_head_006">Día 10 de enero de 18...</head>
 				<p>–Comienzo por confesar que en los apuntes escritos ayer hay cierto artificio, además del diálogo. Consiste en haber ocultado, como si yo ahora no lo supiera, que tal vez habría yo bajado al valle de Concienes antes de aquella visita con mi madre a las de Pombal. En efecto, no bien dejamos a la izquierda el camino real que seguía hasta el fondo del valle, hasta la iglesia, y, torciendo por un castañar espesísimo, tomamos la vereda del Castillo, sentí en el alma, y hasta vagamente en los sentidos, como el gusto de una reminiscencia de la niñez, que quitaba el carácter de absoluta novedad a lo que iba viendo. Debo advertir que la hermosura de esta clase de paisajes tan verdes, de tanta frondosidad, en que la tierra pierde sus formas esculturales a fuerza de vestiduras, de terciopelos y encajes y embutidos de follaje, y donde los accidentes del terreno son regulares, moderados, armoniosos, tiene para los profanos, que hasta pueden ser pintores de cierto género, el defecto de la monotonía. –Todo esto es bellísimo –se suele decir–, da gusto vivir aquí; pero todo es igual, y se describe difícilmente sin caer en la repetición y en la vulgaridad. Estos paisajes son al arte como la felicidad completa a la poesía: sólo se pintan bien por milagro. –Así como creo que la felicidad puede ser asunto de interesantísima poesía, creo también que esta verdura de los climas templados y húmedos, esta abundancia de yerbas y hojas, y estas formas suaves que toma la superficie terrestre en países como el mío, de altas montañas allá en los puertos, pero de suaves ondulaciones de colinas y cerros al acercarse al mar (como si fueran éstas unas olas de tierra y piedra que van a esperar a las de agua que vienen de frente), se prestan a ser materia de los primores del pincel y de la descripción literaria... y, lo que más importa a mi propósito, tienen para el hijo de estos valles, que sabe comprender y amar la naturaleza que le rodea, fisonomía especial, que varía a cada recodo de un camino, a cada trasponer de un vericueto. Sucede con esto lo que pasa con los individuos de raza distinta. Para nosotros casi todos los negros, como no sean de tipo diferente, parecen el mismo.</p>
 				<p>Cuando en Madrid veía yo a tantos y tantos jóvenes de color sucio de la colonia filipina, a todos los tomaba por mi amigo P***, un poeta de allá. Y lo mismo esos filipinos que esos negros se distinguen entre sí como nosotros, y ellos ven grandes variedades de fisonomía donde nosotros no vemos más que rasgos semejantes. Yo, muchas veces, mostrando a los viajeros las bellezas naturales de mi país, he notado que alababan sin entender, cogiendo tan sólo el efecto general, el que habla más al sentido solo, como sucede con el deleite de la música para los profanos; y notaba también que se cansaban, a poco, de contemplar, y acababan por no ver nada, porque todo les parecía ya lo mismo: sentían el hastío del vulgo visitando largo tiempo las salas de un museo. En cambio, para mí, que tengo en estos montes, en estas vegas, en estos árboles y en estos prados, riachuelos y playas, una especie de historia natural... externa de mi propio ser, cada accidente del terreno adquiere casi una personalidad, y tiene de fijo una historia. Porque es de advertir que de unos a otros años, según yo voy cambiando, va cambiando también el aspecto de cada paisaje y de cada pormenor del mismo, sin que ellos dejen de ser como eran, en lo principal a lo menos. Así como en el Quijote, leído un año y otro, se descubren cada vez, según la época de la vida en que se lee, nuevas bellezas, nuevas profundidades (como también pasa con Shakespeare, Pascal, etc., etc.), así yo veo en cada nueva etapa del viaje de mi vida novedades que no sospechaba en la tierra, que he pisado y contemplado siempre.</p>
 				<p>Además, las nuevas excursiones por alturas o por profundidades no visitadas antes, me hacen encontrar relaciones nuevas entre montes y montes, entre valles y valles, entre ríos y fuentes. Mi topografía poética, que es todo un poema, mitad didáctico, mitad psicológico, tiene variaciones constantes que pican en dramáticas. Así, por ejemplo, en la edad a que ahora llego, cuando esto escribo, toda esta comarca que descubro, con unos buenos anteojos de marino, desde la cumbre, me parece más pequeña. Castilla está mucho más cerca que yo creía cuando niño: dos, tres leguas no son nada. Ciertas colinas que yo creía antes autonómicas son derivaciones de todo un sistema, dependencias de montes mayores. Todo está más cerca y más relacionado que yo pensaba, todo es menos misterioso, y todo está más triste y menos verde, y, así, como algo gastado. Los árboles que mueren me llevan algo del alma, mientras que los que nacen me parecen forasteros. En fin, dejando esta pendiente por la cual se llega a esa clase de disparates que consisten en hablar de cosas recónditas que no pueden entender los demás, vuelvo al punto de partida de esta digresión, o sea al momento en que, bajando por el valle de Concienes con mi madre, creí notar que aquellas novedades del paisaje... ya las había visto algunas veces, o las había soñado cuando menos.</p>
@@ -351,7 +377,7 @@
 				<p>Yo recuerdo haberla visto ponerse encendida al oír el dulce nombre de Jesús. En cuanto a mi padre, siempre que alguien le nombraba, su viuda palidecía, se quedaba muy seria y procuraba mudar de conversación. Mientras los demás hablaban de otra cosa, ella rezaba en silencio. Así hizo aquella tarde: después de mi imprudente evocación, mi madre rezó en voz baja mientras pasábamos el puente de tablas, traspuesto el cual estábamos en los dominios de aquellas huérfanas que iba yo a ver por vez primera.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0170_chap8">
-				<head>Día 11 de enero de 18...</head>
+				<head xml:id="ne0170_head_007">Día 11 de enero de 18...</head>
 				<p>–No pretendo describirme a mí propio el paisaje que se ofreció a nuestros ojos cuando, después de llegar a la vega y de subir por la pomarada que se llama el Castelete, vimos de repente, muy cerca, como quien lo tocaba con la mano, todo El Pombal que teníamos enfrente, al otro lado de aquella hondonada de maíz, que parecía el hueco de una gran ola verde. Estas memorias no son descriptivas sino allí donde a mí me conviene; y, además, de las cosas y personas que no he de pintar sino aquello que en mí haya dejado impresión y que especialmente me importe por cualquier concepto. Aquella tarde, en aquel momento en que a lo mejor podía hallarme a un paso de las señoritas a quien había que alargar la mano y saludar como un caballero, no estaba yo para contemplar cuadros de la naturaleza. Aquella misma vista general de la posesión de mi mujer miles de veces me llenó el alma y el sentido, y ahora con cerrar los ojos veo todo aquello como una cámara oscura podría verlo si tuviese conciencia de lo que refleja; pero entonces sólo noté que estaba más cerca todo aquello que yo estaba acostumbrado a ver desde la meseta de mi colina; que el castillo, que quedaba a la izquierda, en un altozano de hierba de segar muy alta, tenía las piedras comidas por el tiempo, y que la hiedra le subía por los muros como si fuera una caries. De lo que yo comparaba a un templo griego levantado en una ladera entre follaje, distinguí, como si dijéramos, las facciones, que eran las puertas, las ventanas y balcones, la solana, el terradillo y la escalera exterior de sendos tramos laterales, y un descanso y una balaustrada modesta y risueña, bordada de enredaderas; todo esto delante de una puerta al uso del país, de la aldea, es decir, de una puerta de un solo batiente, superpuesto, de modo que la parte de abajo quedaba cerrada durante el día, mientras no tenía que dejar paso. Se abría la parte superior, y parecía aquello un balcón. La casa del Pombal, toda blanca, con las maderas y hierros de verjas y balcones todo verde, estaba como empotrada en la espesura del monte que por detrás del edificio seguíase viendo, cargado de árboles cuyas copas formaban sobre el terradillo y los tejados de pizarra toldos, pabellones y hasta mosquiteros si así quiero figurarme aquella frescura gárrula y movible, que vertía la sombra como un rocío, y cantaba, pulsada por el viento, un poema de alegría con su contraste puro entre el cielo azul y las paredes blancas. Mi madre, al llegar a lo alto del Castelete, sudaba, encendido el rostro, y me sonreía como para darme ánimos.</p>
 				<p>Se detuvo, apoyó una mano en la cadera, respiró con fuerza, y con trabajo, y entre aliento y aliento, dijo:</p>
 				<p>–Ya falta poco.</p>
@@ -379,7 +405,7 @@
 				<p>A mirarme a mí se volvía muy a menudo, y cuando las noticias de mi madre aludían a mi humilde persona, entonces se cuadraba enfrente de su humilde servidor, y me miraba de arriba abajo, y aprobaba con movimientos de cabeza, que también eran a su modo admiraciones.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0170_chap9">
-				<head>Día 11 de enero de 18... cont.</head>
+				<head xml:id="ne0170_head_008">Día 11 de enero de 18... cont.</head>
 				<p>Comprendía yo entonces ya que me miraba como a un chiquillo, y ahora comprendo, además, que me miraba como a un chiquillo que le hacía mucha gracia por lo que iba teniendo de hombre.</p>
 				<p>Algo empezaba a molestarme, y aun a humillarme, que en mí todo le pareciese milagro: lo que había crecido, lo adelantado que estaba en mis estudios, lo que me parecía a mi padre, a quien ella recordaba; porque, como dijo:</p>
 				<p>–Los recuerdos de mi niñez los tengo yo como plasmados aquí dentro. Aquel plasmados (que mi madre creyó, según después supe, una incorrección: plasmados por pasmados) me dio mucho que pensar desde luego.</p>
@@ -410,7 +436,7 @@
 				<p>Una carcajada fresca, cristalina, que llenó de poesía el prado, el horizonte, el cielo, sonó detrás del bálago de yerba.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0170_chap10">
-				<head>Día 12 de enero de 18...</head>
+				<head xml:id="ne0170_head_009">Día 12 de enero de 18...</head>
 				<p>–¡Allí está! –gritó Emilia–. Y dio un salto, como un gato que hubiera vuelto a encontrar la pista de un ratón en vano perseguido largo tiempo. Detrás del montón de yerba vislumbré por un segundo la falda de una bata de percal blanco con lunares rojos, muchos y muy pequeños. Pero a la voz de Emilia, que se lanzó tras el rastro, desapareció la tela. Es de advertir que, según supe después, estas dos señoritas, una de veinticuatro años y otra de quince y unos meses, pero que, como se verá, ya representaba sus diez y siete o diez y ocho, se entretenían casi todo el día en jugar a una cosa que llamaban ellas la queda, y consistía en dar una a otra un cachete suave y decir</p>
 				<p>–Quedaste–, y enfurecerse la que había quedado, como si le hubiesen pegado la peste, y no descansar hasta poder devolverle la bofetadita a su hermana y decir a su vez</p>
 				<p>–Quedaste–. Y así se pasaban la vida, según explicó después D.ª Eladia, la tía, sin pizca de formalidad; y, a pesar de estar muy bien educadas, aquel vicio de la queda las dominaba de manera que más de una vez, ante una visita que venía a honrarlas y arrancarlas a su soledad, Elena, la menor, que había quedado, aprovechaba la ocasión del cumplido que su hermana mayor tenía que guardar ante los extraños, y disimuladamente le daba la bofetadilla, diciendo por lo bajo:</p>
@@ -425,7 +451,7 @@
 				<p>–¡Miserables! Mejor dicho: ¡imbéciles!</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0170_chap11">
-				<head>Día 14 de enero de 18...</head>
+				<head xml:id="ne0170_head_010">Día 14 de enero de 18...</head>
 				<p>–Ayer fue día de asueto: yo no escribo en día 13.</p>
 				<p>Continúo. –Pero, niñas –gritó D.ª Eladia–, ¿estáis locas? Tú, torbellino, ven a saludar a D.ª Paz, la señora de Arroyo, nuestra vecina. Mi madre que ya no temía desaires, y que en cuanto vio a Elena se enamoró de ella también a su manera, salió al encuentro de la muchacha, la cual al verla se turbó un poco, y no encontró mejor manera de ocultar la vergüenza que le daba haber estado haciendo la chiquilla en presencia de aquella señora respetable que acercarse a ella, cogerla por los hombros y darle sendos besos en las mejillas. Entonces fue cuando mi madre, muy contenta, se volvió a mí y, sujetando por las muñecas a Elena, dijo con tono solemne, que quería ser cómico:</p>
 				<p>–Te presento a la pequeña de las de Pombal. –Y nos hizo darnos las manos.</p>
@@ -461,7 +487,7 @@
 				<p>En una novela acaso no parecería bien que yo dijese que la señorita mayor de Pombal, bien educada y de fijo pura, en cierto modo inocente, al pasar por una puerta de la solana, para descender al jardín, tropezó conmigo a sabiendas, con toda intención, y me miró con ojos de fuego... y de ave de rapiña, para estudiar en mi rostro la impresión del rápido pero intenso contacto de su busto con mi cuerpo. Pero de estas cosas se ven en el mundo; y así fue, como lo digo.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0170_chap12">
-				<head>Día 15 de enero de 18...</head>
+				<head xml:id="ne0170_head_011">Día 15 de enero de 18...</head>
 				<p>–Tampoco sé yo si conservo la unidad de carácter del héroe confesando que, a pesar de lo que pasaba por mí con motivo de la presencia de Elena, de quien me estaba yo enamorando, el achuchón de Emilia y la mirada que le acompañó me causaron una delicia carnal desconocida para mí hasta aquel momento.</p>
 				<p>Fue un excitante, además de una revelación, aquel incidente instantáneo; y ello fue que me vi a poco entre las dos hermanas en la glorieta del jardín, sintiendo algo semejante a lo que debiera sentir un gallo entre sus gallinas, si los gallos fueran más psicólogos y menos sensuales.</p>
 				<p>Sin embargo, la vanidad entra por mucho, a mi entender, en el apego que tiene el gallo a su corral; y esa vanidad le viene, tal creo, más que del mando autocrático y de la conciencia de su valor guerrero, de la contemplación del eterno femenino siempre a su exclusiva disposición.</p>
@@ -480,7 +506,7 @@
 				<p>–¡La luna del Pombal! Es mi sueño, de allá lejos.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0170_chap13">
-				<head>Día 16 de enero de 18...</head>
+				<head xml:id="ne0170_head_012">Día 16 de enero de 18...</head>
 				<p>–Elena, antes de proseguir, me miró con gravedad y sondeándome: quería ver si era yo digno de que ella siguiera hablando de tan sagradas cosas.</p>
 				<p>Por desgracia Emilia se adelantó, creyéndose en el caso de explicarme lo de la luna. Ello era que allá en la infancia, cuando vivía su padre, Elena suspiraba en invierno, en Madrid, por la luna de Pombal, que a ella le parecía la única, porque conservaba el recuerdo del plenilunio en una noche como aquella en aquel valle. Elena interrumpió a su hermana como hablando consigo misma, fija la mirada en el astro rojo, hinchado, que seguía ascendiendo, alejándose del horizonte.</p>
 				<p>–Yo no sé –dijo– si es que me acuerdo todavía, o si me acuerdo del recuerdo; pero ello es que yo me veía en unos brazos que debían de ser los de papá, y de repente vi esa luna, de ese color, y no me pareció la misma pálida que había visto en Madrid... ¡Oh! Sí: para mí la luna de Pombal era mejor, de colores, redonda, más hermosa, como todo lo del Pombal. Pero ¡sí me acuerdo, vamos! Aquella tarde, o aquella noche, lo que fuera, íbamos por un prado... largo, largo, así... en curva, como el somonte... y en las seves brillaban gusanos de luz... y cantaban las cigarras... miles de cigarras, y a mí me parecía que las estrellas cantaban también, cantaban así, como latiendo, como un péndulo, tristes... pero muy dulces, muy... no sé qué... Y era papá (¡oh! sí: estoy segura), papá quien me llevaba en brazos...</p>

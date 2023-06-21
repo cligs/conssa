@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los abismos</title>
-				<title type="sub"></title>
+				
 				<title type="short">Abismos</title>
-				<title type="idno">
-					<idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1051062</idno>
-					<idno type="viaf">79060694</idno>
-					<name type="short">Trigo</name>
-					<name type="full">Felipe Trigo</name>
+					<name type="short" ref="#Trigo"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1951</measure>
@@ -139,22 +131,57 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0156</idno>
+						<idno type="cligs">ne0156</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/los-abismos--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc2z139"/>.</bibl>
-				<bibl type="print-source">Madrid, Renacimiento, <date when="1920">1920</date></bibl>
-				<bibl type="edition-first"><date when="1913">1913</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los abismos</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Trigo">
+						<name type="full"><forename>Felipe</forename> <surname>Trigo</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654 - IP 8655">IP 8654 - IP 8655</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118867806">118867806</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3068144/">Q3068144</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1051062.html">XX1051062</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/79060694/">79060694</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/los-abismos--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc2z139"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Renacimiento, <date when="1920">1920</date></bibl>
+					<bibl type="edition-first"><date when="1913">1913</date><idno source="k10plus" type="ppn" n="351161430" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=351161430"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los abismos</title> <date when="1913">1913</date>, <publisher/> <pubPlace>Madrid: Renacimiento</pubPlace> 		<idno type="ppn" n="351161430" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=351161430"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los abismos</title>: 	<title type="sub">(adaptada a las dimensiones de esta revista)</title> <date when="1917">1917</date>, <publisher>La Novela Corta</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1042338450" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1042338450"/> </bibl>
+						<bibl type="further-edition"><title type="main">Los abismos</title> <date when="1920">1920</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="40582467X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=40582467X"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE9">
 				<p>La corrupción que engendra el lujo es el tema central [...]. Libia se vende a un hombre para que pague sus deudas con la modista, de modo que Eliseo, su marido, no se vea arruinado. Estalla luego el escándolo y el ultrajado opta por el perdón.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654" key="IP 8654" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -167,7 +194,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">2-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -184,7 +211,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela de crítica social</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -212,6 +239,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-08-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -223,9 +251,9 @@
 		<body>
 
 			<div type="part">
-				<head>Primera parte</head>
+				<head xml:id="ne0156_head_000">Primera parte</head>
 				<div n="1" type="chapter" xml:id="ne0156_chap1">
-					<head>- I -</head>
+					<head xml:id="ne0156_head_001">- I -</head>
 					<p>Tendido en el diván, envuelto en la caricia blanda del pijama, satisfecho de sus horas de trabajo y con una felicidad en el corazón, que de tanta, de tanta, casi le dolía..., esperaba y perdía el pensamiento y la mirada hacia el fondo de etérea inmensidad que, cortado por las góticas torres blancas y rojas de San Pablo, el cielo abría sobre el retiro. Las nubes, las torres, las frondas, teñíanse a través de las vidrieras del <seg rend="italic"><seg type="foreign" xml:lang="en">hall</seg></seg> en palidísimos gualdas y rosas y amatistas.</p>
 					<p>Entró Clotilde, la doncellita de pies menudos, de alba cofia, de pelo de ébano. Traía el servicio del té, y se puso en la mesita a disponerlo, avisando que ya llegaba la señora.</p>
 					<p>-¿Y la niña?</p>
@@ -282,7 +310,7 @@
 					<p>Y como, nada más de recordarlo, reíase otra vez nerviosamente la madre candorosa, puesta en pie para salir, para vestirse, porque había sonado el timbre del portón y debía ser Guillermo... Eliseo la miró partir y quedó riéndose (aun sin conocer cuáles fueron) de las ocurrencias de la niña..., de aquella traviesa Inés de todos los ángeles diablitos, que les formaba a los dos el raudal de la alegría...</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0156_chap2">
-					<head>- II -</head>
+					<head xml:id="ne0156_head_002">- II -</head>
 					<p>Guillermo, ¡sí!... Antes que él, en fuga, como siempre, forzada por la obligación y el respeto, Clotilde entreabrió el cortinón para anunciarle. Al pasar, el tenaz irreverente soltó una risotada y le cogió a la joven la barbilla...</p>
 					<p>-¡Muñeca!</p>
 					<p>Huyó Clotilde, roja, sin decir una palabra..., y mientras el gigantesco artista se acercaba y arrojaba a una silla su chambergo, Eliseo le reprochó:</p>
@@ -325,7 +353,7 @@
 					<p>¡Qué bella estaba!</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0156_chap3">
-					<head>- III -</head>
+					<head xml:id="ne0156_head_003">- III -</head>
 					<p>Salió el pintor. Salió el marido...; y ella, que, con sonrisa mártir, había recibido el beso del insensatamente venturoso, vuelta en el sillón dorado y perla, se quedó escuchando hasta que sonó el portón a lo largo del pasillo. Entonces, brusca, se dobló a sus brazos sobre el brazo del sitial en una explosión de llanto.</p>
 					<p>Fue breve. Estaba harta de llorar.</p>
 					<p>Alzó enseguida la cabeza. Su faz había cambiado a lo espantoso.</p>
@@ -379,7 +407,7 @@
 					<p>No la frente, ahora, sino todo el cuerpo, todo el ser de la infeliz, tronchado en llanto y convulsión, cayó de bruces a lo largo de aquellos papeles que eran en sus lujos y en su vida fatídicas banderas de derrota...</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0156_chap4">
-					<head>- IV -</head>
+					<head xml:id="ne0156_head_004">- IV -</head>
 					<p>Todas las tardes, al anochecer, el bello hotel número 4-A de la calle Villamagna era el centro, el templo de una peregrinación elegantísima.</p>
 					<p><seg rend="italic">Robes -Mmz. Georgette- Manteaux</seg></p>
 					<p>leíase en dorada y rasgueada letra inglesa por los tres balcones de la fachada principal. Y ante la cancela, de vuelta del paseo en la Castellana, deteníanse blasonados coches con magníficos caballos, y excelentes automóviles que vibraban tomando turno de espera, mientras las damas cruzaban el jardín.</p>
@@ -486,7 +514,7 @@
 					<p>Y tras ella, un momento después, veloz, horrorizada salió Libia asimismo y buscó directa la calle, con menos temor a las gentes que al antro donde se sofocaba prisionera...</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0156_chap5">
-					<head>- V -</head>
+					<head xml:id="ne0156_head_005">- V -</head>
 					<p>Dulce la tarde. Hermosísimo el Retiro. Temblaban los líquidos fanales y abanicos de las fuentes, y cantaban los mirlos en las frondas, asaetadas de sol; las violetas y las rosas prestábanles sus triunfos de perfumes al triunfo de la vida. Por todas partes, en explosiones de luz o de chillidos, estallaba la diáfana alegría de los niños, de las flores y los pájaros.</p>
 					<p>El gozoso tumulto era más grande en la sombrosa avenida que va desde el estanque al recinto de la Exposición. Abierta ésta hacía tres días, y notable por los buenos cuadros y esculturas presentados, entre el mundo de los artistas y los curiosos filaban los carruajes del mundo de la elegancia y la riqueza.</p>
 					<p>En un espléndido automóvil llegaron y cruzaron la cancela de la entrada dos mujeres.</p>
@@ -553,7 +581,7 @@
 					<p>Volvió a divisar de largo a Javier España. Su vista la restituyó a la única mayor contrariedad de que estaba enteramente cierta: la de la necesidad, la de la urgencia del momento aquel de explotación, de doble engaño, más villano, no salvado aún, y ya por <seg rend="italic"><seg type="foreign" xml:lang="fr">madame</seg></seg> Georgette esperadísimo, en que ella, tan torpe, tuviese que jugarle al cándido muchacho la comedia cuyo éxito habría de ser el pago a la modista...</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0156_chap6">
-					<head>- VI -</head>
+					<head xml:id="ne0156_head_006">- VI -</head>
 					<p>Sola, al fin... Libia, en naufragio de indecencias, en naufragio de esperanzas, en naufragio de todo, quedó de espaldas en el lecho, al aire los brazos abiertos y extendidos, en ostentación indiferente de impúdica los senos, que no eran sino dos malditas flores más de su carne mancillada.</p>
 					<p>Hoy no había sido el resto de pudor de desnudarse o vestirse ante Javier lo que la retuvo, como siempre, entre las ropas, que, sin embargo, solamente amparaban de ignominia su ignominia -y sí había oído ella decir que los que se sentían helarse entre los fríos polares se amparaban de la nieve debajo de la nieve.</p>
 					<p>Hoy, no; era la desolación lo que le había espoleado el ansia de quedarse allí sin acción, sobre su misma vergonzosa desventura, para siempre.</p>
@@ -638,7 +666,7 @@
 					<p>A ella, ladrona, traidora, prostituta fracasada en venta..., ¿restábala algún derecho para protestar de cualquier forma de la estafa?</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0156_chap7">
-					<head>- VII -</head>
+					<head xml:id="ne0156_head_007">- VII -</head>
 					<p>Un joven, azoradísimo, dejando en la verja su automóvil, cruzaba a las once de la noche el jardín de la Jefatura Superior de Policía.</p>
 					<p>Le preguntó a un ordenanza por el jefe.</p>
 					<p>-¿Qué deseaba usted?</p>
@@ -766,7 +794,7 @@
 					<p>Detrás de él iría corriendo asimismo el coche o el invisible automóvil fantasma en que le seguiría espiando algún bandido...</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0156_chap8">
-					<head>- VIII -</head>
+					<head xml:id="ne0156_head_008">- VIII -</head>
 					<p>Pero no; otro automóvil negro, grande, bien tangible, que nada tenía de fantástico, era el que bajaba a la media hora y a todo escape la calle de la Princesa: el del jefe superior de Policía.</p>
 					<p>Cruzó Madrid y se detuvo en el hotel de la calle Villamagna.</p>
 					<p>Su dueño fue conducido por el impecable negro de frac rojo al bello salón de estilo inglés, que por las tardes estaba lleno de aristócratas.</p>
@@ -827,7 +855,7 @@
 					<p>Pero el jefe de Policía la condujo al escritorio, la redactó él mismo el breve documento, lo guardó... y salió severamente de la estancia.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0156_chap9">
-					<head>- IX -</head>
+					<head xml:id="ne0156_head_009">- IX -</head>
 					<p>Inés, vestida, sobre las ropas de la cama, contando cuentos y cintas del cinematógrafo, se había dormido en brazos de la madre. Ésta dormitaba también. En la butaca, Eliseo, tan cerca de las dos, leía un periódico a la luz de la lamparita rosa.</p>
 					<p>Por la alcoba perfumada de éteres y de almas de bondad, flotaba una doliente calma de inocencias.</p>
 					<p>Dejó el periódico Eliseo. Hasta ahora, que estuvo Libia a punto de morir, no había sentido la enorme angustia de haber podido perderla sin haberla envuelto en los anhelos de su vida instante por instante.</p>
@@ -870,9 +898,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Segunda parte</head>
+				<head xml:id="ne0156_head_010">Segunda parte</head>
 				<div n="10" type="chapter" xml:id="ne0156_chap10">
-					<head>- I -</head>
+					<head xml:id="ne0156_head_011">- I -</head>
 					<p>Quemado y todo, escupiendo la ceniza, se rió Eliseo.</p>
 					<p>Había fumado por la lumbre.</p>
 					<p>Ya antes se puso el chaleco del revés y se anudó la corbata delante de un cuadro, creyéndolo el espejo.</p>
@@ -967,7 +995,7 @@
 					<p>Desfallecía, apoyada en la mesa, yerta en la ola inmensa de lodo, de ignominia, que hasta ella, con aquel papel, parecía subir de Madrid entero. No sabían sus débiles nervios de rendida más que dejarla caer como muerta a cada uno de estos golpes, a cada una de estas horrendas violencias del castigo, y acaso ya nublábanse sus ojos y acaso iba a caer...; pero sintió a Eliseo, y la vergüenza y el pavor la dieron fuerzas para escapar, para correr adonde pudiera ocultarle y destruir el anónimo maldito...</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0156_chap11">
-					<head>- II -</head>
+					<head xml:id="ne0156_head_012">- II -</head>
 					<p>Con una cobarde energía incapaz de todo cambio que pudiera delatarla, con una estática inquietud de inicua descubierta que ya sólo esperase al primero que quisiera señalarla con el dedo a la pública vergüenza, Libia había intentado resignarse a continuar por Madrid su vida de esplendor.</p>
 					<p>En los teatros, adonde se obstinó en llevarla su marido, el cándido insensato, el autor gozoso de sus ganancias nuevas y su triunfo, luciendo ella los primores de los trajes y las joyas con que él mismo agasajábala, causaba una insana expectación; la asestaban insolentes los gemelos, y esperábanla los hombres a la puerta, mirándola como a una fácil presa de lujuria. Cruzaba con los ojos bajos, al brazo de Eliseo, y éste, creyéndola así gloriosamente envuelta en los prestigios de su nombre, comentaba aquello dedicándola gentilezas al oído...</p>
 					<p>En los tés, en los salones de amigas que bajo la advocación del buen tono acogían con iguales deferencias a la equívoca de galantes aureolas que a la honrada irreprochable, ella advertíase alrededor una hostilidad de curiosidades insidiosas, de desvíos, de frías y aún más molestas compasiones. No eran tales tertulias como los palcos del teatro, abiertos a todo el que quisiera concurrir, y Libia, así que fue advirtiendo con espanto la menor correspondencia de las amigas a su casa, dudó si no volver. Sin embargo, significaría ello la derrota, el reconocimiento pleno de la justicia con que sabríase rechazarla, y el recuerdo de Ernestina, que asistía también, por una parte, y el recurso, por otra, de prevenir las demudaciones de su faz ante los bochornos posibles con máscaras de albayalde y de carmín, que, llorando, en las secretas torturas de su tocador, tendíase por las mejillas, diéronle a su tenacidad desesperada la hipócrita impudencia.</p>
@@ -1031,7 +1059,7 @@
 					<p>Eliseo se sublevaba al ver que, por los consejos de Mari, el baúl de Inés íbase llenando de trajes viejos de lana, de baberos nuevos de percal... Él, porque Luis habíale dicho que abundaba la caza en <seg rend="italic">Los Mimbrales</seg>, y aunque no había visto una perdiz viva jamás, acababa de comprarse una excelentísima escopeta y unos arreos de elegante cazador que le costaron tres mil reales...</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0156_chap12">
-					<head>- III -</head>
+					<head xml:id="ne0156_head_013">- III -</head>
 					<p>Un tren que sobre el estruendo de sus ruedas los bamboleó por muchas horas, que se detuvo en muchas estaciones, y que, a media noche, entre las inclemencias del frío y de las tinieblas, tuvieron los dormidos niños y la desvelada Libia que dejar en la más abandonada al desamparo de los campos. Una espera hasta el amanecer en los bancos de un vestíbulo, bajo el farol de aceite y contra fardos de patatas y sardinas. Una desvencijada diligencia que los recogió apretadamente y que durante el día entero los fue arrastrando con su monótono campanillear por la blanca carretera tendida sin fin en áridas campiñas. Un ruin mesón de pueblo grande, aceptado a la mitad del viaje para darle en la segunda noche a la enferma un poco de reposo; mal mesón, con honores de fonda, sin braseros, alumbrado con bujías, y en donde cenaron sopas de anís y gallo frito. La diligencia otra vez, recogiendo al salir el sol a los que no lograron descansar por culpa de los mosquitos y serenos; la carretera interminable, de nuevo, subiendo fatigosa a unas montañas, y a las tres de la tarde, la cima, el puerto, la venta como de ladrones en que aguardaban los rústicos sirvientes cuidando los borricos; una sopa todavía, de huevos y jamón, en tanto se cargaba a lomo de las bestias el complicadísimo equipaje; lanzada luego la gitanesca caravana por los abruptos senderos a los hondos valles que cambiaron el paisaje a frondosidad de maravilla; pinos, águilas, simas, canchos...; y salvado con luz del día lo más salvaje y peligrosamente agreste de esta última etapa de la marcha, el retorno sobre los caminantes del frío de las estrellas en una llanura inmensa de rañas, de jarales, en donde aullaban los lobos...</p>
 					<p>Cuando Libia descendió yerta a las puertas de la casa, y seguida de guardas y pastores entró en el destartalado cocinón en donde sólo halló la nota alegre de un gran fuego, creyó que la piadosa Mari no hubiese querido sino traerla a morir tranquila en un destierro, perdidamente... lejos, tan lejos, tan lejos, con aquellas llanuras y aquellas sierras y aquellas carreteras infinitas y aquel tren apartándola del mundo que aún sobre la muerta pudiera tender sus difamaciones rompiendo en maldición el llanto de Eliseo.</p>
 					<p>La desolación se le colmó al recorrer rápidamente con Mari la vivienda. Hecha la limpieza de ésta a escape, por la prisa con que avisaron su arribo los viajeros, hallábanse recién enjalbegadas y fregados sus bóvedas y sus pisos de ladrillos; no tenía puestas más que unas camas viejas en tres habitaciones, vacías completamente las demás, y un rimero abominable de muebles rotos, despintados, en un desván, como en una prendería, al lado de montones de cebada y de cebollas.</p>
@@ -1081,7 +1109,7 @@
 					<p>Además, a la advertencia de Eliseo sobre si el lujo sostenía o no una vasta industria universal que daba de comer a muchas gentes y que representaría la prosperidad de las naciones, Luis replicaba y defendía que la tal industria era inútil e inmoral, por mucho que pudiera enriquecer a los traficantes y a los países en que hallárase más próspera. Lo importante para la humanidad no estaba en crear con el trabajo un valor ficticio, superfluo, sino en invertirlo racionalmente produciendo con fácil abundancia los elementos necesarios de la vida; y lo falso de aquella riqueza veríase en cualquier pueblo que, no contando con otra principal actividad que sus <seg rend="italic">fábricas de lujos</seg>, sus sederías, sus joyerías (al lado, por supuesto, de un ejército de hambrientos), aislado por una guerra, verbigracia, no pudiera recibir en cambio los trigos para el pan, las carnes, las mantecas, y tuviera que comerse sus rasos y brillantes. ¡Ah, riqueza estúpida, riqueza convencional, que no tenía nada tampoco de riqueza artística, la de esos efectos, sin otra positiva estimación que la del «valor en cambio», especie de nueva moneda más, lanzada al mundo para su vanidad y para su agobio!</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0156_chap13">
-					<head>- IV -</head>
+					<head xml:id="ne0156_head_014">- IV -</head>
 					<p>Marzo se iniciaba con un temporal de frío, de vientos y de lluvias digno de lo más crudo del invierno.</p>
 					<p>Añorando los paseos al sol, no tardaron todos en hallar bizarras distracciones.</p>
 					<p>Un placer, en sentirse azotados por el vendaval y por el agua. Poníanse chanclos o botas fuertes, abrigos, impermeables; y ya recios contra la intemperie por su larga familiaridad con las encinas, iban chapoteando barro a ver en los arroyos y en el río las tremendas avenidas que ensanchaban turbias su corriente.</p>
@@ -1126,7 +1154,7 @@
 					<p>La cuarta escena era ya una adivinada reproducción casi fiel de una de aquellas realidades espantosas en que la «dama» de los lujos le escuchaba a la modista sus dilemas del abismo negro de la ruina o del abismo de deshonra de un amante...</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0156_chap14">
-					<head>- V -</head>
+					<head xml:id="ne0156_head_015">- V -</head>
 					<p>Se detuvo el automóvil, y todavía, antes de bajar, volvió a encarecerle a Astor el preocupadísimo Eliseo:</p>
 					<p>-Sí, mira, te lo ruego. Atiende bien a la lectura. Tu juicio me importa más que nunca.</p>
 					<p>Astor le sonrió:</p>
@@ -1219,7 +1247,7 @@
 					<p>Las damas reiteráronle sus norabuenas al autor. Hablaron ruidosas en seguida del retrato, del vestido; empujaron a Guillermo hacia la puerta, al automóvil..., y Eliseo, frío, muerto, no quiso acompañarlos.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0156_chap15">
-					<head>- VI -</head>
+					<head xml:id="ne0156_head_016">- VI -</head>
 					<p>Desde el Español, caminando ensimismadamente, solo, dejado por todo el mundo igual que un apestado, se halló en San Carlos.</p>
 					<p>Luis solía permanecer allí a estas horas de la tarde.</p>
 					<p>Le buscaba, sin saber por qué, sin tener nada que decirle..., por una desesperada necesidad de refugio mudo en sus lealtades. Advertía a su alrededor la contradicción, el desconcierto, la inversión monstruosa de un mundo moral en el que los afectos entrañables se le tornaban foscos, en el que únicamente, y en cambio, la malquerencia envolvíale de una como pérfida y terrible aura de lisonjas, y ahogándose de angustia anhelaba sentir junto al corazón la nobleza del amigo que menos le había cerrado el suyo al tratar siquiera de evitarle con misteriosa terquedad tanta amargura.</p>
@@ -1290,7 +1318,7 @@
 					<p>Y era inútil, ya, para el reintegrado a su alta fe por el más valioso y unánime juicio de la Prensa.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0156_chap16">
-					<head>- VII -</head>
+					<head xml:id="ne0156_head_017">- VII -</head>
 					<p>¿Qué estaba sucediendo, en suma, detrás del misterio impenetrable? ¿Qué extraña tormenta continuaba condensándose alrededor de su empeño, de su obra... del drama de luz y de esperanza que iba a recibir en esta noche la pública sanción?</p>
 					<p>Eran las ocho.</p>
 					<p>Inquieto el autor, vagaba por las calles.</p>
@@ -1388,7 +1416,7 @@
 					<p>Se encontró en la esquina de una calle lateral, desierta, y escapó de las gentes, de las luces, llevándose sólo para él la crueldad de su martirio...</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0156_chap17">
-					<head>- VIII -</head>
+					<head xml:id="ne0156_head_018">- VIII -</head>
 					<p>En cuanto la fuga por el laberinto de estrechas calles le apartó del espléndido tumulto, rehízose a sí mismo y el pensamiento le cayó al fondo del ser como candente hierro, levantándole un profuso hervor de ímpetus, de ideas.</p>
 					<p>Seguir buscando a Luis y escupirle al rostro que su acción, cierto o no lo que había querido insinuarle, constituía una canallada.</p>
 					<p>Correr a su casa y en una sola mirada a Libia, que le llegase hasta el alma, penetrarla en su traición o en su bondad.</p>
@@ -1512,7 +1540,7 @@
 					<p>Pero... sonreíase, sonreía... siempre sonreía...</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0156_chap18">
-					<head>- IX -</head>
+					<head xml:id="ne0156_head_019">- IX -</head>
 					<p>-¡Adiós, señores!</p>
 					<p>-¡Adiós!</p>
 					<p>-¡Adiós!</p>
@@ -1654,9 +1682,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Tercera parte</head>
+				<head xml:id="ne0156_head_020">Tercera parte</head>
 				<div n="19" type="chapter" xml:id="ne0156_chap19">
-					<head>- I -</head>
+					<head xml:id="ne0156_head_021">- I -</head>
 					<p>-Señor, ¡los diques!</p>
 					<p>-Sí.</p>
 					<p>Corría el coche.</p>
@@ -1724,7 +1752,7 @@
 					<p>Se aterró. Aquella tarde tomó el tren para Granada. Una guía le informó de que en la ciudad morisca había otro hotel, más perdido aún que éste en una montaña de jardines, y casi exclusivamente frecuentado por turistas.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0156_chap20">
-					<head>- II -</head>
+					<head xml:id="ne0156_head_022">- II -</head>
 					<p>Veíalas en coche por los paseos lejanos, por las cumbres hasta donde lo permitía la nieve, en la Alhambra, con el <seg rend="italic"><seg type="foreign" xml:lang="de">Baedeeker</seg></seg> delante de los ojos, y aquí al salir el sol.</p>
 					<p>Acabarían de levantarse, de bañarse, y venían con la frescura de dos flores de junco. Sencillo su tocado: garrotines de paja con ancha cinta, blancas blusas y faldas de seda azul. La una, alucinada, se dirigió en seguida al parapeto, se sentó, acodada en él, y perdió la vista en lejanos horizontes. La otra se acomodó en un velador, depositó su libro y su paquete de cartas, y con una pluma estilográfica empezó a escribir postales.</p>
 					<p>Eran dos alemanitas que viajaban solas, de veinte años la mayor, hermanas, seguramente, y de dulce y bello aspecto. Exentas de coquetería, sus caras, a pesar de sus fuertes y sanos cuerpos de mujer, ostentaban la inocente lozanía y la tranquilidad de dos curiosas niñas, de dos blondos arcángeles caídos de los cielos para no ver nada en torno a sus candores como no fuese el cándido esplendor inanimado de las cosas.</p>
@@ -1776,7 +1804,7 @@
 					<p>La vida entera se le removía por las entrañas en sorpresa, en indignación, en confusiones.</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0156_chap21">
-					<head>- III -</head>
+					<head xml:id="ne0156_head_023">- III -</head>
 					<p>Las doce.</p>
 					<p>El exprés llegaba a las doce y cinco.</p>
 					<p>Paseaba Eliseo por un extremo del andén, al sol, lejos de las gentes, y miraba el reloj, en la urgencia de estos últimos minutos, sin saber si aun debiese aprovecharlos para correr, para escapar y perderse donde no pudiesen encontrarle.</p>
@@ -1953,7 +1981,7 @@
 					<p>¿Era que el auge del sufrir en la noche aquella, en la cima misma del martirio, habríale mostrado los horizontes de salvación a su esperanza?</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0156_chap22">
-					<head>- IV -</head>
+					<head xml:id="ne0156_head_024">- IV -</head>
 					<p>Astor había partido al día siguiente. Ellos habían ido a despedirle, y volviéronse desde la estación para seguir aquí como en un limbo, sin saber qué harían, sin saber cuándo y adónde hubieran de partir.</p>
 					<p>Dijérase que la oriental pereza del hotel y de Granada, fuertemente perfumada de azahares y claveles, y arrullada por las fuentes y los pájaros, sumíalos en una olímpica insensibilidad más grande que todo sufrimiento.</p>
 					<p>Ya llevaban otras dos mañanas despertándose al concierto que los mirlos entonaban por las frondas, debajo del balcón.</p>
@@ -2045,7 +2073,7 @@
 					<p>Libia le siguió muda hasta el hotel, como un fantasma, por los claros de la luna.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0156_chap23">
-					<head>- V -</head>
+					<head xml:id="ne0156_head_025">- V -</head>
 					<p>Había visto alguna vez esas libélulas de dorado cuerpo y de élitros de gasa, flores libres del espacio, que a la imprudencia de su vuelo entre las flores caen en una ciénaga; que se hunden, que se ahogan, que en su luchar por la líquida inmundicia, sienten sus alas ajarse mojadas y ensuciarse; que logran trepar a una flotante brizna salvadora, y que la sepultan después bajo su peso, para encontrarse nuevamente en la desesperada lucha sin fin y sin reposo...</p>
 					<p>Así él, poeta, que voló imprudentemente por los cielos del amor y de la gloria, hallábase otra vez náufrago en el lago negro de vergüenza con las alas de ilusión plegadas y manchadas.</p>
 					<p>Sentíase sin ánimos para intentar otra nueva salvación, y continuaba aquí, en la media noche, entregado a la agonía del desaliento.</p>

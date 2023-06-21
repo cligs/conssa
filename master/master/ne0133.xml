@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La rampa</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Rampa</title>
-				<title type="idno">
-					<idno type="bne">bimo0000624471</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1010849</idno>
-					<idno type="viaf">95256735</idno>
-					<name type="short">Burgos</name>
-					<name type="full">Carmen de Burgos</name>
+					<name type="short" ref="#Burgos"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1839</measure>
@@ -140,22 +131,48 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0133</idno>
+						<idno type="cligs">ne0133</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bne" subtype="epub">BNE, <date when="2017">2017</date>, <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000098145&amp;page=1"/>.</bibl>
-				<bibl type="print-source">Renacimiento, <date when="1917">1917</date>, Madrid.</bibl>
-				<bibl type="edition-first">Renacimiento, <date when="1917">1917</date>, Madrid.</bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La rampa</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0000624471.html">bimo0000624471</idno>
+				</idno>
+				</title>
+					<author xml:id="Burgos">
+						<name type="full"><forename>Carmen</forename> <surname>de Burgos</surname></name>
+						<idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5752699/">Q5752699</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1010849.html">XX1010849</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/95256735/">95256735</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/120573091">120573091</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bne" subtype="epub">BNE, <date when="2017">2017</date>, <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000098145&amp;amp;page=1"/>.</bibl>
+					<bibl type="print-source">Renacimiento, <date when="1917">1917</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first">Renacimiento, <date when="1917">1917</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
 		</encodingDesc>
 		<profileDesc>
 			<abstract>
-				<p></p>
+				<p/>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL10">3</term>
 					<term type="author.continent">Europe</term>
@@ -168,7 +185,7 @@
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">?</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -180,7 +197,7 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela naturalista</term>
@@ -192,7 +209,7 @@
 					<term type="text.litHist.mentioned" resp="HdLE">False</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE10">0.2</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
@@ -207,30 +224,31 @@
 					<term type="text.setting.settlement.type">big-city</term>
 					<term type="text.setting.territory">Castilla</term>
 					<term type="text.time.period">?</term>
-					<term type="text.time.span"></term>
+					<term type="text.time.span"/>
 					<term type="text.time.year">19??</term>
 				</keywords>
 			</textClass>
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-03-03" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>La rampa</head>
-				<head>Carmen de Burgos</head>
+				<head xml:id="ne0133_head_000">La rampa</head>
+				<head xml:id="ne0133_head_001">Carmen de Burgos</head>
 			</div>
 			<div>
-				<head>DEDICATORIA </head>
+				<head xml:id="ne0133_head_002">DEDICATORIA </head>
 				<p>A toda esa multitud de mujeres desvalidas y desorientadas, que han venido a mí, preguntándome qué camino podrían tomar, y me han hecho sentir su tragedia.</p>
 				<ab>“COLOMBINE” </ab>
 			</div>
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0133_chap1">
-				<head>EL COMEDOR DE TODOS </head>
+				<head xml:id="ne0133_head_003">EL COMEDOR DE TODOS </head>
 				<p>Era todos los días un sacrificio subir aquella sucia escalera que conducía al restaurante.</p>
 				<p>A fuerza de verse allí se había establecido una especie de camaradería entre la mayor parte de los comensales; pero una camaradería casi hostil, aunque trataba de parecer afectuosa.</p>
 				<p>Sentían todos una especie de molestia por la pobreza que revelaba el asistir a los comedores de a peseta el cubierto, por abono.</p>
@@ -314,7 +332,7 @@
 				<p>El mismo sentimiento debía experimentar su amiga, porque cuando se levantaron para irse iban apoyándose la una en la otra, como si se protegieran y se diesen mutuamente valor.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0133_chap2">
-				<head>INTERIORIDADES </head>
+				<head xml:id="ne0133_head_004">INTERIORIDADES </head>
 				<p>Gozaron un momento la alegría de la calle, más libre y clara por su contraste con el agobio del comedor, Y, sin embargo, siempre que salían a la calle, tan céntrica, en aquella hora de luz y de sol, sentían esa especie de temor, de miedo, esa angustia que experimentaban todas las mujeres modestas y deseosas de disimular su penuria al tener que pasar por los sitios concurridos, bajo la luz espléndida que no disimula el mal estado de los vestidos y los defectos del rostro. Tal vez éste era el mayor tormento de las obligadas a comer fuera de su casa.</p>
 				<p>—Decididamente—dijo Agueda — pasamos un mal rato todos los días. Yo temo que llegue la hora de comer. ¡Si tuviéramos tiempo de prepararnos nosotras algo en casal</p>
 				<p>—Vivimos demasiado lejos—repuso con un suspiro Isabel—, y estamos demasiado cansadas. Hay que resignarse.</p>
@@ -428,7 +446,7 @@
 				<p>Hundió do nuevo, la cabeza en el pabellón colgante de su barba, y no contestó al saludo de despedida de la joven.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0133_chap3">
-				<head>EL RINCÓN OSCURO </head>
+				<head xml:id="ne0133_head_005">EL RINCÓN OSCURO </head>
 				<p>Cuando ella alquiló aquel gabinete en el piso tercero de la vieja casa, se sintió feliz de verse dueña de un gran balcón, por el que entraba el sol y llenaba toda la estancia. Tanto como la casa la seducía el aire majestuoso, respetable <seg rend="italic">y</seg> lleno de ternura de la dueña. Doña Nieves era una anciana alta, fuerte, de cuerpo erguido, tez fresca y cabellera blanca, que sabía ser insinuante y simpática.</p>
 				<p>Debía haber sido en su juventud lo que se llama una buena moza. Se entresacaban de sus narraciones y los frecuentes recuerdos del pasado, repetidos sin cesar, los datos de su vida. Doña Nieves se vanagloriaba de haber nacido en Aragón, la tierra de savia más vigorosa de toda España; pero cuando se casó, una niña aún, se fué a vivir a Sevilla, ocupando allí una espléndida situación, y perdiendo entre la molicie y el enervamiento del clima andaluz la afición al trabajo de aguja, que fué su primera ocupación juvenil. Después, muerto el marido y casada en Galicia su única hija, envejecida, incapaz de trabajar, había alquilado aquel piso, para ceder habitaciones, con lo que pagaba el arrendamiento y sacaba para mantenerse..</p>
 				<p>Lo que más le convenía eran los señores respetables y las muchachas ligeras. Unos y otras le proporcionaban épocas de esplendor, en las cuales podía hasta hacer economías. Claro que para eso había que ser amable, y a pesar de hablar tanto de su honradez y de su aire de respetabilidad, la buena señora tenía que hacer la vista gorda a muchas cosas.</p>
@@ -494,7 +512,7 @@
 				<p>Sin embargo, seguían creyendo, esperando, y en aquel sentimiento, casi inconsciente, daban ya por hecho que sus novios serían dos amigos que se querrían como se querían ellas, para no separarse nunca.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0133_chap4">
-				<head>EL AMIGO SOMBRÍO </head>
+				<head xml:id="ne0133_head_006">EL AMIGO SOMBRÍO </head>
 				<p>La mañana de sol le daba optimismo a Isabel; ella, un poco perezosa los días de fiesta, se había levantado temprano. Abrió el balcón, que dejó pasar una ráfaga de aire mañanero y fresco, y fué a ver las dos macetas de geranios y helechos que cuidaba, poniendo en ellas un cariño semejante al que inspiran los niños pequeños, como si satisfacieran su deseo de dar expansión a una ternura protectora.</p>
 				<p>Como todas las mañanas, se dirigió al armario ropero, en el que su escaso vestuario daba lugar a que sirviera de despensa, y para guardar la vajilla y las provisiones de sus cenas y sus desayunos, y sacó el infiernillo, disponiéndose a calentar el café, que tomaba con leche condensad a, con objeto de economizar azúcar.</p>
 				<p>La puerta se abrió y entró Agueda.</p>
@@ -558,7 +576,7 @@
 				<p>El encanto estaba roto por ambas partes. Las infelices no se daban cuenta de que habían perdido la rara posibilidad de despertar a una vida superior al lado de aquel amigo que no tornaría más. Estaban hechas para tratar otra clase de hombres, los mismos hombres que por un instinto sano de su naturaleza parecían repugnarles,</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0133_chap5">
-				<head>LOS BANCOS PÚBLICOS </head>
+				<head xml:id="ne0133_head_007">LOS BANCOS PÚBLICOS </head>
 				<p>El alejamiento de Joaquín, después de su breve amistad, las había dejado más solas. Habían perdido al amigo y el amor no llamaba a sus corazones.</p>
 				<p>Como todas las mujeres, ellas tenían a su alcance las conquistas fáciles de los tenorios callejeros y de esos hombres que parece que van al azar en pos de toda desconocida. Pero el hábito de su vida reflexiva, el trabajo que las agostaba, y quizá también la comparación involuntaria de Joaquín con los otros hombres, dificultaba esa entrega de la voluntad necesaria para dejar entrar el amor. La fealdad fosca y austera de Joaquín había llegado a ser como un prototipo de belleza que les hacía sentir disgusto ante el atildamiento de los otros.</p>
 				<p>En su vida había mucho de mecánico, de obediencia a la costumbre. Del mismo modo que era una obligación el ir a desempeñar su empleo en el Bazar y acudían ya a él sin darse cuenta, iban las tardes de domingo, a dar su paseo por los parques, como las ovejas que salían a pacer al campo. Iban llenas de tristeza, de vacilaciones, solas y aburridas, sin saber qué hacer. Sentían perdida su personalidad entre la multitud.</p>
@@ -618,7 +636,7 @@
 				<p>Así se comprendía cómo las dos pobres mujeres se aferraban a los novios como a una esperanza de liberación, puesto que aunque el matrimonio no les diese en el hogar mas que el puesto de gobernantas y se acabase con él aquella especie de idilio sentimental que paseaban por las calles de Madrid, tendrían asegurada su vida, con ese triunfo social que supone el matrimonio, como una superioridad sobre las amigas, las cuales, por espíritu femenil, les ayudaban desinteresadamente, sin darse cuenta de la ingratitud con quo les corresponderían.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0133_chap6">
-				<head>EL PEINARSE LOS CABELLOS </head>
+				<head xml:id="ne0133_head_008">EL PEINARSE LOS CABELLOS </head>
 				<p>Aquella mañana al llegar al Bazar notó cierta inquietud en el rostro de Agueda, algo como si deseara hablarle y a la vez esquivara sus miradas. El dependiente encargado de la sección de peines y esponjas le comunicó la orden de que subiera a ver al principal con una entonación gozosa, que le hizo presagiar algo desagradable.</p>
 				<p>Subió la escalerilla y se detuvo en la puerta llamando quedamente. No respondió nadie. ¿La habrían oído? Estuvo indecisa diez minutos, sin atreverse a repetir la llamada, y al fin tocó otra vez con suavidad. Sonó el vozarrón al mismo tiempo que la bola de grasa venía rodando hacia ella.</p>
 				<p>—¿No pueden esperar...? ¡Tanta prisa! Que pase quien sea.</p>
@@ -691,7 +709,7 @@
 				<p>Aquel día Isabel permaneció turbada y silenciosa durante toda la comida. Estaba preocupada por las palabras de Agueda <seg rend="italic">y</seg> experimentaba cierta molestia al ver cómo ésta, aprovechando su ensimismamiento, charlaba y reía con Fernando. Estaba desconcertada, y al quedarse de nuevo a solas con su amiga, no se atrevió a preguntarle nada. Era la primera vez que le ocultaba su pensamiento.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0133_chap7">
-				<head>LA PUÑALADA DEL HAMBRE </head>
+				<head xml:id="ne0133_head_009">LA PUÑALADA DEL HAMBRE </head>
 				<p>Había pasado la noche intranquila, sin poder dormir, dando vueltas en su cerebro a las preguntas que le sugerían las dudas que se habían apoderado de su espíritu.</p>
 				<p>Toda la casa estaba impregnada de un olor a drogas que dificultaba el respirar. Desde varios días antes doña Nieves se había visto obligada a guardar cama. La gran debilidad de su corazón, sin fuerzas para contraerse, producía frecuentes asistolias. Era como una bomba descompuesta, y se quedaría roto y abierto cuando menos lo pudieran esperar.</p>
 				<p>Llamaron al médico de la Sociedad, esa Sociedad a la que se abonan todos los pobres en las grandes ciudades, como si convencidos de no poder asegurar el pan quisieran, tener seguro el entierro a su muerte.</p>
@@ -736,7 +754,7 @@
 				<p>Y la nieta fingía, excitada por los nervios, un ruidoso ataque de risa sardónica, que obligaba a las vecinas a llevarla a la cama y la libraba de seguir sosteniendo el duelo.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0133_chap8">
-				<head>EL TRAJE NUEVO </head>
+				<head xml:id="ne0133_head_010">EL TRAJE NUEVO </head>
 				<p>Se habían dado aquella satisfacción de hacerse los vestidos claros, domingueros, que eran una escapatoria a lo que tenían de monacal los trajes severos y tristes que estaban obligadas a llevar en el Bazar.</p>
 				<p>Sus trajes de vuela, a rayas azules y blancas el de Isabel, y blancas y violeta el de Agueda, tomaban en ellas una nota más aguda, más detonante, que hacía resaltar la amarillez de su cutis, las ojeras moradas y el aire de cansancio de sus facciones, los cuales rimaban mejor y pasaban más inadvertidos cerca de la severa sencillez de su traje oscuro.</p>
 				<p>Sin embargo, las dos se encontraban engalanadas, enfloradas, sentían penetrar la Primavera en su corazón, merced a la alegría clara y transparente de la tela que las envolvía.</p>
@@ -786,7 +804,7 @@
 				<p>Y las dos, como engañadas por sus propias palabras, se sentían dichosas con sus trajes y sus adornos nuevos. Fueron muy felices aquella tarde en su paseo. Iban por la parte más céntrica, mezclándose con todos los transeúntes, mirando alto y hablando con el aplomo que les daba su traje.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0133_chap9">
-				<head>LAS TERTULIAS TRISTES </head>
+				<head xml:id="ne0133_head_011">LAS TERTULIAS TRISTES </head>
 				<p>Cuando llegaron casa de doña Evarista la tertulia estaba en su apogeo.</p>
 				<p>Les abrió La puerta una criada con cara de idiota, una de esas pobres bestias domésticas que acaban por atontarse a fuerza de repetir continuamente los mismos actos en un trabajo monótono y sin fin. La dueña de la casa salió a su encuentro.</p>
 				<p>—¡Qué milagro! ¡Dichosos los ojos! ¡Tanto tiempo sin verlas!</p>
@@ -822,7 +840,7 @@
 				<p>Doña Evarista y las otras señoras se ocupaban, de la carestía de los alimentos. Mientras que la viuda del comandante lamentaba con otra enlutada la pérdida del esplendor de que la rodeaba su difunto marido; situación que idealizada por su memoria, tomaba las proporciones de la ruina de tina millonaria. Los jóvenes hacían de moscones de grupo en grupo, excepto el capitán, novio de la hija mayor, que había tomado su puesto al lado de ella, acaparando toda su atención. Agueda e Isabel se aburrían en aquel medio triste, en el que a pesar de todos los esfuerzos, se notaba algo falso, inconsistente y tenebroso, de una miseria disimulada.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0133_chap10">
-				<head>EL CINEMATÓGRAFO </head>
+				<head xml:id="ne0133_head_012">EL CINEMATÓGRAFO </head>
 				<p>Le costaba un verdadero esfuerzo llegar puntual manto al Bazar por las mañanas, ahora que iba al <seg rend="italic">cine</seg> con Femando casi todas las noches. Tenía que levantarse a las seis para tener, tiempo de arreglarlo todo, y sólo el milagro de su miedo a don Prudencio, la bola de carne de la que dependía su vida, realizaba el milagro de su actividad.</p>
 				<p>Al principio de sus relaciones la había acompañado Agueda todas las veces que Fernando las invitaba al cinematógrafo; pero bien pronto la joven renunció a salir todas las noches, tanto por no poder soportar el cansancio que habiendo de madrugar le causaba una diversión en la cual no tenía el aliciente que su amiga, tanto porque comprendía que los dos jóvenes se amaban y desearían quedarse solos.</p>
 				<p>Isabel, tuvo los primeros días un temor y una cortedad grandes para acceder a salir sola con Fernando. Al fin aceptó, convencida de sus razones.</p>
@@ -848,7 +866,7 @@
 				<p>Desde entonces no dejaron de ir ni una sola noche al cine; pero ya prestaban menos importancia a la fábula. Sus manos se entrelazaban extasiándose en la sensación de placer que les producía su contacto. A veces él, sin que Isabel protestase, dejaba deslizar sus dedos sobre el brazo de la joven, y sus pies quedaban prisioneros debajo del suyo. Entonces la protesta era la de la mano y la del pie que permanecían libres. Se despertaba una especie de sed de aquella caricia en todos sus poros. Se abrían todos ellos ansiosos como rosadas boquitas de amor. Una noche, con el deseo del triunfo de las figuras en que habían encarnado, sus cabezas se buscaron en la oscuridad y, a favor de la complicidad que les daba el estar en la última fila, <seg rend="italic">se</seg> unieron por primera vez sus labios en un beso largo, silencioso y temblante.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0133_chap11">
-				<head>EL COCHERO CÍNICO </head>
+				<head xml:id="ne0133_head_013">EL COCHERO CÍNICO </head>
 				<p>La verbena del Carmen se introducía en la ciudad, penetraba en ella, era como una invasión de alegría y de regocijo en medio de la tristeza de las calles, a las que convertía en parques y paseos públicos, poniendo en ellas, en lugar del tráfago de la vida urbana, un estallido de fiesta y de gozo. Era como si quisiera hacer olvidar los trabajos de la vida cotidiana, tan dura en las grandes capitales, con la sensación de una ciudad feliz cuyos habitantes no tuviesen que pensar más que en el festejo y el bienestar.</p>
 				<p>No era como las otras verbenas apartadas del centro, en un emplazamiento algo alejado. Esta verbena corría por las calles, con la alegría contagiosa que se propaga como el reguero de una traca. En todas las calles, desde Fuencarral y Hortaleza hasta los Cuatro Caminos, se extendía por todas las otras vías aquella, pintoresca vestimenta de farolillos de colores, papeles picados y arcos polícromos que lo enfloraban y engalanaban todo.</p>
 				<p>De trecho en trecho se alzaban unas cercas de madera, especie de verja, dentro de las cuales se verificaban los bailes públicos; y en los alegres remansos que formaban la amplitud de las glorietas se extendía la feria con los innumerables tenduchos, barracas y puestecillos: todos esos objetos que sólo se ven mezclados en las verbenas, donde acuden los mismos vendedores que los llevan de un lado para otro. ¿Adonde estaban guardadas el resto del año todas aquellas cosas que a fuerza ele ser arcaicas aparecían como nuevas en cada exhibición? No faltaban siempre novedades antiguas de muñecos que bailasen solos, toscos juguetes hechos a navaja sobre madera... y multitud de variaciones de las señoritas de trapo con cara de cartón, que son como forma plástica de los cantares del pueblo.</p>
@@ -976,7 +994,7 @@
 				<p>Así al menos habría conocido la opulencia.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0133_chap12">
-				<head>LOS REYES MAGOS </head>
+				<head xml:id="ne0133_head_014">LOS REYES MAGOS </head>
 				<p>Permanecían aquella noche, víspera del día de Reyes, abiertas toda la noche las puertas del Bazar. Todos los objetos que no eran juguetes estaban relegados a segundo término.</p>
 				<p>Los juguetes parecían tener cierta vida, cierta movilidad suya propia; los de música tocaban solos; los trompos hacían un <seg rend="italic">rum-rum</seg> de abejorro, como si quisieran rodar; los muñecos producían un ruido seco de articulaciones.</p>
 				<p>Brillaban a la profusión de las luces que se habían aumentado, los sables, las trompetas, los cascos de militar y las cajas de soldaditos, con los que se exalta el mal espíritu guerrero y atávico que duerme en los niños, y las cajas de muñecas para las niñas, las cocinitas, los neceseres de costura, como si fuese necesario cultivar también en ellas el espíritu de servidumbre.</p>
@@ -1052,7 +1070,7 @@
 				<p>Era como el cumplimiento del sino fatal de las mujeres. Había rodado la rampa, la rampa buena, que no es la de las malas compañías, ni de la abyección, ni la de esa miseria negra de que abusa el patrono, ni de la lujuria que tiende la asechanza. Era la rampa vulgar, la que preparan las gentes honradas, las despreocupadas de todo lo que pasa en la calle.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0133_chap13">
-				<head>LAS CHICAS DE BATA </head>
+				<head xml:id="ne0133_head_015">LAS CHICAS DE BATA </head>
 				<p>Llegó desfallecida, agarrándose a las paredes para no caer, a todo lo largo de las aceras de aquellas calles pendientes y sucias que forman el barrio de Embajadores, uno de esos barrios antiguos, típicos, que por conservarse aún envuelto en pobreza y miseria se conceptúa clásico y pintoresco.</p>
 				<p>Atravesó aquel dédalo de callejuelas mal empedradas, llenas de hojas de col, cáscaras de frutas y toda clase de basura, <seg rend="italic">y</seg> pasó frente a la Fábrica de Tabacos, el inmenso edificio en donde trabajaban las hembras de rompe y rasga., quizá últimas representantes de la tradición de valor y osadía del pueblo madrileño. En todas las esquinas había puestecillos ambulantes consistentes en una mesilla sobre la que se veían cacahuetes, altramuces, torraos y naranjas; otras vendedoras más humildes tenían sólo una cesta llena de las mismas golosinas, en la que también predominaban las naranjas, aquel fruto jugoso, de envoltura de oro, que debía ser una tentación de frescura y dulzor para las gargantas abrasadas por el calor y el polvillo del tabaco.</p>
 				<p>Merodeando cerca de la Fábrica se veían los hombres que esperaban la salida de las hembras que amaban o de las que eran amados hasta el punto de entregarles una buena parte del miserable jornal. Tenían casi todos el aire fatigado de la larga espera y de la pereza que los envolvía en aquel ambiente cálido, polvoriento; la especie de vaho de suciedad y descomposición de la tierra; a pesar del gran calor todos llevaban arrollado al cuello el pañuelo de dudosa limpieza y color encendido, y se peinaban con tufos alisados sobre las sienes.</p>
@@ -1065,13 +1083,13 @@
 				<floatingText>
 					<body>
 						<div type="section">
-							<head>LA CARIDAD LOS RECOGE </head>
+							<head xml:id="ne0133_head_016">LA CARIDAD LOS RECOGE </head>
 							<p>deletreó en una parte de la inscripción sobriamente colocada sobre el torno, invitando a entregar a la caridad aquellos pequeñuelos que sin ella hubieran sido víctimas de un infanticidio.</p>
 							<p>Le faltaban las fuerzas, sentía como si hubiese crecido la carga de su vientre, que de empinado y puntiagudo, levantando el estómago hacia arriba, se desgajaba y caía por su plenitud y su madurez. Ya le faltaban pocos pasos para llegar al gran portalón abierto que parecía ofrecerle asilo. Se detuvo y lo miró con miedo. Al entrar allí iba a desaparecer, iba a perderse, a separarse del concierto de la vida libre, a convertirse en un número, una especie de prisionera sometida a un reglamento tiránico que no podría desobedecer, Frente a ella los cristales empañados de un escaparate reproducían su imagen, con contornos vagos pero precisos. Al pronto no se reconoció. ¿Era ella aquella mujer flácida, de facciones abultadas, hinchadas, en medio de su demacración, con el rostro cansado, caído; cubiertas las mejillas por el paño amarillento que parecía también velarle los ojos, dándole esa expresión peculiar de las embarazadas: esa mirada opaca que parece convertir sus pupilas en los cristales de unos lentes a través de los cuales quisieran ver otros ojos?</p>
 							<p>Su cuerpo era sólo un enorme vientre, sostenido por las piernas, que parecían más cortas y débiles; los hombros achatados y deprimidos marcaban un ángulo como de goznes para, incrustar el brazo ñaco, casi perdido bajo el seno que se desparramaba marcando en la tela parda de la blusa y la levita raída un redondel húmedo por el rezumar de los calostros.</p>
 							<p>Se acentuó su miedo. ¿Iría a morir allí? Tuvo impulsos de arrojarse al suelo, como se arrojan, los niños rebeldes que no quieren entrar en la escuela; pero hizo un esfuerzo, cruzó la calle y puso el pie en el escalón de la puerta. Su corazón se oprimía, la calle miserable se enfloraba, como un bello paseo. A pesar de la miseria y la suciedad había en ella vida, exceso de vida; el ruido de gentes que iban y venían, las voces libres, en contraste con el silencio que adivinaba dentro, la atraía, la retenía, parecía impedirle entrar.</p>
 							<p>Pero era necesario aquel sacrificio. Era imposible resistir ya más. Desde que su <seg rend="italic">enfermedad</seg> le había hecho dejar aquel cargo del Bazar que era su único medio de subsistencia había ido a vivir con Agueda en casa de su tía. Dormía en la misma cama que su amiga y compartía con ella su modesta comida. Isabel guisaba para las dos y la joven hacía el sacrificio de andar y desandar a pie todos los días el largo camino para ir a comer a su casa.</p>
-							<p>Con gran delicadeza las dos mujeres la animaban. Ya<seg rend="italic"></seg>, buscarían entre todas el medio de vivir.</p>
+							<p>Con gran delicadeza las dos mujeres la animaban. Ya<seg rend="italic"/>, buscarían entre todas el medio de vivir.</p>
 							<p>Lo importante era salir del mal paso. Pero los meses pasaban, Isabel veía llegar el día de su alumbramiento, el cual reclamaba gastos que no podía costear. Se informó de lo que era necesario para ir a la Casa de Maternidad; pero Agueda se había opuesto a su designio diciendo que trabajaría para las dos. Isabel no podía consentir aquel sacrificio y se había escapado de casa de su amiga para ir a aquel refugio y no arrastrarla en su miseria. Era preciso entrar. Un hombre con uniforme galoneado le habló.</p>
 							<p>—¿Qué desea?</p>
 							<p>Apenas pudo balbucir unas palabras.</p>
@@ -1175,7 +1193,7 @@
 						</div>
 					</body></floatingText></div>
 			<div n="14" type="chapter" xml:id="ne0133_chap14">
-				<head>EL HIJO DE LA MÁSCARA </head>
+				<head xml:id="ne0133_head_017">EL HIJO DE LA MÁSCARA </head>
 				<p>Apenas empezaba a dormirse oyó la orden de levantarse. A las cinco todo el mundo tenía que estar de pie para ir a la capilla. Empezaron las quejas.</p>
 				<p>—Estoy mala.</p>
 				<p>—Me duele todo el cuerpo.</p>
@@ -1251,7 +1269,7 @@
 				<p>—Haces bien—contestó con su flema Felisa, como si fuese la encargada do fallar todos los pleitos—. A los hijos no se los quiere por su padre.... sino porque son nuestros... ¡Si no fuera por este querer qué pocos nacerían...!</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0133_chap15">
-				<head>EL GRITO PENETRANTE </head>
+				<head xml:id="ne0133_head_018">EL GRITO PENETRANTE </head>
 				<p>Todas iban cayendo, iban pasando, iban siendo sustituidas por otras. Todos los días, en el comedor o en el recreo, que era donde se reunían todas, se veían caras nuevas y se notaba la falta de las otras. A ella se le retrasaba el parto de un modo increíble. Aunque fuese cierto aquello de que las mujeres no tienen que llevar más que una sola cuenta y la equivocan siempre, los médicos que la reconocieron el día de su entrada no se debían equivocar.</p>
 				<p>Esperaba llena de inquietud y miedo el momento de su crisis, sin atreverse a desear salir bien de ella y sin decisión bastante para preferir la muerte. La habían dedicado para ayudar a las monjas en la limpieza de la clínica. Era el orgullo de la casa el poseer aquel gabinete médico-quirúrgico con tan maravilloso instrumental moderno y un servicio de asepsia tan completo; pero la limpieza de aquellas piezas era al mismo tiempo su desesperación. El miedo de las monjas a los módicos era grande y procuraban presentar ante ellos todas las cosas lo más limpias que les era posible. Sabían que los módicos desconfiaban de su limpieza. Sus medias bastas, sus zapatones, los hábitos oscuros de estameña, tan encubridores de mugre y manchas, predisponían contra ellas. Se sabía de antiguo el santo horror al agua que tenían las religiosas; y algunos de los jóvenes que habían viajado por Europa para estudiar en capitales del Extranjero, venían contando que las enfermeras asistían vestidas de blanco, compuestas y empolvadas que daba gusto verlas. Decían que la caridad no era austera y triste. ¡Pero valiente caridad ten diñan todas aquellas mujeres herejes, sin religión, que lo hacían todo por ganar un salario! Deslumbramientos de los médicos jóvenes, conquistados por la belleza y la coquetería, gracias a la cual les toleraban todo lo que en las pobres monjas les parecía mal.</p>
 				<p>Allí era donde Isabel veía más claramente toda la miseria de las hembras. No sólo las embarazadas sino las mujeres de todas las edades acudían a operarse. Era necesario toda la-escrupulosa limpieza y vigilancia de los médicos para evitar la propagación de enfermedades y terribles contagios. Se contaba el caso de que un médico que al operar a una enferma se había cortado con la lanceta. Se le vió palidecer y vacilar un momento. Los ayudantes intervinieron.</p>
@@ -1339,7 +1357,7 @@
 				<p>Llegó donde estaban las otras asiladas en el momento que salían para ir a la capilla. Algunas se fijaron en su semblante pálido y en su expresión de angustia y se sonrieron. Ya sabían lo que era aquéllo; por eso no se acercaban jamás a aquel lugar. Huían todas llenas de miedo ante la aparición acusadora de las pobres incluseras, que eran como un grito penetrante de su conciencia.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0133_chap16">
-				<head>LA MADRINA </head>
+				<head xml:id="ne0133_head_019">LA MADRINA </head>
 				<p>Sintió toda la mañana aquel dolor agudo <seg rend="italic">y</seg> punzante que se extendía desde los riñones a la delantera del vientre como un calambre; pero no se atrevió a quejarse ni a decir nada, temerosa de equivocarse y provocar el enojo de la comadrona, que se molestaba cuando la llamaban sin motivo.</p>
 				<p>Eran cada vez más continuos sus dolores y más violentos los saltos que daba en su vientre aquella criatura, demandando su entrada en el mundo, y a la que ya amaba familiarizada con ella a fuerza de sentirla bullir dentro de si.</p>
 				<p>De pronto le pareció sentir un chasquido dentro de su vientre y un dolor tan vivo que le hizo lanzar un grito. Acudieron las monjas y las compañeras alarmadas e intentaron levantaría; pero ella no se podía mover y los dolores no cesaban. ¿Cómo era posible un parto tan repentino? A la fuerza se había empeñado en disimular y aguantar hasta el último momento para ponerlas en un compromiso. Había muchos casos de las que no querían que las llevasen a la sala de partos. Una vez una viuda se empeñó en dar a luz sobre las rodillas de una compañera, alegando que mientras vivió su marido todos los hijos que tuvo habían nacido sobre las rodillas del padre. Era la costumbre de todas las paletas que se asustaban de verse en las camas destinadas a los partos.</p>
@@ -1477,7 +1495,7 @@
 				<p>El reglamento para ellas era una cosa intangible, tan inatacable como el misterio de la Trinidad.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0133_chap17">
-				<head>LA NUEVA VIDA </head>
+				<head xml:id="ne0133_head_020">LA NUEVA VIDA </head>
 				<p>Se deslizó fuera de la alcoba sin hacer ruido, dejando en la oscuridad a Fernando y a la niña, y se dirigió a la cocina.</p>
 				<p>—Buenos días.</p>
 				<p>Le respondió la voz soñolienta de una mucha chuela desgreñada y sucia, que trataba de encender la hornilla.</p>
@@ -1562,7 +1580,7 @@
 				<p>A la pobre madre se la oprimía el corazón. La niña tenía todo el aspecto de esos pajarillos a los que, para que no vuelen, se les retuerce un ala.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0133_chap18">
-				<head>LA GOTA DE LECHE </head>
+				<head xml:id="ne0133_head_021">LA GOTA DE LECHE </head>
 				<p>Formaba cola, con su hija en brazos, entre aquel grupo de mujeres que esperaban que se abriese el consultorio. Se reunían allí todas las semanas para que los médicos encargados de la Gota de Leche reconocieran a sus hijos, les dieran consejos y les señalaran la ración de alimento.</p>
 				<p>No había quien las convenciera de que sus hijos tenían bastante alimento con aquella media docena de biberones que les daban. Todas sufrían la pesadilla de creerlos con hambre, y sin hacer caso de los consejos de la ciencia para no fatigar el estómago de los niños con más cantidad de la que podían digerir, todas procuraban darles papillas, harina lacteada o añadir a la ración otro poco de leche. Eran raras las madres que aparecían sonrientes con sus hijos saludables y lozanos. La mayoría llevaba en los brazos criaturas pálidas, de ojos tristes, con los cuerpecillos flácidos, que se doblaban entre sus manos como peleles.</p>
 				<p>Todas las conversaciones eran un lamento, entre el que disonaba la jactancia de las pocas felices, en cuya cacareada disciplina no creía ninguna, porque todas tenían su secreto: el secreto de su desobediencia.</p>
@@ -1647,7 +1665,7 @@
 				<p>—No.... no la veré más. Morirá ahí, como murió mi madre.... como murió su otra hermana.... como moriremos nosotras...</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0133_chap19">
-				<head>LA <seg rend="italic">FUSIL</seg> </head>
+				<head xml:id="ne0133_head_022">LA <seg rend="italic">FUSIL</seg> </head>
 				<p>Los temores de Agueda se habían cumplido. La pobre anciana no resistió la operación. Isabel aprovechaba todos los momentos para estar a su lado cuidándola en la fiebre nerviosa que la tenía enferma en la cama.</p>
 				<p>Dejaba la niña en casa de la vecina que ocupaba el piso enfrente del suyo, encargándole que le diese el biberón; bacía aprender a la greñuda y arisca muchacha la lección, en la que ella ponía toda la buena voluntad que tienen las sirvientes para engañar a los señoritos.</p>
 				<p>—Dices que no he hecho más que irme. ¿Sabes?</p>
@@ -1699,7 +1717,7 @@
 				<p>—Y lo peor es que Pepita también se va a casar y me quedaré sin esto... Yo espero que me den el W. C... Tengo allí mi solicitud...; pero si tarda y no me llevan a un asilo me moriré el día que menos lo esperen.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0133_chap20">
-				<head>EL TALISMÁN DE LA REINA </head>
+				<head xml:id="ne0133_head_023">EL TALISMÁN DE LA REINA </head>
 				<p>A pesar de su malestar, Isabel no se atrevía a echar a la calle a aquella mujer. La había conocido casa de la vecina suya donde dejaba la niña cuando tenía que salir.</p>
 				<p>Aunque Paquita era pobre la prendera no dejaba de visitarla, tal vez porque le gustaba el cariñoso recibimiento que le hacía, agradecida a la lealtad con que seguía guardándole las mismas consideraciones que en los tiempos de su opulencia.</p>
 				<p>Por más que estuviese Isabel acostumbrada a ver la miseria de las obreras, de las sirvientes y de las mujeres de la clase media, la impresionaba profundamente la miseria de su vecina. Había en ella algo superior a todas las otras desgracias, algo de ese prestigio de privilegiadas que hace que las gentes hambrientas compadezcan las desgracias de las majestades caídas, de las princesas arruinadas, aunque en su caída y su ruina posean yates y palacios.</p>
@@ -1806,7 +1824,7 @@
 				<p>—Descuide usted, hija mía, su marido no se enterará si usted no da lugar... Usted cumplirá... Ya conozco yo esto...; la de todas. Las mujeres tenemos que andar siempre con escondites. Por algo dice el refrán que: «al hombre del codo y no del todo».</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0133_chap21">
-				<head>LA PROTECTORA </head>
+				<head xml:id="ne0133_head_024">LA PROTECTORA </head>
 				<p>Cada vez era más insostenible la situación de Isabel, La enfermedad lenta de la niña, la consunción, el raquitismo, que iba haciendo su obra de agotamiento ante sus ojos, sin que todo su esfuerzo lo pudiera detener, la desesperaba. Estaba sola para sufrir su dolor. Sus amigas le decían que era aprensiva <seg rend="italic">y</seg> exagerada con su hija. Aquella opinión había sido muy del agrado de Fernando, que se amparaba de ella egoístamente, para no tener que inquietarse.Se enfadaba cuando ella le hablaba de sus temores.</p>
 				<p>—Has tomado la costumbre de estarte siempre quejando: cuando no es por una cosa es por otra; no se puede parar aquí.</p>
 				<p>Isabel callaba. Estaba cada día más sola. En aquella época en la que sólo veia a Fernando algunos días de la semana, estaba más unida a el que ahora. Los minutos que le dedicaba eran para ella, para ocuparse de su amor, de su alma; ahora estaban llenos de cosas externas, de cuidado, de preocupaciones. A veces, en fugitivos destellos de ternura, él le solía decir:</p>
@@ -1848,7 +1866,7 @@
 				<p>El peor mal de las mujeres solas era el envejecer. Así como las ricas son pródigas de su fortuna, ellas debían serlo de su vida; derrocharla con la alegría de la juventud para no llegar a la vejez. Veía cómo era necesario el sacrificio para hacer algún ahorro a la mujer pobre, aunque por un singular contraste ellas eran más dadivosas, más llenas de generosidad que todas esas damas ricas que parecen ejercer la caridad, y están encastilladas en su egoísmo sin ser capaz de socorrer y remediar una miseria. Ellas, las pobres, partían con las necesitadas sus míseros haberes, mientras las otras, que pasaban por las protectoras, no daban jamás nada de los suyos.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0133_chap22">
-				<head>SEPARACIÓN </head>
+				<head xml:id="ne0133_head_025">SEPARACIÓN </head>
 				<p>¿Era vivir aquella vida suya desde la muerte de Fernandita?</p>
 				<p>Se le había apagado entre los brazos por agotamiento de la vida y se la habían quitado de ellos cuando cansada de sufrir y llorar, medio entontecida por el dolor ya no se daba cuenta de nada.</p>
 				<p>Aquellos días estaba la puerta abierta, y todas las vecinas, las conocidas, las antiguas amigas entraban y salían atormentándola con sus preguntas y con sus consejos. Cada una le contaba un caso semejante al suyo, una curación milagrosa de un niño desahuciado por la ciencia y que se salvó con una fórmula sencilla: una untura, una oración.</p>
@@ -1884,7 +1902,7 @@
 				<p>Un día él salió y no volvió más. Le anunció en una carta que no volvería. Le dejaba la casa con los cuatro trastos viejos, que no bastaban para atender a sus deudas, y con cuya venta no tendría para comer ocho días. Se creía así un perfecto caballero que podía vanagloriarse de su conducta.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0133_chap23">
-				<head>LA CAZA </head>
+				<head xml:id="ne0133_head_026">LA CAZA </head>
 				<p>Volvía de pasar la velada con Agueda y Joaquín. Había tenido miedo de ir a estorbarles con su visita, recordando cuánto le disgustaba a Hernando que recibiera a sus amigas; pero se tranquilizó al ver la cariñosa acogida que le dispensaban, la insistencia para que volviera y el gusto con que los dos se esforzaban por distraerla y alentarla.</p>
 				<p>La unión de Agueda y Joaquín no era de esas uniones vulgares, precipitadas, en las que el ardor de la juventud es el único factor que las regula. Era la unión formada por el mutuo afecto, la semejanza de gustos y la estimación. No había entre ellos aquel recelo que sentía Hernando de que Isabel pudiera formular quejas o hacer comparaciones. Era un amor firme, seguro, sincero. Los dos trabajaban con alegría y la casa estaba llena de luz y de bienestar.</p>
 				<p>Doña Enriqueta seguía ocupando su habitación, muy contenta de tener su deseado empleo, que le producía para poderse cuidar y del que se enorgullecía hasta el punto de haberse mandado hacer tarjetas Isabel trataba de ocultar su mala situación y defender su vida alquilando habitaciones en su casa, aunque la modestia del pisito no atraía los huéspedes y cada semana estaba obligada a vender alguno de sus escasos muebles: la mesa del comedor, la artesa, la cama grande, los colchones.</p>
@@ -1938,7 +1956,7 @@
 				<p>—¡Bah! Dentro de cien años todas estaremos calvas.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0133_chap24">
-				<head>PESADILLA </head>
+				<head xml:id="ne0133_head_027">PESADILLA </head>
 				<p>Estuvo enferma y tuvo que guardar cama varios díasde resultas del susto y de la vergüenza pasadas. No le costó poco trabajo convencer al inspector de su inocencia. Aquellos hombres le parecía que no tenían lamisión de amparar a los buenos, sino de perseguir a los malos, tratando de hacerlos mas malos cada vez para perseguirlos con más razón.</p>
 				<p>No quiso avisar a Agueda de su enfermedad, ni de lo sucedido, que ocultaba como uno, vergüenza. Pasó aquellos días sola, presa de la fiebre, haciendo unarecapitulación de su vida, una especie de balance, del que le quedaba un <seg rend="italic">debe</seg> insuperable ya. Veía en su imaginación una multitud de mujeres vestidas de luto que daban vueltas a la ciudad en una manifestación imponente y solemne, pero silenciosa; una manifestación sin objeto ni conclusiones, andando como quien callejea todo el día sin pararse a comer ni a descansar. Veía a las mujeres como seres prostituidos y empequeñecidos por el solo hecho de ser mujeres, seressin personalidad, rendidos, disminuidos. ¿Cómo lo podría ella explicar? Eran unos seres con los que se comete injusticia que nadie comprende en su magnitudporque no ha sensibilidad que la reconozca. Era desesperante que las mujeres no merecieran nada por su personalidad; todo se lo tenían que pedir a loshombres, a sus enemigos, a sus vejadores, y sólo por concesión especial y condescendencia de ellos lo podían obtener.</p>
 				<p>Advertía que aunque las mujeres no sean las queridas del hombre, siempre fas tratan éstos como a queridas, y hasta en su respeto hay más desdén que consideración, como si las respetadas no merecieran la pena, de concederles los favores.</p>
@@ -1954,7 +1972,7 @@
 				<p>Se decidió a ir a una agencia de colocaciones; se ofrecería como señora de compañía.... ama de gobierno.... y si no, doncella o cocinera. Había que someterse y empezar su descenso: primero sirviente; después mendiga...; luego...</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0133_chap25">
-				<head>EL AMA SECA </head>
+				<head xml:id="ne0133_head_028">EL AMA SECA </head>
 				<p>Caminaba lentamente como si quisiera retardar el momento de la llegada. Otra vez había caminado así, cuando entró en la Maternidad. Le habían buscado colocación en la Agencia. Se necesitaba un ama seca casa de unos burgueses ricachones y no tuvo más remedio que aceptar aquella servidumbre penosa: tenía que cuidar tres niños mimados y consentidos, que la maltrataban de palabra y de obra. En vez de ser respetada por ellos había, de sufrir todas sus impertinencias, sus faltas de respeto y contribuir a que desde pequeños se creyeran superiores y dominantes.</p>
 				<p>Aceptó su puesto en la mesa de la servidumbre, su camaradería con los criados, que la miraban con recelo al verla tan poco comunicativa.</p>
 				<p>—Se creerá que es de mejor casta—comentaba un lacayo, herido por su desvío.</p>
@@ -1978,7 +1996,7 @@
 				<p>—¿Para qué?—había respondido la señora—. No vale la pena de cambiar. Casi todos son lo mismo, y al fin y al cabo mi marido me estima. Los otros no me estimarían siquiera.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0133_chap26">
-				<head>LA BORRACHA </head>
+				<head xml:id="ne0133_head_029">LA BORRACHA </head>
 				<p>Había llevado los niños al teatro de polichinelas en aquella tarde lluviosa, y los acompañaba ya a su casa oyendo los comentarios de las pequeñuelos respecto a las comedias hechas por aquellos muñecos que tomaban tanta vida en su representación.</p>
 				<p>Era lo que más la molestaba de todo aquellas tardes en que tenía que llevar a los niños al teatro o al cinematógrafo. En el primero tenía miedo de encontrar a personas que la conociesen; en el segundo hallaba demasiados recuerdos: el recuerdo de su primer beso. ¡Si encontrara a Fernando acompañando a otra!</p>
 				<p>A veces sentía el deseo de verlo, fuese como fuese. Recordaba aquella historia del hijo de la máscara, que tan honda impresión hizo en su espíritu cuando estaba en la Casa de Maternidad: la evocación de aquella mujer tratando de hallar al padre de su hijo entre todos, y declarándose, al fin, impotente porque se le habían borrado sus facciones y ya no lo reconocería. La aterraba pensar que dentro de algunos años ya sería Fernando un desconocido para ella, y que podrían verse dentro del olvido, de la indiferencia, después de sus días de pasión. Era cruel sobrevivirse después de una crisis así.</p>
@@ -2017,7 +2035,7 @@
 				<p>Era inútil querer acallar aquellas barraqueras ruidosas, e inútil tratar de consolarlos; los llevó a su casa casi a rastras, deseosa de que sucediera lo que había de suceder y de que se desenlazase su situación.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0133_chap27">
-				<head>FINAL </head>
+				<head xml:id="ne0133_head_030">FINAL </head>
 				<p>El final tenía que llegar .Fué breve.</p>
 				<p>La señorona se indignó del trato que aquella mujer, considerada tan inferior, le había dado a sus hijos. Su marido se unió a ella por única vez con entusiasmo, unánimes los dos en las palabras inmundas y en los desprecios enconados.</p>
 				<p>Ella entonces se rebeló aún más, y como una venganza y una justificación les lanzó al rostro toda su historia, de un modo entrecortado, incoherente; poniendo de manifiesto su engaño, su decadencia, la indignación que había sufrido día a día.</p>

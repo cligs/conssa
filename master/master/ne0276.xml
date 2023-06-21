@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El abuelo</title>
-				<title type="sub">Novela en cinco jornadas</title>
+				
 				<title type="short">Abuelo</title>
-				<title type="idno">
-					<idno type="bne">XX2127822</idno>
-					<idno type="viaf">196906518</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1014802</idno>
-					<idno type="viaf">71395987</idno>
-					<name type="short">Galdos</name>
-					<name type="full">Benito Pérez Galdós</name>
+					<name type="short" ref="#Galdos"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">11926</measure>
@@ -141,13 +131,65 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0276</idno>
+						<idno type="cligs">ne0276</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Cervantes Virtual, <date when="2001">2001</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc9k489"/>, <ref target="http://www.cervantesvirtual.com/obra/el-abuelo-novela-en-cinco-jornadas--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Est. Tip. de la Viuda é Hijos de Tello, <date when="1897">1897</date></bibl>
-				<bibl type="edition-first"><date when="1897">1897</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El abuelo</title>
+					<title type="sub">Novela en cinco jornadas</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2127822.html">XX2127822</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/196906518/">196906518</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5823741/">Q5823741</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4409543-0">4409543-0</idno>
+				</idno>
+				</title>
+					<author xml:id="Galdos">
+						<name type="full"><forename>Benito</forename> <surname>Pérez Galdós</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9760 - IO 9765">IO 9760 - IO 9765</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118641573">118641573</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q189869/">Q189869</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1014802.html">XX1014802</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/71395987/">71395987</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Cervantes Virtual, <date when="2001">2001</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmc9k489"/>, <ref target="http://www.cervantesvirtual.com/obra/el-abuelo-novela-en-cinco-jornadas--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Est. Tip. de la Viuda é Hijos de Tello, <date when="1897">1897</date></bibl>
+					<bibl type="edition-first"><date when="1897">1897</date><idno source="k10plus" type="ppn" n="464938821" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464938821"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">novela en cinco jornadas</title> <date when="1897">1897</date>, <publisher>Viuda é Hijos de Tello</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464938821" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464938821"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Abuelo</title> <date when="1912">1912</date>, <publisher>Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="137708213X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=137708213X"/> </bibl>
+						<bibl type="further-edition"><title type="main">El abuelo</title>: 	<title type="sub">Pérez Galdós, B[enito] ; Novela en 5 jornadas. (10,000)</title> <date when="1912">1912</date>, <publisher>Perlado, Páez &amp; Co.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="443489297" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=443489297"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">novela en 5 jornadas</title> <date when="1924">1924</date>, <publisher>Hernando [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584590695" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584590695"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="1925">1925</date>, <publisher/> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="81570237X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=81570237X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="1925">1925</date>, <publisher/> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="596050097" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=596050097"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">drama en 5 actos ; arreglo de la novela del mismo título</title> <date when="1927">1927</date>, <publisher>Hernando [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584578474" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584578474"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">novela en 5 jornadas</title> <date when="1928">1928</date>, <publisher>Libr. y Casa Ed. Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464946387" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464946387"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">novela en 5 jornadas</title> <date when="1940">1940</date>, <publisher>Libr. y Casa Ed. Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="723919321" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=723919321"/> </bibl>
+						<bibl type="further-edition"><title type="main">El abuelo</title> <date when="1954">1954</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="075884445" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=075884445"/> </bibl>
+						<bibl type="further-edition"><title type="main">El abuelo</title>: 	<title type="sub">Novela en 5 jornadas</title> <date when="1956">1956</date>, <publisher>Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="41431526X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=41431526X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Teatro selecto de Pérez Galdós</title>: 	<title type="sub">Realidad, El abuelo, Doña perfecta</title> <date when="1972">1972</date>, <publisher>Escelicer</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1641058579" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1641058579"/> 		<idno type="isbn" n="8423810712"/></bibl>
+						<bibl type="further-edition" xml:lang="cat"><title type="main">El abuelo</title> <date when="1979">1979</date>, <publisher>Libreria y Casa Ed. Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1646635353" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1646635353"/> 		<idno type="isbn" n="8471550083"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="1983">1983</date>, <publisher>Libreria y Casa Ed. Hernando</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="246479647" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=246479647"/> 		<idno type="isbn" n="8471550083"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">novela en cinco jornadas</title> <date when="1986">1986</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="040265765" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=040265765"/> 		<idno type="isbn" n="8420601861"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">(novela en cinco jordanas)</title> <date when="1993">1993</date>, <publisher>Cabildo Insular de Gran Canaria</publisher> <pubPlace>Las Palmas</pubPlace> 		<idno type="ppn" n="1602939608" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1602939608"/> 		<idno type="isbn" n="8486127971"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">(novela en cinco jornadas)</title> <date when="1993">1993</date>, <publisher>Ed. del Cabildo Insular de Gran Canaria</publisher> <pubPlace>Las Palmas</pubPlace> 		<idno type="ppn" n="153646748" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=153646748"/> 		<idno type="isbn" n="8486127971"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title>: 	<title type="sub">[adaptación de "El abuelo" de Galdoós]</title> <date when="1998">1998</date>, <publisher>Nickel Odeon;Televisión Española</publisher> <pubPlace>[S.l., Span.]</pubPlace> 		<idno type="ppn" n="46734809X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46734809X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="1999">1999</date>, <publisher>Columbia Tristar Home Video</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="118775322X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=118775322X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="1999">1999</date>, <publisher>Columbia Tristar Home Video</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="515334723" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=515334723"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="2003">2003</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="39379119X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=39379119X"/> 		<idno type="isbn" n="842063817X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="2013">2013</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="769356354" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=769356354"/> 		<idno type="isbn" n="8437631599;9788437631592"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo, Casandra, El caballero encantado, La razón de la sinrazón</title> <date when="2016">2016</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="153983879X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=153983879X"/> 		<idno type="isbn" n="9788415255420"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="2016">2016</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="860646351" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=860646351"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El abuelo</title> <date when="2016">2016</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="859750345" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=859750345"/> 		<idno type="isbn" n="9788415255420"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +199,14 @@
 				<p>En medio de una trama folletinesca, emerge la vigorosa figura de don Rodrigo de Arista-Potestad, conde de Albrit, que es una encarnación del sentimiento del honor y, a la vez, un ser noble, humano y generoso. Tiene dos nietas, Nell y Dolly, una legítima y otra bastarda; todo su empeño está en descubrir la identidad de cada una. Al final, la única que le brinda su afecto cuando todos los demás le abandonan es Dolly, la ilegítima.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9761" key="IO 9761" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">8</term>
 					<term type="author.continent">Europe</term>
@@ -183,7 +233,7 @@
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon">Antologías; Ficción clásica; Antologías ; Antigua y clásica; Antologías</term>
 					<term type="text.genre.subgenre.edit" resp="epublibre">Drama, Realista</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">moralist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
@@ -222,13 +272,14 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-27" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 
 			<div>
-				<head>Prólogo</head>
+				<head xml:id="ne0276_head_000">Prólogo</head>
 				<p>A los lectores que con tanta indulgencia como constancia me favorecen, debo manifestarles que en la composición de EL ABUELO he querido halagar mi gusto y el de ellos, dando el mayor desarrollo posible, por esta vez, al procedimiento dialogal, y contrayendo a proporciones mínimas las formas descriptiva y narrativa. Creerán, sin duda, como yo, que en esto de las formas artísticas o literarias <seg rend="italic">todo el monte es orégano</seg>, y que sólo debemos poner mal ceño a lo que resultare necio, inútil o fastidioso. Claro es que si de los pecados de tontería o vulgaridad fuese yo, en esta o en otra ocasión, culpable, sufriría resignado el desdén de los que me leen; pero al maldecir mi inhabilidad, no creería que el camino es malo, sino que yo no sé andar por él.</p>
 				<p>El sistema dialogal, adoptado ya en <seg rend="italic">Realidad</seg>, nos da la forja expedita y concreta de los caracteres. Estos se hacen, se componen, imitan más fácilmente, digámoslo así, a los seres vivos, cuando manifiestan su contextura moral con su propia palabra, y con ella, como en la vida, nos dan el relieve más o menos hondo y firme de sus acciones. La palabra del -VI- autor, narrando y describiendo, no tiene, en términos generales, tanta eficacia, ni da tan directamente la impresión de la verdad espiritual. Siempre es una referencia, algo como la <seg rend="italic">Historia</seg>, que nos cuenta los acontecimientos y nos traza retratos y escenas. Con la virtud misteriosa del diálogo parece que vemos y oímos sin mediación extraña el suceso y sus actores, y nos olvidamos más fácilmente del artista oculto; pero no desaparece nunca, ni acaban de esconderle los bastidores del retablo, por bien construidos que estén. La impersonalidad del autor, preconizada hoy por algunos como sistema artístico, no es más que un vano emblema de banderas literarias, que si ondean triunfantes, es por la vigorosa personalidad de los capitanes que en su mano las llevan.</p>
 				<p>El que compone un asunto y le da vida poética, así en la Novela como en el Teatro, está presente siempre: presente en los arrebatos de la lírica, presente en el relato de pasión o de análisis, presente en el Teatro mismo. Su espíritu es el fundente indispensable para que puedan entrar en el molde artístico los seres imaginados que remedan el palpitar de la vida.</p>
@@ -239,7 +290,7 @@
 			</div>
 			<div>
 				<castList>
-					<head>DRAMATIS PERSONAE</head> 
+					<head xml:id="ne0276_head_001">DRAMATIS PERSONAE</head> 
 					<castItem>D. RODRIGO DE ARISTA-POTESTAD, <seg rend="italic">Conde de Albrit, señor de Jerusa y de Polan, etc., abuelo de</seg> </castItem>
 					<castItem>LEONOR <seg rend="italic">(Nell), y</seg> </castItem>
 					<castItem>DOROTEA <seg rend="italic">(Dolly).</seg> </castItem>
@@ -263,9 +314,9 @@
 		</front>
 		<body>
 			<div type="act">
-				<head>Jornada I</head>
+				<head xml:id="ne0276_head_002">Jornada I</head>
 				<div n="1" type="chapter" xml:id="ne0276_chap1">
-					<head>Escena I</head>
+					<head xml:id="ne0276_head_003">Escena I</head>
 					<p><stage>Terraza en la <seg rend="italic">Pardina</seg>. A la derecha, la casa; al fondo, frondosa arboleda de frutales; a lo lejos, el mar. <seg rend="normal">GREGORIA</seg>, junto a la mesa de piedra, desgranando judías en la falda; <seg rend="normal">VENANCIO</seg>, que viene por la huerta y se entretiene con un criado, observando los frutales. En la mesa una cesta de hortalizas.</stage></p>
 					<sp>
 						<speaker>GREGORIA.-</speaker>
@@ -463,7 +514,7 @@
 					</sp>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0276_chap2">
-					<head>Escena II</head>
+					<head xml:id="ne0276_head_004">Escena II</head>
 					<p><stage><seg rend="normal">GREGORIA</seg>, <seg rend="normal">VENANCIO</seg>; <seg rend="normal">SENÉN</seg>, de veintiocho años, más bien más que menos, vestido a la moda, con afectada elegancia de plebeyo que ha querido cambiar rápidamente y sin estudio la grosería por las buenas formas. Su estatura es corta; sus facciones aniñadas, bonitas en detalle, pero formando un conjunto ferozmente antipático. Pelito rizado; chapas carminosas en las mejillas; bigote rubio retorcido en sortijilla. Lucha por su existencia en el terreno de la intriga, olfateando las ocasiones ventajosas y utilizando la protección y gratitud de las personas a quienes ha prestado servicios de ínfima calidad, sobre los cuales guarda cuidadoso secreto. Ya no se acuerda de cuando andaba descalzo y harapiento por las mal empedradas calles de Jerusa. Nacido de la <seg rend="italic">Coscoja</seg>, viuda pobre que adormecía sus penas emborrachándose, Senén vivió de la caridad pública hasta que fue recogido por los Condes de Laín, que lo pusieron en la escuela y después le tomaron a su servicio. Fue pinche de cocina, escribiente, ayuda de cámara, hasta que su agudeza, reforzada por ardiente ambición de dinero, le emancipó de la servidumbre. En diversos trabajos y granjerías, hubo de probar fortuna: viajante de comercio, corredor de vinos, administrador de periódicos, y por fin la Condesa le abrió los espacios de la Administración pública con un destinillo de Hacienda, al que siguieron ascensos, comisiones y otras gangas. Compensa la cortedad de su inteligencia con su constancia y sagacidad en la adulación, su olfato de las oportunidades, y su arte para el pordioseo de recomendaciones. Su egoísmo toma más bien formas solapadas que brutales, y para disimularlo, el instinto, más que la voluntad, le sugiere la economía, y todo el ahorro compatible con el lucimiento y afeite de su persona. Guarda su dinero, y se apropia todo lo que sin peligro puede apropiarse. En lo que no es ostensible, o sea en el comer, gasta lo indispensable, reservando casi todo su peculio para el <seg rend="italic"><seg type="foreign" xml:lang="la">coram vobis</seg></seg>. Su vicio es la buena ropa, y su pasión las alhajas; lleva constantemente tres sortijas de piedras finas en el meñique de la mano izquierda, y al llegar a Jerusa ha sacado a relucir un alfiler de corbata, que es ¡ay!, la desazón de sus compatriotas de ambos sexos.</stage></p>
 					<sp>
 						<speaker>SENÉN.-</speaker>
@@ -872,7 +923,7 @@
 					</sp>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0276_chap3">
-					<head>Escena III</head>
+					<head xml:id="ne0276_head_005">Escena III</head>
 					<p><stage>Bosque en las inmediaciones de Jerusa, formado de corpulentos robles, hayas y encinas. Lo atraviesa un tortuoso sendero, donde se ven los surcos trazados por los carros del país. Por el Norte, formidable cantil de roca y conglomerado, en cuyos cimientos baten las olas del mar; al Sur cierra el paisaje la espesura de la vegetación; hacia el Oeste serpentea y se subdivide el sendero, atravesando algunas calvas y espesos matorrales.</stage></p>
 					<p><stage><seg rend="normal">LEONOR</seg> y <seg rend="normal">DOROTEA</seg>, niñas de quince y catorce años respectivamente, lindas, graciosas, de tipo aristocrático, la tez bronceada por el aire marino y el sol. Son negros sus ojos, rasgados, melancólicos; negro también su cabello, peinado al descuido en moño alto. Se lo adornan con flores silvestres, que van clavando en él como se clavan los alfileres en un acerico. La diferencia de edad, un año y meses, apenas en ellas se distingue, y por gemelas las tienen muchos, viendo la semejanza de sus rostros, y la igualdad del talle y estatura. Son ágiles, corretonas, traviesas; dos diablillos encantadores. Visten, con sencillez graciosa y elegancia no aprendida, trajecitos claros, cortados y cosidos en Jerusa. La modestia da más realce a su gentileza vivaracha, y les imprime cierta gravedad dulce cuando están quietas. Desde la niñez, su madre, irlandesa, las nombraba con los diminutivos ingleses <seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>, y estos nombres exóticos prevalecieron en Madrid como en Jerusa. Las acompaña y juega y brinca con ellas un perrito canelo, de pelo largo y fino, hocico muy inteligente, rabo que parece un abanico. Atiende por <seg rend="italic">Capitán</seg>.</stage></p>
 					<sp>
@@ -1193,7 +1244,7 @@
 					</sp>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0276_chap4">
-					<head>Escena IV</head>
+					<head xml:id="ne0276_head_006">Escena IV</head>
 					<p><stage><seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>, <seg rend="normal">DON RODRIGO DE ARISTA-POTESTAD, CONDE DE ALBRIT, MARQUÉS DE LOS BAZTANES, SEÑOR DE JERUSA Y DE POLAN, GRANDE DE ESPAÑA</seg>, etc. Es un hermoso y noble anciano de luenga barba blanca y corpulenta figura, ligeramente encorvado. Viste buena ropa de viaje, muy usada; calza gruesos zapatones y se apoya en garrote nudoso. Revela en su empaque la desdichada ruina y acabamiento de una personalidad ilustre.</stage></p>
 					<sp>
 						<speaker>NELL.-</speaker>
@@ -1331,7 +1382,7 @@
 					</sp>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0276_chap5">
-					<head>Escena V</head>
+					<head xml:id="ne0276_head_007">Escena V</head>
 					<p><stage><seg rend="normal">NELL</seg>, <seg rend="normal">DOLLY</seg>; <seg rend="normal">EL CONDE</seg>; <seg rend="normal">SENÉN</seg>, que ha presenciado de lejos, oculto tras un árbol, el encuentro del abuelo y sus nietas.</stage></p>
 					<sp>
 						<speaker>SENÉN.-</speaker>
@@ -1649,7 +1700,7 @@
 					</sp>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0276_chap6">
-					<head>Escena VI</head>
+					<head xml:id="ne0276_head_008">Escena VI</head>
 					<p><stage>Sala baja en la Pardina. En paredes, techo y muebles, aspecto de venerable antigüedad, bien conservada.</stage></p>
 					<p><stage><seg rend="normal">GREGORIA</seg> y <seg rend="normal">VENANCIO</seg>.</stage></p>
 					<sp>
@@ -1698,7 +1749,7 @@
 					</sp>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0276_chap7">
-					<head>Escena VII</head>
+					<head xml:id="ne0276_head_009">Escena VII</head>
 					<p><stage><seg rend="normal">GREGORIA</seg>, <seg rend="normal">EL CONDE</seg>, las dos niñas, <seg rend="normal">SENÉN</seg> y <seg rend="normal">VENANCIO</seg>.</stage></p>
 					<sp>
 						<speaker>GREGORIA.-</speaker>
@@ -1778,7 +1829,7 @@
 					</sp>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0276_chap8">
-					<head>Escena VIII</head>
+					<head xml:id="ne0276_head_010">Escena VIII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg> y <seg rend="normal">VENANCIO</seg>. Larga pausa. <seg rend="normal">EL CONDE</seg> inclina la cabeza sobre el pecho y se cubre los ojos con la mano. <seg rend="normal">VENANCIO</seg> permanece en pie, a bastante distancia, contemplándole.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -1886,7 +1937,7 @@
 					</sp>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0276_chap9">
-					<head>Escena IX</head>
+					<head xml:id="ne0276_head_011">Escena IX</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">VENANCIO</seg> y el <seg rend="normal">CURA</seg>, hombrachón de buen año; de aventajadas dimensiones, enormemente barrigudo, sin carecer por eso de cierta agilidad y soltura de miembros. Su cara es arrebolada, su boca risueña, su nariz como pico de garbanzo, sus ojos pillines. Usa gafas de un azul muy claro, que se le corren sobre el caballete. Viene a palo seco, es decir, sin balandrán, por ser buen tiempo. Es limpio, y la sarga de su sotana, pulcra y reluciente, ciñe y modela sin arrugas la redondez del abdomen, bien atacados todos los botoncitos que corren desde el cuello hasta la panza. Un gorro negro alto, con caída de fleco, y paraguas de reglamento, que así le sirve para el sol como para la lluvia. Entra en la casa y en la habitación presuroso metiendo bulla, y se dirige al <seg rend="normal">CONDE</seg> con los brazos abiertos.</stage></p>
 					<sp>
 						<speaker>EL CURA.-</speaker>
@@ -2006,7 +2057,7 @@
 					</sp>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0276_chap10">
-					<head>Escena X</head>
+					<head xml:id="ne0276_head_012">Escena X</head>
 					<p><stage>Dichos; <seg rend="normal">GREGORIA</seg>, vestida para salir. Trae servicio de café.</stage></p>
 					<sp>
 						<speaker>GREGORIA.-</speaker>
@@ -2076,7 +2127,7 @@
 					<p><stage>(Vase <seg rend="normal">VENANCIO</seg>.)</stage></p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0276_chap11">
-					<head>Escena XI</head>
+					<head xml:id="ne0276_head_013">Escena XI</head>
 					<p><stage><seg rend="normal">EL CONDE</seg> y <seg rend="normal">EL CURA</seg>.</stage></p>
 					<sp>
 						<speaker>EL CURA.-</speaker>
@@ -2156,7 +2207,7 @@
 					</sp>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0276_chap12">
-					<head>Escena XII</head>
+					<head xml:id="ne0276_head_014">Escena XII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">EL CURA</seg>; <seg rend="normal">EL MÉDICO</seg>, joven, pequeñito, de conjunto simpático y mirar inteligente. Viene de levita y sombrero de copa, el cual revela en su forma de ser prenda de respeto, usada tan sólo de año en año, en ocasiones muy solemnes.</stage></p>
 					<sp>
 						<speaker>EL CURA.-</speaker>
@@ -2316,9 +2367,9 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Jornada II</head>
+				<head xml:id="ne0276_head_015">Jornada II</head>
 				<div n="13" type="chapter" xml:id="ne0276_chap13">
-					<head>Escena I</head>
+					<head xml:id="ne0276_head_016">Escena I</head>
 					<p><stage>Sala baja en la casa del <seg rend="normal">SEÑOR ALCALDE DE JERUSA, D. JOSÉ MARÍA MONEDERO</seg>, decorada con lujo barato, en toda la plenitud de la cursilería con dinero. Cubren las paredes paisajes al óleo, de los que en parejas, con marco y todo, se venden al aire libre en las calles céntricas de Madrid, obra de artistas desdichados. <seg rend="italic">Hacen juego</seg> con estos mamarrachos, cromos de cacerías o de revistas navales, figuras de bazar, fruslerías bordadas, mil laborcillas fáciles de mujer, de esas cuya explicación y dibujo traen en su sección de recreos útiles los periódicos de modas. Flores de trapo, en tiestos de cartón, exhalan en los ángulos su fragancia de cola y tintes descompuestos. Piano desafinado, musiquero, retratos prendidos en esterillas japonesas, redoma con peces.</stage></p>
 					<p><stage><seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>; <seg rend="normal">LUCRECIA, CONDESA VIUDA DE LAÍN</seg>. Es mujer hermosa, de treinta y cuatro años, del tipo que comúnmente llamamos <seg rend="italic">interesante</seg>, mezcla feliz de belleza, dulzura y melancolía; castaño el cabello, el rostro alabastrino, de un perfil elegante, precioso modelo de raza anglo-sajona, recriada en América. Sus ojos son grandes, obscuros, con ráfagas de oro, y el mirar sereno y triste, como de tigre enjaulado que dormita sin acordarse de que es fiera. En su talle esbelto se inicia la gordura, fácil de corregir todavía con la ortopedia escultórica del corsé. Viste con elegancia traje de luto. En su habla, apenas se percibe el acento extranjero.</stage></p>
 					<sp>
@@ -2364,7 +2415,7 @@
 				</div>
 
 				<div n="14" type="chapter" xml:id="ne0276_chap14">
-					<head>Escena II</head>
+					<head xml:id="ne0276_head_017">Escena II</head>
 					<p><stage>Dichas; <seg rend="normal">LA ALCALDESA</seg>, señora enjuta y menudita, que no tiene en aquel momento más preocupación que aparecer fina, y este singular estado de su espíritu, con la tirantez consiguiente, se revela en todos sus actos, en sus palabras melosas, y hasta en los mohines estudiados de su boca y nariz. Viste bata azul, elegante, que le han enviado de Madrid. Poco después de ella entra <seg rend="normal">EL ALCALDE</seg>, señorón macizo, sanote y jovial que, al contrario de su mujer, pone todo su esmero en parecer muy bruto, dejando al descubierto, desnudo de toda gala retórica, su natural llano y la tosca armazón de su ser moral. Entiende que los hombres deben ser <seg rend="italic">claros</seg>, cada cual mostrándose como Dios le ha hecho. De origen humildísimo, empezó a sacar el pie del lodo con la carretería; trabajó honradamente después en distintas industrias, hasta que halló su suerte en la fabricación de pastas para sopa. Su laboriosidad le hizo rico, y la herencia de un tío de América le ascendió a millonario. Viste levita, y su chistera, que usa con frecuencia por razón de su cargo, es sin disputa la mejor del pueblo. Su esposa cuida de renovar esta prenda con la precisa oportunidad para que no sea ridícula.</stage></p>
 					<sp>
 						<speaker>LA ALCALDESA.-</speaker>
@@ -2560,7 +2611,7 @@
 					</sp>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0276_chap15">
-					<head>Escena III</head>
+					<head xml:id="ne0276_head_018">Escena III</head>
 					<p><stage>Tocador de <seg rend="normal">LA ALCALDESA</seg>.</stage></p>
 					<p><stage><seg rend="normal">LUCRECIA</seg>, <seg rend="normal">DOLLY</seg> y <seg rend="normal">NELL</seg>; una criada extranjera que ayuda a vestir a su ama y no habla; después <seg rend="normal">LA ALCALDESA</seg>.</stage></p>
 					<sp>
@@ -2686,7 +2737,7 @@
 					<p><stage>(En la puerta del comedor encuentran al señor <seg rend="normal">ALCALDE</seg>, que ofrece su brazo a <seg rend="normal">LA CONDESA</seg>. Sofocado, aunque de buen humor, da cuenta del gracioso <seg rend="italic">quite</seg> con que logró evitar la formidable tabarra con que les amenazaba el audaz foliculario. Debe decirse, tributando a la verdad los honores debidos, que fue excelente y copiosa la comida, feliz combinación del <seg rend="italic">estilo de fonda</seg> y del arte casero en casa rica; el servicio atropellado y lento, pues las pobrecitas criadas no acertaban a desenvolverse en aquel mete-y-saca y quita-y-pon de platos, fuentes y salseras. Sentáronse a la mesa, a más de <seg rend="normal">LA CONDESA</seg> y sus hijas y los dueños de la casa, los dos niños de éstos, escolares escogidos que se hallaban en plena <seg rend="italic">edad del pavo</seg>, y eran de lo más desaborido que en tan lastimosa edad comúnmente se ve. De personas extrañas sólo había una, la que toda Jerusa conocía por <seg rend="normal">CONSUELITO</seg>, de apodo la <seg rend="italic">Solitaria</seg>, prima del <seg rend="normal">ALCALDE</seg>, viuda rica sin hijos, que en investigar vidas ajenas se pasaba mansamente la suya, y era, por tanto, un viviente archivo de historias, enredos y chismes. Amenizó el señor <seg rend="normal">ALCALDE</seg> la comida con un jaquecoso disertar sobre las mejoras pasadas, presentes y venideras de Jerusa, y a nadie dejaba meter baza. Pugnaba su esposa por intercalar observaciones finas en medio de la gárrula oratoria del buen Monedero; pero rara vez vio coronado por el éxito su laudable propósito. Cuando servían el café (que, entre paréntesis, llegó a la mesa mal hecho, recalentado y frío), entraron a saludar a <seg rend="normal">LA CONDESA</seg> el señor <seg rend="normal">CURA</seg>, que ya la había visto, y <seg rend="normal">SENÉN</seg>, que aún no había tenido el honor de besarle la mano.)</stage></p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0276_chap16">
-					<head>Escena IV</head>
+					<head xml:id="ne0276_head_019">Escena IV</head>
 					<p><stage>Jardín que no necesita descripción, pues ya se comprende que es un afectado y ridículo plagio en pequeño del estilo inglés en grande; trazado en curvas, con praderas, macizos, bosquecillos plantaciones ornamentales de variada coloración.</stage></p>
 					<p><stage><seg rend="normal">LUCRECIA</seg>, <seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>, <seg rend="normal">EL ALCALDE</seg>, <seg rend="normal">LA ALCALDESA</seg>, sus dos hijos, que no hablan, y peor sería que hablaran; <seg rend="normal">CONSUELITO</seg>, <seg rend="normal">EL CURA</seg> y <seg rend="normal">SENÉN</seg>.</stage></p>
 					<p><stage>(Fórmanse grupos distintos que cambian de figuras.)</stage></p>
@@ -3359,7 +3410,7 @@
 					</sp>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0276_chap17">
-					<head>Escena V</head>
+					<head xml:id="ne0276_head_020">Escena V</head>
 					<p><stage>Sala baja en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">LUCRECIA</seg>, sentada, melancólica,mirando al suelo; <seg rend="normal">EL CONDE</seg>, que entra por el foro.</stage></p>
 					<sp>
@@ -3908,7 +3959,7 @@
 					</sp>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0276_chap18">
-					<head>Escena VI</head>
+					<head xml:id="ne0276_head_021">Escena VI</head>
 					<p><stage><seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>, que corren a abrazar a su madre; tras ellas <seg rend="normal">GREGORIA</seg> y <seg rend="normal">VENANCIO</seg>. Poco después <seg rend="normal">EL CURA</seg> y <seg rend="normal">EL MÉDICO</seg>.</stage></p>
 					<sp>
 						<speaker>LUCRECIA.-</speaker>
@@ -4024,9 +4075,9 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Jornada III</head>
+				<head xml:id="ne0276_head_022">Jornada III</head>
 				<div n="19" type="chapter" xml:id="ne0276_chap19">
-					<head>Escena I</head>
+					<head xml:id="ne0276_head_023">Escena I</head>
 					<p><stage><seg rend="normal">NELL</seg>, <seg rend="normal">DOLLY</seg>, <seg rend="normal">D. PÍO CORONADO</seg>, sentados los tres alrededor de una mesa estudio, donde se ven papeles, tintero, libros de texto.</stage></p>
 					<p><stage>(Es el maestro de las niñas de <seg rend="normal">ALBRIT</seg> un anciano de estatura menguada, muy tieso de busto y cuello, y algo dobladito de cintura, las piernas muy cortas. La expresión bonachona de su rostro no lograron borrarla los años con todo su poder, ni los pesares domésticos con toda su gravedad. Guiña los ojuelos, y al mirar de cerca sin anteojos, los entorna, tomando un cariz de agudeza socarrona, puramente superficial, pues hombre más candoroso, puro y sin hiel no ha nacido de madre. Un rastrojo de bigote de varios colores, recortado como un cepillo, cubre su labio superior. Viste con pobreza limpia anticuadas ropas, recompuestas y vueltas del revés, atento siempre al decoro de la presencia en público.)</stage></p>
 					<p><stage>(Maestro de escuela jubilado, desempeñó con eficacia su ministerio durante treinta años, distinguiéndose además como profesor privado de materias de la primera y segunda enseñanza. Su defecto era la flojedad del carácter, y la tolerancia excesiva con la niñez escolar. Sabía el hombre todo lo que saber necesita un maestro, y algo más; pero con la edad y las inauditas adversidades que le agobiaban fue perdiendo los papeles, y hasta la afición. Su cabeza llegó a pertenecer al reino de los pájaros; su memoria era una casa ruinosa y desalojada, en la cual ninguna idea podía encontrar aposento; todo lo que perdía en ciencia lo ganaba en debilidad y relajación del carácter. En esta situación le designó <seg rend="normal">D. CARMELO</seg> para maestro de las niñas de <seg rend="normal">ALBRIT</seg>, teniendo en cuenta tres razones: que si no sabía mucho, no había en Jerusa quien le aventajara; que era honrado, honesto, absolutamente incapaz de enseñar a sus discípulas cosa contraria a la moral, y, por último, que al aceptarle para aquel cargo realizaba <seg rend="normal">LA CONDESA</seg> un acto caritativo. Su bondad, la excesiva blandura de corazón, eran ya en <seg rend="normal">CORONADO</seg> un defecto, casi un vicio, por lo cual, lamentándose de sus acerbas desdichas, solía decir, elevando al cielo los ojos y las palmas de las manos; «¡Señor,qué malo es ser bueno!».)</stage></p>
@@ -4446,7 +4497,7 @@
 					</sp>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0276_chap20">
-					<head>Escena II</head>
+					<head xml:id="ne0276_head_024">Escena II</head>
 					<p><stage><seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>, <seg rend="normal">D. PÍO</seg>, <seg rend="normal">EL SEÑOR CURA</seg>, <seg rend="normal">VENANCIO</seg>.</stage></p>
 					<sp>
 						<speaker>EL CURA.-</speaker>
@@ -4628,7 +4679,7 @@
 					<p><stage>(Salen los demás.)</stage></p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0276_chap21">
-					<head>Escena III</head>
+					<head xml:id="ne0276_head_025">Escena III</head>
 					<p><stage>Sala baja en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">GREGORIA</seg>, <seg rend="normal">EL MÉDICO</seg>; después <seg rend="normal">VENANCIO</seg>, <seg rend="normal">EL CURA</seg>.</stage></p>
 					<sp>
@@ -4797,7 +4848,7 @@
 					</sp>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0276_chap22">
-					<head>Escena IV</head>
+					<head xml:id="ne0276_head_026">Escena IV</head>
 					<p><stage><seg rend="normal">EL MÉDICO</seg>, <seg rend="normal">EL CURA</seg>, <seg rend="normal">VENANCIO</seg>, <seg rend="normal">GREGORIA</seg> y <seg rend="normal">EL CONDE</seg>, a paso lento, apoyado en su palo. Nótase más deterioro y descuido en su ropa. Avanza muy abstraído, sin parar mientes en las personas que están en la habitación.</stage></p>
 					<sp>
 						<speaker>EL CURA.-</speaker>
@@ -5037,7 +5088,7 @@
 					</sp>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0276_chap23">
-					<head>Escena V</head>
+					<head xml:id="ne0276_head_027">Escena V</head>
 					<p><stage><seg rend="normal">EL CURA</seg>, <seg rend="normal">EL MÉDICO</seg>, <seg rend="normal">VENANCIO</seg>, <seg rend="normal">GREGORIA</seg>.</stage></p>
 					<sp>
 						<speaker>VENANCIO.-</speaker>
@@ -5139,7 +5190,7 @@
 					<p><stage>(Despídese <seg rend="normal">ANGULO</seg> para continuar sus visitas, y <seg rend="normal">DON CARMELO</seg>, con los dueños de la casa, se dirige al espacioso y bien poblado gallinero de la Pardina. Examinando huevos, pollos y echaduras, se pasa parte de la mañana, y, por último,se convida a comer. <seg rend="normal">GREGORIA</seg> le aconseja que prefiera la cena, y propone invitar también al <seg rend="normal">MÉDICO</seg>. Aprobación unánime.)</stage></p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0276_chap24">
-					<head>Escena VI</head>
+					<head xml:id="ne0276_head_028">Escena VI</head>
 					<p><stage>Bosque.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -5147,7 +5198,7 @@
 					</sp>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0276_chap25">
-					<head>Escena VII</head>
+					<head xml:id="ne0276_head_029">Escena VII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">NELL</seg>, <seg rend="normal">DOLLY</seg>, <seg rend="normal">D. PÍO</seg>.</stage></p>
 					<sp>
 						<speaker>NELL.-</speaker>
@@ -5347,7 +5398,7 @@
 					</sp>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0276_chap26">
-					<head>Escena VIII</head>
+					<head xml:id="ne0276_head_030">Escena VIII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">NELL</seg>, <seg rend="normal">DOLLY</seg>.</stage></p>
 					<sp>
 						<speaker>NELL.-</speaker>
@@ -6166,7 +6217,7 @@
 					</sp>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0276_chap27">
-					<head>Escena IX</head>
+					<head xml:id="ne0276_head_031">Escena IX</head>
 					<p><stage>Casa pobre de campo, de un solo piso, de una sola puerta, con dos ventanuchos tuertos. Sale humo en bocanadas por entre las tejas musgosas, que en sus junturas y en las jorobas del caballete ostentan un jardín botánico en miniatura, colección lindísima de criptógamas y plantas parásitas. Junto a la casa, un huerto mal cercado de pedruscos, con un albérchigo desgarbado, un madroño copudo, varios girasoles con sus caras amarillas, atónitos ante la lumbre del sol, y unas cuantas coles agujereadas por los gusanos. La fauna consiste en un cerdo libre, que hociquea en el charco formado por la lluvia; dos patos, gallinas, y todos los caracoles y babosas que se quieran poner. Las moscas, huyendo de la lluvia, han querido refugiarse en el interior de la casa, y como el humo las expulsa, voltejean en la puerta sin saber si entrar o salir.</stage></p>
 					<p><stage>Agréganse a la fauna niño y niña, descalzos y con la menor ropa posible, y una vieja corpulentísima, mujer de excepcional naturaleza, nacida para poblar el mundo de gastadores, y que por su musculatura, en cierto modo grandiosa, parece prima hermana de la Sibila de Cumas, obra de Miguel Ángel.</stage></p>
 					<p><stage><seg rend="normal">LA MARQUEZA</seg>, <seg rend="normal">EL CONDE</seg>, <seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>; los dos <seg rend="normal">NIÑOS</seg>.</stage></p>
@@ -6462,7 +6513,7 @@
 					<p><stage>(Aparecen <seg rend="normal">VENANCIO</seg> y un <seg rend="normal">MOZO</seg> por entre un grupo de castaños.)</stage></p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0276_chap28">
-					<head>Escena X</head>
+					<head xml:id="ne0276_head_032">Escena X</head>
 					<p><stage>Los mismos; <seg rend="normal">VENANCIO</seg> y un <seg rend="normal">MOZO</seg> con paraguas y capotes.</stage></p>
 					<sp>
 						<speaker>VENANCIO.-</speaker>
@@ -6510,7 +6561,7 @@
 					</sp>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0276_chap29">
-					<head>Escena XI</head>
+					<head xml:id="ne0276_head_033">Escena XI</head>
 					<p><stage>Comedor en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">NELL</seg>, <seg rend="normal">DOLLY</seg>, <seg rend="normal">EL CURA</seg>, <seg rend="normal">EL MÉDICO</seg>, sentados a la mesa; <seg rend="normal">VENANCIO</seg> y <seg rend="normal">GREGORIA</seg>, que les sirven.</stage></p>
 					<p><stage>(La cena toca a su fin. <seg rend="normal">EL CONDE</seg>, en el sitial, a la cabecera de la mesa, tiene a su derecha a <seg rend="normal">NELL</seg>; enfrente <seg rend="normal">EL CURA</seg>, teniendo a su derecha a <seg rend="normal">DOLLY</seg>. Entre las dos parejas, <seg rend="normal">EL MÉDICO</seg>.)</stage></p>
@@ -7051,12 +7102,12 @@
 					</sp>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0276_chap30">
-					<head>Escena XII</head>
+					<head xml:id="ne0276_head_034">Escena XII</head>
 					<p><stage>Dormitorio del <seg rend="normal">CONDE</seg>. Es de noche. Una lamparilla de aceite, puesta en una rinconera, alumbra la estancia; la luz es chiquita, tímida, llorona, un punto de claridad que vagamente dibuja y pinta de tristeza los muebles viejos, las luengas y lúgubres cortinas del lecho y del balcón. Profundo silencio, que permite oír el mugido lejano del mar como los fabordones de un órgano. El viento, a ratos, gime, rascándose en los ángulos robustos de la casa.</stage></p>
 					<p>El CONDE.- <stage> (Solo. Después de un sueño breve y profundo, se viste precipitadamente, y se sienta en el borde de la cama.) </stage> Bien despierto estoy, no puedo dudarlo... En vela, paréceme que duermo; dormido, veo y toco la realidad. ¿Qué es esto? Tan cierto como esa es luz, yo vi a Rafael entrar en el comedor, acercarse a la pequeña y... La primera vez no hizo más que mirarme... movimiento, ninguno: no tenía brazos. La segunda vez, Rafael tenía brazo derecho y mano... nada más que un brazo y una mano. No sé qué arma era la que llevaba. Sólo sé que así, así... de un golpe, mató a Dolly. La pobre niña no dijo ¡ay! Murió calladita y risueña... como un ángel, cumpliendo la ley del destino, que ordena que las hijas paguen las culpas de las madres... <stage> (Tratando de despejarse, da algunos pasos.) </stage> Sueño ha sido; mas no debemos despreciar los sueños como obra caprichosa de los sentidos, ni creer que éstos, al dormirnos, se sueltan, se embriagan, se dan a la imitación burlesca y desenfrenada de los actos normales dictados por el juicio... No, no son los sueños un Carnaval en nuestro cerebro. Es que... bien claro lo veo ahora... es que el mundo espiritual, invisible, que en derredor nuestro vive y se extiende, posee la razón y la verdad, y por medio de imágenes, por medio de proyecciones de lo de allá sobre lo de acá, nos enseña, nos advierte lo que debemos hacer... <stage> (Se pasea vacilante, sin guardar la línea recta en sus idas y venidas.) </stage> ¡Cómo suena esta noche la mar! ¡Y yo, durmiendo, creía que ese <seg rend="italic">bum-bum</seg> eran mis ronquidos! ¡Y es el mar el que ronca! <stage> (Detiénese a escuchar.) </stage> ¡Qué silencio en la casa! Todos duermen: las niñas también, ignorantes de que urge expulsar a la intrusa. Ley de justicia es. No he inventado yo el honor, no he inventado la verdad. De Dios viene todo eso; de Dios viene también la muerte, fácil solución de los conflictos graves. Tiene razón Laín: el que usurpa, debe morir, debe ser separado... Rafael y yo separamos, apartamos lo que por fraude se ha introducido en el santuario de nuestra familia. <stage> (Coge maquinalmente su palo, por costumbre de andar con él.) </stage> Esto es más claro que la luz. Siempre lo has dicho, Albrit; siempre lo has dicho. La causa de que las sociedades estén tan podridas, la causa de que todo se desmorone es la bastardía infame... el injerto de la mentira en la verdad, de la villanía en la nobleza... Tú lo has dicho, Albrit; tú debes sostenerlo. Albrit...<stage> (Sale de su cuarto cautelosamente, y tentando las paredes avanza por un largo pasillo. La claridad de la luna le permite llegar sin tropiezos insuperables hasta una puerta, por cuyos resquicios se filtra la luz. Es el cuarto donde duermen <seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>. Aproxímase, procurando evitar todo ruido, y aplica el oído a la cerradura.) </stage> No duermen... Parece que rezan. Oigo confusas sus dos voces, que no son más que una. <stage> (Con súbita emoción afectiva.) </stage> ¡Oh, Dios! ¡Si me parece que las amo a las dos; que no puedo separarlas en mi amor; que la falsa se agarra a la verdadera y se hace con ella una sola persona...! Esto no puede ser; esto es una cobardía... Albrit, mira quién eres: la justicia, la verdad están en tu mano... ¡Oh!, ahora distingo mejor las voces... <stage> (Poniendo toda su alma en el oído.) </stage> No, no hay cántico de ángeles que iguale a sus vocecitas... No rezan; ahora hablan. Nell parece que quiere consolar a Dolly... Oigo mi nombre... «el abuelo...». Dolly solloza... Sin duda se aflige porque la reñí, porque le manifesté despego, diciéndole que no viniera conmigo, como de costumbre. <stage> (Con desesperación muda.) </stage> ¡Señor, Señor, haz que las dos sean legítimas!... Pero ni Dios, con todo su poder, puede impedir que Dolly sea falsa... La denuncia su carácter villano... es el contrabando infame introducido en mi casa por esa ladrona de mi honor... <stage> (Asaltado de una idea terrible, se clava en el cráneo las uñas de la mano derecha.) </stage> ¡Y si las dos son falsas, si las dos son...! <stage> (Pone la mano en la puerta, con intención de abrirla suavemente. Espantado de sí mismo, se aleja.) </stage> No, no, Albrit; tú no puedes, no sabes... no sirves para la ejecución de estas obras crueles, por más que sean justas... <stage> (Volviendo a la puerta.) </stage> ¿Y de qué modo se amputa y arroja la maleza, si una ley torpe, inicua, ampara el fraude? <stage> (Nueva indecisión. Su voluntad, turbada, gira rápidamente a impulsos de un huracán.) </stage> ¡Pobrecitas, se asustarán si entro tan a deshora!... Y Nell me dirá... de seguro me lo dirá... «Abuelo, no mates a Dolly». Tú lo has dicho también, Albrit; tú lo has dicho: «Todo ser humano que tiene vida debe vivir». Dios se la dio... nosotros no debemos quitársela... <stage> (Se aleja pausadamente.) </stage> Hasta podría ser... sí... podría suceder que la espúrea, que es Dolly, fuera buena... buena y espúrea, ¡qué sarcasmo!... ¡Así anda el mundo, así anda la justicia!... Pero de eso no tenemos culpa los pobres mortales: es el de arriba quien tiene la culpa, el que permite la rareza extravagante de que salga buena la falsa... <stage> (Avanza. En mitad del pasillo es sorprendido por <seg rend="normal">VENANCIO</seg>.) </stage></p>
 				</div>
 				<div n="31" type="chapter" xml:id="ne0276_chap31">
-					<head>Escena XIII</head>
+					<head xml:id="ne0276_head_035">Escena XIII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">VENANCIO</seg>; después, <seg rend="normal">GREGORIA</seg> y criados.</stage></p>
 					<sp>
 						<speaker>VENANCIO.-</speaker>
@@ -7135,9 +7186,9 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Jornada IV</head>
+				<head xml:id="ne0276_head_036">Jornada IV</head>
 				<div n="32" type="chapter" xml:id="ne0276_chap32">
-					<head>Escena I</head>
+					<head xml:id="ne0276_head_037">Escena I</head>
 					<p><stage>Terraza en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">GREGORIA</seg>, disponiendo la mesa para servir al <seg rend="normal">CONDE</seg> su desayuno; <seg rend="normal">VENANCIO</seg>, con la cabeza vendada; <seg rend="normal">SENÉN</seg>, que entra por el fondo con una maletita en la mano.</stage></p>
 					<sp>
@@ -7258,7 +7309,7 @@
 					</sp>
 				</div>
 				<div n="33" type="chapter" xml:id="ne0276_chap33">
-					<head>Escena II</head>
+					<head xml:id="ne0276_head_038">Escena II</head>
 					<p><stage><seg rend="normal">VENANCIO</seg>, <seg rend="normal">SENÉN</seg>, <seg rend="normal">EL CONDE</seg>, <seg rend="normal">GREGORIA</seg>.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -7398,7 +7449,7 @@
 					</sp>
 				</div>
 				<div n="34" type="chapter" xml:id="ne0276_chap34">
-					<head>Escena III</head>
+					<head xml:id="ne0276_head_039">Escena III</head>
 					<p><stage><seg rend="normal">EL CONDE</seg> y <seg rend="normal">SENÉN</seg>.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -7602,7 +7653,7 @@
 					</sp>
 				</div>
 				<div n="35" type="chapter" xml:id="ne0276_chap35">
-					<head>Escena IV</head>
+					<head xml:id="ne0276_head_040">Escena IV</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">NELL</seg>; después, <seg rend="normal">DOLLY</seg>.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -7714,7 +7765,7 @@
 					</sp>
 				</div>
 				<div n="36" type="chapter" xml:id="ne0276_chap36">
-					<head>Escena V</head>
+					<head xml:id="ne0276_head_041">Escena V</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">NELL</seg> y <seg rend="normal">DOLLY</seg>, <seg rend="normal">EL CURA</seg>; después <seg rend="normal">D. PÍO</seg>.</stage></p>
 					<sp>
 						<speaker>EL CURA.-</speaker>
@@ -7878,7 +7929,7 @@
 					</sp>
 				</div>
 				<div n="37" type="chapter" xml:id="ne0276_chap37">
-					<head>Escena VI</head>
+					<head xml:id="ne0276_head_042">Escena VI</head>
 					<p><stage>Dormitorio del <seg rend="normal">CONDE</seg>.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, que entra; <seg rend="normal">DOLLY</seg>, barriendo.</stage></p>
 					<sp>
@@ -8015,7 +8066,7 @@
 					</sp>
 				</div>
 				<div n="38" type="chapter" xml:id="ne0276_chap38">
-					<head>Escena VII</head>
+					<head xml:id="ne0276_head_043">Escena VII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">DOLLY</seg>, <seg rend="normal">EL CURA</seg>.</stage></p>
 					<sp>
 						<speaker>EL CURA.-</speaker>
@@ -8039,7 +8090,7 @@
 					</sp>
 				</div>
 				<div n="39" type="chapter" xml:id="ne0276_chap39">
-					<head>Escena VIII</head>
+					<head xml:id="ne0276_head_044">Escena VIII</head>
 					<p><stage>Monasterio de Zaratán (Jerónimos).</stage></p>
 					<p><stage>Hállase situado en un fértil llano, con ligera inclinación y corriente de aguas hacia el Mediodía. Lo resguardan de los vientos septentrionales el verde muro de una selva espesísima, y la fortaleza de un monte, estribación de la sierra que por el Este se extiende en escalones hasta la mar. Rodeándolo frondosas arboledas de sombra, adorno y fruto, y tierras de cultivo y pasto, cerradas por tapia o setos vivos, en extensión considerable.</stage></p>
 					<p><stage>La construcción románica de la iglesia y de parte del convento aparece bastardeada, y en algunos puntos ridículamente sustituida por horribles superfetaciones del pasado siglo, de una imbecilidad que causa enojo y tristeza. En el frontis de la iglesia, en distintas puertas y ventanas, campea el escudo de Albrit, león rampante con banderola en la garra, y el lema: <seg rend="italic">Potestas Virtus</seg>.</stage></p>
@@ -8204,7 +8255,7 @@
 					<p><stage>(De sobremesa, propone <seg rend="normal">EL PRIOR</seg> un agradable plan para la tarde: siesta, el que quiera dormirla; después, paseo hasta la casa de labor de abajo, que es la más interesante; visita a los corrales, establos y cabañas, y, por fin, solemnes vísperas con órgano, Salve, etc.)</stage></p>
 				</div>
 				<div n="40" type="chapter" xml:id="ne0276_chap40">
-					<head>Escena IX</head>
+					<head xml:id="ne0276_head_045">Escena IX</head>
 					<p><stage>Coro de la iglesia conventual de Zaratán.</stage></p>
 					<p><stage><seg rend="normal">EL PADRE MAROTO</seg>, en la silla prioral. A su lado <seg rend="normal">EL CONDE DE ALBRIT</seg>. Siguen a derecha e izquierda los monjes, ocupando con sus venerables cuerpos más de la mitad de la sillería. En el centro, frente al facistol, los cantores. No hay verja que separe el coro de la iglesia, que es tenebrosa, sepulcral, cavidad cuyos límites y contornos se deslíen en un misterioso ambiente, tachonado por las luces de los cirios. En el fondo lejano se adivina, más que se ve, el altar mayor, disforme carpintería barroca y estofada. A la derecha un órgano pequeño, nuevecito, de excelente son. Toca con maestría el mismo fraile italiano que antes hablaba de la simiente de alfalfa y remolacha forrajera.</stage></p>
 					<sp>
@@ -8291,7 +8342,7 @@
 					</sp>
 				</div>
 				<div n="41" type="chapter" xml:id="ne0276_chap41">
-					<head>Escena X</head>
+					<head xml:id="ne0276_head_046">Escena X</head>
 					<p><stage>Atrio de la iglesia. Alameda. Portalón.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">EL PRIOR</seg>; algunos monjes, que a distancia se mantienen observando la escena, prontos a intervenir en ella, si lo ordena el Superior con seña o simple mirada.</stage></p>
 					<sp>
@@ -8386,7 +8437,7 @@
 					</sp>
 				</div>
 				<div n="42" type="chapter" xml:id="ne0276_chap42">
-					<head>Escena XI</head>
+					<head xml:id="ne0276_head_047">Escena XI</head>
 					<p><stage>Meseta árida, en la cual no crecen más que cardos y aliagas. A trechos, rocas de singulares formas que parecen cuerpos a medio salir del suelo arenoso. Termina la planicie por el Norte bruscamente, como si la tajaran de un golpe con arma formidable. Allí está el filo del cantil, colosal muralla que del mar se eleva, en algunos sitios con declive de peñas escalonadas, en otros con una verticalidad espantable, terrorífica. La altura varía, por la desigualdad de la rasante en la meseta; pero en ninguna parte deja de ser tal, que difícilmente la soporta sin vértigo la mirada. Sube de lo profundo el murmullo hondo y persistente de la mar, dando testarazos en la base del cantil. Anochece. El cielo es tempestuoso.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -8395,7 +8446,7 @@
 					<p><stage>(En dirección contraria a la que lleva <seg rend="normal">EL CONDE</seg>, avanza un hombre; pero como anda a favor del viento, más bien parece que vuela. Lo que en tan extraño sujeto aparenta alas son faldones de un largo abrigo. Pasa veloz junto al <seg rend="normal">CONDE</seg>. Se para no sin gran esfuerzo, le llama... vuelve a llamarle.)</stage></p>
 				</div>
 				<div n="43" type="chapter" xml:id="ne0276_chap43">
-					<head>Escena XII</head>
+					<head xml:id="ne0276_head_048">Escena XII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>; <seg rend="normal">D. PÍO</seg>, sin sombrero, que le ha sustraído el huracán; lleva bufanda al cuello, que se enrosca y desenrosca a cada instante; levitón largo, que se le pone por montera; los pantalones arremangados.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -8787,7 +8838,7 @@
 					</sp>
 				</div>
 				<div n="44" type="chapter" xml:id="ne0276_chap44">
-					<head>Escena XIII</head>
+					<head xml:id="ne0276_head_049">Escena XIII</head>
 					<p><stage>Comedor en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">VENANCIO</seg>, <seg rend="normal">GREGORIA</seg>, <seg rend="normal">SENÉN</seg>, disponiéndose a cenar; después <seg rend="normal">EL CONDE</seg> y <seg rend="normal">D. PÍO</seg>. <seg rend="normal">GREGORIA</seg> pone la mesa.</stage></p>
 					<sp>
@@ -8925,7 +8976,7 @@
 					</sp>
 				</div>
 				<div n="45" type="chapter" xml:id="ne0276_chap45">
-					<head>Escena XIV</head>
+					<head xml:id="ne0276_head_050">Escena XIV</head>
 					<p><stage>Jardín y casa del <seg rend="normal">ALCALDE</seg>. Al llegar <seg rend="normal">SENÉN</seg> y <seg rend="normal">D. PÍO</seg>, ven y admiran el jardín, iluminado con farolitos de colores colgados de los árboles. En la sala baja, cuyas ventanas están abiertas, suena el cascabeleo del piano. Óyense desde la calle alegres risotadas, cantos juveniles y pataditas de baile.</stage></p>
 					<p><stage><seg rend="normal">LA ALCALDESA</seg>, <seg rend="normal">SENÉN</seg>; después <seg rend="normal">NELL</seg>; mucha y diversa gente, pollas y chicarrones de la localidad.</stage></p>
 					<sp>
@@ -9099,7 +9150,7 @@
 					<p><stage>(Despídese <seg rend="normal">NELL</seg> y sale con <seg rend="normal">SENÉN</seg>, a punto que entra el señor <seg rend="normal">ALCALDE</seg>, bufando. Viene de la sesión del Ayuntamiento, que ha sido borrascosa. Sus colegas le han hecho el desaire de rechazar la moción, por él presentada, para que a la calle de <seg rend="italic">Potestad</seg> se le cambie el nombre, llamándola <seg rend="italic">Calle del Siglo XIX</seg>.)</stage></p>
 				</div>
 				<div n="46" type="chapter" xml:id="ne0276_chap46">
-					<head>Escena XV</head>
+					<head xml:id="ne0276_head_051">Escena XV</head>
 					<p><stage>Comedor en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, en la propia actitud en que quedó al final de la escena XIII. Llegan sucesivamente <seg rend="normal">DOLLY</seg>, con <seg rend="normal">DON PÍO</seg>, <seg rend="normal">NELL</seg>, con <seg rend="normal">SENÉN</seg>; <seg rend="normal">VENANCIO</seg> y <seg rend="normal">GREGORIA</seg>, <seg rend="normal">EL CURA</seg>, <seg rend="normal">EL ALCALDE</seg>.</stage></p>
 					<sp>
@@ -9332,9 +9383,9 @@
 				</div>
 			</div>
 			<div type="act">
-				<head>Jornada V</head>
+				<head xml:id="ne0276_head_052">Jornada V</head>
 				<div n="47" type="chapter" xml:id="ne0276_chap47">
-					<head>Escena I</head>
+					<head xml:id="ne0276_head_053">Escena I</head>
 					<p><stage>Sala baja en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, sentado; <seg rend="normal">EL MÉDICO</seg>, que entra a visitarle, y se sienta a su lado.</stage></p>
 					<sp>
@@ -9479,7 +9530,7 @@
 					</sp>
 				</div>
 				<div n="48" type="chapter" xml:id="ne0276_chap48">
-					<head>Escena II</head>
+					<head xml:id="ne0276_head_054">Escena II</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">EL CURA</seg>, <seg rend="normal">EL MÉDICO</seg> y <seg rend="normal">DOLLY</seg>.</stage></p>
 					<sp>
 						<speaker>DOLLY.-</speaker>
@@ -9599,7 +9650,7 @@
 					</sp>
 				</div>
 				<div n="49" type="chapter" xml:id="ne0276_chap49">
-					<head>Escena III</head>
+					<head xml:id="ne0276_head_055">Escena III</head>
 					<p><stage>Jardín del <seg rend="normal">ALCALDE</seg>.</stage></p>
 					<p><stage><seg rend="normal">EL ALCALDE</seg>, en zapatillas, con batín de vistosos cordones, como un húsar; <seg rend="normal">LA ALCALDESA</seg>, <seg rend="normal">EL CURA</seg>, <seg rend="normal">SENÉN</seg>.</stage></p>
 					<sp>
@@ -9732,7 +9783,7 @@
 					</sp>
 				</div>
 				<div n="50" type="chapter" xml:id="ne0276_chap50">
-					<head>Escena IV</head>
+					<head xml:id="ne0276_head_056">Escena IV</head>
 					<p><stage>Los mismos; <seg rend="normal">CONSUELITO</seg>.</stage></p>
 					<sp>
 						<speaker>CONSUELITO.-</speaker>
@@ -9996,7 +10047,7 @@
 					<p><stage>(A la una comen <seg rend="normal">LOS MONEDEROS</seg> con <seg rend="normal">NELL</seg> y <seg rend="normal">CONSUELITO</seg>. A <seg rend="normal">LUCRECIA</seg> se le sirve en su cuarto. Dan las dos, las tres...)</stage></p>
 				</div>
 				<div n="51" type="chapter" xml:id="ne0276_chap51">
-					<head>Escena V</head>
+					<head xml:id="ne0276_head_057">Escena V</head>
 					<p><stage>Sala en casa del <seg rend="normal">ALCALDE</seg>.</stage></p>
 					<p><stage><seg rend="normal">LA ALCALDESA</seg>; <seg rend="normal">EL CONDE</seg>, que acaba de entrar; después <seg rend="normal">NELL</seg>.</stage></p>
 					<sp>
@@ -10119,7 +10170,7 @@
 					<p><stage>(Asómase a la puerta <seg rend="normal">EL ALCALDE</seg>, que, como ha vuelto a ponerse las zapatillas, puede aproximarse sin hacer ruido. Contempla con burlona sonrisa al <seg rend="normal">CONDE</seg>.)</stage></p>
 				</div>
 				<div n="52" type="chapter" xml:id="ne0276_chap52">
-					<head>Escena VI</head>
+					<head xml:id="ne0276_head_058">Escena VI</head>
 					<p><stage>Gabinete alto en la misma casa.</stage></p>
 					<p><stage><seg rend="normal">LUCRECIA</seg>, recostada en un sofá con gatuna indolencia, sin corsé, suelto y en desorden el cabello. Su rostro desmejorado, y el centelleo insano de sus bellos ojos, son el rastro de la furiosa tempestad; <seg rend="normal">SENÉN</seg>, que, respetuoso, permanece en la puerta.</stage></p>
 					<sp>
@@ -10234,7 +10285,7 @@
 					</sp>
 				</div>
 				<div n="53" type="chapter" xml:id="ne0276_chap53">
-					<head>Escena VII</head>
+					<head xml:id="ne0276_head_059">Escena VII</head>
 					<p><stage><seg rend="normal">LUCRECIA</seg>, <seg rend="normal">EL ALCALDE</seg>, <seg rend="normal">LA ALCALDESA</seg>, después <seg rend="normal">NELL</seg>.</stage></p>
 					<sp>
 						<speaker>LA ALCALDESA.-</speaker>
@@ -10290,7 +10341,7 @@
 					</sp>
 				</div>
 				<div n="54" type="chapter" xml:id="ne0276_chap54">
-					<head>Escena VIII</head>
+					<head xml:id="ne0276_head_060">Escena VIII</head>
 					<p><stage><seg rend="normal">LUCRECIA</seg>, <seg rend="normal">EL CONDE</seg>.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -10586,7 +10637,7 @@
 					</sp>
 				</div>
 				<div n="55" type="chapter" xml:id="ne0276_chap55">
-					<head>Escena IX</head>
+					<head xml:id="ne0276_head_061">Escena IX</head>
 					<p><stage><seg rend="normal">LUCRECIA</seg>, <seg rend="normal">EL ALCALDE</seg>, <seg rend="normal">LA ALCALDESA</seg>; después <seg rend="normal">NELL</seg>.</stage></p>
 					<sp>
 						<speaker>EL ALCALDE.-</speaker>
@@ -10643,7 +10694,7 @@
 					</sp>
 				</div>
 				<div n="56" type="chapter" xml:id="ne0276_chap56">
-					<head>Escena X</head>
+					<head xml:id="ne0276_head_062">Escena X</head>
 					<p><stage>Calle de Potestad, callejón del Cristo. Anochece.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, que avanza con lentitud, vacilante, tentando las paredes; después, <seg rend="normal">D. PÍO</seg>.</stage></p>
 					<sp>
@@ -10780,7 +10831,7 @@
 					</sp>
 				</div>
 				<div n="57" type="chapter" xml:id="ne0276_chap57">
-					<head>Escena XI</head>
+					<head xml:id="ne0276_head_063">Escena XI</head>
 					<p><stage>Habitación del <seg rend="normal">CONDE</seg> en la Pardina.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">VENANCIO</seg>, <seg rend="normal">GREGORIA</seg>; después <seg rend="normal">SENÉN</seg>.</stage></p>
 					<sp>
@@ -10858,7 +10909,7 @@
 					<p><stage>(Se van <seg rend="normal">GREGORIA</seg> y <seg rend="normal">VENANCIO</seg>.)</stage></p>
 				</div>
 				<div n="58" type="chapter" xml:id="ne0276_chap58">
-					<head>Escena XII</head>
+					<head xml:id="ne0276_head_064">Escena XII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">SENÉN</seg>; después <seg rend="normal">GREGORIA</seg>.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -11045,7 +11096,7 @@
 					</sp>
 				</div>
 				<div n="59" type="chapter" xml:id="ne0276_chap59">
-					<head>Escena XIII</head>
+					<head xml:id="ne0276_head_065">Escena XIII</head>
 					<p><stage>Iglesia parroquial de Jerusa, situada al Norte de la villa. Es irregular, conjunto inarmónico de nobles vestigios, y de restauraciones y enmiendas de fementido gusto. En el costado de Poniente, conserva un bello pórtico románico rodeado de poyos de piedra, muy cómodo para los que van a esperar la misa, o ver salir la gente. La puerta, que por allí da ingreso a la nave lateral, es gótica, pintada de ocre, y sus gastadas esculturas, con las repetidas manos de cal, parecen obra de pastelería. En un ángulo del pórtico hay una puertecilla, de arco rebajado, que conduce a la sacristía. En diversas partes del edificio se ve el escudo de Laín: banda de cuarteles y un águila explayada con el lema en el pico: <seg rend="italic"><seg type="foreign" xml:lang="la">Decor vinxit</seg></seg>. El interior ofrece escaso interés.</stage></p>
 
 					<p><stage>Como primera noche de novena de Nuestra Señora de la Esperanza, hay sermón, que predica <seg rend="normal">D. CARMELO</seg>, y Manifiesto. Asisten al piadoso acto los <seg rend="normal">DOS MONJES</seg> de Zaratán, ocupando los sitiales del presbiterio, en que antaño se sentaban los Condes de Laín y señores de Jerusa, y hogaño son para las autoridades y personas de viso. Ha querido <seg rend="normal">D. CARMELO</seg> deslumbrar al <seg rend="normal">PRIOR</seg>, prodigando las luces con ayuda de las señoras piadosas de la villa. Cortinas de terciopelo baratito, ramos de dalias y guirnaldas de follaje, completan la vistosa decoración.</stage></p>
@@ -11077,7 +11128,7 @@
 					<p><stage>(Antes que vea <seg rend="normal">NELL</seg> a su abuelo, <seg rend="normal">SENÉN</seg> llama la atención de este sobre la aparición de la niña. Se estremece <seg rend="normal">ALBRIT</seg> de sorpresa y emoción; la busca con su mirada incierta. <seg rend="normal">NELL</seg> le ve al fin, y corriendo hacia él, le coge las manos y en ellas da sonoros besos. Al aproximarse la señorita, <seg rend="normal">SENÉN</seg> se escabulle.)</stage></p>
 				</div>
 				<div n="60" type="chapter" xml:id="ne0276_chap60">
-					<head>Escena XIV</head>
+					<head xml:id="ne0276_head_066">Escena XIV</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">NELL</seg>, <seg rend="normal">CONSUELITO</seg>.</stage></p>
 					<sp>
 						<speaker>NELL.-</speaker>
@@ -11210,7 +11261,7 @@
 					<p><stage>(En la confusión del gentío que se retira, <seg rend="normal">SENÉN</seg> busca al <seg rend="normal">CONDE</seg> dentro y fuera de la iglesia. Sospechando que estará en la Rectoral, corre hacia ella por un atajo. En la obscuridad se desvía; encuéntrase con un seto que le corta el camino; creyendo abreviar saltándolo, sube a unas piedras, pega un brinco y cae en un montón de estiércol.)</stage></p>
 				</div>
 				<div n="61" type="chapter" xml:id="ne0276_chap61">
-					<head>Escena XV</head>
+					<head xml:id="ne0276_head_067">Escena XV</head>
 					<p><stage>Calle del <seg rend="italic">Buen Conde</seg>, que conduce de la iglesia a la subida del <seg rend="italic">Calvario</seg>.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, que anda como un ebrio, tropezando en el desigual piso; un <seg rend="normal">HOMBRE DEL PUEBLO</seg>, <seg rend="normal">LA MARQUEZA</seg>.</stage></p>
 					<sp>
@@ -11251,7 +11302,7 @@
 					</sp>
 				</div>
 				<div n="62" type="chapter" xml:id="ne0276_chap62">
-					<head>Escena XVI</head>
+					<head xml:id="ne0276_head_068">Escena XVI</head>
 					<p><stage>Calvario de Santorojo. Tres cruces en un altozano.</stage></p>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">D. PÍO</seg>.</stage></p>
 					<sp>
@@ -11373,7 +11424,7 @@
 					<p><stage>(Pausa. En el silencio grave de la noche, suena como vibración intensa de la atmósfera la voz de Dolly gritando: <seg rend="italic">¡Abuelo!</seg>)</stage></p>
 				</div>
 				<div n="63" type="chapter" xml:id="ne0276_chap63">
-					<head>Escena XVII</head>
+					<head xml:id="ne0276_head_069">Escena XVII</head>
 					<p><stage><seg rend="normal">EL CONDE</seg>, <seg rend="normal">D. PÍO</seg>, <seg rend="normal">DOLLY</seg>.</stage></p>
 					<sp>
 						<speaker>EL CONDE.-</speaker>
@@ -11543,7 +11594,7 @@
 		</body>
 		<back>
 			<div>
-				<head> FIN DE LA NOVELA </head>
+				<head xml:id="ne0276_head_070"> FIN DE LA NOVELA </head>
 				<ab>Santander (San Quintín), Agosto-Septiembre de 1897.</ab>
 			</div>
 		</back>

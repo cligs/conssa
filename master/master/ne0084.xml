@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La quimera</title>
-				<title type="sub"></title>
+				
 				<title type="short">Quimera</title>
-				<title type="idno">
-					<idno type="bne">XX3265924</idno>
-					<idno type="viaf">185545576</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1104029</idno>
-					<idno type="viaf">51699645</idno>
-					<name type="short">Bazan</name>
-					<name type="full">Emilia Pardo Bazán</name>
+					<name type="short" ref="#Bazan"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2067</measure>
@@ -141,16 +131,49 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0084</idno>
+						<idno type="cligs">ne0084</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>,  <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/la-quimera--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcsx684"/>.</bibl>
-				<bibl type="print-source">Obras completas, t. XXIX, Madrid, Impr. J.Moreno, <date when="1905">1905</date></bibl>
-				<bibl type="edition-first"><date when="1905">1905</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La quimera</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX3265924.html">XX3265924</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/185545576/">185545576</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4325529-2">4325529-2</idno>
+				</idno>
+				</title>
+					<author xml:id="Bazan">
+						<name type="full"><forename>Emilia</forename> <surname>Pardo Bazán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9748 - IO 9753">IO 9748 - IO 9753</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118641476">118641476</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q275929/">Q275929</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1104029.html">XX1104029</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/51699645/">51699645</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>,  <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/la-quimera--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcsx684"/>.</bibl>
+					<bibl type="print-source">Obras completas, t. XXIX, <pubPlace>Madrid</pubPlace>, Impr. J.Moreno, <date when="1905">1905</date></bibl>
+					<bibl type="edition-first"><date when="1905">1905</date><idno source="k10plus" type="ppn" n="583853552" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=583853552"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La quimera</title> <date when="1905">1905</date>, <publisher>Renacimiento [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="583853552" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=583853552"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera</title> <date when="1915">1915</date>, <publisher>Renacimiento [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464283485" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464283485"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera</title> <date when="1991">1991</date>, <publisher>Linkgua Ediciones,</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1758797339" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1758797339"/> 		<idno type="isbn" n="9788490079140"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La quimera</title> <date when="1991">1991</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="134151445" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=134151445"/> 		<idno type="isbn" n="8437610109"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera</title> <date when="1992">1992</date>, <publisher>PPU</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="128546972" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=128546972"/> 		<idno type="isbn" n="8476651805"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera. La Sirena Negra. Dulce Dueño</title> <date when="1999">1999</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="315929111" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=315929111"/> 		<idno type="isbn" n="8489794359"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Quimera. La sirena negra. Dulce Dueño</title> <date when="2000">2000</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1159744270" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1159744270"/> 		<idno type="isbn" n="8489794359"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE7">
@@ -158,6 +181,14 @@
 				<p>La obra nos muestra la lucha interna del protagonista. Tanto él como los que le rodean se mueven en un ambiente de sensualismo y perversión, donde lo satánico y artificioso priva sobre lo natural y espontáneo; de ahí que Silvio se sienta más atraído por la mofinómana María Espina Porcel, que pierde su vida en su búsqueda de un paraíso artificial que solo puede ofrecerle la droga, que por encantadora Clara Ayamonte.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9749" key="IO 9749" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -191,7 +222,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela modernista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -225,12 +256,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-07-03" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Prólogo</head>
+				<head xml:id="ne0084_head_000">Prólogo</head>
 				<p>Había prescindido en mis novelas de todo prefacio, advertencia, aclaración o prólogo, entregándolas mondas y lirondas al lector, que allá las interpretase a su antojo, puesto que tanta molestia quisiera tomarse; y esta costumbre seguiría en <seg rend="italic">La Quimera</seg> si, apenas iniciada su publicación por la excelente revista <seg rend="italic">La Lectura</seg>, no apareciese en un diario de circulación máxima un suelto anunciando que «claramente se adivina, al través de los personajes de <seg rend="italic">La Quimera</seg>, el nombre de gentes muy conocidas en la sociedad de Madrid, por lo cual el libro será objeto de gran curiosidad y de numerosos comentarios».</p>
 				<p>Desde <seg rend="italic">Pequeñeces</seg>, se me figura que al público se le ha abierto el apetito. Fue <seg rend="italic">Pequeñeces</seg> (tendrán que reconocerlo los más adversos al Padre Coloma) plato tan sabroso, que trabajo le mando al cocinero que sazone otro mejor. ¿Qué especias emplear? ¿Qué salsa componer? No vale cargar la mano en la guindilla, que no por eso saldrá el <seg rend="italic">carrick</seg> más en punto. <seg rend="italic">Pequeñeces</seg>, a la verdad, y es justo decirlo, alborotó sin recurrir a tratar de aberraciones, perversiones y demoniuras con que hoy las letras van familiarizándose. Por ley natural de la escala de sensaciones, se piden nuevos estímulos; vibra irritada la curiosidad, y la musa ceñida de negras espinas, la de la sátira social, que levanta ampollas como puños, aguarda su hora. A todo novelista que por exigencias del asunto tiene que situar la acción en altas esferas o sacar a plaza tipos más o menos semejantes a los que por ahí bullen, se le pregunta con ahínco: «-¿Nos trae usted la continuación de <seg rend="italic">Pequeñeces</seg>? Eso sí que nos encantaría. Agotaríamos la edición...».</p>
 				<p>Reconozco que en la sátira social pueden hacerse maravillas. Remontémonos: ¿quién ignora que Dante, en la <seg rend="italic">Divina Comedia</seg>, saca al sol los trapitos de sus contemporáneos y conciudadanos, sin omitir lo gravísimo (recuérdese su conferencia en el infierno con Brunetto Latini)? Los profetas de Israel, que iban clamando contra las iniquidades de su época, sin respetar ni a las testas coronadas, ¿qué fueron, descontada su sacra misión, sino <seg rend="italic">satíricos andantes</seg>? La antigüedad, más realista cien veces que nosotros, no concibió el drama con personajes inventados; y los dramaturgos griegos fundaron su teatro en sucedidos históricos y en interioridades regias. En la <seg rend="italic">Odisea</seg>, y aún en la <seg rend="italic">Iliada</seg>, hizo algo semejante Homero; Shakespeare (siguiendo las huellas de Sófocles y Eurípides), en sus dramas históricos dramatizó sucesos casi actuales y retrató a los reyes, reinas y magnates con relieve cruel. Creo que basta de ilustres ejemplos, y que no será desdeñar el género si declaro que no pertenece a él <seg rend="italic">La Quimera</seg>, ni fustiga, palabreja tan en uso, a nadie, ni verosímilmente provocará, siquiera por ese concepto, comentario ninguno.</p>
@@ -247,10 +279,10 @@
 		</front>
 		<body>
 			<div type="division">
-				<head>La muerte de la quimera : (Tragicomedia en dos actos, para marionetas) </head>
+				<head xml:id="ne0084_head_001">La muerte de la quimera : (Tragicomedia en dos actos, para marionetas) </head>
 				<div type="section">
 					<castList>
-						<head>PERSONAJES</head>
+						<head xml:id="ne0084_head_002">PERSONAJES</head>
 
 						<castItem>BELEROFONTE, <seg rend="italic">hijo de Glauco, rey de Corinto, 30 años.</seg></castItem>
 
@@ -268,13 +300,13 @@
 					</castList>
 				</div>
 				<div type="part">
-					<head>Acto I</head>
+					<head xml:id="ne0084_head_003">Acto I</head>
 
 					<stage>El teatro representa una sala baja del palacio de
 YOBATES. Al través de la columnata se ven los jardines.</stage>
 
 					<div n="1" type="chapter" xml:id="ne0084_chap1">
-						<head>Escena I</head>
+						<head xml:id="ne0084_head_004">Escena I</head>
 						<stage>CASANDRA, EL RAPSODA.</stage>
 						<sp>
 							<speaker>CASANDRA</speaker>
@@ -350,7 +382,7 @@ YOBATES. Al través de la columnata se ven los jardines.</stage>
 						</sp>
 					</div>
 					<div n="2" type="chapter" xml:id="ne0084_chap2">
-						<head>Escena II</head>
+						<head xml:id="ne0084_head_005">Escena II</head>
 						<stage>BELEROFONTE,
 CASANDRA.</stage>
 
@@ -385,7 +417,7 @@ CASANDRA.</stage>
 						</sp>
 					</div>
 					<div n="3" type="chapter" xml:id="ne0084_chap3">
-						<head>Escena III</head>
+						<head xml:id="ne0084_head_006">Escena III</head>
 						<stage>Dichos, YOBATES.</stage>
 						<sp>
 							<speaker>YOBATES</speaker>
@@ -446,7 +478,7 @@ CASANDRA.</stage>
 						<stage>(Sale BELEROFONTE por una puerta lateral.)</stage>
 					</div>
 					<div n="4" type="chapter" xml:id="ne0084_chap4">
-						<head>Escena IV</head>
+						<head xml:id="ne0084_head_007">Escena IV</head>
 						<stage>Dichos, menos BELEROFONTE.</stage>
 
 						<sp>
@@ -467,7 +499,7 @@ CASANDRA.</stage>
 						</sp>
 					</div>
 					<div n="5" type="chapter" xml:id="ne0084_chap5">
-						<head>Escena V</head>
+						<head xml:id="ne0084_head_008">Escena V</head>
 						<stage>BELEROFONTE,
 YOBATES.</stage>
 						<sp>
@@ -489,7 +521,7 @@ YOBATES.</stage>
 					</div>
 				</div>
 				<div type="part">
-					<head>Acto II</head>
+					<head xml:id="ne0084_head_009">Acto II</head>
 
 					<stage>Los jardines del palacio de YOBATES. Una estatua de Eros.</stage>
 
@@ -725,7 +757,7 @@ MINERVA.</stage>
 						</sp>
 					</div>
 					<div n="11" type="chapter" xml:id="ne0084_chap11">
-						<head>Escena VI</head>
+						<head xml:id="ne0084_head_010">Escena VI</head>
 						<stage>BELEROFONTE,
 MINERVA, CASANDRA.</stage>
 						<sp>
@@ -752,7 +784,7 @@ MINERVA, CASANDRA.</stage>
 				</div>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0084_chap12">
-				<head>- I - : Alborada </head>
+				<head xml:id="ne0084_head_011">- I - : Alborada </head>
 				<p>Los últimos tules desgarrados de la niebla habían sido barridos por el sol: era de cristal la mañana. Algo de brisa: el hálito inquieto de la ría al través del follaje ya escaso de la arboleda. En los linderos, en la hierba tachonada de flores menudas, resaltaba aún la malla refulgente del rocío. El seno arealense, inmenso, color de turquesa a tales horas, ondeaba imperceptiblemente, estremecido al retozo del aire. La playa se extendía lisa, rubia, polvillada de partículas brilladoras, cuadriculada a techos por la telaraña sombría de las redes puestas a secar, y festoneada al borde por maraña ligera de algas. A la parte de tierra la limitaba el parapeto granítico del muelle, conteniendo el apretado caserío, encaperuzado de cinabrio.</p>
 				<p>Un muchacho de piernas desnudas, andrajoso, recio, llevaba del ronzal a un caballejo del país, peludo y flaco, a fin de bañarlo cuando el agua está bien fría y tiene virtud. Volvió la cabeza sorprendido, al oír que le hablaba alguien y ver que un señorito bajaba corriendo desde el repecho de la carretera de Brigos hasta los peñascales, término del playal.</p>
 				<p>-¡Rapaz! ¡Ey! La panadería de Sendo, ¿adónde cae?</p>
@@ -999,7 +1031,7 @@ MINERVA, CASANDRA.</stage>
 				<p>-Mi pañuelo -y la compositora se lo presentó, estremecida también. Siguieron andando, pausadamente, metidos en sí; un espectáculo atrajo sus miradas. Más allí del soto, bastante cerca sin embargo, apoyando uno de los extremos del semicírculo colosal en las honduras de la cañada que cobija la presa del molino, la zona policroma del iris ascendía del suelo a lo más alto de la bóveda gris, y volvía a descender, diseñando un puente para titanes. No llovería más. Los aéreos colores, verdes, anaranjados, violados, de transparente y luminosa magnificencia, fueron apagándose con lentitud dulce; ya casi invisibles a fuerza de delicadeza, se esfumaron al fin completamente, y el paisaje quedó como abandonado y solitario, húmedo, escalofriado con la proximidad de la noche otoñal traidora y pronta en sobrevenir.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0084_chap13">
-				<head>- II - : Madrid </head>
+				<head xml:id="ne0084_head_012">- II - : Madrid </head>
 				<p><seg rend="italic">(Hojas del libro de memorias de Silvio Lago.)</seg></p>
 				<p><seg rend="italic">Noviembre</seg>.</p>
 				<p>Después de pasarme ocho días en la destartalada fonda de la calle de Atocha, al fin encuentro un taller, a precio aceptable, en la de Jardines. Tiene el defecto de que esa calle es del número de las que Balzac llama <seg rend="italic">chauldes</seg>, y aún de las que echan lumbre: en mi vida he visto junta tanta paloma torcaz, y de plumaje tan sucio. No me importa lo que me arrullan cuando me retiro de noche; pero ¿y si acuden a retratarse bellas señoras? En esta calle no entran coches: las bellas señoras tendrán que cruzar a pie, rozando con las pájaras y oyendo sus retahílas... No hay qué hacerle: no hallo cosa mejor, dentro de mis posibles. Traía unas dos mil pesetas para empezar a vivir -primer plazo del importe de mis cuatro terrones; el resto no se cobra hasta qué sé yo-; pero he encontrado aquí a Crivelo, el pobre Crivelo, con su mujer, los niños, la suegra, el ama, y sin un céntimo: como que acaba de establecer una litografía... y tuve que arriar setecientas y pico, porque a no ser de bronce... Tiene razón la baronesa de Dumbría, al llamarme <seg rend="italic">el de la mano horadada</seg>. Razón: y sin embargo, me ataca los nervios al darme consejos de economía; es como si a una adelfa la dijesen: «Maldita, sé garbanzo, que te conviene mucho».</p>
@@ -1571,7 +1603,7 @@ MINERVA, CASANDRA.</stage>
 				<p>Me ayuda a hacer la maleta, a empaquetar mil cachivaches, y cuando me dejo caer fatigado y descorazonado en el sofá, me habla de mis triunfos franceses próximos, de que voy a ser allí un Gayarre de la pintura, a metérmelos a todos «en el bolsillo». Le permito disparatar por su cuenta. ¡Madrid, adiós!</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0084_chap14">
-				<head>- III - : París </head>
+				<head xml:id="ne0084_head_013">- III - : París </head>
 				<p>Sentar el pie en la estación del Quai d'Orsay no causó a Silvio el efecto que se había figurado. Le sucedía así con frecuencia -agotar el contenido de una emoción con la fantasía, desflorándola de antemano-; previendo todo, y más aún, de lo que la realidad contiene.</p>
 				<p>La presencia del ayuda de cámara y el lacado de Valdivia le evitaron esas molestias de la llegada que influyen en la impresión de una ciudad desconocida. No tuvo que pensar en su saco, su rollo de mantas y su baúl. Se encontró el equipaje entero estibado en la galería de un fiare, y hasta dadas las señas del hotel donde Valdivia le había retenido habitación. Al despedirse, Espina le notificó que le esperaba a almorzar al día siguiente, añadiendo el brasileño que, a ser posible, le llevaría algún colega distinguido, algún periodista, algún crítico de arte.</p>
 				<p>-¡No! -suplicó Silvio, azorado-. Señor Valdivia, ¡otro género de exhibición! Vengo aquí a estudiar.</p>
@@ -1692,7 +1724,7 @@ MINERVA, CASANDRA.</stage>
 				<p>Sólo con ella tantas horas, el enigma de la Porcel le irritaba. ¿Era efectivamente, según la afirmación de Valdivia, una víctima de la fatalidad? Silvio la clasificaba algunas veces, comparándola a Clara Ayamonte. «Aquélla -pensaba- era una histérica del corazón, y ésta es una histérica del cerebro». Pensándolo mejor, esta frase, como todas las frases, nada decía: no descubría lo sustancial de las cosas, lo que latía en el arcano de aquel espíritu refinado y desquiciado. La clave del sentir de aquella hija de la decadencia no la poseía Silvio, a pesar de prolongadas cavilaciones, cuando veía a Espina tendida lánguidamente sobre la meridiana, fumando con visible beatitud, entre el bando de palomas de sus almohadoncitos de encaje con hopos de cinta, frescos como flores entreabiertas. ¿Qué silbo de culebra había salido de aquellos labios retocados con carmín, para que se despertara en Valdivia la desconfianza? Porque no lo dudaba el artista: el tránsito de la fe a la negra duda no podía deberse sino a ardides de mujer herida en su amor propio y resuelta a no perder el goce de vengarse atormentando.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0084_chap15">
-				<head>- IV - : Intermedio artístico </head>
+				<head xml:id="ne0084_head_014">- IV - : Intermedio artístico </head>
 				<p><seg rend="italic">Bruselas</seg>.</p>
 				<p>Amiga insigne, este viaje es un viaje de muñecas. No se fatiga uno; casi no siente que se traslada, porque los trayectos son cortísimos. El más largo, de París a Bruselas, donde fecho esta epístola, dura cinco horas. Los otros serán expediciones de puro recreo.</p>
 				<p>Voy a darme un baño de maestros, un chapuzón de pintura seria.</p>
@@ -1862,7 +1894,7 @@ MINERVA, CASANDRA.</stage>
 				<p>El hombre que va a cruzar la frontera francesa -diré reproduciendo unas palabras de Limsoë- no es el mismo que la ha pasado con dirección a Bruselas, hace próximamente dos semanas...</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0084_chap16">
-				<head>- V - : París </head>
+				<head xml:id="ne0084_head_015">- V - : París </head>
 				<p>Apenas quitado el polvo, tomado alimento, Silvio se dirigió a la residencia de la Porcel. Encontró cara de palo. La señora, algo indispuesta desde su regreso, apenas recibía. Ya avisaría al señor cuando la fuese posible dejarse ver.</p>
 				<p>Silvio entonces, alarmado, se encaminó a la garzonera de Valdivia, muy próxima al hotel de su enemiga y señora. Tampoco el brasileño se encontraba visible. Conferenciaba en aquel momento con su doctor, y nadie podía distraerle. Ya avisaría... etc.</p>
 				<p>Lago volvió a su hospedaje con las orejas gachas. No sabiendo qué hacer, escribió a Espina un billete suplicante y mimoso, de paso que la remitía el consabido retrato de las rosas, que, encajonado, había permanecido hasta entonces en poder del autor. El billete era un quejido, una deprecación; todo lo que pueden ser los renglones en que un hombre pone su esperanza. No se atrevía a mentar el proyecto de exhibición del retrato, pero lo anheloso del estilo, las reticencias tristes, eran sobrado elocuentes.</p>
@@ -1963,7 +1995,7 @@ MINERVA, CASANDRA.</stage>
 				<p>Silvio se quedó de pie en la acera, palpitando de un gozo y de una esperanza que le movían a alzar los ojos hacia el firmamento, alto, estrellado y frío, con este gesto que hacemos involuntariamente para referir nuestras grandes emociones a algo mayor que ellas, a lo verdaderamente inmenso, a lo que nos envuelve y protege con su magnitud. La helada, que parecía descender de la majestuosa bóveda salpicada de joyeles de pedrerías, le sobrecogió; y la sensación glacial que recorrió sus venas y sus huesos se enlazó con la idea vagamente religiosa que descendía de los astros, de las constelaciones radiantes.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0084_chap17">
-				<head>- VI - : Alborada </head>
+				<head xml:id="ne0084_head_016">- VI - : Alborada </head>
 				<p>Sentada ante la mesa granítica, bajo el toldo claro de las acacias en flor, Minia Dumbría no acababa de resolverse a abrir el correo, y seguía enfrascada en un librote, cuya portada rezaba: <seg rend="italic">Argos divina. Nuestra Señora de los Ojos Grandes</seg>. El correo la producía fastidio, con los diarios que inunda la contradictoria información telegráfica, con las revistas también inficionadas de noticierismo intelectual, con el epistolario aburguesado por las postales; y siempre vacilaba al recibir el chaparrón de papel.</p>
 				<p>Acercó a pasar la baronesa, empuñando su tijera de podar y su navaja de injertar.</p>
 				<p>-Tienes ahí -exclamó- una carta de Silvio Lago. ¿Por qué no la abres?</p>

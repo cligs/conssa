@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La araña negra</title>
-				<title type="sub"></title>
+				
 				<title type="short">AranaNegra1</title>
-				<title type="idno">
-					<idno type="bne">bimo0001651050</idno></title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">6557</measure>
@@ -139,13 +131,62 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0327</idno>
+						<idno type="cligs">ne0327</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.0, Akhenaton, <date when="2014">2014</date>, <idno>18722</idno>, <ref target="https://www.epublibre.org/libro/detalle/18722"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1892">1892</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La araña negra</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0001651050.html">bimo0001651050</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5965738/">Q5965738</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.0, Akhenaton, <date when="2014">2014</date>, <idno>18722</idno>, <ref target="https://www.epublibre.org/libro/detalle/18722"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1892">1892</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> , <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="460660985" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460660985"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juventud a la sombra de la vejez</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950678" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950678"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Ricardito Baselga</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950651" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950651"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Señor Avellaneda</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950643" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950643"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Capitán Alvarez. T. 1</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="460660993" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460660993"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1421300737" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421300737"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1421300680" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421300680"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="342480502" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342480502"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="342480103" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342480103"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Araña Negra</title> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="342479946" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342479946"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. Viva la Republica! [u.a.]</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1136699473" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1136699473"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. ¡Viva la República! La Marsellesa</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520995376" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520995376"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. Viva la República! La Marsellesa. - 1. ed., 1. reimpr. - 1979</title> <date when="1979">1979</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="037647326" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=037647326"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. Viva la Republica! [u.a.]</title> <date when="1987">1987</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1102670480" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1102670480"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Araña Negra</title> <date when="1900">19XX</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1421299631" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421299631"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title>: 	<title type="sub">novela</title> <date when="1900">19XX</date>, <publisher>Industrial Grafica</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950627" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950627"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Araña negra</title> <date when="1900">19XX</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="1182570895" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182570895"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="1182571034" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182571034"/> 		<idno type="isbn" n="8484720527"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="1182570984" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182570984"/> 		<idno type="isbn" n="8484720519"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="381776573" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=381776573"/> 		<idno type="isbn" n="8484720527"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="381776522" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=381776522"/> 		<idno type="isbn" n="8484720519"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="381776212" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=381776212"/> 		<idno type="isbn" n="8484720721"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> <date when="2007">2007</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="546411177" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=546411177"/> 		<idno type="isbn" n="9788484723356"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> <date when="2008">2008</date>, <publisher>Atlas Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="595897770" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=595897770"/> 		<idno type="isbn" n="9788436311280"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +197,14 @@
 					<p>Maurizio Fabbri ha observado que, en la obra de Blasco, «La araña negra» es una novela de transición entre el lirismo de raíz romántica y el realismo, con el atractivo que le confiere la concurrencia de otros subgéneros novelescos (negro, policíaco, histórico, de aventuras, erótico...). El resultado es «una vasta y articulada novela popular, apasionante, tumultuosa, escandalosa, veleidosa, moralizante y didáctica, que ha sabido atraer a multitud de lectores no sólo españoles y no sólo proletarios y semiculturados».</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -187,8 +236,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela satírica</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -218,6 +267,7 @@
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
 			<change when="2016-09-01" who="#jct">The text doesn't have any longer the id ne0271. It is divided into two texts with the ids ne0327 and ne0328.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,15 +279,15 @@
 				<p>Nota del transcriptor: La ortografía del original fue conservada.</p>
 			</div>
 			<div>
-				<head>TOMO PRIMERO</head>
+				<head xml:id="ne0327_head_000">TOMO PRIMERO</head>
 			</div>
 				
 		</front>
 		<body>
 				<div type="part">
-					<head>PROLOGO</head>
+					<head xml:id="ne0327_head_001">PROLOGO</head>
 					<div n="1" type="chapter" xml:id="ne0327_chap1">
-						<head>I</head>
+						<head xml:id="ne0327_head_002">I</head>
 						<p>No es ésta la mejor hora para hacer visitas. En este colegio se guardan muy bien las reglas, señor; no sé si la madre directora podrá recibirle pero a pesar de esto preguntaré.</p>
 						<p>Y el hermano Andrés, al decir estas palabras, se llevaba indolentemente una mano a su puntiagudo y mugriento gorro de seda, como queriendo medir con justo patrón un saludo que no fuera descortés, pero tampoco amable; uno de esos saludos que se guardan para las personas misteriosas que no se sabe de dónde vienen ni lo que quieren. Y sonreía con la expresión de un cancerbero, abriendo aquella bocaza frailuna, oscura, maloliente, de profundidad interminable y adornada en su entrada con tres dientes gastados, retorcidos y amarillentos como las fichas de un dominó de café.</p>
 						<p>Aquel portero de religioso colegio, en su juventud lego de las disueltas órdenes religiosas, defensor después del Altar y el Trono a las órdenes de Cabrera, criado de los jesuitas en Francia y en España y empleado por fin de la pensión del Corazón de Jesús, miraba al recién llegado con la recelosa y hostil curiosidad propia de quien ha pasado casi toda su vida entre gente inquieta y aficionada a la sospecha, que cree la desconfianza un sentimiento natural y el espionaje un deber ineludible. Se veía en el hermano Andrés, con un poco de observación y a pesar de los estragos que la edad había hecho en su cuerpo flacucho, al antiguo lego, tosco, brutal, de puños tan férreos como su estómago y dispuesto lo mismo a barrerle la celda al padre prior como a empuñar el trabuco carlista; pero su posterior roce con los jesuitas habíale creado una nueva personalidad que se adaptaba sobre su antiguo natural como el traje sobre el cuerpo y en virtud de aquella cepilladura loyolesca sabía sonreír con mansedumbre evangélica, mirar a todas partes con los ojos fijos en el suelo y dar a su voz una entonación meliflua y humilde que hacía exclamar a más de una de las ricas devotas que visitaban el colegio: «Este hermano Andrés es un santo varón».</p>
@@ -350,7 +400,7 @@
 						<p>—El talento de nuestro director —pensó la superiora—, me sacará pronto de este compromiso.</p>
 					</div>
 					<div n="2" type="chapter" xml:id="ne0327_chap2">
-						<head>II</head>
+						<head xml:id="ne0327_head_003">II</head>
 						<p>Entró en el despacho don Tomás, arrastrando con tanta humildad sus hábitos clericales, que su tierna mirada parecía pedir perdón a la alfombra, porque la rozaba con los bajos de la sotana.</p>
 						<p>Su edad, unos cincuenta años; su estatura más que regular, su defecto físico saliente, un arqueo de espaldas que casi llegaba a ser joroba, y su rostro el de un hombre que en su juventud tuvo el pelo rojo y ahora, por causa de las canas, lo ostentaba de un color indefinido y sucio; sus mejillas chupadas, su boca contraída por una eterna sonrisa, mezcla de la mansedumbre del esclavo y de la abnegación del mártir, pero que en ciertos momentos desaparece para que pase con la rapidez del relámpago una expresión altiva, sarcástica y soberbia, que parece indicar que sobre aquellos labios está en su casa, pues representa el verdadero carácter del individuo.</p>
 						<p>En cuanto a los ojos, eran fieles imitadores de la boca, pues miraban con la dulzura de la paloma… cuando no tenían la misma expresión cruel, avarienta y cobarde del milano ladrón.</p>
@@ -419,7 +469,7 @@
 						<p>Algunas horas después don Esteban Álvarez y su fiel acompañante salían de la fonda en un carruaje cerrado, dirigiéndose al puerto donde se preparaba a levar anclas el vapor que semanalmente salía para Marsella.</p>
 					</div>
 					<div n="3" type="chapter" xml:id="ne0327_chap3">
-						<head>III</head>
+						<head xml:id="ne0327_head_004">III</head>
 						<p>—¡Qué escándalo, padre mío!</p>
 						<p>Estas fueron las primeras palabras que, elevando los ojos al cielo y poniendo las manos juntas en dulce actitud, pronunció la directora del colegio apenas don Esteban salió de su despacho y la niña fue internada nuevamente en el colegio.</p>
 						<p>—Efectivamente, reverenda madre —contestó el cura—, ese hombre es un pecador empedernido que para atacar a los representantes de Dios no vacila en insultar al rey de cielos y tierra.</p>
@@ -446,9 +496,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE PRIMERA: EL CONDE DE BASELGA</head>
+					<head xml:id="ne0327_head_005">PARTE PRIMERA: EL CONDE DE BASELGA</head>
 					<div n="4" type="chapter" xml:id="ne0327_chap4">
-						<head>I. UN DEFENSOR DEL ABSOLUTISMO</head>
+						<head xml:id="ne0327_head_006">I. UN DEFENSOR DEL ABSOLUTISMO</head>
 						<p>En la madrugada del 1.° de julio de 1822, cuatro batallones de la Guardia Real salieron a la callada de Madrid y se trasladaron al Pardo, donde, con aire omnipotente, dispusieron que su amado rey el señor don <seg rend="italic">Fernando VII</seg> recobrase todos sus derechos de monarca absoluto y que cayera el régimen constitucional nacido año y medio antes con la sublevación de Riego en las Cabezas de San Juan.</p>
 						<p>Fue aquello una chiquillada valiente que costó la vida a muchos infelices y en la que se dieron a conocer don Luis Fernández de Córdova y otros futuros generales que entonces eran simples tenientes o más bien dicho, pollos militares recién salidos del cascarón.</p>
 						<p>En aquella jornada preparada en honor del absolutismo monárquico, sonó por primera vez el nombre de don Fernando Baselga, conde de Baselga, que era un rapaz recién salido de la escuela militar, vivo de genio, despierto de mollera en lo tocante a travesura, gran amigo de los placeres y con el alma un poco atravesada, según decían sus compañeros; pero a quien se le dispensaban sus faltas, que no eran pocas, en gracia al alegre carácter y a la distinción caballeresca que sabía dar hasta a sus actos más ruines.</p>
@@ -496,7 +546,7 @@
 						<p>El conde Baselga iba al frente de medio batallón, contento de la aventura y con todo el empaque de un ilustre caudillo.</p>
 					</div>
 					<div n="5" type="chapter" xml:id="ne0327_chap5">
-						<head>II. El 7 DE JULIO</head>
+						<head xml:id="ne0327_head_007">II. El 7 DE JULIO</head>
 						<p>Al anochecer del día 7 de julio, entre las gentes de alta estofa reunidas en los salones del palacio real, reinaba una alegría no exenta de zozobra.</p>
 						<p>Se esperaban graves acontecimientos para dentro de muy breves horas.</p>
 						<p>El rey, bajo frívolos pretextos, mantenía a su lado a los ministros liberales; los cortesanos comenzaban a tratar a éstos más como vencidos y prisioneros que como gobernantes, y fuera de las doradas cámaras, en las antesalas, escalinatas y patios, vociferaban los soldados de la Guardia que no habían seguido a sus compañeros en la insurrección, y permanecían allí para guardar la persona del soberano.</p>
@@ -599,7 +649,7 @@
 						<p>E inmediatamente su cerebro quedó inmóvil, sumergiéndose en la sombra.</p>
 					</div>
 					<div n="6" type="chapter" xml:id="ne0327_chap6">
-						<head>III. LA CASA MISTERIOSA</head>
+						<head xml:id="ne0327_head_008">III. LA CASA MISTERIOSA</head>
 						<p>Desde principios del siglo, que llamaba la atención de los vecinos de la calle del Arenal y aun de los que no siéndolo pasaban a menudo por dicha calle, un gran caserón situado frente al antiguo convento de San Felipe Neri que tenía ese aspecto enigmático y terrible de los edificios sobre los que pesa una leyenda terminada en su correspondiente maldición.</p>
 						<p>Ancha puerta eternamente cerrada y casi revestida con las pellas de barro que sobre ella iban arrojando sucesivas generaciones de muchachos; largos y panzudos balcones aprisionando entre el labrado hierro de sus balaustradas espesas capas de polvo y telarañas que se extendían hasta cubrir las rotas vidrieras; paredes pintadas al fresco con escenas mitológicas y atrevidos aleros con canalones terminados en boca de dragón que en los días de lluvia arrojaban un verdadero diluvio sobre los transeúntes: éstos eran los detalles más llamativos y principales de aquella fachada que bajo la máscara de su decrepitud inspiraba horror a todos los vecinos.</p>
 						<p>En las rendijas de la gran puerta crecían bosques en miniatura que movían mansamente sus verdes cabelleras al pasar un transeúnte por cerca de aquella, y las ninfas y dioses olímpicos pintados en el muro, estaban descoloridos por la lluvia y los vientos y ostentaban con ademán triste unas carnes enfermizas y amarillentas que habían surgido muchos años antes sobradamente rosadas del pincel de un artista italiano.</p>
@@ -650,7 +700,7 @@
 						<p>En la puerta de dicha casa fue donde cayó herido el conde de Baselga.</p>
 					</div>
 					<div n="7" type="chapter" xml:id="ne0327_chap7">
-						<head>IV. EL SEÑOR ANTONIO</head>
+						<head xml:id="ne0327_head_009">IV. EL SEÑOR ANTONIO</head>
 						<p>De ser poeta el gallardo subteniente de la Guardia Real, el tiempo que permaneció sin volver a la vida le hubiera proporcionado tema suficiente para componer un poema describiendo las vaporosas fantasías de la nada.</p>
 						<p>Hubo un instante en que, perdió la noción de ser; pero este estado negativo desapareció, y del mismo modo que se sale de un sueño, no para despertar, sino para entrar en el ensueño, Baselga comenzó a sentir y a pensar, sin volver por esto a la vida real, pues entró de lleno en las nerviosas fantasías del delirio.</p>
 						<p>Sus oídos zumbaban como si fueran cañones conmovidos por ensordecedores disparos; le parecía que su cuerpo se hundía en un lecho de espuma de jabón, cuya profundidad no tenía término, y por encima de sus ojos que veían estando cerrados, destilaba una interminable procesión de Seres vaporosos de color azulado y formas grotescas, a fuerza de ser extravagantes, que en la confusa memoria del subteniente despertaban el recuerdo de los célebres cartones dibujados por Goya, inagotable almacén de raras imaginaciones.</p>
@@ -754,7 +804,7 @@
 						<p>—La señora baronesa de Carrillo, a pesar de su juventud y hermosura, es tan católica como juiciosa, y está aún más interesada que nosotros en defender los sagrados privilegios del rey.</p>
 					</div>
 					<div n="8" type="chapter" xml:id="ne0327_chap8">
-						<head>V. NIÑA PEPITA</head>
+						<head xml:id="ne0327_head_010">V. NIÑA PEPITA</head>
 						<p>Era ya el octavo día que Baselga estaba en aquella cama, que a pesar de ser mullida, monumental y de interminable anchura, resultaba para el joven potro inquisitorial que le producía las mayores desazones.</p>
 						<p>Nunca había permanecido él tanto tiempo acostado, y su sangre juvenil, a pesar de estar debilitada, enardecíase con aquella larga inercia, impulsando al subteniente a adoptar locas resoluciones. Varias veces estuvo tentado de abandonar la cama, a pesar de las heridas.</p>
 						<p>El cirujano que le asistía estaba maravillado. Nunca había visto una encarnadura tan privilegiada como la de aquel hermoso animal, para quien las heridas graves eran insignificantes rasguños, a juzgar por la facilidad con que se cicatrizaban y la poca molestia que le producían.</p>
@@ -849,7 +899,7 @@
 						<p>El condesito reconoció que ante aquella beldad que pretendía conquistar, él quedaba muy pequeño y que para nada le valdrían sus experimentadas artes de calavera.</p>
 					</div>
 					<div n="9" type="chapter" xml:id="ne0327_chap9">
-						<head>VI. GALANTERÍA Y DEVOCIÓN</head>
+						<head xml:id="ne0327_head_011">VI. GALANTERÍA Y DEVOCIÓN</head>
 						<p>Cuando Baselga hubo tomado asiento frente a la dama y tan cerca de ella que sin esfuerzo alguno podía pisar uno de aquellos pies que con algo más importante asomaban bajo la falda demasiado recogida, quedó silencioso un buen rato, no sabiendo cómo expresarse con una mujer tan excesivamente despreocupada.</p>
 						<p>La baronesa, por su parte, seguía contemplando con aire burlón al gallardo subteniente y esperaba con calma sus palabras.</p>
 						<p>—¡Cuánto tengo que agradecer a usted, bella dama! —dijo por fin el joven rompiendo aquel abrumador silencio—. A usted debo la vida, pues sin su auxilio es probable que a estas horas no existiría ni tendría la dicha de haberla conocido.</p>
@@ -947,7 +997,7 @@
 						<p>Y Pepita, después de hacer al condesito uno de sus saludos irónicos, salió de la estancia riendo como una loca.</p>
 					</div>
 					<div n="10" type="chapter" xml:id="ne0327_chap10">
-						<head>VII. SIGUE LA CONQUISTA</head>
+						<head xml:id="ne0327_head_012">VII. SIGUE LA CONQUISTA</head>
 						<p>Nunca había estado Baselga en un estado moral tan raro.</p>
 						<p>Si aquello no era amor, sería que tal pasión no existe en el mundo.</p>
 						<p>El gentil militar no pensaba ya ni en el rey, ni en la Guardia, ni en los liberales; su única y constante idea era Pepita, aquel encantador diablazo con faldas, y tan enamorado estaba, que… ¡caso asombroso!, hasta perdía las ganas de comer, pues su estómago no podía ya, como en pasados tiempos, engullirse un pollo grandecito de una sentada y absorber tres cuartillos de vino de otros tantos tragos.</p>
@@ -1011,7 +1061,7 @@
 						<p>—No tengas prisa y consuélate con la esperanza de que he de ser tuya antes que de otro. El día en que me encuentres más fría, más desapasionada, más dueña de mi voluntad, entonces será cuando me arrojaré en tus brazos. La hora de mi caída no la habéis de determinar ni tú ni el amor; he de señalarla yo misma; yo, a quien de hoy en adelante, obedecerás con la fidelidad pasiva de un ser sin voluntad.</p>
 					</div>
 					<div n="11" type="chapter" xml:id="ne0327_chap11">
-						<head>VIII. UNA SORPRESA</head>
+						<head xml:id="ne0327_head_013">VIII. UNA SORPRESA</head>
 						<p>Llegó por fin para el impaciente Baselga la hora de su felicidad, que fue aquella en que se contempló dueño de la mujer ansiada.</p>
 						<p>Después de la nocturna escena en el balcón, transcurrieron muchos días sin que la baronesa se mostrara dispuesta a acceder a los deseos del condesito; pero por fin, éste se consideró dichoso viendo, cuando menos lo esperaba, caer en sus brazos el ansiado tesoro de belleza.</p>
 						<p>Sentada al piano e interrumpiendo el canto de una de aquellas romanzas italianas, fue como Pepita declaró a Baselga con una mirada llena de voluptuosidad y hechiceras promesas, que estaba dispuesta a ser suya.</p>
@@ -1088,7 +1138,7 @@
 						<p>Aquella noche el conde no pudo dormir tranquilo. Tanta satisfacción le causaba ser amado por una mujer a quien el rey pedía consejo y que era casi un ministro universal con faldas…</p>
 					</div>
 					<div n="12" type="chapter" xml:id="ne0327_chap12">
-						<head>IX. LA CONFESIÓN</head>
+						<head xml:id="ne0327_head_014">IX. LA CONFESIÓN</head>
 						<p>Al anochecer del día siguiente, Baselga supo por boca de su amada, que en el salón de visitas le esperaba el padre Claudio, deseoso de hablar con él de asuntos muy graves.</p>
 						<p>—¿Quién era el padre Claudio?</p>
 						<p>Entre la inmensa banda de tétricas sotanas que por turno iban pasando por los salones del vetusto caserón o se sentaban a la mesa de Pepita Carrillo, el padre Claudio constituía una brillante excepción y tal vez por esto era recibido con más grandes honores.</p>
@@ -1210,7 +1260,7 @@
 						<p>—Baronesa: el que trabaja <seg rend="italic">para la mayor gloria de Dios</seg> se ve colmado siempre por el Altísimo de inmensas felicidades.</p>
 					</div>
 					<div n="13" type="chapter" xml:id="ne0327_chap13">
-						<head>X. 1823</head>
+						<head xml:id="ne0327_head_015">X. 1823</head>
 						<p>En 1823 cambió por completo la decoración para liberales y serviles que con tanta saña venían combatiéndose hacía tres años.</p>
 						<p>Al rey que decía a sus súbditos «marchemos todos francamente y yo el primero por la senda constitucional», mientras ocultamente favorecía con dinero y con hombres las sublevaciones absolutistas en los montes de Cataluña y Navarra, le parecía todavía insuficiente el armar tropeles de fanáticos, que combatieran en favor del Altar y el Trono, y solicitó el auxilio de la Francia que envió a España al duque de Angulema con sus cien mil hijos de San Luis.</p>
 						<p>Fue aquella una época de desbordamiento y de impudor. Nunca se ha visto un pueblo más propenso a la mudanza, a la traición y a la desvergüenza.</p>
@@ -1243,7 +1293,7 @@
 						<p>Por desgracia para la causa realista, la gloria le volvió la espalda, y para que el mundo no se apercibiera de tal desdén, se veía obligada a falsificar los hechos. Ni más ni menos que esos amantes desdeñados en cuya boca los más insignificantes favores de la mujer ansiada se convierten en comprometedoras y decisivas concesiones.</p>
 					</div>
 					<div n="14" type="chapter" xml:id="ne0327_chap14">
-						<head>XI. CÓMO TERMINA UN CALAVERA</head>
+						<head xml:id="ne0327_head_016">XI. CÓMO TERMINA UN CALAVERA</head>
 						<p>Entre el tropel de esbirros de la tiranía, que como un cinturón de hierro y bocas de fuego rodeaba los muros de Cádiz, figuraba el conde de Baselga, realista decidido y hombre de gran porvenir, del cual se ocupaban periódicos tales como <seg rend="italic">La Atalaya de la Alancha, El Regenerador</seg> y otros papeluchos redactados por furibundos frailes, citando al capitán de la Guardia como un modelo de fieles defensores del despotismo.</p>
 						<p>¡Quién podía saber con certeza el número de barbaridades que el ilustre Baselga había cometido desde Agosto de 1822 hasta aquel momento, defendiendo en los montes con más aire de bandido que militar la causa de Rey y de la Religión!</p>
 						<p>Al frente de las guerrillas compuestas de fanáticos y de gente perdida había pasado más de un año en los montes de Aragón, operando unas veces con entera independencia y otras a los órdenes de Bessieres, el aventurero francés que en 1822 era sentenciado a muerte por conspirador republicano y en 1823 se distinguía mandando a los feroces <seg rend="italic">feotas</seg>, nombre que los liberales daban a los defensores del absolutismo por llamarse con énfasis soldados de la Fe.</p>
@@ -1303,9 +1353,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE SEGUNDA: EL PADRE CLAUDIO</head>
+					<head xml:id="ne0327_head_017">PARTE SEGUNDA: EL PADRE CLAUDIO</head>
 					<div n="15" type="chapter" xml:id="ne0327_chap15">
-						<head>I. LOS NEGOCIOS DE LA ORDEN</head>
+						<head xml:id="ne0327_head_018">I. LOS NEGOCIOS DE LA ORDEN</head>
 						<p>Fue bastante cruel en la capital de España el invierno de 1825. Los temporales sucedíanse con alarmante frecuencia; cuando no llovía, nevaba y un viento frío y huracanado limpiaba las calles de transeúntes, encargándose al mismo tiempo de llenar los cementerios esparciendo pulmonías a granel.</p>
 						<p>Parecía que la naturaleza deseaba imitar con sus furores los actos de la triunfante reacción.</p>
 						<p>A las cuatro de la tarde de uno de aquellos días, o sea cuando las sombras nocturnas comenzaban ya a invadir las calles cubiertas por espesa capa de nieve, un hombre con sotana, de pie tras los vidrios de un balcón perteneciente a una casa vieja con honores de palacio, contemplaba un grupo de voluntarios realistas que parados en el centro de la calle entonaban la <seg rend="italic">Pitita bonita con el piopom</seg>… canción insustancial y ridícula que había venido a sustituir al marcial himno de Riego y que era el canto de guerra de los defensores del absolutismo.</p>
@@ -1420,7 +1470,7 @@
 						<p>—Además —dijo al amanuense cual si le acometiera súbita inspiración—, los buenos católicos de Valencia pueden cumplir sus deseos. La horca puede compaginarse con la hoguera. Di al arzobispo de Valencia que ahorque a Ripoll primeramente y después que arroje su cadáver en un tonel pintado de llamas. Será quemado aparentemente, pues el tal tonel vale tanto como la hoguera del Santo Oficio. Por algo se ha dicho que con la intención basta… Pasemos ahora a los informes de nuestros agentes en Madrid.</p>
 					</div>
 					<div n="16" type="chapter" xml:id="ne0327_chap16">
-						<head>II. LA POLICÍA JESUÍTICA</head>
+						<head xml:id="ne0327_head_019">II. LA POLICÍA JESUÍTICA</head>
 						<p>Qué agentes son los que han venido hoy? —preguntó el padre Claudio a su <seg rend="italic">alter ego</seg> o más bien a su <seg rend="italic">socius</seg> como se dice en el lenguaje usado entre los hijos de Loyola.</p>
 						<p>—Esta tarde sólo he recibido la visita de tres: el camarero de Palacio, el oficial del ministerio de Gracia y Justicia y el empleado de la embajada de Francia.</p>
 						<p>—Empieza por el último. ¿Cuáles son sus informes?</p>
@@ -1546,7 +1596,7 @@
 						<p>—¡Tres toques! —dijo el padre Claudio—. Una carta es. Antonio marcha a recogerla inmediatamente, pues traída a estas horas, debe tratar de asuntos interesantes.</p>
 					</div>
 					<div n="17" type="chapter" xml:id="ne0327_chap17">
-						<head>III. EL LOBO DE PARÍS AL LOBO DE MADRID</head>
+						<head xml:id="ne0327_head_020">III. EL LOBO DE PARÍS AL LOBO DE MADRID</head>
 						<p>Carta es, reverendo padre —dijo el secretario al volver a entrar en el salón.</p>
 						<p>—Acaba de traerla el portero de nuestro colegio y dice que aún no hace un cuarto de hora se la ha entregado el correo de Burgos, el cual ha llegado con retraso a causa de las nieves que obstruyen el paso del Guadarrama.</p>
 						<p>—¿De dónde viene la carta?</p>
@@ -1583,7 +1633,7 @@
 						<p>—Es una visita —murmuró el padre Claudio—. ¿Quién podrá ser a estas horas? Hermano Antonio, sal a recibir al que llega. Debe ser un amigo, ya que lo deja pasar nuestro portero.</p>
 					</div>
 					<div n="18" type="chapter" xml:id="ne0327_chap18">
-						<head>IV. LOS PESARES DE BASELGA</head>
+						<head xml:id="ne0327_head_021">IV. LOS PESARES DE BASELGA</head>
 						<p>—El señor conde de Baselga —dijo Antonio, volviendo a entrar en el despacho.</p>
 						<p>Más allá de la puerta sonaban pasos ruidosos y desiguales que se acercaban rápidamente acompañados del metálico retintín de unas espuelas. Al fin, don Fernando Baselga entró cojeando en la habitación.</p>
 						<p>El campeón del 7 de julio estaba algo desfigurado. Tres años habían sido suficientes para robarle mucha de su antigua gallardía, y tanto la cojera como una prematura obesidad, encubrían con cierto aire de pesadez su antiguo aspecto marcial.</p>
@@ -1670,7 +1720,7 @@
 						<p>—Yo veré también a primera hora a Pepita. Tiempo es ya que vuelva a sentar la cabeza y se convenza de que yo no consiento por mucho tiempo que se emancipe de la Orden. El que entra en nuestra familia y goza de los beneficios del jesuitismo, nunca puede ya recobrar su libertad. Acuérdate siempre de esto, hermano Antonio. Los lazos con que el hijo de San Ignacio se une a la Orden, sólo pueden desligarse con la pérdida de la vida.</p>
 					</div>
 					<div n="19" type="chapter" xml:id="ne0327_chap19">
-						<head>V. LA VÍBORA Y EL LOBO</head>
+						<head xml:id="ne0327_head_022">V. LA VÍBORA Y EL LOBO</head>
 						<p>Estaba Pepita Carrillo en las primeras horas de la mañana siguiente, leyendo en aquel gabinete donde se habían desarrollado las primeras escenas de sus amores con Baselga, cuando uno de los dos negros que la servían de criados entró a anunciarle la visita del padre Claudio.</p>
 						<p>Como en aquella época la chimenea francesa era un mueble desconocido y hasta en el real Palacio se empleaban los más vulgares medios de calefacción, la condesa de Baselga se calentaba junto a un gran brasero, leyendo al mismo tiempo la vida del santo del día en un tomo del <seg rend="italic">Flos Sanctoram</seg>, mientras que de vez en cuando con aire distraído, mojaba un bizcocho en una jícara de chocolate puesta sobre la inmediata mesilla y lentamente lo llevaba a su boca.</p>
 						<p>Cuando el criado iba a retirarse después de anunciar la visita, la condesa cesó de leer y con el rostro contraído por furibunda expresión, preguntó al negro:</p>
@@ -1769,7 +1819,7 @@
 						<p>—¡Imbécil! Huye como el casto José de una mujer hermosa. No quiere comprometerse por miedo a que dominen su voluntad. ¡Monstruo! Sin duda en los novicios de la Orden encontrará consuelo para sus pasiones.</p>
 					</div>
 					<div n="20" type="chapter" xml:id="ne0327_chap20">
-						<head>VI. FIAT LUX</head>
+						<head xml:id="ne0327_head_023">VI. FIAT LUX</head>
 						<p>A las ocho de la mañana el conde de Baselga andaba con paso indeciso por las calles de la coronada villa.</p>
 						<p>Si las gentes de poca monta que a aquellas horas iban a sus quehaceres a paso apresurado y soplándose las manos para ahuyentar el frío, se hubieran fijado en el marcial comandante de caballería de la Guardia, les habría llamado indudablemente la atención el desorden con que llevaba el uniforme y la nerviosidad que se marcaba en su rostro pálido y cejijunto.</p>
 						<p>A aquellas horas otros militares se dirigían al regio Palacio o a los cuarteles para cumplir sus deberes, erguidos y sonrientes, y a su lado el conde ofrecía el aspecto de un hombre que ha pasado la noche en tormentosa orgía y que se retira a su domicilio ebrio y luchando con el alcohol y el cansancio que entorpecen todos sus miembros.</p>
@@ -1809,7 +1859,7 @@
 						<p>—¡Ah! ¡Estás ahí! Entra, conde; tenemos mucho que hablar.</p>
 					</div>
 					<div n="21" type="chapter" xml:id="ne0327_chap21">
-						<head>VII EL JESUITA PIERDE LA PARTIDA</head>
+						<head xml:id="ne0327_head_024">VII EL JESUITA PIERDE LA PARTIDA</head>
 						<p>Estaba el padre Claudio de vuelta de casa de los condes de Baselga, sentado a la gran mesa de su despacho y manejando un sinnúmero de papelotes con una atención posible únicamente en un hombre como él, para quien la vida sólo era un eterno y enrevesado negocio.</p>
 						<p>Cuando su reverencia papeleaba, ya se sabía en la casa que quedaba como aislado del mundo, y el portero o cualquiera de los novicios escogidos que servían en la casa en calidad de ayudantes, se guardaban muy bien de entrar a estorbarle, aunque fuera para darle un recado del Papa o del mismo general de la Compañía, que es como si dijéramos del vicepresidente del cielo.</p>
 						<p>El hermano Antonio, era el único que, por ser como el <seg rend="italic">cúter ego</seg> de su reverencia, tenía el privilegio de entrar en el despacho estando el padre ocupado, aunque con la condición de no hacer ruido ni dirigirle pregunta alguna.</p>
@@ -1845,7 +1895,7 @@
 						<p>—¿Quién te mete a ti a dar consejos? Pepita ha vuelto al redil y nos conviene defenderla para que siga prestándonos buenos servicios. Además en sus tormentosas explicaciones con el conde, puede ser que para sincerarse delate nuestra complicidad en sus relaciones con el rey, con lo que cesaríamos de dirigir la voluntad del conde. Es preciso que yo vaya pronto allá y el corazón de Jesús quiera que no llegue tarde.</p>
 					</div>
 					<div n="22" type="chapter" xml:id="ne0327_chap22">
-						<head>VIII. LA CÓLERA DE BASELGA</head>
+						<head xml:id="ne0327_head_025">VIII. LA CÓLERA DE BASELGA</head>
 						<p>No era operación trivial el peinado de una dama en aquella época.</p>
 						<p>En todos tiempos ha sido el tocado de las cabezas femeninas empresa dificultosa que ha necesitado mucho tiempo y no pocas meditaciones, pero en la última época del reinado de <seg rend="italic">Fernando VII</seg>, la tiránica moda llevó el peinado a la más estupenda exageración en punto a complicado y gigantesco.</p>
 						<p>Pepita estaba ante el espejo de su gabinete ocupada en arreglar sus cabellos con el mayor arte posible, cuando oyó agitados pasos en la habitación vecina y poco después la puerta de la estancia, que estaba entornada, tembló al recibir un fuerte empujón, y girando rápidamente, fue a chocar contra la pared con atronadora violencia.</p>
@@ -1966,7 +2016,7 @@
 						<p>Era que sentía miedo ante el iracundo Baselga y temía que la condesa antes de morir hubiese revelado a su esposo la gran participación que la Orden tenía en muchas de sus faltas.</p>
 					</div>
 					<div n="23" type="chapter" xml:id="ne0327_chap23">
-						<head>IX. LA MORAL JESUÍTICA</head>
+						<head xml:id="ne0327_head_026">IX. LA MORAL JESUÍTICA</head>
 						<p>Al día siguiente entraba el padre Claudio en su despacho, donde, como de costumbre, estaba el hermano Antonio encorvado sobre la gran mesa, ocupado en la inmensa labor que producían los informes y anotaciones secretas de la terrible Compañía.</p>
 						<p>El jefe de los jesuitas al entrar en aquella vasta pieza, que era como el templo erigido en honor del poderío de la Orden, exhaló un suspiro de satisfacción semejante al del peregrino que vuelve a su hogar después de un largo viaje.</p>
 						<p>El secretario, a pesar de su habitual impasibilidad, levantó su cabeza, y con aire de ansiosa interrogación, contempló a su superior.</p>
@@ -2100,9 +2150,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE TERCERA: EL SEÑOR AVELLANEDA</head>
+					<head xml:id="ne0327_head_027">PARTE TERCERA: EL SEÑOR AVELLANEDA</head>
 					<div n="24" type="chapter" xml:id="ne0327_chap24">
-						<head>I. EL HOMBRE DE LA RUE FEROU</head>
+						<head xml:id="ne0327_head_028">I. EL HOMBRE DE LA RUE FEROU</head>
 						<p>Todos los vecinos del barrio de San Sulpicio, el distrito levítico de París, conocían en 1842 al extranjero que habitaba en la rue Ferou, casi desde tiempo inmemorial.</p>
 						<p>Largos años de residencia en la misma calle le habían dado en el barrio el carácter de una institución, y lo mismo las porteras y las vendedoras de esquina que los cocheros de punto en la plaza de San Sulpicio y los traficantes en imágenes y objetos de culto, conocían perfectamente a <seg rend="italic">monsieur <seg rend="italic">l'espagnol</seg></seg> y podían dar cuenta de todo lo que hacía de día, pues su existencia, a través del tiempo, se desarrollaba con la impasible y mecánica exactitud de un reloj.</p>
 						<p>A pesar de esto, en los primeros años, nadie sabía en el barrio a ciencia cierta el por qué de la estancia de aquel extranjero en París; pero todos presentían que aquella residencia en extraño suelo era forzosa y que algo había en su patria que se oponía a su paso y le cerraba las puertas de la frontera.</p>
@@ -2142,7 +2192,7 @@
 						<p>Estas cosas tenían la rara virtud de hacer sonreír un poco al melancólico señor Avellaneda.</p>
 					</div>
 					<div n="25" type="chapter" xml:id="ne0327_chap25">
-						<head>II. LA FAMILIA DEL SEÑOR AVELLANEDA</head>
+						<head xml:id="ne0327_head_029">II. LA FAMILIA DEL SEÑOR AVELLANEDA</head>
 						<p>En el mismo año ya citado, el caballero español alquiló el piso principal del caserón que habitaba y bajó a él los escasos muebles de su cuarto con honores de buhardilla uniéndolos a otros más nuevos y elegantes que un almacenista del otro lado del Sena trajo en varios carromatos.</p>
 						<p>Aquello fue motivo de admiración y causa de interminables comentarios para la portera de la casa y sus congéneres de la calle que reunidas en el patio veían pasar con ojos codiciosos las flamantes sillerías, las relucientes baterías de cocina, los espejos deslumbrantes y esas valiosas e inútiles chucherías de adorno que produce la industria parisién; entreteniéndose al estilo de buenas y entremetentes comadres en poner precio a cada uno de aquellos objetos.</p>
 						<p>Durante una semana entera, fue motivo de todas las conversaciones en la rue Ferou y las inmediatas, aquel cambio radical en las costumbres del señor Avellaneda así como también la transformación física que éste había experimentado.</p>
@@ -2185,7 +2235,7 @@
 						<p>En cuanto a don Ricardo, inútil es decir que se consideraba un hombre feliz, puede ser que por primera vez en su vida.</p>
 					</div>
 					<div n="26" type="chapter" xml:id="ne0327_chap26">
-						<head>III. ¡TÚ SERÁS SU MADRE!</head>
+						<head xml:id="ne0327_head_030">III. ¡TÚ SERÁS SU MADRE!</head>
 						<p>Creció la pequeña María del mismo modo que las demás criaturas y si al tener cinco años se distinguió en algo de las otras niñas que con ella jugaban en el Luxemburgo, fue en lo pálida y enfermiza.</p>
 						<p>Atendiendo a su cualidad de hija única y a que sus padres estaban ya en edad madura, fácil es imaginarse los cuidados y atenciones de que éstos la rodearían. Tenía la pequeñuela en sus padres dos ayos insoportables a fuerza de ser cariñosos y solícitos y una esclava en la ruda Tomasa a quien bastaba oír a la niña toser dos veces para pasar toda una noche en vela.</p>
 						<p>Apenas la pequeña pudo correr y sintió la necesidad de movimiento y agitación propia de todos los niños, el padre la llevó al Luxemburgo con lo que fue cayendo poco a poco en sus antiguas costumbres.</p>
@@ -2222,7 +2272,7 @@
 						<p>—De hoy en adelante los dos estaremos sólos para criarla. ¡Tú serás su madre!</p>
 					</div>
 					<div n="27" type="chapter" xml:id="ne0327_chap27">
-						<head>IV. CRISÁLIDA</head>
+						<head xml:id="ne0327_head_031">IV. CRISÁLIDA</head>
 						<p>La vida de María fue transcurriendo sin tropezar con ningún incidente notable. La muerte de su madre apenas si había causado mella en su ánimo.</p>
 						<p>Es la muerte un fenómeno fatal que apenas si tiene algún valor para los seres que acaban de pasar las puertas de la vida.</p>
 						<p>Sin poseer el cariño de su madre ni conservar de ésta otro recuerdo que la imagen confusa de una señora solícita y dulce que la tenía en la iglesia por espacio de muchas horas, María iba creciendo al lado de aquella criada que no podía hablar de su difunta ama sin derramar lágrimas que se apresuraba a enjugar reemplazándolas con una sonrisa para que no turbasen la apacible calma de la niña.</p>
@@ -2276,7 +2326,7 @@
 						<p>María sonreía de felicidad al pensar que algún día iría a aquel país para ella misterioso que se llamaba España, que Tomasa le describía con tanto entusiasmo y cuya lengua hablaba en el seno de la familia causándole sus palabras el efecto de una armonía arrulladora.</p>
 					</div>
 					<div n="28" type="chapter" xml:id="ne0327_chap28">
-						<head>V. MARIPOSA</head>
+						<head xml:id="ne0327_head_032">V. MARIPOSA</head>
 						<p>El período hermoso de su vida empezó para María el día en que su juventud fue declarada oficialmente o sea aquel en que tomó la primera comunión.</p>
 						<p>Don Ricardo admiró su traje blanco y su velo de desposada, derramó copiosas lágrimas producidas tanto por la alegría como por el recuerdo de su esposa y lo mucho que ésta habría gozado viendo a su hija de tal modo, y no se le ocurrió acompañarla a San Sulpicio, dejando como siempre que cumplieran este encargo su fiel amigo y la criada.</p>
 						<p>¡Con qué profunda unción recibió María confundida entre un tropel de niñas con blancas vestiduras aquel nuevo sacramento de la Iglesia!</p>
@@ -2337,7 +2387,7 @@
 						<p>Muchas veces extendía sus brazos, pues le parecía ver a la cabecera de su cama a un apuesto paladín de ojos melancólicos y de negra cabellera que, cubierto de limpia armadura como aquellos héroes de las leyendas, estaba en actitud de velar su sueño.</p>
 					</div>
 					<div n="29" type="chapter" xml:id="ne0327_chap29">
-						<head>VI. MENTOR Y TELÉMACO</head>
+						<head xml:id="ne0327_head_033">VI. MENTOR Y TELÉMACO</head>
 						<p>En el mes de enero de 1840, el invierno, por no perder su anual costumbre y ser tenido como inconsecuente y caprichoso por los buenos vecinos de París, hacía que éstos andaran por las calles soplándose las manos o frotándose la nariz so pena de sufrir graves deterioros en partes tan integrantes de la belleza física.</p>
 						<p>Hacía un frío de dos mil demonios según la elocuente expresión de la criada del señor Avellaneda.</p>
 						<p>Cuando no soplaba un viento huracanado y punzante caía una lluvia torrencial con estrépito escandaloso; y si ambas explosiones de la ira de la naturaleza cesaban de azotar la gran ciudad y parecía restablecerse la calma en el espacio, comenzaba a descender desde los plomizos celajes del cielo, una inmensa sábana de nieve que se enseñoreaba de todo; lo mismo de los tejados y sus aleros que del pavimento de las calles, llegando a filtrarse al fondo de las cuevas por los angostos respiraderos.</p>
@@ -2412,7 +2462,7 @@
 						<p>—Perfectamente —exclamó el viejo sonriendo con alegría—. Los dos somos hermanos, y aunque sin votos, pertenecemos a la gloriosa Compañía de Jesús. De hoy en adelante nos trataremos con la confianza que debe existir entre dos buenos hermanos, entre dos soldados de Cristo, a los que la sociedad impía y revolucionaria llama <seg rend="italic">jesuitas de hábito corto</seg>.</p>
 					</div>
 					<div n="30" type="chapter" xml:id="ne0327_chap30">
-						<head>VII LO QUE HABÍA SIDO DE BASELGA</head>
+						<head xml:id="ne0327_head_034">VII LO QUE HABÍA SIDO DE BASELGA</head>
 						<p>¿Qué había sido del conde de Baselga después del día en que su matrimonio terminó de modo tan inesperado y trágico?</p>
 						<p>Por consejo del padre Claudio, diose de baja en la Guardia Real y fue a vivir en un rincón de Castilla, en aquel caserón señorial dónde se habían deslizado los primeros años de su infancia y del cual apenas si se acordaba.</p>
 						<p>El complaciente superior del jesuitismo en España era para Baselga una especie de ángel bueno que velaba por él, y de aquí que éste atendiera todas sus indicaciones para cumplirlas con la sumisión inconsciente de un autómata.</p>
@@ -2452,7 +2502,7 @@
 						<p>Baselga resultaba el tipo del soldado español y con su marcial apostura recordaba a los guerreros del <seg rend="italic">siglo XVII</seg>, aquellos arcabuceros ceñudos, atezados y fieros que formaban al frente de los tercios de Figueroa y Requessens.</p>
 					</div>
 					<div n="31" type="chapter" xml:id="ne0327_chap31">
-						<head>VIII. REALIZACIÓN DE UN SUEÑO</head>
+						<head xml:id="ne0327_head_035">VIII. REALIZACIÓN DE UN SUEÑO</head>
 						<p>Pasaron muchos días antes de que María, reponiéndose de la impresión experimentada, pudiera darse exacta cuenta de lo que la ocurría.</p>
 						<p>Fue en una tarde hermosa, risueña y de cielo despejado cuando vio por primera vez a aquel hombre.</p>
 						<p>En el Luxemburgo se realizó el encuentro y fue tan rara aquella impresión, que a la joven le pareció que el paseo estaba transformado por arte repentina y mágica.</p>
@@ -2522,7 +2572,7 @@
 						<p>Pero aquella figura no tenía vagos contornos ni facciones indeterminadas como antes, pues su rostro era, en aquella noche el mismo de Baselga, el cual, procediendo como un redomado pícaro se había introducido sin más preámbulos en el corazón de la niña, tomando posesión de él como dueño y señor.</p>
 					</div>
 					<div n="32" type="chapter" xml:id="ne0327_chap32">
-						<head>IX. LA PASIÓN Y EL SENTIDO COMÚN</head>
+						<head xml:id="ne0327_head_036">IX. LA PASIÓN Y EL SENTIDO COMÚN</head>
 						<p>Muy bien le pareció a Tomasa aquel nuevo amigo de la casa.</p>
 						<p>Y pareciéndole bien a Tomasa acabó de parecerle inmejorable a todo el mundo, pues la rústica doméstica que con la edad y el dominio que la daba la exclusiva dirección de la casa se había hecho algo arisca y dominante, era la verdadera autoridad en aquel recinto dentro del cual el dueño o sea el señor Avellaneda, no tenía más valor que el de una sombra.</p>
 						<p>La aragonesa sentía irresistible simpatía por aquel señor, no se sabe si por esa tendencia inconsciente que las domésticas sienten hacia todo hombre de espada o porque encontraba cierta similitud en su porte marcial y autoritario con el de aquel gendarme bigotudo que le hizo el amor cuando María lactaba todavía de los pechos de su madre.</p>
@@ -2582,7 +2632,7 @@
 						<p>El amor triunfaba ante el sentido común.</p>
 					</div>
 					<div n="33" type="chapter" xml:id="ne0327_chap33">
-						<head>X. DECLARACIÓN</head>
+						<head xml:id="ne0327_head_037">X. DECLARACIÓN</head>
 						<p>¿Cómo supo María que era amada por el hombre cuya imagen no la abandonaba ni aun durante el sueño?</p>
 						<p>Fue en una tarde de primavera y en aquel paseo del Luxemburgo que había sido el mudo y cariñoso testigo de todos los juegos y alegrías de su infancia.</p>
 						<p>Hermosa decoración digna de la amorosa escena. El lindo paseo sacudía el manto de fría esterilidad con que el invierno le había aprisionado y en las entrañas de su fresca tierra despertaban de un sueño de seis meses los fructíferos gérmenes que, estallando hacia arriba, se disponían a ver la luz en forma de verde follaje o de olorosas flores.</p>
@@ -2638,7 +2688,7 @@
 						<p>Lo único que Baselga adelantó fue participar a la omnipotente Tomasa sus relaciones con María, y desde entonces la criada fue la medianera y protectora de aquellos amores.</p>
 					</div>
 					<div n="34" type="chapter" xml:id="ne0327_chap34">
-						<head>XI. EN EL DESPACHO DEL PADRE FABIÁN</head>
+						<head xml:id="ne0327_head_038">XI. EN EL DESPACHO DEL PADRE FABIÁN</head>
 						<p>Entrad, señor García, entrad. Tengo grandes deseos de hablaros.</p>
 						<p>—Reverendo padre, —dijo el viejo español, penetrando en el despacho después de haber anunciado su visita, sacando la cabeza por el resquicio de la entreabierta mampara—, me habéis mandado llamar y aquí estoy, como siempre, fiel a vuestras órdenes.</p>
 						<p>—Vaya, sentaos y encareced menos vuestra puntual fidelidad, pues si os dejan hablar, os tendrán por el primer servidor de la Compañía, siendo así que, aunque con mucha voluntad, pecáis de descuidado.</p>
@@ -2720,7 +2770,7 @@
 						<p>—Recordad que yo fui quien os encargué este negocio para que os lucierais y el que hice todo lo necesario para que el confesor de la difunta señora de Avellaneda os recomendara eficazmente, facilitándoos la amistad con la familia. La Compañía confía en vos. No la hagáis sufrir una decepción porque el castigo sería terrible.</p>
 					</div>
 					<div n="35" type="chapter" xml:id="ne0327_chap35">
-						<head>XII. ESPIONAJE DE JESUITA</head>
+						<head xml:id="ne0327_head_039">XII. ESPIONAJE DE JESUITA</head>
 						<p>Púsose en campaña el señor García para averiguar todo lo referente a los amores de Baselga con María, y comenzó por sonsacar diestramente a todos cuantos servían en casa del señor Avellaneda.</p>
 						<p>El examen de los dos amantes lo dejó para después. Si es que éstos querían espontanearse con él, siempre tendría ocasión para enterarse de sus secretos.</p>
 						<p>Las dos criadas francesas fueron las que primeramente abordó el señor García, en la confianza de que una de ellas, que al decir del padre Fabián, estaba en relaciones con un individuo de la Orden, le proporcionaría las noticias que él necesitaba.</p>
@@ -2766,7 +2816,7 @@
 						<p>—Mañana será el trueno gordo. ¡Descuida, conde arruinado! Que cuando tú vayas a hablar con don Ricardo, ya lo habré yo arreglado de modo que te eche a puntapiés de su casa. ¡Pues no faltaba más sino que ese conde hambriento viniera con sus manos lavadas a apoderarse de los quince millones que tanto tiempo perseguimos! Ese dinero es de la Orden que cuenta ya con él, y el que intente ponerle la mano que se prepare a recibir nuestros rayos. ¡Buena se va a armar mañana! ¡Je, je, je…!</p>
 					</div>
 					<div n="36" type="chapter" xml:id="ne0327_chap36">
-						<head>XIII. LA CÓLERA DE AVELLANEDA</head>
+						<head xml:id="ne0327_head_040">XIII. LA CÓLERA DE AVELLANEDA</head>
 						<p>Fue inmensa la impresión que experimentó Avellaneda cuando su amigo y administrador le reveló los amores de María.</p>
 						<p>Aquel anciano vivía fuera de la realidad. Sus manías y preocupaciones que algunas veces hacían dudar de su razón, daban cierto espíritu vago y fantástico a sus ideas; todo lo miraba por el prisma de su propia personalidad; porque se encontraba débil y viejo no creía que en el mundo hubiera juventud y nunca se le había ocurrido pensar que María pudiese casarse.</p>
 						<p>Era su hija y, por lo tanto (en concepto de Avellaneda), lo natural es que María viviese íntimamente unida a él sin conocer otro cariño que el filial.</p>
@@ -2873,7 +2923,7 @@
 						<p>María le contemplaba con asombro, y completamente aturdida no sabía qué hacer ni dónde dirigirse.</p>
 					</div>
 					<div n="37" type="chapter" xml:id="ne0327_chap37">
-						<head>XIV. EL PADRE FABIÁN Y EL CONDE DE BASELGA</head>
+						<head xml:id="ne0327_head_041">XIV. EL PADRE FABIÁN Y EL CONDE DE BASELGA</head>
 						<p>Dispénseme vuestra reverencia mi tardanza. He estado dos días fuera de casa, viviendo al otro extremo de París con un compañero de armas, y hasta esta tarde no he sabido que había usted enviado repetidas veces a buscarme.</p>
 						<p>—Yo mismo he estado esta mañana en la calle de los Santos Padres.</p>
 						<p>—¿Usted, padre Fabián? ¿Vuestra paternidad ha olvidado sus importantes ocupaciones para venir a buscarme en mi pobre vivienda?</p>
@@ -2979,7 +3029,7 @@
 						<p>El padre Fabián seguía sonriendo.</p>
 					</div>
 					<div n="38" type="chapter" xml:id="ne0327_chap38">
-						<head>XV. EL JESUITA PRÓXIMO A TRIUNFAR</head>
+						<head xml:id="ne0327_head_042">XV. EL JESUITA PRÓXIMO A TRIUNFAR</head>
 						<p>En casa del señor Avellaneda reinaba gran confusión.</p>
 						<p>El orden que regulaba los actos todos de aquella familia habían desaparecido dejando paso a esa confusión propia de todo hogar donde la enfermedad penetra.</p>
 						<p>El señor Avellaneda estaba enfermo de gravedad.</p>
@@ -3100,7 +3150,7 @@
 						<p>El vejete estallaba de satisfacción. Aquello era un día completo, y a ser menos incrédulo en el fondo, había motivo sobrado para rezar un buen rosario a la estampa de Jesús que tenía arriba en su cuartucho.</p>
 					</div>
 					<div n="39" type="chapter" xml:id="ne0327_chap39">
-						<head>XVI. EL OLFATO DE TOMASA</head>
+						<head xml:id="ne0327_head_043">XVI. EL OLFATO DE TOMASA</head>
 						<p>La vieja criada de casa Avellaneda estaba dominada por una continua preocupación.</p>
 						<p>La enfermedad de su señor se agravaba por momentos, y el delirio le dominaba hasta el punto de no dejarle más que muy breves ratos de lucidez, pero no era ésta precisamente la causa del malestar experimentado por Tomasa.</p>
 						<p>Las desgracias se sucedían sin interrupción y la antigua doméstica parecía olfatear el ambiente de la casa presintiendo con su fino instinto de mujer burda, pero astuta, que allí se cernía alguna fatalidad extraña o alguna horrible traición.</p>
@@ -3170,7 +3220,7 @@
 						<p>El punto negro que todavía se marcaba en aquel horizonte feliz, imaginado por Tomasa, mientras corría en busca del comisario, era la prisión de Baselga y el motivo por ella ignorado que le había conducido a la cárcel de Mazas.</p>
 					</div>
 					<div n="40" type="chapter" xml:id="ne0327_chap40">
-						<head>XVII. SE DESHACE LA TRAMA</head>
+						<head xml:id="ne0327_head_044">XVII. SE DESHACE LA TRAMA</head>
 						<p>El comisario de policía del barrio de San Sulpicio era un buen señor, bajo de estatura, algo ventrudo y de rostro bonachón, lo que no impedía que llevase con bastante majestad el fajín tricolor y que en algunas ocasiones sus ojuelos tras los cristales de las gafas brillasen de un modo imponente.</p>
 						<p>Más de dos horas tuvo que aguardarlo Tomasa en la oficina de policía, pues estaba ausente por asuntos del servicio; pero apenas al volver escuchó los ruegos de la criada, marchó directamente a casa de Avellaneda a pesar del cansancio que manifestaba.</p>
 						<p>Al entrar en la habitación del enfermo y contemplar el aspecto de don Ricardo, movió la cabeza de un modo triste. Estaba muy habituado a ver enfermos e instintivamente adivinaba la aproximación de la muerte.</p>
@@ -3226,7 +3276,7 @@
 						<p>—¡La señorita! ¡Es la señorita!</p>
 					</div>
 					<div n="41" type="chapter" xml:id="ne0327_chap41">
-						<head>XVIII. LA FELICIDAD DE BASELGA</head>
+						<head xml:id="ne0327_head_045">XVIII. LA FELICIDAD DE BASELGA</head>
 						<p>María era la que llegaba.</p>
 						<p>Entró con timidez en la alcoba y casi temblando, como arrepentida de la locura que había cometido en un momento de alucinación mística abandonando a su padre cuyo estado fatal conocía, pero su turbación aún aumentó más al ver a Baselga de pie junto al lecho del enfermo.</p>
 						<p>¿Cómo era aquello? ¿Qué hacía allí su amante? La joven al ver al hombre amado sintió que renacía en su pecho la amortiguada pasión y se felicitó de que la policía hubiese ido a sacarla de aquel convento en el cual desde por la mañana la perseguía el recuerdo de su padre moribundo y casi abandonado.</p>
@@ -3275,7 +3325,7 @@
 						<p>La felicidad se mostraba a Baselga bajo una forma fúnebre.</p>
 					</div>
 					<div n="42" type="chapter" xml:id="ne0327_chap42">
-						<head>XIX. EL FIN DE UN JESUITA</head>
+						<head xml:id="ne0327_head_046">XIX. EL FIN DE UN JESUITA</head>
 						<p>Eran las once de la noche y desde las ocho el señor García, sentado en un sillón del despacho del padre Fabián, esperaba pacientemente la llegada de éste.</p>
 						<p>El cerebro del viejo devoto era un hervidero de pensamientos.</p>
 						<p>La derrota que acababa de sufrir, aquel rápido desmoronamiento de la obra construida a costa de largos años y de inagotable paciencia, le producía una cólera sorda que se traslucía con gruñidos y nerviosos estremecimientos.</p>
@@ -3358,9 +3408,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE CUARTA: EL CAPITÁN ÁLVAREZ</head>
+					<head xml:id="ne0327_head_047">PARTE CUARTA: EL CAPITÁN ÁLVAREZ</head>
 					<div n="43" type="chapter" xml:id="ne0327_chap43">
-						<head>I. UN ASPIRANTE A HÉROE</head>
+						<head xml:id="ne0327_head_048">I. UN ASPIRANTE A HÉROE</head>
 						<p>El 20 de setiembre de 1852, fue admitido en la Academia Militar de Toledo, un muchachote de dieciséis años, de rostro franco y ademán altivo, que, como detalle típico, tenía entre las dos cejas esa arruga vertical que delata un carácter tenaz e inquebrantable hasta llegar a la testarudez.</p>
 						<p>Los alumnos de la Academia miraron al recién llegado con la hostil curiosidad propia del caso, y los más antiguos comenzaron a pensar en las rudas pruebas por las que habían de hacer pasar al novato.</p>
 						<p>Pronto les ahorró este trabajo el cadete Esteban Álvarez, que así se llamaba el muchacho, pues al enterarse de lo que proyectaban sus nuevos compañeros, púsose fosco, y tirando del sable, dio una buena paliza a dos de los matoncillos que capitaneaban aquella hostil manifestación contra él.</p>
@@ -3418,7 +3468,7 @@
 						<p>Con tal bagaje de ideas y ensueños, fue Esteban a hacer su aprendizaje militar, y ya vimos cómo al entrar en el Colegio demostró que sus aficiones al estudio no habían amenguado la energía de su carácter ni enmohecido sus puños.</p>
 					</div>
 					<div n="44" type="chapter" xml:id="ne0327_chap44">
-						<head>II. ÁLVAREZ Y SU ASISTENTE</head>
+						<head xml:id="ne0327_head_049">II. ÁLVAREZ Y SU ASISTENTE</head>
 						<p>En 1856 recibió el alférez Álvarez su bautismo de sangre. Recién salido del colegio acababa de incorporarse a un regimiento de guarnición en Madrid, cuando a <seg rend="italic">O'Donnell</seg> se le ocurrió dar fin al famoso bienio progresista nacido del alzamiento de Vicálvaro, llevando a cabo el golpe de Estado que equivalía a una repugnante traición contra su compañero Espartero.</p>
 						<p>La Milicia Nacional mandada por Sixto Cámara y otros revolucionarios, resistió valerosamente aquella violación de las leyes que <seg rend="italic">O'Donnell</seg> llevaba a cabo, pero una vez más venció la fuerza al derecho, y la legalidad cayó al suelo herida por la espada de un ambicioso.</p>
 						<p>El alférez Álvarez se batió como un valiente en la plazuela de Santo Domingo. Al comenzar el combate el joven tenía sus dudas y hacía depender su conducta de la actitud que tomase Espartero. Si el antiguo amigo de su padre se decidía en favor de la causa popular y echaba su espada en la balanza de la revolución, él iría a ponerse al lado de los bravos milicianos aun conociendo que comprometía su porvenir; pero el duque de la Victoria permaneció quieto, negándose a auxiliar a los que combatían en nombre de la Constitución violada, y el alférez, acallando los impulsos de su corazón que le empujaban hacia los insurrectos, permaneció fiel a la ordenanza, y se batió tan bien como el primero, en defensa de una causa que odiaba.</p>
@@ -3462,7 +3512,7 @@
 						<p>Las fatigas y los peligros experimentados en común y esa fraternidad que crea la guerra habían estrechado los lazos de cariño que unían al oficial con su asistente.</p>
 					</div>
 					<div n="45" type="chapter" xml:id="ne0327_chap45">
-						<head>III. LA VI POR VEZ PRIMERA…</head>
+						<head xml:id="ne0327_head_050">III. LA VI POR VEZ PRIMERA…</head>
 						<p>En el invierno de 1862 el sol, faltando a su perversa costumbre, se portaba como un completo caballero con los habitantes de la coronada villa.</p>
 						<p>Los madrileños estaban en pleno mes de enero, y sin embargo, transcurrían semanas enteras sin que el aliento del coloso Guadarrama fuese frío y punzante, y el sol desde las ocho de la mañana esparcía en las calles un ambiente tibio que a despecho de la estación hacía recordar la primavera.</p>
 						<p>La nieve era en aquel año cosa desconocida, y las lluvias invernales habían quedado reducidas a unos cuantos chaparrones que prestaban al Ayuntamiento el gran servicio de limpiar las calles, siempre sucias.</p>
@@ -3524,7 +3574,7 @@
 						<p>Y sin preocuparse por las foscas miradas del gordo portero, permaneció sobre el umbral hasta que hubo desaparecido en lo alto de la escalera aquel vestido de seda, rígido, majestuoso y soberbio como la toga de la justicia.</p>
 					</div>
 					<div n="46" type="chapter" xml:id="ne0327_chap46">
-						<head>IV. QUIÉN ES ELLA</head>
+						<head xml:id="ne0327_head_051">IV. QUIÉN ES ELLA</head>
 						<p>El alférez Lindoro, conocido en el mundo con el nombre de vizconde del Pinar, estaba a medio día con un humor de todos los diablos.</p>
 						<p>Metido en el cuarto de banderas, sufría un arresto de veinticuatro horas que le había impuesto el coronel por ciertas insignificantes faltas en el servicio, y desahogaba su mal humor echando pestes contra todo el mundo y maldiciendo la hora en que a su familia se le ocurrió dedicarlo al ejercicio de las armas y en que el gobierno tuvo la idea de dar el mando de un regimiento a un ordinariote que no hacía caso de recomendaciones, que no respetaba al representante de una de las casas nobles más antiguas de España, y que quería que todas las cosas del cuerpo marchasen con la regularidad de un reloj, aunque para ello tuviera que arrestarse a sí mismo.</p>
 						<p>La desesperación del alférez obedecía principalmente a la soledad en que estaba y que tendría que sufrir hasta las seis de la tarde hora en que terminaba el arresto.</p>
@@ -3586,7 +3636,7 @@
 						<p>—Gracias. Y en cuanto a enamorarse de esa muchacha, piénsalo bien. Es una barbaridad de la que llegarás a arrepentirte; pero en fin, si te empeñas en quererla y la cosa no tiene remedio acuérdate de mi consejo. Hazte amigo del padre Claudio que con su apoyo hasta un barrendero podría aspirar a la mano de una infanta de España.</p>
 					</div>
 					<div n="47" type="chapter" xml:id="ne0327_chap47">
-						<head>V. SE ECLIPSA EL ASTRO</head>
+						<head xml:id="ne0327_head_052">V. SE ECLIPSA EL ASTRO</head>
 						<p>Era una continua obsesión la que ejercía el recuerdo de Enriqueta en el capitán Álvarez.</p>
 						<p>Aquellos ojos negros brillando bajo el encaje de una capota blanca, eran una imagen fantástica, una eterna aparición que turbaban la santa tranquilidad en que hasta entonces había vivido el capitán.</p>
 						<p>No podía ver en la calle un sombrero femenil como el de Enriqueta o un traje semejante o una mujer que mirada por la espalda presentase un aspecto parecido, sin que al momento corriese en su seguimiento para sufrir después una dolorosa decepción que le ponía triste y malhumorado durante algunas horas.</p>
@@ -3663,7 +3713,7 @@
 						<p>El brillante astro había sufrido un eclipse.</p>
 					</div>
 					<div n="48" type="chapter" xml:id="ne0327_chap48">
-						<head>VI. EL SEÑORITO DICE MISA</head>
+						<head xml:id="ne0327_head_053">VI. EL SEÑORITO DICE MISA</head>
 						<p>No tuvo tiempo Álvarez para pensar en la desaparición de Enriqueta, pues una desgracia vino a sacarle de su preocupación amorosa.</p>
 						<p>Sus parientes de Pamplona le escribieron a los pocos días noticiándole que su madre estaba enferma de gravedad, y cuando ya se disponía a pedir una licencia a su coronel para trasladarse a la capital navarra, recibió un telegrama que con el cruel laconismo propio de tales casos, le noticiaba el fallecimiento de la enferma.</p>
 						<p>El dolor que experimentó el capitán borró de su memoria todo recuerdo amoroso, y pasó mucho tiempo entregado a una cruel melancolía, pensando únicamente en aquellos padres tan rudos como bondadosos, que le creían un genio del porvenir, y que habían muerto viéndole todavía confundido entre el vulgo de los mortales.</p>
@@ -3715,7 +3765,7 @@
 						<p>Ya sabía él quién pagaría aquellas misas. El Gobierno.</p>
 					</div>
 					<div n="49" type="chapter" xml:id="ne0327_chap49">
-						<head>VII. EL QUE SE ENTREGA A LA COMPAÑÍA ES UN ESCLAVO PARA SIEMPRE</head>
+						<head xml:id="ne0327_head_054">VII. EL QUE SE ENTREGA A LA COMPAÑÍA ES UN ESCLAVO PARA SIEMPRE</head>
 						<p>Cuando el conde de Baselga poco tiempo después de la muerte de D. Ricardo Avellaneda se vio esposo de la hija de éste, abandonó París, y aprovechando una de las muchas amnistías concedidas por los gobiernos del moderantismo a los emigrados carlistas, fue a establecerse en Madrid.</p>
 						<p>Su esposa, la dulce María, que en su juventud tanto había soñado con España, la patria de sus padres, ansiaba vivir en aquel país, escenario obligado de todas las relaciones poéticas y románticas que tanto la habían entusiasmado en su adolescencia.</p>
 						<p>En cuanto al conde de Baselga, no sentía menos interés por ir a vivir en la capital española. Experimentaba ese amor dominante y casi loco que sienten los emigrados por la patria a la cual no pueden volver, y a esta pasión se unía el deseo egoísta y soberbio de aparecer tras un largo eclipse en aquella ciudad, teatro de sus primeras aventuras, no pobre, envejecido y desilusionado como la mayoría de los que con él realizaron la campaña carlista, sino opulento, feliz y satisfecho con la fortuna nada malévola que en uno de sus caprichos le había hecho dueño de una respetable cantidad de millones y de una mujer que, a pesar de su hermosura y de que podía ser su hija, le amaba con un amor tranquilo y desprovisto de violentas emociones, pero tenaz e inquebrantable.</p>
@@ -3779,7 +3829,7 @@
 						<p>Ahora comprendía el conde la verdad de muchas acusaciones que se dirigían contra la Compañía. El que una vez caía en las garras del negro monstruo era su esclavo para siempre.</p>
 					</div>
 					<div n="50" type="chapter" xml:id="ne0327_chap50">
-						<head>VIII. DOÑA FERNANDA</head>
+						<head xml:id="ne0327_head_055">VIII. DOÑA FERNANDA</head>
 						<p>Quien menos supeditada estaba en la casa del conde de Baselga a la voluntad del padre Claudio, era María Avellaneda.</p>
 						<p>No sentía ésta ninguna preocupación directa contra el hermoso jesuita, pero sus gracias hacían poca mella en su ánimo y además recordaba siempre que le veía a su antiguo preceptor el señor García, de triste memoria.</p>
 						<p>No por esto trataba al jesuita con despego. Bastábale conocer el gran ascendiente que éste tenía sobre su esposo para que le mostrase gran consideración; pero el padre Claudio comprendió pronto que sus relaciones con aquella mujer enfermiza y algo soñadora no pasarían de una respetuosa, pero fría simpatía.</p>
@@ -3843,7 +3893,7 @@
 						<p>La presentación de aquel nuevo portento de la Compañía de Jesús, quedó acordada entre la baronesa y su director espiritual.</p>
 					</div>
 					<div n="51" type="chapter" xml:id="ne0327_chap51">
-						<head>IX. EL CABALLO PADRE</head>
+						<head xml:id="ne0327_head_056">IX. EL CABALLO PADRE</head>
 						<p>Pocos días después, Fernanda recibió la visita del padre Claudio y de su compañero, cuya presentación le había anunciado.</p>
 						<p>Estaba la baronesa ocupada en reñir a las sirvientas por una travesura de Ricardito, su pequeño hermanastro, que por entonces cumplía tres años, y si detenía algunos momentos el chorro de palabras irritadas y vibrantes que salía de su boca, era para fijar sus airados ojos en el muchacho, que temeroso estaba escondido en un rincón, y en su hermana Enriqueta, que era entonces una preciosa niña de siete años y estaba en aquel momento arrodillada y con los brazos en cruz, en castigo de cierta fechoría infantil.</p>
 						<p>La fea baronesa disponía en aquella casa como señora absoluta desde la muerte de su madrastra.</p>
@@ -3919,7 +3969,7 @@
 						<p>—¡Oh!, reverendo superior. La Compañía debe mantener bien a tan excelente caballo padre. No podrá quejarse la yeguada de devotas.</p>
 					</div>
 					<div n="52" type="chapter" xml:id="ne0327_chap52">
-						<head>X. LOS HIJOS DEL CONDE DE BASELGA</head>
+						<head xml:id="ne0327_head_057">X. LOS HIJOS DEL CONDE DE BASELGA</head>
 						<p>Enriqueta y Ricardo crecían bajo la autoridad implacable y ruda de doña Fernanda.</p>
 						<p>Su padre era para aquellos dos niños una especie de ser misterioso al que sólo veían en determinadas horas y cuyo semblante, siempre excesivamente grave y en algunas ocasiones fosco, les hacía temblar. Cuando aquel hombre silencioso y ceñudo tomaba en brazos a los dos pequeños o los ponía sobre sus rodillas sentían impulsos de escapar y las caricias eran para ellos verdaderos tormentos.</p>
 						<p>A doña Fernanda la amaban más, a pesar de la rudeza con que los trataba. Su padre no les dirigía nunca una palabra dura ni intentaba el menor castigo y en cambio su hermanastra aprovechaba la más leve ocasión para maltratarlos; pero ésta al menos hablaba para insultar, mostrábase terriblemente expansiva y no imitaba a aquel hombre de cuya boca sólo salían monosílabos y que después de contemplar fijamente a los dos niños, hacía esfuerzos para que no se le escapasen las lágrimas que acudían a sus ojos.</p>
@@ -3983,7 +4033,7 @@
 						<p>Lo único que consolaba a Baselga, es que éste sería hombre y sabría librarse mejor que su hermana de las seducciones que pudieran ejercer sobre él por medio de una educación mística.</p>
 					</div>
 					<div n="53" type="chapter" xml:id="ne0327_chap53">
-						<head>XI. AUXILIO INESPERADO</head>
+						<head xml:id="ne0327_head_058">XI. AUXILIO INESPERADO</head>
 						<p>Transcurrió todo el verano sin que la existencia del capitán Álvarez se viese turbada por ningún incidente notable.</p>
 						<p>Hacía la vida de un oficial vulgar en tiempo de paz. Pasaba horas enteras en el café, murmuraba de sus superiores y de todo cuanto saltaba en la conversación sin fijarse bien en lo que decía; en el cuarto de banderas lucía su ingenio de un modo gracioso hasta el punto de hacer sonreír a los jefes más adustos y seguía mereciendo aquel apodo de Séneca a los ojos del regimiento que lo consideraba como una de sus glorias.</p>
 						<p>Sólo en alguna noche rompía sus habituales costumbres y era para acudir a aquella casa misteriosa donde le había visto entrar su asistente. Allí veía algunas veces al general Prim, y otras, con conspiradores tan conocidos como el coronel Moriones, el periodista Carlos Rubio o el agitador Muñiz se ocupaba en los trabajos preparatorios de una revolución.</p>
@@ -4050,7 +4100,7 @@
 						<p>Álvarez calló dejando para más adelante la conquista de aquella intermediaria.</p>
 					</div>
 					<div n="54" type="chapter" xml:id="ne0327_chap54">
-						<head>XII. DECLARACIÓN DE AMOR</head>
+						<head xml:id="ne0327_head_059">XII. DECLARACIÓN DE AMOR</head>
 						<p>No tardó mucho el capitán Álvarez en revelar a Tomasa lo que deseaba.</p>
 						<p>La fiel aragonesa, pocos días después de su entrevista con el amo de su sobrino, se enteró de que era el mismo militar que había hecho el amor a Enriqueta y que había excitado las iras de la baronesa.</p>
 						<p>Tomasa se alegró. Es verdad que algún disgusto le produjo al principio el pensar que protegiendo aquella pasión, podía disgustar a su señor, el conde; pero pudo en ella más el deseo de mortificar a la odiada baronesa y de favorecer al capitán, por el cual éste recibió la promesa de ser auxiliado por la vieja criada…</p>
@@ -4092,7 +4142,7 @@
 						<p>Encerrarse en ésta, abrir el cofrecillo e ir releyendo por centésima vez aquellas epístolas amatorias en que con diversas palabras se hacían siempre los mismos juramentos e idénticas promesas, y besar después con instintivo arrebato aquellos pliegos de papel manoseados por continuos exámenes, era el mayor placer de aquella adolescente cuya vida la llenaba el amor.</p>
 					</div>
 					<div n="55" type="chapter" xml:id="ne0327_chap55">
-						<head>XIII. EJERCICIOS PIADOSOS</head>
+						<head xml:id="ne0327_head_060">XIII. EJERCICIOS PIADOSOS</head>
 						<p>Una mañana del mes de febrero, cuando en la casa del conde de Baselga todavía no se habían levantado de la cama los señores, Tomasa, apoyada en la chimenea del comedor, hablaba con una muchachuela que en su feo rostro tenía cierta expresión hipócrita y que era la doncella de doña Fernanda.</p>
 						<p>Ésta profesaba gran cariño a su servidora íntima por ser fea y gran amiga de murmuraciones. La primera condición la tenía en gran estima, pues por la ley del contraste, al lado de aquella cabeza chata, deprimida y terrosa, adquiría cierto brillo de hermosura su rostro rubicundo y narigudo. En cuanto a lo de chismosa, nada gustaba tanto a la baronesa como hablar largo rato con su doncella haciendo que ésta le contara todo lo que ocurría en la casa, así como cuanto sabía de las otras señoras devotas que figuraban con ella en las juntas de cofradía e instituciones benéficas.</p>
 						<p>En esto último salía perdiendo doña Fernanda, pues su doncella, tan dominaba estaba por el afán de murmurar, que apenas la dejaba libre su señora corría en busca de Tomasa, complaciéndose en contarla todas las interioridades de su señora.</p>
@@ -4143,7 +4193,7 @@
 						<p>Y mientras Baselga en la soledad de su despacho se entregaba a interminables cavilaciones, interrumpidas de vez en cuando por risueñas esperanzas que se forjaban en su optimista imaginación, su hija y el capitán Álvarez sonreían embriagados por la dulce primavera del amor.</p>
 					</div>
 					<div n="56" type="chapter" xml:id="ne0327_chap56">
-						<head>XIV. PRIMAVERA DE AMOR</head>
+						<head xml:id="ne0327_head_061">XIV. PRIMAVERA DE AMOR</head>
 						<p>La primera vez que Enriqueta y Esteban Álvarez se vieron de cerca y pudieron hablarse, fue algunos días después de emprender su viaje la baronesa de Carrillo.</p>
 						<p>El invierno era frío y lluvioso, pero aquel día amaneció hermoso y sereno, y la ama de llaves de Baselga, a más de las diez cuando su señor después de almorzar se encerró en su gabinete para dedicarse a sus estudios, invitó a Enriqueta a dar un paseo.</p>
 						<p>Era simplemente, como decía Tomasa, una agradable escapatoria al Retiro, que aquel día debía estar hermoso, y por esto Enriqueta se vistió modestamente, aunque con esa seductora coquetería instintiva en las jóvenes hermosas y elegantes.</p>
@@ -4198,7 +4248,7 @@
 						<p>Álvarez estaba triste. Los días en que más locuaz y adorable se mostraba Enriqueta, eran en los que más sufría el capitán apenas quedaba solo y reflexionaba sobre el porvenir.</p>
 					</div>
 					<div n="57" type="chapter" xml:id="ne0327_chap57">
-						<head>XV. EL AMIGO DE BASELGA</head>
+						<head xml:id="ne0327_head_062">XV. EL AMIGO DE BASELGA</head>
 						<p>El conde de Baselga tenía un amigo a quien no vacilaba en dar este nombre.</p>
 						<p>Aquel misántropo que huía del trato social no buscando más compañía que la de los libros, habíase sentido ablandado de repente en su genio arisco e impenetrable, concediendo poco a poco su confianza a un joven.</p>
 						<p>Entre los pocos que visitaban aquella casa por pura cortesía y que merecían no ser comprendidos en una recepción fría y ceremoniosa, figuraba Joaquín Quirós, joven a quien ciertos periódicos nombraban siempre con el aditamento de <seg rend="italic">distinguido e ilustrado y</seg> que tenía alguna reputación entre la alta sociedad de Madrid.</p>
@@ -4254,7 +4304,7 @@
 						<p>De este modo tuvo el conde un amigo íntimo y Joaquinito Quirós fue en casa de Baselga un personaje considerado por todos, casi como miembro de la familia.</p>
 					</div>
 					<div n="58" type="chapter" xml:id="ne0327_chap58">
-						<head>XVI. EL PADRE CLAUDIO EN CAMPAÑA</head>
+						<head xml:id="ne0327_head_063">XVI. EL PADRE CLAUDIO EN CAMPAÑA</head>
 						<p>Cuando menos lo esperaban los habitantes del palacio de Baselga que vivían en una paz octaviana desde la partida de doña Fernanda, llegó un telegrama anunciando la próxima llegada de ésta, y a la mañana siguiente la baronesa, seguida de su doncella y llevando al lado al padre Felipe que había ido a esperarla a la estación, hizo su entrada triunfal en el edificio, solemnizando su llegada con destempladas riñas al portero y a la restante servidumbre por su torpeza al subir las maletas y los innumerables paquetes que formaban su equipaje.</p>
 						<p>—Ya tenemos el diablo en casa —murmuró Tomasa que perdió repentinamente su animación al ver el avinagrado gesto de la baronesa.</p>
 						<p>Aquella inesperada aparición preocupaba al ama de llaves, que con cierto fundamento esperaba que el viaje de doña Fernanda durara algunos meses más. Su mirada escudriñadora fijábase con insistencia en la persona de la baronesa buscando en ella las huellas de una dolencia. Tenía el rostro muy pálido y su rubicundez se había extinguido; pero el vientre que Tomasa miraba con descaro no presentaba ninguna señal denunciadora. ¡Y aquel viaje sólo había durado tres meses! ¿Se habría engañado la doncella de doña Fernanda, y por su afán de inventar chismes habría atribuido a su señora aquel embarazo que ahora resultaba falso?</p>
@@ -4451,7 +4501,7 @@
 						<p>—Esta noche escribiremos a Gibraltar, al hijo de James Clark, nuestro antiguo agente.</p>
 					</div>
 					<div n="59" type="chapter" xml:id="ne0327_chap59">
-						<head>XVII. UN TESORO DE AMOR DESCUBIERTO</head>
+						<head xml:id="ne0327_head_064">XVII. UN TESORO DE AMOR DESCUBIERTO</head>
 						<p>El día siguiente doña Fernanda estaba furiosa, llegando su abultado rostro a un grado tal de rubicundez que parecía próximo a estallar.</p>
 						<p>El descubrimiento que acababa de hacer la ponía fuera de sí y tanta era su indignación, que cuando cansada de pasear con ademanes de fiera enjaulada por aquel salón de colorido conventual donde reunía su tertulia, se sentaba en un sofá y estrujaba con nerviosas convulsiones aquel abultado paquete de cartas, parecía la clásica y viviente estatua de Medea agitada por una rabia loca.</p>
 						<p>¡Quién iba a imaginarse aquel escandaloso hecho! ¡Quién podía pensar que una muchacha tan recatada y silenciosa como era su hermanastra tuviera tales secretos y se atreviera a sostener unos amores que deshonraban aquella santa casa!</p>
@@ -4596,7 +4646,7 @@
 						<p>¡Cuánto iba a reírse aquella gente! Tenían ya tela cortada para murmuraciones que durarían más de un mes.</p>
 					</div>
 					<div n="60" type="chapter" xml:id="ne0327_chap60">
-						<head>XVIII. EL PADRE Y LA HIJA</head>
+						<head xml:id="ne0327_head_065">XVIII. EL PADRE Y LA HIJA</head>
 						<p>Doña Fernanda adoptó la resolución más propia del caso.</p>
 						<p>Dio dos gritos, se retorció furiosamente las manos, revolviéronse los ojos en sus órbitas como si quisieran saltar, y arrojando espumarajos por la boca se dejó caer, revolcándose a su sabor entre los muebles derribados por la anterior lucha.</p>
 						<p>Baselga no se inmutó gran cosa.</p>
@@ -4731,7 +4781,7 @@
 						<p>—Hija mía, para tranquilidad de tu conciencia, basta solamente que reflexiones que has seguido los consejos de tu padre y un padre sólo apetece el bien de sus hijos.</p>
 					</div>
 					<div n="61" type="chapter" xml:id="ne0327_chap61">
-						<head>XIX. LA FUERZA Y LA ASTUCIA</head>
+						<head xml:id="ne0327_head_066">XIX. LA FUERZA Y LA ASTUCIA</head>
 						<p>Estaba el capitán Álvarez muy lejos de figurarse que Enriqueta le abandonase, así es que, cuando recibió su carta, experimentó una sorpresa sin límites.</p>
 						<p>Tomasa, que había recibido de su señor la orden para marchar a sus posesiones de Castilla, entregó al amo de su sobrino la consabida carta y toda la correspondencia amorosa en que el capitán había depositado sus sentimientos.</p>
 						<p>Álvarez sintió mucho aquella herida moral, y buscó con ahínco al que se la producía.</p>
@@ -4894,7 +4944,7 @@
 						<p>«¿Quién sabe si hará méritos suficientes para ser fusilado? Para esto hoy basta poco. De un modo o de otro nos libraremos de un novio romántico que estorba mis planes y ese mequetrefe aprenderá a oír con más calma, sin amenazar con bofetadas… y a no burlarse de mis faldas».</p>
 					</div>
 					<div n="62" type="chapter" xml:id="ne0327_chap62">
-						<head>XX. EL LAZO TENDIDO</head>
+						<head xml:id="ne0327_head_067">XX. EL LAZO TENDIDO</head>
 						<p>Estaba don Fernando Baselga en su sombrío despacho, ocupado en su habitual tarea de estudiar las fortificaciones inglesas de Gibraltar, cuando entró un criado anunciándole la visita del padre Claudio, a quien acompañaba un caballero.</p>
 						<p>El conde experimentó cierta emoción al oír tal anuncio.</p>
 						<p>Hacía más de dos meses que no veía al poderoso jesuita, pero aquel mismo día por la mañana había recibido la visita de Joaquinito Quirós, quien con aire misterioso, le había dicho de parte del padre Claudio que por la tarde iría éste a verle, acompañado de un caballero que acababa de llegar de Gibraltar, y que se comprometería indudablemente a tomar parte activa en la grande empresa.</p>
@@ -5004,7 +5054,7 @@
 						<p>—Señor Clark: hay cosas que muchas veces producen al que las sabe terribles daños; por tanto, hará usted muy bien en no querer averiguar el porqué le haya yo llamado así o de otro modo. He dicho señor doctor porque me ha dado la gana. Ya está usted contestado; ahora cada uno a sus negocios.</p>
 					</div>
 					<div n="63" type="chapter" xml:id="ne0327_chap63">
-						<head>XXI. LA CONFESIÓN</head>
+						<head xml:id="ne0327_head_068">XXI. LA CONFESIÓN</head>
 						<p>La Colegiata de San Isidro a las cinco de la tarde ofrecía el aspecto sombrío, frío y desnudo que presenta toda iglesia a la hora en que los fieles no llenan sus naves y los santos quedan en esa soledad absoluta y vacía, semejante a la de los muertos en olvidado cementerio.</p>
 						<p>No había bajo las sombrías bóvedas del templo otros vestigios de la vida exterior, que los hilillos del mortecino sol que filtrándose por las altas y pintadas ventanas, trazaban en la pared frontera algunas tibias manchas de luz y el zumbido que la calle de Toledo, arteria popular, siempre rebosante en vida y movimiento, lanzaba al interior del desierto templo.</p>
 						<p>En las sombras que envolvían el altar mayor y en la oscuridad de las capillas laterales brillaban algunos cirios y lámparas, con la misma luz indecisa y tímida de las estrellas entre los nubarrones de una noche tempestuosa y de vez en cuando el suelo conmovíase repercutiendo con agigantada vibración la pisada del sacristán y los acólitos que iban de un lugar a otro ocupados en faenas de embellecimiento y aseo.</p>
@@ -5135,7 +5185,7 @@
 						<p>Otro golpecito como aquella confesión, y el hermoso jesuita andaba de un solo salto la mitad del camino que conducía al generalato.</p>
 					</div>
 					<div n="64" type="chapter" xml:id="ne0327_chap64">
-						<head>XXII. DE CÓMO EL PADRE CLAUDIO TENDIÓ LA TELA DE ARAÑA</head>
+						<head xml:id="ne0327_head_069">XXII. DE CÓMO EL PADRE CLAUDIO TENDIÓ LA TELA DE ARAÑA</head>
 						<p>El doctor don Pedro Peláez era el médico de Madrid más reputado entre la clase aristocrática.</p>
 						<p>Una fama, si no de excesiva brillantez sólida e inalterable acompañaba su nombre y no se sentía enfermo un individuo de la alta sociedad sin que al momento parientes y amigos dijesen con la expresión propia del que ha encontrado una solución salvadora:</p>
 						<p>—¡Qué busquen al doctor Peláez! ¡Que venga inmediatamente!</p>
@@ -5307,7 +5357,7 @@
 						<p>—Así sea, querido doctor. Con ello libraremos a una familia católica del yugo de una obstinación impía, y la Orden recibirá un refuerzo de importancia para continuar su obra sublime de conquistar el mundo en nombre de Cristo. Considere usted si el servicio que yo le exijo es meritorio y digno de santa alabanza.</p>
 					</div>
 					<div n="65" type="chapter" xml:id="ne0327_chap65">
-						<head>XXIII. BASELGA CONVERTIDO EN MOSCA</head>
+						<head xml:id="ne0327_head_070">XXIII. BASELGA CONVERTIDO EN MOSCA</head>
 						<p>La baronesa de Carrillo vivía en el palacio de su padre con completa independencia.</p>
 						<p>Ocupaban sus habitaciones una gran parte del primer piso y sólo dos o tres piezas, las más sombrías, por tener sus vistas al patio, eran las reservadas al jefe de la familia, que vivía en completo aislamiento, y únicamente iba en busca de su hija Enriqueta cuando tenía que acompañarla a una fiesta de sociedad.</p>
 						<p>Entre las habitaciones de la baronesa y las del conde, aunque sólo estaban separadas por la antecámara, parecía mediar un abismo.</p>
@@ -5474,7 +5524,7 @@
 						<p>El padre Claudio acechaba tras la oscilante malla y su alma satánica y ambiciosa sentía como un escalofrío de placer al pensar que estaba próximo el instante en que sería anulado el hombre que se oponía a los planes de la Orden.</p>
 					</div>
 					<div n="66" type="chapter" xml:id="ne0327_chap66">
-						<head>XXIV. BASELGA CAE EN LA RED</head>
+						<head xml:id="ne0327_head_071">XXIV. BASELGA CAE EN LA RED</head>
 						<p>El conde al ver entrar en su despacho al padre Claudio y a Peláez seguidos de tres desconocidos, levantose de su sillón con la actitud de un hombre cortés y amable y les hizo tomar asiento en derredor de su gran mesa de trabajo.</p>
 						<p>El jesuita tuvo buen cuidado en sentarse junto al doctor Zarzoso, que se había colocado frente al conde y que con sus vivos ojillos tan pronto examinaba el rostro de Baselga como aquella habitación hasta en sus menores detalles.</p>
 						<p>Para el célebre alienista, que tenía la costumbre de analizar los rostros con una sola mirada, no pasaron desapercibidos la exaltación que brillaba en la mirada inquieta y vaga del conde y el ensimismamiento que en él se notaba, a pesar de su empeño en mostrarse amable y atractivo.</p>
@@ -5645,7 +5695,7 @@
 						<p>Estaba satisfecho de su fuerza y de su terrible astucia. O no había justicia, o él sería general de la Compañía de Jesús.</p>
 					</div>
 					<div n="67" type="chapter" xml:id="ne0327_chap67">
-						<head>XXV. DONDE EL PADRE CLAUDIO DA EL ÚLTIMO GOLPE A BASELGA Y VUELVE A OCUPARSE DEL CAPITÁN ÁLVAREZ</head>
+						<head xml:id="ne0327_head_072">XXV. DONDE EL PADRE CLAUDIO DA EL ÚLTIMO GOLPE A BASELGA Y VUELVE A OCUPARSE DEL CAPITÁN ÁLVAREZ</head>
 						<p>Cuando a la mañana siguiente el conde de Baselga vio entrar en su despacho a su amigo el jesuita, llamóle la atención inmediatamente la expresión de alegría que llevaba impresa en el rostro.</p>
 						<p>Acababa el conde de levantarse; eran las ocho de la mañana y en la otra ala de la casa, o sea donde estaban situadas las habitaciones de doña Fernanda y de Enriqueta, todo estaba en silencio, velado por la dulce penumbra del sueño matutino.</p>
 						<p>El conde, en la noche anterior, había ido con su hija al Teatro Real. Necesitaba repeler del todo el malhumor producido por su altercado con el doctor Zarzoso, aquel señor desconocido para él, que tanta irritación le había causado; y logró su deseo, pues se acostó muy tranquilo y se levantó tarareando trozos de música italiana que habían quedado en su memoria y que él, falto de sentido filarmónico, desfiguraba de un modo horrible.</p>
@@ -5860,7 +5910,7 @@
 						<p>Quirós se conformó a esperar algunas horas para dar el golpe que aseguraba su porvenir, y con aire de humildad hipócrita siguió al poderoso jesuita a su despacho.</p>
 					</div>
 					<div n="68" type="chapter" xml:id="ne0327_chap68">
-						<head>XXVI. LA ÚLTIMA BUENA OBRA DEL PADRE CLAUDIO</head>
+						<head xml:id="ne0327_head_073">XXVI. LA ÚLTIMA BUENA OBRA DEL PADRE CLAUDIO</head>
 						<p>A Baselga comenzaba a parecerle demasiado extraño el aparato misterioso con que el capitán <seg rend="italic">O'Connell</seg> había revestido su cita.</p>
 						<p>Pasaba el conde por alto que le hubiese hecho salir a una legua de Madrid para ir a aquel caserón de grandes y desiertos patios, rodeado de un vasto jardín con solitarias alamedas a cuyo extremo había entrevisto algunos hombres que al notar su presencia habían desaparecido; hacía caso omiso igualmente de que el doctor Peláez lo hubiese abandonado diciendo que así lo exigía el secreto de la entrevista, dejándolo bajo la dirección de un criado, soberbio mocetón de grandes patillas que orlaban una cara cuadrada y sin expresión alguna; pero no le parecía ya indiferente, pues le causaba cierta molestia próxima a la irritación que lo tuvieran más de una hora en aquella sala, grande, fría y de elevado techo, cuya desnudez aún hacía más antipático el torrente de sol que entraba por las dos rejas situadas sobre el vasto jardín que él había atravesado.</p>
 						<p>La aventura iba ya resultando para el conde demasiado extraña. Aquellas rejas eran demasiado robustas y tenían todo el aspecto de las de presidio. Mirándolas fijamente, el conde llego a sonreírse.</p>
@@ -6082,7 +6132,7 @@
 						<p>—Ya tengo bastante.</p>
 					</div>
 					<div n="69" type="chapter" xml:id="ne0327_chap69">
-						<head>XXVII. REVELACIÓN INESPERADA</head>
+						<head xml:id="ne0327_head_074">XXVII. REVELACIÓN INESPERADA</head>
 						<p>Aquella tarde la baronesa se había mostrado muy complaciente y amable con su hermana. Le había dirigido alegres palabras acariciando bondadosamente sus cabellos y le había prometido concederle alguna libertad mientras el papá estuviera de viaje.</p>
 						<p>Ignoraba Enriqueta cuál era la suerte de su padre, y cuando a la hora de comer mostró extrañeza por su ausencia, la baronesa y el padre Claudio, que a la vuelta de su visita a Palacio había sido invitado por doña Fernanda a quedarse <seg rend="italic">a hacer penitencia</seg> le dijeron que el conde había salido muy de mañana para un viaje en el que estaría algún tiempo.</p>
 						<p>Enriqueta se lamentó de la inesperada marcha de su padre por cuanto le impedía la asistencia a algunas fiestas aristocráticas que habían de verificarse en aquella semana, pero la amabilidad de la baronesa y la jocosidad del padre Claudio y del padre Felipe, que llegó a la hora de los postres, la resarcieron algún tanto de la contrariedad sufrida.</p>
@@ -6222,7 +6272,7 @@
 						<p>Era Tomasa, la antigua ama de llaves.</p>
 					</div>
 					<div n="70" type="chapter" xml:id="ne0327_chap70">
-						<head>XXVIII. DÚO DE AMOR</head>
+						<head xml:id="ne0327_head_075">XXVIII. DÚO DE AMOR</head>
 						<p>Desde las siete que el capitán Álvarez, fumando cigarrillo tras cigarrillo, estaba en su cuarto ocupado en escribir a la luz de un mezquino quinqué.</p>
 						<p>En fino papel de seda escribía con gran cuidado largas cartas que firmaba con un complicado garabato y que iban dirigidas a otros tantos nombres simbólicos sacados en su mayoría de la antigua historia romana.</p>
 						<p>Aquello olía a conspiración y los párrafos numerados que formaban aquellas cartas debían ser instrucciones dirigidas a los conjurados.</p>
@@ -6377,7 +6427,7 @@
 						<p>¡Descansad en paz juramentos de respeto! Ahora podían hablar ya las lenguas maldicientes seguras de que por mucho que dijeran, ni Enriqueta ni Esteban las desmentirían.</p>
 					</div>
 					<div n="71" type="chapter" xml:id="ne0327_chap71">
-						<head>XXIX. LOS PLANES DE QUIRÓS</head>
+						<head xml:id="ne0327_head_076">XXIX. LOS PLANES DE QUIRÓS</head>
 						<p>A las diez de la noche salió Joaquinito Quirós del ministerio de la Gobernación.</p>
 						<p>Había esperado al ministro más de dos horas, por estar éste reunido con sus compañeros en Palacio, y cuando al fin llegó, retuvo al joven escritor católico otra hora larga, haciéndole que repitiera varias veces la delación, como si temiera que algún detalle importante quedase olvidado.</p>
 						<p>El alto funcionario despidió por fin a Quirós, a quien había tratado algo en los aristocráticos salones y le prometió hacer que el gobierno premiase con largueza sus servicios.</p>
@@ -6500,7 +6550,7 @@
 						<p>En su interior sentía la sonrisa de la fortuna anhelada que, aunque tarde, llegaba por fin a favorecerle.</p>
 					</div>
 					<div n="72" type="chapter" xml:id="ne0327_chap72">
-						<head>XXX. DESENLACE INESPERADO</head>
+						<head xml:id="ne0327_head_077">XXX. DESENLACE INESPERADO</head>
 						<p>La fiel Tomasa, al encontrarse frente a la casa donde vivía el capitán Álvarez, hubo de sostener una breve discusión con el vigilante de la calle, y desprenderse de una peseta para que le abriera el portal, y después pasó más de un cuarto de hora en la escalera tirando del cordón de la campanilla sin que ninguno de los durmientes en aquella casa acudiese a su llamamiento.</p>
 						<p>Por fin, oyó unos pasos pesados con acompañamiento de bostezos, y tras la consiguiente pregunta de «¿quién va?», dada por una voz soñolienta, abrióse la puerta apareciendo su sobrino Perico, casi en paños menores y alumbrándose con una candileja.</p>
 						<p>La sorpresa que experimentó el muchacho fue grande al ver a su tía, a quien creía lejos de Madrid, a una hora tan intempestiva.</p>
@@ -6657,7 +6707,7 @@
 						<p>—Lo mismo que en las comedias, chico. Estos lances acaban siempre en casamiento. Es el único arreglo posible.</p>
 					</div>
 					<div n="73" type="chapter" xml:id="ne0327_chap73">
-						<head>XXXI. MAESTRO Y DISCÍPULO</head>
+						<head xml:id="ne0327_head_078">XXXI. MAESTRO Y DISCÍPULO</head>
 						<p>Cuando el criado del padre Claudio entró en el despacho de éste anunciándole la visita de don Joaquín Quirós, el poderoso jesuita, a pesar del gran dominio que tenía sobre sus impresiones, no pudo evitar un gesto de sorpresa e indignación.</p>
 						<p>—¡Cómo! —exclamó—. ¿Ese canalla se atreve aún a venir a aquí? Es más cínico de lo que yo creía.</p>
 						<p>Y después de reflexionar largo rato, dio orden al criado para que dejase pasar al visitante, y volviéndose a su secretario que seguía escribiendo como si no hubiera oído a su superior, díjole así:</p>

@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La araña negra</title>
-				<title type="sub"></title>
+				
 				<title type="short">AranaNegra2</title>
-				<title type="idno">
-					<idno type="bne">bimo0001651050</idno></title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">6073</measure>
@@ -139,13 +131,62 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0328</idno>
+						<idno type="cligs">ne0328</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.0, Akhenaton, <date when="2014">2014</date>, <idno>18722</idno>, <ref target="https://www.epublibre.org/libro/detalle/18722"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1892">1892</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La araña negra</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0001651050.html">bimo0001651050</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5965738/">Q5965738</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.0, Akhenaton, <date when="2014">2014</date>, <idno>18722</idno>, <ref target="https://www.epublibre.org/libro/detalle/18722"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1892">1892</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> , <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="460660985" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460660985"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juventud a la sombra de la vejez</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950678" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950678"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Ricardito Baselga</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950651" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950651"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Señor Avellaneda</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950643" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950643"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Capitán Alvarez. T. 1</title> <date when="1928">1928</date>, <publisher>Ed. Cosmopolis</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="460660993" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=460660993"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1421300737" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421300737"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1421300680" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421300680"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="342480502" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342480502"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="342480103" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342480103"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Araña Negra</title> <date when="1975">1975</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="342479946" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342479946"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. Viva la Republica! [u.a.]</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1136699473" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1136699473"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. ¡Viva la República! La Marsellesa</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520995376" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520995376"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. Viva la República! La Marsellesa. - 1. ed., 1. reimpr. - 1979</title> <date when="1979">1979</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="037647326" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=037647326"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra. Viva la Republica! [u.a.]</title> <date when="1987">1987</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1102670480" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1102670480"/> 		<idno type="isbn" n="8403001738"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Araña Negra</title> <date when="1900">19XX</date>, <publisher>A.T.E.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1421299631" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421299631"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title>: 	<title type="sub">novela</title> <date when="1900">19XX</date>, <publisher>Industrial Grafica</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950627" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950627"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Araña negra</title> <date when="1900">19XX</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="1182570895" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182570895"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="1182571034" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182571034"/> 		<idno type="isbn" n="8484720527"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="1182570984" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182570984"/> 		<idno type="isbn" n="8484720519"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="381776573" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=381776573"/> 		<idno type="isbn" n="8484720527"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="381776522" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=381776522"/> 		<idno type="isbn" n="8484720519"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> <date when="2002">2002</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="381776212" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=381776212"/> 		<idno type="isbn" n="8484720721"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> <date when="2007">2007</date>, <publisher>Renacimiento</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="546411177" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=546411177"/> 		<idno type="isbn" n="9788484723356"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La araña negra</title> <date when="2008">2008</date>, <publisher>Atlas Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="595897770" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=595897770"/> 		<idno type="isbn" n="9788436311280"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +197,14 @@
 					<p>Maurizio Fabbri ha observado que, en la obra de Blasco, «La araña negra» es una novela de transición entre el lirismo de raíz romántica y el realismo, con el atractivo que le confiere la concurrencia de otros subgéneros novelescos (negro, policíaco, histórico, de aventuras, erótico...). El resultado es «una vasta y articulada novela popular, apasionante, tumultuosa, escandalosa, veleidosa, moralizante y didáctica, que ha sabido atraer a multitud de lectores no sólo españoles y no sólo proletarios y semiculturados».</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -187,8 +236,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela satírica</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -218,19 +267,20 @@
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
 			<change when="2016-09-01" who="#jct">The text doesn't have any longer the id ne0271. It is divided into two texts with the ids ne0327 and ne0328.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>TOMO SEGUNDO</head>
+				<head xml:id="ne0328_head_000">TOMO SEGUNDO</head>
 			</div>
 		</front>
 		<body>
 				<div type="part">
-					<head>PARTE PRIMERA: LA SEÑORA DE QUIRÓS</head>
+					<head xml:id="ne0328_head_001">PARTE PRIMERA: LA SEÑORA DE QUIRÓS</head>
 					<div n="1" type="chapter" xml:id="ne0328_chap1">
-						<head>I. PROPAGANDA JESUÍTICA</head>
+						<head xml:id="ne0328_head_002">I. PROPAGANDA JESUÍTICA</head>
 						<p>En marzo de 1866, una de las notabilidades más de modas en Madrid era un reverendo padre jesuita que en las principales iglesias predicaba sermones conmovedores tomando por tema la aflictiva situación en que se hallaba el Papa y fustigando de paso con mano fuerte el espíritu del siglo que se alejaba rápidamente de la benéfica sombra de la Iglesia para arrojarse en el torrente de impiedad revolucionaria que inundaba al mundo.</p>
 						<p>Sus sermones valían tanto como las óperas del Teatro Real, y si para la alta sociedad era un sacrilegio no haber oído al tenor Tamberlich, no se creía menos censurable ser mujer a la moda, buena cristiana y amiga de las santas tradiciones, sin haber ido nunca a escuchar la ardiente palabra de aquel buen padre jesuita que sabía ensartar los más manoseados lugares comunes, poniendo los ojos en blanco y empleando todas las rebuscadas artes de un actor afeminado y dulzón.</p>
 						<p>La iglesia donde el jesuita dejaba oír su voz dos veces por semana, veíase completamente llena desde algunas horas antes de la anunciada para las conferencias; que tal título daba el buen jesuita a sus sermones.</p>
@@ -334,7 +384,7 @@
 						<p>La agitación de Enriqueta iba en aumento.</p>
 					</div>
 					<div n="2" type="chapter" xml:id="ne0328_chap2">
-						<head>II. A LA PUERTA DE LA IGLESIA</head>
+						<head xml:id="ne0328_head_003">II. A LA PUERTA DE LA IGLESIA</head>
 						<p>Fingiendo la joven señora de Quirós una serenidad que no tenía y con la vista fija en el suelo para no ver a aquel hombre, llegó a la pila y al avanzar su mano para tomar agua, sintió en sus dedos el contacto de una mano ardiente.</p>
 						<p>Levantó la cabeza y a pesar de que después de las anteriores reflexiones se encontraba preparada para recibir la más inesperada emoción, no pudo contener un ligero grito de sorpresa ni evitar el retroceder algunos pasos.</p>
 						<p>Parecía fascinada por aquel hombre que había dejado caer el rojo embozo mostrando su rostro y figura.</p>
@@ -459,7 +509,7 @@
 						<p>Y las lágrimas asomaron a los ojos de aquel hombre enérgico cuyo férreo carácter no habían logrado nunca enternecer las más supremas emociones.</p>
 					</div>
 					<div n="3" type="chapter" xml:id="ne0328_chap3">
-						<head>III. EL PRESENTE DE ENRIQUETA</head>
+						<head xml:id="ne0328_head_004">III. EL PRESENTE DE ENRIQUETA</head>
 						<p>Quedaron silenciosos los dos antiguos amantes durante algunos minutos, como saboreando el placer que les producía pensar en el ser inocente venido al mundo, cual recuerdo de aquella noche de amor tan trágicamente interrumpida.</p>
 						<p>Enriqueta fue la primera en romper aquel silencio, pues sentía deseos de hacer olvidar el pasado a Álvarez hablando únicamente de su hija.</p>
 						<p>—¡Si vieras cuán hermosa es! Su parecido contigo es tan exacto, que hasta Fernanda, que te ha visto pocas veces, lo notó desde el primer instante. Bastaría que vieses a mi Marujita un solo momento para que inmediatamente te convencieras de que es tu hija. Hay algo en aquellos ojitos que es una chispa de la misma luz que brilla en los tuyos.</p>
@@ -513,7 +563,7 @@
 						<p>Cuando el sacristán agitó sus llaves frente a la capilla, los dos amantes, uno en pos del otro, salían ya de la iglesia.</p>
 					</div>
 					<div n="4" type="chapter" xml:id="ne0328_chap4">
-						<head>IV. RENUÉVANSE LAS RELACIONES</head>
+						<head xml:id="ne0328_head_005">IV. RENUÉVANSE LAS RELACIONES</head>
 						<p>Poco a poco fue restableciéndose entre los dos antiguos amantes un afecto, que si no era igual a la pasada pasión, equivalía a algo más que a una intimidad amistosa.</p>
 						<p>El adormecido amor volvía renacer en Enriqueta y, aun cuando ella, en su interior, se dirigía a sí misma sermones morales recordando sus deberes y el peligro que corría cediendo a la pasión, lo cierto es que muchas veces se olvidaba de que a los ojos de la sociedad pertenecía a otro hombre, y se entregaba sin reserva al trato con Álvarez.</p>
 						<p>La vigilancia de la baronesa y el género de vida que hasta entonces había hecho, no le permitían salir con frecuencia de su casa completamente sola, pero aprovechaba todas las ocasiones que se le ofrecían para cambiar unas cuantas palabras con Álvarez, unas veces ante el escaparate de una tienda elegante, otras en las alamedas del Retiro, y las más en alguna iglesia donde no fuera muy grande la concurrencia de fieles.</p>
@@ -535,7 +585,7 @@
 						<p>Podía ella, escudada en su estado y recordando sus deberes, oponerse con tenacidad indomable a aquellas pretensiones atrevidas que renacían en Álvarez como retoños de la antigua pasión y que la hacían acoger con expresión ceñuda todos sus osados avances; pero, a pesar de esto, el terrible conspirador era el único hombre que moralmente la poseía y cuya imagen ocupaba por completo su imaginación.</p>
 					</div>
 					<div n="5" type="chapter" xml:id="ne0328_chap5">
-						<head>V. MAL ENCUENTRO</head>
+						<head xml:id="ne0328_head_006">V. MAL ENCUENTRO</head>
 						<p>Se hallaba Esteban Álvarez hacía ya dos horas en la calle de Atocha espiando desde alguna distancia la casa de Enriqueta.</p>
 						<p>Era domingo, habían ya dado las diez de la mañana y Álvarez esperaba, confiando en que Enriqueta saldría a misa, sola como otras veces, y podría cambiar con ella algunas palabras a la puerta de la iglesia.</p>
 						<p>Paseaba el conspirador embozado en su capa para no llamar la atención, y en una de sus vueltas, que le alejó bastante de casa de Enriqueta, al desandar lo recorrido y volver hacia su punto de partida, o sea cerca de la casa de Baselga, vio a pocos pasos en el centro de la acera, a un caballero que envolvía en un rico gabán de pieles una obesidad extraña en un hombre joven.</p>
@@ -600,7 +650,7 @@
 						<p>¡Ah!, ya lo tenía pensado. Iría inmediatamente a consultar con el padre Claudio, que estaba tan interesado como él en librarse de Álvarez, y entre los dos encontrarían el medio más adecuado de suprimir a tan tenaz e iracundo enemigo.</p>
 					</div>
 					<div n="6" type="chapter" xml:id="ne0328_chap6">
-						<head>VI. EN DEMANDA DE AUXILIO</head>
+						<head xml:id="ne0328_head_007">VI. EN DEMANDA DE AUXILIO</head>
 						<p>El padre Claudio estaba aquel día dado a todos los diablos, según se decía Quirós al salir de su despacho.</p>
 						<p>Apenas el diputado cambió con él las primeras palabras, conoció que algún asunto de gran importancia, y no muy grato, preocupaba al poderoso jesuita, hasta el punto de hacerle olvidar aquel disimulo sonriente que era en él característico.</p>
 						<p>El padre Claudio, contra su costumbre, se mostraba brusco y malhumorado, y tal era su distracción que se le habían de repetir muchas veces las mismas palabras para que llegase a fijarse en ellas.</p>
@@ -683,7 +733,7 @@
 						<p>Todo menos eso. Estaba él dispuesto a todo antes que a ponerse en un apurado trance y con tal de no verse ante el revólver de Álvarez, se creía capaz de echar a correr así que se convenciera de que su protector no había preparado una policía providencial que cortase el lance, llevándose preso al temible revolucionario.</p>
 					</div>
 					<div n="7" type="chapter" xml:id="ne0328_chap7">
-						<head>VII. LA ABNEGACIÓN DE PERICO</head>
+						<head xml:id="ne0328_head_008">VII. LA ABNEGACIÓN DE PERICO</head>
 						<p>Comenzaba el crepúsculo a dejar flotante su manto de sombras y todavía don Esteban Álvarez, junto a la abierta ventana, escribía sobre una mesilla cuyo tablero estaba manchado de tinta y de grasa.</p>
 						<p>La habitación era tan modesta, que le faltaba poco para ser una mísera buhardilla.</p>
 						<p>No había encontrado el conspirador asilo más seguro que aquella habitación, perteneciente a la vivienda de un pobre obrero, entusiasta por las ideas avanzadas y comprometido en cuantos movimientos revolucionarios se preparaban en Madrid.</p>
@@ -772,7 +822,7 @@
 						<p>Poco después salieron amo y criado de la casa con gran alarma del obrero revolucionario y su familia, que, vueltos ya de su paseo, estaban en el taller situado en la planta baja.</p>
 					</div>
 					<div n="8" type="chapter" xml:id="ne0328_chap8">
-						<head>VIII. EL FRACASO DE QUIRÓS</head>
+						<head xml:id="ne0328_head_009">VIII. EL FRACASO DE QUIRÓS</head>
 						<p>Aquella noche había gran función en el Teatro Real y por todas las calles principales afluían a la plaza de Oriente lujosos carruajes, en cuyo interior iban las más encopetadas familias de la aristocracia madrileña.</p>
 						<p>En las puertas del célebre coliseo agolpábase gran gentío y los agentes de policía se afanaban en establecer un turno riguroso en la numerosa fila de carruajes, que lentamente avanzaba hacia el vestíbulo para depositar en él sus elegantes cargamentos.</p>
 						<p>Contrastaba el bullicio, la animación y la luz que existían en los alrededores del aristocrático coliseo, con la soledad, la sombra y la quietud que reinaban en el resto de la plaza.</p>
@@ -841,7 +891,7 @@
 						<p>—Búsquele usted, mi capitán; estoy conforme en ello, pero no será por ahora. Con lo de esta noche la autoridad sabe ya que usted se halla en Madrid y redoblará las persecuciones. Debe usted reservarse para el asunto que más importa, lo demás todo se alcanzará. En resumen, amo mío, vámonos a casa, ocultémonos con más cuidado que antes y pise usted la calle únicamente en caso de necesidad, que el diablo anda suelto para nosotros en forma de policía.</p>
 					</div>
 					<div n="9" type="chapter" xml:id="ne0328_chap9">
-						<head>IX. TRISTE AMANECER</head>
+						<head xml:id="ne0328_head_010">IX. TRISTE AMANECER</head>
 						<p>Transcurrieron algunos meses y llegó el verano.</p>
 						<p>La vida de Enriqueta, que antes se deslizaba tranquila y monótona, dedicada por completo al cuidado de su hija, estaba ahora turbada por el recuerdo tan continuo que tomaba el carácter de una obsesión.</p>
 						<p>Mientras Esteban Álvarez le salía al encuentro y, conmovido por los recuerdos de la antigua pasión, intentaba recobrar la felicidad pasada, audacias que eran siempre mal recibidas y merecían enfados y reprimendas, Enriqueta sólo había sentido por aquel hombre una tierna simpatía y una imprescindible necesidad de hablar con él para recordar el período más dichoso de su vida; pero cuando de repente dejó de verlo, cuando transcurrieron semanas enteras sin que ella, desde la ventana de su gabinete o tras los vidrios de su berlina, columbrara la airosa capa con embozos de grana, comenzó a sentir un hondo malestar que la mortificaba a todas horas.</p>
@@ -953,7 +1003,7 @@
 						<p>—¡Abajo los Borbones! ¡Viva la libertad!</p>
 					</div>
 					<div n="10" type="chapter" xml:id="ne0328_chap10">
-						<head>X. EL 22 DE JUNIO</head>
+						<head xml:id="ne0328_head_011">X. EL 22 DE JUNIO</head>
 						<p>Comenzaba a clarear el alba y los centinelas del cuartel de la Montaña pasaban por las terrazas para librarse del entumecimiento que produce el frío del amanecer.</p>
 						<p>En el vasto edificio militar reinaba un silencio absoluto y únicamente las ventanas del cuarto de banderas estaban iluminadas, sin duda porque en tal habitación se hallaban aún despiertos y vigilantes los oficiales de guardia.</p>
 						<p>Un hombre de rostro enérgico con gran barba, era el único ser que rondaba por las inmediaciones del cuartel, que a aquella hora estaban completamente desiertas.</p>
@@ -1030,7 +1080,7 @@
 						<p>Después de esta hecatombe, la reacción, como el bandido que luego de cometido el crimen arroja lejos de sí el puñal ensangrentado, derribó a <seg rend="italic">O'Donell</seg> del poder, lanzándolo al olvido y acelerando con sus desdenes el fin de su existencia.</p>
 					</div>
 					<div n="11" type="chapter" xml:id="ne0328_chap11">
-						<head>XI. LA BARRICADA DE LA PLAZA DE ANTÓN MARTÍN</head>
+						<head xml:id="ne0328_head_012">XI. LA BARRICADA DE LA PLAZA DE ANTÓN MARTÍN</head>
 						<p>Era el más terrible de todos aquellos confusos amontonamientos de adoquines, tierra, carruajes y muebles que la revolución había hecho surgir, soplando sobre las calles de Madrid.</p>
 						<p>Sus diferentes baluartes, que por lo irregularmente construidos parecían montones de basura hacinados por colosal escobazo, cerrando las diferentes entradas a la plaza, convertían a ésta en una ciudadela, en cuyo interior estaba todo lo más granado de Madrid en cuanto a guapeza revolucionaria y entusiasmo político a prueba de decepciones.</p>
 						<p>Allí estaba la representación genuina de aquella edad heroica de la democracia en sus diversas y conmovedoras manifestaciones.</p>
@@ -1134,7 +1184,7 @@
 						<p>Habían conocido a aquel hombre que tan angustiosamente llamaba. Era Quirós.</p>
 					</div>
 					<div n="12" type="chapter" xml:id="ne0328_chap12">
-						<head>XII. EL ÚLTIMO DÍA DE QUIRÓS</head>
+						<head xml:id="ne0328_head_013">XII. EL ÚLTIMO DÍA DE QUIRÓS</head>
 						<p>Después de cenar a la salida del Casino, en un gabinete reservado del café de Fornos, don Joaquín Quirós acompañó a su casa a Lolita Pérez, una muchacha andaluza algo averiada pero muy graciosa, que durante el invierno servía de figuranta en el Real, en el verano se quedaba en Madrid o iba a San Sebastián, según la situación financiera, y en todo tiempo se dedicaba a buscar un protector, porque según ella, a una artista le era imposible prosperar sin tener un arrimo.</p>
 						<p>Habían estado de francachela con dos amigos de Quirós acompañados también de otras prójimas de la misma clase, y disuelta la reunión a más de las tres de la madrugada, el diputado, como hombre de orden, fuese con su querida a casa, mientras que las otras dos parejas, trastornadas por el champaña, cantando y besuqueándose en medio de la calle de Alcalá, dirigíanse hacia el Retiro pausadamente, para ver amanecer y tomar un vaso de leche.</p>
 						<p>La figuranta vivía en la calle de Hortaleza, en un segundo piso cucamente amueblado a expensas de Quirós, quien dejaba tragarse a la graciosa andaluza gran parte de los fondos destinados al periódico.</p>
@@ -1198,7 +1248,7 @@
 						<p>La barricada era atacada por dos puntos, y las tropas iban a entablar el ataque decisivo.</p>
 					</div>
 					<div n="13" type="chapter" xml:id="ne0328_chap13">
-						<head>XIII. LA ÚLTIMA ESCENA DE LA REVOLUCIÓN</head>
+						<head xml:id="ne0328_head_014">XIII. LA ÚLTIMA ESCENA DE LA REVOLUCIÓN</head>
 						<p>Reinó durante todo aquel día en el palacio de Baselga la consternación y la alarma propia de las circunstancias.</p>
 						<p>Los criados, reunidos en la antecámara, hacían animados comentarios sobre lo que ocurría en las calles o se manifestaban dominados por un cómico terror, y las señoras de la casa estaban en una habitación apartada, evitando el peligro de alguna bala que atravesase los cerrados balcones.</p>
 						<p>La baronesa sufría una terrible excitación nerviosa. El ruido de las descargas producíale grandes estremecimientos, y su doncella había de frotarle las sienes con éter, para evitar los desmayos.</p>
@@ -1240,9 +1290,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE SEGUNDA: DE COMO SE FABRICA UN JESUITA</head>
+					<head xml:id="ne0328_head_015">PARTE SEGUNDA: DE COMO SE FABRICA UN JESUITA</head>
 					<div n="14" type="chapter" xml:id="ne0328_chap14">
-						<head>I. RICARDITO BASELGA</head>
+						<head xml:id="ne0328_head_016">I. RICARDITO BASELGA</head>
 						<p>Entre el centenar de alumnos con que contaba el colegio establecido por los jesuitas en Madrid, el primogénito del conde de Baselga era el que merecía mayores distinciones.</p>
 						<p>Aquel niño pálido y enclenque, de ojazos soñadores y de expresión dulce y humilde, era el predilecto de los padres maestros, y el encargado de desempeñar todos los papeles distinguidos dentro del colegio.</p>
 						<p>Cuando el padre Claudio visitaba el establecimiento, Ricardito Baselga era el colegial que merecía todas sus atenciones, y esta predilección bastaba para que en aquella casa, dominada por el más abyecto servilismo, adquiriese el aristocrático niño todos los honores de un reyecillo en pequeño.</p>
@@ -1278,7 +1328,7 @@
 						<p>—Me envanezco con mi hermano como si fuese obra mía. Yo he guiado sus primeros pasos por la senda de la devoción y le he enseñado a amar a Dios. ¡Ay!, ¿qué sería de él si yo lo hubiese abandonado al cuidado de mi padre? Es el único que honrará a la familia. Enriqueta es una casquivana de la que nunca conseguiré hacer una santa.</p>
 					</div>
 					<div n="15" type="chapter" xml:id="ne0328_chap15">
-						<head>II. SAN LUIS GONZAGA</head>
+						<head xml:id="ne0328_head_017">II. SAN LUIS GONZAGA</head>
 						<p>A los once años, le fue permitido al hijo del conde de Baselga leer en otros libros que en los de estudio.</p>
 						<p>Ricardito no se distinguía por su afición a la lectura. Los santos, por lo regular, prefieren la meditación a la ciencia.</p>
 						<p>En concepto del padre Claudio, convenía aficionar al niño a la lectura para que abandonase un tanto su tendencia estática, y por esto los maestros pusieron en sus manos varios libros cuidadosamente escogidos y que trataban de los santos pertenecientes a la Compañía de Jesús.</p>
@@ -1310,7 +1360,7 @@
 						<p>—¡Si Dios me perdonara mis pecados…! ¡Si la Virgen me hablase como a San Luis…! ¿Cómo he de llegar yo a ser santo?</p>
 					</div>
 					<div n="16" type="chapter" xml:id="ne0328_chap16">
-						<head>III. DE CÓMO HABLÓ LA VIRGEN A RICARDO</head>
+						<head xml:id="ne0328_head_018">III. DE CÓMO HABLÓ LA VIRGEN A RICARDO</head>
 						<p>La exagerada devoción del colegial le hacía mirar con más simpatía el establecimiento donde se educaba que la casa de su padre; y por esto, muy al contrario de todos sus compañeros, miraba con santo horror las vacaciones, porque éstas le arrancaban de aquel vasto edificio en cuyos largos corredores se explayaba su imaginación forjando las más absurdas quimeras y en cuya capilla se entregaba a raptos de desesperación, en vista de que sus delirios místicos no producían eco en el cielo.</p>
 						<p>El hijo del conde de Baselga iba por buen camino para llegar a santo, y prueba de ello era que comenzaba a adquirir ese horror a la propia familia, ese desprecio a los seres queridos que caracteriza en sus vidas a todos los elegidos de Dios.</p>
 						<p>Para servir bien al Señor había que abandonar a los padres y hermanos, había que romper todos los lazos terrenales, despreciar los más sagrados afectos; y el niño hizo todo esto, recordando la existencia de muchos de aquellos santos cuyas vidas había leído y de los cuales el detalle más saliente era haber olvidado a los que les dieron el ser para amar únicamente a Dios.</p>
@@ -1369,7 +1419,7 @@
 						<p>—La falta de alimentación le hará ver las más estupendas visiones. Carne y más carne. Éste es el mejor remedio contra las visiones celestes.</p>
 					</div>
 					<div n="17" type="chapter" xml:id="ne0328_chap17">
-						<head>IV. EL CORAZÓN DE JESÚS, BUZÓN DE CORREO</head>
+						<head xml:id="ne0328_head_019">IV. EL CORAZÓN DE JESÚS, BUZÓN DE CORREO</head>
 						<p>Una duda que asaltó a Ricardo pocos días después de haberse decidido por consejo de la Virgen a abrazar la vida religiosa, fue si debía preferir la Compañía de Jesús a cualquiera de las otras Ordenes protegidas por la Iglesia.</p>
 						<p>La regla de San Francisco y la de otros santos fundadores había contado muchos bienaventurados en su seno, y no era por tanto condición precisa, para ser favorito de Dios, el pertenecer al instituto de San Ignacio; pero pronto se desvaneció tal duda en el joven por medio de aquella vida del celestial Gonzaga, cuya lectura constituía todo su recreo.</p>
 						<p>San Luis, al decidirse por el servicio de Dios, había dudado sobre el instituto religioso que debía escoger, pero al fin se había decidido en favor de la Compañía de Jesús, por varias razones que el padre Croisset tenía buen cuidado de consignar en la vida del santo.</p>
@@ -1411,7 +1461,7 @@
 						<p>—El Sagrado Corazón no olvida nunca a sus devotos. Él ha oído tus súplicas; y yo, como mensajero de su divina voluntad, te manifiesto que la Compañía te abre sus brazos. En la semana próxima irás a comenzar tus ejercicios en la casa de novicios que tenemos en Loyola. Mañana mismo hablaré con tu santa hermana la baronesa, que acogerá tu vocación como un favor del cielo.</p>
 					</div>
 					<div n="18" type="chapter" xml:id="ne0328_chap18">
-						<head>V. EL NOVICIADO</head>
+						<head xml:id="ne0328_head_020">V. EL NOVICIADO</head>
 						<p>Salió Ricardo de Madrid, sin despedirse de la baronesa ni de Enriqueta, pues para ser buen jesuita, habíase propuesto olvidar que tenía una familia en el mundo.</p>
 						<p>Apenas entró en el colegio de Loyola, experimentó una satisfacción sin límites.</p>
 						<p>El padre director, jesuita adusto, de facciones demacradas y ojos feroces, que parecían trasparentar el chisporroteo de un oculto fuego, le ordenó que se despojara de su traje y le hizo vestir el hábito talar.</p>
@@ -1486,7 +1536,7 @@
 						<p>El joven jesuita, cuando leyó todas estas disposiciones de uno de los más grandes hombres de la Orden, acogiolas como el resultado de una austeridad que combatía al vicio hasta en sus más extrañas formas, y no se le ocurrió maldecir el voto de castidad que hacía necesarias tan repugnantes leyes para evitar los extravíos brutales de una pasión humana y legítima que, aprisionada por la devoción, se desborda bajo las más asquerosas formas.</p>
 					</div>
 					<div n="19" type="chapter" xml:id="ne0328_chap19">
-						<head>VI. LA ENTRADA EN LA ORDEN</head>
+						<head xml:id="ne0328_head_021">VI. LA ENTRADA EN LA ORDEN</head>
 						<p>Terminado el noviciado, Ricardo Baselga fue llamado a Madrid para prestar sus primeros votos y entrar de lleno en la Compañía.</p>
 						<p>No tenía aún la edad a que se acostumbraba admitir a los otros novicios, pero la poderosa protección del padre Claudio era suficiente para que el joven fuese recibido en la categoría de hermano coadjutor.</p>
 						<p>Al padre Claudio, y a los intereses de la Orden en general, convenía que el joven fuese a vivir en la casa residencia de Madrid.</p>
@@ -1524,7 +1574,7 @@
 						<p>La rareza de aquella visita no podía menos de excitar su curiosidad; pero Ricardo, recordando que el principal deber de un jesuita es obedecer las órdenes de sus superiores sin pararse a comentarlas, cumplió inmediatamente el mandato y se dirigió a la habitación que servía de despacho al padre Claudio cuando éste se hallaba en la casa de la Compañía.</p>
 					</div>
 					<div n="20" type="chapter" xml:id="ne0328_chap20">
-						<head>VII. EL GOLPE ANHELADO</head>
+						<head xml:id="ne0328_head_022">VII. EL GOLPE ANHELADO</head>
 						<p>Era en una pieza no muy grande y de humilde decorado, donde esperaba el padre Claudio.</p>
 						<p>El piso, de rojos y lustrosos ladrillos; las sillas de enea pintadas de verde; las paredes enjabelgadas con pintura plomiza; varios cromos baratos representando a Jesús y varios apóstoles, colgaban de los muros; frente a la puerta de entrada, un gran armario de roble, rematado por una cruz y cuyas hojas entreabiertas dejaban ver tres estantes cargados de carpetas verdes, abultadas y con rótulos; y tras la mesa de pino, cubierta de papeles, y el modesto sillón que ocupaba el padre Claudio, un balcón con blancas cortinas de muselina que se balanceaban acariciadas por la brisa que las lejanas montañas enviaban sobre Madrid, abrasado por el hábito del verano.</p>
 						<p>El padre Claudio estaba muy desfigurado. Eran ya inútiles todos los revoques y afeites de dama que usaba algunos años antes para ocultar su edad. Sus cabellos estaban blancos, el ceñidor había tenido que ceder ante la creciente hinchazón del abdomen, dejándolo en completa libertad; los labios se habían hundido a pesar de la dentadura postiza, y la nariz, cada vez más roja y picuda, sostenía unas grandes gafas de oro tras las cuales relucían, con mortecino resplandor, aquellos ojos que tanto habían conmovido a las aristocráticas beatas.</p>
@@ -1615,7 +1665,7 @@
 						<p>El padre Claudio soñaba ocupar algún día el centro de la inmensa telaraña extendida sobre el globo y que entre sus mallas tantas conciencias tiene aprisionadas.</p>
 					</div>
 					<div n="21" type="chapter" xml:id="ne0328_chap21">
-						<head>VIII. EL GRAN DESCUBRIMIENTO DE LA ORDEN</head>
+						<head xml:id="ne0328_head_023">VIII. EL GRAN DESCUBRIMIENTO DE LA ORDEN</head>
 						<p>Las tardes en que hacía buen tiempo y el padre Claudio no tenía ningún asunto urgente de que ocuparse, acostumbraba ir a pasear en el vasto jardín que tenía la casa residencia situada en las afueras de Madrid.</p>
 						<p>En nada conocía el poderoso jesuita que se hacía viejo como en la necesidad que sentía de ejercicios higiénicos y en su debilidad cada vez mayor para el trabajo.</p>
 						<p>Aquel hombre de hierro, que veinte años antes permanecía dieciocho horas diarias escribiendo y papeleando sin experimentar cansancio alguno y que en cierta ocasión aguantó dos días, con sus noches, entregado a un trabajo urgente y sin descansar más que el tiempo necesario para alimentarse, ahora se sentía débil y no podía estar dos horas en su despacho ocupándose de los negocios, sin que al punto no experimentara vahídos y se sintiera invadido por un creciente desfallecimiento.</p>
@@ -1731,7 +1781,7 @@
 						<p>El padre Tomás se decía, mientras tanto, que aquel hombre era invulnerable y que resultaba imposible sorprenderlo.</p>
 					</div>
 					<div n="22" type="chapter" xml:id="ne0328_chap22">
-						<head>IX. LA TEMPESTAD SE APROXIMA</head>
+						<head xml:id="ne0328_head_024">IX. LA TEMPESTAD SE APROXIMA</head>
 						<p>A pesar de que el padre Claudio sabía defenderse bien de cuantos avances intentaba el astuto jesuita italiano, estaba cada vez más intranquilo.</p>
 						<p>Presentía que en torno de su persona se forjaba la tempestad que había de arruinarle y adivinaba las maquinaciones del padre Tomás, que, desesperado de arrancarle aquella confidencia por tantos medios solicitada, iba tejiendo la red que había de envolverle arrastrándolo a una eterna perdición.</p>
 						<p>Entre los dos jesuitas no existía ya la fría y recelosa separación, propia del espía y del que es vigilado. Aquellos dos atletas de la astucia, al tratarse, habían reconocido sus fuerzas y sé odiaban ya con todo el terrible encono que existe entre rivales.</p>
@@ -1776,7 +1826,7 @@
 						<p>Era aquello el aviso que un moribundo, por conducto de un amigo fiel, enviaba a su colega para que se salvara si aún era tiempo.</p>
 					</div>
 					<div n="23" type="chapter" xml:id="ne0328_chap23">
-						<head>X. LA JUSTICIA JESUÍTICA</head>
+						<head xml:id="ne0328_head_025">X. LA JUSTICIA JESUÍTICA</head>
 						<p>El padre Corsi dormía en su celda del <seg rend="italic">Gesú</seg> de Roma, cuando le despertó repentinamente una ruda impresión.</p>
 						<p>En el corredor inmediato sonaban los pasos recatados de varias personas y por las rendijas de la puerta filtrábase dentro de la celda una luz rojiza y vacilante.</p>
 						<p>El jesuita se incorporó en el mismo instante que el reloj de la casa daba la una de la madrugada y se abría la puerta de la celda, que según disponía la regla de la Orden, no podía cerrarse durante la noche.</p>
@@ -1926,7 +1976,7 @@
 						<p>«Conozco demasiado —decía—, el poder de la Compañía y la facilidad y prontitud con que sabe librarse de aquellos que le estorban. A pesar de que los conozco, reverendo padre, siento hacia vos una viva lástima. Sé quién es el padre General y hasta dónde llega su carácter iracundo y vengativo. Si queréis seguir el consejo de un hombre anciano y experimentado, creedme; apenas leáis esta carta salid de la Compañía y poneos en salvo. El rayo de Roma no tardará en caer sobre vuestra cabeza».</p>
 					</div>
 					<div n="24" type="chapter" xml:id="ne0328_chap24">
-						<head>XI. HUMILLACIÓN</head>
+						<head xml:id="ne0328_head_026">XI. HUMILLACIÓN</head>
 						<p>El padre Claudio, después de leer la carta varias veces, cayó en un estado de profundo desaliento.</p>
 						<p>Era tan terrible aquella noticia y llegaba tan inesperadamente, que al audaz jesuita le faltaba el valor indomable que había demostrado en otras ocasiones.</p>
 						<p>Su situación acababa de ser despejada de un modo terrible. Los altos poderes de la Compañía tenían ya certeza de su traición y no tardaría en sufrir él una muerte igual a la del padre Corsi.</p>
@@ -2023,7 +2073,7 @@
 						<p>¡Lloraba el terrible jesuita! Bien valía la pena aquel espectáculo.</p>
 					</div>
 					<div n="25" type="chapter" xml:id="ne0328_chap25">
-						<head>XII. LA ÚLTIMA MISA</head>
+						<head xml:id="ne0328_head_027">XII. LA ÚLTIMA MISA</head>
 						<p>Nadie se apercibió de aquel golpe de Estado perpetrado en el mayor secreto, como todos los actos que se llevan a cabo en el seno de la Compañía.</p>
 						<p>Los padres jesuitas residentes en Madrid siguieron considerando al padre Claudio como el vicario general de la Orden en España, en vista de que éste desempeñaba, como de costumbre, sus altas funciones.</p>
 						<p>El exterior macilento y el aire desalentado del padre Claudio no llamaba la atención de nadie.</p>
@@ -2139,7 +2189,7 @@
 						<p>Las dos ricas ampollas se hicieron añicos, y el líquido que contenían se esparció por el suelo, no dejando en él más que una pequeña mancha.</p>
 					</div>
 					<div n="26" type="chapter" xml:id="ne0328_chap26">
-						<head>XIII. LA AGONÍA DEL PADRE CLAUDIO</head>
+						<head xml:id="ne0328_head_028">XIII. LA AGONÍA DEL PADRE CLAUDIO</head>
 						<p>El padre Claudio se moría. De esto se hallaban convencidas ya todas las aristocráticas devotas, que, dejando en la puerta una larga fila de carruajes entraban en la portería de la residencia a enterarse del estado de reverendo padre, e igual certidumbre abrigaban todos los individuos de la Orden, que, con aquel inesperado accidente, veían turbada la fiesta solemne, en la que pensaban los novicios durante todo el año.</p>
 						<p>Reinaba en la casa de la Orden ese mismo silencio de las viviendas donde lucha con la muerte alguna persona importante.</p>
 						<p>Los novicios y los hermanos permanecían en sus celdas, y si se veían obligados a salir de ellas, iban por los corredores con paso precipitado y leve, deslizándose como fantasmas. Las campanas del templo no volteaban alegremente como en otros años para conmemorar la festividad, y los padres de importancia, entre los cuales se hallaba el padre Tomás, estaban reunidos en una aula, comentando el suceso, y haciendo votos para que recobrase la salud el reverendo padre, a quien todos manifestaban un cariño sin límites, desde que lo veían próximo a la tumba.</p>
@@ -2272,9 +2322,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE TERCERA: MARUJITA QUIRÓS</head>
+					<head xml:id="ne0328_head_029">PARTE TERCERA: MARUJITA QUIRÓS</head>
 					<div n="27" type="chapter" xml:id="ne0328_chap27">
-						<head>I. LA BARONESA Y LA REVOLUCIÓN</head>
+						<head xml:id="ne0328_head_030">I. LA BARONESA Y LA REVOLUCIÓN</head>
 						<p>El día en que se esparció por Madrid la noticia de la batalla de Alcolea, la baronesa de Carrillo creyó morir de indignación y de miedo.</p>
 						<p>Indignación contra el destino, contra la Providencia Divina, si necesario era, pues existiendo un Señor Todopoderoso en el cielo, no podía ella comprender cómo consentía que el trono de los reyes fuese destruido por las turbas revolucionarias, enemigas de Dios y de los santos.</p>
 						<p>Miedo, porque bien debía sentirlo una dama de Palacio, aristócrata de nacimiento y bastarda real, viendo pasar por la calle aquellas bandas de hombres armados, terribles revolucionarios que comenzaban a jugar a la milicia nacional, y daban a entender su ferocidad sin límites, destruyendo las coronas grabadas en los escudos o en las puertas de ciertos establecimientos.</p>
@@ -2328,7 +2378,7 @@
 						<p>No era una aparición. Aquel militar era Esteban Álvarez, el antiguo amante de Enriqueta, el verdadero padre de María… el fusilado el día 22 de junio.</p>
 					</div>
 					<div n="28" type="chapter" xml:id="ne0328_chap28">
-						<head>II. LO QUE FUE DEL REVOLUCIONARIO ÁLVAREZ</head>
+						<head xml:id="ne0328_head_031">II. LO QUE FUE DEL REVOLUCIONARIO ÁLVAREZ</head>
 						<p>Cuando el ex-capitán Álvarez, sentado en el café de Madrid, sito en el boulevard Montmartre y el más frecuentado por los españoles residentes en París, contaba, a sus compañeros de emigración, sus hazañas del 22 de junio, lo que más excitaba la atención y torturaba la curiosidad de todos, era la última parte de la jornada o sea lo que le ocurrió después de disparar el último tiro en la barricada de la plaza de Antón Martín.</p>
 						<p>¡Oh! ¡Qué gran cosa resulta la amistad cuando es verdadera! ¡Cuán poco debe uno guiarse por las apariencias! Muchas veces el amigo que se desprecia y que en menos se tiene es el que presta el servicio supremo que con más emoción se recuerda durante toda la vida.</p>
 						<p>Huían Álvarez y su asistente de la barricada que acababa de tomar la tropa, cuando al pasar por frente a la casa de Enriqueta, detúvose sorprendido viendo a ésta en un balcón. Hízola una señal de adiós, y apremiado por el peligro, volvió a emprender su precipitada carrera; pero ya era tarde para salvarse.</p>
@@ -2515,7 +2565,7 @@
 						<p>Aquella carta conmovió al revolucionario y le hizo odiar aún con más fuerza el régimen político contra el cual conspiraba.</p>
 					</div>
 					<div n="29" type="chapter" xml:id="ne0328_chap29">
-						<head>III. Álvarez después de la revolución</head>
+						<head xml:id="ne0328_head_032">III. Álvarez después de la revolución</head>
 						<p>Al triunfar la revolución en septiembre de 1868, Álvarez vino a España, entrando por Cataluña con algunos generales emigrados. En Barcelona se reunió con Prim, que hacía su viaje insurreccional por las costas del Mediterráneo, y entró en Madrid formando parte del Estado mayor del célebre general, que fue acogido en la capital de España con la ovación más delirante que se recuerda.</p>
 						<p>Álvarez no olvidó a su asistente, quien a los pocos días entró también en Madrid, completamente convertido, pues a pesar de su sencillez, no dejaba de darse alguna importancia en vista de las atenciones recibidas en el camino.</p>
 						<p>Había desembarcado en Málaga con otros deportados políticos, y desde allí hasta la corte, su viaje había sido una serie de ovaciones tributadas por el pueblo a los que se habían sacrificado por su libertad. Perico quería seguir siendo para su amo un fiel asistente, pero para los demás aspiraba a los honores de personaje, y muchas noches, mientras Álvarez estaba ausente, iba él a alguno de los clubs populares que entonces comenzaban a formarse y recibía allí de los oradores los elogios destinados a los mártires, conmoviéndose hasta el punto de derramar lágrimas.</p>
@@ -2556,7 +2606,7 @@
 						<p>Había que ser prudente y no hacer, como en pasadas épocas, demostraciones de desprecio a aquel ogro que la maldita revolución ponía nuevamente ante ella.</p>
 					</div>
 					<div n="30" type="chapter" xml:id="ne0328_chap30">
-						<head>IV. Un revolucionario y una beata</head>
+						<head xml:id="ne0328_head_033">IV. Un revolucionario y una beata</head>
 						<p>En toda la noche no pudo dormir la baronesa, agitada por los pensamientos que le producían el haber visto a Álvarez la mañana anterior.</p>
 						<p>A la madrugada, cuando ya sonaba en las calles el campanilleo de las burras de leche y el cencerro de las vacas, pudo atrapar al sueño, pero no gozó de tal dicha por muchas horas.</p>
 						<p>Eran las once cuando entró su lenguaraz doncella a avisarle, con tono de alarma, que había estado a visitarla un comandante, anunciando que volvería a la una, pues tenía que hablar con urgencia a la señora.</p>
@@ -2652,7 +2702,7 @@
 						<p>Durante algunas horas paladeó con fruición su victoria, pero por la tarde estaba ya arrepentida de haber excitado la cólera del revolucionario.</p>
 					</div>
 					<div n="31" type="chapter" xml:id="ne0328_chap31">
-						<head>V. La resolución de la baronesa</head>
+						<head xml:id="ne0328_head_034">V. La resolución de la baronesa</head>
 						<p>La baronesa, cada vez más arrepentida de haber excitado con su altivez la cólera del comandante Álvarez, buscaba el medio de librarse de los peligros que sospechaba próximos.</p>
 						<p>El revolucionario se vengaría de ella; esto era indudable para la baronesa.</p>
 						<p>Al principio pensó avistarse con Serrano, aquel amigo Paco, que era para ella el ángel de salvación en la tormenta revolucionaria que forzosamente atravesaba; impetraría su auxilio, pidiéndole que el gobernador de Madrid cuidase de vigilar a Álvarez para evitar que robase a la niña.</p>
@@ -2738,7 +2788,7 @@
 						<p>De buena se había librado. Un hombre así, sólo debía hallarse a sus anchas después de beberse una ración de sangre azul.</p>
 					</div>
 					<div n="32" type="chapter" xml:id="ne0328_chap32">
-						<head>VI. El colegio de Nuestra Señora de la Saletta</head>
+						<head xml:id="ne0328_head_035">VI. El colegio de Nuestra Señora de la Saletta</head>
 						<p>A la semana de encontrarse Marujita Quirós en el colegio de Valencia, encontraba muy agradable su nueva vida.</p>
 						<p>Ella, que se pasaba horas enteras al lado de su aya, en la casa de Madrid, escuchando con aire estúpido la conversación monótona propia de una vieja, o que había limitado todos sus juegos a los que le proporcionaba alguna burda criada, y esto a espaldas de la señora baronesa, que, llevada de sus preocupaciones, condenábala a eterna inmovilidad, no podía menos de alegrarse con aquella nueva vida que se deslizaba en perpetua animación en continuo bullicio en medio de un centenar de niñas, que, por ser mayores que ella y notar la gran predilección que la tenían las buenas madres, tratábanla como el bebé de la casa, asediándola con cuidados y tiernas atenciones.</p>
 						<p>María encontraba muy hermosa su vida. Levantábanse a las seis en verano y a las siete en invierno, bajaban a la capilla a oír misa y rezar a coro las oraciones, tomaban el eterno desayuno de chocolate con migas; entraban después en las diferentes clases, comían a las doce, jugaban después en el patio de recreo hasta las dos, volvían otra vez a sus trabajos hasta las seis, hora en que reaparecía el juego, pasando el restante tiempo hasta las nueve, hora de acostarse, en cenar y rezar oraciones. En las tardes de los jueves y domingos las colegialas, formadas en parejas y vigiladas por dos de las maestras más respetables, salían a paseo por los alrededores más tranquilos de la ciudad.</p>
@@ -2761,7 +2811,7 @@
 						<p>La vida reglamentaria y monótona del colegio borró en poco tiempo las aficiones adquiridas en aquel corto período de aire libre y agitación campestre, y cuando ya tenía cerca de nueve años y comenzaba a considerar al coco de Álvarez como un ser fantástico inventado por la baronesa y las religiosas para hacerle miedo, encontrose con aquel hombre terrible en el despacho de la directora.</p>
 					</div>
 					<div n="33" type="chapter" xml:id="ne0328_chap33">
-						<head>VII. La primera época de colegiala</head>
+						<head xml:id="ne0328_head_036">VII. La primera época de colegiala</head>
 						<p>Ya sabemos de qué modo Esteban Álvarez vio a su hija en el convento de Nuestra Señora de la Saletta y cómo le recibió la asustada María.</p>
 						<p>Fugitivo de Madrid, después del golpe de Estado del 3 de enero, detúvose algunas horas en Valencia, y dejando en su hospedaje a Perico, el fiel compañero de aventuras políticas, fue al colegio a ver a aquella niña, cuyo recuerdo no le había abandonado en ninguna circunstancia.</p>
 						<p>Sabía de mucho tiempo antes el lugar a donde la baronesa había llevado a su sobrina para evitar que él pudiese verla, desde entonces había formado el proyecto de ir en busca de María; pero la vida de continua agitación y no menos zozobra que le hacían llevar las difíciles circunstancias por que atravesaba la República, impidiéronle cumplir este deseo que únicamente pudo realizar cuando, en vez de ser poderoso y respetado, veíase convertido en un fugitivo sobre el que sus enemigos podían cebarse.</p>
@@ -2833,7 +2883,7 @@
 						<p>Las consecuencias que tuvo para María aquel suceso, fue abandonar en el mismo día el dormitorio de las medianas para pasar al de las señoritas mayores y transformar su vestido, añadiendo algunas pulgadas más de tela a la falda de su uniforme.</p>
 					</div>
 					<div n="34" type="chapter" xml:id="ne0328_chap34">
-						<head>VIII. Sinfonía de colores</head>
+						<head xml:id="ne0328_head_037">VIII. Sinfonía de colores</head>
 						<p>Al sentirse María tocada por la mano de la Naturaleza fue cuando cambió por completo de carácter.</p>
 						<p>La pubertad parecía haber limpiado obstruidos canales de su organismo por donde ahora circulaban nuevos torrentes de vital energía, y se despertaban en ella sensibilidades desconocidas que le hacían percibir cosas hasta entonces nunca imaginadas. Parecía que su piel se había adelgazado para ser más sensible a todas las impresiones externas; que sus ojos habían estado empañados hasta entonces y ahora lo veían todo en un nuevo aspecto y con asombrosa claridad; y que sus miembros, antes enjutos, ágiles y nerviosos como los tentáculos de un insecto, al henchirse en el presente con esa fuerza vital que hace estallar el capullo y esparce en el espacio un tropel de colores y perfumes, adquirían nueva fuerza, y lo que perdían en ligereza ganábanlo en solidez siendo como raíces que la unían a la vida.</p>
 						<p>Aquella revelación de la pubertad que tanto alarmó su ignorancia, cambió por completo sus gustos y aficiones.</p>
@@ -2896,7 +2946,7 @@
 						<p>Un suceso inesperado revolucionó su existencia y vino a arrancarla de sus fantásticas contemplaciones.</p>
 					</div>
 					<div n="35" type="chapter" xml:id="ne0328_chap35">
-						<head>IX. Se oye un violín</head>
+						<head xml:id="ne0328_head_038">IX. Se oye un violín</head>
 						<p>Una tarde, estaba tendida sobre el vientre y con la barba apoyada en las manos, soñolienta y amodorrada por los golpes de sol que pasaban a través de la bóveda de enredaderas.</p>
 						<p>Había llegado la primavera; el vivificante abril abría los pétalos de la flor del naranjo, impregnando la atmósfera con el punzante perfume del azahar, y al respirar, aspirábanse esos efluvios de amor y de bellos sueños que trae consigo la más hermosa de las estaciones.</p>
 						<p>María no se abismaba, como de costumbre, en la contemplación del paisaje. Tenía sus asuntos serios en que pensar y que por cierto le preocupaban bastante.</p>
@@ -2940,7 +2990,7 @@
 						<p>A los pocos instantes volvieron a sonar las tan sobadas notas de <seg rend="italic">El Carnaval de Venecia</seg>, y cuando ya María iba a hacer de nuevo su aparición sobre el muro, repiqueteó la campana del colegio, indicando que la hora de recreo había concluido, y la niña, contrariada, tuvo que abandonar su observatorio.</p>
 					</div>
 					<div n="36" type="chapter" xml:id="ne0328_chap36">
-						<head>X. Amor en torno a un violín</head>
+						<head xml:id="ne0328_head_039">X. Amor en torno a un violín</head>
 						<p>Al día siguiente apenas sonó la hora del recreo, ya estaba María en la terraza del colegio, y colocando de nuevo todos aquellos tiestos que le servían de escalera, se encaramaba sobre el muro.</p>
 						<p>El descubrimiento del día anterior había causado tal impresión en su vida monótona de colegiala, que turbó su sueño, y durante toda la noche estuvo sonando en su oído el chillón violín. Además, varias veces vio en sueños a aquel muchacho con sus claras orejas, su cabeza pelada, sus ojos hermosos y dulces y aquel rubor de señorita que le resultaba tan chusco a la traviesa María.</p>
 						<p>Cuando ésta se asomó a su atalaya vio la puerta del casucho abierta y el horripilante cráneo sobre su pedestal libro. El muchacho debía haber subido ya a su tugurio, pues ella, por ciertos ruidos que sonaban en su interior, adivinaba la presencia del violinista.</p>
@@ -3037,7 +3087,7 @@
 						<p>—¡Ay qué majadero!</p>
 					</div>
 					<div n="37" type="chapter" xml:id="ne0328_chap37">
-						<head>XI. Dúo de amor en el tejado</head>
+						<head xml:id="ne0328_head_040">XI. Dúo de amor en el tejado</head>
 						<p>Desde entonces ni una sola tarde dejaron de verse los dos jóvenes. A la hora en que la ciudad parecía dormir la siesta al arrullo del ardiente sol, y en que los calientes tonos de luz hacían resaltar los colores del bello paisaje, los dos muchachos subían al tejado para venir a encontrarse en aquella pared que separaba sus respectivas viviendas. María, en lo alto, como una dama feudal asomada al borde de robusto torreón, y Juanito, al pie, con su actitud de trovador enamorado, lanzando a su dama platónicos floreos. Faltaba la dorada guzla y las vestiduras brillantes y caprichosas, para que aquello fuese igual a uno de aquellos paisajes de abanico que tanto gustaban a la niña.</p>
 						<p>En los dos, aquellas diarias entrevistas, eran ya una necesidad, sufrían un disgusto sin limites, un desaliento mortal, cuando en las tardes lluviosas la colegiala no subía a la azotea, por miedo a excitar las sospechas de las buenas madres.</p>
 						<p>Poco a poco su amistad se iba estrechando tan íntimamente, que aquel muchacho, antes tan ruboroso y reservado, se abandonaba ahora a la confianza, y le hacía confidencias cariñosas sobre su porvenir y sus propósitos.</p>
@@ -3101,7 +3151,7 @@
 						<p>Se buscaban, querían aproximarse arrastrados por el ciego impulso del amor; pero al mismo tiempo, aunque de ello no se daban cuenta, eran impulsados por el egoísmo de la comodidad.</p>
 					</div>
 					<div n="38" type="chapter" xml:id="ne0328_chap38">
-						<head>XII. Mecidos por la brisa</head>
+						<head xml:id="ne0328_head_041">XII. Mecidos por la brisa</head>
 						<p>La grave campana de la Catedral dio las once de la noche, con tan calmosa prosopopeya, que parecía que allá, en lo alto, sobre un púlpito de piedra de cincuenta metros, un panzudo canónigo de bronca voz, comenzaba a predicar su sermón.</p>
 						<p>María se incorporó cuidadosamente en su lecho; oyó cómo por espacio de algunos minutos se iban pasando la hora todos los grandes relojes de la ciudad, poblando con fuertes campanadas el desierto y oscuro espacio, y cuando se restableció en el dormitorio aquel silencio, únicamente turbado por las tranquilas y acompasadas respiraciones de las compañeras que dormían, la colegiala entreabrió las cortinas de su cama y se deslizó sin hacer ruido.</p>
 						<p>Habíase metido su falda antes de bajar del lecho y el cuerpo lo llevaba encerrado en una chambra que dejaba al descubierto el nacimiento de su cuello virginal, que comenzaba a dibujarse con la seductora y voluptuosa curva de la mujer hermosa.</p>
@@ -3201,7 +3251,7 @@
 						<p>Sintió frío, mucho frío; le pareció que la brisa del amanecer le mordía con sus helados besos; y como si fuera víctima de imantada atracción, volvió a pegar su rostro a la cabellera de María y el sueño se apoderó de él por completo.</p>
 					</div>
 					<div n="39" type="chapter" xml:id="ne0328_chap39">
-						<head>XIII. Una carta</head>
+						<head xml:id="ne0328_head_042">XIII. Una carta</head>
 						<floatingText>
 							<body>
 								<div type="section">
@@ -3229,9 +3279,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE CUARTA: JUVENTUD A LA SOMBRA DE LA VEJEZ</head>
+					<head xml:id="ne0328_head_043">PARTE CUARTA: JUVENTUD A LA SOMBRA DE LA VEJEZ</head>
 					<div n="40" type="chapter" xml:id="ne0328_chap40">
-						<head>I. LA VIUDA DE LÓPEZ</head>
+						<head xml:id="ne0328_head_044">I. LA VIUDA DE LÓPEZ</head>
 						<p>A las ocho de la mañana estaba ya vestida, encorsetada y tomando su chocolate, junto al velo y los negros guantes colocados sobre la mesa del comedor indicando una próxima partida, la señora doña Esperanza Mora, <seg rend="italic">viuda de López, ministro del Tribunal de Cuentas</seg>, según rezaban sus tarjetas de visita, de las cuales, raro era no encontrar un ejemplar en todas las antesalas de la aristocracia rancia y linajuda, aferrada al pasado y refractaria a todas las locura de la elegancia moderna.</p>
 						<p>Era doña Esperanza una buena moza a pesar de hallarse próxima a los cincuenta, y aunque según confesión propia se había dejado caer y no observaba con su persona otro cuidado que el de apretarse el talle, sin duda para que resaltase más la curva de su prominente seno, todavía sus hermosos cabellos rubios en los que las canas se disimulaban, sus ojos lánguidos que la edad no empañaba, y su perfil arrogante, le daban cierto aire bizarro de diosa destronada que en sus ratos de melancolía aún podía paladear muy dulces recuerdos.</p>
 						<p>Mientras tomaba el chocolate, ajustaba cuentas con la criada, que acababa de llegar del mercado, y daba sus disposiciones como dueña de casa hacendosa y económica. Vendría a comer a las seis; ya sabía pues a qué hora debía poner el puchero al fuego. ¡Ah! Se le olvidaba advertirle que tuviese más cuidado al limpiar el salón. Acababa de notar que la urna de San Ignacio estaba muy sucia de moscas y esto era una vergüenza en casa de una señora como ella, que en la época en que vivía su marido gozaba justa fama por su curiosidad.</p>
@@ -3291,7 +3341,7 @@
 						<p>Además no tenía en el estómago otra cosa que el chocolate de la mañana e iba pensando en que, llegando a la hora del almuerzo, no le faltaría un asiento en aquella mesa bien servida, propia de una solterona vieja, a la que no le era lícito otro placer que el de la gula.</p>
 					</div>
 					<div n="41" type="chapter" xml:id="ne0328_chap41">
-						<head>II. EL SOBRINO EN LA CALLE Y EL TÍO EN LA CASA</head>
+						<head xml:id="ne0328_head_045">II. EL SOBRINO EN LA CALLE Y EL TÍO EN LA CASA</head>
 						<p>Cuando el carruaje de alquiler que conducía a doña Esperanza llegó a la calle de Atocha, tuvo que detenerse antes de llegar a la puerta de casa de doña Fernanda, pues una elegante berlina con ruedas amarillas le cerraba el paso.</p>
 						<p>La viuda, al bajar de su carruaje, vióse envuelta por un tropel de estudiantes de Medicina que salían de las clases, y subían calle arriba, con la algazara propia del que se ha librado, por el resto del día, de una esclavitud enojosa.</p>
 						<p>Aguantando miradas de insolente fijeza y oyendo con frialdad los floreos que le dirigía aquella juventud bulliciosa que pasaba por su lado, doña Esperanza ajustó su cuenta con el cochero y como propina le entregó algunos papelillos de los que almacenaba su limosnero. El auriga quedóse cómicamente sorprendido y con las hojas místicas en la mano, y al enterarse de lo que eran, él, que esperaba por lo menos un real de propina, correspondió al regalo con unos cuantos juramentos que hicieron apresurar el paso a la viuda de López. Buen modo de hacer propaganda.</p>
@@ -3378,7 +3428,7 @@
 						<p>Y la gorrona viuda se entró salas adentro, con la misma confianza que si fuese la dueña de la casa.</p>
 					</div>
 					<div n="42" type="chapter" xml:id="ne0328_chap42">
-						<head>III. LO QUE FUE DE MARÍA AL SALIR DEL COLEGIO</head>
+						<head xml:id="ne0328_head_046">III. LO QUE FUE DE MARÍA AL SALIR DEL COLEGIO</head>
 						<p>Fácil es imaginar el recibimiento que la baronesa de Carrillo haría a su sobrina, cuando ésta, recién salida del colegio, llegó a Madrid.</p>
 						<p>Doña Fernanda no quiso ir a por ella. La carta de Sor Luisa de Loreto le produjo una impresión terrible. Después de furiosos transportes de indignación, sintióse avergonzada como si ella misma fuese la sorprendida en la azotea del colegio en brazos de un muchacho, y no se decidió a ir ella misma en persona a buscar a su sobrina, como si temiese que las monjas fuesen a echarle una reprimenda por ser la tía de María.</p>
 						<p>Fue a por ésta un viejo criado de la baronesa, especie de administrador con aspecto de sacristán, que los padres jesuitas le habían recomendado como hombre en quien podía depositar toda su confianza.</p>
@@ -3458,7 +3508,7 @@
 						<p>Su malicia de beatas no podía conformarse con la ingenua inocencia de aquella velada en la azotea del colegio.</p>
 					</div>
 					<div n="43" type="chapter" xml:id="ne0328_chap43">
-						<head>IV. REANÚDANSE LOS AMORES</head>
+						<head xml:id="ne0328_head_047">IV. REANÚDANSE LOS AMORES</head>
 						<p>Algunos meses antes de recibirse la noticia del martirio del padre Ricardo, experimentó María una gran sorpresa.</p>
 						<p>Por las mañanas, aprovechando los descuidos de su tía o sus salidas de casa por asuntos de devoción, una de sus más predilectas distracciones era mirar a la calle en las horas que los estudiantes de Medicina entraban o salían en el inmediato Hospital de San Carlos.</p>
 						<p>Así vio un día a Juanito Zarzoso, del cual, aunque se acordaba algunas veces, no guardaba ya más que un recuerdo lejano y borroso, como amortiguado por el tiempo y por aquel régimen austero a que la sometía su tía y que parecía influir en su parte moral…</p>
@@ -3517,7 +3567,7 @@
 						<p>El padre Tomás fue la primera persona que se le ocurrió para el caso.</p>
 					</div>
 					<div n="44" type="chapter" xml:id="ne0328_chap44">
-						<head>V. EN EL DESPACHO DEL PADRE TOMÁS</head>
+						<head xml:id="ne0328_head_048">V. EN EL DESPACHO DEL PADRE TOMÁS</head>
 						<p>El poderoso jesuita había recibido a doña Esperanza con una forzada sonrisa de resignación.</p>
 						<p>Aquella lagartona, con sus confidencias, sus intrigas y sus hojitas piadosas que sometía a su examen antes de darlas a la imprenta, le tenía fastidiado a pesar de lo convencido que estaba de la utilidad que prestaba a la Orden.</p>
 						<p>El padre Tomás había indicado al mandadero que le servía de ayuda de cámara, que no dejase entrar a doña Esperanza en el despacho, pues temía la conversación interminable de la locuaz jamona que venía a turbar sus ocupaciones; pero en aquel día, la viuda de López manifestó tal urgencia y tantas veces pidió que la dejasen pasar, que al fin el lego, con el permiso de su superior, permitióle la entrada.</p>
@@ -3596,7 +3646,7 @@
 						<p>—Somos invencibles; cada vez me convenzo más de ello. Donde uno de nosotros cae, se levanta al punto un nuevo hermano con mayores fuerzas, y siempre avanzamos impertérritos, sin vacilar un instante, hasta que conseguimos lo que nos proponemos.</p>
 					</div>
 					<div n="45" type="chapter" xml:id="ne0328_chap45">
-						<head>VI. CAMBIO DE DECORACIÓN EN CASA DE LA BARONESA</head>
+						<head xml:id="ne0328_head_049">VI. CAMBIO DE DECORACIÓN EN CASA DE LA BARONESA</head>
 						<p>Llegó el momento fatal en que Juanito Zarzoso, con su título de doctor en Medicina, alcanzado con gran brillantez, obedeciendo las órdenes de su tío, al que temía tanto como amaba, hubo de separarse de María para trasladarse a París.</p>
 						<p>En los tres meses que transcurrieron, desde la conferencia con el padre Tomás hasta el día en que partió el joven médico, doña Esperanza no había logrado aminorar el cariño de los novios ni enturbiar la confianza que mutuamente se tenían.</p>
 						<p>Un día en que el estudiante esperó a la viuda en uno de los puntos que ella frecuentaba, para darle una carta con destino a María, doña Esperanza aprovechó la ocasión para abrirle los ojos, según decía.</p>
@@ -3656,7 +3706,7 @@
 						<p>Uno de los más respetables individuos de su tertulia le había pedido permiso para presentarle en un entreacto a Paco Ordóñez, muchacho distinguido, e hijo segundo del difunto duque de Vegaverde.</p>
 					</div>
 					<div n="46" type="chapter" xml:id="ne0328_chap46">
-						<head>VII. EN EL TEATRO REAL</head>
+						<head xml:id="ne0328_head_050">VII. EN EL TEATRO REAL</head>
 						<p>Cuando la baronesa y su sobrina entraron en su platea, la representación de <seg rend="italic">Los Hugonotes</seg> había comenzado ya.</p>
 						<p>El debutante, un Raúl algo aviejado, con tipo de mozo de cuerda y un poco patizambo, que según era fama le costaba a la empresa seis mil francos por noche, estaba en aquel momento lanzándole al público, ensimismado y silencioso, el famoso <seg rend="italic">raconto</seg>, describiendo un primero y novelesco encuentro con la gentil Valentina.</p>
 						<p>La media voz del tenor, subiendo y bajando siempre igual, sin perder en intensidad como deslumbrante hilillo con que se tejiera una tela de plata, resonaba en medio del profundo silencio que reinaba en el gigantesco teatro, y las dos damas hubieron de entrar en un palco, casi de puntillas, por no turbar la profunda atención del público.</p>
@@ -3773,7 +3823,7 @@
 						<p>Y reclinándose otra vez en el fondo del coche, cerró los ojos y volvió a entregarse de lleno a sus pensamientos, que le arrastraban lejos, muy lejos, a la infinita cinta de hierro, por donde, rugiendo y exhalando bufidos de fuego, volaba el tren que le arrebataba a su novio.</p>
 					</div>
 					<div n="47" type="chapter" xml:id="ne0328_chap47">
-						<head>VIII. Trato cerrado</head>
+						<head xml:id="ne0328_head_051">VIII. Trato cerrado</head>
 						<p>El hermano que desempeñaba junto al padre Tomás el cargo de doméstico de confianza, dijo al elegante joven que esperaba en la antecámara:</p>
 						<p>—Señor Ordóñez, el reverendo padre dice que ya puede usted pasar.</p>
 						<p>Paco Ordóñez entró en el despacho del poderoso jesuita con el mismo aplomo que si estuviera en su propia casa.</p>
@@ -3851,7 +3901,7 @@
 						<p>—Trato cerrado, reverendo padre.</p>
 					</div>
 					<div n="48" type="chapter" xml:id="ne0328_chap48">
-						<head>IX. El vicario de España al padre general</head>
+						<head xml:id="ne0328_head_052">IX. El vicario de España al padre general</head>
 						<p>Gustábale al padre Tomás despachar por sí mismo todos los asuntos importantes, temiendo la traición y el espionaje, bases de la organización de la Compañía de Jesús y que se encierran siempre en la persona del <seg rend="italic">socius</seg>, del individuo más allegado y querido.</p>
 						<p>No quería él tener a todas horas en su despacho subordinados que en apariencia eran autómatas, pero que sin abandonar su actitud impasible, lo veían y recordaban todo, y por esto mismo procuraba, al trabajar, el aislarse por completo en el fondo de su sombrío despacho.</p>
 						<p>Pero las grandes necesidades que en sí llevaba la administración de la Orden, la inmensa correspondencia que había que sostener con la oficina central de Roma, dando cuenta al general de cuantos trabajos había realizado la Compañía durante el mes, y las apremiantes necesidades de aquel archivo secreto, en el que había que almacenar hasta el más pequeño dato de las personas que por algún concepto eran interesantes para la Orden, obligaban al padre Tomás a tener empleados más de una docena de jesuitas jóvenes, hábiles e infatigables para el trabajo de pluma; los cuales, si no le merecían una confianza completa, al menos le proporcionaban cierta seguridad relativa, a causa de la reserva de su carácter y de que se profesaban un odio mutuo, lo que impedía toda clase de inteligencia en contra del superior.</p>
@@ -3898,9 +3948,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE QUINTA: EN PARÍS</head>
+					<head xml:id="ne0328_head_053">PARTE QUINTA: EN PARÍS</head>
 					<div n="49" type="chapter" xml:id="ne0328_chap49">
-						<head>I. LA ORILLA IZQUIERDA DEL SENA</head>
+						<head xml:id="ne0328_head_054">I. LA ORILLA IZQUIERDA DEL SENA</head>
 						<p>En los pasados siglos, París era comparado a un navío, a causa de la forma que afecta la isla de la Cité, pequeño territorio que era lo que abarcaba entonces el perímetro de la ciudad, y que hoy no llega a constituir uno de sus barrios. Este barco simbólico lo adoptó la municipalidad como escudo de la gran villa, y aún sigue siendo París la ciudad del navío, a pesar de que la Babilonia moderna en la actualidad, con su monstruosa grandeza y sus barreras que avanzan cada diez años amenazando tragarse la campiña, no conserva nada de su antigua forma.</p>
 						<p>Si hoy se tratase de buscar una figura que simbolizase París, únicamente podría buscarse en la sirena, animal fabuloso, compuesto de dos formas tan distintas como son un hermoso busto de mujer junto a una horrible cola de monstruo.</p>
 						<p>París es hoy un nuevo Jano de doble faz, que ofrece una sonrisa, una caricia, un halago, para cada uno de los gustos.</p>
@@ -3965,7 +4015,7 @@
 						<p>A este distrito de París, al célebre Barrio Latino, fue a establecerse Juanito Zarzoso, apenas llegó a la gran metrópoli.</p>
 					</div>
 					<div n="50" type="chapter" xml:id="ne0328_chap50">
-						<head>II. EL PRIMER AMIGO</head>
+						<head xml:id="ne0328_head_055">II. EL PRIMER AMIGO</head>
 						<p>Alquiló el joven médico un cuarto en el segundo piso de un hotel de estudiantes de la plaza del Pantheón.</p>
 						<p>Conocía, por referencias de algunos de sus condiscípulos de Madrid, la vida del estudiante parisiense en el Barrio Latino. Se abonó por meses en un restaurante de los más concurridos, adonde acudían las notabilidades del porvenir a nutrirse con elementos tan problemáticos que, según afirmaban los estudiantes, las chuletas eran de caballo enfermo y las tortillas se componían de los más absurdos ingredientes.</p>
 						<p>El doctor Zarzoso, que era espléndido por carácter, y más aún tratándose de su sobrino, no quería que éste hiciese en París una vida miserable, y le había dado letra abierta para el banquero a quien iba recomendado; pero el muchacho, acostumbrado a una existencia modesta y con poca afición al lujo y los placeres, no pensaba abusar de la magnanimidad de su tío, y se proponía seguir las costumbres de un estudiante pobre.</p>
@@ -4041,7 +4091,7 @@
 						<p>Detrás vio aparecer la greñuda cabeza de Agramunt, quien en una mano llevaba su tesoro, su sagrado busto de la República, y en la otra un quinqué encendido. A la luz de éste había hecho todos los preparativos de mudanza en la calle de las Escuelas, y por no tomarse el trabajo de apagarlo, lo habría llevado encendido por todo el bulevar Saint-Michel sin producir movimiento alguno de extrañeza, en aquella población de muchachuelos y estudiantes habituada a las más estupendas extravagancias.</p>
 					</div>
 					<div n="51" type="chapter" xml:id="ne0328_chap51">
-						<head>III. LA VEJEZ DEL REVOLUCIONARIO</head>
+						<head xml:id="ne0328_head_056">III. LA VEJEZ DEL REVOLUCIONARIO</head>
 						<p>Los dos jóvenes españoles vivían en el hotel del Pantheón, con la más amigable familiaridad.</p>
 						<p>Agramunt se mostraba encantado por la mudanza, tachándose a sí mismo de estúpido por no habérsele ocurrido hasta entonces trasladarse a una plaza donde, según él decía, se gozaba el honor de tener tan ilustres vecinos.</p>
 						<p>Todas las mañanas, al levantarse, abría su ventana del último piso y, mirando la inmensa mole del Pantheón, que extendía su cruz de ciclópeos muros en el centro de la gigantesca plaza, saludábala moviendo sus manos, y como si le pudieran oír en el fondo de la cripta del monumento, gritaba:</p>
@@ -4116,7 +4166,7 @@
 						<p>—Tú no puedes imaginarte —decía a Zarzoso— lo que ese hombre ha sido de joven. Yo no sé ni la mitad de sus aventuras, pero lo cierto es que, ahí donde lo ves ahora, con su facha de desaliento y su triste sonrisa, ha sido en su juventud un conquistador terrible que ha rendido a docenas las mujeres, sin pararse a distinguir en punto a condición social. Cuando era militar tenía fama de guapo mozo, y mira si picaba alto que, según me han dicho, estuvo próximo a casarse con una condesa muy guapa. La cosa tuvo consecuencias, pues según mis noticias hay en el mundo una hija como resultado de aquellos amoríos.</p>
 					</div>
 					<div n="52" type="chapter" xml:id="ne0328_chap52">
-						<head>IV. EL PADRE DE MARÍA</head>
+						<head xml:id="ne0328_head_057">IV. EL PADRE DE MARÍA</head>
 						<p>Todas las mañanas, al levantarse de su cama, Agramunt alzaba la blanca cortina de su ventana y, mirando el vasto horizonte que dejaba visible la anchura de la plaza del Pantheón, murmuraba con desaliento:</p>
 						<p>—Definitivamente, el sol ha muerto.</p>
 						<p>Había cerrado ya el invierno; una luz mortecina y sucia se filtraba por los vidrios, entristeciéndolo todo, y dando al modesto cuarto del periodista un tinte fúnebre. París hacía cerca de un mes que tenía sobre sus tejados un cielo ceniciento, monótono y tétrico, y si alguna vez por casualidad el sol, con un coletazo de su flamígero manto desgarraba las plomizas nubes, asomaba tan sólo un rostro pálido que daba lástima, y se retiraba inmediatamente, dejando que las nubes descargasen torrenciales chaparrones sobre la gran ciudad, acostumbrada a sufrir estas injurias del cielo.</p>
@@ -4279,7 +4329,7 @@
 						<p>¡Pobrete! También sacaría su astilla de mal, ya que había cometido la torpeza de enamorarse de una mujer perteneciente a aquella familia santurrona que parecía dada al diablo, según la facilidad con que sembraba la desgracia a su alrededor.</p>
 					</div>
 					<div n="53" type="chapter" xml:id="ne0328_chap53">
-						<head>V. LAS HIJAS DE LA NOCHE</head>
+						<head xml:id="ne0328_head_058">V. LAS HIJAS DE LA NOCHE</head>
 						<p>Empiezan a hacerse más densas y oscuras las sombrías gasas que el crepúsculo extiende sobre las calles de París; comienzan a brillar inquietas las lenguas de fuego del gas, dentro de los faroles o a centellear los blancos focos eléctricos, semejantes a las pupilas de un albino; termina en los cafés la hora de la absenta; empieza el trabajo en los restaurantes, y apenas tal sucede, sobre el asfalto de los bulevares, sentadas a las mesas de los comedores públicos o contemplando con fingido interés los escaparates, mientras miran al mismo tiempo con el rabillo del ojo a los que están detrás aparecen un sinnúmero de mujeres que van solas o formando parejas, mujeres que tienen una existencia particular y rara, a quienes jamás se ve durante el día y que semejantes a las aves nocturnas, como si el sol les incomodara, aguardan las primeras sombras para salir de su madriguera.</p>
 						<p>París, en las primeras horas de la noche, parece una ciudad invadida por inmenso ejército femenino. Doquiera se dirigen los pasos se encuentran siempre los mismos tipos, aunque presentados en diversas formas. Unas, las de clase más modesta, vestidas extravagantemente con ropa que a la legua delata su procedencia de desecho, se paran en las esquinas devorando el pedazo de pan y de carne que acaban de comprar en la <seg rend="italic">cremerie</seg> y que tal vez constituye su única comida diaria; otras que apenas si parecen llegadas a la pubertad, pequeñas, entecas y vistiendo todavía como niñas, saltan y corren por las aceras con grande algazara, gozando en empujar rudamente al pacífico transeúnte que nada les dice; muchas pasan andando con gravedad soberana, vestidas con arreglo al último figurín y dejando tras sí una estela de punzantes perfumes; pero todas ellas miran de igual modo y llevan idéntica expresión en el rostro, lo mismo la que viste de negro con cierto aire monjil y lleva la cabeza descubierta, que la que ostenta el ancho sombrero de alas serpenteadas y ondulantes plumas.</p>
 						<p>La virtuosa madre de familia, la joven honrada, no se atreven a salir así que cierra la noche, sino del brazo del esposo o del hermano, porque muchas veces las identidades en el vestir producen gran confusión y tremendas equivocaciones.</p>
@@ -4311,7 +4361,7 @@
 						<p>Que se lo pregunten al Hospital o al Sena. Las más han perecido a manos de la miseria y sus cuerpos figuran en las mesas de disección de la Escuela de Medicina, y las otras se han suicidado arrojándose al río, porque estaban cansadas de vivir… a los veinte años.</p>
 					</div>
 					<div n="54" type="chapter" xml:id="ne0328_chap54">
-						<head>VI. JUDITH LA RUBIA</head>
+						<head xml:id="ne0328_head_059">VI. JUDITH LA RUBIA</head>
 						<p>Seguía Zarzoso el bulevar Saint-Germain en dirección contraria al Sena a la hora en que los reverberos de las calles acababan de encenderse y en que las tiendas comenzaban a iluminar sus escaparates ante los cuales se detenían los curiosos.</p>
 						<p>El cielo ceniciento, que como sucia cortina se extendía sobre los tejados, estaba empapado aún con el último y moribundo reflejo del crepúsculo.</p>
 						<p>El joven médico parecía muy preocupado. Hacía un frío molesto por lo punzante; soplaba un cierzo que parecía herir el cutis como sutil cuchilla; todos los transeúntes andaban apresuradamente con las manos metidas en los bolsillos y arrebujados en sus abrigos y a pesar de esto Zarzoso, como si fuera insensible a los rigores de la estación, caminaba con lentitud, con el gabán desabrochado, el cuello bajo, los brazos cruzados sobre la espalda sosteniendo con desmayo el bastón y la cabeza inclinada, cual si no pudiera resistir la pesadumbre de la inmensa balumba de pensamientos que se agitaba en su cerebro.</p>
@@ -4385,7 +4435,7 @@
 						<p>—¿Cómo estás tú, buena pieza?</p>
 					</div>
 					<div n="55" type="chapter" xml:id="ne0328_chap55">
-						<head>VII. LA PRIMERA NOCHE</head>
+						<head xml:id="ne0328_head_060">VII. LA PRIMERA NOCHE</head>
 						<p>El reconocimiento fue afectuosísimo. Judith parecía encantada por aquel encuentro, y hasta su perrucho, como si participase de la alegría de su ama, rabitieso y con las orejas rectas, hacía la rosca en torno de los dos jóvenes.</p>
 						<p>¡Vaya un encuentro!</p>
 						<p>—¿Y qué es de ti ahora? —preguntaba con curiosidad Agramunt—. ¿Cómo has estado tanto tiempo alejada del barrio?</p>
@@ -4575,7 +4625,7 @@
 						<p>Zarzoso no se había movido de su asiento; estaba asombrado, con la mirada vaga, como si todo aquello fuese un sueño que se desvanecería apenas despertase.</p>
 					</div>
 					<div n="56" type="chapter" xml:id="ne0328_chap56">
-						<head>VIII. NUEVAS CAÍDAS</head>
+						<head xml:id="ne0328_head_061">VIII. NUEVAS CAÍDAS</head>
 						<p>Cuando los relojes de la quinta Alcaldía de París y de la iglesia de San Esteban del Monte lanzaron en el ancho espacio de la plaza del Pantheón las campanadas que anunciaban las ocho de la mañana, Zarzoso, que no estaba ni dormido ni despierto, pues se hallaba bajo la influencia de una pesada modorra, se incorporó con violento impulso, y una vez sentado en la cama, lanzó una mirada de asombro a su cuarto, que no le parecía ya el mismo.</p>
 						<p>Sentía un violento dolor de cabeza, como si sobre su cerebro gravitase la gigantesca masa del vecino Pantheón, notaba cierta torpeza en los ojos, viéndolo todo turbio, y su lengua, inflamada y pastosa, parecía estorbarle dentro de la boca, seca a consecuencia de lo mucho que había bebido la noche anterior.</p>
 						<p>Tardó bastante tiempo en darse cuenta del lugar donde estaba, pues su cerebro, entorpecido por los excesos, discurría con dificultad.</p>
@@ -4707,7 +4757,7 @@
 						<p>—¡Esto me mata! Yo soy el autor del infortunio de ese joven. Queriendo acercarme a mi hija, hice sin saberlo, que él fuera abandonado por su novia, y ahora ese joven bueno, sencillo y virtuoso, se ha perdido… ¡se ha perdido por mi culpa! ¡Qué terrible remordimiento!… Desesperado de reconquistar un amor puro, se ha entregado en brazos del vicio para olvidar. ¡Y yo tengo la culpa de todo! Esto me mata; hoy termina mi vida: como si lo viera. ¿Qué fatalidad arrastró a ese muchacho hasta hacerle mi amigo? ¿Qué fatalidad hay en mí que hiere a cuantos seres se me aproximan y me aman?…</p>
 					</div>
 					<div n="57" type="chapter" xml:id="ne0328_chap57">
-						<head>IX. EL ENTIERRO DE ÁLVAREZ</head>
+						<head xml:id="ne0328_head_062">IX. EL ENTIERRO DE ÁLVAREZ</head>
 						<p>Estaba Zarzoso leyendo la sección de noticias de un periódico de la noche, y se disponía ya a acostarse, en vista de que los relojes de la plaza del Pantheón acababan de dar la una de la madrugada.</p>
 						<p>Las caídas cortinas del lecho ocultaban a Judith, que roncaba con bastante estrépito y la luz del quinqué crepitaba de un modo alarmante, dando a entender que estaba próxima a apagarse por falta de petróleo que alimentase su llama.</p>
 						<p>Sonaron atropellados pasos en el pasadizo que conducía a la habitación y Zarzoso, sin poder explicarse el motivo, sintió cierto sobresalto, pues sus nervios se hallaban muy excitados a causa de una reyerta que había tenido con la hermosa rubia antes de acostarse ésta.</p>
@@ -4799,7 +4849,7 @@
 						<p>Zarzoso, comprendiendo que estorbaba con su presencia a aquellos dos hombres y ofendido por la frialdad que le mostraba Agramunt, se apresuró a echar pie a tierra, y abriendo su paraguas, pues la lluvia arreciaba conforme iba avanzando la noche, se metió por la calle de la Escuela de Medicina, con dirección a su hotel donde ya Judith le estaba aguardando impaciente.</p>
 					</div>
 					<div n="58" type="chapter" xml:id="ne0328_chap58">
-						<head>X. SE ACLARA EL MISTERIO</head>
+						<head xml:id="ne0328_head_063">X. SE ACLARA EL MISTERIO</head>
 						<p>Al entrar Zarzoso en su hotel y pasar frente a la portería, lanzó una mirada distraída al casillero donde se depositaba la correspondencia para los huéspedes, e inmediatamente experimentó una ruda impresión de sorpresa.</p>
 						<p>En la casilla marcada con el número de su cuarto, sobre la oscura madera, destacábase el blanco sobre de una carta que inmediatamente hirió los ojos del joven médico.</p>
 						<p>El portero, que lo había visto a través de los cristales, salió apresuradamente y entregó la carta a Zarzoso, que permanecía sorprendido al pie de la escalera.</p>
@@ -4879,9 +4929,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE SEXTA: EL CASAMIENTO DE MARÍA</head>
+					<head xml:id="ne0328_head_064">PARTE SEXTA: EL CASAMIENTO DE MARÍA</head>
 					<div n="59" type="chapter" xml:id="ne0328_chap59">
-						<head>I. SOSPECHAS</head>
+						<head xml:id="ne0328_head_065">I. SOSPECHAS</head>
 						<p>Hacia más de un mes que María Quirós se mostraba triste y preocupada por alguna oculta idea que en vano intentaba descubrir su tía, doña Fernanda.</p>
 						<p>La baronesa, por más esfuerzos de imaginación que hacía, no lograba adivinar la causa de aquella continua preocupación. Ella, siguiendo los consejos del padre Tomás, se desvivía por hacer agradable la vida de su sobrina, y a pesar de que comenzaba a cansarle aquel renacimiento de su existencia elegante, no perdonaba fiesta alguna y asistía con María a todos los bailes de la alta sociedad y a los estrenos en los principales teatros.</p>
 						<p>Su sobrina se dejaba arrastrar a todas las fiestas, demostrando que eran impotentes tales diversiones para devolverle la perdida alegría, y doña Fernanda, con no poca sorpresa, vio varias veces en sus ojos la señal de haber llorado cuando se encerraba en su cuarto.</p>
@@ -4940,7 +4990,7 @@
 						<p>Para colmo de desdichas, la baronesa habló una tarde a su sobrina del porvenir de la mujer: dijo que ella debía ir pensando en casarse ya que siempre había manifestado cierta tendencia en favor del matrimonio, y terminó indicándole que no vería con disgusto que el pretendiente preferido fuese el hijo del duque de Vegaverde.</p>
 					</div>
 					<div n="60" type="chapter" xml:id="ne0328_chap60">
-						<head>II. AMOR PROPIO HERIDO</head>
+						<head xml:id="ne0328_head_066">II. AMOR PROPIO HERIDO</head>
 						<p>Era la hora en que la tertulia vespertina de la baronesa de Carrillo estaba en su período más brillante y animado.</p>
 						<p>No faltaba ninguna de las antiguas realistas que desde hacía muchos años acudían puntualmente a hacerle la corte a <seg rend="italic">Fernandita</seg>, en quien reconocían cierta superioridad, y allí estaban todos, graves y correctos, en aquel rejuvenecido salón en el cual brillaba siempre, por su reconocido talento, el marqués académico, Mentor del Telémaco Ordóñez, que estaba siempre entre él y la baronesa.</p>
 						<p>Doña Esperanza, a pesar de su carácter intrigante y movedizo, estaba en un rincón afectando insignificancia y procurando, con su silencio, que nadie se fijase en su persona, mientras ella contemplaba a todos con curiosidad, y especialmente a María, que también formaba parte de la tertulia.</p>
@@ -5026,7 +5076,7 @@
 						<p>Aquel papel que tenía entre sus manos, aquella inscripción insultante de una meretriz impúdica, era suficiente para mantenerla en su furor y hacer que, impulsada por el odio, se limpiase las lágrimas como avergonzada de tal debilidad y se revolviera en su cuarto cual una leona herida, derribando al paso cuantos muebles encontraba.</p>
 					</div>
 					<div n="61" type="chapter" xml:id="ne0328_chap61">
-						<head>III. UNA RESPUESTA DEL DOCTOR ZARZOSO</head>
+						<head xml:id="ne0328_head_067">III. UNA RESPUESTA DEL DOCTOR ZARZOSO</head>
 						<p>Apenas la mano de María fue pedida oficialmente por el duque de Vegaverde, aquel senador sesudo que consideraba con el mayor desprecio a su hermano calavera, la baronesa y el novio, aconsejados por su irreemplazable oráculo, el padre Tomás, comenzaron a arreglar todos los preparativos de la boda.</p>
 						<p>Doña Fernanda, no se sabe si por propia inspiración o por ajeno consejo, se mostraba muy radical en todos estos preparativos.</p>
 						<p>—Yo no soy partidaria de los noviazgos largos —decía continuamente a sus amigos—. Me gusta que lo que tenga que ser, sea pronto.</p>
@@ -5069,9 +5119,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE SÉPTIMA: PAQUITO ORDÓÑEZ</head>
+					<head xml:id="ne0328_head_068">PARTE SÉPTIMA: PAQUITO ORDÓÑEZ</head>
 					<div n="62" type="chapter" xml:id="ne0328_chap62">
-						<head>I. LA CLÍNICA DE LOS NIÑOS</head>
+						<head xml:id="ne0328_head_069">I. LA CLÍNICA DE LOS NIÑOS</head>
 						<p>Todas las mañanas, a las once, el portero de aquella gran casa de la Carrera de San Jerónimo experimentaba una sorda desesperación que se conocía en su rostro, al ver subir por la escalera de deslumbrante mármol, adornada en el centro por una ancha faja de fieltro rojo sujeta con doradas varillas, a toda una procesión de gente pobre, sucia y desharrapada, en su mayoría mujeres de los barrios bajos, llevando al brazo o cogidos de la mano una turba de chiquillos voceadores y mugrientos, que al mismo tiempo que ensuciaban los brillantes peldaños promovían al subir, temerosos y azorados, una verdadera tempestad de protestas, lloros y aullidos.</p>
 						<p>Era la hora en que se abría la clínica gratuita para enfermedades de niños en el segundo piso, donde vivían, instalados con gran lujo, el viejo doctor Zarzoso, catedrático jubilado de la Escuela de San Carlos y que ya no quería visitar, y su sobrino don Juan Zarzoso, médico de gran fama a pesar de su juventud, tanto por numerosas curas casi milagrosas que había realizado, como por haber permanecido cinco años en París estudiando la especialidad de enfermedades infantiles, circunstancia que no era la que menos impresión causaba en la generalidad del vulgo, que mira con cierto respeto supersticioso la ciencia que procede del extranjero.</p>
 						<p>El joven doctor era muy apreciado entre las clases elevadas de Madrid; pero este afecto no tenía comparación con la popularidad que gozaba entre la gente humilde, a causa de aquella consulta gratuita que abría todas las mañanas en su propia casa, y en la cual no sólo recetaba, sino que muchas veces, cuando se hallaba en presencia de la verdadera miseria, proporcionaba a los enfermos medios de subsistencia y de higiene.</p>
@@ -5152,7 +5202,7 @@
 						<p>—Pues bien, don Juan; yo soy Pedro Martínez, el antiguo asistente de don Esteban Álvarez, aquel Perico que usted conoció allá en París, en la calle del Sena.</p>
 					</div>
 					<div n="63" type="chapter" xml:id="ne0328_chap63">
-						<head>II. ¡LA FAMILIA ESTÁ COMPLETA!</head>
+						<head xml:id="ne0328_head_070">II. ¡LA FAMILIA ESTÁ COMPLETA!</head>
 						<p>Aquella mañana era de sorpresas para el doctor Zarzoso. Le llamaba la mujer a quien tanto había amado y después reconocía a un antiguo amigo en el criado que había ido a avisarle.</p>
 						<p>No le cupo duda alguna al joven doctor de que aquel hombre era el antiguo y fiel compañero de don Esteban Álvarez. Era verdad que la librea le desfiguraba mucho, pero a pesar de esto, su rostro, aunque algo modificado por el tiempo, tenía aún aquellas facciones rudas y enérgicas que, según el mismo interesado, eran el distintivo de todos los brutos que habían tenido la honra de nacer en la parroquia de San Pablo, de Zaragoza.</p>
 						<p>Zarzoso había perdido de vista al fiel Perico poco después de la muerte de su señor. Sin despedirse de otra persona que de Agramunt, desapareció de París sin decir adonde iba, y ahora se lo encontraba Zarzoso convertido en criado de una gran casa y siendo sin duda el servidor de confianza de María.</p>
@@ -5225,7 +5275,7 @@
 						<p>Y el jesuita se alejó del hotel, sin que María se apercibiera de su llegada, pues la pobre madre, a pesar del sueño y del cansancio, no quería separarse un solo instante de la cama de su hijo.</p>
 					</div>
 					<div n="64" type="chapter" xml:id="ne0328_chap64">
-						<head>III. LA BOFETADA</head>
+						<head xml:id="ne0328_head_071">III. LA BOFETADA</head>
 						<p>El corpulento portero se inclinó al paso del doctor Zarzoso, diciéndole con expresión respetuosa:</p>
 						<p>—La señora condesa no está visible en este momento, y me ha encargado ruegue a usted que tenga la bondad de esperarla algunos minutos.</p>
 						<p>Y diciendo esto, el criado condujo al doctor a un elegante salón del piso bajo, y después de volver a saludarle con la misma ceremonia se retiró.</p>
@@ -5337,7 +5387,7 @@
 						</floatingText>
 					</div>
 					<div n="65" type="chapter" xml:id="ne0328_chap65">
-						<head>IV. La mansedumbre del padre Tomás</head>
+						<head xml:id="ne0328_head_072">IV. La mansedumbre del padre Tomás</head>
 						<p>Cuatro días después, estaba ya en Madrid el elegante Ordóñez.</p>
 						<p>Había sido muy oportuno para él el telegrama del padre Tomás.</p>
 						<p>Las grandes corridas de caballos de la ciudad de Londres habían sido muy funestas para Ordóñez, pues perdió todas las apuestas que hizo, y éstas eran tan considerables que no sólo se quedó sin dinero, sino que tuvo que recurrir a pedir prestados algunos centenares de libras esterlinas a los amigos que tenía en la alta sociedad londinense.</p>
@@ -5426,7 +5476,7 @@
 						<p>—La verdad es que el servicio no puede estar mejor pagado y que la proposición ha sido hecha del modo más correcto y diplomático, sin que pueda considerarse herida mí susceptibilidad. Veinticinco mil duros si matas a ese caballerete que me ha abofeteado; esto es en el fondo la proposición con toda su crudeza. No se puede negar que el padre Tomás se porta como hombre espléndido cuando trata de librarse de un enemigo… Pero ¡qué demonio!, si ese dinero que me va a dar es mío, puesto que pertenece a mi esposa… Reconozco en este golpe a los jesuitas. Siempre se muestran generosos y pródigos cuando disponen del bolsillo ajeno.</p>
 					</div>
 					<div n="66" type="chapter" xml:id="ne0328_chap66">
-						<head>V. Asesinato legal</head>
+						<head xml:id="ne0328_head_073">V. Asesinato legal</head>
 						<p>Cuando el doctor Zarzoso recibió la visita de los padrinos de Ordóñez, no experimentó gran extrañeza.</p>
 						<p>Al disiparse la ira que le había dominado durante su violenta conferencia con el padre Tomás, pensó fríamente en su situación, adivinando que un hombre tan terrible y maligno como lo era aquel jesuita, no tardaría en tomar venganza. En su concepto abofetear al jefe del jesuitismo en España era exponerse a mil iras vengadoras ocultas en la sombra y por esto se extrañaba al ver que transcurrían unos cuantos días sin notar la persecución del ofendido padre Tomás.</p>
 						<p>Los padrinos de Ordóñez era un coronel más conocido por sus jugadas en el Casino que por sus campañas, y un marqués que tenía reputación de ser el primer tirador de armas de España, y cuya intervención resultaba imprescindible en todos los duelos que se concertaban en Madrid.</p>
@@ -5512,7 +5562,7 @@
 						<p>Y el viejo pudo por fin dar libre expansión a aquel dolor comprimido en su pecho, y derramando abundantes lágrimas, cayó de rodillas, descansando su blanca cabeza sobre la lívida faz del muerto.</p>
 					</div>
 					<div n="67" type="chapter" xml:id="ne0328_chap67">
-						<head>VI. EL PORVENIR DE LA FAMILIA ORDÓÑEZ</head>
+						<head xml:id="ne0328_head_074">VI. EL PORVENIR DE LA FAMILIA ORDÓÑEZ</head>
 						<p>La trágica muerte del doctor Zarzoso produjo gran impresión en Madrid.</p>
 						<p>Los periódicos se ocuparon del suceso, aprovechando la ocasión para declamar contra la bárbara costumbre del duelo y al entierro del doctor acudió toda la aristocracia de la ciencia en unión de aquella clientela pobre que adoraba a Zarzoso como un ser casi sobrenatural, a causa de sus bondades sin límites.</p>
 						<p>Durante algunos días la muerte del doctor fue el tema de todas las conversaciones en Madrid; pero al domingo siguiente, <seg rend="italic">Frascuelo</seg> tuvo una cogida, y el público novelero no tardó en olvidarse del trágico desafío para ocuparse únicamente de la salud del diestro.</p>
@@ -5566,7 +5616,7 @@
 						<p>—¡Oh, Dios mío! ¡Cuan triste es el porvenir de esa familia! Crea usted, doctor, que siento haberla conocido y que si hubiese llegado a adivinar que Ordóñez no era hombre de completa salud, me hubiese opuesto a su casamiento con la condesa.</p>
 					</div>
 					<div n="68" type="chapter" xml:id="ne0328_chap68">
-						<head>VII. UN TELEGRAMA</head>
+						<head xml:id="ne0328_head_075">VII. UN TELEGRAMA</head>
 						<p>Aquella mañana el padre Tomás esperaba en su despacho la visita de uno de sus subordinados, perteneciente a la casa-residencia de Sevilla y el cual había sido llamado a Madrid por orden de su superior.</p>
 						<p>El jesuita italiano, llevado siempre de su idea de hacer las cosas por sí mismo, cuando estaba disgustado de alguno de sus subordinados, no quería valerse de intermediarios para formular sus repulsas y les hacía presentarse en Madrid, donde podía vigilarlos de cerca.</p>
 						<p>El jesuita que había incurrido en su desagrado y a quien él esperaba aquella mañana para desahogar en su persona su mal humor, era un jesuita andaluz, el padre Palomo, que gozaba de cierto renombre a causa de sus aficiones literarias y de los artículos y novelas que publicaba en todo periodiquillos y revistas, más o menos subvencionado por la Compañía de Jesús.</p>
@@ -5639,7 +5689,7 @@
 						<p>Al otro extremo del departamento iba, inmóvil e impasible, el padre Tomás, que movía sus labios como si rezase y miraba fijamente la luz del farol que oscilaba con la trepidación del tren en marcha.</p>
 					</div>
 					<div n="69" type="chapter" xml:id="ne0328_chap69">
-						<head>VIII. LA MUERTE DEL NIÑO</head>
+						<head xml:id="ne0328_head_076">VIII. LA MUERTE DEL NIÑO</head>
 						<p>A través de las vidrieras que cerraban herméticamente las ventanas de la enfermería, entraban en ésta los alegres rayos de sol, después de juguetear entre el ramaje del inmediato jardín, donde un tropel de pájaros piaba en las alturas y más de un centenar de muchachos correteaban abajo, por las enarenadas avenidas, divirtiéndose con juegos ruidosos que producían explosiones de risas y de gritos.</p>
 						<p>La animación y el ruido del jardín contrastaba con la soledad y el silencio de aquella habitación con cuatro ventanas que servía de enfermería.</p>
 						<p>Doce pequeñas camas de hierro con ropas de deslumbrante blancura alineábanse a lo largo de la pared, enfrente de las ventanas, y todas ellas estaban vacías, a excepción de la primera, sobre cuya almohada destacábase una cabeza que, por lo abultada, parecía pertenecer a otro cuerpo que a aquel pequeño tronco raquítico y menguado, que apenas si se destacaba con las convulsiones de una respiración jadeante bajo los pliegues de la cubierta.</p>
@@ -5697,9 +5747,9 @@
 					</div>
 				</div>
 				<div type="part">
-					<head>PARTE OCTAVA: DONDE ACABA DE CUMPLIRSE EL PLAN DEL PADRE TOMÁS</head>
+					<head xml:id="ne0328_head_077">PARTE OCTAVA: DONDE ACABA DE CUMPLIRSE EL PLAN DEL PADRE TOMÁS</head>
 					<div n="70" type="chapter" xml:id="ne0328_chap70">
-						<head>I. SEÑORA Y CRIADO</head>
+						<head xml:id="ne0328_head_078">I. SEÑORA Y CRIADO</head>
 						<p>Reinaba una calma dulce e inalterable en aquel lujoso y elegante gabinete, de alfombras mullidas y paredes acolchadas de raso azul, adornado con todos los objetos superfluos y hermosos que produce la moda.</p>
 						<p>Sillones de curvo perfil que parecían convidar al sueño, sillas doradas con bordados asientos, taburetes de rameado terciopelo con rapacejos que arrastraban por la alfombra, y almohadones de deslumbrantes colores estaban esparcidos con aparente y artístico desorden por aquella aristocrática habitación, cuyos ángulos estaban ocupados por vistosas plantas artificiales en macetas gigantescas de chinesca porcelana, y aparadores de ébano poblados por todo un mundo de <seg rend="italic">bibelots</seg>, estatuillas de <seg rend="italic">biscuit</seg> en las más graciosas posiciones y jarrones vetustos que demostraban la superioridad de la antigua cerámica.</p>
 						<p>En un extremo, ocupando uno de los ángulos del gabinete, había un lecho sencillo, que entre aquellos esplendores de un lujo soberbio parecía simbolizar la imagen de la modestia.</p>
@@ -5852,7 +5902,7 @@
 						<p>—¡Oh, padre!, ¡padre mío! Si me oyes, perdóname.</p>
 					</div>
 					<div n="71" type="chapter" xml:id="ne0328_chap71">
-						<head>II. LA ÚLTIMA ADVERTENCIA</head>
+						<head xml:id="ne0328_head_079">II. LA ÚLTIMA ADVERTENCIA</head>
 						<p>Cuatro días después de aquella tarde en que Pedro hizo su revelación a la condesa, en el momento en que los relojes del hotel daban las ocho de la noche, bajaban la pequeña escalinata del edificio el elegante Ordóñez y el padre Tomás, conversando amigablemente.</p>
 						<p>El jesuita tenía el mismo aspecto de siempre, y en cuanto al marido de la condesa, su sombrero de <seg rend="italic">clac</seg> y el gabán abrochado para ocultar el traje de etiqueta, daban a entender que pensaba pasar la noche en alguna fiesta del gran mundo.</p>
 						<p>Los dos hombres siguieron la ancha avenida que, partiendo el jardín del hotel conducía a la verja, fuera de la cual esperaban dos carruajes, y al llegar a un espacio donde no alcanzaban las luces de las dos farolas que adornaban la puerta del edificio, el jesuita se detuvo, cogiendo suavemente a su protegido por un brazo.</p>
@@ -5918,7 +5968,7 @@
 						<p>—Abandona a su mujer para ir a hacerle la corte a otra, y tal vez la pobre condesa haya entrado ya en el período de agonía. Siempre le he tenido por un canalla, pero no me imaginaba que su cinismo fuese tanto.</p>
 					</div>
 					<div n="72" type="chapter" xml:id="ne0328_chap72">
-						<head>III. LA MUERTE DE MARÍA</head>
+						<head xml:id="ne0328_head_080">III. LA MUERTE DE MARÍA</head>
 						<p>La condesa moría lentamente en aquel gabinete elegante, donde había pasado toda su enfermedad.</p>
 						<p>Se veía casi abandonada de los suyos, mas no por esto se consideraba sola, pues la rodeaban hermosos recuerdos que parecían endulzar sus últimos instantes.</p>
 						<p>Las sombras de su hijo, don Esteban Álvarez y del infortunado Zarzoso, aquellos tres seres queridos a los que pensaba encontrar más allá de los umbrales de la muerte, parecían rodear su lecho y animarla con invisibles sonrisas en tan supremo trance.</p>
@@ -5986,7 +6036,7 @@
 						<p>—¡Canallas! ¡Tienen asco!</p>
 					</div>
 					<div n="73" type="chapter" xml:id="ne0328_chap73">
-						<head>EPÍLOGO</head>
+						<head xml:id="ne0328_head_081">EPÍLOGO</head>
 						<p>Eran las cinco de la tarde y la calle de Alcalá presentaba el brillante aspecto, propio de la principal arteria de una gran ciudad, a la hora en que la aristocracia comienza su día y tumbada en el fondo de sus carruajes se deja conducir con el suave balanceo de los muelles, al paseo, donde se saludan y se dirigen sonrisas las gentes que se ven diariamente en todos los puntos de diversión y apuramiento.</p>
 						<p>La tarde era espléndida. El sol de la primavera campeaba en un cielo azul medrado por jirones de blancos vapores, y la hermosura de la tarde parecía comunicarse al alma de las gentes que discurrían por las aceras con cierta expresión satisfecha mirando los carruajes que pasaban veloces por el centro de la calle.</p>
 						<p>Era el primer día que el antiguo asistente de don Esteban Álvarez se sentía un tanto alegre después de la muerte de la condesa de Baselga, ocurrida ocho meses antes.</p>
@@ -6049,7 +6099,7 @@
 				<p>FIN DE LA OBRA</p>
 			</div>
 			<div>
-				<head>APÉNDICE</head>
+				<head xml:id="ne0328_head_082">APÉNDICE</head>
 				<p>Para que el lector acabe de capacitarse de lo que es la Compañía de Jesús y de los peligros que ofrece su existencia dentro de la actual sociedad, nada nos parece tan útil como reproducir su <seg rend="italic">Mónita Secreta</seg>, o sea, las instrucciones reservadas por que se rigen los más importantes individuos de la tenebrosa Orden.</p>
 				<p>Léanse con detenimiento todos sus capítulos, y en ellos se verá claramente el fin a que aspira la temible Sociedad y los medios hábiles y diabólicos de que se vale para alcanzarlo.</p>
 				<p>La <seg rend="italic">Mónita</seg> es la obra de un gran talento infernal puesto al servicio de la más repugnante y temible de las causas. Es una ganzúa de ladrón experto, con la cual se pueden abrir todas las cajas y todas las conciencias.</p>
@@ -6059,15 +6109,15 @@
 				<p>Se han hecho traducciones en todas las lenguas de esta obra maestra de la falsedad y de la astucia, y el eminente escritor democrático don Fernando Garrido fue el primero que la tradujo al español.</p>
 				<p>Entérese el lector de la famosa <seg rend="italic">Mónita</seg> y se convencerá de lo que es capaz la Compañía para apoderarse del dinero ajeno y de la conciencia de imbéciles y fanáticos:</p>
 				<div>
-					<head>«MONITA SECRETA» O INSTRUCCIONES RESERVADAS DE LA COMPAÑÍA DE JESÚS</head>
+					<head xml:id="ne0328_head_083">«MONITA SECRETA» O INSTRUCCIONES RESERVADAS DE LA COMPAÑÍA DE JESÚS</head>
 					<div>
-						<head>PREFACIO</head>
+						<head xml:id="ne0328_head_084">PREFACIO</head>
 						<p>Los Superiores deben guardar entre sus manos cuidadosamente estas instrucciones particulares, y no deben comunicarlas más que a algunos profesos, instruyendo solamente a algunos de los no profesos, cuando lo exija la conveniencia de la <seg rend="italic">Sociedad</seg>; y esto se hará bajo el sello del silencio, y no como si se hubiesen escrito por otro, sino cual si fuesen producto de la experiencia del que las da. Como muchos profesos conocen estos secretos, la <seg rend="italic">Sociedad</seg> arregló desde su origen que los que los sepan no puedan pasar a otras Ordenes, a no ser a la de los Cartujos, por el retiro y silencio en que viven, y el Papa nos lo concedió.</p>
 						<p>Hay que poner sumo cuidado en que estas advertencias no caigan en manos de extraños, porque les darán una interpretación siniestra por envidia a nuestra Institución. Si esto sucediera, lo que Dios no quiera, debe negarse que son tales los sentimientos de la <seg rend="italic">Sociedad</seg>, haciendo que así lo aseguren los que a ciencia cierta se sabe que lo ignoran, y oponiéndoles nuestras instrucciones generales y reglas, impresas o manuscritas.</p>
 						<p>Los Superiores deben siempre investigar cuidadosamente, y con prudencia si alguno de los nuestros ha descubierto a extraños estas instrucciones secretas; y a nadie se tolerará que las copie, ni para sí ni para otro, sin consentimiento del General, o al menos del Provincial; y si se duda de que alguien no sea capaz de guardar secretos tan grandes, se le despedirá.</p>
 					</div>
 					<div>
-						<head>CAPITULO I</head>
+						<head xml:id="ne0328_head_085">CAPITULO I</head>
 						<p>DE QUE MODO DEBE CONDUCIRSE LA SOCIEDAD CUANDO COMIENZA UNA FUNDACIÓN</p>
 
 						<p>Para hacerse agradables a los vecinos del pueblo, importa mucho explicarles el objeto de la <seg rend="italic">Sociedad</seg>, tal como está prescrito en las reglas, donde se dice que la <seg rend="italic">Sociedad</seg> debe aplicarse con tanto afán a la salvación del prójimo como a la suya propia. Para esto deben desempeñarse en los hospitales las funciones más humildes, visitar a los pobres, a los afligidos y a los presos. Es preciso oír las confesiones con benevolencia, y ser con los pecadores muy indulgentes, a fin de que las personas más importantes admiren a los nuestros y los amen, tanto por la caridad que muestren para todos, como por la novedad de su blandura.</p>
@@ -6082,7 +6132,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO II</head>
+						<head xml:id="ne0328_head_086">CAPITULO II</head>
 						<p>DE QUE MANERA LOS PADRES DE LA SOCIEDAD PODRÁN ADQUIRIR Y CONSERVAR FAMILIARIDAD CON LOS PRÍNCIPES, LOS GRANDES Y PERSONAJES IMPORTANTES</p>
 
 						<p>Es preciso consagrar nuestros esfuerzos a ganar la simpatía y el ánimo de los príncipes y de las personas más importantes, a fin de que nadie se atreva con nosotros, sino que, al contrario, todos se vean obligados a depender de nosotros.</p>
@@ -6102,7 +6152,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO III</head>
+						<head xml:id="ne0328_head_087">CAPITULO III</head>
 						<p>COMO DEBE LA SOCIEDAD CONDUCIRSE CON LOS QUE EJERCEN GRAN AUTORIDAD EN EL ESTADO, Y QUE, AUNQUE NO SEAN RICOS, PUEDEN PRESTAR OTROS SERVICIOS</p>
 
 						<p>Además de las cosas que acaban de decirse, y que con discernimiento pueden aplicarse casi todas, es preciso cuidar de atraerse su favor contra nuestros enemigos.</p>
@@ -6118,7 +6168,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO IV</head>
+						<head xml:id="ne0328_head_088">CAPITULO IV</head>
 						<p>LO QUE DEBE RECOMENDARSE A LOS PREDICADORES Y A LOS CONFESORES DE LOS GRANDES</p>
 
 						<p>Que los nuestros dirijan a los príncipes y a los hombres ilustres, de suerte que parezca que solo tienden a la mayor gloria de Dios y a la austeridad de conciencia que los príncipes consientan en ceder, porque la manera de dirigirlos no debe atender al principio, sino, insensiblemente, al gobierno exterior y político.</p>
@@ -6132,7 +6182,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO V</head>
+						<head xml:id="ne0328_head_089">CAPITULO V</head>
 						<p>COMO CONVIENE CONDUCIRSE CON LOS OTROS RELIGIOSOS QUE DESEMPEÑAN EN LA IGLESIA FUNCIONES SEMEJANTES A LAS NUESTRAS</p>
 
 						<p>Es preciso soportar con valor esta especie de gente, y dejar entender a propósito de ella a los príncipes y a los que ejercen autoridad, y que nos son adictos, que nuestra <seg rend="italic">Sociedad</seg> contiene la perfección de todas las otras órdenes, excepto el canto y la austeridad exterior en la manera de vivir y de vestirse; y que si los otros religiosos sobresalen en algo, nuestra <seg rend="italic">Sociedad</seg> brilla eminente en la Iglesia de Dios.</p>
@@ -6141,7 +6191,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO VI</head>
+						<head xml:id="ne0328_head_090">CAPITULO VI</head>
 						<p>DE LA MANERA DE CONQUISTAR A LAS VIUDAS RICAS</p>
 
 						<p>Que se escojan para ello padres avanzados en años, que sean de complexión viva y de agradable conversación. Que visiten a esas viudas, y que tan luego como vean en ellas algún afecto hacia la <seg rend="italic">Sociedad</seg>, que les ofrezcan las obras, y que les hagan presentes los méritos de la Institución. Y si las aceptaren y visitaren nuestras iglesias, que se les provea de un confesor que las dirija bien, con el objeto de conservarlas en el estado de viudez, hablándoles de sus ventajas y ponderándoles la felicidad que tendrán: prometiéndoles como cierto, y hasta respondiéndoles, de que así merecían la bienaventuranza y se librarán de las penas del purgatorio.</p>
@@ -6160,7 +6210,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO VII</head>
+						<head xml:id="ne0328_head_091">CAPITULO VII</head>
 						<p>COMO DEBE ENTRETENERSE A LAS VIUDAS, Y DISPONER DE SUS BIENES</p>
 
 						<p>Que se insista incesantemente en que continúen en su devoción y buenas obras, de suerte que no se pase semana sin que reduzcan sus gastos superfluos, en honor de Jesús y de la Virgen, o del santo de su devoción, dándolo a los pobres o para ornamento de la iglesia, hasta que se les despoje enteramente de las primicias o de las ollas de Egipto.</p>
@@ -6186,7 +6236,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO VIII</head>
+						<head xml:id="ne0328_head_092">CAPITULO VIII</head>
 						<p>LO QUE DEBE HACERSE PARA QUE LOS HIJOS DE LAS VIUDAS ABRACEN EL ESTADO RELIGIOSO DE DEVOCIÓN</p>
 
 						<p>Como se necesita que las madres obren con vigor, los nuestros deben conducirse con dulzura en estas ocasiones. Hay que inducir a las madres a disgustar a sus hijos desde la más tierna infancia, con censuras y reprimendas, etc.; y principalmente cuando sus hijas son ya talluditas, a que se nieguen a darles adornos, y a que deseen con frecuencia para ellas y pidan a Dios, que aspiren a ser religiosas, prometiéndoles una gran dote si quieren hacerse monjas. Para esto deben recordarles los inconvenientes comunes a todos los matrimonios, y además los que sufrieron en el suyo, mostrando su dolor por no haber preferido el celibato al matrimonio. Conviene que se conduzcan de manera que sus hijas, aburridas de la vida a que las sujetan sus madres, piensen en hacerse religiosas.</p>
@@ -6200,7 +6250,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO IX</head>
+						<head xml:id="ne0328_head_093">CAPITULO IX</head>
 						<p>DEL AUMENTO DE LAS RENTAS DE LOS COLEGIOS</p>
 
 						<p>En tanto que sea posible no debe admitirse a hacer el último voto a quien se sepa que espera una herencia, a menos que no tenga ya un hermano más joven que él en la <seg rend="italic">Sociedad</seg>, o por otras razones graves. Sobre todo, hay que trabajar en el acrecentamiento de la <seg rend="italic">Sociedad</seg>, conforme a los fines conocidos por los superiores, que deben estar de acuerdo en que, a la mayor gloria de Dios, la Iglesia recobre su primitivo brillo, de suerte que no haya más que un solo espíritu en todo el clero. Por esto es preciso repetir y publicar con frecuencia que la <seg rend="italic">Sociedad</seg> se compone en parte de profesos tan pobres que carecerían de todo sin las liberalidades cotidianas de los fieles, y en parte de otros padres, pobres también, que poseen bienes inmuebles, para no estar a expensas del pueblo mientras desempeñan sus funciones, como los otros mendicantes. Los confesores de príncipes, grandes, viudas y otros personajes, de quienes nuestra <seg rend="italic">Compañía</seg> puede esperar mucho, harán saber a estos seriamente que, ya que les dan las cosas espirituales y eternas, deben dar en cambio las terrestres y temporales; y cuando les ofrezcan algo, no desperdiciarán la ocasión de tomarlo. Si les han hecho promesas y tardan en cumplirlas, hay que recordarlas con prudencia, disimulando cuanto se pueda el deseo de ser rico. Si algún confesor de los grandes o de otros no parece bastante diestro para practicar todo esto, debe quitársele el empleo en tiempo oportuno, poniendo otro en su lugar; y si fuere necesario, para dar amplia satisfacción a los penitentes, se le relegará a los colegios lejanos, diciendo que la <seg rend="italic">Sociedad</seg> necesita su persona y talento en aquellos sitios. Hacemos estas advertencias porque hemos sabido, no hace mucho tiempo, que viudas jóvenes al morir no habían legado a nuestras iglesias muebles preciosos, por la negligencia de los nuestros, que no los aceptaron a tiempo. Para aceptar cosas semejantes todos los tiempos son buenos, si no es mala la voluntad del penitente.</p>
@@ -6225,7 +6275,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO X</head>
+						<head xml:id="ne0328_head_094">CAPITULO X</head>
 						<p>DEL RIGOR PARTICULAR DE LA DISCIPLINA EN LA SOCIEDAD</p>
 
 						<p>Debe expulsarse, bajo un pretexto cualquiera, por enemigo de la <seg rend="italic">Sociedad</seg>, sin tener en cuenta condición ni edad, al que aparte a los devotos y devotas de nuestras iglesias o del trato con los nuestros, o que a las limosnas les haga tomar el camino de otras iglesias y de otros religiosos, o que haya disuadido a algún hombre opulento, bien dispuesto a favorecer la <seg rend="italic">Sociedad</seg>, de que le ayude. Lo mismo debe hacerse con el que, al disponer de sus bienes, manifieste más afecto a sus parientes que a la <seg rend="italic">Sociedad</seg>, porque esto prueba que su espíritu no está mortificado, y es preciso que los profesos lo estén por completo. También será expulsado el que dé a sus parientes pobres las limosnas de los penitentes o de los amigos de la <seg rend="italic">Sociedad</seg>. Para que no se quejen de la causa de su expulsión, no se les despedirá en seguida; primero se les impedirá confesar, se les mortificará y fatigará, haciéndoles desempeñar las faenas más viles; se les obligará además cada día a hacer las cosas que les causen más repugnancia. Se les apartará de los estudios elevados y de los cargos honrosos, se les reprenderá en los capítulos y en censuras públicas; se les excluirá de las diversiones y del trato con extraños; se suprimirá en sus vestidos y en cuanto usan todo lo que no sea absolutamente necesario, hasta que se aburran, murmuren y se impacienten; entonces se les despedirá, como a gente poco sufrida y que puede ser perniciosa a los otros por su mal ejemplo. Si hay que dar cuenta a los parientes y a los prelados de la Iglesia del porqué se les ha expulsado, se dirá que no hubo medio de inculcarles el espíritu de la <seg rend="italic">Sociedad</seg>.</p>
@@ -6236,7 +6286,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO XI</head>
+						<head xml:id="ne0328_head_095">CAPITULO XI</head>
 						<p>COMO SE CONDUCIRÁN LOS NUESTROS DE COMÚN ACUERDO CON LOS EXPULSADOS DE LA SOCIEDAD</p>
 
 						<p>Como los expulsados sabrán algunos de nuestros secretos, podrán perjudicar a la <seg rend="italic">Compañía</seg>, y habrá que contrarrestarlos del siguiente modo: antes de expulsarles se les obligará a prometer por escrito, y a jurar que no dirán ni escribirán nunca nada perjudicial a la <seg rend="italic">Compañía</seg>. Los superiores conservarán, escritas por los mismos culpables, sus malas inclinaciones, sus defectos y vicios, confesados en descargo de su conciencia, según costumbre de la <seg rend="italic">Sociedad</seg>, y de los que en caso de necesidad los superiores se servirán revelándolos a los grandes y a los prelados para que no los asciendan.</p>
@@ -6250,7 +6300,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO XII</head>
+						<head xml:id="ne0328_head_096">CAPITULO XII</head>
 						<p>A QUIENES DEBE CONSERVARSE EN LA SOCIEDAD</p>
 
 						<p>Los buenos trabajadores deben ocupar el mejor puesto, y estos son: los que aumentan tanto el bien temporal como espiritual de la <seg rend="italic">Sociedad</seg>, y casi siempre son los confesores de príncipes, de grandes, de viudas y devotos ricos, predicadores y confesores, y los sabedores de estos secretos.</p>
@@ -6260,7 +6310,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO XIII</head>
+						<head xml:id="ne0328_head_097">CAPITULO XIII</head>
 						<p>DE LA ELECCIÓN QUE DEBE HACERSE DE LOS JÓVENES PARA ADMITIRLOS EN LA SOCIEDAD, Y DEL MODO DE RETENERLOS EN ELLA</p>
 
 						<p>Hay que trabajar con mucha cautela en la elección de los jóvenes de talento, hermosos, nobles o que sobresalgan.</p>
@@ -6279,7 +6329,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO XIV</head>
+						<head xml:id="ne0328_head_098">CAPITULO XIV</head>
 						<p>DE LOS CASOS RESERVADOS Y DE LAS CAUSAS POR QUE SE DEBE EXPULSAR A LOS MIEMBROS DE LA SOCIEDAD</p>
 
 						<p>Además de los casos expuestos en las constituciones, y de los cuales el superior solo, o el confesor ordinario con su permiso, podrá absolver, hay la dosomía, la holgazanería, la fornicación, el adulterio, los tocamientos impúdicos de un varón con una hembra y, sobre todo, el que alguno, bajo cualquier pretexto, por celo o de otro modo, haga algo grave contra la <seg rend="italic">Sociedad</seg>, su honor o su provecho; estas son causas justas de expulsión.</p>
@@ -6293,7 +6343,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO XV</head>
+						<head xml:id="ne0328_head_099">CAPITULO XV</head>
 						<p>COMO HAY QUE CONDUCIRSE CON LAS DEVOTAS Y LAS RELIGIOSAS</p>
 
 						<p>Confesores y predicadores se guardarán de ofender a las religiosas y de tentarlas contra su vocación; antes bien, ganarán el afecto de las superioras, y harán lo posible para recibir sus confesiones extraordinarias, y les dirán sermones, si esperan recibir muestras de su reconocimiento, porque las abadesas, principalmente las ricas y nobles, pueden servir de mucho a la <seg rend="italic">Sociedad</seg>, por sí mismas y por medio de sus parientes y amigos; así es cómo, introduciéndose en los monasterios, la <seg rend="italic">Sociedad</seg> puede obtener la amistad de los habitantes de la ciudad.</p>
@@ -6303,7 +6353,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO XVI</head>
+						<head xml:id="ne0328_head_100">CAPITULO XVI</head>
 						<p>DE LA MANERA DE PROFESAR EL DESPRECIO DE LAS RIQUEZAS</p>
 
 						<p>Para que los clérigos seculares no puedan atribuirnos pasión por las riquezas, convendrá rehusar algunas veces las limosnas de poca importancia, ofrecidas cual recompensa de servicios prestados por la <seg rend="italic">Sociedad</seg>, aunque se acepten otras menores, para que no se nos acuse de avaricia si solo recibimos las más considerables.</p>
@@ -6312,7 +6362,7 @@
 
 					</div>
 					<div>
-						<head>CAPITULO XVII</head>
+						<head xml:id="ne0328_head_101">CAPITULO XVII</head>
 						<p>DE LOS MEDIOS DE HACER PROSPERAR LA SOCIEDAD</p>
 
 						<p>Que todos traten principalmente, hasta en lo que parezca insignificante, de mostrar los mismos sentimientos, o al menos que lo aparenten, porque de este modo, a pesar de las turbulencias que agitan el mundo, la <seg rend="italic">Sociedad</seg> aumentará y se consolidará.</p>

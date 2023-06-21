@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La reja</title>
-				<title type="sub">Novela andaluza</title>
+				
 				<title type="short">Reja</title>
-				<title type="idno">
-					<idno type="bne">XX2715976</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1022853</idno>
-					<idno type="viaf">17371849</idno>
-					<name type="short">Rueda</name>
-					<name type="full">Salvador Rueda</name>
+					<name type="short" ref="#Rueda"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1163</measure>
@@ -140,13 +131,38 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0395</idno>
+						<idno type="cligs">ne0395</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bne" subtype="pdf">BNE, <date when="2018">2018</date> <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000203197&amp;page=1"/>.</bibl>
-				<bibl type="print-source">Pascual Aguilar, <date when="1890">1890</date>, Valencia.</bibl>
-				<bibl type="edition-first">Pascual Aguilar, <date when="1890">1890</date>, Valencia.</bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La reja</title>
+					<title type="sub">Novela andaluza</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2715976.html">XX2715976</idno>
+				</idno>
+				</title>
+					<author xml:id="Rueda">
+						<name type="full"><forename>Salvador</forename> <surname>Rueda</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 7460 - IP 7461">IP 7460 - IP 7461</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5121471/">Q5121471</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1022853.html">XX1022853</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/17371849/">17371849</idno>
+							<idno type="gnd" corresp="  https://d-nb.info/gnd/118603833">118603833</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bne" subtype="pdf">BNE, <date when="2018">2018</date> <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000203197&amp;amp;page=1"/>.</bibl>
+					<bibl type="print-source">Pascual Aguilar, <date when="1890">1890</date>, <pubPlace>Valencia</pubPlace>.</bibl>
+					<bibl type="edition-first">Pascual Aguilar, <date when="1890">1890</date>, <pubPlace>Valencia</pubPlace>.<idno source="k10plus" type="ppn" n="464533449" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464533449"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La reja</title>: 	<title type="sub">novela andaluza</title> <date when="1890">1890</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464533449" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464533449"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +172,14 @@
 				<p>Gira en también en torno a una fábula de amores (la que viven Rosalía y Bernardo), cuya trama da lugar a describir las fiestas del pueblo, el copo, el sacorio (rapto de una muchachita cuando su padre se opone injustamente a la boda), etc.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 7460" key="IP 7460" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL8">6</term>
 					<term type="author.continent">Europe</term>
@@ -168,7 +192,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">1-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender" cert="medium">female</term>
@@ -180,11 +204,11 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">costumbrista</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">Novela andaluza</term>
 					<term type="text.genre.subtitle.source" resp="bne">Novela andaluza</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">Novela andaluza</term>
@@ -194,7 +218,7 @@
 					<term type="text.litHist.mentioned" resp="HdLE">True</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE8">0.2</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
@@ -216,32 +240,33 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-01-19" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>NOVELA ANDALUZA: VALENCIA</head>
+				<head xml:id="ne0395_head_000">NOVELA ANDALUZA: VALENCIA</head>
 				<p>PASCUAL AGUILAJR, EDITOR</p>
 				<p><seg rend="italics">Caballeros, i.</seg></p>
 			</div>
 			<div>
-				<head>A LOS ESCRITORES, CRÍTICOS</head>
+				<head xml:id="ne0395_head_001">A LOS ESCRITORES, CRÍTICOS</head>
 				<p><seg rend="bold">Y POETAS AMERICANOS </seg>EN TESTIMONIO DE PROFUNDA SIMPATÍA</p>
 			</div>
 			<div>
-				<head>Salvador Rueda</head>
+				<head xml:id="ne0395_head_002">Salvador Rueda</head>
 				<p><seg rend="bold">Madrid, Marzo 90.</seg></p>
 				<p><seg rend="italics">Biblioteca Nacional de España</seg></p>
 			</div>
 			<div>
-				<head>La Reja</head>
+				<head xml:id="ne0395_head_003">La Reja</head>
 				<p>i</p>
 			</div>
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0395_chap1">
-				<head>I: A TIENTAS</head>
+				<head xml:id="ne0395_head_004">I: A TIENTAS</head>
 				<p>Ya había puesto la tranca ala puerta el padre de Rosalía, llamado entre la gente de Guedeja el lio Justo, que era avaro cuanto receloso, y tosco de cuerpo como de alma.</p>
 				<p>Poco más que la tranca alzaba del suelo el huesudo y rehecho hombre.</p>
 				<p>Su cuerpo, de la chata figura de un tapón, dejaba adivinar el engranaje de huesos como una urdimbre de bronce.</p>
@@ -310,7 +335,7 @@
 				<p>Un figurado repique triunfal alzaron las tres mi! campanillas, que temblaron de gozo al pasar corriendo por ellas la delicada mano de la brisa...</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0395_chap2">
-				<head>II: PELANDO LA. PAVA</head>
+				<head xml:id="ne0395_head_005">II: PELANDO LA. PAVA</head>
 				<p>—¡Ay, qué angustias, Bernardo!— gimió, apenas llegó á la reja, Rosalía. Pisando sobre la voluntá mesma pa no jacer ruío, ni sé cómo llego á echarte los ojos encima.</p>
 				<p>—¡Y ganas que había yo reunió de cruzar los míos con ellos!</p>
 				<p>—Si lo dices con sorna, sabe que no es mía la culpa.</p>
@@ -390,7 +415,7 @@
 <lg type="poem">				<l>Para yamarme Primores no jayo ningún derecho; para primores tu cara, y para ingrato ta pecho.</l></lg>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0395_chap3">
-				<head>III: EL ADIÓS DE LA PARRANDA</head>
+				<head xml:id="ne0395_head_006">III: EL ADIÓS DE LA PARRANDA</head>
 				<p>Tenía razón en lo que cantaba el j    mozuelo.</p>
 				<p>La hija del tío Justo era lo que se llama un primor de bonita, una moza como un oro.</p>
 				<p>Sólo que también era cierta la última parte de la copla. Cierta, desde el punto de vista en que tomaba el asunto Primores, que ignoraba toda la risa que producía en la muchacha su pasión, y lo que era indiferencia en ella, tomábalo él por las piedras y abrojos de que todo enamorado gusta adornar el camino de quien adora.</p>
@@ -442,7 +467,7 @@
 				<p>—¿Qué buscas? Habla.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0395_chap4">
-				<head>IV: YO PECADORA</head>
+				<head xml:id="ne0395_head_007">IV: YO PECADORA</head>
 				<p>Mudada de color por la emoción recibida, y queriendo á sí misma desvanecerse con tal de evitar la escena, ni supo al pronto qué contestar.</p>
 				<p>Primero iluminó su mente, y pasó con rapidez suma, la idea de decir que había escuchado la parranda, y que, notando que venía en ella Primores, determinó salir á la reja.</p>
 				<p>Este ardid hubiera podido salvarla del trance, dado que el padre miraba con buenos ojos al mozuelo y no deseaba otra cosa sino que Rosalía prestara atención á sus palabras; pero su naturaleza rechazaba por instinto la mentira y se- le vino la verdad á la boca.</p>
@@ -511,7 +536,7 @@
 				<p>—¡Válgame Dios con tanto dijusto! —repetía maquinalmente doña Prudencia internándose casa adentro en busca de la regadera.—¡Válgame Dios, qué cruz!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0395_chap5">
-				<head>V: LIMPIEZA GENERAL</head>
+				<head xml:id="ne0395_head_008">V: LIMPIEZA GENERAL</head>
 				<p>El porracear formidable de unos talones sobre el pavimento, indicó que aparecía un nuevo personaje en escena.</p>
 				<p>Era éste una hermana del tío Justo, una idiota con estatura de gigante y rostro de carátula, uno de esos seres deformes que parecen el castigo de las familias á que pertenecen.</p>
 				<p><seg rend="italics">Anita</seg> como se hacía llamar ella, <seg rend="italics">Anaza</seg> como le decía la mayor parte de la gente del pueblo, y</p>
@@ -539,7 +564,7 @@
 				<p>La naturaleza, ol pueblo, los términos lejanos y el mar que mostraba el lampo de chispas doradas del sol, se bañaron por igual en átomos luminosos y en la pura y bendecida gracia de Dios.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0395_chap6">
-				<head>VI: BUSCANDO AMORES</head>
+				<head xml:id="ne0395_head_009">VI: BUSCANDO AMORES</head>
 				<p>Muy ajeno á las desagrables escenas que ocurrían al amanecer en casa del tío Justo, echábase del lecho, en su cortijo, distante del pueblo, el mínimo cuanto apasionado Antolín, dispuesto á hacer su segunda visita de pretendiente á Rosalía, la cual no sólo era norte y fin amoroso de Primores y de Bernardo, sino que también era luz suave que alumbraba las noches de ciego afán de Antolín.</p>
 				<p>Era éste el primogénito de la casa de León Cumbrales, cortijero el más rico de Iznayas partido que lindaba con el mar; contaba próximamente treinta años, y alzaría poco más de un metro del suelo.</p>
 				<p>Esta miniatura humana, este hombre pequeño, era una primorosa cinceladura, un acabado tino de belleza dentro de su incomprensible tamaño.</p>
@@ -628,7 +653,7 @@
 				<p>—¡Dios guardaustés, cabayeros!</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0395_chap7">
-				<head>VII: EL CABALLO Á LA REJA</head>
+				<head xml:id="ne0395_head_010">VII: EL CABALLO Á LA REJA</head>
 				<p>—Vengastó con Dios—respondió echando chiribitas de alegría por los ojos el tío Justo, y alargó una silla al mozo para que se sentara.</p>
 				<p>Ya bastante entrado el día, enviaba el sol, que ascendía sobre el mar, vivos esplendores al pueblo, y en la casa de Rosalía, que daba vista á la cercana playa, entraba á borbotones la luz.</p>
 				<p>El día era de los de remate de vendimia.</p>
@@ -706,7 +731,7 @@
 				<p>—Vendré—contestó solamente el mozo, y partió entre el deslumbramiento de colores de la montura.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0395_chap8">
-				<head>VIII: GAVIOTAS Y LÁGRIMAS</head>
+				<head xml:id="ne0395_head_011">VIII: GAVIOTAS Y LÁGRIMAS</head>
 				<p>—¿Qué majeza es la que sale de casa, tío Justo?—preguntó Primores, apenas se perdió de vista el peripuesto hijo de Cumbrales.</p>
 				<p>Sorprendido el viejo por lo inesperado de la demanda, quedóse como aquel á quien preguntan qué es cosa y cosa.</p>
 				<p>No había contado con que el mozo podía llegar á tiempo que él echaba sus cálculos acerca de la fortuna de Antolín, y un momento estuvo dando trasijos con las razones sin poder colocar una en el arco para dispararla.</p>
@@ -767,7 +792,7 @@
 				<p>Los ojos que buscaba Primores, estaban poseídos del espectáculo más sublime que puede haber en ellos: los bañaba el raudal puro y silencioso de las lágrimas.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0395_chap9">
-				<head>IX: CONTRA VIENTO Y MAREA</head>
+				<head xml:id="ne0395_head_012">IX: CONTRA VIENTO Y MAREA</head>
 				<p>No solamente en el pueblo se ponía todo saltando para recibirlas fiestas de la Virgen y so fregaban en cada casa vasares y peroles; también en la playa se sacaban los últimos <seg rend="italics">copos</seg> del mar, y se hacían apresuradamente las faenas que anteceden álos días de huelga en honor de la patrona.</p>
 				<p>Únase á esto los preparativos contra el temporal en toda la costa, el afianzamiento de casetas á los puntales fijos en la arena, el guardar levas y maromas, y todas las tareas que los pescadores de Guedeja ejecutan con la alegría de quien va á dar la espalda al trabajo durante varios días, y se tendrá idea del hervidero de vida, de los cantos, del bullicio que animaban la orilla del mar hacia donde Rosalía dirigía las miradas.</p>
 				<p>Empezaba á caer la tarde.</p>
@@ -871,7 +896,7 @@
 </lg>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0395_chap10">
-				<head>X: LA CONJURA</head>
+				<head xml:id="ne0395_head_013">X: LA CONJURA</head>
 				<p>Por la noche hubo más palos y más malos tratos que nunca en casa del tío Justo.</p>
 				<p>—¡Haber ío esta mala hija—decía el viejo, con la puerta atrancada para que no se oyeran desde la calle las voces,—haber ío esta tunanta detrás de ese pescaorcillo porque tuvo un mal tropiezo en las olas! A fe que si yo me muriera no habrías de tomarlo tan á pecho. ¡Valiente hija de su madre! Nó, pues lo que es de mí no se burla ninguna...</p>
 				<p>Y una bofetada dada en la belleza de aquel rostro, donde tenía su más puro altar la modestia, fué la señal de Ja elocuencia persuasiva del hombre.</p>
@@ -940,7 +965,7 @@
 <lg type="poem">				<l>¡Cuando quedrá Dios der cielo y la Virgen de la luz, que tu ropitay la mía las guarde el misino baúl!</l></lg>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0395_chap11">
-				<head>XI: MURMURACIÓN EN LA IGLESIA</head>
+				<head xml:id="ne0395_head_014">XI: MURMURACIÓN EN LA IGLESIA</head>
 				<p>—¿Conque mayordoma, doña Hortensia?</p>
 				<p>—¿Ha visto usted, doña Ana? ¡Casualidad como ésta de salir mayordomas el mismo año!...    '</p>
 				<p>—No es malo para que luzcan las fiestas de la Virgen; buen tiempo durante la vendimia, muchas cajas de pasas que darán de sí buenas onzas, y alegría y juventud en el pueblo; si éste no es un buen año...</p>
@@ -1013,7 +1038,7 @@
 				<p>Sólo aguardaban á la imagen, que traída en hombros por los mozos desde la playa, ocuparía su esbelto trono, entre el nutrido tintineo, parecido á un llover de golas de oro, de las breves campanillas de plata.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0395_chap12">
-				<head>XII: CONFIDENCIA</head>
+				<head xml:id="ne0395_head_015">XII: CONFIDENCIA</head>
 				<p>Y fueron los mozos por la Virgen, por la Virgen que invocaba el marino en las tempestades, por la santa pa-trona del pueblo, que había de dejar su gruta de rocas para ser paseada por las calles y parada á la puerta de losenfermos.</p>
 				<p>En estado de aparecer ante ella estaba ya la pobre Prudencia á causa de su padecimiento al corazón, exacerbado con las últimas penas; en estado do pedirle misericordia, como hacen los delicados de cuerpo, los afligidos de alma, los que llevan algún dolor grande y oculto.</p>
 				<p>Habían ido desapareciendo de la mujer ilusión tras ilusión, gracia tras gracia, como caen del tallo una á una las hojas do la flor.</p>
@@ -1061,7 +1086,7 @@
 				<p>Pensativas y serenas como se queda detrás de los grandes desprendimientos de lágrimas, Rosalía y su madre bebían, con los ojos en éxtasis, la última luz del crepúsculo, que allá en el límite del mar dibujó en un celaje una visión de fuego, y pasó por ios tonos cárdeno y morado, muriendo por último en la sombra.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0395_chap13">
-				<head>XIII: DESFILE</head>
+				<head xml:id="ne0395_head_016">XIII: DESFILE</head>
 				<p>La mañana siguiente despertó con la plaza hecha una feria de alegría. Pregones de turroneros por aquí, peroratas de «saltimbanquis» por allá, cruce de mozuelas por medio del gentío, el cual Ies colgaba un rosario de requiebros y agudezas; bullir de chiquillos por todos lados con sus ropitas nuevas, que les desfiguraban y les daban el tono desusado del día de fiesta; puestos de dulces colocados sobre mesas de pino, que empezaban en la puerta de la iglesia y corrían dando vuelta á la plaza; campaneo á misa mayor, que volvía loca á la gente; mucho de olores á ropas guardadas en el fondo del arca; de perfume á limpieza y á cal que hacía irradiar al sol las paredes; de semblantes afeitados en los que la tonsura disimulaba lo tosco y bronceado de los vientos del mar; de mantillas tocando las cabezas; de peinados con rodetes de menudísimos ramales; de lujo, de gala, de donaire, de algo muy español; todo lo cual se revolvía con brillantez de palela, y daba carácter y particular fisonomía á la plaza.</p>
 				<p>—Más adelante se verá—chillaba en un monótono desagüe de palabras el franchute dueño del desvencijado cosmorama,—más adelante se verá la bizarra figura de Prim, descollando entre <seg rend="italics">sus</seg> soldados con el sable desenvainado y arengando las tropas. <seg rend="italics">A su derecha</seg> va el general O'Donnell, notable y valiente general, que estudia el plan de acorralar y hacer huir á los enemigos. «Darabos» á dos se esfuerzan por ganar el parapeto que se descubre en el fondo, donde el <seg rend="italics">pérfido </seg>moro se defiende y atrinchera.</p>
 				<p>¿Quién va á verlo, señores, quién va á verlo? Es un cuadro nunca visto; sólo una <seg rend="italics">mota</seg> vale arrimarse: ¿quién se arrima, quién se arrima?</p>
@@ -1093,7 +1118,7 @@
 				<p>Entró la gente en la iglesia, y se dió principio á la misa.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0395_chap14">
-				<head>XIV: SERMÓN</head>
+				<head xml:id="ne0395_head_017">XIV: SERMÓN</head>
 				<p>En el momento, allá ribera del mar arriba, en el cortijo de Cumbrales, echaba galas y galas sobre su cuerpo el más que nunca apasionado Antolín, dispuesto á hacer la tercera visita á Rosalía, y la porra que había de servirle de declaración amorosa yacía acostada en una silla frente al espejo, por el cual se veía su tropel de cintas y de lazos.</p>
 				<p>Era la porra de algarrobo, y parecía un colosal as de bastos al que se hubiera vestido de máscara, agotando en ello cuantos colores idear pudo la luz.</p>
 				<p>Las escarapelas de guitarra, vivas y airosas; el adorno de cintas de las sonadoras castañuelas, espléndido y vario; la mona bordada para corrida de lujo, son sombra y negrura comparados con el vivísimo traje de la chivata, la cual habría de abrirle el corazón de la mozuela.</p>
@@ -1126,7 +1151,7 @@
 				<p>Un clamoreo inmenso, nutrido, un plañido de todas las bocas, un sollozar de frases inarticuladas, de gemidos, de rezos subía como una avasalladora ola religiosa á estrellarse á los pies de la Virgen, que sobre el fondo del altar resplandecía en medio do un incendio de luces.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0395_chap15">
-				<head>XV: ¿PORRA AENTRO, Ú PORRA AFUERA?</head>
+				<head xml:id="ne0395_head_018">XV: ¿PORRA AENTRO, Ú PORRA AFUERA?</head>
 				<p>Cuando terminaron el sermón y la misa, y ya empezaban á salir las personas de la iglesia, entraba calvario arriba el de Cumbrales, que esta vez no parecía con la porra á cuestas el mono que tiró el tiro, según la frase de las mujeres, sino antes bien una viva y emperejilada sota de bastos.</p>
 				<p>Anita, que á última hora se lanzó con una amiga vecina suya á la iglesia, fuó la primera en divisarlo á lo lejos, y después de sentir un brinco en el corazón que la dejó sin color y medio muerta, graduó el paso para que toda la gente estuviera en la plaza á tiempo que ella llegase, que sería en el momento preciso de entrar también el pretendiente.</p>
 				<p>La voz de que se acercaba la presencia del mozo cundió con una alegría extraordinaria.</p>
@@ -1143,7 +1168,7 @@
 				<p>En la plaza, cada cual soltando por su lado grandes carcajadas entre contorsiones horribles, se ofrecía un cuadro trágico de hombres condenados perpétuamente á la risa.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0395_chap16">
-				<head>XVI: PREPARATIVOS DE UN LANCE</head>
+				<head xml:id="ne0395_head_019">XVI: PREPARATIVOS DE UN LANCE</head>
 				<p>—Quien te quiere á tí—dijo acercándose a Anita, Primores, después del cómico sainete y con aquel farandulear suyo y afición á requebrarlo todo,— quien te quiere á ti, Anita, rama de limón en flor, tallo de yerbabuena, es este corazoncito de oro, este pecho que si respira es por tí, si siente es porque tú le extremeces, y si vive es porque todavía no me has dicho que no.</p>
 				<p>Otros intentan declararte su pasióh y te dejan; yo siempre sigo queriéndote, porque no miro sino por tus ojos.</p>
 				<p>No obstante el pasillo á que había dado motivo la moza, al escuchar (siempre era la misma su naturaleza) aquella explosión de flores que salía de boca de Primores, extremecióse su cuerpo y sintió la picadura del amor.</p>
@@ -1191,7 +1216,7 @@
 				<p>Seguramente se trataba, no era posible dudarlo, de sacorio.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0395_chap17">
-				<head>XVII: LA DESPEDIDA</head>
+				<head xml:id="ne0395_head_020">XVII: LA DESPEDIDA</head>
 				<p>Era la gente de Bernardo.</p>
 				<p>Con el pecho anhelante y tratando do ahogar los ruidos que producía con el vestido, descorrió Rosalía la puerta del corral y quedó sobrecogida de emoción.</p>
 				<p>En un ángulo de la tapia se veía medio escondida la puerta que daba al campo, por la cual habría de escapar.</p>
@@ -1227,7 +1252,7 @@
 				<p>Las mujeres dieron un paso atrás, presas de un terror inmenso, y quedaron pegadas al muro.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0395_chap18">
-				<head>XVIII: ÚLTIMO ADIÓS</head>
+				<head xml:id="ne0395_head_021">XVIII: ÚLTIMO ADIÓS</head>
 				<p>Era que el estado del cuerpo del hombre traía á los labios de éste frases confusas y terribles.</p>
 				<p>La congestión se cernía sobre él moviendo sus olas de sangre; pero no había que temer por su vida, porque se agarraba con demasiada fuerza á su cuerpo.</p>
 				<p>Era feroz para todo el tío Justo, hasta para caer vencido: sólo que no pudo sospechar que mientras él durmiera, la condenada por él á prisión huiría sobre las ancas de un caballo.</p>
@@ -1262,7 +1287,7 @@
 				<p>El hierro chirrió dentro de los anillos oxidados, y abrió ambas hojas de la puerta, dejando ver á Rosalía el confuso tropel de hombres y caballos.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0395_chap19">
-				<head>XIX: EL SACORIO</head>
+				<head xml:id="ne0395_head_022">XIX: EL SACORIO</head>
 				<p>Fue la primera manifestación de su virtud apellidar á la justicia, puesto que ya estaba fuera del lindero del hogar; y cuando llevó á su conciencia la persuasión de que estaba custodiada por la ley, con frases de mucho comedimiento y un incomparable modo de respeto, saludó á los que de aquel modo desplegaban rumbo y gallardía en su obsequio, y se dejó coger en brazos por el padrino, que alzándola dos varas del suelo, la sentó á las ancas del caballo que montaba el felicísimo Bernardo.</p>
 				<p>—¡Bienafortunao yo!—deslizó solamente en el oído de la mujer el mozuelo, sintiendo que ella lo rodeaba la cintura con un medio abrazo, por una inevitable exigencia de la postura.</p>
 				<p>El sacorio se realizaba hasta aquel instante sin tropiezo.</p>
@@ -1338,7 +1363,7 @@
 <lg type="poem">				<l>No hay tren, caballo, ni viento para el amor que se escapa, ni su carrera se vence con el correr de una bala.</l></lg>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0395_chap20">
-				<head>XX: EL ROSARIO DE LA AURORA</head>
+				<head xml:id="ne0395_head_023">XX: EL ROSARIO DE LA AURORA</head>
 				<p>Los dos bandos en que, á última hora, se dividió el pueblo —tal incremento habían tomado los amores de Bernardo y Rosalía,—el uno, el mayor y casi el que lo era todo, partidario de que el codicioso tío Justo cediera la mano de su hija á Bernardo, y partidario el otro de que Rosalía fuese, bien para Antolín, bien para Primores, se habían dividido en la procesión cuando á la madrugada salió de la iglesia, y cada cual con su cirio encendido ocupaba la hilera que le correspondía, formando calle delante de la Virgen.</p>
 				<p>Mucho era el odio que de súbito llegaron á profesarse para que sus pensamientos fuesen entregadosá místicos transportes antes que al afán de armar escandalosa sarracina cuanto una sola persona dijese algo á favor ó en contra del sacorio.</p>
 				<p>En las caras retratábase el deseo de ir del propósito á las palabras y de las palabras á los hechos, sin respeto alguno al severo cuadro religioso, y flotaba en la atmósfera ese algo que antecede á los sucesos extraordinarios.</p>
@@ -1373,7 +1398,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN DE LA NOVELA</head>
+				<head xml:id="ne0395_head_024">FIN DE LA NOVELA</head>
 
 			</div>
 		</back>

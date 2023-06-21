@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Papeles del Doctor Angelico</title>
-				<title type="sub"></title>
+				
 				<title type="short">Papeles</title>
-				<title type="idno">
-					<idno type="viaf">307995670</idno></title>
+				
 				<author>
-					<idno type="bne">XX1035048</idno>
-					<idno type="viaf">61554068</idno>
-					<name type="short">Valdes</name>
-					<name type="full">Armando Palacio Valdés</name>
+					<name type="short" ref="#Valdes"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1881</measure>
@@ -139,13 +131,46 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0212</idno>
+						<idno type="cligs">ne0212</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2012">2012</date>, <idno>39613</idno>, <ref target="http://www.gutenberg.org/ebooks/39613"/>.</bibl>
-				<bibl type="print-source">Madrid, Librería general de Victoriano Suárez, <date when="1921">1921</date></bibl>
-				<bibl type="edition-first"><date when="1911">1911</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Papeles del Doctor Angelico</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/307995670/">307995670</idno>
+				</idno>
+				</title>
+					<author xml:id="Valdes">
+						<name type="full"><forename>Armando</forename> <surname>Palacio Valdés</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736 - IO 9737">IO 9736 - IO 9737</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118789252">118789252</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q645141/">Q645141</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1035048.html">XX1035048</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/61554068/">61554068</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2012">2012</date>, <idno>39613</idno>, <ref target="http://www.gutenberg.org/ebooks/39613"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Librería general de Victoriano Suárez, <date when="1921">1921</date></bibl>
+					<bibl type="edition-first"><date when="1911">1911</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">Papeles del Doctor Angélico</title> <date when="1912">1912</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464291224" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464291224"/> </bibl>
+						<bibl type="further-edition"><title type="main">Papeles del doctor Angélico</title> <date when="1912">1912</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099859238" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099859238"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Aus den Papieren des Doktors Angélico</title> <date when="1914">1914</date>, <publisher>Pustet</publisher> <pubPlace>Regensburg [u.a.]</pubPlace> 		<idno type="ppn" n="1437468039" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1437468039"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Papeles del doctor Angélico</title> <date when="1921">1921</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="117185580X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=117185580X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Papeles del Doctor Angélico</title> <date when="1921">1921</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="585162409" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=585162409"/> </bibl>
+						<bibl type="further-edition"><title type="main">Años de juventud del doctor Angélico</title>: 	<title type="sub">nuevos papeles del doctor Angel Jiménez</title> <date when="1943">1943</date>, <publisher>Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464291968" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464291968"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Papeles del Doctor Angélico</title> <date when="1946">1946</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584337280" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584337280"/> </bibl>
+						<bibl type="further-edition"><title type="main">Años de juventud del Doctor Angélico</title>: 	<title type="sub">nuevos papeles del Doctor Angel Jiménez</title> <date when="1948">1948</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="467818347" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467818347"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Marta y María. José. Riverita. Maximina. El cuarto poder. La hermana San Sulpicio. La aldea perida. Los majos de Cádiz. La alegría del Capitán Ribot. Tristán o el pesimismo. Papeles del doctor Angélico. La hija de Natalia. Santa Rogelia. Sinfonía pastoral</title> <date when="1956">1956</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1144460557" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1144460557"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +182,14 @@
 				<p>Más que sus propias memorias, Jiménez nos cuenta las de las personas que estuvieron en contacto con él. Traza un retablo de los tipos madrileños que pululan por cafés, pensiones y teatros. Culmina el relato con la última pasión romántica del doctor Angélico, Lolita, que responde al tipo de la mujer fatal que pierde a sus enomorados. Campea en el texto la religiosidad de Palacio Valdés.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736" key="IO 9736" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -188,7 +221,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cligs:importance="2">novela autobiográfica</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE" cligs:importance="1">prueba</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
@@ -216,14 +249,15 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-01-07" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>PRÓLOGO DEL EDITOR</head>
+				<head xml:id="ne0212_head_000">PRÓLOGO DEL EDITOR</head>
 				<div>
-					<head>I</head>
+					<head xml:id="ne0212_head_001">I</head>
 					<p>POR qué le llamábamos doctor Angélico? Porque era ya doctor en Ciencias cuando nosotros cursábamos aún el año preparatorio de Jurisprudencia, y porque se llamaba Angel, Angel Jiménez. Una bromita de chicos que él no tomaba a mala parte porque era la bondad personificada.</p>
 					<p>La primera impresión que Jiménez producía era de desvío, casi de miedo. Unas barbas aborrascadas, unos cabellos crespos, un color cetrino, unos ojos negros ligeramente hundidos, de mirar insistente y duro; no exageraría diciendo agresivo. Pocos hombres serían capaces de resistir aquella mirada. Pero en los años que nosotros contábamos todavía no se tiene miedo a los hombres, y nuestra fuerza de afinidad no ha sufrido menoscabo. Además, Jiménez era doctor, nos llevaba cinco o seis años de edad, y en aquel período de la vida tales diferencias constituyen una superioridad a la cual rendíamos tributo, perdonando sus palabras sarcásticas y sus modales bruscos.</p>
 					<p>El primero que se convenció de que aquel hombre no era un ser atrabiliario fuí yo. Paseábamos una mañana emparejados por los corredores de la Universidad esperando la hora de clase, pues Jiménez, que aspiraba a hacerse doctor también en Filosofía y Letras, cursaba aquel año las mismas asignaturas que nosotros. Le narré, por incidencia, cierto rasgo de abnegación llevado a cabo por un individuo de mi familia, y al pasar por delante de una ventana, como la luz le diese de lleno en el rostro, observé que sus ojos estaban rasados de lágrimas, aunque sin perder su habitual dureza.</p>
@@ -236,7 +270,7 @@
 					<p>Por fin, terminaron relativamente sus desdichas cuando entró de redactor en un diario de la mañana, con doscientas pesetas mensuales de sueldo.</p>
 				</div>
 				<div>
-					<head>II</head>
+					<head xml:id="ne0212_head_002">II</head>
 					<p>Éste era su medio de vida cuando volví a encontrarle en el Ateneo. En su biblioteca pasaba las tardes devorando libros y sin tomar parte casi nunca en nuestras discusiones ruidosas de los pasillos.</p>
 					<p>—Mucho lees, Jiménez—le decíamos alguna vez poniéndole la mano sobre el hombro.</p>
 					<p>—Es que no tengo dinero—replicaba tranquilamente sin levantar la cabeza.</p>
@@ -279,7 +313,7 @@
 					<p>—¡Era un cristiano!</p>
 				</div>
 				<div>
-					<head>III</head>
+					<head xml:id="ne0212_head_003">III</head>
 					<p>Los papeles de Jiménez necesitaban, como los jeroglíficos egipcios, prodigios de atención y perseverancia para ser descifrados. Además de su letra perversa y abreviaturas, se hallaban escritos con lápiz unos, otros con tinta, en todos los tamaños y formas imaginables: tan pronto pliegos en folio semejando memoriales a la Alcaldía, como esquelitas diminutas de las que se envían a la tienda de comestibles. La mayor parte redactados en español; pero los había también en francés y en inglés.</p>
 					<p>No me decidí, por lo pronto, a ser el Champollión de aquella bárbara escritura. Los dejé dormir largo tiempo en un armario. Pero habiendo resuelto no escribir ya para el público, y careciendo de otras ocupaciones que me distraigan, emprendí, pasados algunos años, la tarea; y después de algunos esfuerzos he logrado, en parte, llevarla a cabo. Digo en parte, porque los papeles que ahora se publican no son todos los que me entregó.</p>
 					<p>Indudablemente, algunos de ellos parecían destinados a la publicidad por la forma en que están escritos. La gran mayoría, no obstante, son apuntes o notas rápidas sugeridas por algún incidente de la vida o por sus lecturas, y desde luego se puede asegurar que sólo los escribía para descargarse de sus impresiones, necesidad absoluta que experimentan todos los solitarios.</p>
@@ -292,7 +326,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0212_chap1">
-				<head>LA SORPRESA</head>
+				<head xml:id="ne0212_head_004">LA SORPRESA</head>
 				<p>MÁS de una vez me acaeció despertar, tras un corto sueño durante el día, tan sorprendido de mi existencia como si realmente naciese en aquel instante.</p>
 				<p>«¿Qué es esto, qué es esto? ¿Qué soy yo? ¿Por qué estoy en el mundo? ¿Qué es el mundo?», me preguntaba estremecido. Tan grande era mi estupefacción, que me costaba trabajo el no romper en gritos de terror y admiración. El velo de lo infinito temblaba delante de mí como si fuera a descorrerse. Un relámpago iluminaba el misterio. Mi alma en aquel instante no creía más que en sí misma; pensaba vivir en el seno del Todo; no se daba cuenta de que ya estaba desprendida, y rodaba como una hoja que el huracán arrastra. «Estas formas que veo—me decía—son extrañas a mi ser; yo no pertenezco a ellas, ni ellas a mí. ¿Será verdad que mi alma sueña los cuerpos?» La muerte me parecía tan inconcebible como la nada. El relámpago descubría un horizonte indeciso, inmenso, azulado. En los confines lucía una aurora. «Mi sitio está allí: allí quiero ir. ¿Pero mis ojos podrán recibir los rayos de ese sol cuando se levante?»</p>
 				<p>Aquel despertar antojábaseme un sueño, y apetecía dormir para despertar realmente. Sí; quería despertar para comprender, para vivir; quería romper los muros de mi propio ser y asomarme a lo eterno. ¡Cómo reía el espíritu en aquel momento del <seg rend="italic">protoplasma</seg>, la <seg rend="italic">generatio spontanea</seg>, la <seg rend="italic">teoría celular</seg>, la <seg rend="italic">evolución</seg>, y de todas las demás explicaciones que se han dado de lo inexplicable!</p>
@@ -304,7 +338,7 @@
 
 			</div>
 			<div n="2" type="chapter" xml:id="ne0212_chap2">
-				<head>La muerte de un vertebrado</head>
+				<head xml:id="ne0212_head_005">La muerte de un vertebrado</head>
 				<p>ENTRE los concurrentes asiduos a la Cervecería Escocesa, donde acostumbraba a tomar el café hace años, se contaba el coronel Barrios. Era un hombre corpulento, de facciones correctas y enérgicas, gran bigote entrecano y grandes ojos negros. Hablaba poco y acertado, y no solía mezclarse en nuestras discusiones literarias, que escuchaba sonriendo; pero cuando se tocaban puntos de ciencia o de filosofía, echaba su cuarto a espadas, demostrando que conocía las ciencias naturales y que meditaba sobre sus problemas. Mis apartes con él eran frecuentes, porque me placía mucho su grave amabilidad, la corrección de sus modales, la calma y la fuerza que transpiraba toda su persona.</p>
 				<p>Una tarde se discutió en la cervecería la cuestión de la inteligencia de los animales. Los unos, sostenían su diferencia cualitativa con la del hombre; los otros, su diferencia cuantitativa solamente. Había sido fuerte la disputa, y altas las voces. Cuando, al cabo, se deshizo la tertulia, quedamos solos delante de la mesa Barrios y yo. Aquél había tomado parte en la discusión, pero no en los gritos, pues aun en los momentos de mayor exaltación no le abandonaba la mesura. No obstante, a pesar de su calma y corrección, sostuvo, como de costumbre, ideas extremas. Porque Barrios era francamente materialista, a la moda antigua, sin paliativos ni distingos, como Vogt, como Büchner, como Haeckel. Quedamos los dos solos, repito, y permanecimos largo rato silenciosos. El coronel parecía hondamente preocupado por las ideas vertidas durante la discusión. Al cabo, sacando un cigarro puro y encendiéndolo, comenzó a hablarme en voz baja:</p>
 				<p>—Jamás se me ha pasado por la imaginación, después que fuí hombre, que nuestro planeta, como todos los demás astros, sea otra cosa que una momentánea y efímera condensación de la materia imponderable que llamamos éter. Es imposible tomar en serio la idea de un Dios consciente y providente. La causa suprema del Universo no es una, sino dos: la fuerza de atracción y la de repulsión. Con estas dos fuerzas, que obran lo mismo en los astros que en los átomos elementales, se explica perfectamente todo, desde el nacimiento de un cristal hasta el de un pensamiento luminoso. Una actividad creadora, sobrenatural, una fuerza que exista fuera de la materia, es pura imaginación poética. Además, repito que la considero inútil, porque la creación y la extinción de los mundos y de la vida que en ellos se desenvuelve, se explica de un modo perfectamente satisfactorio por las causas mecánicas naturales, por las fuerzas inherentes a la materia...</p>
@@ -323,7 +357,7 @@
 
 			</div>
 			<div n="3" type="chapter" xml:id="ne0212_chap3">
-				<head>LAS LEYES INMUTABLES</head>
+				<head xml:id="ne0212_head_006">LAS LEYES INMUTABLES</head>
 				<p>EL hombre del mundo que yo pensaba menos expuesto a volverse loco era mi amigo Montenegro.</p>
 				<p>Era un ser tímido, reflexivo, metódico, lector asiduo de <seg rend="italic">La Época</seg>, apuntador incansable de todos sus gastos, hasta de las cajas de cerillas que compraba.</p>
 				<p>Y, sin embargo, cayó repentinamente en una espantosa demencia.</p>
@@ -378,7 +412,7 @@
 
 			</div>
 			<div n="4" type="chapter" xml:id="ne0212_chap4">
-				<head>SOCIEDAD PRIMITIVA</head>
+				<head xml:id="ne0212_head_007">SOCIEDAD PRIMITIVA</head>
 				<p>LA verdad es que para indemnizarme de los juegos de los hombres grandes, no encuentro nada más agradable que los juegos de los pequeños. Los de los primeros son pesados, nocivos, melancólicos, particularmente la política; los de los segundos, alegres, expresivos, llenos de profundas enseñanzas.</p>
 				<p>Por eso, cuando paseo en el parque del Retiro, acostumbro a sentarme en cualquier banco de madera (nunca de piedra, por razones que me reservo), y paso momentos bien gratos contemplando el bullicio de los niños.</p>
 				<p>En este pequeño mundo, como en el otro, existen toda clase de pasiones, desde la envidia rastrera hasta el sublime heroísmo; el amor, los celos, la arrogancia, el valor y el miedo. Pero todas ellas son adorables, encantadoras, porque todas son naturales. La Naturaleza no produce cosas feas. Es nuestra infame reflexión quien las introduce en la vida.</p>
@@ -417,7 +451,7 @@
 
 			</div>
 			<div n="5" type="chapter" xml:id="ne0212_chap5">
-				<head>UN TESTIGO DE CARGO</head>
+				<head xml:id="ne0212_head_008">UN TESTIGO DE CARGO</head>
 				<p>HAY personas que no pasean jamás sino por calles céntricas. Hay otras que gustan de las excéntricas y solitarias, en los barrios extremos de Madrid, lindantes con la campiña. Las hay, por fin, que no pasean ni por unas ni por otras, y sólo encuentran alegría midiendo el pasillo de su casa a trancos, y acercándose de vez en cuando a la estufa para calentarse las manos.</p>
 				<p>Pues bien; declaro que yo pertenezco a la segunda categoría, aunque también me agrada recorrer una y otra vez mi pasillo con las manos en los bolsillos, particularmente cuando llueve, y dar unas cuantas vueltas por las calles de Alcalá y de Sevilla a las horas de más tránsito. Cuando esto último acaece, procuro que mi rostro vaya fruncido y aborrascado para adaptarse al medio ambiente; pero es contra mi gusto, bien lo sabe Dios, porque mi fisonomía, por naturaleza, es plácida y sentimental.</p>
 				<p>Así, que experimento más placer en pasearme por las afueras, donde encuentro rostros alegres que me miran sin hostilidad. Sólo allí me desarrugo y soy exteriormente lo que Dios quiso hacerme. Y he pensado algunas veces que si trasladásemos las caras de las afueras al centro, y las del centro las enviásemos a paseo, Madrid ofrecería a los ojos de los extranjeros un aspecto más hospitalario, más risueño y, sobre todo, más humano que el que ahora tiene.</p>
@@ -444,7 +478,7 @@
 
 			</div>
 			<div n="6" type="chapter" xml:id="ne0212_chap6">
-				<head>Opacidad y transparencia</head>
+				<head xml:id="ne0212_head_009">Opacidad y transparencia</head>
 				<p>HAY pocos hombres con los cuales me agrade tanto el encontrarme como con el doctor Mediavilla. Es afable, despreocupado, culto, observador, ingenioso y siempre ameno. No es frecuente que nos tropecemos, pues gravitamos en órbitas distintas; pero cuando esto sucede, pasamos largo rato departiendo en medio de la acera, o bien me invita a entrar en el café más próximo, y bebemos una botella de cerveza.</p>
 				<p>Sólo tiene para mí una desventaja su conversación. Nunca discurre acerca de lo que más sabe y pudiera instruirme, de las ciencias físicas y naturales, en las cuales está reputado como sabio eminente. O por la necesidad de reposarse de estos estudios y cambiar momentáneamente la dirección de sus ideas, o impulsado por una cortesía mal entendida, suele hablarme de literatura y de política. Lo hace muy bien, mejor que muchos literatos y políticos de profesión; pero no hay duda que sería para mí más provechosa si la plática versara acerca de las ciencias que cultiva.</p>
 				<p>Otro reparo pudiera acaso oponer a su amenísima charla. El doctor Mediavilla es un pesimista convencido, y presiento que si le tuviera siempre a mi lado concluiría por fatigarme. A largos intervalos, y sazonado por un ingenio sutil y penetrante, su pesimismo interesa y convence.</p>
@@ -529,7 +563,7 @@
 
 			</div>
 			<div n="7" type="chapter" xml:id="ne0212_chap7">
-				<head>IDEAS CADÁVERES</head>
+				<head xml:id="ne0212_head_010">IDEAS CADÁVERES</head>
 				<p>«TODO hombre tiene derecho a ser feliz como mejor le parezca», decía Federico <seg rend="italic">el Grande</seg>. O lo que es igual: todo hombre está facultado por los dioses para entregarse a la manía que le plazca, siempre que no haga daño a los demás. Corrales tenía la suya, no perjudicaba a nadie, y, sin embargo, nosotros le tratábamos como si nos infiriese con ella alguna ofensa. Todas las noches alusiones picantes, bromitas de mejor o peor género, sonrisas desdeñosas, etc., etc.</p>
 				<p>Corrales era un hombre de <seg rend="italic">sport</seg>. Había escrito y publicado en las revistas del ramo artículos muy luminosos sobre los caballos sementales ingleses y sobre la caza del zorro; era el encargado en un periódico de dar cuenta a sus lectores de las carreras de automóviles y velocípedos; el año anterior había dado a luz un tratado de <seg rend="italic">Gimnástica racional</seg>, con profusión de grabados en el texto, y tenía escrito, y en prensa ya, un libro sobre <seg rend="italic">El juego de la espada</seg>.</p>
 				<p>Pero Corrales era un ser raquítico y patizambo que en su vida se había subido a un <seg rend="italic">trapecio</seg> o a unas <seg rend="italic">paralelas</seg>, que no había montado ningún caballo ni velocípedo, ni disparado una carabina, ni asido ninguna espada francesa o española. Y he aquí lo que despertaba nuestra indignación y nos tenía sobresaltados y furiosos.</p>
@@ -546,7 +580,7 @@
 
 			</div>
 			<div n="8" type="chapter" xml:id="ne0212_chap8">
-				<head>EL AMO</head>
+				<head xml:id="ne0212_head_011">EL AMO</head>
 				<p>TENGO un amo, tengo un tirano que, a su capricho, me inspira pensamientos tristes o alegres, me hace confiado o receloso, sopla sobre mí huracanes de cólera o suaves brisas de benevolencia, me dicta unas veces palabras humildes, otras, bien soberbias. ¡Oh, qué bien agarrado me tiene con sus manos poderosas! Pero no me someto, y ésa es mi dicha. Le odio, y le persigo sin tregua noche y día. Él lo sabe, y me vigila. ¡Si algún día se descuidase!... ¡Con qué placer cortaría esta funesta comunicación que mi alma, que mi yo esencial mantiene con la oficina donde el déspota dicta sus órdenes! Quisiera ser libre, quisiera escapar a esos serviles emisarios suyos que se llaman nervios. Mientras ese momento llega, me esfuerzo en dominarlos. Los azoto con agua fría todas las mañanas, les envío oleadas de sangre roja por ver si los asfixio, y me desespero observando su increíble resistencia. Cuantos proyectos hermosos me trazo en la vida, tantos me desbaratan los indignos. He querido ser manso y humilde de corazón, y hasta pienso que empecé la carrera con buenos auspicios. Me pisaban los callos de los pies, y, en vez de soltar una fea interjección, sonreía dulcemente a mis verdugos; cuando alguno ensalzaba mis escritos, me confundía de rubor; sufría sin pestañear la lectura de un drama, si algún poeta era servido en propinármela; leía sin reirme las reseñas de las sesiones del Senado; ejecutaba, en fin, tales actos de abnegación y sacrificio, que me creía en el pináculo de la santidad. Mis ojos debían de brillar con el suave fulgor de los bienaventurados. Me sorprendía que tardara tanto en bajar un ángel a ponerme un nimbo sobre la cabeza y una vara de nardo en la mano. Pero, ¡oh dolor!, bastó que un oficial de peluquería me dijese con sonrisa impertinente que esta barba apostólica que gasto era cosa ya pasada de moda y cursi, para que le respondiese con denuestos gritando como un energúmeno, y estuviese a punto de arrancarle las tijeras de la mano y arrojarme sobre él como un lobo hambriento. Mi santidad se disipó en un instante como el humo. El tirano tuvo la culpa; el tirano, que aquel día, según mis noticias, tenía el estómago sucio. ¿Será necesario que el hombre, antes de decidirse a ser virtuoso, se mire la lengua al espejo?</p>
 				<p>Aun para los goces más honestos y más puros he necesitado contar siempre con mi amo. ¿Cuál más honesto y más sencillo goce que el de levantarse un día de madrugada, ir de paseo a los Cuatro Caminos y comer allí una tortilla presenciando la salida del sol? Pues bien: jamás me lo ha consentido el infame. Parecía natural que, siendo del temperamento de Satanás, su poder terminase a la entrada del templo. Tampoco es así. Muchas veces me he acercado al altar de Dios lleno de fe, con el corazón contrito, y a los pocos momentos, con el fútil pretexto de que le dolían las rodillas, o sentía debilidad, o le crispaban las muecas del monaguillo, me arrancó de allí a viva fuerza. Entonces me acordé de Jesús. También Nuestro Señor quiso someterse por nosotros al capricho del tirano; también sintió la cruel impresión de sus garras en el huerto de Getsemaní y en el Calvario. Este recuerdo endulza mi pena y humillación. Sin embargo, confieso que siento un placer maligno en darle de vez en cuando un susto. Cuando paso por el viaducto de la calle de Segovia, suelo decirle, guiñando un ojo: «Eres muy arrogante y te consideras bien seguro de tu poder; pero si yo quisiera en este momento, ¿eh?... Ya sabes...» Y el tirano, que es cobarde como todos los tiranos, se estremece y tiembla.</p>
 				<p>Hasta he pensado que si la misericordia de Dios, olvidando mis muchos pecados, me llamase a Sí después de la muerte y me diese a escoger un puesto en el cielo, yo le diría, confundido de temor y respeto: «Hágase siempre tu voluntad, Señor; pero, si es posible, no me des la naturaleza angélica, porque los ángeles tienen alas, y temo que un día me duela una de ellas y no pueda libremente volar hacia Ti, soberano Rey de los cielos.»</p>
@@ -554,7 +588,7 @@
 
 			</div>
 			<div n="9" type="chapter" xml:id="ne0212_chap9">
-				<head>La unidad de conciencia</head>
+				<head xml:id="ne0212_head_012">La unidad de conciencia</head>
 				<p>MI padre acostumbraba a decir que las conciencias de los hombres eran tan diferentes como sus fisonomías. Yo tenía pocos años entonces, y no era capaz de discutir tal opinión. Ahora tengo muchos, y tampoco sé bien a qué atenerme.</p>
 				<p>Porque esta sencilla proposición arrastra consigo nada menos que el gran problema del bien y del mal. ¡Un grano de anís!</p>
 				<p>Si no existe la unidad de la conciencia en el género humano, dicho se está que la justicia, el honor, la caridad, son cosas convencionales que se hallan a merced de la opinión, que cambian con el transcurso de los años como cambian las mangas de las señoras, unas veces estrechas, otras, anchas. En otro tiempo era de moda el asesinato. Ahora ya no lo es. Quizás mañana vuelvan otra vez las mangas anchas.</p>
@@ -584,7 +618,7 @@
 
 			</div>
 			<div n="10" type="chapter" xml:id="ne0212_chap10">
-				<head>PRAGMATISMO</head>
+				<head xml:id="ne0212_head_013">PRAGMATISMO</head>
 				<p>EL sol se puso rojo. La negra, horrible nube se acercó, y las tinieblas invadieron el cielo, momentos antes sereno y transparente.</p>
 				<p>Entonces los camellos se arrodillaron, y los hombres se volvieron de espalda y se prosternaron también. Los caballos se acercaron temblando a los hombres, como buscando protección.</p>
 				<p>El furioso khamsin comenzó a soplar. No hay nada que resista al impetuoso torbellino. Las tiendas, sujetas al suelo con clavos de hierro, vuelan hechas jirones, y la arena azota las espaldas de los hombres; sus granos se clavan en los lomos de los cuadrúpedos, haciéndoles rugir de dolor.</p>
@@ -620,7 +654,7 @@
 
 			</div>
 			<div n="11" type="chapter" xml:id="ne0212_chap11">
-				<head>LAS BURBUJAS</head>
+				<head xml:id="ne0212_head_014">LAS BURBUJAS</head>
 				<quote>
 					<lg type="poem"><lg type="stanza">
 							<l>Un hombre puede obrar como un insensato</l>
@@ -698,7 +732,7 @@
 
 			</div>
 			<div n="12" type="chapter" xml:id="ne0212_chap12">
-				<head>EL MINUTO FATAL</head>
+				<head xml:id="ne0212_head_015">EL MINUTO FATAL</head>
 				<p>HAY horas para mí negras, amargas como la del huerto de Gethsemaní. Al contemplar la lucha incesante y cruel de todos los seres vivos, al tropezar dondequiera con la hostilidad y el egoísmo, me siento desfallecer como el Hijo del Hombre. Entonces, en este minuto aciago de desaliento y de duda, cuando miro caer pieza por pieza y derrumbarse ese mundo que la fe en Dios y el amor entre los hombres había levantado en mi conciencia, no me bastan los filósofos, no me bastan los poetas. Las palabras, por hermosas y concertadas que sean, no penetran en mi corazón. Quiero oír el acento de Dios, quiero ver su mano poderosa. Y me refugio en los conciertos de Weber o en las sinfonías de Beethoven, o bien corro al Museo y me coloco delante de los cuadros de Rafael y de Tiziano. Si esto no puedo, saco del armario un precioso grabado que allí guardo y representa un naufragio. Un buque de alto bordo, repleto de pasajeros, se va a pique por momentos. Los tripulantes, locos de terror, se encaraman por la borda sobre el aparejo y tratan de apoderarse todos al mismo tiempo de un bote salvavidas. Los más fuertes consiguen tocarlo ya con sus manos. Pero en aquel momento vacilan y vuelven la cabeza hacia un grupo de mujeres y niños que elevan hacia ellos sus débiles brazos suplicantes. Debajo de este admirable grabado hay estampadas en inglés las siguientes palabras:</p>
 				<p>«¡N<seg rend="small">IÑOS Y MUJERES, DELANTE</seg>!»</p>
 
@@ -709,7 +743,7 @@
 
 			</div>
 			<div n="13" type="chapter" xml:id="ne0212_chap13">
-				<head>INTELIGENCIA Y AMOR</head>
+				<head xml:id="ne0212_head_016">INTELIGENCIA Y AMOR</head>
 				<p>SI mi amigo Aldama no me hubiese animado con empeño, y al cabo no se hubiese brindado a acompañarme, nunca me atrevería a visitar al poeta Rojas, estoy seguro de ello. Envidio la osadía de esos mancebos que, apenas llegados a Madrid, llaman a la puerta de un grande hombre, le interrumpen cuando está tomando su chocolate, le dan la mano con toda franqueza y le asan con preguntas impertinentes. No era yo de ésos, no, aunque ardía en deseos de conocer a algunos.</p>
 				<p>En Madrid existían entonces, como ahora, muchos grandes hombres, pero yo no sentía curiosidad de conocerlos a todos, sino a tres o cuatro solamente. Y entre éstos, el poeta Rojas era el que más me fascinaba. Sus leyendas incomparables, sus versos fragantes y armoniosos me habían enloquecido. Sabía muchos de ellos de memoria, y me placía recitarlos a la cocinera cuando mi madre, aburrida, se marchaba a la cama... Es más, en las horas de estudio, cuando mi padre me veía absorto delante del libro de texto, yo estaba muy lejos con el pensamiento del libro de texto, porque componía versos imitando los de Rojas, y los apuntaba con lápiz en un papel que tenía para el caso oculto entre sus hojas.</p>
 				<p>Por eso cuando mi amigo Aldama tiró de la campanilla con la misma negligencia que si tirase de la de su casa, yo pensé desfallecer de emoción.</p>
@@ -741,7 +775,7 @@
 
 			</div>
 			<div n="14" type="chapter" xml:id="ne0212_chap14">
-				<head>BIENAVENTURANZA</head>
+				<head xml:id="ne0212_head_017">BIENAVENTURANZA</head>
 				<p>EN la plaza de la villa se celebraba el mercado semanal los lunes. Allí se congregaban las campesinas de los contornos con sus cestas repletas de huevos y frutas y manteca. Gritaban las aldeanas ofreciendo sus mercancías, gritaban más alto aún las obreras y domésticas de la villa ofreciendo por ellas precios irrisorios, piaban las gallinas, gruñían los cerdos, mugían los terneros, relinchaban los potros. Todos estos ruidos envueltos llegaban hasta mí como un sordo rumor que me producía somnolencia.</p>
 				<p>Los lunes por la tarde no teníamos escuela a causa del mercado. El Municipio dejaba generosamente al maestro todo este tiempo para proveerse de comestibles. No necesitaba tanto.</p>
 				<p>En casa no querían que saliese a la calle, por miedo a los coches, a los borrachos, a las brujas, etc. Tampoco querían retenerme dentro de ella, porque molestaba con mis juegos ruidosos. Adoptábase un justo medio; me enviaban al <seg rend="italic">almacén</seg>.</p>
@@ -762,7 +796,7 @@
 
 			</div>
 			<div n="15" type="chapter" xml:id="ne0212_chap15">
-				<head>INTERMEDIO DEL EDITOR</head>
+				<head xml:id="ne0212_head_018">INTERMEDIO DEL EDITOR</head>
 				<p>EN los últimos tiempos de su vida, cuando ya se advertían en su rostro las huellas de la enfermedad que le llevó al sepulcro, solíamos pasear algunas tardes por las cercanías de su hotel, situado en la parte oriental de Madrid, cerca del barrio de la Prosperidad. No es un paisaje riente ni variado el que por allí se descubre; pero la vista se extiende sin obstáculo por la llanura, el pecho se dilata, hay un derroche de luz y de aire que infunde alegría. Allá a lo lejos se divisan las crestas azuladas del Guadarrama.</p>
 				<p>En una de estas tardes caminábamos silenciosos, el uno en pos del otro, por el sendero que bordeaba un campo de trigo. Habíamos hablado bastante, y este silencio forzado a que nos obligaba la angostura del camino, nos servía de descanso. De pronto, al pasar cerca de un grupo de casas, o, por mejor decir, chozas, donde se albergaban los que recogen por las mañanas la basura de la capital, escuchamos desgarradores lamentos. En el mismo instante, una criatura de seis o siete años salió de la casa corriendo, y vino a abrazarse a mis rodillas gritando:</p>
 				<p>—¡Perdón, perdón!</p>
@@ -875,9 +909,9 @@
 				<p>Ni a Jiménez ni a mí nos hizo efecto la amenaza. Nos hallábamos tan indignados y conmovidos, que el miedo no cabía en nuestro corazón. Parados e inmóviles, seguimos con la vista por algún tiempo al grupo que se alejaba, y, al cabo, nos pusimos de nuevo en marcha.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0212_chap16">
-				<head>La matanza de los zánganos.</head>
+				<head xml:id="ne0212_head_019">La matanza de los zánganos.</head>
 				<div type="section">
-					<head>I</head>
+					<head xml:id="ne0212_head_020">I</head>
 					<p>VIVÍAN mis primas en el fondo del valle: su casa estaba situada en una meseta de la colina, a trescientos pasos del camino. Por detrás se elevaba un gran bosque de castaños y robles: por delante descendía una hermosa huerta bien provista de frutales, y después una vasta pomarada cuya cerca de piedra servía de linde al camino.</p>
 					<p>¡Pobres chicas! La Providencia les había dotado de un rostro nada halagüeño y de una madre menos halagüeña aun. Era terrible aquella doña Teresa, fuerte como un gañán y áspera hasta cuando acariciaba, como la lengua de una vaca. Y, sin embargo, ¿qué hubiera sido de ellas si aquella madre no fuese tan hombruna y enérgica? Su difunto padre, uno de los propietarios más ricos de la comarca, les había dejado casi por completo arruinadas. Primero jugando y derrochando en la capital, después, en los últimos años de su vida, degradándose hasta pasar las noches en las tabernas, vendió cuanto tenía, menos la posesión donde habitaban y que tenía por nombre la <seg rend="italic">Rebollada</seg>.</p>
 					<p>Quedó doña Teresa con sus tres hijas Griselda, Erundina y Berenice, todas tres pasando de los veinte años, y con un chico, Teófilo, que no contaba aún los quince. No se arredró la vieja. ¡A trabajar, a trabajar! Se trabajó duro, se trabajó como jumentos; pero se comió, se vistió y se pagaron algunas deudas. La posesión daba bastante para alimentarlos, y se hacía algún dinero enviando a la criada con fruta al mercado de los jueves, con queso y con manteca. Para esto último era necesario que tomasen la leche descremada, llamada en aquella región <seg rend="italic">leche fría</seg>. La madre daba el ejemplo: no se dió el caso durante algunos años de que bebiese la leche con toda su manteca, ni aun hallándose enferma. Sólo tenían una criada a su servicio, una moza fuerte y paciente como una mula, que cuidaba las vacas, traía el agua, la leña, era cocinera, doncella y mozo de labranza. Las faenas agrícolas de importancia, como la siega, la recolección de las castañas y, sobre todo, la fabricación de la sidra, venían a ejecutarlas gratuitamente los vecinos. Doña Teresa les facilitaba un bálsamo de su confección para las heridas y quemaduras, agua curativa para los ojos, les enviaba tortas de miel en la Nochebuena y <seg rend="italic">monas</seg> en la Pascua, les recomendaba, cuando les hacía falta, al alcalde y al escribano. Por estos pequeños favores, y también por el respeto y cariño que siempre habían inspirado en la comarca los señores de la Rebollada, todos se creían obligados a acudir cuando doña Teresa los llamaba.</p>
@@ -895,7 +929,7 @@
 					<p>Fue la última operación quirúrgica llevada a cabo por la respetable viuda. Aquella misma tarde sufrió un ataque de apoplejía, y unos días después se extinguía en los brazos de sus hijas.</p>
 				</div>
 				<div type="section">
-					<head>II</head>
+					<head xml:id="ne0212_head_021">II</head>
 					<p>Lo mismo en vida de su madre que después de fallecida, solía hacer alguna visita a mis primas durante el verano. Generalmente eran dos: una cuando llegaba a aquel mi valle natal en el mes de julio, y otra en septiembre, cuando regresaba a la capital. Por impulso adquirido, tal vez por la fuerza del hábito, que tiene más fuerza en los espíritus limitados, o, lo que es aún más probable, porque lo llevasen en la sangre, mis tres primas eran otras tantas doña Teresa pocos años después de fallecida ésta. No la imitaban ciertamente en la energía; pero la igualaban, y aun la superaban, en la avaricia.</p>
 					<p>Me acuerdo que uno de los últimos días de septiembre monté a caballo por la tarde y me dirigí a la Rebollada, que distaba de mi casa poco más de una legua. Griselda, Erundina y Berenice me acogieron, como siempre, con dulces sonrisas y palabras cariñosas. Hasta, si mal no recuerdo, una de ellas me abrazó y me besó en la frente. Debió de ser Griselda, la más vieja y la más fea, porque siempre tuve la misma fortuna con las damas. Pero no pasó de ahí, esto es, nadie me ofreció otra cosa, ni un vaso de vino, ni un poco de mermelada. Ya lo sabía, y por eso cuando iba a visitar a mis primas de la Rebollada, llevaba, como hombre prevenido, una onza de chocolate en el bolsillo.</p>
 					<p>Después de los primeros momentos de expansión vinieron lamentaciones sin cuento, amargas reflexiones, suspiros, gemidos, furiosas exclamaciones de cólera y dolor. El gran Teófilo, una vez libre y sin aprensión por la integridad de sus patillas, pasaba una vida dulce y regalada como la de un canónigo. No es mía la comparación, sino de Berenice. Yo la hice observar que los canónigos estaban obligados a guardar las horas canónicas y ciertas abstinencias, canónicas también, a las cuales no se sujetaba su hermano. Convinieron todas conmigo, y me hicieron saber que desde la muerte de su madre no había tocado en un instrumento de labranza ni se cuidaba apenas del ganado. Había tomado su parte de dinero, del dinero escondido por doña Teresa, había comprado un jaco, y andaba de feria en feria, sin parecer a veces en quince días por casa. Lo que no me dijeron fué que gracias a Teófilo pudieron hallar este dinero, y que sin su habilidad de zahorí para adivinar los agujeros hubieran perdido más de la mitad. Pero no habían parado ahí las cosas, sino que, después de derrochado todo este dinero, les había vendido su parte de la posesión y se la gastó alegremente también, y después de gastada siguió comiendo y durmiendo en la casa de sus hermanas, como si nunca hubiera dejado de ser la suya. Tampoco habían parado aquí las cosas, y esto es lo que hacía estremecer las entrañas de las tres vírgenes, sino que Teófilo había descubierto ya varios agujeros donde guardaban el fruto de sus economías, y se los había dejado limpios. No hacía aún quince días que les había sustraído dos mil reales en monedas de cinco duros. Mis primas lloraban a hilo mientras narraban este último crimen de un modo tan desesperado, que si no fuera porque me acometieron ganas de reir, me hubiera echado también a llorar, seguramente.</p>
@@ -911,7 +945,7 @@
 					<p>Y reían mis primas con tanta gana como si las hubiera leído el capítulo más chistoso del <seg rend="italic">Quijote</seg>. Todavía después que volvieron a casa, y pasado largo rato, recordaban mis palabras y se renovaban las carcajadas.</p>
 				</div>
 				<div type="section">
-					<head>III</head>
+					<head xml:id="ne0212_head_022">III</head>
 					<p>Aquel invierno supe que la criada de mis primas había dado a luz un niño en la misma casa, y que aquéllas habían guardado a la madre y al hijo, en vez de ponerlos en la calle. El sujeto de la Rebollada que me dió la noticia añadió que a la hora presente se hallaban tan entusiasmadas con el chiquillo, que eran para él otras tantas madres. Me alegré por la inocente criatura y por ellas también. Al fin, tenía un sentido su existencia. El instinto de la maternidad, tan vivo en todas las mujeres, hallaría satisfacción y las haría felices.</p>
 					<p>Pero he aquí que pocos meses después me dieron otra noticia mucho más desagradable; la del fallecimiento de mi primo. El buen Teófilo había muerto repentinamente. Una noche había cenado en perfecto estado de salud y se habla acostado. Poco después se sintió indispuesto, llamó a la campanilla, acudieron en su auxilio, se le prodigaron algunos remedios caseros, se expidió un propio a caballo en busca del médico, y se llamó al cura. Éste llegó a tiempo para darle la absolución; pero cuando llegó el médico ya hacía una hora que había fallecido el enfermo.</p>
 					<p>Cuando supe la noticia, acudieron a mi memoria las últimas palabras que les había dirigido, y de pronto nació en mi mente una sospecha terrible. Esta sospecha me causó impresión tan profunda y tal repugnancia, que no pude escribirlas dándoles el pésame.</p>
@@ -928,7 +962,7 @@
 				</div>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0212_chap17">
-				<head>El pecado de la amabilidad</head>
+				<head xml:id="ne0212_head_023">El pecado de la amabilidad</head>
 				<p>ERA yo joven y me hallaba de visita en casa de una señora anciana de singular discreción. Entró un caballero de porte elegante, de arrogante figura. La señora nos presentó el uno al otro. Entablóse conversación, y yo hice cuanto fué posible por mostrarme amable y hacerme simpático a aquel desconocido. Hubo unos momentos de alegría cordial, de charla jocosa, de verdadera expansión. Sin embargo, cuando, al cabo, aquel caballero se levantó para irse, después de saludar con exquisita y familiar cortesía a la dama, dirigióme a mí una fría y casi impertinente inclinación de cabeza que me dejó enfadado. La señora comprendió lo que por mí pasaba, y, mirándome fijamente con ojos risueños y maliciosos, me preguntó:</p>
 				<p>—¿Me permite usted que le haga una observación acerca de su carácter?</p>
 				<p>—Cuantas guste.</p>
@@ -956,7 +990,7 @@
 				<p>Pero no; aquella vieja sabía mucho más que Solón.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0212_chap18">
-				<head>Una interviú con Prometeo</head>
+				<head xml:id="ne0212_head_024">Una interviú con Prometeo</head>
 				<p>EL amigo Esteve era un amigo intermitente. A temporadas asistía con puntualidad a la cervecería donde nos reuníamos a tomar café algunos literatos con más o menos letras. De pronto se eclipsaba, y no parecía por aquel centro científico de murmuración en tres o cuatro meses.</p>
 				<p>Se hacían supuestos graves o ridículos, pero siempre temerarios, entre nosotros. Unos decían que le tenía secuestrado su patrona y amarrado a una argolla sobre un felpudo; otros aseguraban que andaba por las tabernas de los barrios bajos conspirando contra las instituciones vigentes; otros, en fin, afirmaban que había empeñado toda su ropa y se veía obligado a guardar cama desde hacía cuarenta y dos días.</p>
 				<p>Cuando menos lo pensábamos aparecía nuestro Esteve a la hora del café con su eterna sonrisa y su cigarro de diez céntimos, casi tan eterno, en la boca. Y todos le recibíamos con alegría cordial y algazara. «¡Bravo, Esteve!» «¡Siéntate aquí, Esteve!» «No; aquí, a mi lado; tengo que contarte.» «Pues yo quiero que él me cuente.»</p>
@@ -1030,7 +1064,7 @@
 
 			</div>
 			<div n="19" type="chapter" xml:id="ne0212_chap19">
-				<head>RESISTE AL MALVADO</head>
+				<head xml:id="ne0212_head_025">RESISTE AL MALVADO</head>
 				<p>ME hallaba sentado en uno de los bancos del paseo del Prado. Delante de mí jugaban unos niños. Hubo disputa entre ellos, y uno más fuerte maltrató a otro más débil. Este, llorando desesperadamente, se fué a buscar a otros amigos que jugaban un poco más lejos; vino con ellos, y entre todos tomaron cumplida satisfacción del agresor, golpeándole rudamente.</p>
 				<p>He aquí el compendio de la sociedad humana—me dije—, he aquí sus fundamentos. El delincuente, la víctima; después, la justicia reparadora. Este niño, si hubiera podido devolver los golpes recibidos, no habría acudido a sus compañeros, los cuales, en este caso, no significan otra cosa más que una prolongación de sus brazos vengadores. ¿Qué es la justicia humana con sus tribunales, sino una fuerza que se añade a la nuestra para que tomemos venganza de quien nos ha hecho daño? Por eso el conde Tolstoi, grande y escrupuloso lector del Evangelio, sostiene que no deben existir los tribunales de justicia. No resistáis al malvado; no juzguéis a vuestros hermanos; presentad la mejilla derecha cuando os hayan herido en la izquierda, etc., etc.</p>
 				<p>Pero ocurre preguntar: si los hombres no volviéramos mal por mal, y si no lo hubiéramos devuelto en una larga, serie de siglos, ¿existiría la sociedad humana? ¿Existiría el Cristianismo? ¿Evangelizaría a los rusos el conde de Tolstoi desde su finca de Moscou? El mensaje de Cristo es para la eternidad, y El mismo afirmó que los tiempos no estaban aún maduros para que fructificase su semilla. Arrojada en un campo inculto, queda asfixiada instantáneamente por las malas hierbas. Un tipo de sociedad, y de sociedad bien organizada, es necesario para que los hombres comprendan y acepten la ética del Evangelio.</p>
@@ -1043,7 +1077,7 @@
 
 			</div>
 			<div n="20" type="chapter" xml:id="ne0212_chap20">
-				<head>PERICO EL BUENO</head>
+				<head xml:id="ne0212_head_026">PERICO EL BUENO</head>
 				<p>NUESTROS ideales no siempre se armonizan con las tendencias secretas de nuestra naturaleza, como afirman los filósofos moralistas. Por el contrario, he visto en muchos casos producirse una disparidad escandalosa.</p>
 				<p>He conocido avaros que admiraban profundamente a los pródigos, que hubieran dado todo en el mundo por parecérseles..., menos dinero. Había un comerciante en mi pueblo que pasó toda su vida contándonos lo que había derrochado en un viaje que había hecho a París, sus francachelas, la cantidad prodigiosa de <seg rend="italic">luises</seg> que había esparcido entre las bellezas mundanas. Se le saltaban las lágrimas de gusto al buen hombre narrando sus aventuras imaginarias.</p>
 				<p>Voy a contar ahora la de <seg rend="italic">Perico el Bueno</seg>. Ni yo ni nadie en el pueblo sabía de dónde le venía este sobrenombre. Pero menos que nadie lo sabía él mismo, a quien enfadaba lo indecible. No había en el Instituto un chico más díscolo y travieso. Era la pesadilla de los profesores y el terror de los porteros y bedeles. En cuanto surgía en el patio un motín o una huelga, podía darse por seguro que en el centro se hallaba <seg rend="italic">Perico el Bueno</seg>; si había bofetadas, era Perico quien las daba; si se escuchaban gritos y blasfemias, nadie más que él los profería.</p>
@@ -1109,7 +1143,7 @@
 
 			</div>
 			<div n="21" type="chapter" xml:id="ne0212_chap21">
-				<head>LA TIERRA ES UN ÁNGEL</head>
+				<head xml:id="ne0212_head_027">LA TIERRA ES UN ÁNGEL</head>
 				<p>LA Tierra es un ángel: yo he leído eso en alguna parte—me decía el doctor Mediavilla cierta tarde paseando por la Moncloa—. ¡Ah!, sí, ya me acuerdo; era un filósofo alemán llamado Fechner quien lo afirmaba. Y en este momento estoy tentado a darle la razón. ¡Vea usted qué luz irisada se esparce por el cielo!, ¡qué transparencia en el aire!, ¡qué crestas azuladas aquellas del Guadarrama!, ¡qué dulce sosiego en toda la campiña! Considerando la Tierra como un ser cuyas vastas dimensiones exigen un plan de vida completamente distinto del nuestro, no ofrece duda su inmensa superioridad sobre nosotros. La Tierra no tiene piernas ni brazos: ¿para qué los necesita, puesto que posee ya dentro de sí todas aquellas cosas tras de las cuales nosotros corremos anhelantes? ¿Necesita de piernas para caminar con la espantosa velocidad de treinta kilómetros por segundo? No tiene ojos; pero sigue su camino por el espacio insondable sin extraviarse. Para llevar su preciosa carga en todos los momentos, en todas las estaciones—dice aquel ingenioso filósofo—, ¿qué forma podría ser más excelente que la suya, puesto que es al mismo tiempo el caballo, las ruedas y el carro? Hay que pensar en la belleza de este globo luminoso, cuya mitad alumbrada por el sol es azul, mientras la otra mitad se baña en la noche estrellada. Hay que pensar en esta cristalina esfera, que gira bañada en luz, como decía nuestro gran Espronceda; hay que pensar en sus aguas transparentes, en esos millones de luces y de sombras por las cuales los cielos se reflejan en los pliegues de sus montañas y en los repliegues de sus valles. Este globo sería un espectáculo sublime para quien lo viese de lejos. En él se encuentran a la vez todos los contrastes y todas las armonías; es decir, todo lo pintoresco, todo lo que puede producir la emoción estética, la desolación y la alegría, la riqueza, la frescura, los vívidos colores, los aromas delicados. Envuelta en su atmósfera azul y en sus nubes, como una desposada en su velo, la Tierra marcha por el espacio feliz y gloriosa como un ángel.</p>
 				<p>—Todo eso estaría muy bien—respondí—si la Tierra tuviera conciencia de sí misma.</p>
 				<p>—Y ¿por qué no ha de tenerla? No será una conciencia individual como la nuestra, pero la tendrá colectiva. Habituados nosotros a la relación y al choque con las conciencias individuales, y observando la unidad que en nuestro interior se ofrece, nos cuesta enorme trabajo suponer que existe otro género de conciencia. Y, sin embargo, a cada momento se nos presenta en la vida. ¿Por qué separamos en una sociedad la intención de ella de la de los individuos que la componen, y decimos, como aquel inglés, «la cabilda, mala; la canóniga, buena»? Y con la nación inglesa constantemente hacemos la misma distinción: decimos que los ingleses suelen ser hombres generosos, caritativos, rectos en su proceder, mientras Inglaterra es la más egoísta y pérfida de las naciones. Pero aún hay más; esta conciencia individual que en nosotros observamos, y de la cual estamos tan ufanos, acaso sea, en último término, también una conciencia colectiva; porque así como nuestro cuerpo se halla compuesto por innumerables células, que todas tienen su voluntad y su iniciativa, así nuestro espíritu puede haberse formado por la agregación de muchos espíritus. La experiencia parece que nos lo está diciendo. En el carácter de cada hombre se hallan unidos los rasgos del carácter de sus abuelos; en los instantes sucesivos de su vida parece que todos ellos van asomando la cabeza uno en pos de otro. Cada ser, según su importancia, tendrá una conciencia más o menos vasta. No negamos que una sociedad tiene su conciencia, que una nación la posee, pero nos irrita que se diga lo mismo de un planeta. Figurémonos que un ser inmensamente mayor que nuestra Tierra la haya venido observando desde que se desprendió del Sol en estado gaseoso, y la siga observando hasta que perezca, bien por virtud de una catástrofe, o porque la vida desaparezca de ella, y su materia, por incesante radiación, se pierda en el éter. Figurémonos que este ser guarda la misma relación con nosotros que un naturalista con un pequeño y efímero animal. Cuando nuestro planeta hubiera desaparecido, este ser, este gran naturalista, ¿no guardaría de él un recuerdo claro y preciso, como el pequeño naturalista lo guarda del pequeño animal? ¿No podría definir su carácter, sus tendencias, el lugar que ocupa en el escalafón de los seres, su grado de espiritualidad, sus cualidades y sus deficiencias? Las conciencias de los seres que existen dentro de nosotros forman nuestra conciencia, nuestras conciencias forman la conciencia de nuestra raza, las conciencias de nuestras razas forman la del planeta, las de los planetas forman la del sistema solar..., y así sucesivamente hasta llegar a la conciencia absoluta, que no puede ser otra que la del gran Universo. La constitución de este Universo es idéntica en toda su extensión. Así como en nosotros, no sólo cada sensación, sino cada conciencia de una sensación contribuye a formar una mayor conciencia que llamamos <seg rend="italic">yo</seg>, así nuestras conciencias individuales contribuyen a formar la conciencia de nuestro país, la de nuestra raza, la de nuestro planeta.</p>
@@ -1133,7 +1167,7 @@
 
 			</div>
 			<div n="22" type="chapter" xml:id="ne0212_chap22">
-				<head>MERCI, MONSIEUR</head>
+				<head xml:id="ne0212_head_028">MERCI, MONSIEUR</head>
 				<quote><lg type="poem"><lg type="stanza">
 							<l>No es bueno que el hombre esté solo.</l>
 						</lg>
@@ -1176,7 +1210,7 @@
 
 			</div>
 			<div n="23" type="chapter" xml:id="ne0212_chap23">
-				<head>ARTE ARCAICO</head>
+				<head xml:id="ne0212_head_029">ARTE ARCAICO</head>
 				<p>POR qué hablaban los espíritus libres del Arte? ¿Hay arte posible arrancando al artista la noción del bien y del mal? Si se exceptúan tal vez la escultura, las artes todas tienen por base esas <seg rend="italic">telas de araña</seg> que se llaman Dios, alma, bien, verdad. La arquitectura sin religión no sería arte bella, sino de pura utilidad, una arquitectura de castor. La música, si quedase plenamente demostrado que no existe más mundo que el de los fenómenos, si no despertase en nuestra alma dulces y vagos presentimientos de otra patria, ¿ejercería encanto alguno? Una vez persuadidos, absolutamente persuadidos de que su influencia es puramente fisiológica, que no tiene otra finalidad que la de activar las funciones vitales por medio del ritmo, acelerando la digestión o la circulación de la sangre, huiríamos como de un veneno de la música de Beethoven. Buscaríamos algún wals de Strauss o un pasodoble de Chueca a título solamente de licor estomacal.</p>
 				<p>Y si consideramos el arte por excelencia, el arte de la poesía, no hallaremos en todas sus manifestaciones más que esa lucha profunda, desesperada, trágica y cómica a la vez, entre los ciegos apetitos de nuestra naturaleza animal y las aspiraciones elevadas de nuestro ser espiritual.</p>
 				<p>Figurémonos por un momento que los espíritus libres vencen en toda la línea. Queda absolutamente demostrado (de un modo indudable para todos los hombres, grandes y pequeños) que los llamados valores superiores, el Ser infinito y eterno, el bien y la verdad, son puros fantasmas, un síntoma de la vida declinante; el amor, la compasión, el sacrificio por los otros, enfermedades cerebrales que aparecen cuando los instintos sanos se debilitan. ¿Qué cantarán ya los poetas? ¿Dónde están los himnos, los dramas y las novelas? Excluída la lucha interior, la lucha del mundo moral, la tierra ofrecería un aspecto tan siniestro como monótono. Obrando sólo la voluntad de vivir o la voluntad de dominar, no pudiendo considerarse como cosas serias ni el amor, ni la lealtad, ni la abnegación, la trama de la vida, tan rica y hermosa, quedaría reducida a una serie de peripecias de orden material engendradas por la diferencia de fuerza.</p>
@@ -1190,7 +1224,7 @@
 
 			</div>
 			<div n="24" type="chapter" xml:id="ne0212_chap24">
-				<head>ASCETISMO</head>
+				<head xml:id="ne0212_head_030">ASCETISMO</head>
 				<p>SI el ascetismo es consubstancial con el Cristianismo, o, en otros términos, si la mortificación del cuerpo es un derivado indeclinable del Evangelio, yo no soy capaz de decidirlo. Muchos católicos y otros que no lo son, como Schopenhauer y Tolstoi, lo afirman resueltamente; otros, como San Francisco de Sales, Fenelón, Dupanleup y el teólogo protestante Harnack, lo niegan. Hay pasajes en el Evangelio que parecen dar la razón a los primeros: «Si tu mano te hace pecar, córtala; si tu ojo te hace pecar, arráncalo.» «Anda, vende lo que posees y dalo a los pobres, y poseerás un tesoro en el Cielo.» «Si viene a Mí alguno y no aborrece a su padre, a su madre, a su mujer y a sus hijos, a sus hermanos y a sus hermanas, y aun a su propia vida, no podrá ser discípulo mío.»</p>
 				<p>Pero otras máximas de Jesús, las reglas de vida que daba a sus discípulos, y aun su propia vida, indican, por el contrario, que concedía poca importancia a la penitencia corporal: «Como Juan viniera sin comer ni beber, decían ellos: es un hombre endemoniado. El Hijo de Dios ha venido comiendo y bebiendo, y ellos dicen: éste es un tragón y un bebedor de vino.» Nuestro Señor sabía, pues, que se le juzgaba de este modo, y no le importaba. Parecía poner empeño en no distinguirse de los demás exteriormente y en huir del tipo del asceta tradicional. Visitaba a los ricos como a los pobres, asistía a banquetes y bodas, se dejaba perfumar con esencias olorosas. En suma, el Redentor no pedía a nadie que abandonase su estado; a todos pedía únicamente amor y abnegación.</p>
 				<p>Imposible negar, sin embargo, que la idea de la mortificación corporal va unida en la mente de una gran parte de los cristianos a la de la santidad, muy principalmente entre la gente indocta. Un santo para los obreros y campesinos significa siempre un hombre que se priva de comer y de beber, que duerme en el suelo y que se azota furiosamente. Por eso no sorprenderá a nadie que Pachón de la <seg rend="italic">Quintana de Arriba</seg> profesase con toda su alma esta verdad, y que permaneciese dolorosamente sorprendido al observar cuán lejanos andaban de las instrucciones de Nuestro Señor Jesucristo muchos clérigos que él conocía, sobre todo, los canónigos de Oviedo.</p>
@@ -1215,7 +1249,7 @@
 
 			</div>
 			<div n="25" type="chapter" xml:id="ne0212_chap25">
-				<head>La procesión de los santos</head>
+				<head xml:id="ne0212_head_031">La procesión de los santos</head>
 				<p>MÁS de una vez me aconteció penetrar en la vieja catedral gótica a la caída de la tarde. Allá en el fondo hay una obscura capilla solitaria, y allá en el fondo un Cristo solitario abre sus brazos doloridos entre dos cirios que chisporrotean lúgubremente.</p>
 				<p>En pie frente a El, le contemplo, le imploro y muchas veces también le interrogo: «¿Quién te ha enseñado esas dulces palabras que salieron de tus labios? ¿Por qué te has dejado matar? ¿Por qué no has luchado, por qué no has herido y triunfado? ¿Eres Dios, o eres un iluso? ¿Por qué no has sido egoísta y vano y cruel como yo lo he sido?»</p>
 				<p>El me escucha y murmura palabras de consuelo, y algunas veces sus ojos se clavan en mí con severidad, y alguna vez me sonríen.</p>
@@ -1238,7 +1272,7 @@
 
 			</div>
 			<div n="26" type="chapter" xml:id="ne0212_chap26">
-				<head>ESTETICISMO</head>
+				<head xml:id="ne0212_head_032">ESTETICISMO</head>
 				<p>ERA yo en otro tiempo un furioso esteticista. La belleza fué mi guía, mi sostén, el único objetivo de mi vida; el mundo, una gran obra de arte en la cual el Alma Suprema se conoce y se goza. Nuestras almas, órganos de Ella, existen únicamente para la felicidad de esta contemplación. Goethe estaba en lo cierto. Nada hay en la existencia digno sino el culto de la belleza: nuestra educación debe ser esencialmente estética.</p>
 				<p>Así, juraba yo con fervor, como Heine, por Nuestra Señora de Milo, me descubría al pasar por delante de <seg rend="italic">Las hilanderas</seg> de Velázquez, y recorría doscientas leguas para ver unos retratos de Franz Hals. Los campos y las montañas hacían mis delicias. ¡Oh felices excursiones a las más altas cimas cantábricas! Los ojos no se saciaban jamás ante aquellos panoramas espléndidos. El espectáculo de la mar me embriagaba, y el del cielo estrellado me causaba vértigos. Las horas se deslizaban divinas espiando el vaivén de las olas, los vivos cambiantes de sus volutas verdes, los destellos de sus crestas rumorosas. «¿Será posible—me decía—hartarse de contemplar el mar, de escuchar el canto del ruiseñor, de ver los cuadros de Velázquez y los mármoles helénicos?»</p>
 				<p>Pues bien, sí, me he hartado, me he hartado. En vano hago supremos esfuerzos de imaginación para representarme con toda su intensidad la belleza de los objetos, que tan viva emoción me causaba. Esta emoción no viene. Me coloco frente al mar, y me distraigo mirando el quitasol rojo de una inglesa que recorre descalza la playa: voy al Museo del Prado, y más que las <seg rend="italic">madonnas</seg> de Rafael me interesan las niñas flacas que las están copiando: me siento a la orilla del arroyo, bajo los castaños frondosos, y me sorprendo al cabo de unos instantes limpiándome cuidadosamente el polvo de los pantalones: hace pocos días sentí náuseas escuchando un nocturno de Chopin que en tiempos lejanos me producía espasmos de placer.</p>
@@ -1249,7 +1283,7 @@
 
 			</div>
 			<div n="27" type="chapter" xml:id="ne0212_chap27">
-				<head>UN PROFESOR DE ENERGÍA</head>
+				<head xml:id="ne0212_head_033">UN PROFESOR DE ENERGÍA</head>
 				<p>SOLÍA poner cátedra en un banco de piedra del paseo de la villa llamado el <seg rend="italic">bombé</seg>, contiguo a la ría. En aquel banco y otros adyacentes se sentaban indefectiblemente por las tardes hasta una docena de indianos, que contemplaban fumando y silenciosos el escaso trajín del muelle, o bien departían animadamente narrando historias de sus años de comercio en las islas Antillas. Todos ellos habían estado en Cuba o Puerto Rico, y, unos más, otros menos, todos habían labrado un capital que disfrutaban holgando de aquella guisa. Eran hombres que pasaban, en general, de los cincuenta, fornidos, rechonchos, algunos apopléticos, con enormes cadenas de oro, para sujetar el reloj, pendientes del chaleco.</p>
 				<p>Pero el que solía llevar la palabra más a menudo entre ellos no era fornido ni rechoncho, sino un viejecito seco que se acercaría a los setenta, de nariz aguileña, finos labios descoloridos, ojos de duro mirar y espesas cejas ya canosas. Don Pancho Suárez, que así se llamaba, había llegado a la villa hacía más de veinte años con un buen capital, que había duplicado, al decir de sus compañeros, porque estaba soltero y era hombre de cortas necesidades y ahorrador. Muy respetado entre ellos por rico y por filósofo moralista.</p>
 				<p>Su filosofía era sencilla y expeditiva; su moral, fuerte y audaz. No una moral de mujer, sino una moral hecha para los hombres y comprendida por ellos solamente. Cuando don Pancho hablaba, los compadres se guiñaban el ojo y decían en voz baja: «¡Es fino el viejecito!; ¿verdad, amigo?»</p>
@@ -1305,16 +1339,16 @@
 
 			</div>
 			<div n="28" type="chapter" xml:id="ne0212_chap28">
-				<head>UNA MIRADA A LO ALTO</head>
+				<head xml:id="ne0212_head_034">UNA MIRADA A LO ALTO</head>
 				<div type="section">
-					<head>I</head>
+					<head xml:id="ne0212_head_035">I</head>
 					<p>EN las primeras horas de la noche me place discurrir por las calles céntricas. Uno tras otro los arcos voltáicos se encienden, y mantienen a distancia las tinieblas que la huída del sol convida a descender. Los coches regresan del paseo, y los nobles brutos que los arrastran se muestran impacientes ante la muchedumbre que obstruye la vía.</p>
 					<p>¡Crepúsculo hermoso el de la gran ciudad! Que otros vayan a gozarse melancólicamente al bosque silencioso, y que miren al sol ocultarse detrás de los montes lejanos, y que escuchen con placer las esquilas del ganado y los dulces sones de la flauta pastoril; que corran a la playa desierta y se deleiten contemplando el romper de las olas espumosas. Yo gozo mirando las telas y las joyas deslumbrantes que se ostentan en los escaparates. Pero gozo más cuando alguna bella, desde lo alto de un coche, como una diosa sobre su trono móvil de seda, me lanza una mirada. ¡Avergonzaos, ricas telas, ocultaos, joyas deslumbrantes!; el sol, al partir, ha dejado en aquellos ojos toda su luz como en depósito sagrado.</p>
 					<p>Con tranquilo placer mis pasos errantes se deslizan por la calle. La muchedumbre se aprieta en torno mío. ¡Escuchad, escuchad esos gritos gozosos; ved esa larga fila de carruajes que llevan sobre sus ruedas la belleza, la juventud y la alegría de la villa! ¡Mirad a ese joven tembloroso que se acerca, embargado de emoción, al borde de la acera, y recoge al pasar la sonrisa de su amada y una señal de su mano adorada, de esa mano que él besa furtivamente cuando en el Retiro la dama de compañía se distrae..., o se hace la distraída! Mis canas me preservan ya de estos temblores, mas, ¡ay!, no puedo menos de acordarme de ellos.</p>
 					<p>El tumulto crece por momentos. Todo se agita, todo se mueve. Los caballos piafan de impaciencia, y las mamás, más impacientes aún, quisieran estar ya delante de la mesa, donde humea la sopa confortable. El río de la vida serpentea por las calles.</p>
 				</div>
 				<div type="section">
-					<head>II</head>
+					<head xml:id="ne0212_head_036">II</head>
 					<p>Súbito me lanzo sobre la plataforma de un tranvía que pasa. Este tranvía me conduce al extremo oriental de la ciudad. Doy unos cuantos pasos más, y me encuentro en plena campiña obscura y silenciosa. Mi alma se había alejado de mí en la agitación febril de la vida, y allí se acerca para decirme al oído algunas palabras misteriosas debajo de la gran bóveda estrellada. Me siento sobre una piedra, y mis ojos se pasean por el firmamento, escrutando sus profundos senos.</p>
 					<p>Allá va la <seg rend="italic">Lira</seg> a ocultarse en las lejanías del Poniente. ¡Oh dulce <seg rend="italic">Vega</seg> de inmarcesible luz; tú fuiste el astro virginal de mis ensueños infantiles! ¡Cuántas veces, al regresar a casa de la mano de mi padre, mis ojos se levantaban hacia ti! Tú me decías algo divino e inexplicable, mi pequeño corazón palpitaba, mi alma se llenaba de blanca claridad como la tuya, y algunas lágrimas temblaban en mis pupilas. Ahora con velocidad desciendes, arrastrada por tus corceles azulados, y pronto desaparecerás. Mi infancia, ¡ay!, largo tiempo ha que se ha ido. Pluguiera a Dios que al morir volase directamente a tí, y en alguno de los mundos que iluminas volviese a hallar los dulces sueños que me agitaban cogido de la mano de mi padre.</p>
 					<p>En lo alto del cenit brilla la hermosa <seg rend="italic">Capella</seg>, la estrella de mi adolescencia. Esparce su luz tranquila sobre la tierra, y, vestida de rayos luminosos, lleva en su seno tesoros de amor. Mi frente pálida se alzaba hacia ti en otro tiempo bien lejano, y allí ansiaba ir con la niña de ojos azules, de cabellera de oro, que levantaba la punta de la cortina de su ventana cuando yo venía de mi cátedra con los libros debajo del brazo. Allí quisiera también ir cuando me muera.</p>
@@ -1323,14 +1357,14 @@
 					<p>Pero ya se huyó también mi edad viril. Mi frente fatigada se inclina hacia la madre tierra, mis fuerzas decaen, las luces de este mundo palidecen, mis ojos se preparan a dormir. ¿Qué debo esperar cuando despierte? Un sol mucho más grande, más santo, más luminoso que el que nos alumbra, un sol maestro de pureza que no ilumine la traición, que desvanezca la mentira, que acaricie al inocente y abrase al malvado, un sol de amor y de justicia cuyo aliento envíe a sus hijos una eterna primavera que derrita los hielos del egoísmo y de la envidia. ¡Helo allí ese sol en la región lejana enganchando ya sus corceles para subir! Debajo de <seg rend="italic">Orión</seg>, el claro <seg rend="italic">Sirio</seg> comienza a rasar con sus fuegos el horizonte. Allí quisiera ir, por fin.</p>
 				</div>
 				<div type="section">
-					<head>III</head>
+					<head xml:id="ne0212_head_037">III</head>
 					<p>Pero la noche agita ya sus alas rápidas, y a las sublimes emociones que me embargan sucede el gozoso recuerdo de mi hogar. Me levanto y busco de nuevo el tranvía, que me conduce rápidamente a él. Subo la escalera de mi casa y abro silenciosamente la puerta; entro en mi gabinete de trabajo, y en medio de él me detengo, contemplando con profundo sentimiento de piedad el retrato de mis padres. Voy al dormitorio de mi hijo, y le veo dormir, y escucho con placer el soplo sosegado de su pecho. Después me dirijo al comedor. Mi esposa inclina su dulce rostro infantil sobre la costura debajo de la lámpara. Por algunos momentos la contemplo en silencio. En ella reposa mi corazón, y la paz serena del amor me inunda de alegría en su presencia. Entonces me acuerdo de aquellos astros suspendidos en el espacio, donde mi espíritu ansiaba volar. Un estremecimiento de horror agita mi cuerpo. ¡Oh, no; no quiero peregrinar solo por esos mundos resplandecientes, no quiero pasar a vuestro lado, seres adorados, sin amaros, tal vez sin conoceros, no quiero otras vidas siderales, no quiero ser el favorito de los dioses! A vuestro lado he gozado horas felices que me envidiarían todas las estrellas del cielo. ¡O con vosotros, amados de mi alma, o a la negra fosa, y dormir allí para siempre!</p>
 
 
 				</div>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0212_chap29">
-				<head>TERAPÉUTICA DEL ODIO</head>
+				<head xml:id="ne0212_head_038">TERAPÉUTICA DEL ODIO</head>
 				<p>ESTOY persuadido de que lo único que degrada realmente al hombre es el odio, porque es lo único que le hace retroceder velozmente hacia la fiera. El hombre experimenta al sentirlo el dolor por excelencia, el dolor de los dolores. ¡Como que es la ruina de todas sus ilusiones de grandeza, la pérdida de sus fueros más venerados!</p>
 				<p>El negocio más importante de nuestra vida debe ser, pues, desembarazarnos del odio. Cuanto trabajemos en este sentido, será ganancia para nuestra felicidad.</p>
 				<p>No basta que nos digan: «Ahí tenéis la religión, ahí tenéis los divinos preceptos del Evangelio. Ama a tu prójimo como a ti mismo, sé generoso, sé humilde, sé caritativo, y te desembarazarás del odio.» Esta es una petición de principio. Desembarázate del odio, y te desembarazarás del odio. Pero ¿cómo? He aquí el problema. Si se nos otorga lo que el Cristianismo llama la <seg rend="italic">gracia</seg>, bien al nacer, o bien por un cambio brusco, por un verdadero cataclismo operado en nuestro espíritu, todo está resuelto. ¿Y si no se nos da? Debemos implorarla. Tal creo yo también; pero mientras llega, debemos empuñar todas las armas de que disponemos para combatir al enemigo de nuestra dicha.</p>
@@ -1355,7 +1389,7 @@
 
 			</div>
 			<div n="30" type="chapter" xml:id="ne0212_chap30">
-				<head>VIDA DE CANÓNIGO</head>
+				<head xml:id="ne0212_head_039">VIDA DE CANÓNIGO</head>
 				<p>LAS ideas de mi tío don Sebastián acerca del ascetismo de los canónigos eran mucho más decididas que las de Pachón de la Quintana de Arriba. Nada de vacilaciones en este punto: ya sabía a qué atenerse. Para él la imagen de un canónigo evocaba un sinfín de representaciones cómodas, deleitosas y suculentas.</p>
 				<p>No es extraño. Si se hablaba de un vino añejo bien confortable, le oía llamar «vino de canónigo»; si se trataba de un chocolate exquisito, «chocolate de canónigo»; si de un colchón blando y relleno, «colchón de canónigo»; etc.</p>
 				<p>Toda su vida había sentido una envidia ruin por el alto clero, y deploraba amargamente que su padre no le hubiese dedicado al estado eclesiástico, en vez de dejarle al frente del comercio de ferretería que tenían en la planta baja de la casa. Porque si le hubiese enviado al Seminario, tal vez a estas horas sería canónigo. ¿Por qué no? ¿No lo era su primo Gaspar, que pasaba por un zote en la escuela? ¡Y nada menos que arcediano de la santa iglesia catedral de León!</p>
@@ -1389,7 +1423,7 @@
 
 			</div>
 			<div n="31" type="chapter" xml:id="ne0212_chap31">
-				<head>GLORIA Y OBSCURIDAD</head>
+				<head xml:id="ne0212_head_040">GLORIA Y OBSCURIDAD</head>
 				<p>ACAECE a los hombres que han gustado las dulzuras de la gloria lo mismo que a los que frecuentan las salas de juego. Éstos ya no encuentran en el mundo nada que les complazca, sino las fuertes emociones de ganar o perder dinero. Aquéllos ya no pueden vivir sino siendo a todas horas y por todos lisonjeados. Cuando las lisonjas no llegan, se va a buscarlas con mil artificios y violencias. Se adula a los seres más despreciables para obtenerlas; se urden intrigas; se hacen favores a aquellos a quienes se odia; se escuchan dramas soporíferos y se leen libros indigestos; se sube a las buhardillas y se baja a los sótanos; se practican todas las obras de misericordia sin misericordia. Se vive, últimamente, en un estado de perpetua inquietud y vigilancia. ¡Todo para cazar la gacetilla arrulladora!</p>
 				<p>Esta es la <seg rend="italic">vida feliz</seg> que disfrutan la mayoría de los llamados grandes hombres. Voltaire, Víctor Hugo, Lamartine, Chateaubriand, Castelar, no han llevado otra.</p>
 				<p>Y es que el manjar de la gloria tiene un sabor tan pronunciado, que quita el gusto a todos los demás platos.</p>
@@ -1449,7 +1483,7 @@
 
 			</div>
 			<div n="32" type="chapter" xml:id="ne0212_chap32">
-				<head>EL VIAJE DE LA MONJA</head>
+				<head xml:id="ne0212_head_041">EL VIAJE DE LA MONJA</head>
 				<p>EL día de Santa Irene fuí a felicitar, como todos los años, a doña Irene, esposa de mi amigo Requejo. Es éste un médico militar retirado, alegre, bondadoso, gran jugador de tresillo. Doña Irene, una señora igualmente bondadosa, menos alegre y detestable jugadora de tresillo. Esto último era la única causa visible de divorcio que pudiera existir entre los cónyuges. Porque los dos viejos se amaban con pasión idolátrica, sobre todo desde que su única hija Rita les había abandonado para ingresar en la comunidad de las <seg rend="italic">Hermanitas de los Pobres</seg>. Yo no gusto de estas niñas que dejan a sus padres ancianos para cuidar a otros ancianos que no son sus padres, pero la verdad me obliga a declarar que Ritita, a quien conocí desde su infancia, era una criatura angelical, tan dulce, tan inocente, que no parecía hecha para este mundo. ¿Por qué esta niña, alegre como su padre y tierna como su madre, se había decidido a hacerse religiosa? No por un desengaño de amor, como bastantes lo hacen, sino porque su alma pura ardía en caridad y ansia de sacrificio. La vida regalada al lado de sus padres, tan mimada por ellos y tan festejada por todos, inquietaba su conciencia. Un verano en que Requejo se trasladó con la familia a Vitoria, huyendo los calores de Madrid, la chica comenzó a frecuentar el asilo de ancianos, que estaba próximo a su casa, trabó amistad con las hermanas, tuvo ocasión de prestarles algunos servicios, y concluyó por ayudarlas en muchas de las tareas de su ministerio. A medida que penetraba más adentro en esta vida de caridad y de servidumbre voluntaria, su alma fervorosa iba gozando delicias ignoradas, transfigurábase su rostro, al decir de sus mismos padres, sus ojos brillaban con una luz celestial. Por fin, cierto día dejó una cartita sobre la mesa de noche de su papá, suplicándole, en términos humildes, que la permitiese ser hermanita de los pobres. Requejo montó en cólera, amenazó con hacer y acontecer, pero fué más fácil de pelar que la mamá. Ésta, con sus lágrimas y sus ataques nerviosos, logró parar el golpe. Regresaron a Madrid; Ritita pareció resignada, pero se la vió pronto triste, apática y notablemente descaecida en su rostro. Requejo se alarmó, tuvo una secreta conferencia con ella, y salió de la estancia exclamando:</p>
 				<p>—¡Haz lo que quieras! ¡Cada mujer no es más que un capricho con piernas y brazos!</p>
 				<p>Efectivamente, aquel verano fueron de nuevo a Vitoria, y allí se quedó nuestra Ritita, en el convento, tan gozosa, que a pesar de la mala alimentación y de su trabajosa vida, no tardó en ponerse gorda y colorada como una manzana. El buen Requejo sacudía la cabeza riendo, pero doña Irene no cesaba de verter lágrimas. Aquel rostro marchito, que lejos de ella se había vuelto sonrosado, le causaba celos y pena. Dos años hacía que la niña estaba en el convento, y sus padres habían pasado los dos veranos en Vitoria, cerca de ella.</p>
@@ -1473,7 +1507,7 @@
 
 			</div>
 			<div n="33" type="chapter" xml:id="ne0212_chap33">
-				<head>THEOTOCOS</head>
+				<head xml:id="ne0212_head_042">THEOTOCOS</head>
 				<p>FUÉ una criadita guipuzcoana quien me sugirió la idea de visitar el santuario de la Virgen de Aránzazu. Había nacido en sus cercanías, y en su infancia apacentó un rebaño de ovejas en aquellos montes. Cuando nos daba cuenta de su vida monótona, inocente, al pie de la mole de piedra que guarda la milagrosa imagen, su palabra sonaba dulce, intermitente, como las esquilas del ganado, me traía a la imaginación el amable sosiego y los aromas de la montaña.</p>
 				<p>—¿Nunca se te apareció la Virgen en alguna gruta, como a Bernardetta en Lourdes?—le pregunté yo con sonrisa de burla.</p>
 				<p>—¡Oh, no!... La Virgen a mí no quiere... Mala que soy—respondía ruborizándose.</p>
@@ -1516,7 +1550,7 @@
 
 			</div>
 			<div n="34" type="chapter" xml:id="ne0212_chap34">
-				<head>LAS DEFENSAS NATURALES</head>
+				<head xml:id="ne0212_head_043">LAS DEFENSAS NATURALES</head>
 				<p>EL toro, ¿tiene cuernos para defenderse, o se defiende con los cuernos porque los tiene? Goethe se atiene a lo último, y con él casi todos los naturalistas. En cambio, los providencialistas creen lo primero. El asunto vale la pena de ser dilucidado, pero yo no tengo tiempo en este instante.</p>
 				<p>Lo único que diré es que no sólo nuestras cualidades, sino también nuestros defectos nos son útiles en algunas ocasiones.</p>
 				<p>Los animales todos utilizan los medios que poseen, fuertes o débiles, para la lucha con la Naturaleza animada o inanimada. El asno tira coces porque no tiene garras, el corzo utiliza sus pies ligeros para huir, el calamar su tinta para enturbiar el agua y ocultarse, y los insectos, que no poseen otro medio de defensa, se hacen los muertos.</p>
@@ -1581,7 +1615,7 @@
 
 			</div>
 			<div n="35" type="chapter" xml:id="ne0212_chap35">
-				<head>PITÁGORAS</head>
+				<head xml:id="ne0212_head_044">PITÁGORAS</head>
 				<p>ENTRE los muchos filósofos con quienes tropecé en las casas de huéspedes que he recorrido mientras seguí la carrera de Ciencias, ninguno más enamorado de la Filosofía que mi amigo Amorós. Puede decirse que no vivía más que para esta dama de sus pensamientos. El duro catre de la patrona, sus garbanzos no mucho más blandos, sus albondiguillas, sus insolencias, eran para él sabrosas penitencias que ofrecía en holocausto a su adorada Metafísica. Los demás murmurábamos; a veces rugíamos de dolor e indignación: él sonreía siempre, no comprendiendo que se diese tanta importancia a que las sábanas nos llegasen a la rodilla o un poco más abajo, que el agua de la jofaina tuviese cucarachas, y otras niñerías por el estilo.</p>
 				<p>Primero faltaría el sol en su carrera que él a sus cátedras de la Universidad, y el que quisiera poner el reloj en hora no tenía más que atisbar sus entradas y salidas en el feo y sucio portal de la Biblioteca Nacional. Unas veces leía a Platón, otras a Aristóteles; pero el mayor filósofo, a su entender, que había producido el mundo era Krause, porque había resuelto el problema de armonizar el panteísmo con el teísmo por medio de una lenteja esquemática, que nos mostraba poseído de profunda admiración. Inútil es decir que a los que estudiábamos Derecho, o Ciencias, o Farmacia, nos despreciaba, mejor dicho, nos dedicaba un desdén compasivo que a algunos hacía reir, y a otros montar en furor. Porque éramos seis o siete los que, bajo el yugo ominoso de doña Paca, estudiábamos en aquel cuarto tercero de la plaza de los Mostenses diversas carreras liberales. De su desdén nos vengábamos llamándole siempre Pitágoras, negándole la existencia del espíritu, y pellizcando en su presencia a la doméstica que nos servía a la mesa. Esto último era lo que más desconcertaba al bueno de Amorós, que era casto como un elefante y se enfurecía de que se tomase a la Humanidad como medio, y no como fin.</p>
 				<p>Hay que decir que el pobre Pitágoras había tenido que padecer graves persecuciones de la familia por esta su manía de filosofar. Destinábalo su padre allá en Pamplona, donde residía, al noble arte de la peluquería, que él mismo cultivaba, no sin brillo. Amorós se negó con obstinación a rapar barbas y cabellos, creyéndose destinado por la Naturaleza a investigar los principios esenciales de las cosas. Ni los ruegos de su madre, ni las burlas de los parroquianos, ni los zurriagazos de su padre lograron disuadirle. Arrojáronle de la casa: vagó algunos meses medio desnudo y hambriento por la ciudad. Por fin, una prima de su padre, mujer devota que poseía algunos ahorros, lo recogió, y oyendo que su sobrino tenía ganas de estudiar, y ser hombre de carrera, se obligó a pagársela, enviándole a Madrid, pero a condición de que, una vez licenciado, tomaría las órdenes y se haría sacerdote.</p>
@@ -1642,7 +1676,7 @@
 
 			</div>
 			<div n="36" type="chapter" xml:id="ne0212_chap36">
-				<head>EXPERIENCIAS Y EFUSIONES</head>
+				<head xml:id="ne0212_head_045">EXPERIENCIAS Y EFUSIONES</head>
 				<p>LOS niños escuchan con prevención y hostilidad los consejos de los maestros. En cambio, una palabra sensata, vertida por un compañero en medio de sus juegos, suele hallar eco en su alma.</p>
 				<p>¿Serán distintos los hombres? No lo sé; pero yo, cuando quiero insinuar una verdad, lo hago poniéndoles familiarmente la mano sobre el hombro y diciéndosela al oído.</p>
 				<milestone unit="section"/>
@@ -1884,9 +1918,9 @@
 
 			</div>
 			<div type="part">
-				<head>El gobierno de las mujeres</head>
+				<head xml:id="ne0212_head_046">El gobierno de las mujeres</head>
 				<div n="37" type="chapter" xml:id="ne0212_chap37">
-					<head>I</head>
+					<head xml:id="ne0212_head_047">I</head>
 					<p>SI el domingo llueve, suelo pasar la tarde en el teatro, y si en los teatros no se representa nada digno de verse, me encamino a casa de mi vieja amiga doña Carmen Salazar, la famosa poetisa que todo el mundo conoce.</p>
 					<p>Habita un principal amplio y confortable de la plaza de Oriente, en compañía de su único hijo Felipe y de su nuera. No tiene nietos, y puede creerse que ésta es la mayor desventura de su vida, porque adora a los niños.</p>
 					<p>Nadie ignora en España que la Salazar (como se la llama siempre) ha obtenido algunos triunfos en el teatro y que sus poesías líricas merecen el aplauso de los doctos, que se aproxima a los ochenta años, y que hace más de treinta que ha dejado de escribir. Pero sólo los amigos sabemos que a pesar de su edad y de ciertas rarezas, por ella disculpables, conserva lúcida su inteligencia, y que esta lucidez, en vez de mermar, aumenta gracias a la meditación y al estudio, que su conversación es amenísima, y nadie se aparta de ella sin haber aprendido algo.</p>
@@ -1930,7 +1964,7 @@
 					<p>—Bueno—replicó doña Carmen riendo—, esos piropos metafísicos no me los diga usted a mí. Déjelos para las jóvenes y hermosas..., como esta que ahora entra.</p>
 				</div>
 				<div n="38" type="chapter" xml:id="ne0212_chap38">
-					<head>II</head>
+					<head xml:id="ne0212_head_048">II</head>
 					<p>La que entraba en aquel momento era su hija política, una hermosa mujer, en efecto, aunque tallada en colosal, y, por tanto, no enteramente de mi gusto. Alta y corpulenta, con grandes ojos de ternera como la Juno homérica, la nariz aquilina, los cabellos negros y ondeados, los labios rojos y un poco colgante el inferior, dondequiera que iba lograba atraer sobre sí la atención de los hombres. Yo encontraba su fisonomía demasiado inmóvil, una falta de expresión en ella que acusaba desproporción entre el cuerpo y el alma. Pasaba ya de los treinta años, y, no obstante, su ingenuidad era proverbial, rayaba en la tontería. Doña Carmen la adoraba, tal vez por esto mismo, porque tenía un espíritu enteramente infantil. Dentro de aquel cuerpo gigante latía el corazón de una niña de doce o catorce años.</p>
 					<p>Se acercó a su suegra y la besó cariñosamente después de saludarme. En pos de ella entraron dos caballeros. Uno de ellos, muy conocido mío y de todo el mundo, era el ilustre Pareja, el sabio antropólogo y sociólogo, cuya levita le ha hecho famoso en todo Madrid. El sombrero de copa viejo y despeinado en la mano, el alto y huesudo torso inclinado ceremoniosamente hacia adelante, el rostro contraído por una sonrisa de suficiencia condescendiente, dejando caer sus palabras como otras tantas piedras preciosas destinadas a enriquecer y adornar la existencia del género humano.</p>
 					<p>—Embargado de emoción al poner el pie en el templo del arte, saludo a la estrella más brillante del firmamento poético, y hago votos porque su luz no se extinga jamás.</p>
@@ -2028,7 +2062,7 @@
 					<p>—¡Ya lo creo que quiero! Quiero que la mujer sea quien únicamente se presente en los tribunales, que éstos se hallen formados exclusivamente por mujeres, que sean mujeres los abogados y procuradores..., y quiero que, mientras tanto, se queden ustedes en casa, sin meterse en cosas que no les incumben.</p>
 				</div>
 				<div n="39" type="chapter" xml:id="ne0212_chap39">
-					<head>III</head>
+					<head xml:id="ne0212_head_049">III</head>
 					<p>Esta bomba explosiva no produjo todos los efectos desastrosos que eran de esperar por la entrada súbita de dos caballeros. El uno era Felipe, hijo de la poetisa, hombre que frisaba en los cuarenta años, corpulento al tenor de su esposa, de fisonomía franca y jovial, un poco torpe en sus movimientos, como si se hubiese criado en el campo, y no muy esmerado en el aliño de su persona. Pasaba por arquitecto distinguido, ganaba mucho dinero y respetaba de tal modo a su madre que apenas se atrevía a emitir una opinión en su presencia.</p>
 					<p>El otro era su amigo íntimo Roberto Medina, conde de Sobeyana, que contaba algunos más años que él, disimulados con maravilloso arte. Alto, delgado, de noble porte y desenvueltos modales, vistiendo con refinada pulcritud, era el reverso aparente de su amigo, y quizás por esta oposición se mantenía firme su amistad. Antiguo diplomático, hombre de mundo, de palabra irónica y temperamento disimulado, procurando siempre hacerse agradable, y consiguiéndolo sólo a medias.</p>
 					<p>Doña Carmen le recibió con afectada cortesía, no con la franqueza cariñosa que usaba con sus amigos predilectos. Se sentaron formando círculo con nosotros, y observé que el conde maniobró hábilmente para colocarse al lado de Raimunda.</p>
@@ -2115,7 +2149,7 @@
 				</div>
 			</div>
 			<div n="40" type="chapter" xml:id="ne0212_chap40">
-				<head>Último paseo del doctor Angélico</head>
+				<head xml:id="ne0212_head_050">Último paseo del doctor Angélico</head>
 				<p>AUNQUE la enfermedad había hecho ya progresos terribles, y era grande su debilidad, todavía se obstinaba Jiménez en pasear. En uno de los últimos días fuí a su casa, y, como siempre, me invitó a dar una vuelta por los contornos. Era ya bastante tarde; así que no pudimos alejarnos mucho. Cuando regresamos, la noche estaba cerrando: sólo allá en el horizonte se advertía una débil claridad crepuscular que hacía más negra la llanura. Nos aproximábamos a las casas del barrio habitado por mi amigo, cuando vimos venir hacia nosotros una mujer que con grandes voces festejaba a un niño de pocos meses que llevaba entre los brazos: «¿Quién es el sol de mi vida? ¿Quién es el rey de la tierra? ¡Di, lucero!, ¡di, clavel! ¿A quién adora su madre? ¿Quién es la alegría?, ¿quién es la gloria?»</p>
 				<p>Y tales gritos iban seguidos de sonoros besos y fuertes zarandeos que el tierno infante soportaba pacíficamente, agradeciéndolos en el fondo de su corazoncito, pero sin manifestarlo de un modo ostensible. Y cuanto más reservado se mostraba el infante, más arreciaba la madre con sus gritos y zarandeos. Cruzó a nuestro lado sin vernos; tal era su entusiasmo. Jiménez y yo nos detuvimos y la seguimos con la vista sonrientes y satisfechos. A larga distancia todavía se escuchaban sus gritos amorosos.</p>
 				<p>—Contempla a esa madre con su hijo entre los brazos—profirió Jiménez—. ¡Qué fuerte magnetismo los atrae! ¡Cómo suenan sus besos! ¡Cuán ciertos están de su amor!... ¡Ah!, si en esta breve y mísera existencia sólo estamos ciertos de lo que amamos, amando a Dios, no dudaríamos de que existe.</p>

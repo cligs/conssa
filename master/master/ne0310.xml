@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La hermana San Sulpicio</title>
-				<title type="sub"></title>
+				
 				<title type="short">Hermana</title>
-				<title type="idno">
-					<idno type="bne">XX2118257</idno>
-					<idno type="viaf">133145857825423020967</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1035048</idno>
-					<idno type="viaf">61554068</idno>
-					<name type="short">Valdes</name>
-					<name type="full">Armando Palacio Valdés</name>
+					<name type="short" ref="#Valdes"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2686</measure>
@@ -141,13 +131,88 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0310</idno>
+						<idno type="cligs">ne0310</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, emiferro, r1.0, <date when="2014">2014</date>, <idno>14388</idno>, <ref target="https://www.epublibre.org/libro/detalle/14388"/>.</bibl>
-				<bibl type="print-source">Editorial Librería general de Victoriano Suárez, Madrid, <date when="1899">1899</date></bibl>
-				<bibl type="edition-first"><date when="1899">1899</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La hermana San Sulpicio</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2118257.html">XX2118257</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/133145857825423020967/">133145857825423020967</idno>
+				</idno>
+				</title>
+					<author xml:id="Valdes">
+						<name type="full"><forename>Armando</forename> <surname>Palacio Valdés</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736 - IO 9737">IO 9736 - IO 9737</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118789252">118789252</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q645141/">Q645141</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1035048.html">XX1035048</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/61554068/">61554068</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, emiferro, r1.0, <date when="2014">2014</date>, <idno>14388</idno>, <ref target="https://www.epublibre.org/libro/detalle/14388"/>.</bibl>
+					<bibl type="print-source">Editorial Librería general de Victoriano Suárez, <pubPlace>Madrid</pubPlace>, <date when="1899">1899</date></bibl>
+					<bibl type="edition-first"><date when="1899">1899</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title>: 	<title type="sub">novela</title> <date when="1912">1912</date>, <publisher>Sopena</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1349132624" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1349132624"/> </bibl>
+						<bibl type="further-edition"><title type="main">La hermana San Sulpicio</title>: 	<title type="sub">novela</title> <date when="1912">1912</date>, <publisher>Ramón Sopena</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="464734444" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464734444"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1912">1912</date>, <publisher>Thomas Nelson and Sons</publisher> <pubPlace>París [u.a.]</pubPlace> 		<idno type="ppn" n="464330769" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464330769"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">La hermana San Sulpicio</title> <date when="1912">1912</date>, <publisher>Holt</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="083966978" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083966978"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1913">1913</date>, <publisher>Nelson</publisher> <pubPlace>Paris [u.a.]</pubPlace> 		<idno type="ppn" n="196540429" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=196540429"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1915">1915</date>, <publisher>Thomas Nelson and Sons</publisher> <pubPlace>París</pubPlace> 		<idno type="ppn" n="464734592" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464734592"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Hermana San Sulpicio</title>: 	<title type="sub">novela</title> <date when="1920">1920</date>, <publisher>Ed. Pueyo</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1397235322" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1397235322"/> </bibl>
+						<bibl type="further-edition"><title type="main">La hermana San Sulpicio</title> <date when="1920">1920</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099859289" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099859289"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1923">1923</date>, <publisher>Nelson</publisher> <pubPlace>Paris [u.a.]</pubPlace> 		<idno type="ppn" n="1134335792" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134335792"/> </bibl>
+						<bibl type="further-edition"><title type="main">La hermana San Sulpicio</title> <date when="1923">1923</date>, <publisher>Nelson</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="083039473" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083039473"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1924">1924</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1134336454" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134336454"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1924">1924</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="585161488" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=585161488"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1924">1924</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="534507719" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=534507719"/> </bibl>
+						<bibl type="further-edition"><title type="main">La hermana San Sulpicio</title> <date when="1924">1924</date>, <publisher>Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464331242" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464331242"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Hermana San Sulpicio</title> <date when="1925">1925</date>, <publisher>Ed. Pueyo</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="534511422" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=534511422"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1928">1928</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1506566650" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1506566650"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1928">1928</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1150471077" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1150471077"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1928">1928</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="663110742" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=663110742"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1928">1928</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="66311070X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=66311070X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La hermana San Sulpicio</title>: 	<title type="sub">novela</title> <date when="1929">1929</date>, <publisher>Ed. Pueyo</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="082910278" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=082910278"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title>: 	<title type="sub">comedia en tres actos</title> <date when="1930">1930</date>, <publisher>Prensa Moderna</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="88255784X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=88255784X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio ...</title> <date when="1930">1930</date>, <publisher>Prensa moderna</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="583721001" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=583721001"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1944">1944</date>, <publisher>Espasa-Calpe Argentina, s.a</publisher> <pubPlace>Buenos Aires;Mexico</pubPlace> 		<idno type="ppn" n="731824822" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=731824822"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1945">1945</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465178251" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465178251"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">La soeur Saint-Sulpice</title>: 	<title type="sub">roman</title> <date when="1947">1947</date>, <publisher>Nouvelles Ed. Latines</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="1130595056" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1130595056"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1947">1947</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="266307590" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=266307590"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Marta y Maria. José. Riverita. Maximina. El cuarto Poder. La Hermana San Sulpicio. La Aldea perida. Los Majos de Cádiz. La Alegria del Capitán Ribot. Tristán o el pesimismo. Papele del doctor Angelico. La hija de Natalia. Santa Rogelia. Sinfonia pastoral</title> <date when="1948">1948</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1145121861" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1145121861"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1951">1951</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="583720285" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=583720285"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Andalusierin</title>: 	<title type="sub">Roman</title> <date when="1955">1955</date>, <publisher>List</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="1617583316" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1617583316"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1955">1955</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="609645412" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=609645412"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1955">1955</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="469032685" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469032685"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Andalusierin</title>: 	<title type="sub">Roman</title> <date when="1955">1955</date>, <publisher>Paul List</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="465193870" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465193870"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Andalusierin</title>: 	<title type="sub">Palacio Valdés, Armando ; Roman. (Aus d. Span. v. Gerhard Wolf u. Hans König)</title> <date when="1955">1955</date>, <publisher>List</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="44307710X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44307710X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Hermana San Sulpicio</title> <date when="1955">1955</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="223933872" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=223933872"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Marta y María. José. Riverita. Maximina. El cuarto poder. La hermana San Sulpicio. La aldea perida. Los majos de Cádiz. La alegría del Capitán Ribot. Tristán o el pesimismo. Papeles del doctor Angélico. La hija de Natalia. Santa Rogelia. Sinfonía pastoral</title> <date when="1956">1956</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1144460557" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1144460557"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Marta y Maria. José. Riverita. Maximina. El cuarto Poder. La Hermana San Sulpicio. La Aldea perida. Los Majos de Cádiz. La Alegria del Capitán Ribot. Tristán o el pesimismo. Papele del doctor Angelico. La hija de Natalia. Santa Rogelia. Sinfonia pastoral</title> <date when="1959">1959</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="107161312X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=107161312X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Hermana San Sulpicio</title> <date when="1959">1959</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1071502808" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1071502808"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1962">1962</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1184318743" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1184318743"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1962">1962</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="521368081" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521368081"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1964">1964</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1177392208" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177392208"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1967">1967</date>, <publisher>Bruguera</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="65480799X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=65480799X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1967">1967</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="571382649" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=571382649"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Marta y Maria. José. Riverita. Maximina. El cuarto Poder. La Hermana San Sulpicio. La Aldea perida. Los Majos de Cádiz. La Alegria del Capitán Ribot. Tristán o el pesimismo. Papele del doctor Angelico. La hija de Natalia. Santa Rogelia. Sinfonia pastoral</title> <date when="1968">1968</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1177466325" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177466325"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1970">1970</date>, <publisher>Bruguera</publisher> <pubPlace>Barcelona [u.a.]</pubPlace> 		<idno type="ppn" n="1167713133" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1167713133"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1975">1975</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1609874730" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1609874730"/> 		<idno type="isbn" n="8423900762"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1980">1980</date>, <publisher>Porrúa</publisher> <pubPlace>México</pubPlace> 		<idno type="ppn" n="46654801X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46654801X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La Hermana San Sulpicio</title> <date when="1981">1981</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="233019855" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233019855"/> 		<idno type="isbn" n="8423900762"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La hermana San Sulpicio</title> <date when="1988">1988</date>, <publisher>Video Mercury Films</publisher> <pubPlace>[s. l.]</pubPlace> 		<idno type="ppn" n="644190078" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=644190078"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La Hermana San Sulpicio</title> <date when="1988">1988</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="265688795" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=265688795"/> 		<idno type="isbn" n="8423900762"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Las tres novelas andaluzas: La hermana San Sulpicio, Los Majos de Cádiz, Los Cármenes de Granada</title> <date when="1995">1995</date>, <publisher>Grupo Ed. Asturiano</publisher> <pubPlace>Oviedo</pubPlace> 		<idno type="ppn" n="219975256" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=219975256"/> 		<idno type="isbn" n="8488071299"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -160,6 +225,14 @@
 				<p>Escrita en primera persona, la obra se sitúa en España, alrededor de 1870, y está considerada como una de las mejores y más populares novelas de Palacio Valdés. Entretenida, graciosa, pulcramente escrita, de composición irreprochable, abunda en hermosas y acertadas descripciones de fiestas, corridas de toros, «cante jondo», patios y rejas sevillanos, el Guadalquivir y sus alrededores, todo lleno de luz y color. Su mayor encanto radica en la sencillez de su trama y en la ausencia de problemas religiosos, pese a que el tema podría tentar a ello.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736" key="IO 9736" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -190,7 +263,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela sentimental</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">2</term>
@@ -228,6 +301,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-09-15" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -235,7 +309,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0310_chap1">
-				<head>I: A LAS AGUAS DE MARMOLEJO</head>
+				<head xml:id="ne0310_head_000">I: A LAS AGUAS DE MARMOLEJO</head>
 				<p>Quiero contar la historia puntual de un episodio de mi vida que no deja de ofrecer algún interés; aunque mi impericia en el arte de escribir quizá llegue a quitárselo. Los sucesos que voy a confiar al papel son tan recientes, que el eco de sus vibraciones aún no se ha apagado en mi alma. Esto hará seguramente más confusa la narración. No han tenido tiempo a depositarse los sedimentos y no es fácil sumergir en esta época importante de mi vida la mirada y distinguir lo que debe tomarse y dejarse para hacer comprensivas y gratas estas confidencias. Pero, en cambio, palpitará en ellas la verdad, y a su mágico influjo tal vez se disipen y se borren las infinitas manchas que mi pluma habrá dejado caer.</p>
 				<p>Ante todo, es bien que os informe de quién soy, cuál es mi patria y mi condición. Estadme atentos.</p>
 				<p>Confieso que soy gallego, del riñón mismo de Galicia, pues que nací en un pueblecillo de la provincia de Orense, llamado Bollo. Mi padre, boticario de este pueblo, no tiene más hijo que yo, y ha labrado para mí una fortuna que, si en Madrid significa poco, en Bollo nos constituye casi en potentados. Cursé la segunda enseñanza en Orense, y la facultad de medicina en Santiago. Mi padre hubiera deseado que fuese farmacéutico, pero nunca tuve afición a machacar y envolver drogas. Además, en el instituto de Orense observé que mis compañeros tenían por más noble ejercicio el de la medicina, y esto me decidió enteramente a desviarme de la profesión de mi padre. Así que hube terminado la carrera, solicité y obtuve de él, no sin algún trabajo, la venia para cursar el año del doctorado en Madrid, y a la Corte me vine, donde en vez de dar consistencia a mis conocimientos, no muy seguros por cierto, en las ciencias médicas, perdí bastante tiempo en los cafés, y lo que es aún peor, contraje la funesta manía de la literatura. Quiso mi suerte que fuese a dar con mis huesos a una casa de huéspedes donde alojaba también un autor dramático al por menor, esto es, de los que fabrican piezas para los teatros por horas, el cual me comunicó al punto su inmensa veneración por el arte de recrear al público durante tres cuartos de hora, y un desprecio profundo por todo lo que respetaba y ponía sobre la cabeza anteriormente, por las ciencias exactas y naturales y por los hombres que las profesaban. Collantes, que así se llamaba el poeta, sonreía, no ya con desprecio, sino con verdadera lástima, cuando le hablaba de mis sabios maestros de Santiago, y hasta una vez tuvo la crueldad de tirarme de la lengua en el café delante de otros compañeros, literatos también, para que desahogase mi entusiasmo por Tejeiro y otros que a mí me parecían eminentes profesores. Dejáronme hablar cuanto quise, y cuando más acalorado estaba en el panegírico, soltaron a reír como locos, con lo cual quedé fuertemente avergonzado y confuso. Después que se hartaron de reír, pasaron a tratar de sus asuntos de teatro, pero todavía al despedirse me dijo uno de ellos: «Adiós, Sanjurjo, hasta la vista; otro día hablaremos con más espacio del Sr. Tejeiro», lo que hizo estallar de nuevo en carcajadas a sus amigos. La broma llegó al punto de que cuantas veces me encontraban en la calle, nunca dejaban de preguntarme por la salud de Tejeiro; y esto duró algunos meses.</p>
@@ -317,7 +391,7 @@
 				<p>En esto íbamos llegando ya a la estación de Arjonilla. Cuando paró el tren, nuestra víctima se apresuró a salir sin despedirse, dio un gran golpe a la portezuela y no volvimos a verle más.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0310_chap2">
-				<head>II: CONOZCO A LA HERMANA SAN SULPICIO</head>
+				<head xml:id="ne0310_head_001">II: CONOZCO A LA HERMANA SAN SULPICIO</head>
 
 				<p>El ómnibus saltaba por encima de las piedras sacudiéndonos en todos sentidos, haciéndonos a veces tocar con la cabeza en el techo; yo llegué a besar, en más de una ocasión, con las narices el rostro mofletudo de D. Nemesio. El empedrado no es el género en que más se distingue Marmolejo. Por las ventanillas podíamos tocar con la mano las paredes enjalbegadas de las casas. El dueño de la Fonda Continental, hombre de mediana edad y estatura, bigote grande y espeso, ojos negros y dulces, no apartaba la vista de nosotros, fijándola cuándo en uno, cuándo en otro, con expresión atenta y humilde, parecida a la de los perros de Terranova. Cuando quiso Dios al fin que el coche parase, saltó a tierra muy ligero y nos dio la mano galantemente para bajar. Yo no acepté por modestia.</p>
 				<p>La Fonda Continental era una casita de un solo piso, donde se verían muy apurados para alojarse europeos, africanos, americanos y oceánicos, aunque viniese un solo hombre por cada continente. En el patio, con pavimento de baldosín rojo y amarillo, había cuatro o cinco tiestos con naranjos enanos. La habitación en que me hospedaron era ancha por la boca, baja y cerrada por el fondo, en forma de ataúd, lo cual revelaba en el arquitecto que construyó la casa ciertos sentimientos ascéticos que no he podido comprobar. La cama igualmente parecía descender en línea recta del lecho que usó San Bruno.</p>
@@ -396,7 +470,7 @@
 				<p>—¡Diablo, diablo! —exclamé para mí. —¡He venido a parar a casa de un loco!</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0310_chap3">
-				<head>III: ME ENAMORO DE LA HERMANA SAN SULPICIO</head>
+				<head xml:id="ne0310_head_002">III: ME ENAMORO DE LA HERMANA SAN SULPICIO</head>
 
 				<p>Dos días después, el señor Paco, yendo conmigo de paseo otra vez, me reveló la mitad de su secreto. Los alemanes no podían vencer porque tenía pensado ofrecer a la Francia un sistema de cañones que daba al traste con todos los inventos que hasta ahora se habían realizado en materia de artillería. Era un cañón el suyo extraordinario, mejor dicho, maravilloso; un hombre lo podía subir a la montaña más alta.</p>
 				<p>—No será de hierro.</p>
@@ -573,7 +647,7 @@
 				<p>Y dando un tirón se alejó, no sin dirigir una rápida mirada de temor a la madre.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0310_chap4">
-				<head>IV: PETENERAS Y SEGUIDILLAS</head>
+				<head xml:id="ne0310_head_003">IV: PETENERAS Y SEGUIDILLAS</head>
 
 				<p>Oh diablo! ¿Estaría galanteando a la hermana San Sulpicio? La impresión que saqué de esta plática por lo menos fue ésa. Y si debo declarar la verdad entera, me parecía que la monja escuchaba los galanteos sin gran horror.</p>
 				<p>La idea despertó en mí una sensación extraña en que el placer se mezclaba con el susto. Fue una sensación viva, un estremecimiento voluptuoso junto con la sorpresa, el temor, el remordimiento, que me puso inmediatamente inquieto; pero con una inquietud suave, deliciosa. Yo tengo un temperamento esencialmente lírico, como he tenido el honor de manifestar, y todos adivinarán fácilmente los estragos que una idea semejante puede hacer en tales temperamentos. No hay joven poeta que no haya soñado alguna vez con enamorar a una monja y escalar las tapias de su convento en una noche de luna, tenerla entre sus brazos desmayada, bajarla por una escala de seda, montar con ella en brioso corcel y partir raudos como un relámpago al través de los campos, a gozar de su amor en lugar seguro. No sé si este sueño poético está inspirado por el espectáculo del <seg rend="italic">Don Juan Tenorio</seg>, o si nace espontáneamente en los corazones líricos; pero ninguno de ellos me negará que lo ha tenido, y yo el primero. Puede considerarse, pues, la emoción y el anhelo con que descubrí aquel sacrílego galanteo.</p>
@@ -818,7 +892,7 @@
 				<p>Lo que inmediatamente preví sucedió, en efecto. A la mañana siguiente pude verlas en misa y hablé algunas palabras con ellas. En todo el día después no logré echarles la vista encima, ni en los pasillos de casa ni en el manantial. Al día siguiente, mientras estábamos bebiendo el agua, un coche las llevó a la estación para tomar el tren de Sevilla.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0310_chap5">
-				<head>V: A SEVILLA</head>
+				<head xml:id="ne0310_head_004">V: A SEVILLA</head>
 
 				<p>GRANDE fue la tristeza y desconsuelo que sentí al tener noticia de la marcha precipitada, o más bien fuga, de las monjas. Bien imaginé que debió de ser causada por la indiscreción y necedad de D. Nemesio, a quien dediqué desde entonces en mi pecho tanto odio por lo menos como debía de profesarle el juez catalán que con nosotros había viajado. Nunca más quise jugar al billar con él; y eso que llegó a ofrecerme el mísero cuatro rayas. ¡Cuatro rayas a mi, que, dando un trallazo, me salen palos por todos lados!</p>
 				<p>En cambio, me sentí más inclinado desde entonces al malagueño, o para hablar más propiamente, me fue menos antipático. Después de todo, si a él le gustaba también la hermana, nuestra desgracia era común. Verdad es que la soportaba con más filosofía. Cuando supo la ocurrencia de D. Nemesio, rió largamente y la glosó con muchos y sabrosos comentarios; pero no volvió a acordarse de las monjas. Si yo le sacaba la conversación me respondía en un tono tan frívolo y aun se corría a veces a tan libres y groseras frases que me herían. Debo confesar que allá, en el fondo, el disgusto se mezclaba con la satisfacción de advertir que la graciosa hermana sólo pasajeramente había impresionado su corazón.</p>
@@ -1000,7 +1074,7 @@
 				<p>Matildita frunció la frente con severidad, y con su manecita hizo un ademán dignísimo.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0310_chap6">
-				<head>VI: EL PATIO DE LAS DE ANGUITA</head>
+				<head xml:id="ne0310_head_005">VI: EL PATIO DE LAS DE ANGUITA</head>
 
 				<p>Que se le ofrecía a usted, caballero?</p>
 				<p>—Don Sabino el capellán… ¿Se puede hablar con él? —articulé con trabajo, mirando a la monja que asomó la cabeza por la ventanita sin reja que había al lado de la puerta.</p>
@@ -1239,7 +1313,7 @@
 				<p>—Pues ha hecho usted bien en venir, porque en Sevilla sólo hay tres cosas dignas de verse: la catedral, el alcázar y el patio de las de Anguita —repuso con graciosa solemnidad.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0310_chap7">
-				<head>VII: PREPARATIVOS PARA EL BLOQUEO</head>
+				<head xml:id="ne0310_head_006">VII: PREPARATIVOS PARA EL BLOQUEO</head>
 
 				<p>MATILDITA, como he dicho antes, debía de sospechar el deplorable resultado de mi entrevista con el capellán del colegio del Corazón de María. No hacía más que dar vueltas en torno mío y tirarme cuanto podía de la lengua, a fin de cerciorarse de la verdad del caso, o por ventura para meter su naricita en mis negocios y satisfacer el inmoderado afán de dar consejos que la atormentaba. Como no tenía gran interés en ocultar la derrota, pues ya se había disipado en parte la vergüenza que me produjera, concluí por confesarlo todo. Fuertes aspavientos de la chiquilla. No cabía en sí de indignación. Me hizo repetir varias veces la repugnante grosería usada por el clérigo conmigo, y me dijo que ella no la hubiera sufrido. Esto no me pareció bien. Pero le hice ver en seguida los inconvenientes que habría traído consigo cualquier resolución violenta en tal momento, y concluyó por convenir en que mejor había sido «el despresiarle». Después de quedar unos instantes silenciosa en actitud reflexiva, abrió la llave de los consejos. En su opinión, lo que yo debía hacer ahora era presentarme a la madre de Gloria, pintarle mi pasión por su hija, echarme a sus pies y suplicarle que la sacase del convento y nos permitiese casarnos y ser felices. El consejo era poco práctico, y me convenció de que los amores del aspirante a telégrafos habían dejado en el espíritu de Matildita una huella indeleble de romanticismo.</p>
 				<p>Mejor lo tenía yo pensado. En esto de ver las cosas como son y conseguir lo que nos proponemos, me parece que nadie saca ventaja a los que hemos nacido en los valles pintorescos de Galicia. Ya diré más adelante lo que mi mente, apretada por la necesidad, urdió para alcanzar lo que apetecía.</p>
@@ -1475,7 +1549,7 @@
 				<p>Aquella corta e insignificante escena me produjo mal efecto. Pareciome que el conde era un padre muy tierno sólo mientras no se tocase a sus gustos y placeres.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0310_chap8">
-				<head>VIII: CON PERDÓN DE USTEDES, PELO LA PAVA</head>
+				<head xml:id="ne0310_head_007">VIII: CON PERDÓN DE USTEDES, PELO LA PAVA</head>
 
 				<p>Comenzaba el calor a dejarse sentir. Estábamos a mediados de Junio. El sol, desde las cinco de la mañana, envolvía a la ínclita ciudad en una caricia viva y prolongada hasta las siete de la tarde, enmedio de un cielo puro y flamígero. La angostura y tortuosidad de las calles no nos preservaba enteramente de sus ardores. Por aquellas estrechas ranuras entraba su luz como una llamarada, como un latigazo de fuego que encendía el rostro y caldeaba la cabeza. Había llegado a cogerle miedo a este gran sol feroz de Andalucía, y salía poco de casa.</p>
 				<p>—Diga usted, Matildita, ¿hace más calor que éste en Sevilla?</p>
@@ -1597,7 +1671,7 @@
 				<p>Me retiré de la reja con pena, ebrio de amor y de alegría. Tan mareado iba, que a los pocos pasos encontré al sereno y le di dos pesetas. Después me pesó, porque no había necesidad, según lo que Gloria me había dicho. Tampoco reparé esta vez si las estrellas centelleaban allá arriba con suave fulgor, ni si la luz de la luna se filtraba por el laberinto de calles oscuras, manchándolas aquí y allá con jirones de plata. Llevaba yo dentro del alma un sol radiante que me ofuscaba y me impedía observar tales menudencias.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0310_chap9">
-				<head>IX: HAGO AMISTAD CON UN BENDITO SEÑOR</head>
+				<head xml:id="ne0310_head_008">IX: HAGO AMISTAD CON UN BENDITO SEÑOR</head>
 
 				<p>RECIBÍ al día siguiente una carta de D. Sabino el capellán, invitándome a que pasara por su casa. Era para decirme, con mucho misterio, que Gloria había salido del convento. Le di las gracias por la noticia, y, haciéndome cargo de que esperaba algo más que esto, le pregunté si tenía intención de permanecer en el cargo que ocupaba, o si aspiraba a otro. Me confesó su ardiente deseo de un beneficio en la catedral. Le prometí escribir a mi tío, y en efecto, así lo hice. Por cierto que me contestó severamente, preguntándome si no creía que eran bastantes las cien recomendaciones que todos los días recibía, para que un sobrino viniese también a concluir con su paciencia. No le di cuenta, por supuesto, a D. Sabino de esta carta.</p>
 				<p>El coloquio de la noche siguiente, si no tan prolongado, no fue menos dulce para mí que el de la anterior. Gloria, más fértil en astucias que el prudente Ulises, tenía ya un proyecto en la cabeza. Expresándole yo con tristeza mi desconfianza de que algún día llegáramos a unirnos, porque su madre no lo consentiría, exclamó riendo:</p>
@@ -1757,7 +1831,7 @@
 				<p>Don Oscar no dijo una palabra. Pero al salir arrogante y altanero del despacho, resuelto a cualquier violencia si se me provocaba a ella, todavía sentí su mirada luciente y acerada en el cogote.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0310_chap10">
-				<head>X: TROPIEZO CON UN GRAVE ESCOLLO</head>
+				<head xml:id="ne0310_head_009">X: TROPIEZO CON UN GRAVE ESCOLLO</head>
 
 				<p>Cuando se hubieron pasado los primeros momentos de sorpresa y de cólera y, ya en la calle, pude reflexionar, caí en un profundo abatimiento. Creí que todo había venido al suelo, todo lo que constituía mi felicidad. La intención del malagueño no podía ocultárseme. Lo que seguiría después de doña Tula y el bendito señor se enterasen de mi intriga podía sospecharlo. Maldije la hora en que había conocido a aquel antipático sujeto, y le deseé de todas veras la muerte. Hecho lo cual, me dije con heroica decisión que yo no renunciaría por él ni por todos los malagueños diseminados por el globo al amor de Gloria y que nos veríamos las caras.</p>
 				<p>Sin embargo, el horizonte se presentaba muy oscuro, había que reconocerlo. Era menester comenzar de nuevo y urdir otras intrigas. Se urdirían. ¡Vaya si se urdirían! Pero ¿cómo empezar, si cortaban toda clase de relaciones entre Gloria y yo y se la llevaban a otro sitio, a un convento quizá? Pues la seguiría adondequiera que fuese y armaría un tejido tal de invenciones, que concluyesen por marearlos y hacerles ceder. Ceder, ¡ay! Si no estuviesen los cien mil pesos de Gloria por el medio, ya lo creo que cederían. «Pues yo no renuncio tampoco a ellos, aunque me hagan tajadas —dije con energía, entre dientes—. Podría renunciar si no se tratase más que de mí, y aun, si se quiere, de ella, pero hay que tener presente que mañana tendremos hijos, y que yo no puedo, en conciencia, despojarlos de lo que es suyo». Pensando en estos hijos nonatos, despojados sin culpa del haber materno, me enternecí. Pasé aquel día en un estado de fuerte excitación, ideando mil monstruosidades y majaderías. Por la noche, al llegar las once, a sabiendas de que Gloria no podía estar en la reja, las piernas me llevaron a la calle de Argote de Molina. Calcúlese mi sorpresa y alegría cuando al pasar por delante de la casa vi la ventana abierta y percibí, como todas las noches, blanquear la figura indecisa de mi adorado sueño. Acerqueme con precaución, temiendo una emboscada; pero en seguida me convencí, al escuchar su voz, de que eran infundados mis temores. Me saludó muy enfadada, llamándome chinchoso, feo, ente, fatuo…, ¡gallego! Este era siempre el último insulto y el que, en su opinión, resumía y compendiaba todos los demás. La razón de aquella granizada de denuestos: que hacía diez minutos largos que eran sonadas las once y que esperaba. Quedé estupefacto.</p>
@@ -1927,7 +2001,7 @@
 				<p>Al mismo tiempo me alcé del asiento y salí de la taberna, un poco sorprendido, en verdad, de que Suárez me dejase ir tan tranquilo, pues en nuestra corta plática le había dirigido algunas injurias que merecían explicación.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0310_chap11">
-				<head>XI: ME DEDICO A BUSCAR A PACA</head>
+				<head xml:id="ne0310_head_010">XI: ME DEDICO A BUSCAR A PACA</head>
 
 				<p>Lo que no se me ocurrió mientras estuve bajo la impresión del latigazo de la cólera, penselo en cuanto me serené un poco y se me acordaron las ideas. Quiero decir que, apenas hube reposado algún tiempo en el lecho, habiéndome despertado a medianoche, al instante se me ofreció con admirable claridad que Gloria no podía cometer una acción tan ruin por capricho. Podía abandonarme, entrar en amores con otro, coquetear, darme cordelejo y reírse. Todo eso estaba en lo verosímil; mas herirme villana y sañudamente sin más pecado que el de amarla, no era creíble. Debía de haber gato encerrado. El acto de aquella noche parecía inspirado en un deseo de venganza, y para vengarse, menester era una ofensa previa. Esta consideración me dio harto consuelo. Propúseme, pues, tan pronto como llegase el día, poner en práctica los medios para deshacer la intriga que, sin duda, había tramado el malagueño contra mí. Comenzó a pesarme de no haberle dado una buena «pateadura»; pero se la prometí para la primera ocasión que se presentase. Y con este pensamiento confortante, el sueño tranquilo de los justos acudió de nuevo a mis sienes, y no me desperté hasta las nueve de la mañana.</p>
 				<p>Vestime con premura y salí a la calle sin saber adónde iba, pero con la resolución incontrastable de ir a alguna parte. Por lo pronto, los pies me llevaron a casa del conde del Padul.</p>
@@ -2143,7 +2217,7 @@
 				<p>—¿Sabuté? —me dijo—. En estos días que viene desjarretao como un toro, me aprovecho.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0310_chap12">
-				<head>XII: PASEO POR EL GUADALQUIVIR</head>
+				<head xml:id="ne0310_head_011">XII: PASEO POR EL GUADALQUIVIR</head>
 
 				<p>Demasiadamente confiado dormí yo aquella noche y dejé transcurrir el día siguiente. Por la tarde, poco antes de oscurecer, me fui a situar al puente de Triana, donde Paca me había dicho que la esperase para darme cuenta del resultado de la carta y de sus gestiones. Era la hora de más animación en aquel paraje. Los obreros y obreras de Triana que trabajaban en Sevilla tornan a sus casas. Los de Sevilla que trabajan en Triana y en la Cartuja hacen lo mismo. Unos y otros se encuentran en el puente, que hierve de transeúntes.</p>
 				<p>Arrimeme perezosamente al petril, de espaldas al río, y contemplé con ojos distraídos aquel ir y venir mareante. El atractivo de mi contemplación eran las caras saladísimas de las cigarreras y trabajadoras de la Cartuja que allí suelen verse. Unas en grupos resonantes de gritos y risas, otras solitarias preocupadas, caminando a paso largo, todas con vistosos trajes de percal y flores en el cabello, pasaron por delante de mí, dirigiéndome alguna vez breves miradas de curiosidad y sorpresa, como si pensasen:</p>
@@ -2366,7 +2440,7 @@
 				<p>¡Hermosa noche andaluza: mientras me quede un soplo de vida vivirás impresa en mi corazón!</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0310_chap13">
-				<head>XIII: DOY UNA BOFETADA QUE PUEDE COSTARME CARA</head>
+				<head xml:id="ne0310_head_012">XIII: DOY UNA BOFETADA QUE PUEDE COSTARME CARA</head>
 
 				<p>TORNARON a reanudarse nuestras sabrosas pláticas a la reja. Por algunos días fui dichoso. Sin embargo, los celos de Gloria no habían desaparecido por completo. Lo mismo era mentar la casa de Anguita que se ponía de mal humor y me hablaba en tono desabrido, por lo cual procuraba ir a ella lo menos posible.</p>
 				<p>En una de estas noches dio un baile el conde del Padul. Isabel hizo esfuerzos muy grandes porque Gloria asistiese, pero todos se estrellaron contra la negativa rotunda de doña Tula. Ni aquella ni yo lo sentimos mucho. Nuestros coloquios valían más que todos los bailes imaginables. Quedamos en que yo sólo iría un rato después de nuestra conversación nocturna. Mas al verme llegar a la reja con el gabán puesto, dejando asomar la corbata blanca y la pechera de la camisa, observé que se esparcía por su rostro una leve nube de tristeza. Me habló durante largo rato distraída, preocupada. Por último, como no era posible que guardara mucho tiempo cualquier sentimiento que la agitase, dijo con una resolución severa, como si esperase oposición y se preparase a reñir:</p>
@@ -2607,7 +2681,7 @@
 				<p>¡Qué no se hace por conservar íntegra esta preciosa piel que nos envuelve!</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0310_chap14">
-				<head>XIV: PRINCIPIO A SER UN HÉROE DE NOVELA</head>
+				<head xml:id="ne0310_head_013">XIV: PRINCIPIO A SER UN HÉROE DE NOVELA</head>
 
 				<p>Me dejaron a la puerta de mi casa. Quise pagar al cochero, pero ellas lo impidieron, y no insistí. Prometiles ir más tarde al café de Silverio, engolosinándolas con empalmar la juerga a mis expensas. Por supuesto, que lo hice. ¡Buena gana tenía de gastarme las pesetas neciamente!</p>
 				<p>Era ya noche cerrada, pero no habían sonado las nueve. Fui a mi cuarto, y para esperar la hora de la cita con Gloria, me tendí un poco sobre la cama a reposar, que harto lo necesitaba. Ello es que eché un sueño, y cuando me desperté sobresaltado y miré el reloj eran más de las nueve y media. Me puse el sombrero y salí corriendo; pero cuando puse el pie en la calle y se me ofreció repentinamente a la imaginación la bofetada del <seg rend="italic">Naranjero</seg> y el peligro que corría, volvime y a toda prisa cambié de traje y de sombrero. Después, caminando con grandes precauciones, mirando a todos lados y procurando ir siempre pegado a algún transeúnte, me dirigí a casa de mi novia. Eran cerca de las diez cuando llegué. La ventana estaba ya cerrada, mas al aproximarme a ella se abrió con estrépito y apareció Gloria con semblante hosco.</p>
@@ -2695,7 +2769,7 @@
 				<p>Yo iba bastante avergonzado, y Gloria mucho más, como puede suponerse. Pero mi plan hasta entonces se desenvolvía con buen éxito, y esto compensaba hasta cierto punto aquella molestia. Por fortuna, llegamos pronto a la Inspección. Allí expuse con firmeza mi querella, apoyada por Gloria, y reclamé la intervención del juez. Al mismo tiempo mandé un recado al conde del Padul por medio de Paca. El juez, a quien se avisó, tuvo la atención de venir por tratarse de una señorita, y delante de él volvimos, como ante el inspector, a exponer nuestro litigio. El tenedor de libros también reclamó. Yo pedí, desde luego, el depósito de Gloria en lugar adecuado, y el juez lo decretó inmediatamente. Como nos hallásemos deliberando sobre esto, presentáronse Isabel y la tía Etelvina, y sin más dilaciones cogieron a Gloria y la hicieron montar en un coche con ellas, llevándola a casa. El conde no había podido venir a causa de su indisposición. En casa de él, como pariente y persona caracterizada, quedó, pues, depositada mi animosa Gloria.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0310_chap15">
-				<head>XV: TROPIEZO DE NUEVO CON EL MALAGUEÑO</head>
+				<head xml:id="ne0310_head_014">XV: TROPIEZO DE NUEVO CON EL MALAGUEÑO</head>
 
 				<p>EL escándalo fue grave y tuvo en Sevilla, con ser gran población, mucha resonancia. Los periódicos se apoderaron de él e hicieron comentarios nada halagüeños para la familia de Gloria. El conde dirigió una carta a su prima, donde cortés, pero enérgicamente, le manifestó que su sobrina no saldría de su casa sino para el altar, y aconsejándole que desistiera, por el buen nombre de ella y de la familia, de querer forzar la voluntad de la joven. No sé si a influjo de esta carta o por temor o vergüenza, doña Tula no dio un paso para reclamar a su hija. El odioso enano, su director, tampoco.</p>
 				<p>Comenzaron para mí días venturosos. El palacio de Padul se me abría a todas horas y siempre hallaba en él grato recibimiento. Se me consideraba ya como de la familia. Por las tardes, después de almorzar, me iba allá, y sentado o montado en una silla (que a tanto llegaba mi confianza), las veía coser o bordar y bromeábamos con alegría. Gloria, que se había puesto de un humor delicioso y hasta creo que engordó en pocos días, gozaba en hacer jugarretas a todo el mundo, pero muy particularmente a mí. La casa, un poco sombría por el abandono del conde, el humor tétrico de la tía Etelvina y el carácter débil de Isabel, había cambiado notablemente de aspecto. Estaba ahora riente, sonora, gozosa, merced al ambiente de franqueza y alegría que mi adorada esparcía en torno suyo. El conde paraba más tiempo en casa. La tía Etelvina, que acostumbraba pasar el día encerrada en su habitación, buscaba ahora la compañía de las jóvenes, y a menudo su rostro de piedra se contraía con una sonrisa al escuchar las salidas de la huéspeda. Hasta los criados servían con más agrado y eran más locuaces.</p>
@@ -2804,7 +2878,7 @@
 				<p>Y, en efecto, a los nueve días pude levantarme, y cuatro después salir a la calle y terminar, como se dirá en el capítulo siguiente, la aventura amorosa que constituye el fondo de esta verídica narración.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0310_chap16">
-				<head>XVI: EN QUÉ PARÓ LA HERMANA SAN SULPICIO</head>
+				<head xml:id="ne0310_head_015">XVI: EN QUÉ PARÓ LA HERMANA SAN SULPICIO</head>
 
 				<p>Pensando en los medios de unirme pronto a Gloria, antes del suceso que acabo de narrar se me había ocurrido una transacción con el maldito enano. Como yo tenía la certidumbre de que éste era el único causante de nuestros males y sospechaba que la razón de oponerse a nuestro casamiento y el empeño de hacer monja a Gloria estribaban en el interés, imaginé que podíamos llegar a un acuerdo. Verdad que acaso pudiera alcanzar la meta de mis deseos sin necesidad de componendas, porque la actitud, pasiva hasta entonces, de doña Tula lo hacía verosímil. Pero ¿quién me aseguraba que de la noche a la mañana no cambiasen totalmente las cosas? Aunque no pudieran encerrar a Gloria en el convento contra su voluntad, porque las autoridades estaban ya sobre aviso, al matrimonio podía oponerse la madre mientras no fuese mayor de edad. Ahora se encontraban, lo mismo ella que don Oscar, amedrentados por la escena escandalosa de la puerta del convento y por la actitud firme del conde del Padul, que inspiraba general temor por su posición y carácter. Mas, si llegaban a vencer este miedo, lo mismo del conde que de la opinión pública, volvería a encontrarse en grave aprieto. Aunque no consiguiesen otra cosa que aplazar el matrimonio, ya era bastante para mi anhelo, que cada día iba siendo mayor. Además, en esta dilación había peligro. Gloria era muy celosa, y cualquier insignificante pretexto podía levantar una reyerta como la de marras y dar al traste con mi felicidad. Sin contar con los acontecimientos imprevistos a que todos nos hallamos sujetos, y más los que esperan con afán cualquier bienandanza.</p>
 				<p>Pesaban estas consideraciones de tal modo en mi ánimo, que me vino la idea de abandonar en las garras de don Oscar, como precioso vellón, la mitad de la dote de Gloria, con tal de unirme pronto a ella y obtener la otra mitad. Confieso que este proyecto duró poco tiempo en la cabeza. ¡La mitad de la dote! ¡Cincuenta mil duros! La idea de desprenderme (los conservaba ya como míos) de esta cantidad exorbitante de duros me produjo tal desasosiego que la abandoné presto por insensata. Y de un golpe rebajé la cifra a la mitad. Si la dejaba de los dos millones veinticinco mil duros, bien podía darse por contento y facilitarme todos los medios para que el cura nos bendijese cuanto más antes. Pero, aunque duró mucho más, tampoco este arreglo consiguió echar hondas raíces en mi espíritu acongojado. Veinticinco mil duros tampoco son un grano de anís. Poníame a considerar la renta que de esta cantidad, bien administrada, se podía obtener, y me aturdía. Colocadas allá, en Bollo, con buenas hipotecas, podían dar cuarenta mil reales al año, sin manchar la conciencia.</p>
@@ -2923,7 +2997,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

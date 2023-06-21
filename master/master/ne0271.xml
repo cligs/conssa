@@ -1,0 +1,1117 @@
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				
+				<title type="short">Blocao</title>
+				
+				<author>
+					<name type="short" ref="#JDFernandez"/>
+				</author>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
+			</titleStmt>
+			<extent>
+				<measure unit="lines">858</measure>
+				<measure unit="divs">11</measure>
+				<measure unit="tokens">23189</measure>
+				<measure unit="chars">135307</measure>
+				<measure unit="size_kb">159</measure>
+				<measure unit="chapters">7</measure>
+				<measure unit="shortStories">0</measure>
+				<measure unit="parts">0</measure>
+				<measure unit="sections">0</measure>
+				<measure unit="divisions">0</measure> 
+				<measure unit="blocks">803</measure> 
+				<measure unit="lg.poems">0</measure> 
+				<measure unit="lg.stanzas">0</measure> 
+				<measure unit="line.verses">0</measure> 
+				<measure unit="heads">10</measure> 
+				<measure unit="stages">0</measure> 
+				<measure unit="sps">0</measure> 
+				<measure unit="paragraphs">791</measure> 
+				<measure unit="abs">2</measure> 
+				<measure unit="fts">0</measure>
+				<measure unit="paragraphs.ds">461</measure>
+				<measure unit="saids">491</measure>
+				<measure unit="narrative.ps">330</measure>
+				<measure unit="punctual_ss">1942</measure> 
+				<measure unit="numerals">45</measure> 
+				<measure unit="puncts">4843</measure> 
+				<measure unit="len.abstract">1126</measure>
+				<measure unit="chapters.len.mean">16229.71</measure>
+				<measure unit="chapters.len.std">12292.58</measure>
+				<measure unit="chapters.len.median">12538.00</measure>
+				<measure unit="chapters.len.iqr">6529.50</measure>
+
+				<measure unit="types">4954</measure>
+
+				<measure unit="ss">1262</measure>
+				<measure unit="ss.num.mean">89.29</measure>
+				<measure unit="ss.num.std">60.38</measure>
+				<measure unit="ss.num.median">78.00</measure>
+				<measure unit="ss.num.iqr">78.00</measure>
+				<measure unit="ss.active.verbs.mean">1.61</measure>
+				<measure unit="ss.active.verbs.std">1.21</measure>
+				<measure unit="ss.active.verbs.median">1.00</measure>
+				<measure unit="ss.active.verbs.iqr">1.00</measure>
+
+				<measure unit="ws">23288</measure>
+				<measure unit="ws.num.mean">3.89</measure>
+				<measure unit="ws.num.std">2.87</measure>
+				<measure unit="ws.num.median">3.00</measure>
+				<measure unit="ws.num.iqr">4.00</measure>
+
+				<measure unit="conjunctions">1176</measure>
+				<measure unit="determiners">3293</measure>
+				<measure unit="nouns">4525</measure>
+				<measure unit="verbs">3248</measure>
+				<measure unit="adverbs">983</measure>
+				<measure unit="adjectives">1038</measure>
+				<measure unit="adpositions">2850</measure>
+				<measure unit="punctuations">4165</measure>
+				<measure unit="pronouns">1832</measure>
+				<measure unit="dates">9</measure>
+				<measure unit="numbers">107</measure>
+				<measure unit="interjections">62</measure>
+
+				<measure unit="ne.persons">321</measure>
+				<measure unit="ne.organizations">46</measure>
+				<measure unit="ne.locations">161</measure>
+				<measure unit="ne.others">18</measure>
+
+				<measure unit="wnlex.noun.plants">23</measure>
+				<measure unit="wnlex.verb.communications">290</measure>
+				<measure unit="wnlex.noun.foods">37</measure>
+				<measure unit="wnlex.verb.possessions">128</measure>
+				<measure unit="wnlex.verb.cognitions">180</measure>
+				<measure unit="wnlex.noun.communications">224</measure>
+				<measure unit="wnlex.noun.states">125</measure>
+				<measure unit="wnlex.verb.statives">781</measure>
+				<measure unit="wnlex.noun.cognitions">168</measure>
+				<measure unit="wnlex.noun.times">212</measure>
+				<measure unit="wnlex.verb.bodys">138</measure>
+				<measure unit="wnlex.noun.persons">579</measure>
+				<measure unit="wnlex.adj.alls">719</measure>
+				<measure unit="wnlex.noun.quantitys">40</measure>
+				<measure unit="wnlex.noun.phenomenons">38</measure>
+				<measure unit="wnlex.verb.creations">114</measure>
+				<measure unit="wnlex.adj.perts">52</measure>
+				<measure unit="wnlex.adv.alls">371</measure>
+				<measure unit="wnlex.noun.processs">15</measure>
+				<measure unit="wnlex.noun.artifacts">548</measure>
+				<measure unit="wnlex.verb.perceptions">165</measure>
+				<measure unit="wnlex.noun.feelings">88</measure>
+				<measure unit="wnlex.verb.weathers">11</measure>
+				<measure unit="wnlex.noun.substances">53</measure>
+				<measure unit="wnlex.noun.shapes">5</measure>
+				<measure unit="wnlex.verb.competitions">42</measure>
+				<measure unit="wnlex.verb.motions">346</measure>
+				<measure unit="wnlex.noun.animals">76</measure>
+				<measure unit="wnlex.noun.acts">261</measure>
+				<measure unit="wnlex.noun.bodys">223</measure>
+				<measure unit="wnlex.noun.objects">90</measure>
+				<measure unit="wnlex.noun.motives">4</measure>
+				<measure unit="wnlex.verb.socials">142</measure>
+				<measure unit="wnlex.noun.groups">187</measure>
+				<measure unit="wnlex.verb.consumptions">65</measure>
+				<measure unit="wnlex.noun.possessions">16</measure>
+				<measure unit="wnlex.noun.Topss">30</measure>
+				<measure unit="wnlex.noun.relations">3</measure>
+				<measure unit="wnlex.noun.attributes">173</measure>
+				<measure unit="wnlex.verb.emotions">88</measure>
+				<measure unit="wnlex.noun.locations">128</measure>
+				<measure unit="wnlex.noun.events">100</measure>
+				<measure unit="wnlex.verb.contacts">177</measure>
+				<measure unit="wnlex.xxxs">15846</measure>
+				<measure unit="wnlex.verb.changes">187</measure>
+			</extent>
+			<publicationStmt>
+				<publisher>CLiGS</publisher>
+				<availability status="free">
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
+				</availability>
+				<date when="2018">2018</date>
+						<idno type="cligs">ne0271</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El blocao</title>
+					<title type="sub">novela de la guerra marroqui</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX5434262.html">XX5434262</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/204210146/">204210146</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4259178-8">4259178-8</idno>
+				</idno>
+				</title>
+					<author xml:id="JDFernandez">
+						<name type="full"><forename>José</forename> <surname>Díaz Fernández</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3566">IP 3566</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118902938">118902938</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q9013806/">Q9013806</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX830113.html">XX830113</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/107010546/">107010546</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.1, Titivillus, <date when="2015">2015</date>, <idno>21782</idno>, <ref target="https://www.epublibre.org/libro/detalle/21782"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1928">1928</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El blocao</title>: 	<title type="sub">novela de la guerra marroquí</title> <date when="1998">1998</date>, <publisher>Viamonte</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="269179437" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269179437"/> 		<idno type="isbn" n="849214226X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El blocao</title>: 	<title type="sub">novela de la guerra marroquí</title> <date when="2013">2013</date>, <publisher>Ediciones del Viento</publisher> <pubPlace>La Coruña</pubPlace> 		<idno type="ppn" n="747399050" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=747399050"/> 		<idno type="isbn" n="9788415374497"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The blockhouse</title>: 	<title type="sub">(el blocao)</title> <date when="2016">2016</date>, <publisher>Aris &amp; Phillips/Oxbow</publisher> <pubPlace>Oxford</pubPlace> 		<idno type="ppn" n="1741950031" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1741950031"/> 		<idno type="isbn" n="9781800345201;1800345208"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El blocao</title>: 	<title type="sub">novela de la guerra marroquí</title> <date when="2021">2021</date>, <publisher>Ediciones del Viento</publisher> <pubPlace>A Coruña</pubPlace> 		<idno type="ppn" n="1765286085" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1765286085"/> 		<idno type="isbn" n="9788418227172"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>.</p>
+		</encodingDesc>
+		<profileDesc>
+			<abstract source="#epublibre">
+				<p>Cuando en 1928 se publicó <seg rend="italic">El blocao</seg>, novela de la guerra marroquí, de inmediato se convirtió un acontecimiento literario. Una novela que en realidad es una colección de relatos hilvanados entre sí por un escenario común, el del ejercito español en el norte de África, que tan bien conocían los españoles de aquella época, pues había sido el lugar de una matanza sin precedentes, el desastre de Annual (junio de 1921). Dice José Esteban en su prólogo: «Desde el momento de su aparición logra un éxito casi sin precedentes. Se traduce al francés, al alemán y al inglés. Quizá le ayudó el ambiente pacifista de moda entonces en toda Europa, cansada de las guerras. Entre nosotros, alcanza en pocos meses tres ediciones y tanto vanguardistas como novelistas sociales saben ver en ella lo que tiene de síntesis de ambas corrientes, lo que le da un valor y unas características especiales. En la corta vida literaria de su autor, <seg rend="italic">El blocao</seg> constituye su gran y casi única obra narrativa. Escrita en un impecable e inimitable estilo es una de las obras mejor escritas de nuestra literatura y, por tanto, una pequeña obra maestra»..</p>
+			</abstract>
+			<abstract source="#MdLE10">
+				<p>Refleja la experiencia personal del autor y su actitud crítica frente a la guerra de Marruecos. Denuncia el absurdo y la inutilidad de tanto sufrimiento y lleva a cabo una profunda desmitifación de la retórica patriotera y heroico-militar. Se inserta en la línea de la novela pacifista que Arnold Zweig, Barbusse y Remarque, entre otros, habían desarrollado en Europa después de la primera guerra mundial.</p>
+				<p>Presenta una estructura fragmentaria. [...] Consta de siete relatos independientes que se centran en personajes, situaciones y lugares distintos, pero que se hallan unidos por el ambiente. Con técnica impresionista el autor ha pretendido crear una novela de atmósfera, no de argumento.</p>
+				<p>Hay un narrador-protagonista común, Carlos Arnedo, pero a menudo es solo testigo de los hechos. El autor se proyecta a sí mismo en este joven de clase media y vocación revolucionaria que no es capaz de llevarla a la práctica. [...] En cualquier caso, el verdadero protagonista de la novela es el soldado español que lucha en Marruecos.</p>
+			</abstract>
+			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="keywords.xml" cert="high">
+					<term type="author.TOC.range" resp="MdL10">5</term>
+					<term type="author.continent">Europe</term>
+					<term type="author.country">Spain</term>
+					<term type="author.date.birth">1898</term>
+					<term type="author.date.death">1941</term>
+					<term type="author.gender">male</term>
+					<term type="author.litHist.pages" resp="MdL10">5</term>
+					<term type="author.movement">avantgarde</term>
+					<term type="author.nonNovelGenre">essay</term>
+					<term type="author.submovement">social-realista</term>
+					<term type="author.year.change">0</term>
+					<term type="authorText.group"/>
+					<term type="authorText.relation">high</term>
+					<term type="text.characters.protagonist.age">young</term>
+					<term type="text.characters.protagonist.gender">male</term>
+					<term type="text.characters.protagonist.name" cert="medium">Carlos Arnedo</term>
+					<term type="text.characters.protagonist.profession">military personnel</term>
+					<term type="text.characters.protagonist.socLevel">medium</term>
+					<term type="text.corpora.CoNSSA">True</term>
+					<term type="text.corpora.CoNSSA.canon">True</term>
+					<term type="text.form">prose</term>
+					<term type="text.genre">novela</term>
+					<term type="text.genre.analyzed" cert="high">novela</term>
+					<term type="text.genre.subgenre.edit" resp="#epublibre">histórico</term>
+					<term type="text.genre.subgenre.edit" resp="amazon"> Militar y bélica, Bélica</term>
+					<term type="text.genre.subgenre.edit" resp="epublibre">Histórico</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">war-novel</term>
+					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE">novela pacifista</term>
+					<term type="text.genre.subtitle">novela de la guerra</term>
+					<term type="text.genre.subtitle.source" resp="bne">novela de la guerra</term>
+					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela de la guerra</term>
+					<term type="text.genre.supergenre">narrative</term>
+					<term type="text.language">Spanish</term>
+					<term type="text.litHist.mentioned" resp="HdLE">True</term>
+					<term type="text.litHist.mentioned" resp="MdLE">True</term>
+					<term type="text.litHist.pages" resp="MdLE10">1.0</term>
+					<term type="text.movement"/>
+					<term type="text.narration.narrator">autodiegetic</term>
+					<term type="text.plot.end">negative</term>
+					<term type="text.plot.representation">realistic</term>
+					<term type="text.publication">book</term>
+					<term type="text.setting.continent">Africa</term>
+					<term type="text.setting.country">Marocco</term>
+					<term type="text.setting.represented">Tetuán</term>
+					<term type="text.setting.represented.longitude" cert="medium" resp="#jct">5.22</term>
+					<term type="text.setting.represented.latitude" cert="medium" resp="#jct">35.34</term>
+					<term type="text.setting.settlement">Tetuán</term>
+					<term type="text.setting.settlement.represented.exist">True</term>
+					<term type="text.setting.settlement.type">small-city</term>
+					<term type="text.setting.territory">Norte de Marruecos</term>
+					<term type="text.time.period">contemporary</term>
+					<term type="text.time.span">365</term>
+					<term type="text.time.year">1921</term>
+					<term type="text.litHist.literaryQuality" resp="MdLE">high</term>
+					<term type="text.litHist.brow">high</term>
+					<term type="text.genre.subgenre.cluster" resp="#jct" cert="medium">bucólica</term>
+					
+			
+					
+			
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2018-01-11" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div>
+				<head xml:id="ne0271_head_000">El blocao: Novela de la guerra marroquí</head>
+			</div>
+			<div>
+				<head xml:id="ne0271_head_001">Prólogo</head>
+				<p>Estamos en 1928. Una nueva generación de intelectuales irrumpe como una tromba en la vida pública española; una generación enriquecida políticamente en su lucha contra la dictadura y consciente de la necesidad de cambios sociales en las estructuras básicas del país.</p>
+				<p>Esta nueva generación, que convive con los restos de la generación del 98 (Valle-Inclán y Unamuno levantan sus voces contra Primo de Rivera), con la de 1914 (Ortega, Pérez de Ayala, Araquistáin), quiso asumir desde muy pronto las responsabilidades a que le llamaba su hora histórica, ya que «pocas fechas en la historia habrán aparecido tan estimulantes para el hombre español».</p>
+				<p>Esta generación, «a la que se podría llamar de la Segunda República», se encontró dispuesta desde el primer momento a «no privar a la política de la magna ayuda de las letras», apoyándose en la cultura de la lucha revolucionaria. Surgen así las primeras editoriales dirigidas y animadas por esta nueva generación, llena de un gran espíritu propagandístico.</p>
+				<p>En una de las editoriales, Historia Nueva, y en su colección «La novela social», se publica <seg rend="italic">El blocao. Novela de la guerra marroquí</seg>, primera novela de un joven de esta generación, José Díaz-Fernández.</p>
+				<p>Con ella, su autor, entra polémicamente, en el terreno literario, a enfrentar la novela de avanzada con la literatura vanguardista, entonces de moda, siguiendo las indicaciones de Ortega y cuyos máximos representantes eran Jarnés, Antonio Espina y Francisco Ayala.</p>
+				<p>Díaz-Fernández, decidido partidario de la actividad política de los intelectuales, tomó parte en las luchas estudiantiles y en sucesivas conjuras contra la dictadura de Primo de Rivera. Fue encarcelado tras el fracasado levantamiento de la noche de San Juan, en 1926. En 1927, con Joaquín Arderías, José Antonio Balbontín, Giménez Siles, Juan de Andrade, Graco Marsá y el peruano César Falcón, funda Ediciones Oriente, una de las primeras editoriales españolas que tiene como programa la traducción de obras avanzadas de la literatura europea. El éxito sorprende a sus propios autores.</p>
+				<p>Nacido en Aldea del Obispo (Salamanca) el 20 de mayo de 1898, donde su padre ejercía de carabinero, pasó la mayor parte de su infancia en Asturias, concretamente en Castropol, de donde era oriunda su madre. Trasladado a Oviedo, en aras de su vocación literaria y con el fin de estudiar Derecho, entró en la redacción del diario gijonés <seg rend="italic">El Noroeste</seg>, donde alcanza un nombre y una popularidad como cronista.</p>
+				<p>Esta carrera se vería interrumpida por su llamada a filas. En 1921 se incorpora al Regimiento de infantería de Tarragona. Poco después su batallón será destinado a Marruecos, en pleno conflicto colonial. Allí, con otros dieciséis soldados, un cabo y un sargento, pasa obligatoriamente a ocupar blocaos de la zona de Tetuán y Beni Arós. En estas conflictivas líneas del frente permanecerá hasta su licenciamiento definitivo, en agosto de 1922.</p>
+				<p>De regreso a Gijón, vuelve de nuevo a la redacción de <seg rend="italic">El Noroeste</seg>. Poco después, el prestigioso diario madrileño <seg rend="italic">El Sol</seg> le ofrece el cargo de corresponsal literario. Publica en la colección «La novela asturiana», <seg rend="italic">El ídolo roto</seg> en 1923.</p>
+				<p>En 1925, el diario de Ortega le ofrece un puesto en la redacción de Madrid. De este modo, Díaz-Fernández se integra en la vida cultural y política madrileña, a la vez que su amigo Fernando Vela lo introduce en el círculo restringido de la <seg rend="italic">Revista de Occidente</seg>.</p>
+				<p>Su prestigio literario, ya grande, se acrecienta con el premio de <seg rend="italic">El Imparcial</seg> a su relato de guerra <seg rend="italic">El blocao</seg>. Colabora activamente en la revista de la vanguardia política y literaria <seg rend="italic">Postguerra</seg> <seg rend="italic">(1927-1928)</seg>, revista que «representa en su época la única tentativa de los intelectuales españoles para superar la neta división entre la vanguardia política y la vanguardia literaria».</p>
+				<p>Colabora entonces con Acción Republicana. Es condenado a tres meses de cárcel, en la Modelo de Madrid, y otros tantos meses de destierro en la capital portuguesa (febrero-septiembre 1929). Es durante este tiempo cuando escribe <seg rend="italic">La venus mecánica</seg>.</p>
+				<p>Con sus amigos Antonio Espina y Adolfo Salazar (que se retira para dejar su puesto al novelista Joaquín Arderíus) funda y codirige la revista <seg rend="italic">Nueva España</seg>, que llega a alcanzar 40 000 ejemplares en su segundo número. La publicación nace «con la aspiración de ser el órgano de enlace de la generación de 1930 y el más avanzado de la izquierda española».</p>
+				<p>En 1930 aparece <seg rend="italic">El nuevo romanticismo. Polémica de arte, política y literatura</seg>, ensayo que llama explícitamente a la politización del escritor español y que habría de marcar el rumbo de la novela social durante la Segunda República.</p>
+				<p>Al caer <seg rend="italic">El Sol</seg> en manos monárquicas, Díaz-Fernández, junto con muchos otros redactores y colaboradores, abandona el periódico y pasa a las redacciones de <seg rend="italic">Crisol</seg> y <seg rend="italic">Luz</seg>, recién fundados.</p>
+				<p>Elegido diputado por Asturias en las elecciones de 1931, en las filas del partido radical-socialista, entra a formar parte del cuerpo legislativo de la República. En este mismo año publica, con Joaquín Arderíus, <seg rend="italic">La vida de Fermín Galán</seg>, biografía del héroe del pronunciamiento de Jaca contra la monarquía, y pasa a ocupar el cargo de secretario político del ministro de Instrucción Pública, Francisco Barnés.</p>
+				<p>Durante el llamado bienio negro, colabora en <seg rend="italic">El Liberal</seg>. En 1935, bajo el seudónimo de José Canel, publica <seg rend="italic">Octubre rojo en Asturias</seg>, en donde narra la insurrección armada asturiana de 1934.</p>
+				<p>Con el partido de Azaña, Izquierda Republicana, vuelve a ser elegido en 1936, diputado por Murcia.</p>
+				<p>Durante la guerra es nombrado jefe de Prensa en Barcelona. El 26 de enero de 1939 pasa a Francia con su mujer y su hija. Internado en un campo de concentración, se instala a su salida en la ciudad de Toulouse, en espera de un pasaje que le lleve a Cuba. Pero allí le sorprende la muerte el 18 de febrero de 1941. Sus amigos tuvieron que hacer una colecta para poder enterrarle.</p>
+				<milestone unit="section"/>
+				<p>Novela paradigmática en los años de su aparición, <seg rend="italic">El blocao</seg> participa tanto de la literatura vanguardista como de lo que el propio Díaz-Fernández llamó literatura avanzada. Novela que rechaza tanto los cauces de lo tradicional, como se adhiere a la síntesis, permanente forma de arte.</p>
+				<p>El objetivo de <seg rend="italic">El blocao</seg> es exponer literariamente los efectos que se operan en la juventud española comprometida en la guerra colonial de Marruecos. Efectos que se nos narran en una serie de episodios que, aunque parecen inconexos y hasta pueden leerse independientemente, están interrelacionados por el ambiente y la atmósfera de la guerra. Una guerra que se usa no sólo para exponer temas humanos e individuales, sino para plantear las inquietudes de la España de aquellos años y que expresan un sentir muy generalizado, tanto entre los medios intelectuales como en otros muy diferentes sectores del país.</p>
+				<p>En un total de siete capítulos se nos revela cómo la guerra envejece y embrutece a sus casi pasivos participantes. Sus víctimas no son aquí los muertos sino los supervivientes, los «cadáveres verticales», según metáfora afortunada del autor.</p>
+				<p>La llamada erótica, tan propia de la juventud, a la vez que una relación afectiva entre hombres y animales, son las constantes características de la narración.</p>
+				<p>En <seg rend="italic">El blocao</seg> se deja ver la influencia de escritores que pusieron su pluma al servicio de la causa de una nueva civilización, basada en la libertad del individuo, como Gorki, así como «los campeones de la fraternidad universal», Barbusse y Remarque, escritores que novelaron la angustia del hombre en las trincheras durante la Primera Guerra Mundial.</p>
+				<p>Novela autobiográfica, <seg rend="italic">El blocao</seg> aborda el tema del lugar del intelectual pequeño burgués en la conflictiva España de la década de los años veinte. Es un lugar común en el conjunto de la obra narrativa de casi todos los escritores de nuestra preguerra y que en <seg rend="italic">El blocao</seg> se desarrolla en el capítulo cuarto de la novela, «Magdalena roja», contribuyendo a su unidad.</p>
+				<p>La estructura del libro plantea la difícil cuestión de si se trata de una <seg rend="italic">verdadera</seg> novela o de un conjunto de relatos. En realidad, cualquiera de sus siete capítulos podría considerarse como unidad independiente y completa en sí misma. Pero considerados de este modo perderían toda la fuerza emocional y estética que les da su conjunto. El autor nos aclara su verdadera intención ante una crítica que no se puso de acuerdo sobre su particular género literario.</p>
+				<quote>
+					<p>«… estimo que las formas vitales cambian, y a ese cambio hay que sujetar la expresión literaria. Vivimos una vida sintética y veloz, maquinista y democrática. Rechazo por eso la novela tradicional…, e intento un cuerpo diferente para el contenido eterno. Ahí está la explicación del rótulo “Novela de la guerra marroquí” que lleva <seg rend="italic">El blocao</seg>… Yo quise hacer una novela sin otra unidad que la atmósfera que sostiene a los episodios. El argumento clásico está sustituido por la dramática trayectoria de la guerra, así como el personaje, por su misma impersonalidad quiere ser el soldado español… De este modo pretendo interesar al lector de modo distinto al conocido: es decir, metiéndolo en un mundo opaco y trágico, sin héroes, sin grandes individualidades, tal y como yo sentí el Marruecos de entonces».</p>
+				</quote>
+				<p><seg rend="italic">El blocao</seg> mantiene, pues, su unidad novelesca, no mediante los conocidos métodos tradicionales (personajes o argumento), sino a través de la atmósfera que envuelve y justifica todos sus episodios.</p>
+				<p>Sostiene así Díaz-Fernández una actitud típicamente vanguardista, a la que añade un contenido plenamente humano.</p>
+				<p>Hay además otras poderosas razones para considerar a <seg rend="italic">El blocao</seg> como una auténtica novela y que dan unidad a todo el libro: el yo del autor mismo, a veces silencioso, pero siempre presente en todos y cada uno de los episodios y una estructura común entre las diferentes historias. Así, en las tres primeras se sustentan los temas principales, que luego serán reiterativos. Además, el cuarto capítulo da sentido a toda la novela y sirve tanto para comprender todo el trasfondo como para dar credibilidad y autenticidad a la actitud del autor, a la vez que enriquece esa atmósfera opaca en la que Díaz-Fernández quiere introducirnos.</p>
+				<p>En contradicción con el triunfalismo con que los medios oficiales castrenses cantan la pacificación del llamado «Protectorado», <seg rend="italic">El blocao</seg> no canta ninguna gesta heroica; más bien el tedio de la espera, el aburrimiento, el cansancio, la ignorancia del por qué de todo aquello, la angustia, la soledad…</p>
+				<p>«El enemigo andaba entre nosotros envuelto en el velo del impalpable fastidio», se nos cuenta.</p>
+				<p>En el primer episodio de la novela se inician los problemas principales del libro. Se nos penetra en un blocao, fortificación aislada donde los soldados, rodeados de un enemigo invisible, sufren el implacable y lento paso del tiempo, con la lejana esperanza del relevo.</p>
+				<p>No existe la más mínima acción. Los soldados se divierten con los inevitables naipes. La llegada del correo y, de cuando en cuando, el proyectil de un paco, que rompe la monotonía. Un soldado se enferma, y el resto lo despide con envidia. Todo es preferible, el hospital, la enfermedad, antes que el aburrimiento del fuerte. Su única visita es una niña mora que les vende higos y huevos, y que incita la libido de los jóvenes solitarios.</p>
+				<p>Una noche, la morita llama a una hora intempestiva. Cuando el oficial la deja pasar, los moros emboscados atacan. Mueren cuatro soldados. La niñita mora es retenida prisionera.</p>
+				<p>El incidente es, en verdad, poco relevante. Ninguna heroicidad, ningún acto noble, ninguna presencia de patriotismo. Nada. En cambio, el ambiente cargado del fuerte, el tedio que se apodera de todos, la nada fácil convivencia en tan pequeño espacio, la progresiva deshumanización de los soldados.</p>
+				<p>El sexo hace acto de presencia. «Al atardecer, los soldados, en coro, sostenían diálogos obscenos, que yo sorprendía al pasar, un poco avergonzado de la coincidencia».</p>
+				<p>Al final del episodio, el sargento, contra la opinión de los soldados, deja libre a la niña mora. Todavía existe la disciplina. Cuando ésta se pierda, los hombres se convertirán en auténticos irracionales.</p>
+				<p>Los dos siguientes episodios, «El reloj» y «Cita en la huerta», contribuyen a irnos introduciendo en esta atmósfera entre trágica y monótona, según la intención del autor.</p>
+				<p>«El reloj» cuenta la historia de un soldado, gañán de caserío, que se distingue de los otros por poseer un reloj inmenso, un artefacto increíble, que se convierte en objeto de culto y adoración entre los habitantes del blocao.</p>
+				<p>Este singular artefacto adquiere verdadera celebridad en una revista antes de embarcar para Marruecos. Su tremendo <seg rend="italic">tic-tac</seg> llama la atención del propio coronel.</p>
+				<p>Cierto día, después de un intenso tiroteo, el soldado desaparece. Se le busca y se le encuentra llorando, con el reloj deshecho entre las manos. Un proyectil enemigo se lo había destrozado. El reloj le había salvado la vida.</p>
+				<p>Sin embargo, el soldado llora desconsoladamente.</p>
+				<p>«Cita en la huerta», tercer episodio, insiste en la antiheroicidad de los protagonistas. Sucede en Tetuán, capital del Protectorado. Allí, en la ciudad, predomina la vida fácil y disoluta, que transcurre a espaldas de la tragedia que tiene lugar en el frente.</p>
+				<p>Una fracasada cita amorosa, sirve para adentrarnos aún más en la atmósfera densa y opaca que recorre la novela. El fracaso amoroso se iguala al fracaso colonial, a la falta de interés patriótico, a la inutilidad de la guerra. «… no sentía ningún interés por el que llamaban nuestro problema de África y “tampoco lograban conmoverme las palabras que nos dirigían los jefes de los cuerpos expedicionarios”, así como de mis tiempos de Marruecos, durante las difíciles campañas del 21, no logro destacar ningún episodio heroico».</p>
+				<p>La desmitificación del llamado honor militar, de toda acción heroica, de toda la literatura triunfalista, llega aquí a su cenit. Nada merece la pena, sino esperar la muerte o el licenciamiento. A la vez, se nos muestra la casi imposibilidad de relaciones amorosas entre colonizadores y colonizados.</p>
+				<p>El cuarto episodio, «Magdalena roja», es clave para la comprensión total de los seis restantes. Haciendo hincapié en las relaciones sexuales, vemos el paso de la adolescencia a la juventud del narrador, así como sus luchas sindicales y políticas.</p>
+				<p>En definitiva, Díaz-Fernández, como tantos escritores de su generación, se plantea el papel del intelectual pequeño burgués en las luchas sociales.</p>
+				<p>Angustias, un personaje femenino entregado a la liberación del proletariado, toma a chacota las tímidas acciones del autor, tanto por su pasado intelectual y burgués, como por los miedos y obsesiones que esta educación sentimental conlleva. El episodio, con más acción de los seis restantes, explica muchas cosas de esta novela.</p>
+				<p>El quinto episodio, «África a sus pies», sucede en Tetuán, por aquellas fechas «vivero de vicio, de negocio y aventura». Como todas las ciudades de guerra, Tetuán engordaba y era feliz con la muerte que a diario manchaba de sangre sus flancos.</p>
+				<p>Vuelve a plantearse así, la dicotomía entre la línea del frente y la ciudad. También vuelve a hablarse de la mujer mora y la postura favorable a su pueblo contra los colonizadores.</p>
+				<p>«Reo de muerte», el sexto episodio, sigue la línea ascendente de tensionar al lector. Nos recuerda el segundo, el titulado «El reloj». Empieza como el primero, con el ansiado relevo en un blocao. Los que felizmente se marchan, dejan abandonado un perro, flaco, larguirucho, antipático: pero tenía los ojos humanos y benévolos.</p>
+				<p>Uno de los recién llegados se encariña con el perro. Surge así una relación propia de la soledad y monotonía de la guerra. Con el animal comparte su pobre ración y se convierte en su enfermero cuando una bala perdida lo hiere.</p>
+				<p>Por el contrario, el teniente odia al animal sin razón alguna.</p>
+				<p>Díaz-Fernández opone la figura de los oficiales a la de los soldados. Incompetentes, poco comprensivos con los problemas de la tropa y hasta desalmados, los oficiales del ejército salen tan mal parados aquí como en el resto de las novelas dedicadas a nuestra guerra colonial.</p>
+				<p>Con oficiales de esta ralea y en un ambiente hostil y cercados por el enemigo, el conflicto estalla y se hace inevitable. El teniente se lleva al perro a las afueras del blocao y le pega un tiro. El soldado, naturalmente, queda destrozado.</p>
+				<p>Con tan nimio accidente, Díaz-Fernández logra transmitirnos toda la tragedia de la guerra. En «Reo de muerte» encontramos otra vez el caso de alguien «que sobrevive a la guerra, pero que pierde el sentido de la vida».</p>
+				<p>Pues bien, toda la tensión que marca el desarrollo gradual de la novela, tiene su culminación en el séptimo y también último episodio, «Convoy de amor». Su sólo título nos habla de la fusión de los dos ternas dominantes: el erotismo y el efecto devastador de la guerra sobre los que la sufren. Se unen, pues, en un clímax perfecto, la bestialidad del soldado, el erotismo y la frustración sexual obsesionante en un blocao y el ambiente de toda guerra. Estos aspectos se combinan para terminar la obra con una escena escalofriante, pero lógica e inevitable en su total desarrollo.</p>
+				<p>«Lo que voy a contar es mil veces más espantoso que un ataque rebelde. Al fin y al cabo, la guerra es una furia ciega en la cual no nos cabe la mayor responsabilidad. Un fusil encuentra siempre su razón en el fusil enemigo.</p>
+				<p>Pero esto es otra cosa, una cosa repugnante y triste».</p>
+				<p>El narrador, en este último episodio, se distancia de lo narrado y nos cuenta un suceso que le han contado. Una tarde llega al zoco la mujer de un teniente que manda una posición en el frente. Su objetivo es que un convoy la lleve junto a su marido. Ya en marcha, cada gesto de la mujer, cada palabra, cada movimiento, exhala erotismo. En la caravana se produce una especie de corriente eléctrica.</p>
+				<p>Ajena a la desazón que produce, la mujer se comporta con una picante ingenuidad. El sol abrasa. El convoy se para a descansar. La mujer, incitante, se refresca con colonia. Se acuesta después a la sombra de una higuera. «Toda ella era un vaho sensual… Los soldados, con el aliento entrecortado se apretaban a ella…». Cuando el cabo se da cuenta del peligro es demasiado tarde. Los soldados se arrojan sobre la presa, «feroces, siniestros, desorbitados, disputándosela a mordiscos y a puñetazos». El cabo ordena formar, pero nadie le hace caso, entonces dispara el fusil. «El grupo se deshizo y todos fueron cayendo, uno aquí y otro allá, bañados en sangre. Carmela hollada, pisoteada, estaba muerta de un balazo en la frente».</p>
+				<p>Díaz-Fernández termina así su novela de la guerra de Marruecos con estas únicas muertes. La emoción ha llegado a su final.</p>
+				<p>La importancia histórico-literaria de esta novela no es sino acabar con el alegre juego típico de la novela deshumanizada y vanguardista y llevarlo a un terreno mucho más acorde con las presiones políticas y sociales del momento. Y todo esto sin olvidar ninguno de los logros narrativos propios de este tipo de literatura.</p>
+				<p>Desde el momento de su aparición <seg rend="italic">El blocao</seg> logra un éxito casi sin precedentes. Se traduce al francés, al alemán y al inglés. Quizá le ayudó el tema pacifista, de moda entonces en toda Europa, cansada de la guerra.</p>
+				<p>Entre nosotros, alcanza en pocos meses tres ediciones y tanto vanguardistas como novelistas sociales saben ver en ella lo que tiene de síntesis de ambas corrientes, lo que le da un valor y unas características especiales. El escritor Alberto Insúa supo ver bien esa integración del arte literario con las más urgentes preocupaciones sociales. «Marca la hora del pacto, de la entente entre las normas imperecederas del arte literario y las innovaciones y rebeliones útiles de las escuelas recientes».</p>
+				<p>En la corta vida literaria de su autor, <seg rend="italic">El blocao</seg> constituye su gran y casi única obra narrativa. En su segunda novela, <seg rend="italic">La venus mecánica</seg>, encontrará más dificultades para seguir siendo fiel a esa síntesis, casi genial, que consiguió hacer de <seg rend="italic">El blocao</seg> una pequeña obra maestra.</p>
+
+				<ab>José Esteban</ab>
+			</div>
+			<div>
+				<head xml:id="ne0271_head_002">Nota para la segunda edición</head>
+
+				<p>A los tres meses de publicada la primera edición de este libro, se imprime la segunda. Muy pocas obras literarias, de autor oscuro, han alcanzado esta fortuna en nuestro país, donde la masa lectora es tan restringida. Esto me hace suponer que El blocao no es absolutamente una equivocación, aunque el propio autor le vea, ahora, defectos de bulto. Pero, al mismo tiempo, esta experiencia me ha servido para comprobar que existe un público dispuesto a leer obras de ficción que no sean el bodrio pornográfico o la ñoñez espolvoreada de azúcar sentimental. Revelación sorprendente, por cuanto, hasta hace poco, algunos de nuestros primeros ingenios no habían logrado agotar tiradas análogas a la mía sino después de transcurridos muchos meses.</p>
+				<p>El interés del público ha ido esta vez de acuerdo con el de la crítica, suceso que no ocurre todos los días. Con rara unanimidad, los diferentes sectores estéticos han coincidido en otorgar a mi obra un trato excepcional. El hecho de que El blocao haya podido instalarse en esas zonas antípodas me infunde verdadera confianza para el futuro.</p>
+				<p>Porque —lo digo con absoluta sinceridad— yo no aspiro a ser un escritor de minorías, aunque no me halagaría nada que éstas no simpatizaran con mis libros. Creo que todo escritor que no sienta el narcisismo de su producción, que no construya su obra para un ambiguo y voluptuoso recreo personal, pretenderá hacer partícipe de ella a cuantos espíritus intenten comprenderla. Yo no sé qué otros fines pueda tener el arte.</p>
+				<p>Claro que quiero llegar hasta el lector por vías diferentes a las que utilizaban los escritores de las últimas generaciones. Soy, antes que nada, hombre de mi tiempo, partidario fervoroso de la época que vivo. El pasado no me preocupa gran cosa, y, desde luego, si en mi mano estuviera, no lo indultaría de la muerte. Sostengo que hay una fórmula eterna de arte: la emoción. Y otra fórmula actual: la síntesis. En la primera edición de mí libro lo decía, dando a entender que ésa es mi estética. Trato de sorprender el variado movimiento del alma humana, trazar su escenario actual con el expresivo rigor de la metáfora; pero sin hacer a ésta aspiración total del arte de escribir como sucede en algunas tendencias literarias modernas. Ciertos escritores jóvenes, en su afán de cultivar la imagen por la imagen, han creado una retórica peor mil veces que la académica, porque ésta tuvo eficacia alguna vez y aquélla no la ha tenido nunca. Cultiven ellos sus pulidos jardines metafóricos, que yo me lanzo al intrincado bosque humano, donde acechan las más dramáticas peripecias.</p>
+				<p>Eso no quiere decir que no dé importancia sobresaliente a la forma. Así como creo que es imprescindible hacer literatura vital e interesar en ella a la muchedumbre, estimo que las formas vitales cambian, y a ese cambio hay que sujetar la expresión literaria. Vivimos una vida sintética y veloz, maquinista y democrática. Rechazo por eso la novela tradicional, que transporta pesadamente descripciones e intrigas, e intento un cuerpo diferente para el contenido eterno. Ahí está la explicación del rótulo «novela de la guerra marroquí» que lleva El blocao. En esto no se han puesto de acuerdo los críticos. Mientras unos han hablado de un libro de novelas cortas, otros le han llamado colección de cuentos y muchos narraciones o relatos. Yo quise hacer una novela sin otra unidad que la atmósfera que sostiene a los episodios. El argumento clásico está sustituido por la dramática trayectoria de la guerra, así como el personaje, por su misma impersonalidad, quiere ser el soldado español, llámese Villabona o Carlos Arnedo. De este modo pretendo interesar al lector de modo distinto al conocido; es decir, metiéndolo en un mundo opaco y trágico, sin héroes, sin grandes individualidades, tal como yo sentí el Marruecos de entonces.</p>
+				<p>Y, para terminar, quiero referirme al sentido político que se ha dado a mi libro, unas veces con aplauso y otras con censura. Sería insensato mezclar la política con la literatura, si no fuera para obtener resultados artísticos. Tratándose de Marruecos, que es un largo y doloroso problema español, pienso que muchos lectores fueron al libro previamente equipados de la opinión que les merecía aquella guerra. Resultó un libro antibélico y civil, y me congratulo de ello, porque soy pacifista por convicciones políticas, y adversario, por tanto, de todo régimen castrense. Pero al escribir El blocao no me propuse ningún fin proselitista: quise convertir en materia de arte mis recuerdos de la campaña marroquí. Yo no tengo la culpa de que haya sido tan brutal, tan áspera o tan gris. Quizá no haya sabido inhibirme bastante de mi personal ideología. ¿Qué escritor, sin embargo, está libre de tales preferencias? El arte más puro se somete a una concepción temperamental de la vida y refleja siempre gustos, inclinaciones y sentimientos del autor.</p>
+				<p>Lo que sucede es que mi libro llega a las letras castellanas cuando la juventud que escribe no siente otra preocupación fundamental que la de la forma. El blocao tiene que parecer un libro huraño, anarquizante y rebelde, porque bordea un tema político y afirma una preocupación humana. Me siento tan unido a los destinos de mi país, me afectan de tal modo los conflictos de mi tiempo, que será difícil que en mi labor literaria pueda dejar de oírse nunca su latido.</p>
+				<ab>José Díaz-Fernández</ab>
+
+			</div>
+		</front>
+		<body>
+			<div n="1" type="chapter" xml:id="ne0271_chap1">
+				<head xml:id="ne0271_head_003">1. El blocao</head>
+				<p>Llevábamos cinco meses en aquel blocao y no teníamos esperanzas de relevo. Nuestros antecesores habían guarnecido la posición año y medio. Los recuerdo feroces y barbudos, con sus uniformes desgarrados, mirando de reojo, con cierto rencor, nuestros rostros limpios y sonrientes. Yo le dije a Pedro Núñez, el cabo:</p>
+				<p>—Hemos caído en una cueva de Robinsones.</p>
+				<p>El sargento que me hizo entrega del puesto se despidió de mí con ironías como ésta:</p>
+				<p>—Buena suerte, compañero. Esto es un poco aburrido, sobre todo para un cuota. Algo así como estar vivo y metido en una caja de muerto.</p>
+				<p>—¡Qué bárbaro! —pensé. No podía comprender sus palabras. Porque entonces iba yo de Tetuán, ciudad de amor más que de guerra, y llevaba en mi hombro suspiros de las mujeres de tres razas. Los expedicionarios del 78 de infantería no habíamos sufrido todavía la campaña ni traspasado las puertas de la ciudad. Nuestro heroísmo no había tenido ocasión de manifestarse más que escalando balcones en la Sueca, jaulas de hebreas enamoradas, y acechando las azoteas del barrio moro, por donde al atardecer jugaban las mujeres de los babucheros y los notarios. Cuando a nuestro batallón lo distribuyeron por las avanzadas de Beni Arós, y a mí me destinaron, con veinte hombres, a un blocao, yo me alegré, porque iba, al fin, a vivir la existencia difícil de la guerra.</p>
+				<p>Confieso que en aquel tiempo mi juventud era un tanto presuntuosa. No me gustaba la milicia; pero mis nervios, ante los actos que juzgaba comprometidos, eran como una traílla de perros difícil de sujetar bajo la voz del cuerno de caza. Me fastidiaban las veladas de la alcazaba, entre cante jondo y mantones de flecos, tanto como la jactancia de algunos alféreces, que hacían sonar sus cruces de guerra en el paseo nocturno de la Plaza de España.</p>
+				<p>Por eso la despedida del sargento me irritó. Se lo dije a Pedro Núñez, futuro ingeniero y <seg rend="italic">goal-keeper</seg> de un equipo de fútbol:</p>
+				<p>—Estos desgraciados creen que nos asustan. A mí me tiene sin cuidado estar aquí seis meses o dos años. Y, además, tengo ganas de andar a tiros.</p>
+				<p>Pero a los quince días ya no me atrevía a hablar así. Era demasiado aburrido. Los soldados se pasaban las horas sobre las escuálidas colchonetas, jugando a los naipes. Al principio, yo quise evitarlo. Aun careciendo de espíritu militar, no me parecía razonable quebrantar de aquel modo la moral cuartelera. Pedro Núñez, que jugaba más que nadie, se puso de parte de los soldados.</p>
+				<p>—Chico —me dijo—, ¿qué vamos a hacer, si no? Esto es un suplicio. Ni siquiera nos atacan.</p>
+				<p>Al fin consentí. Paseando por el estrecho recinto sentía el paso lento y penoso de los días, como un desfile de dromedarios. Yo mismo, desde mi catre, lancé un día una moneda entre la alegre estupefacción de la partida:</p>
+				<p>—Dos pesetas a ese as.</p>
+				<p>Las perdí, por cierto. Los haberes del destacamento aumentaban cada semana, a medida que llegaban los convoyes; pero iban íntegros de un jugador a otro, según variaba la suerte. Aquello me dio, por primera vez, una idea aproximada de la economía social. Había un soldado vasco que ganaba siempre; pero como hacía préstamos a los restantes, el desequilibrio del azar desaparecía. Pensé entonces que en toda república bien ordenada el prestamista es insustituible. Pero pensé también en la necesidad de engañarle.</p>
+				<milestone unit="section"/>
+				<p>El juego no bastaba, sin embargo. Cada día éramos más un rebaño de bestezuelas resignadas en el refugio de una colina. Poco a poco, los soldados se iban olvidando de retozar entre sí, y ya era raro oír allí dentro el cohete de una risa. Llegaba a inquietarme la actitud inmóvil de los centinelas tras la herida de piedra de las aspilleras, porque pensaba en la insurrección de aquellas almas jóvenes recluidas durante meses enteros en unos metros cuadrados de barraca. Cuando llegaban los convoyes, yo tenía que vigilar más los paquetes de correo que los envoltorios de víveres. Los soldados se abalanzaban, hambrientos, sobre mi mano, que empuñaba cartas y periódicos.</p>
+				<p>—Tienes gesto de domador que reparte comida a los chacales —me decía Pedro Núñez.</p>
+				<p>Los chacales se humanizaban en seguida con una carta o un rollo de periódicos, devorados después con avidez en un rincón. Los que no recibían correspondencia me miraban recelosamente y escarbaban con los ojos mis periódicos. Tenía que prometerles una revista o un diario para calmar un poco su impaciencia.</p>
+				<p>Sin darnos cuenta, cada día nos parecíamos más a aquellos peludos a quienes habíamos sustituido. Éramos como una reproducción de ellos mismos, y nuestra semejanza era una semejanza de cadáveres verticales movidos por un oscuro mecanismo. El enemigo no estaba abajo, en la cabila, que parecía una vedija verde entre las calaveras mondadas de dos lomas. El enemigo andaba por entre nosotros, calzado de silencio, envuelto en el velo impalpable del fastidio.</p>
+				<p>Alguna noche, el proyectil de un paco venía a clavarse en el parapeto. Lo recibíamos con júbilo, como una llamada alegre de tambor, esperando un ataque que hiciera cambiar, aunque fuera trágicamente, nuestra suerte. Pero no pasaba de ahí. Yo distribuía a los soldados por las troneras y me complacía en darles órdenes para una supuesta lucha. Una lucha que no llegaba nunca. Dijérase que los moros preferían para nosotros el martirio de la monotonía. A las dos horas de esperarlos, yo me cansaba, y, lleno de rabia, mandaba hacer una descarga cerrada.</p>
+				<p>Como si quisiera herir, en su vientre sombrío, a la tranquila noche marroquí.</p>
+				<p>Un domingo se me puso enfermo un soldado. Era rubio y tímido y hablaba siempre en voz baja. Tenía el oficio de aserrador en su montaña gallega. Una tarde, paseando por el recinto, me había hablado de su oficio, de su larga sierra que mutilaba castaños y abedules, del rocío dorado de la madera, que le caía sobre los hombros como un manto. El cabo y yo vimos cómo el termómetro señalaba horas después los 40°. En la bolsa de curación no había más que quinina, y le dimos quinina.</p>
+				<p>Al día siguiente, la fiebre alta continuaba. Era en febrero y llovía mucho. No podíamos, pues, utilizar el heliógrafo para avisar al campamento general. En vano hice funcionar el telégrafo de banderas. Faltaban cinco días para la llegada del convoy, y yo temía que el soldado se me muriese allí, sobre mi catre, entre la niebla del delirio.</p>
+				<p>Me pasaba las horas en la explanada del blocao, buscando entre la espesura de las nubes un poco de sol para mis espejos. En vano sangraban en mis manos las banderas de señales. Pedíamos al cielo un resplandor; un guiño de luz para salvar una vida.</p>
+				<p>Pero el soldado, en sus momentos de lucidez, sonreía. Sonreía porque Pedro Núñez le anunciaba:</p>
+				<p>—Pronto te llevarán al hospital.</p>
+				<p>Otro soldado subrayaba, con envidia:</p>
+				<p>—¡Al hospital! Allí sí que se está bien.</p>
+				<p>Preferían la enfermedad; yo creo que preferían la muerte.</p>
+				<p>Por fin, el jueves, la víspera del convoy, hizo sol. Me apresuré a captarlo en el heliógrafo y escribir con alfabeto de luz un aviso de sombras.</p>
+				<p>Por la tarde se presentó un convoy con el médico. El enfermo marchó en una artola, sonriendo, hacia el hospital. Creo que salió de allí para el cementerio. Pero en mi blocao no podía morir, porque, aun siendo un ataúd, no era un ataúd de muertos.</p>
+				<p>Una mujer. Mis veintidós años vociferaban en coro la preciosa ausencia. En mi vida había una breve biografía erótica. Pero aquella soledad del destacamento señalaba mis amores pasados como un campo sin árboles. Mi memoria era una puerta entreabierta por donde yo, con sigilosa complacencia, observaba una cita, una espera, un idilio ilegal. Este hombre voraz que va conmigo, éste que conspira contra mi seriedad y me denuncia inopinadamente cuando una mujer pasa por mi lado, era el que paseaba su carne inútil alrededor del blocao. Por ese túnel del recuerdo llegaban las tardes de cinematógrafo, las rutilantes noches de verbena, los alegres mediodías de la playa. Volaban las pamelas en el viento de julio y ardían los disfraces de un baile bajo el esmeril de la helada. Mi huésped subconsciente colocaba a todas horas delante de mis ojos su retablo de delicias, su sensual fantasmagoría, su implacable obsesión.</p>
+				<p>Y no era yo sólo. Al atardecer, los soldados, en corro, sostenían diálogos obscenos, que yo sorprendía al pasar, un poco avergonzado de la coincidencia.</p>
+				<p>—Porque la mujer del teniente…</p>
+				<p>—Estaba loca, loca…</p>
+				<p>Sólo la saludable juventud de Pedro Núñez se salvaba allí. Yo iba a curarme en sus anécdotas estudiantiles, en sus nostalgias de gimnasio y alpinismo, como un enfermo urbano que sale al aire de la sierra.</p>
+				<p>Una de mis distracciones era observar, con el anteojo de campaña, la cabila vecina. La cabila me daba una acentuada sensación de vida en común, de macrocosmos social, que no podía obtener del régimen militar de mi puesto. Desde muy temprano, mi lente acechaba por el párpado abierto de una aspillera. El aduar estaba sumergido en un barranco y tenía que esperar, para verlo, a que el sol quemase las telas de la niebla. Entonces aparecían allá abajo, como en las linternas mágicas de los niños, la mora del pollino y el moro del rémington, la chumbera y la vaca, el columpio del humo sobre la choza gris.</p>
+				<p>Buscaba la mujer. A veces, una silueta blanca que se evaporaba con frecuencia entre las higueras, hacía fluir en mí una rara congoja, la tierna congoja del sexo. ¿Qué clase de emoción era aquélla que en medio del campo solitario me ponía en contacto con la inquietud universal? Allí me reconocía. Yo era el mismo que en una calle civilizada, entre la orquesta de los timbres y de las bocinas, esperaba a la muchacha del escritorio o del <seg rend="italic">dancing</seg>. Yo era el náufrago en el arenal de la acera, con mi alga rubia y escurridiza en el brazo, cogida en el océano de un comedor de hotel. Y aquel sufrimiento de entonces, tras el tubo del anteojo, buscando a cuatro kilómetros de distancia el lienzo tosco de una mora, era el mismo que me había turbado en la selva de una gran ciudad.</p>
+				<p>Nuestra única visita, aparte del convoy, era una mora de apenas quince años, que nos vendía higos chumbos, huevos y gallinas.</p>
+				<p>—¿Cómo te llamas, morita?</p>
+				<p>—Aixa.</p>
+				<p>Era delgada y menuda, con piernas de galgo. Lo único que tenía hermoso era la boca. Una boca grande, frutal y alegre, siempre con la almendra de una sonrisa entre los labios.</p>
+				<p>—¡Paisa! ¡Paisa!</p>
+				<p>Chillaba como un pajarraco cuando, al verla, la tromba de soldados se derrumbaba sobre la alambrada. Yo tenía que detenerlos:</p>
+				<p>—¡Atrás! ¡Atrás! Todo el mundo adentro.</p>
+				<p>Ella entonces sacaba de entre la paja de la canasta los huevos y los higos y me los ofrecía en su mano sucia y dura. Yo, en broma, le iba enseñando monedas de cobre; pero ella las rechazaba con un mohín hasta que veía brillar las piezas de plata. A veces, se me quedaba mirando con fijeza, y a mí me parecía ver en aquellos ojos el brillo de un reptil en el fondo de la noche. Pero en alguna ocasión el contacto con la piel áspera de su mano me enardecía, y cierta furia sensual desesperaba mis nervios. Entonces la dejaba marchar y le volvía la espalda para desengancharme definitivamente de su mirada.</p>
+				<p>Un anochecer, cuando ya habíamos cerrado la alambrada, Pedro Núñez vino a avisarme:</p>
+				<p>—El centinela dice que ahí está la morita.</p>
+				<p>—¡A estas horas!</p>
+				<p>—Yo creo que debemos decirle que se vaya. Porque esta gente…</p>
+				<p>—¿No ha dicho qué quiere?</p>
+				<p>—Ha pedido que te avise.</p>
+				<p>—Voy a ver.</p>
+				<p>—No salgas, ¿eh? Sería una imprudencia.</p>
+				<p>—¡Bah! Tendrá falta de dinero.</p>
+				<p>Salí al recinto. Aixa estaba allí, tras los alambres, sonriente, con su canasta en la mano.</p>
+				<p>—¿Qué quieres tú a estas horas?</p>
+				<p>—¡Paisa! Higos.</p>
+				<p>—No es hora de traerlos.</p>
+				<p>Le vi un gesto, entre desolado y humilde, que me enterneció. Y sentí como nunca un urgente deseo de mujer, una oscura y voluptuosa desazón. La figura blanca de Aixa estaba como suspendida entre las últimas luces de la tarde y las primeras sombras de la noche.</p>
+				<p>Abrí la alambrada.</p>
+				<p>—Vamos a ver qué traes.</p>
+				<p>Aixa dio un grito, no sé si de dolor o de júbilo. Y aquello fue tan rápido que las frases más concisas son demasiado largas para contarlo. Un centinela gritó:</p>
+				<p>—¡Mi sargento, los moros!</p>
+				<p>Sonó una descarga a mi izquierda en el momento en que yo me tiraba al suelo, sujetando a la mora por las ropas. La arrastré de un tirón hasta las puertas del blocao, y allí me hirieron. Pedro Núñez nos recogió a los dos cuando ya los moros saltaban la alambrada chillando y haciendo fuego. Fue una lucha a muerte, una lucha de cuatro horas, donde el enemigo llegaba a meter sus fusiles por las aspilleras. Pero eran pocos, no más de cincuenta. Yo mismo até a Aixa y la arrojé a un rincón, mientras Pedro Núñez disponía la defensa.</p>
+				<p>No me dolía la herida y pude estar mucho tiempo haciendo fuego en el puesto de un soldado muerto.</p>
+				<p>A media noche los moros se retiraron. Al parecer, tenían pocas municiones y habían querido ganarnos por sorpresa. Pedro Núñez me vendó cuando ya me faltaban las fuerzas. Había cuatro soldados muertos y otros tres heridos. Casi nos habíamos olvidado de Aixa, que permanecía en un rincón, prisionera. Me acerqué a ella, y a la luz de una cerilla vi sus ojos fríos y tranquilos. Ya no tenía en la boca su sonrisa de almendra. Me dieron ganas de matarla yo mismo allí dentro. Pero llamé a los soldados:</p>
+				<p>—Que nadie la toque. Es una prisionera y hay que tratarla bien.</p>
+				<p>Al día siguiente, cuando ya habíamos transmitido al campamento general la noticia del ataque, llamé a Pedro Núñez:</p>
+				<p>—Debo de tener fiebre.</p>
+				<p>Efectivamente, 39 y décimas. ¿Y la mora?</p>
+				<p>—Ahí está; como si no hubiera hecho nada. ¿Qué vamos a hacer con ella?</p>
+				<p>Me encogí de hombros. Yo mismo no lo sabía.</p>
+				<p>—Debíamos fusilarla —dije yo sin gran convencimiento.</p>
+				<p>—Eso dicen los soldados. Toda la noche han estado hablando de matarla.</p>
+				<p>Yo pensé en aquellos quince años malignos, en aquella sonrisa dulce; pero también pensé en aquel heroísmo grandioso y único.</p>
+				<p>—Ayudó a los suyos. Pedro Núñez se enfadó:</p>
+				<p>—¿Todavía la defiendes? ¿Hay derecho a eso?</p>
+				<p>—¡Yo qué sé! Tráela aquí.</p>
+				<p>Vino maniatada y me miró con aire indiferente.</p>
+				<p>Tuve un acceso de rabia y la insulté, la maldije, quise tirarle a la cabeza un paquete de periódicos. Pero volvía quedarme silencioso, con el recuerdo sensual de la víspera, que esta vez caía en mi conciencia como una piedra en una superficie de cristal.</p>
+				<p>—¿Y qué conseguimos con que muera, Pedro?</p>
+				<p>—Castigarla, dar ejemplo.</p>
+				<p>—¡Una niña de quince años!</p>
+				<p>—No paga con la muerte. Ahí tienes cuatro soldados que mató ella. Yo se la entregaré al capitán. Tuvimos una larga disputa. Por fin, Pedro Núñez me amenazó:</p>
+				<p>—Si tú la pones en libertad, tú sufrirás las consecuencias.</p>
+				<p>—Yo soy el jefe. A ver, ¡desátala!</p>
+				<p>Pedro Núñez, pálido, la desató. Yo me levanté trabajosamente y la cogí de un brazo. ¡Fuera! ¡A tu cabila!</p>
+				<p>Entre los soldados que presenciaban la escena se levantó un murmullo. Me volví hacia ellos:</p>
+				<p>—¿Quién es el que protesta? ¿Quién manda aquí?</p>
+				<p>Callaron. Empujé a la mora hacia la puerta, y ella me miró despacio, con la misma frialdad. A pasos lentos salió del blocao. La vi marchar, sin prisa y sin volver la cabeza, por el camino de la cabila.</p>
+				<p>Entonces yo me tumbé sobre el camastro. Me dolía mucho mi herida.</p>
+			</div>
+			<div n="2" type="chapter" xml:id="ne0271_chap2">
+				<head xml:id="ne0271_head_004">2. El reloj</head>
+				<p>Hay almas tan sencillas que son las únicas capaces de comprender la vida de las cosas. Eso es algo más difícil que la teoría einsteiniana.</p>
+				<p>Villabona, el de Arroes, poseía un reloj que era el asombro de la compañía; uno de esos cronómetros ingentes que hace años fabricaban los alemanes para demostrar que la Alemania del Káiser era grande en todo. Ojo de cíclope, rueda de tren, cebolla de acero. Como ya entonces sentía yo aficiones literarias, recuerdo que utilizaba esos símiles para designar aquel ejemplar único de reloj. Pero, a pesar de tales dimensiones, no era un reloj de torre, sino un reloj de bolsillo. De bolsillo, claro está, como los que usaba Villabona, especie de alforjas en el interior del pantalón, cuyo volumen producía verdadera ira a los sargentos de semana.</p>
+				<p>Pero antes de contar la historia del reloj de Villabona, oídme una breve biografía de Villabona.</p>
+				<p>Le conocí en el cuartel, a los pocos días de nuestra incorporación, con motivo de la rota de Annual. Como no se había decidido a irse a América, sus padres, unos labriegos sin suerte, invirtieron el dinero del pasaje en pagarle la cuota militar. Y he aquí a Villabona, gañán de caserío, buen segador de hierba, clasificado entre los señoritos de la compañía.</p>
+				<p>Villabona recibió la orden de presentarse en el cuartel la misma mañana de su boda. Como Villabona era un ser elemental y había heredado el franciscanismo campesino, desde la iglesia se encaminó al cuartel a pie, con su paso tardo y manso. La novia quedó intacta, envuelta en su ropa de domingo, como una castaña en su cáscara morena. En la compañía, que conocían este episodio de Villabona, le interrogaban con malicia:</p>
+				<p>—¿Y pasó sola la noche, Villabona?</p>
+				<p>—Pasó.</p>
+				<p>—¡Pobre! Entonces, ¿para qué te casaste?</p>
+				<p>—Una vaca más que mantener.</p>
+				<p>—¡Qué bárbaro!</p>
+				<p>El reloj de Villabona llegó a hacerse famoso en el cuartel. Venían a la nuestra soldados de todas las compañías para conocer el artefacto. Villabona se resistía a enseñarlo; pero, al fin, lo extraía del fardo de su bolsillo y lo colocaba en la palma de su mano, como una tortuga sobre una losa. El soldado espectador lo miraba con la misma prevención que se mira a un mamífero domesticado. Villabona, en cambio, sonreía; la feliz y bondadosa sonrisa podría traducirse así:</p>
+				<p>—Ya ves; yo no le tengo miedo. Es muy dócil.</p>
+				<p>Pero cuando el reloj adquirió su verdadera celebridad fue en una revista, pocos días antes de que embarcásemos para Marruecos. El sargento Arango nos formó velozmente, porque siempre llegaba tarde. En el silencio de la fila el reloj de Villabona jadeaba como una vulpeja en una trampa. Pasó primero el teniente, miope, distraído, que se detuvo, sin embargo, dos o tres veces, inquiriendo aquel rumor insólito. Después vino el capitán, alto, curvado. Se puso a escuchar, sin decir nada, y se le vio unos minutos intranquilo, mirando de reojo a los rincones, hasta que llegaron juntos, disputando en alta voz, el comandante y el teniente coronel. De pronto:</p>
+				<p>—¡Compañía! ¡El coronel!</p>
+				<p>El coronel era un anciano corpulento y malhumorado. Empezó por arrestar al segundo de la fila.</p>
+				<p>—Éste no tiene bigote dijo señalando a Pérez, un muchacho lampiño que estudiaba matemáticas.</p>
+				<p>—Es que… verá usía, mi coronel… —respondió el capitán.</p>
+				<p>—Nada, nada. He dicho que todos vayan pelados al rape y con bigote. No quiero señoras en mi regimiento. ¡Bigote! ¡Bigote!</p>
+				<p>Aquella desaforada invocación al vello producía en los restantes jefes una visible desazón. Todos miraban al pobre Pérez como a un relapso, un proscrito, un mal soldado de España. Pérez temblaba.</p>
+				<p>—Es que —se atrevió a decir el capitán— a este soldado no le sale el bigote.</p>
+				<p>—Pues al calabozo, hasta que le salga.</p>
+				<p>Después de aquella detonación verbal, el silencio era hondo y angustioso. El reloj de Villabona se oía más claro y preciso que nunca. Un escalofrío de terror recorrió la fila. El teniente coronel miraba al comandante, y el capitán al teniente.</p>
+				<p>—¿Qué es eso? ¿Hay ratas por aquí? —dijo el coronel, recorriendo el suelo con la mirada.</p>
+				<p>—Mi coronel… —balbuceó el capitán.</p>
+				<p>—¡Ratas! ¡Ratas en la compañía! Esto es intolerable…</p>
+				<p>Fue cuando Carlitos Cabal, el pelotillero de la compañía, dijo con su voz quebrada:</p>
+				<p>—Es el reloj de Villabona.</p>
+				<p>—¿Un reloj? —gritó el coronel—. A ver, a ver. Villabona, tembloroso, se desabrochó el correaje y sacó de su pantalón la causa de tanta inquietud.</p>
+				<p>La sorpresa de los jefes ante el monstruoso aparato era inenarrable.</p>
+				<p>—¡Qué barbaridad! —exclamó el coronel—. ¿Esto es un reloj? Capitán, ¿cómo consiente usted que un soldado vaya cargado con este artefacto?</p>
+				<p>Todos creíamos que después de aquella escena el capitán iba a enviar el reloj de Villabona al Parque de Artillería; pero no fue así. Villabona, ya en África, seguía transportando su reloj a lo largo de los convoyes y los parapetos.</p>
+				<p>Algún cabo bisoño reforzó las guardias del campamento ante el extraño ruido del reloj de Villabona. Éste, cuando no tenía servicio, permanecía en una esquina del barracón, como adormecido. Dijérase que el sonido del reloj era un idioma entrañable que sólo él entendía. Otro corazón oscuro, perdido en la campaña, ininteligible como el corazón de Villabona.</p>
+				<p>Estábamos en el Zoco-el-Arbaá de Beni Hassam y nos disponíamos a batir al Raisuni en Tazarut. Más de un año llevábamos en África. Por aquellos días empezó a decirse por la compañía que Villabona tenía un hijo.</p>
+				<p>—¿Es verdad eso, Villabona?</p>
+				<p>—Así dice la carta de mi padre.</p>
+				<p>—¿Pero no hace un año que no ves a tu mujer?</p>
+				<p>—Sí.</p>
+				<p>—¿Y entonces…?</p>
+				<p>Villabona se encogía de hombros.</p>
+				<p>—Cuando vuelvas a casa vas a encontrarte con dos o tres hijos más.</p>
+				<p>—Bueno.</p>
+				<p>Y hasta sonreía, como si le halagase aquella prole inesperada. Como si aquella feraz cosecha de hijos fuese dispuesta por el santo patrón de su parroquia.</p>
+				<p>Una mañana me tocó ir entre las fuerzas de protección de aguada. Iba también Villabona. Al hacer el despliegue, unos moros, parapetados detrás de una loma, nos tirotearon. Fue una agresión débil, aislada, de las muy frecuentes entonces en aquella guerra. Cuando el teniente nos reunió de nuevo, faltaba Villabona. Le encontramos detrás de una chumbera, llorando, con el reloj deshecho entre las manos. Un proyectil enemigo se lo había destrozado. El reloj le había salvado la vida. Pero Villabona lloraba con un llanto dulce, desolado y persistente.</p>
+				<p>—Pero, hombre —le dijo el oficial—, ¿por qué lloras? Debieras estar muy contento. Vale más tu vida que tu reloj.</p>
+				<p>El soldado no oía. Sollozaba entre los escombros de su reloj, como si su vida no tuviera importancia al lado de aquel mecanismo que acababa de desintegrarse para siempre. De morir también.</p>
+			</div>
+			<div n="3" type="chapter" xml:id="ne0271_chap3">
+				<head xml:id="ne0271_head_005">3. Cita en la huerta</head>
+				<p>De mis tiempos de Marruecos, durante las difíciles campañas del 21, no logro destacar ningún episodio heroico. Por eso, cuando se habla de aquel pleito colonial y algún amigo mío relata con cierto énfasis, la reconquista de Nador o el ataque a Magán, tomo una actitud prudente y no digo nada. Pero yo no tuve la culpa. Hasta creo que no carezco en absoluto de temperamento para dejarme matar con sencillez por cualquier idea abstracta. Los que me conocen saben que me batí una vez por el honor de una muchacha que luego resultó tanguista, y que en otra ocasión sostuve una polémica de prensa para reivindicar la figura histórica de Nerón, víctima de las gitanerías de Séneca. Yo no tuve la culpa de no ser héroe. Con mis leguis de algodón, mis guantes de gamuza, que originaban la furia de los sargentos por antirreglamentarios, y mi fusil R. 38 751, yo estaba dispuesto a tomar sitio en la Historia, así, sin darle importancia. Vivía esa época de la existencia en la cual nos seducen las más inútiles gallardías. Mi inclinación al heroísmo en aquella época no era sentimiento militar, facilitado en el cuartel al mismo tiempo que las municiones y el macuto; era una oleada de juventud, de altivez e indiferencia ante las cosas peligrosas de la vida. Aun siendo yo un recluta ilustrado, un <seg rend="italic">cuota</seg>, con mi carrera casi terminada, no sentía ningún interés por el que llamaban «nuestro problema de África». Tampoco lograban conmoverme las palabras de los oficiales ni las órdenes y arengas que nos dirigían los jefes de los cuerpos expedicionarios. En cambio, me irritaban los relatos de los paqueos y las trágicas sorpresas en aguadas y convoyes.</p>
+				<p>En este estado de ánimo iba yo para héroe. Sin embargo, los dioses no me lo permitieron. En primer lugar, mi batallón fue destinado a Tetuán, en cuya zona la campaña era menos dura. Y cuando cierta mañana nos disponíamos a marchar al campo para cubrir posiciones de Beni Hassam, me llamó el capitán de mi compañía y me preguntó si sabía francés. Y como sabía francés, quedé destinado en la Alta Comisaría, donde, dicho sea de paso, jamás necesité el francés para nada. Allí se frustró mi vocación heroica.</p>
+				<milestone unit="section"/>
+				<p>De igual manera que carecía de sentido político no poseía la menor capacidad estética. La belleza de Tetuán no me impresionaba. Me parecía un pueblo sucio, maloliente, tenebroso aun en los días de sol. Al sol debía sucederle lo que a mí, puesto que se vertía alborotadamente en todos aquellos lugares que, según los artistas, carecían de interés y de sugestión: la Plaza de España, la calle de la Luneta, la carretera de Ceuta.</p>
+				<p>Yo veía al sol muy europeizado y me sentía tan europeo como él.</p>
+				<p>En cambio, el barrio moro, los soportales de la alcazaba, las callejas que iban como sabandijas bajo arcos y túneles hasta sumirse en la boca húmeda de un portal, me aburrían inexorablemente. El sol tampoco llegaba hasta allí, y si llegaba era para tenderse, como un dogo, a los pies de una mora que permanecía en cuclillas sobre una terraza. Carlos Paredes, otro soldado que además era pintor, me reñía:</p>
+				<p>—Eres un bárbaro, chico, un bárbaro. Pero ¿qué te gusta a ti, vamos a ver?</p>
+				<p>—No sé, no sé. A veces pienso si me faltará espíritu; pero de repente me noto lleno de una ternura inesperada. Ya ves: a mí esas nubes sobre esa azotea, en este silencio de la tarde, me tienen sin cuidado. Pero de pronto pasa un soldado en alpargatas, con su lío al brazo, caminando penosamente hacia el campamento, y me emociona lo mismo que un hombre que va de camino, no sé por qué ni adónde, mientras nuestro automóvil traga carretera como un prestidigitador metros de cinta.</p>
+				<p>—¡Pero, hombre! ¡Tan bonito, abigarrado y curioso como es todo! Los tejedores de seda, los babucheros, los notarios, los comerciantes… Éste es un pueblo elegante y exquisito; está pulimentado por el tiempo, que es el que da nobleza y tono a la vida. En cambio, nuestra civilización todo lo hace ficticio y huidero; estamos enfermos de mentiras y de velocidad.</p>
+				<p>Las mujeres moras sí llegaron a obsesionarme. Ya he dicho antes que mi actitud de entonces ante las cosas era una mezcla de desprecio y desafío. Sólo una librera de la calle de la Luneta y algunas francesas de Tánger quedaron alucinadas en mi zona de seducción como dos avispas bajo un foco. Las hebreas bajaban los ojos con cierta frialdad de raza; me parecía estar mirando una ventana cuyos visillos corre de pronto una mano inadvertida. Las moras, no. Las moras reciben con desdén la mirada del europeo y la sepultan en sí mismas como los pararrayos hunden en tierra la electricidad. Quien las mira pierde toda esperanza de acercarse a ellas; van seguras y altivas por entre los hombres de otra raza, como los israelitas sobre las aguas dictadas por Dios. En vano perdí días enteros siguiendo finas siluetas blancas, que se me evaporaban en los portales como si no fuesen más que sutil tela de atmósfera.</p>
+				<p>El obstinado misterio de aquellas mujeres llegó a desvelarme a lo largo de los meses. Me volví malhumorado y colérico. Dos o tres veces engañé mi afán con mujeres del zoco que ejercían su oficio como las europeas; pero, al fin, mi deseo se veía burlado, como un cazador después de la descarga estéril. Yo quería desgarrar el secreto de una mujer mora, abrir un hueco en las paredes de su alma e instalar en ella mi amor civilizado y egoísta.</p>
+				<p>En otras palabras le dije un día esto mismo a Mohamed Haddú, hijo del Gran Visir, que era amigo mío del café. Haddú me repugnaba, porque era un señorito cínico, que se reía del Corán y de su raza; bebía mucho y se gastaba la plata hasaní del Gran Visir con las cupletistas españolas. Por entonces, Haddú perseguía a Gloria Cancio, tiple de una compañía de zarzuela que actuaba en el teatro Reina Victoria. Esta mujer era amiga mía de Madrid y cenaba conmigo algunas veces. Me fastidiaban su lagotería andaluza, sus mimos de gata sobona; a veces sentía deseos de quitarme de encima sus palabras como uno se quita los pelos del traje. A Haddú le gustaba Gloria. Ésta, en cambio, con notorio exceso de nacionalismo erótico y una más notoria falta de sentido práctico, me guardaba una fidelidad desagradable; odiaba al moro profundamente. Solía decirme:</p>
+				<p>—Cuando me mira, sus ojos me parecen los dos cañones de una pistola que me apunta.</p>
+				<p>—Pero está descargada, tonta.</p>
+				<p>Al conocer Haddú mi desventurado frenesí por las mujeres de su raza, me dijo:</p>
+				<p>—De modo que tú quieres casarte con una mora.</p>
+				<p>—¡Hombre! Tanto como casarme…</p>
+				<p>—Entonces, ¿qué quieres?</p>
+				<p>—Verla sin velos, tenerla cerca, que no me huya. Ser su novio, vaya.</p>
+				<p>—¡Oh, eso es muy difícil! —replicó Haddú—. Pero, oye —dijo después de meditar un poco—, podemos hacer una cosa: yo te llevo al lado de una mujer mora y tú me dejas el sitio libre con la cómica del Reina Victoria.</p>
+				<p>—Pero tiene que ser una mora de verdad, ¿eh? Una hija de familia, como dicen en España.</p>
+				<p>—Sí, hombre; mi hermana Aixa.</p>
+				<p>Aquel Haddú era un canallita. Quedamos en que yo citaría a Gloria para comer y en mi lugar iría el hijo del Gran Visir. Tampoco mi conducta con la tiple era ejemplar, ni mucho menos; pero no estaba yo entonces para sutilezas morales. Ante la probabilidad de conocer una de aquellas mujeres imposibles y mezclar un poco de mi vida a la suya, estaba mi alma indomada, ambiciosa y dispuesta como una flecha en el arco.</p>
+				<milestone unit="section"/>
+				<p>Era una tarde llena de sol. Haddú y yo bajamos a la carretera de Ceuta por la pista del campamento. La casa del Gran Visir tenía a su espalda una de aquellas huertas jugosas y enormes que perfuman todo Yebala. A esta huerta habría de entrar yo para verme con Aixa. Los picachos de Gorgues cortaban por un lado el horizonte; más próximos, dulcificaban el paisaje los valles y cañadas cuya cintura ceñía el río. Recuerdo que topamos con uno de esos convoyes exiguos de los blocaos, un acemilero, un mulo, tres soldados y un cabo, que caminaban con aire de fatiga hacia los olvidados puestos de la montaña.</p>
+				<p>Hasta entonces no se me había ocurrido pensar en detalle la aventura. De pronto, me di cuenta de que iba a cometer una irreparable insensatez. ¿Qué papel sería el mío en la primera entrevista con una mujer exótica, cuyo idioma no conocía siquiera, separada de mí por el océano de una civilización? Pero ya era tarde para rectificar. Haddú abría en el mismo instante una puertecita colocada como un remiendo en la muralla de la huerta, y me empujaba nerviosamente. Me encontré de pronto, solo, bajo la mano de una palmera levantada en ceremoniosos adioses y al lado de una fuente cuyo vaporoso árbol de agua competía en claridad con los floridos naranjos próximos.</p>
+				<p>Y en simultáneo advenimiento apareció Aixa, indecisa y trémula, filtrándose como un poco de luz por el verde tabique de los rosales. Si Aixa fuera una muchacha europea me recordaría como un tonto; tan acobardado, inexpresivo e inmóvil me figuro a mí mismo en aquel momento. Tuve la gran suerte de que Aixa no fuese una señorita de la buena sociedad, acostumbrada a medir la timidez de sus pretendientes, sino una morita de apenas quince años que estaba delante de mí despidiendo sonrisas como una joya despide luz. Estaba sin velos y era como una chuchería recién comprada a la que acababan de quitar la envoltura de papel de seda. Morena. Pero una morenez de melocotón no muy maduro, con esa pelusa que hace la piel de la fruta tan parecida a piel de mujer.</p>
+				<p>La recordaré siempre delante de mí, porque mi estupor de entonces fue una especie de tinta china para estampar bien la imagen de Aixa en mi memoria. No llevaba velos. Un justillo de colores vivos, bordado en plata y oro, le cerraba el busto. Vestía también unos calzones anchos, como los holandeses, y se ceñía la cintura con una faja de seda azul. Llevaba medias blancas y babuchas rosadas guarnecidas de plata. La llamé al recobrarme:</p>
+				<p>—¡Aixa!</p>
+				<p>Se llevó el dedo índice a los labios recién pintados, en ademán de silencio. Después se acercó a mí, lentamente, colocó sus manos de uñas rojas sobre mis hombros y estuvo contemplándome atentamente unos segundos. Y cuando yo quise prenderla con mis brazos tontos, mis brazos que aquel día no me sirvieron para nada, ella dio un brinco y se puso fuera de mi alcance. De un macizo de claveles, grande como un charco de sangre, arrancó uno, rojo, ancho y denso, y me lo arrojó como un niño arroja una golosina a un león enjaulado. Después huyó ligera y no la volví a ver. No sé cuánto tiempo estuve allí, al lado de la alta palma, extático, con el clavel en la mano como una herida palpitante.</p>
+				<p>En vano vigilé muchas tardes la huerta de Aixa y los ajimeces de su casa. En vano hablé a Haddú. No la volví a ver más.</p>
+				<milestone unit="section"/>
+				<p>Aquel suceso me desesperó tanto que pedí la incorporación a mi Cuerpo, destacado en Beni Arós. Nuestro campamento era como un nido sobre un picacho. Me pasaba los días durmiendo y paseando por el recinto, y las noches de servicio en el parapeto. Un día se destacó una sección de mi compañía para asistir a la boda de un caíd. Me tocó ir. El espectáculo era animado y pintoresco. Asistían los montañeses armados, las jarkas, los regulares. La caballería mora era como un mar ondulante, donde cada caballo resultaba una ola inquieta. El aire estaba repleto de gritos y de pólvora. Las barbas blancas de los caídes formaban un zócalo lleno de gracia y de majestad sobre la masa oscura de los moros jóvenes alineados al fondo.</p>
+				<p>Entre el estruendo y la algarabía de la fiesta vi aparecer a los nuevos esposos, a caballo. Los velos, las ajorcas y los collares de la mora refulgían espléndidamente. Miré sus ojos. ¡Oh, Aixa! La novia era Aixa, la hija del Gran Visir. Aquellos ojos eran los mismos que me alucinaron una tarde en Tetuán y que yo llevaba como dos alhajas en el estuche de mi memoria. Ella no me vio. ¡Cómo me iba a ver! En la larga fila vestida de kaki, yo era el número dieciocho para doblar de cuatro en fondo.</p>
+				<p>No recuerdo bien lo que sucedió después. Pero debí cometer muchas inconveniencias, porque cuando regresamos al destacamento oí que el teniente decía al capitán, señalándome:</p>
+				<p>—Este chico no parece estar en sus cabales. Sería conveniente que fuese al hospital para que lo vieran.</p>
+				<p>Nada de esto tiene, sin duda, importancia; pero es lo único saliente que me ha sucedido en Marruecos. Lo cuento porque dejó en mí un desasosiego especial, algo como la sensación ínfima, penosa y lejana de una herida ya en cicatriz.</p>
+			</div>
+			<div n="4" type="chapter" xml:id="ne0271_chap4">
+				<head xml:id="ne0271_head_006">4. Magdalena roja</head>
+				<p>Confieso que la única persona que me desconcertaba en las juntas del Sindicato era la compañera Angustias. Ya entonces tenía yo fama de orador. Cuando pedía la palabra en el tumulto de las discusiones, se apaciguaba el oleaje verbal, y los camaradas, aun aquellos que a lo largo del discurso habían de interrumpirme con frases más duras, adoptaban una postura cómoda para escucharme.</p>
+				<p>—Callarse. A ver qué dice el <seg rend="italic">Gafitas</seg>.</p>
+				<p>Debía el apodo a mi presbicia precoz, disimulada por las gafas de concha. En realidad, la mitad de mis éxitos oratorios nacen de este defecto óptico. Ya en pie, los oyentes, uno a uno, no existían para mí. Tenía delante una masa espesa, indeterminada, convertida, todo lo más, en materia dialéctica. Como no veía concretamente a nadie, ni llegaban a mí los gestos de aprobación o desagrado, exponía fácilmente mis ideas y permanecía aislado de toda coacción externa. Eso me daba un aplomo y una serenidad de tal índole que mis palabras se ceñían al argumento como la piel al hueso. A veces, una opinión mía provocaba una tempestad de gritos. Pero mi voz se abría paso como el rayo entre el clamor de la tormenta. A veces me insultaban.</p>
+				<p>—¡Charlatán! ¡Político!</p>
+				<p>—¡Palabras, no! ¡Acción!</p>
+				<p>—¡Intelectual! Sois una m… los intelectuales.</p>
+				<p>—¡Niño! ¿Qué sabes tú de eso?</p>
+				<p>Esta interrupción era la que prefería Angustias y me azoraba mucho. Porque yo comprendía que a mis discursos les faltaba la autoridad que dan los años. Era demasiado joven para conducir aquella milicia frenética de alpargatas, de trajes de mahón, con el alma curtida por el rencor de muchos siglos de capitalismo. Para ellos las palabras mágicas eran «huelga», «sabotaje», «acción directa». Yo sabía lanzarlas a tiempo, seguro de su efecto. Pero, enseguida, la asamblea se daba cuenta de que aquel que las pronunciaba las había aprendido en Marx o en Sorel y no en la bárbara escuela del trabajo manual. Aun ahora echo de menos en mi espíritu la disciplina del proletario, del hombre que ha conocido la esclavitud de la ignorancia y del jornal. Sólo ése posee un corazón implacable, ciego y cruel, un corazón revolucionario.</p>
+				<p>Yo, ¿por qué negarlo?, era un muchacho de la clase media, un <seg rend="italic">dilettante</seg> del obrerismo. El «gran hecho ruso», como le llamaban los semanarios a la dictadura de Lenin, me había entusiasmado de tal modo que me di de alta en el Sindicato Metalúrgico. Yo era perito químico en una fábrica de metales y estaba a punto de obtener el título de ingeniero. En mi cuarto había una cabeza de Lenin dibujada por mí mismo; una gran cabeza mongólica, a la que contemplaba con exaltada ternura, mientras abajo, en la calle, corrían, alegres, los automóviles charolados. Muchas veces evoco aquel cuarto, donde mis pasos latían como un rumor de la propia entraña del mundo. ¡Qué impaciencia por vivir, por luchar, por dejar de ser una oscura gota del torrente urbano! Y, a veces, el generoso pesimismo de los veinte años, el vago anhelo de morir por el simple hecho de que una mujer no se ha fijado en nosotros, o porque estuvimos torpes en una disputa, o porque el correo no ha traído la cita ofrecida la noche antes. En aquel cuarto esculpía mi pensamiento universos que minutos después quedaban convertidos en polvo.</p>
+				<p>Pero, siempre, mi conciencia acechaba como un centinela que tuviese la consigna de la duda. Yo me encontraba sin fuerzas para trazar una vida dura, obstinada, rectilínea. Lenin, huraño, enfermo, mal alimentado en su cuchitril de Berna, sin ropa para salir a la calle, era el atroz remordimiento de mi soledad. Porque yo sentía la carne gravitar constantemente sobre mi espíritu, y toda la vida circundante se convertía en tentación de mis sentidos. No era puro mi rencor contra el burgués del automóvil y del abrigo de pieles. Y, sin embargo, no podía ser más repugnante aquella multitud ventruda y cerril que llenaba los teatros y los salones de té y se esparcía por toda la ciudad con su escandaloso rastacuerismo.</p>
+				<p>Pero el rival más temible de mi obra era el deseo erótico. Yo iba por las calles enredándome en todas las miradas de mujer; y tenía que ir quitándolas de mis pasos como si fueran zarzas o espinos. Aquello me perdía para la <seg rend="italic">causa</seg>. Pascual, el líder, con su sonrisa, que era lo mismo que una grieta de sol entre la nube de la barba, me disculpaba con frecuencia:</p>
+				<p>—Este <seg rend="italic">Gafitas</seg> es un muchacho que quiere sorberse el mundo con una paja, como quien se toma un refresco. Ya parará.</p>
+				<p>Angustias, sin embargo, no me lo perdonaba. Tan altiva, tan firme, tan fanática. Según ella, yo no tenía más que una visión literaria de la vida y en la primera ocasión me pasaría al campo de enfrente.</p>
+				<p>—Usted —solía decirme— no es de los nuestros. Usted es un señorito. No, no se enfade, <seg rend="italic">Gafitas</seg>; usted no tiene la culpa. El atavismo, hijo, el atavismo. Mi odio contra todo esto ha venido acumulándose de generación en generación y estallará en mí cuando esta mano, ésta que usted ve tan pequeña, lance la bomba en una iglesia, en un banco o en uno de esos reales clubes que hay por ahí.</p>
+				<p>—Esa mano —le contestaba yo en voz baja— no tirará más que besos.</p>
+				<p>—¡Puaf! ¡Qué asco me da usted! Como los señoritos. Como los señoritos.</p>
+				<milestone unit="section"/>
+				<p>Los compañeros decían que Angustias era la amante de Pascual Domínguez; pero no pude comprobarlo nunca. Es cierto que aquella mujer áspera, dominante, voluntariosa, era otra al lado del viejo propagandista. Pero más bien su actitud de entonces parecía de discípulo, de escolar que aprende la más difícil asignatura. Cuando Pascual hablaba con su voz sustanciosa y caliente, Angustias sufría algo así como una transfiguración. Resplandecían sus ojos metálicos, y seguían, anhelantes, el ademán y la palabra, como golondrinas detrás de la golondrina guía. Lo que más fácilmente se confunde con el enamoramiento es la admiración.</p>
+				<p>Pascual Domínguez la había encontrado en América, durante uno de sus viajes de agitador. Se decía que Angustias había sido corista de zarzuela, maestra rural y querida de un millonario. Pero nadie conocía, a ciencia cierta, su pasado. Cuando yo la conocí era ya una mujer de más de treinta años, con el cuerpo duro y firme y el cabello negro y brillante como el plumaje de los cuervos. Se ganaba la vida haciendo muñecas de trapo, de esas que se ven en los grandes bazares, en los gabinetes de las casas elegantes y en las alcobas de las meretrices de precio. Yo la irritaba con mis bromas.</p>
+				<p>—Anoche he visto una de sus muñecas en casa de una amiga mía. Es preciosa.</p>
+				<p>—¿Quién? ¿La amiga?</p>
+				<p>—No, no. La muñeca.</p>
+				<p>Me lanzaba, como dos piedras, sus ojos iracundos; pero yo creo que era para disimular algo. Porque Pascual me lo dijo una tarde:</p>
+				<p>—Es curioso lo que le sucede a Angustias. Ya la oye usted despotricar contra los trabajadores que tienen hijos, porque dice que es criminal prolongar el dolor del mundo. Afirma que es preciso destruirlo con la infecundidad. Pues bien, quiere a sus muñecas como si fueran hijas suyas. Recorre los escaparates para verlas por última vez. A veces llega con el semblante opaco y me dice: «La del Bazar González, aquella del sombrerito verde, ya no está». Y añade: «Bueno, era graciosilla, ¿verdad?».</p>
+				<p>A los pocos días, por mortificar a Angustias, escribí estas cuartillas y se las mandé a su casa por un <seg rend="italic">continental</seg>:</p>
+				<quote>
+					<p>«Carta de mamá a la muñeca del sombrerito verde. En el hotel de Consuelo López, bailarina de El Cabaret Rojo.</p>
+					<p>»Niña mía: Ayer fui a verte, por la mañana. La mañana era como una esfera de cristal, tan frágil, que yo temía verla romperse con los bocinazos de los automóviles y los timbres de los tranvías. A las puertas de los cafés brotaba el arco iris de los aperitivos. Por las aceras, con libros debajo del brazo y alguna con un violín enfundado, iban niñas como tú, mayores que tú, con más vida que la que yo te di, muñequita perdida ya para mis manos. Los húsares, con sus grandes plumas; los barquilleros, con su caja a la espalda como otro barquillo rojo y tremendo; las <seg rend="italic">nurses</seg>, vestidas de chocolate; todo lo que a ti te encantaría desde tu escaparate delirante de colores y destellos. Había también mujeres con pieles, y como llevaban abrigos abiertos, diríanse rajadas desde el cuello hasta los muslos para enseñar por la herida reciente los intestinos de crespón de los vestidos.</p>
+					<p>»Yo iba a verte otra vez, hija de mis horas de obrera, a esa inclusa del bazar donde ya jamás podré recuperarte. Y, al ver que no estabas, el odio que llevo encharcado en las entrañas afluía a mi boca y a mis ojos. Me daban ganas de insultar a los transeúntes, a esas mujeres elegantes y despreocupadas a quienes divierten mis muñecas. Porque nadie sabe el seco dolor que me has costado y la amargura que han bebido mis pinceles para crear el alegre mohín de tus labios y tus ojos. Ahora te veo reclinada en un diván frente a la porcelana japonesa y el indispensable mantón de flecos. El gabinete de una cupletista española está amueblado por el estilo de su alma, que tiene por todo adorno un cuplé patriótico, unos versos de revista ilustrada y una cartilla de la Caja de Ahorros. Te compadezco, niña mía, porque tú, tan pintoresca, tan moderna, tendrás que soportar el álbum de postales iluminadas, el piano que no sabe más música que la de Guerrero y el patán ensortijado que saliva en el piso y devora ronchas de jamón a las tres de la mañana.</p>
+					<p>»Perdóname. Yo no quise darte un destino tan duro. Me consuela pensar que algún día se abrirá para ti la tumba de un baúl, o que perecerás en las manos de una niña que querrá descubrir el secreto de mi arte de hacer muñecas».</p>
+				</quote>
+				<p>Al día siguiente encontré a Angustias en el Centro y me increpó:</p>
+				<p>—He quemado sus cuartillas, y enseguida me lavé los dedos, no tan manchados de ceniza como de sensiblería. ¡Pero qué literato más cursi es usted! ¿Y usted quiere hacer la revolución? ¡Vamos, hombre! Dedíquese a escribir novelas blancas para las burguesitas. A mí me importan un rábano mis muñecas después de venderlas. Y antes también. Porque me da rabia pensar en el esfuerzo que me cuestan. Lo de menos es que diviertan a las señoritas estúpidas. Me irrita, sobre todo, tener que dedicarme a esto.</p>
+				<p>—Entonces, ¿qué querría usted hacer?</p>
+				<p>—¿Yo?</p>
+				<p>Iba a decírmelo; pero se arrepintió en el acto:</p>
+				<p>—Nada, nada, <seg rend="italic">Gafitas</seg>. ¿Para qué vamos a hablar? No merece la pena.</p>
+				<p>Lo cierto es que Angustias, a fuerza de altivez, se apoderaba de los resortes de mi vida. Yo veía que mi vida estaba entre sus manos. Pero lo inquietante era sentirme entre sus manos como una cosa inútil, más inútil que el paño o el cartón de sus muñecas. Angustias valoraba a los hombres por su capacidad revolucionaria; era una obrera de la idea. Ante un obrerillo insignificante que acariciaba a escondites su <seg rend="italic">star</seg>, como quien mima un tigre domesticado, le centelleaban los ojos igual que carbones removidos. Le decía:</p>
+				<p>—¿Qué tal? ¿La has probado?</p>
+				<p>—Sí. El otro día en los desmontes. Es superior.</p>
+				<p>—Pero las armas no valen nada. Hay que tener corazón.</p>
+				<p>—¡Anda! ¡Pues claro! Yo lo tengo. Que se atrevan los del Libre…</p>
+				<p>—Di que sí, chico. Para eso eres hombre. ¡Duro con los esquiroles!</p>
+				<p>Una tarde salía yo de casa y me encontré a Angustias en la calle. Era al anochecer y la ciudad acababa de prenderse los alfileres de sus focos para entrar, brillante y dadivosa, en una tibia noche de mayo. Serpenteaban los anuncios luminosos, como si estableciesen pugilato con los timbres y las bocinas de los coches. Las gentes se agrupaban en las taquillas de los cines, o formaban murallas humanas al borde de la acera, esperando que los guardias, con gesto de domadores, detuviesen el rebaño de bestias mecánicas.</p>
+				<p>—Adiós, Angustias.</p>
+				<p>—Sería raro no encontrarle; usted anda por la calle a todas horas. Detrás de alguna chica, ¿eh?</p>
+				<p>—Pues no. Salía a dar un paseo.</p>
+				<p>—Lo mismo que yo. Esta tarde estaba aburrida. Casi, casi, melancólica.</p>
+				<p>—¡Qué raro!</p>
+				<p>—Sí, es raro; esto no me da nunca. Lo que hago es ponerme de mal humor.</p>
+				<p>—¿Quiere usted que sigamos juntos?</p>
+				<p>—Bueno.</p>
+				<p>—Podemos entrar en un café de éstos a tomar cualquier cosa.</p>
+				<p>—No. En los del centro no me gusta. Vamos a un bar de barrio, de esos que tienen pianola. Abandonamos las calles céntricas y atravesamos pasadizos angostos alumbrados con gas.</p>
+				<p>De vez en cuando teníamos que dejar la acera por que tropezábamos con parejas de novios adosadas a las fachadas y a las vallas. De las tabernas salían bocanadas de escándalo con alguna blasfemia silbando como una hala. Angustias censuraba siempre:</p>
+				<p>—Esto es lo que nos pierde. Son brutos; no piensan y se someten.</p>
+				<p>—No se empeñe usted, Angustias. La disciplina quitará interés a la vida. Reglamentarlo todo, someter la existencia a una organización, quizá nos haga más infelices.</p>
+				<p>Los ojos de Angustias fosforecían en la sombra:</p>
+				<p>—Pues mientras tanto no seremos la fuerza, no seremos nada.</p>
+				<p>—Pero ¿por qué está usted tan resentida con la vida? ¿Qué le ha pasado a usted?</p>
+				<p>No me contestó porque entrábamos en una animada calle de los suburbios.</p>
+				<p>—Aquel bar me gusta. A veces vengo aquí con Pascual.</p>
+				<p>Entramos. No había mesas vacías y el camarero nos colocó en la que ocupaban dos individuos con traza y gesto de choferes. Discutían mucho acerca de una mujer.</p>
+				<p>—Te aseguro que es una birria en cuanto se quita la ropa.</p>
+				<p>—Me vas tú a decir… ¡Vamos, hombre!</p>
+				<p>Pedimos dos vermuts. Un endiablado <seg rend="italic">jazz-band</seg> negro alborotaba, incansable, entre la indiferencia de la clientela que hablaba a gritos para imponerse a la música y consumía aperitivos y aceitunas. Angustias, volcando sobre mí las sombras más ocultas de sus ojos, me dijo:</p>
+				<p>—En efecto, <seg rend="italic">Gafitas</seg>; yo soy una resentida, como usted dice. ¿Usted sabe por qué yo no he querido entrar antes en uno de esos cafés del centro? Porque ahí está todo mi pasado. Sí, mi pasado, mi vileza. Yo he vestido pieles y he tenido automóvil a mi puerta. Esto parece un folletín, pero es una historia. Y un día, ¡me daba aquello tanto asco!, la ciudad, el hotel, el hombre de las joyas, todo, que lo tiré como quien tira un cesto de basura a un vertedero. De repente, aquí, en la entrañas, sentí que me nacía la conciencia; una cosa muy rara, un odio, un rencor… Ahora padezco más pensando en mi juventud que en mi hambre de niña. A nadie se lo cuento. ¿Para qué? Pero hoy me han dado tristeza la calle y la casa. Hasta ese <seg rend="italic">jazz-band</seg> que toca tan inútilmente.</p>
+				<p>—¡Magdalena roja!</p>
+				<p>Y en aquel mismo instante vi aquella mujer tan alejada de mí, con un alma tan diferente a la mía, que la hubiera estrangulado en un abrazo.</p>
+				<milestone unit="section"/>
+				<p>A los pocos días se declaró una huelga general. Las patrullas de caballería resonaban dramáticamente en la oquedad de las calles sin vehículos. Cientos de obreros, como hormigas ociosas, entraban y salían en el Centro a inquirir noticias, a disputar y a comentar el conflicto que tenía suspensa y atemorizada a la ciudad. Los más extremistas, azuzados por Angustias, hablaban de utilizar las pistolas contra los guardias. Pascual Domínguez, sin embargo, no era partidario en aquella ocasión de la violencia, porque sabía que los sindicatos no estaban todavía preparados para una lucha así. Con el pretexto de unos despidos, él había iniciado la huelga a modo de un recuento de fuerzas. Todos sus discursos tendían a sujetar a aquella fiera policéfala, desmelenada, que vibraba en los bancos mugrientos cada vez que se hablaba de la tiranía patronal.</p>
+				<p>—Daremos la batalla —me decía Domínguez— cuando se nos crea atemorizados.</p>
+				<p>Angustias se había aliado con los elementos comunistas y anarquistas y predicaba el terrorismo a espaldas de Pascual Domínguez. Una tarde me llamó.</p>
+				<p>—<seg rend="italic">Gafitas</seg>, usted es un cobarde.</p>
+				<p>Debí palidecer de rabia.</p>
+				<p>—Y usted una imprudente, Angustias.</p>
+				<p>—Un cobarde. Porque Pascual aconseja calma lleno de responsabilidad. Pero usted lo hace porque le falta corazón.</p>
+				<p>—Me sobra para todo; hasta para meterla a usted en él para siempre.</p>
+				<p>—Lo que yo digo: un corazón de tanguista. Y si no, demuéstrelo usted.</p>
+				<p>—Tonterías, no.</p>
+				<p>—¡Qué juventud tan reflexiva! Es usted un excelente hijo de familia.</p>
+				<p>—¡No me irrite!</p>
+				<p>—¡Cobarde! ¡Cobarde! ¿A que no se atreve a acompañarme esta tarde?</p>
+				<p>—¿Adónde? ¡Alguna locura!</p>
+				<p>—A la fábrica de hilados. Pondré una bomba.</p>
+				<p>—No haga usted eso.</p>
+				<p>—Lo haré.</p>
+				<p>—Lo echará a perder todo.</p>
+				<p>—Mejor. Necesito sangre, incendio. ¡Muerte!</p>
+				<p>El incendio lo tenía Angustias en los ojos. Parecía que empezaba a arder por allí.</p>
+				<p>—No se asuste, hombre. A mí me divertirá mucho. El pánico saltará de casa en casa; hará desmayarse a las burguesitas y temblar a esos hombres gordos que salen a pasear por las tardes protegidos por la autoridad y el orden.</p>
+				<p>—¡Así no se adelantará nunca nada!</p>
+				<p>—No lo crea, <seg rend="italic">Gafitas</seg>. Nuestra fuerza está en que todo lo tenemos perdido.</p>
+				<p>Y luego, con una voz de tañido dulce, una voz que inyectaba en mí el veneno del heroísmo inútil:</p>
+				<p>—Usted no tiene que hacer nada; acompañarme únicamente.</p>
+				<p>—En todo caso lo haría yo solo.</p>
+				<p>—Yo, yo. Quiero para mi vida ese placer. Quiero destruir algo con mis manos. ¿Vendrá usted?</p>
+				<p>—¡Angustias!</p>
+				<p>—Ese peligro nos unirá para siempre.</p>
+				<p>—Iré.</p>
+				<p>—Gracias. Mañana, a las ocho de la noche, espéreme en el bar del otro día. Vístase de otro modo; como un artesano en domingo.</p>
+				<p>—Pero hay que preparar la huida.</p>
+				<p>—Yo me encargo de eso. Hasta tengo dinero.</p>
+				<p>Estuve a punto de buscar a Pascual Domínguez y contárselo todo. Pero podía más en mí la promesa de Angustias de unirme a su vida con aquel secreto trágico. Además, el solo pensamiento de que ella pudiera considerarme un cobarde y adivinar mi flaqueza interior lubricaba mi ánimo hasta dejarlo propicio al atentado. Sufrí bastante al darme cuenta de que mi espíritu había caído desde la cumbre de las ideas al vórtice de la pasión erótica.</p>
+				<p>Al día siguiente conseguí de un electricista amigo mío que me prestase su traje y su gorra. Me caractericé delante del armario de mi cuarto como para salir a escena. El traje influyó en mis nervios de tal modo que asistí, casi alegre, al espectáculo de mi propia metamorfosis. Ya no era Carlos Arnedo, alumno de la Escuela de Ingeniería, sino un jornalero anónimo dispuesto a servir la causa sindical. En realidad, me estorbaban el sombrero de fieltro, la trinchera y la camisa de seda para entender la <seg rend="italic">Teoría de la violencia</seg>, de Sorel. Entonces pensé, no sé por qué, si el alma no será también cuestión de indumentaria.</p>
+				<p>Aproveché un instante en que el pasillo de la pensión estaba desierto y me lancé escaleras abajo. Pero no contaba con el portero, apostado en el vestíbulo y dispuesto a ejercer, con el primero que topase, su misión inquisitiva. Dudé si inventar una historia de mujeres para despistarlo o escapar temerariamente a su investigación; opté por lo último, y, al verle de espaldas, salí corriendo, mientras detrás de mí rodaba la temible voz:</p>
+				<p>—¡Eh! ¡Eh! ¿De dónde viene usted? ¡Oiga!</p>
+				<p>En un taxi fui hasta el bar de la cita.</p>
+				<p>No eran las ocho todavía; pero ya estaba allí Angustias vestida de obrera… ¿Con un niño en brazos? Sí; con un niño en brazos.</p>
+				<p>—¡Estupendo, <seg rend="italic">Gafitas</seg>, estupendo! ¡Ahora sí que es usted de los míos!</p>
+				<p>—Pero… ¿y ese niño?</p>
+				<p>—Mi hijito. Véalo.</p>
+				<p>Me acercó el envoltorio. Era una muñeca enrollada en una manta de lana.</p>
+				<p>—Para algo serio habían de servir mis muñecas —murmuró Angustias en voz baja.</p>
+				<p>—¿Y aquello?</p>
+				<p>—Aquí en la manta. No tengo más que desdoblarla. Pero pesa un horror.</p>
+				<p>—Tendremos que ir en un taxi.</p>
+				<p>—Está a la puerta; lo guía un compañero de toda confianza. La fábrica está rodeada de Guardia Civil, que protege a los esquiroles. Yo diré que soy la mujer de uno de los del turno de noche y que necesito hablarle. A usted no le dejarán pasar; pero yo, con el niño, no despierto sospechas. La dificultad está en entrar, prender la mecha y salir antes de los diez minutos.</p>
+				<p>—¿Cuánto durará la mecha?</p>
+				<p>—Un cuarto de hora.</p>
+				<p>—¿De manera que yo?…</p>
+				<p>—Usted entretiene a los guardias y procura colocarse siempre de modo que no puedan detallar su rostro. Ayer estuve viendo aquello y hay muy poca <seg rend="italic">luz</seg>.</p>
+				<p>Hablaba con una frialdad indescriptible. ¿En qué dramáticas experiencias se había templado el carácter de Angustias para permanecer impasible con la muerte en los brazos? La muerte iba disfrazada aquella tarde de niño recién nacido, y saldría de las entrañas de la anarquista como un monstruo que vomitase devastación y crimen. Pero ¡quién sabe! Quizá aquel hijo tremendo de Angustias, aquel que se mecía sobre su pecho intacto, fuese el Mesías de la humanidad futura.</p>
+				<p>—¡Vámonos!</p>
+				<p>La seguí avergonzado de mí mismo. Porque mientras ella entraba, inconmovible, en el auto, mi sangre se batía como las aguas de dos corrientes opuestas. El coche arrancó sin que ninguno cambiara una sola palabra con el conductor.</p>
+				<p>A los pocos minutos estábamos en una calle inmediata a la fábrica de hilados. Descendimos, y a los pocos metros apareció la fábrica, jadeante y siniestra. Dos focos eléctricos, como dos alabarderos gigantes, iluminaban la explanada. El edificio parecía haber absorbido las construcciones próximas, porque se levantaba solo y dominante. Más abajo había campo, desmonte, silencio urbano.</p>
+				<p>Parejas de guardias cabalgaban por los alrededores. Pero no debía temerse nada porque hubimos de detenernos para dar lugar a que un guardia se acercase, espoleando un caballo somnoliento.</p>
+				<p>—¿Adónde van?</p>
+				<p>—A la fábrica. Mi marido trabaja ahí —contestó Angustias.</p>
+				<p>—Hay orden de que no pase nadie a estas horas —repuso el guardia.</p>
+				<p>—Es que… Mire usted dije yo, la cosa es urgente.</p>
+				<p>Se trata de darle un recado esta misma noche. Porque como hasta el amanecer no deja el trabajo…</p>
+				<p>—Bueno, bueno. Se lo diré al cabo.</p>
+				<p>Vino el cabo, que nos increpó con voz agria.</p>
+				<p>—¿No saben ustedes que por la noche no se puede entrar?</p>
+				<p>—Es que yo he pasado la tarde fuera de casa respondió Angustias, y mi marido se llevó la llave. Ahora no puedo entrar, y el niño…</p>
+				<p>El cabo contempló un segundo el tierno envoltorio, y dirigiéndose a mí dijo después:</p>
+				<p>—¿Lleva usted armas?</p>
+				<p>—No, señor.</p>
+				<p>—Regístrelo, García.</p>
+				<p>García echó pie a tierra y me cacheó.</p>
+				<p>—No lleva nada.</p>
+				<p>—Bien; pasen ustedes —replicó el cabo. Esto lo hago bajo mi responsabilidad, ¿eh? No sé cómo salen de casa con niños…</p>
+				<p>Pero la puerta de la fábrica estaba cerrada. Angustias oprimió el timbre.</p>
+				<p>—¿Y ahora? —le dije yo en voz baja.</p>
+				<p>—Ahora preguntamos por un nombre cualquiera.</p>
+				<p>Salió el ordenanza.</p>
+				<p>—¿Qué desean?</p>
+				<p>—Hablar un instante con mi marido, que trabaja aquí.</p>
+				<p>—¿Cómo se llama?</p>
+				<p>—Pedro Estévez.</p>
+				<p>—Bueno; esperen ahí, que preguntaré.</p>
+				<p>—Oiga, buen hombre. Es que quería darle de mamar al niño, mientras tanto, y aquí hace relente. ¿No podría pasar a cualquier rincón?</p>
+				<p>El ordenanza vaciló.</p>
+				<p>—El caso es que no hay permiso… En fin, pasen aquí, al cuarto del conserje, mientras busco a su marido. ¿Dice usted que se llama?</p>
+				<p>—Pedro Estévez. Es de los nuevos.</p>
+				<p>—En el cuarto del conserje había una mesa, varias sillas y una percha con ropa. Apenas salió el ordenanza, Angustias se sentó, desdobló la manta y sacó una caja alargada con una guita enrollada. La colocó debajo de la mesa y extendió la guita a lo largo de la pared. Yo debía de estar lívido.</p>
+				<p>—Ahora hay que encender —dijo Angustias.</p>
+				<p>—Pero ¿y si tarda?</p>
+				<p>—Nos da tiempo a escapar.</p>
+				<p>Gritará y nos echarán mano los guardias.</p>
+				<p>—Pues hay que encender. Sostén la muñeca.</p>
+				<p>Sacó del pecho una caja de cerillas y prendió fuego a la guita.</p>
+				<p>—¿Viene?</p>
+				<p>—No.</p>
+				<p>—Pues vámonos.</p>
+				<p>—No puede ser.</p>
+				<p>Con espanto vi que la llamita, tan débil, tan insignificante, corría por la cuerda como un gusano.</p>
+				<p>Angustias me arrancó la muñeca y se plantó en la puerta de la estancia a tiempo que volvía el ordenanza.</p>
+				<p>—Dicen que ése no trabaja aquí.</p>
+				<p>—Pues él me dijo que aquí. Será en la otra fábrica.</p>
+				<p>—Será.</p>
+				<p>—Muchas gracias. ¡Qué fastidio!</p>
+				<p>El ordenanza nos abrió la puerta con rostro contrito. A paso largo, sin ver a Angustias, crucé la explanada.</p>
+				<p>—No corra, por Dios, que es la perdición.</p>
+				<p>Aún tropezamos con el cabo:</p>
+				<p>—¿Qué, encontró a su marido?</p>
+				<p>—Sí; muchísimas gracias.</p>
+				<p>Yo caminaba automáticamente y llevaba en la nuca el frío de los ajusticiados. Hasta que me derrumbé en el asiento del taxi, que se puso a correr como enloquecido a través de la ciudad. Angustias tiró el envoltorio y abandonó las manos sobre mis hombros.</p>
+				<p>—<seg rend="italic">Gafitas</seg>: ahí detrás hemos sembrado la muerte, la justicia. Ya le dimos algo a la idea. Quizá ahora mismo… ¿Vale algo para usted un beso mío?</p>
+				<p>—No quiero otro premio.</p>
+				<p>—Pues tómelo.</p>
+				<p>Y su boca grande y un poco áspera descargó en la mía un beso imponente, eléctrico, rápido y penetrante como un fluido.</p>
+				<p>—Después de esto, Angustias, doy el pecho, sin temblar, a los fusiles del piquete.</p>
+				<p>—Se trata de lo contrario. El coche nos dejará en un sitio seguro. Durante dos o tres días permaneceremos escondidos, hasta que las circunstancias digan lo que debemos hacer.</p>
+				<p>El coche paró en una calle bastante céntrica. Penetramos en una casa que yo no había visitado nunca y allí nos dio de comer una mujer de cabello gris. Más tarde, en una alcoba antigua, Angustias me ofreció la fiesta de sus caricias, una especie de conjunción de amor y muerte. Me dormí muy tarde, agotado. Al día siguiente, Angustias me despertó. Blandía un periódico, rabiosa.</p>
+				<p>—Una desgracia, Carlos. La bomba no estalló; el ordenanza apagó la mecha. Y, además, lee, lee; la huelga está solucionada. El Comité firma hoy las bases de arreglo.</p>
+				<p>Mi alma, en cambio, encogida la víspera por el remordimiento, se derramaba de nuevo por todo mi ser como una alegre inundación.</p>
+				<milestone unit="section"/>
+				<p>El desastre de Marruecos me llevó al cuartel otra vez. Yo había hecho cinco meses de servicio, comprando el resto por la módica cantidad de dos mil pesetas. Pero al sobrevenir Annual me llevaron a filas para que contribuyese a restaurar el honor de España en Marruecos. Angustias era derrotista y me aconsejaba:</p>
+				<p>—No debes ir.</p>
+				<p>—¿Qué remedio me queda?</p>
+				<p>—Márchate, emigra.</p>
+				<p>—Ya no es posible. Además, seria un desertor.</p>
+				<p>—¡Un hombre de tus ideas con uniforme!</p>
+				<p>—¡No parece sino que el comunismo no tiene ejército!</p>
+				<p>—Pero es el ejército de la Revolución.</p>
+				<p>—Te prometo matar el menor número posible de moros.</p>
+				<p>—¡Estúpido!</p>
+				<p>—Pero ¿no comprendes que es imposible?</p>
+				<p>—A mí no me hables más. Eres un farsante.</p>
+				<p>Fui al cuartel, naturalmente. Y para acabar de ganarme la antipatía de Angustias hasta me hicieron sargento. El sargento Arnedo instruía a los soldados bisoños en los sagrados deberes de la patria y la disciplina. Cuando en el patio del cuartel, después de la misa reglamentaria, se cantaba <seg rend="italic">La canción del soldado</seg>, el sargento Arnedo sentía una voz interior que le gritaba <seg rend="italic">La internacional</seg>. Era la voz de Angustias, cargada de recuerdos, mezclada con apasionadas confidencias, que había quedado allí dentro, como el mar en las caracolas. Voz querida y viva, intransigente y soñadora; voz de un mundo imposible, construido con la frágil materia de la imaginación. Y, sin embargo, allí, delante de mí, estaba el pueblo armado, armado por una idea que venía corrompiéndose a lo largo del tiempo en las páginas de los Códigos y en las palabras de los hombres.</p>
+				<p>—¿Qué es la Patria? —le preguntaba a cualquier soldado de aquellos que limpiaban su correaje en un rincón.</p>
+				<p>—Yo… mi sargento, como fui tan poco tiempo a la escuela…</p>
+				<p>—Tu patria es España, hombre. Claro que si fueras alemán sería Alemania. Ya ves qué fácil…</p>
+				<p>La mañana que salimos para Marruecos era una mañana de cristal. Como en un vaso aparecía en el horizonte la naranja del sol naciente. Los soldados desfilaban hacia la estación medio encorvados, ya por el peso de las mochilas y de las cartucheras. La banda del regimiento tocaba un pasodoble de zarzuela; aquel «Banderita, banderita» encanallado por las gargantas de todas las segundas tiples. Y era espantoso marchar a la guerra entre los compases que horas antes, en las salas de los <seg rend="italic">cabarets</seg>, habían servido para envolver las carcajadas de los señoritos calaveras, nietos de aquellos otros que tenían minas en el Rif. De vez en cuando se rompía la espesa formación porque una mujer del pueblo, desmelenada, tendía el almez de sus brazos para rescatar al hijo soldado. Yo miraba las casas mudas, las casas sin dolor, que cobijaban el tranquilo sueño de sus inquilinos. Y veía las otras casas, de ventanas abiertas, de ventanas que eran como ojos atónitos por donde manaba el llanto de la ciudad.</p>
+				<p>En la estación, según iban subiendo a los vagones los expedicionarios, la damas católicas regalaban escapularios y estampitas. Un teniente, muy jovencito, se metía a puñados las imágenes en los bolsillos. A mí quisieron también colocarme un escapulario.</p>
+				<p>—Señorita, lo siento, pero no creo en Dios.</p>
+				<p>—Es de la Virgen.</p>
+				<p>—Ni en la Virgen. ¡Qué le vamos a hacer!</p>
+				<p>Cuando el tren arrancaba ya, mientras mis amigos me apretaban las manos, yo buscaba entre la multitud el rostro de Angustias. Pero no estaba. El convoy echó a correr entre vivas y sollozos, y yo seguí bastante tiempo en la ventanilla recluido en el camarote de mis gafas. Hasta que los soldados se pusieron a cantar las mismas canciones de los talleres y las eras.</p>
+				<p>Mi batallón llevaba un año arrastrándose por las pistas de Yebala, desde Beni Ider hasta Tetuán. Guarnecíamos entonces Zoco-el-Arbaá de Beni Hassam, en el camino de Xauen. Yo estaba cansado de dormir bajo las tiendas de lona, de comer huevos fritos en las cantinas y de recorrer los parapetos, apoyando el oído en el pecho de la noche africana. Los periódicos empezaban a hablar de repatriación, y todos, en los soliloquios del campamento, hacíamos planes para la vida futura. Mis camaradas de antes no me escribían, juzgándome, sin duda, un mistificador ideológico. Sólo Pascual Domínguez, comprensivo, me saludaba de vez en cuando con unas líneas llenas de efusión.</p>
+				<p>Una tarde me llamó a su tienda el capitán ayudante del batallón.</p>
+				<p>—Le reclama a usted —me dijo— el jefe de Estado Mayor. Mañana, en la primera camioneta, trasládese a Tetuán y preséntese a él.</p>
+				<p>Por mucho que reflexionaba acerca de aquella orden, no comprendía su origen. Pensé si se relacionaría con mi antigua intervención en las luchas sociales; pero conociendo los procedimientos militares, donde la primera medida coercitiva es el arresto, deseché enseguida la sospecha. En realidad, aquella inesperada visita a la plaza, después de algunos meses de campo, era una recompensa en la que no había soñado un sargento que no gozaba entre los jefes de ninguna simpatía. Me esperaban el lecho blando, el café de la Alhambra y, sobre todo, Raquel, la hebrea, en su callada alcoba de la Sueca, desde donde oíamos, abrazados, las agudas glosas que el Gran Rabino hacía del Viejo Testamento.</p>
+				<p>A la mañana siguiente me presentaba en la Alta Comisaría para recibir las órdenes del jefe de Estado Mayor. Un ayudante me hizo pasar entre oficiales de todas las armas, moros notables y comerciantes de la Junta de Arbitrios.</p>
+				<p>—¿Usted es el sargento Arnedo, del 78?</p>
+				<p>—A la orden de usía, mi coronel.</p>
+				<p>—Bien. Debe usted presentarse en el hotel <seg rend="italic">Alfonso XIII</seg> al coronel Villagomil. Nada más.</p>
+				<p>—A la orden de usía, mi coronel.</p>
+				<p>Jamás había oído hablar del coronel Villagomil. Fui al <seg rend="italic">Alfonso XIII</seg>, muy intrigado, y pregunté.</p>
+				<p>—No está en este momento; pero la señora dice que suba.</p>
+				<p>—¿La señora?</p>
+				<p>—Sí; viene con su señora.</p>
+				<p>Metido en el ascensor, yo me preguntaba quién seria aquella familia Villagomil, que con tanto interés se ocupaba de mí hasta recibirme en sus propias habitaciones. Hice una estadística mental de todas las relaciones de mi madre; pero la operación resultó igualmente infructuosa.</p>
+				<p>El botones me franqueó la cabina:</p>
+				<p>—Es en el número 35.</p>
+				<p>Llamé en el número 35. Y de pronto se abrió la puerta y ante mis ojos asombrados apareció Angustias. Pero otra Angustias, transformada por el oxígeno y las pinturas. Tenía el pelo dorado y los labios encendidos por el lápiz reciente. Llevaba una bata esmeralda, abundante como una clámide, y en el índice de la mano izquierda un rubí de color frío.</p>
+				<p>—Abrázame, hombre, abrázame.</p>
+				<p>—Pero… ¿qué haces aquí?</p>
+				<p>—Ya te contaré. Abrázame.</p>
+				<p>—Bueno. ¿Y si llegan?</p>
+				<p>—No; si es un abrazo amistoso nada más. Soy —y se puso cómicamente solemne— la señora Villagomil.</p>
+				<p>—Déjate de bromas y explícame todo esto, porque me voy a poner enfermo de impaciencia.</p>
+				<p>—Di que le tienes miedo al coronel. Pero siéntate, hombre, en esa butaca… Eso es. Ahora dime: ¿qué tal te va? ¿Eres ya un héroe?</p>
+				<p>—Soy… Mira: te iba a contestar un disparate. Haz el favor de decirme qué haces aquí y quién es el coronel Villagomil a quien debo presentarme.</p>
+				<p>—¡Si he sido yo quien te ha llamado! Vamos a ver: contéstame a una sola pregunta y enseguida te lo cuento todo. ¿Tú crees que yo puedo dejar de ser lo que era?</p>
+				<p>—No lo creí nunca. Sin embargo, todo esto es muy raro…</p>
+				<p>—Óyeme: llevo en Tánger seis meses trabajando por nuestras ideas. No tuve más remedio que disfrazarme de esto, de lo que fui. Parezco una burguesa o una cocota, ¿no es cierto? Ventajas de la edad. Las cocotas de nuestra raza, cuando llegan a los treinta y cinco no se diferencian en nada de las señoras honorables. Además, yo sabía bien mi oficio. En el hotel de Tánger me hice amiga del coronel Villagomil. Mi labor necesitaba la confianza de un militar de su influencia.</p>
+				<p>—Pero ¿no eres su mujer?</p>
+				<p>—Soy… su amante. Sencillamente.</p>
+				<p>—Y tú, ¿eres capaz?</p>
+				<p>—Peor para ti si no lo comprendes, <seg rend="italic">Gafitas</seg>.</p>
+				<p>—¿Y qué te propones?</p>
+				<p>—¡Ah! Ésos son mis planes.</p>
+				<p>—¿Y no puedo yo saberlos?</p>
+				<p>—Si estás dispuesto a ayudarme, sí.</p>
+				<p>—No sé de qué pueda servirte, perdido allá en el campo meses y meses.</p>
+				<p>—Tú puedes observar, enterarte…</p>
+				<p>—Y eso ¿para que?</p>
+				<p>Angustias me auscultó con la mirada el pensamiento.</p>
+				<p>—¿Sigues creyendo en Lenin, <seg rend="italic">Gafitas</seg>?</p>
+				<p>—Sí.</p>
+				<p>—Pues Lenin está contra el imperialismo burgués, al lado de los pueblos que defienden su independencia, al lado de Abd-el-Krim.</p>
+				<p>—¡Vamos, tú me quieres adjudicar el bonito papel de espía!</p>
+				<p>—¿Por qué no? Ése es tu puesto.</p>
+				<p>—El Partido nada me ha dicho.</p>
+				<p>—Te lo digo yo en su nombre.</p>
+				<p>—Pero tú no eres comunista. Tú eres una anarquista individualista; una soñadora que se divierte con el peligro. No, no. Locuras, no.</p>
+				<p>—¡Tienes miedo! ¡No te importa traicionar las ideas!</p>
+				<p>Todos tus discursos, naturalmente, eran pura palabrería. Querías subir a costa de los trabajadores.</p>
+				<p>—Eres una insensata.</p>
+				<p>—Y tú un cobarde, un <seg rend="italic">patriota</seg>. ¡Qué gracia! Mi patria es la Revolución, ¿sabes? Una cosa más alta, una cosa que no es el suelo ni las fronteras. ¿Qué defiendes con tu fusil? ¿Qué defiendes? Di. A los políticos, a los burgueses, a los curas, a los enemigos del pueblo. Hablas de ver a tu España en los toros y en el fútbol mientras tú y tus piojos os arrastrabais por estas pistas encharcadas.</p>
+				<p>—Angustias: eres una insensata. Lo de allá poco me importa. Me importa lo de aquí, estos camaradas que se amontonan debajo de las tiendas, sucios, estropeados. Más que una idea vale un hombre. No, no. Yo no seré motivo para que un día caiga uno aquí, y aquí se quede. Llámame lo que quieras; pero esta vez no me convencerás como aquel día de la bomba.</p>
+				<p>Se abrió la puerta y apareció, sudoroso, el coronel Villagomil. Yo me levanté y me cuadré.</p>
+				<p>—Siéntese, sargento; siéntese.</p>
+				<p>Y dirigiéndose a Angustias:</p>
+				<p>—¡Vaya! Ya lo tienes aquí. Está sano y salvo.</p>
+				<p>—Y hasta gordo —contestó Angustias—. Le va bien el campo. ¡Qué alegría recibirá su madre cuando sepa que le he visto!</p>
+				<p>—Si esto es hasta un sanatorio dijo el coronel Los pacos son los que… ¿Usted dónde estaba?</p>
+				<p>—En el zoco.</p>
+				<p>—¡Ah! Allí se está bien. Además, Vilar es un buen punto. Vilar manda la brigada, ¿no?</p>
+				<p>—Sí, mi coronel.</p>
+				<p>—Tiene <seg rend="italic">pegas</seg> de vez en cuando. Pero Vilar…</p>
+				<p>El coronel Villagomil hablaba a medias. Se le veía buscar las últimas palabras de cada frase inútilmente, hasta que optaba por dejarla en el aire, abocetada. Era gordo y bajo de estatura y tenía el bigote blanco y rizado como unas hebras de guirlache. Se desabrochó la guerrera, tatuada de cruces y placas. Angustias le recriminó mientras me miraba de reojo.</p>
+				<p>—Te vas a enfriar. Aquí tienes la capa.</p>
+				<p>—Hace calor. Llevo una mañana… de aquí para allá… Ahora resulta que voy a tener que irme.</p>
+				<p>—¿Adónde? —interrogó vivamente Angustias.</p>
+				<p>—A la Península. Una comisión.</p>
+				<p>—¡Qué fastidio! Pues yo me quedo.</p>
+				<p>—Cuestión de tres o cuatro semanas, creo yo. Yo no podía disimular mi inquietud.</p>
+				<p>—Mi coronel, con el permiso de usía, me retiro.</p>
+				<p>—Quédese a comer con nosotros —dijo Angustias.</p>
+				<p>—No, no; tengo que incorporarme esta misma tarde. Muchas gracias.</p>
+				<p>—Usted querrá venir destinado a la plaza, ¿no es eso? —me preguntó el coronel.</p>
+				<p>La proposición era tentadora. Pero recordé mi escena con Angustias y el atrevido designio de aquella mujer que todavía mandaba en mí. Hice un gran esfuerzo:</p>
+				<p>—No, mi coronel. Quiero seguir en mi batallón.</p>
+				<p>—¿Usted no es de complemento?</p>
+				<p>—Sí, señor. Pero están allí todos mis amigos.</p>
+				<p>—Sin embargo, sin embargo, un destino…</p>
+				<p>—Me gusta más el campo.</p>
+				<p>—Bien, bien. Ya lo oyes, Angustias.</p>
+				<p>Angustias tenía en los ojos tanta ira que de ellos me vino un escalofrío. Pero sonrió:</p>
+				<p>—Si usted lo quiere… Suerte, pues. Y me alargó la mano.</p>
+				<p>—A la orden de usía, mi coronel.</p>
+				<p>—Adiós. Si quiere algo, ya sabe… Yo…</p>
+				<p>Me cuadré otra vez y salí. Sin ver a Raquel, sin dormir en lecho blando, con una congoja oscura dentro de mí, regresé al campamento a la hora en que los soldados, cruzado el torso con las mantas a modo de salvavidas, formaban para las guardias de parapeto.</p>
+				<milestone unit="section"/>
+				<p>Zoco-el-Arbaá de Beni Hassam. Barracones de titiriteros; tiendas pavimentadas de paja; soldados de gorros azules y rojos, alborotando en las cantinas; chilabas parduscas; capotes grises. De vez en cuando un camión, apoplético, camino de Xauen. Blocaos de Audal, de Timisal y Muñoz Crespo. Vosotros sois testigos de que mi vida valía poco entonces para mí.</p>
+				<p>Por aquellos tajos de tierra amarilla, asido a las crines ásperas de la gaba, con el sol en la nuca como un hacha de fuego, salí con mis hombres, día tras día, voluntario de aguadas y convoyes. Por fatigarme y ahogar la voz persistente, opaca, del remordimiento. Mi espíritu era ya un espíritu adaptado y cotidiano, incapaz de apresar el mundo con un ademán de rebeldía. Como los discípulos de San Ignacio, que dejan hecha trizas la voluntad en el cepo de los <seg rend="italic">Ejercicios</seg>, mi voluntad civil había quedado desgarrada y rota entre los alicates de la disciplina. Me encontraba sin juventud, allí, entre la calígine del campo, frente al Atlas inmenso. Mi juventud no eran mis veinticuatro años victoriosos del hambre y la intemperie. Mi juventud era aquella idea que apresuraba el pecho de Angustias; aquella idea que en otro tiempo me hacía sentirme camarada del africano o del mongol. Yo había renunciado al mejor heroísmo, y me sentía viejo de veras. Porque la vejez no es más que una suma de renunciaciones, de limitaciones, hasta que el espíritu queda transformado en una sombra, en un espectro de lo que fue. La muerte, antes de afectamos orgánicamente, anda ya como un fantasma por dentro de nosotros.</p>
+				<p>Zoco-el-Arbaá de Beni Hassam, con sus parapetos erizados de fusiles, su mugre cuartelera y sus coplas babélicas: tú eres testigo de que mi corazón quiso alojar alguna vez la bala enemiga, el pájaro de acero de un paco que llegaba silbando desde la montaña indócil.</p>
+				<milestone unit="section"/>
+				<p>Volvimos a Tetuán, ya en otoño. Nuestro corazón viajaba en los topes del tren de Ceuta, en las nubes que venían del lado del estrecho, en los aviones del correo, en las estrellas que se encendían a la misma hora sobre las calles españolas. Las fuentes del barrio moro llevaban el compás a las guitarras de la alcazaba. Hacer guardia en la plaza, después de tantos meses de campamento, era casi una diversión. Veíamos jugar a las moras en las azoteas y oíamos el español señorial de las judías filtrandose por las rejas de barrotes desnudos.</p>
+				<p>El único servicio comprometido era el de Casa Osinaga. Casa Osinaga era un puesto establecido fuera del recinto de la plaza. Un comandante había tenido el capricho de construir allí una casa en tiempos de Alfau, suponiéndose, sin duda, capaz de rechazar con su pistola todas las cabilas del contorno. Una noche, como es natural, los moros asaltaron la casa, le prendieron fuego y pasaron a gumía a sus habitantes. Desde entonces se nombraba una guardia de un sargento y ocho soldados para que guardasen las ruinas del edificio, porque no había otra cosa que guardar. Cuando una partida de moros quería sembrar la alarma en la plaza, caía sobre Casa Osinaga y fusilaba a la pequeña guarnición o la hacia prisionera para comerciar después el rescate. Pero parece que el mando tenía interés en demostrar que España no agota fácilmente sus héroes: al día siguiente, otro sargento con otros ocho soldados volvía a Casa Osinaga. Cuando el sargento mayor de plaza, un capitán gordo, benévolo, de grandes mostachos, formaba las guardias, era una escena inolvidable:</p>
+				<p>—A ver: Casa Osinaga.</p>
+				<p>—Presente.</p>
+				<p>El capitán miraba al aludido por encima de sus gafas:</p>
+				<p>—¿Usted?</p>
+				<p>—A la orden.</p>
+				<p>El capitán hacia un gesto de piedad, como diciendo:</p>
+				<p>«¡Pobre! ¡Quizá no vuelva! En fin, ¡qué ha de hacérsele!». Luego añadía en alta voz:</p>
+				<p>—Bien, bien; tenga usted cuidado. No duerma. Esta Casa Osinaga…</p>
+				<p>Y daba un gran suspiro.</p>
+				<p>A mí no me ocurrió nunca nada en Casa Osinaga. Pero en el cuartel nuevo, sí. Allí estaban las prisiones militares: desertores, prófugos, confidentes del enemigo, prisioneros… Me tocó un día de guardia en el cuartel nuevo. Al anochecer, la patrulla de vigilancia llegó para hacer entrega de un preso acusado de intervenir en el contrabando de armas. El oficial me llamó:</p>
+				<p>—Sargento Arnedo: hágase cargo del detenido y destínele un calabozo provisional.</p>
+				<p>Salí al cuerpo de guardia. Era una mujer, una señora, oculta por un velo. El sargento de la patrulla me entregó la orden del juez.</p>
+				<p>—¿Se llama…? ¿Usted se llama?</p>
+				<p>Y de repente sentí que me ponía pálido, que las piernas no bastaban para sostenerme.</p>
+				<p>—Me llamo… —dijo la mujer con voz segura y fría— me llamo Angustias López.</p>
+				<p>—Angus…</p>
+				<p>El sargento de la patrulla aclaró:</p>
+				<p>—Compra armas para los moros. La cogieron esta mañana en el camino de Tánger. Es una <seg rend="italic">pájara</seg>.</p>
+				<p>—¡Idiota! ¡Canalla!</p>
+				<p>El sargento quiso pegarle.</p>
+				<p>—Aquí no te valen ni el sombrero ni las pulseras, ¿sabes? Habrá que ver de dónde viene todo eso.</p>
+				<p>Me interpuse:</p>
+				<p>—Bien. Toma; ya esta eso firmado.</p>
+				<p>Salieron todos y yo le dije a la presa en voz baja:</p>
+				<p>—¡Angustias! ¡Por favor!</p>
+				<p>Ella me repudió con un gesto. Y luego, extendiendo sus manos hacia mí, murmuró:</p>
+				<p>—Toma, toma, traidor, carcelero; colócame tú mismo los grilletes. ¡Eres odioso! ¡Me das asco!</p>
+				<p>—Eres una loca, una loca…</p>
+				<p>—Y tú un traidor, un vendido. ¡Ah! Pero yo saldré de aquí, y entonces…</p>
+				<p>—Calla; te van a oír. ¿Qué hago yo? ¿Qué hago yo?</p>
+				<p>—Morirte de vergüenza. En cambio, yo entro ahí con la frente muy alta.</p>
+				<p>—¡Calla!, ¡calla!</p>
+				<p>—¡No me da la gana! He de gritar tu cobardía. Lo sabrán todos, los de aquí y los de allá.</p>
+				<p>—¡Calla!</p>
+				<p>Los soldados ya se habían arremolinado a mi alrededor. Si Angustias seguía hablando estaba perdido.</p>
+				<p>Llamé al cabo:</p>
+				<p>—¡Cabo Núñez! Registre a esta mujer. Encárguese de sus joyas y de su bolso.</p>
+				<p>El cabo Núñez obedeció.</p>
+				<p>—¡Canallas!</p>
+				<p>Ella misma fue entregando las sortijas, los pendientes, las pulseras que dejaron de ceñir su brazo moreno.</p>
+				<p>Luego grité:</p>
+				<p>—A ver, dos de la guardia, con fusiles: condúzcanla al calabozo número cuatro.</p>
+				<p>Así, entre bayonetas, entró Angustias en la celda, desdeñosa, impávida, glacial.</p>
+				<p>Yo fui ante el oficial de guardia:</p>
+				<p>—A la orden de usted, mi teniente. La detenida está en el calabozo número cuatro. He puesto un centinela.</p>
+				<p>—Pero es una mujer.</p>
+				<p>—Sí, señor.</p>
+				<p>—¿Guapa?</p>
+				<p>—¡Pchs! Regular.</p>
+				<p>—¿Y qué ha hecho?</p>
+				<p>—Vender armas a los moros.</p>
+				<p>—¡Qué curioso! Bien, bien.</p>
+				<p>Volví al cuerpo de guardia y me desabroché la guerrera porque me ardía el pecho. ¡Tampoco entonces tuve valor para pegarme un tiro!</p>
+			</div>
+			<div n="5" type="chapter" xml:id="ne0271_chap5">
+				<head xml:id="ne0271_head_007">5. África a sus pies</head>
+				<p>Cuando Riaño no tenía servicio nos reuníamos en su casa del barrio moro a beber té y a fumar kif. Íbamos casi siempre Pedro Núñez, Arturo Pereda y yo. Todos habíamos sido compañeros en los jesuitas, y todos, menos Riaño, estudiábamos carreras civiles cuando se hizo la movilización del 21. Riaño era un muchacho rico, alegre y voluntarioso, recién ascendido a segundo teniente. Para él todo era una juerga: las operaciones, las guardias, el campo o la plaza. Cuando su regimiento salía destacado o en columna, el asistente de Riaño transportaba al carro regimental dos o tres cajas de botellas de buen coñac y otras dos o tres de la cerveza preferida, que iban allí de matute, sin que se enterara el comandante mayor. Luego, en el campamento o en pleno combate, Riaño improvisaba una cantina mucho mejor surtida que las que acompañaban a las tropas. Una vez le arrestaron por llevar a la posición una mujer, con el consiguiente peligro para la disciplina y la moral de la tropa. En otra ocasión sufrió una dura reprimenda del coronel por emborrachar a un prisionero y hacerle faltar a los preceptos coránicos.</p>
+				<p>Era un buen muchacho, sin embargo, y lo hacía todo con sencillez, poseído de un alborozo de niño. La casualidad nos había reunido, y aunque estaba prohibido que los oficiales confraternizaran con los cuotas, Riaño iba con nosotros a los cafés y al teatro, sin importarle gran cosa tropezar con el jefe de día. Con Pedro Núñez, sobre todo, se llevaba muy bien, porque discutían de fútbol y de caballos.</p>
+				<p>En cambio, cuando Pereda y yo nos enzarzábamos en una discusión literaria o política, Riaño protestaba:</p>
+				<p>—Bueno, bueno, No sé cómo os gusta amargaros la vida con esas cosas. <seg rend="italic">Camelos</seg>.</p>
+				<p>Pero el orgullo de Riaño era su querida. Su querida le había dado fama en Tetuán, y muchos oficiales jacarandosos palidecían de envidia cuando Riaño, jugando con su fusta, pasaba por la Plaza de España con África al brazo. Por aquella fecha Tetuán era un vivero de vicio de negocio y de aventura. Como todas las ciudades de guerra, Tetuán engordaba y era feliz con la muerte que a diario manchaba de sangre sus flancos. Dijérase que aquellos convoyes silenciosos que evacuaban muertos y heridos, aquellas artolas renegridas por la sangre seca de los soldados, eran el alimento de la ciudad. De la ciudad que mientras se combatía en los blocaos de Beni Arós, mientras los hombres en los parapetos sentían el enorme pulpo del frío agarrado a su carne hasta el alba, jugaba a la ruleta en el Casino y bailaba en la alcazaba con las manos en alto. Pereda le llamaba a Tetuán «la ciudad antropófaga».</p>
+				<p>La amante de Riaño era una mora auténtica. Aquel lujo no se lo permitían ni los jefes de regulares, que hablaban bien el árabe y tomaban el té con los notables de la ciudad. Más que por sus méritos de guerra se conocía al teniente Riaño por su espléndida querida. Los camareros de los restoranes le llamaban «ese teniente de la mora». Y Riaño gustaba de exhibirla en los paseos de la Plaza de España, ataviada con una elegancia francesa, entre el escándalo de las señoritas de la guarnición, unas buenas chicas que volvían de la Hípica como si regresaran de las carreras de Longchamps, o que jugaban al tenis para remedar el lejano Madrid de la clase media. África, con una arrogancia aprendida en dos inviernos de París, no detenía ni siquiera sus ojos orgullosos sobre aquella asamblea uncida a la música zarzuelera de moda en la Península. Pasaba indiferente, con la mirada por encima de las azoteas, hacia su cabila perdida. Porque África no se llamaba África; quizá Axuxa o Zulima. Riaño la había conocido en un <seg rend="italic">cabaret</seg> de Tánger, recién abandonada por un diplomático de Fez, que acababa de exhibirla en París como una rara planta colonial, hasta cansarse de ella. Por lo visto, África, vestida a la europea, con su cartel galante de mora escapada del aduar, tenía innumerables pretendientes. Nunca supimos por qué había preferido a Riaño, para quien ella sólo era otro lujo de muchacho rico. Sus amigos apenas la veíamos; pero ella estaba viva y silenciosa como un secreto en la casa de amor de Riaño, una casa musulmana que tenía una fuente en el patio. Por detrás de los tabiques había siempre un perfume, un rumor, una presencia misteriosa: África, que iba de la azotea al ajimez y del baño al jardín. A veces, por el frunce de una puerta, veíamos un pijama de seda y una oscura melena de desierto, brillante y salvaje.</p>
+				<p>Riaño nos contaba que, al principio, África salía a la azotea con sus vestidos europeos; pero las moras de la vecindad la insultaban frenéticamente y le llamaban: «¡Lijud! ¡Lijud!» (judía). Entonces África, para contemplar en paz sus montañas, su Gorgues inaccesible, donde habitaban los pacos mortíferos, para oír al muecín de Sidi Saidi y arrojar todos sus pecados de réproba a la ciudad sometida al cristiano, se vestía su traje primitivo, su caftán ancho y tupido como una nube. Sola, con la esclava negra de brazos tatuados, comía África su cuscús y tomaba su té oloroso con el ámbar y la hierbabuena.</p>
+				<p>Es a lo que no se acostumbra —solía decir Riaño—, a comer en los restoranes. Prefiere esas bazofias de la cabila. Además, me voy cansando de ella porque es más triste que un fiambre. No sabe más que tenderse a mis pies como un perro.</p>
+				<p>Pero Pereda descubrió un día los ojos de África acechantes y fríos.</p>
+				<milestone unit="section"/>
+				<p>Pereda no era tan ligero como nosotros. Ahora que ya no nos pertenece quiero dedicarle estas palabras:</p>
+				<p><seg rend="italic">El soldado de las gafas de concha.</seg></p>
+				<p>—«Camarada de las gafas de concha, debe ser alegre estar ya por encima de la vida. Debe ser alegre no recordar.</p>
+				<p>»Yo descubrí enseguida la fina materia de tu alma, a pesar del traje de kaki o del capote arrugado de tanto arrastrarse por las pistas. Como esos frisos góticos donde alternan las alimañas con los santos, tú eras en la fila de mi sección un dibujo noble y delicado. Con tus gafas de concha, tu cabeza un poco inclinada, tus manos rojas por la presión de la nieve y del fusil. Por eso tu vida se rompió casi sin estrépito como una de aquellas ampollas de cristal de la enfermería que recogieron el último brillo de tus ojos miopes.</p>
+				<p>»—Éste es un maula, una mosca muerta —gritaba el capitán iracundo.</p>
+				<p>»—Y es que le hacían daño tu pureza y tu desdén. No dabas importancia a los parapetos, ni a los convoyes, ni al acarreo de piedra, ni a las bárbaras marchas de cincuenta kilómetros. Antes de ir a Marruecos, el capitán te había dicho:</p>
+				<p>»—Usted, que es abogado, tiene que ascender. Tú le contestaste con voz segura:</p>
+				<p>»—No, señor.</p>
+				<p>»—¿Cómo? ¿Por qué?</p>
+				<p>»—Porque no tengo vocación.</p>
+				<p>»—Pues ha de saber usted —gritó el capitán soliviantado— que la milicia es una religión. Sí, señor (Calderón es un clásico hasta en los cuarteles), una religión de hombres honrados.</p>
+				<p>»Una tarde, los moros atacaban al pequeño puesto de Timisal. El teléfono, angustiosamente, pedía auxilio. Y cuando el capitán pidió voluntarios para una muerte segura, tú diste un paso al frente.</p>
+				<p>»—¿Usted?</p>
+				<p>»—Sí, señor.</p>
+				<p>»Yo corrí a tu lado, enloquecido. Recuerdo tu palidez y tu sonrisa, camarada. Mi dolor debía empañar tus gafas en aquel instante.</p>
+				<p>»—Pero, hombre, ¿cómo haces esto? Es una barbaridad ir voluntariamente. Hay moros a cientos. Los veo por el anteojo cubrir toda la loma.</p>
+				<p>»—¿Qué más da? Un día u otro…</p>
+				<p>»Y volviste, ensangrentado, en las parihuelas de la ambulancia. Nunca comprenderé tu suicidio, aunque quizá hayas sido tú, entre todos, el que mejor murió por aquella España que sentíamos enconadamente agarrada a nuestro corazón».</p>
+				<milestone unit="section"/>
+				<p>Los ojos de África, acechantes y fríos. Riaño era un muchacho sin complicaciones; no se parecía, sin embargo, a otros compañeros que castigaban a sus amantes con el látigo, como si se tratara de un caballo o de un moro de la mehala. África no estaría enamorada de él; pero tampoco tendría razón para odiarle. Los ojos de África tenían el luto de los fusiles cabileños y las sombras de las higueras montañesas. Ojos de esos que se encuentran en un zoco o en una calle de Tetuán y que quisiera uno llevarse consigo para siempre con el mismo escalofrío y el mismo rencor, porque enseñan que hay algo irreparable que hace imperfecta la obra de Dios.</p>
+				<p>Por aquellos días se combatía en Beni Ider violentamente. Los hospitales de Tetuán estaban repletos de heridos. Todas las tardes cruzaban los entierros por las calles de la plaza. Se decía, incluso, que los cabileños, audazmente, querían penetrar en Tetuán, y se vigilaban los barrios moros de la ciudad donde era de temer una sublevación armada.</p>
+				<p>Una tarde encontré a Riaño en el café de la Alhambra. Me anunció que le habían destinado a una columna que saldría al día siguiente para reforzar a las que operaban desde el zoco de Beni Hassam. Nos abrazamos con ese abrazo tan particular de la guerra, que es como una despedida más larga.</p>
+				<p>—Llevarás cantina, ¿eh?</p>
+				<p>—Espléndida. Ya me aburría por aquí.</p>
+				<p>—¿Y África?</p>
+				<p>—¡Bah! La pobre… Pienso dejarle dinero hasta mi regreso.</p>
+				<p>Y al día siguiente un rumor terrible llegó a nuestro cuartel. Un teniente había aparecido asesinado en su casa. Era Riaño. África le había atravesado el corazón con aquella gumía de empuñadura de plata comprada en Tánger. Y luego, vestida de mora, había huido sin dejar rastro. Sus ojos fríos, desde un ajimez cualquiera, vieron quizá pasar el ataúd a hombros de cuatro tenientes.</p>
+			</div>
+			<div n="6" type="chapter" xml:id="ne0271_chap6">
+				<head xml:id="ne0271_head_008">6. Reo de muerte</head>
+				<p>Cuando llegamos a la nueva posición, los cazadores estaban ya formados fuera de la alambrada, con sus gorros descoloridos y sus macutos fláccidos. Mientras los oficiales formalizaban el relevo, la guarnición saliente se burlaba de nosotros:</p>
+				<p>—Buen veraneo vais a pasar.</p>
+				<p>—Esos de abajo no tiran confites.</p>
+				<p>—¿Cuántos parapetos os quedan, pobrecitos? Pedro Núñez no hacía más que farfullar:</p>
+				<p>—¡Idiotas! ¡Marranos!</p>
+				<p>La tropa saliente se puso en marcha poco después.</p>
+				<p>Una voz gritó:</p>
+				<p>—¿Y el perro? Les dejamos el perro.</p>
+				<p>Pero a aquella voz ninguno le hizo caso, porque todos iban sumidos en la alegría del relevo. Allá abajo, en la plaza, les esperaban las buenas cantinas, los colchones de paja y las mujeres vestidas de color. Un relevo en campaña es algo así como la calle tras una difícil enfermedad. La cuerda de soldados, floja y trémula, desapareció pronto por el barranco vecino.</p>
+				<p>En efecto, el perro quedaba con nosotros. Vio desde la puerta del barracón cómo marchaban sus compañeros de muchos meses, y después, sin gran prisa, vino hacia mí con el saludo de su cola. Era un perro flaco, larguirucho, antipático. Pero tenía los ojos humanos y benévolos. No sé quién dijo al verlo:</p>
+				<p>—Parece un cazador, de esos que acaban de irse.</p>
+				<p>No volvimos a ocuparnos de él. Cada uno se dedicó a buscar sitio en el barracón. Pronto quedó en él un zócalo de mantas y mochilas. A la hora del rancho el perro se puso también en la fila, como un soldado más. Lo vio el teniente y se enfadó:</p>
+				<p>—¿También tú quieres? ¡A la cocina! ¡Hala! ¡Largo!</p>
+				<p>Pero Ojeda, un soldado extremeño, partió con él su potaje. Aquella misma noche me tocó servicio de parapeto y vi cómo el perro, incansable, recorría el recinto, parándose al pie de las aspilleras para consultar el silencio del campo. De vez en cuando, un lucero, caído en la concavidad de la aspillera, se le posaba en el lomo, como un insecto. Los soldados del servicio de descubierta me contaron que al otro día, de madrugada, mientras el cabo los formaba, el perro se adelantó y reconoció, ligero, cañadas y lomas. Y así todos los días. El perro era el voluntario de todos los servicios peligrosos. Una mañana, cuando iba a salir el convoy de aguada, se puso a ladrar desaforadamente alrededor de un islote de gaba. Se oyó un disparo y vimos regresar al perro con una pata chorreando sangre. Le habían herido los moros. Logramos capturar a uno con el fusil humeante todavía.</p>
+				<p>El practicante le curó y Ojeda le llevó a su sitio y se convirtió en su enfermero. El lance entusiasmó a los soldados, que desfilaban ante el perro y comentaban su hazaña con orgullo. Algunos le acariciaban, y el perro les lamía la mano. Sólo para el teniente, que también se acercó a él, tuvo un gruñido de malhumor.</p>
+				<p>Recuerdo que Pedro Núñez comentó entonces:</p>
+				<p>—En mi vida he visto un perro más inteligente.</p>
+				<milestone unit="section"/>
+				<p>¿Recordáis, camaradas, al teniente Compañón? Se pasaba el día en su cama de campaña haciendo solitarios. De vez en cuando salía al recinto y se dedicaba a observar, con los prismáticos, las cabilas vecinas. Su deporte favorito era destrozarles el ganado a los moros. Veía una vaca o un pollino a menos de mil metros y pedía un fusil. Solía estudiar bien el tiro.</p>
+				<p>—Alza 4. No, no. Lo menos está a quinientos metros.</p>
+				<p>Disparaba y a toda prisa recurría a los gemelos. Si hacía blanco, se entregaba a una alegría feroz. Le hacía gracia la desolación de los cabileños ante la res muerta. A veces, hasta oíamos los gritos de los moros rayando el cristal de la tarde. Después, el teniente Compañón murmuraba:</p>
+				<p>—Ya tenemos verbena para esta noche.</p>
+				<p>Y aquella noche, invariablemente, atacaban los moros. Pero era preferible, porque así desalojaba su malhumor. El teniente padecía una otitis crónica que le impedía dormir. Cuando el recinto aparecía sembrado de algodones, toda la sección se echaba a temblar, porque los arrestos se multiplicaban:</p>
+				<p>—¿Por qué no han barrido esto, cabo Núñez? Tres convoyes de castigo… ¿Qué mira usted? ¡Seis convoyes! ¡Seis!</p>
+				<p>No era extraño que los soldados le buscasen víctimas, como hacen algunas tribus para calmar la furia de los dioses. Pero a los dos meses de estar allí no se veía ser viviente. Era espantoso tender la vista por el campo muerto, cocido por el sol. Una idea desesperada de soledad y de abandono nos abrumaba, hora a hora. Algunas noches la luna venía a tenderse a los pies de los centinelas, y daban ganas de violarla por lo que tenía de tentación y de recuerdo.</p>
+				<p>Una noche el teniente se encaró conmigo:</p>
+				<p>—Usted no entiende esto, sargento. Ustedes son otras gentes. Yo he vivido en el cuartel toda mi vida. Siente uno rabia de que todo le importe un rábano. ¿Me comprende?</p>
+				<p>El perro estaba a mi lado. El teniente chasqueó los dedos y extendió la mano para hacerle una caricia. Pero el perro le rechazó, agresivo, y se apretó a mis piernas.</p>
+				<p>—¡Cochino! —murmuró el oficial.</p>
+				<p>Y se metió en el barracón, blasfemando.</p>
+				<p>Al otro día, en el recinto, hubo una escena repugnante. El perro jugaba con Ojeda y ambos se perseguían entre gritos de placer. Llegó el teniente, con el látigo en la mano, y castigó al perro, de tal modo que los latigazos quedaron marcados con sangre en la piel del animal.</p>
+				<p>Ojeda, muy pálido, temblando un poco bajo el astroso uniforme, protestó:</p>
+				<p>—Eso… eso no está bien, mi teniente.</p>
+				<p>Los que veíamos aquello estábamos aterrados. ¿Qué iba a pasar? El oficial se volvió, furioso:</p>
+				<p>—¿Qué dices? ¡Firmes! ¡Firmes!</p>
+				<p>Ojeda le aguantó la mirada impávido. Yo no sé qué vería el teniente Compañón en sus ojos, porque se calmó de pronto:</p>
+				<p>—Está bien. Se te va a caer el pelo haciendo guardias. ¡Cabo Núñez! Póngale a éste servicio de parapeto todas las noches hasta nueva orden.</p>
+				<p>Una mañana, muy temprano, Ramón, el asistente del teniente, capturó al perro por orden de éste. El muchacho era paisano mío y me trajo en seguida la confidencia.</p>
+				<p>—Me ha dicho que se lo lleve por las buenas o por las malas. No sé qué querrá hacer con él.</p>
+				<p>Poco después salieron los dos del barracón con el perro, cuidando de no ser vistos por otros soldados que no fueran los de la guardia. El perro se resistía a aquel extraño paseo y Ramón tenía que llevarlo casi en vilo cogido del cuello. El oficial iba delante, silbando, con los prismáticos en la mano, como el que sale a pasear por el monte bajo el sol primerizo. Yo les seguí, sin ser visto, no sin encargar antes al cabo que prohibiese a los soldados trasponer la alambrada. Porque el rumor de que el teniente llevaba al perro a rastras fuera del campamento, saltó en un instante de boca en boca. Pido a mis dioses tutelares que no me pongan en trance de presenciar otra escena igual, porque aquélla la llevo en mi memoria como un abismo. Los dos hombres y el perro anduvieron un buen rato hasta ocultarse en el fondo de una torrentera. Casi arrastrándome, para que no me vieran, pude seguirlos. La mañana resplandecía como si tuviese el cuerpo de plata. De la cabila de allá abajo subía un cono de humo azul, el humo de las tortas de aceite de las moras. Yo vi cómo el oficial se desataba el cinto y ataba las patas del tierno prisionero. Vi después brillar en sus manos la pistola de reglamento y al asistente taparse los ojos con horror. No quise ver más. Y como enloquecido, sin cuidarme siquiera de que no me vieran, regresé corriendo al destacamento, saltándome la sangre en las venas como el agua de las crecidas.</p>
+				<p>Media hora después regresaron, solos, el oficial y el soldado. Ramón, con los ojos enrojecidos, se acercó a mí, temeroso.</p>
+				<p>—Sargento Arnedo… Yo, la verdad…</p>
+				<p>—Quita, quita. ¡Pelotillero! ¡Cobarde!</p>
+				<p>—Pero ¿qué iba a hacer, mi sargento?… No podía desobedecerle. Bastante vergüenza tuve. Dio un grito, sólo uno.</p>
+				<p>Me marché por no pegarle. Pero lo de Ojeda fue peor. Desde la desaparición del perro andaba con los ojos bajos y no hablaba con nadie. Merodeaba por los alrededores de la posición expuesto al paqueo. Un día apareció en el recinto, entre una nube de moscas, con el cadáver del perro, ya corrompido, en brazos. Pedro Núñez, que estaba de guardia, tuvo que despojarle violentamente de la querida piltrafa y tirar al barranco aquel montón de carne infecta.</p>
+			</div>
+			<div n="7" type="chapter" xml:id="ne0271_chap7">
+				<head xml:id="ne0271_head_009">7. Convoy de amor</head>
+				<p>Esto no me ha sucedido a mí, porque a mí no me han pasado nunca cosas extraordinarias; pero le ocurrió a Manolo Pelayo, que estuvo a punto de ir a presidio por aquello. Desde entonces, Manolo Pelayo habla con un gran odio de las mujeres y pasea su celibato melancólico por las salas desiertas del Casino.</p>
+				<p>—Son la perdición… Son la perdición… —suele murmurar, con la cabeza apoyada en los cristales de la galería.</p>
+				<p>Por el paseo de enfrente cruzan las parejas de novios, guillotinadas por el crepúsculo. Manolo Pelayo, cuando se cansa de los divanes del Casino, se va al monte, a la caza de la perdiz o del jabalí. Allí permanece semanas enteras. Luego hemos sabido que, además de la cinegética, practica en la montaña el ejercicio sexual. Pero sin entusiasmo, como una jornada viril inevitable, deseando que todo se haga en el menor tiempo posible. Parece que las campesinas del contorno están maravilladas de aquel señorito huraño, al que reciben en el pajar o en la cuadra, en silencio y a oscuras, después de ajustar la entrevista con el criado. Para algunas es un arcángel violento, que lleva el ardiente dardo de la anunciación. Lo conduce la noche y en la noche se pierde, como un milagro atroz y dulce a la vez.</p>
+				<p>Manolo Pelayo fue cabo de un batallón expedicionario. Su sección estaba destacada en un puesto avanzado de Yebala. Hacía convoyes al zoco con frecuencia y alguna vez tuvo agresiones de importancia. Lo que voy a contar es mil veces más espantoso que un ataque rebelde. Al fin y al cabo, la guerra es una furia ciega en la cual no nos cabe la mayor responsabilidad. Un fusil encuentra siempre su razón en el fusil enemigo.</p>
+				<p>Pero esto es otra cosa, una cosa repugnante y triste.</p>
+				<p>Para comprenderlo hay que haber padecido a los veintitrés años la forzosa castidad de un campamento. Se remueven todas las escorias del instinto y emanan un vaho corrompido de sueños impuros, de bárbaras tentaciones, de angustias perennes. Ni la sed ni el hambre mortifican tanto como esta rebelión de la carne forzada por el recuerdo y la fantasía. El alma se mezcla también en el clamor físico y azuza a los sentidos como un cómplice cobarde y astuto. A veces, la nostalgia tierna del atardecer, el terror de la noche, la misma voz de la tierra distante, no son sino olas de lujuria coloreadas por el alma en vigilia. También de modo semejante vierte el cielo sus tintas en el mar.</p>
+				<p>El batallón de Manolo Pelayo llevaba siete meses en el campo. Siete meses en una posición pequeña, en uno de aquellos puestos perdidos, donde de repente le entra a uno el temor de que se han olvidado de él en las oficinas del mando. Cuando cada quince días llegaba al zoco aquel convoy, todos íbamos a verlo para cotejar nuestro aspecto con el de aquellos soldados rotos, consumidos y mustios. A su lado, nosotros éramos casi felices, con nuestras cantinas bien surtidas, nuestros periódicos de tres fechas y nuestros moros tranquilos que nos vendían a diario la fruta y la caza.</p>
+				<p>Una tarde, a la llegada de la camioneta de Tetuán, el zoco se alborotó con la presencia de una mujer. De una señora rubia y alegre, muy joven, que dejaba un rastro de perfumes. Todo el campamento se estremeció. Cada hombre era un nervio cargado de escalofríos voluptuosos. Los soldados salían a la puerta de los barracones, se subían a los muros de la explanada, corrían de un lado a otro, atropellándose para verla. Ella iba sembrando el escándalo de su juventud entre aquella chusma hambrienta, desorbitada y torva, que sentía al unísono el bárbaro acezar de la lujuria. Era asombroso cómo se abría paso la mujer entre la fronda de obscenidades, a la manera del sol en una floresta salvaje. Y su aroma quedaba quieto y denso en la pista, como si el aire fuera una vasija dispuesta para guardarlo. Yo vi aquel día a muchos compañeros míos aspirar fuerte el vapor de la viajera y tenderse después en la paja de la tienda, a solas con aquella fragancia, mareados deliciosamente por ella como por una droga.</p>
+				<p>La mujer rubia, con el sargento que la había acompañado desde Tetuán, penetró en la oficina del jefe de la posición. El jefe era el coronel Vilar, un hombre locuaz y alegre que en vísperas de operaciones, mientras los oficiales discutían de táctica y estrategia, ilustraba los mapas del Estado Mayor con dibujos obscenos. En aquel momento estaba de tertulia con el ayudante y el capellán. Al ver a la mujer, los tres se levantaron. El coronel Vilar, erguido, sonriente, no pudo menos de retorcerse el bigote entrecano.</p>
+				<p>—Mi coronel —anunció el sargento—: se trata de la esposa del teniente López, el de Audal. Trae una carta del alto comisario para usía.</p>
+				<p>—Sí, señor —dijo ella, adelantándose con un sobre en la mano—; el general es amigo mío.</p>
+				<p>—¡Ah!</p>
+				<p>Pero después de aquel ¡ah!, exhalado en tono de suspiro, al coronel le costaba trabajo dejar de mirar a la recién llegada para leer la carta. Ella entonces se quitó el sombrero:</p>
+				<p>—¿Puedo quitarme el sombrero? Hace tanto calor…</p>
+				<p>Quítese lo que quiera —exclamó el coronel—. Una mujer como usted manda siempre.</p>
+				<p>—Gracias… Vilar.</p>
+				<p>—Vi… Vilar. ¿Sabe usted mi apellido?</p>
+				<p>—¡Ay, qué gracia! ¡Pues claro! Y su nombre también: don Manuel. ¡Manolo!</p>
+				<p>—Eso, eso: Manolo. ¿De dónde nos conocemos, pues?</p>
+				<p>—¡Si lo dice el sobre!</p>
+				<p>El ayudante y el capellán se miraban asombrados. Al capellán, sobre todo, se le presentía desgranando mentalmente las sílabas de aquel «¡Manolo!», lanzado con tanta desenvoltura por la viajera. El sargento no sabía qué hacer:</p>
+				<p>—Mi coronel, yo…</p>
+				<p>—Sí, hombre, márchese.</p>
+				<p>Y luego, dirigiéndose a la mujer:</p>
+				<p>—Está usted muy bien así, sin sombrero.</p>
+				<p>—¿De verdad?</p>
+				<p>Estaba bien, muy bien. El pelo, libre, era un remolino de fuego. Toda ella estaba un poco sofocada.</p>
+				<p>—Estoy ardiendo. Mire usted este brazo. Lo tengo rojo. Arde.</p>
+				<p>El coronel se acercó tanto, que ella tuvo que retirarse.</p>
+				<p>—Es verdad; arde.</p>
+				<p>El capellán dio un respingo ante el brazo desnudo:</p>
+				<p>—Mi coronel, si usted no me manda nada…</p>
+				<p>—Nada, nada. Hasta luego.</p>
+				<p>Al ayudante, miope, también le interesaba, por lo visto, aquel brazo ardiente y oloroso, porque no demostraba ninguna prisa por marcharse.</p>
+				<p>—Siéntese usted. Aquí hay una silla. Poco cómoda, porque en campaña… Siéntese usted, Carmen. Carmela, ¿no es eso?</p>
+				<p>—Eso es. Un nombre de morena dicen que es el mío. Ya ve usted, tan rubia…</p>
+				<p>—Pero usted es muy atrevida, Carmela. Venir así, sola, sin miedo al paqueo. ¡Mucho debe querer a su marido!</p>
+				<p>—¡Huy! Muchísimo. Hace un año que no nos vemos. Yo me dije: «¡Pues cuando los moros no le han hecho a él nada, que se mete con ellos, no me van a matar a mí, que no pienso hacerles daño!».</p>
+				<p>—Sin embargo, sin embargo… Audal es un destacamento avanzado, a tres horas de camino, monte arriba.</p>
+				<p>—Además —objetó el ayudante—, allí no hay sitio para alojar a una mujer. Un barracón pequeño, sucio…</p>
+				<p>Pero Carmela no se arredraba:</p>
+				<p>—Es igual. A mí me encantan estas dificultades. Lo mismo me decía el general en Tetuán. Pero se me ha metido este viaje en la cabeza… ¡Ay! Me figuro la sorpresa de Pepe: «¿Tú aquí? ¿Tú aquí? ¡Loca! ¡Loca!». Y luego los abrazos, ¿sabe usted? ¡Qué sorpresa!</p>
+				<p>El coronel la escuchaba con la boca abierta:</p>
+				<p>Bien, bien. Pues, nada; irá usted a Audal.</p>
+				<p>Y luego, dirigiéndose al ayudante:</p>
+				<p>—Ramírez, haga el favor de avisar al cabo del convoy de Audal que se presente a mí. Y que ensillen un mulo para Carmela.</p>
+				<p>—Perfectamente, mi coronel.</p>
+				<p>El ayudante, distendidas las aletas de la nariz por el perfume de Carmela, salió para cumplir la orden.</p>
+				<milestone unit="section"/>
+				<p>El cabo Pelayo se presentó en la oficina del coronel, con correaje y fusil. A pesar del uniforme descolorido por el agua y el sol, el cabo Pelayo tenía un aspecto agradable. Era un muchacho fuerte y distinguido, en el cual las privaciones de la campaña no habían dejado huella deprimente; al contrario, se le notaba enjuto y ágil como un deportista. Al entrar le recibieron los ojos de Carmen, que en aquel momento comenzaron a gravitar sobre él como cuerpos celestes.</p>
+				<p>—Usted es el cabo de Audal, ¿no es eso?</p>
+				<p>—Sí, mi coronel.</p>
+				<p>—¿Cuánto tiempo tarda en llegar el convoy?</p>
+				<p>—Unas dos horas.</p>
+				<p>—Unas dos horas. Bien. Usted hace con frecuencia este servicio…</p>
+				<p>—Cada quince días. Hace siete meses que estamos destacados.</p>
+				<p>—Perfectamente. Esta señora irá con ustedes. Es la esposa del teniente. Usted me responde de ella con la cabeza. ¿Lo oye usted? Con la cabeza.</p>
+				<p>—Sí, mi coronel.</p>
+				<p>—¡Por Dios, Vilar! ¡Que, yo no valgo tanto! —intervino Carmen, risueña—. ¡Pobre chico!</p>
+				<p>—Usted dispondrá la fuerza —siguió diciendo el coronel— de modo que esta señora vaya protegida mejor que nada. Mejor que el saco de los víveres. Con eso está dicho todo.</p>
+				<p>—Sí, mi coronel.</p>
+				<p>—Puede retirarse. ¡Ah! Cuando el convoy esté preparado, avíseme.</p>
+				<milestone unit="section"/>
+				<p>Minutos después el convoy de Audal estaba en la carretera, dispuesto partir. Lo componían el cabo, seis soldados, dos acemileros y dos mulos. En uno de éstos se había colocado una jamuga para Carmen, que llegó con el coronel entre una doble fila de ojos anhelantes. El coronel la ayudó a subir a la cabalgadura, sosteniendo en su mano, a manera de estribo, el pie pequeño y firme. Fue aquél un instante espléndido e inolvidable, porque, por primera vez y en muchos meses, los soldados del zoco vieron una auténtica pierna de mujer, modelada mil veces con la cal del pensamiento. Ya a caballo, Carmen repartía risas y bromas sobre el campamento, sin pensar que sembraba una cosecha de sueños angustiosos. Diana refulgente sobre la miseria de la guerra, en lo alto de un mulo regimental, mientras los soldados la seguían como una manada de alimañas en celo, Carmen era otra vez la Eva primigenia que ofrecía, entre otras promesas y desdenes, el dulce fruto pecaminoso.</p>
+				<p>Aquellos hombres se custodiaban a sí mismos. Porque, de vez en cuando, la falda exigua descubría un trozo de muslo, y algún soldado, sudoroso y rojo, exhalaba un gruñido terrible.</p>
+				<p>El sol bruñía la montaña y calcinaba los pedruscos. Al cuarto de hora de camino, Carmen pidió agua. El cabo le entregó su cantimplora y ella bebió hasta vaciarla.</p>
+				<p>—¡Qué calor, Dios mío! ¿Falta mucho?</p>
+				<p>—¡Huy, todavía!…</p>
+				<p>Le cayeron unas gotas en la garganta y ella bajó el escote para secarse. Pelayo sintió que la sangre le afluía a las sienes como una inundación.</p>
+				<p>Al devolverle la cantimplora, Carmen le rozó los dedos con su mano. Y Manolo Pelayo estuvo a punto de tirar el fusil y detener al mulo por la brida, como los salteadores andaluces.</p>
+				<p>—Usted será soltero, ¿verdad? —le dijo Carmen.</p>
+				<p>—Sí, señorita.</p>
+				<p>—¿Con novia?</p>
+				<p>—¡Bah! Tanto tiempo lejos… Ya no se acuerdan.</p>
+				<p>—¡Qué ingratas! Un muchacho tan simpático…</p>
+				<p>—Muchas gracias.</p>
+				<p>—Y éstos, ¿tienen novia?</p>
+				<p>—Aquél y éste —dijo señalando a dos de los soldados— sí la tienen. Oye, López, ¿cómo se llama tu novia?</p>
+				<p>—Adela.</p>
+				<p>—Bonito nombre —declaró Carmen—. Será muy guapa.</p>
+				<p>—Sí… Pero usted es más.</p>
+				<p>Y López acompañó el piropo de una carcajada metálica, casi obscena.</p>
+				<p>—Eres muy galante, López —replicó la viajera—. Que no lo sepa Adela.</p>
+				<p>—Es que yo… Verá usted… Yo…</p>
+				<p>Pero a López debía ocurrírsele una barbaridad, porque, de pronto, se quedó muy serio, prendido en los labios de Carmen, como un moscardón en un tarro de miel.</p>
+				<p>El calor era asfixiante. La pista era ahora una pendiente callosa, sin un árbol, ni una hierba, ni un pájaro. Los mulos ascendían trabajosamente en zigzag.</p>
+				<p>—Cabo —exclamó Carmela—, ¿a que no sabe usted lo que me gustaría ahora?</p>
+				<p>—No sé.</p>
+				<p>—Tirar toda esta ropa que llevo empapada de sudor y tostarme al sol.</p>
+				<p>Aquella incitación enardeció a los hombres todavía más. Ya no sentían el calor ni el cansancio, sino la lujuria que se les enroscaba a los hombros brutalmente. Manolo Pelayo quiso desviar el diálogo:</p>
+				<p>—Ahora llegamos en seguida a un camino de cabila, con higueras. Allí podremos descansar.</p>
+				<p>—Deme usted agua —pidió Carmen.</p>
+				<p>—No me queda. López, trae tu cantimplora. López entregó a Carmen la cantimplora. Para beber, ella detuvo el mulo, y los dos se quedaron un poco rezagados.</p>
+				<p>—Está buena.</p>
+				<p>—Yo le echo anís, ¿sabe usted? Y está más fresca.</p>
+				<p>—¿Qué es lo que te gusta a ti más, López? Quiero hacerte un regalo.</p>
+				<p>—¡Huy! ¿A mí? Pues a mí me gustan… ¡No se lo dirá usted al teniente!</p>
+				<p>—Claro que no.</p>
+				<p>—Pues a mí me gustan… las mozas. A mí me gustan las mozas una barbaridad.</p>
+				<p>—¿Y si se entera Adela?</p>
+				<p>Otra vez Carmen se incorporó al convoy, que momentos después ganó la cumbre del monte. Dos higueras enclenques —heroicas hilanderas del sol del desierto— fabricaban allí un poco de sombra. En la cumbre era la atmósfera más fina; pero se notaba el mismo calor. Sin embargo, la presencia de la cabila, allá abajo, destruía la sensación de soledad que hasta entonces petrificara el paisaje. El cabo dio la voz de ¡alto!, y los soldados se tumbaron, rendidos y febriles, después de desabrocharse los correajes.</p>
+				<p>—¡Dejar la sombra para la señora!, ordenó Pelayo.</p>
+				<p>—No, no; cabemos todos. No se muevan.</p>
+				<p>Ella descendió de un salto y fue a sentarse con los soldados, como una llama entre carbones. Después, pidió el estuche de viaje. Con una toalla se secó bien el rostro y se friccionó con colonia la cabeza y los brazos. Pelayo, de pie, inquieto y hosco, la miraba de reojo. Carmen sacó un espejo de plata y un peine, y se peinó.</p>
+				<p>—A ver: ¿quién quiere colonia? Voy a perfumaros a todos —dijo Carmen—. Primero a ti, López. Ven aquí.</p>
+				<p>López se acurrucó a sus pies, como un simio. Y Carmen le vació medio frasco en la cabezota salvaje.</p>
+				<p>—¡Huy! ¡Huy! ¡Cómo pica! Los perfumó a todos, uno a uno.</p>
+				<p>—¿Usted no quiere, cabo?</p>
+				<p>—No.</p>
+				<p>—Me desprecia. Bueno…</p>
+				<p>Después se acostó, boca arriba, con las manos a modo de almohada. Toda ella era un vaho sensual. Su pecho, pequeño, palpitaba con fuerza. Los soldados, con el aliento entrecortado, se apretaban a ella, que parecía no darse cuenta del silencioso cerco. López tenía la boca pegada a su tobillo. Pelayo, indignado, gritó:</p>
+				<p>—Vamos a seguir. ¡Hala!</p>
+				<p>Carmen le detuvo:</p>
+				<p>—Otro poquito, cabo. ¡Estoy tan sofocada!</p>
+				<p>—¡No puede ser! ¡No puede ser!</p>
+				<p>Manolo Pelayo, frenético, instaba al montón de soldados, que no le hacía caso. El grupo iba haciéndose cada vez más compacto alrededor de Carmen.</p>
+				<p>—¿Lo oís? ¡A formar! Pero ¿no oís?</p>
+				<p>No oían. Uno se atrevió a poner la mano en un brazo de Carmen, que se echó a reír, diabólica. Y entonces sucedió algo monstruoso. López, de un brinco, se lanzó sobre Carmen y le aferró los labios con los suyos. Y como si aquélla fuera la señal, todos se abalanzaron sobre la mujer al mismo tiempo, feroces, siniestros, desorbitados, disputándosela a mordiscos, a puñetazos.</p>
+				<p>—¿Qué es eso? ¡López! ¡Martínez!</p>
+				<p>Manolo Pelayo se echó el fusil a la cara y disparó dos veces. Los alaridos de júbilo se transformaron en gritos de dolor. El grupo se deshizo y todos fueron cayendo, uno aquí y otro allá, bañados en sangre. Carmen, hollada, pisoteada, estaba muerta de un balazo en la frente.</p>
+			</div>
+
+
+		</body>
+		<back>
+			<div>
+				<p/>
+			</div>
+		</back>
+	</text>
+</TEI>

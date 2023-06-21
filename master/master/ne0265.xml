@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los enemigos de la mujer</title>
-				<title type="sub"></title>
+				
 				<title type="short">EnemigosMujer</title>
-				<title type="idno">
-					<idno type="bne">XX1892704</idno>
-					<idno type="viaf">309293640</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2998</measure>
@@ -141,13 +131,48 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0265</idno>
+						<idno type="cligs">ne0265</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg project, <date when="2011">2011</date>, <idno>37139</idno>, <ref target="http://www.gutenberg.org/ebooks/37139"/>.</bibl>
-				<bibl type="print-source">Prometeo, Valencia, <date when="1919">1919</date></bibl>
-				<bibl type="edition-first"><date when="1919">1919</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los enemigos de la mujer</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892704.html">XX1892704</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309293640/">309293640</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg project, <date when="2011">2011</date>, <idno>37139</idno>, <ref target="http://www.gutenberg.org/ebooks/37139"/>.</bibl>
+					<bibl type="print-source">Prometeo, <pubPlace>Valencia</pubPlace>, <date when="1919">1919</date></bibl>
+					<bibl type="edition-first"><date when="1919">1919</date><idno source="k10plus" type="ppn" n="1334407231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334407231"/><idno source="k10plus" type="ppn" n="531883507" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=531883507"/><idno source="k10plus" type="ppn" n="226415090" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226415090"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los  enemigos de la mujer</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1334407231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334407231"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los enemigos de la mujer</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="531883507" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=531883507"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los enemigos de la mujer</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226415090" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226415090"/> </bibl>
+						<bibl type="further-edition"><title type="main">The enemies of women</title> <date when="1920">1920</date>, <publisher>Dutten</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="1568370601" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1568370601"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los enemigos de la mujer</title>: 	<title type="sub">(novela)</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350946000" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350946000"/> </bibl>
+						<bibl type="further-edition"><title type="main">Los enemigos de la mujer</title>: 	<title type="sub">novela</title> <date when="1961">1961</date>, <publisher>Ed. Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1140891057" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1140891057"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los enemigos de la mujer</title>: 	<title type="sub">novela</title> <date when="1961">1961</date>, <publisher>Ed. Planeta</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="350946094" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350946094"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente, Sangre y arena, Los muertos mandan, Luna benamor, Los cuatro jinetes del apocalipsis, Mare nostrum, Los enemigos de la mujer, El militarismo mejicano, El prestamo de la difunta y otros cuentos, El paraiso de las mujeres</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621457" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621457"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Mare nostrum</title> <date when="2014">2014</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479519294" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479519294"/> 		<idno type="isbn" n="9788415255314"/></bibl>
+						<bibl type="further-edition"><title type="main">Los enemigos de la mujer</title> <date when="2014">2014</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="78398040X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=78398040X"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +182,14 @@
 				<p>Obra que sucede durante la primera guerra mundial. Los relatos se refieren al paso de trenes hacia los frentes de batalla y a los heridos que convalecen en Montecarlo, que es donde se desarrolla la mayor parte de la acción.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -189,7 +222,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novelas de guerra</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novelas de la guerra</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -218,12 +251,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-20" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>AL LECTOR</head>
+				<head xml:id="ne0265_head_000">AL LECTOR</head>
 				<p>En 1918, casi al final de la guerra europea, caí repentinamente enfermo por exceso de trabajo.</p>
 				<p>Había realizado un esfuerzo enorme escribiendo para los periódicos de España y América numerosos artículos, un cuaderno todas las semanas de mi <seg rend="italics">Historia de la Guerra</seg> y dos novelas, <seg rend="italics">Los cuatro jinetes del Apocalipsis</seg> y <seg rend="italics">Mare nostrum</seg>. Además hice muchas traducciones y otras labores literarias obscuras para la propaganda en favor de los Aliados.</p>
 				<p>Durante cuatro años trabajé doce horas diarias, sin ningún día de descanso. Hubo semanas extraordinarias en las que aún fué más larga mi jornada. Á esta tarea excesiva y abrumadora, que lentamente iba agotando mis fuerzas, había que añadir las privaciones é inquietudes de la vida anormal que llevábamos los habitantes de París: mala comida, escasez de carbón, alumbrado defectuoso, noches en vela por las señales de alarma y el bullicio de la gente al anunciarse un ataque aéreo de los «Gothas».</p>
@@ -246,7 +280,7 @@
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0265_chap1">
-				<head>I</head>
+				<head xml:id="ne0265_head_001">I</head>
 
 
 				<p>El príncipe repitió su afirmación:</p>
@@ -504,7 +538,7 @@
 				<p>—¡Usted también!—clamó el coronel, nuevamente indignado—. Un sabio decir eso... ¡Parece mentira!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0265_chap2">
-				<head>II</head>
+				<head xml:id="ne0265_head_002">II</head>
 				<p>Al terminar la segunda guerra carlista, un español se vió para siempre lejos de su patria, en la pobreza y la obscuridad del vencido. Los diarios de Madrid le llamaban simplemente «el cabecilla Saldaña», no anteponiendo á su nombre adjetivos infamatorios, sin duda para diferenciarle de otros jefes de partidas que en Aragón, Cataluña y Valencia habían hecho durante cinco años una campaña de saqueos y fusilamientos. Para los suyos, era el general don Miguel Saldaña, marqués de Villablanca. El pretendiente don Carlos le había dado este título por ser Villablanca el nombre del pueblo en que Saldaña casi aniquiló á una columna del ejército liberal. Los conocimientos topográficos de su jefe de Estado Mayor—un cura del país, que durante toda su existencia se había limitado á decir misa los domingos, pasando el resto de la semana en los montes con su escopeta y su perro—le permitieron sorprender descuidado al enemigo, obteniendo una victoria ruidosa.</p>
 				<p>Cuando pasó fugitivo la frontera, por no reconocer á los Borbones constitucionales, el cabecilla tenía veintinueve años. Segundón de una familia orgullosa y arruinada, se había visto obligado á luchar con las tradiciones de su casa, que le destinaban á la Iglesia. Estaba terminando sus estudios en el Colegio Militar de Toledo, cuando la revolución de 1868 le hizo desistir de ser oficial por no obedecer á unos generales que acababan de suprimir el trono. Al levantarse en armas don Carlos, fué de los primeros en ponerse á su servicio; y su paso por una escuela militar, así como su educación, le permitieron sobresalir inmediatamente entre los demás guerrilleros del llamado ejército del Centro, propietarios rurales, escribanos de villorrio, clérigos montaraces.</p>
 				<p>Era de un valor temerario, aunque poco afortunado. Atacaba siempre á la cabeza de sus hombres, y de casi todos los combates salía herido. Pero eran heridas «de suerte», como dicen los soldados, que dejaban en su cuerpo gloriosas señales sin destruir su vigorosa salud.</p>
@@ -707,7 +741,7 @@
 				<p>Volvió el príncipe á su yate, y un año después le alcanzó la noticia triste y esperada, hallándose en el Norte de Noruega, al regreso de una excursión por los mares árticos. Su madre había muerto cuando empezaban á elevarse entre los olivos y los pinos del rosado promontorio unos muros enormes de piedra falsamente negruzca, como las tablas pintadas de los anticuarios, y que parecían próximos á derrumbarse de puro viejos apenas salidos de la tierra.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0265_chap3">
-				<head>III</head>
+				<head xml:id="ne0265_head_003">III</head>
 				<p>Miguel llegó á tiempo para recibir el cuerpo de la princesa en París. Antes de morir se había sentido iluminada por ese chisporroteo de razón que anuncia el fin de los grandes desequilibrados, dejando escritos en varios papeles los préstamos hechos á determinadas personas y juiciosas indicaciones al hijo para el buen manejo de la enorme fortuna. Quería ser enterrada junto á su marido, el primero, «el héroe», en el cementerio del Père Lachaise. En sus últimos años de permanencia en París, tocada una vez más del afán de construcción, se había ocupado en preparar su morada definitiva, levantando junto al mausoleo del marqués de Villablanca, cuya imagen ceñuda é indomable tenía en la mano una espada rota, otro monumento no menos ostentoso, con una estatua que ella creía su exacto retrato y no era mas que una reproducción de la infeliz reina de Escocia tal como aparece en las estampas de la época romántica.</p>
 				<p>Durante las ceremonias fúnebres, Miguel Fedor volvió á encontrarse con muchos antiguos visitantes del palacio Lubimoff que él creía muertos. Doña Mercedes le abrazó llorando. Estaba extraordinariamente obesa, con la indiánica tez aclarada por una blancura jugosa y monacal. Parecía la superiora de un noble convento de canonesas. A su lado, el monseñor, con sotana de seda y gesto compungido, movía los labios por la salvación de la difunta. «¡Hijo mío! Todos tenemos nuestras penas.» Y la pobre señora, al hablar así, miró á otra enlutada elegante que se mantenía en el cementerio á cierta distancia de ella, y parecía anonadada por una ceremonia que la había obligado á salir del lecho antes de mediodía.</p>
 				<p>También la duquesa de Delille vino á él, estrechándole las dos manos y envolviéndolo en una mirada extraña.</p>
@@ -834,7 +868,7 @@
 				<p>—El diluvio cae sobre el mundo. Tal vez las antiguas tierras vuelvan á emerger; tal vez queden sumergidas para siempre... Vamos á esperar, refugiados en nuestra Arca.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0265_chap4">
-				<head>IV</head>
+				<head xml:id="ne0265_head_004">IV</head>
 				<p>Después de pasear una mirada de satisfacción por la enorme masa de Villa-Sirena, sus dependencias y las arboledas inmediatas, el coronel dijo á Novoa:</p>
 				<p>—Aquí costó menos lo que se ve que lo que no se ve. Hay mucho dinero enterrado.</p>
 				<p>Y volviendo la espalda al edificio, don Marcos señaló los jardines que se extendían en diversos planos, unos casi al nivel de los techos de la «villa», otros escalonándose en descenso hasta cerca de las olas.</p>
@@ -1027,7 +1061,7 @@
 				<p>—Estás harto, lo repito; tienes la inapetencia y las visiones fúnebres de los que sufren una dolorosa indigestión... Tú te restablecerás. Eres joven aún para permanecer en esa atonía: el apetito volverá á ti. Deseo que no encuentres la mesa puesta como en el pasado, que la dificultad te exalte, que la negativa te haga sufrir; y entonces... ¡entonces!...</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0265_chap5">
-				<head>V</head>
+				<head xml:id="ne0265_head_005">V</head>
 				<p>Nunca había visto don Marcos tan enfadado á su príncipe como esta mañana al anunciarle que la duquesa de Delille le esperaba abajo, en el <seg rend="italics">hall</seg>.</p>
 				<p>—Debías haberle dicho que me he ido; un pretexto cualquiera, un almuerzo en Niza... Pero estáis de acuerdo, seguramente. ¡Cómo proteges á tu Infanta!...</p>
 				<p>El coronel, rojo de emoción, intentó refutar estas acusaciones. Si la duquesa se presentaba de pronto en Villa-Sirena, era tal vez porque él se había negado á recibir sus encargos para el príncipe.</p>
@@ -1256,7 +1290,7 @@
 				<p>—Eso tú lo sabrás—contestó Atilio—. Lo que yo digo es que no podemos ser por mucho tiempo los enemigos de la mujer. Mira al coronel; es tu «chambelán», tu ayudante, el hombre que te obedece ciegamente. Pues hasta ese te abandona. Fíjate: siempre que puede, vive en el pabellón de la portería. Necesita hablar con la hija del jardinero, una mocosa que él ha visto andar á gatas, pero que ya tiene diez y seis años y no ofrece mal aspecto. Trabaja en una sombrerería de Monte-Carlo, y sigue las modas lo mismo que una señorita. El coronel cuida de la renovación de sus zapatos de altos tacones, de sus faldas cortas, de sus boinas y sombreritos, de sus collares de falso ámbar. En esto emplea todo el dinero que tú le permites que tome como recompensa. A veces la sigue de lejos por las calles, admirando su contoneo provocativo, sus pantorrillas al descubierto, siempre con medias de seda... Cultiva pacientemente su jardín. Sonríe como un imbécil al pensar en su futura cosecha.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0265_chap6">
-				<head>VI</head>
+				<head xml:id="ne0265_head_006">VI</head>
 				<p>Un domingo, al levantarse de la cama, el príncipe sintió deseos de cantar. Tal vez fué por seguir maquinalmente á unos pájaros que desde la salida del sol estaban gorjeando en los aleros de Villa-Sirena, engañados por la tibieza de un día primaveral en pleno invierno.</p>
 				<p>Miró por una ventana de su dormitorio. El Mediterráneo, sin una sola vela, se extendía, largamente ondulado, hasta juntarse con el cielo. Las gaviotas volaban en círculos, desplomándose á continuación con las alas encogidas para dejarse llevar por las aguas. Los fondos de arena removidos por las corrientes aclaraban el azul del borde de la costa, dándole un tono opalino de ajenjo. En torno del promontorio hervían las espumas, blancas, luminosas, incesantemente renovadas, entre las cabezas de los escollos.</p>
 				<p>El príncipe oyó voces encima de él. Castro y Spadoni se hablaban de ventana á ventana. La precoz belleza del día les había hecho saltar del lecho con misterioso aviso. Admiraban el cielo, sin un vapor que enturbiase las distancias. Las montañas habían adquirido un relieve extraordinario: parecían más grandes y más próximas. Por encima del Cap-Martin descendían los Alpes italianos, y en sus últimas estribaciones, á ras del agua, blanqueaban las poblaciones fronterizas: Vintimiglia y Bordighera.</p>
@@ -1555,7 +1589,7 @@
 				<p>Dejó caer una ojeada de lástima el príncipe al pasar junto al sabio.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0265_chap7">
-				<head>VII</head>
+				<head xml:id="ne0265_head_007">VII</head>
 				<p>Un nuevo personaje intervino en la vida de los habitantes de Villa-Sirena. El coronel anunció con entusiasmo á este amigo que le había hecho conocer doña Clorinda.</p>
 				<p>—Es un teniente español de la Legión extranjera. Vive en el hotel que el príncipe de Mónaco ha destinado á los oficiales convalecientes. Se llama Antonio Martínez, nombre vulgarísimo que dice muy poco; pero es un gran soldado, un héroe, y no sé cómo sobrevive á sus heridas.</p>
 				<p>«La Generala», que llevaba la cuenta de todos los militares de cierta notoriedad llegados á Monte-Carlo, había querido conocer á este teniente, tomándolo luego bajo su protección. La duquesa de Delille también se interesaba por él, y las dos, orgullosas de ser sus «madrinas», lo exhibían en el atrio del Casino, alquilaban carruajes para pasearlo por los lugares más hermosos de la Costa Azul, le regalaban los comestibles mejores y las pastelerías de tiempo de guerra que conseguían encontrar. Enfermo del pecho á consecuencia de los gases asfixiantes de los alemanes, había recibido, además, en la cabeza un casco de granada, y sufría de tarde en tarde accidentes nerviosos que le hacían caer al suelo privado de conocimiento. Los médicos hablaban con tristeza de su estado. Tal vez viviría años, tal vez moriría en una de estas crisis; lo importante era que llevase una existencia plácida, sin profundas emociones. Y las dos señoras, que conocían su verdadero estado, lo lamentaban cuando él no estaba presente. ¡Tan joven! ¡tan afectuoso y tímido! Sobre el pecho de su uniforme amarillo mostaza llevaba, con los cordones rojos, símbolo de heroísmo dado á los batallones extranjeros, la Cruz de Guerra y la Legión de Honor.</p>
@@ -1942,7 +1976,7 @@
 				<p>—Se acabaron las locuras... Otro día, ¡quién sabe!... Ahora vuelvo á mis preocupaciones. Me da miedo entrar en mi casa; siento terror y esperanza. ¡Ay, la noticia que puedo recibir de un momento á otro!... Di: ¿tú crees de verdad que no le ha pasado nada?... ¿tú crees que podrá volver?...</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0265_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0265_head_008">VIII</head>
 				<p>Spadoni entró en la habitación de Novoa con el propósito de hacerle hablar. Creía ahora fervorosamente en la ciencia del profesor, y al verlo predispuesto al juego y reflexionando sobre sus misterios, esperaba de él, con la simplicidad del creyente, algo milagroso, un descubrimiento genial que los enriqueciese á los dos. Por esto el pianista se levantaba antes que de costumbre, para sorprender al catedrático durante sus ocupaciones de limpieza personal. Consideraba estas horas las mejores para una confidencia.</p>
 				<p>—La palabra azar—dijo Novoa—carece de sentido; mejor dicho, no existe el azar. Es un invento de nuestra debilidad y nuestra ignorancia. Decimos que un fenómeno es debido al azar cuando sus causas nos son desconocidas ó nos parecen inaccesibles al análisis. Ignoramos las causas de la mayor porte de los hechos, y salimos del paso atribuyendo éstos al azar.</p>
 				<p>El músico abrió sus ojos de odalisca, contrayendo á la vez el rostro aceitunado con un gesto de atención y respeto. No entendía bien las palabras del sabio, pero las admiraba de antemano, como un preludio de revelaciones más practicas y de inmediata aplicación.</p>
@@ -2222,7 +2256,7 @@
 				<p>Y le mostró un pequeño papel azul: un telegrama de Madrid, llegado media hora antes.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0265_chap9">
-				<head>IX</head>
+				<head xml:id="ne0265_head_009">IX</head>
 				<p>Spadoni, después de saludar á Novoa en la plaza del Casino, habló de los ensueños que agitaban sus noches y de sus decepciones al despertar.</p>
 				<p>—Usted tiene la culpa, profesor. Cuando estábamos juntos en Villa-Sirena, yo escuchaba esas cosas tan interesantes que usted sabe y luego me dormía en paz. Ahora no encuentro allá con quién conversar. El príncipe y Castro se muestran de un humor insufrible; apenas hablan y no se acuerdan de mí. Yo llevo, como usted dice, una «vida interior», siempre á solas con mis pensamientos, y cuando paso allá la noche, duermo mal, sufro de ensueños, muy hermosos al principio, pero luego muy tristes. ¡Ay, qué buenas veladas las nuestras cuando hablábamos de cosas científicas!</p>
 				<p>Novoa sonrió. Para el músico, el juego y sus misterios eran cosas científicas. Todas las paradojas que él se había gozado en exponerle las guardaba en su memoria como verdades indiscutibles. Intentó atajarlo en su manía, para pedirle noticias del príncipe, pero Spadoni continuó:</p>
@@ -2665,7 +2699,7 @@
 				<p>Luego la besó, mojándola con sus lágrimas.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0265_chap10">
-				<head>X</head>
+				<head xml:id="ne0265_head_010">X</head>
 				<p>Ocho días llevaba Lubimoff sin salir de Villa-Sirena. En sus conversaciones con el coronel—único compañero de esta vida solitaria—había evitado toda alusión á lo ocurrido en el castillo de Lewis. Don Marcos, por su parte, se mostraba de una discreción absoluta, como si tuviese olvidado el duelo y el extraño final que le había dado el príncipe; pero éste adivinaba en su silencio muchas cosas molestas para él.</p>
 				<p>Los otros padrinos debían haberlo contado todo. ¡Qué de comentarios! Y el miedo á encontrarse con las gentes, que sin duda repetían su nombre á todas horas, le hizo permanecer recluído, esperando que le olvidasen. Alguien perdería ó ganaría en el Casino una suma importante, y esto bastaba para que los curiosos dejasen de hablar de él.</p>
 				<p>Empezó á pesarle la soledad como un suplicio. Ya estaba fatigado de pasear siempre por sus jardines, que le parecían estrechos y monótonos. Además, la sobrina de Lewis, abusando de su autorización, llegaba cada tarde con una escolta de ingleses heridos, siempre diferentes. Correteaba con ellos por las avenidas entre los gritos de las aves exóticas, formaba grandes ramos de flores, y él tenía que ocultarse en los pisos altos huyendo de esta alegría infantil, á la que encontraba algo de desesperado y fúnebre.</p>
@@ -2954,7 +2988,7 @@
 				<p>Como escándalo, no era flojo el que acababa de dar la duquesa de Delille.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0265_chap11">
-				<head>XI</head>
+				<head xml:id="ne0265_head_011">XI</head>
 				<p>Dos días después, Lubimoff vió salir, una mañana, al coronel, vestido de negro.</p>
 				<p>Iba al entierro de Martínez. El y Novoa, como españoles, tenían el deber de acompañar al héroe en su último viaje sobre la tierra.</p>
 				<p>A la vuelta relató al príncipe sus impresiones, con una concisión dolorosa. Unos cuantos oficiales convalecientes habían seguido al féretro. El profesor y él eran los únicos acompañantes con traje civil; pero aquellos muchachos heroicos y amables le obligaban á presidir el duelo, por ser coronel y compatriota del difunto.</p>
@@ -3034,7 +3068,7 @@
 				<p>—Creo que nunca volveré aquí... Voy á vender Villa-Sirena.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0265_chap12">
-				<head>XII</head>
+				<head xml:id="ne0265_head_012">XII</head>
 				<p>Don Marcos desciende por los jardines públicos hacia la plaza del Casino, en conversación con un militar.</p>
 				<p>Ya no es el ceremonioso coronel que besaba manos viejas y nobles en los salones de juego y asistía como inevitable comensal á los almuerzos de todas las familias linajudas de paso en el Hotel de París. Nada recuerda en su persona los levitones forrados de terciopelo, los sombreros de seda blanca y demás esplendores de su elegancia original. Va sobriamente vestido de obscuro, y su aspecto tiene algo de rústico; revela al hombre que vive en el campo, gusta de cultivar la tierra y se siente cohibido al volver á la existencia urbana. Lleva puestos los guantes, lo mismo que en sus buenos tiempos; pero ahora es por necesidad. Sus manos le recuerdan cierto exiguo jardín en torno de una «villa» diminuta, con cinco árboles, doce rosales y unos cuarenta arbustos más, que conoce uno por uno, dándoles nombres propios, cuidándolos y regándolos fervorosamente hasta encallecer sus dedos.</p>
 				<p>El militar también marcha como un hombre de campo, mirando á todos lados curiosamente. Un áspero bigote cubre su labio superior, uno de esos bigotes duros y agresivos que surgen después de largos años de continua rasura. Su uniforme es viejo, desteñido por el sol y las lluvias. El paño amarillento tiene el color neutro de la tierra. Su brazo derecho pende inerte del hombro y se mueve al ritmo del paso, con el vaivén de las cosas inanimadas. La mano va cubierta de un guante cuya rigidez acusa el relieve de algo duro y mecánico. La otra mano se apoya en un garrote, y una pipa humea en su boca. Sobre sus bocamangas casi se confunde con el color de la tela un breve y único galón de oficial.</p>

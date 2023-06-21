@@ -1,22 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">La última fada</title>
 				<title type="sub"/>
 				<title type="short">Fada</title>
-				<title type="idno">
-					<idno type="viaf"/></title>
+				
 				<author>
-					<idno type="bne">XX1104029</idno>
-					<idno type="viaf">51699645</idno>
-					<name type="short">Bazan</name>
-					<name type="full">Emilia Pardo Bazán</name>
+					<name type="short" ref="#Bazan"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">251</measure>
@@ -139,13 +132,41 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0106</idno>
+						<idno type="cligs">ne0106</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2003">2003</date>, <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/la-ultima-fada-novela-inedita--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, [s.n.], <date when="1916">1916</date></bibl>
-				<bibl type="edition-first"><date when="1916">1916</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El tesoro de Gastón</title>
+					<title type="sub"/>
+					<idno>
+					<idno type="viaf"/>
+				</idno>
+				</title>
+					<author xml:id="Bazan">
+						<name type="full"><forename>Emilia</forename> <surname>Pardo Bazán</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9748 - IO 9753">IO 9748 - IO 9753</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118641476">118641476</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q275929/">Q275929</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1104029.html">XX1104029</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/51699645/">51699645</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2003">2003</date>, <ref target="http://www.cervantesvirtual.com/portales/pardo_bazan/obra/la-ultima-fada-novela-inedita--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, [s.n.], <date when="1916">1916</date></bibl>
+					<bibl type="edition-first"><date when="1916">1916</date><idno source="k10plus" type="ppn" n="097473685" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=097473685"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">La última fada</title>: 	<title type="sub">novela inédita</title> <date when="1916">1916</date>, <publisher>La Novela Corta</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="097473685" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=097473685"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Novelas ejemplares</title>: 	<title type="sub">Los tres arcos de Cirilo. Un drama. Mujer. Novelas cortas : El áncora. Cada uno ... Allende la verdad. Belcebú. Finafrol. La gota de sangre. Arrastrado. En las cavernas. La muerte del poeta. La aventura de Isidro. La última fada. Clavileño. Dioses. La Pepona. La Serpe. Rodando</title> <date when="2002">2002</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="362574529" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=362574529"/> 		<idno type="isbn" n="8489794472"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The last fairy (La última fada)</title> <date when="2014">2014</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1014928710" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1014928710"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La última Fada</title> <date when="2017">2017</date>, <publisher>Linkgua Ediciones,</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1758797347" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1758797347"/> 		<idno type="isbn" n="9788490079164"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -157,6 +178,14 @@
 				<p>Isayo y Tronco vuelven a Bretaña, donde intenta desencatar a Merlín, pero es atacado por gigantes de piedra. Bibiana le salva y revela que Tronco era un disfraz suyo para protegerle; ambos revelan sus sentimientos. Isayo le pide ayuda para desencantar a Merlín, sin saber que fue ella quien lo encantó. Ella explica que debe matar una tórtola. Lo hace y Merlín sale del espino y ataca a Isayo inmediatamente por haber disparado a Bibiana, que muere. Merlín maldice a Isayo, quien vuelve con el ermitaño y peregrina a Santiago.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9749" key="IO 9749" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +198,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">naturalista</term>
 					<term type="author.year.change">1888</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">child</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -190,7 +219,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela corta</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -220,6 +249,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-07-09" who="#">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,7 +257,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0106_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0106_head_000">- I -</head>
 				<p>Cuando Tristán de Leonís, Caballero de la Tabla redonda, e Iseo la Morena, reina del país de Cornualla, hubieron exhalado a un tiempo el último suspiro (siendo muy ardua faena el desenlazar sus cuerpos estrechamente abrazados), al pie de un espino cubierto el año todo de blanca flor, en las landas de Bretaña, país de encantamiento, se celebró un conciliábulo de fadas para tratar de la suerte del hijo que habían dejado los dos amantes.</p>
 				<p>No vierais, por cierto, cosa más linda que el tal espino. La albura que cubría enteramente sus ramas estaba rafagueada de un rosa muy sutil, y el viento, al agitar su follaje, hacía caer una lluvia de pétalos siempre olorosos. No era un arbusto, sino un árbol grande, y su mole de plata parecía que alumbraba todo el bosque, el cual se extendía casi una legua en derredor. Y le tenían miedo los labriegos a aquel bosque, sabiendo que lo poblaban trasgos y brujas, y, sobre todo, que en el grueso tronco del espino se hallaba preso nada menos que el sabio Merlín, protobrujo y mago en jefe.</p>
 				<p>Contábase que le había encerrado en tal cárcel su discípula y amada Bibiana, a quien el brujo, senilmente enamorado, dio cierto y que se sirvió de él para jugarle una mala pasada. Las crónicas, que no entienden de achaques del corazón, aseguran que Bibiana sufrió, al encerrar a Merlín, una equivocación fatal, de la cual le pesó mucho, y bien quisiera deshacerlo; mas yo os digo que las largas guedejas, más blancas que las flores del espino, de Merlín, no atraían a la maga, y al darle prisión, quiso librarse del peso y enojo de sus ternezas tardías.</p>
@@ -245,7 +275,7 @@
 				<p>Y las fadas se alejaron, y Bibiana también; pero aún no había traspuesto la linde del bosque cuando sonó otra vez el hórrido baladro de Merlín. Era como si toda la selva se quejase con gritos de alma en pena, preñados de amenazas y maldiciones; y la luna, de súbito, se cubrió de un nubarrón negro, y un viento glacial, sacudiendo las ramas del espino, le arrancó flores hasta formar a su alrededor tapiz espeso.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0106_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0106_head_001">- II -</head>
 				<p>Y he aquí que el infanzón Isayo de Leonís iba haciéndose la más bella criatura que pueda imaginarse. Cumplidos los siete años era la admiración de cuantos visitaban la ermita. Los devotos, al acudir a la misa del ermitaño, llevaban al chicuelo tortas de miel, sartas de conchas, pajarillos vivos o nidos con sus huevos. Isayo atraía por una expresión angelical y unos ojos verdes y claros como el mar en calma, que resaltaban sobre la piel morena, tan morena como la de su madre. El pelo caía en largos tirabuzones sobre su cuello robusto ya. En la ermita no había sastres, y el buen Angriote vestía a su pupilo con una pellica de oveja que le hacía parecer un San Juan Bautista niño.</p>
 				<p>Sin embargo, sus madrinas las fadas, de tiempo en tiempo y cada vez con menos frecuencia, pues iban muriendo de vejez, traían para él camisas de tela tejida con lino hilado en rueca de oro entre mágicas canciones. Y jamás la tela se rompía ni gastaba, ya hasta parecía estirar al medrar el chiquillo, que, según crecía en estatura, revelaba fuerzas y vigor extraordinario.</p>
 				<p>El virtuoso ermitaño pedía diariamente a la bienaventurada Santa Ana que Isayo no saliese jamás de la ermita y, recibiendo la consagración sacerdotal, viviese vida sobria, humilde y penitente, espiando así las faltas de sus padres. Pero la fada Bibiana, que en figura de mendiga iba a menudo a ver a su ahijado, le hablaba de justas, torneos, proezas y grandezas humanas, y argüía al solitario diciéndole:</p>
@@ -263,7 +293,7 @@
 				<p>Bibiana le miró, sonriendo al ruego. Sus pupilas se buscaron. Él, arrodillado, cogía ya la orilla del cándido ropaje, y ponía en ella unos labios fervorosos y devoradores.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0106_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0106_head_002">- III -</head>
 				<p>Al otro día se provistó el doncel de algunas armas, y Angriote -lamentando que quisiese salir a correr aventuras, cuando allí poseía la paz, la pureza de la conciencia- bendijo sobre su pecho una santa reliquia, encerrada en relicario de nácar y plata, ofrenda de marinos venidos de lueñes tierras orientales. Y al ir a trasponer el sol, con paso ligero, acudió a la cita, ansioso de volver a ver a la Fada.</p>
 				<p>Ella le esperaba ya. Un capuchón gris cubría sus dorados cabellos; la sacra hoz de oro brillaba en su cintura.</p>
 				<p>-No temas, lindo ahijado -susurró, en voz cristalina, semejante a la del agua al caer en el pilón de las fuentes encantadas.</p>
@@ -312,7 +342,7 @@
 				<p>La Fada se desvaneció entre la sombra. En el aire sonó una queja débil. Diríase que se iba llorando, también ella, la separación. Isayo, entonces -¿hizo mal, oh devotos de las fadas?- cogió una de las rosas de los rosales que había cortado, la acercó a sus labios, y la deslizó, por la abertura del jubón, en su pecho. Y le pareció que, donde estaba la rosa, un calor singular quemaba la carne.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0106_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0106_head_003">- IV -</head>
 				<p>Al salir al patio de armas vio Isayo una contrahecha figura, que tenía del diestro a dos caballos enjaezados para jornada, sobre cuya grupa pendían repletas alforjas. Porque todo eso de que los caballeros andantes no comían y no se preparaban a las caminatas por riscos y breñas llevando alguna refacción y reparo en el estómago, es fantasía. Por mucho que las fadas protegiesen a Isayo, él no era un espíritu puro, sino un arrogante y viril mancebo, y no sería buen comienzo de fazañas morirse de hambre.</p>
 				<p>Uno de los caballos era de magnífica estampa; el otro, menos gallardo pero recio y fuerte.</p>
 				<p>-Caballero, amo mío -dijo el contrahecho-, aquí tienes a tu escudero fiel y a tu corcel de batalla, que se llama Azor, como yo he por nombre Tronco. Y me llaman así porque soy un tronco mal formado, y me adorna una joroba doble. Pero cata que de entendimiento no soy corcobado, y sé donde el zapato me aprieta. Cabalga, pues, caballero, y los ángeles caminantes nos guíen.</p>
@@ -362,7 +392,7 @@
 				<p>Fuese corrida la dama, pero minutos después sintió, en efecto, verdadera gratitud, pues se hizo en palacio una ronda, al frente de la cual iba el mismo rey Artús, con espada y rodela, para ver si todo estaba en orden, cada cual en su lecho, y ningún malhechor en el palacio. Y al rayar la aurora, Isayo, tranquilo e inocente, dándole Artús pliego y venia, salió de la mansión real.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0106_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0106_head_004">- V -</head>
 				<p>Cabalgaron el Doncel y su escudero, y guiándose por las noticias recién sabidas, cruzaron toda la tierra de Francia, hasta los Pirineos, y entrando por las gargantas de Roncesvalles, se fueron llegando a Pamplona. En el largo trayecto no faltaron lances peligrosos, y se anunciaron no pocas aventuras que prometían honra singular a un caballero novel; pero Isayo no quiso seguirlas, aunque el cuerpo le hirviese en deseos de probar sus fuerzas. No tenía el derecho de exponerse a una herida grave o a ser muerto, sin entregar antes el mensaje del rey de Bretaña al Monarca castellano, y acordar con él que deshiciese los formidables aprestos de los moros, resueltos a acabar con la cristiandad de Castilla, para volverse después contra Francia. Isayo iba derecho a su fin, y no se detenía. Al avistar a Pamplona tuvo, sin embargo, un momento de vacilación, porque se le ofreció una aventura que, sin nota de cobarde, no había manera de dejar atrás. A la boca de un puente le salieron al paso tres figuras armadas de punta en blanco, cuyo rostro tapaba la visera, y que, a grandes voces, gritaban:</p>
 				<p>-¡No se pasa, no se pasa por aquí! Quien quiera que seáis, atrevido caballero, sed servido de volver grupas, vos y ese contrahecho y ridículo escudero que os acompaña. Buscad caminos más desviados, vadead el río si así os place, gire a bien que va medio seco; pero este puente lo guardan tres Alderetes, caballeros de este lugar, y a nadie consienten que pase sin que primero sean con ellos en singular batalla.</p>
 				<p>Y he aquí que Tronco, con su fisga maligna, ofendido quizás de haberse oído llamar ridículo, metió su cucharada, exclamando:</p>
@@ -382,7 +412,7 @@
 				<p>Ya se colige que el Rey se lo dio de buen grado. Isayo no admitió, de las tropas que el Rey le ofrecía, sino unos veinticinco hombres, al mando de tres valientes caballeros, llamados Velasco, Guzmán y Mendoza. Poco antes de que la pequeña tropa avistase a Nájera, el escudero Tronco pidió que hiciesen alto, y entre la sombra de unas encinas se despojó de sus vestiduras y apareció disfrazado de mendiga vieja y corcobada, con tal propiedad, que apenas si su amo le reconocía. Luego rogó a Isayo que aguardasen allí ocultos hasta la noche, pues él con su disfraz entraría en la plaza y se la abriría cuando estuviesen bien metidos en sueño los moros. Así lo hicieron los de Isayo, y, descansando primero, a cosa de la media noche, avanzaron sigilosamente, envueltos en cerros los pies de los caballos, hacia la villa. Llegados casi al pie de los muros, se detuvieron y esperaron. Al poco tiempo se abrió una poterna semi oculta, y dejando sus monturas al cuidado de uno de ellos, los de Castilla se metieron calladamente y a la deshilada en la villa. Tronco, abandonando el disfraz, los guiaba. En la revuelta de una calle sombría, Tronco abrió la puerta de una casucha, y de ella salieron dos cristianos que repartieron antorchas a la tropa, y antes de que nadie pudiese enterarse tenían Isayo y sus burgaleses pegado fuego a más de veinte casas que empezaban a arder. Entre la confusión, los castellanos podían avisar a los moradores de Nájera, de oreja a oreja, para que les ayudasen; y así pudieron concentrarse en el monasterio de San Benito, donde Tronco les había dicho que Almilihacen había instalado su residencia, y encerrado a la Infanta cautiva. Las puertas las hallaron francas, porque la guarnición mora, desnudo el alfanje, salía en tropel a ver qué era aquello del incendio; y no fue difícil a Isayo penetrar en la cámara donde la Infanta estaba arrodillada rezando, tomarla en brazos, echándole encima el velo de una esclava mora, y salir con ella a cuestas, repitiendo: «¡Al fuego! ¡Agua, agua!». Corrió a la poterna por donde habían entrado; lleva a la Infanta al bosquecillo, y allí se la confió a Tronco, que la puso a la grupa y salió echando chispas, camino de Burgos. Y entonces el Caballero Triste y su pequeña hueste volvieron, ya a caballo, a Nájera, envuelta en llamas y humo, donde sólo se oían lamentos y gritos; y entraron como diablos sueltos, sin dejar moro a vida, hasta que el doncel pudo encararse con el propio Almilihacen Quevir y medir con él sus armas; pero aunque bien quisiera despacharle como cuentan las crónicas que despachó Galaor al desemejado gigante señor de la peña de Gáltares, el morazo logró huir a favor de la confusión; sus tropas, no sabiendo con quién combatían, faltándoles jefe, se rindieron, y Nájera quedó por los cristianos otra vez.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0106_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0106_head_005">- VI -</head>
 				<p>Ya se deja entender qué regocijo habría en Burgos con haber recobrado a la Infanta, y también la villa de Nájera. Con la tazaña del Caballero Triste, y el regocijo que en Burgos siguió a ella, cobraron ánimos los cristianos de todas partes, y en tropel, armado cada cual como pudo, se dirigieron a la ciudad para ofrecerse al Rey, rogándole que marchase sobre los infieles hasta arrojarles de astilla y darles un buen escarmiento.</p>
 				<p>Estaba el Rey más inclinado a celebrar con festines el fausto acontecimiento del rescate de su hermana y cobro de la villa que a salir a padecer las incomodidades de una campaña que podía ser larga y hasta acabar en mal suceso para las armas de los castellanos. Y no juzgue nadie por esto que el rey Juan fuese cobarde. Al contrario: había dado señales claras de no estimar en mucho la vida y realizado sus correspondientes proezas. Pero si no temía a la de la guadaña, temía en cambio a las molestias y privaciones, y diera cuanto hay en el mundo por no sufrirlas. Sin embargo, como Isayo le animase y hasta le reprendiese respetuosamente su pereza, el rey Juan acabó por resolverse a la campaña, y, resuelto ya, demostró un celo y un entusiasmo realmente laudables.</p>
 				<p>Antes de emprender la jornada, anunció a condes y caballeros y a sus buenos burgaleses, por pregones de heraldo, cómo el caballero Isayo de Leonís llevaría en su escudo, desde hoy más, la figura de una Infantina, y a sus pies muchas testas de moros cortadas, y que, al volver vencedores de los sarracenos, se celebrarían en Burgos grandes fiestas para solemnizar las bodas del caballero Isayo, Príncipe de Bretaña, y la Infanta doña Mayor de Castilla.</p>
@@ -411,7 +441,7 @@
 				<p>Envenenada mi sangre, desde el nacer por el mismo filtro que perdió a mis padres, amo a una mujer... que ni mujer es siquiera; que acaso no pertenece a la humanidad. No puedo explicar mejor lo que me pasa. Te ruego pidas a la señora Infanta que me otorgue su perdón, y piense alguna vez con bondad en su caballero, que la libró del moro y pugnó por ella, y que rece frecuentemente por Isayo de Leonís. Y ahora considera también ¡oh gran rey de Castilla! (que desde hoy eres más grande), cómo estoy obligado a llevar a mi señor Artús la respuesta al mensaje con que me despachó, y cómo tengo un voto que cumplir en Bretaña, y es el desencanto del sabio Merlín. No sienta bien a los andantes sumergirse en las delicias del matrimonio, y mira cómo al Cid, por sus hijas le vino afrenta. El andante, suelto y señero. Adiós, rey don Juan... No desaproveches la victoria. ¡Adelante!</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0106_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0106_head_006">- VII -</head>
 				<p>Salió Isayo, en efecto, temprano, oída misa de acción de gracias, que dijo el arzobispo con sublime fervor, y caballero y escudero desanduvieron el camino, no sin algunos encuentros con rezagados y dispersos moros, en que pudo Isayo probar una vez más su arrojo invencible. Ya en tierra francesa, notó que empezaba a correr (a pesar de no conocerse entonces los radiogramas), la noticia de su señalado triunfo; y era grande el júbilo, pues tan amenazada pudo verse entonces Francia como Castilla. Al llegar, por fin, a la Corte de Artús, le recibieron con singulares demostraciones de cariño y de entusiasmo. La gente, en la calle, besaba sus estribos, y las doncellas le sembraban el camino de flores. En su ilusión, suponían que era Isayo, y nadie más, quien había destruido el poder de los mahometanos, como otro Carlos Martel.</p>
 				<p>Las protestas del doncel no bastaban para impedir los extremos de idolatría. El Rey, aunque más reflexivo, y enterado de la parte que las huestes castellanas tuvieron en la empresa, también le acogió como acogería a un hijo, abrazándole y dándole en el banquete la silla más alta. Ginebra le devoraba con los ojos; y esto fue parte a que el caballero, antes que anocheciese, pidiese licencia al Rey para seguir jornada e irse a dormir al monasterio.</p>
 				<p>-Empeñada está mi palabra, señor -alegó respetuosamente-, y he de desencantar al sabio Merlín, lo cual redundará en gran beneficio de la cristiandad, y de estos reinos particularmente. Al bautizar al Sabidor se habrán acabado la idolatría y las viejas supersticiones. Con los consejos y ciencia de Merlín, tu reinado, ya tan glorioso, llegará al esplendor sumo. No me permite mi conciencia desatender un instante en esta demanda, ni malograrla por lentitud. Así pues, ¡oh Rey!, déjame besar, en señal de despedida, tu valerosa mano.</p>
@@ -432,7 +462,7 @@
 				<p>Si Isayo estuviese menos conmovido observaría que su escudero Tronco faltaba de allí. Pero no tenía ojos ni corazón sino para la madrina, dudando aún de la felicidad de tenerla al alcance de sus brazos.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0106_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0106_head_007">- VIII -</head>
 				<p>Con un grito de ansiedad infinita, de pasión insensata, Isayo atrajo a sí a la Fada, que se dejó ir.</p>
 				<p>-¿No me conociste? -balbucía ella, envolviéndole en el manto de seda de la cabellera luminosa.- ¿No me conociste, di, amor mío? Yo era quien bajo el nombre y la figura de Tronco, te acompañaba, te defendía, trataba de que el camino te fuese menos largo y las horas menos difíciles. Yo no me separé de ti ni un instante. Yo era Tronco, tu escudero... Y ahora, cumpliendo mi promesa, acudo cuando me llamas... Pero ¿por qué me has llamado? Nuestra pasión es fatal, y te pido, Isayo, que la olvides, como olvidarás la impresión tremenda del baile de los gigantes. En mal hora y con mal sino cuidé de ti; en mal hora también te llevé al castillo de tu padre, a que, desde el seno de la muerte, te armase caballero.</p>
 				<p>-No digas eso, amada mía, -murmuraba, vibrante de ansiedad y de locura, el paladín. En buen hora te encuentro, en buen hora has vuelto a aparecérteme con tu seductora forma de mujer. Mujer serás para mí, y te amaré como el caballero galaico Mariño amó a la Sirena y vivió con ella largos años de felicidad. Aquí, en esta orilla del mar donde ha transcurrido mi niñez, o en el castillo de mis padres, que reedificaré para ti, habitaremos los dos, olvidados del mundo, en medio de tanta dicha.</p>

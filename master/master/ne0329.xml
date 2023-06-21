@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La novela de un novelista</title>
-				<title type="sub">Escenas de la infancia y adolescencia</title>
+				
 				<title type="short">NovelaNovelista</title>
-				<title type="idno">
-					<idno type="bne">XX2118272</idno>
-					<idno type="viaf">XX2118272</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1035048</idno>
-					<idno type="viaf">61554068</idno>
-					<name type="short">Valdes</name>
-					<name type="full">Armando Palacio Valdés</name>
+					<name type="short" ref="#Valdes"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1962</measure>
@@ -141,13 +131,54 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0329</idno>
+						<idno type="cligs">ne0329</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.1, emiferro, <date when="2014">2014</date>, <idno>14400</idno>, <ref target="https://www.epublibre.org/libro/detalle/14400"/>.</bibl>
-				<bibl type="print-source">Librería de Victoriano Suárez, Madrid, <date when="1922">1922</date></bibl>
-				<bibl type="edition-first">Librería de Victoriano Suárez, Madrid, <date when="1921">1921</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La novela de un novelista</title>
+					<title type="sub">Escenas de la infancia y adolescencia</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2118272.html">XX2118272</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/XX2118272/">XX2118272</idno>
+				</idno>
+				</title>
+					<author xml:id="Valdes">
+						<name type="full"><forename>Armando</forename> <surname>Palacio Valdés</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736 - IO 9737">IO 9736 - IO 9737</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118789252">118789252</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q645141/">Q645141</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1035048.html">XX1035048</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/61554068/">61554068</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, r1.1, emiferro, <date when="2014">2014</date>, <idno>14400</idno>, <ref target="https://www.epublibre.org/libro/detalle/14400"/>.</bibl>
+					<bibl type="print-source">Librería de Victoriano Suárez, <pubPlace>Madrid</pubPlace>, <date when="1922">1922</date></bibl>
+					<bibl type="edition-first">Librería de Victoriano Suárez, <pubPlace>Madrid</pubPlace>, <date when="1921">1921</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">La Novela de un novelista</title> <date when="1922">1922</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099859262" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099859262"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Le roman d'un romancier</title>: 	<title type="sub">scènes d'enfance et d'adolescence</title> <date when="1927">1927</date>, <publisher>Ed. de la Nouvelle Revue Française</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="468344217" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468344217"/> </bibl>
+						<bibl type="further-edition" xml:lang="ita"><title type="main">Il romanzo di un romanziere</title>: 	<title type="sub">Scene d'infanzia e di giovinezza</title> <date when="1928">1928</date>, <publisher>'Mantegazza'</publisher> <pubPlace>Roma</pubPlace> 		<idno type="ppn" n="41786518X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=41786518X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Album de un viejo</title> <date when="1940">1940</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1376615924" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376615924"/> </bibl>
+						<bibl type="further-edition"><title type="main">La novela de un novelísta</title>: 	<title type="sub">escenas de la infancia y adolescencia</title> <date when="1941">1941</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1143105338" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1143105338"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de un novelista</title> <date when="1946">1946</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="584573022" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=584573022"/> </bibl>
+						<bibl type="further-edition"><title type="main">La novela de un novelista</title>: 	<title type="sub">escenas de la infancia y adolescencia</title> <date when="1946">1946</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46781855X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46781855X"/> </bibl>
+						<bibl type="further-edition"><title type="main">La Novela de un novelista</title> <date when="1946">1946</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="099864363" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099864363"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Señorito Octavio. El idilio de u enfermo. La espuma. El maestrante. El origen del pensamiento. Lo cármenes de Granada. La novela de u novelista. Album de un viejo. A car o cruz. Cuentos. Escritos varios</title> <date when="1948">1948</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1145122051" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1145122051"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El señorito Octavio. El idilio de un enfermo. La espuma. El maestrante. El origen del pensamiento. Los cármenes de Granada. La novela de un novelista. Album de un viejo. A cara o cruz. Cuentos. Escritos varios</title> <date when="1952">1952</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1144460735" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1144460735"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de un novelista</title>: 	<title type="sub">escenas de la infancia y adolescencia</title> <date when="1959">1959</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465553796" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465553796"/> </bibl>
+						<bibl type="further-edition"><title type="main">El Señorito Octavio. El idilio de u enfermo. La espuma. El maestrante. El origen del pensamiento. Lo cármenes de Granada. La novela de u novelista. Album de un viejo. A car o cruz. Cuentos. Escritos varios</title> <date when="1965">1965</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1071613138" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1071613138"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de un novelista</title>: 	<title type="sub">escenas de la infancia y adolescencia</title> <date when="1965">1965</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="233019758" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233019758"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de un novelista</title>: 	<title type="sub">escenas de la infancia y adolescencia</title> <date when="1966">1966</date>, <publisher>Ed. Kapelusz</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="468384391" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468384391"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La novela de un novelista</title>: 	<title type="sub">escenas de la infancia y adolescencia. seguida de Album de un viejo</title> <date when="1992">1992</date>, <publisher>GEA</publisher> <pubPlace>Oviedo</pubPlace> 		<idno type="ppn" n="043562450" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043562450"/> 		<idno type="isbn" n="8488071132"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Novela de un novelista</title> <date when="1900">19XX</date>, <publisher>Suarez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1376615916" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376615916"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +188,14 @@
 				<p>Publicada en 1921, se trata, como indica el subtítulo Escenas de la infancia y adolescencia, de unas memorias de su época infantil y juvenil, en que nos narra sus primeros años de vida a lo largo de las deliciosas páginas de esta autobiografía ejemplar. Tales episodios son contados con sencilla emoción y una ternura conmovedora, traspasado de finísimo humor. He ahí, en definitiva, los rasgos más comunes a toda su obra admirable.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736" key="IO 9736" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -184,7 +223,7 @@
 					<term type="text.genre.subgenre.edit" resp="epublibre">Memorias</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">memoir</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -217,16 +256,17 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-09-15" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>DEDICATORIA: A LOS NIÑOS DE HOY</head>
+				<head xml:id="ne0329_head_000">DEDICATORIA: A LOS NIÑOS DE HOY</head>
 				<p>A vosotros dedico estas páginas, porque seréis tal vez los únicos que con ellas se diviertan. No me pesa. Quisiera terminar mi vida haciendo meditar un poco a los grandes y divirtiendo a los pequeños.</p>
 			</div>
 			<div>
-				<head>ANTES DE EMPEZAR</head>
+				<head xml:id="ne0329_head_001">ANTES DE EMPEZAR</head>
 				<p>Los niños encuentran siempre el mundo nuevo y jugoso. Para los viejos como yo se cae a pedazos de puro seco. ¿Quién tiene razón? Ellos; sin duda ellos. Todo pierde su valor con el tiempo, pero no es culpa de los manjares, sino de la boca y la lengua. «Preguntad a los niños y los pájaros cómo saben las cerezas», dice un proverbio alemán. Ignoro cómo sabrán a los pájaros, pero en cuanto a mí me sabían tan bien hace sesenta años que cuando veía una cesta de ellas caía inmediatamente en éxtasis como Santa Teresa en presencia del Sacramento.</p>
 				<p>La historia de la infancia es igual siempre a sí misma. Es la felicidad. Todo niño es feliz si una mano brutal no se interpone entre él y la felicidad. Aire, luz, libertad, un poco de arena o de barro. No necesitamos entonces más para ser felices. Todo eso lo da Dios. Sólo en la infancia percibimos el sabor de los elementos creados. Las cosas tienen verdadera significación para nosotros: el mar, la lluvia, la aurora, las montañas y los ríos, las fisonomías de los hombres y los animales entran por los ojos en nuestra alma y allí se pintan con caracteres indelebles.</p>
 				<p>Recuerdo la profunda impresión que me causaba en mi niñez el mar. Cuando me acercaba a él todo mi diminuto ser se estremecía; la brisa salina me enajenaba, el fragor de las olas me enardecía, los barcos que se balanceaban a la orilla me dirigían amables invitaciones, las gaviotas volando sobre la inmensa llanura despertaban en mi corazón ansias locas de lo infinito. Era una mezcla de terror y de gozo. No podía hartarme de mirar y de sentir. Había una especie de fascinación en este abismo azul, verde, argentado que me hacía esperar siempre algo inefable y divino. ¿Qué nueva felicidad llegaría para mi? ¿Dónde se escondería en este momento? Mi espíritu daba vueltas, trazaba círculos como aquellas gaviotas sobre la fúlgida llanura. Pensaba ver surgir de las olas figuras adorables, rostros divinos que me sonreían. Era el templo de Dios aquel abismo líquido y transparente de donde se alzaba una música que me inundaba de dicha y llenaba mis ojos de lágrimas…</p>
@@ -245,7 +285,7 @@
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0329_chap1">
-				<head>I: ADÁN EN EL PARAÍSO</head>
+				<head xml:id="ne0329_head_002">I: ADÁN EN EL PARAÍSO</head>
 				<p>Habíamos llegado a Entralgo la noche anterior; un día entero caminando en diligencia hasta entrar en Sama de Langreo. Allí nos esperaba nuestro mayordomo Cayetano con los caballos necesarios. Montó mi padre en un caballo blanco, izaron a mi madre sobre otro negro provisto de jámugas, acomodaron a las criadas sobre pacíficos asnos y a mí me puso Cayetano delante de sí en su propio caballo <seg rend="italic">Gallardo</seg>, más brioso que <seg rend="italic">Bucéfalo</seg> y más juicioso que <seg rend="italic">Rocinante</seg>. Nos servía de espolique José Mateo.</p>
 				<p>Seguimos la orilla del río y cuando llegamos a Entralgo era ya noche. Yo estaba medio dormido. Sólo me di cuenta de que había unas montañas muy altas, muchos árboles, un río, una gran casa con balcones de madera y delante de ella unos cuantos aldeanos y aldeanas que nos acogieron con alegría. Dos de ellos llevaban sendos candiles en las manos, con los cuales nos alumbraban mientras nos apeábamos. Recuerdo que una mujer vieja y gorda, mejor vestida que las otras, me tomó de los brazos de Cayetano en los suyos y me besó con efusión diciendo en voz alta que parecía un clavel. Era Manola la noble esposa de Cayetano. Después manifestó en voz más alta aún, que parecía un botón de rosa y recuerdo que estos símiles me gustaron mucho y me hicieron formar buena idea de las facultades discursivas de esta señora.</p>
 				<p>Mi padre dijo:</p>
@@ -290,7 +330,7 @@
 				<p>Los míos se entornaban ya a mi despecho para dormir. Sentía perder de vista por algunas horas el paraíso en que la Providencia me había colocado. A mis oídos llegaba, sin embargo, la conversación que sostenía mi padre con aquellos señores. Se hablaba de unas cosas espantosas, del robo que se había cometido hacía pocos días en casa del señor cura de Pelúgano, de la ferocidad de los ladrones, de los tormentos que habían infligido al buen sacerdote y a su ama de gobierno para hacerles declarar dónde estaba escondido el dinero. Pero todo aquello no era más que una horrible pesadilla. Yo estaba en el Paraíso, me hallaba absolutamente convencido de ello, y ansiaba despertarme para gozar nuevamente de sus alegrías inmortales.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0329_chap2">
-				<head>II: UNA SUERTE ORIGINAL DEL TOREO</head>
+				<head xml:id="ne0329_head_003">II: UNA SUERTE ORIGINAL DEL TOREO</head>
 				<p>Después de tan larga ausencia mi padre tenía muchos asuntos que arreglar en Laviana. Permaneceríamos, pues, allí no sólo el verano sino el otoño, acaso también el invierno; en fin, una eternidad. Yo me dispuse a pasar la eternidad como la pasan los ángeles, suponiendo que los ángeles no tengan colegio. Mi padre me había anunciado que todos los días aprendería mis lecciones de gramática y de historia sagrada y escribiría mi plana; pero yo conocía a mi padre perfectamente aunque no le hubiese engendrado y la eficacia de sus preceptos cuando éstos tendían a molestarme.</p>
 				<p>Me puse, pues, tranquilamente en los primeros días a recorrer el Paraíso terrenal y a reconocer sus parajes más deleitosos empezando por nuestra morada. Era un gran caserón hecho a retazos por sucesivas generaciones. Para pasar de una habitación a otra había que subir o bajar casi siempre un escalón y esta circunstancia me impresionó muy agradablemente en su favor, no sé por qué. Quizá, sin darme cuenta de ello, previese que aquel constante subir y bajar iba a influir beneficiosamente en el desarrollo de mis piernas. Sin embargo, lo primero que desarrollé fué la cabeza, pues di unas cuantas caídas que levantaron otros tantos chichones en ella.</p>
 				<p>Había una gran sala en la parte trasera, que llamaban la <seg rend="italic">sala nueva</seg> aunque era terriblemente vieja y a entrambos lados de la casa dos amplios corredores de rejas guarnecidas con sendas parras. Los muebles eran feos y toscos: sobre todo un reloj de pesas tenía tan espantosa catadura, que no podía mirarlo sin sentirme inquieto, y cuando iba a dar la hora comenzaba a producir unos ruidos extraños y odiosos que me asustaban.</p>
@@ -315,7 +355,7 @@
 				<p>Así es como las satisfacciones de la vanidad esparcen casi siempre un bálsamo refrigerante sobre nuestras heridas.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0329_chap3">
-				<head>III: IMPRESIONES DEL ESTÍO</head>
+				<head xml:id="ne0329_head_004">III: IMPRESIONES DEL ESTÍO</head>
 				<p>Aquel verano envió Dios a la tierra el más verde follaje, las brisas más perfumadas, las aguas más cristalinas y las cerezas más encarnadas de su infinito repertorio. En el cielo también mostró su buena voluntad haciendo nadar en él un sol refulgente seguido de alegre escolta de nubecillas irisadas. Y en nuestra propia casa de Entralgo se ingenió para que mi padre olvidase la mayor parte de los días el darme lección y para que <seg rend="italic">Muley</seg>, el perro de Cayetano, fuese cada vez más amable y tolerante conmigo.</p>
 				<p>Los animales seguían siendo mi dicha a pesar de la amarga decepción que acabo de relatar. La fauna me interesaba muchísimo más que la flora y como esto se sabía en el pueblo los chicos me traían con frecuencia mirlos de cría, jilgueritos, pinzones, calandrias, etc., etc. Yo los criaba a la mano, les abría el pico y les introducía cuanto alimento podía hallar en la cocina. A pesar de eso ¡caso extraño!, todos se morían bien pronto: apenas pasó ninguno de las cuarenta y ocho horas. Esto hacía montar en cólera a mi padre y me increpaba duramente, no sé por qué, pues yo los cuidaba con el esmero y la diligencia que puede emplear una madre con sus hijos. Si se morían, sin duda era por mala voluntad, pues no es creíble que en edad tan tierna estuviesen ya fatigados de la vida.</p>
 				<p>Los terneros continuaban mereciendo mi aprobación aunque yo no merecía la suya, pues en cuanto me acercaba y les ponía la mano encima comenzaban a brincar y forcejear como desesperados y tiraban de la cadena que los tenía sujetos al pesebre como si quisieran ahorcarse con el collar. La madre allá en el fondo del establo volvía la cabeza y dejaba escapar un sordo mugido de reprobación.</p>
@@ -360,7 +400,7 @@
 				<p>Por fin aquella gran ruina mejoró de aspecto. Mi padre hizo traer un cestito, lo rellenó con algodón en rama y colocó en él delicadamente a los tiernos golondrinitos. Después Cayetano se subió en una escala, clavó una escarpia en el techo del corredor y colgó de ella el cestito. Nos ausentamos todos y pocos minutos después pudimos observar con satisfacción que los padres volvían de nuevo a cebar a sus hijos.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0329_chap4">
-				<head>IV: LA INFANCIA ANTE LA MUERTE</head>
+				<head xml:id="ne0329_head_005">IV: LA INFANCIA ANTE LA MUERTE</head>
 				<p>Las personas sensibles y que aman mucho a los niños se esfuerzan en alejar de ellos los espectáculos de muerte. Suponen que ésta ejerce sobre su impresionable imaginación un efecto pernicioso y que esta turbación prolonga sus desastrosos efectos y repercute al través de toda su existencia.</p>
 				<p>Me parece que están en un error. La muerte impresiona poco a los niños porque no creen en ella. El niño en este respecto, como en otros varios, semeja al animal. En la infancia vemos y pensamos que los otros mueren, pero no se nos ocurre imaginar que a nosotros nos puede suceder otro tanto. Gozamos plenamente de la inmortalidad de las fuerzas que animan a la naturaleza, de la sublime embriaguez de la vida y las infalibilidades infinitas que engendra su ilusión.</p>
 				<p>Esta es mi experiencia personal a lo menos. Recuerdo que en Avilés he visto veinticuatro hombres asfixiados que acababan de extraer del agua, tendidos sobre el muelle, y este horrible espectáculo no dejó huella maléfica alguna en mi existencia. Eran unos obreros que trabajaban en las canteras abiertas del lado de allá de la ría para la canalización de ésta. Cuando sonaba la hora de dejar el trabajo, algunas lanchas los transportaban del lado de acá. Los desgraciados tenían tanta prisa de llegar a sus casas, que se amontonaban peligrosamente en las embarcaciones por no esperar un nuevo viaje.</p>
@@ -416,7 +456,7 @@
 				<p>Pude observar que el cura se llevaba la mano a los ojos y hacía esfuerzos desesperados para reprimir la risa, lo cual no dejó de sorprenderme porque yo creía haberle dicho la cosa más lógica del mundo.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0329_chap5">
-				<head>V: RAMONÍN</head>
+				<head xml:id="ne0329_head_006">V: RAMONÍN</head>
 				<p>He aquí el otoño con su ropaje amarillo y sus nubes de color violeta. Las manzanas encarnadas empiezan a desprenderse de los pomares y caer sobre la yerba, y este suceso tan conforme con las leyes inmutables de la naturaleza en vez de elevar mi espíritu a la consideración de la gravitación universal como en otro tiempo a Newton, atacó directa y perniciosamente a mi estómago. Renuncio a calcular las que comí. La fabricación de la sidra debió de haber sufrido una merma considerable aquel año a causa de esta circunstancia; pero yo he guardado el secreto hasta ahora.</p>
 				<p>De aquel verano salí convertido no sólo en agricultor inteligente y práctico sino también en diestro cazador. Supe cómo se armaban trampas para atrapar gorriones esparciendo algunos granos de trigo por el suelo y colocando sobre ellos un cedazo que se mantenía de pie por medio de una larga cuerda: cuando los gorriones venían a comer los granos se soltaba la cuerda y quedaban prisioneros debajo. Supe hacer hoyos en la tierra y poner sobre ellos una pizarra sostenida por un palito, de tal ingenioso modo colocado que cuando el pájaro se posaba allí para comer los granos caía la pizarra sobre él y quedaba preso dentro del hoyo. Este artefacto iba dirigido particularmente contra las codornices. También aprendí a untar con liga las ramitas superiores de los arbustos para que los jilgueros al posarse quedasen allí pegados. No recuerdo haber atrapado pájaro alguno con todos estos delicados artificios; pero eso no importa para que los conociese perfectamente.</p>
 				<p>Donde mis éxitos se mostraron claros y evidentes fué con los grillos. Conocía cinco o seis maneras sutiles y graciosas de persuadirles a que saliesen de la cueva. Casi ninguno se resistía a mis pérfidas insinuaciones y se apresuraban a salir a respirar el aire fresco y se dejaban atrapar en cuanto ponían el pie fuera de su casa. Pero si alguno se obstinaba en permanecer en sus habitaciones bien porque sospechase de mi buena fe o porque estuviese ocupado en aquel momento, entonces me veía obligado a apelar a un terrible argumento que no describiré por no ofender la susceptibilidad de las damas que lean estas memorias.</p>
@@ -465,7 +505,7 @@
 				</floatingText>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0329_chap6">
-				<head>VI: MÚSICOS AMBULANTES</head>
+				<head xml:id="ne0329_head_007">VI: MÚSICOS AMBULANTES</head>
 				<p>Mi madre fué toda su vida un frágil cristal de Bohemia. No podía llamarse en verdad mujer a una criatura tan débil, tan delicada y próxima a extinguirse que cualquier ráfaga de aire podía apagar en la hora menos pensada. Ella lo sabía, todos lo sabíamos; por eso nuestra gran preocupación en la casa era atajar el paso por cuantos medios se hallaban a nuestro alcance a esta ráfaga traidora. Así que veíamos en su estancia una puerta entreabierta nos precipitábamos llenos de terror a cerrarla. Si se arriesgaba a salir de la sala para ir a otra habitación, los unos iban delante como heraldos a prevenir que se cerrasen balcones y ventanas, los otros como escolta para impedir que algún imprudente abriese las puertas laterales. No hay para qué decir que en esta tarea sanitaria se distinguía por su ardor y destreza mi padre, el cual sentía por su esposa la adoración de un enamorado y la ternura de un padre.</p>
 				<p>Mi pobre madre vegetaba en un rincón del sofá envuelta en su chal de lana trabajando con el ganchillo de marfil. Por las noches le placía hilar con aquella su artística rueca de que ya he hablado. Era primorosa en todas las labores femeninas y sus dedos, aunque tan delicados, incansables. ¡Oh Dios mío, cuán delgados y frágiles eran aquellos dedos! Una de mis aprensiones dolorosas era verlos quebrarse cualquier día.</p>
 				<p>Esta flaqueza corporal no excluía en ella una gran fuerza de carácter. Era, como suele decirse, en lo físico una caña que se dobla pero no se rompe; en lo moral un roble que se rompe pero no se dobla. Mi padre, como reverso de ella, poseía un vigor físico extremado y un carácter blando y sentimental.</p>
@@ -542,7 +582,7 @@
 				</floatingText>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0329_chap7">
-				<head>VII: LA PARTIDA</head>
+				<head xml:id="ne0329_head_008">VII: LA PARTIDA</head>
 				<p>La primavera sopló otra vez sobre nuestra feliz aldea; las rosas se abrieron, los mirlos cantaron en la pomarada, los terneros mugieron en el establo, los céfiros nos traían sobre sus alas perfumadas los rumores del bosque, gorjeos de pájaros enamorados: la zarzamora que tapizaba los caminos se llenaba de florecillas moradas: del balcón de mi cuarto colgaban ya los pámpanos que alegres temblaban al nacer la aurora…</p>
 				<p>Todos estos signos de la gloriosa resurrección de la naturaleza alegraba a los hombres y a los animales, pero a mí me inquietaban vivamente. Había oído decir repetidas veces a mi madre que en cuanto viniese la primavera partiríamos para Avilés. Por aquel tiempo no sabía yo que esta villa guardaba en su seno placeres mucho más exquisitos que los que podía brindarme Entralgo. Pensando en la escuela, en la gramática, en las planas, en la vara de avellano de don Juan de la Cruz se me ponía la carne de gallina.</p>
 				<p>¿A qué pensar en ello, sin embargo? Aquí estaban aguardándome a la puerta, como siempre, mis amigos Ramón, Sixto, José, Segundo, una guardia fiel y decidida que yo había logrado formarme durante mi estancia en la aldea. Corríamos los senderos, trepábamos a los árboles para alcanzar los nidos, hacíamos hogueras y asábamos allí patatas, cortábamos varas de sauco para construir <seg rend="italic">tira-tacos</seg>, nos pasábamos horas enteras espiando la guarida de las anguilas en los arroyos, pero sin lograr jamás atrapar ninguna, toreábamos a los carneros (desde mi fatal aventura y en pocos meses había ya dado grandes pasos en el arte taurino), montábamos en todos los caballos que encontrábamos sueltos por los caminos.</p>
@@ -574,7 +614,7 @@
 				<p>¡Pobre joven! Jamás se me ha borrado de la memoria esta escena. Años después supe que era un sacerdote ejemplar. No me sorprende porque Dios no abandona a aquellos que saben tomar a su propio corazón entre las manos y estrujarle.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0329_chap8">
-				<head>VIII: AVILÉS</head>
+				<head xml:id="ne0329_head_009">VIII: AVILÉS</head>
 				<p>Cuando llegué a Madrid para estudiar mi carrera y vi en los escaparates de las tiendas de comestibles unos cartelitos que decían: <seg rend="italic">Jamón de Avilés</seg> no pude menos de experimentar profunda sorpresa. A esta sorpresa siguió inmediatamente un sentimiento de vergüenza y de irritación. ¿Cómo? ¡La villa poética por excelencia, la villa de las mujeres hermosas y las canciones románticas, aquella blanca paloma del Cantábrico era conocida en el resto de España solamente por sus jamones!</p>
 				<p>Jamás pudiera imaginarlo ni lo imaginó ninguno de sus hijos. Viviendo en Avilés hasta entonces a nadie había oído gloriarse de esta grosera ventaja. Ni aun sabía que en Avilés existiesen cerdos. Mientras allí estuve no conocí más que uno, cierto administrador de correos que se comía las sardinas crudas y entregaba las cartas abiertas. Pero este administrador no había nacido en Avilés.</p>
 				<p>Si yo no he nacido tampoco en esta villa a ella me trajeron cuando contaba sólo algunos meses de edad. De modo que puedo y quiero considerarla como mi segunda patria.</p>
@@ -620,7 +660,7 @@
 				<p>¿Será arrogancia, por mi parte, el decir que una villa capaz de llevar a feliz término tales empresas merece ser conocida en el mundo de otro modo que por sus jamones?</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0329_chap9">
-				<head>IX: PRIMERAS IMPRESIONES</head>
+				<head xml:id="ne0329_head_010">IX: PRIMERAS IMPRESIONES</head>
 				<p>Mis primeras impresiones no son de Entralgo, aunque haya nacido allí como he dicho. La primera vez que me di cuenta de la existencia o me reconocí como un ser viviente fué en Avilés, debajo de una mesa. Estaba allí oculto, silencioso y trabajando. ¿En qué trabajaba? En abrir un agujero a un gran pan de cuatro libras que había logrado hacer descender desde la mesa hasta mis manos. No comprendo cómo pude llevar a feliz término esta grave operación tan superior a mis fuerzas, porque yo no contaría entonces más de dos años de edad. Para realizarla no disponía de maromas, cabestrantes y poleas, sino de mis propios brazos solamente, que a más de no tener nada de atléticos se hallaban algo trabados por una blusa verde demasiadamente almidonada. Tengo una idea de que el pan estaba al borde de la mesa y que le fuí haciendo resbalar poco a poco hasta que por su propio peso cayó sobre mí y como yo no podía sostenerle me dejé caer a mi vez en el suelo abrazado a él.</p>
 				<p>Ni mi madre, que bordaba en un rincón del comedor, ni una señora parienta suya que la acompañaba, ni la costurera, empeñadas todas tres en animada plática, se dieron cuenta del arriesgado trabajo preparatorio que yo acababa de realizar.</p>
 				<p>Una vez que me vi dueño del pan me arrastré cautelosamente hasta colocarme debajo de la mesa y allí principié mi tarea perforadora con la paciencia de un chino y la terquedad de un astur. Lo más difícil, lo que parecía casi imposible de realizar era la ruptura de la corteza. Yo la acometí, sin embargo, con buen ánimo. Humedeciendo el dedo con saliva y después de largo y penoso trabajo logré al fin romperla. Lo demás era relativamente fácil. El túnel se fué abriendo poco a poco y los escombros pasaban rápidamente a mi estómago.</p>
@@ -653,7 +693,7 @@
 				<p>Ya sé que esto es muy poco pedagógico y que mi madre tenía razón sobrada para castigarme. Sin embargo, no puedo recordar esta escena sin sentirme enternecido.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0329_chap10">
-				<head>X: COMETO UN ASESINATO</head>
+				<head xml:id="ne0329_head_011">X: COMETO UN ASESINATO</head>
 				<p>Todo hombre ha merecido alguna vez la horca en el curso de su vida, dice Montaigne. Yo la merecí en edad bien temprana, pues no contaba más de cuatro años de edad. Oíd cómo sucedió:</p>
 				<p>En aquel tiempo existía en Avilés un monstruo llamado don Gregorio Zaldua. Este monstruo no comía los niños crudos como suelen hacer los otros monstruos; pero impedía que los niños comiesen nada ni crudo ni asado, y el resultado era igualmente funesto.</p>
 				<p>—El niño tiene la lengua sucia —decía mi madre en voz alta—. Hay que avisar a don Gregorio.</p>
@@ -688,7 +728,7 @@
 				<p>Carcajada general. Mi padre, mi madre, la Felisa, don Gregorio reían dando muestras de la más viva alegría; sobre todo éste parecía querer desternillarse.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0329_chap11">
-				<head>XI: DE CÓMO FUÍ EXCOMULGADO</head>
+				<head xml:id="ne0329_head_012">XI: DE CÓMO FUÍ EXCOMULGADO</head>
 				<p>Ignoro si la excomunión en que incurrí era mayor o menor, de las llamadas <seg rend="italic">ferendae, sententiae</seg> o de <seg rend="italic">latae sententiae</seg>; pero es innegable que había incurrido en una de ellas.</p>
 				<p>Contaba yo a la sazón siete años y acaeció poco después de mi primera hegira a Entralgo.</p>
 				<p>En el convento de San Bernardo de Avilés vegetaba, renqueaba, salmodiaba el oficio y se atascaba de rapé la nariz desde hacía setenta años una hermana de mi bisabuela llamada doña Florentina. Había entrado en él a los doce años: por consiguiente tenía ochenta y dos. En la familia no se la llamaba <seg rend="italic">madre</seg> Florentina ni <seg rend="italic">hermana</seg> Florentina, aunque fuese monja profesa. Mi misma madre cuando hablaba de ella decía siempre: «mi tía doña Florentina».</p>
@@ -756,7 +796,7 @@
 				<p>Tanto rieron que al cabo también yo concluí por reír. Y he aquí cómo a fuerza de carcajadas logré entrar de nuevo en el seno de la Iglesia católica.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0329_chap12">
-				<head>XII: RESUELVO HACERME ERMITAÑO</head>
+				<head xml:id="ne0329_head_013">XII: RESUELVO HACERME ERMITAÑO</head>
 				<p>¡Hermosos días de fe venid a mí! Soplad en este corazón herido por los desengaños, soplad en este pensamiento marchito por tanto estéril trabajo. Refrescadme unos instantes. Que vuelva a ser al despertarme el niño que se postraba de rodillas sobre su diminuto lecho y vuelto hacia una imagen de Jesús Crucificado le pedía con palabras fervorosas la salud de mis padres y la salvación de mi alma. Dejadme ver otra vez en el azul del cielo la imagen de María, hollando con su divina planta el creciente de la luna rodeada de niños alados. Dejad que lleguen a mis oídos como entonces sus cánticos celestes. Dejadme sentir de nuevo sobre la frente las alas del Angel de mi guarda al tiempo de dormirme.</p>
 				<p>Aún me veo en la iglesia de San Francisco oyendo misa con mi padre. Los sones del órgano me transportaban; la voz de bajo profundo de Fray Antonio Arenas cantando desde el coro me estremecía con santo terror; las nubes de incienso me embriagaban. Y allá en lo alto, sobre el altar mayor veía una hermosa escultura de la Virgen envuelta en una luz fantástica que dejaban filtrar los cristales de color. Y mis ojos no se apartaban de ella y hacia ella volaba mi corazón con ansias de dicha inmortal. Entonces pasaban por mi alma sublimes emociones que por experimentarlas de nuevo diera cien vidas si las tuviese, emociones que espero sentir después de la muerte.</p>
 				<p>Aún me veo caminando con mi madre bajo los arcos de la calle de Galiana hacia el santuario donde se venera al Cristo con la cruz sobre los hombros. La noche ha cerrado ya. A esta hora próxima al crepúsculo las damas piadosas de Avilés tienen costumbre de ir a rezar un credo delante de la milagrosa imagen. Los arcos apenas están esclarecidos. Allá hacia el medio, sobre uno de ellos hay una hornacina y dentro una pequeña escultura de la Virgen alumbrada por una lámpara de aceite. Algunas parejas enamoradas se sientan en los pretiles de la calle. Sólo percibimos sus bultos y escuchamos el rumor de su plática. Llegamos al santuario; subimos algunos peldaños; nos postramos delante de Jesús agobiado bajo el peso de la Cruz y su frente pálida coronada de espinas me infunde una compasión infinita. Sus ojos me miran doloridos y parecen decirme: «Hijo mío, hoy eres dichoso, pero si algún día estás triste acuérdate de mí».</p>
@@ -814,7 +854,7 @@
 				<p>De modo semejante durante el curso de mi vida Dios me ha ofrecido a manos llenas los medios de ser un santo; pero ¡ay!, siempre he desperdiciado la ocasión.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0329_chap13">
-				<head>XIII: LA VARA DE FALARIS</head>
+				<head xml:id="ne0329_head_014">XIII: LA VARA DE FALARIS</head>
 				<p>Si mi amigo Leoncio perteneciese todavía al número de los vivos dudo mucho que nadie osara recordarle el incidente que voy a narrar. Nada más fácil que saliese de su empresa con las narices hinchadas como habían salido por otros motivos Manolín el chocolatero, Pepín el hijo del carnicero y su hermano Ciriaco.</p>
 				<p>Porque mi amigo Leoncio, a pesar de su rostro mofletudo y plácido, era, cuando montaba en cólera, un ser furibundo y pernicioso y poseía unos puños que infundían respeto a toda la escuela de don Juan de la Cruz.</p>
 				<p>¿Quién no recuerda en Avilés a este don Juan de la Cruz tan modesto, tan melifluo, tan pulcro? ¿Quién no recuerda a aquel hombrecillo pálido, de cabellos lacios, de ojos negros guarnecidos de largas pestañas que apenas se alzaban del suelo con expresión tímida y humilde? Enseñó las primeras letras a tres generaciones y murió a los ochenta años declinando un pronombre relativo. Sosegado, grave, silencioso, atravesaba el salón de la escuela sin que nos diéramos cuenta de su presencia hasta que lo teníamos encima. La expresión apacible de su rostro no se turbaba jamás: no recuerdo haberle visto enfurecido. Un esbozo de sonrisa se dibujaba casi constantemente en sus labios. No era más que un conato de sonrisa que comenzaba en el ángulo izquierdo de la boca y allí se detenía sin pasar jamás al derecho. Rara vez nos miraba a la cara; nos hablaba ceremoniosamente de usted y cuando nos reprendía lo hacía siempre en voz baja con los ojos puestos en el suelo como si se estuviera confesando de alguna falta. Nos tajaba las plumas, que eran de ave en aquella época, nos echaba tinta en los tinteros, nos corregía las planas con la mayor modestia y compostura y cuando llegaba el caso, que llegaba con harta frecuencia, con la misma modestia y compostura empuñaba su vara y nos sacudía de lo lindo. Era un hombre tan modesto que cuando nos zurraba la piel parecía que nos estaba haciendo reverencias.</p>
@@ -836,7 +876,7 @@
 				<p>—Así, pues, muchas gracias, hijo mío, por este precioso regalo. Aplíquese el cuento y váyase a su sitio.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0329_chap14">
-				<head>XIV: EL TRIUNFO DE LA FRATERNIDAD</head>
+				<head xml:id="ne0329_head_015">XIV: EL TRIUNFO DE LA FRATERNIDAD</head>
 				<p>Recuerdo que por aquel tiempo existía en Avilés un zapatero librepensador llamado Mamerto. Este Mamerto vivía en lucha abierta con el Supremo Hacedor y con sus ministros responsables en la tierra, el señor cura de la villa y el de Sabugo, particularmente con este último por ser el del barrio que habitaba. No confesaba, no comulgaba, no iba a misa, no ponía siquiera los pies en la iglesia, y, lo que es mucho más grave, no bautizaba a sus hijos. Acometido de un furor ateísta no perdonaba ocasión de atacar el presupuesto del clero y aspiraba nada menos que a demoler las iglesias o a convertirlas en fábricas y obligar a los sacerdotes a ganarse el pan con el sudor de su frente.</p>
 				<p>Leía en sus ocios y se sabía casi de memoria algunos libros infamantes titulados <seg rend="italic">El fraile, La Monja, El Cura de misa y olla</seg>, y de ellos sacaba argumentos metafísicos para minar los cimientos de nuestra religión. Discutía, vociferaba en todas las tabernas, refería historias escandalosas de las beatas y los curas, y cuando tenía algunos vasos de sidra en el cuerpo entonaba canciones subversivas. Una de estas canciones le acarreó el mayor disgusto de su vida. Al cantar el himno de Garibaldi en vez de limitarse a victorear al enemigo del Papa se ensañó con éste gritando repetidas veces: «¡Que muera Pío IX, viva la libertad!». Se le denunció al señor cura de Sabugo, el cual a su vez lo denunció al Juzgado: se le formó proceso y fué condenado con otros tres amigos a dos años de presidio. Así las gastaba en aquella época el partido moderado que se hallaba en el poder.</p>
 				<p>Fué agraciado con algún indulto y poco antes del año regresó Mamerto a sus lares con la aureola del martirio sobre la frente. La población se conmovió al verle llegar: todos los ojos se clavaban sobre él con mezcla de curiosidad y admiración. Los suyos adquirieron ese brillo fatídico peculiar de los héroes, una expresión de ferocidad desdeñosa que sobresaltaba a los pacíficos habitantes de nuestra villa.</p>
@@ -866,7 +906,7 @@
 				<p>—¡Viva la reina!</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0329_chap15">
-				<head>XV: DON ANTONIO JOYANA</head>
+				<head xml:id="ne0329_head_016">XV: DON ANTONIO JOYANA</head>
 				<p>Era un capellán que mis tíos Alvaro y Felisa tenían en su quinta de Illas cerca de Avilés, y fué el hombre más original que ha producido Asturias después de la invasión de los árabes.</p>
 				<p>Me llevaron a confesar con él cuando yo tenía nueve años de edad. Graves amonestaciones me dirigió en aquella ocasión. Recuerdo que me aconsejó con mucho encarecimiento que cuando entrase a saco en la despensa de mi casa de ningún modo me comiese la mermelada con los dedos, sino que llevase para el caso una cucharilla escondida en el bolsillo.</p>
 				<p>Don Antonio Joyana era un hombre según Dios y según la naturaleza, pero no según los hombres. Por eso los hombres se reían de él. Tenía caprichos como los niños y antojos como las mujeres. Cierto día entró con mi padre en una tienda de paños y habiéndole gustado uno extremadamente no se contentó con comprar algunas varas sino que se empeñó en llevarse la pieza entera. Después la entregó a una hermana vieja y sorda con quien vivía, y ésta se puso a cortarle y coserle pantalones. Salieron tres docenas de ella, según contaban en Avilés.</p>
@@ -955,7 +995,7 @@
 				<p>En esta disposición llegamos a casa. Tanto mi madre como mi tía Justina pusieron el grito en el cielo al vernos; se apresuraron a llevarnos a la cama y mientras nos desnudaban estalló su indignación en muy pesadas palabras contra «el loco de don Antonio Joyana».</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0329_chap16">
-				<head>XVI: MI PADRE</head>
+				<head xml:id="ne0329_head_017">XVI: MI PADRE</head>
 				<p>Personas hay tan admirablemente dotadas para la domesticación que ningún animal, por salvaje y obtuso que sea, les resiste. He visto lobos y conejos y cuervos y hasta pulgas y cerdos maravillosamente amaestrados, y se cuenta de un prisionero en la Bastilla que llegó a domesticar una araña. Una señora amiga mía logró que los gorriones parados en el alero de su tejado entrasen en su dormitorio y allí durmiesen. Por la mañana al despertarse venían a su cama y comían alegremente las migas de bizcocho que les repartía, hecho lo cual se despedían hasta la noche.</p>
 				<p>A nadie, sin embargo, he visto en mi vida con mayores aptitudes para reducir y educar animales que a mi padre. Pero los que escogía para sus notables experiencias eran siempre animales bípedos más o menos racionales. Un juez de instrucción, un promotor fiscal, un coronel, un registrador de la propiedad o cualquier otro funcionario que llegaba a nuestra villa y que se hacía inmediatamente temer por su genio adusto o por un temperamento bilioso e irascible. Mi padre se sentía atraído hacia esta clase de sujetos y no sosegaba hasta colocarse en situación de ejercitar sobre ellos aquellas naturales disposiciones con que el cielo le había dotado.</p>
 				<p>No se pasaba mucho tiempo sin que la villa viese con estupefacción al montaraz funcionario paseando emparejado con mi padre y completamente desarrugado, feliz y sonriente. En Avilés habitaba un tío abuelo mío con rostro y talle de inquisidor; alto, enjuto, aguileño, mirada dura y penetrante. Era persona inteligente y de muchas letras, pero de un orgullo tal y de humor tan desapacible que vivía materialmente aislado desde hacía largos años. Cuando mi padre vino a establecerse con su esposa en aquella villa la existencia de este viejo severo cambió por entero. Que hiciese bueno o malo todos los días llegaba a nuestra casa buscando a mi padre, salía con él de paseo, se mostraba locuaz y por primera vez después de veinte años reía a carcajadas.</p>
@@ -968,7 +1008,7 @@
 				<p>Hay que confesar, no obstante, que nadie le hizo jamás grave daño y sólo tuvo que sufrir las pequeñas molestias y los pequeños abusos que el pequeño egoísmo engendra. Era generalmente amado y murió sin haber tenido en toda su vida ni un enemigo, ni un envidioso. Esto último me parece increíble; no lo era en su caso porque ya hemos visto de qué modo original desarmaba a la envidia. Cuando estalló la guerra carlista, nuestro valle de Laviana fué el cuartel general de los partidarios del Pretendiente en Asturias. Por allí merodeaban a la continua pequeñas partidas que no eran modelo de disciplina. Nuestra casa fué respetada siempre a pesar de las ideas liberales de mi padre. Es más, tal confianza inspiraba su lealtad, que un cabecilla perseguido vino a refugiarse en ella. Le tuvimos por huésped algunos días y le hubiéramos tenido indefinidamente si él mismo, por temor a comprometernos, no se hubiera ido. Al día siguiente de su partida paseábamos mi padre y yo con mi hermanito pequeño por las cercanías de la Pola, cuando acertamos a ver una compañía de soldados que marchaba hacia nosotros. Al acercarse pudimos contemplar con tristeza a nuestro huésped en el medio y amarrado, quien tuvo la delicadeza de no saludarnos ni aun de mirarnos. Pero mi hermanito exclamó en voz alta: «¡Papá, este es el señor que comía con nosotros y se marchó ayer!». Mi padre se puso pálido y yo me sentí sobrecogido. El capitán, al oír estas palabras, volvió la cabeza vivamente, miró al niño, miró a mi padre y, sonriendo maliciosamente, nos hizo un saludo con su espada.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0329_chap17">
-				<head>XVII: MISTERIOS DOLOROSOS</head>
+				<head xml:id="ne0329_head_018">XVII: MISTERIOS DOLOROSOS</head>
 				<p>Un lunes por la tarde iba yo a su casa; otro lunes por la tarde venía él a la mía; era día de mercado y no teníamos escuela sino por la mañana. Lo pasábamos deliciosamente, como nadie podrá dudar sabiendo que lo mismo la casa de mi amigo Juanito que la mía poseían un espacioso jardín donde jugábamos a la peonza, al volante y al salto, donde trepábamos a los árboles y alcanzábamos ciruelas y peras en su más tierna infancia, donde ensayábamos nuestras aptitudes para la ingeniería y arquitectura alzando edificios con tejas rotas, barro y arena, trazando canales, abriendo pantanos, donde nos ejercitábamos en el arte de conducir vehículos haciendo alternativamente él y yo de caballo y cochero, donde encendíamos hogueras y asábamos patatas, donde por fin, cuando llegaba el caso, nos dábamos de mojicones y nos tirábamos de los cabellos.</p>
 				<p>Su jardín era más dilatado que el mío; por tanto los fogosos caballitos podían correr y caracolear a su sabor; pero el mío tenía allá en el fondo un hórreo y esto constituía una ventaja inapreciable. Porque debajo de este hórreo nos guarecíamos cuando hacía mal tiempo y nos divertíamos sin necesidad de meternos en casa y sufrir la presencia enfadosa de la familia. Además nos servía de escondrijo para ocultar todos aquellos objetos que merecían ocultarse, particularmente la fruta verde, de la cual acumulábamos tal cantidad, que alguna vez se pudría sin comerla. Esta fruta verde era el negocio más interesante y reservado de nuestra existencia. Mi madre nos tenía prohibido, bajo penas severísimas, tocar a la fruta, y nos vigilaba bastante desde casa y nos hacía vigilar. Prodigios de ingenio y habilidad se necesitaban para burlar esta vigilancia. Los desplegábamos, y pocas veces éramos cogidos in fraganti.</p>
 				<p>Lo fuí, sin embargo, en cierta ocasión, pero no por mi madre. Pluguiese al cielo que ella hubiera sido, aunque me costase algunos coscorrones. Lindante con nuestra huerta o jardín había otro mucho mejor cuidado y provisto. Pertenecía a unos señores que vivían en la casa contigua, dos hermanos y dos hermanas ya viejos y solteros, personas graves, correctísimas, pacíficas y silenciosas. No nos tratábamos; pero ellos y mis padres, en la calle, o desde el balcón, se saludaban muy ceremoniosamente.</p>
@@ -1035,7 +1075,7 @@
 				<p>—Quinto misterio doloroso: cómo el Hijo de Dios fué crucificado. Padre nuestro que estás en los cielos…</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0329_chap18">
-				<head>XVIII: PRIMERAS LECTURAS</head>
+				<head xml:id="ne0329_head_019">XVIII: PRIMERAS LECTURAS</head>
 				<p>No será imposible que el lector al llegar a este punto y acaso antes se haya preguntado: «Pero este novelista que nos da cuenta de su infancia ¿cómo nada dice de sus impresiones literarias, de la influencia que sobre su espíritu ejercieron los primeros libros que cayeron en sus manos?».</p>
 				<p>¡Ah, caro lector, ahí me duele! Sobre este toque no puedo comunicarte más que cosas vergonzosas. Bien me apetece decirte, como alguno de mis colegas, que a los siete u ocho años leía asiduamente la Biblia, me entusiasmaba con Homero y de vez en cuando para desengrasar me echaba al cuerpo una tragedia de Sófocles. Quisiera presentarme ante tus ojos como un niño excéntrico, sombrío, apartado de los juegos de mis compañeros, gozándose en la soledad, paseando a las orillas de la mar o por los bosques, llorando y riendo sin motivo aparente, mirando más a las estrellas que a la tierra. O bien como una maravilla de agudeza y donaire, enloqueciendo a la familia y los amigos de la casa con sus ocurrencias felices, despertando la admiración con sus observaciones penetrantes y preguntas ingenuas.</p>
 				<p>Si esto te dijere, lector amigo, te engañaría miserablemente y todo lo que me resta de vida me remordería la conciencia. Prefiero confesarte que en mi niñez me agradaba correr y saltar con mis compañeros de escuela, cazar grillos, jugar a los botones y cambiar de vez en cuando algunos puñetazos. Ni más alegre ni más triste que los demás. Nada de pasearme solo por la ribera de la mar con la cabellera al viento desafiando a la tempestad. Nada de llorar sin motivo. Cuando lo hacía era porque don Juan de la Cruz, mi maestro, me administraba algunos vardascazos o algún pillastre de Sabugo me cortaba el hilo de la cometa (sierpe en Avilés) o por otros motivos no menos fútiles y prosaicos. Caprichos, sí los tenía, pero nada románticos; no creo haber sido nunca un niño incomprensible; antes bien me parece que todo el mundo me comprendía perfectamente. Mi originalidad era tan escasa que estaba desesperado con mi nombre porque no había otro igual en la población y reprochaba a mis padres interiormente el no haberme puesto Manuel o Pepe o Antonio. Me desesperaba igualmente cuando mi madre me ponía un traje nuevo o vistoso y procuraba ajarlo inmediatamente para que no llamase la atención y semejase a los de mis camaradas. En fin, habiéndome contado mi padre que en su infancia aborrecía el pan con manteca espolvoreado de azúcar y que una vez que se había visto obligado a aceptarlo lo había arrojado a hurtadillas por el balcón, yo que me perecía por este manjar hice lo mismo (¡con qué dolor de mi corazón!), cuando la madre de mi amigo Alfonso N. me lo dió cierta tarde para merendar. Me parece que no se puede llevar más lejos el espíritu de imitación.</p>
@@ -1055,7 +1095,7 @@
 				<p>Aquella palabra fué mi salvación. Habrá personas timoratas que se asombren y aun se escandalicen de la audacia de mi padre. Sin embargo yo bendigo su memoria por ésta como por las muchas cosas buenas que ha hecho conmigo.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0329_chap19">
-				<head>XIX: FRAY MELITÓN</head>
+				<head xml:id="ne0329_head_020">XIX: FRAY MELITÓN</head>
 				<p>Si el Cielo me concediese una nueva existencia en este nuestro planeta de la orden de menores y me diera a escoger el sitio donde se deslizase mi infancia, respondería sin vacilar: ¡Avilés!</p>
 				<p>Lo que recuerdo de esta villa es tan amable, tan alegre y pintoresco, que dudo que en parte alguna de Europa o de América (dejemos el Africa para los negros y el Asia para los chinos) se encuentre otra que la supere.</p>
 				<p>Sin embargo, nadie se figure que era todo algazara y romerías y habaneras y pasacalles. Había en nuestra villa más de una docena de figuras decorativas que no sólo mantenían en ella la respetabilidad y el decoro sino que la comunicaban esplendor a los ojos del forastero. Cuando bien temprano, mucho más temprano de lo que yo quisiera, salía de mi casa para la escuela, encontraba indefectiblemente paseando debajo de los arcos a uno de nuestros vecinos vestido de levita negra, corbata blanca, gran pechera con botones de diamantes, sombrero de copa alta, bastón con puño de oro y botas charoladas lo mismo que si se dispusiese a ir a la recepción de la embajada de Inglaterra. Allá había estado, según contaban, varios años: por eso gastaba patillas y era tan correcto, tan grave y silencioso. Que hiciera bueno que hiciera mal tiempo, en los días más calurosos de Julio como en los más ateridos de Enero, por allí paseaba revestido de aquellos ornamentos que me infundían un respeto indecible. Desde el feo asunto de las peras yo no osaba mirar como antes a su blanca pechera, ni siquiera a sus botas charoladas.</p>
@@ -1120,7 +1160,7 @@
 				<p>Tantas veces me llamó burro el bueno de fray Melitón que no sé cómo en aquel mismo punto no me brotaron las orejas.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0329_chap20">
-				<head>XX: EL CACHORRILLO</head>
+				<head xml:id="ne0329_head_021">XX: EL CACHORRILLO</head>
 				<p>No recuerdo cuánto me costó. Tengo una idea de que di por ella todo el dinero que tenía en la hucha, que sumaría lo menos cuatro o cinco pesetas en calderilla. Además entregué una cadenita de plata, algunos botones dorados de un frac viejo de mi padre y una navajita que me habían regalado.</p>
 				<p>A pesar de todo quedé convencido de que Ovidio, el hijo del boticario de la calle de la Fruta, había tenido un momento de extravío y que yo había abusado miserablemente de este muchacho cambiando aquellas baratijas por su pistola.</p>
 				<p>Porque era una pistola, una verdadera pistola que se cargaba con pólvora, no uno de esos ridículos juguetes que nos regalaban nuestros parientes por las ferias de San Agustín y que se disparan con un muelle.</p>
@@ -1170,7 +1210,7 @@
 				<p>Como yo esperaba, luego que don Juan se hubo ido no hizo otra cosa más que amonestarme sin demasiada acritud haciéndome algunas reflexiones que me impresionaron profundamente. En cambio mi madre se alarmó y enfureció lo indecible, me privó de toda golosina y no me dejó salir a la calle con mis amigos durante muchos días. Sin embargo, puedo asegurar que las palabras de mi padre fueron medicina más provechosa.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0329_chap21">
-				<head>XXI: LA BATALLA DE GALIANA</head>
+				<head xml:id="ne0329_head_022">XXI: LA BATALLA DE GALIANA</head>
 				<p>No he leído la descripción de esta batalla en ninguna historia contemporánea. No la he visto tampoco citada en las efemérides de los almanaques de pared. Creo, por tanto, que se me agradecerá el que venga a llenar un vacío en la historia militar de España. Si no se me agradece, peor para los ingratos.</p>
 				<p>La calle de Galiana, donde se ha librado, lleva hoy mi nombre. Para que las futuras generaciones no se equivoquen suponiendo que se le ha dado por haber sido yo el general victorioso que dirigió esta batalla me cumple declarar que no he sido en ella más que un humilde soldado y no del ejército vencedor sino del vencido.</p>
 				<p>Descargada así mi conciencia, penetro en los dominios de la historia.</p>
@@ -1213,7 +1253,7 @@
 				<p>—¡Cosas de la guerra!</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0329_chap22">
-				<head>XXII: EL SUICIDIO DE ANGUILA</head>
+				<head xml:id="ne0329_head_023">XXII: EL SUICIDIO DE ANGUILA</head>
 				<p>Los lectores se acordarán, seguramente con horror, de aquel bandido apodado Anguila, que en compañía de otro facineroso a quien llamaban Antón el zapatero, nos asaltó en el camino de San Cristóbal a mi amigo Alfonso y a mí cuando nos propusimos hacer vida solitaria y eremítica.</p>
 				<p>Voy a narrar ahora en qué forma intentó despojarse de la vida este sujeto.</p>
 				<p>Pero antes bueno es que comunique al universo entero, para que nadie se equivoque respecto a su temperamento moral, algunos datos que le han de hacer más odioso. Si aún vive (cosa que sentiría) no dudo que experimentará honda confusión y vergüenza y esto es precisamente lo que me propongo.</p>
@@ -1296,7 +1336,7 @@
 				<p>Al sujeto que le salvó la vida le dieron, a petición de la Prensa, la cruz de Beneficencia.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0329_chap23">
-				<head>XXIII: PEDRO MENÉNDEZ</head>
+				<head xml:id="ne0329_head_024">XXIII: PEDRO MENÉNDEZ</head>
 				<p>Las ferias de Avilés tienen, como todo el mundo sabe, la misma significación histórica que los Juegos Olímpicos de la antigua Grecia.</p>
 				<p>Si hubiese tropezado en mi infancia con un japonés o un persa, que no hubiera oído nunca hablar de estas ferias, quedaría seguramente estupefacto.</p>
 				<p>No sé lo que son ahora, pero doy fe de que en aquellos tiempos eran una antesala del Paraíso. Y si me dejaran, es posible que me quedase contento en la antesala sin entrar jamás en el salón.</p>
@@ -1352,7 +1392,7 @@
 				<p>Y diciendo y haciendo me tiró con su espada un tajo al cuello y mi cabeza marmórea cayó al suelo con un ruido sordo que me despertó.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0329_chap24">
-				<head>XXIV: HISTORIA TRISTE DE MI AMIGO GENARO</head>
+				<head xml:id="ne0329_head_025">XXIV: HISTORIA TRISTE DE MI AMIGO GENARO</head>
 				<p>Sus padres tenían un almacén de enseres marítimos no lejos del muelle. Era tan pequeño y estaba de tal modo atestado que apenas podrían mantenerse tres o cuatro personas dentro de él.</p>
 				<p>Barricas de raba para la pesca de la sardina, montones de cables enrollados, paquetes de lona, cajas de brea, remos, garfios, anclotes, latas de aceite, pantalones impermeables, todo hacinado de un modo delicioso. Yo por lo menos lo encontraba así. El techo era bajo, circunstancia que lo hacía más grato aún a mis ojos, y de él pendían ristras de anzuelos, alpargatas y botas de agua. Tenía una escalerita estrecha y empinada que conducía al piso primero y único de la casa. Todo esto le prestaba cierta semejanza con el camarote de un barco; y aquí está precisamente la causa de que esta tiendecita ejerciese sobre mí tal fascinación.</p>
 				<p>En aquella época yo amaba el mar sobre todas las cosas: era mi elemento, soñaba con ser marino.</p>
@@ -1397,7 +1437,7 @@
 				<p>No roguéis a Dios por aquel niño mártir. Rogad por sus verdugos.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0329_chap25">
-				<head>XXV: ROSAS TEMPRANAS</head>
+				<head xml:id="ne0329_head_026">XXV: ROSAS TEMPRANAS</head>
 				<p>Corría el año 1861. En Avilés vivíamos ignorados, pero felices. Allá lejos podían sublevarse los batallones y en Madrid alzarse barricadas y en todas partes encenderse la lucha y venir en pos de ella las sangrientas represiones, matanzas y fusilamientos. Nosotros no nos ocupábamos en semejantes bagatelas. Nuestros sucesos interesantes eran los Carnavales, el baile de Piñata, los días de San Juan y de San Pedro con sus paseos por mar y por tierra, las romerías, las ferias.</p>
 				<p>¿Quién osará afirmar que no estábamos en lo cierto? ¿Hay algo más interesante para el hombre que su felicidad? Un moralista me dirá que la bondad debe ir delante. Yo responderé que bondad y felicidad son una misma cosa, y se lo demostraría con párrafos muy elocuentes de Plotino, de Santo Tomás y de Fichte; pero no estoy seguro de que esto sea oportuno en unas memorias. Por el momento, me limito a exclamar con el Evangelio: ¡Bienaventurados los pacíficos! Nosotros lo éramos; por eso Dios nos recompensaba derramando sobre nuestra villa torrentes de alegría.</p>
 				<p>La noche de San Juan era particularmente regocijada. Como en otras muchas regiones de España, días antes, los niños trabajábamos ardorosamente en la construcción de jardines en plena calle, aprovechando los rincones y encrucijadas. Estos jardines eran nuestro orgullo, porque sabíamos que habían de ser visitados. Para ello poníamos a contribución los bolsillos de nuestros padres y deudos. Enarenábamos sus caminitos esmeradamente; los adornábamos, no solamente con plantas y flores, sino, a veces, también con estatuas y fuentes, y comprábamos farolillos venecianos, con los cuales los iluminábamos <seg rend="italic">a giorno</seg>. Al día siguiente escuchábamos con avidez el dictamen y las críticas de la gente. Si oíamos decir que el jardín del Rivero era mejor que el de Galiana, nuestro corazón latía de entusiasmo, y celebrábamos nuestro triunfo gritando por las calles: ¡Viva Rivero!</p>
@@ -1457,7 +1497,7 @@
 				<p>Hoy desde lo bajo de mi experiencia los miro con un poco más de respeto.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0329_chap26">
-				<head>XXVI: PARÉNTESIS</head>
+				<head xml:id="ne0329_head_027">XXVI: PARÉNTESIS</head>
 				<p>Salta este capítulo, lector minúsculo, pues no va dedicado a ti, y permite que un instante desahogue mi pecho oprimido con aquellos que como yo ven cercana la fatal ribera y a quien hace ya señas el adusto barquero.</p>
 				<p>¡Con qué placer evoqué los seres que alegraron mi niñez! Mi fantasía los representa con los rasgos que tenían, escucho su voz, miro su sonrisa o su gesto severo, contemplo su marcha: unos son dulces, afectuosos, otros graves, éstos melancólicos, aquéllos alegres, los otros grotescos; pero todos amables, porque todos habían sido enviados por Dios para hacerme dichoso.</p>
 				<p>¿Dónde estáis, nobles seres que compartisteis mi amor y mi alegría? Una mano glacial os arrebató para siempre de mi lado. ¡Para siempre! Horrible palabra que oprime mi corazón y me llena de estupor. Si la muerte es la separación definitiva, si nunca más os volveré a ver, valiera más que no nos hubiéramos juntado un instante en este pequeño globo que nada indiferente por los abismos del espacio. ¿Viviréis en otras regiones luminosas, inmarcesibles y seréis dichosos como lo merecíais, o la mano cruel que os arrebató os habrá precipitado en una noche eterna?</p>
@@ -1500,7 +1540,7 @@
 				<p>«¡Tuyo soy!».</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0329_chap27">
-				<head>XXVII: OVIEDO</head>
+				<head xml:id="ne0329_head_028">XXVII: OVIEDO</head>
 				<p>En el Otoño de este mismo año fuí enviado a Oviedo para estudiar la segunda enseñanza. La capital de Asturias no ofrece apenas, en su aspecto material, nada que pueda fijar la atención y hacerla interesante. Asentada sobre el lomo de un verde collado, sus contornos son bellos como lo es toda la provincia, pero sin relieve; las calles, en general estrechas e irregulares, el caserío mezquino con pocos edificios notables que la decoren. Aunque fué corte en los primeros tiempos de la Reconquista, lo fué por tan breve tiempo y en época tan remota, que apenas quedan huellas monumentales de su realeza. Sus iglesias distan mucho de ser joyas artísticas como las de León y Toledo. Su misma catedral, de estilo gótico, ni por su magnitud ni por la riqueza de sus ornamentos, sale de lo común en esta clase de templos. Pero su torre… ¡Ah!, su torre merece capítulo aparte.</p>
 				<p>Es la más esbelta, la más armónica, la más primorosa de cuantas existen en España. Oviedo alardea, con razón, de esta torre, como una mujer fea se vanagloria de poseer copiosos y ondulantes cabellos.</p>
 				<p>Pero esta fea, además de su espléndida cabellera, tiene atractivo y gana mucho con el trato. ¿Cuál es su atractivo? La sonrisa: una sonrisa alegre y cordial, franca y picaresca. He conocido algunos viajeros que, prendados de esta sonrisa, han plantado su tienda en la capital de Asturias y no han querido salir ya más de ella.</p>
@@ -1525,7 +1565,7 @@
 				<p>—Pidan ustedes a Dios que me dé luces para gobernar la diócesis.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0329_chap28">
-				<head>XXVIII: EL CUADRO DE HONOR</head>
+				<head xml:id="ne0329_head_029">XXVIII: EL CUADRO DE HONOR</head>
 				<p>Mi abuelo paterno, a cuya casa vine a parar, era un honrado burgués que vivió hasta los noventa y tres años cuidando de su salud física.</p>
 				<p>De la moral no había cuidado: se la daba Dios por añadidura.</p>
 				<p>Cuando entró en este mundo, allá en el último tercio del siglo XVIII, no pensó como Schopenhauer que había caído en una cueva de bandidos, sino en un nido de ángeles. En esta creencia vivió y murió al cabo de un siglo.</p>
@@ -1574,7 +1614,7 @@
 				<p>Fué una revelación: fué la voz que le gritó a Lázaro: «¡Levántate!». Mi padre estaba equivocado. Yo no era un ser inepto.</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0329_chap29">
-				<head>XXIX: BESOS EN CABEZA DE TURCO</head>
+				<head xml:id="ne0329_head_030">XXIX: BESOS EN CABEZA DE TURCO</head>
 				<p>Dos o tres meses después de mi llegada a Oviedo se trasladó mi abuelo con su familia al piso segundo de una casa recién construída sobre la antigua muralla de la ciudad. Por delante formaba con otras una rinconada o plazoleta: algunas callejuelas venían a desembocar; estaba rodeada de vecinos que vivían como en familia, hablándose desde los balcones. Por detrás tenía mayor elevación y las vistas sobre el campo; había mucho aire, mucha luz y mucho silencio. Era íntima, familiar y gárrula, como una vieja comadre, por delante; era grave y luminosa, por detrás, como una deidad.</p>
 				<p>En esta casa vivió mi familia paterna por más de cuarenta años, y allí murió casi toda ella. La primera en sucumbir fué la más joven de mis tres tías. Hacía ya tiempo que padecía una enfermedad mortal al pecho. En sus últimos días experimentaba antojos y tentaciones de golosinas que el médico le prohibía. Entonces la cuitada me hizo su confidente y me enviaba secretamente por ellas. Yo le traía confites y naranjas en los bolsillos de mi abrigo y se los entregaba cuando no había nadie en la habitación. Después de su muerte me acometieron atroces remordimientos imaginando que había contribuído a ello. Más adelante, cuando empecé a dudar de la ciencia de nuestro médico, y, en general, de la eficacia de la Medicina, me alegré de haber endulzado sus últimos momentos.</p>
 				<p>Quedaban otras dos. Ambas pasaban de los cuarenta; pero aunque igualmente viejas solteronas no podían ser más diferentes por su carácter. La primera era una mujer seria, firme, concentrada; poseía claro entendimiento y tierno corazón, pero huía de toda manifestación externa, manteniéndose siempre en una reserva que la hacía aparecer severa. No lo era más que para el amor sexual y todo lo que con él se conexionase. Tenía por tan ridículo y aun tan indigno cuanto se refiriese a la vida galante, que, cuando se hablaba en su presencia de alguna relación amorosa, mostraba inmediatamente su malestar y hacía lo posible por derivar a otro punto la conversación. Si se obstinaban en seguir tratándolo no tardaba, con cualquier pretexto, en alzarse de la silla y salir de la estancia. Nadie en la familia le había conocido jamás inclinación amorosa, noviazgo, ni cosa que se le pareciese. Por eso, a mí, que estudiaba entonces la historia de Roma, se me representaba mi tía como una de aquellas tristes vestales que envejecían y se secaban atizando el fuego sacro. El que ella mantenía vivo era el del orden, la economía y la dignidad del hogar doméstico, en cuya tarea nadie podía aventajarla.</p>
@@ -1627,7 +1667,7 @@
 				<p>Pero al día siguiente subieron de nuevo: mi romántica tía intercedió por ellas; no estaba allí su ceñudo exnovio; al cabo me ablandé y consentí en bajar, a condición de que por ningún motivo ni bajo ningún pretexto se me diese un solo beso.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0329_chap30">
-				<head>XXX: CABALLERÍA INFANTIL</head>
+				<head xml:id="ne0329_head_031">XXX: CABALLERÍA INFANTIL</head>
 				<p>Cómo y porqué fuí atacado de aquel humor belicoso que hizo la desesperación de mis tías durante el segundo curso de bachillerato, no lo sé yo mismo.</p>
 				<p>Si ahora ocurriese no dejaría de atribuirse a un estado neurasténico; pero en aquella época remota, Asturias era un país privado de vías de comunicación y no se conocía la neurastenia.</p>
 				<p>Aceptemos el hecho y en vez de investigar sus causas, cosa siempre difícil, analicemos sus consecuencias.</p>
@@ -1699,7 +1739,7 @@
 				<p>Fuí tan inocente que no comprendí que mi alejamiento, que ella juzgaba voluntario, había producido la derrota de mi rival.</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0329_chap31">
-				<head>XXXI: SEGUNDAS LECTURAS</head>
+				<head xml:id="ne0329_head_032">XXXI: SEGUNDAS LECTURAS</head>
 				<p>En los años que cursé la segunda enseñanza cayeron en mis manos muchos libros. Fué el azar quien los trajo, no una mano discreta; así que reinó en mis lecturas una heterogeneidad disonante y cualidades muy diversas.</p>
 				<p>Mi padre me había dejado vivir siempre en una independencia intelectual que estremecería a un pedagogo. Porque mi padre, con su pesimismo jocoso y paradójico, se reía de la Pedagogía. Pensaba y repetía sin cesar que la educación servía de poco; que la naturaleza lo hacía todo. Quien había nacido tonto, tonto sería toda su vida, sin que fuesen poderosos los más ilustres maestros a volverle discreto.</p>
 				<p>No discuto esta opinión subversiva; pero afirmo que su sistema, o, por mejor decir, su falta de sistema, no produjo en mí tan funestos resultados como debiera esperarse. Aún más; se puede aventurar que si autoritariamente se me impusiera la lectura de algunos libros, probablemente hubiera cobrado aborrecimiento a todos ellos. En ésta, como en otras muchas ocasiones, quizá valga más entregarse en manos de la Providencia. «Vendrá a tus brazos el ser que debes amar; vendrá a tus manos el libro que debes leer», dice un filósofo moderno.</p>
@@ -1731,7 +1771,7 @@
 				<p>Entonces yo a mi vez quedo serio y triste. Permanezco inmóvil y meditabundo largo rato; y al cabo, enjugando una lágrima, vuelvo a colocar el libro con respeto donde estaba.</p>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0329_chap32">
-				<head>XXXII: DAR DE BEBER AL SEDIENTO</head>
+				<head xml:id="ne0329_head_033">XXXII: DAR DE BEBER AL SEDIENTO</head>
 				<p>Hay hombres que harían bien en no morirse nunca: uno de ellos mi catedrático de Retórica y Poética y ampliación de Latín en el tercer curso del bachillerato. Harían bien en no morirse, porque son la alegría del género humano, que tanta necesidad tiene de ella para soportar sus miserias.</p>
 				<p>Nuestro profesor infundía regocijo en el alma así que abría la boca, y lo mismo cuando la tenía cerrada. Era hombre ya entrado en años, de baja estatura, y gastaba, a la usanza de sus tiempos juveniles, unas patillas negras que partían de la base de la nariz y llegaban hasta las orejas. En Oviedo corría válido el rumor de que se teñía estas patillas con el betún de las botas. El lector es libre de aceptar la especie o no aceptarla, porque yo no he podido comprobarla. Lo que sí puedo afirmar es que algunas veces se nos presentaba con ellas, de tal modo lustrosas y relucientes, que parecían salir de un salón de limpiabotas.</p>
 				<p>Mi catedrático tenía la cabeza clásica y el corazón romántico. Por su profesión y por su estudio de la antigüedad pagana admiraba a los héroes griegos y romanos, y estimaba a sus poetas, en especial a Tíbulo y Virgilio. Los dioses del Olimpo le infundían gran respeto, aunque no dejaba de achacarles cierta falta de sensibilidad. En cuanto a las diosas, las amaba desaforadamente.</p>
@@ -1806,7 +1846,7 @@
 				<p>Si se profundiza adecuadamente se hallará razón parecida en casi todas las maldades que se cometen en el mundo.</p>
 			</div>
 			<div n="33" type="chapter" xml:id="ne0329_chap33">
-				<head>XXXIII: EL ATENEO</head>
+				<head xml:id="ne0329_head_034">XXXIII: EL ATENEO</head>
 				<p>Por aquellos días, esto es, en el tercer año del bachillerato, trabé relación con unos cuantos estudiantes más adelantados que yo en la carrera. Se hallaban, pues, terminando la segunda enseñanza. Era un grupo de chicos estudiosos y de notable ingenio y discreción. Algunos de ellos han muerto jóvenes; otros se han distinguido en diferentes carreras del Estado; sólo dos se consagraron a la literatura, Leopoldo Alas y Tomás Tuero. El primero llegó a ser, con el pseudónimo de <seg rend="italic">Clarín</seg>, un crítico eminente; el segundo a causa de su precaria situación y aún más de su invencible apatía no dió de sí lo que todos esperábamos. Alas era de un ingenio más vivo, más fecundo y, desde luego, mucho más aplicado al estudio; en cambio Tuero poseía un gusto más refinado y mayor instinto poético.</p>
 				<p>Con estos dos me ligué especialmente. Acogiéronme ellos al principio con mal disimulado desdén. En aquel tiempo yo sólo era conocido en el Instituto por mi carácter turbulento y pendenciero. Me contaba Alas más tarde que antes de conocerme me había visto salir una vez desafiado con otro chico de los claustros de la Universidad. Acompañado él de otro querido amigo nuestro, que aún vive, nos siguieron diciéndose: «—Vamos a ver cómo se pegan estos badulaques». Llovía copiosamente y, cobijados en sus paraguas, fueron en pos de nosotros hasta el parque de San Francisco y allí presenciaron riendo nuestro furioso combate. Porque aquellos amigos poseían ya una madurez de juicio que yo estaba lejos de alcanzar.</p>
 				<p>No es maravilla, pues, que aceptasen mi amistad con reserva y me diesen indirectamente a entender que no me hallaba a su altura. Me consideraban como un beocio que, temerariamente, se hubiera colado en los jardines de Academo.</p>
@@ -1854,7 +1894,7 @@
 				<p>Así cayó y se deshizo aquel memorable Ateneo que tanta influencia ha ejercido en los destinos de Europa.</p>
 			</div>
 			<div n="34" type="chapter" xml:id="ne0329_chap34">
-				<head>XXXIV: EL CLUB</head>
+				<head xml:id="ne0329_head_035">XXXIV: EL CLUB</head>
 				<p>Acaeció que una noche nos acostamos esclavos los españoles y amanecimos libres.</p>
 				<p>Unos generales filántropos desembarcados en Cádiz fueron los encargados de romper nuestras cadenas. Marcharon sobre Madrid, derrotaron en el camino a las tropas del Gobierno y entraron en la capital a los acordes del <seg rend="italic">Himno de Riego</seg>.</p>
 				<p>Naturalmente las ondas sonoras de este <seg rend="italic">Himno</seg> se propagaron en círculo como todas las demás y alcanzaron pronto el litoral de la Península. Yo las percibí entre sueños acompañadas del estampido de los cohetes. Me levanté velozmente, me asomé al balcón y vi desfilar pelotones de gente con banderas, gritando: ¡Viva la libertad!</p>
@@ -1942,7 +1982,7 @@
 				<p>Aquella cita trágica produjo enorme sensación. Se hizo un silencio profundo y en medio de él salimos erguidos del club para no volver a entrar.</p>
 			</div>
 			<div n="35" type="chapter" xml:id="ne0329_chap35">
-				<head>XXXV: IMPRESIONES MUSICALES</head>
+				<head xml:id="ne0329_head_036">XXXV: IMPRESIONES MUSICALES</head>
 				<p>Hay en la vida del hombre una época que pudiéramos llamar teatral, si la palabra no se prestase al equívoco.</p>
 				<p>Comprenda el lector lo que quiero decir: Hay una época en que el hombre civilizado siente con más o menos intensidad el atractivo de los espectáculos teatrales. Este atractivo se prolonga por más o menos tiempo, según los temperamentos. Tengo un amigo, ya viejo, que gasta 100 pesetas mensuales en localidades para el teatro, y en su vida ha comprado un libro por valor de 3,50. Es un hombre odioso.</p>
 				<p>A los quince años entregaba yo casi todo el dinero que me suministraban mis padres a los cómicos, salvo el que gastaba en pomada de heliotropo para untarme los cabellos. En aquel viejo teatro de Oviedo, donde se estaba mejor que en una tienda de campaña, he disfrutado gran copia de dramas y comedias de repertorio, escuché infinitos gritos apasionados, muchas décimas calderonianas y no pocas carcajadas histéricas.</p>
@@ -2004,7 +2044,7 @@
 				<p>Las injurias, la cárcel, el ridículo, la vergüenza no existían para aquel hombre. El mundo real con sus impurezas, perfidias y groserías se había desvanecido. Como los prisioneros de la famosa caverna de Platón contemplaba cara a cara el sol de la belleza.</p>
 			</div>
 			<div n="36" type="chapter" xml:id="ne0329_chap36">
-				<head>XXXVI: EL SUEÑO DEL «LUCERO»</head>
+				<head xml:id="ne0329_head_037">XXXVI: EL SUEÑO DEL «LUCERO»</head>
 				<p>Decían los médicos, aunque no era cierto, que mi madre necesitaba baños de mar. Para tomarlos solíamos pasar el mes de agosto en la villa de Luanco, vecina de la de Avilés, que posee una bonita playa arenosa donde las olas rompen con estrépito.</p>
 				<p>En aquel tiempo existía en Luanco un hombre llamado el <seg rend="italic">Corsario</seg>.</p>
 				<p>No era <seg rend="italic">Barbarroja</seg>, porque tenía barba negra y escasa. No era tampoco el corsario de Byron, porque <seg rend="italic">Conrado</seg>, hombre de soledad y misterio (<seg rend="italic">man of lóneness and mistery</seg>) hablaba poquísimas palabras y nuestro corsario era un charlatán insufrible.</p>
@@ -2062,7 +2102,7 @@
 				<p>Sin embargo, en este momento, me alegraría de no haber dado aquellos espolazos.</p>
 			</div>
 			<div n="37" type="chapter" xml:id="ne0329_chap37">
-				<head>XXXVII: POETA Y CAZADOR</head>
+				<head xml:id="ne0329_head_038">XXXVII: POETA Y CAZADOR</head>
 				<p>Jamás olvidaré aquel verano que pasé en mi aldea natal entre el cuarto y el quinto año del bachillerato. Entonces fué cuando mi alma se puso en contacto con la naturaleza y gozó la dulce embriaguez llena de alegría que a su influjo potente nos acomete. No recuerdo ninguna época de mi vida en que haya sido más dichoso. No lo fuí al modo de un ser casquivano y bailarín sino como un poeta, como un griego primitivo que, subyugado por la magia donisíaca, rompe en himnos celebrando la alianza del hombre con la tierra y el evangelio de la armonía de los mundos.</p>
 				<p>Vivía yo en una tranquilidad llena de sabiduría, vivía en una sorprendente serenidad dejando filtrarse suavemente en mi alma el encanto de aquella naturaleza fresca, transparente, aromática. Era la alegría de un enamorado frente al objeto de sus ansias y que puede saciarse con su vista a todas horas. Salía de madrugada a recoger el rocío que caía de los castañares, a respirar el perfume del heno fresco; dormía a la hora de la siesta debajo de los avellanos; me bañaba al declinar el sol en los remansos del río. Era tan feliz, que algunas veces imaginaba que el tiempo no existía, que había puesto ya un pie en la eternidad y que no saldría jamás de aquel dulce enajenamiento.</p>
 				<p>Es el valle de Laviana, donde he nacido, grandioso sin ferocidad, grave y apacible al mismo tiempo. Los prados, siempre verdes, circundados de avellanos, surcados por mansos arroyuelos, causan una impresión idílica de paz y contento. Pero las suaves colinas que lo limitan, cubiertas de espesos castañares, surgen ya con un sentimiento de fuerza, como una majestuosa armonía que no turba la paz de nuestro espíritu aunque lo inclinan a la meditación. Detrás, otras colinas más altas y adustas, alzan su cabeza desnuda. Por fin, más allá, se levantan protectoras grandes masas de montañas salvajes, como poderoso baluarte contra las irrupciones de enemigos o curiosos. Se respira aquí una profunda ternura, se siente la presencia del espíritu de infinita paz que nos da la plenitud de vida, la salud del alma y el vigor del cuerpo.</p>
@@ -2101,7 +2141,7 @@
 				<p>Largos años hace que el buen secretario descansa bajo la tierra; pero mientras yo aliente sobre ella no olvidaré los tiros que tan generosamente marró.</p>
 			</div>
 			<div n="38" type="chapter" xml:id="ne0329_chap38">
-				<head>XXXVIII: ADÁN EXPULSADO</head>
+				<head xml:id="ne0329_head_039">XXXVIII: ADÁN EXPULSADO</head>
 				<p>Muchas veces, casi siempre, lo que esperamos con ansia, no nos trae la felicidad, ni lo que esperamos con temor, la desgracia.</p>
 				<p>Jamás hubo un estudiante de quinto año más ansioso que yo de hacerse bachiller. Este magno acontecimiento era, a mi modo de ver, la llave del Paraíso.</p>
 				<p>En efecto, fué la llave, mas no para abrirlo, sino para cerrarlo. Este primero y gran desengaño que la vida me ofreció, produjo en mí tal efecto, que me hizo para siempre con ella receloso. En cada esperanza he visto, desde entonces, una emboscada; en cada deseo, una trampa. Y he pasado mi existencia como los cocheros, apretando el freno en todas las pendientes.</p>

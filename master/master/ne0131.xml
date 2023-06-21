@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Los espirituados</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Espirituados</title>
-				<title type="idno">
-					<idno type="bne">bimo0000624416</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1010849</idno>
-					<idno type="viaf">95256735</idno>
-					<name type="short">Burgos</name>
-					<name type="full">Carmen de Burgos</name>
+					<name type="short" ref="#Burgos"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1942</measure>
@@ -140,13 +131,37 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0131</idno>
+						<idno type="cligs">ne0131</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bne" subtype="epub">BNE, <date when="2017">2017</date>, <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000064340&amp;page=1"/>.</bibl>
-				<bibl type="print-source">Rivadeinera, <date when="1923">1923</date>, Madrid.</bibl>
-				<bibl type="edition-first">Rivadeinera, <date when="1923">1923</date>, Madrid.</bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Los espirituados</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0000624416.html">bimo0000624416</idno>
+				</idno>
+				</title>
+					<author xml:id="Burgos">
+						<name type="full"><forename>Carmen</forename> <surname>de Burgos</surname></name>
+						<idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5752699/">Q5752699</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1010849.html">XX1010849</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/95256735/">95256735</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/120573091">120573091</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bne" subtype="epub">BNE, <date when="2017">2017</date>, <ref target="http://bdh-rd.bne.es/viewer.vm?id=0000064340&amp;amp;page=1"/>.</bibl>
+					<bibl type="print-source">Rivadeinera, <date when="1923">1923</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first">Rivadeinera, <date when="1923">1923</date>, <pubPlace>Madrid</pubPlace>.<idno source="k10plus" type="ppn" n="464808065" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464808065"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los espirituados</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464808065" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464808065"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +171,11 @@
 				<p>Nos muestra cómo la protagonista se transforma en una obsesa sexual y una ninfómana por influencia del medio.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL10">3</term>
 					<term type="author.continent">Europe</term>
@@ -168,7 +188,7 @@
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">?</term>
 					<term type="text.characters.protagonist.gender" cert="medium">female</term>
@@ -180,9 +200,9 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2" cert="medium">naturalist</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -191,7 +211,7 @@
 					<term type="text.litHist.mentioned" resp="HdLE">False</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE10">0.5</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator" cert="medium">heterodiegetic</term>
 					<term type="text.plot.end">neutral</term>
 					<term type="text.plot.representation">realistic</term>
@@ -213,20 +233,21 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-03-05" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Los espirituados</head>
-				<head>Carmen de Burgos</head>
+				<head xml:id="ne0131_head_000">Los espirituados</head>
+				<head xml:id="ne0131_head_001">Carmen de Burgos</head>
 			</div>
 		</front>
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0131_chap1">
-				<head>I</head>
-				<head><seg rend="smallcaps">ENTRE MONTAÑAS</seg> </head>
+				<head xml:id="ne0131_head_002">I</head>
+				<head xml:id="ne0131_head_003"><seg rend="smallcaps">ENTRE MONTAÑAS</seg> </head>
 				<p>Tardó en darse cuenta del lugar donde se encontraba, con la imaginación turbada aún por las telarañas del sueño. Después de pasear la mirada en torno suyo, se repitió en voz alta, para tener la seguridad de que se hallaba despierto:</p>
 				<p>—Estoy en Jaca. Estoy otra vez en Jaca.</p>
 				<p>Le parecía imposible encontrarse, a un tiempo mismo, en su propia casa y en aquella ciudad extraña.</p>
@@ -302,8 +323,8 @@
 				<p>Se sucedían, como un oleaje cuajado en piedra, das ondulaciones de los montes altísimos y desiguales, que, al fin, se abrieron, abrazando la meseta serena y riente donde se asentaba la ciudad de Jaca, en la que iban a comenzar una vida nueva.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0131_chap2">
-				<head>II</head>
-				<head>BIENES REALES </head>
+				<head xml:id="ne0131_head_004">II</head>
+				<head xml:id="ne0131_head_005">BIENES REALES </head>
 				<p>Fué la madre la que acudió, al sentirlo despierto, para abrir las maderas del balcón.</p>
 				<p>En vez de la luz cegante de todas las mañanas, entró una luz grisácea, dulce, como tamizada por una espesa cortina.</p>
 				<p>Tenía el cielo color pizarra, un tono frío y luminoso. Doña Matilde iba envuelta en la toquilla de lana negra. Se acercó a él para besarlo, cariñosa, en la frente.</p>
@@ -382,8 +403,8 @@
 				<p>—Quizás—pensaba—es necesario padecerlas para alcanzar esa tranquilidad que yo envidio y a la que no pueden llegar, seguramente, los que no las han conocido nunca. Son ellas las que hacen madurar el espíritu.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0131_chap3">
-				<head>III</head>
-				<head><seg rend="smallcaps">AÑO CRISTIANO</seg> </head>
+				<head xml:id="ne0131_head_006">III</head>
+				<head xml:id="ne0131_head_007"><seg rend="smallcaps">AÑO CRISTIANO</seg> </head>
 				<p>La vida se deslizaba siempre igual, monótona y cansado, en aquellos días primeros de septiembre, que ya dejaban adivinar lo que sería el otoño cercano.</p>
 				<p>Doña Matilde se levantaba antes de ser de día. El madrugar no era para ella un sacrificio, como no lo es para casi todas las personas que ya pasaron la juventud. Se lavaba con agua fría, se recogía el cabello a toda prisa y se iba a la catedral para oír la misa de alba, que se decía a las cuatro de la mañana en el buen tiempo y a las seis en el invierno, ante el altar de la Virgen del Rosario.</p>
 				<p>Salía sin hacer ruido, sin despertar a nadie. Aquel era el tiempo que seguía dedicando cada día a su difunto esposo. El cuidado de oír la misa en sufragio de su alma había venido a substituir al de llamarlo y prepararle la ropa y el desayuno.</p>
@@ -448,8 +469,8 @@
 				<p>—Ha estado tan amable porque sabía que eran mi madre y mi hermana... Estoy seguro de que me tiene simpatía..., de que le agrado... A mí me gusta también... más de lo que ninguna mujer me ha gustado hasta ahora...; pero yo no quiero casarme jamás, y no quiero quebraderos de cabeza.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0131_chap4">
-				<head>IV</head>
-				<head><seg rend="smallcaps">PERFUME BE AZUCENAS</seg> </head>
+				<head xml:id="ne0131_head_008">IV</head>
+				<head xml:id="ne0131_head_009"><seg rend="smallcaps">PERFUME BE AZUCENAS</seg> </head>
 				<p>Eran agradables para Domingo aquellos largos paseos con don Antonio por las carreteras bordeadas de altos árboles. Daban la impresión de ser radios que iban a terminar al pie de algún monte, sin dejar posibilidad de salir sino subiendo una vertiente para bajar la opuesta.</p>
 				<p>Le daba gana de andar el misterio de las revueltas del camino; deseo de salvar una prominencia para ver lo que venía detrás, sin conseguir más que cansarse en vano, sin descubrir nuevo horizonte, perdidos siempre en la enredada madeja de los montes, cuyo cabo no podrían encontrar.</p>
 				<p>Don Antonio, gran conversador, era el que hacía el gasto, enseñándole a su joven amigo algún punto de vista maravilloso para abarcar la belleza del paisaje, mientras le contaba alguna particularidad notable.</p>
@@ -519,8 +540,8 @@
 				<p>—No merece la pena. Por fortuna, yo no estoy enamorado.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0131_chap5">
-				<head>V</head>
-				<head><seg rend="smallcaps">LA TORMENTA</seg> </head>
+				<head xml:id="ne0131_head_010">V</head>
+				<head xml:id="ne0131_head_011"><seg rend="smallcaps">LA TORMENTA</seg> </head>
 				<p>Habían comenzado los fríos y tuvieron qué acabarse los paseos. Doña Matilde y Añila, recluidas en su casa, sin trato con nadie apenas, viendo sólo a Domingo a las horas de comer, trataban de disimular su tristeza.</p>
 				<p>Se pasaban la vida al lado de la gran chimenea, contemplando los juegos y oscilaciones de las llamas con sus cambios de color y escuchando los chasquidos de la leña.</p>
 				<p>—El fuego es como el mar—decía Anita— Parece mentira que dos cosas tan opuestas den la misma impresión.</p>
@@ -606,8 +627,8 @@
 				<p>—Es que ese cura tiene algo en su historia que no está muy limpio...—siguió diciendo Joaquina— Parece que un obispo lo castigó... El se escapó... Escribió en los papeles contra los, curas y los santos cosas que ya no pueden borrarse... y al fin se arreglaron las cosas y él quiso venirse aquí, donde tenía alguna hacienda... Pero hace una vida apartada... No se trata con los compañeros... Ni siquiera visita al señor obispo... y eso que el señor obispo parece que le tiene miedo y lo pone por las nubes, diciendo que tiene mucho talento... Es que le guardan todos el aire, porque sabe mucho... La hermana es muy buena, muy madruguera, muy caritativa. Sería una santa si se ocupara tanto de la iglesia como de la casa... Pero seguro que si se cae el templo no la pilla dentro. Ese es un mal ejemplo, porque se ve que tiene tan poca fe como el hermano... Porque, créame, señora (Jesús † Nuestro Señor † me libre de una mentira †, don Antonio no es un cura como los otros.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0131_chap6">
-				<head>VI</head>
-				<head><seg rend="smallcaps">EL ENCANTO DE LA NIEVE</seg></head>
+				<head xml:id="ne0131_head_012">VI</head>
+				<head xml:id="ne0131_head_013"><seg rend="smallcaps">EL ENCANTO DE LA NIEVE</seg></head>
 				<p>Nunca habían visto una nevada doña. Matilde y Anita.</p>
 				<p>Las sorprendía aquel cielo gris, que se aplomaba sobre la ciudad, borrando el contorno de los montes, empequeñeciendo el horizonte. Una gran calma lo envolvía todo. El aire estaba inmóvil, y los tenues copos que jugueteaban entrecruzándose en el aire antes de caer, parecían una lluvia de <seg rend="italic">confetti</seg> blanco.</p>
 				<p>Les recordaban las lluvias de pélalos de jazmín que se deshojan para arrojarlos al paso de la procesión de la Virgen del Carmen en su tierra. Revoloteaban los copos con una tendencia singular a entrarse por los ojos.</p>
@@ -662,8 +683,8 @@
 				<p>En aquellos momentos en lo que menos pensaba era en su espíritu. ¿De qué le habían servido todos los consejos?</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0131_chap7">
-				<head>VII</head>
-				<head><seg rend="smallcaps">LOS DESTERRADOS</seg> </head>
+				<head xml:id="ne0131_head_014">VII</head>
+				<head xml:id="ne0131_head_015"><seg rend="smallcaps">LOS DESTERRADOS</seg> </head>
 				<p>Algunas noches, a pesar del frío, iban don Antonio y Regina a pasar la velada a casa de Domingo, con gran disgusto de Joaquina, que aumentaba el jesuseo y los suspiros.</p>
 				<p>Esas noches había siempre algún piscolabis para obsequiar a los amigos. Lo que tenía más éxito eran las rosetas, que hacían allí mismo en la chimenea.</p>
 				<p>Un poco de maíz tostonero, de ¡granitos menudillos, picudos, color rubí, del que doña Matilde había traído un saquito, se ponía en la olla con manteca, sazonada con un polvito de sal. Al momento empezaba a crujir, como un tiroteo, con grandes estampidos, y la olla aparecía rebosante de las rosetas blancas, en que se había hinchado el gluten al reventar la semilla.</p>
@@ -749,8 +770,8 @@
 				<p>—I Ay!, amiga mía. San Basilio dijo al enviado del emperador que le amenazaba con desterrarlo, que para las almas grandes toda la tierra es destierro Mi alma es pequeñita y, sin embargo, desterrada se sintió siempre en un mundo donde hay gentes capaces de explotar y maltratar a los débiles y a los desvalidos; propagar el error y la maldad por que les produzcan. Perseguir al inocente, claudicar ante su conciencia, degradarse por el vicio y degenerar hasta locuras rayanas en el salvajismo. En este orden de ideas llegamos a sentir la indiferencia y no reparar en que el cielo y el sol son bellos, las flores olorosas, los frutos exquisitos, grato el ambiente y admirables el mar, el bosque y el campo... Pero desterrados y todo amamos nuestro destierro, unos por natural repugnancia de no ser, otros temerosos ante el problema del más allá; de seguir siendo, pero sin saber dónde ni cómo... ¿No es lo mejor que podemos hacer hermosear nuestro destierro y perfeccionar nuestro espíritu, limpiarlo..., por lo que pudiera ocurrir?</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0131_chap8">
-				<head>VIII</head>
-				<head><seg rend="smallcaps">EN LA CERERÍA</seg> </head>
+				<head xml:id="ne0131_head_016">VIII</head>
+				<head xml:id="ne0131_head_017"><seg rend="smallcaps">EN LA CERERÍA</seg> </head>
 				<p>Las tertulias de la trastienda de la cerería eran el refugio en aquellos días fríos.</p>
 				<p>La pequeña puerta se abría hacia afuera, quedando adosada a los huecos de la pared, a la que adornaba con los cromos de la Purísima morena de Murillo y un busto de Jesús, en el que la mano que separaba la túnica del pecho dejaba ver un Sagrado Corazón rojo, sangrante, del que brotaba la sangre como encendida en forma de una hoguera, símbolo del amor.</p>
 				<p>Quedaba entre las dos tablas el hueco de la puertecilla estrecha, que era preciso pasar de canto, porque el escaparate colocado a su lado le daba una profundidad de corredor.</p>
@@ -791,8 +812,8 @@
 				<p>Luego las damas hacían mutis y aparecían poco después con sus mantos, sus libros de misa y su rosario liado a la muñeca para ir a la iglesia a rezar el Rosario. Tenían, la seguridad de encontrarse todas allí. Algunas iban seguidas de la criada, que les llevaba la silla de tijera.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0131_chap9">
-				<head>IX</head>
-				<head><seg rend="smallcaps">DEMONOLOGÍAS</seg> </head>
+				<head xml:id="ne0131_head_018">IX</head>
+				<head xml:id="ne0131_head_019"><seg rend="smallcaps">DEMONOLOGÍAS</seg> </head>
 				<p>Una de las conversaciones más frecuentes en la tertulia de la cerería, como en todo Jaca, era la procesión de Santa Orosia y los espirituados.</p>
 				<p>—Esto, por lo visto, es achaque de todas las ciudades que tienen una gran procesión—decía</p>
 				<p>Domingo— Sucede lo mismo en Toledo y en Sevilla.</p>
@@ -899,8 +920,8 @@
 				<p>La llegada de don Nicanor, con su acompañamiento, que venía a contarles alguna nueva grandeza, o la aparición de la criada con la chocolatera y las jícaras, ponía término a la discusión; perecía borrarse toda diferencia, y todos, olvidando La reciente rencilla, volvían a convivir en la mejor amistad.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0131_chap10">
-				<head>X</head>
-				<head><seg rend="smallcaps">VUELTA DEL SOL</seg> </head>
+				<head xml:id="ne0131_head_020">X</head>
+				<head xml:id="ne0131_head_021"><seg rend="smallcaps">VUELTA DEL SOL</seg> </head>
 				<p>El retorno del Sol fué una fiesta como las de Noruega. La Pascua era en realidad la vuelta del Sol.</p>
 				<p>—En el fondo—decía don Antonio—, no somos más que adoradores del Sol, de los campos verdes, de la alegría de la primavera. El Sol es el eterno vivificador del mundo, que se consume lentamente en su continuo arder.</p>
 				<p>Guando salía a pasear con Domingo y se sentaban en aquella revuelta de la carretera, desde donde veían en perspectiva la ciudad como dormida en el regazo de las montañas, preguntaba:</p>
@@ -956,8 +977,8 @@
 				<p>Pero ella, adivinando su angustia, se acercó, se inclinó sobre él y lo besó lentamente en los ojos, haciéndole ya perder la noción de todo lo existente.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0131_chap11">
-				<head>XI</head>
-				<head><seg rend="smallcaps">SAN JUAN DE LA PEÑA</seg> </head>
+				<head xml:id="ne0131_head_022">XI</head>
+				<head xml:id="ne0131_head_023"><seg rend="smallcaps">SAN JUAN DE LA PEÑA</seg> </head>
 				<p>Dejaron los coches que los habían conducido hasta Santa Cruz de la Seros, para tomar las caballerías que los habían de transportar a lo alto del monte. Era acuella. una de las excursiones más largas y más difíciles. Se habían tenido que levantar antes que el sol para emprender la caminata y llegar antes de que apretara el calor.</p>
 				<p>La carretera, bordeada de altos árboles, había ofrecido un fresco delicioso. Eran, en la composición del paisaje, como las figuras que el pintor había colocado para avalorar su cuadro. La mañana tenía una blandura que envolvía en su caricia, haciendo languidecer aún más los miembros decaídos por la excesiva madrugada. Las mujeres iban pálidas, mal peinadas, con cierto desorden de mañana de boda, como si se hubieran vestido de prisa y con desaliño.</p>
 				<p>En otra ocasión aquella iglesia románica, cerca de las ruinas del antiguo convento, donde estuvieron tres princesas hermanas, las <seg rend="italic">soores,</seg> de donde había tomado su nombre de <seg rend="italic">seros </seg>el monasterio, hubieran despertado su atención, pero ahora todos llevaban ya la ilusión de contemplar el célebre Monasterio de San Juan, y apenas paraban mientes en aquel alto del camino.</p>
@@ -1045,8 +1066,8 @@
 				<p>El regreso continuaba lento, silencioso, pesado. Domingo trató muchas veces, exponiéndose a rodar un barranco, adelantar su cabalgadura para caminar al lado de Aurelia. Pero la joven parecía tan hermética, tan incomprensible, que lo desesperaba. Hubiera querido ver en ella un movimiento de simpatía, algo espontáneo, en vez de aquel disimulo. Llegaba a dudar si su indiferencia no sería fingida, sino verdadera.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0131_chap12">
-				<head>XII</head>
-				<head><seg rend="smallcaps">HUERTA DE LAS FLORES</seg> </head>
+				<head xml:id="ne0131_head_024">XII</head>
+				<head xml:id="ne0131_head_025"><seg rend="smallcaps">HUERTA DE LAS FLORES</seg> </head>
 				<p>Parecía una señal de buen augurio aquel día primaveral. Domingo, que no había podido dormir en toda la noche, se levantó temprano y, sin tomar el desayuno, se fué a la oficina, donde no pudo trabajar ni hablar con nadie.</p>
 				<p>Comió poco y en silencio, sin escuchar las conversaciones de la madre y de la hermana, que se referían a detalles e impresiones de la excursión, y en seguida tomó el camino de la Huerta de las Flores, aunque estaba cierto de que Aurelia no iría tan temprano.</p>
 				<p>Aquel era el paseo favorito de la muchachada durante el buen tiempo.</p>
@@ -1197,8 +1218,8 @@
 				<p>Domingo siguió en compañía de los jóvenes, que durante el camino suscitaron el tema de la falta de un buen, teatro en Jaca y del mérito de las tiples y cancionetistas que cada uno había visto. El los escuchaba, mirando aquel hermoso panorama, pensando en la superstición que suponía lo que le había dicho el futuro doctor El, que no era creyente, sentía un disgusto profundo. Se encontraba comprometido, sin saber cómo, para casarse, cuando siempre fué tan enemigo del matrimonio, con una mujer fanática. Había claudicado de las creencias de toda su vida. Estaba como aturdido, mareado por la pasión. Sufría él también un hechizo, que la belleza bruja de Aurelia le causaba.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0131_chap13">
-				<head>XIII</head>
-				<head><seg rend="smallcaps">NOVIAZGO</seg> </head>
+				<head xml:id="ne0131_head_026">XIII</head>
+				<head xml:id="ne0131_head_027"><seg rend="smallcaps">NOVIAZGO</seg> </head>
 				<p>Era ya público el noviazgo oficial de Aurelia y Domingo. Las muchachas del pueblo se decían con envidia:</p>
 				<p>—Ha pescado al forastero.</p>
 				<p>Pero, en el fondo, estaban contentas de quitarse de en medio a la belleza consagrada, a la que obsequiaban todos y reinaba sin rival en bailes y fiestas.</p>
@@ -1286,8 +1307,8 @@
 				<p>Se quedó mudo. Aquel Dios de Aurelia, intransigente y pequeño, que no era Dios, era su rival. El se convertía en una especie de falso Satanás para combatir contra aquel Dios falso.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0131_chap14">
-				<head>XIV</head>
-				<head><seg rend="smallcaps">SANTOS DE CERA</seg> </head>
+				<head xml:id="ne0131_head_028">XIV</head>
+				<head xml:id="ne0131_head_029"><seg rend="smallcaps">SANTOS DE CERA</seg> </head>
 				<p>Iba Domingo algunas tardes a casa de don Fidel. Con el verano, la trastienda había variado de aspecto. Abiertas las ventanas al frescor de la tarde, dejaban ver el campo verde y el huertecillo retoñado, con los lozanos geranios cubiertos de delicadas flores rosa y malva, y el parral, vestido de pámpanos, tijeretas y nacientes racimos, que caían como ubres en agraz.</p>
 				<p>Ya muchos de los habituales contertulios, que iban al calor del fogón, los habían abandonado. Don Juan y don Voto parecían haber acabado su partida de ajedrez. Sólo estaban allí las tres mujeres, trabajando en su labor artística.</p>
 				<p>Continuaban igual siempre. Paquita, tiesa y silenciosa; la nuera, cada vez más cerífica, con el vientre tan abultado, que ya no colocaba los lacitos sobre la mesa, sino en la repisa que la barriga le formaba.</p>
@@ -1341,8 +1362,8 @@
 				<p>—Por cierto—dijo—, que yo quería preguntar por qué en la novena de la Virgen de los Dolores el señor obispo le ha dicho a la Virgen “poderosa y liberal señora”. Debe haberse equivocado, ¿verdad?</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0131_chap15">
-				<head>XV</head>
-				<head><seg rend="smallcaps">ENDEMONIADOS</seg> </head>
+				<head xml:id="ne0131_head_030">XV</head>
+				<head xml:id="ne0131_head_031"><seg rend="smallcaps">ENDEMONIADOS</seg> </head>
 				<p>Como lobos que rodean la ciudad, para caer sobre ella acosados por el hambre y la nieve, así los endemoniados rodeaban a Jaca.</p>
 				<p>Constantemente acudían a comprar cera los sacristanes de todos los lugarcillos del contorno, y cada uno de ellos contaba un caso más de los <seg rend="italic">espirituaos</seg> que tenían en su pueblo. A veces tenían el encargo de llevarles un exvoto y en ocasiones un médico o un cura.</p>
 				<p>En Javierregay era una muchacha de quince años. El Diablo había elegido a la más bonita. Hija de padres pobres, había entrado a servir en casa del alcaide del pueblo. Todas las tardes la muchacha iba a buscar leche a una granja cercana, propiedad de sus amos.</p>
@@ -1365,7 +1386,7 @@
 				<milestone unit="section"/>
 				<p>En Escarrilla se ha muerto una de las dos endemoniadas que había. Se quedó negra como el carbón después de expirar, quemada toda. Con un olor a. azufre en la casa, que no se podía entrar.</p>
 				<floatingText><body><div type="section">
-							<head>I </head>
+							<head xml:id="ne0131_head_032">I </head>
 							<p>Era también un relato frecuente el de los espirituados que morían antes del solemne día de la crisis, que marcaba la fecha de Ja procesión.</p>
 							<milestone unit="section"/>
 							<p>En Navasa dió un estallido.</p>
@@ -1379,7 +1400,7 @@
 				</floatingText>
 				<floatingText><body><div type="section">
 
-							<head>II </head>
+							<head xml:id="ne0131_head_033">II </head>
 							<p>Algunos se curaban antes de la procesión.</p>
 							<milestone unit="section"/>
 							<p>Una joven de Urdués se había salvado porque siempre había llevado una medalla de Santa Orosia, y la vió y se la puso. La rabia del dañador fué tanta, que la había dejado manca de la mano con que cogió la medalla.</p>
@@ -1391,7 +1412,7 @@
 					</body>
 				</floatingText>
 				<floatingText><body><div type="section">
-							<head>III </head>
+							<head xml:id="ne0131_head_034">III </head>
 							<p>Guando intervenía la ciencia, no era jamás el médico el que tenía el triunfo, sino el brujo, que destruía el maleficio.</p>
 							<milestone unit="section"/>
 							<p>En Biescas había echado el brujo al Demonio del cuerpo de un enfermo con sahumerios de romero, eucaliptus y otras plantas aromáticas. Porque el Demonio, que se valía de perfumes finos para tentar, tenía tan buen olfato, que no podía resistir los olores malos y escapaba del humo. En cuanto se vió envuelto en el sahumerio escapó por una ventana, rompiendo el cristal, que guardaba huellas de la mano negra como de un carbonero.</p>
@@ -1406,7 +1427,7 @@
 					</body>
 				</floatingText>
 				<floatingText><body><div type="section">
-							<head>IV </head>
+							<head xml:id="ne0131_head_035">IV </head>
 							<p>No se daba, el caso de que un poseído que se libertaba fuese preso del diablo otra vez. Este era un ente formal.</p>
 							<p>Pero los casos eran los mismos, con pocas variantes, y constituían una pesadilla de demoníacos con la que era imposible familiarizarse y pesaba sobre el espíritu.</p>
 							<p>En el día claro de la ciudad tan agradable y riente se adivinaba ya el terrible cerco que iba a caer sobre ella.</p>
@@ -1424,8 +1445,8 @@
 						</div>
 					</body></floatingText></div>
 			<div n="16" type="chapter" xml:id="ne0131_chap16">
-				<head>XVI</head>
-				<head><seg rend="smallcaps">LA TIMORATA</seg> </head>
+				<head xml:id="ne0131_head_036">XVI</head>
+				<head xml:id="ne0131_head_037"><seg rend="smallcaps">LA TIMORATA</seg> </head>
 				<p>Aquella hermosa noche de luna, sentados en la azotea frente al campo, era la vez primera que Aurelia y Domingo se veían un momento solos.</p>
 				<p>Anita estaba enferma, y la madre se había quedado a su lado. Fué preciso llamar a don Juan, que, no encontrando la causa de la enfermedad, habló de la neurastenia, de los nervios, y recetó un reconstituyente cualquiera. Domingo fué solo a su visita, y doña Dolores ocupó cerca de los novios el lugar de Anita. El joven estaba preocupado con la salud de la hermana; la veía decaer de día en día. La conversación era general aquella noche.</p>
 				<p>—¡Qué hermoso tiempo! —exclamó doña Dolores— ¡Hace una luna deliciosa!</p>
@@ -1544,8 +1565,8 @@
 				<p>—¡Más valía no haberla besado!</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0131_chap17">
-				<head>XVII</head>
-				<head><seg rend="smallcaps">PERVIGILIA DE LA SANTA</seg> </head>
+				<head xml:id="ne0131_head_038">XVII</head>
+				<head xml:id="ne0131_head_039"><seg rend="smallcaps">PERVIGILIA DE LA SANTA</seg> </head>
 				<p>La ciudad tomaba un aire desacostumbrado de fiesta. Los edificios, enjalbegados, retocadas las fachadas, tenían aspecto de nuevos. Los coches que hacían el servicio a la estación y a los pueblecillos cercanos venían constantemente llenos. Por las calles, tan silenciosas de ordinario, pululaba una multitud endomingada y pintoresca.</p>
 				<p>Se conocía, por los trajes, la patria de las mozas. Las de Jaca, menudillas, de ojos vivaces y rostro moreno, con el típico corpiño de mangas, blancas desde la muñeca hasta mediado el brazo, parecidas a los manguitos de las enfermeras; el pañolillo de encaje en la cabeza, más pequeño, pero muy semejante al de las napolitanas; la doble falda doblada y una especie de estolas bordadas, que salían de los bullones del hombro, de la manga, y se sujetaban en el codo, desde donde colgaba la mitad, con un aire algo sacerdotal.</p>
 				<p>Las del Roncal se distinguían por las largas trenzas llegando casi a las corvas, la almilla negra con una gola blanca, sobre la que lucían pesadas cruces de oro.</p>
@@ -1714,8 +1735,8 @@
 				<p>Abrió la puerta, y la caterva cochambrosa fué de nuevo a colocarse cerca de la verja del altar de San Miguel, todo de bronce dorado, donde las luces hacían resaltar la marcial y fanfarrona actitud del ángel triunfante y la mueca grotesca del dragón vencido.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0131_chap18">
-				<head>XVIII</head>
-				<head><seg rend="smallcaps">LOS EXORCISMOS</seg> </head>
+				<head xml:id="ne0131_head_040">XVIII</head>
+				<head xml:id="ne0131_head_041"><seg rend="smallcaps">LOS EXORCISMOS</seg> </head>
 				<p>Domingo dejó caer cinco pesetas en el pañuelo. El coadjutor estuvo a punto de abrazarlo.</p>
 				<p>—Si ustedes quieren quedarse, va a comenzar la ceremonia verdadera. En ésa oficiará el párroco; les aseguro que es digna de verse, si no tienen miedo.</p>
 				<p>La monja, de carita de manzana, volvió a insistir en sus tirones y en su súplica:</p>
@@ -1792,8 +1813,8 @@
 				<p>La alegría de la calle alejaba las sombras que la iglesia acumuló en su espíritu.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0131_chap19">
-				<head>XIX</head>
-				<head><seg rend="smallcaps">SUPERSTICIONES</seg> </head>
+				<head xml:id="ne0131_head_042">XIX</head>
+				<head xml:id="ne0131_head_043"><seg rend="smallcaps">SUPERSTICIONES</seg> </head>
 				<p>Regina fué la que acudió a abrirle la puerta. Lo recibió gozosa, como si no hubiera dejado de ir por. allí en tanto tiempo, y lo condujo al comedor, donde estaba don Antonio, ante la mesa llena de las chucherías de sus postres.</p>
 				<p>—¡Usted por aquí! Nos había olvidado—exclamó el sacerdote con alegría.</p>
 				<p>—Eso, no; las tareas, las...</p>
@@ -1900,8 +1921,8 @@
 				<p>—El casarse es como tirarse al baño desde el trampolín. No hay más que dejarse ir de cabeza... Sin pensarlo.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0131_chap20">
-				<head>XX</head>
-				<head><seg rend="smallcaps">LA PROCESIÓN</seg></head>
+				<head xml:id="ne0131_head_044">XX</head>
+				<head xml:id="ne0131_head_045"><seg rend="smallcaps">LA PROCESIÓN</seg></head>
 
 				<p>Se había levantado temprano Domingo aquella mañana, aunque no lo habían dejado dormir las alegres jácaras y las rondallas que cruzaron toda la noche.</p>
 				<p>Llegó también a su cama el lúgubre eco del Rosario, que los devotos rezaban en la calle. Lo oyó como un salmo de penitentes que condujesen a un reo de muerte, y le produjo una pesadilla.</p>
@@ -2000,8 +2021,8 @@
 				<p>Hay hasta quien les atribuye que lo adoran y que tienen pacto con Belcebú. Por eso a nadie le chocó verlas avanzar tranquilas, meter los guiñapos dentro de un saco y marcharse sin que nadie se atreviese a detenerlas, con su andar rítmico, cadencioso, en el desgaire gracioso de sus cuerpos de ánfora. Como reinas disfrazadas de mendigas.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0131_chap21">
-				<head>XXI </head>
-				<head><seg rend="smallcaps">¡ESPIRITUADA!</seg> </head>
+				<head xml:id="ne0131_head_046">XXI </head>
+				<head xml:id="ne0131_head_047"><seg rend="smallcaps">¡ESPIRITUADA!</seg> </head>
 				<p>Al llegar al Campo del Toro, donde está la Plaza de Riscos, faltaba mucho aún para que apareciese la procesión, pero el atrio del templete estaba ya lleno de invitados.</p>
 				<p>La gran plaza parecía más bien una extensa pradera. Cerrada en un ángulo por dos filas de casillas chatas, viejas, con largos balcones de barandal de hierro corridos, y desiguales portalones; como de puertas de cochera. El otro lado, dejaba en su ángulo un callejón, y en el cuarto no había más que el templete. La plaza no tenía límite con la. carretera y el campo, que se abría como una gran planicie detrás de aquella especie de pagoda, decorada de mosaicos de colores.</p>
 				<p>Enfrente, por un efecto de óptica semejante al que nos hace creer que vamos embarcados cuando se mira al mar desde el centro de una habitación cercana a él, desaparecía la distancia intermedia entre la plaza y la Peña de Oruel, que se alzaba fatídica y como pronta a derrumbarse y aplastar las casitas, sobre las que Ungía estar, de manera que éstas parecían enclavadas con los cimientos en la propia falda del monte.</p>

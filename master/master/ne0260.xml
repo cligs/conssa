@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Sangre y arena</title>
-				<title type="sub"></title>
+				
 				<title type="short">Sangre</title>
-				<title type="idno">
-					<idno type="bne">XX1892728</idno>
-					<idno type="viaf">184815554</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2233</measure>
@@ -141,13 +131,115 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0260</idno>
+						<idno type="cligs">ne0260</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>26983</idno>, <ref target="http://www.gutenberg.org/ebooks/26983"/>.</bibl>
-				<bibl type="print-source">Prometeo, Valencia, <date when="1919">1919</date></bibl>
-				<bibl type="edition-first"><date when="1908">1908</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Sangre y arena</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892728.html">XX1892728</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/184815554/">184815554</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q5646475/">Q5646475</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/7690633-4">7690633-4</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>26983</idno>, <ref target="http://www.gutenberg.org/ebooks/26983"/>.</bibl>
+					<bibl type="print-source">Prometeo, <pubPlace>Valencia</pubPlace>, <date when="1919">1919</date></bibl>
+					<bibl type="edition-first"><date when="1908">1908</date><idno source="k10plus" type="ppn" n="134475130X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=134475130X"/><idno source="k10plus" type="ppn" n="468607412" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468607412"/><idno source="k10plus" type="ppn" n="226317870" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226317870"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">Novela</title> <date when="1908">1908</date>, <publisher>Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="134475130X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=134475130X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">novela</title> <date when="1908">1908</date>, <publisher>Sempere</publisher> <pubPlace>Valencia;Madrid</pubPlace> 		<idno type="ppn" n="468607412" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468607412"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">novela</title> <date when="1908">1908</date>, <publisher>Ed. Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="226317870" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226317870"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1910">1910</date>, <publisher>Süddeutsche Monatshefte</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="1335930280" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1335930280"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title>: 	<title type="sub">Roman</title> <date when="1910">1910</date>, <publisher>Süddeutsche Monatshefte</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="465477828" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465477828"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La corrida</title> <date when="1910">1910</date>, <publisher>George G. Harrap &amp; Company;David McKay Company [u.a.]</publisher> <pubPlace>Londres;Philadelphia</pubPlace> 		<idno type="ppn" n="464765293" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464765293"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">novela</title> <date when="1910">1910</date>, <publisher>F. Sempere y Compañía</publisher> <pubPlace>Valencia;Madrid</pubPlace> 		<idno type="ppn" n="46470961X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46470961X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Arena</title>: 	<title type="sub">Roman von [Vicente] Blasco Ibañez. (Autoris. Übers. von Julio Broutà)</title> <date when="1910">1910</date>, <publisher>Südd. Monatsh.</publisher> <pubPlace>Mchn.</pubPlace> 		<idno type="ppn" n="44565824X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44565824X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">(novela)</title> <date when="1916">1916</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="35095013X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=35095013X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Arènes sanglantes</title>: 	<title type="sub">Blasco Ibáñez, V[icente] ; Roman trad. par G. Hérelle</title> <date when="1917">1917</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="445658312" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658312"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1334406359" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1334406359"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464330467" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464330467"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="22631796X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=22631796X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="195619897" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=195619897"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die blutige Arena</title>: 	<title type="sub">Roman</title> <date when="1920">1920</date>, <publisher>Europ. Phönix-Verl.</publisher> <pubPlace>Leipzig;Berlin;Wien</pubPlace> 		<idno type="ppn" n="1140891073" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1140891073"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die blutige Arena</title>: 	<title type="sub">Roman</title> <date when="1924">1924</date>, <publisher>Europ. Phönix-Verl.</publisher> <pubPlace>Leipzig [u.a.]</pubPlace> 		<idno type="ppn" n="1400801982" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400801982"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">(novela)</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1394941544" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1394941544"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">(novela)</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464709547" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464709547"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Doña Sol</title>: 	<title type="sub">das spanische Mädchen ; Roman</title> <date when="1925">1925</date>, <publisher>Renaissance-Verl.</publisher> <pubPlace>Berlin;Wien;Leipzig</pubPlace> 		<idno type="ppn" n="464764467" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464764467"/> </bibl>
+						<bibl type="further-edition"><title type="main">Petit traité descriptif des courses de taureaux d'après 'Arènes sanglantes'</title>: 	<title type="sub">Blasco Ibañez, V(icente) ; Trad. de l'espagnol par G[eorges] Hérelle. Illustr. de J. P. Tillac</title> <date when="1925">1925</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="445658320" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658320"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title>: 	<title type="sub">Roman</title> <date when="1927">1927</date>, <publisher>Füssli</publisher> <pubPlace>Zürich;Leipzig</pubPlace> 		<idno type="ppn" n="1136757643" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1136757643"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">zarzuela en un acto, dividido en cuatro cuadros, en prosa : adaptación escénica de la novela de V. Blasco Ibáñez</title> <date when="1927">1927</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1018164324" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1018164324"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title>: 	<title type="sub">Roman</title> <date when="1927">1927</date>, <publisher>Volksverband der Bücherfreunde, Wegweiser-Verl.</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="464643376" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464643376"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title>: 	<title type="sub">Roman</title> <date when="1927">1927</date>, <publisher>Orell Füssli</publisher> <pubPlace>Zürich;Leipzig</pubPlace> 		<idno type="ppn" n="464319978" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464319978"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">novela</title> <date when="1928">1928</date>, <publisher>Biblioteca "Las grandes Obras"</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="46435871X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46435871X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Arena</title>: 	<title type="sub">Roman. Übers. v. Otto Albrecht van Bebber</title> <date when="1929">1929</date>, <publisher>Wegweiser-Verl.</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="445658258" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658258"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1930">1930</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="1385225521" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1385225521"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1930">1930</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="464676509" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464676509"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die blutige Arena</title>: 	<title type="sub">[torero-]Roman</title> <date when="1930">1930</date>, <publisher>Europäischer Phönix-Verl.</publisher> <pubPlace>Leipzig;Berlin;Wien</pubPlace> 		<idno type="ppn" n="464251729" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464251729"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Arena</title>: 	<title type="sub">Blasco-Ibañez, Vicente ; Übertr. v. Otto Albrecht van Bebber</title> <date when="1930">1930</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="445658266" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658266"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1930">1930</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="021054649" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=021054649"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1932">1932</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="1155928393" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1155928393"/> </bibl>
+						<bibl type="further-edition"><title type="main">Blood and sand</title> <date when="1940">1940</date>, <publisher>Nicholson [and] Watson</publisher> <pubPlace>[London]</pubPlace> 		<idno type="ppn" n="133536408" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133536408"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Blood and sand</title> <date when="1941">1941</date>, <publisher/> <pubPlace>[S.l.]</pubPlace> 		<idno type="ppn" n="1104348861" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1104348861"/> </bibl>
+						<bibl type="further-edition" xml:lang="por"><title type="main">Touros de morte</title> <date when="1950">1950</date>, <publisher>Bertrand</publisher> <pubPlace>Amadora</pubPlace> 		<idno type="ppn" n="1130302547" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1130302547"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Blutige Arena</title>: 	<title type="sub">Roman</title> <date when="1951">1951</date>, <publisher>Hansa-Verl. Toth</publisher> <pubPlace>Hamburg</pubPlace> 		<idno type="ppn" n="1610171462" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1610171462"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1951">1951</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="1116181509" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116181509"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Blutige Arena</title> <date when="1951">1951</date>, <publisher>Hansa Verl. Josef Toth</publisher> <pubPlace>Hamburg</pubPlace> 		<idno type="ppn" n="464936039" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464936039"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Arena</title>: 	<title type="sub">(Aus d. Span. von Otto Albrecht van Bebber)</title> <date when="1951">1951</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="445658282" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658282"/> </bibl>
+						<bibl type="further-edition"><title type="main">Blutige Arena</title>: 	<title type="sub">[Vicente] Blasco Ibañez ; Roman</title> <date when="1951">1951</date>, <publisher>Toth</publisher> <pubPlace>Hamburg</pubPlace> 		<idno type="ppn" n="445658274" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658274"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1951">1951</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="175481326" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=175481326"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1952">1952</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="1116181622" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116181622"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Arena</title>: 	<title type="sub">(Aus d. Span. von Otto Albrecht van Bebber)</title> <date when="1952">1952</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="445658290" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658290"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Arena</title>: 	<title type="sub">Blasco Ibañez, Vicente ; (Aus d. Span. v. Otto Albrecht van Bebber)</title> <date when="1953">1953</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="445658304" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658304"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1962">1962</date>, <publisher>Verl. Volk und Welt</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="464640083" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464640083"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1962">1962</date>, <publisher>Verl. Volk u. Welt</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="178620378" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=178620378"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="1964">1964</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1182706428" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1182706428"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Arènes sanglantes</title> <date when="1964">1964</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="1177461846" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177461846"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente. Sangre y arena. Los muertos mandan</title> <date when="1966">1966</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520994663" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520994663"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente. Sangre y arena. Los muertos mandan</title> <date when="1967">1967</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="52120299X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=52120299X"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1971">1971</date>, <publisher>List</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="1620140403" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1620140403"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1971">1971</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="1605361690" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1605361690"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1971">1971</date>, <publisher>List</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="466054408" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466054408"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Arena</title> <date when="1971">1971</date>, <publisher>List</publisher> <pubPlace>Leipzig</pubPlace> 		<idno type="ppn" n="053278321" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=053278321"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Arènes sanglantes</title>: 	<title type="sub">Roman</title> <date when="1973">1973</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="1130304302" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1130304302"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente. Sangre y arena [u.a.]</title> <date when="1976">1976</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1136699007" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1136699007"/> 		<idno type="isbn" n="840300009X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente</title>: 	<title type="sub">Sangre y arena; los muertos mandan</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1423350065" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1423350065"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente, Sangre y arena, Los muertos mandan, Luna benamor, Los cuatro jinetes del apocalipsis, Mare nostrum, Los enemigos de la mujer, El militarismo mejicano, El prestamo de la difunta y otros cuentos, El paraiso de las mujeres</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621457" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621457"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente. Sangre y arena. Los muertos mandan ... - 8. ed., 5. reimpr. - 1978</title> <date when="1978">1978</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="037647296" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=037647296"/> 		<idno type="isbn" n="840300009X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Oriente. Sangre y arena [u.a.]</title> <date when="1987">1987</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1102670731" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1102670731"/> 		<idno type="isbn" n="840300009X"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Blutige Arena</title>: 	<title type="sub">Roman</title> <date when="1988">1988</date>, <publisher>Rowohlt</publisher> <pubPlace>Reinbek bei Hamburg</pubPlace> 		<idno type="ppn" n="157805042" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=157805042"/> 		<idno type="isbn" n="3499400413"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">edición ilustrada con cincuenta fotografías de época</title> <date when="1990">1990</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="161800249X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=161800249X"/> 		<idno type="isbn" n="8423954331"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="1990">1990</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="042417287" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=042417287"/> 		<idno type="isbn" n="8423954331"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="1991">1991</date>, <publisher>Santillana [u.a.];Hueber</publisher> <pubPlace>Madrid [u.a.];Ismaning</pubPlace> 		<idno type="ppn" n="219454264" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=219454264"/> 		<idno type="isbn" n="8429434399;3190041210"/></bibl>
+						<bibl type="further-edition"><title type="main">Sangre y arena</title> <date when="1991">1991</date>, <publisher>Plaza &amp; Janés</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="083320717" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083320717"/> 		<idno type="isbn" n="8401498082"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="1996">1996</date>, <publisher>Santillana [u.a.];Hueber</publisher> <pubPlace>Madrid [u.a.];Ismaning</pubPlace> 		<idno type="ppn" n="250639440" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=250639440"/> 		<idno type="isbn" n="8429449337;3190141215"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1610010752" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1610010752"/> 		<idno type="isbn" n="8420633488"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="311829724" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=311829724"/> 		<idno type="isbn" n="8420633488"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="2001">2001</date>, <publisher>Santillana [u.a.];Hueber</publisher> <pubPlace>Madrid [u.a.];Ismaning</pubPlace> 		<idno type="ppn" n="360933688" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=360933688"/> 		<idno type="isbn" n="8429449337;3190141215"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Blood and sand</title> <date when="2002">2002</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1376956837" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376956837"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title> <date when="2009">2009</date>, <publisher>Español Santillana Univ. de Salamanca [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="613201833" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=613201833"/> 		<idno type="isbn" n="9788497131100;9783190241217"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479518379" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479518379"/> 		<idno type="isbn" n="9788496452985"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega. La horda. La maja desnuda. Sangre y arena</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="647447312" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=647447312"/> 		<idno type="isbn" n="9788496452541"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y Arena</title> <date when="2014">2014</date>, <publisher>Linkgua Ediciones,</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1758796723" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1758796723"/> 		<idno type="isbn" n="9788499534497"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sangre y arena</title>: 	<title type="sub">nivel A2</title> <date when="2015">2015</date>, <publisher>Diesterweg;edelsa</publisher> <pubPlace>Braunschweig;Madrid</pubPlace> 		<idno type="ppn" n="857265377" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=857265377"/> 		<idno type="isbn" n="3425666851;9788490817087;9783425666853"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +249,14 @@
 				<p>Inspirada parcialmente en la vida del torero sevillano El Espartero, muerto por una cogida en la plaza de toros de Madrid en 1894, Blasco Ibáñez narra la vida de Juan Gallardo, torero de España, al que la vida parece haberle sonreído. Aquel chico pobre de Sevilla que se escapaba para torear en las ferias, se había abierto camino como valiente novillero. Después triunfó como matador, despertando el entusiasmo del público. Ahora lo tiene todo: fama, dinero, tierras, mujeres a sus pies y una esposa enamorada y comprensiva. Pero conoce a Doña Sol que se convierte en su amante y todo cambia.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -190,7 +290,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela taurina</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela taurina</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.subtitle.source" resp="bne">novela, novela cinematográfica</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
 					<term type="text.genre.supergenre">narrative</term>
@@ -221,6 +321,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -228,7 +329,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0260_chap1">
-				<head>I</head>
+				<head xml:id="ne0260_head_000">I</head>
 				<p>Como en todos los días de corrida, Juan Gallardo almorzó temprano. Un pedazo de carne asada fue su único plato. Vino, ni probarlo: la botella permaneció intacta ante él. Había que conservarse sereno. Bebió dos tazas de café negro y espeso, y encendió un cigarro enorme, quedando con los codos en la mesa y la mandíbula apoyada en las manos, mirando con ojos soñolientos a los huéspedes que poco a poco ocupaban el comedor.</p>
 				<p>Hacía algunos años, desde que le dieron «la alternativa» en la Plaza de Toros de Madrid, que venía a alojarse en el mismo hotel de la calle de Alcalá, donde los dueños le trataban como si fuese de la familia, y mozos de comedor, porteros, pinches de cocina y viejas camareras le adoraban como una gloria del establecimiento. Allí también había permanecido muchos días—envuelto en trapos, en un ambiente denso cargado de olor de yodoformo y humo de cigarros—a consecuencia de dos cogidas; pero este mal recuerdo no le impresionaba. En sus supersticiones de meridional sometido a continuos peligros, pensaba que este hotel era «de buena sombra» y nada malo le ocurriría en él. Percances del oficio; rasgones en el traje o en la carne; pero nada de caer para siempre, como habían caído otros camaradas, cuyo recuerdo turbaba sus mejores horas.</p>
 				<p>Gustaba en los días de corrida, después del temprano almuerzo, de quedarse en el comedor contemplando el movimiento de viajeros: gentes extranjeras o de lejanas provincias, rostros indiferentes que pasaban junto a él sin mirarle y luego volvíanse curiosos al saber por los criados que aquel buen mozo de cara afeitada y ojos negros, vestido como un señorito, era Juan Gallardo, al que todos llamaban familiarmente el <seg rend="italics">Gallardo</seg>, famoso matador de toros. En este ambiente de curiosidad distraía la penosa espera hasta la hora de ir a la plaza. ¡Qué tiempo tan largo! Estas horas de incertidumbre, en las que vagos temores parecían emerger del fondo de su ánimo, haciéndole dudar de sí mismo, eran las más amargas de la profesión. No quería salir a la calle, pensando en las fatigas de la corrida y en la precisión de mantenerse descansado y ágil; no podía entretenerse en la mesa, por la necesidad de comer pronto y poco para llegar a la plaza sin las pesadeces de la digestión.</p>
@@ -544,7 +645,7 @@
 				<p>—No; quiero que seas tú. Yo esperaré... Debes poné otro telegrama. Ya sabes pa quién es: pa aquella señora, pa doña Zol. También «Sin noveá».</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0260_chap2">
-				<head>II</head>
+				<head xml:id="ne0260_head_001">II</head>
 				<p>Cuando a la señora Angustias se le murió su esposo, el señor Juan Gallardo, acreditado remendón establecido en un portal del barrio de la Feria, lloró con el desconsuelo propio del caso; pero al mismo tiempo, en el fondo de su ánimo latía la satisfacción del que reposa tras larga marcha, librándose de un peso abrumador.</p>
 				<p>—¡Probesito de mi arma! Dios lo tenga en su gloria. ¡Tan güeno!... ¡Tan trabajaor!</p>
 				<p>En veinte años de vida común no la había dado otros disgustos que los que sufrían las demás mujeres del barrio. De las tres pesetas que unos días con otros venía a sacar de su trabajo, entregaba una a la señora Angustias para el sostén de la casa y la familia, destinando las otras dos al entretenimiento de su persona y gastos de representación. Había que corresponder a las «finezas» de los amigos cuando convidan a unas cañas; y el vino andaluz, por lo mismo que es la gloria de Dios, cuesta caro. También debía ir a los toros inevitablemente, porque un hombre que no bebe ni asiste a las corridas... ¿para qué está en el mundo?</p>
@@ -749,7 +850,7 @@
 				<p>Cuando Gallardo fue con su esposa y su madre a tomar posesión del cortijo, les enseñó el pajar en que había dormido con sus compañeros de miseria errante, la pieza en que había comido con el amo y la placita donde estoqueó un becerro, ganando por primera vez el derecho a viajar en tren sin tener que esconderse bajo los asientos.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0260_chap3">
-				<head>III</head>
+				<head xml:id="ne0260_head_002">III</head>
 				<p>En las noches de invierno, cuando Gallardo no estaba en <seg rend="italics">La Rinconada</seg>, reuníanse una tertulia de amigos en el comedor de su casa luego de cenar.</p>
 				<p>Llegaban de los primeros el talabartero y su mujer, que tenían siempre dos de sus hijos en casa del espada. Carmen, como si quisiera olvidar su esterilidad y la molestase el silencio de la gran casa, retenía junto a ella a los hijos menores de su cuñada. Estos, por cariño espontáneo y por indicaciones de sus padres, acariciaban a todas horas con besos y arrullos gatunos a la hermosa tía y al tío generoso y popular.</p>
 				<p>Encarnación, tan gruesa como su madre, con el vientre flácido por la incesante procreación y la boca un poco bigotuda al entrar en años, sonreía servilmente a su cuñada, lamentando las molestias que la daban los niños.</p>
@@ -1031,7 +1132,7 @@
 				<p>Y no dijo más.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0260_chap4">
-				<head>IV</head>
+				<head xml:id="ne0260_head_003">IV</head>
 				<p>Una gran satisfacción para su vanidad vino a unirse a los numerosos motivos que hacían que Gallardo sintiérase orgulloso de su persona.</p>
 				<p>Cuando hablaba con el marqués de Moraima contemplábalo con un cariño casi filial. Aquel señor vestido como un hombre del campo, rudo centauro de zajones y fuerte garrocha, era un ilustre personaje que podía cubrirse el pecho de bandas y cruces y vestir en el palacio de los reyes una casaca llena de bordados con una llave de oro cosida a un faldón. Sus más remotos ascendientes habían llegado a Sevilla con el monarca que expulsó a los moros, recibiendo como premio de sus hazañas inmensos territorios quitados al enemigo, restos de los cuales eran las vastas llanuras en las que pacían actualmente los toros del marqués. Sus abuelos más próximos habían sido amigos y consejeros de los monarcas, gastando en el fausto de la corte una gran porción de su patrimonio. Y este gran señor bondadoso y franco, que guardaba en la llaneza de su vida campesina la distinción de su ilustre ascendencia, era para Gallardo algo así como un pariente próximo.</p>
 				<p>El hijo del remendón enorgullecíase lo mismo que si hubiese entrado a formar parte de la noble familia. El marqués de Moraima era su tío; y aunque no pudiera confesarlo públicamente ni el parentesco fuese legítimo, consolábase pensando en el dominio que ejercía él sobre una hembra de la familia, gracias a unos amoríos que parecían reírse de todas las leyes y prejuicios de raza. Primos suyos eran también, y parientes en grado más o menos cercano, todos aquellos señoritos que antes le acogían con la familiaridad un tanto desdeñosa con que los aficionados de rango hablan a los toreros, y a los que ahora comenzaba él a tratar como si fuesen sus iguales.</p>
@@ -1274,7 +1375,7 @@
 				<p>¡La instrucción!... Una gran cosa, capaz de infundir respetabilidad hasta a los mayores pecados.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0260_chap5">
-				<head>V</head>
+				<head xml:id="ne0260_head_004">V</head>
 				<p>—Que te iga quién es, o que se lo yeven los demonios. ¡Mardita sea la suerte!... ¿Es que no podrá uno dormir?...</p>
 				<p>El <seg rend="italics">Nacional</seg> escuchó esta contestación al través de la puerta del cuarto de su maestro, y la transmitió a un peón del cortijo que aguardaba en la escalera.</p>
 				<p>—Que te iga quién es. Sin eso, el amo no se levanta.</p>
@@ -1486,7 +1587,7 @@
 				<p>Si no, se va con él.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0260_chap6">
-				<head>VI</head>
+				<head xml:id="ne0260_head_005">VI</head>
 				<p>—Paece mentira, Sebastián. Un hombre como tú, con mujer y con hijos, prestarte a esas alcahueterías... ¡Yo que te creía otro y tenía la confiansa en ti cuando salías de viaje con Juaniyo! ¡Yo que me queaba tranquila porque iba con una persona de carácter!... ¿Aónde están toas esas cosas de tus ideas y tu religión? ¿Es que eso lo manda la reunión de judíos que os juntáis en casa de don Joselito el maestro?</p>
 				<p>El <seg rend="italics">Nacional</seg>, asustado por la indignación de la madre de Gallardo y conmovido por las lágrimas de Carmen, que lloraba silenciosa, ocultando su cara tras un pañuelo, se defendía torpemente. Pero al escuchar las últimas palabras, se irguió con gravedad sacerdotal.</p>
 				<p>—Señá Angustias, no me toque usté las ideas y deje en paz si quiere a don Joselito, que na tié que ver en too esto. ¡Por vía e la paloma azul! Yo fui a <seg rend="italics">La Rinconá</seg> porque me lo mandó mi mataor. ¿Usté sabe lo que es una cuadrilla? Pues lo mismo que el ejérsito: disiplina y servilismo. El mataor manda, y hay que obedeser. Como que esto de los toros es de los tiempos de la Inquisisión, y no hay ofisio más reasionario.</p>
@@ -1721,7 +1822,7 @@
 				<p>Carmen creyó que acababa de casarse por segunda vez.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0260_chap7">
-				<head>VII</head>
+				<head xml:id="ne0260_head_006">VII</head>
 				<p>Al llegar Semana Santa, Gallardo dio una gran alegría a su madre.</p>
 				<p>En años anteriores salía el espada en la procesión de la parroquia de San Lorenzo, como devoto de Nuestro Padre Jesús del Gran Poder, vistiendo túnica negra de alta caperuza con una máscara que sólo dejaba visible los ojos.</p>
 				<p>Era la cofradía de los señores, y el torero, al verse camino de la fortuna, ingresó en ella, huyendo de las cofradías populares, en las que la devoción iba acompañada de embriaguez y escándalo.</p>
@@ -1944,7 +2045,7 @@
 				<p>Saltó un globo de vidrio en menudos fragmentos de la cuenca de un ojo, y en la frente de la bestia se abrió un agujero redondo y negro entre pelos chamuscados.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0260_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0260_head_007">VIII</head>
 				<p>En plena primavera la temperatura dio un salto atrás, con la extremada violencia del clima de Madrid, inconstante y loco.</p>
 				<p>Hacía frío. El cielo gris derramaba violentas lluvias, acompañadas algunas veces de copos de nieve. La gente, vestida ya con trajes ligeros, abría armarios y cofres para sacar capas y gabanes. La lluvia ennegrecía y deformaba los blancos sombreros primaverales.</p>
 				<p>Hacía dos semanas que no se daban funciones en la Plaza de Toros. La corrida del domingo aplazábase para un día de la semana en que hiciese buen tiempo. El empresario, los empleados de la plaza y los innumerables aficionados, a los que esta suspensión forzosa traía de mal humor, espiaban el firmamento con la ansiedad del labriego que teme por sus cosechas. Una clara en el cielo o la aparición de unas estrellas a media noche, cuando salían ellos de los cafés, les devolvían la alegría.</p>
@@ -2096,7 +2197,7 @@
 				<p>¡Maldita sea! El era muy hombre... Se acabó. No volvería a verla.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0260_chap9">
-				<head>IX</head>
+				<head xml:id="ne0260_head_008">IX</head>
 				<p>En aquellos días recibió Gallardo varias cartas de don José y de Carmen.</p>
 				<p>El apoderado pretendía infundir ánimos a su matador, aconsejándole, como siempre, que se fuese recto al toro... «¡Zas! estocada y te lo metes en el bolsillo»; pero al través de su entusiasmo notábase cierto desaliento, como si empezara a cuartearse su fe y dudase ya de si Gallardo era «el primer hombre del mundo».</p>
 				<p>Tenía noticias del descontento y la hostilidad con que le acogían los públicos. La última corrida en Madrid había acabado de descorazonar a don José. No; Gallardo no era como otros espadas que siguen adelante al través de las silbas del público, dándose por satisfechos con ganar dinero. Su matador tenía vergüenza torera, y sólo podía mostrarse en el redondel para ser acogido con grandes entusiasmos. Quedar medianamente equivalía a una derrota. La gente estaba habituada a admirarle por su valor temerario, y todo lo que no fuese perseverar en tales audacias representaba un fracaso.</p>
@@ -2279,7 +2380,7 @@
 				<p>Una piedra dio contra una rueda del coche. La pillería vociferaba junto al estribo; pero llegaron dos guardias a caballo y deshicieron la manifestación, escoltando después por todo lo alto de la calle de Alcalá al famoso Juan Gallardo... «el primer hombre del mundo».</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0260_chap10">
-				<head>X</head>
+				<head xml:id="ne0260_head_009">X</head>
 				<p>Acababan las cuadrillas de salir al redondel, cuando sonaron fuertes golpes en la puerta de Caballerizas.</p>
 				<p>Un empleado de la plaza se acercó a ella gritando con mal humor. No se entraba por allí; debían buscar otra puerta. Pero una voz le contestó desde fuera con insistencia, y abrió.</p>
 				<p>Entraron un hombre y una mujer: él con sombrero blanco cordobés; ella vestida de negro y con mantilla.</p>

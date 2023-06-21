@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El obispo leproso</title>
-				<title type="sub">novela</title>
+				
 				<title type="short">ObispoLeproso</title>
-				<title type="idno">
-					<idno type="bne">XX2092643</idno>
-					<idno type="viaf">313903429</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2159</measure>
@@ -141,22 +131,79 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0061</idno>
+						<idno type="cligs">ne0061</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/el-obispo-leproso-novela/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1947">1947</date></bibl>
-				<bibl type="edition-first"><date when="1926">1926</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El obispo leproso</title>
+					<title type="sub">novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2092643.html">XX2092643</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/313903429/">313903429</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4335413-0">4335413-0</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/el-obispo-leproso-novela/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1947">1947</date></bibl>
+					<bibl type="edition-first"><date when="1926">1926</date><idno source="k10plus" type="ppn" n="269447318" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269447318"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de nuestra Padre San Daniel</title> <date when="1926">1926</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="269447318" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269447318"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela; segunda parte de Nuestro padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1569978980" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1569978980"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela; segunda parte de nuestro padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1402363818" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1402363818"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela; segunda parte de Nuestro padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1372773185" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1372773185"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="663655633" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=663655633"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela. Segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520600134" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520600134"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464814278" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464814278"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464814146" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464814146"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">segunda parte de Nuestro Padre San Daniel</title> <date when="1928">1928</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342696645" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342696645"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">novela ; segunda parte de "Nuestro Padre San Daniel"</title> <date when="1957">1957</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="521232198" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=521232198"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title>: 	<title type="sub">el obispo leproso</title> <date when="1969">1969</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465787126" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465787126"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Nuestro Padre San Daniel</title> <date when="1974">1974</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1177615789" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177615789"/> 		<idno type="isbn" n="8420612146"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">2. parte de Nuestro Padre San Daniel</title> <date when="1984">1984</date>, <publisher>Ed. de la Torre</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1645831434" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1645831434"/> 		<idno type="isbn" n="8485866495"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">segunda parte de Nuestro Padre San Daniel ; ed. crítica</title> <date when="1984">1984</date>, <publisher>Ed. de la Torre</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="469027533" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469027533"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title>: 	<title type="sub">segunda parte de nuestro Padre San Daniel</title> <date when="1984">1984</date>, <publisher>Edic. de la Torre</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="357192451" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=357192451"/> 		<idno type="isbn" n="8485866495"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title> <date when="1989">1989</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="018534767" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=018534767"/> 		<idno type="isbn" n="843760849X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title> <date when="1994">1994</date>, <publisher>Inst. de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1112198679" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1112198679"/> 		<idno type="isbn" n="8477840814"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Gabriel Miró, Nuestro Padre San Daniel and El obispo leproso</title> <date when="1994">1994</date>, <publisher>Grant &amp; Cutler in association with Tamesis</publisher> <pubPlace>London</pubPlace> 		<idno type="ppn" n="153360941" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=153360941"/> 		<idno type="isbn" n="0729303543;8459933652"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title> <date when="1994">1994</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="043902685" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043902685"/> 		<idno type="isbn" n="8477840814"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title> <date when="1999">1999</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="338652124" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=338652124"/> 		<idno type="isbn" n="843760849X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El ángel, el molino, el caracol del faro. Nuestro Padre San Daniel. El obispo leproso. Libro de Sigüenza. Años y leguas</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="587995521" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=587995521"/> 		<idno type="isbn" n="9788496452565"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The leper bishop</title> <date when="2008">2008</date>, <publisher>Oxbow Books</publisher> <pubPlace>Oxford</pubPlace> 		<idno type="ppn" n="57557450X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=57557450X"/> 		<idno type="isbn" n="0856687979;0856687928;9780856687976;9780856687921"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El obispo leproso</title> <date when="2010">2010</date>, <publisher>Catedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="837921880" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=837921880"/> 		<idno type="isbn" n="9788437608495"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
 				<p>La historia cuenta las relaciones de los habitantes de Oleza, donde la figura del obispo enfermo de la piel y la escuela de la compañía de Jesús tienen un gran peso sobre el pueblo. La historia describe las relaciones de un numeroso grupo de personas del pueblo, muchos de ellos trabajadores de la Iglesia Católica (Magín, Jeromillo) aunque también aparecen condes, profesores, médicos, etcétera. Las figuras principales son Pablo (hijo de Don Álvaro y Paulina), su crecimiento y su relación con María Fulgencia.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +216,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">1914</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.group">novelas de la segunda etapa</term>
 					<term type="authorText.relation" cert="low">none</term>
 					<term type="authorText.subgroup">las novelas de Oleza</term>
@@ -191,7 +238,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">bildungsroman</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">bildungsroman</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela</term>
@@ -216,7 +263,7 @@
 					<term type="text.setting.settlement.type" cert="low" resp="#jct">rural</term>
 					<term type="text.setting.territory">Valencia</term>
 					<term type="text.time.period">contemporary</term>
-					<term type="text.time.span"  cert="low" resp="#jct">1825</term>
+					<term type="text.time.span" cert="low" resp="#jct">1825</term>
 					<term type="text.litHist.literaryQuality" resp="MdLE">medium</term>
 					<term type="text.litHist.audience" resp="MdLE">elite</term>
 					<term type="text.litHist.brow">high</term>
@@ -232,6 +279,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-03-06" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -242,9 +290,9 @@
 		<body>
 
 			<div type="part">
-				<head>- I - Palacio y colegio </head>
+				<head xml:id="ne0061_head_000">- I - Palacio y colegio </head>
 				<div n="1" type="chapter" xml:id="ne0061_chap1">
-					<head>I. Pablo</head>
+					<head xml:id="ne0061_head_001">I. Pablo</head>
 					<p>Se dejó entornada la puerta de la corraliza.</p>
 					<p>¡Acababa de escaparse otra vez! Y corrió callejones de sol de siesta. Se juntó con otros chicos para quebrar y amasar obra tierna de las alfarerías de Nuestra Señora, y en la costera de San Ginés se apedrearon con los críos pringosos del arrabal.</p>
 					<p>Pablo era el más menudo de todos, y al huir de la brega buscaba el refugio del huerto de San Bartolomé, huerto fresco, bien medrado desde que don Magín gobernaba la parroquia.</p>
@@ -303,7 +351,7 @@
 					<p>Fueron a la ventana; Pablo brincó como un cordero; y gritaba y se reía escondiéndose detrás de Su Ilustrísima.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0061_chap2">
-					<head>II. Consejo de familia</head>
+					<head xml:id="ne0061_head_002">II. Consejo de familia</head>
 					<p>Todavía de pañales el hijo, cerraron los condes de Lóriz su casa, trasladándose a Madrid. Ya podían abrirse confiadamente las celosías de don Álvaro. Su calle se internaba de nuevo en un silencio de pureza; verdadero recinto suyo. Y en abril, casi todos los años en abril, volvía esa gente con sus criados señoriles y el ama del condesito, una pasiega grande, magnífica de ropas de colores de frutas y de collares, de dijes, de abalorios y dingolondangos. Parecía un ídolo rural. Elvira la miraba desde su persiana con rencor y con asco. De seguro que en aquellos pechos, tantas veces desnudos, y en aquellos ojos dulces de becerra se escondía la deshonestidad de una mala mujer. Más tarde, la nodriza se trocó en ama seca, y a su lado principió a caminar la cigüeña de un aya, cansada de idiomas y de virtudes antiguas.</p>
 					<p>Elvira la aborreció. ¡Qué perversidades no habría detrás de sus impertinentes laicos!</p>
 					<p>Don Álvaro y sus amigos también la miraban desde la reja del escritorio. En la pared, donde colgaba un trofeo y un retrato del «señor» desterrado, se estampaba el escandaloso resol de una vidriera de los Lóriz. De allí salía, como una fuente musical, la risa de la condesa.</p>
@@ -348,7 +396,7 @@
 					<p>Desde entonces, todas las noches, antes de la cena, le presentaba el arqueo de su libertad; y cada noche Pablo se acostaba aborreciéndola más...</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0061_chap3">
-					<head>III. «Jesús»</head>
+					<head xml:id="ne0061_head_003">III. «Jesús»</head>
 					<p>Espuch y Loriga, el curioso cronista de Oleza, tío de don Amancio, dejó inéditos sus <seg rend="italic">Apuntes históricos de la Fundación de los Estudios de Jesús</seg>. Yo he leído casi todo el manuscrito, y he visitado muchas veces los edificios, cantera insigne de sillares caleños fajeados de impostas, con tres pórticos: el del templo, en cuya hornacina está el Señor de caminante con su cayada; el del Internado, de columnas toscanas y recantones, donde se sientan los mendigos que piden a las familias de los colegiales, y el de la Lección, con pilastras y archivoltas de acantos, por el que pasan y salen los externos. Tiene el colegio tres claustros: el de Entrada, con hortal; el de las Cátedras, con aljibe en medio; el de los Padres, de arcos escarzanos y medallones cogidos por ángeles. Tiene huerta grande y olorosa de naranjos, monte de viña moscatel y gruta de Lourdes. Hay escalera de honor de barandal y bolas de bronce, refectorios y salas de recreación de alfarjes magníficos que resaltan en los muros blancos; capillas privadas, crujías profundas, biblioteca de nichos de yeso, y en un ángulo, una celda, cavada en cripta, prisión de frailes y novicios. De la viga cuelga el cepo, y en una losa quedan estos versos de un condenado:</p>
 					<lg type="poem">
 						<l part="I">«Todo es uno para mí, </l>
@@ -412,7 +460,7 @@
 					<p>Detrás, el señor Galindo y Egea, el hijo de don Álvaro, descendió dulce y lento como una lámpara de júbilo.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0061_chap4">
-					<head>IV. Grifol y Su Ilustrísima</head>
+					<head xml:id="ne0061_head_004">IV. Grifol y Su Ilustrísima</head>
 					<p>Venía don Vicente Grifol de la Huerta de los Calzados, antiguo granero episcopal; y en medio de la calle de la Verónica -querencia de las sastrerías eclesiásticas, de las tiendas de ornamentos, de los obradores de cirios y chocolates- le alcanzó la voz campechana de don Magín.</p>
 					<p>Aguardose el médico. El capellán le puso su brazo robusto en los hombros viejecitos, y se lo fue llevando a Palacio.</p>
 					<p>Camino de Palacio, decía don Vicente:</p>
@@ -461,10 +509,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- II - María Fulgencia </head>
+				<head xml:id="ne0061_head_005">- II - María Fulgencia </head>
 
 				<div n="5" type="chapter" xml:id="ne0061_chap5">
-					<head>I. El señor deán y María Fulgencia</head>
+					<head xml:id="ne0061_head_006">I. El señor deán y María Fulgencia</head>
 					<p>¡Para buena salud y buen cuajo, el señor deán! -decían las gentes; y él no lo negaba.</p>
 					<p>Ni su memoria, ni su entendimiento, ni su voluntad, ni su corpulencia perdieron nunca su mensura. Ni un latido impetuoso, ni una borrasca en su frente, ni un paso más rápido de lo suyo, ni una costumbre nueva.</p>
 					<p>Presentósele en su casa un sobrino aventurero, capitán de tropas de Manila, lleno de ruindades y deudas. Comprendió el deán que ni su amor ni su consejo podrían enmendarle. Las cosas y los nombres eran según eran. Aceptada la premisa, no era ya menester el ahínco de los remedios. Es verdad que por la gracia de algunos santos y mujeres se alcanzaban conversiones difíciles; pero él no pecaría creyéndose santo. Entre las mujeres de dulces prendas, con casa de crédito y bienestar, ninguna en el pueblo como Corazón Motos, que heredaría un obrador de chocolates de seis muelas. Y el bigardo del sobrino dejó al canónigo por seguir a doña Corazón.</p>
@@ -501,7 +549,7 @@
 					<p>Un jueves dejó de ir a la Visitación. Estaba en Murcia, porque don Trinitario había muerto definitivamente. Fue humilde su entierro; ya no le velaron sus huertanos y sobranceros. La herencia se redujo a la casona con escudo en el dintel y a dos haciendas empeñadas, invadidas de hierba borde. La viuda se lo confió todo al señor deán. Le rodearon los acreedores, y él les escuchó y leyó sus documentos de letra procesal sin entenderlos, recordando con ternura a su bienhechor y diciéndose que no se debiera morir más de una vez en este mundo. Y como la viuda necesitaba compañía, le trajo a María Fulgencia, y así pudo internarse en las delicias de sus membranas caligráficas. Cuatro meses de felicidad: un cuadro sinóptico de obispos y pastorales de la silla de Oleza, a tres tintas.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0061_chap6">
-					<head>II. María Fulgencia y los suyos</head>
+					<head xml:id="ne0061_head_007">II. María Fulgencia y los suyos</head>
 					<p>María Fulgencia quedó huérfana también de madre. Alta, delgada, pálida; la boca muy encendida; las trenzas, muy largas, muy negras. Sola en el viejo casón, con criadas antiguas.</p>
 					<p>Desde su diócesis venía el señor deán a decirle palabras prudentísimas, y ella las recibía resplandeciéndole sus ojos de niña y de mujer, que siempre miraban a lo lejos.</p>
 					<p>Apareció tío Eusebio con la esposa casi nueva, una dama bordelesa, que hablaba un español delicioso y breve. Era toda de elegancias, en su vocecita, en sus mohínes, en sus miradas y actitudes, como si su cuerpo, sus pensamientos, su habla y su corazón fuesen también obra de su modisto. Toda moda la consulesa, y el cónsul también todo moda.</p>
@@ -564,7 +612,7 @@
 					<p>Y se marcharon.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0061_chap7">
-					<head>III. El Ángel</head>
+					<head xml:id="ne0061_head_008">III. El Ángel</head>
 					<p>El señor deán de Oleza recibió carta de un beneficiado de Murcia, muy sutil. Pero la sutilidad, la delgadez, el primor, era lo de menos. El señor deán abandonó las aristas y volutas del colofón de un códice. Las consultas, las crisis, los brincos de María Fulgencia le parecían siempre cosas pasadas, envejecidas. Ni siquiera había de meditar un consejo inédito. Le servían las mismas palabras, los mismos ademanes. Y he aquí que, de súbito, se topaba con lo inesperado: María Fulgencia quería comprar la imagen del Ángel de Salcillo, aunque le pidieran en precio su casa y sus campos, que comenzaban a mejorar y producir.</p>
 					<p>¡Inesperado! Y una sorpresa para el señor deán era el vuelco de toda su vida. Ni se acordó de poner la frente entre sus manos para cavilar, sino que alzaba los puños y los miraba desde su sillón sin conocerlos. ¡Un sobresalto tan grande como el de la resurrección de don Trinitario! ¡María Fulgencia era una Valcárcel!</p>
 					<p>Poco a poco el deán puso la lógica junto al desatino, el ungüento que adoba las inflamaciones.</p>
@@ -639,10 +687,10 @@
 
 			</div>
 			<div type="part">
-				<head>- III - Salas de Oleza </head>
+				<head xml:id="ne0061_head_009">- III - Salas de Oleza </head>
 
 				<div n="8" type="chapter" xml:id="ne0061_chap8">
-					<head>I. Vuelven los Lóriz</head>
+					<head xml:id="ne0061_head_010">I. Vuelven los Lóriz</head>
 					<p>El conde abrazó a don Magín con elegancia; la condesa le tomó infantilmente las manos entre sus manos. Lóriz semejaba más menudo. Todos los Lóriz, en la madurez -según los lienzos de la sala familiar-, se quedaban cenceños y mínimos. Y este descendiente ya parecía un antepasado suyo, con empaque de reverdecida juventud, esa juventud de las decadencias adobadas por el ayuda de cámara.</p>
 					<p>-¿Usted tenía ese lunar en el pómulo? ¡Pues ahora se lo veo!</p>
 					<p>-¡Ahora, don Magín, acaba usted de verle a mi marido los ocho años que han pasado encima de nosotros!</p>
@@ -720,7 +768,7 @@
 					<p>Oleza parecía sobrecogerse escuchando a lo lejos.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0061_chap9">
-					<head>II. Antorchas de pecado</head>
+					<head xml:id="ne0061_head_011">II. Antorchas de pecado</head>
 					<p>Llegó una multitud. Había catalanes, andaluces, extremeños, valencianos y «gabachos». Ingenieros y sobrestantes franceses, grandes y rubios. Listeros, capataces, furrieles. Un ejército de invasión, con sus carros y toldos; y, como a todos los ejércitos, le seguía una nube de galloferos, de mercaderes y abastecedores de sensualidades. De Andalucía y de Orán venían mozas galanas, como la <seg rend="italic">Argelina</seg> de tan curiosos afeites, olores y ringorrangos, que las pobres mujeres pecadoras del país se paraban y se volvían mirándola con ojos de mujeres honradas.</p>
 					<p>Cualquier bracero del ferrocarril comía y bebía con más rumbo que toda una familia hidalga. Algunas cosas, entre ellas los dulces monásticos, encarecieron un poco. Se instalaron figones y botillerías, con tablado para cante; y de noche volcaban en Oleza el vaho de los ajenjos y frituras, el trueno del fandango, la brama de los refocilos.</p>
 					<p>Oraciones, labor de aguja, tertulias recogidas se contenían por oír los huracanes de la abominación. Y en el silencio se desgarraba una risa de mujer. Las señoras, entre ellas las <seg rend="italic">Catalanas</seg>, que tuvieron tienda de tejidos, no se explicaban que esas infelices pudieran estar solas con tantos hombres.</p>
@@ -773,7 +821,7 @@
 					<p>Así lo oyeron y se inflamaron todos los socios; los socios y la señorita de Gandía y la señora de Monera, que, grifadas de honestidad, iban entonces muy de prisa, camino de casa de las <seg rend="italic">Catalanas</seg>.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0061_chap10">
-					<head>III. Las <seg rend="italic">Catalanas</seg></head>
+					<head xml:id="ne0061_head_012">III. Las <seg rend="italic">Catalanas</seg></head>
 					<p>Eran dos. Menorquinas -mahonesas- de nacimiento, y comerciantes de Barcelona. El padre trajo a Oleza su negocio de tejidos de la calle de Puerta Ferrisa. Murió del cólera, y se alejaron veloces los años encima del mercader. Casi nadie se acordaba de su gabán color de aceite, de su gorro de punto de estambre con una borla morada que le caía cansándole la sien. Se le olvidó de manera que las huérfanas semejaban no serlo, no haberlo sido nunca ni necesitar de madre: <seg rend="italic">prolem sine matre creatam</seg>; como si fuesen hijas de sí mismas, hechas de sí mismas. Según estaban, debieron de ser desde su principio y serían para siempre, aun después de muertas y sepultadas. No se las podía imaginar sino en su presente: altas, flacas y esquinadas; los ojos gruesos de un mirar compasivo, el rostro muy largo, los labios eclesiásticos, la espalda de quilla y, sobre todas las cosas, vírgenes. Sus lutos -todavía de retales de la tienda- nadie los creería de viudez ni de maternidad rota. Solteras. Estatura, filo y pudor de doncellez perdurable. Para ser vírgenes nacieron. Las dos hermanas se horrorizaban lo mismo del pecado de la sensualidad que nunca habían cometido, y casi tanto temían el de la calumnia, prefiriendo que fuesen verdaderas las culpas que se contaban en su presencia. Por eso, había de referirse todo menudamente, hasta quedar persuadidas de que el prójimo recibía su merecido nada más.</p>
 					<p>Luego de comer paseaban entre los cuatro limoneros y las dos palmeras de su huerto, el huerto del almacén de <seg rend="italic">Miseria</seg>; los árboles y las dos hermanas se reflejaban deformes en las bolas metálicas de jardín colgadas de los arcos de un cenador de geranios y pasiones. Se cansaban y tosían a la vez, y entraban a sentarse en las butacas de lienzo puestas junto a la reja de la sala. Les quedaba un poco de dejo catalán; se acordaban con regaño de la plaza del Pino, de la calle de Puerta Ferrisa, de la Canuda y de su único viaje a Madrid, en 1850, donde una de ellas pudo ser la enamorada del dueño de un comercio de ropas de la calle de Atocha, que después no resultó dueño. Suspiraban, alzándose el pañuelo que les bajaba por las mejillas. Lo traían de seda de pita dentro de casa, y para fuera, manto. Y a esperar. Todo limpio, todo guardado. Sabían lo que habrían de sentir, comer, rezar, vestir y pensar en fechas memorables. De modo que a esperar al lado de la vidriera; a esperar que alguien viniese y empujase las horas hasta la de las oraciones. Ese alguien era siempre la mujer del homeópata Monera, y Elvira. Oyéndolas, no tenían más remedio las <seg rend="italic">Catalanas</seg> que sobresaltarse. Pero la virtud de casada de la Monera y el furor de los ojos y de la lengua de la señorita Galindo, les curaban los escrúpulos. Sus amigas lo escarbaban y lo probaban todo, gracias a Dios. Y ya las dos hermanas podían respirar compadeciéndose de este mundo.</p>
 					<p>...Vinieron las de siempre. No pasaron juntas porque una celadora de la Adoración retuvo en el portal a la Monera. Elvira precipitose en la sala y, sin besar a las dos viejas señoras, les refirió ella sola la depravación de los ingenieros.</p>
@@ -835,7 +883,7 @@
 					<p>-¡Esos padres, esos padres, qué cuenta han de dar a Dios!</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0061_chap11">
-					<head>IV. Tertulia de doña Corazón</head>
+					<head xml:id="ne0061_head_013">IV. Tertulia de doña Corazón</head>
 					<p>La tienda de doña Corazón siempre tenía sueño y quietud de archivo, de archivo de sí misma. De tarde, dos potes de Manises goteaban rápidamente de sol. Después, todo parecía más interno y callado. En los vasares sudaban los tarros de astillas de canela, de libros y ovillos de cera, de estrellas viejecitas de anís, de gálbulos de ciprés y eucaliptos, de gomas de olor...</p>
 					<p>No latía el reloj de pesas, seco y embalsamado de silencio, con sus dos saetas plegadas entre las diez y las once, las dos juntas, sin medir ningún tiempo, como si nunca hubiesen podido caminar por el lendel de las horas. El calendario, liso, sin días, como una lápida de cartón de las fiestas desaparecidas. La estampa del Sagrado Corazón de Jesús se torcía casi descolgándose; y aunque el Señor tuviese entre los dedos su lis de llamas prometiendo «Reinaré», semejaba ofrecerlo y decirlo por divina costumbre, por infinita condescendencia con las casas de los hombres.</p>
 					<p>En el escritorio se volcaba un gato, y junto al cancel, una mujer enjuta, una viuda pobre, miraba quietecitamente el mismo rodal de hierba menuda de la calle de la Verónica, donde brincaban los gorriones. Anochecido se cerraba el portal; arriba, se hincaban unas pisadas de madera; todo crujía; y luego iba pasando un coloquio de mujeres.</p>
@@ -919,10 +967,10 @@
 			</div>
 			<div type="part">
 
-				<head>- IV - Clausura y siglo </head>
+				<head xml:id="ne0061_head_014">- IV - Clausura y siglo </head>
 
 				<div n="12" type="chapter" xml:id="ne0061_chap12">
-					<head>I. Conflictos</head>
+					<head xml:id="ne0061_head_015">I. Conflictos</head>
 					<p>Las dominicas de Santa Lucía, las clarisas de San Gregorio, las salesas de Nuestra Señora enviaban al señor obispo potes de ungüentos maravillosos y redomas de aceites y aguas de bendición para las llagas.</p>
 					<p>Juntos salían de Palacio los demandaderos, diciéndose el cansancio y mohína que se les esperaba en sus monasterios. Pero el más caviloso era siempre el de la Visitación. Había de resistir los filiales fervores de la comunidad por Su Ilustrísima, y singularmente de la madre y de sor María Fulgencia o la señorita Valcárcel. Nunca se saciaban de pedirle noticias. Querían saber si había visto al reverendo enfermo, o si pudo oír su voz y cómo la tenía; si le cuidaba en Palacio alguna religiosa de Oleza; quién le tomaba el recado; si supo algún alivio repentino; qué remedio tuvo más predilección, si el suyo, o los ofrecidos por las clarisas, o por las dominicas, o por las damas devotas; y, finalmente, cuando llegaba a la antecámara y decía: «De parte de la abadesa de la Visitación, y de toda la comunidad...». ¿Qué? Entraba, lo decía, ¿y qué?...</p>
 					<p>El donado movía resignadamente su esquilada cabeza de siervo, mirándose su gorra viejecita. No sabía nada. Entraba, lo decía, y nada. Un clérigo afilado les recogía a todos, de una vez, las pomadas, los bálsamos, los atadijos de hierbas y raíces. Se marchaba y volvía muy de prisa, repasando documentos, quitándose y poniéndose los anteojos, y de súbito se paraba:</p>
@@ -1033,7 +1081,7 @@
 					<p>La madre entornó los ojos, porque la urdimbre del velo visitandino no impedía que se viese el rojo breñal de aquella carne de varón. ¡Ay, don Jeromillo era tan velludo como Esaú! ¡Quién lo pensara!</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0061_chap13">
-					<head>II. Miércoles y jueves</head>
+					<head xml:id="ne0061_head_016">II. Miércoles y jueves</head>
 					<p>Miércoles Santo, dos Hermanitas de los Pobres, dos hormiguitas trajineras, con sus tocas cabezudas, le llevaron a Paulina la «tabla» de los turnos para la mesa petitoria de la catedral. Ella sonrió, aceptándolo todo. No era menester que la leyese. Nada más había que conciliar sus compromisos y devociones: en el oratorio de las clarisas, a las seis; en la parroquia de Nuestro Padre, a las siete, y la vela del Santísimo, de dos a tres, en la catedral. Pero las hermanas, dulces y tercas, porfiaban que sí que era menester; y Paulina leyó la hoja, y en seguida volviose como si buscase aprobación y la temiese. Las monjitas se miraban, y ella salió del comedor, y luego vino Elvira y don Álvaro, que traía entre sus dedos el escrito.</p>
 					<p>-Aquí dice: «Santa Iglesia Catedral: De cuatro a cinco, condesa de Lóriz, señora de Galindo y doña Purita Canci». Y yo digo: ¿por qué juntaron ustedes estos nombres?</p>
 					<p>-Tres habían de ser, señor don Álvaro, y estos tres nos parecen de los más principales de Oleza -lo pronunció la hermana joven con acento gascón y un fino parpadeo de inocencia y perplejidad.</p>
@@ -1118,9 +1166,9 @@
 					<p>Fuera, en el azul, rodaba de nuevo, áspera y vieja, la carraca de la catedral.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0061_chap14">
-					<head>III. Viernes Santo</head>
+					<head xml:id="ne0061_head_017">III. Viernes Santo</head>
 					<div type="section">
-						<head>Por la mañana</head>
+						<head xml:id="ne0061_head_018">Por la mañana</head>
 						<p>La primera brigada de «Jesús» se internó, atropellándose un poco, en el ancho zaguán de casa Lóriz. En la calle se quedó la bulla de vendedores, de huertanos, de arrabaleros, entre humos crudos de sartenes de buñuelos y olores cansados de taberna que pringaban el aire fino de la madrugada.</p>
 						<p>El mayordomo, con su levita negra, maciza, como un tronco de carbón, inclinose heráldicamente, besando la mano del padre prefecto.</p>
 						<p>La segunda y tercera brigada -de alumnos «medianos» y «pequeños»- veían la procesión del amanecer desde los ventanales y azoteas del Ayuntamiento. Y la primera, la de los «mayores», la de los más ávidos y fáciles para los peligros del mundo, había de pararse en las calles, fermentadas por un trajín de feria y de bureo, oyéndolo y presenciándolo todo en el viernes de luto tan sagrado.</p>
@@ -1200,7 +1248,7 @@
 						<p>Por fortuna para Oleza, la iglesia de «Jesús» y la parroquia de Nuestro Padre San Daniel mantenían las excelsitudes de las pompas sagradas.</p>
 					</div>
 					<div type="section">
-						<head>Por la tarde</head>
+						<head xml:id="ne0061_head_019">Por la tarde</head>
 						<p>Acabado el Ejercicio de las Siete Palabras, había recreo, en silencio, a la sombra tenue de los olmos y de los parrales retoñados. Los balones y los zapatos de los colegiales retumbaban desoladamente.</p>
 						<p>Pablo no quiso jugar. Los inspectores aceptaban, esa tarde, como místicas mortificaciones, los apartamientos, tan reprobados siempre como indicios de melancolías peligrosas. Pablo reanimaba en su memoria el retablo de la agonía del Señor: la iglesia del colegio transformada en Calvario; peñas rojas y plomizas con tojos y retamares; veredas esclarecidas por quinqués ocultos; fondo de firmamento de paño de funeral; las tres cruces gigantes; los dos ladrones retorcidos, desriñonándose convulsos, aplastados por las ligaduras, y el de la derecha inclinándose ya un poco a Jesús, que colgaba liso, blanco, velazqueño; y bajo el divino horizonte de sus manos clavadas, la Madre y el discípulo: María, con manto azul y toca blanca bullonada; Juan, con sayal color de vino y cíngulo negro, ladeaba su cabeza de adolescente hacia el mundo redimido. Ardían estopas en lámparas romanas de escayola, y sus llamas amarillas acostaban las sombras de los peñones de arpillera hasta el reclinatorio de Pablo.</p>
 						<p>Pablo se veía caminar de la mano de su madre por las afueras calientes de Jerusalén. Jerusalén, tostadita de sol como su Oleza. Un aire de follajes de huertos le ceñía como un vestido oloroso que crujía entre las cruces ensangrentadas. Después de la séptima palabra: «¡Padre: en tus manos encomiendo mi espíritu!», don Roger iba soltando el Miserere, tan apretado, tan espeso, que parecía negro.</p>
@@ -1237,7 +1285,7 @@
 						<p>-¡En esta tarde, Nuestra Señora no pudo besar a su Hijo sino después de muerto!</p>
 					</div>
 					<div type="section">
-						<head>Por la noche</head>
+						<head xml:id="ne0061_head_020">Por la noche</head>
 						<p>Toda la vida de Paulina se arrodillaba en esta noche del entierro del Señor. La luna de esta noche, la misma luna tan grande, que iba enfriándole de luz, su vestido, sus cabellos, su palidez, su vieja casa de Oleza, mojó de claridad el manto y la demacración de María y la roca de la sepultura del Señor. Como su hijo, ella también se sentía penetrada de las distancias de los tiempos. Evidencia de una pena, de un amor, de una felicidad que se hubiera ya tenido en el instante que se produjo y en que nosotros no vivíamos. Sentirse en otro tiempo y ahora. La plenitud de lo actual mantenida de un lejano principio. Iluminada emoción de los días profundos de nuestra conciencia, los días que nos dejan los mismos días antepasados y conformados y que han de seguir después de nuestra muerte.</p>
 						<p>Y para ser del todo ella en aquel tiempo y siempre, había ya de acogerse al hijo; ella por hipóstasis del hijo, anegándose en él y conteniéndolo en su sangre. Ni podía recordarse niña ni sentirse hija sin él. Así llegaba hasta todos los horizontes; pero también en todos se tendía la sombra del esposo, acatado con obstinación como un dogma. Y amándolo en lo más obscuro de su voluntad le parecía haber llegado a madre siendo siempre virgen en su deseo y en la promesa de su vida.</p>
 						<p>...Y al volverse, le dio en los ojos la vieja relumbre de las vestiduras de San Josefico, que la miraba esperándola, bajo los óleos de los padres de don Álvaro: el señor Galindo, la señora Serrallonga.</p>
@@ -1260,7 +1308,7 @@
 					</div>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0061_chap15">
-					<head>IV. Mauricio</head>
+					<head xml:id="ne0061_head_021">IV. Mauricio</head>
 					<p>Las oraciones y cartas de las vírgenes de la Visitación alcanzaron la gracia deseada. Y un día glorioso de mayo presentose en el convento de Nuestra Señora don Mauricio Valcárcel, capitán de húsares y agregado militar de la Embajada de España en Viena, portador del ostensorio de las Salesas de Annecy.</p>
 					<p>Le acompañaba el comandante de infantería, jefe de la Zona, que se calzó espuelas de rodajas oxidadas. Luego vino resollando el señor deán.</p>
 					<p>La prelada recibió por el torno el venerable atadijo, cuyas cintas se habían impregnado del fino olor de las maletas del húsar diplomático.</p>
@@ -1361,10 +1409,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- V - <seg rend="italic">Corpus Christi</seg> </head>
+				<head xml:id="ne0061_head_022">- V - <seg rend="italic">Corpus Christi</seg> </head>
 
 				<div n="16" type="chapter" xml:id="ne0061_chap16">
-					<head>I. La víspera</head>
+					<head xml:id="ne0061_head_023">I. La víspera</head>
 					<p>Es difícil no toparse alguna vez con el éxito. Si no llega por el camino real, viene por el atajo. Si caminamos muy despacio, él nos esperará sentándose en una piedra. Bien puede suceder que nosotros corramos tanto que le pasemos, y, entonces, como no nos podemos parar, él no nos puede alcanzar.</p>
 					<p>Pero el homeópata Monera no salía de su andadura, y el éxito le puso campechanamente la mano en el hombro y le dio un vaso de buen vino. Sus aciertos clínicos crecían. El mismo penitenciario, aunque le tutease (una hermana del homeópata servía en casa del canónigo), celebraba la ascensión de Monera. Un día, Monera sanó a un loco. Enloqueció un seminarista del grado de teólogos, y dio en la manía de que cayendo en la tierra la lumbre del sol se quedaba el cielo a obscuras. Consideraba el caso de suma magnanimidad de Dios, y el consentirlo nosotros, de empedernida indiferencia. El teólogo veía la desgracia del firmamento y el desgaste del astro. Había sido dotado de ojos de águila. Podía mirar de hito en hito al sol. «Tengo los ojos de un águila, y soy de la provincia de Gerona». Vestido de negro, con alzacuello de reborde sudado, pasaba los días en su patio devolviendo a los cielos con un espejo la imagen de la redonda hoguera solar. Pero como eran sus ojos los que antes recibían la lumbrarada, principiaron a manarle como si se le hubieran podrido. Ni profesores, ni enfermeros, ni médicos viejos le remediaban. Llegó Monera, le limpió con colirios, le quebró el espejo, y además le dijo que no era ni águila ni de la provincia de Gerona, pues si lo fuese no pertenecería al seminario de Oleza. El loco, sin el espejo en sus manos y con la lógica de Monera a cuestas, sumergiose en su cama, donde murió reposadamente, pidiéndole a Dios que le diera en la otra vida la luz que en ésta le había él reexpedido con su ingenio.</p>
 					<p>El éxito lo confirman los demás, y quizá no consiste sino en los demás. Una tarde, la de la víspera de Corpus, el matrimonio Monera entró en la sala de las <seg rend="italic">Catalanas</seg>, y la esposa, con un suave cansancio, suspiró:</p>
@@ -1469,7 +1517,7 @@
 					<p>Don Álvaro se paseaba por la sala, ya del todo él, pálido, compacto y desgraciado.</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0061_chap17">
-					<head>II. Monseñor Salom y su familiar</head>
+					<head xml:id="ne0061_head_024">II. Monseñor Salom y su familiar</head>
 					<p>Corpus vino aquel año en la plenitud de junio, como una fruta tardana del árbol litúrgico, olorosa de frutas de verdad: cerezas, pomas, albaricoques... La ciudad, con sus cobertores, sus toldos, sus altares a la sombra de tabernáculos de follajes para la procesión eucarística, daba una respiración agraria, inocente y devota; pero además, arrabalera con la crecida de forasteros, con estruendo y bullanga de diligencias, tílburis, galeras, faetones y calesines; gritos de vendedoras de almendras verdes, de alábegas y rosas, de peroles de quesillos, de lerchas de ranas desolladas, de pastas de candeal y gollerías, plagios humildes de los dulces monásticos.</p>
 					<p>A veces, por un callizo, por una cantonada entraba la frescura de las arboledas del río, la lumbre de los campos segados con los ejidos llenos de garbas, la quietud de los olivares en las tierras rojas. Y la ciudad subía en el azul como una vieja custodia de piedra, de sol y de cosechas, estremecida de campanas y palomos.</p>
 					<p>Nunca pareció tan adusto y desolado el palacio de Su Ilustrísima, ni tan pobre y obscura la catedral con el trono del obispo dentro de su funda lisa color de violeta.</p>
@@ -1501,7 +1549,7 @@
 					<p>-Reverendísimo prelado y misionero insigne...</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0061_chap18">
-					<head>III. Monseñor, su cortejo y despedidas</head>
+					<head xml:id="ne0061_head_025">III. Monseñor, su cortejo y despedidas</head>
 					<p>Se acabó la disciplina. Sala de visitas y canceles abiertos y joviales. Patio de la lección silencioso, aulas desamparadas. Algunas señoras se asomaban, y se sentaron y todo en las cátedras, contemplando el obrador de la sabiduría de sus hijos; los padres se vanagloriaban de aquellos ámbitos, como de una herencia de familia.</p>
 					<p>Elegancias, risas y galanías en los jardines. Las madres, las hermanas de los alumnos cortaban un heliotropo, un azahar, un clavel, y después de acariciarlo, se lo prendían en el pecho.</p>
 					<p>El hermano portero balanceaba con lástima su cráneo redondo, con lástima de las flores. Sus ojos y su pensamiento buscaban el refugio de San Alonso Rodríguez, arca de su piedad y consuelo, y depósito de recados, de avisos, del bolsón de cuentas y de agallones para ensartar rosarios.</p>
@@ -1584,7 +1632,7 @@
 					<p>También lo vio todo la señorita Elvira Galindo que pasaba, y tuvo bascas de pureza.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0061_chap19">
-					<head>IV. Pablo, Elvira, don Álvaro</head>
+					<head xml:id="ne0061_head_026">IV. Pablo, Elvira, don Álvaro</head>
 					<p>Las ventanas del salón de estudio, de par en par. Azul de mediodía estremecido y madurado de azul; anchura cortada por la rotonda de la enfermería; la torrecilla y las dos setas de cobre del reloj con sus mazuelos, que cada cuarto de hora se apartan tirantemente y tocan lo mismo que en los días angostos, lo mismo que siempre. Un trozo de monte plantado de viña; los naranjos, los olmos, la noria y las tapias de Casa; la llanada de las huertas de Oleza, una curva del río; sierras finas, de color caliente... Todo eso fue para Pablo la promesa de una felicidad, la lejanía, el principio de un mundo de cuento; y ahora, por haber terminado el curso y seguir delante de su pupitre, todo aquello era lo de todos los días, era paisaje escolar, la renovada conciencia del año de clausura.</p>
 					<p>Quedaban en el salón nueve colegiales. En la tarima, un hermano con gafas negras, las gafas del disimulo de todo el año, repasaba una <seg rend="italic">Lectura Popular</seg>. ¡La <seg rend="italic">Lectura Popular</seg>, con su olor de imprenta húmeda; el periódico que les repartía el cuestor de estudios a la hora en que comenzaban a subir del patio los olores de cocina! Y dentro del ruido de aquellas fojas entre los dedos del hermano se les perdía la sensación del Corpus. Se recodaban en sus pupitres sin asignaturas, mirándose su uniforme de paño recio y de oro escomido, con un cansancio de jornada ya cumplida. Todo eso, todo eso era lo mismo que si se sentaran en un banco de andén de estación para esperar después de llegar. Y se volvían de pronto a la puerta de la sala. Saludos de los que se iban; jovialidad de reverendos padres; y esos reverendos padres, si se asomaban, recuperaban la cautela y el canon de la plena observancia.</p>
 					<p>Pablo se precipitó en el pasillo. Tía Elvira le llamaba desde el fondo moviendo un mitón vacío.</p>
@@ -1649,7 +1697,7 @@
 					<p>-¡No puede! -Y se estrujó su barba entre sus manos pálidas de santo.</p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0061_chap20">
-					<head>V. Final de Corpus</head>
+					<head xml:id="ne0061_head_027">V. Final de Corpus</head>
 					<p>Fervorines. <seg rend="italic">Tantum Ergo</seg>. Bendición y reserva. Solos del nuevo Himno Eucarístico del Padre Folguerol... Jornada gloriosa para don Roger. El señor Hugo le felicitó, cogiéndole atléticamente de las muñecas:</p>
 					<p>-¡Y ahora, un buen verano! -Y lo soltó con elegancia, como si lo dejara caer a la pista desde un trapecio.</p>
 					<p>El padre prefecto les aguardaba en la puerta del coro; y de sus manos recibieron las cesantías de sus cátedras.</p>
@@ -1690,10 +1738,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- VI - Pablo y la <seg rend="italic">Monja</seg> </head>
+				<head xml:id="ne0061_head_028">- VI - Pablo y la <seg rend="italic">Monja</seg> </head>
 
 				<div n="21" type="chapter" xml:id="ne0061_chap21">
-					<head>I. Tribulaciones</head>
+					<head xml:id="ne0061_head_029">I. Tribulaciones</head>
 					<p>Don Jeromillo se descansó en los viejos travesaños del locutorio, mojándolos del sudor de sus dedos. Se le movían las quijadas y las sienes, dentellando por el trabajo de entender los conflictos de la madre.</p>
 					<p>La madre apartose un poco de la red.</p>
 					<p>-Quiso la clavaria que todo se lo contásemos al señor penitenciario y al padre Bellod; y el penitenciario nos dijo que no encontraba en la señorita Valcárcel a sor María Fulgencia...</p>
@@ -1805,7 +1853,7 @@
 					<p>-...¡Y me casaré con el primero que se me presente!</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0061_chap22">
-					<head>II. Jesús y el hombre rico</head>
+					<head xml:id="ne0061_head_030">II. Jesús y el hombre rico</head>
 					<p>Verano de calinas y tolvaneras. Aletazos de poniente. Bochornos de humo. Tardes de nubes incendiadas, de nubes barrocas, desgajándose del azul del horizonte, glorificando los campanarios de Oleza.</p>
 					<p>Las mejores familias -menos la de don Álvaro- se fueron a sus haciendas y a las playas de Torrevieja, de Santa Pola y Guardamar. La ciudad se quedó como un patio de vecinos. El palacio de Lóriz semejaba ya mucho tiempo en el sueño de su soledad; el del obispo, en el ocio de los curiales, que fumaban paseando por la claustra; «Jesús» y el seminario, entornados en el frescor de las vacaciones. Las hospederías, los obradores, las tiendas callaban con la misma modorra de sus dueños sentados a la puerta, cabeceando entre moscardas. Los árboles de los jardines, de la Glorieta, de los monasterios, hacían un estruendo de vendaval de otoño, o se estampaban inmóviles en los cielos, bullendo de cigarras como si se rajasen al sol. El río iba somero, abriéndose en deltas y médanos de fango, de bardomas, de carrizos; y por las tardes, muy pronto, reventaba un croar de balsa. Se pararon muchos molinos de pimentón y harina; y entraban las diligencias, dejando un vaho de tierras calientes, un olor de piel y collerones sudados. Verano ruin. No daba gozo el rosario de la Aurora y tronaba el rosario del anochecido. Fanales de velas amarillas alumbrando el viejo tisú de la manga parroquial; hileras de hombres y mujeres colgándoles los rosarios de sus dedos de difunto; capellanes y celadores guiando la plegaria; un remanso en la contemplación de cada misterio, y otra vez se desanillaban las cofradías y las luces por los ambages de las plazas, por los cantones, por las callejas, por las cuestas. De trecho en trecho caía con retumbos dentro de las foscas entradas el «¡Mira que te mira Dios, / mira que te está mirando, / mira que te has de morir, / mira que no sabes cuándo!». Y, según adelantaba el tránsito, se les venían más gentes a rezar.</p>
 					<p>Penetraba en casa de Pablo ese río de oración, más clamoroso que el Segral. A lo lejos, era de tonada de escolanía, de pueblo infantil que, no sabiendo qué hacer, conversaba afligido con el Señor. Y, ya de cerca, articulado concretamente el rezo en su portal, por cada boca, sentía Pablo un sabor de amargura, de amargura lívida. Alzaba los ojos al cielo de su calle. De tanto ansiar se reía de su desesperación; y palpaba su risa. Tocaba sus gestos como si tocase su alma desnuda. Vivía tirantemente. El júbilo de las vacaciones se le quedó seco y desaromado. Pasó los primeros días siempre en diálogo con su madre. Tía Elvira alababa la suerte de su cuñada por tener un hijo tan hija. No fuera tan enmadrado y enfaldado si trajese faldas de verdad. Y convidó al sobrino a sus tertulias de las <seg rend="italic">Catalanas</seg> y de la Adoración. Después mudó de chanza, santiguándose y mirándole todo el cuerpo.</p>
@@ -1883,7 +1931,7 @@
 					<p>-¡Oh, a veces Dios no lo permite y envía sus ángeles para impedirlo! Un ángel detuvo el brazo de Abraham cuando ya su cuchillo tocaba la garganta de Isaac. ¿No nos habrá enviado Dios al padre Ferrando? Otras veces, cuán costosas son las decisiones que pueden trastornar las regaladas costumbres; quizá sea más difícil para el cristiano la renuncia de su bienestar que el acometer las más arriesgadas empresas. ¡Quizá, sí! Nos lo dice San Marcos en aquel conmovedor episodio de su evangelio: Un hombre rico le pregunta al Salvador: «Maestro, ¿qué haré para conseguir la vida eterna?». El Señor le responde: «Cumple los mandamientos». Y él añade: «Los he guardado desde mi juventud». Y Jesús puso en él los ojos (así los ponemos nosotros). Y le mostró agrado- <seg rend="italic">dilexit eum</seg>- (también como nosotros hacemos), y le dijo: «¡Una cosa te falta: vende cuanto tienes y entrégalo a los pobres y tendrás un tesoro en el cielo; y ven y sígueme!». Pero el hombre rico afligiose y se apartó de Jesús... ¡Qué lástima!</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0061_chap23">
-					<head>III. Estampas y graja</head>
+					<head xml:id="ne0061_head_031">III. Estampas y graja</head>
 					<p>«¡Y me casaré con el primero que se me presente!».</p>
 					<p>El primero que se presentó, que le presentaron a la señorita Valcárcel, fue don Amancio Espuch.</p>
 					<p>-¡Quítese usted eso, esa barba, por Dios! -Y María Fulgencia se reía, cubriéndose la faz con su rebociño de tules.</p>
@@ -1982,7 +2030,7 @@
 					<p>En la calle recibieron la delicia del aire de octubre, dulce de cosechas.</p>
 				</div>
 				<div n="24" type="chapter" xml:id="ne0061_chap24">
-					<head>IV. La <seg rend="italic">Monja</seg></head>
+					<head xml:id="ne0061_head_032">IV. La <seg rend="italic">Monja</seg></head>
 					<p>Octubre trajo el buen tiempo. Pasó el ahogo de los nublos y calinas que apretaban la ciudad. El verano desgreñado de vendavales, de cielos de remiendos, de mala color arrabalera, se trocó en un otoño alto, fino, miniado. Y entonces se cerró más la vida de Pablo. Sentíase retenido en la vigilancia de tía Elvira como en el centro de una lente que le precisaba cada uno de sus pensamientos para entregárselos al padre.</p>
 					<p>Los ojos de don Álvaro relucían de un dolorido rencor.</p>
 					<p>La madre, de una blancura lunar, de una tristeza sin lágrimas, le pidió al hijo que no la buscase tanto, que no la quisiese más que al padre.</p>
@@ -2060,7 +2108,7 @@
 					<p>-¡En fin, ya está María Fulgencia encaminada! Ahora sí que acertamos; y se acabó. ¡Ni más ni menos!</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0061_chap25">
-					<head>V. Ella y él</head>
+					<head xml:id="ne0061_head_033">V. Ella y él</head>
 					<p>Pablo vio un zapato de María Fulgencia. Lo vio, lo tomó y lo tuvo. No lo había soltado el pico de un águila desde el cielo, como la sandalia de la «Bella de las mejillas de rosa» del cuento egipcio, sino que lo cogieron sus manos de la tierra. Tampoco era un zapato, sino un borceguí de tafilete. Y no vio un borceguí, sino el par. Se había quedado solo en el estudio haciendo una copia, y al salir asomose a la sala. La muñeca del sofá le llamó tendiéndole sus bracitos; y en la alfombra del estrado estaban las botinas de la <seg rend="italic">Monja</seg>. ¡Qué altas y suaves! Muy juntas, un poco inclinadas por el gracioso risco del tacón. Sumergió su índice en la punta; allí había un tibio velloncillo. La señora necesitaba algodones para los dedos; y el suyo salió con un fino aroma de estuche de joyero. Pies infantiles; y arriba, la bota se ampliaba para ceñir la pierna de mujer. Se acercó el borceguí a los ojos, emocionándose de tenerlo como si la señora, toda la señora, vestida y calzada, descansase en sus manos. Y de repente se le cayó. La señora estaba a su lado, mirándole. Le había sorprendido como la primera mañana de lección. Para disculparse le mostró en su solapa una gota de tinta, y dijo que entró buscando agua y un paño...</p>
 					<p>-¿Tinta? ¡Y aquí también, en esa mano! Tráigame usted mismo un limón. No es menester que baje al huerto. Hay cuatro o cinco muy hermosos en los fruteros.</p>
 					<p>Fue Pablo al comedor y vino con un limón como un fragante ovillo de luz.</p>
@@ -2153,10 +2201,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>- VII - La felicidad </head>
+				<head xml:id="ne0061_head_034">- VII - La felicidad </head>
 
 				<div n="26" type="chapter" xml:id="ne0061_chap26">
-					<head>I. Un último día</head>
+					<head xml:id="ne0061_head_035">I. Un último día</head>
 					<p>La ventana abierta del todo. Sol de las huertas silenciosas; sol de domingo de noviembre que pasaba desde la concavidad perfecta y azul. Daba el río un frescor de claridades. El río no semejaba correr por las espaldas remendadas de Oleza, sino por una ciudad de mármol y por tréboles tiernos.</p>
 					<p>Oleza callaba. Oleza debía de estar oyendo misa en monasterios y parroquias. Quietud y limpidez de otoño. Vuelos de palomos; crujidos de las ropas que lavaba una mujer en su piedra de la orilla; y los lienzos lavados en la calma del domingo parecían esparcir su olor de blancura nueva.</p>
 					<p>Pablo sentíase dichoso y bueno, y el sol entraba a dormirse dócilmente en sus brazos. La madre le acercó más el desayuno; y como él no acababa de soltarse de la pereza, le sumergía las rubias pastas en el tazón, hondo y fino como una magnolia, y luego se las ponía, emblandecidas de leche, en la boca.</p>
@@ -2227,7 +2275,7 @@
 					<p>Así fue anocheciendo aquel domingo de otoño, como un último día de una época suya toda de sed por la misma cuesta...</p>
 				</div>
 				<div n="27" type="chapter" xml:id="ne0061_chap27">
-					<head>II. La salvación y la felicidad</head>
+					<head xml:id="ne0061_head_036">II. La salvación y la felicidad</head>
 					<p>Levantose Paulina de madrugada. Don Álvaro tenía los ojos abiertos, inmóviles en lo alto del muro.</p>
 					<p>Nunca se habían sentido tan cerca, sin haberse mirado. No se miraban para no verse en el fondo antiguo de sus ojos. Y él murmuró:</p>
 					<p>-¡Déjala!</p>
@@ -2276,7 +2324,7 @@
 					<p>Paulina, don Álvaro y su hijo se persignaron, y siguieron silenciosos, sin mirarse, camino de la felicidad.</p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0061_chap28">
-					<head>III. María Fulgencia y Pablo</head>
+					<head xml:id="ne0061_head_037">III. María Fulgencia y Pablo</head>
 					<p>María Fulgencia le escribió a Paulina:</p>
 					<p>«...Les han dicho que yo no estaba en mi casa de Murcia, sino en mi hacienda, y que sería inútil que pretendieran visitarme. Y sí que estaba. Yo sola. Les he visto desde que aparecieron por la esquina del aperador. Miraban ustedes mucho mis balcones. Les aguardé hasta sentirles en la escalera, y entonces corrí a esconderme en mi alcoba, la de mis padres, donde yo estuve muy enferma de tifus. En todos mis miedos me refugié aquí. Le vuelvo la espalda a todo el caserón porque me pongo en la ventana para mirar el huerto; todo lo miro muy bien; voy contando los limones que han salido en una rama, o las veces que acude la misma abeja al mismo albaricoque, o rompo papeles y los dejo ir para ver los trocitos que caen dentro de la acequia y se van a caminar por el agua, y yo me digo que estoy muy distraída, que al miedo me lo dejé perdido por la casa tan grande, y que no soy precisamente yo la preocupada y la temerosa. Eso quise hacer cuando ustedes iban subiendo. Me puse a la ventana para mirarlo todo, para contarlo todo, y nada me importó. Porque yo no quería volverme de espaldas a mí misma ni persuadirme de que no era yo quien huía de la sala donde usted y don Álvaro acabarían de llegar. Sí que era yo y eran ustedes, y entré hasta quedarme detrás de los cortinajes. Sentía la respiración de usted y la medía con mi latido. ¡Qué cerca estábamos; qué cerca yo de la madre de Pablo! Yo no le tenía miedo. Lo comprendí en seguida de mirarla. Nunca le había mirado tanto. ¡Si hubiese venido usted sola! Si usted hubiese venido sola, tampoco hubiera yo salido a besarla... Y yo les esperaba todos los días, desde que supe que quiso usted verme en Oleza. Y me dije: "Me escribirá o vendrá. Todos se imaginan que estoy recluida en el campo como una penitente. Pero ella me buscará y preguntará por mí en esta casa". ¡Y huí de usted! Es que ustedes, por ser generosos, no podían venir sino a consolarme. Y yo no quiero que me consuelen. ¡Si nos hubiéramos tratado; si nos hubiésemos querido allí, en Oleza! ¡Si es que allí no se quiere nadie! El grupo de nuestros maridos no necesitaba que fuéramos amigas nosotras. Les bastaba con tener ellos asuntos. No es que me queje. No me quejo de nadie ni de mí misma. Como es mi vida, es mía y la quiero mía. Hace un instante acusé a nuestros maridos de su amistad sin nosotras. Pero, ¿tratarnos, vernos, querernos nosotras? ¿Cuándo pude yo ir a usted, si en seguida se me apareció Pablo? Tuve que pararme a lo lejos. Y ahora, todavía más. Usted es su carne, su sangre; las manos de él son como las suyas, y la boca, y los cabellos, y la ansiedad de los ojos. ¡Qué vida tan profunda de mujer debe sentirse siendo la madre de él! Al principio de verme aquí sola me aconsejaba a mí misma: "Ya no he de recordar nada, porque ya no hay remedio". Pero, por eso, porque ya no hay remedio, no se me olvida nada. De veras le juro que no hay remedio; él no me verá nunca. Renuncio a lo más gustoso: a ser mirada por él; pero no renuncio a verle, verle sin que él lo sepa.</p>
 					<p>Cuando me di cuenta de que Diego nos había sorprendido -perdóneme- aquella mañana en el jardín, adiviné que yo, como casi todas las mujeres comprometidas, podía valerme de habilidades para encubrir la verdad. Pude <seg rend="italic">remediarlo</seg> con embustes, y hasta se me ocurrieron y todo, y no quise. Y no quise fingir porque "él y yo solos", sin pensar en los demás, no caíamos en ninguna vergüenza; pero pensar en los otros hasta tener que engañarles era ya sentirse desnudos, como dicen que se vieron nuestros primeros padres en el Paraíso. Y anticipándoseme ese sonrojo, tuve el presentimiento de que mi paraíso estaba ya cerrado. Y si no había de entrar, ¿para qué entonces había de mentir? Cogí de la mano a su hijo y lo llevé hasta la puertecita de la ribera. Quise que me mirase mucho. Sabía que era la última vez que me miraba. Nada más nos mirábamos. Y cuando oí que me llamaban, entonces solté a Pablo, y rodeando las tapias me presenté a mi marido y dije la verdad, como si mi marido no fuese para mí sino un don Amancio Espuch. No es menester, ni debo contarle, nuestra pobre entrevista. Las gentes se han quedado sin drama ni comedia.</p>
@@ -2303,7 +2351,7 @@
 					<p>«No hay nadie que tema más el infortunio que aquellos cuya mísera vida les habría de dejar a salvo del miedo y que debieran decir como Andrómaca: <seg rend="italic">¡Pluguiera a los dioses que yo temiese!</seg> Hay en Nápoles cincuenta mil hombres que se alimentan de hierba, que se cubren con harapos, y estas gentes se horrorizan a la más leve humareda del Vesubio. Tienen la simplicidad de temer que puedan llegar a ser desgraciados».</p>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0061_chap29">
-					<head>IV. F-O-C-E</head>
+					<head xml:id="ne0061_head_038">IV. F-O-C-E</head>
 					<p>El ferrocarril de Oleza-Costa-Enlace dejaba la emoción y la ilusión de que toda la ciudad viajase dos veces al día: en el correo y en el mixto; o de que toda España viese a Oleza dos veces al día. Oleza estaba cerca del mundo, participando abiertamente de sus maravillas.</p>
 					<p>La estación, de ladrillos encarnados y andenes de eucaliptos y acacias, era por las tardes sala de familias, horizonte diario de la mocedad, alivio de los afanados, solaz de canónigos y caballeros, feria de flores -en ramos, en haldadas y canastas- y de las sabrosas especialidades de masa y confitura: pasteles de gloria de las clarisas de San Gregorio, costradas de yema de la Visitación, hojaldres de las verónicas, limoncillos y arropes de las madres de San Jerónimo... Muchos sábados se voceaba también <seg rend="italic">El Clamor de la Verdad</seg>, y los jueves <seg rend="italic">La Antorcha</seg> -semanario liberal-. <seg rend="italic">La Antorcha</seg> se complacía de esta abundancia de productos olecenses. <seg rend="italic">Carolus Alba-Longa</seg>, no. <seg rend="italic">Alba-Longa</seg>, desde sus fondos titulados «Alerta», daba el aviso de fraudes funestos para el merecido renombre del dulce de Oleza. No era posible que todo lo que se vendía y se facturaba en la estación saliese de los obradores de las comunidades. De seguro que lo apócrifo se mezclaba cautelosamente con lo legítimo. <seg rend="italic">La Antorcha</seg> publicó su réplica: «¿Y qué?», epígrafe de arremangada impertinencia. Probó, a la fría luz de la estadística, que la cochura de pastas y compotas no había menguado en los hornos monásticos. Domingos y fiestas, las clarisas, las salesas, las jerónimas, las verónicas no podían satisfacer todos los pedidos. Al mismo tiempo doblaban sus tareas las confiterías seculares, tareas no clandestinas, porque las casas estampaban su marca, y ni en aprovecharse de las advocaciones de los dulces monjiles había engaño, sino uso lícito de una onomástica tradicionalmente ineludible. Si los viajeros del ferrocarril de Oleza-Costa-Enlace compraban hojaldres y bizcochos laicos, creyéndolos amasados en las artesillas «de las hacendosas abejas de los panales del cielo» -verdadera galantería liberal-, ¿qué culpa tenía el gremio de dulceros? ¿Que se confunden las castas de dulces? ¿Y qué? Si el dulce del siglo resultaba tan gustoso como el del claustro, ¿negaría <seg rend="italic">Carolus Alba-Longa</seg> las eficacias del progreso, los beneficios públicos de la competencia?</p>
 					<p>De este pleito se apartaba el señor penitenciario, amargo de realidades diocesanas; el padre Bellod, de broncos sentidos, y el homeópata Monera, sin ninguna voluntad para los gustos de este mundo.</p>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Niebla</title>
-				<title type="sub"></title>
+				
 				<title type="short">Niebla</title>
-				<title type="idno">
-					<idno type="bne">XX2213087</idno>
-					<idno type="viaf">214765951</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1139151</idno>
-					<idno type="viaf">88844103</idno>
-					<name type="short">Unamuno</name>
-					<name type="full">Miguel de Unamuno</name>
+					<name type="short" ref="#Unamuno"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2392</measure>
@@ -141,13 +131,112 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0073</idno>
+						<idno type="cligs">ne0073</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Emiferro, ePub r1.2 <date when="2013">2013</date>, <idno>5040</idno>, <ref target="https://www.epublibre.org/libro/detalle/5040"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1914">1914</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Niebla</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2213087.html">XX2213087</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/214765951/">214765951</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q2604439/">Q2604439</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4396823-5">4396823-5</idno>
+				</idno>
+				</title>
+					<author xml:id="Unamuno">
+						<name type="full"><forename>Miguel</forename> <surname>de Unamuno</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8740 - IP 8745">IP 8740 - IP 8745</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118625403">118625403</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q185085/">Q185085</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1139151.html">XX1139151</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/88844103/">88844103</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Emiferro, ePub r1.2 <date when="2013">2013</date>, <idno>5040</idno>, <ref target="https://www.epublibre.org/libro/detalle/5040"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1914">1914</date><idno source="k10plus" type="ppn" n="1141210479" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1141210479"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(Nivola)</title> <date when="1914">1914</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1141210479" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1141210479"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Brouillard</title> <date when="1926">1926</date>, <publisher>Éd. du Sagittaire, Simon Kra</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="464501342" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464501342"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title> <date when="1927">1927</date>, <publisher>Meyer &amp; Jessen</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="1113965703" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1113965703"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title> <date when="1927">1927</date>, <publisher>Meyer &amp; Jessen</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="316246492" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=316246492"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(Nivola)</title> <date when="1928">1928</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1135243573" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135243573"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1928">1928</date>, <publisher>Impr. Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="53441480X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=53441480X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1928">1928</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227336917" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227336917"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Mist</title>: 	<title type="sub">a tragicomic novel</title> <date when="1929">1929</date>, <publisher>Knopf</publisher> <pubPlace>New York, NY</pubPlace> 		<idno type="ppn" n="647159597" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=647159597"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title>: 	<title type="sub">Roman</title> <date when="1933">1933</date>, <publisher>Phaidon-Verl.</publisher> <pubPlace>Wien;Leipzig</pubPlace> 		<idno type="ppn" n="1374174548" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1374174548"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1947">1947</date>, <publisher>Espasa-Calpe Argentina, S.A.</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1728509351" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1728509351"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1950">1950</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires [u.a.]</pubPlace> 		<idno type="ppn" n="1177510537" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177510537"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1951">1951</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="318479915" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=318479915"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1956">1956</date>, <publisher>Espasa-Calpe, S.A.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="864489498" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=864489498"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cartas de Unamuno a Warner Fite, traductor de "Niebla"</title> <date when="1956">1956</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="463032616" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463032616"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1957">1957</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1187445320" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1187445320"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1958">1958</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227341023" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227341023"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1960">1960</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1503452867" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1503452867"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1963">1963</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="469008318" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469008318"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1963">1963</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="391318144" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=391318144"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title>: 	<title type="sub">Roman</title> <date when="1965">1965</date>, <publisher>Kiepenheuer &amp; Witsch</publisher> <pubPlace>Köln [u.a.]</pubPlace> 		<idno type="ppn" n="1090741170" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1090741170"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title>: 	<title type="sub">Roman</title> <date when="1965">1965</date>, <publisher>Kiepenheuer &amp; Witsch</publisher> <pubPlace>Köln [u.a.]</pubPlace> 		<idno type="ppn" n="179407112" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=179407112"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title>: 	<title type="sub">Roman</title> <date when="1968">1968</date>, <publisher>dtv</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="1126073539" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1126073539"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1968">1968</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="233051635" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233051635"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title>: 	<title type="sub">Roman</title> <date when="1968">1968</date>, <publisher>Deutscher Taschenbuch Verl.</publisher> <pubPlace>München</pubPlace> 		<idno type="ppn" n="221569561" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=221569561"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1971">1971</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1337115711" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1337115711"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1975">1975</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1618784625" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1618784625"/> 		<idno type="isbn" n="8423900991"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1976">1976</date>, <publisher>Harrap</publisher> <pubPlace>London</pubPlace> 		<idno type="ppn" n="467294151" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467294151"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1979">1979</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="196149258" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=196149258"/> 		<idno type="isbn" n="8423900991"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1980">1980</date>, <publisher>Santillana</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1029451958" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1029451958"/> 		<idno type="isbn" n="9788429417029;8429417028"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1982">1982</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="188722904" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=188722904"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1983">1983</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="442301804" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=442301804"/> </bibl>
+						<bibl type="further-edition"><title type="main">Niebla</title> <date when="1984">1984</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="436599333" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=436599333"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1985">1985</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="778497089" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=778497089"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1985">1985</date>, <publisher>Plaza &amp; Janés</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="040346838" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=040346838"/> 		<idno type="isbn" n="8401905656"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1986">1986</date>, <publisher>Alhambra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="468926682" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468926682"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1987">1987</date>, <publisher>Taurus</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1615748040" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1615748040"/> 		<idno type="isbn" n="8430640282"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1987">1987</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="666057311" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=666057311"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1988">1988</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="043480934" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043480934"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title> <date when="1988">1988</date>, <publisher>P.-S.-Verl. Selinka</publisher> <pubPlace>Ravensburg</pubPlace> 		<idno type="ppn" n="015416720" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=015416720"/> 		<idno type="isbn" n="3926532114"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1990">1990</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1621797236" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1621797236"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1990">1990</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1613101872" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1613101872"/> 		<idno type="isbn" n="8420601896"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1990">1990</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1608863468" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1608863468"/> 		<idno type="isbn" n="8423919153"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1991">1991</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1612053564" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1612053564"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1991">1991</date>, <publisher>Editorial Bruño</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="681063297" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=681063297"/> 		<idno type="isbn" n="8421614711;9788421614716"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1993">1993</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1619719797" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1619719797"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition"><title type="main">Niebla</title> <date when="1994">1994</date>, <publisher>ALGA [u.a.]</publisher> <pubPlace>Murcia</pubPlace> 		<idno type="ppn" n="567833569" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=567833569"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1995">1995</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1605901393" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1605901393"/> 		<idno type="isbn" n="8470397176"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra [u.a.]</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1118115201" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1118115201"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">(Narrativa). Paz en la guerra. Amor y pedagogía. Niebla. Abel Sánchez. La tía Tula</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="213874253" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=213874253"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="1995">1995</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="211784990" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=211784990"/> 		<idno type="isbn" n="8470397176"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title> <date when="1996">1996</date>, <publisher>Ullstein</publisher> <pubPlace>Frankfurt/M;Berlin</pubPlace> 		<idno type="ppn" n="215087909" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=215087909"/> 		<idno type="isbn" n="3548240356"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Nebel</title>: 	<title type="sub">Roman</title> <date when="1997">1997</date>, <publisher>Ullstein</publisher> <pubPlace>Frankfurt/M;Berlin</pubPlace> 		<idno type="ppn" n="1604443839" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1604443839"/> 		<idno type="isbn" n="3548240356"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1998">1998</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="349994366" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=349994366"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1998">1998</date>, <publisher>Alianza</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="312830297" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=312830297"/> 		<idno type="isbn" n="8420633259"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="252717732" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=252717732"/> 		<idno type="isbn" n="8420663859"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="1999">1999</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1613086660" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1613086660"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2001">2001</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1623089840" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1623089840"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2002">2002</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="392407736" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=392407736"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2005">2005</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="79185518X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=79185518X"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Niebla</title> <date when="2006">2006</date>, <publisher>Forma Arts and Media Ltd.</publisher> <pubPlace>New Castle upon Tyne</pubPlace> 		<idno type="ppn" n="522310796" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=522310796"/> 		<idno type="isbn" n="0954828828"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2007">2007</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="550952950" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=550952950"/> 		<idno type="isbn" n="8437603471"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2008">2008</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1616031166" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1616031166"/> 		<idno type="isbn" n="9788437603476"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2009">2009</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="636322890" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=636322890"/> 		<idno type="isbn" n="8437603471;9788437603476"/></bibl>
+						<bibl type="further-edition" xml:lang="heb"><title type="main">ʿArafel</title>: 	<title type="sub">(remun)</title> <date when="2009">2009</date>, <publisher>ʿAm ʿOved</publisher> <pubPlace>Tel Aviv</pubPlace> 		<idno type="ppn" n="626654912" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=626654912"/> 		<idno type="isbn" n="9789651321580"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">[Nivel 4, Niveau B2]</title> <date when="2011">2011</date>, <publisher>Klett;Eli</publisher> <pubPlace>Stuttgart;Recanati</pubPlace> 		<idno type="ppn" n="658394339" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=658394339"/> 		<idno type="isbn" n="9783125149892;9788853606648"/></bibl>
+						<bibl type="further-edition"><title type="main">Szenen aus Niebla</title>: 	<title type="sub">(2007) ; Musiktheater in gemeinschaftlicher Autorschaft mit Matthias Rebstock nach dem gleichnamigen Roman von Miguel de Unamuno</title> <date when="2011">2011</date>, <publisher>Schott Music &amp; Media</publisher> <pubPlace>Mainz</pubPlace> 		<idno type="ppn" n="654918198" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=654918198"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola)</title> <date when="2012">2012</date>, <publisher>Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="729266397" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=729266397"/> 		<idno type="isbn" n="8470397176;9788497404990"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2014">2014</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1025584791" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1025584791"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2014">2014</date>, <publisher>Editorial Porrúa</publisher> <pubPlace>México, D.F.</pubPlace> 		<idno type="ppn" n="1025584759" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1025584759"/> 		<idno type="isbn" n="9700767094;9789700767093;9700767108;9789700767109"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title> <date when="2014">2014</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="838089941" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=838089941"/> 		<idno type="isbn" n="9788437603476"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Niebla</title>: 	<title type="sub">(nivola) ; [(1914 - 2014)]</title> <date when="2014">2014</date>, <publisher>Ed. del Viento</publisher> <pubPlace>A Coruña</pubPlace> 		<idno type="ppn" n="793070619" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=793070619"/> 		<idno type="isbn" n="9788415374671"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Fog</title>: 	<title type="sub">a novel</title> <date when="2017">2017</date>, <publisher>Northwestern University Press</publisher> <pubPlace>Evanston, Illinois</pubPlace> 		<idno type="ppn" n="884005550" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=884005550"/> 		<idno type="isbn" n="9780810135369"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -160,6 +249,14 @@
 				<p>La aventura amorosa de un hombre que se ve enfrascado en una apasionada devoción frente a una dama. Junto con el encuentro de este hombre con un perro que pasaría a ser su compañero más adelante, es la historia del engaño y la pasión.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8741" key="IP 8741" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL9">8</term>
 					<term type="author.continent">Europe</term>
@@ -191,7 +288,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">philosophical</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">nivola</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">nivola</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.subtitle.source" resp="bne">nivola</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">nivola</term>
 					<term type="text.genre.supergenre">narrative</term>
@@ -228,12 +325,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-07-21" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Prólogo</head>
+				<head xml:id="ne0073_head_000">Prólogo</head>
 				<p>Se empeña don Miguel de Unamuno en que ponga yo un prólogo a este su libro en que se relata la tan lamentable historia de mi buen amigo Augusto Pérez y su misteriosa muerte, y yo no puedo menos sino escribirlo, porque los deseos del señor Unamuno son para mí mandatos, en la más genuina acepción de este vocablo. Sin haber yo llegado al extremo de escepticismo hamletiano de mi pobre amigo Pérez, que llegó hasta a dudar de su propia existencia, estoy por lo menos firmemente persuadido de que carezco de eso que los psicólogos llaman libre albedrío, aunque para mi consuelo creo también que tampoco goza don Miguel de él.</p>
 				<p>Parecerá acaso extraño a alguno de nuestros lectores que sea yo, un perfecto desconocido en la república de las letras españolas, quien prologue un libro de don Miguel que es ya ventajosamente conocido en ella, cuando la costumbre es que sean los escritores más conocidos los que hagan en los prólogos la presentación de aquellos otros que lo sean menos. Pero es que nos hemos puesto de acuerdo don Miguel y yo para alterar esta perniciosa costumbre, invirtiendo los términos, y que sea el desconocido el que al conocido presente. Porque en rigor los libros más se compran por el cuerpo del texto que no por el prólogo, y es natural por lo tanto que cuando un joven principiante como yo desee darse a conocer, en vez de pedir a un veterano de las letras que le escriba un prólogo de presentación, debe rogarle que le permita ponérselo a una de sus obras. Y esto es a la vez resolver uno de los problemas de ese eterno pleito de los jóvenes y los viejos.</p>
 				<p>Unenme, además, no pocos lazos con don Miguel de Unamuno. Aparte de que este señor saca a relucir en este libro, sea novela o <seg rend="italic">nivola</seg> —y conste que esto de la <seg rend="italic">nivola</seg> es invención mía—, no pocos dichos y conversaciones que con el malogrado Augusto Pérez tuve, y que narra también en ella la historia del nacimiento de mi tardío hijo Victorcito, parece que tengo algún lejano parentesco con don Miguel, ya que mi apellido es el de uno de sus antepasados, según doctísimas investigaciones genealógicas de mi amigo Antolín S. Paparrigópulos, tan conocido en el mundo de la erudición.</p>
@@ -262,7 +360,7 @@
 				<ab>VÍCTOR GOTI.</ab>
 			</div>
 			<div>
-				<head>Post-prólogo</head>
+				<head xml:id="ne0073_head_001">Post-prólogo</head>
 				<p>De buena gana discutiría aquí alguna de las afirmaciones de mi prologuista, Víctor Goti, pero como estoy en el secreto de su existencia —la de Goti—, prefiero dejarle la entera responsabilidad de lo que en ese su prólogo dice. Además, como fui yo quien le rogué que me lo escribiese, comprometiéndome de antemano —o sea <seg rend="italic">a priori</seg>— a aceptarlo tal y como me lo diera, no es cosa ni de que lo rechace, ni siquiera de que me ponga a corregirlo y rectificarlo ahora a trasmano —o sea <seg rend="italic">a posteriori—.</seg> Pero otra cosa es que deje pasar ciertas apreciaciones suyas sin alguna mía.</p>
 				<p>No sé hasta qué punto sea lícito hacer uso de confidencias vertidas en el seno de la más íntima amistad y llevar al público opiniones o apreciaciones que no las destinaba a él quien las profiriera. Y Goti ha cometido en su prólogo la indiscreción de publicar juicios míos que nunca tuve intención de que se hiciesen públicos. O por lo menos nunca quise que se publicaran con la crudeza con que en privado los exponía.</p>
 				<p>Y respecto a su afirmación de que el desgraciado… Aunque, desgraciado, ¿por qué? Bien; supongamos que lo hubiese sido. Su afirmación, digo, de que el desgraciado, o lo que fuese, Augusto Pérez se suicidó y no murió como yo cuento su muerte, es decir, por mi libérrimo albedrío y decisión, es cosa que me hace sonreír. Opiniones hay, en efecto, que no merecen sino una sonrisa. Y debe andarse mi amigo y prologuista Goti con mucho tiento en discutir así mis decisiones, porque si me fastidia mucho acabaré por hacer con él lo que con su amigo Pérez hice, y es que le dejaré morir o le mataré a guisa de médico. Los cuales ya saben mis lectores que se mueven en este dilema: o dejan morir al enfermo por miedo a matarle, o le matan por miedo de que se les muera. Y así yo soy capaz de matar a Goti si veo que se me va a morir, o de dejarle morir si temo haber de matarle.</p>
@@ -270,7 +368,7 @@
 				<ab>M. DE U.</ab>
 			</div>
 			<div>
-				<head>Prólogo a esta edición, o sea, historia de «Niebla»</head>
+				<head xml:id="ne0073_head_002">Prólogo a esta edición, o sea, historia de «Niebla»</head>
 				<p>La primera edición de esta mi obra —¿mía sólo?— apareció en 1914 en la Biblioteca «Renacimiento», a la que luego se la han llevado la trampa y los tramposos. Parece que hay otra segunda, de 1928, pero de ella no tengo más que noticia bibliográfica. No la he visto, sin que sea de extrañar, pues en ese tiempo se encontraba la dictadura en el poder y yo desterrado, para no acatarla, en Hendaya. En 1914, al habérseme echado —más bien desenjaulado— de mi primera rectoría de la Universidad de Salamanca, entré en una nueva vida con la erupción de la guerra de las naciones que sacudió a nuestra España, aunque esta no beligerante. Dividiónos a los españoles en germanófilos y antigermanófilos —aliadófilos si se quiere—, más según nuestros temperamentos que según los motivos de la guerra. Fue la ocasión que nos marcó el curso de nuestra ulterior historia hasta llegar a la supuesta revolución de 1931, al suicidio de la monarquía borbónica. Es cuando me sentí envuelto en la niebla histórica de nuestra España, de nuestra Europa y hasta de nuestro universo humano.</p>
 				<p>Ahora, al ofrecérseme en 1935 coyuntura de reeditar mi <seg rend="italic">Niebla</seg>, la he revisado, y al revisarla la he rehecho íntimamente, la he vuelto a hacer; la he revivido en mí. Que el pasado revive; revive el recuerdo y se rehace. Es una obra nueva para mí, como lo será, de seguro, para aquellos de mis lectores que la hayan leído y la vuelvan a leer de nuevo. Que me relean al releerla. Pensé un momento si hacerla de nuevo, renovarla; pero sería otra… ¿Otra? Cuando aquel mi Augusto Pérez de hace veintiún años —tenía yo entonces cincuenta— se me presentó en sueños creyendo yo haberle finado y pensando, arrepentido, resucitarle, me preguntó si creía yo posible resucitar a don Quijote, y al contestarle que ¡imposible!: «Pues en el mismo caso estamos todos los demás entes de ficción», me arguyó, y al yo replicarle: «¿Y si te vuelvo a soñar?», él: «No se sueña dos veces el mismo sueño. Ese que usted vuelve a soñar y crea soy yo será otro…». ¿Otro? ¡Cómo me ha perseguido y me persigue ese otro! Basta ver mi tragedia <seg rend="italic">El otro</seg>. Y en cuanto a la posibilidad de resucitar a don Quijote, creo haber resucitado al de Cervantes y creo que le resucitan todos los que le contemplan y le oyen. No los eruditos, por supuesto, ni los cervantistas. Resucitan al héroe como al Cristo los cristianos siguiendo a Pablo de Tarso. Que así es la historia, o sea la leyenda. Ni hay otra resurrección.</p>
 				<p>¿Ente de ficción? ¿Ente de realidad? De realidad de ficción, que es ficción de realidad. Cuando una vez sorprendí a mi hijo Pepe, casi niño entonces, dibujando un muñeco y diciéndose: «¡Soy de carne, soy de carne, no pintado!», palabras que ponía en el muñeco, reviví mi niñez, me rehíce y casi me espanté. Fue una aparición espiritual. Y hace poco mi nieto Miguelín me preguntaba si el gato Félix —el de los cuentos para niños— era de carne. Quería decir vivo. Y al insinuarle yo que cuento, sueño o mentira, me replicó: «¿Pero sueño de carne?». Hay aquí toda una metafísica. O una metahistoria.</p>
@@ -290,7 +388,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0073_chap1">
-				<head>Capítulo 1</head>
+				<head xml:id="ne0073_head_003">Capítulo 1</head>
 				<p>Al aparecer Augusto a la puerta de su casa extendió el brazo derecho, con la mano palma abajo y abierta, y dirigiendo los ojos al cielo quedóse un momento parado en esta actitud estatuaria y augusta. No era que tomaba posesión del mundo exterior, sino era que observaba si llovía. Y al recibir en el dorso de la mano el frescor del lento orvallo frunció el sobrecejo. Y no era tampoco que le molestase la llovizna, sino el tener que abrir el paraguas. ¡Estaba tan elegante, tan esbelto, plegado y dentro de su funda! Un paraguas cerrado es tan elegante como es feo un paraguas abierto.</p>
 				<p>«Es una desgracia esto de tener que servirse uno de las cosas —pensó Augusto—; tener que usarlas, el uso estropea y hasta destruye toda belleza. La función más noble de los objetos es la de ser contemplados. ¡Qué bella es una naranja antes de comida! Esto cambiará en el cielo cuando todo nuestro oficio se reduzca, o más bien se ensanche a contemplar a Dios y todas las cosas en Él. Aquí, en esta pobre vida, no nos cuidamos sino de servimos de Dios; pretendemos abrirlo, como a un paraguas, para que nos proteja de toda suerte de males».</p>
 				<p>Díjose así y se agachó a recogerse los pantalones. Abrió el paraguas por fin y se quedó un momento suspenso y pensando: «y ahora, ¿hacia dónde voy?, ¿tiro a la derecha o a la izquierda?». Porque Augusto no era un caminante, sino un paseante de la vida. «Esperaré a que pase un perro —se dijo— y tomaré la dirección inicial que él tome».</p>
@@ -335,7 +433,7 @@
 				<p>«Vaya —se dijo Augusto—, esta Eugenita, la profesora de piano, me ha cortado un excelente principio de poesía lírica trascendental. Me queda interrumpida. ¿Interrumpida?… Sí, el hombre no hace sino buscar en los sucesos, en las vicisitudes de la suerte, alimento para su tristeza o su alegría nativas. Un mismo caso es triste o alegre según nuestra disposición innata. ¿Y Eugenia? Tengo que escribirle. Pero no desde aquí, sino desde casa. ¿Iré más bien al Casino? No, a casa, a casa. Estas cosas desde casa, desde el hogar. ¿Hogar? Mi casa no es hogar. Hogar… hogar… ¡Cenicero más bien! ¡Ay, mi Eugenia!». Y se volvió Augusto a su casa.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0073_chap2">
-				<head>Capítulo 2</head>
+				<head xml:id="ne0073_head_004">Capítulo 2</head>
 				<p>Al abrirle el criado la puerta…</p>
 				<p>Augusto, que era rico y solo, pues su anciana madre había muerto no hacía sino seis meses antes de estos menudos sucedidos, vivía con un criado y una cocinera, sirvientes antiguos en la casa a hijos de otros que en ella misma habían servido. El criado y la cocinera estaban casados entre sí, pero no tenían hijos.</p>
 				<p>Al abrirle el criado la puerta le preguntó Augusto si en su ausencia había llegado alguien.</p>
@@ -401,7 +499,7 @@
 				<p>Y se encontró a la puerta del Casino, donde ya Víctor le esperaba para echar la cotidiana partida de ajedrez.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0073_chap3">
-				<head>Capítulo 3</head>
+				<head xml:id="ne0073_head_005">Capítulo 3</head>
 				<p>—Hoy te retrasaste un poco, chico —dijo Víctor a Augusto—, ¡tú, tan puntual siempre!</p>
 				<p>—Qué quieres… quehaceres…</p>
 				<p>—¿Quehaceres, tú?</p>
@@ -460,7 +558,7 @@
 				<p>«¡Pero esos diminutivos —pensó Augusto—, esos terribles diminutivos!». Y salió a la calle.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0073_chap4">
-				<head>Capítulo 4</head>
+				<head xml:id="ne0073_head_006">Capítulo 4</head>
 				<p>«¿Por qué el diminutivo es señal de cariño? —iba diciéndose Augusto camino de su casa—. ¿Es acaso que el amor achica la cosa amada? ¡Enamorado yo! ¡Yo enamorado! ¡Quién había de decirlo…! Pero ¿tendrá razón Víctor? ¿Seré un enamorado <seg rend="italic">ab initio</seg>? Tal vez mi amor ha precedido a su objeto. Es más, es este amor el que lo ha suscitado, el que lo ha extraído de la niebla de la creación. Pero si yo adelanto aquella torre no me da el mate, no me lo da. ¿Y qué es amor? ¿Quién definió el amor? Amor definido deja de serlo… Pero, Dios mío, ¿por qué permitirá el alcalde que empleen para los rótulos de los comercios tipos de letra tan feos como ese? Aquel alfil estuvo mal jugado. ¿Y cómo me he enamorado si en rigor no puedo decir que la conozco? Bah, el conocimiento vendrá después. El amor precede al conocimiento, y este mata a aquel. <seg rend="italic">Nihil volitum quin praecognitum</seg>, me enseñó el padre Zaramillo, pero yo he llegado a la conclusión contraria y es que <seg rend="italic">nihil cognitum quin praevolitum</seg>. Conocer es perdonar, dicen. No, perdonar es conocer. Primero el amor, el conocimiento después. Pero ¿cómo no vi que me daba mate al descubierto? Y para amar algo, ¿qué basta? ¡Vislumbrarlo! El vislumbre; he aquí la intuición amorosa, el vislumbre en la niebla. Luego viene el precisarse, la visión perfecta, el resolverse la niebla en gotas de agua o en granizo, o en nieve, o en piedra. La ciencia es una pedrea. ¡No, no, niebla, niebla! ¡Quién fuera águila para pasearse por los senos de las nubes! Y ver al sol a través de ellas, como lumbre nebulosa también.</p>
 				<p>»¡Oh, el águila! ¡Qué cosas se dirían el águila de Patmos, la que mira al sol cara a cara y no ve en la negrura de la noche, cuando escapándose de junto a san Juan se encontró con la lechuza de Minerva, la que ve en lo oscuro de la noche, pero no puede mirar al sol, y se había escapado del Olimpo!».</p>
 				<p>Al llegar a este punto cruzó Augusto con Eugenia y no reparó en ella.</p>
@@ -516,7 +614,7 @@
 				<p>Y quedóse dormido.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0073_chap5">
-				<head>Capítulo 5</head>
+				<head xml:id="ne0073_head_007">Capítulo 5</head>
 				<p>Cruzaba las nubes, águila refulgente, con las poderosas alas perladas de rocío, fijos los ojos de presa en la niebla solar, dormido el corazón en dulce aburrimiento al amparo del pecho forjado en tempestades; en derredor, el silencio que hacen los rumores remotos de la tierra, y allá en lo alto, en la cima del cielo, dos estrellas mellizas derramando bálsamo invisible. Desgarró el silencio un chillido estridente que decía: «¡La Correspondencia!…». Y vislumbró Augusto la luz de un nuevo día.</p>
 				<p>«¿Sueño o vivo? —se preguntó embozándose en la manta—. ¿Soy águila o soy hombre? ¿Qué dirá el papel ese? ¿Qué novedades me traerá el nuevo día consigo? ¿Se habrá tragado esta noche un terremoto a Corcubión? ¿Y por qué no a Leipzig? ¡Oh, la asociación lírica de ideas, el desorden pindárico! El mundo es un caleidoscopio. La lógica la pone el hombre. El supremo arte es el del azar. Durmamos, pues, un rato más». Y diose media vuelta en la cama.</p>
 				<p>¡La Correspondencia!… ¡El vinagrero! Y luego un coche, y después un automóvil, y unos chiquillos después.</p>
@@ -588,7 +686,7 @@
 				<p>Fue melancólico el almuerzo de aquel día, melancólico el paseo, la partida de ajedrez melancólica y melancólico el sueño de aquella noche.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0073_chap6">
-				<head>Capítulo 6</head>
+				<head xml:id="ne0073_head_008">Capítulo 6</head>
 				<p>«Tengo que tomar alguna determinación —se decía Augusto paseándose frente a la casa número 58 de la avenida de la Alameda—; esto no puede seguir así».</p>
 				<p>En aquel momento se abrió uno de los balcones del piso segundo, en que vivía Eugenia, y apareció una señora enjuta y cana con una jaula en la mano. Iba a poner el canario al sol. Pero al ir a ponerlo faltó el clavo y la jaula se vino abajo. La señora lanzó un grito de desesperación: «¡Ay, mi Pichín!». Augusto se precipitó a recoger la jaula. El pobre canario revolotaba dentro de ella despavorido.</p>
 				<p>Subió Augusto a la casa, con el canario agitándose en la jaula y el corazón en el pecho. La señora le esperaba.</p>
@@ -674,7 +772,7 @@
 				<p>—¡Bueno, se verá! —terminó la tía.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0073_chap7">
-				<head>Capítulo 7</head>
+				<head xml:id="ne0073_head_009">Capítulo 7</head>
 				<p>«¡Ay, Orfeo! —decía ya en su casa Augusto, dándole la leche a aquel—. ¡Ay, Orfeo! Di el gran paso, el paso decisivo; entré en su hogar, entré en el santuario. ¿Sabes lo que es dar un paso decisivo? Los vientos de la fortuna nos empujan y nuestros pasos son decisivos todos. ¿Nuestros? ¿Son nuestros esos pasos? Caminamos, Orfeo mío, por una selva enmarañada y bravía, sin senderos. El sendero nos lo hacemos con los pies según caminamos a la ventura. Hay quien cree seguir una estrella; yo creo seguir una doble estrella, melliza. Y esa estrella no es sino la proyección misma del sendero al cielo, la proyección del azar.</p>
 				<p>»¡Un paso decisivo! Y dime, Orfeo, ¿qué necesidad hay de que haya ni Dios ni mundo ni nada? ¿Por qué ha de haber algo? ¿No te parece que esa idea de la necesidad no es sino la forma suprema que el azar toma en nuestra mente?</p>
 				<p>»¿De dónde ha brotado Eugenia? ¿Es ella una creación mía o soy creación suya yo?, ¿o somos los dos creaciones mutuas, ella de mí y yo de ella? ¿No es acaso todo creación de cada cosa y cada cosa creación de todo? Y ¿qué es creación?, ¿qué eres tú, Orfeo?, ¿qué soy yo?</p>
@@ -689,7 +787,7 @@
 				<p>Como Orfeo no había visto nunca un telar, es muy difícil que entendiera a su amo. Pero mirándole a los ojos mientras hablaba adivinaba su sentir.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0073_chap8">
-				<head>Capítulo 8</head>
+				<head xml:id="ne0073_head_010">Capítulo 8</head>
 				<p>Augusto temblaba y sentíase como en un potro de suplicio en su asiento; entrábanle furiosas ganas de levantarse de él, pasearse por la sala aquella, dar manotadas al aire, gritar, hacer locuras de circo, olvidarse de que existía. Ni doña Ermelinda, la tía de Eugenia, ni don Fermín, su marido, el anarquista teórico y místico, lograban traerle a la realidad.</p>
 				<p>—Pues sí, yo creo —decía doña Ermelinda—, don Augusto, que esto es lo mejor, que usted se espere, pues ella no puede ya tardar en venir; la llamo, ustedes se ven y se conocen y este es el primer paso. Todas las relaciones de este género tienen que empezar por conocerse, ¿no es así?</p>
 				<p>—En efecto, señora —dijo, como quien habla desde otro mundo, Augusto—, el primer paso es verse y conocerse…</p>
@@ -793,7 +891,7 @@
 				<p>Y los dos miraron al suelo, como si el secreto de la felicidad estuviese debajo de él.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0073_chap9">
-				<head>Capítulo 9</head>
+				<head xml:id="ne0073_head_011">Capítulo 9</head>
 				<p>Al día siguiente de esto hablaba Eugenia en el reducido cuchitril de una portería con un joven, mientras la portera había salido discretamente a tomar el fresco a la puerta de la casa.</p>
 				<p>—Es menester que esto se acabe, Mauricio —decía Eugenia—; así no podemos seguir, y menos después de lo que te digo pasó ayer.</p>
 				<p>—Pero ¿no dices —dijo el llamado Mauricio— que ese pretendiente es un pobre panoli que vive en Babia?</p>
@@ -845,7 +943,7 @@
 				<p>Y salió Eugenia con la cabeza alta a la calle, donde en aquel momento un organillo de manubrio encentaba una rabiosa polca. «¡Horror!, ¡horror!, ¡horror!», se dijo la muchacha, y más que se fue huyó calle abajo.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0073_chap10">
-				<head>Capítulo 10</head>
+				<head xml:id="ne0073_head_012">Capítulo 10</head>
 				<p>Como Augusto necesitaba confidencia se dirigió al Casino, a ver a Víctor, su amigote, al día siguiente de aquella su visita a casa de Eugenia y a la misma hora en que esta espoleaba la pachorra amorosa de su novio en la portería.</p>
 				<p>Sentíase otro Augusto y como si aquella visita y la revelación en ella de la mujer fuerte —fluía de sus ojos fortaleza— le hubiera arado las entrañas del alma, alumbrando en ellas un manantial hasta entonces oculto. Pisaba con más fuerza, respiraba con más libertad.</p>
 				<p>«Ya tengo un objetivo, una finalidad en esta vida —se decía—, y es conquistar a esta muchacha o que ella me conquiste. Y es lo mismo. En amor lo mismo da vencer que ser vencido. Aunque ¡no… no! Aquí ser vencido es que me deje por el otro. Por el otro, sí, porque aquí hay otro, no me cabe duda. ¿Otro?, ¿otro qué? ¿Es que acaso yo soy uno? Yo soy un pretendiente, un solicitante, pero el otro… el otro se me antoja que no es ya pretendiente ni solicitante; que no pretende ni solicita porque ha obtenido. Claro que no más que el amor de la dulce Eugenia. ¿No más…?».</p>
@@ -906,7 +1004,7 @@
 				<p>Liduvina se calló, y Augusto se dijo: «¿Estaré de veras enamorado?».</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0073_chap11">
-				<head>Capítulo 11</head>
+				<head xml:id="ne0073_head_013">Capítulo 11</head>
 				<p>Cuando llamó aquel otro día Augusto a casa de don Fermín y doña Ermelinda, la criada le pasó a la salita diciéndole: «Ahora aviso». Quedóse un momento solo y como si estuviese en el vacío. Sentía una profunda opresión en el pecho. Ceñíale una angustiosa sensación de solemnidad. Sentóse para levantar al punto y se entretuvo en mirar los cuadros que colgaban de las paredes, un retrato de Eugenia entre ellos. Entráronle ganas de echar a correr, de escaparse. De pronto, al oír unos pasos menudos, sintió un puñal de hielo atravesarle el pecho y como una bruma invadirle la cabeza. Abrióse la puerta de la sala y apareció Eugenia. El pobre se apoyó en el respaldo de una butaca. Ella, al verle lívido, palideció un momento y se quedó suspensa en medio de la sala, y luego, acercándose a él, le dijo con voz seca y baja:</p>
 				<p>—¿Qué le pasa a usted, don Augusto, se pone malo?</p>
 				<p>—No, no es nada; qué sé yo…</p>
@@ -997,7 +1095,7 @@
 				<p>Y se salió solemnemente. Y no bien hubo salido gritó doña Ermelinda: ¡Chiquilla!</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0073_chap12">
-				<head>Capítulo 12</head>
+				<head xml:id="ne0073_head_014">Capítulo 12</head>
 				<p>—Señorito —entró un día después a decir a Augusto Liduvina—, ahí está la del planchado.</p>
 				<p>—¿La del planchado? ¡Ah, sí, que pase!</p>
 				<p>Entró la muchacha llevando el cesto del planchado de Augusto. Quedáronse mirándose, y ella, la pobre, sintió que se le encendía el rostro, pues nunca cosa igual le ocurrió en aquella casa en tantas veces como allí entró. Parecía antes como si el señorito ni la hubiese visto siquiera, lo que a ella, que creía conocerse, habíala tenido inquieta y hasta mohína. ¡No fijarse en ella! ¡No mirarla como la miraban otros hombres! ¡No devorarla con los ojos, o más bien lamerle con ellos los de ella y la boca y la cara toda!</p>
@@ -1071,7 +1169,7 @@
 				<p>Y cayó en el sueño.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0073_chap13">
-				<head>Capítulo 13</head>
+				<head xml:id="ne0073_head_015">Capítulo 13</head>
 				<p>Pocos días después de esto entró una mañana Liduvina en el cuarto de Augusto diciéndole que una señorita preguntaba por él.</p>
 				<p>—¿Una señorita?</p>
 				<p>—Sí, ella, la pianista.</p>
@@ -1139,7 +1237,7 @@
 				<p>Cuando al cabo Augusto se despidió de don Avito dirigióse al Casino. Quería despejar la niebla de su cabeza y la de su corazón echando una partida de ajedrez con Víctor.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0073_chap14">
-				<head>Capítulo 14</head>
+				<head xml:id="ne0073_head_016">Capítulo 14</head>
 				<p>Notó Augusto que algo insólito le ocurría a su amigo Víctor; no acertaba ninguna jugada, estaba displicente y silencioso.</p>
 				<p>—Víctor, algo te pasa…</p>
 				<p>—Sí, hombre, sí; me pasa una cosa grave. Y como necesito desahogo, vamos fuera; la noche está muy hermosa; te lo contaré.</p>
@@ -1214,7 +1312,7 @@
 				<p>Cuando al entrar en casa salió saltando a recibirle Orfeo, le cogió, le tentó bien el gaznate, y apretándole el seno le dijo: «Cuidado con los huesos, Orfeo, mucho cuidadito con ellos, ¿eh? No quiero que te atragantes con uno; no quiero verte morir a mis ojos suplicándome vida. Ya ves, Orfeo, don Avito, el pedagogo, se ha convertido a la religión de sus abuelos… ¡es la herencia! Y Víctor no se resigna a ser padre. Aquel no se consuela de haber perdido a su hijo y este no se consuela de ir a tenerlo. Y ¡qué ojos, Orfeo, qué ojos! Cómo le fulguraban cuando me dijo: "¡Quiere usted comprarme!, ¡quiere usted comprar no mi amor, que ese no se compra, sino mi cuerpo! ¡Quédese con mi casa!" ¡Comprar yo su cuerpo… su cuerpo…! ¡Si me sobra el mío, Orfeo, me sobra el mío! Lo que yo necesito es alma, alma, alma. Y una alma de fuego, como la que irradia de los ojos de ella, de Eugenia. ¡Su cuerpo… su cuerpo… sí, su cuerpo es magnífico, espléndido, divino; pero es que su cuerpo es alma, alma pura, todo él vida, todo él significación, todo él idea! A mí me sobra el cuerpo, Orfeo, me sobra el cuerpo porque me falta alma. O ¿no es más bien que me falta alma porque me sobra cuerpo? Yo me toco el cuerpo, Orfeo, me lo palpo, me lo veo, pero ¿el alma?, ¿dónde está mi alma?, ¿es que la tengo? Sólo la sentí resollar un poco cuando tuve aquí abrazada, sobre mis rodillas, a Rosario, a la pobre Rosario; cuando ella lloraba y lloraba yo. Aquellas lágrimas no podían salir de mi cuerpo; salían de mi alma. El alma es un manantial que sólo se revela en lágrimas. Hasta que se llora de veras no se sabe si se tiene o no alma. Y ahora vamos a dormir, Orfeo, si es que nos dejan».</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0073_chap15">
-				<head>Capítulo 15</head>
+				<head xml:id="ne0073_head_017">Capítulo 15</head>
 				<p>—Pero ¿qué has hecho, chiquilla? —preguntó doña Ermelinda a su sobrina.</p>
 				<p>—¿Qué he hecho? Lo que usted, si es que tiene vergüenza, habría hecho en mi caso; estoy de ello segura. ¡Querer comprarme!, ¡querer comprarme a mí!</p>
 				<p>—Mira, chiquilla, es siempre mucho mejor que quieran comprarla a una que no es el que quieran venderla, no lo dudes.</p>
@@ -1292,7 +1390,7 @@
 				<p>Doña Ermelinda llamó a la criada, a la que dijo que llamase a Eugenia, pues don Augusto deseaba hablar con ella. «La señorita acaba de salir», contestó la criada.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0073_chap16">
-				<head>Capítulo 16</head>
+				<head xml:id="ne0073_head_018">Capítulo 16</head>
 				<p>—Eres imposible, Mauricio —le decía Eugenia a su novio, en el cuchitril aquel de la portería—, completamente imposible, y si sigues así, si no sacudes esa pachorra, si no haces algo para buscarte una colocación y que podamos casarnos, soy capaz de cualquier disparate.</p>
 				<p>—¿De qué disparate? Vamos, di, rica —y le acariciaba el cuello ensortijándose en uno de sus dedos un rizo de la nuca de la muchacha.</p>
 				<p>—Mira, si quieres, nos casamos así y yo seguiré trabajando… para los dos.</p>
@@ -1373,7 +1471,7 @@
 				<p>—¡Quién sabe!… Pero lo dudo, porque tiene un geniecito… Y hoy la ofendí, la verdad, la ofendí.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0073_chap17">
-				<head>Capítulo 17</head>
+				<head xml:id="ne0073_head_019">Capítulo 17</head>
 				<p>—¿Te acuerdas, Augusto —le decía Víctor—, de aquel don Eloíno Rodríguez de Alburquerque y Álvarez de Castro?</p>
 				<p>—¿Aquel empleado de Hacienda tan aficionado a correrla, sobre todo de lo baratito?</p>
 				<p>—El mismo. Pues bien… ¡se ha casado!</p>
@@ -1439,7 +1537,7 @@
 				<p>—Voy allá.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0073_chap18">
-				<head>Capítulo 18</head>
+				<head xml:id="ne0073_head_020">Capítulo 18</head>
 				<p>—¡Hola, Rosarito! —exclamó Augusto apenas la vio.</p>
 				<p>—Buenas tardes, don Augusto —y la voz de la muchacha era serena y clara y no menos clara y serena su mirada.</p>
 				<p>—¿Cómo no has despachado con Liduvina como otras veces en que yo no estoy en casa cuando llegas?</p>
@@ -1504,7 +1602,7 @@
 				<p>«Y luego dormiré hoy, como los otros días, y dormirá ella. ¿Dormirá Rosarito? ¿No habré turbado la tranquilidad de su espíritu? Y esa naturalidad suya, ¿es inocencia o es malicia? Pero acaso no hay nada más malicioso que la inocencia, o bien, más inocente que la malicia. Sí, sí, ya me suponía yo que en el fondo no hay nada más… más… ¿cómo lo diré?… más cínico que la inocencia. Sí, esa tranquilidad con que se me entregaba, eso que hizo me entrara miedo, miedo, no sé bien de qué, eso no era sino inocencia. Y lo de: "¿Y aquella mujer?", celos, ¿eh?, ¿celos? Probablemente no nace el amor sino al nacer los celos; son los celos los que nos revelan el amor. Por muy enamorada que esté una mujer de un hombre, o un hombre de una mujer, no se dan cuenta de que lo están, no se dicen a sí mismos que lo están, es decir, no se enamoran de veras sino cuando él ve que ella mira a otro hombre o ella le ve a él mirar a otra mujer. Si no hubiese más que un solo hombre y una sola mujer en el mundo, sin más sociedad, sería imposible que se enamorasen uno de otro. Además de que hace siempre falta la tercera, la Celestina, y la Celestina es la sociedad. ¡El Gran Galeoto! ¡Y qué bien está eso! ¡Sí, el Gran Galeoto! Aunque sólo fuese por el lenguaje. Y por esto es todo eso del amor una mentira más. ¿Y el fisiológico? ¡Bah, eso fisiológico no es amor ni cosa que lo valga! ¡Por eso es verdad! Pero… vamos, Orfeo, vamos a cenar. ¡Esto sí que es verdad!».</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0073_chap19">
-				<head>Capítulo 19</head>
+				<head xml:id="ne0073_head_021">Capítulo 19</head>
 				<p>A los dos días de esto anunciáronle a Augusto que una señora deseaba verle y hablarle. Salió a recibirla y se encontró con doña Ermelinda, que al: «¿usted por aquí?» de Augusto, contestó con un: «¡como no ha querido volver a vernos…!».</p>
 				<p>—Usted comprende, señora —contestó Augusto—, que después de lo que me ha pasado en su casa las dos últimas veces que he ido, la una con Eugenia a solas y la otra cuando no quiso verme, no debía volver. Yo me atengo a lo hecho y lo dicho, pero no puedo volver por allí…</p>
 				<p>—Pues traigo una misión para usted de parte de Eugenia…</p>
@@ -1569,7 +1667,7 @@
 				<p>Levantóse y empezó a recorrer calles como un sonámbulo.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0073_chap20">
-				<head>Capítulo 20</head>
+				<head xml:id="ne0073_head_022">Capítulo 20</head>
 				<p>Emprendería el viaje, ¿sí o no? Ya lo había anunciado primero a Rosarito, sin saber bien lo que se decía, por decir algo, o más bien como un pretexto para preguntarle si le acompañaría en él, y luego a doña Ermelinda, para probarle… ¿qué?, ¿qué es lo que pretendió probarle con aquello de que iba a emprender un viaje? ¡Lo que fuese! Mas era el caso que había soltado por dos veces prenda, que había dicho que iba a emprender un viaje largo y lejano y él era hombre de carácter, él era él; ¿tenía que ser hombre de palabra?</p>
 				<p>Los hombres de palabra primero dicen una cosa y después la piensan, y por último la hacen, resulte bien o mal luego de pensada; los hombres de palabra no se rectifican ni se vuelven atrás de lo que una vez han dicho. Y él dijo que iba a emprender un viaje largo y lejano.</p>
 				<p>¡Un viaje largo y lejano! ¿Por qué?, ¿para qué?, ¿cómo?, ¿adónde?</p>
@@ -1704,7 +1802,7 @@
 				<p>—Así me llamaba el último amo que tuve antes. Pero yo creo lo que le ha dicho mi Liduvina, que usted debe dedicarse a la política.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0073_chap21">
-				<head>Capítulo 21</head>
+				<head xml:id="ne0073_head_023">Capítulo 21</head>
 				<p>—Sí, tiene usted razón —le decía don Antonio a Augusto aquella tarde, en el Casino, hablando a solas, en un rinconcito—, tiene usted razón, hay un misterio doloroso, dolorosisímo en mi vida. Usted ha adivinado algo. Pocas veces ha visitado usted mi pobre hogar… ¿hogar?, pero habrá notado…</p>
 				<p>—Sí, algo extraño, yo no sé qué tristeza flotante que me atraía a él…</p>
 				<p>—A pesar de mis hijos, de mis pobres hijos, a usted le habrá parecido un hogar sin hijos, acaso sin esposos…</p>
@@ -1737,7 +1835,7 @@
 				<p>—No hemos querido volver a saber. Y luego nuestra Rita es una mujercita ya; el mejor día se nos casa… Con mi nombre, por supuesto, con mi nombre, y haga luego la ley lo que quiera. Es mi hija y no del ladrón; yo la he criado.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0073_chap22">
-				<head>Capítulo 22</head>
+				<head xml:id="ne0073_head_024">Capítulo 22</head>
 				<p>—Y bien, ¿qué? —le preguntaba Augusto a Víctor ¿cómo habéis recibido al intruso?</p>
 				<p>—¡Ah, nunca lo hubiese creído, nunca! Todavía la víspera de nacer nuestra irritación era grandísima. Y mientras estaba pugnando por venir al mundo no sabes bien los insultos que me lanzaba mi Elena. «¡Tú, tú tienes la culpa, tú!», me decía. Y otras veces: «¡Quítate de delante, quítate de mi vista! ¿No te da vergüenza de estar aquí? Si me muero, tuya será la culpa». Y otras veces: «¡Esta y no más, esta y no más!». Pero nació y todo ha cambiado. Parece como si hubiésemos despertado de un sueño y como si acabáramos de casarnos. Yo me he quedado ciego, talmente ciego; ese chiquillo me ha cegado. Tan ciego estoy, que todos dicen que mi Elena ha quedado con la preñez y el parto desfiguradísima, que está hecha un esqueleto y que ha envejecido lo menos diez años, y a mí me parece más fresca, más lozana, más joven y hasta más metida en carnes que nunca.</p>
 				<p>—Eso me recuerda, Víctor, la leyenda del fogueteiro que tengo oída en Portugal.</p>
@@ -1779,7 +1877,7 @@
 				<p>En la calle acercósele un mendigo diciéndole: «¡Una limosna, por Dios, señorito, que tengo siete hijos…!». «¡No haberlos hecho!», le contestó malhumorado Augusto. «Ya quisiera yo haberle visto a usted en mi caso —replicó el mendigo, añadiendo—: y ¿qué quiere usted que hagamos los pobres si no hacemos hijos… para los ricos?». «Tienes razón —replicó Augusto—, y por filósofo, ¡ahí va, toma!», y le dio una peseta, que el buen hombre se fue al punto a gastar a la taberna próxima.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0073_chap23">
-				<head>Capítulo 23</head>
+				<head xml:id="ne0073_head_025">Capítulo 23</head>
 				<p>El pobre Augusto estaba consternado. No era sólo que se encontrase, como el asno de Buridán, entre Eugenia y Rosario; era que aquello de enamorarse de casi todas las que veía, en vez de amenguársele, íbale en medro. Y Ilegó a descubrir cosas fatales.</p>
 				<p>—¡Vete, vete, Liduvina, por Dios! ¡Vete, déjame solo! ¡Anda, vete! —le decía una vez a su criada.</p>
 				<p>Y apenas ella se fue, apoyó los codos sobre la mesa, la cabeza en las palmas de las manos, y se dijo: «¡Esto es terrible, verdaderamente terrible! ¡Me parece que sin darme cuenta de ello me voy enamorando… hasta de Liduvina! ¡Pobre Domingo! Sin duda. Ella, a pesar de sus cincuenta años, aún está de buen ver, y sobre todo bien metida en carnes, y cuando alguna vez sale de la cocina con los brazos remangados y tan redondos… ¡Vamos, que esto es una locura! ¡Y esa doble barbilla y esos pliegues que se le hacen en el cuello…! Esto es terrible, terrible, terrible…».</p>
@@ -1849,7 +1947,7 @@
 				<p>—Tal es mi propósito.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0073_chap24">
-				<head>Capítulo 24</head>
+				<head xml:id="ne0073_head_026">Capítulo 24</head>
 				<p>Cuando salió Augusto de su entrevista con Paparrigópulos íbase diciendo: «De modo que tengo que renunciar a una de las dos o buscar una tercera. Aunque para esto del estudio psicológico bien me puede servir de tercer término, de término puramente ideal de comparación, Liduvina. Tengo, pues, tres: Eugenia, que me habla a la imaginación, a la cabeza; Rosario, que me habla al corazón, y Liduvina, mi cocinera, que me habla al estómago. Y cabeza, corazón y estómago son las tres facultades del alma que otros llaman inteligencia, sentimiento y voluntad. Se piensa con la cabeza, se siente con el corazón y se quiere con el estómago. ¡Esto es evidente! Y ahora…».</p>
 				<p>«Ahora —prosiguió pensando—, ¡una idea luminosa, luminosísima! Voy a fingir que quiero pretender de nuevo a Eugenia, voy a solicitarla de nuevo, a ver si me admite de novio, de futuro marido, claro que no más que para probarla, como un experimento psicológico y seguro como estoy de que ella me rechazará… ¡pues no faltaba más! Tiene que rechazarme. Después de lo pasado, después de lo que en nuestra última entrevista me dijo, no es posible ya que me admita. Es una mujer de palabra, creo. Mas… ¿es que las mujeres tienen palabra?, ¿es que la mujer, la Mujer, así, con letra mayúscula, la única, la que se reparte entre millones de cuerpos femeninos y más o menos hermosos —más bien más que menos—; es que la Mujer está obligada a guardar su palabra? Eso de guardar su palabra, ¿no es acaso masculino? Pero ¡no, no! Eugenia no puede admitirme; no me quiere. No me quiere y aceptó ya mi dádiva. Y si aceptó mi dádiva y la disfruta, ¿para qué va a quererme?».</p>
 				<p>«Pero… ¿y si, volviéndose atrás de lo que me dijo —pensó luego—, me dice que sí y me acepta como novio, como futuro marido? Porque hay que ponerse en todo. ¿Y si me acepta?, digo. ¡Me fastidia! ¡Me pesca con mi propio anzuelo! ¡Eso sí que sería el pescador pescado! Pero ¡no, no!, ¡no puede ser! ¿Y si es? ¡Ah!, entonces no queda sino resignarse. ¿Resignarse? Sí, resignarse. Hay que saber resignarse a la buena fortuna. Y acaso la resignación a la dicha es la ciencia más difícil. ¿No nos dice Píndaro que las desgracias todas de Tántalo le provinieron de no haber podido digerir su felicidad? ¡Hay que digerir la felicidad! Y si Eugenia me dice que sí, si me acepta, entonces… ¡venció la psicología! ¡Viva la psicología! Pero ¡no, no, no! No me aceptará, no puede aceptarme, aunque sólo sea por salirse con la suya. Una mujer como Eugenia no da su brazo a torcer; la Mujer, cuando se pone frente al Hombre a ver cuál es de más tesón y constancia en sus propósitos, es capaz de todo. ¡No, no me aceptará!».</p>
@@ -1911,7 +2009,7 @@
 				<p>Después de haberse desahogado con estas meditaciones callejeras, por en medio de la atareada muchedumbre indiferente a sus cuitas, sintióse ya tranquilo y se volvió a casa.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0073_chap25">
-				<head>Capítulo 25</head>
+				<head xml:id="ne0073_head_027">Capítulo 25</head>
 				<p>Fue Augusto a ver a Víctor, a acariciar al tardío hijo de este, a recrearse en la contemplación de la nueva felicidad de aquel hogar, y de paso a consultar con él sobre el estado de su espíritu. Y al encontrarse con su amigo a solas, le dijo:</p>
 				<p>—¿Y de aquella novela o… cómo era… ¡ah, sí, nivola!… que estabas escribiendo? Supongo que ahora, con lo del hijo, la habrás abandonado.</p>
 				<p>—Pues supones mal. Precisamente por eso, por ser ya padre, he vuelto a ella. Y en ella desahogo el buen humor que me llena.</p>
@@ -1968,7 +2066,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0073_chap26">
-				<head>Capítulo 26</head>
+				<head xml:id="ne0073_head_028">Capítulo 26</head>
 				<p>Augusto se dirigió a casa de Eugenia dispuesto a tentar la última experiencia psicológica, la definitiva, aunque temiendo que ella le rechazase. Y encontróse con ella en la escalera, que bajaba para salir cuando él subía para entrar.</p>
 				<p>—¿Usted por aquí, don Augusto?</p>
 				<p>—Sí, yo; mas puesto que tiene usted que salir, lo dejaré para otro día; me vuelvo.</p>
@@ -2033,7 +2131,7 @@
 				<p>—¡Y qué remedio! —se le escapó al pobre rana.</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0073_chap27">
-				<head>Capítulo 27</head>
+				<head xml:id="ne0073_head_029">Capítulo 27</head>
 				<p>Empezó entonces para Augusto una nueva vida. Casi todo el día se lo pasaba en casa de su novia y estudiando no psicología, sino estética.</p>
 				<p>¿Y Rosario? Rosario no volvió por su casa. La siguiente vez que le llevaron la ropa planchada fue otra la que se la llevó, una mujer cualquiera. Y apenas se atrevió a preguntar por qué no venía ya Rosario. ¿Para qué, si lo adivinaba? Y este desprecio, porque no era sino desprecio, bien lo conocía y, lejos de dolerle, casi le hizo gracia. Bien. Bien se desquitaría él en Eugenia. Que, por supuesto, seguía con lo de: «¡Eh, cuidadito y manos quedas!». ¡Buena era ella para otra cosa!</p>
 				<p>Eugenia le tenía a ración de vista y no más que de vista, encendiéndole el apetito. Una vez le dijo él:</p>
@@ -2115,7 +2213,7 @@
 				<p>Y, en efecto, pudo encontrarle el empleo y conseguir que le destinasen bastante lejos.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0073_chap28">
-				<head>Capítulo 28</head>
+				<head xml:id="ne0073_head_030">Capítulo 28</head>
 				<p>Torció el gesto Augusto cuando una mañana le anunció Liduvina que un joven le esperaba y se encontró luego con que era Mauricio. Estuvo por despedirlo sin oírle, pero le atraía aquel hombre que fue en un tiempo novio de Eugenia, al que esta quiso y acaso seguía queriendo en algún modo; aquel hombre que tal vez sabía de la que iba a ser mujer de él, de Augusto, intimidades que este ignoraba; de aquel hombre que… Había algo que les unía.</p>
 				<p>—Vengo, señor —empezó sumisamente Mauricio—, a darle las gracias por el favor insigne que merced a la mediación de Eugenia usted se ha dignado otorgarme…</p>
 				<p>—No tiene usted de qué darme las gracias, señor mío, y espero que en adelante dejará usted en paz a la que va a ser mi mujer.</p>
@@ -2175,7 +2273,7 @@
 				<p>Y le apretó contra su seno, y el perro, que parecía en efecto llorar, le lamía la barba.</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0073_chap29">
-				<head>Capítulo 29</head>
+				<head xml:id="ne0073_head_031">Capítulo 29</head>
 				<p>Todo estaba dispuesto ya para la boda. Augusto la quería recogida y modesta, pero ella, su mujer futura, parecía preferir que se le diese más boato y resonancia.</p>
 				<p>A medida que se acercaba aquel plazo, el novio ardía por tomarse ciertas pequeñas libertades y confianzas, y ella, Eugenia, se mantenía más en reserva.</p>
 				<p>—Pero ¡si dentro de unos días vamos a ser el uno del otro, Eugenia!</p>
@@ -2232,7 +2330,7 @@
 				<p>Y se encerró en su cuarto. Y a la vez que las imágenes de Eugenia y de Mauricio presentábase a su espíritu la de Rosario, que también se burlaba de él. Y recordaba a su madre. Se echó sobre la cama, mordió la almohada, no acertaba a decirse nada concreto, se le enmudeció el monólogo, sintió como si se le acorchase el alma y rompió a llorar. Y lloró, lloró, lloró. Y en el llanto silencioso se le derretía el pensamiento.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0073_chap30">
-				<head>Capítulo 30</head>
+				<head xml:id="ne0073_head_032">Capítulo 30</head>
 				<p>Víctor encontró a Augusto hundido en un rincón de un sofá, mirando más abajo del suelo.</p>
 				<p>—¿Qué es eso? —le preguntó poniéndole una mano sobre el hombro.</p>
 				<p>—Y ¿me preguntas qué es esto? ¿No sabes lo que me ha pasado?</p>
@@ -2330,7 +2428,7 @@
 				<p>Y se salió Víctor, dejando a Augusto perdido y confundido en sus cavilaciones.</p>
 			</div>
 			<div n="31" type="chapter" xml:id="ne0073_chap31">
-				<head>Capítulo 31</head>
+				<head xml:id="ne0073_head_033">Capítulo 31</head>
 				<p>Aquella tempestad del alma de Augusto terminó, como en terrible calma, en decisión de suicidarse. Quería acabar consigo mismo, que era la fuente de sus desdichas propias. Mas antes de llevar a cabo su propósito, como el náufrago que se agarra a una débil tabla, ocurriósele consultarlo conmigo, con el autor de todo este relato. Por entonces había leído Augusto un ensayo mío en que, aunque de pasada, hablaba del suicidio, y tal impresión pareció hacerle, así como otras cosas que de mí había leído, que no quiso dejar este mundo sin haberme conocido y platicado un rato conmigo. Emprendió, pues, un viaje acá, a Salamanca, donde hace más de veinte años vivo, para visitarme.</p>
 				<p>Cuando me anunciaron su visita sonreí enigmáticamente y le mandé pasar a mi despacho-librería. Entró en él como un fantasma, miró a un retrato mío al óleo que allí preside a los libros de mi librería, y a una seña mía se sentó, frente a mí.</p>
 				<p>Empezó hablándome de mis trabajos literarios y más o menos filosóficos, demostrando conocerlos bastante bien, lo que no dejó, ¡claro está!, de halagarme, y en seguida empezó a contarme su vida y sus desdichas. Le atajé diciéndole que se ahorrase aquel trabajo, pues de las vicisitudes de su vida sabía yo tanto como él, y se lo demostré citándole los más íntimos pormenores y los que él creía más secretos. Me miró con ojos de verdadero terror y como quien mira a un ser increíble; creí notar que se le alteraba el color y traza del semblante y que hasta temblaba. Le tenía yo fascinado.</p>
@@ -2437,7 +2535,7 @@
 				<p>Y le empujé a la puerta, por la que salió cabizbajo. Luego se tanteó como si dudase ya de su propia existencia. Yo me enjugué una lágrima furtiva.</p>
 			</div>
 			<div n="32" type="chapter" xml:id="ne0073_chap32">
-				<head>Capítulo 32</head>
+				<head xml:id="ne0073_head_034">Capítulo 32</head>
 				<p>Aquella misma noche se partió Augusto de esta ciudad de Salamanca adonde vino a verme. Fuese con la sentencia de muerte sobre el corazón y convencido de que no le sería ya hacedero, aunque lo intentara, suicidarse. El pobrecillo, recordando mi sentencia, procuraba alargar lo más posible su vuelta a su casa, pero una misteriosa atracción, un impulso íntimo le arrastraba a ella. Su viaje fue lamentable. Iba en el tren contando los minutos, pero contándolos al pie de la tetra: uno, dos, tres, cuatro… Todas sus desventuras, todo el triste ensueño de sus amores con Eugenia y con Rosario, toda la historia tragicómica de su frustrado casamiento habíanse borrado de su memoria o habíanse más bien fundido en una niebla. Apenas si sentía el contacto del asiento sobre que descansaba ni el peso de su propio cuerpo. «¿Será verdad que no existo realmente? —se decía— ¿tendrá razón este hombre al decir que no soy más que un producto de su fantasía, un puro ente de ficción?».</p>
 				<p>Tristísima, dolorosísima había sido últimamente su vida, pero le era mucho más triste, le era más doloroso pensar que todo ello no hubiese sido sino sueño, y no sueño de él, sino sueño mío. La nada le parecía más pavorosa que el dolor. ¡Soñar uno que vive… pase, pero que le sueñe otro…!</p>
 				<p>«Y ¿por qué no he de existir yo? —se decía—, ¿por qué? Supongamos que es verdad que ese hombre me ha fingido, me ha soñado, me ha producido en su imaginación; pero ¿no vivo ya en las de otros, en las de aquellos que lean el relato de mi vida? Y si vivo así en las fantasías de varios, ¿no es acaso real lo que es de varios y no de uno solo? Y ¿por qué surgiendo de las páginas del libro en que se deposite el relato de mi ficticia vida, o más bien de las mentes de aquellos que la lean —de vosotros, los que ahora la leéis—, por qué no he de existir como un alma eterna y eternamente dolorosa?, ¿por qué?».</p>
@@ -2561,7 +2659,7 @@
 				<p>Domingo lloraba.</p>
 			</div>
 			<div n="33" type="chapter" xml:id="ne0073_chap33">
-				<head>Capítulo 33</head>
+				<head xml:id="ne0073_head_035">Capítulo 33</head>
 				<p>Cuando recibí el telegrama comunicándome la muerte del pobre Augusto, y supe luego las circunstancias todas de ella, me quedé pensando en si hice o no bien en decirle lo que le dije la tarde aquella en que vino a visitarme y consultar conmigo su propósito de suicidarse. Y hasta me arrepentí de haberle matado. Llegué a pensar que tenía él razón y que debí haberle dejado salirse con la suya, suicidándose. Y se me ocurrió si le resucitaría.</p>
 				<p>«Sí —me dije—, voy a resucitarle y que haga luego lo que se le antoje, que se suicide si es así su capricho». Y con esta idea de resucitarle me quedé dormido.</p>
 				<p>A poco de haberme dormido se me apareció Augusto en sueños. Estaba blanco, con la blancura de una nube, y sus contornos iluminados como por un sol poniente. Me miró fijamente y me dijo:</p>
@@ -2593,7 +2691,7 @@
 		</body>
 		<back>
 			<div>
-				<head>Oración fúnebre por modo de epílogo</head>
+				<head xml:id="ne0073_head_036">Oración fúnebre por modo de epílogo</head>
 				<p>Suele ser costumbre al final de las novelas y luego que muere o se casa el héroe o protagonista dar noticia de la suerte que corrieron los demás personajes. No la vamos a seguir aquí ni a dar por consiguiente noticia alguna de cómo les fue a Eugenia y Mauricio, a Rosario, a Liduvina y Domingo; a don Fermín y doña Ermelinda, a Víctor y su mujer y a todos los demás que en tomo a Augusto se nos han presentado, ni vamos siquiera a decir lo que de la singular muerte de este sintieron y pensaron. Sólo haremos una excepción y es en favor del que más honda y más sinceramente sintió la muerte de Augusto, que fue su perro, Orfeo.</p>
 				<p>Orfeo, en efecto, encontróse huérfano. Cuando saltando en la cama olió a su amo muerto, olió la muerte de su amo, envolvió a su espíritu perruno una densa nube negra. Tenía experiencia de otras muertes, había olido y visto perros y gatos muertos, había matado algún ratón, había olido muertes de hombres, pero a su amo le creía inmortal. Porque su amo era para él como un dios. Y al sentirle ahora muerto sintió que se desmoronaban en su espíritu los fundamentos todos de su fe en la vida y en el mundo, y una inmensa desolación llenó su pecho.</p>
 				<p>Y acurrucado a los pies de su amo muerto pensó así: «¡Pobre amo mío!, ¡pobre amo mío! ¡Se ha muerto; se me ha muerto! ¡Se muere todo, todo, todo; todo se me muere! Y es peor que se me muera todo a que me muera para todo yo. ¡Pobre amo mío!, ¡pobre amo mío! Esto que aquí yace, blanco, frío, con olor a próxima podredumbre, a carne de ser comida, esto ya no es mi amo. No, no lo es. ¿Dónde se fue mi amo?, ¿dónde el que me acariciaba, el que me hablaba?</p>

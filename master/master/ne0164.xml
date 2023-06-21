@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La Barraca</title>
-				<title type="sub"></title>
+				
 				<title type="short">Barraca</title>
-				<title type="idno">
-					<idno type="viaf">191735765</idno></title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1251</measure>
@@ -139,13 +131,98 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0164</idno>
+						<idno type="cligs">ne0164</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2005"></date>, <idno>14944</idno>, <ref target="http://www.gutenberg.org/ebooks/14944"/>.</bibl>
-				<bibl type="print-source">Valencia, <date when="1898"></date></bibl>
-				<bibl type="edition-first"><date when="1898">1898</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La Barraca</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/191735765/">191735765</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4605481-9">4605481-9</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2005"/>, <idno>14944</idno>, <ref target="http://www.gutenberg.org/ebooks/14944"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Valencia</pubPlace>, <date when="1898"/></bibl>
+					<bibl type="edition-first"><date when="1898">1898</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1899">1899</date>, <publisher>Fé</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1400950538" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1400950538"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1899">1899</date>, <publisher>Fé</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="468607447" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468607447"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">Novela</title> <date when="1899">1899</date>, <publisher>Fé</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="194768732" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=194768732"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Terres maudites</title>: 	<title type="sub">Roman</title> <date when="1902">1902</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="133570471X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133570471X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1903">1903</date>, <publisher>Sempere</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350941653" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350941653"/> </bibl>
+						<bibl type="further-edition" xml:lang="rus"><title type="main">Krov' i pesok</title> <date when="1911">1911</date>, <publisher>Sfinks</publisher> <pubPlace>Moskva</pubPlace> 		<idno type="ppn" n="1445916665" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1445916665"/> </bibl>
+						<bibl type="further-edition"><title type="main">La barraca</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1177462230" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1177462230"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="531898237" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=531898237"/> </bibl>
+						<bibl type="further-edition"><title type="main">La barraca</title>: 	<title type="sub">Novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445657804" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657804"/> </bibl>
+						<bibl type="further-edition"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="083732624" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083732624"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1920">1920</date>, <publisher>La novela ilustrada</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="531882454" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=531882454"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464279399" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464279399"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464279267" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464279267"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">(novela)</title> <date when="1924">1924</date>, <publisher>Ed. Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="733463665" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=733463665"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">(novela)</title> <date when="1924">1924</date>, <publisher>Ed. Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="506641112" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=506641112"/> </bibl>
+						<bibl type="further-edition"><title type="main">La barraca</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1145771777" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1145771777"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1925">1925</date>, <publisher>Henry Holt</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="46514330X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46514330X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="22631717X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=22631717X"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Valencia</title>: 	<title type="sub">die zwei Romane: Flor de Mayo und Die Huerta (Barraca)</title> <date when="1928">1928</date>, <publisher>Füssli</publisher> <pubPlace>Zürich;Leipzig</pubPlace> 		<idno type="ppn" n="1434597075" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1434597075"/> </bibl>
+						<bibl type="further-edition"><title type="main">Die Huerta ( Barraca)</title> <date when="1928">1928</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="782706061" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=782706061"/> </bibl>
+						<bibl type="further-edition"><title type="main">En la Huerta valenciana</title> <date when="1930">1930</date>, <publisher>Maukisch</publisher> <pubPlace>Freiberg i. Sa.</pubPlace> 		<idno type="ppn" n="464348455" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464348455"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Scholle</title> <date when="1932">1932</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="464685699" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464685699"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Scholle</title> <date when="1932">1932</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="021054630" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=021054630"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">novela</title> <date when="1936">1936</date>, <publisher>Ed. Ulam;Empresa Chas in Kommision</publisher> <pubPlace>Santiago de Chile</pubPlace> 		<idno type="ppn" n="464523400" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464523400"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The cabin</title> <date when="1938">1938</date>, <publisher>Alfred A. Knopf</publisher> <pubPlace>New York</pubPlace> 		<idno type="ppn" n="464695678" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464695678"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Terres maudites</title>: 	<title type="sub">Roman</title> <date when="1946">1946</date>, <publisher>Calmann-Lévy</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="113030275X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=113030275X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1950">1950</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="520712323" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520712323"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Scholle</title> <date when="1950">1950</date>, <publisher>Paul List</publisher> <pubPlace>Leipzig;München</pubPlace> 		<idno type="ppn" n="464763347" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464763347"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1955">1955</date>, <publisher>Editora Interamerica</publisher> <pubPlace>Santiago</pubPlace> 		<idno type="ppn" n="265382149" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=265382149"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Tres novelas valencianas</title>: 	<title type="sub">Arroz y tartana, La barraca, Cañas y barro</title> <date when="1958">1958</date>, <publisher>Ed. Plenitud</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="350940010" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350940010"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title>: 	<title type="sub">(novela)</title> <date when="1963">1963</date>, <publisher>Ed. del Consejo Nacional de Cultura</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="445657812" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445657812"/> </bibl>
+						<bibl type="further-edition" xml:lang="rus"><title type="main">Chutor</title> <date when="1967">1967</date>, <publisher>Chud. Lit.</publisher> <pubPlace>Leningrad</pubPlace> 		<idno type="ppn" n="1123588309" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1123588309"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1967">1967</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="520712439" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520712439"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1973">1973</date>, <publisher>Ed. de Arte y Lit.</publisher> <pubPlace>La Habana</pubPlace> 		<idno type="ppn" n="1173427422" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1173427422"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Blasco Ibáñez</title>: 	<title type="sub">La barraca</title> <date when="1973">1973</date>, <publisher>Grant &amp; Cutler;Tamesis Books</publisher> <pubPlace>London</pubPlace> 		<idno type="ppn" n="233046305" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=233046305"/> 		<idno type="isbn" n="0900411643"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1977">1977</date>, <publisher>Plaza &amp; Janes</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1620899213" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1620899213"/> 		<idno type="isbn" n="8401805422"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1979">1979</date>, <publisher>Plaza &amp; Janes</publisher> <pubPlace>Esplugas de Llobregat (Barcelona)</pubPlace> 		<idno type="ppn" n="362854998" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=362854998"/> 		<idno type="isbn" n="8401805422"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1982">1982</date>, <publisher>Ed. Orbis</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="537968776" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=537968776"/> 		<idno type="isbn" n="8475300758"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1988">1988</date>, <publisher>Plaza &amp; Janes</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="010415343" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=010415343"/> 		<idno type="isbn" n="8401921023;8401929431"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Scholle</title>: 	<title type="sub">Roman</title> <date when="1989">1989</date>, <publisher>Rowohlt</publisher> <pubPlace>Reinbek bei Hamburg</pubPlace> 		<idno type="ppn" n="1647601754" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1647601754"/> 		<idno type="isbn" n="3499400618"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Scholle</title>: 	<title type="sub">Roman</title> <date when="1989">1989</date>, <publisher>Rowohlt</publisher> <pubPlace>Reinbek bei Hamburg</pubPlace> 		<idno type="ppn" n="157805050" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=157805050"/> 		<idno type="isbn" n="3499400618"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The holding</title> <date when="1993">1993</date>, <publisher>Aris &amp; Phillips</publisher> <pubPlace>Warminster</pubPlace> 		<idno type="ppn" n="1741950155" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1741950155"/> 		<idno type="isbn" n="9781800345959;180034595X"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">The holding</title> <date when="1993">1993</date>, <publisher>Aris &amp; Phillips</publisher> <pubPlace>Warminster</pubPlace> 		<idno type="ppn" n="469572043" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469572043"/> 		<idno type="isbn" n="0856685941;085668595X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1994">1994</date>, <publisher>Plaza &amp; Janes</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1122888511" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1122888511"/> 		<idno type="isbn" n="8401491665;8401498031"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1994">1994</date>, <publisher>Ediciones Orbis S.A.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="592910113" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=592910113"/> 		<idno type="isbn" n="8440216661"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1994">1994</date>, <publisher>Plaza &amp; Janés</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="265521041" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=265521041"/> 		<idno type="isbn" n="8401498031"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1998">1998</date>, <publisher>Círculo de Lectores</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="605587655" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=605587655"/> 		<idno type="isbn" n="8422671239"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="1998">1998</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="251369277" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=251369277"/> 		<idno type="isbn" n="8437616069"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2000">2000</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1604532653" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1604532653"/> 		<idno type="isbn" n="8437616069"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2001">2001</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1623089034" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1623089034"/> 		<idno type="isbn" n="8437616069"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2002">2002</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1604692898" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1604692898"/> 		<idno type="isbn" n="8437616069"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479517194" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479517194"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2008">2008</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="627072828" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=627072828"/> 		<idno type="isbn" n="9788437616063"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Arroz y tartana. Flor de Mayo. La barraca. Entre naranjos</title> <date when="2008">2008</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="615813569" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=615813569"/> 		<idno type="isbn" n="9788496452558"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Kate</title> <date when="2011">2011</date>, <publisher>Edition Oberkassel</publisher> <pubPlace>Düsseldorf</pubPlace> 		<idno type="ppn" n="659291967" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=659291967"/> 		<idno type="isbn" n="9783943121018"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2013">2013</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="837875307" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=837875307"/> 		<idno type="isbn" n="9788437616063"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2017">2017</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1010730665" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1010730665"/> 		<idno type="isbn" n="9788437636597"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2020">2020</date>, <publisher>Divisa Home Vídeo</publisher> <pubPlace>Valladolid</pubPlace> 		<idno type="ppn" n="1743564066" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1743564066"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La barraca</title> <date when="2480">248X</date>, <publisher>Alupa</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="818203439" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=818203439"/> 		<idno type="isbn" n="9788494080678"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -158,6 +235,14 @@
 				<p>La irracional conducta de los huertanos viene impuesta por su enfrentamiento con los amos, que viven en Valencia e ignoran sus problemas. Para aquellos es imprescindible mantener su postura de resistencia, y el odio y el resentimeinto que llevan dentro les impulsa a sacrificar una víctima inocente.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -188,7 +273,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela valenciana</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela valenciana</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -223,12 +308,13 @@
 		<revisionDesc>
 			<change when="2015-08-13" who="#jct">Initial TEI version.</change>
 			<change when="2015-12-18" who="#jct">New metadata.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>AL LECTOR</head>
+				<head xml:id="ne0164_head_000">AL LECTOR</head>
 				<p>He contado en el prólogo de mi libro <seg rend="italic">En el país del Arte (Tres meses en Italia)</seg> cómo á mediados de 1895 tuve que huir de Valencia, después de una manifestación contra la guerra colonial, que degeneró en movimiento sedicioso, dando origen á un choque de los manifestantes con la fuerza pública.</p>
 				<p>Perseguido por la autoridad militar como presunto autor de este suceso, viví escondido algunos días, cambiando varias veces de refugio, mientras mis amigos me preparaban el embarque secreto en un vapor que iba á zarpar para Italia.</p>
 				<p>Uno de mis alojamientos fué en los altos de un despacho de vinos situado cerca del puerto, propiedad de un joven republicano, que vivía con su madre. Durante cuatro días permanecí metido en un entresuelo de techo bajo, sin poder asomarme á las ventanas que daban á la calle, por ser ésta de gran tránsito y andar la policía y la Guardia civil buscándome en la ciudad y sus alrededores.</p>
@@ -256,7 +342,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0164_chap1">
-				<head>I</head>
+				<head xml:id="ne0164_head_001">I</head>
 				<p>Desperezóse la inmensa vega bajo el resplandor azulado del amanecer, ancha faja de luz que asomaba por la parte del Mediterráneo.</p>
 				<p>Los últimos ruiseñores, cansados de animar con sus trinos aquella noche de otoño, que por lo tibio de su ambiente parecía de primavera, lanzaban el gorjeo final como si les hiriese la luz del alba con sus reflejos de acero. De las techumbres de paja de las barracas salían las bandadas de gorriones como un tropel de pilluelos perseguidos, y las copas de los árboles empezaban á estremecerse bajo los primeros jugueteos de estos granujas del espacio, que todo lo alborotaban con el roce de sus blusas de plumas.</p>
 				<p>Apagábanse lentamente los rumores que habían poblado la noche: el borboteo de las acequias, el murmullo de los cañaverales, los ladridos de los mastines vigilantes.</p>
@@ -340,7 +426,7 @@
 				<p>Pero á lo lejos sonaban voces y llamamientos: la noticia se transmitía á grito pelado de un campo á otro campo, y un estremecimiento de alarma, de extrañeza, de indignación, corría por toda la vega, como si no hubiesen transcurrido los siglos y circulara el aviso de que en la playa acababa de aparecer una galera argelina buscando cargamento de carne blanca.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0164_chap2">
-				<head>II</head>
+				<head xml:id="ne0164_head_002">II</head>
 				<p>Cuando en época de cosecha contemplaba el tío <seg rend="italic">Barret</seg> los cuadros de distinto cultivo en que estaban divididas sus tierras, no podía contener un sentimiento de orgullo, y mirando los altos trigos, las coles con su cogollo de rizada blonda, los melones asomando el verde lomo á flor de tierra ó los pimientos y tomates medio ocultos por el follaje, alababa la bondad de sus campos y los esfuerzos de todos sus antecesores al trabajarlos mejor que los demás de la huerta.</p>
 				<p>Toda la sangre de sus abuelos estaba allí. Cinco ó seis generaciones de <seg rend="italic">Barrets</seg> habían pasado su vida labrando la misma tierra, volviéndola al revés, medicinando sus entrañas con ardoroso estiércol, cuidando que no decreciera su jugo vital, acari ciando y peinando con el azadón y la reja todos aquellos terrones, de los cuales no había uno que no estuviera regado con el sudor y la sangre de la familia.</p>
 				<p>Mucho quería el labrador á su mujer, y hasta le perdonaba la tontería de haberle dado cuatro hijas y ningún hijo que le ayudase en sus tareas; no amaba menos á las cuatro muchachas, unos ángeles de Dios, que se pasaban el día cantando y cosiendo á la puerta de la barraca, y algunas veces se metían en los campos para descansar un poco á su pobre padre; pero la pasión suprema del tío <seg rend="italic">Barret</seg>, el amor de sus amores, eran aquellas tierras, sobre las cuales había pasado monótona y silenciosa la historia de su familia.</p>
@@ -480,7 +566,7 @@
 				<p>De aquí las exclamaciones de asombro y el gesto de rabia de toda la huerta cuando <seg rend="italic">Pimentó</seg>, de campo en campo y barraca en barraca, fué haciendo saber que las tie rras de <seg rend="italic">Barret</seg> tenían ya arrendatario, un desconocido, y que «él» ... «¡él!»—fuese quien fuese—estaba allí con toda su familia, instalándose sin reparo ... «¡como si aquello fuese suyo!»</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0164_chap3">
-				<head>III</head>
+				<head xml:id="ne0164_head_003">III</head>
 				<p>Batiste, al inspeccionar las incultas tierras, se dijo que había allí trabajo para largo rato.</p>
 				<p>Mas no por esto sintió desaliento. Era un varón enérgico, emprendedor, avezado á la lucha para conquistar el pan. Allí lo había «muy largo», como decía él, y además se consolaba recordando que en peores trances se había visto.</p>
 				<p>Su vida pasada era un continuo cambio de profesión, siempre dentro del círculo de la miseria rural, mudando cada año de oficio, sin encontrar para su familia el bienestar mezquino que constituía toda su aspiración.</p>
@@ -556,7 +642,7 @@
 				<p>En su voz, trémula de rabia, vibraban condensados todos los odios de la huerta.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0164_chap4">
-				<head>IV</head>
+				<head xml:id="ne0164_head_004">IV</head>
 				<p>Era jueves, y según una costumbre que databa de cinco siglos, el Tribunal de las Aguas iba á reunirse en la puerta de los Apóstoles de la Catedral de Valencia.</p>
 				<p>El reloj de la torre llamada el Miguelete señalaba poco más de las diez, y los huertanos juntábanse en corrillos ó tomaban asiento en los bordes del tazón de la fuente que adorna la plaza, formando en torno al vaso una animada guirnalda de mantas azules y blancas, pañuelos rojos y amarillos ó faldas de indiana de colores claros.</p>
 				<p>Llegaban unos tirando de sus caballejos con el serón cargado de estiércol, contentos de la colecta hecha en las calles; otros en sus carros vacíos, procurando enternecer á los guardias municipales para que les dejasen permanecer allí; y mientras los viejos conversaban con las mujeres, los jóvenes se metían en el cafetín cercano, para matar el tiempo ante la copa de aguardiente, mascullando su cigarro de tres céntimos.</p>
@@ -703,7 +789,7 @@
 				<p>La huerta se había enterado de que en la antigua barraca de <seg rend="italic">Barret</seg>  el único obje to de valor era una escopeta de dos cañones, comprada recientemente por el intruso con esa pasión africana del valenciano, que se priva gustoso del pan por tener detrás de la puerta de su vivienda un arma nueva que excite envidias é inspire respeto.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0164_chap5">
-				<head>V</head>
+				<head xml:id="ne0164_head_005">V</head>
 				<p>Todos los días, al amanecer, saltaba de la cama Roseta, la hija de Batiste, y con los ojos hinchados por el sueño, extendiendo los brazos con gentiles desperezos que estremecían todo su cuerpo de rubia esbelta, abría la puerta de la barraca.</p>
 				<p>Chillaba la garrucha del pozo, saltaba ladrando de alegría junto á sus faldas el feo perrucho que pasaba la noche fuera de la barraca, y Roseta, á la luz de las últimas estrellas, echábase en cara y manos todo un cubo de agua fría sacada de aquel agujero redondo y lóbrego, coronado en su parte alta por espesos manojos de hiedra.</p>
 				<p>Después, á la luz del candil, iba y venía por la barraca preparando su viaje á Valencia.</p>
@@ -845,7 +931,7 @@
 				<p>Dentro de su casa ya se guardarían los enemigos de venir á buscarles.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0164_chap6">
-				<head>VI</head>
+				<head xml:id="ne0164_head_006">VI</head>
 				<p>Era un rumor de avispero, un susurro de colmena, lo que oían mañana y tarde los huertanos al pasar frente al molino de la Cadena, por el camino que va al mar.</p>
 				<p>Una espesa cortina de álamos cerraba la plazoleta formada por el camino al ensancharse ante el amontonamiento de viejos tejados, paredes agrietadas y negros ventanucos del molino, fábrica antigua y ruinosa, montada sobre la acequia y apoyada en dos gruesos machones, por entre los cuales caía la corriente en espumosa cascada.</p>
 				<p>El ruido lento y monótono que surgía entre los árboles era el de la escuela de don Joaquín, establecida en una barraca oculta por la fila de álamos.</p>
@@ -946,7 +1032,7 @@
 				<p>«¡Señor! ¡dadnos paciencia!» Toda aquella gentuza, grandes y chicos, se habían propuesto acabar con la familia.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0164_chap7">
-				<head>VII</head>
+				<head xml:id="ne0164_head_007">VII</head>
 				<p>Triste y ceñudo, como si fuese á un entierro, emprendió Batiste el camino de Valencia un jueves por la mañana. Era día de mercado de animales en el cauce del río, y llevaba en la faja, como una gruesa protuberancia, el saquito de arpillera con el resto de sus ahorros.</p>
 				<p>Llovían desgracias sobre la barraca. Sólo faltaba que se derrumbase su techumbre encima de ellos, aplastándolos á todos.... ¡Qué gente! ¡Dónde se había metido!...</p>
 				<p>El chiquitín cada vez peor, temblando de fiebre en los brazos de su madre, que lloraba á todas horas, y visitado dos veces al día por el médico. En resumen, una enfermedad que iba á costarle doce ó quince duros: ¡como quien dice nada!</p>
@@ -1088,7 +1174,7 @@
 				<p>—<seg rend="italic">Creume, fill meu: ¡te portarán desgrasia</seg>!</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0164_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0164_head_008">VIII</head>
 				<p>Batiste y su familia no se dieron cuenta de cómo se inició el suceso inaudito, inesperado; quién fué el primero que se decidió á pasar el puentecillo que unía el camino con los odiados campos.</p>
 				<p>No estaban en la barraca para fijarse en tales pormenores. Agobiados por el dolor, vieron que la huerta venía repentinamente hacia ellos; y no protestaron, porque la desgracia necesita consuelo, pero tampoco agradecieron el inesperado movimiento de aproximación.</p>
 				<p>La muerte del pequeño se había transmitido rápidamente por todo el contorno, gracias á la extraña velocidad con que circulan en la huerta las noticias, saltando de barraca en barraca en alas del chismorreo, el más rápido de los telégrafos.</p>
@@ -1177,7 +1263,7 @@
 				<p>Los grillos que cantaban en el vecino ribazo callaron, espantados por un extraño hipo que rasgó el silencio y sonó en la obscuridad gran parte de la noche, como el estertor de una bestia herida.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0164_chap9">
-				<head>IX</head>
+				<head xml:id="ne0164_head_009">IX</head>
 				<p>Había llegado San Juan, la mejor época del año: el tiempo de la recolección y la abundancia.</p>
 				<p>El espacio vibraba de luz y de calor. Un sol africano lanzaba torrentes de oro sobre la tierra, resquebrajándola con sus ardorosas caricias. Sus flechas de oro deslizábanse entre el follaje, toldo de verdura bajo el cual cobijaba la vega sus rumorosas acequias y sus húmedos surcos, como temerosa del calor que hacía germinar la vida por todas partes.</p>
 				<p>Los árboles mostraban sus ramas cargadas de frutos. Doblegábanse los nispereros con el peso de los amarillos racimos cubiertos de barnizadas hojas; asomaban los albaricoques entre el follaje como rosadas mejillas de niño; registraban los mu chachos con impaciencia las corpulentas higueras, buscando codiciosos las brevas primerizas, y en los jardines, por encima de las tapias, exhalaban los jazmines su fragancia azucarada, y las magnolias, como incensarios de marfil, esparcían su perfume en el ambiente ardoroso impregnado de olor de mies.</p>
@@ -1293,7 +1379,7 @@
 				<p>Viéndose en el camino, á cierta distancia de la taberna, echó á correr, y cerca ya de su barraca arrojó en una acequia el pesado taburete, mirando con horror las manchas negruzcas de la sangre ya seca.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0164_chap10">
-				<head>X</head>
+				<head xml:id="ne0164_head_010">X</head>
 				<p>Batiste perdió toda esperanza de vivir tranquilo en sus tierras.</p>
 				<p>La huerta entera volvía á levantarse contra él. Otra vez tuvo que aislarse en la barraca con su familia, vivir en perpetuo vacío, como un apestado, como una fiera enjaulada á la que todos enseñaban el puño desde lejos.</p>
 				<p>Su mujer le había contado al día siguiente cómo fué conducido á su barraca el herido valentón. El mismo, desde su vivienda, había oído los gritos y las amenazas de toda la gente que acompañaba solícita al magullado <seg rend="italic">Pimentó</seg>.... Una verdadera manifestación. Las mujeres, sabedoras de lo ocurrido gracias á la pasmosa rapidez con que en la huerta se transmiten las noticias, salían al camino para ver de cerca al bravo marido de Pepeta y compadecerle como á un héroe sacrificado por el interés de todos.</p>

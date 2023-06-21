@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Paz en la guerra</title>
-				<title type="sub"></title>
+				
 				<title type="short">PazGuerra</title>
-				<title type="idno">
-					<idno type="bne">XX2213096</idno>
-					<idno type="viaf">203743026</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1139151</idno>
-					<idno type="viaf">88844103</idno>
-					<name type="short">Unamuno</name>
-					<name type="full">Miguel de Unamuno</name>
+					<name type="short" ref="#Unamuno"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2205</measure>
@@ -141,13 +131,60 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0114</idno>
+						<idno type="cligs">ne0114</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#other" subtype="epub">megaepub, QualityEPUB v0.32, <date when="2013">2013</date>, <idno>16957</idno>, <ref target="http://www.megaepub.com/miguel-de-unamuno-paz-en-la-guerra-16.html"/>.</bibl>
-				<bibl type="print-source">Alianza Editorial, Madrid <date when="2003">2003</date></bibl>
-				<bibl type="edition-first"><date when="1897">1897</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Paz en la guerra</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2213096.html">XX2213096</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/203743026/">203743026</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4627850-3">4627850-3</idno>
+				</idno>
+				</title>
+					<author xml:id="Unamuno">
+						<name type="full"><forename>Miguel</forename> <surname>de Unamuno</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8740 - IP 8745">IP 8740 - IP 8745</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118625403">118625403</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q185085/">Q185085</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1139151.html">XX1139151</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/88844103/">88844103</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#other" subtype="epub">megaepub, QualityEPUB v0.32, <date when="2013">2013</date>, <idno>16957</idno>, <ref target="http://www.megaepub.com/miguel-de-unamuno-paz-en-la-guerra-16.html"/>.</bibl>
+					<bibl type="print-source">Alianza Editorial, <pubPlace>Madrid</pubPlace> <date when="2003">2003</date></bibl>
+					<bibl type="edition-first"><date when="1897">1897</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1923">1923</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="133450136X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133450136X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Paz en la guerra</title> <date when="1923">1923</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="406335931" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=406335931"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Frieden im Krieg</title>: 	<title type="sub">ein Roman aus dem Carlistenaufstand</title> <date when="1929">1929</date>, <publisher>Wegweiser-Verlag</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="021042799" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=021042799"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1931">1931</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid [u.a.]</pubPlace> 		<idno type="ppn" n="534417329" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=534417329"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1940">1940</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="520683013" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=520683013"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1946">1946</date>, <publisher>Espasa-Calpe Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="730568938" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=730568938"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1952">1952</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="118458222X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=118458222X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1956">1956</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="468961305" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468961305"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1957">1957</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="730258858" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=730258858"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1960">1960</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="271386959" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=271386959"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1964">1964</date>, <publisher>Espasa-Calpe, S. A.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="618802894" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=618802894"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1969">1969</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1331404355" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1331404355"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1969">1969</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="223799513" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=223799513"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1980">1980</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1614625654" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1614625654"/> 		<idno type="isbn" n="8423901793"/></bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Peace in war</title>: 	<title type="sub">a novel</title> <date when="1983">1983</date>, <publisher>Princeton Univ. Press</publisher> <pubPlace>Princeton, NJ</pubPlace> 		<idno type="ppn" n="1078943729" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1078943729"/> 		<idno type="isbn" n="069109926X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1986">1986</date>, <publisher>El Correo Español - El Pueblo Vasco</publisher> <pubPlace>Bilbao</pubPlace> 		<idno type="ppn" n="465773117" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465773117"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra [u.a.]</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1118115201" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1118115201"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">(Narrativa). Paz en la guerra. Amor y pedagogía. Niebla. Abel Sánchez. La tía Tula</title> <date when="1995">1995</date>, <publisher>Turner</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="213874253" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=213874253"/> 		<idno type="isbn" n="8475064094"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1998">1998</date>, <publisher>Alfaguara</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1728049946" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1728049946"/> 		<idno type="isbn" n="8420483176;9788420483177"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="1999">1999</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="303013583" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=303013583"/> 		<idno type="isbn" n="8437617227"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Paz en la guerra</title> <date when="2008">2008</date>, <publisher>Txalaparta</publisher> <pubPlace>Navarra</pubPlace> 		<idno type="ppn" n="591297124" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=591297124"/> 		<idno type="isbn" n="9788481365290"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p/>
@@ -158,6 +195,14 @@
 				<p>Publicada en 1897, PAZ EN LA GUERRA fue la primera novela de Miguel de Unamuno (1864-1936), quien vertió en sus páginas muchas de sus experiencias de niñez y su recuerdo de algunos momentos decisivos de la historia del pueblo vasco. En el prólogo a esta edición de una obra que aún sigue arrojando luz sobre la cuestión vasca, Juan Pablo Fusi señala que Unamuno consideró siempre esta obra «como su más importante esfuerzo de reflexión sobre el País Vasco; por lo menos, es justo considerarla como la novela de Bilbao, aunque sólo sea porque el episodio central de la obra es el sitio que la capital vizcaína sufrió en 1874, durante la última guerra carlista».</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8741" key="IP 8741" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">8</term>
 					<term type="author.continent">Europe</term>
@@ -189,8 +234,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">war-novel</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela de guerra</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -222,12 +267,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-23" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>PRÓLOGO A LA SEGUNDA EDICIÓN </head>
+				<head xml:id="ne0114_head_000">PRÓLOGO A LA SEGUNDA EDICIÓN </head>
 				<p>La primera edición de esta obra, publicada en 1897, hace, pues, veintiséis años, ha ya tiempo que se agotó, por lo que he decidido dar a la luz esta segunda. Y al hacerlo no he querido retocarla, ni pulir su estilo conforme a mi posterior manera de escribir, ni alterarla en lo más mínimo, salvo corrección de erratas y errores de bulto. No creo tener derecho, ahora que me falta año y medio para llegar a la sesentena, para corregir, y menos reformar, al que fui en mis mocedades de los treinta y dos años de vida y de ensueño.</p>
 				<p>Aquí, en este libro —que es el que fui—, encerré más de doce años de trabajo; aquí recogí la flor y el fruto de mi experiencia de niñez y de mocedad; aquí está el eco, y acaso el perfume, de los más hondos recuerdos de mi vida y de la vida del pueblo en que nací y me crié; aquí está la revelación que me fue la historia y con ella el arte.</p>
 				<p>Esta obra es tanto como una novela histórica una historia anovelada. Apenas hay en ella detalle que haya inventado yo. Podría documentar sus más menudos episodios.</p>
@@ -241,7 +287,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0114_chap1">
-				<head>CAPÍTULO PRIMERO </head>
+				<head xml:id="ne0114_head_001">CAPÍTULO PRIMERO </head>
 				<p>En una de las llamadas en Bilbao siete calles, núcleo germinal de la villa, había por los años de cuarenta y tantos una tienducha de las que ocupaban medio portal a lo largo, abriéndose por una compuerta colgada del techo, y que a él se enganchaba una vez abierta; una chocolatería llena de moscas, en que se vendía variedad de géneros, una minita que iba haciendo rico a su dueño, al decir de los vecinos. Era dicho corriente el de que en el fondo de aquellas casas viejas de las siete calles, debajo de los ladrillos tal vez, hubiese saquillos de peluconas, hechas, desde que se fundó la villa mercantil, ochavo a ochavo, con una inquebrantable voluntad de ahorro.</p>
 				<p>A la hora en que la calle se animaba, a eso del mediodía, solíase ver al chocolatero de codos en el mostrador, y en mangas de camisa, que hacían resaltar una carota afeitada, colorada y satisfecha.</p>
 				<p>Pedro Antonio Iturriondo había nacido con la Constitución, el año doce. Fueron sus primeros de aldea, de lentas horas muertas a la sombra de los castaños y nogales o al cuidado de la vaca, y cuando de muy joven fue llevado a Bilbao a aprender el manejo del majadero bajo la inspección de un tío materno, era un trabajador serio y tímido. Por haber aprendido su oficio durante aquel decenio patriarcal debido a los Cien Mil Hijos de San Luis, el absolutismo simbolizó para él una juventud calinosa, pasada a la penumbra del obrador los días laborables, y en el baile de la campa de Albia los festivos. De haber oído hablar a su tío de realistas y constitucionales, de apostólicos y masones, de la regencia de Urgel y del <seg rend="italic">ominoso</seg> trienio del 20 al 23 que obligara al pueblo, harto de libertad según el tío, a pedir inquisición y cadenas, sacó Pedro Antonio lo poco que sabía de la nación en que la suerte le puso, y él se dejaba vivir.</p>
@@ -736,7 +782,7 @@
 				<p>—Más vale lo malo conocido que lo bueno por conocer —murmuró (Ion Eustaquio, revistiendo con este refrán, quintaesencia del espíritu conservador y escéptico, el fondo de sus temores egoístas.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0114_chap2">
-				<head>Capítulo II </head>
+				<head xml:id="ne0114_head_002">Capítulo II </head>
 				<floatingText>
 					<body>
 						<div type="section">
@@ -1154,7 +1200,7 @@
 				<p>Josefa Ignacia se dio el placer de retener las lágrimas, apretando al hijo contra el pecho.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0114_chap3">
-				<head >CAPÍTULO III </head>
+				<head xml:id="ne0114_head_003">CAPÍTULO III </head>
 				<p>Desde mediados del 73 vivía don Juan en indignación continua, por la apatía gubernamental. ¡Para eso habían tomado el arma él y su hijo! Era insoportable el ver, entrada la noche, a más de un soldado borracho, y a otros jugando a las cartas, a la luz de unas velillas, sobre las mesas del <seg rend="italic">fresco</seg> en el mercado; una lástima el verlos envueltos en sus mantas, y tendidos junto a sus fusiles, en el enlosado de la Plaza Nueva.</p>
 				<p>La indisciplina estragaba al ejército, carcomiéndole todo el vigor. Era natural; habíanse empeñado en llevar la democracia a las filas, habían nutrido a los soldados de predicaciones igualitarias. Tras el persistente ¡abajo las quintas! venía el ¡abajo los galones! y el disolvente ¡que bailen!</p>
 				<p>El cerco, en tanto, se estrechaba; apenas podían entrar los buques. Escaseaban noticias, corriendo noticiones, pasto de comentarios, en aquellos días de cielo variable, henchidos ya de terral cálido, ya de humedad oscura.</p>
@@ -1822,7 +1868,7 @@ Si su suerte aciaga—es morir luchando</seg>,</l>
 				<p>—¡Cuántas veces he querido curarle!, ¡pobre Miguel!</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0114_chap4">
-				<head>CAPÍTULO IV </head>
+				<head xml:id="ne0114_head_004">CAPÍTULO IV </head>
 				<p>Cuando llegó Ignacio a Somorrostro llevaba en el alma un tumulto de anhelos, amasados con nacientes desilusiones. Destináronle a un batallón, a las reservas de San Fuentes, y vio de paso al general en jefe, que, sentado en una silla en el balcón de una casería, con la botella de coñac al lado y encendidos los pómulos, contemplaba allá, a lo lejos, los fogonazos de los morteros carlistas sobre Bilbao, para lo que había hecho talar una encina, cuyo follaje se lo hubiera impedido.</p>
 				<p>Acomodábanse los chicos del batallón en una casería, como sardinas en banasta, mientras el dueño, dejando su cama, tenía que ir a dormir al campo. Era un viejo marrullero, en continua lamentación, mientras su mujer, cubriendo a los chicos maternalmente la cabeza con la manta, para preservarles del frío, les desvalijaba a su sabor. Parecíale al viejo inconcebible la imprevisión de los chicos, que ya le quemaban una ventana, para tener que poner en ella una manta que impidiera el paso al aire, ya la escalera, para verse obligados a subir por el balcón, ¡puras ganas de hacer daño! Los caballos de los jefes le pisoteaban los sembrados, y ni aún le dejaban subir a recrearse en los altos, amenazándole con fusilarle por espía, si lo hiciera. Pero cuando, al llegar el vino, exclamaban los navarros: ¡ya viene el genio!, miraba el viejo sonriente a los cimientos de su casa, donde tenía la bodega oculta, y luego al furriel, con quien se entendía en tratos y contratos.</p>
 				<p>Los chicos miraban con malos ojos al paisano, que, sufriendo sus burlas y desdenes con paciencia, les explotaba a su sabor. No tenía otro remedio que sacar jugo a la guerra, ya que no le dejaban trabajar en paz; frente a la violencia del guerrero, aguzaba él, el pacífico, la astucia. De haber guerra, lo justo era que fuese para todos.</p>
@@ -2079,7 +2125,7 @@ Si su suerte aciaga—es morir luchando</seg>,</l>
 				<p>Venían las olas a quebrarse a sus pies, disipándose en la arena unas, rompiéndose con ruido y en espuma contra las rocas otras. Una ola muerta..., ¿muerta?, allá venía otra, a morir también, y las aguas siempre las mismas. Por debajo del oleaje, obra del viento en el pellejo tan sólo del inmenso océano; por debajo del oleaje, contra su dirección tal vez, sin obedecerla, marchaba incesante el curso perdurable de las aguas profundas, en ciclo sin cesar recomenzado.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0114_chap5">
-				<head>CAPÍTULO V </head>
+				<head xml:id="ne0114_head_005">CAPÍTULO V </head>
 				<p>Vivía con su mujer Pedro Antonio, en su aldea nativa, junto al cura su hermano, que se esforzaba en distraerlo, llevándoselo consigo a la tertulia de la posada, a fin de que olvidara un poco sus penas oyendo los comentarios a los sucesos de la guerra. Quedábase entre tanto Josefa Ignacia con su cuñada, la viuda del piloto, que no sabía hablarle sino del pobre difunto Ignacio, de la última vez que le viera armado, de su garbo en el baile. Sentíase la madre atraída por aquella mujer simple que, ayudándole en sus sempiternas cavilaciones acerca del hijo perdido, era cual eco de su constante monólogo. Esperaba a diario oírle las mismas apreciaciones, los mismos detalles sobre Ignacio, como el enfermo espera cada día el mismo bálsamo aliviador de los dolores. Iba difundiendo poco a poco su pena en los actos todos de su vida y en los más humildes sucesos de ella; íbala diluyendo con la labor en los puntos de la calceta; la iba dejando reposar en la visión de los domésticos utensilios; íbasela convirtiendo en dulce idea fija, que tiñese sus ideas todas.</p>
 				<p>Interín Pedro Antonio abandonábase a todo, dejándose mecer en el vaivén suave de los habituales sucesos cotidianos, mientras en el hondón de su alma germinaba poco a poco el dolor, sin lograr, empero, romper aún la capa que le ahogaba. Pensaba en su pobre hijo de continuo, mas con pensamiento tan lento, tan lento, que parecía inmóvil, en divagación difuminada, y en vaga visión que penetraba sutil en sus pensamientos todos. Era como si el recuerdo de su hijo llenase su alma cual una sola inmensa nube oscura y compacta cubre con su homogéneo tono a la tierra, sumida entonces en penumbra. Bajo tal recuerdo yacía entumecido el dolor.</p>
 				<p>Gustaba el padre de ir a vagar por los rincones de su niñez, por donde fluyeron las lentas horas muertas de su infancia a la sombra de los castaños y nogales, y al cuidado de la vaca; íbase a oír en el perdurable murmullo del río, canto evocador de recuerdos infantiles. Parábase a cada paso a echar una parrafada con los viejos amigos, a quienes encontraba en sus heredades bregando con la dura tierra. Complacíase en que le compadecieran, y en aquellas conversaciones que solían resumirse en un: ¡son cosas que el Señor dispone...!</p>

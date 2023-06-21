@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Del frío al fuego</title>
-				<title type="sub">Ellas a bordo</title>
+				
 				<title type="short">Frio</title>
-				<title type="idno">
-					<idno type="viaf"></idno></title>
+				
 				<author>
-					<idno type="bne">XX1051062</idno>
-					<idno type="viaf">79060694</idno>
-					<name type="short">Trigo</name>
-					<name type="full">Felipe Trigo</name>
+					<name type="short" ref="#Trigo"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2141</measure>
@@ -139,22 +131,56 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0160</idno>
+						<idno type="cligs">ne0160</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/del-frio-al-fuego-ellas-a-bordo-novela--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmch70b7"/>.</bibl>
-				<bibl type="print-source">Madrid, Librería de Fernando Fé, <date when="1905" >1905</date></bibl>
-				<bibl type="edition-first"><date when="1906">1906</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Del frío al fuego</title>
+					<title type="sub">Ellas a bordo</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf//"/>
+				</idno>
+				</title>
+					<author xml:id="Trigo">
+						<name type="full"><forename>Felipe</forename> <surname>Trigo</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654 - IP 8655">IP 8654 - IP 8655</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118867806">118867806</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3068144/">Q3068144</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1051062.html">XX1051062</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/79060694/">79060694</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/del-frio-al-fuego-ellas-a-bordo-novela--0/"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmch70b7"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Librería de Fernando Fé, <date when="1905">1905</date></bibl>
+					<bibl type="edition-first"><date when="1906">1906</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">Del Frío al fuego</title>: 	<title type="sub">Ellas a bordo. Novela</title> <date when="1919">1919</date>, <publisher>Renacimiento</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="405824858" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=405824858"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Del frío al fuego</title>: 	<title type="sub">[novela]</title> <date when="2009">2009</date>, <publisher>e-litterae</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="634997742" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=634997742"/> 		<idno type="isbn" n="8493689319;9788493689315"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract>
 				<p>Andrés Serván va en barco de Barcelona a Filipinas para participar en la represión militar española en Filipinas. Conoce a varias personas en el barco de clase acomodada. En el barco los hombres y las mujeres duermen separados, lo que hace una situación extraña sexualmente. El barco navega el Mediterráneo, pasa el canal de Suez, y hace escalas en Adén (Yemen), Colombo (Sri Lanka), Singapur y finalmente Manila. Durante el viaje Andrés y un húsar intentan mantener relaciones sexuales con algunas de las mujeres del barco. En el barco se discute sobre las relaciones sentimentales, los prejuicios sociales, la relación entre sexo y matrimonio, etcétera. También se describe la percepción de los pasajeros de las habitantes de otros países y los malestares típicos de ir en barco. Andrés habla con Lucía sobre diferentes temas, entre ellos literaruta. Andrés se siente atraído por Lucía, que está casada. Una adolescente, Sarah, revela a Andrés que está enomorada de él. Lucía se entera y le sugiere que no rechace a la chica, que le cree una ilusión inocente. Sarah y Andrés van teniendo encuentros románticos, hasta que aparece la oportunidad de que mantengan relaciones sexuales. Lucía se entera, Andrés rechaza hacerlo y Sarah percibe el interés entre Andrés y Lucía, por lo que tiene un ataque de celos. El marido de Lucía se mantiene durante el resto del viaje vigilante. Llegan a Manila, donde se despiden. Andrés va a ver a Lucía al hotel cuando el marido no está. Hablan del barco, de Sarah y de sus sentimientos. Se besan, pero paran por razones morales.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 8654" key="IP 8654" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -167,7 +193,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">2-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -183,7 +209,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">erotic</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela erótica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -210,6 +236,7 @@
 		<revisionDesc>
 			<change when="2015-08-19" who="#jct">Initial TEI version.</change>
 			<change when="2015-11-06" who="#jct">New metedata after reading the text as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,7 +256,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0160_chap1">
-				<head>- I -</head>
+				<head xml:id="ne0160_head_000">- I -</head>
 				<p>Al saltar al bote siento la transcendencia de mi resolución y comprendo las conmemoraciones. Mandaría esculpir en esa grada del embarcadero: «POR AQUÍ SALIÓ AL OTRO LADO DEL MUNDO ANDRÉS SERVÁN»... Mi madre, mis hermanas, alguna mujer acaso bien querida, podrían venir a ver en Barcelona la última piedra que pisé de España -si no volviese.</p>
 				<p>-¿Al <seg rend="italic">Reus</seg>?</p>
 				<p>-Al <seg rend="italic">Reus.</seg></p>
@@ -336,7 +363,7 @@
 				<p>Me acerco a la borda. Enciendo un cigarro, con mecha. Puesto el sol, ya no se divisa tierra. El <seg rend="italic">Reus </seg>sigue hundiéndose de proa a popa y las olas grises se estrellan contra él. Sopla un airazo seguidote y fresco... que es, de tanta desolación, lo menos desagradable.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0160_chap2">
-				<head>- II -</head>
+				<head xml:id="ne0160_head_001">- II -</head>
 				<p>He despertado temprano.</p>
 				<p>Un sueño reparador mecido amorosamente.</p>
 				<p>Recordando las dos horas de tedio en la noche, cuando echados de arriba por el frío tuve en el fumadero que estar mirando las partidas de cartas que improvisaron algunos, me felicito de haber traído en mi repuesto de novelas <seg rend="italic">Die Graefin Pataski</seg> y el diccionario alemán. Traduciré largos ratos.</p>
@@ -420,7 +447,7 @@
 				<p>No se piensa más que en comer, todo el día. Una obsesión. A las siete, desayuno. A las diez, almuerzo fuerte. A las dos, refrescos y fiambres. A las cinco y media, la comida. A las nueve, ahora, té con pastas...</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0160_chap3">
-				<head>- III -</head>
+				<head xml:id="ne0160_head_002">- III -</head>
 				<p>El mar se calma. Es más llano y más azul. Lo he visto por el ventanillo sentándome en la litera.</p>
 				<p>Se mueve el camarote menos. Mi vecino el húsar saluda, sonríe y habla. Se ha vestido, intentando salir, pero torna a tenderse. Confía en que el día de hoy concluirá de habituarle al buque.</p>
 				<p>Yo desatornillo el vidrio y lo abro. Entra una brisa primaveral, que renueva el aire confinado. El señor del equipaje flamante está en mangas de camisa, jabonándose las manos, y tengo que cerrar.</p>
@@ -507,7 +534,7 @@
 				<p>El viaje heroico se me va transfigurando, pues, en una especie de sainete, y el barco en una gran casa de vecinos.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0160_chap4">
-				<head>- IV -</head>
+				<head xml:id="ne0160_head_003">- IV -</head>
 				<p>El <seg rend="italic">Reus</seg> marcha por un mar finamente abullonado de huecos de olas como conchas. Se mece de un modo imperceptible. Los niños juegan por la cubierta, y la alegría va renaciendo en las caras, gratamente abanicadas por Ia brisa, debajo de la espaciosa toldilla, a la sombra de un sol casi estival.</p>
 				<p>Se han dejado completamente los abrigos y abundan los trajes claros, ligeros. Es sorprendente cómo pasamos de Diciembre a Julio en breve tiempo.</p>
 				<p>Yo he tirado mis apuntes de la marcha, mandando al diablo las náuticas ocupaciones, ante la grata amenidad de la tertulia, donde suelen hablar las damas de todo menos del mar.</p>
@@ -547,7 +574,7 @@
 				<p>Oímos, al fin, por la hilera de ventanas abierta al mar, y a pesar del ruido trepidante de la hélice y del agua, un tumulto de cantares y guitarras que cae de la cubierta. Al subir hallamos grande animación. El cielo es de una transparencia mágica. La luna traza espléndido camino de argenterías sobre las olas y contrasta a lo largo de la borda su dulce fulgor con el rejozo de las eléctricas lámparas derramado bajo el toldo. Dos o tres guitarras, tañida una por manos femeniles, acompañan malagueñas que entonan alternativamente algunos jóvenes con aguda y grata voz. Y todo el mundo se agolpa en torno, depuestas las animosidades, cediendo por primera vez aquí, más que abajo, al poético encanto de la noche, de la música, del mar...</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0160_chap5">
-				<head>- V -</head>
+				<head xml:id="ne0160_head_004">- V -</head>
 				<p>Nos hemos dormido al fresco, don Lacio y yo. Nos despiertan marineros. Por la cubierta no luce más que un farol, y la luna alta sigue plateando las aguas. Indícasela claridad del alba por la proa.</p>
 				<p>El baldeo va a empezar, ya apercibidas las bombas y amontonadas las sillas; y don Lacio propone una ducha. Lo más cómodo. Diariamente podremos tomarla aquí, ahorrándonos los cuartos ardientes y estrechos vaporados por cien cuerpos. No hay más que bajar al camarote a ponerse las chinelas y un trajecillo de hilo.</p>
 				<p>Hallo práctica la idea, y cuando volvemos a subir veo que no somos dos, sino varios los fantasmas blancos que acuden al remojón: el médico, los oficiales de guardia... Don Lacio está, pues, informado de las costumbres marinas.</p>
@@ -633,7 +660,7 @@
 				<p>No nos hemos dado cuenta de que el buque ha vuelto a andar, de que se para, de que está abarloado en el muelle hacia el cual tiende desde el portalón sus pasarelas.....</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0160_chap6">
-				<head>- VI -</head>
+				<head xml:id="ne0160_head_005">- VI -</head>
 				<p>Dan las seis en no sé qué náutico edificio del puerto, cuando lo dejamos en pandilla la condesa, su hija, Lucía y Alberto, el coronel con su familia, don Lacio y yo. Contra la claridad del crepúsculo el gas, empieza a lucir en la recta calle larguísima a cuyo frente está el <seg rend="italic">Reus</seg>.</p>
 				<p>Debe de ser la más importante de Port-Said completamente europea, llena de tiendas de griegos.</p>
 				<p>Antes de recorrer dos tramos, ya las señoras han sufrido la tentación de algunos comercios, y bajo su dirección realizamos compras. Trajes de hilo, por medias docenas, baratísimos -ventaja de puerto franco. Nuestro poco de francés nos sirve a maravilla. Los horteras van enviando paquetes al buque, tomando nuestros nombres y entregando en garantía sus tarjetas.</p>
@@ -698,7 +725,7 @@
 				<p>Por fin, a las tres y media llegamos a Suez, en cuya enorme rada fondea el barco para dejar el práctico del canal y tornar el del mar Rojo y fogoneros árabes. Parece que junto a la caldera harán falta estos hombres habituados al fuego y al clima infernal. Hacemos la breve escala tan lejos del puerto, que apenas éste se divisa. Y ahora sí, se advierte que estamos en la mar. Ya se mueve, dejando sentir su ancha bravura. Los gemelos quieren descubrir el Sinaí en cada lejano pico de una sierra.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0160_chap7">
-				<head>- VII -</head>
+				<head xml:id="ne0160_head_006">- VII -</head>
 				<p>Han inducido a cambios muy notables la escala de Port-Said y estos días de mar Rojo.</p>
 				<p>En primer lugar, todos los hombres vamos de blanco, de un verano reducido a la más mínima expresión de indumentaria, con la chaqueta de tira cerrada en el cuello sobre la camisa sutil -gracias a las compras realizadas.</p>
 				<p>En segundo lugar, podrá no ser rojo este mar, pero no le cede al golfo de Lión en <seg rend="italic">bailadito</seg>. Las olas vuelven a rizarse. Los niños, los <seg rend="italic">mareómetros de a bordo</seg>, yacen pálidos y serios por las sillas. El <seg rend="italic">baile</seg>, hoy <seg rend="italic">p</seg>rincipalmente, es tal, que nos hemos encontrado, la no mucha gente reunida al almuerzo, con los platos casillados en cajones, en «pesebreras», para que no se vuelquen. Aun así, la mayor escoradura causada en el <seg rend="italic">Reus</seg> por toda la carga de carbón a una banda, nos ha echado encima alguna vez las copas, las botellas, en los balanceos furiosos.</p>
@@ -774,7 +801,7 @@
 				<p>Soy yo el que la deja. Subo la escala.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0160_chap8">
-				<head>- VIII -</head>
+				<head xml:id="ne0160_head_007">- VIII -</head>
 				<p>El resto de la tarde lo empleo en mi cuestación caritativa, en compañía del capitán y don Lacio, pero al anochecer, la mucha mar obliga al capitán a retirarse al puente, y el fuerte mareo del pasaje entorpéceme no poco.</p>
 				<p>Contamos el total, a las nueve de la noche, don Lacio y yo, en el comedor: quinientas ochenta pesetas. Pero es un horror el barco; se mueve y cruje por todas partes como desencajado a los furiosos vaivenes. El calor nos ahoga. Don Lacio, en fin, no es capaz de continuar dictándome la cuenta de justificación que yo escribo, y se retira al camarote... Prosigo solo, sacando fuerzas de flaqueza, por no ceder a este girar de luces y de cosas, y últimamente termino, encontrándome tan mal, que voy en demanda también de mi litera...</p>
 				<p>No hay nadie por los pasillos. Tengo que asirme fuertemente a cada instante, para no dar contra las paredes. A través de las pequeñas puertas de caoba, oigo gritos, lamentos... Ha sido un desastre la comida de esta tarde -diez personas. La vajilla no ha cesado de romperse, a pesar de las dichosas <seg rend="italic">pesebreras</seg>... Botellas que rodaban de las mesas, rimeros de platos y bandejas de copas que se hacían añicos al caer los camareros de columna a columna, lanzados por los balances.</p>
@@ -818,7 +845,7 @@
 				<p>Es igual. Todos deben dormir en el barco, tronchados por la noche cruel.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0160_chap9">
-				<head>- IX -</head>
+				<head xml:id="ne0160_head_008">- IX -</head>
 				<p>Todo pasó. Estamos leyendo con la misma indolencia de siesta bochornosa que antes de morirse nadie y de haber estado a punto de hundirnos con el muerto. La pobre rubia no es sino una pasajera más que ha tenido la rarísima fortuna de ganar categoría con su desdicha: tercera preferente -cámara y cubierta de segunda- gracias al capitán. Por las tardes van a acompañarla algunos ratos Lucía y otras señoras. Acaban de partir. Con su pañolillo de luto, con su humilde compostura, sin el desaliño trágico y las sombras del dolor, su cara no es tan bella... tiene algo de abultada rudeza campesina. -Sin embargo, con ocasión de su desgracia, de la peregrinación que hubo al día siguiente hasta su cámara, y ya que mi intervención y la de Lucía no dejaron que el doctor Roque pudiese averiguar el éxito de su dinero contra la honradez de la muchacha, el doctor Roque conoció, a la cocota francesa que trae su amigo y casi compatriota el filipino; y parece que en la noche última ha debido intervenir la vigilancia de a bordo: el filipino y el doctor llegaron casi al revólver, por no se sabe bien qué intentos o sorpresas en aquellas apartadas galerías... Madama está castigada a no salir en ocho días del camarote.</p>
 				<p>¡Oh, los amigos!</p>
 				<p>Cuando se habla de anteanoche, se dice mirando con horror las olas, aún inquietas: la <seg rend="italic">noche de la tempestad</seg>. Abundan los tafetanes por las narices y las frentes, encima de los chichones. Además, el mar arrancó del barco algunos bocoyes y dos jaulas de gallinas. He tenido que inclinarme a la evidencia de estos resultados, y sobre todo después de haberle oído ayer al capitán, en el almuerzo: «Oh, sí, sí, una decente pelea. ¡Hubo sus ratos muy serios!»...</p>
@@ -858,7 +885,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0160_chap10">
-				<head>- X -</head>
+				<head xml:id="ne0160_head_009">- X -</head>
 				<p>Han barrido las olas. Se las ha llevado consigo el viento y no queda más que el patio infinito de suelo de cristal en que ellas juegan a las niñas o a las furias.</p>
 				<p>El mar está vencido, dormido bajo el aire quieto, bajo el cielo de cúpula translúcida de horno cuyo sol ardiente triunfa inmóvil en el cenit. Yo no había visto ni concebía siquiera el mar así. Y todo es de color de tersa plata clarísima, el mar y el cielo -un chinato lanzado al agua engendraría el perfecto círculo creciente que en un estanque.</p>
 				<p>El buque va dejando a los costados la ondulación que dejaría el paso suave de una mano en una tina.</p>
@@ -949,7 +976,7 @@
 				<p>-¡No es ducha la que nos van a dar esta mañana!</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0160_chap11">
-				<head>- XI -</head>
+				<head xml:id="ne0160_head_010">- XI -</head>
 				<p>Es nuestro tercer domingo de a bordo, y oímos la misa, en la ancha entrecubierta del palo mayor, frente al altar improvisado bajo un velacho a medio arriar en sus cordajes, formando baldaquino. Gran concurrencia y caras alegres, gracias al mar bien humorado. Es un tirano el padre mar, que se extiende ahora planamente rosado al infinito: si ríe, todos gozosos; si se entristece, no hay más remedio que imitarle.</p>
 				<p>Pero la francesa no ha acudido, defraudando al grupo de «señores de misa de una», como disculpa humorísticamente el capitán a estos que no vienen a oírla jamás, «porque es temprano». No habrían venido hoy tampoco en no siendo por madama. No la vemos; sigue, pues, la reclusión del camarote.</p>
 				<p>-Grave debió de ser la falta -comenta don Lacio-, ¡ah, ladrón de doctor!</p>
@@ -1044,7 +1071,7 @@
 				<p>-<seg rend="italic">Pas plus! Jamais... je vous en prie!</seg> -ha dicho <seg rend="italic">carrément </seg>madama tornándole la espalda.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0160_chap12">
-				<head>- XII -</head>
+				<head xml:id="ne0160_head_011">- XII -</head>
 				<p>Resulta Pascual un reflexivo que tiene su originalidad. No ejecuta un solo acto sin compulsar su entera ramificación de consecuencias. Revolviendo en la exuberancia de sus chismes de tocador, de la mitad de los cuales desconoce el uso, evidentemente, ha tirado de no sé qué estuche, en la perchilla de red de sobre su litera, y ha hecho caer tres bayas de unas frutas que compró en Aden. Coge dos, galante, y me las brinda. Yo estoy aún tumbado en mi colchoneta, recibiendo con placer la fresca brisa que me enfoca la manguera del redondo ventanillo. Pero Pascual contiene su ademán de morder la fruta que se ha reservado para sí.</p>
 				<p>Está en camiseta, en babuchas. Tiéndeme el brazo:</p>
 				<p>-Oh, no coma... ¡no sé!... guárdelas... Con este diablo de no hablar nadie español, no pude preguntarle al moro si hacen daño con la leche.</p>
@@ -1104,7 +1131,7 @@
 				<p>«¡Qué bárbaro!»</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0160_chap13">
-				<head>- XIII -</head>
+				<head xml:id="ne0160_head_012">- XIII -</head>
 				<p>Vuela el buque.</p>
 				<p>Como mirando al estribo en la ventanilla de un tren parece que es la tierra la que huye bajo el coche trepidante, paréceme también, mirando a ras del casco, que es el <seg rend="italic">Reus </seg>una mole quieta y temblorosa en mitad de una viva corriente de molino...</p>
 				<p>Corre, pasa veloz y ondulada el agua rasando el casco, que armado de mangueras en todas las ventallas, semeja ahora mejor un fuerte labrado en un peñón y erizado de cañones... Trescientas veinte, trescientas cincuenta millas cada singladura... cien leguas por día... Y nunca, en este tremendo correr, vemos que avanzamos. Constantemente el breve círculo de mar cupulado de cielo, que nos tiene al centro. Son las olas, son las islas y las costas, es España la que se ha ido alejando de nosotros, hundida ya a mil quinientas leguas... ¡andando una, yo sentí mayor entre fatigas y jarales la sensación de distancia en mis cacerías de muchacho!</p>
@@ -1155,7 +1182,7 @@
 				<p>Minutos después no cuelgan del horizonte de ópalo más que los negros crespones.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0160_chap14">
-				<head>- XIV -</head>
+				<head xml:id="ne0160_head_013">- XIV -</head>
 				<p>No soy el hombre de las observaciones -lo es Enrique; pero he observado que Lucía, no baja al té algunas noches... precisamente estas en que su marido, ciego con el tresillo, olvídase de subir por ella a la cubierta... ¿Disgusto a tal descortesía..., o es que con el capitán aprovecha allá arriba la propicia soledad para cambiar acuerdos?</p>
 				<p>El capitán no viene nunca a estas horas al comedor; desde que anochece, hasta lo menos las diez, se eclipsa, ocupado en organizar los relevos; y más en las proximidades de tierra. Debemos llegar mañana a Colombo, bien temprano; hemos cruzado esta tarde junto a las islas Maldivas; los camareros han quitado las fundas a los divanes, a los muebles; han colgado en las portadas los terciopelos con las cifras de la Compañía y los visillos nuevos en las ventanas de la saleta de señoras; han puesto, en fin, al<seg rend="italic"> Reus</seg>, de puerto.</p>
 				<p>Tomo el té frente a Pascual, que devora mortadela mientras charla a su lado Aurora con Enrique. Esto marcha. Ver a la<seg rend="italic"> pescadera </seg>tan totalmente despreocupada del capitán, me mortifica... ¡Oh, acaso arriba, ahora mismo conversan también!...</p>
@@ -1237,7 +1264,7 @@
 				<p>Llegan los concertistas, Charo, Pura, el relojero, Aurora, Enrique... No muestra Lucía inquietud de que nos encuentren solos, ni aun después del siniestro paso de Sarah -que no vienen con ellos.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0160_chap15">
-				<head>- XV -</head>
+				<head xml:id="ne0160_head_014">- XV -</head>
 				<p>Boga tranquilamente el <seg rend="italic">Reus</seg>, como por un anchuroso lago, frente a las costas paradisíacas que desde el amanecer nos envuelven en perfumes. Son siempre un bajo y mullido bosque de vegetación asombrosa, cuyos festones de fronda rompen airosamente penachos de cocos y palmeras. «Un bosque de nardos, de gardenias, de magnolias, según se aroma el mar» -ha dicho Lucía. Y hemos comprendido el pleno Oriente, aquí.</p>
 				<p>Del lado del agua, jalonan la extensión, con espaciados enormes, un monitor... un vaporcillo... un transatlántico italiano que nos muestra su bandera verde, roja y blanca... otro pequeño buque que apenas se distingue... una fragata que pierde en el azul la mancha leve de sus velas... Por tierra, grandes aves de purpúrea pluma pasan entre las gaviotas, y una ondulación suave de los festones verdes, más distantes cada vez, juega con dilatada gracia a ir fundiendo sus intensos tonos con el diáfano amatista de una barrera de montes que apenas destácase del cielo.</p>
 				<p>Volvemos los gemelos a la proa, hacia Colombo.</p>
@@ -1332,7 +1359,7 @@
 				<p>Me guía al baño...</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0160_chap16">
-				<head>- XVI -</head>
+				<head xml:id="ne0160_head_015">- XVI -</head>
 				<p>¡Colombo!... ni una bruma ya siquiera en que fingirte. ¡Otra vez el buque, con su limpia azotea de la cubierta y sus blancas redecillas, con su ruido de palacio en marcha huecamente rimada por la máquina, por la hélice, allá como en los sótanos; otra vez el mar desierto.</p>
 				<p>Yo llevo un loto azul en el bolsillo.</p>
 				<p>Vamos a cinco grados del Ecuador, por este golfo de Bengala; abrasa el sol. Y sin embargo, hoy, durante el almuerzo, nos ha dado el capitán una noticia estupenda: dentro de muy poco será la Nochebuena!!!... Oh, Noche-buena... con tal furioso y torrefante julio, con estos trajes blancos, con este dormir sin paz de los abanicos de palma la noche entera bajo el cielo!... Y ha sido preciso rendirse a la absurda razón del almanaque: 19 DE DICIEMBRE.</p>
@@ -1368,7 +1395,7 @@
 				<p>Preside todo esto la efigie de un señor sentado en un retrete y con cara de pascuas que demuestra cómo las <seg rend="italic">Píldoras Pun </seg>le están causando su grato efecto laxante... -y gracias a que otro periódico desde la barba a las rodillas le oculta desnudeces que sólo se ven un poco por los lados...</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0160_chap17">
-				<head>- XVII -</head>
+				<head xml:id="ne0160_head_016">- XVII -</head>
 				<p>Cuando hoy bajamos del baldeo don Lacio y yo, veo una silueta femenina que nos huye, escondiéndose en el fumador... ¡Oh!... Don Lacio no la ha visto; yo nada le digo... Pasamos... Nos separamos, cada uno a nuestro camarote. El interior del buque yace en noche todavía, con luces por los pasillos.</p>
 				<p>¿Quién es? ¿Por qué se esquiva?... No puedo saberlo. La blanca visión ha sido rápida, al fondo de la escalera. Parecía subir, su intento. -Deténgome en mi puerta..., y entro al fin; la intención que me ha cruzado de ir a descubrirla, aparéceseme villana... No importándome, no iría, en efecto, si en vez de una mujer fuese un hombre dispuesto a castigar la indiscreción a puñetazos. Además, estoy calado de agua como un perro acabado de bañar.</p>
 				<p>Múdome de ropa. Me acuesto. La roja cortina, en la ventana, basta para ocultarme el fulgor del alba. En la sombra ronca Pascual. Me impide el sueño, y envidio a Enrique, que duerme.</p>
@@ -1521,7 +1548,7 @@
 				<p>Y hay una sonrisa y un grande y valiente mirar de sus ojos nobles... que yo no diera por todos los besos de todas las mujeres del <seg rend="italic">Reus</seg>.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0160_chap18">
-				<head>- XVIII -</head>
+				<head xml:id="ne0160_head_017">- XVIII -</head>
 				<p>En verdad que se ha animado el barco, con la fiesta. A la mesa se habla siempre de música y teatro, y empiezan los ensayos en cuanto anochece. Siendo mi cargo el de director de escena, aquí en la saleta de señoras, Sarah no me deja bajar al comedor, ni aun cuando ella canta -teniendo que atender a ambas secciones -su <seg rend="italic">Seade melancolique</seg>:</p>
 				<lg type="poem">
 					<l> Ma fenétre, helas, est fermée,</l>
@@ -1596,7 +1623,7 @@
 				<p>Continúa el ensayo.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0160_chap19">
-				<head>- XIX -</head>
+				<head xml:id="ne0160_head_018">- XIX -</head>
 				<p>Esto ya ni es barco, ni ir por la Indochina, ni más que un patio de conferencias que igual podría estar en el Congreso hirviendo comentarios...</p>
 				<p>La francesa tiene la culpa de la sorda tempestad que llevamos dentro, sobre el mar sereno. Despierto el pasaje más temprano, por la campanilla del sacris, para la misa de domingo, yo, en vista de que la Noche-buena se acerca, había propuesto a mi sección dramática un ensayito antes de almorzar. En la saleta, rebosante de matinales alegrías, prodújose de pronto un movimiento de estupor: la francesa entraba... ¡la francesa, con una humilde vieja que le tiene para su servicio el indio! La francesa, con uno de sus más llamativos trajes de sedas y de blondas, ¡llena además de brillantes!... El estupor tradújose en protesta, y aunque siguió el ensayo, fueron desfilando las damas y apenas si entre las del público quedó otra, con la intrusa y con la vieja, que Lucía, hasta el final.</p>
 				<p>Lucía, sí, permaneció..., enfrente, en su diván, indiferente a la pintada y llamativa mujer de escándalo, con la cual, y contra lo que pensábamos de los miramientos del indio a su hija y a la tiesa miss, la miss y el indio han formado grupo.</p>
@@ -1660,7 +1687,7 @@
 				<milestone unit="section"/>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0160_chap20">
-				<head>- XX -</head>
+				<head xml:id="ne0160_head_019">- XX -</head>
 				<p>¿Me quieres?</p>
 				<p>-Mucho.</p>
 				<p>-¿Cuánto?</p>
@@ -1748,7 +1775,7 @@
 				<p>El <seg rend="italic">Isla de Mallorca</seg> y el <seg rend="italic">Reus </seg>se saludan con sirenas, con faroles que suben y bajan allá por la obscuridad del mar...</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0160_chap21">
-				<head>- XXI -</head>
+				<head xml:id="ne0160_head_020">- XXI -</head>
 				<p>Gran oficina de memorialistas, el <seg rend="italic">Reus</seg>. Dondequiera hay gentes escribiendo, por el comedor, por el fumadero, impidiendo las partidas de tresillo y de ajedrez; por la cubierta, en sillas, con tinteros de muelle, no bastando los de a bordo. Al arribo de los puertos se impone la breve comunicación con los ausentes queridos, cuyo recuerdo nos renueva y embuenece a todos en la misma onda de ternura. Tengo en el bolsillo mis cartas, y veo desde la borda, a través de una ventana de la saleta, cómo escribe Enrique. Su enérgica faz de rubio domador, creyérase que va a inundarse de lágrimas. Yo medito cuán lejos de él estarán aquellas sus teorías de «práctico sensualismo», entregado ahora el corazón a su madre, a sus hermanas...; y sin embargo, también ellas son mujeres que parecían incluidas en su generalidad. Con sólo que adivinase que pienso esto determinadamente, me daría una bofetada, y se la daría yo a él en caso inverso... ¡Pobres mujeres! ¡Cuánto tiene de irreflexivo y salvaje el modo como os tratamos!... para cada uno, santas su hermana, su madre; brutas de pechos y muslo de lujuria las otras... que son, no obstante, madres y hermanas de los demás...</p>
 				<p>Huyo del pensamiento volviendo a contemplar el maravilloso espectáculo de fuera. El más bello del mundo -según el capitán. Encanta, efectivamente, como una magia. Conforme navegamos hacia Singapore, nos van rodeando y estrechando los islotes, los flotantes vergeles de tierra roja de coral y de fina y varia vegetación de parque. Los lagos, es decir, las extensiones de mar en que se ensanchan los canales, son verdes, verdes en su calma dilatada, verdes de un verde lívido y fantástico, como las fosforescencias de los ojos felinos. El cielo es verde, decididamente verde en su pálida transparencia de ensueño. Acá y allá, por las islas, cerca, lejos, se ven floridas colinas de la tierra de coral, por cuyas faldas bajan, entre fronda, las casitas de madera, hasta grupos de ellas sumergidos en el agua, sobre estacas... Aldeas divinas... Rústicas Venecias deliciosas.</p>
 				<p>Doblamos una punta, y un buque hundido asoma su bauprés y las crucetas inclinadas de los palos. Tiene por señal de aviso faroles encendidos, aunque no ha hecho el sol más que ponerse. Está así hace años. Ya había hablado de él el capitán en la mesa. -¡A su vista voy figurándome los Pascuales, las Auroras, las Charos que yacerán dentro del casco inmenso dignificados por la muerte! ¡Cuántas veces el morir nos torna respetable una vida estúpida!</p>
@@ -1812,7 +1839,7 @@
 				<p>Del beso, porque no es más que uno, ansioso, sin término, en que Sarah contra mi hombro se muere...</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0160_chap22">
-				<head>- XXII -</head>
+				<head xml:id="ne0160_head_021">- XXII -</head>
 				<p>Con el ajetreo de anoche, que nos salvó siquiera del carbón, ha habido sujeto que no ha dado rumor de sí (como llámale Pascual al despertar) hasta las tres de la tarde. El relojero pinta el cartel de la función -rodeado de un grupo de mirones- en tertulia con la india y con el indio y con la miss, con la otra india del doctor Roque y con éste, quienes han formado rancho aparte desde el día de la francesa; Lucía y yo acabamos por sentarnos con ellos, lejos del grupo de la proa, donde está Sarah leyendo folletines -Lucía por hablar en inglés con la miss, yo por ver pintar... y por oírle acaso el inglés a Lucía.</p>
 				<p>No, no, pinta bien este relojero. Tiene el cartón orlado de alegorías, con los felices apuntes que ha ido tornando de Singapoore, de Colombo..., bajo una vista de aquellos anchos lagos del canal. ¿Por qué, si es un demostrado badulaque, pinta bien y toca no mal el violín?... Sin duda la pintura, en la categoría de copista, y la música en la de ejecutante, son artes inferiores.</p>
 				<p>Se tutean, él y la india, en voz baja: son novios...</p>
@@ -1886,7 +1913,7 @@
 				<p>No sé cómo se aleja Pascual, pero apostaría a que le haya tomado el brazo a «su señora» por irse deleitando a través de la batista con su piel incomparable.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0160_chap23">
-				<head>- XXIII -</head>
+				<head xml:id="ne0160_head_022">- XXIII -</head>
 				<p>Diciembre 24. -Nochebuena -nos ha dicho hoy el almanaque.</p>
 				<p>Y es preciso creerlo, ahogado, aquí, viendo este blanco y sutil celaje inmóvil de tormenta, viendo correr por el agua quieta las manadas de delfines que también parecen salir a respirar mientras aguardo como un ansiado bien mi segunda ducha de antes del almuerzo.</p>
 				<p>El cielo tiene una luminosidad siniestra de amenaza, sobre la calma del mar.</p>
@@ -1947,7 +1974,7 @@
 				<p>¡Ah, la osada!... Mas, ¡qué importa!... de quienes la escuchamos, de quienes la aplaudimos... dos nada más la hemos comprendido su audacia; Lucía y yo, que nos miramos de un modo singular... de sorpresa... de vergüenza...</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0160_chap24">
-				<head>- XXIV -</head>
+				<head xml:id="ne0160_head_023">- XXIV -</head>
 				<p>El mar de la China recobra sus fueros de mal genio y mueve nuestro barco, dejando de ser el cristal inconmovible que hemos corrido casi sin cesar desde la Arabia. Sin embargo, lo mueve discretamente, como para advertirnos nada más, como para volver al bello azul cobalto de Sicilia diciéndonos que siempre es uno y el mismo. Los celestes presagios de tormenta, se han borrado, y el sol traza su senda de luz en las olas.</p>
 				<p>He vuelto yo también esta tarde a desear lo sencillo, tras el sueño inquieto de la mañana entera en que ha rendido la fiesta al pasaje. Enrique acaba de contarme que a las tres «durmió a Pascual, y que terminó la noche... con <seg rend="italic">aurora</seg>». Hubo además sus borracheras, sus escándalos, sobre cubierta -lo supo él, que es el hombre de las observaciones: dos se pegaron, y en la saleta, a obscuras, parece que llegaron a entrar Pura y el tenientito, encontrándose allí dolorosamente sorprendidos con un durmiente que había vomitado las trufas y el champaña...</p>
 				<p>He vuelto a desear lo sencillo con el instintivo asco profundo que en la fatiga de vinos y deseos dejan las báquicas lascivias de los demás. Casi una repugnancia de cada átomo de mi ser en ansia de purificaciones..., y huyendo de las gentes, de Sarah, de la niña-mujer que fue asimismo en la hipócrita bacanal mi tentación y mi martirio, he buscado en este extremo de la popa, junto a mi limpio cañón enfundado, al pie de la corredera que sigue dando vueltas en la estela, otras castas y anchas compañías de las verdaderas almas de niña que son las olas en sus rumorosos juegos del silencio... Ellas bullen, saltan, se tocan, se lanzan espumas...</p>
@@ -2112,7 +2139,7 @@
 				<p>Sólo sé que sé ahora, como Bécquer, <seg rend="italic">«¡por qué se muere y por qué se mata!»...</seg></p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0160_chap25">
-				<head>- XXV -</head>
+				<head xml:id="ne0160_head_024">- XXV -</head>
 				<p>Días vanos -ayer, anteayer. No ha podido Sarah hacer mejor. No he vuelto a verla: <seg rend="italic">mareada 					</seg>(¡ella!) en su camarote. Sigue <seg rend="italic">mareada</seg>, en su prisión voluntaria de odio -aun hoy que quiere el mar despedirnos menos bravo enfrente de las tierras filipinas.</p>
 				<p>Mareado Alberto (él sí), pidió a sus celos ridículos la fuerza para estar constantemente al lado de Lucía; y sigue constituido en tardío y fosco vigilante que la irrita, dentro de la inalterable cortesía con que ella le habla a todos... a mí también.</p>
 				<p>Un barco <seg rend="italic">que llega </seg>es una casa en mudanza. Se despierta y no se piensa más en ese arraigo de profunda intimidad que está en la habitación. Han hecho las camas, las camareras; mas por las puertas abiertas las he visto inundadas de cajas, de maletas, de cabás que aguardan allá abajo mientras aquí arriba esperamos con el espíritu fuera del mar.</p>
@@ -2188,7 +2215,7 @@
 				<p>No me ha visto, y quédome envidiando a este idiota Pascual que va al <seg rend="italic">Hotel de Oriente</seg>... que aún podrá mirarla... que aún podrá comer en la misma mesa que ELLA algunos días,...</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0160_chap26">
-				<head>- XXVI -</head>
+				<head xml:id="ne0160_head_025">- XXVI -</head>
 				<p>Por la regia escalera de un palacio de madera de un rey de este país... donde parecen todos reyes y todo provisionalmente magnífico, llego al salón. Tocan el piano; otros leen, otros charlan... Y siento el horror de encontrarme alguien del barco, y, aun sin esto, el de ser recibido por ELLA... en visita. No entro; despido al <seg rend="italic">bata</seg>. Iré a la habitación, cuyo número le escuché al portero... ¿Imprudencia?... ¡oh!</p>
 				<p>-¿18? -cerciórome- De este piso.</p>
 				<p>-<seg rend="italic">Sabe</seg>, señor.</p>
@@ -2334,7 +2361,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El sabor de la tierruca</title>
-				<title type="sub"></title>
+				
 				<title type="short">Tierruca</title>
-				<title type="idno">
-					<idno type="bne">XX2723170</idno>
-					<idno type="viaf">7146095207900370158</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX982332</idno>
-					<idno type="viaf">54167127</idno>
-					<name type="short">Pereda</name>
-					<name type="full">José María de Pereda</name>
+					<name type="short" ref="#Pereda"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1756</measure>
@@ -141,13 +131,54 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0295</idno>
+						<idno type="cligs">ne0295</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/el-sabor-de-la-tierruca--0/"/>.</bibl>
-				<bibl type="print-source">Madrid, Imprenta y Fundición de Tello, <date when="1889">1889</date></bibl>
-				<bibl type="edition-first"><date when="1882">1882</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El sabor de la tierruca</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2723170.html">XX2723170</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/7146095207900370158/">7146095207900370158</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/1096202581">1096202581</idno>
+				</idno>
+				</title>
+					<author xml:id="Pereda">
+						<name type="full"><forename>José María</forename> <surname>de Pereda</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9754 - IO 9756">IO 9754 - IO 9756</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118790293">118790293</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q4115628/">Q4115628</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX982332.html">XX982332</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/54167127/">54167127</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="1999">1999</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/el-sabor-de-la-tierruca--0/"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace>, Imprenta y Fundición de Tello, <date when="1889">1889</date></bibl>
+					<bibl type="edition-first"><date when="1882">1882</date><idno source="k10plus" type="ppn" n="464882125" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464882125"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la Tierruca</title>: 	<title type="sub">copias del natural</title> <date when="1882">1882</date>, <publisher>Biblioteca "Arte y Letras"</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="464882125" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464882125"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca</title> <date when="1889">1889</date>, <publisher>Tello</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1376878070" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1376878070"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca</title> <date when="1889">1889</date>, <publisher>Tello [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="540245038" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=540245038"/> </bibl>
+						<bibl type="further-edition"><title type="main">El sabor de la tierruca</title> <date when="1896">1896</date>, <publisher>Tello</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="084838795" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=084838795"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Sabor de la tierruca</title> <date when="1913">1913</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="133536084" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133536084"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Sabor de la tierruca</title> <date when="1919">1919</date>, <publisher>Tello [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464177162" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464177162"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca</title> <date when="1922">1922</date>, <publisher>Librería General de Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="58439439X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=58439439X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca</title> <date when="1922">1922</date>, <publisher>Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46417760X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46417760X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Sabor de la tierruca</title> <date when="1929">1929</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="52132825X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=52132825X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca</title>: 	<title type="sub">novela</title> <date when="1939">1939</date>, <publisher>Sopena</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="465749615" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465749615"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca</title>: 	<title type="sub">novela</title> <date when="1941">1941</date>, <publisher>Ed. Sopena Argentina</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1146754388" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1146754388"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca</title> <date when="1944">1944</date>, <publisher>editorial Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1702904253" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1702904253"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca : novela</title> <date when="1951">1951</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1151432210" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1151432210"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca [u.a.]</title> <date when="1992">1992</date>, <publisher>Tantín</publisher> <pubPlace>Santander</pubPlace> 		<idno type="ppn" n="1107253594" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1107253594"/> 		<idno type="isbn" n="8487464637"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El sabor de la tierruca. Pedro Sánchez</title> <date when="1992">1992</date>, <publisher>Ed. Tantín</publisher> <pubPlace>Santander</pubPlace> 		<idno type="ppn" n="137435746" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=137435746"/> 		<idno type="isbn" n="8487464637"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +188,14 @@
 				<p>El tema de esta novela es simplemente la vida del pequeño pueblo de Cumbrales, con sus problemas y sus virtudes, sus gracias y sus desdichas. En un hermoso paraje típicamente montañés viven los dos ricos amigos Pedro Mortera y Juan de Prezanes, los hijos del primero, Pablo y María, que se han criado junto a la huérfana Ana,a el alcalde Jaun Garojos, "Juanguirle", su hijo Nisco, Catalina, hermosa joven que le persigue sin fruto, el hidalgo don Valentín, la bruja Ramila, "Chiscón", "Tablucas", "Resquemín" y muchos otros. No faltan las consabidas intrigas amorosas que provocan incluso una violenta pelea.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9755" key="IO 9755" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -183,12 +222,12 @@
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon">Ficción clásica</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela costumbrista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela regionalista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -200,7 +239,7 @@
 					<term type="text.plot.end">positive</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
-					<term type="text.quality.listhist"></term>
+					<term type="text.quality.listhist"/>
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">Cumbrales</term>
@@ -216,6 +255,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-07-21" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -226,7 +266,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0295_chap1">
-				<head>- I - : El escenario </head>
+				<head xml:id="ne0295_head_000">- I - : El escenario </head>
 				<p>La cajiga aquella era un soberbio ejemplar de su especie: grueso, duro y sano como una peña el tronco, de retorcida veta, como la filástica de un cable; ramas horizontales, rígidas y potentes, con abundantes y entretejidos ramos; bien picadas y casi negras las espesas hojas; luego otras ramas, y más arriba otras, y cuanto más altas más cortas, hasta concluir en débil horquilla, que era la clave de aquella rumorosa y oscilante bóveda.</p>
 				<p>Ordinariamente, la cajiga (roble) es el <seg rend="italic">personaje</seg> bravío de la selva montañesa, indómito y desaliñado. Nace donde menos se le espera: entre zarzales, en la grieta de un peñasco, a la orilla del río, en la sierra calva, en la loma del cerro, en el fondo de la cañada... en cualquier parte.</p>
 				<p>Crece con mucha lentitud; y como si la inacción le aburriera, estira y retuerce los brazos, bosteza y se esparranca, y llega a viejo dislocado y con jorobas; y entonces se echa el ropaje a un lado y deja el otro medio desnudo. Jamás se acicala ni se peina; y sólo se muda el vestido viejo, cuando la primavera se le arranca en harapos para adornarle con el nuevo; le nacen zarzas en los pies, supuraciones corrosivas en el tronco, musgo y yesca en los brazos; y se deja invadir por la yedra, que le oprime y le chupa la savia. Esta incuria le cuesta la enfermedad de algún miembro, que, al fin, se le cae seco a pedazos, o se le amputa con el hacha el leñador; y en las cicatrices, donde la madera se convierte en húmedo polvo, queda un seno profundo, y allí crecen el muérdago y el helecho, si no le eligen las abejas por morada para elaborar ricos panales de miel que nadie saborea. Es, en suma, la cajiga, un verdadero salvaje entre el haya ostentosa, el argentino abedul, atildado y geométrico, y el rozagante aliso, con su cohorte de rizados acebos, finas y olorosas retamas, y espléndidos algortos.</p>
@@ -248,7 +288,7 @@
 				<p>Y con esto, descendamos del campanario, pues he dicho bastante más de lo que pensaba y hace falta en el presente capítulo, y volvamos a la cajiga, que no a humo de pajas comencé por ella el relato; mas no sin advertir que se la llama en Cumbrales <seg rend="italic">la Cajigona</seg>, lo mismo que al sitio que ocupa, que a la fuente y que al asiento a ella cercanos; es decir, que «agua de la Cajigona» se llama a la de aquel manantial; «vamos a la Cajigona» dicen los que se encaminan a sentarse a la sombra de ella, y «prados de la Cajigona» se denominan los que la circundan.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0295_chap2">
-				<head>- II - : A modo de sinfonía </head>
+				<head xml:id="ne0295_head_001">- II - : A modo de sinfonía </head>
 				<p>Comenzaba el mes de octubre; parecía el fresco retoño de la vega tapiz de terciopelo, y las ya amarillas panojas se oreaban en los maíces despuntados, dentro de la seca envoltura, que chasqueaba y crujía, como estrujado papel, al secar sobre ella el calor del sol el rocío de la noche. Andaba rayano el mediodía; inmóvil estaba el follaje mustio, mal adherido a las ramas; podían contarse los árboles en el monte, por lo cercanos que los fingía la vista, y el ciclo, como barrido de nubes en lo alto, las tenía amontonadas hacia el horizonte, revueltas las blancas con las negras, las nacaradas y las rojas.</p>
 				<p>Las témporas de San Mateo habían <seg rend="italic">quedado de sur</seg>; y según el almanaque montañés, así debía seguir el tiempo hasta las de Navidad; lo cual vendría de perlas para secar el maíz y las castañas, y asegurar una excelente <seg rend="italic">pación</seg> a los ganados al <seg rend="italic">derrotarse</seg> las mieses. Y el pronóstico se iba cumpliendo hasta entonces. Estaba, pues, el día como de sur en calma: bochornoso y pesado. No es de extrañar que a aquellas horas gustara la sombra como en el mes de agosto.</p>
 				<p>Tomábanla con notoria complacencia, sentados en el banco de la Cajigona, dos sujetos: mozo el uno, en la flor de la juventud; sombreado el rostro lozano por un bigotillo negro y brillante, con el pelo de su cabeza, a la sazón descubierta, también negro y recio y corto; la frente angosta y no mal delineada; la boca fresca y no grande; los dientes blanquísimos y apretados; los ojos un tanto asombradizos y curiosos, como de persona impresionable que se estima en poco. Correspondía a la cabeza el cuerpo gallardo, y había soltura y gracia en todos sus ademanes y movimientos. Vestía un traje holgado, no cortado seguramente por el sastre de la aldea; y como el calor le molestaba, había deshecho el leve nudo de la corbata y soltado el botón del cuello de la camisa, por cuya abertura se entreveía su rollizo y blanco pescuezo, sin barruntos de nuez ni asomo de costurones.</p>
@@ -306,7 +346,7 @@
 				<p>Y Pablo tomó por el lado derecho, y don Baldomero por el izquierdo, porque sus respectivas casas estaban en opuestos extremos de un mismo barrio del lugar.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0295_chap3">
-				<head>- III - : Algo del asunto </head>
+				<head xml:id="ne0295_head_002">- III - : Algo del asunto </head>
 				<p>Alzábase la iglesia de Cumbrales sobre un tumor del terreno, o montículo de roca viva, mal cubierto de menuda y fragante vegetación, que, a modo de manta de pobre, roída y desgarrada a trechos, por los agujeros y desgarraduras dejaba asomar las que pudieran llamarse coyunturas del peñasco. Era éste de suave y bien entendido acceso por todas partes, y ocupaba el centro de una llanura, especie de plaza circundante, cruzada de camberas y senderos que partían el rústico suelo en caprichosas porciones geométricas. De éstas, unas estaban pobladas de árboles, no muy corpulentos, pero de ancha copa; otras, las de mayor relieve, adornadas de espesas cenefas de zarzas y saúco, y todas ellas tapizadas de fino y apretado césped, sobre el cual descollaban, aquí y allá, la menta silvestre, el enano poleo, la malva bienhechora y el desabrido cardo. Hubiera sido este pintoresco espacio algo como lo que hoy se llama un <seg rend="italic">parque a la inglesa</seg>, con caminos menos ásperos y pedregosos, y sin las ortigas y jaramagos que hacían ingrato y peligroso al tacto lo que seducía y enamoraba a los ojos.</p>
 				<p>Ocupaba parte de uno de los lados menores de esta plaza, que tendía a la forma rectangular y se llamaba en Cumbrales <seg rend="italic">Campo de la Iglesia</seg>, la taberna, con su corro de bolos a la trasera, encajado entre cuatro paradillas que se saltaban de un brinco, y éstas y el corro encerrados en sendas hileras de añosos álamos que amparaban del sol en verano a los jugadores, y no los privaban de su dulce calor en las breves tardes del invierno. Otro lado, de los mayores, al mediodía, le formaban, aunque con muchas sobras de terreno, las casas consistoriales y la escuela pública, y los dos restantes, al Saliente y al Norte, huertos y corrales de la barriada principal, que tenía tres salidas a la plaza por este último lado.</p>
 				<p>Por una de estas callejas, la de en medio, entró Pablo. Anduvo muy buen trecho entre muros y vallados, aquéllos entretejidos de yedra, y éstos erizados de bardales, y llegó a desembocar en un <seg rend="italic">campuco</seg>, a modo de plazoleta, cuyos dos frentes estaban ocupados por sendas portaladas que parecían gemelas: tan idénticas eran entre sí. Cada una de estas portaladas daba ingreso a un corral espacioso, en el que se alzaba una casa grande, de larga solana y amplísimo soportal de grueso poste en el centro; cuadras adyacentes, cobertizos inmediatos, huerta al costado, y todo lo de rigor y carácter en estas viviendas de <seg rend="italic">ricos de aldea</seg>, tantas veces descritas por esta pluma pecadora.</p>
@@ -362,7 +402,7 @@
 				<p>Se sirvió la sopa; sentose el patriarca a la mesa; bendíjola, según costumbre, después de ocupar cada cual su puesto; y andábase muy cerca ya del clásico estofado, cuando aquél refirió en compendio lo que el curioso lector hallará más adelante con los debidos pormenores.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0295_chap4">
-				<head>- IV - : Pelos y señales </head>
+				<head xml:id="ne0295_head_003">- IV - : Pelos y señales </head>
 				<p>Pedro Mortera y Juan de Prezanes, vástagos de las dos familias más ricas y antiguas de Cumbrales, ligadas siempre por amistoso vínculo ¡caso raro en este país de quisquillas y reconcomios! Juan de Prezanes, repito, y Pedro Mortera, eran inseparables camaradas. Pero Juan era suspicaz, impetuoso y avinagrado de genio, y Pedro cachazudo y reflexivo. Éste, en sus juegos infantiles, gustaba de lo seguro y fuerte; aquél de lo más fácil, siempre que fuera nuevo, breve y vario; el uno era muy inclinado a los trabajos rústicos y a los esparcimientos campestres; el otro a fisgonear murmuraciones y a comentar dichos de las gentes: Pedro era todo observación y método; Juan sentimiento, nervios y palabra. Sólo se parecían ambos muchachos en la bondad del corazón y en estar siempre dispuestos a dar la pelleja el uno por el otro; así es que jamás hubo avenio entre ellos en cuestiones de gusto, y se pasaron lo mejor de la infancia refunfuñando, cuando no a la greña, pero queriéndose mucho.</p>
 				<p>Juntos fueron después a estudiar a la ciudad; juntos vivieron en ella, y al mismo estudio se dedicaron. Pedro se cansó de los libros a los dos años, y se volvió a su pueblo. Juan continuó los estudios, y fue a la Universidad y llegó a ser abogado. Pedro, en Cumbrales, se consagró a la labranza con verdadera afición, y mejoró mucho la hacienda que, ya mozo, heredó de su padre.</p>
 				<p>Juan, huérfano también poco después de volver de la Universidad, y sin las aficiones de su amigo, puso en renta las tierras que cultivaba su padre, y en aparcería los ganados que halló en las cuadras (parte mínima de los bienes que heredó), y abrió en Cumbrales su estudio, por no aburrirse.</p>
@@ -382,7 +422,7 @@
 				<p>Y ahora tenga el lector la bondad de pasar al capítulo siguiente, en el cual acabará de conocer, tratándolos de cerca, a estos dos personajes, y sabrá lo que ocurrió en la entrevista que, en compendio, refirió en la mesa don Pedro Mortera.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0295_chap5">
-				<head>- V - : Entre compadres </head>
+				<head xml:id="ne0295_head_004">- V - : Entre compadres </head>
 				<p>Alto, enjuto, largo de brazos, afilados los dedos, pequeña la cabeza, el pelo escaso y rubio, los ojos azules y sombreados por largas cejas, nariz puntiaguda, labios delgados y pálidos, y sobre el superior un bigote cerdoso, entrecano y sin guías, por estar escrupulosamente recortado encima de aquel contorno de la boca. Tal era, en lo físico, don Juan de Prezanes. Pulquérrimo en el vestir, jamás se hallaba una mancha en su traje, siempre negro y fino, escotado el chaleco, blanquísima y tersa la pechera de la camisa, de cuello derecho y cerrado bajo la barbilla, y de largos faldones la desceñida levita; traje que se ponía al levantarse de la cama y no se quitaba hasta el momento de acostarse.</p>
 				<p>En tal guisa se paseaba, cuando fue su amigo a verle, desde su gabinete (dormitorio y despacho a la vez, como lo demostraban una cama y avíos de limpieza en el fondo de la alcoba, y afuera una regular librería, mesa de escribir, sillones, etc.) hasta el extremo opuesto del contiguo salón, espacioso, limpio y decorosamente amueblado.</p>
 				<p>No esperaba a su amigo, y se inmutó al verle allí. Don Pedro, como si nada hubiese pasado entre los dos, díjole con su aire campechano:</p>
@@ -463,7 +503,7 @@
 				<p>Con esto, se volvió a consolar al atribulado, y salió don Pedro Mortera, harto más pesaroso que complacido.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0295_chap6">
-				<head>- VI - : Don Valentín </head>
+				<head xml:id="ne0295_head_005">- VI - : Don Valentín </head>
 				<p>La casa a que llegó don Baldomero después de separarse de Pablo, estaba situada en lo más desabrigado, al vendaval de la barriada de la Iglesia. Era grande y vieja, sin portalada; con una accesoria, que en mejores tiempos había cumplido altos destinos, a un costado; al opuesto, un nogal medio podrido, y en la trasera un huerto lóbrego.</p>
 				<p>¡Qué tristes son en una aldea esos viejos testimonios de fenecidas prosperidades campestres! Tristes, porque al contemplarlos los ojos del sentimiento, más que las piezas herrumbrosas y dislocadas que tienen delante, ven la máquina activa que ya no existe. ¡Cuánto más alegre la miserable choza entre laureles y zarzas, con el becerrillo atado al tosco pesebre y una pollada picoteando en las goteras del corral, que el silencioso palación de abolengo, con las cuadras enjutas y encanecidas por desuso, y el pajar en esqueleto! La primera es la vida risueña, que no está reñida con la pobreza; el segundo es la muerte, o, cuando menos, la decrepitud con todos sus achaques, tristezas y desalientos.</p>
 				<p>Tal aspecto ofrecía la casa de que vamos hablando.</p>
@@ -498,7 +538,7 @@
 				<p>Momentos después roncaba don Baldomero con la apagada punta del cigarro pegada al labio inferior.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0295_chap7">
-				<head>- VII - : Más actores </head>
+				<head xml:id="ne0295_head_006">- VII - : Más actores </head>
 				<p>De una persona que tiene estrabismo, dicen las gentes aldeanas de por acá que <seg rend="italic">enguirla</seg> los ojos, o simplemente que enguirla; y se llama la acción y efecto de enguilar, <seg rend="italic">enguirle</seg>. Ahora bien: Juan Garojos, hombre bien acomodado, trabajador, de sanas y honradas costumbres, alegre de genio y con sus puntas de socarrón, era un poco bizco; y como en esta tierra, lo mismo que en otras muchas, no bien se columbra el defecto en una persona, ya tiene ésta el mote encima, a Juan, desde que andaba a la escuela, dieron en llamarle Juan <seg rend="italic">Enguirla</seg>: algunos, Juan <seg rend="italic">Enguirle</seg>, y todos, al cabo de los años, <seg rend="italic">Juanguirle</seg>, con el cual nombre se quedó por todos los días de su vida.</p>
 				<p>Pues este Juanguirle, un poco bizco, bien acomodado, honradote, chancero y socarrón, más cercano a los sesenta que al medio siglo, y alcalde de Cumbrales al ocurrir los sucesos que vamos relatando, hallábase en el portal de su casa, de las mejores del lugar entre las de labranza, con cercado solar enfrente, para lo tocante a forrajes y legumbres en las correspondientes estaciones, sin perjuicio de la cosecha del maíz a su tiempo (pues a todo se presta la tierra bien administrada, máxime si amparan sus frutos contra las injurias y demasías del procomún, cercados firmes y el ojo del amo, alerta y vigilante); bien provisto el corral de rozo y junco para las <seg rend="italic">camas</seg>, y de matas y tueros para el hogar la socarreña accesoria, capaz también del carro y su armadura de quita y pon, la sarzuela y los adrales, un tosco banco de carpintería, el rastro y el ariego, y muchos trastos más del oficio, que no quiero apuntar porque no digan que peco de minucioso, aunque tengo para mí que, en esto de pintar con verdad, y, por ende, con arte, no debe omitirse detalle que no huelgue, por lo cual he de añadir, aunque añadiéndolo quebrante aquel propósito, que debajo de la <seg rend="italic">pértiga</seg> dormitaba un perrazo de los llamados <seg rend="italic">de pastor</seg>, blanco con grandes manchas negras, y que en el corral andaba desparramado un copioso averío, buscándose la vida a picotazos sobre el terreno que escarbaba.</p>
 				<p>Volviendo a Juanguirle, añado que estaba en mangas de camisa, canturriando unas seguidillas a media voz, pero desentonada, mientras pulía el asta que acababa de echar a un dalle; obra de prueba que pocos labradores son capaces de ejecutar debidamente. Raspaba el hombre con su navaja donde quiera que sus ojos veían una veta sobresaliendo, y luego aproximaba a sus ojos la más cercana extremidad del asta; y tocando el <seg rend="italic">pie</seg> del dalle en el suelo, enfilaba una visual por los dos puntos extremos; y vuelta después a raspar, y vuelta a las visuales, y vuelta también a probar su obra, empuñando las <seg rend="italic">manillas</seg> y haciendo que segaba.</p>
@@ -550,7 +590,7 @@
 				<p>Con lo cual se marchó Nisco a casa de Pablo; y momentos después, medio tendido en el suelo, sobre las melenas de uncir los bueyes; apoyado el tronco sobre el codo del brazo izquierdo; el extremo del asta sobre la rodilla levantada, y el filo del dalle deslizándose, al suave empuje de la mano izquierda, por encima del yunque clavado en tierra, canturriaba una copla el bueno de Juanguirle, al compás del tic, tic, de su martillo, sin acordarse más del cargo que ejercía en el pueblo ni de la visita de don Valentín, que del día en que le llevaron a bautizar.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0295_chap8">
-				<head>- VIII - : Égloga </head>
+				<head xml:id="ne0295_head_007">- VIII - : Égloga </head>
 				<p>Caminando Nisco de su casa a la de Pablo, como las callejas eran angostas y sombrías y convidaban a meditar, andando, andando, meditaba y acicalábase el mozo, pues a ambas cosas era dado, como soñador y presumido que era; y ¡vaya usted a saber por dónde volaba su imaginación mientras se atusaba el pelo con la mano y observaba la caída de las perneras sobre los zapatos, y estudiaba aires y posturas, sonrisas y ademanes!</p>
 				<p>A lo más angosto de la calleja llegaba, punto extremo de la parte recta de ella, paso a paso, mira que te mira el propio andar y soba que te soba el pelo, cuando topó cara a cara con Catalina, la moza más apuesta y codiciada de Cumbrales. Pareja tan gallarda como aquélla, no podía hallarse en diez leguas a la redonda. Si él era el tipo de la gentileza varonil y rústica, ella era el modelo correcto de la zagala ideal de la égloga realista. Y, sin embargo, a Nisco no le gustó el encuentro, y hasta le salió a la cara el desagrado en gestos que devoraron los negros y punzantes ojos de Catalina.</p>
 				<p>Con voz no tan firme como la mirada, dijo al mozo, cuando le vio delante de ella vacilando entre echarse a un lado para dejar el paso libre, o detenerse para cumplir con la ley de cortesía:</p>
@@ -593,7 +633,7 @@
 				<p>Llevábala a casa de la bruja no la reflexión, sino un vértigo del espíritu, obra del reciente choque de su pasión generosa con el desdén brutal de Nisco. Sentía el dolor de la herida en lo más hondo del corazón, y buscaba algo que debía de haber para calmarle, aunque fuera el triste placer de la venganza. Sospechaba, pero no conocía, la verdadera causa del desvío de su novio, e ignoraba qué le dolía más, si el recelo de que otra mujer se le llevara, o el temor de perderle ella; qué era lo que con mayor urgencia necesitaba, si reconquistar el bien perdido, o hacer que <seg rend="italic">la otra</seg> no le adquiriera para sí. En cualquiera de estos casos, ¿cómo, cuándo y por qué camino, si no tenía otra luz para orientarse en el abismo en que se hallaba que el notorio desvío del ingrato? Filtros, adivinaciones, sortilegios, hechicerías por arte del diablo, noticias ciertas, consejos sanos por modo lícito y natural, y, en último extremo, ocasión de desahogo del pecho acongojado, casi en el secreto de la confesión... Todo esto, o mucho o algo de ello, podía encontrarse en la choza de la Rámila; y por eso iba Catalina al antro de la bruja; y por eso, cuando se halló delante de ella, no supo explicar lo que quería. Al último, refirió la historia de sus desventuras, que es por donde debió de haber empezado. Lloró mucho, y la Rámila la dejó llorar hasta que ya no hubo lágrimas en sus ojos ni quejidos en su pecho.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0295_chap9">
-				<head>- IX - : Las primeras chispas </head>
+				<head xml:id="ne0295_head_008">- IX - : Las primeras chispas </head>
 				<p>Quien haya visto el mar después de un temporal deshecho, tenderse en la playa, rumoroso y ondulante, lamiendo manso lo que antes azotó iracundo, y trocados en arrullos sus bramidos, tendrá una idea del estado de don Juan de Prezanes, horas después de la borrasca que el lector presenció. En el fondo de aquella alma, transparente como el más limpio cristal, no se descubría un solo rencor. Remordimientos y heridas, sí. Remordimientos, porque su buen sentido, libre de las cadenas de la pasión, decíale que para defender su derecho no había necesidad de enfurecerse como él se enfurecía, dando con ello monstruosas proporciones a lo que de suyo era, en sus comienzos, pequeño y baladí, y rebajando lastimosamente el nivel de su propia dignidad. Hasta concedía cierto derecho a su amigo para desaprobar sus viejas alianzas con determinadas gentes, por que a la vista estaban los muchos males que habían producido al pueblo, y los grandes disgustos que a él le habían acarreado, sin un solo beneficio; pero nada más que <seg rend="italic">cierto derecho</seg>: no en la amplitud en que su compadre se le tomaba y comprendía. Y por aquí andaba el punto doloroso. Grabadas estaban en su memoria palabras de acero que, en el calor de la disputa, se le habían lanzado al corazón, sin respeto alguno a la honradez de sus intenciones ni a la enfermedad de su temperamento, causa eficiente de los arrebatos a que de continuo se entregaba, contra sus deseos y propósitos.</p>
 				<p>Apenábale el dolor de estas heridas, hechas sobre frescas cicatrices, y, por lo mismo, doblemente dolorosas; pero curábalas con la reflexión de que otras tales había causado él en la batalla: con el bálsamo del perdón implorado por su contendiente, y con la esperanza de que la reciente reyerta sería la última entre él y el amigo a quien más quería en el mundo. Pero, hecha entre los dos la definitiva liquidación de agravios, y vuelto cada cual a su tienda, que no se le obligara a él a dar el primer paso en la nueva y edificante vida que ambos habían de hacer en adelante. Era él el más desgraciado, el más solo y el más ofendido de los dos, y no podía arraigar la reconciliación en el fondo del alma, si se cimentaba en tan palmaria injusticia. En cambio, si, libre y espontáneamente, su amigo, o cualquiera de la familia de su amigo, diera ese paso decisivo, ¡con qué ansia le saldría al encuentro y le recibiría en sus brazos, y firmaría entre ellos, con el olvido de todos los agravios, eternas y venturosas paces!</p>
 				<p>Así pensaba, arrimado a la mesa de su despacho, y en la palma de la mano reclinada la descolorida frente, mientras Ana, sentada a su lado y leyéndole los pensamientos (porque los hombres como don Juan de Prezanes, no solamente son niños toda la vida por su afición a las cosas pequeñas, sino por su propensión a meditar a voces), le prometía lo que él deseaba, y mucho más.</p>
@@ -637,7 +677,7 @@
 				<p>Dispúsose Ana a complacer a su padre; y con tal apresuramiento y tan de buena gana, por lo visto, que al recoger los avíos de costura en su primorosa canastilla, por cada cosa que guardaba ¡ella a quien jamás igualaron prestidigitadores en destreza y agilidad!, dejaba caer media docena. Mas allí estaba Pablo, que se desvivía con desusado afán por recogerlas en el aire y ponerlas en las blancas y finas, pero desatinadas manos de la azorada joven.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0295_chap10">
-				<head>- X - : Los humos de Nisco </head>
+				<head xml:id="ne0295_head_009">- X - : Los humos de Nisco </head>
 				<p>Nisco llegó a casa de Pablo después que éste había entrado en la de don Juan de Prezanes. Subió el hijo de Juanguirle sin llamar, como era su costumbre, derecho al cuarto de su amigo. Al pasar por delante de la puerta de la sala, oyó que le decían desde el fondo de ella:</p>
 				<p>-Pablo ha salido.</p>
 				<p>Era la voz de María. Conociola el mozo, retrocedió dos pasos y se colocó en el hueco de la puerta, sombrero en mano, enfrente de la joven que cosía sentada cerca del balcón.</p>
@@ -724,7 +764,7 @@
 				<p>-Taday... ¡Probeza!...</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0295_chap11">
-				<head>- XI - : Apuntes para un cuadro </head>
+				<head xml:id="ne0295_head_010">- XI - : Apuntes para un cuadro </head>
 				<p>Bien corrida era ya la media tarde cuando despertó don Baldomero, porque fue Sidora a levantar la mesa y le dio en la cara con el mantel al echársele debajo del brazo. Incorporose el hombre lentamente, bostezando mucho y con grande clamoreo; se desperezó a sus anchas, lió un cigarro y le encendió sin dejar de estremecerse ni de bostezar entre chupada y chupada. Salió después del casarón, y, paso a paso, llegó a la taberna, café de los holgazanes desidiosos de aldea.</p>
 				<p>Junto a la enrejada ventana, por donde el tabernero despachaba a los parroquianos vergonzosos, había una mesa de basto tablero, y alrededor de ella, sentados, hasta tres personajes que voy a presentar al lector, porque debe conocerlos. Vestía el uno un traje entre andaluz y de la tierra (ancha faja de estambre negro a la cintura, calañés, chaleco desceñido, y en mangas de camisa); andaría rayando con los treinta y cinco años; y como aún era <seg rend="italic">mozo soltero</seg>, presumía de apuesto sin serlo cosa mayor; ostentaba en la cara anchas patillas negras; miraba gacho y hablaba ceceoso y lento, más por alarde que por natural disposición. Había estado, de mozo, en Andalucía, como tantos otros conterráneos suyos; y era casi el único resto del antiguo <seg rend="italic">jándalo</seg>, de los que volvían a caballo, entre rumbo y alamares, escupiendo por el colmillo y, a creer lo que ellos mismos aseguraban, sembrando el camino real de pañuelos de seda y onzas de oro.</p>
 				<p>No le dio a éste gran cosa la vanidad por ese lado: en cambio, su boca era una carnicería, hablando, mientras acariciaba con la mano el cabo de una navaja que siempre llevaba asomando por el ceñidor, de la gente que él había despachado al otro mundo, no más que por tocarle con el codo al pasar, o por no dejarle la acera libre, o por mirar dos veces seguidas a la mujer que por él se moría. Con esto, con no trabajar nada, con frecuentar demasiado la taberna y con amenazar en voz sorda, marcando mucho la sonrisa, al lucero del alba a cada paso, llegó a hacerse temible en Cumbrales, aunque no hay memoria de que nadie le viera cumplir una pizca de lo mucho que ofreció en su vida, ni siquiera tomar parte en las serias contiendas de que fueron causa sus baladronadas impertinentes, en corros y romerías. Pretendió a todas las buenas mozas de Cumbrales, y de todas recibió calabazas; apechugó después con lo que quedaba, y ocurriole lo mismo. Desde entonces se hizo protector de las mozas de Rinconeda, y esto acabó de desacreditarle en su pueblo. Llamábanle el <seg rend="italic">Sevillano</seg>, y nadie le podía ver en Cumbrales, pero ninguno se atrevía a decírselo a la cara.</p>
@@ -769,7 +809,7 @@
 				<p>Es cosa averiguada que aquella noche, por indicación del jándalo, en lugar de ir el de Rinconeda a casa de Catalina por la calleja contigua al murio, como de costumbre, se dieron ambos un paso, para <seg rend="italic">tomar el aire</seg>, por la barriada opuesta; y desde allí, rodeando mucho, llegó a su casa el Sevillano, admirado, por primera vez en su vida, de lo que ladraban los perros en Cumbrales en cuanto anochecía, y siguió Chiscón, solo y relinchando, en busca del norte de sus pensamientos.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0295_chap12">
-				<head>- XII - : Medias tintas </head>
+				<head xml:id="ne0295_head_011">- XII - : Medias tintas </head>
 				<p>¡Bueno estuvo el agasajo aquel!... ¡Bueno de veras!... Primeramente, conservas de guindas y ciruelas claudias, queso de Flandes y miel de abejas; después, chocolate con sobadas de manteca, y bollos de Mallorca; y para endulzar el agua, azucarillos de color de rosa. De todo había en la despensa, gracias a Dios. De lo uno, porque abundaban los frutales y los <seg rend="italic">dujos</seg> en la huerta, y las vacas de leche en los establos de don Pedro Mortera; y las manos de su señora (y aprovecho esta ocasión para decir que se llamaba doña Teresa Coteros, cepa de lustre en la Montaña), así como las de su hija, se pintaban solas para entender en ese ramo de golosinas. De lo demás y otro tanto, como la villa estaba cerca, nunca faltaba en casa la necesaria provisión.</p>
 				<p>Repito que estuvo bueno, ¡bueno de veras!, el agasajo, servido en amplia mesa, en mitad de la sala. Pero ¡bien le hizo los honores y le ponderó el complacidísimo don Juan de Prezanes!</p>
 				<p>-¡Buen punto de dulce! -decía al probar el de guinda- En este ramo, Ana, tienes que bajar la cabeza delante de tu madrina: no llegas a ella... ¡Y eso que lo haces bien! En cambio, no hay repostero que entienda las compotas como tú.</p>
@@ -869,7 +909,7 @@
 				<p>Marcháronse, en efecto, tras una cordial despedida; y con marcharse estos personajes, se acabó el asunto del presente capítulo.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0295_chap13">
-				<head>- XIII - : Las alas de cera </head>
+				<head xml:id="ne0295_head_012">- XIII - : Las alas de cera </head>
 				<p>Cuando Pablo y Nisco iban al cierro, su paso por las mieses de la vega era una continua observación y un incesante comentario.</p>
 				<p>¡Lo que puede la desidia! -exclamaba, por ejemplo, el primero, delante de un prado con matorros y mimbreras- Tres años hace no más que nació el primer escajo aquí. Con la punta de la navaja pudo arrancarse entonces: hoy da que rozar para medio día lo que se ve, y en una semana no desencasta los raigones el azadón. ¡Coja usted buena yerba así! Ni más ni menos que el que le sigue. ¿Te acuerdas de lo que era ese prado cuando le compró su dueño? La palma de la mano daba tanta yerba como él. Mírale hoy hecho una hermosura por beneficiársele mucho y a tiempo. Está visto que no hay tierra mala bien administrada, ni buena dejada en abandono... Después (yo no sé si tú has reparado en ello alguna vez): tal es la finca, tal es su dueño; según ella está de cultivo, así anda él de calzones.</p>
 				<p>-Lo que yo no acabo de entender -decía Nisco un poco más adelante- es por qué esta tierra, que es buena de por sí, ha de perderse por la charca que tiene en medio, cuando con una sangría, por la parte de abajo, saldría lo que daña sin llevarse la frescura que beneficia.</p>
@@ -948,7 +988,7 @@
 				<p>Y con esto se acabó la conversación. Levantose Pablo, imitole Nisco; y ambos, después de dar una vuelta maquinal por el cierro, sin hablarse palabra, volviéronse a Cumbrales, mudos también: pensativo, pero no triste, el uno; acongojado, lacio y gemebundo el otro.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0295_chap14">
-				<head>- XIV - : Por lo fino </head>
+				<head xml:id="ne0295_head_013">- XIV - : Por lo fino </head>
 				<p>Pablo contaba uno a uno los días que iban corriendo sin que desapareciera la extraña impresión que le había causado aquella palabra prosaica y vulgar, dicha por su padrino delante de Ana, y observaba, con asombro, que cuanto más tiempo corría, más honda se le grababa dentro de su corazón. Arrastrábanle fuerzas invencibles y desconocidas hacia el objeto de sus nuevas ansias; y, al hallarse a su lado, antes crecía que se calmaba la singular anhelación de su espíritu. Porque Ana no era entonces la traviesa y desengañada amiga de otras veces, que le entretenía, sin cautivarle, con donaires y zumbas en casto y fraternal abandono. Parecía haber perdido el atrevimiento, o, cuando menos, la confianza; y a menudo encomendaba a sus ojos tímidas empresas que debían acometer los labios. Estas miradas, al hallarse en el camino con las de Pablo, producían choques magnéticos, que repercutían en el corazón del sencillo mozo y se revelaban en Ana enrojeciendo sus tersas mejillas; y aquel color era para Pablo algo como fuego en que iba fundiéndose poco a poco el hielo de sus pasadas frialdades.</p>
 				<p>Cuando transcurrió una semana y vio el hijo de don Pedro Mortera que estos fenómenos continuaban en progresión creciente, declaró de gravedad el caso. El cual tenía para él dos aspectos muy distintos: risueño el uno, y desagradable el otro. Risueño, porque, desde la altura a que se había elevado su espíritu, descubría espacios y horizontes que jamás había contemplado con los ojos del sentimiento. Encantábale el espectáculo por nuevo y por bello, y de aquel mundo quería hacer, y hacía desde luego, la patria y el paraíso de su alma. Pero este mismo arrobamiento, tan dulce y sabroso, le alejaba del mundo de la realidad y de sus viejas tendencias y aficiones; de activo, fuerte y despreocupado, transformábale en muelle débil y caviloso; extrañábanle las personas de su trato, y él mismo se consideraba desarraigado y sin apego dentro del hogar y en el seno de la familia. Este era el aspecto desagradable del caso.</p>
 				<p>Pero el mozo se arreglaba mal con las situaciones complejas y con los caminos enmarañados; quería, aunque fuera escabroso, suelo firme y luz para caminar; considerábase a oscuras y en una senda erizada de obstáculos inextricables; no podía retroceder, porque la vehemencia misma de sus deseos le había cortado la retirada; y entrose por derecho, resuelto a llegar pronto adonde se viera claro y se pisara en firme.</p>
@@ -983,7 +1023,7 @@
 				<p>Desde aquel día ya supo a que atenerse Pablo; penetró en los laberintos que le obstruían la senda y halló la luz que echaba de menos; y sin descender con la fantasía del Olimpo a que le habían elevado sus nuevas impresiones, volvió a ser en Cumbrales el amigo de Nisco, el jugador de bolos, el cultivador del cierro, el amante incansable de la naturaleza y de las costumbres de su país... Todo, menos el concurrente a zambras y bureos, como alguna vez lo fue, según nos dijo su padrino, en ocasión bien señalada para esta parejita de nuestros personajes. Es decir, que la pasión de Pablo dejó de ser impetuoso torrente, e iba transformándose en manso, rumoroso y cristalino arroyo (como dicen los poetas), con harto gusto y complacencia de Ana, que fundaba en el amor firme y arraigado de aquel noble mancebo todas las aspiraciones de su vida.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0295_chap15">
-				<head>- XV - : Verdades amargas </head>
+				<head xml:id="ne0295_head_014">- XV - : Verdades amargas </head>
 				<p>¡Qué distintas de las de Pablo corrían las horas para Nisco! Aquellos pensamientos, dulces como las mieles, altos y relucientes como el sol y la luna, que saboreaba y entreveía el hijo de Juanguirle, sus dejos tenían ya de la ruda amarga en que el desengañado amigo los había empapado al hundirlos en la charca terrena y prosaica de sus consejos sesudos. Ya no arrullaban los sueños del presumido mozo dulces sinfonías, ni visiones de palacios de oro, donde reinas y emperatrices le vestían y le calzaban, duques eran sus mayordomos, y marqueses sus criados. Muy de continuo sentía el cencerreo del ganado en la vecina cuadra, y en sus espaldas los duros bodoques del mal tundido colchón de su pobre lecho; realidades de la vida más poderosas ya que las encantadas imaginaciones de otros días bien cercanos.</p>
 				<p>No se entienda por esto que daba Nisco por perdidas sus esperanzas; pues bien sabe Dios que aún las mimaba y las consentía, porque el esencial fundamento de ellas no había padecido, que él supiera, menoscabo alguno. Pero era indudable que en la senda de flores que recorría había topado con un tropiezo de mucha cuenta. Las palabras de Pablo fueron claras y terminantes; y esto era muy grave, no tanto por ser de quien eran, cuanto por estar muy puestas en razón. Así le dolían a él en lo más hondo de su vanidad; así las recordaba y exprimía a cada instante, y muy especialmente cuando se miraba al espejillo colgado debajo del <seg rend="italic">cuarterón</seg> de su ventana; como si no comprendiera entonces, aunque lo temiera mucho, que aquellos sus rizos pegados a las sienes, el mirar blando de aquellos sus ojos negros, aquella su belleza toda, en fin, con el saber adquirido, por su voluntad, y el buen querer de su corazón, no eran alas bastantes para volar hasta el sol que había contemplado cara a cara sin deslumbrarse. Desde el suceso del cierro (más de ocho días) tres veces nada más había estado en casa de Pablo, y otras tantas se habían visto y hablado los dos en la calle; pero en la calle y en casa, Pablo no era el amigo íntimo y afectuoso de antes: hallábale Nisco frío, reservado y lacónico hasta la sequedad; y como ignoraba los verdaderos motivos de este cambio, achacábale a lo que más temía; y esta aprensión le abrumaba el espíritu, porque, para ayuda de sus males, ¡se conjuraban contra él tantos elementos!...</p>
 				<p>Saliendo la última vez de casa de Pablo, mustio y compungido, porque, como en las dos anteriores, halló a su amigo reservado y serio, cerrada la puerta de la sala y los pasadizos desiertos, topó, cerca de la portalada, con la Rámila que iba a entrar por ella.</p>
@@ -1015,7 +1055,7 @@
 				<p>Y se fue a su quehacer el bueno de Juanguirle, de muy mal humor, cosa que le acontecía rarísimas veces en la vida. Pero Nisco era testarudo; y por más que el mundo entero pareciera empeñado en meterle por los ojos lo que sus ojos no querían ver, lo que tenía entre cejas allí había de estarse mientras no se lo arrancara quien allí se lo había puesto.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0295_chap16">
-				<head>- XVI - : Una deshoja </head>
+				<head xml:id="ne0295_head_015">- XVI - : Una deshoja </head>
 				<p>Con la <seg rend="italic">secura</seg>, que no cesaba por seguir el tiempo al Sur, las mieses se pusieron hechas una bendición de Dios, y en la última semana de octubre no quedaba una caña de alubias sin <seg rend="italic">pelar</seg> en las heredades, y las panojas, bien granadas y bien secas, iban a desprenderse ellas solas de los maíces, si muy pronto no las amontonaban sus dueños en el desván. Pero ¡con poco mimo las observaban éstos uno y otro día, para dejar las expuestas a la voracidad de los cuervos, o a los riesgos del temporal que podía presentarse a la hora menos pensada! ¡El fruto de tantas fatigas; el pan de todo el año!</p>
 				<p>Aún no había expirado el mes, cuando comenzaron a invadir la vega, por todas sus <seg rend="italic">portillas</seg>, carros con altos adrales; y cada familia en su heredad, pela aquí, pela allí; panojas al garrote y <seg rend="italic">garrotados</seg> de panojas a los carros; de vez en cuando, sube que sube los adrales, según iban llenándose las teleras; después, los <seg rend="italic">calabazos</seg> encima de las panojas y en el <seg rend="italic">payuelo</seg> de la pértiga, y hala para casa, a campo travieso, primero, tirando los bueyes dentelladas furtivas al retoño ajeno; y después, por la cambera, canta que canta el eje, untado con tocino; y ya en el portal el carro, allá va la carga de panojas arrastrada con las trentes sobre los garrotes, tan pronto llenos como subidos al desván, al hombro del mocetón o sobre la cabeza de su hermana: en una pila el maíz, y aparte los calabazos; de éstos, los duros y <seg rend="italic">berrugones</seg> a un lado, para la olla; y a otro, los blandos y aguachones, para los cerdos.</p>
 				<p>En poco más de una semana se cogieron todas las mieses, y aún sobraron días para dar una pasada con el dalle a los prados viciosos, y para <seg rend="italic">sacudir</seg> muchos castaños y recoger los entreabiertos erizos, pues los muchachos empezaban a derribarlos del árbol a pedradas, y más de una <seg rend="italic">magosta</seg> habían hecho ya con las castañas cosechadas así.</p>
@@ -1066,7 +1106,7 @@
 				<p>Chiscón entonces soltó un relincho que repitieron todos los ecos de la vega; y ningún otro ruido turbó ya la negra soledad de su camino, sino el triste, lento y remoto gemir del cárabo en el monte, y el bufar de una lechuza que pasó volando hacia el campanario de Cumbrales.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0295_chap17">
-				<head>- XVII - : La derrota </head>
+				<head xml:id="ne0295_head_016">- XVII - : La derrota </head>
 				<p>El domingo siguiente, después de misa, hubo en el local de la escuela, debajo de la sala consistorial, una <seg rend="italic">concejada</seg> como no se había visto en todo el año. Sabíase de qué se iba a tratar en el concejo de aquel día, y faltaron contadísimos vecinos. Don Valentín llegó de los primeros, apenas se oyó el tran, tran, tran de las campanas. Juanguirle, rodeado de sus concejales, ocupó la presidencia en el sitial del maestro; manifestó el objeto de la reunión, y hasta aventuró un discursillo encareciendo las ventajas de las <seg rend="italic">derrotas</seg>, mientras las gentes, como sucedía en Cumbrales, no supieran dar a las mieses destino mejor, desde noviembre a marzo; invocó, en apoyo de su parecer, la ley de la costumbre, tan vieja allí como el mundo (pues no había prueba de lo contrario), y sometió el caso al acuerdo, que había de ser unánime, de sus administrados, para dar así debido cumplimiento a lo mandado «arriba».</p>
 				<p>El discurso alcanzó la aprobación del concejo, exceptuando a don Valentín, que se levantó airado de su asiento para llorar los males de la patria y los peligros de la libertad. Puso todo este lacrimoso cuadro enfrente de la criminal indolencia de sus convecinos, «amenazados día y noche por el azote afrentoso del perjuro», y concluyó diciendo:</p>
 				<p>-<seg rend="italic">Do ut des</seg>. ¿Queréis derrota? Dadme ayuda; prestadme recursos para rechazar la invasión del déspota o morir con gloria en la batalla. A este precio tendréis mi voto, sin el cual no se pueden abrir las mieses de Cumbrales.</p>
@@ -1101,7 +1141,7 @@
 				<p>Juego, en fin, de lo más higiénico y entretenido, si no fuera por las quiebras que lleva aparejadas, de piernas, dientes y otras no menos integrantes y estimadas porciones del jugador.</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0295_chap18">
-				<head>- XVIII - : El secreto de María </head>
+				<head xml:id="ne0295_head_017">- XVIII - : El secreto de María </head>
 				<p>Los mejores mercados de la villa (porque en la villa se celebra uno cada semana) son los del <seg rend="italic">maíz nuevo</seg>. En ese tiempo no hay pobres en el país, y cada cual acude a aquel concurridísimo centro de riqueza, a proveerse de lo que no tiene con un poco de lo que menos necesita. Al calorcillo de esta animación, hormiguean los tratantes y las mercancías de mil especies; y unidos todos estos estímulos a la suavidad de la temperatura, la belleza del lugar y la abundancia de las vías de comunicación, acontece que cada mercado es entonces una fiesta en que toman mucha parte las gentes desocupadas del contorno.</p>
 				<p>En Cumbrales no abundan las distracciones para personas de la condición social de Ana y María; por lo cual aprovechaban éstas la del mercado, muy a menudo, especialmente en otoño. Y no se crea que iban a la villa entonces con el único fin de recrearse: llevaban los bolsillos bien repletos, amén de una interminable lista de <seg rend="italic">cosas</seg>, en un papel o en la memoria; en la cual lista había de todo, desde el manojo de chiribías, hasta la vara de raso; desde la palangana de loza, hasta la resmilla de papel de cartas; desde la madeja de seda para bordar, hasta el bombasí para un refajo; desde la libra y media de queso pasiego, y el molinillo del chocolate, y el paquete de azucarillos, y las zapatillas de alfombra, y las tres libras de arroz, y la cerraja para el armario, y el vidrio para el <seg rend="italic">cuarterón</seg> de tal ventana, etc., etc., hasta el lienzo para los calzoncillos de don Juan o de don Pedro, o el <seg rend="italic">tartán</seg> para el vestido de invierno de doña Teresa. Para conducir este revoltijo de especies inconexas, acompañaban a las jóvenes sus respectivas fámulas de mayor empuje, con sendas cestas de mimbre pelado, de dos asas, a la cabeza, sobre el <seg rend="italic">rueño</seg> de colores, bien guarnecido de picos pespunteados. Las leyes del bien parecer no exigían otro acompañamiento que éste a dos señoritas que iban al mercado; pero, a mayor abundamiento, Ana y María solían llevar el amparo de doña Teresa, o el de don Pedro, o el de don Juan, y vez hubo de ir los tres juntos; pero una, nada más. Y vamos al caso.</p>
 				<p>Después de los sucesos referidos en los últimos capítulos; cogidas y derrotadas las mieses y comenzadas las deshojas donde había mucho que deshojar, y hasta desgranado el maíz donde éste era el pan y la moneda de la casa; hechos dos tórtolas Ana y Pablo, y no tan regocijada, pero sí muy animosa María, acordaron los tres ir juntos al mercado el primer día que le hubiera en la villa, si el tiempo no se entornaba; y como el tiempo no se entornó, el acuerdo llegó a cumplirse.</p>
@@ -1164,7 +1204,7 @@
 				<p>Acabaron de subir la cuesta; descansaron todos un rato en la loma; y sin otros sucesos que dignos de narrar sean, llegaron media hora después a Cumbrales, sanos y contentos, cada cual a su modo, aunque un tanto despeadas y correosas las fámulas, y algo polvorientas y rendidas, pero muy guapas, las señoras.</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0295_chap19">
-				<head>- XIX - : Retazos </head>
+				<head xml:id="ne0295_head_018">- XIX - : Retazos </head>
 				<p>En esto, don Rodrigo Calderetas escribió una carta a don Juan de Prezanes, en la cual carta decía, entre otras cosas, la gran persona:</p>
 				<p>«Menester será que redoble usted la vigilancia y active los trabajos en ese terreno, porque no hay momento que perder. El Barón no sosiega un punto y revuelve los imposibles. El Marqués confía en sus buenos amigos, entre los que, con justicia, le cuenta a usted, y así me lo dice. Para mantener las filas apretadas y reclutar soldados nuevos, no le duelan a usted larguezas del género consabido: aquí estoy yo para cuanto ocurra, y detrás de mí, lo que usted sabe, que puede y manda y no deja mal a sus amigos, por nada ni por nadie. Lo verá quien dude y le sirva, si, como otras veces, es preciso, por el bien de Estado, saltar por encima de ciertas consideraciones y respetos. En estas batallas no hay otro remedio que ser un poco duro de corazón con el enemigo tenaz. Dígame qué exigencias presentan esos auxiliares, para ir formando poco a poco el expediente, llamémosle así, que he de elevar adonde ha de ser despachado con las debidas recompensas y los necesarios escarmientos.</p>
 				<p>»Nos está haciendo mucho daño el diablejo de Asaduras. Háblele, oígale, y <seg rend="italic">cómprele, pida lo que pidiere</seg>. No habría necesidad de recurrir a estos extremos, que parecen un tanto reñidos con la sana moral, si ese amigo de usted y que tanto lo fue mío cuando yo no me había resuelto aún a sacrificar mi reposo y mi hacienda al bien de este país desventurado, que va hundiéndose en el abismo por las ruindades y atrevimientos injustificados de cuatro ambiciosos intrigantes; si ese amigo, repito, no llevara tan lejos su tesón y sus escrúpulos. Él se entenderá... Y yo también le entiendo. Sí, amigo mío, le entiendo; y aunque me duela decírselo a usted, me consta, con nuevos datos, que no solamente es desafecto a las instituciones que todos veneramos, sino que también trabaja sordamente contra ellas y contra los que las apoyan, sin exceptuar a los amigos y compadres... Téngalo usted muy en cuenta, pues le interesa mucho; que a no interesarle tanto, no se detendría en estos enojosos pormenores un caballero como yo.</p>
@@ -1216,7 +1256,7 @@
 				<p>En esta tensión estaban sus nervios cuando topó con don Pedro Mortera, en uno de los paseos vertiginosos a que se había entregado en la sala.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0295_chap20">
-				<head>- XX - : Emociones fuertes </head>
+				<head xml:id="ne0295_head_019">- XX - : Emociones fuertes </head>
 				<p>-A tiempo llegas, ¡vive Dios! -bramó el jurisconsulto, trémulo y erizado.</p>
 				<p>-¿Ya estás con la mosca, hombre? -respondió don Pedro, parándose junto al hueco de la puerta- ¿Dónde demonios la cogiste? ¿Por qué te pica ahora?</p>
 				<p>-¡Y tienes el candor de preguntármelo!</p>
@@ -1353,7 +1393,7 @@
 				<p>-Adiós, Nisco.</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0295_chap21">
-				<head>- XXI - : Prólogo de un drama </head>
+				<head xml:id="ne0295_head_020">- XXI - : Prólogo de un drama </head>
 				<p>Chiscón, porque le corrían costas en el pleito, no se descuidó en rematarle cuanto antes.</p>
 				<p>Volvió a Cumbrales al otro día, cerca ya del anochecer; y después de reforzar el ánimo con unos tragos en la taberna de Resquemín, donde le dijeron que Tablucas acababa de marcharse para meterse en casa antes de que llegara la noche, fuese a la de Catalina. Cabalmente, al entrar él, estaba toda la familia reunida, porque acababa de cenar.</p>
 				<p>Sin exordios ni tanteos, no bien se acomodó en el taburete cerca de la <seg rend="italic">perezosa</seg>, cargada aún con los cacharros vacíos y los codos de la gente de casa, declaró sus honradas intenciones y expuso el inventario de sus caudales. La respuesta fue breve y terminante: se agradeció mucho la voluntad; pero se desestimó el propósito.</p>
@@ -1394,7 +1434,7 @@
 				<p>Bajo estas impresiones desagradables, y al arrullo del Sur, que bufaba sordamente en las rendijas de las puertas y ventanas, se durmió aquella noche el vecindario de Cumbrales.</p>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0295_chap22">
-				<head>- XXII - : Entreacto ruidoso </head>
+				<head xml:id="ne0295_head_021">- XXII - : Entreacto ruidoso </head>
 				<p>Los que madrugaron al otro día (y cuenta que en Cumbrales se levanta al alba la gente) vieron que, mientras el sol salía embozado en crespones de escarlata, sobre las lomas del Sur relucía, fulguraba el celaje, como si fuera lago de cristal fundido; lago con islotes de nácar y grumos de oro; a trechos, ondas purpúreas, blancas vedijas inalterables, y <seg rend="italic">rabos de gallo</seg> más efímeros, sobrenadando; y por riberas y marco en toda la redondez de este espacio, moles de negras y plomizas nubes amontonadas. Entre una y otra mole, densas brumas cenicientas, valles fantásticos de aquellas raras montañas que se prolongaban, en contrapuestos sentidos, en forma de ásperas cordilleras. En lo más alto del cielo, tenues veladuras rotas; luego el éter purísimo hasta el horizonte del Norte, donde el celaje era cárdeno, mate y estirado, como una inmensa lámina de acero sin bruñir.</p>
 				<p>El aire era tibio y pesaba tanto sobre el ánimo como sobre el cuerpo; ni una hoja se movía en los árboles, ni una yerba en los campos; la vista y el oído adquirían un alcance prodigioso; las tintas de las montañas, más que calientes, parecían caldeadas; los contornos y relieves flotaban en un ambiente seco y carminoso que, acortando las distancias, engrandecía las moles; y el silbido del pastor y el sonar de las esquilas del ganado, llegaban claros y perceptibles al oído desde los cerros del Mediodía.</p>
 				<p>Cuando en la Montaña amanece entre estos fenómenos de la naturaleza, todo montañés sabe qué viento va a reinar aquel día; y entonces se llama al espacio brillante rodeado de nubarrones, <seg rend="italic">el agujero del ábrego</seg>.</p>
@@ -1418,7 +1458,7 @@
 				<p>Y jurando echar hasta las asaduras en el trance, volcaron todos la puchera mal sazonada; y con el último bocado entre los dientes, subiose cada cual a su tejado a reparar lo más perentorio, por si la turbonada que se iba formando hacia el Saliente, acababa en aguaceros antes de la noche.</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0295_chap23">
-				<head>- XXIII - : Griegos y troyanos </head>
+				<head xml:id="ne0295_head_022">- XXIII - : Griegos y troyanos </head>
 				<p>Continuaban la calma sofocante y el cielo cargado de nubes como peñascos, con unas intermitencias de sol que levantaba ampollas; los desperfectos del Sur, en tejados y cerrajas, iban poco a poco reparándose, y hasta se consolaban las gentes, unas a la fuerza y otras como podían; pero no se olvidaba un punto la anunciada invasión de los de Rinconeda; y hacia el camino de Rinconeda miraban todos los ojos de Cumbrales desde huertas, callejas y tejados, y a voces de Rinconeda sonaban todos los rumores en los oídos de la gente de arriba. Odiosa era siempre una provocación semejante... ¡Pero en aquel día!... ¡Después de las devastaciones del huracán, apenas encalmado!...</p>
 				<p>-¡Pues como vengan!</p>
 				<p>Y esto decían todas las bocas de Cumbrales.</p>
@@ -1485,7 +1525,7 @@
 				<p>Uníase a estos gritos el vocear del contrario de Nisco, negando toda participación en la felonía; chispeaban los ojos de Pablo buscando entre la muchedumbre algo que delatara al delincuente; ordenaba don Pedro lo más acertado para bien del herido; acudían gentes aterradas a su lado; y mientras esto acontecía y se buscaba a Juanguirle entre los combatientes, las tintas de los celajes iban enfriándose; desleíanse los nubarrones, cual si sobre ellos anduvieran manos gigantescas con esfuminos colosales; una cortina gris, húmeda y deshilada, como trapo sucio, se corrió sobre los picos más altos del horizonte; brilló debajo de ella la luz sulfúrea del relámpago, y comenzaron a caer lentas, grandes y acompasadas gotas de lluvia, que levantaban polvo y sonaban en él como si fueran de plomo derretido.</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0295_chap24">
-				<head>- XXIV -: <seg type="foreign" xml:lang="la">Deus ex machina</seg></head>
+				<head xml:id="ne0295_head_023">- XXIV -: <seg type="foreign" xml:lang="la">Deus ex machina</seg></head>
 
 				<p>Corrían, corrían los cuatro sujetos hacia casa de la bruja, y en un periquete llegaron allá. Sin detenerse a llamar a la puerta, abriéronla de un empellón, y vieron a la Rámila acurrucada junto al llar de la cocina, soplando unos carbones a los cuales estaba arrimando un pucherete cubierto con un casco de teja.</p>
 				<p>-¡Allí tiene el <seg rend="italic">unto</seg>! -pensaron los cuatro, al reparar en el puchero.</p>
@@ -1561,7 +1601,7 @@
 				<p>Esta noticia fue la única fidedigna; y se la traslado al lector, con el mayor gusto, porque sé que en ella le ha de recibir muy señalado.</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0295_chap25">
-				<head>- XXV - : Miel sobre hojuelas </head>
+				<head xml:id="ne0295_head_024">- XXV - : Miel sobre hojuelas </head>
 				<p>El temporal siguió reinando hasta cerca de media noche. A esa hora se corrió el viento al Norte; cesó el agua, rasgáronse los nublados, fuéronse adelgazando por momentos; y cuando apareció el sol del nuevo día, desplegó el lujo de sus rayos en un cielo sereno, azul y limpio como el cristal de un espejo. Pero la brisa terral era fría y húmeda; los tejados de Cumbrales relucían; los hardales goteaban; las callejas eran charcos; las praderas brillaban como sartas de rica pedrería, y comenzaba a oírse por las barriadas del pueblo el <seg rend="italic">clan</seg>, <seg rend="italic">clen</seg>, de las herradas almadreñas de los transeúntes, entre los que apenas se veía uno sin negros cardenales o arañazos en la cara, muestras dolorosas de la refriega del día anterior.</p>
 				<p>A media mañana salió Pablo de su casa en dirección a la de Nisco, a cuyo lado había permanecido la noche antes con Catalina, que no se apartaba un punto de allí, hasta que el mozo se despejó y pudo conocerse la importancia de la herida.</p>
 				<p>Este suceso, desde el momento de su ocurrencia, así como el recuerdo de los que le habían precedido, traíanle caviloso e indignado por todo extremo; pero aún le mortificaba más la cola que trajo para él su intervención personal en la batalla.</p>
@@ -1662,7 +1702,7 @@
 				<p>Luego entraron todos en el cuarto del enfermo, que yacía postrado, en el sopor de la fiebre.</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0295_chap26">
-				<head>- XXVI - : De varios colores </head>
+				<head xml:id="ne0295_head_025">- XXVI - : De varios colores </head>
 				<p>¡Qué noche!... El tiempo pasaba; el médico no venía; Pablo continuaba agravándose, y nadie se atrevía allí a aventurar un remedio, porque el aspecto de la enfermedad ataba las manos indoctas, que bien podían dar veneno por triaca. Se entraba y se salía a cada instante, y se andaba de puntillas en la estancia a media luz; se aplicaba el oído a la agitada y seca respiración, y la palma de la mano a la ardorosa frente del enfermo; y cada acto de éstos producía una pregunta muda y anhelosa en los ojos contristados de los demás. Del cuarto de Pablo se iba a todas las puertas y ventanas que daban al corral; y por cada rendija se escuchaban los ruidos de afuera, hasta los más leves rumores..., el latir de algún perro, los golpes del pesado rodal, las esquilas de la yunta, las almadreñas del carretero, algún cantar lejano..., todo muy de tarde en tarde. Después, el silencio absoluto, impenetrable como la oscuridad que le envolvía... ¡Ni un sonido que se pareciera al de las herraduras del brioso caballo de don Pedro sobre los resbaladizos cantos de la calleja!</p>
 				<p>Nada se le había dicho a Ana de la alarmante gravedad en que se hallaba Pablo; pero hasta en las ondas del aire hay oficiosos correos para las malas noticias; y ésta no tardó en llegar a casa de don Juan de Prezanes.</p>
 				<p>Cenando estaban ya padre e hija; ésta triste y sobresaltada por los sucesos del día, y aquél sombrío, mudo y desazonado por la misma causa, pero vista con ojos bien distintos de los de Ana. Cayó entre ambos la noticia como la guadaña de la muerte; y, yertos y despavoridos, alzáronse al punto de la mesa; abrigáronse mal y de prisa, y volaron al lado del enfermo.</p>
@@ -1721,7 +1761,7 @@
 				<p>-Ésa es la fija... ¡Y cuidado con don Valentín!</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0295_chap27">
-				<head>- XXVII - : Genio y figura... </head>
+				<head xml:id="ne0295_head_026">- XXVII - : Genio y figura... </head>
 				<p>La rápida y feliz convalecencia de Pablo volvió a normalizar la vida en ambas casas; con lo que reaparecieron en el salón de don Pedro Mortera los rollos de holandas y los paquetes de batistas que días antes anduvieron por allí entre manos de Ana, de María y de doña Teresa; preparativos de boda y mínima parte de lo que se había encargado con igual destino a las modistas y costureras de la ciudad.</p>
 				<p>Había, pues, tertulia constante en casa de don Pedro, a la que no faltaban Pablo, muy animoso aunque algo dolorido y débil todavía; su cuñadito en ciernes, por las tardes, y don Juan de Prezanes cuando menos se le esperaba. Ya para entonces y desde antes de los trágicos sucesos referidos, las familias de don Pedro Mortera y de don Rodrigo Calderetas se habían hecho sendas visitas; por lo que también se vio más de tres veces al caballero de la villa, con su señora y su otro vástago (una jovenzuela pálida y muy peripuesta, que se llamaba Niquis, contracción elegante del vulgar Nicasio que le arrimó en la pila su padrino, un pañero acaudalado, pero de poco gusto), en la apacible reunión aquella.</p>
 				<p>Antes la enfriaban que la divertían los ceremoniosos continentes de estos tres personajes; pero eran sus visitas actos de cortesía, y había que agradecerlas. En cambio-, cuando se hallaban solos los de Cumbrales y el novio de la villa, que era suelto y ocurrente, se cobraban con usura los ratos tan mal empleados; porque hasta el mismo don Juan de Prezanes andaba hecho unas castañuelas, y solamente en cinco o seis ocasiones se había ido del seguro con su compadre por cosas de poco más o menos.</p>
@@ -1805,7 +1845,7 @@
 				<p>Casi al mismo tiempo sonó hacia la iglesia otro tiro que pareció un eco de los primeros.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0295_chap28">
-				<head>- XXVIII -: <seg type="foreign" xml:lang="la">Sicut vita</seg>...</head>
+				<head xml:id="ne0295_head_027">- XXVIII -: <seg type="foreign" xml:lang="la">Sicut vita</seg>...</head>
 
 				<p>Mientras caminaba don Valentín, después de salir de casa de don Juan de Prezanes, calleja arriba, por donde vino el tropel de que se hace mención en el capítulo antecedente, resbalando en este morrillo y metiéndose en aquella poza, tropezando aquí y estando a pique de caer allá, despechado y febril, reflexionaba de este modo:</p>
 				<p>-Nada espero, nada temo, nada quiero; en nadie confío sino en Dios y en el odio que tengo al perjuro. Tristeza en mí; tristeza y soledad en mi casa; menosprecio y burlas en la ajena; viejo, moribundo ya; envuelto en los hábitos de mis glorias- con la espada de Luchana al costado... ¿Qué mejor ocasión que ésta para dar el último grito de libertad, delante del sempiterno enemigo de ella? ¿Qué muerte más señalada para un hombre como yo?... ¡Ah, si topara con ellos esta noche!</p>
@@ -1858,7 +1898,7 @@
 				<p>Con esto se volvió Juanguirle arriba, porque la mujer aquella se largó hecha un veneno.</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0295_chap29">
-				<head>- XXIX - : Lo del murio </head>
+				<head xml:id="ne0295_head_028">- XXIX - : Lo del murio </head>
 				<p>Al grito de don Juan de Prezanes y al fragor de las ventanas hechas trizas, acudieron las criadas que estaban al otro extremo de la casa. Halláronle tendido en el suelo, juzgáronle asesinado, aturdiéronse; y, sin otras averiguaciones, corrieron despavoridas a casa de don Pedro Mortera.</p>
 				<p>Aunque no dijeron cuanto pensaban y sentían, sus palabras, y más que sus palabras, el modo de decirlas, produjo el efecto que es de presumir; y entre aspavientos y gritos, trasladose en un verbo la familia entera, con sirvientes y adherentes, a casa de don Juan de Prezanes.</p>
 				<p>Ya estaba éste de pie- pero aturdido y medio alelado. Entro don Pedro delante; y al oírle hablar con su amigo, los que detrás iban, llevando medio acongojada a Ana, avanzaron en tropel. Todo lo que antes era angustia, se trocó en curiosidad al ver el aspecto que ofrecía el cuarto sembrado de astillas y de cascos de vidrio, y en medio don Juan, que no acababa de romper a hablar. Ana se colgó de su cuello; y aunque le colmaba de caricias, anhelante y llorosa, el hombre parecía una estatua.</p>
@@ -1949,7 +1989,7 @@
 				<p>Mas el triunfo de este pobre hombre no fue completo. Había logrado demostrar que la bruja no era invulnerable; quizá dejar descubierto un camino por donde otros podían llegar hasta matarla, o matar a otras tan brujas como ella; pero la Rámila vivía; y aunque en el murio no se la vio más ni en la puerta se oyeron sus garrotazos, la bruja no podía dejar de vengarse; y el temor de aquella venganza fue el espadón que tuvo sobre su cabeza el pobre Tablucas; temor tan insufrible como las apariciones del perro, hasta que Dios dispuso de la infeliz anciana y se la llevó a mejor vida que la que le cupo en suerte entre los crédulos campesinos de Cumbrales, que no se han curado todavía, ni se curarán jamás, de esas flaquezas, como tantas otras gentes que no son de Cumbrales, ni montañesas, ni campesinas.</p>
 			</div>
 			<div n="30" type="chapter" xml:id="ne0295_chap30">
-				<head>- XXX - : Rebanaduras </head>
+				<head xml:id="ne0295_head_029">- XXX - : Rebanaduras </head>
 				<p>Esto se acaba, lector, y ¡ojalá te pese de ello! Por mi gusto, hubiera soltado la pluma después de escrito el capítulo que antecede, pues, en rigor de verdad, todo lo que a decir voy no vale dos cominos, y ya no ha de salvarme si lo que atrás queda tira de mi pobre fama hacia lo hondo. Pero allá va, porque, al fin, soy hombre de cuenta y razón, y hay lectores que no perdonan ni los maravedís del pico.</p>
 				<p>Enterrado don Valentín; exterminado el perro del murio; hartos los vecinos todos de Cumbrales de hablar de los sucesos de aquella noche, que hicieron palidecer el recuerdo de los del domingo de marras, y atreviéndose ya Tablucas a volver solo a su casa a todas horas, acabó el pueblo de normalizarse con la noticia, oficial y auténtica, de que no quedaba rastro de facioso en muchas leguas a la redonda, y con la no menos grata y comprobada de que, al marcharse, se había llevado por delante al Sevillano, que, desde la felonía hecha a Pablo, andaba fugitivo de pueblo en pueblo y de encrucijada en encrucijada, en una de las que fue atrapado y metido en filas; lance que deploró Chiscón en gran manera, porque pensaba resarcirse de todas sus pesadumbres descoyuntando los huesos al pícaro matasiete que tanto le había comprometido y desacreditado a él.</p>
 				<p>Estando así las cosas y reinando otra vez el Sur, aunque con intermitencias de chubascos, porque, al cabo, asomaba diciembre; restablecido Pablo por completo y terminados los pertrechos de boda, don Juan de Prezanes...</p>

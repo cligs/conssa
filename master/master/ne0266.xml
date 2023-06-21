@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El paraíso de las mujeres</title>
-				<title type="sub"></title>
+				
 				<title type="short">ParaisoMujeres</title>
-				<title type="idno">
-					<idno type="viaf">308019362</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1855</measure>
@@ -140,13 +131,44 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0266</idno>
+						<idno type="cligs">ne0266</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2004">2004</date>, <idno>10822</idno>, <ref target="http://www.gutenberg.org/ebooks/10822"/>.</bibl>
-				<bibl type="print-source"><date when="1922">1922</date></bibl>
-				<bibl type="edition-first"><date when="1922">1922</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El paraíso de las mujeres</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/308019362/">308019362</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2004">2004</date>, <idno>10822</idno>, <ref target="http://www.gutenberg.org/ebooks/10822"/>.</bibl>
+					<bibl type="print-source"><date when="1922">1922</date></bibl>
+					<bibl type="edition-first"><date when="1922">1922</date><idno source="k10plus" type="ppn" n="1383953570" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1383953570"/><idno source="k10plus" type="ppn" n="464645603" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464645603"/><idno source="k10plus" type="ppn" n="226415481" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226415481"/><idno source="k10plus" type="ppn" n="083732616" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083732616"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El paraíso de las mujeres</title>: 	<title type="sub">(novela)</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1383953570" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1383953570"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El paraíso de las mujeres</title>: 	<title type="sub">novela</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464645603" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464645603"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El paraíso de las mujeres</title>: 	<title type="sub">(novela)</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226415481" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226415481"/> </bibl>
+						<bibl type="further-edition"><title type="main">El paraíso de las mujeres</title>: 	<title type="sub">novela</title> <date when="1922">1922</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="083732616" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=083732616"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El paraíso de las mujeres</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350950024" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350950024"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El paraíso de las mujeres</title> <date when="2011">2011</date>, <publisher>www.Linkgua.com</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="79854399X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=79854399X"/> 		<idno type="isbn" n="9788498972450;9788498167559"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El paraíso de las mujeres</title> <date when="2017">2017</date>, <publisher>Libros Mablaz</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1023180944" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1023180944"/> 		<idno type="isbn" n="9788494738722"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +181,14 @@
 				<p>En los dos siglos transcurridos entre la llegada de Gulliver y la de Edwin Gillespie, es evidente que en Liliput han pasado muchas cosas... lo que permite a nuestro autor dar rienda suelta a su imaginación.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -191,7 +221,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">adventure</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novelas de aventuras</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -223,12 +253,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-20" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>AL LECTOR</head>
+				<head xml:id="ne0266_head_000">AL LECTOR</head>
 				<p>Considero necesario dar una explicación sobre el origen de este libro.</p>
 				<p>Una casa editorial cinematográfica de los Estados Unidos me pidió hace un ańo una novela para convertirla en <seg rend="italics">film</seg>, recomendándome que fuese muy Ťinteresanteť y se despegase por completo de los convencionalismos y rutinas que hasta ahora vienen observándose en las historias presentadas por medio del cinematógrafo.</p>
 				<p>Yo admiro el arte cinematográfico—llamado con razón el Ťséptimo arteť—, por ser un producto legítimo y noble de nuestra época. Como todo progreso, ha encontrado numerosos enemigos, que fingen despreciarlo; especialmente entre los escritores faltos de las condiciones necesarias para servir á este arte, aunque lo deseasen. La llamada República de las Letras es un estado conservador y misógeno, que se subleva instintivamente ante toda novedad y la repele con sarcasmos que cree aristocráticos.</p>
@@ -293,7 +324,7 @@
 		<body>
 
 			<div n="1" type="chapter" xml:id="ne0266_chap1">
-				<head>I: Frente á la Tierra de Van Diemen</head>
+				<head xml:id="ne0266_head_001">I: Frente á la Tierra de Van Diemen</head>
 				<p>Edwin Gillespie, joven ingeniero de Nueva York, llevaba varias semanas de navegación á bordo de uno de los paquebotes ingleses que hacen la carrera entre San Francisco y Australia.</p>
 				<p>Nunca había conocido un viaje tan triste. Recordaba con dulce nostalgia su navegación de tres años antes, desde los Estados Unidos á las costas de Francia, cuando era oficial del ejército americano é iba á guerrear contra los alemanes. Aquella travesía resultaba peligrosa; reinaba á bordo una continua vigilancia por miedo á los submarinos y á las minas flotantes; pero Gillespie tenía entonces como inseparables compañeros la alegría de una juventud ansiosa de aventuras y el entusiasmo del que va á exponer su vida por un ideal generoso.</p>
 				<p>Ahora llevaba como invisibles camaradas de viaje la desesperación y el aburrimiento, y cuando conseguía huir de uno, caía en los brazos del otro. Se había embarcado apresuradamente, creyendo encontrar la fortuna lejos de los Estados Unidos; pero se sentía cada vez más triste así como iba alejándose de su tierra natal.</p>
@@ -369,7 +400,7 @@
 				<p>Estaba solo.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0266_chap2">
-				<head>II: Noche de misterios y despertar asombroso</head>
+				<head xml:id="ne0266_head_002">II: Noche de misterios y despertar asombroso</head>
 				<p>No pudo comprender la desaparición de sus compañeros. Es más: presintió que este misterio no lo aclararía nunca. Tal vez se habían precipitado sin quererlo en el mar, al hacer una maniobra de la que él no se dió cuenta durante su sueño. Luego pensó que, al encontrarse en el curso de la noche con alguna de las grandes balleneras procedentes del paquebote, el oficial y el marinero habían querido pasar á ella por considerarla más segura, abandonando á Edwin á su suerte para no cargar á la repleta embarcación con un pasajero más.</p>
 				<p>El joven olvidó pronto esta felonía. Necesitaba trabajar para salir de su angustiosa situación. Durante algunas horas remó y remó, siguiendo el rumbo que le aconsejaba su instinto.</p>
 				<p>Se había sentido en muchas ocasiones orgulloso de su vigor corporal, pero jamás sus fuerzas se mostraron tan poderosas é incansables como en la presente aventura. De vez en cuando se ponía de pie, esparciendo su vista por todo el círculo del horizonte, sin distinguir la más pequeña embarcación. Los fugitivos del naufragio estaban ya muy lejos, ó los había tragado el mar durante la noche.</p>
@@ -430,7 +461,7 @@
 				<p>—¡Oh, Gentleman-Montaña!… ¡Va usted á encontrar en mi patria tantas cosas extraordinarias dignas de su asombro!…</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0266_chap3">
-				<head>III: De cómo Edwin Gillespie fué llevado á la capital de la República</head>
+				<head xml:id="ne0266_head_003">III: De cómo Edwin Gillespie fué llevado á la capital de la República</head>
 				<p>Hubo un largo silencio. El ingeniero, absorto por el carácter inverosímil de su aventura, no supo qué decir. ¡Eran tan numerosos los pensamientos que bullían en su cabeza y las preguntas que iba amontonando su curiosidad!…</p>
 				<p>El personaje subido en la lechuza rodante interpretó este silencio como una muestra de timidez.</p>
 				<p>—Puede usted hablar sin miedo, Gentleman-Montaña. De todos los miles de seres que están aquí presentes, los únicos que conocen el inglés somos usted y yo. Los demás sólo hablan el idioma de nuestra raza…. Y para aplacar su curiosidad, le diré cuanto antes que el inglés es la lengua particular de nuestros sabios; algo semejante á lo que fué el latín, según mis noticias, durante algunos siglos, en los países habitados por los Hombres-Montañas. Yo soy el profesor de inglés en la Universidad Central de nuestra República.</p>
@@ -545,7 +576,7 @@
 				<p>Esta capital de la República de los pigmeos se llamaba Mildendo en otros tiempos. ¿Cómo se titularía en el presente, después de haber ocurrido lo que el profesor Flimnap llamaba la Verdadera Revolución?…</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0266_chap4">
-				<head>IV: Las riquezas del Hombre-Montaña</head>
+				<head xml:id="ne0266_head_004">IV: Las riquezas del Hombre-Montaña</head>
 				<p>El antiguo palacio imperial, construído por los soberanos de la penúltima dinastía, ocupaba el centro de la ciudad y era la residencia de los altos señores del Consejo Ejecutivo.</p>
 				<p>Incendiado repetidas veces en el curso de los siglos y bombardeado durante las guerras, había sufrido numerosas reconstrucciones; pero la más grande y vistosa databa de pocos años después de la Verdadera Revolución, suceso que había iniciado un nuevo período histórico. Los cinco señores del Consejo Ejecutivo vivían en el centro del palacio; en una ala estaba la Cámara de diputados, y en la opuesta, el Senado.</p>
 				<p>A la mañana siguiente de la entrada de Edwin en la capital, este palacio, que era como el corazón de la República, reanudó su vida más temprano que en los días anteriores. Fueron llegando los altos empleados del gobierno y casi todos los diputados y senadores, á pesar de que las sesiones parlamentarias sólo empezaban á celebrarse después de mediodía.</p>
@@ -654,7 +685,7 @@
 				<p>—Tiempo le quedará, profesor, para dedicarse á ese trabajo patriótico.  Por el momento, creo conveniente que explique á su Gentleman-Montaña lo  que fué la Verdadera Revolución y todo lo que ha venido después de ella.  Esta lección de Historia resultará útil.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0266_chap5">
-				<head>V: La lección de Historia del profesor Flimnap</head>
+				<head xml:id="ne0266_head_005">V: La lección de Historia del profesor Flimnap</head>
 				<p>Gillespie, que había puesto en duda la civilización avanzada de estos pigmeos, tuvo que reconocer que sabían hacer las cosas aprisa y bien.</p>
 				<p>Al aparecer el segundo sol después de su entrada en aquella Galería recuerdo de una feria universal, todo lo más primario de su instalación estaba ya hecho. Una tropa de carpinteros manejó incesantemente sus martillos, subiendo y bajando por escalas y cuerdas con agilidad simiesca.</p>
 				<p>Así tuvo el segundo día un taburete en que sentarse, apropiado á su estatura, y una mesa, cuyos tablones, aunque no más anchos que las piezas de un entarimado fino, estaban ensamblados con tal exactitud que apenas si se distinguían las rayas divisorias.</p>
@@ -751,7 +782,7 @@
 				<p>Era empresa difícil … pero al fin triunfamos, como va usted á ver.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0266_chap6">
-				<head>VI: Donde el profesor Flimnap termina su lección</head>
+				<head xml:id="ne0266_head_006">VI: Donde el profesor Flimnap termina su lección</head>
 				<p>El hombre no sólo monopolizaba el gobierno, la justicia, la enseñanza y todos los medios de producción; guardaba además las armas, como un privilegio de su sexo. ¿De qué modo vencer á los hombres, cuando disponían de instrumentos destructores como jamás se conocieron en nuestra historia?…</p>
 				<p>Sus cañones del tamaño de casas, sus fusiles y ametralladoras, que lanzaban plomo con la misma rapidez que una máquina de coser da puntadas, podían suprimir instantáneamente las manifestaciones femeninas, por numerosas que fuesen. Además, la mujer, acobardada por tantos siglos de servidumbre, tenía miedo á los procedimientos de violencia. Sólo las jóvenes que habían cultivado sus músculos en los deportes al aire libre se reían de estos temores de las señoras de salón. Todas se mostraban acordes al lamentar los crímenes de los hombres, pero la situación angustiosa parecía sin remedio….</p>
 				<p>Y de pronto surgió el hecho providencial y decisivo, un descubrimiento científico que casi puede ser calificado de milagro.</p>
@@ -836,7 +867,7 @@
 				<p>Me dirá usted que así empezaron las mujeres antes de la Verdadera Revolución; pero el caso no es el mismo. Solamente puede soñar con la conquista del poder quien posea las armas, y mientras los Ťrayos negrosť hagan su trabajo destructor, nuestros antiguos déspotas no llegarán á conseguir que renazca el pasado.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0266_chap7">
-				<head>VII: El más grande de los asombros de Gillespie</head>
+				<head xml:id="ne0266_head_007">VII: El más grande de los asombros de Gillespie</head>
 				<p>Siempre que el doctor Flimnap se presentaba con algún retraso en el alojamiento del gigante, creía necesario explicar el motivo de su tardanza.</p>
 				<p>—Esta mañana no pude venir, gentleman, porque asistí á una reunión de autores de la <seg rend="italics">Gran Historia de las Mujeres Célebres.</seg> Necesitaba dar cuenta del estado actual del tomo cincuenta y cuatro, de cuya redacción estoy encargado. Falta poco para que lo termine, pero con la llegada de usted tuve que suspender tan importante trabajo.</p>
 				<p>Y como Gillespie mostrase cierta curiosidad por la enorme obra, el profesor le dió explicaciones sobre su carácter y sus tendencias.</p>
@@ -981,7 +1012,7 @@
 				<p>En cuanto á mí, gentleman, lo que deseo con más vehemencia es poder meterle por la cabeza á Momaren, Padre de los Maestros, esta túnica y estos velos que ahora me cubren, arrebatándole á él para siempre los pantalones.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0266_chap8">
-				<head>VIII: En el que el Padre de los Maestros visita al Hombre-Montaña</head>
+				<head xml:id="ne0266_head_008">VIII: En el que el Padre de los Maestros visita al Hombre-Montaña</head>
 				<p>Cuando el profesor Flimnap regresó de su viaje á la antigua capital de Blefuscú, fué sin pérdida de tiempo á visitar al gigante para darle excusas por su ausencia.</p>
 				<p>Vivía en perpetuo asombro á causa de la enorme gloria que había caído sobre él, con acompañamiento de ganancias no presentidas ni aun en sus momentos de mayor ilusión. De todas las grandes ciudades le llegaban proposiciones para que fuese á relatar ante auditorios de muchos miles de personas sus pláticas con el Hombre-Montaña y lo que había podido averiguar acerca de las costumbres del remoto país de los gigantes.</p>
 				<p>Los libreros, que nunca habían querido vender sus pesados volúmenes sobre problemas filológicos é históricos, le pedían ahora que los enviase en grandes fardos, aprovechando la primera máquina voladora que saliese para el lugar de su establecimiento.</p>
@@ -1106,7 +1137,7 @@
 				<p>-Doctor Popito, puede usted volver cuando quiera: el Hombre-Montaña la invita. Si Momaren es el Padre de los Maestros, yo deseo ser el Padre de los Enamorados.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0266_chap9">
-				<head>IX: Donde el gigante va de caza y Popito expone sus ideas sobre el gobierno de las mujeres</head>
+				<head xml:id="ne0266_head_009">IX: Donde el gigante va de caza y Popito expone sus ideas sobre el gobierno de las mujeres</head>
 				<p>Cuando el bondadoso Flimnap se presentó al día siguiente, Edwin le hizo una pregunta que tenía preparada desde la tarde anterior.</p>
 				<p>Adivinó que el profesor hembra le traía buenas noticias, a juzgar por la expresión alegre de su rostro; pero antes de que se enfrascase en su relato y tal vez en la manifestación de sus tiernos sentimientos, quiso satisfacer la propia curiosidad.</p>
 				<p>-Dígame, doctor: ¿Momaren tiene una hija?</p>
@@ -1194,7 +1225,7 @@
 				<p>—¡Oh, los rayos negros!—dijo al fin—. El invento de una mujer bien puede sobrepujarlo el invento de un hombre. Nuestros sabios trabajan…. y no quiero decir más. Vamos á encontrar algo que nos dará la victoria, y yo vendré á salvarle, gentleman, antes de que ordene su muerte el gobierno de las mujeres.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0266_chap10">
-				<head>X: En el que se ve cómo el Hombre Montaña conoció al fin la Ciudad-Paraíso de las Mujeres, y la deplorable aventura con que terminó esta visita</head>
+				<head xml:id="ne0266_head_010">X: En el que se ve cómo el Hombre Montaña conoció al fin la Ciudad-Paraíso de las Mujeres, y la deplorable aventura con que terminó esta visita</head>
 				<p>Después de numerosas peticiones al municipio de la capital y de no menos entrevistas con los personajes allegados al gobierno, consiguió Flimnap ver aceptado el programa de diversiones que había ido formando para recreo de su amigo el gigante.</p>
 				<p>Una noche guió al Gentleman-Montaña hasta una colina desde cuya cumbre se podían contemplar verticalmente dos grandes avenidas de la capital. Gillespie encontró interesante el hormiguero que rebullía y centelleaba bajo sus pies.</p>
 				<p>Un resplandor de aurora ligeramente sonrosado iluminaba las calles, sin que él pudiese descubrir los focos de donde procedía. Tal vez emanaba de misteriosos aparatos ocultos en los aleros de los edificios. Pero lo que más admiró fué el continuo tránsito de los vehículos automóviles. Todos afectaban formas un poco fantásticas del mundo animal ó vegetal, llevando en su parte delantera faros enormes que fingían ser ojos y cruzaban el iluminado espacio con chorros de un resplandor todavía más intenso.</p>
@@ -1338,7 +1369,7 @@
 				<p>Y las heroicas muchachas de la Guardia, no queriendo presentar sus interesantes dorsos al enemigo, fueron retrocediendo hasta el fondo del salón, haciendo molinetes con sus espadas para defenderse del bombardeo.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0266_chap11">
-				<head>XI: Que trata del discurso pronunciado por el senador Gurdilo y de cómo el  Hombre-Montaña cambió de traje 
+				<head xml:id="ne0266_head_011">XI: Que trata del discurso pronunciado por el senador Gurdilo y de cómo el  Hombre-Montaña cambió de traje 
 				</head>
 				<p>A la, mañana siguiente, el profesor Flimnap se presentó con gran apresuramiento en la vivienda del gigante. Jamás su rostro bondadoso había ofrecido un aspecto igual, de alarma y azoramiento. A pesar de sus carnes exuberantes, saltó con juvenil agilidad del plato ascensor á la superficie de la mesa, antes de que los atletas encargados de la grúa hubiesen terminado su maniobra.</p>
 				<p>Lejos aún de Gillespie, abrió los brazos con desesperación y juntó luego sus manos en una actitud implorante, gritando:</p>
@@ -1500,7 +1531,7 @@
 				<p>—Creo, doctor—dijo—, que mañana mismo se verá usted libre del cuidado que le da el Hombre-Montaña. Según parece, los altos señores del Consejo Ejecutivo piensan suprimirlo, para que no se burle más de nosotros.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0266_chap12">
-				<head>XII: De cómo Edwin Gillespie perdió su bienestar y le faltó muy poco para perder la vida</head>
+				<head xml:id="ne0266_head_012">XII: De cómo Edwin Gillespie perdió su bienestar y le faltó muy poco para perder la vida</head>
 				<p>Flimnap pasó una segunda noche sin dormir. Tenía ante sus ojos á todas horas el rostro doloroso del gigante caído. Contemplaba sus manos cubiertas de sangre, su cuello surcado por dos profundos arañazos, su gesto de cólera impotente, que hacía recordar la desesperación pueril de un niño abandonado.</p>
 				<p>—¡Morir así!—murmuraba el vencido—. ¡Acabar á manos de este hormiguero de hombres-insectos!…</p>
 				<p>En medio de su desorientación, el profesor había encontrado una idea que consideraba salvadora. Los gestos y las palabras de aquellos enviados del gobierno le hicieron creer que la muerte del Hombre-Montaña era cosa decidida por el Consejo Ejecutivo. Veía agitarse á Momaren como una potencia irresistible que suprimiría todo movimiento de piedad en favor del gigante. ¿Por qué permanecer al lado del caído sin hacer nada? El gobierno tenía enemigos y el Padre de los Maestros también. Cuando todos perseguían al Hombre-Montaña, era conveniente buscar una nueva protección, explotando los rencores que separaban á unos de otros.</p>
@@ -1597,7 +1628,7 @@
 				<p>Y los militares más viejos y más expertos en la vida se asombraban al pensar en el mundo de los Hombres-Montañas: un mundo absurdo, donde los sexos están lamentablemente invertidos, y son los hombres los que buscan á las mujeres, no sintiendo rubor ni deseos de huir cuando las mujeres se muestran á ellos en toda su desnudez.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0266_chap13">
-				<head>XIII: Donde se ve cómo unos pigmeos bigotudos intentaron asesinar al gigante</head>
+				<head xml:id="ne0266_head_013">XIII: Donde se ve cómo unos pigmeos bigotudos intentaron asesinar al gigante</head>
 				<p>Un anochecer, cuando Gillespie había terminado su trabajo y, sentado en la playa, descansaba de ciento ochenta viajes entre la orilla del mar y la punta de la escollera, recibió una visita extraordinaria.</p>
 				<p>Estaba á esta hora vigilando el hervor del caldero, para que sus acompañantes no metiesen en la sopa las lanzas con que extraían los peces, y vió cómo un hombre de los que iban vestidos con túnica y velos se aproximaba lentamente á él. Sus ropas eran pobres, remendadas y algo sucias. Parecía por su aspecto la esposa masculina de alguna de las mujeres empleadas en el puerto ó de alguna contramaestre de la escuadra. Entre la gentuza que vivía alrededor del gigante se mostraban de tarde en tarde algunos de estos seres pobremente vestidos, pero que ostentaban el mismo indumento de los hombres de clase superior, para indicar que no pertenecían al rebaño de los esclavos aprovechados como máquinas de fuerza.</p>
 				<p>Este hombre de traje femenil paseó varias veces en torno del gigante, mirándole con interés por un resquicio de sus velos. Los malhechores al servicio del Hombre-Montaña, que formaban grupos á cierta distancia, no extrañaron la presencia del hombre con faldas. Eran muchos los que al conseguir un descanso en sus tareas domésticas venían solos ó en grupos á ver de cerca al coloso.</p>
@@ -1725,7 +1756,7 @@
 				<p>Lo mismo que dos piedras atravesaron la obscuridad, perdiéndose sus lamentos en el sonoro chapoteo de su caída.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0266_chap14">
-				<head>XIV: Lo que hizo el Gentleman-Montaña para que Popito no llorase más</head>
+				<head xml:id="ne0266_head_014">XIV: Lo que hizo el Gentleman-Montaña para que Popito no llorase más</head>
 				<p>Al día siguiente los periódicos lanzaron en sus ediciones de la tarde la noticia de un suceso que interesó mucho al público.</p>
 				<p>Golbasto, el gran poeta nacional, había sido encontrado por unos pescadores, poco antes de la salida del sol, tendido en la playa sobre la línea divisoria del agua y la arena. Lo habían conducido moribundo á su vivienda, pero á la hora en que aparecieron dichas ediciones los médicos mostraban esperanzas de salvarle la vida.</p>
 				<p>Cada uno comentó la noticia según la repulsión ó la simpatía que le inspiraba el poeta. Los hubo que hablaron de un exceso de inspiración que, haciéndole olvidar la realidad, le había impulsado á arrojarse al agua. Otros, más malignos, suponían un suicidio por decepciones amorosas.</p>
@@ -1864,7 +1895,7 @@
 				<p>Luego pasó sus pies por encima de la máquina rodante, con cierta lentitud para no aplastarla, y continuó marchando hacia la capital, sin hacer caso de los gritos que lanzaba Flimnap al verse abandonado.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0266_chap15">
-				<head>XV: Que trata de muchos sucesos interesantes, como podrá apreciarlo el curioso lector</head>
+				<head xml:id="ne0266_head_015">XV: Que trata de muchos sucesos interesantes, como podrá apreciarlo el curioso lector</head>
 				<p>Inclinó la cabeza para hablar á Popito, que se había asomado á la abertura del bolsillo.</p>
 				<p>—Sepa usted, miss—dijo—, que vamos en busca de Ra-Ra. Dígame dónde lo tienen preso; guíe mis pasos.</p>
 				<p>Le fué indicando la joven las avenidas que debía seguir por las afueras de la ciudad. Marchaban entre grandes edificios levantados cuando la capital se ensanchó á consecuencia de la Verdadera Revolución.</p>
@@ -1990,7 +2021,7 @@
 				<p>Y Edwin Gillespie, como si temiera quedarse solo, obedeciendo á una voluntad superior y misteriosa que le empujaba con fuerza irresistible, imitó á Ra-Ra, lanzándose también de cabeza en el mar.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0266_chap16">
-				<head>XVI: Donde el Hombre-Montaña deja de ser gigante y da por terminado su viaje</head>
+				<head xml:id="ne0266_head_016">XVI: Donde el Hombre-Montaña deja de ser gigante y da por terminado su viaje</head>
 				<p>Se vió envuelto en pegajosa obscuridad. Una fuerza voraz tiraba de él, absorbiéndole. Así fué descendiendo á las regiones inferiores, donde las tinieblas eran aún más densas.</p>
 				<p>Braceó desesperadamente al sentir las primeras angustias de la asfixia, dando al mismo tiempo furiosas patadas en el ambiente líquido. Tenía la certeza de que iba á morir ahogado, y esto mismo comunicaba á sus fuerzas un nuevo vigor.</p>
 				<p>—¡No quiero morir, no debo morir!—se decía Edwin.</p>
@@ -2072,7 +2103,7 @@
 		</body>
 		<back>
 			<div>
-				<head> FIN</head>
+				<head xml:id="ne0266_head_017"> FIN</head>
 			</div>
 		</back>
 	</text>

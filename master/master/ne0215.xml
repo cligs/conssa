@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El hombre de oro</title>
-				<title type="sub"></title>
+				
 				<title type="short">HombreOro</title>
-				<title type="idno">
-					<idno type="bne">XX2487360</idno>
-					<idno type="viaf">309350829</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX896547</idno>
-					<idno type="viaf">7399994</idno>
-					<name type="short">Dario</name>
-					<name type="full">Rubén Darío</name>
+					<name type="short" ref="#Dario"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">407</measure>
@@ -141,16 +131,47 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0215</idno>
+						<idno type="cligs">ne0215</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#other" subtype="pdf">Marjinalia Bilduma, <date when="1999">1999</date>, <idno></idno>, <ref target="www.euskalnet.net/xgalarreta/artxiboak/38_liburua.pdf"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1897">1897</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El hombre de oro</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2487360.html">XX2487360</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/309350829/">309350829</idno>
+				</idno>
+				</title>
+					<author xml:id="Dario">
+						<name type="full"><forename>Rubén</forename> <surname>Darío</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 27277 - IQ 27278">IQ 27277 - IQ 27278</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118671022">118671022</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q173767/">Q173767</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX896547.html">XX896547</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/7399994/">7399994</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#other" subtype="pdf">Marjinalia Bilduma, <date when="1999">1999</date>, <idno/>, <ref target="www.euskalnet.net/xgalarreta/artxiboak/38_liburua.pdf"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1897">1897</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El hombre de oro</title> <date when="1919">1919</date>, <publisher/> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="770933769" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=770933769"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El hombre de oro</title> <date when="1919">1919</date>, <publisher/> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="770933580" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=770933580"/> </bibl>
+						<bibl type="further-edition"><title type="main">El hombre de oro</title>: 	<title type="sub">novela inédita</title> <date when="1937">1937</date>, <publisher>Empr. Ed. Zig-Zag</publisher> <pubPlace>Santiago</pubPlace> 		<idno type="ppn" n="463824717" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463824717"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El hombre de oro</title>: 	<title type="sub">(novela inédita)</title> <date when="1937">1937</date>, <publisher>Empr. Ed. Zig-Zag</publisher> <pubPlace>Santiago de Chile</pubPlace> 		<idno type="ppn" n="099923831" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099923831"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El hombre de oro</title>: 	<title type="sub">y otros relatos</title> <date when="1995">1995</date>, <publisher>Aguilar [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="219439893" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=219439893"/> 		<idno type="isbn" n="8403602766"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El hombre de oro</title> <date when="2011">2011</date>, <publisher>Libervox</publisher> <pubPlace>Castro Urdiales</pubPlace> 		<idno type="ppn" n="690034903" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=690034903"/> 		<idno type="isbn" n="9788492793730"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
@@ -159,6 +180,14 @@
 				<p>En el tercer capítulo Julio Varo escucha y discute con el apostol Pablo, cuyo mensaje cala tanto en la gente como en el mismo Julio.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IQ 27277" key="IQ 27277" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL8">7</term>
 					<term type="author.continent">America</term>
@@ -171,7 +200,7 @@
 					<term type="author.nonNovelGenre">poetry</term>
 					<term type="author.submovement">2-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -187,7 +216,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">conato novelístico</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -217,6 +246,7 @@
 		<revisionDesc>
 			<change when="2016-01-13" who="#jct">Initial TEI version.</change>
 			<change when="2016-02-19" who="#jct">Checked after reading it as eBook.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -226,7 +256,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0215_chap1">
-				<head>I</head>
+				<head xml:id="ne0215_head_000">I</head>
 				<p>Roma, bajo el imperio de Tiberio César. Apacible la noche y el cielo enorgullecido de constelaciones.</p>
 				<p>Cerca del foro de Apio y de las Tres Tabernas, una callejuela serpentina, rama de la vida principal, conducía a un barrio poco frecuentado, como no fuese por marinos y comerciantes al por menor que hacían su viaje de Brindis, Capua, y lugarejos intermedios. Las casas, o más bien barracas enclenques, amontonadas, y las tortuosas sendas que las dividían, no parecían por cierto halagüeñas y atrayentes, en aquél pequeño rincón de tristeza y silencio que no era turbado sino por una que otra riña en la tienda de algún vendedor de vino, o en el miserable habitáculo de alguna prostituta de la plebe.</p>
 				<p>Aquella noche clara y constelada y por aquella callejuela, a intervalos, misteriosamente, uno después de otro pasaban unos cuantos hombres y mujeres. Todos penetraban por la estrecha puerta de constelaciones de una casa formada de piedras y tablas entre los cimientos de una mansión derruida. A pasos cansados, una anciana llegó por último, apoyada en el brazo de un hombre. Ambos, antes de entrar se volvieron a mirar por largo rato hacia el fondo de la callejuela.</p>
@@ -307,7 +337,7 @@
 				<p>—¡Buen fauno!</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0215_chap2">
-				<head>II</head>
+				<head xml:id="ne0215_head_001">II</head>
 				<p>Si por la Vía Sacra en la hora del paseo de las gentes elegantes, o en las fiestas bulliciosas de la aristrocracia, en El Forum, o bien en los lugares de veraneo y baños a la moda, hubieseis preguntado quién era el más alegre, el más gentil, el más derrochador, el más mundano de los jóvenes de la alta sociedad romana, de seguro que os hubiesen respondido que era Quinto Flavio Polión. En la más bella edad estaba, y cogió a dos manos las frescas flores del jardín de su vida; tenía todavía algún tiempo para ostentar la purpúrea franja de su pretexta, y gozar del amor acendrado y la inmensa fortuna de su excelente padre, de quien había heredado gran fortaleza física, hermosura y salud.</p>
 				<p>De su abuelo Cayo Asinio, celebrado por Horacio y protector de Virgilio, tenía la claridad mental y la pasión dichosa de las artes y de las letras. Había viajado, principalmente por Grecia, y residido algún tiempo en la Galia Transpadana, en donde su ilustre antecesor había administrado el país, por favor de Antonio, antes de ascender a la dignidad consular.</p>
 				<p>Quinto Flavio, cuando las fatigas de la vida urbana y las agitaciones de sus desahogos juveniles llegaban a cansarle, íbase a buscar paz y gozo más apacible a su villa tiburtina, una preciosa y gallarda villa, no lejos de la modesta granja en que se refugiara, años antes, deseoso de la tranquilidad campestre, y de vivir en compaía de las musas, el lírico amante de Lidia.</p>
@@ -581,7 +611,7 @@
 				<p>—¡Judas de Kariot!</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0215_chap3">
-				<head>III</head>
+				<head xml:id="ne0215_head_002">III</head>
 				<p>Lucio Varo está en su casa; ha dejado el lecho temprano; ha querido ver el sol. Una brisa fresca y ligera le conduce, convivialmente, el halago de la mañana. Ha pasado casi toda la noche sin dormir.</p>
 				<p>Hay días en que el insomnio le visita. Su mente trabaja; en las penumbras del ensueño, se diría que traba sola. Hele ahí hoy, un tanto pálido, con los ojos circundados por vagas, tenues ojeras, al resplandor naciente del carro auroral. Va y viene por la habitación, arregla sus tabletas de cera. Va y viene y piensa, piensa. ¿En qué piensa?</p>
 
@@ -634,7 +664,7 @@
 				<p>Pablo había tronado delante de él. Como Varo se quejase de las súbitas aflicciones de su espíritu, después de los instantes casi felices de la inquietud que se despertaba en su ser, por la falta de una dirección espiritual, advirtió en las pupilas de Pablo algo como el nacimiento de dos misteriosas estrellas, y alrededor de su cabeza como un vapor de sol; y oyó que el nuevo filósofo tronaba delante de él.</p>
 				<p>—¡Tenéis sed!, mas mirad que para apurar el agua estáis imposibilitado como Tántalo, amarrado como Prometeo. Queréis tener la sabiduría del hombre desdeñado, la sabiduría de Dios. Ésa es la que os calmará la sed, ésa es el agua oculta y llena de excepcionales vitalidades. Yo os anuncio que la verdad está únicamente en Dios, que para ir a Dios hay que ascender por el espíritu. Habéis consagrado vuestra vida a los ídolos. ¡Tened cuidado con los ídolos! Os coronáis de flores y apuráis el vino, dignos seguidores de los príncipes de este siglo. ¿Y Cristo? ¿Y el Señor Dios? ¿Y la maravilla de su palabra empurpurada con su martirio? Dejad las cosas fatuas del mundo, que son vanidad y locura y vileza y podredumbre. Yo os digo a vos, que sois romano, lo que digo al judío a quien despreciáis, y al griego a quien imitáis. Vuestros dioses han pasado como una nube: el Dios de Cristo es el único Dios. Él se nos ha revelado por su espíritu, no por el mundo; su Espíritu, fuego santísimo de bien y de verdad.</p>
 				<p>Y otra vez, como Varo le hubiese hablado, después de escucharle largamente, de sus dos fijos pensamientos, el amor y la muerte, le había contestado:</p>
-				<p>—¡Carne!, ¡carne!, ¡carne! Al ir un día en mi caballo de combate, en un bosque sereno y saturado de fragancias, vi a vuestro dios Pan sentado en la raíz de un árbol gigantesco, sonando su flauta. De las fuentes cercanas salían las ninfas a escucharle. Y todo el bosque olía a macho cabrío.  Tal es el perfume de la divinidad de pies hendidos, tal el aroma que se esparce de vuestro amor:  ¡Carne! Sois carnales; vuestros sexos os dominan.  Sois los esclavos de las potencias del mar, que os encadenan con sus zarzas ardientes. Sí; vuestro cuerpo no tiene por objeto la lucha de las fornicaciones. Dios es para el cuerpo y el cuerpo es para el Señor. No es esa flor de vida ni de Pan, ni de Venus, ni de Apolo, ni de los malos espíritus que animan los ídolos de Oriente: del Señor es. p>¡Amor!, el amor es del Espíritu, es la consagración al Espíritu, la llama del Espíritu. Vos pensáis en el Amor como fiebre de la sangre y trabajo del cuerpo: yo os digo que el que fornica, contra su propio cuerpo peca.</p>
+				<p>—¡Carne!, ¡carne!, ¡carne! Al ir un día en mi caballo de combate, en un bosque sereno y saturado de fragancias, vi a vuestro dios Pan sentado en la raíz de un árbol gigantesco, sonando su flauta. De las fuentes cercanas salían las ninfas a escucharle. Y todo el bosque olía a macho cabrío.  Tal es el perfume de la divinidad de pies hendidos, tal el aroma que se esparce de vuestro amor:  ¡Carne! Sois carnales; vuestros sexos os dominan.  Sois los esclavos de las potencias del mar, que os encadenan con sus zarzas ardientes. Sí; vuestro cuerpo no tiene por objeto la lucha de las fornicaciones. Dios es para el cuerpo y el cuerpo es para el Señor. No es esa flor de vida ni de Pan, ni de Venus, ni de Apolo, ni de los malos espíritus que animan los ídolos de Oriente: del Señor es. p&gt;¡Amor!, el amor es del Espíritu, es la consagración al Espíritu, la llama del Espíritu. Vos pensáis en el Amor como fiebre de la sangre y trabajo del cuerpo: yo os digo que el que fornica, contra su propio cuerpo peca.</p>
 				<p>Y Varo había murmurado suavemente delante del trueno:</p>
 				<p>—Mas mirad cómo la omnipotencia del Amor que procrea y fecunda, se siente sobre todas las cosas, y todas las cosas están sujetas a ella. ¿Por qué vos, elocuente y sabio, predicáis en contra de la naturaleza? ¿Iréis a decir esas palabras a las palomas de los nidos y a los tigres de Hircania?</p>
 				<p>¿Las diréis a los peces del mar, a las semillas de la tierra y a las parras fragantes que dan coronas a los poetas? Yo soy un poeta, señor, y vuestro Dios, os lo confieso, si me quita los labios de las mujeres y los cálices de las rosas, me da tristeza y me da miedo.</p>
@@ -651,7 +681,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

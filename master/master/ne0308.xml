@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El idilio de un enfermo</title>
-				<title type="sub"></title>
+				
 				<title type="short">Idilio</title>
-				<title type="idno">
-					<idno type="bne">bimo0000422968</idno></title>
+				
 				<author>
-					<idno type="bne">XX1035048</idno>
-					<idno type="viaf">61554068</idno>
-					<name type="short">Valdes</name>
-					<name type="full">Armando Palacio Valdés</name>
+					<name type="short" ref="#Valdes"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1205</measure>
@@ -139,13 +131,43 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0308</idno>
+						<idno type="cligs">ne0308</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Project Gutenberg, <date when="2008">2008</date>, <idno>25777</idno>, <ref target="http://www.gutenberg.org/ebooks/25777"/>.</bibl>
-				<bibl type="print-source">Obras completas, Hijos de MG Hernández, Madrid, <date when="1894">1894</date></bibl>
-				<bibl type="edition-first">Madrid, <date when="1884">1884</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El idilio de un enfermo</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/bimo0000422968.html">bimo0000422968</idno>
+				</idno>
+				</title>
+					<author xml:id="Valdes">
+						<name type="full"><forename>Armando</forename> <surname>Palacio Valdés</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736 - IO 9737">IO 9736 - IO 9737</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118789252">118789252</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q645141/">Q645141</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1035048.html">XX1035048</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/61554068/">61554068</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Project Gutenberg, <date when="2008">2008</date>, <idno>25777</idno>, <ref target="http://www.gutenberg.org/ebooks/25777"/>.</bibl>
+					<bibl type="print-source">Obras completas, Hijos de MG Hernández, <pubPlace>Madrid</pubPlace>, <date when="1894">1894</date></bibl>
+					<bibl type="edition-first"><pubPlace>Madrid</pubPlace>, <date when="1884">1884</date><idno source="k10plus" type="ppn" n="464933609" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464933609"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El idilio de un enfermo</title>: 	<title type="sub">novela de costumbres</title> <date when="1884">1884</date>, <publisher>Ricardo Fé</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464933609" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464933609"/> </bibl>
+						<bibl type="further-edition"><title type="main">El idilio de un enfermo</title> <date when="1921">1921</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46433134X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46433134X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El idilio de un enfermo</title> <date when="1946">1946</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="583720005" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=583720005"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Señorito Octavio. El idilio de u enfermo. La espuma. El maestrante. El origen del pensamiento. Lo cármenes de Granada. La novela de u novelista. Album de un viejo. A car o cruz. Cuentos. Escritos varios</title> <date when="1948">1948</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1145122051" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1145122051"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El señorito Octavio. El idilio de un enfermo. La espuma. El maestrante. El origen del pensamiento. Los cármenes de Granada. La novela de un novelista. Album de un viejo. A cara o cruz. Cuentos. Escritos varios</title> <date when="1952">1952</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1144460735" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1144460735"/> </bibl>
+						<bibl type="further-edition"><title type="main">El Señorito Octavio. El idilio de u enfermo. La espuma. El maestrante. El origen del pensamiento. Lo cármenes de Granada. La novela de u novelista. Album de un viejo. A car o cruz. Cuentos. Escritos varios</title> <date when="1965">1965</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1071613138" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1071613138"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -155,6 +177,14 @@
 				<p>Nos vuelve a ofrecer una visión estilizada del campo asturiano con bellas descripciones paisajísticas. [...] Hace acto de presencia en la novela el determinismo ambiental. La salud física y espiritual están indisolublemente unidas en la figura del protagonista, el rico madrileño Andrés Heredia, que enferma de hemoptsis y va a curarse a Riofrío. Tras vivir un apasionado romance con Rosa, a la que seduce y abandona, regresa a Madrid. La vuelta a la vida malsana y ociosa de la ciudad "significa la recaída moral y con ella el decaimineto físico que le lleva a la muerte" [...].</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736" key="IO 9736" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -181,13 +211,13 @@
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
 					<term type="text.genre.subgenre.edit" resp="amazon"> Ficción contemporánea; Español y Portugués, Literatura española, Filosofía</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela naturalista</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela naturalista</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.subtitle.source" resp="bne">novela de costumbres</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela de costumbres</term>
 					<term type="text.genre.supergenre">narrative</term>
@@ -219,12 +249,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-09-12" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>DEDICATORIA - A mi hijo. </head>
+				<head xml:id="ne0308_head_000">DEDICATORIA - A mi hijo. </head>
 				<p>Con grata sorpresa pude averiguar que algunas de las obras que he lanzado a la publicidad estaban agotadas y otras a punto de estarlo. Fue pasión incontrastable de mi ánimo, no esperanza de lucro o de gloria, la que me arrastró a novelar en esta edad tan poco feliz para las musas. Desde que, recién salido de las aulas, entregué mis primeras cuartillas a la imprenta, vi claramente que no era ésa la vía para lograr los halagos de la vanidad ni los regalos del cuerpo.</p>
 				<p>Nuestra nación se halla desde hace algunos años con disposición indiferente, más bien hostil, hacia todas las manifestaciones del espíritu. La pasión de lo <seg rend="italics">útil</seg>, un sensualismo omnipotente, invade a la sociedad española, y muy singularmente a esa clase media que en la primera mitad del siglo tantas y tan gallardas muestras dio de su amor a lo justo y a lo bello. La juventud, de quien suelen partir los impulsos generosos, los anhelos espirituales, no se ocupa actualmente sino en abrirse paso a codazos para llegar al poder, a la influencia, a la comodidad. Mi padre me decía que, en su tiempo, viendo un joven errar solitario con un libro entre las manos, se podía apostar a que este libro era de versos. El tuyo te dice que actualmente hay seguridad de que el libro es la ley municipal o un compendio de Derecho administrativo. ¿Caminamos por este sendero a la civilización y al engrandecimiento de la patria, o vamos derechos a la barbarie y al desprecio de las naciones cultas? Tú o tus hijos lo sabréis. Yo moriré antes de que se averigüe.</p>
 				<p>De todos modos, a nadie se le oculta que las letras cuentan con pocos apasionados en España. La prensa periódica, en vez de difundirlas y alentarlas, contribuye no poco con su desvío a la tristeza y languidez en que vegetan. Es más; la facilidad que el primer advenedizo logra (a condición de solicitarlo) para ver sus producciones, malas o buenas, ensalzadas hasta las nubes, demuestra mejor aún el desdén con que se miran.</p>
@@ -258,7 +289,7 @@
 		<body>
 			
 			<div n="1" type="chapter" xml:id="ne0308_chap1">
-				<head>I</head>
+				<head xml:id="ne0308_head_001">I</head>
 				<p>Abriose la puerta y entró en la sala un joven flaco, que saludó a los circunstantes inclinando la cabeza. Las dos señoras, sentadas en el diván de damasco amarillo, y el caballero de luenga barba, situado al pie del balcón, le examinaron un momento sin curiosidad, contestando con otra levísima cabezada. El joven fue a sentarse cerca del velador que había en el centro, y se puso a mirar las estampas de un libro lujosamente encuadernado.</p>
 				<p>Reinaba silencio completo en la estancia esclarecida a medias solamente. La luz del sol penetraba bastante amortiguada al través de las persianas y cortinas. Detrás de la puerta del gabinete vecino percibíase un rumor semejante al cuchicheo de los confesonarios.</p>
 				<p>El caballero de la barba se obstinaba en mirar a la calle por las rendijas de la persiana, dándose golpecitos de impaciencia en el muslo con el sombrero de copa. Las señoras, sin despegar los labios y con semblante de duelo, paseaban la mirada repetidas veces por todos los rincones de la sala, cual si tratasen de inventariar la multitud de objetos dorados que la adornaban con lujo de relumbrón.</p>
@@ -336,7 +367,7 @@
 				<p>—Ese pobre se curará en otro campo distinto del que usted va a visitar... Adiós, querido, adiós.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0308_chap2">
-				<head>II</head>
+				<head xml:id="ne0308_head_002">II</head>
 				<p>Andrés Heredia perdió en la niñez a su padre, magistrado del Tribunal Supremo, que había tenido la flaqueza de casarse, ya viejo, con una sobrinita de diez y ocho años. Su tardío matrimonio y algunos quebrantos de fortuna, que por la baja repentina de los fondos públicos había experimentado, dieron con él en la sepultura. El fruto de esta unión desacertada fue un niño menudo y enteco, que se crió trabajosamente a fuerza de mimos y cuidados.</p>
 				<p>A la muerte de su padre heredó 40.000 reales de renta que, unidos a la viudedad de su madre, les consintió vivir con bienestar en la corte. La joven viuda no quiso contraer nuevo matrimonio, aunque no le faltaron buenas coyunturas para ello. Cifró los anhelos y las esperanzas todas de su vida en aquel niño, que necesitaba de su maternal solicitud para no perecer al golpe de las muchas dolencias que padeció en la infancia: para ella era un goce intenso y continuo irlas venciendo y verle salvo y cada vez más robusto. El chico, al mismo tiempo, iba descubriendo un natural sensible y despejado: adoraba a su madre y la enorgullecía con sus triunfos en el colegio: todos los meses diploma de honor: en todos los exámenes sobresaliente o notablemente aprovechado. Más tarde, cuando alcanzó los diez y seis años, le trajo un periódico donde aparecían unos versos firmados por él. Lisonjeada en su vanidad de madre, la pobre mujer rompió a llorar. Desde entonces la carrera de Andrés quedó fijada: fue poeta. No hubo revista literaria ni periodiquillo de provincias que no se viese comprometido a insertar alguna de sus lacrimosas composiciones, ni certamen poético o juegos florales donde no ganase una escribanía de plata, algún libro lujosamente encuadernado, y tal vez que otra hasta la misma flor natural reservada a los poetastros más preclaros. El género en que más sobresalía eran las leyendas. Con una cruz de piedra, un par de jinetes rebujados en sendas capas, un camarín bien amueblado, una dama de rara belleza, un castillo con ventanas ojivales y una noche de luna llena, tenía lo bastante nuestro mancebo para armar un belén de seis mil diablos muy interesante, capaz de poner la carne de gallina a cualquiera. Cuando tuvo bastante número de composiciones, publicó (a ruego de algunos amigos) un tomo; y después otro; y después otro. Le costaban un caudal; pero lo daba por bien empleado, porque los periódicos donde tenía amigos comenzaban a llamarle «el inspirado poeta, nuestro particular amigo D. Andrés Heredia.» Por desgracia, su madre se murió antes de verle en el pináculo de la gloria: murió rápidamente de una tisis pulmonar. Andrés, que sólo contaba veinte años a la sazón, tuvo por curador de sus bienes a un hermano de la difunta; pero no quiso vivir con él, y se trasladó con algunos de sus bártulos a la fonda.</p>
 				<p>Aquí da comienzo para el joven Heredia una era muy diversa del resto de su vida anterior. Pasó repentinamente de la atmósfera tibia de su casa al fresco de la calle, de la existencia dulce y tranquila que el amoroso cuidado de su madre le hacía observar, a la desarreglada y trashumante de las fondas. El exceso de libertad le hizo daño. Su naturaleza había cambiado bastante desde los diez y seis años. El método riguroso, la conducta ordenada, habían conseguido darle una robustez relativa; de suerte que, al trasladarse a la fonda, se hallaba bastante fuerte para disfrutar de la vida. Por otra parte, su curador le pasaba una muy bastante cantidad para sostenerse con desahogo. De todas estas ventajas comenzó a usar largamente nuestro joven, presentándose en el mundo con el brío y la petulancia de los pocos años. Pisó los teatros a menudo, y los cafés, y los salones, y hasta los lugares menos santos; contrajo amistades y deudas; despeñose en aventuras amorosas que no son el amor. Todo le sonrió en un principio. Mas no se pasó mucho tiempo sin que la naturaleza diese el grito de alarma. De nuevo se presentó la antigua dolencia del estómago, más áspera que nunca, por la falta de método en las comidas y el desdén de los remedios oportunos. Y el constante padecer que le envenenaba todos los placeres, comenzó a influir de modo notable en su carácter: se tornó hipocondríaco, pesimista, irascible. Llegó un instante en que se vio precisado a retirarse del comercio social, para no tener a cada instante alguna reyerta. Se hizo susceptible, desconfiado; una palabra le desconcertaba, una mirada le hería; no transcurrían ocho días sin que riñese con algún amigo por cualquier bagatela. Uno de ellos, médico, después de cierta escena violenta, le dijo que no discutiría más con él mientras no se pusiese en cura. Esto le hizo volver en sí: comprendió que estaba efectivamente enfermo, huyó con particular cuidado toda ocasión de disputa, y comenzó a jaroparse con los remedios que usualmente se dan contra la bilis. No le fue mal con ellos: el estómago se le entonó, comió con más apetito, y al cabo pudo volver a la vida ordinaria, aunque resentido y quebrantado.</p>
@@ -354,7 +385,7 @@
 				<p>Ni la justicia ni enemigo mortal alguno le perseguían. El único que le acechaba los pasos, esperando impaciente el momento oportuno de acometerle, era aquel fantasma pálido y hediondo que se le había aparecido al arrojar algunas gotas de sangre por la boca.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0308_chap3">
-				<head>III</head>
+				<head xml:id="ne0308_head_003">III</head>
 				<p>Cuando el joven Heredia se acercó al despacho del ferrocarril minero que enlaza el puerto de Sarrió con la villa de Lada, solicitando un billete de primera, el expendedor le clavó una mirada honda y escrutadora, y le examinó detenidamente de la cabeza a los pies, preguntándose con curiosidad:—¿Quién será este joven? Me parece que no le he visto hasta ahora. ¿Algún nuevo ingeniero que hayan traído los Iturraldes? Está bien flaquito el pobre.</p>
 				<p>En la vasta sala de espera, negra por el polvo de carbón, no había nadie. El expendedor pudo examinar largo rato aún al viajero. Al cabo de un cuarto de hora de pasear por aquel inmenso y sucio camaranchón, apareció un mozo con el rostro embadurnado también de carbón, empuñando una campana de bronce que hizo sonar con fuerza; y encarándose al propio tiempo con nuestro joven, gritó reciamente:</p>
 				<p>—¡Viajeros al tren!</p>
@@ -406,7 +437,7 @@
 				<p>Decidiose a interrogar al primer mozo que le salió al paso.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0308_chap4">
-				<head>IV</head>
+				<head xml:id="ne0308_head_004">IV</head>
 				<p>—Oiga usted: ¿me podría informar si hay en la villa algún alquilador de caballos?</p>
 				<p>—Sí, señor; hay dos.</p>
 				<p>—¿Quiere usted guiarme a casa de uno de ellos?</p>
@@ -528,7 +559,7 @@
 				<p>Y al proferir tales palabras, como Andrés no se había apeado, le besaba una de las manos con efusión. A nuestro viajero le sorprendió agradablemente que su mal estado de salud partiese el corazón de una persona que nunca le había visto. Echó pie a tierra, se despidió afectuosamente de Celesto, y abrazado de su tío y escoltado por el ama, subió la tortuosa escalera de la rectoral.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0308_chap5">
-				<head>V</head>
+				<head xml:id="ne0308_head_005">V</head>
 				<p>El cura de Riofrío frisaba en los sesenta años. Era un hombre pequeño y grueso, de cuello corto, rostro mofletudo y rojo, o por mejor decir, morado; los ojos claros y redondos, como trazados a compás; ágil en sus movimientos, a pesar de la obesidad, y fuerte como un atleta. La expresión ordinaria de su fisonomía, dura, casi feroz; mas cuando tenía que expresar algo, aunque fuese lo más insignificante, v. gr., cuando preguntaba la hora o el tiempo que hacía, hinchaba de tal suerte su nariz borbónica, abría los ojos desmesuradamente y los clavaba con tal fuerza en el interlocutor, que éste necesitaba mucha presencia de ánimo y sangre fría para no echarse a temblar.</p>
 				<p>Andrés se sintió profundamente intimidado cuando su tío le propuso que se quitase las botas y se pusiese las zapatillas.</p>
 				<p>—Me parece que no hay zapatillas en la maleta... Vienen en el baúl que trae un carretero—dijo, con el aspecto encogido y el acento del que confiesa un delito.</p>
@@ -588,7 +619,7 @@
 				<p>Después comió con tranquilidad la sopa, y durante la cena siguió la conversación estratégica. Al finalizar, rezó en voz alta un Padre Nuestro en acción de gracias, acompañado del sobrino, y ambos se fueron a la cama, poco después que las gallinas.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0308_chap6">
-				<head>VI</head>
+				<head xml:id="ne0308_head_006">VI</head>
 				<p>Poco después que cantara el gallo por vez primera, se personó el cura de Riofrío en el cuarto de su sobrino, voceando ya como si fuesen las doce del día. Abrió la ventana con estrépito, y los rayos fríos, pero hermosos, del sol matinal dieron en el rostro de nuestro joven, que los acogió con una mueca nada estética.</p>
 				<p>—Vamos, gran dormilón, arriba: ¡arriba, hombre, arriba! Si te dejase, ser�as capaz de estarte en la cama hasta las siete de la mañana.</p>
 				<p>Andrés oyó entre sueños el absurdo de su tío y arrugó las narices con espanto.</p>
@@ -614,7 +645,7 @@
 				<p>Mas esta humillación, lejos de causarle pena, parecía regenerarle. Una alegría extraña penetraba en su corazón y se esparcía por todo su ser, inundándole de tal suerte que le causaba congojas. Era una alegría que le apretaba la garganta y le refrescaba la sangre. Nunca experimentara sensación de placer tan puro ni un sentimiento tan profundo de la belleza. Por primera vez ¡él, que había escrito tantos millares de versos! vio cara a cara la poesía; el corazón se lo dijo claramente. Era la poesía genuina, esplendorosa y diáfana, sin estrofas ni consonantes, ni mucho menos ripios, que nace de la comunicación de un alma sensible con la naturaleza. Era la poesía que en aquel momento expresaba un mirlo, que vino a posarse cerca, con sus notas puras y cristalinas. El bosque se estremeció de dicha al escuchar aquel grito aflautado, aquel canto tierno y melodioso que recogía la frescura, las armonías, los misteriosos hechizos del bosque, para dirigirlos al Hacedor como un himno matinal de gracias. Andrés también sufrió una sacudida. La emoción, que le había ido embargando poco a poco, se desbordó en lágrimas por sus ojos. Lo que sentía era tan nuevo, tan dulce, que llegaba a hacerle daño. El llanto le refrescó.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0308_chap7">
-				<head>VII</head>
+				<head xml:id="ne0308_head_007">VII</head>
 				<p>Sonaron por tercera vez las campanas de la iglesia, respondiendo con un concierto bullicioso e ininteligible al canto claro y sosegado del mirlo. Andrés se levantó para oír misa. Estaba la iglesia no muy lejos de la rectoral. Cuando llegó a ella, aún no habían terminado el rosario, que en las aldeas precede los domingos al sacrificio incruento. Pero al rosario asisten solamente las mujeres y los devotos: los espíritus lúcidos, los temperamentos volterianos de la aldea se quedan en el pórtico fumando y charlando en alta voz.</p>
 				<p>En ocasiones, las voces son tan altas, que el cura se ve en la precisión de salir a imponerles silencio. Con tal motivo, les pronuncia siempre un discurso, en que los llama, entre otras cosas, <seg rend="italics">escribas</seg>; pero los feligreses recalcitrantes no se dan por ofendidos, y reciben las pedradas del pastor bajando la cabeza con sonrisilla irónica.</p>
 				<p>Nuestro joven entró en la iglesia, que era reducida y pobre, y después de hacer una genuflexión ante el altar mayor, siguió hasta la sacristía, cuartito más pobre aún que la iglesia, con una ventanilla redonda por donde entraban los rayos del sol. Un arca con tiradores a modo de mostrador ocupaba entera la parte inferior del lienzo más grande de pared; un crucifijo horriblemente ensangrentado pendía sobre el arca. Lo primero con que tropezó fue con Celesto que, de rodillas a la puerta, rezaba el rosario. Esparcidos por el recinto, unos sentados, otros de hinojos, estaban: el maestro de escuela, que era un joven rubio afeminado, con traje de labrador en día de fiesta; el escribano del lugar, que trabajaba toda la semana en Lada y venía los sábados por la tarde a pasar el domingo con su familia; rostro enjuto, nariz aguileña, aspecto de raposo; cierto caballero llamado D. Jaime, hijo del pueblo, que había llegado recientemente de América: color de aceituna, ojos pequeños y hundidos, enfermo del hígado, de cuarenta y cinco a cincuenta años de edad; el sacristán y otras dos o tres personas, que por su aspecto representaban la transición entre el labrador y el caballero.</p>
@@ -654,7 +685,7 @@
 				<p>—¡Ah, sí!... la hija de Tomás el molinero... No piense usted en ella, D. Andrés... (bajando la voz y en tono confidencial). Yo le daré a conocer otras mucho más amables en cuanto usted se mejore un poco... Ésa es una yegua.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0308_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0308_head_008">VIII</head>
 				<p>Al mes de hallarse en las Brañas, Andrés había mejorado notablemente. Sin otras medicinas que el andar constantemente al aire libre, montar a veces el caballejo de su tío, salir otras con Celesto a cazar (en realidad a espantar pájaros), jugar a los bolos, acostarse y levantarse temprano, acudió el apetito y desapareció la extremada debilidad que le inquietaba. El color siempre pálido, pero se iba tostando un poco. Bajaba a menudo al pueblo, compuesto de unas cuantas docenas de casas, blancas unas, pardas otras, todas pequeñas y de un solo piso, diseminadas sin orden por el espacio de tierra llana que el río dejaba en su margen derecha. Las grandes huertas, que algunas de ellas tenían detrás o a los lados, ensanchaban bastante el perímetro de la aldea. En el centro, o hacia el centro, estaba lo que pudiera llamarse plaza, o sea un pedazo de tierra cercado a trozos por casas, a trozos por árboles, surcado por la acequia de un molino, que se salvaba por medio de un pontón de madera. Tal pedazo de tierra sin cultivar servía de desahogo al pueblo. En el medio había una columna de madera, carcomida por la intemperie, a cuyo extremo se hallaba sujeta una campana que se hacía sonar con cadena. Servía para convocar a los vecinos en caso de necesidad, y también la utilizaba el cura para rezar el <seg rend="italics">Angelus</seg> cuando las horas del mediodía o el oscurecer le sorprendían entre sus feligreses. Los que anduviesen cerca se agrupaban en torno, la cabeza descubierta, los ojos bajos: el cura, de pie en la escalerilla que servía de pedestal, dominándolos a todos, rezaba en alta voz, dando con lentitud tres campanadas antes de cada Ave María. En una cierta mañana en que Andrés bajó al pueblo, halló gran número de hombres reunidos al pie de la columna. Se introdujo en el grupo para saber de lo que se trataba. Un vecino sostenía con calor (con el calor relativo que emplean los paisanos hasta en los negocios más importantes de la vida) que el toro del concejo no servía, que era demasiado corpulento y que había causado graves daños a sus vacas y a las de otros. Los perjudicados apoyaron los argumentos del preopinante, y después de breve discusión, en que sólo sostuvo la causa del toro el vecino encargado de mantenerlo (por haberse encariñado con él, según se aseguraba por lo bajo), decretose, de acuerdo general, que fuese vendido en el primer mercado, y se comprase otro de menor tamaño.</p>
 				<p>Solía por las tardes ir a dormir la siesta a la Mata, debajo de una gran acacia, y se placía extremadamente en escuchar horas enteras los gorjeos de los pájaros, los rumores de los árboles, el canto de los insectos. Tendido boca arriba en el césped, contemplaba sin pestañear el firmamento, sumergiendo la mirada en sus profundos senos azules, pensando algunas veces descubrir detrás de ellos algún inefable misterio. Aquella posición le mareaba al cabo. Entonces solía ver el cielo como inmenso mar de cuyas aguas salían formando bosques de algas las copas de los árboles: los pájaros eran las naves que lo surcaban. Cuando el viento azotaba las hojas y removía la tenue gasa azul que las envolvía, corría gozo extraño por todo su cuerpo, acometíanle locos deseos de volar por aquellas diáfanas regiones, imaginábase en medio de ellas solo, perdido, árbitro de surcar la inmensidad en todas direcciones, sentíase envuelto y acariciado por las olas sutiles del éter; la vista entonces se le ofuscaba; el vértigo se apoderaba de su cabeza. Quedaba algunos instantes con los ojos abiertos sin ver, con el pensamiento despierto sin pensar. Era, no obstante, un mareo tan delicioso, un bienestar tan grande, que hubiera querido que durase eternamente.</p>
 				<p>En la aldea comenzaban a tratarle con familiaridad: le llamaban D. Andrés el sobrino del señor cura, y le instaban para que entrase en las casas, y le agasajaban mucho cuando le tenían dentro. Se había corrido la voz de que era rico y que «escribía en los papeles.» No había necesidad de más para que el pueblo entero le respetase y se interesase por su salud. Ningún vecino había que, al tropezarle por los caminos, no le preguntase si tenía más ganas de comer. El apetito de Andrés fue por una temporada la cuestión palpitante en Riofrío.</p>
@@ -724,7 +755,7 @@
 				<p>—¡Este padre, que no tiene más gusto que avergonzarme!</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0308_chap9">
-				<head>IX</head>
+				<head xml:id="ne0308_head_009">IX</head>
 				<p>Desde aquel día Andrés acudió a casa de Rosa. Iba de ordinario por las tardes, después de comer, y se volvía a la rectoral al toque de oración. A veces también por la mañana le guiaban a ella el deseo y los pies. La casa era como la de todos los paisanos, aun los mejor acomodados, pobre y fea: en el piso bajo estaba la cocina, con pavimento de piedra y escaño de madera ahumada: arriba había una salita con dos cuartos: en uno dormían Rosa y Ángela; en el otro, su padre; abajo, en un cuartucho, Rafael y el criado. Estaba aislada, cerca del camino, y tenía delante una corralada; por detrás, miraba a la finca donde Andrés había penetrado de improviso, y tenía puerta para el servicio de ella. Llamaban a aquel sitio el Molino, por más que no estuviese allí, sino un poco más lejos. Tomás y su familia no eran conocidos más que por «los del Molino:» Tomás el molinero, Rosa del molino, Rafael el del molinero, etc. En el pueblo, «ir al Molino,» lo mismo significaba ir efectivamente a tal sitio que a la casa de Tomás. Las tierras que éste cultivaba, el molino, la casa misma que habitaba, no le pertenecían: todo lo llevaba en arriendo, como su padre y su abuelo. Su hermano Jaime, al llegar, haría cosa de un año, de la isla de Cuba, quiso comprar la casería; mas aunque daba por ella lo que no valía realmente, su propietario, un marqués residente en Madrid, no se la quiso vender. Tomás vivía con bastante desahogo, dada su condición, pero sin economizar un ochavo, y a veces un tantico apurado.</p>
 				<p>Su hija Ángela era una muchachota fresca y robusta, de diez y ocho años, uno más que Rosa, que tenía poco de particular, lo mismo en lo físico que en lo moral. Rafael, un chicuelo de catorce, de pocas carnes y mucha malicia. A Rosa ya la conocemos. Poco más de dos años hacía que estos chicos habían quedado huérfanos de madre, muerta, según decían en la aldea, «de punta de costado y pulmonía.» Desde entonces, Ángela y Rosa quedaron al frente del manejo interior de la casa, lo cual no les excusaba de asistir al trabajo en tiempo de labores, para ayudar a su padre, a Rafael y al criado.</p>
 				<p>Andrés, con buen acuerdo para sus planes, trató de captarse la amistad de estas personas, y lo consiguió al cabo de pocos días. Escuchaba riendo las chanzonetas pesadas y groseras de Tomás; bromeaba con Ángela, dejando deslizar siempre que podía alguna lisonja, que en el campo, como en la ciudad, producen admirables efectos; contaba anécdotas picantes a Rafael, y le proveía de tabaco; hablaba del tiempo y las labores al criado, una especie de animal tardo y perezoso como el buey y con la testa casi tan dura. En cuanto a Rosa, su conducta era distinta: adoptaba la reserva diplomática y fría de que hacen uso los hombres refinados para vencer a los seres inocentes, y que suele ser de feliz resultado.</p>
@@ -834,7 +865,7 @@
 				<p>Andrés trató de persuadirla a que despreciase el dicho del aldeano, inspirado sin duda por la cólera; pero fue en vano. Ella sabía mejor lo que pasaba en el pueblo; no quería verse en lenguas de la gente. El joven se vio obligado a despedirse.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0308_chap10">
-				<head>X</head>
+				<head xml:id="ne0308_head_010">X</head>
 				<p>Algunos días después de este suceso, a la hora de salir Andrés de casa por la tarde, su tío le retuvo, diciéndole con solemnidad inusitada:</p>
 				<p>—Andrés, necesito hablar contigo.</p>
 				<p>El joven dejó otra vez el sombrero encima de la mesa, y mirando con sorpresa al cura se sentó.</p>
@@ -948,7 +979,7 @@
 				<p>Subió el joven madrileño malhumorado y cabizbajo el repechito que le quedaba hasta la casa de su tío, y mientras se iba acercando lentamente a ella, no dejaba de preguntarse con alguna inquietud: «—¿Por qué habrá querido sonsacarme ese bergante?»</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0308_chap11">
-				<head>XI</head>
+				<head xml:id="ne0308_head_011">XI</head>
 				<p>La idea que Andrés había formado, por rumores y conjeturas más que por experiencia, del meloso D. Jaime, era la adecuada. El entendimiento escaso, la conciencia turbia, los apetitos despiertos, la condición mansa y peligrosa como la del agua detenida. Su padre le había embarcado a los catorce años entre otros cuantos millares de ovejas humanas que la metrópoli enviaba anualmente a las colonias ultramarinas. A los cincuenta había vuelto, sin instrucción, sin creencias religiosas y sin salud, pero con treinta o cuarenta mil duros, ganados en el fondo de una bodega vendiendo arroz y tasajo para los negros. La vida de bestia enjaulada que observó por espacio de treinta y seis años no era a propósito para desenvolver los gérmenes de inteligencia y bondad que la providencia de Dios no niega a ninguna criatura humana. Sus pensamientos, sus sentimientos y los actos todos de su voluntad eran vulgares y sórdidos. En cambio, el encierro enardeció y sobresaltó su temperamento y lo inclinó a los goces sensuales, buscando en ellos la compensación de los que la libertad, la instrucción y el trato social ofrecen. Bien se declaraban las torpes aficiones en el mirar opaco de sus ojos, hundidos y extraviados, y en la palidez cadavérica de las mejillas, a la cual también contribuía la dolencia crónica que le aquejaba hacía algunos años.</p>
 				<p>Al llegar en el verano anterior a su pueblo natal habíase alojado en casa de su hermano Tomás, quien pensó que se le entraba con él la fortuna por la puerta. Pronto vino en cuenta de su error. El indiano, aunque tuviese dinero, ni lo mostraba. Largos seis meses lo tuvo de huésped en casa, haciendo por obsequiarle no pocos sacrificios, sin obtener más recompensa que algunos livianos regalos a las chicas y a Rafael. Cuando le pidió dinero para comprar más ganado y pagar algunos picos que debía, D. Jaime puso muy mala cara, pero se lo otorgó en préstamo al diez por ciento: le hacía gracia especial, porque la mayor parte lo tenía colocado al doce. Desde entonces, el indiano estuvo en casa de su hermano como en ascuas: temía a cada instante nuevas demandas y temía además que le faltase el rédito de lo que le había prestado. Si no fuese porque las gracias de Rosa obraban ya sobre su ser vivo y ardoroso influjo, se hubiera ido inmediatamente. Este influjo, de índole grosera, fue el que le retuvo y fue también el que le obligó más tarde a separarse. Veamos cómo.</p>
 				<p>No el carácter alegre y desenvuelto de su sobrina, ni la gracia singular que imprimía a sus palabras y actitudes, ni la rara altivez que custodiaba su inocencia, fueron las que cautivaron a D. Jaime. De esta suerte, su pasión, aunque senil, hallaría disculpa. Lo único que vio y apreció en Rosa fue la forma, o por aproximarnos más a la verdad, la carne. No era apto para sentir ni aun comprender otras pasiones más subidas. Pareciole, así que la vio, un bocado apetitoso. Al cabo de algunos días de vivir cerca y contemplarla largamente en todas las posturas, concibió por ella una torpe y desenfrenada afición. Guardose de mostrarla, porque detrás de sus vicios, y aun sobreponiéndose a ellos, estaba el hombre práctico, el aldeano egoísta y receloso. Temía que, conocida su flaqueza, la familia se aprovechase para saquearle. Además, no quería verse comprometido. A imitación de otros muchos paisanos que habían llegado con dinero de Cuba antes que él, aspiraba a ennoblecer su sangre y adquirir mayor prestigio uniéndose a alguna señorita pobre de la villa, abandonada por esto y por vieja de los jóvenes. Pero aunque no la mostrase, la procuraba alguna salida. En su calidad de tío carnal, estaba autorizado para usar con la muchacha ciertas familiaridades que no les serían permitidas a otros hombres D. Jaime usaba y abusaba. Como vivía bajo el mismo techo y estaba en continuo contacto con ella para todos los menesteres de la vida, se aprovechaba lindamente de sus facultades muy más de lo que haría otro tío menos sucio. «Rosita, tráeme esto.—Rosita, ve por lo otro.—Rosita, sube sobre este banco y alcánzame aquellos zapatos.—Rosita, átame esta cinta.—Rosita, pégame el botón de la camisa.» Y cuando iba y cuando venía y cuando subía y cuando bajaba, las manos amarillentas y velludas de D. Jaime la pellizcaban, la sobaban, la mimaban y la estrujaban.</p>
@@ -1023,7 +1054,7 @@
 				<p>D. Jaime, sin responder palabra, bajó la escalera y salió de casa con traza de ir muy desabrido.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0308_chap12">
-				<head>XII</head>
+				<head xml:id="ne0308_head_012">XII</head>
 				<p>Aquella tarde, reparando Andrés en una herida reciente que Rosa tenía en la mejilla, le preguntó con interés:</p>
 				<p>—¿Qué es eso, Rosita?</p>
 				<p>—Que me he lastimado con una rama al coger manzanas.</p>
@@ -1128,7 +1159,7 @@
 				<p>Andrés espiaba con afán las salidas de Rosa, se emboscaba detrás de los árboles, y en cuanto la veía sola, ¡allá voy! corría a emparejarse con ella. Y estas entrevistas al aire libre, que el temor de ser observados hacía breves y melancólicas, eran, sin embargo, para ambos más gratas todavía que las tardes serenas del molino. Nunca se cruzaron entre ellos palabras tan cariñosas ni miradas tan suaves y tiernas como entonces. Rosa, que acogía siempre los requiebros del joven cortesano con risa y desconfianza, poco a poco se fue haciendo más grave y sosegada; se ponía encendida al verle; le miraba fijamente mientras él tenía los ojos en otra parte, y cuando llegaba el momento de separarse, en la inflexión temblorosa y enternecida de la voz se adivinaba la emoción que embargaba su alma.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0308_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0308_head_013">XIII</head>
 				<p>Transcurrieron algunos días. El enojo de D. Jaime por el desaire recibido fue creciendo. En su interior no daba toda la culpa a Rosa; hacia partícipe a su hermano por haber tolerado el galanteo de Andrés una porción de meses con señales de no disgustarle. Después, pensaba que Tomás no había hecho lo bastante por complacerle, no había obrado con suficiente energía para rendir a Rosa a recibirle por esposo. Porque si bien era verdad que la castigaba, y a veces cruelmente, estos castigos quedaban desvirtuados por el efecto de consentirla pasar tardes enteras con su amante en el molino; y aunque últimamente habían cesado estas visitas, todavía no usaba con ella de la debida vigilancia, porque en todas partes y a todas horas se veían y se hablaban, de lo cual era testigo el pueblo. Él mismo los sorprendió más de una vez en las encrucijadas de los caminos o a la orilla del río, y se había vuelto por no tropezar con ellos.</p>
 				<p>De todo esto formaba el indiano un capítulo de agravios contra su hermano. Empezó a mirarle de mal ojo, y a bullir en su cabeza la idea de que aquél, so capa de protegerle, tenía la mira puesta en el señorito de Madrid, trabajaba astutamente por encenderle con la contrariedad y hacerle caer en una trampa de donde saliese comprometido y obligado por las leyes divinas y humanas a casarse con su hija.</p>
 				<p>Con esto dejó de ir al Molino, se mostró seco con Tomás cuando le hablaba; por último, un día le negó el saludo. Al mismo tiempo no se ocultó para decir en confianza por el pueblo lo que en el Molino ocurría: las entrevistas de Andrés con su sobrina, de las cuales sacaba partido para calificar a aquel de disoluto y a su hermano de necio; la presunción de la chica desde que un señorito la requebraba; la fingida oposición del padre, etc., todo adobado con la baba del odio y el despecho.</p>
@@ -1165,7 +1196,7 @@
 				<p>Bajó de nuevo la escalera. Ángela se fue a un rincón a llorar. El Molino volvió a quedar en silencio.</p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0308_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0308_head_014">XIV</head>
 				<p>Por la noche supo Andrés en la taberna lo acaecido en el Molino. Celesto le refirió la escena con pelos y señales. Tan triste y abatido le dejó el relato, que para confortarse un poco bebió contra su costumbre, y le hizo daño. Entre el excusador y Celesto le llevaron a casa. Por la mañana al despertarse no recordaba nada de lo que había pasado en la taberna. Pero sí recordó con terrible claridad la situación en que sus imprudentes galanteos habían colocado a la pobre Rosa. Después de recapacitar un poco entre sábanas acerca del mejor partido que podía tomar para redimir a la chica de tanto cuidado y dolor, no vio más adecuada salida que partirse cuanto antes de Riofrío: lo mismo que venía pensando hacía ya bastante tiempo sin ponerlo por obra. Su partida restablecería la calma en aquella familia. Tomás y su hermano, no viendo cerca el obstáculo capital para el logro de sus propósitos, apelarían a medios más suaves. La misma Rosa, pasado algún tiempo (y esto era lo que más trabajo costaba imaginar a su amor propio) le iría echando en olvido y se acomodaría a la postre a ser la esposa rica y sumisa de su tío el indiano. Y sin poner los pies fuera del lecho quedó resuelto de modo irrevocable que al día siguiente muy tempranito montaría a caballo para tomar en Lada el tren de la mañana.</p>
 				<p>Lo primero que hizo después de levantarse fue buscar a su tío para comunicarle aquel designio. Hallolo en la huerta totalmente abstraído en la contemplación melancólica de un pie de berza en que las orugas se habían ensañado. Andrés no anduvo con rodeos. Se lo anunció de golpe y porrazo.</p>
 				<p>—Tío, mañana me voy.</p>
@@ -1246,7 +1277,7 @@
 				<p>Y se entró otra vez en la cocina, sin hacer caso de Ángela que le instaba con muchas lágrimas y gemidos para que fuesen en busca de su hermana.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0308_chap15">
-				<head>XV</head>
+				<head xml:id="ne0308_head_015">XV</head>
 				<p>Corrieron buen espacio desalados, creyendo que los seguían. El que primero se cansó fue Andrés.</p>
 				<p>—Es inútil correr—dijo poniendo una mano en el hombro de Rosa para detenerla.—Nadie nos sigue.</p>
 				<p>Volvió la aldeana hacia atrás el rostro, donde aún se pintaban el terror y la zozobra, escuchó con atención un rato, y cerciorándose de que su padre no la perseguía, respiró libremente y se fue serenando. Mas al tropezar sus ojos con los de Andrés, turbose de nuevo y se llevó rápidamente las manos al pecho para subir el pañolón que se había echado al bajar a la cocina. No traía más que la camisa y una enagua. Al verse en aquella figura delante del joven sintió gran vergüenza. Ambos quedaron confusos un instante, sin saber qué hacer ni decir. Ella fue la que primero rompió el silencio con voz temblorosa.</p>
@@ -1328,7 +1359,7 @@
 				<p>La pobre Rosa, que había rechazado con denuedo las acometidas bruscas y groseras, no tuvo fuerzas para resistir este género de ataque tan diferente, tan nuevo para ella. Su naturaleza rústica y perezosa fue despertando, y al cabo se rindió. Se rindió, aturdida por aquella huida de la casa paterna, conmovida por las súplicas y los halagos tiernos del joven cortesano, embriagada por el aroma fresco del heno y el vaho espeso y caliente que subía del establo por los agujeros abiertos sobre el pesebre. Los copos de yerba crujientes y delicados, que rodeaban el nido abierto por sus cuerpos, fueron los cortinajes de su lecho nupcial. La luna, inmóvil en el espacio, que se veía por la ventana, su lámpara veladora.</p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0308_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0308_head_016">XVI</head>
 				<p>El sol había sucedido a la luna en el firmamento cuando los fugitivos despertaron. La luz entraba a torrentes por la ventana del pajar.</p>
 				<p>Andrés se incorporó el primero sobre su mullido lecho. Rosa, al abrir los ojos, se encontró con los del joven fijos en ella, y por un movimiento instintivo de vergüenza se tapó la cara con las manos. Él se las apartó suavemente, y le dio un tierno y prolongado beso de gratitud en los labios.</p>
 				<p>Ella se incorporó a su vez, y con semblante asustado dijo:</p>
@@ -1401,7 +1432,7 @@
 				<p>Así se hizo. Aquella misma tarde Andrés subió de nuevo a un coche del ferrocarril minero, pernoctó en la capital de la provincia, y con veinticuatro horas más de viaje se plantó en Madrid.</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0308_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0308_head_017">XVII</head>
 				<p>¡Qué gordo! ¡qué moreno! ¡qué cambiado está usted, amigo Heredia! ¿Dónde se ha puesto usted de esa manera?</p>
 				<p>Por donde quiera que iba, llegado a la corte, escuchaba estas o semejantes exclamaciones. Los amigos le abrazaban con efusión; las amigas admiraban su porte varonil, aunque no faltó quien dijo que venía más ordinario; porque los gustos son muy varios.</p>
 				<p>No hay para qué asegurar que las tales exclamaciones le sonaban bien. Durante algunos días gozó de la sorpresa de sus amigos y conocidos, paseando como en triunfo su rostro atezado por las tertulias y teatros. Entró de nuevo, y con gusto, en la vida animada de Madrid. Como traía provisión de salud, acudió presto a todos los parajes donde se rinde culto al placer, anudó antiguas relaciones, tornó a escribir en los periódicos y a leer poesías en los salones.</p>

@@ -1,22 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Sinfonía Pastoral</title>
-				<title type="sub">Novela de costumbres campesinas</title>
+				
 				<title type="short">Sinfonia</title>
-				<title type="idno">
-					<idno type="bne">XX2118292</idno></title>
+				
 				<author>
-					<idno type="bne">XX1035048</idno>
-					<idno type="viaf">61554068</idno>
-					<name type="short">Valdes</name>
-					<name type="full">Armando Palacio Valdés</name>
+					<name type="short" ref="#Valdes"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2543</measure>
@@ -139,14 +131,43 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0211</idno>
+						<idno type="cligs">ne0211</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="pdf">Cervantes Virtual, Fine Reader, <date when="2010">2010</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/sinfonia-pastoral-novela-de-costumbres-campesinas--0/
-					"/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcpr8c0"/>.</bibl>
-				<bibl type="print-source">Laviana, <date when="2008">2008</date></bibl>
-				<bibl type="edition-first"><date when="1931">1931</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Sinfonía Pastoral</title>
+					<title type="sub">Novela de costumbres campesinas</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2118292.html">XX2118292</idno>
+				</idno>
+				</title>
+					<author xml:id="Valdes">
+						<name type="full"><forename>Armando</forename> <surname>Palacio Valdés</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736 - IO 9737">IO 9736 - IO 9737</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118789252">118789252</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q645141/">Q645141</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1035048.html">XX1035048</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/61554068/">61554068</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="pdf">Cervantes Virtual, Fine Reader, <date when="2010">2010</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/sinfonia-pastoral-novela-de-costumbres-campesinas--0/      "/>, <ref target="http://www.cervantesvirtual.com/nd/ark:/59851/bmcpr8c0"/>.</bibl>
+					<bibl type="print-source">Laviana, <date when="2008">2008</date></bibl>
+					<bibl type="edition-first"><date when="1931">1931</date><idno source="k10plus" type="ppn" n="1113159022" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1113159022"/><idno source="k10plus" type="ppn" n="464734665" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464734665"/><idno source="k10plus" type="ppn" n="443077126" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=443077126"/><idno source="k10plus" type="ppn" n="082999961" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=082999961"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sinfonía pastoral</title>: 	<title type="sub">novela de costumbres campesinas</title> <date when="1931">1931</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1113159022" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1113159022"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sinfonía pastoral</title>: 	<title type="sub">novela de costumbres campesinas</title> <date when="1931">1931</date>, <publisher>Victoriano Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464734665" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464734665"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sinfonía pastoral</title>: 	<title type="sub">Palacio Valdés, A(rmando) ; Novela de costumbres campesinas</title> <date when="1931">1931</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="443077126" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=443077126"/> </bibl>
+						<bibl type="further-edition"><title type="main">Sinfonía pastoral</title>: 	<title type="sub">novela de costumbres campesinas</title> <date when="1931">1931</date>, <publisher>Suárez</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="082999961" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=082999961"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sinfonía pastoral</title> <date when="1948">1948</date>, <publisher>Ed. Fax</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="583720773" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=583720773"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Marta y María. José. Riverita. Maximina. El cuarto poder. La hermana San Sulpicio. La aldea perida. Los majos de Cádiz. La alegría del Capitán Ribot. Tristán o el pesimismo. Papeles del doctor Angélico. La hija de Natalia. Santa Rogelia. Sinfonía pastoral</title> <date when="1956">1956</date>, <publisher>Aguilar</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1144460557" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1144460557"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +180,14 @@
 				<p>La obra se resiente del exceso de idealización que es habitual en el tratemiento de este tema. El paso de una situación a otra por parte de la protagonista es demasiado radical y está impuesto "a priori" por el narrador. El ambiente y los cuadros descriptivos son similiares a lo de todas las novelas que se desarrollan en el mismo marco. El maniqueísmo propio de Palacio Valdés se evidencia una vez más. Frente al sano y bondadoso Telesforo, el novio del pueblo, Gustavo Manrique, el pretendiente cortesano, no puede ser otra cosa que un vicioso cazadotes. La aldea solo engendra virtud y la capital, podredumbre. Desde estos supuestos, difícilmente puede tratarse de un texto lúcido.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9736" key="IO 9736" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">7</term>
 					<term type="author.continent">Europe</term>
@@ -190,7 +219,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">autobiographical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
 					<term type="text.genre.subtitle">novela de costumbres</term>
 					<term type="text.genre.subtitle.source" resp="bne">novela de costumbres, novela de costumbres campesinas</term>
 					<term type="text.genre.subtitle.source.first.edition" resp="bne">novela de costumbres campesinas</term> 
@@ -221,13 +250,14 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-01-07" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
     <text>
     	<front>
     		<div>
     			<div>
-    				<head>DEDICATORIA</head>
+    				<head xml:id="ne0211_head_000">DEDICATORIA</head>
     				<p>A la memoria imperecedera de Luis Beethoven, autor de la página musical más deliciosa que ha sonado hasta ahora en el mundo.</p>
     			</div>
     			<div>
@@ -243,9 +273,9 @@
     	</front>
     	<body>
 <div type="part">
-	<head>Andante con moto</head>
+	<head xml:id="ne0211_head_001">Andante con moto</head>
 	<div n="1" type="chapter" xml:id="ne0211_chap1">
-	<head>I</head>
+	<head xml:id="ne0211_head_002">I</head>
 <p>Lo primero que Angelina pensó al abrir los ojos fue que mada-me Petit no le había enviado el vestido. Si no lo tenía listo antes de la tarde, imposible asistir a la Embajada de Austria. Rechazó con horror esta visión, se agitó entre las sábanas, hizo repetidas muecas de disgusto, dio algunas vueltas, y al fin, dejando escapar un suspiro, cerró de nuevo los ojos y se quedó dormida.</p>
 <p>Era una linda cabecita de negrísimos cabellos, un rostro pálido, suave y aniñado. Sin embargo, Angelina no era un <seg rend="italics">bebé: </seg>había cumplido ya diecinueve años.</p>
 <p>Al cabo de unos minutos se despertó otra vez, y la misma visión temerosa surgió delante de sus grandes ojos negros y expresivos. Su frentecita se arrugó, sus labios se alargaron con una mueca de profundo disgusto y sus lindas manos apretaron, convulsas, el embozo de la cama. No le faltaban, no, trajes de noche; tenía el de tafetán azul, el blanco crema. Angelina contó hasta siete. Todos ellos los había estrenado. ¡Qué desgracia! Dio otras cuantas vueltas, dejó escapar otro suspiro y otra vez quedó dormida.</p>
@@ -282,7 +312,7 @@
 <p>—¡Qué retontísima eres, Rufina!</p>
 </div>
 <div n="2" type="chapter" xml:id="ne0211_chap2">
-<head>II</head>
+<head xml:id="ne0211_head_003">II</head>
 <p>Ni se crea que aquellos besos significaban pura adulación. Rufina adoraba a la señorita, a pesar de sus despóticos caprichos, de sus enfados intempestivos y hasta de sus castigos. Porque también la castigaba alguna vez. Verdad que en pos de ellos solían venir sabrosas compensaciones, dinero, trajes, regalitos. Mas no era esto, no, hay que repetirlo, lo que a ella la ligaba, sino una verdadera pasión como la que muchas veces inspiran los niños a las personas sensibles.</p>
 <p>—Que me traigan el desayuno aquí.</p>
 <p>—¿La señorita no va al comedor?</p>
@@ -428,7 +458,7 @@
 <p>—Y tú me estás matando a mí, hija mía —murmuró el cuitado padre, saliendo de la habitación.</p>
 </div>
 <div n="3" type="chapter" xml:id="ne0211_chap3">
-<head>III</head>
+<head xml:id="ne0211_head_004">III</head>
 <p>Don Antonio Quirós era hijo de unos pobres aldeanos del valle de Laviana, en las montañas de Asturias. En este valle, que linda por el norte con los de San Martín del Rey Aurelio y Lan-greo y por el sur con el de Sobrescobio, radican siete parroquias. La primera, viniendo del norte, la de Tiraña. Se entra en ella por una estrecha cañada que se ensancha después un poco, no mucho. La segunda es la Pola, sede del Municipio y del Juzgado de primera instancia. Esta se halla asentada en el llano del valle, que es medianamente abierto, circundado de altas montañas y por medio del cual corre el río Nalón, el más caudaloso de Asturias, aunque allí cerca de su origen no es todavía muy abundante. Frente a la Pola, a la otra margen del río, están las parroquias de Carrio y Entralgo, la primera pobre y triste, la segunda rica y alegre, envuelta por frondosas pomaradas señoreando una vega fertilísima. En esta deliciosa aldea desemboca un riachuelo que se une allí mismo con el Nalón y se abre la cañada que conduce a la parroquia de Villoría, bañada por el antedicho riachuelo. Esta parroquia es la más populosa del concejo. En su llano, no muy extenso a orillas del río, está la población más numerosa, pero esparcidos por la falda de las montañas que separan Laviana del valle de Aller, como pintorescamente colgados, se ven numerosos blancos caseríos. Arbín, donde vivió el famoso helenista don César de las Matas; Fresnedo, Riomontán, las Meloneras, la Bra-ña, patrias respectivas de Nolo, Jacinto, Tanasio y otros héroes que se cantan en el poema novelesco titulado <seg rend="italics">La aldea perdida, </seg>que vio la luz hace ya bastantes años.</p>
 <p>Siguiendo el curso del Nalón río arriba, a la derecha, se encuentra a poco más de un kilómetro el pueblecito de Lorío, húmedo y sombrío, pues está harto arrimado a la fragosa sierra del Raigoso. Es patria de Toribión, el invencible guerrero que se canta igualmente en el citado poema. Casi enfrente de este lugar se halla el del Condado, última parroquia de Laviana. Es el más llano, el más soleado, el más atractivo tal vez de todo el valle. No tardaremos en hacer de él prolija mención.</p>
 <p>En el lugar de Villoría nació y vivió hasta los doce años el opulento capitalista don Antonio Quirós. Sus padres, labradores, cultivaban pocas tierras, y esas no propias, sino arrendadas al marqués de Camposagrado. El niño era despierto, fuerte, valeroso, y, harto de sufrir las palizas del maestro, manifestó empeño en partir para Cuba, como otros compatriotas. Sus padres, seducidos por la esperanza de verle tornar rico como otros y también por librarse de una boca más en la casa, cedieron a este deseo, y, pidiendo prestado el cortísimo precio del pasaje, le enviaron a Gijón para embarcar. Su madre fue la única persona que le acompañó a despedirle.</p>
@@ -451,7 +481,7 @@
 <p>Muchos disgustos le proporcionaba aquella criatura, no sólo por su precaria salud, sino también por su carácter caprichoso y fantástico. Desde que saliera del colegio de La Habana y llegara a Madrid se había mostrado a tal punto exigente, que nada parecía contentarla. Sus antojos eran increíbles. En vano el padre, intranquilo siempre a causa de su flaqueza, se esforzaba en complacerla; cuanto más la mimaba, sentía con horror que menos feliz la hacía. Angelina lloraba, se desesperaba sin motivo aparente. Quirós se estremecía cada vez que la encontraba presa de una de estas peligrosas rabietas. Hubiera dado su sangre por verla dichosa. ¿Para qué le servían, pues, sus millones?</p>
 </div>
 <div n="4" type="chapter" xml:id="ne0211_chap4">
-<head>IV</head>
+<head xml:id="ne0211_head_005">IV</head>
 <p>Pasada aquella terrible crisis y calmada su desesperación, Angelina ordenó que enganchasen la berlina-clarens, y se fue a dar una vuelta a la Castellana acompañada de la imprescindible Felicidad.</p>
 <p>Como aún no estaba abierto en aquella época el paseo de coches del Retiro, era la Castellana el único en que diariamente, por las tardes, la alta sociedad madrileña gozaba el singular deleite de contemplarse durante dos horas, esperando disfrutar del mismo atractivo por la noche en el teatro Real. Los coches de caballos se apretaban allí del mismo modo que hoy se aprietan los automóviles en el Retiro. El sentido de la vista gozaba exactamente lo mismo que hoy día, mas el del olfato no era tan dichoso. Los coches automóviles exhalan olores acres de gasolina que, aunque desagradables, no son nauseabundos y a más se dicen desinfectantes, mas los gases que despedían los centenares de caballos que allí se estrujaban, envolvían al mundo elegante en una clase de aroma nada grato a los sentidos. Aquellas damiselas que se apartaban con asco de su cocinera porque olía a cebolla, encontraban dulce y atractivo el perfumado ambiente de los traseros de sus caballos.</p>
 <p>Angelina, aturdida aún, medio deshecha por la grave aflicción que sobre ella había caído, se entregaba a una desmayada soñolencia, se dejaba mecer dulcemente por los muelles del carruaje, mientras su compañera Felicidad se entregaba a un legítimo y nada equívoco sueño. Apenas miraba por la ventanilla; no le interesaba el sombrero de la niña de Carriquiri, ni la <seg rend="italics">robe tailleur </seg>de la condesa de Villagonzalo, ni el <seg rend="italics">beau crépe de Chine</seg> de la Medinaceli. En aquellos momentos aciagos, el mundo había perdido para ella todo su atractivo.</p>
@@ -490,7 +520,7 @@
 <p>Así había llegado a los treinta y cinco años con el capital mermado, la salud también, pero enriquecida con un caudal de experiencia y un profundo conocimiento de la galantería en todas sus fases. Al fin comprendió, lo que, indefectiblemente, en cierto momento de la vida comprenden los jóvenes calaveras de la aristocracia, que un matrimonio ventajoso salvaría por completo su situación. Había visto a Angelina Quirós en la Castellana arrastrada por un magnífico tronco extranjero, el cochero y lacayo con flamante librea; la conoció después en una reunión del banquero don Nazario Carriquiri, tomó informes, se hizo presentar a ella, y comenzó el bloqueo, un sabio y concienzudo bloqueo. Nada de declaraciones prematuras, sino una amistad cada día más familiar, brindándose siempre como un afectuoso <seg rend="italics">Camarada</seg> con el cual se podrá reír y murmurar sin consecuencia alguna. Sin embargo, Angelina, que había recibido ya no pocas declaraciones de amor, esperaba la suya. Mas no acababa de llegar, y esto le causaba sorpresa y después una miajita de despecho. Gustavo Manrique logró interesarla. Porque, aparte de su arrogante figura y elegancia, poseía la retórica, las salidas imprevistas, las galanterías de estilo que tanto lisonjean a las mujeres. Aquella su actitud desembarazada, afectuosa y al mismo tiempo un tanto displicente, despertaba su curiosidad, y, sin darse de ello cuenta, la inquietaba.</p>
 </div>
 <div n="5" type="chapter" xml:id="ne0211_chap5">
-<head>V</head>
+<head xml:id="ne0211_head_006">V</head>
 <p>—¿Estás ya lista, Angelina?</p>
 <p>—Pasa, Felisa.</p>
 <p>Felisa Valgranda entró en el saloncito tocador, donde tres doncellas rodeaban a Angelina, dando los últimos retoques a su atavío, delante de un gran espejo. Felisa quedó extasiada un momento en presencia de aquella maravilla.</p>
@@ -556,7 +586,7 @@
 <p>—¡Márchate, tonta!</p>
 </div>
 <div n="6" type="chapter" xml:id="ne0211_chap6">
-<head>VI</head>
+<head xml:id="ne0211_head_007">VI</head>
 <p>Fueron días amargos los que siguieron a esta noche; amargos para Angelina, pero también para los que la rodeaban, sin excluir su mismo padre. Sus caprichos inverosímiles y su mal humor llegaron a hacerla insoportable. Naturalmente, sobre la pobre</p>
 <p>Rufina descargó con más fuerza la borrasca. Tanto hizo, tanto abusó, que Quirós, un día, perdiendo la paciencia, la reprendió ásperamente. Entonces hubo desmayo, ataque de nervios, crisis de lágrimas. Fue necesario llamar al médico. El pobre Quirós, arrepentido, aterrado, daba vueltas en torno de ella, la besaba, la pasaba la mano por la frente, le decía al oído mil palabras cariñosas.</p>
 <p>Felicidad, su dama de compañía, también padeció persecución. Angelina solía reír de las diatribas contra su yerno, hasta las provocaba maliciosamente delante de las doncellas para divertirse un rato. Mas ahora, una vez que la infeliz se atrevió a nombrar a Granizo, la señorita la atajó, encolerizada:</p>
@@ -684,7 +714,7 @@
 <p>Efectuóse el duelo a las primeras horas de la mañana en una finca de las cercanías de Madrid. El marqués de Valgranda era diestro en toda clase de deportes, gimnasia y esgrimidor conocido. Manrique lo sabía... No es singular el frío de la noche anterior. Pero el marqués de Valgranda tenía acumulada demasiada cólera dentro del cuerpo, y ésta, si perjudica mucho en todas las situaciones de la vida, en trances como el presente suele ser fatal. Atacó de tal modo furioso, que Manrique, amedrentado, no supo más que retroceder (romper, en términos técnicos) alargando la punta del sable sin parar los golpes. En el segundo asalto hizo lo mismo. El marqués, cada vez más enardecido e indignado por tan estúpida y cobarde defensa, tuvo la desgracia de precipitarse. Como su adversario tenía el brazo muy largo, en una de sus acometidas se clavó la punta del sable en el pecho. No penetró mucho; pero de todos modos bastó para que cayese a tierra. El duelo se suspendió. El médico que con ellos venía le hizo la primera cura, le transportaron al coche, y hubo de permanecer en la cama algunos días. Sus mismos testigos no se ocultaban después para decir que Manrique no había mostrado en el lance extraordinaria gallardía. Sin embargo, éste, al llegar a casa, escribió a Angelina una carta, que, por lo enfática y declamatoria, era digna de uno de los héroes románticos de las novelas del siglo pasado.</p>
 </div>
 <div n="7" type="chapter" xml:id="ne0211_chap7">
-<head>VII</head>
+<head xml:id="ne0211_head_008">VII</head>
 <p>Angelina quedó contristada. La herida del marqués, bien analizadas sus causas, podía atribuirse a ella. Sentía tristeza y remordimiento. Pero a estos nobles sentimientos no tardó en unirse otro menos recomendable. El admirado Manrique tomaba a sus ojos proporciones de un héroe, y ella, acompañándole en su estela luminosa, se consideraba una heroína.</p>
 <p>No le acaecía otro tanto al buen Quirós. Un honrado y pacífico trabajador no puede menos de mirar con sorpresa y desprecio esta clase de lances, que a sus ojos tienen su origen en la ociosidad. ¡Ah, diablo! Si estos señoritos tuviesen necesidad de ganarse el pan, no tendrían tiempo a representar tales comedias. Por eso, la antipatía que le inspiraba aquel sujeto creció notablemente.</p>
 <p>Angelina, sobresaltada, envanecida, extremadamente nerviosa en los días que siguieron a aquella aventura romántica, puso en conmoción a todos los habitantes de su casa. Sus caprichos, sus injusticias llegaron a tal punto, que a su mismo amoroso padre le costaba gran trabajo reprimir la cólera. Y con esto, el desgraciado veía que su idolatrada hija decaía paulatinamente, pesaba cada día menos, su palidez se acentuaba. Los tónicos que incesantemente le recetaban los médicos más afamados de Madrid de nada le servían. Había llegado a perder casi por completo el apetito. Se alimentaba de un modo tan deficiente, que, al cabo, no tendría más remedio que sucumbir. Quirós veía en lontananza la tisis, y para prevenirla, se rompía los sesos imaginando diferentes medios. Unos días pensaba llevarla a Alemania para consultar con alguna celebridad; otros, trasladar su residencia a Andalucía, clima menos peligroso; otros, hacer un viaje largo por el extranjero.</p>
@@ -739,7 +769,7 @@
 <p>Se estrecharon las manos con la misma imperturbable gravedad, y juntos salieron al despacho. El cardenal llamó a uno de sus familiares, y en su presencia Quirós se inclinó, reverente, ante el prelado y besó el anillo episcopal.</p>
 </div>
 <div n="8" type="chapter" xml:id="ne0211_chap8">
-<head>VIII</head>
+<head xml:id="ne0211_head_009">VIII</head>
 <p>Hondamente pensativo salió Quirós de aquella visita. Era un domingo. Las calles de la ciudad rebosaban de gente que marchaba en dirección de los paseos públicos, el Retiro, Recoletos, la Moncloa. Quirós siguió sin darse de ello apenas cuenta esta última corriente, y se encontró pronto entre los vetustos jardini-llos.</p>
 <p>Las palabras del cardenal martillaban en sus oídos: «Pobreza y trabajo, eso es lo que tu hija necesita.» Jamás había pensado en tan extraño remedio. Como la mayoría de los hombres, toda su vida había imaginado que la felicidad en este mundo consistía en procurarse comodidades y placeres. Y, sin embargo, él mismo era un testimonio de lo contrario, porque pudiendo gozar de todos los deleites que la fortuna proporciona, apenas probaba ninguno; comía los manjares más ordinarios, vestía modestamente, casi nunca montaba en sus coches, no iba a los teatros ni a los banquetes. ¿Entonces, qué? Sus millones de nada le servían. Lo mismo podía vivir con el sueldo de un modesto empleado. No obstante, él no se creía desgraciado, ni se lo había creído nunca en medio de un duro e incesante trabajo allá en la isla de Cuba.</p>
 <p>—No me aburría, porque no tenía tiempo para ello como esos señoritos holgazanes... o como esas señoritas —se dijo, pensando en su hija.</p>
@@ -761,7 +791,7 @@
 <p>—Sí, hija mía, sí —le contestó, anudándosele la voz en la garganta.</p>
 </div>
 <div n="9" type="chapter" xml:id="ne0211_chap9">
-<head>IX</head>
+<head xml:id="ne0211_head_010">IX</head>
 <p>Cuando se encontró sola en el coche con Vigil, le preguntó, ansiosamente:</p>
 <p>—¿Pero qué pasa, Manuel? Dime lo que pasa. Papá parece hallarse disgustado desde hace días. ¿Qué significa este viaje repentino? Me ha despedido como si fuese a separarse de mí por largo tiempo.</p>
 <p>—Yo nada sé, Angelina. He observado también que tu padre ha cambiado mucho de algunos días a esta parte. Parece que se halla bajo el peso de un gran disgusto; pero ya conoces su carácter reservado. Nada me ha dicho hasta ahora.</p>
@@ -832,9 +862,9 @@
 </div>
 </div>
     		<div type="part">
-<head>Adagio cantabile</head>
+<head xml:id="ne0211_head_011">Adagio cantabile</head>
     			<div n="10" type="chapter" xml:id="ne0211_chap10">
-    				<head>I</head>
+    				<head xml:id="ne0211_head_012">I</head>
 <p>Quirós había escrito a su hermano Juan una carta parecidos términos a la de su hija. Que estaba arruinado por consecuencia de ciertas operaciones desgraciadas, que había quedado con un pasivo de importancia, que necesitaba volver a La Habana y trabajar para saldarlo, que mientras tanto esperaba de su generosidad que mantuviese a su hija, guardándola a su lado y la hiciese vivir en la misma forma que ellos vivían, ni más ni menos.</p>
 <p>Juan era un buen hombre, y hubiera atendido al requerimiento de su hermano sin motivo alguno; pero tenía suficiente para estarle agradecido. Cuando Antón vino de Cuba, hacía unos cinco años, quiso visitar a Villoria, lugar donde se había criado. Su hermano Juan, que había esperado en la Pola, le acompañó en esta excursión; luego juntos fueron al Condado, y allí Antonio conoció a su cuñada Griselda y a sus niños Telesforo y Carmela, y en su compañía merendó unas truchas y un vasos de sidra.</p>
 <p>—Bueno —dijo Antonio a su hermano cuando estuvieron solos—. Y tú, ¿cómo estás de intereses?</p>
@@ -858,7 +888,7 @@
 <p>La pomarada y la huerta no estaban cercadas por muro de piedra, sino por fuerte barganal; esto es, por estacas de castaño o roble unidas por varas entretejidas de avellano. Muy próximo a la casa, el establo, capaz para cuatro vacas y otros tantos terneros; encima, el pajar, llamado en el país tenada. Adosado al establo había un cobertizo sostenido por toscas columnas de madera, en el cual se guardaba el carro, la leña, el arado y otros aperos de la labranza. Próximo al establo se alzaba un enorme montón bien alineado de abono. Todo esto se hallaba situado detrás de la casa, en el llamado pradín de arriba. Por delante, como ya se ha dicho, el antiguo camino áspero y estrecho, como son casi todos en la aldea, por dónde sólo puede pasar un carro tirado por vacas y las caballerías.</p>
 </div>
 <div n="11" type="chapter" xml:id="ne0211_chap11">
-<head>II</head>
+<head xml:id="ne0211_head_013">II</head>
 <p>Angelina montó silenciosa en el coche, y silenciosa se mantuvo largo rato. Las palabras no querían salir de su garganta. Su tío no osaba dirigirle la palabra; tenía la cabeza baja, y sólo alzaba los ojos para dirigirle una rápida y tímida mirada.</p>
 <p>Cuando se apearon en Noreña, se atrevió a decir:</p>
 <p>—Ahora debemos tomar el tren, que nos lleva hasta Sama.</p>
@@ -984,7 +1014,7 @@
 <p>Así batalló toda la noche. Al fin, cuando ya la luz del día penetraba por las rendijas de la ventana, rendida, aniquilada, se quedó dormida.</p>
 </div>
 <div n="12" type="chapter" xml:id="ne0211_chap12">
-<head>III</head>
+<head xml:id="ne0211_head_014">III</head>
 <p>Fue un sueño letárgico, doloroso, que semejaba la muerte. Despertó despavorida, sin sentir ruido alguno, y dijo en voz alta:</p>
 <p>—Rufina, tonta, ¿por qué no vienes?</p>
 <p>Pero inmediatamente se dio cuenta de dónde estaba, y volvió a sentir un golpe en el pecho.</p>
@@ -1049,7 +1079,7 @@
 <p>—Para mí lo será siempre. El señorío no lo da el dinero, sino la crianza.</p>
 </div>
 <div n="13" type="chapter" xml:id="ne0211_chap13">
-<head>IV</head>
+<head xml:id="ne0211_head_015">IV</head>
 <p>Con pie ligero y corazón más ligero aún se restituyó Angelina a la casa de sus tíos. Al entrar vio a su tía Griselda arrimada al lar, quien, al sentir pasos, volvió la cabeza.</p>
 <p>—Ya sabía que estabas en casa del señor cura. Por eso no me he apurado al no hallarte aquí.</p>
 <p>—¿Cómo sabía usted que estaba en casa del señor cura?</p>
@@ -1135,7 +1165,7 @@
 <p>Con los ojos abiertos, en la oscuridad se puso a rezar fervorosamente. Transcurrieron los minutos, transcurrió una hora, y, al cabo, rezando, la niña de Quirós se quedó dormida.</p>
 </div>
 <div n="14" type="chapter" xml:id="ne0211_chap14">
-<head>V</head>
+<head xml:id="ne0211_head_016">V</head>
 <p>Carmela, la hermosa novilla de los grandes ojos, penetró en su cuarto ya bien entrado el día.</p>
 <p>¡Arriba, Angelina! Los hombres se han marchado hace un rato.</p>
 <p>Angelina abrió los ojos y sonrió a su prima. El sueño había sido tranquilo, reparador. Se vistió con presteza su traje medio aldeano, hizo las abluciones de costumbre y bajó a la cocina, donde ya estaba su tía Griselda aguardándola. Llevaba en la mano el relojito de oro y brillantes y dos sortijas que de Madrid traía puestas.</p>
@@ -1209,7 +1239,7 @@
 <p>Como los segadores habían previsto, el prado quedó listo antes que sonara el <seg rend="italics">ángelus.</seg> Bajaron todos al camino con la guadaña sobre el hombro, a modo de fusil, y cada cual se fue a comer a su casa, excepto Pinón de la Fombermeya, que vino a la del tío Juan.</p>
 </div>
 <div n="15" type="chapter" xml:id="ne0211_chap15">
-<head>VI</head>
+<head xml:id="ne0211_head_017">VI</head>
 <p>Angelina comió con apetito una magra de jamón que le había preparado su tía y una taza de leche con pan migado. Aunque la familia comía ordinariamente borona, Griselda amasaba de cuando en cuando pan de escanda, que era para ellos un verdadero regalo. Angelina miraba la borona con temor y repugnancia.</p>
 <p>Mientras comían, hablaron de la tarea que les esperaba. Había sobre el prado lo menos veinte carros de hierba, que era necesario traer en el menos tiempo posible. Aquella tarde podrían acarrear unos pocos; pero era necesario dos días para meterlos todos.</p>
 <p>—Si es que no llueve —manifestó el tío Juan, gravemente.</p>
@@ -1264,7 +1294,7 @@
 <p>Cuando llegó la noche cayó como un tronco sobre la espinosa cama, y no despertó hasta bien entrada la mañana.</p>
 </div>
 <div n="16" type="chapter" xml:id="ne0211_chap16">
-<head>VII</head>
+<head xml:id="ne0211_head_018">VII</head>
 <p>Cuando bajó a la cocina, no halló más que a su tía Griselda.</p>
 <p>—¿Dónde están los otros?</p>
 <p>—¡Anda, pues no hace rato que se marcharon al prado!</p>
@@ -1308,7 +1338,7 @@
 <p>—¡Eso! Ahora y siempre sea lo que Dios quiera —corroboró, con firmeza, Griselda.</p>
 </div>
 <div n="17" type="chapter" xml:id="ne0211_chap17">
-<head>VIII</head>
+<head xml:id="ne0211_head_019">VIII</head>
 <p>Al día siguiente amaneció lloviendo. Era jueves, día de mercado en la Pola; y Griselda, a pesar de la lluvia, se cubrió con un fuerte capotón, que para estos casos guardaba, y con un paraguas colosal, que semejaba una tienda de campaña, se puso en marcha.</p>
 <p>—Pero tía —exclamaba, riendo, Angelina—, ¿es que tiene usted fuerza para llevar ese armatoste en la mano hasta la Pola?</p>
 <p>No se cansaba la niña de admirar aquel inmenso artefacto de burda tela encarnada que podía cobijar una familia.</p>
@@ -1342,7 +1372,7 @@
 <p>—¡Bah! Un sucio como tantos otros.</p>
 </div>
 <div n="18" type="chapter" xml:id="ne0211_chap18">
-<head>IX</head>
+<head xml:id="ne0211_head_020">IX</head>
 <p>Transcurrido un mes, Angelina pensó con sorpresa que no era tan desgraciada como había creído serlo cuando puso el pie en casa de su tío.</p>
 <p>Después de la faena de la hierba vino la del maíz. Había que <seg rend="italics">arrendarlo.</seg> En Asturias cuando levanta un palmo del suelo se le <seg rend="italics">salla,</seg> esto es, se remueve la tierra con la azada; cuando levanta algo más se le <seg rend="italics">arrienda,</seg> esto es, se aísla cada planta arrancando las que estorban y colocando en torno de las que quedan un mon-toncito de tierra.</p>
 <p>Angelina quiso bajar a la vega con ellos: el tío Juan, Telesforo, Carmela y Pinón de la Fombermeya, que acudía como jornalero. Con la voluntad ardiente y obstinada que siempre la había caracterizado, se empeñaba a todo trance en hacer como los demás. Después de verlos trabajar, tomó una azada y principió a imitarlos; mas, ¡ay!, la azada era harto pesada para ella, y a los pocos momentos se vio obligada a dejarla caer al suelo. Al dirigir una mirada a la tierra colindante donde trabajaban el tío Atilano, su mujer, Sinforosa y un vecino, sus ojos sorprendieron en los de Sinforosa una sonrisa burlona, y se echó a llorar. Su tío Juan y Carmela vinieron a consolarla.</p>
@@ -1412,7 +1442,7 @@
 	<p>Y otras obras maestras del repertorio clásico nacional.</p>
 </div>
 <div n="19" type="chapter" xml:id="ne0211_chap19">
-<head>X</head>
+<head xml:id="ne0211_head_021">X</head>
 <p>Pocos días después, hallándose, igualmente, sentadas ambas primas en la pomarada antes del mediodía, sintieron el trote de un caballo por el camino pedregoso. No tardó en presentarse ante ellas el jinete, que era un gallardo mancebo un poco rústico, entre señorito y aldeano. Vestía chaqueta de pana gris, camisa de cuello planchado, chalina de seda, sombrero ancho de fieltro y botas de montar.</p>
 <p>—Buenos días, Carmela.</p>
 <p>—Buenos días, Román.</p>
@@ -1455,9 +1485,9 @@
 </div>
     		</div>
 <div type="part">
-	<head>Scherzo</head>
+	<head xml:id="ne0211_head_022">Scherzo</head>
 	<div n="20" type="chapter" xml:id="ne0211_chap20">
-			<head>I</head>
+			<head xml:id="ne0211_head_023">I</head>
 <p>Pocos minutos antes del mediodía sé hallaba en el corredor de la rectoral sentado y haciendo su rezo obligado el párroco, don Tiburcio. A su lado estaba la mesa y sobre ella los perniciosos proyectiles destinados a rechazar las alevosas incursiones de los piratas alados. Tenía el breviario, por el cual leía, en la mano, y en la cabeza un bonete medianamente grasiento. De cuando en cuando se lo quitaba y se santiguaba, según lo iban exigiendo las prescripciones del rezo.</p>
 <p>Aunque parecía devotamente enfrascado, con el rabillo del ojo no perdía de vista las idas y venidas de un insolente mirlo, que allá a lo lejos fingía no pensar en él, aunque, en realidad, estuviese atento a todos los movimientos del cura. Los higos y las cerezas ya no existían; pero quedaba un hermoso ciruelo literalmente cuajado de grandes, olorosas y sabrosísimas claudias. Era necesario velar por su integridad. Don Tiburcio velaba de día y una parte de la noche.</p>
 		<p>El mirlo, como quien no quiere la cosa, pero queriéndola muy de veras, se polca de los patoiba aproximando al corredor, aunque simulando que la fruta le tenía sin cuidado. El párroco, cada vez más inquieto, levantaba la cabeza y le clavaba una severa mirada. El mirlo, desde lo alto de otro árbol, también le miraba sin tanta severidad. Ambos se entendían. No se le ocultaban a don Tiburcio las intenciones del mirlo por más que las disimulase. El mirlo sabía perfectamente cómo las gastaba el párroco.</p>
@@ -1512,7 +1542,7 @@
 <p>Angelina se alejó sin comprender, aunque era inteligente.</p>
 </div>
 <div n="21" type="chapter" xml:id="ne0211_chap21">
-<head>II</head>
+<head xml:id="ne0211_head_024">II</head>
 <p>Desde muchos días antes, Angelina y Carmela se preparaban para la romería de San Roque, en Villoria. Para Angelina tenía un doble atractivo. No conocía la aldea donde había nacido su padre y habían vivido todos sus antepasados. Sentía curiosidad y a la vez la emoción respetuosa que nos inspiran los antiguos lares.</p>
 <p>Amaneció un día espléndido de las postrimerías de agosto. Toda la mañana emplearon las dos primas en arreglar su atavío. Angelina vistió la falda de merino negra con delantal de seda verde, el justillo de seda roja, el pañolón de burato anudado por detrás a la cintura, y el pañolito de seda encarnado, atado con gracioso nudo sobre la cabeza al estilo aldeano, doble collar de corales en la garganta, zapato negro descotado y media blanca. Dos pares de zapatos le había hecho Laureano, el zapatero de la Pola, unos descotados y otros abotinados. La tía Griselda se empeñó en que se colgase de las orejas los pendientes de zafiro que había traído en el viaje. Ella se resistía; pero no hubo más remedio que obedecer. Carmela vestía de un modo igual, salvo los pendientes.</p>
 <p>Cuando hubieron comido se prepararon a partir.</p>
@@ -1654,7 +1684,7 @@
 <p>—¡Dios te lo conserve, hija mía! —exclamó Griselda, que había llegado detrás de Carmela.</p>
 </div>
 <div n="22" type="chapter" xml:id="ne0211_chap22">
-<head>III</head>
+<head xml:id="ne0211_head_025">III</head>
 <p>Entraba el otoño. Los paisanos cortaban el maíz y colocaban el narvaso con sus mazorcas en pequeños haces piramidales que llamaban <seg rend="italics">cucas</seg> para que se secase. Carmela y Angelina ayudaban con placer a esta suave tarea.</p>
 <p>En esta época del año es cuando los paisanos hacen algún dinero vendiendo los frutos que no consumen, las crías de sus ganados y cochinos. El tío Pacho de la Ferrera debía vender dos cerditos, y su compinche, el tío Leoncio de la Reguera de Arriba, un jato de pocos meses. Ambos se concertaron para ir juntos un jueves a la Pola.</p>
 <p>El mercado de la Pola se componía, y es posible que aún se componga, a más de los paisanos que llevan a vender sus productos, de tenderos ambulantes. Estos recorren sucesivamente durante la semana varios pueblos de la provincia, no muy lejanos unos de otros; los lunes en Sama de Langreo, los martes en Pola de Siero, los jueves en Pola de Laviana, los viernes en Ca-bañaquinta, capital del concejo de Aller; los sábados en Mieres. Transportaban su mercancía sobre recios mulos. En las primeras horas de la mañana arman sus tendezuelas portátiles en la plaza, abren sus fardos y extienden los paños y telas sobre toscos tableros.</p>
@@ -1690,7 +1720,7 @@
 <p>El salto de Pin de la Fombermeya es en Laviana tan famoso como el del capitán Alvarado en Méjico.</p>
 </div>
 <div n="23" type="chapter" xml:id="ne0211_chap23">
-<head>IV</head>
+<head xml:id="ne0211_head_026">IV</head>
 <p>El tío Pacho de la Ferrera y el tío Leoncio de la Reguera de Arriba habían salido, como se ha dicho, en cuanto se inició la bulla. Una vez en la carretera, empezaron a caminar despacio, tranquilamente, como hombres a quienes importaba poco llegar más tarde o más temprano a sus casas.</p>
 <p>El tío Pacho sacó un cigarro del estanco, negro como un tizón, y lo picó con toda calma. Con el mismo sosiego molió la picadura entre las callosas palmas de la mano, sacó un librillo, tomó un papel y lió un cigarrillo, o para hablar con más propiedad, un gordo cigarro, pues los cigarrillos de los paisanos no se parecen a los egipcios que fuman nuestras señoritas. Lo puso en la boca, e inmediatamente sacó el pedernal, el eslabón y la yesca, y se puso a martillear para encenderla.</p>
 <p>Esta tarea de sacar lumbre con el eslabón y la piedra es una operación delicada, y para los paisanos casi tan grata como el fumar. El tío Pacho daba un golpe con el eslabón y se paraba, mirando a su compadre.</p>
@@ -1770,7 +1800,7 @@
 <p>—Hasta mañana, Pacho.</p>
 </div>
 <div n="24" type="chapter" xml:id="ne0211_chap24">
-<head>V</head>
+<head xml:id="ne0211_head_027">V</head>
 <p>Al domingo siguiente, el cura del Condado leyó durante la misa las primeras amonestaciones. Tanto Carmela como Angelina quedaron sorprendidas, porque nada sabían. Al salir de la iglesia se emparejaron con Conrada.</p>
 <p>—¿Cómo lo tenías tan callado, Conrada? —le preguntó Angelina.</p>
 <p>—Tampoco yo lo supe hasta hace tres días —contestó, sonriendo, la moza.</p>
@@ -1879,9 +1909,9 @@
 </div>
 	</div>
 <div type="part">
-<head>Allegro ma non troppo</head>
+<head xml:id="ne0211_head_028">Allegro ma non troppo</head>
 	<div n="25" type="chapter" xml:id="ne0211_chap25">
-		<head>I</head>
+		<head xml:id="ne0211_head_029">I</head>
 <p>Si como afirman los psicólogos, nuestro ser espiritual contiene multitud de dobleces, en cada uno de los cuales se esconde uno de nuestros antepasados, no ofrece duda que en el alma de Angelina Quirós se escondían veinte generaciones de aldeanos. Sólo así puede explicarse la rápida adaptación a la vida campesina de aquella niña, nacida y criada en medio de todos los refinamientos y esplendores de la ciudad. Porque fue pronto más aldeana que sus mismos primos, Telesforo y Carmela. Estos cumplían con las tareas de la labranza y pastoreo por deber o necesidad; pero Angelina presto empezó a cumplirlos por vocación. El cultivo del maíz, la hierba de los prados, las manzanas, las avellanas, las castañas, todo logró interesarle vivamente. Si no llovía, escrutaba con ojos ansiosos el cielo, temblando por la cosecha del maíz o las alubias. Si llovía demasiado, lanzaba resoplidos de cólera. Y si su tío Juan contemplaba con ojos codiciosos la mitad del prado de Entrambasriegas que le faltaba, con no menor apetito lo miraba Angelina cada vez que iba por allí.</p>
 <p>Pero sobre todas las cosas le interesaba el ganado. Fue su pasión a los pocos meses de residir en el Condado. Se pasaba horas enteras en el establo contemplando aquellas pacíficas bestias, escuchando el sordo rumiar de sus dientes, acariciándolas, sirviéndolas ella misma el pienso de maíz, subiendo a la tenada para llenar de hierba el pesebre. Se empeñó en aprender a mazar la leche; le costó esfuerzos increíbles, se fatigaba, dejaba caer el odre rabiosa contra sí misma, saltándole alguna vez las lágrimas. Pero, al fin, lo consiguió. El primer día que, mazando, sintió en el odre el peso del pegote de manteca, subieron los colores a su rostro como una madre que siente por primera vez en su vientre el latido del hijo. Sacó la manteca, la hizo una bola y la presentó a sus tíos casi llorando de alegría. Estos se hallaban de ella tan complacidos que la mimaban a porfía. Sobre todo el tío Juan, estimando su afición a los trabajos campestres, la tomó por confidente de sus alegrías y temores.</p>
 <p>—¿Qué te parece, Angelina, cortaremos este pomar, que está podrido?</p>
@@ -1941,7 +1971,7 @@
 <p>—Padre, Angelina es capaz de ordeñar hoy tan guapamente como usted mismo.</p>
 </div>
 <div n="26" type="chapter" xml:id="ne0211_chap26">
-<head>II</head>
+<head xml:id="ne0211_head_030">II</head>
 <p>«He aquí el invierno que entorpece los brazos de los labradores. Durante los fríos del invierno gozan el fruto de sus trabajos y se convidan los unos a los otros a comidas alegres. El invierno les invita a la alegría; el invierno aleja de sus corazones los cuidados.»</p>
 <p>Así cantaba hace dos mil años Virgilio en su inmortal poema</p>
 <p><seg rend="italics">Las Geórgicas.</seg></p>
@@ -1974,7 +2004,7 @@
 <p>Esta vez el mundo perdió algo; perdió un admirable gaitero.</p>
 </div>
 <div n="27" type="chapter" xml:id="ne0211_chap27">
-<head>III</head>
+<head xml:id="ne0211_head_031">III</head>
 <p>Llega la primavera. La nieve comienza a derretirse en lo alto de las montañas, corre por sus faldas y baña los prados y las vegas. Los labradores sacan de sus cobertizos o debajo de los hórreos los arados y se disponen a abrir las entrañas de la madre tierra y fecundarla.</p>
 <p>Angelina se sentía enervada por la vida sedentaria a que la obligaban las lluvias del invierno. Amaba el aire libre, y, sobre todo, amaba los ejercicios corporales. Era para ella pesada y aburrida tarea la del coser o planchar cuando su tía Griselda se lo ordenaba. En cambio, cuando el tío Juan reclamaba su ayuda para cualquier faena campestre, se alegraba como un pajarito a quien le abren la jaula. Por eso cuando aquél se dispuso a labrar las tierras de la vega, le rogó encarecidamente que la llevase consigo en vez de Carmela. No hubo en ello inconveniente, porque ésta, menos activa, se avenía muy bien a quedarse en casa.</p>
 <p>Era de ver a aquella linda mocita caminar detrás del arado, con su mandil doblado por la punta, lleno de maíz, que lentamente iba depositando en los surcos abiertos por el tío Juan. Este empuñaba el arado. Telesforo marchaba delante de las vacas con la aguijada en la mano. Angelina cerraba la marcha.</p>
@@ -2016,7 +2046,7 @@
 <p>Quirós obedeció.</p>
 </div>
 <div n="28" type="chapter" xml:id="ne0211_chap28">
-<head>IV</head>
+<head xml:id="ne0211_head_032">IV</head>
 <p>Llegó el tiempo de la siega, que para Angelina constituía una verdadera fiesta. Pasar todo el día en los prados esparciendo la hierba, aspirando su delicioso aroma, reír, cantar, dar vaya a los segadores y volver a casa montada sobre el carro, ¡qué gran placer! Pero este año no necesitaba que la aupasen. Ponía el pie en la rueda, y de un brinco se montaba sobre él. Ni tampoco se agarraba fuertemente a la soga; por el contrario, se complacía en hacer volatines, mostrando su agilidad y firmeza. Cuando atravesaba por el pueblo se ponía repentinamente en pie, y desde lo alto gritaba:</p>
 <p>—¡Hurra! ¡Viva el Condado!</p>
 <p>—¡Angelina, no hagas eso, que te puedes caer! —le gritaba su tío Juan.</p>
@@ -2066,7 +2096,7 @@
 <p>—¡Sí, por cierto!—Ad <seg rend="italics">Deum qui laetificat juventutem meam.</seg></p>
 </div>
 <div n="29" type="chapter" xml:id="ne0211_chap29">
-<head>V</head>
+<head xml:id="ne0211_head_033">V</head>
 <p>Don Indalecio González (alias el <seg rend="italics">Costalero)</seg> era hijo de unos pobrísimos labradores del Condado. Había ido a Madrid de chico, y sirvió como criado en una taberna del barrio de Lavapiés. Con algunos ahorrillos que pudo juntar y con la ayuda de un cliente de su amo, abrió otra taberna en la calle del <seg rend="italics">Tribulete.</seg> Le fue bien. El mozo era avisado y obsequioso. Casó con la hija de una portera de la misma calle, llamada Celedonia, y en algunos años consiguió labrar un capitalito, que si en Madrid significaba poco, en el Condado era una gran riqueza, treinta o cuarenta mil duros en suma. Entonces decidió traspasar la taberna, bien acreditada, y restituirse a su pueblo natal y disfrutar allí de su dinero y darse vida de gran señor.</p>
 <p>Esto era principalmente lo que ambicionaba su respetable consorte, aquella chulapa de Lavapiés nombrada Celedonia. Con viva satisfacción y todo el aparato que les fue posible, arribaron un día los antiguos taberneros al Condado. Edificaron una casita de poco coste, pero que sin duda era la mejor del lugar. Hasta se dijo que tenía retrete inodoro.</p>
 <p>Celedonia comenzó a darse un tono escandaloso. Iba a misa con mantilla de encaje, rosario de cuentas de ópalo y devocionario con canto dorado. Se hacía siempre llamar señora por cuantos se le aproximaban, y cuando iba a la Pola se ponía un sombrero inverosímil, cargado de flores y frutas contrahechas, que era la admiración y el pasmo de aquellos sencillos aldeanos.</p>
@@ -2123,7 +2153,7 @@
 <p>—Mira tú, Angelina, te pido que no dejes de calcarle algunos buenos coscorrones en la calabaza a ver si le entra mayormente algo de lo que tú sabes.</p>
 </div>
 <div n="30" type="chapter" xml:id="ne0211_chap30">
-<head>VI</head>
+<head xml:id="ne0211_head_034">VI</head>
 <p>A pesar de esta autorización, y aun puede añadirse este aplauso, no quiso pegarle más. Por el contrario, se mostró con su ineptitud más tolerante, más suave en las lecciones, con mucha mayor paciencia. Parecía que la misma facultad que se le había concedido le ataba las manos. Sin embargo, un día que le llamó desde la solana repetidas veces sin que le hiciese caso, cuando al fin subió le sacudió otro bofetón. Es decir, que por las lecciones no le pegaba, aunque sí por la desobediencia.</p>
 <p>Pero es el caso que a medida que le iba enseñando un poco de Gramática, de Aritmética y Geografía, Angelina iba sintiendo hacia aquel muchacho una ternura cada vez más viva. Era algo como amor maternal, el sentimiento más hondo y permanente del alma femenina. Le proporcionaba en la casa todas las comodidades que podía, se preocupaba de su ropa, disimulaba sus faltas y le defendía siempre que el padre o la madre le cogían en alguna. Por eso, un día en que el majadero se olvidó nada menos que de llevar las vacas al agua y su padre le administró una paliza, Angelina lloraba a lágrima viva.</p>
 <p>—¿Por qué lloras, tonta? —le decía Carmela—. ¿No le pegas tú también?</p>
@@ -2231,7 +2261,7 @@
 <p>El viejo se marchó vociferando, seguido de su hija, y Angelina, con Foro, se volvieron a casa comentando el lance.</p>
 </div>
 <div n="31" type="chapter" xml:id="ne0211_chap31">
-<head>VII</head>
+<head xml:id="ne0211_head_035">VII</head>
 <p>La ira de aquel duro y menudo paisanuco fue creciendo: la enemiga entre ambas familias se hizo ostensible. Ninguno de la casa del tío Atilano saludaba a los de los Campizos. Juan y Griselda quedaron sorprendidos de tan repentina hostilidad; les parecía que no era motivo suficiente el rompimiento de las relaciones amorosas entre Telesforo y Sinforosa. Ellos también las veían con agrado, y no hallaron plausible la conducta de su hijo; pero jamás se les ocurrió que estuviesen obligados a formar su inclinación. Y cuando éste les hizo saber las razones que le movían a desistir de su noviazgo, los inocentes padres las creyeron y hasta las juzgaron bien fundadas. Estaban lejos de sospechar la verdadera causa.</p>
 <p>Una tarde, después de comer, fue Angelina a llevar las vacas al prado de la Fontinica, donde aún quedaba bastante pación. Al salir de casa se le unió Telesforo.</p>
 <p>—¿Dónde vas? —preguntó Angelina, con aspereza.</p>
@@ -2330,9 +2360,9 @@
 </div>
 </div>
 	<div type="part">
-<head>Presto finale </head>
+<head xml:id="ne0211_head_036">Presto finale </head>
 		<div n="32" type="chapter" xml:id="ne0211_chap32">
-			<head>I</head>
+			<head xml:id="ne0211_head_037">I</head>
 <p>Dormitaba Angelina, según su costumbre, después de comer, bajo un árbol de la pomarada, cuando su prima Carmela la despertó con altas voces.</p>
 <p>—¡Angelina, Angelina!</p>
 <p>Se incorporó vivamente.</p>
@@ -2414,7 +2444,7 @@
 <p>—¡En fin, Dios dirá! Vamos a deshacer ese poco de maíz para llevarlo al molino.</p>
 </div>
 <div n="33" type="chapter" xml:id="ne0211_chap33">
-<head>II</head>
+<head xml:id="ne0211_head_038">II</head>
 <p>Los marqueses de Campollano, próceres asturianos, habitaban un viejo palacio situado en una de las calles más viejas del viejo Madrid. El marqués era un gigante bonachón; la marquesa, una beata desmirriada, a quien, por su intolerancia en todo lo referente a las creencias y al culto, los mismos aristócratas sus amigos le habían puesto por mote <seg rend="italics">La previa censura.</seg></p>
 <p>Se hallaban ambos tomando café después del almuerzo en un oscuro, vetusto, gabinete de su lóbrega mansión, y les acompañaba nuestro antiguo conocido Gustavo Manrique, pariente suyo.</p>
 <p>Aunque el marqués era asturiano, la marquesa procedía de Galicia, y era prima hermana de la madre, ya difunta, de Manrique. Este les trataba con respetuosa intimidad, y es posible que abrigase alguna esperanza de heredarles, pues no tenían hijos.</p>
@@ -2465,7 +2495,7 @@
 <p>Antes de poner el pie en la calle tenía ya trazado su plan.</p>
 </div>
 <div n="34" type="chapter" xml:id="ne0211_chap34">
-<head>III</head>
+<head xml:id="ne0211_head_039">III</head>
 <p>Así que llegó a casa, arregló su maleta, metiendo lo necesario para unos días, dio algunas instrucciones a su criado, envió por una guía de ferrocarriles, y, bien enterado de la salida del tren de Asturias, cuando llegó el momento avisó un coche de punto, montó en él y se trasladó a la estación del Norte.</p>
 <p>Al llegar de mañana a Oviedo, cuando hubo descansado y vestido adecuadamente, preguntó por el edificio del Gobierno Militar, y allá encaminó los pasos. La única persona de importancia que recordaba conocer en la ciudad era el general Suárez, comandante general de la provincia. Aunque había entre ellos alguna diferencia de edad, se tuteaban, eran muy amigos, camaradas del casino y asiduos tertulianos.</p>
 <p>—¡Gustavito, tú por aquí! —exclamó el general—. ¿Qué viento te trae?</p>
@@ -2491,7 +2521,7 @@
 <p>—Ni yo contigo, mi dulce Angelina.</p>
 </div>
 <div n="35" type="chapter" xml:id="ne0211_chap35">
-<head>IV</head>
+<head xml:id="ne0211_head_040">IV</head>
 <p>Sólo diez días habían transcurrido desde la llegada de Manrique, cuando se recibieron en el Condado dos cartas de la isla de Cuba, una dirigida a Juan Quirós y otra a su sobrina Angelina. La primera decía:</p>
 <floatingText><body><div type="section"><p>«Querido hermano: Ha llegado, gracias a Dios, el momento de descubrirte la verdad. Yo no he estado jamás arruinado. He fingido estarlo para salvar a mi hija de una muerte cierta. Siguiendo los consejos de quien sabe más que yo, la envié contigo para que se creyese pobre y trabajase y se alimentase como vosotros. El resultado ha sido sorprendente, puesto que mi adorada hija goza de perfecta salud; se ha transformado por completo y se manifiesta más alegre y feliz que nunca lo ha sido. A Dios y a vosotros debo esta dicha tan grande. Adjunto una letra importante pesetas veinte mil contra la casa Herrero, de Oviedo. Cuando llegue a ésa tendrás veinte mil duros más por lo bien que os habéis portado con mi querida niña. Dentro de pocos días pienso embarcar para la península. Hasta que nos veamos, pues, te abraza tu agradecido hermano,</p>
 <p>Antonio.»</p>
@@ -2542,7 +2572,7 @@
 <p>Y al mismo tiempo tomó su mano y la besó efusivamente repetidas veces, cerrando los ojos como si no pudiese con la emoción que le embargaba.</p>
 </div>
 <div n="36" type="chapter" xml:id="ne0211_chap36">
-<head>V</head>
+<head xml:id="ne0211_head_041">V</head>
 <p>Sucedió que Juan envió a la Pola a su hijo Telesforo con un recado. En Puente de Arco se le unió Ramón de las Argayadas, aquel famoso prestamista, providencia y raposo al mismo tiempo del valle de Laviana, que también iba a la Pola.</p>
 <p>—¡Sea enhorabuena, Foro, sea muy enhorabuena! —le dijo, poniéndole una mano sobre el hombro—. ¡Vaya una lotería que os ha caído en los Campizos!. Tú y tu padre vais a ser ricos, según parece; pero esa rapaza que tenéis en casa es una millonaria. Creo que no se pueden contar con los dedos los millones que tiene su padre.</p>
 <p>Telesforo se encogió de hombros.</p>
@@ -2604,7 +2634,7 @@
 <p>Juan les notificó en pocas palabras lo que ocurría, que Teles-foro no estaba preso porque el herido no había querido dar parte, y que se había marchado a Oviedo para tomar el tren de Madrid y Sevilla.</p>
 </div>
 <div n="37" type="chapter" xml:id="ne0211_chap37">
-<head>VI</head>
+<head xml:id="ne0211_head_042">VI</head>
 <p>La situación de Angelina era por demás tan difícil como triste a la hora presente. Amaba entrañablemente a aquella familia y era amada de ella; amaba también a su primo, y no podía menos de darle la razón. Mas, por otra parte, Gustavo era su novio, su prometido, y yacía mal herido en la cama. ¿Qué hacer en tan críticas circunstancias?</p>
 <p>La más profunda tristeza reinaba en la casa de Juan Quirós. Griselda no cesaba de llorar. Carmela andaba huída por la casa y evitaba las ocasiones de hablar con su prima. El tío Juan se mostraba silencioso y cejijunto.</p>
 <p>La pobre Angelina no sabía qué hacer, ansiaba ardientemente que llegara su padre y la sacara de aquel compromiso. Secretamente, esto es, sin que la familia se percatase, enviaba todos los días a saber de Manrique. Este parecía que iba mucho mejor. Pero un día le envió algunas palabras escritas con lápiz: «Estoy mejor, pero ardo en deseos de verte. Ven, aunque no sea más que un instante.»</p>
@@ -2678,7 +2708,7 @@
 <p>—Es igual. Aunque no te cases con él, Angelina, basta que me devuelvas a mi hijo para que no lo olvide jamás.</p>
 </div>
 <div n="38" type="chapter" xml:id="ne0211_chap38">
-<head>VII</head>
+<head xml:id="ne0211_head_043">VII</head>
 <p>En efecto, unos cuantos días después llegó Telesforo de Sevilla. La escena que se desarrolló fue conmovedora. Griselda se colgó a su cuello y no se hartaba de besarle. El chico se mostró con sus padres expansivo y cariñoso, pero tímido y confuso con Angelina. Esta, enojada, le dijo:</p>
 <p>—Oye, Foro, me parece que voy a verme obligada a darte unas bofetadas como antes para que te despabiles un poco.</p>
 <p>Los días que siguieron a su llegada fueron dulces y tranquilos. No mucho después Angelina supo que Manrique se había ido de la Pola. ¡Buen viaje!</p>
@@ -2756,7 +2786,7 @@
 		</body>
 		<back>
 			<div>
-					<p></p>
+					<p/>
 			</div>
 		</back>
 	</text>

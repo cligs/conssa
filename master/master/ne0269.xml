@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">En busca del Gran Kan</title>
-				<title type="sub"></title>
+				
 				<title type="short">BuscaKan</title>
-				<title type="idno">
-					<idno type="bne">XX1892702</idno>
-					<idno type="viaf">307972255</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2067</measure>
@@ -141,13 +131,49 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0269</idno>
+						<idno type="cligs">ne0269</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.0, <date when="2016">2016</date>, <idno>25362</idno>, <ref target="https://www.epublibre.org/libro/detalle/25362"/>.</bibl>
-				<bibl type="print-source"><date></date></bibl>
-				<bibl type="edition-first"><date when="1928">1928</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">En busca del Gran Kan</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892702.html">XX1892702</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/307972255/">307972255</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">epublibre, Titivillus, r1.0, <date when="2016">2016</date>, <idno>25362</idno>, <ref target="https://www.epublibre.org/libro/detalle/25362"/>.</bibl>
+					<bibl type="print-source"><date/></bibl>
+					<bibl type="edition-first"><date when="1928">1928</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En Busca del Gran Kan (Cristóbal Colon)</title>: 	<title type="sub">novela</title> <date when="1929">1929</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1163803081" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1163803081"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En Busca del Gran Kan</title>: 	<title type="sub">Novela</title> <date when="1929">1929</date>, <publisher/> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1116171074" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1116171074"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En busca del Gran Kan</title>: 	<title type="sub">Cristóbal Colón ; novela</title> <date when="1929">1929</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464368928" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464368928"/> </bibl>
+						<bibl type="further-edition"><title type="main">En busca del Gran Kan</title>: 	<title type="sub">la novela de Cristobal Colón</title> <date when="1929">1929</date>, <publisher>F. Munner</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="463987772" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463987772"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En busca del Gran Kan</title>: 	<title type="sub">(Cristóbal Colón) ; (novela)</title> <date when="1929">1929</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226449963" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226449963"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Suche nach dem Groß-Khan</title> <date when="1934">1934</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Zürich;Wien;Prag</pubPlace> 		<idno type="ppn" n="468250387" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468250387"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La tierra de todos, La reina calafia, Novelas de la Costa Azul, La vuelta al mundo de un novelista, Novelas de amor y muerte, El papa del mar, En busca del gran kan, El caballero de la virgen, El fantasma de la alas de oro, Estudios literarios</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621554" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621554"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En busca del Gran Kan [Cristóbal Colón]</title>: 	<title type="sub">[novela]</title> <date when="2000">2000</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1165426749" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1165426749"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En busca del Gran Kan</title>: 	<title type="sub">[(novela)]</title> <date when="2000">2000</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="798493496" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=798493496"/> 		<idno type="isbn" n="8470307037;9788470307034"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">En busca del Gran Kan</title> <date when="2000">2000</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="325731756" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=325731756"/> 		<idno type="isbn" n="8470307037"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La reina Califa. En busca del Gran Kan. El Caballero de la Virgen. El fantasma de las alas de oro</title> <date when="2015">2015</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="835726479" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=835726479"/> 		<idno type="isbn" n="9788415255383"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +183,14 @@
 				<p>En busca del Gran Kan, publicada póstumamente en 1929, narra, junto a la expulsión de los judíos, la preparación, travesía y exploración inaugural del primer viaje colombino, enmarcado todo ello en una delicada trama amorosa. Su erudición histórica le permite al novelista dar vida a la sociedad española del siglo XV y describir, con luz y precisión, la naturaleza americana.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -186,7 +220,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">adventure</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">historical</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela histórica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -213,6 +247,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -220,9 +255,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>PARTE PRIMERA: EL HOMBRE DE LA CAPA RAÍDA</head>
+				<head xml:id="ne0269_head_000">PARTE PRIMERA: EL HOMBRE DE LA CAPA RAÍDA</head>
 				<div n="1" type="chapter" xml:id="ne0269_chap1">
-					<head>I: Lo que pasó, hace cuatrocientos treinta y seis años, en el camino de Granada a Córdoba</head>
+					<head xml:id="ne0269_head_001">I: Lo que pasó, hace cuatrocientos treinta y seis años, en el camino de Granada a Córdoba</head>
 					<p>El más joven de los dos soltó la vara leñosa que le servía de apoyo, sus rodillas se doblaron, y deslizándose entre los brazos de su compañero, que había acudido a sostenerle, quedó tendido en el suelo al pie de un matorral.</p>
 					<p>—No puedo más, Fernando. ¡El Señor me valga!</p>
 					<p>Su rostro delicado, casi femenil, palideció hasta tomar una blancura verdosa. Sus ojos negros, rasgados en forma de almendra, se cerraron, después de un parpadeo de angustia.</p>
@@ -336,7 +371,7 @@
 					<p>Volvió el rostro el jinete para mirarle sonriendo, con una expresión en los ojos gloriosa y triunfante. Llevaba dentro de él tan gran contento, que necesitó mostrar su vanidad ante este vagabundo encontrado en un camino.</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0269_chap2">
-					<head>II: El físico de Gabriel Acosta</head>
+					<head xml:id="ne0269_head_002">II: El físico de Gabriel Acosta</head>
 					<p>—En Córdoba, adonde vamos, me conocen con diversos nombres. Para algunos fui «capitán», para otros simple «maestre». Muchos me llamaban «el hombre de la capa raída». Ahora los reyes han mandado que todos me den tratamiento de «don»… Llámame don Cristóbal. Cuando lleguemos a la mar me llamarás de otro modo.</p>
 					<p>Muchos físicos o médicos había en Córdoba; algunos francamente judíos, los más «cristianos nuevos», como si los secretos de la ciencia de curar fuesen un monopolio de su raza.</p>
 					<p>De todos ellos ninguno tan célebre como Gabriel de Acosta, al que designaban las gentes simplemente con el título de «el Dotor», cual si después de esto resultase innecesario añadir su nombre. Gabriel de Acosta era el doctor por antonomasia. Los demás médicos resultaban astros opacos girando en torno al sol de su sapiencia.</p>
@@ -417,7 +452,7 @@
 					<p>Traía, según las personas que le habían dado la noticia, una comisión para el mejor servicio de los reyes, con cédula de alojamiento para instalarse en casa de rico. Pero había preferido irse a vivir, como antaño, en el mesón de Antón Buenosvinos, ocupando la mejor de sus habitaciones por ser ahora un personaje.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0269_chap3">
-					<head>III: En el que se demuestra que «donde hay negros hay oro», se empieza a hablar del Preste Juan de las indias y del Gran Kan, y aparece el enigmático Maestre Cristóbal</head>
+					<head xml:id="ne0269_head_003">III: En el que se demuestra que «donde hay negros hay oro», se empieza a hablar del Preste Juan de las indias y del Gran Kan, y aparece el enigmático Maestre Cristóbal</head>
 					<p>Ser físico en aquellos tiempos no significaba únicamente haber estudiado el arte de curar. Todos los físicos de algún renombre se mostraban doctos en las ciencias naturales, la astrología y la geografía. Esta última era el estudio preferente de Gabriel de Acosta, tal vez por una afición de raza, por ser judíos o «conversos» gran parte de los sabios cosmógrafos y geógrafos que vivían entonces en Portugal.</p>
 					<p>Todo lo que esta nación había trabajado durante el siglo xv para ensanchar los límites de la tierra conocida por los cristianos lo sabía el físico de Córdoba. Siendo niño había oído hablar a su padre de don Enrique, infante portugués, apellidado «el Navegante».</p>
 					<p>En realidad, no había navegado nunca, pero merecía tal sobrenombre por dedicar su existencia entera a la preparación de los descubrimientos marítimos. Quinto hijo del rey don Juan I de Portugal, fundador de la dinastía de Avis, dotado de un espíritu heroico y predispuesto a las aventuras como un caballero andante, acabó por condensar en su persona todas las aspiraciones y los apetitos contradictorios de su época, siendo el personaje más representativo de su siglo.</p>
@@ -525,7 +560,7 @@
 					<p>El mundo era más grande que lo suponía Colón, errado en sus cálculos, y los mares más extensos y numerosos que él los imaginaba.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0269_chap4">
-					<head>IV: De cómo el amor se fue abriendo paso a través de la geografía delirante</head>
+					<head xml:id="ne0269_head_004">IV: De cómo el amor se fue abriendo paso a través de la geografía delirante</head>
 					<p>Al volver los reyes a Córdoba, Maestre Cristóbal visitó con menos frecuencia la casa del doctor. Todo su tiempo lo dedicaba a procurarse entrevistas con los personajes de la movediza corte, valiéndose de las recomendaciones que recibía de fuera, así como del interés que sabía inspirar a unos, y para que lo presentasen, a otros.</p>
 					<p>Los escribanos de los reyes, al nombrarle por primera vez en sus documentos, le llamaban Colomo, luego Colom y finalmente Colón. Este error nada tenía de extraordinario. Colomo y Colom eran apellidos españoles, abundantes en Aragón y Castilla. No menos frecuente era el apellido Colón, llevándolo algunas veces judíos «conversos».</p>
 					<p>Hombre tenaz, de una actividad incansable para la consecución de sus fines, le bastaron pocas semanas para conocer a todos los personajes de la corte más influyentes con los monarcas. Conseguía ser recibido por el cardenal Mendoza, «el tercer rey de España», y este prelado, hábil en los negocios de la política y de la Iglesia, escuchaba como un neófito las cosas maravillosas que iba diciendo aquel desconocido, basándose en la cosmografía y otras ciencias, completamente ignoradas por el prócer eclesiástico. Igual éxito obtenía en casa del Contador Mayor, Alfonso de Quintanilla, cuyo cargo era semejante al de un moderno ministro de Hacienda, y cerca de Cabrero, camarero íntimo del rey don Fernando.</p>
@@ -622,7 +657,7 @@
 					<p>Y lo besó a plena boca.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0269_chap5">
-					<head>V: Donde Maestre Cristóbal y Beatriz empiezan a vivir «en pecado mortal», y es abandonado por dos veces el viaje a las tierras del «rey de los reyes», arreglándose todo finalmente gracias a un judío que demuestra la inmoralidad de prestar dinero sin réditos</head>
+					<head xml:id="ne0269_head_005">V: Donde Maestre Cristóbal y Beatriz empiezan a vivir «en pecado mortal», y es abandonado por dos veces el viaje a las tierras del «rey de los reyes», arreglándose todo finalmente gracias a un judío que demuestra la inmoralidad de prestar dinero sin réditos</head>
 					<p>A principios del verano se fue la corte de Córdoba.</p>
 					<p>Algunos señores de Galicia se habían colocado en actitud rebelde frente a los reyes, y éstos necesitaron trasladarse a sus Estados del Norte para sofocar dicho movimiento.</p>
 					<p>Viose privado Colón del apoyo de los cortesanos que le protegían, mas a pesar de ello se consideró menos solo que en los meses anteriores. El amor llenaba ahora su existencia.</p>
@@ -758,7 +793,7 @@
 					<p>Y Santángel declaró que por favorecer tan gran empresa y servir a sus reyes cobraría solamente un interés de uno y medio por ciento.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0269_chap6">
-					<head>VI: En el que el Almirante de la mar Océana huye del amor, y acoge con risas la herética y disparatada hipótesis de que pueda descubrir un mundo nuevo antes de llegar a las costas de Asia</head>
+					<head xml:id="ne0269_head_006">VI: En el que el Almirante de la mar Océana huye del amor, y acoge con risas la herética y disparatada hipótesis de que pueda descubrir un mundo nuevo antes de llegar a las costas de Asia</head>
 					<p>Era ya bien entrada la mañana cuando Beatriz vio llegar a su pobre vivienda un chicuelo enviado por el dueño del mesón de Buenosvinos. Su hombre, el padre de Hernandico, había llegado la noche anterior con dos mancebos que le servían de criados.</p>
 					<p>A juzgar por las palabras del enviado, venía con aspecto de personaje importante, y esto no hizo más que afirmar ciertos rumores llegados hasta ella varias semanas antes sobre los grandes honores y ayudas en dinero que los reyes habían conferido a Colón. Lo lamentable era que, habiendo llegado el día anterior a la hora de la oración, esperase a la mañana siguiente para llamarla.</p>
 					<p>Cuidó ante todo de lavar y vestir con ropas de fiesta a su hijo, que estaba sentado en el suelo, jugueteando con el gato de la casa y un perrillo de la vecindad. Sin oír sus llantos de protesta a causa de la precipitación en el fregoteo, le limpió la cara, insistiendo especialmente en la parte baja de la nariz para que no quedase en ella vestigio de ninguna costra, y metió con violencia sus tiernos brazos en las mangas de un juboncillo de seda que le había cosido días antes, utilizando un brial antiguo, regalo de una dama de la ciudad.</p>
@@ -837,10 +872,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>PARTE SEGUNDA: EL SEÑOR MARTÍN ALONSO</head>
+				<head xml:id="ne0269_head_007">PARTE SEGUNDA: EL SEÑOR MARTÍN ALONSO</head>
 
 				<div n="7" type="chapter" xml:id="ne0269_chap7">
-					<head>I: En el que se habla de la famosa isla de las Siete Ciudades y del peligro que corrió el futuro Almirante de quedarse en tierra para siempre, no pudiendo juntar otros marineros que cuatro fugitivos del pueblo de Palos condenados a muerte</head>
+					<head xml:id="ne0269_head_008">I: En el que se habla de la famosa isla de las Siete Ciudades y del peligro que corrió el futuro Almirante de quedarse en tierra para siempre, no pudiendo juntar otros marineros que cuatro fugitivos del pueblo de Palos condenados a muerte</head>
 					<p>Para Fernando Cuevas era a modo de una fiesta el ir de Palos al monasterio de la Rábida.</p>
 					<p>Su amo vivía con los frailes, conservando a Lucero para su servicio. Él estaba en el pueblo, instalado en la pobre casa de un viejo que era sacristán de la iglesia parroquial de San Jorge. El padre guardián de la Rábida le había procurado este alojamiento.</p>
 					<p>Escaseaba el sitio en la hospedería del monasterio por hallarse trabajando en su iglesia hacía mucho tiempo unos pintores venidos de Sevilla, los cuales adornaban sus muros con zócalos de fingido mosaico multicolor y algunas imágenes religiosas, mostrándose más fervorosos y de buena voluntad que hábiles en su arte.</p>
@@ -922,7 +957,7 @@
 					<p>Femando Cuevas dudaba cada vez más de que su señor llegase a realizar aquel famoso viaje. El futuro Almirante de la mar Océana se iba a quedar en tierra con sus dos pajes.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0269_chap8">
-					<head>II: En el que don Cristóbal logra al fin «poner mesa» gracias a Pinzón el Mayor, recibe de éste medio cuento de maravedises, y el futuro viaje, iniciado por los reyes, se transforma en empresa colectiva y popular</head>
+					<head xml:id="ne0269_head_009">II: En el que don Cristóbal logra al fin «poner mesa» gracias a Pinzón el Mayor, recibe de éste medio cuento de maravedises, y el futuro viaje, iniciado por los reyes, se transforma en empresa colectiva y popular</head>
 					<p>Recordaba Colón haber hablado algunas veces con Martín Alonso en la sala del guardián de la Rábida.</p>
 					<p>Mientras esperaba en el convento la respuesta de la reina a la carta que el padre Juan Pérez había enviado a Santa Fe, este marino paleño, llamado por dicho fraile, había conversado con él de las cosas del mar y de sus misterios.</p>
 					<p>El proyectista, que se juzgaba rodeado siempre de gente inferior, a la que podía dirigir por derecho propio, advirtió desde las primeras palabras que estaba en presencia de un hombre de su misma especie, nacido para el mando, para las empresas peligrosas que exigen gran temple de alma.</p>
@@ -1008,7 +1043,7 @@
 					<p>Dicho viaje, que los reyes sólo habían costeado en parte, resultaba en el último momento una empresa popular. Parecía esto un aviso de los otros viajes de descubrimiento que iban a multiplicarse en los años sucesivos, obra siempre de la colectividad, de la masa popular, de la verdadera nación española, en los cuales sólo ponían los reyes su autorización y el derecho de llevarse una quinta parte de las ganancias; viajes de ilusión, de heroísmo y de muerte, gracias a los cuales se descubrió y se colonizó en el breve espacio de medio siglo todo un mundo nuevo, la mayor parte de la llamada América que después los mismos reyes explotaron torpemente y acabaron por perder.</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0269_chap9">
-					<head>III: «En el nombre de Dios… ¡larguen!»</head>
+					<head xml:id="ne0269_head_010">III: «En el nombre de Dios… ¡larguen!»</head>
 					<p>Entre los diversos allegados a Colón que empezaban a moverse en torno a su persona, atribuyéndose una parte de su importancia como capitán general de la flotilla, había uno que llamaba la atención a causa de su orgullosa vanidad con los humildes y las adulaciones de que hacía objeto a aquél, llamándolo a todas horas «el Almirante mi señor».</p>
 					<p>Era un tal Pedro de Terreros, que había venido de Córdoba recomendado a don Cristóbal para que le sirviese de criado durante el viaje, adjudicándose inmediatamente el título de maestresala.</p>
 					<p>Parecía resarcirse del tono humilde que adoptaba con los superiores a él extremando su soberbia al dirigirse a sus inferiores.</p>
@@ -1150,7 +1185,7 @@
 					<p>Había dejado de existir ciento veinticuatro años antes.</p>
 				</div>
 				<div n="10" type="chapter" xml:id="ne0269_chap10">
-					<head>IV: Donde el paje de escoba Fernando Cuevas ve curado rápidamente su mareo, aprende a cantar las horas, escucha interesantes historias y promete matar a alguien</head>
+					<head xml:id="ne0269_head_011">IV: Donde el paje de escoba Fernando Cuevas ve curado rápidamente su mareo, aprende a cantar las horas, escucha interesantes historias y promete matar a alguien</head>
 					<p>Las primeras horas de navegación ofrecieron a Fernando Cuevas la alegría de la novedad. Fue de un lado a otro de la nao, arqueando instintivamente sus piernas, haciendo presión en las tablas de la cubierta con los dedos de sus pies, dejando que su cuerpo siguiese el movimiento de la nave al balancearse bajo el peso de su velamen extendido.</p>
 					<p>Durante los días anteriores había pensado muchas veces con inquietud en la vida completamente nueva que iba a empezar para él. Ahora, aspirando el viento salino y fresco a todo pulmón, y siguiendo con sus ojos la marcha de las dos carabelas, la <seg rend="italic">Niña</seg> al lado de la nao, la <seg rend="italic">Pinta</seg> delante de su proa y a gran distancia, por ser la más velera, creyó haberse transformado con un rudo tirón que le hacía saltar en pocas horas de la adolescencia a la madurez viril.</p>
 					<p>No tenía por el momento ningún trabajo urgente, pues aún duraba la limpieza realizada el día anterior. Desde el castillo de proa, o paseando entre los corros de marineros sentados en el combés, miraba hacia el alteroso castillo de popa, donde iban con el capitán general de la flotilla todos los agregados a su servicio. Deseaba ver a Lucero y lo conseguía con frecuencia, pues el paje de don Cristóbal iba y venía por las cámaras de dicho alcázar ocupado en el arreglo del equipaje de su señor, sacándolo de cajas y sacos.</p>
@@ -1282,7 +1317,7 @@
 					<p>Y lo raro del caso era que hizo esta afirmación en singular, amenazando de muerte al maestresala, y al mismo tiempo su pensamiento lo tenía puesto en el repostero de los estrados reales.</p>
 				</div>
 				<div n="11" type="chapter" xml:id="ne0269_chap11">
-					<head>V: En el que se cuenta cómo las carabelas fueron pasando entre islas que no han existido nunca, cómo Colón se mostró desorientado al enterarse de que su mapa y el Océano no estaban de acuerdo, y cómo se vio próximo a morir en una terrible sublevación de sus marineros, inventada muchos años después</head>
+					<head xml:id="ne0269_head_012">V: En el que se cuenta cómo las carabelas fueron pasando entre islas que no han existido nunca, cómo Colón se mostró desorientado al enterarse de que su mapa y el Océano no estaban de acuerdo, y cómo se vio próximo a morir en una terrible sublevación de sus marineros, inventada muchos años después</head>
 					<p>A los cuatro días de navegación una noticia circuló por la nao capitana.</p>
 					<p>—A la <seg rend="italic">Pinta</seg> se le ha desencasado el gobernario.</p>
 					<p>Esto quería decir que el timón de dicha carabela se había saltado de sus hebillas o pernos, siendo grave dicha avería, por impedirle que navegase con una dirección fija.</p>
@@ -1401,7 +1436,7 @@
 					<p>—Cuando estemos en tierra —terminó diciendo como si le diese un consejo—. Cuando lleguemos a los reinos del Gran Kan.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0269_chap12">
-					<head>VI: En el que se cuenta de qué modo Rodríguez Bermejo dio el grito de «¡Tierra!», y el Almirante se quedó injustamente con su premio, y cómo las gentes desnudas de una pequeña isla vieron salir del mar tres bosques, llenos de hechiceros blancos, color de la muerte, llevando su cara sembrada de algodón</head>
+					<head xml:id="ne0269_head_013">VI: En el que se cuenta de qué modo Rodríguez Bermejo dio el grito de «¡Tierra!», y el Almirante se quedó injustamente con su premio, y cómo las gentes desnudas de una pequeña isla vieron salir del mar tres bosques, llenos de hechiceros blancos, color de la muerte, llevando su cara sembrada de algodón</head>
 					<p>La tierra estaba cerca. Todas las señales del mar y de la atmósfera indicaban la proximidad de islas.</p>
 					<p>La <seg rend="italic">Pinta</seg>, siempre a la cabeza de la escuadrilla, aprovechaba sus condiciones de gran velera, dando «cuchilladas» en el mar, apartándose del rumbo que seguían las otras naves, para ir a un lado y a otro, abriendo el ángulo de sus exploraciones, con la esperanza de ser la primera en ver tierra.</p>
 					<p>Sus marineros descubrieron un palo y una caña flotantes. Luego tomaron un palillo labrado, según parecía, con hierro, un pedazo de caña, una pequeña tabla y manojos de hierba que indudablemente era nacida en tierra. Los de la <seg rend="italic">Niña</seg> también recogieron un palillo cargado de escaramujos.</p>
@@ -1479,10 +1514,10 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>PARTE TERCERA: EL PARAÍSO POBRE</head>
+				<head xml:id="ne0269_head_014">PARTE TERCERA: EL PARAÍSO POBRE</head>
 
 				<div n="13" type="chapter" xml:id="ne0269_chap13">
-					<head>I: En el que se cuenta cómo el Almirante fue pasando entre islas siempre hermosas y de escaso provecho, cómo empezó a enemistarse con Pinzón, y cómo llegó a la tierra firme gobernada por el Gran Kan, enviando a éste dos embajadores con una carta escrita en latín</head>
+					<head xml:id="ne0269_head_015">I: En el que se cuenta cómo el Almirante fue pasando entre islas siempre hermosas y de escaso provecho, cómo empezó a enemistarse con Pinzón, y cómo llegó a la tierra firme gobernada por el Gran Kan, enviando a éste dos embajadores con una carta escrita en latín</head>
 					<p>Navegó la flotilla durante catorce días entre las numerosas islas Lucayas. Exploraba Colón rápidamente estas tierras, deseoso de encontrar oro o vestigios de la civilización opulenta de los países gobernados por el Gran Kan.</p>
 					<p>A la segunda isla que visitó le puso por nombre Santa María de la Concepción, en agradecimiento a la Virgen que le había librado de tempestades en el mar y de enfermedades a bordo. A la tercera dio el nombre de Fernandina, en recuerdo del rey, cuyos allegados y familiares tanto lo habían protegido; y a la cuarta llamó Isabela, como testimonio de gratitud a su reina. Pero iba pasando de isla en isla sin encontrar otra cosa extraordinaria que su magnífica vegetación y la sencillez paradisíaca de sus habitantes.</p>
 					<p>La desnudez de éstos y su pobreza se armonizaban mal con las ilusiones que el navegante llevaba en su pensamiento, resto de sus lecturas de Marco Polo y de Mandeville. Nada hacía ver la proximidad del «rey de los reyes», señor de la vasta China, sentado en trono de oro y diamantes, bajo un dosel bordado de perlas. Ninguna de estas islas guardaba las montañas de Ofir, preñadas de oro, que habían ido a explotar en otro tiempo las flotas del rey Salomón. Únicamente fue notando cierto progreso rudimentario en las costumbres y en los útiles de los indígenas, según avanzaba en su exploración. En la Fernandina encontró un indio que navegaba solo en una canoa muy lejos de la costa, y en el interior de dicha isla vio las primeras hamacas y otros objetos de la industria humana, reveladores de un trabajo ingenioso.</p>
@@ -1575,7 +1610,7 @@
 					<p>Ya sabían dónde estaba Cipango «la de las tejas de oro», y convenía ir cuanto antes a dicha isla, dejando para más adelante la exploración de la tierra firme.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0269_chap14">
-					<head>II: De cómo Lucero se mareó en tierra tomando sahumerios por la boca con un tizón encendido, y ella y Fernando repitieron los primeros gestos de Adán y Eva</head>
+					<head xml:id="ne0269_head_016">II: De cómo Lucero se mareó en tierra tomando sahumerios por la boca con un tizón encendido, y ella y Fernando repitieron los primeros gestos de Adán y Eva</head>
 					<p>Mientras los dos hombres blancos caminaban hacia el interior como embajadores del Almirante, procuró éste aprovechar el anclaje en aquella especie de gran lago que formaba el río en su desembocadura, puerto singularísimo, muy hondo y limpio de piedras, con buena playa para poner los navíos a monte.</p>
 					<p>Entró con su flota por este estuario, hasta donde el agua fuese dulce, y al desembarcar subió a un montecillo para descubrir algo de los alrededores, no pudiendo ver gran cosa a causa de lo tupidos y abundantes que eran los bosques, todos ellos muy frescos y odoríferos. Un perfume de hierbas aromáticas impregnaba el ambiente, y los cantos de los pájaros hacían vibrar de sol a sol las verdes profundidades de la arboleda.</p>
 					<p>Acudían los indígenas en almadías y canoas para obtener cascabeles y ramalillos de cuentas a cambio del eterno «algodón filado» y redes en las que dormían, llamadas hamacas.</p>
@@ -1675,7 +1710,7 @@
 					<p>Cuando los dos jóvenes empezaron a despertar, algún tiempo después, sólo vieron en torno a ellos árboles rumorosos, la playa de arena brillante bajo el sol de mediodía, el terso lago de la restinga, y más allá de su barrera de peñascos el azul oceánico cortado por las aletas de los tiburones, que se perseguían movidos, lo mismo que los demás seres de la creación, por las dos necesidades que son los grandes resortes de todas las existencias, desde las más simples hasta las más complicadas y perfectas: el hambre y el amor.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0269_chap15">
-					<head>III: En donde se habla de la gran traición que el mayor de los Pinzones hizo al Almirante, y del fervor místico de éste al verse cerca del dios amarillo, señor del mundo, hijo del Sol y de la Tierra</head>
+					<head xml:id="ne0269_head_017">III: En donde se habla de la gran traición que el mayor de los Pinzones hizo al Almirante, y del fervor místico de éste al verse cerca del dios amarillo, señor del mundo, hijo del Sol y de la Tierra</head>
 					<p>Transcurridos cuatro días, volvieron el «converso» de Murcia y el marinero de Ayamonte, embajadores del Almirante, sin haber encontrado en su viaje el menor vestigio del Gran Kan, ni visto rey de aquella tierra que fuese amigo o enemigo del poderoso monarca asiático. Habían caminado unas doce leguas, hasta topar con una población de cincuenta casas, donde calcularon que debían vivir más de mil personas, por ser muchos los indios que se aglomeraban en cada edificio, siendo estas chozas colectivas a modo de alfaneques grandísimos.</p>
 					<p>Fueron recibidos Luis de Torres y Rodrigo de Jerez lo mismo que dioses, corriendo a ellos hombres y mujeres para tocarlos con admiración y besarles manos y pies, como si fuesen venidos del cielo. Dábanles de comer lo que tenían, y los más honrados del pueblo los llevaron al bohío principal, haciéndolos sentar en dos sillas de las suyas, mientras los demás se ponían en cuclillas en derredor de la pareja de blancos. Cuando salieron los hombres entraron las mujeres, sentándose de la misma manera luego de tocarlos para ver si eran de carne y hueso como los indios.</p>
 					<p>Preguntaron los dos embajadores por el rey del país, y a pesar de los buenos oficios de un indio de los que venían en la armada y les servía de intérprete, nadie supo darles razón. Vieron algunos indígenas principales, que parecían gobernar a los otros, distinguiéndose de ellos por su mayor obesidad, pero ninguno de dichos personajes gordos, desnudos y pintarrajeados tenía la menor semejanza con el omnipotente «rey de los reyes», señor del inmenso Imperio de la China.</p>
@@ -1799,7 +1834,7 @@
 					<p>Le inspiraba un fervor religioso la proximidad oculta del dios amarillo, señor del mundo, hijo del Sol y de la Tierra.</p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0269_chap16">
-					<head>IV: Lo que ocurrió en la Nochebuena de 1492, y las terribles consecuencias de tal suceso</head>
+					<head xml:id="ne0269_head_018">IV: Lo que ocurrió en la Nochebuena de 1492, y las terribles consecuencias de tal suceso</head>
 					<p>Siguieron navegando la nao y la carabela, con gran contento de Fernando Cuevas, cada vez más aficionado a esta vida vagabunda de continuos descubrimientos, fondeando unas veces en bahías tan extensas que el Almirante las llamaba mares, echando el ancla en otras ocasiones lejos de la costa, por miedo a las rompientes.</p>
 					<p>Le placía no menos ver cada semana nuevas muchedumbres desnudas ofreciendo enormes ovillos de algodón y papagayos, quitándose de la nariz y las orejas sus laminillas de oro en trueque de las fruslerías que les daban los seres celestiales llegados en sus bosques flotantes. También interesaban a su curiosidad juvenil los misterios de un mar clarísimo, poblado de chisporroteos de oro y de colores, cuando iba a la pesca con algunos marineros pertenecientes a su rancho.</p>
 					<p>Lo único que le entristecía en este viaje de continuas y maravillosas visiones era que no se repitiese aquel día feliz pasado en un estuario de Cuba, cuando los tres buques de la armada fueron puestos a monte. En ninguno de los anclajes de la nao capitana en esta nueva isla, la Española, pudieron bajar a tierra juntos él y Lucero. El paje del Almirante se quedaba casi siempre a bordo, y las contadas veces que bajó al batel fue para acompañar a su amo en las cortas exploraciones que hacía remontando los ríos. Femando, por su parte, cuando desembarcaba era siempre con el guardián Gil Pérez y algunos marineros, para hacer rescates y adquirir noticias.</p>
@@ -1943,7 +1978,7 @@
 					<p>El irlandés también saludaba a su modo a los que se iban, y esta despedida musical era el himno funerario de los que se quedaban en la Navidad.</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0269_chap17">
-					<head>V: En el que la Muerte enseña su rostro a los argonautas españoles, cansada de la felicidad de este viaje</head>
+					<head xml:id="ne0269_head_019">V: En el que la Muerte enseña su rostro a los argonautas españoles, cansada de la felicidad de este viaje</head>
 					<p>Una montaña de forma piramidal, que el Almirante comparó con un hermoso alfaneque, y que parecía isla por hallarse rodeada de tierras bajas, fue levantándose ante la proa de la <seg rend="italic">Niña</seg>. Colón la llamó Montecristi, y estuvo dos días en sus alrededores a causa de que el viento era flojo.</p>
 					<p>Temiendo los bajos de esta costa, ordenaba con frecuencia a los marineros que subiesen al tope de los mástiles para poder reconocerlos de más lejos, y el domingo, 6 de Enero, uno de estos vigías vio venir a la carabela <seg rend="italic">Pinta</seg> navegando con viento de popa. Como no había cerca ningún anclaje seguro, Colón hizo virar a la <seg rend="italic">Niña</seg>, alcanzando otra vez las diez leguas que había hecho desde Montecristi, y la <seg rend="italic">Pinta</seg> la siguió en su retroceso.</p>
 					<p>Cuando las dos carabelas hubieron fondeado en un lugar seguro, pasó Martín Alonso a la <seg rend="italic">Niña</seg> para ver a su consocio, explicando con razones de navegante la causa de aquella separación involuntaria y expresando al mismo tiempo cierta extrañeza de que Colón no le hubiese seguido a Haití, volviéndose a Cuba, donde permaneció tantos días sin motivo.</p>
@@ -2078,7 +2113,7 @@
 					<p>¡Adiós, Martín Alonso!… ¡Adiós para siempre!</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0269_chap18">
-					<head>VI: Donde el Almirante derrama lágrimas al contar su llegada a las primeras tierras del Gran Kan, y los reyes lloran igualmente, hincados de rodillas, agradeciendo al cielo el descubrimiento de Asia por Occidente</head>
+					<head xml:id="ne0269_head_020">VI: Donde el Almirante derrama lágrimas al contar su llegada a las primeras tierras del Gran Kan, y los reyes lloran igualmente, hincados de rodillas, agradeciendo al cielo el descubrimiento de Asia por Occidente</head>
 					<p>Mientras Colón preparaba en Sevilla su viaje a Barcelona, las gentes de aquella ciudad se agolpaban frente a una casa situada junto al llamado Arco de las Imágenes, en la iglesia de San Nicolás.</p>
 					<p>Allí estaban aposentados los hombres cobrizos que el descubridor había traído de las Indias. Sólo eran siete los que quedaban después del tempestuoso viaje de regreso. Los otros habían muerto en el mar.</p>
 					<p>Admiraban los curiosos igualmente la gran cantidad de papagayos verdes y rojos, y las <seg rend="italic">guaicas</seg>, carátulas hechas de huesos de pescado, a manera de pedrería de aljófar, con laminillas de oro en ojos y orejas. Algunos pedían ver el oro fino traído de Asia; pero no era más que en cantidad reducida, a modo de muestra, resultando en esto las palabras del descubridor más brillantes que la realidad.</p>
@@ -2209,7 +2244,7 @@
 		</body>
 		<back>
 			<div>
-				<head>EL MISTERIO DE COLÓN: EL NOVELISTA AL LECTOR</head>
+				<head xml:id="ne0269_head_021">EL MISTERIO DE COLÓN: EL NOVELISTA AL LECTOR</head>
 				<p>Desde 1910, o sea hace dieciocho años, que vengo estudiando la personalidad enigmática de Colón, pudiendo afirmar que he leído todo lo que escribieron sobre él los cronistas de su época y los autores modernos más importantes. Cuanto aparece en esta novela impreso entre comillas es fragmento exacto de algo que escribió Colón o dijeron sus contemporáneos, y en mi próxima novela, <seg rend="italic">El nacimiento de América</seg>, haré lo mismo al describir los últimos años del famoso Almirante.</p>
 				<p>Éste sólo empieza a existir para la Historia, de un modo indudable, en 1486, al aparecer en España. De los años anteriores, cuando reside en Portugal, se sabe muy poco y con cierta vaguedad. Antes de su llegada a Portugal no se conoce otra cosa que lo que él ha querido decir o lo que se le escapó en cartas y conversaciones, tal vez contra su deseo. Y es todo tan contradictorio, tan confuso, que hace dudar de la veracidad de Colón hasta a aquellos que lo admiran como un hombre sobrehumano.</p>
 				<p>Pocos personajes de la Historia pueden compararse con Colón por el misterio que le envuelve hasta la edad madura, misterio que se restablece después de su muerte. A estas horas nadie puede probar con una certeza indubitable dónde nació, y lo que es más raro, cuál es su verdadera tumba.</p>

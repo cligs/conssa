@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Boy</title>
-				<title type="sub"></title>
+				
 				<title type="short">Boy</title>
-				<title type="idno">
-					<idno type="bne">XX1932232</idno>
-					<idno type="viaf">1122145424579486830391</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX843538</idno>
-					<idno type="viaf">59211037</idno>
-					<name type="short">Coloma</name>
-					<name type="full">Luis Coloma</name>
+					<name type="short" ref="#Coloma"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2032</measure>
@@ -141,13 +131,58 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2018">2018</date>
-				<idno type="cligs">ne0188</idno>
+						<idno type="cligs">ne0188</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2011">2011</date>, <ref target="https://archive.org/details/boycoloma00colo"/>.</bibl>
-				<bibl type="print-source">Segunda edición, Administración de Razón y Fe, <date when="1910">1910</date>, Madrid.</bibl>
-				<bibl type="edition-first"><date when="1910">1910</date></bibl><!--jct: es un poco raro que en 1910 fuese la primera y segunda edición-->
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Boy</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1932232.html">XX1932232</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/1122145424579486830391/">1122145424579486830391</idno>
+				</idno>
+				</title>
+					<author xml:id="Coloma">
+						<name type="full"><forename>Luis</forename> <surname>Coloma</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9421 - IO 9422">IO 9421 - IO 9422</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11883438X">11883438X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q4228309/">Q4228309</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX843538.html">XX843538</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/59211037/">59211037</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#archive" subtype="pdf">Archive.org, <date when="2011">2011</date>, <ref target="https://archive.org/details/boycoloma00colo"/>.</bibl>
+					<bibl type="print-source">Segunda edición, Administración de Razón y Fe, <date when="1910">1910</date>, <pubPlace>Madrid</pubPlace>.</bibl>
+					<bibl type="edition-first"><date when="1910">1910</date><idno source="k10plus" type="ppn" n="1553851366" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1553851366"/><idno source="k10plus" type="ppn" n="116880650X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=116880650X"/></bibl><!--jct: es un poco raro que en 1910 fuese la primera y segunda edición-->
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Boy</title> <date when="1910">1910</date>, <publisher>Razon y Fe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1553851366" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1553851366"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1910">1910</date>, <publisher>Herder</publisher> <pubPlace>Freiburg i. Br.</pubPlace> 		<idno type="ppn" n="116880650X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=116880650X"/> </bibl>
+						<bibl type="further-edition"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1912">1912</date>, <publisher>Herdersche Verl.-Buchh.</publisher> <pubPlace>Freiburg</pubPlace> 		<idno type="ppn" n="1511369744" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1511369744"/> </bibl>
+						<bibl type="further-edition"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1912">1912</date>, <publisher>Herder</publisher> <pubPlace>Freiburg</pubPlace> 		<idno type="ppn" n="1070464937" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1070464937"/> </bibl>
+						<bibl type="further-edition"><title type="main">Boy: Roman</title> <date when="1912">1912</date>, <publisher>Herder</publisher> <pubPlace>Freiburg i.Br.</pubPlace> 		<idno type="ppn" n="891393862" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=891393862"/> </bibl>
+						<bibl type="further-edition"><title type="main">Boy [deutsch]</title>: 	<title type="sub">Roman von Luis Coloma. (Ins Deutsche übers. von K. Hofmann)</title> <date when="1912">1912</date>, <publisher>Herder</publisher> <pubPlace>Freiburg i.Br.</pubPlace> 		<idno type="ppn" n="449144534" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=449144534"/> </bibl>
+						<bibl type="further-edition"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1916">1916</date>, <publisher>Herder</publisher> <pubPlace>Freiburg i. Br.</pubPlace> 		<idno type="ppn" n="1543346219" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1543346219"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1916">1916</date>, <publisher>Herder</publisher> <pubPlace>Freiburg i. Br.</pubPlace> 		<idno type="ppn" n="1435071263" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1435071263"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1917">1917</date>, <publisher>Herder</publisher> <pubPlace>Freiburg</pubPlace> 		<idno type="ppn" n="464650046" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464650046"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1919">1919</date>, <publisher>Herder</publisher> <pubPlace>Freiburg</pubPlace> 		<idno type="ppn" n="686742303" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=686742303"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1919">1919</date>, <publisher>Herder</publisher> <pubPlace>Freiburg</pubPlace> 		<idno type="ppn" n="686742214" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=686742214"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Boy</title> <date when="1921">1921</date>, <publisher>Razon y Fe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="449144526" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=449144526"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Boy</title>: 	<title type="sub">Roman</title> <date when="1922">1922</date>, <publisher>Herder</publisher> <pubPlace>Freiburg i. Br.</pubPlace> 		<idno type="ppn" n="1155144171" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1155144171"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Boy</title> <date when="1932">1932</date>, <publisher>Ed. Razón y Fe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1168806410" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1168806410"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Boy</title> <date when="1932">1932</date>, <publisher>Razón y fe [usw.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="416492010" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=416492010"/> </bibl>
+						<bibl type="further-edition"><title type="main">Boy</title>: 	<title type="sub">con un estudio inédito sobre el carácter del protagonista</title> <date when="1933">1933</date>, <publisher>Ed. "Razón y Fe";El Mensajero del C. de Jesús</publisher> <pubPlace>Madrid;Bilbao</pubPlace> 		<idno type="ppn" n="467822794" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467822794"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Boy</title> <date when="1939">1939</date>, <publisher>Ed. "Razón y Fé"</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464961564" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464961564"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Boy</title> <date when="1942">1942</date>, <publisher>Ed. Razón y Fe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1134303343" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1134303343"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Boy</title> <date when="1953">1953</date>, <publisher>Razón y fe [usw.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="532704436" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=532704436"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Boy</title> <date when="1966">1966</date>, <publisher>Porrua</publisher> <pubPlace>México</pubPlace> 		<idno type="ppn" n="53055450X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=53055450X"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -161,6 +196,14 @@
 				<p>Es un texto aceptable [...]. EL análisis sicológico del protagonista es interesante; el autor mira con simpatía y comprensión esa rica personalidad asaltada por impulsos contradictorios. La vivacidad del diálogo hace que sea un texto de lectura ágil.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9421" key="IO 9421" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -173,7 +216,7 @@
 					<term type="author.nonNovelGenre">essay</term>
 					<term type="author.submovement">naturalista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">low</term>
 					<term type="text.characters.protagonist.age">adult</term>
 					<term type="text.characters.protagonist.gender">male</term>
@@ -185,19 +228,19 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="epublibre"></term>
+					<term type="text.genre.subgenre.edit" resp="epublibre"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">crime-fiction</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">social</term>
-					<term type="text.genre.subgenre.litHist"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.mentioned" resp="HdLE">True</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE7">1</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">homodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
@@ -222,6 +265,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2018-04-17" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,7 +273,7 @@
 
 			<p>PRESENTED TO</p>
 			<div>
-				<head>THE LTBRARY</head>
+				<head xml:id="ne0188_head_000">THE LTBRARY</head>
 				<p>BY</p>
 				<p>PROFESSOR MILTON A. BUCHANAN OF THE</p>
 				<p>DEPARTMENT OF ITALIAN AND SPANISH</p>
@@ -242,7 +286,7 @@
 				<p><seg rend="bold">BOY</seg></p>
 			</div>
 			<div>
-				<head>Luis Colonja, s. J.</head>
+				<head xml:id="ne0188_head_001">Luis Colonja, s. J.</head>
 				<p><seg rend="bold">De la Real Academia Española. </seg><seg rend="bold">(CON LAS LICENCIAS NECESARIAS)</seg></p>
 
 				<p>C 7167 b</p>
@@ -258,7 +302,7 @@
 
 			<div n="1" type="chapter" xml:id="ne0188_chap1">
 
-				<head>I</head>
+				<head xml:id="ne0188_head_002">I</head>
 				<quote>	<p><seg rend="bold">En la vida del hombre, sólo dos mujeres tienen cabida legítima: su madre y la madre de sus hijos. Fuera de estos dos amores puros y santos, son los demás divagaciones peligrosas ó culpables extravíos.</seg></p></quote>
 				<p>Llegué al baile á las diez y cuarto, cuando comenzaba á excitar la animación la entrada del personaje político en cuyo honor se celebraba. Recorría éste los salones y las anchas y suntuosas galerías, guiado por el general Belluga, que hacía veces de <seg rend="italics">cicerone</seg>, y le presentaba á los notables de la provincia. Venía detrás la <seg rend="italics">personaja, </seg>con pujos y aires de gran dama de la antigua corte, dando el brazo á mi tío el Duque de Sos, rancia figura decorativa en todos</p>
 				<p>los actos solemnes del partido de Isabel II; y rodeadas de pollos y damiselas, cerraban la marcha dos <seg rend="italics">personajitas,</seg> hijas del personaje: morenilla la una y pintorescamente bizca; rubia desteñida la otra, con una bo-quita de que pudo decir Bussy lo que de Mlle. Mancini dijo:</p>
@@ -343,7 +387,7 @@
 				<p>—¡Ya!...</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0188_chap2">
-				<head>II</head>
+				<head xml:id="ne0188_head_003">II</head>
 				<p><seg rend="small-caps">(Quedóse Boy una buena pieza de tiempo clavado en la banqueta que ocupaba antes su pareja, con los codos apoyados en las rodillas, fijos los ojos en el suelo, y tan absorto en sus pensamientos ó descuidado de los ajenos, que parecía extraño á cuanto le rodeaba.</seg></p>
 				<p>Antojóseme, al verle en aquella guisa, que la retirada de la Pierrette tenía visos de fuga, y casándola en mi imaginación con la actitud pensativa de Boy, forjó en un segundo una historia de amores desgraciados y dramáticos sucesos, propia de esa edad, la mía de entonces, en que los engañosos lentes de la ilusión ven en cada matorral un idilio, y divisan en cada esquina un drama paseándose.</p>
 				<p>Acerquéme, pues, al Dido abandonado,</p>
@@ -405,7 +449,7 @@
 				<p><seg rend="italics">Caveant Cónsules!...</seg></p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0188_chap3">
-				<head>III</head>
+				<head xml:id="ne0188_head_004">III</head>
 				<p><seg rend="small-caps">Abriéronse en esto de par en par dos anchas puertas que aquel comedor tenía en uno de sus testeros, </seg>y apareció otro salón suntuoso, más claro y resplandeciente que si la luz del sol lo iluminase.</p>
 				<p>Extendíase por su centro, de un cabo á otro cabo, el <seg rend="italics">buffet</seg>, opíparo y abundante, cual si la gran madre Cibeles, <seg rend="italics">magna pa-rens,</seg> que dijo Virgilio, hubiese derramado en él su cuerno de la abundancia, para refocilación de sibaritas y tragones.</p>
 				<p>Parecía aquello un alarde gigantesco de magnificencia provinciana, dispuesto para eclipsar ante los ojos de los ilustres huéspedes cortesanos, desde el homérico festín de las bodas de Camacho, hasta el convite del rey Asuero, verdadero poema gastronómico, sin igual en los fastos de la humanidad que come, que necesitó para</p>
@@ -490,7 +534,7 @@
 				<p>Y la tragedia horrenda que tres horas después había de seguirse, vino á probarme que no me había engañado; que Mariquita de todos los demonios, sin que uno solo faltase, era en efecto.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0188_chap4">
-				<head>IV</head>
+				<head xml:id="ne0188_head_005">IV</head>
 				<p><seg rend="small-caps">Recuerdo </seg>que, no bien puse el pie en la calle, miré ansiosamente á una y otra parte, buscando á Boy con los ojos. Habíase adelantado unos pasos, y creíale yo víctima aún de la violenta turbación que las maliciosas razones de la Porrata le habían causado.</p>
 				<p>Vile á corta distancia parado en la acera, mirando tranquilamente al cielo encapotado, con la mano derecha extendida para calcular la fuerza de la lluvia.</p>
 				<p>Caía, en efecto, una menuda llovizna, y en el silencio profundo de la noche oí su voz burlona y sonora, que me gritaba sin la menor alteración, en su puro y vibrante timbre de barítono:</p>
@@ -599,7 +643,7 @@
 				<p>—¿Sabes que para estar tan próximos á la mayor edad, somos los dos bastante chiquillos?...</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0188_chap5">
-				<head>V</head>
+				<head xml:id="ne0188_head_006">V</head>
 				<p>Firmaronse las paces, por tácito acuerdo, y proseguimos nuestro camino uno al lado de otro, como Diego Ordóñez y Arias Gonzalo cuando el reto de Zamora.</p>
 				<p>Había cesado la lluvia y era la temperatura tan suave y apacible como suele ser en Andalucía el mes de Marzo.</p>
 				<p>Hallábanse las calles solitarias, á obscuras muchas de ellas, y reinaba entodas ese profundo silencio de la noche, que la sosegada vida de provincia hace comenzar tan temprano.</p>
@@ -656,7 +700,7 @@
 				<p>Aquella era la caverna, bien conocida de menesterosos y perdidos, donde ejercía Joaquinito López su oficio de usurero, mientras por el otro lado, en la reluciente peluquería de la calle de Algarves, trabajaban sus hijas las pelucas y postizos que servían de tapadera á la vil industria de su padre.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0188_chap6">
-				<head>VI</head>
+				<head xml:id="ne0188_head_007">VI</head>
 				<p>Servíame yo de la puerta del torreón tan sólo para mis entradas y salidas nocturnas, cuando podían ellas turbar la quietud y el orden admirable que reinaba en casa de mis tios.</p>
 				<p>En las demás ocasiones entraba y salía por la gran puerta de la plaza, y comunicábame siempre con el resto del palacio por una galería de cristales, con vistas al jardín, que arrancaba del torreón de <seg rend="italics">las Siete revueltas.</seg></p>
 				<p>Tenía yo entonces un criado belga, fidelísimo, llamado Celestín, y éste era el que me servía y cuidaba de mi departamento, cuya puerta á la calleja no tenía otra seguridad ni otra defensa que un gran picaporte interior durante el día y un enorme cerrojo que por las noches dejaba Celestín corrido.</p>
@@ -707,7 +751,7 @@
 				<p>—¿Te acuerdas tú de la señorita de Bo-llullo?...</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0188_chap7">
-				<head>VII</head>
+				<head xml:id="ne0188_head_008">VII</head>
 				<p><seg rend="small-caps">La </seg>señorita de Bollullo?—repetí yo desconcertado.—No recuerdo más Bollu-llos que el pueblecito de este nombre, en el condado de Niebla, donde tengo una dehesa, y aquel boticario del Colegio Naval, á cuya mujer compusiste tú, hace más de diez años, una copla bastante espesa sobre su fácil y económica manera de hacer lamedor.</p>
 				<p>—¡Preciosa copla por cierto!-—dijo Boy con todo el aire de un poeta laureado.— Verdadero poema didáctico en cuatro versos, que Cuando lá boticaria salía á la ventana, cantábamos todos en coró desde la cerca del colegio, con aquel estribillo tan popular entonces y tan tonto siempre;</p>
 				<lg type="poem"><l><seg rend="bold">«¡Amarillo sí, amarillo no,</seg></l>
@@ -790,7 +834,7 @@
 				<p>—Desde que mandó Vuecencia... Desde las seis menos cuarto.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0188_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0188_head_009">VIII</head>
 				<p><seg rend="small-caps">Fué tal mi aturdimiento al convencerme de la inesperada escapatoria, que comencé á dar disposiciones necias y contrarias, ansioso de seguir la pista al fugitivo.</seg></p>
 				<p>Sereno Celestín, templó mis impaciencias, indicando el camino más prudente.</p>
 				<p>Conocía él un empleado en la estación, ambulante de Correos en otro tiempo, y éste podría informarle de si había marchado ó no Boy en aquel tren de la mañana; el tipo marcadísimo de éste, su natural distinción y el uniforme de alférez de navio, sobre todo, raro en aquella comarca, eran hartas señas para que pudiese pasar desapercibido entre los escasos pasajeros que en aquel tren viajaban de ordinario.</p>
@@ -853,7 +897,7 @@
 				<p>Flotaban aún en torno suyo varios capuchones y pingajos, y por encima de todos ellos mecíanse en el aire un disfraz de murciélago con las alas extendidas, y otros dos de diablos con carátulas horrendas, formando un grupo que representaba en la imaginación la grotesca alegoría del alma del usurero, arrebatada por demonios del infierno.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0188_chap9">
-				<head>IX</head>
+				<head xml:id="ne0188_head_010">IX</head>
 				<p>Abríme calle á codazo limpio entre la apiñada concurrencia, oyendo á cada paso denuestos contra la víctima, ponderaciones de sus usuras y crueldades, y comentarios sobre sus infames vicios. Mas á nadie escuché palabra dura contra los asesinos, ni protesta contra el crimen, ni la menor señal de interés ó de compasión siquiera hacia aquel infeliz que ni aun á costa de muerte tan tremenda había podido comprar la tan bien llamada, como fácilmente concedida, <seg rend="italics">hora de las alabanzas.</seg></p>
 				<p>Un guantero conocido mío, de quien en tiempos fui parroquiano, ofrecióme el amparo de su tienda, y allí supe pormenores del suceso, que coincidían perfectamente con lo que yo mismo había visto.</p>
 				<p>Suponíase cometido el crimen de tres á cuatro dfr ¡a madrugada, cuando, al ternii-nar los bailes públicos en teatros y salones de baja estofa, volvieron á la peluquería varios hombres y mujeres que allí habían alquilado trajes.</p>
@@ -932,7 +976,7 @@
 				<p>Sonaron dentro voces, ayes, quejidos, porrazos, el ruido todo de un aquelarre, y después, con brevísimo intervalo, los bramidos y pataleos de una mujer presa de violento ataque de nervios.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0188_chap10">
-				<head>X</head>
+				<head xml:id="ne0188_head_011">X</head>
 				<p>Fué aquello como una de esas horrendas pesadillas, que pasan, dejando el cuerpo quebrantado y alucinada la mente. Queda después un confuso recuerdo que nada concreta ni define; una vaga reminiscencia que reproduce las especies sin contornear los detalles, pero que reverdece el quebrantamiento, y resucita las alucinaciones, y provoca nuevas angustias, como provoca nuevas náuseas el recuerdo de un manjar indigestado.</p>
 				<p>Tal me sucedió por mucho tiempo y aun me sucede ahora, cuando recuerdo aquellos chillidos de Mariquita de todos los demonios, que hirieron mis tímpanos y crisparon mis nervios.</p>
 				<p>Nunca he podido recordar lo que hice entonces. Tengo idea de que huí á la peluquería buscando una salida, y halló las</p>
@@ -997,7 +1041,7 @@
 				<p>Encogíme, pues, de hombros, y disimulando el sobresalto que la descarada alusión á Boy me causaba, devolví el papelucho al tipejo madrileño.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0188_chap11">
-				<head>XI</head>
+				<head xml:id="ne0188_head_012">XI</head>
 				<p>Charlaban animadamente mis compañeros de viaje, mientras leía yo el condenado <seg rend="italics">Suplemento</seg>, y en el punto en que puse atención á su plática, dijo el caballerete de la corte:</p>
 				<p>—Eso es <seg rend="italics">lyching...,</seg> puro <seg rend="italics">lyching...</seg></p>
 				<p>Y como el Canónigo le mirase sin comprender, añadió explicando su extranjerizada frase:</p>
@@ -1112,7 +1156,7 @@
 				<p>Y una lluvia de pedradas hizo trizas en un segundo cuantos cristales había en los balcones de D. César Fernández y del Roble.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0188_chap12">
-				<head>XII</head>
+				<head xml:id="ne0188_head_013">XII</head>
 				<p>Nunca fué mi fuerte la diplomacia, y siempre gusté de llamar al pan, pan, y al vino, vino, y de llegar de un punto á otro, sin habilidosos rodeos, por el camino más corto que enseñan las matemáticas: la línea recta.</p>
 				<p>Mas aquella línea recta que había trazado yo de mis incertidumbres y temores á la poderosa influencia de D. César Fernández y dél Roble, torcióronmela de repente el.estrépito de los cristales que se rompían, y los gritos sediciosos de la plebe amotinada.</p>
 				<p>¿Quién se presentaba al Magistrado en tan críticos momentos, para otra cosa que no fuese sacarle del aprieto, y ayudarle á</p>
@@ -1181,7 +1225,7 @@
 				<p>Mil veces sorprendí en ella miradas fugitivas, suspiros comprimidos, y demás <seg rend="italics">alimañas</seg> sentimentales que infestan el peligroso verjel de los enamorados, y su abnegación por mí fue tanta y tan atrevida, que explica perfectamente lo que en obsequio mío hizo aquella noche inolvidable.</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0188_chap13">
-				<head>XIII</head>
+				<head xml:id="ne0188_head_014">XIII</head>
 				<p>Mandé, pues, á Celestín subir apresuradamente al pescante, y al cochero correr por la Judería hasta el corralón que ya he descrito, en cuyo fondo se abría la puerta falsa de la casa de D. César. Apeéme ante la <seg rend="italics">torre mocha</seg>, y seguido de Celestín crucé á grandes zancadas el amplio corralón, desierto entonces, silencioso, cerradas herméticamente las grandes puertas de cuadras y cocheras que en él se abrían, é iluminado hasta en sus más ocultos rincones por los claros mecheros de gas que de trecho en trecho ardían como en cualquier otra calle.</p>
 				<p>De cuando en cuando alzábase amenazador, del otro lado de la manzana de casas, el alarido de la multitud, como recordando el peligro, y yo aligeraba, el paso sin querer, al oírle, anhelando prestar au xilio á la que yo suponía atribulada familia.</p>
 				<p>Hallábase aquella parte trasera de la casa de D. César en el íondo de la especie de bolsillo que allí formaba la Judería, y era la puerta baja y fuerte, con un pos-tiguito ó mirilla á la altura de los ojos. Antes de llamar miré por el postigo: el jardinillo que daba acceso á la casa por aquella parte aparecía obscuro y silencioso, y distinguíanse, como manchas negras, los arriates y árboles que lo adornaban.</p>
@@ -1246,7 +1290,7 @@
 				<p><seg rend="italics">Sumario de la causa incoada contra el Sr. Conde de Baza</seg>, <seg rend="italics">por presunto delito de homicidio consumado en la persona de Joaquín López, (a) Pájaro verde.</seg></p>
 			</div>
 			<div n="14" type="chapter" xml:id="ne0188_chap14">
-				<head>XIV</head>
+				<head xml:id="ne0188_head_015">XIV</head>
 				<p>Yo no sé si hice bien ó si hice mal, ni me detuve entonces á pensarlo; pero es lo cierto que con ansia febril devoré aquel precioso documento que el amor y la abnegación ponían en mis manos, y que podía descubrirme la trama infernal que una rara coincidencia, como creía yo entonces; ó una maldad refinada, como supe más tarde, urdían contra mi infeliz amigo.</p>
 				<p>Comenzaba el sumario por la exposición del hecho de autos, tal como se le conocía entonces: el hallazgo del cuerpo de Joaqui-nito López, asesinado en la trastienda, y el levantamiento del cadáver por el Juez de primera instancia, que había presenciado yo mismo. Seguían luego las declaraciones de las tres hijas de la víctima, María Sata* nás, María Lucifer y Mariquita de todos los  demonios, conformes todas, aunque con ligeras variantes, en un trascendental punto que arrojaba sobre Boy toda la presunción del delito.</p>
 				<p>... El mismo lunes de Carnaval, á las once y cuarto de la mañana, personóse éste en la tienda del peluquero, exigiendo prórroga para el cobro de un pagaré de once mil duros que le adeudaba; negóse el usurero á prorrogar un solo día, y exasperado entonces. Boy, habíale amenazado, según María Satanás, con cortarle las orejas; según María Lucifer, habíale tirado horriblemente dé ellas, y Mariquita de todos los demonios aseguraba que ella no había visto ni oído nada de orejas: lo único que oyó, escuchando detrás de la puerta, era que aplastaría á unos señores que ella no conocía ni sabía quiénes fueran: <seg rend="italics">los reptiles....</seg></p>
@@ -1275,7 +1319,7 @@
 				<p>En la mitad de la galería encontré á la de Astures, que corría presurosa á mi encuentro, alarmada por mi recado y por mi ausencia de todo el día. Sentí, al ver su maternal anhelo, conmoverse profundamente mis entrañas: abracéla por la cintura y le besé la mano; hízome ella la señal de la cruz sobre la frente, como tenía por costumbre, y nervioso yo, excitada mi sensibilidad por las emociones del día, y débil y tierno como lo soy por naturaleza, apoyé mi cabeza en su regazo, y sin poder decir nada, rompí á llorar como un chiquillo.</p>
 			</div>
 			<div n="15" type="chapter" xml:id="ne0188_chap15">
-				<head>XV</head>
+				<head xml:id="ne0188_head_016">XV</head>
 				<p>Era aquella época la Condesa de As-tures una mujer de sesenta años, y jamás he visto hermanarse como en ella, con tanta naturalidad y gracia, la sencilla modestia de una colegiala con el espontáneo y elegante señor'o de una gran dama; ni la afabilidad y gracia en el trato, con la melancólica seriedad, quizá algo sombría, que dejan á la larga en el alma los grandes dolores ocultos.</p>
 				<p>Su larga práctica de mundo en las embajadas de Roma, Viena y Berlín, en que acompañó á su marido, había forjado lo primero sobre su natural modesto y sencillo; y la pérdida de cuatro hijos, muertos en edad juvenil, había trocado en lo segundo su carácter alegre, bondadoso y pío, formando todo ello un conjunto encantador que subyugaba con el atractivo de la simpatía é imponíase al mismo tiempo con la fuerza del respeto.</p>
 				<p>Por una de esas extrañas analogías que se encuentran á veces entre las personas y las cosas, recordábame siempre la de Astu-res, envuelta en sus eternos lutos, á una joya antigua que vi en Venecia, hecha sin artificio alguno, sólo de sombrías perlas y brillantes negros. Encantóme aquella joya, y la compré para regalarla á mi tía el 19 de Noviembre, que era su santo.</p>
@@ -1331,7 +1375,7 @@
 				<p>¡Mi tía tenía razón!... Su sagacidad femenina le había hecho desentrañarlo todo cuando me dijo:—<seg rend="italics">¡Será muy posible que el mismo Boy no quiera ni aun que se hable de esto!...</seg></p>
 			</div>
 			<div n="16" type="chapter" xml:id="ne0188_chap16">
-				<head>XVI</head>
+				<head xml:id="ne0188_head_017">XVI</head>
 				<p>Huyó el sueño de mis párpados ante este nuevo descubrimiento, y encrespada otra vez mi imaginación, comenzó á navegar á velas desplegadas por aquel mar de dudas y vacilaciones, tan disparatada y sin tino, que pude muy bien gritarle como Lope de Vega á su barquilla:</p>
 				<lg type="poem"><l><seg rend="bold">«¿Adonde vas perdida?</seg></l>
 					<l><seg rend="bold">¿Adonde, di, te engolfas?</seg></l>
@@ -1389,7 +1433,7 @@
 				<p>—No pasa, hijo; ¡no pasa después de tanto tiempo!... Porque cuando el amor vive sin savia que lo vivifique, ni esperanzas que lo mantengan, ¡es inmortal como el alma y corrosivo y sin cura como un cáncer en el pecho!...    *</p>
 			</div>
 			<div n="17" type="chapter" xml:id="ne0188_chap17">
-				<head>XVII</head>
+				<head xml:id="ne0188_head_018">XVII</head>
 				<p>Impresionóme tan hondamente el sencillo relato de la de Astures, que por primera vez en mi vida sentí un movimiento de indignación contra Boy.</p>
 				<p>No se puede impunemente j ugar con un corazón candoroso y sencillo, y esta peligrosa veleidad, tan común en los jóvenes, que yo llamaba <seg rend="italics">ligereza</seg> y mi tía calificaba de <seg rend="italics">crimen</seg>, teniendo mucho de ambas cosas, indignóme seriamente al ver víctima de ella á mi inocente primita.</p>
 				<p>Mas era tal la fuerza de mi cariño hacia mi atolondrado amigo, que sin dejar de compadecer á Beatriz ni de indignarme contra Boy, pensé lo primero en utilizar en favor de éste los mismos frutos que su mal comportamiento había producido.</p>
@@ -1441,7 +1485,7 @@
 				<p>—¡Perdono, Sra. Condesa; perdone Vuecencia!... ¡Pero hay cosas que exasperan!... ¡Yo digo que estas cosas no las hace Dios, sino el mismísimo diablo, mientras Su Divina Majestad duerme la siesta!</p>
 			</div>
 			<div n="18" type="chapter" xml:id="ne0188_chap18">
-				<head>XVIII</head>
+				<head xml:id="ne0188_head_019">XVIII</head>
 				<p>Al entrar en la habitación del Duque de Yecla quedóme estupefacto en el umbral, y ocurrióseme al punto que el bueno de Bonifacio, cegado sin duda por el amor á su amo, había sido harto indulgente al juzgar la chifladura del anciano padre de Boy. Tan extraño era el espectáculo que se presentaba á mi vista.</p>
 				<p>Era la habitación amplia y cómoda, con varias ventanas cerradas todas herméticamente; cubrían las paredes unos frescos muy medianos, representando diversas vistas del <seg rend="italics">Majuelo de Yecla;</seg> el mueblaje, fuerte y sencillo, era el adecuado á una casa de campo. Pero lo que causó mi sorpresa y admiración y mo llenó de doloroso pasmo, fué lo que so veía en el centro.</p>
 				<p>Pendiente do cuatro recias cadenas colgaba del teclio la caja de un coche, privado do sus ruedas, y dentro, arrellanado en sus almohadones, cual si fuese paseando, veíase á un <seg rend="italics">gran señor...,</seg> porque esta sola frase era la que ocurriría á todo el que hubiera visto á aquel personaje sin reconocer en él al Duque de Yecla.</p>
@@ -1500,7 +1544,7 @@
 				<p>—El Sr. Duque no tiene nada... ¡Pamemas de la Sra. Duquesa!... Un ataque de nervios como tiene diez mil al cabo del día... La cosa está hecha, y esta noche remataré yo la suerte, después que le dé las friegas...</p>
 			</div>
 			<div n="19" type="chapter" xml:id="ne0188_chap19">
-				<head>XIX</head>
+				<head xml:id="ne0188_head_020">XIX</head>
 				<p>No bien el coche se puso en movimiento, apresuróme á dar cuenta á mi tía de mi entrevista con el Duque de Yecla, y de la profunda convicción que ella me había dejado. Para mí era ya evidente que, estando el Duque muy en su seso, se hallaba, sin embargo, preso y acobardado en las garras de Rita Bollullo, como un tímido gorrión entre las de un cernícalo: que el desdichado padre ansiaba por su hijo y deseaba verle y perdonarle, y que los inicuos manejos de la madrastra eran los que les separaban y pretendían enconarles.</p>
 				<p>Imposible era, por lo tanto, esperar nada de provecho de aquel mísero anciano de voluntad atrofiada y débil razón, mientras estuviese bajo el despotismo y la influencia de aquella mujer grosera y mal intencionada.</p>
 				<p>—Tienes razón—dijo mi tía;—eso mismo he sacado yo en limpio de mi entrevista con ella.</p>
@@ -1549,7 +1593,7 @@
 				<p>Pregunté por la Condesa de Bureva y le pasó mi tarjeta.</p>
 			</div>
 			<div n="20" type="chapter" xml:id="ne0188_chap20">
-				<head>XX</head>
+				<head xml:id="ne0188_head_021">XX</head>
 				<p>No conocía yo á la Condesa de Bureva: habíala visto una sola vez, enmascarada, en el funesto baile del Casino, y no conservaba de ella otro recuerdo que la extraña impresión de miedo que me causaron sus magníficos y duros ojos negros, fijos en mí con impaciencia y con recelo, á través de la careta.</p>
 				<p>Harto comprenderá el lector lo difícil y espinoso que era abordar la cuestión que allí me llevaba. Confieso ingenuamente que por dos ó tres veces deseé lo que los pusilánimes que van á sacarse una muela: no encontrar en casa al dentista. Encontré, sin embargo, al mío y bien dispuesto á recibirme, porque sin ninguna detención me hizo pasar adelante.</p>
 				<p>Estaba alojada la Bureva en unos hermosos cuartos del piso principal, adornados con ose chabacano lujo de pacotilla propio do los hotolcs. Introdujéromno en un saloncito que tenía dos puertas: una grande que daba al pasillo por donde entré yo, resguardada por un biombo; otra pequeña, de escape, que daba á los cuartos interiores.</p>
@@ -1629,7 +1673,7 @@
 				<p>—¡Qué demonio de hombre más pesado!... ¿Á qué viene ese alboroto?... ¡Cualquiera diría que me había muerto, y que me veías resucitado!...</p>
 			</div>
 			<div n="21" type="chapter" xml:id="ne0188_chap21">
-				<head>XXI</head>
+				<head xml:id="ne0188_head_022">XXI</head>
 				<p>Un aluvión de preguntas incoherentes y desordenadas brotó de mis labios en cuanto vi á Boy despierto. La memoria de aquellos peligros que con tanto anhelo había yo procurado conjurar, huyó lejos de mí, y ya sólo pensé en que le veía allí, en que le tenía en mi casa sano y salvo y bajo mi protección y custodia.</p>
 				<p>Fuera de mí de contento hacíale pregunta tras pregunta, y acariciábale como á un niño, pasando mis dedos entre sus despeinados cabellos, que cual un nimbo de oro coronaban su frente, envejecida, á mi parecer, en aquellas cuarenta y ocho horas.</p>
 				<p>Dejábame él hacer y decir sin contestar palabra, sentado siempre en el borde de mi cama y balanceando las piernas, que no le llegaban al suelo; á veces daba deseo-</p>
@@ -1728,7 +1772,7 @@
 				<note><p><seg rend="bold">(1) El Señor guarde tu entrada y tu salida aliora y siempre. Amén,</seg></p></note>
 			</div>
 			<div n="22" type="chapter" xml:id="ne0188_chap22">
-				<head>XXII</head>
+				<head xml:id="ne0188_head_023">XXII</head>
 				<p>Nada de particular nos sucedió en el camino.</p>
 				<p>Ocupado yo en guiar los caballos y hacerles sortear los muchos pasos dificultosos de aquella descuidada carretera, no me era posible entablar una conversación seguida, y Boy, por su parte, no se cuidó de hacerlo.</p>
 				<p>Caminábamos, pues, en silencio y mirábale yo de soslayo de cuando en cuando: vile siempre encogido en su asiento cual si tuviese frío, y zambullido el rostro en el alto cuello del capote, que sólo dejaba asomar sus ojos abiertos, fijos y relucientes como dos luciérnagas.</p>
@@ -1800,7 +1844,7 @@
 				<p>—Y ¿lo ves?... ¿Lo ves cómo me oye?... ¡Mira, mira cómo me va atando!...</p>
 			</div>
 			<div n="23" type="chapter" xml:id="ne0188_chap23">
-				<head>XXIII</head>
+				<head xml:id="ne0188_head_024">XXIII</head>
 				<p>c <seg rend="bold">uando </seg>me desperté á las ocho de Ja mañana habíase levantado ya Boy y salido fuera de casa. Di jome Celestín que el señor Conde acababa de salir; que se había vestido en el cuarto de baño para no molestarme, y que le había dejado para mí esto recado:</p>
 				<p>—Que no le esperara á almorzar, porque tenía mucho que hacer y volvería tarde.</p>
 				<p>Contrarióme esto, porque aunque mis negros temores habíanse mitigado mucho con las espontáneas confidencias de Boy la noche antes, todavía me quedaba el suficiente recelo para desear no perderle de vista un instante, según el último consejo de mi prudente tía la Condesa de Astures.</p>
@@ -1880,7 +1924,7 @@
 				<p>Una idea terrible cruzó entonces por mi mente, como cruza el espacio en una noche tenebrosa un pájaro siniestro... ¿Sería acaso en aquella sangrienta guerra que se preparaba en el Norte donde esperaba encontrar Boy la <seg rend="italics">sepultura transitoria</seg> en que deseaba encerrarse?</p>
 			</div>
 			<div n="24" type="chapter" xml:id="ne0188_chap24">
-				<head>XXIV</head>
+				<head xml:id="ne0188_head_025">XXIV</head>
 				<p><seg rend="small-caps">Eran </seg>ya las ocho y media y <seg rend="bold">no </seg>había vuelto á comer Boy.</p>
 				<p>Inquietábame aquella tardanza porque en el estado de perpetua alarma en que me tenían los peligros reales de mi amigo y los que por su carácter voluntarioso y terco él mismo se buscaba, cualquiera cosa me hacía temer y temblar.</p>
 				<p>Envié, pues, á Celestín á casa de Berniú-dez para que preguntase á los porteros si el enfermo había recibido el Viático y averiguase con maña si había estado <seg rend="bold">«5</seg> estaba allí Boy; vivía Bermúdez en un piso alto del antiguo palacio de los Yecla en la calle Ancha de San Bernardo, y para mayor brevedad mandé á Celestín que tomase un coche.</p>
@@ -1931,7 +1975,7 @@
 				<p>Decidió, pues, esperar pacientemente á que se resolviese aquel nuevo enredo, con que la auxiliaba el demonio, sin tomar en él otra parte que la de influir con la Condesa de Porrata y Mariquita de todos los demonios, para que declarasen en el sumario todo lo que más porjudicaso al inocente Boy...</p>
 			</div>
 			<div n="25" type="chapter" xml:id="ne0188_chap25">
-				<head>XXV</head>
+				<head xml:id="ne0188_head_026">XXV</head>
 				<p>Esta relación de mi amigo hizo en mi mente el efecto del primer rayo de sol en un valle sumido aún en la vaga claridad del crepúsculo: ilumínanse repentinamente los objetos, delinéanse los contornos, y márcanse las relaciones de distancia y de fin que tiene cada cosa.    .</p>
 				<p>Así todos aquellos enredos y todos aquellos heterogéneos personajes, que existían en mi mente vagos é indecisos desde que Boy me los dió á conocer en nuestra primera conversación del funesto lunes de carnaval, se iluminaron de repente y surgieron vivos y contorneados, cada cual en su papel, repugnantes ó terribles, con la viveza y el colorido con que se representaba en mi imaginación el cadáver de Joaqui-nito López, asesinado en su trastienda, tendido en un charco de sangre y cubierto,</p>
 				<p>como contraste horrible, con un abigarrado traje do máscara.</p>
@@ -1993,7 +2037,7 @@
 				<p>—¡Y tú eres un chiquillo sin retirar!— exclamé riendo.—¡Chiquillo serás hasta el fin de tu vida!...</p>
 			</div>
 			<div n="26" type="chapter" xml:id="ne0188_chap26">
-				<head>XXVI</head>
+				<head xml:id="ne0188_head_027">XXVI</head>
 				<p>Pegáronseme á la otra mañana las sábanas, como suele decirse, y á las doce del día aun no había dado yo cuenta de mi persona. Despertóme á esta hora un tremendo azotazo y la sonora voz de Boy, que me gritaba:</p>
 				<p>—¡Arriba, perezoso!... ¡Que se va el tren, y esta noche nos marchamos!...</p>
 				<p>Venía de la calle muy alegre y satisfecho, al parecer, y traía en la mano una gran cartera de papeles.</p>
@@ -2113,7 +2157,7 @@
 				<p>—¡Vaya, hombre, ya estarás contento!... ¡Me has visto llorar!... ¡Tuya es la gloria!... ¡Ahora sí que somos Julieta y Romeo!..."</p>
 			</div>
 			<div n="27" type="chapter" xml:id="ne0188_chap27">
-				<head>XXVII</head>
+				<head xml:id="ne0188_head_028">XXVII</head>
 				<p>Detúveme en San Sebastián un par de días para arreglar en la Sucursal del Banco de España una cuenta corriente á nombre de Paulino Yanloo, á fin de que pudiese sacar Boy el dinero que necesitase, y vol-víme presuroso á Madrid, ansiando, encontrar en casa de Crespo, como habíamos convenido, cartas de mi tía la Condesa de Astures.</p>
 				<p>Encontrólas, en efecto, y bien consoladoras por cierto; porque la tormenta horrible que se cernía sobre Boy, comenzaba á deshacerse por sí sola, con la misma rapidez con que se había formado, no en relámpagos, rayos ni truenos, sino en copiosa y benéfica lluvia de luz y de verdad que dejaba más purificada la atmósfera y más beneficiado el campo.</p>
 				<p>Tros eran las cartas que mo escribía la do Astures: referí amo en la primera su entrevista con Deza, que no pudo ser más útil y eficaz en sus resultados prácticos.</p>
@@ -2150,7 +2194,7 @@
 				<p>Y en estas cartas y en las varias visitas que hice después á Zumarripa, encuentro los datos necesarios y los colores precisos para pintar la horrenda escena que servirá do desenlace á esta triste historia.</p>
 			</div>
 			<div n="28" type="chapter" xml:id="ne0188_chap28">
-				<head>XXVIII</head>
+				<head xml:id="ne0188_head_029">XXVIII</head>
 				<p>A las doce en punto llegó Boy á Zuma-rripa, justamente en el momento en que el Sr. Cura, D. Tomás Asteazu, se sentaba á comer con su sobrina Clara-Antoni. Recibióle el Cura como á Mesías largo tiempo esperado, con destempladas voces y rústica llaneza, y sin darle tiempo á cepillarse un poco ni á lavarse las manos, sentóle á la mesa.</p>
 				<p>Nada más opuesto á la aristocrática naturaleza de Boy, que aquellos alardes de sencillez campesina; mas á pesar de que su natural delicado se replegaba instintivamente y se escondía bajo su urbanidad exquisita, como tras un broquel de bruñido acero, sabía apreciar aquellas muestras de tosca cordialidad, como piedras preciosas sin pulir, y recibíalas con sonrisa tan afable y correspondía á ellas con tan benévola gracia, que lejos de intimidar ó repeler,</p>
 				<p>atraía á todos con ol doble imán de la simpatía y el respeto.</p>
@@ -2230,7 +2274,7 @@
 				<p>Aun vive Juana-Mari en Zumarripa, disfrutando una pensión que yo le paso: véola todos los años cuando voy allí por el verano, y en su jerga vascongada, siempre me habla de Boy.—De aquel señor que dijo el Sr. Cura que era <seg rend="italics">franchute</seg>, y resultó era un Sr. Conde muy grande...,tan llano, pues, ¡que dió sidra en su propio vaso á mí, pobre!... Y ¡qué bonito mozo que era, pues!...</p>
 			</div>
 			<div n="29" type="chapter" xml:id="ne0188_chap29">
-				<head>EPÍLOGO</head>
+				<head xml:id="ne0188_head_030">EPÍLOGO</head>
 				<p>No trataré de dar idea de la impresión que me hizo la desastrosa muerte de Boy, porque ni aun hoy mismo sabría yo definirla... Honda y aguda, hasta el punto de subsistir todavía, era al mismo tiempo sosegada y tranquila, y hasta llegó á pare-cerme envidiable aquella muerte horrible, y por otra parte, natural y lógica.</p>
 				<p>¿No pedía él á Dios, en medio de sus malos pasos, que le atase y tuviese piedad de su locura?... Pues el Señor le oyó, y atóle con lazos de iniquidad que otros tejieron, envióle una muerte de predestinado yllevósele consigo... Parecíame entonces oir la voz de Boy la primera noche que dormimos en Madrid, cuando me decía en la obscuridad con regocijada esperanza:</p>
 				<p>—¿No vos?... ¿No ves cómo me va atando?....</p>
@@ -2255,7 +2299,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

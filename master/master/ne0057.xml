@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El humo dormido</title>
-				<title type="sub"></title>
+				
 				<title type="short">HumoDormido</title>
-				<title type="idno">
-					<idno type="bne">XX2092636</idno>
-					<idno type="viaf">208715098</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1720928</idno>
-					<idno type="viaf">29542991</idno>
-					<name type="short">Miro</name>
-					<name type="full">Gabriel Miró</name>
+					<name type="short" ref="#Miro"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">850</measure>
@@ -141,16 +131,63 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2015">2015</date>
-				<idno type="cligs">ne0057</idno>
+						<idno type="cligs">ne0057</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/el-humo-dormido/"/>.</bibl>
-				<bibl type="print-source">Obras completas de Gabriel Miró, Barcelona, <date when="1941">1941</date></bibl>
-				<bibl type="edition-first"><date when="1919">1919</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El humo dormido</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2092636.html">XX2092636</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/208715098/">208715098</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4546100-4">4546100-4</idno>
+				</idno>
+				</title>
+					<author xml:id="Miro">
+						<name type="full"><forename>Gabriel</forename> <surname>Miró</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6260 - IP 6265">IP 6260 - IP 6265</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118784234">118784234</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q616515/">Q616515</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1720928.html">XX1720928</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/29542991/">29542991</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html">Biblioteca Virtual Miguel de Cervantes, <date when="2012">2012</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/el-humo-dormido/"/>.</bibl>
+					<bibl type="print-source">Obras completas de Gabriel Miró, <pubPlace>Barcelona</pubPlace>, <date when="1941">1941</date></bibl>
+					<bibl type="edition-first"><date when="1919">1919</date><idno source="k10plus" type="ppn" n="227005961" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227005961"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1919">1919</date>, <publisher>Atenea</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="227005961" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=227005961"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1938">1938</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1569978182" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1569978182"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1938">1938</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="465106684" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465106684"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1954">1954</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="463554639" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=463554639"/> </bibl>
+						<bibl type="further-edition"><title type="main">El humo dormido</title> <date when="1954">1954</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="422084867" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=422084867"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1964">1964</date>, <publisher>Ed. Anaya</publisher> <pubPlace>Salamanca [u.a.]</pubPlace> 		<idno type="ppn" n="469017996" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=469017996"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1965">1965</date>, <publisher>Ed. Anaya</publisher> <pubPlace>Salamanca [u.a.]</pubPlace> 		<idno type="ppn" n="465500269" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465500269"/> </bibl>
+						<bibl type="further-edition"><title type="main">El humo dormido</title>: 	<title type="sub">[in the orginal Spanish]</title> <date when="1967">1967</date>, <publisher>Dell Pub. Co</publisher> <pubPlace>New York, N.Y.</pubPlace> 		<idno type="ppn" n="1612991416" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1612991416"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1970">1970</date>, <publisher>Anaya</publisher> <pubPlace>Salamanca</pubPlace> 		<idno type="ppn" n="508035902" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=508035902"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1978">1978</date>, <publisher>Eds. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1613988583" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1613988583"/> 		<idno type="isbn" n="8437601312"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1978">1978</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="468938834" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=468938834"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Humo dormido</title> <date when="1978">1978</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="011049634" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=011049634"/> 		<idno type="isbn" n="8437601312"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1981">1981</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="043481582" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=043481582"/> 		<idno type="isbn" n="8437601312"/></bibl>
+						<bibl type="further-edition"><title type="main">El humo dormido</title> <date when="1983">1983</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1646525094" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1646525094"/> 		<idno type="isbn" n="8437601312"/></bibl>
+						<bibl type="further-edition"><title type="main">El humo dormido</title> <date when="1984">1984</date>, <publisher>Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="433795964" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=433795964"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1987">1987</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="225125188" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=225125188"/> 		<idno type="isbn" n="8437601312"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1991">1991</date>, <publisher>Inst. de Cultura Juan Gil-Albert</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="1100815317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1100815317"/> 		<idno type="isbn" n="8477849773"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1991">1991</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales;Instituto de Cultura Juan Gil-Albert, Diputación Provincial de Alicante</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="111530504" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=111530504"/> 		<idno type="isbn" n="8477849773"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El humo dormido</title> <date when="1991">1991</date>, <publisher>Caja de Ahorros del Mediterráneo, Obras Sociales [u.a.]</publisher> <pubPlace>Alicante</pubPlace> 		<idno type="ppn" n="038658348" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=038658348"/> 		<idno type="isbn" n="8477849773"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta ; Corpus y ntos ; El abuelo del rey ; Dentro del cercado ; Figuras en la Pasión del señor ; El humo dormido</title> <date when="2006">2006</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="528944231" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=528944231"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Los pies y los zapatos de Enriqueta. Corpus y otros cuentos. El abuelo del rey. Dentro del cercado. Figuras de la pasión del Señor. El humo dormido</title> <date when="2007">2007</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="538362189" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=538362189"/> 		<idno type="isbn" n="9788496452305"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="MdLE10">
@@ -159,6 +196,14 @@
 				<p>En Tablas de calendario se revive el ciclo completo de la Semana santa, con una emoción ingenua que recuerda los años de la infancia.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 6261" key="IP 6261" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL10">7</term>
 					<term type="author.continent">Europe</term>
@@ -189,8 +234,8 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">spiritual</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">philosophical</term>
-					<term type="text.genre.subgenre.litHist" resp="MdLE"></term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subgenre.litHist" resp="MdLE"/>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -219,6 +264,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2015-04-07" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -234,7 +280,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0057_chap1">
-				<head>Limitaciones</head>
+				<head xml:id="ne0057_head_000">Limitaciones</head>
 				<p>Los domingos se oía desde una ventana el armónium de un monasterio de monjas; pero se oía muy apagado,  y, algunas veces, se quebraba, se deshacía su dulzura: era preciso enlazarla con un ahínco de imaginación auditiva. Pasaba el ruido plebeyo de la calle, más plebeyo entonces el auto que la carreta de bueyes; pasaba toda la calle encima del órgano; y como era invierno, aunque se abriesen los postigos, las vidrieras, toda la ventana, quedaban las ventanas monásticas cerradas, y luego el plañido del viento entre los árboles de la huerta de las monjas. Había que esperar el verano que entreabre las salas más viejas y escondidas; así se escucha y se recoge su intimidad mejor que con las puertas abiertas del todo; abrir del todo es poder escucharlo todo,  y  se perdería lo que apetecemos en el trastornado conjunto. Y llegó el verano y la hora en que siempre sonaba el armónium celestial: la hora de la siesta; inmóviles y verdes los frutales del huerto místico; el huerto entornado bajo la frescura de las sombras; la calle, dormida; todo como guardado por un fanal de silencio que vibraba de golondrinas, de vencejos, de abejas... Y no se oía el órgano; había que adivinarlo del todo. La monja música dormía la siesta. Lo permite el Señor. ¿Cómo podrá oírse la música del cielo que sigue piadosamente el mismo camino de la vida de los hombres?</p>
 				<p>Aprovechémonos de lo que pase  y  nos llegue a través de las ventanas cerradas por el invierno...</p>
 				<p>¿De modo que nos limitaremos al invierno? Pero, ¿no sería limitarse más la espera del verano? ¡Si ni siquiera llegamos a nuestros términos! Tocar el muro, saberlo  y  sellarlo de nosotros significa poseerlo.</p>
@@ -258,7 +304,7 @@
 				<p>Siempre se alza ese hombre entre el humo dormido... Y el rumor de sus pisadas trastorna las palabras del <seg rend="italic">Eclesiastés</seg>, porque sí que hay cosa nueva debajo del sol, del sol  y  de la tierra hollada; todo aguarda ávidamente el sello de nuestra limitación; todo se desgarra generoso y se cicatriza esperándonos...</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0057_chap2">
-				<head>Nuño el Viejo</head>
+				<head xml:id="ne0057_head_001">Nuño el Viejo</head>
 				<p>Todas las tardes nos llevaba Nuño al Paseo de la Reina. Nuño era el criado antiguo de mi casa. Llamábase Antón Nuño Deseáis; pero nosotros le decíamos Nuño el Viejo, porque tuvimos un mozo que también se llamaba Nuño.</p>
 				<p>Nuño el Viejo había nacido en los campos de Jijona. Allí el paisaje es quebrado; los valles, cortos; los montes, huesudos; y todo es fértil. Es que los cultivos se apeldañan, y no se desperdicia la tierra mollar. Los labradores de Jijona sienten el ahínco agrícola del antiguo israelita. Su azadón y su reja suben a los collados, colgando los planteles de vides y almendros, y mullen el torrente y la hondonada para criar un bancalillo hortelano. Pero Jijona es más venturosa que Israel. Israel cuidaba amorosamente la tierra prometida por Dios, y los hombres extraños dieron en quitársela, y se la quitaron. Impedir que se cumpla una promesa es la misión de los que no resulten particioneros de su goce.</p>
 				<p>Hombres de Jijona, andariegos de todos los países para volver al suyo. Semejan probar que nada mantiene tanto la quimera del libre camino como sentir la propia raigambre. Todos los hombres de Jijona tienen un ansia de nómada, y todos suspiran por el reposo al amor de las parras que rinden los racimos de Navidad; todos, menos Nuño el Viejo. A nosotros, a mi hermano y a mí, nos decía que él también caminó mucho mundo, y nos lo decía llevándonos apretadamente de la mano, para que no nos fuésemos de su guarda, y llevándonos al Paseo de la Reina, donde todos iban a sentarse; paseo angosto, embaldosado, y en las orillas, a la sombra de los olmos, inmóviles como árboles de patio, los pretiles de bancos roídos; bancos y cigarras que ya conocían todas las voces y cataduras de las gentes.</p>
@@ -302,7 +348,7 @@
 				<p>Y del humo dormido sube siempre el clamor de la lisiada, entre alegría de chicos que salen del colegio. Las cinco  y  media de la tarde de entonces...</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0057_chap3">
-				<head>Don Marcelino y mi profeta</head>
+				<head xml:id="ne0057_head_002">Don Marcelino y mi profeta</head>
 				<p>Cuando éste acabe los estudios -dijo muchas veces Nuño el Viejo-;  y  lo pronunciaba con amargura  y  todo del renunciamiento de su gloria profética, porque sólo un Simeón pudo tomar en sus brazos al Mesías.</p>
 				<p>Me sentí emplazado por la encendida palabra de Nuño. Había de acabar mis estudios,  y  los comencé. Ya estaba en Colegio mi hermano; yo, no, por mi poca edad y salud; y vino maestro a casa. La primera tarde le aguardé con un sobresalto   casi   delicioso. Nuño interrumpía sus menesteres para decirme:</p>
 				<p>-Yo ya le he visto.</p>
@@ -382,7 +428,7 @@
 				<p>Y el profeta movió su cráneo, como si lo golpease amargamente al otro lado de los días prometidos...</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0057_chap4">
-				<head>El enlutado y el perejil</head>
+				<head xml:id="ne0057_head_003">El enlutado y el perejil</head>
 				<p>La vega, tan lisa, tan callada, dejaba que se tendiese y llegase muy claro el silbo del tren; luego  se sentía el ferrado estrépito del puente...</p>
 				<p>Los sábados, desde nuestro pupitre del salón de estudios, veíamos nosotros, escuchando, ese tren de Alicante. Sabíamos que cuando silbaba era su grito previniéndonos de que iba a precipitarse sobre el río. Se apagaba el estruendo; entonces, la pobre puente, quedábase fosca y vacía toda la noche, mientras el correo resollaba muy gozoso porque nos traía al padre.</p>
 				<p>No pudiendo mirarnos -que estaba prohibido volver la cabeza-, mi hermano tosía queriendo decirme en romance: «¡Ya viene!». Y yo tosía: «¡Ya lo sé!».- A poco, nos llamaba el Hermano Portero.</p>
@@ -411,7 +457,7 @@
 				<p>...Aquí se hunde ese hombre en lo profundo del humo dormido. Es que no volvimos a la tahona, porque como ya no le teníamos miedo...</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0057_chap5">
-				<head>Las gafas del padre</head>
+				<head xml:id="ne0057_head_004">Las gafas del padre</head>
 				<p>Singularmente se recordaba a Hernández Aparicio por las gafas que traía su padre.</p>
 				<p>Aparicio y yo pasamos juntos algún tiempo en la enfermería del Colegio.</p>
 				<p>-¡Qué gafas tan enormes lleva tu padre; los cristales podrían servir para un buzo!</p>
@@ -451,7 +497,7 @@
 				<p>-El Hermano Enfermero sigue en la tierra y en el mismo Colegio; y está gordo, muy gordo. Yo le pregunté: Hermano: ¿pues no quería y no quisiera usted morirse? Y el Hermano me dijo: «¿Yo? Yo sólo deseo lo que disponga Nuestro Señor...». Y con estas gafas nunca vio mi padre agotados sus deseos, ni yo los míos.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0057_chap6">
-				<head>La sensación de la inocencia</head>
+				<head xml:id="ne0057_head_005">La sensación de la inocencia</head>
 				<p>Cuando cumplí catorce años nos trasladamos a una vieja ciudad. En seguida que llegué me buscó   Ordóñez. Nos abrazamos, pero sin apretarnos mucho por un afán de vernos.</p>
 				<p>-¡Estás lo mismo!</p>
 				<p>-¡Y tú también: como allí!</p>
@@ -489,7 +535,7 @@
 				<p>-Sé que tenía pechos muy hermosos,  y  crió sus siete hijos; pero, mira, ¡murió de zaratanes la pobre!...</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0057_chap7">
-				<head>Mauro y nosotros</head>
+				<head xml:id="ne0057_head_006">Mauro y nosotros</head>
 				<p>Siempre nos parábamos en la «Herrería de la Cuesta», mirando la fragua  y  las barras de lumbre que llagaban la oscuridad.</p>
 				<p>Salía Alonso, el maestro,  y  descansaba su puño de callo  y  de roña en el hombro de Mauro. Mauro estaba roído de viruelas,  y  su sonrisa gorda  y  mansa de chico apocado parecía refrescarle la calcinación de su piel.</p>
 				<p>Por todo el portal pasaba una greca de herraduras oxidadas;  y  en los sillares colgaban las argollas para atar las bestias.</p>
@@ -518,7 +564,7 @@
 				<p>-¡Queréis más a mi hermana que a mí!</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0057_chap8">
-				<head>La hermana de Mauro y nosotros</head>
+				<head xml:id="ne0057_head_007">La hermana de Mauro y nosotros</head>
 				<p>Todas las tardes íbamos en busca de Mauro; y al salir, le besaba la hermana. Nos esperábamos para ver el beso, de un estallido delicioso de frescura, en la piel reseca y fragosa de Mauro. Entonces algunos de sus amigos parecían humillados de sus mejillas perfectas de adolescentes.</p>
 				<p>Luz era mayor que su hermano. Lo sabíamos, y se lo preguntábamos muchas veces; necesitábamos, y nos contentaba oírselo a él; y casi no podíamos principiar el diálogo sin repetirnos la edad de la hermana.</p>
 				<p>-¿Cuántos años te lleva Luz?</p>
@@ -582,7 +628,7 @@
 				<p>Toda nuestra ideología había roto su ánfora, vertiéndose germinadoramente sobre la faz de una vida nueva.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0057_chap9">
-				<head>Don Jesús y la lámpara de la realidad</head>
+				<head xml:id="ne0057_head_008">Don Jesús y la lámpara de la realidad</head>
 				<p>En atardeciendo iba a la casa del canónigo un catedrático de Historia Natural; después, un  presidente de Sala,  y, el último, siempre, don Jesús. ¿Por qué este hombre había de venir el postrero? El magistrado no se lo explicaba. Don Jesús era canoso, enjuto, pulcro, con un lunar tostadito en la sien izquierda. Colgaba de su brazo el abrigo  y  el paraguas. Atravesaba su vientre la cinta de luto de su relojito, de oro esmaltado, de señora;  y  en un ojal del chaleco se le estremecía un medallón con el retrato de una niña orlado de cabellos negros.</p>
 				<p>A poco de encenderse la lámpara del estudio de Mauro, comenzaba a lucir la del comedor. El presidente de Sala no consentía que se la proveyese de mucha torcida. Le horrorizaba el fuego de petróleo. Era pavorosa la crónica  y  estadística de las desgracias originadas por los quinqués. Y llegaba don Jesús  y  sin dejar el paraguas y el sombrero subía la luz hasta que el tubo diese una llama roja, lívida, humeante. Todos acudían a remediar la torpeza  y  audacia de este hombre;  y  quedábase el presidente templando la espita del quinqué.</p>
 				<p>Sentábase don Jesús; y apenas prendido el diálogo, se alzaba pasando  y  volviendo,  y  su sombra se quebraba atropelladamente por las paredes. No podía resistir el magistrado esta inquietud: le dañaba los ojos y hasta su palabra de tranquilas amplitudes forenses.</p>
@@ -646,7 +692,7 @@
 				<p>-Es que yo subía la luz porque usted se la quitaba.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0057_chap10">
-				<head>Don Jesús y el Judío errante</head>
+				<head xml:id="ne0057_head_009">Don Jesús y el Judío errante</head>
 				<p>Pasó un extranjero entre los porches de la plaza. Era tan seco  y  alto, que se le veía más solo,  y  semejaba asomarse sobre toda la ciudad como una cigüeña entre vallados.</p>
 				<p>Lo dijimos en casa de Mauro  y  una criada vieja nos avisó:</p>
 				<p>-Miren no sea el Judío errante.</p>
@@ -694,7 +740,7 @@
 				<p>-¡Don Jesús, don Jesús; ese hombre, el Judío Errante, brama loco de calentura!</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0057_chap11">
-				<head>El alma del Judío errante y don Jesús</head>
+				<head xml:id="ne0057_head_010">El alma del Judío errante y don Jesús</head>
 				<p>No estaba don Jesús, pero mirábamos entre las rejas del comedor, porque el canónigo, el presidente  y  el catedrático siempre hablaban de don Jesús; era el amigo aturdido, exaltado, a quien debían de vigilar para su bien. Todo rumor de la calle les hacía atender  y  asomarse. Y no llegaba.</p>
 				<p>Dijo el presidente que, todas las mañanas, su primer pensamiento era para alabar a Dios  y  agradecerle que le hubiese hecho tan desemejante de don Jesús.</p>
 				<p>Los otros asintieron de manera que confesaban bendecir a Dios por haber recibido la misma gracia del presidente.</p>
@@ -741,7 +787,7 @@
 				<p>...Y entre el humo dormido, sigue pasando don Jesús, con los hombros doblados, como si trajera un atadijo del «Judío errante»,  y  le buscara el cielo que le corresponde. Pero el Judío errante quedose tendido» muerto  y  sepultado,  y  don Jesús le ha substituida, errando siempre por la misma ciudad.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0057_chap12">
-				<head>El oracionero y su perro</head>
+				<head xml:id="ne0057_head_011">El oracionero y su perro</head>
 				<p>No recuerdo de otra masía que diese tan cabal idea de reposo como la de Francisco de Almudaina.</p>
 				<p>Casa torrada y grande, con su parral profundo, de viejos pilares como un claustro; tierras anchas y gruesas de pan, y en las lindes, los cerezos de bóvedas olorosas, que llevan la cereza de carne dura y fina, la cereza que ha de comerse mordiéndola como una poma, la cereza que entre los dientes de la mujer nos hace pensar en la inocencia de todo lo contrario. De estos árboles se enviaban ramos encendidos de fruto a don Emilio Castelar y al Arzobispo de Valencia.</p>
 				<p>No faltaba la encina, inmóvil y vetusta, junto a la masía. ¡Todo qué firme y sosegado! Hasta el orden para colgar los aperos de las pértigas hincadas en el muro, y para subir y doblar la soga del aljibe, y el frescor y la gracia de la cantarera, probaban la serenidad y quietud de costumbres de la familia labradora, dechado escrupuloso de amor a Dios, al prójimo y a sí mismo. Pasaba el Rosario todas las noches; se añadían los «Dolores» los viernes; socorríase a los mendigos los sábados con regojos y rebanadas de la cochura del martes; había colada los lunes, y bailes y tonadillas los domingos. Un mastín era el feroz meseguero; otro, guardaba los frutales, y un gato recorría primorosamente las trojes y bodegas.</p>
@@ -791,11 +837,11 @@
 				<p>-Sí, señor; sí...</p>
 			</div>
 			<div n="13" type="chapter" xml:id="ne0057_chap13">
-				<head>Tablas del calendario entre el Humo Dormido</head>
+				<head xml:id="ne0057_head_012">Tablas del calendario entre el Humo Dormido</head>
 				<div type="section">
-					<head>Semana Santa</head>
+					<head xml:id="ne0057_head_013">Semana Santa</head>
 					<div type="section">
-						<head>Domingo de Ramos</head>
+						<head xml:id="ne0057_head_014">Domingo de Ramos</head>
 						<p>El Señor sale de Bethania, y sus vestiduras aletean gozosas en el fondo azul del collado. Es un vuelo de la brisa que estaba acostada sobre las anémonas húmedas  y  la grama rubia de la ladera; y se ha levantado de improviso, como una bandada de pájaros que huyen esparciéndose porque venía gente; pero reconocen la voz y la figura del amigo, y acuden, le rodean, y le estremecen el manto y la túnica; le buscan los pies, se le suben a los cabellos; porque los pies y los cabellos y las ropas del Señor, y ahora ya la brisa, dejan fragancia del ungüento de nardo de la mujer que pecó.</p>
 						<p>La mañana de la aldea y del monte se rebulle muy mansa entre el abrigo del sol; y dentro del caliente halago aun queda un poco de la desnudez del último frío.</p>
 						<p>El Señor se para y calla aspirando, por recoger más la delicia del aliento del día. Está todo redundado del precioso aroma. Un aroma promete una imprecisa felicidad, alumbra una evocación de belleza, es un sentirse niño, acariciado como niño siendo poderoso. Pero en la prometida felicidad siempre pasa un presentimiento de pena.</p>
@@ -819,7 +865,7 @@
 						<p>Es mediodía; y salen las palmas ajadas. De la última cuelga un lazo de luto; es de una niña delgadita, y tan pálida, que su carne parece de corazón de palmera, y en sus ojos duerme un pesar de mujer y una desesperanza divina entre el júbilo y el sol del Domingo de Ramos.</p>
 					</div>
 					<div type="section">
-						<head>Lunes Santo</head>
+						<head xml:id="ne0057_head_015">Lunes Santo</head>
 						<p>Sentimos en nuestro corazón y en nuestra frente   la sequedad de la higuera que le negó su fruta al Señor en este día.</p>
 						<p>El Señor se vuelve a los suyos, que se pasman del súbito agotamiento del árbol maldecido, y les dice:</p>
 						<p>-Si hubiere fe en vosotros, si no dudareis, no sólo haréis lo que yo hice con la higuera sino más aún, porque si dijereis a este monte: «¡Apártate y húndete en el mar!», será hecho.</p>
@@ -843,7 +889,7 @@
 						<p>De un momento a otro, disputarán los hombres si ha de parar o no  ha  de parar, en estos días santos, el tránsito rodado por en medio de las ciudades. Son los encendidos confesores de la idea purísima religiosa y de la idea gallarda del progreso.</p>
 					</div>
 					<div type="section">
-						<head>Martes Santo</head>
+						<head xml:id="ne0057_head_016">Martes Santo</head>
 						<p>Hoy, el Señor, deja también el refugio del hogar de Lázaro para ir a los Pórticos del Templo.</p>
 						<p>La casa de Lázaro, lisa, encalada, resplandece al primer sol del día; detrás, sigue el huerto de cercas blancas; salen los frutales juveniles y una vieja vid que ya retoña. Hay un almendro con el frescor de la pelusa verde, un verde recién cuajado que se transparenta todo y parece humedecido como después de una lluvia buena. Los manzanos, los ciruelos, los perales entreabren sus rosas de leche.</p>
 						<p>Sobre el azul resalta la aldea, que parece toda de vellones; el verde, de jugo; los árboles como cristalizados en una salina. Y el Señor,  que ya bajaba la gradilla del terrado, se descansa sobre el barandal de palmera,  y  sus ojos se sumergen en la derretida miel de la mañana.</p>
@@ -857,7 +903,7 @@
 						<p>«<seg rend="italic">...Passio Domini nostri Jesu Christi secundum Marcum...</seg>». Y han ido leyéndola las novias con un rumor de abeja del panal de su cuerpo, sintiéndose hermosas y tristes de compasión por Nuestro Señor Jesucristo... Y los inflamados devotos se crispan de rabia contra los judíos... ¡Amar al prójimo como a sí mismo!... ¡Y piensan en los judíos, van recordando al prójimo,  y  se dicen que si ellos hubiesen sido o si ellos fuesen, nada más un instante, Nuestro Señor Jesucristo!...</p>
 					</div>
 					<div type="section">
-						<head>Miércoles Santo</head>
+						<head xml:id="ne0057_head_017">Miércoles Santo</head>
 						<p>«¿Quién es éste que trae sus vestiduras bermejas, como untadas de vendimia?... El lagar pisé  yo  solo; no hay hombre alguno conmigo; yo los rehollé,  y  su sangre salpicó mis ropas».</p>
 						<p>Así entra el Señor en los atrios que retumban del trastorno de las ferias  y  de los romeros de la Pascua. Todos los caminos de Jerusalén vienen henchidos  y  tronadores de caravanas blancas, fastuosas, joyantes, como navíos gloriosos; caravanas foscas, de dromedarios flacos y peludos, de gentes mugrientas.</p>
 						<p>Jerusalén es oleaje y noguera de sayales, de pieles, de gritos. Frutas en cuévanos, frutas en támaras, que evocan todo el árbol; cestos de peces, manojos de aves, urnas de bálsamos y resinas, ánforas de vinos, de aceites y mieles; temblor de blancura de recentales... Aromas, estiércol, razas y sol. Entre las almenas y torres pasan  y  vuelven las palomas, dejando una sensación de pureza y frescura en el azul seco, calcinado, de cielo de ciudad en colmo, sudada, clamorosa...</p>
@@ -879,7 +925,7 @@
 						<p>...Al salir del Oficio nos acoge el cielo claro  y  fragante de la luna de Nisán. Y toda la magna noche es un íntimo convite de delicias para los que sólo poseen la destilación de su voluntad y de su vida, el alimento de su espíritu, que en moneda apenas alcanza el valor de un cuadrante, como la ofrenda de la viuda pobre.</p>
 					</div>
 					<div type="section">
-						<head>Jueves Santo</head>
+						<head xml:id="ne0057_head_018">Jueves Santo</head>
 						<p>Tocan las campanas delirantemente. Las torres semejan molinos con las velas hinchadas  y  joviales.</p>
 						<p>Van pasando unas nubes muy raudas  y  bajas, de blancura de harina  y  espumas, frescas, pomposas;  y  la ciudad, los huertos, los sembrados, los rediles y alcores se apagan, se enfrían a trozos; y en seguida vuelven a la claridad caliente y cincelada.</p>
 						<p>...Ornamentos de tisú blanco  y  de oro; nieblas retorcidas de incienso, cánticos  y  clamores triunfales de órgano, júbilo magnífico del «<seg rend="italic">Gloria in excelsis</seg>...». Y de pronto, se duermen las campanas;  y  en el día extático, ya todo azul, comienza un coloquio de gorriones, de niños y jardines. Un águila que pasaba se ha quedado mirando la quietud del valle; después ha seguido volando, todo el cielo callado para sus alas rubias.</p>
@@ -897,7 +943,7 @@
 						<p>Fue entonces la hora propicia; porque en estos tiempos, Señor, no te clavarían; ahora te dejarían morir solo, y quizá ya te negaras a resucitar...</p>
 					</div>
 					<div type="section">
-						<head>Viernes Santo</head>
+						<head xml:id="ne0057_head_019">Viernes Santo</head>
 						<p>En una peña podrida de las afueras has agonizado, Señor. Desde la   cruz oías y velas el  júbilo de los caminos y de la ciudad. Dentro de la ciudad, en el frescor de las fuentes, de los aljibes, de los toldos y bóvedas, en los cenáculos y portales, la multitud se sentía buena, exaltada de amor a la tierra que tú, Señor, le prometiste. La tierra retoñaba en los días tibios y claros de Nisán.</p>
 						<p>...Polvo y estiércol de ganados; camellos inmóviles mirando el fuego donde cuecen el pan de la Pascua las mujeres de los aduares; gusanera de hijos entre pienso, cántaras y andrajos; vírgenes descalzas, de cabelleras que relucen de aceites, y, encima, un ánfora recta y roja sobre el azul; viejos de sudario pringoso, de barbas de crin, que hunden sus ojos amargos en los mercaderes sirios, fellats con callos de bestias, gentiles y rameras que muerden naranjas. No caben en la ciudad, y se amontonan en los eriales; y de rato en rato, se vuelven hacia el cerro de la ejecución. Algunos suben; miran los contornos de Jerusalén; pasean conversando bajo las cruces; reparan en una llaga, en una mueca, en una deformidad de un ejecutado; saben que este suplicio suele ser lento, y vuelven a su corro para esperar lo último.</p>
 						<p>No te conocían, Señor. Estabas solo; los que te siguieron, te dejaron; y escondidos en la ciudad, también aguardaban  y  querían que todo acabase.</p>
@@ -940,7 +986,7 @@
 						<p>...Y antes de cenar, los niños recortan las aleluyas del toque de Gloria.</p>
 					</div>
 					<div type="section">
-						<head>Sábado Santo</head>
+						<head xml:id="ne0057_head_020">Sábado Santo</head>
 						<p>Toda la casa duerme en el reposo sabático. No sale el ruido de la muela harinera, que es el rumor de vida de Israel; y en el sol de las tierras hortelanas, no brilla la carne sudada de los siervos agrícolas, los fellats desnudos, flacos y grandes.</p>
 						<p>Josef de Arimathea va descogiendo  y  meditando los pergaminos de las filacterias. San Mateo le llama a este creyente: «hombre rico»; San Marcos: «noble sanhedrita»; San Lucas: «varón bueno  y  justo»; San Juan: «discípulo oculto de Jesús».</p>
 						<p>Solitario de sus caudales, de su prosapia  y  de sus virtudes, ve hoy el desamparo de su pensamiento, la soledad de su fe en el Señor tendido ya una noche bajo la bóveda de roca que el patricio hizo cavar para su carne vieja.</p>
@@ -958,7 +1004,7 @@
 					</div>
 				</div>
 				<div type="section">
-					<head>La Ascensión</head>
+					<head xml:id="ne0057_head_021">La Ascensión</head>
 					<p>Para este día profiere David el salmo de júbilo y de triunfo: «¡Alzad, oh príncipes, vuestras puertas; abríos, puertas eternas, y entrará el Rey de la Gloria!».</p>
 					<p>Nosotros, en la víspera de la Ascensión, levantamos las puertas de la vida de ciudad para vivir el día escogido que llega palpitante entre el humo dormido al día nuevo. «Un día produce su palabra a otro día».</p>
 					<p>Y sentíamos una timidez y como la virginidad de nuestros deseos y de nuestras acciones por la conciencia de saber que habríamos de vernos en la distancia de las horas.</p>
@@ -984,7 +1030,7 @@
 					</quote>
 				</div>
 				<div type="section">
-					<head>San Juan, San Pedro y San Pablo</head>
+					<head xml:id="ne0057_head_022">San Juan, San Pedro y San Pablo</head>
 					<p>En los días más anchos y gozosos del verano, la Iglesia nos ofrece las festividades de San Juan Bautista  y  de San Pedro y San Pablo. De los tres, escogen las gentes dos; los lleva y los trae con la popularidad más inflamada y placera, y casi se olvidan de San Pablo, el «apóstol de las gentes». Porque San Pablo no ha de agradecer a los nombres ni una luminaria de pólvora, ni danza, ni hoguera, ni una hora de servicio extraordinario de tranvías.</p>
 					<p>Si alguna bienaventurada entrometida, si algún ángel poco curioso de las cosas de este mundo se llegara a San Pablo para felicitarle del júbilo de la verbena de su víspera, se persignaría de susto  y  sofocación oyendo al apóstol: «¡A mí qué se me da de todo eso que decís! Contádselo a Pedro,  y  casi más que a Pedro, a Juan el Bautista, aunque el Bautista no sabrá ni palabra de todas esas galanías, coplas, burlas y agudezas con que se solemniza la madrugada y mañanica de San Juan, según me dijo un santo  y  flaco caballero, que no conocéis: San Quijote de la Mancha, quien presenció una verbena de San Juan en Barcelona, aunque lo niegue don Vicente de los Ríos...».</p>
 					<p>San Pablo es capaz de saberlo. En sus tiempos, Saulo lee insaciablemente.  Florecen en Tarso las Bellas artes, la Filosofía, todas las disciplinas y gracias del saber, como en Alejandría y en Atenas. Hijo de padres judíos, puros y rígidos, lo llevan a las escuelas rabínicas farisaicas, y toma por maestro a Gamaliel. Convertido de súbito a la doctrina de Jesús, Pablo es el primer intelectual del Cristianismo, que entonces sólo necesita de hombres de fe. Será siempre un solitario. Al principio se aparta tres años en lo profundo de Arabia para meditar y sentirse en Cristo. Después caminará solo; nunca cuida de auparse y lucirse con su predicación, ni sus prendas corporales le ayudan. <seg type="quotation">«Porque, en verdad, sus cartas -dicen algunos- son graves y fuertes; mas la presencia de su cuerpo es flaca, y su palabra, remisa y sin adorno»</seg>.  Cor. II, X.</p>
@@ -1038,7 +1084,7 @@
 					<p>Esos «años más» dejan el humo que se para, el humo dormido de un día, que, como el del santo nuestro, el de Reyes y el de todos esos días tan inmóviles y veloces, tienen su más sabrosa emoción en la víspera...</p>
 				</div>
 				<div type="section">
-					<head>Santiago, patrón de España</head>
+					<head xml:id="ne0057_head_023">Santiago, patrón de España</head>
 					<p>Está con su hermano y su padre en la ribera, cosiendo las redes. Llega la voz de Jesús, y  los dos hijos se levantan y la siguen.</p>
 					<p>Pasando por tierras de Samaria, envía el Señor a buscar posada. No se la dan los samaritanos por la malquerencia que ellos y los judíos se tienen. Santiago y Juan se arrebatan y gritan:</p>
 					<p>-¡Maestro,  deja que pidamos fuego del Cielo que los devore!</p>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La pródiga</title>
-				<title type="sub">Novela</title>
+				
 				<title type="short">Prodiga</title>
-				<title type="idno">
-					<idno type="bne">XX2252047</idno>
-					<idno type="viaf">310912416</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX920308</idno>
-					<idno type="viaf">44294383</idno>
-					<name type="short">Alarcon</name>
-					<name type="full">Pedro Antonio de Alarcón</name>
+					<name type="short" ref="#Alarcon"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1270</measure>
@@ -141,13 +131,48 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0176</idno>
+						<idno type="cligs">ne0176</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#other" subtype="pdf">Biblioteca Virtual Andalucía, <date></date>, <idno></idno>, <ref target="http://www.bibliotecavirtualdeandalucia.es/catalogo/consulta/registro.cmd?id=8048"/>, <ref target="http://www.bibliotecavirtualdeandalucia.es/catalogo/consulta/registro.cmd?id=8048"/>.</bibl>
-				<bibl type="print-source">Madrid : [s.n.], (Imp. de A. Pérez Dubrull)<date when="1882">1882</date></bibl>
-				<bibl type="edition-first"><date when="1882">1882</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La pródiga</title>
+					<title type="sub">Novela</title>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2252047.html">XX2252047</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/310912416/">310912416</idno>
+				</idno>
+				</title>
+					<author xml:id="Alarcon">
+						<name type="full"><forename>Pedro Antonio</forename> <surname>de Alarcón</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9261 - IO 9262">IO 9261 - IO 9262</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118869302">118869302</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q313553/">Q313553</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX920308.html">XX920308</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/44294383/">44294383</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#other" subtype="pdf">Biblioteca Virtual Andalucía, <date/>, <idno/>, <ref target="http://www.bibliotecavirtualdeandalucia.es/catalogo/consulta/registro.cmd?id=8048"/>, <ref target="http://www.bibliotecavirtualdeandalucia.es/catalogo/consulta/registro.cmd?id=8048"/>.</bibl>
+					<bibl type="print-source"><pubPlace>Madrid</pubPlace> : [s.n.], (Imp. de A. Pérez Dubrull)<date when="1882">1882</date></bibl>
+					<bibl type="edition-first"><date when="1882">1882</date></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">La pródiga</title>: 	<title type="sub">novela</title> <date when="1883">1883</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="43436049X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=43436049X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La pródiga</title> <date when="1893">1893</date>, <publisher>Pérez Dubrull</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="24606708X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=24606708X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La pródiga</title>: 	<title type="sub">novela</title> <date when="1926">1926</date>, <publisher>Rivadeneyra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="112679774X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=112679774X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La pródiga</title> <date when="1940">1940</date>, <publisher>[wechselnde Drucker]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46113568X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46113568X"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Verschwenderin</title>: 	<title type="sub">Roman</title> <date when="1942">1942</date>, <publisher>Frick</publisher> <pubPlace>Wien</pubPlace> 		<idno type="ppn" n="1137343435" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1137343435"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Die Verschwenderin</title> <date when="1942">1942</date>, <publisher>Wilhelm Frick</publisher> <pubPlace>Wien</pubPlace> 		<idno type="ppn" n="464594383" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464594383"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La pródiga</title> <date when="1975">1975</date>, <publisher>Ed. Nacional</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039121607" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039121607"/> 		<idno type="isbn" n="8427612389"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La pródiga</title> <date when="2001">2001</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="342567799" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=342567799"/> 		<idno type="isbn" n="847039892X"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Niño de la Bola</title> <date when="2004">2004</date>, <publisher>Fundacíon José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1187853615" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1187853615"/> 		<idno type="isbn" n="8489794987"/></bibl>
+						<bibl type="further-edition"><title type="main">La pródiga</title> <date when="2004">2004</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="791095398" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=791095398"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -159,6 +184,14 @@
 				<p>Julia advierte que ha llegado el momento de separarse; tiene la certeza de que GUillermo ya no la quiere. Como su amante, movido por la piedad, no se atreve a dar este paso, ella se suicida para no ser un estorbo en su vida. En el breve epílogo se nos dice que el protagonista regresa a la corte y olvida esta aventura. Acaba caso y convertido en "héroe de la paz" y padre de familia numerosa.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9261" key="IO 9261" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL7">6</term>
 					<term type="author.continent">Europe</term>
@@ -183,7 +216,7 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">sentimental</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
@@ -222,6 +255,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-04-27" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -237,9 +271,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>LIBRO PRIMERO: CAMPAÑA ELECTORAL</head>
+				<head xml:id="ne0176_head_000">LIBRO PRIMERO: CAMPAÑA ELECTORAL</head>
 				<div n="1" type="chapter" xml:id="ne0176_chap1">
-					<head>I. Política recreativa</head>
+					<head xml:id="ne0176_head_001">I. Política recreativa</head>
 					<p><seg rend="smallcaps">ace </seg>ya de esto quince ó veinte años.</p>
 					<p>Preparábase en nuestra siempre revuelta España una elección general de Diputados á Cortes. La batalla debía reñirse aquella vez por <seg rend="italics">circunscripciones,</seg> y los tres candidatos de oposición embozada que aspiraban á representar la parte Nordeste de cierta provincia andaluza, donde eran mucho menos conocidos que en Madrid, bien que tuviesen en ella tal ó cuál pariente y alguna finca, andaban recorriendo, juntos y á caballo, villas, lugares, aldeas y cortijos, en busca de votos contrarios al Ministerio;— oficio divertidísimo si los hay, cuando uno es todavía joven y poco ambicioso, aficionado á montar, indiferente á los peligros ó dado á correrlos, más devoto de la naturaleza que de la política, y más amante de las mozas guapas, del buen vino y de las fatigas corporales que de todas las formas de gobierno habidas y por haber.</p>
 					<p>Tal acontecía en aquel entonces á los candidatos referidos, y muy especialmente al que entre ellos hacía cabeza, del cual hablaremos luego más despacio. Llevaban, pues, muchos días de asordar agrestes soledades con sus risas y bromas, reservando la formalidad para cuando entraban en poblado; de escalar y salvar montes y breñas, á todo el correr de sus alquilados corceles, en demanda de ocultos y desprevenidos lugarejos; de entrar en ellos como asoladora tromba, interrumpiendo la fastidiosa paz de la rutina y la pobreza; de comerse la <seg rend="italics">matanza</seg> de alcaldes, estanqueros y otras personas de viso (que no la prueban nunca, sino que la guardan para tales casos de honra, y de dejarles en cambio la cabeza y el pueblo llenos de perturbadoras cuanto peregrinas especies madrileñas, que cada labriego traducía al tenor de sus pasiones y apetitos, con detrimento y mengua de antiguos respetos sociales....</p>
@@ -291,7 +325,7 @@
 					<p>—Señores.... se suspende esta discusión.... (dijo Miguel, apagando la luz).—Mañana veremos y juzgaremos por nosotros mismos.... —Entre tanto, muy buenas noches.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0176_chap3">
-					<head>III: EL CORTIJO DEL ABENCERRAJE</head>
+					<head xml:id="ne0176_head_002">III: EL CORTIJO DEL ABENCERRAJE</head>
 
 					<p>Serían las diez de la mañana siguiente, mañana deliciosísima de un seco y templado otoño andaluz, muy más bello y florido que todas las primaveras del mundo, cuando los tres candidatos, después de almorzar cosas muy sólidas, remojadas con los correspondientes líquidos, salieron de aquel pueblo en dirección al Cor-<seg rend="italics">tijo del Abencerraje</seg>, ó sea al <seg rend="italics">Palacio de la Marquesa</seg>, precedidos de una comisión de la villa inmediata en que pensaban hacer noche, acompañados del picaro Secretario que conocemos, y seguidos de muchos criados de caballería é infantería.</p>
 					<p>Estos últimos iban disparando tiros y cohetes, como para notificar á todas las aldeas, cortijadas y chozas de pastores de las cercanías, que por allí pasaban los futuros vencedores de la contienda electoral y posibles redentores de aquel pedazo de España; y, en tal disposición, entre vivas, cantos y polvareda, á eso de las once, penetró la alegre cabalgata en un diminuto y verde va-llejuelo, desconocido por los geógrafos, donde parecía que la paz había fijado su domicilio.</p>
@@ -310,7 +344,7 @@
 					<p>Nuestros amigos, y muy singularmente el soñador discípulo de Urania, comenzaron á participar allí de la reverencia del Secretario á la noble y decaída vivienda rural de los extinguidos Marqueses de....; y, ya se habían mirado más de una vez, con aire de conmiseración á tantos estragos de la mudable fortuna, cuando se abrió la puerta que comunicaba con los aposentos interiores, y apareció la <seg rend="italics">Pródiga.</seg></p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0176_chap4">
-					<head>IV: LA SEÑORA MARQUESA.</head>
+					<head xml:id="ne0176_head_003">IV: LA SEÑORA MARQUESA.</head>
 					<p>Absortos y como vencidos por su in-teresante y soberana figura quedaron los tres madrileños. Ni la sencillez con que estaba vestida y peinada, ni la exquisita naturalidad con que los saludó y les invitó á sentarse en los anticuados sillones, al propio tiempo que ella ocupaba el centro del sofá, ni el tono llano y gracioso con que les pidió perdón de haberles hecho aguardar unos minutos, «á consecuencia (fueron sus «palabras) de acabar de hundirse tres peldaños de la escalera de la Torre, donde se «hallaba echando de comer á sus tórtolas, »cuando los vió asomar por lo hondo del » valle, y de donde habían tenido que bajarla »á puñados;» ni, en fin, la ingenuidad y lisura con que desde luego les dijo: — «Su<seg rend="italics">pongo que Vds</seg><seg rend="italics">andan de elecciones</seg>....,»</p>
 					<p>fueron parte á que dejaran de ver inmediatamente en la noble dueña del Cortijo á la antigua dama elegante, á la mujer del gran mundo acostumbrada á dominar, á la diosa que había esclavizado tantos y tantos corazones.</p>
 					<p>Figuraos á la Venus de Milo, no de piedra, sino de carne, y llegada á los treinta y siete años de edad; figuraos una mezcla de Margarita de Valois, relegada'por su abochornado marido al castillo de Usson, y de María An-tonieta, presa en la Conserjería; figuraos todos los encantos y grandezas femeniles anulados por la desgracia; una belleza inútil y como postuma, que parecía artística urna de un espíritu muerto; una cesárea majestad sin súbditos; una suprema distinción sin galas; una munificencia olímpica sin dinero, y todavía no habréis formado idea de la hermosura, de la elegancia y del poderío señorial que habían sobrevivido á los millones y á los entusiasmos de aquella mujer.—Naciera menos orgullosa ó digna, y aún reinara en el mundo con la sola eficacia de sus hechizos.... —Hablamos así, porque quizás era entonces más bella y seductora que nunca.... Sus grandes ojos negros y su incitante boca debían á las pasadas contiendas de amor no sé qué expresión de infinito deleite, que ni el mismo arrepentimiento podía ya borrar.... Dijérase que el dios-niño, tantas veces alojado en aquellas pupilas y en aquellos labios, había dejado en ellos un reflejo inmortal de sus miradas y de sus sonrisas. Las mismas languideces de otoño que se revelaban con suave livor en sus voluptuosas ojeras y con vaga melancolía en los donaires de su gesticulación, aumentaban la tentadora gracia de aquella Eva sin Paraíso ni familia, de aquella Magdalena sin remordimientos, cuya jubilación y penitencia nada habían tenido de voluntarias.—Indudablemente, el orgullo de raza suplía en ella por la virtud, é, imposibilitada de pecar como sus iguales, no quería prostituirse como sus inferiores. — Todo el problema de quien en aquel destierro aspirase á su amor consistiría, pues, en averiguar si Julia lo consideraba ó no igual á sí misma.</p>
@@ -335,7 +369,7 @@
 					<p>Enrique tuvo que coger del brazo á Guillermo para hacerle apartar de Julia los ávidos ojos, hasta que al fin logró sacarlo del desmantelado aposento en que ella se quedaba sola y esquiva como sepulcral estatua de sí propia.</p>
 				</div>
 				<div n="5" type="chapter" xml:id="ne0176_chap5">
-					<head>V: JOSÉ.</head>
+					<head xml:id="ne0176_head_004">V: JOSÉ.</head>
 					<p>Pocos momentos después, los tres amigos montaban á caballo en el patio de la casa, no sin haberse enterado antes de que el tío Antonio había obsequiado grandemente á toda la comitiva (inclusas las bestias), por orden y cuenta de la Señora.</p>
 					<p>Cuando ya iban á echar á andar, repararon nuestros jóvenes en que un arrogante y gallardo campesino, de diez y ocho á veinte años de edad, muy bien vestido al uso de su clase y montado en un hermoso mulo, los saludaba cortésmente, quitándose el sombrero, como pidiéndoles permiso para acompañarlos.</p>
 					<p>—Es mi José.... (atrevióse á decir entonces el tío Antonio, presentándoselo á nuestros amigos).—Yaque por mis años y mis ocupaciones no voy yo con Vds., me permitirán que vaya mi hijo único....</p>
@@ -400,7 +434,7 @@
 					<p>Dejémosle con ellos, y retrocedamos nosotros al <seg rend="italics">Cortijo del Abencerraje.</seg></p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0176_chap6">
-					<head>VI: RESONANCIAS DE LA VIDA..</head>
+					<head xml:id="ne0176_head_005">VI: RESONANCIAS DE LA VIDA..</head>
 					<p>Serían las siete de aquella noche, cuando la <seg rend="italics">Pródiga</seg>, sentada delante de rústico velador, en una glorieta cubierta defrondoso emparrado, hacía como que cenaba, por no disgustar al tío Antonio y á su mujer, que le habían preguntado ya dos ó tres veces si estaba indispuesta.</p>
 					<p>La luna, llena y esplendorosa, asomaba en aquel momento sobre los altos árboles que servían de cerca al que fué jardín del Palacio, y su fulgor melancólico amortiguaba ya el de un velón de Lucena colocado sobre el velador.</p>
 					<p>—¡Pues lo que es esto va Vuecencia á probarlo! (dijo la anciana esposa del capataz, presentando á Julia una fuente de leche migada).—¡ Hasta ahora no ha cenado más que en el nombre, y al mediodía no comió nada!—¡ Se conoce que las visitas de esta ma-nana le han despertado á Vuecencia tristes recuerdos!</p>
@@ -442,7 +476,7 @@
 					<p>—¡Perdóneme V., señora!....— ¡Perdóneme V.I</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0176_chap7">
-					<head>VII: Una mujer que se conocía a sí misma.</head>
+					<head xml:id="ne0176_head_006">VII: Una mujer que se conocía a sí misma.</head>
 					<p>¿Qué he de hacer  sino perdonarle? (respondió Julia, riéndose con melancólica indulgencia).—¡Estaría escrito que volviéramos á vernos!—Siéntese.... (añadió en seguida, mostrándole una silla de hierro que había cerca de la suya).— Ya contaba yo con que volvería V. esta noche, y la prueba es que había dado orden en la casa de que le dijesen que estaba indispuesta y durmiendo y no podía pasárseme recado, así como de que le prohibieran á V. pernoctar en el Cortijo....</p>
 					<p>—¿Será verdad? (exclamó Guillermo con admiración y cierto júbilo).—|V. me <seg rend="italics">esper</seg><seg rend="italics">aba!....</seg></p>
 					<p>—No, señor....—Yo <seg rend="italics">temía</seg> que V. viniese....; y bien claro lo demuestran las referidas órdenes dadas á mi capataz....</p>
@@ -496,7 +530,7 @@
 					<p>Guillermo y Julia se despidieron, pues, ceremoniosamente á presencia del mozo, y á los pocos instantes caminaban juntos ambos enamorados de la <seg rend="italics">Pródiga</seg>, en dirección al pueblo en que Miguel y Enrique se habían quedado conquistando electores.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0176_chap8">
-					<head>VIII: DOS VENCEDORES Y UN VENCIDO.</head>
+					<head xml:id="ne0176_head_007">VIII: DOS VENCEDORES Y UN VENCIDO.</head>
 					<p>Habían pasado tres semanas.</p>
 					<p>Guillermo, Enrique y Miguel eran ya Diputados á Cortes, gracias á la continua movilidad y sumo denuedo con que habían rechazado las arbitrariedades y violencias de su antiguo amigo el Gobernador—que, á última hora, y aunque los creía candidatos naturales y legítimos, tuvo que combatirlos á muerte, en virtud de órdenes superiores.... á su conciencia.</p>
 					<p>Nuestros amigos, de regreso en la capital de la provincia desde la noche anterior á la en que nosotros volvemos á encontrarlos, estaban alojados triunfalmente, y á puerta abierta, como lo exigíanlas circunstancias, en<seg rend="italics"> las habitaciones principales de la mejor fonda</seg>, donde aún no habían conseguido descansar ni un solo momento de tantos y tantos días de cabalgar, echar discursos, apretar manos, trabucar nombres, sonreír, prometer, dar las gracias y archivar notas.... —Y era que los electores más influyentes, ó más visibles y fogueados en aquella y otras campañas, los habían seguido hasta allí, según costumbre, desde sus remotas villas y aldeas, resueltos á no dejarlos <seg rend="italics">hasta el último momento</seg>, ó sea <seg rend="italics">hasta verlos arrancar </seg>en dirección á la Corte; placer honrosísimo que los tres madrileños no querían retardarles en modo alguno....; por lo que ya tenían acordado <seg rend="italics">arrancar</seg> aquella misma noche en el tren de las cuatro de la madrugada.</p>
@@ -528,7 +562,7 @@
 					<p>Guillermo se mordió los labios, conociendo que estaba vencido <seg rend="italics">de hecho</seg>, aunque él supusiera que no <seg rend="italics">de derecho,</seg> y se abstuvo de responder ni una sola palabra. Pero, cuando vió que sus compañeros dormían profundamente, levantóse sin hacer ruido, se puso la bata, pasó al inmediato salón, y contestó á aquellos crueles discursos.... escribiendo la siguiente epístola....</p>
 				</div>
 				<div n="9" type="chapter" xml:id="ne0176_chap9">
-					<head>IX: Á LA EXCMA. SRA. DONA JULIA DE ***— PARTIDO DE *** — TÉRMINO DE  CORTIJO DE *** CORTIJO DEL ABENCERRAJE.</head>
+					<head xml:id="ne0176_head_008">IX: Á LA EXCMA. SRA. DONA JULIA DE ***— PARTIDO DE *** — TÉRMINO DE  CORTIJO DE *** CORTIJO DEL ABENCERRAJE.</head>
 					<p>Mi adorada amiga:</p>
 					<p>»Con esta primera frase he dicho ya en resumen todo lo que es V. para mí y todo lo que yo soy para V.</p>
 					<p>»Sigo yo amándola con locura y creyendo que mi mayor felicidad sería vivir y morir á su lado en ese delicioso retiro, gozando de los tesoros de su bondad, de su belleza y de su talento; y V. (que equivocadamente ve en semejante unión mi desgracia, más bien que la suya, y que, si algo teme para sí, es no poderme hacer dichoso toda la vida) continúa demostrándome la hidalga amistad con que desde luego me alejó de su lado y se negó á contraer conmigo lazo ni compromiso alguno.</p>
@@ -544,7 +578,7 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro II: SUEÑOS DE AMOR Y FORTUNA.</head>
+				<head xml:id="ne0176_head_009">Libro II: SUEÑOS DE AMOR Y FORTUNA.</head>
 				<div n="10" type="chapter" xml:id="ne0176_chap10">
 					<p>I: PARA VERDADES.... MADRÍD.</p>
 					<p>Días, semanas, y hasta meses trascurrieron, sin que Guillermo, establecido de nuevo en su preciosa casa de Madrid, y rodeado de apremiantes quehaceres y obligaciones, recibiera contestación ni noticia alguna de la <seg rend="italics">Pródiga; </seg>y como, por otra parte, no había vuelto á presentársele ocasión en que hablar de ella, ni de aquel viaje, ni de las elecciones, ni de nada íntimo y amistoso con los aprovechados y olvidadizos Enrique y Miguel, únicas personas en quien hubiera podido hallar eco tan rara historia, llegaban momentos en que al generoso amador le parecía un sueño todo lo relativo al <seg rend="italics">Cortijo del Abencerraje</seg>, ó que aquel vallecillo y sus moradores no pertenecían ya al mundo, como dejan de perteneceré los pueblos que suprimió un temblor de tierra.</p>
@@ -558,7 +592,7 @@
 				</div>
 				<div n="11" type="chapter" xml:id="ne0176_chap11">
 
-					<head>II: UNA SESIÓN DE CORTES.</head>
+					<head xml:id="ne0176_head_010">II: UNA SESIÓN DE CORTES.</head>
 					<p>Así las cosas, el 16 de Diciembre ventilóse en la Cámara la grave cuestión, eminentemente política, en que principalmente disentían sus correligionarios y el Ministerio....</p>
 					<p>El caudillo de la disidencia acababa de quemar el último cartucho sin conseguir ventaja alguna sobre el Ministro de la Gobernación, que, más elocuente que nunca en tan crítico lance, casi le había arrancado ya su bandera y proclamaba, entre los aplausos de unos y el estupor de otros, que desde aquel día los disidentes estaban obligados á apoyarle ó á renegar de su historia....</p>
 					<p>La emoción del Congreso era inmensa; indudable el triunfo de los dos ó tres Ministros amenazados de muerte hasta aquel momento, según opinión general; espantoso el pánico de los ilustres vecinos de asiento de</p>
@@ -577,7 +611,7 @@
 					<p>Y, con esto, se levantó la sesión.</p>
 				</div>
 				<div n="12" type="chapter" xml:id="ne0176_chap12">
-					<head>III.: SEGUNDA CARTA DE GUILLERMO A JULIA.</head>
+					<head xml:id="ne0176_head_011">III.: SEGUNDA CARTA DE GUILLERMO A JULIA.</head>
 					<p>Dicho se está que aquella noche no se cupo de pié en casa de nuestro amigo..., — Diputados, senadores, ingenieros, abogados, artistas, pretendientes, quinientas personas fueron á estrechar su mano; y entre ellas figuraron constantemente, echándola de familia ó familiares del triunfador (cuyos padres y hermanos residían en Murcia), los famosos Miguel y Enrique.</p>
 					<p>—¿Y Julia? (preguntáronle los dos por separado). ¡Nada nos has dicho de ella desde que vinimos!....—¡Hermosa mujer!—Y ¡qué carácter! ¡qué talento!....—¿Te escribe?</p>
 					<p>Guillermo se encogió de hombros, y contestó á ambos de igual manera:</p>
@@ -601,7 +635,7 @@
 					<p>«Madrid, á las tres de la madrugada del 17 de Diciembre de....»</p>
 				</div>
 				<div n="13" type="chapter" xml:id="ne0176_chap13">
-					<head>IV.: EL FONDO DEL ALMA.</head>
+					<head xml:id="ne0176_head_012">IV.: EL FONDO DEL ALMA.</head>
 					<p>La puntual designación de día y hora que iba al pié de esta endiablada carta, resumía y daba á entender muchas cosas que en ella no había mencionado Guillermo, y que Julia no podría acaso comprender por entonces.— Aquella minuciosa fecha quería decir, para la conciencia del embrollado joven, y tal vez <seg rend="italics">probar </seg>con el tiempo á su misma adorada, que pocas horas después de un inmenso triunfo parlamentario, cuando el más lisonjero <seg rend="italics">porvenir</seg> abría sus doradas puertas al ya casi Ministro, éste se había ratificado en su actitud y amantes protestas de 1.°y 20 de Octubre....; lo cual demostraba la grandeza y heroísmo de su pasión, etc., etc.</p>
 					<p>Disculpa merece tal debilidad en quien tantas otras había cometido y tenía que cometer por resultas de la dolencia moral que le aquejaba, y que es común á todos los hombres de genio, en el tránsito de la juventud á la virilidad. Muchos deciden del resto de su vida (por el suicidio, por extravagantes y perniciosos casamientos ó por un anticipado retiro á la vida campestre) durante ese crítico período de pesimismo, desfallecimiento y misantropía, fundados en ilusiones ópticas de la-imaginación.... De consiguiente, no fué raro que nuestro orador, después de haber tenido la magnanimidad relativa y el buen gusto amoroso de no refe-rir á Julia su gran victoria de aquella tarde, escribiese tal fecha con el propósito de invocarla y utilizarla algún día....</p>
 					<p>Y, ya que tenemos en la mano el microscopio, advertiremos también que la escritura de aquella desesperada carta puso de muy buen humor á Guillermo, cual si, jugando el todo por el todo, se hubiese quitado un gran peso de encima....—Porque la verdad era que, á vuelta de tantas concesiones y promesas como otorgaba á Julia, establecía ya una especie de condición para realizar su <seg rend="italics">amenaza</seg> de volver al <seg rend="italics">Cortijo del Abencerraje</seg>, en el mero hecho de pedir á la <seg rend="italics">Pródiga </seg>que le escribiese ella antes, diciéndole que sería bien acogido....; lo cual dejaba al candidato para Ministro en situación más libre y desembarazada (moralmente), suponiendo que la animosa proscrita no contestase tampoco á aquella segunda carta....—Iría entonces ó dejaría de ir al tal cortijo, según que se lo exigiese su propio corazón en la nueva vida que le llamaba con seductores cantos, pero no por virtud del generoso y absoluto compromiso contraido en Octubre,—tanto más de obligar cuanto que no había sido impuesto ni aceptado por aquella desgraciada mujer!</p>
@@ -610,7 +644,7 @@
 					<p>No hay como ser hombre para incurrir en estas flaquezas.</p>
 				</div>
 				<div n="14" type="chapter" xml:id="ne0176_chap14">
-					<head>V.: METAMORFOSIS.</head>
+					<head xml:id="ne0176_head_013">V.: METAMORFOSIS.</head>
 					<p>Desde el día siguiente cambió por completo la vida del misántropo que tan desconsoladora carta acababa de echar al correo, certificada y todo. —Aquel invierno no había <seg rend="italics">hombre de moda</seg> en Madrid, y lo fué él.—Las damas aristocráticas que le habían oido y <seg rend="italics">visto</seg> pronunciar su gran discurso desde las tribunas presidencial y diplomática del Congreso, tuvieron el antojo de lucirlo en sus salones, en su mesa, en sus palcos, y áun dicen que alguna deseó oirle hablar á solas en su gabinete, de aquellas cosas tan varoniles y tan enérgicas que había dicho al Ministro de la Gobernación.</p>
 					<p>Estos repentinos hombres-ilustres de la clase media, ricos todavía de savia natural, y pulimentados hasta cierto punto á fuerza de estudio y de talento, suelen ser muy del agrado de las patricias, que ya se saben de memoria el estilo y modales parisienses, comunes á sus exquisitos, macilentos y burlones primos ó pares, todos cortados por la misma <seg rend="italics">irreprochable</seg> tijera....—Justificado, pues, por. la gloria alcanzada en las Cortes el ingreso de nuesto impetuoso amigo en la aristocracia, agasajáronle igualmente las severas y altivas ricas-hembras incapaces de claudicar que las de menos rigurosa y dura condición, complaciéndose todas, en la esfera de sus gustos, de tratar á hombre tan distinguido, é imponiendo fácilmente su amistad y su trato á los proceres de su casa ó tertulia, con especialidad á los viejos y á los estudiosos.</p>
 					<p>Por otra parte, la gente política no lo dejaba á sol ni á sombra. Conferencias, almuerzos, comidas, juntas, proyectos de fundación de periódicos, planes de obras públicas para cuando ocúpasela poltrona de Fomento, programas políticos, candidaturas para directores y hasta para secretario particular suyo, ¡qué sé yo cuántas cosas absorbían el tiempo y la atención y la bilis del joven necesario,—el cual ya no era ingeniero, ni abogado, ni pintor, ni bilioso; sino político, diputado, orador, futuro ministro, y hombre tan confiado y optimista, que hasta con Enrique y Miguel había vuelto á ser expansivo y afable!</p>
@@ -634,7 +668,7 @@
 					<p><seg rend="sup">1</seg> Está incluida en la Primera Serie de <seg rend="italics">Novelas Cortas</seg> del Autor.</p>
 				</div>
 				<div n="15" type="chapter" xml:id="ne0176_chap15">
-					<head>VI: PURA.</head>
+					<head xml:id="ne0176_head_014">VI: PURA.</head>
 					<p>Desde que que, aprincipios de Enero, comenzaron los grandes bailes de la aristocracia, notóse que una linda joven, llamada Pura, hija única de los Marqueses de Pinto, Grandes de España de primera clase y ricos de tercera ó cuarta (pues que sólo tenían quince mil duros de renta, cuando muchos de sus amigos ó parientes gastaban igual suma en las dos ó tres fiestas que daban al año), dirigía miradas muy sentimentales y dulces con sus aterciopelados y grandes ojos negros al aplaudido y gentil legislador, le concedía cada noche dos ó tres walses ó polkas (Guillermo bailaba divinamente, como cualquier simple mortal), y luego se iba, apoyada en su brazo, al <seg rend="italics">buffet</seg>, hablando de pintura, música y escultura, en cuyas artes era muy entendida, por haber pasado algunos otoños en las capitales de Baviera y Sajonia....</p>
 					<p>De esta afición á discurrir sobre obras artísticas nació precisamente la amistad de Guillermo con la erudita y elegante doncella, cerca de la cual comió cierta noche en casa de la anciana Duquesa intolerante, y á cuyos solemnes y taciturnos padres sólo había sido presentado muy á la ligera. La muchacha, habladorcilla y valiente de suyo, por más que se ruborizase algo siempre que mudaba de conversación, lo cual hacía con estudiada frecuencia, le preguntó, á propósito de la forma de un salero, si había estado en Munich y Dresde: déla contestación resultó que donde Guillermo había estado era en Florencia y Roma: no conocía ella ni á Roma ni á Fio-renda, como no conocía él á Dresde ni á Munich; y, sobre si tal museo era mejor ó peor que tal otro, y sobre si la <seg rend="italics">Madonna</seg> H valía más ó menos que la <seg rend="italics">Madonna</seg> B, tuvieron altercados, llegaron á transacciones, hicieron su respectiva profesión de fe en materias de sentimiento, de forma, de color, de libros, de telas y hasta de manjares; convinieron al fin en todo; miráronse mucho; se regalaron violetas y heliotropos del vecino <seg rend="italics">centro-de-mesa</seg>, y quedaron apalabrados para el primer wals...., en el próximo baile de la Embajada de Francia.</p>
 					<p>Verdaderamente, Pura era lo que se llama un primor. Morena clara, algo descolorida, menos en los casos ya citados; de no pequeña estatura, aunque ni tan alta ni tan mujer como la <seg rend="italics">Pródiga-,</seg> delgada en apariencia, y esbelta y voluptuosa en realidad, por no sé qué tentadora hipocresía ó púdica reserva de sus juveniles perfecciones; igualmente disimulada en cuanto al carácter, pues que la melancolía romántica de su faz servía de máscara á cierto retozo burlón de la mente, manifiesto y claro á lo mejor en picarescas y graciosas sonrisas; demócrata, en fin, de gustos y aficiones, ó en sus caprichos efímeros, cuanto linajuda y retrógrada en sentimientos y creencias, la hija de los Marqueses de Pinto, y Marquesa ya ella de otro título que le habían cedido sus padres, ofrecía una curiosa amalgama de candor y sabiduría, de belleza y de ingenio, de recato y de travesura, muy á propósito para interesar á hombres de la imaginación y cavilosidades de nuestro héroe.</p>
@@ -643,7 +677,7 @@
 					<p>¿Estaría la muchacha segura de <seg rend="italics">triunfar?</seg></p>
 				</div>
 				<div n="16" type="chapter" xml:id="ne0176_chap16">
-					<head>VII: IDILIO MADRILEÑO.</head>
+					<head xml:id="ne0176_head_015">VII: IDILIO MADRILEÑO.</head>
 					<p>Así las cosas, la noche del 20 de Febrero hubo un gran baile en casa de los opulentos Duques de Carmo-na....—Estaban allí todas las personas distinguidas de la corte, ó sea todas las aristocracias, la heráldica, la política, la militar, la del saber, la del dinero, la de las letras y la de las artes; y, con ser tan espaciosos aquellos salones y galerías, no se cabía en ellos materialmente.—Por fortuna, habíase improvisado un jardín artificial en el gran patio de la casa, cubierto de cristales y templado por multitud de caloríferos, y desde él se pasaba á las estufas del verdadero jardín, todas ellas ricamente alfombradas, y llenas de macetones con altos árboles exóticos....—Discurrían, pues, por aquellos fantásticos verjeles, en busca de aire y de libertad, muchas parejas, fingiéndose que andaban por el campo; y, como la iluminación estaba amortiguada y dispuesta de modo que imitase la plácida claridad de la luna, la ilusión de los paseantes era completa.</p>
 					<p>Cuando, en uno de los más atestados y calurosos salones del principal, fué Guillermo á saludar á la Marquesita, aseguróse ésta de que ni sus padres ni persona ninguna que la conociera ó tratara estaban al alcance de sus perspicaces ojos, y, en vez de contestar con meras palabras al saludo del gallardo ingeniero, levantóse resueltamente, se cogió de su brazo, y le dijo con bien representada vehemencia:</p>
 					<p>—¡Sáqueme V. de aquí!....—¡Esto es ahogarse!—¡Lléveme á las galerías improvisadas en los invernaderos, que dicen están muy preciosas!....—Allí podrá V. dejarme con cualquier persona conocida, y marcharse, como otras noches, en busca de su adorado <seg rend="italics">ecarté</seg></p>
@@ -670,7 +704,7 @@
 					<p>Y tomó el camino del patio, y desde allí la escalera arriba, en busca de los gabinetes de fumar y de juego, asombrándose de haber estado triste alguna vez en el mundo, cuando la Felicidad era una diosa tan amable y condescendiente con los buenos mozos y oradores de punta, que no había más que alargar el brazo para cogerla por el talle y ser dueños de ella por toda la vida....</p>
 				</div>
 				<div n="17" type="chapter" xml:id="ne0176_chap17">
-					<head>VIII.: UN DIPLOMATICO.</head>
+					<head xml:id="ne0176_head_016">VIII.: UN DIPLOMATICO.</head>
 					<p>Pero ¿y Julia? ¿Había sido ya olvidada por Guillermo? jDe ningún modo!—Guillermo no ^ la había olvidado; pero el mundo.... ¡el mundo iba dando la razón á la ingenua proscrita, ó sea confirmando aquellos anatemas que tan valientemente fulminó contra sí propia en el jardín del Cortijo para atajar los temerarios proyectos del joven!....</p>
 					<p>Queremos decir que á éste se le habían presentado nuevas ocasiones, desde que frecuentaba los altos círculos, de adquirir noticias acerca de la <seg rend="italics">Pródiga</seg>...., bien que ninguna de hablar con persona desapasionada y justa que la hubiese tratado íntimamente, y que tales horrores y espantos había oído, que, á pesar suyo, ó tal vez sin mucho pesar, se iba convenciendo de que unirse, en cualquier modo que fuera, á aquella infortunada, equivaldría á romper con el género humano, á colocarse <seg rend="italics">fuera de la ley</seg>, á librar imprudente batalla á la sociedad constituida.</p>
 					<p>Porque es el caso que hombres y mujeres, viejos y jóvenes, habían respondido á las habilidosas preguntas del ingeniero con grandes exclamaciones de reprobación y escándalo, ni más ni menos que la intolerante Duquesa de marras, apresurándose todos á añadir, inclusas personas emparentadas con la pobre mujer, «que sólo la conocían de nombre, ó de cuando era moza soltera, puesto que su casamiento y las deplorables y ruidosas aventuras de su viudez habían ocurrido fuera de España, y áun algunas de ellas fuera de Europa....»—No la nombraban, empero, los hombres sin celebrar en voz muy baja su incomparable y maravillosa hermosura, ni las mujeres sin dar todavía señales de rencor y envidia: de donde era fácil colegir la duda de si unos y otras habrían sido más desairados y heridos por ella, que realmente escandalizados por sus excesos.</p>
@@ -684,7 +718,7 @@
 					<p>El Conde de las Acacias, hombre adorable, por lo menos para la vida de los salones; sin voluntad, entusiasmos íntimos, ni otro móvil espiritual que una fría inteligencia más clara que el agua; todo ojos, calva, exclamaciones y sonrisas; despreciador profundo y servidor constante de las pasiones.... ajenas (pues no las tenía propias); que llevaba el frac como los veteranos el cotidiano uniforme, y en quien la vejez no era ancianidad, sino cierta especie de juventud estropeada que seguía usando por apego á lo conocido, dio un cigarro á Guillermo, diciéndole: — «Tome V  Estos son mejores que los del Duque....;» sentóse luego junto á él en un diván del despacho; y, entre una y otra bocanada de humo, le habló de la siguiente manera, con melancólica lentitud:</p>
 				</div>
 				<div n="18" type="chapter" xml:id="ne0176_chap18">
-					<head>IX: VERDADERA HISTORIA DE JULIA.</head>
+					<head xml:id="ne0176_head_017">IX: VERDADERA HISTORIA DE JULIA.</head>
 					<p>Pch!.... ¡La pobre Julia!.... — ¡Lástima de mujer!.... —Yo creo que vivé, y que debe de estar en algún pueblecillo de Andalucía, ó en algún convento....—¡No! ¡en convento, no!.... En casa de algún cortijero de sus antiguos estados....—<seg rend="italics">Autccesar</seg>, <seg rend="italics">aut nihil</seg>.... fue siempre su lema; y, al verse arruinada, se iría á reinar sobre una docena de gallinas....—Pero ¿qué estoy diciendo que V. no sepa?—¡Cuando V., diputado del Mediodía, pide en Ma_ árid informes de Julia de ***, es señal evidente deque la ha visto en aquel país, y hecho justicia á sus grandes cualidades.... Todavía debe de estar guapa....—muy joven!.....—Cuando vuelva V. á verla, ó le escriba, déle expresiones de su amigo Manolo, pues las agradecerá de seguro— ¡Siempre nos hemos querido bien!—No me conteste V. nada.... No me diga si acierto ó si me equivoco: no me engañe, sin necesidad alguna de mentir, ni me confiese la verdad, habiendo inconveniente en ello....—Yo soy hombre de mundo, y diplomático, y sé reducirme á vivir de adivinaciones y conjeturas....'</p>
 					<p>Guillermo saludó afectuosamente al Conde, el cual miró al techo, y luego á su cigarro, v volvió á decir con artística mansedumbre....</p>
 					<p>—¡Pch! ¡la pobre Julieta!....—A mí no me hizo caso nunca...., aunque me quería mucho.—«Te sobra talento (solía decirme) y te «falta corazón (¡ya ve V.! ¡dos injusticias!) »para conseguir enamorarme....—Conténtale con la amistad fraternal que nos une »desde que éramos niños....»—¡Ah! ¡Buena mujer! ¡buena! ¡Algo mejor que muchas que lo son oficialmente...., habiendo pecado bastante más que ella y con peores miras!....— El gran delito de Julia, por lo que respecta al mundo en que estamos, es no haber vuelto á casarse, y, sobre todo, haberse arruinado.—Si hoy conservara sus millones, y hubiese contraído matrimonio con cualquiera de sus amantes, sin perjuicio de tener en seguida amores con los demás; si hubiera venido á Madrid acompañada de esposo V cortejo, siquiera fuese el esposo un tahúr y el cortejo un espadachín, podría estardando este baile, ú otro mucho más concurrido? para lo cual todos los aquí presentes habríamos buscado una invitación, teniendo á mucha honra danzar, refrescar, cenar, fumar y jugar en él....—¡Digo! ¡porque no sé si V. sabrá que no todas las princesas que dan bailes en Madrid son Santas Ritas ni Santas Mónicas!....—Conozco, sin embargo, que hay alguna diferencia entre mi amiga y otras pecadoras.... ¡Julia ha tenido siempre el picaro defecto de ser demasiado franca y atrevida! ¡En lugar de ocultar sus amantes (y aquí me permito la generosidad de suponer que las demás los oculten enteramente), ha viajado con ellos por mar y tierra, los ha exhibido en los teatros de París, en los hipódromos de Londres, en los Museos de Florencia, en los lagos suizos, en las mezquitas de Constantinopla y en los Santos Lugares de Jerusalén....—¡Donde únicamente no los ha ostentado nunca (gran rareza) ha sido en España, en su patria, en la tierra de sus ilustres mayores!—Pero, en fin, ha cometido el feo pecado de escándalo, p.or su afán de parecerse á las heroínas de Jorge Sand, y á esta misma escritora, y de soñar con héroes como los de lord Byron, ó como lord Byron mismo. —¡No ha tenido presente que parala sociedad, es mucho más grave faltar á las leyes de la hipocresía que á las de la virtud!—Pudiera, en cambio, alegarse en favor de la llamada <seg rend="italics">aventurera</seg>, que no ha engañado, ni arruinado, ni costado un maravedí á ningún hombre: que, de casada, no faltó á su marido...., ¡ni áun después del divorcio!, y que, de viuda, no simultaneó jamás en la concesión de sus favores, sino que permaneció fiel á cada amante hasta que la fatalidad puso término á la respectiva alianza....—j Porque esto es lo cierto y positivo...., como ya irá V. deduciendo de mi relación! —Se dirá que cuatro ó seis amantes son muchos.... (y yo lo reconozco también, aunque sé de respetables ó cautas madres de familia que han tenido catorce....) Pero ¡fijémonos en el destino trágico que ha perseguido siempre á Julia!—Ya sabrá V. que, recién puesta de largo, se casó con un General francés, muy bruto y muy hermoso, de quien tuvo que separarse á los dos años.... Aquella boda fué una de tantas deplorables ideas de Alfonso, hermano único de la pobre muchacha, y tan valeroso, guapo y desprendido como ella, al cual siempre quiso entrañablemente.—Durante el año que medió entre aquella separación y la heroica muerte del .General, ocurrida en la guerra de Argel, Julia vivió en un convento, en Austria; y después.... j ah ! después vinieron los viajes, las fantasmagorías, las locuras románticas, los millones gastados sin honra ni provecho ( en redimir cautivos, que merecían ser presidiarios, en asustar con sus apuestas átodos los concurrentes al Derbyde Londres, yen otras rarezas por el estilo), así como la adoración universal de príncipes, artistas, lores, poetas y demonios coronados á aquella especie de lady Stanhope, ó de Eon de Beaumont, ó de Bonaparte con faldas, que recorría el mundo trastornando imperios....—Total cuatro amantes efectivos y dos nominales, ó sea cuatro hombres que, en el espacio de nueve ó diez años, consiguieron sentarse á su izquierda en el disparado carro de triunfo de su vida....—Volcaron y perecieron, ó se hicieron indignos de seguir en su puesto de honor, aquellos héroes; y esta repetida desventura fué para la diosa como una reiterada viudez....—| Piense V. en María Stuardo, por ejemplo, ó en la gran Catalina de Rusia!</p>
@@ -696,7 +730,7 @@
 					<p>Eran las dos de la mudrugada, y Guillermo tenía bastante, tenía hasta demasiado con lo que acababa de contarle el viejo diplomático y con las dos lágrimas de Pura, para su satisfaccción y alegría por aquella noche.... Perdonó, pues, la cena y la segunda mitad del baile, y, sin despedirse de persona alguna, tomó el camino de su casa y de su cama, á fin de entregarse libremente al dulce vaivén de sus gratos y contradictorios pensamientos.</p>
 				</div>
 				<div n="19" type="chapter" xml:id="ne0176_chap19">
-					<head>X.: PERPLEJIDAD.</head>
+					<head xml:id="ne0176_head_018">X.: PERPLEJIDAD.</head>
 					<p>Figurémonos las dos ó tres horas de insomnio que pasó nuestro joven en aquél lecho de soltero, que ya le parecía provisional, hasta que, á la salida del sol, lo venció la fatiga física y comenzó á sonar en otra forma sobre el mismo tema....</p>
 					<p>A la cabecera de su cama estaba, de un lado, Julia, defendida y engrandecida por su amigo el Conde, más seductora y extraordinaria que antes, con su romántico prestigio, con su séquito de amadores ensangrentados, con su homérica empresa de Candía, con sus Príncipes y su <seg rend="italics">Pequeño Duque;</seg> jugando doce millones á la vuelta de una carta ó al rodar de una bola; redimiendo cautivos, como los Santos y los Reyes; enterrando entre los Faraones al joven estadista que se había vuelto loco de amor por ella, y causando celos á la</p>
 					<p>Sultana favorita del Gran Turco.... ¡Ay! ¡sí!....; pero aborrecida también por toda la alta sociedad madrileña, desdeñada hasta por sus propios parientes, y declarada por todos fuera de la ley...., áun después de considerarla muerta y sepultada....</p>
@@ -712,7 +746,7 @@
 					<p>Resultado: que Guillermo se durmió optando por casarse con la Marquesita, y soñó que se paseaba á caballo con la <seg rend="italics">Pródiga</seg> por el ameno valle del <seg rend="italics">Abencerraje</seg></p>
 				</div>
 				<div n="20" type="chapter" xml:id="ne0176_chap20">
-					<head>XI.: DECISIÓN.</head>
+					<head xml:id="ne0176_head_019">XI.: DECISIÓN.</head>
 					<p>Tres horas de sueño llevaba el venturoso joven, cuando Enrique y Miguel, forzando la consigna por medio de la mágica palabra <seg rend="italics">crisis</seg>, que hizo abrirla puerta y tanto ojo al criado, no exento en verdad de su correspondiente ambición de llegar á estanquero, penetraron en la alcoba diciendo con jubilosas voces:</p>
 					<p>—¡Arriba ! ¡Arriba, seor perezoso! — ¿Quién piensa en dormir cuando hay dos vacantes en el Gabinete?—¡Se planteó la crisis, y todo el mundo pronuncia tu nombre para la cartera de Fomento!</p>
 					<p>—Pero decidme, hijos, ¿estáis locos? (exclamó Guillermo desperezándose):—¿Crisis al amanecer? ¿Pues no duermen los hombres públicos?</p>
@@ -732,7 +766,7 @@
 					<p>. Tenía veintisiete anos....—¿Cómo había de pensar ni sentir de otro modo el hasta entonces hijo mimado de la Fortuna?</p>
 				</div>
 				<div n="21" type="chapter" xml:id="ne0176_chap21">
-					<head>XII.: EL DON LUCAS DE SIEMPRE,</head>
+					<head xml:id="ne0176_head_020">XII.: EL DON LUCAS DE SIEMPRE,</head>
 					<p>Cinco minutos después de haberse marchado los madrugadores Enrique y Miguel recibió Guillermo un B. L. M., del Presidente del Consejo de Ministros, citándolo para la una en el despacho del Ministro de Hacienda.</p>
 					<p>¡Aquello no era ya conversación! ¡aquello era algo más que una esperanza!.... ¡aquello era la realidad!....</p>
 					<p>El ambicioso respiró con tanta fuerza y llegó á tal grado de satisfacción y egoísmo, que estamos seguros de que si en aquel momento le hubiesen anunciado la visita de Julia, habría dicho que le respondieran que no estaba en casa, y que hasta la noche no volvería....—¡Lo primero del mundo era ya jurar! ¡Jurar el cargo de Ministro! ¡Dejar de pertenecer á la clase de <seg rend="italics">gobernados!</seg> ¡Subir al Capitolio de los tiempos modernos!</p>
@@ -753,7 +787,7 @@
 					<p>Mas, para que todo sucediese aquella noche á la inversa que la anterior, soñó que estaba casado con Pura, y que tenía de ella muchos hijos, muchos.... ¡muchos!....</p>
 				</div>
 				<div n="22" type="chapter" xml:id="ne0176_chap22">
-					<head>XIII.: OTRAS DOS LÁGRIMAS</head>
+					<head xml:id="ne0176_head_021">XIII.: OTRAS DOS LÁGRIMAS</head>
 					<p>Por último: al siguiente día, lluvioso y triste domingo de Carnaval, en que parecía que la tierra se había quedado huérfana y sola, por muerte del sol ó por clausura definitiva de las puertas del cielo, personóse en casa de Guillermo, á la hora reglamentaria, con el fin de hacerle visita, á fuer de puntual diplomático que no faltaba nunca á las leyes de la etiqueta, nuestro nuevo amigo el viejo y afectuoso Conde délas Acacias....; el cual, después de decirle cosas muy lisonjeras y galantes con respecto al origen de la crisis, á <seg rend="italics">la cartera que le habían usurpado</seg> y á las otras posiciones que no había admitido, cambió graciosamente de tono, y habló en estos términos:</p>
 					<p>—En fin.... ¡le digo á V. que el baile de los Duques dejará nombre...., no sólo por su magnificencia...., sino por las cosas memorables que allí ocurrieron!—A V. lo perdí de vista enteramente, y no pude hallarlo cuando fui en su busca para decirle que la crisis ministerial había estallado en la pajarera.... <seg rend="italics">(¡Cest drole!—¿ríest ce pas?J</seg>, y que sonaba V. para Ministro....—Luego me dijeron que se había V. marchado....—Yo me estuve allí hasta lo último: cené con los Duques y con media docena de íntimos de la casa, á cosa de las seis, cuando ya se habían ido hasta los músicos; y eran más de las ocho, y ya calentaba el sol, cuando salimos de aquella mansión de delicias.—Pues bien: iba á decir que, en la que llamaré cena-almuerzo, dimos la última mano á una negociación que anoche era objeto de todas las conversaciones en el Teatro Real....—¿Estuvo V. por acaso?— Yo no le vi....</p>
 					<p>—No, señor: no estuve.—Esta noche es cuando me toca....</p>
@@ -783,7 +817,7 @@
 					<p>Y, después de acompañar al Conde hasta la puerta, volvió á su despacho; se dejó caer en el sillón del escritorio, y quedó sumido en dolorosas reflexiones.</p>
 				</div>
 				<div n="23" type="chapter" xml:id="ne0176_chap23">
-					<head>XIV.: EL HORIZONTE SENSIBLE.</head>
+					<head xml:id="ne0176_head_022">XIV.: EL HORIZONTE SENSIBLE.</head>
 					<p>Hemos dicho que era domingo de Carnaval.</p>
 					<p>Hacía una tarde más triste aún y lluviosa que lo había sido la mañana. Desde los balcones del despacho de Guillermo, correspondientes á la espalda de la casa, se descubría parte del Prado y del Paseo de Recoletos. Algunos coches particulares, algunos carromatos con mojigangas y algunas mal perjeñadas estudiantinas, arrostrando el frío, el agua y el viento, daban allí, entre unos árboles sin hojas y un cielo de color de ceniza, no sé qué aspecto fúnebre á las carnestolendas de aquel año. Parecían los gritos de las máscaras aullidos de dolor ó de susto, y los trompetazos de las murgas destemplados acordes de piporros en un entierro....—¡Deliciosa tarde, para trabajar, para leer, para cumplir nobles y austeros fines de la existencia humana; pero horrible y tétrica para pensar en festejos públicos y alegrías mundanales!</p>
 					<p>Guillermo oía los lejanos gritos y músicas de aquellas máscaras llenas de lodo, de aburrimiento y de fatiga, y pensaba en los viles afanes de Enrique y Miguel por alcanzar una falsa gloria.... Pensaba en aquel Presidente del Consejo de Ministros, á quien no llegaban los patrióticos avisos de su conciencia, sino el vocerío de otras máscaras y otras murgas...., de las máscaras y murgas políticas.... Pensaba en aquellos insensatos Marqueses de Pinto, que ponían á su hija en el camino del adulterio, para que aumentase el esplendor de tan ilustre casa; y en aquella niña que se encaminaba á París, á comprar los pórfidos y jaspes del sepulcro en que iba á enterrar, virgen y prostituido, su corazón de veinte años....—No había trabajado nuestro joven hacía mucho tiempo, ni en su bufete, ni en sus proyectos de obras públicas, ni en su estudio de pintor; y, confundiendo el remordimiento con la impotencia, y el óxido corrosivo de la ociosidad con desdenes y ultrajes de la envidia, creyóse ya inútil para todo; dudó de sí y de los demás; juzgó de nuevo que no servía para las luchas de la corte, ó que todo Madrid se había conjurado para ser injusto con él, y un desfallecimiento general aniquiló todas sus fuerzas morales, sumergiéndole en tristeza y misantropía más hondas y ciertas que las pintadas en aquella carta que escribió á Julia la noche de su triunfo parlamentario.</p>
@@ -802,7 +836,7 @@
 			<div type="part">
 				<p>Libro III: EL CARNAVAL EN EL CAMPO.</p>
 				<div n="24" type="chapter" xml:id="ne0176_chap24">
-					<head>I.: LOBOS Y PERROS.</head>
+					<head xml:id="ne0176_head_023">I.: LOBOS Y PERROS.</head>
 					<p>Habían pasado veintitrés horas desde que Guillermo salió de Madrid; y eran, por consiguiente, las ocho de la noche del 22 de Febrero, Martes de Carnaval....</p>
 					<p>Pero ¿qué decimos de Carnaval, ni de días, ni de horas?—En soledades tan apartadas como el humilde vallejuelo del <seg rend="italics">Abencerraje</seg> (á donde todavía no ha llegado nuestro heroe, y en el que nosotros estamos hace ya rato, merced al privilegio, que gozamos autores y lectores, de viajar más de prisa que nadie) no representan las ideas de tiempo lo mismo que en el mundo social.... Ni aquí la mitad de la noche es día, como acontece en las ciudades, por mucho que arrecien los rigores del invierno; ni hay alumbrado público que dispute su pavoroso imperio á las tinieblas; ni velan reunidas las gentes en coliseos, bailes ó tertulias; ni se guardan ó conmemoran otras festividades ó efemérides que la Noche-buena y el Viernes Santo....</p>
 					<p>Digamos, pues, que en el vallecillo del <seg rend="italics">Abencerraje</seg> iban ya dos horas, no de noche, sino de eternidad, dos horas de muerte y condenación, dos horas de oscuridad densísima, que envolvía en negros crespones, ó más bien borraba de la faz del mundo, llanos y montañas...., de tal modo que las cumbres no se distinguían de las honduras, ni los senderos de los sembrados, ni los campos del caserío, ni el cielo de la tierra.</p>
@@ -835,7 +869,7 @@
 					<p>El tío Antonio obedeció en todo, y salió de la estancia, rezando por la <seg rend="italics">Pródiga</seg>, según costumbre, y bendiciéndola al fin de cada Padre Nuestro.</p>
 				</div>
 				<div n="25" type="chapter" xml:id="ne0176_chap25">
-					<head>II.: PERROS Y LOBOS.</head>
+					<head xml:id="ne0176_head_024">II.: PERROS Y LOBOS.</head>
 					<p>No se había equivocado Julia. Pocos minutos después penetraba José en el salón.</p>
 					<p>—Tenga la Señora muy buenas noches.... (dijo, rascándose la cabeza con mal humor).—¡Viaje perdido!—Me han dicho en el correo que esta noche no toca recibir <seg rend="italics">carta grande</seg>, por ser Carnaval en Madrid.... y estar de <seg rend="italics">juelga</seg> los que las escriben....</p>
 					<p>—Es verdad.... Hoy es manes....—¡Lo había olvidado! (respondió Julia con visible disgusto).—En fin.... ¡paciencia! El correo de mañana me sacará de dudas....—¡Mala noche, José!.... ¿no es cierto?</p>
@@ -892,7 +926,7 @@
 					<p>Pocos segundos después, Guillermo estaba en su presencia.</p>
 				</div>
 				<div n="26" type="chapter" xml:id="ne0176_chap26">
-					<head>III.: EL JURAMENTO.</head>
+					<head xml:id="ne0176_head_025">III.: EL JURAMENTO.</head>
 					<p>Pálido también, y muy turbado, detúvose el joven á algunos pasos de la <seg rend="italics">Pródiga</seg>, mirándola á la cara lleno de amor y humildad, ó de adoración y susto, como quien teme ser mal acogido. Abarcó luego con los ojos todo aquel cuadro triste, solemne y austero; desde la medrosa lontananza del vasto salón, casi lleno de tinieblas, hasta el foco de luz del rojizo hogar y de la solitaria lámpara, cuyo intenso y concentrado fulgor rodeaba de una especie de fantástico nimbo la aristocrática figura de la vencida rica-hembra, condenada á pasar la segunda mitad de su vida en aquel aislamiento y aquella inacción; y, por virtud de este doloroso estudio, sintióse penetrado de tal lástima y de tanto respeto, que al fin exclamó tierna y denodadamente:</p>
 					<p>—¡Qué bien he hecho en venir! ¡Mil vi das como la mía, y mil veces todas las grandezas del mundo, no valen lo que la gloria de acompañar un instante en su destierro á la reina de las mujeres!.... Y ¡ay! si, además de esto, yo pudiera creer que mi presencia, que mi amor, que el humilde homenaje de mi vida y de mi alma llegaran á servirle de algún consuelo, de algún solaz, de algún agrado...., no me cambiaría en este momento por ningún rey de la tierra!....—¡Julia! ¡Tenga V. misericordia de mí!.... ¡Perdóneme por segunda vez el atrevimiento con que profano la costosísima quietud de su retiro, aspirando á la dicha de compartir las penas de su corazón, y hasta considerándome capaz de proporcionarle alguna alegría!....</p>
 					<p>—¡Insensato!.... — murmuró la <seg rend="italics">Pródiga</seg>, siguiendo el hilo de sus anteriores pensamientos!</p>
@@ -941,9 +975,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>Libro IV.: LAS CUATRO ESTACIONES.</head>
+				<head xml:id="ne0176_head_026">Libro IV.: LAS CUATRO ESTACIONES.</head>
 				<div n="27" type="chapter" xml:id="ne0176_chap27">
-					<head>I.: AUTO DE FE EN LA CHIMENEA.</head>
+					<head xml:id="ne0176_head_027">I.: AUTO DE FE EN LA CHIMENEA.</head>
 					<p>Febrero loco....»—dice el adagio;—y, con efecto, después de aquella horrible noche de huracán y ventisca, amaneció un espléndido día de casi primavera, en que el sol andaluz, riente y amoroso, fué enjugando las lágrimas que aún bañaban la faz de Cibeles, ó sea evaporándolas gotas de lluvia y las filigranas de escarcha que relucían en alamedas y sembrados.</p>
 					<p>A la una de la tarde, solamente en las umbrías del jardín del Palacio rústico veíase ya tal ó cuál faja de aterida nieve; y por cierto que allí, y no en ninguna otra parte, era donde había flores; las primeras flores del año; esto es, humildes y heroicas violetas, que Guillermo y Julia buscaban despiadadamente entre las verdes hojas abrillantadas por el hielo, lanzando infantiles gritos de júbilo cada vez que hallaban alguna muy grande, fresca y olorosa....</p>
 					<p>—¡Mira!.... ¡mira que asombro!....—se decían, cortándola al punto y cediéndosela galantemente....</p>
@@ -1019,7 +1053,7 @@
 					<p>Así dijo la <seg rend="italics">Pródiga</seg>, y arrojó el periódico á la chimenea.</p>
 				</div>
 				<div n="28" type="chapter" xml:id="ne0176_chap28">
-					<head>II.: Nube de primavera</head>
+					<head xml:id="ne0176_head_028">II.: Nube de primavera</head>
 					<p>Si con tal júbilo y entusiasmo se dedicó Guillermo á la vida campestre en el yerto y desapacible mes de Febrero, uniendo en una misma devoción á Julia y á la madre Naturaleza, gradúese qué le pasaría en Marzo, cuando los árboles comenzaron á vestirse de hojas y la tierra de variadas hierbecillas; y en Abril, cuando las golondrinas invadieron el valle, los ruiseñores dejaron oír sus cantos en setos y alamedas, y los viejos rosales del jardín y del huertecillo se llenaron de tiernos .y fragantes capullos; y en Mayo, cuando todo el campo, y la huerta, y el monte, y hasta los riscos se cubrieron de pintadas flores, y revolotearon las mariposas entre ellas, y las aves despertaban ya á la gentil Aurora á las cuatro de la mañana, y los grillos, las tórtolas y las lenguaces vecinas de los pantanos apenas dejaban á la Noche cerrar los ojos,, y el mundo (quiero decir, aquel vallejuelo) era como vasto diván arábigo preparado para el amor y la voluptuosidad, en que hasta los dormidos elementos parecían cómplices del deleite....</p>
 					<p>Alegres cacerías, almuerzos sobre la hierba, cenas al aire libre, éxtasis á la luz de la luna, églogas en todos los picos de la montaña, idilios bajo todos los árboles del valle, mucho coronarse de rosas y de jacintos, mucho grabar sus nombres ó esculpir memorables fechas en cada chopo que les daba sombra, ó en cada peñón que les servía de asiento....; tales fueron los recreos favoritos de Guillermo y Julia durante los meses de primavera.</p>
 					<p>Adelantaron, entre tanto, rápidamente las obras proyectadas. El manantial de agua potable estaba ya escondido en pintoresca gruta, que se inauguró el día de San Antonio: la choza del viñedo, formada con zarzos de caña y ramas de pino, recordaba los bohíos de Indias ó las viviendas de los aduares africanos, y en la era de pan-trillar daba ya al viento su bandera azul con estrellas de plata la antigua tienda de campaña del ingeniero. La gran presa del río estaba también medio concluida. Faltaba, empero, abrir la nueva acequia, cerrar el <seg rend="italics">lago</seg>, encañar el surtidero de la cascada y terminar el estanque chinesco que había de convertir la glorieta del i.° de Octubre en <seg rend="italics">Isla de</seg><seg rend="italics">Cleopatra</seg>, fatídico nombre que se empeñó en ponerle Julia.— Total: quedaba todavía trabajo para dos ó tres meses, ó sea hasta principios de otoño.</p>
@@ -1044,7 +1078,7 @@
 					<p>La tempestad de verano (pues también la hubo, como veremos en el capítulo siguiente) fué mucho más ruidosa y dañina, por estar el nublado más cerca de la tierra.</p>
 				</div>
 				<div n="29" type="chapter" xml:id="ne0176_chap29">
-					<head>III.: TORMENTA DE VERANO.</head>
+					<head xml:id="ne0176_head_029">III.: TORMENTA DE VERANO.</head>
 					<p>La Naturaleza siguió protegiendo y amenizando los amores de Guillermo y Julia durante los meses del estío. Después de las flores del jardín vinieron las frutas de la huerta: en lugar de las excursiones matinales á la montaña, llegaron las cabalgatas nocturnas á todo lo largo del cauce del ya muy endeble riachuelo: los rudos placeres de la caza viéronse sustituidos por los más sosegados y dulces de la pesca, y, con todo ello, y con la satisfacción de estar siempre juntos, sostenida por la gracia, el ingenio y la cortesía de que se daban muestras á todas horas, resultábales, no sólo llevadero y fácil, sino hasta divertido, aquel su continuo trato, en que no había más elemento de dicha que ellos mismos, ni más motivo de felicidad que la adoración del uno al otro....</p>
 					<p>No era, sin embargo, la Naturaleza su única amiga: tenían además una especie de hermana, ó cómplice, que también los protegía mucho; y era.... la soledad.—Nunca estaban tan contentos como cuando no veían á su alrededor ni tan siquiera asomos de la especie humana.—José había sido relevado del honor de servirles de escolta. A la tienda de campaña de la era, sólo una tarde habían ido á ver trillar; pues se aburrieron tanto al advertirse del encogimiento, cortedad y turbación de sus demasiado respetuosos súbditos, que no les quedó gana de volver á representar con ellos las <seg rend="italics">Geórgicas.</seg> Si alguna sociedad hallaban medio soportable, y eso por el tiempo meramente preciso, era la de los operarios forasteros empleados en la Presa y en el futuro Lago, gente vividora y corrida, que de todo pecaba menos de corta de genio. Y, en fin, á la noche, cuando volvían al Palacio á cenar, casi no hablaban con el tío Antonio, por miedo de oirle referir lástimas y chocheces acerca de su pobre mujer, postrada en cama, ó poco menos, desde fines de Junio, ó por ahorrarle trabajosas explicaciones, que nadie le pedía, sobre las ausencias y genialidades de su cada vez más huraño y taciturno hijo....</p>
 					<p>La velada concluía casi siempre con la lie-gada del periódico, con el ruego de Julia á Guillermo de que lo leyera en alta voz, y con la tenaz resistencia del joven á mirar siquiera el aborrecido papel,—que, si ya no se quemaba, porque no había lumbre en el salón, iba á aumentar, con faja y todo, sobre la repisa de la chimenea, una altísima pila de no leídos artículos <seg rend="sub">5</seg> sueltos, gacetillas y revistas de teatros ó de salones que hubiera encolerizado al buen Guttenberg.</p>
@@ -1095,7 +1129,7 @@
 					<p>A esto quedaron reducidos los festejos de la inauguración que tanto había entusiasmado á Guillermo, y así acabó también aquella especie de tempestad de verano.</p>
 				</div>
 				<div n="30" type="chapter" xml:id="ne0176_chap30">
-					<head>IV.: CELAJES DE OTOÑO.</head>
+					<head xml:id="ne0176_head_030">IV.: CELAJES DE OTOÑO.</head>
 					<p>Pocos esfuerzos costó á Julia amansar á José y reducirle á presentarse á nuestro héroe con la cabeza baja, pidiéndole perdón dé lo ocurrido....</p>
 					<p>Guillermo estuvo más generoso de lo que convenía á su difícil situación, y llegó hasta dar la mano al desahogado rústico. Brindóse después á ser su padrino de boda, en unión de la <seg rend="italics">Señora Marquesa</seg>; ofreció regalarle entonces el caballo que adquirió del grande elector y comprarle á Brígida un aderezo de corales y oro; y, por último, á la mañana siguiente, sin consultarlo con la <seg rend="italics">Pródiga</seg>, bajó á visitar á la tía Francisca, para que se convenciese de que su hijo había sido realmente perdonado..,.</p>
 					<p>La <seg rend="italics">enferma</seg> estaba levantada y amasando pan de aceite; pero se quejó mucho del reumatismo que le impedía desde Marzo subir las escaleras y servir la comida á los señores; y, por lo demás, no demostró haber dado gran importancia al disgusto de su hijo con el caballero....</p>
@@ -1119,9 +1153,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>LIBRO V.: EL 1.° DE OCTUBRE.</head>
+				<head xml:id="ne0176_head_031">LIBRO V.: EL 1.° DE OCTUBRE.</head>
 				<div n="31" type="chapter" xml:id="ne0176_chap31">
-					<head>I.: LOS NOVIOS.</head>
+					<head xml:id="ne0176_head_032">I.: LOS NOVIOS.</head>
 					<p>Sin que esto sea, ni por soñación, echar mano á última hora del pobre recurso dramático-moral llamado <seg rend="italics">Deus ex machina;</seg> pues nada tiene de milagroso, ni áun de extraordinario en nuestro país, el que llueva al comenzar el Otoño (como lo demuestra el nombre de <seg rend="italics">Cordonadzo de San Francisco</seg> que se da vulgarmente al casi infalible temporal de la primera semana de Octubre), diremos que aquel tan simbólico y solemne día amaneció nublado y amenazando lluvia....</p>
 					<p>Pusiéronse, no obstante, en camino, con dirección al Lugar, en cuanto Dios echó sus luces, caballeros en bien pergeñados mulos ó borricas, y con guitarra y algo de comer y beber, los novios, los compadres apoderados, el tío Antonio y el tío Juan, la misma tía Francisca, que <seg rend="italics">al efecto</seg> se había sentido un poco mejor, y otras diez ó doce personas de las más notables del Cortijo, ó sea todas las mujeres que tenían mantilla y todos los hombres que tenían capa.</p>
 					<p>José no había querido montar el caballo de que era dueño desde aquel día por donación de nuestro héroe, sino que, alegando el natural deseo de <seg rend="italics">llevar</seg> á Brígida, iba en su antiguo mulo, sobre cuyo amplio aparejo redondo cabían perfectamente los dos catecúmenos de Himeneo; ella, sentada delante, con algo más que los menudos piés á la vista, y él, montado á grupas, rodeando con su brazo izquierdo el primoroso talle de la cerril princesa, y áun estrechándola involuntariamente á su corazón;—de donde resultaba, por ley natural, que el bravo mozo había empezado ya á quererla con toda su vida....—Conocíalo así la novia, y experimentaba como una especie de catalepsis de felicidad.... Ni veía, ni oía, ni hablaba.... Pero en su rostro se leía claramente la conciencia íntima de que era de José, de que José era suyo, y de que aquella unión se perpetuaría hasta la lejana hora de la muerte.</p>
@@ -1133,7 +1167,7 @@
 					<p>Es claro!.... (observó el tío Juan el mulero con mucha sorna).—Cuando la Señora pase á mejor vida, se arreglará todo....—Así, pues, dejemos estas conversaciones...., y ¡á lo que vamos vamos!....—¡ Frasquillo! ¡Trae acá ese tocayo tuyo, y echaremos otra lágrima de aguardiente!....—¡ Allá va, consuegro!.... ¡Á la salud de nuestros retoños!</p>
 				</div>
 				<div n="32" type="chapter" xml:id="ne0176_chap32">
-					<head>II</head>
+					<head xml:id="ne0176_head_033">II</head>
 					<p>LOS AMORCILLOS DE ZINC.</p>
 					<p>En tanto que aquella alegre comitiva salía del vallejuelo del <seg rend="italics">Abencerraje</seg>,, Guillermo y Julia, solos en el Palacio, donde únicamente había quedado el cocinero, que harto tenía que hacer con los preparativos del banquete nupcial, procuraban reírse mucho, y se reían bastante, colocando sobre el velador de la célebre <seg rend="italics">Glorieta</seg>, capital y centro de la recien nacida <seg rend="italics">Isla de Cleopatra</seg>, todo lo necesario para almorzar allí, sirviéndose á sí mismos, rodeados de jaulas de pájaros y de innumerables macetas de flores,...</p>
 					<p>—¡Al fin estamos un día enteramente solos! (exclamaba Guillermo). ¡Solos como Pablo y Virginia, ó como Atala y Chactas!</p>
@@ -1147,7 +1181,7 @@
 					<p>—Me siento bien....; y como te suponía muy aburrido y fastidiado, iba á buscarte...</p>
 				</div>
 				<div n="33" type="chapter" xml:id="ne0176_chap33">
-					<head>III.: HABLAR POR HABLAR.</head>
+					<head xml:id="ne0176_head_034">III.: HABLAR POR HABLAR.</head>
 					<p>A todo esto no eran más que las once de la mañana.</p>
 					<p>Julia tomó también algún alimento, servida por nuestro héroe, que, decidido á reir mucho aquel día, se echó una servilleta al hombro y dijo mil donaires, afectando ser un mozo de comedor de la villa y corte....—Y cuando aquella graciosa escena hubo terminado entre los aplausos de la doliente beldad, el reloj marcó.... las once y media.</p>
 					<p>Arrimáronse después á la lumbre: Guillermo dirigió á su amada algunas galanterías que ya le había repetido en varias ocasiones: dióle las gracias por la fina idea de haberse puesto aquel día la bata azul con que se le presentó por primera vez un año antes á aquella misma hora, y, en seguida, bostezó dos ó tres veces mirando á las ascuas.—Entre tanto, las agujas del reloj sólo habían avanzado hasta señalar.... las once y cuarenta minutos.</p>
@@ -1164,7 +1198,7 @@
 					<p>—¡1.° de Octubre!....</p>
 				</div>
 				<div n="34" type="chapter" xml:id="ne0176_chap34">
-					<head>IV.: la vuelta de la boda.</head>
+					<head xml:id="ne0176_head_035">IV.: la vuelta de la boda.</head>
 					<p>Abismada en honda meditación, que alternativamente le hizo sonreír de un modo siniestro, ó temblar como si recibiera crueles heridas, permaneció mucho tiempo la <seg rend="italics">Pródiga</seg>, hasta que, cerca de la una, la sacó de aquel horrible estado el lento andar de muchas caballerías que pasaban por debajo de los balcones, y que al fin se pararon á la puerta del Caserón.</p>
 					<p>—¡Silenciosa y desanimada vuelve la boda!....—pensó, yendo á asomarse á los cristales.</p>
 					<p>Y el ruido que hizo al moverse, despertó á Guillermo, el cual se acercó á ella, dicién-dole con ternura:</p>
@@ -1185,7 +1219,7 @@
 					<p>Regresaron luego los dos amantes al salón. La <seg rend="italics">Marquesa</seg>, contraída y torva, como presintiendo irremediables desdichas, sentóse en el sitial que acostumbraba, y reclinó la frente sobre una mano, mientras que Guillermo se paseaba con rapidez, ó más bien daba vueltas en medio de la estancia, á modo de enjaulado león en el acceso de la calentura.</p>
 				</div>
 				<div n="35" type="chapter" xml:id="ne0176_chap35">
-					<head>V.: ¡Exageraciones !...</head>
+					<head xml:id="ne0176_head_036">V.: ¡Exageraciones !...</head>
 					<p>No tardó el tío Antonio en preguntar desde la antesala:</p>
 					<p>—¿Dan los Señores licencia?</p>
 					<p>—¡Entre V., y déjese de zalamerías!—gritó el joven.</p>
@@ -1211,7 +1245,7 @@
 					<p>El fiel servidor cubrió de lágrimas y besos la mano de la <seg rend="italics">Pródiga</seg>, y se retiró, sin volver la espalda, después de hacer otra profunda reverencia á Guillermo.</p>
 				</div>
 				<div n="36" type="chapter" xml:id="ne0176_chap36">
-					<head>VI.: MODUS VIVEÑDI.</head>
+					<head xml:id="ne0176_head_037">VI.: MODUS VIVEÑDI.</head>
 					<p>Qué piensas hacer? ¿Qué vas á decirle  á solas al capataz?—preguntó agria-mente Guillermo á Julia cuando se quedaron solos.</p>
 					<p>Julia respondió con asombrosa calma:</p>
 					<p>—Nada pienso decirle de estos asuntos, ni nada tenemos que hacer; pues nada importante nos sucede.—Sin tu fatal inclinación á la popularidad y á la gloria; sin la ambición que te disgustó de Madrid, que á mí te trajo y que aquí te hace remover cielo y tierra para darle alimento; sin tu imprudencia de fijar la vista y buscar admiración y aplauso en el mísero <seg rend="italics">público</seg> de una Cortijada, no tendríamos que lamentar la escena del i de Agosto ni la de hoy, pues ni áun el pobre Cura se hubiera acordado de que estábamos en el mundo.... Pero has pedido á la soledad los <seg rend="italics">obsequios sociales</seg>, y te ha contestado con todos los <seg rend="italics">inconvenientes de la Sociedad</seg>.— Debemos, pues, olvidar lo ocurrido; no volver á pensar en los humildísimos rústicos que nos rodean, y buscar la dicha en nuestra propia alma, en nuestra amistad, en nuestro amor...., si es que todavía te basta eso para ser feliz....</p>
@@ -1227,7 +1261,7 @@
 					<p>—¡Julia mía!,... ¡Dices bien!....—Tú y yo nos bastamos para ser felices.... ¡Donde quiera que los dos estemos, sobrará el mundo, en el cual no debemos fijar los ojos!....—Seguiremos viviendo aquí años y años, sin volver á pensar en las ridiculeces que tanto nos han amargado en el día de hoy!—¡Ven á mis brazos, gloria de mi alma, y perdóname todo <seg rend="italics">lo</seg> que te ha hecho padecer mi inexpe-riencial</p>
 				</div>
 				<div n="37" type="chapter" xml:id="ne0176_chap37">
-					<head>VII.: CUENTAS ATRASADAS.</head>
+					<head xml:id="ne0176_head_038">VII.: CUENTAS ATRASADAS.</head>
 					<p>Guillermo y Julia comieron solos y opíparamente, servidos por el cocinero en persona, sin que ninguno de los dos se rebajase á preguntar qué era entre tanto de los novios y de sus afligidos padres y asustados amigos.</p>
 					<p>Terminada la refección á cosa de las tres, y visto que seguía lloviendo, decidieron jugar á las damas.</p>
 					<p>La partida comenzó con mucho entusiasmo y palabrería; pero no tardó el joven en observar que su hermosa antagonista jugaba mejor que él, y que procuraba ocultarlo y no ganar, por no herirle en el amor propio.... —Aburrióse, pues, el poeta ingeniero, y, pretextando dolor de cabeza, dijo con visible mal humor:</p>
@@ -1246,7 +1280,7 @@
 					<p>Julia perdonó á su rendido amante, ó, por lo menos, le sonrió con inagotable dulzura.</p>
 				</div>
 				<div n="38" type="chapter" xml:id="ne0176_chap38">
-					<head>VIII: SIN MÚSICA.</head>
+					<head xml:id="ne0176_head_039">VIII: SIN MÚSICA.</head>
 					<p>Así llegó la noche, cuando apenas eran las cinco y media.</p>
 					<p>Seguía diluviando.</p>
 					<p>Nadie hubiera dicho que en aquella Cortijada había una boda, y boda tan importante como la del hijo del capataz de la finca.—En el caserío rústico reinaba profundo silencio, sólo turbado por el continuo llanto del temporal.—Ni la guitarra, ni los platillos, ni las castañuelas, ni las palmadas y coplas del baile de rigor habían sonado en toda la tarde, ni era ya de esperar que sonaran....—¡Tristes desposorios los de José y Brígida!</p>
@@ -1273,7 +1307,7 @@
 					<p>Así dijo el anciano, y se retiró andando hacia atrás y haciendo muchas cortesías á Guillermo,—quien no se dignó contestar á ninguna de ellas, ni lo había mirado un solo instante.</p>
 				</div>
 				<div n="39" type="chapter" xml:id="ne0176_chap39">
-					<head>IX.: CON MÚSICA.</head>
+					<head xml:id="ne0176_head_040">IX.: CON MÚSICA.</head>
 					<p>Pronto comenzó á sonar á lo lejos gozoso y animado toque de guitarras, castañuelas y platillos, seguido de palmadas y coplas..,.</p>
 					<p>Todo ello, armonizado por la distancia, y destacándose entre el rumor de la lluvia, formaba agradabilísimo concierto, cuya cadenciosa melodía, al par alegre y triste, recordaba los cantos árabes ó las bíblicas pastorelas.—Había además en aquel eco de remota zambra con que se festejaba el matrimonio de la rústica virgen y del fanático mancebo, algo de patriarcal y de sagrado, cuyo regocijo contrastaba agriamente con el tedio que en el nobiliario salón sentían Guillermo y Julia.... Sobre todo, el agudo y perpetuo retintín de los metálicos platillos parecía encargado de repetirles sarcásticamente verdad tan amarga y de hacerles envidiar los bienes y provechos de la familia desde las áridas rocas del concubinato....</p>
 					<p>Hasta qué punto era capaz el joven de comprender su desventura, ya lo especificamos al verle reverenciar en las humildes viviendas del Cortijo los afectos domésticos de que se creía privado para siempre; pero la misma desesperación, su orgullo recientemente herido y la presencia de la <seg rend="italics">Pródiga</seg> le impidieron aquella noche reconocer la santidad de la institución ó sacramento que, en todos los climas, en todos los siglos, en todas las civilizaciones, y áun en los pueblos más in-cultos y salvajes, funda la casa, legitima la familia, vincúlala propiedad, normaliza la propagación de la especie y da cuerpo y organismo á las colectividades llamadas tribus ó naciones, y después sociedades ó Estados.... Y así fué que, prestando más oídos á su rabioso despecho que á aquella noble envidia, exclamó sardónicamente:</p>
@@ -1283,7 +1317,7 @@
 					<p>Julia inclinó la cabeza, agobiada por el inmenso fastidio del pobre ingeniero.</p>
 				</div>
 				<div n="40" type="chapter" xml:id="ne0176_chap40">
-					<head>X.: EL INDULTO DE «LA ÉPOCA.»</head>
+					<head xml:id="ne0176_head_041">X.: EL INDULTO DE «LA ÉPOCA.»</head>
 					<p>Una hora después llegó Frasco el pastor con el periódico.</p>
 					<p>—¡Tan temprano!—le dijo Guillermo, cogiendo el papel maquinalmente.</p>
 					<p>—Sí.... señor.... (respondió el montañés). —Me fui con tiempo al Lugar, y he vuelto muy de prisa para disfrutar un poco del baile...., en el caso de que los Señores llegaran á conceder su venia, como veo que la han concedido....</p>
@@ -1349,7 +1383,7 @@
 					<p>Veamos nosotros si la <seg rend="italics">Pródiga</seg> dormía ó velaba á aquellas horas,—en que ya habían pasado cuatro ó cinco desde que dejó de sonar la música y el baile en el caserío de la escondida Cortijada, albergue en tal noche del honradísimo dios Himeneo.</p>
 				</div>
 				<div n="41" type="chapter" xml:id="ne0176_chap41">
-					<head>XI.: CARTAS Y RETRATOS.</head>
+					<head xml:id="ne0176_head_042">XI.: CARTAS Y RETRATOS.</head>
 					<p>No bien penetró Julia en sus habitaciones, después de dar á Guillermo aquel adiós tan repentino y amistoso, cuya trágica solemnidad no adivinó el insensato amante, abandonáronla completamente las fuerzas, y dejóse caer en un sofá, lanzando un mal comprimido lamento de dolor y egoísmo....</p>
 					<p>Sofocó luego sus sollozos, y permaneció allí algunos segundos llorando silenciosamente en la sombra, piadosa amiga de los desgraciados que no aguardan consuelo.... La oscuridad que en aquel aposento reinaba tenía algo de la mudez y discreción del sepulcro, y Julia no vaciló en confiarle el secreto de sus miserias, su amor á la vida que iba á perder, su miedo á la muerte, su pena de dejar á Guillermo, su despecho al verse desamada....</p>
 					<p>Pronto, empero, terminó su angustia. Un fuerte suspiro, como de resolución ó descanso, dió á conocer que la conformidad y la entereza habían vuelto á su espíritu; y, después de breves instantes de meditación y sosiego, levantóse enteramente resignada, encendió luz en el aposento que le servía de gabinete, reavivó la lumbre de la chimenea, y púsose á abrir y registrar papeleras y cómodas y á colocar sobre una mesa-escritorio varios legajos, paquetes y estuches.</p>
@@ -1418,7 +1452,7 @@
 					<p>Despidióse en seguida, con una rápida ojeada, de aquellos muebles y de aquellos muros, únicos testigos y confidentes de su dolorosa determinación; suspiró con pesar, al ver que nada ni nadie la detenía, ni podría ya detenerla...., y salió en fin en busca déla muerte.</p>
 				</div>
 				<div n="42" type="chapter" xml:id="ne0176_chap42">
-					<head>XII: EN EL QUE JOSÉ VUELVE Á LLEVAR EN BRAZOS A JULIA.</head>
+					<head xml:id="ne0176_head_043">XII: EN EL QUE JOSÉ VUELVE Á LLEVAR EN BRAZOS A JULIA.</head>
 					<p>Serían las nueve de la mañana cuan do Guillermo, que dormía profundamente, sintió llamar á la puerta de su cuarto, y oyó la quejumbrosa voz del tío Antonio, que gritaba con respeto y angustia:</p>
 					<p>—¡Señor!.... ¡Señor!.... ¡Abra por María Santísima!.... ¡Abra, y perdone que le moleste!</p>
 					<p>—¡Temprano empiezan hoy los dramas campesinos!.... (pensó el joven, restregándose los ojos).—Continúan por lo visto las groserías de ayer....</p>
@@ -1464,7 +1498,7 @@
 					<p>Y condujo á Guillermo al Palacio por fuera de camino, á fin de que no tropezara otra vez con las cortijeras.</p>
 				</div>
 				<div n="43" type="chapter" xml:id="ne0176_chap43">
-					<head>XIII.: EL PERRO Y EL LOBO.</head>
+					<head xml:id="ne0176_head_044">XIII.: EL PERRO Y EL LOBO.</head>
 					<p>El cadáver de Julia no fué depositado en el Palacio.—Opúsose á ello José, y lo llevó á su nueva casa, jurando y perjurando que Guillermo no volvería á ver á la que había sido víctima de sus infames amores.</p>
 					<p>Se avisó al Lugar inmediato, para que el Alcalde, el Médico y el Cura entendiesen en aquella tragedia; y el Alcalde y el Médico, acompañados del Secretario, estuvieron efectivamente en el Cortijo, donde se instruyeron las oportunas diligencias en comprobación del suicidio....—En cambio, el Cura, cumpliendo también con su obligación, tuvo suficiente valentía para responder que, por la naturaleza de tan sacrilego atentado, y por tratarse de una <seg rend="italics">persona incomunicada con la Iglesia</seg> hasta el extremo de la contumacia y la rebeldía, no podía dar sepultura eclesiástica al cadáver de doña Julia.</p>
 					<p>Mucho asustó y horrorizó este anatema postumo á aquellos devotos labriegos.... Pero al cabo pudo más que el pavor religioso el inmenso cariño que tenían á su ama (sobre todo, desde que la habían recobrado, bien que difunta, de manos del <seg rend="italics">judío que la hi\o vivir y morir en pecado mortal),</seg> y encargáronse ellos de darle tierra, á fin de que no fuese pasto de los buitres.—Además: sabedores ( por concienzuda declaración del tío Antonio) deque la Marquesa había dejado cerca de mil duros para su entierro y para los pobres del Cortijo, decidieron gastarlos todos en misas por su alma, si el Cura no tenía inconveniente en decírselas, ó, caso contrario, por las Animas-benditas en general*</p>
@@ -1479,7 +1513,7 @@
 					<p>José lo miró algunos momentos; hizo un ademán de altivez é indulto; se echó la escopeta al hombro, y desapareció lentamente por entre aquellos riscos.</p>
 				</div>
 				<div n="44" type="chapter" xml:id="ne0176_chap44">
-					<head>XIV.: Epílogo</head>
+					<head xml:id="ne0176_head_045">XIV.: Epílogo</head>
 					<p>pocos años después se casó Guillermo con una joven de su clase, tan linda y alegre como temerosa de Dios y honrada, de la cual tiene muchos y muy hermosos hijos. Por arte del diablo (ó sea por intrigas de cierta duquesita viuda), Enrique logró ser ministro de Fomento antes que él....; pero no con tanta gloria propia ni para tanto bien de la Patria....—El nombre de <seg rend="italics">Guillermo de Loja</seg> pasará á la posteridad como el de Somodevilla, Floridablanca, Martínez de la Rosa y algunos otros héroes de la paz.</p>
 					<p>José y Brígida han reunido también larga prole, y son completamente felices, no sólo porque están muy ricos, gracias á las famosas obras hidráulicas del ingeniero poeta, que han quintuplicado el valor de la Cortijada, sino porque tienen la conciencia tranquila y gran confianza en ir desde la tierra al cielo.</p>
 					<p>De nuestra heroína no ha vuelto á hablar nunca nadie.—No se habló al principio, por cristiana deliberación de no recordar sus graves errores; y no se ha hablado después, por natural olvido de todos y cada uno de los personajes de esta historia, que harto han tenido y tienen en qué pensar con sus cuidados propios ó con los de la Nación, con las siembras y las cosechas, con los discursos y las revoluciones, con los males de los hijos pequeños, con la entrada en quintas de los grandes, con el casamiento de las zagalas, con la carrera de los bachilleres, y con todas las demás incumbencias de los buenos ciu-dadanos y padres de familia....—Unicamente los gorriones y alondras de la huerta saltan alguna vez las tapias del enterramiento de la <seg rend="italics">Pródiga</seg> y están enterados de que sobre su humilde sepultura nacen todas las primaveras cardos silvestres, ortigas y jaramagos.— Fué, por tanto, inútil dispendio y pura necedad poner á aquel recinto una puerta.... que todavía no se ha abierto para nadie, ni se abrirá probablemente mientras el mundo sea mundo.</p>
@@ -1489,7 +1523,7 @@
 		</body>
 		<back>
 			<div>
-				<head>Fin.</head>
+				<head xml:id="ne0176_head_046">Fin.</head>
 			</div>
 		</back>
 	</text>

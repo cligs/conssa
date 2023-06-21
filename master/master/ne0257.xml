@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El intruso</title>
-				<title type="sub"></title>
+				
 				<title type="short">Intruso</title>
-				<title type="idno">
-					<idno type="bne">XX1892711</idno>
-					<idno type="viaf">1241145424655086831389</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1547</measure>
@@ -141,13 +131,59 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0257</idno>
+						<idno type="cligs">ne0257</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>24466</idno>, <ref target="http://www.gutenberg.org/ebooks/24466"/>.</bibl>
-				<bibl type="print-source">Sempere, Valencia, <date when="1904">1904</date></bibl>
-				<bibl type="edition-first"><date when="1904">1904</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El intruso</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892711.html">XX1892711</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/1241145424655086831389/">1241145424655086831389</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2008">2008</date>, <idno>24466</idno>, <ref target="http://www.gutenberg.org/ebooks/24466"/>.</bibl>
+					<bibl type="print-source">Sempere, <pubPlace>Valencia</pubPlace>, <date when="1904">1904</date></bibl>
+					<bibl type="edition-first"><date when="1904">1904</date><idno source="k10plus" type="ppn" n="73346422X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=73346422X"/><idno source="k10plus" type="ppn" n="59522721X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=59522721X"/><idno source="k10plus" type="ppn" n="133536351" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133536351"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">novela</title> <date when="1904">1904</date>, <publisher>Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="73346422X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=73346422X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">novela</title> <date when="1904">1904</date>, <publisher>Sempere</publisher> <pubPlace>Valencia [u.a.]</pubPlace> 		<idno type="ppn" n="59522721X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=59522721X"/> </bibl>
+						<bibl type="further-edition"><title type="main">El intruso</title>: 	<title type="sub">Novela. 38.000</title> <date when="1904">1904</date>, <publisher/> <pubPlace>Valencia, Madrid</pubPlace> 		<idno type="ppn" n="133536351" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=133536351"/> </bibl>
+						<bibl type="further-edition"><title type="main">El Intruso</title>: 	<title type="sub">Jover, Gonzalo, y Emilio G. Del Castillo ; Comedia dramát. en 4 actos. Arreglo escénico de la novela del mismo título del escritor Vicente Blasco Ibañez</title> <date when="1906">1906</date>, <publisher>(Soc. de autores españoles)</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="426367766" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=426367766"/> </bibl>
+						<bibl type="further-edition"><title type="main">Der Eindringling</title>: 	<title type="sub">Ein Jesuitenroman von [Vicente] Blasco Ibañez. Berechtigte deutsche Übers. aus d. Span.</title> <date when="1908">1908</date>, <publisher>Felber</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="445658061" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658061"/> </bibl>
+						<bibl type="further-edition" xml:lang="por"><title type="main">Jesuitas</title> <date when="1909">1909</date>, <publisher>"A Editora"</publisher> <pubPlace>Lisboa;Rio de Janeiro;S. Paulo [u.a.]</pubPlace> 		<idno type="ppn" n="464542693" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464542693"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">(novela)</title> <date when="1916">1916</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350948577" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350948577"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="1349410357" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1349410357"/> </bibl>
+						<bibl type="further-edition"><title type="main">El intruso</title>: 	<title type="sub">Novela</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445658053" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658053"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226410161" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226410161"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">novela</title> <date when="1924">1924</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="464936284" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464936284"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">(novela)</title> <date when="1925">1925</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350948291" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350948291"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Der Eindringling</title> <date when="1930">1930</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="464709334" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464709334"/> </bibl>
+						<bibl type="further-edition"><title type="main">Der Eindringling</title>: 	<title type="sub">Blasco-Ibañez, Vicente ; Übertr. v. Elisabeth u. Otto Albrecht van Bebber</title> <date when="1930">1930</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="44565807X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=44565807X"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Der Eindringling</title> <date when="1930">1930</date>, <publisher>Büchergilde Gutenberg</publisher> <pubPlace>Berlin</pubPlace> 		<idno type="ppn" n="021054657" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=021054657"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title> <date when="1999">1999</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="79849347X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=79849347X"/> 		<idno type="isbn" n="8470306863;9788470306860"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title>: 	<title type="sub">[novela]</title> <date when="1999">1999</date>, <publisher>Biblioteca Nueva</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="311820182" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=311820182"/> 		<idno type="isbn" n="8470306863"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana. Cañas y barro. La catedral. El intruso</title> <date when="2009">2009</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="634254987" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=634254987"/> 		<idno type="isbn" n="9788496452886"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Sónnica la cortesana</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479517852" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479517852"/> 		<idno type="isbn" n="9788496452886"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El Intruso</title> <date when="2014">2014</date>, <publisher>Linkgua Ediciones,</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1758796502" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1758796502"/> 		<idno type="isbn" n="9788499530994"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title> <date when="2020">2020</date>, <publisher>Penguin Clásicos</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1693357186" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1693357186"/> 		<idno type="isbn" n="9788491054139;8491054138"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +193,14 @@
 				<p>Vicente Blasco Ibáñez nos ofrece una descripción naturalista de las condiciones de trabajo y habitabilidad de la minería vasca del hierro en torno a Triano (Vizkaya, Bizkaia). El autor levantino nos expone el punto de vista empresarial, el de los contratistas, capataces y obreros, así como el del propio médico minero. El distrito minero vizcaíno aparece descrito con abundancia de detalles referidos, por ejemplo, al transporte del mineral (mediante planos inclinados, tranvías aéreos, vagonetas, ferrocarriles y embarcaderos y cargaderos de los muelles), al paisaje alterado, a la actividad de las compañías extranjeras o a la inmigración asociada al trabajo de las minas.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -188,7 +232,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela social</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela social</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -220,6 +264,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -227,7 +272,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0257_chap1">
-				<head>I</head>
+				<head xml:id="ne0257_head_000">I</head>
 				<p>Comenzaba á clarear el día cuando despertó el doctor Aresti, sintiéndose empujado en un hombro. Lo primero que vió fué el rostro de manzana seca, verdoso y arrugado de Kataliñ, su ama de llaves, y los dos cuernos del pañuelo que llevaba la vieja arrollado á las sienes.</p>
 				<p>—Don Luis... despierte. Muerto hay en el camino de Ortuella. El jues que vaya.</p>
 				<p>Comenzó á vestirse el doctor, después de largos desperezos y una rebusca lenta de sus ropas, entre los libros y revistas que, desbordándose de los estantes de la inmediata habitación, se extendían por su dormitorio de hombre solo.</p>
@@ -408,7 +453,7 @@
 				<p>De jóvenes se mataban por la mujer soltera; bailaban con el cuchillo oculto en la faja, dispuestos á disputarse la hembra á puñaladas. Asesinaban al rival como al infeliz <seg rend="italics">Maestrico</seg>; y después, de casados, satisfecho el primer ímpetu de su apetito exacerbado por la escasez de mujeres, se entregaban al trabajo que gastaba su voluntad y sus fuerzas; olvidaban el amor hasta despreciarlo, para no pensar más que en el dinero, como si los envenenase el viento de fortunas rápidas y milagrosos encumbramientos que parecía soplar sobre las minas. Se exterminaban por una cuestión de jornales ó de comestibles, y al encontrarse frente á frente con el adulterio, torcían el gesto como ante una contrariedad vulgar y hasta algunos procuraban extraer de su desgracia cierto provecho.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0257_chap2">
-				<head>II</head>
+				<head xml:id="ne0257_head_001">II</head>
 				<p>Más de seis meses iban transcurridos, sin que el doctor Aresti bajara á Bilbao. Por esto, al pasar del tren de Ortuella al de Portugalete, en la estación de El Desierto, experimentó ante el magnífico panorama de la ría la misma impresión de asombro de los aldeanos que sólo abandonaban sus caseríos ó la anteiglesia de su vecindad, cuando un asunto importante los llamaba á la villa.</p>
 				<p>El tren dejó atrás los torreones gemelos de los altos hornos de fundición—«los castillos feudales de Sánchez Morueta» según decía el doctor, que pregonaban la gloria industrial de su poderoso primo,—y después de atravesar un túnel, avanzó por la ribera cruzando los descargaderos de mineral. Eran estos á modo de baluartes que, arrancando de la montaña, llegaban hasta la ría, elevados algunos metros sobre el nivel de los campos. Los de las compañías extranjeras eran verdes, con los taludes cubiertos de musgo como los glacis de los fuertes modernos, y las pequeñas locomotoras pasaban sobre ellos ligeras y brillantes como juguetes. Los de las explotaciones del país eran de un rojo antipático, de escombros de mineral, desmoronándose con las lluvias sus pendientes, revelando el espíritu de sus dueños, incapaces de realzar con el más leve adorno los instrumentos de explotación. En la ría, junto á las grúas que funcionaban incesantemente, dormían los vapores, con el casco invisible tras la riba, mostrando por encima de ella las chimeneas y los mástiles. Subían de sus entrañas los grandes tanques de hierro cargados de hulla inglesa y, deslizándose por los rails aéreos, iban á volcar el negro mineral en las enormes montañas de las fábricas. Corrían por las vías de los descargaderos las vagonetas repletas de hierro y al llegar al punto más avanzado inclinábanse como si quisieran arrojarse al agua, soltando en los vientres de los buques su rojo contenido. Las dos riberas de la ría estaban en continua función, vomitando y absorviendo; entregando el mineral de sus montañas y apoderándose del carbón extranjero. Banderas de todas las nacionalidades ondeaban en las popas de los buques; los nombres más exóticos é impronunciables lucían en sus costados, y entre las chimeneas apagadas y negruzcas, erguían los veleros las esbeltas cruces de sus arboladuras, en el espacio azul.</p>
 				<p>Por un lado del tren, se abarcaba el vertiginoso movimiento de la ría con sus barcos y fábricas: por la ventanilla opuesta, admirábase la paz de los campos, el trabajo cachazudo y tranquilo de los aldeanos, removiendo la tierra arcillosa. Las mujeres, con la falda atrás y las piernas desnudas, sudaban dobladas sobre el surco. Las vacas movían el baboso hocico, sin ninguna inquietud, al ver el tren y volvían de nuevo á rumiar con la cabeza baja sobre el verde del prado. Grupos de mujeres lavaban sus guiñapos casi tendidas al borde de arroyos de líquido rojo, como si fuese sangre. Era el eterno color del agua en los alrededores de Bilbao: los lavados del mineral enrojecían hasta la corriente del Nervión. La industria, al enriquecer al país, corrompía las aguas puras y cristalinas de la época pastoril. El doctor recordaba la miseria de los peones de las minas, que les hacía huir de las fuentes de la montaña, porque sus aguas abren el apetito y facilitan la digestión. Preferían el líquido rojo é impuro de los lavaderos porque, ensuciando su estómago, hacía menos frecuente el hambre.</p>
@@ -574,7 +619,7 @@
 				<p>—Sí, no estoy descontento de la suerte. Todos hemos prosperado, Luis. A mí me rodea la felicidad: pero es por fuera: en todo lo que se ve.... Ahora, por dentro... por dentro cada uno sabe lo que lleva.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0257_chap3">
-				<head>III</head>
+				<head xml:id="ne0257_head_002">III</head>
 				<p>Fué una «comida íntima» la que dió Sánchez Morueta por ser sus días. No estaban en el comedor otras señoras que la esposa del millonario y su hija. Los convidados eran todos de la casa, empleados como el capitán Iriondo, el secretario Goicochea y Fernando Sanabre, el ingeniero director de los altos hornos, ó parientes de la familia como el doctor Aresti y Fermín Urquiola.</p>
 				<p>Este Urquiola visitaba con frecuencia la casa, por ser sobrino lejano de la señora, aunque Sánchez Morueta no mostraba por él gran simpatía. Era un antiguo discípulo de Deusto, que, después de abandonar la Universidad, seguía á las órdenes de los Padres de la Compañía lo mismo que cuando estudiaba en sus aulas. La juventud de Bilbao, que se llamaba á sí misma distinguida, admirábale por su fuerza muscular y el entusiasmo con que sustentaba las sanas ideas de los buenos padres. Era el organizador y el hombre de acción de todas las asociaciones piadosas. Su ideal consistía en tener á los <seg rend="italics">liberalitos</seg> en un puño y no dejar que las gentes de la Maketania se apoderasen del país. Pasaba en Bilbao por ser uno de los jóvenes más elegantes, pero cuando llegaban luchas electorales, se le veía con la boina sobre los ojos, empuñando un enorme garrote, al frente de los aldeanos de los pueblecillos inmediatos. La rizosa y poblada barba, la nariz aguileña y pesada y sus ojos negros de bohemio, dábanle gran prestigio entre las gentes del campo, porque las hacía recordar la cara adorada de su ídolo.</p>
 				<p>—¡Se le parece al señor!...—murmuraban.—Tiene toda la cara de don Carlos.</p>
@@ -731,7 +776,7 @@
 				<p>—Matar la fiera sería lo mejor. Pero de no ser así, hay que conservarla entre hierros, acosarla, acabar con su fuerza, romperla las uñas, arrancarla los dientes, y cuando la vejez y la debilidad hayan convertido la pantera en un perro manso y débil, entonces, ¡puerta abierta! ¡libertad completa! Y si los instintos del pasado renacen en ella, bastará un puntapié para volverla al orden.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0257_chap4">
-				<head>IV</head>
+				<head xml:id="ne0257_head_003">IV</head>
 				<p>El despacho de los ingenieros en los altos hornos de Sánchez Morueta, ocupaba el segundo piso de un edificio de moderna construcción, con las paredes exteriores ennegrecidas por el humo de las chimeneas que se alzaban entre aquél y la ría.</p>
 				<p>Abajo, en las oficinas, estaban los hombres de la administración, con la pluma tras la oreja, llevando las complicadas cuentas de las entradas de mineral y de hulla, del acero elaborado, que se esparcía por toda España en forma de rieles, lingotes y máquinas, y de los jornales de un ejército de obreros ennegrecidos y tostados junto á los hornos. Arriba, en lo más alto, estaban los <seg rend="italics">técnicos</seg>, el cerebro que dirigía aquel establecimiento industrial, grande y populoso como una ciudad.</p>
 				<p>Esta parte de la casa era la única que los trabajadores veían sin odio. Los días de paga, muchos, al salir, miraban con ojos iracundos las ventanas del primer piso, como si fuesen á asomar á ellas los administradores que regateaban el precio de su faena, cercenándolo con multas y descuentos por tardanzas ó descuidos en el trabajo. Si miraban más arriba era con el respeto que á la gente sencilla inspira el estudio.</p>
@@ -863,7 +908,7 @@
 				<p>—Gran cosa es la virtud, Fernandito: yo la admiro y la venero cuando sonríe y no se coloca en frente de la vida. Pero mi tierra, triste y con el alma muerta, es tan virtuosa, ¡tan virtuosa! que, créeme, ¡hijo mío!... tanta virtud me da asco.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0257_chap5">
-				<head>V</head>
+				<head xml:id="ne0257_head_004">V</head>
 				<p>Doña Cristina daba el último toque á sus cabellos rubios, que ya comenzaban á encanecer, al mismo tiempo que con el rabillo del ojo seguía en un espejo la marcha del reloj colocado sobre el mármol de una chimenea.</p>
 				<p>Eran las tres de la tarde, y á las cuatro tenía que asistir en Bilbao á una junta de señoras católicas, de la que era presidenta, en el Colegio del Sagrado Corazón.</p>
 				<p>Pepita no la acompañaba. Decía estar enferma; se quejaba de dolores de cabeza, sentía un malestar general; en fin, cosas de muchacha, y doña Cristina la dejaba en el hotel bajo la vigilancia del <seg rend="italics">aña</seg> Nicanora.</p>
@@ -999,7 +1044,7 @@
 				<p>Y sus ojos parecían penetrar en la joven, como si quisieran escudriñar el alma; pero Pepita permaneció impasible, con ese sereno disimulo que no se aprende, que es instintivo en la mujer y se agranda con el amor.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0257_chap6">
-				<head>VI</head>
+				<head xml:id="ne0257_head_005">VI</head>
 				<p>El amanecer era de verano, sin una nube en el cielo, delatándose la proximidad de la salida del sol con un celaje de color de sangre que apagaba el último parpadeo de las estrellas.</p>
 				<p>Despertaba Bilbao. Silbaban las locomotoras anunciando los primeros trenes para Portugalete y Las Arenas, y pasaban corriendo por el Arenal, con la comida envuelta en un pañuelo, los obreros que tenían su trabajo en las orillas de la ría. El Nervión mostrábase entre la bruma de su profundo cauce, con una brillantez azulada de acero. Dos anchas fajas de barro marcaban en los malecones el descenso de la marea. Apagábanse en la parte alta de la ría las luces de los <seg rend="italics">anguleros</seg>, que durante la noche iluminaban el cauce como una procesión de invisibles penitentes. Las aves marinas, atraídas por el resplandor rojizo de la iluminación de la villa, revoloteaban sobre los tejados y tendían sus alas hacia el mar, siguiendo la tortuosa calle de la ría hasta la inmensa plaza del Abra.</p>
 				<p>Comenzaban á abrirse los establecimientos de la gente pobre; abacerías, tabernas y bodegas. Sonaban los esquilones llamando á los fieles á misa y como atraídas por ellos pasaban mujeres viejas, vestidas de negro, con aspecto mixto de bruja y dueña, y ese tufo de ropa antigua, semejante al olor de la piedra mohosa de los templos. A lo lejos contestaban á las campanas el silbido de las locomotoras, el chirrido de los cabrestantes de los barcos y los gritos de las <seg rend="italics">cargueras</seg> que reñían por preeminencias en el trabajo, al comenzar su vaivén de los buques á tierra, con la cabeza abrumada por los fardos.</p>
@@ -1142,7 +1187,7 @@
 				<p>—Es tarde, Cristina, es tarde.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0257_chap7">
-				<head>VII</head>
+				<head xml:id="ne0257_head_006">VII</head>
 				<p>Estaba el señor Goicochea á media mañana, trabajando en su despacho contiguo al de Sánchez Morueta, cuando se incorporó en el asiento con sorpresa, viendo entrar á su principal.</p>
 				<p>Tres días antes había salido para Biarritz, manifestando á su secretario que tardaría unas dos semanas en regresar, y se presentaba inesperadamente, con una cara que daba miedo. ¿Qué negocio se le habría torcido al grande hombre, hasta el punto de hacerle perder su solemne gravedad?...</p>
 				<p>Su voz sonaba trémula y algo aflautada; una voz de ira; sus ademanes aparecían descompuestos, y lo que más asustaba al secretario, era que hablaba mucho, que había perdido su concisión característica y vacilaba envolviendo en palabras y más palabras sus tardos pensamientos.</p>
@@ -1271,7 +1316,7 @@
 				<p>—Yo nunca—dijo Aresti.—Pero de poco puedo servirte. Soy un hombre, y lo que tú necesitas, no está á mi alcance el dártelo. La alegría de tu vida sólo puedes encontrarla en tu casa... Ahora... lo que yo no sé aún es á qué precio vas á pagarla.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0257_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0257_head_007">VIII</head>
 				<p>El grande hombre estaba enfermo. Había transcurrido cerca de un mes sin que Aresti fuese á verle, pues no quería despertar con su presencia los recuerdos del millonario.</p>
 				<p>De vez en cuando, llegaban á él vagas noticias del estado de Sánchez Morueta por los contratistas de las minas. Don José no iba al escritorio; don José estaba enfermo en su palacio de Las Arenas. No era caso de gravedad: inapetencia, cansancio. Quería abarcar demasiado y los negocios minaban su salud.</p>
 				<p>—Es la crisis que él temía—pensó el médico.—Pero cuando no me llama sus razones tendrá... Debe haber cambiado mucho aquella casa.</p>
@@ -1402,7 +1447,7 @@
 				<p>Y el doctor Aresti, sin escuchar á su primo, que le seguía formulando excusas, salió de allí, con la convicción de que dejaba muerto á sus espaldas todo su pasado; de que acababa de romperse aquel parentesco fraternal y perdía lo último que le restaba de su familia.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0257_chap9">
-				<head>IX</head>
+				<head xml:id="ne0257_head_008">IX</head>
 				<p>A mediados de Agosto se inició una agitación de protesta entre los obreros de las minas.</p>
 				<p>Los contratistas de Gallarta, al reunirse por las noches con el doctor Aresti, hablaban de los síntomas de rebelión en las aldeas de la cuenca minera. En la Arboleda los peones clamaban contra las cantinas, afirmando que los capataces eran los verdaderos dueños, y que el obrero que no se surtía de víveres en ellas era despedido del trabajo. En Pucheta, que era donde vivían los más levantiscos, habían ido á navajazos un día de paga, por negarse dos trabajadores á satisfacer su deuda en la tienda de un protegido de los contratistas. Se hablaba de un gran mitin en la plaza mayor de Gallarta, al que asistirían todos los mineros para acordar la huelga, en vista de que no era admitida su petición en favor del pago semanal. Desde el kiosco que ocupaba la música los domingos, hablarían los amigos del pueblo, aquellos obreros de Bilbao emancipados del yugo de los patronos, que se dedicaban á la propaganda de las doctrinas socialistas y á la organización de las fuerzas obreras. Y mientras llegaba el momento de la rebeldía, los representantes del partido en la cuenca minera, que eran en su mayoría taberneros, derramaban en la irritada masa el consuelo del alcohol y de las teorías revolucionarias.</p>
 				<p>El <seg rend="italics">Milord</seg>, en la tertulia de los contratistas, hablaba, con alarma, de los pinches de las minas. Aquellos diablejos que llevaban el cuchillo en la faja, y á los que no se atrevían á maltratar los peones por miedo á sus venganzas de gato, le infundían mucho miedo. Ellos eran la vanguardia ruidosa de todas las huelgas, comprometiendo á los hombres con sus audacias, haciéndolos ir más allá de lo que se proponían. Algunas veces habían osado apedrear de lejos á la guardia civil, cuando en vísperas de revuelta paseaba sus tricornios por los caminos de la montaña. Ahora, el <seg rend="italics">Milord</seg> hablaba con terror de frecuentes robos de dinamita en los depósitos de las canteras. Los cartuchos debían ocultarlos los pinches en previsión de lo que ocurriera. ¡Buena se iba á armar!...</p>
@@ -1613,7 +1658,7 @@
 				<p>—¡La Muerte, Luis!... ¡Piensa en la Muerte!</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0257_chap10">
-				<head>X</head>
+				<head xml:id="ne0257_head_009">X</head>
 				<p>A las diez de la mañana llegó el doctor Aresti á Bilbao un domingo del mes de Septiembre.</p>
 				<p>El tren de Portugalete iba repleto de obreros, procedentes de las minas y las riberas de la ría. Todos mostraban prisa por llegar á la plaza de Toros. Se celebraba en ella un gran mitin de protesta contra los patronos, por no querer aceptar las proposiciones de los mineros, los cuales venían amenazando con una huelga hacía dos meses. La reunión popular era el <seg rend="italics">ultimátum</seg> que lanzaban los trabajadores.</p>
 				<p>Los primeros trenes de la mañana habían trasladado á Bilbao mayores cargamentos humanos, viendo su llegada con cierta alarma las gentes de la villa.</p>
@@ -1759,7 +1804,7 @@
 		</body>
 		<back>
 			<div>
-				<head>FIN</head>
+				<head xml:id="ne0257_head_010">FIN</head>
 			</div>
 		</back>
 	</text>

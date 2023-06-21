@@ -1,25 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<!--Corregido hasta "los siete versos", position 896-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!--Corregido hasta "los siete versos", position 896--><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Juan de Mairena</title>
-				<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo</title>
+				
 				<title type="short">Mairena</title>
-				<title type="idno">
-					<idno type="viaf">189374582</idno>
-					<idno type="bne">XX2067560</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX991518</idno>
-					<idno type="viaf">7385547</idno>
-					<name type="short">AMachado</name>
-					<name type="full">Antonio Machado</name>
+					<name type="short" ref="#AMachado"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2335</measure>
@@ -142,22 +131,115 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0177</idno>
+						<idno type="cligs">ne0177</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#other" subtype="rtf">Scribd, Kik, <date></date>, <idno>147655345</idno>, <ref target="http://www.scribd.com/doc/147655345/2-Machado-Antonio-Juan-de-Mairena-51-268-I"/>.</bibl>
-				<bibl type="print-source">Cátedra, ed. de Antonio Fernández Ferrer, Madrid, <date when="1986" >1986</date></bibl>
-				<bibl type="edition-first"><date when="1936">1936</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Juan de Mairena</title>
+					<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo</title>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/189374582/">189374582</idno>
+							<idno type="bne" corresp="https://datos.bne.es/obra/XX2067560.html">XX2067560</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/4623848-7">4623848-7</idno>
+				</idno>
+				</title>
+					<author xml:id="AMachado">
+						<name type="full"><forename>Antonio</forename> <surname>Machado</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 5560 - IP 5565">IP 5560 - IP 5565</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q243771/">Q243771</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX991518.html">XX991518</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/7385547/">7385547</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/118640739">118640739</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#other" subtype="rtf">Scribd, Kik, <date/>, <idno>147655345</idno>, <ref target="http://www.scribd.com/doc/147655345/2-Machado-Antonio-Juan-de-Mairena-51-268-I"/>.</bibl>
+					<bibl type="print-source">Cátedra, ed. de Antonio Fernández Ferrer, <pubPlace>Madrid</pubPlace>, <date when="1986">1986</date></bibl>
+					<bibl type="edition-first"><date when="1936">1936</date><idno source="k10plus" type="ppn" n="269392998" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269392998"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition"><title type="main">Juan de Mairena</title> , <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="097603139" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=097603139"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena: sentencias, donaires, apuntes y recuerdos de un profesor apócrifo</title> <date when="1936">1936</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="269392998" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=269392998"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Martín</title> <date when="1953">1953</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1135039062" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135039062"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cancionero de Juan de Mairena</title> <date when="1953">1953</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="337436584" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=337436584"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Juan de Mairena</title> <date when="1955">1955</date>, <publisher>Gallimard</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="1146413998" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1146413998"/> </bibl>
+						<bibl type="further-edition" xml:lang="fre"><title type="main">Juan de Mairena</title> <date when="1955">1955</date>, <publisher>Gallimard</publisher> <pubPlace>Paris</pubPlace> 		<idno type="ppn" n="598478124" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=598478124"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sentenzen, Späße, Aufzeichnungen und Erinnerungen eines apokryphen Lehrers</title> <date when="1956">1956</date>, <publisher>Suhrkamp</publisher> <pubPlace>Berlin;Frankfurt am Main</pubPlace> 		<idno type="ppn" n="1114569216" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1114569216"/> </bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sentenzen, Späße, Aufzeichnungen und Erinnerungen eines apokryphen Lehrers</title> <date when="1956">1956</date>, <publisher>Suhrkamp</publisher> <pubPlace>Berlin;Frankfurt a.M.</pubPlace> 		<idno type="ppn" n="177785624" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=177785624"/> </bibl>
+						<bibl type="further-edition"><title type="main">Ratschläge und Sentenzen Juan de Mairenas und seines Lehrers Abel Martín</title> <date when="1956">1956</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="099837102" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=099837102"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1957">1957</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="374934053" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=374934053"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1957">1957</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="374933944" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=374933944"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sentencias, Donaires, Apuntes y Recuerdos de un Profesor Apócrifo</title> <date when="1957">1957</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="374924368" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=374924368"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Juan de Mairena</title>: 	<title type="sub">epigrams, maxims, memoranda, and memoirs of an apocryphal professor with an append. of poems from The apocryphal songbooks</title> <date when="1963">1963</date>, <publisher>Univ. of. California Press</publisher> <pubPlace>Berkeley [u.a.]</pubPlace> 		<idno type="ppn" n="1135728240" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1135728240"/> </bibl>
+						<bibl type="further-edition" xml:lang="eng"><title type="main">Juan de Mairena</title>: 	<title type="sub">epigrams, maxims, memoranda, and memoirs of an apocryphal professor with an appendix of poems from The apocryphal songbooks</title> <date when="1963">1963</date>, <publisher>Univ. of California Pr.</publisher> <pubPlace>Berkeley;Los Angeles</pubPlace> 		<idno type="ppn" n="465425739" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=465425739"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Martín</title>: 	<title type="sub">cancionero de Juan de Mairena : prosas varias</title> <date when="1968">1968</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1612629717" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1612629717"/> </bibl>
+						<bibl type="further-edition"> <date when="1968">1968</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1168302528" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1168302528"/> </bibl>
+						<bibl type="further-edition"> <date when="1968">1968</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1168302315" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1168302315"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Abel Martín</title> <date when="1968">1968</date>, <publisher>Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="467945446" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=467945446"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo (1936)</title> <date when="1971">1971</date>, <publisher/> <pubPlace>Madrid: Ed. Castalia</pubPlace> 		<idno type="ppn" n="313094454" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=313094454"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo (1936)</title> <date when="1972">1972</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1073876624" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1073876624"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo (1936)</title> <date when="1972">1972</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="466045344" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=466045344"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena: sentencias, donaires, apuntes y recuerdos de un profesor apócrifo (1936)</title> <date when="1972">1972</date>, <publisher/> <pubPlace>Madrid: Ed. Castalia</pubPlace> 		<idno type="ppn" n="189314834" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=189314834"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title> <date when="1973">1973</date>, <publisher>Espasa-Calpe</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="597736448" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=597736448"/> 		<idno type="isbn" n="8423915301;9788423915309"/></bibl>
+						<bibl type="further-edition"><title type="main">Cancionero de Juan de Mairena</title> <date when="1975">1975</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="51728586X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=51728586X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena: sentencias, donaires, apuntes y recuerdos de un profesor apócrifo (1936)</title> <date when="1978">1978</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="194550281" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=194550281"/> 		<idno type="isbn" n="8470390368"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sentencias, donaires, apuntes y recuerdos de un profesor apócrifo, 1936</title> <date when="1981">1981</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1619127075" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1619127075"/> 		<idno type="isbn" n="8470390368"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo, 1936, precedido de apuntes inéditos : (1933 - 34)</title> <date when="1981">1981</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="039902293" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=039902293"/> 		<idno type="isbn" n="8420618551"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1986">1986</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1084312549" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1084312549"/> 		<idno type="isbn" n="8437605865"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1986">1986</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1084312441" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1084312441"/> 		<idno type="isbn" n="8437605857"/></bibl>
+						<bibl type="further-edition"> <date when="1986">1986</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="464018315" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=464018315"/> </bibl>
+						<bibl type="further-edition"> <date when="1986">1986</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="46401820X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=46401820X"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">(1936 - 1938)</title> <date when="1986">1986</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="03816339X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=03816339X"/> 		<idno type="isbn" n="8437605865"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1986">1986</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="038163381" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=038163381"/> 		<idno type="isbn" n="8437605857"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title> <date when="1986">1986</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="037202111" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=037202111"/> 		<idno type="isbn" n="8437605849"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sentencias, donaires, apuntes y recuerdos de un profesor apócrifo, 1936 ;</title> <date when="1989">1989</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1610911911" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1610911911"/> 		<idno type="isbn" n="8470390368"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Ponencias ; antecedentes familiares ; personalidad de Antonio Machado ; Juan de Mairena (y otros apocrifos) ; tematica machadiana (analisis de la obra)</title> <date when="1990">1990</date>, <publisher>Alfar</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="122852346" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=122852346"/> 		<idno type="isbn" n="8486256909"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Ponencias. Antecedentes familiares. Personalidad de Antonio Machado. Juan de Mairena (y otros apócrifos). Temática machadiana (análisis de la obra). - 1990</title> <date when="1990">1990</date>, <publisher>Ed. Alfar</publisher> <pubPlace>Sevilla</pubPlace> 		<idno type="ppn" n="03783794X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=03783794X"/> 		<idno type="isbn" n="8486256909"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sentencias, donaires, apuntes y recuerdos de un profesor apócrifo, 1936 ;</title> <date when="1991">1991</date>, <publisher>Ed. Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1617927708" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1617927708"/> 		<idno type="isbn" n="8470390368"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo (1936)</title> <date when="1991">1991</date>, <publisher>Castalia</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="252753755" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=252753755"/> 		<idno type="isbn" n="8470390368"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1993">1993</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1119423457" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1119423457"/> 		<idno type="isbn" n="8437605857"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1993">1993</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="220335583" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=220335583"/> 		<idno type="isbn" n="8437605857"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">[(1936 - 1938)]</title> <date when="1995">1995</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1175907448" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1175907448"/> 		<idno type="isbn" n="8437605865"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">[(1936 - 1938)]</title> <date when="1995">1995</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="220335591" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=220335591"/> 		<idno type="isbn" n="8437605865"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1998">1998</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="116671232X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=116671232X"/> 		<idno type="isbn" n="8437605865"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1998">1998</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="301416877" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=301416877"/> 		<idno type="isbn" n="8437605857"/></bibl>
+						<bibl type="further-edition"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo, 1936</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="271165162" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=271165162"/> 		<idno type="isbn" n="8420618551"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="1999">1999</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1166713075" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1166713075"/> 		<idno type="isbn" n="8437605857"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title> <date when="1999">1999</date>, <publisher>Consejería de Educación y Ciencia [u.a.]</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="115414903X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=115414903X"/> 		<idno type="isbn" n="8480517891"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo</title> <date when="1900">19XX</date>, <publisher>Ed. Losada</publisher> <pubPlace>Buenos Aires</pubPlace> 		<idno type="ppn" n="1168302080" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1168302080"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title> <date when="1900">19XX</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1084312344" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1084312344"/> 		<idno type="isbn" n="8437605849"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title> <date when="2001">2001</date>, <publisher>Bibliotex</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1726702685" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1726702685"/> 		<idno type="isbn" n="8481303437;9788481303438"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">1936 - 1938</title> <date when="2004">2004</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1357180187" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1357180187"/> 		<idno type="isbn" n="8437605865"/></bibl>
+						<bibl type="further-edition" xml:lang="ger"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sprüche, Scherze, Randbemerkungen und Erinnerungen eines zweifelhaften Schulmeisters</title> <date when="2005">2005</date>, <publisher>Ammann</publisher> <pubPlace>Zürich</pubPlace> 		<idno type="ppn" n="488692393" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=488692393"/> 		<idno type="isbn" n="3250104930"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2009">2009</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1421413531" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1421413531"/> 		<idno type="isbn" n="9788437605869"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2009">2009</date>, <publisher>Catédra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="1378197046" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1378197046"/> 		<idno type="isbn" n="9788437605852"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"> <date when="2015">2015</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="837911079" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=837911079"/> 		<idno type="isbn" n="9788437605852"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">[(1936 - 1938)]</title> <date when="2015">2015</date>, <publisher>Ed. Cátedra</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="837902797" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=837902797"/> 		<idno type="isbn" n="9788437605869"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">sentencias, donaires, apuntes y recuerdos de un profesor apócrifo (1936)</title> <date when="2016">2016</date>, <publisher>Alianza Editorial</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="897053575" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=897053575"/> 		<idno type="isbn" n="9788491044130"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Juan de Mairena</title>: 	<title type="sub">Sentencias, donaires, apuntes y recuerdos de un profesor apócrifo</title> <date when="2020">2020</date>, <publisher/> <pubPlace/> 		<idno type="ppn" n="1764051092" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1764051092"/> </bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p></p>
+			<p/>
 		</encodingDesc>
 		<profileDesc>
 			<abstract source="#jct">
 				<p>Obra donde se recogen fragmentos de clases, discursos y textos literarios de Juan de Mairena, profesor de deporte en una escuela a finales del siglo XIX en una ciudad de Andalucía, donde además ofrece clases de retórica. Mairena muere en los primeros años del siglo XX.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 5561" key="IP 5561" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL8">7</term>
 					<term type="author.continent">Europe</term>
@@ -168,7 +250,7 @@
 					<term type="author.litHist.pages" resp="MdL8">103</term>
 					<term type="author.movement">modernism</term>
 					<term type="author.nonNovelGenre">poetry</term>
-					<term type="author.period"></term>
+					<term type="author.period"/>
 					<term type="author.submovement">3-modernista</term>
 					<term type="author.year.change">0</term>
 					<term type="authorText.group">prosa filosófica</term>
@@ -183,7 +265,7 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">?</term>
 					<term type="text.genre.analyzed" cert="high">ensayo</term>
-					<term type="text.genre.subgenre.edit" resp="epublibre"></term>
+					<term type="text.genre.subgenre.edit" resp="epublibre"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">comedy</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">memoir</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">realist</term>
@@ -218,6 +300,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-01-12" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -229,7 +312,7 @@
 		<body>
 			<div n="1" type="chapter" xml:id="ne0177_chap1">
 
-				<head>I</head>
+				<head xml:id="ne0177_head_000">I</head>
 				<div type="section">
 
 
@@ -243,7 +326,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena, en su clase de Retórica y Poética</seg>.)</head>
+					<head xml:id="ne0177_head_001">(<seg rend="italic">Mairena, en su clase de Retórica y Poética</seg>.)</head>
 
 					<p>—Señor Pérez, salga usted a la pizarra y escriba: «Los eventos consuetudinarios que acontecen en la rúa.»</p>
 
@@ -265,7 +348,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre el diálogo y sus dificultades</seg>)</head>
+					<head xml:id="ne0177_head_002">(<seg rend="italic">Sobre el diálogo y sus dificultades</seg>)</head>
 
 					<p>"Ningún comediógrafo hará nada vivo y gracioso en el teatro sin estudiar a fondo la dialéctica de los humores". Esta nota de Juan de Mairena va acompañada de un esquema de diálogo en el cual uno de los interlocutores parece siempre dispuesto a la aquiescencia, exclamando a cada momento ¡claro!, ¡claro!, mientras el otro replica indefectiblemente: ¡Oh, ¡no tan claro! ¡no tan claro! En este diálogo, el uno acepta las razones ajenas casi sin oírlas, y el otro se revuelve contra las propias, ante el asentimiento de su interlocutor.</p>
 
@@ -287,7 +370,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre la verdad</seg>.)</head>
+					<head xml:id="ne0177_head_003">(<seg rend="italic">Sobre la verdad</seg>.)</head>
 
 					<p>Señores: la verdad del hombre —habla Mairena a sus alumnos de Retórica— empieza donde acaba su propia tontería. Pero la tontería del hombre es inagotable. Dicho de otro modo: el orador, nace; el poeta se hace con el auxilio de los dioses.</p>
 
@@ -343,7 +426,7 @@
 
 				</div>
 				<div type="section">
-					<head>(<seg rend="italic">Sobre el escepticismo</seg>.)</head>
+					<head xml:id="ne0177_head_004">(<seg rend="italic">Sobre el escepticismo</seg>.)</head>
 
 					<p>Contra los escépticos se esgrime un argumento aplastante: «Quien afirma que la verdad no existe, pretende que eso sea la verdad, incurriendo en palmaria contradicción». Sin embargo, este argumento irrefutable no ha convencido, seguramente, a ningún escéptico. Porque la gracia del escéptico consiste en que los argumentos <seg rend="italic">no le convencen</seg>. Tampoco pretende él convencer a nadie.</p>
 
@@ -364,7 +447,7 @@
 			</div>
 			<div n="2" type="chapter" xml:id="ne0177_chap2">
 
-				<head>II</head>
+				<head xml:id="ne0177_head_005">II</head>
 				<div type="section">
 
 
@@ -380,7 +463,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">La pedagogía, según Juan de Mairena, en 1940</seg>).</head>
+					<head xml:id="ne0177_head_006">(<seg rend="italic">La pedagogía, según Juan de Mairena, en 1940</seg>).</head>
 
 					<p>—Señor Gozálvez.</p>
 
@@ -429,7 +512,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Prácticas de oratoria</seg>).</head>
+					<head xml:id="ne0177_head_007">(<seg rend="italic">Prácticas de oratoria</seg>).</head>
 
 					<p>—Señores (habla Rodríguez, aventajado discípulo de Mairena): Nadie menos autorizado que yo para dirigiros la palabra: mi ingenio es nulo; mi ignorancia, casi enciclopédica. Encomiéndome, pues, a vuestra indulgencia. ¿Qué digo indulgencia? ¡A vuestra misericordia!</p>
 
@@ -468,7 +551,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Fragmento de clase</seg>.)</head>
+					<head xml:id="ne0177_head_008">(<seg rend="italic">Fragmento de clase</seg>.)</head>
 
 					<p>Mairena.-Señor Martínez, salga usted a la pizarra, y escriba:</p>
 
@@ -485,11 +568,11 @@
 			</div>
 			<div n="3" type="chapter" xml:id="ne0177_chap3">
 
-				<head>III</head>
+				<head xml:id="ne0177_head_009">III</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">De política</seg>.)</head>
+					<head xml:id="ne0177_head_010">(<seg rend="italic">De política</seg>.)</head>
 
 					<p>En España —no lo olvidemos— la acción política de tendencia progresiva suele ser débil, porque carece de originalidad; es puro mimetismo que no pasa de simple excitante de la reacción. Se diría que sólo el resorte reaccionario funciona en nuestra máquina social con alguna precisión y energía. Los políticos que pretenden gobernar hacia el porvenir deben tener en cuenta la reacción de fondo que sigue en España a todo avance de superficie. Nuestros políticos llamados de izquierda, un tanto frívolos —digámoslo de pasada—, rara vez calculan, cuando disparan sus fusiles de retórica futurista, el retroceso de las culatas, que suele ser, aunque parezca extraño, más violento que el tiro.</p>
 
@@ -628,7 +711,7 @@
 			</div>
 			<div n="4" type="chapter" xml:id="ne0177_chap4">
 
-				<head>IV</head>
+				<head xml:id="ne0177_head_011">IV</head>
 				<div type="section">
 
 
@@ -658,7 +741,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Ejercicios de Sofística</seg>.)</head>
+					<head xml:id="ne0177_head_012">(<seg rend="italic">Ejercicios de Sofística</seg>.)</head>
 
 					<p>La serie par es la mitad de la serie total de los números. La serie impar es la otra mitad.</p>
 
@@ -690,7 +773,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre</seg> la <seg rend="italic">crítica</seg>.)</head>
+					<head xml:id="ne0177_head_013">(<seg rend="italic">Sobre</seg> la <seg rend="italic">crítica</seg>.)</head>
 
 					<p>Si alguna vez cultiváis la crítica literaria o artística, sed benévolos. Benevolencia no quiere decir tolerancia de lo ruin o conformidad con lo inepto, sino voluntad del bien, en vuestro caso, deseo ardiente de ver realizado el milagro de la belleza. Sólo con esta disposición de ánimo la crítica puede ser fecunda. La crítica malévola que ejercen avinagrados y melancólicos es frecuente en España, y nunca descubre nada bueno. La verdad es que no lo busca ni lo desea.</p>
 
@@ -714,7 +797,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Viejos y jóvenes</seg>.)</head>
+					<head xml:id="ne0177_head_014">(<seg rend="italic">Viejos y jóvenes</seg>.)</head>
 
 					<p>Cuenta Juan de Mairena que uno de sus discípulos le dio a leer un artículo cuyo tema era la inconveniencia e inanidad de los banquetes. El artículo estaba dividido en cuatro partes:</p>
 
@@ -747,7 +830,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Una gran plancha de Juan de Mairena y de su maestro Abel Martín</seg>.)</head>
+					<head xml:id="ne0177_head_015">(<seg rend="italic">Una gran plancha de Juan de Mairena y de su maestro Abel Martín</seg>.)</head>
 
 					<p>«Carlos Marx, señores —ya lo decía mi maestro—, fue un judío alemán que interpretó a Hegel de una manera judaica, con su dialéctica materialista y su visión usuraria del futuro. ¡Justicia para el innumerable rebaño de los hombres; el mundo para apacentarlo! Con Marx, señores, la Europa, apenas cristianizada, retrocede al Viejo Testamento. Pero existe Rusia, la santa Rusia, cuyas raíces espirituales son esencialmente evangélicas. Porque lo específicamente ruso es la interpretación exacta del sentido fraterno del cristianismo. En la tregua del eros genesiaco, que sólo aspira a perdurar en el tiempo, de padres a hijos, proclama el Cristo la hermandad de los hombres, emancipada de los vínculos de la sangre y de los bienes de la tierra; el triunfo de las virtudes fraternas sobre las patriarcales. Toda la literatura rusa está impregnada de este espíritu cristiano. Yo no puedo imaginar, señores, una Rusia marxista, porque el ruso empieza donde el marxista acaba. ¡Proletarios del mundo, defendeos, porque sólo importa el gran rebaño de hombres! Así grita, todavía, el bíblico semental humano. Rusia no ha de escucharle.» (<seg rend="italic">Fragmento de un discurso de Juan de Mairena, conocido por sus discípulos con el nombre de</seg> «<seg rend="italic">Sermón de Mute</seg>», <seg rend="italic">porque fue pronunciado en el Ateneo de esta localidad</seg>).</p>
 
@@ -756,11 +839,11 @@
 			</div>
 			<div n="5" type="chapter" xml:id="ne0177_chap5">
 
-				<head>V</head>
+				<head xml:id="ne0177_head_016">V</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Las clases de Mairena</seg>.)</head>
+					<head xml:id="ne0177_head_017">(<seg rend="italic">Las clases de Mairena</seg>.)</head>
 
 					<p>Juan de Mairena hacía advertencias demasiado elementales a sus alumnos. No olvidemos que éstos eran muy jóvenes, casi niños, apenas bachilleres; que Mairena colocaba en el primer banco de su clase a los más torpes, y que casi siempre se dirigía a ellos.</p>
 
@@ -768,7 +851,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Apuntes tomados al oído por discípulos de Mairena</seg>.)</head>
+					<head xml:id="ne0177_head_018">(<seg rend="italic">Apuntes tomados al oído por discípulos de Mairena</seg>.)</head>
 
 					<p>Se dice que vivimos en un país de autodidactos. Autodidacto se llama al que aprende algo sin maestro. Sin maestro, por revelación interior o por reflexión auto inspectiva, pudimos aprender muchas cosas, de las cuales cada día vamos sabiendo menos. En cambio, hemos aprendido mal muchas otras que los maestros nos hubieran enseñado bien. Desconfiad de los autodidactos, sobre todo cuando se jactan de serlo.</p>
 
@@ -782,7 +865,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre el barroco literario</seg>)</head>
+					<head xml:id="ne0177_head_019">(<seg rend="italic">Sobre el barroco literario</seg>)</head>
 					<lg type="poem">
 						<l>El cielo estaba  más negro</l>
 
@@ -800,7 +883,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Eruditos</seg>.)</head>
+					<head xml:id="ne0177_head_020">(<seg rend="italic">Eruditos</seg>.)</head>
 
 					<p>El amor a la verdad es el más noble de todos los amores. Sin embargo, no es oro en él todo lo que reluce. Porque no faltan sabios, investigadores, eruditos que persiguen la verdad de las cosas y de las personas, en la esperanza de poder deslustrarlas, acuciados de un cierto afán demoledor de reputaciones y excelencias.</p>
 
@@ -810,7 +893,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Ejercicios poéticos sobre temas barrocos</seg>)</head>
+					<head xml:id="ne0177_head_021">(<seg rend="italic">Ejercicios poéticos sobre temas barrocos</seg>)</head>
 
 					<p>Lo clásico —habla Mairena a sus alumnos— es el empleo del sustantivo, acompañado de un adjetivo definidor. Así, Hornero llama hueca a la nave; con lo cual se acerca más a una definición que a una descripción de la nave. En la nave de Homero, en verdad, se navega todavía y se navegará mientras rija el principio de Arquímedes. Lo barroco no añade nada a lo clásico, pero perturba su equilibrio, exaltando la importancia del adjetivo definidor hasta hacerle asumir la propia función del sustantivo. Si el oro se define por la amarillez, y la plata por su blancor, no hay el menor inconveniente en que al oro le llamemos plata, con tal que esta plata sea rubia, y plata al oro, siempre que este oro sea cano. ¿Comprende usted, señor Martínez?</p>
 
@@ -864,11 +947,11 @@
 			</div>
 			<div n="6" type="chapter" xml:id="ne0177_chap6">
 
-				<head>VI</head>
+				<head xml:id="ne0177_head_022">VI</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Proverbios y consejos de Mairena</seg>.)</head>
+					<head xml:id="ne0177_head_023">(<seg rend="italic">Proverbios y consejos de Mairena</seg>.)</head>
 
 					<p>Los hombres que están siempre de vuelta en todas las cosas son los que no han ido nunca a ninguna parte. Porque ya es mucho ir; volver, ¡nadie ha vuelto!</p>
 
@@ -941,7 +1024,7 @@
 				</div>
 				<div type="section">
 
-					<head>RECUERDO INFANTIL (DE JUAN DE MAIRENA)</head>
+					<head xml:id="ne0177_head_024">RECUERDO INFANTIL (DE JUAN DE MAIRENA)</head>
 
 					<lg type="poem">
 						<l>Mientras no suena un paso leve</l>
@@ -981,11 +1064,11 @@
 			</div>
 			<div n="7" type="chapter" xml:id="ne0177_chap7">
 
-				<head>VII</head>
+				<head xml:id="ne0177_head_025">VII</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Sobre poesía</seg>. <seg rend="italic">Fragmentos de lecciones</seg>.)</head>
+					<head xml:id="ne0177_head_026">(<seg rend="italic">Sobre poesía</seg>. <seg rend="italic">Fragmentos de lecciones</seg>.)</head>
 
 					<p>Hay una poesía que se nutre de superlativos. El poeta pretende elevar su corazón hasta ponerlo fuera del tiempo, en el «topos uranios» de las ideas. Esta poesía, acompañada a veces de una emoción característica, que es la emoción de los superlativos, puede ser realmente poética, mientras el poeta no logra su propósito. Lo que quiere decir que el propósito, al menos, es antipoético. Si leyerais a Kant —en leer y comprender a Kant se gasta mucho menos fósforo que en descifrar tonterías sutiles y en desenredar marañas de conceptos ñoños— os encontraríais con aquella su famosa parábola de la paloma que, al sentir en las alas la resistencia que le opone el aire, sueña que podría volar mejor en el vacío. Así ilustra Kant su argumento más decisivo contra la metafísica dogmática, que pretende elevarse a lo absoluto por el vuelo imposible del intelecto discursivo en un vacío de intuiciones. Las imágenes de los grandes filósofos, aunque ejercen una función didáctica, tienen un valor poético indudable, y algún día nos ocuparemos de ellas. Conste ahora, no más, que existe —creo yo— una paloma lírica que suele eliminar el tiempo para mejor elevarse a lo eterno y que, como la kantiana, ignora la ley de su propio vuelo.</p>
 
@@ -1032,11 +1115,11 @@
 			</div>
 			<div n="8" type="chapter" xml:id="ne0177_chap8">
 
-				<head>VIII</head>
+				<head xml:id="ne0177_head_027">VIII</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Fragmentos de lecciones</seg>)</head>
+					<head xml:id="ne0177_head_028">(<seg rend="italic">Fragmentos de lecciones</seg>)</head>
 
 					<p>No hay mejor definición de la poesía que ésta: «poesía es algo de lo que hacen los poetas». Qué sea este algo no debéis preguntarlo al poeta. Porque no será nunca el poeta quien os conteste.</p>
 
@@ -1052,7 +1135,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena lee y comenta versos de su maestro</seg>)</head>
+					<head xml:id="ne0177_head_029">(<seg rend="italic">Mairena lee y comenta versos de su maestro</seg>)</head>
 
 					<p>Mairena no era un recitador de poesías. Se limitaba a leer sin gesticular y en un tono neutro, levemente musical. Ponía los acentos de la emoción donde suponía él que los había puesto el poeta. Como no era tampoco un virtuoso de la lectura, cuando leía versos —o prosa— no pretendía nunca que se dijese: ¡qué bien lee este hombre!, sino: ¡qué bien está lo que este hombre lee!, sin importarle mucho que se añadiese: ¡lástima que no lea mejor! Le disgustaba decir sus propios versos, que no eran para él sino cenizas de un fuego o virutas de una carpintería, algo que ya no le interesaba. Oírlos declamados, cantados, bramados por los recitadores y, sobre todo, por las recitadoras de oficio, le hubiera horripilado. Gustaba, en cambio, de oírlos recitar a los niños de las escuelas populares.</p>
 
@@ -1171,12 +1254,12 @@
 			</div>
 			<div n="9" type="chapter" xml:id="ne0177_chap9">
 
-				<head>IX</head>
+				<head xml:id="ne0177_head_030">IX</head>
 				<div type="section">
-						<head>(«<seg rend="italic">Don Nadie en la corte</seg>» /<seg rend="italic">boceto de una comedia en tres actos de Juan de Mairena</seg>".)</head>
+						<head xml:id="ne0177_head_031">(«<seg rend="italic">Don Nadie en la corte</seg>» /<seg rend="italic">boceto de una comedia en tres actos de Juan de Mairena</seg>".)</head>
 
 					<div type="section">
-							<head>ACTO PRIMERO</head>
+							<head xml:id="ne0177_head_032">ACTO PRIMERO</head>
 
 							    <stage>ESCENA ÚNICA</stage>
 
@@ -1210,7 +1293,7 @@
 							<p><stage>TELÓN</stage></p>
 						</div>
 					<div type="section">
-							<head>ACTO SEGUNDO</head>
+							<head xml:id="ne0177_head_033">ACTO SEGUNDO</head>
 
 							<stage>ESCENA ÚNICA</stage>
 							<stage>SEÑOR IMPORTANTE. CLAUDIO
@@ -1237,7 +1320,7 @@
 							<stage>TELÓN</stage>
 						</div>
 					<div type="section">
-							<head>ACTO TERCERO
+							<head xml:id="ne0177_head_034">ACTO TERCERO
 							</head>
 							<stage>ESCENA ÚNICA</stage>
 							<stage>SEÑOR IMPORTANTE. CLAUDIO. UN ESPEJO DE TOCADOR, QUE HACE CUANTO INDICA EL DIÁLOGO</stage>
@@ -1286,7 +1369,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre el tiempo poético</seg>).</head>
+					<head xml:id="ne0177_head_035">(<seg rend="italic">Sobre el tiempo poético</seg>).</head>
 
 					<p>La poesía es —decía Mairena— el diálogo del hombre, de un hombre con su tiempo. Eso es lo que el poeta pretende eternizar, sacándolo fuera del tiempo, labor difícil y que requiere mucho tiempo, casi todo el tiempo de que el poeta dispone. El poeta es un pescador, no de peces, sino de pescados vivos; entendámonos: de peces que puedan vivir después de pescados.</p>
 
@@ -1295,7 +1378,7 @@
 			</div>
 			<div n="10" type="chapter" xml:id="ne0177_chap10">
 
-				<head>X</head>
+				<head xml:id="ne0177_head_036">X</head>
 				<div type="section">
 
 
@@ -1312,7 +1395,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Fragmento de lecciones</seg>)</head>
+					<head xml:id="ne0177_head_037">(<seg rend="italic">Fragmento de lecciones</seg>)</head>
 
 					<p>A muchos asombra, señores, que en una clase de Retórica, como es la nuestra, hablemos de tantas cosas ajenas al arte de bien decir; porque muchos —los más— piensan que este arte puede ejercitarse en el vacío del pensamiento. Si esto fuera así, tendríamos que definir la Retórica como el arte de hablar bien sin decir nada, o de hablar bien de algo, pensando en otra cosa... Esto no puede ser. Para decir bien hay que pensar bien, y para pensar bien conviene elegir temas muy esenciales, que logren por sí mismos captar nuestra atención, estimular nuestros esfuerzos, conmovernos, apasionarnos y hasta sorprendernos. Conviene, además, no distinguir demasiado entre la Retórica y la Sofística, entre la Sofística y la Filosofía, entre la Filosofía y el pensar reflexivo, a propósito de lo humano y de lo divino.</p>
 
@@ -1341,10 +1424,10 @@
 			</div>
 			<div n="11" type="chapter" xml:id="ne0177_chap11">
 
-				<head>XI</head>
+				<head xml:id="ne0177_head_038">XI</head>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre Don Juan</seg>).</head>
+					<head xml:id="ne0177_head_039">(<seg rend="italic">Sobre Don Juan</seg>).</head>
 
 					<p>Don Juan es el hombre de las mujeres, el hombre que aman y se disputan las mujeres y a quien los hombres mirarían siempre con cierto desdén envidioso o con cierta envidia desdeñosa. Conviene suponer en Don Juan aquella belleza corporal que la mujer estima propia del varón. Esto quiere decir que el sexo reflejo de Don Juan, el de su imagen en el espejo femenino, es siempre el varonil. Don Juan podrá ser guapo o feo, fuerte o flojo, tuerto o derecho; él sabe, en todo caso, que es bello para la mujer. Sin la conciencia de esto no hay donjuanismo posible.</p>
 
@@ -1376,7 +1459,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Verso y prosa</seg>)</head>
+					<head xml:id="ne0177_head_040">(<seg rend="italic">Verso y prosa</seg>)</head>
 
 					<p>El siglo XVIII piensa, con D'Alembert, que «es sólo bueno en verso lo que sería excelente en prosa».</p>
 					<sp><speaker>M. Jourdain</speaker> <p>¿No hay más que la prosa o los versos?</p></sp>
@@ -1389,7 +1472,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena fantasea</seg>.)</head>
+					<head xml:id="ne0177_head_041">(<seg rend="italic">Mairena fantasea</seg>.)</head>
 
 					<p>Imaginad un mundo en el cual las piedras pudieran elegir su manera de caer y los hombres no pudieran enmendar, de ningún modo, su camino, obligados a circular sobre rieles. Sería la zona infernal que el Dante habría destinado a los deterministas.</p>
 
@@ -1400,10 +1483,10 @@
 			</div>
 			<div n="12" type="chapter" xml:id="ne0177_chap12">
 
-				<head>XII</head>
+				<head xml:id="ne0177_head_042">XII</head>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre Demócrito y sus átomos</seg>.)</head>
+					<head xml:id="ne0177_head_043">(<seg rend="italic">Sobre Demócrito y sus átomos</seg>.)</head>
 
 					<p>Según Demócrito, el antiguo filósofo griego, «lo dulce y lo amargo, lo caliente y lo frío, lo amarillo y lo verde, etc., no son más que <seg rend="italic">opiniones</seg>; sólo los átomos y el vacío son verdaderos». Para Demócrito, <seg rend="italic">opinión</seg> era un conocimiento obscuro, sin la menor garantía de realidad. Claro está que todo esto, señores, es una opinión de Demócrito, que nadie nos obliga a aceptar. Sin embargo, la ciencia ha ido formando, a través de los siglos, una concepción del Universo puramente mecánica, que lleva implícita la opinión de Demócrito, la cual <seg rend="italic">mutatis mutandi</seg>, ha llegado hasta nosotros, pobres diablos que estudiamos la Física, con algunos lustros de rezago, en las postrimerías del siglo XIX. No es fácil, pues, que podamos reírnos de Demócrito, sin aparentar, vanamente, una ignorancia mayor que la nuestra, que  ya es, de suyo, bastante considerable. Y yo os pregunto: si aceptamos la opinión de Demócrito, con todas sus consecuencias, ¿qué somos nosotros, meros aprendices de poeta, enamorados de lo dulce y lo amargo, lo caliente y lo frío, lo verde y lo azul, y de todo lo demás —sin excluir lo bueno y lo malo— que en nada se parece a los átomos, ni al vacío en que éstos se mueven? Seríamos el vacío del vacío mismo, un vacío en que ni siquiera se mueven los átomos. Meditad en lo trágico de nuestra situación. Porque, aunque lográramos recabar para nosotros una sombra de ser, una realidad más o menos opinable, siempre resultaría que los átomos pueden ser sin nosotros, y nosotros no podemos ser sin los átomos. Y esto es para nosotros más trágicamente desairado que la pura zambullida en la nada.</p>
 
@@ -1415,7 +1498,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre los modos de decir y pensar</seg>.)</head>
+					<head xml:id="ne0177_head_044">(<seg rend="italic">Sobre los modos de decir y pensar</seg>.)</head>
 					<lg type="poem">
 						<l>Se miente más que se engaña;</l>
 
@@ -1456,7 +1539,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Fragmentos de lecciones</seg>)</head>
+					<head xml:id="ne0177_head_045">(<seg rend="italic">Fragmentos de lecciones</seg>)</head>
 
 					<p>Decía mi maestro Abel Martín que es la modestia la virtud que más espléndidamente han solido premiar los dioses. Recordad a Sócrates, que no quiso ser más que un amable conversador callejero, y al divino Platón, su discípulo, que puso en boca de tal maestro lo mejor de su pensamiento. Recordad a Virgilio, que nunca pensó igualar a Homero, y al Dante, que no soñó en superar a Virgilio. Recordad, sobre todo, a nuestro Cervantes, que hizo en su <seg rend="italic">Quijote</seg> una parodia de los libros de caballerías, empresa literaria muy modesta para su tiempo y que en el nuestro sólo la habrían intentado los libretistas de zarzuelas bufas. Los periodos más fecundos de la historia son aquellos en que los modestos no se chupan el dedo.</p>
 
@@ -1523,7 +1606,7 @@
 			</div>
 			<div n="13" type="chapter" xml:id="ne0177_chap13">
 
-				<head>XIII</head>
+				<head xml:id="ne0177_head_046">XIII</head>
 				<div type="section">
 
 
@@ -1555,7 +1638,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Contra la educación física</seg>.)</head>
+					<head xml:id="ne0177_head_047">(<seg rend="italic">Contra la educación física</seg>.)</head>
 
 					<p>Siempre he sido —habla Mairena a sus alumnos de Retórica— enemigo de lo que hoy llamamos, con expresión tan ambiciosa como absurda, <seg rend="italic">educación física</seg>. Dejemos a un lado a los antiguos griegos, de cuyos gimnasios hablaremos otro día. Vengamos a lo de hoy. <seg rend="italic">No hay que educar físicamente a nadie</seg>: Os lo dice un profesor de Gimnasia.</p>
 
@@ -1571,7 +1654,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">De teatro</seg>.)</head>
+					<head xml:id="ne0177_head_048">(<seg rend="italic">De teatro</seg>.)</head>
 
 					<p>Hay cómicos que están siempre en escena, como si vivieran la comedia que representan. De éstos se dice, con razón, que son los mejores. Hay otros cuya presencia en el escenario no supone la más leve intervención en la comedia. Ellos están allí, en efecto, pensando en otra cosa tal vez más importante que cuanto se dice en la escena. Estos actores me inspiran cierto respeto, y espero, para juzgarlos, el papel que coincida con sus preocupaciones. Hay otros, en fin, que ya están, ya no están en la comedia, porque en ella entran o de ella salen a cada momento, por razones que sólo conoce el apuntador. De éstos hay poco que esperar: ni dentro ni fuera del teatro parece que hayan de hacer cosa de provecho.</p>
 
@@ -1580,11 +1663,11 @@
 			</div>
 			<div n="14" type="chapter" xml:id="ne0177_chap14">
 
-				<head>XIV</head>
+				<head xml:id="ne0177_head_049">XIV</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">De un discurso de Juan de Mairena</seg>.)</head>
+					<head xml:id="ne0177_head_050">(<seg rend="italic">De un discurso de Juan de Mairena</seg>.)</head>
 
 					<p>Sólo en sus momentos perezosos puede un poeta dedicarse a interpretar los sueños y a rebuscar en ellos elementos que utilizar en sus poemas. La oniroscopia no ha producido hasta la fecha nada importante. Los poemas de nuestra vigilia, aun los menos logrados, son más originales y más bellos y, a las veces, más disparatados que los de nuestros sueños. Os lo dice quien pasó muchos años de su vida pensando lo contrario. Pero de sabios es mudar de consejo.</p>
 
@@ -1607,7 +1690,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">De otro discurso</seg>.)</head>
+					<head xml:id="ne0177_head_051">(<seg rend="italic">De otro discurso</seg>.)</head>
 
 					<p>Es muy posible que el argumento ontológico o prueba de la existencia de Dios no haya convencido nunca a nadie, ni siquiera al mismo San Anselmo, que, según se dice, lo inventó. No quiero con esto daros a entender que piense yo que el buen obispo de Canterbury era hombre descreído, sino que, casi seguramente, no fue hombre que necesitase de su argumento para creer en Dios. Tampoco habéis de pensar que nuestro tiempo sea más o menos descreído porque el tal argumento haya sido refutado alguna vez, lo cual, aunque fuese cierto, no sería razón suficiente para <seg rend="italic">descreer</seg> en cosa tan importante como es la existencia de Dios. Todo esto es tan de clavo pasado, que hasta las señoras —como decía un ateneísta — pueden entenderlo. No es aquí, naturalmente, adonde yo quería venir a parar, sino a demostraros que el famoso argumento o prueba venerable de la existencia de Dios no es, como piensan algunos opositores a cátedras de Filosofía, una trivialidad, que pueda ser refutada por el sentido común. Cuando ya la misma escolástica, que engendró el famoso argumento, creía haberlo aniquilado, resucita en Descartes, nada menos, Descartes lo hace suyo y lo refuerza con razones que pretenden ser evidencias. Más tarde Kant, según es fama, le da el golpe de gracia, como si dijéramos: lo descabella a pulso en la Dialéctica transcendental de su <seg rend="italic">Crítica de la razón pura</seg>. Con todo, el famoso argumento ha llegado hasta nosotros, atravesando ocho siglos —si no calculo mal—, puesto que todavía nos ocupamos de él, y en una clase que ni siquiera es de Filosofía, sino de Retórica.</p>
 
@@ -1624,7 +1707,7 @@
 			</div>
 			<div n="15" type="chapter" xml:id="ne0177_chap15">
 
-				<head>XV</head>
+				<head xml:id="ne0177_head_052">XV</head>
 				<div type="section">
 
 
@@ -1652,7 +1735,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Dos grandes inventos</seg>)</head>
+					<head xml:id="ne0177_head_053">(<seg rend="italic">Dos grandes inventos</seg>)</head>
 
 					<p>La fe platónica en las ideas trascendentes salvó a Grecia del <seg rend="italic">solus ipse</seg> en que la hubiera encerrado la sofística. La razón humana es pensamiento genérico. Quien razona afirma la existencia de su prójimo, la necesidad del diálogo, la posible comunicación mental entre los hombres. Conviene creer en las ideas platónicas, sin desvirtuar demasiado la interpretación tradicional del platonismo. Sin la absoluta trascendencia de las ideas, iguales para todos, intuibles e indeformables por el pensamiento individual, la razón, como estructura común a una pluralidad de espíritus, no existiría, no tendría razón de existir. Dejemos a los filósofos que discutan el verdadero sentido del pensamiento platónico. Para nosotros lo esencial del platonismo es una fe en la realidad metafísica de la idea, que los siglos no han logrado destruir.</p>
 
@@ -1673,7 +1756,7 @@
 			</div>
 			<div n="16" type="chapter" xml:id="ne0177_chap16">
 
-				<head>XVI</head>
+				<head xml:id="ne0177_head_054">XVI</head>
 				<div type="section">
 
 
@@ -1695,7 +1778,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre la política y la juventud</seg>)</head>
+					<head xml:id="ne0177_head_055">(<seg rend="italic">Sobre la política y la juventud</seg>)</head>
 
 					<p>La política, señores —sigue hablando Mairena— es una actividad importantísima... Yo no os aconsejaré nunca el <seg rend="italic">apoliticismo</seg>, sino, en último término, el desdeño de la política mala, que hacen trepadores y cucañistas, sin otro propósito que el de obtener ganancia y colocar parientes. Vosotros debéis <seg rend="italic">hacer política</seg>, aunque otra cosa os digan los que pretenden hacerla sin vosotros, y naturalmente, contra vosotros. Sólo me atrevo a aconsejaros que la hagáis a cara descubierta; en el peor caso con máscara política, sin disfraz de otra cosa; por ejemplo: de literatura, de filosofía, de religión. Porque de otro modo contribuiréis a degradar actividades tan excelentes, por lo menos, como la política, y a enturbiar la política de tal suerte que ya no podamos nunca entendernos.</p>
 
@@ -1713,7 +1796,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Ejercicios de Sofística</seg>)</head>
+					<head xml:id="ne0177_head_056">(<seg rend="italic">Ejercicios de Sofística</seg>)</head>
 
 					<p>Se dice que no hay regla sin excepción. ¿Es esto cierto? Yo no me atrevería a asegurarlo. En todo caso, si esta afirmación contiene verdad, será una verdad de hecho, que no satisface plenamente a la razón. Toda excepción —se añade— confirma la regla. Esto no parece tan obvio, y es, sin embargo, más aceptable lógicamente. Porque si toda excepción lo es de una regla, donde hay excepción hay regla, y quien piensa la excepción piensa la regla. Esto es ya una verdad, de razón, es decir, de Pero Grullo, mera tautología, que nada nos enseña. No podemos conformarnos con ella. Sutilicemos, añadamos algo que no se le pueda ocurrir a Pero Grullo.</p>
 
@@ -1740,7 +1823,7 @@
 			</div>
 			<div n="17" type="chapter" xml:id="ne0177_chap17">
 
-				<head>XVII</head>
+				<head xml:id="ne0177_head_057">XVII</head>
 				<div type="section">
 
 
@@ -1762,7 +1845,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre lo apócrifo</seg>.)</head>
+					<head xml:id="ne0177_head_058">(<seg rend="italic">Sobre lo apócrifo</seg>.)</head>
 
 					<p>Tenéis —decía Mairena a sus alumnos— unos padres excelentes, a quienes debéis respeto y cariño; pero ¿por qué no inventáis otros más excelentes todavía?</p>
 
@@ -1770,7 +1853,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena, examinador</seg>)</head>
+					<head xml:id="ne0177_head_059">(<seg rend="italic">Mairena, examinador</seg>)</head>
 
 					<p>Mairena era, como examinador, extremadamente benévolo. Suspendía a muy pocos alumnos, y siempre tras exámenes brevísimos. Por ejemplo:</p>
 
@@ -1796,7 +1879,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Contra los contrarios</seg>.)</head>
+					<head xml:id="ne0177_head_060">(<seg rend="italic">Contra los contrarios</seg>.)</head>
 
 					<p>Nada puede ser —decía mi maestro— lo contrario de lo que es.</p>
 
@@ -1808,7 +1891,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Siempre en guardia</seg>.)</head>
+					<head xml:id="ne0177_head_061">(<seg rend="italic">Siempre en guardia</seg>.)</head>
 
 					<p>Ya os he dicho que el escepticismo pudiera no estar de moda, y para ese caso posible, y aun probable, yo os aconsejo también una posición escéptica. Se inventarán nuevos sistemas filosóficos en extremo ingeniosos, que vendrán, sobre todo, de Alemania, contra nosotros los escépticos o filósofos propiamente dichos. Porque el hombre es un animal extraño que necesita —según él— justificar su existencia con la posesión de alguna verdad absoluta, por modesto que sea lo absoluto de esta verdad. Contra esto, sobre todo, contra lo modesto absoluto, debéis estar absolutamente en guardia.</p>
 
@@ -1816,7 +1899,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre la modestia relativa</seg>.)</head>
+					<head xml:id="ne0177_head_062">(<seg rend="italic">Sobre la modestia relativa</seg>.)</head>
 
 					<p>Contaba Mairena que había leído en una placa dorada, a la puerta de una clínica, la siguiente inscripción: «Doctor Rimbombe. De cuatro a cinco, consulta a precios módicos para empleados modestos con blenorragia crónica.» Reparad —observaba Mairena— en que aquí lo modesto no es precisamente el doctor, ni, mucho menos, la blenorragia.</p>
 
@@ -1824,7 +1907,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre el Carnaval</seg>.)</head>
+					<head xml:id="ne0177_head_063">(<seg rend="italic">Sobre el Carnaval</seg>.)</head>
 
 					<p>Se dice que el Carnaval es una fiesta llamada a desaparecer. Lo que se ve —decía Mairena— es que el pueblo, siempre que se regocija, <seg rend="italic">hace Carnaval</seg>. De modo que lo carnavalesco, que es lo específicamente popular de toda fiesta, no lleva trazas de acabarse. Y desde un punto de vista más aristocrático, tampoco el Carnaval desaparece. Porque lo esencial carnavalesco no es ponerse careta, sino quitarse la cara. Y no hay nadie tan bien avenido con la suya que no aspire a estrenar otra alguna vez.</p>
 
@@ -1833,11 +1916,11 @@
 			</div>
 			<div n="18" type="chapter" xml:id="ne0177_chap18">
 
-				<head>XVIII</head>
+				<head xml:id="ne0177_head_064">XVIII</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">En clase</seg>)</head>
+					<head xml:id="ne0177_head_065">(<seg rend="italic">En clase</seg>)</head>
 
 					<p>—¿Recuerda usted, señor Rodríguez, lo que dijimos de las intuiciones y de los conceptos?</p>
 
@@ -1891,11 +1974,11 @@
 			</div>
 			<div n="19" type="chapter" xml:id="ne0177_chap19">
 
-				<head>XIX</head>
+				<head xml:id="ne0177_head_066">XIX</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Leve profecía de Juan de Mairena</seg>.)</head>
+					<head xml:id="ne0177_head_067">(<seg rend="italic">Leve profecía de Juan de Mairena</seg>.)</head>
 
 					<p>Donde la mujer suele estar, como en España —decía Juan de Mairena—, en su puesto, es decir, en su casa, cerca del fogón y consagrada al cuidado de sus hijos, es ella la que casi siempre domina, hasta imprimir el sello de su voluntad a la sociedad entera. El verdadero problema es allí el de la emancipación de los varones, sometidos a un régimen maternal demasiado rígido. La mujer perfectamente abacia en la vida pública, es voz cantante y voto decisivo en todo lo demás. Si unos cuantos viragos del sufragismo, que no faltan en ningún país, consiguiesen en España de la frivolidad masculina la concesión del voto a la mujer, las mujeres propiamente dichas votarían contra el voto; quiero decir que enterrarían en las urnas el régimen político que, imprudentemente, les concedió un derecho a que ellas no aspiraban. Esto sería lo inmediato. Si, más tarde, observásemos que la mujer deseaba, en efecto, intervenir en la vida política, y que pedía el voto, sabiendo lo que pedía, entonces podríamos asegurar que el matriarcado español comenzaba a perder su fuerza y que el varón tiraba de la mujer más que la mujer del varón. Esto sería entre nosotros profundamente revolucionario. Pero es peligro demasiado remoto para que pueda todavía preocuparnos.</p>
 
@@ -1926,7 +2009,7 @@
 			</div>
 			<div n="20" type="chapter" xml:id="ne0177_chap20">
 
-				<head>XX</head>
+				<head xml:id="ne0177_head_068">XX</head>
 				<div type="section">
 
 
@@ -2012,11 +2095,11 @@
 			</div>
 			<div n="21" type="chapter" xml:id="ne0177_chap21">
 
-				<head>XXI</head>
+				<head xml:id="ne0177_head_069">XXI</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Fragmentos de varias lecciones de Mairena</seg>.)</head>
+					<head xml:id="ne0177_head_070">(<seg rend="italic">Fragmentos de varias lecciones de Mairena</seg>.)</head>
 
 					<p>—Sostenía mi maestro —habla Mairena a sus alumnos de Sofística— que todo cuanto se mueve es inmutable, es decir, que no puede afirmarse de ello otro cambio que el cambio de lugar; que el movimiento corrobora la identidad del móvil en todos los puntos de su trayectoria. Sea lo que sea aquello que se mueve, no puede cambiar, por el mismo hecho de moverse. Meditad sobre esto, que parece muy lógico, y está, sin embargo, en pugna con todas las apariencias.</p>
 
@@ -2050,7 +2133,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre teatro</seg>)</head>
+					<head xml:id="ne0177_head_071">(<seg rend="italic">Sobre teatro</seg>)</head>
 
 					<p>—¿Por qué he llamado a mi tragicomedia —decía Mairena a sus alumnos— <seg rend="italic">El gran climatérico</seg>? En primer lugar, porque me suena bien, algo así como a título de drama trágico, que fuese para comedia de figurón o viceversa. En segundo, porque, como ya he dicho, alude al sexagesimotercero año de la existencia humana, que los médicos y los astrólogos consideran como el más crítico y peligroso de la vida, su escalón o <seg rend="italic">klimakter</seg> más difícil de salvar, y después del cual estamos en plena ancianidad y, con ella, más allá de la vida preponderantemente sexual, al fin de la tragicomedia erótica, cuando ya podemos hacer algunas reflexiones sobre su totalidad. Tal es la razón del título, que no pretende, por lo demás, contener una definición de la obra.</p>
 
@@ -2080,7 +2163,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre crítica</seg>)</head>
+					<head xml:id="ne0177_head_072">(<seg rend="italic">Sobre crítica</seg>)</head>
 
 					<p><seg rend="italic">Ten censure wrong for one who writes amiss</seg>, decía Pope, un inglés que no se chupaba el dedo. Ignoro —añadía Mairena— si esta sentencia tiene todavía una perfecta aplicación a la literatura inglesa; mas creo que viene como anillo al dedo de la nuestra. Entre nosotros —digámoslo muy en general, sin ánimo de zaherir a nadie y salvando siempre cuanto se salva por sí mismo— la crítica o reflexión juiciosa sobre la obra realizada es algo tan pobre, tan desorientado y descaminante que apenas si nos queda más norte que el público. En el teatro, sobre todo. Hasta nuestros grandes dramáticos del Siglo de Oro, metidos a censores y preceptistas, no hicieron cosa mejor que pedantear en torno a Aristóteles. Y cuando el teatro era Francisco Comella, vino Moratín, gran censor. El buen don Leandro, autor de piezas estimables, llevaba dentro un crítico tan inepto para juzgar las comedias como don Eleuterio Crispín de Andorra para escribirlas. Bástenos recordar que <seg rend="italic">El gran cerco de Viena</seg>, modelo de cacografía escénica, está imaginado sobre un esquema calderoniano, es una parodia inconsciente de la obra de nuestro gran barroco. De la crítica, ya especializada, a la hora del florecer romántico, más vale no hablar. Y es que entre nosotros lo endeble es el juicio, tal vez porque lo sano y viril es, como vio Cervantes, la locura.</p>
 
@@ -2095,7 +2178,7 @@
 			</div>
 			<div n="22" type="chapter" xml:id="ne0177_chap22">
 
-				<head>XXII</head>
+				<head xml:id="ne0177_head_073">XXII</head>
 				<div type="section">
 
 
@@ -2120,7 +2203,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Una saeta de Abel Martín</seg>)</head>
+					<head xml:id="ne0177_head_074">(<seg rend="italic">Una saeta de Abel Martín</seg>)</head>
 					<lg type="poem">
 
 						<l>Abel, solo. Entre sus libros</l>
@@ -2215,7 +2298,7 @@
 			</div>
 			<div n="23" type="chapter" xml:id="ne0177_chap23">
 
-				<head>XXIII</head>
+				<head xml:id="ne0177_head_075">XXIII</head>
 				<div type="section">
 
 
@@ -2304,7 +2387,7 @@
 			</div>
 			<div n="24" type="chapter" xml:id="ne0177_chap24">
 
-				<head>XXIV</head>
+				<head xml:id="ne0177_head_076">XXIV</head>
 				<div type="section">
 
 
@@ -2401,11 +2484,11 @@
 			</div>
 			<div n="25" type="chapter" xml:id="ne0177_chap25">
 
-				<head>XXV</head>
+				<head xml:id="ne0177_head_077">XXV</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Apuntes tomados por los alumnos de Juan de Mairena</seg>)</head>
+					<head xml:id="ne0177_head_078">(<seg rend="italic">Apuntes tomados por los alumnos de Juan de Mairena</seg>)</head>
 
 					<p>En nuestra lógica —habla Mairena a sus alumnos— no se trata de poner el pensamiento de acuerdo consigo mismo, lo que, para nosotros, carece de sentido; pero sí de ponerlo en contacto o en relación con todo lo demás. No sabemos, en verdad, cuál sea, en nuestra lógica, la significación del principio de identidad, por cuanto no podemos probar que nada permanezca idéntico a sí mismo, ni siquiera nuestro pensamiento, puesto que no hay manera de pensar una cosa como igual a sí misma sin pensarla dos veces, y, por ende, como dos cosas distintas, numéricamente al menos.</p>
 
@@ -2459,11 +2542,11 @@
 			</div>
 			<div n="26" type="chapter" xml:id="ne0177_chap26">
 
-				<head>XXVI</head>
+				<head xml:id="ne0177_head_079">XXVI</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">El oyente</seg>.)</head>
+					<head xml:id="ne0177_head_080">(<seg rend="italic">El oyente</seg>.)</head>
 
 					<p>El oyente de la clase de Retórica, en quien Mairena sospechaba un futuro taquígrafo del Congreso, era, en verdad, un oyente, todo un oyente, que no siempre tomaba notas, pero que siempre escuchaba con atención, ceñuda unas veces, otras sonriente. Mairena lo miraba con simpatía no exenta de respeto, y nunca se atrevía a preguntarle. Sólo una vez, después de interrogar a varios alumnos, sin obtener respuesta satisfactoria, señaló hacia él con el dedo índice, mientras pretendía en vano recordar un nombre.</p>
 
@@ -2483,7 +2566,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">La dialéctica de Martínez</seg>)</head>
+					<head xml:id="ne0177_head_081">(<seg rend="italic">La dialéctica de Martínez</seg>)</head>
 
 					<p>Cuando el hombre —habla Mairena, iniciando un ejercicio de Retórica— vio su cuerpo desnudo en el espejo de las aguas, se dijo: «He aquí algo perfectamente bello que merece guardarse.» E inventó el vestido. Porque, evidentemente... Continúe usted, señor Martínez, desarrollando el tema.</p>
 
@@ -2542,7 +2625,7 @@
 			</div>
 			<div n="27" type="chapter" xml:id="ne0177_chap27">
 
-				<head>XXVII</head>
+				<head xml:id="ne0177_head_082">XXVII</head>
 				<div type="section">
 
 
@@ -2614,7 +2697,7 @@
 			</div>
 			<div n="28" type="chapter" xml:id="ne0177_chap28">
 
-				<head>XXVIII</head>
+				<head xml:id="ne0177_head_083">XXVIII</head>
 				<div type="section">
 
 
@@ -2631,7 +2714,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Apuntes de Juan de Mairena</seg>.)</head>
+					<head xml:id="ne0177_head_084">(<seg rend="italic">Apuntes de Juan de Mairena</seg>.)</head>
 
 					<p>1.º <seg rend="italic">Salud señora para encomendarle a Dios y qué buen ver que tiene todavía esta señora</seg>. Esta retahíla de palabras, horra de signos de puntuación, es lo que resta de <seg rend="italic">La visita de duelo</seg>, comedia en que Juan de Mairena ensaya una nueva técnica para el diálogo. «Sería conveniente —escribe Mairena— que nuestros actores fuesen algo ventrílocuos o que dispusiesen, por lo menos, de dos voces: una de claro timbre para lo que se dice, y otra, algo cavernosa, para lo que paralelamente se piensa. El público aceptaría cuanto hay de artificial en el empleo de estas dos voces, a cambio de poder más hondamente penetrar en la psicología de los personajes. La comedia integral a cartas vistas, que es el poema dramático del porvenir, requiere convenciones de esta índole.»</p>
 
@@ -2681,7 +2764,7 @@
 			</div>
 			<div n="29" type="chapter" xml:id="ne0177_chap29">
 
-				<head>XXIX</head>
+				<head xml:id="ne0177_head_085">XXIX</head>
 				<div type="section">
 
 
@@ -2735,7 +2818,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">De senectute</seg>.)</head>
+					<head xml:id="ne0177_head_086">(<seg rend="italic">De senectute</seg>.)</head>
 
 					<p>De la vejez, poco he de deciros, porque no creo haberla alcanzado todavía. Noto, sin embargo, que mi cuerpo se va poniendo en ridículo; y esto es la vejez para la mayoría de los hombres. Os confieso que no me hace maldita la gracia.</p>
 
@@ -2768,7 +2851,7 @@
 			</div>
 			<div n="30" type="chapter" xml:id="ne0177_chap30">
 
-				<head>XXX</head>
+				<head xml:id="ne0177_head_087">XXX</head>
 				<div type="section">
 
 
@@ -2807,7 +2890,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Acotación a Mairena</seg>)</head>
+					<head xml:id="ne0177_head_088">(<seg rend="italic">Acotación a Mairena</seg>)</head>
 
 					<p>Juan de Mairena era un hombre de otro tiempo, intelectualmente formado en el descrédito de las filosofías románticas, los grandes rascacielos de las metafísicas postkantianas, y no había alcanzado, o no tuvo noticia, de este moderno resurgir de la fe platónico-escolástica en la realidad de los universales, en la posible intuición de las esencias, la <seg rend="italic">Wesenschau</seg> de los fenomenólogos de Friburgo. Mucho menos pudo alcanzar las últimas consecuencias del temporalismo bergsoniano, la fe en el valor ontológico de la existencia humana. Porque, de otro modo, hubiera tomado más en serio las fantasías poético-metafísicas  de su maestro, Abel Martín. Y aquel <seg rend="italic">existo, luego soy</seg>, con que su maestro pretendía nada menos que enmendar a Descartes, le hubiera parecido algo más que una gedeonada, buena para sus clases de Retórica y de Sofística.</p>
 
@@ -2845,11 +2928,11 @@
 			</div>
 			<div n="31" type="chapter" xml:id="ne0177_chap31">
 
-				<head>XXXI</head>
+				<head xml:id="ne0177_head_089">XXXI</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Mairena empieza a exponer la poética de su maestro Abel Martín</seg>.)</head>
+					<head xml:id="ne0177_head_090">(<seg rend="italic">Mairena empieza a exponer la poética de su maestro Abel Martín</seg>.)</head>
 
 					<p>Es evidente, decía mi maestro —cuando mi maestro decía <seg rend="italic">es evidente</seg>, o no estaba seguro de lo que decía, o sospechaba que alguien pudiera estarlo de la tesis contraria a la que él proponía— que la razón humana milita toda ella contra la riqueza y variedad del mundo; que busca ansiosamente un principio unitario, un algo que lo explique todo, para quedarse con este algo y aligerarse del peso y confusión de todo lo demás. Y así tenemos, de un lado, la fe racional en lo que nunca es nada de cuanto se aparece, la fe en lo nunca visto, llámese el ser, la esencia, la substancia, la materia originaria, etc.; y de otro, la gran banasta de los papeles pintados, en donde va cayendo el mundo de las apariencias, y en él el mismo  corazón del hombre. Y aunque el imán que explica el ímpetu de esta fe racional sea la pura nada, y la razón no acierte, ni por casualidad, con verdad alguna a que pueda aferrarse, es un portento digno de asombro esta fuerza de aniquilación, este poder desrealizante... Maravilla cuán milagrosa es la virtud de nuestro pensamiento para penetrar en la enmarañada selva de lo sensible, como si no hubiese tal selva, y pensar el hueco y lugar que esta selva ocupa. Porque describiendo el intelecto humano de una manera impresionante, como un hacha que se abre paso a través de un bosque, no se dice su virtud milagrosa, pues no hay tal hacha ni semejante tala, sino que la arboleda subsiste intacta, y allí donde ella está se piensa otra cosa. Incumbe al poeta admirarse del hecho ingente que es el pensar, ora lleno, ora vacío, el huevo universal, y todo ello en menos que se cuenta, como si dijéramos en un abrir y cerrar de ojos.</p>
 
@@ -2938,7 +3021,7 @@
 			</div>
 			<div n="32" type="chapter" xml:id="ne0177_chap32">
 
-				<head>XXXII</head>
+				<head xml:id="ne0177_head_091">XXXII</head>
 				<div type="section">
 
 
@@ -2966,7 +3049,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Karst y Velázquez</seg>)</head>
+					<head xml:id="ne0177_head_092">(<seg rend="italic">Karst y Velázquez</seg>)</head>
 
 					<p>Es evidente, decía mi maestro —Mairena endosaba siempre a su maestro la responsabilidad de toda evidencia— que si Kant hubiera sido pintor, habría pintado algo muy semejante a <seg rend="italic">Las Meninas</seg>, y que una reflexión juiciosa sobre el famoso cuadro del gran sevillano nos lleva a la <seg rend="italic">Crítica de la pura razón</seg>, la obra clásica y luminosa del maestro de Kónigsberg. Cuando los franceses —añadía— tuvieron a Descartes, tuvimos nosotros —y aun se dirá que no entramos con pie firme en la edad moderna— nada menos que un pintor kantiano, sin la menor desmesura romántica. Esto es mucho decir. No nos estrepitemos, sin embargo, que otras comparaciones más extravagantes se han hecho —Marx y el Cristo, etc.— que a nadie asombran. Además, y por fortuna para nuestro posible mentir de las estrellas, ni Kant fue pintor ni Velázquez filósofo.</p>
 
@@ -2978,7 +3061,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre la novela</seg>.)</head>
+					<head xml:id="ne0177_head_093">(<seg rend="italic">Sobre la novela</seg>.)</head>
 
 					<p>Lo que hace realmente angustiosa la lectura de algunas novelas, como en general la conversación de las mujeres, es la anécdota boba, el detalle insignificante, el documento crudo, horro de toda elaboración imaginativa, reflexiva, estética. Ese afán de contar cosas que ni siquiera son chismes de portería... ¡Demasiado bien lastradas para el naufragio, esas novelas, en el mar del tiempo! Y menos mal si con ellas no se pierden en el olvido algunos aciertos de expresión, observaciones sutiles, reflexiones originales y profundas en que esas mismas novelas abundan. Un poco de retórica, tal como nosotros la entendemos, convendría a sus autores.</p>
 
@@ -3001,7 +3084,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Intermedio</seg>)</head>
+					<head xml:id="ne0177_head_094">(<seg rend="italic">Intermedio</seg>)</head>
 
 					<p>Es inútil —habla Mairena, encarándose con un tradicionalista amigo suyo, en una tertulia de café provinciano— que busque usted a Felipe II en su panteón de El Escorial: porque es allí donde no queda de él absolutamente nada. Ese culto a los muertos me repugna. El <seg rend="italic">ayer</seg> hay que buscarlo en el <seg rend="italic">hoy</seg>; aquellos polvos trajeron —o trujeron, si le agrada a usted más— estos lodos. Felipe II no ha muerto, amigo mío. ¡¡¡Felipe II soy yo!!! ¿No me había usted conocido?</p>
 
@@ -3012,7 +3095,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Cervantes</seg>)</head>
+					<head xml:id="ne0177_head_095">(<seg rend="italic">Cervantes</seg>)</head>
 
 					<p>Nuestro Cervantes —sigue hablando Mairena a sus alumnos— no mató, porque ya estaban muertos, los libros de caballerías, sino que los resucitó, alojándolos en las celdillas del cerebro de un loco, como espejismos del desierto manchego. Con esos mismos libros de caballerías, épica degenerada, novela propiamente dicha, creó la novela moderna. Del más humilde propósito literario, la parodia, surge —¡qué ironía!— la obra más original de todas las literaturas. Porque esta gloria no podrán arrebatarnos a los españoles: el que lo nuestro, profundamente nuestro, no se parezca a nada.</p>
 
@@ -3023,11 +3106,11 @@
 			</div>
 			<div n="33" type="chapter" xml:id="ne0177_chap33">
 
-				<head>XXXIII</head>
+				<head xml:id="ne0177_head_096">XXXIII</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Habla Mairena, no siempre ex cathedra</seg>.)</head>
+					<head xml:id="ne0177_head_097">(<seg rend="italic">Habla Mairena, no siempre ex cathedra</seg>.)</head>
 
 					<p>Por debajo de lo que se piensa está lo que se cree, como si dijéramos en una capa más honda de nuestro espíritu. Hay hombres tan profundamente divididos consigo mismos, que creen lo contrario de lo que piensan. Y casi —me atreveré a decir— es ello lo más frecuente. Esto debieran tener en cuenta los políticos. Porque lo que ellos llaman opinión es algo mucho más complejo y más incierto de lo que parece. En los momentos de los grandes choques que conmueven fuertemente la conciencia de los pueblos se producen fenómenos extraños de difícil y equívoca interpretación: súbitas conversiones, que se atribuyen al interés personal, cambios inopinados de pareceres, que se reputan insinceros; posiciones inexplicables, etc. Y es que la <seg rend="italic">opinión</seg> muestra en su superficie muchas prendas que estaban en el fondo del baúl de las conciencias.</p>
 
@@ -3045,7 +3128,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena en el café</seg>)</head>
+					<head xml:id="ne0177_head_098">(<seg rend="italic">Mairena en el café</seg>)</head>
 
 					<p>—Pero la dictadura de la alpargata, querido Mairena, es algo absurdo y terrible, verdaderamente inaceptable.</p>
 
@@ -3063,7 +3146,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena en clase</seg>)</head>
+					<head xml:id="ne0177_head_099">(<seg rend="italic">Mairena en clase</seg>)</head>
 
 					<p>Un comunismo ateo —decía mi maestro— será siempre fenómeno social muy de superficie. El ateísmo es una posición esencialmente individualista: la del hombre que toma como tipo de evidencia el de su propio existir, con lo cual inaugura el reino de la nada, más allá de las fronteras de su yo. Este hombre, o no cree en Dios, o se cree Dios, que viene a ser lo mismo. Tampoco este hombre cree en su prójimo, en la realidad absoluta de su vecino. Para ambas cosas carece de la visión o evidencia de lo otro, de una fuerte intuición de <seg rend="italic">otredad</seg>, sin la cual no se pasa del yo al tú. Con profundo sentido, las religiones superiores nos dicen que es el desmedido amor de sí mismo lo que aparta al hombre de Dios. Que le aparta de su prójimo va implícito en la misma afirmación. Pero hay momentos históricos y vitales en que el hombre sólo cree en sí mismo, se atribuye la aseidad, el ser por sí; momentos en los cuales le es tan difícil afirmar la existencia de Dios como la existencia, en el sentido ontológico de la palabra, del sereno de su calle. A este <seg rend="italic">self</seg>-<seg rend="italic">man</seg> propiamente dicho; a este hombre que no se casa con nadie, como decimos nosotros; a esta mónada autosuficiente no le hable usted de comunión, ni de comunidad, ni aun de comunismo. ¿En qué y con quién  va a comulgar este hombre?</p>
 
@@ -3079,7 +3162,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Otra vez en el café</seg>.)</head>
+					<head xml:id="ne0177_head_100">(<seg rend="italic">Otra vez en el café</seg>.)</head>
 
 					<p>—Desde cierto punto de vista —decía mi maestro—, nada hay más burgués que un proletario, puesto que, al fin, el proletariado es una creación de la burguesía. Proletarios del mundo —añadía— uníos para acabar lo antes posible con la burguesía y, consecuentemente, con el proletariado.</p>
 
@@ -3104,7 +3187,7 @@
 			</div>
 			<div n="34" type="chapter" xml:id="ne0177_chap34">
 
-				<head>XXXIV</head>
+				<head xml:id="ne0177_head_101">XXXIV</head>
 				<div type="section">
 
 
@@ -3200,11 +3283,11 @@
 			</div>
 			<div n="35" type="chapter" xml:id="ne0177_chap35">
 
-				<head>XXXV</head>
+				<head xml:id="ne0177_head_102">XXXV</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Habla Mairena sobre el hambre, el trabajo, la Escuela de Sabiduría, etc</seg>.)</head>
+					<head xml:id="ne0177_head_103">(<seg rend="italic">Habla Mairena sobre el hambre, el trabajo, la Escuela de Sabiduría, etc</seg>.)</head>
 
 					<p>Decía mi maestro —habla Mairena a sus amigos— que él había pasado hasta tres días sin comer —y no por prescripción facultativa—, al cabo de los cuales se dijo: «Esto de morirse de hambre es más fácil de lo que yo creía.» Añadiendo: «Y no tiene, ni mucho menos, la importancia que se le atribuye.» Yo me atreví a preguntarle: «¿Y qué quiere usted decir con eso?» «Que si para escapar de aquel duro trance —me contestó- hubiera yo tenido que hacer algo no ya contra mi conciencia, sino, sencillamente, contra mi carácter, pienso que habría aceptado antes la muerte sin protestas ni alharacas.» «Es posible —continuó mi maestro, adelantándose, como siempre, a nuestras objeciones— que aquella mi estoica resignación a un fallecer obscuro e insignificante pueda explicarse por un influjo atávico: el de las viejas razas de Oriente, cuya sangre llevamos acaso los andaluces y en las cuales no sólo es el ayuno lo propio de las personas distinguidas, sino el hambre general y periódica, la manera más natural de morirse. También es posible que, por ser yo un hombre grueso, como el príncipe Hamlet, no llegase a ver las orejas del lobo; porque tres días de ayuno no habrían bastado a agotar mis reservas orgánicas, y que todo quiera explicarse por una confianza, más o menos consciente, en los milagros de la grasa burguesa, acumulada durante muchos años de alimentación superabundante. Mas si he de decir verdad, yo no creo demasiado en nuestro orientalismo, ni mucho menos en que mis reservas sean exclusivamente de grasa. Mi opinión, fruto de mis reflexiones de entonces, es ésta: Cosa es verdadera que el hombre se mueve por el hambre y por el prurito, no del todo consciente, de reproducirse, pero a condición de que no tenga cosa mejor por que moverse, o cosa mejor que le mueva a estarse quieto. De todo ello saco esta conclusión nada idealista: «Dejar al hombre a solas con su hambre y la de sus hijos es proclamar el derecho a una violencia que no excluye la antropofagia.» Y desde un punto de vista teórico me parece que la reducción del problema humano a la fórmula un <seg rend="italic">hombre</seg> = un <seg rend="italic">hambre</seg> es anunciar con demasiada anticipación <seg rend="italic">el apaga y vámonos</seg> de la especie humana.</p>
 
@@ -3238,7 +3321,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena en el café</seg>)</head>
+					<head xml:id="ne0177_head_104">(<seg rend="italic">Mairena en el café</seg>)</head>
 
 					<p>Que usted haya nacido en Rute, y que se sienta usted relativamente satisfecho de haber nacido en Rute, y hasta que nos hable usted con cierta jactancia de hombre de Rute, no me parece mal. De algún modo ha de expresar usted el amor a su pueblo natal, donde tantas raíces sentimentales tiene usted. Pero que pretenda convencernos de que, puesto a elegir, hubiera usted elegido a Rute, o que, adelantándose a su propio índice, hubiera usted señalado a Rute en el mapa del mundo como lugar preciso para nacer en él, eso ya no me parece tan bien, querido don Cosme.</p>
 
@@ -3294,11 +3377,11 @@
 			</div>
 			<div n="36" type="chapter" xml:id="ne0177_chap36">
 
-				<head>XXXVI</head>
+				<head xml:id="ne0177_head_105">XXXVI</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">Sobre otros aspectos de la Escuela de Sabiduría</seg>)</head>
+					<head xml:id="ne0177_head_106">(<seg rend="italic">Sobre otros aspectos de la Escuela de Sabiduría</seg>)</head>
 
 					<p>Las religiones históricas —habla Mairena a sus alumnos—, que se dicen reveladas, nada tendrían que temer de nuestra Escuela de Sabiduría; porque nosotros no combatiríamos ninguna creencia, sino que nos limitaríamos  a buscar las nuestras. Nosotros sólo combatimos, y no siempre de modo directo, las creencias falsas, es decir, las incredulidades que se disfrazan de creencias. Usted puede, señor Martínez...</p>
 
@@ -3371,11 +3454,11 @@
 			</div>
 			<div n="37" type="chapter" xml:id="ne0177_chap37">
 
-				<head>XXXVII</head>
+				<head xml:id="ne0177_head_107">XXXVII</head>
 				<div type="section"> 
 
 
-					<head>(<seg rend="italic">Habla Juan de Mairena a sus alumnos</seg>)</head>
+					<head xml:id="ne0177_head_108">(<seg rend="italic">Habla Juan de Mairena a sus alumnos</seg>)</head>
 
 					<p>Lo irremediable del pasado —<seg rend="italic">fugit irreparabile tempus</seg>—, de un pasado que permanece intacto, inactivo e inmodificable, es un concepto demasiado firme para que pueda ser desarraigado de la mente humana. ¿Cómo sin él funcionaría esta máquina de silogismo  que llevamos a cuestas? Pero nosotros —habla Mairena a sus alumnos— nos preguntaríamos en la clase de Sofística de nuestra Escuela Popular de Sabiduría Superior si el tal concepto tiene otro valor que el de su utilidad lógica y si podríamos pasar con él a la clase de Metafísica. Porque de la clase de Sofística a la de Metafísica sólo podrían pasar, en forma de creencias últimas o de hipótesis inevitables, los conceptos que resisten a todas las baterías de una lógica implacable, de una lógica que, llegado el caso, no repare en el suicidio, en decretar su propia inania.</p>
 
@@ -3391,7 +3474,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Examen en la Escuela de Sabiduría</seg>)</head>
+					<head xml:id="ne0177_head_109">(<seg rend="italic">Examen en la Escuela de Sabiduría</seg>)</head>
 
 					<p>—¿Saco tres bolas?</p>
 
@@ -3425,7 +3508,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena y el 98</seg>.-<seg rend="italic">Un premio Nobel</seg>).</head>
+					<head xml:id="ne0177_head_110">(<seg rend="italic">Mairena y el 98</seg>.-<seg rend="italic">Un premio Nobel</seg>).</head>
 
 					<p>Cuando aparecieron en la Prensa los primeros ensayos de don Miguel de Unamuno, alguien dijo: «He aquí a Brand, el ibseniano Brand, que deja los fiordos de Noruega por las estepas de España.» Mairena dijo: «He aquí al gran español que muchos esperábamos. ¿Un sabio? Sin duda, y hasta un <seg rend="italic">savant</seg>, que dicen en Francia; pero, sobre todo, el poeta relojero que viene a dar cuerda a muchos relojes —quiero decir a muchas almas- parados en horas muy distintas, y a ponerlos en hora por el meridiano de su pueblo y de su raza. Que estos relojes, luego, atrasen unos y adelanten otros...» No agotemos el símil. Es muy grande este don Miguel. Y algún día tomará café con nosotros. Mas no por ello hemos de perderle el respeto.</p>
 
@@ -3433,7 +3516,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Aciertos de la expresión inexacta</seg>.)</head>
+					<head xml:id="ne0177_head_111">(<seg rend="italic">Aciertos de la expresión inexacta</seg>.)</head>
 
 					<p>Cuando nuestros políticos dicen que la política no tiene entrañas aciertan alguna vez en lo que dicen y en lo que quieren decir. Una política sin entrañas es, en efecto, la política hueca que suelen hacer los hombres de malas tripas.</p>
 
@@ -3441,7 +3524,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">La concisión barroca</seg>)</head>
+					<head xml:id="ne0177_head_112">(<seg rend="italic">La concisión barroca</seg>)</head>
 					<lg type="poem">
 						<l>Me dio cuatro naturales</l>
 
@@ -3453,7 +3536,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Amplificación superflua</seg>.)</head>
+					<head xml:id="ne0177_head_113">(<seg rend="italic">Amplificación superflua</seg>.)</head>
 
 					<p>—Daréte el dulce fruto sazonado del peral en la rama ponderosa.</p>
 
@@ -3465,7 +3548,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Lógica de Badila</seg>.)</head>
+					<head xml:id="ne0177_head_114">(<seg rend="italic">Lógica de Badila</seg>.)</head>
 
 					<p>—¡<seg rend="italic">Conque el toro le ha roto a usted la clavícula, compadre</seg>!... -Lo que me ha roto a mí es todo el verano.</p>
 
@@ -3479,7 +3562,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Lógica de Don Juan</seg>.)</head>
+					<head xml:id="ne0177_head_115">(<seg rend="italic">Lógica de Don Juan</seg>.)</head>
 
 					<p>—Vengo a mataros, Don Juan.</p>
 
@@ -3492,7 +3575,7 @@
 			</div>
 			<div n="38" type="chapter" xml:id="ne0177_chap38">
 
-				<head>XXXVIII</head>
+				<head xml:id="ne0177_head_116">XXXVIII</head>
 				<div type="section">
 
 
@@ -3559,7 +3642,7 @@
 			</div>
 			<div n="39" type="chapter" xml:id="ne0177_chap39">
 
-				<head>XXXIX</head>
+				<head xml:id="ne0177_head_117">XXXIX</head>
 				<div type="section">
 
 
@@ -3625,7 +3708,7 @@
 			</div>
 			<div n="40" type="chapter" xml:id="ne0177_chap40">
 
-				<head>XL</head>
+				<head xml:id="ne0177_head_118">XL</head>
 				<div type="section">
 
 
@@ -3737,7 +3820,7 @@
 			</div>
 			<div n="41" type="chapter" xml:id="ne0177_chap41">
 
-				<head>XLI</head>
+				<head xml:id="ne0177_head_119">XLI</head>
 				<div type="section">
 
 
@@ -3784,7 +3867,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">De política</seg>.)</head>
+					<head xml:id="ne0177_head_120">(<seg rend="italic">De política</seg>.)</head>
 
 					<p>Recordemos otra vez el consejo maquiavélico, que olvidó Maquiavelo: «Procura que tu enemigo no tenga nunca razón. Que no la tenga contra ti. Porque el hombre es el animal que pelea con la razón; quiero decir que embiste con ella. Te libre Dios de tarascada de bruto cargado de razón».</p>
 
@@ -3799,7 +3882,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Juan de Mairena y el 98</seg>.-<seg rend="italic">Valle Inclán</seg>.)</head>
+					<head xml:id="ne0177_head_121">(<seg rend="italic">Juan de Mairena y el 98</seg>.-<seg rend="italic">Valle Inclán</seg>.)</head>
 
 					<p>Juan de Mairena conoció a Valle-Inclán hacia el año 95; escuchó de sus labios el relato de sus andanzas en Méjico, y fue uno de los tres compradores de su primer libro, <seg rend="italic">Femeninas</seg>. «La verdad es —decía Mairena a sus amigos— que este hombre parece muy capaz de haber realizado todas las proezas y valentías que se atribuye. Que tiene el don de mando no puede dudarse. Si no fue nombrado —como él nos cuenta— Mayor honorario del Ejército de Tierra Caliente, culpa habrá sido de los mejicanos; porque no hubo nunca mejor madera de capitanes que la suya. Sin embargo, lo propio de este hombre, más que el heroísmo guerrero, es la santidad, el afán de ennoblecer su vida, su ardiente anhelo de salvación. Él ha querido acaso salvarse por la espada; se salvará por la pluma. Valle-Inclán será el santo de nuestras letras.»</p>
 
@@ -3811,7 +3894,7 @@
 			</div>
 			<div n="42" type="chapter" xml:id="ne0177_chap42">
 
-				<head>XLII</head>
+				<head xml:id="ne0177_head_122">XLII</head>
 				<div type="section">
 
 
@@ -3876,7 +3959,7 @@
 			</div>
 			<div n="43" type="chapter" xml:id="ne0177_chap43">
 
-				<head>XLIII</head>
+				<head xml:id="ne0177_head_123">XLIII</head>
 				<div type="section">
 
 
@@ -3918,7 +4001,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre Bécquer</seg>.)</head>
+					<head xml:id="ne0177_head_124">(<seg rend="italic">Sobre Bécquer</seg>.)</head>
 
 					<p>La poesía de Bécquer —sigue hablando Mairena a sus alumnos—, tan clara y trasparente, donde todo aparece escrito para ser entendido, tiene su encanto, sin embargo, al margen de la lógica. Es palabra en el tiempo, el tiempo psíquico irreversible, en el cual nada se infiere ni se deduce. En su discurso rige un principio de contradicción propiamente dicho:<seg rend="italic">sí, pero no</seg>; <seg rend="italic">volverán, pero no</seg> volverán. ¡Qué lejos estamos, en el alma de Bécquer, de esa terrible máquina de silogismos que funciona bajo la espesa y enmarañada imaginería de aquellos ilustres barrocos de su tierra! ¿Un sevillano Bécquer? Sí; pero a la manera de Velázquez, enjaulador, encantador del tiempo. Ya hablaremos de eso otro día. Recordemos hoy a Gustavo Adolfo, el de las rimas pobres, la asonancia indefinida y los cuatro verbos por cada adjetivo definidor. Alguien ha dicho, con indudable acierto: «Bécquer, un acordeón tocado por un ángel». Conforme: el ángel de la verdadera poesía.</p>
 
@@ -3926,7 +4009,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre el tiempo local</seg>.)</head>
+					<head xml:id="ne0177_head_125">(<seg rend="italic">Sobre el tiempo local</seg>.)</head>
 
 					<p>Leyendo lo que hoy se escribe sobre la moderna teoría de la relatividad, hubiera dicho Mairena: «¡Qué manera tan elegante de <seg rend="italic">suspenderle el reloj</seg>! <seg rend="italic">a la</seg> propia divinidad!» La verdad es que un dios que no fuese, como el de mi maestro, la ubicuidad misma, ¡qué pifias tan irremediables no cometería al juzgar el orden de los acontecimientos!</p>
 
@@ -3936,7 +4019,7 @@
 			</div>
 			<div n="44" type="chapter" xml:id="ne0177_chap44">
 
-				<head>XLIV</head>
+				<head xml:id="ne0177_head_126">XLIV</head>
 				<div type="section">
 
 
@@ -4008,11 +4091,11 @@
 			</div>
 			<div n="45" type="chapter" xml:id="ne0177_chap45">
 
-				<head>XLV</head>
+				<head xml:id="ne0177_head_127">XLV</head>
 				<div type="section">
 
 
-					<head>(<seg rend="italic">El gabán de Mairena</seg>)</head>
+					<head xml:id="ne0177_head_128">(<seg rend="italic">El gabán de Mairena</seg>)</head>
 
 					<p>Juan de Mairena usaba en los días más crudos del invierno un gabán bastante ramplón, que él solía llamarla <seg rend="italic">venganza catalana</seg>, porque era de esa tela, fabricada en Cataluña, que pesa mucho y abriga poco. «La especialidad de este abrigo —decía Mairena a sus alumnos— consiste en que, cuando alguna vez se le cepilla para quitarle el polvo, le sale más polvo del que se le quita, ya porque sea su paño naturalmente ávido de materias terrosas y las haya absorbido en demasía, ya porque éstas se encuentren originariamente complicadas con el tejido. Acaso también porque no sea yo ningún maestro en el manejo del cepillo. Lo cierto es que yo he meditado mucho sobre el problema de la conservación y aseo de este gabán y de otros semejantes, hasta imaginar una máquina extractora de polvo, mixta de cepillo y cantárida, que aplicar a los paños. Mi aparato fracasó lamentablemente por lo que suelen fracasar los inventos para remediar las cosas decididamente mal hechas: porque la adquisición de otras de mejor calidad es siempre de menor coste que tales inventos. Además  -todo hay que decirlo— mi aparato extractor extraía, en efecto, el polvo de la tela; pero la destruía al mismo tiempo, la hacía —literalmente- polvo.</p>
 
@@ -4085,7 +4168,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Sobre Shakespeare</seg>.)</head>
+					<head xml:id="ne0177_head_129">(<seg rend="italic">Sobre Shakespeare</seg>.)</head>
 
 					<p>Si nos viéramos forzados a elegir un poeta, elegiríamos a Shakespeare, ese gigantesco creador de conciencias. Tal vez sea Shakespeare el caso único en que lo moderno parece superar a lo antiguo. Traducir a Shakespeare ha de ser empresa muy ardua, por la enorme abundancia de su léxico, la libertad de su sintaxis, llena de expresiones oblicuas, cuando no elípticas, en que se sobreentiende más que se dice. Ha de ser muy difícil verter a otra lengua que aquella en que se produjo una obra tan viva y tan... incorrecta como la shakespeariana. Los franceses la empobrecen al traducirla, la planifican, la <seg rend="italic">planchan</seg>, literalmente. Se diría que pretenden explicarla al traducirla. «Lo que el pobre Shakespeare ha querido decir.» Y es que lo shakespeariano no tiene equivalencia en el genio poético francés. Acaso nosotros pudiéramos comprenderlo mejor. De todos modos, no es fácil rendir poéticamente en nuestra lengua ese fondo escéptico, agnóstico, nihilista del poeta, unido a tan enorme simpatía por lo humano. Para traducir a este inglés de primera magnitud —¿es Shakespeare inglés o es Inglaterra shakespeariana?- tendríamos además que saber más inglés que suelen saber los ingleses y más español que sabemos los españoles del día. Os digo todo esto sin ánimo de menospreciar traducciones recientes, que pueden figurar entre las mejores. Más bien pretendo poneros de resalto lo difícil que sería mejorarlas.</p>
 
@@ -4100,7 +4183,7 @@
 			</div>
 			<div n="46" type="chapter" xml:id="ne0177_chap46">
 
-				<head>XLVI</head>
+				<head xml:id="ne0177_head_130">XLVI</head>
 				<div type="section">
 
 
@@ -4201,7 +4284,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Mairena profetiza la guerra europea</seg>)</head>
+					<head xml:id="ne0177_head_131">(<seg rend="italic">Mairena profetiza la guerra europea</seg>)</head>
 
 					<p>Después de las blasfemias de Nietzsche —sigue hablando Mairena-, nada bueno puede augurarse a esta vieja Europa, de la cual somos nosotros parte, aunque, por fortuna, un tanto marginal, como si dijéramos, su rabo todavía por desollar. El Cristo se nos va, entristecido y avergonzado. Porque el bíblico semental humano brama, ebrio de orgullo genesíaco, de fatuidad zoológica. ¿No le oís berrear? Terribles guerras se avecinan.</p>
 
@@ -4209,7 +4292,7 @@
 				</div>
 				<div type="section">
 
-					<head>(<seg rend="italic">Nietzsche y Schopenhauer</seg>.)</head>
+					<head xml:id="ne0177_head_132">(<seg rend="italic">Nietzsche y Schopenhauer</seg>.)</head>
 
 					<p>Nietzsche no tuvo el talento ni la inventiva metafísica de Schopenhauer; ni la gracia, ni siquiera el buen humor, del gran pesimista. Su lectura es mucho menos divertida que la de Schopenhauer, aunque éste es todavía un filósofo sistemático, y Nietzsche, casi un poeta. Sin embargo, aquella su invención de la <seg rend="italic">Vuelta eterna</seg>, en pleno siglo de Carnot ; su tono, tan patético y tan seguro ante cosas tan improbables, tienen su grandeza. Este jabato de Zarathustra es realmente impresionante. Tuvo Nietzsche además talento y malicia de verdadero psicólogo —cosa poco frecuente en sus paisanos—, de hombre que ve muy hondo en sí mismo y apedrea con sus propias entrañas a su prójimo. Él señaló para siempre ese <seg rend="italic">resentimiento</seg>" que también envejece y degrada al hombre. Yo os aconsejo su lectura, porque fue también un maestro del aforismo y del epigrama.</p>
 
@@ -4256,7 +4339,7 @@
 			</div>
 			<div n="47" type="chapter" xml:id="ne0177_chap47">
 
-				<head>XLVII</head>
+				<head xml:id="ne0177_head_133">XLVII</head>
 				<div type="section">
 
 
@@ -4353,7 +4436,7 @@
 			</div>
 			<div n="48" type="chapter" xml:id="ne0177_chap48">
 
-				<head>XLVIII</head>
+				<head xml:id="ne0177_head_134">XLVIII</head>
 				<div type="section">
 
 
@@ -4418,7 +4501,7 @@
 			</div>
 			<div n="49" type="chapter" xml:id="ne0177_chap49">
 
-				<head>XLIX</head>
+				<head xml:id="ne0177_head_135">XLIX</head>
 				<div type="section">
 
 
@@ -4508,7 +4591,7 @@
 			</div>
 			<div n="50" type="chapter" xml:id="ne0177_chap50">
 
-				<head>L</head>
+				<head xml:id="ne0177_head_136">L</head>
 				<div type="section">
 
 
@@ -4615,7 +4698,7 @@
 
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>

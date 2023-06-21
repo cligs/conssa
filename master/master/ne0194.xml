@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Mala cuna y mala fosa</title>
-				<title type="sub"></title>
+				
 				<title type="short">CunaFosa</title>
-				<title type="idno">
-					<idno type="viaf">a5065071</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX952949</idno>
-					<idno type="viaf">24624818</idno>
-					<name type="short">Lanza</name>
-					<name type="full">Silverio Lanza</name>
+					<name type="short" ref="#Lanza"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">1013</measure>
@@ -140,13 +131,35 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0194</idno>
+						<idno type="cligs">ne0194</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#bvmc" subtype="html">Alicante : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno></idno>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
-				<bibl type="print-source">Edición digital basada en la de [Madrid], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
-				<bibl type="edition-first"><date when="1883">1883</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">Mala cuna y mala fosa</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="viaf" corresp="http://www.viaf.org/viaf/a5065071/">a5065071</idno>
+				</idno>
+				</title>
+					<author xml:id="Lanza">
+						<name type="full"><forename>Silverio</forename> <surname>Lanza</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575 - IO 9576">IO 9575 - IO 9576</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/121485129">121485129</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q9077402/">Q9077402</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX952949.html">XX952949</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/24624818/">24624818</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#bvmc" subtype="html"><pubPlace>Alicante</pubPlace> : Biblioteca Virtual Miguel de Cervantes, <date when="2004">2004</date>, <idno/>, <ref target="http://www.cervantesvirtual.com/obra/novela-ii--0/"/>.</bibl>
+					<bibl type="print-source">Edición digital basada en la de [<pubPlace>Madrid</pubPlace>], Fundación Santander Central Hispano, D.L.<date when="1999">1999</date></bibl>
+					<bibl type="edition-first"><date when="1883">1883</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -156,6 +169,14 @@
 				<p>La primera de las novelas de Amorós [...] combina los resabios que procedían del Naturalismo y el folletín con recursos que son plenamente expresionistas. [...] La acción nos muestra la ascendencia del protagonista que le deja en herencia unos instintos depravados que lo llevan a la miseria y la enfermedad. La intención moralizante es obvia. Lanza quiso trazar, según confesión propia "la historia de esta generación envilecida y degradada que tiene la conciencia en sus genitales".</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IO 9575" key="IO 9575" cert="medium">Gesammelte Werke und Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="low">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -180,13 +201,13 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit"></term>
+					<term type="text.genre.subgenre.edit"/>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">moralist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">naturalist</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">social</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela naturalist</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">1</term>
@@ -198,7 +219,7 @@
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
 					<term type="text.publication">book</term>
-					<term type="text.quality.listhist"></term>
+					<term type="text.quality.listhist"/>
 					<term type="text.setting.continent">Europe</term>
 					<term type="text.setting.country">Spain</term>
 					<term type="text.setting.represented">unknown</term>
@@ -214,23 +235,24 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-07-20" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>Advertencia</head>
+				<head xml:id="ne0194_head_000">Advertencia</head>
 				<p><seg rend="italic">He procurado desfigurar esta novela lo menos que me ha sido posible. Sin embargo, suprimo algunos párrafos y frases, y cambio varios nombres propios.</seg></p>
 				<p>EL EDITOR:</p>
 				<p>J. B. A.</p>
 			</div>
 			<div>
-				<head>Dedicatoria</head>
+				<head xml:id="ne0194_head_001">Dedicatoria</head>
 				<p><seg rend="italic">Dedico este cuentecito al cadáver que ocupa el primer lugar de la fosa núm. ... del patio de... en el Cementerio general del Sur de Madrid.</seg></p>
 				<p>EL AUTOR.</p>
 			</div>
 			<div>
-				<head>Síntesis</head>
+				<head xml:id="ne0194_head_002">Síntesis</head>
 				<p><seg rend="bold">7 de noviembre de 1879</seg></p>
 				<p>A ver... una que cante.</p>
 				<p>-Ama...</p>
@@ -255,7 +277,7 @@
 		</front>
 		<body>
 			<div n="1" type="chapter" xml:id="ne0194_chap1">
-				<head>Pergaminos, ejecutorias, títulos de infamia,</head>
+				<head xml:id="ne0194_head_003">Pergaminos, ejecutorias, títulos de infamia,</head>
 				<quote>
 					<p><seg type="foreign" xml:lang="la">ET SIC DE CAETERIS</seg></p>
 					<p>Con un capitán de caballería que, al decir de algunos, ha llegado hasta el extremo de pegarle a la pobre señora.</p>
@@ -266,7 +288,7 @@
 				<p>La madre... pues bien... era madre. Tenía la mayor honra y la mayor desgracia de la mujer. Por serlo era digna de respeto.</p>
 
 				<div type="section">
-					<head>Los abuelos</head>
+					<head xml:id="ne0194_head_004">Los abuelos</head>
 					<p>Don Luis era el papá de la madre. Don Luis sabía dividir por un dígito, y llegó a ser jefe de administración civil. Administrador de la hacienda del pueblo, supo retener para sí parte de la que administraba; por lo demás, era un buen hombre. Su nombre le definía. No pudo llegar a don Juan, pero pasó por don Luis. Entusiasta de las mujeres, derrochaba con ellas su fortuna, ayudándole a tal empresa su mujer propia, señora de una rarísima hermosura. <seg type="abbr">D.</seg> Luis obtuvo la dicha de ser viudo y murió dejando una niña de diez años llamada Paulina.</p>
 
 					<p>Don Canuto era el papá del padre. Don Canuto debía haberse llamado por su consonante. Don Canuto era capitán de navío, honroso empleo, al cual llegan muchos capitanes de fragata. Don Canuto era el tipo de los marinos en canuto. Había estudiado en el Colegio Naval, donde obtuvo notas brillantísimas y de donde salió sabiendo una porción de cosas que olvidó enseguida por no serle útiles para nada. Siendo guardia marina hizo el viaje de la Urca.</p>
@@ -288,7 +310,7 @@
 					<p>Don Canuto tuvo un hijo que se llamó Gonzalo.</p>
 				</div>
 				<div type="section">
-					<head>Los padres</head>
+					<head xml:id="ne0194_head_005">Los padres</head>
 					<p>Gonzalo heredó de su papá la cultura y el orgullo. Durante la primera época de sus estudios, apuntó a varias carreras sin dar en el blanco. Por fin, su padre comprendió que el chico servía para caballería, y le envió a Valladolid. Gonzalo, después de ser alférez, fue teniente.</p>
 					<p>Paulina, a la muerte de su padre, pasó a poder de un tío suyo. Era éste un ex sargento, hombre industrioso que a la sombra de don Luis había hecho fortuna. Don Vital aceptó con gusto la carga de su sobrina. Por el pronto, le robó miserablemente su pequeño patrimonio. Después... ¡ah!...</p>
 					<p>Amigo Vital: Si esta novelita se imprime y cae en tus manos, latirá tu corazón; tendrás miedo de seguir leyendo, pero leerás. Cuando llegues al final del capítulo, pensarás en la venganza; líbrete Dios de llevarla a cabo; ten g o en mi poder cartas tuyas y documentos que te comprometen; además de esto, tengo otras muchas cosas que no te convendría conocer. Tú fuiste la primera causa de todos los crímenes que voy a relatar.</p>
@@ -321,7 +343,7 @@
 				</div>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0194_chap2">
-				<head>Antecedentes de la síntesis</head>
+				<head xml:id="ne0194_head_006">Antecedentes de la síntesis</head>
 				<p>Lo primero que le ocurrió a Paulina, después de enviudar, fue encontrarse sin dinero. Su suegro la protegió. Unos meses después, y gracias a altas influencias, comenzó Paulina a cobrar su viudedad. De una sola vez percibió por sus atrasos unos cientos de duros. Su primera idea fue gastarlos (enseñanzas de Petra). Amuebló su casa de una manera confortable, deseosa acaso de rivalizar con su tía. Hizo las paces con sus parientes y empezó a coquetear con todo el mundo. Sus pretendientes fueron innumerables, pero ninguno se acercó a ella con el respeto que se merecía una mujer que realmente era virtuosa. Paulina no hizo aprecio de esto, y, por consiguiente, ni comprendió la causa, ni trató de remediarla.</p>
 				<p>Por fin, un día, se creyó completamente enamorada de su primo, el gran capitán Gonzalo. ¡Cómo no! ¿Quién no se enamora de un joven que hace cabriolas sobre el lomo de un caballo, que habla con gran desembarazo de los pelos y explica las diferencias entre el <seg rend="italic">rodado</seg> y el <seg rend="italic">azúcar</seg> y <seg rend="italic">canela</seg>, y conoce las tramitaciones que existen desde el calzado de uno al calzado de cuatro. Un hombre que dice en todas partes que su amada <seg rend="italic">bebe en blanco</seg>, es admirable. Y luego, el sonido de las espuelas desvanece. ¡Hay un atractivo tan grande en los seres que llevan hierros en los pies! Además, el aromático olor de pesebre que despedía el cuerpo de Gonzalo, mareaba a Paulina. Por otra parte, Gonzalo no sabía historia, ni geografía, ni política, ni ciencias, ni artes, ni literatura, ni nada de todo eso que es objeto de conversaciones enojosísimas para mujeres educadas como Paulina. Y luego Gonzalo tenía un nombre tan bonito. Después de ser Gonzalo ya sólo puede aspirarse a ser Arthur.</p>
 				<p>Gonzalo era simpático a Paulina, acostumbrada a la vida de cuartel que se hacía en la casa de su tía.</p>
@@ -330,7 +352,7 @@
 				<p>Gonzalo fue pareciendo grosero. Gonzalo fue siendo una carga, porque no ayudaba con su sueldo a los gastos de la casa. Gonzalo olía mal. Gonzalo se iba al café y no acompañaba a Paulina a ningún teatro. Gonzalo maltrataba a su sobrino. Gonzalo hablaba como un carretero, y Paulina le envió al cuartel de la misma manera que Gonzalo lo hubiese hecho con su asistente.</p>
 
 				<div type="section">
-					<head>Cosa común y corriente</head>
+					<head xml:id="ne0194_head_007">Cosa común y corriente</head>
 					<p>-Pues señor, este médico es un animal.</p>
 					<p>-Ya, ya, señorita.</p>
 					<p>-Usted lo ve. Entra, me hecha un par de piropos y se marcha.</p>
@@ -368,7 +390,7 @@
 					<p>Guardé todo esto y devolví lo restante a don N., quien me hizo notar que el legajo estaba disminuido en su volumen; pero yo le advertí que había roto una porción de papeles inútiles, y sólo había dejado lo sano.</p>
 				</div>
 				<div type="section">
-					<head>La cadena de los errores : (Del manuscrito) </head>
+					<head xml:id="ne0194_head_008">La cadena de los errores : (Del manuscrito) </head>
 					<p>A la tarde siguiente fui a hacer mi visita a Paulina. A la puerta de su casa encontré un caballo; las bridas de éste estaban amarradas a una de las rejas; seguramente el jinete no tenía prisa. Yo no me creí con derecho para entrar en busca del visitante como un Otelo o un marido de tres mil pesetas. Una vez en el zaguán llamé a Antonio.</p>
 					<p>-¿Y la señorita?</p>
 					<p>-Arriba, con su primo.</p>
@@ -427,7 +449,7 @@
 					<p>Paulina aún no me ha explicado esta escena.</p>
 				</div>
 				<div type="section">
-					<head>El mejor padre : (Del manuscrito) </head>
+					<head xml:id="ne0194_head_009">El mejor padre : (Del manuscrito) </head>
 					<p>Fui con ella atento y cariñoso; pagué sus deudas, entre las cuales había algunas de su esposo y de Gonzalo. Fui mártir sufriendo las visitas de sus estúpidos e inmorales parientes. Sólo fui el señor para pagar, pero no fui amo nominal ni efectivo.</p>
 					<p>Diome la ocurrencia de retener en el correo la correspondencia que Gonzalo dirigía a Paulina, y desistí de seguir haciéndolo para evitarme estos disgustos.</p>
 					<p>Por fin, consagré todos mis cuidados a velar por la vida de aquel ser que bullía en las entrañas de Paulina. Pensé en apoderarme de él, hacerle mi hechura y enseñarle a maldecir el nombre de sus padres.</p>
@@ -442,7 +464,7 @@
 				</div>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0194_chap3">
-				<head>Mala cuna : (Del manuscrito) </head>
+				<head xml:id="ne0194_head_010">Mala cuna : (Del manuscrito) </head>
 				<p>Ciertos recuerdos son en la memoria como algunas heridas en el cuerpo. Acaban el individuo y acaban con él. Siempre presentes o siempre abiertas, nos roban toda clase de alegrías.</p>
 				<p>Lo que pasó aquella noche no es para ser olvidado.</p>
 				<p>Volví de la caza a la una de la madrugada. Cuando abrí la puerta de la alcoba vi a Paulina sobre el lecho con la cara roja, llorando y mirándome con ojos espantados.</p>
@@ -472,7 +494,7 @@
 				<p>En aquella casa, que parece una cárcel por fuera y un cuartel por dentro, quedó encerrada una prueba de la honra de una de las familias más caracterizadas de la corte; una familia de chulos, meretrices y c..., prueba que yo conservo en mi poder, porque la niña no llevó el nombre de sus papás, llevó el mío, se llamó Juanita. Fui generoso con ella hasta este extremo, la di un nombre que no pudiera avergonzarla.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0194_chap4">
-				<head>Lo que suele suceder</head>
+				<head xml:id="ne0194_head_011">Lo que suele suceder</head>
 				<quote>
 					<p><seg type="foreign" xml:lang="en">A little more than kin, and less than kind.</seg></p>
 					<ab>SHAKESPEARE</ab>
@@ -485,7 +507,7 @@
 				<p>A pesar de esto, don Juan murió sin realizar su propósito. Su hermano, aun después de lo ocurrido, se apoderó de los bienes, y Juana quedó abandonada.</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0194_chap5">
-				<head>La calle de la Montera</head>
+				<head xml:id="ne0194_head_012">La calle de la Montera</head>
 				<p>Hay que decirlo todo. Bueno. Acababa de comer. Mi patrona no me trata mal. Había cogido mi capa y me encontraba en la Red de San Luis, frente a la raquítica farola con que se ha sustituido una hermosa fuente.</p>
 				<p>Yo iba despacio, veía y pensaba. Me codeaba con el Madrid cosmopolita. Las obreras que abandonan el taller con sus ojos enrojecidos por el trabajo de la larga vela, sus dedos llenos de picaduras y sus viejos vestidos arreglados con la coquetona elegancia de la miseria. Van en pequeños grupos y ríen por cualquier cosa, y se paran delante de todos los escaparates. Detrás de ellas suele ir algún joven empleado o algún estudiante abonado por muchos años a una misma cátedra de la Universidad; tal vez un hijo rico que empieza a correrla; acaso un viejo ávido de impresiones, arruinado por los sobrinos de su ama. No hallaréis más amantes de modistas. Los devotos del placer necesitan otros sacerdotes. No es extraño; cada arte tiene sus reglas. Es necesario saber amar. Y, ¿quién para esto como la ramera decente, la prostituta ilegal? Y no la que os lleva a ciertos templos tan públicos y secretos como las enfermedades que cura el doctor Morales, ni la que os enseña un nuevo café donde se deja conducir por vosotros, no, ninguna de éstas. Hay que conocerlas: jamás se arriesga una sola; van siempre dos juntas. Unas veces parecen hermanas; otras, madre e hija. A elegir. A ellas sólo se acercan los parroquianos, y éstos suelen tener dinero. Los neófitos las respetan, y así, creedme, la virtud es siempre relativa. Para ver ciertos vicios es preciso tener la vista acostumbrada. Al fin y al cabo, hay para todos, y el estúpido con sus hábitos, y el adolescente con sus ilusiones, y el de gustos brutales, y el espiritual y el tonto, y hasta yo mismo, todos hallamos en ese caos de faldas y toquillas que palpita por las grandes arterias de la corte, en calles y plazuelas, una mujer que nos estremece y... ¿quién no sueña una aventura en este país donde nunca se acaban las ediciones vivas de don Quijote?</p>
 				<p>Y toda esta gente se revuelve entre jornaleros que salieron a la calle después de cenar, y faltarán el día siguiente a su trabajo; burgueses que caminan con tardo paso hacia su café favorito, y al que asisten cotidianamente hace treinta años, y en donde regalan a su familia los domingos y otros días de gran fiesta para el tranquilo hogar.</p>
@@ -515,7 +537,7 @@
 				<p>Aquello me dio rabia. Lo merecía; pero aún era tiempo, y cuando se levantaba el telón, ya estaba yo sentado en una butaca del teatro clásico.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0194_chap6">
-				<head>Un baile de máscaras</head>
+				<head xml:id="ne0194_head_013">Un baile de máscaras</head>
 				<p>El antifaz sobre la careta y ésta cubriendo la máscara; debajo la mentira, disfrazada de hipocresía y disimulo, y todo esto siendo una verdad, la triste verdad de lo real, la realidad fatal y triste del absurdo moral. El tigre, que se disfraza de hiena para engañar al cazador de las selvas; el ángel malo convertido en serpiente, pervirtiendo a Eva; la costumbre, la fiesta de un pueblo corrompido, hecha inmoral por los contemporáneos de Lesseps.</p>
 				<p>Menos filosofía. La historia de esta generación envilecida y degradada, que tiene la conciencia en sus genitales, será amena lectura para las prostitutas del siglo XX.</p>
 				<p>De pronto, la línea que forman las fachadas, deja de ser recta, y como una semicircunferencia se extiende en un trozo de terreno, la calle se ha convertido en plaza y en ésta hay un teatro desde 1856. Allí adquirió su mayor desarrollo y allí morirá la zarzuela española. También murieron Gaztambide y Olona. Nos quedan algunos concertistas que llevan el pelo largo y visten bien; y, sobre todo, ha dejado Offenbach tantas y tan buenas partituras, que bien merecen la pena de ser parodiadas. Rapsodiemos, quise decir; robemos, quiero decir, vivamos.</p>
@@ -652,7 +674,7 @@
 				<p>Sobre la acera hay una careta. Pasan unos trabajadores, la recogen y ríen con ella grandemente. ¡Infelices! Aún no han comprendido su desgracia.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0194_chap7">
-				<head>Un lupanar aristocrático</head>
+				<head xml:id="ne0194_head_014">Un lupanar aristocrático</head>
 				<quote>
 					<p><seg type="foreign" xml:lang="en">That's a fair thought to lie between maids' legs.</seg></p>
 					<ab>SHAKESPEARE</ab>
@@ -831,7 +853,7 @@
 				<p>-Muy poco. Creo que se llama Carlos.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0194_chap8">
-				<head>Flor de un día</head>
+				<head xml:id="ne0194_head_015">Flor de un día</head>
 				<p>-¿Quién es?</p>
 				<p>-Yo, abre.</p>
 				<p>-¿Por quién pregunta usted?</p>
@@ -939,7 +961,7 @@
 				<p>-Servidor de usted.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0194_chap9">
-				<head>El hospital</head>
+				<head xml:id="ne0194_head_016">El hospital</head>
 				<p>Venancia, la gordinflona, y Celestina, están sentadas en unas sillas alrededor de la estufa. Su actitud es perezosa. Duermen o meditan. La mayor parte de las camas están vacías; las inquilinas quieren celebrar el día de Reyes dando un paseo por aquella hermosa sala de Santa Lucía. Como es natural, se notan los efectos del caldo, porque este alimenta menos que el agua fría y suele ser perjudicial. Cuando la carne se ha puesto mala, se la cuece, y esta agua es el regalo de una tarde; pero aquel día era gran fiesta. La junta de Beneficencia debía ser espléndida, y las hermanas de la Caridad católica colocaban con malhumorado ademán una jícara y tres bizcochos sobre cada mesita de noche. Juana ocupaba el <seg type="abbr">núm.</seg> 13; apenas vivía; con los ojos cerrados, mordiendo con sus dientes el labio inferior; el desgreñado pelo desparramado sobre la almohada y casi cubriendo una cara llena de basura, y luego su mano derecha, que asomaba por debajo del embozo como pregón del escondido cuerpo, una mano donde alguien se había complacido en amontonar huesos, con aquellos tendones rígidos, una mano asquerosa, lívida, llena de porquería y de manchas rojas, por las cuales parecía querer salir la corrompida sangre, ávida de oxígeno. Tiene su chal de moda a los pies de la cama; sobre la mesita muchas jarras y cacharros, y colgado de un hierro, a la cabecera, un pañuelo lleno de bizcochos, azúcar, turrón y un panecillo con alguna s sardinas fritas. Ni duerme ni piensa; se muere, esto es todo.</p>
 				<p>Bautista entra en la sala; ha engruesado, tiene en descuido sus cabellos y su barba; su color sigue siendo pálido, parece más viejo. Se descubre antes de entrar y camina dando las buenas tardes sin saber a quién. Su paso es firme como el del soldado, pausado y metódico como el del cortesano que anda entre faldas y tapices. Llega al número 13, se acerca a la cama, se inclina, contempla de cerca a Juana, la llama por su nombre, coge la descarnada mano que parece haber estado aguardándole para ser estrechada, y Juana abre los ojos y los vuelve a cerrar; parece que todo lo había visto; quería cerciorarse, y bien; se ha cerciorado y sigue tranquila.</p>
 				<p>La vecina del doce quiere baza, y dice con voz chillona:</p>
@@ -1080,7 +1102,7 @@
 				<p>Todas siguieron tan tranquilas. El bizcocho había desaparecido. El número ocho estaba de gravedad.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0194_chap10">
-				<head>El entierro</head><quote>
+				<head xml:id="ne0194_head_017">El entierro</head><quote>
 					<lg type="poem">
 						<l><seg type="foreign" xml:lang="en">Now pile your dust upon the quiek and dead,</seg></l>
 						<l><seg type="foreign" xml:lang="en">Till of this a mountain yon have made</seg></l>
@@ -1159,7 +1181,7 @@
 				<p><seg rend="italic">Postdata</seg>.- No te asuste el dote. Por mucho trigo nunca es mal año. Ya hablaremos de esto.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0194_chap11">
-				<head>Paz a los muertos</head>
+				<head xml:id="ne0194_head_018">Paz a los muertos</head>
 				<p>Y así, cuando la imaginación entristecía los encantos de la silenciosa noche, los ojos secos de Bautista, enrojecidos por esa irritación inevitable que produce el insomnio, se fijaban con tenacidad asombrosa en la luz de una blanca bujía, que era su compañera en todas las veladas. Entre la bujía y él estaba el retrato de Juana. ¡Pobre Juana!, siempre entre sombras y luces. Por ella estaban frente a frente aquella hija de la luz y aquel hijo de la oscuridad.</p>
 				<p>La hechura del hombre alumbrando a su padre y asustándose al verse. El hombre lleno de temor ante su hechura, creyéndola superior a sí mismo. Y Juana, entre ambos, siendo el motivo para que sirvan juntos y se contemplen necesarios.</p>
 				<p>Después los pensamientos se amontonan, acuden de todas las partes millares de ideas; cada instante de la vida hecha da un recuerdo del pasado y una enseñanza o una ilusión para el porvenir. Hay que medirlo todo. Hay que analizar todo; ideas, pensamientos, conceptos, enseñanzas, ilusiones y desengaños, y disecar hasta encontrar la última célula del por qué, sumar y restar fechas hasta encontrar el cuándo y desesperar y volver de nuevo a tal faena para dejarlo otra vez, seguir más tarde y levantar por último la cabeza, y en ese movimiento rueda una lágrima salada desde los ojos a la boca y una maldición horrible desde la boca hasta el cielo.</p>
@@ -1212,7 +1234,7 @@
 				<p>-Aquí era donde yo la besaba cuando estaba durmiendo.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0194_chap12">
-				<head>Mala fosa</head>
+				<head xml:id="ne0194_head_019">Mala fosa</head>
 				<lg type="poem">
 					<l>Templo de la verdad es el que miras.</l>
 					<l>No desoigas la voz con que te advierte.</l>
@@ -1246,7 +1268,7 @@
 		</body>
 		<back>
 			<div n="13" type="chapter" xml:id="ne0194_chap13">
-				<head>Moraleja</head>
+				<head xml:id="ne0194_head_020">Moraleja</head>
 				<p>La Academia Sociológica de las Peñuelas, que no está subvencionada por el Estado, se reúne en sesión.</p>
 				<p>No hay un solo asiento vacío en la sala: todos los concurrentes aguardan con impaciencia un discurso de Silverio Lanza, tratando el tema siguiente: <seg rend="italic">Concepto de la humanidad</seg>. Se sabe que el orador ha estado veinte años estudiando sin descanso el asunto.</p>
 				<p>Por fin, Silverio Lanza se pone en pie. En la sala reina el silencio con que se duermen los muertos.</p>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">La horda</title>
-				<title type="sub"></title>
+				
 				<title type="short">Horda</title>
-				<title type="idno">
-					<idno type="bne">XX1892710</idno>
-					<idno type="viaf">307968766</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX1028057</idno>
-					<idno type="viaf">73848096</idno>
-					<name type="short">BlascoIbanez</name>
-					<name type="full">Vicente Blasco Ibáñez</name>
+					<name type="short" ref="#BlascoIbanez"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">2062</measure>
@@ -141,13 +131,48 @@
 						<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2016">2016</date>
-				<idno type="cligs">ne0258</idno>
+						<idno type="cligs">ne0258</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2010">2010</date>, <idno>33474</idno>, <ref target="http://www.gutenberg.org/ebooks/33474"/>.</bibl>
-				<bibl type="print-source">Prometeo, Valencia, <date when="1905">1905</date></bibl>
-				<bibl type="edition-first"><date when="1905">1905</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">La horda</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX1892710.html">XX1892710</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/307968766/">307968766</idno>
+				</idno>
+				</title>
+					<author xml:id="BlascoIbanez">
+						<name type="full"><forename>Vicente</forename> <surname>Blasco Ibáñez</surname></name>
+						<idno>
+							<idno type="rkv" corresp="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3366 - IP 3371">IP 3366 - IP 3371</idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/11866381X">11866381X</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q219646/">Q219646</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX1028057.html">XX1028057</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/73848096/">73848096</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#gutenberg" subtype="html">Gutenberg, <date when="2010">2010</date>, <idno>33474</idno>, <ref target="http://www.gutenberg.org/ebooks/33474"/>.</bibl>
+					<bibl type="print-source">Prometeo, <pubPlace>Valencia</pubPlace>, <date when="1905">1905</date></bibl>
+					<bibl type="edition-first"><date when="1905">1905</date><idno source="k10plus" type="ppn" n="350946213" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350946213"/></bibl>
+					<listBibl source="k10plus" cert="medium">
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La horda</title>: 	<title type="sub">(novela)</title> <date when="1905">1905</date>, <publisher>Sempere</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="350946213" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=350946213"/> </bibl>
+						<bibl type="further-edition"><title type="main">La Horda</title>: 	<title type="sub">Novela en acción, inspir. en la del mismo título de Don Vicente Blasco Ibañez, en prosa y 1 acto. Por Dionisio Laguía. Música del Maestro Rafael Calleja</title> <date when="1913">1913</date>, <publisher>Velasco</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="447857894" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=447857894"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La horda</title>: 	<title type="sub">(novela)</title> <date when="1919">1919</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="226411672" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=226411672"/> </bibl>
+						<bibl type="further-edition"><title type="main">La horda</title>: 	<title type="sub">Novela</title> <date when="1923">1923</date>, <publisher>Prometeo</publisher> <pubPlace>Valencia</pubPlace> 		<idno type="ppn" n="445658010" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=445658010"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">Cuentos valencianos, La condenada y otros cuentos, En el pais del arte, Arroz y tartana, Flor de mayo, La barraca, Entre naranjos, Sonnica la cortesana, Cañas y barro, La catedral, El instruso, La bodega, La horda, La maja desnuda</title> <date when="1978">1978</date>, <publisher/> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="124621317" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=124621317"/> </bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La horda</title> <date when="1984">1984</date>, <publisher>Ediciones G.P.</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="160643585X" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=160643585X"/> 		<idno type="isbn" n="8401909368"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La horda</title> <date when="1998">1998</date>, <publisher>Alianza Ed.</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="305328743" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=305328743"/> 		<idno type="isbn" n="8420633801"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>[Madrid]</pubPlace> 		<idno type="ppn" n="1479518379" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1479518379"/> 		<idno type="isbn" n="9788496452985"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">La bodega. La horda. La maja desnuda. Sangre y arena</title> <date when="2010">2010</date>, <publisher>Fundación José Antonio de Castro</publisher> <pubPlace>Madrid</pubPlace> 		<idno type="ppn" n="647447312" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=647447312"/> 		<idno type="isbn" n="9788496452541"/></bibl>
+						<bibl type="further-edition" xml:lang="spa"><title type="main">El intruso</title> <date when="2020">2020</date>, <publisher>Penguin Clásicos</publisher> <pubPlace>Barcelona</pubPlace> 		<idno type="ppn" n="1693357186" corresp="https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=1693357186"/> 		<idno type="isbn" n="9788491054139;8491054138"/></bibl>
+					</listBibl>
+				
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +182,14 @@
 				<p>Publicada en 1905, La horda forma parte de la serie de obras que Vicente Blasco Ibáñez alumbró durante los años en que fue diputado republicano y en las que expresó de forma más directa sus inquietudes sociales. Preparada minuciosamente por Blasco, que modeló todos y cada uno de sus personajes a partir de tipos reales, y ambientada en Madrid, la novela narra los infructuosos esfuerzos de su protagonista, Isidro Maltrana —individuo con talento, pero lastrado por su origen social—, por dejar atrás una existencia marcada por la explotación, la marginación y la ignorancia, y determinada por una sociedad que sólo abre a las víctimas la posibilidad de dejar de serlo a cambio de sumarse incondicionalmente a las filas de los verdugos.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
+				<keywords scheme="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/">
+					<term type="text.libraryClassification.regensburgerVerbundklassifikation" target="https://rvk.uni-regensburg.de/regensburger-verbundklassifikation-online#notation/IP 3367" key="IP 3367" cert="medium">Einzelwerke</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="medium">
 					<term type="author.TOC.range" resp="MdL9">7</term>
 					<term type="author.continent">Europe</term>
@@ -192,7 +225,7 @@
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">realist</term>
 					<term type="text.genre.subgenre.litHist" resp="HdLE">novela social</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela social</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.ToC">4</term>
@@ -221,6 +254,7 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2016-06-16" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -230,7 +264,7 @@
 
 
 			<div n="1" type="chapter" xml:id="ne0258_chap1">
-				<head>I</head>
+				<head xml:id="ne0258_head_000">I</head>
 				<p>A las tres de la madrugada comenzaron a llegar los primeros carros de la sierra al fielato de los Cuatro Caminos.</p>
 				<p>Habían salido a las nueve de Colmenar, con cargamento de cántaros de leche, rodando toda la noche bajo una lluvia glacial que parecía el último adiós del invierno. Los carreteros deseaban llegar a Madrid antes que rompiese el día, para ser los primeros en el aforo. Alineábanse los vehículos, y las bestias recibían inmóviles la lluvia, que goteaba por sus orejas, su cola y los extremos de los arneses. Los conductores refugiábanse en una tabernilla cercana, la única puerta abierta en todo el barrio de los Cuatro Caminos, y aspiraban en su enrarecido ambiente las respiraciones de los parroquianos de la noche anterior. Se quitaban la boina para sacudirla el agua, dejaban en el suelo el barro de sus zapatones claveteados, y sorbiéndose una taza de café con toques de aguardiente, discutían con la tabernera la comida que había de prepararles para las once, cuando emprendiesen el regreso al pueblo.</p>
 				<p>En el abrevadero cercano al fielato, varias carretas cargadas de troncos aguardaban la llegada del día para entrar en la población. Los boyeros, envueltos en sus mantas, dormían bajo aquéllas, y los bueyes, desuncidos, con el vientre en el suelo y las patas encogidas, rumiaban ante los serones de pasto seco.</p>
@@ -368,7 +402,7 @@
 				<p>Así hablaba <seg rend="italics">Zaratustra</seg>.</p>
 			</div>
 			<div n="2" type="chapter" xml:id="ne0258_chap2">
-				<head>II</head>
+				<head xml:id="ne0258_head_001">II</head>
 				<p>Al recordar Isidro Maltrana su pasado, deteníase en los años de su infancia transcurridos en el Hospicio. Algo había en su memoria que le hablaba de una existencia anterior; pero eran recuerdos confusos, vagas remembranzas cortadas por obscuras lagunas de olvido, y envuelto todo en una niebla pálida que amasaba personas y sucesos.</p>
 				<p>El recuerdo más remoto era el de un patio de casa de vecindad, que a él, en su pequeñez, le parecía inmenso, con una luz triste y fatigada que venía de lo alto, enturbiándose al resbalar por las paredes grasientas, al filtrarse por entre las ropas astrosas pendientes de las galerías.</p>
 				<p>Se contemplaba andando a gatas por un corredor interminable, ante una fila de puertas numeradas con esa uniformidad que luego había visto en cuarteles y presidios. Muchas mujeres sentadas ante las puertas cosían y charlaban. Otras veces reñían, y al ruido de sus voces poblábanse las barandillas de bustos echados adelante por una malsana curiosidad, de cabezas greñudas que azuzaban a las contendientes como bestias rabiosas.</p>
@@ -485,7 +519,7 @@
 				<p>—No seas ordinario; no digas esas cosas... Llámame alma iniciada.</p>
 			</div>
 			<div n="3" type="chapter" xml:id="ne0258_chap3">
-				<head>III</head>
+				<head xml:id="ne0258_head_002">III</head>
 				<p>Huyó Maltrana de tales... almas, no volviendo más a la cervecería.</p>
 				<p>Cansado de tertulias estériles y acosado por la necesidad, tuvo que pensar en la conquista del pan. Nada le restaba de la herencia de su protectora.</p>
 				<p>Sus amigos no le vieron ya mas que en el Ateneo leyendo revistas, o en la Biblioteca Nacional rebuscando datos para ciertos eruditos y académicos, que le daban por este trabajo una exigua retribución. De vez en cuando, algún amigo le pasaba un libro para traducir, quedándose con la mitad del precio. Además, escribía artículos para un semanario social, a razón de diez céntimos la cuartilla, que luego firmaba el director, dando así práctico ejemplo de que la propiedad no es sagrada, ni mucho menos.</p>
@@ -703,7 +737,7 @@
 				<p>Maltrana pensó que alguna vez la hoguera, falta de nuevos combustibles, se extinguiría poco a poco; y cuando sólo quedasen rojos tizones y las tinieblas voraces invadiesen el círculo de luz, vendría la gran pelea, la lucha en la sombra, el empujón arrollador de la muchedumbre, el asalto de los engendros de la obscuridad, para apoderarse de todas las riquezas de los felices: de los bagajes que contienen el bienestar, monopolizado por ellos; de las armas, que son su mejor derecho.</p>
 			</div>
 			<div n="4" type="chapter" xml:id="ne0258_chap4">
-				<head>IV</head>
+				<head xml:id="ne0258_head_003">IV</head>
 				<p>El segundo día de Carnaval, por la tarde, al salir Maltrana de la calle de los Artistas, se detuvo en los Cuatro Caminos, dudando entre bajar a Madrid o subir hacia Bellasvistas y las Carolinas.</p>
 				<p>Le repugnaba el Carnaval madrileño, grosero y monótono, sin otros alicientes que los codazos y pisotones de la multitud, y se decidió a ir en busca de su amigo el <seg rend="italics">Mosco</seg> y aprovechar de paso el viajo para hacer a su abuela una visita en su nueva casa, que era la de <seg rend="italics">Zaratustra</seg>. La pobre vieja tenía deseos de hablarle, según le había a manifestado Polo la última vez que se vieron ante el fielato. Nada perdía con tener contenta a la abuela. En las Carolinas seguían hablando de su tesoro, y ¡quién iba a saber si pensaría en su nieto como heredero!</p>
 				<p>Isidro rió de la avaricia que se despertaba en él. Sentíase alegre, a pesar de que hacía tiempo que no ganaba dinero. Acababa de pedir prestadas a su padrastro unas cuantas piezas de cobre, aprovechando la confianza que inspiraba al albañil por haber satisfecho todos sus atrasos en la parte que le correspondía del alquiler de la casa.</p>
@@ -837,7 +871,7 @@
 				<p>—¡Qué vergüenza, Señor!... ¡qué vergüenza!</p>
 			</div>
 			<div n="5" type="chapter" xml:id="ne0258_chap5">
-				<head>V</head>
+				<head xml:id="ne0258_head_004">V</head>
 				<p>—Siéntese usted, joven. Está usted en su casa: ya sabe que le considero como de la familia.</p>
 				<p>Y el senador don Gaspar Jiménez acariciaba a Maltrana con aquellas palmaditas protectoras que enorgullecían al joven.</p>
 				<p>Estaba en el despacho del personaje, habitación amueblada con la severidad que correspondía a un hombre de su importancia y su seso. Las sillas eran de cuero, las paredes obscuras. En una librería alineábanse los tomos de las <seg rend="italics">Sesiones del Senado</seg>, juntos con memorias, estadísticas y aranceles; volúmenes imponentes por el tamaño, impresos a expensas del Estado. Pendientes de los muros, en marcos coruscantes, exhibíanse varios títulos de individuo de honor de diversas sociedades, acreditando los méritos del marqués de Jiménez, y un tarjetón, prodigio de caligrafía, en el cual los compromisarios castellanos felicitaban a su «digno senador» por sus brillantes discursos en defensa de la protección a los trigos.</p>
@@ -1085,7 +1119,7 @@
 				<p>Isidro lo juraba todo sin hablar; lo juraba con sus manos inquietas, con sus labios acariciadores, con el viril estrujón que hacía caer vencida y esclava en entre sus brazos a aquella alma simple y primitiva, ansiosa de ideal.</p>
 			</div>
 			<div n="6" type="chapter" xml:id="ne0258_chap6">
-				<head>VI</head>
+				<head xml:id="ne0258_head_005">VI</head>
 				<p>Un domingo por la mañana, Isidro y Feli bajaron al Rastro.</p>
 				<p>La tarde anterior, el joven había hablado con acento de resolución.</p>
 				<p>—Feli, de mañana no pasa. Ya es hora de vivir juntos. Estoy harto de que vaguemos por los desmontes como gitanos. Yo trabajo para ti y tenemos derecho a formar nuestro nido.</p>
@@ -1312,7 +1346,7 @@
 				<p>—Te conozco, Malo... Pierdes el tiempo enseñándome esas asquerosidades... Mi carne está muerta... Gloria al Señor... La impureza no entrará en la casa de su siervo.</p>
 			</div>
 			<div n="7" type="chapter" xml:id="ne0258_chap7">
-				<head>VII</head>
+				<head xml:id="ne0258_head_006">VII</head>
 				<p>Maltrana, en la apacible calma de su nueva existencia, terminó pronto el libro del marqués de Jiménez. El grave prócer mostrábase satisfecho del trabajo. Además, por encargo suyo, vigilaba el joven la impresión y corregía las pruebas. ¡El senador tenía tantas ocupaciones!...</p>
 				<p>Cada vez que Isidro le presentaba un pliego impreso, don Gaspar examinábalo minuciosamente, dando bufidos de satisfacción ante las páginas que presentaban gran cimiento de notas. Las que aparecían con el texto solo, provocaban en él un mohín de disgusto.</p>
 				<p>—No tienen seriedad—decía el senador—. Parecen páginas de una novela. Pero, hombre, ¿qué le hubiera costado poner unas cositas al pie?...</p>
@@ -1496,7 +1530,7 @@
 				<p>Fue un sentimiento indefinible, en el que se mezclaban la satisfacción y el miedo. Su personalidad iba a desdoblarse, prolongándose en el curso de la vida. Esto le elevaba como hombre. Pero creyó sentir en torno algo que se despegaba de él. La juventud alegre, sin responsabilidades ni obligaciones, se perdía para siempre. A lo lejos, la Ilusión, en fuga, batía sus alas de diamante.</p>
 			</div>
 			<div n="8" type="chapter" xml:id="ne0258_chap8">
-				<head>VIII</head>
+				<head xml:id="ne0258_head_007">VIII</head>
 				<p>Sufrió Maltrana un gran cambio en su vida. El dinero iba desapareciendo, sin que los tardos e irregulares ingresos bastasen para sostener la casa.</p>
 				<p>Feli le pareció menos agradable. Trataba a Isidro con el cariño de siempre, le cuidaba y mimaba con aquella adoración que hacía de ella una devota más que una amante, pero tenía crisis de inexplicable tristeza, que parecían contagiarle a él.</p>
 				<p>Muchas veces, al volver Isidro a su casa, la sorprendía de bruces en la cama, llorando silenciosamente.</p>
@@ -1628,7 +1662,7 @@
 				<p>Sufría privaciones; el hambre rondaba en torno de él señalándolo como uno de sus siervos; pero pertenecía, por su aspecto y sus costumbres, a la raza de los felices. Era un señorito. Estaba por encima de aquellas gentes que conquistaban el pan con más frecuencia que él, pero sentían la caricia del palo apenas intentaban pedir, como añadidura al mendrugo, un poco de justicia y de piedad para su vida.</p>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0258_chap9">
-				<head>IX</head>
+				<head xml:id="ne0258_head_008">IX</head>
 				<p>El hermano Vicente tenía un tirano, cuyas exigencias sobrellevaba con mansedumbre.</p>
 				<p>Era aquel zapatero convertido, que traía a la nueva fe todas las violencias de su antigua fama de devorasantos. Hablando a su protector le aterraba con los aspectos sanguinarios de su devota vehemencia. No había más verdad que la religiosa, y al que no la aceptase, ¡leña! Un poquito de Inquisición no estaba de más en estos tiempos de herejía y desprecio a Dios. Era el ardor del neófito que asusta al maestro, la audacia del renegado que quiere borrar con tremendas exageraciones el recuerdo de su historia.</p>
 				<p>Además, se creía con derechos absolutos sobre la persona y los bienes de su catequista, y miraba con hostilidad a la pareja que vivía con el señor Vicente, sospechando que le despojaban de una parte de lo que consideraba como suyo.</p>
@@ -1797,7 +1831,7 @@
 				<p>Isidro descendió del cerro por los sembrados para no encontrarse con <seg rend="italics">Zaratustra</seg>, pensando, mientras caminaba, en el medio de sacar unas pesetas más del famoso tesoro oculto en sus bolsillos.</p>
 			</div>
 			<div n="10" type="chapter" xml:id="ne0258_chap10">
-				<head>X</head>
+				<head xml:id="ne0258_head_009">X</head>
 				<p>Bien entrado el otoño, Isidro y Feli fueron a vivir en las Cambroneras. Después de abandonar la casa del hermano Vicente, habitaron un cuarto interior en la calle de Embajadores. Pagaban tres duros por él; pero transcurrido el primer mes, no pudieron satisfacer el segundo, y abandonaron la habitación, salvando casi milagrosamente sus escasos muebles.</p>
 				<p>Más aún que los tormentos del hambre, temía Maltrana las inquietudes y desasosiegos que traía consigo el alquiler. Feli sólo se preocupaba de asegurar el techo. Realizaba economías asombrosas por ir juntando poco a poco el dinero para la casa. Ya tenía tres pesetas, ya tenía un duro, ya se aproximaba lentamente a los dos, y de pronto surgía una necesidad imperiosa, una exigencia ineludible, el pago a la tienda, que se negaba a fiar más sin recibir algo a cuenta, la compra de material para el emballenaje de los corsés, la necesidad de echar unas suelas a las botas únicas de Maltrana, mientras éste permanecía prisionero en el cuarto; y de este modo la mala fortuna llevábase de una manotada todos los ahorros, sin dar tiempo a que se completase el importe del alquiler.</p>
 				<p>Maltrana adoptó una resolución. Los pobres como ellos, de vida incierta, sólo podían vivir en las casuchas cuyos cuartos se pagan diariamente, en los falansterios de la miseria, como aquel caserón de obreros donde él había nacido.</p>
@@ -1995,7 +2029,7 @@
 				<p>¡Pobrecillo! Se llevó las manos a los ojos y rompió a llorar con vagidos de cordero abandonado, como un niño que despierta en las tinieblas y siente el vacío en torno suyo, sin que sus manos temblonas tropiecen con el calor del pecho maternal.</p>
 			</div>
 			<div n="11" type="chapter" xml:id="ne0258_chap11">
-				<head>XI</head>
+				<head xml:id="ne0258_head_010">XI</head>
 				<p>El mismo día de la nevada, un nuevo infortunio conmovió dolorosamente a Isidro.</p>
 				<p>Al volver a su casa pudo comer. El dueño del tenducho de las Cambroneras pareció apiadarse de su miseria, aceptando todas las promesas de pronto pago. La inclemencia del tiempo ablandaba al tendero, y el joven logró subir con dos panes, una botella de vino, queso y una lata de sardinas.</p>
 				<p>Fiesta completa. Después de comer, sintió un renacimiento de su amor a la vida. Arañó sus bolsillos para reunir las últimas briznas de tabaco; lió un pitillo, y despidiendo nubes de humo con la voluptuosidad del bienestar, contempló detrás de los cristales el paisaje nevado que tan honda tristeza le inspiraba horas antes.</p>
@@ -2126,7 +2160,7 @@
 				<p>Maltrana salió a la calle, y a los pocos pasos hubo de apoyarse en la pared. Tenía frío: un frío de sepulcro, que se le colaba hasta el alma. Lucía el sol de la tarde, un sol que Isidro no había visto nunca; un sol obscuro, empañado, fúnebre, como si el astro del día enviase sus rayos al través de negra urdimbre; como si estuviese envuelto en un crespón.</p>
 			</div>
 			<div n="12" type="chapter" xml:id="ne0258_chap12">
-				<head>XII</head>
+				<head xml:id="ne0258_head_011">XII</head>
 				<p>Ya no volvió a las Cambroneras. Tuvo miedo de vivir en aquella casa sin Feli. Sentía el terror de los que pierden a un ser querido y no osan penetrar en la mortuoria habitación. ¿Qué iba a hacer solo en aquel extremo olvidado de Madrid, entre las gitanas que le recordarían a la amante?...</p>
 				<p>Necesitaba ver gente nueva, aturdirse, olvidar su tristeza.</p>
 				<p>Aquella noche volvió a la redacción, después de una ausencia de tantos meses. Los compañeros le recibieron con irónicas ovaciones.</p>

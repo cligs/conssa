@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
+<?xml-model href="../keywords/keywords.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/cligs/reference/master/tei/cligs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cligs="https://cligs.hypotheses.org/ns/cligs">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">El monstruo</title>
-				<title type="sub"></title>
+				
 				<title type="short">Monstruo</title>
-				<title type="idno">
-					<idno type="bne">XX2550634</idno>
-					<idno type="viaf">58145663008605070616</idno>
-				</title>
+				
 				<author>
-					<idno type="bne">XX954380</idno>
-					<idno type="viaf">75550836</idno>
-					<name type="short">Hoyos</name>
-					<name type="full">Antonio de Hoyos y Vinent</name>
+					<name type="short" ref="#Hoyos"/>
 				</author>
-				<principal xml:id="jct">José Calvo Tello</principal>
+				<principal xml:id="jct" ref="https://orcid.org/0000-0002-1129-5604"><forename>José</forename> <surname>Calvo Tello</surname></principal>
 			</titleStmt>
 			<extent>
 				<measure unit="lines">619</measure>
@@ -141,13 +131,35 @@
 					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution (CC BY 4.0)</licence>
 				</availability>
 				<date when="2017">2017</date>
-				<idno type="cligs">ne0373</idno>
+						<idno type="cligs">ne0373</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl type="digital-source" source="#epublibre" subtype="epub">ePubLibre, emiferro, r1.0, <date when="2015">2015</date>, <idno>27362</idno>, <ref target="https://www.epublibre.org/libro/detalle/27362"/>.</bibl>
-				<bibl type="print-source">Imprenta de V. Rico, Madrid, <date when="1920">1920</date></bibl>
-				<bibl type="edition-first"><date when="1915">1915</date></bibl>
-			</sourceDesc>
+				<bibl type="work">
+				<title>
+					<title type="main">El monstruo</title>
+					<title type="sub"/>
+				<idno>
+					<idno type="bne" corresp="https://datos.bne.es/obra/XX2550634.html">XX2550634</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/58145663008605070616/">58145663008605070616</idno>
+				</idno>
+				</title>
+					<author xml:id="Hoyos">
+						<name type="full"><forename>Antonio</forename> <surname>de Hoyos y Vinent</surname></name>
+						<idno>
+							<idno type="gnd" corresp="https://d-nb.info/gnd/126320802">126320802</idno>
+							<idno type="wikidata" corresp="https://www.wikidata.org/wiki/Q3620381/">Q3620381</idno>
+							<idno type="bne" corresp="https://datos.bne.es/persona/XX954380.html">XX954380</idno>
+							<idno type="viaf" corresp="http://www.viaf.org/viaf/75550836/">75550836</idno>
+						</idno>
+					</author>
+				</bibl>
+				<listBibl type="manifestations">
+					<bibl type="digital-source" source="#epublibre" subtype="epub">ePubLibre, emiferro, r1.0, <date when="2015">2015</date>, <idno>27362</idno>, <ref target="https://www.epublibre.org/libro/detalle/27362"/>.</bibl>
+					<bibl type="print-source">Imprenta de V. Rico, <pubPlace>Madrid</pubPlace>, <date when="1920">1920</date></bibl>
+					<bibl type="edition-first"><date when="1915">1915</date></bibl>
+			
+				</listBibl>
+				</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>.</p>
@@ -157,6 +169,11 @@
 				<p>Algunos títulos más destacados, que entran de lleno en la literatura decadente.</p>
 			</abstract>
 			<textClass>
+				<keywords scheme="http://uri.gbv.de/terminology/bk/">
+					<term type="text.libraryClassification.goettingerOnlineKlassifikation" n="IR 610" xml:id="k10plus.ppn.621850926"><ref target="https://opac.sub.uni-goettingen.de/DB=1/LNG=DU/REC=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=lkl+%22IR+610%22">Verfasser. Anonyme Werke - Textausgaben {Spanisch}</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" target="http://uri.gbv.de/terminology/bk/17.97" key="17.97" n="k10plus.ppn.181571714"><ref target="https://opac.sub.uni-goettingen.de/DB=1/SET=4/TTL=1/CMD?ACT=SRCHA&amp;IKT=1016&amp;SRT=YOP&amp;TRM=bkl+18.32&amp;MATCFILTER=N&amp;MATCSET=N&amp;NOSCAN=N&amp;ADI_BIB=">Texte eines einzelnen Autors</ref></term>
+					<term type="text.libraryClassification.basisklassifikation" key="18.32" n="k10plus.ppn.106415514">Spanische Literatur</term>
+				</keywords>
 				<keywords scheme="keywords.xml" cert="high">
 					<term type="author.TOC.range" resp="MdL10">3</term>
 					<term type="author.continent">Europe</term>
@@ -169,7 +186,7 @@
 					<term type="author.nonNovelGenre">short-stories</term>
 					<term type="author.submovement">4-modernista</term>
 					<term type="author.year.change">0</term>
-					<term type="authorText.group"></term>
+					<term type="authorText.group"/>
 					<term type="authorText.relation">none</term>
 					<term type="text.characters.protagonist.age">young</term>
 					<term type="text.characters.protagonist.gender">female</term>
@@ -181,20 +198,20 @@
 					<term type="text.form">prose</term>
 					<term type="text.genre">novela</term>
 					<term type="text.genre.analyzed" cert="high">novela</term>
-					<term type="text.genre.subgenre.edit" resp="#"></term>
+					<term type="text.genre.subgenre.edit" resp="#"/>
 					<term type="text.genre.subgenre.edit" resp="amazon">Política, Sociedad y ciencias sociales</term>
 					<term type="text.genre.subgenre.edit" resp="epublibre">Drama</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="1">crime-fiction</term>
 					<term type="text.genre.subgenre.litHist" resp="#jct" cligs:importance="2">erotic</term>
 					<term type="text.genre.subgenre.litHist" resp="MdLE">novela erótica</term>
-					<term type="text.genre.subtitle"></term>
+					<term type="text.genre.subtitle"/>
 					<term type="text.genre.supergenre">narrative</term>
 					<term type="text.language">Spanish</term>
 					<term type="text.litHist.mentioned" resp="HdLE">False</term>
 					<term type="text.litHist.mentioned" resp="MdLE">True</term>
 					<term type="text.litHist.pages" resp="MdLE10">0.5</term>
 					<term type="text.litHist.literaryQuality" resp="MdLE10">high</term>
-					<term type="text.movement"></term>
+					<term type="text.movement"/>
 					<term type="text.narration.narrator">heterodiegetic</term>
 					<term type="text.plot.end">negative</term>
 					<term type="text.plot.representation">realistic</term>
@@ -217,12 +234,13 @@
 		</profileDesc>
 		<revisionDesc>
 			<change when="2017-12-15" who="#jct">Initial TEI version.</change>
+			<change when="2022-05-20" who="#jct">New metadata about records in library catalog, authority files, library classification systems and structure of metadata.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
 		<front>
 			<div>
-				<head>El monstruo</head>
+				<head xml:id="ne0373_head_000">El monstruo</head>
 			</div>
 			<div>
 				<quote>
@@ -248,9 +266,9 @@
 		</front>
 		<body>
 			<div type="part">
-				<head>PRIMERA PARTE: EL LIBRO DE LA LUJURIA</head>
+				<head xml:id="ne0373_head_001">PRIMERA PARTE: EL LIBRO DE LA LUJURIA</head>
 				<div n="1" type="chapter" xml:id="ne0373_chap1">
-					<head>I: EL CABALLERO DE LA ROSA AL PECHO</head>
+					<head xml:id="ne0373_head_002">I: EL CABALLERO DE LA ROSA AL PECHO</head>
 					<quote>
 						<p>Tes yeux sont quémandeurs; dans un luche desir,</p>
 						<p>ils lisent ardenment une page vicíense;</p>
@@ -325,7 +343,7 @@
 					<p>EUGÉNIE.— Mais le inceste <seg rend="italic">n’est-il</seg> pas une crime?…— DOMENCE.— Pourrait on regarder comme telle les plus douces unions de la Nature, celles <seg rend="italic">qu’elle</seg> nous prescrit et nous conseille le mieux!</p>
 				</div>
 				<div n="2" type="chapter" xml:id="ne0373_chap2">
-					<head>II: LA HIJA DEL REY DE YS</head>
+					<head xml:id="ne0373_head_003">II: LA HIJA DEL REY DE YS</head>
 					<quote>
 
 
@@ -410,7 +428,7 @@
 					<p>Horrorizado, hizo un esfuerzo, y libertándose de las manos de Sofía, huyó. Bajó las escaleras a saltos, corrió desolado por los laberínticos callejones del puerto, y al fin dejóse caer en el malecón, frente al mar bordado de espumas, y el cielo azul en que la luna florecía cual mística rosa de plata.</p>
 				</div>
 				<div n="3" type="chapter" xml:id="ne0373_chap3">
-					<head>III: ASTÀRTÉ</head>
+					<head xml:id="ne0373_head_004">III: ASTÀRTÉ</head>
 					<quote>
 
 
@@ -526,7 +544,7 @@
 					<p>Y seguida de su lectora, que sin proferir una palabra había presenciado la escena, salió lenta, hierática, hermética, como una aparición.</p>
 				</div>
 				<div n="4" type="chapter" xml:id="ne0373_chap4">
-					<head>IV: EL AZOTE DE DIOS</head>
+					<head xml:id="ne0373_head_005">IV: EL AZOTE DE DIOS</head>
 					<quote>
 
 
@@ -615,9 +633,9 @@
 				</div>
 			</div>
 			<div type="part">
-				<head>SEGUNDA PARTE: EL LIBRO DE LA MUERTE</head>
+				<head xml:id="ne0373_head_006">SEGUNDA PARTE: EL LIBRO DE LA MUERTE</head>
 				<div n="5" type="chapter" xml:id="ne0373_chap5">
-					<head>I: EL DRAGÓN AZUL</head>
+					<head xml:id="ne0373_head_007">I: EL DRAGÓN AZUL</head>
 					<floatingText>
 						<body>
 							<div type="section">
@@ -655,7 +673,7 @@
 					<p>La voz se desgarraba, rompíase como el chorro de cristal de una fontana; las manos habían recaído sobre el regazo, y Marcelo creyó ver tras la careta inalterable, las lágrimas que corrían por las llagas del rostro.</p>
 				</div>
 				<div n="6" type="chapter" xml:id="ne0373_chap6">
-					<head>II: LA CORONA DE ESPINAS EN EL TEMPLO DEL DRAGÓN AZUL</head>
+					<head xml:id="ne0373_head_008">II: LA CORONA DE ESPINAS EN EL TEMPLO DEL DRAGÓN AZUL</head>
 					<floatingText>
 						<body>
 							<div type="section">
@@ -738,7 +756,7 @@
 					<p>Poco a poco el ataque fuése calmando, las sacudidas hiciéronse menos frecuentes y violentas, y al fin, sollozante, deshecha, quedó inmóvil sobre los helados mármoles del suelo.</p>
 				</div>
 				<div n="7" type="chapter" xml:id="ne0373_chap7">
-					<head>III: EL MONO EN EL CAMINO DEL CALVARIO</head>
+					<head xml:id="ne0373_head_009">III: EL MONO EN EL CAMINO DEL CALVARIO</head>
 					<quote>
 						<p>Oler con el olfato humo, piedra-azufre, sentina y cosas pútridas.</p>
 					</quote>
@@ -768,7 +786,7 @@
 					<p>La voz se rompió súbitamente en un sonido bronco e inarticulado. Y Marcelo, que al oiría se había vuelto rápidamente, vió lucir en el fondo de las pupilas veladas por los tules una llama extraña, verdosa y temblante como un fuego fatuo. Y por primera vez sintió miedo, y como una bestezuela que adivina el peligro, tembló.</p>
 				</div>
 				<div n="8" type="chapter" xml:id="ne0373_chap8">
-					<head>IV: EL DRAGÓN, DESPIERTA</head>
+					<head xml:id="ne0373_head_010">IV: EL DRAGÓN, DESPIERTA</head>
 					<quote>
 						<l>De mes blasphémes rugis,</l>
 						<l>Contre <seg rend="italic">l’irremediable</seg></l>
@@ -826,7 +844,7 @@
 				</div>
 			</div>
 			<div n="9" type="chapter" xml:id="ne0373_chap9">
-				<head>Epílogo: EPILOGO</head>
+				<head xml:id="ne0373_head_011">Epílogo: EPILOGO</head>
 				<p>Sintió extraño anhelo, la sensación de que uno de aquellos monstruos que habitaban en las lacas del palacio —dragón, grifo o basilisco— pasaba sobre él ahogándole. Después fué la angustia de enorme ventosa que le sorbía la vida en caricia húmeda y pegajosa, la repulsión atroz de uno de aquellos animales simbólicos— peluda araña roja que se paseaba por su cuerpo, pulpo de múltiples tentáculos, o colosal babosa— que le producía un estremecimiento de repugnancia infinita. Después fué un dolor agudo, la impresión fría y escurridiza de un reptil sobre los labios, seguida de un pinchazo agudo, como si le clavase el emponzoñado aguijón.</p>
 				<p>Despertóse, o por mejor decir, sacudió la obsesionante pesadilla, y se incorporó en el lecho.</p>
 				<p>Amanecía Por la ventana, abierta de par en par, entraba la claridad de la alborada. Era una luz verde muy limpia y clara, como filtrada al través de tenue vidriera de peridotas. En el cielo de malaquita, el sol sin rayos ni reverberaciones aún, era una bola naranja; el lago tenía glauca transparencia de esmeraldas, y todas las cosas bañábanse en una gama infinita de verdes y de rojos. Dentro de la habitación, al rielar en las lacas negras, historiadas de lotos de oro y de magníficos monstruos de purpúreas fauces entreabiertas, la luz hacíase más obscura en un contraste casi trágico de púrpuras, verdes y oros. Muebles de bambús rojos, con negros cojines de seda, aumentaban el aspecto nicromántico de la estancia, y por las pequeñas mesas de ébano, plata y marfil, florecían en los búcaros de viejas porcelanas admirables rosas de grana y sombrías orquídeas negras.</p>
@@ -848,7 +866,7 @@
 		</body>
 		<back>
 			<div>
-				<p></p>
+				<p/>
 			</div>
 		</back>
 	</text>
