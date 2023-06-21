@@ -1,0 +1,74 @@
+<svg width="850" height="850" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <!--jct: 20180619
+    * Hecho en Raw a partir de population-for-viz.csv
+    * Filtrados los textos que aparecen en MdLE
+    * Circle Packing
+    * Hierachy: CoNSSA, CoNSSA-canon, genre; color: corpus; Label: genre
+    * Posteriormente modificado a mano
+    -->
+    <g transform="translate(10,10)">
+        <g>
+            <circle class="node node--root" transform="translate(415,415)" r="414.99999999999994" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1; stroke-width:25;"/>
+            <circle class="node" transform="translate(220.53676792349074,415)" r="206.70402000634022" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1; stroke-width:15;"/>
+            <circle class="node" transform="translate(628.6203939649155,415)" r="187.546858117934" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1; stroke-width:15;"/>
+            <circle class="node" transform="translate(220.53676792349074,415)" r="192.8712720891897" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1; stroke-width:8;"/>
+            <circle class="node" transform="translate(555.7502169808756,415)" r="100.84393321674365" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1; stroke-width:8;"/>
+            <circle class="node" transform="translate(736.3807011402344,415)" r="65.9538030254646" style="fill-opacity: 0; stroke: rgb(221, 221, 221); stroke-opacity: 1; stroke-width:8;"/>
+            <circle class="node node--leaf" transform="translate(148.97625669533173,411.53765172770784)" r="84.91752846850072" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(310.4567598674075,411.53765172770784)" r="62.73022678642459" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(249.0264096380218,525.4775924717009)" r="52.88198667402981" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(247.28722433279322,313.3091994820627)" r="40.22409243244771" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(169.79345300412572,286.59873114156585)" r="27.91104185866979" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(157.90808677522546,534.8491233384312)" r="24.8842520413959" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(325.4016192588848,312.0224528067373)" r="24.06815188512697" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(337.18551108223255,507.67761510274556)" r="23.223390593782074" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(110.0314935719852,299.9041497105858)" r="19.481417112075416" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(105.74383090198623,517.9559873675246)" r="16.114447530465917" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(214.9296254878018,252.50264629657363)" r="14.823135792333678" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(368.2084420698903,341.60512400670024)" r="14.133305433297487" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(188.0082985481774,577.4049229893649)" r="13.408030810815903" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(297.6097772326498,270.7882931448074)" r="11.824771698836868" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(372.7981399790287,474.1950219236828)" r="11.824771698836868" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(76.69492140634412,329.0207738504681)" r="10.94761131400479" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(78.78313414501164,491.6210159351685)" r="7.741130197927357" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(318.82561167013404,546.9771836419108)" r="6.320606339124058" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(249.90274187103014,252.98843078125228)" r="6.320606339124058" style="fill: rgb(191, 105, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(533.3515826264456,415)" r="64.61255094516322" style="fill: rgb(105, 191, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(627.2791418846141,415)" r="15.482260395854714" style="fill: rgb(105, 191, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(611.8043187433972,447.10026293323943)" r="6.320606339124058" style="fill: rgb(105, 191, 105); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+            <circle class="node node--leaf" transform="translate(736.3807011402344,415)" r="52.12105510831411" style="fill: rgb(105, 105, 191); fill-opacity: 1; stroke: rgb(221, 221, 221); stroke-opacity: 0;"/>
+        </g>
+
+        <g>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </g>
+    </g>
+</svg>
